@@ -2,16 +2,16 @@
 title: tipo de recurso de governanceSchedule
 description: 'Representa o agendamento para um governanceRoleAssignmentRequest. Para uma solicitação de atribuição de função, controla a agenda quando executar a operação de atribuição de função, quando parar de atribuição de função e a frequência de realizar a operação de atribuição de função. '
 localization_priority: Normal
-ms.openlocfilehash: 8bf36b786adbd8064ee0c00c0ce293408c6e2b7f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: d7ccfe74804166ad2204ea02c072d79341cf75e7
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27882310"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29508024"
 ---
 # <a name="governanceschedule-resource-type"></a>tipo de recurso de governanceSchedule
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa o agendamento para um [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md). Para uma solicitação de atribuição de função, controla a agenda quando executar a operação de atribuição de função, quando parar de atribuição de função e a frequência de realizar a operação de atribuição de função. 
 
@@ -22,8 +22,8 @@ Representa o agendamento para um [governanceRoleAssignmentRequest](../resources/
 |:---------------|:--------|:----------|
 |startDateTime|DateTimeOffset|A hora de início da atribuição de função. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |endDateTime|DateTimeOffset|A hora de término da atribuição de função. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. *Observação: se o valor for `null`, isso indica que uma atribuição permanente.*|
-|type|Cadeia de caracteres|O tipo de agendamento de atribuição de função. Somente `Once` é suportado para agora.
-|duration|Duração|A duração de uma atribuição de função. Ela está no formato de um TimeSpan.|
+|type|String|O tipo de agendamento de atribuição de função. Somente `Once` é suportado para agora.
+|duration|Duration|A duração de uma atribuição de função. Ela está no formato de um TimeSpan.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -49,10 +49,15 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "governanceSchedule",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/governanceschedule.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

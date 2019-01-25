@@ -4,16 +4,16 @@ description: Get recentemente criado, atualizado ou excluído usuários sem prec
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f63a426c97aaf695447de9075b91fb2c534309db
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 6fd8eb71c1b647550219ae6686a0bc814420b2fa
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27984630"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29508899"
 ---
 # <a name="user-delta"></a>user: delta
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get recentemente criado, atualizado ou excluído usuários sem precisar realizar uma leitura completa do conjunto de usuários inteira. Consulte [controlar alterações](/graph/delta-query-overview) para obter detalhes.
 
@@ -63,7 +63,7 @@ Este método oferece suporte a parâmetros opcionais de consulta OData para ajud
 |:---------------|:----------|
 | Autorização  | &lt;Token&gt; de portador|
 | Content-Type  | application/json |
-| Preferir | retornar = mínima <br><br>Especificando este cabeçalho com uma solicitação que usa um `deltaLink` retornaria apenas as propriedades do objeto que foram alterados desde o último round. Opcional. |
+| Preferir | retorno=mínimo. <br><br>Especificando este cabeçalho com uma solicitação que usa um `deltaLink` retornaria apenas as propriedades do objeto que foram alterados desde o último round. Opcional. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
@@ -234,15 +234,20 @@ Content-type: application/json
 }
 ```
 
-- [Consulta de delta usar para rastrear alterações nos dados do Microsoft Graph](/graph/delta-query-overview).
-- [Fazer alterações incrementais para usuários](/graph/delta-query-users).
+- Usar a consulta delta para controlar alterações nos dados do Microsoft Graph
+- Obter as alterações incrementais para usuários
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "user: delta",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-delta.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

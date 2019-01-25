@@ -4,16 +4,16 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: SearchResult
 localization_priority: Normal
-ms.openlocfilehash: 6b7376fcfcfc15ea2ce5807a828854e5bdf9c719
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: c50f90787627732843e152a37a469c03340aa370
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27884648"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29511069"
 ---
 # <a name="searchresult-resource-type"></a>Tipo de recurso SearchResult
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 O recurso **SearchResult** indica que um item é a resposta a uma consulta de pesquisa.
 
@@ -35,16 +35,21 @@ O recurso **SearchResult** indica que um item é a resposta a uma consulta de pe
 
 | Propriedade            | Tipo   | Descrição
 |:--------------------|:-------|:----------------------------------------------
-| onClickTelemetryUrl | Cadeia de caracteres | Uma URL de retorno de chamada que pode ser usada para registrar informações de telemetria. O aplicativo deve emitir um GET nesta URL se o usuário interagir com este item para melhorar a qualidade dos resultados.
+| onClickTelemetryUrl | String | Uma URL de retorno de chamada que pode ser usada para registrar informações de telemetria. O aplicativo deve emitir um GET nesta URL se o usuário interagir com este item para melhorar a qualidade dos resultados.
 
 ## <a name="remarks"></a>Comentários 
 
 Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.md).
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The search result facet indicates an item is from a search.",
   "keywords": "search result facet",
   "section": "documentation",
-  "tocPath": "Facets/SearchResult"
-} -->
+  "tocPath": "Facets/SearchResult",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/searchresult.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

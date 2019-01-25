@@ -3,16 +3,16 @@ title: 'reportRoot: getSkypeForBusinessActivityUserDetail'
 description: Obtenha dados sobre a atividade do Skype for Business por usuário.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 45fd9007690efad03a86f4e72d78d9b493e6635d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 50f364bf13d8d7f11bfa5ea7c676ef96596bfb53
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27931150"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29508794"
 ---
 # <a name="reportroot-getskypeforbusinessactivityuserdetail"></a>reportRoot: getSkypeForBusinessActivityUserDetail
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Obtenha dados sobre a atividade do Skype for Business por usuário.
 
@@ -233,3 +233,11 @@ Content-Length: 1419
   ]
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/reportroot-getskypeforbusinessactivityuserdetail.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

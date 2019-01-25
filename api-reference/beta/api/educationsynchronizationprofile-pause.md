@@ -4,26 +4,26 @@ description: Pause a sincronização de um perfil de sincronização de dados es
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 4979ed19c9a01d6a7ff2d43f7f3755d03b4b070c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 5c9ba7d2ab3f67880105d45d9d98506b8e8caaac
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27950680"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510929"
 ---
 # <a name="pause-sync-on-an-educationsynchronizationprofile"></a>Sincronização de pausa em um educationSynchronizationProfile
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Pause a sincronização de um de dados específicos escola [perfil de sincronização](../resources/educationsynchronizationprofile.md) no inquilino.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-| Tipo de permissão | Permissions |
+| Tipo de permissão | Permissões |
 |:-----------|:----------|
 | Delegado (conta corporativa ou de estudante) | EduAdministration.ReadWrite |
-|Delegada (conta pessoal da Microsoft|Sem suporte.|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -64,3 +64,11 @@ Não há nenhum corpo de resposta.
 ```
 HTTP/1.1 200 OK
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationsynchronizationprofile-pause.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

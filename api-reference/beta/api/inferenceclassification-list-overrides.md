@@ -2,16 +2,16 @@
 title: Substituições de lista
 description: Obtenha as substituições de caixa de entrada focalizados em que um usuário tiver configurado para sempre classificar mensagens de determinados remetentes em meios específicos.
 localization_priority: Normal
-ms.openlocfilehash: 6d2d731858ad3a87cad10b4feb23378cb4dab992
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: a49d47e39caff5c00981d02551b0eeb564239f73
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27837552"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29511916"
 ---
 # <a name="list-overrides"></a>Substituições de lista
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Obtenha as substituições de [Caixa de entrada focalizados em](../resources/manage-focused-inbox.md) que um usuário tiver configurado para sempre classificar mensagens de determinados remetentes em meios específicos.
 
@@ -89,10 +89,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List overrides",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/inferenceclassification-list-overrides.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

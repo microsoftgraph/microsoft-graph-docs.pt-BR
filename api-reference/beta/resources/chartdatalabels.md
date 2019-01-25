@@ -4,16 +4,16 @@ description: Representa uma coleção de todos os rótulos de dados em um ponto 
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 16e2e3acafc98a4066b8620f41f15c7cae1667cc
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: bda2c1849f154435608f311671026e224b0c7e3c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27954677"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510334"
 ---
 # <a name="chartdatalabels-resource-type"></a>Tipo de recurso ChartDataLabels
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa uma coleção de todos os rótulos de dados em um ponto do gráfico.
 
@@ -22,8 +22,8 @@ Representa uma coleção de todos os rótulos de dados em um ponto do gráfico.
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Get ChartDataLabels](../api/chartdatalabels-get.md) | [ChartDataLabels](chartdatalabels.md) |Leia as propriedades e os relacionamentos do objeto chartDataLabels.|
-|[Update](../api/chartdatalabels-update.md) | [ChartDataLabels](chartdatalabels.md) |Atualize o objeto ChartDataLabels. |
+|Get ChartDataLabels | [chartDataLabels](chartdatalabels.md) |Leia as propriedades e os relacionamentos do objeto chartDataLabels.|
+|[Update](../api/chartdatalabels-update.md) | ChartDataLabels |Atualize o objeto ChartDataLabels. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
@@ -70,10 +70,15 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "ChartDataLabels resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/chartdatalabels.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

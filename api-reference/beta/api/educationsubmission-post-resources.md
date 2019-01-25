@@ -4,16 +4,16 @@ description: 'Adiciona um recurso à lista de recursos. Essa ação só pode ser
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: a3c7592614eb1987df6730cd7f029bc84bb422cf
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: da0860d5b5f19a84643a05a88aaeb74651e2d8ea
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27950645"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29511727"
 ---
 # <a name="create-educationsubmissionresource"></a>Criar educationSubmissionResource
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Adiciona um recurso à lista de recursos. Essa ação só pode ser feita pelo aluno aos quais este envio é atribuído. Essa ação não será executado se o sinalizador **allowStudentsToAddResources** não estiver definido como true. Se o chamador quiser criar um novo recurso com base em arquivo, o arquivo deve ser carregado na pasta de recursos que está associado com o envio. Se o arquivo não existe ou não está nessa pasta, a solicitação POST falhará. 
 
@@ -134,10 +134,15 @@ Content-length: 1152
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create educationSubmissionResource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationsubmission-post-resources.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -2,16 +2,16 @@
 title: tipo de recurso de synchronizationProgress
 description: Representa o progresso de um synchronizationJob rumo à conclusão.
 localization_priority: Normal
-ms.openlocfilehash: 3c1168cdac6a073842cb5e08d165572591d2d8e0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: b22bd95f54a9f268524dc98a8d3df94fcc14f773
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885383"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510971"
 ---
 # <a name="synchronizationprogress-resource-type"></a>tipo de recurso de synchronizationProgress
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa o progresso de um [synchronizationJob](synchronization-synchronizationjob.md) rumo à conclusão.
 
@@ -22,7 +22,7 @@ Representa o progresso de um [synchronizationJob](synchronization-synchronizatio
 |completedUnits|Int32|O numerador de uma proporção de progresso; o número de unidades de alterações já processadas.|
 |progressObservationDateTime|DateTimeOffset|A hora de uma observação de progresso como um deslocamento em minutos de UTC.|
 |totalUnits|Int32|Denominador de uma proporção de progresso; um número de unidades de alterações a serem processados para realizar a sincronização.|
-|unidades|Cadeia de caracteres|Uma descrição opcional das unidades.|
+|Units|Cadeia de caracteres|Uma descrição opcional das unidades.|
 
 <!-- The troubleshootingUrl property is missing a description -->
 
@@ -50,10 +50,15 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 15571993-7e2f-4842-84d5-01ceb67cdc05
 20185-08-14 22:30:00 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "synchronizationProcess resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/synchronization-synchronizationprogress.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

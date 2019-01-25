@@ -4,16 +4,16 @@ description: Define as configurações na criação das identidades de perfil de
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 7c05d810c017f57f738d188a8edef5d0560415fd
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 92ad3c36a9379bb570f2a635038903e64a0309e8
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29395682"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29511398"
 ---
 ## <a name="educationidentitycreationconfiguration-resource-type"></a>tipo de recurso de educationIdentityCreationConfiguration
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Define as configurações na criação das identidades de perfil de dados escola. Essas identidades incluem alunos e professores. Com base nessas configurações, os usuários serão criados no diretório.
 
@@ -47,3 +47,11 @@ Derivado do [educationIdentitySynchronizationConfiguration](educationidentitysyn
     ]
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/educationidentitycreationconfiguration.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

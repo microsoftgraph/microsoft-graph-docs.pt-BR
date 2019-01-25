@@ -2,16 +2,16 @@
 title: Tipo de recurso FilterDatetime
 description: Indica como filtrar uma data ao filtrar valores.
 localization_priority: Normal
-ms.openlocfilehash: 24929695ff65173933b91fd82ac3e82de1f04da0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: ad4341e13eadc911377ec7b9859d6a31305fadf8
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871306"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29507548"
 ---
 # <a name="filterdatetime-resource-type"></a>Tipo de recurso FilterDatetime
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Indica como filtrar uma data ao filtrar valores.
 
@@ -21,7 +21,7 @@ Indica como filtrar uma data ao filtrar valores.
 |data|string|A data no formato ISO8601 usada para filtrar os dados.|
 |especificidade|string|Como a data específica deve ser usada para manter os dados. Por exemplo, se a data for 2005-04-02 e a especificidade estiver definida como "mês", a operação de filtragem manterá todas as linhas com uma data do mês de abril de 2009. Os valores possíveis são: `Year`, `Monday`, `Day`, `Hour`, `Minute` e `Second`.|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 Nenhum
 
 
@@ -47,10 +47,15 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "FilterDatetime resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/filterdatetime.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,16 +4,16 @@ description: Representa um dispositivo registrado no diretório. Dispositivos s�
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 9a699134be1189700fd4689668db6021260835ad
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 1279a39f7aa8983697b980fd6cce44c203d1883e
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27944191"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29511748"
 ---
 # <a name="device-resource-type"></a>tipo de recurso de dispositivo
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa um dispositivo registrado no diretório. Dispositivos são criados na nuvem usando o Serviço de Registro de Dispositivo ou por meio do Intune. Eles são usados por políticas de acesso condicional para a autenticação multifator. Estes dispositivos podem variar desde computadores desktop e laptops até telefones e tablets. Herda de [directoryObject](directoryobject.md).
 
@@ -28,7 +28,7 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |[Atualizar dispositivo](../api/device-update.md) | [device](device.md)  |Atualize as propriedades do objeto de dispositivo. |
 |[Excluir dispositivo](../api/device-delete.md) | Nenhuma |Exclua o objeto de dispositivo. |
 |[Listar memberOf](../api/device-list-memberof.md) |Coleção [directoryObject](directoryobject.md)| Liste os grupos que o dispositivo é um membro direto. |
-|[Membro de lista transitivo](../api/device-list-transitivememberof.md) |Coleção [directoryObject](directoryobject.md)| Liste os grupos que o dispositivo é um membro de. Essa operação é transitiva. |
+|[Listar membros transitivos](../api/device-list-transitivememberof.md) |Coleção [directoryObject](directoryobject.md)| Liste os grupos que o dispositivo é um membro de. Essa operação é transitiva. |
 |[Listar registeredOwners](../api/device-list-registeredowners.md) |Coleção [directoryObject](directoryobject.md)| Obtenha os usuários que são proprietários registrados do dispositivo da propriedade de navegação registeredOwners.|
 |[Listar registeredUsers](../api/device-list-registeredusers.md) |Coleção [directoryObject](directoryobject.md)| Obtenha os usuários registrados do dispositivo da propriedade de navegação registeredUsers.|
 |**Extensões abertas**| | |
@@ -40,7 +40,7 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|accountEnabled|Boolean| **true** se a conta estiver habilitada; caso contrário, **false**. o padrão é true.|
+|accountEnabled|Boolean| **true** se a conta estiver habilitada; caso contrário, **false**. O padrão é True.|
 |alternativeSecurityIds|Coleção alternativeSecurityId| Apenas para uso interno. Não anulável. |
 |approximateLastSignInDateTime|DateTimeOffset| O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura. |
 |deviceId|Guid| Identificador exclusivo definido pelo serviço de registro do dispositivo Azure no momento do registro. |
@@ -51,19 +51,19 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |isCompliant|Booliano|**True** se o dispositivo está em conformidade com políticas de MDM (Gerenciamento de Dispositivo Móvel); caso contrário, **false**. Somente leitura. Isso só pode ser atualizado por Intune para qualquer tipo de sistema operacional do dispositivo ou por um [aprovada MDM app](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) para dispositivos do sistema operacional Windows.|
 |isManaged|Booliano|**true** se o dispositivo for gerenciado por um aplicativo de gerenciamento de dispositivo móvel (MDM); caso contrário, **false**. Isso só pode ser atualizado por Intune para qualquer tipo de sistema operacional do dispositivo ou por um [aprovada MDM app](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) para dispositivos do sistema operacional Windows. |
 |onPremisesLastSyncDateTime|DateTimeOffset|A última vez em que o objeto foi sincronizado com o diretório local. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'` Somente leitura. |
-|onPremisesSyncEnabled|Booliano|**True** se esse objeto está sincronizado de um diretório local; **false** se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; **null** se esse objeto nunca foi sido sincronizado de um diretório local (padrão). Somente leitura.|
-|operatingSystem|String| O tipo de sistema operacional do dispositivo. Obrigatório. |
+|onPremisesSyncEnabled|Booliano|**True** se esse objeto está sincronizado de um diretório local; **false** se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; **null** se esse objeto nunca foi sido sincronizado de um diretório local (padrão). Somente leitura|
+|operatingSystem|Cadeia de caracteres| O tipo de sistema operacional do dispositivo. Obrigatório. |
 |operatingSystemVersion|String| A versão do sistema operacional do dispositivo. Obrigatório. |
 |physicalIds|Coleção de cadeias de caracteres| Apenas para uso interno. Não anulável. |
-|trustType|Cadeia de caracteres| Tipo de relação de confiança para o dispositivo associado. Somente leitura. Valores possíveis: <br />**Workplace** – indica *traga seus dispositivos pessoais*<br />**AzureAd** – apenas dispositivos associados na nuvem<br />**ServerAd** – dispositivos associados no domínio local unidos ao Azure AD. Saiba mais em [Introdução ao gerenciamento de dispositivo no Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction) |
+|trustType|String| Tipo de relação de confiança para o dispositivo associado. Somente leitura. Valores possíveis: <br />**Workplace** – indica *traga seus dispositivos pessoais*<br />**AzureAd** – apenas dispositivos associados na nuvem<br />**ServerAd** – dispositivos associados no domínio local unidos ao Azure AD. Saiba mais em [Introdução ao gerenciamento de dispositivo no Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction) |
 |Nome| String | Nome amigável de um dispositivo. Retornado somente se o usuário entra com uma conta da Microsoft como parte do projeto Roma. |
 |Status | String| O dispositivo está online ou offline. Retornado somente se o usuário entra com uma conta da Microsoft como parte do projeto Roma. |
 |Plataforma |String|Plataforma do dispositivo. Retornado somente se o usuário entra com uma conta da Microsoft como parte do projeto Roma. Retornado somente se o usuário entra com uma conta da Microsoft como parte do projeto Roma.|
 |Tipo| String| Fator forma do dispositivo. Retornado somente se o usuário entra com uma conta da Microsoft como parte do projeto Roma. |
 |Modelo| String| Modelo do dispositivo. Retornado somente se o usuário entra com uma conta da Microsoft como parte do projeto Roma. |
-|Fabricante| String| Fabricante do dispositivo. Retornado somente se o usuário entra com uma conta da Microsoft como parte do projeto Roma. |
+|fabricante| String| Fabricante do dispositivo. Retornado somente se o usuário entra com uma conta da Microsoft como parte do projeto Roma. |
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para o dispositivo. Somente leitura. Anulável.|
@@ -72,7 +72,7 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |extensions|Coleção [extension](extension.md)|A coleção de extensões open definidas para o dispositivo. Anulável.|
 |registeredOwners|Coleção [directoryObject](directoryobject.md)|Usuários que são proprietários registrados do dispositivo. Somente leitura. Anulável.|
 |registeredUsers|Coleção [directoryObject](directoryobject.md)|Usuários que são usuários registrados do dispositivo. Somente leitura. Anulável.|
-|comandos | Collection(Microsoft.Graph.Command) | Conjunto de comandos enviados ao dispositivo|
+|Comandos | Collection(Microsoft.Graph.Command) | Conjunto de comandos enviados ao dispositivo|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -123,10 +123,15 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "device resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/device.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

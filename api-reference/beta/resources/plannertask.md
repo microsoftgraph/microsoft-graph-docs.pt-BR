@@ -4,16 +4,16 @@ description: O recurso **plannerTask** representa uma tarefa de Planejador no Of
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 217e26036123ddef780acb3679ddcf42be502234
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 2313b31e0a962f27fa728af8c8953b646210397a
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27972905"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29511209"
 ---
 # <a name="plannertask-resource-type"></a>tipo de recurso plannerTask
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 O recurso **plannerTask** representa uma tarefa de Planejador no Office 365. Uma tarefa de Planejador está contida em uma [plano](plannerplan.md) e pode ser atribuída a um [bucket](plannerbucket.md) em um plano. Cada objeto de tarefa tem um objeto [details](plannertaskdetails.md) que pode conter mais informações sobre a tarefa. Confira mais informações sobre as relações entre grupo, plano e tarefa na [visão geral](planner-overview.md).
 
@@ -49,7 +49,7 @@ O recurso **plannerTask** representa uma tarefa de Planejador no Office 365. Uma
 |previewType|string|Isso define o tipo de visualização que aparece na tarefa. Os valores possíveis são: `automatic`, `noPreview`, `checklist`, `description` e `reference`.|
 |referenceCount|Int32|Número de referências externas existentes na tarefa.|
 |startDateTime|DateTimeOffset|A data e a hora que a tarefa começa. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|title|String|Título da tarefa.|
+|title|Cadeia de caracteres|Título da tarefa.|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
@@ -99,10 +99,15 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "plannerTask resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/plannertask.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

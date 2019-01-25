@@ -2,16 +2,16 @@
 title: tipo de recurso de agreementFile
 description: Representa um termos personalizável do arquivo do contrato de uso que gerencia de um inquilino com o Azure Active Directory (AD Azure). Ele contém metadados sobre o arquivo do contrato (por exemplo, o nome, o idioma, e se ele está o arquivo padrão).
 localization_priority: Normal
-ms.openlocfilehash: f06792d63deabf25659a09e8aec5ed0e8f036472
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 446173e83d32af96f938cbee15964ea204a62f7e
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27804505"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29511426"
 ---
 # <a name="agreementfile-resource-type"></a>tipo de recurso de agreementFile
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa um termos personalizável do arquivo do contrato de uso que gerencia de um inquilino com o Azure Active Directory (AD Azure). Ele contém metadados sobre o arquivo do contrato (por exemplo, o nome, o idioma, e se ele está o arquivo padrão).
 
@@ -29,8 +29,8 @@ Representa um termos personalizável do arquivo do contrato de uso que gerencia 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |fileData|[agreementFileData](agreementfiledata.md)|Dados que representam as condições de usar o documento PDF. Somente leitura.|
-|fileName|Cadeia de caracteres|Nome do arquivo contrato (por exemplo, TOU.pdf). Somente leitura.|
-|id|Cadeia de caracteres|Somente leitura.|
+|fileName|String|Nome do arquivo contrato (por exemplo, TOU.pdf). Somente leitura.|
+|id|String|Somente leitura.|
 |isDefault|Booliano|Indica se esse é o arquivo padrão do contrato se nenhuma das culturas corresponder a preferência do cliente. Se nenhum dos arquivos estiverem marcados como padrão, primeiro será tratado como padrão. Somente leitura.|
 |idioma|Cadeia de caracteres|Cultura do arquivo no formato languagecode2-país/regioncode2 contrato. languagecode2 é um código de duas letras minúsculas, derivado do ISO 639-1. País/regioncode2 é derivado do ISO 3166 e normalmente consiste em duas letras maiusculas ou uma marca de idioma BCP-47 (por exemplo, en-US). Somente leitura.|
 
@@ -63,10 +63,15 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "agreementFile resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/agreementfile.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

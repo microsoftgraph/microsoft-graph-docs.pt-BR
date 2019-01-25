@@ -4,16 +4,16 @@ description: Atualize as propriedades de um perfil de sincronização de dados e
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 0c99984b4ca0d8d72fdc02d28a8de80761fdbd60
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 668aad65abe2c9b3d4609400118f9341748210f1
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29398734"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510572"
 ---
 # <a name="update-an-educationsynchronizationprofile"></a>Atualizar um educationSynchronizationProfile
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Atualize as propriedades de um existente escola dados do [perfil de sincronização](../resources/educationsynchronizationprofile.md) no inquilino.
 
@@ -23,7 +23,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Tipo de permissão | Permissões |
 |:-----------|:----------|
 | Delegado (conta corporativa ou de estudante) | EduAdministration.ReadWrite |
-|Delegada (conta pessoal da Microsoft|Sem suporte.|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -187,3 +187,11 @@ Content-type: application/json
     ]
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationsynchronizationprofile-put.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

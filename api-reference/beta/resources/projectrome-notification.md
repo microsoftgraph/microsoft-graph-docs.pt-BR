@@ -3,15 +3,15 @@ title: tipo de recurso de notificação
 description: 'Representa uma notificação que é publicada por um servidor de aplicativo que tem como destino um usuário especificado. A notificação é armazenada no Microsoft Graph e é distribuída aos pontos de extremidade de dispositivo diferente pertencentes ao usuário. '
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: e920645e0d526893eff197b42ed5d6ef7f7c7b93
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: af130c9806511b0afbdaedb602790c7c40d3ca2e
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27973073"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509256"
 ---
 # <a name="notification-resource-type"></a>tipo de recurso de notificação
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa uma notificação que é publicada por um servidor de aplicativo que tem como destino um usuário especificado. A notificação é armazenada no Microsoft Graph e é distribuída aos pontos de extremidade de dispositivo diferente pertencentes ao usuário. 
 
@@ -22,22 +22,22 @@ Quando um usuário atua em uma notificação visual, o cliente app pode usar, em
 ## <a name="methods"></a>Métodos
 |Método | Tipo de retorno | Descrição|
 |:------|:------------|:-----------|
-|[Criar notificação](../api/projectrome-notification-post.md) | [notificação](projectrome-notification.md) |Criar e enviar uma notificação. |
+|[Criar notificação](../api/projectrome-notification-post.md) | Notification |Criar e enviar uma notificação. |
 
 ## <a name="properties"></a>Propriedades
 |Nome | Tipo | Descrição|
 |:----|:-----|:-----------|
-| targetHostName | Cadeia de caracteres | Representa o nome de host do aplicativo ao qual o serviço de chamada deseja postar a notificação, para um determinado usuário. |
-| appNotificationId | Cadeia de caracteres | A id exclusiva definida pelo servidor de aplicativo de uma notificação que é usado para identificar e uma notificação individual de destino. |
+| targetHostName | String | Representa o nome de host do aplicativo ao qual o serviço de chamada deseja postar a notificação, para um determinado usuário. |
+| appNotificationId | String | A id exclusiva definida pelo servidor de aplicativo de uma notificação que é usado para identificar e uma notificação individual de destino. |
 | expirationDateTime | DateTimeOffset | Define um tempo de expiração de UTC em uma notificação de usuário - quando o tempo é para cima, a notificação é removida do repositório de feed de notificação do Microsoft Graph completamente e não está mais parte do histórico de notificação. Valor máximo é 30 dias. |
 | payload | Edm.ComplexType, o objeto JSON | Esse é o conteúdo de dados de uma notificação de usuário brutos ou visual que serão entregues e consumido pelo cliente app receber essa notificação. |
-| payload.rawContent | Cadeia de caracteres | O conteúdo de notificação de uma notificação de usuário brutos que serão entregues e consumido pelo cliente app receber essa notificação. Pelo menos uma das Payload.RawContent e Payload.VisualContent precisa ser válida para uma solicitação de notificação de POSTAGEM. |
+| payload.rawContent | String | O conteúdo de notificação de uma notificação de usuário brutos que serão entregues e consumido pelo cliente app receber essa notificação. Pelo menos uma das Payload.RawContent e Payload.VisualContent precisa ser válida para uma solicitação de notificação de POSTAGEM. |
 | payload.Visual | Edm.ComplexType, o objeto JSON | O conteúdo visual de uma notificação de usuário visual, que será consumida pela plataforma de notificação em cada plataforma móvel e renderizado para os usuários. Pelo menos um dos conteúdo e VisualContent precisa ser válida para uma solicitação de notificação de POSTAGEM. |
-| payload.Visual.Title | Cadeia de caracteres | O título de uma notificação de usuário visual. Deve ter o título ou corpo. |
-| payload.Visual.body | Cadeia de caracteres | O corpo de uma notificação de usuário visual. Deve ter o título ou corpo. |
+| payload.Visual.Title | String | O título de uma notificação de usuário visual. Deve ter o título ou corpo. |
+| payload.Visual.body | String | O corpo de uma notificação de usuário visual. Deve ter o título ou corpo. |
 | displayTimeToLive | Int | Define quanto tempo (em segundos) esse conteúdo notificação permanecerão no Visualizador de notificação da cada plataforma. Por exemplo, quando a notificação é entregue a um dispositivo do Windows, o valor dessa propriedade é passado para ToastNotification.ExpirationTime, que determina quanto tempo a notificação de proposta permanecerão na Central de ações do Windows do usuário. |
 | prioridade | EnumType | Indica a prioridade de uma notificação de usuário brutos. Por padrão, notificações visuais são enviadas com alta prioridade. Valores válidos são de alta e baixa. |
-| groupName | Cadeia de caracteres | O nome do grupo ao qual essa notificação pertence. Ela é definida pelo desenvolvedor para fins de agrupamento de notificações. |
+| GroupName | String | O nome do grupo ao qual essa notificação pertence. Ela é definida pelo desenvolvedor para fins de agrupamento de notificações. |
 | targetPolicy | Edm.ComplexType, o objeto JSON | Política de entrega da notificação em dois níveis diferentes - tipos de ponto de extremidade (Windows, iOS e Android) que devem ser direcionados e pontos de extremidade específicos (identificados por ids de inscrição) que devem ser direcionados lida com o objeto de diretiva de destino. |
 | targetPolicy.platformTypes | Edm.ComplexType, a coleção (EnumType) | Use para filtrar a distribuição de notificação para uma plataforma específica ou plataformas. Por padrão, todos os tipos de ponto de extremidade de push (iOS, Windows e Android) estão habilitados. |
 
@@ -93,3 +93,11 @@ A seguir está uma representação JSON do recurso quando você publica uma noti
   }
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/projectrome-notification.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

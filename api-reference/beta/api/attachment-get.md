@@ -2,16 +2,16 @@
 title: Obter anexo
 description: Leia as propriedades e relacionamentos de um anexo, anexados a um evento, mensagem, tarefa do Outlook ou postagem.
 localization_priority: Normal
-ms.openlocfilehash: 1618d7a8bd866bb36ee9e18475f6f9c40a8190e8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: b346461dad8b0a15d12d0882e0fe8aa4cc2d4774
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809552"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509494"
 ---
 # <a name="get-attachment"></a>Obter anexo
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Leia as propriedades e relacionamentos de um anexo, anexados a um [evento](../resources/event.md), [mensagem](../resources/message.md), [tarefa do Outlook](../resources/outlooktask.md)ou [postar](../resources/post.md).
 
@@ -27,8 +27,8 @@ Todos esses tipos de recursos de anexo são derivados do recurso [attachment](..
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-* Se acessando anexos em mensagens: Mail.Read
-* Se acessando anexos em eventos: Calendars.Read
+* Se estiver acessando anexos em mensagens: Mail.Read.
+* Se estiver acessando anexos em eventos: Calendars.Read.
 * Se acessando anexos em tarefas do Outlook: Tasks.Read
 * Se acessando anexos em postagens de grupo: Group.Read.All
 
@@ -67,8 +67,7 @@ GET /me/mailFolders/{id}/messages/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments/{id}
 ```
 
-Anexos de uma [mensagem](../resources/message.md) contidos em uma pasta filho de um [mailFolder](../resources/mailfolder.md) na caixa de correio do usuário.  O exemplo a seguir mostra um nível de aninhamento, mas uma mensagem pode estar localizada no filho de um filho e assim por diante.
-<!-- { "blockType": "ignored" } -->
+Anexos de uma [message](../resources/message.md) contidos em uma pasta filha de uma [mailFolder](../resources/mailfolder.md) na caixa de correio de um usuário.  O exemplo a seguir mostra um nível de aninhamento, mas uma mensagem pode estar localizada em um filho de um filho, e assim por diante.
 
 ```http
 GET /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
@@ -326,10 +325,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get attachment",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/attachment-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -3,16 +3,16 @@ title: 'reportRoot: getOneDriveUsageStorage'
 description: Obtenha a tendência da quantidade de armazenamento que você está usando no OneDrive for Business.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 04ee3c303b086e82f322f3bc0778d1d4533ff5e7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4274740947e9160817cf874f9d2105b24d71de86
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27933096"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510012"
 ---
 # <a name="reportroot-getonedriveusagestorage"></a>reportRoot: getOneDriveUsageStorage
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Obtenha a tendência da quantidade de armazenamento que você está usando no OneDrive for Business.
 
@@ -165,3 +165,11 @@ Content-Length: 248
   ]
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/reportroot-getonedriveusagestorage.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

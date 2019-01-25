@@ -4,18 +4,18 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Compartilhados
 localization_priority: Normal
-ms.openlocfilehash: cae69a60691d388570d29176fc20aac429907f8a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 33b12ea8e530fd862619c9c20e77a76989efb619
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838987"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29507695"
 ---
 # <a name="shared-resource-type"></a>Tipo de recurso Shared
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O recurso **Shared** indica que um DriveItem foi compartilhado com outras pessoas. O recurso inclui informações sobre como o item é compartilhado.
+O recurso Shared indica que um DriveItem foi compartilhado com outras pessoas. O recurso inclui informações sobre como o item é compartilhado.
 
 Se um [**Driveitem**](driveitem.md) tem uma faceta **shared** não nula, o item foi compartilhada.
 
@@ -41,7 +41,7 @@ Se um [**Driveitem**](driveitem.md) tem uma faceta **shared** não nula, o item 
 | Propriedade       | Tipo                          | Descrição
 | :------------- |:------------------------------|:----------------------------
 | owner          | [IdentitySet](identityset.md) | A identidade do proprietário do item compartilhado. Somente leitura.
-| escopo          | Cadeia de caracteres                        | Indica o escopo de como o item é compartilhado: `anonymous`, `organization` ou `users`. Somente leitura.
+| scope          | String                        | Indica o escopo de como o item é compartilhado: `anonymous`, `organization` ou `users`. Somente leitura.
 | sharedBy       | [identitySet](identityset.md) | A identidade do usuário que compartilhou o item. Somente leitura.
 | sharedDateTime | DateTimeOffset                | A data e a hora UTC que o item foi compartilhado. Somente leitura.
 
@@ -55,12 +55,17 @@ Se um [**Driveitem**](driveitem.md) tem uma faceta **shared** não nula, o item 
 
 ## <a name="remarks"></a>Comentários
 
-Para saber mais sobre as facetas de um **driveItem**, confira [**driveItem**](driveitem.md).
+Para saber mais sobre as facetas de um **driveItem**, consulte [**driveItem**](driveitem.md).
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The shared facet provides info about shared items.",
   "keywords": "shared,share,item,facet,onedrive",
   "section": "documentation",
-  "tocPath": "Facets/Shared"
-} -->
+  "tocPath": "Facets/Shared",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/shared.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

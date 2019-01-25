@@ -4,16 +4,16 @@ description: Representa uma tabela do Excel.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 7d1f6debdbdab3047d55bebe6fc5ec848adcb832
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 2e3e9c93f7459d666fbe7f28a67241c2831b7079
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27956987"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510663"
 ---
 # <a name="table-resource-type"></a>Tipo de recurso Table
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa uma tabela do Excel.
 
@@ -33,7 +33,7 @@ Representa uma tabela do Excel.
 |[Totalrowrange](../api/table-totalrowrange.md)|[Range](range.md)|Obtém o objeto de intervalo associado à linha de totais da tabela.|
 |[Clearfilters](../api/table-clearfilters.md)|Nenhum|Limpa todos os filtros aplicados à tabela no momento.|
 |[Converttorange](../api/table-converttorange.md)|[Range](range.md)|Converte a tabela em um intervalo de células normal. Todos os dados são preservados.|
-|[Delete](../api/table-delete.md)|Nenhum|Exclui a tabela.|
+|[Delete](../api/table-delete.md)|None|Exclui a tabela.|
 |[Reapplyfilters](../api/table-reapplyfilters.md)|Nenhum|Aplica novamente todos os filtros à tabela.|
 |[List](../api/table-list.md) | Coleção [Table](table.md) |Obtenha a coleção de objetos da tabela. |
 |[Add](../api/tablecollection-add.md)|[Table](table.md)|Cria uma nova tabela. O endereço de origem do intervalo determina a planilha à qual a tabela será adicionada. Se a tabela não puder ser adicionada (por exemplo, porque o endereço é inválido ou a tabela se sobreporia a outra), será gerado um erro.|
@@ -53,7 +53,7 @@ Representa uma tabela do Excel.
 |showFilterButton|Booliano|Indica se os botões de filtro estão visíveis na parte superior de cada cabeçalho da coluna. Essa configuração só será permitida se a tabela tiver uma linha de cabeçalho.   |
 |legacyId|Cadeia de caracteres|ID herdada usada em clientes do Excel anteriores. O valor do identificador permanece o mesmo, ainda que a tabela seja renomeada. Essa propriedade deve ser interpretada como um valor de cadeia de caracteres opacas e não deve ser analisada para qualquer outro tipo. Somente leitura.   |
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |columns|Coleção [TableColumn](tablecolumn.md)|Representa uma coleção de todas as colunas na tabela. Somente leitura.|
@@ -92,10 +92,15 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Table resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/table.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

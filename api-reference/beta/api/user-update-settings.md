@@ -4,16 +4,16 @@ description: 'Atualize as propriedades do objeto de configurações. '
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8f538d298f71ad7ef537988a29bae812015566ec
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: d21d7fb26945e4a46fdf877bb5911aba0621ce3b
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27913223"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29508759"
 ---
 # <a name="update-settings"></a>Configurações de atualização
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Atualize as propriedades do objeto de [configurações](../resources/user-settings.md) . Os usuários na mesma organização podem ter configurações diferentes com base em suas preferências ou nas diretivas de organização. Para obter as configurações atuais de usuário, consulte [configurações do usuário atual](user-get-settings.md). 
 
@@ -93,3 +93,11 @@ Para saber mais, consulte [JSON processamento em lotes](/graph/json-batching).
 **Importante**: somente membros do grupo de funções de [Gerenciamento da organização](https://support.office.com/article/permissions-in-the-office-365-security-compliance-center-d10608af-7934-490a-818e-e68f17d0e9c1?ui=en-US&rs=en-US&ad=US) podem atualizar vários usuários. 
 
 
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-update-settings.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

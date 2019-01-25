@@ -4,16 +4,16 @@ description: Relacionamento de rich conectando a um usuário a documentos que s�
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 6a5bd678124a4768303d3cd3ffd4449f4d47bb69
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 07fe0f50d6961f0fce6c426c7fb2431f17127bf7
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27950743"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29507492"
 ---
 # <a name="trending-resource-type"></a>tipo de recurso de tendências
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Relacionamento de rich conectando a um usuário a documentos que são tendências em torno do usuário (são relevante para o usuário). Arquivos de OneDrive, os arquivos armazenados em sites de equipe do SharePoint podem tendências em torno do usuário e.
 
@@ -27,12 +27,12 @@ Relacionamento de rich conectando a um usuário a documentos que são tendência
 
 | Propriedade      | Tipo                              | Descrição  |
 | ------------- |---------------                    | -------------|
-| id                    | Cadeia de caracteres                    | Identificador exclusivo do relacionamento. Somente leitura.        |
+| id                    | String                    | Identificador exclusivo do relacionamento. Somente leitura.        |
 | weight                | Duplo                    | Valor que indica o quanto o documento está atualmente tendências. Quanto maior o número, mais o documento é atualmente tendências ao redor do usuário (o mais relevantes é). Documentos retornados são classificados por esse valor.  |
 | resourceVisualization | [resourceVisualization](insights-resourcevisualization.md)    | Propriedades que você pode usar para visualizar o documento na sua experiência. |
 | resourceReference     | [resourceReference](insights-resourcereference.md)        | Propriedades de referência do documento tendência, como a url e o tipo de documento. |
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 
 | Propriedade      | Tipo          | Descrição  |
 | ------------- |---------------| -------------|
@@ -52,3 +52,11 @@ Veja a seguir uma representação JSON do recurso
   "resource": [ { "@odata.type": "microsoft.graph.entity" } ]
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/insights-trending.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

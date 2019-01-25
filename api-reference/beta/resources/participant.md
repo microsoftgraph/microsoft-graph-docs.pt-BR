@@ -4,16 +4,16 @@ description: O tipo de participante.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: d6a4474525086fb1e8aefe00ad37acaf6511e9f9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: f49526824b2b6c4eb4a5065f05ab4c765d299faa
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27938326"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29508143"
 ---
 # <a name="participant-resource-type"></a>tipo de recurso de participantes
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 O tipo de participante.
 
@@ -31,15 +31,15 @@ O tipo de participante.
 
 | Propriedade             | Tipo                                     | Descrição                                                  |
 | :------------------- | :--------------------------------------- | :------------------------------------------------------------|
-| id                   | Cadeia de caracteres                                   | A identificação dos participantes.                                          |
+| id                   | String                                   | A identificação dos participantes.                                          |
 | Info                 | [participantInfo](participantinfo.md)    | O participante do participante.                          |
 | isInLobby            | booliano                                  | True se o participante estiver no lobby                          |
 | isMuted              | booliano                                  | True se o participante está sem som (cliente ou servidor sem áudio)    |
 | mediaStreams         | coleção [mediaStream](mediastream.md) | A lista de fluxos de mídia.                                   |
-| metadados             | Cadeia de caracteres                                   | Um blob de dados fornecidos pelo participante na lista     |
+| Metadata             | String                                   | Um blob de dados fornecidos pelo participante na lista     |
 | recordingInfo        | [recordingInfo](recordinginfo.md)        | Informações sobre se o participante tenha o recurso de gravação. |
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
@@ -105,10 +105,15 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "participant resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/participant.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

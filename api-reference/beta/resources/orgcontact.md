@@ -4,16 +4,16 @@ description: Veja a seguir uma representação JSON do recurso
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 34f929e1b49c60269845d27bf0d8781a6d17b32c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 01f606e8fb1f6ae51608853eed3bc39e0ec124df
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27918570"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29508682"
 ---
 # <a name="orgcontact-resource-type"></a>tipo de recurso de orgContact
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ## <a name="methods"></a>Métodos
 
@@ -24,8 +24,8 @@ ms.locfileid: "27918570"
 |[Listar directReports](../api/orgcontact-list-directreports.md) |Coleção [directoryObject](directoryobject.md)| Liste relatórios de diretos do contato.|
 |[Listar memberOf](../api/orgcontact-list-memberof.md) |Coleção [directoryObject](directoryobject.md)| Obtenha uma coleção de objetos do membro.|
 |[Delete](../api/orgcontact-delete.md) | Nenhum |Exclua objeto orgContact. |
-|[checkMemberGroups](../api/orgcontact-checkmembergroups.md)|Coleção de cadeias de caracteres| Verifique se a associação ao grupo. |
-|[getMemberGroups](../api/orgcontact-getmembergroups.md)|Coleção de cadeias de caracteres| Retorne todos os grupos que o contato especificado é um membro de. |
+|[checkMemberGroups](../api/orgcontact-checkmembergroups.md)|String collection| Verifique se a associação ao grupo. |
+|[getMemberGroups](../api/orgcontact-getmembergroups.md)|Coleção String| Retorne todos os grupos que o contato especificado é um membro de. |
 |[getMemberObjects](../api/orgcontact-getmemberobjects.md)|Coleção de cadeias de caracteres| Retorna uma lista de directoryObjects de que o contato é um membro. |
 
 ## <a name="properties"></a>Propriedades
@@ -43,13 +43,13 @@ ms.locfileid: "27918570"
 |Email|String| O endereço SMTP do contato, por exemplo, "jeff@contoso.onmicrosoft.com". |
 | mailNickname                 | String                                                     | Alias de email (parte do endereço de email previamente pendente o símbolo @) para esse contato organizacional.                                                                                                                                                                                                                                                                                |
 | onPremisesLastSyncDateTime   | DateTimeOffset                                             | Data e hora quando este contato organizacional foi último sincronizados a partir do AD local. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de Jan de 2014 ficaria assim: ' 2014-01-01T00:00:00Z'.   |
-| onPremisesProvisioningErrors |coleção [onPremisesProvisioningError](onpremisesprovisioningerror.md)       | Lista de sincronização de provisionamento de erros para esse contato organizacional.                                                                                                                                                                                                                                                                                                |
+| onPremisesProvisioningErrors |coleção [OnPremisesProvisioningError](onpremisesprovisioningerror.md)       | Lista de sincronização de provisionamento de erros para esse contato organizacional.                                                                                                                                                                                                                                                                                                |
 |onPremisesSyncEnabled|Booliano|**true** se este objeto é sincronizado a partir de um diretório local; **false** se este objeto foi originalmente sincronizados a partir de um diretório local, mas é não são mais sincronizados e agora são administrados no Exchange; **Nulo** se este objeto nunca foram sincronizado a partir de um diretório local (padrão).|
 | telefones                       | Coleção [phone](phone.md)                            | Lista de telefones para esse contato organizacional. Tipos de telefone podem ser businessFax, comercial e celular. Somente um de cada tipo nunca pode estar presente na coleção.                                                                                                                       |
-| proxyAddresses               | Coleção de cadeias de caracteres                                         | Por exemplo: ["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]. Operador **any** é necessário para expressões de filtro propriedades de valores múltiplos. Suporta \$filtro.                                                                                                                                                                               |
+| proxyAddresses               | String collection                                         | Por exemplo: ["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]. O operador **any** é obrigatório para expressões de filtro em propriedades de vários valores. Oferece suporte a $filter.                                                                                                                                                                               |
 | surname                      | String                                                     | Sobrenome para esse contato organizacional.                          |
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
@@ -93,10 +93,15 @@ Veja a seguir uma representação JSON do recurso
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "orgContact resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/orgcontact.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

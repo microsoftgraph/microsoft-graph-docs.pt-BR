@@ -2,16 +2,16 @@
 title: tipo de recurso de privilegedRoleAssignmentRequest
 description: Representa a solicitação para operações de atribuição de função no gerenciamento de identidades Privilegd.
 localization_priority: Normal
-ms.openlocfilehash: bfe3b6802136b2848f36abef08134efd0eb82518
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: c0e0bbfa76b7ffb4e122d381d45dd4092f0843c1
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880126"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509004"
 ---
 # <a name="privilegedroleassignmentrequest-resource-type"></a>tipo de recurso de privilegedRoleAssignmentRequest
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa a solicitação para operações de atribuição de função no gerenciamento de identidades Privilegd.
 
@@ -30,20 +30,20 @@ Representa a solicitação para operações de atribuição de função no geren
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|Cadeia de caracteres| Somente leitura. A identificação da solicitação de atribuição de função.|
-|assignmentState|Cadeia de caracteres| O estado da atribuição. O valor pode ser `Eligible` para atribuição elegível `Active` - se ele é atribuído diretamente `Active` pelos administradores, ou ativado em uma atribuição elegível pelos usuários.|
-|duration|Cadeia de caracteres| A duração de uma atribuição de função.|
-|motivo|Cadeia de caracteres| O motivo para a atribuição de função.|
+|id|String| Somente leitura. A identificação da solicitação de atribuição de função.|
+|assignmentState|String| O estado da atribuição. O valor pode ser `Eligible` para atribuição elegível `Active` - se ele é atribuído diretamente `Active` pelos administradores, ou ativado em uma atribuição elegível pelos usuários.|
+|duration|String| A duração de uma atribuição de função.|
+|Reason|String| O motivo para a atribuição de função.|
 |requestedDateTime|DateTimeOffset| Somente leitura. A solicitação criar horário. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
-|roleId|Cadeia de caracteres| A identificação da função.|
-|agenda|[governanceSchedule](governanceschedule.md)| O objeto de agendamento da solicitação de atribuição de função.|
+|roleId|String| A identificação da função.|
+|Schedule|[governanceSchedule](governanceschedule.md)| O objeto de agendamento da solicitação de atribuição de função.|
 |status|Cadeia de caracteres| Leitura-only.The o status da solicitação de atribuição de função. O valor pode ser `NotStarted`,`Completed`,`RequestedApproval`,`Scheduled`,`Approved`,`ApprovalDenied`,`ApprovalAborted`,`Cancelling`,`Cancelled`,`Revoked`,`RequestExpired`.|
-|ticketNumber|Cadeia de caracteres| TicketNumber para a atribuição de função. |
-|ticketSystem|Cadeia de caracteres| TicketSystem para a atribuição de função.|
-|type|Cadeia de caracteres| Representando o o tipo da operação na atribuição de função. O valor pode ser `AdminAdd`: administradores adicionar usuários às funções; `UserAdd`: Os usuários adicionar atribuições de função.|
-|userId|Cadeia de caracteres| A identificação do usuário.|
+|ticketNumber|String| TicketNumber para a atribuição de função. |
+|ticketSystem|String| TicketSystem para a atribuição de função.|
+|type|String| Representando o o tipo da operação na atribuição de função. O valor pode ser `AdminAdd`: administradores adicionar usuários às funções; `UserAdd`: Os usuários adicionar atribuições de função.|
+|userId|String| A identificação do usuário.|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 | Relação | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |roleInfo|[privilegedRole](privilegedrole.md)| O objeto roleInfo da solicitação de atribuição de função.|
@@ -80,10 +80,15 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "privilegedRoleAssignmentRequest resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/privilegedroleassignmentrequest.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

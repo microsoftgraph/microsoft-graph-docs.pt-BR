@@ -2,16 +2,16 @@
 title: Configurar a sincronização com atributos personalizados de destino
 description: Você pode personalizar seu esquema de sincronização para incluir atributos personalizados que são definidos no diretório de destino. Este artigo descreve como personalizar uma assinatura de equipe de vendas, adicionando um novo campo denominado `officeCode`. Configurar a sincronização do Azure Active Directory (AD Azure) para a equipe de vendas e para cada usuário, você preencherá o `officeCode` campo na equipe de vendas com o valor do `extensionAttribute10` campo no Azure AD.
 localization_priority: Normal
-ms.openlocfilehash: 3a7612682794109a5f94318304c8a8898764ccb8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 1b0a19bab796f7bd8261ebf898450c07bf1415e0
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806752"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29508878"
 ---
 # <a name="configure-synchronization-with-custom-target-attributes"></a>Configurar a sincronização com atributos personalizados de destino
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Você pode personalizar seu esquema de sincronização para incluir atributos personalizados que são definidos no diretório de destino. Este artigo descreve como personalizar uma assinatura de equipe de vendas, adicionando um novo campo denominado `officeCode`. Configurar a sincronização do Azure Active Directory (AD Azure) para a equipe de vendas e para cada usuário, você preencherá o `officeCode` campo na equipe de vendas com o valor do `extensionAttribute10` campo no Azure AD.
 
@@ -262,3 +262,11 @@ HTTP/1.1 201 No Content
 ```
 
 Se o esquema foi salvo com êxito, na iteração seguinte do trabalho de sincronização, ele iniciará o processamento novamente todas as contas no seu Azure AD e os novos mapeamentos serão aplicados a todas as contas provisionadas.
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/synchronization-configure-with-custom-target-attributes.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

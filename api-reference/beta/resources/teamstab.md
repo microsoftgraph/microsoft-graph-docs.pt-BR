@@ -4,16 +4,16 @@ description: 'Um teamsTab é uma guia que tem fixados (anexado) a um canal de um
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 3c5cf5ef33f53cfaca7189df24e5dfd880a77241
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 2db59065f139e2e704c3394f7afb82cba91c33fe
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27947145"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509284"
 ---
 # <a name="teamstab-resource-type"></a>tipo de recurso de teamsTab
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Um teamsTab é uma [guia](../resources/teamstab.md) que tem fixados (anexado) a um [canal](channel.md) de dentro de uma [equipe](team.md). 
 
@@ -40,7 +40,7 @@ Um teamsTab é uma [guia](../resources/teamstab.md) que tem fixados (anexado) a 
 |  webUrl          |   string                  |  Link profundo url da instância do guia. Somente leitura.     |
 |  configuration        |   [teamsTabConfiguration](teamstabconfiguration.md) |  Contêiner de configurações personalizadas aplicadas a uma guia. Na guia é considerada configurado somente depois que essa propriedade for definida.     |
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 
 | Relação | Tipo   | Descrição |
 |:---------------|:--------|:----------|
@@ -71,13 +71,18 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "teamsTab resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/teamstab.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
 
 ## <a name="see-also"></a>Confira também
 

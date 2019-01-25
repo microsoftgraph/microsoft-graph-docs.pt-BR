@@ -2,16 +2,16 @@
 title: tipo de recurso de governanceRoleAssignmentRequest
 description: Representa a solicitação para operações de atribuição de função no gerenciamento de identidades Privilegd.
 localization_priority: Normal
-ms.openlocfilehash: 036e44a34d3c5373bcedba305eba6bd686c28601
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 242f1d311a2d304d0d8dab0a4e24f9294722ab6e
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885089"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509571"
 ---
 # <a name="governanceroleassignmentrequest-resource-type"></a>tipo de recurso de governanceRoleAssignmentRequest
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa a solicitação para operações de atribuição de função no gerenciamento de identidades Privilegd.
 
@@ -30,21 +30,21 @@ Representa a solicitação para operações de atribuição de função no geren
 ## <a name="properties"></a>Propriedades
 | Propriedade                  | Tipo          |Descrição|
 |:--------------------------|:--------------|:----------|
-|id                         |Cadeia de caracteres         |A identificação da solicitação de atribuição de função.|
+|id                         |String         |A identificação da solicitação de atribuição de função.|
 |resourceId                 |Cadeia de caracteres         |Obrigatório. A identificação do recurso que a solicitação de atribuição de função é associada.|
-|roleDefinitionId           |Cadeia de caracteres         |Obrigatório. A id da definição de função que a solicitação de atribuição de função é associada.|
-|subjectId                  |Cadeia de caracteres         |Obrigatório. A identificação do assunto da qual a solicitação de atribuição de função é associada.|
-|type                       |Cadeia de caracteres         |Obrigatório. Representando o o tipo da operação na atribuição de função. O valor pode ser <ul><li>`AdminAdd`: Os administradores de atribuir funções; a usuários/grupos</li><li>`UserAdd`: Usuários ativarem elegíveis atribuições;</li><li> `AdminUpdate`: Os administradores alterar as atribuições de função existente</li><li>`AdminRemove`: Os administradores de removam usuários/grupos de funções;<li>`UserRemove`: Usuários desativar atribuições ativas;<li>`UserExtend`: Solicitação de usuários para estender as suas atribuições expiradas;</li><li>`AdminExtend`: Administradores estendem atribuições expiradas.</li><li>`UserRenew`: Solicitação de os usuários de renovação de suas atribuições expiradas;</li><li>`AdminRenew`: Administradores estendem atribuições expiradas.</li></ul>|
-|assignmentState|Cadeia de caracteres  |Obrigatório. O estado da atribuição. O valor pode ser <ul><li> `Eligible`para atribuição elegível</li><li> `Active`-se diretamente atribuída `Active` pelos administradores, ou ativado em uma atribuição elegível pelos usuários.</li></ul>|
+|roleDefinitionId           |String         |Obrigatório. A id da definição de função que a solicitação de atribuição de função é associada.|
+|subjectId                  |String         |Obrigatório. A identificação do assunto da qual a solicitação de atribuição de função é associada.|
+|type                       |String         |Obrigatório. Representando o o tipo da operação na atribuição de função. O valor pode ser <ul><li>`AdminAdd`: Os administradores de atribuir funções; a usuários/grupos</li><li>`UserAdd`: Usuários ativarem elegíveis atribuições;</li><li> `AdminUpdate`: Os administradores alterar as atribuições de função existente</li><li>`AdminRemove`: Os administradores de removam usuários/grupos de funções;<li>`UserRemove`: Usuários desativar atribuições ativas;<li>`UserExtend`: Solicitação de usuários para estender as suas atribuições expiradas;</li><li>`AdminExtend`: Administradores estendem atribuições expiradas.</li><li>`UserRenew`: Solicitação de os usuários de renovação de suas atribuições expiradas;</li><li>`AdminRenew`: Administradores estendem atribuições expiradas.</li></ul>|
+|assignmentState|String  |Obrigatório. O estado da atribuição. O valor pode ser <ul><li> `Eligible`para atribuição elegível</li><li> `Active`-se diretamente atribuída `Active` pelos administradores, ou ativado em uma atribuição elegível pelos usuários.</li></ul>|
 |requestedDateTime          |DateTimeOffset |Somente leitura. A solicitação criar horário. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|agenda                   |[governanceSchedule](governanceschedule.md)|O objeto de agendamento da solicitação de atribuição de função.|
-|motivo                     |Cadeia de caracteres         |Uma mensagem fornecida por usuários e administradores quando criar a solicitação sobre por que ele é necessário.|
+|Schedule                   |[governanceSchedule](governanceschedule.md)|O objeto de agendamento da solicitação de atribuição de função.|
+|Reason                     |String         |Uma mensagem fornecida por usuários e administradores quando criar a solicitação sobre por que ele é necessário.|
 |status                     |[governanceRoleAssignmentRequestStatus](governanceroleassignmentrequeststatus.md)         |O status da solicitação de atribuição de função.|
-|linkedEligibleRoleAssignmentId|Cadeia de caracteres        |Se essa for uma solicitação de ativação de função, ela representa a identificação do `eligible assignment` sendo chamada; Caso contrário, o valor será `null`. |
+|linkedEligibleRoleAssignmentId|String        |Se essa for uma solicitação de ativação de função, ela representa a identificação do `eligible assignment` sendo chamada; Caso contrário, o valor será `null`. |
 
 
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 | Relação | Tipo                                |Descrição|
 |:-------------|:----------------------------------|:----------|
 |recurso      |[governanceResource](../resources/governanceresource.md)            |Somente leitura. O recurso que visa a solicitação. |
@@ -82,10 +82,15 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "governanceRoleAssignmentRequest",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/governanceroleassignmentrequest.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

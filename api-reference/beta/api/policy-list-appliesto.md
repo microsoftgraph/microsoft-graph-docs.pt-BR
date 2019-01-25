@@ -2,20 +2,20 @@
 title: Lista de aplicativos e entidades de serviço com políticas específicas atribuídas
 description: Recupere o aplicativo e objetos de entidades de serviço com a diretiva especificada atribuída.
 localization_priority: Normal
-ms.openlocfilehash: 21a5a9ba4260e306553f53866657a482d814b5f7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: d7449428216a2e68d9ab8bb8399ca0e8dc4b72fd
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875604"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510474"
 ---
 # <a name="list-applications-and-service-principals-with-specific-policy-assigned"></a>Lista de aplicativos e entidades de serviço com políticas específicas atribuídas
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Recupere os objetos de [aplicativo](../resources/application.md) e [serviço principal](../resources/serviceprincipal.md) com a diretiva especificada atribuída.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -75,3 +75,11 @@ Content-Type: application/json
     ]
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/policy-list-appliesto.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -5,16 +5,16 @@ ms.date: 09/10/2017
 title: Restaurar uma versão anterior de um item de lista do SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: b7c81022ebcb4f7afe02520c48f7cfbf103b2943
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: ef3b5848b6a6f60bf0515f914e87383e0a6f66bc
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27982998"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29511552"
 ---
 # <a name="restore-a-previous-version-of-a-listitem"></a>Restaura uma versão anterior de um ListItem
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Restaura uma versão anterior de um ListItem para ser a versão atual. Isso criará uma nova versão com o conteúdo da versão anterior, mas preservará todas as versões existentes do item.
 
@@ -61,10 +61,15 @@ Se tiver êxito, a chamada API retorna um código `204 No content`.
 HTTP/1.1 204 No content
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create a copy of an existing item.",
   "keywords": "copy existing item",
   "section": "documentation",
-  "tocPath": "Items/Copy"
-} -->
+  "tocPath": "Items/Copy",
+  "suppressions": [
+    "Error: /api-reference/beta/api/listitemversion-restore.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

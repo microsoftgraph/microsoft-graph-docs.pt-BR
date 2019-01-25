@@ -4,18 +4,18 @@ description: 'Essa ação permite que o organizador ou o participante de um even
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: fe8d108ebeb15c2684e1997b8a02cc28a99101b1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 6f1b3e1f089d927aeb21ca80ff77edda63121c60
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27990667"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510383"
 ---
 # <a name="event-forward"></a>evento: encaminhar
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Essa ação permite que o organizador ou o participante de uma reunião de [evento](../resources/event.md) para encaminhar a solicitação de reunião para um novo destinatário. 
+Esta ação permite que o organizador ou o participante de um evento de reunião encaminhe a solicitação de reunião ao novo destinatário. 
 
 Se o evento de reunião é encaminhado de caixa de correio do de um participante Office 365 para outro destinatário, essa ação também envia uma mensagem para notificar o organizador do encaminhamento e adiciona o destinatário para a cópia do organizador do evento reunião. Essa conveniência não está disponível no encaminhamento de uma conta do Outlook.com.
 
@@ -106,10 +106,15 @@ HTTP/1.1 202 Accepted
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "event: forward",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/event-forward.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,16 +4,16 @@ description: Recupere a coleção de perfis de sincronização de dados escola n
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: ed001a7c265f16057ea216d21f7a05f672df7065
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 1907b0ef08473a79d66e79fcb4751b281e9a18ad
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425068"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509550"
 ---
 # <a name="list-educationsynchronizationprofiles"></a>Lista educationSynchronizationProfiles
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Recupere a coleção de [perfis de sincronização](../resources/educationsynchronizationprofile.md) de dados escola no inquilino.
 
@@ -23,7 +23,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:-----------|:----------|
 | Delegado (conta corporativa ou de estudante) | EduAdministration.Read, EduAdministration.ReadWrite |
-|Delegada (conta pessoal da Microsoft|Sem suporte.|
+|Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -165,3 +165,11 @@ Content-length: 3296
   ]
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationsynchronizationprofile-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

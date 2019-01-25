@@ -4,28 +4,28 @@ description: Envia uma solicitação de e-mail em nome do usuário conectado par
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 772c01c0522becc737d07d6e842c610a5abecc0d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 69d14315fc0732ed12db357f9aa9a0c837f48f29
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27968159"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29508822"
 ---
 # <a name="message-unsubscribe"></a>mensagem: Cancelar a assinatura
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Envia uma solicitação de e-mail em nome do usuário conectado para cancelar a assinatura de uma lista de distribuição de e-mail. Usa as informações do cabeçalho `List-Unsubscribe`.
 
 Remetentes de mensagens podem usar listas de endereçamento de forma amigável, incluindo uma opção para destinatários para rejeitar. Eles podem fazer isso, especificando o `List-Unsubscribe` cabeçalho em cada mensagem seguindo [RFC-2369](https://www.faqs.org/rfcs/rfc2369.html).
 
-**Observação** Em particular, para a ação **Cancelar** funcione, o remetente deve especificar `mailto:` e não baseado em URL cancelar a assinatura de informações.
+**Nota** Especificamente para a ação **Cancelar assinatura** funcionar, o remetente deve especificar `mailto:` e não informações de cancelamento de assinatura baseadas em URL.
 
-A definição desse cabeçalho seria também definir a propriedade de **unsubscribeEnabled** da instância da [mensagem](../resources/message.md) para `true`e a propriedade **unsubscribeData** para os dados de cabeçalho.
+Definir esse cabeçalho também definiria a propriedade **UnsubscribeEnabled** da instância [Mensagem](../resources/message.md) para `true` e a propriedade **UnsubscribeData** para os dados do cabeçalho.
 
-Se a propriedade **unsubscribeEnabled** de uma mensagem é `true`, você pode usar a ação **Cancelar** para cancelar o usuário de mensagens futuras semelhantes como gerenciado pelo remetente da mensagem.
+Se a propriedade **UnsubscribeEnabled** de uma mensagem é `true`, você pode usar a ação **Cancelar assinatura** para cancelar a assinatura do usuário de mensagens futuras semelhantes, conforme gerenciado pelo remetente da mensagem.
 
-Uma ação bem-sucedida **Cancelar** move a mensagem para a pasta **Itens excluídos** . A exclusão do usuário dos destinatários de futuros e-mails é gerenciada pelo remetente.
+Um ação bem-sucedida de **Cancelar assinatura** move a mensagem para a pasta Itens Excluídos. A exclusão do usuário dos destinatários de futuros e-mails é gerenciada pelo remetente.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -77,10 +77,15 @@ HTTP/1.1 202 Accepted
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "message: unsubscribe",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/message-unsubscribe.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

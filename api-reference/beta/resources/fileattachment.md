@@ -2,16 +2,16 @@
 title: tipo de recurso fileAttachment
 description: Um arquivo (por exemplo, um arquivo de texto ou um documento do Word) anexado a um evento,
 localization_priority: Normal
-ms.openlocfilehash: 7f7270bd5392e2d880daeb45491f4c65e9fca198
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 7032bcd234d07f0f3fdce0787968d72530a0a442
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27869276"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510761"
 ---
 # <a name="fileattachment-resource-type"></a>tipo de recurso fileAttachment
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Um arquivo (por exemplo, um arquivo de texto ou um documento do Word) anexado a um [evento](../resources/event.md), [mensagem](../resources/message.md), [tarefa do Outlook](../resources/outlooktask.md)ou [postar](../resources/post.md). A propriedade **contentBytes** contém o conteúdo do arquivo codificado na base64.  
 
@@ -36,7 +36,7 @@ Derivado de [attachment](attachment.md).
 |contentId|String|A ID do anexo no repositório do Exchange.|
 |contentLocation|String|O URI (Uniform Resource Identifier) que corresponde ao local do conteúdo do anexo.|
 |contentType|Cadeia de caracteres|O tipo de conteúdo do anexo.|
-|id|Cadeia de caracteres|A ID do anexo.|
+|id|String|A ID do anexo.|
 |isInline|Booliano|Defina como true se este for um anexo embutido.|
 |lastModifiedDateTime|DateTimeOffset|Data e hora em que o anexo foi modificado pela última vez.|
 |name|String|O nome que representa o texto que é exibido abaixo do ícone que representa o anexo inserido. Não precisa ser o nome de arquivo real.|
@@ -75,10 +75,15 @@ Veja a seguir uma representação JSON do recurso
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "fileAttachment resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/fileattachment.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

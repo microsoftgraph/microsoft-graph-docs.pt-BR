@@ -2,16 +2,16 @@
 title: tipo de recurso de synchronizationJob
 description: Executa a sincronização por executar periodicamente em segundo plano, sondagem para que as alterações em um diretório e envio-los para um diretório diferente. O trabalho de sincronização sempre é específico para uma determinada instância de um aplicativo no seu locatário. Como parte da configuração do trabalho de sincronização, você precisará fornecer a autorização para ler e gravar objetos em seu diretório de destino e personalize o esquema de sincronização de tarefa.
 localization_priority: Normal
-ms.openlocfilehash: 4d65f39cd63357c8fc7c1e22d3d3871eb1646d53
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 57515857ac6561e73ef0f67f91bdead98abfb937
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892145"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510565"
 ---
 # <a name="synchronizationjob-resource-type"></a>tipo de recurso de synchronizationJob
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Executa a sincronização por executar periodicamente em segundo plano, sondagem para que as alterações em um diretório e envio-los para um diretório diferente. O trabalho de sincronização sempre é específico para uma determinada instância de um aplicativo no seu locatário. Como parte da configuração do trabalho de sincronização, você precisará fornecer a autorização para ler e gravar objetos em seu diretório de destino e personalize o esquema de sincronização de tarefa.
 
@@ -34,15 +34,15 @@ Executa a sincronização por executar periodicamente em segundo plano, sondagem
 
 | Propriedade      | Tipo      | Descrição    |
 |:--------------|:----------|:---------------|
-|id             |Cadeia de caracteres                     |Identificador de trabalho de sincronização exclusivo. Somente leitura.|
-|agenda       |[synchronizationSchedule](synchronization-synchronizationschedule.md)|Usada para executar o trabalho de agendamento. Somente leitura.|
+|id             |String                     |Identificador de trabalho de sincronização exclusivo. Somente leitura.|
+|Schedule       |[synchronizationSchedule](synchronization-synchronizationschedule.md)|Usada para executar o trabalho de agendamento. Somente leitura.|
 |status         |[synchronizationStatus](synchronization-synchronizationstatus.md)     |Status do trabalho, que inclui quando o trabalho foi executado último, o estado atual do trabalho e erros.|
 |templateId     |String    |Identificador do [modelo de sincronização](synchronization-synchronizationtemplate.md) em que esse trabalho se baseia.|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|esquema|[synchronizationSchema](synchronization-synchronizationschema.md)| O esquema de sincronização configurado para o trabalho.|
+|SCHEMA|[synchronizationSchema](synchronization-synchronizationschema.md)| O esquema de sincronização configurado para o trabalho.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -68,10 +68,15 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "synchronizationJob resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/synchronization-synchronizationjob.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

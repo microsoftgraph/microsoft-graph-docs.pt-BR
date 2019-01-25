@@ -4,16 +4,16 @@ ms.author: dspektor
 ms.date: 09/10/2017
 title: Atividades de arquivo
 localization_priority: Normal
-ms.openlocfilehash: 55719340eb8baa565c79802403909b66ee5a4e49
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 75849fc67febe8c0f22d4dbd057da98aea5e8854
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833765"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29511174"
 ---
 # <a name="enumerate-activities-preview"></a>Enumerar atividades (prévia)
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Lista as [atividades][] recentes que foram realizadas em um item ou em uma hierarquia.
 
@@ -149,10 +149,15 @@ Content-type: application/json
 }
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Site/List sites"
-} -->
+  "tocPath": "Site/List sites",
+  "suppressions": [
+    "Error: /api-reference/beta/api/activities-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

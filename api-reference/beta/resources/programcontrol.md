@@ -2,16 +2,16 @@
 title: tipo de recurso de programControl
 description: No Windows Azure AD access analisa o recurso, o objeto de controle do programa representa um controle, vinculando uma revisão de acesso a um programa.
 localization_priority: Normal
-ms.openlocfilehash: ddf6e978277ca1801f9126597ac4b3561fe5bfb7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 3d9829b8e2585d4deda95551021e2fd9b8d14c7a
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27817819"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29511412"
 ---
 # <a name="programcontrol-resource-type"></a>tipo de recurso de programControl
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 No recurso de [acesso analisa](accessreviews-root.md) Azure AD, o objeto de controle do programa representa um controle, vinculando uma revisão de acesso a um programa.
 
@@ -24,7 +24,7 @@ No recurso de [acesso analisa](accessreviews-root.md) Azure AD, o objeto de cont
 |[Excluir programControl](../api/programcontrol-delete.md) |     Nenhum.   |   Remova um programControl de um programa.|
 |[Lista programControls](../api/programcontrol-list.md) | coleção [programControl](programcontrol.md)| Controles de lista com todos os programas no inquilino.|
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
@@ -45,7 +45,7 @@ No recurso de [acesso analisa](accessreviews-root.md) Azure AD, o objeto de cont
 | `owner`                  |[userIdentity](useridentity.md)   | O usuário que criou o controle de programa.                                               |
 | `resource`               |`programResource`       | O recurso, um grupo ou um aplicativo alvo de revisão de acesso do controle este programa.                   |
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 | `program`                |[programa](program.md)               | O programa esse controle faz parte do.                                                |
@@ -95,10 +95,15 @@ Esse tipo de herda de `microsoft.graph.identity` e tem uma propriedade adicional
 | `type`               |`String`  | Tipo de recurso, indicando se ele é um grupo ou um aplicativo. |     
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "programControl resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/programcontrol.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

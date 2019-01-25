@@ -3,27 +3,27 @@ title: Inscrições de lista
 description: " Consulte os cenários abaixo para obter detalhes."
 localization_priority: Normal
 author: piotrci
-ms.openlocfilehash: e7b6c618c35aa9952673b79f238777a71bc41f6a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 20aad712bc49f91bec58a67c0c66ef76bf4653e2
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27928777"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510978"
 ---
 # <a name="list-subscriptions"></a>Inscrições de lista
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Recupere uma lista das inscrições de webhook. O conteúdo da resposta depende do contexto no qual o aplicativo está chamando; Consulte os cenários abaixo para obter detalhes.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Essa API suporta os seguintes escopos de permissão; Para saber mais, incluindo como escolher permissões, consulte [permissões](/graph/permissions-reference).
 
 | Tipo de permissão  | Permissões (da com menos para a com mais privilégios)  |
 |:---------------- |:-------------------------------------------- |
-| [Delegada](/graph/auth-v2-user) (conta do trabalho ou da escola) | Permissão necessária para [criar a inscrição](subscription-post-subscriptions.md) ou Subscription.Read.All (veja abaixo). |
-| [Delegada](/graph/auth-v2-user) (conta pessoal da Microsoft) | Permissão necessária para [criar a inscrição](subscription-post-subscriptions.md) ou Subscription.Read.All (veja abaixo). |
+| Delegado (conta corporativa ou de estudante) | Permissão necessária para [criar a inscrição](subscription-post-subscriptions.md) ou Subscription.Read.All (veja abaixo). |
+| Delegado (conta pessoal da Microsoft) | Permissão necessária para [criar a inscrição](subscription-post-subscriptions.md) ou Subscription.Read.All (veja abaixo). |
 | [Application](/graph/auth-v2-service) | Permissão necessária para [criar a assinatura](subscription-post-subscriptions.md). |
 
 Resultados de resposta são baseados no contexto do aplicativo chamado. Apresentamos a seguir um resumo dos cenários comuns:
@@ -34,8 +34,8 @@ Mais comumente, um aplicativo deseja recuperar as assinaturas que originalmente 
 
 | Contexto do aplicativo chamado | Resposta conterá |
 |:-----|:---------------- |
-| App está chamando em nome do usuário conectado (delegada permissão). <br/>- e -<br/>App tem a permissão original necessária para [criar a assinatura](subscription-post-subscriptions.md).<br/><br/>Observação: Isso se aplica ao pessoais contas da Microsoft e contas de trabalho/escola. | Inscrições criadas por **Este aplicativo** para o usuário entrou no apenas. |
-| App está chamando em nome do próprio (permissão de aplicativo).<br/>- e -<br/>App tem a permissão original necessária para [criar a assinatura](subscription-post-subscriptions.md).<br/><br/>Observação: Isso se aplica a apenas contas de trabalho/escola.| Inscrições criadas por **Este aplicativo** para si mesmo ou para qualquer usuário no diretório.|
+| App está chamando em nome do usuário conectado (delegada permissão). <br/>And<br/>App tem a permissão original necessária para [criar a assinatura](subscription-post-subscriptions.md).<br/><br/>Observação: Isso se aplica ao pessoais contas da Microsoft e contas de trabalho/escola. | Inscrições criadas por **Este aplicativo** para o usuário entrou no apenas. |
+| App está chamando em nome do próprio (permissão de aplicativo).<br/>And<br/>App tem a permissão original necessária para [criar a assinatura](subscription-post-subscriptions.md).<br/><br/>Observação: Isso se aplica a apenas contas de trabalho/escola.| Inscrições criadas por **Este aplicativo** para si mesmo ou para qualquer usuário no diretório.|
 
 ### <a name="advanced-scenarios"></a>Cenários avançados
 
@@ -44,8 +44,8 @@ Para nesses cenários, uma permissão delegada Subscription.Read.All é necessá
 
 | Contexto do aplicativo chamado | Resposta conterá |
 |:-----|:---------------- |
-| App está chamando em nome do usuário conectado (delegada permissão). *O usuário é um não seja o administrador*. <br/>- e -<br/>App tem a permissão Subscription.Read.All<br/><br/>Observação: Isso se aplica ao pessoais contas da Microsoft e contas de trabalho/escola. | Inscrições criadas por **qualquer aplicativo** para o usuário entrou no apenas. |
-| App está chamando em nome do usuário conectado (delegada permissão). *O usuário é um administrador*.<br/>- e -<br/>App tem a permissão Subscription.Read.All<br/><br/>Observação: Isso se aplica a apenas contas de trabalho/escola. | Inscrições criadas por **qualquer aplicativo** para **qualquer usuário** no diretório.|
+| App está chamando em nome do usuário conectado (delegada permissão). *O usuário é um não seja o administrador*. <br/>And<br/>App tem a permissão Subscription.Read.All<br/><br/>Observação: Isso se aplica ao pessoais contas da Microsoft e contas de trabalho/escola. | Inscrições criadas por **qualquer aplicativo** para o usuário entrou no apenas. |
+| App está chamando em nome do usuário conectado (delegada permissão). *O usuário é um administrador*.<br/>And<br/>App tem a permissão Subscription.Read.All<br/><br/>Observação: Isso se aplica a apenas contas de trabalho/escola. | Inscrições criadas por **qualquer aplicativo** para **qualquer usuário** no diretório.|
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -121,12 +121,17 @@ Content-length: 586
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List subscriptions",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/subscription-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
 
 Quando uma solicitação retorna várias páginas de dados, a resposta inclui um `@odata.nextLink` propriedade para ajudá-lo a gerenciar os resultados.  Para saber mais, consulte [os dados de paginação Microsoft Graph em seu aplicativo](/graph/paging).

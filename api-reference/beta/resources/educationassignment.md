@@ -4,16 +4,16 @@ description: O recurso de **educationAssignment** representa uma tarefa ou a uni
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: e96b2a27d24f0dc38595e5aea931045199eb6d10
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 68bb881800e1c63acb588e39bb64e1d02e005cc3
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27982257"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29508955"
 ---
 # <a name="educationassignment-resource-type"></a>tipo de recurso de educationAssignment
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 O recurso de **educationAssignment** representa uma tarefa ou a unidade de trabalho atribuído a um estudante ou membro da equipe em uma classe como parte de sua estudo. Apenas professores ou proprietários de equipe podem criar atribuições. Atribuições contêm folhetos e que deseja que seja o professor student para trabalhar em tarefas. Cada atribuição de student tem um [envio](educationsubmissionresource.md) associado que contém qualquer trabalho que seu professor solicitado a ser ativado. Um professor pode adicionar comentários e pontuações para o envio ativado pelo aluno.
 
@@ -40,7 +40,7 @@ A atribuição de APIs são expostas no namespace.
 |id|String| Somente leitura.|
 |allowLateSubmissions|Booliano| Identifica se alunos podem enviar após a data de vencimento. Se essa propriedade não for especificada durante a criação, padrão será true. |
 |allowStudentsToAddResourcesToSubmission|Booliano| Identifica se alunos podem adicionar seus próprios recursos para um envio ou se eles só podem modificar recursos adicionados com o professor. |
-|assignDateTime|DateTimeOffset|A data quando a atribuição deve se tornar ativa.  Se no futuro, a atribuição não será mostrada ao aluno até esta data.  O tipo de **carimbo de hora** representa as informações de data e hora usando o formato ISO 8601 e é sempre em horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|assignDateTime|DateTimeOffset|A data quando a atribuição deve se tornar ativa.  Se no futuro, a atribuição não será mostrada ao aluno até esta data.  O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |assignTo|[educationAssignmentRecipient](educationassignmentrecipient.md)| Quais usuários ou classe todo deve receber um objeto de envio depois que a atribuição é publicada. |
 |assignedDateTime|DateTimeOffset|No momento em que a atribuição foi publicada para alunos e a atribuição é mostrada na linha do tempo de alunos.  O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |classId|String| Classe que essa atribuição pertence. |
@@ -49,7 +49,7 @@ A atribuição de APIs são expostas no namespace.
 |displayName|String|Nome da atribuição.|
 |dueDateTime|DateTimeOffset|Data quando a atribuição de alunos é vencimento.  O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |classificação|[educationAssignmentGradeType](educationassignmentgradetype.md)|Como a atribuição vai ser Graduada. |
-|instruções|[itemBody](itembody.md)| Instruções para a atribuição.  Isso também saberá o nome de exibição dizem student o que fazer. |
+|Instruções|[itemBody](itembody.md)| Instruções para a atribuição.  Isso também saberá o nome de exibição dizem student o que fazer. |
 |lastModifiedBy|[identitySet](identityset.md)| Quem da última modificação da atribuição. |
 |lastModifiedDateTime|DateTimeOffset|Momento da última modificação a atribuição.  O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |status|string| Status da **atribuição**.  Você não pode corrigir esse valor.  Os valores possíveis são: `draft`, `published`, `assigned`.|
@@ -58,7 +58,7 @@ A atribuição de APIs são expostas no namespace.
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |recursos|coleção [educationAssignmentResource](educationassignmentresource.md)| Objetos de aprendizado que estão associados essa atribuição.  Professores só podem modificar esta lista. Anulável.|
-|envios|coleção [educationSubmission](educationsubmission.md)| Depois de publicado, não há um objeto de envio para cada aluno representando seus trabalhos e um nível.  Somente leitura. Anulável.|
+|Envios|coleção [educationSubmission](educationsubmission.md)| Depois de publicado, não há um objeto de envio para cada aluno representando seus trabalhos e um nível.  Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -95,10 +95,15 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "educationAssignment resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/educationassignment.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

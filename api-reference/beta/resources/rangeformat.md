@@ -4,16 +4,16 @@ description: Um objeto de formatação que engloba a fonte, o preenchimento, as 
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: b4018995e37ff40ae014b54d08b77bbed73d6fe2
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 58ed56b11b571237211307c8fb0dd1abaf27761f
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937345"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29511356"
 ---
 # <a name="rangeformat-resource-type"></a>Tipo de recurso RangeFormat
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Um objeto de formatação que engloba a fonte, o preenchimento, as bordas, o alinhamento e outras propriedades do intervalo.
 
@@ -22,9 +22,9 @@ Um objeto de formatação que engloba a fonte, o preenchimento, as bordas, o ali
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Get RangeFormat](../api/rangeformat-get.md) | [RangeFormat](rangeformat.md) |Leia as propriedades e relacionamentos do objeto rangeFormat.|
-|[Create RangeBorder](../api/rangeformat-post-borders.md) |[RangeBorder](rangeborder.md)| Crie uma nova RangeBorder postando na coleção de bordas.|
-|[List borders](../api/rangeformat-list-borders.md) |Coleção [RangeBorder](rangeborder.md)| Obtenha uma coleção de objetos RangeBorder.|
+|Get RangeFormat | [RangeFormat](rangeformat.md) |Leia as propriedades e relacionamentos do objeto rangeFormat.|
+|Create RangeBorder |RangeBorder| Crie uma nova RangeBorder postando na coleção de bordas.|
+|List borders |Coleção RangeBorder| Obtenha uma coleção de objetos RangeBorder.|
 |[Update](../api/rangeformat-update.md) | [RangeFormat](rangeformat.md) |Atualize o objeto RangeFormat. |
 |[Autofitcolumns](../api/rangeformat-autofitcolumns.md)|Nenhum|Altera a largura das colunas do intervalo atual para obter o melhor ajuste, com base nos dados atuais nas colunas.|
 |[Autofitrows](../api/rangeformat-autofitrows.md)|Nenhum|Altera a altura das linhas do intervalo atual para obter o melhor ajuste, com base nos dados atuais nas colunas.|
@@ -71,10 +71,15 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "RangeFormat resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/rangeformat.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -3,16 +3,16 @@ title: 'driveItem: visualização'
 description: Essa ação permite que você obtenha URLs incorporáveis temporários e para um item para processar uma visualização temporária.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: be96a0cd451bb3f1c75c32f235d7669ce0bd7509
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 5a49a05e1e01616bc9bbbb713fd05805d9af3070
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27980871"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29508535"
 ---
 # <a name="driveitem-preview"></a>driveItem: visualização
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Essa ação permite que você obtenha URLs incorporáveis temporários e para um item para processar uma visualização temporária.
 
@@ -54,7 +54,7 @@ A solicitação deve ser um objeto JSON com as seguintes propriedades.
 |:------------|:--------------|:-----------------------------------------------
 | Visualizador      | string        | Opcional. Aplicativo de visualização para usar. `onedrive` ou `office`. Se for null, um visualizador adequado será escolhido automaticamente.
 | sem cromo  | booliano       | Opcional. Se `true` (padrão), o modo de exibição incorporado não incluirá todos os controles.
-| allowEdit   | booliano       | Opcional. Se `true`, o arquivo pode ser editado da interface do usuário incorporado.
+| AllowEdit   | booliano       | Opcional. Se `true`, o arquivo pode ser editado da interface do usuário incorporado.
 | página        | número de sequência de caracteres / | Opcional. Número de página do documento para iniciar em, se aplicável. Especificado como cadeia de caracteres para uso futuro casos em torno de tipos de arquivo como ZIP.
 | zoom        | number        | Opcional. Amplie o nível para iniciar em, se aplicável.
 
@@ -92,7 +92,8 @@ Os seguintes valores são permitidos para o parâmetro do **Visualizador** .
 
 | Valor do tipo | Descrição
 |:-----------|:----------------------------------------------------------------
-| (nulo)     | Escolhe um aplicativo apropriado para o arquivo de renderização. Na maioria dos casos isso usará o `onedrive` visualizador, mas pode variar por tipo de arquivo.
+| Null
+     | Escolhe um aplicativo apropriado para o arquivo de renderização. Na maioria dos casos isso usará o `onedrive` visualizador, mas pode variar por tipo de arquivo.
 | `onedrive` | Use o aplicativo de pré-visualização OneDrive para processá-lo.
 | `office`   | Use o WAC (Office online) para processá-lo. Só é válido para documentos do Office.
 
@@ -109,3 +110,11 @@ Esse recurso pode não estar disponível para todos os aplicativos de visualiza�
 ### <a name="pagezoom"></a>Página/zoom
 
 O `page` e `zoom` opções podem não estar disponíveis para todos os aplicativos de visualização, mas serão aplicadas se o aplicativo de visualização lhe fornecer apoio.
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-preview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

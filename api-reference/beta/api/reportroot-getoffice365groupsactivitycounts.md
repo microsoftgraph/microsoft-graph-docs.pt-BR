@@ -3,16 +3,16 @@ title: 'reportRoot: getOffice365GroupsActivityCounts'
 description: Obtenha o número de atividades de grupo em todas as cargas de trabalho de grupo.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 39e434066dad74998c379dc3d1bc54276fd4c8ea
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 85eab0e6fa7d4e0c541e8745144662fa4631fb4e
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27966297"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29508640"
 ---
 # <a name="reportroot-getoffice365groupsactivitycounts"></a>reportRoot: getOffice365GroupsActivityCounts
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Obtenha o número de atividades de grupo em todas as cargas de trabalho de grupo.
 
@@ -181,3 +181,11 @@ Content-Length: 310
   ]
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/reportroot-getoffice365groupsactivitycounts.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

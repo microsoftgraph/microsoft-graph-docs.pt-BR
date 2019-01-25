@@ -2,16 +2,16 @@
 title: Criar programControl
 description: No Windows Azure AD para acessar o recurso de revisões, crie um novo objeto programControl.  Isso vincula uma revisão de acesso a um programa.
 localization_priority: Normal
-ms.openlocfilehash: 4dfbb76244a41867b8a57faa42f63dc728f59136
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 89e31994ea91dba68e2f4563c64eeab53dd4db93
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851531"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29511111"
 ---
 # <a name="create-programcontrol"></a>Criar programControl
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 O recurso [acesso analisa](../resources/accessreviews-root.md) Azure AD, cria um novo objeto [programControl](../resources/programcontrol.md) .  Isso vincula uma revisão de acesso a um programa.
 
@@ -22,7 +22,7 @@ Antes de fazer essa solicitação, o chamador deve ter anteriormente
  - [recuperou a lista de tipos de controle de programas](programcontroltype-list.md), para que o valor de `controlTypeId` para incluir na solicitação.
 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
@@ -39,7 +39,7 @@ POST /programControls
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome         | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| Autorização | string | Portador \{token\}. Obrigatório. |
+| Autorização | string | Token de portador Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, fornece uma representação JSON de um objeto [programControl](../resources/programcontrol.md) .
@@ -104,10 +104,15 @@ Content-type: application/json
 |[Lista programControlTypes](../api/programcontroltype-list.md) | coleção [programControlType](../resources/programcontroltype.md)| Lista os tipos de controle do programa. |
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create programControl",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/programcontrol-create.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

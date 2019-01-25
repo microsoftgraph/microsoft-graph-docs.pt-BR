@@ -4,20 +4,20 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Vídeo
 localization_priority: Normal
-ms.openlocfilehash: 3883dd494304409b76d10781039424267ada85f0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: db560abc31daecc6064820ef6ef958808ddbc297
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866630"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29508542"
 ---
 # <a name="video-resource-type"></a>Tipo de recurso Video
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 O recurso **Video** agrupa itens de dados relacionados a vídeos em uma única estrutura.
 
-Se um [**DriveItem**](driveitem.md) tiver uma faceta **video** não nula, o item representa um vídeo. As propriedades do recurso **Video** são preenchidas extraindo-se os metadados do arquivo.
+Se um DriveItem tiver uma faceta video não nula, o item representa um vídeo. As propriedades do recurso Video são preenchidas extraindo-se os metadados do arquivo.
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -71,10 +71,15 @@ Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The video facet provides information about the properties of a video file.",
   "keywords": "bitrate,duration,size,video",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/video.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

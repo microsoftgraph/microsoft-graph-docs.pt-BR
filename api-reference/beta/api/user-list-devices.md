@@ -4,16 +4,16 @@ description: Obtenha uma lista de dispositivos do usuário que oferecem suporte 
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 04b67b770eec38d9e70a2263cd54212077335c85
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 891f66691149106d4ff5a2951170524203eb2ea7
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27983538"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509522"
 ---
 # <a name="list-user-devices"></a>Lista de dispositivos de usuário
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Obtenha uma lista de dispositivos do usuário que oferecem suporte a recursos de projeto Roma. Isso inclui a capacidade de iniciar um aplicativo, ou de mensagem ou enviar dados para um aplicativo. Depois de fazer uma chamada GET em mim / dispositivos, passe a ID do dispositivo para [Enviar um comando](send-device-command.md) para seu dispositivo.
 
@@ -123,3 +123,11 @@ Content-length: 140
   ]
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-list-devices.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

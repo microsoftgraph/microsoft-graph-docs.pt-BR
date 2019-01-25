@@ -1,21 +1,21 @@
 ---
 title: Lista secureScoreControlProfiles
-description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
+description: Recupere as propriedades e relacionamentos de um objeto secureScoreControlProfiles.
 localization_priority: Normal
-ms.openlocfilehash: cd13e4349119202f5f9e026973f3a90ee99f1019
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 6627111633f54eb7bc2584af826b69fd5bd6cf49
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27884550"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29508052"
 ---
 # <a name="list-securescorecontrolprofiles"></a>Lista secureScoreControlProfiles
 
- > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Recupere as propriedades e relacionamentos de um objeto [secureScoreControlProfiles](../resources/securescorecontrolprofiles.md) .
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -118,10 +118,15 @@ Content-type: application/json
 ```
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List secureScoreControlProfiles",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/securescorecontrolprofiles-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

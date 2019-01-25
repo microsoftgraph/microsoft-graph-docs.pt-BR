@@ -3,16 +3,16 @@ title: 'reportRoot: getOffice365ActivationCounts'
 description: Obtenha a contagem de ativações do Office 365 em desktops e dispositivos.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 8027cf24c5a79f6d129f9b266cdb80929f2d707a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 88ee061ba61f9a0be4c8faa35f966749bf65ae76
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27913755"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509410"
 ---
 # <a name="reportroot-getoffice365activationcounts"></a>reportRoot: getOffice365ActivationCounts
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Obtenha a contagem de ativações do Office 365 em desktops e dispositivos.
 
@@ -163,3 +163,11 @@ Content-Length: 268
   ]
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/reportroot-getoffice365activationcounts.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -2,16 +2,16 @@
 title: tipo de recurso de directoryDefinition
 description: Fornece as informações de mecanismo de sincronização sobre um diretório e seus objetos. Este recurso informa ao mecanismo de sincronização, por exemplo, se o diretório tem objetos com o nome de **usuário** e **grupo**, quais atributos são suportados para esses objetos e os tipos para esses atributos. Na ordem para o objeto e o atributo para participar de regras de sincronização e mapeamentos de objeto, ele devem ser definidos como parte da definição do diretório.
 localization_priority: Normal
-ms.openlocfilehash: e6b2b55fb9e9e7963b01403c6aed2f0997e2318b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 22ba4a7f3b5b5d3154ec6b3f5d42bd6f1b8f09d7
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874519"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29508122"
 ---
 # <a name="directorydefinition-resource-type"></a>tipo de recurso de directoryDefinition
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Fornece as informações de mecanismo de sincronização sobre um diretório e seus objetos. Este recurso informa ao mecanismo de sincronização, por exemplo, se o diretório tem objetos com o nome de **usuário** e **grupo**, quais atributos são suportados para esses objetos e os tipos para esses atributos. Na ordem para o objeto e o atributo para participar de [regras de sincronização](synchronization-synchronizationrule.md) e [mapeamentos de objeto](synchronization-objectmapping.md), ele devem ser definidos como parte da definição do diretório.
 
@@ -23,10 +23,10 @@ Definições do diretório são atualizadas como parte do [esquema de sincroniza
 
 | Propriedade      | Tipo      | Descrição    |
 |:--------------|:----------|:---------------|
-|id           |Cadeia de caracteres     |Identificador de diretório. Não anulável.|
-|metadados       |coleção metadataEntry    |Propriedades adicionais de extensão. A menos que mencionado explicitamente, valores de metadados não devem ser alterados.|
+|id           |String     |Identificador de diretório. Não anulável.|
+|Metadata       |coleção metadataEntry    |Propriedades adicionais de extensão. A menos que mencionado explicitamente, valores de metadados não devem ser alterados.|
 |name           |Cadeia de caracteres     |Nome do diretório. Deve ser exclusivo dentro do [esquema de sincronização](synchronization-synchronizationschema.md). Não anulável.|
-|objetos        |coleção [objectDefinition](synchronization-objectdefinition.md)    |Coleção de objetos compatíveis com o diretório.|
+|Objetos        |coleção [objectDefinition](synchronization-objectdefinition.md)    |Coleção de objetos compatíveis com o diretório.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -260,10 +260,15 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "directoryDefinition resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/synchronization-directorydefinition.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

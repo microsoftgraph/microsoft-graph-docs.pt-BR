@@ -1,17 +1,17 @@
 ---
 title: Tipo de recurso inferenceClassificationOverride
-description: Representa a substituição do usuário para como mensagens recebidas de um remetente específico sempre deve ser classificada como
+description: Representa a substituição de um usuário para definir como classificar as mensagens recebidas de um remetente específico.
 localization_priority: Normal
-ms.openlocfilehash: 9124f773a26c9edf1238276c3d0017dcc46e7ad8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 1cf1896b43dccfe59ed253c22a8a7341e9ee6e1d
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876262"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29511797"
 ---
 # <a name="inferenceclassificationoverride-resource-type"></a>Tipo de recurso inferenceClassificationOverride
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa a substituição de um usuário para como mensagens recebidas de um remetente específico sempre devem ser classificadas como uma [Caixa de entrada com foco](manage-focused-inbox.md).
 
@@ -20,7 +20,7 @@ Representa a substituição de um usuário para como mensagens recebidas de um r
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Update](../api/inferenceclassificationoverride-update.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md) |Altere o campo **ClassifyAs** de uma substituição conforme especificado. |
+|[Update](../api/inferenceclassificationoverride-update.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md) |Altere o campo **classifyAs** de uma substituição conforme especificado. |
 |[Delete](../api/inferenceclassificationoverride-delete.md) | Nenhum |Exclua uma substituição especificada de acordo com sua ID. |
 
 ## <a name="properties"></a>Propriedades
@@ -31,7 +31,7 @@ Representa a substituição de um usuário para como mensagens recebidas de um r
 |senderEmailAddress|[emailAddress](emailaddress.md)|As informações de endereço de email do remetente para quem a substituição é criada.|
 
 ## <a name="relationships"></a>Relacionamentos
-Nenhum
+Nenhuma
 
 
 ## <a name="json-representation"></a>Representação JSON
@@ -57,10 +57,15 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "inferenceClassificationOverride resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/inferenceclassificationoverride.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

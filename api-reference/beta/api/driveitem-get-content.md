@@ -5,16 +5,16 @@ ms.date: 09/10/2017
 title: Baixar um arquivo
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 13bfe6c5df84b690c8ad6b6b1e468ad2710b3567
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4da719df4d8d3560d3dbd3a03297bdcb18a85447
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27985428"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29511300"
 ---
 # <a name="download-the-contents-of-a-driveitem"></a>Baixe o conteúdo de um DriveItem
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Baixar o conteúdo do fluxo principal (arquivo) de um DriveItem. Somente driveItems com a propriedade **file** podem ser baixados.
 
@@ -101,10 +101,15 @@ Confira mais informações sobre como os erros são retornados em [Respostas de 
 
 [error-response]: /graph/errors
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Download the contents of a DriveItem.",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Items/Download"
-} -->
+  "tocPath": "Items/Download",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-get-content.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

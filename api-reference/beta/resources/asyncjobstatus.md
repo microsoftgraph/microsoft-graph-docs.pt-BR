@@ -4,16 +4,16 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: AsyncJobStatus
 localization_priority: Normal
-ms.openlocfilehash: 8c442ad8ff3b23d20e8377a224a3f67b00163f5f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: ee7cc92bff47edc3a1a15b5f27cb2f5afe061d4e
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820962"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510208"
 ---
 # <a name="asyncjobstatus-resource"></a>Recurso AsyncJobStatus
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Esse recurso fornece informações sobre o progresso de um trabalho assíncrono.
 
@@ -39,9 +39,14 @@ A seguinte API chama recursos **AsyncJobStatus** de retorno:
 | **percentageComplete** | Duplo | Um valor entre 0 e 100 que indica o percentual concluído.                          |
 | **status**             | String | Um valor de cadeia de caracteres que é mapeado para uma enumeração dos valores possíveis sobre o status do trabalho. |
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "AsyncJobResource provides details about how to poll for an async completion.",
   "keywords": "async,job status,async status,copy,upload from url",
-  "section": "documentation"
-} -->
+  "section": "documentation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/asyncjobstatus.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -2,16 +2,16 @@
 title: tipo de recurso de governanceRoleAssignmentRequestStatus
 description: Representa o status do governanceRoleAssignmentRequest.
 localization_priority: Normal
-ms.openlocfilehash: c5daac53661cc607d51e5bfd1ec9031cfa599fca
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: f4f0b23cf13de5beedb1964484ec4fbbb6e98720
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27808068"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510173"
 ---
 # <a name="governanceroleassignmentrequeststatus-resource-type"></a>tipo de recurso de governanceRoleAssignmentRequestStatus
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa o status do [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).
 
@@ -19,8 +19,8 @@ Representa o status do [governanceRoleAssignmentRequest](../resources/governance
 ## <a name="properties"></a>Propriedades
 Propriedade       | Tipo |Descrição|
 |:----|:-------------|:-----|
-|status |Cadeia de caracteres| O status da solicitação de atribuição de função. O valor pode ser `InProgress` ou `Closed`.|
-|subStatus |Cadeia de caracteres| O status de sub da solicitação de atribuição de função. Os valores podem ser `Accepted`, `PendingEvaluation`, `Granted`, `Denied`, `PendingProvisioning`, `Provisioned`, `PendingRevocation`, `Revoked`, `Canceled`, `Failed`, `PendingApprovalProvisioning`, `PendingApproval`, `FailedAsResourceIsLocked`, `PendingAdminDecision`, `AdminApproved`, `AdminDenied`, `TimedOut`, e `ProvisioningStarted`.|
+|status |String| O status da solicitação de atribuição de função. O valor pode ser `InProgress` ou `Closed`.|
+|subStatus |String| O status de sub da solicitação de atribuição de função. Os valores podem ser `Accepted`, `PendingEvaluation`, `Granted`, `Denied`, `PendingProvisioning`, `Provisioned`, `PendingRevocation`, `Revoked`, `Canceled`, `Failed`, `PendingApprovalProvisioning`, `PendingApproval`, `FailedAsResourceIsLocked`, `PendingAdminDecision`, `AdminApproved`, `AdminDenied`, `TimedOut`, e `ProvisioningStarted`.|
 |statusDetails       |coleção [keyValue](../resources/keyvalue.md)| Os detalhes do status da solicitação de atribuição de função. Ele representa os resultados de avaliação de regras diferentes. |
 
 ## <a name="json-representation"></a>Representação JSON
@@ -44,10 +44,15 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "governanceRoleAssignmentRequestStatus",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/governanceroleassignmentrequeststatus.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

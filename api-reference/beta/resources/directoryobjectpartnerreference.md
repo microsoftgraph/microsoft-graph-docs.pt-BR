@@ -4,16 +4,16 @@ description: Representa uma referência a um objeto de diretório em um locatár
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 17bab72fad3e03b843975ae62261fac9c09af791
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: a031586d1f92bf2b8b331e9b71058211b4617382
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27918536"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29511048"
 ---
 # <a name="directoryobjectpartnerreference-resource-type"></a>tipo de recurso de directoryObjectPartnerReference
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa uma referência a um objeto de diretório em uma organização parceira. Herda de [directoryObject](directoryobject.md?view=graph-rest-beta).
 
@@ -22,9 +22,9 @@ Representa uma referência a um objeto de diretório em uma organização parcei
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
 |description|Cadeia de caracteres| Descrição do objeto retornado. Somente leitura. |
-|displayName|Cadeia de caracteres| Nome do objeto de diretório retornado, como o grupo ou aplicativo. Somente leitura. |
+|displayName|String| Nome do objeto de diretório retornado, como o grupo ou aplicativo. Somente leitura. |
 |externalPartnerTenantId|Guid| O identificador do locatário para o locatário de parceiro. Somente leitura. |
-|id|Cadeia de caracteres| O identificador exclusivo para o recurso. Herdado de [directoryObject](directoryobject.md?view=graph-rest-beta). Somente leitura. |
+|id|String| O identificador exclusivo para o recurso. Herdado de [directoryObject](directoryobject.md?view=graph-rest-beta). Somente leitura. |
 |objectType|String| O tipo do objeto referenciado no locatário parceiro. Somente leitura. |
 
 ## <a name="json-representation"></a>Representação JSON
@@ -49,14 +49,19 @@ Veja a seguir uma representação JSON do recurso.
 
 ## <a name="see-also"></a>Confira também
 
-- [Obter objetos directory a partir de uma lista de ids](/graph/api/directoryobject-getbyids?view=graph-rest-beta)
+- Obter objetos directory a partir de uma lista de ids
 
 <!-- uuid: fbec8cd7-cfe4-431d-87fc-d102cd2841a4
 2018-12-06 02:01:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "directoryObjectPartnerReference resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/directoryobjectpartnerreference.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

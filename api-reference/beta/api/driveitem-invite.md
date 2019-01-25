@@ -5,16 +5,16 @@ ms.date: 09/10/2017
 title: Enviar um convite para acessar um item
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: f428fe7b8a61fc158d4175f50fb287760e25d524
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: d5afd0a7a23465ffc6e69e1ac7873769c6622b2c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27945973"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510040"
 ---
 # <a name="send-a-sharing-invitation"></a>Enviar um convite de compartilhamento
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Envia um convite de compartilhamento para um **DriveItem**. Um convite de compartilhamento fornece permissões para os destinatários e, opcionalmente, envia um email aos destinatários para notificá-los de que o item foi compartilhado.
 
@@ -137,10 +137,15 @@ Saiba mais sobre como os erros são retornados em [Respostas de erro][error-resp
 
 [error-response]: /graph/errors
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Add permissions to an item and optionally send a sharing notification.",
   "keywords": "retrieve,item,metadata",
   "section": "documentation",
-  "tocPath": "Sharing/Add permissions"
-} -->
+  "tocPath": "Sharing/Add permissions",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-invite.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

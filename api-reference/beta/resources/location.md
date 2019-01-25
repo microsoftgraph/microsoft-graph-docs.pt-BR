@@ -2,16 +2,16 @@
 title: Tipo de recurso Location
 description: Representa informações de localização para um evento.
 localization_priority: Normal
-ms.openlocfilehash: 650876596e2cf9336054957cfd4c95bf4dad16b4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 6e3c61bcf8f22a20bf41053c2310dc51f5b800a7
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879398"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29508605"
 ---
 # <a name="location-resource-type"></a>Tipo de recurso Location
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa informações de localização para um [evento](event.md).
 
@@ -28,16 +28,16 @@ Dependendo de como um evento é criado, o Outlook pode definir a propriedade **l
 
 
 ## <a name="properties"></a>Propriedades
-| Propriedade  | Tipo   | Descrição                                                     |
+| Propriedade	  | Tipo   | Descrição                                                     |
 |:----------|:-------|:----------------------------------------------------------------|
 | address | [physicalAddress](physicaladdress.md) |O endereço físico do local. |
 | coordenadas | [outlookGeoCoordinates](outlookgeocoordinates.md) | As coordenadas geográficas e a elevação do local. |
-| displayName  | Cadeia de caracteres | O nome associado ao local.                       |
-| locationEmailAddress | Cadeia de caracteres | O endereço de email opcional do local. |
-| locationUri | Cadeia de caracteres | URI opcional que representa o local. |
-| locationType | Cadeia de caracteres | O tipo de local. Os valores possíveis são: `default`, `conferenceRoom`, `homeAddress`, `businessAddress`,`geoCoordinates`, `streetAddress`, `hotel`, `restaurant`, `localBusiness`, `postalAddress`. Somente leitura.|
-| uniqueId | Cadeia de caracteres | Apenas para uso interno.|
-| uniqueIdType | Cadeia de caracteres | Apenas para uso interno. |
+| displayName  | String | O nome associado ao local.                       |
+| locationEmailAddress | String | O endereço de email opcional do local. |
+| locationUri | String | URI opcional que representa o local. |
+| locationType | String | O tipo de local. Os valores possíveis são: `default`, `conferenceRoom`, `homeAddress`, `businessAddress`,`geoCoordinates`, `streetAddress`, `hotel`, `restaurant`, `localBusiness`, `postalAddress`. Somente leitura.|
+| uniqueId | String | Apenas para uso interno.|
+| uniqueIdType | String | Apenas para uso interno. |
 
 
 ## <a name="json-representation"></a>Representação JSON
@@ -67,10 +67,15 @@ Dependendo de como um evento é criado, o Outlook pode definir a propriedade **l
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "location resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/location.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

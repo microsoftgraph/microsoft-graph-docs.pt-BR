@@ -4,12 +4,12 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Acessar itens compartilhados
 localization_priority: Normal
-ms.openlocfilehash: 46779e40862c7056cc60ef4be55595da5615e9f6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 62a2b15fbd0715c719e0fefc6a0b02162bc4fdec
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27864236"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509578"
 ---
 # <a name="accessing-shared-driveitems"></a>Acessando DriveItems compartilhados
 
@@ -32,14 +32,14 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET https://graph.microsoft.com/beta/shares/{shareIdOrEncodedSharingUrl}
+GET /shares/{shareIdOrEncodedSharingUrl}
 ```
 
 ### <a name="path-parameters"></a>Parâmetros do caminho
 
-| Nome do Parâmetro        | Valor    | Descrição                                                                         |
-|:----------------------|:---------|:------------------------------------------------------------------------------------|
-| **sharingTokenOrUrl** | `string` | Obrigatório. Um token de compartilhamento retornado pela API ou uma URL de compartilhamento corretamente codificada. |
+| Nome do Parâmetro                 | Valor    | Descrição                                                                         |
+|:-------------------------------|:---------|:------------------------------------------------------------------------------------|
+| **shareIdOrEncodedSharingUrl** | `string` | Obrigatório. Um token de compartilhamento retornado pela API ou uma URL de compartilhamento corretamente codificada. |
 
 ### <a name="encoding-sharing-urls"></a>Codificação de URLs de compartilhamento
 
@@ -57,6 +57,21 @@ string base64Value = System.Convert.ToBase64String(System.Text.Encoding.UTF8.Get
 string encodedUrl = "u!" + base64Value.TrimEnd('=').Replace('/','_').Replace('+','-');
 ```
 
+## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
+
+| Nome       | Tipo   | Descrição                                                    |
+|:-----------|:-------|:---------------------------------------------------------------|
+| **Prefer** | string | Opcional. Definido como uma do `prefer` valores documentada abaixo.  |
+
+### <a name="prefer-header-values"></a>Preferir valores de cabeçalho
+
+| Nome                          | Descrição                                                                                             |
+|:------------------------------|:--------------------------------------------------------------------------------------------------------|
+| redeemSharingLink             | Se o **shareIdOrEncodedSharingUrl** for um link de compartilhamento, conceda o chamador durável acesso ao item    |
+| redeemSharingLinkIfNecessary  | Mesmo que redeemSharingLink, mas o access somente é garantido ser concedida para a duração dessa solicitação |
+
+redeemSharingLink deve ser considerado equivalente ao chamador navegando para o link de compartilhamento do navegador (aceitando o compartilhamento gesto), enquanto redeemSharingLinkIfNecessary destina cenários onde a intenção é simplesmente para inspecionar o link metadados.
+
 ## <a name="response"></a>Resposta
 
 Se bem-sucedido, este método retorna o código de resposta `200 OK` e o recurso [sharedDriveItem](../resources/shareddriveitem.md) no corpo da resposta.
@@ -70,7 +85,7 @@ Veja a seguir um exemplo da solicitação para recuperar um item compartilhado:
 <!-- { "blockType": "request", "name": "get-shared-root" } -->
 
 ```http
-GET https://graph.microsoft.com/beta/shares/{shareIdOrEncodedSharingUrl}
+GET /shares/{shareIdOrEncodedSharingUrl}
 ```
 
 ### <a name="response"></a>Resposta
@@ -91,10 +106,6 @@ Content-type: application/json
       "id": "98E88F1C-F8DC-47CC-A406-C090248B30E5",
       "displayName": "Ryan Gregg"
     }
-  },
-  "remoteItem": { 
-    "driveId": "",
-    "id": ""
   }
 }
 ```
@@ -141,7 +152,7 @@ Solicitando a relação **driveItem** e expandindo a coleção **children**, o *
 <!-- { "blockType": "request", "name": "get-shared-driveitem-expand-children" } -->
 
 ```http
-GET https://graph.microsoft.com/beta/shares/{shareIdOrUrl}/driveItem?$expand=children
+GET /shares/{shareIdOrUrl}/driveItem?$expand=children
 ```
 
 ### <a name="response"></a>Resposta
@@ -175,9 +186,15 @@ Content-Type: application/json
 }
 ```
 
+## <a name="error-responses"></a>Respostas de erro
+
+Saiba mais sobre como os erros são retornados em [Respostas de erro][error-response].
+
 ## <a name="remarks"></a>Comentários
 
 * Para o OneDrive for Business e o SharePoint, a API Shares sempre requer autenticação e não pode ser usada para acessar conteúdo compartilhado anonimamente sem um contexto de usuário.
+
+[error-response]: /graph/errors
 
 <!-- {
   "type": "#page.annotation",

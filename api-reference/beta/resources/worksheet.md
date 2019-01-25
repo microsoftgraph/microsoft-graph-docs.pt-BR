@@ -4,16 +4,16 @@ description: Uma planilha do Excel é uma grade de células. Ela pode conter dad
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: d04ebafda64f9a081096fbf0fd94461b9765a6db
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: beffb9747045d0d3792d994237710e886ff0b3d8
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27926523"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509144"
 ---
 # <a name="worksheet-resource-type"></a>Tipo de recurso Worksheet
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Uma planilha do Excel é uma grade de células. Ela pode conter dados, tabelas, gráficos, etc.
 
@@ -22,20 +22,20 @@ Uma planilha do Excel é uma grade de células. Ela pode conter dados, tabelas, 
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Get Worksheet](../api/worksheet-get.md) | [Worksheet](worksheet.md) |Leia as propriedades e os relacionamentos do objeto de planilha.|
-|[Create Chart](../api/worksheet-post-charts.md) |[Chart](chart.md)| Crie um novo Gráfico ao postar na coleção de gráficos.|
-|[Nomes da lista](../api/worksheet-list-names.md) |Coleção [NamedItem](nameditem.md)| Faça com que a coleção de itens nomeados seja associada à planilha.|
-|[Listar gráficos](../api/worksheet-list-charts.md) |Coleção [Chart](chart.md)| Obtenha a coleção de objetos Chart.|
-|[Create Table](../api/worksheet-post-tables.md) |[Table](table.md)| Crie uma nova Table postando na coleção de tabelas.|
-|[List tables](../api/worksheet-list-tables.md) |Coleção [Table](table.md)| Obtenha uma coleção de objetos Table.|
+|Get Worksheet | [Worksheet](worksheet.md) |Leia as propriedades e os relacionamentos do objeto de planilha.|
+|Create Chart |[Chart](chart.md)| Crie um novo Gráfico ao postar na coleção de gráficos.|
+|Nomes da lista |Coleção [NamedItem](nameditem.md)| Faça com que a coleção de itens nomeados seja associada à planilha.|
+|Listar gráficos |Coleção Chart| Obtenha a coleção de objetos Chart.|
+|Create Table |[Table](table.md)| Crie uma nova Table postando na coleção de tabelas.|
+|List tables |Coleção [Table](table.md)| Obtenha uma coleção de objetos Table.|
 |[Update](../api/worksheet-update.md) | [Worksheet](worksheet.md)   |Atualize o objeto Worksheet. |
 |[Cell](../api/worksheet-cell.md)|[Range](range.md)|Obtém o objeto de intervalo que contém a célula única com base nos números de linha e de coluna. A célula pode estar fora dos limites do respectivo intervalo pai, desde que permaneça dentro da grade da planilha.|
 |[Range](../api/worksheet-range.md)|[Range](range.md)|Obtém o objeto de intervalo especificado pelo nome ou endereço.|
-|[Usedrange](../api/worksheet-usedrange.md)|[Range](range.md)|O intervalo usado é o menor intervalo que abrange todas as células que têm um valor ou uma formatação atribuído a elas. Se a planilha estiver em branco, esta função retorna a célula superior esquerda.|
+|Usedrange|[Range](range.md)|O intervalo usado é o menor intervalo que abrange todas as células que têm um valor ou uma formatação atribuído a elas. Se a planilha estiver em branco, esta função retorna a célula superior esquerda.|
 |[Delete](../api/worksheet-delete.md)|Nenhum|Exclui a planilha da pasta de trabalho.|
 |[List](../api/worksheet-list.md) | Coleção [Worksheet](worksheet.md) |Obtenha a coleção de objetos da planilha. |
 |[Add](../api/worksheetcollection-add.md)|[Worksheet](worksheet.md)|Adiciona uma nova planilha à pasta de trabalho. A planilha será adicionada ao final das planilhas existentes. |
-|[List pivotTables](../api/workbookworksheet-list-pivottables.md) |Coleção [workbookPivotTable](workbookpivottable.md)| Obtenha uma coleção de objeto workbookPivotTable.|
+|List pivotTables |Coleção workbookPivotTable| Obtenha uma coleção de objeto workbookPivotTable.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
@@ -45,7 +45,7 @@ Uma planilha do Excel é uma grade de células. Ela pode conter dados, tabelas, 
 |position|int|A posição baseada em zero da planilha na pasta de trabalho.|
 |visibilidade|string|A visibilidade da planilha. Os valores possíveis são: `Visible`, `Hidden` e `VeryHidden`.|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |charts|Coleção [Chart](chart.md)|Retorna uma coleção de gráficos que fazem parte da planilha. Somente leitura.|
@@ -78,10 +78,15 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Worksheet resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/worksheet.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

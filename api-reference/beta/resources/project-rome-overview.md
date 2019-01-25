@@ -2,16 +2,16 @@
 title: 'Usar a API do Microsoft Graph para trabalhar com o Project Roma '
 description: 'Project Roma é uma iniciativa da Microsoft para criar uma plataforma que permite que os desenvolvedores de aplicativos criar ótimas experiências de referência cruzada de dispositivo. Project Roma habilita recursos diferentes que se conectam a diferentes serviços e pontos de extremidade do cliente quando a usuário se conecta com a Microsoft a mesma conta ou trabalha ou escola conta. Isso permite que você implemente experiências entre dispositivos e plataforma cruzada que são centralizadas em torno de tarefas do usuário, em vez dos dispositivos. '
 localization_priority: Normal
-ms.openlocfilehash: 9f3b923bff5bad93036a1784090c8ce00763650f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 57c5189f3caf64ec048d000d5e9108811bd88145
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829999"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509690"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-project-rome"></a>Usar a API do Microsoft Graph para trabalhar com o Project Roma 
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [Project Roma](https://developer.microsoft.com/en-us/windows/project-rome) é uma iniciativa da Microsoft para criar uma plataforma que permite que os desenvolvedores de aplicativos criar ótimas experiências de referência cruzada de dispositivo. Project Roma habilita recursos diferentes que se conectam a diferentes serviços e pontos de extremidade do cliente quando a usuário se conecta com a Microsoft a mesma conta ou trabalha ou escola conta. Isso permite que você implemente experiências entre dispositivos e plataforma cruzada que são centralizadas em torno de tarefas do usuário, em vez dos dispositivos. 
 
@@ -62,3 +62,11 @@ Você pode publicar uma notificação de dados brutos ou uma notificação visua
 
 Para obter detalhes, consulte [criar e enviar uma notificação](../api/projectrome-notification-post.md).
 
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/project-rome-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
