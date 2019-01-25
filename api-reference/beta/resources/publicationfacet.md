@@ -2,22 +2,22 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: PublicationFacet
+title: publicationFacet
 localization_priority: Normal
-ms.openlocfilehash: 4cb3a56b5bdb4c3e7c9fc9fe69c0b34cae134a0d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: f0887e7ce17a357961c0ee2b19d86388425e82b1
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805604"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29513855"
 ---
-# <a name="publicationfacet-resource-type"></a><span data-ttu-id="94a52-102">Tipo de recurso PublicationFacet</span><span class="sxs-lookup"><span data-stu-id="94a52-102">PublicationFacet resource type</span></span>
+# <a name="publicationfacet-resource-type"></a><span data-ttu-id="12ffb-102">Tipo de recurso PublicationFacet</span><span class="sxs-lookup"><span data-stu-id="12ffb-102">PublicationFacet resource type</span></span>
 
-> <span data-ttu-id="94a52-103">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="94a52-103">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="94a52-104">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="94a52-104">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="94a52-105">O recurso **publicationFacet** fornece detalhes sobre o status de publicado em um recurso [driveItemVersion](driveitemversion.md) ou [driveItem](driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="94a52-105">The **publicationFacet** resource provides details on the published status of a [driveItemVersion](driveitemversion.md) or [driveItem](driveitem.md) resource.</span></span>
+<span data-ttu-id="12ffb-103">O recurso **publicationFacet** fornece detalhes sobre o status de publicado em um recurso [driveItemVersion](driveitemversion.md) ou [driveItem](driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="12ffb-103">The **publicationFacet** resource provides details on the published status of a [driveItemVersion](driveitemversion.md) or [driveItem](driveitem.md) resource.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="94a52-106">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="94a52-106">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="12ffb-104">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="12ffb-104">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -32,18 +32,23 @@ ms.locfileid: "27805604"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="94a52-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="94a52-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="12ffb-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="12ffb-105">Properties</span></span>
 
-|   <span data-ttu-id="94a52-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="94a52-108">Property</span></span>    |  <span data-ttu-id="94a52-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="94a52-109">Type</span></span>  | <span data-ttu-id="94a52-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="94a52-110">Description</span></span> |
+|   <span data-ttu-id="12ffb-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="12ffb-106">Property</span></span>    |  <span data-ttu-id="12ffb-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="12ffb-107">Type</span></span>  | <span data-ttu-id="12ffb-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="12ffb-108">Description</span></span> |
 | :------------ | :----- | :---------- |
-| <span data-ttu-id="94a52-111">**level**</span><span class="sxs-lookup"><span data-stu-id="94a52-111">**level**</span></span>     | <span data-ttu-id="94a52-112">String</span><span class="sxs-lookup"><span data-stu-id="94a52-112">String</span></span> | <span data-ttu-id="94a52-113">O estado de publicação deste documento.</span><span class="sxs-lookup"><span data-stu-id="94a52-113">The state of publication for this document.</span></span> <span data-ttu-id="94a52-114">Pode ser `published` ou `checkout`.</span><span class="sxs-lookup"><span data-stu-id="94a52-114">Either `published` or `checkout`.</span></span> <span data-ttu-id="94a52-115">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="94a52-115">Read-only.</span></span>  |
-| <span data-ttu-id="94a52-116">**versionId**</span><span class="sxs-lookup"><span data-stu-id="94a52-116">**versionId**</span></span> | <span data-ttu-id="94a52-117">String</span><span class="sxs-lookup"><span data-stu-id="94a52-117">String</span></span> | <span data-ttu-id="94a52-118">O identificador exclusivo da versão fica visível para o chamador atual.</span><span class="sxs-lookup"><span data-stu-id="94a52-118">The unique identifier for the version that is visible to the current caller.</span></span> <span data-ttu-id="94a52-119">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="94a52-119">Read-only.</span></span>  |
+| <span data-ttu-id="12ffb-109">**level**</span><span class="sxs-lookup"><span data-stu-id="12ffb-109">**level**</span></span>     | <span data-ttu-id="12ffb-110">String</span><span class="sxs-lookup"><span data-stu-id="12ffb-110">String</span></span> | <span data-ttu-id="12ffb-111">O estado de publicação deste documento.</span><span class="sxs-lookup"><span data-stu-id="12ffb-111">The state of publication for this document.</span></span> <span data-ttu-id="12ffb-112">Pode ser `published` ou `checkout`.</span><span class="sxs-lookup"><span data-stu-id="12ffb-112">Either `published` or `checkout`.</span></span> <span data-ttu-id="12ffb-113">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="12ffb-113">Read-only.</span></span>  |
+| <span data-ttu-id="12ffb-114">**versionId**</span><span class="sxs-lookup"><span data-stu-id="12ffb-114">**versionId**</span></span> | <span data-ttu-id="12ffb-115">String</span><span class="sxs-lookup"><span data-stu-id="12ffb-115">String</span></span> | <span data-ttu-id="12ffb-116">O identificador exclusivo da versão fica visível para o chamador atual.</span><span class="sxs-lookup"><span data-stu-id="12ffb-116">The unique identifier for the version that is visible to the current caller.</span></span> <span data-ttu-id="12ffb-117">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="12ffb-117">Read-only.</span></span>  |
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The photo facet provides details about the camera and settings on the camera for photos.",
   "keywords": "camera make,camera model, exposure, f-stop, iso",
   "section": "documentation",
-  "tocPath": "Facets/Photo"
-} -->
+  "tocPath": "Facets/Photo",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/publicationfacet.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

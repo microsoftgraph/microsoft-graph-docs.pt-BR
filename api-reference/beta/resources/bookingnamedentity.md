@@ -4,32 +4,32 @@ description: " > **Importante:** as APIs na versão /beta no Microsoft Graph est
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: abd5c9e85357caa6ba6cbbd52d67550a463e36e9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 1cee769181fdf8dce694050cdbc2658fdf29ece4
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27985778"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29515318"
 ---
-# <a name="bookingnamedentity-resource-type"></a><span data-ttu-id="bdee9-104">tipo de recurso de bookingNamedEntity</span><span class="sxs-lookup"><span data-stu-id="bdee9-104">bookingNamedEntity resource type</span></span>
+# <a name="bookingnamedentity-resource-type"></a><span data-ttu-id="607fc-104">tipo de recurso de bookingNamedEntity</span><span class="sxs-lookup"><span data-stu-id="607fc-104">bookingNamedEntity resource type</span></span>
 
- > <span data-ttu-id="bdee9-105">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="bdee9-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="bdee9-106">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="bdee9-106">Use of these APIs in production applications is not supported.</span></span>
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-<span data-ttu-id="bdee9-107">Este é um tipo de base para entidades do Microsoft Bookings que fornecem um nome para exibição, por exemplo, [bookingBusiness](bookingbusiness.md), [bookingPerson](bookingperson.md), [bookingService](bookingservice.md).</span><span class="sxs-lookup"><span data-stu-id="bdee9-107">This is a base type for Microsoft Bookings entities that provide a display name, for example, [bookingBusiness](bookingbusiness.md), [bookingPerson](bookingperson.md), [bookingService](bookingservice.md).</span></span>
+<span data-ttu-id="607fc-105">Este é um tipo de base para entidades do Microsoft Bookings que fornecem um nome para exibição, por exemplo, [bookingBusiness](bookingbusiness.md), [bookingPerson](bookingperson.md), [bookingService](bookingservice.md).</span><span class="sxs-lookup"><span data-stu-id="607fc-105">This is a base type for Microsoft Bookings entities that provide a display name, for example, [bookingBusiness](bookingbusiness.md), [bookingPerson](bookingperson.md), [bookingService](bookingservice.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="bdee9-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="bdee9-108">Properties</span></span>
-| <span data-ttu-id="bdee9-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="bdee9-109">Property</span></span>     | <span data-ttu-id="bdee9-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="bdee9-110">Type</span></span>   |<span data-ttu-id="bdee9-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="bdee9-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="607fc-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="607fc-106">Properties</span></span>
+| <span data-ttu-id="607fc-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="607fc-107">Property</span></span>     | <span data-ttu-id="607fc-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="607fc-108">Type</span></span>   |<span data-ttu-id="607fc-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="607fc-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="bdee9-112">displayName</span><span class="sxs-lookup"><span data-stu-id="bdee9-112">displayName</span></span>|<span data-ttu-id="bdee9-113">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="bdee9-113">String</span></span>|<span data-ttu-id="bdee9-114">Um nome da entidade derivada, qual interfaces com os clientes.</span><span class="sxs-lookup"><span data-stu-id="bdee9-114">A name for the derived entity, which interfaces with customers.</span></span>|
-|<span data-ttu-id="bdee9-115">id</span><span class="sxs-lookup"><span data-stu-id="bdee9-115">id</span></span>|<span data-ttu-id="bdee9-116">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="bdee9-116">String</span></span>| <span data-ttu-id="bdee9-117">A ID da entidade derivada.</span><span class="sxs-lookup"><span data-stu-id="bdee9-117">The ID for the derived entity.</span></span> <span data-ttu-id="bdee9-118">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="bdee9-118">Read-only.</span></span>|
+|<span data-ttu-id="607fc-110">displayName</span><span class="sxs-lookup"><span data-stu-id="607fc-110">displayName</span></span>|<span data-ttu-id="607fc-111">String</span><span class="sxs-lookup"><span data-stu-id="607fc-111">String</span></span>|<span data-ttu-id="607fc-112">Um nome da entidade derivada, qual interfaces com os clientes.</span><span class="sxs-lookup"><span data-stu-id="607fc-112">A name for the derived entity, which interfaces with customers.</span></span>|
+|<span data-ttu-id="607fc-113">id</span><span class="sxs-lookup"><span data-stu-id="607fc-113">id</span></span>|<span data-ttu-id="607fc-114">String</span><span class="sxs-lookup"><span data-stu-id="607fc-114">String</span></span>| <span data-ttu-id="607fc-115">A ID da entidade derivada.</span><span class="sxs-lookup"><span data-stu-id="607fc-115">The ID for the derived entity.</span></span> <span data-ttu-id="607fc-116">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="607fc-116">Read-only.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="bdee9-119">Relações</span><span class="sxs-lookup"><span data-stu-id="bdee9-119">Relationships</span></span>
-<span data-ttu-id="bdee9-120">Nenhum</span><span class="sxs-lookup"><span data-stu-id="bdee9-120">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="607fc-117">Relacionamento</span><span class="sxs-lookup"><span data-stu-id="607fc-117">Relationships</span></span>
+<span data-ttu-id="607fc-118">Nenhum</span><span class="sxs-lookup"><span data-stu-id="607fc-118">None</span></span>
 
 
-## <a name="json-representation"></a><span data-ttu-id="bdee9-121">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="bdee9-121">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="607fc-119">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="607fc-119">JSON representation</span></span>
 
-<span data-ttu-id="bdee9-122">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="bdee9-122">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="607fc-120">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="607fc-120">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -49,10 +49,15 @@ ms.locfileid: "27985778"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "bookingNamedEntity resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/bookingnamedentity.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

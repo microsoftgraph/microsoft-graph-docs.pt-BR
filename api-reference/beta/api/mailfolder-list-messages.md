@@ -4,52 +4,52 @@ description: Lista de todas as mensagens na caixa de correio do usuário conecta
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: cded21d803653fb32750e9f016e43d2526b7ac85
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 24f7a0792c264c059ea034e749e6683c0f9eb8c3
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27948762"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29515395"
 ---
-# <a name="list-messages"></a><span data-ttu-id="93167-103">Listar mensagens</span><span class="sxs-lookup"><span data-stu-id="93167-103">List messages</span></span>
+# <a name="list-messages"></a><span data-ttu-id="a0387-103">Listar mensagens</span><span class="sxs-lookup"><span data-stu-id="a0387-103">List messages</span></span>
 
-> <span data-ttu-id="93167-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="93167-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="93167-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="93167-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="93167-106">Lista de todas as mensagens na caixa de correio do usuário conectado ou essas mensagens em uma pasta especificada na caixa de correio ou unidade.</span><span class="sxs-lookup"><span data-stu-id="93167-106">List all the messages in the signed-in user's mailbox, or those messages in a specified folder in the mailbox or drive.</span></span>
+<span data-ttu-id="a0387-104">Lista de todas as mensagens na caixa de correio do usuário conectado ou essas mensagens em uma pasta especificada na caixa de correio ou unidade.</span><span class="sxs-lookup"><span data-stu-id="a0387-104">List all the messages in the signed-in user's mailbox, or those messages in a specified folder in the mailbox or drive.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="93167-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="93167-107">Permissions</span></span>
-<span data-ttu-id="93167-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="93167-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="a0387-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="a0387-105">Permissions</span></span>
+<span data-ttu-id="a0387-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a0387-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="93167-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="93167-110">Permission type</span></span>      | <span data-ttu-id="93167-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="93167-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="a0387-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="a0387-108">Permission type</span></span>      | <span data-ttu-id="a0387-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="a0387-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="93167-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="93167-112">Delegated (work or school account)</span></span> | <span data-ttu-id="93167-113">Mail.Read, Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="93167-113">Mail.Read, Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="93167-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="93167-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="93167-115">Mail.Read, Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="93167-115">Mail.Read, Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="93167-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="93167-116">Application</span></span> | <span data-ttu-id="93167-117">Mail.Read, Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="93167-117">Mail.Read, Mail.ReadWrite</span></span> |
+|<span data-ttu-id="a0387-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="a0387-110">Delegated (work or school account)</span></span> | <span data-ttu-id="a0387-111">Mail.Read, Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a0387-111">Mail.Read, Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="a0387-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="a0387-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a0387-113">Mail.Read, Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a0387-113">Mail.Read, Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="a0387-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="a0387-114">Application</span></span> | <span data-ttu-id="a0387-115">Mail.Read, Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a0387-115">Mail.Read, Mail.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="93167-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="93167-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a0387-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="a0387-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/{id}/messages
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="93167-119">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="93167-119">Optional query parameters</span></span>
-<span data-ttu-id="93167-120">Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="93167-120">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="a0387-117">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="a0387-117">Optional query parameters</span></span>
+<span data-ttu-id="a0387-118">Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="a0387-118">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="93167-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="93167-121">Request headers</span></span>
-| <span data-ttu-id="93167-122">Nome</span><span class="sxs-lookup"><span data-stu-id="93167-122">Name</span></span>       | <span data-ttu-id="93167-123">Tipo</span><span class="sxs-lookup"><span data-stu-id="93167-123">Type</span></span> | <span data-ttu-id="93167-124">Descrição</span><span class="sxs-lookup"><span data-stu-id="93167-124">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="a0387-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="a0387-119">Request headers</span></span>
+| <span data-ttu-id="a0387-120">Nome</span><span class="sxs-lookup"><span data-stu-id="a0387-120">Name</span></span>       | <span data-ttu-id="a0387-121">Tipo</span><span class="sxs-lookup"><span data-stu-id="a0387-121">Type</span></span> | <span data-ttu-id="a0387-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="a0387-122">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="93167-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="93167-125">Authorization</span></span>  | <span data-ttu-id="93167-126">string</span><span class="sxs-lookup"><span data-stu-id="93167-126">string</span></span>  | <span data-ttu-id="93167-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="93167-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="a0387-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="a0387-123">Authorization</span></span>  | <span data-ttu-id="a0387-124">string</span><span class="sxs-lookup"><span data-stu-id="a0387-124">string</span></span>  | <span data-ttu-id="a0387-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="a0387-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="93167-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="93167-129">Request body</span></span>
-<span data-ttu-id="93167-130">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="93167-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="a0387-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="a0387-127">Request body</span></span>
+<span data-ttu-id="a0387-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="a0387-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="93167-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="93167-131">Response</span></span>
-<span data-ttu-id="93167-132">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [Message](../resources/message.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="93167-132">If successful, this method returns a `200 OK` response code and collection of [Message](../resources/message.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="a0387-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="a0387-129">Response</span></span>
+<span data-ttu-id="a0387-130">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [Message](../resources/message.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="a0387-130">If successful, this method returns a `200 OK` response code and collection of [Message](../resources/message.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="93167-133">Exemplo</span><span class="sxs-lookup"><span data-stu-id="93167-133">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="93167-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="93167-134">Request</span></span>
-<span data-ttu-id="93167-135">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="93167-135">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="a0387-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="a0387-131">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="a0387-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="a0387-132">Request</span></span>
+<span data-ttu-id="a0387-133">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="a0387-133">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_messages"
@@ -58,9 +58,9 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
 GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/messages
 ```
 
-#### <a name="response"></a><span data-ttu-id="93167-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="93167-136">Response</span></span>
-<span data-ttu-id="93167-137">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="93167-137">The following is an example of the response.</span></span>
-><span data-ttu-id="93167-138">**Observação:** no objeto response mostrado aqui pode ser reduzido para melhorar a legibilidade.</span><span class="sxs-lookup"><span data-stu-id="93167-138">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="93167-139">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="93167-139">All the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="a0387-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="a0387-134">Response</span></span>
+<span data-ttu-id="a0387-135">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="a0387-135">The following is an example of the response.</span></span>
+><span data-ttu-id="a0387-136">**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade.</span><span class="sxs-lookup"><span data-stu-id="a0387-136">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="a0387-137">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="a0387-137">All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -137,10 +137,15 @@ Content-length: 317
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List messages",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/mailfolder-list-messages.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

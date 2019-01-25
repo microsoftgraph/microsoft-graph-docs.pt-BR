@@ -4,30 +4,30 @@ description: Os comentários feitos durante um professor para um estudante. Essa
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 96f1e0f4d6be070548d984786042a801d764ece9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 90e55b20b371d04bc3c6d45bb84fe6bf42157a2f
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27962685"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29515633"
 ---
-# <a name="educationfeedback-resource-type"></a><span data-ttu-id="efb18-104">tipo de recurso de educationFeedback</span><span class="sxs-lookup"><span data-stu-id="efb18-104">educationFeedback resource type</span></span>
+# <a name="educationfeedback-resource-type"></a><span data-ttu-id="5ecf5-104">tipo de recurso de educationFeedback</span><span class="sxs-lookup"><span data-stu-id="5ecf5-104">educationFeedback resource type</span></span>
 
-> <span data-ttu-id="efb18-105">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="efb18-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="efb18-106">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="efb18-106">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="efb18-107">Os comentários feitos durante um professor para um estudante.</span><span class="sxs-lookup"><span data-stu-id="efb18-107">Feedback from a teacher to a student.</span></span> <span data-ttu-id="efb18-108">Essa propriedade representa a parte de texto dos comentários, juntamente com quem.</span><span class="sxs-lookup"><span data-stu-id="efb18-108">This property represents both the text part of the feedback along with the who.</span></span>
+<span data-ttu-id="5ecf5-105">Os comentários feitos durante um professor para um estudante.</span><span class="sxs-lookup"><span data-stu-id="5ecf5-105">Feedback from a teacher to a student.</span></span> <span data-ttu-id="5ecf5-106">Essa propriedade representa a parte de texto dos comentários, juntamente com quem.</span><span class="sxs-lookup"><span data-stu-id="5ecf5-106">This property represents both the text part of the feedback along with the who.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="efb18-109">Propriedades</span><span class="sxs-lookup"><span data-stu-id="efb18-109">Properties</span></span>
-| <span data-ttu-id="efb18-110">Propriedade</span><span class="sxs-lookup"><span data-stu-id="efb18-110">Property</span></span>     | <span data-ttu-id="efb18-111">Tipo</span><span class="sxs-lookup"><span data-stu-id="efb18-111">Type</span></span>   |<span data-ttu-id="efb18-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="efb18-112">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="5ecf5-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="5ecf5-107">Properties</span></span>
+| <span data-ttu-id="5ecf5-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="5ecf5-108">Property</span></span>     | <span data-ttu-id="5ecf5-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="5ecf5-109">Type</span></span>   |<span data-ttu-id="5ecf5-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="5ecf5-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="efb18-113">feedbackBy</span><span class="sxs-lookup"><span data-stu-id="efb18-113">feedbackBy</span></span>|[<span data-ttu-id="efb18-114">identitySet</span><span class="sxs-lookup"><span data-stu-id="efb18-114">identitySet</span></span>](identityset.md)|<span data-ttu-id="efb18-115">Usuário que criou o feedback.</span><span class="sxs-lookup"><span data-stu-id="efb18-115">User who created the feedback.</span></span>|
-|<span data-ttu-id="efb18-116">feedbackDateTime</span><span class="sxs-lookup"><span data-stu-id="efb18-116">feedbackDateTime</span></span>|<span data-ttu-id="efb18-117">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="efb18-117">DateTimeOffset</span></span>|<span data-ttu-id="efb18-118">Momento específico quando o feedback dado.</span><span class="sxs-lookup"><span data-stu-id="efb18-118">Moment in time when the feedback was given.</span></span> <span data-ttu-id="efb18-119">O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC.</span><span class="sxs-lookup"><span data-stu-id="efb18-119">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="efb18-120">Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`</span><span class="sxs-lookup"><span data-stu-id="efb18-120">For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`</span></span>|
-|<span data-ttu-id="efb18-121">texto</span><span class="sxs-lookup"><span data-stu-id="efb18-121">text</span></span>|[<span data-ttu-id="efb18-122">itemBody</span><span class="sxs-lookup"><span data-stu-id="efb18-122">itemBody</span></span>](itembody.md)|<span data-ttu-id="efb18-123">Comentários.</span><span class="sxs-lookup"><span data-stu-id="efb18-123">Feedback.</span></span>|
+|<span data-ttu-id="5ecf5-111">feedbackBy</span><span class="sxs-lookup"><span data-stu-id="5ecf5-111">feedbackBy</span></span>|[<span data-ttu-id="5ecf5-112">identitySet</span><span class="sxs-lookup"><span data-stu-id="5ecf5-112">identitySet</span></span>](identityset.md)|<span data-ttu-id="5ecf5-113">Usuário que criou o feedback.</span><span class="sxs-lookup"><span data-stu-id="5ecf5-113">User who created the feedback.</span></span>|
+|<span data-ttu-id="5ecf5-114">feedbackDateTime</span><span class="sxs-lookup"><span data-stu-id="5ecf5-114">feedbackDateTime</span></span>|<span data-ttu-id="5ecf5-115">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="5ecf5-115">DateTimeOffset</span></span>|<span data-ttu-id="5ecf5-116">Momento específico quando o feedback dado.</span><span class="sxs-lookup"><span data-stu-id="5ecf5-116">Moment in time when the feedback was given.</span></span> <span data-ttu-id="5ecf5-117">O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC.</span><span class="sxs-lookup"><span data-stu-id="5ecf5-117">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="5ecf5-118">Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`</span><span class="sxs-lookup"><span data-stu-id="5ecf5-118">For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`</span></span>|
+|<span data-ttu-id="5ecf5-119">texto</span><span class="sxs-lookup"><span data-stu-id="5ecf5-119">text</span></span>|[<span data-ttu-id="5ecf5-120">itemBody</span><span class="sxs-lookup"><span data-stu-id="5ecf5-120">itemBody</span></span>](itembody.md)|<span data-ttu-id="5ecf5-121">Comentários</span><span class="sxs-lookup"><span data-stu-id="5ecf5-121">Feedback.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="efb18-124">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="efb18-124">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="5ecf5-122">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="5ecf5-122">JSON representation</span></span>
 
-<span data-ttu-id="efb18-125">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="efb18-125">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="5ecf5-123">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="5ecf5-123">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -48,10 +48,15 @@ ms.locfileid: "27962685"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "educationFeedback resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/educationfeedback.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

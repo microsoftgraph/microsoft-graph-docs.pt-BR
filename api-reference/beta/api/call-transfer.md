@@ -4,59 +4,59 @@ description: Transferir uma chamada ativa.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 34ddf14ae7a49aa8a0aeae1c1bc98b8a79c16384
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: b1c503be31b17fb608abbec340aa9390ce315435
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27921609"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29516249"
 ---
-# <a name="call-transfer"></a><span data-ttu-id="fd23d-103">chamar: transferência</span><span class="sxs-lookup"><span data-stu-id="fd23d-103">call: transfer</span></span>
+# <a name="call-transfer"></a><span data-ttu-id="cb822-103">chamar: transferência</span><span class="sxs-lookup"><span data-stu-id="cb822-103">call: transfer</span></span>
 
-> <span data-ttu-id="fd23d-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="fd23d-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="fd23d-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="fd23d-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="fd23d-106">Transferir uma chamada ativa.</span><span class="sxs-lookup"><span data-stu-id="fd23d-106">Transfer an active call.</span></span>
+<span data-ttu-id="cb822-104">Transferir uma chamada ativa.</span><span class="sxs-lookup"><span data-stu-id="cb822-104">Transfer an active call.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="fd23d-107">Permissions</span><span class="sxs-lookup"><span data-stu-id="fd23d-107">Permissions</span></span>
-<span data-ttu-id="fd23d-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="fd23d-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="cb822-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="cb822-105">Permissions</span></span>
+<span data-ttu-id="cb822-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="cb822-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="fd23d-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="fd23d-110">Permission type</span></span> | <span data-ttu-id="fd23d-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="fd23d-111">Permissions (from least to most privileged)</span></span>         |
+| <span data-ttu-id="cb822-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="cb822-108">Permission type</span></span> | <span data-ttu-id="cb822-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="cb822-109">Permissions (from least to most privileged)</span></span>         |
 | :-------------- | :-------------------------------------------------- |
-| <span data-ttu-id="fd23d-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="fd23d-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="fd23d-113">Não suportado</span><span class="sxs-lookup"><span data-stu-id="fd23d-113">Not Supported</span></span>                |
-| <span data-ttu-id="fd23d-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="fd23d-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fd23d-115">Não suportado</span><span class="sxs-lookup"><span data-stu-id="fd23d-115">Not Supported</span></span>                |
-| <span data-ttu-id="fd23d-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="fd23d-116">Application</span></span>     | <span data-ttu-id="fd23d-117">Calls.Initiate.All</span><span class="sxs-lookup"><span data-stu-id="fd23d-117">Calls.Initiate.All</span></span>                                  |
+| <span data-ttu-id="cb822-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="cb822-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="cb822-111">Não suportado</span><span class="sxs-lookup"><span data-stu-id="cb822-111">Not Supported</span></span>                |
+| <span data-ttu-id="cb822-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="cb822-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cb822-113">Não suportado</span><span class="sxs-lookup"><span data-stu-id="cb822-113">Not Supported</span></span>                |
+| <span data-ttu-id="cb822-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="cb822-114">Application</span></span>     | <span data-ttu-id="cb822-115">Calls.Initiate.All</span><span class="sxs-lookup"><span data-stu-id="cb822-115">Calls.Initiate.All</span></span>                                  |
 
-## <a name="http-request"></a><span data-ttu-id="fd23d-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="fd23d-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="cb822-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="cb822-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/transfer
 POST /applications/{id}/calls/{id}/transfer
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="fd23d-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="fd23d-119">Request headers</span></span>
-| <span data-ttu-id="fd23d-120">Nome</span><span class="sxs-lookup"><span data-stu-id="fd23d-120">Name</span></span>          | <span data-ttu-id="fd23d-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="fd23d-121">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="cb822-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="cb822-117">Request headers</span></span>
+| <span data-ttu-id="cb822-118">Nome</span><span class="sxs-lookup"><span data-stu-id="cb822-118">Name</span></span>          | <span data-ttu-id="cb822-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="cb822-119">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="fd23d-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="fd23d-122">Authorization</span></span> | <span data-ttu-id="fd23d-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="fd23d-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="cb822-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="cb822-120">Authorization</span></span> | <span data-ttu-id="cb822-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="cb822-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="fd23d-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="fd23d-125">Request body</span></span>
-<span data-ttu-id="fd23d-126">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="fd23d-126">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="cb822-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="cb822-123">Request body</span></span>
+<span data-ttu-id="cb822-124">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="cb822-124">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="fd23d-127">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="fd23d-127">Parameter</span></span>      | <span data-ttu-id="fd23d-128">Tipo</span><span class="sxs-lookup"><span data-stu-id="fd23d-128">Type</span></span>    |<span data-ttu-id="fd23d-129">Descrição</span><span class="sxs-lookup"><span data-stu-id="fd23d-129">Description</span></span>|
+| <span data-ttu-id="cb822-125">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="cb822-125">Parameter</span></span>      | <span data-ttu-id="cb822-126">Tipo</span><span class="sxs-lookup"><span data-stu-id="cb822-126">Type</span></span>    |<span data-ttu-id="cb822-127">Descrição</span><span class="sxs-lookup"><span data-stu-id="cb822-127">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="fd23d-130">transferTarget</span><span class="sxs-lookup"><span data-stu-id="fd23d-130">transferTarget</span></span>|[<span data-ttu-id="fd23d-131">invitationParticipantInfo</span><span class="sxs-lookup"><span data-stu-id="fd23d-131">invitationParticipantInfo</span></span>](../resources/invitationparticipantinfo.md)|<span data-ttu-id="fd23d-132">O participante que é o destino da transferência.</span><span class="sxs-lookup"><span data-stu-id="fd23d-132">The participant which is the target of the transfer.</span></span>|
-|<span data-ttu-id="fd23d-133">clientContext</span><span class="sxs-lookup"><span data-stu-id="fd23d-133">clientContext</span></span>|<span data-ttu-id="fd23d-134">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="fd23d-134">String</span></span>|<span data-ttu-id="fd23d-135">O contexto de cliente.</span><span class="sxs-lookup"><span data-stu-id="fd23d-135">The client context.</span></span>|
+|<span data-ttu-id="cb822-128">transferTarget</span><span class="sxs-lookup"><span data-stu-id="cb822-128">transferTarget</span></span>|[<span data-ttu-id="cb822-129">invitationParticipantInfo</span><span class="sxs-lookup"><span data-stu-id="cb822-129">invitationParticipantInfo</span></span>](../resources/invitationparticipantinfo.md)|<span data-ttu-id="cb822-130">O participante que é o destino da transferência.</span><span class="sxs-lookup"><span data-stu-id="cb822-130">The participant which is the target of the transfer.</span></span>|
+|<span data-ttu-id="cb822-131">ClientContext</span><span class="sxs-lookup"><span data-stu-id="cb822-131">clientContext</span></span>|<span data-ttu-id="cb822-132">String</span><span class="sxs-lookup"><span data-stu-id="cb822-132">String</span></span>|<span data-ttu-id="cb822-133">O contexto de cliente.</span><span class="sxs-lookup"><span data-stu-id="cb822-133">The client context.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="fd23d-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="fd23d-136">Response</span></span>
-<span data-ttu-id="fd23d-137">Retorna `202 Accepted` código de resposta.</span><span class="sxs-lookup"><span data-stu-id="fd23d-137">Returns `202 Accepted` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="cb822-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="cb822-134">Response</span></span>
+<span data-ttu-id="cb822-135">Retorna `202 Accepted` código de resposta.</span><span class="sxs-lookup"><span data-stu-id="cb822-135">Returns `202 Accepted` response code.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="fd23d-138">Exemplos</span><span class="sxs-lookup"><span data-stu-id="fd23d-138">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="cb822-136">Exemplos</span><span class="sxs-lookup"><span data-stu-id="cb822-136">Examples</span></span>
 
-### <a name="transfer-call-directly-with-no-user-involvement"></a><span data-ttu-id="fd23d-139">Transferir a chamada diretamente, com nenhum envolvimento do usuário</span><span class="sxs-lookup"><span data-stu-id="fd23d-139">Transfer call directly, with no user involvement</span></span>
+### <a name="transfer-call-directly-with-no-user-involvement"></a><span data-ttu-id="cb822-137">Transferir a chamada diretamente, com nenhum envolvimento do usuário</span><span class="sxs-lookup"><span data-stu-id="cb822-137">Transfer call directly, with no user involvement</span></span>
 
-<span data-ttu-id="fd23d-140">O exemplo a seguir mostra como chamar essa API.</span><span class="sxs-lookup"><span data-stu-id="fd23d-140">The following example shows how to call this API.</span></span>
+<span data-ttu-id="cb822-138">O exemplo a seguir mostra como chamar essa API.</span><span class="sxs-lookup"><span data-stu-id="cb822-138">The following example shows how to call this API.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="fd23d-141">Solicitação</span><span class="sxs-lookup"><span data-stu-id="fd23d-141">Request</span></span>
-<span data-ttu-id="fd23d-142">O exemplo a seguir mostra a solicitação.</span><span class="sxs-lookup"><span data-stu-id="fd23d-142">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="cb822-139">Solicitação</span><span class="sxs-lookup"><span data-stu-id="cb822-139">Request</span></span>
+<span data-ttu-id="cb822-140">O exemplo a seguir mostra a solicitação.</span><span class="sxs-lookup"><span data-stu-id="cb822-140">The following example shows the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -85,9 +85,9 @@ Content-Length: 430
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="fd23d-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="fd23d-143">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="cb822-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="cb822-141">Response</span></span>
 
-> <span data-ttu-id="fd23d-p104">\*\*Observação: \*\*o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="fd23d-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="cb822-p103">\*\*Observação: \*\*o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="cb822-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -98,7 +98,7 @@ Content-Length: 430
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---transferring"></a><span data-ttu-id="fd23d-146">Notificação - transferindo</span><span class="sxs-lookup"><span data-stu-id="fd23d-146">Notification - transferring</span></span>
+##### <a name="notification---transferring"></a><span data-ttu-id="cb822-144">Notificação - transferindo</span><span class="sxs-lookup"><span data-stu-id="cb822-144">Notification - transferring</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -132,7 +132,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---transfer-accepted"></a><span data-ttu-id="fd23d-147">Notificação - transferência aceito</span><span class="sxs-lookup"><span data-stu-id="fd23d-147">Notification - transfer accepted</span></span>
+##### <a name="notification---transfer-accepted"></a><span data-ttu-id="cb822-145">Notificação - transferência aceito</span><span class="sxs-lookup"><span data-stu-id="cb822-145">Notification - transfer accepted</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -166,7 +166,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---terminated"></a><span data-ttu-id="fd23d-148">Notificação - terminada</span><span class="sxs-lookup"><span data-stu-id="fd23d-148">Notification - terminated</span></span>
+##### <a name="notification---terminated"></a><span data-ttu-id="cb822-146">Notificação - terminada</span><span class="sxs-lookup"><span data-stu-id="cb822-146">Notification - terminated</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -196,9 +196,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="consultative-transfer"></a><span data-ttu-id="fd23d-149">Transferência com consultoria</span><span class="sxs-lookup"><span data-stu-id="fd23d-149">Consultative transfer</span></span>
+### <a name="consultative-transfer"></a><span data-ttu-id="cb822-147">Transferência com consultoria</span><span class="sxs-lookup"><span data-stu-id="cb822-147">Consultative transfer</span></span>
 
-##### <a name="request"></a><span data-ttu-id="fd23d-150">Solicitação</span><span class="sxs-lookup"><span data-stu-id="fd23d-150">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="cb822-148">Solicitação</span><span class="sxs-lookup"><span data-stu-id="cb822-148">Request</span></span>
 
 ```http
 POST /app/calls/57DAB8B1894C409AB240BD8BEAE78896/transfer
@@ -228,15 +228,15 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="fd23d-151">Resposta</span><span class="sxs-lookup"><span data-stu-id="fd23d-151">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="cb822-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="cb822-149">Response</span></span>
 
-> <span data-ttu-id="fd23d-p105">\*\*Observação: \*\*o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="fd23d-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="cb822-p104">\*\*Observação: \*\*o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="cb822-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 ```http
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---transferring"></a><span data-ttu-id="fd23d-154">Notificação - transferindo</span><span class="sxs-lookup"><span data-stu-id="fd23d-154">Notification - transferring</span></span>
+##### <a name="notification---transferring"></a><span data-ttu-id="cb822-152">Notificação - transferindo</span><span class="sxs-lookup"><span data-stu-id="cb822-152">Notification - transferring</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -270,7 +270,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---transfer-accepted"></a><span data-ttu-id="fd23d-155">Notificação - transferência aceito</span><span class="sxs-lookup"><span data-stu-id="fd23d-155">Notification - transfer accepted</span></span>
+##### <a name="notification---transfer-accepted"></a><span data-ttu-id="cb822-153">Notificação - transferência aceito</span><span class="sxs-lookup"><span data-stu-id="cb822-153">Notification - transfer accepted</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -304,7 +304,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---terminated"></a><span data-ttu-id="fd23d-156">Notificação - terminada</span><span class="sxs-lookup"><span data-stu-id="fd23d-156">Notification - terminated</span></span>
+##### <a name="notification---terminated"></a><span data-ttu-id="cb822-154">Notificação - terminada</span><span class="sxs-lookup"><span data-stu-id="cb822-154">Notification - terminated</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -336,10 +336,15 @@ Content-Type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "call: transfer",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/call-transfer.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

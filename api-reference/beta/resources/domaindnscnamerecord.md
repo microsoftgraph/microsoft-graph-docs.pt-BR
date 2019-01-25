@@ -4,40 +4,40 @@ description: Representa um registro CNAME adicionado ao arquivo de zona DNS de u
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1bf670193d6d16e88c0a60b907539a9274236f61
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: f270075556843625d1ec408f06be8ed4a065c831
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27928994"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29516732"
 ---
-# <a name="domaindnscnamerecord-resource-type"></a><span data-ttu-id="dc531-104">Tipo de recurso domainDnsCnameRecord</span><span class="sxs-lookup"><span data-stu-id="dc531-104">domainDnsCnameRecord resource type</span></span>
+# <a name="domaindnscnamerecord-resource-type"></a><span data-ttu-id="b5d38-104">Tipo de recurso domainDnsCnameRecord</span><span class="sxs-lookup"><span data-stu-id="b5d38-104">domainDnsCnameRecord resource type</span></span>
 
-> <span data-ttu-id="dc531-105">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="dc531-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="dc531-106">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="dc531-106">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="dc531-p103">Representa um registro CNAME adicionado ao arquivo de zona DNS de um domínio específico no locatário. Herdado da entidade [DomainDnsRecord](domaindnsrecord.md).</span><span class="sxs-lookup"><span data-stu-id="dc531-p103">Represents a CNAME record added to the DNS zone file of a particular domain in the tenant. Inherited from [DomainDnsRecord](domaindnsrecord.md) entity.</span></span>
+<span data-ttu-id="b5d38-p102">Representa um registro CNAME adicionado ao arquivo de zona DNS de um domínio específico no locatário. Herdado da entidade [DomainDnsRecord](domaindnsrecord.md).</span><span class="sxs-lookup"><span data-stu-id="b5d38-p102">Represents a CNAME record added to the DNS zone file of a particular domain in the tenant. Inherited from [DomainDnsRecord](domaindnsrecord.md) entity.</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="dc531-109">Métodos</span><span class="sxs-lookup"><span data-stu-id="dc531-109">Methods</span></span>
-<span data-ttu-id="dc531-p104">Não há suporte a consultas diretas para este recurso. Confira o tópico do [domínio](domain.md) para obter informações sobre como consultar registros de serviços do domínio.</span><span class="sxs-lookup"><span data-stu-id="dc531-p104">Direct queries to this resource are not supported. Please see the [domain](domain.md) topic for information on how to query for domain service records.</span></span>
+## <a name="methods"></a><span data-ttu-id="b5d38-107">Métodos</span><span class="sxs-lookup"><span data-stu-id="b5d38-107">Methods</span></span>
+<span data-ttu-id="b5d38-p103">Não há suporte a consultas diretas para este recurso. Confira o tópico do [domínio](domain.md) para obter informações sobre como consultar registros de serviços do domínio.</span><span class="sxs-lookup"><span data-stu-id="b5d38-p103">Direct queries to this resource are not supported. Please see the [domain](domain.md) topic for information on how to query for domain service records.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="dc531-112">Propriedades</span><span class="sxs-lookup"><span data-stu-id="dc531-112">Properties</span></span>
-| <span data-ttu-id="dc531-113">Propriedade</span><span class="sxs-lookup"><span data-stu-id="dc531-113">Property</span></span>     | <span data-ttu-id="dc531-114">Tipo</span><span class="sxs-lookup"><span data-stu-id="dc531-114">Type</span></span>   |<span data-ttu-id="dc531-115">Descrição</span><span class="sxs-lookup"><span data-stu-id="dc531-115">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="b5d38-110">Propriedades</span><span class="sxs-lookup"><span data-stu-id="b5d38-110">Properties</span></span>
+| <span data-ttu-id="b5d38-111">Propriedade</span><span class="sxs-lookup"><span data-stu-id="b5d38-111">Property</span></span>     | <span data-ttu-id="b5d38-112">Tipo</span><span class="sxs-lookup"><span data-stu-id="b5d38-112">Type</span></span>   |<span data-ttu-id="b5d38-113">Descrição</span><span class="sxs-lookup"><span data-stu-id="b5d38-113">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="dc531-116">canonicalName</span><span class="sxs-lookup"><span data-stu-id="dc531-116">canonicalName</span></span>|<span data-ttu-id="dc531-117">String</span><span class="sxs-lookup"><span data-stu-id="dc531-117">String</span></span>| <span data-ttu-id="dc531-p105">O nome canônico do registro CNAME. Usado para configurar o registro CNAME no host DNS.</span><span class="sxs-lookup"><span data-stu-id="dc531-p105">The canonical name of the CNAME record. Used to configure the CNAME record at the DNS host.</span></span> |
-|<span data-ttu-id="dc531-120">id</span><span class="sxs-lookup"><span data-stu-id="dc531-120">id</span></span>|<span data-ttu-id="dc531-121">String</span><span class="sxs-lookup"><span data-stu-id="dc531-121">String</span></span>| <span data-ttu-id="dc531-p106">Identificador exclusivo atribuído a esta entidade. Não anulável, Somente Leitura</span><span class="sxs-lookup"><span data-stu-id="dc531-p106">Unique identifier assigned to this entity. Not nullable, Read-only</span></span>|
-|<span data-ttu-id="dc531-124">isOptional</span><span class="sxs-lookup"><span data-stu-id="dc531-124">isOptional</span></span>|<span data-ttu-id="dc531-125">Booliano</span><span class="sxs-lookup"><span data-stu-id="dc531-125">Boolean</span></span>| <span data-ttu-id="dc531-p107">Se for falso, o registro CNAME deverá ser configurado pelo cliente no host DNS do Microsoft Online Services para funcionar corretamente com o domínio. Não anulável</span><span class="sxs-lookup"><span data-stu-id="dc531-p107">If false, the CNAME record must be configured by the customer at the DNS host for Microsoft Online Services to operate correctly with the domain. Not nullable</span></span> |
-|<span data-ttu-id="dc531-128">rótulo</span><span class="sxs-lookup"><span data-stu-id="dc531-128">label</span></span>|<span data-ttu-id="dc531-129">String</span><span class="sxs-lookup"><span data-stu-id="dc531-129">String</span></span>| <span data-ttu-id="dc531-130">O valor usado ao configurar a propriedade *alias/host/name* do registro CNAME no host DNS.</span><span class="sxs-lookup"><span data-stu-id="dc531-130">Value used when configuring the *alias/host/name* of the CNAME record at the DNS host.</span></span> |
-|<span data-ttu-id="dc531-131">recordType</span><span class="sxs-lookup"><span data-stu-id="dc531-131">recordType</span></span>|<span data-ttu-id="dc531-132">String</span><span class="sxs-lookup"><span data-stu-id="dc531-132">String</span></span>| <span data-ttu-id="dc531-p108">Tipo do registro DNS. Este valor sempre será *CName*. Chave</span><span class="sxs-lookup"><span data-stu-id="dc531-p108">Type of DNS record. The value is always *CName*. Key</span></span>|
-|<span data-ttu-id="dc531-136">supportedService</span><span class="sxs-lookup"><span data-stu-id="dc531-136">supportedService</span></span>|<span data-ttu-id="dc531-137">String</span><span class="sxs-lookup"><span data-stu-id="dc531-137">String</span></span>| <span data-ttu-id="dc531-138">O Microsoft Online Services ou o recurso que tiver uma dependência neste registro CNAME.</span><span class="sxs-lookup"><span data-stu-id="dc531-138">Microsoft Online Service or feature that has a dependency on this CNAME record.</span></span></br></br><span data-ttu-id="dc531-139">Pode ser um dos seguintes valores: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*</span><span class="sxs-lookup"><span data-stu-id="dc531-139">Can be one of the following values: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*</span></span>|
-|<span data-ttu-id="dc531-140">ttl</span><span class="sxs-lookup"><span data-stu-id="dc531-140">ttl</span></span>|<span data-ttu-id="dc531-141">Int32</span><span class="sxs-lookup"><span data-stu-id="dc531-141">Int32</span></span>| <span data-ttu-id="dc531-p109">O valor a ser usado ao configurar a propriedade time-to-live (ttl) do registro CNAME no host DNS. Não anulável</span><span class="sxs-lookup"><span data-stu-id="dc531-p109">Value to use when configuring the time-to-live (ttl) property of the CNAME record at the DNS host. Not nullable</span></span> |
+|<span data-ttu-id="b5d38-114">canonicalName</span><span class="sxs-lookup"><span data-stu-id="b5d38-114">canonicalName</span></span>|<span data-ttu-id="b5d38-115">String</span><span class="sxs-lookup"><span data-stu-id="b5d38-115">String</span></span>| <span data-ttu-id="b5d38-p104">O nome canônico do registro CNAME. Usado para configurar o registro CNAME no host DNS.</span><span class="sxs-lookup"><span data-stu-id="b5d38-p104">The canonical name of the CNAME record. Used to configure the CNAME record at the DNS host.</span></span> |
+|<span data-ttu-id="b5d38-118">id</span><span class="sxs-lookup"><span data-stu-id="b5d38-118">id</span></span>|<span data-ttu-id="b5d38-119">String</span><span class="sxs-lookup"><span data-stu-id="b5d38-119">String</span></span>| <span data-ttu-id="b5d38-p105">Identificador exclusivo atribuído a esta entidade. Não anulável, Somente Leitura</span><span class="sxs-lookup"><span data-stu-id="b5d38-p105">Unique identifier assigned to this entity. Not nullable, Read-only</span></span>|
+|<span data-ttu-id="b5d38-122">isOptional</span><span class="sxs-lookup"><span data-stu-id="b5d38-122">isOptional</span></span>|<span data-ttu-id="b5d38-123">Booliano</span><span class="sxs-lookup"><span data-stu-id="b5d38-123">Boolean</span></span>| <span data-ttu-id="b5d38-p106">Se for falso, o registro CNAME deverá ser configurado pelo cliente no host DNS do Microsoft Online Services para funcionar corretamente com o domínio. Não anulável</span><span class="sxs-lookup"><span data-stu-id="b5d38-p106">If false, the CNAME record must be configured by the customer at the DNS host for Microsoft Online Services to operate correctly with the domain. Not nullable</span></span> |
+|<span data-ttu-id="b5d38-126">rótulo</span><span class="sxs-lookup"><span data-stu-id="b5d38-126">label</span></span>|<span data-ttu-id="b5d38-127">String</span><span class="sxs-lookup"><span data-stu-id="b5d38-127">String</span></span>| <span data-ttu-id="b5d38-128">O valor usado ao configurar a propriedade *alias/host/name* do registro CNAME no host DNS.</span><span class="sxs-lookup"><span data-stu-id="b5d38-128">Value used when configuring the *alias/host/name* of the CNAME record at the DNS host.</span></span> |
+|<span data-ttu-id="b5d38-129">recordType</span><span class="sxs-lookup"><span data-stu-id="b5d38-129">recordType</span></span>|<span data-ttu-id="b5d38-130">String</span><span class="sxs-lookup"><span data-stu-id="b5d38-130">String</span></span>| <span data-ttu-id="b5d38-p107">Tipo do registro DNS. Este valor sempre será *CName*. Chave</span><span class="sxs-lookup"><span data-stu-id="b5d38-p107">Type of DNS record. The value is always *CName*. Key</span></span>|
+|<span data-ttu-id="b5d38-134">supportedService</span><span class="sxs-lookup"><span data-stu-id="b5d38-134">supportedService</span></span>|<span data-ttu-id="b5d38-135">String</span><span class="sxs-lookup"><span data-stu-id="b5d38-135">String</span></span>| <span data-ttu-id="b5d38-136">O Microsoft Online Services ou o recurso que tiver uma dependência neste registro CNAME.</span><span class="sxs-lookup"><span data-stu-id="b5d38-136">Microsoft Online Service or feature that has a dependency on this CNAME record.</span></span></br></br><span data-ttu-id="b5d38-137">Pode ser um dos seguintes valores: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*</span><span class="sxs-lookup"><span data-stu-id="b5d38-137">Can be one of the following values: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*</span></span>|
+|<span data-ttu-id="b5d38-138">ttl</span><span class="sxs-lookup"><span data-stu-id="b5d38-138">ttl</span></span>|<span data-ttu-id="b5d38-139">Int32</span><span class="sxs-lookup"><span data-stu-id="b5d38-139">Int32</span></span>| <span data-ttu-id="b5d38-p108">O valor a ser usado ao configurar a propriedade time-to-live (ttl) do registro CNAME no host DNS. Não anulável</span><span class="sxs-lookup"><span data-stu-id="b5d38-p108">Value to use when configuring the time-to-live (ttl) property of the CNAME record at the DNS host. Not nullable</span></span> |
 
-## <a name="relationships"></a><span data-ttu-id="dc531-144">Relações</span><span class="sxs-lookup"><span data-stu-id="dc531-144">Relationships</span></span>
-<span data-ttu-id="dc531-145">Nenhum</span><span class="sxs-lookup"><span data-stu-id="dc531-145">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="b5d38-142">Relações</span><span class="sxs-lookup"><span data-stu-id="b5d38-142">Relationships</span></span>
+<span data-ttu-id="b5d38-143">Nenhum</span><span class="sxs-lookup"><span data-stu-id="b5d38-143">None</span></span>
 
 
-## <a name="json-representation"></a><span data-ttu-id="dc531-146">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="dc531-146">JSON representation</span></span>
-<span data-ttu-id="dc531-147">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="dc531-147">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="b5d38-144">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="b5d38-144">JSON representation</span></span>
+<span data-ttu-id="b5d38-145">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="b5d38-145">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -62,10 +62,15 @@ ms.locfileid: "27928994"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "domainDnsCnameRecord resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/domaindnscnamerecord.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

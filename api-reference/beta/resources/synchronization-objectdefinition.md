@@ -2,30 +2,30 @@
 title: tipo de recurso de objectDefinition
 description: Descreve um objeto e seus atributos. Definições de objeto fazem parte do directoryDefinition, que é atualizado como parte do synchronizationSchema.
 localization_priority: Normal
-ms.openlocfilehash: 2d5e7a12f06886ae3cbdad6a5f2f98907aafca74
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: d8182cad44deac156c077e977551abc9c31c7d25
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866077"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29514128"
 ---
-# <a name="objectdefinition-resource-type"></a><span data-ttu-id="46281-104">tipo de recurso de objectDefinition</span><span class="sxs-lookup"><span data-stu-id="46281-104">objectDefinition resource type</span></span>
+# <a name="objectdefinition-resource-type"></a><span data-ttu-id="c49df-104">tipo de recurso de objectDefinition</span><span class="sxs-lookup"><span data-stu-id="c49df-104">objectDefinition resource type</span></span>
 
-> <span data-ttu-id="46281-105">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="46281-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="46281-106">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="46281-106">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="46281-107">Descreve um objeto e seus atributos.</span><span class="sxs-lookup"><span data-stu-id="46281-107">Describes an object and its attributes.</span></span> <span data-ttu-id="46281-108">Definições de objeto fazem parte do [directoryDefinition](synchronization-directorydefinition.md), que é atualizado como parte do [synchronizationSchema](synchronization-synchronizationschema.md).</span><span class="sxs-lookup"><span data-stu-id="46281-108">Object definitions are part of [directoryDefinition](synchronization-directorydefinition.md), which is updated as part of [synchronizationSchema](synchronization-synchronizationschema.md).</span></span>
+<span data-ttu-id="c49df-105">Descreve um objeto e seus atributos.</span><span class="sxs-lookup"><span data-stu-id="c49df-105">Describes an object and its attributes.</span></span> <span data-ttu-id="c49df-106">Definições de objeto fazem parte do [directoryDefinition](synchronization-directorydefinition.md), que é atualizado como parte do [synchronizationSchema](synchronization-synchronizationschema.md).</span><span class="sxs-lookup"><span data-stu-id="c49df-106">Object definitions are part of [directoryDefinition](synchronization-directorydefinition.md), which is updated as part of [synchronizationSchema](synchronization-synchronizationschema.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="46281-109">Propriedades</span><span class="sxs-lookup"><span data-stu-id="46281-109">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="c49df-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="c49df-107">Properties</span></span>
 
-| <span data-ttu-id="46281-110">Propriedade</span><span class="sxs-lookup"><span data-stu-id="46281-110">Property</span></span>      | <span data-ttu-id="46281-111">Tipo</span><span class="sxs-lookup"><span data-stu-id="46281-111">Type</span></span>      | <span data-ttu-id="46281-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="46281-112">Description</span></span>    |
+| <span data-ttu-id="c49df-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="c49df-108">Property</span></span>      | <span data-ttu-id="c49df-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="c49df-109">Type</span></span>      | <span data-ttu-id="c49df-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="c49df-110">Description</span></span>    |
 |:--------------|:----------|:---------------|
-|<span data-ttu-id="46281-113">attributes</span><span class="sxs-lookup"><span data-stu-id="46281-113">attributes</span></span>     |<span data-ttu-id="46281-114">coleção [attributeDefinition](synchronization-attributedefinition.md)</span><span class="sxs-lookup"><span data-stu-id="46281-114">[attributeDefinition](synchronization-attributedefinition.md) collection</span></span>    | <span data-ttu-id="46281-115">Define os atributos do objeto.</span><span class="sxs-lookup"><span data-stu-id="46281-115">Defines attributes of the object.</span></span> |
-|<span data-ttu-id="46281-116">metadados</span><span class="sxs-lookup"><span data-stu-id="46281-116">metadata</span></span>       |<span data-ttu-id="46281-117">coleção [metadataEntry](synchronization-metadataentry.md)</span><span class="sxs-lookup"><span data-stu-id="46281-117">[metadataEntry](synchronization-metadataentry.md) collection</span></span>   |<span data-ttu-id="46281-118">Propriedades adicionais de extensão.</span><span class="sxs-lookup"><span data-stu-id="46281-118">Additional extension properties.</span></span> <span data-ttu-id="46281-119">A menos que mencionado explicitamente, valores de metadados não devem ser alterados.</span><span class="sxs-lookup"><span data-stu-id="46281-119">Unless mentioned explicitly, metadata values should not be changed.</span></span>|
-|<span data-ttu-id="46281-120">name</span><span class="sxs-lookup"><span data-stu-id="46281-120">name</span></span>           |<span data-ttu-id="46281-121">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="46281-121">String</span></span>     |<span data-ttu-id="46281-122">Nome do objeto.</span><span class="sxs-lookup"><span data-stu-id="46281-122">Name of the object.</span></span> <span data-ttu-id="46281-123">Deve ser exclusivo dentro de uma definição de diretório.</span><span class="sxs-lookup"><span data-stu-id="46281-123">Must be unique within a directory definition.</span></span> <span data-ttu-id="46281-124">Não anulável.</span><span class="sxs-lookup"><span data-stu-id="46281-124">Not nullable.</span></span>|
+|<span data-ttu-id="c49df-111">attributes</span><span class="sxs-lookup"><span data-stu-id="c49df-111">attributes</span></span>     |<span data-ttu-id="c49df-112">coleção [attributeDefinition](synchronization-attributedefinition.md)</span><span class="sxs-lookup"><span data-stu-id="c49df-112">[attributeDefinition](synchronization-attributedefinition.md) collection</span></span>    | <span data-ttu-id="c49df-113">Define os atributos do objeto.</span><span class="sxs-lookup"><span data-stu-id="c49df-113">Defines attributes of the object.</span></span> |
+|<span data-ttu-id="c49df-114">Metadata</span><span class="sxs-lookup"><span data-stu-id="c49df-114">metadata</span></span>       |<span data-ttu-id="c49df-115">coleção [metadataEntry](synchronization-metadataentry.md)</span><span class="sxs-lookup"><span data-stu-id="c49df-115">[metadataEntry](synchronization-metadataentry.md) collection</span></span>   |<span data-ttu-id="c49df-116">Propriedades adicionais de extensão.</span><span class="sxs-lookup"><span data-stu-id="c49df-116">Additional extension properties.</span></span> <span data-ttu-id="c49df-117">A menos que mencionado explicitamente, valores de metadados não devem ser alterados.</span><span class="sxs-lookup"><span data-stu-id="c49df-117">Unless mentioned explicitly, metadata values should not be changed.</span></span>|
+|<span data-ttu-id="c49df-118">name</span><span class="sxs-lookup"><span data-stu-id="c49df-118">name</span></span>           |<span data-ttu-id="c49df-119">String</span><span class="sxs-lookup"><span data-stu-id="c49df-119">String</span></span>     |<span data-ttu-id="c49df-120">Nome do objeto.</span><span class="sxs-lookup"><span data-stu-id="c49df-120">Name of the object.</span></span> <span data-ttu-id="c49df-121">Deve ser exclusivo dentro de uma definição de diretório.</span><span class="sxs-lookup"><span data-stu-id="c49df-121">Must be unique within a directory definition.</span></span> <span data-ttu-id="c49df-122">Não anulável.</span><span class="sxs-lookup"><span data-stu-id="c49df-122">Not nullable.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="46281-125">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="46281-125">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="c49df-123">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="c49df-123">JSON representation</span></span>
 
-<span data-ttu-id="46281-126">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="46281-126">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="c49df-124">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="c49df-124">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -43,7 +43,7 @@ ms.locfileid: "27866077"
 }
 ```
 
-## <a name="json-example"></a><span data-ttu-id="46281-127">Exemplo JSON</span><span class="sxs-lookup"><span data-stu-id="46281-127">JSON Example</span></span>
+## <a name="json-example"></a><span data-ttu-id="c49df-125">Exemplo JSON</span><span class="sxs-lookup"><span data-stu-id="c49df-125">JSON Example</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -438,10 +438,15 @@ ms.locfileid: "27866077"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "objectDefinition resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/synchronization-objectdefinition.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

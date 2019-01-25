@@ -5,32 +5,32 @@ ms.date: 09/10/2017
 title: Listar os subsites de um site do SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 0632f250e38d20cb1975effea752177dff9f8569
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 93cfbe89804425eb49f21e6c0d178004c28ef3ce
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27949987"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29513309"
 ---
-# <a name="enumerate-subsites"></a><span data-ttu-id="c015f-102">Enumerar subsites</span><span class="sxs-lookup"><span data-stu-id="c015f-102">Enumerate subsites</span></span>
+# <a name="enumerate-subsites"></a><span data-ttu-id="7f4f6-102">Enumerar subsites</span><span class="sxs-lookup"><span data-stu-id="7f4f6-102">Enumerate subsites</span></span>
 
-> <span data-ttu-id="c015f-103">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="c015f-103">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="c015f-104">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="c015f-104">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c015f-105">Obtém uma coleção de subsites definidos para um [site][].</span><span class="sxs-lookup"><span data-stu-id="c015f-105">Get a collection of subsites defined for a [site][].</span></span>
+<span data-ttu-id="7f4f6-103">Obtém uma coleção de subsites definidos para um [site][].</span><span class="sxs-lookup"><span data-stu-id="7f4f6-103">Get a collection of subsites defined for a [site][].</span></span>
 
 [site]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="c015f-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="c015f-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="7f4f6-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="7f4f6-105">Permissions</span></span>
 
-<span data-ttu-id="c015f-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c015f-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="7f4f6-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7f4f6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c015f-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="c015f-110">Permission type</span></span>      | <span data-ttu-id="c015f-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="c015f-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="7f4f6-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="7f4f6-108">Permission type</span></span>      | <span data-ttu-id="7f4f6-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="7f4f6-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c015f-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="c015f-112">Delegated (work or school account)</span></span> | <span data-ttu-id="c015f-113">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c015f-113">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="c015f-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="c015f-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c015f-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c015f-115">Not supported.</span></span>    |
-|<span data-ttu-id="c015f-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="c015f-116">Application</span></span> | <span data-ttu-id="c015f-117">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c015f-117">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="7f4f6-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="7f4f6-110">Delegated (work or school account)</span></span> | <span data-ttu-id="7f4f6-111">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7f4f6-111">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="7f4f6-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="7f4f6-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7f4f6-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="7f4f6-113">Not supported.</span></span>    |
+|<span data-ttu-id="7f4f6-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="7f4f6-114">Application</span></span> | <span data-ttu-id="7f4f6-115">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7f4f6-115">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c015f-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="c015f-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7f4f6-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="7f4f6-116">HTTP request</span></span>
 
 <!-- { "blockType": "request", "name": "list-subsites", "scopes": "service.sharepoint sites.read.all" } -->
 
@@ -38,7 +38,7 @@ ms.locfileid: "27949987"
 GET https://graph.microsoft.com/beta/sites/{site-id}/sites
 ```
 
-## <a name="response"></a><span data-ttu-id="c015f-119">Resposta</span><span class="sxs-lookup"><span data-stu-id="c015f-119">Response</span></span>
+## <a name="response"></a><span data-ttu-id="7f4f6-117">Resposta</span><span class="sxs-lookup"><span data-stu-id="7f4f6-117">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
@@ -68,10 +68,15 @@ Content-type: application/json
 }
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Sites/List subsites"
-} -->
+  "tocPath": "Sites/List subsites",
+  "suppressions": [
+    "Error: /api-reference/beta/api/site-list-subsites.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

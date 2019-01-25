@@ -4,52 +4,52 @@ description: 'Obtenha as propriedades e os relacionamentos de uma postagem em um
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: ecccee4f63136d43c375e648e9a073e489f99c17
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 0d786734aa59d0048b077d4fa7eae08857da2753
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27968586"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29514009"
 ---
-# <a name="get-post"></a><span data-ttu-id="cb7da-104">Obter postagem</span><span class="sxs-lookup"><span data-stu-id="cb7da-104">Get post</span></span>
+# <a name="get-post"></a><span data-ttu-id="97b53-104">Obter postagem</span><span class="sxs-lookup"><span data-stu-id="97b53-104">Get post</span></span>
 
-> <span data-ttu-id="cb7da-105">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="cb7da-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="cb7da-106">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="cb7da-106">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="cb7da-p103">Obtenha as propriedades e os relacionamentos de uma postagem em um thread especificado. Você pode especificar a conversa pai e o thread ou apenas o thread, sem fazer referência à conversa pai.</span><span class="sxs-lookup"><span data-stu-id="cb7da-p103">Get the properties and relationships of a post in a specified thread. You can specify both the parent conversation and the thread, or, you can specify the thread without referencing the parent conversation.</span></span>
+<span data-ttu-id="97b53-p102">Obtenha as propriedades e os relacionamentos de uma postagem em um thread especificado. Você pode especificar a conversa pai e o thread ou apenas o thread, sem fazer referência à conversa pai.</span><span class="sxs-lookup"><span data-stu-id="97b53-p102">Get the properties and relationships of a post in a specified thread. You can specify both the parent conversation and the thread, or, you can specify the thread without referencing the parent conversation.</span></span>
 
-<span data-ttu-id="cb7da-109">Como o recurso **post** dá suporte a [extensions](/graph/extensibility-overview), você também pode usar a operação `GET` para obter propriedades personalizadas e dados de extensão em uma instância de **post**.</span><span class="sxs-lookup"><span data-stu-id="cb7da-109">Since the **post** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in a **post** instance.</span></span>
+<span data-ttu-id="97b53-107">Como o recurso **post** dá suporte a [extensions](/graph/extensibility-overview), você também pode usar a operação `GET` para obter propriedades personalizadas e dados de extensão em uma instância de **post**.</span><span class="sxs-lookup"><span data-stu-id="97b53-107">Since the **post** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in a **post** instance.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="cb7da-110">Permissões</span><span class="sxs-lookup"><span data-stu-id="cb7da-110">Permissions</span></span>
-<span data-ttu-id="cb7da-p104">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="cb7da-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="97b53-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="97b53-108">Permissions</span></span>
+<span data-ttu-id="97b53-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="97b53-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="cb7da-113">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="cb7da-113">Permission type</span></span>      | <span data-ttu-id="cb7da-114">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="cb7da-114">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="97b53-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="97b53-111">Permission type</span></span>      | <span data-ttu-id="97b53-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="97b53-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="cb7da-115">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="cb7da-115">Delegated (work or school account)</span></span> | <span data-ttu-id="cb7da-116">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cb7da-116">Group.Read.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="cb7da-117">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="cb7da-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cb7da-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="cb7da-118">Not supported.</span></span>    |
-|<span data-ttu-id="cb7da-119">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="cb7da-119">Application</span></span> | <span data-ttu-id="cb7da-120">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cb7da-120">Group.Read.All, Group.ReadWrite.All</span></span> |
+|<span data-ttu-id="97b53-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="97b53-113">Delegated (work or school account)</span></span> | <span data-ttu-id="97b53-114">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="97b53-114">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="97b53-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="97b53-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="97b53-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="97b53-116">Not supported.</span></span>    |
+|<span data-ttu-id="97b53-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="97b53-117">Application</span></span> | <span data-ttu-id="97b53-118">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="97b53-118">Group.Read.All, Group.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="cb7da-121">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="cb7da-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="97b53-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="97b53-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/threads/{id}/posts/{id}
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="cb7da-122">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="cb7da-122">Optional query parameters</span></span>
-<span data-ttu-id="cb7da-123">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="cb7da-123">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="cb7da-124">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="cb7da-124">Request headers</span></span>
-| <span data-ttu-id="cb7da-125">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="cb7da-125">Header</span></span>       | <span data-ttu-id="cb7da-126">Valor</span><span class="sxs-lookup"><span data-stu-id="cb7da-126">Value</span></span> |
+## <a name="optional-query-parameters"></a><span data-ttu-id="97b53-120">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="97b53-120">Optional query parameters</span></span>
+<span data-ttu-id="97b53-121">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="97b53-121">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="97b53-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="97b53-122">Request headers</span></span>
+| <span data-ttu-id="97b53-123">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="97b53-123">Header</span></span>       | <span data-ttu-id="97b53-124">Valor</span><span class="sxs-lookup"><span data-stu-id="97b53-124">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="cb7da-127">Autorização</span><span class="sxs-lookup"><span data-stu-id="cb7da-127">Authorization</span></span>  | <span data-ttu-id="cb7da-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="cb7da-p105">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="97b53-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="97b53-125">Authorization</span></span>  | <span data-ttu-id="97b53-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="97b53-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="cb7da-130">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="cb7da-130">Request body</span></span>
-<span data-ttu-id="cb7da-131">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="cb7da-131">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="97b53-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="97b53-128">Request body</span></span>
+<span data-ttu-id="97b53-129">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="97b53-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="cb7da-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="cb7da-132">Response</span></span>
+## <a name="response"></a><span data-ttu-id="97b53-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="97b53-130">Response</span></span>
 
-<span data-ttu-id="cb7da-133">Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [post](../resources/post.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="cb7da-133">If successful, this method returns a `200 OK` response code and [post](../resources/post.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="cb7da-134">Exemplo</span><span class="sxs-lookup"><span data-stu-id="cb7da-134">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="cb7da-135">Solicitação</span><span class="sxs-lookup"><span data-stu-id="cb7da-135">Request</span></span>
-<span data-ttu-id="cb7da-136">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="cb7da-136">Here is an example of the request.</span></span>
+<span data-ttu-id="97b53-131">Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [post](../resources/post.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="97b53-131">If successful, this method returns a `200 OK` response code and [post](../resources/post.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="97b53-132">Exemplo</span><span class="sxs-lookup"><span data-stu-id="97b53-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="97b53-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="97b53-133">Request</span></span>
+<span data-ttu-id="97b53-134">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="97b53-134">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_post"
@@ -57,8 +57,8 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}
 ```http
 GET https://graph.microsoft.com/beta/groups/0d75b8dc-c42d-44dd-890a-751a99c0589f/threads/AAQkAD8EJUmcWwTJi06Cew==/posts/AQMkADgAAAIJbQAAAA==
 ```
-##### <a name="response"></a><span data-ttu-id="cb7da-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="cb7da-137">Response</span></span>
-<span data-ttu-id="cb7da-p106">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="cb7da-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="97b53-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="97b53-135">Response</span></span>
+<span data-ttu-id="97b53-p105">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="97b53-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -100,19 +100,24 @@ Content-type: application/json
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="cb7da-141">Confira também</span><span class="sxs-lookup"><span data-stu-id="cb7da-141">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="97b53-139">Confira também</span><span class="sxs-lookup"><span data-stu-id="97b53-139">See also</span></span>
 
-- [<span data-ttu-id="cb7da-142">Adicionar dados personalizados a recursos usando extensões</span><span class="sxs-lookup"><span data-stu-id="cb7da-142">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
-- [<span data-ttu-id="cb7da-143">Adicionar dados personalizados aos usuários usando extensões abertas (visualização)</span><span class="sxs-lookup"><span data-stu-id="cb7da-143">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
-- [<span data-ttu-id="cb7da-144">Adicionar dados personalizados a grupos usando extensões do esquema (visualização)</span><span class="sxs-lookup"><span data-stu-id="cb7da-144">Add custom data to groups using schema extensions (preview)</span></span>](/graph/extensibility-schema-groups)
+- [<span data-ttu-id="97b53-140">Adicionar dados personalizados a recursos usando extensões</span><span class="sxs-lookup"><span data-stu-id="97b53-140">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
+- [<span data-ttu-id="97b53-141">Adicionar dados personalizados aos usuários usando extensões abertas (visualização)</span><span class="sxs-lookup"><span data-stu-id="97b53-141">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
+- [<span data-ttu-id="97b53-142">Adicionar dados personalizados a grupos usando extensões do esquema (visualização)</span><span class="sxs-lookup"><span data-stu-id="97b53-142">Add custom data to groups using schema extensions (preview)</span></span>](/graph/extensibility-schema-groups)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get post",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/post-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

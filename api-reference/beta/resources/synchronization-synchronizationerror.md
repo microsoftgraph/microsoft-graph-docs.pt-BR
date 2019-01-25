@@ -2,31 +2,31 @@
 title: tipo de recurso de synchronizationError
 description: Representa um erro que ocorreu durante o processo de sincronização.
 localization_priority: Normal
-ms.openlocfilehash: cc6b58444ac56303bfd2e41f1fcae17658f6aea9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: f37dca5b65a67eb36b2b6a130eee8feb692cd271
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847240"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29513169"
 ---
-# <a name="synchronizationerror-resource-type"></a><span data-ttu-id="f0569-103">tipo de recurso de synchronizationError</span><span class="sxs-lookup"><span data-stu-id="f0569-103">synchronizationError resource type</span></span>
+# <a name="synchronizationerror-resource-type"></a><span data-ttu-id="921a3-103">tipo de recurso de synchronizationError</span><span class="sxs-lookup"><span data-stu-id="921a3-103">synchronizationError resource type</span></span>
 
-> <span data-ttu-id="f0569-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="f0569-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="f0569-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="f0569-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f0569-106">Representa um erro que ocorreu durante o processo de sincronização.</span><span class="sxs-lookup"><span data-stu-id="f0569-106">Represents an error that occurred during the synchronization process.</span></span>
+<span data-ttu-id="921a3-104">Representa um erro que ocorreu durante o processo de sincronização.</span><span class="sxs-lookup"><span data-stu-id="921a3-104">Represents an error that occurred during the synchronization process.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="f0569-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="f0569-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="921a3-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="921a3-105">Properties</span></span>
 
 <!-- Add descriptions for the properties. -->
-| <span data-ttu-id="f0569-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="f0569-108">Property</span></span>     | <span data-ttu-id="f0569-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="f0569-109">Type</span></span>   |<span data-ttu-id="f0569-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="f0569-110">Description</span></span>|
+| <span data-ttu-id="921a3-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="921a3-106">Property</span></span>     | <span data-ttu-id="921a3-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="921a3-107">Type</span></span>   |<span data-ttu-id="921a3-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="921a3-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="f0569-111">código</span><span class="sxs-lookup"><span data-stu-id="f0569-111">code</span></span>|<span data-ttu-id="f0569-112">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="f0569-112">String</span></span>||
-|<span data-ttu-id="f0569-113">mensagem</span><span class="sxs-lookup"><span data-stu-id="f0569-113">message</span></span>|<span data-ttu-id="f0569-114">String</span><span class="sxs-lookup"><span data-stu-id="f0569-114">String</span></span>||
-|<span data-ttu-id="f0569-115">tenantActionable</span><span class="sxs-lookup"><span data-stu-id="f0569-115">tenantActionable</span></span>|<span data-ttu-id="f0569-116">Booliano</span><span class="sxs-lookup"><span data-stu-id="f0569-116">Boolean</span></span>||
+|<span data-ttu-id="921a3-109">código</span><span class="sxs-lookup"><span data-stu-id="921a3-109">code</span></span>|<span data-ttu-id="921a3-110">String</span><span class="sxs-lookup"><span data-stu-id="921a3-110">String</span></span>||
+|<span data-ttu-id="921a3-111">mensagem</span><span class="sxs-lookup"><span data-stu-id="921a3-111">message</span></span>|<span data-ttu-id="921a3-112">String</span><span class="sxs-lookup"><span data-stu-id="921a3-112">String</span></span>||
+|<span data-ttu-id="921a3-113">tenantActionable</span><span class="sxs-lookup"><span data-stu-id="921a3-113">tenantActionable</span></span>|<span data-ttu-id="921a3-114">Booliano</span><span class="sxs-lookup"><span data-stu-id="921a3-114">Boolean</span></span>||
 
-## <a name="json-representation"></a><span data-ttu-id="f0569-117">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="f0569-117">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="921a3-115">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="921a3-115">JSON representation</span></span>
 
-<span data-ttu-id="f0569-118">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="f0569-118">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="921a3-116">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="921a3-116">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -47,10 +47,15 @@ ms.locfileid: "27847240"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "synchronizationError resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/synchronization-synchronizationerror.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
