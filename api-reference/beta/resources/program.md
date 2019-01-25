@@ -2,16 +2,16 @@
 title: tipo de recurso do programa
 description: 'No Windows Azure AD access analisa o recurso, um programa é um contêiner, mantendo os controles de programa. Um locatário pode ter um ou mais programas.  Cada controle vincula uma revisão de acesso a um programa, para torná-la mais fáceis de localizar relacionados access analisa.  '
 localization_priority: Normal
-ms.openlocfilehash: a342fd159bba3f7e31c55ffab9a64a72353bc7ac
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 2498279f27f5859eadcfa1d70662e3d8f3b5246c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27863900"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29515185"
 ---
 # <a name="program-resource-type"></a>tipo de recurso do programa
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 No recurso de [acesso analisa](accessreviews-root.md) Azure AD, um programa é um contêiner, mantendo os controles de programa. Um locatário pode ter um ou mais programas.  Cada controle vincula uma revisão de acesso a um programa, para torná-la mais fáceis de localizar relacionados access analisa.  
 
@@ -28,7 +28,7 @@ Cada locatário que tem em-hospedados Azure AD avaliações de acesso tem um pro
 |[Lista programControls de um programa](../api/program-listcontrols.md) |      coleção [programControl](programcontrol.md)| Obter uma coleção dos controles de um programa.|
 |[Programa de atualização](../api/program-update.md) |   [programa](program.md)|  Atualize um programa.|
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
@@ -44,7 +44,7 @@ Cada locatário que tem em-hospedados Azure AD avaliações de acesso tem um pro
 | `displayName`               |`String`                              |  O nome do programa.  Necessários na criação.                  |
 | `description`               |`String`                              |  A descrição do programa.           |
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 | `controls`                  |[programControl](programcontrol.md) | Controles associados com o programa. |
@@ -70,10 +70,15 @@ Veja a seguir uma representação JSON do recurso.
 
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "program resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/program.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

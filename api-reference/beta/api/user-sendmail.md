@@ -4,16 +4,16 @@ description: Enviar a mensagem especificada no corpo da solicitação. A mensage
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 48e6087cb8393bb4f679cabfe73d5cb280a71907
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: afa50b466bd7a90af4fedbdad4c5f7c5b4627b8c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27991423"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29517208"
 ---
 # <a name="send-mail"></a>Enviar email
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Enviar a mensagem especificada no corpo da solicitação. A mensagem é salva na pasta Itens Enviados por padrão.
 
@@ -22,7 +22,7 @@ Na mesma chamada de ação **sendMail** , você pode:
 - Incluir um [anexo](../resources/attachment.md)
 - Use um [mencionar](../resources/mention.md) chamar check-out de outro usuário na nova mensagem
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 
@@ -193,7 +193,7 @@ Content-type: application/json
 ```
 
 ##### <a name="response-3"></a>Resposta 3
-Veja a seguir um exemplo da resposta.
+Este é um exemplo da resposta.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -204,10 +204,15 @@ HTTP/1.1 202 Accepted
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "user: sendMail",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-sendmail.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

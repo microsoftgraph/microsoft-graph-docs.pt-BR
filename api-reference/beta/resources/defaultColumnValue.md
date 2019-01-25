@@ -4,16 +4,16 @@ ms.author: dspektor
 ms.date: 09/12/2017
 title: DefaultColumnValue
 localization_priority: Normal
-ms.openlocfilehash: 6ceca45d09654771f161db63707682a4558b0d29
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: ad94cadaa26d0fab72236d4037ceffd09a52c561
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815544"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29514275"
 ---
 # <a name="defaultcolumnvalue-resource-type"></a>Tipo de recurso DefaultColumnValue
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **defaultColumnValue** em um recurso [columnDefinition](columndefinition.md) especifica o valor padrão dessa coluna.
 O valor padrão pode ser especificado tanto diretamente ou como uma fórmula.
@@ -45,10 +45,15 @@ Consulte [Exemplos de fórmulas comuns em listas do SharePoint][SPFormulas] para
 [SPFormulas]: https://support.office.com/en-us/article/Examples-of-common-formulas-in-SharePoint-Lists-d81f5f21-2b4e-45ce-b170-bf7ebf6988b3
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/DefaultColumnValue"
-} -->
+  "tocPath": "Resources/DefaultColumnValue",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/defaultColumnValue.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

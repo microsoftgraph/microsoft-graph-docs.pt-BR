@@ -4,16 +4,16 @@ description: Atualizar as propriedades do objeto message.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 6553365ffd31c56348c930be5562ebd65abc734d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 5a42e9d6a10e79a4ae801cca464c912dc6fade7b
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27977763"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29515682"
 ---
 # <a name="update-message"></a>Atualizar mensagem
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Atualize as propriedades de um objeto de mensagem.
 ## <a name="permissions"></a>Permissões
@@ -43,14 +43,14 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|bccRecipients|Destinatário|Os destinatários Cco da mensagem. |
-|corpo|ItemBody|O corpo da mensagem. Somente se atualizável isDraft = true.|
+|bccRecipients|Recipient|Os destinatários Cco: da mensagem. |
+|corpo|ItemBody|O corpo da mensagem. Atualizável apenas se IsDraft = true.|
 |categories|String collection|As categorias associadas à mensagem.|
-|ccRecipients|Coleção Recipient|Os destinatários Cc da mensagem. |
-|from|Destinatário|O proprietário da caixa de correio e o remetente da mensagem. Deve corresponder à caixa de correio real usada. |
+|ccRecipients|Coleção Recipient|Os destinatários Cc: da mensagem. |
+|from|Recipient|O proprietário da caixa de correio e o remetente da mensagem. Deve corresponder à caixa de correio real usada. |
 |importance|String|A importância da mensagem. Os valores possíveis são: `Low`, `Normal` e `High`.|
 |inferenceClassification | String | A classificação da mensagem para o usuário, com base na relevância deduzida ou na importância, ou em uma substituição explícita. Os valores possíveis são: `focused` ou `other`. |
-|internetMessageId |String |A ID da mensagem no formato especificado por [RFC2822](https://www.ietf.org/rfc/rfc2822.txt). Somente se atualizável isDraft = true.|
+|internetMessageId |String |A ID da mensagem no formato especificado por [RFC2822](https://www.ietf.org/rfc/rfc2822.txt). Atualizável apenas se IsDraft = true.|
 |isDeliveryReceiptRequested|Booliano|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
 |isRead|Booliano|Indica se a mensagem foi lida.|
 |isReadReceiptRequested|Booliano|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
@@ -58,8 +58,8 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |replyTo|Coleção Recipient|Os endereços de email a serem usados ao responder. Somente se atualizável isDraft = true.|
 |sender|Destinatário|A conta que é realmente usada para gerar a mensagem. Atualizável ao enviar uma mensagem de uma [caixa de correio compartilhada](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes)ou enviando uma mensagem como um [representante](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926). Em qualquer caso, o valor deve corresponder à caixa de correio real usada.|
 |singleValueExtendedProperties|Coleção [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de valor único definidas para a mensagem. Anulável.|
-|subject|String|O assunto da mensagem. Somente se atualizável isDraft = true.|
-|toRecipients|Coleção Recipient|Dos destinatários da mensagem. |
+|subject|Cadeia de caracteres|O assunto da mensagem. Atualizável apenas se IsDraft = true.|
+|toRecipients|Coleção Recipient|Os destinatários Para: da mensagem. |
 
 Como o recurso **message** dá suporte a [extensions](/graph/extensibility-overview), você pode usar a operação `PATCH` para adicionar, atualizar ou excluir seus próprios dados específicos do aplicativo nas propriedades personalizadas de uma extensão em uma instância de **message** existente.
 
@@ -121,10 +121,15 @@ Content-length: 248
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update message",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/message-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

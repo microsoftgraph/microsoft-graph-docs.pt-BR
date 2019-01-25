@@ -4,16 +4,16 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Image
 localization_priority: Normal
-ms.openlocfilehash: 2b5e084294c528a83f80b0c49badbf8f1e96ca41
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 588f5185cba3012ce3dce77a9707aa23be2bf0cc
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889723"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29513925"
 ---
 # <a name="image-resource-type"></a>Tipo de recurso Image
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 O recurso **Image** agrupa propriedades relacionadas a imagens em uma única estrutura. Se um [**DriveItem**](driveitem.md) tiver uma faceta **image** não nula, o item representa uma imagem bitmap.
 
@@ -43,10 +43,15 @@ No OneDrive for Business, esse recurso retorna em itens que devem ser imagens co
 Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.md).
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The image facet describes properties of an image like width and height",
   "keywords": "image,width,height,item,facet",
   "section": "documentation",
-  "tocPath": "Facets/Image"
-} -->
+  "tocPath": "Facets/Image",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/image.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

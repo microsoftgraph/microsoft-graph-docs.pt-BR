@@ -5,16 +5,16 @@ ms.date: 09/10/2017
 title: DriveItem
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 98930017f9ca3f70501cd10e4a3029f7a240ce41
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: fa172301e633a6f001133d44cb3332a5e133efe2
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27977770"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29516739"
 ---
 # <a name="driveitem-resource-type"></a>tipo de recurso de driveItem
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 O recurso **DriveItem** representa um arquivo, pasta ou outro item armazenado em uma unidade. Todos os objetos do sistema de arquivos no OneDrive e no SharePoint são retornados como recursos **driveItem**.
 
@@ -105,17 +105,17 @@ O recurso **driveItem** é derivado de [**baseItem**][baseItem] e herda propried
 | createdDateTime      | DateTimeOffset     | Data e hora de criação do item. Somente leitura.
 | cTag                 | String             | Uma eTag para o conteúdo do item. Essa eTag não será alterada se apenas os metadados forem alterados. **Observação** Essa propriedade não será retornada se o item for uma pasta. Somente leitura.
 | deleted              | [deleted][]        | Informações sobre o estado excluído do item. Somente leitura.
-| description          | String             | Fornece uma descrição do item visível para o usuário. Leitura e gravação. Somente no OneDrive Personal
+| descrição          | String             | Fornece uma descrição do item visível para o usuário. Leitura e gravação. Somente no OneDrive Personal
 | eTag                 | String             | eTag para o item inteiro (metadados + conteúdo). Somente leitura.
 | file                 | [file][]           | Metadados de arquivo, se o item for um arquivo. Somente leitura.
 | fileSystemInfo       | [fileSystemInfo][] | Informações do sistema de arquivos no cliente. Leitura e gravação.
 | folder               | [folder][]         | Metadados de pasta, se o item for uma pasta. Somente leitura.
 | id                   | String             | O identificador exclusivo do item na Unidade. Somente leitura.
-| image                | [image][]          | Metadados de imagem, se o item for uma imagem. Somente leitura.
+| imagem                | [image][]          | Metadados de imagem, se o item for uma imagem. Somente leitura.
 | lastModifiedBy       | [identitySet][]    | Identidade do usuário, dispositivo e aplicativo que modificou o item pela última vez. Somente leitura.
 | lastModifiedDateTime | DateTimeOffset     | Data e hora em que o item foi modificado pela última vez. Somente leitura.
 | location             | [geoCoordinates][] | Metadados de localização, se o item tiver dados de localização. Somente leitura.
-| name                 | String             | O nome do item (nome do arquivo e extensão). Leitura e gravação.
+| nome                 | String             | O nome do item (nome do arquivo e extensão). Leitura e gravação.
 | pacote              | [package][]        | Se presente, indica que esse item é um pacote, e não uma pasta ou um arquivo. Pacotes são tratados como arquivos em alguns contextos e como pastas em outros. Somente leitura.
 | parentReference      | [itemReference][]  | Informações do pai, se o item tiver um pai. Leitura e gravação.
 | Foto                | [photo][]          | Metadados de foto, se o item for uma foto. Somente leitura.
@@ -123,7 +123,7 @@ O recurso **driveItem** é derivado de [**baseItem**][baseItem] e herda propried
 | remoteItem           | [remoteItem][]     | Dados do item remoto, se o item for compartilhado de uma unidade diferente daquela que está sendo acessada. Somente leitura.
 | root                 | [root][]           | Se essa propriedade for não nula, indicará que o driveItem é o principal driveItem na unidade.
 | searchResult         | [searchResult][]   | Metadados de pesquisa, se o item for de um resultado de pesquisa. Somente leitura.
-| shared               | [shared][]         | Indica que o item foi compartilhado com outras pessoas e fornece informações sobre o estado compartilhado desse item. Somente leitura.
+| compartilhado               | [compartilhado][]         | Indica que o item foi compartilhado com outras pessoas e fornece informações sobre o estado compartilhado desse item. Somente leitura.
 | sharepointIds        | [sharepointIds][]  | Retorna os identificadores úteis para fins de compatibilidade do REST do SharePoint. Somente leitura.
 | size                 | Int64              | O tamanho do item em bytes. Somente leitura.
 | specialFolder        | [specialFolder][]  | Se o item atual também estiver disponível como uma pasta especial, essa faceta será retornada. Somente leitura.
@@ -138,7 +138,7 @@ O recurso **driveItem** é derivado de [**baseItem**][baseItem] e herda propried
 | Relação       | Tipo                            | Descrição
 |:-------------------|:--------------------------------|:--------------------------
 | activities         | Conjunto [itemActivity][]     | A lista de atividades recentes que ocorreram neste item.
-| análise          | recurso de [itemAnalytics][]      | Análise sobre as atividades de modo de exibição que foram realizada neste item.
+| Análise          | recurso de [itemAnalytics][]      | Análise sobre as atividades de modo de exibição que foram realizada neste item.
 | content            | Fluxo                          | O fluxo de conteúdo, se o item representar um arquivo.
 | children           | Conjunto driveitem            | Conjunto que contêm objetos Item para os filhos imediatos de Item. Somente os itens que representam pastas têm filhos. Somente leitura. Anulável.
 | listItem           | [listItem][]                    | Para as unidades no SharePoint, o item de lista da biblioteca de documento associado. Somente leitura. Anulável.
@@ -230,11 +230,18 @@ Em bibliotecas de documentos do OneDrive for Business ou do SharePoint, a propri
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Item is the main data model in the OneDrive API. Everything is an item.",
   "keywords": "item,facet,resource",
   "section": "documentation",
   "tocPath": "Items",
-  "tocBookmarks": { "Resources/Item": "#" }
-} -->
+  "tocBookmarks": {
+    "Resources/Item": "#"
+  },
+  "suppressions": [
+    "Error: /api-reference/beta/resources/driveitem.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

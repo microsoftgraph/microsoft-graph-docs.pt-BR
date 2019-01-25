@@ -4,16 +4,16 @@ ms.author: dspektor
 ms.date: 09/14/2017
 title: ItemAnalytics
 localization_priority: Normal
-ms.openlocfilehash: 03626b5dad041181558af076b5dc0ac05b684e13
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 72e7f4de752ec04fbc5ebd98655254e2597fa499
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842410"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29514961"
 ---
 # <a name="itemanalytics-resource-type"></a>tipo de recurso de itemAnalytics
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 O recurso de **itemAnalytics** fornece análise sobre atividades realizadas em um item. Este recurso só está disponível no SharePoint e o OneDrive for Business no momento.
 
@@ -49,10 +49,15 @@ Você também pode usar [getActivitiesByInterval][] API para recuperar o analyti
 
 [getActivitiesByInterval]: ../api/itemactivity-getbyinterval.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The ItemAnalytics object provides analytics about activities that took place on an item.",
   "keywords": "activities,activity,action,analytics",
   "section": "documentation",
-  "tocPath": "Resources/ItemAnalytics"
-} -->
+  "tocPath": "Resources/ItemAnalytics",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/itemanalytics.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

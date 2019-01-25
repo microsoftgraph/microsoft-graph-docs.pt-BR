@@ -2,19 +2,19 @@
 title: Lista programControlTypes
 description: No Windows Azure AD para acessar o recurso de revisões, liste todos os objetos programControlType.
 localization_priority: Normal
-ms.openlocfilehash: ae5a2298d3c0f542f7d8fd766f412b8cf5648730
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 00983cadf4bd1e0cf136c594f06ac3ee6fbb1de5
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860883"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29515689"
 ---
 # <a name="list-programcontroltypes"></a>Lista programControlTypes
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 No recurso [acesso analisa](../resources/accessreviews-root.md) Azure AD, liste todos os objetos [programControlType](../resources/programcontroltype.md) .
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
@@ -31,7 +31,7 @@ GET /programControlTypes
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome         | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| Autorização | string | Portador \{token\}. Obrigatório. |
+| Autorização | string | Token de portador Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Nenhum corpo da solicitação deve ser fornecido.
@@ -92,10 +92,15 @@ Content-type: application/json
 |[Lista programControls de um programa](program-listcontrols.md) |     coleção [programControl](../resources/programcontrol.md)|    Obter uma coleção dos controles de um programa.|
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List program control types",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/programcontroltype-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

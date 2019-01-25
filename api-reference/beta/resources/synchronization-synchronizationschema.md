@@ -2,16 +2,16 @@
 title: tipo de recurso de synchronizationSchema
 description: Define quais objetos serão sincronizados e como eles serão sincronizados. O esquema de sincronização contém a maioria das informações de instalação para um trabalho de sincronização específica. Normalmente, você irá personalizar alguns dos mapeamentos de atributo ou adicionar um filtro de escopo para sincronizar apenas os objetos que atender a uma determinada condição.
 localization_priority: Normal
-ms.openlocfilehash: 696bdbbc6fa2d96965d11a12fb09fdfc0ce16106
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: e7bb91ef473a04552c4c5f33ffc9d54eb86a9b7a
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847317"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29515927"
 ---
 # <a name="synchronizationschema-resource-type"></a>tipo de recurso de synchronizationSchema
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Define quais objetos serão sincronizados e como eles serão sincronizados. O esquema de sincronização contém a maioria das informações de instalação para um trabalho de sincronização específica. Normalmente, você irá personalizar alguns dos [mapeamentos de atributo](synchronization-attributemapping.md)ou adicionar um [filtro de escopo](synchronization-filter.md) para sincronizar apenas os objetos que atender a uma determinada condição.
 
@@ -47,7 +47,7 @@ As seções a seguir descrevem os componentes de alto nível do esquema de sincr
 |:--------------|:----------|:---------------|
 |diretórios            |coleção [directoryDefinition](synchronization-directorydefinition.md)   |Descreve os objetos que fazem parte do [synchronizationJob](synchronization-synchronizationjob.md) ou [synchronizationTemplate](synchronization-synchronizationtemplate.md)e diretórios. |
 |synchronizationRules   |coleção [synchronizationRule](synchronization-synchronizationrule.md)   |Uma coleção de regras de sincronização configurados para o [synchronizationJob](synchronization-synchronizationjob.md) ou [synchronizationTemplate](synchronization-synchronizationtemplate.md), |
-|version                |Cadeia de caracteres                             |A versão do esquema, atualizado automaticamente com cada mudança de esquema.|
+|version                |String                             |A versão do esquema, atualizado automaticamente com cada mudança de esquema.|
 
 
 ## <a name="json-representation"></a>Representação JSON
@@ -73,10 +73,15 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "synchronizationSchema resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/synchronization-synchronizationschema.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

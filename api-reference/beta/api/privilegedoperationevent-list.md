@@ -2,21 +2,21 @@
 title: Lista privilegedOperationEvents
 description: filtro ' expressão.
 localization_priority: Normal
-ms.openlocfilehash: 316240359b178dde2d307c4c0d8228dfb22c9ee5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 4ea6f778098a8b56c8819f55fb33ffb5420cce6b
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821804"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29512630"
 ---
 # <a name="list-privilegedoperationevents"></a>Lista privilegedOperationEvents
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Recupere uma lista dos objetos de [privilegedOperationEvent](../resources/privilegedoperationevent.md) , que representam os eventos de auditoria que são gerados pelo gerenciamento de identidades privilegiado para as operações de função. Para obter detalhes sobre o evento de auditoria, consulte [privilegedOperationEvent](../resources/privilegedoperationevent.md). Para filtrar os resultados da consulta, use o OData standard ``$filter`` expressão.
 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 O solicitante precisa ter uma das seguintes funções: _Leitor de segurança_, _Administrador Global_, _Administrador de segurança_ou _Administrador com privilégios de função_.
@@ -280,10 +280,15 @@ Content-length: 547
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List privilegedOperationEvents",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/privilegedoperationevent-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

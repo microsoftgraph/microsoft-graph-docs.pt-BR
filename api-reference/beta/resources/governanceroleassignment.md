@@ -2,15 +2,15 @@
 title: tipo de recurso de governanceRoleAssignment
 description: Representa a atribuição de um usuário ou grupo a uma função.
 localization_priority: Normal
-ms.openlocfilehash: d873b122f319ca82882727f065818b33f7f9d44d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 77a5238aa337dd8d273d3156d285e081c4bc8875
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27882688"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29512679"
 ---
 # <a name="governanceroleassignment-resource-type"></a>tipo de recurso de governanceRoleAssignment
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa a atribuição de um usuário ou grupo a uma função.
 
@@ -32,19 +32,19 @@ Não `POST`, `PUT`, `PATCH`, ou `DELETE` operações são compatíveis com o `ro
 ## <a name="properties"></a>Propriedades
 | Propriedade  | Tipo      |Descrição|
 |:----------|:----------|:----------|
-|id         |Cadeia de caracteres     |A identificação da atribuição de função. Ela está no formato GUID.|
-|resourceId |Cadeia de caracteres     |Obrigatório. A identificação do recurso que a atribuição de função é associada. |
-|roleDefinitionId|Cadeia de caracteres|Obrigatório. A ID da definição de função que a atribuição de função é associada. |
-|subjectId|Cadeia de caracteres       |Obrigatório. A identificação do assunto da qual a atribuição de função é associada. |
-|linkedEligibleRoleAssignmentId|Cadeia de caracteres|Caso se trate de um `active assignment` e criados devido a ativação em um `eligible assignment`, que representa a identificação do que `eligible assignment`; Caso contrário, o valor será `null`. |
+|id         |String     |A identificação da atribuição de função. Ela está no formato GUID.|
+|resourceId |String     |Obrigatório. A identificação do recurso que a atribuição de função é associada. |
+|roleDefinitionId|String|Obrigatório. A ID da definição de função que a atribuição de função é associada. |
+|subjectId|String       |Obrigatório. A identificação do assunto da qual a atribuição de função é associada. |
+|linkedEligibleRoleAssignmentId|String|Caso se trate de um `active assignment` e criados devido a ativação em um `eligible assignment`, que representa a identificação do que `eligible assignment`; Caso contrário, o valor será `null`. |
 |externalId   |Cadeia de caracteres     |A identificação do recurso que é usado para identificar a atribuição de função no provedor externa.|
 |startDateTime|DateTimeOffset|A hora de início da atribuição de função. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |endDateTime|DateTimeOffset|Para uma atribuição de função de não permanente, esse é o tempo em que a atribuição de função será expirada. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|assignmentState|Cadeia de caracteres  |O estado da atribuição. O valor pode ser <ul><li> `Eligible`para atribuição elegível</li><li> `Active`-se diretamente atribuída `Active` pelos administradores, ou ativado em uma atribuição elegível pelos usuários.</li></ul>|
-|memberType|Cadeia de caracteres      |O tipo do membro. O valor pode ser: <ul><li>`Inherited`-a atribuição de função é herdada de um escopo de recurso pai</li><li>`Group`-a atribuição de função não é herdada, mas proveniente a associação de uma atribuição de grupo</li><li>`User`-a atribuição de função é herdada nem nem de atribuição de um grupo.</li></ul>|
+|assignmentState|String  |O estado da atribuição. O valor pode ser <ul><li> `Eligible`para atribuição elegível</li><li> `Active`-se diretamente atribuída `Active` pelos administradores, ou ativado em uma atribuição elegível pelos usuários.</li></ul>|
+|memberType|String      |O tipo do membro. O valor pode ser: <ul><li>`Inherited`-a atribuição de função é herdada de um escopo de recurso pai</li><li>`Group`-a atribuição de função não é herdada, mas proveniente a associação de uma atribuição de grupo</li><li>`User`-a atribuição de função é herdada nem nem de atribuição de um grupo.</li></ul>|
 
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |recurso|[governanceResource](../resources/governanceresource.md)|Somente leitura. O recurso associado à atribuição de função. |
@@ -83,10 +83,15 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "governanceRoleAssignment",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/governanceroleassignment.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

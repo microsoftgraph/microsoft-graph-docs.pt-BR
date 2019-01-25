@@ -4,16 +4,16 @@ description: Uma mensagem que representa uma solicitação de reunião.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 5350b864ee38774f5b329110de6caf41f23dfe37
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 74fa4aa905d1165707a2e41caef4a1e0252a1945
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27981095"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29513960"
 ---
 # <a name="eventmessagerequest-resource-type"></a>tipo de recurso de eventMessageRequest
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Uma mensagem que representa uma solicitação de reunião.
 
@@ -85,19 +85,19 @@ Veja a seguir uma representação JSON do recurso
 |categories|String collection|As categorias associadas à mensagem.|
 |ccRecipients|Coleção [recipient](recipient.md)|Os destinatários Cc: da mensagem.|
 |changeKey|String|A versão da mensagem.|
-|conversationId|String|A ID da conversa à qual o email pertence.|
+|conversationId|Cadeia de caracteres|A ID da conversa à qual o email pertence.|
 |createdDateTime|DateTimeOffset|A data e a hora em que a mensagem foi criada.|
 |endDateTime|[DateTimeTimeZone](datetimetimezone.md)|A hora de término da reunião solicitada.|
 |from|[recipient](recipient.md)|O proprietário da caixa de correio e o remetente da mensagem.|
-|hasAttachments|Boolean|Indica se a mensagem tem anexos.|
+|hasAttachments|Booliano|Indica se a mensagem tem anexos.|
 |id|String|Somente leitura.|
 |importance|String| A importância da mensagem: `Low`, `Normal`, `High`.|
 |inferenceClassification|String| Os valores possíveis são: `Focused` e `Other`.|
 |isDeliveryReceiptRequested|Booliano|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
 |isDraft|Booliano|Indica se a mensagem é um rascunho. Uma mensagem é um rascunho quando ela ainda não foi enviada.|
-|isOutOfDate|Booliano|Indica se esta solicitação de reunião foi feita desatualizada por uma solicitação mais recente.|
-|isRead|Booliano|Indica se a mensagem foi lida.|
-|isReadReceiptRequested|Booliano|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
+|IsOutOfDate|Booliano|Indica se esta solicitação de reunião foi feita desatualizada por uma solicitação mais recente.|
+|isRead|Boolean|Indica se a mensagem foi lida.|
+|isReadReceiptRequested|Boolean|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a mensagem foi alterada pela última vez.|
 |location|[Location](location.md)|O local da reunião solicitada.|
 |meetingMessageType|String| O tipo de mensagem de evento: `None`, `MeetingRequest`, `MeetingCancelled`, `MeetingAccepted`, `MeetingTenativelyAccepted`, `MeetingDeclined`.|
@@ -111,7 +111,7 @@ Veja a seguir uma representação JSON do recurso
 |sender|[recipient](recipient.md)|A conta que é realmente usada para gerar a mensagem.|
 |sentDateTime|DateTimeOffset|A data e a hora em que a mensagem foi enviada.|
 |startDateTime|[DateTimeTimeZone](datetimetimezone.md)|A hora de início da reunião solicitada.|
-|subject|String|O assunto da mensagem.|
+|subject|Cadeia de caracteres|O assunto da mensagem.|
 |toRecipients|Coleção [recipient](recipient.md)|Os destinatários Para: da mensagem.|
 |type|String|O tipo de reunião solicitada: `singleInstance`, `occurence`, `exception`, `seriesMaster`.|
 |uniqueBody|[itemBody](itembody.md)|A parte do corpo da mensagem que é exclusiva para a mensagem atual.|
@@ -129,10 +129,10 @@ Veja a seguir uma representação JSON do recurso
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Get eventMessage](../api/eventmessage-get.md) | [eventMessage](eventmessage.md) |Ler propriedades e relações do objeto eventMessage.|
-|[Criar anexo](../api/eventmessage-post-attachments.md) |[Anexo](attachment.md)| Criar um novo Anexo postando na coleção attachments.|
+|Criar anexo |[Anexo](attachment.md)| Criar um novo Anexo postando na coleção attachments.|
 |[List attachments](../api/eventmessage-list-attachments.md) |Coleção [Attachment](attachment.md)| Obter uma coleção de objetos Attachment.|
 |[Update](../api/eventmessage-update.md) | [eventMessage](eventmessage.md)  |Atualizar o objeto eventMessage. |
-|[Delete](../api/eventmessage-delete.md) | Nenhum |Excluir o objeto eventMessage. |
+|[Delete](../api/eventmessage-delete.md) | Nenhuma |Excluir o objeto eventMessage. |
 |[copy](../api/message-copy.md)|[Message](message.md)||
 |[createForward](../api/message-createforward.md)|[Message](message.md)||
 |[createReply](../api/message-createreply.md)|[Message](message.md)||
@@ -145,10 +145,15 @@ Veja a seguir uma representação JSON do recurso
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "eventMessageRequest resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/eventmessagerequest.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

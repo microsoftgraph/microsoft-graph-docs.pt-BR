@@ -4,16 +4,16 @@ ms.author: dspektor
 ms.date: 10/06/2017
 title: Obtenha a análise
 localization_priority: Normal
-ms.openlocfilehash: 3d85ad32e4a7ce369ba3970e2d540aeeadf8424c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: d1f6b255747cffe7fdccb5d098e73a56151b6245
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27872636"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29516256"
 ---
 # <a name="get-analytics"></a>Obtenha a análise
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Obtenha [itemAnalytics][] sobre os modos de exibição que foi realizada sob este recurso.
 O recurso de **itemAnalytics** é uma maneira conveniente para obter as estatísticas de atividade do `allTime` e o `lastSevenDays`.
@@ -24,7 +24,7 @@ Para um intervalo de tempo personalizado ou um intervalo, use o [getActivitiesBy
 [itemAnalytics]: ../resources/itemanalytics.md
 [getActivitiesByInterval]: ../api/itemactivity-getbyinterval.md
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -78,10 +78,15 @@ Content-type: application/json
 }
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "BaseItem/Get analytics"
-} -->
+  "tocPath": "BaseItem/Get analytics",
+  "suppressions": [
+    "Error: /api-reference/beta/api/itemanalytics-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -3,16 +3,16 @@ title: tipo de recurso de visualInfo
 description: Um tipo complexo para representar a propriedade **visualElements** no objeto de atividade.
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 3bc26d7eb63d07d857783e5392337b88124ec685
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 56d3822c89de074847aeab6c8a0a742ecd7f006f
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27963728"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29514919"
 ---
 # <a name="visualinfo-resource-type"></a>tipo de recurso de visualInfo
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Um tipo complexo para representar a propriedade **visualElements** no objeto de [atividade](../resources/projectrome-activity.md) .
 
@@ -26,9 +26,9 @@ Se não for fornecido um cartão personalizado, será gerado um cartão simple u
 
 |Nome | Tipo | Descrição|
 |:----|:------|:-----------|
-|displayText | Cadeia de caracteres | Obrigatório. Uma breve descrição de texto de atividade de exclusivo do usuário (por exemplo, nome do documento em casos onde uma atividade refere-se a criação de documentos)|
+|displayText | String | Obrigatório. Uma breve descrição de texto de atividade de exclusivo do usuário (por exemplo, nome do documento em casos onde uma atividade refere-se a criação de documentos)|
 |description | Cadeia de caracteres | Opcional. Descrição de texto mais longa da atividade exclusivo do usuário (exemplo: nome, primeira frase e/ou metadados de documentos)|
-|backgroundColor | Cadeia de caracteres | Opcional. Cor de plano de fundo usada para processar a atividade na interface do usuário - cor de marca para a fonte da atividade do aplicativo. Deve ser uma cor hexadecimal válida|
+|BackgroundColor | Cadeia de caracteres | Opcional. Cor de plano de fundo usada para processar a atividade na interface do usuário - cor de marca para a fonte da atividade do aplicativo. Deve ser uma cor hexadecimal válida|
 |content | Objeto sem JSON | Opcional. Parte personalizada de dados - objeto JSON usados para fornecer conteúdo personalizado para renderizar a atividade no UI do Shell do Windows|
 |attribution | [imageInfo](../resources/projectrome-imageinfo.md) | Opcional. Objeto JSON usado para representar um ícone que representa o aplicativo usado para gerar a atividade|
 
@@ -67,10 +67,15 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2017-06-07 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "visualinfo resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/projectrome-visualinfo.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

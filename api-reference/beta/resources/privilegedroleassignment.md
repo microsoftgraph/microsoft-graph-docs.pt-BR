@@ -2,16 +2,16 @@
 title: tipo de recurso de privilegedRoleAssignment
 description: 'Representa uma atribuição de função privilegiado para um usuário específico. '
 localization_priority: Normal
-ms.openlocfilehash: ec6bc34ecd56839c764592ff298475e8648f300b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 479b6d46dc479134fd0abb46b1a9ffe478611a82
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823314"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29515115"
 ---
 # <a name="privilegedroleassignment-resource-type"></a>tipo de recurso de privilegedRoleAssignment
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa uma atribuição de função privilegiado para um usuário específico. 
 
@@ -26,7 +26,7 @@ Representa uma atribuição de função privilegiado para um usuário específic
 |[Delete](../api/privilegedroleassignment-delete.md) | Nenhum |Exclua objeto privilegedRoleAssignment. |
 |[makePermanent](../api/privilegedroleassignment-makepermanent.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|Fazer a atribuição de função como permanente.|
 |[makeEligible](../api/privilegedroleassignment-makeeligible.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|Fazer a atribuição de função como qualificado.|
-|[Minha](../api/privilegedroleassignment-my.md)|coleção [privilegedRoleAssignment](privilegedroleassignment.md)|Obtenha as atribuições de função privilegiado do usuário atual.|
+|[Pessoal](../api/privilegedroleassignment-my.md)|coleção [privilegedRoleAssignment](privilegedroleassignment.md)|Obtenha as atribuições de função privilegiado do usuário atual.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
@@ -35,10 +35,10 @@ Representa uma atribuição de função privilegiado para um usuário específic
 |id|string| O identificador exclusivo para a atribuição de função privilegiado. Somente leitura. É no formato de 'userId_roleId', onde userId é a cadeia de caracteres do GUID para id de usuário do Windows Azure AD e roleId é a cadeia de caracteres do GUID para id de função de administrador do Azure.|
 |isElevated|booliano|**true** se a atribuição de função é ativada. **false** se a atribuição de função é desativada.|
 |resultMessage|string|Mensagem de resultado definido pelo serviço.|
-|roleId|string|Identificador de função. No formato de cadeia de caracteres GUID.|
+|roleId|string|identificador de função No formato de cadeia de caracteres GUID.|
 |userId|string|Identificador de usuário. No formato de cadeia de caracteres GUID.|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |roleInfo|[privilegedRole](privilegedrole.md)| Somente leitura. Anulável. As informações de função associada.|
@@ -69,10 +69,15 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "privilegedRoleAssignment resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/privilegedroleassignment.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

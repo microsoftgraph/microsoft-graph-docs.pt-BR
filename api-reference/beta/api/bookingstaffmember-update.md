@@ -1,20 +1,20 @@
 ---
 title: Atualizar bookingstaffmember
-description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
+description: Atualize as propriedades de um bookingStaffMember no bookingbusiness especificado.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 597647d86df8f34c7fb9a7eba93a5eccc1129f6c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 608580a16d796a4ee1b296c0a19caea110326cff
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27952220"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29514555"
 ---
 # <a name="update-bookingstaffmember"></a>Atualizar bookingstaffmember
 
- > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
- 
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Atualize as propriedades de um [bookingStaffMember](../resources/bookingstaffmember.md) no especificado [bookingbusiness](../resources/bookingbusiness.md).
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -23,7 +23,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  Bookings.ReadWrite.All, Bookings.Manage.All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.   |
-|Aplicativo | Sem suporte.  | 
+|Aplicativo | Sem suporte.  |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +41,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |availabilityIsAffectedByPersonalCalendar|Booliano|True significa que, se o membro da equipe é um usuário do Office 365, a API de reservas usa a calendário pessoal do membro da equipe no Office 365, bem como a propriedade **workingHours** para determinar a disponibilidade. |
-|colorIndex|Int32|Identifica uma cor para representar o membro da equipe. A cor corresponde à paleta de cores na página **detalhes da equipe** no aplicativo reservas.|
+|ColorIndex|Int32|Identifica uma cor para representar o membro da equipe. A cor corresponde à paleta de cores na página **detalhes da equipe** no aplicativo reservas.|
 |displayName|String|O nome do membro da equipe, como exibido aos clientes.|
 |emailAddress|String|O endereço de email do membro da equipe. Isso pode ser em inquilino do Office 365 como a empresa ou em um domínio de email diferentes. Esse endereço de email é usado se a propriedade **sendConfirmationsToOwner** estiver definida como true na diretiva de agendamento dos negócios.|
 |role|string| A função de membro da equipe de negócios. Os valores possíveis são: `guest`, `administrator`, `viewer`, `externalGuest`.|
@@ -69,7 +69,7 @@ Content-type: application/json
             "day":"monday",
             "timeSlots@odata.type":"#Collection(microsoft.graph.bookingWorkTimeSlot)",
             "timeSlots":[
-   
+
             ]
         },
         {
@@ -128,7 +128,7 @@ Content-type: application/json
 }
 ```
 ##### <a name="response"></a>Resposta
-Este é um exemplo de resposta. 
+Este é um exemplo de resposta.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -139,10 +139,15 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update bookingstaffmember",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/bookingstaffmember-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

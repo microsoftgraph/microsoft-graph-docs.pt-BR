@@ -2,23 +2,23 @@
 title: tipo de recurso de stringKeyAttributeMappingSourceValuePair
 description: Representa um par de chave-valor em que a chave é uma cadeia de caracteres e o valor é attributeMappingSource.
 localization_priority: Normal
-ms.openlocfilehash: 24695cc64fd3c240d5416a7b37e9a5d373e5a88a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: ff914c23a238356a821d2902bf18900cf9957548
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805086"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29516214"
 ---
 # <a name="stringkeyattributemappingsourcevaluepair-resource-type"></a>tipo de recurso de stringKeyAttributeMappingSourceValuePair
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa um par de chave-valor em que a chave é uma cadeia de caracteres e o valor é [attributeMappingSource](synchronization-attributemappingsource.md).
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|key|Cadeia de caracteres|O nome do parâmetro.|
+|key|String|O nome do parâmetro.|
 |valor|[attributeMappingSource](synchronization-attributemappingsource.md)|O valor do parâmetro.|
 
 ## <a name="json-representation"></a>Representação JSON
@@ -43,10 +43,15 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "stringKeyAttributeMappingSourceValuePair resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/synchronization-stringkeyattributemappingsourcevaluepair.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

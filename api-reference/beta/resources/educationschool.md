@@ -4,16 +4,16 @@ description: 'Escola A. O recurso **educationSchool** atualmente corresponde a u
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 17a5c3ad2f28e802bb6cad3a97d1cb723b3407d6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 917395324e6ae519af468a4bb4b31056796e1498
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27918242"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29512539"
 ---
 # <a name="educationschool-resource-type"></a>Tipo de recurso educationSchool
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Escola A. O recurso **educationSchool** atualmente corresponde a um recurso [administrativeUnit](administrativeunit.md) e compartilha a mesma ID.  
 
@@ -40,19 +40,19 @@ Esse recurso é um subtipo de [educationOrganization](educationorganization.md).
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|Cadeia de caracteres|GUID desta escola.|
-|displayName| Cadeia de caracteres| Nome de exibição da escola.| 
-|description| Cadeia de caracteres | Descrição da escola.| 
+|id|String|GUID desta escola.|
+|displayName| String| Nome de exibição da escola.| 
+|description| String | Descrição da escola.| 
 |status| string| Somente Leitura. Os valores possíveis são: `inactive`, `active`, `expired`, `deleteable`.|
 |externalSource| string| Somente Leitura.  Os valores possíveis são: `sis`, `manual`, `unknownFutureValue`.|
-|principalEmail| Cadeia de caracteres| Endereço de email da entidade de segurança.|
-|principalName| Cadeia de caracteres | Nome da entidade de segurança.|
-|externalPrincipalId| Cadeia de caracteres | ID da entidade de segurança no sistema de sincronização. |
-|highestGrade|Cadeia de caracteres| Ensino de nível mais alto. |
-|lowestGrade|Cadeia de caracteres| Ensino de nível mais baixo. |
-|schoolNumber|Cadeia de caracteres| Número da escola.|
+|principalEmail| String| Endereço de email da entidade de segurança.|
+|principalName| String | Nome da entidade de segurança.|
+|externalPrincipalId| String | ID da entidade de segurança no sistema de sincronização. |
+|highestGrade|String| Ensino de nível mais alto. |
+|lowestGrade|String| Ensino de nível mais baixo. |
+|schoolNumber|String| Número da escola.|
 |externalId|Cadeia de caracteres| ID da escola no sistema de sincronização. |
-|phone|Cadeia de caracteres| Número de telefone da escola. |
+|phone|String| Número de telefone da escola. |
 |fax|Cadeia de caracteres| Número de fax da escola. |
 |address|[physicalAddress](physicaladdress.md)| Endereço da escola.|
 |createdBy|[identitySet](identityset.md)|Entidade que criou a escola.|
@@ -99,10 +99,15 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "educationSchool resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/educationschool.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

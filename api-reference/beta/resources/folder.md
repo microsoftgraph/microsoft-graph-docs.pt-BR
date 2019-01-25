@@ -4,16 +4,16 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Pasta
 localization_priority: Normal
-ms.openlocfilehash: 98c477ebeda436c57db3eaac5cb062639a2447d2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: af22487f017830481af6f39e113b80009f2e567f
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856494"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29512749"
 ---
 # <a name="folder-resource-type"></a>Tipo de recurso Folder
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 O recurso **Folder** agrupa dados relacionados a pastas em um item em uma única estrutura. [**DriveItems**](driveitem.md) com uma faceta **folder** não nula são contêineres de outros DriveItems.
 
@@ -51,10 +51,15 @@ Para saber mais sobre as facetas de um DriveItem, confira [DriveItem][].
 [folderView]: folderview.md
 [DriveItem]: driveitem.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "folder resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/folder.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

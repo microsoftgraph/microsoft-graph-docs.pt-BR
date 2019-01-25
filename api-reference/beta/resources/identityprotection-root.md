@@ -4,16 +4,16 @@ description: Você pode usar o Microsoft Graph para consultar o recurso de ident
 author: cloudhandler
 localization_priority: Normal
 ms.prod: security
-ms.openlocfilehash: 9c92be83fd3248ad10578446f91b38176913da1a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 597ff7ed156dede995b10f07ee6ac6945745b83c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27953620"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29515094"
 ---
 # <a name="use-the-azure-ad-identity-protection-api-preview"></a>Use a proteção de identidade do Windows Azure AD API (preview)
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Você pode usar o Microsoft Graph para consultar o recurso de [identityRiskEvent](identityriskevent.md) para cada tipo de evento de risco detectado pelo [proteção de identidade do Windows Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-identityprotection). Esses eventos estão disponíveis para clientes com o Windows Azure AD Premium P2. Um subconjunto de eventos está disponível para clientes com o Windows Azure AD Premium P1.
 
@@ -47,3 +47,11 @@ Use as operações a seguir para obter essas informações associadas e eventos:
 
 * [Sobre a proteção de identidade do Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-identityprotection)
 * [Noções básicas sobre proteção de identidade do Windows Azure Active Directory e do Microsoft Graph](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-identityprotection-graph-getting-started)
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/identityprotection-root.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

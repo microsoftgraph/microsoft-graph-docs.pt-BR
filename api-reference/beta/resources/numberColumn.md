@@ -4,16 +4,16 @@ ms.author: rgregg
 ms.date: 09/11/2017
 title: NumberColumn
 localization_priority: Normal
-ms.openlocfilehash: a0f5d13381c82a42159d0802d850d9996aaf8b54
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: cf1f6c6cafd23a5503d645d13e597a8941019fee
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855178"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29512875"
 ---
 # <a name="numbercolumn-resource-type"></a>Tipo de recurso NumberColumn
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 O recurso **numberColumn** em um recurso [columnDefinition](columndefinition.md) indica que os valores da coluna são números.
 
@@ -55,10 +55,15 @@ Aqui está uma representação JSON de um recurso **numberColumn**.
 Observação: **decimalPlaces** e **displayAs** aplicam-se a como os números são processados, não armazenados.
 Essas propriedades podem ser atualizadas.
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/NumberColumn"
-} -->
+  "tocPath": "Resources/NumberColumn",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/numberColumn.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

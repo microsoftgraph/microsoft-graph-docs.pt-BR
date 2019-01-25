@@ -5,16 +5,16 @@ ms.date: 09/11/2017
 title: Lista as listas do SharePoint em um site
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: fa13fc93dcfcfc807671082be43a7c4b4eafd63d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: f7adfeba7f46eb7ed8541405221a1257637c2157
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27957869"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29512441"
 ---
 # <a name="enumerate-lists-in-a-site"></a>Enumerar listas em um site
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Obter a coleção de [listas][] de um [site][].
 
@@ -88,10 +88,15 @@ Para listá-los, inclua `system` na instrução `$select`.
 
 [sistema]: ../resources/systemfacet.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Lists/Enumerate"
-} -->
+  "tocPath": "Lists/Enumerate",
+  "suppressions": [
+    "Error: /api-reference/beta/api/list-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

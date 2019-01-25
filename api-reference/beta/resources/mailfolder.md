@@ -4,16 +4,16 @@ description: Uma pasta de email na caixa de correio de um usuário, como Caixa d
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: eaccaf02a3d81d184b3c0bf9eae737790c2709d7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 1cd48c866ea6384aa18631732065380e898b8bf7
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27923254"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29513085"
 ---
 # <a name="mailfolder-resource-type"></a>tipo de recurso mailFolder
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Uma pasta de email na caixa de correio de um usuário, como Caixa de entrada e Rascunhos. As pastas de email podem conter mensagens, outros itens do Outlook e pastas de correio filho.
 
@@ -34,15 +34,15 @@ Nomes conhecidos funcionam independentemente da localidade da caixa de correio d
 |:-----------------------|:------------|
 | arquivo morto | As mensagens de pasta de arquivo morto são enviadas ao usar o recurso de arquivamento One_Click nos clientes do Outlook com suporte. **Observação:** isso não é o mesmo que o recurso de caixa de correio de arquivamento do Exchange online. |
 | desorganização | As mensagens de baixa prioridade de pasta desorganização são movidas para ao usar o recurso desorganização. |
-| conflitos | A pasta que contém itens conflitantes na caixa de correio. |
+| Conflicts | A pasta que contém itens conflitantes na caixa de correio. |
 | conversationhistory | A pasta onde o Skype salva conversas de mensagens Instantâneas (se Skype estiver configurada para fazê-lo). |
 | deleteditems | Os itens da pasta são movidos para quando eles são excluídos. |
 | rascunhos | A pasta que contém as mensagens não enviadas. |
-| caixa de entrada | A pasta de caixa de entrada. |
-| junkemail | A pasta de lixo eletrônico. |
+| Caixa de Entrada | A pasta Caixa de Entrada. |
+| junkemail | A pasta Lixo Eletrônico. |
 | localfailures | A pasta que contém itens que existem no cliente local, mas não puderam ser carregados no servidor. |
 | msgfolderroot | A pasta "Superior do armazenamento de informações". Essa pasta é a pasta pai para as pastas que são exibidos em clientes de email normal, como a caixa de entrada. |
-| caixa de saída | A pasta caixa de saída. |
+| caixa de saída | A pasta Caixa de Saída. |
 | recoverableitemsdeletions | A pasta que contém itens excluída: excluído da pasta Itens excluídos ou por pressionar shift + delete no Outlook. Essa pasta não é visível em qualquer cliente de email do Outlook, mas os usuários finais podem interagir com ele por meio do recurso de **Recuperar itens excluídos do servidor** do Outlook ou do Outlook na web. |
 | agendado | A pasta que contém as mensagens que são agendadas reaparecem na caixa de entrada usando o recurso de agendamento no Outlook para iOS. |
 | SearchFolders | A pasta pai para todas as pastas de pesquisa definido na caixa de correio do usuário. |
@@ -75,12 +75,12 @@ Nomes conhecidos funcionam independentemente da localidade da caixa de correio d
 | Propriedade | Tipo | Descrição |
 |:---------|:-----|:------------|
 |childFolderCount|Int32|O número de mailFolders filho imediatas na mailFolder atual.|
-|displayName|Cadeia de caracteres|O nome de exibição da mailFolder.|
-|id|Cadeia de caracteres|Identificador exclusivo do mailFolder.|
+|displayName|String|O nome de exibição da mailFolder.|
+|id|String|Identificador exclusivo do mailFolder.|
 |parentFolderId|String|O identificador exclusivo de mailFolder do mailFolder pai.|
 |totalItemCount|Int32|O número de itens na mailFolder.|
 |unreadItemCount|Int32|O número de itens na mailFolder marcados como não lidos.|
-|wellKnownName|Cadeia de caracteres|O nome da pasta conhecido para a pasta. Os valores possíveis são listados acima. Essa propriedade só é definida para pastas padrão criadas pelo Outlook. Para outras pastas, essa propriedade é **null**.|
+|wellKnownName|String|O nome da pasta conhecido para a pasta. Os valores possíveis são listados acima. Essa propriedade só é definida para pastas padrão criadas pelo Outlook. Para outras pastas, essa propriedade é **null**.|
 
 **Acessar contagens de itens de forma eficiente**
 
@@ -93,7 +93,7 @@ https://outlook.office.com/api/beta/me/folders/inbox/messages?$count=true&$filte
 
 Pastas de email no Outlook podem conter mais de um tipo de itens, por exemplo, a caixa de entrada pode conter itens que são diferentes dos itens de email da solicitação de reunião. `TotalItemCount`e `UnreadItemCount` incluir itens em uma pasta de email, independentemente de seus tipos de item.
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 
 | Relação | Tipo | Descrição |
 |:-------------|:-----|:------------|
@@ -144,10 +144,15 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "mailFolder resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/mailfolder.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

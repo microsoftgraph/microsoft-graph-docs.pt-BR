@@ -4,16 +4,16 @@ description: Uma agregação de informações sobre uma pessoa em email, contato
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 7f0f3c71769d2ad8927f634b065253cf118316b4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 32a2c9905ab52e9b229bb8673fb4a84d90a706ac
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27929379"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29512399"
 ---
 # <a name="person-resource-type"></a>Tipo de recurso person
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Uma agregação de informações sobre uma pessoa em email, contatos e redes sociais. Pessoas podem ser contatos locais, contatos de redes sociais, diretório da sua organização e pessoas de comunicações recentes (por exemplo, email e Skype).
 
@@ -35,7 +35,7 @@ Uma agregação de informações sobre uma pessoa em email, contatos e redes soc
 |givenName|string|O nome fornecido da pessoa.|
 |id|string|O identificador exclusivo da pessoa. Somente leitura.|
 |isFavorite|booliano|`true` se o usuário tiver sinalizado essa pessoa como um favorito.|
-|mailboxType|string|O tipo de caixa de correio que é representado por um endereço de email da pessoa.|
+|MailboxType|string|O tipo de caixa de correio que é representado por um endereço de email da pessoa.|
 |officeLocation|string|O local do escritório da pessoa.|
 |personNotes|string|As anotações de forma livre que o usuário fez sobre essa pessoa.|
 |personType|string|O tipo da pessoa, por exemplo lista de distribuição.|
@@ -44,7 +44,7 @@ Uma agregação de informações sobre uma pessoa em email, contatos e redes soc
 |profession|string|A profissão da pessoa.|
 |sources|coleção [personDataSource](persondatasource.md)|As fontes de dados do usuário provêm, por exemplo, diretório ou contatos do Outlook.|
 |surname|string|O sobrenome da pessoa.|
-|título|string|Título da pessoa.|
+|title|string|Título da pessoa.|
 |userPrincipalName|string|O nome UPN da pessoa. O UPN é um nome de logon para a pessoa ao estilo da Internet com base na [RFC 822](https://www.ietf.org/rfc/rfc0822.txt) padrão da Internet. Por convenção, ele deve ser mapeado para o nome de email da pessoa. O formato geral é alias@domínio.|
 |websites|Coleção [website](website.md)|Os sites da pessoa.|
 |yomiCompany|string|O nome japonês fonético da empresa da pessoa.|
@@ -94,10 +94,15 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "person resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/person.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

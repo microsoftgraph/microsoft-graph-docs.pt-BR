@@ -4,16 +4,16 @@ ms.author: dspektor
 ms.date: 09/14/2017
 title: RestoreAction
 localization_priority: Normal
-ms.openlocfilehash: 25cfe884d74b54e1cc7881415009e2df0daafa11
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: f04f9811cefba60d0b06b99605774fb8fbfa0125
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831672"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29514072"
 ---
 # <a name="restoreaction-resource-type"></a>Tipo de recurso RestoreAction
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A presença do recurso **RestoreAction** em uma [**itemActivity**][activity] indica que a atividade restaurou um item.
 
@@ -42,10 +42,15 @@ Nenhum. Esta faceta tem um valor nulo ou não nulo e não contém propriedades.
 
 Registros de atividade de item atualmente só estão disponíveis no SharePoint e no OneDrive for Business.
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The RestoreAction object provides information about an activity that restored an item.",
   "keywords": "activities,activity,action,restore,undelete",
   "section": "documentation",
-  "tocPath": "Resources/RestoreAction"
-} -->
+  "tocPath": "Resources/RestoreAction",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/restoreaction.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

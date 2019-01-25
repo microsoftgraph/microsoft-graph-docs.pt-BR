@@ -5,16 +5,16 @@ ms.date: 09/14/2017
 title: MentionAction
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 48ac49c80a39fd6bc51b048a8eb7dab6e62da810
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 9101ffed094fd78189b73eab511be88c8bf449de
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27974137"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29513008"
 ---
 # <a name="mentionaction-resource-type"></a>Tipo de recurso MentionAction
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 O recurso **MentionAction** fornece informações sobre um [atividade][] que mencionou pessoas.
 
@@ -46,10 +46,15 @@ O recurso **MentionAction** fornece informações sobre um [atividade][] que men
 
 Registros de atividade de item atualmente só estão disponíveis no SharePoint e no OneDrive for Business.
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The MentionAction object provides information about who was mentioned during an activity.",
   "keywords": "activities,activity,action,mention",
   "section": "documentation",
-  "tocPath": "Resources/MentionAction"
-} -->
+  "tocPath": "Resources/MentionAction",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/mentionaction.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

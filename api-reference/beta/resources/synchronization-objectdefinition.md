@@ -2,16 +2,16 @@
 title: tipo de recurso de objectDefinition
 description: Descreve um objeto e seus atributos. Definições de objeto fazem parte do directoryDefinition, que é atualizado como parte do synchronizationSchema.
 localization_priority: Normal
-ms.openlocfilehash: 2d5e7a12f06886ae3cbdad6a5f2f98907aafca74
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: d8182cad44deac156c077e977551abc9c31c7d25
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866077"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29514128"
 ---
 # <a name="objectdefinition-resource-type"></a>tipo de recurso de objectDefinition
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Descreve um objeto e seus atributos. Definições de objeto fazem parte do [directoryDefinition](synchronization-directorydefinition.md), que é atualizado como parte do [synchronizationSchema](synchronization-synchronizationschema.md).
 
@@ -20,8 +20,8 @@ Descreve um objeto e seus atributos. Definições de objeto fazem parte do [dire
 | Propriedade      | Tipo      | Descrição    |
 |:--------------|:----------|:---------------|
 |attributes     |coleção [attributeDefinition](synchronization-attributedefinition.md)    | Define os atributos do objeto. |
-|metadados       |coleção [metadataEntry](synchronization-metadataentry.md)   |Propriedades adicionais de extensão. A menos que mencionado explicitamente, valores de metadados não devem ser alterados.|
-|name           |Cadeia de caracteres     |Nome do objeto. Deve ser exclusivo dentro de uma definição de diretório. Não anulável.|
+|Metadata       |coleção [metadataEntry](synchronization-metadataentry.md)   |Propriedades adicionais de extensão. A menos que mencionado explicitamente, valores de metadados não devem ser alterados.|
+|name           |String     |Nome do objeto. Deve ser exclusivo dentro de uma definição de diretório. Não anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -438,10 +438,15 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "objectDefinition resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/synchronization-objectdefinition.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

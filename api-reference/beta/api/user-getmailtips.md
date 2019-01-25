@@ -4,18 +4,18 @@ description: Obter as Dicas de E-mail de um ou mais destinatários como disponí
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 899524a9db73a202901800804c6061289f32f3fb
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: e3397bade518cde6e17759096601f364f84e918e
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27958121"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29516137"
 ---
 # <a name="user-getmailtips"></a>usuário: getMailTips
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha dicas de email de um ou mais destinatários conforme disponível ao entrou no [usuário](../resources/user.md).
+Obter as Dicas de E-mail de um ou mais destinatários como disponíveis para o usuário conectado.
 
 Observe que, tornando uma `POST` chamada para o `getMailTips` ação, você poderá solicitar tipos específicos de dicas de email a ser retornado por mais de um destinatário de uma só vez. As dicas de email solicitadas são retornadas em uma coleção de [dicas de email](../resources/mailtips.md) .
 
@@ -128,10 +128,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "user: getMailTips",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-getmailtips.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

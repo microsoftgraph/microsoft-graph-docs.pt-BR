@@ -4,16 +4,16 @@ description: 'Tipo complexo que contém as propriedades de itens compartilhados.
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: add63a89a451b742778dda1d6d313d58f675a642
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 3fff669b2b337e9566cd41a7cd5eb5ab73a84944
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27918760"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29512266"
 ---
 # <a name="sharingdetail-resource-type"></a>tipo de recurso de sharingDetail
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Tipo complexo que contém as propriedades de itens [compartilhados](insights-shared.md) . 
 
@@ -35,7 +35,15 @@ Veja a seguir uma representação JSON do recurso
 | Propriedade              | Tipo          | Descrição  |
 | -------------         |-----------    | -------------|
 | sharedDateTime        | DateTimeOffset| A data e hora que o arquivo foi última compartilhado. O carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `2014-01-01T00:00:00Z`. Somente leitura.  |
-| sharingSubject        | Cadeia de caracteres          | O assunto com a qual o documento foi compartilhado. |
-| sharingType             | Cadeia de caracteres        | Determina a maneira como o documento foi compartilhada, pode ser um "Link", por "Anexo", "Grupo", "Site".     |
+| sharingSubject        | String          | O assunto com a qual o documento foi compartilhado. |
+| SharingType             | String        | Determina a maneira como o documento foi compartilhada, pode ser um "Link", por "Anexo", "Grupo", "Site".     |
 | sharedBy                | [insightIdentity](insights-insightidentity.md)      | O usuário que compartilhado do documento.  |
 | sharingReference        | [resourceReference](insights-resourcereference.md)      |  |
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/insights-sharingdetail.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

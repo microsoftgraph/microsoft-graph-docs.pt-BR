@@ -2,16 +2,16 @@
 title: tipo de recurso de privilegedRoleSummary
 description: As estatísticas de resumida de uma determinada função.
 localization_priority: Normal
-ms.openlocfilehash: b74b562a992f7795f3ae8e317608f1e370bc2a4e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 2ed34f556f52c41729bfa108fbb6eb0c608f6b67
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858615"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29513736"
 ---
 # <a name="privilegedrolesummary-resource-type"></a>tipo de recurso de privilegedRoleSummary
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 As estatísticas de resumida de uma determinada função.
 
@@ -32,7 +32,7 @@ As estatísticas de resumida de uma determinada função.
 |status|string| Os valores possíveis são: `ok` e `bad`. O valor depende a proporção entre (managedCount / usersCount). Se a taxa for menor que um limite predefinido, `ok` é retornado. Caso contrário, `bad` é retornado.|
 |usersCount|int32|O número de usuários que são atribuídos com a função.|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 Nenhum
 
 
@@ -62,10 +62,15 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "privilegedRoleSummary resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/privilegedrolesummary.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
