@@ -4,16 +4,16 @@ description: Envios pertencentes a uma atribuição. Um envio representa os recu
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 9cbfaa46d979e3796ae9128e212bfaa1f6bf8453
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: aeeb1355da2ffcb0ebf561af2ecd15ac93221e26
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27920874"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29521422"
 ---
 # <a name="educationsubmission-resource-type"></a>tipo de recurso de educationSubmission
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Envios pertencentes a uma atribuição. Um envio representa os recursos que um turn individual (ou de grupo) para uma atribuição e o nível/feedback que é retornado.
 Envios são criados automaticamente quando uma atribuição é publicada. O envio possui duas listas de recursos. Recursos representam os grupos de usuários/trabalhando área enquanto os recursos enviados representam os recursos que ativamente foram ativados por alunos.  
@@ -28,8 +28,8 @@ Envios são criados automaticamente quando uma atribuição é publicada. O envi
 |[Lista de recursos](../api/educationsubmission-list-resources.md) |coleção [educationSubmissionResource](educationsubmissionresource.md)| Obtenha uma coleção de objetos **educationSubmissionResource** .|
 |[Lista submittedResources](../api/educationsubmission-list-submittedresources.md) |coleção [educationSubmissionResource](educationsubmissionresource.md)| Obtenha uma coleção de objetos **educationSubmissionResource** .|
 |[Update](../api/educationsubmission-update.md) | [educationSubmission](educationsubmission.md) |Atualize um objeto **educationSubmission** . |
-|[Retornar](../api/educationsubmission-return.md)|[educationSubmission](educationsubmission.md)|Professor usa o retorno para indicar que as notas/comentários podem ser exibidos a student.|
-|[Enviar](../api/educationsubmission-submit.md)|[educationSubmission](educationsubmission.md)|Um estudante usa Enviar para ativar na atribuição. Isso irá copiar os recursos para a pasta **submittedResources** para classificação e atualiza o status.|
+|RETURN|[educationSubmission](educationsubmission.md)|Professor usa o retorno para indicar que as notas/comentários podem ser exibidos a student.|
+|submit|[educationSubmission](educationsubmission.md)|Um estudante usa Enviar para ativar na atribuição. Isso irá copiar os recursos para a pasta **submittedResources** para classificação e atualiza o status.|
 |[Unsubmit](../api/educationsubmission-unsubmit.md)|[educationSubmission](educationsubmission.md)|Um estudante usa o unsubmit para mover o estado do envio do back enviado para o trabalho. Isso irá copiar os recursos para a pasta **workingResources** para classificação e atualiza o status.|
 
 ## <a name="properties"></a>Propriedades
@@ -37,20 +37,20 @@ Envios são criados automaticamente quando uma atribuição é publicada. O envi
 |:---------------|:--------|:----------|
 |comentários|[educationFeedback](educationfeedback.md)|Contém a propriedade de comentários que armazena as notas do professor volta aos alunos.|
 |grade|[educationAssignmentGrade](educationassignmentgrade.md)|Contém as informações de nível que um professor atribui a esse envio.|
-|id|Cadeia de caracteres| Somente leitura.|
-|destinatário|[educationSubmissionRecipient](educationsubmissionrecipient.md)|Este envio é atribuído à.|
+|id|String| Somente leitura.|
+|Recipient|[educationSubmissionRecipient](educationsubmissionrecipient.md)|Este envio é atribuído à.|
 |releasedBy|[identitySet](identityset.md)|Usuário que migraram o status de envio esta liberada.|
 |releasedDateTime|DateTimeOffset|Momento específico quando o envio foi lançado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |returnedBy|[identitySet](identityset.md)|Usuário que migraram o status deste envio a ser retornado.|
 |returnedDateTime|DateTimeOffset|Momento específico quando o envio foi retornado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|resourcesFolderUrl|Cadeia de caracteres|Pasta onde todos os recursos de arquivo para o envio precisam ser armazenados.|
+|resourcesFolderUrl|String|Pasta onde todos os recursos de arquivo para o envio precisam ser armazenados.|
 |status|string| Somente Leitura. Os valores possíveis são: `working`, `submitted`, `released`, `returned`.|
 |submittedBy|[identitySet](identityset.md)|Usuário que o recurso são movidas para o estado enviado.|
 |submittedDateTime|DateTimeOffset|Momento específico quando o envio foi movido para o estado enviado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |unsubmittedBy|[identitySet](identityset.md)|Usuários que migraram do recurso de enviados para o estado de trabalho.|
 |unsubmittedDateTime|DateTimeOffset|Momento específico quando o envio foi movido de enviados para o estado de trabalho. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |recursos|coleção [educationSubmissionResource](educationsubmissionresource.md)| Anulável.|
@@ -87,10 +87,15 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "educationSubmission resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/educationsubmission.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

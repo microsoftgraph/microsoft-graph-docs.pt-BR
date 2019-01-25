@@ -4,16 +4,16 @@ description: Crie uma cópia de uma equipe. Esta operação também cria uma có
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4fb3769db0df6d2fc30d995098daee19b49e83b7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 5ef317d004e3355f9b40fc44232b7c594a3e45a7
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27958338"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526162"
 ---
 # <a name="clone-a-team"></a>Como clonar uma equipe
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Crie uma cópia de uma [equipe](../resources/team.md). Esta operação também cria uma cópia do [grupo](../resources/group.md)correspondente.
 Você pode especificar quais partes da equipe a ser clonada:
@@ -29,7 +29,7 @@ Quando as guias são clonados, eles são colocados em um estado não configurado
 A clonagem é uma operação de execução longa.
 Depois que o clone POST retorna, você precisará fazer a [operação](../resources/teamsasyncoperation.md) para verificar se ele está "em execução" ou "sucedidas" ou "Falha". Você deve continuar GET até que o status não é "executando". O atraso recomendado entre obtém é 5 segundos.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -58,9 +58,9 @@ POST /teams/{id}/clone
 |classificação|Cadeia de caracteres (opcional)|Descreve uma classificação para o grupo (por exemplo, o impacto comercial baixa, média ou alta). Os valores válidos para essa propriedade são definidos com a criação de um valor de [configuração](../resources/directorysetting.md) de ClassificationList, com base na [definição de modelo](../resources/directorysettingtemplate.md). Se a classificação não for especificada, a classificação será copiada do team/grupo original.|
 |description|Cadeia de caracteres (opcional)|Uma descrição opcional para o grupo. Se essa propriedade não for especificada, ele será deixado em branco.|
 |displayName|String|O nome de exibição do grupo. Essa propriedade é obrigatória quando um grupo é criado e não pode ser apagado durante atualizações. Oferece suporte a $filter e $orderby.|
-|mailNickname|Cadeia de caracteres|O alias de email para o grupo, exclusivo na organização. Esta propriedade deve ser especificada quando um grupo é criado. Oferece suporte a $filter. Se essa propriedade não for especificada, ele será calculado de displayName. Problema conhecido: esta propriedade é ignorada no momento.|
+|mailNickname|String|O alias de email do grupo, exclusivo na organização. Essa propriedade deve ser especificada quando um grupo é criado. Oferece suporte a $filter. Se essa propriedade não for especificada, ele será calculado de displayName. Problema conhecido: esta propriedade é ignorada no momento.|
 |partsToClone| [clonableTeamParts](../resources/clonableteamparts.md) |Uma lista separada por vírgulas das partes a ser clonada. Partes legais são "apps, guias, configurações, canais, membros".|
-|visibilidade|[teamVisibilityType](../resources/teamvisibilitytype.md) (opcional)| Especifica a visibilidade do grupo. Os valores possíveis são: **particular**e **público**. Se a visibilidade não for especificada, será copiada a visibilidade do team/grupo original. Se a equipe que está sendo clonado é uma equipe **educationClass** , o parâmetro visibilidade será ignorado e visibilidade do novo grupo será definida como HiddenMembership.|
+|visibility|[teamVisibilityType](../resources/teamvisibilitytype.md) (opcional)| Especifica a visibilidade do grupo. Os valores possíveis são: **particular**e **público**. Se a visibilidade não for especificada, será copiada a visibilidade do team/grupo original. Se a equipe que está sendo clonado é uma equipe **educationClass** , o parâmetro visibilidade será ignorado e visibilidade do novo grupo será definida como HiddenMembership.|
 
 ## <a name="response"></a>Resposta
 
@@ -103,10 +103,15 @@ Content-Length: 0
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create Team",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/team-clone.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

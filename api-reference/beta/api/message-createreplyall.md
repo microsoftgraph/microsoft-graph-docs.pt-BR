@@ -4,16 +4,16 @@ description: 'Criar um rascunho de uma mensagem de responder a todos para inclui
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 7f0b2631f02a94a7627e96e24308b135d70d20e1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 8d42517daa5c8242f28c6dfb3cb4d508b2667ed5
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27922168"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29528575"
 ---
 # <a name="message-createreplyall"></a>message: createReplyAll
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Crie um rascunho de uma mensagem de responder a todos para incluir um comentário ou atualizar as propriedades de mensagem, todas em uma chamada de **createReplyAll** . Em seguida, você pode [Atualizar](../api/message-update.md) ou [Enviar](../api/message-send.md) o rascunho.
 
@@ -24,7 +24,7 @@ Crie um rascunho de uma mensagem de responder a todos para incluir um comentári
 propriedades **replyTo** e **toRecipients** e não os destinatários nas propriedades **do** e **toRecipients** . 
 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -52,7 +52,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|comment|Cadeia de caracteres|Um comentário a incluir. Não pode ficar vazio.|
+|comment|String|Um comentário a incluir. Não pode ficar vazio.|
 |message|[message](../resources/message.md)|Quaisquer propriedades graváveis ​​a serem atualizadas na mensagem de resposta a todos.|
 
 ## <a name="response"></a>Resposta
@@ -60,7 +60,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [message](../resources/message.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-O exemplo a seguir cria um rascunho para responder a todos e adiciona um anexo e o comentário todas em **createReplyAll** de uma chamada.
+O exemplo a seguir cria um rascunho de resposta a todos e adiciona um anexo e comentário, tudo em uma única chamada **CreateReplyAll**.
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 <!-- {
@@ -132,10 +132,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "message: createReplyAll",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/message-createreplyall.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,16 +4,16 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: SharedDriveItem
 localization_priority: Normal
-ms.openlocfilehash: d20656351725f23d4fd4c00b65fdc88fe2f449b8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 22e449d725b94b7be458261e82cfde0b5d6fdf9c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853064"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524118"
 ---
 # <a name="shareddriveitem-resource-type"></a>Tipo de recurso SharedDriveItem
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 O recurso **sharedDriveItem** é retornado ao se usar a API [Shares](../api/shares-get.md) para acessar um [driveItem](driveitem.md) compartilhado.
 
@@ -61,7 +61,7 @@ O recurso **sharedDriveItem** é derivado de [**baseItem**](baseitem.md) e herda
 | **driveItem**     | [**driveItem**][driveItem] | Usado para acessar o **driveItem** subjacente
 | **list**          | [**list**][list]           | Usado para acessar a **lista** subjacente
 | **listItem**      | [**listItem**][listItem]   | Usado para acessar o **listItem** subjacente
-| **permission**    | [**permissão**][permission] | Usado para acessar a **permissão** que representa o link subjacente de compartilhamento
+| **permission**    | **Permissão** | Usado para acessar a **permissão** que representa o link subjacente de compartilhamento
 | **site**          | [**site**][site]           | Usado para acessar o **site** subjacente
 
 Como alternativa, para **driveItems** compartilhados de contas pessoais do OneDrive, as relações a seguir também podem ser usadas.
@@ -87,10 +87,15 @@ Como alternativa, para **driveItems** compartilhados de contas pessoais do OneDr
 
 Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.md).
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Share resource returns information about a shared item or collection of items.",
   "keywords": "share,shared,sharing root,shared files, shared items",
   "section": "documentation",
-  "tocPath": "Resources/Share"
-} -->
+  "tocPath": "Resources/Share",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/shareddriveitem.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,21 +4,21 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Permissão
 localization_priority: Normal
-ms.openlocfilehash: 34798437f1bf27c68c390b0f04618985de5cecf3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 6a5a0af9c95900232ff87aa7aedb731a83a91cc5
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843313"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29518846"
 ---
-# <a name="permission-resource-type"></a>tipo de recurso de permissão
+# <a name="permission-resource-type"></a>Tipo de recurso permission
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O recurso de **permissão** fornece informações sobre um compartilhamento permissões concedida para um recurso de [driveItem](driveitem.md) .
+O recurso **Permission** fornece informações sobre uma permissão de compartilhamento concedida a um recurso [DriveItem](driveitem.md).
 
 As permissões de compartilhamento têm várias formas diferentes.
-O recurso de **permissão** representa esses formulários diferentes por meio de facetas no recurso.
+O recurso **Permission** representa estes diferentes formatos por meio de facetas do recurso.
 
 >**Observação:** OneDrive para negócios e SharePoint bibliotecas de documentos não retornou a propriedade **inheritedFrom** .
 
@@ -69,9 +69,9 @@ Veja a seguir uma representação JSON do recurso.
 | inheritedFrom       | [ItemReference][]           | Fornece uma referência para o ancestral da permissão atual, se ela for herdada de um ancestral. Somente leitura.
 | vínculo                | [SharingLink][]             | Fornece os detalhes do link de permissão atual, caso se trate de permissões de tipo de link. Somente leitura.
 | funções               | Collection(String)          | O tipo de permissão, por exemplo, `read`. Veja abaixo a lista completa de funções. Somente leitura.
-| shareId             | String                      | Um token exclusivo que pode ser usado para acessar este item compartilhado via o **[compartilha API][]**. Somente leitura.
+| shareId             | String                      | Um token exclusivo que pode ser usado para acessar esse item compartilhado por meio da ** [API][] Shares**. Somente leitura.
 | expirationDateTime  | DateTimeOffset              | Um formato AAAA-MM-ddTHH:mm:ssZ de DateTimeOffset indica a hora de expiração da permissão. DateTime.MinValue indica que existem é nenhum vencimento definido para esta permissão. Opcional.
-| hasPassword         | Booliano                     | Isso indica que se a senha é definida para esta permissão, ele só Mostrar em resposta. Opcional e somente leitura e para OneDrive pessoal somente.
+| HasPassword         | Booliano                     | Isso indica que se a senha é definida para esta permissão, ele só Mostrar em resposta. Opcional e somente leitura e para OneDrive pessoal somente.
 
 ### <a name="roles-enumeration-values"></a>Valores de enumeração de funções
 
@@ -99,7 +99,7 @@ Você pode usar a [Convidar][] API para criar um link que funciona somente para 
 
 Aqui estão alguns exemplos de links de compartilhamento.
 
-### <a name="view-link"></a>Exibir link
+### <a name="view-link"></a>Link de exibição
 
 Este link Exibir fornece acesso somente leitura para qualquer pessoa com o link.
 
@@ -240,10 +240,15 @@ Depois que o convite de compartilhamento tiver sido resgatado por um usuário, a
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The permission object provides information about permissions and roles and sharing information.",
   "keywords": "sharing,permissions,read,write,acl",
   "section": "documentation",
-  "tocPath": "Resources/Permission"
-} -->
+  "tocPath": "Resources/Permission",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/permission.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

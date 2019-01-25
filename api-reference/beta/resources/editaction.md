@@ -4,16 +4,16 @@ ms.author: dspektor
 ms.date: 09/14/2017
 title: EditAction
 localization_priority: Normal
-ms.openlocfilehash: 78e4d1aff2003cc6d23580f4e52b46667cf6a9e0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: e319f6889b520f90d9414c4115060edbe2e2f0cc
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27841703"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526764"
 ---
 # <a name="editaction-resource-type"></a>Tipo de recurso EditAction
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A presença do recurso **EditAction** em uma [**itemActivity**][activity] indica que a atividade editou um item.
 
@@ -42,10 +42,15 @@ Nenhum. Esta faceta tem um valor nulo ou não nulo e não contém propriedades.
 
 Registros de atividade de item atualmente só estão disponíveis no SharePoint e no OneDrive for Business.
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The EditAction object provides information about an activity that edited an item.",
   "keywords": "activities,activity,action,edit,modify",
   "section": "documentation",
-  "tocPath": "Resources/EditAction"
-} -->
+  "tocPath": "Resources/EditAction",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/editaction.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

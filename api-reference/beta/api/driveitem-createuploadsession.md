@@ -5,16 +5,16 @@ ms.date: 09/10/2017
 title: Upload de arquivos retomável
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: bfab657f2127b730fd361a17b8fd60e9325984ed
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4b121fb2f1cbeda13cd67f3f37ba06c67304e6ee
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27936827"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525336"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>Carregar arquivos grandes com uma sessão de upload
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Crie uma sessão de upload para permitir que seu aplicativo carregue arquivos até o tamanho máximo de arquivo. Uma sessão de upload permite que seu aplicativo carregue intervalos do arquivo em solicitações de API sequenciais, permitindo que a transferência seja retomada se uma conexão for interrompida enquanto o upload estiver em andamento.
 
@@ -95,7 +95,7 @@ O exemplo a seguir controla o comportamento se o nome do arquivo já é utilizad
 
 | Propriedade             | Tipo               | Descrição
 |:---------------------|:-------------------|:---------------------------------
-| description          | Cadeia de caracteres             | Fornece uma descrição do usuário visíveis do item. Leitura e gravação. Somente em OneDrive pessoal.
+| description          | String             | Fornece uma descrição do item visível para o usuário. Leitura e gravação. Somente no OneDrive Personal
 | name                 | String             | O nome do item (nome do arquivo e extensão). Leitura e gravação.
 
 ### <a name="request"></a>Solicitação
@@ -406,9 +406,14 @@ Confira o tópico [Respostas de erro][error-response] para saber detalhes sobre 
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Upload large files using an upload session.",
   "keywords": "upload,large file,fragment,BITS",
-  "section": "documentation"
-} -->
+  "section": "documentation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-createuploadsession.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

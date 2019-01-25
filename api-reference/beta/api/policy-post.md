@@ -2,22 +2,22 @@
 title: Criar política
 description: Crie um novo objeto de diretiva especificando o nome para exibição, tipo de política e descrição da política.
 localization_priority: Normal
-ms.openlocfilehash: 4850b2899bfd9add703af912f16602960b2657f4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 30a311b45f9705a07b62541a4f3a110daade09fa
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831231"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29527693"
 ---
 # <a name="create-policy"></a>Criar política
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Crie um novo objeto de [diretiva](../resources/policy.md) especificando o nome para exibição, tipo de política e descrição da política.
 
 >Observação: Os detalhes da diretiva serão validados antes de serem armazenados. Se ele não passar na validação, um 400 Solicitação incorreta será retornado.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -44,9 +44,9 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|definição|Cadeia de caracteres|A versão de cadeia de caracteres do objeto de [diretiva](../resources/policy.md) .|
-|displayName|Cadeia de caracteres|Um nome personalizado para a política.|
-|type|Cadeia de caracteres|Especifica o tipo de política. No momento deve ser "TokenLifetimePolicy"|
+|Definição|String|A versão de cadeia de caracteres do objeto de [diretiva](../resources/policy.md) .|
+|displayName|String|Um nome personalizado para a política.|
+|type|String|Especifica o tipo de política. No momento deve ser "TokenLifetimePolicy"|
 
 ## <a name="response"></a>Resposta
 
@@ -91,10 +91,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "message: createReply",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/policy-post.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

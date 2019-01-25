@@ -4,16 +4,16 @@ description: Exclui um domínio usando uma operação assíncrona.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6c3d942352a0db20d6e46a4b00686ad948bd6798
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 5a1a2b2510f0c79f2be4e70deb9efabc65f8dfc4
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27965121"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29527686"
 ---
 # <a name="domain-forcedelete"></a>domínio: forceDelete
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Exclui um domínio usando uma operação assíncrona.
 
@@ -31,7 +31,7 @@ As seguintes ações são executadas como parte dessa operação:
 
 Após a exclusão de domínio for concluído, as operações de API para o domínio excluído retornará um código de resposta HTTP 404. Para verificar a exclusão de um domínio, você pode executar um [domínio de obter](domain-get.md). Se o domínio foi excluído com êxito, será retornado um código de resposta HTTP 404 na resposta.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -99,10 +99,15 @@ HTTP/1.1 200 OK
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "domain: forcedelete",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/domain-forcedelete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

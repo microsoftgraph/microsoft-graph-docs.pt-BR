@@ -2,16 +2,16 @@
 title: tipo de recurso appRole
 description: Representa uma função de aplicativo que podem ser solicitados por um aplicativo cliente chamar outro aplicativo ou que podem ser usadas para atribuir um aplicativo a usuários ou grupos em uma função de aplicativo especificado. A propriedade **appRoles** da entidade servicePrincipal e da entidade do aplicativo é uma coleção de **appRole**.
 localization_priority: Normal
-ms.openlocfilehash: 26fe11fc4f0c362de002c205c7e3b95a6ec4a314
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 8a367406c64cf9d0d3da49716aeaf6ca3c1fa687
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27891543"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525791"
 ---
 # <a name="approle-resource-type"></a>tipo de recurso appRole
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa uma função de aplicativo que podem ser solicitados por um aplicativo cliente chamar outro aplicativo ou que podem ser usadas para atribuir um aplicativo a usuários ou grupos em uma função de aplicativo especificado. A propriedade **appRoles** da entidade [servicePrincipal](serviceprincipal.md) e da entidade do [aplicativo](application.md) é uma coleção de **appRole**.
 
@@ -45,18 +45,23 @@ Veja a seguir uma representação JSON do recurso
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |allowedMemberTypes|String collection|Especifica se esta definição de aplicativo de função pode ser atribuída aos usuários e grupos pela configuração para "User", ou para outros aplicativos (que estão acessando este aplicativo em cenários de serviço daemon) por configuração para "Aplicativo", ou ambos.|
-|description|Cadeia de caracteres|Permissão ajudam o texto que aparece na atribuição app admin e experiências de consentimento.|
-|displayName|Cadeia de caracteres|Nome para exibição da permissão que aparece nas experiências de atribuição de consentimento e app admin.|
+|description|String|Permissão ajudam o texto que aparece na atribuição app admin e experiências de consentimento.|
+|displayName|String|Nome para exibição da permissão que aparece nas experiências de atribuição de consentimento e app admin.|
 |id|Guid|Identificador exclusivo de função dentro da coleção **appRoles** .|
 |isEnabled|Boolean|Ao criar ou atualizar uma definição de função, isso deve ser definido como **true** (o que é o padrão). Para excluir uma função, isso deve primeiro ser definido como **false**.  Nesse momento, em uma chamada subsequente, essa função pode ser removida.|
-|valor|Cadeia de caracteres|Especifica o valor da declaração funções que o aplicativo deve esperar em tokens de acesso e autenticação.|
+|valor|String|Especifica o valor da declaração funções que o aplicativo deve esperar em tokens de acesso e autenticação.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "appRole resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/approle.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

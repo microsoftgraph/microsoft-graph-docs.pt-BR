@@ -4,18 +4,18 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Cota
 localization_priority: Normal
-ms.openlocfilehash: a63b41253569dbb3d666a76b0a7495839ef61b12
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: ce07852592317568254217c7e869f1da7f296a2e
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27882408"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525483"
 ---
-# <a name="quota-resource-type"></a>tipo de recurso de cota
+# <a name="quota-resource-type"></a>Tipo de recurso Quota
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O recurso de **cota** fornece detalhes sobre o espaço restringe em um recurso de [unidade](drive.md) .
+O recurso **quota** fornece detalhes sobre restrições de espaço em um recurso [Drive](drive.md).
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -60,10 +60,15 @@ Veja a seguir uma representação JSON do recurso.
 | `critical` | A cota restante é inferior a 1% do espaço de cota total.                                                                                                                       |
 | `exceeded` | A cota usada excedeu a cota total. Novos arquivos ou pastas não podem ser adicionadas à unidade até que ela esteja abaixo da quantidade total de cotas ou mais espaço de armazenamento seja adquirido. |
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The quota facet provides information about how much space the OneDrive has available.",
   "keywords": "quota,available,remaining,used",
   "section": "documentation",
-  "tocPath": "Facets/Quota"
-} -->
+  "tocPath": "Facets/Quota",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/quota.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

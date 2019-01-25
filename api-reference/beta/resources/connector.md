@@ -2,16 +2,16 @@
 title: tipo de recurso de conector
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
-ms.openlocfilehash: 98fa998a37b01ad64e556b229912932f4d1cfc75
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: eed936c808e920f35a741a836a1fab64b2754bf8
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27884620"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525728"
 ---
 # <a name="connector-resource-type"></a>tipo de recurso de conector
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 <!-- Not supported items
 |[Create connectorGroup](../api/connector-post-memberof.md) |[connectorGroup](connectorgroup.md)| Associate a connector with a new connectorGroup by posting to the memberOf collection.|
@@ -24,18 +24,18 @@ ms.locfileid: "27884620"
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Obtenha o conector](../api/connector-get.md) | [conector](connector.md) |Leia as propriedades e os relacionamentos de objeto de conector.|
+|[Obtenha o conector](../api/connector-get.md) | [Connector](connector.md) |Leia as propriedades e os relacionamentos de objeto de conector.|
 |[Listar memberOf](../api/connector-list-memberof.md) |coleção [connectorGroup](connectorgroup.md)| Obtenha o objeto de connectorGroup associado com o conector.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|externalIp|Cadeia de caracteres|O endereço IP externo como detectada pelo serviço para a máquina do conector. Somente leitura|
-|id|Cadeia de caracteres| A id de objeto do conector. <BR>Somente leitura.|
-|machineName|Cadeia de caracteres| O nome do computador que está executando o conector. <BR>Somente leitura|
+|externalIp|String|O endereço IP externo como detectada pelo serviço para a máquina do conector. Somente leitura|
+|id|String| A id de objeto do conector. <BR>Somente leitura.|
+|machineName|String| O nome do computador que está executando o conector. <BR>Somente leitura|
 |status|string| Indica o status do conector. Os valores possíveis são: `active` e `inactive`. Somente leitura |
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |memberOf|coleção [connectorGroup](connectorgroup.md)| O connectorGroup conectar é membro de.<br>Somente leitura. |
@@ -64,10 +64,15 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "connector resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/connector.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

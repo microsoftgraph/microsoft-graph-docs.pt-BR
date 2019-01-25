@@ -2,16 +2,16 @@
 title: Configurar a sincronização com os atributos de extensão de diretório
 description: 'Você pode personalizar seu esquema de sincronização para incluir os atributos de extensão de diretório do Windows Azure Active Directory (AD Azure). Este artigo descreve como usar um atributo de extensão de diretório (**extension_9d98asdfl15980a_Nickname**) para preencher o valor da User.CommunityNickname em equipe de vendas. Neste cenário, você tem Connect do Azure AD configurado para provisionar um número de atributos de extensão do diretório do Windows Server Active Directory local para o Windows Azure AD. '
 localization_priority: Normal
-ms.openlocfilehash: 093d78b1e47e412a97ac8a4306c432465e24b5e1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 4160a95acfc6b23f5d5a9d880f36d9ca6a1f3362
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27850096"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29523859"
 ---
 # <a name="configure-synchronization-with-directory-extension-attributes"></a>Configurar a sincronização com os atributos de extensão de diretório
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Você pode personalizar seu esquema de sincronização para incluir os atributos de extensão de diretório do Windows Azure Active Directory (AD Azure). Este artigo descreve como usar um atributo de extensão de diretório (**extension_9d98asdfl15980a_Nickname**) para preencher o valor da User.CommunityNickname em equipe de vendas. Neste cenário, você tem Connect do Azure AD configurado para provisionar um número de atributos de extensão do diretório do Windows Server Active Directory local para o Windows Azure AD. 
 
@@ -273,3 +273,11 @@ HTTP/1.1 201 No Content
 ```
 
 Se o esquema foi salvo com êxito, na iteração seguinte do trabalho de sincronização, ele iniciará o processamento novamente todas as contas no seu Azure AD e os novos mapeamentos serão aplicados a todas as contas provisionadas.
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/synchronization-configure-with-directory-extension-attributes.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

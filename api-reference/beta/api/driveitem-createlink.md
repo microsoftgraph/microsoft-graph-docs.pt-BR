@@ -5,16 +5,16 @@ ms.date: 09/10/2017
 title: Compartilhar um arquivo com um link
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 75403c44a0d69269d7fe11b947da2f17b013dd3f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4b4b86621579b945af01eb1dc517b7525220aae8
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27940404"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526218"
 ---
 # <a name="create-a-sharing-link-for-a-driveitem"></a>Criar um link de compartilhamento para um DriveItem
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Você pode usar a ação **createLink** para compartilhar um [DriveItem](../resources/driveitem.md) por meio de um link de compartilhamento.
 
@@ -217,10 +217,15 @@ Content-Type: application/json
 * Os links ficam visíveis nas permissões de compartilhamento do item e podem ser removidos por um proprietário desse item.
 * Os links sempre apontam para a versão atual de um item, a menos que esse item esteja em check-out (apenas no SharePoint).
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create a new sharing link for an item.",
   "keywords": "create,sharing,sharing link",
   "section": "documentation",
-  "tocPath": "Sharing/Create link"
-} -->
+  "tocPath": "Sharing/Create link",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-createlink.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

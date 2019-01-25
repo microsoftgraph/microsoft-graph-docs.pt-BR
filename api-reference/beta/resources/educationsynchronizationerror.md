@@ -4,16 +4,16 @@ description: Representa um erro durante a validação de perfil de dados escola 
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 397ac305fcacd789174c05ea36ab026826227475
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 5c937e95441132e4633b0f5e48a75b0597b8f08d
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425810"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525140"
 ---
 # <a name="educationsynchronizationerror-resource-type"></a>tipo de recurso de educationSynchronizationError
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa um erro durante a validação de perfil de dados escola e/ou de sincronização. Será gerado um erro de exclusivo para cada entrada que está falhando para validar e/ou sincronizar com o Azure Active Directory (AD Azure).
 
@@ -28,10 +28,10 @@ Representa um erro durante a validação de perfil de dados escola e/ou de sincr
 | Propriedade | Tipo | Descrição |
 |:-|:-|:-|
 | **entryType** | string |  Representa a entidade de sincronização (escola, seção, estudante, professor).       |
-| **errorCode** | string |  Representa o código de erro para esse erro.         |
-| **errorMessage** | string |  Contém uma descrição do erro.        |
+| **ErrorCode** | string |  Representa o código de erro para esse erro.         |
+| **ErrorMessage** | string |  Contém uma descrição do erro.        |
 | **joiningValue** | string |  O identificador exclusivo para a entrada.         |
-| **recordedDateTime** | DateTimeOffset | A hora da ocorrência desse erro.         |
+| recordedDateTime | DateTimeOffset | A hora da ocorrência desse erro.         |
 | **reportableIdentifier** | string | O identificador dessa entrada de erro.       |
 
 ## <a name="json-representation"></a>Representação JSON
@@ -53,3 +53,11 @@ Representa um erro durante a validação de perfil de dados escola e/ou de sincr
     "reportableIdentifier": "String"
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/educationsynchronizationerror.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

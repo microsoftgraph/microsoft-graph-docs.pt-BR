@@ -2,16 +2,16 @@
 title: tipo de recurso de secureScoreControlProfiles
 description: Representa a pontuação seguro de um locatário por dados do controle. Por padrão, ela retorna todos os controles para um inquilino e explicitamente pode extrair controles individuais.
 localization_priority: Normal
-ms.openlocfilehash: 866b2086ff5160744f848292cedf30c3cedf6daa
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 3e800271f1ef5f8ac7847d14d97ae6f24f1e01cf
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866217"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524426"
 ---
 # <a name="securescorecontrolprofiles-resource-type"></a>tipo de recurso de secureScoreControlProfiles
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa a pontuação seguro de um locatário por dados do controle. Por padrão, ela retorna todos os controles para um inquilino e explicitamente pode extrair controles individuais.
 
@@ -27,23 +27,23 @@ Representa a pontuação seguro de um locatário por dados do controle. Por padr
 
 |Nome |Tipo |Descrição |
 |:--|:--|:--|
-|   azureTenantId   |   Cadeia de caracteres  |   ID de cadeia de caracteres do GUID para o inquilino.  |
-|   controlName |   Cadeia de caracteres  |   Nome do controle. |
+|   azureTenantId   |   String  |   ID de cadeia de caracteres do GUID para o inquilino.  |
+|   controlName |   String  |   Nome do controle. |
 |   title   |   Cadeia de caracteres  |   Título do controle.   |
 | complianceInformation | coleção [complianceInformation](complianceinformation.md) | A coleção de informações de conformidade associadas a proteger o controle de pontuação |
-|   controlCategory |   Cadeia de caracteres  |   Categoria de ação de controle (conta, dados, dispositivo, aplicativos, infra-estrutura).  |
+|   controlCategory |   String  |   Categoria de ação de controle (conta, dados, dispositivo, aplicativos, infra-estrutura).  |
 |   actionType  |   Cadeia de caracteres  |   Controlar o tipo de ação (Config, revisão, comportamento). |
-|   service |   Cadeia de caracteres  |   Serviço que possui o controle (Exchange, Sharepoint, Azure AD). |
-|   maxScore |  Cadeia de caracteres  |   Atual obtidos max pontuação na data especificada.   |
-|   camada |  Cadeia de caracteres  |   Camada de controle (Core, defesa em camadas, avançadas.)    |
-|   userImpact |    Cadeia de caracteres  | Impacto da implementação de controle (baixa, moderada, alta) do usuário.    |
-|   implementationCost |    Cadeia de caracteres  |   Custo do recurso de controle de implemmentating (baixa, moderada, alta). |
+|   service |   String  |   Serviço que possui o controle (Exchange, Sharepoint, Azure AD). |
+|   maxScore |  String  |   Atual obtidos max pontuação na data especificada.   |
+|   Camada |  String  |   Camada de controle (Core, defesa em camadas, avançadas.)    |
+|   userImpact |    String  | Impacto da implementação de controle (baixa, moderada, alta) do usuário.    |
+|   implementationCost |    String  |   Custo do recurso de controle de implemmentating (baixa, moderada, alta). |
 |   rank |  Int32   |   Pilha da Microsoft de classificação do controle.   |
-|   ameaças |   Coleção de cadeia de caracteres   |   Lista de ameaças reduz o controle (accountBreach, dataDeletion, dataExfiltration, dataSpillage, elevationOfPrivilege, maliciousInsider, passwordCracking, phishingOrWhaling, falsificação). |
-|   preteridos |    Booliano |   Sinalizador para indicar se um controle é depreciado.   |
-|   remediação |   Cadeia de caracteres  |   Descrição do controle que ajudarão remediar. |
-|   remediationImpact | Cadeia de caracteres  |   Descrição do impacto sobre os usuários da remediação. |
-|   actionUrl | Cadeia de caracteres  |   URL para o qual o controle pode ser actioned. |
+|   ameaças |   coleção de cadeias de caracteres   |   Lista de ameaças reduz o controle (accountBreach, dataDeletion, dataExfiltration, dataSpillage, elevationOfPrivilege, maliciousInsider, passwordCracking, phishingOrWhaling, falsificação). |
+|   Preterido |    Booliano |   Sinalizador para indicar se um controle é depreciado.   |
+|   remediação |   String  |   Descrição do controle que ajudarão remediar. |
+|   remediationImpact | String  |   Descrição do impacto sobre os usuários da remediação. |
+|   ActionURL | String  |   URL para o qual o controle pode ser actioned. |
 |   controlStateUpdates |   coleção [secureScoreControlStateUpdate](securescorecontrolstateupdate.md) |    Sinalizador para indicar onde o inquilino tenha marcado a um controle (Ignorar, thirdParty, examinado) (oferece suporte a [atualização](../api/securescorecontrolprofiles-update.md)). |
 
 ## <a name="relationships"></a>Relações
@@ -91,10 +91,15 @@ Veja a seguir uma representação JSON do recurso.
 ```
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "secureScoreControlProfiles resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/securescorecontrolprofiles.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

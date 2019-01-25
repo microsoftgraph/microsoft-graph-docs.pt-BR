@@ -5,16 +5,16 @@ ms.date: 09/11/2017
 title: Listar
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 419f35226c09c1bde500994b6e023f764c54b3cc
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: c1cb3b6e74bd95929c392f4789ab916ae0e5569e
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27953612"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29527658"
 ---
 # <a name="list-resource"></a>Recurso List
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 O recurso **list** representa uma lista em um [site][].
 Este recurso contém as propriedades de nível superior da lista, incluindo definições de modelo e campo.
@@ -127,7 +127,8 @@ O recurso **list** tem as seguintes relações com outros recursos.
 [site]: site.md
 [systemFacet]: systemfacet.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
@@ -135,5 +136,9 @@ O recurso **list** tem as seguintes relações com outros recursos.
   "tocPath": "Resources/Lists",
   "tocBookmarks": {
     "Lists": "#"
-  }
-} -->
+  },
+  "suppressions": [
+    "Error: /api-reference/beta/resources/list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

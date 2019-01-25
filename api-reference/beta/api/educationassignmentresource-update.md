@@ -4,16 +4,16 @@ description: 'Atualize as propriedades de recurso associado a uma atribuição. 
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: f4178b5d6e2dac956a9d3f20461fd789f9f8e740
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 34b1c05937f57fe46d5d854d21a7c2e0b68240d2
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27935875"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29527952"
 ---
 # <a name="update-educationassignmentresource"></a>Atualizar educationAssignmentResource
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Atualize as propriedades de recurso associado a uma atribuição. Somente professores em uma classe podem alterar os objetos de recurso de atribuição.  
 
@@ -43,7 +43,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |distributeForStudentWork|Booliano| Indica se este recurso deve ser copiado para o objeto de recurso de cada student quando a atribuição é publicada.|
-|recurso|educationResource| Objeto Resource. |
+|recurso|educationResource| Objeto Resource |
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto atualizado [educationAssignmentResource](../resources/educationassignmentresource.md) no corpo da resposta.
@@ -110,10 +110,15 @@ Content-length: 832
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update educationassignmentresource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationassignmentresource-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -2,16 +2,16 @@
 title: tipo de recurso de chatMessageAttachment
 description: Representa um anexo para uma entidade de mensagem de chat.
 localization_priority: Normal
-ms.openlocfilehash: 83574a7dbbb35f9c8b95474fac1154154f413470
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 8163f94f7f891d76b8f0f1961b8c5f72e3b2e368
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805555"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526120"
 ---
 # <a name="chatmessageattachment-resource-type"></a>tipo de recurso de chatMessageAttachment
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa um anexo para uma entidade de mensagem de chat.
 
@@ -28,7 +28,7 @@ Uma entidade do tipo `chatMessageAttachment` é retornado como parte de [receber
 |thumbnailUrl| string |URL para um uma imagem em miniatura que o canal pode usar se ele suporta o uso de um formulário alternativo, menor de conteúdo ou contentUrl. Por exemplo, se você definir contentType para o aplicativo/word e defina contentUrl até o local do documento do Word, você pode incluir uma imagem em miniatura que representa o documento. O canal pode exibir a imagem em miniatura, em vez do documento. Quando o usuário clica na imagem, o canal abria o documento.|
 
 ## <a name="json-representation"></a>Representação JSON
- A seguir está uma representação JSON do recurso
+ Veja a seguir uma representação JSON do recurso
 
 <!-- {
   "blockType": "resource",
@@ -55,10 +55,15 @@ Uma entidade do tipo `chatMessageAttachment` é retornado como parte de [receber
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "chat attachment resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/chatAttachment.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

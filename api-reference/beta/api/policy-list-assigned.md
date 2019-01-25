@@ -2,20 +2,20 @@
 title: Políticas de lista atribuídas ao aplicativo ou entidade de serviço
 description: Recupere os objetos de política atribuídos a um aplicativo ou entidade de serviço.
 localization_priority: Normal
-ms.openlocfilehash: 3c66eece645313f7039f12aec708cba4581fb4bb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 1ed39f376b7d090b784f867a59fcb93558bd5f1a
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875352"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29518580"
 ---
 # <a name="list-policies-assigned-to-application-or-service-principal"></a>Políticas de lista atribuídas ao aplicativo ou entidade de serviço
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Recupere os objetos de [política](../resources/policy.md) atribuídos a um aplicativo ou entidade de serviço.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -77,3 +77,11 @@ Content-Type: application/json
     ]
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/policy-list-assigned.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

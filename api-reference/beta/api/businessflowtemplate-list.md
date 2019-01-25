@@ -2,19 +2,19 @@
 title: Lista businessFlowTemplates
 description: No Windows Azure AD para acessar o recurso de revisões, liste todos os objetos businessFlowTemplate.
 localization_priority: Normal
-ms.openlocfilehash: 021a3c939c6642caf5200b5e9cc4e47b390019b8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 5b1d96330f808600c7f306ca85009bc5948a22f4
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829495"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525560"
 ---
 # <a name="list-businessflowtemplates"></a>Lista businessFlowTemplates
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 No recurso [acesso analisa](../resources/accessreviews-root.md) Azure AD, liste todos os objetos [businessFlowTemplate](../resources/businessflowtemplate.md) .
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
@@ -31,7 +31,7 @@ GET /businessFlowTemplates
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome         | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| Autorização | string | Portador \{token\}. Obrigatório. |
+| Autorização | string | Token de portador Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Nenhum corpo da solicitação deve ser fornecido.
@@ -94,10 +94,15 @@ Content-type: application/json
 
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List business flow template",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/businessflowtemplate-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

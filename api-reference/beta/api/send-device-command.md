@@ -2,20 +2,20 @@
 title: Enviar um comando de dispositivo
 description: 'Essa API permite que os recursos de projeto Roma para um dispositivo associado a uma conta da Microsoft de comando. Depois de fazer uma chamada GET em `me/devices`, passe a ID do dispositivo para emitir um comando para seu dispositivo. Dois tipos de comandos são suportados: LaunchURI e AppServices. Se você estiver usando LaunchURI, especifique os parâmetros de *tipo* e da *carga* . Para uma chamada de AppService, especifique o '
 localization_priority: Normal
-ms.openlocfilehash: 54349e2f43a776523614b0cd2abbc209e89305fd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: d0c25200933a4a87a66349e457c500c496272b08
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27891984"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526239"
 ---
 # <a name="send-device-command"></a>Enviar um comando de dispositivo
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Essa API permite que os recursos de projeto Roma para um dispositivo associado a uma conta da Microsoft de comando. Depois de fazer uma chamada GET em `me/devices`, passe a ID do dispositivo para emitir um comando para seu dispositivo. Dois tipos de comandos são suportados: LaunchURI e AppServices. Se você estiver usando LaunchURI, especifique os parâmetros de *tipo* e da *carga* . Para uma chamada de AppService, especifique o *tipo*, *carga*, *packageFamilyName*e *appServiceName* parâmetros.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -76,19 +76,19 @@ HTTP/1.1 201 OK
   "postBackUri": "postbackURI"
 }
 ```
-## <a name="command-properties"></a>Propriedades de comando 
+## <a name="command-properties"></a>Command Properties 
 
 |**Name**|**Tipo**|**Descrição**|
 |:----|:------|:------|
 |payload | Microsoft.Graph.JSON| Carga para enviar para um serviço do aplicativo ou iniciar um URI em um dispositivo. |
 |responsePayload | Microsoft.Graph.JSON| Carga retornado do dispositivo de destino. |
-|postBackURI | Cadeia de caracteres | URI para enviar notificações subsequentes das atualizações de volta de postagem. |
-|packageFamilyName | Cadeia de caracteres | Nome da família Windows pacote de aplicativo. |
-|appServiceName | Cadeia de caracteres | Nome do serviço de aplicativo definido pelo aplicativo de destino. Será necessário se lançar um serviço do aplicativo. |
-|type| Cadeia de caracteres | LaunchURI ou AppService. |
-|id| Cadeia de caracteres | A identificação de um comando que foi enviado ao dispositivo. |
-|actionStatus | Cadeia de caracteres | O [status](get-device-command-status.md) de um comando. |
-|erro| Cadeia de caracteres| Quaisquer erros associados à solicitação do aplicativo de destino. |
+|postBackURI | String | URI para enviar notificações subsequentes das atualizações de volta de postagem. |
+|packageFamilyName | String | Nome da família Windows pacote de aplicativo. |
+|appServiceName | String | Nome do serviço de aplicativo definido pelo aplicativo de destino. Será necessário se lançar um serviço do aplicativo. |
+|type| String | LaunchURI ou AppService. |
+|id| String | A identificação de um comando que foi enviado ao dispositivo. |
+|actionStatus | String | O [status](get-device-command-status.md) de um comando. |
+|erro| String| Quaisquer erros associados à solicitação do aplicativo de destino. |
 
 ## <a name="launch-uri-example"></a>Exemplo URI de início
 
@@ -150,7 +150,7 @@ Aqui está um exemplo de uma consulta de um serviço de aplicativo em um disposi
 
 Várias outras propriedades devem ser definidas na chamada. *Tipo* deve ser definida como *AppService*, *AppServiceName* deve ser definida com o nome da definida no aplicativo de serviço do aplicativo, *PackageFamilyName* deve ser definida como o nome da família de pacote definido no manifesto do aplicativo e *carga* contém as chaves e valores para o serviço que você está chamando dentro do aplicativo de destino.
 
-#### <a name="request"></a>Solicitação
+#### <a name="request"></a>Solicitar
 
 <!-- {
   "blockType": "ignored",
@@ -202,3 +202,11 @@ HTTP/1.1 201 OK
   }
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/send-device-command.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

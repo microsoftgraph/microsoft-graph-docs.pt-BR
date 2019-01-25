@@ -2,33 +2,33 @@
 title: tipo de recurso de operação
 description: O status de uma operação de execução longa.
 localization_priority: Normal
-ms.openlocfilehash: 760aeedb67b987fc22a5eef969e2214f6dfd05b6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 3ad9848387dab2de928f7ace2fa4b905720be615
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830342"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29520183"
 ---
 # <a name="operation-resource-type"></a>tipo de recurso de operação
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 O status de uma operação de execução longa.
 
 ## <a name="methods"></a>Métodos
 
-Nenhum
+Nenhuma
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade           | Tipo            | Descrição                                                                     |
 | :----------------- | :-------------- | :-------------------------------------------------------------------------------|
 | createdDateTime    | DateTimeOffset  | A hora de início da operação.                                                |
-| id                 | Cadeia de caracteres          | A id da operação. Somente leitura. Servidor foi gerado.                                  |
+| id                 | String          | A id da operação. Somente leitura. Servidor foi gerado.                                  |
 | lastActionDateTime | DateTimeOffset  | A hora da última ação da operação.                                   |
 | status             | String          | Os valores possíveis são: `notStarted`, `running`, `completed`, `failed`. Somente leitura. |
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 
 Nenhum
 
@@ -68,10 +68,15 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 13fa92b1-3b41-498b-aab1-f943464a124f
 2018-03-30 10:29:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "operation resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/operation.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

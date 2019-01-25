@@ -5,16 +5,16 @@ ms.date: 09/10/2017
 title: Converter em outros formatos
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: a7c4b9e91ef128dd088252d76c6e7310460ddf6a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 8d65b7604c2ec17d4225c9cb887cbbfad2223009
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27921203"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526302"
 ---
 # <a name="download-a-file-in-another-format"></a>Baixar um arquivo em outro formato
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Use esta API para recuperar os conteúdos de um item em um formato específico.
 Nem todos os arquivos podem ser convertidos em todos os formatos.
@@ -48,7 +48,7 @@ Os seguintes valores são válidos para o parâmetro **format** :
 | glb   | Converte o item no formato de GLB  | legal, fbx, objetivo, módulo, stl, 3mf
 | HTML  | Converte o item em formato HTML | EML, md, msg
 | JPG   | Converte o item em formato JPG  | 3G 2, 3gp, 3gp2, 3gpp, 3mf, ai, arw, asf, avi, bas, bash, bat, bmp, c, cbl, cmd, legal, cpp, cr2, crw, cs, css, csv, atual, dcm, dcm30, dic, dicm, dicom, dng, doc, docx, dwg, eml, epi, eps, epsf, epsi, epub, FUNERRO, fbx, fppx, gif, glb, h, hcp , heic, heif, htm, html, ico, ícone, java, jfif, jpeg, jpg, js, json, chave, log, m2ts, m4a, m4v, redução, md, mef, mov, filme, mp3, mp4, mp4v, mrw, msg, mts, nef, nrw, números, objetivo, odp, odt, ogg, orf, páginas, pano, pdf, pef, php, pict, pl, módulo, png, pot , potm, potx, pps, ppsx, ppsxm, ppt, pptm, pptx, ps, ps1, psb, psd, Aj, bruto, rb, rtf, rw1, rw2, MOS, Esboce, sql, sr2, stl, tif, tiff, ts, txt, vb, webm, wma, wmv, xaml, xbm, fonte xcf, xd, xml, xpm, yaml, yml
-| PDF   | Converte o item em formato PDF  | doc, docx, epub, eml, htm, html, md, msg, odp, ods, odt, pps, ppsx, ppt, pptx, rtf, tif, tiff, xls, xlsm, xlsx
+| PDF   | Converte o item em formato PDF.  | doc, docx, epub, eml, htm, html, md, msg, odp, ods, odt, pps, ppsx, ppt, pptx, rtf, tif, tiff, xls, xlsm, xlsx
 
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
 
@@ -86,10 +86,15 @@ Saiba mais sobre como os erros são retornados em [Respostas de erro][error-resp
 [error-response]: /graph/errors
 [file-facet]: ../resources/file.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Convert the contents of an item in OneDrive to a different format.",
   "keywords": "convert,pdf,convert to pdf",
   "section": "documentation",
-  "tocPath": "Items/Download formats"
-} -->
+  "tocPath": "Items/Download formats",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-get-content-format.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

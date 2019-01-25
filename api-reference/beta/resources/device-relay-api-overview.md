@@ -4,16 +4,16 @@ description: '{Esta é a visão geral de nível da API para o módulo de retrans
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: df665c5a34193b6f5bddd9b93cba2a8b46aa46c0
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: f1f4946a5a4859095160f23884a2fbacdc238538
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27966388"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524335"
 ---
 # <a name="use-the-device-relay-api-to-transfer-a-users-experience-across-devices-preview"></a>Usar a API de retransmissão do dispositivo para transferir a experiência do usuário entre dispositivos (preview)
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 {Esta é a visão geral de nível da API para o módulo de retransmissão de dispositivo}.
 
@@ -25,3 +25,11 @@ ms.locfileid: "27966388"
 
 - [Usar a API do Microsoft Graph para habilitar experiências em vários dispositivos](cross-device-reference-overview.md)
 - [Usar a API de feed de atividades para retomar as atividades de um usuário entre dispositivos](activity-feed-api-overview.md)
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/device-relay-api-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

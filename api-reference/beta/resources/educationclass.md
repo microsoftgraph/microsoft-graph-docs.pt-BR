@@ -4,16 +4,16 @@ description: 'Representa uma aula em uma escola. O recurso **educationClass** co
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 4ccec95dbe04c5482328223214f446fbb580279c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 5a4bbc0560f2a40b5a438ec8276bbcf984a22721
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29393218"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526729"
 ---
 # <a name="educationclass-resource-type"></a>Tipo de recurso educationClass
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa uma aula em uma escola. O recurso **educationClass** corresponde ao grupo do Office 365 e compartilha a mesma ID. Os alunos são membros regulares da aula e os professores são proprietários e têm direitos apropriados. Para que as experiências do Office funcionem corretamente, os professores devem ser membros das coleções de professores e membros.  
 
@@ -39,13 +39,13 @@ Representa uma aula em uma escola. O recurso **educationClass** corresponde ao g
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id| Cadeia de caracteres| O identificador exclusivo da aula.|
-|description|Cadeia de caracteres| Descrição da aula.|
-|displayName|Cadeia de caracteres| Nome da aula.|
-|mailNickname|Cadeia de caracteres| Nome de email para enviar email a todos os membros, se essa propriedade estiver habilitada. |
+|id| String| O identificador exclusivo da aula.|
+|description|String| Descrição da aula.|
+|displayName|String| Nome da aula.|
+|mailNickname|String| Nome de email para enviar email a todos os membros, se essa propriedade estiver habilitada. |
 |createdBy|[identitySet](identityset.md)| Entidade que criou a aula |
-|classCode|Cadeia de caracteres| Código de aula usada pela escola para identificar a aula.|
-|externalId|Cadeia de caracteres| ID da aula no sistema de sincronização. |
+|classCode|String| Código de aula usada pela escola para identificar a aula.|
+|externalId|String| ID da aula no sistema de sincronização. |
 |externalName|Cadeia de caracteres|Nome da aula no sistema de sincronização.|
 |externalSource|string| Como essa aula foi criada. Os valores possíveis são: `sis`, `manual`, `unknownFutureValue`.|
 |term|[educationTerm](educationterm.md)|Termos dessa aula.|
@@ -89,10 +89,15 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "educationClass resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/educationclass.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

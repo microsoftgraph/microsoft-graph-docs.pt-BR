@@ -2,20 +2,20 @@
 title: Atualizar identityProvider
 description: Atualize propriedades em uma identityProvider existente.
 localization_priority: Normal
-ms.openlocfilehash: ebe49fb562f77004edfa3504130fbf50f4d40003
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: d98bc5d0bd7a8f165f33c89548a69805039cdf07
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27832806"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525742"
 ---
 # <a name="update-identityprovider"></a>Atualizar identityProvider
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Atualize propriedades em um existente [identityProvider](../resources/identityprovider.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -47,9 +47,9 @@ No corpo da solicitação, fornecem um objeto JSON com uma ou mais propriedades 
 
 |Propriedade|Tipo|Descrição|
 |:---------------|:--------|:----------|
-|clientId|Cadeia de caracteres|A identificação do cliente para o aplicativo. Esta é a ID de cliente obtida ao registrar o aplicativo com o provedor de identidade.|
-|clientSecret|Cadeia de caracteres|O segredo do cliente para o aplicativo. Esse é o segredo do cliente obtido ao registrar o aplicativo com o provedor de identidade.|
-|name|Cadeia de caracteres|O nome de exibição do provedor de identidade.|
+|clientId|String|A identificação do cliente para o aplicativo. Esta é a ID de cliente obtida ao registrar o aplicativo com o provedor de identidade.|
+|client_secret|String|O segredo do cliente para o aplicativo. Esse é o segredo do cliente obtido ao registrar o aplicativo com o provedor de identidade.|
+|name|String|O nome de exibição do provedor de identidade.|
 
 ## <a name="response"></a>Resposta
 
@@ -87,10 +87,15 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update identityProvider",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/identityprovider-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

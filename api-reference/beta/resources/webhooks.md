@@ -3,16 +3,16 @@ title: Usar a API do Microsoft Graph para obter notificações de alteração
 description: A API REST do Microsoft Graph usa um mecanismo de webhook para fornecer notificações aos clientes. Um cliente é um serviço web que configura sua própria URL para receber notificações. Aplicativos cliente usam notificações para atualizar seu estado após as alterações. Para obter mais detalhes, incluindo como se inscrever e manipular notificações de entrada, consulte Set up notificações de alterações nos dados do usuário.
 localization_priority: Normal
 author: piotrci
-ms.openlocfilehash: fe571fe0a9a7c982ee7ce93b08457586134d7d91
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 02ab18d3fa8980211a4937433ad1616b0629bf8c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986129"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526211"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>Usar a API do Microsoft Graph para obter notificações de alteração
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A API REST do Microsoft Graph usa um mecanismo de webhook para fornecer notificações aos clientes. Um cliente é um serviço web que configura sua própria URL para receber notificações. Aplicativos cliente usam notificações para atualizar seu estado após as alterações. Para obter mais detalhes, incluindo como assinar e manipular notificações de entrada, consulte [Configurar notificações para que as alterações nos dados do usuário](/graph/webhooks).
 
@@ -24,11 +24,11 @@ Usando a API do Microsoft Graph, um aplicativo pode se inscrever para alteraçõ
 - Usuários
 - Grupos
 - Conversas em grupo
-- Conteúdo compartilhado na OneDrive, incluindo as unidades associadas a sites do SharePoint
-- Pastas de OneDrive pessoais dos usuários
+- Conteúdo compartilhado no OneDrive, incluindo unidades associadas a sites do SharePoint
+- Pastas do OneDrive pessoais do usuário
 - Alertas de segurança
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Em geral, as operações de assinatura exigem permissão de leitura ao recurso. Por exemplo, para obter notificações de mensagens, seu aplicativo precisa da permissão `Mail.Read`. O artigo [criar assinatura](../api/subscription-post-subscriptions.md) lista as permissões necessárias para cada tipo de recurso. A tabela a seguir lista os tipos de permissões que o aplicativo pode solicitar para usar webhooks para tipos específicos de recursos.
 
@@ -54,4 +54,12 @@ Em geral, as operações de assinatura exigem permissão de leitura ao recurso. 
 [group]: ./group.md
 [message]: ./message.md
 [user]: ./user.md
-[alerta]: ./alert.md
+[alert]: ./alert.md
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/webhooks.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

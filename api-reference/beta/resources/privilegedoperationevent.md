@@ -2,16 +2,16 @@
 title: tipo de recurso de privilegedOperationEvent
 description: Representa um evento de auditoria que seja gerado pelo gerenciamento de identidades privilegiado para as operações de função, como um administrador gerencia as funções privilegiadas, um usuário ativa sua função e um usuário desativa a sua função.
 localization_priority: Normal
-ms.openlocfilehash: cc7374f4cf3bc18fbf2f3c36ee4f57e6d703434b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 2ad8f7e5db956dfbb2fa0d74f441b01f2b5d68aa
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27882681"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525588"
 ---
 # <a name="privilegedoperationevent-resource-type"></a>tipo de recurso de privilegedOperationEvent
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa um evento de auditoria que seja gerado pelo gerenciamento de identidades privilegiado para as operações de função, como um administrador gerencia as funções privilegiadas, um usuário ativa sua função e um usuário desativa a sua função.
 
@@ -31,7 +31,7 @@ Representa um evento de auditoria que seja gerado pelo gerenciamento de identida
 |id|string|O identificador exclusivo para privilegedOperationEvent. Somente leitura.|
 |referenceKey|string|Número de tíquete de incidente/solicitação durante a ativação de função. O valor é apresentado apenas se o número de tíquete for fornecido durante a ativação de função.|
 |referenceSystem|string|Incidente/solicitação fornecido durante a ativação de tole do sistema de registro. O valor é apresentado apenas se o sistema de tíquete é fornecido durante a ativação de função.|
-|requestType|string|O tipo de operação de solicitação. O valor de requestType pode ser: ```Assign``` (atribuição de função), ```Activate``` (ativação da função), ```Unassign``` (removem a atribuição de função), ```Deactivate``` (desativação da função), ```ScanAlersNow``` (examinar alertas de segurança), ```DismissAlert``` (descartar o alerta de segurança), ```FixAlertItem``` (corrigir um título alerta problema), ```AccessReview_Review``` (revisar um acesso Revise), ```AccessReview_Create``` (criar um acesso Revise), ```AccessReview_Update``` (atualizar um acesso Revise), e ```AccessReview_Delete``` (excluir um acesso Revise).|
+|RequestType|string|O tipo de operação de solicitação. O valor de requestType pode ser: ```Assign``` (atribuição de função), ```Activate``` (ativação da função), ```Unassign``` (removem a atribuição de função), ```Deactivate``` (desativação da função), ```ScanAlersNow``` (examinar alertas de segurança), ```DismissAlert``` (descartar o alerta de segurança), ```FixAlertItem``` (corrigir um título alerta problema), ```AccessReview_Review``` (revisar um acesso Revise), ```AccessReview_Create``` (criar um acesso Revise), ```AccessReview_Update``` (atualizar um acesso Revise), e ```AccessReview_Delete``` (excluir um acesso Revise).|
 |requestorId|string|A id de usuário do solicitante que inicia a operação.|
 |requestorName|string|O nome de usuário do solicitante que inicia a operação.|
 |roleId|string|A identificação da função que está associada com a operação.|
@@ -41,7 +41,7 @@ Representa um evento de auditoria que seja gerado pelo gerenciamento de identida
 |userMail|string|Email do usuário.|
 |userName|string|O nome de exibição do usuário.|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 Nenhum
 
 
@@ -78,10 +78,15 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "privilegedOperationEvent resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/privilegedoperationevent.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

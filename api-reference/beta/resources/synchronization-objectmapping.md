@@ -2,16 +2,16 @@
 title: tipo de recurso de objectMapping
 description: Define como um determinado objeto deve ser sincronizado do diretório de origem para o diretório de destino. Especificamente, ele define como o objeto no diretório de origem deve ser correspondido com um objeto no diretório de destino, o que (se houver) filtros de escopo deve ser usado para decidir se queremos provisionar um determinado objeto e como os atributos de objetos devem ser transformadas contínuas de fonte para o diretório de destino.
 localization_priority: Normal
-ms.openlocfilehash: 21e996b72be7df93c86f9e5f78a0033c9203cd2c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 274d401c28abc25d904c259b00a673f3c0a53888
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851747"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526911"
 ---
 # <a name="objectmapping-resource-type"></a>tipo de recurso de objectMapping
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Define como um determinado objeto deve ser sincronizado do diretório de origem para o diretório de destino. Especificamente, ele define como o objeto no diretório de origem deve ser correspondido com um objeto no diretório de destino, o que (se houver) filtros de escopo deve ser usado para decidir se queremos provisionar um determinado objeto e como os atributos de objetos devem ser transformadas contínuas de fonte para o diretório de destino.
 
@@ -24,11 +24,11 @@ Mapeamentos de objeto são a parte principal da [regra de sincronização](synch
 |attributeMappings  |coleção [attributeMapping](synchronization-attributemapping.md)    | Mapeamentos de atributos definem os atributos a serem mapeadas do objeto de origem para o objeto de destino e como eles deverão fluir. Um número de funções está disponível para dar suporte a transformação dos valores de fonte original.|
 |enabled        |Booliano    |Quando `true`, esse mapeamento do objeto será processado durante a sincronização. Quando `false`, esse mapeamento do objeto será ignorado.|
 |flowTypes      |objectFlowType    |Quais tipos de fluxo estão habilitados para esse mapeamento de objeto. `Add`cria novos objetos no diretório de destino, `Update` modifica objetos existentes, e `Delete` deprovisions usuários existentes. O padrão é `Add, Update, Delete`. |
-|metadados       |coleção metadataEntry    |Propriedades adicionais de extensão. A menos que mencionado explicitamente, valores de metadados não devem ser alterados.|
-|name           |Cadeia de caracteres     |Nome amigável a humanos do mapeamento de objeto.|
-|escopo          |[filter](synchronization-filter.md)     |Define um filtro a ser usado ao decidir se um determinado objeto deve ser provisionado. Por exemplo, você talvez queira apenas os usuários de provisão que estão localizados nos EUA.|
-|sourceObjectName           |Cadeia de caracteres     |Nome do objeto no diretório de origem. Deve corresponder ao nome de objeto a partir da fonte de [definição de diretório](synchronization-directorydefinition.md).|
-|targetObjectName           |Cadeia de caracteres     |Nome do objeto no diretório de destino. Deve corresponder ao nome de objeto da [definição do diretório](synchronization-directorydefinition.md)de de destino.|
+|Metadata       |coleção metadataEntry    |Propriedades adicionais de extensão. A menos que mencionado explicitamente, valores de metadados não devem ser alterados.|
+|name           |String     |Nome amigável a humanos do mapeamento de objeto.|
+|scope          |[filter](synchronization-filter.md)     |Define um filtro a ser usado ao decidir se um determinado objeto deve ser provisionado. Por exemplo, você talvez queira apenas os usuários de provisão que estão localizados nos EUA.|
+|sourceObjectName           |String     |Nome do objeto no diretório de origem. Deve corresponder ao nome de objeto a partir da fonte de [definição de diretório](synchronization-directorydefinition.md).|
+|targetObjectName           |String     |Nome do objeto no diretório de destino. Deve corresponder ao nome de objeto da [definição do diretório](synchronization-directorydefinition.md)de de destino.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -348,10 +348,15 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "objectMapping resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/synchronization-objectmapping.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

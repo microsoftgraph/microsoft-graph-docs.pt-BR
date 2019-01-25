@@ -4,20 +4,20 @@ description: Atualize o objeto assignment. Somente professores na classe podem f
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: f8d79e11628e3a02a20c9ecdcd46bcd1bff05e7f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: eb5762f86e1572f9a9d5876199c945154a25293b
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27960347"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524958"
 ---
 # <a name="update-educationassignment"></a>Atualizar educationassignment
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Atualize o objeto assignment. Somente professores na classe podem fazer isso. Observe que você não pode usar uma solicitação de PATCH para alterar o status de uma atribuição. Use a ação [Publicar](../api/educationassignment-publish.md) para alterar o status da atribuição.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -46,10 +46,10 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |allowStudentsToAddResourcesToSubmission|Booliano| Se um estudante pode adicionar recursos para o envio de um. Indicado se os únicos itens no envio provém da lista de recursos de atribuição. |
 |assignDateTime|DateTimeOffset| Data em que a atribuição deve ser publicada aos alunos. |
 |assignTo|educationAssignmentRecipient| Alunos que fazer a atribuição.|
-|displayName|Cadeia de caracteres| Nome da atribuição. |
+|displayName|String| Nome da atribuição. |
 |dueDateTime|DateTimeOffset| Atribuição de data deve ser concluída. |
 |classificação|educationAssignmentGradeType| Como a atribuição vai ser Graduada.|
-|instruções|itemBody| Instruções a ser dada aos alunos junto com a atribuição. |
+|Instruções|item.body| Instruções a ser dada aos alunos junto com a atribuição. |
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto atualizado [educationAssignment](../resources/educationassignment.md) no corpo da resposta.
@@ -104,10 +104,15 @@ Content-length: 279
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update educationassignment",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationassignment-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
