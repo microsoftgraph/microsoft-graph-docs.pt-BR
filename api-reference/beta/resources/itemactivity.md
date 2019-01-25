@@ -2,18 +2,18 @@
 author: daspek
 ms.author: dspektor
 ms.date: 09/14/2017
-title: ItemActivity
+title: itemActivity
 localization_priority: Normal
-ms.openlocfilehash: a29bdad0ae5e06d3d1b55f1fb7ceb630bec1b564
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 5e2be549c3e3e9e799449679b605577ecd782a94
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27819667"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29517292"
 ---
 # <a name="itemactivity-resource-type"></a>Tipo de recurso ItemActivity
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 O recurso **ItemActivity** fornece informações sobre atividades que ocorreram em um item ou dentro de um repositório.
 Disponível atualmente só no SharePoint e no OneDrive for Business.
@@ -46,7 +46,7 @@ Disponível atualmente só no SharePoint e no OneDrive for Business.
 | Propriedade | Tipo                    | Descrição
 |:---------|:------------------------|:----------------------------------------
 | id       | string                  | O identificador exclusivo da atividade. Somente leitura.
-| acesso   | [accessAction][]        | Um item foi acessado.
+| Access   | [accessAction][]        | Um item foi acessado.
 | action   | [itemActionSet][]       | Detalhes sobre a ação que ocorreu. Somente leitura.
 | actor    | [identitySet][]         | Identidade de quem executou a ação. Somente leitura.
 | location | [location][]            | Local físico onde a ação foi realizada. Somente leitura.
@@ -102,10 +102,15 @@ Novas ações podem ser registradas no futuro, portanto, verifique se o seu apli
 
 **ItemActivity** está disponível atualmente só no SharePoint e no OneDrive for Business.
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The ItemActivity object provides information about an activity that took place on an item.",
   "keywords": "activities,activity,action",
   "section": "documentation",
-  "tocPath": "Resources/ItemActivity"
-} -->
+  "tocPath": "Resources/ItemActivity",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/itemactivity.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

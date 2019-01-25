@@ -4,16 +4,16 @@ description: Obtém um determinado número de colunas à esquerda do intervalo e
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 45c70e0e74f351cde3c74ee547e2492ee0ba05a0
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 677ee0d20031a9973644eec63e0a87e9c47440b8
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27923562"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29523481"
 ---
 # <a name="workbookrange-columnsbefore"></a>workbookRange: columnsBefore
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Obtém um determinado número de colunas à esquerda do intervalo especificado.
 
@@ -84,3 +84,11 @@ Content-length: 157
   "columnIndex": 99
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/workbookrange-columnsbefore.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

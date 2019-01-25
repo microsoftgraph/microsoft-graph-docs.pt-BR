@@ -4,16 +4,16 @@ ms.author: rgregg
 ms.date: 09/11/2017
 title: ColumnDefinition
 localization_priority: Normal
-ms.openlocfilehash: 5db835b9720f9fa711d683dd505e8325b27d79d8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: f4e0c3002068ec7dc8ee280b8e8143af621f178c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27844489"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29528932"
 ---
 # <a name="columndefinition-resource-type"></a>tipo de recurso columnDefinition
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -77,13 +77,13 @@ As propriedades relacionadas a tipo (booleana, calculada, escolha, moeda, data/h
 | **currency**      | [currencyColumn][]      | Esta coluna armazena valores monetários.
 | **dateTime**      | [dateTimeColumn][]      | Esta coluna armazena valores de datetime.
 | **defaultValue**  | [defaultColumnValue][]  | O valor padrão dessa coluna.
-| **localização geográfica**   | [geolocationColumn][]   | Essa coluna armazena uma localização geográfica.
+| Localização geográfica   | [geolocationColumn][]   | Essa coluna armazena uma localização geográfica.
 | **lookup**        | [lookupColumn][]        | Os dados dessa coluna são procurados por outra fonte no site.
 | **number**        | [numberColumn][]        | Esta coluna armazena valores numéricos.
 | **personOrGroup** | [personOrGroupColumn][] | Esta coluna armazena valores de Pessoa ou Grupo.
 | **text**          | [textColumn][]          | Esta coluna armazena valores de texto.
 
->**Observação:** Essas propriedades correspondem às enumeração de [SPFieldType][] do SharePoint.
+>Observação: essas propriedades correspondem à enumeração **SPFieldType** do SharePoint.
 Enquanto os tipos mais comuns de campo são representados na tabela anterior, essa versão beta API ainda faltam alguns.
 nestes casos, nenhuma das facetas do tipo de coluna serão preenchidas, e a coluna só terá as propriedades básicas.
 
@@ -105,16 +105,21 @@ Para vê-los ao exibir valores **field** em [listItems][listItem], inclua as col
 [personOrGroupColumn]: personorgroupcolumn.md
 [textColumn]: textcolumn.md
 [fieldValueSet]: fieldvalueset.md
-[fields]: fieldvalueset.md
+[campos]: fieldvalueset.md
 [listItem]: listitem.md
 
 
   [SPFieldType]: https://msdn.microsoft.com/library/microsoft.sharepoint.spfieldtype.aspx
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/ColumnDefinition"
-} -->
+  "tocPath": "Resources/ColumnDefinition",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/columndefinition.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

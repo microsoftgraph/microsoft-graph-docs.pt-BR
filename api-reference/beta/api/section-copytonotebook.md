@@ -4,16 +4,16 @@ description: Copia uma seção para um bloco de anotações específico.
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 65a3dd079f0ed67e7c754f22f805de8ed8368c87
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4ec5292aa7b11b268b73514af8aee42260e3d6a9
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27928203"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29523320"
 ---
 # <a name="section-copytonotebook"></a>section: copyToNotebook
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Copia uma seção para um bloco de anotações específico.
 
@@ -46,8 +46,8 @@ No corpo da solicitação, forneça um objeto JSON que contém os parâmetros qu
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|siteCollectionId|Cadeia de caracteres|A identificação do site do SharePoint para copiar. Use somente quando a cópia para um site de equipe do Office 365.|
-|siteId|Cadeia de caracteres|A identificação da web do SharePoint para copiar. Use somente quando a cópia para um site de equipe do Office 365.|
+|siteCollectionId|String|A identificação do site do SharePoint para copiar. Use somente quando a cópia para um site de equipe do Office 365.|
+|siteId|String|A identificação da web do SharePoint para copiar. Use somente quando a cópia para um site de equipe do Office 365.|
 |groupId|String|A id do grupo para o qual copiar. Use somente quando copiar para um grupo do Office 365.|
 |id|String|Obrigatório. A id do bloco de anotações de destino. |
 |renameAs|String|O nome da cópia. Restabelece o padrão do nome do item existente. |
@@ -89,10 +89,15 @@ HTTP/1.1 202 Accepted
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "section: copyToNotebook",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/section-copytonotebook.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

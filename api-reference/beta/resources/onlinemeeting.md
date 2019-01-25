@@ -4,16 +4,16 @@ description: Informações sobre a reunião, incluindo a URL de ingresso, a list
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 6bae6cf22e8790050f0b77ab903c5702354ea1f5
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: d7009ceaf815986d50c8eb3b64d2541c32f01a88
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27980395"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29519595"
 ---
 # <a name="onlinemeeting-resource-type"></a>tipo de recurso de onlineMeeting
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Informações sobre a reunião, incluindo a URL de ingresso, a lista de participantes e a descrição de captura.
 
@@ -27,23 +27,23 @@ Informações sobre a reunião, incluindo a URL de ingresso, a lista de particip
 
 | Propriedade                  | Tipo                                                   | Descrição                                                                                                                |
 | :------------------------ | :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
-| accessLevel               | String                                                 | O nível de acesso que controla a admissão na reunião online. Os valores possíveis são: `everyone`, `invited`, `locked`, `sameEnterprise`, `unknown`. |
+| AccessLevel               | String                                                 | O nível de acesso que controla a admissão na reunião online. Os valores possíveis são: `everyone`, `invited`, `locked`, `sameEnterprise`, `unknown`. |
 | audioConferencing         | [audioConferencing](audioconferencing.md)              | Representa as informações de acesso telefônicas de um onlineMeeting. |
 | canceledDateTime          | DateTime                                               | A hora de quando a reunião foi cancelada. |
 | chatInfo                  | [chatInfo](chatinfo.md)                                | O chat associado a esta reunião. |
-| creationDateTime          | DateTime                                               | A hora em que a reunião foi criada. ReadOnly.
+| creationDateTime          | DateTime                                               | A hora em que a reunião foi criada. Somente leitura.
 | endDateTime               | DateTime                                               | Hora de término da reunião. |
 | entryExitAnnouncement     | Booliano                                                | O status de comunicados de participação da reunião online. Quando os anúncios de presença estão habilitados, a reunião online lançará os nomes dos participantswho ingressar na reunião através do áudio. |
 | expirationDateTime        | DateTime                                               | A data de tempo Universal Coordenado (UTC) e a hora após o qual a absoluto da reunião online pode ser excluída. O dia e hora devem estar entre um ano antes e dez anos após a data atual e a hora no servidor. |
 | id                        | String                                                 | A ID associada a reunião online. Usado em uma solicitação HTTP GET, como a ID. Somente leitura. Servidor foi gerado. |
 | isCancelled               | Booliano                                                | Se a reunião foi cancelada. |
 | joinUrl                   | String                                                 | A URL que é usada durante a reunião online está unida a partir da web. |
-| meetingType               | String                                                 | Os valores possíveis são: `meetNow`, `scheduled`, `recurring`,`broadcast` |
+| meetingType               | String                                                 | Os valores possíveis são: `meetNow`, `scheduled`, `recurring`. |
 | participantes              | [meetingParticipants](meetingparticipants.md)          | Os participantes associados a reunião online.  Isso inclui o organizador e os participantes. |
 | startDateTime             | DateTime                                               | Inicie o horário da reunião. |
-| subject                   | String                                                 | O assunto da reunião online. |
+| subject                   | Cadeia de caracteres                                                 | O assunto da reunião online. |
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
@@ -79,10 +79,15 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "onlineMeeting resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/onlinemeeting.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

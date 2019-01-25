@@ -2,16 +2,16 @@
 title: tipo de recurso de política
 description: 'Representa uma política do Azure AD. Políticas são regras personalizadas que podem ser aplicadas em toda a organização atribuídos a eles, entidades de serviço, grupos ou aplicativos. Atualmente, somente um tipo de política está disponível:'
 localization_priority: Normal
-ms.openlocfilehash: cc82dc32056b9da5c2ca1144e58b5b9e1fe326f1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 118bac238d58734b5cbdeb1a4f346aedf680de6c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830923"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29518783"
 ---
 # <a name="policy-resource-type"></a>tipo de recurso de política
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa uma política do Azure AD. Políticas são regras personalizadas que podem ser aplicadas em toda a organização atribuídos a eles, entidades de serviço, grupos ou aplicativos. Atualmente, somente um tipo de política está disponível:
 
@@ -33,10 +33,10 @@ Esta diretiva é descrita em maiores detalhes a seguir.
 ### <a name="common-properties"></a>Propriedades comuns
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|definição|Cadeia de caracteres|A versão de cadeia de caracteres da diretiva específica. Veja a seguir. Obrigatório.|
-|displayName|Cadeia de caracteres|Um nome personalizado para a política. Obrigatório.|
+|Definição|String|A versão de cadeia de caracteres da diretiva específica. Veja a seguir. Obrigatório.|
+|displayName|String|Um nome personalizado para a política. Obrigatório.|
 |IsOrganizationDefault|Booliano|Se definido como verdadeiro, ativa essa diretiva. Pode haver várias políticas para o mesmo tipo de política, mas apenas um pode ser ativado como o padrão da organização. Opcional, valor padrão é false.|
-|type|Cadeia de caracteres|Especifica o tipo de política. No momento deve ser "TokenLifetimePolicy". Obrigatório.|
+|type|String|Especifica o tipo de política. No momento deve ser "TokenLifetimePolicy". Obrigatório.|
 
 #### <a name="common-relationships"></a>Relações comuns
 |Relação|Tipo|Descrição|
@@ -60,13 +60,13 @@ As propriedades abaixo o objeto JSON que representa uma política de vida útil 
 
 | Propriedade     | Tipo   |Descrição| Valor min | Valor max | Valor padrão|
 |:---------------|:--------|:----------|:--------|:--------|:----|
-|AccessTokenLifetime|Cadeia de caracteres|Controla quanto tempo **acesso e tokens de ID** são considerados válidos.|10 minutos|1 dia|1 hora|
-|MaxInactiveTime|Cadeia de caracteres|Controla como antigo um token de atualização pode ser antes de um cliente não pode usá-lo para recuperar um novo par de token de acesso/atualizar para acessar um recurso.|10 minutos|90 dias|14 dias|
-|MaxAgeSingleFactor|Cadeia de caracteres|Controles quanto tempo um usuário pode continuar usando tokens de atualização para obter acesso/atualizar novo pares de tokens após a última vez em que eles autenticados com êxito com apenas um fator único. Porque o fator único é considerado menos seguro que a autenticação multifator, recomenda-se essa diretiva estiver definida como um valor igual ou menor que o MultiFactorRefreshTokenMaxAge.|10 minutos|até revogado|365 dias ou até revogado|
-|MaxAgeMultiFactor|Cadeia de caracteres|Controles quanto tempo um usuário pode continuar usando tokens de atualização para obter acesso/atualizar novo pares de tokens após a última vez em que eles autenticados com êxito com vários fatores.|10 minutos|até revogado|365 dias ou até revogado|
-|MaxAgeSessionSingleFactor|Cadeia de caracteres|Controles quanto tempo um usuário pode continuar usando tokens de sessão para obter tokens do novos ID/sessão após a última vez em que eles autenticado com sucesso com apenas um fator único. Como o fator único é considerado menos seguro que a autenticação multifator, é recomendável que essa diretiva estiver definida como um valor igual ou menor que o MultiFactorSessionTokenMaxAge|10 minutos|até revogado|365 ou até revogado|
-|MaxAgeSessionMultiFactor|Cadeia de caracteres|Controles quanto tempo um usuário pode continuar usando tokens de sessão para obter tokens do novos ID/sessão após a última vez em que eles autenticado com sucesso com vários fatores.|10 minutos|até revogado|365 ou até revogado|
-|Version|Inteiro|Defina o valor de 1. Obrigatório.|Nenhum|Nenhum|Nenhum|
+|AccessTokenLifetime|String|Controla quanto tempo **acesso e tokens de ID** são considerados válidos.|10 minutos|1 dia|1 hora|
+|MaxInactiveTime|String|Controla como antigo um token de atualização pode ser antes de um cliente não pode usá-lo para recuperar um novo par de token de acesso/atualizar para acessar um recurso.|10 minutos|90 dias|14 dias|
+|MaxAgeSingleFactor|String|Controles quanto tempo um usuário pode continuar usando tokens de atualização para obter acesso/atualizar novo pares de tokens após a última vez em que eles autenticados com êxito com apenas um fator único. Porque o fator único é considerado menos seguro que a autenticação multifator, recomenda-se essa diretiva estiver definida como um valor igual ou menor que o MultiFactorRefreshTokenMaxAge.|10 minutos|até revogado|365 dias ou até revogado|
+|MaxAgeMultiFactor|String|Controles quanto tempo um usuário pode continuar usando tokens de atualização para obter acesso/atualizar novo pares de tokens após a última vez em que eles autenticados com êxito com vários fatores.|10 minutos|até revogado|365 dias ou até revogado|
+|MaxAgeSessionSingleFactor|String|Controles quanto tempo um usuário pode continuar usando tokens de sessão para obter tokens do novos ID/sessão após a última vez em que eles autenticado com sucesso com apenas um fator único. Como o fator único é considerado menos seguro que a autenticação multifator, é recomendável que essa diretiva estiver definida como um valor igual ou menor que o MultiFactorSessionTokenMaxAge|10 minutos|até revogado|365 ou até revogado|
+|MaxAgeSessionMultiFactor|String|Controles quanto tempo um usuário pode continuar usando tokens de sessão para obter tokens do novos ID/sessão após a última vez em que eles autenticado com sucesso com vários fatores.|10 minutos|até revogado|365 ou até revogado|
+|Versão|Inteiro|Defina o valor de 1. Obrigatório.|Nenhum|Nenhum|Nenhum|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -79,3 +79,11 @@ Veja a seguir uma representação JSON do recurso.
   "type":"TokenLifetimePolicy",
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/policy.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -2,16 +2,16 @@
 title: tipo de recurso de synchronizationStatus
 description: Representa o status atual do synchronizationJob.
 localization_priority: Normal
-ms.openlocfilehash: 01f30338d7f6d4388554df08bf91655136c24a12
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 404fe4f7f58b8189b3059c212aa1ce858350bb01
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27817028"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29523761"
 ---
 # <a name="synchronizationstatus-resource-type"></a>tipo de recurso de synchronizationStatus
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa o status atual do [synchronizationJob](synchronization-synchronizationjob.md).
 
@@ -19,18 +19,18 @@ Representa o status atual do [synchronizationJob](synchronization-synchronizatio
 
 | Propriedade                              | Tipo      | Descrição    |
 |:--------------------------------------|:----------|:---------------|
-|código|Cadeia de caracteres|Código de alto nível de status do trabalho de sincronização. Os valores possíveis são: `NotConfigured`, `NotRun`, `Active`, `Paused`, `Quarantine`.|
+|código|String|Código de alto nível de status do trabalho de sincronização. Os valores possíveis são: `NotConfigured`, `NotRun`, `Active`, `Paused`, `Quarantine`.|
 |countSuccessiveCompleteFailures|Int64|Número de consecutivos vezes esse trabalho falhou.|
 |escrowsPruned|Booliano|`true`Se escrows do trabalho (erros de nível de objeto) foram removidos durante a sincronização inicial. Escrows podem ser removidos se durante a sincronização inicial, você atingir o limite de erros que faria normalmente para inserir o trabalho em quarentena. Em vez de entrar em quarentena, o processo de sincronização limpa erros do trabalho e continua até que a sincronização inicial for concluída. Quando a sincronização inicial for concluída, o trabalho será pausar e aguarde o cliente limpar os erros.|
 |lastExecution|[synchronizationTaskExecution](synchronization-synchronizationtaskexecution.md)|Detalhes da última execução do trabalho.|
 |lastSuccessfulExecution|[synchronizationTaskExecution](synchronization-synchronizationtaskexecution.md)|Detalhes da última execução do trabalho, que não teve que quaisquer erros.|
 |lastSuccessfulExecutionWithExports|[synchronizationTaskExecution](synchronization-synchronizationtaskexecution.md)|Detalhes da última execução do trabalho, que são exportados de objetos para o diretório de destino.|
-|progresso|coleção [synchronizationProgress](synchronization-synchronizationprogress.md)|Detalhes do progresso de um trabalho de conclusão.|
+|Progress|coleção [synchronizationProgress](synchronization-synchronizationprogress.md)|Detalhes do progresso de um trabalho de conclusão.|
 |quarentena|[synchronizationQuarantine](synchronization-quarantine.md)|Se o trabalho estiver em quarentena, detalhes da quarentena.|
 |steadyStateFirstAchievedTime|DateTimeOffset|A hora quando estável (sem alterações para o processo de mais) obteve pela primeira vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
 |steadyStateLastAchievedTime|DateTimeOffset|A hora quando estável (sem alterações para o processo de mais) última obteve. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
 |synchronizedEntryCountByType|coleção [stringKeyLongValuePair](synchronization-stringkeylongvaluepair.md)|Contagem de objetos sincronizados, listados por tipo de objeto.|
-|troubleshootingUrl|Cadeia de caracteres|Se ocorrer um erro, a URL com as etapas de solução de problemas para o problema.|
+|troubleshootingUrl|String|Se ocorrer um erro, a URL com as etapas de solução de problemas para o problema.|
 
 ### <a name="synchronization-status-code-details"></a>Detalhes do código de status de sincronização
 
@@ -74,10 +74,15 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "synchronizationStatus resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/synchronization-synchronizationstatus.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

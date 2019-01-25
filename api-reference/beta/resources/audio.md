@@ -4,20 +4,20 @@ ms.date: 09/10/2017
 title: Áudio
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: b88fbbcd11a4cbeff56c870225d7b0bef4b32346
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: b4ff9e98b3024184298da144f90665ba2f192fef
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27985372"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29527030"
 ---
 # <a name="audio-facet"></a>Faceta Audio
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 O recurso **Audio** agrupa propriedades relacionadas a áudio em um item em uma estrutura simples.
 
-Se um [**DriveItem**](driveitem.md) tiver uma faceta **audio** não nula, o item representará um arquivo de áudio. As propriedades do recurso **Áudio** são preenchidas extraindo-se os metadados do arquivo. 
+Se um DriveItem tiver uma faceta audio não nula, o item representará um arquivo de áudio. As propriedades do recurso Áudio são preenchidas extraindo-se os metadados do arquivo. 
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -70,10 +70,15 @@ Se um [**DriveItem**](driveitem.md) tiver uma faceta **audio** não nula, o item
 
 Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.md).
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The audio facet provides information about music or audio metadata.",
   "keywords": "music,audio,metadata,onedrive",
   "section": "documentation",
-  "tocPath": "Facets/Audio"
-} -->
+  "tocPath": "Facets/Audio",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/audio.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

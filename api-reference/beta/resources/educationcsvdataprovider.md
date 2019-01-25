@@ -4,16 +4,16 @@ description: 'Usado para configurar o perfil de sincronização de dados da esco
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: c9211d5f7ca25b78c6e76c3744f6941e3b172bb3
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: bebacbc1c618c7558d81bde2611840e8d225a8fd
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399343"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529870"
 ---
 # <a name="educationcsvdataprovider-resource-type"></a>tipo de recurso de educationCsvDataProvider
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Usado para configurar o perfil de sincronização de dados da escola quando arquivos CSV são a fonte de entrada.  
 
@@ -41,3 +41,11 @@ Derivado do [educationSynchronizationDataProvider](educationsynchronizationdatap
     "customizations": { "@odata.type": "microsoft.graph.educationSynchronizationCustomizations" }
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/educationcsvdataprovider.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

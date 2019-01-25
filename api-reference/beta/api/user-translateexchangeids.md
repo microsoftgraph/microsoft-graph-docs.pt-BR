@@ -4,20 +4,20 @@ description: Traduza os identificadores de recursos relacionados ao Outlook entr
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d613a6c27df1b53c5a41462276f67cc1991a3c88
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: a00368c918685f6f94020dbea655232bae58ad57
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27957624"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29528225"
 ---
 # <a name="user-translateexchangeids"></a>usuário: translateExchangeIds
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Traduza os identificadores de recursos relacionados ao Outlook entre formatos.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -54,7 +54,7 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 | Valores | Descrição |
 |:-------|:------------|
-| entryId | O formato de ID de entrada binário usado pelos clientes MAPI. |
+| EntryID | O formato de ID de entrada binário usado pelos clientes MAPI. |
 | ewsId | O formato de ID usado pelos clientes de serviços Web do Exchange. |
 | immutableEntryId | O compatível com MAPI imutável ID formato binário. |
 | restId | O formato de ID padrão usado pelo Microsoft Graph. |
@@ -62,8 +62,8 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 Formatos binários (`entryId` e `immutableEntryId`) são URL-safe codificação base64. URL-safeness é implementado, modificando a codificação base64 dos dados binários da seguinte maneira:
 
-- Substituir `+` com`-`
-- Substituir `/` com`_`
+- `+`
+- `/`
 - Remova os caracteres de preenchimento à direita (`=`)
 - Adicionar um número inteiro até o final da cadeia de caracteres indicando quantos caracteres de preenchimento estavam em original (`0`, `1`, ou `2`)
 
@@ -124,3 +124,11 @@ Content-type: application/json
   ]
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-translateexchangeids.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,20 +4,20 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: SharingLink
 localization_priority: Normal
-ms.openlocfilehash: c303436aafbdbb5167a992f405036b5e00e4d635
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: c21c891981106faa4b631bb2713913bfa8ed0713
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856389"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29521450"
 ---
-# <a name="sharinglink-resource-type"></a>tipo de recurso de sharingLink
+# <a name="sharinglink-resource-type"></a>Tipo de recurso SharingLink
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O recurso de **sharingLink** agrupa itens de dados relacionados à link em uma única estrutura.
+O recurso **SharingLink** agrupa itens de dados relacionados ao link em uma única estrutura.
 
-Se um recurso de [**permissão**](permission.md) tiver uma faceta não nulas **sharingLink** , a permissão representa um link de compartilhamento (ao contrário de permissões concedidas para uma pessoa ou grupo).
+Se um recurso [**Permission**](permission.md) tiver uma faceta **sharingLink** não nula, a permissão representará um link de compartilhamento (em vez de permissões concedidas a uma pessoa ou um grupo).
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -76,10 +76,15 @@ A tabela a seguir define os valores possíveis para a propriedade de **escopo** 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The sharing link facet provides information about how a file is shared.",
   "keywords": "sharing,sharing link, sharing url, webUrl",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/sharinglink.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

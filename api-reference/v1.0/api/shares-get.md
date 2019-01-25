@@ -4,12 +4,12 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Acessar itens compartilhados
 localization_priority: Normal
-ms.openlocfilehash: fbde377c05b4b1f86bff32afcbaf0023c9be487a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 62a2b15fbd0715c719e0fefc6a0b02162bc4fdec
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831525"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29522564"
 ---
 # <a name="accessing-shared-driveitems"></a>Acessando DriveItems compartilhados
 
@@ -37,9 +37,9 @@ GET /shares/{shareIdOrEncodedSharingUrl}
 
 ### <a name="path-parameters"></a>Parâmetros do caminho
 
-| Nome do Parâmetro        | Valor    | Descrição                                                                         |
-|:----------------------|:---------|:------------------------------------------------------------------------------------|
-| **sharingTokenOrUrl** | `string` | Obrigatório. Um token de compartilhamento retornado pela API ou uma URL de compartilhamento corretamente codificada. |
+| Nome do Parâmetro                 | Valor    | Descrição                                                                         |
+|:-------------------------------|:---------|:------------------------------------------------------------------------------------|
+| **shareIdOrEncodedSharingUrl** | `string` | Obrigatório. Um token de compartilhamento retornado pela API ou uma URL de compartilhamento corretamente codificada. |
 
 ### <a name="encoding-sharing-urls"></a>Codificação de URLs de compartilhamento
 
@@ -56,6 +56,21 @@ string sharingUrl = "https://onedrive.live.com/redir?resid=1231244193912!12&auth
 string base64Value = System.Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes(sharingUrl));
 string encodedUrl = "u!" + base64Value.TrimEnd('=').Replace('/','_').Replace('+','-');
 ```
+
+## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
+
+| Nome       | Tipo   | Descrição                                                    |
+|:-----------|:-------|:---------------------------------------------------------------|
+| **Prefer** | string | Opcional. Definido como uma do `prefer` valores documentada abaixo.  |
+
+### <a name="prefer-header-values"></a>Preferir valores de cabeçalho
+
+| Nome                          | Descrição                                                                                             |
+|:------------------------------|:--------------------------------------------------------------------------------------------------------|
+| redeemSharingLink             | Se o **shareIdOrEncodedSharingUrl** for um link de compartilhamento, conceda o chamador durável acesso ao item    |
+| redeemSharingLinkIfNecessary  | Mesmo que redeemSharingLink, mas o access somente é garantido ser concedida para a duração dessa solicitação |
+
+redeemSharingLink deve ser considerado equivalente ao chamador navegando para o link de compartilhamento do navegador (aceitando o compartilhamento gesto), enquanto redeemSharingLinkIfNecessary destina cenários onde a intenção é simplesmente para inspecionar o link metadados.
 
 ## <a name="response"></a>Resposta
 

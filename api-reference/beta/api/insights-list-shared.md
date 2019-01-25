@@ -4,16 +4,16 @@ description: Percepção calculada que retorna a lista de arquivos compartilhado
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: c40f6ba80a39fb7db3b959bc78f317d86f3de8e2
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 2eef2a9b306984a8ad05bcf8fefca2458d609ab1
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27921777"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29517348"
 ---
 # <a name="list-shared"></a>Lista compartilhada
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Percepção calculada que retorna a lista de arquivos compartilhados com um usuário.
 
@@ -116,3 +116,11 @@ O recurso referenciado por um insight compartilhado pode ser expandido.
 ```http
 GET https://graph.microsoft.com/beta/me/insights/shared/{id}/resource
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/insights-list-shared.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

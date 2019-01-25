@@ -2,16 +2,16 @@
 title: tipo de recurso de secureScores
 description: 'superior = n, onde n = o número de dias de dados que você deseja recuperar. '
 localization_priority: Normal
-ms.openlocfilehash: 332a9656d8237bb07d5c7739b666e09539cf984f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 8b4be9822b782303efe38dbdf5bd43e1ee543421
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828732"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29528659"
 ---
 # <a name="securescores-resource-type"></a>tipo de recurso de secureScores
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa a pontuação seguro de um locatário por dia da pontuação de dados, no nível de locatário e controle. Por padrão, 90 dias de dados é mantido. Esses dados são classificados pelo **createdDateTime**, do mais recente à mais antiga. Isso permitirá que você para respostas da página usando $top = n, onde n = o número de dias de dados que você deseja recuperar. 
 
@@ -28,9 +28,9 @@ Propriedades que contêm de tipo de entidade de segurança locatário pontuaçã
 
 |Propriedade |Tipo |Descrição |
 |:--|:--|:--|
-|   azureTenantId   |   Cadeia de caracteres  |   ID de cadeia de caracteres do GUID para o inquilino.  |
+|   azureTenantId   |   String  |   ID de cadeia de caracteres do GUID para o inquilino.  |
 |   createdDateTime |   DateTimeOffset  |   A data em que a entidade é criada.  |
-|   id  |   Cadeia de caracteres  |   Combinação de azureTenantId_createdDateTime.   |
+|   id  |   String  |   Combinação de azureTenantId_createdDateTime.   |
 |   licensedUserCount   |   Int32   |   Licenciado contagem de usuários do determinado inquilino.    |
 |   activeUserCount |   Int32   |   Contagem de usuário ativo do determinado inquilino.  |
 |   currentScore    |   Duplo  |   Pontuação de locatário atual que já alcançou na data especificada.    |
@@ -74,10 +74,15 @@ Veja a seguir uma representação JSON do recurso.
 ```
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "secureScores resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/securescores.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

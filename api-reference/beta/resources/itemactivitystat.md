@@ -4,16 +4,16 @@ ms.author: dspektor
 ms.date: 09/14/2017
 title: ItemActivityStat
 localization_priority: Normal
-ms.openlocfilehash: d0917d0100d33abee1095e2a7d06a4732d382937
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 1362116c0dbe997eda941cb790e00e9ddb078ae4
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854247"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29517628"
 ---
 # <a name="itemactivitystat-resource-type"></a>tipo de recurso de itemActivityStat
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 O recurso de **itemActivityStat** fornece informações sobre atividades realizadas dentro de um intervalo de tempo.
 
@@ -53,7 +53,7 @@ O recurso de **itemActivityStat** fornece informações sobre atividades realiza
 | edit             | [itemActionStat][]      | Estatísticas sobre as ações de **Editar** nesse intervalo. Somente leitura.
 | delete           | [itemActionStat][]      | Estatísticas sobre as ações **Excluir** nesse intervalo. Somente leitura.
 | move             | [itemActionStat][]      | Estatísticas sobre as ações de **Mover** nesse intervalo. Somente leitura.
-| acesso           | [itemActionStat][]      | Estatísticas sobre as ações de **acesso** nesse intervalo. Somente leitura.
+| Access           | [itemActionStat][]      | Estatísticas sobre as ações de **acesso** nesse intervalo. Somente leitura.
 
 [itemActionStat]: itemactionstat.md
 [incompleteData]: incompletedata.md
@@ -68,10 +68,15 @@ O recurso de **itemActivityStat** fornece informações sobre atividades realiza
 
 ## <a name="remarks"></a>Comentários
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The ItemActivityStat object provides information about activities that took place on an item.",
   "keywords": "activities,activity,action,analytics",
   "section": "documentation",
-  "tocPath": "Resources/ItemActivityStat"
-} -->
+  "tocPath": "Resources/ItemActivityStat",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/itemactivitystat.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

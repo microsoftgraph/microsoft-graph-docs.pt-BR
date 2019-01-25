@@ -3,18 +3,18 @@ title: Criar e enviar uma notificação
 description: 'Criar e enviar uma notificação de direcionamento de um usuário por meio do Microsoft Graph. A notificação é armazenada na notificação Microsoft Graph feed repositório e é enviada a todos os clientes de aplicativo em todos os pontos de extremidade do dispositivo que o usuário está conectado ao.  '
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: d8258e0da04f199a0f40bdb2a2ec85e01d5d5faf
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 70c7992a6fd323b909d948976132304fa04393c4
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27975929"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29528442"
 ---
 # <a name="create-and-send-a-notification"></a>Criar e enviar uma notificação
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Criar e enviar uma notificação de direcionamento de um usuário por meio do Microsoft Graph. A notificação é armazenada na notificação Microsoft Graph feed repositório e é enviada a todos os clientes de aplicativo em todos os pontos de extremidade do dispositivo que o usuário está conectado ao.  
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -32,7 +32,7 @@ POST /me/notifications/
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 |Nome | Tipo | Descrição|
 |:----|:-----|:-----------|
-|Autorização | string |O cabeçalho de autorização é usado para passar as credenciais do chamador. Portador {token}. Obrigatório. |
+|Autorização | string |O cabeçalho de autorização é usado para passar as credenciais do chamador. Token de portador Obrigatório. |
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, fornece uma representação JSON de um objeto de [notificação](../resources/projectrome-notification.md) .
 
@@ -94,3 +94,11 @@ location: https://graph.microsoft.com/beta/me/notifications/518c4fb1-c565-4d67-9
 ```
 
 
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/projectrome-notification-post.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

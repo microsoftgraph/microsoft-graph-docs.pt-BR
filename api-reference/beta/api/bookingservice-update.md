@@ -1,20 +1,20 @@
 ---
 title: Atualizar bookingservice
-description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
+description: Atualize as propriedades de um objeto de bookingService no bookingbusiness especificado.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 6830ebc8fc101c4c9ce60f6157ed6bfdab82748c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 6049fe68eaa45597246bef1c1b11952e3c4a5d42
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937037"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29519714"
 ---
 # <a name="update-bookingservice"></a>Atualizar bookingservice
 
- > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
- 
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Atualize as propriedades de um objeto de [bookingService](../resources/bookingservice.md) no especificado [bookingbusiness](../resources/bookingbusiness.md).
 
 Eis alguns exemplos que você pode personalizar para um serviço:
@@ -24,7 +24,7 @@ Eis alguns exemplos que você pode personalizar para um serviço:
 - Buffer para definir antes ou término após o serviço a qualquer momento
 - Parâmetros de [política de agendamento](../resources/bookingschedulingpolicy.md) , como mínimo de aviso do livro ou Cancelar, e se os clientes podem selecionar membros de equipe específico para um compromisso.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -48,19 +48,19 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|defaultDuration|Duração|O comprimento padrão do serviço, representado em número de dias, horas, minutos e segundos. Por exemplo, P11D23H59M59.999999999999S. |
+|defaultDuration|Duration|O comprimento padrão do serviço, representado em número de dias, horas, minutos e segundos. Por exemplo, P11D23H59M59.999999999999S. |
 |defaultLocation|[location](../resources/location.md)|A localização física padrão para o serviço.|
 |defaultPrice|Duplo|O preço monetários padrão para o serviço.|
 |defaultPriceType|string|A maneira padrão de serviço é cobrada. Os valores possíveis são: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`.|
 |defaultReminders|coleção [bookingReminder](../resources/bookingreminder.md)|O padrão é definido de lembretes para um compromisso desse serviço. O valor dessa propriedade está disponível somente quando a ler este **bookingService** pela sua identificação.|
-|description|Cadeia de caracteres|Uma descrição de texto para o serviço.|
-|displayName|Cadeia de caracteres|Um nome de serviço.|
-|emailAddress|Cadeia de caracteres|Um endereço de email|
-|id|Cadeia de caracteres| Somente leitura.|
+|description|String|Uma descrição de texto para o serviço.|
+|displayName|String|Um nome de serviço.|
+|emailAddress|String|Um email:  |
+|id|String| Somente leitura.|
 |isHiddenFromCustomers|Booliano|True significa que esse serviço não está disponível para os clientes de reserva.|
-|Observações|Cadeia de caracteres|Informações adicionais sobre esse serviço.|
-|postBuffer|Duração|Encerra o tempo de buffer após um compromisso para este serviço e antes que a próxima compromisso do cliente pode ser agendado.|
-|preBuffer|Duração|O tempo de buffer antes de um compromisso para esse serviço pode iniciar.|
+|Observações|String|Informações adicionais sobre esse serviço.|
+|postBuffer|Duration|Encerra o tempo de buffer após um compromisso para este serviço e antes que a próxima compromisso do cliente pode ser agendado.|
+|preBuffer|Duration|O tempo de buffer antes de um compromisso para esse serviço pode iniciar.|
 |schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|O conjunto de diretivas que determinam como compromissos para esse tipo de serviço devem ser criados e gerenciados.|
 |staffMemberIds|String collection|Representa os [membros da equipe](../resources/bookingstaffmember.md) que forneça esse serviço. |
 
@@ -83,7 +83,7 @@ Content-type: application/json
 }
 ```
 ##### <a name="response"></a>Resposta
-Este é um exemplo de resposta. 
+Este é um exemplo de resposta.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -94,10 +94,15 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update bookingservice",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/bookingservice-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

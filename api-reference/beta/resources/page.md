@@ -2,16 +2,16 @@
 title: Tipo de recurso page
 description: Uma página em um bloco de anotações do OneNote.
 localization_priority: Normal
-ms.openlocfilehash: 5928f430fcbfe9f41c6aa83e99d7dfe737e8e1c7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: d8c27cdc144e9b192bd0205f256653ff7f04df5f
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27850131"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29519238"
 ---
 # <a name="page-resource-type"></a>Tipo de recurso page
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Uma página em um bloco de anotações do OneNote.
 
@@ -70,16 +70,21 @@ Veja a seguir uma representação JSON do recurso.
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Get page](../api/page-get.md) | [Página](page.md) |Leia as propriedades e as relações da página.|
-|[Atualizar o conteúdo da página](../api/page-update.md) | None |Atualizar o conteúdo HTML da página. |
-|[Excluir página](../api/page-delete.md) | None |Exclua a página. |
+|[Atualizar o conteúdo da página](../api/page-update.md) | Nenhum |Atualizar o conteúdo HTML da página. |
+|[Excluir página](../api/page-delete.md) | Nenhum |Exclua a página. |
 |[copyToSection](../api/page-copytosection.md)| None |Copia a página para uma seção específica.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "page resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/page.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -2,19 +2,19 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/17/2017
-title: DriveItemVersion
+title: driveItemVersion
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 3f33c59da4a748c176c6044e4db3bac70eac71cb
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 25b480a22b93ce454927177d2d842390496f54de
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27923611"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29528967"
 ---
 # <a name="driveitemversion-resource-type"></a>Tipo de recurso DriveItemVersion
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 O recurso **DriveItemVersion** representa uma versão específica de um [DriveItem](driveitem.md).
 
@@ -58,7 +58,7 @@ Na tabela anterior, os exemplos usam `/drive`, mas há muitas solicitações vá
 | **id**                   | string                                               | A ID da versão. Somente leitura.                                       |
 | **lastModifiedBy**       | [IdentitySet](../resources/identityset.md)           | Identidade do usuário que modificou a versão pela última vez. Somente leitura.        |
 | **lastModifiedDateTime** | [DateTimeOffset](../resources/timestamp.md)          | Data e hora em que a versão foi modificada pela última vez. Somente leitura.                 |
-| **publication**          | [PublicationFacet](../resources/publicationfacet.md) | Indica o status de publicação desta versão específica. Somente leitura. |
+| publication          | [PublicationFacet](../resources/publicationfacet.md) | Indica o status de publicação desta versão específica. Somente leitura. |
 | **size**                 | Int64                                                | Indica o tamanho do fluxo de conteúdo para esta versão do item.  |
 
 ## <a name="relationships"></a>Relações
@@ -69,10 +69,15 @@ A tabela a seguir define as relações que o recurso **driveItemVersion** tem co
 | :---------------- | :----- | :--------------------------------- |
 | **content**       | Fluxo | O fluxo de conteúdo da versão. |
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The version facet provides information about the properties of a file version.",
   "keywords": "version,versions,version-history,history",
   "section": "documentation",
-  "tocPath": "Facets/Version"
-} -->
+  "tocPath": "Facets/Version",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/driveItemVersion.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -1,39 +1,39 @@
 ---
 title: tipo de recurso de onPremisesExtensionAttributes
-description: A propriedade **onPremisesExtensionAttributes** da entidade do usuário contém quinze propriedades de atributo de extensão personalizada. Um usuário **onPremisesSyncEnabled** , esse conjunto de propriedades é administrado no Active Directory no local e sincronizado com o Azure AD e é somente leitura. Para um usuário somente na nuvem (onde **onPremisesSyncEnabled** é false), essas propriedades podem ser definida durante a criação ou atualização.
+description: A propriedade **onPremisesExtensionAttributes** da entidade do usuário contém quinze propriedades de atributo de extensão personalizada. Para um usuário onPremisesSyncEnabled, esse conjunto de propriedades é masterizado no Active Directory local e sincronizado com o Azure Active Directory e é somente leitura. Para um usuário somente na nuvem (onde onPremisesSyncEnabled é falso), essas propriedades podem ser definidas durante a criação ou atualização.
 localization_priority: Normal
-ms.openlocfilehash: 44589338e25e01cb483df6bfa3c1e078e352f5ed
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: f44f71fdcd86d2165289282568a2d7153ccc99b1
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868156"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29518237"
 ---
 # <a name="onpremisesextensionattributes-resource-type"></a>tipo de recurso de onPremisesExtensionAttributes
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A propriedade **onPremisesExtensionAttributes** da entidade do [usuário](user.md) contém quinze propriedades de atributo de extensão personalizada. Um usuário **onPremisesSyncEnabled** , esse conjunto de propriedades é administrado no Active Directory no local e sincronizado com o Azure AD e é somente leitura. Para um usuário somente na nuvem (onde **onPremisesSyncEnabled** é false), essas propriedades podem ser definida durante a criação ou atualização.
+A propriedade **onPremisesExtensionAttributes** da entidade do [usuário](user.md) contém quinze propriedades de atributo de extensão personalizada. Para um usuário onPremisesSyncEnabled, esse conjunto de propriedades é masterizado no Active Directory local e sincronizado com o Azure Active Directory e é somente leitura. Para um usuário somente na nuvem (onde onPremisesSyncEnabled é falso), essas propriedades podem ser definidas durante a criação ou atualização.
 
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|extensionAttribute1|Cadeia de caracteres| Primeiro atributo de extensão personalizável. |
-|extensionAttribute2|Cadeia de caracteres| Segundo atributo de extensão personalizável. |
-|extensionAttribute3|Cadeia de caracteres| Atributo do terceiro extensão personalizável. |
-|extensionAttribute4|Cadeia de caracteres| Quarto atributo de extensão personalizável. |
-|extensionAttribute5|Cadeia de caracteres| Atributo do quinto extensão personalizável. |
-|extensionAttribute6|Cadeia de caracteres| Sexto atributo de extensão personalizável. |
-|extensionAttribute7|Cadeia de caracteres| Sétimo atributo de extensão personalizável. |
-|extensionAttribute8|Cadeia de caracteres| Oitavo atributo de extensão personalizável. |
-|extensionAttribute9|Cadeia de caracteres| Nono atributo de extensão personalizável. |
-|extensionAttribute10|Cadeia de caracteres| Décimo atributo de extensão personalizável. |
-|extensionAttribute11|Cadeia de caracteres| Atributo de extensão Décima primeira personalizável. |
-|extensionAttribute12|Cadeia de caracteres| Atributo de extensão Décima segunda personalizável. |
-|extensionAttribute13|Cadeia de caracteres| Atributo de extensão Décima terceira personalizável. |
-|extensionAttribute14|Cadeia de caracteres| Atributo de extensão décima quarta personalizável. |
-|extensionAttribute15|Cadeia de caracteres| Atributo de extensão Décima quinta personalizável. |
+|extensionAttribute1|String| Primeiro atributo de extensão personalizável. |
+|extensionAttribute2|String| Segundo atributo de extensão personalizável. |
+|extensionAttribute3|String| Atributo do terceiro extensão personalizável. |
+|extensionAttribute4|String| Quarto atributo de extensão personalizável. |
+|extensionAttribute5|String| Atributo do quinto extensão personalizável. |
+|extensionAttribute6|String| Sexto atributo de extensão personalizável. |
+|extensionAttribute7|String| Sétimo atributo de extensão personalizável. |
+|extensionAttribute8|String| Oitavo atributo de extensão personalizável. |
+|extensionAttribute9|String| Nono atributo de extensão personalizável. |
+|extensionAttribute10|String| Décimo atributo de extensão personalizável. |
+|extensionAttribute11|String| Atributo de extensão Décima primeira personalizável. |
+|extensionAttribute12|String| Atributo de extensão Décima segunda personalizável. |
+|extensionAttribute13|String| Atributo de extensão Décima terceira personalizável. |
+|extensionAttribute14|String| Atributo de extensão décima quarta personalizável. |
+|extensionAttribute15|String| Atributo de extensão Décima quinta personalizável. |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -70,10 +70,15 @@ A propriedade **onPremisesExtensionAttributes** da entidade do [usuário](user.m
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "onPremisesExtensionAttributes resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/onpremisesextensionattributes.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

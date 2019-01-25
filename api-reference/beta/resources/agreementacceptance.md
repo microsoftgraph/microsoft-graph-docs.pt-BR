@@ -2,16 +2,16 @@
 title: tipo de recurso de agreementAcceptance
 description: Representa o status atual de um usuário dentro do escopo dos termos de personalizável de uma empresa de uso possibilitada pela Azure Active Directory (AD Azure).
 localization_priority: Normal
-ms.openlocfilehash: b1c8a5e40fe6a12daf23566ae902ddf61f3ee4df
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 884a6b7dcf4dcc8f00aa927dd9d486c074b64183
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828278"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29518867"
 ---
 # <a name="agreementacceptance-resource-type"></a>tipo de recurso de agreementAcceptance
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa o status atual de um usuário dentro do escopo dos termos de personalizável de uma empresa de uso possibilitada pela Azure Active Directory (AD Azure).
 
@@ -28,17 +28,17 @@ Representa o status atual de um usuário dentro do escopo dos termos de personal
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|agreementFileId|Cadeia de caracteres|ID do arquivo contrato aceito pelo usuário.|
-|agreementId|Cadeia de caracteres|ID do contrato.|
-|id|Cadeia de caracteres| Somente leitura.|
+|agreementFileId|String|ID do arquivo contrato aceito pelo usuário.|
+|agreementId|String|ID do contrato.|
+|id|String| Somente leitura.|
 |recordedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |estado|string| Os valores possíveis são: `accepted` e `declined`.|
-|userDisplayName|Cadeia de caracteres|Nome para exibição do usuário quando a aceitação foi registrada.|
+|userDisplayName|String|Nome para exibição do usuário quando a aceitação foi registrada.|
 |userEmail|Cadeia de caracteres|Email do usuário quando a aceitação foi registrada.|
-|userId|Cadeia de caracteres|ID do usuário que aceitou o contrato.|
-|userPrincipalName|Cadeia de caracteres|UPN do usuário quando a aceitação foi registrada.|
+|userId|String|ID do usuário que aceitou o contrato.|
+|userPrincipalName|String|UPN do usuário quando a aceitação foi registrada.|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 Nenhum
 
 
@@ -71,10 +71,15 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "agreementAcceptance resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/agreementacceptance.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

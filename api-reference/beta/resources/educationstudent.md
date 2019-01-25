@@ -1,19 +1,19 @@
 ---
 title: Tipo de recurso educationStudent
-description: Informações adicionais incluídas a um educationUser que está presente quando a primaryRole de um usuário é `student`.
+description: Informações adicionais incluídas a um `student` que está presente quando a primaryRole de um usuário é .
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 19ce3e28ccedc5f6165c8c333afb2ccd10343f14
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 554763d41c4ce48a09334394330e05fcd6dd4152
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29406903"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29522032"
 ---
 # <a name="educationstudent-resource-type"></a>Tipo de recurso educationStudent
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Informações adicionais incluídas a um [educationUser](educationuser.md) que está presente quando a primaryRole de um usuário é `student`.
 
@@ -21,7 +21,7 @@ Informações adicionais incluídas a um [educationUser](educationuser.md) que e
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |birthDate|Data| Data de nascimento do aluno.|
-|externalId|Cadeia de caracteres| ID do aluno no sistema de origem.|
+|externalId|String| ID do aluno no sistema de origem.|
 |gender|educationGender| Os valores possíveis são: `female`, `male`, `other`, `unkownFutureValue`.|
 |grade|Cadeia de caracteres|Nível de classificação atual do aluno.|
 |graduationYear|Cadeia de caracteres| Ano que o aluno está graduando na escola.|
@@ -52,10 +52,15 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "educationStudent resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/educationstudent.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

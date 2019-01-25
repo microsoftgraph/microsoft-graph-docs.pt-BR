@@ -5,18 +5,18 @@ ms.date: 09/10/2017
 title: Baixe uma versão anterior
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: b0d8125f86459caa0fd9fd863a1a4f280e0ad89e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 57e280a1ecc371505ceda91596fdeb2d6be1abea
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27980108"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29528015"
 ---
 # <a name="download-contents-of-a-driveitemversion-resource-preview"></a>Baixar o conteúdo de um recurso de DriveItemVersion (prévia)
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere o conteúdo de uma versão específica de um [driveItem](../resources/driveitem.md). 
+Recuperar o conteúdo de uma versão específica de um [DriveItem](../resources/driveitem.md). 
 
 >**Observação:** Obtendo o conteúdo da versão atual não é suportado. Em vez disso, use o [ponto de extremidade conteúdo driveItem](driveitem-get-content.md).
 
@@ -81,10 +81,15 @@ O OneDrive não preserva os metadados completos de versões anteriores de um arq
 
 Quando seu aplicativo recupera a lista de versões disponíveis para um arquivo, um recurso [driveItemVersion](../resources/driveitemversion.md) é retornado que fornece as informações disponíveis sobre a versão específica.
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List, review, and download previous versions of a driveItem",
   "keywords": "version, version history, versions",
   "section": "documentation",
-  "tocPath": "Items/Version history"
-} -->
+  "tocPath": "Items/Version history",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitemversion-get-contents.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

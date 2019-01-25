@@ -3,16 +3,16 @@ title: 'reportRoot: getOffice365ActiveUserCounts'
 description: Obtenha a contagem de usuários ativos diários no período de relatório por produto.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 716a3395a15930d31014d907fd00f03ee5938d17
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 409c489ca985c7a357be13ae0ee0a487b54f1eac
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27933201"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29528169"
 ---
 # <a name="reportroot-getoffice365activeusercounts"></a>reportRoot: getOffice365ActiveUserCounts
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Obtenha a contagem de usuários ativos diários no período de relatório por produto.
 
@@ -85,7 +85,7 @@ Se tiver êxito, este método retornará um `200 OK` código de resposta e um ob
 Não há suporte para as seguintes propriedades no objeto **[office365ActiveUserCounts](../resources/office365activeusercounts.md)** na China Microsoft Graph operado pela 21Vianet:
 
 - Yammer
-- equipes
+- Teams
 
 ## <a name="example"></a>Exemplo
 
@@ -185,3 +185,11 @@ Content-Length: 317
   ]
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/reportroot-getoffice365activeusercounts.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
