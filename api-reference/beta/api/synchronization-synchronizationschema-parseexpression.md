@@ -2,58 +2,58 @@
 title: 'synchronizationSchema: parseExpression'
 description: '(.. / resources/synchronization_attributemappingsource.md) objeto. '
 localization_priority: Normal
-ms.openlocfilehash: dbde03b9ae85377801ad894c8b8ca22c6baebc85
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 27545333c6ff7b3c9ffde3e1c59abd09465db1c2
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811022"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29522963"
 ---
-# <a name="synchronizationschema-parseexpression"></a><span data-ttu-id="75a48-103">synchronizationSchema: parseExpression</span><span class="sxs-lookup"><span data-stu-id="75a48-103">synchronizationSchema: parseExpression</span></span>
+# <a name="synchronizationschema-parseexpression"></a><span data-ttu-id="50126-103">synchronizationSchema: parseExpression</span><span class="sxs-lookup"><span data-stu-id="50126-103">synchronizationSchema: parseExpression</span></span>
 
-> <span data-ttu-id="75a48-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="75a48-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="75a48-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="75a48-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="75a48-106">Analisar uma expressão de cadeia de caracteres específica em uma [attributeMappingSource | (… / resources/synchronization_attributemappingsource.md) objeto.</span><span class="sxs-lookup"><span data-stu-id="75a48-106">Parse a given string expression into an [attributeMappingSource|(../resources/synchronization_attributemappingsource.md) object.</span></span> 
+<span data-ttu-id="50126-104">Analisar uma expressão de cadeia de caracteres específica em uma [attributeMappingSource | (… / resources/synchronization_attributemappingsource.md) objeto.</span><span class="sxs-lookup"><span data-stu-id="50126-104">Parse a given string expression into an [attributeMappingSource|(../resources/synchronization_attributemappingsource.md) object.</span></span> 
 
-<span data-ttu-id="75a48-107">Para obter mais informações sobre expressões, consulte [Como escrever expressões para mapeamentos de atributo no Windows Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings).</span><span class="sxs-lookup"><span data-stu-id="75a48-107">For more information about expressions, see [Writing Expressions for Attribute Mappings in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings).</span></span>
+<span data-ttu-id="50126-105">Para obter mais informações sobre expressões, consulte [Como escrever expressões para mapeamentos de atributo no Windows Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings).</span><span class="sxs-lookup"><span data-stu-id="50126-105">For more information about expressions, see [Writing Expressions for Attribute Mappings in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="75a48-108">Permissions</span><span class="sxs-lookup"><span data-stu-id="75a48-108">Permissions</span></span>
-<span data-ttu-id="75a48-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="75a48-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="50126-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="50126-106">Permissions</span></span>
+<span data-ttu-id="50126-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="50126-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="75a48-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="75a48-111">Permission type</span></span>                        | <span data-ttu-id="75a48-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="75a48-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="50126-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="50126-109">Permission type</span></span>                        | <span data-ttu-id="50126-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="50126-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="75a48-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="75a48-113">Delegated (work or school account)</span></span>     |<span data-ttu-id="75a48-114">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="75a48-114">Directory.ReadWrite.All</span></span>  |
-|<span data-ttu-id="75a48-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="75a48-115">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="75a48-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="75a48-116">Not supported.</span></span>|
-|<span data-ttu-id="75a48-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="75a48-117">Application</span></span>                            |<span data-ttu-id="75a48-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="75a48-118">Not supported.</span></span>| 
+|<span data-ttu-id="50126-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="50126-111">Delegated (work or school account)</span></span>     |<span data-ttu-id="50126-112">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="50126-112">Directory.ReadWrite.All</span></span>  |
+|<span data-ttu-id="50126-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="50126-113">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="50126-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="50126-114">Not supported.</span></span>|
+|<span data-ttu-id="50126-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="50126-115">Application</span></span>                            |<span data-ttu-id="50126-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="50126-116">Not supported.</span></span>| 
 
-## <a name="http-request"></a><span data-ttu-id="75a48-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="75a48-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="50126-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="50126-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /servicePrincipals/{id}/synchronization/jobs/{id}/schema/parseExpression
 POST /servicePrincipals/{id}/synchronization/templates/{id}/schema/parseExpression
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="75a48-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="75a48-120">Request headers</span></span>
-| <span data-ttu-id="75a48-121">Nome</span><span class="sxs-lookup"><span data-stu-id="75a48-121">Name</span></span>       | <span data-ttu-id="75a48-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="75a48-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="50126-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="50126-118">Request headers</span></span>
+| <span data-ttu-id="50126-119">Nome</span><span class="sxs-lookup"><span data-stu-id="50126-119">Name</span></span>       | <span data-ttu-id="50126-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="50126-120">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="75a48-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="75a48-123">Authorization</span></span>  | <span data-ttu-id="75a48-124">Portador {código}</span><span class="sxs-lookup"><span data-stu-id="75a48-124">Bearer {code}</span></span>|
+| <span data-ttu-id="50126-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="50126-121">Authorization</span></span>  | <span data-ttu-id="50126-122">Portador {código}</span><span class="sxs-lookup"><span data-stu-id="50126-122">Bearer {code}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="75a48-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="75a48-125">Request body</span></span>
-<span data-ttu-id="75a48-126">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="75a48-126">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="50126-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="50126-123">Request body</span></span>
+<span data-ttu-id="50126-124">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="50126-124">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="75a48-127">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="75a48-127">Parameter</span></span>    | <span data-ttu-id="75a48-128">Tipo</span><span class="sxs-lookup"><span data-stu-id="75a48-128">Type</span></span>   |<span data-ttu-id="75a48-129">Descrição</span><span class="sxs-lookup"><span data-stu-id="75a48-129">Description</span></span>|
+| <span data-ttu-id="50126-125">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="50126-125">Parameter</span></span>    | <span data-ttu-id="50126-126">Tipo</span><span class="sxs-lookup"><span data-stu-id="50126-126">Type</span></span>   |<span data-ttu-id="50126-127">Descrição</span><span class="sxs-lookup"><span data-stu-id="50126-127">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="75a48-130">expressão</span><span class="sxs-lookup"><span data-stu-id="75a48-130">expression</span></span>               |<span data-ttu-id="75a48-131">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="75a48-131">String</span></span>               |<span data-ttu-id="75a48-132">Expressão para analisar.</span><span class="sxs-lookup"><span data-stu-id="75a48-132">Expression to parse.</span></span>|
-|<span data-ttu-id="75a48-133">testInputObject</span><span class="sxs-lookup"><span data-stu-id="75a48-133">testInputObject</span></span>          |[<span data-ttu-id="75a48-134">expressionInputObject</span><span class="sxs-lookup"><span data-stu-id="75a48-134">expressionInputObject</span></span>](../resources/synchronization-expressioninputobject.md)|<span data-ttu-id="75a48-135">Objeto de dados de teste para avaliar a expressão contra.</span><span class="sxs-lookup"><span data-stu-id="75a48-135">Test data object to evaluate expression against.</span></span> <span data-ttu-id="75a48-136">Opcional.</span><span class="sxs-lookup"><span data-stu-id="75a48-136">Optional.</span></span>|
-|<span data-ttu-id="75a48-137">targetAttributeDefinition</span><span class="sxs-lookup"><span data-stu-id="75a48-137">targetAttributeDefinition</span></span>|[<span data-ttu-id="75a48-138">attributeDefinition</span><span class="sxs-lookup"><span data-stu-id="75a48-138">attributeDefinition</span></span>](../resources/synchronization-attributedefinition.md) |<span data-ttu-id="75a48-139">Definição do atributo que será mapeada para esta expressão.</span><span class="sxs-lookup"><span data-stu-id="75a48-139">Definition of the attribute that will be mapped to this expression.</span></span> <span data-ttu-id="75a48-140">Opcional.</span><span class="sxs-lookup"><span data-stu-id="75a48-140">Optional.</span></span>|
+|<span data-ttu-id="50126-128">expressão</span><span class="sxs-lookup"><span data-stu-id="50126-128">expression</span></span>               |<span data-ttu-id="50126-129">String</span><span class="sxs-lookup"><span data-stu-id="50126-129">String</span></span>               |<span data-ttu-id="50126-130">Expressão para analisar.</span><span class="sxs-lookup"><span data-stu-id="50126-130">Expression to parse.</span></span>|
+|<span data-ttu-id="50126-131">testInputObject</span><span class="sxs-lookup"><span data-stu-id="50126-131">testInputObject</span></span>          |[<span data-ttu-id="50126-132">expressionInputObject</span><span class="sxs-lookup"><span data-stu-id="50126-132">expressionInputObject</span></span>](../resources/synchronization-expressioninputobject.md)|<span data-ttu-id="50126-133">Objeto de dados de teste para avaliar a expressão contra.</span><span class="sxs-lookup"><span data-stu-id="50126-133">Test data object to evaluate expression against.</span></span> <span data-ttu-id="50126-134">Opcional.</span><span class="sxs-lookup"><span data-stu-id="50126-134">Optional.</span></span>|
+|<span data-ttu-id="50126-135">targetAttributeDefinition</span><span class="sxs-lookup"><span data-stu-id="50126-135">targetAttributeDefinition</span></span>|[<span data-ttu-id="50126-136">attributeDefinition</span><span class="sxs-lookup"><span data-stu-id="50126-136">attributeDefinition</span></span>](../resources/synchronization-attributedefinition.md) |<span data-ttu-id="50126-137">Definição do atributo que será mapeada para esta expressão.</span><span class="sxs-lookup"><span data-stu-id="50126-137">Definition of the attribute that will be mapped to this expression.</span></span> <span data-ttu-id="50126-138">Opcional.</span><span class="sxs-lookup"><span data-stu-id="50126-138">Optional.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="75a48-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="75a48-141">Response</span></span>
-<span data-ttu-id="75a48-142">Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [parseExpressionResponse](../resources/synchronization-parseexpressionresponse.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="75a48-142">If successful, this method returns a `200 OK` response code and a [parseExpressionResponse](../resources/synchronization-parseexpressionresponse.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="50126-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="50126-139">Response</span></span>
+<span data-ttu-id="50126-140">Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [parseExpressionResponse](../resources/synchronization-parseexpressionresponse.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="50126-140">If successful, this method returns a `200 OK` response code and a [parseExpressionResponse](../resources/synchronization-parseexpressionresponse.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="75a48-143">Exemplo</span><span class="sxs-lookup"><span data-stu-id="75a48-143">Example</span></span>
+## <a name="example"></a><span data-ttu-id="50126-141">Exemplo</span><span class="sxs-lookup"><span data-stu-id="50126-141">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="75a48-144">Solicitação</span><span class="sxs-lookup"><span data-stu-id="75a48-144">Request</span></span>
-<span data-ttu-id="75a48-145">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="75a48-145">The following is an example of the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="50126-142">Solicitação</span><span class="sxs-lookup"><span data-stu-id="50126-142">Request</span></span>
+<span data-ttu-id="50126-143">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="50126-143">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "synchronizationschema_parseexpression"
@@ -113,10 +113,10 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="75a48-146">Resposta</span><span class="sxs-lookup"><span data-stu-id="75a48-146">Response</span></span>
-<span data-ttu-id="75a48-147">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="75a48-147">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="50126-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="50126-144">Response</span></span>
+<span data-ttu-id="50126-145">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="50126-145">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="75a48-p105">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="75a48-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="50126-p104">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="50126-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -173,10 +173,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "synchronizationSchema: parseExpression",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/synchronization-synchronizationschema-parseexpression.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -3,32 +3,32 @@ title: 'reportRoot: getSharePointActivityFileCounts'
 description: Obtenha o número de usuários únicos licenciados que interagiram com arquivos armazenados em sites do SharePoint.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 647b58f55e10c85d2c54c34324d5e21362f6176e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 17da8c3229e21904bd46d2661ec2dff442b4aa05
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27955363"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29520722"
 ---
-# <a name="reportroot-getsharepointactivityfilecounts"></a><span data-ttu-id="01150-103">reportRoot: getSharePointActivityFileCounts</span><span class="sxs-lookup"><span data-stu-id="01150-103">reportRoot: getSharePointActivityFileCounts</span></span>
+# <a name="reportroot-getsharepointactivityfilecounts"></a><span data-ttu-id="7ce89-103">reportRoot: getSharePointActivityFileCounts</span><span class="sxs-lookup"><span data-stu-id="7ce89-103">reportRoot: getSharePointActivityFileCounts</span></span>
 
-> <span data-ttu-id="01150-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="01150-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="01150-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="01150-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="01150-106">Obtenha o número de usuários únicos licenciados que interagiram com arquivos armazenados em sites do SharePoint.</span><span class="sxs-lookup"><span data-stu-id="01150-106">Get the number of unique, licensed users who interacted with files stored on SharePoint sites.</span></span>
+<span data-ttu-id="7ce89-104">Obtenha o número de usuários únicos licenciados que interagiram com arquivos armazenados em sites do SharePoint.</span><span class="sxs-lookup"><span data-stu-id="7ce89-104">Get the number of unique, licensed users who interacted with files stored on SharePoint sites.</span></span>
 
-> <span data-ttu-id="01150-107">**Observação:** para saber mais sobre diferentes visualizações e nomes de relatórios, confira [Relatórios do Office 365 Reports - Atividade do SharePoint](https://support.office.com/client/SharePoint-activity-a91c958f-1279-499d-9959-12f0de08dc8f).</span><span class="sxs-lookup"><span data-stu-id="01150-107">**Note:** For details about different report views and names, see [Office 365 Reports - SharePoint activity](https://support.office.com/client/SharePoint-activity-a91c958f-1279-499d-9959-12f0de08dc8f).</span></span>
+> <span data-ttu-id="7ce89-105">**Observação:** para saber mais sobre diferentes visualizações e nomes de relatórios, confira [Relatórios do Office 365 Reports - Atividade do SharePoint](https://support.office.com/client/SharePoint-activity-a91c958f-1279-499d-9959-12f0de08dc8f).</span><span class="sxs-lookup"><span data-stu-id="7ce89-105">**Note:** For details about different report views and names, see [Office 365 Reports - SharePoint activity](https://support.office.com/client/SharePoint-activity-a91c958f-1279-499d-9959-12f0de08dc8f).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="01150-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="01150-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="7ce89-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="7ce89-106">Permissions</span></span>
 
-<span data-ttu-id="01150-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="01150-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="7ce89-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7ce89-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="01150-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="01150-111">Permission type</span></span>                        | <span data-ttu-id="01150-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="01150-112">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="7ce89-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="7ce89-109">Permission type</span></span>                        | <span data-ttu-id="7ce89-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="7ce89-110">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :--------------------------------------- |
-| <span data-ttu-id="01150-113">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="01150-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="01150-114">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="01150-114">Reports.Read.All</span></span>                         |
-| <span data-ttu-id="01150-115">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="01150-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="01150-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="01150-116">Not supported.</span></span>                           |
-| <span data-ttu-id="01150-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="01150-117">Application</span></span>                            | <span data-ttu-id="01150-118">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="01150-118">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="7ce89-111">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="7ce89-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="7ce89-112">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="7ce89-112">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="7ce89-113">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="7ce89-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7ce89-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="7ce89-114">Not supported.</span></span>                           |
+| <span data-ttu-id="7ce89-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="7ce89-115">Application</span></span>                            | <span data-ttu-id="7ce89-116">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="7ce89-116">Reports.Read.All</span></span>                         |
 
-## <a name="http-request"></a><span data-ttu-id="01150-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="01150-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7ce89-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="7ce89-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -36,53 +36,53 @@ ms.locfileid: "27955363"
 GET /reports/getSharePointActivityFileCounts(period='{period_value}')
 ```
 
-## <a name="function-parameters"></a><span data-ttu-id="01150-120">Parâmetros de função</span><span class="sxs-lookup"><span data-stu-id="01150-120">Function parameters</span></span>
+## <a name="function-parameters"></a><span data-ttu-id="7ce89-118">Parâmetros de função</span><span class="sxs-lookup"><span data-stu-id="7ce89-118">Function parameters</span></span>
 
-<span data-ttu-id="01150-121">Na URL da solicitação, forneça um valor válido ao seguinte parâmetro.</span><span class="sxs-lookup"><span data-stu-id="01150-121">In the request URL, provide the following parameter with a valid value.</span></span>
+<span data-ttu-id="7ce89-119">Na URL da solicitação, forneça um valor válido ao seguinte parâmetro.</span><span class="sxs-lookup"><span data-stu-id="7ce89-119">In the request URL, provide the following parameter with a valid value.</span></span>
 
-| <span data-ttu-id="01150-122">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="01150-122">Parameter</span></span> | <span data-ttu-id="01150-123">Tipo</span><span class="sxs-lookup"><span data-stu-id="01150-123">Type</span></span>   | <span data-ttu-id="01150-124">Descrição</span><span class="sxs-lookup"><span data-stu-id="01150-124">Description</span></span>                              |
+| <span data-ttu-id="7ce89-120">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="7ce89-120">Parameter</span></span> | <span data-ttu-id="7ce89-121">Tipo</span><span class="sxs-lookup"><span data-stu-id="7ce89-121">Type</span></span>   | <span data-ttu-id="7ce89-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="7ce89-122">Description</span></span>                              |
 | :-------- | :----- | :--------------------------------------- |
-| <span data-ttu-id="01150-125">ponto</span><span class="sxs-lookup"><span data-stu-id="01150-125">period</span></span>    | <span data-ttu-id="01150-126">string</span><span class="sxs-lookup"><span data-stu-id="01150-126">string</span></span> | <span data-ttu-id="01150-127">Especifica o período de tempo durante o qual o relatório é agregado.</span><span class="sxs-lookup"><span data-stu-id="01150-127">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="01150-128">Os valores com suporte para {period_value} são: D7, D30, D90 e D180.</span><span class="sxs-lookup"><span data-stu-id="01150-128">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="01150-129">Eles seguem o formato D*n*, em que *n* representa o número de dias em que o relatório é agregado.</span><span class="sxs-lookup"><span data-stu-id="01150-129">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> <span data-ttu-id="01150-130">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="01150-130">Required.</span></span> |
+| <span data-ttu-id="7ce89-123">ponto</span><span class="sxs-lookup"><span data-stu-id="7ce89-123">period</span></span>    | <span data-ttu-id="7ce89-124">string</span><span class="sxs-lookup"><span data-stu-id="7ce89-124">string</span></span> | <span data-ttu-id="7ce89-125">Especifica o período de tempo durante o qual o relatório é agregado.</span><span class="sxs-lookup"><span data-stu-id="7ce89-125">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="7ce89-126">Os valores com suporte para {period_value} são: D7, D30, D90 e D180.</span><span class="sxs-lookup"><span data-stu-id="7ce89-126">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="7ce89-127">Eles seguem o formato D*n*, em que *n* representa o número de dias em que o relatório é agregado.</span><span class="sxs-lookup"><span data-stu-id="7ce89-127">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> <span data-ttu-id="7ce89-128">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="7ce89-128">Required.</span></span> |
 
-<span data-ttu-id="01150-131">Este método oferece suporte a `$format` [parâmetro de consulta OData](/graph/query-parameters) para personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="01150-131">This method supports the `$format` [OData query parameter](/graph/query-parameters) to customize the response.</span></span> <span data-ttu-id="01150-132">O tipo de saída padrão é texto/csv.</span><span class="sxs-lookup"><span data-stu-id="01150-132">The default output type is text/csv.</span></span> <span data-ttu-id="01150-133">No entanto, se você deseja especificar o tipo de saída, você pode usar o parâmetro de consulta OData $format definido como texto/csv ou aplicativo/json.</span><span class="sxs-lookup"><span data-stu-id="01150-133">However, if you want to specify the output type, you can use the OData $format query parameter set to text/csv or application/json.</span></span>
+<span data-ttu-id="7ce89-129">Este método oferece suporte a `$format` [parâmetro de consulta OData](/graph/query-parameters) para personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="7ce89-129">This method supports the `$format` [OData query parameter](/graph/query-parameters) to customize the response.</span></span> <span data-ttu-id="7ce89-130">O tipo de saída padrão é texto/csv.</span><span class="sxs-lookup"><span data-stu-id="7ce89-130">The default output type is text/csv.</span></span> <span data-ttu-id="7ce89-131">No entanto, se você deseja especificar o tipo de saída, você pode usar o parâmetro de consulta OData $format definido como texto/csv ou aplicativo/json.</span><span class="sxs-lookup"><span data-stu-id="7ce89-131">However, if you want to specify the output type, you can use the OData $format query parameter set to text/csv or application/json.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="01150-134">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="01150-134">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="7ce89-132">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="7ce89-132">Request headers</span></span>
 
-| <span data-ttu-id="01150-135">Nome</span><span class="sxs-lookup"><span data-stu-id="01150-135">Name</span></span>          | <span data-ttu-id="01150-136">Descrição</span><span class="sxs-lookup"><span data-stu-id="01150-136">Description</span></span>               |
+| <span data-ttu-id="7ce89-133">Nome</span><span class="sxs-lookup"><span data-stu-id="7ce89-133">Name</span></span>          | <span data-ttu-id="7ce89-134">Descrição</span><span class="sxs-lookup"><span data-stu-id="7ce89-134">Description</span></span>               |
 | :------------ | :------------------------ |
-| <span data-ttu-id="01150-137">Autorização</span><span class="sxs-lookup"><span data-stu-id="01150-137">Authorization</span></span> | <span data-ttu-id="01150-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="01150-p105">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="7ce89-135">Autorização</span><span class="sxs-lookup"><span data-stu-id="7ce89-135">Authorization</span></span> | <span data-ttu-id="7ce89-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="7ce89-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="01150-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="01150-140">Response</span></span>
+## <a name="response"></a><span data-ttu-id="7ce89-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="7ce89-138">Response</span></span>
 
-### <a name="csv"></a><span data-ttu-id="01150-141">CSV</span><span class="sxs-lookup"><span data-stu-id="01150-141">CSV</span></span>
+### <a name="csv"></a><span data-ttu-id="7ce89-139">CSV</span><span class="sxs-lookup"><span data-stu-id="7ce89-139">CSV</span></span>
 
-<span data-ttu-id="01150-142">Se for bem-sucedido, este método retorna uma resposta `302 Found` que redireciona para uma URL de download pré-autenticada para o relatório.</span><span class="sxs-lookup"><span data-stu-id="01150-142">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="01150-143">Essa URL pode ser encontrada no cabeçalho `Location` na resposta.</span><span class="sxs-lookup"><span data-stu-id="01150-143">That URL can be found in the `Location` header in the response.</span></span>
+<span data-ttu-id="7ce89-140">Se for bem-sucedido, este método retorna uma resposta `302 Found` que redireciona para uma URL de download pré-autenticada para o relatório.</span><span class="sxs-lookup"><span data-stu-id="7ce89-140">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="7ce89-141">Essa URL pode ser encontrada no cabeçalho `Location` na resposta.</span><span class="sxs-lookup"><span data-stu-id="7ce89-141">That URL can be found in the `Location` header in the response.</span></span>
 
-<span data-ttu-id="01150-144">As URLs de download previamente autenticadas são válidas apenas por um curto período de tempo (alguns minutos) e não exigem um cabeçalho `Authorization`.</span><span class="sxs-lookup"><span data-stu-id="01150-144">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
+<span data-ttu-id="7ce89-142">As URLs de download previamente autenticadas são válidas apenas por um curto período de tempo (alguns minutos) e não exigem um cabeçalho `Authorization`.</span><span class="sxs-lookup"><span data-stu-id="7ce89-142">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
 
-<span data-ttu-id="01150-145">O arquivo CSV possui os seguintes cabeçalhos para colunas.</span><span class="sxs-lookup"><span data-stu-id="01150-145">The CSV file has the following headers for columns.</span></span>
+<span data-ttu-id="7ce89-143">O arquivo CSV possui os seguintes cabeçalhos para colunas.</span><span class="sxs-lookup"><span data-stu-id="7ce89-143">The CSV file has the following headers for columns.</span></span>
 
-- <span data-ttu-id="01150-146">Data de atualização do relatório</span><span class="sxs-lookup"><span data-stu-id="01150-146">Report Refresh Date</span></span>
-- <span data-ttu-id="01150-147">Exibidos ou editados</span><span class="sxs-lookup"><span data-stu-id="01150-147">Viewed Or Edited</span></span>
-- <span data-ttu-id="01150-148">Sincronizados</span><span class="sxs-lookup"><span data-stu-id="01150-148">Synced</span></span>
-- <span data-ttu-id="01150-149">Compartilhados internamente</span><span class="sxs-lookup"><span data-stu-id="01150-149">Shared Internally</span></span>
-- <span data-ttu-id="01150-150">Compartilhados externamente</span><span class="sxs-lookup"><span data-stu-id="01150-150">Shared Externally</span></span>
-- <span data-ttu-id="01150-151">Data do relatório</span><span class="sxs-lookup"><span data-stu-id="01150-151">Report Date</span></span>
-- <span data-ttu-id="01150-152">Período de Relatório</span><span class="sxs-lookup"><span data-stu-id="01150-152">Report Period</span></span>
+- <span data-ttu-id="7ce89-144">Data de atualização do relatório</span><span class="sxs-lookup"><span data-stu-id="7ce89-144">Report Refresh Date</span></span>
+- <span data-ttu-id="7ce89-145">Exibidos ou editados</span><span class="sxs-lookup"><span data-stu-id="7ce89-145">Viewed Or Edited</span></span>
+- <span data-ttu-id="7ce89-146">Sincronizados</span><span class="sxs-lookup"><span data-stu-id="7ce89-146">Synced</span></span>
+- <span data-ttu-id="7ce89-147">Compartilhados internamente</span><span class="sxs-lookup"><span data-stu-id="7ce89-147">Shared Internally</span></span>
+- <span data-ttu-id="7ce89-148">Compartilhados externamente</span><span class="sxs-lookup"><span data-stu-id="7ce89-148">Shared Externally</span></span>
+- <span data-ttu-id="7ce89-149">Data do relatório</span><span class="sxs-lookup"><span data-stu-id="7ce89-149">Report Date</span></span>
+- <span data-ttu-id="7ce89-150">Período de Relatório</span><span class="sxs-lookup"><span data-stu-id="7ce89-150">Report Period</span></span>
 
-### <a name="json"></a><span data-ttu-id="01150-153">JSON</span><span class="sxs-lookup"><span data-stu-id="01150-153">JSON</span></span>
+### <a name="json"></a><span data-ttu-id="7ce89-151">JSON</span><span class="sxs-lookup"><span data-stu-id="7ce89-151">JSON</span></span>
 
-<span data-ttu-id="01150-154">Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto **[siteActivitySummary](../resources/siteactivitysummary.md)** no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="01150-154">If successful, this method returns a `200 OK` response code and a **[siteActivitySummary](../resources/siteactivitysummary.md)** object in the response body.</span></span>
+<span data-ttu-id="7ce89-152">Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto **[siteActivitySummary](../resources/siteactivitysummary.md)** no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="7ce89-152">If successful, this method returns a `200 OK` response code and a **[siteActivitySummary](../resources/siteactivitysummary.md)** object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="01150-155">Exemplo</span><span class="sxs-lookup"><span data-stu-id="01150-155">Example</span></span>
+## <a name="example"></a><span data-ttu-id="7ce89-153">Exemplo</span><span class="sxs-lookup"><span data-stu-id="7ce89-153">Example</span></span>
 
-### <a name="csv"></a><span data-ttu-id="01150-156">CSV</span><span class="sxs-lookup"><span data-stu-id="01150-156">CSV</span></span>
+### <a name="csv"></a><span data-ttu-id="7ce89-154">CSV</span><span class="sxs-lookup"><span data-stu-id="7ce89-154">CSV</span></span>
 
-<span data-ttu-id="01150-157">O exemplo a seguir é um exemplo que emite CSV.</span><span class="sxs-lookup"><span data-stu-id="01150-157">The following is an example that outputs CSV.</span></span>
+<span data-ttu-id="7ce89-155">O exemplo a seguir é um exemplo que emite CSV.</span><span class="sxs-lookup"><span data-stu-id="7ce89-155">The following is an example that outputs CSV.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="01150-158">Solicitação</span><span class="sxs-lookup"><span data-stu-id="01150-158">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="7ce89-156">Solicitação</span><span class="sxs-lookup"><span data-stu-id="7ce89-156">Request</span></span>
 
-<span data-ttu-id="01150-159">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="01150-159">The following is an example of the request.</span></span>
+<span data-ttu-id="7ce89-157">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="7ce89-157">The following is an example of the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -93,9 +93,9 @@ GET /reports/getSharePointActivityFileCounts(period='{period_value}')
 GET https://graph.microsoft.com/beta/reports/getSharePointActivityFileCounts(period='D7')?$format=text/csv
 ```
 
-#### <a name="response"></a><span data-ttu-id="01150-160">Resposta</span><span class="sxs-lookup"><span data-stu-id="01150-160">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="7ce89-158">Resposta</span><span class="sxs-lookup"><span data-stu-id="7ce89-158">Response</span></span>
 
-<span data-ttu-id="01150-161">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="01150-161">The following is an example of the response.</span></span>
+<span data-ttu-id="7ce89-159">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="7ce89-159">The following is an example of the response.</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -105,7 +105,7 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
-<span data-ttu-id="01150-162">Siga o redirecionamento 302 e o arquivo CSV baixado terá o seguinte esquema.</span><span class="sxs-lookup"><span data-stu-id="01150-162">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
+<span data-ttu-id="7ce89-160">Siga o redirecionamento 302 e o arquivo CSV baixado terá o seguinte esquema.</span><span class="sxs-lookup"><span data-stu-id="7ce89-160">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -120,13 +120,13 @@ Content-Type: application/octet-stream
 Report Refresh Date,Viewed Or Edited,Synced,Shared Internally,Shared Externally,Report Date,Report Period
 ```
 
-### <a name="json"></a><span data-ttu-id="01150-163">JSON</span><span class="sxs-lookup"><span data-stu-id="01150-163">JSON</span></span>
+### <a name="json"></a><span data-ttu-id="7ce89-161">JSON</span><span class="sxs-lookup"><span data-stu-id="7ce89-161">JSON</span></span>
 
-<span data-ttu-id="01150-164">O exemplo a seguir é um exemplo que retorne JSON.</span><span class="sxs-lookup"><span data-stu-id="01150-164">The following is an example that returns JSON.</span></span>
+<span data-ttu-id="7ce89-162">O exemplo a seguir é um exemplo que retorne JSON.</span><span class="sxs-lookup"><span data-stu-id="7ce89-162">The following is an example that returns JSON.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="01150-165">Solicitação</span><span class="sxs-lookup"><span data-stu-id="01150-165">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="7ce89-163">Solicitação</span><span class="sxs-lookup"><span data-stu-id="7ce89-163">Request</span></span>
 
-<span data-ttu-id="01150-166">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="01150-166">The following is an example of the request.</span></span>
+<span data-ttu-id="7ce89-164">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="7ce89-164">The following is an example of the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -137,11 +137,11 @@ Report Refresh Date,Viewed Or Edited,Synced,Shared Internally,Shared Externally,
 GET https://graph.microsoft.com/beta/reports/getOffice365ActiveUserCounts(period='D7')?$format=application/json
 ```
 
-#### <a name="response"></a><span data-ttu-id="01150-167">Resposta</span><span class="sxs-lookup"><span data-stu-id="01150-167">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="7ce89-165">Resposta</span><span class="sxs-lookup"><span data-stu-id="7ce89-165">Response</span></span>
 
-<span data-ttu-id="01150-168">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="01150-168">The following is an example of the response.</span></span>
+<span data-ttu-id="7ce89-166">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="7ce89-166">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="01150-p107">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="01150-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="7ce89-p106">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="7ce89-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -169,3 +169,11 @@ Content-Length: 278
   ]
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/reportroot-getsharepointactivityfilecounts.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
