@@ -1,33 +1,33 @@
 ---
 title: Listar alertas
-description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
+description: Recupere uma lista de objetos de alerta.
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 507ad72b8d50e2343bfd99446e178e09ea65ac8f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: d50c3244ae2c0e9f158dc38923136ef3e8656f0d
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27927839"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524377"
 ---
-# <a name="list-alerts"></a><span data-ttu-id="c2ff1-104">Listar alertas</span><span class="sxs-lookup"><span data-stu-id="c2ff1-104">List alerts</span></span>
+# <a name="list-alerts"></a><span data-ttu-id="fb4bf-103">Listar alertas</span><span class="sxs-lookup"><span data-stu-id="fb4bf-103">List alerts</span></span>
 
- > <span data-ttu-id="c2ff1-105">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="c2ff1-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="c2ff1-106">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="c2ff1-106">Use of these APIs in production applications is not supported.</span></span>
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c2ff1-107">Recupere uma lista de objetos de [alerta](../resources/alert.md) .</span><span class="sxs-lookup"><span data-stu-id="c2ff1-107">Retrieve a list of [alert](../resources/alert.md) objects.</span></span>
+<span data-ttu-id="fb4bf-104">Recupere uma lista de objetos de [alerta](../resources/alert.md) .</span><span class="sxs-lookup"><span data-stu-id="fb4bf-104">Retrieve a list of [alert](../resources/alert.md) objects.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="c2ff1-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="c2ff1-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="fb4bf-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="fb4bf-105">Permissions</span></span>
 
-<span data-ttu-id="c2ff1-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c2ff1-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="fb4bf-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="fb4bf-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c2ff1-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="c2ff1-111">Permission type</span></span>      | <span data-ttu-id="c2ff1-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="c2ff1-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="fb4bf-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="fb4bf-108">Permission type</span></span>      | <span data-ttu-id="fb4bf-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="fb4bf-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c2ff1-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="c2ff1-113">Delegated (work or school account)</span></span> |  <span data-ttu-id="c2ff1-114">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c2ff1-114">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span>  |
-|<span data-ttu-id="c2ff1-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="c2ff1-115">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="c2ff1-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c2ff1-116">Not supported.</span></span>  |
-|<span data-ttu-id="c2ff1-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="c2ff1-117">Application</span></span> | <span data-ttu-id="c2ff1-118">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c2ff1-118">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span> |
+|<span data-ttu-id="fb4bf-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="fb4bf-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="fb4bf-111">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fb4bf-111">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span>  |
+|<span data-ttu-id="fb4bf-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="fb4bf-112">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="fb4bf-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="fb4bf-113">Not supported.</span></span>  |
+|<span data-ttu-id="fb4bf-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="fb4bf-114">Application</span></span> | <span data-ttu-id="fb4bf-115">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fb4bf-115">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c2ff1-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="c2ff1-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="fb4bf-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="fb4bf-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -39,40 +39,40 @@ GET /security/alerts?$filter={property} eq '{property-value}'&$top=5
 GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{property-value}'
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="c2ff1-120">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="c2ff1-120">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="fb4bf-117">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="fb4bf-117">Optional query parameters</span></span>
 
-<span data-ttu-id="c2ff1-121">Esse método suporta os seguintes [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta:</span><span class="sxs-lookup"><span data-stu-id="c2ff1-121">This method supports the following [OData query parameters](/graph/query-parameters) to help customize the response:</span></span>
+<span data-ttu-id="fb4bf-118">Este método dá suporte aos seguintes [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="fb4bf-118">This method supports the following [OData query parameters](/graph/query-parameters) to help customize the response:</span></span>
 
 - `$count`
 - `$filter`
 - `$orderby`
 - `$select`
 - `$skip`
-- <span data-ttu-id="c2ff1-122">`$top`retornará os principais resultados agregados de cada provedor de API de segurança.</span><span class="sxs-lookup"><span data-stu-id="c2ff1-122">`$top` will return the aggregated top results from each security API provider.</span></span>  
+- <span data-ttu-id="fb4bf-119">`$top`retornará os principais resultados agregados de cada provedor de API de segurança.</span><span class="sxs-lookup"><span data-stu-id="fb4bf-119">`$top` will return the aggregated top results from each security API provider.</span></span>
 
-<span data-ttu-id="c2ff1-123">Para retornar um conjunto de propriedades alternativo, use o OData `$select` consulta parâmetro para especificar o conjunto de propriedades de **alerta** que você deseja.</span><span class="sxs-lookup"><span data-stu-id="c2ff1-123">To return an alternative property set, use the OData `$select` query parameter to specify the set of **alert** properties that you want.</span></span>  <span data-ttu-id="c2ff1-124">Por exemplo, para retornar o **assignedTo**, **categoria**e propriedades de **severidade** , adicione a seguinte à sua consulta: `$select=assignedTo,category,severity`.</span><span class="sxs-lookup"><span data-stu-id="c2ff1-124">For example, to return the **assignedTo**, **category**, and **severity** properties, add the following to your query: `$select=assignedTo,category,severity`.</span></span>
+<span data-ttu-id="fb4bf-120">Para retornar um conjunto de propriedades alternativo, use o OData `$select` consulta parâmetro para especificar o conjunto de propriedades de **alerta** que você deseja.</span><span class="sxs-lookup"><span data-stu-id="fb4bf-120">To return an alternative property set, use the OData `$select` query parameter to specify the set of **alert** properties that you want.</span></span>  <span data-ttu-id="fb4bf-121">Por exemplo, para retornar o **assignedTo**, **categoria**e propriedades de **severidade** , adicione a seguinte à sua consulta: `$select=assignedTo,category,severity`.</span><span class="sxs-lookup"><span data-stu-id="fb4bf-121">For example, to return the **assignedTo**, **category**, and **severity** properties, add the following to your query: `$select=assignedTo,category,severity`.</span></span>
 
-> <span data-ttu-id="c2ff1-125">**Observação:** `$top` tem um limite de alertas de 1000 e uma combinação de `$top`  +  `$skip` não pode exceder 6000 alertas.</span><span class="sxs-lookup"><span data-stu-id="c2ff1-125">**Note:** `$top` has a limit of 1000 alerts, and a combination of `$top` + `$skip` cannot exceed 6000 alerts.</span></span> <span data-ttu-id="c2ff1-126">Por exemplo, `/security/alerts?$top=10&$skip=5990` retornará um `200 OK` código de resposta, mas `/security/alerts?$top=10&$skip=5991` retornará um `400 Bad Request` código de resposta.</span><span class="sxs-lookup"><span data-stu-id="c2ff1-126">For example, `/security/alerts?$top=10&$skip=5990` will return a `200 OK` response code, but `/security/alerts?$top=10&$skip=5991` will return a `400 Bad Request` response code.</span></span>  <span data-ttu-id="c2ff1-127">Para obter mais informações, consulte [respostas de erros de API de segurança do Microsoft Graph](../resources/security-error-codes.md).</span><span class="sxs-lookup"><span data-stu-id="c2ff1-127">For more information, see [Microsoft Graph Security API error responses](../resources/security-error-codes.md).</span></span>
+> <span data-ttu-id="fb4bf-122">**Observação:** `$top` tem um limite de alertas de 1000 e uma combinação de `$top`  +  `$skip` não pode exceder 6000 alertas.</span><span class="sxs-lookup"><span data-stu-id="fb4bf-122">**Note:** `$top` has a limit of 1000 alerts, and a combination of `$top` + `$skip` cannot exceed 6000 alerts.</span></span> <span data-ttu-id="fb4bf-123">Por exemplo, `/security/alerts?$top=10&$skip=5990` retornará um `200 OK` código de resposta, mas `/security/alerts?$top=10&$skip=5991` retornará um `400 Bad Request` código de resposta.</span><span class="sxs-lookup"><span data-stu-id="fb4bf-123">For example, `/security/alerts?$top=10&$skip=5990` will return a `200 OK` response code, but `/security/alerts?$top=10&$skip=5991` will return a `400 Bad Request` response code.</span></span>  <span data-ttu-id="fb4bf-124">Para obter mais informações, consulte [respostas de erros de API de segurança do Microsoft Graph](../resources/security-error-codes.md).</span><span class="sxs-lookup"><span data-stu-id="fb4bf-124">For more information, see [Microsoft Graph Security API error responses](../resources/security-error-codes.md).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="c2ff1-128">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="c2ff1-128">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="fb4bf-125">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="fb4bf-125">Request headers</span></span>
 
-| <span data-ttu-id="c2ff1-129">Nome</span><span class="sxs-lookup"><span data-stu-id="c2ff1-129">Name</span></span>      |<span data-ttu-id="c2ff1-130">Descrição</span><span class="sxs-lookup"><span data-stu-id="c2ff1-130">Description</span></span>|
+| <span data-ttu-id="fb4bf-126">Nome</span><span class="sxs-lookup"><span data-stu-id="fb4bf-126">Name</span></span>      |<span data-ttu-id="fb4bf-127">Descrição</span><span class="sxs-lookup"><span data-stu-id="fb4bf-127">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="c2ff1-131">Autorização</span><span class="sxs-lookup"><span data-stu-id="c2ff1-131">Authorization</span></span>  | <span data-ttu-id="c2ff1-p106">Portador {código}. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="c2ff1-p106">Bearer {code}. Required.</span></span>|
+| <span data-ttu-id="fb4bf-128">Autorização</span><span class="sxs-lookup"><span data-stu-id="fb4bf-128">Authorization</span></span>  | <span data-ttu-id="fb4bf-p104">Portador {código}. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="fb4bf-p104">Bearer {code}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="c2ff1-134">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="c2ff1-134">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="fb4bf-131">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="fb4bf-131">Request body</span></span>
 
-<span data-ttu-id="c2ff1-135">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="c2ff1-135">Do not supply a request body for this method.</span></span> <span data-ttu-id="c2ff1-136">O corpo da solicitação será ignorado.</span><span class="sxs-lookup"><span data-stu-id="c2ff1-136">The request body will be ignored.</span></span>
+<span data-ttu-id="fb4bf-132">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="fb4bf-132">Do not supply a request body for this method.</span></span> <span data-ttu-id="fb4bf-133">O corpo da solicitação será ignorado.</span><span class="sxs-lookup"><span data-stu-id="fb4bf-133">The request body will be ignored.</span></span>
 
-## <a name="response"></a><span data-ttu-id="c2ff1-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="c2ff1-137">Response</span></span>
+## <a name="response"></a><span data-ttu-id="fb4bf-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="fb4bf-134">Response</span></span>
 
-<span data-ttu-id="c2ff1-138">Se tiver êxito, este método retornará um `200 OK` código de resposta e a coleção de objetos de **alerta** no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="c2ff1-138">If successful, this method returns a `200 OK` response code and collection of **alert** objects in the response body.</span></span> <span data-ttu-id="c2ff1-139">Se um código de status diferente 2xx ou 404 é retornado por um provedor ou se um provedor de tempo limite, a resposta será um `206 Partial Content` código de status com a resposta do provedor em um cabeçalho de aviso.</span><span class="sxs-lookup"><span data-stu-id="c2ff1-139">If a status code other than 2xx or 404 is returned from a provider or if a provider times out, the response will be a `206 Partial Content` status code with the provider's response in a warning header.</span></span> <span data-ttu-id="c2ff1-140">Para obter mais informações, consulte [respostas de erros de API de segurança do Microsoft Graph](../resources/security-error-codes.md).</span><span class="sxs-lookup"><span data-stu-id="c2ff1-140">For more information, see [Microsoft Graph Security API error responses](../resources/security-error-codes.md).</span></span>
+<span data-ttu-id="fb4bf-135">Se tiver êxito, este método retornará um `200 OK` código de resposta e a coleção de objetos de **alerta** no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="fb4bf-135">If successful, this method returns a `200 OK` response code and collection of **alert** objects in the response body.</span></span> <span data-ttu-id="fb4bf-136">Se um código de status diferente 2xx ou 404 é retornado por um provedor ou se um provedor de tempo limite, a resposta será um `206 Partial Content` código de status com a resposta do provedor em um cabeçalho de aviso.</span><span class="sxs-lookup"><span data-stu-id="fb4bf-136">If a status code other than 2xx or 404 is returned from a provider or if a provider times out, the response will be a `206 Partial Content` status code with the provider's response in a warning header.</span></span> <span data-ttu-id="fb4bf-137">Para obter mais informações, consulte [respostas de erros de API de segurança do Microsoft Graph](../resources/security-error-codes.md).</span><span class="sxs-lookup"><span data-stu-id="fb4bf-137">For more information, see [Microsoft Graph Security API error responses](../resources/security-error-codes.md).</span></span>
 
-## <a name="example"></a><span data-ttu-id="c2ff1-141">Exemplo</span><span class="sxs-lookup"><span data-stu-id="c2ff1-141">Example</span></span>
+## <a name="example"></a><span data-ttu-id="fb4bf-138">Exemplo</span><span class="sxs-lookup"><span data-stu-id="fb4bf-138">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="c2ff1-142">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c2ff1-142">Request</span></span>
+### <a name="request"></a><span data-ttu-id="fb4bf-139">Solicitação</span><span class="sxs-lookup"><span data-stu-id="fb4bf-139">Request</span></span>
 
-<span data-ttu-id="c2ff1-143">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="c2ff1-143">The following is an example of the request.</span></span>
+<span data-ttu-id="fb4bf-140">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="fb4bf-140">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_alerts"
@@ -82,11 +82,11 @@ GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{pr
 GET https://graph.microsoft.com/beta/security/alerts
 ```
 
-### <a name="response"></a><span data-ttu-id="c2ff1-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="c2ff1-144">Response</span></span>
+### <a name="response"></a><span data-ttu-id="fb4bf-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="fb4bf-141">Response</span></span>
 
-<span data-ttu-id="c2ff1-145">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="c2ff1-145">The following is an example of the response.</span></span>
+<span data-ttu-id="fb4bf-142">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="fb4bf-142">The following is an example of the response.</span></span>
 
-><span data-ttu-id="c2ff1-p109">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="c2ff1-p109">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="fb4bf-p107">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="fb4bf-p107">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -114,10 +114,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List alerts",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/alert-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

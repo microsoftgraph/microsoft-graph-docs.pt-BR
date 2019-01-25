@@ -4,28 +4,28 @@ description: 'Usado para configurar o perfil de sincronização de dados da esco
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: c9211d5f7ca25b78c6e76c3744f6941e3b172bb3
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: bebacbc1c618c7558d81bde2611840e8d225a8fd
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399343"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529870"
 ---
-# <a name="educationcsvdataprovider-resource-type"></a><span data-ttu-id="6d6a4-103">tipo de recurso de educationCsvDataProvider</span><span class="sxs-lookup"><span data-stu-id="6d6a4-103">educationCsvDataProvider resource type</span></span>
+# <a name="educationcsvdataprovider-resource-type"></a><span data-ttu-id="06256-103">tipo de recurso de educationCsvDataProvider</span><span class="sxs-lookup"><span data-stu-id="06256-103">educationCsvDataProvider resource type</span></span>
 
-> <span data-ttu-id="6d6a4-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="6d6a4-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="6d6a4-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="6d6a4-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="6d6a4-106">Usado para configurar o perfil de sincronização de dados da escola quando arquivos CSV são a fonte de entrada.</span><span class="sxs-lookup"><span data-stu-id="6d6a4-106">Used to set up the school data synchronization profile when CSV files are the input source.</span></span>  
+<span data-ttu-id="06256-104">Usado para configurar o perfil de sincronização de dados da escola quando arquivos CSV são a fonte de entrada.</span><span class="sxs-lookup"><span data-stu-id="06256-104">Used to set up the school data synchronization profile when CSV files are the input source.</span></span>  
 
-<span data-ttu-id="6d6a4-107">Derivado do [educationSynchronizationDataProvider](educationsynchronizationdataprovider.md).</span><span class="sxs-lookup"><span data-stu-id="6d6a4-107">Derived from [educationSynchronizationDataProvider](educationsynchronizationdataprovider.md).</span></span>
+<span data-ttu-id="06256-105">Derivado do [educationSynchronizationDataProvider](educationsynchronizationdataprovider.md).</span><span class="sxs-lookup"><span data-stu-id="06256-105">Derived from [educationSynchronizationDataProvider](educationsynchronizationdataprovider.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="6d6a4-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="6d6a4-108">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="06256-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="06256-106">Properties</span></span>
 
-| <span data-ttu-id="6d6a4-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="6d6a4-109">Property</span></span> | <span data-ttu-id="6d6a4-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="6d6a4-110">Type</span></span> | <span data-ttu-id="6d6a4-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="6d6a4-111">Description</span></span> |
+| <span data-ttu-id="06256-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="06256-107">Property</span></span> | <span data-ttu-id="06256-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="06256-108">Type</span></span> | <span data-ttu-id="06256-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="06256-109">Description</span></span> |
 |:-|:-|:-|
-| <span data-ttu-id="6d6a4-112">**personalizações**</span><span class="sxs-lookup"><span data-stu-id="6d6a4-112">**customizations**</span></span> | [<span data-ttu-id="6d6a4-113">educationSynchronizationCustomizations</span><span class="sxs-lookup"><span data-stu-id="6d6a4-113">educationSynchronizationCustomizations</span></span>](educationsynchronizationcustomizations.md) | <span data-ttu-id="6d6a4-114">Personalizações opcionais a ser aplicado ao perfil de sincronização.</span><span class="sxs-lookup"><span data-stu-id="6d6a4-114">Optional customizations to be applied to the synchronization profile.</span></span>|
+| <span data-ttu-id="06256-110">**personalizações**</span><span class="sxs-lookup"><span data-stu-id="06256-110">**customizations**</span></span> | [<span data-ttu-id="06256-111">educationSynchronizationCustomizations</span><span class="sxs-lookup"><span data-stu-id="06256-111">educationSynchronizationCustomizations</span></span>](educationsynchronizationcustomizations.md) | <span data-ttu-id="06256-112">Personalizações opcionais a ser aplicado ao perfil de sincronização.</span><span class="sxs-lookup"><span data-stu-id="06256-112">Optional customizations to be applied to the synchronization profile.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="6d6a4-115">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="6d6a4-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="06256-113">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="06256-113">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -41,3 +41,11 @@ ms.locfileid: "29399343"
     "customizations": { "@odata.type": "microsoft.graph.educationSynchronizationCustomizations" }
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/educationcsvdataprovider.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

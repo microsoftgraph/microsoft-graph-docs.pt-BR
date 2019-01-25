@@ -4,38 +4,38 @@ description: Contém a lista de entidades de sincronização e suas personaliza�
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 18b37276730286650e3fd75ad57a6b16e7917a04
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 9e513e64afb1478ca7b5cc5d53f1964d16d9928b
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425957"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29523250"
 ---
-# <a name="educationsynchronizationcustomizations-resource-type"></a><span data-ttu-id="7a379-103">tipo de recurso de educationSynchronizationCustomizations</span><span class="sxs-lookup"><span data-stu-id="7a379-103">educationSynchronizationCustomizations resource type</span></span>
+# <a name="educationsynchronizationcustomizations-resource-type"></a><span data-ttu-id="f71ca-103">tipo de recurso de educationSynchronizationCustomizations</span><span class="sxs-lookup"><span data-stu-id="f71ca-103">educationSynchronizationCustomizations resource type</span></span>
 
-> <span data-ttu-id="7a379-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="7a379-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="7a379-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="7a379-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="7a379-106">Contém a lista de entidades de sincronização e suas [personalizações](educationsynchronizationcustomization.md), se houver alguma.</span><span class="sxs-lookup"><span data-stu-id="7a379-106">Contains the list of entities to sync and their [customizations](educationsynchronizationcustomization.md), if any.</span></span>
+<span data-ttu-id="f71ca-104">Contém a lista de entidades de sincronização e suas [personalizações](educationsynchronizationcustomization.md), se houver alguma.</span><span class="sxs-lookup"><span data-stu-id="f71ca-104">Contains the list of entities to sync and their [customizations](educationsynchronizationcustomization.md), if any.</span></span>
 
-> <span data-ttu-id="7a379-107">**Observação:** Personalização das propriedades para sincronizar não se aplica às entidades **studentEnrollment** e **teacherRoster** .</span><span class="sxs-lookup"><span data-stu-id="7a379-107">**Note:** Customization of properties to sync does not apply to the **studentEnrollment** and **teacherRoster** entities.</span></span>
+> <span data-ttu-id="f71ca-105">**Observação:** Personalização das propriedades para sincronizar não se aplica às entidades **studentEnrollment** e **teacherRoster** .</span><span class="sxs-lookup"><span data-stu-id="f71ca-105">**Note:** Customization of properties to sync does not apply to the **studentEnrollment** and **teacherRoster** entities.</span></span>
 
-<span data-ttu-id="7a379-108">Este recurso é membro dos provedores de dados a seguir:</span><span class="sxs-lookup"><span data-stu-id="7a379-108">This resource is member of the following data providers:</span></span>
+<span data-ttu-id="f71ca-106">Este recurso é membro dos provedores de dados a seguir:</span><span class="sxs-lookup"><span data-stu-id="f71ca-106">This resource is member of the following data providers:</span></span>
 
-* [<span data-ttu-id="7a379-109">educationCsvDataProvider</span><span class="sxs-lookup"><span data-stu-id="7a379-109">educationCsvDataProvider</span></span>](educationcsvdataprovider.md)
-* [<span data-ttu-id="7a379-110">educationPowerSchoolDataProvider</span><span class="sxs-lookup"><span data-stu-id="7a379-110">educationPowerSchoolDataProvider</span></span>](educationpowerschooldataprovider.md)
+* [<span data-ttu-id="f71ca-107">educationCsvDataProvider</span><span class="sxs-lookup"><span data-stu-id="f71ca-107">educationCsvDataProvider</span></span>](educationcsvdataprovider.md)
+* [<span data-ttu-id="f71ca-108">educationPowerSchoolDataProvider</span><span class="sxs-lookup"><span data-stu-id="f71ca-108">educationPowerSchoolDataProvider</span></span>](educationpowerschooldataprovider.md)
 
-## <a name="properties"></a><span data-ttu-id="7a379-111">Propriedades</span><span class="sxs-lookup"><span data-stu-id="7a379-111">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="f71ca-109">Propriedades</span><span class="sxs-lookup"><span data-stu-id="f71ca-109">Properties</span></span>
 
-| <span data-ttu-id="7a379-112">Propriedade</span><span class="sxs-lookup"><span data-stu-id="7a379-112">Property</span></span> | <span data-ttu-id="7a379-113">Tipo</span><span class="sxs-lookup"><span data-stu-id="7a379-113">Type</span></span> | <span data-ttu-id="7a379-114">Descrição</span><span class="sxs-lookup"><span data-stu-id="7a379-114">Description</span></span> |
+| <span data-ttu-id="f71ca-110">Propriedade</span><span class="sxs-lookup"><span data-stu-id="f71ca-110">Property</span></span> | <span data-ttu-id="f71ca-111">Tipo</span><span class="sxs-lookup"><span data-stu-id="f71ca-111">Type</span></span> | <span data-ttu-id="f71ca-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="f71ca-112">Description</span></span> |
 |:-|:-|:-|
-| <span data-ttu-id="7a379-115">**escola**</span><span class="sxs-lookup"><span data-stu-id="7a379-115">**school**</span></span> | [<span data-ttu-id="7a379-116">educationSynchronizationCustomization</span><span class="sxs-lookup"><span data-stu-id="7a379-116">educationSynchronizationCustomization</span></span>](educationsynchronizationcustomization.md) |  <span data-ttu-id="7a379-117">Personalização para uma entidade escola.</span><span class="sxs-lookup"><span data-stu-id="7a379-117">Customization for a school entity.</span></span>        |
-| <span data-ttu-id="7a379-118">**section**</span><span class="sxs-lookup"><span data-stu-id="7a379-118">**section**</span></span> | [<span data-ttu-id="7a379-119">educationSynchronizationCustomization</span><span class="sxs-lookup"><span data-stu-id="7a379-119">educationSynchronizationCustomization</span></span>](educationsynchronizationcustomization.md) |  <span data-ttu-id="7a379-120">Personalização para uma entidade de seção.</span><span class="sxs-lookup"><span data-stu-id="7a379-120">Customization for a section entity.</span></span>         |
-| <span data-ttu-id="7a379-121">**student**</span><span class="sxs-lookup"><span data-stu-id="7a379-121">**student**</span></span> | [<span data-ttu-id="7a379-122">educationSynchronizationCustomization</span><span class="sxs-lookup"><span data-stu-id="7a379-122">educationSynchronizationCustomization</span></span>](educationsynchronizationcustomization.md) |  <span data-ttu-id="7a379-123">Personalização para uma entidade de student.</span><span class="sxs-lookup"><span data-stu-id="7a379-123">Customization for a student entity.</span></span>         |
-| <span data-ttu-id="7a379-124">**teacher**</span><span class="sxs-lookup"><span data-stu-id="7a379-124">**teacher**</span></span> | [<span data-ttu-id="7a379-125">educationSynchronizationCustomization</span><span class="sxs-lookup"><span data-stu-id="7a379-125">educationSynchronizationCustomization</span></span>](educationsynchronizationcustomization.md) |  <span data-ttu-id="7a379-126">Personalização para uma entidade de professor.</span><span class="sxs-lookup"><span data-stu-id="7a379-126">Customization for a teacher entity.</span></span>         |
-| <span data-ttu-id="7a379-127">**studentEnrollment**</span><span class="sxs-lookup"><span data-stu-id="7a379-127">**studentEnrollment**</span></span> | [<span data-ttu-id="7a379-128">educationSynchronizationCustomization</span><span class="sxs-lookup"><span data-stu-id="7a379-128">educationSynchronizationCustomization</span></span>](educationsynchronizationcustomization.md) |  <span data-ttu-id="7a379-129">Personalização para o registro de student.</span><span class="sxs-lookup"><span data-stu-id="7a379-129">Customization for student enrollment.</span></span>           |
-| <span data-ttu-id="7a379-130">**teacherRoster**</span><span class="sxs-lookup"><span data-stu-id="7a379-130">**teacherRoster**</span></span> | [<span data-ttu-id="7a379-131">educationSynchronizationCustomization</span><span class="sxs-lookup"><span data-stu-id="7a379-131">educationSynchronizationCustomization</span></span>](educationsynchronizationcustomization.md) |       <span data-ttu-id="7a379-132">Personalização para uma lista de participação do professor.</span><span class="sxs-lookup"><span data-stu-id="7a379-132">Customization for a teacher roster.</span></span>    |
+| <span data-ttu-id="f71ca-113">**escola**</span><span class="sxs-lookup"><span data-stu-id="f71ca-113">**school**</span></span> | [<span data-ttu-id="f71ca-114">educationSynchronizationCustomization</span><span class="sxs-lookup"><span data-stu-id="f71ca-114">educationSynchronizationCustomization</span></span>](educationsynchronizationcustomization.md) |  <span data-ttu-id="f71ca-115">Personalização para uma entidade escola.</span><span class="sxs-lookup"><span data-stu-id="f71ca-115">Customization for a school entity.</span></span>        |
+| <span data-ttu-id="f71ca-116">**section**</span><span class="sxs-lookup"><span data-stu-id="f71ca-116">**section**</span></span> | [<span data-ttu-id="f71ca-117">educationSynchronizationCustomization</span><span class="sxs-lookup"><span data-stu-id="f71ca-117">educationSynchronizationCustomization</span></span>](educationsynchronizationcustomization.md) |  <span data-ttu-id="f71ca-118">Personalização para uma entidade de seção.</span><span class="sxs-lookup"><span data-stu-id="f71ca-118">Customization for a section entity.</span></span>         |
+| <span data-ttu-id="f71ca-119">student</span><span class="sxs-lookup"><span data-stu-id="f71ca-119">**student**</span></span> | [<span data-ttu-id="f71ca-120">educationSynchronizationCustomization</span><span class="sxs-lookup"><span data-stu-id="f71ca-120">educationSynchronizationCustomization</span></span>](educationsynchronizationcustomization.md) |  <span data-ttu-id="f71ca-121">Personalização para uma entidade de student.</span><span class="sxs-lookup"><span data-stu-id="f71ca-121">Customization for a student entity.</span></span>         |
+| <span data-ttu-id="f71ca-122">teacher</span><span class="sxs-lookup"><span data-stu-id="f71ca-122">**teacher**</span></span> | [<span data-ttu-id="f71ca-123">educationSynchronizationCustomization</span><span class="sxs-lookup"><span data-stu-id="f71ca-123">educationSynchronizationCustomization</span></span>](educationsynchronizationcustomization.md) |  <span data-ttu-id="f71ca-124">Personalização para uma entidade de professor.</span><span class="sxs-lookup"><span data-stu-id="f71ca-124">Customization for a teacher entity.</span></span>         |
+| <span data-ttu-id="f71ca-125">**studentEnrollment**</span><span class="sxs-lookup"><span data-stu-id="f71ca-125">**studentEnrollment**</span></span> | [<span data-ttu-id="f71ca-126">educationSynchronizationCustomization</span><span class="sxs-lookup"><span data-stu-id="f71ca-126">educationSynchronizationCustomization</span></span>](educationsynchronizationcustomization.md) |  <span data-ttu-id="f71ca-127">Personalização para o registro de student.</span><span class="sxs-lookup"><span data-stu-id="f71ca-127">Customization for student enrollment.</span></span>           |
+| <span data-ttu-id="f71ca-128">**teacherRoster**</span><span class="sxs-lookup"><span data-stu-id="f71ca-128">**teacherRoster**</span></span> | [<span data-ttu-id="f71ca-129">educationSynchronizationCustomization</span><span class="sxs-lookup"><span data-stu-id="f71ca-129">educationSynchronizationCustomization</span></span>](educationsynchronizationcustomization.md) |       <span data-ttu-id="f71ca-130">Personalização para uma lista de participação do professor.</span><span class="sxs-lookup"><span data-stu-id="f71ca-130">Customization for a teacher roster.</span></span>    |
 
-## <a name="json-representation"></a><span data-ttu-id="7a379-133">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="7a379-133">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="f71ca-131">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="f71ca-131">JSON representation</span></span>
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
@@ -54,3 +54,11 @@ ms.locfileid: "29425957"
   "teacherRoster": {"@odata.type": "microsoft.graph.educationSynchronizationCustomization"}
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/educationsynchronizationcustomizations.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

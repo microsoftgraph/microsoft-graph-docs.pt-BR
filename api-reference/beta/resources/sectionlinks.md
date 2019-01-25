@@ -2,22 +2,22 @@
 title: Tipo de recurso sectionLinks
 description: Links para abrir uma seção do OneNote.
 localization_priority: Normal
-ms.openlocfilehash: 190842708979d62430a4716a8785fd40309cb189
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: a5e2f4800472e8cedc495e6de1c17a6586710e87
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858937"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29519910"
 ---
-# <a name="sectionlinks-resource-type"></a><span data-ttu-id="3e32f-103">Tipo de recurso sectionLinks</span><span class="sxs-lookup"><span data-stu-id="3e32f-103">sectionLinks resource type</span></span>
+# <a name="sectionlinks-resource-type"></a><span data-ttu-id="d87ef-103">Tipo de recurso sectionLinks</span><span class="sxs-lookup"><span data-stu-id="d87ef-103">sectionLinks resource type</span></span>
 
-> <span data-ttu-id="3e32f-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="3e32f-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="3e32f-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="3e32f-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="3e32f-106">Links para abrir uma seção do OneNote.</span><span class="sxs-lookup"><span data-stu-id="3e32f-106">Links for opening a OneNote section.</span></span>
+<span data-ttu-id="d87ef-104">Links para abrir uma seção do OneNote.</span><span class="sxs-lookup"><span data-stu-id="d87ef-104">Links for opening a OneNote section.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="3e32f-107">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="3e32f-107">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="d87ef-105">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="d87ef-105">JSON representation</span></span>
 
-<span data-ttu-id="3e32f-108">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="3e32f-108">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="d87ef-106">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="d87ef-106">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -34,18 +34,23 @@ ms.locfileid: "27858937"
 }
 
 ```
-## <a name="properties"></a><span data-ttu-id="3e32f-109">Propriedades</span><span class="sxs-lookup"><span data-stu-id="3e32f-109">Properties</span></span>
-| <span data-ttu-id="3e32f-110">Propriedade</span><span class="sxs-lookup"><span data-stu-id="3e32f-110">Property</span></span>     | <span data-ttu-id="3e32f-111">Tipo</span><span class="sxs-lookup"><span data-stu-id="3e32f-111">Type</span></span>   |<span data-ttu-id="3e32f-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="3e32f-112">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="d87ef-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="d87ef-107">Properties</span></span>
+| <span data-ttu-id="d87ef-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="d87ef-108">Property</span></span>     | <span data-ttu-id="d87ef-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="d87ef-109">Type</span></span>   |<span data-ttu-id="d87ef-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="d87ef-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="3e32f-113">oneNoteClientUrl</span><span class="sxs-lookup"><span data-stu-id="3e32f-113">oneNoteClientUrl</span></span>|[<span data-ttu-id="3e32f-114">externalLink</span><span class="sxs-lookup"><span data-stu-id="3e32f-114">externalLink</span></span>](externallink.md)|<span data-ttu-id="3e32f-115">Abre a seção no cliente nativo do OneNote se ele estiver instalado.</span><span class="sxs-lookup"><span data-stu-id="3e32f-115">Opens the section in the OneNote native client if it's installed.</span></span>|
-|<span data-ttu-id="3e32f-116">oneNoteWebUrl</span><span class="sxs-lookup"><span data-stu-id="3e32f-116">oneNoteWebUrl</span></span>|[<span data-ttu-id="3e32f-117">externalLink</span><span class="sxs-lookup"><span data-stu-id="3e32f-117">externalLink</span></span>](externallink.md)|<span data-ttu-id="3e32f-118">Abre a seção no OneNote Online.</span><span class="sxs-lookup"><span data-stu-id="3e32f-118">Opens the section in OneNote Online.</span></span>|
+|<span data-ttu-id="d87ef-111">oneNoteClientUrl</span><span class="sxs-lookup"><span data-stu-id="d87ef-111">oneNoteClientUrl</span></span>|[<span data-ttu-id="d87ef-112">externalLink</span><span class="sxs-lookup"><span data-stu-id="d87ef-112">externalLink</span></span>](externallink.md)|<span data-ttu-id="d87ef-113">Abre a seção no cliente nativo do OneNote se ele estiver instalado.</span><span class="sxs-lookup"><span data-stu-id="d87ef-113">Opens the section in the OneNote native client if it's installed.</span></span>|
+|<span data-ttu-id="d87ef-114">oneNoteWebUrl</span><span class="sxs-lookup"><span data-stu-id="d87ef-114">oneNoteWebUrl</span></span>|[<span data-ttu-id="d87ef-115">externalLink</span><span class="sxs-lookup"><span data-stu-id="d87ef-115">externalLink</span></span>](externallink.md)|<span data-ttu-id="d87ef-116">Abre a seção no OneNote Online.</span><span class="sxs-lookup"><span data-stu-id="d87ef-116">Opens the section in OneNote Online.</span></span>|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "sectionLinks resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/sectionlinks.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

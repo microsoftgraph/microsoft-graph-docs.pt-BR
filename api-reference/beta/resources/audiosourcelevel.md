@@ -4,30 +4,30 @@ description: Configuração de nível de outras fontes.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 79ad56c11e8b277a1354ffc3a6292a0434466c8a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: c91a4c57b283f7669b2be22bba5de5d958b437ad
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27947649"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29528372"
 ---
-# <a name="audiosourcelevel-resource-type"></a><span data-ttu-id="3c111-103">tipo de recurso de audioSourceLevel</span><span class="sxs-lookup"><span data-stu-id="3c111-103">audioSourceLevel resource type</span></span>
+# <a name="audiosourcelevel-resource-type"></a><span data-ttu-id="bb8e8-103">tipo de recurso de audioSourceLevel</span><span class="sxs-lookup"><span data-stu-id="bb8e8-103">audioSourceLevel resource type</span></span>
 
-> <span data-ttu-id="3c111-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="3c111-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="3c111-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="3c111-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="3c111-106">Configuração de nível de outras fontes.</span><span class="sxs-lookup"><span data-stu-id="3c111-106">Level configuration for other sources.</span></span>
+<span data-ttu-id="bb8e8-104">Configuração de nível de outras fontes.</span><span class="sxs-lookup"><span data-stu-id="bb8e8-104">Level configuration for other sources.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="3c111-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="3c111-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="bb8e8-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="bb8e8-105">Properties</span></span>
 
-| <span data-ttu-id="3c111-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="3c111-108">Property</span></span>               | <span data-ttu-id="3c111-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="3c111-109">Type</span></span>    | <span data-ttu-id="3c111-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="3c111-110">Description</span></span>                                                                                         |
+| <span data-ttu-id="bb8e8-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="bb8e8-106">Property</span></span>               | <span data-ttu-id="bb8e8-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="bb8e8-107">Type</span></span>    | <span data-ttu-id="bb8e8-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="bb8e8-108">Description</span></span>                                                                                         |
 | :--------------------- | :------ | :---------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="3c111-111">duckOthers</span><span class="sxs-lookup"><span data-stu-id="3c111-111">duckOthers</span></span>             | <span data-ttu-id="3c111-112">Booliano</span><span class="sxs-lookup"><span data-stu-id="3c111-112">Boolean</span></span> | <span data-ttu-id="3c111-113">Habilita a essa fonte para jantar de outras fontes enquanto estão ativos.</span><span class="sxs-lookup"><span data-stu-id="3c111-113">Enables this source to duck other sources while active.</span></span> <span data-ttu-id="3c111-114">Se definido como true, desviando nível deve ser definido.</span><span class="sxs-lookup"><span data-stu-id="3c111-114">If set to true, ducking level has to be set.</span></span>|
-| <span data-ttu-id="3c111-115">nível</span><span class="sxs-lookup"><span data-stu-id="3c111-115">level</span></span>                  | <span data-ttu-id="3c111-116">Int64</span><span class="sxs-lookup"><span data-stu-id="3c111-116">Int64</span></span>   | <span data-ttu-id="3c111-117">Desviando nível da fonte se `duckOthers` estiver definida como `true`.</span><span class="sxs-lookup"><span data-stu-id="3c111-117">Ducking level of the source if `duckOthers` is set to `true`.</span></span>                                     |
-| <span data-ttu-id="3c111-118">participante</span><span class="sxs-lookup"><span data-stu-id="3c111-118">participant</span></span>            | <span data-ttu-id="3c111-119">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="3c111-119">String</span></span>  | <span data-ttu-id="3c111-120">O fluxo de áudio participante do código-fonte.</span><span class="sxs-lookup"><span data-stu-id="3c111-120">The source participant audio stream.</span></span>                                                                |
+| <span data-ttu-id="bb8e8-109">duckOthers</span><span class="sxs-lookup"><span data-stu-id="bb8e8-109">duckOthers</span></span>             | <span data-ttu-id="bb8e8-110">Booliano</span><span class="sxs-lookup"><span data-stu-id="bb8e8-110">Boolean</span></span> | <span data-ttu-id="bb8e8-111">Habilita a essa fonte para jantar de outras fontes enquanto estão ativos.</span><span class="sxs-lookup"><span data-stu-id="bb8e8-111">Enables this source to duck other sources while active.</span></span> <span data-ttu-id="bb8e8-112">Se definido como true, desviando nível deve ser definido.</span><span class="sxs-lookup"><span data-stu-id="bb8e8-112">If set to true, ducking level has to be set.</span></span>|
+| <span data-ttu-id="bb8e8-113">nível</span><span class="sxs-lookup"><span data-stu-id="bb8e8-113">level</span></span>                  | <span data-ttu-id="bb8e8-114">Int64</span><span class="sxs-lookup"><span data-stu-id="bb8e8-114">Int64</span></span>   | <span data-ttu-id="bb8e8-115">Desviando nível da fonte se `duckOthers` estiver definida como `true`.</span><span class="sxs-lookup"><span data-stu-id="bb8e8-115">Ducking level of the source if `duckOthers` is set to `true`.</span></span>                                     |
+| <span data-ttu-id="bb8e8-116">participante</span><span class="sxs-lookup"><span data-stu-id="bb8e8-116">participant</span></span>            | <span data-ttu-id="bb8e8-117">String</span><span class="sxs-lookup"><span data-stu-id="bb8e8-117">String</span></span>  | <span data-ttu-id="bb8e8-118">O fluxo de áudio participante do código-fonte.</span><span class="sxs-lookup"><span data-stu-id="bb8e8-118">The source participant audio stream.</span></span>                                                                |
 
-## <a name="json-representation"></a><span data-ttu-id="3c111-121">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="3c111-121">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="bb8e8-119">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="bb8e8-119">JSON representation</span></span>
 
-<span data-ttu-id="3c111-122">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="3c111-122">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="bb8e8-120">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="bb8e8-120">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -46,10 +46,15 @@ ms.locfileid: "27947649"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "audioSourceLevel resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/audiosourcelevel.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
