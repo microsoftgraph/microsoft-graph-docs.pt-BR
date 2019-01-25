@@ -2,29 +2,29 @@
 title: tipo de recurso de erro genérico
 description: Um erro de finalidade geral.
 localization_priority: Normal
-ms.openlocfilehash: 744266ef8ffb17c4af4168d6239e5a5a30561936
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: d3c7e9cd7ff7be635adfbf329170068cd944f0b2
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823566"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524125"
 ---
-# <a name="genericerror-resource-type"></a><span data-ttu-id="c097e-103">tipo de recurso de erro genérico</span><span class="sxs-lookup"><span data-stu-id="c097e-103">genericError resource type</span></span>
+# <a name="genericerror-resource-type"></a><span data-ttu-id="ce94a-103">tipo de recurso de erro genérico</span><span class="sxs-lookup"><span data-stu-id="ce94a-103">genericError resource type</span></span>
 
-> <span data-ttu-id="c097e-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="c097e-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="c097e-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="c097e-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c097e-106">Um erro de finalidade geral.</span><span class="sxs-lookup"><span data-stu-id="c097e-106">A general-purpose error.</span></span>
+<span data-ttu-id="ce94a-104">Um erro de finalidade geral.</span><span class="sxs-lookup"><span data-stu-id="ce94a-104">A general-purpose error.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="c097e-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="c097e-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="ce94a-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="ce94a-105">Properties</span></span>
 
-| <span data-ttu-id="c097e-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="c097e-108">Property</span></span> | <span data-ttu-id="c097e-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="c097e-109">Type</span></span> | <span data-ttu-id="c097e-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="c097e-110">Description</span></span> |
+| <span data-ttu-id="ce94a-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="ce94a-106">Property</span></span> | <span data-ttu-id="ce94a-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="ce94a-107">Type</span></span> | <span data-ttu-id="ce94a-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="ce94a-108">Description</span></span> |
 |:---------|:-----|:------------|
-| <span data-ttu-id="c097e-111">mensagem</span><span class="sxs-lookup"><span data-stu-id="c097e-111">message</span></span> | <span data-ttu-id="c097e-112">String</span><span class="sxs-lookup"><span data-stu-id="c097e-112">String</span></span> | <span data-ttu-id="c097e-113">A mensagem de erro.</span><span class="sxs-lookup"><span data-stu-id="c097e-113">The error message.</span></span> |
-| <span data-ttu-id="c097e-114">código</span><span class="sxs-lookup"><span data-stu-id="c097e-114">code</span></span> | <span data-ttu-id="c097e-115">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="c097e-115">String</span></span> | <span data-ttu-id="c097e-116">O código do erro.</span><span class="sxs-lookup"><span data-stu-id="c097e-116">The error code.</span></span> |
+| <span data-ttu-id="ce94a-109">mensagem</span><span class="sxs-lookup"><span data-stu-id="ce94a-109">message</span></span> | <span data-ttu-id="ce94a-110">String</span><span class="sxs-lookup"><span data-stu-id="ce94a-110">String</span></span> | <span data-ttu-id="ce94a-111">A mensagem de erro.</span><span class="sxs-lookup"><span data-stu-id="ce94a-111">The error message.</span></span> |
+| <span data-ttu-id="ce94a-112">código</span><span class="sxs-lookup"><span data-stu-id="ce94a-112">code</span></span> | <span data-ttu-id="ce94a-113">String</span><span class="sxs-lookup"><span data-stu-id="ce94a-113">String</span></span> | <span data-ttu-id="ce94a-114">O código do erro.</span><span class="sxs-lookup"><span data-stu-id="ce94a-114">The error code.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="c097e-117">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="c097e-117">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="ce94a-115">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="ce94a-115">JSON representation</span></span>
 
-<span data-ttu-id="c097e-118">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="c097e-118">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="ce94a-116">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="ce94a-116">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -39,3 +39,11 @@ ms.locfileid: "27823566"
   "code": "String"
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/genericerror.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

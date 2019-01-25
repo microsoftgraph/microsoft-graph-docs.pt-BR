@@ -4,36 +4,36 @@ description: 'Criar um rascunho de uma mensagem de responder a todos para inclui
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 7f0b2631f02a94a7627e96e24308b135d70d20e1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 8d42517daa5c8242f28c6dfb3cb4d508b2667ed5
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27922168"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29528575"
 ---
-# <a name="message-createreplyall"></a><span data-ttu-id="46454-103">message: createReplyAll</span><span class="sxs-lookup"><span data-stu-id="46454-103">message: createReplyAll</span></span>
+# <a name="message-createreplyall"></a><span data-ttu-id="75b3f-103">message: createReplyAll</span><span class="sxs-lookup"><span data-stu-id="75b3f-103">message: createReplyAll</span></span>
 
-> <span data-ttu-id="46454-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="46454-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="46454-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="46454-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="46454-106">Crie um rascunho de uma mensagem de responder a todos para incluir um comentário ou atualizar as propriedades de mensagem, todas em uma chamada de **createReplyAll** .</span><span class="sxs-lookup"><span data-stu-id="46454-106">Create a draft of a reply-all message to include a comment or update any message properties, all in one **createReplyAll** call.</span></span> <span data-ttu-id="46454-107">Em seguida, você pode [Atualizar](../api/message-update.md) ou [Enviar](../api/message-send.md) o rascunho.</span><span class="sxs-lookup"><span data-stu-id="46454-107">You can then [update](../api/message-update.md) or [send](../api/message-send.md) the draft.</span></span>
+<span data-ttu-id="75b3f-104">Crie um rascunho de uma mensagem de responder a todos para incluir um comentário ou atualizar as propriedades de mensagem, todas em uma chamada de **createReplyAll** .</span><span class="sxs-lookup"><span data-stu-id="75b3f-104">Create a draft of a reply-all message to include a comment or update any message properties, all in one **createReplyAll** call.</span></span> <span data-ttu-id="75b3f-105">Em seguida, você pode [Atualizar](../api/message-update.md) ou [Enviar](../api/message-send.md) o rascunho.</span><span class="sxs-lookup"><span data-stu-id="75b3f-105">You can then [update](../api/message-update.md) or [send](../api/message-send.md) the draft.</span></span>
 
-<span data-ttu-id="46454-108">**Observação**</span><span class="sxs-lookup"><span data-stu-id="46454-108">**Note**</span></span>
+<span data-ttu-id="75b3f-106">**Observação**</span><span class="sxs-lookup"><span data-stu-id="75b3f-106">**Note**</span></span>
 
-- <span data-ttu-id="46454-109">Você pode especificar um comentário ou a propriedade **body** do `message` parâmetro.</span><span class="sxs-lookup"><span data-stu-id="46454-109">You can specify either a comment or the **body** property of the `message` parameter.</span></span> <span data-ttu-id="46454-110">Especificar ambos retornará um erro HTTP 400 - Solicitação incorreta.</span><span class="sxs-lookup"><span data-stu-id="46454-110">Specifying both will return an HTTP 400 Bad Request error.</span></span>
-- <span data-ttu-id="46454-111">Se a propriedade **replyTo** for especificada na mensagem original, por um formato de mensagem da Internet ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), você deve enviar a resposta aos destinatários no</span><span class="sxs-lookup"><span data-stu-id="46454-111">If the **replyTo** property is specified in the original message, per Internet Message Format ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), you should send the reply to the recipients in the</span></span>  
-<span data-ttu-id="46454-112">propriedades **replyTo** e **toRecipients** e não os destinatários nas propriedades **do** e **toRecipients** .</span><span class="sxs-lookup"><span data-stu-id="46454-112">**replyTo** and **toRecipients** properties, and not the recipients in the **from** and **toRecipients** properties.</span></span> 
+- <span data-ttu-id="75b3f-107">Você pode especificar um comentário ou a propriedade **body** do `message` parâmetro.</span><span class="sxs-lookup"><span data-stu-id="75b3f-107">You can specify either a comment or the **body** property of the `message` parameter.</span></span> <span data-ttu-id="75b3f-108">Especificar ambos retornará um erro HTTP 400 - Solicitação incorreta.</span><span class="sxs-lookup"><span data-stu-id="75b3f-108">Specifying both will return an HTTP 400 Bad Request error.</span></span>
+- <span data-ttu-id="75b3f-109">Se a propriedade **replyTo** for especificada na mensagem original, por um formato de mensagem da Internet ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), você deve enviar a resposta aos destinatários no</span><span class="sxs-lookup"><span data-stu-id="75b3f-109">If the **replyTo** property is specified in the original message, per Internet Message Format ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), you should send the reply to the recipients in the</span></span>  
+<span data-ttu-id="75b3f-110">propriedades **replyTo** e **toRecipients** e não os destinatários nas propriedades **do** e **toRecipients** .</span><span class="sxs-lookup"><span data-stu-id="75b3f-110">**replyTo** and **toRecipients** properties, and not the recipients in the **from** and **toRecipients** properties.</span></span> 
 
 
-## <a name="permissions"></a><span data-ttu-id="46454-113">Permissions</span><span class="sxs-lookup"><span data-stu-id="46454-113">Permissions</span></span>
-<span data-ttu-id="46454-p104">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="46454-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="75b3f-111">Permissões</span><span class="sxs-lookup"><span data-stu-id="75b3f-111">Permissions</span></span>
+<span data-ttu-id="75b3f-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="75b3f-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="46454-116">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="46454-116">Permission type</span></span>      | <span data-ttu-id="46454-117">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="46454-117">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="75b3f-114">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="75b3f-114">Permission type</span></span>      | <span data-ttu-id="75b3f-115">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="75b3f-115">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="46454-118">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="46454-118">Delegated (work or school account)</span></span> | <span data-ttu-id="46454-119">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="46454-119">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="46454-120">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="46454-120">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="46454-121">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="46454-121">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="46454-122">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="46454-122">Application</span></span> | <span data-ttu-id="46454-123">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="46454-123">Mail.ReadWrite</span></span> |
+|<span data-ttu-id="75b3f-116">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="75b3f-116">Delegated (work or school account)</span></span> | <span data-ttu-id="75b3f-117">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="75b3f-117">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="75b3f-118">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="75b3f-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="75b3f-119">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="75b3f-119">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="75b3f-120">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="75b3f-120">Application</span></span> | <span data-ttu-id="75b3f-121">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="75b3f-121">Mail.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="46454-124">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="46454-124">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="75b3f-122">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="75b3f-122">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/messages/{id}/createReplyAll
@@ -41,28 +41,28 @@ POST /users/{id | userPrincipalName}/messages/{id}/createReplyAll
 POST /me/mailFolders/{id}/messages/{id}/createReplyAll
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReplyAll
 ```
-## <a name="request-headers"></a><span data-ttu-id="46454-125">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="46454-125">Request headers</span></span>
-| <span data-ttu-id="46454-126">Nome</span><span class="sxs-lookup"><span data-stu-id="46454-126">Name</span></span>       | <span data-ttu-id="46454-127">Tipo</span><span class="sxs-lookup"><span data-stu-id="46454-127">Type</span></span> | <span data-ttu-id="46454-128">Descrição</span><span class="sxs-lookup"><span data-stu-id="46454-128">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="75b3f-123">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="75b3f-123">Request headers</span></span>
+| <span data-ttu-id="75b3f-124">Nome</span><span class="sxs-lookup"><span data-stu-id="75b3f-124">Name</span></span>       | <span data-ttu-id="75b3f-125">Tipo</span><span class="sxs-lookup"><span data-stu-id="75b3f-125">Type</span></span> | <span data-ttu-id="75b3f-126">Descrição</span><span class="sxs-lookup"><span data-stu-id="75b3f-126">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="46454-129">Autorização</span><span class="sxs-lookup"><span data-stu-id="46454-129">Authorization</span></span>  | <span data-ttu-id="46454-130">string</span><span class="sxs-lookup"><span data-stu-id="46454-130">string</span></span>  | <span data-ttu-id="46454-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="46454-p105">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="46454-133">Content-Type</span><span class="sxs-lookup"><span data-stu-id="46454-133">Content-Type</span></span> | <span data-ttu-id="46454-134">string</span><span class="sxs-lookup"><span data-stu-id="46454-134">string</span></span>  | <span data-ttu-id="46454-p106">Natureza dos dados no corpo de uma entidade. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="46454-p106">Nature of the data in the body of an entity. Required.</span></span> |
+| <span data-ttu-id="75b3f-127">Autorização</span><span class="sxs-lookup"><span data-stu-id="75b3f-127">Authorization</span></span>  | <span data-ttu-id="75b3f-128">string</span><span class="sxs-lookup"><span data-stu-id="75b3f-128">string</span></span>  | <span data-ttu-id="75b3f-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="75b3f-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="75b3f-131">Content-Type</span><span class="sxs-lookup"><span data-stu-id="75b3f-131">Content-Type</span></span> | <span data-ttu-id="75b3f-132">string</span><span class="sxs-lookup"><span data-stu-id="75b3f-132">string</span></span>  | <span data-ttu-id="75b3f-p105">Natureza dos dados no corpo de uma entidade. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="75b3f-p105">Nature of the data in the body of an entity. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="46454-137">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="46454-137">Request body</span></span>
-<span data-ttu-id="46454-138">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="46454-138">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="75b3f-135">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="75b3f-135">Request body</span></span>
+<span data-ttu-id="75b3f-136">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="75b3f-136">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="46454-139">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="46454-139">Parameter</span></span>    | <span data-ttu-id="46454-140">Tipo</span><span class="sxs-lookup"><span data-stu-id="46454-140">Type</span></span>   |<span data-ttu-id="46454-141">Descrição</span><span class="sxs-lookup"><span data-stu-id="46454-141">Description</span></span>|
+| <span data-ttu-id="75b3f-137">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="75b3f-137">Parameter</span></span>    | <span data-ttu-id="75b3f-138">Tipo</span><span class="sxs-lookup"><span data-stu-id="75b3f-138">Type</span></span>   |<span data-ttu-id="75b3f-139">Descrição</span><span class="sxs-lookup"><span data-stu-id="75b3f-139">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="46454-142">comment</span><span class="sxs-lookup"><span data-stu-id="46454-142">comment</span></span>|<span data-ttu-id="46454-143">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="46454-143">String</span></span>|<span data-ttu-id="46454-p107">Um comentário a incluir. Não pode ficar vazio.</span><span class="sxs-lookup"><span data-stu-id="46454-p107">A comment to include. Can be an empty string.</span></span>|
-|<span data-ttu-id="46454-146">message</span><span class="sxs-lookup"><span data-stu-id="46454-146">message</span></span>|[<span data-ttu-id="46454-147">message</span><span class="sxs-lookup"><span data-stu-id="46454-147">message</span></span>](../resources/message.md)|<span data-ttu-id="46454-148">Quaisquer propriedades graváveis ​​a serem atualizadas na mensagem de resposta a todos.</span><span class="sxs-lookup"><span data-stu-id="46454-148">Any writeable properties to update in the reply-all message.</span></span>|
+|<span data-ttu-id="75b3f-140">comment</span><span class="sxs-lookup"><span data-stu-id="75b3f-140">comment</span></span>|<span data-ttu-id="75b3f-141">String</span><span class="sxs-lookup"><span data-stu-id="75b3f-141">String</span></span>|<span data-ttu-id="75b3f-p106">Um comentário a incluir. Não pode ficar vazio.</span><span class="sxs-lookup"><span data-stu-id="75b3f-p106">A comment to include. Can be an empty string.</span></span>|
+|<span data-ttu-id="75b3f-144">message</span><span class="sxs-lookup"><span data-stu-id="75b3f-144">message</span></span>|[<span data-ttu-id="75b3f-145">message</span><span class="sxs-lookup"><span data-stu-id="75b3f-145">message</span></span>](../resources/message.md)|<span data-ttu-id="75b3f-146">Quaisquer propriedades graváveis ​​a serem atualizadas na mensagem de resposta a todos.</span><span class="sxs-lookup"><span data-stu-id="75b3f-146">Any writeable properties to update in the reply-all message.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="46454-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="46454-149">Response</span></span>
+## <a name="response"></a><span data-ttu-id="75b3f-147">Resposta</span><span class="sxs-lookup"><span data-stu-id="75b3f-147">Response</span></span>
 
-<span data-ttu-id="46454-150">Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [message](../resources/message.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="46454-150">If successful, this method returns `201 Created` response code and [message](../resources/message.md) object in the response body.</span></span>
+<span data-ttu-id="75b3f-148">Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [message](../resources/message.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="75b3f-148">If successful, this method returns `201 Created` response code and [message](../resources/message.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="46454-151">Exemplo</span><span class="sxs-lookup"><span data-stu-id="46454-151">Example</span></span>
-<span data-ttu-id="46454-152">O exemplo a seguir cria um rascunho para responder a todos e adiciona um anexo e o comentário todas em **createReplyAll** de uma chamada.</span><span class="sxs-lookup"><span data-stu-id="46454-152">The following example creates a draft to reply all, and adds an attachment and comment all in one **createReplyAll** call.</span></span>
-##### <a name="request"></a><span data-ttu-id="46454-153">Solicitação</span><span class="sxs-lookup"><span data-stu-id="46454-153">Request</span></span>
-<span data-ttu-id="46454-154">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="46454-154">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="75b3f-149">Exemplo</span><span class="sxs-lookup"><span data-stu-id="75b3f-149">Example</span></span>
+<span data-ttu-id="75b3f-150">O exemplo a seguir cria um rascunho de resposta a todos e adiciona um anexo e comentário, tudo em uma única chamada **CreateReplyAll**.</span><span class="sxs-lookup"><span data-stu-id="75b3f-150">The following example creates a draft to reply all, and adds an attachment and comment all in one **createReplyAll** call.</span></span>
+##### <a name="request"></a><span data-ttu-id="75b3f-151">Solicitação</span><span class="sxs-lookup"><span data-stu-id="75b3f-151">Request</span></span>
+<span data-ttu-id="75b3f-152">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="75b3f-152">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "message_createreplyall"
@@ -85,8 +85,8 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="46454-155">Resposta</span><span class="sxs-lookup"><span data-stu-id="46454-155">Response</span></span>
-<span data-ttu-id="46454-p108">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="46454-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="75b3f-153">Resposta</span><span class="sxs-lookup"><span data-stu-id="75b3f-153">Response</span></span>
+<span data-ttu-id="75b3f-p107">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="75b3f-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -132,10 +132,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "message: createReplyAll",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/message-createreplyall.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

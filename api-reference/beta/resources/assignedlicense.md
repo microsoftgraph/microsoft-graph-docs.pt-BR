@@ -1,29 +1,29 @@
 ---
 title: Tipo de recurso assignedLicense
-description: Representa uma licença atribuída a um usuário. A propriedade **assignedLicenses** da entidade user é uma coleção de **assignedLicense**.
+description: Representa uma licença atribuída a um usuário. A propriedade **assignedLicenses** da entidade **user** é uma coleção de assignedLicense.
 localization_priority: Normal
-ms.openlocfilehash: dfb93075fe62a0cfb479e12554e9078e876c4529
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 2d9620ec33a296c09ced9bc9d8af8d6d032bb7d9
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853779"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524916"
 ---
-# <a name="assignedlicense-resource-type"></a><span data-ttu-id="e9c84-104">Tipo de recurso assignedLicense</span><span class="sxs-lookup"><span data-stu-id="e9c84-104">assignedLicense resource type</span></span>
+# <a name="assignedlicense-resource-type"></a><span data-ttu-id="e6225-104">Tipo de recurso assignedLicense</span><span class="sxs-lookup"><span data-stu-id="e6225-104">assignedLicense resource type</span></span>
 
-> <span data-ttu-id="e9c84-105">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="e9c84-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="e9c84-106">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="e9c84-106">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e9c84-p103">Representa uma licença atribuída a um usuário. A propriedade **assignedLicenses** da entidade [user](user.md) é uma coleção de **assignedLicense**.</span><span class="sxs-lookup"><span data-stu-id="e9c84-p103">Represents a license assigned to a user. The **assignedLicenses** property of the [user](user.md) entity is a collection of **assignedLicense**.</span></span>
+<span data-ttu-id="e6225-p102">Representa uma licença atribuída a um usuário. A propriedade **assignedLicenses** da entidade [user](user.md) é uma coleção de **assignedLicense**.</span><span class="sxs-lookup"><span data-stu-id="e6225-p102">Represents a license assigned to a user. The **assignedLicenses** property of the [user](user.md) entity is a collection of **assignedLicense**.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="e9c84-109">Propriedades</span><span class="sxs-lookup"><span data-stu-id="e9c84-109">Properties</span></span>
-| <span data-ttu-id="e9c84-110">Propriedade</span><span class="sxs-lookup"><span data-stu-id="e9c84-110">Property</span></span>     | <span data-ttu-id="e9c84-111">Tipo</span><span class="sxs-lookup"><span data-stu-id="e9c84-111">Type</span></span>   |<span data-ttu-id="e9c84-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="e9c84-112">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="e6225-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="e6225-107">Properties</span></span>
+| <span data-ttu-id="e6225-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="e6225-108">Property</span></span>     | <span data-ttu-id="e6225-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="e6225-109">Type</span></span>   |<span data-ttu-id="e6225-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="e6225-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="e9c84-113">disabledPlans</span><span class="sxs-lookup"><span data-stu-id="e9c84-113">disabledPlans</span></span>|<span data-ttu-id="e9c84-114">Coleção de GUIDs</span><span class="sxs-lookup"><span data-stu-id="e9c84-114">Guid collection</span></span>|<span data-ttu-id="e9c84-115">Uma coleção dos identificadores exclusivos de planos que foram desabilitados.</span><span class="sxs-lookup"><span data-stu-id="e9c84-115">A collection of the unique identifiers for plans that have been disabled.</span></span>|
-|<span data-ttu-id="e9c84-116">skuId</span><span class="sxs-lookup"><span data-stu-id="e9c84-116">skuId</span></span>|<span data-ttu-id="e9c84-117">Guid</span><span class="sxs-lookup"><span data-stu-id="e9c84-117">Guid</span></span>|<span data-ttu-id="e9c84-118">O identificador exclusivo da SKU.</span><span class="sxs-lookup"><span data-stu-id="e9c84-118">The unique identifier for the SKU.</span></span>|
+|<span data-ttu-id="e6225-111">disabledPlans</span><span class="sxs-lookup"><span data-stu-id="e6225-111">disabledPlans</span></span>|<span data-ttu-id="e6225-112">Coleção de GUIDs</span><span class="sxs-lookup"><span data-stu-id="e6225-112">Guid collection</span></span>|<span data-ttu-id="e6225-113">Uma coleção dos identificadores exclusivos de planos que foram desabilitados.</span><span class="sxs-lookup"><span data-stu-id="e6225-113">A collection of the unique identifiers for plans that have been disabled.</span></span>|
+|<span data-ttu-id="e6225-114">skuId</span><span class="sxs-lookup"><span data-stu-id="e6225-114">skuId</span></span>|<span data-ttu-id="e6225-115">Guid</span><span class="sxs-lookup"><span data-stu-id="e6225-115">Guid</span></span>|<span data-ttu-id="e6225-116">O identificador exclusivo da SKU.</span><span class="sxs-lookup"><span data-stu-id="e6225-116">The unique identifier for the SKU.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="e9c84-119">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="e9c84-119">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="e6225-117">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="e6225-117">JSON representation</span></span>
 
-<span data-ttu-id="e9c84-120">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="e9c84-120">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="e6225-118">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="e6225-118">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -44,10 +44,15 @@ ms.locfileid: "27853779"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "assignedLicense resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/assignedlicense.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

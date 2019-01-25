@@ -2,28 +2,28 @@
 title: tipo de recurso de stringKeyStringValuePair
 description: Representa um par de chave-valor em que a chave é uma cadeia de caracteres e o valor é uma cadeia de caracteres.
 localization_priority: Normal
-ms.openlocfilehash: 8f9c0f5c87dfd2080d24d31d304cfce4197c34de
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: f91d63ee4b4d3b0328bbb6fbe58c74ec8f78c5b2
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855948"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29520218"
 ---
-# <a name="stringkeystringvaluepair-resource-type"></a><span data-ttu-id="55571-103">tipo de recurso de stringKeyStringValuePair</span><span class="sxs-lookup"><span data-stu-id="55571-103">stringKeyStringValuePair resource type</span></span>
+# <a name="stringkeystringvaluepair-resource-type"></a><span data-ttu-id="34f4f-103">tipo de recurso de stringKeyStringValuePair</span><span class="sxs-lookup"><span data-stu-id="34f4f-103">stringKeyStringValuePair resource type</span></span>
 
-> <span data-ttu-id="55571-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="55571-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="55571-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="55571-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="55571-106">Representa um par de chave-valor em que a chave é uma cadeia de caracteres e o valor é uma cadeia de caracteres.</span><span class="sxs-lookup"><span data-stu-id="55571-106">Represents a key-value pair where the key is a string and the value is a string.</span></span>
+<span data-ttu-id="34f4f-104">Representa um par de chave-valor em que a chave é uma cadeia de caracteres e o valor é uma cadeia de caracteres.</span><span class="sxs-lookup"><span data-stu-id="34f4f-104">Represents a key-value pair where the key is a string and the value is a string.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="55571-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="55571-107">Properties</span></span>
-| <span data-ttu-id="55571-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="55571-108">Property</span></span>     | <span data-ttu-id="55571-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="55571-109">Type</span></span>   |<span data-ttu-id="55571-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="55571-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="34f4f-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="34f4f-105">Properties</span></span>
+| <span data-ttu-id="34f4f-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="34f4f-106">Property</span></span>     | <span data-ttu-id="34f4f-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="34f4f-107">Type</span></span>   |<span data-ttu-id="34f4f-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="34f4f-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="55571-111">key</span><span class="sxs-lookup"><span data-stu-id="55571-111">key</span></span>|<span data-ttu-id="55571-112">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="55571-112">String</span></span>|<span data-ttu-id="55571-113">Chave.</span><span class="sxs-lookup"><span data-stu-id="55571-113">Key.</span></span>|
-|<span data-ttu-id="55571-114">valor</span><span class="sxs-lookup"><span data-stu-id="55571-114">value</span></span>|<span data-ttu-id="55571-115">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="55571-115">String</span></span>|<span data-ttu-id="55571-116">Valor.</span><span class="sxs-lookup"><span data-stu-id="55571-116">Value.</span></span>|
+|<span data-ttu-id="34f4f-109">key</span><span class="sxs-lookup"><span data-stu-id="34f4f-109">key</span></span>|<span data-ttu-id="34f4f-110">String</span><span class="sxs-lookup"><span data-stu-id="34f4f-110">String</span></span>|<span data-ttu-id="34f4f-111">Chave.</span><span class="sxs-lookup"><span data-stu-id="34f4f-111">Key.</span></span>|
+|<span data-ttu-id="34f4f-112">valor</span><span class="sxs-lookup"><span data-stu-id="34f4f-112">value</span></span>|<span data-ttu-id="34f4f-113">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="34f4f-113">String</span></span>|<span data-ttu-id="34f4f-114">Valor.</span><span class="sxs-lookup"><span data-stu-id="34f4f-114">Value.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="55571-117">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="55571-117">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="34f4f-115">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="34f4f-115">JSON representation</span></span>
 
-<span data-ttu-id="55571-118">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="55571-118">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="34f4f-116">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="34f4f-116">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -43,10 +43,15 @@ ms.locfileid: "27855948"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "stringKeyStringValuePair resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/synchronization-stringkeystringvaluepair.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

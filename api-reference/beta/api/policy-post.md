@@ -2,61 +2,61 @@
 title: Criar política
 description: Crie um novo objeto de diretiva especificando o nome para exibição, tipo de política e descrição da política.
 localization_priority: Normal
-ms.openlocfilehash: 4850b2899bfd9add703af912f16602960b2657f4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 30a311b45f9705a07b62541a4f3a110daade09fa
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831231"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29527693"
 ---
-# <a name="create-policy"></a><span data-ttu-id="a5712-103">Criar política</span><span class="sxs-lookup"><span data-stu-id="a5712-103">Create Policy</span></span>
+# <a name="create-policy"></a><span data-ttu-id="91e00-103">Criar política</span><span class="sxs-lookup"><span data-stu-id="91e00-103">Create Policy</span></span>
 
-> <span data-ttu-id="a5712-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="a5712-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="a5712-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="a5712-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a5712-106">Crie um novo objeto de [diretiva](../resources/policy.md) especificando o nome para exibição, tipo de política e descrição da política.</span><span class="sxs-lookup"><span data-stu-id="a5712-106">Create a new [policy](../resources/policy.md) object by specifying display name, policy type, and policy description.</span></span>
+<span data-ttu-id="91e00-104">Crie um novo objeto de [diretiva](../resources/policy.md) especificando o nome para exibição, tipo de política e descrição da política.</span><span class="sxs-lookup"><span data-stu-id="91e00-104">Create a new [policy](../resources/policy.md) object by specifying display name, policy type, and policy description.</span></span>
 
-><span data-ttu-id="a5712-107">Observação: Os detalhes da diretiva serão validados antes de serem armazenados.</span><span class="sxs-lookup"><span data-stu-id="a5712-107">Note: The policy details will be validated before being stored.</span></span> <span data-ttu-id="a5712-108">Se ele não passar na validação, um 400 Solicitação incorreta será retornado.</span><span class="sxs-lookup"><span data-stu-id="a5712-108">If it does not pass validation, a 400 Bad Request will be returned.</span></span>
+><span data-ttu-id="91e00-105">Observação: Os detalhes da diretiva serão validados antes de serem armazenados.</span><span class="sxs-lookup"><span data-stu-id="91e00-105">Note: The policy details will be validated before being stored.</span></span> <span data-ttu-id="91e00-106">Se ele não passar na validação, um 400 Solicitação incorreta será retornado.</span><span class="sxs-lookup"><span data-stu-id="91e00-106">If it does not pass validation, a 400 Bad Request will be returned.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a5712-109">Permissions</span><span class="sxs-lookup"><span data-stu-id="a5712-109">Permissions</span></span>
-<span data-ttu-id="a5712-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a5712-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="91e00-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="91e00-107">Permissions</span></span>
+<span data-ttu-id="91e00-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="91e00-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a5712-112">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="a5712-112">Permission type</span></span>      | <span data-ttu-id="a5712-113">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="a5712-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="91e00-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="91e00-110">Permission type</span></span>      | <span data-ttu-id="91e00-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="91e00-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a5712-114">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="a5712-114">Delegated (work or school account)</span></span> | <span data-ttu-id="a5712-115">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="a5712-115">Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="a5712-116">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="a5712-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a5712-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="a5712-117">Not supported.</span></span>    |
-|<span data-ttu-id="a5712-118">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="a5712-118">Application</span></span> | <span data-ttu-id="a5712-119">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="a5712-119">Not supported.</span></span> |
+|<span data-ttu-id="91e00-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="91e00-112">Delegated (work or school account)</span></span> | <span data-ttu-id="91e00-113">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="91e00-113">Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="91e00-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="91e00-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="91e00-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="91e00-115">Not supported.</span></span>    |
+|<span data-ttu-id="91e00-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="91e00-116">Application</span></span> | <span data-ttu-id="91e00-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="91e00-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="a5712-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="a5712-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="91e00-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="91e00-118">HTTP request</span></span>
 
 ```http
 POST /policies
 ```
-## <a name="request-headers"></a><span data-ttu-id="a5712-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="a5712-121">Request headers</span></span>
-| <span data-ttu-id="a5712-122">Nome</span><span class="sxs-lookup"><span data-stu-id="a5712-122">Name</span></span>       | <span data-ttu-id="a5712-123">Tipo</span><span class="sxs-lookup"><span data-stu-id="a5712-123">Type</span></span> | <span data-ttu-id="a5712-124">Descrição</span><span class="sxs-lookup"><span data-stu-id="a5712-124">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="91e00-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="91e00-119">Request headers</span></span>
+| <span data-ttu-id="91e00-120">Nome</span><span class="sxs-lookup"><span data-stu-id="91e00-120">Name</span></span>       | <span data-ttu-id="91e00-121">Tipo</span><span class="sxs-lookup"><span data-stu-id="91e00-121">Type</span></span> | <span data-ttu-id="91e00-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="91e00-122">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="a5712-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="a5712-125">Authorization</span></span>  | <span data-ttu-id="a5712-126">string</span><span class="sxs-lookup"><span data-stu-id="a5712-126">string</span></span>  | <span data-ttu-id="a5712-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="a5712-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="a5712-129">Content-Type</span><span class="sxs-lookup"><span data-stu-id="a5712-129">Content-Type</span></span> | <span data-ttu-id="a5712-130">application/json</span><span class="sxs-lookup"><span data-stu-id="a5712-130">application/json</span></span>  | <span data-ttu-id="a5712-p105">Natureza dos dados no corpo de uma entidade. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="a5712-p105">Nature of the data in the body of an entity. Required.</span></span> |
+| <span data-ttu-id="91e00-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="91e00-123">Authorization</span></span>  | <span data-ttu-id="91e00-124">string</span><span class="sxs-lookup"><span data-stu-id="91e00-124">string</span></span>  | <span data-ttu-id="91e00-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="91e00-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="91e00-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="91e00-127">Content-Type</span></span> | <span data-ttu-id="91e00-128">application/json</span><span class="sxs-lookup"><span data-stu-id="91e00-128">application/json</span></span>  | <span data-ttu-id="91e00-p104">Natureza dos dados no corpo de uma entidade. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="91e00-p104">Nature of the data in the body of an entity. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="a5712-133">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="a5712-133">Request body</span></span>
-<span data-ttu-id="a5712-134">No corpo da solicitação, fornecem uma representação de JSON do objeto de [diretiva](../resources/policy.md) .</span><span class="sxs-lookup"><span data-stu-id="a5712-134">In the request body, provide a JSON representation of [policy](../resources/policy.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="91e00-131">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="91e00-131">Request body</span></span>
+<span data-ttu-id="91e00-132">No corpo da solicitação, fornecem uma representação de JSON do objeto de [diretiva](../resources/policy.md) .</span><span class="sxs-lookup"><span data-stu-id="91e00-132">In the request body, provide a JSON representation of [policy](../resources/policy.md) object.</span></span>
 
-<span data-ttu-id="a5712-135">A tabela a seguir mostra as propriedades que são necessárias quando você criar uma diretiva.</span><span class="sxs-lookup"><span data-stu-id="a5712-135">The following table shows the properties that are required when you create a policy.</span></span>
+<span data-ttu-id="91e00-133">A tabela a seguir mostra as propriedades que são necessárias quando você criar uma diretiva.</span><span class="sxs-lookup"><span data-stu-id="91e00-133">The following table shows the properties that are required when you create a policy.</span></span>
 
-| <span data-ttu-id="a5712-136">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="a5712-136">Parameter</span></span>    | <span data-ttu-id="a5712-137">Tipo</span><span class="sxs-lookup"><span data-stu-id="a5712-137">Type</span></span>   |<span data-ttu-id="a5712-138">Descrição</span><span class="sxs-lookup"><span data-stu-id="a5712-138">Description</span></span>|
+| <span data-ttu-id="91e00-134">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="91e00-134">Parameter</span></span>    | <span data-ttu-id="91e00-135">Tipo</span><span class="sxs-lookup"><span data-stu-id="91e00-135">Type</span></span>   |<span data-ttu-id="91e00-136">Descrição</span><span class="sxs-lookup"><span data-stu-id="91e00-136">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="a5712-139">definição</span><span class="sxs-lookup"><span data-stu-id="a5712-139">definition</span></span>|<span data-ttu-id="a5712-140">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="a5712-140">String</span></span>|<span data-ttu-id="a5712-141">A versão de cadeia de caracteres do objeto de [diretiva](../resources/policy.md) .</span><span class="sxs-lookup"><span data-stu-id="a5712-141">The string version of the [policy](../resources/policy.md) object.</span></span>|
-|<span data-ttu-id="a5712-142">displayName</span><span class="sxs-lookup"><span data-stu-id="a5712-142">displayName</span></span>|<span data-ttu-id="a5712-143">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="a5712-143">String</span></span>|<span data-ttu-id="a5712-144">Um nome personalizado para a política.</span><span class="sxs-lookup"><span data-stu-id="a5712-144">A custom name for the policy.</span></span>|
-|<span data-ttu-id="a5712-145">type</span><span class="sxs-lookup"><span data-stu-id="a5712-145">type</span></span>|<span data-ttu-id="a5712-146">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="a5712-146">String</span></span>|<span data-ttu-id="a5712-147">Especifica o tipo de política.</span><span class="sxs-lookup"><span data-stu-id="a5712-147">Specifies the type of policy.</span></span> <span data-ttu-id="a5712-148">No momento deve ser "TokenLifetimePolicy"</span><span class="sxs-lookup"><span data-stu-id="a5712-148">Currently must be "TokenLifetimePolicy"</span></span>|
+|<span data-ttu-id="91e00-137">Definição</span><span class="sxs-lookup"><span data-stu-id="91e00-137">definition</span></span>|<span data-ttu-id="91e00-138">String</span><span class="sxs-lookup"><span data-stu-id="91e00-138">String</span></span>|<span data-ttu-id="91e00-139">A versão de cadeia de caracteres do objeto de [diretiva](../resources/policy.md) .</span><span class="sxs-lookup"><span data-stu-id="91e00-139">The string version of the [policy](../resources/policy.md) object.</span></span>|
+|<span data-ttu-id="91e00-140">displayName</span><span class="sxs-lookup"><span data-stu-id="91e00-140">displayName</span></span>|<span data-ttu-id="91e00-141">String</span><span class="sxs-lookup"><span data-stu-id="91e00-141">String</span></span>|<span data-ttu-id="91e00-142">Um nome personalizado para a política.</span><span class="sxs-lookup"><span data-stu-id="91e00-142">A custom name for the policy.</span></span>|
+|<span data-ttu-id="91e00-143">type</span><span class="sxs-lookup"><span data-stu-id="91e00-143">type</span></span>|<span data-ttu-id="91e00-144">String</span><span class="sxs-lookup"><span data-stu-id="91e00-144">String</span></span>|<span data-ttu-id="91e00-145">Especifica o tipo de política.</span><span class="sxs-lookup"><span data-stu-id="91e00-145">Specifies the type of policy.</span></span> <span data-ttu-id="91e00-146">No momento deve ser "TokenLifetimePolicy"</span><span class="sxs-lookup"><span data-stu-id="91e00-146">Currently must be "TokenLifetimePolicy"</span></span>|
 
-## <a name="response"></a><span data-ttu-id="a5712-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="a5712-149">Response</span></span>
+## <a name="response"></a><span data-ttu-id="91e00-147">Resposta</span><span class="sxs-lookup"><span data-stu-id="91e00-147">Response</span></span>
 
-<span data-ttu-id="a5712-150">Se tiver êxito, este método retornará `201 Created` objeto de código e a [diretiva](../resources/policy.md) de resposta no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="a5712-150">If successful, this method returns `201 Created` response code and [policy](../resources/policy.md) object in the response body.</span></span> <span data-ttu-id="a5712-151">Se não obtiver êxito, uma `4xx` será retornado o erro com detalhes específicos.</span><span class="sxs-lookup"><span data-stu-id="a5712-151">If unsuccessful, a `4xx` error will be returned with specific details.</span></span>  
+<span data-ttu-id="91e00-148">Se tiver êxito, este método retornará `201 Created` objeto de código e a [diretiva](../resources/policy.md) de resposta no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="91e00-148">If successful, this method returns `201 Created` response code and [policy](../resources/policy.md) object in the response body.</span></span> <span data-ttu-id="91e00-149">Se não obtiver êxito, uma `4xx` será retornado o erro com detalhes específicos.</span><span class="sxs-lookup"><span data-stu-id="91e00-149">If unsuccessful, a `4xx` error will be returned with specific details.</span></span>  
 
-## <a name="example"></a><span data-ttu-id="a5712-152">Exemplo</span><span class="sxs-lookup"><span data-stu-id="a5712-152">Example</span></span>
-<span data-ttu-id="a5712-153">O exemplo a seguir cria uma nova vida útil do token política.</span><span class="sxs-lookup"><span data-stu-id="a5712-153">The following example creates a new token lifetime Policy.</span></span> <span data-ttu-id="a5712-154">Observe que o parâmetro de definição de cadeia de caracteres tem escape aspas duplas.</span><span class="sxs-lookup"><span data-stu-id="a5712-154">Notice the string definition parameter has escaped double quotes.</span></span>
+## <a name="example"></a><span data-ttu-id="91e00-150">Exemplo</span><span class="sxs-lookup"><span data-stu-id="91e00-150">Example</span></span>
+<span data-ttu-id="91e00-151">O exemplo a seguir cria uma nova vida útil do token política.</span><span class="sxs-lookup"><span data-stu-id="91e00-151">The following example creates a new token lifetime Policy.</span></span> <span data-ttu-id="91e00-152">Observe que o parâmetro de definição de cadeia de caracteres tem escape aspas duplas.</span><span class="sxs-lookup"><span data-stu-id="91e00-152">Notice the string definition parameter has escaped double quotes.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="a5712-155">Solicitação</span><span class="sxs-lookup"><span data-stu-id="a5712-155">Request</span></span>
-<span data-ttu-id="a5712-156">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="a5712-156">Here is an example of the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="91e00-153">Solicitação</span><span class="sxs-lookup"><span data-stu-id="91e00-153">Request</span></span>
+<span data-ttu-id="91e00-154">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="91e00-154">Here is an example of the request.</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/policies
@@ -69,8 +69,8 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="a5712-157">Resposta</span><span class="sxs-lookup"><span data-stu-id="a5712-157">Response</span></span>
-<span data-ttu-id="a5712-p109">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="a5712-p109">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="91e00-155">Resposta</span><span class="sxs-lookup"><span data-stu-id="91e00-155">Response</span></span>
+<span data-ttu-id="91e00-p108">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="91e00-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 
 ```http
 HTTP/1.1 201 Created
@@ -91,10 +91,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "message: createReply",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/policy-post.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

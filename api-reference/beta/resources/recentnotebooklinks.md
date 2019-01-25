@@ -2,28 +2,28 @@
 title: tipo de recurso recentNotebookLinks
 description: Links para abrir um bloco de anotações do OneNote. Esse tipo de recurso existe como uma propriedade em um recurso recentNotebook.
 localization_priority: Normal
-ms.openlocfilehash: 5ccf861541526a1673d6174176cb8b2a62df6c23
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 328f337d63645cdd52722a4216006920c493f9e7
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812870"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525882"
 ---
-# <a name="recentnotebooklinks-resource-type"></a><span data-ttu-id="e71a9-104">tipo de recurso recentNotebookLinks</span><span class="sxs-lookup"><span data-stu-id="e71a9-104">recentNotebookLinks resource type</span></span>
+# <a name="recentnotebooklinks-resource-type"></a><span data-ttu-id="e1847-104">tipo de recurso recentNotebookLinks</span><span class="sxs-lookup"><span data-stu-id="e1847-104">recentNotebookLinks resource type</span></span>
 
-> <span data-ttu-id="e71a9-105">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="e71a9-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="e71a9-106">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="e71a9-106">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e71a9-107">Links para abrir um bloco de anotações do OneNote.</span><span class="sxs-lookup"><span data-stu-id="e71a9-107">Links to open a OneNote notebook.</span></span> <span data-ttu-id="e71a9-108">Esse tipo de recurso existe como uma propriedade em um recurso [recentNotebook](recentnotebook.md).</span><span class="sxs-lookup"><span data-stu-id="e71a9-108">This resource type exists as a property on a [recentNotebook](recentnotebook.md) resource.</span></span>
+<span data-ttu-id="e1847-105">Links para abrir um bloco de anotações do OneNote.</span><span class="sxs-lookup"><span data-stu-id="e1847-105">Links to open a OneNote notebook.</span></span> <span data-ttu-id="e1847-106">Esse tipo de recurso existe como uma propriedade em um recurso [recentNotebook](recentnotebook.md).</span><span class="sxs-lookup"><span data-stu-id="e1847-106">This resource type exists as a property on a [recentNotebook](recentnotebook.md) resource.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="e71a9-109">Propriedades</span><span class="sxs-lookup"><span data-stu-id="e71a9-109">Properties</span></span>
-| <span data-ttu-id="e71a9-110">Propriedade</span><span class="sxs-lookup"><span data-stu-id="e71a9-110">Property</span></span>     | <span data-ttu-id="e71a9-111">Tipo</span><span class="sxs-lookup"><span data-stu-id="e71a9-111">Type</span></span>   |<span data-ttu-id="e71a9-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="e71a9-112">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="e1847-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="e1847-107">Properties</span></span>
+| <span data-ttu-id="e1847-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="e1847-108">Property</span></span>     | <span data-ttu-id="e1847-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="e1847-109">Type</span></span>   |<span data-ttu-id="e1847-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="e1847-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="e71a9-113">oneNoteClientUrl</span><span class="sxs-lookup"><span data-stu-id="e71a9-113">oneNoteClientUrl</span></span>|[<span data-ttu-id="e71a9-114">externalLink</span><span class="sxs-lookup"><span data-stu-id="e71a9-114">externalLink</span></span>](externallink.md)|<span data-ttu-id="e71a9-115">Abre o bloco de anotações no cliente do OneNote, se ele estiver instalado.</span><span class="sxs-lookup"><span data-stu-id="e71a9-115">Opens the notebook in the OneNote client, if it's installed.</span></span>|
-|<span data-ttu-id="e71a9-116">oneNoteWebUrl</span><span class="sxs-lookup"><span data-stu-id="e71a9-116">oneNoteWebUrl</span></span>|[<span data-ttu-id="e71a9-117">externalLink</span><span class="sxs-lookup"><span data-stu-id="e71a9-117">externalLink</span></span>](externallink.md)|<span data-ttu-id="e71a9-118">Abre o bloco de anotações no OneNote Online.</span><span class="sxs-lookup"><span data-stu-id="e71a9-118">Opens the notebook in OneNote Online.</span></span>|
+|<span data-ttu-id="e1847-111">oneNoteClientUrl</span><span class="sxs-lookup"><span data-stu-id="e1847-111">oneNoteClientUrl</span></span>|[<span data-ttu-id="e1847-112">externalLink</span><span class="sxs-lookup"><span data-stu-id="e1847-112">externalLink</span></span>](externallink.md)|<span data-ttu-id="e1847-113">Abre o bloco de anotações no cliente do OneNote, se ele estiver instalado.</span><span class="sxs-lookup"><span data-stu-id="e1847-113">Opens the notebook in the OneNote client, if it's installed.</span></span>|
+|<span data-ttu-id="e1847-114">oneNoteWebUrl</span><span class="sxs-lookup"><span data-stu-id="e1847-114">oneNoteWebUrl</span></span>|[<span data-ttu-id="e1847-115">externalLink</span><span class="sxs-lookup"><span data-stu-id="e1847-115">externalLink</span></span>](externallink.md)|<span data-ttu-id="e1847-116">Abre o bloco de anotações no OneNote Online.</span><span class="sxs-lookup"><span data-stu-id="e1847-116">Opens the notebook in OneNote Online.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="e71a9-119">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="e71a9-119">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="e1847-117">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="e1847-117">JSON representation</span></span>
 
-<span data-ttu-id="e71a9-120">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="e71a9-120">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="e1847-118">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="e1847-118">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -43,10 +43,15 @@ ms.locfileid: "27812870"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "recentNotebookLinks resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/recentnotebooklinks.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

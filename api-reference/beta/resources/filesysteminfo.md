@@ -4,22 +4,22 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: FileSystemInfo
 localization_priority: Normal
-ms.openlocfilehash: d9d69f00c8c52352acdd00ff4d6adc41908fffe7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: e2dfac79f5c7d511cab11c076d697940a01f4c7c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27835830"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524692"
 ---
-# <a name="filesysteminfo-facet"></a><span data-ttu-id="42477-102">Faceta fileSystemInfo</span><span class="sxs-lookup"><span data-stu-id="42477-102">FileSystemInfo facet</span></span>
+# <a name="filesysteminfo-facet"></a><span data-ttu-id="971d3-102">Faceta fileSystemInfo</span><span class="sxs-lookup"><span data-stu-id="971d3-102">FileSystemInfo facet</span></span>
 
-> <span data-ttu-id="42477-103">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="42477-103">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="42477-104">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="42477-104">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="42477-p102">O recurso **FileSystemInfo** contém propriedades que são relatadas pelo sistema de arquivos local do dispositivo para a versão local de um item. Esta faceta pode ser usada para especificar a data da última modificação ou a data de criação do item como estava no dispositivo local.</span><span class="sxs-lookup"><span data-stu-id="42477-p102">The **FileSystemInfo** resource contains properties that are reported by the device's local file system for the local version of an item. This facet can be used to specify the last modified date or created date of the item as it was on the local device.</span></span>
+<span data-ttu-id="971d3-p101">O recurso FileSystemInfo contém propriedades que são relatadas pelo sistema de arquivos local do dispositivo para a versão local de um item. Esta faceta pode ser usada para especificar a data da última modificação ou a data de criação do item como estava no dispositivo local.</span><span class="sxs-lookup"><span data-stu-id="971d3-p101">The **FileSystemInfo** resource contains properties that are reported by the device's local file system for the local version of an item. This facet can be used to specify the last modified date or created date of the item as it was on the local device.</span></span>
 
-<span data-ttu-id="42477-107">Ele está disponível na propriedade fileSystemInfo dos recursos [driveItem] [ item-resource].</span><span class="sxs-lookup"><span data-stu-id="42477-107">It is available on the fileSystemInfo property of [driveItem][item-resource] resources.</span></span>
+<span data-ttu-id="971d3-105">Ele está disponível na propriedade fileSystemInfo dos recursos [driveItem] [ item-resource].</span><span class="sxs-lookup"><span data-stu-id="971d3-105">It is available on the fileSystemInfo property of [driveItem][item-resource] resources.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="42477-108">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="42477-108">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="971d3-106">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="971d3-106">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -37,36 +37,41 @@ ms.locfileid: "27835830"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="42477-109">Propriedades</span><span class="sxs-lookup"><span data-stu-id="42477-109">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="971d3-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="971d3-107">Properties</span></span>
 
-| <span data-ttu-id="42477-110">Propriedade</span><span class="sxs-lookup"><span data-stu-id="42477-110">Property</span></span>                 | <span data-ttu-id="42477-111">Tipo</span><span class="sxs-lookup"><span data-stu-id="42477-111">Type</span></span>           | <span data-ttu-id="42477-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="42477-112">Description</span></span>                                                                                                          |
+| <span data-ttu-id="971d3-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="971d3-108">Property</span></span>                 | <span data-ttu-id="971d3-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="971d3-109">Type</span></span>           | <span data-ttu-id="971d3-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="971d3-110">Description</span></span>                                                                                                          |
 | :----------------------- | :------------- | :------------------------------------------------------------------------------------------------------------------- |
-| <span data-ttu-id="42477-113">**createdDateTime**</span><span class="sxs-lookup"><span data-stu-id="42477-113">**createdDateTime**</span></span>      | <span data-ttu-id="42477-114">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="42477-114">DateTimeOffset</span></span> | <span data-ttu-id="42477-115">A data e a hora UTC da criação do arquivo em um cliente.</span><span class="sxs-lookup"><span data-stu-id="42477-115">The UTC date and time the file was created on a client.</span></span>                                                              |
-| <span data-ttu-id="42477-116">**lastAccessedDateTime**</span><span class="sxs-lookup"><span data-stu-id="42477-116">**lastAccessedDateTime**</span></span> | <span data-ttu-id="42477-117">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="42477-117">DateTimeOffset</span></span> | <span data-ttu-id="42477-p103">A data e hora UTC em que o arquivo foi acessado pela última vez. Disponível para o [lista de arquivos recentes](../api/drive-recent.md) apenas.</span><span class="sxs-lookup"><span data-stu-id="42477-p103">The UTC date and time the file was last accessed. Available for the [recent file list](../api/drive-recent.md) only.</span></span> |
-| <span data-ttu-id="42477-120">**lastModifiedDateTime**</span><span class="sxs-lookup"><span data-stu-id="42477-120">**lastModifiedDateTime**</span></span> | <span data-ttu-id="42477-121">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="42477-121">DateTimeOffset</span></span> | <span data-ttu-id="42477-122">A data e hora UTC em que o arquivo foi modificado pela última vez em um cliente.</span><span class="sxs-lookup"><span data-stu-id="42477-122">The UTC date and time the file was last modified on a client.</span></span>                                                        |
+| <span data-ttu-id="971d3-111">**createdDateTime**</span><span class="sxs-lookup"><span data-stu-id="971d3-111">**createdDateTime**</span></span>      | <span data-ttu-id="971d3-112">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="971d3-112">DateTimeOffset</span></span> | <span data-ttu-id="971d3-113">A data e a hora UTC da criação do arquivo em um cliente.</span><span class="sxs-lookup"><span data-stu-id="971d3-113">The UTC date and time the file was created on a client.</span></span>                                                              |
+| <span data-ttu-id="971d3-114">**lastAccessedDateTime**</span><span class="sxs-lookup"><span data-stu-id="971d3-114">**lastAccessedDateTime**</span></span> | <span data-ttu-id="971d3-115">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="971d3-115">DateTimeOffset</span></span> | <span data-ttu-id="971d3-p102">A data e hora UTC em que o arquivo foi acessado pela última vez. Disponível para o lista de arquivos recentes apenas.</span><span class="sxs-lookup"><span data-stu-id="971d3-p102">The UTC date and time the file was last accessed. Available for the [recent file list](../api/drive-recent.md) only.</span></span> |
+| <span data-ttu-id="971d3-118">**lastModifiedDateTime**</span><span class="sxs-lookup"><span data-stu-id="971d3-118">**lastModifiedDateTime**</span></span> | <span data-ttu-id="971d3-119">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="971d3-119">DateTimeOffset</span></span> | <span data-ttu-id="971d3-120">A data e hora UTC em que o arquivo foi modificado pela última vez em um cliente.</span><span class="sxs-lookup"><span data-stu-id="971d3-120">The UTC date and time the file was last modified on a client.</span></span>                                                        |
 
-## <a name="notes"></a><span data-ttu-id="42477-123">Observações</span><span class="sxs-lookup"><span data-stu-id="42477-123">Notes</span></span>
+## <a name="notes"></a><span data-ttu-id="971d3-121">Observações</span><span class="sxs-lookup"><span data-stu-id="971d3-121">Notes</span></span>
 
-<span data-ttu-id="42477-p104">Os valores para **createdDateTime** e **lastModifiedDateTime** variam em relação às mesmas propriedades no recurso [DriveItem](driveitem.md). Os valores no recurso DriveItem são a data e a hora de criação e modificação, como visto do serviço. Os valores armazenados no recurso **FileSystemInfo** são fornecidos pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="42477-p104">Values for **createdDateTime** and **lastModifiedDateTime** vary from the same properties on the [DriveItem](driveitem.md) resource. The values on the DriveItem resource are the created and modified date and time as seen from the service. The values stored in the **FileSystemInfo** resource are provided by the client.</span></span>
+<span data-ttu-id="971d3-p103">Os valores para createdDateTime e lastModifiedDateTime variam em relação às mesmas propriedades no recurso DriveItem. Os valores no recurso DriveItem são a data e a hora de criação e modificação, como visto do serviço. Os valores armazenados no recurso FileSystemInfo são fornecidos pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="971d3-p103">Values for **createdDateTime** and **lastModifiedDateTime** vary from the same properties on the [DriveItem](driveitem.md) resource. The values on the DriveItem resource are the created and modified date and time as seen from the service. The values stored in the **FileSystemInfo** resource are provided by the client.</span></span>
 
-<span data-ttu-id="42477-p105">Por exemplo, se um arquivo foi criado no dispositivo na segunda-feira, mas não foi carregado no serviço até terça-feira, o cliente que carrega o arquivo deve gravar a faceta `fileSystemInfo` para incluir a data de criação na segunda-feira. Quando os metadados de item forem recuperados, a data de criação do item refletirá terça-feira, mas a faceta `fileSystemInfo` mostrará a data de criação original na segunda-feira.</span><span class="sxs-lookup"><span data-stu-id="42477-p105">For example, if a file was created on the device on Monday, but not uploaded to the service until Tuesday, the client that uploads the file should write the `fileSystemInfo` facet to include the created date on Monday. When the item metadata is retrieved, the created date for the item will reflect Tuesday, but the `fileSystemInfo` facet will show the original created date on Monday.</span></span>
+<span data-ttu-id="971d3-p104">Por exemplo, se um arquivo foi criado no dispositivo na segunda-feira, mas não foi carregado no serviço até terça-feira, o cliente que carrega o arquivo deve gravar a faceta `fileSystemInfo` para incluir a data de criação na segunda-feira. Quando os metadados de item forem recuperados, a data de criação do item refletirá terça-feira, mas a faceta `fileSystemInfo` mostrará a data de criação original na segunda-feira.</span><span class="sxs-lookup"><span data-stu-id="971d3-p104">For example, if a file was created on the device on Monday, but not uploaded to the service until Tuesday, the client that uploads the file should write the `fileSystemInfo` facet to include the created date on Monday. When the item metadata is retrieved, the created date for the item will reflect Tuesday, but the `fileSystemInfo` facet will show the original created date on Monday.</span></span>
 
-<span data-ttu-id="42477-p106">Estas propriedades são somente leitura. Se estiver carregando um arquivo e souber os valores do cliente local para estes campos, você deverá incluí-los na solicitação.</span><span class="sxs-lookup"><span data-stu-id="42477-p106">These properties are read/write. If you are uploading a file and know the local client values for these fields, you should include them in the request.</span></span>
+<span data-ttu-id="971d3-p105">Estas propriedades são somente leitura. Se estiver carregando um arquivo e souber os valores do cliente local para estes campos, você deverá incluí-los na solicitação.</span><span class="sxs-lookup"><span data-stu-id="971d3-p105">These properties are read/write. If you are uploading a file and know the local client values for these fields, you should include them in the request.</span></span>
 
-<span data-ttu-id="42477-131">Se o conteúdo do arquivo for atualizado e estas propriedades não forem fornecidas, **lastModifiedDateTime** será redefinido automaticamente como a hora atual.</span><span class="sxs-lookup"><span data-stu-id="42477-131">If the file's content is updated and these properties are not provided, **lastModifiedDateTime** automatically resets to the current time.</span></span>
+<span data-ttu-id="971d3-129">Se o conteúdo do arquivo for atualizado e estas propriedades não forem fornecidas, **lastModifiedDateTime** será redefinido automaticamente como a hora atual.</span><span class="sxs-lookup"><span data-stu-id="971d3-129">If the file's content is updated and these properties are not provided, **lastModifiedDateTime** automatically resets to the current time.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="42477-132">Comentários</span><span class="sxs-lookup"><span data-stu-id="42477-132">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="971d3-130">Comentários</span><span class="sxs-lookup"><span data-stu-id="971d3-130">Remarks</span></span>
 
-* <span data-ttu-id="42477-133">**lastAccessedDateTime** não está disponível para itens no SharePoint Online ou OneDrive for Business.</span><span class="sxs-lookup"><span data-stu-id="42477-133">**lastAccessedDateTime** is not available for items in SharePoint online or OneDrive for Business.</span></span>
+* <span data-ttu-id="971d3-131">**lastAccessedDateTime** não está disponível para itens no SharePoint Online ou OneDrive for Business.</span><span class="sxs-lookup"><span data-stu-id="971d3-131">**lastAccessedDateTime** is not available for items in SharePoint online or OneDrive for Business.</span></span>
 
-<span data-ttu-id="42477-134">Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="42477-134">For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).</span></span>
+<span data-ttu-id="971d3-132">Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="971d3-132">For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).</span></span>
 
 [item-resource]: ../resources/driveitem.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The fileSystemInfo facet provides information about date created and modified by clients.",
   "keywords": "fileSystemInfo,client,system info,onedrive",
   "section": "documentation",
-  "tocPath": "Facets/FileSystemInfo"
-} -->
+  "tocPath": "Facets/FileSystemInfo",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/filesysteminfo.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

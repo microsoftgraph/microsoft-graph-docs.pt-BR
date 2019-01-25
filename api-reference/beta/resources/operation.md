@@ -2,39 +2,39 @@
 title: tipo de recurso de operação
 description: O status de uma operação de execução longa.
 localization_priority: Normal
-ms.openlocfilehash: 760aeedb67b987fc22a5eef969e2214f6dfd05b6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 3ad9848387dab2de928f7ace2fa4b905720be615
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830342"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29520183"
 ---
-# <a name="operation-resource-type"></a><span data-ttu-id="c883f-103">tipo de recurso de operação</span><span class="sxs-lookup"><span data-stu-id="c883f-103">operation resource type</span></span>
+# <a name="operation-resource-type"></a><span data-ttu-id="b75bd-103">tipo de recurso de operação</span><span class="sxs-lookup"><span data-stu-id="b75bd-103">operation resource type</span></span>
 
-> <span data-ttu-id="c883f-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="c883f-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="c883f-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="c883f-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c883f-106">O status de uma operação de execução longa.</span><span class="sxs-lookup"><span data-stu-id="c883f-106">The status of a long-running operation.</span></span>
+<span data-ttu-id="b75bd-104">O status de uma operação de execução longa.</span><span class="sxs-lookup"><span data-stu-id="b75bd-104">The status of a long-running operation.</span></span>
 
-## <a name="methods"></a><span data-ttu-id="c883f-107">Métodos</span><span class="sxs-lookup"><span data-stu-id="c883f-107">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="b75bd-105">Métodos</span><span class="sxs-lookup"><span data-stu-id="b75bd-105">Methods</span></span>
 
-<span data-ttu-id="c883f-108">Nenhum</span><span class="sxs-lookup"><span data-stu-id="c883f-108">None</span></span>
+<span data-ttu-id="b75bd-106">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="b75bd-106">None</span></span>
 
-## <a name="properties"></a><span data-ttu-id="c883f-109">Propriedades</span><span class="sxs-lookup"><span data-stu-id="c883f-109">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="b75bd-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="b75bd-107">Properties</span></span>
 
-| <span data-ttu-id="c883f-110">Propriedade</span><span class="sxs-lookup"><span data-stu-id="c883f-110">Property</span></span>           | <span data-ttu-id="c883f-111">Tipo</span><span class="sxs-lookup"><span data-stu-id="c883f-111">Type</span></span>            | <span data-ttu-id="c883f-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="c883f-112">Description</span></span>                                                                     |
+| <span data-ttu-id="b75bd-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="b75bd-108">Property</span></span>           | <span data-ttu-id="b75bd-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="b75bd-109">Type</span></span>            | <span data-ttu-id="b75bd-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="b75bd-110">Description</span></span>                                                                     |
 | :----------------- | :-------------- | :-------------------------------------------------------------------------------|
-| <span data-ttu-id="c883f-113">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="c883f-113">createdDateTime</span></span>    | <span data-ttu-id="c883f-114">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="c883f-114">DateTimeOffset</span></span>  | <span data-ttu-id="c883f-115">A hora de início da operação.</span><span class="sxs-lookup"><span data-stu-id="c883f-115">The start time of the operation.</span></span>                                                |
-| <span data-ttu-id="c883f-116">id</span><span class="sxs-lookup"><span data-stu-id="c883f-116">id</span></span>                 | <span data-ttu-id="c883f-117">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="c883f-117">String</span></span>          | <span data-ttu-id="c883f-118">A id da operação. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="c883f-118">The operation id. Read-only.</span></span> <span data-ttu-id="c883f-119">Servidor foi gerado.</span><span class="sxs-lookup"><span data-stu-id="c883f-119">Server generated.</span></span>                                  |
-| <span data-ttu-id="c883f-120">lastActionDateTime</span><span class="sxs-lookup"><span data-stu-id="c883f-120">lastActionDateTime</span></span> | <span data-ttu-id="c883f-121">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="c883f-121">DateTimeOffset</span></span>  | <span data-ttu-id="c883f-122">A hora da última ação da operação.</span><span class="sxs-lookup"><span data-stu-id="c883f-122">The time of the last action of the operation.</span></span>                                   |
-| <span data-ttu-id="c883f-123">status</span><span class="sxs-lookup"><span data-stu-id="c883f-123">status</span></span>             | <span data-ttu-id="c883f-124">String</span><span class="sxs-lookup"><span data-stu-id="c883f-124">String</span></span>          | <span data-ttu-id="c883f-125">Os valores possíveis são: `notStarted`, `running`, `completed`, `failed`.</span><span class="sxs-lookup"><span data-stu-id="c883f-125">Possible values are: `notStarted`, `running`, `completed`, `failed`.</span></span> <span data-ttu-id="c883f-126">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="c883f-126">Read-only.</span></span> |
+| <span data-ttu-id="b75bd-111">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="b75bd-111">createdDateTime</span></span>    | <span data-ttu-id="b75bd-112">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="b75bd-112">DateTimeOffset</span></span>  | <span data-ttu-id="b75bd-113">A hora de início da operação.</span><span class="sxs-lookup"><span data-stu-id="b75bd-113">The start time of the operation.</span></span>                                                |
+| <span data-ttu-id="b75bd-114">id</span><span class="sxs-lookup"><span data-stu-id="b75bd-114">id</span></span>                 | <span data-ttu-id="b75bd-115">String</span><span class="sxs-lookup"><span data-stu-id="b75bd-115">String</span></span>          | <span data-ttu-id="b75bd-116">A id da operação. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="b75bd-116">The operation id. Read-only.</span></span> <span data-ttu-id="b75bd-117">Servidor foi gerado.</span><span class="sxs-lookup"><span data-stu-id="b75bd-117">Server generated.</span></span>                                  |
+| <span data-ttu-id="b75bd-118">lastActionDateTime</span><span class="sxs-lookup"><span data-stu-id="b75bd-118">lastActionDateTime</span></span> | <span data-ttu-id="b75bd-119">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="b75bd-119">DateTimeOffset</span></span>  | <span data-ttu-id="b75bd-120">A hora da última ação da operação.</span><span class="sxs-lookup"><span data-stu-id="b75bd-120">The time of the last action of the operation.</span></span>                                   |
+| <span data-ttu-id="b75bd-121">status</span><span class="sxs-lookup"><span data-stu-id="b75bd-121">status</span></span>             | <span data-ttu-id="b75bd-122">String</span><span class="sxs-lookup"><span data-stu-id="b75bd-122">String</span></span>          | <span data-ttu-id="b75bd-123">Os valores possíveis são: `notStarted`, `running`, `completed`, `failed`.</span><span class="sxs-lookup"><span data-stu-id="b75bd-123">Possible values are: `notStarted`, `running`, `completed`, `failed`.</span></span> <span data-ttu-id="b75bd-124">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="b75bd-124">Read-only.</span></span> |
 
-## <a name="relationships"></a><span data-ttu-id="c883f-127">Relações</span><span class="sxs-lookup"><span data-stu-id="c883f-127">Relationships</span></span>
+## <a name="relationships"></a><span data-ttu-id="b75bd-125">Relacionamento</span><span class="sxs-lookup"><span data-stu-id="b75bd-125">Relationships</span></span>
 
-<span data-ttu-id="c883f-128">Nenhum</span><span class="sxs-lookup"><span data-stu-id="c883f-128">None</span></span>
+<span data-ttu-id="b75bd-126">Nenhum</span><span class="sxs-lookup"><span data-stu-id="b75bd-126">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="c883f-129">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="c883f-129">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="b75bd-127">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="b75bd-127">JSON representation</span></span>
 
-<span data-ttu-id="c883f-130">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="c883f-130">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="b75bd-128">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="b75bd-128">The following is a JSON representation of the resource.</span></span>
 
 <!--{
   "blockType": "resource",
@@ -51,7 +51,7 @@ ms.locfileid: "27830342"
 }
 ```
 
-## <a name="example"></a><span data-ttu-id="c883f-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="c883f-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="b75bd-129">Exemplo</span><span class="sxs-lookup"><span data-stu-id="b75bd-129">Example</span></span>
 
 <!-- {
   "blockType": "example",
@@ -68,10 +68,15 @@ ms.locfileid: "27830342"
 
 <!-- uuid: 13fa92b1-3b41-498b-aab1-f943464a124f
 2018-03-30 10:29:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "operation resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/operation.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
