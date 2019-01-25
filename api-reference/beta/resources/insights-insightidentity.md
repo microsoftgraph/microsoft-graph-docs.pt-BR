@@ -4,16 +4,16 @@ description: Tipo complexo que contém as propriedades de itens compartilhados.
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: a263caa68280128a67a027b75682407fd4932605
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 45ac8874a30ebb4f3196f03a675229bf1fab750c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27938934"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29523054"
 ---
 # <a name="insightidentity"></a>insightIdentity
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Tipo complexo que contém as propriedades de itens [compartilhados](insights-shared.md) . 
 
@@ -32,6 +32,14 @@ Veja a seguir uma representação JSON do recurso
 
 | Propriedade              | Tipo          | Descrição  |
 | -------------         |-----------    | -------------|
-| displayName       | Cadeia de caracteres          | O nome de exibição do usuário que shared o item. |
-| id              | Cadeia de caracteres        | A identificação do usuário que shared o item.     |
+| displayName       | String          | O nome de exibição do usuário que shared o item. |
+| id              | String        | A identificação do usuário que shared o item.     |
 | address             | Cadeia de caracteres      | O endereço de email do usuário que shared o item.  |
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/insights-insightidentity.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

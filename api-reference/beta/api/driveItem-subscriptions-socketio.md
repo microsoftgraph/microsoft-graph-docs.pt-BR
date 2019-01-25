@@ -3,16 +3,16 @@ title: Obtenha o ponto de extremidade do websocket
 description: Não há suporte para o uso dessas APIs em aplicativos de produção.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 5a608dc938fd0a57108ffd8361aed5de575ec92c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 736684812d2cbc10affed82a3f946d75731f6768
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27915820"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29519791"
 ---
 # <a name="get-websocket-endpoint"></a>Obtenha o ponto de extremidade do websocket
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 Permite que você receber notificações de alteração de quase em tempo real para uma [unidade][] usando o [socket.io][].
@@ -21,7 +21,7 @@ Socket.IO é uma biblioteca de notificações populares para JavaScript que util
 [unidade]: ../resources/drive.md
 [Socket.IO]: https://socket.io/
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -92,6 +92,11 @@ socket.on("connect", ()=>console.log("Connected!"));
 socket.on("notification", (data)=>console.log("Notification!", data));
 ```
 
-<!-- {
-  "type": "#page.annotation"
-}-->
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveItem-subscriptions-socketio.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

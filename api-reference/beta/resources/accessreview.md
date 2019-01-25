@@ -4,16 +4,16 @@ description: 'No Windows Azure AD access analisa o recurso, o `accessReview` rep
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e9099b1ec55a8ed017f77757d527abbd7e45bdf6
-ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
+ms.openlocfilehash: 2cb5d32a8dcc6b12330aca6e831a8ab2083759df
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28016734"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29523516"
 ---
 # <a name="accessreview-resource-type"></a>tipo de recurso de accessReview
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 No recurso de [acesso analisa](accessreviews-root.md) Azure AD, o `accessReview` representa uma revisão de acesso.  
 
@@ -62,7 +62,7 @@ No recurso de [acesso analisa](accessreviews-root.md) Azure AD, o `accessReview`
 
 
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 
 
 
@@ -152,10 +152,15 @@ O `accessReviewRecurrenceSettings` é incorporado dentro as configurações de r
 
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "accessReview resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/accessreview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,16 +4,16 @@ description: Tipo complexo que contém propriedades de ideias.
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 23a05a362ea57c84dceecbd9523c2620edc21fbf
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4fa4563904472fad9fc28fa4acb10b77887b5872
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27966283"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29520001"
 ---
 # <a name="resourcereference-resource-type"></a>tipo de recurso de resourceReference
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Tipo complexo que contém propriedades de [ideias](insights.md).
 
@@ -34,5 +34,13 @@ Veja a seguir uma representação JSON do recurso
 | Propriedade      | Tipo      | Descrição  |
 | ------------- |-----------| -------------|
 | webUrl        | String    | Uma URL, levando a item referenciado. |
-| id            | Cadeia de caracteres    | Identificador exclusivo do item.           |
-| type          | Cadeia de caracteres    | Um valor de cadeia de caracteres que pode ser usado para classificar o item, como "microsoft.graph.driveItem" |
+| id            | String    | Identificador exclusivo do item.           |
+| type          | String    | Um valor de cadeia de caracteres que pode ser usado para classificar o item, como "microsoft.graph.driveItem" |
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/insights-resourcereference.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

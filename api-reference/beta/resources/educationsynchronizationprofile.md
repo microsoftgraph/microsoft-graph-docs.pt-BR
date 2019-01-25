@@ -4,16 +4,16 @@ description: Representa um conjunto de configurações usadas para sincronizar a
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: b753e904a0c70d5c0ae83dbb3d9a88aff8401eac
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e1b81ff14aca2b0f81a7f50e01aed6281d03d14d
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29396949"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29523460"
 ---
 # <a name="educationsynchronizationprofile-resource-type"></a>tipo de recurso de educationSynchronizationProfile
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa um conjunto de configurações usadas para sincronizar as informações de lista de participação de um diretório de origem para o Windows Azure Active Directory (AD Azure) e entidades de educação. Esse recurso fornece uma representação programática usada na [Sincronização de dados da escola](https://sds.microsoft.com).
 
@@ -43,7 +43,7 @@ Representa um conjunto de configurações usadas para sincronizar as informaçõ
 | **licensesToAssign** | coleção [educationSynchronizationLicenseAssignment](educationsynchronizationlicenseassignment.md)|  Configuração de licença.        |
 | **state** | educationSynchronizationProfileState |  O estado do perfil. Os valores possíveis são: `provisioning`, `provisioned`, `provisioningFailed`, `deleting`, `deletionFailed`.          |
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 
 | Propriedade | Tipo | Descrição |
 |:-|:-|:-|
@@ -73,3 +73,11 @@ A seguir está uma representação JSON do recurso **educationSynchronizationPro
     "handleSpecialCharacterConstraint": "Boolean"
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/educationsynchronizationprofile.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

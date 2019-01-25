@@ -4,20 +4,20 @@ description: Recupere uma lista de objetos de pessoa ordenados por sua relevânc
 author: dkershaw10
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 4233c0bc4015525bb474499366c084483ceaefe7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: deb9fd929a2b0b8ce4da9392cb465497c2236b0c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27925039"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29517810"
 ---
 # <a name="list-people"></a>Listar pessoas
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Recupere uma lista de objetos de [pessoa](../resources/person.md) ordenados por sua relevância para o [usuário](../resources/user.md), que é determinado pelo relacionamentos de negócios e os padrões de colaboração e comunicação do usuário.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -70,7 +70,7 @@ Se tiver êxito, este método retornará um `200 OK` código de resposta e uma c
 
 As solicitações nesta seção obtém as pessoas importantes para o usuário conectado (`/me`), com base na comunicação, colaboração e relacionamentos de negócios.
 
-Por padrão, cada resposta retorna 10 registros, mas você pode alterar esse número usando o parâmetro *$top*. Essas solicitações exigem a permissão People.Read.
+Por padrão, cada resposta retorna 10 registros, mas você pode *alterar esse número* usando o parâmetro $top. Essas solicitações exigem a permissão People.Read.
 
 #### <a name="request"></a>Solicitação
 
@@ -177,7 +177,7 @@ Content-length: 1326
 }
 ```
 
-#### <a name="requesting-a-subsequent-page-of-people"></a>Solicitação de uma página subsequente de pessoas
+#### <a name="requesting-a-subsequent-page-of-people"></a> Solicitação de uma página subsequente de pessoas
 
 Se a primeira resposta não contiver a lista completa das pessoas relevantes, você poderá fazer uma segunda solicitação usando *$top* e *$skip* para solicitar páginas adicionais de informações. Se a solicitação anterior tiver informações adicionais, a solicitação a seguir obterá a próxima página de pessoas do servidor.
 
@@ -193,7 +193,7 @@ Por padrão, as pessoas na resposta são classificadas pela relevância delas à
 GET https://graph.microsoft.com/beta/me/people/?$orderby=DisplayName
 ```
 
-#### <a name="changing-the-number-of-people-returned-and-the-fields-returned"></a>Alteração do número de pessoas e dos campos retornados
+#### <a name="changing-the-number-of-people-returned-and-the-fields-returned"></a> Alteração do número de pessoas e dos campos retornados
 
 Você pode alterar o número de pessoas retornadas na resposta definindo o parâmetro *$top*.
 
@@ -203,7 +203,7 @@ O exemplo a seguir solicita as 1.000 pessoas mais relevantes para `/me`. A solic
 GET https://graph.microsoft.com/beta/me/people/?$top=1000&$select=DisplayName
 ```
 
-#### <a name="selecting-the-fields-to-return"></a>Seleção dos campos que devem ser retornados
+#### <a name="selecting-the-fields-to-return"></a> Seleção dos campos que devem ser retornados
 
 Você pode limitar a quantidade de dados retornadas do servidor usando o parâmetro *$select* para escolher um ou mais campos. O campo *@odata.id* é sempre retornado.
 
@@ -213,7 +213,7 @@ O exemplo a seguir limita a resposta à *DisplayName* e *EmailAddress* das pesso
 GET https://graph.microsoft.com/beta/me/people/?$select=DisplayName,EmailAddresses
 ```
 
-#### <a name="using-a-filter-to-limit-the-response"></a>Uso de um filtro para limitar a resposta
+#### <a name="using-a-filter-to-limit-the-response"></a> Uso de um filtro para limitar a resposta
 
 Você pode usar o parâmetro *$filter* para limitar a resposta apenas às pessoas cujo registro contém os critérios especificados.
 
@@ -247,7 +247,7 @@ A seguinte consulta de pesquisa retorna pessoas relevantes para `/me` cujos Give
 GET https://graph.microsoft.com/beta/me/people/?$search=j
 ```
 
-#### <a name="using-search-to-specify-a-relevant-topic"></a>Uso da pesquisa para especificar um tópico relevante
+#### <a name="using-search-to-specify-a-relevant-topic"></a> Uso da pesquisa para especificar um tópico relevante
 
 A solicitação a seguir retorna a pessoas relevantes para `/me` cujos nomes contêm "ma" e que têm uma associação com "planejamento do recurso".
 
@@ -255,7 +255,7 @@ A solicitação a seguir retorna a pessoas relevantes para `/me` cujos nomes con
 GET https://graph.microsoft.com/beta/me/people/?$search="ma topic: feature planning"
 ```
 
-#### <a name="performing-a-fuzzy-search"></a>Execução de uma pesquisa difusa
+#### <a name="performing-a-fuzzy-search"></a>  Execução de uma pesquisa difusa
 
 A solicitação a seguir faz uma pesquisa de uma pessoa chamada "Saguão Hermaini." Como há uma pessoa chamada "Herminia Hull" relevantes para o usuário conectado, as informações de "Herminia Hull" são retornadas.
 
@@ -273,10 +273,15 @@ GET https://graph.microsoft.com/beta/users('nestork@contoso.com')/people/
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List people",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-list-people.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

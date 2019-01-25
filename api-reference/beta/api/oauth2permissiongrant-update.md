@@ -2,20 +2,20 @@
 title: Atualizar oAuth2PermissionGrant
 description: Atualize as propriedades do objeto oAuth2PermissionGrant.
 localization_priority: Normal
-ms.openlocfilehash: 3c01d62dfb7c0c6906ff860656ee87b5f6d40aed
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: fb990c56b4d7ae62ac35935a91d69688b96bff28
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27822348"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29522137"
 ---
 # <a name="update-oauth2permissiongrant"></a>Atualizar oAuth2PermissionGrant
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Atualize as propriedades do objeto oAuth2PermissionGrant.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -43,7 +43,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|scope|Cadeia de caracteres| Especifica o valor da declaração escopo que o aplicativo de recurso deve esperar que no token de acesso OAuth 2.0. |
+|scope|String| Especifica o valor da declaração escopo que o aplicativo de recurso deve esperar que no token de acesso OAuth 2.0. |
 
 ## <a name="response"></a>Resposta
 
@@ -77,10 +77,15 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update oAuth2Permissiongrant",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/oauth2permissiongrant-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

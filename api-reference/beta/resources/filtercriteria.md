@@ -2,16 +2,16 @@
 title: Tipo de recurso FilterCriteria
 description: Representa os critérios de filtragem aplicados a uma coluna.
 localization_priority: Normal
-ms.openlocfilehash: 56663e802aacc2dab3f08462724d0994b5bada85
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 784615f6fce3dea5041772a15e3573c22dabdfd0
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821676"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29522445"
 ---
 # <a name="filtercriteria-resource-type"></a>Tipo de recurso FilterCriteria
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa os critérios de filtragem aplicados a uma coluna.
 
@@ -38,3 +38,11 @@ Veja a seguir uma representação JSON do recurso.
 }
 
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/filtercriteria.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

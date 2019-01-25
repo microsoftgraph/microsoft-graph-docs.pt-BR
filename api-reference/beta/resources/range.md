@@ -4,16 +4,16 @@ description: Range representa um conjunto de uma ou mais células contíguas, co
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 537da7c6a7b54c7977056ca822c4b98c85f2c1a2
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: d23b3724dcbcbe7c7bfd26240c5db9eace507b62
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27918943"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29520134"
 ---
 # <a name="range-resource-type"></a>Tipo de recurso Range
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Range representa um conjunto de uma ou mais células contíguas, como uma célula, uma linha, uma coluna, um bloco de células, etc.
 
@@ -22,31 +22,31 @@ Range representa um conjunto de uma ou mais células contíguas, como uma célul
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Get Range](../api/range-get.md) | [Range](range.md) |Leia as propriedades e relacionamentos do objeto de intervalo.|
+|Get Range | [Range](range.md) |Leia as propriedades e relacionamentos do objeto de intervalo.|
 |[Update](../api/range-update.md) | [Range](range.md)   |Atualize o objeto Range. |
-|[Boundingrect](../api/range-boundingrect.md)|[Range](range.md)|Obtém o menor objeto de intervalo que abrange os intervalos determinados. Por exemplo, GetBoundingRect de "B2:C5" e "D10:E15" é "B2:E16".|
+|Boundingrect|[Range](range.md)|Obtém o menor objeto de intervalo que abrange os intervalos determinados. Por exemplo, GetBoundingRect de "B2:C5" e "D10:E15" é "B2:E16".|
 |[Cell](../api/range-cell.md)|[Range](range.md)|Obtém o objeto de intervalo que contém a célula única com base nos números de linha e de coluna. A célula pode estar fora dos limites do respectivo intervalo pai, desde que permaneça dentro da grade da planilha. A localização da célula retornada está relacionada à célula superior esquerda do intervalo.|
 |[Coluna](../api/range-column.md)|[Range](range.md)|Obtém uma coluna incluída no intervalo.|
-|[Columnsafter](../api/workbookrange-columnsafter.md)|[workbookRangeView](workbookrangeview.md)|Obtém um determinado número de colunas à direita do intervalo especificado.|
-|[Columnsbefore](../api/workbookrange-columnsbefore.md)|[workbookRangeView](workbookrangeview.md)|Obtém um determinado número de colunas à esquerda do intervalo especificado.|
-|[Entirecolumn](../api/range-entirecolumn.md)|[Range](range.md)|Obtém um objeto que representa toda a coluna do intervalo.|
-|[Entirerow](../api/range-entirerow.md)|[Range](range.md)|Obtém um objeto que representa toda a linha do intervalo.|
-|[Intersection](../api/range-intersection.md)|[Range](range.md)|Obtém o objeto de intervalo que representa a interseção retangular dos intervalos determinados.|
-|[Lastcell](../api/range-lastcell.md)|[Range](range.md)|Obtém a última célula do intervalo. Por exemplo, a última célula de "B2:D5" é "D5".|
-|[Lastcolumn](../api/range-lastcolumn.md)|[Range](range.md)|Obtém a última coluna do intervalo. Por exemplo, a última coluna de "B2:D5" é "D2:D5".|
-|[Lastrow](../api/range-lastrow.md)|[Range](range.md)|Obtém a última linha do intervalo. Por exemplo, a última linha de "B2:D5" é "B5:D5".|
-|[Offsetrange](../api/range-offsetrange.md)|[Range](range.md)|Obtém um objeto que representa um intervalo deslocado do intervalo especificado. A dimensão do intervalo retornado corresponde a esse intervalo. Se o intervalo resultante é imposto para fora dos limites da grade da planilha, o sistema gera uma exceção.|
+|Columnsafter|[workbookRangeView](workbookrangeview.md)|Obtém um determinado número de colunas à direita do intervalo especificado.|
+|Columnsbefore|[workbookRangeView](workbookrangeview.md)|Obtém um determinado número de colunas à esquerda do intervalo especificado.|
+|Entirecolumn|[Range](range.md)|Obtém um objeto que representa toda a coluna do intervalo.|
+|Entirerow|[Range](range.md)|Obtém um objeto que representa toda a linha do intervalo.|
+|Intersection|[Range](range.md)|Obtém o objeto de intervalo que representa a interseção retangular dos intervalos determinados.|
+|Lastcell|[Range](range.md)|Obtém a última célula do intervalo. Por exemplo, a última célula de "B2:D5" é "D5".|
+|Lastcolumn|[Range](range.md)|Obtém a última coluna do intervalo. Por exemplo, a última coluna de "B2:D5" é "D2:D5".|
+|Lastrow|[Range](range.md)|Obtém a última linha do intervalo. Por exemplo, a última linha de "B2:D5" é "B5:D5".|
+|Offsetrange|[Range](range.md)|Obtém um objeto que representa um intervalo deslocado do intervalo especificado. A dimensão do intervalo retornado corresponde a esse intervalo. Se o intervalo resultante é imposto para fora dos limites da grade da planilha, o sistema gera uma exceção.|
 |[Linha](../api/range-row.md)|[Range](range.md)|Obtém uma linha contida no intervalo.|
-|[Rowsabove](../api/workbookrange-rowsabove.md)|[workbookRangeView](workbookrangeview.md)|Obtém um determinado número de linhas acima de um determinado intervalo.|
-|[Rowsbelow](../api/workbookrange-rowsbelow.md)|[workbookRangeView](workbookrangeview.md)|Obtém um determinado número de linhas abaixo de um determinado intervalo.|
-|[Usedrange](../api/range-usedrange.md)|[Range](range.md)|Retorna o intervalo usado do objeto range determinado.|
+|Rowsabove|[workbookRangeView](workbookrangeview.md)|Obtém um determinado número de linhas acima de um determinado intervalo.|
+|Rowsbelow|[workbookRangeView](workbookrangeview.md)|Obtém um determinado número de linhas abaixo de um determinado intervalo.|
+|Usedrange|[Range](range.md)|Retorna o intervalo usado do objeto range determinado.|
 |[Clear](../api/range-clear.md)|Nenhum|Limpe valores de intervalo, formatação, preenchimento, bordas, etc.|
 |[Delete](../api/range-delete.md)|Nenhum|Exclui as células associadas ao intervalo.|
 |[Insert](../api/range-insert.md)|[Range](range.md)|Insere uma célula ou um intervalo de células na planilha, no lugar desse intervalo, e desloca as outras células para liberar espaço. Retorna um novo objeto Range no espaço em branco atual.|
 |[Merge](../api/range-merge.md)|Nenhum|Mescla as células do intervalo em uma região da planilha.|
-|[Resizedrange](../api/workbookrange-resizedrange.md)|[workbookRangeView](workbookrangeview.md)|Obtém um objeto range semelhante ao objeto range atual, mas com seu canto inferior direito expandido (ou recolhido) por um determinado número de linhas e colunas.|
+|Resizedrange|[workbookRangeView](workbookrangeview.md)|Obtém um objeto range semelhante ao objeto range atual, mas com seu canto inferior direito expandido (ou recolhido) por um determinado número de linhas e colunas.|
 |[Unmerge](../api/range-unmerge.md)|Nenhum|Desfaz a mesclagem das células do intervalo em células separadas.|
-|[Visibleview](../api/workbookrange-visibleview.md)|[workbookRangeView](workbookrangeview.md)|Obtenha o intervalo visível de um intervalo filtrado.|
+|Visibleview|[workbookRangeView](workbookrangeview.md)|Obtenha o intervalo visível de um intervalo filtrado.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
@@ -113,10 +113,15 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Range resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/range.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

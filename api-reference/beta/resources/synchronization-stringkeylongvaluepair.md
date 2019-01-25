@@ -2,23 +2,23 @@
 title: tipo de recurso de stringKeyLongValuePair
 description: Representa um par de chave-valor em que a chave é uma cadeia de caracteres e o valor é Int64.
 localization_priority: Normal
-ms.openlocfilehash: 21d081dcb488c406bc0971f6b1aeadacfcc8c208
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 97ca9f4f7b4079311a1ce6996fde0472c527e7f9
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812233"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29518300"
 ---
 # <a name="stringkeylongvaluepair-resource-type"></a>tipo de recurso de stringKeyLongValuePair
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa um par de chave-valor em que a chave é uma cadeia de caracteres e o valor é Int64.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|key|Cadeia de caracteres|Chave.|
+|key|String|Chave.|
 |valor|Int64|Valor.|
 
 ## <a name="json-representation"></a>Representação JSON
@@ -43,10 +43,15 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "stringKeyLongValuePair resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/synchronization-stringkeylongvaluepair.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

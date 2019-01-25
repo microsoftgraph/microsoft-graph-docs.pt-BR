@@ -4,16 +4,16 @@ description: Expanda ' parâmetro no **evento**
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 96df7d14adf4b5d2d46c559d31dcd935db29a070
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: ffa2524939e5866bc74d255606a7a28297d691d2
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27922302"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29521765"
 ---
 # <a name="get-eventmessage"></a>Obter eventMessage
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Obtenha as propriedades e os relacionamentos do objeto [eventMessage](../resources/eventmessage.md). Aplicar o `$expand` parâmetro sobre a propriedade de navegação de **evento** para obter o [evento](../resources/event.md) de associado no calendário do participante.
 
@@ -31,7 +31,7 @@ Se você especificar um dos cabeçalhos, a resposta incluirá o cabeçalho `Pref
 - Para solicitações de formato de texto: `Preference-Applied: outlook.body-content-type="text"`
 - Para solicitações de formato HTML: `Preference-Applied: outlook.body-content-type="html"`
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -389,10 +389,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get eventMessage",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/eventmessage-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

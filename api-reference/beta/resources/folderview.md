@@ -4,16 +4,16 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: FolderView
 localization_priority: Normal
-ms.openlocfilehash: 717dd93d82f109926cabf0168e4e176d7c68cd35
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: e57e74a0dbcb785d88fb7ccdd3aa3c0e62dc882a
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27861534"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29517565"
 ---
 # <a name="folderview-resource-type"></a>Tipo de recurso FolderView
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 O recurso **FolderView** fornece ou define recomendações sobre a experiência do usuário de uma pasta.
 
@@ -83,10 +83,15 @@ Os seguintes valores são definidos para a propriedade **viewType**.
 
 <!-- uuid: f9e446fd-190b-4692-a605-bb60e78f1f19
 2017-05-03 02:34:40 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "folderView resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/folderview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

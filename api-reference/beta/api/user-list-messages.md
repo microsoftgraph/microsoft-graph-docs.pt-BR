@@ -4,22 +4,22 @@ description: 'Obtenha as mensagens na caixa de correio do usuário conectado (in
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6cceffb3c464c4a31bca091c833e8817c4733b7c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 828dac4a345eaba3bb902ba5d96dec4852501033
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27957659"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29523565"
 ---
 # <a name="list-messages"></a>Listar mensagens
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Obtenha as mensagens na caixa de correio do usuário conectado (incluindo as pastas Itens Excluídos e Email Secundário). 
 
 Em particular, você pode filtrar as mensagens e obter somente aqueles que incluem um [mencionar](../resources/mention.md) do usuário conectado.
 
-Observe que, por padrão, o `GET /me/messages` operação não retorna a propriedade **menções** . Use o `$expand` parâmetro para [encontrar os detalhes de cada mencionam em uma mensagem](../api/message-get.md#request-2)de consulta.
+Observe que, por padrão, o `GET /me/messages` operação não retorna a propriedade **menções** . Use o parâmetro de consulta `$expand`  para [encontrar detalhes](../api/message-get.md#request-2) de cada menção em uma mensagem.
 
 Há dois cenários onde um aplicativo pode obter mensagens na pasta de email de outro usuário:
 
@@ -27,7 +27,7 @@ Há dois cenários onde um aplicativo pode obter mensagens na pasta de email de 
 * Se o aplicativo tiver apropriada [permissões](#permissions) delegadas de um usuário, e outro usuário compartilhou uma pasta de email com que o usuário ou, tem acesso delegado a esse usuário. Consulte os [detalhes e um exemplo](/graph/outlook-share-messages-folders).
 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -266,10 +266,15 @@ Content-length: 2704
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List messages",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-list-messages.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

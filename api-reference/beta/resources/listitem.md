@@ -5,16 +5,16 @@ ms.date: 09/11/2017
 title: ListItem
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: fbac6451ff08e2176b1893c8604db8957c826572
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 2a405ad8a71c766642bd23adbce64c2b57b72e23
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27950722"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29517439"
 ---
 # <a name="listitem-resource"></a>Recurso ListItem
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Este recurso representa um item em uma **[list][]** do SharePoint.
 Os valores de coluna na lista estão disponíveis por meio do dicionário `fieldValueSet`.
@@ -110,7 +110,7 @@ As propriedades a seguir são herdadas do **[baseItem][]**.
 | Nome da relação | Tipo                           | Descrição
 |:------------------|:-------------------------------|:-------------------------------
 | activities        | Conjunto [itemActivity][]    | A lista de atividades recentes que ocorreram neste item.
-| análise         | recurso de [itemAnalytics][]     | Análise sobre as atividades de modo de exibição que foram realizada neste item.
+| Análise         | recurso de [itemAnalytics][]     | Análise sobre as atividades de modo de exibição que foram realizada neste item.
 | driveItem         | [driveItem][]                  | Para bibliotecas de documentos, a relação **driveItem** expõe listItem como um **[driveItem][]**
 | campos            | [fieldValueSet][]              | Os valores das colunas definidos neste item de lista.
 | versions          | coleção [listItemVersion][] | Lista de versões anteriores do item da lista.
@@ -127,7 +127,8 @@ As propriedades a seguir são herdadas do **[baseItem][]**.
 [listItemVersion]: listitemversion.md
 [sharepointIds]: sharepointids.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
@@ -135,5 +136,9 @@ As propriedades a seguir são herdadas do **[baseItem][]**.
   "tocPath": "Resources/ListItem",
   "tocBookmarks": {
     "ListItem": "#"
-  }
-} -->
+  },
+  "suppressions": [
+    "Error: /api-reference/beta/resources/listitem.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

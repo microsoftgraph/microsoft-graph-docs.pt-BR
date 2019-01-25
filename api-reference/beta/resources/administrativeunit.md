@@ -4,16 +4,16 @@ description: Uma unidade administrativa fornece um contêiner conceitual para ob
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a4fb81c9a9d605dd155facefb263ff4a310442c3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: f99fb1cd54e28aaa9526f25a0f8e09d6470df2ff
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27955314"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29519742"
 ---
 # <a name="administrativeunit-resource-type"></a>tipo de recurso de administrativeUnit
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Uma unidade administrativa fornece um contêiner conceitual para objetos de diretório de usuário e grupo. Usando unidades administrativas, um administrador da empresa agora pode delegar responsabilidades administrativas para gerenciar os usuários e grupos contidos dentro ou com escopo para uma unidade administrativa a um administrador departamental ou regional.
 
@@ -36,7 +36,7 @@ Este tópico fornece descrições das propriedades declaradas e propriedades de 
 |[Adicionar um membro](../api/administrativeunit-post-members.md) |[directoryObject](directoryobject.md)| Adicione um participante (usuário ou grupo).|
 |[Listar membros](../api/administrativeunit-list-members.md) |Coleção [directoryObject](directoryobject.md)| Obtenha a lista de membros (de usuário e de grupo).|
 |[Obter membro](../api/administrativeunit-get-members.md) |[directoryObject](directoryobject.md)| Obtenha um determinado membro.|
-|[Remover um membro](../api/administrativeunit-delete-members.md) |[directoryObject](directoryobject.md)| Remova um membro.|
+|[Remover um membro](../api/administrativeunit-delete-members.md) |[directoryObject](directoryobject.md)| Remover um membro|
 |[Adicionar um membro da função com escopo](../api/administrativeunit-post-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| Adicione um membro da função com escopo.|
 |[Membros da função com escopo de lista](../api/administrativeunit-list-scopedrolemembers.md) |coleção [scopedRoleMembership](scopedrolemembership.md)| Obter a lista de administradores de função com escopo.|
 |[Obtenha um membro da função com escopo](../api/administrativeunit-get-scopedrolemembers.md) |[scopedRoleMembership](scopedrolemembership.md)| Obtenha um determinado membro da função com escopo.|
@@ -53,13 +53,13 @@ Este tópico fornece descrições das propriedades declaradas e propriedades de 
 |description|string|Uma descrição opcional para a unidade administrativa.|
 |displayName|string|Nome de exibição para a unidade administrativa.|
 |id|string|Identificador exclusivo para a unidade administrativa. Somente leitura.|
-|visibilidade|string|Controla se a unidade administrativos e seus membros estão ocultos ou público. Pode ser definido como HiddenMembership ou público. Se não for definido, o comportamento padrão é público. Quando definido como HiddenMembership, somente os membros da unidade administrativa podem listar outros membros da unidade administrativas.|
+|visibility|string|Controla se a unidade administrativos e seus membros estão ocultos ou público. Pode ser definido como HiddenMembership ou público. Se não for definido, o comportamento padrão é público. Quando definido como HiddenMembership, somente os membros da unidade administrativa podem listar outros membros da unidade administrativas.|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |extensions|Coleção [extension](extension.md)|A coleção de extensões open definidos para esta unidade administrativa. Anulável.|
-|membros|Coleção [directoryObject](directoryobject.md)|Usuários e grupos que são membros desta unidade Adminsitrative. Métodos HTTP: Obtenha (membros de lista), POST (adicionar membros), DELETE (remover membros).|
+|members|Coleção [directoryObject](directoryobject.md)|Usuários e grupos que são membros desta unidade Adminsitrative. Métodos HTTP: Obtenha (membros de lista), POST (adicionar membros), DELETE (remover membros).|
 |scopedRoleMembers|coleção [scopedRoleMembership](scopedrolemembership.md)| Membros da função com escopo desta unidade administrativa.  Métodos HTTP: Obtenha (scopedRoleMemberships lista), POST (Adicionar scopedRoleMembership), DELETE (remove scopedRoleMembership). |
 
 ## <a name="json-representation"></a>Representação JSON
@@ -94,10 +94,15 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "administrativeUnit resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/administrativeunit.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

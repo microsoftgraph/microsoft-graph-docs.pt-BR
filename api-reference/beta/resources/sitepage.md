@@ -5,16 +5,16 @@ ms.date: 03/15/2018
 title: SitePage
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: a756929212dbca04f16e9e4701e34bbd8d4de28f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 7b1634e79214f1cece85a78af29db6422ac03a81
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27939235"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29522298"
 ---
 # <a name="sitepage-resource"></a>recurso de sitePage
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Esse recurso representa uma página na [lista][]SitePages.
 Ele contém uma coleção de [Web Part][]s, layout e o título.
@@ -22,11 +22,11 @@ Ele contém uma coleção de [Web Part][]s, layout e o título.
 ## <a name="tasks-on-a-page"></a>Tarefas em uma página
 
 As tarefas a seguir estão disponíveis para os recursos de **sitePage** .
-Todos os exemplos a seguir são em relação um [site][], eg: `https://graph.microsoft.com/{api-version}/sites/{site-id}`.
+Todos os exemplos a seguir referem-se a um site: [][].
 
 | Tarefa comum                     | Método HTTP
 |:--------------------------------|:------------------------------
-| [Listar páginas][]                  | OBTER /pages
+| [Listar páginas][]                  | GET Pages
 | [Get page][]                    | OBTER /pages/ {id page}
 | [Create][]                      | /Pages POST
 | [Delete][]                      | Excluir /pages/ {id page}
@@ -128,7 +128,8 @@ O recurso de **sitePage** não tem relações para outros recursos.
 [site]: site.md
 [Web Part]: webpart.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
@@ -136,8 +137,12 @@ O recurso de **sitePage** não tem relações para outros recursos.
   "tocPath": "Resources/Page",
   "tocBookmarks": {
     "Page": "#"
-  }
-} -->
+  },
+  "suppressions": [
+    "Error: /api-reference/beta/resources/sitepage.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
 
 <!--
 TODO:

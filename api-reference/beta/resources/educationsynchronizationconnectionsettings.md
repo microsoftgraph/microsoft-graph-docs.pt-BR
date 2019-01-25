@@ -4,16 +4,16 @@ description: 'Representa as configurações de conexão do provedor. Isso permit
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: f9bb19ec9c09b06dd007eb2031f3dbb176eb12d3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: f6af6851e1e9d327b05c9ca1c7ed5929335a6e17
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27978225"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526862"
 ---
 # <a name="educationsynchronizationconnectionsettings-resource-type"></a>tipo de recurso de educationSynchronizationConnectionSettings
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa as configurações de conexão do provedor. Isso permite que o sistema para saber como conectar ao provedor de APIs. 
 
@@ -29,5 +29,13 @@ Representa as configurações de conexão do provedor. Isso permite que o sistem
 
 | Propriedade | Tipo | Descrição |
 |:-|:-|:-|
-| **clientId** | Cadeia de caracteres |  ID do cliente usada para conexão com o provedor. |
-| **clientSecret** | Cadeia de caracteres |  Segredo do cliente para autenticar a conexão ao provedor. |
+| **clientId** | String |  ID do cliente usada para conexão com o provedor. |
+| client_secret | String |  Segredo do cliente para autenticar a conexão ao provedor. |
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/educationsynchronizationconnectionsettings.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

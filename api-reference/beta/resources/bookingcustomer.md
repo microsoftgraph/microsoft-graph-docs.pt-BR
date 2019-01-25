@@ -4,16 +4,16 @@ description: " > **Importante:** as APIs na versão /beta no Microsoft Graph est
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: b213e4026ee33886c0e56db9790efff09fd8c522
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: cd4991b28f1dee0ba647a7f95b70817beffbef95
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27925102"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29522214"
 ---
 # <a name="bookingcustomer-resource-type"></a>tipo de recurso de bookingCustomer
 
- > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
 Representa um cliente de um [bookingBsiness](bookingbusiness.md).
 
@@ -31,11 +31,11 @@ Representa um cliente de um [bookingBsiness](bookingbusiness.md).
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|displayName|Cadeia de caracteres|O nome do cliente.|
-|emailAddress|Cadeia de caracteres|O endereço SMTP do cliente.|
-|id|Cadeia de caracteres| A identificação do cliente. Somente leitura.|
+|displayName|String|O nome do cliente.|
+|emailAddress|String|O endereço SMTP do cliente.|
+|id|String| A identificação do cliente. Somente leitura.|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamento
 Nenhum
 
 
@@ -62,10 +62,15 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "bookingCustomer resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/bookingcustomer.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

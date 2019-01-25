@@ -4,16 +4,16 @@ description: 'Uma sugestão de reunião que inclui informações sobre como temp
 localization_priority: Normal
 author: VinodRavichandran
 ms.prod: microsoft-teams
-ms.openlocfilehash: 13a4b9af442c8cde7a6db48d651946bbb88416e1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 7da1240bc5bce285b041ef55ce372ba137b9d74a
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27922351"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29523691"
 ---
 # <a name="meetingtimecandidate-resource-type"></a>tipo de recurso de meetingTimeCandidate
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Uma sugestão de reunião que inclui informações como o horário da reunião, a probabilidade de presença, a disponibilidade individual e os locais de reunião disponíveis.
 
@@ -47,15 +47,20 @@ Veja a seguir uma representação JSON do recurso
 |confidence|Double|Uma porcentagem que representa a probabilidade de todos os participantes comparecerem.|
 |locations|Coleção [location](location.md)|Uma matriz que especifica o nome e a localização geográfica de cada local da reunião para esta sugestão de reunião.|
 |meetingTimeSlot|[timeSlot](timeslot.md)|Um período de tempo sugerido para a reunião.|
-|organizerAvailability|Cadeia de caracteres| Disponibilidade do organizador da reunião para essa sugestão de reunião. Os possíveis valores são: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
-|suggestionHint|Cadeia de caracteres|Razão da sugestão de horário da reunião.|
+|organizerAvailability|String| Disponibilidade do organizador da reunião para essa sugestão de reunião. Os possíveis valores são: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
+|suggestionHint|String|Razão da sugestão de horário da reunião.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "meetingTimeCandidate resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/meetingtimecandidate.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
