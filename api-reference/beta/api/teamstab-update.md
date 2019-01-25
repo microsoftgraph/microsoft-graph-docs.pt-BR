@@ -4,52 +4,52 @@ description: Atualize as propriedades da guia especificada.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: e959f809eaa2044693b6c8d5d997866dde5385b5
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 75166f403a197f0abc32d4bc9f79f43a905fea43
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27926089"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529912"
 ---
-# <a name="update-tab"></a><span data-ttu-id="5b3da-103">Guia de atualização</span><span class="sxs-lookup"><span data-stu-id="5b3da-103">Update tab</span></span>
+# <a name="update-tab"></a><span data-ttu-id="cbd12-103">Guia de atualização</span><span class="sxs-lookup"><span data-stu-id="cbd12-103">Update tab</span></span>
 
-> <span data-ttu-id="5b3da-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="5b3da-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="5b3da-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="5b3da-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="5b3da-106">Atualize as propriedades da [guia](../resources/teamstab.md)especificado. Isso pode ser usado para configurar o conteúdo da guia.</span><span class="sxs-lookup"><span data-stu-id="5b3da-106">Update the properties of the specified [tab](../resources/teamstab.md). This can be used to configure the content of the tab.</span></span>
+<span data-ttu-id="cbd12-104">Atualize as propriedades da [guia](../resources/teamstab.md)especificado. Isso pode ser usado para configurar o conteúdo da guia.</span><span class="sxs-lookup"><span data-stu-id="cbd12-104">Update the properties of the specified [tab](../resources/teamstab.md). This can be used to configure the content of the tab.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="5b3da-107">Permissions</span><span class="sxs-lookup"><span data-stu-id="5b3da-107">Permissions</span></span>
-<span data-ttu-id="5b3da-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5b3da-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="cbd12-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="cbd12-105">Permissions</span></span>
+<span data-ttu-id="cbd12-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="cbd12-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="5b3da-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="5b3da-110">Permission type</span></span>      | <span data-ttu-id="5b3da-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="5b3da-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="cbd12-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="cbd12-108">Permission type</span></span>      | <span data-ttu-id="cbd12-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="cbd12-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="5b3da-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="5b3da-112">Delegated (work or school account)</span></span> | <span data-ttu-id="5b3da-113">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5b3da-113">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="5b3da-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="5b3da-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5b3da-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="5b3da-115">Not supported.</span></span>    |
-|<span data-ttu-id="5b3da-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="5b3da-116">Application</span></span>                            | <span data-ttu-id="5b3da-117">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5b3da-117">Group.ReadWrite.All</span></span>                         |
+|<span data-ttu-id="cbd12-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="cbd12-110">Delegated (work or school account)</span></span> | <span data-ttu-id="cbd12-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cbd12-111">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="cbd12-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="cbd12-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cbd12-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="cbd12-113">Not supported.</span></span>    |
+|<span data-ttu-id="cbd12-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="cbd12-114">Application</span></span>                            | <span data-ttu-id="cbd12-115">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cbd12-115">Group.ReadWrite.All</span></span>                         |
 
-> <span data-ttu-id="5b3da-118">**Observação**: Esta API oferece suporte a permissões de administrador.</span><span class="sxs-lookup"><span data-stu-id="5b3da-118">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="5b3da-119">Administradores globais e administradores de serviço de Teams da Microsoft podem acessar as equipes que eles não serão um membro do.</span><span class="sxs-lookup"><span data-stu-id="5b3da-119">Global admins and Microsoft Teams service admins can access teams that they are not a member of.</span></span>
+> <span data-ttu-id="cbd12-116">**Observação**: Esta API oferece suporte a permissões de administrador.</span><span class="sxs-lookup"><span data-stu-id="cbd12-116">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="cbd12-117">Administradores globais e administradores de serviço de Teams da Microsoft podem acessar as equipes que eles não serão um membro do.</span><span class="sxs-lookup"><span data-stu-id="cbd12-117">Global admins and Microsoft Teams service admins can access teams that they are not a member of.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="5b3da-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="5b3da-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="cbd12-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="cbd12-118">HTTP request</span></span>
 ```http
 PATCH /teams/{id}/channels/{id}/tabs/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="5b3da-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="5b3da-121">Request headers</span></span>
-| <span data-ttu-id="5b3da-122">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="5b3da-122">Header</span></span>       | <span data-ttu-id="5b3da-123">Valor</span><span class="sxs-lookup"><span data-stu-id="5b3da-123">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="cbd12-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="cbd12-119">Request headers</span></span>
+| <span data-ttu-id="cbd12-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="cbd12-120">Header</span></span>       | <span data-ttu-id="cbd12-121">Valor</span><span class="sxs-lookup"><span data-stu-id="cbd12-121">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="5b3da-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="5b3da-124">Authorization</span></span>  | <span data-ttu-id="5b3da-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="5b3da-p104">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="5b3da-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="5b3da-127">Content-Type</span></span>  | <span data-ttu-id="5b3da-128">application/json</span><span class="sxs-lookup"><span data-stu-id="5b3da-128">application/json</span></span>  |
+| <span data-ttu-id="cbd12-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="cbd12-122">Authorization</span></span>  | <span data-ttu-id="cbd12-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="cbd12-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="cbd12-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="cbd12-125">Content-Type</span></span>  | <span data-ttu-id="cbd12-126">application/json</span><span class="sxs-lookup"><span data-stu-id="cbd12-126">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="5b3da-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="5b3da-129">Request body</span></span>
-<span data-ttu-id="5b3da-130">No corpo da solicitação, fornece uma representação de JSON do objeto [tab](../resources/teamstab.md) .</span><span class="sxs-lookup"><span data-stu-id="5b3da-130">In the request body, supply a JSON representation of [tab](../resources/teamstab.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="cbd12-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="cbd12-127">Request body</span></span>
+<span data-ttu-id="cbd12-128">No corpo da solicitação, fornece uma representação de JSON do objeto [tab](../resources/teamstab.md) .</span><span class="sxs-lookup"><span data-stu-id="cbd12-128">In the request body, supply a JSON representation of [tab](../resources/teamstab.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="5b3da-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="5b3da-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="cbd12-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="cbd12-129">Response</span></span>
 
-<span data-ttu-id="5b3da-132">Se tiver êxito, este método retornará um código de resposta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="5b3da-132">If successful, this method returns a `204 No Content` response code.</span></span>
+<span data-ttu-id="cbd12-130">Se tiver êxito, este método retornará um código de resposta `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="cbd12-130">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="5b3da-133">Exemplo</span><span class="sxs-lookup"><span data-stu-id="5b3da-133">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="5b3da-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="5b3da-134">Request</span></span>
-<span data-ttu-id="5b3da-135">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="5b3da-135">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="cbd12-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="cbd12-131">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="cbd12-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="cbd12-132">Request</span></span>
+<span data-ttu-id="cbd12-133">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="cbd12-133">The following is an example of the request.</span></span>
 ```http
 PATCH https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs/{id}
 Content-type: application/json
@@ -59,7 +59,7 @@ Content-length: 211
   "name": "My Contoso Tab - updated"
 }
 ```
-#### <a name="response"></a><span data-ttu-id="5b3da-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="5b3da-136">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="cbd12-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="cbd12-134">Response</span></span>
 ```http
 HTTP/1.1 200 Success
 Content-type: application/json
@@ -79,16 +79,21 @@ Content-type: application/json
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="5b3da-137">Confira também</span><span class="sxs-lookup"><span data-stu-id="5b3da-137">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="cbd12-135">Confira também</span><span class="sxs-lookup"><span data-stu-id="cbd12-135">See also</span></span>
 
-[<span data-ttu-id="5b3da-138">Configurando os tipos de guia interna</span><span class="sxs-lookup"><span data-stu-id="5b3da-138">Configuring the built-in tab types</span></span>](/graph/teams-configuring-builtin-tabs)
+[<span data-ttu-id="cbd12-136">Configurando os tipos de guia interna</span><span class="sxs-lookup"><span data-stu-id="cbd12-136">Configuring the built-in tab types</span></span>](/graph/teams-configuring-builtin-tabs)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update tab in channel",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/teamstab-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

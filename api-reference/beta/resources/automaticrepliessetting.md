@@ -2,33 +2,33 @@
 title: Tipo de recurso automaticRepliesSetting
 description: 'Definições de configuração automaticamente notificar o remetente de um email de entrada com uma mensagem a partir do '
 localization_priority: Normal
-ms.openlocfilehash: 0160197a4fafe10b7f78be9124da3b6260bfcee6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 5ff16aa93042e0d66063cb62de7a8dcdf870c892
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820654"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529849"
 ---
-# <a name="automaticrepliessetting-resource-type"></a><span data-ttu-id="b95e3-103">Tipo de recurso automaticRepliesSetting</span><span class="sxs-lookup"><span data-stu-id="b95e3-103">automaticRepliesSetting resource type</span></span>
+# <a name="automaticrepliessetting-resource-type"></a><span data-ttu-id="27eb7-103">Tipo de recurso automaticRepliesSetting</span><span class="sxs-lookup"><span data-stu-id="27eb7-103">automaticRepliesSetting resource type</span></span>
 
-> <span data-ttu-id="b95e3-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="b95e3-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="b95e3-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="b95e3-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b95e3-p102">Definições de configuração para notificar automaticamente o remetente de um email recebido com uma mensagem do usuário conectado. Por exemplo, uma resposta automática para notificar que o usuário conectado está disponível para responder a emails.</span><span class="sxs-lookup"><span data-stu-id="b95e3-p102">Configuration settings to automatically notify the sender of an incoming email with a message from the signed-in user. For example, an automatic reply to notify that the signed-in user is unavailable to respond to emails.</span></span> 
+<span data-ttu-id="27eb7-p101">Definições de configuração para notificar automaticamente o remetente de um email recebido com uma mensagem do usuário conectado. Por exemplo, uma resposta automática para notificar que o usuário conectado está disponível para responder a emails.</span><span class="sxs-lookup"><span data-stu-id="27eb7-p101">Configuration settings to automatically notify the sender of an incoming email with a message from the signed-in user. For example, an automatic reply to notify that the signed-in user is unavailable to respond to emails.</span></span> 
 
 
-## <a name="properties"></a><span data-ttu-id="b95e3-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="b95e3-108">Properties</span></span>
-| <span data-ttu-id="b95e3-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="b95e3-109">Property</span></span>     | <span data-ttu-id="b95e3-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="b95e3-110">Type</span></span>   |<span data-ttu-id="b95e3-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="b95e3-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="27eb7-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="27eb7-106">Properties</span></span>
+| <span data-ttu-id="27eb7-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="27eb7-107">Property</span></span>     | <span data-ttu-id="27eb7-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="27eb7-108">Type</span></span>   |<span data-ttu-id="27eb7-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="27eb7-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="b95e3-112">externalAudience</span><span class="sxs-lookup"><span data-stu-id="b95e3-112">externalAudience</span></span>|<span data-ttu-id="b95e3-113">String</span><span class="sxs-lookup"><span data-stu-id="b95e3-113">String</span></span>| <span data-ttu-id="b95e3-p103">O conjunto da audiência externa para a organização do usuário conectado que receberá **ExternalReplyMessage**, se **Status** for `AlwaysEnabled` ou `Scheduled`. Os valores possíveis são: `none`, `contactsOnly`, `all`.</span><span class="sxs-lookup"><span data-stu-id="b95e3-p103">The set of audience external to the signed-in user's organization who will receive the **ExternalReplyMessage**, if **Status** is `AlwaysEnabled` or `Scheduled`. Possible values are: `none`, `contactsOnly`, `all`.</span></span>|
-|<span data-ttu-id="b95e3-116">externalReplyMessage</span><span class="sxs-lookup"><span data-stu-id="b95e3-116">externalReplyMessage</span></span>|<span data-ttu-id="b95e3-117">string</span><span class="sxs-lookup"><span data-stu-id="b95e3-117">string</span></span>|<span data-ttu-id="b95e3-118">A resposta automática para enviar à audiência externa especificada, se **Status** for `AlwaysEnabled` ou `Scheduled`.</span><span class="sxs-lookup"><span data-stu-id="b95e3-118">The automatic reply to send to the specified external audience, if **Status** is `AlwaysEnabled` or `Scheduled`.</span></span>|
-|<span data-ttu-id="b95e3-119">internalReplyMessage</span><span class="sxs-lookup"><span data-stu-id="b95e3-119">internalReplyMessage</span></span>|<span data-ttu-id="b95e3-120">string</span><span class="sxs-lookup"><span data-stu-id="b95e3-120">string</span></span>|<span data-ttu-id="b95e3-121">A resposta automática para enviar à audiência interna na organização do usuário conectado, se **Status** for `AlwaysEnabled` ou `Scheduled`.</span><span class="sxs-lookup"><span data-stu-id="b95e3-121">The automatic reply to send to the audience internal to the signed-in user's organization, if **Status** is `AlwaysEnabled` or `Scheduled`.</span></span> |
-|<span data-ttu-id="b95e3-122">scheduledEndDateTime</span><span class="sxs-lookup"><span data-stu-id="b95e3-122">scheduledEndDateTime</span></span>|[<span data-ttu-id="b95e3-123">dateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="b95e3-123">dateTimeTimeZone</span></span>](datetimetimezone.md)|<span data-ttu-id="b95e3-124">A data e a hora em que as respostas automáticas estão definidas para terminar, se **Status** está definido como `Scheduled`.</span><span class="sxs-lookup"><span data-stu-id="b95e3-124">The date and time that automatic replies are set to end, if **Status** is set to `Scheduled`.</span></span> |
-|<span data-ttu-id="b95e3-125">scheduledStartDateTime</span><span class="sxs-lookup"><span data-stu-id="b95e3-125">scheduledStartDateTime</span></span>|[<span data-ttu-id="b95e3-126">dateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="b95e3-126">dateTimeTimeZone</span></span>](datetimetimezone.md)|<span data-ttu-id="b95e3-127">A data e a hora em que as respostas automáticas estão definidas para começar, se **Status** está definido como `Scheduled`.</span><span class="sxs-lookup"><span data-stu-id="b95e3-127">The date and time that automatic replies are set to begin, if **Status** is set to `Scheduled`.</span></span>|
-|<span data-ttu-id="b95e3-128">status</span><span class="sxs-lookup"><span data-stu-id="b95e3-128">status</span></span>|<span data-ttu-id="b95e3-129">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="b95e3-129">String</span></span>|<span data-ttu-id="b95e3-p104">Status de configurações de respostas automáticas. Os valores possíveis são: `disabled`, `alwaysEnabled`, `scheduled`.</span><span class="sxs-lookup"><span data-stu-id="b95e3-p104">Configurations status for automatic replies. Possible values are: `disabled`, `alwaysEnabled`, `scheduled`.</span></span>|
+|<span data-ttu-id="27eb7-110">externalAudience</span><span class="sxs-lookup"><span data-stu-id="27eb7-110">externalAudience</span></span>|<span data-ttu-id="27eb7-111">String</span><span class="sxs-lookup"><span data-stu-id="27eb7-111">String</span></span>| <span data-ttu-id="27eb7-p102">O conjunto da audiência externa para a organização do usuário conectado que receberá **ExternalReplyMessage**, se **Status** for `AlwaysEnabled` ou `Scheduled`. Os valores possíveis são: `none`, `contactsOnly`, `all`.</span><span class="sxs-lookup"><span data-stu-id="27eb7-p102">The set of audience external to the signed-in user's organization who will receive the **ExternalReplyMessage**, if **Status** is `AlwaysEnabled` or `Scheduled`. Possible values are: `none`, `contactsOnly`, `all`.</span></span>|
+|<span data-ttu-id="27eb7-114">externalReplyMessage</span><span class="sxs-lookup"><span data-stu-id="27eb7-114">externalReplyMessage</span></span>|<span data-ttu-id="27eb7-115">string</span><span class="sxs-lookup"><span data-stu-id="27eb7-115">string</span></span>|<span data-ttu-id="27eb7-116">A resposta automática para enviar à audiência externa especificada, se **Status** for `AlwaysEnabled` ou `Scheduled`.</span><span class="sxs-lookup"><span data-stu-id="27eb7-116">The automatic reply to send to the specified external audience, if **Status** is `AlwaysEnabled` or `Scheduled`.</span></span>|
+|<span data-ttu-id="27eb7-117">internalReplyMessage</span><span class="sxs-lookup"><span data-stu-id="27eb7-117">internalReplyMessage</span></span>|<span data-ttu-id="27eb7-118">string</span><span class="sxs-lookup"><span data-stu-id="27eb7-118">string</span></span>|<span data-ttu-id="27eb7-119">A resposta automática para enviar à audiência interna na organização do usuário conectado, se **Status** for `AlwaysEnabled` ou `Scheduled`.</span><span class="sxs-lookup"><span data-stu-id="27eb7-119">The automatic reply to send to the audience internal to the signed-in user's organization, if **Status** is `AlwaysEnabled` or `Scheduled`.</span></span> |
+|<span data-ttu-id="27eb7-120">scheduledEndDateTime</span><span class="sxs-lookup"><span data-stu-id="27eb7-120">scheduledEndDateTime</span></span>|[<span data-ttu-id="27eb7-121">dateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="27eb7-121">dateTimeTimeZone</span></span>](datetimetimezone.md)|<span data-ttu-id="27eb7-122">A data e a hora em que as respostas automáticas estão definidas para terminar, se Status está definido como .</span><span class="sxs-lookup"><span data-stu-id="27eb7-122">The date and time that automatic replies are set to end, if **Status** is set to `Scheduled`.</span></span> |
+|<span data-ttu-id="27eb7-123">scheduledStartDateTime</span><span class="sxs-lookup"><span data-stu-id="27eb7-123">scheduledStartDateTime</span></span>|[<span data-ttu-id="27eb7-124">dateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="27eb7-124">dateTimeTimeZone</span></span>](datetimetimezone.md)|<span data-ttu-id="27eb7-125">A data e a hora em que as respostas automáticas estão definidas para começar, se Status está definido como .</span><span class="sxs-lookup"><span data-stu-id="27eb7-125">The date and time that automatic replies are set to begin, if **Status** is set to `Scheduled`.</span></span>|
+|<span data-ttu-id="27eb7-126">status</span><span class="sxs-lookup"><span data-stu-id="27eb7-126">status</span></span>|<span data-ttu-id="27eb7-127">String</span><span class="sxs-lookup"><span data-stu-id="27eb7-127">String</span></span>|<span data-ttu-id="27eb7-p103">Status de configurações de respostas automáticas. Os valores possíveis são: `disabled`, `alwaysEnabled`, `scheduled`.</span><span class="sxs-lookup"><span data-stu-id="27eb7-p103">Configurations status for automatic replies. Possible values are: `disabled`, `alwaysEnabled`, `scheduled`.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="b95e3-132">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="b95e3-132">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="27eb7-130">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="27eb7-130">JSON representation</span></span>
 
-<span data-ttu-id="b95e3-133">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="b95e3-133">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="27eb7-131">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="27eb7-131">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -52,10 +52,15 @@ ms.locfileid: "27820654"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "automaticRepliesSetting resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/automaticrepliessetting.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -2,29 +2,29 @@
 title: tipo de recurso de freeBusyError
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
 localization_priority: Normal
-ms.openlocfilehash: 63cfc4b14ba6176d582155df57b7f7f787e63cf4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: f1ff7717034798830a610b35dbbff5c987cf7371
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889765"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529842"
 ---
-# <a name="freebusyerror-resource-type"></a><span data-ttu-id="397b1-104">tipo de recurso de freeBusyError</span><span class="sxs-lookup"><span data-stu-id="397b1-104">freeBusyError resource type</span></span>
+# <a name="freebusyerror-resource-type"></a><span data-ttu-id="89009-104">tipo de recurso de freeBusyError</span><span class="sxs-lookup"><span data-stu-id="89009-104">freeBusyError resource type</span></span>
 
- > <span data-ttu-id="397b1-105">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="397b1-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="397b1-106">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="397b1-106">Use of these APIs in production applications is not supported.</span></span>
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-<span data-ttu-id="397b1-107">Representa informações de erro de tentar obter a disponibilidade de um usuário, uma lista de distribuição ou um recurso.</span><span class="sxs-lookup"><span data-stu-id="397b1-107">Represents error information from attempting to get the availability of a user, distribution list, or resource.</span></span>
+<span data-ttu-id="89009-105">Representa informações de erro de tentar obter a disponibilidade de um usuário, uma lista de distribuição ou um recurso.</span><span class="sxs-lookup"><span data-stu-id="89009-105">Represents error information from attempting to get the availability of a user, distribution list, or resource.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="397b1-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="397b1-108">Properties</span></span>
-| <span data-ttu-id="397b1-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="397b1-109">Property</span></span>     | <span data-ttu-id="397b1-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="397b1-110">Type</span></span>   |<span data-ttu-id="397b1-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="397b1-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="89009-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="89009-106">Properties</span></span>
+| <span data-ttu-id="89009-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="89009-107">Property</span></span>     | <span data-ttu-id="89009-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="89009-108">Type</span></span>   |<span data-ttu-id="89009-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="89009-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="397b1-112">mensagem</span><span class="sxs-lookup"><span data-stu-id="397b1-112">message</span></span> |<span data-ttu-id="397b1-113">String</span><span class="sxs-lookup"><span data-stu-id="397b1-113">String</span></span> |<span data-ttu-id="397b1-114">Descreve o erro.</span><span class="sxs-lookup"><span data-stu-id="397b1-114">Describes the error.</span></span> |
-|<span data-ttu-id="397b1-115">responseCode</span><span class="sxs-lookup"><span data-stu-id="397b1-115">responseCode</span></span> |<span data-ttu-id="397b1-116">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="397b1-116">String</span></span> |<span data-ttu-id="397b1-117">O código de resposta do consultando para a disponibilidade do usuário, lista de distribuição ou recurso.</span><span class="sxs-lookup"><span data-stu-id="397b1-117">The response code from querying for the availability of the user, distribution list, or resource.</span></span> |
+|<span data-ttu-id="89009-110">mensagem</span><span class="sxs-lookup"><span data-stu-id="89009-110">message</span></span> |<span data-ttu-id="89009-111">String</span><span class="sxs-lookup"><span data-stu-id="89009-111">String</span></span> |<span data-ttu-id="89009-112">Descreve o erro.</span><span class="sxs-lookup"><span data-stu-id="89009-112">Describes the error.</span></span> |
+|<span data-ttu-id="89009-113">ResponseCode</span><span class="sxs-lookup"><span data-stu-id="89009-113">responseCode</span></span> |<span data-ttu-id="89009-114">String</span><span class="sxs-lookup"><span data-stu-id="89009-114">String</span></span> |<span data-ttu-id="89009-115">O código de resposta do consultando para a disponibilidade do usuário, lista de distribuição ou recurso.</span><span class="sxs-lookup"><span data-stu-id="89009-115">The response code from querying for the availability of the user, distribution list, or resource.</span></span> |
 
 
-## <a name="json-representation"></a><span data-ttu-id="397b1-118">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="397b1-118">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="89009-116">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="89009-116">JSON representation</span></span>
 
-<span data-ttu-id="397b1-119">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="397b1-119">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="89009-117">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="89009-117">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -44,10 +44,15 @@ ms.locfileid: "27889765"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "freeBusyError resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/freebusyerror.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
