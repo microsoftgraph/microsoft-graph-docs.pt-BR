@@ -2,35 +2,35 @@
 title: tipo de recurso de attributeMappingFunctionSchema
 description: Descreve uma função que pode ser usada em um mapeamento de atributo para transformar valores durante a sincronização.
 localization_priority: Normal
-ms.openlocfilehash: 7273534d281d8ea5eaf3709b530776295cd9c767
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: e2c0139f7c797c3f519cc638561b09f611018b28
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27822159"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29511979"
 ---
-# <a name="attributemappingfunctionschema-resource-type"></a><span data-ttu-id="a4210-103">tipo de recurso de attributeMappingFunctionSchema</span><span class="sxs-lookup"><span data-stu-id="a4210-103">attributeMappingFunctionSchema resource type</span></span>
+# <a name="attributemappingfunctionschema-resource-type"></a><span data-ttu-id="0085b-103">tipo de recurso de attributeMappingFunctionSchema</span><span class="sxs-lookup"><span data-stu-id="0085b-103">attributeMappingFunctionSchema resource type</span></span>
 
-> <span data-ttu-id="a4210-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="a4210-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="a4210-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="a4210-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a4210-106">Descreve uma função que pode ser usada em um [mapeamento de atributos](synchronization-attributemapping.md) para transformar valores durante a sincronização.</span><span class="sxs-lookup"><span data-stu-id="a4210-106">Describes a function that can be used in an [attribute mapping](synchronization-attributemapping.md) to transform values during synchronization.</span></span>
+<span data-ttu-id="0085b-104">Descreve uma função que pode ser usada em um [mapeamento de atributos](synchronization-attributemapping.md) para transformar valores durante a sincronização.</span><span class="sxs-lookup"><span data-stu-id="0085b-104">Describes a function that can be used in an [attribute mapping](synchronization-attributemapping.md) to transform values during synchronization.</span></span>
 
-## <a name="methods"></a><span data-ttu-id="a4210-107">Métodos</span><span class="sxs-lookup"><span data-stu-id="a4210-107">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="0085b-105">Métodos</span><span class="sxs-lookup"><span data-stu-id="0085b-105">Methods</span></span>
 
-| <span data-ttu-id="a4210-108">Método</span><span class="sxs-lookup"><span data-stu-id="a4210-108">Method</span></span>           | <span data-ttu-id="a4210-109">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="a4210-109">Return Type</span></span>    |<span data-ttu-id="a4210-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="a4210-110">Description</span></span>|
+| <span data-ttu-id="0085b-106">Método</span><span class="sxs-lookup"><span data-stu-id="0085b-106">Method</span></span>           | <span data-ttu-id="0085b-107">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="0085b-107">Return Type</span></span>    |<span data-ttu-id="0085b-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="0085b-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="a4210-111">List</span><span class="sxs-lookup"><span data-stu-id="a4210-111">List</span></span>](../api/synchronization-synchronizationschema-functions.md) | <span data-ttu-id="a4210-112">coleção [attributeMappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md)</span><span class="sxs-lookup"><span data-stu-id="a4210-112">[attributeMappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md) collection</span></span>|<span data-ttu-id="a4210-113">Funções de mapeamento de atributo de lista com suporte.</span><span class="sxs-lookup"><span data-stu-id="a4210-113">List supported attribute mapping functions.</span></span>|
+|[<span data-ttu-id="0085b-109">List</span><span class="sxs-lookup"><span data-stu-id="0085b-109">List</span></span>](../api/synchronization-synchronizationschema-functions.md) | <span data-ttu-id="0085b-110">coleção [attributeMappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md)</span><span class="sxs-lookup"><span data-stu-id="0085b-110">[attributeMappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md) collection</span></span>|<span data-ttu-id="0085b-111">Funções de mapeamento de atributo de lista com suporte.</span><span class="sxs-lookup"><span data-stu-id="0085b-111">List supported attribute mapping functions.</span></span>|
 
-## <a name="properties"></a><span data-ttu-id="a4210-114">Propriedades</span><span class="sxs-lookup"><span data-stu-id="a4210-114">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="0085b-112">Propriedades</span><span class="sxs-lookup"><span data-stu-id="0085b-112">Properties</span></span>
 
-| <span data-ttu-id="a4210-115">Propriedade</span><span class="sxs-lookup"><span data-stu-id="a4210-115">Property</span></span>                   | <span data-ttu-id="a4210-116">Tipo</span><span class="sxs-lookup"><span data-stu-id="a4210-116">Type</span></span>                      | <span data-ttu-id="a4210-117">Descrição</span><span class="sxs-lookup"><span data-stu-id="a4210-117">Description</span></span>    |
+| <span data-ttu-id="0085b-113">Propriedade</span><span class="sxs-lookup"><span data-stu-id="0085b-113">Property</span></span>                   | <span data-ttu-id="0085b-114">Tipo</span><span class="sxs-lookup"><span data-stu-id="0085b-114">Type</span></span>                      | <span data-ttu-id="0085b-115">Descrição</span><span class="sxs-lookup"><span data-stu-id="0085b-115">Description</span></span>    |
 |:---------------------------|:-------------------------|:---------------|
-|<span data-ttu-id="a4210-118">name</span><span class="sxs-lookup"><span data-stu-id="a4210-118">name</span></span>                        |<span data-ttu-id="a4210-119">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="a4210-119">String</span></span>                    |<span data-ttu-id="a4210-120">Nome do operador.</span><span class="sxs-lookup"><span data-stu-id="a4210-120">Operator name.</span></span> |
-|<span data-ttu-id="a4210-121">parâmetros</span><span class="sxs-lookup"><span data-stu-id="a4210-121">parameters</span></span>                  |<span data-ttu-id="a4210-122">coleção [attributeMappingParameterSchema](../resources/synchronization-attributemappingparameterschema.md)</span><span class="sxs-lookup"><span data-stu-id="a4210-122">[attributeMappingParameterSchema](../resources/synchronization-attributemappingparameterschema.md) collection</span></span>  |<span data-ttu-id="a4210-123">Coleção de parâmetros de função.</span><span class="sxs-lookup"><span data-stu-id="a4210-123">Collection of function parameters.</span></span>|
+|<span data-ttu-id="0085b-116">name</span><span class="sxs-lookup"><span data-stu-id="0085b-116">name</span></span>                        |<span data-ttu-id="0085b-117">String</span><span class="sxs-lookup"><span data-stu-id="0085b-117">String</span></span>                    |<span data-ttu-id="0085b-118">Nome do operador.</span><span class="sxs-lookup"><span data-stu-id="0085b-118">Operator name.</span></span> |
+|<span data-ttu-id="0085b-119">parâmetros</span><span class="sxs-lookup"><span data-stu-id="0085b-119">parameters</span></span>                  |<span data-ttu-id="0085b-120">coleção [attributeMappingParameterSchema](../resources/synchronization-attributemappingparameterschema.md)</span><span class="sxs-lookup"><span data-stu-id="0085b-120">[attributeMappingParameterSchema](../resources/synchronization-attributemappingparameterschema.md) collection</span></span>  |<span data-ttu-id="0085b-121">Coleção de parâmetros de função.</span><span class="sxs-lookup"><span data-stu-id="0085b-121">Collection of function parameters.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="a4210-124">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="a4210-124">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="0085b-122">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="0085b-122">JSON representation</span></span>
 
-<span data-ttu-id="a4210-125">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="a4210-125">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="0085b-123">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="0085b-123">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -50,10 +50,15 @@ ms.locfileid: "27822159"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "attributeMappingFunctionSchema resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/synchronization-attributemappingfunctionschema.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

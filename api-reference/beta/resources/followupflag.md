@@ -2,30 +2,30 @@
 title: Tipo de recurso followupFlag
 description: Permite definir um sinalizador para que o usuário possa acompanhar um item posteriormente. Os itens com suporte incluem message e contact.
 localization_priority: Normal
-ms.openlocfilehash: aa056d141bfac82b9f039ed705f6de49893783fe
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: f8ae4cdc04b48fe0b6dede437684215cefb75969
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27869374"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509543"
 ---
-# <a name="followupflag-resource-type"></a><span data-ttu-id="dcf69-104">Tipo de recurso followupFlag</span><span class="sxs-lookup"><span data-stu-id="dcf69-104">followupFlag resource type</span></span>
+# <a name="followupflag-resource-type"></a><span data-ttu-id="d3503-104">Tipo de recurso followupFlag</span><span class="sxs-lookup"><span data-stu-id="d3503-104">followupFlag resource type</span></span>
 
-> <span data-ttu-id="dcf69-105">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="dcf69-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="dcf69-106">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="dcf69-106">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="dcf69-107">Permite definir um sinalizador para que o usuário possa acompanhar um item posteriormente.</span><span class="sxs-lookup"><span data-stu-id="dcf69-107">Allows setting a flag for the user to follow up on an item later.</span></span> <span data-ttu-id="dcf69-108">Os itens com suporte incluem [message](message.md) e [contact](contact.md).</span><span class="sxs-lookup"><span data-stu-id="dcf69-108">Supported items include [message](message.md) and [contact](contact.md).</span></span>
+<span data-ttu-id="d3503-105">Permite definir um sinalizador para que o usuário possa acompanhar um item posteriormente.</span><span class="sxs-lookup"><span data-stu-id="d3503-105">Allows setting a flag for the user to follow up on an item later.</span></span> <span data-ttu-id="d3503-106">Os itens com suporte incluem [message](message.md) e [contact](contact.md).</span><span class="sxs-lookup"><span data-stu-id="d3503-106">Supported items include [message](message.md) and [contact](contact.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="dcf69-109">Propriedades</span><span class="sxs-lookup"><span data-stu-id="dcf69-109">Properties</span></span>
-| <span data-ttu-id="dcf69-110">Propriedade</span><span class="sxs-lookup"><span data-stu-id="dcf69-110">Property</span></span>     | <span data-ttu-id="dcf69-111">Tipo</span><span class="sxs-lookup"><span data-stu-id="dcf69-111">Type</span></span>   |<span data-ttu-id="dcf69-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="dcf69-112">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="d3503-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="d3503-107">Properties</span></span>
+| <span data-ttu-id="d3503-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="d3503-108">Property</span></span>     | <span data-ttu-id="d3503-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="d3503-109">Type</span></span>   |<span data-ttu-id="d3503-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="d3503-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="dcf69-113">completedDateTime</span><span class="sxs-lookup"><span data-stu-id="dcf69-113">completedDateTime</span></span>|[<span data-ttu-id="dcf69-114">dateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="dcf69-114">dateTimeTimeZone</span></span>](datetimetimezone.md)|<span data-ttu-id="dcf69-115">Data e hora em que o acompanhamento foi concluído.</span><span class="sxs-lookup"><span data-stu-id="dcf69-115">The date and time that the follow-up was finished.</span></span>|
-|<span data-ttu-id="dcf69-116">dueDateTime</span><span class="sxs-lookup"><span data-stu-id="dcf69-116">dueDateTime</span></span>|<span data-ttu-id="dcf69-117">**dateTimeTimeZone**</span><span class="sxs-lookup"><span data-stu-id="dcf69-117">**dateTimeTimeZone**</span></span>|<span data-ttu-id="dcf69-118">Data e hora em que o acompanhamento deve ser concluído.</span><span class="sxs-lookup"><span data-stu-id="dcf69-118">The date and time that the follow-up is to be finished.</span></span>|
-|<span data-ttu-id="dcf69-119">flagStatus</span><span class="sxs-lookup"><span data-stu-id="dcf69-119">flagStatus</span></span>|<span data-ttu-id="dcf69-120">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="dcf69-120">String</span></span>|<span data-ttu-id="dcf69-121">O status de acompanhamento de um item.</span><span class="sxs-lookup"><span data-stu-id="dcf69-121">The status for follow-up for an item.</span></span> <span data-ttu-id="dcf69-122">Os valores possíveis são: `notFlagged`, `complete` e `flagged`.</span><span class="sxs-lookup"><span data-stu-id="dcf69-122">Possible values are `notFlagged`, `complete`, and `flagged`.</span></span>|
-|<span data-ttu-id="dcf69-123">startDateTime</span><span class="sxs-lookup"><span data-stu-id="dcf69-123">startDateTime</span></span>|<span data-ttu-id="dcf69-124">**dateTimeTimeZone**</span><span class="sxs-lookup"><span data-stu-id="dcf69-124">**dateTimeTimeZone**</span></span>|<span data-ttu-id="dcf69-125">Data e hora em que o acompanhamento deve começar.</span><span class="sxs-lookup"><span data-stu-id="dcf69-125">The date and time that the follow-up is to begin.</span></span>|
+|<span data-ttu-id="d3503-111">completedDateTime</span><span class="sxs-lookup"><span data-stu-id="d3503-111">completedDateTime</span></span>|[<span data-ttu-id="d3503-112">dateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="d3503-112">dateTimeTimeZone</span></span>](datetimetimezone.md)|<span data-ttu-id="d3503-113">Data e hora em que o acompanhamento foi concluído.</span><span class="sxs-lookup"><span data-stu-id="d3503-113">The date and time that the follow-up was finished.</span></span>|
+|<span data-ttu-id="d3503-114">dueDateTime</span><span class="sxs-lookup"><span data-stu-id="d3503-114">dueDateTime</span></span>|<span data-ttu-id="d3503-115">**dateTimeTimeZone**</span><span class="sxs-lookup"><span data-stu-id="d3503-115">**dateTimeTimeZone**</span></span>|<span data-ttu-id="d3503-116">Data e hora em que o acompanhamento deve ser concluído.</span><span class="sxs-lookup"><span data-stu-id="d3503-116">The date and time that the follow-up is to be finished.</span></span>|
+|<span data-ttu-id="d3503-117">flagStatus</span><span class="sxs-lookup"><span data-stu-id="d3503-117">flagStatus</span></span>|<span data-ttu-id="d3503-118">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="d3503-118">String</span></span>|<span data-ttu-id="d3503-119">O status de acompanhamento de um item.</span><span class="sxs-lookup"><span data-stu-id="d3503-119">The status for follow-up for an item.</span></span> <span data-ttu-id="d3503-120">Os valores possíveis são: `notFlagged`, `complete` e `flagged`.</span><span class="sxs-lookup"><span data-stu-id="d3503-120">Possible values are `notFlagged`, `complete`, and `flagged`.</span></span>|
+|<span data-ttu-id="d3503-121">startDateTime</span><span class="sxs-lookup"><span data-stu-id="d3503-121">startDateTime</span></span>|<span data-ttu-id="d3503-122">**dateTimeTimeZone**</span><span class="sxs-lookup"><span data-stu-id="d3503-122">**dateTimeTimeZone**</span></span>|<span data-ttu-id="d3503-123">Data e hora em que o acompanhamento deve começar.</span><span class="sxs-lookup"><span data-stu-id="d3503-123">The date and time that the follow-up is to begin.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="dcf69-126">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="dcf69-126">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="d3503-124">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="d3503-124">JSON representation</span></span>
 
-<span data-ttu-id="dcf69-127">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="dcf69-127">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="d3503-125">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="d3503-125">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -47,10 +47,15 @@ ms.locfileid: "27869374"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "followupFlag resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/followupflag.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

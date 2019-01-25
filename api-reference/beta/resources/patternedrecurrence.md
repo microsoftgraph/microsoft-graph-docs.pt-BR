@@ -2,28 +2,28 @@
 title: Tipo de recurso patternedRecurrence
 description: O padrão e o intervalo da recorrência.
 localization_priority: Normal
-ms.openlocfilehash: 2c2d68046c69ed702738318121a0289eb6a347a7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: f4ffd62b54eb6d577269b36d0ee3bea0a3a0002c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27825241"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29512021"
 ---
-# <a name="patternedrecurrence-resource-type"></a><span data-ttu-id="3167b-103">Tipo de recurso patternedRecurrence</span><span class="sxs-lookup"><span data-stu-id="3167b-103">patternedRecurrence resource type</span></span>
+# <a name="patternedrecurrence-resource-type"></a><span data-ttu-id="f79ff-103">Tipo de recurso patternedRecurrence</span><span class="sxs-lookup"><span data-stu-id="f79ff-103">patternedRecurrence resource type</span></span>
 
-> <span data-ttu-id="3167b-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="3167b-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="3167b-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="3167b-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="3167b-106">O padrão e o intervalo da recorrência.</span><span class="sxs-lookup"><span data-stu-id="3167b-106">The recurrence pattern and range.</span></span>
+<span data-ttu-id="f79ff-104">O padrão e o intervalo da recorrência.</span><span class="sxs-lookup"><span data-stu-id="f79ff-104">The recurrence pattern and range.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="3167b-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="3167b-107">Properties</span></span>
-| <span data-ttu-id="3167b-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="3167b-108">Property</span></span>     | <span data-ttu-id="3167b-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="3167b-109">Type</span></span>   |<span data-ttu-id="3167b-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="3167b-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="f79ff-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="f79ff-105">Properties</span></span>
+| <span data-ttu-id="f79ff-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="f79ff-106">Property</span></span>     | <span data-ttu-id="f79ff-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="f79ff-107">Type</span></span>   |<span data-ttu-id="f79ff-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="f79ff-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="3167b-111">pattern</span><span class="sxs-lookup"><span data-stu-id="3167b-111">pattern</span></span>|[<span data-ttu-id="3167b-112">RecurrencePattern</span><span class="sxs-lookup"><span data-stu-id="3167b-112">RecurrencePattern</span></span>](recurrencepattern.md)|<span data-ttu-id="3167b-113">A frequência de um evento.</span><span class="sxs-lookup"><span data-stu-id="3167b-113">The frequency of an event.</span></span>|
-|<span data-ttu-id="3167b-114">range</span><span class="sxs-lookup"><span data-stu-id="3167b-114">range</span></span>|[<span data-ttu-id="3167b-115">RecurrenceRange</span><span class="sxs-lookup"><span data-stu-id="3167b-115">RecurrenceRange</span></span>](recurrencerange.md)|<span data-ttu-id="3167b-116">A duração de um evento.</span><span class="sxs-lookup"><span data-stu-id="3167b-116">The duration of an event.</span></span>|
+|<span data-ttu-id="f79ff-109">pattern</span><span class="sxs-lookup"><span data-stu-id="f79ff-109">pattern</span></span>|[<span data-ttu-id="f79ff-110">RecurrencePattern</span><span class="sxs-lookup"><span data-stu-id="f79ff-110">RecurrencePattern</span></span>](recurrencepattern.md)|<span data-ttu-id="f79ff-111">A frequência de um evento.</span><span class="sxs-lookup"><span data-stu-id="f79ff-111">The frequency of an event.</span></span>|
+|<span data-ttu-id="f79ff-112">range</span><span class="sxs-lookup"><span data-stu-id="f79ff-112">range</span></span>|[<span data-ttu-id="f79ff-113">RecurrenceRange</span><span class="sxs-lookup"><span data-stu-id="f79ff-113">RecurrenceRange</span></span>](recurrencerange.md)|<span data-ttu-id="f79ff-114">A duração de um evento.</span><span class="sxs-lookup"><span data-stu-id="f79ff-114">The duration of an event.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="3167b-117">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="3167b-117">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="f79ff-115">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="f79ff-115">JSON representation</span></span>
 
-<span data-ttu-id="3167b-118">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="3167b-118">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="f79ff-116">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="f79ff-116">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -43,10 +43,15 @@ ms.locfileid: "27825241"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "patternedRecurrence resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/patternedrecurrence.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

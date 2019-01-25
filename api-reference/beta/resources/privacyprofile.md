@@ -2,28 +2,28 @@
 title: Tipo de recurso privacyProfile
 description: Representa o perfil de privacidade de uma empresa que inclui uma URL da política de privacidade e uma pessoa de contato para tirar dúvidas sobre a política de privacidade.
 localization_priority: Normal
-ms.openlocfilehash: adbd2e04e4d3898de559682b0b87158f938e7252
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 9c110cbdb8a456b43936d3b56db5d4563686ed6e
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833044"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510117"
 ---
-# <a name="privacyprofile-resource-type"></a><span data-ttu-id="820ab-103">Tipo de recurso privacyProfile</span><span class="sxs-lookup"><span data-stu-id="820ab-103">privacyProfile resource type</span></span>
+# <a name="privacyprofile-resource-type"></a><span data-ttu-id="f0721-103">Tipo de recurso privacyProfile</span><span class="sxs-lookup"><span data-stu-id="f0721-103">privacyProfile resource type</span></span>
 
-> <span data-ttu-id="820ab-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="820ab-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="820ab-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="820ab-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="820ab-106">Representa o perfil de privacidade de uma empresa que inclui uma URL da política de privacidade e uma pessoa de contato para tirar dúvidas sobre a política de privacidade.</span><span class="sxs-lookup"><span data-stu-id="820ab-106">Represents a company's privacy profile, which includes a privacy statement URL and a contact person for questions regarding the privacy statement.</span></span>
+<span data-ttu-id="f0721-104">Representa o perfil de privacidade de uma empresa que inclui uma URL da política de privacidade e uma pessoa de contato para tirar dúvidas sobre a política de privacidade.</span><span class="sxs-lookup"><span data-stu-id="f0721-104">Represents a company's privacy profile, which includes a privacy statement URL and a contact person for questions regarding the privacy statement.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="820ab-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="820ab-107">Properties</span></span>
-| <span data-ttu-id="820ab-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="820ab-108">Property</span></span>   | <span data-ttu-id="820ab-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="820ab-109">Type</span></span>|<span data-ttu-id="820ab-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="820ab-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="f0721-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="f0721-105">Properties</span></span>
+| <span data-ttu-id="f0721-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="f0721-106">Property</span></span>   | <span data-ttu-id="f0721-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="f0721-107">Type</span></span>|<span data-ttu-id="f0721-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="f0721-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="820ab-111">contactEmail</span><span class="sxs-lookup"><span data-stu-id="820ab-111">contactEmail</span></span>|<span data-ttu-id="820ab-112">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="820ab-112">String</span></span>| <span data-ttu-id="820ab-113">Um endereço de email smtp válido para o contato da política de privacidade.</span><span class="sxs-lookup"><span data-stu-id="820ab-113">A valid smtp email address for the privacy statement contact.</span></span> <span data-ttu-id="820ab-114">Não obrigatório.</span><span class="sxs-lookup"><span data-stu-id="820ab-114">Not required.</span></span>|
-|<span data-ttu-id="820ab-115">statementUrl</span><span class="sxs-lookup"><span data-stu-id="820ab-115">statementUrl</span></span>|<span data-ttu-id="820ab-116">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="820ab-116">String</span></span>| <span data-ttu-id="820ab-117">Um formato de URL válido começando por http:// ou https://.</span><span class="sxs-lookup"><span data-stu-id="820ab-117">A valid URL format that begins with http:// or https://.</span></span> <span data-ttu-id="820ab-118">O tamanho máximo é de 255 caracteres.</span><span class="sxs-lookup"><span data-stu-id="820ab-118">Maximum length is 255 characters.</span></span> <span data-ttu-id="820ab-119">A URL que direciona para a política de privacidade da empresa.</span><span class="sxs-lookup"><span data-stu-id="820ab-119">The URL that directs to the company's privacy statement.</span></span> <span data-ttu-id="820ab-120">Não obrigatório.</span><span class="sxs-lookup"><span data-stu-id="820ab-120">Not required.</span></span>|
+|<span data-ttu-id="f0721-109">contactEmail</span><span class="sxs-lookup"><span data-stu-id="f0721-109">contactEmail</span></span>|<span data-ttu-id="f0721-110">String</span><span class="sxs-lookup"><span data-stu-id="f0721-110">String</span></span>| <span data-ttu-id="f0721-111">Um endereço de email smtp válido para o contato da política de privacidade.</span><span class="sxs-lookup"><span data-stu-id="f0721-111">A valid smtp email address for the privacy statement contact.</span></span> <span data-ttu-id="f0721-112">Não obrigatório.</span><span class="sxs-lookup"><span data-stu-id="f0721-112">Not required.</span></span>|
+|<span data-ttu-id="f0721-113">statementUrl</span><span class="sxs-lookup"><span data-stu-id="f0721-113">statementUrl</span></span>|<span data-ttu-id="f0721-114">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="f0721-114">String</span></span>| <span data-ttu-id="f0721-115">Um formato de URL válido começando por http:// ou https://.</span><span class="sxs-lookup"><span data-stu-id="f0721-115">A valid URL format that begins with http:// or https://.</span></span> <span data-ttu-id="f0721-116">O tamanho máximo é de 255 caracteres.</span><span class="sxs-lookup"><span data-stu-id="f0721-116">Maximum length is 255 characters.</span></span> <span data-ttu-id="f0721-117">A URL que direciona para a política de privacidade da empresa.</span><span class="sxs-lookup"><span data-stu-id="f0721-117">The URL that directs to the company's privacy statement.</span></span> <span data-ttu-id="f0721-118">Não obrigatório.</span><span class="sxs-lookup"><span data-stu-id="f0721-118">Not required.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="820ab-121">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="820ab-121">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="f0721-119">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="f0721-119">JSON representation</span></span>
 
-<span data-ttu-id="820ab-122">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="820ab-122">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="f0721-120">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="f0721-120">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -39,3 +39,11 @@ ms.locfileid: "27833044"
   "statementUrl": "string"
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/privacyprofile.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

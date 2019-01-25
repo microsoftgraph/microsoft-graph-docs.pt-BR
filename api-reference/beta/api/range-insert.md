@@ -4,28 +4,28 @@ description: Insere uma célula ou um intervalo de células na planilha, no luga
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 9d8c55fbc887d1dad84ece9a1f6936b17496a586
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 01bb7b3a756b9d97d2d849c49cade0ff285168a4
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27950463"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29508675"
 ---
-# <a name="range-insert"></a><span data-ttu-id="a9d43-104">Range: insert</span><span class="sxs-lookup"><span data-stu-id="a9d43-104">Range: insert</span></span>
+# <a name="range-insert"></a><span data-ttu-id="c131e-104">Range: insert</span><span class="sxs-lookup"><span data-stu-id="c131e-104">Range: insert</span></span>
 
-> <span data-ttu-id="a9d43-105">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="a9d43-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="a9d43-106">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="a9d43-106">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a9d43-p103">Insere uma célula ou um intervalo de células na planilha, no lugar desse intervalo, e desloca as outras células para liberar espaço. Retorna um novo objeto Range no espaço em branco atual.</span><span class="sxs-lookup"><span data-stu-id="a9d43-p103">Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make space. Returns a new Range object at the now blank space.</span></span>
-## <a name="permissions"></a><span data-ttu-id="a9d43-109">Permissões</span><span class="sxs-lookup"><span data-stu-id="a9d43-109">Permissions</span></span>
-<span data-ttu-id="a9d43-p104">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a9d43-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="c131e-p102">Insere uma célula ou um intervalo de células na planilha, no lugar desse intervalo, e desloca as outras células para liberar espaço. Retorna um novo objeto Range no espaço em branco atual.</span><span class="sxs-lookup"><span data-stu-id="c131e-p102">Inserts a cell or a range of cells into the worksheet in place of this range, and shifts the other cells to make space. Returns a new Range object at the now blank space.</span></span>
+## <a name="permissions"></a><span data-ttu-id="c131e-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="c131e-107">Permissions</span></span>
+<span data-ttu-id="c131e-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c131e-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a9d43-112">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="a9d43-112">Permission type</span></span>      | <span data-ttu-id="a9d43-113">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="a9d43-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="c131e-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="c131e-110">Permission type</span></span>      | <span data-ttu-id="c131e-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="c131e-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a9d43-114">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="a9d43-114">Delegated (work or school account)</span></span> | <span data-ttu-id="a9d43-115">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a9d43-115">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="a9d43-116">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="a9d43-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a9d43-117">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a9d43-117">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="a9d43-118">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="a9d43-118">Application</span></span> | <span data-ttu-id="a9d43-119">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="a9d43-119">Not supported.</span></span> |
+|<span data-ttu-id="c131e-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="c131e-112">Delegated (work or school account)</span></span> | <span data-ttu-id="c131e-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c131e-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="c131e-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="c131e-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c131e-115">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c131e-115">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="c131e-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="c131e-116">Application</span></span> | <span data-ttu-id="c131e-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c131e-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="a9d43-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="a9d43-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c131e-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="c131e-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names(<name>)/range/insert
@@ -33,27 +33,27 @@ POST /workbook/worksheets/{id|name}/range(address='<address>')/insert
 POST /workbook/tables/{id|name}/columns/{id|name}/range/insert
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="a9d43-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="a9d43-121">Request headers</span></span>
-| <span data-ttu-id="a9d43-122">Nome</span><span class="sxs-lookup"><span data-stu-id="a9d43-122">Name</span></span>       | <span data-ttu-id="a9d43-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="a9d43-123">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="c131e-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="c131e-119">Request headers</span></span>
+| <span data-ttu-id="c131e-120">Nome</span><span class="sxs-lookup"><span data-stu-id="c131e-120">Name</span></span>       | <span data-ttu-id="c131e-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="c131e-121">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="a9d43-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="a9d43-124">Authorization</span></span>  | <span data-ttu-id="a9d43-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="a9d43-p105">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="a9d43-127">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="a9d43-127">Workbook-Session-Id</span></span>  | <span data-ttu-id="a9d43-p106">ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.</span><span class="sxs-lookup"><span data-stu-id="a9d43-p106">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="c131e-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="c131e-122">Authorization</span></span>  | <span data-ttu-id="c131e-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="c131e-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="c131e-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="c131e-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="c131e-p105">ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.</span><span class="sxs-lookup"><span data-stu-id="c131e-p105">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="a9d43-130">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="a9d43-130">Request body</span></span>
-<span data-ttu-id="a9d43-131">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="a9d43-131">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c131e-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="c131e-128">Request body</span></span>
+<span data-ttu-id="c131e-129">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="c131e-129">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="a9d43-132">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="a9d43-132">Parameter</span></span>    | <span data-ttu-id="a9d43-133">Tipo</span><span class="sxs-lookup"><span data-stu-id="a9d43-133">Type</span></span>   |<span data-ttu-id="a9d43-134">Descrição</span><span class="sxs-lookup"><span data-stu-id="a9d43-134">Description</span></span>|
+| <span data-ttu-id="c131e-130">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="c131e-130">Parameter</span></span>    | <span data-ttu-id="c131e-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="c131e-131">Type</span></span>   |<span data-ttu-id="c131e-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="c131e-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="a9d43-135">shift</span><span class="sxs-lookup"><span data-stu-id="a9d43-135">shift</span></span>|<span data-ttu-id="a9d43-136">string</span><span class="sxs-lookup"><span data-stu-id="a9d43-136">string</span></span>|<span data-ttu-id="a9d43-p107">Especifica como deslocar as células.  Os valores possíveis são: `Down` e `Right`.</span><span class="sxs-lookup"><span data-stu-id="a9d43-p107">Specifies which way to shift the cells.  Possible values are: `Down`, `Right`.</span></span>|
+|<span data-ttu-id="c131e-133">shift</span><span class="sxs-lookup"><span data-stu-id="c131e-133">shift</span></span>|<span data-ttu-id="c131e-134">string</span><span class="sxs-lookup"><span data-stu-id="c131e-134">string</span></span>|<span data-ttu-id="c131e-p106">Especifica como deslocar as células.  Os valores possíveis são: `Down` e `Right`.</span><span class="sxs-lookup"><span data-stu-id="c131e-p106">Specifies which way to shift the cells.  Possible values are: `Down`, `Right`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="a9d43-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="a9d43-139">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c131e-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="c131e-137">Response</span></span>
 
-<span data-ttu-id="a9d43-140">Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [Range](../resources/range.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="a9d43-140">If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.</span></span>
+<span data-ttu-id="c131e-138">Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [Range](../resources/range.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="c131e-138">If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a9d43-141">Exemplo</span><span class="sxs-lookup"><span data-stu-id="a9d43-141">Example</span></span>
-<span data-ttu-id="a9d43-142">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="a9d43-142">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="a9d43-143">Solicitação</span><span class="sxs-lookup"><span data-stu-id="a9d43-143">Request</span></span>
-<span data-ttu-id="a9d43-144">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="a9d43-144">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="c131e-139">Exemplo</span><span class="sxs-lookup"><span data-stu-id="c131e-139">Example</span></span>
+<span data-ttu-id="c131e-140">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="c131e-140">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="c131e-141">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c131e-141">Request</span></span>
+<span data-ttu-id="c131e-142">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="c131e-142">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "range_insert"
@@ -68,8 +68,8 @@ Content-length: 28
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="a9d43-145">Resposta</span><span class="sxs-lookup"><span data-stu-id="a9d43-145">Response</span></span>
-<span data-ttu-id="a9d43-p108">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="a9d43-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="c131e-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="c131e-143">Response</span></span>
+<span data-ttu-id="c131e-p107">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="c131e-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -92,10 +92,15 @@ Content-length: 169
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Range: insert",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/range-insert.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

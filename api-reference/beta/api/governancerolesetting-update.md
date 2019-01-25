@@ -2,66 +2,66 @@
 title: Atualizar governanceRoleSetting
 description: Atualize as propriedades de governanceRoleSetting.
 localization_priority: Normal
-ms.openlocfilehash: e76d7955576d9d514a70b52b31f4d034362aac1f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: e5fc297690816227e1031af363ea7d4d38199e25
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874904"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509326"
 ---
-# <a name="update-governancerolesetting"></a><span data-ttu-id="1a0f2-103">Atualizar governanceRoleSetting</span><span class="sxs-lookup"><span data-stu-id="1a0f2-103">Update governanceRoleSetting</span></span>
+# <a name="update-governancerolesetting"></a><span data-ttu-id="b84c7-103">Atualizar governanceRoleSetting</span><span class="sxs-lookup"><span data-stu-id="b84c7-103">Update governanceRoleSetting</span></span>
 
-> <span data-ttu-id="1a0f2-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="1a0f2-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="1a0f2-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="1a0f2-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1a0f2-106">Atualize as propriedades de [governanceRoleSetting](../resources/governancerolesetting.md).</span><span class="sxs-lookup"><span data-stu-id="1a0f2-106">Update the properties of [governanceRoleSetting](../resources/governancerolesetting.md).</span></span>
+<span data-ttu-id="b84c7-104">Atualize as propriedades de [governanceRoleSetting](../resources/governancerolesetting.md).</span><span class="sxs-lookup"><span data-stu-id="b84c7-104">Update the properties of [governanceRoleSetting](../resources/governancerolesetting.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="1a0f2-107">Permissions</span><span class="sxs-lookup"><span data-stu-id="1a0f2-107">Permissions</span></span>
-<span data-ttu-id="1a0f2-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1a0f2-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="b84c7-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="b84c7-105">Permissions</span></span>
+<span data-ttu-id="b84c7-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b84c7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-><span data-ttu-id="1a0f2-110">**Observação:** Essa API também requer que o solicitante tem pelo menos um `Active` atribuição de função de administrador (`owner` ou `user access administrator`) no recurso.</span><span class="sxs-lookup"><span data-stu-id="1a0f2-110">**Note:** This API also requires that the requester have at least one `Active` administrator role assignment (`owner` or `user access administrator`) on the resource.</span></span>
+><span data-ttu-id="b84c7-108">**Observação:** Essa API também requer que o solicitante tem pelo menos um `Active` atribuição de função de administrador (`owner` ou `user access administrator`) no recurso.</span><span class="sxs-lookup"><span data-stu-id="b84c7-108">**Note:** This API also requires that the requester have at least one `Active` administrator role assignment (`owner` or `user access administrator`) on the resource.</span></span>
 
-|<span data-ttu-id="1a0f2-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="1a0f2-111">Permission type</span></span>      | <span data-ttu-id="1a0f2-112">Permissions</span><span class="sxs-lookup"><span data-stu-id="1a0f2-112">Permissions</span></span>              |
+|<span data-ttu-id="b84c7-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="b84c7-109">Permission type</span></span>      | <span data-ttu-id="b84c7-110">Permissões</span><span class="sxs-lookup"><span data-stu-id="b84c7-110">Permissions</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1a0f2-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="1a0f2-113">Delegated (work or school account)</span></span> | <span data-ttu-id="1a0f2-114">PrivilegedAccess.ReadWrite.AzureResources</span><span class="sxs-lookup"><span data-stu-id="1a0f2-114">PrivilegedAccess.ReadWrite.AzureResources</span></span>  |
-|<span data-ttu-id="1a0f2-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="1a0f2-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1a0f2-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="1a0f2-116">Not supported.</span></span>    |
-|<span data-ttu-id="1a0f2-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="1a0f2-117">Application</span></span> | <span data-ttu-id="1a0f2-118">PrivilegedAccess.ReadWrite.AzureResources</span><span class="sxs-lookup"><span data-stu-id="1a0f2-118">PrivilegedAccess.ReadWrite.AzureResources</span></span> |
+|<span data-ttu-id="b84c7-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="b84c7-111">Delegated (work or school account)</span></span> | <span data-ttu-id="b84c7-112">PrivilegedAccess.ReadWrite.AzureResources</span><span class="sxs-lookup"><span data-stu-id="b84c7-112">PrivilegedAccess.ReadWrite.AzureResources</span></span>  |
+|<span data-ttu-id="b84c7-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="b84c7-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b84c7-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="b84c7-114">Not supported.</span></span>    |
+|<span data-ttu-id="b84c7-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="b84c7-115">Application</span></span> | <span data-ttu-id="b84c7-116">PrivilegedAccess.ReadWrite.AzureResources</span><span class="sxs-lookup"><span data-stu-id="b84c7-116">PrivilegedAccess.ReadWrite.AzureResources</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1a0f2-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="1a0f2-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b84c7-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="b84c7-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /privilegedAccess/azureResources/roleSettings/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="1a0f2-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="1a0f2-120">Request headers</span></span>
-| <span data-ttu-id="1a0f2-121">Nome</span><span class="sxs-lookup"><span data-stu-id="1a0f2-121">Name</span></span>       | <span data-ttu-id="1a0f2-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="1a0f2-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="b84c7-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="b84c7-118">Request headers</span></span>
+| <span data-ttu-id="b84c7-119">Nome</span><span class="sxs-lookup"><span data-stu-id="b84c7-119">Name</span></span>       | <span data-ttu-id="b84c7-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="b84c7-120">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="1a0f2-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="1a0f2-123">Authorization</span></span>  | <span data-ttu-id="1a0f2-124">Portador {código}</span><span class="sxs-lookup"><span data-stu-id="1a0f2-124">Bearer {code}</span></span>|
-| <span data-ttu-id="1a0f2-125">Content-type</span><span class="sxs-lookup"><span data-stu-id="1a0f2-125">Content-type</span></span>  | <span data-ttu-id="1a0f2-126">application/json</span><span class="sxs-lookup"><span data-stu-id="1a0f2-126">application/json</span></span>|
+| <span data-ttu-id="b84c7-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="b84c7-121">Authorization</span></span>  | <span data-ttu-id="b84c7-122">Portador {código}</span><span class="sxs-lookup"><span data-stu-id="b84c7-122">Bearer {code}</span></span>|
+| <span data-ttu-id="b84c7-123">Content-type</span><span class="sxs-lookup"><span data-stu-id="b84c7-123">Content-type</span></span>  | <span data-ttu-id="b84c7-124">application/json</span><span class="sxs-lookup"><span data-stu-id="b84c7-124">application/json</span></span>|
 
 
-## <a name="request-body"></a><span data-ttu-id="1a0f2-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="1a0f2-127">Request body</span></span>
-<span data-ttu-id="1a0f2-128">No corpo da solicitação, forneça os valores para [governanceRuleSettings](../resources/governancerulesetting.md) que precisam ser atualizados.</span><span class="sxs-lookup"><span data-stu-id="1a0f2-128">In the request body, supply the values for [governanceRuleSettings](../resources/governancerulesetting.md) that need to be updated.</span></span> 
+## <a name="request-body"></a><span data-ttu-id="b84c7-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="b84c7-125">Request body</span></span>
+<span data-ttu-id="b84c7-126">No corpo da solicitação, forneça os valores para [governanceRuleSettings](../resources/governancerulesetting.md) que precisam ser atualizados.</span><span class="sxs-lookup"><span data-stu-id="b84c7-126">In the request body, supply the values for [governanceRuleSettings](../resources/governancerulesetting.md) that need to be updated.</span></span> 
 
-| <span data-ttu-id="1a0f2-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="1a0f2-129">Property</span></span>     | <span data-ttu-id="1a0f2-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="1a0f2-130">Type</span></span>   |<span data-ttu-id="1a0f2-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="1a0f2-131">Description</span></span>|
+| <span data-ttu-id="b84c7-127">Propriedade</span><span class="sxs-lookup"><span data-stu-id="b84c7-127">Property</span></span>     | <span data-ttu-id="b84c7-128">Tipo</span><span class="sxs-lookup"><span data-stu-id="b84c7-128">Type</span></span>   |<span data-ttu-id="b84c7-129">Descrição</span><span class="sxs-lookup"><span data-stu-id="b84c7-129">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="1a0f2-132">adminEligibleSettings</span><span class="sxs-lookup"><span data-stu-id="1a0f2-132">adminEligibleSettings</span></span>|[<span data-ttu-id="1a0f2-133">governanceRuleSetting</span><span class="sxs-lookup"><span data-stu-id="1a0f2-133">governanceRuleSetting</span></span>](../resources/governancerulesetting.md)|<span data-ttu-id="1a0f2-134">As definições de regra que são avaliadas quando um administrador tenta adicionar uma atribuição de função elegíveis.</span><span class="sxs-lookup"><span data-stu-id="1a0f2-134">The rule settings that are evaluated when an administrator tries to add an eligible role assignment.</span></span>|
-|<span data-ttu-id="1a0f2-135">adminMemberSettings</span><span class="sxs-lookup"><span data-stu-id="1a0f2-135">adminMemberSettings</span></span>|[<span data-ttu-id="1a0f2-136">governanceRuleSetting</span><span class="sxs-lookup"><span data-stu-id="1a0f2-136">governanceRuleSetting</span></span>](../resources/governancerulesetting.md)|<span data-ttu-id="1a0f2-137">As definições de regra que são avaliadas quando um administrador tenta adicionar uma atribuição de função de membro direto.</span><span class="sxs-lookup"><span data-stu-id="1a0f2-137">The rule settings that are evaluated when an administrator tries to add a direct member role assignment.</span></span>|
-|<span data-ttu-id="1a0f2-138">userEligibleSettings</span><span class="sxs-lookup"><span data-stu-id="1a0f2-138">userEligibleSettings</span></span>|[<span data-ttu-id="1a0f2-139">governanceRuleSetting</span><span class="sxs-lookup"><span data-stu-id="1a0f2-139">governanceRuleSetting</span></span>](../resources/governancerulesetting.md)|<span data-ttu-id="1a0f2-140">As definições de regra que são avaliadas quando um usuário tentar adicionar uma atribuição de função elegíveis.</span><span class="sxs-lookup"><span data-stu-id="1a0f2-140">The rule settings that are evaluated when a user tries to add an eligible role assignment.</span></span> <span data-ttu-id="1a0f2-141">Isso não é suportado para `pimforazurerbac` cenário no momento e podem estar disponíveis nos cenários futuros.</span><span class="sxs-lookup"><span data-stu-id="1a0f2-141">This is not supported for `pimforazurerbac` scenario for now, and may be available in the future scenarios.</span></span>|
-|<span data-ttu-id="1a0f2-142">userMemberSettings</span><span class="sxs-lookup"><span data-stu-id="1a0f2-142">userMemberSettings</span></span>|[<span data-ttu-id="1a0f2-143">governanceRuleSetting</span><span class="sxs-lookup"><span data-stu-id="1a0f2-143">governanceRuleSetting</span></span>](../resources/governancerulesetting.md)|<span data-ttu-id="1a0f2-144">As definições de regra que são avaliadas quando um usuário tentar ativar sua atribuição de função.</span><span class="sxs-lookup"><span data-stu-id="1a0f2-144">The rule settings that are evaluated when a user tries to activate his role assignment.</span></span>|
+|<span data-ttu-id="b84c7-130">adminEligibleSettings</span><span class="sxs-lookup"><span data-stu-id="b84c7-130">adminEligibleSettings</span></span>|[<span data-ttu-id="b84c7-131">governanceRuleSetting</span><span class="sxs-lookup"><span data-stu-id="b84c7-131">governanceRuleSetting</span></span>](../resources/governancerulesetting.md)|<span data-ttu-id="b84c7-132">As definições de regra que são avaliadas quando um administrador tenta adicionar uma atribuição de função elegíveis.</span><span class="sxs-lookup"><span data-stu-id="b84c7-132">The rule settings that are evaluated when an administrator tries to add an eligible role assignment.</span></span>|
+|<span data-ttu-id="b84c7-133">adminMemberSettings</span><span class="sxs-lookup"><span data-stu-id="b84c7-133">adminMemberSettings</span></span>|[<span data-ttu-id="b84c7-134">governanceRuleSetting</span><span class="sxs-lookup"><span data-stu-id="b84c7-134">governanceRuleSetting</span></span>](../resources/governancerulesetting.md)|<span data-ttu-id="b84c7-135">As definições de regra que são avaliadas quando um administrador tenta adicionar uma atribuição de função de membro direto.</span><span class="sxs-lookup"><span data-stu-id="b84c7-135">The rule settings that are evaluated when an administrator tries to add a direct member role assignment.</span></span>|
+|<span data-ttu-id="b84c7-136">userEligibleSettings</span><span class="sxs-lookup"><span data-stu-id="b84c7-136">userEligibleSettings</span></span>|[<span data-ttu-id="b84c7-137">governanceRuleSetting</span><span class="sxs-lookup"><span data-stu-id="b84c7-137">governanceRuleSetting</span></span>](../resources/governancerulesetting.md)|<span data-ttu-id="b84c7-138">As definições de regra que são avaliadas quando um usuário tentar adicionar uma atribuição de função elegíveis.</span><span class="sxs-lookup"><span data-stu-id="b84c7-138">The rule settings that are evaluated when a user tries to add an eligible role assignment.</span></span> <span data-ttu-id="b84c7-139">Isso não é suportado para `pimforazurerbac` cenário no momento e podem estar disponíveis nos cenários futuros.</span><span class="sxs-lookup"><span data-stu-id="b84c7-139">This is not supported for `pimforazurerbac` scenario for now, and may be available in the future scenarios.</span></span>|
+|<span data-ttu-id="b84c7-140">userMemberSettings</span><span class="sxs-lookup"><span data-stu-id="b84c7-140">userMemberSettings</span></span>|[<span data-ttu-id="b84c7-141">governanceRuleSetting</span><span class="sxs-lookup"><span data-stu-id="b84c7-141">governanceRuleSetting</span></span>](../resources/governancerulesetting.md)|<span data-ttu-id="b84c7-142">As definições de regra que são avaliadas quando um usuário tentar ativar sua atribuição de função.</span><span class="sxs-lookup"><span data-stu-id="b84c7-142">The rule settings that are evaluated when a user tries to activate his role assignment.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="1a0f2-145">Resposta</span><span class="sxs-lookup"><span data-stu-id="1a0f2-145">Response</span></span>
-<span data-ttu-id="1a0f2-p104">Se bem-sucedido, este método retorna um código de resposta `204 NoContent`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="1a0f2-p104">If successful, this method returns a `204 NoContent` response code. It does not return anything in the response body.</span></span> 
+## <a name="response"></a><span data-ttu-id="b84c7-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="b84c7-143">Response</span></span>
+<span data-ttu-id="b84c7-p103">Se bem-sucedido, este método retorna um código de resposta `204 NoContent`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="b84c7-p103">If successful, this method returns a `204 NoContent` response code. It does not return anything in the response body.</span></span> 
 
-### <a name="error-codes"></a><span data-ttu-id="1a0f2-148">Códigos de erro</span><span class="sxs-lookup"><span data-stu-id="1a0f2-148">Error codes</span></span>
-<span data-ttu-id="1a0f2-149">Essa API retorna os códigos de erro HTTP padrão.</span><span class="sxs-lookup"><span data-stu-id="1a0f2-149">This API returns the standard HTTP error codes.</span></span> <span data-ttu-id="1a0f2-150">Além disso, ele retorna os seguintes códigos de erro personalizada.</span><span class="sxs-lookup"><span data-stu-id="1a0f2-150">In addition, it returns the following custom error codes.</span></span>
+### <a name="error-codes"></a><span data-ttu-id="b84c7-146">Códigos de erro</span><span class="sxs-lookup"><span data-stu-id="b84c7-146">Error codes</span></span>
+<span data-ttu-id="b84c7-147">Essa API retorna os códigos de erro HTTP padrão.</span><span class="sxs-lookup"><span data-stu-id="b84c7-147">This API returns the standard HTTP error codes.</span></span> <span data-ttu-id="b84c7-148">Além disso, ele retorna os seguintes códigos de erro personalizada.</span><span class="sxs-lookup"><span data-stu-id="b84c7-148">In addition, it returns the following custom error codes.</span></span>
 
-|<span data-ttu-id="1a0f2-151">Código de erro</span><span class="sxs-lookup"><span data-stu-id="1a0f2-151">Error code</span></span>     | <span data-ttu-id="1a0f2-152">Mensagem de erro</span><span class="sxs-lookup"><span data-stu-id="1a0f2-152">Error message</span></span>         | <span data-ttu-id="1a0f2-153">Detalhes</span><span class="sxs-lookup"><span data-stu-id="1a0f2-153">Details</span></span>             |
+|<span data-ttu-id="b84c7-149">Código de erro</span><span class="sxs-lookup"><span data-stu-id="b84c7-149">Error code</span></span>     | <span data-ttu-id="b84c7-150">Mensagem de erro</span><span class="sxs-lookup"><span data-stu-id="b84c7-150">Error message</span></span>         | <span data-ttu-id="b84c7-151">Detalhes</span><span class="sxs-lookup"><span data-stu-id="b84c7-151">Details</span></span>             |
 |:--------------| :---------------------|:--------------------|
-| <span data-ttu-id="1a0f2-154">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="1a0f2-154">400 BadRequest</span></span>| <span data-ttu-id="1a0f2-155">RoleSettingNotFound</span><span class="sxs-lookup"><span data-stu-id="1a0f2-155">RoleSettingNotFound</span></span>   | <span data-ttu-id="1a0f2-156">O [governanceRoleSetting](../resources/governancerolesetting.md) não existe no sistema.</span><span class="sxs-lookup"><span data-stu-id="1a0f2-156">The [governanceRoleSetting](../resources/governancerolesetting.md) does not exist in system.</span></span>
-| <span data-ttu-id="1a0f2-157">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="1a0f2-157">400 BadRequest</span></span>| <span data-ttu-id="1a0f2-158">InvalidRoleSetting</span><span class="sxs-lookup"><span data-stu-id="1a0f2-158">InvalidRoleSetting</span></span>    | <span data-ttu-id="1a0f2-159">Os valores de [governanceRuleSettings](../resources/governancerulesetting.md) fornecidos no corpo da solicitação não são válidos.</span><span class="sxs-lookup"><span data-stu-id="1a0f2-159">The [governanceRuleSettings](../resources/governancerulesetting.md) values provided in the request body are not valid.</span></span>
+| <span data-ttu-id="b84c7-152">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="b84c7-152">400 BadRequest</span></span>| <span data-ttu-id="b84c7-153">RoleSettingNotFound</span><span class="sxs-lookup"><span data-stu-id="b84c7-153">RoleSettingNotFound</span></span>   | <span data-ttu-id="b84c7-154">O [governanceRoleSetting](../resources/governancerolesetting.md) não existe no sistema.</span><span class="sxs-lookup"><span data-stu-id="b84c7-154">The [governanceRoleSetting](../resources/governancerolesetting.md) does not exist in system.</span></span>
+| <span data-ttu-id="b84c7-155">400 BadRequest</span><span class="sxs-lookup"><span data-stu-id="b84c7-155">400 BadRequest</span></span>| <span data-ttu-id="b84c7-156">InvalidRoleSetting</span><span class="sxs-lookup"><span data-stu-id="b84c7-156">InvalidRoleSetting</span></span>    | <span data-ttu-id="b84c7-157">Os valores de [governanceRuleSettings](../resources/governancerulesetting.md) fornecidos no corpo da solicitação não são válidos.</span><span class="sxs-lookup"><span data-stu-id="b84c7-157">The [governanceRuleSettings](../resources/governancerulesetting.md) values provided in the request body are not valid.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1a0f2-160">Exemplo</span><span class="sxs-lookup"><span data-stu-id="1a0f2-160">Example</span></span> 
-<span data-ttu-id="1a0f2-161">Este exemplo atualiza a definição de função para 3 de função personalizada na assinatura Wingtip Toys - produção.</span><span class="sxs-lookup"><span data-stu-id="1a0f2-161">This example updates the role setting for Custom Role 3 in the subscription Wingtip Toys - Prod.</span></span>
-##### <a name="request"></a><span data-ttu-id="1a0f2-162">Solicitação</span><span class="sxs-lookup"><span data-stu-id="1a0f2-162">Request</span></span>
+## <a name="example"></a><span data-ttu-id="b84c7-158">Exemplo</span><span class="sxs-lookup"><span data-stu-id="b84c7-158">Example</span></span> 
+<span data-ttu-id="b84c7-159">Este exemplo atualiza a definição de função para 3 de função personalizada na assinatura Wingtip Toys - produção.</span><span class="sxs-lookup"><span data-stu-id="b84c7-159">This example updates the role setting for Custom Role 3 in the subscription Wingtip Toys - Prod.</span></span>
+##### <a name="request"></a><span data-ttu-id="b84c7-160">Solicitação</span><span class="sxs-lookup"><span data-stu-id="b84c7-160">Request</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_governancerolesetting"
@@ -75,7 +75,7 @@ Content-length: 350
   "adminEligibleSettings":[{"ruleIdentifier":"ExpirationRule","setting":"{\"permanentAssignment\":false,\"maximumGrantPeriodInMinutes\":129600}"}]
 }
 ```
-##### <a name="response"></a><span data-ttu-id="1a0f2-163">Resposta</span><span class="sxs-lookup"><span data-stu-id="1a0f2-163">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="b84c7-161">Resposta</span><span class="sxs-lookup"><span data-stu-id="b84c7-161">Response</span></span>
 <!-- {
   "blockType": "response",
   "@odata.type": "microsoft.graph.None"
@@ -86,10 +86,15 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update governanceRoleSetting",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/governancerolesetting-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

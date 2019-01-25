@@ -2,49 +2,49 @@
 title: Obter governanceRoleSetting
 description: Recupere as propriedades e relacionamentos de um governanceRoleSetting.
 localization_priority: Normal
-ms.openlocfilehash: db4c2a287ba1089c4aac73b9f0cf6e204a726c86
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 2c432c0f680acd2411d57ab6e4b4a7af21f3350a
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27864509"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29511034"
 ---
-# <a name="get-governancerolesetting"></a><span data-ttu-id="9583a-103">Obter governanceRoleSetting</span><span class="sxs-lookup"><span data-stu-id="9583a-103">Get governanceRoleSetting</span></span>
+# <a name="get-governancerolesetting"></a><span data-ttu-id="cd18e-103">Obter governanceRoleSetting</span><span class="sxs-lookup"><span data-stu-id="cd18e-103">Get governanceRoleSetting</span></span>
 
 
-> <span data-ttu-id="9583a-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="9583a-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="9583a-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="9583a-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="9583a-106">Recupere as propriedades e relacionamentos de um [governanceRoleSetting](../resources/governancerolesetting.md).</span><span class="sxs-lookup"><span data-stu-id="9583a-106">Retrieve the properties and relationships of a [governanceRoleSetting](../resources/governancerolesetting.md).</span></span>
+<span data-ttu-id="cd18e-104">Recupere as propriedades e relacionamentos de um [governanceRoleSetting](../resources/governancerolesetting.md).</span><span class="sxs-lookup"><span data-stu-id="cd18e-104">Retrieve the properties and relationships of a [governanceRoleSetting](../resources/governancerolesetting.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="9583a-107">Permissions</span><span class="sxs-lookup"><span data-stu-id="9583a-107">Permissions</span></span>
-<span data-ttu-id="9583a-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9583a-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="cd18e-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="cd18e-105">Permissions</span></span>
+<span data-ttu-id="cd18e-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="cd18e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="9583a-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="9583a-110">Permission type</span></span>      | <span data-ttu-id="9583a-111">Permissions</span><span class="sxs-lookup"><span data-stu-id="9583a-111">Permissions</span></span>              |
+|<span data-ttu-id="cd18e-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="cd18e-108">Permission type</span></span>      | <span data-ttu-id="cd18e-109">Permissões</span><span class="sxs-lookup"><span data-stu-id="cd18e-109">Permissions</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="9583a-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="9583a-112">Delegated (work or school account)</span></span> | <span data-ttu-id="9583a-113">PrivilegedAccess.ReadWrite.AzureResources</span><span class="sxs-lookup"><span data-stu-id="9583a-113">PrivilegedAccess.ReadWrite.AzureResources</span></span>  |
-|<span data-ttu-id="9583a-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="9583a-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9583a-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="9583a-115">Not supported.</span></span>    |
-|<span data-ttu-id="9583a-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="9583a-116">Application</span></span> | <span data-ttu-id="9583a-117">PrivilegedAccess.ReadWrite.AzureResources</span><span class="sxs-lookup"><span data-stu-id="9583a-117">PrivilegedAccess.ReadWrite.AzureResources</span></span> |
+|<span data-ttu-id="cd18e-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="cd18e-110">Delegated (work or school account)</span></span> | <span data-ttu-id="cd18e-111">PrivilegedAccess.ReadWrite.AzureResources</span><span class="sxs-lookup"><span data-stu-id="cd18e-111">PrivilegedAccess.ReadWrite.AzureResources</span></span>  |
+|<span data-ttu-id="cd18e-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="cd18e-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cd18e-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="cd18e-113">Not supported.</span></span>    |
+|<span data-ttu-id="cd18e-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="cd18e-114">Application</span></span> | <span data-ttu-id="cd18e-115">PrivilegedAccess.ReadWrite.AzureResources</span><span class="sxs-lookup"><span data-stu-id="cd18e-115">PrivilegedAccess.ReadWrite.AzureResources</span></span> |
 
-<span data-ttu-id="9583a-118">Além do escopo de permissão, essa API requer o solicitante ter pelo menos uma atribuição do recurso, que pertence a [governanceRoleSetting](../resources/governancerolesetting.md) .</span><span class="sxs-lookup"><span data-stu-id="9583a-118">Besides the permission scope, this API requires the requestor to have at least one role assignment on the resource, which the [governanceRoleSetting](../resources/governancerolesetting.md) belongs to.</span></span>
-## <a name="http-request"></a><span data-ttu-id="9583a-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="9583a-119">HTTP request</span></span>
+<span data-ttu-id="cd18e-116">Além do escopo de permissão, essa API requer o solicitante ter pelo menos uma atribuição do recurso, que pertence a [governanceRoleSetting](../resources/governancerolesetting.md) .</span><span class="sxs-lookup"><span data-stu-id="cd18e-116">Besides the permission scope, this API requires the requestor to have at least one role assignment on the resource, which the [governanceRoleSetting](../resources/governancerolesetting.md) belongs to.</span></span>
+## <a name="http-request"></a><span data-ttu-id="cd18e-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="cd18e-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /privilegedAccess/azureResources/roleSettings/{id}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="9583a-120">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="9583a-120">Optional query parameters</span></span>
-<span data-ttu-id="9583a-121">Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="9583a-121">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="cd18e-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="cd18e-118">Optional query parameters</span></span>
+<span data-ttu-id="cd18e-119">Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="cd18e-119">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="9583a-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="9583a-122">Request headers</span></span>
-| <span data-ttu-id="9583a-123">Nome</span><span class="sxs-lookup"><span data-stu-id="9583a-123">Name</span></span>      |<span data-ttu-id="9583a-124">Descrição</span><span class="sxs-lookup"><span data-stu-id="9583a-124">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="cd18e-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="cd18e-120">Request headers</span></span>
+| <span data-ttu-id="cd18e-121">Nome</span><span class="sxs-lookup"><span data-stu-id="cd18e-121">Name</span></span>      |<span data-ttu-id="cd18e-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="cd18e-122">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="9583a-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="9583a-125">Authorization</span></span>  | <span data-ttu-id="9583a-126">Portador {código}</span><span class="sxs-lookup"><span data-stu-id="9583a-126">Bearer {code}</span></span>|
+| <span data-ttu-id="cd18e-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="cd18e-123">Authorization</span></span>  | <span data-ttu-id="cd18e-124">Portador {código}</span><span class="sxs-lookup"><span data-stu-id="cd18e-124">Bearer {code}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="9583a-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="9583a-127">Request body</span></span>
-<span data-ttu-id="9583a-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="9583a-128">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="9583a-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="9583a-129">Response</span></span>
-<span data-ttu-id="9583a-130">Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [governanceRoleSetting](../resources/governancerolesetting.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="9583a-130">If successful, this method returns a `200 OK` response code and a [governanceRoleSetting](../resources/governancerolesetting.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="9583a-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="9583a-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="9583a-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="9583a-132">Request</span></span>
+## <a name="request-body"></a><span data-ttu-id="cd18e-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="cd18e-125">Request body</span></span>
+<span data-ttu-id="cd18e-126">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="cd18e-126">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="cd18e-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="cd18e-127">Response</span></span>
+<span data-ttu-id="cd18e-128">Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [governanceRoleSetting](../resources/governancerolesetting.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="cd18e-128">If successful, this method returns a `200 OK` response code and a [governanceRoleSetting](../resources/governancerolesetting.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="cd18e-129">Exemplo</span><span class="sxs-lookup"><span data-stu-id="cd18e-129">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="cd18e-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="cd18e-130">Request</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_governancerolesetting"
@@ -52,7 +52,7 @@ GET /privilegedAccess/azureResources/roleSettings/{id}
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleSettings/80dc5d6f-8d89-47b3-953f-01dc909ed3f9
 ```
-##### <a name="response"></a><span data-ttu-id="9583a-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="9583a-133">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="cd18e-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="cd18e-131">Response</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,
@@ -115,10 +115,15 @@ Content-length: 370
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get governanceRoleSetting",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/governancerolesetting-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

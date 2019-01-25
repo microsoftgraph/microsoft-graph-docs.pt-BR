@@ -4,31 +4,31 @@ description: Obtenha uma lista de dispositivos do usuário que oferecem suporte 
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 04b67b770eec38d9e70a2263cd54212077335c85
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 891f66691149106d4ff5a2951170524203eb2ea7
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27983538"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509522"
 ---
-# <a name="list-user-devices"></a><span data-ttu-id="1e3ab-105">Lista de dispositivos de usuário</span><span class="sxs-lookup"><span data-stu-id="1e3ab-105">List user devices</span></span>
+# <a name="list-user-devices"></a><span data-ttu-id="0cded-105">Lista de dispositivos de usuário</span><span class="sxs-lookup"><span data-stu-id="0cded-105">List user devices</span></span>
 
-> <span data-ttu-id="1e3ab-106">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="1e3ab-106">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="1e3ab-107">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="1e3ab-107">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1e3ab-108">Obtenha uma lista de dispositivos do usuário que oferecem suporte a recursos de projeto Roma.</span><span class="sxs-lookup"><span data-stu-id="1e3ab-108">Get a list of user devices that support Project Rome capabilities.</span></span> <span data-ttu-id="1e3ab-109">Isso inclui a capacidade de iniciar um aplicativo, ou de mensagem ou enviar dados para um aplicativo.</span><span class="sxs-lookup"><span data-stu-id="1e3ab-109">This includes the ability to launch an app, or message or send data to an application.</span></span> <span data-ttu-id="1e3ab-110">Depois de fazer uma chamada GET em mim / dispositivos, passe a ID do dispositivo para [Enviar um comando](send-device-command.md) para seu dispositivo.</span><span class="sxs-lookup"><span data-stu-id="1e3ab-110">After you do a GET call on me/devices, pass in the ID of the device to [send a command](send-device-command.md) to your device.</span></span>
+<span data-ttu-id="0cded-106">Obtenha uma lista de dispositivos do usuário que oferecem suporte a recursos de projeto Roma.</span><span class="sxs-lookup"><span data-stu-id="0cded-106">Get a list of user devices that support Project Rome capabilities.</span></span> <span data-ttu-id="0cded-107">Isso inclui a capacidade de iniciar um aplicativo, ou de mensagem ou enviar dados para um aplicativo.</span><span class="sxs-lookup"><span data-stu-id="0cded-107">This includes the ability to launch an app, or message or send data to an application.</span></span> <span data-ttu-id="0cded-108">Depois de fazer uma chamada GET em mim / dispositivos, passe a ID do dispositivo para [Enviar um comando](send-device-command.md) para seu dispositivo.</span><span class="sxs-lookup"><span data-stu-id="0cded-108">After you do a GET call on me/devices, pass in the ID of the device to [send a command](send-device-command.md) to your device.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="1e3ab-111">Permissões</span><span class="sxs-lookup"><span data-stu-id="1e3ab-111">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="0cded-109">Permissões</span><span class="sxs-lookup"><span data-stu-id="0cded-109">Permissions</span></span>
 
-<span data-ttu-id="1e3ab-p104">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1e3ab-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="0cded-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0cded-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="1e3ab-114">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="1e3ab-114">Permission type</span></span>      | <span data-ttu-id="1e3ab-115">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="1e3ab-115">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="0cded-112">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="0cded-112">Permission type</span></span>      | <span data-ttu-id="0cded-113">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="0cded-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1e3ab-116">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="1e3ab-116">Delegated (work or school account)</span></span> | <span data-ttu-id="1e3ab-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="1e3ab-117">Not supported.</span></span>    |
-|<span data-ttu-id="1e3ab-118">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="1e3ab-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1e3ab-119">Device.Read</span><span class="sxs-lookup"><span data-stu-id="1e3ab-119">Device.Read</span></span>    |
-|<span data-ttu-id="1e3ab-120">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="1e3ab-120">Application</span></span> | <span data-ttu-id="1e3ab-121">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="1e3ab-121">Not supported.</span></span> |
+|<span data-ttu-id="0cded-114">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="0cded-114">Delegated (work or school account)</span></span> | <span data-ttu-id="0cded-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="0cded-115">Not supported.</span></span>    |
+|<span data-ttu-id="0cded-116">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="0cded-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0cded-117">Device.Read</span><span class="sxs-lookup"><span data-stu-id="0cded-117">Device.Read</span></span>    |
+|<span data-ttu-id="0cded-118">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="0cded-118">Application</span></span> | <span data-ttu-id="0cded-119">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="0cded-119">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1e3ab-122">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="1e3ab-122">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0cded-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="0cded-120">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,19 +36,19 @@ ms.locfileid: "27983538"
 GET me/devices
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="1e3ab-123">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="1e3ab-123">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="0cded-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="0cded-121">Request headers</span></span>
 
-| <span data-ttu-id="1e3ab-124">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="1e3ab-124">Header</span></span> |<span data-ttu-id="1e3ab-125">Valor</span><span class="sxs-lookup"><span data-stu-id="1e3ab-125">Value</span></span>
+| <span data-ttu-id="0cded-122">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="0cded-122">Header</span></span> |<span data-ttu-id="0cded-123">Valor</span><span class="sxs-lookup"><span data-stu-id="0cded-123">Value</span></span>
 |:----|:------|
-|<span data-ttu-id="1e3ab-126">Autorização</span><span class="sxs-lookup"><span data-stu-id="1e3ab-126">Authorization</span></span>| <span data-ttu-id="1e3ab-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="1e3ab-p105">Bearer {token}. Required.</span></span> |
-|<span data-ttu-id="1e3ab-129">Aceitar</span><span class="sxs-lookup"><span data-stu-id="1e3ab-129">Accept</span></span> | <span data-ttu-id="1e3ab-130">application/json</span><span class="sxs-lookup"><span data-stu-id="1e3ab-130">application/json</span></span> |
+|<span data-ttu-id="0cded-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="0cded-124">Authorization</span></span>| <span data-ttu-id="0cded-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="0cded-p104">Bearer {token}. Required.</span></span> |
+|<span data-ttu-id="0cded-127">Aceitar</span><span class="sxs-lookup"><span data-stu-id="0cded-127">Accept</span></span> | <span data-ttu-id="0cded-128">application/json</span><span class="sxs-lookup"><span data-stu-id="0cded-128">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="1e3ab-131">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="1e3ab-131">Request body</span></span>
-<span data-ttu-id="1e3ab-132">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="1e3ab-132">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="0cded-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="0cded-129">Request body</span></span>
+<span data-ttu-id="0cded-130">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="0cded-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="1e3ab-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="1e3ab-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="0cded-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="0cded-131">Response</span></span>
 
-<span data-ttu-id="1e3ab-134">Se tiver êxito, esse método retorna um código de 200 resposta e as propriedades de usuário do dispositivo no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="1e3ab-134">If successful, this method returns a 200 response code and the user device properties in the response body.</span></span>
+<span data-ttu-id="0cded-132">Se tiver êxito, esse método retorna um código de 200 resposta e as propriedades de usuário do dispositivo no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="0cded-132">If successful, this method returns a 200 response code and the user device properties in the response body.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -75,12 +75,12 @@ HTTP/1.1 200 OK
 }
 ```
 
-## <a name="example"></a><span data-ttu-id="1e3ab-135">Exemplo</span><span class="sxs-lookup"><span data-stu-id="1e3ab-135">Example</span></span>
-<span data-ttu-id="1e3ab-136">Este exemplo retornará a lista de dispositivos para um usuário.</span><span class="sxs-lookup"><span data-stu-id="1e3ab-136">This example will return the list of devices for a user.</span></span> <span data-ttu-id="1e3ab-137">Para um dispositivo usando de comando `me/devices/{id}/command`, você precisará obter a ID do dispositivo que é retornado.</span><span class="sxs-lookup"><span data-stu-id="1e3ab-137">To command a device using `me/devices/{id}/command`, you will need to get the ID of the device that is returned.</span></span>
+## <a name="example"></a><span data-ttu-id="0cded-133">Exemplo</span><span class="sxs-lookup"><span data-stu-id="0cded-133">Example</span></span>
+<span data-ttu-id="0cded-134">Este exemplo retornará a lista de dispositivos para um usuário.</span><span class="sxs-lookup"><span data-stu-id="0cded-134">This example will return the list of devices for a user.</span></span> <span data-ttu-id="0cded-135">Para um dispositivo usando de comando `me/devices/{id}/command`, você precisará obter a ID do dispositivo que é retornado.</span><span class="sxs-lookup"><span data-stu-id="0cded-135">To command a device using `me/devices/{id}/command`, you will need to get the ID of the device that is returned.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="1e3ab-138">Solicitação</span><span class="sxs-lookup"><span data-stu-id="1e3ab-138">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="0cded-136">Solicitação</span><span class="sxs-lookup"><span data-stu-id="0cded-136">Request</span></span>
 
-<span data-ttu-id="1e3ab-139">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="1e3ab-139">The following is an example of the request.</span></span>
+<span data-ttu-id="0cded-137">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="0cded-137">The following is an example of the request.</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -93,9 +93,9 @@ Authorization: Bearer Eaeou....
 Content-Type: application/json; charset=utf-8
 ```
 
-#### <a name="response"></a><span data-ttu-id="1e3ab-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="1e3ab-140">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="0cded-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="0cded-138">Response</span></span>
 
-<span data-ttu-id="1e3ab-141">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="1e3ab-141">The following is an example of the response.</span></span> <span data-ttu-id="1e3ab-142">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão.</span><span class="sxs-lookup"><span data-stu-id="1e3ab-142">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="1e3ab-143">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="1e3ab-143">All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="0cded-139">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="0cded-139">The following is an example of the response.</span></span> <span data-ttu-id="0cded-140">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão.</span><span class="sxs-lookup"><span data-stu-id="0cded-140">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="0cded-141">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="0cded-141">All of the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -123,3 +123,11 @@ Content-length: 140
   ]
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-list-devices.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
