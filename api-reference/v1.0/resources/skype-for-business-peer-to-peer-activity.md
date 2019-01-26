@@ -3,12 +3,13 @@ title: Relatórios de atividades ponto a ponto Skype for Business
 description: Você pode usar os relatórios de atividades ponto a ponto do Skype for Business para obter dados sobre as atividades ponto a ponto em toda a organização. Esses dados são muito úteis quando você está investigando, planejando e tomando outras decisões comerciais para sua organização.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 6c94b4fd09fb71af3c264664eaa0182256dfa949
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: 395babe88a330ddbd037a23575b06ba1dfa8059f
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27920727"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576714"
 ---
 # <a name="skype-for-business-peer-to-peer-activity-reports"></a>Relatórios de atividades ponto a ponto Skype for Business
 

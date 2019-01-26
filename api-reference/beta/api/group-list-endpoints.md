@@ -4,12 +4,12 @@ description: Recupere uma lista de objetos de ponto de extremidade.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: d8bb01d00fbac03a2b52d95179ec22ca769f9df2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 4f6d5d1fc8578f390dce0fece668a851c47032a7
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529828"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575853"
 ---
 # <a name="list-endpoints"></a>Listar pontos de extremidade
 
@@ -61,7 +61,7 @@ Observação: o objeto response mostrado aqui pode estar truncado por motivos de
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.Endpoint",
+  "@odata.type": "microsoft.graph.endpoint",
   "isCollection": true
 } -->
 ```http

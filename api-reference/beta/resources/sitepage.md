@@ -5,12 +5,12 @@ ms.date: 03/15/2018
 title: SitePage
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 7b1634e79214f1cece85a78af29db6422ac03a81
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 9ecc23abbee165bce9fd4d9a2a5d8aac8aa02f41
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522298"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576238"
 ---
 # <a name="sitepage-resource"></a>recurso de sitePage
 
@@ -22,11 +22,11 @@ Ele contém uma coleção de [Web Part][]s, layout e o título.
 ## <a name="tasks-on-a-page"></a>Tarefas em uma página
 
 As tarefas a seguir estão disponíveis para os recursos de **sitePage** .
-Todos os exemplos a seguir referem-se a um site: [][].
+Todos os exemplos a seguir são em relação um [site][], eg: `https://graph.microsoft.com/{api-version}/sites/{site-id}`.
 
 | Tarefa comum                     | Método HTTP
 |:--------------------------------|:------------------------------
-| [Listar páginas][]                  | GET Pages
+| [Listar páginas][]                  | OBTER /pages
 | [Get page][]                    | OBTER /pages/ {id page}
 | [Create][]                      | /Pages POST
 | [Delete][]                      | Excluir /pages/ {id page}
@@ -56,7 +56,7 @@ Aqui está uma representação JSON de um recurso de **sitePage** .
   /* page content */
   "title": "string",
   "pageLayout": "Article",
-  "webParts": [{ "@odata.type": "microsoft.graph.sitePageWebParts" }],
+  "webParts": [{ "@odata.type": "microsoft.graph.webPart" }],
 
   /* authoring metadata */
   "publishingState": { "@odata.type": "microsoft.graph.publicationFacet" },

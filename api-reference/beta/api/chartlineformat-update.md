@@ -4,12 +4,12 @@ description: Atualiza as propriedades do objeto chartlineformat.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: a75e93fd43d476f983da6aed8102675e0e8f5350
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 654dc4be9f0e2463100a6b61ac7bfe646a4ceb11
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529618"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576224"
 ---
 # <a name="update-chartlineformat"></a>Atualizar chartlineformat
 
@@ -47,7 +47,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [ChartLineFormat](../resources/chartlineformat.md) atualizado no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto atualizado [workbookChartLineFormat](../resources/chartlineformat.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
@@ -69,7 +69,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartLineFormat"
+  "@odata.type": "microsoft.graph.workbookChartLineFormat"
 } -->
 ```http
 HTTP/1.1 200 OK

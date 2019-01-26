@@ -2,12 +2,12 @@
 title: Adicionar Item nomeado
 description: Adiciona um novo nome à coleção de escopo fornecido usando a localidade do usuário para a fórmula.
 localization_priority: Normal
-ms.openlocfilehash: dd35f2ded1c08c5f6b99a017b89dd6b5b50026b7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 6d27f081c4f8327e02acf4b3004c771848a5a5e0
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525259"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575482"
 ---
 # <a name="add-named-item"></a>Adicionar Item nomeado
 
@@ -48,7 +48,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [NamedItem](../resources/nameditem.md) no corpo da resposta.
+Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [NamedItem](../resources/workbooknameditem.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 Eis um exemplo de como chamar esta API.
@@ -78,7 +78,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.namedItem"
+  "@odata.type": "microsoft.graph.workbookNamedItem"
 } -->
 ```http
 HTTP/1.1 200 OK

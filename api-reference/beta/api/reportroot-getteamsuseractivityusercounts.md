@@ -3,12 +3,13 @@ title: 'reportRoot: getTeamsUserActivityUserCounts'
 description: Obtém o número de atividades do Microsoft Teams por tipo de atividade. Os tipos de atividade são o número de mensagens de chat de equipes, mensagens de chat privadas, chamadas ou reuniões.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 08b7a148f9ff19c738a3a2b5a5b8e066c8abe155
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: f8ef35813b523a28c5f6a7b455b729c144b0f072
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529996"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577169"
 ---
 # <a name="reportroot-getteamsuseractivityusercounts"></a>reportRoot: getTeamsUserActivityUserCounts
 

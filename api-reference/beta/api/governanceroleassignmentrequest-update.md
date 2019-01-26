@@ -2,12 +2,12 @@
 title: Atualizar governanceRoleAssignmentRequests
 description: Permitem que administradores atualizar suas decisões (`AdminApproved` ou `AdminDenied`) em governanceRoleAssignmentRequests que estão no status de `PendingAdminDecision`.
 localization_priority: Normal
-ms.openlocfilehash: 870cd685aade9bb722660b550ae210c6e10d1fe8
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 01178492517ae0ce1e2ed011e749e54af8e5d805
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514611"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576525"
 ---
 # <a name="update-governanceroleassignmentrequests"></a>Atualizar governanceRoleAssignmentRequests
 
@@ -42,9 +42,9 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest
 
 |Parâmetros      |Tipo                   |Obrigatório |Descrição|
 |:-------------|:----------------------|:--------|:----------|
-|Reason        |String                 |✓        |O motivo fornecido pelo administrador para a sua decisão.|
+|motivo        |String                 |✓        |O motivo fornecido pelo administrador para a sua decisão.|
 |decisão        |String                 |✓        |A decisão de administrador da solicitação de atribuição de função. O valor deve ser atualizado como `AdminApproved` ou `AdminDenied`.|
-|Schedule      |[governanceSchedule](../resources/governanceschedule.md)|        | O agendamento da solicitação de atribuição de função. Status da `AdminApproved`, é necessário.|
+|agenda      |[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|        | O agendamento da solicitação de atribuição de função. Status da `AdminApproved`, é necessário.|
 |assignmentState      |String|         | O estado da atribuição e os valores pode ser `Eligible` ou `Active`. Decisão de `AdminApproved`, é necessário. |
 ### <a name="response"></a>Resposta
 Esse método só pode ser aplicado a solicitações que estejam no status de `PendingAdminDecision`.

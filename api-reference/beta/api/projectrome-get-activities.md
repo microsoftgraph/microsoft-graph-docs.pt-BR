@@ -3,12 +3,12 @@ title: Obtenha as atividades do usuário
 description: Obtenha atividades para um determinado usuário. Diferentemente do **recente** função OData, atividades sem históricos serão retornadas. A permissão UserActivity.ReadWrite.CreatedByApp serão aplicadas a filtragem extra à resposta, para que apenas as atividades criadas pelo seu aplicativo são retornadas. A filtragem do lado do servidor pode resultar em páginas vazias se o usuário é particularmente ativo e outros aplicativos criou atividades mais recentes. Para obter as atividades do seu aplicativo, use a propriedade **nextLink** para paginar.
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 96830c2698a079018368ce907ca39d4cda0f63fe
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: acca0926e08887143c12bed6517efbc87e41d178
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516907"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575727"
 ---
 # <a name="get-user-activities"></a>Obtenha as atividades do usuário
 
@@ -88,7 +88,8 @@ Este é um exemplo de resposta.
 <!-- {
   "blockType": "ignored",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.activity)"
+  "isCollection": true,
+  "@odata.type": "microsoft.graph.activity"
 } -->
 
 ```http
@@ -99,7 +100,7 @@ Content-Type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(userActivity)",
     "@odata.nextLink": "https://graph.microsoft.com/beta/me/activities?$skiptoken=%24filter%3dlastModifiedDateTime+lt+2018-02-26T18%3a06%3a19.365Z",
     "value": [{
-        "@odata.type": "#microsoft.graph.activity",
+        "@odata.type": "microsoft.graph.activity",
         "activitySourceHost": "https://www.contoso.com",
         "createdDateTime": "2018-02-26T18:34:29.592Z",
         "lastModifiedDateTime": "2018-02-26T18:34:29.607Z",

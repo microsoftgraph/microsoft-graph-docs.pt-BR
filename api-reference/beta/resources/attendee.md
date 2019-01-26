@@ -2,12 +2,12 @@
 title: Tipo de recurso attendee
 description: Um participante do evento. Pode ser uma pessoa ou recurso, como uma sala de reunião ou equipamento, que seja configurado como um recurso no Exchange Server para o locatário.
 localization_priority: Normal
-ms.openlocfilehash: d50b6756c7d0077ec95f10988d06fa2ff81631fc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: a59868477629c36995a38f736c7087a16791cac3
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529310"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576511"
 ---
 # <a name="attendee-resource-type"></a>Tipo de recurso attendee
 
@@ -30,6 +30,7 @@ Veja a seguir uma representação JSON do recurso
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.attendeeBase",
   "optionalProperties": [
 
   ],

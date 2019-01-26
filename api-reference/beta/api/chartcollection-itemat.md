@@ -4,12 +4,12 @@ description: Obtém um gráfico com base em sua posição na coleção.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 82e5d79ee4498a5b5b4e2fc2adc0461aec13cae4
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 089977be0993f8ed5930b5a29c3b5ee880c6bc34
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521709"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575937"
 ---
 # <a name="chartcollection-itemat"></a>ChartCollection: ItemAt
 
@@ -42,11 +42,11 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|índice|number|Valor de índice do objeto a ser recuperado. Indexados com zero.|
+|índice|Int32|Valor de índice do objeto a ser recuperado. Indexados com zero.|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [Chart](../resources/chart.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` código de resposta e o objeto [WorkbookChart](../resources/chart.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 Eis um exemplo de como chamar esta API.
@@ -54,7 +54,10 @@ Eis um exemplo de como chamar esta API.
 Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
-  "name": "chartcollection_itemat"
+  "isComposable": true,
+  "name": "chartcollection_itemat",
+  "idempotent": true,
+  "@type": "requestBodyResourceFor.chartcollection_itemat"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/ItemAt
@@ -62,8 +65,7 @@ Content-type: application/json
 Content-length: 20
 
 {
-  "index": {
-  }
+  "index": 8
 }
 ```
 
@@ -72,7 +74,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chart"
+  "@odata.type": "microsoft.graph.workbookChart"
 } -->
 ```http
 HTTP/1.1 200 OK

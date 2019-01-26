@@ -4,12 +4,12 @@ description: Recupere uma lista de objetos section groups do grupo de seção es
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: df313533154862017e0cb2dc96a5a75d83ba27ca
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 6f774699398f7df3c56f09fd8469510a5d10cbe5
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522333"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576126"
 ---
 # <a name="list-sectiongroups"></a>Listar sectionGroups
 
@@ -67,7 +67,7 @@ Veja a seguir um exemplo da resposta. Observação: O objeto response mostrado a
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.sectiongroup",
+  "@odata.type": "microsoft.graph.sectionGroup",
   "isCollection": true
 } -->
 ```http

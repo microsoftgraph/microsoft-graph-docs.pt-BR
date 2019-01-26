@@ -4,12 +4,12 @@ description: Pilha de mídia hospedada pelo aplicativo.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: a2e52c1c4d48649c5763be643f8b2ededb71bce5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 2545d02301233dbe1657d94ec3cf4f953a43531b
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511083"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575769"
 ---
 # <a name="apphostedmediaconfig-resource-type"></a>tipo de recurso de appHostedMediaConfig
 
@@ -21,8 +21,8 @@ Pilha de mídia hospedada pelo aplicativo.
 
 | Propriedade                          | Tipo    | Descrição                                                     |
 | :-------------------------------- | :------ | :---------------------------------------------------------------|
-| blob()                              | String  | O blob de configuração de mídia gerado pelo agente de mídia inteligente.    |
-| removeFromDefaultAudioGroup       | Booliano | Remover o áudio do grupo de áudio padrão                       |
+| blob                              | String  | O blob de configuração de mídia gerado pelo agente de mídia inteligente.    |
+| removeFromDefaultAudioGroup       | Boolean | Remover o áudio do grupo de áudio padrão                       |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -33,6 +33,7 @@ Veja a seguir uma representação JSON do recurso.
   "optionalProperties": [
 
   ],
+  "baseType":"microsoft.graph.mediaConfig",
   "@odata.type": "microsoft.graph.appHostedMediaConfig"
 }-->
 ```json

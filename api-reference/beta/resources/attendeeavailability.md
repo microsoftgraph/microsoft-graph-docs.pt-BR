@@ -2,12 +2,12 @@
 title: Tipo de recurso attendeeAvailability
 description: O tipo e a disponibilidade dos participantes.
 localization_priority: Normal
-ms.openlocfilehash: f831a88a14fc6ec970332208389e15a5adc49377
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 37b344f110557d6e04129a2b93592009635bddcf
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508934"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576280"
 ---
 # <a name="attendeeavailability-resource-type"></a>Tipo de recurso attendeeAvailability
 
@@ -38,7 +38,7 @@ Veja a seguir uma representação JSON do recurso
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |attendee|[AttendeeBase](attendeebase.md)|O tipo de participante, ou seja, se é um recurso ou uma pessoa e, no caso de uma pessoa, se é obrigatório ou opcional.|
-|availability|String| O status de disponibilidade do participante. Os possíveis valores são: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
+|availability|freeBusyStatus| O status de disponibilidade do participante. Os valores possíveis são: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

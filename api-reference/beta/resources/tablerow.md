@@ -4,12 +4,12 @@ description: Representa uma linha em uma tabela.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: e1c9dc0f9aad61d815098b76da8620d808c2538a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: ea675724af64517fe68d6d79638056a446e53b46
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513995"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577218"
 ---
 # <a name="tablerow-resource-type"></a>Tipo de recurso TableRow
 
@@ -22,7 +22,7 @@ Representa uma linha em uma tabela.
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|Get TableRow | [TableRow](tablerow.md) |Leia as propriedades e os relacionamentos do objeto tableRow.|
+|[Get TableRow](../api/tablerow-get.md) | [TableRow](tablerow.md) |Leia as propriedades e os relacionamentos do objeto tableRow.|
 |[Update](../api/tablerow-update.md) | [TableRow](tablerow.md)  |Atualize o objeto TableRow. |
 |[Range](../api/tablerow-range.md)|[Range](range.md)|Retorna o objeto de intervalo associado a toda a linha.|
 |[Delete](../api/tablerow-delete.md)|Nenhum|Exclui a linha da tabela.|
@@ -34,10 +34,10 @@ Representa uma linha em uma tabela.
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |índice|int|Retorna o número de índice da linha na coleção de linhas da tabela. Indexados com zero. Somente leitura.|
-|values|json|Representa os valores brutos do intervalo especificado. Os dados retornados podem ser dos tipos: cadeia de caracteres, número ou booliano. Células que contêm um erro retornarão a cadeia de caracteres de erro.|
+|values|Json|Representa os valores brutos do intervalo especificado. Os dados retornados podem ser dos tipos: cadeia de caracteres, número ou booliano. Células que contêm um erro retornarão a cadeia de caracteres de erro.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 
 ## <a name="json-representation"></a>Representação JSON

@@ -3,12 +3,13 @@ title: Relatórios de atividades de grupos do Yammer
 description: Você pode obter ideias para a atividade do Yammer grupos em sua organização e ver quantos grupos do Yammer estão sendo criadas e usadas.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 05e5826a85e7d2e37af82cdf6277857746b1b922
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: 07ec3db93088dd00af1b8595e5d059fc2cede774
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514156"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576021"
 ---
 # <a name="yammer-groups-activity-reports"></a>Relatórios de atividades de grupos do Yammer
 
@@ -22,8 +23,8 @@ Você pode obter ideias para a atividade do Yammer grupos em sua organização e
 
 | Função                                 | Tipo de retorno de CSV | Tipo de retorno JSON                         | Descrição                              |
 | :--------------------------------------- | :-------------- | :--------------------------------------- | ---------------------------------------- |
-| [Obter dados de grupo](../api/reportroot-getyammergroupsactivitydetail.md) | Stream          | [yammerGroupsActivityDetail](../resources/yammergroupsactivitydetail.md) | Obtenha dados sobre as atividades de grupo do Yammer por grupo. |
-| [Obter contagens de grupo](../api/reportroot-getyammergroupsactivitygroupcounts.md) | Stream          | [yammerGroupsActivityGroupCounts](../resources/yammergroupsactivitygroupcounts.md) | Obtenha o número total de grupos que existiam e quantos incluíam atividade de conversação em grupo. |
+| [Obter dados de grupo](../api/reportroot-getyammergroupsactivitydetail.md) | Fluxo          | [yammerGroupsActivityDetail](../resources/yammergroupsactivitydetail.md) | Obtenha dados sobre as atividades de grupo do Yammer por grupo. |
+| [Obter contagens de grupo](../api/reportroot-getyammergroupsactivitygroupcounts.md) | Fluxo          | [yammerGroupsActivityGroupCounts](../resources/yammergroupsactivitygroupcounts.md) | Obtenha o número total de grupos que existiam e quantos incluíam atividade de conversação em grupo. |
 | [Obter contagens de atividade](../api/reportroot-getyammergroupsactivitycounts.md) | Fluxo          | [yammerGroupsActivityCounts](../resources/yammergroupsactivitycounts.md) | Obtenha o número de mensagens postadas, lidas e curtidas em grupos do Yammer. |
 <!--
 {

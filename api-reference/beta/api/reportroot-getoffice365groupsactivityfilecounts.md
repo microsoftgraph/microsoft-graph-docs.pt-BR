@@ -3,12 +3,13 @@ title: 'reportRoot: getOffice365GroupsActivityFileCounts'
 description: Obtenha o número total de arquivos e quantos deles estavam ativos em todos os sites do grupo associados a um Grupo do Office 365.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: ef1b8fc83b6d94f0be9b3842917c3fe446e0e2d9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: 0c1fa1bf6f42b7fb24d1a4a7db7c50ad4431e8b7
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528106"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576350"
 ---
 # <a name="reportroot-getoffice365groupsactivityfilecounts"></a>reportRoot: getOffice365GroupsActivityFileCounts
 

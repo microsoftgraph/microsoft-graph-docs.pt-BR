@@ -4,12 +4,12 @@ description: Obtenha uma lista de membros do grupo. Um grupo pode ter usuários,
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: e1dc5c2b89305373b22b6ef87cfaee25d6669750
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 6ed3d4e4a927181f6bf8ea2c90edf337b0f8f32d
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523621"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576294"
 ---
 # <a name="list-group-transitive-members"></a>Membros do grupo de lista transitivos
 
@@ -85,8 +85,9 @@ Content-type: application/json
 
 {
   "value": [
-    "@odata.type": "#microsoft.graph.user",
     {
+    "@odata.type": "#microsoft.graph.user",
+    
       "businessPhones": [
         "businessPhones-value"
       ],

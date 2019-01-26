@@ -2,12 +2,12 @@
 title: tipo de recurso de política
 description: 'Representa uma política do Azure AD. Políticas são regras personalizadas que podem ser aplicadas em toda a organização atribuídos a eles, entidades de serviço, grupos ou aplicativos. Atualmente, somente um tipo de política está disponível:'
 localization_priority: Normal
-ms.openlocfilehash: 118bac238d58734b5cbdeb1a4f346aedf680de6c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: bd946da13fc36925e284ad2af29585b37d0a9a3a
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518783"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576196"
 ---
 # <a name="policy-resource-type"></a>tipo de recurso de política
 
@@ -33,9 +33,9 @@ Esta diretiva é descrita em maiores detalhes a seguir.
 ### <a name="common-properties"></a>Propriedades comuns
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|Definição|String|A versão de cadeia de caracteres da diretiva específica. Veja a seguir. Obrigatório.|
+|definição|String collection|A versão de cadeia de caracteres da diretiva específica. Veja a seguir. Obrigatório.|
 |displayName|String|Um nome personalizado para a política. Obrigatório.|
-|IsOrganizationDefault|Booliano|Se definido como verdadeiro, ativa essa diretiva. Pode haver várias políticas para o mesmo tipo de política, mas apenas um pode ser ativado como o padrão da organização. Opcional, valor padrão é false.|
+|IsOrganizationDefault|Boolean|Se definido como verdadeiro, ativa essa diretiva. Pode haver várias políticas para o mesmo tipo de política, mas apenas um pode ser ativado como o padrão da organização. Opcional, valor padrão é false.|
 |type|String|Especifica o tipo de política. No momento deve ser "TokenLifetimePolicy". Obrigatório.|
 
 #### <a name="common-relationships"></a>Relações comuns
@@ -70,6 +70,13 @@ As propriedades abaixo o objeto JSON que representa uma política de vida útil 
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.policy"
+}-->
 
 ```json
 {

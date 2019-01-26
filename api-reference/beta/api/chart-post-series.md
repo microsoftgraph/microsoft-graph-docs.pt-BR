@@ -4,12 +4,12 @@ description: Use essa API para criar novas ChartSeries.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 89022d8468f842753a4b74ace2f802f4ee23ad09
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 901a6ff0d8305f0ef8b7eb92aab0d0eea6c40e6e
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516081"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576700"
 ---
 # <a name="create-chartseries"></a>Criar ChartSeries
 
@@ -60,13 +60,13 @@ Content-length: 26
   "name": "name-value"
 }
 ```
-No corpo da solicitação, forneça uma representação JSON do objeto [ChartSeries](../resources/chartseries.md).
+No corpo da solicitação, fornece uma representação JSON do objeto [chartSeries](../resources/chartseries.md) .
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartSeries"
+  "@odata.type": "microsoft.graph.workbookChartSeries"
 } -->
 ```http
 HTTP/1.1 201 Created

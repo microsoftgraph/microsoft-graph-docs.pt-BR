@@ -4,12 +4,12 @@ description: Abrange as opções de formatação dos elementos de linha.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: b4409eb18dab41d43adc038b702a65fa8d63e4de
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 6bede2e3e8eeb44dbac67832621a2b1586c6b319
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517929"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577050"
 ---
 # <a name="chartlineformat-resource-type"></a>Tipo de recurso ChartLineFormat
 
@@ -22,8 +22,8 @@ Abrange as opções de formatação dos elementos de linha.
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|Get ChartLineFormat | ChartLineFormat |Leia as propriedades e os relacionamentos do objeto chartLineFormat.|
-|[Update](../api/chartlineformat-update.md) | ChartLineFormat |Atualize o objeto ChartLineFormat. |
+|[Get ChartLineFormat](../api/chartlineformat-get.md) | [WorkbookChartLineFormat](chartlineformat.md) |Leia as propriedades e os relacionamentos do objeto chartLineFormat.|
+|[Update](../api/chartlineformat-update.md) | [WorkbookChartLineFormat](chartlineformat.md) |Atualize o objeto ChartLineFormat. |
 |[Clear](../api/chartlineformat-clear.md)|Nenhum|Limpe a formatação da linha de um elemento do gráfico.|
 
 ## <a name="properties"></a>Propriedades
@@ -32,19 +32,18 @@ Abrange as opções de formatação dos elementos de linha.
 |color|string|Código de cor HTML que representa a cor das linhas no gráfico.|
 
 ## <a name="relationships"></a>Relacionamentos
-Nenhuma
+Nenhum
 
 
 ## <a name="json-representation"></a>Representação JSON
 
 Veja a seguir uma representação JSON do recurso.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.chartLineFormat"
+  "baseType": "microsoft.graph.entity",
+  "optionalProperties": [],
+  "@odata.type": "microsoft.graph.workbookChartLineFormat"
 }-->
 
 ```json

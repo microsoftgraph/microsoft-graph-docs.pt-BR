@@ -4,12 +4,12 @@ description: Recupere as propriedades e relacionamentos de um objeto **riskyUser
 localization_priority: Normal
 author: cloudhandler
 ms.prod: security
-ms.openlocfilehash: 5c0c0557a5cd84312ef9d6381d8cf3018ab8ce7d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 0987a45aafdb31cad17728851ce1ac1ddb066aa0
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519315"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576371"
 ---
 # <a name="list-riskyusers"></a>Lista riskyUsers
 
@@ -24,9 +24,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | IdentityRiskyUser.Read.All    |
+|Delegado (conta corporativa ou de estudante) | IdentityriskyUser.Read.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | IdentityRiskyUser.Read.All |
+|Aplicativo | IdentityriskyUser.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -63,18 +63,20 @@ Veja a seguir um exemplo da resposta.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.riskyUsers"
+  "@odata.type": "microsoft.graph.riskyUser"
 } -->
 ```http
 HTTP/1.1 200 OK
+Content-type: application/json
+
 {
   "id": "c2b6c2b9-dddc-acd0-2b39-d519d803dbc3",
   "riskLastUpdatedDateTime": "2016-01-29T20:03:57.7872426Z",
-  "isGuest": "true",
-  "isDeleted": "true",
+  "isGuest": true,
+  "isDeleted": true,
   "riskDetail": "adminConfirmedSigninCompromised",
   "riskLevel": "high",
-  "riskState": "atRisk"
+  "riskState": "atRisk",
   "userDisplayName": "Jon Doe",
   "userPrincipalName": "jon@contoso.com"
 }
@@ -102,10 +104,12 @@ GET https://graph.microsoft.com/beta/riskyUsers?$filter=riskLevel eq microsoft.g
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.riskyUsers"
+  "@odata.type": "microsoft.graph.riskyUser"
 } -->
 ```http
 HTTP/1.1 200 OK
+Content-type: application/json
+
 {
       "id": "c2b6c2b9-dddc-acd0-2b39-d519d803dbc3",
       "riskLastUpdatedDateTime": "2018-09-22T00:04:49.1195968Z",
@@ -115,9 +119,9 @@ HTTP/1.1 200 OK
       "riskLevel": "medium",
       "riskState": "atRisk",
       "userDisplayName": "Jon Doe",
-      "userPrincipalName": "jon@contoso.com",
-      }
-    }
+      "userPrincipalName": "jon@contoso.com"
+      
+}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

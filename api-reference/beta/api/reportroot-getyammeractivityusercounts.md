@@ -3,12 +3,13 @@ title: 'reportRoot: getYammerActivityUserCounts'
 description: Obtenha as tendências do número de usuários exclusivos que postaram, leram e curtiram mensagens do Yammer.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: f972aade6622876af633fca5c5b1a660ec9fd9fa
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: fa2648990bacd69e8d4597d33c7b10c5a388bba2
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518160"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576805"
 ---
 # <a name="reportroot-getyammeractivityusercounts"></a>reportRoot: getYammerActivityUserCounts
 

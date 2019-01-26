@@ -2,12 +2,12 @@
 title: Atualizar privilegedRoleSettings
 description: Atualize as configurações de função para a configuração de determinada função. Um objeto privilegedRoleSettings será retornado.
 localization_priority: Normal
-ms.openlocfilehash: 09464c878c76ed557f30d0eac21e0572fae05062
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 7b49d228372e2fa122f9461706f782c60cfea379
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527651"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577267"
 ---
 # <a name="update-privilegedrolesettings"></a>Atualizar privilegedRoleSettings
 
@@ -44,17 +44,17 @@ A tabela a seguir lista as propriedades que você pode fornecer ao atualizar uma
 
 |Propriedade|Tipo|Descrição|
 |:---------------|:--------|:----------|
-|ElevationDuration|duration|A duração quando a função for ativada. Obrigatório.|
-|id|string|O identificador exclusivo para as configurações de função. Somente leitura. Obrigatório.|
+|elevationDuration |Cadeia de caracteres (timestamp) |A duração quando a função for ativada. Obrigatório.|
+|id| cadeia de caracteres (identificador) |O identificador exclusivo para as configurações de função. Somente leitura. Obrigatório.|
 |isMfaOnElevationConfigurable|booliano|**true** se mfaOnElevation é configurável. **false** se mfaOnElevation não é configurável. Obrigatório.|
-|lastGlobalAdmin|Booliano|Apenas para uso interno.|
-|maxElavationDuration|duration|Duração máxima para a função ativada. Obrigatório.|
-|mfaOnElevation|Booliano|**true** se MFA é necessária para ativar a função. **false** se MFA não é necessário para ativar a função. Obrigatório.|
-|minElevationDuration|duration|Duração mínima para a função ativada. Obrigatório.|
-|notificationToUserOnElevation|Booliano|**True** se enviar notificação ao usuário final quando a função é ativada. **False** se não enviar notificação quando a função é ativada. Obrigatório.|
-|ticketingInfoOnElevation|Booliano|**true** se as informações de tickets são necessária quando ativar a função. **false** se as informações de tickets não são necessária quando ativar a função. Obrigatório.|
-|approvalOnElevation|Booliano|**true** se a aprovação é necessária quando ativar a função. **false** se a aprovação não é necessária quando ativar a função. Obrigatório.|
-|approverIds|array|Lista de IDs de aprovação, se a aprovação é necessária para a ativação.|
+|lastGlobalAdmin| Boolean |Apenas para uso interno.|
+|maxElavationDuration| Cadeia de caracteres (timestamp)|Duração máxima para a função ativada. Obrigatório.|
+|mfaOnElevation| Boolean |**true** se MFA é necessária para ativar a função. **false** se MFA não é necessário para ativar a função. Obrigatório.|
+|minElevationDuration| Cadeia de caracteres (timestamp) |Duração mínima para a função ativada. Obrigatório.|
+|notificationToUserOnElevation|Boolean|**True** se enviar notificação ao usuário final quando a função é ativada. **False** se não enviar notificação quando a função é ativada. Obrigatório.|
+|ticketingInfoOnElevation|Boolean|**true** se as informações de tickets são necessária quando ativar a função. **false** se as informações de tickets não são necessária quando ativar a função. Obrigatório.|
+|approvalOnElevation|Boolean|**true** se a aprovação é necessária quando ativar a função. **false** se a aprovação não é necessária quando ativar a função. Obrigatório.|
+|approverIds| Coleção de cadeia de caracteres (identificador)|Lista de IDs de aprovação, se a aprovação é necessária para a ativação.|
 
 ## <a name="response"></a>Resposta
 

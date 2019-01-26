@@ -5,26 +5,26 @@ ms.date: 09/01/2018
 title: SitePageData
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 78661f5ce6336f4430297d8969ff8cd82b761c9a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 8f87ff4969cb4ad254813a01415628d8a8dbec8f
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509774"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576483"
 ---
 # <a name="sitepagedata-resource"></a>recurso de sitePageData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O recurso de **sitePageData** representa as propriedades de uma [Web Part][]. Como essas propriedades variam pela web part, esse é um OpenType sem propriedades fixo.
+O recurso de **sitePageData** representa as propriedades de uma [Web Part](webpart.md). Como essas propriedades variam pela web part, esse é um OpenType sem propriedades fixo.
 
-[Web Part]: webpart.md
+[webPart]: webpart.md
 
 ## <a name="json-representation"></a>Representação JSON
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [  ],
+  "optionalProperties": [  ],  
   "@odata.type": "microsoft.graph.sitePageData"
 }-->
 

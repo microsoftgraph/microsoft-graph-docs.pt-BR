@@ -4,12 +4,12 @@ description: Uma pasta que contém contatos.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 599f1765b6305d2dc4d482ec035ee4b24eb5183a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: a4fcb5152a3d7cb5f26214cf2b0a1e4a31dc1ffb
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523796"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575867"
 ---
 # <a name="contactfolder-resource-type"></a>tipo de recurso contactFolder
 
@@ -27,7 +27,7 @@ Esse recurso suporta a utilização da [consulta delta](/graph/delta-query-overv
 |[Obter contactFolder](../api/contactfolder-get.md) | [contactFolder](contactfolder.md) |Obtenha uma pasta de contatos usando a respectiva ID.|
 |[Update](../api/contactfolder-update.md) | [contactFolder](contactfolder.md) |Atualize o objeto contactFolder. |
 |[Delete](../api/contactfolder-delete.md) | Nenhuma |Exclua um objeto contactFolder. |
-|[Listar childFolders](../api/contactfolder-list-childfolders.md) |Coleção [ContactFolder](contactfolder.md)| Obtenha uma coleção de pastas filho sob a pasta de contatos especificada.|
+|[Listar childFolders](../api/contactfolder-list-childfolders.md) |coleção [contactFolder](contactfolder.md)| Obtenha uma coleção de pastas filho sob a pasta de contatos especificada.|
 |[Criar contactFolder filho](../api/contactfolder-post-childfolders.md) |[contactFolder](contactfolder.md)| Crie uma nova contactFolder como um filho de uma pasta especificada.|
 |[delta](../api/contact-delta.md)|Coleção [Contact](contact.md)| Obtenha um conjunto de pastas de contatos que foram adicionadas, excluídas ou removidas da caixa de correio do usuário.|
 |[Listar contatos na pasta](../api/contactfolder-list-contacts.md) |Coleção [Contact](contact.md)| Obtém uma coleção de contatos da pasta de contatos padrão do usuário conectado (`.../me/contacts`), ou da pasta contato especificada.|
@@ -46,13 +46,13 @@ Esse recurso suporta a utilização da [consulta delta](/graph/delta-query-overv
 |parentFolderId|String|A ID da pasta pai da pasta.|
 |wellKnownName|string|O nome da pasta se a pasta for uma pasta reconhecida. No momento `contacts` é a única pasta Contatos reconhecidas.|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |childFolders|Coleção [ContactFolder](contactfolder.md)|A coleção de pastas filho na pasta. Propriedade de navegação. Somente leitura. Anulável.|
 |contatos|Coleção [Contact](contact.md)|Os contatos na pasta. Propriedade de navegação. Somente leitura. Anulável.|
-|multiValueExtendedProperties|Coleção [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de vários valores definidas para a contactFolder. Somente leitura. Anulável.|
-|singleValueExtendedProperties|Coleção [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de vários valores definidas para a contactFolder. Somente leitura. Anulável.|
+|multiValueLegacyExtendedProperty|Coleção [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de vários valores definidas para a contactFolder. Somente leitura. Anulável.|
+|singleValueLegacyExtendedProperty|Coleção [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de vários valores definidas para a contactFolder. Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -63,8 +63,8 @@ Veja a seguir uma representação JSON do recurso
   "optionalProperties": [
     "childFolders",
     "contacts",
-    "multiValueExtendedProperties",
-    "singleValueExtendedProperties"
+    "multiValueLegacyExtendedProperty",
+    "singleValueLegacyExtendedProperty"
   ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.contactFolder"

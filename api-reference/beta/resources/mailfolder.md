@@ -4,12 +4,12 @@ description: Uma pasta de email na caixa de correio de um usuário, como Caixa d
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 1cd48c866ea6384aa18631732065380e898b8bf7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 25a491a23840de009386d7fbb2e9ee8d0fef7b4e
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513085"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576728"
 ---
 # <a name="mailfolder-resource-type"></a>tipo de recurso mailFolder
 
@@ -34,15 +34,15 @@ Nomes conhecidos funcionam independentemente da localidade da caixa de correio d
 |:-----------------------|:------------|
 | arquivo morto | As mensagens de pasta de arquivo morto são enviadas ao usar o recurso de arquivamento One_Click nos clientes do Outlook com suporte. **Observação:** isso não é o mesmo que o recurso de caixa de correio de arquivamento do Exchange online. |
 | desorganização | As mensagens de baixa prioridade de pasta desorganização são movidas para ao usar o recurso desorganização. |
-| Conflicts | A pasta que contém itens conflitantes na caixa de correio. |
+| conflitos | A pasta que contém itens conflitantes na caixa de correio. |
 | conversationhistory | A pasta onde o Skype salva conversas de mensagens Instantâneas (se Skype estiver configurada para fazê-lo). |
 | deleteditems | Os itens da pasta são movidos para quando eles são excluídos. |
 | rascunhos | A pasta que contém as mensagens não enviadas. |
-| Caixa de Entrada | A pasta Caixa de Entrada. |
-| junkemail | A pasta Lixo Eletrônico. |
+| caixa de entrada | A pasta de caixa de entrada. |
+| junkemail | A pasta de lixo eletrônico. |
 | localfailures | A pasta que contém itens que existem no cliente local, mas não puderam ser carregados no servidor. |
 | msgfolderroot | A pasta "Superior do armazenamento de informações". Essa pasta é a pasta pai para as pastas que são exibidos em clientes de email normal, como a caixa de entrada. |
-| caixa de saída | A pasta Caixa de Saída. |
+| caixa de saída | A pasta caixa de saída. |
 | recoverableitemsdeletions | A pasta que contém itens excluída: excluído da pasta Itens excluídos ou por pressionar shift + delete no Outlook. Essa pasta não é visível em qualquer cliente de email do Outlook, mas os usuários finais podem interagir com ele por meio do recurso de **Recuperar itens excluídos do servidor** do Outlook ou do Outlook na web. |
 | agendado | A pasta que contém as mensagens que são agendadas reaparecem na caixa de entrada usando o recurso de agendamento no Outlook para iOS. |
 | SearchFolders | A pasta pai para todas as pastas de pesquisa definido na caixa de correio do usuário. |
@@ -93,15 +93,15 @@ https://outlook.office.com/api/beta/me/folders/inbox/messages?$count=true&$filte
 
 Pastas de email no Outlook podem conter mais de um tipo de itens, por exemplo, a caixa de entrada pode conter itens que são diferentes dos itens de email da solicitação de reunião. `TotalItemCount`e `UnreadItemCount` incluir itens em uma pasta de email, independentemente de seus tipos de item.
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 
 | Relação | Tipo | Descrição |
 |:-------------|:-----|:------------|
 |childFolders|Coleção [MailFolder](mailfolder.md)|A coleção de pastas filho na mailFolder.|
 |messageRules | Coleção [messageRule](messagerule.md) | A coleção de regras que se aplicam à pasta da Caixa de Entrada do usuário. |
 |mensagens|Coleção [Message](message.md)|A coleção de mensagens na mailFolder.|
-|multiValueExtendedProperties|Coleção [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de vários valores definidas para a mailFolder. Somente leitura. Anulável.|
-|singleValueExtendedProperties|Coleção [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de vários valores definidas para a mailFolder. Somente leitura. Anulável.|
+|multiValueLegacyExtendedProperty|Coleção [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de vários valores definidas para a mailFolder. Somente leitura. Anulável.|
+|singleValueLegacyExtendedProperty|Coleção [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de vários valores definidas para a mailFolder. Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -113,8 +113,8 @@ Veja a seguir uma representação JSON do recurso.
     "childFolders",
     "messageRules",
     "messages",
-    "multiValueExtendedProperties",
-    "singleValueExtendedProperties"
+    "multiValueLegacyExtendedProperty",
+    "singleValueLegacyExtendedProperty"
   ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.mailFolder"
@@ -132,8 +132,8 @@ Veja a seguir uma representação JSON do recurso.
   "childFolders": [ { "@odata.type": "microsoft.graph.mailFolder" } ],
   "messageRules": [ { "@odata.type": "microsoft.graph.messageRule" } ],
   "messages": [ { "@odata.type": "microsoft.graph.message" } ],
-  "multiValueExtendedProperties": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }],
-  "singleValueExtendedProperties": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }]
+  "multiValueLegacyExtendedProperty": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }],
+  "singleValueLegacyExtendedProperty": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }]
 }
 ```
 

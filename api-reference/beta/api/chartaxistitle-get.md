@@ -4,12 +4,12 @@ description: Recupera as propriedades e os relacionamentos do objeto chartaxisti
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 1912cc6ea38eef71d8ecade964b976725b91b5d9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 6ce8b7d9518df01ec04b1191a9784ea015e83c7d
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515010"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576140"
 ---
 # <a name="get-chartaxistitle"></a>Obter ChartAxisTitle
 
@@ -46,7 +46,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [ChartAxisTitle](../resources/chartaxistitle.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [WorkbookChartAxisTitle](../resources/chartaxistitle.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
@@ -62,7 +62,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartAxisTitle"
+  "@odata.type": "microsoft.graph.workbookChartAxisTitle"
 } -->
 ```http
 HTTP/1.1 200 OK

@@ -3,12 +3,13 @@ title: 'reportRoot: getMailboxUsageQuotaStatusMailboxCounts'
 description: Obtenha a contagem de caixas de correio de usuário em cada categoria de cota.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 129e0cae0d7b808aed2c0741f11d5ee1f37cfee2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: 2ed01152d4670b0bcb1ebccab1e12302c5bb19fc
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513148"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577036"
 ---
 # <a name="reportroot-getmailboxusagequotastatusmailboxcounts"></a>reportRoot: getMailboxUsageQuotaStatusMailboxCounts
 

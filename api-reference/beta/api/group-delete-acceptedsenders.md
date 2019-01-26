@@ -4,12 +4,12 @@ description: 'Remova um usuário ou grupo da lista acceptedSenders. '
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: a3406c028990b7b5989036f4173cf86f257b4f03
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: a01c51487a2ffde821c2a4fd04c52363f7f82aa5
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520687"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575531"
 ---
 # <a name="remove-acceptedsender"></a>Remover acceptedSender
 
@@ -53,8 +53,6 @@ Estes são alguns exemplos de solicitação.
 }-->
 ```http
 DELETE https://graph.microsoft.com/beta/groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/beta/users/{id}
-
-DELETE https://graph.microsoft.com/beta/groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/beta/groups/{id}
 ```
 
 #### <a name="response"></a>Resposta

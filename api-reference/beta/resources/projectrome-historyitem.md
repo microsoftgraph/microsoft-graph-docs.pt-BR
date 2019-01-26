@@ -3,12 +3,12 @@ title: tipo de recurso de historyItem
 description: Representa um item de histórico de uma atividade em um aplicativo. As atividades do usuário representam um único destino dentro de seu aplicativo - por exemplo, um programa de TV, um documento ou uma campanha atual em um jogo de vídeo. Quando um usuário emprega com que a atividade, o compromisso é capturado como um item de histórico que indica a hora de início e término para a atividade. À medida que o usuário emprega novamente com que a atividade ao longo do tempo, vários itens de histórico são registrados para atividade de um único usuário.
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 640b2e777337182b95572ba086f1caf3459ef57e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 582cfe71ab85602efc087d5e39005d5a9763394d
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514695"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576301"
 ---
 # <a name="historyitem-resource-type"></a>tipo de recurso de historyItem
 
@@ -29,8 +29,8 @@ Quando um aplicativo cria uma sessão, um objeto **historyItem** deve ser adicio
 
 |Nome | Tipo | Descrição|
 |:----|:-----|:-----------|
-|status | EnumType | Definido pelo servidor. Um código de status usado para identificar objetos válidos. Valores: ativo, atualizado, excluídos, ignorado.|
-|userTimezone | Cadeia de caracteres | Opcional. O fuso horário no qual o dispositivo do usuário usado para gerar a atividade foi localizado no momento da criação de atividade. Valores fornecidos como Olson IDs para suportar a representação de plataforma cruzada.|
+|status | cadeia de caracteres de enum | Definido pelo servidor. Um código de status usado para identificar objetos válidos. Valores: ativo, atualizado, excluídos, ignorado.|
+|userTimezone | String | Opcional. O fuso horário no qual o dispositivo do usuário usado para gerar a atividade foi localizado no momento da criação de atividade. Valores fornecidos como Olson IDs para suportar a representação de plataforma cruzada.|
 |createdDateTime | DateTimeOffset | Definido pelo servidor. Data e hora em UTC quando o objeto foi criado no servidor.|
 |lastModifiedDateTime | DateTimeOffset | Definido pelo servidor. Data e hora em UTC quando o objeto foi modificado no servidor.|
 |id | String | Obrigatório. GUID do conjunto de cliente para o objeto **historyItem** .|
@@ -39,7 +39,7 @@ Quando um aplicativo cria uma sessão, um objeto **historyItem** deve ser adicio
 |expirationDateTime | DateTimeOffset | Opcional. DateTime UTC quando os **historyItem** passará rígido-delete. Pode ser definido pelo cliente.|
 |activeDurationSeconds | int | Opcional. A duração de participação de usuário ativo. Se não fornecido, isso é calculado do **startedDateTime** e **lastActiveDateTime**.|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 
 |Relação | Tipo | Descrição|
 |:------------|:-----|:-----------|
@@ -61,7 +61,7 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-    "status": "String (EnumType)",
+    "status": "enum-string",
     "createdDateTime": "DateTimeOffset",
     "lastModifiedDateTime": "DateTimeOffset",
     "id": "String",

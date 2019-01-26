@@ -3,12 +3,13 @@ title: 'reportRoot: getSkypeForBusinessOrganizerActivityUserCounts'
 description: Obtenha tendências de uso do número de usuários únicos e o tipo de sessões de conferência realizadas e organizadas pelos usuários em sua organização. Os tipos de sessões de conferência incluem mensagens instantâneas, áudio/vídeo, compartilhamento de aplicativos, Web, dial-in/out por terceiros, dial-in/out pela Microsoft.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 3695704bc87b83fee18147448ddd2b1e565b758e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: af6d72466e58e7b56f3a667ce282d220a638c9f0
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518538"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576756"
 ---
 # <a name="reportroot-getskypeforbusinessorganizeractivityusercounts"></a>reportRoot: getSkypeForBusinessOrganizerActivityUserCounts
 

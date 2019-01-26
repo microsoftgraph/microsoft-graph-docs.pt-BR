@@ -4,12 +4,12 @@ description: 'Uma mensagem que representa uma solicitação, cancelamento ou res
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 926a9adc1a66ca912aff9a5ccea8db189eb4dae1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 669f1a81f76decf8103b7d6e6acba2fb93c458dc
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514016"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575741"
 ---
 # <a name="eventmessage-resource-type"></a>Tipo de recurso eventMessage
 
@@ -21,7 +21,7 @@ A entidade **eventMessage** é derivada da [mensagem](message.md)e, [eventMessag
 
 Quando um organizador ou um aplicativo envia uma solicitação de reunião, ela chega à Caixa de Entrada de um participante como uma instância **eventMessage** com o **meetingMessageType** de **meetingRequest**. Além disso, o Outlook cria automaticamente uma instância **event** no calendário do participante, com a propriedade **showAs** como **tentative**. 
 
-Para obter as propriedades do evento associado na caixa de correio de participante, o aplicativo pode usar a propriedade de navegação **event** de **eventMessage**, conforme mostrado neste [exemplo de obter mensagem de evento](../api/eventmessage-get.md#request-2). O aplicativo também pode responder ao evento em nome do participante programaticamente, ao [aceitar](../api/event-accept.md), [aceitar provisoriamente](../api/event-tentativelyaccept.md) ou [recusar](../api/event-decline.md) o evento.
+Para obter as propriedades do evento associado na caixa de correio de participante, o aplicativo pode usar a propriedade de navegação **event** de **eventMessage**, conforme mostrado neste [exemplo de obter mensagem de evento](../api/eventmessage-get.md#request-2). O aplicativo também pode responder ao evento em nome do participante programaticamente, [Aceitar](../api/event-accept.md), [Aceitar provisoriamente](../api/event-tentativelyaccept.md)ou [recusando](../api/event-decline.md) o evento.
 
 Além de uma solicitação de reunião, uma instância de **eventMessage** pode ser encontrada na pasta de caixa de entrada de um participante como resultado de um organizador de evento o cancelamento de uma reunião ou na caixa de entrada do organizador como resultado de um participante responder à solicitação de reunião. Um aplicativo pode atuar em mensagens de evento da mesma maneira que atua em mensagens com poucas diferenças.
 
@@ -35,8 +35,8 @@ Veja a seguir uma representação JSON do recurso
     "attachments",
     "event",
     "extensions",
-    "multiValueExtendedProperties",
-    "singleValueExtendedProperties"
+    "multiValueLegacyExtendedProperty",
+    "singleValueLegacyExtendedProperty"
   ],
   "@odata.type": "microsoft.graph.eventMessage"
 }-->
@@ -69,10 +69,10 @@ Veja a seguir uma representação JSON do recurso
   "isReadReceiptRequested": true,
   "lastModifiedDateTime": "DateTimeOffset",
   "location": {"@odata.type": "microsoft.graph.location"},
-  "meetingMessageType": {"@odata.type": "microsoft.graph.meetingMessageType"},
+  "meetingMessageType": "none | meetingRequest | meetingCancelled | meetingAccepted | meetingTenativelyAccepted | meetingDeclined",
   "parentFolderId": "string",
   "receivedDateTime": "DateTimeOffset",
-  "recurrence": {"@odata.type": "microsoft.graph.patternedrecurrence"},
+  "recurrence": {"@odata.type": "microsoft.graph.patternedRecurrence"},
   "replyTo": [{"@odata.type": "microsoft.graph.recipient"}],
   "sender": {"@odata.type": "microsoft.graph.recipient"},
   "sentDateTime": "DateTimeOffset",
@@ -97,27 +97,27 @@ Veja a seguir uma representação JSON do recurso
 |categories|String collection|As categorias associadas à mensagem.|
 |ccRecipients|Coleção [recipient](recipient.md)|Os destinatários Cc: da mensagem.|
 |changeKey|String|A versão da mensagem.|
-|conversationId|Cadeia de caracteres|A ID da conversa à qual o email pertence.|
-|ConversationIndex|Binária|O índice da conversa que pertence o email.|
+|conversationId|String|A ID da conversa à qual o email pertence.|
+|conversationIndex|Binária|O índice da conversa que pertence o email.|
 |createdDateTime|DateTimeOffset|A data e a hora em que a mensagem foi criada.|
 |endDateTime|[dateTimeTimeZone](datetimetimezone.md)|A hora de término da reunião solicitada.|
 |sinalizar|[followUpFlag](followupflag.md)|O valor do sinalizador que indica o status, a data de início, a data de conclusão ou a data de finalização da mensagem.|
 |from|[recipient](recipient.md)|O proprietário da caixa de correio e o remetente da mensagem.|
-|hasAttachments|Booliano|Indica se a mensagem tem anexos.|
+|hasAttachments|Boolean|Indica se a mensagem tem anexos.|
 |id|String||
 |importance|String| A importância da mensagem: `low`, `normal`, `high`.|
 |inferenceClassification|String| Os valores possíveis são: `focused` e `other`.|
 |internetMessageHeaders | Coleção [internetMessageHeader](internetmessageheader.md) | A coleção de cabeçalhos da mensagem, definida por [RFC5322](https://www.ietf.org/rfc/rfc5322.txt), que fornece detalhes do caminho de rede adotado por uma mensagem do remetente para o destinatário. Somente leitura.|
 |internetMessageId |String |A ID da mensagem no formato especificado pelo [RFC5322](https://www.ietf.org/rfc/rfc5322.txt). |
-|isAllDay |Booliano|Indica se o evento durar o dia inteiro. Ajustar essa propriedade requer ajustando as propriedades **startDateTime** e **endDateTime** do evento também.|
-|isDeliveryReceiptRequested|Booliano|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
-|isDraft|Booliano|Indica se a mensagem é um rascunho. Uma mensagem é um rascunho quando ela ainda não foi enviada.|
-|IsOutOfDate|Booliano|Indica se esta solicitação de reunião foi feita desatualizada por uma solicitação mais recente.|
+|isAllDay |Boolean|Indica se o evento durar o dia inteiro. Ajustar essa propriedade requer ajustando as propriedades **startDateTime** e **endDateTime** do evento também.|
+|isDeliveryReceiptRequested|Boolean|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
+|isDraft|Boolean|Indica se a mensagem é um rascunho. Uma mensagem é um rascunho quando ela ainda não foi enviada.|
+|isOutOfDate|Boolean|Indica se esta solicitação de reunião foi feita desatualizada por uma solicitação mais recente.|
 |isRead|Boolean|Indica se a mensagem foi lida.|
 |isReadReceiptRequested|Boolean|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a mensagem foi alterada pela última vez.|
 |location|[location](location.md)|O local da reunião solicitada.|
-|meetingMessageType|String| O tipo de mensagem de evento: `none`, `meetingRequest`, `meetingCancelled`, `meetingAccepted`, `meetingTenativelyAccepted`, `meetingDeclined`.|
+|meetingMessageType| cadeia de caracteres de enum | O tipo de mensagem de evento: `none`, `meetingRequest`, `meetingCancelled`, `meetingAccepted`, `meetingTenativelyAccepted`, `meetingDeclined`.|
 |parentFolderId|String|O identificador exclusivo para a mailFolder pai da mensagem.|
 |receivedDateTime|DateTimeOffset|A data e a hora em que a mensagem foi recebida.|
 |recurrence|[patternedRecurrence](patternedrecurrence.md)|O padrão de recorrência da reunião solicitada.|
@@ -125,12 +125,12 @@ Veja a seguir uma representação JSON do recurso
 |sender|[recipient](recipient.md)|A conta que é realmente usada para gerar a mensagem.|
 |sentDateTime|DateTimeOffset|A data e a hora em que a mensagem foi enviada.|
 |startDateTime|[dateTimeTimeZone](datetimetimezone.md)|A hora de início da reunião solicitada.|
-|subject|Cadeia de caracteres|O assunto da mensagem.|
+|subject|String|O assunto da mensagem.|
 |toRecipients|Coleção [recipient](recipient.md)|Os destinatários Para: da mensagem.|
 |type|String|O tipo de reunião solicitada: `singleInstance`, `occurence`, `exception`, `seriesMaster`.|
 |uniqueBody|[itemBody](itembody.md)|A parte do corpo da mensagem que é exclusiva para a mensagem atual.|
 |UnsubscribeData|String|As entradas válidas analisada a partir do cabeçalho de cancelar a lista.  São os dados para o comando mail no cabeçalho cancelar a assinatura lista se a propriedade UnsubscribeEnabled for true.|
-|UnsubscribeEnabled|Booliano|Indica se a mensagem está habilitada para o cancelamento da assinatura.  Seu valueTrue se a lista-Cancelar cabeçalho está em conformidade com a rfc-2369.|
+|UnsubscribeEnabled|Boolean|Indica se a mensagem está habilitada para o cancelamento da assinatura.  Seu valueTrue se a lista-Cancelar cabeçalho está em conformidade com a rfc-2369.|
 |webLink|String|A URL para abrir a mensagem no Outlook Web App.<br><br>Você pode acrescentar um argumento ispopout ao final da URL para alterar como a mensagem é exibida. Se ispopout não houver presente ou estiver definido como 1, a mensagem será mostrada em uma janela pop-up. Se ispopout estiver definido como 0, o navegador mostrará a mensagem no painel de revisão do Outlook Web App.<br><br>A mensagem será aberta no navegador se você estiver conectado à sua caixa de correio por meio do Outlook Web App. Você será solicitado a fazer logon se ainda não estiver conectado no navegador.<br><br>Essa URL pode ser acessada de um iFrame.|
 
 ## <a name="relationships"></a>Relações
@@ -139,8 +139,8 @@ Veja a seguir uma representação JSON do recurso
 |attachments|Coleção [attachment](attachment.md)|A coleção de [fileAttachment](fileattachment.md), [itemAttachment](itemattachment.md)e [referenceAttachment](referenceattachment.md) anexos da mensagem. Somente leitura. Anulável.|
 |event|[event](event.md)| O evento associado à mensagem de evento. A pressuposição dos participantes ou recursos da sala é que o Atendedor de Calendário esteja definido para atualizar automaticamente o calendário com um evento quando mensagens de evento de solicitação de reunião chegarem. Propriedade de navegação.  Somente leitura.|
 |extensions|Coleção [extension](extension.md)| A coleção de extensões abertas definidas para eventMessage. Somente leitura. Anulável.|
-|multiValueExtendedProperties|Coleção [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de vários valores definidas para a eventMessage. Somente leitura. Anulável.|
-|singleValueExtendedProperties|Coleção [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de valor único definidas para a eventMessage. Somente leitura. Anulável.|
+|multiValueLegacyExtendedProperty|Coleção [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de vários valores definidas para a eventMessage. Somente leitura. Anulável.|
+|singleValueLegacyExtendedProperty|Coleção [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de valor único definidas para a eventMessage. Somente leitura. Anulável.|
 
 ## <a name="methods"></a>Métodos
 
@@ -148,7 +148,7 @@ Veja a seguir uma representação JSON do recurso
 |:---------------|:--------|:----------|
 |[Get eventMessage](../api/eventmessage-get.md) | [eventMessage](eventmessage.md) |Ler propriedades e relações do objeto eventMessage.|
 |[Update](../api/eventmessage-update.md) | [eventMessage](eventmessage.md)  |Atualizar o objeto eventMessage.|
-|[Delete](../api/eventmessage-delete.md) | Nenhuma |Excluir o objeto eventMessage.|
+|[Delete](../api/eventmessage-delete.md) | Nenhum |Excluir o objeto eventMessage.|
 |[copy](../api/message-copy.md)|[message](message.md)|Copiar uma mensagem para uma pasta.|
 |[createForward](../api/message-createforward.md)|[message](message.md)|Criar um rascunho da mensagem de encaminhamento. Em seguida, você pode [atualizar](../api/message-update.md) ou [enviar](../api/message-send.md) esse rascunho.|
 |[createReply](../api/message-createreply.md)|[message](message.md)|Criar um rascunho da mensagem de resposta. Em seguida, você pode [atualizar](../api/message-update.md) ou [enviar](../api/message-send.md) esse rascunho.|
@@ -158,7 +158,7 @@ Veja a seguir uma representação JSON do recurso
 |[reply](../api/message-reply.md)|Nenhum|Responder ao remetente de uma mensagem. A mensagem é então salva na pasta Itens Enviados.|
 |[replyAll](../api/message-replyall.md)|Nenhum|Responder a todos os destinatários de uma mensagem. A mensagem é então salva na pasta Itens Enviados.|
 |[send](../api/message-send.md)|Nenhum|Envia um rascunho de mensagem anteriormente criado. A mensagem é então salva na pasta Itens Enviados.|
-|[Cancelar assinatura](../api/message-unsubscribe.md)|Nenhum|Envie uma mensagem usando os dados e o endereço especificado no primeiro comando mailto no cabeçalho da lista de cancelamento de inscrição.|
+|[Cancelar a assinatura](../api/message-unsubscribe.md)|Nenhum|Envie uma mensagem usando os dados e o endereço especificado no primeiro comando mailto no cabeçalho da lista de cancelamento de inscrição.|
 |**Anexos**| | |
 |[List attachments](../api/eventmessage-list-attachments.md) |Coleção [attachment](attachment.md)| Obtenha todos os anexos em um eventMessage.|
 |[Add attachment](../api/eventmessage-post-attachments.md) |[attachment](attachment.md)| Adicionar um novo anexo a um eventMessage postando na coleção attachments.|

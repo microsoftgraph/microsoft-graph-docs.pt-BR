@@ -2,12 +2,12 @@
 title: tipo de recurso de programControl
 description: No Windows Azure AD access analisa o recurso, o objeto de controle do programa representa um controle, vinculando uma revisão de acesso a um programa.
 localization_priority: Normal
-ms.openlocfilehash: 3d9829b8e2585d4deda95551021e2fd9b8d14c7a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 82d9263a909fb11e688ffa6b27f0cf92601ae9e9
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511412"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576553"
 ---
 # <a name="programcontrol-resource-type"></a>tipo de recurso de programControl
 
@@ -43,9 +43,9 @@ No recurso de [acesso analisa](accessreviews-root.md) Azure AD, o objeto de cont
 | `status`                 |`String`                | O status do ciclo de vida do controle.                                                 |
 | `createdDateTime`        |`DateTimeOffset`        | A data de criação e a hora do controle programa.                                        |
 | `owner`                  |[userIdentity](useridentity.md)   | O usuário que criou o controle de programa.                                               |
-| `resource`               |`programResource`       | O recurso, um grupo ou um aplicativo alvo de revisão de acesso do controle este programa.                   |
+| `resource`               | [programResource](programresource.md)       | O recurso, um grupo ou um aplicativo alvo de revisão de acesso do controle este programa.                   |
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 | `program`                |[programa](program.md)               | O programa esse controle faz parte do.                                                |
