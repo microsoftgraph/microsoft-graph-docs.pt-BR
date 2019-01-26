@@ -4,56 +4,58 @@ description: Representa a legenda de um gráfico.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 13c054403eb93afce03775138c151e67bc2f57d7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 88330f98b2d652d347aae703ec91fd4de8678c9d
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528183"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576392"
 ---
-# <a name="chartlegend-resource-type"></a><span data-ttu-id="34cf5-103">Tipo de recurso ChartLegend</span><span class="sxs-lookup"><span data-stu-id="34cf5-103">ChartLegend resource type</span></span>
+# <a name="chartlegend-resource-type"></a><span data-ttu-id="b563b-103">Tipo de recurso ChartLegend</span><span class="sxs-lookup"><span data-stu-id="b563b-103">ChartLegend resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="34cf5-104">Representa a legenda de um gráfico.</span><span class="sxs-lookup"><span data-stu-id="34cf5-104">Represents the legend in a chart.</span></span>
+<span data-ttu-id="b563b-104">Representa a legenda de um gráfico.</span><span class="sxs-lookup"><span data-stu-id="b563b-104">Represents the legend in a chart.</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="34cf5-105">Métodos</span><span class="sxs-lookup"><span data-stu-id="34cf5-105">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="b563b-105">Métodos</span><span class="sxs-lookup"><span data-stu-id="b563b-105">Methods</span></span>
 
-| <span data-ttu-id="34cf5-106">Método</span><span class="sxs-lookup"><span data-stu-id="34cf5-106">Method</span></span>           | <span data-ttu-id="34cf5-107">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="34cf5-107">Return Type</span></span>    |<span data-ttu-id="34cf5-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="34cf5-108">Description</span></span>|
+| <span data-ttu-id="b563b-106">Método</span><span class="sxs-lookup"><span data-stu-id="b563b-106">Method</span></span>           | <span data-ttu-id="b563b-107">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="b563b-107">Return Type</span></span>    |<span data-ttu-id="b563b-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="b563b-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="34cf5-109">Get ChartLegend</span><span class="sxs-lookup"><span data-stu-id="34cf5-109">[Get ChartLegend](../api/chartlegend-get.md)</span></span> | [<span data-ttu-id="34cf5-110">ChartLegend</span><span class="sxs-lookup"><span data-stu-id="34cf5-110">ChartLegend</span></span>](chartlegend.md) |<span data-ttu-id="34cf5-111">Leia as propriedades e os relacionamentos do objeto chartLegend.</span><span class="sxs-lookup"><span data-stu-id="34cf5-111">Read properties and relationships of chartLegend object.</span></span>|
-|[<span data-ttu-id="34cf5-112">Update</span><span class="sxs-lookup"><span data-stu-id="34cf5-112">Update</span></span>](../api/chartlegend-update.md) | [<span data-ttu-id="34cf5-113">ChartLegend</span><span class="sxs-lookup"><span data-stu-id="34cf5-113">ChartLegend</span></span>](chartlegend.md) |<span data-ttu-id="34cf5-114">Atualize o objeto ChartLegend.</span><span class="sxs-lookup"><span data-stu-id="34cf5-114">Update ChartLegend object.</span></span> |
+|[<span data-ttu-id="b563b-109">Get ChartLegend</span><span class="sxs-lookup"><span data-stu-id="b563b-109">Get ChartLegend</span></span>](../api/chartlegend-get.md) | [<span data-ttu-id="b563b-110">WorkbookChartLegend</span><span class="sxs-lookup"><span data-stu-id="b563b-110">WorkbookChartLegend</span></span>](chartlegend.md) |<span data-ttu-id="b563b-111">Leia as propriedades e os relacionamentos do objeto chartLegend.</span><span class="sxs-lookup"><span data-stu-id="b563b-111">Read properties and relationships of chartLegend object.</span></span>|
+|[<span data-ttu-id="b563b-112">Update</span><span class="sxs-lookup"><span data-stu-id="b563b-112">Update</span></span>](../api/chartlegend-update.md) | [<span data-ttu-id="b563b-113">WorkbookChartLegend</span><span class="sxs-lookup"><span data-stu-id="b563b-113">WorkbookChartLegend</span></span>](chartlegend.md) |<span data-ttu-id="b563b-114">Atualize o objeto ChartLegend.</span><span class="sxs-lookup"><span data-stu-id="b563b-114">Update ChartLegend object.</span></span> |
 
-## <a name="properties"></a><span data-ttu-id="34cf5-115">Propriedades</span><span class="sxs-lookup"><span data-stu-id="34cf5-115">Properties</span></span>
-| <span data-ttu-id="34cf5-116">Propriedade</span><span class="sxs-lookup"><span data-stu-id="34cf5-116">Property</span></span>     | <span data-ttu-id="34cf5-117">Tipo</span><span class="sxs-lookup"><span data-stu-id="34cf5-117">Type</span></span>   |<span data-ttu-id="34cf5-118">Descrição</span><span class="sxs-lookup"><span data-stu-id="34cf5-118">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="b563b-115">Propriedades</span><span class="sxs-lookup"><span data-stu-id="b563b-115">Properties</span></span>
+| <span data-ttu-id="b563b-116">Propriedade</span><span class="sxs-lookup"><span data-stu-id="b563b-116">Property</span></span>     | <span data-ttu-id="b563b-117">Tipo</span><span class="sxs-lookup"><span data-stu-id="b563b-117">Type</span></span>   |<span data-ttu-id="b563b-118">Descrição</span><span class="sxs-lookup"><span data-stu-id="b563b-118">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="34cf5-119">overlay</span><span class="sxs-lookup"><span data-stu-id="34cf5-119">overlay</span></span>|<span data-ttu-id="34cf5-120">booliano</span><span class="sxs-lookup"><span data-stu-id="34cf5-120">boolean</span></span>|<span data-ttu-id="34cf5-121">Valor booliano para determinar se a legenda do gráfico deve se sobrepor ao corpo principal do gráfico.</span><span class="sxs-lookup"><span data-stu-id="34cf5-121">Boolean value for whether the chart legend should overlap with the main body of the chart.</span></span>|
-|<span data-ttu-id="34cf5-122">position</span><span class="sxs-lookup"><span data-stu-id="34cf5-122">position</span></span>|<span data-ttu-id="34cf5-123">string</span><span class="sxs-lookup"><span data-stu-id="34cf5-123">string</span></span>|<span data-ttu-id="34cf5-p101">Representa a posição da legenda no gráfico. Os valores possíveis são: `Top`, `Bottom`, `Left`, `Right`, `Corner` e `Custom`.</span><span class="sxs-lookup"><span data-stu-id="34cf5-p101">Represents the position of the legend on the chart. Possible values are: `Top`, `Bottom`, `Left`, `Right`, `Corner`, `Custom`.</span></span>|
-|<span data-ttu-id="34cf5-126">visible</span><span class="sxs-lookup"><span data-stu-id="34cf5-126">visible</span></span>|<span data-ttu-id="34cf5-127">booliano</span><span class="sxs-lookup"><span data-stu-id="34cf5-127">boolean</span></span>|<span data-ttu-id="34cf5-128">Um valor booliano que representa a visibilidade de um objeto ChartLegend.</span><span class="sxs-lookup"><span data-stu-id="34cf5-128">A boolean value the represents the visibility of a ChartLegend object.</span></span>|
+|<span data-ttu-id="b563b-119">overlay</span><span class="sxs-lookup"><span data-stu-id="b563b-119">overlay</span></span>|<span data-ttu-id="b563b-120">booliano</span><span class="sxs-lookup"><span data-stu-id="b563b-120">boolean</span></span>|<span data-ttu-id="b563b-121">Valor booliano para determinar se a legenda do gráfico deve se sobrepor ao corpo principal do gráfico.</span><span class="sxs-lookup"><span data-stu-id="b563b-121">Boolean value for whether the chart legend should overlap with the main body of the chart.</span></span>|
+|<span data-ttu-id="b563b-122">position</span><span class="sxs-lookup"><span data-stu-id="b563b-122">position</span></span>|<span data-ttu-id="b563b-123">string</span><span class="sxs-lookup"><span data-stu-id="b563b-123">string</span></span>|<span data-ttu-id="b563b-124">Representa a posição da legenda no gráfico.</span><span class="sxs-lookup"><span data-stu-id="b563b-124">Represents the position of the legend on the chart.</span></span> <span data-ttu-id="b563b-125">Os valores possíveis são: `Top`, `Bottom`, `Left`, `Right`, `Corner`, `Custom`.</span><span class="sxs-lookup"><span data-stu-id="b563b-125">The possible values are: `Top`, `Bottom`, `Left`, `Right`, `Corner`, `Custom`.</span></span>|
+|<span data-ttu-id="b563b-126">visible</span><span class="sxs-lookup"><span data-stu-id="b563b-126">visible</span></span>|<span data-ttu-id="b563b-127">booliano</span><span class="sxs-lookup"><span data-stu-id="b563b-127">boolean</span></span>|<span data-ttu-id="b563b-128">Um valor booliano que representa a visibilidade de um objeto ChartLegend.</span><span class="sxs-lookup"><span data-stu-id="b563b-128">A boolean value the represents the visibility of a ChartLegend object.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="34cf5-129">Relacionamentos</span><span class="sxs-lookup"><span data-stu-id="34cf5-129">Relationships</span></span>
-| <span data-ttu-id="34cf5-130">Relação</span><span class="sxs-lookup"><span data-stu-id="34cf5-130">Relationship</span></span> | <span data-ttu-id="34cf5-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="34cf5-131">Type</span></span>   |<span data-ttu-id="34cf5-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="34cf5-132">Description</span></span>|
+## <a name="relationships"></a><span data-ttu-id="b563b-129">Relacionamentos</span><span class="sxs-lookup"><span data-stu-id="b563b-129">Relationships</span></span>
+| <span data-ttu-id="b563b-130">Relação</span><span class="sxs-lookup"><span data-stu-id="b563b-130">Relationship</span></span> | <span data-ttu-id="b563b-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="b563b-131">Type</span></span>   |<span data-ttu-id="b563b-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="b563b-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="34cf5-133">formato</span><span class="sxs-lookup"><span data-stu-id="34cf5-133">format</span></span>|[<span data-ttu-id="34cf5-134">ChartLegendFormat</span><span class="sxs-lookup"><span data-stu-id="34cf5-134">ChartLegendFormat</span></span>](chartlegendformat.md)|<span data-ttu-id="34cf5-p102">Representa a formatação de uma legenda de gráfico, que inclui a formatação de fonte e de preenchimento. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="34cf5-p102">Represents the formatting of a chart legend, which includes fill and font formatting. Read-only.</span></span>|
+|<span data-ttu-id="b563b-133">formato</span><span class="sxs-lookup"><span data-stu-id="b563b-133">format</span></span>|[<span data-ttu-id="b563b-134">WorkbookChartLegendFormat</span><span class="sxs-lookup"><span data-stu-id="b563b-134">WorkbookChartLegendFormat</span></span>](chartlegendformat.md)|<span data-ttu-id="b563b-p102">Representa a formatação de uma legenda de gráfico, que inclui a formatação de fonte e de preenchimento. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="b563b-p102">Represents the formatting of a chart legend, which includes fill and font formatting. Read-only.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="34cf5-137">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="34cf5-137">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="b563b-137">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="b563b-137">JSON representation</span></span>
 
-<span data-ttu-id="34cf5-138">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="34cf5-138">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="b563b-138">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="b563b-138">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.chartLegend"
+  "@odata.type": "microsoft.graph.workbookChartLegend"
 }-->
 
 ```json
 {
   "overlay": true,
   "position": "string",
-  "visible": true
+  "visible": true,
+  "format": {"@odata.type":"microsoft.graph.workbookChartLegendFormat"}
 }
 
 ```
