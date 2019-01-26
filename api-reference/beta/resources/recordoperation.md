@@ -4,12 +4,12 @@ description: O tipo de recordOperation
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 6b9deb566e5b527a9f20db69441fa96908212a38
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 914b8d819fdbcc132d4e04cd12f5c0db9980f659
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512504"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577183"
 ---
 # <a name="recordoperation-resource-type"></a>tipo de recurso de recordOperation
 
@@ -21,7 +21,7 @@ O tipo de recordOperation
 
 | Propriedade                       | Tipo                        | Descrição                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| ClientContext                  | String                      | O contexto de cliente.                                                                                                                               |
+| clientContext                  | String                      | O contexto de cliente.                                                                                                                               |
 | completionReason               | String                      | Os valores possíveis são: `operationCanceled`, `stopToneDetected`, `maxRecordDurationReached`, `initialSilenceTimeout`, `maxSilenceTimeout`, `playPromptFailed`, `playBeepFailed`, `mediaReceiveTimeout`, `unspecifiedError`, `none`. |
 | createdDateTime                | DateTimeOffset              | A hora em que a gravação foi criada.                                                                                                          |
 | id                             | String                      | A identificação de operação do servidor. Somente leitura. Servidor foi gerado.                                                                                             |
@@ -29,9 +29,8 @@ O tipo de recordOperation
 | recordResourceAccessToken      | String                      | O token de acesso necessário para recuperar a gravação.                                                                                              |
 | recordResourceLocation         | String                      | O local onde a gravação está localizada.                                                                                                      |
 | resultInfo                     | [resultInfo](resultinfo.md) | As informações de resultado.  Somente leitura. Servidor foi gerado.                                                                                             |
-| status                         | String                      | Os valores possíveis são: `notStarted`, `running`, `completed`, `failed`. Somente leitura. Servidor foi gerado.                                                 |
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
@@ -48,14 +47,13 @@ Veja a seguir uma representação JSON do recurso.
 ```json
 {
   "clientContext": "String",
-  "completionReason": "operationCanceled | stopToneDetected | maxRecordDurationReached | initialSilenceTimeout | maxSilenceTimeout | playPromptFailed | playBeepFailed | mediaReceiveTimeout | unspecifiedError | none",
+  "completionReason": "recordCompletionReason",
   "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "lastActionDateTime": "String (timestamp)",
   "recordResourceAccessToken": "String",
   "recordResourceLocation": "String",
-  "resultInfo": {"@odata.type": "#microsoft.graph.resultInfo"},
-  "status": "notStarted | running | completed | failed"
+  "resultInfo": {"@odata.type": "microsoft.graph.resultInfo"}
 }
 ```
 

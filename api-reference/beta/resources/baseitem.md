@@ -4,12 +4,12 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: BaseItem
 localization_priority: Normal
-ms.openlocfilehash: 5bc3aab8460c1d0c6774d2f8afda13c4fc89f69d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: bf1b0c71491f502f6a047f7c174516d2dcbf0f6e
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521583"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577414"
 ---
 # <a name="baseitem-resource-type"></a>Tipo de recurso BaseItem
 
@@ -30,6 +30,8 @@ Veja a seguir uma representação JSON de um recurso **baseItem**.
   "blockType": "resource",
   "optionalProperties": [ "createdBy", "lastModifiedBy", "description", "parentReference", "webUrl" ],
   "keyProperty": "id",
+  "abstract": true,
+  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.baseItem"
 }-->
 
@@ -55,15 +57,24 @@ Veja a seguir uma representação JSON de um recurso **baseItem**.
 | id                   | string            | O identificador exclusivo da unidade. Somente leitura.                                         |
 | createdBy            | [identitySet][]   | Identidade do usuário, dispositivo ou aplicativo que criou o item. Somente leitura.        |
 | createdDateTime      | dateTimeOffset    | Data e hora de criação do item. Somente leitura.                                             |
+| description          | String            | Fornece uma descrição do usuário visíveis do item. Opcional.                             |
 | eTag                 | string            | ETag do item. Somente leitura.                                                          |
 | lastModifiedBy       | [identitySet][]   | Identidade do usuário, dispositivo e aplicativo que modificou o item pela última vez. Somente leitura. |
 | lastModifiedDateTime | dateTimeOffset    | Data e hora em que o item foi modificado pela última vez. Somente leitura.                                   |
-| nome                 | string            | O nome do item. Leitura e gravação.                                                      |
+| name                 | string            | O nome do item. Leitura e gravação.                                                      |
 | parentReference      | [itemReference][] | Informações do pai, se o item tiver um pai. Leitura e gravação.                              |
 | webUrl               | string (url)      | URL que exibe o recurso no navegador. Somente leitura.                              |
 
+## <a name="relationships"></a>Relações
+
+| Relação       | Tipo     | Descrição
+|:-------------------|:---------|:---------------------------------------------
+| createdByUser      | [user][] | A identidade do usuário que criou o item. Somente leitura.
+| lastModifiedByUser | [user][] | A identidade do usuário que modificou o item pela última vez. Somente leitura.
+
 [identitySet]: identityset.md
 [itemReference]: itemreference.md
+[user]: user.md
 
 ## <a name="remarks"></a>Comentários
 

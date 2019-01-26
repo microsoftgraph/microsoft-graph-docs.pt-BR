@@ -2,12 +2,12 @@
 title: tipo de recurso de privilegedRoleSettings
 description: Representa as configurações para uma função privilegiada.
 localization_priority: Normal
-ms.openlocfilehash: 7d4c14065defc63190d1d25b435c734b9f219e36
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 673327e3c83a4111eb469ca48550836433dbdf0a
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525693"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577148"
 ---
 # <a name="privilegedrolesettings-resource-type"></a>tipo de recurso de privilegedRoleSettings
 
@@ -25,19 +25,19 @@ Representa as configurações para uma função privilegiada.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|ElevationDuration|duration|A duração quando a função for ativada.|
-|id|string| O identificador exclusivo para as configurações de função. Somente leitura.|
+|elevationDuration| Cadeia de caracteres (timestamp) |A duração quando a função for ativada.|
+|id| cadeia de caracteres (identificador)| O identificador exclusivo para as configurações de função. Somente leitura.|
 |isMfaOnElevationConfigurable|booliano|**true** se mfaOnElevation é configurável. **false** se mfaOnElevation não é configurável.|
 |lastGlobalAdmin|booliano|Interno usado apenas.|
-|maxElavationDuration|duration|Duração máxima para a função ativada.|
+|maxElavationDuration| cadeia de caracteres (identificador)| |Duração máxima para a função ativada.|
 |mfaOnElevation|booliano|**true** se MFA é necessária para ativar a função. **false** se MFA não é necessário para ativar a função.|
-|minElevationDuration|duration|Duração mínima para a função ativada.|
+|minElevationDuration|cadeia de caracteres (identificador)||Duração mínima para a função ativada.|
 |notificationToUserOnElevation|booliano|**True** se enviar notificação ao usuário final quando a função é ativada. **False** se não enviar notificação quando a função é ativada.|
 |ticketingInfoOnElevation|booliano|**true** se as informações de tickets são necessária quando ativar a função. **false** se as informações de tickets não são necessária quando ativar a função.|
 |approvalOnElevation|booliano|**true** se a aprovação é necessária quando ativar a função. **false** se a aprovação não é necessária quando ativar a função.|
-|approverIds|array|Lista de ids de aprovação, se a aprovação é necessária para a ativação.|
+|approverIds| String collection |Lista de ids de aprovação, se a aprovação é necessária para a ativação.|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 Nenhum
 
 
@@ -65,7 +65,7 @@ Veja a seguir uma representação JSON do recurso.
   "notificationToUserOnElevation": true,
   "ticketingInfoOnElevation": true,
   "approvalOnElevation": false,
-  "approverIds": []
+  "approverIds": [ "String (identifier)" ]
 }
 
 ```

@@ -2,12 +2,12 @@
 title: Tipo de recurso timeConstraint
 description: Restringe as sugestões de horário para reuniões a certas horas e dias da semana de acordo com a natureza especificada da atividade e intervalos de tempo disponíveis.
 localization_priority: Normal
-ms.openlocfilehash: 88035d0617523c51bb01ee0a467e8c84785ad6aa
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 45469211aa4925834fd9d20da6a9905ac87d221e
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519672"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577232"
 ---
 # <a name="timeconstraint-resource-type"></a>Tipo de recurso timeConstraint
 
@@ -24,7 +24,7 @@ Veja a seguir uma representação JSON do recurso
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.timeconstraint"
+  "@odata.type": "microsoft.graph.timeConstraint"
 }-->
 
 ```json

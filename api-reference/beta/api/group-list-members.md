@@ -4,12 +4,12 @@ description: Obtenha uma lista de membros de direto do grupo. Um grupo pode ter 
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: f1643aa759926cd466d121d1c20ec1ae40bbc7cf
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 07004a315bc2b35777c080f7bbdbab8f433f0942
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509242"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577449"
 ---
 # <a name="list-group-members"></a>Membros do grupo de lista
 
@@ -75,8 +75,9 @@ Content-type: application/json
 
 {
   "value": [
-    "@odata.type": "#microsoft.graph.user",
     {
+    "@odata.type": "#microsoft.graph.user",
+    
       "businessPhones": [
         "businessPhones-value"
       ],

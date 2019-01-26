@@ -4,12 +4,12 @@ description: Relacionamento de rich conectando a um usuário a documentos que s�
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 07fe0f50d6961f0fce6c426c7fb2431f17127bf7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 587b52107f3a7f9892603afb8273ce55b6faa549
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507492"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577407"
 ---
 # <a name="trending-resource-type"></a>tipo de recurso de tendências
 
@@ -29,19 +29,25 @@ Relacionamento de rich conectando a um usuário a documentos que são tendência
 | ------------- |---------------                    | -------------|
 | id                    | String                    | Identificador exclusivo do relacionamento. Somente leitura.        |
 | weight                | Duplo                    | Valor que indica o quanto o documento está atualmente tendências. Quanto maior o número, mais o documento é atualmente tendências ao redor do usuário (o mais relevantes é). Documentos retornados são classificados por esse valor.  |
-| resourceVisualization | [resourceVisualization](insights-resourcevisualization.md)    | Propriedades que você pode usar para visualizar o documento na sua experiência. |
-| resourceReference     | [resourceReference](insights-resourcereference.md)        | Propriedades de referência do documento tendência, como a url e o tipo de documento. |
+| resourceVisualization | coleção [resourceVisualization](insights-resourcevisualization.md) | Propriedades que você pode usar para visualizar o documento na sua experiência. |
+| resourceReference     | coleção [resourceReference](insights-resourcereference.md) | Propriedades de referência do documento tendência, como a url e o tipo de documento. |
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 
 | Propriedade      | Tipo          | Descrição  |
 | ------------- |---------------| -------------|
-| recurso      | Entity        | Usado para navegar até o documento tendência. |
+| recurso      | coleção de entidade | Usado para navegar até o documento tendência. |
 
 ## <a name="json-representation"></a>Representação JSON
 
 Veja a seguir uma representação JSON do recurso
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
 
+  ],
+  "@odata.type": "microsoft.graph.trending"
+}-->
 ```json
 {
   "id": "string",

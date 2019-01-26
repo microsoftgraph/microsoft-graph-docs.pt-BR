@@ -4,12 +4,12 @@ description: Recupere as propriedades do objeto dataPolicyOperation.
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5fff5d25ed83c6cfdf889c364630399acdeecb9e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 46839a9b2bf45cb54342de86f3db476de24689e8
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27951058"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577393"
 ---
 # <a name="get-datapolicyoperation"></a>Obter dataPolicyOperation
 
@@ -66,8 +66,7 @@ Content-length: 212
   "status": "status-value",
   "storageLocation": "storageLocation-value",
   "userId": "userId-value",
-  "submittedDateTime": "datetime-value",
-  "progress": "progress-value"
+  "submittedDateTime": "datetime-value"
 }
 ```
 
