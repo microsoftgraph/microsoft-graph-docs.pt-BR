@@ -1,0 +1,90 @@
+---
+title: Tipo de recurso page
+description: Uma página em um bloco de anotações do OneNote.
+localization_priority: Normal
+ms.openlocfilehash: 81ab6ea0bc7ac3e10f0ec369da1e587b5e9b808b
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29579923"
+---
+# <a name="page-resource-type"></a>Tipo de recurso page
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Uma página em um bloco de anotações do OneNote.
+
+## <a name="json-representation"></a>Representação JSON
+
+Veja a seguir uma representação JSON do recurso.
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+    "parentNotebook",
+    "parentSection"
+  ],
+  "@odata.type": "microsoft.graph.onenotePage"
+}-->
+
+```json
+{
+  "content": "stream",
+  "contentUrl": "string",
+  "createdByAppId": "string",
+  "createdDateTime": "String (timestamp)",
+  "id": "string (identifier)",
+  "lastModifiedDateTime": "String (timestamp)",
+  "level": 1024,
+  "links": {"@odata.type": "microsoft.graph.pageLinks"},
+  "order": 1024,
+  "self": "string",
+  "title": "string"
+}
+
+```
+## <a name="properties"></a>Propriedades
+| Propriedade     | Tipo   |Descrição|
+|:---------------|:--------|:----------|
+|content|Fluxo|O conteúdo HTML da página.|
+|contentUrl|String|A URL do conteúdo HTML da página.  Somente leitura.|
+|createdByAppId|String|O identificador exclusivo do aplicativo que criou a página. Somente leitura.|
+|createdDateTime|DateTimeOffset|A data e a hora da criação da página. O carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura.|
+|id|String|O identificador exclusivo da página.  Somente leitura.|
+|lastModifiedDateTime|DateTimeOffset|A data e a hora da última modificação da página. O carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura.|
+|nível|Int32|O nível de recuo da página. Somente leitura.|
+|links|[pageLinks](pagelinks.md)|Links para abrir a página. O link `oneNoteClientURL` abre a página no cliente nativo do OneNote se ele estiver instalado. O link `oneNoteWebUrl` abre a página no OneNote Online. Somente leitura.|
+|ordem|Int32|A ordem da página dentro da seção pai dela. Somente leitura.|
+|self|String|O ponto de extremidade onde você pode obter detalhes sobre a página. Somente leitura.|
+|title|String|O título da página. |
+
+## <a name="relationships"></a>Relações
+| Relação | Tipo   |Descrição|
+|:---------------|:--------|:----------|
+|parentNotebook|[bloco de anotações](notebook.md)|O bloco de anotações que contém a página.  Somente leitura.|
+|parentSection|[onenoteSection](section.md)|A seção que contém a página. Somente leitura.|
+
+## <a name="methods"></a>Métodos
+
+| Método           | Tipo de retorno    |Descrição|
+|:---------------|:--------|:----------|
+|[Get page](../api/page-get.md) | [onenotePage](onenotepage.md) |Leia as propriedades e as relações da página.|
+|[Atualizar o conteúdo da página](../api/page-update.md) | None |Atualizar o conteúdo HTML da página. |
+|[Excluir página](../api/page-delete.md) | None |Exclua a página. |
+|[copyToSection](../api/page-copytosection.md)| None |Copia a página para uma seção específica.|
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "page resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/page.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

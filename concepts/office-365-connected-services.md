@@ -3,12 +3,13 @@ title: Chamar serviços do Office 365 no Visual Studio 2017 com a API do Microso
 description: Você pode usar os serviços conectados no Visual Studio para configurar seu aplicativo para chamar a API do Microsoft Graph. Este artigo descreve como obter a foto de perfil de um usuário conectado, carregá-la no OneDrive e enviar um email com um link de compartilhamento para a foto.
 localization_priority: Priority
 ms.prod: reports
-ms.openlocfilehash: 0a084fd7c4fa946854e3f932586f52cdcce370fd
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: 66a967097e32d9321bfab44e8f648c6cabebc165
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27979232"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571244"
 ---
 # <a name="call-office-365-services-in-visual-studio-2017-with-the-microsoft-graph-api"></a>Chamar serviços do Office 365 no Visual Studio 2017 com a API do Microsoft Graph
 
