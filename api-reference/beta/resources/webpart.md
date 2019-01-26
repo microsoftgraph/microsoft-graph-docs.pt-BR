@@ -5,50 +5,51 @@ ms.date: 09/01/2018
 title: Web Part
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 9c019da7cb10a8c26faa8d338c54436043f83db8
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: e7bbd0f6aa8d4ea04304d6aecae97b98ab0a46b7
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510236"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574275"
 ---
-# <a name="webpart-resource"></a><span data-ttu-id="24aec-102">recurso de Web Part</span><span class="sxs-lookup"><span data-stu-id="24aec-102">webPart resource</span></span>
+# <a name="webpart-resource"></a><span data-ttu-id="cc3d6-102">recurso de Web Part</span><span class="sxs-lookup"><span data-stu-id="cc3d6-102">webPart resource</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="24aec-103">O recurso de **Web Part** representa o tipo e informações de renderização de uma web part em um [sitePage](sitepage.md).</span><span class="sxs-lookup"><span data-stu-id="24aec-103">The **webPart** resource represents type and rendering information for a web part on a [sitePage](sitepage.md).</span></span>
+<span data-ttu-id="cc3d6-103">O recurso de **Web Part** representa o tipo e informações de renderização de uma web part em um [sitePage](sitepage.md).</span><span class="sxs-lookup"><span data-stu-id="cc3d6-103">The **webPart** resource represents type and rendering information for a web part on a [sitePage](sitepage.md).</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="24aec-104">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="24aec-104">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="cc3d6-104">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="cc3d6-104">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [  ],
+  "optionalProperties": [  
+    ],
   "@odata.type": "microsoft.graph.webPart"
 }-->
 
 ```json
 {
-  "type": "string (guid)",
+  "type": "String (identifier)",
   "data": {
     "instanceId": "string (guid) (optional)"
   }
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="24aec-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="24aec-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="cc3d6-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="cc3d6-105">Properties</span></span>
 
-| <span data-ttu-id="24aec-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="24aec-106">Property</span></span>                | <span data-ttu-id="24aec-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="24aec-107">Type</span></span>             | <span data-ttu-id="24aec-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="24aec-108">Description</span></span>
+| <span data-ttu-id="cc3d6-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="cc3d6-106">Property</span></span>                | <span data-ttu-id="cc3d6-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="cc3d6-107">Type</span></span>             | <span data-ttu-id="cc3d6-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="cc3d6-108">Description</span></span>
 |:------------------------|:-----------------|:----------------------------------
-| <span data-ttu-id="24aec-109">**type**</span><span class="sxs-lookup"><span data-stu-id="24aec-109">**type**</span></span>                | <span data-ttu-id="24aec-110">String</span><span class="sxs-lookup"><span data-stu-id="24aec-110">String</span></span>           | <span data-ttu-id="24aec-111">Um identificador exclusivo especificando o tipo de Web Part.</span><span class="sxs-lookup"><span data-stu-id="24aec-111">A unique identifier specifying the webPart type.</span></span> <span data-ttu-id="24aec-112">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="24aec-112">Read-only.</span></span>
-| <span data-ttu-id="24aec-113">**data**</span><span class="sxs-lookup"><span data-stu-id="24aec-113">**data**</span></span>                | <span data-ttu-id="24aec-114">[sitePageData][]</span><span class="sxs-lookup"><span data-stu-id="24aec-114">[sitePageData][]</span></span> | <span data-ttu-id="24aec-115">As propriedades necessárias para a Web Part (varia de acordo com a Web Part)</span><span class="sxs-lookup"><span data-stu-id="24aec-115">The required properties for the webPart (varies by webPart)</span></span>
+| <span data-ttu-id="cc3d6-109">**type**</span><span class="sxs-lookup"><span data-stu-id="cc3d6-109">**type**</span></span>                | <span data-ttu-id="cc3d6-110">Cadeia de caracteres (identificador)</span><span class="sxs-lookup"><span data-stu-id="cc3d6-110">String (identifier)</span></span>         | <span data-ttu-id="cc3d6-111">Um identificador exclusivo especificando o tipo de Web Part.</span><span class="sxs-lookup"><span data-stu-id="cc3d6-111">A unique identifier specifying the webPart type.</span></span> <span data-ttu-id="cc3d6-112">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="cc3d6-112">Read-only.</span></span>
+| <span data-ttu-id="cc3d6-113">**data**</span><span class="sxs-lookup"><span data-stu-id="cc3d6-113">**data**</span></span>                | [<span data-ttu-id="cc3d6-114">sitePageData</span><span class="sxs-lookup"><span data-stu-id="cc3d6-114">sitePageData</span></span>](sitepagedata.md) | <span data-ttu-id="cc3d6-115">As propriedades necessárias para a Web Part (varia de acordo com a Web Part)</span><span class="sxs-lookup"><span data-stu-id="cc3d6-115">The required properties for the webPart (varies by webPart)</span></span>
 
 [sitePageData]: sitepagedata.md
 
-## <a name="remarks"></a><span data-ttu-id="24aec-117">Comentários</span><span class="sxs-lookup"><span data-stu-id="24aec-117">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="cc3d6-116">Comentários</span><span class="sxs-lookup"><span data-stu-id="cc3d6-116">Remarks</span></span>
 
-<span data-ttu-id="24aec-118">Web parts do podem definir suas próprias propriedades necessárias em **dados**.</span><span class="sxs-lookup"><span data-stu-id="24aec-118">Web parts can define their own required properties under **data**.</span></span>
+<span data-ttu-id="cc3d6-117">Web parts do podem definir suas próprias propriedades necessárias em **dados**.</span><span class="sxs-lookup"><span data-stu-id="cc3d6-117">Web parts can define their own required properties under **data**.</span></span>
 
-<span data-ttu-id="24aec-119">Para obter mais informações sobre páginas, consulte [sitePage](sitepage.md).</span><span class="sxs-lookup"><span data-stu-id="24aec-119">For more information about pages, see [sitePage](sitepage.md).</span></span>
+<span data-ttu-id="cc3d6-118">Para obter mais informações sobre páginas, consulte [sitePage](sitepage.md).</span><span class="sxs-lookup"><span data-stu-id="cc3d6-118">For more information about pages, see [sitePage](sitepage.md).</span></span>
 <!--
 {
   "type": "#page.annotation",

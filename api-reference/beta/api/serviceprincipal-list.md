@@ -2,56 +2,56 @@
 title: Lista servicePrincipals
 description: Recupere uma lista de objetos servicePrincipal.
 localization_priority: Normal
-ms.openlocfilehash: cd61b69e330ac376d15bfaf99c1147b8f9402d7f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: e8698e9715b4443d49224afcac8a5b363132db93
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526085"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574254"
 ---
-# <a name="list-serviceprincipals"></a><span data-ttu-id="30942-103">Lista servicePrincipals</span><span class="sxs-lookup"><span data-stu-id="30942-103">List servicePrincipals</span></span>
+# <a name="list-serviceprincipals"></a><span data-ttu-id="27667-103">Lista servicePrincipals</span><span class="sxs-lookup"><span data-stu-id="27667-103">List servicePrincipals</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="30942-104">Recupere uma lista de objetos servicePrincipal.</span><span class="sxs-lookup"><span data-stu-id="30942-104">Retrieve a list of servicePrincipal objects.</span></span>
+<span data-ttu-id="27667-104">Recupere uma lista de objetos servicePrincipal.</span><span class="sxs-lookup"><span data-stu-id="27667-104">Retrieve a list of servicePrincipal objects.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="30942-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="30942-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="27667-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="27667-105">Permissions</span></span>
 
-<span data-ttu-id="30942-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="30942-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="27667-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="27667-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="30942-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="30942-108">Permission type</span></span>      | <span data-ttu-id="30942-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="30942-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="27667-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="27667-108">Permission type</span></span>      | <span data-ttu-id="27667-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="27667-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="30942-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="30942-110">Delegated (work or school account)</span></span> | <span data-ttu-id="30942-111">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="30942-111">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="30942-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="30942-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="30942-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="30942-113">Not supported.</span></span>    |
-|<span data-ttu-id="30942-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="30942-114">Application</span></span> | <span data-ttu-id="30942-115">Application.ReadWrite.All, Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="30942-115">Application.ReadWrite.All, Directory.Read.All</span></span> |
+|<span data-ttu-id="27667-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="27667-110">Delegated (work or school account)</span></span> | <span data-ttu-id="27667-111">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="27667-111">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="27667-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="27667-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="27667-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="27667-113">Not supported.</span></span>    |
+|<span data-ttu-id="27667-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="27667-114">Application</span></span> | <span data-ttu-id="27667-115">Application.ReadWrite.All, Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="27667-115">Application.ReadWrite.All, Directory.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="30942-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="30942-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="27667-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="27667-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /servicePrincipals
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="30942-117">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="30942-117">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="27667-117">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="27667-117">Optional query parameters</span></span>
 
-<span data-ttu-id="30942-118">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="30942-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+<span data-ttu-id="27667-118">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="27667-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="30942-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="30942-119">Request headers</span></span>
-| <span data-ttu-id="30942-120">Nome</span><span class="sxs-lookup"><span data-stu-id="30942-120">Name</span></span> | <span data-ttu-id="30942-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="30942-121">Description</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="27667-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="27667-119">Request headers</span></span>
+| <span data-ttu-id="27667-120">Nome</span><span class="sxs-lookup"><span data-stu-id="27667-120">Name</span></span> | <span data-ttu-id="27667-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="27667-121">Description</span></span> |
 |:----------|:----------|
-| <span data-ttu-id="30942-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="30942-122">Authorization</span></span>  | <span data-ttu-id="30942-123">string</span><span class="sxs-lookup"><span data-stu-id="30942-123">string</span></span>  | <span data-ttu-id="30942-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="30942-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="27667-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="27667-122">Authorization</span></span>  | <span data-ttu-id="27667-123">string</span><span class="sxs-lookup"><span data-stu-id="27667-123">string</span></span>  | <span data-ttu-id="27667-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="27667-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="30942-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="30942-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="27667-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="27667-126">Request body</span></span>
 
-<span data-ttu-id="30942-127">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="30942-127">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="27667-127">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="27667-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="30942-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="30942-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="27667-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="27667-128">Response</span></span>
 
-<span data-ttu-id="30942-129">Se tiver êxito, este método retornará um `200 OK` código de resposta e a coleção de objetos [servicePrincipal](../resources/serviceprincipal.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="30942-129">If successful, this method returns a `200 OK` response code and collection of [servicePrincipal](../resources/serviceprincipal.md) objects in the response body.</span></span>
+<span data-ttu-id="27667-129">Se tiver êxito, este método retornará um `200 OK` código de resposta e a coleção de objetos [servicePrincipal](../resources/serviceprincipal.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="27667-129">If successful, this method returns a `200 OK` response code and collection of [servicePrincipal](../resources/serviceprincipal.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="30942-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="30942-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="27667-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="27667-130">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="30942-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="30942-131">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="27667-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="27667-131">Request</span></span>
 
 <!-- {
   "blockType": "request",
@@ -60,13 +60,13 @@ GET /servicePrincipals
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals
 ```
-##### <a name="response"></a><span data-ttu-id="30942-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="30942-132">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="27667-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="27667-132">Response</span></span>
 
-<span data-ttu-id="30942-p103">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="30942-p103">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="27667-p103">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="27667-p103">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.serviceprincipal",
+  "@odata.type": "microsoft.graph.servicePrincipal",
   "isCollection": true
 } -->
 ```http

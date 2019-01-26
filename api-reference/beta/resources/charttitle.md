@@ -4,49 +4,50 @@ description: Representa um objeto de título de gráfico de um gráfico.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: a71aed2da93c2121492f1eb29826470b797768ed
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: f0b669593bd9ca0768ad977ace8d54f5531301a4
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514709"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573092"
 ---
-# <a name="charttitle-resource-type"></a><span data-ttu-id="e9eda-103">Tipo de recurso ChartTitle</span><span class="sxs-lookup"><span data-stu-id="e9eda-103">ChartTitle resource type</span></span>
+# <a name="charttitle-resource-type"></a><span data-ttu-id="04cc0-103">Tipo de recurso ChartTitle</span><span class="sxs-lookup"><span data-stu-id="04cc0-103">ChartTitle resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e9eda-104">Representa um objeto de título de gráfico de um gráfico.</span><span class="sxs-lookup"><span data-stu-id="e9eda-104">Represents a chart title object of a chart.</span></span>
+<span data-ttu-id="04cc0-104">Representa um objeto de título de gráfico de um gráfico.</span><span class="sxs-lookup"><span data-stu-id="04cc0-104">Represents a chart title object of a chart.</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="e9eda-105">Métodos</span><span class="sxs-lookup"><span data-stu-id="e9eda-105">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="04cc0-105">Métodos</span><span class="sxs-lookup"><span data-stu-id="04cc0-105">Methods</span></span>
 
-| <span data-ttu-id="e9eda-106">Método</span><span class="sxs-lookup"><span data-stu-id="e9eda-106">Method</span></span>           | <span data-ttu-id="e9eda-107">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="e9eda-107">Return Type</span></span>    |<span data-ttu-id="e9eda-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="e9eda-108">Description</span></span>|
+| <span data-ttu-id="04cc0-106">Método</span><span class="sxs-lookup"><span data-stu-id="04cc0-106">Method</span></span>           | <span data-ttu-id="04cc0-107">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="04cc0-107">Return Type</span></span>    |<span data-ttu-id="04cc0-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="04cc0-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="e9eda-109">Get ChartTitle</span><span class="sxs-lookup"><span data-stu-id="e9eda-109">[Get ChartTitle](../api/charttitle-get.md)</span></span> | [<span data-ttu-id="e9eda-110">ChartTitle</span><span class="sxs-lookup"><span data-stu-id="e9eda-110">ChartTitle</span></span>](charttitle.md) |<span data-ttu-id="e9eda-111">Leia as propriedades e os relacionamentos do objeto chartTitle.</span><span class="sxs-lookup"><span data-stu-id="e9eda-111">Read properties and relationships of chartTitle object.</span></span>|
-|[<span data-ttu-id="e9eda-112">Update</span><span class="sxs-lookup"><span data-stu-id="e9eda-112">Update</span></span>](../api/charttitle-update.md) | [<span data-ttu-id="e9eda-113">ChartTitle</span><span class="sxs-lookup"><span data-stu-id="e9eda-113">ChartTitle</span></span>](charttitle.md)    |<span data-ttu-id="e9eda-114">Atualize o objeto ChartTitle.</span><span class="sxs-lookup"><span data-stu-id="e9eda-114">Update ChartTitle object.</span></span> |
+|[<span data-ttu-id="04cc0-109">Get ChartTitle</span><span class="sxs-lookup"><span data-stu-id="04cc0-109">Get ChartTitle</span></span>](../api/charttitle-get.md) | [<span data-ttu-id="04cc0-110">WorkbookChartTitle</span><span class="sxs-lookup"><span data-stu-id="04cc0-110">WorkbookChartTitle</span></span>](charttitle.md) |<span data-ttu-id="04cc0-111">Leia as propriedades e os relacionamentos do objeto chartTitle.</span><span class="sxs-lookup"><span data-stu-id="04cc0-111">Read properties and relationships of chartTitle object.</span></span>|
+|[<span data-ttu-id="04cc0-112">Update</span><span class="sxs-lookup"><span data-stu-id="04cc0-112">Update</span></span>](../api/charttitle-update.md) | [<span data-ttu-id="04cc0-113">WorkbookChartTitle</span><span class="sxs-lookup"><span data-stu-id="04cc0-113">WorkbookChartTitle</span></span>](charttitle.md)    |<span data-ttu-id="04cc0-114">Atualize o objeto ChartTitle.</span><span class="sxs-lookup"><span data-stu-id="04cc0-114">Update ChartTitle object.</span></span> |
 
-## <a name="properties"></a><span data-ttu-id="e9eda-115">Propriedades</span><span class="sxs-lookup"><span data-stu-id="e9eda-115">Properties</span></span>
-| <span data-ttu-id="e9eda-116">Propriedade</span><span class="sxs-lookup"><span data-stu-id="e9eda-116">Property</span></span>     | <span data-ttu-id="e9eda-117">Tipo</span><span class="sxs-lookup"><span data-stu-id="e9eda-117">Type</span></span>   |<span data-ttu-id="e9eda-118">Descrição</span><span class="sxs-lookup"><span data-stu-id="e9eda-118">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="04cc0-115">Propriedades</span><span class="sxs-lookup"><span data-stu-id="04cc0-115">Properties</span></span>
+| <span data-ttu-id="04cc0-116">Propriedade</span><span class="sxs-lookup"><span data-stu-id="04cc0-116">Property</span></span>     | <span data-ttu-id="04cc0-117">Tipo</span><span class="sxs-lookup"><span data-stu-id="04cc0-117">Type</span></span>   |<span data-ttu-id="04cc0-118">Descrição</span><span class="sxs-lookup"><span data-stu-id="04cc0-118">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="e9eda-119">overlay</span><span class="sxs-lookup"><span data-stu-id="e9eda-119">overlay</span></span>|<span data-ttu-id="e9eda-120">booliano</span><span class="sxs-lookup"><span data-stu-id="e9eda-120">boolean</span></span>|<span data-ttu-id="e9eda-121">Valor booliano que determina se o título do gráfico deve se sobrepor ao gráfico ou não.</span><span class="sxs-lookup"><span data-stu-id="e9eda-121">Boolean value representing if the chart title will overlay the chart or not.</span></span>|
-|<span data-ttu-id="e9eda-122">texto</span><span class="sxs-lookup"><span data-stu-id="e9eda-122">text</span></span>|<span data-ttu-id="e9eda-123">string</span><span class="sxs-lookup"><span data-stu-id="e9eda-123">string</span></span>|<span data-ttu-id="e9eda-124">Representa o texto do título de um gráfico.</span><span class="sxs-lookup"><span data-stu-id="e9eda-124">Represents the title text of a chart.</span></span>|
-|<span data-ttu-id="e9eda-125">visible</span><span class="sxs-lookup"><span data-stu-id="e9eda-125">visible</span></span>|<span data-ttu-id="e9eda-126">booliano</span><span class="sxs-lookup"><span data-stu-id="e9eda-126">boolean</span></span>|<span data-ttu-id="e9eda-127">Um valor booliano que representa a visibilidade de um objeto de título de gráfico.</span><span class="sxs-lookup"><span data-stu-id="e9eda-127">A boolean value the represents the visibility of a chart title object.</span></span>|
+|<span data-ttu-id="04cc0-119">overlay</span><span class="sxs-lookup"><span data-stu-id="04cc0-119">overlay</span></span>|<span data-ttu-id="04cc0-120">booliano</span><span class="sxs-lookup"><span data-stu-id="04cc0-120">boolean</span></span>|<span data-ttu-id="04cc0-121">Valor booliano que determina se o título do gráfico deve se sobrepor ao gráfico ou não.</span><span class="sxs-lookup"><span data-stu-id="04cc0-121">Boolean value representing if the chart title will overlay the chart or not.</span></span>|
+|<span data-ttu-id="04cc0-122">texto</span><span class="sxs-lookup"><span data-stu-id="04cc0-122">text</span></span>|<span data-ttu-id="04cc0-123">string</span><span class="sxs-lookup"><span data-stu-id="04cc0-123">string</span></span>|<span data-ttu-id="04cc0-124">Representa o texto do título de um gráfico.</span><span class="sxs-lookup"><span data-stu-id="04cc0-124">Represents the title text of a chart.</span></span>|
+|<span data-ttu-id="04cc0-125">visible</span><span class="sxs-lookup"><span data-stu-id="04cc0-125">visible</span></span>|<span data-ttu-id="04cc0-126">booliano</span><span class="sxs-lookup"><span data-stu-id="04cc0-126">boolean</span></span>|<span data-ttu-id="04cc0-127">Um valor booliano que representa a visibilidade de um objeto de título de gráfico.</span><span class="sxs-lookup"><span data-stu-id="04cc0-127">A boolean value the represents the visibility of a chart title object.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="e9eda-128">Relacionamentos</span><span class="sxs-lookup"><span data-stu-id="e9eda-128">Relationships</span></span>
-| <span data-ttu-id="e9eda-129">Relação</span><span class="sxs-lookup"><span data-stu-id="e9eda-129">Relationship</span></span> | <span data-ttu-id="e9eda-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="e9eda-130">Type</span></span>   |<span data-ttu-id="e9eda-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="e9eda-131">Description</span></span>|
+## <a name="relationships"></a><span data-ttu-id="04cc0-128">Relacionamentos</span><span class="sxs-lookup"><span data-stu-id="04cc0-128">Relationships</span></span>
+| <span data-ttu-id="04cc0-129">Relação</span><span class="sxs-lookup"><span data-stu-id="04cc0-129">Relationship</span></span> | <span data-ttu-id="04cc0-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="04cc0-130">Type</span></span>   |<span data-ttu-id="04cc0-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="04cc0-131">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="e9eda-132">formato</span><span class="sxs-lookup"><span data-stu-id="e9eda-132">format</span></span>|[<span data-ttu-id="e9eda-133">ChartTitleFormat</span><span class="sxs-lookup"><span data-stu-id="e9eda-133">ChartTitleFormat</span></span>](charttitleformat.md)|<span data-ttu-id="e9eda-p101">Representa a formatação de um título do gráfico, que inclui a formatação de fonte e de preenchimento. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="e9eda-p101">Represents the formatting of a chart title, which includes fill and font formatting. Read-only.</span></span>|
+|<span data-ttu-id="04cc0-132">formato</span><span class="sxs-lookup"><span data-stu-id="04cc0-132">format</span></span>|[<span data-ttu-id="04cc0-133">WorkbookChartTitleFormat</span><span class="sxs-lookup"><span data-stu-id="04cc0-133">WorkbookChartTitleFormat</span></span>](charttitleformat.md)|<span data-ttu-id="04cc0-p101">Representa a formatação de um título do gráfico, que inclui a formatação de fonte e de preenchimento. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="04cc0-p101">Represents the formatting of a chart title, which includes fill and font formatting. Read-only.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="e9eda-136">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="e9eda-136">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="04cc0-136">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="04cc0-136">JSON representation</span></span>
 
-<span data-ttu-id="e9eda-137">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="e9eda-137">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="04cc0-137">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="04cc0-137">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.chartTitle"
+  "@odata.type": "microsoft.graph.workbookChartTitle"
 }-->
 
 ```json

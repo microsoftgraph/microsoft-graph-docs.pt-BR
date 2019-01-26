@@ -2,40 +2,40 @@
 title: tipo de recurso de synchronizationProgress
 description: Representa o progresso de um synchronizationJob rumo à conclusão.
 localization_priority: Normal
-ms.openlocfilehash: b22bd95f54a9f268524dc98a8d3df94fcc14f773
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 39351f07720d44679675396f9e995f5e78e25fcc
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510971"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572742"
 ---
-# <a name="synchronizationprogress-resource-type"></a><span data-ttu-id="abcf5-103">tipo de recurso de synchronizationProgress</span><span class="sxs-lookup"><span data-stu-id="abcf5-103">synchronizationProgress resource type</span></span>
+# <a name="synchronizationprogress-resource-type"></a><span data-ttu-id="38774-103">tipo de recurso de synchronizationProgress</span><span class="sxs-lookup"><span data-stu-id="38774-103">synchronizationProgress resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="abcf5-104">Representa o progresso de um [synchronizationJob](synchronization-synchronizationjob.md) rumo à conclusão.</span><span class="sxs-lookup"><span data-stu-id="abcf5-104">Represents the progress of a [synchronizationJob](synchronization-synchronizationjob.md) toward completion.</span></span>
+<span data-ttu-id="38774-104">Representa o progresso de um [synchronizationJob](synchronization-synchronizationjob.md) rumo à conclusão.</span><span class="sxs-lookup"><span data-stu-id="38774-104">Represents the progress of a [synchronizationJob](synchronization-synchronizationjob.md) toward completion.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="abcf5-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="abcf5-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="38774-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="38774-105">Properties</span></span>
 
-| <span data-ttu-id="abcf5-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="abcf5-106">Property</span></span>                              | <span data-ttu-id="abcf5-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="abcf5-107">Type</span></span>      | <span data-ttu-id="abcf5-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="abcf5-108">Description</span></span>    |
+| <span data-ttu-id="38774-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="38774-106">Property</span></span>                              | <span data-ttu-id="38774-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="38774-107">Type</span></span>      | <span data-ttu-id="38774-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="38774-108">Description</span></span>    |
 |:--------------------------------------|:----------|:---------------|
-|<span data-ttu-id="abcf5-109">completedUnits</span><span class="sxs-lookup"><span data-stu-id="abcf5-109">completedUnits</span></span>|<span data-ttu-id="abcf5-110">Int32</span><span class="sxs-lookup"><span data-stu-id="abcf5-110">Int32</span></span>|<span data-ttu-id="abcf5-111">O numerador de uma proporção de progresso; o número de unidades de alterações já processadas.</span><span class="sxs-lookup"><span data-stu-id="abcf5-111">The numerator of a progress ratio; the number of units of changes already processed.</span></span>|
-|<span data-ttu-id="abcf5-112">progressObservationDateTime</span><span class="sxs-lookup"><span data-stu-id="abcf5-112">progressObservationDateTime</span></span>|<span data-ttu-id="abcf5-113">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="abcf5-113">DateTimeOffset</span></span>|<span data-ttu-id="abcf5-114">A hora de uma observação de progresso como um deslocamento em minutos de UTC.</span><span class="sxs-lookup"><span data-stu-id="abcf5-114">The time of a progress observation as an offset in minutes from UTC.</span></span>|
-|<span data-ttu-id="abcf5-115">totalUnits</span><span class="sxs-lookup"><span data-stu-id="abcf5-115">totalUnits</span></span>|<span data-ttu-id="abcf5-116">Int32</span><span class="sxs-lookup"><span data-stu-id="abcf5-116">Int32</span></span>|<span data-ttu-id="abcf5-117">Denominador de uma proporção de progresso; um número de unidades de alterações a serem processados para realizar a sincronização.</span><span class="sxs-lookup"><span data-stu-id="abcf5-117">The denominator of a progress ratio; a number of units of changes to be processed to accomplish synchronization.</span></span>|
-|<span data-ttu-id="abcf5-118">Units</span><span class="sxs-lookup"><span data-stu-id="abcf5-118">units</span></span>|<span data-ttu-id="abcf5-119">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="abcf5-119">String</span></span>|<span data-ttu-id="abcf5-120">Uma descrição opcional das unidades.</span><span class="sxs-lookup"><span data-stu-id="abcf5-120">An optional description of the units.</span></span>|
+|<span data-ttu-id="38774-109">completedUnits</span><span class="sxs-lookup"><span data-stu-id="38774-109">completedUnits</span></span>|<span data-ttu-id="38774-110">Int32</span><span class="sxs-lookup"><span data-stu-id="38774-110">Int32</span></span>|<span data-ttu-id="38774-111">O numerador de uma proporção de progresso; o número de unidades de alterações já processadas.</span><span class="sxs-lookup"><span data-stu-id="38774-111">The numerator of a progress ratio; the number of units of changes already processed.</span></span>|
+|<span data-ttu-id="38774-112">progressObservationDateTime</span><span class="sxs-lookup"><span data-stu-id="38774-112">progressObservationDateTime</span></span>|<span data-ttu-id="38774-113">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="38774-113">DateTimeOffset</span></span>|<span data-ttu-id="38774-114">A hora de uma observação de progresso como um deslocamento em minutos de UTC.</span><span class="sxs-lookup"><span data-stu-id="38774-114">The time of a progress observation as an offset in minutes from UTC.</span></span>|
+|<span data-ttu-id="38774-115">totalUnits</span><span class="sxs-lookup"><span data-stu-id="38774-115">totalUnits</span></span>|<span data-ttu-id="38774-116">Int32</span><span class="sxs-lookup"><span data-stu-id="38774-116">Int32</span></span>|<span data-ttu-id="38774-117">Denominador de uma proporção de progresso; um número de unidades de alterações a serem processados para realizar a sincronização.</span><span class="sxs-lookup"><span data-stu-id="38774-117">The denominator of a progress ratio; a number of units of changes to be processed to accomplish synchronization.</span></span>|
+|<span data-ttu-id="38774-118">unidades</span><span class="sxs-lookup"><span data-stu-id="38774-118">units</span></span>|<span data-ttu-id="38774-119">String</span><span class="sxs-lookup"><span data-stu-id="38774-119">String</span></span>|<span data-ttu-id="38774-120">Uma descrição opcional das unidades.</span><span class="sxs-lookup"><span data-stu-id="38774-120">An optional description of the units.</span></span>|
 
 <!-- The troubleshootingUrl property is missing a description -->
 
-## <a name="json-representation"></a><span data-ttu-id="abcf5-121">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="abcf5-121">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="38774-121">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="38774-121">JSON representation</span></span>
 
-<span data-ttu-id="abcf5-122">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="abcf5-122">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="38774-122">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="38774-122">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.synchronizationStatus"
+  "@odata.type": "microsoft.graph.synchronizationProgress"
 }-->
 
 ```json
