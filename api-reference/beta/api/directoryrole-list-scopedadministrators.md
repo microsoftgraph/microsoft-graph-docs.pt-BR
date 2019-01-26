@@ -4,12 +4,12 @@ description: Recupere uma lista de objetos scopedRoleMembership para uma funçã
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: ab6b68ac96e35249ef216266fafed76be68f40b7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 188e3f0d49252c469a77b2f8903dc4be5b188801
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527931"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571755"
 ---
 # <a name="list-scopedmembers-for-a-directory-role"></a>Lista scopedMembers para uma função de diretório
 
@@ -59,7 +59,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.scopedrolemembership",
+  "@odata.type": "microsoft.graph.scopedRoleMembership",
   "isCollection": true
 } -->
 ```http

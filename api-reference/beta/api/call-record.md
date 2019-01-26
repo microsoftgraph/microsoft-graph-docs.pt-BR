@@ -4,12 +4,12 @@ description: Registre a chamada.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4dc409a502b18da9c0e897054a7c1d6386fa096f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 1f119cfece969c01e68773e5985eab4010dc9874
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518279"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574856"
 ---
 # <a name="call-record"></a>chamar: registro
 
@@ -43,15 +43,15 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|solicita|coleção [mediaprompt](../resources/mediaprompt.md) | Inicia a coleção de prompts para reproduzir (se houver) antes da gravação. Os clientes podem escolher especificar a ação de "playPrompt" separadamente ou especificar como parte do "Registro" - principalmente todos os registros são precedido por um prompt |
-|bargeInAllowed|Booliano| Permitir que os usuários insiram opção antes de concluir o prompt.                                                                 |
+|solicita|coleção [mediaPrompt](../resources/mediaprompt.md) | Inicia a coleção de prompts para reproduzir (se houver) antes da gravação. Os clientes podem escolher especificar a ação de "playPrompt" separadamente ou especificar como parte do "Registro" - principalmente todos os registros são precedido por um prompt |
+|bargeInAllowed|Boolean| Permitir que os usuários insiram opção antes de concluir o prompt.                                                                 |
 |initialSilenceTimeoutInSeconds | Int32| Silêncio inicial máximo permitido desde o momento em que iniciamos a operação de registro antes de tempo limite e a operação de falha. Se podemos estiver reproduzindo um prompt, este timer começa após a conclusão da prompt. |
 |maxSilenceTimeoutInSeconds|Int32| O tempo limite de silêncio máximo em segundos.|
 |maxRecordDurationInSeconds|Int32| A duração máxima de registro em segundos.|
-|playBeep|Booliano| Reproduz um alarme sonoro depois de reproduzir o prompt.|
-|streamWhileRecording|Booliano|Se definido como true, um local de recurso serão fornecidas assim que a gravação é iniciado. |
+|playBeep|Boolean| Reproduz um alarme sonoro depois de reproduzir o prompt.|
+|streamWhileRecording|Boolean|Se definido como true, um local de recurso serão fornecidas assim que a gravação é iniciado. |
 |stopTones|String collection|Pare de toques especificados para terminar gravação.|
-|ClientContext|String|O contexto de cliente.|
+|clientContext|String|O contexto de cliente.|
 
 ## <a name="response"></a>Resposta
 Retorna `202 Accepted` código de resposta e um cabeçalho de local com um uri para o [commsOperation](../resources/commsoperation.md) criado para essa solicitação.

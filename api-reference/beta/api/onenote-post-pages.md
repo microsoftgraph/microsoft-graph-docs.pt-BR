@@ -4,12 +4,12 @@ description: Crie uma nova página do OneNote na seção padrão do bloco de ano
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 9b8a48de889a0db5c6eea42fcbd64cae4ff23a43
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: c55a3f023ddaa50e7917aed8f1ec1b8bc9b8b6e7
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528701"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573456"
 ---
 # <a name="create-page"></a>Criar página
 
@@ -52,7 +52,7 @@ O corpo pode conter HTML colocado diretamente no corpo da solicitação ou pode 
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o código de resposta `201 Created` e o novo objeto [page](../resources/page.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `201 Created` código de resposta e o novo objeto [onenotePage](../resources/onenotepage.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação

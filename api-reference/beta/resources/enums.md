@@ -1,12 +1,12 @@
 ---
 title: valores de timeZoneStandard
 description: " Valor"
-ms.openlocfilehash: d011f204d1439d312c961445a0b1663b6ac8d60c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: fae641b0dbb7f87a55d5bca3db36c1f24c23ad29
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29428959"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574758"
 ---
 ### <a name="timezonestandard-values"></a>valores de timeZoneStandard
 
@@ -18,7 +18,7 @@ ms.locfileid: "29428959"
 
 ### <a name="freebusystatus-values"></a>valores de freeBusyStatus
 
-| Member            |Valor
+| Membro            |Valor
 |:------------------|:-------
 | livre              | 0
 | provisório         | 1
@@ -57,7 +57,7 @@ ms.locfileid: "29428959"
 
 ### <a name="calendarcolor-values"></a>valores de calendarColor
 
-| Member     | Valor
+| Membro     | Valor
 |:-----------|:----------
 | Automático       | -1
 | lightBlue  | 0
@@ -74,7 +74,7 @@ ms.locfileid: "29428959"
 
 ### <a name="educationsynchronizationprofilestate-values"></a>valores de educationSynchronizationProfileState
 
-| Member     | Valor
+| Membro     | Valor
 |:-----------|:----------
 | excluindo          | 2
 | deletionFailed    | 3
@@ -86,7 +86,7 @@ ms.locfileid: "29428959"
 
 ### <a name="educationsynchronizationstatus-values"></a>valores de educationSynchronizationStatus
 
-| Member     | Valor
+| Membro     | Valor
 |:-----------|:----------
 | em pausa          | 0
 | inProgress    | 1
@@ -260,7 +260,7 @@ ms.locfileid: "29428959"
 
 ### <a name="onenoteuserrole-values"></a>valores de onenoteUserRole
 
-| Member      | Valor
+| Membro      | Valor
 |:------------|:------------
 | Owner       | 0
 | Colaborador | 1
@@ -316,7 +316,7 @@ ms.locfileid: "29428959"
 
 | Valor
 |:-------------------------
-| automatic
+| Automático
 | noPreview
 | lista de verificação
 | description
@@ -422,7 +422,7 @@ ms.locfileid: "29428959"
 
 ### <a name="categorycolor-values"></a>valores de categoryColor
 
-| Member   |Valor    
+| Membro   |Valor    
 |:---------|:--------
 | none     | -1      
 | preset0  | 0       
@@ -641,3 +641,210 @@ Valores possíveis para tipos de conta de usuário (membros do grupo), por defin
 |Standard|0|Membro do grupo de usuários padrão.|
 |alimentação|1| Membro do grupo usuários avançados.|
 |administrador|2| Membro do grupo Administradores.|
+
+
+
+### <a name="scopeoperatortype-values"></a>valores de scopeOperatorType
+
+| Membro            |Valor
+|:------------------|:-------
+| binário              | 0
+| unário         | 1
+
+
+### <a name="scopeoperatormultivaluedcomparisontype-values"></a>valores de scopeOperatorMultiValuedComparisonType
+
+| Membro            |Valor
+|:------------------|:-------
+| todos os              | 0
+| qualquer         | 1
+
+
+### <a name="scopeoperatormultivaluedcomparisontype-values"></a>valores de scopeOperatorMultiValuedComparisonType
+
+| Membro            |Valor
+|:------------------|:-------
+| low              | 0
+| medium         | 1
+| high         | 2
+
+### <a name="exchangeidformat-values"></a>valores de exchangeIdFormat
+
+| Membro            |Valor
+|:------------------|:-------
+| entryId              | 0
+| ewsId         | 1
+| immutableEntryId         | 2
+| restId         | 2
+| restImmutableEntryId         | 2
+
+### <a name="risklevel-values"></a>valores de riskLevel
+
+| Valor           
+|:------------------
+| none
+| low
+| medium
+| high
+| hidden
+| unknownFutureValue
+
+### <a name="riskstate-values"></a>valores de riskState
+
+| Valor           
+|:------------------
+| none
+| low
+| medium
+| high
+| hidden
+| unknownFutureValue
+
+### <a name="riskdetail-values"></a>valores de riskDetail
+
+| Valor           
+|:------------------
+| none
+| adminGeneratedTemporaryPassword
+| userPerformedSecuredPasswordChange
+| userPerformedSecuredPasswordReset
+| adminConfirmedSigninSafe
+| aiConfirmedSigninSafe
+| userPassedMFADrivenByRiskBasedPolicy
+| adminDismissedAllRiskForUser
+| adminConfirmedSigninCompromised
+| unknownFutureValue
+
+# <a name="securitynetworkprotocol-values"></a>valores de securityNetworkProtocol
+
+|Membro|Valor|Descrição|
+|:---|:---|:---|
+|unknown|-1|Protocolo desconhecido.|
+|IP|0|Protocolo de Internet.|
+|ICMP|1| Protocolo de mensagem de controle de Internet.|
+|IGMP|2| Protocolo de gerenciamento de grupos da Internet.|
+|ggp|3| Protocolo de gateway a Gateway.|
+|IPv4|4| Internet Protocol versão 4.|
+|TCP|6| Protocolo de controle de transmissão.|
+|PUP|12| Protocolo de pacote Universal PARC.|
+|UDP|17| Protocolo de datagrama de usuário.|
+|IDP|22| Protocolo de datagrama de Internet.|
+|IPv6|41| Protocolo IP versão 6 (ipv6).|
+|ipv6RoutingHeader|43| cabeçalho de roteamento IPv6.|
+|ipv6FragmentHeader|44| cabeçalho de fragmento IPv6.|
+|ipSecEncapsulatingSecurityPayload|50| cabeçalho de carga de segurança de encapsulamento IPv6.|
+|ipSecAuthenticationHeader|51| cabeçalho de autenticação de IPv6.|
+|icmpV6|58| Protocolo de mensagem de controle da Internet para ipv6.|
+|ipv6NoNextHeader|59| IPv6 não próximo cabeçalho.|
+|ipv6DestinationOptions|60| cabeçalho de opções de destino de IPv6.|
+|término|77| NET protocolo de disco (não oficiais).|
+|brutos|255| Protocolo de pacote IP bruto.|
+|protocolo IPX|1000| Protocolo do Exchange de pacotes de Internet.|
+|SPX|1256| Protocolo de intercâmbio de pacote sequenciado.|
+|spxII|1257| Protocolo de versão 2 Exchange pacote sequenciado.|
+
+
+
+### <a name="referenceattachmentpermission-values"></a>valores de referenceAttachmentPermission
+
+| Membro            |Valor
+|:------------------|:-------
+| outros             | 0
+| modo de exibição              | 1
+| edit              | 2
+| anonymousView     | 3
+| anonymousEdit     | 4
+| organizationView  | 5
+| organizationEdit  | 6
+
+
+### <a name="referenceattachmentprovider-values"></a>valores de referenceAttachmentProvider
+
+| Membro            |Valor
+|:------------------|:-------
+| outros             | 0
+| oneDriveBusiness  | 1
+| oneDriveConsumer  | 2
+| pasta de recados           | 3
+
+### <a name="modality-values"></a>valores de modalidade
+
+| Membro                    |Valor
+|:--------------------------|:-------
+| unknown                   | 0
+| audio                     | 1
+| video                     | 2
+| videoBasedScreenSharing   | 3
+| data                      | 4
+
+### <a name="routingpolicy-values"></a>valores de routingPolicy
+
+| Membro                        |Valor
+|:------------------------------|:-------
+| none                          | 0
+| noMissedCall                  | 1
+| disableForwardingExceptPhone  | 2
+| disableForwarding             | 3
+
+### <a name="callstate-values"></a>valores de callState
+
+| Membro               |Valor
+|:---------------------|:-------
+| entrada             | 0
+| Estabelecendo         | 1
+| Toque              | 2
+| estabelecida          | 3
+| espera                 | 4
+| transferindo         | 5
+| transferAccepted     | 6
+| redirecionando          | 7
+| encerrando          | 8
+| terminada           | 9
+
+### <a name="calldirection-values"></a>valores de callDirection
+
+| Membro               |Valor
+|:---------------------|:-------
+| entrada             | 0
+| saída             | 1
+
+### <a name="attributetype-values"></a>valores de attributeType
+
+| Membro               |Valor
+|:---------------------|:-------
+| dateTime             | 5
+| booliano              | 4
+| binário               | 3
+| reference            | 2
+| inteiro              | 1
+| @string              | 0
+
+### <a name="operationstatus-values"></a>valores de operationStatus
+
+| Membro               |Valor
+|:---------------------|:-------
+| notStarted           | 0
+| em execução              | 1
+| concluído            | 2
+| Falha               | 3
+
+### <a name="operationstatus-values"></a>valores de operationStatus
+
+| Membro               |Valor
+|:---------------------|:-------
+| Padrão.              | 0
+| caixa postal 1
+
+### <a name="recordcompletionreason-values"></a>valores de recordCompletionReason
+
+| Membro                    |Valor
+|:--------------------------|:-------
+| operationCanceled         | 0
+| stopToneDetected          | 1
+| maxRecordDurationReached  | 2
+| initialSilenceTimeout     | 3
+| maxSilenceTimeout         | 4
+| playPromptFailed          | 5
+| playBeepFailed            | 6
+| mediaReceiveTimeout       | 7
+| unspecifiedError          | 8

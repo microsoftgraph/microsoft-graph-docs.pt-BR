@@ -2,12 +2,12 @@
 title: Atualizar serviceprincipal
 description: Atualize as propriedades do objeto serviceprincipal.
 localization_priority: Normal
-ms.openlocfilehash: a562bca03881923cfc21d32eadee2a7f7053fa9b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 946db869863d74a94e2e9adc04a66c8d9a50e4f5
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511657"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573855"
 ---
 # <a name="update-serviceprincipal"></a>Atualizar serviceprincipal
 
@@ -38,18 +38,18 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|accountEnabled|Booliano|                **true** se a conta de serviço principal estiver ativada; Caso contrário, **false**.            |
-|AppDisplayName|String|O nome de exibição exposto pelo aplicativo associado.|
-|appId|String|O identificador exclusivo para o aplicativo associado (sua propriedade **appId** ).|
-|appRoleAssignmentRequired|Booliano|Especifica se um **appRoleAssignment** a um usuário ou grupo é necessária antes que o Azure AD emitirá um usuário ou um token de acesso ao aplicativo.                            **Observações**: requer a versão 1.5 ou mais recente, não são nulas.            |
-|appRoles|appRole|As funções do aplicativo expostas pelo aplicativo associado. Para obter mais informações, consulte a definição da propriedade **appRoles** sobre a entidade de aplicativo **Notes**: requer a versão 1.5 ou mais recente, não são nulas.            |
+|accountEnabled|Boolean|                **true** se a conta de serviço principal estiver ativada; Caso contrário, **false**.            |
+|appDisplayName|String|O nome de exibição exposto pelo aplicativo associado.|
+|appId|Cadeia de caracteres|O identificador exclusivo para o aplicativo associado (sua propriedade **appId** ).|
+|appRoleAssignmentRequired|Boolean|Especifica se um **appRoleAssignment** a um usuário ou grupo é necessária antes que o Azure AD emitirá um usuário ou um token de acesso ao aplicativo.                            **Observações**: requer a versão 1.5 ou mais recente, não são nulas.            |
+|appRoles| coleção [microsoft.graph.appRole](../resources/approle.md)|As funções do aplicativo expostas pelo aplicativo associado. Para obter mais informações, consulte a definição da propriedade **appRoles** sobre a entidade de aplicativo **Notes**: requer a versão 1.5 ou mais recente, não são nulas.            |
 |displayName|String|O nome de exibição para a entidade de serviço.|
 |errorUrl|String|            |
-|HomePage|String|A URL para a home page do aplicativo associado.|
-|keyCredentials|keyCredential|A coleção de credenciais de chave associado ao serviço principal.                            **Anotações**: não anulável.            |
+|home page|String|A URL para a home page do aplicativo associado.|
+|keyCredentials|microsoft.graph.keyCredential|A coleção de credenciais de chave associado ao serviço principal.                            **Anotações**: não anulável.            |
 |logoutUrl|String| Especifica a URL que será usada pelo serviço de autorização da Microsoft para logout um usuário usando o [canal de frente](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [back-channel](https://openid.net/specs/openid-connect-backchannel-1_0.html) ou protocolos de logout SAML. |
-|oauth2Permissions|oAuth2Permission|As permissões de OAuth 2.0 expostas pelo aplicativo associado. Para obter mais informações, consulte a definição da propriedade **oauth2Permissions** sobre a entidade de aplicativo.                            **Observações**: requer a versão 1.5 ou mais recente, não são nulas.            |
-|passwordCredentials|passwordCredential|A coleção de credenciais de senha associadas a entidade de serviço.                            **Anotações**: não anulável.            |
+|oauth2Permissions|microsoft.graph.oAuth2Permission|As permissões de OAuth 2.0 expostas pelo aplicativo associado. Para obter mais informações, consulte a definição da propriedade **oauth2Permissions** sobre a entidade de aplicativo.                            **Observações**: requer a versão 1.5 ou mais recente, não são nulas.            |
+|passwordCredentials|microsoft.graph.passwordCredential|A coleção de credenciais de senha associadas a entidade de serviço.                            **Anotações**: não anulável.            |
 |preferredTokenSigningKeyThumbprint|String|Reservado para uso interno apenas. Não gravar ou caso contrário, contam com esta propriedade. Pode ser removido em futuras versões.                            **Observações**: requer a versão 1.5 ou mais recente.            |
 |publisherName|Cadeia de caracteres|O nome de exibição do inquilino no qual o aplicativo associado for especificado.|
 |replyUrls|String|As URLs que os tokens do usuário são enviados para entrada com o aplicativo associado ou o redirecionamento códigos de autorização de URIs que OAuth 2.0 e tokens de acesso são enviados para o aplicativo associado.                            **Anotações**: não anulável.            |
@@ -97,7 +97,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.serviceprincipal"
+  "@odata.type": "microsoft.graph.servicePrincipal"
 } -->
 ```http
 HTTP/1.1 200 OK

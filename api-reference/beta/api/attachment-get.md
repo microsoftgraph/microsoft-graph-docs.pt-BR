@@ -2,12 +2,12 @@
 title: Obter anexo
 description: Leia as propriedades e relacionamentos de um anexo, anexados a um evento, mensagem, tarefa do Outlook ou postagem.
 localization_priority: Normal
-ms.openlocfilehash: b346461dad8b0a15d12d0882e0fe8aa4cc2d4774
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 650892a13fd4977697fa17788c509542b4f1b415
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509494"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574346"
 ---
 # <a name="get-attachment"></a>Obter anexo
 
@@ -27,8 +27,8 @@ Todos esses tipos de recursos de anexo são derivados do recurso [attachment](..
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-* Se estiver acessando anexos em mensagens: Mail.Read.
-* Se estiver acessando anexos em eventos: Calendars.Read.
+* Se acessando anexos em mensagens: Mail.Read
+* Se acessando anexos em eventos: Calendars.Read
 * Se acessando anexos em tarefas do Outlook: Tasks.Read
 * Se acessando anexos em postagens de grupo: Group.Read.All
 
@@ -67,7 +67,8 @@ GET /me/mailFolders/{id}/messages/{id}/attachments/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments/{id}
 ```
 
-Anexos de uma [message](../resources/message.md) contidos em uma pasta filha de uma [mailFolder](../resources/mailfolder.md) na caixa de correio de um usuário.  O exemplo a seguir mostra um nível de aninhamento, mas uma mensagem pode estar localizada em um filho de um filho, e assim por diante.
+Anexos de uma [mensagem](../resources/message.md) contidos em uma pasta filho de um [mailFolder](../resources/mailfolder.md) na caixa de correio do usuário.  O exemplo a seguir mostra um nível de aninhamento, mas uma mensagem pode estar localizada no filho de um filho e assim por diante.
+<!-- { "blockType": "ignored" } -->
 
 ```http
 GET /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
@@ -137,7 +138,7 @@ Content-type: application/json
 Content-length: 199
 
 {
-  "@odata.type": "#microsoft.graph.fileAttachment",
+  "@odata.type": "microsoft.graph.fileAttachment",
   "contentType": "contentType-value",
   "contentLocation": "contentLocation-value",
   "contentBytes": "contentBytes-value",

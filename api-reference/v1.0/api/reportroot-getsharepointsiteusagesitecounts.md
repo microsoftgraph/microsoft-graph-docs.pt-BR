@@ -3,12 +3,13 @@ title: 'reportRoot: getSharePointSiteUsageSiteCounts'
 description: Obtenha o número total de arquivos em todos os sites e o número de arquivos ativos. Um arquivo (usuário ou sistema) é considerado ativo se ele foi salvo, sincronizado, modificado ou compartilhado dentro do período de tempo especificado.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: c4b9e5c24bc30e73336941f0a5fe9cee571bf879
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: e0d55b24bc22c64adb7a17fe8fa3a56284301f00
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27957967"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572889"
 ---
 # <a name="reportroot-getsharepointsiteusagesitecounts"></a>reportRoot: getSharePointSiteUsageSiteCounts
 

@@ -3,12 +3,13 @@ title: 'reportRoot: getOffice365GroupsActivityStorage'
 description: Obtenha o armazenamento total usado em todas as caixas de correio de grupo e sites de grupo.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 034fd610dd321f09600c28e599cc43aebb8cda0e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: 4248251bac7146334dc97e8101f29d53faacf2d5
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528505"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571671"
 ---
 # <a name="reportroot-getoffice365groupsactivitystorage"></a>reportRoot: getOffice365GroupsActivityStorage
 

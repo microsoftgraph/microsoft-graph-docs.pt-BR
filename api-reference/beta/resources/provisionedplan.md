@@ -1,13 +1,13 @@
 ---
 title: Tipo de recurso provisionedPlan
-description: A propriedade **provisionedPlans** das entidades **user** e organization é uma coleção de provisionedPlan.
+description: A propriedade **provisionedPlans** das entidades user e organization é uma coleção de **provisionedPlan**.
 localization_priority: Normal
-ms.openlocfilehash: 5f9d9c5b2dfffb86643c5e355799f46382bc38cd
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: be19bb49409751ae5d7a0f11387e74770fde333b
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527812"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572546"
 ---
 # <a name="provisionedplan-resource-type"></a>Tipo de recurso provisionedPlan
 
@@ -19,9 +19,9 @@ A propriedade **provisionedPlans** das entidades [user](user.md) e [organization
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|capabilityStatus|String|Por exemplo, “Enabled”.|
+|capabilityStatus|Cadeia de caracteres|Por exemplo, “Enabled”.|
 |provisioningStatus|Cadeia de caracteres|Por exemplo, "Success".|
-|service|String|O nome do serviço; por exemplo, "AccessControlS2S".|
+|service|Cadeia de caracteres|O nome do serviço; por exemplo, "AccessControlS2S".|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -32,7 +32,7 @@ Veja a seguir uma representação JSON do recurso
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.provisionedplan"
+  "@odata.type": "microsoft.graph.provisionedPlan"
 }-->
 
 ```json

@@ -2,12 +2,12 @@
 title: Tipo de recurso de ponto de extremidade
 description: 'Pontos de extremidade representam URLs para recursos associados a uma entidade.  Por exemplo, quando um novo grupo do Office 365 é criado, recursos adicionais também são criados como parte do grupo do Office 365. Eles incluem coisas como uma caixa de correio de grupo para conversas e uma pasta de OneDrive de grupo para documentos e arquivos. Mais informações sobre esses recursos de grupo do Office 365, incluindo suas URLs de recurso associado agora podem ser lido usando a navegação de *pontos de extremidade* no tipo de recurso de grupo. Isso permite que aplicativos entender esses recursos e até mesmo incorporar o recurso que URL experiências em suas próprias experiências. '
 localization_priority: Normal
-ms.openlocfilehash: 6f923cdeb34ec0845d776a67f51db490256ec718
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 39a6a2d8213e809f426c492654272aa994c25a6d
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512056"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574479"
 ---
 # <a name="endpoint-resource-type"></a>Tipo de recurso de ponto de extremidade
 
@@ -25,10 +25,10 @@ Pontos de extremidade representam URLs para recursos associados a uma entidade. 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| Recursos     | String  | Descreve o recurso que está associado a esse recurso. (por exemplo, mensagens, conversas, etc.)  Não são nulas. Somente leitura. |
+| recurso     | String  | Descreve o recurso que está associado a esse recurso. (por exemplo, mensagens, conversas, etc.)  Não são nulas. Somente leitura. |
 | id             | String  | Identificador exclusivo para o ponto de extremidade; Tecla. Não anulável. Somente leitura.|
-| ProviderID     | String  | Id do aplicativo de publicação do serviço subjacente. Não anulável. Somente leitura.|
-| ProviderName   | String  | Nome da publicação do serviço subjacente. Somente leitura.|
+| providerId     | String  | Id do aplicativo de publicação do serviço subjacente. Não anulável. Somente leitura.|
+| providerName   | String  | Nome da publicação do serviço subjacente. Somente leitura.|
 | providerResourceId|String| Para grupos do Office 365, isso é definido como um nome conhecido do recurso (por exemplo, Yammer.FeedURL etc.). Não anulável. Somente leitura.|
 | URI            | String  | URL do recurso publicado. Não anulável. Somente leitura.|
 
@@ -45,7 +45,7 @@ Veja a seguir uma representação JSON do recurso.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.Endpoint"
+  "@odata.type": "microsoft.graph.endpoint"
 }-->
 
 ```json

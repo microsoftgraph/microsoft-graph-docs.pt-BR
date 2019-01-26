@@ -3,12 +3,13 @@ title: Relatórios de atividades do Yammer
 description: Você pode compreender o nível de participação da sua organização com o Yammer por quanto atividade é gerada entre a organização e o número de usuários exclusivos que postar, like e ler mensagens no Yammer.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 252748b639f256467b2a01336488e1df086c69cd
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: d5953d8bd53158b2ec0532deb47c48028ba1b8c9
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509935"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571797"
 ---
 # <a name="yammer-activity-reports"></a>Relatórios de atividades do Yammer
 
@@ -22,9 +23,9 @@ Você pode compreender o nível de participação da sua organização com o Yam
 
 | Função                                 | Tipo de retorno de CSV | Tipo de retorno JSON                         | Descrição                              |
 | :--------------------------------------- | :-------------- | :--------------------------------------- | ---------------------------------------- |
-| [Obter dados de usuário](../api/reportroot-getyammeractivityuserdetail.md) | Stream          | [yammerActivityUserDetail](../resources/yammeractivityuserdetail.md) | Obtenha dados sobre as atividades do Yammer por usuário. |
+| [Obter dados de usuário](../api/reportroot-getyammeractivityuserdetail.md) | Fluxo          | [yammerActivityUserDetail](../resources/yammeractivityuserdetail.md) | Obtenha dados sobre as atividades do Yammer por usuário. |
 | [Obter contagens de atividade](../api/reportroot-getyammeractivitycounts.md) | Fluxo          | [yammerActivitySummary](../resources/yammeractivitysummary.md) | Obtenha as tendências da quantidade de atividade do Yammer em sua organização por quantas mensagens foram postadas, lidas e curtidas. |
-| [Obter contagens de usuários](../api/reportroot-getyammeractivityusercounts.md) | Stream          | [yammerActivitySummary](../resources/yammeractivitysummary.md) | Obtenha as tendências do número de usuários exclusivos que postaram, leram e curtiram mensagens do Yammer. |
+| [Obter contagens de usuários](../api/reportroot-getyammeractivityusercounts.md) | Fluxo          | [yammerActivitySummary](../resources/yammeractivitysummary.md) | Obtenha as tendências do número de usuários exclusivos que postaram, leram e curtiram mensagens do Yammer. |
 <!--
 {
   "type": "#page.annotation",

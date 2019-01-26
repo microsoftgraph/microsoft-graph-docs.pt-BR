@@ -4,12 +4,12 @@ description: 'Um teamsTab é uma guia que tem fixados (anexado) a um canal de um
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 305b8d530eb0b10a658a1b5e5051f7854e3919ee
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 181d2fd23ff922709b3e098f6069adf300ad3928
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917773"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574667"
 ---
 # <a name="teamstab-resource-type"></a>tipo de recurso de teamsTab
 
@@ -34,7 +34,6 @@ Um teamsTab é uma [guia](../resources/teamstab.md) que tem fixados (anexado) a 
 |:---------------|:--------|:----------|
 |  id              |   string                  |  Identificador que identifica exclusivamente uma instância específica de um canal na guia leitura apenas.     |
 |  displayName            |   string                  |  Nome da guia.     |
-|  sortOrderIndex  |   int                     |  Índice da ordem usada para classificar as guias     |
 |  webUrl          |   string                  |  Link profundo url da instância do guia. Somente leitura.     |
 |  configuration        |   [teamsTabConfiguration](teamstabconfiguration.md) |  Contêiner de configurações personalizadas aplicadas a uma guia. Na guia é considerada configurado somente depois que essa propriedade for definida.     |
 
@@ -59,7 +58,6 @@ Veja a seguir uma representação JSON do recurso.
 {  
   "id": "string",
   "displayName": "string",
-  "sortOrderIndex": "string",
   "webUrl": "string",
   "configuration" : "teamsTabConfiguration"
 }

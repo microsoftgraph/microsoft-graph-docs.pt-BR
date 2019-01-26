@@ -4,12 +4,12 @@ description: 'Um teamsTab é uma guia que tem fixados (anexado) a um canal de um
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 2db59065f139e2e704c3394f7afb82cba91c33fe
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 207b9d1d4d27199f07ae22bd47587411f917afae
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509284"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574947"
 ---
 # <a name="teamstab-resource-type"></a>tipo de recurso de teamsTab
 
@@ -36,11 +36,11 @@ Um teamsTab é uma [guia](../resources/teamstab.md) que tem fixados (anexado) a 
 |  displayName            |   string                  |  Nome da guia.     |
 |  name            |   string                  |  (Obsoleto) Nome da guia.     |
 |  teamsAppId           |   string             |  Identificador de definição de aplicativo da guia. Este valor não pode ser alterado após a criação da guia.     |
-|  sortOrderIndex  |   int                     |  Índice da ordem usada para classificar as guias.     |
+|  sortOrderIndex  |   string                  |  Índice da ordem usada para classificar as guias.     |
 |  webUrl          |   string                  |  Link profundo url da instância do guia. Somente leitura.     |
 |  configuration        |   [teamsTabConfiguration](teamstabconfiguration.md) |  Contêiner de configurações personalizadas aplicadas a uma guia. Na guia é considerada configurado somente depois que essa propriedade for definida.     |
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 
 | Relação | Tipo   | Descrição |
 |:---------------|:--------|:----------|

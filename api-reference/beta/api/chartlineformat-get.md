@@ -4,12 +4,12 @@ description: Recupera as propriedades e os relacionamentos do objeto chartlinefo
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: a84e0d9c31f08ac8fe6396cb73e2fd7fb0993e0c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: f4750168617058a9d46ef4cb90fc91a0fbb0a89d
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511815"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29570712"
 ---
 # <a name="get-chartlineformat"></a>Obter ChartLineFormat
 
@@ -62,7 +62,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartLineFormat"
+  "@odata.type": "microsoft.graph.workbookChartLineFormat"
 } -->
 ```http
 HTTP/1.1 200 OK

@@ -4,12 +4,12 @@ description: Representa os serviços do Outlook disponíveis para um usuário.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: a649de502728bbc51ac53e072c08d95291d20853
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: f8265f9da285ce0f52e6201ffdb1298893b86753
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518447"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574093"
 ---
 # <a name="outlookuser-resource-type"></a>Tipo de recurso outlookUser
 
@@ -37,14 +37,25 @@ Representa os serviços do Outlook disponíveis para um usuário.
 ## <a name="properties"></a>Propriedades
 Nenhum
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |masterCategories|Coleção [outlookCategory](../resources/outlookcategory.md)| Uma lista de categorias definidas para o usuário. | 
 |taskFolders|coleção [outlookTaskFolder](outlooktaskfolder.md)| Pastas de tarefas do Outlook do usuário. Somente leitura. Anulável.|
-|TaskGroups|coleção [outlookTaskGroup](outlooktaskgroup.md)| Grupos de tarefas do Outlook do usuário. Somente leitura. Anulável.|
+|taskGroups|coleção [outlookTaskGroup](outlooktaskgroup.md)| Grupos de tarefas do Outlook do usuário. Somente leitura. Anulável.|
 |tarefas|coleção [outlookTask](outlooktask.md)| Tarefas do Outlook do usuário. Somente leitura. Anulável.|
 
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [ ],
+  "@type": "microsoft.graph.outlookUser"
+}-->
+```json
+{
+}
+
+```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--

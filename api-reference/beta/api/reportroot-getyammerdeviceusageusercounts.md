@@ -3,12 +3,13 @@ title: 'reportRoot: getYammerDeviceUsageUserCounts'
 description: Obtenha o número de usuários diários por tipo de dispositivo.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: bee50d497bb44ccdfdc5d7e9940818f639c39fa9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: 97858c2875154af06adeccdf0541b3162d6381f6
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510376"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571440"
 ---
 # <a name="reportroot-getyammerdeviceusageusercounts"></a>reportRoot: getYammerDeviceUsageUserCounts
 

@@ -2,14 +2,14 @@
 title: tipo de recurso de governanceSchedule
 description: 'Representa o agendamento para um governanceRoleAssignmentRequest. Para uma solicitação de atribuição de função, controla a agenda quando executar a operação de atribuição de função, quando parar de atribuição de função e a frequência de realizar a operação de atribuição de função. '
 localization_priority: Normal
-ms.openlocfilehash: d7ccfe74804166ad2204ea02c072d79341cf75e7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 11ac010829309c9b701e20da8ad40ebf905e02ba
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508024"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575248"
 ---
-# <a name="governanceschedule-resource-type"></a>tipo de recurso de governanceSchedule
+# <a name="microsoftgraphgovernanceschedule-resource-type"></a>tipo de recurso de microsoft.graph.governanceSchedule
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

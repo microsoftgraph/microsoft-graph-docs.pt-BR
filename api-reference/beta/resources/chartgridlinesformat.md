@@ -4,12 +4,12 @@ description: Abrange as propriedades de formatação das linhas de grade do grá
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 542180d54f3dedc6ef9e1b4b2ea0deaf9bda8fb9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: cf2e9f1202774cc971cc09a2ce1904df2e1fb5a2
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526778"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573281"
 ---
 # <a name="chartgridlinesformat-resource-type"></a>Tipo de recurso ChartGridlinesFormat
 
@@ -19,15 +19,34 @@ Abrange as propriedades de formatação das linhas de grade do gráfico.
 
 
 ## <a name="methods"></a>Métodos
-Nenhuma
+Nenhum
 
 ## <a name="properties"></a>Propriedades
 Nenhum
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|line|[ChartLineFormat](chartlineformat.md)|Representa a formatação de linha do gráfico. Somente leitura.|
+|line|[WorkbookChartLineFormat](chartlineformat.md)|Representa a formatação de linha do gráfico. Somente leitura.|
+
+
+## <a name="json-representation"></a>Representação JSON
+
+Veja a seguir uma representação JSON do recurso.
+
+<!--{
+  "blockType": "resource",
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookChartGridlinesFormat"
+}-->
+
+```json
+{
+  "line": {"@odata.type": "microsoft.graph.workbookChartLineFormat"}
+}
+```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -3,12 +3,13 @@ title: Relatórios de atividades do OneDrive
 description: Você pode obter a atividade de todos os usuários licenciados para usar o OneDrive examinando sua interação com os arquivos no OneDrive. Ele também ajuda a entender o nível de colaboração em andamento, mostrando o número de arquivos compartilhados.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 9075bd042a0c27debc8017a007351428191e9d43
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: d545f1d92beee89e19eb47cfd8c6ba8c391c5349
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519224"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574002"
 ---
 # <a name="onedrive-activity-reports"></a>Relatórios de atividades do OneDrive
 
@@ -22,9 +23,9 @@ Você pode obter a atividade de todos os usuários licenciados para usar o OneDr
 
 | Função                                 | Tipo de retorno de CSV | Tipo de retorno JSON                         | Descrição                              |
 | :--------------------------------------- | :-------------- | :--------------------------------------- | ---------------------------------------- |
-| [Obter dados de usuário](../api/reportroot-getonedriveactivityuserdetail.md) | Stream          | [oneDriveActivityUserDetail](../resources/onedriveactivityuserdetail.md) | Obtenha dados sobre as atividades do OneDrive por usuário. |
+| [Obter dados de usuário](../api/reportroot-getonedriveactivityuserdetail.md) | Fluxo          | [oneDriveActivityUserDetail](../resources/onedriveactivityuserdetail.md) | Obtenha dados sobre as atividades do OneDrive por usuário. |
 | [Obter contagens de usuários](../api/reportroot-getonedriveactivityusercounts.md) | Fluxo          | [siteActivitySummary](../resources/siteactivitysummary.md) | Obtenha a tendência no número de usuários ativos do OneDrive. |
-| [Obter contagens de arquivo](../api/reportroot-getonedriveactivityfilecounts.md) | Stream          | [siteActivitySummary](../resources/siteactivitysummary.md) | Obtenha o número de usuários únicos licenciados que realizaram interações de arquivos contra qualquer conta do OneDrive. |
+| [Obter contagens de arquivo](../api/reportroot-getonedriveactivityfilecounts.md) | Fluxo          | [siteActivitySummary](../resources/siteactivitysummary.md) | Obtenha o número de usuários únicos licenciados que realizaram interações de arquivos contra qualquer conta do OneDrive. |
 <!--
 {
   "type": "#page.annotation",

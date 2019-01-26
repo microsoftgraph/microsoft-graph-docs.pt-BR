@@ -2,12 +2,12 @@
 title: tipo de recurso appRole
 description: Representa uma função de aplicativo que podem ser solicitados por um aplicativo cliente chamar outro aplicativo ou que podem ser usadas para atribuir um aplicativo a usuários ou grupos em uma função de aplicativo especificado. A propriedade **appRoles** da entidade servicePrincipal e da entidade do aplicativo é uma coleção de **appRole**.
 localization_priority: Normal
-ms.openlocfilehash: 8a367406c64cf9d0d3da49716aeaf6ca3c1fa687
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 6f587c15073cf2ad5f6b9973de8f7ef66c294294
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525791"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571251"
 ---
 # <a name="approle-resource-type"></a>tipo de recurso appRole
 
@@ -26,7 +26,7 @@ Veja a seguir uma representação JSON do recurso
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.approle"
+  "@odata.type": "microsoft.graph.appRole"
 }-->
 
 ```json

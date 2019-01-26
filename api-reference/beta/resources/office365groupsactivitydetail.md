@@ -3,12 +3,13 @@ title: tipo de recurso de office365GroupsActivityDetail
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 2968a3a5459f286e4aac69e2fd606adc1b38e39b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: 1b467f73ed2a4a5e48cb1243c5b1326591bcd707
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27951821"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575115"
 ---
 # <a name="office365groupsactivitydetail-resource-type"></a>tipo de recurso de office365GroupsActivityDetail
 
@@ -18,7 +19,7 @@ ms.locfileid: "27951821"
 | :-------------------------------- | :------ | ---------------------------------------- |
 | reportRefreshDate                 | Data    | A última data do conteúdo.          |
 | groupDisplayName                  | String  | O nome de exibição do grupo.           |
-| isDeleted                         | Booliano | Se esse usuário tiver sido excluído ou suave excluído. |
+| isDeleted                         | Boolean | Se esse usuário tiver sido excluído ou suave excluído. |
 | ownerPrincipalName                | String  | O nome de entidade do proprietário do grupo.          |
 | lastActivityDate                  | Data    | A data da última atividade para os seguintes cenários: email da caixa de correio recebida; de grupo usuário exibido, editado, compartilhados ou sincronizados arquivos na biblioteca de documentos do SharePoint; usuário exibir páginas do SharePoint; usuário postados, ler ou curtidas mensagens no Yammer grupos. |
 | groupType                         | String  | O tipo de grupo. Os valores possíveis são: **pública** ou **privada**. |

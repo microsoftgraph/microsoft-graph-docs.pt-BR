@@ -4,12 +4,12 @@ description: Traduza os identificadores de recursos relacionados ao Outlook entr
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a00368c918685f6f94020dbea655232bae58ad57
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 3b09ae9bf6a1cbf1967a900770b07d8c9750ba21
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528225"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571286"
 ---
 # <a name="user-translateexchangeids"></a>usuário: translateExchangeIds
 
@@ -54,7 +54,7 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 | Valores | Descrição |
 |:-------|:------------|
-| EntryID | O formato de ID de entrada binário usado pelos clientes MAPI. |
+| entryId | O formato de ID de entrada binário usado pelos clientes MAPI. |
 | ewsId | O formato de ID usado pelos clientes de serviços Web do Exchange. |
 | immutableEntryId | O compatível com MAPI imutável ID formato binário. |
 | restId | O formato de ID padrão usado pelo Microsoft Graph. |
@@ -62,8 +62,8 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 Formatos binários (`entryId` e `immutableEntryId`) são URL-safe codificação base64. URL-safeness é implementado, modificando a codificação base64 dos dados binários da seguinte maneira:
 
-- `+`
-- `/`
+- Substituir `+` com`-`
+- Substituir `/` com`_`
 - Remova os caracteres de preenchimento à direita (`=`)
 - Adicionar um número inteiro até o final da cadeia de caracteres indicando quantos caracteres de preenchimento estavam em original (`0`, `1`, ou `2`)
 
@@ -114,11 +114,11 @@ Content-type: application/json
   "@odata.context": "https://graph.microsoft.com/testexchangebeta/$metadata#Collection(microsoft.graph.convertIdResult)",
   "value": [
     {
-      "sourceId": "{rest-formatted-id-1},
+      "sourceId": "{rest-formatted-id-1}",
       "targetId": "{rest-immutable-formatted-id-1}"
     },
     {
-      "sourceId": "{rest-formatted-id-2},
+      "sourceId": "{rest-formatted-id-2}",
       "targetId": "{rest-immutable-formatted-id-2}"
     }
   ]

@@ -3,12 +3,13 @@ title: tipo de recurso de office365ActiveUserDetail
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 14c785069868783b1e248b41a5b339c9adb4710a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: 192629623b0a0d46453f4dd4f9bfd7f1dc48cccf
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27929278"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575367"
 ---
 # <a name="office365activeuserdetail-resource-type"></a>tipo de recurso de office365ActiveUserDetail
 
@@ -17,16 +18,16 @@ ms.locfileid: "27929278"
 | Propriedade                          | Tipo              | Descrição                              |
 | :-------------------------------- | :---------------- | ---------------------------------------- |
 | reportRefreshDate                 | Data              | A última data do conteúdo.          |
-| userPrincipalName                 | Cadeia de caracteres            | O usuário nome principal (UPN) do usuário. O UPN é um nome de logon estilo Internet para o usuário com base na Internet padrão RFC 822. Por convenção, isso deve ser mapeada para o nome de email do usuário. O formato geral é alias@domain, onde o domínio deve estar presente na coleção de locatário de domínios verificados. Essa propriedade é obrigatória quando um usuário é criado. |
+| userPrincipalName                 | String            | O usuário nome principal (UPN) do usuário. O UPN é um nome de logon estilo Internet para o usuário com base na Internet padrão RFC 822. Por convenção, isso deve ser mapeada para o nome de email do usuário. O formato geral é alias@domain, onde o domínio deve estar presente na coleção de locatário de domínios verificados. Essa propriedade é obrigatória quando um usuário é criado. |
 | displayName                       | String            | O nome exibido para o usuário no catálogo de endereços. Geralmente é a combinação do nome, da inicial do nome do meio e do sobrenome do usuário. Essa propriedade é obrigatória quando um usuário é criado e não pode ser apagado durante atualizações. |
-| isDeleted                         | Booliano           | Se esse usuário tiver sido excluído ou suave excluído. |
+| isDeleted                         | Boolean           | Se esse usuário tiver sido excluído ou suave excluído. |
 | deletedDate                       | Data              | A data quando a operação de exclusão aconteceu. Valor padrão é "nulo" quando o usuário não foi excluído. |
-| hasExchangeLicense                | Booliano           | Se o usuário tenha sido atribuído uma licença do Exchange. |
-| hasOneDriveLicense                | Booliano           | Se o usuário tenha sido atribuído uma licença do OneDrive. |
-| hasSharePointLicense              | Booliano           | Se o usuário tenha sido atribuído uma licença do SharePoint. |
-| hasSkypeForBusinessLicense        | Booliano           | Se o usuário tenha sido atribuído uma licença do Skype para negócios. |
-| hasYammerLicense                  | Booliano           | Se o usuário tenha sido atribuído uma licença do Yammer. |
-| hasTeamsLicense                   | Booliano           | Se o usuário tenha sido atribuído uma licença de equipes. |
+| hasExchangeLicense                | Boolean           | Se o usuário tenha sido atribuído uma licença do Exchange. |
+| hasOneDriveLicense                | Boolean           | Se o usuário tenha sido atribuído uma licença do OneDrive. |
+| hasSharePointLicense              | Boolean           | Se o usuário tenha sido atribuído uma licença do SharePoint. |
+| hasSkypeForBusinessLicense        | Boolean           | Se o usuário tenha sido atribuído uma licença do Skype para negócios. |
+| hasYammerLicense                  | Boolean           | Se o usuário tenha sido atribuído uma licença do Yammer. |
+| hasTeamsLicense                   | Boolean           | Se o usuário tenha sido atribuído uma licença de equipes. |
 | exchangeLastActivityDate          | Data              | A data quando o usuário última leitura ou enviado um email. |
 | oneDriveLastActivityDate          | Data              | A data quando o usuário última exibidos ou editados arquivos, arquivos compartilhados interna ou externamente ou sincronizados arquivos. |
 | sharePointLastActivityDate        | Data              | A data quando o usuário última exibidos ou editados arquivos, shared arquivos internamente ou externamente, sincronizados arquivos ou exibidos páginas do SharePoint. |

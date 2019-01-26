@@ -1,15 +1,15 @@
 ---
-title: Tipo de recurso RangeFormat
-description: Um objeto de formatação que engloba a fonte, o preenchimento, as bordas, o alinhamento e outras propriedades do intervalo.
+title: tipo de recurso de rangeFormat
+description: Um objeto de formato que encapsula a fonte, o preenchimento, as bordas, o alinhamento e outras propriedades do intervalo.
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 58ed56b11b571237211307c8fb0dd1abaf27761f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 1394153a09a30c273280dab5469a40e2e0c2c4ad
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511356"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572420"
 ---
 # <a name="rangeformat-resource-type"></a>Tipo de recurso RangeFormat
 
@@ -22,10 +22,10 @@ Um objeto de formatação que engloba a fonte, o preenchimento, as bordas, o ali
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|Get RangeFormat | [RangeFormat](rangeformat.md) |Leia as propriedades e relacionamentos do objeto rangeFormat.|
-|Create RangeBorder |RangeBorder| Crie uma nova RangeBorder postando na coleção de bordas.|
-|List borders |Coleção RangeBorder| Obtenha uma coleção de objetos RangeBorder.|
-|[Update](../api/rangeformat-update.md) | [RangeFormat](rangeformat.md) |Atualize o objeto RangeFormat. |
+|[Get RangeFormat](../api/rangeformat-get.md) | [RangeFormat](rangeformat.md) |Leia as propriedades e relacionamentos do objeto rangeFormat.|
+|[Create RangeBorder](../api/rangeformat-post-borders.md) |[rangeBorder](rangeborder.md)| Crie uma nova RangeBorder postando na coleção de bordas.|
+|[List borders](../api/rangeformat-list-borders.md) |coleção [rangeBorder](rangeborder.md)| Obtenha uma coleção de objetos RangeBorder.|
+|[Update](../api/rangeformat-update.md) | [rangeFormat](rangeformat.md) |Atualize o objeto RangeFormat. |
 |[Autofitcolumns](../api/rangeformat-autofitcolumns.md)|Nenhum|Altera a largura das colunas do intervalo atual para obter o melhor ajuste, com base nos dados atuais nas colunas.|
 |[Autofitrows](../api/rangeformat-autofitrows.md)|Nenhum|Altera a altura das linhas do intervalo atual para obter o melhor ajuste, com base nos dados atuais nas colunas.|
 
@@ -41,10 +41,10 @@ Um objeto de formatação que engloba a fonte, o preenchimento, as bordas, o ali
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|borders|Coleção [RangeBorder](rangeborder.md)|Coleção de objetos de borda que se aplicam a todo o intervalo selecionado. Somente leitura.|
-|fill|[RangeFill](rangefill.md)|Retorna o objeto de preenchimento definido em todo o intervalo. Somente leitura.|
-|font|[RangeFont](rangefont.md)|Retorna o objeto Font definido em todo o intervalo selecionado. Somente leitura.|
-|protection|[FormatProtection](formatprotection.md)|Retorna o objeto de proteção de formato para um intervalo. Somente leitura.|
+|borders|coleção [rangeBorder](rangeborder.md)|Coleção de objetos de borda que se aplicam a todo o intervalo selecionado. Somente leitura.|
+|fill|[rangeFill](rangefill.md)|Retorna o objeto de preenchimento definido em todo o intervalo. Somente leitura.|
+|font|[rangeFont](rangefont.md)|Retorna o objeto Font definido em todo o intervalo selecionado. Somente leitura.|
+|protection|[formatProtection](formatprotection.md)|Retorna o objeto de proteção de formato para um intervalo. Somente leitura.|
 
 ## <a name="json-representation"></a>Representação JSON
 

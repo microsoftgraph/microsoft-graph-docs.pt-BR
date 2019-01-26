@@ -4,12 +4,12 @@ description: Atualize as propriedades do objeto rangeformat.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 2bd576fcb30facd220e9abf7a8a1fee8d22f80a7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: b1b3f768af0efe94c5b14177c5e70bbe9a642174
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524489"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574422"
 ---
 # <a name="update-rangeformat"></a>Atualizar rangeformat
 
@@ -326,7 +326,7 @@ PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/S
 Content-type: application/json
 
 {
-  "underline": "Single",
+  "underline": "None",
   "color": "#FFFFFF",
   "size": 26
 }
@@ -348,7 +348,7 @@ Content-type: application/json
     "italic": false,
     "name": "Calibri",
     "size": 26,
-    "underline": "Single"
+    "underline": "None"
 }
 ```
 
@@ -368,7 +368,7 @@ Content-type: application/json
 }
 ```
 ##### <a name="response"></a>Resposta
-Este é um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

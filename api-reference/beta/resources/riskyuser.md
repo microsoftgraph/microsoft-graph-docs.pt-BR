@@ -4,12 +4,12 @@ description: Representa os usuários do Windows Azure AD que estão em risco. Az
 author: cloudhandler
 localization_priority: Normal
 ms.prod: security
-ms.openlocfilehash: 27c189a81d6ba4e088c1242acfd2cf0d0f5c56c5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 875df6db36e4075d0d02a682ede5c177d49cfe7d
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515710"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572182"
 ---
 # <a name="riskyusers-resource-type"></a>tipo de recurso de riskyUsers
 
@@ -42,13 +42,13 @@ Para obter mais informações sobre eventos de risco, consulte [Proteção de id
 |`userDisplayName`|`string`|Nome de exibição do usuário riscado|
 |`userPrincipalName`|`string`|Nome principal de usuário riscado|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 
 | Relação | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|id|UserObjectId| O identificador exclusivo do usuário com a qual um evento de determinado risco está associado.|
-|isGuest|isGuest| Um usuário riscado poderia ser um usuário Home (B2E) ou um usuário convidado (B2B, B2C).|
-|isDeleted|isDeleted| Um usuário pode ou não pode ser excluído. |
+|id|string| O identificador exclusivo do usuário com a qual um evento de determinado risco está associado.|
+|isGuest|booliano| Um usuário riscado poderia ser um usuário Home (B2E) ou um usuário convidado (B2B, B2C).|
+|isDeleted|booliano| Um usuário pode ou não pode ser excluído. |
 |riskState|riskState| Um usuário riscado pode existir em um dos vários estados. |
 |riskDetail|riskDetail| Um usuário riscado poderia ser em um determinado estado por vários motivos. |
 |riskLevel|riskLevel| Um usuário riscado poderia ser considerado um dos vários níveis de risco. |
@@ -60,9 +60,8 @@ Veja a seguir uma representação JSON do recurso.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
   ],
-  "@odata.type": "microsoft.graph.riskyusers"
+  "@odata.type": "microsoft.graph.riskyUser"
 }-->
 
 ```json

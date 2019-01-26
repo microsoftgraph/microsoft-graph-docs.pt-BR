@@ -3,12 +3,13 @@ title: 'reportRoot: getMailboxUsageMailboxCounts'
 description: Obtenha o número total de caixas de correio de usuários em sua organização e quantas são ativas a cada dia do período de relatório. Uma caixa postal é considerada ativa se o usuário enviou ou leu qualquer email.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 621c3897b7e97043d93852f14909713309164a58
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: 4896ca7cbe76ec9b0d730cc67faaafb78023ebae
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27968866"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572105"
 ---
 # <a name="reportroot-getmailboxusagemailboxcounts"></a>reportRoot: getMailboxUsageMailboxCounts
 

@@ -3,12 +3,13 @@ title: 'reportRoot: getOneDriveActivityFileCounts'
 description: Obtenha o número de usuários únicos licenciados que realizaram interações de arquivos contra qualquer conta do OneDrive.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: e3a5d9cd840d47fd950330758e64b33625052904
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: fd595786e98b6b70380af668902c9013bf58eb76
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518349"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572315"
 ---
 # <a name="reportroot-getonedriveactivityfilecounts"></a>reportRoot: getOneDriveActivityFileCounts
 

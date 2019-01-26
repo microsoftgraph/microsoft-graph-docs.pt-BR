@@ -3,12 +3,12 @@ title: tipo de recurso de atividade
 description: Representa uma única atividade dentro de um aplicativo - por exemplo, um programa de TV, um documento ou uma campanha atual em um jogo de vídeo. Quando um usuário emprega com que a atividade, o compromisso é capturado como um item de histórico que indica a hora de início e término para a atividade. À medida que o usuário emprega novamente com que a atividade ao longo do tempo, vários itens de histórico são registrados para atividade de um único usuário.
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 5deaab5d7ea071bfda686380d49fb41214a7b29e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 3d05c684d9498378a07a944f7aebd5e8a6b97f53
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525889"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573834"
 ---
 # <a name="activity-resource-type"></a>tipo de recurso de atividade
 
@@ -35,22 +35,22 @@ Suas atividades do usuário serão exibidas em experiências do usuário Cortana
 
 |Nome | Tipo | Descrição|
 |:----|:-----|:-----------|
-|userTimezone | Cadeia de caracteres | Opcional. O fuso horário no qual o dispositivo do usuário usado para gerar a atividade foi localizado no momento da criação de atividade; valores fornecidos como Olson IDs para suportar a representação de plataforma cruzada.|
+|userTimezone | String | Opcional. O fuso horário no qual o dispositivo do usuário usado para gerar a atividade foi localizado no momento da criação de atividade; valores fornecidos como Olson IDs para suportar a representação de plataforma cruzada.|
 |createdDateTime | DateTimeOffset | Definido pelo servidor. Data e hora em UTC quando o objeto foi criado no servidor. |
 |lastModifiedDateTime | DateTimeOffset | Definido pelo servidor. Data e hora em UTC quando o objeto foi modificado no servidor. |
 |id | String | ID gerados pelo servidor usado para o endereçamento de URL.|
 |appActivityId | String | Obrigatório. A ID de atividade exclusivo no contexto do app - fornecido pelo chamador e imutável depois disso.|
 |activitySourceHost | String | Obrigatório. URL para o domínio que representa o mapeamento de identidade de plataforma cruzada para o aplicativo. Mapeamento é armazenado como um arquivo JSON hospedado no domínio ou configurável via Windows Dev Center. O arquivo JSON é chamado cross-plataforma-app-identificadores e está hospedado em raiz do seu domínio HTTPS, seja em que o domínio de nível superior ou incluir um domínio sub. Por exemplo: https://contoso.com ou https://myapp.contoso.com, mas NÃO https://myapp.contoso.com/somepath. Você deve ter um arquivo exclusivo e domínio (ou domínio sub) por identidade do aplicativo de plataforma cruzada. Por exemplo, um arquivo separado e o domínio é necessária para o Word versus PowerPoint.|
-|AppDisplayName | Cadeia de caracteres | Opcional. Descrição de texto curtas do aplicativo usado para gerar a atividade para uso em casos, quando o aplicativo não está instalado no dispositivo de local do usuário.|
+|appDisplayName | String | Opcional. Descrição de texto curtas do aplicativo usado para gerar a atividade para uso em casos, quando o aplicativo não está instalado no dispositivo de local do usuário.|
 |activationUrl | String | Obrigatório. URL usada para iniciar a atividade na melhor experiência de nativa representada por appId. Pode iniciar um aplicativo baseado na web, não se existir nenhum aplicativo nativo.|
-|fallbackUrl | Cadeia de caracteres | Opcional. URL usada para iniciar a atividade em um aplicativo baseado na web, se disponível.|
+|fallbackUrl | String | Opcional. URL usada para iniciar a atividade em um aplicativo baseado na web, se disponível.|
 |contentUrl | String | Opcional. Usado no caso do conteúdo pode ser renderizado fora de uma experiência de aplicativo nativo ou baseado na web (por exemplo, um ponteiro para um item em um RSS feed).|
 |visualElements| [visualInfo](../resources/projectrome-visualinfo.md) | Obrigatório. O objeto que contém informações para renderizar a atividade na UX.|
 |contentInfo | Objeto sem JSON | Opcional. Um parte personalizada de dados - descrição extensível de longa distância o JSON do conteúdo de acordo com a sintaxe [schema.org](https://schema.org) .|
 |expirationDateTime | DateTimeOffset | Definido pelo servidor. Data e hora em UTC quando o objeto expira no servidor.|
-|status | EnumType | Definido pelo servidor. Um código de status usado para identificar objetos válidos. Valores: ativo, atualizado, excluídos, ignorado.|
+|status | cadeia de caracteres de enum | Definido pelo servidor. Um código de status usado para identificar objetos válidos. Valores: ativo, atualizado, excluídos, ignorado.|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 
 |Relação | Tipo | Descrição|
 |:------------|:-----|:-----------|
@@ -87,7 +87,7 @@ Veja a seguir uma representação JSON do recurso.
     "lastModifiedDateTime": "DateTimeOffset",
     "expirationDateTime": "DateTimeOffset",
     "id": "String",
-    "status": "EnumType",
+    "status": "active | updated | deleted | ignored",
     "contentInfo": { "@data.type": "microsoft.graph.Json" },
     "visualElements": { "@data.type": "microsoft.graph.visualInfo" },
     "historyItems": [{ "@odata.type": "microsoft.graph.historyItem" }]

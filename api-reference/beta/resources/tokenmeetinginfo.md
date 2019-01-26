@@ -4,12 +4,12 @@ description: O tipo de tokenMeetingInfo.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8e115887e67f19375ca8b96a216af98c80e0b312
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 717bfbd14c92ea44987cbdadc25eef06ed31a0cc
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513365"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571069"
 ---
 # <a name="tokenmeetinginfo-resource-type"></a>tipo de recurso de tokenMeetingInfo
 
@@ -21,7 +21,7 @@ O tipo de tokenMeetingInfo.
 
 | Propriedade                     | Tipo    | Descrição                                                                    |
 | :--------------------------- | :------ | :----------------------------------------------------------------------------- |
-| allowConversationWithoutHost | Booliano | Indica se uma conversa pode continuar depois que deixa o host da conversa. |
+| allowConversationWithoutHost | Boolean | Indica se uma conversa pode continuar depois que deixa o host da conversa. |
 | token                        | Cadeia de caracteres  | O token de ingresso/ativar a reunião.                                        |
 
 ## <a name="json-representation"></a>Representação JSON
@@ -33,6 +33,7 @@ Veja a seguir uma representação JSON do recurso.
   "optionalProperties": [
 
   ],
+  "baseType":"microsoft.graph.meetingInfo",
   "@odata.type": "microsoft.graph.tokenMeetingInfo"
 }-->
 ```json

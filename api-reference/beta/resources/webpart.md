@@ -5,12 +5,12 @@ ms.date: 09/01/2018
 title: Web Part
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 9c019da7cb10a8c26faa8d338c54436043f83db8
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: e7bbd0f6aa8d4ea04304d6aecae97b98ab0a46b7
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510236"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574275"
 ---
 # <a name="webpart-resource"></a>recurso de Web Part
 
@@ -22,13 +22,14 @@ O recurso de **Web Part** representa o tipo e informações de renderização de
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [  ],
+  "optionalProperties": [  
+    ],
   "@odata.type": "microsoft.graph.webPart"
 }-->
 
 ```json
 {
-  "type": "string (guid)",
+  "type": "String (identifier)",
   "data": {
     "instanceId": "string (guid) (optional)"
   }
@@ -39,8 +40,8 @@ O recurso de **Web Part** representa o tipo e informações de renderização de
 
 | Propriedade                | Tipo             | Descrição
 |:------------------------|:-----------------|:----------------------------------
-| **type**                | String           | Um identificador exclusivo especificando o tipo de Web Part. Somente leitura.
-| **data**                | [sitePageData][] | As propriedades necessárias para a Web Part (varia de acordo com a Web Part)
+| **type**                | Cadeia de caracteres (identificador)         | Um identificador exclusivo especificando o tipo de Web Part. Somente leitura.
+| **data**                | [sitePageData](sitepagedata.md) | As propriedades necessárias para a Web Part (varia de acordo com a Web Part)
 
 [sitePageData]: sitepagedata.md
 

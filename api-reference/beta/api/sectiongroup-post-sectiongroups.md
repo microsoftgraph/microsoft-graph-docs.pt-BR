@@ -4,12 +4,12 @@ description: Crie um novo grupo de seção no grupo da seção especificado.
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 94fc0cc005155ccf9ec3e6bcb8ea0371867b3cc9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 84f79121bb39f9b7e322edefab48bd56559949d4
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519770"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573393"
 ---
 # <a name="create-sectiongroup"></a>Criar sectionGroup
 
@@ -69,7 +69,7 @@ Veja a seguir um exemplo da resposta. Observação: O objeto response mostrado a
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.sectiongroup"
+  "@odata.type": "microsoft.graph.sectionGroup"
 } -->
 ```http
 HTTP/1.1 200 OK

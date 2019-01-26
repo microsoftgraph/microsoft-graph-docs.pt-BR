@@ -2,12 +2,12 @@
 title: Criar governanceRoleAssignmentRequest
 description: Crie uma solicitação de atribuição de função para representar a operação desejado em uma atribuição de função. A tabela a seguir lista as operações.
 localization_priority: Normal
-ms.openlocfilehash: c936a6cd0ba061fc1dd3758533781d7270673939
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 0fc8d96585daf63f53bc6b33985a289e8f810d6b
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523236"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572364"
 ---
 # <a name="create-governanceroleassignmentrequest"></a>Criar governanceRoleAssignmentRequest
 
@@ -55,12 +55,12 @@ No corpo da solicitação, fornece uma representação JSON de um objeto [govern
 | Propriedade     | Tipo    |Obrigatório|  Descrição|
 |:---------------|:--------|:----------|:----------|
 |resourceId|Cadeia de caracteres|Sim|A ID do recurso.|
-|roleDefinitionId|Cadeia de caracteres|Sim|A ID da definição de função.|
-|subjectId|Cadeia de caracteres|Sim|A identificação do assunto.|
-|assignmentState|Cadeia de caracteres|Sim|O estado da atribuição. O valor pode ser ``Eligible`` e ``Active``.|
+|roleDefinitionId|String|Sim|A ID da definição de função.|
+|subjectId|String|Sim|A identificação do assunto.|
+|assignmentState|String|Sim|O estado da atribuição. O valor pode ser ``Eligible`` e ``Active``.|
 |type|String|Sim|O tipo de solicitação. O valor pode ser `AdminAdd`, `UserAdd`, `AdminUpdate`, `AdminRemove`, `UserRemove`, `UserExtend`, `UserRenew`, `AdminRenew`e `AdminExtend`.|
-|Reason|String| |O motivo pelo qual deve ser fornecido para a solicitação de atribuição de função de auditoria e revise finalidade.|
-|Schedule|[governanceSchedule](../resources/governanceschedule.md)| | O agendamento da solicitação de atribuição de função. Tipo de solicitação de `UserAdd`, `AdminAdd`, `AdminUpdate`, e `AdminExtend`, é necessário.|
+|motivo|String| |O motivo pelo qual deve ser fornecido para a solicitação de atribuição de função de auditoria e revise finalidade.|
+|agenda|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)| | O agendamento da solicitação de atribuição de função. Tipo de solicitação de `UserAdd`, `AdminAdd`, `AdminUpdate`, e `AdminExtend`, é necessário.|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) no corpo da resposta.
@@ -88,13 +88,13 @@ Neste exemplo, os administradores atribuem nawu@fimdev.net usuário à função 
 
 | Propriedade     | Tipo    |Obrigatório|  Valor |
 |:---------------|:--------|:----------|:----------|
-|resourceId|Cadeia de caracteres|Sim|\<|
-|roleDefinitionId|Cadeia de caracteres|Sim|\<roleDefinitionId\>|
-|subjectId|Cadeia de caracteres|Sim|\<subjectId\>|
-|assignmentState|Cadeia de caracteres|Sim| Elegíveis / ativo|
+|resourceId|Cadeia de caracteres|Sim|\<resourceId\>|
+|roleDefinitionId|String|Sim|\<roleDefinitionId\>|
+|subjectId|String|Sim|\<subjectId\>|
+|assignmentState|String|Sim| Elegíveis / ativo|
 |type|String|Sim| AdminAdd|
-|Reason|String| depende de configurações de função||
-|Schedule|[governanceSchedule](../resources/governanceschedule.md)|Sim|        |
+|motivo|String| depende de configurações de função||
+|agenda|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|Sim|        |
 ##### <a name="request"></a>Solicitação
 <!-- {
   "blockType": "request",
@@ -171,13 +171,13 @@ Neste exemplo, nawu@fimdev.net o usuário ativa a função de leitor de faturame
 
 | Propriedade     | Tipo    |Obrigatório|  Valor |
 |:---------------|:--------|:----------|:----------|
-|resourceId|Cadeia de caracteres|Sim|\<|
-|roleDefinitionId|Cadeia de caracteres|Sim|\<roleDefinitionId\>|
-|subjectId|Cadeia de caracteres|Sim|\<subjectId\>|
-|assignmentState|Cadeia de caracteres|Sim| Ativo|
+|resourceId|Cadeia de caracteres|Sim|\<resourceId\>|
+|roleDefinitionId|String|Sim|\<roleDefinitionId\>|
+|subjectId|String|Sim|\<subjectId\>|
+|assignmentState|String|Sim| Ativo|
 |type|String|Sim| UserAdd|
-|Reason|String| depende de configurações de função||
-|Schedule|[governanceSchedule](../resources/governanceschedule.md)|Sim|        |
+|motivo|String| depende de configurações de função||
+|agenda|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|Sim|        |
 ##### <a name="request"></a>Solicitação
 <!-- {
   "blockType": "request",
@@ -266,13 +266,13 @@ Neste exemplo, o nawu@fimdev.net usuário desativa a função de leitor de cobra
 
 | Propriedade     | Tipo    |Obrigatório|  Valor |
 |:---------------|:--------|:----------|:----------|
-|resourceId|Cadeia de caracteres|Sim|\<|
-|roleDefinitionId|Cadeia de caracteres|Sim|\<roleDefinitionId\>|
-|subjectId|Cadeia de caracteres|Sim|\<subjectId\>|
-|assignmentState|Cadeia de caracteres|Sim| Ativo|
+|resourceId|Cadeia de caracteres|Sim|\<resourceId\>|
+|roleDefinitionId|String|Sim|\<roleDefinitionId\>|
+|subjectId|String|Sim|\<subjectId\>|
+|assignmentState|String|Sim| Ativo|
 |type|String|Sim| UserRemove|
-|Reason|String| Não||
-|Schedule|[governanceSchedule](../resources/governanceschedule.md)|Não|        |
+|motivo|String| Não||
+|agenda|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|Não|        |
 ##### <a name="request"></a>Solicitação
 <!-- {
   "blockType": "request",
@@ -329,13 +329,13 @@ Neste exemplo, os administradores remover nawu@fimdev.net o usuário da função
  
 | Propriedade     | Tipo    |Obrigatório|  Valor |
 |:---------------|:--------|:----------|:----------|
-|resourceId|Cadeia de caracteres|Sim|\<|
-|roleDefinitionId|Cadeia de caracteres|Sim|\<roleDefinitionId\>|
-|subjectId|Cadeia de caracteres|Sim|\<subjectId\>|
-|assignmentState|Cadeia de caracteres|Sim| Elegíveis / ativo|
+|resourceId|Cadeia de caracteres|Sim|\<resourceId\>|
+|roleDefinitionId|String|Sim|\<roleDefinitionId\>|
+|subjectId|String|Sim|\<subjectId\>|
+|assignmentState|String|Sim| Elegíveis / ativo|
 |type|String|Sim| AdminRemove|
-|Reason|String| Não||
-|Schedule|[governanceSchedule](../resources/governanceschedule.md)|Não|        |
+|motivo|String| Não||
+|agenda|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|Não|        |
 ##### <a name="request"></a>Solicitação
 <!-- {
   "blockType": "request",
@@ -391,13 +391,13 @@ Neste exemplo, os administradores atualizar a atribuição de função para o us
 
 | Propriedade     | Tipo    |Obrigatório|  Valor |
 |:---------------|:--------|:----------|:----------|
-|resourceId|Cadeia de caracteres|Sim|\<|
-|roleDefinitionId|Cadeia de caracteres|Sim|\<roleDefinitionId\>|
-|subjectId|Cadeia de caracteres|Sim|\<subjectId\>|
-|assignmentState|Cadeia de caracteres|Sim| Elegíveis / ativo|
+|resourceId|Cadeia de caracteres|Sim|\<resourceId\>|
+|roleDefinitionId|String|Sim|\<roleDefinitionId\>|
+|subjectId|String|Sim|\<subjectId\>|
+|assignmentState|String|Sim| Elegíveis / ativo|
 |type|String|Sim| AdminUpdate|
-|Reason|String| depende roleSettings||
-|Schedule|[governanceSchedule](../resources/governanceschedule.md)|Sim|        |
+|motivo|String| depende roleSettings||
+|agenda|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|Sim|        |
 ##### <a name="request"></a>Solicitação
 <!-- {
   "blockType": "request",
@@ -471,13 +471,13 @@ Este exemplo estende a atribuição de função expirar para usuário ANUJCUSER 
  
 | Propriedade     | Tipo    |Obrigatório|  Valor |
 |:---------------|:--------|:----------|:----------|
-|resourceId|Cadeia de caracteres|Sim|\<|
-|roleDefinitionId|Cadeia de caracteres|Sim|\<roleDefinitionId\>|
-|subjectId|Cadeia de caracteres|Sim|\<subjectId\>|
-|assignmentState|Cadeia de caracteres|Sim| Elegíveis / ativo |
+|resourceId|Cadeia de caracteres|Sim|\<resourceId\>|
+|roleDefinitionId|String|Sim|\<roleDefinitionId\>|
+|subjectId|String|Sim|\<subjectId\>|
+|assignmentState|String|Sim| Elegíveis / ativo |
 |type|String|Sim| AdminExtend|
-|Reason|String| depende roleSettings||
-|Schedule|[governanceSchedule](../resources/governanceschedule.md)|Sim|        |
+|motivo|String| depende roleSettings||
+|agenda|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|Sim|        |
 ##### <a name="request"></a>Solicitação
 <!-- {
   "blockType": "request",

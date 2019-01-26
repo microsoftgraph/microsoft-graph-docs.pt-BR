@@ -4,12 +4,12 @@ description: Recupere uma lista de objetos de gráfico.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: f20ce9298ebf61b080a8d815e7b87579322b307b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: e4739d90e3e80335ad99b8b7645f48001f1c77e0
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516151"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574674"
 ---
 # <a name="list-chartcollection"></a>Listar ChartCollection
 
@@ -60,7 +60,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chart",
+  "@odata.type": "microsoft.graph.workbookChart",
   "isCollection": true
 } -->
 ```http

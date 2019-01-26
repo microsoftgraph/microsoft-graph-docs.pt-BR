@@ -3,12 +3,13 @@ title: 'reportRoot: getOffice365ActivationCounts'
 description: Obtenha a contagem de ativações do Office 365 em desktops e dispositivos.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: ee0055a56217c68180ea81f1e4c8fc8bfd6849a1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: 31aed10d7a2b70c32f0654df67dfa86385d5fd17
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27979710"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572581"
 ---
 # <a name="reportroot-getoffice365activationcounts"></a>reportRoot: getOffice365ActivationCounts
 

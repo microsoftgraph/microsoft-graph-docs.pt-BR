@@ -3,12 +3,12 @@ title: Tipo de recurso openTypeExtension (extensões abertas)
 description: Extensões de Open (conhecidas anteriormente como extensões de dados do Office 365) fornecem uma maneira fácil de adicionar diretamente sem tipo propriedades para um recurso no Microsoft Graph.
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: ba5dbcd6c5ae1705ffe7e89ca6f529280d98adf5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 6a0be3c794fcfc880a99c5fd81e498b8121de68a
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508829"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574905"
 ---
 # <a name="opentypeextension-resource-type-open-extensions"></a>Tipo de recurso openTypeExtension (extensões abertas)
 
@@ -43,7 +43,7 @@ Aplique as seguintes diretrizes ao criar extensões open nos recursos do Outlook
 - Crie o número mínimo de extensões necessárias. A maioria dos aplicativos deve exigir que não mais de uma extensão. As extensões não têm propriedades de conjunto definido ou estrutura, permitindo que você armazene vários valores em um única extensão.
 - Evite extensões de nomes de maneira variável (como com base na entrada do usuário, etc.). Cada vez que uma extensão aberta é criada com um novo nome não tiver sido usado na caixa de correio de um usuário antes, um novo MAPI denominado propriedade é criado. Removendo a extensão não remove a propriedade nomeada.
 
-### <a name="use-open-extensions-for-outlook-resources-or-extended-properties"></a>Usar extensões abertas (para recursos do Outlook) ou propriedades estendidas?
+### <a name="use-open-extensions-for-outlook-resources-or-extended-properties"></a>Usar extensões open (para recursos do Outlook) ou propriedades estendidas
 
 Extensões Open é a solução recomendada para a maioria dos cenários que envolvem armazenar e acessar dados personalizados. Se, no entanto, você precisar acessar dados personalizados para propriedades MAPI do Outlook que não são expostos por meio de [metadados de API do Microsoft Graph](https://developer.microsoft.com/graph/docs/overview/call_api), você pode usar [propriedades estendidas e seus API REST](extended-properties-overview.md). Você pode verificar quais propriedades os metadados expõe em [ https://graph.microsoft.com/v1.0/$metadata](https://graph.microsoft.com/v1.0/$metadata).
 
@@ -54,9 +54,11 @@ Veja a seguir uma representação JSON do recurso
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+       "companyName",
+        "dealValue",
+        "expirationDate"
   ],
-  "@odata.type": "microsoft.graph.opentypeextension"
+  "@odata.type": "microsoft.graph.openTypeExtension"
 }-->
 
 ```json
@@ -76,7 +78,7 @@ Veja a seguir uma representação JSON do recurso
 
 ## <a name="relationships"></a>Relações
 
-Nenhuma
+Nenhum
 
 ## <a name="methods"></a>Métodos
 

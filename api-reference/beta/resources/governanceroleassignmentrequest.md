@@ -2,12 +2,12 @@
 title: tipo de recurso de governanceRoleAssignmentRequest
 description: Representa a solicitação para operações de atribuição de função no gerenciamento de identidades Privilegd.
 localization_priority: Normal
-ms.openlocfilehash: 242f1d311a2d304d0d8dab0a4e24f9294722ab6e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 838d16455a2eaea2183d008800eaef72a0af2a15
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509571"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572098"
 ---
 # <a name="governanceroleassignmentrequest-resource-type"></a>tipo de recurso de governanceRoleAssignmentRequest
 
@@ -37,14 +37,14 @@ Representa a solicitação para operações de atribuição de função no geren
 |type                       |String         |Obrigatório. Representando o o tipo da operação na atribuição de função. O valor pode ser <ul><li>`AdminAdd`: Os administradores de atribuir funções; a usuários/grupos</li><li>`UserAdd`: Usuários ativarem elegíveis atribuições;</li><li> `AdminUpdate`: Os administradores alterar as atribuições de função existente</li><li>`AdminRemove`: Os administradores de removam usuários/grupos de funções;<li>`UserRemove`: Usuários desativar atribuições ativas;<li>`UserExtend`: Solicitação de usuários para estender as suas atribuições expiradas;</li><li>`AdminExtend`: Administradores estendem atribuições expiradas.</li><li>`UserRenew`: Solicitação de os usuários de renovação de suas atribuições expiradas;</li><li>`AdminRenew`: Administradores estendem atribuições expiradas.</li></ul>|
 |assignmentState|String  |Obrigatório. O estado da atribuição. O valor pode ser <ul><li> `Eligible`para atribuição elegível</li><li> `Active`-se diretamente atribuída `Active` pelos administradores, ou ativado em uma atribuição elegível pelos usuários.</li></ul>|
 |requestedDateTime          |DateTimeOffset |Somente leitura. A solicitação criar horário. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|Schedule                   |[governanceSchedule](governanceschedule.md)|O objeto de agendamento da solicitação de atribuição de função.|
-|Reason                     |String         |Uma mensagem fornecida por usuários e administradores quando criar a solicitação sobre por que ele é necessário.|
+|agenda                   |[microsoft.graph.governanceSchedule](governanceschedule.md)|O objeto de agendamento da solicitação de atribuição de função.|
+|motivo                     |String         |Uma mensagem fornecida por usuários e administradores quando criar a solicitação sobre por que ele é necessário.|
 |status                     |[governanceRoleAssignmentRequestStatus](governanceroleassignmentrequeststatus.md)         |O status da solicitação de atribuição de função.|
 |linkedEligibleRoleAssignmentId|String        |Se essa for uma solicitação de ativação de função, ela representa a identificação do `eligible assignment` sendo chamada; Caso contrário, o valor será `null`. |
 
 
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo                                |Descrição|
 |:-------------|:----------------------------------|:----------|
 |recurso      |[governanceResource](../resources/governanceresource.md)            |Somente leitura. O recurso que visa a solicitação. |

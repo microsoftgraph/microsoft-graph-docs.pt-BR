@@ -4,16 +4,35 @@ description: A pasta de trabalho é o objeto de nível superior que inclui os ob
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: a63ee1d3ce2b7b43eea2993cb588b20897b31c32
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 930a36f32b0768609050e200d705254cf600be4f
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27957974"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572056"
 ---
 # <a name="workbook-resource-type"></a>Tipo de recurso de pasta de trabalho
 
 A pasta de trabalho é o objeto de nível superior que inclui os objetos workbook relacionados, como planilhas, tabelas, intervalos, etc.
+
+## <a name="json-representation"></a>Representação JSON
+
+Veja a seguir uma representação JSON do recurso
+
+<!--{
+  "blockType": "resource",
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbook"
+}-->
+
+```json
+{
+  "names": [{"@odata.type": "microsoft.graph.workbookNamedItem"}],
+  "tables": [{"@odata.type": "microsoft.graph.workbookTable"}],
+  "worksheets": [{"@odata.type": "microsoft.graph.workbookWorksheet"}]
+}
+```
 
 ## <a name="properties"></a>Propriedades
 Nenhum
@@ -30,9 +49,9 @@ Nenhum
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|names|Coleção [NamedItem](nameditem.md)|Representa uma coleção de itens denominados de escopo da pasta de trabalho (chamados intervalos e constantes). Somente leitura.|
-|tables|Coleção [Table](table.md)|Representa uma coleção de tabelas associadas à pasta de trabalho. Somente leitura.|
-|worksheets|Coleção [Worksheet](worksheet.md)|Representa uma coleção de planilhas associadas à pasta de trabalho. Somente leitura.|
+|names|Coleção [WorkbookNamedItem](workbooknameditem.md)|Representa uma coleção de itens denominados de escopo da pasta de trabalho (chamados intervalos e constantes). Somente leitura.|
+|tables|Coleção [WorkbookTable](table.md)|Representa uma coleção de tabelas associadas à pasta de trabalho. Somente leitura.|
+|worksheets|Coleção [WorkbookWorksheet](worksheet.md)|Representa uma coleção de planilhas associadas à pasta de trabalho. Somente leitura.|
 
 ## <a name="functions"></a>Funções
 

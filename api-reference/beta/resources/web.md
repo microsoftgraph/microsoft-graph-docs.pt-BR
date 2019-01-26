@@ -2,12 +2,12 @@
 title: tipo de recurso da Web
 description: Especifica as configurações para um aplicativo web.
 localization_priority: Normal
-ms.openlocfilehash: 7e03977481f0c021b7d67ec44fd4db275642cdf8
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 281a3f23dd0e22cae6b3ca2b67e2e9cd8b400740
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527665"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572714"
 ---
 # <a name="web-resource-type"></a>tipo de recurso da Web
 
@@ -21,7 +21,7 @@ Especifica as configurações para um aplicativo web.
 |:---------|:-----|:------------|
 |implicitGrantSettings|[implicitGrantSettings](implicitgrantsettings.md)| Especifica se esse aplicativo web pode solicitar tokens usando o fluxo de implícita OAuth 2.0.|
 |logoutUrl|String| Especifica a URL que será usada pelo serviço de autorização da Microsoft para logout um usuário usando o [canal de frente](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [back-channel](https://openid.net/specs/openid-connect-backchannel-1_0.html) ou protocolos de logout SAML. |
-|oauth2AllowImplicitFlow|Booliano| Obsoleto. Não a use. | 
+|oauth2AllowImplicitFlow|Boolean| Obsoleto. Não a use. | 
 |redirectUris|String collection| Especifica o redirecionamento de códigos de autorização de URIs que OAuth 2.0 e tokens de acesso são enviados para ou as URLs que os tokens do usuário são enviados para entrar. |
 
 ## <a name="json-representation"></a>Representação JSON
@@ -32,7 +32,7 @@ Veja a seguir uma representação JSON do recurso.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.web"
+  "@odata.type": "microsoft.graph.webApplication"
 }-->
 
 ```json

@@ -2,12 +2,12 @@
 title: Tipo de recurso referenceAttachment
 description: 'Um link para uma pasta ou arquivo (por exemplo, um arquivo de texto ou um documento do Word) em um OneDrive para a unidade de nuvem de negócios ou outros locais de armazenamento suportadas, anexado ao '
 localization_priority: Normal
-ms.openlocfilehash: 59ebb0af10a64195643cb7073d1206790ae6a875
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: adf078f7ba678a4fe90a51972c5e4be4788c9c0c
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512707"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574555"
 ---
 # <a name="referenceattachment-resource-type"></a>Tipo de recurso referenceAttachment
 
@@ -29,19 +29,19 @@ Derivado de [attachment](attachment.md).
 |:---------------|:--------|:----------|
 |contentType|String|O tipo de conteúdo do anexo. Opcional.|
 |id|String|A ID do anexo.  Somente leitura.|
-|isFolder|Booliano|Especifica se o anexo é um link para uma pasta. Defina essa opção para true se **sourceUrl** é um link para uma pasta. Opcional.|
+|isFolder|Boolean|Especifica se o anexo é um link para uma pasta. Defina essa opção para true se **sourceUrl** é um link para uma pasta. Opcional.|
 |isInline|Booliano|Defina como verdadeiro se o anexo é exibido embutido no corpo do objeto de incorporação. Opcional.|
 |lastModifiedDateTime|DateTimeOffset|Data e hora em que o anexo foi modificado pela última vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Opcional.|
-|name|Cadeia de caracteres|O texto que é exibido abaixo do ícone que representa o anexo incorporado. Isso não precisa ser o nome de arquivo real. Obrigatório.|
-|Permissão|ReferenceAttachmentPermissions|Especifica as permissões concedidas pelo tipo de provedor na **providerType**o anexo. Os valores possíveis são: `other`, `view`, `edit`, `anonymousView`, `anonymousEdit`, `organizationView`, `organizationEdit`. Opcional.|
+|name|String|O texto que é exibido abaixo do ícone que representa o anexo incorporado. Isso não precisa ser o nome de arquivo real. Obrigatório.|
+|permissão|referenceAttachmentPermission|Especifica as permissões concedidas pelo tipo de provedor na **providerType**o anexo. Os valores possíveis são: `other`, `view`, `edit`, `anonymousView`, `anonymousEdit`, `organizationView`, `organizationEdit`. Opcional.|
 |previewUrl|String|Se aplica a apenas um anexo de referência de uma imagem - URL para obter uma imagem de visualização. Use **thumbnailUrl** e **previewUrl** somente quando **sourceUrl** identifica um arquivo de imagem. Opcional.|
-|providerType|ReferenceAttachmentProviders|O tipo de provedor que ofereça suporte a um anexo deste contentType. Os valores possíveis são: `other`, `oneDriveBusiness`, `oneDriveConsumer`, `dropbox`. Opcional.|
+|providerType| referenceAttachmentProvider |O tipo de provedor que ofereça suporte a um anexo deste contentType. Os valores possíveis são: `other`, `oneDriveBusiness`, `oneDriveConsumer`, `dropbox`. Opcional.|
 |size|Int32|O tamanho dos metadados em bytes que é armazenado na mensagem do anexo da referência. Esse valor não indica o tamanho real do arquivo. Opcional.|
 |Urlorigem|String|URL para obter o conteúdo do anexo. Se essa for uma URL para uma pasta, em seguida, para a pasta para serem exibidos corretamente no Outlook ou no Outlook na web, defina **isFolder** como true. Obrigatório.|
 |thumbnailUrl|String|Se aplica a apenas um anexo de referência de uma imagem - URL para obter uma imagem em miniatura. Use **thumbnailUrl** e **previewUrl** somente quando **sourceUrl** identifica um arquivo de imagem. Opcional.|
 
-## <a name="relationships"></a>Relacionamento
-Nenhuma
+## <a name="relationships"></a>Relações
+Nenhum
 
 
 
@@ -65,9 +65,9 @@ Veja a seguir uma representação JSON do recurso
   "isInline": true,
   "lastModifiedDateTime": "String (timestamp)",
   "name": "string",
-  "permission": "string",
+  "permission": "referenceAttachmentPermission",
   "previewUrl": "string",
-  "providerType": "string",
+  "providerType": "referenceAttachmentProvider",
   "size": 1024,
   "sourceUrl": "string",
   "thumbnailUrl": "string"

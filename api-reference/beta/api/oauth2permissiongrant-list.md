@@ -2,12 +2,12 @@
 title: Lista oauth2PermissionGrants
 description: Recupere uma lista de objetos oauth2PermissionGrant.
 localization_priority: Normal
-ms.openlocfilehash: 9af84b4af64466658058259a665d426484511526
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 4a3ab48b4ab3162fd2222bc98f261d4f12c8d39a
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525826"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572637"
 ---
 # <a name="list-oauth2permissiongrants"></a>Lista oauth2PermissionGrants
 
@@ -62,7 +62,7 @@ Observação: o objeto response mostrado aqui pode estar truncado por motivos de
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.oAuth2Permissiongrant",
+  "@odata.type": "microsoft.graph.oAuth2PermissionGrant",
   "isCollection": true
 } -->
 ```http

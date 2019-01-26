@@ -4,12 +4,12 @@ description: Recupera as propriedades e os relacionamentos do objeto chartlegend
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 17938f77d2ace3548fa7781e0797dd7a5956afc3
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 2b237e894b45a3b558c2dbfe9d3a0e36056e0915
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515990"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571426"
 ---
 # <a name="get-chartlegend"></a>Obter ChartLegend
 
@@ -44,7 +44,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [ChartLegend](../resources/chartlegend.md) no corpo da resposta.
+Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto [WorkbookChartLegend](../resources/chartlegend.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
@@ -60,7 +60,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartLegend"
+  "@odata.type": "microsoft.graph.workbookChartLegend"
 } -->
 ```http
 HTTP/1.1 200 OK

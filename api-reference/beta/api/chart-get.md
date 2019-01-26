@@ -4,12 +4,12 @@ description: Recupera as propriedades e os relacionamentos do objeto de gráfico
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 898bb237a5975323e7504c1473bf493d6a25018b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 771522a07b3407daf5d193ea360dfb3046c75610
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511580"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573379"
 ---
 # <a name="get-chart"></a>Obter gráfico
 
@@ -60,7 +60,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chart"
+  "@odata.type": "microsoft.graph.workbookChart"
 } -->
 ```http
 HTTP/1.1 200 OK

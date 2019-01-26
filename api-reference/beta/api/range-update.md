@@ -4,12 +4,12 @@ description: Atualize as propriedades do objeto range.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: eda7a9122884776131a65722c493031ba0bb1098
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: f4a1cce20e8d11879dc4fc11b55feee5b02cfb49
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507702"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574023"
 ---
 # <a name="update-range"></a>Intervalo de atualização
 
@@ -44,12 +44,12 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |columnHidden|booliano|Representa se todas as colunas do intervalo atual estão ocultas.|
-|fórmulas|json|Representa a fórmula em notação A1.|
-|formulasLocal|json|Representa a fórmula em notação A1, na formatação de número da localidade e no idioma do usuário.  Por exemplo, a fórmula "=SUM(A1, 1.5)" em inglês seria "=SOMA(A1; 1,5)" em português.|
-|formulasR1C1|json|Representa a fórmula em notação no estilo L1C1.|
-|numberFormat|json|Representa o código de formato de número do Excel para determinada célula.|
+|fórmulas|Json|Representa a fórmula em notação A1.|
+|formulasLocal|Json|Representa a fórmula em notação A1, na formatação de número da localidade e no idioma do usuário.  Por exemplo, a fórmula "=SUM(A1, 1.5)" em inglês seria "=SOMA(A1; 1,5)" em português.|
+|formulasR1C1|Json|Representa a fórmula em notação no estilo L1C1.|
+|numberFormat|Json|Representa o código de formato de número do Excel para determinada célula.|
 |rowHidden|booliano|Representa se todas as linhas do intervalo atual estão ocultas.|
-|values|json|Representa os valores brutos do intervalo especificado. Os dados retornados podem ser dos tipos: cadeia de caracteres, número ou booliano. Células que contêm um erro retornarão a cadeia de caracteres de erro.|
+|values|Json|Representa os valores brutos do intervalo especificado. Os dados retornados podem ser dos tipos: cadeia de caracteres, número ou booliano. Células que contêm um erro retornarão a cadeia de caracteres de erro.|
 
 ## <a name="response"></a>Resposta
 

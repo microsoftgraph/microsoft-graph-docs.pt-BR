@@ -3,12 +3,13 @@ title: 'reportRoot: getSharePointActivityUserDetail'
 description: Obtenha dados sobre as atividades do SharePoint por usuário.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: af63d1b995dd182ce37b0f39b6a0533c25f56f3d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: 9daaa8fb99af602d6d01528c0044b787ee37533d
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521849"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573651"
 ---
 # <a name="reportroot-getsharepointactivityuserdetail"></a>reportRoot: getSharePointActivityUserDetail
 

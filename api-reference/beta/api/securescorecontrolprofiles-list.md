@@ -2,12 +2,12 @@
 title: Lista secureScoreControlProfiles
 description: Recupere as propriedades e relacionamentos de um objeto secureScoreControlProfiles.
 localization_priority: Normal
-ms.openlocfilehash: 6627111633f54eb7bc2584af826b69fd5bd6cf49
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 6177af7da65d268af7c089aee3772109fb182959
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508052"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571090"
 ---
 # <a name="list-securescorecontrolprofiles"></a>Lista secureScoreControlProfiles
 
@@ -73,7 +73,6 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-
 
 {
     "value": [

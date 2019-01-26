@@ -3,12 +3,13 @@ title: tipo de recurso de office365ServicesUserCounts
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 54ae2020a5c02bba1469e3c6c0728024c72046bc
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: 36fd043be3cef36951f7651d625f4a93d3b5f8cc
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27957301"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573890"
 ---
 # <a name="office365servicesusercounts-resource-type"></a>tipo de recurso de office365ServicesUserCounts
 
@@ -27,9 +28,11 @@ ms.locfileid: "27957301"
 | skypeForBusinessInactive | Int64  | O número de usuários inativos em Skype para negócios. |
 | yammerActive             | Int64  | O número de usuários ativos no Yammer. Qualquer usuário que pode postar, ler ou like mensagens é considerado um usuário ativo. |
 | yammerInactive           | Int64  | O número de usuários inativos no Yammer.  |
-| teamsActive              | Int64  | O número de usuários ativos em equipes. Qualquer usuário que as mensagens postadas no canais de equipe, mensagens enviadas em sessões de bate-papo privado ou participou chamadas ou reuniões é considerado um usuário ativo. |
-| teamsInactive            | Int64  | O número de usuários ativos em equipes.     |
-| reportPeriod             | Cadeia de caracteres | O número de dias que abrange o relatório.    |
+| teamsActive              | Int64  | O número de usuários ativos em Teams da Microsoft. Qualquer usuário que as mensagens postadas no canais de equipe, mensagens enviadas em sessões de bate-papo privado ou participou chamadas ou reuniões é considerado um usuário ativo. |
+| teamsInactive            | Int64  | O número de usuários inativos no Microsoft Teams.     |
+| office365Active          | Int64  | O número de usuários ativos no Office 365.   |
+| office365Inactive        | Int64  | O número de usuários inativos no Office 365.     |
+| reportPeriod             | String | O número de dias que abrange o relatório.    |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -55,6 +58,8 @@ Veja a seguir uma representação JSON do recurso.
   "yammerInactive": 1024, 
   "teamsActive": 1024, 
   "teamsInactive": 1024, 
+  "office365Active": 1024,
+  "office365Inactive": 1024,
   "reportPeriod": "String"
 }
 ```

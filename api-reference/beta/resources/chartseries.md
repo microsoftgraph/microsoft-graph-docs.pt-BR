@@ -4,12 +4,12 @@ description: Representa uma série em um gráfico.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: e5606516092633ff14d23947f73626adc6d83c2c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: eccd0d970ffeff7b41ceb0f9af810bb7a420d663
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519658"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29570656"
 ---
 # <a name="chartseries-resource-type"></a>Tipo de recurso ChartSeries
 
@@ -22,12 +22,12 @@ Representa uma série em um gráfico.
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|Get ChartSeries | [chartSeries](chartseries.md) |Leia as propriedades e os relacionamentos do objeto chartSeries.|
-|Create ChartPoints |ChartPoints| Crie um novo ChartPoints postando na coleção de pontos.|
-|List points |Coleção ChartPoints| Obtenha uma coleção de objetos ChartPoints.|
-|[Update](../api/chartseries-update.md) | [chartSeries](chartseries.md) |Atualize o objeto ChartSeries. |
-|[List](../api/chartseries-list.md) | Coleção ChartSeries |Obtenha uma coleção de objetos chartSeries. |
-|[Itemat](../api/chartseriescollection-itemat.md)|ChartSeries|Recupera uma série com base na respectiva posição na coleção.|
+|[Get ChartSeries](../api/chartseries-get.md) | [workbookChartSeries](chartseries.md) |Leia as propriedades e os relacionamentos do objeto chartSeries.|
+|[Create ChartPoints](../api/chartseries-post-points.md) |[chartPoints](chartpoint.md)| Crie um novo ChartPoints postando na coleção de pontos.|
+|[List points](../api/chartseries-list-points.md) |coleção [chartPoints](chartpoint.md)| Obtenha uma coleção de objetos ChartPoints.|
+|[Update](../api/chartseries-update.md) | [workbookChartSeries](chartseries.md) |Atualize o objeto ChartSeries. |
+|[List](../api/chartseries-list.md) | coleção [workbookChartSeries](chartseries.md) |Obtenha uma coleção de objetos chartSeries. |
+|[ItemAt](../api/chartseriescollection-itemat.md)|[workbookChartSeries](chartseries.md)|Recupera uma série com base na respectiva posição na coleção.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
@@ -37,8 +37,8 @@ Representa uma série em um gráfico.
 ## <a name="relationships"></a>Relacionamentos
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|formato|[ChartSeriesFormat](chartseriesformat.md)|Representa a formatação de uma série do gráfico, que inclui a formatação de linha e de preenchimento. Somente leitura.|
-|points|Coleção [ChartPoints](chartpoint.md)|Representa uma coleção de todos os pontos da série. Somente leitura.|
+|formato|[workbookChartSeriesFormat](chartseriesformat.md)|Representa a formatação de uma série do gráfico, que inclui a formatação de linha e de preenchimento. Somente leitura.|
+|points|coleção [workbookChartPoint](chartpoint.md)|Representa uma coleção de todos os pontos da série. Somente leitura.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -46,10 +46,11 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.chartSeries"
+  "@odata.type": "microsoft.graph.workbookChartSeries"
 }-->
 
 ```json

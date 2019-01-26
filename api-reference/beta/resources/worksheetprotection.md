@@ -4,12 +4,12 @@ description: Representa a proteção de um objeto de planilha.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 7e87edcebae95f32ce0bccaf849a7d21140f4878
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 6f32ad7b1cc25d9a937f2de68f1bd930d92ec8f9
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512035"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572931"
 ---
 # <a name="worksheetprotection-resource-type"></a>Tipo de recurso WorksheetProtection
 
@@ -22,7 +22,7 @@ Representa a proteção de um objeto de planilha.
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|Get WorksheetProtection | WorksheetProtection |Leia as propriedades e os relacionamentos do objeto worksheetProtection.|
+|[Get WorksheetProtection](../api/worksheetprotection-get.md) | [WorkbookWorksheetProtection](worksheetprotection.md) |Leia as propriedades e os relacionamentos do objeto worksheetProtection.|
 |[Protect](../api/worksheetprotection-protect.md)|Nenhum|Protege uma planilha. Gera uma exceção se a planilha estiver protegida.|
 |[Unprotect](../api/worksheetprotection-unprotect.md)|Nenhum|Desprotege uma planilha.|
 
@@ -31,10 +31,10 @@ Representa a proteção de um objeto de planilha.
 |:---------------|:--------|:----------|
 |protected|booliano|Indica se a planilha está protegida.  Somente leitura.|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|options|[WorksheetProtectionOptions](worksheetprotectionoptions.md)|Opções de proteção da planilha. Somente leitura.|
+|options|[workbookWorksheetProtection](worksheetprotectionoptions.md)|Opções de proteção da planilha. Somente leitura.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -43,14 +43,16 @@ Veja a seguir uma representação JSON do recurso.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+  "options"
   ],
-  "@odata.type": "microsoft.graph.worksheetProtection"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookWorksheetProtection"
 }-->
 
 ```json
 {
-  "protected": true
+  "protected": true,
+  "options": { "@odata.type": "microsoft.graph.workbookWorksheetProtectionOptions" }
 }
 
 ```

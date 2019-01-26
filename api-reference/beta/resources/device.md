@@ -4,12 +4,12 @@ description: Representa um dispositivo registrado no diretório. Dispositivos s�
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1279a39f7aa8983697b980fd6cce44c203d1883e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 42b1f0625cfa14f7beff1d4206bd93abb9f9a9e9
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511748"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574870"
 ---
 # <a name="device-resource-type"></a>tipo de recurso de dispositivo
 
@@ -40,10 +40,10 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|accountEnabled|Boolean| **true** se a conta estiver habilitada; caso contrário, **false**. O padrão é True.|
-|alternativeSecurityIds|Coleção alternativeSecurityId| Apenas para uso interno. Não anulável. |
+|accountEnabled|Boolean| **true** se a conta estiver habilitada; caso contrário, **false**. o padrão é true.|
+|alternativeSecurityIds| coleção microsoft.graph.alternativeSecurityId | Apenas para uso interno. Não anulável. |
 |approximateLastSignInDateTime|DateTimeOffset| O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura. |
-|deviceId|Guid| Identificador exclusivo definido pelo serviço de registro do dispositivo Azure no momento do registro. |
+|deviceId|Cadeia de caracteres (identificador)| Identificador exclusivo definido pelo serviço de registro do dispositivo Azure no momento do registro. |
 |deviceMetadata|String| Apenas para uso interno. Definido como nulo. |
 |deviceVersion|Int32| Apenas para uso interno. |
 |displayName|String| O nome de exibição do dispositivo. Obrigatório. |
@@ -51,19 +51,19 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |isCompliant|Booliano|**True** se o dispositivo está em conformidade com políticas de MDM (Gerenciamento de Dispositivo Móvel); caso contrário, **false**. Somente leitura. Isso só pode ser atualizado por Intune para qualquer tipo de sistema operacional do dispositivo ou por um [aprovada MDM app](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) para dispositivos do sistema operacional Windows.|
 |isManaged|Booliano|**true** se o dispositivo for gerenciado por um aplicativo de gerenciamento de dispositivo móvel (MDM); caso contrário, **false**. Isso só pode ser atualizado por Intune para qualquer tipo de sistema operacional do dispositivo ou por um [aprovada MDM app](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) para dispositivos do sistema operacional Windows. |
 |onPremisesLastSyncDateTime|DateTimeOffset|A última vez em que o objeto foi sincronizado com o diretório local. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'` Somente leitura. |
-|onPremisesSyncEnabled|Booliano|**True** se esse objeto está sincronizado de um diretório local; **false** se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; **null** se esse objeto nunca foi sido sincronizado de um diretório local (padrão). Somente leitura|
-|operatingSystem|Cadeia de caracteres| O tipo de sistema operacional do dispositivo. Obrigatório. |
+|onPremisesSyncEnabled|Boolean|**True** se esse objeto está sincronizado de um diretório local; **false** se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; **null** se esse objeto nunca foi sido sincronizado de um diretório local (padrão). Somente leitura.|
+|operatingSystem|String| O tipo de sistema operacional do dispositivo. Obrigatório. |
 |operatingSystemVersion|String| A versão do sistema operacional do dispositivo. Obrigatório. |
 |physicalIds|Coleção de cadeias de caracteres| Apenas para uso interno. Não anulável. |
-|trustType|String| Tipo de relação de confiança para o dispositivo associado. Somente leitura. Valores possíveis: <br />**Workplace** – indica *traga seus dispositivos pessoais*<br />**AzureAd** – apenas dispositivos associados na nuvem<br />**ServerAd** – dispositivos associados no domínio local unidos ao Azure AD. Saiba mais em [Introdução ao gerenciamento de dispositivo no Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction) |
+|trustType|Cadeia de caracteres| Tipo de relação de confiança para o dispositivo associado. Somente leitura. Valores possíveis: <br />**Workplace** – indica *traga seus dispositivos pessoais*<br />**AzureAd** – apenas dispositivos associados na nuvem<br />**ServerAd** – dispositivos associados no domínio local unidos ao Azure AD. Saiba mais em [Introdução ao gerenciamento de dispositivo no Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction) |
 |Nome| String | Nome amigável de um dispositivo. Retornado somente se o usuário entra com uma conta da Microsoft como parte do projeto Roma. |
 |Status | String| O dispositivo está online ou offline. Retornado somente se o usuário entra com uma conta da Microsoft como parte do projeto Roma. |
 |Plataforma |String|Plataforma do dispositivo. Retornado somente se o usuário entra com uma conta da Microsoft como parte do projeto Roma. Retornado somente se o usuário entra com uma conta da Microsoft como parte do projeto Roma.|
 |Tipo| String| Fator forma do dispositivo. Retornado somente se o usuário entra com uma conta da Microsoft como parte do projeto Roma. |
 |Modelo| String| Modelo do dispositivo. Retornado somente se o usuário entra com uma conta da Microsoft como parte do projeto Roma. |
-|fabricante| String| Fabricante do dispositivo. Retornado somente se o usuário entra com uma conta da Microsoft como parte do projeto Roma. |
+|Fabricante| String| Fabricante do dispositivo. Retornado somente se o usuário entra com uma conta da Microsoft como parte do projeto Roma. |
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para o dispositivo. Somente leitura. Anulável.|
@@ -72,7 +72,7 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |extensions|Coleção [extension](extension.md)|A coleção de extensões open definidas para o dispositivo. Anulável.|
 |registeredOwners|Coleção [directoryObject](directoryobject.md)|Usuários que são proprietários registrados do dispositivo. Somente leitura. Anulável.|
 |registeredUsers|Coleção [directoryObject](directoryobject.md)|Usuários que são usuários registrados do dispositivo. Somente leitura. Anulável.|
-|Comandos | Collection(Microsoft.Graph.Command) | Conjunto de comandos enviados ao dispositivo|
+|comandos | coleção Microsoft.Graph.Command | Conjunto de comandos enviados ao dispositivo|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -92,6 +92,7 @@ Veja a seguir uma representação JSON do recurso.
 ```json
 {
   "accountEnabled": true,
+  "alternativeSecurityIds": [{"@odata.type": "microsoft.graph.alternativeSecurityId"}],
   "approximateLastSignInDateTime": "String (timestamp)",
   "deviceId": "string",
   "deviceMetadata": "string",

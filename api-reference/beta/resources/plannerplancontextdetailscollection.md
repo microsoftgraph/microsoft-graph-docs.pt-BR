@@ -4,12 +4,12 @@ description: " o valor é o objeto plannerPlanContextDetails."
 author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
-ms.openlocfilehash: ca1625a4bf137fc14cc780df4d4d1e5ec3bb226e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 2731827a5d9cdb5297e619ecef164339a1b909c0
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508745"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571230"
 ---
 # <a name="plannerplancontextdetailscollection-resource-type"></a>tipo de recurso de plannerPlanContextDetailsCollection
 
@@ -22,6 +22,17 @@ O recurso de **plannerPlanContextDetailsCollection** representa a coleção de c
 ## <a name="properties"></a>Propriedades
 Propriedades de um tipo aberto podem ser definidas pelo cliente. Nesse caso, o cliente deve usar um identificador distinto que representa o contexto externo como o nome da propriedade. Os valores de propriedade devem ser [plannerPlanContextDetails](plannerplancontextdetails.md) objetos. Com base nos OData, os nomes de propriedade tipos abertos não podem conter os seguintes caracteres: `.`, `:`, `@`, `%`. Esses caracteres precisam ser codificada com o formato de codificação de URL. Para remover um item na lista Favoritos, o valor deve ser removido da coleção [plannerPlanContextCollection](plannerplancontextcollection.md) em vez disso, que removerá automaticamente a entrada neste objeto.
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.plannerPlanContextDetailsCollection"
+}-->
+```json
+{
+}
+```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

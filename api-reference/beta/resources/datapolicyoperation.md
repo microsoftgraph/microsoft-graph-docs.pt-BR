@@ -4,12 +4,12 @@ description: Representa uma operação de diretiva de dados enviados. Ele conté
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0d3ec392bb30614346d2726262851eebc29ee779
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4547221c8c1b859d4738a5468603ac6890246263
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27938745"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29570922"
 ---
 # <a name="datapolicyoperation-resource-type"></a>tipo de recurso de dataPolicyOperation
 
@@ -33,7 +33,6 @@ Representa uma operação de diretiva de dados enviados. Ele contém as informa�
 |storageLocation|String|O local da URL para onde os dados está sendo exportados para solicitações de exportação.|
 |userId|String|A identificação do usuário no qual a operação é executada.|
 |submittedDateTime|DateTimeOffset|Representa quando a solicitação para esta operação de dados foi enviada, em tempo de UTC, usando o formato ISO 8601. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|progresso|Duplo|Especifica o progresso de uma operação.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -58,8 +57,7 @@ Veja a seguir uma representação JSON do recurso.
   "status": "string",
   "storageLocation": "String",
   "userId": "String",
-  "submittedDateTime": "String (timestamp)",
-  "progress": "Double"
+  "submittedDateTime": "String (timestamp)"
 }
 
 ```

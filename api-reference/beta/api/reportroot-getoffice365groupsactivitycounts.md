@@ -3,12 +3,13 @@ title: 'reportRoot: getOffice365GroupsActivityCounts'
 description: Obtenha o número de atividades de grupo em todas as cargas de trabalho de grupo.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 85eab0e6fa7d4e0c541e8745144662fa4631fb4e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: 72c879af55f8608dd8f5cd2f1086f8469aacb651
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508640"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571720"
 ---
 # <a name="reportroot-getoffice365groupsactivitycounts"></a>reportRoot: getOffice365GroupsActivityCounts
 

@@ -4,12 +4,12 @@ description: Representa possíveis problemas de segurança no locatário de um c
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: c7973522b8593d38724ee40374f40d58d3408ff6
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 9b08025890a5f3429d1a29762e73b14c6e942817
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526197"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574730"
 ---
 # <a name="alert-resource-type"></a>tipo de alerta do recurso
 
@@ -34,7 +34,7 @@ Os alertas podem ser recuperados de diferentes provedores de segurança listados
 |activityGroupName|String|Nome ou alias do grupo de atividades (invasor) a que este alerta é atribuído.|
 |assignedTo|String|Nome do analista ao qual o alerta está atribuído para triagem, investigação ou remediação (suporta [atualização](../api/alert-update.md)).|
 |azureSubscriptionId|String|ID da assinatura do Azure, presente se o alerta estiver relacionado a um recurso do Azure.|
-|azureTenantId |String|Locatário do Azure Active Directory. Obrigatório. |
+|azureTenantId |String|Locatário do Azure Active Directory. Obrigatório.|
 |category|String|Categoria de alerta (por exemplo, credentialTheft ransomware, etc.).|
 |closedDateTime|DateTimeOffset|Tempo em que o alerta foi fechado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'` (suporta[atualização](../api/alert-update.md)).|
 |cloudAppStates|conjunto [cloudAppSecurityState](cloudappsecuritystate.md)|Informações com estado relacionadas à segurança geradas pelo provedor sobre os aplicativos de nuvem relacionados a esse alerta.|

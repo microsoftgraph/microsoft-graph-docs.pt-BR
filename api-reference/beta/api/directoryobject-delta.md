@@ -4,12 +4,12 @@ description: 'Get recentemente criado, atualizado ou excluído objetos de diret�
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 56ee662050858ff3d46b12b6885ba9e418d0e59d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 4b00f86dcb3789a2117a23ffa20e6392e557910d
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511839"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573253"
 ---
 # <a name="directoryobject-delta"></a>directoryObject: delta
 
@@ -63,7 +63,7 @@ Este método oferece suporte a parâmetros opcionais de consulta OData para ajud
 |:---------------|:----------|
 | Autorização  | &lt;Token&gt; de portador|
 | Content-Type  | application/json |
-| Preferir | retorno=mínimo. <br><br>Especificando este cabeçalho com uma solicitação que usa um `deltaLink` retornaria apenas as propriedades do objeto que foram alterados desde o último round. Opcional. |
+| Preferir | retornar = mínima <br><br>Especificando este cabeçalho com uma solicitação que usa um `deltaLink` retornaria apenas as propriedades do objeto que foram alterados desde o último round. Opcional. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -108,7 +108,8 @@ Adicionando um cabeçalho de solicitação opcionais - `prefer:return=minimal` -
 Este é um exemplo de solicitação. Não há nenhum `$select` parâmetro, para que um conjunto de propriedades padrão é controlado e retornado.
 <!-- {
   "blockType": "request",
-  "name": "user_delta"
+  "name": "user_delta",
+  "truncated": true
 }-->
 
 ```http
@@ -150,8 +151,7 @@ Content-type: application/json
       "department": null,
       "displayName": "John Smith",
       "givenName": null,
-      "jobTitle": null,
-      <...response trimmed for brevity...>
+      "jobTitle": null
     },
     {
       "@odata.type": "#microsoft.graph.group",
@@ -160,8 +160,7 @@ Content-type: application/json
       "classification": null,
       "createdDateTime": "2018-06-20T16:50:09Z",
       "description": null,
-      "displayName": "testgp",
-      <...response trimmed for brevity...>
+      "displayName": "testgp"
     },
     {
       "@odata.type": "#microsoft.graph.orgContact",
@@ -173,11 +172,8 @@ Content-type: application/json
       "department": "string",
       "displayName": "string",
       "givenName": "string",
-      "id": "string (identifier)",
-      "jobTitle": "string",
-      <...response trimmed for brevity...>
-    },
-    <...response trimmed for brevity...>
+      "jobTitle": "string"
+    }    
   ]
 }
 ```
@@ -187,7 +183,8 @@ Content-type: application/json
 O exemplo a seguir mostra o uso do comportamento de resposta mínimo alternativo:
 <!-- {
   "blockType": "request",
-  "name": "directoryObject_delta"
+  "name": "directoryObject_delta",
+  "truncated": true
 }-->
 
 ```http
@@ -229,8 +226,7 @@ Content-type: application/json
       "@odata.type": "#microsoft.graph.orgContact",
       "id": "8f301319-4b4e-493f-8067-bce1dec76e7a",
       "businessPhones": "12345"
-    },
-    <...response trimmed for brevity...>
+    }    
   ]
 }
 ```
@@ -240,7 +236,8 @@ Content-type: application/json
 O exemplo a seguir mostra a solicitação inicial usando o `isOf` operador para filtrar somente entidades de usuário e de grupo:
 <!-- {
   "blockType": "request",
-  "name": "directoryobject_delta"
+  "name": "directoryobject_delta",
+  "truncated": true
 }-->
 
 ```http
@@ -280,8 +277,7 @@ Content-type: application/json
       "department": null,
       "displayName": "John Smith",
       "givenName": null,
-      "jobTitle": null,
-      <...response trimmed for brevity...>
+      "jobTitle": null
     },
     {
       "@odata.type": "#microsoft.graph.group",
@@ -290,16 +286,14 @@ Content-type: application/json
       "classification": null,
       "createdDateTime": "2018-06-20T16:50:09Z",
       "description": null,
-      "displayName": "testgp",
-      <...response trimmed for brevity...>
-    },
-    <...response trimmed for brevity...>
+      "displayName": "testgp"      
+    }    
   ]
 }
 ```
 
-- Usar a consulta delta para controlar alterações nos dados do Microsoft Graph
-- Obter as alterações incrementais para usuários
+- [Consulta de delta usar para rastrear alterações nos dados do Microsoft Graph](/graph/delta-query-overview).
+- [Fazer alterações incrementais para usuários](/graph/delta-query-users).
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -4,12 +4,12 @@ description: O tipo de serviceHostedMediaConfig.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 2ab19f992dd7fac48844cd46a0600a0242517709
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 127450b569a37f00a76696a749c269f55c15b7aa
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520862"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572448"
 ---
 # <a name="servicehostedmediaconfig-resource-type"></a>tipo de recurso de serviceHostedMediaConfig
 
@@ -22,7 +22,7 @@ O tipo de serviceHostedMediaConfig.
 | Propriedade                    | Tipo                                                        | Descrição                                       |
 | :-------------------------- | :---------------------------------------------------------- | :-------------------------------------------------|
 | preFetchMedia               | coleção [mediaInfo](mediainfo.md)                        | A lista de mídia para buscar previamente.                   |
-| removeFromDefaultAudioGroup | Booliano                                                     | Remova self participante do grupo de áudio padrão. |
+| removeFromDefaultAudioGroup | Boolean                                                     | Remova self participante do grupo de áudio padrão. |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -33,11 +33,12 @@ Veja a seguir uma representação JSON do recurso.
   "optionalProperties": [
     "preFetchMedia"
   ],
+   "baseType":"microsoft.graph.mediaConfig",
   "@odata.type": "microsoft.graph.serviceHostedMediaConfig"
 }-->
 ```json
 {
-  "preFetchMedia": [ { "@odata.type": "#microsoft.graph.mediaInfo" } ],
+  "preFetchMedia": [ { "@odata.type": "microsoft.graph.mediaInfo" } ],
   "removeFromDefaultAudioGroup": true
 }
 ```

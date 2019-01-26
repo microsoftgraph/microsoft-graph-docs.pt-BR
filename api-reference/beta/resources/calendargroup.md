@@ -4,12 +4,12 @@ description: Um grupo de calendários do usuário.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: cea68da3a91396972c4e237d1fdaf0e16d65e3a3
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: a40b01136df2bb20a143a8de01188efaa2585191
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515647"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574793"
 ---
 # <a name="calendargroup-resource-type"></a>Tipo de recurso calendarGroup
 
@@ -22,7 +22,7 @@ Um grupo de calendários do usuário.
 | Método                                                      | Tipo de retorno                        | Descrição                                                   |
 | :---------------------------------------------------------- | :--------------------------------- | :------------------------------------------------------------ |
 | [List calendar groups](../api/user-list-calendargroups.md)  | Coleção [Calendar](calendar.md) | Obter os grupos de calendários do usuário.                               |
-| [Create calendar group](../api/user-post-calendargroups.md) | [Calendário](calendar.md)            | Criar um novo grupo de calendários.                                  |
+| [Create calendar group](../api/user-post-calendargroups.md) | [Calendar](calendar.md)            | Criar um novo grupo de calendários.                                  |
 | [Get calendar group](../api/calendargroup-get.md)           | [calendarGroup](calendargroup.md)  | Leia as propriedades e os relacionamentos de um objeto de grupo de calendários. |
 | [Update](../api/calendargroup-update.md)                    | [calendarGroup](calendargroup.md)  | Atualize o objeto calendarGroup.                                  |
 | [Delete](../api/calendargroup-delete.md)                    | Nenhum                               | Exclua o objeto calendarGroup.                                  |
@@ -36,9 +36,9 @@ Um grupo de calendários do usuário.
 | name      | Cadeia de caracteres | O nome do grupo.                                                                                                                                                                                           |
 | changeKey | String | Identifica a versão do grupo de calendários. Toda vez que o grupo de calendários é alterado, ChangeKey também muda. Isso permite que o Exchange aplique as alterações na versão correta do objeto. Somente leitura. |
 | classId   | Guid   | O identificador de classe. Somente leitura.                                                                                                                                                                          |
-| id        | Cadeia de caracteres | O identificador exclusivo do grupo. Somente leitura.                                                                                                                                                                 |
+| id        | String | O identificador exclusivo do grupo. Somente leitura.                                                                                                                                                                 |
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 
 | Relação | Tipo                               | Descrição                                                                    |
 | :----------- | :--------------------------------- | :----------------------------------------------------------------------------- |
@@ -54,7 +54,19 @@ Veja a seguir uma representação JSON do recurso
     "calendars"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.calendarGroup"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.calendarGroup",
+  "@odata.annotations": [
+    {
+      "property": "calendars",
+      "capabilities": {
+        "changeTracking": false,
+        "expandable": false,
+        "navigability": "single",
+        "searchable": false
+      }
+    }
+  ]
 }-->
 
 ```json

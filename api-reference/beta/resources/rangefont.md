@@ -4,12 +4,12 @@ description: Esse objeto representa os atributos de fonte de um objeto, como nom
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 2dee07b7d2573081650bdd15799e4884c774e171
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 5500ad7a2ea16336e9be617678c4c85562e04bb3
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507961"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571132"
 ---
 # <a name="rangefont-resource-type"></a>Tipo de recurso RangeFont
 
@@ -22,8 +22,8 @@ Esse objeto representa os atributos de fonte de um objeto, como nome, tamanho, c
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|Get RangeFont | RangeFont |Leia as propriedades e os relacionamentos do objeto rangeFormat.|
-|[Update](../api/rangefont-update.md) | RangeFont   |Atualize o objeto RangeFont. |
+|[Get RangeFont](../api/rangefont-get.md) | [RangeFont](rangefont.md) |Leia as propriedades e os relacionamentos do objeto rangeFormat.|
+|[Update](../api/rangefont-update.md) | [RangeFont](rangefont.md)   |Atualize o objeto RangeFont. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
@@ -33,9 +33,9 @@ Esse objeto representa os atributos de fonte de um objeto, como nome, tamanho, c
 |italic|booliano|Representa o status da fonte em itálico.|
 |name|string|Nome da fonte (por exemplo, "Calibri")|
 |size|Double|Font Size|
-|underline|string|Tipo de sublinhado aplicado à fonte. Os valores possíveis são: `None`, `Single`, `Double`, `SingleAccountant` e `DoubleAccountant`.|
+|underline| cadeia de caracteres de enum |Tipo de sublinhado aplicado à fonte. Os valores possíveis são: `None`, `Single`, `Double`, `SingleAccountant` e `DoubleAccountant`.|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 Nenhum
 
 
@@ -58,7 +58,7 @@ Veja a seguir uma representação JSON do recurso.
   "italic": true,
   "name": "string",
   "size": 1024,
-  "underline": "string"
+  "underline": "None | Single | Double | SingleAccountant | DoubleAccountant"
 }
 
 ```

@@ -4,12 +4,12 @@ description: 'Tipo complexo que contém as propriedades de itens compartilhados.
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 3fff669b2b337e9566cd41a7cd5eb5ab73a84944
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 380db80f120b29a0d1dca1a4b052679e483bc6f7
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512266"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571034"
 ---
 # <a name="sharingdetail-resource-type"></a>tipo de recurso de sharingDetail
 
@@ -19,7 +19,13 @@ Tipo complexo que contém as propriedades de itens [compartilhados](insights-sha
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
 
+  ],
+  "@odata.type": "microsoft.graph.sharingDetail"
+}-->
 ```json
 {
   "sharedDateTime": "dateTimeOffset",
@@ -36,7 +42,7 @@ Veja a seguir uma representação JSON do recurso
 | -------------         |-----------    | -------------|
 | sharedDateTime        | DateTimeOffset| A data e hora que o arquivo foi última compartilhado. O carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `2014-01-01T00:00:00Z`. Somente leitura.  |
 | sharingSubject        | String          | O assunto com a qual o documento foi compartilhado. |
-| SharingType             | String        | Determina a maneira como o documento foi compartilhada, pode ser um "Link", por "Anexo", "Grupo", "Site".     |
+| sharingType             | String        | Determina a maneira como o documento foi compartilhada, pode ser um "Link", por "Anexo", "Grupo", "Site".     |
 | sharedBy                | [insightIdentity](insights-insightidentity.md)      | O usuário que compartilhado do documento.  |
 | sharingReference        | [resourceReference](insights-resourcereference.md)      |  |
 <!--

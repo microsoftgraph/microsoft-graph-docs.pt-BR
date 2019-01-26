@@ -3,12 +3,13 @@ title: tipo de recurso de yammerDeviceUsageUserDetail
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 2b74222c1a636fac271268e228c8140e7d1cf33f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: 5fe3aa7fa9da243c9cc8f9b015ee85d779b84eb3
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27912005"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574149"
 ---
 # <a name="yammerdeviceusageuserdetail-resource-type"></a>tipo de recurso de yammerDeviceUsageUserDetail
 
@@ -17,18 +18,18 @@ ms.locfileid: "27912005"
 | Propriedade          | Tipo    |
 | :---------------- | :------ |
 | reportRefreshDate | Data    |
-| userPrincipalName | Cadeia de caracteres  |
-| displayName       | Cadeia de caracteres  |
-| userState         | Cadeia de caracteres  |
+| userPrincipalName | String  |
+| displayName       | String  |
+| userState         | String  |
 | stateChangeDate   | Data    |
 | lastActivityDate  | Data    |
-| usedWeb           | Booliano |
-| usedWindowsPhone  | Booliano |
-| usedAndroidPhone  | Booliano |
-| usediPhone        | Booliano |
-| usediPad          | Booliano |
-| usedOthers        | Booliano |
-| reportPeriod      | Cadeia de caracteres  |
+| usedWeb           | Boolean |
+| usedWindowsPhone  | Boolean |
+| usedAndroidPhone  | Boolean |
+| usediPhone        | Boolean |
+| usediPad          | Boolean |
+| usedOthers        | Boolean |
+| reportPeriod      | String  |
 
 ## <a name="json-representation"></a>Representação JSON
 

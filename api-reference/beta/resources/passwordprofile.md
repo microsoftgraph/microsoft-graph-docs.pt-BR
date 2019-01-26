@@ -1,13 +1,13 @@
 ---
 title: Tipo de recurso passwordProfile
-description: Contém o perfil de senha associado a um usuário. A propriedade **passwordProfile** da entidade **user** é um objeto passwordProfile.
+description: Contém o perfil de senha associado a um usuário. A propriedade **passwordProfile** da entidade user é um objeto **passwordProfile**.
 localization_priority: Normal
-ms.openlocfilehash: 3caff59c8fd0838b91f9fdfb79bdbb154aa83b9f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: a68cd61c7ab3fd1e62ca9bc889a6691068174dc6
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518930"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574569"
 ---
 # <a name="passwordprofile-resource-type"></a>Tipo de recurso passwordProfile
 
@@ -20,7 +20,7 @@ Contém o perfil de senha associado a um usuário. A propriedade **passwordProfi
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |forceChangePasswordNextSignIn|Booliano| Se **verdadeiro**, na próxima tela de entrada, o usuário deve alterar sua senha. Após uma alteração de senha, essa propriedade será redefinida automaticamente como ***false**. Se não for definido, o padrão é **false**. |
-|forceChangePasswordNextSignInWithMfa|Booliano| Se **verdadeiro**, na próxima tela de entrada, o usuário deve executar uma autenticação multifator (MFA) antes de serem é forçado a alterar sua senha. O comportamento é idêntico ao **forceChangePasswordNextSignIn** , exceto pelo fato do usuário é necessário para realizar primeiro uma autenticação multifator antes de alteração de senha. Após uma alteração de senha, esta propriedade será redefinida para **false**automaticamente. Se não for definido, o padrão é **false**. |
+|forceChangePasswordNextSignInWithMfa|Boolean| Se **verdadeiro**, na próxima tela de entrada, o usuário deve executar uma autenticação multifator (MFA) antes de serem é forçado a alterar sua senha. O comportamento é idêntico ao **forceChangePasswordNextSignIn** , exceto pelo fato do usuário é necessário para realizar primeiro uma autenticação multifator antes de alteração de senha. Após uma alteração de senha, esta propriedade será redefinida para **false**automaticamente. Se não for definido, o padrão é **false**. |
 |password|String|A senha do usuário. Essa propriedade é necessária ao criar um usuário. Pode ser atualizada, mas o usuário precisará alterar a senha no próximo login. A senha deve atender a requisitos mínimos, conforme especificado pelo a propriedade **passwordPolicies** do usuário. Por padrão, é necessária uma senha forte.|
 
 ## <a name="json-representation"></a>Representação JSON
@@ -32,7 +32,7 @@ Veja a seguir uma representação JSON do recurso
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.passwordprofile"
+  "@odata.type": "microsoft.graph.passwordProfile"
 }-->
 
 ```json

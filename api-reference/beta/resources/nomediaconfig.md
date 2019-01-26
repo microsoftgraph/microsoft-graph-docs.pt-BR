@@ -4,12 +4,12 @@ description: Configuração de mídia para não indicando nenhuma mídia.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8d564493889cc367ecdb697ce4031c40a4cbbbef
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 06ca7f2c49c23575487d95bdb555d03d86860849
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526869"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573568"
 ---
 # <a name="nomediaconfig-resource-type"></a>tipo de recurso de noMediaConfig
 
@@ -21,7 +21,7 @@ Configuração de mídia para não indicando nenhuma mídia.
 
 | Propriedade       | Tipo    | Descrição|
 |:---------------|:--------|:----------|
-| removeFromDefaultAudioGroup | Booliano |  |
+| removeFromDefaultAudioGroup | Boolean |  |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -32,6 +32,7 @@ Veja a seguir uma representação JSON do recurso.
   "optionalProperties": [
 
   ],
+   "baseType":"microsoft.graph.mediaConfig",
   "@odata.type": "microsoft.graph.noMediaConfig"
 }-->
 ```json

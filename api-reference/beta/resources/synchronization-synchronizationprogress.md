@@ -2,12 +2,12 @@
 title: tipo de recurso de synchronizationProgress
 description: Representa o progresso de um synchronizationJob rumo à conclusão.
 localization_priority: Normal
-ms.openlocfilehash: b22bd95f54a9f268524dc98a8d3df94fcc14f773
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 39351f07720d44679675396f9e995f5e78e25fcc
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510971"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572742"
 ---
 # <a name="synchronizationprogress-resource-type"></a>tipo de recurso de synchronizationProgress
 
@@ -22,7 +22,7 @@ Representa o progresso de um [synchronizationJob](synchronization-synchronizatio
 |completedUnits|Int32|O numerador de uma proporção de progresso; o número de unidades de alterações já processadas.|
 |progressObservationDateTime|DateTimeOffset|A hora de uma observação de progresso como um deslocamento em minutos de UTC.|
 |totalUnits|Int32|Denominador de uma proporção de progresso; um número de unidades de alterações a serem processados para realizar a sincronização.|
-|Units|Cadeia de caracteres|Uma descrição opcional das unidades.|
+|unidades|String|Uma descrição opcional das unidades.|
 
 <!-- The troubleshootingUrl property is missing a description -->
 
@@ -35,7 +35,7 @@ Veja a seguir uma representação JSON do recurso.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.synchronizationStatus"
+  "@odata.type": "microsoft.graph.synchronizationProgress"
 }-->
 
 ```json

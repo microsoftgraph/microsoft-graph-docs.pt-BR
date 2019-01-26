@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: DriveItem
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: fa172301e633a6f001133d44cb3332a5e133efe2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: b2b09ddfd99da7094ae25addf95985fdf8c6cf99
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516739"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572064"
 ---
 # <a name="driveitem-resource-type"></a>tipo de recurso de driveItem
 
@@ -38,16 +38,22 @@ Veja a seguir uma representação JSON de um recurso **driveItem**.
 
 O recurso **driveItem** é derivado de [**baseItem**][baseItem] e herda propriedades desse recurso.
 
-<!-- { "blockType": "resource", "@type": "microsoft.graph.driveItem", "@type.aka": "oneDrive.item",
+<!-- { 
+       "blockType": "resource", 
+       "@odata.type": "microsoft.graph.driveItem", 
+       "@type.aka": "oneDrive.item",
        "baseType": "microsoft.graph.baseItem",
        "optionalProperties": ["cTag", "children", "folder", "file", "image", "audio", "video",
        "location", "deleted", "specialFolder", "photo", "thumbnails", "searchResult", "remoteItem",
        "shared", "content", "@microsoft.graph.conflictBehavior", "@microsoft.graph.downloadUrl", "@content.sourceUrl",
        "sharepointIds"],
-       "keyProperty": "id", "openType": true } -->
+       "keyProperty": "id", "openType": true 
+    } 
+-->
 
 ```json
 {
+  "@odata.type": "microsoft.graph.driveItem", 
   "audio": { "@odata.type": "microsoft.graph.audio" },
   "cTag": "string (etag)",
   "deleted": { "@odata.type": "microsoft.graph.deleted"},
@@ -100,7 +106,7 @@ O recurso **driveItem** é derivado de [**baseItem**][baseItem] e herda propried
 
 | Propriedade             | Tipo               | Descrição
 |:---------------------|:-------------------|:---------------------------------
-| audio                | [audio][]          | Metadados de áudio, se o item for um arquivo de áudio. Somente leitura.
+| audio                | [audio](audio.md)  | Metadados de áudio, se o item for um arquivo de áudio. Somente leitura.
 | createdBy            | [identitySet][]    | Identidade do usuário, dispositivo e aplicativo que criou o item. Somente leitura.
 | createdDateTime      | DateTimeOffset     | Data e hora de criação do item. Somente leitura.
 | cTag                 | String             | Uma eTag para o conteúdo do item. Essa eTag não será alterada se apenas os metadados forem alterados. **Observação** Essa propriedade não será retornada se o item for uma pasta. Somente leitura.
@@ -138,9 +144,9 @@ O recurso **driveItem** é derivado de [**baseItem**][baseItem] e herda propried
 | Relação       | Tipo                            | Descrição
 |:-------------------|:--------------------------------|:--------------------------
 | activities         | Conjunto [itemActivity][]     | A lista de atividades recentes que ocorreram neste item.
-| Análise          | recurso de [itemAnalytics][]      | Análise sobre as atividades de modo de exibição que foram realizada neste item.
+| análise          | recurso de [itemAnalytics][]      | Análise sobre as atividades de modo de exibição que foram realizada neste item.
 | content            | Fluxo                          | O fluxo de conteúdo, se o item representar um arquivo.
-| children           | Conjunto driveitem            | Conjunto que contêm objetos Item para os filhos imediatos de Item. Somente os itens que representam pastas têm filhos. Somente leitura. Anulável.
+| children           | coleção driveItem            | Conjunto que contêm objetos Item para os filhos imediatos de Item. Somente os itens que representam pastas têm filhos. Somente leitura. Anulável.
 | listItem           | [listItem][]                    | Para as unidades no SharePoint, o item de lista da biblioteca de documento associado. Somente leitura. Anulável.
 | permissions        | Coleção [permission][]       | O conjunto de permissões do item. Somente leitura. Anulável.
 | miniaturas         | Coleção [thumbnailSet][]     | Coleção contendo objetos [ThumbnailSet][] associados ao item. Para saber mais, confira [obtendo miniaturas][]. Somente leitura. Anulável.

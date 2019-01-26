@@ -2,12 +2,12 @@
 title: tipo de recurso fileAttachment
 description: Um arquivo (por exemplo, um arquivo de texto ou um documento do Word) anexado a um evento,
 localization_priority: Normal
-ms.openlocfilehash: 7032bcd234d07f0f3fdce0787968d72530a0a442
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 5f7be9bca3114fc7e74be711dc606a278e0025ff
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510761"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572798"
 ---
 # <a name="fileattachment-resource-type"></a>tipo de recurso fileAttachment
 
@@ -32,10 +32,10 @@ Derivado de [attachment](attachment.md).
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|contentBytes|Binária|O conteúdo do arquivo codificado pela base64.|
+|contentBytes|String|O conteúdo do arquivo codificado pela base64.|
 |contentId|String|A ID do anexo no repositório do Exchange.|
-|contentLocation|String|O URI (Uniform Resource Identifier) que corresponde ao local do conteúdo do anexo.|
-|contentType|Cadeia de caracteres|O tipo de conteúdo do anexo.|
+|contentLocation|String|Não use essa propriedade como ela não é suportada.|
+|contentType|String|O tipo de conteúdo do anexo.|
 |id|String|A ID do anexo.|
 |isInline|Booliano|Defina como true se este for um anexo embutido.|
 |lastModifiedDateTime|DateTimeOffset|Data e hora em que o anexo foi modificado pela última vez.|
@@ -60,7 +60,7 @@ Veja a seguir uma representação JSON do recurso
 
 ```json
 {
-  "contentBytes": "binary",
+  "contentBytes": "String",
   "contentId": "string",
   "contentLocation": "string",
   "contentType": "string",

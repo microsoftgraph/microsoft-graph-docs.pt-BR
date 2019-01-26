@@ -3,12 +3,13 @@ title: 'reportRoot: getOffice365ActivationsUserDetail'
 description: Obtenha dados sobre usuários que ativaram o Office 365.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: c2cea0affc6cbbc67acbe38271bd9c0ac0fbb742
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: 1603ce547723ffe7271a76986f51241466c306f3
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529023"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571363"
 ---
 # <a name="reportroot-getoffice365activationsuserdetail"></a>reportRoot: getOffice365ActivationsUserDetail
 

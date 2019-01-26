@@ -2,14 +2,14 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/17/2017
-title: baseItemVersion
+title: BaseItemVersion
 localization_priority: Normal
-ms.openlocfilehash: fcf427300007277f7ea6382579ad3a0929ca97d1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 92784fd9836c0ffd8fe748c2daee0947edefbbdc
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519406"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571104"
 ---
 # <a name="baseitemversion-resource-type"></a>Tipo de recurso BaseItemVersion
 
@@ -20,7 +20,13 @@ O recurso **baseItemVersion** representa uma versão anterior de um item ou de u
 
 ## <a name="json-representation"></a>Representação JSON
 
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.baseItemVersion", "@type.aka": "oneDrive.baseItemVersion" } -->
+<!--{
+  "blockType": "resource",
+  "abstract": true,
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.baseItemVersion",
+  "@type.aka": "oneDrive.baseItemVersion"
+}-->
 
 ```json
 {
@@ -39,7 +45,7 @@ O recurso **baseItemVersion** representa uma versão anterior de um item ou de u
 | **id**                   | string                                               | A ID da versão. Somente leitura.                                       |
 | **lastModifiedBy**       | [IdentitySet](../resources/identityset.md)           | Identidade do usuário que modificou a versão pela última vez. Somente leitura.        |
 | **lastModifiedDateTime** | [DateTimeOffset](../resources/timestamp.md)          | Data e hora em que a versão foi modificada pela última vez. Somente leitura.                 |
-| publication          | [PublicationFacet](../resources/publicationfacet.md) | Indica o status de publicação desta versão específica. Somente leitura. |
+| **publication**          | [PublicationFacet](../resources/publicationfacet.md) | Indica o status de publicação desta versão específica. Somente leitura. |
 
 
 <!--

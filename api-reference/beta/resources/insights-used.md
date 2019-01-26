@@ -1,15 +1,15 @@
 ---
-title: usado o tipo de recurso
+title: tipo de recurso de usedInsight
 description: Uma compreensão dos representando documentos usados por um usuário específico. As ideias retorna os documentos mais relevantes que um usuário visualizados ou acessados.
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 35698741cd457f4e8d202b13dd9099bb2669b6e1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 056654a5e467e202b2bde5ac8ee98dccab93d7c9
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525854"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574226"
 ---
 # <a name="used-resource-type"></a>usado o tipo de recurso
 
@@ -35,15 +35,21 @@ Uma compreensão dos representando documentos usados por um usuário específico
 | resourceVisualization | [resourceVisualization](insights-resourcevisualization.md)                | Propriedades que você pode usar para visualizar o documento na sua experiência. Somente leitura      |
 | resourceReference     | [resourceReference](insights-resourcereference.md)                      | Propriedades de referência do documento usado, como a url e o tipo de documento. Somente leitura     |
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 
 | Propriedade      | Tipo          | Descrição  |
 | ------------- |---------------| -------------|
-| recurso      | Entity        | Usado para navegar até o item que foi usado. Anexos de arquivo, o tipo é *fileAttachment*. Anexos vinculados, o tipo é *driveItem*. |
+| recurso      | coleção de entidade | Usado para navegar até o item que foi usado. Anexos de arquivo, o tipo é *fileAttachment*. Anexos vinculados, o tipo é *driveItem*. |
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
 
+  ],
+  "@odata.type": "microsoft.graph.usedInsight"
+}-->
 ```json
 {
   "id": "string",

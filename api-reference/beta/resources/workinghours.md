@@ -2,12 +2,12 @@
 title: Tipo de recurso workingHours
 description: Representa os dias da semana e as horas de um fuso horário específico que o usuário trabalha.
 localization_priority: Normal
-ms.openlocfilehash: 40a74cd1446dc2553e30ebd0616b0b0e33192778
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 8d0c0c96838af63cd0e1c665d23e54938b4ea34d
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512280"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573820"
 ---
 # <a name="workinghours-resource-type"></a>Tipo de recurso workingHours
 
@@ -25,9 +25,9 @@ Quando outras pessoas solicitarem reuniões de trabalho com você no seu local h
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| daysOfWeek | Coleção de cadeia de caracteres | Os dias da semana em que o usuário trabalha. |
-| startTime | Edm.TimeOfDay | A hora do dia em que o usuário começa a trabalhar. |
-| endTime | Edm.TimeOfDay | A hora do dia em que o usuário para de trabalhar. |
+| daysOfWeek | coleção dayOfWeek | Os dias da semana em que o usuário trabalha. |
+| startTime | Cadeia de caracteres (TimeOfDay) | A hora do dia em que o usuário começa a trabalhar. |
+| endTime | Cadeia de caracteres (TimeOfDay) | A hora do dia em que o usuário para de trabalhar. |
 | timeZone | [timeZoneBase](timezonebase.md) | O fuso horário ao qual o horário de trabalho se aplica. |
 
 
@@ -45,9 +45,9 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "daysOfWeek": ["string"],
-  "startTime": "TimeOfDay",
-  "endTime": "TimeOfDay",
+  "daysOfWeek": ["dayOfWeek"],
+  "startTime": "String (TimeOfDay)",
+  "endTime": "String (TimeOfDay)",
   "timeZone": {"@odata.type": "microsoft.graph.timeZoneBase"}
 }
 

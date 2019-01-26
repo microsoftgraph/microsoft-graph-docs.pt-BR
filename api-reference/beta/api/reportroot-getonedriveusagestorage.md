@@ -3,12 +3,13 @@ title: 'reportRoot: getOneDriveUsageStorage'
 description: Obtenha a tendência da quantidade de armazenamento que você está usando no OneDrive for Business.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 4274740947e9160817cf874f9d2105b24d71de86
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: c84e079684d6f0224456c3eba7d963fd4c4f0c65
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510012"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574016"
 ---
 # <a name="reportroot-getonedriveusagestorage"></a>reportRoot: getOneDriveUsageStorage
 

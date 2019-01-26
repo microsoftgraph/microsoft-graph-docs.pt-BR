@@ -4,12 +4,12 @@ description: Representa um objeto de formatação para os pontos do gráfico.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: da06bd0e399d095f525d5feaeb47b2d27d281cbc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 3004577a5ca9687b4bef85f59cfcc8eb528c4a66
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519084"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573302"
 ---
 # <a name="chartpointformat-resource-type"></a>Tipo de recurso ChartPointFormat
 
@@ -19,15 +19,34 @@ Representa um objeto de formatação para os pontos do gráfico.
 
 
 ## <a name="methods"></a>Métodos
-Nenhuma
+Nenhum
 
 ## <a name="properties"></a>Propriedades
 Nenhum
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|fill|[ChartFill](chartfill.md)|Representa o formato de preenchimento de um gráfico, que inclui informações sobre a formatação da tela de fundo. Somente leitura.|
+|fill|[WorkbookChartFill](chartfill.md)|Representa o formato de preenchimento de um gráfico, que inclui informações sobre a formatação da tela de fundo. Somente leitura.|
+
+
+## <a name="json-representation"></a>Representação JSON
+
+Veja a seguir uma representação JSON do recurso.
+
+<!--{
+  "blockType": "resource",
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookChartPointFormat"
+}-->
+
+```json
+{
+  "fill": {"@odata.type": "microsoft.graph.workbookChartFill"}
+}
+```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

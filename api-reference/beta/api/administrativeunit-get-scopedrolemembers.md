@@ -4,12 +4,12 @@ description: Recupere um recurso scopedRoleMembership específico.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0e961097184730922aebd4348f88b8570d5c24ca
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 79c669554d60ffd5e4445290166779b98701f9aa
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525987"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573554"
 ---
 # <a name="get-a-scopedrolemember"></a>Obtenha um scopedRoleMember
 
@@ -60,7 +60,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.scopedrolemembership"
+  "@odata.type": "microsoft.graph.scopedRoleMembership"
 } -->
 ```http
 HTTP/1.1 200 OK

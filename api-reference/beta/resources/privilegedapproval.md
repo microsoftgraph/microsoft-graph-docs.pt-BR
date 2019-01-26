@@ -2,12 +2,12 @@
 title: tipo de recurso de privilegedApproval
 description: Representa uma aprovação solicitada no gerenciamento de identidades privilegiado para entrar em uma função.
 localization_priority: Normal
-ms.openlocfilehash: 283236d945e9a71a4ae0461bbefe66260efa88a4
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 03cdba4eee7b031645928b2f512288a18ba18bf8
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516886"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571014"
 ---
 # <a name="privilegedapproval-resource-type"></a>tipo de recurso de privilegedApproval
 
@@ -38,13 +38,13 @@ Representa uma aprovação solicitada no gerenciamento de identidades privilegia
 |requestorReason|String||
 |roleId|String||
 |startDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|userId|Cadeia de caracteres||
+|userId|String||
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|roleInfo|[privilegedRole](privilegedrole.md)| Somente leitura. Anulável.|
-|Solicitação|[privilegedRoleAssignmentRequest](privilegedroleassignmentrequest.md)| Somente leitura. A solicitação de atribuição de função para este objeto de aprovação|
+|roleInfo| [privilegedRole](privilegedrole.md) | Somente leitura. Anulável.|
+|solicitação| [privilegedRoleAssignmentRequest](privilegedroleassignmentrequest.md) | Somente leitura. A solicitação de atribuição de função para este objeto de aprovação|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
