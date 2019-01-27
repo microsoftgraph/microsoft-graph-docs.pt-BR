@@ -1,21 +1,21 @@
 ---
-title: Adicionar guia ao canal
-description: 'Adiciona (pins) uma guia para o canal especificado dentro de uma equipe. '
+title: Adicionar uma guia ao canal
+description: 'Adiciona (pins) a uma guia para o canal especificado dentro de uma equipe. '
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8c2aee1f67eebd2fda7515ede27158f3154dd2d1
-ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
-ms.translationtype: MT
+ms.openlocfilehash: 38609a373ccac9a66b643f600a39de7aeb57cfbb
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28016711"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572504"
 ---
-# <a name="add-tab-to-channel"></a>Adicionar guia ao canal
+# <a name="add-tab-to-channel"></a>Adicionar uma guia ao canal
 
 
 
-Adiciona (pins) um [guia](../resources/teamstab.md) para o [canal](../resources/channel.md) especificado dentro de uma [equipe](../resources/team.md). O aplicativo correspondente já deve estar [instalado na equipe de](../api/teamsappinstallation-add.md).
+Adiciona (pins) a uma [guia](../resources/teamstab.md) para o canal [especificado](../resources/channel.md) dentro de uma [equipe](../resources/team.md). O aplicativo correspondente já deve estar [instalado na equipe](../api/teamsappinstallation-add.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 | Aplicativo                            | Group.ReadWrite.All                         |
 
-> **Observação**: Esta API oferece suporte a permissões de administrador. Administradores globais e administradores de serviço de Teams da Microsoft podem acessar as equipes que eles não serão um membro do.
+> **Observação**: esta API oferece suporte a permissões de administrador. Os administradores globais e os administradores do serviço do Microsoft Teams podem acessar equipes das quais eles não são membros.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +41,7 @@ POST /teams/{id}/channels/{id}/tabs
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-Um [teamsTab](../resources/teamstab.md).
+Uma [teamsTab](../resources/teamstab.md).
 
 ## <a name="response"></a>Resposta
 
@@ -72,7 +72,7 @@ POST https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs
 
 #### <a name="response"></a>Resposta
 
-Este é um exemplo de resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Este é um exemplo de resposta. Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "ignored",
   "truncated": true,
@@ -92,14 +92,13 @@ Content-type: application/json
     "websiteUrl": "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154",
     "removeUrl": "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154/uninstallTab"
   },
-  "sortOrderIndex": 20,
   "webUrl": "https://teams.microsoft.com/l/channel/19%3ac2e36757ee744c569e70b385e6dd79b6%40thread.skype/tab%3a%3afd736d46-51ed-4c0b-9b23-e67ca354bb24?label=my%20%contoso%to%tab"
 }
 ```
 
 ## <a name="see-also"></a>Confira também
 
-[Configurando os tipos de guia interna](/graph/teams-configuring-builtin-tabs)
+[Configurar tipos de guia internos](/graph/teams-configuring-builtin-tabs)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
