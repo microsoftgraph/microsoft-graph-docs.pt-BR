@@ -2,12 +2,12 @@
 title: Tipo de recurso passwordProfile
 description: Contém o perfil de senha associado a um usuário. A propriedade **passwordProfile** da entidade user é um objeto **passwordProfile**.
 localization_priority: Priority
-ms.openlocfilehash: 80d774906fb4897f57b943af827cfbc32e90511f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.openlocfilehash: cea8dcc114cb599a2d857ced67ac25c9eb275497
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27819660"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526022"
 ---
 # <a name="passwordprofile-resource-type"></a>Tipo de recurso passwordProfile
 
@@ -18,6 +18,7 @@ Contém o perfil de senha associado a um usuário. A propriedade **passwordProfi
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |forceChangePasswordNextSignIn|Booliano| **true** se o usuário precisa alterar sua senha no próximo login; caso contrário, **false**. |
+|forceChangePasswordNextSignInWithMfa|Booliano| Se for **true**, na próxima conexão, o usuário deverá executar uma Autenticação Multifator (MFA) antes de ser forçado a alterar sua senha. O comportamento é idêntico a **forceChangePasswordNextSignIn**, exceto pelo fato de que o usuário deve primeiro executar uma autenticação multifator antes da alteração da senha. Após uma alteração de senha, esta propriedade será automaticamente redefinida para **false**. Caso não seja definida, o padrão é **false**. |
 |password|String|A senha do usuário. Essa propriedade é necessária ao criar um usuário. Pode ser atualizada, mas o usuário precisará alterar a senha no próximo login. A senha deve atender a requisitos mínimos, conforme especificado pelo a propriedade **passwordPolicies** do usuário. Por padrão, é necessária uma senha forte.|
 
 ## <a name="json-representation"></a>Representação JSON
@@ -35,6 +36,7 @@ Veja a seguir uma representação JSON do recurso
 ```json
 {
   "forceChangePasswordNextSignIn": true,
+  "forceChangePasswordNextSignInWithMfa": false,
   "password": "string"
 }
 

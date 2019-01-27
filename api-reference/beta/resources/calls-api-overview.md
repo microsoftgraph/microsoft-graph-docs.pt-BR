@@ -1,103 +1,111 @@
 ---
-title: Trabalhando com a API de reuniões online no Microsoft Graph e de chamadas
-description: O Microsoft Graph chama e reuniões online API adiciona uma nova dimensão a como seus aplicativos e serviços podem interagir com os usuários, permitindo que os recursos de vídeos e voz. A API permite criar chamadas e receber chamadas de usuários e aplicativos no Microsoft Teams. Você pode usar essas APIs para criar um aplicativo de serviço (bot) que possa atuar como um participante de uma chamada ou reunião.
+title: Como trabalhar com a API de chamadas e reuniões online no Microsoft Graph
+description: A API de reuniões online e chamadas do Microsoft Graph adiciona uma nova dimensão à forma como seus aplicativos e serviços podem interagir com usuários e permitir recursos de voz e vídeo. A API permite que você crie chamadas e receba chamadas de usuários e aplicativos no Microsoft Teams. Você pode usar essas APIs para criar um aplicativo de serviço (bot) que possa atuar como participante de uma chamada ou reunião.
 author: VinodRavichandran
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: bde47093496e70d0113f9d3a522c845148748f42
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: ab01bc71ccb4f7490a60c47712198f72032fc157
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27956357"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525147"
 ---
-# <a name="working-with-the-calls-and-online-meetings-api-in-microsoft-graph"></a>Trabalhando com a API de reuniões online no Microsoft Graph e de chamadas
+# <a name="working-with-the-calls-and-online-meetings-api-in-microsoft-graph"></a>Como trabalhar com a API de chamadas e reuniões online no Microsoft Graph
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O Microsoft Graph chama e reuniões online API adiciona uma nova dimensão a como seus aplicativos e serviços podem interagir com os usuários, permitindo que os recursos de vídeos e voz. A API permite criar chamadas e receber chamadas de usuários e aplicativos no Microsoft Teams. Você pode usar essas APIs para criar um aplicativo de serviço (bot) que possa atuar como um participante de uma chamada ou reunião.
+A API de reuniões online e chamadas do Microsoft Graph adiciona uma nova dimensão à forma como seus aplicativos e serviços podem interagir com usuários e permitir recursos de voz e vídeo. A API permite que você crie chamadas e receba chamadas de usuários e aplicativos no Microsoft Teams. Você pode usar essas APIs para criar um aplicativo de serviço (bot) que possa atuar como participante de uma chamada ou reunião.
 
-## <a name="call-types"></a>Tipos de chamada
+## <a name="call-types"></a>Tipos de chamadas
 
-As chamadas são classificadas como chamadas ponto a ponto ou mais participantes. Um usuário pode iniciar uma chamada ponto a ponto com sua bot ou convidar sua bot em uma conferência com vários participantes existente. Não há permissões são necessárias quando o usuário está convidando o bot para uma chamada ponto a ponto. Para o seu bot participar de uma chamada com vários participantes, o bot precisa ter a permissão do administrador de locatário para ingressar em uma chamada do grupo.
+As chamadas são categorizadas como chamadas de ponto a ponto ou com vários participantes. Um usuário pode iniciar uma chamada de ponto a ponto com seu bot ou convidar seu bot para uma conferência existente com vários participantes. Não são necessárias permissões quando o usuário convida o bot para uma chamada de ponto a ponto. Para seu bot participar de uma chamada com vários participantes, o bot precisa ter permissão do administrador do locatário para participar de uma chamada em grupo.
 
-![Uma imagem mostrando as chamadas ponto a ponto e multipontos](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/call-types.png)
+![Uma imagem mostrando chamadas de ponto a ponto ou com vários participantes](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/call-types.png)
 
-Se seu bot está criando a chamada, ele precisa ter a permissão de chamada do grupo de iniciar ou o iniciar. Sua bot tem a opção para criar uma chamada ponto a ponto ou uma chamada com vários participantes.
+Se seu bot estiver criando a chamada, ele precisará ter a permissão de iniciar ou iniciar chamada em grupo. O bot tem a opção para criar uma chamada de ponto a ponto ou uma chamada com vários participantes.
 
-- Para uma chamada ponto a ponto, o bot deve especificar apenas um destino e nenhum coordenadas de reunião. 
-- Se seu bot inicia uma chamada com vários participantes, uma reunião ad hoc está configurada em segundo plano e everyone ingressa conferência. Se a reunião coordenadas forem especificadas, uma chamada com vários participantes está configurada, mesmo se não houver apenas um destino.
+- No caso de uma chamada de ponto a ponto, o bot só precisa especificar um destino e nenhuma coordenada para a reunião. 
+- Se o bot iniciar uma chamada com vários participantes, uma reunião ad hoc será configurada nos bastidores e todos ingressarão na conferência. Se as coordenadas para a reunião forem especificadas, uma chamada com vários participantes será configurada mesmo se houver apenas um destino.
 
-Uma chamada pode iniciar como ponto a ponto e escale para com vários participantes. Uma conferência é provisionada automaticamente e a mídia é redirecionada para a conferência. Sua bot pode iniciar o escalonamento convidando outras pessoas, desde que sua bot tem a permissão de chamada do grupo de iniciar. Se o escalonamento é iniciado por outro participante e o bot não tem permissão de associação de grupo de chamada, sua bot será eliminado da chamada.
+Uma chamada ser iniciada como uma chamada de a ponto a ponto e ser escalonada para uma chamada com vários participantes. Uma conferência será automaticamente provisionada e a mídia redirecionada para a conferência. Seu bot pode iniciar o escalonamento convidando outras pessoas, desde que seu bot tenha a permissão de iniciar chamada em grupo. Se escalonamento for iniciado por outro participante e o bot não tiver permissão de ingressar na chamada em grupo, o bot será retirado da chamada.
 
-> **Importante:** Quando uma chamada será escalonada de ponto a ponto com vários participantes, nem todos os recursos com vários participantes estão disponíveis. Especificamente, o bot não receberão atualizações da lista de participação.
+> **Importante:** quando uma chamada é passada de ponto a ponto para com vários participantes, nem todos os recursos com vários participantes estão disponíveis. Especificamente, o bot não receberá atualizações da lista de participantes.
 
 ## <a name="signaling"></a>Sinalização
 
 ### <a name="incoming-call"></a>Chamada de entrada
 
-Para receber uma chamada de entrada, você precisa registrar o bot de chamada. Quando o bot recebe a notificação de entrada, ela possui as seguintes opções.
+Para receber uma chamada de entrada, registre o bot de chamada. Quando o bot receber a notificação de entrada, terá as seguintes opções.
 
 | Método                              | Descrição                                  |
 |:------------------------------------|:---------------------------------------------|
-| [Resposta](../api/call-answer.md)     | Atenda a chamada de entrada.                    |
-| [Reject](../api/call-reject.md)     | Rejeitar e desligar a chamada.                  |
+| [Resposta](../api/call-answer.md)     | Responda a chamada de entrada.                    |
+| [Reject](../api/call-reject.md)     | Rejeite e desligue a chamada.                  |
 | [Redirecionar](../api/call-redirect.md) | Redirecione a chamada.                           |
 
-O bot pode redirecionar a chamada para outro usuário ou um bot. O bot também poderá redirecioná-la para a caixa postal de um usuário.
+O bot pode redirecionar a chamada para outro usuário ou um bot. O bot também pode redirecioná-la para a caixa postal do usuário.
 
-![Imagem mostrando um bot redirecionar uma chamada para uma caixa postal](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/call-handling.png)
+![Imagem mostrando um bot redirecionando uma chamada para uma caixa postal](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/call-handling.png)
 
-> **Importante:** Redirecionando ou fazer chamadas de saída para PSTN atualmente não é suportado.
+> **Importante:** o redirecionamento ou a realização de chamadas de saída para o PSTN não tem suporte atualmente.
 
-### <a name="in-call"></a>Chamada
+### <a name="in-call"></a>Na chamada
 
-Operações para o bot estão disponíveis no objeto de chamada. Eles afetam o bot como participante na chamada.
-
-| Método                                                            | Descrição                                  |
-|:------------------------------------------------------------------|:---------------------------------------------|
-| [Sem áudio](../api/call-mute.md)                                       | Ativar Mudo self na chamada.                       |
-| [Desativar Mudo](../api/call-unmute.md)                                   | Desativar o mudo self na chamada.                     |
-| [UpdateMetadata](../api/call-updatemetadata.md)                   | Atualize os metadados para self na lista de participação.          |
-| [ChangeScreenSharingRole](../api/call-changescreensharingrole.md) | Iniciar e interromper o compartilhamento de tela na chamada.   |
-
-Para interagir com outros participantes na chamada, use o objeto de participantes.
+As operações para o bot estão disponíveis no objeto call. Elas afetam o bot como participante na chamada.
 
 | Método                                                            | Descrição                                  |
 |:------------------------------------------------------------------|:---------------------------------------------|
-| [Participantes da lista](../api/call-list-participants.md)             | Obtenha uma coleção de objetos dos participantes.         |
-| [Convidar participantes](../api/participant-invite.md)               | Convide participantes à chamada ativa.      |
-| [Ativar Mudo de todos os participantes](../api/participant-muteall.md)            | Ativar Mudo de todos os participantes na chamada.           |
+| [Mute](../api/call-mute.md)                                       | Ative o mudo automaticamente na chamada.                       |
+| [Unmute](../api/call-unmute.md)                                   | Desative o mudo automaticamente na chamada.                     |
+| [UpdateMetadata](../api/call-updatemetadata.md)                   | Atualize metadados automaticamente na lista de participantes.          |
+| [ChangeScreenSharingRole](../api/call-changescreensharingrole.md) | Inicie e interrompa a tela de compartilhamento na chamada.   |
+
+Para interagir com outros participantes na chamada, use o objeto participants.
+
+| Método                                                            | Descrição                                  |
+|:------------------------------------------------------------------|:---------------------------------------------|
+| [List participants](../api/call-list-participants.md)             | Obtenha uma coleção de objetos participant.         |
+| [Invite Participants](../api/participant-invite.md)               | Convide participantes para a chamada ativa.      |
+| [Mute All Participants](../api/participant-muteall.md)            | Ative o mudo para todos os participantes em uma chamada.           |
 
 ## <a name="media"></a>Mídia
 
-Processamento de mídia é gerenciado por meio da plataforma de mídia em tempo real da Microsoft. A plataforma de mídia em tempo real ajuda bots participar de reuniões e chamadas de áudio/vídeo Teams da Microsoft. Ele permite bots em tempo real participar de chamadas ponto a ponto e multipontos.
+O processamento de mídia é gerenciado pelo Microsoft RealTime Media Platform. O RealTime Media Platform ajuda no envolvimento dos bots em reuniões e chamadas de áudio/vídeo do Microsoft Teams. Permite que bots em tempo real participem em chamadas de ponto a ponto e com vários participantes.
 
-Quando o bot atende uma chamada de entrada ou ingressa em uma chamada de nova ou existente, ele precisa saber a plataforma de mídia em tempo real como mídia será tratada. Se você estiver criando um sistema de resposta de voz interativa (IVR), você pode descarregam o áudio caro componentes de processamento de mídia do serviço hospedado Microsoft. Se seu bot requer acesso direto aos fluxos de mídia, oferecemos uma opção de mídia de aplicativo hospedado por meio do SDK de mídia em tempo real.
+Quando o bot responde a uma chamada recebida, ou se junta a uma chamada nova ou existente, ele precisa informar o RealTime Media Platform como a mídia será tratada. Se você estiver criando um sistema IVR (Resposta de voz interativa), poderá descarregar o caro processamento de áudio para os componentes de mídia hospedados pelo serviço da Microsoft. Se seu bot exigir acesso direto aos fluxos de mídia, oferecemos uma opção de mídia hospedada pelo aplicativo usando o SDK do RealTime Media.
 
-### <a name="service-hosted-media"></a>Serviço hospedado de mídia
+### <a name="service-hosted-media"></a>Mídia hospedada pelo serviço
 
-Bots pode gerenciar o fluxo de trabalho e descarregamento de processamento de áudio para a plataforma de mídia em tempo real Microsoft. Com o serviço hospedado de mídia, você tem enfatizam opções para implementar e hospedar seu bot. Considere o uso de um dos [SDKs](https://developer.microsoft.com/graph/code-samples-and-sdks)disponíveis. Um bot de serviço hospedado mídia pode ser implementado como um serviço sem estado conforme ele não processará a mídia localmente.
+Os bots podem gerenciar o fluxo de trabalho e descarregar o processamento de áudio para o Microsoft RealTime Media Platform. Com mídia hospedada pelo serviço, você tem várias opções para implementar e hospedar seu bot. Considere usar um dos [SDKs](https://developer.microsoft.com/graph/code-samples-and-sdks) disponíveis. Um bot mídia hospedada pelo serviço pode ser implementado como um serviço sem estado já que não processa mídia localmente.
 
 | Método                                                        | Descrição                                             |
 |:--------------------------------------------------------------|:--------------------------------------------------------|
 | [PlayPrompt](../api/call-playprompt.md)                       | Reproduza um clipe de áudio para o usuário.                         |
-| [Record](../api/call-record.md)                               | Opcionalmente, reproduzir um prompt e registre um clipe de áudio.      |
-| [SubscribeToTone](../api/call-subscribetotone.md)             | Assine os tons DTMF do usuário.                  |
-| [CancelMediaProcessing](../api/call-cancelmediaprocessing.md) | Cancele qualquer mídia já processamento na fila.             |
+| [Record](../api/call-record.md)                               | Opcionalmente, reproduza um prompt e grave um clipe de áudio.      |
+| [SubscribeToTone](../api/call-subscribetotone.md)             | Inscreva-se nos Tons DTMF a partir do usuário.                  |
+| [CancelMediaProcessing](../api/call-cancelmediaprocessing.md) | Cancele qualquer processamento de mídia que já estiver na fila.             |
 
-### <a name="application-hosted-media"></a>Aplicativo hospedado de mídia
+### <a name="application-hosted-media"></a>Mídia hospedada pelo aplicativo
 
-Para o bot obter acesso direto à mídia, o bot precisa a permissão de acesso de mídia. A biblioteca de mídia em tempo real e o SDK com estado ajuda você a criar a mídia avançada em tempo real, chamar bots. Um bot de aplicativo hospedado deve ser hospedado em um ambiente Windows. [Aplicativo hospedado amostras de mídia](https://github.com/microsoftgraph/microsoft-graph-comms-samples) mostram como criar o bot em diversas plataformas do Windows Azure (incluindo os serviços em nuvem e malha de serviço).
+Para que o bot tenha acesso direto à mídia, o bot precisa da permissão do Access-Media. A biblioteca do RealTime Media e o SDK com estado ajudam na compilação de bots de chamadas do RealTime Media. Um bot hospedado pelo aplicativo deve estar hospedado em um ambiente Windows. Os [exemplos de mídias hospedadas pelo aplicativo](https://github.com/microsoftgraph/microsoft-graph-comms-samples) mostram como criar um bot em várias Plataformas Azure (incluindo o Cloud Services e o Service Fabric).
 
-Você pode usar o [SDK do Microsoft Graph chamadas](https://microsoftgraph.github.io/microsoft-graph-comms-samples/docs/articles/index.html) para simplificar a criação de bots. O SDK fornece funcionalidade para gerenciar os estados dos recursos na memória e coloque na pilha de mídia dos desenvolvedores bot.
+Você pode usar o [SDK de Chamadas do Microsoft Graph](https://microsoftgraph.github.io/microsoft-graph-comms-samples/docs/articles/index.html) para simplificar a criação de bots. O SDK fornece a funcionalidade para gerenciar os estados dos recursos na memória e fazer pull na pilha de mídia dos desenvolvedores de bots.
 
-O Media SDK permite que o bot enviar e receber o compartilhamento de tela de áudio, vídeo e vídeo com base no conteúdo. Compartilhamento de tela com base em vídeo é modelado como um canal de vídeo. O bot pode assinar o canal de áudio misto e vários canais de vídeos. Para o canal de vídeo, o bot tem uma opção para enviar e receber vídeo como um fluxo de h. 264 codificado ou decodificados quadros brutos.
+O SDK do Media permite que o bot envie e receba conteúdo de compartilhamento de tela de áudio, vídeo e baseado em vídeo. O compartilhamento de tela baseado em vídeo é modelado como um canal de vídeo. O bot pode se inscrever no canal de áudio misto e em vários canais de vídeo. Para o canal de vídeo, o bot tem a opção de enviar e receber vídeo como um fluxo H.264 codificado ou como quadros brutos decodificados.
 
-> **Observação:** Você não pode usar a API de Microsoft.Graph.Calls.Media para registrar ou caso contrário, conteúdo de mídia de chamadas ou reuniões que acessa seu bot de persistência.
+> **Observação:** você não pode usar a API Microsoft.Graph.Calls.Media para gravar ou persistir conteúdo de mídia de chamadas ou reuniões que seu bot acessar.
 
 ## <a name="see-also"></a>Confira também
 
-[Chamadas e reuniões online exemplos de API](https://github.com/microsoftgraph/microsoft-graph-comms-samples/)
+[Exemplos de chamadas e reuniões online API](https://github.com/microsoftgraph/microsoft-graph-comms-samples/)
 
 [Problemas conhecidos](/graph/known-issues#calls-and-online-meetings)
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/calls-api-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

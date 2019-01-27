@@ -1,27 +1,27 @@
 ---
 title: tipo de recurso de mensagem
-description: Uma mensagem em uma pasta de caixa de correio.
+description: Uma mensagem em uma pasta da caixa de correio.
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: ed94610fb4b09f264ea9be90ac5914daedfe76e8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 6aae5af68f055c8d10c48024ff8db083a51451da
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27970272"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29521962"
 ---
 # <a name="message-resource-type"></a>tipo de recurso de mensagem
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Uma mensagem em uma pasta de caixa de correio.
+Uma mensagem em uma pasta da caixa de correio.
 
 Esse recurso permite:
 
-- Adicionando seus próprios dados como cabeçalhos de mensagem da Internet personalizados. Adicionar cabeçalhos personalizados apenas ao criar uma mensagem e nomeie-los começando com "x-". Depois que a mensagem foi enviada, você não pode modificar os cabeçalhos. Para obter os cabeçalhos de uma mensagem, aplicar o `$select` consulta parâmetro em uma operação de [obter a mensagem](../api/message-get.md) .
-- Adicionando seus próprios dados como propriedades personalizadas como [extensões](/graph/extensibility-overview).
-- Assinatura de [notificações de alteração](/graph/webhooks).
+- Adicionar seus próprios dados como cabeçalhos personalizados de mensagens da Internet. Adicionar cabeçalhos personalizados somente ao criar uma mensagem e nomes que começam com"x-". Após a mensagem ter sido enviada, não será possível alterar os cabeçalhos. Para obter os cabeçalhos de uma mensagem, aplique o parâmetro de consulta `$select` em uma operação [get message](../api/message-get.md).
+- Adicionar seus próprios dados como propriedades personalizadas como [extensions](/graph/extensibility-overview).
+- Assinar as [notificações de alteração](/graph/webhooks).
 - Usar a [consulta delta](/graph/delta-query-overview) para controlar adições, exclusões e atualizações incrementais oferecendo uma função [delta](../api/message-delta.md).
 
 ## <a name="json-representation"></a>Representação JSON
@@ -89,38 +89,38 @@ Veja a seguir uma representação JSON do recurso
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |bccRecipients|Coleção [recipient](recipient.md)|Os destinatários Cco: da mensagem.|
-|body|[itemBody](itembody.md)|O corpo da mensagem. Ele pode ser no formato HTML ou texto. Saiba mais sobre [HTML seguro no corpo da mensagem](/graph/outlook-create-send-messages#reading-messages-with-control-over-the-body-format-returned).|
-|bodyPreview|String|Os primeiros 255 caracteres do corpo da mensagem. Ela está no formato de texto. Se a mensagem contiver instâncias do [mencionar](mention.md), essa propriedade conterá uma concatenação desses menções também. |
-|categories|String collection|As categorias associadas à mensagem. Cada categoria corresponde à propriedade **displayName** de um [outlookCategory](outlookcategory.md) definidas para o usuário. |
+|body|[itemBody](itembody.md)|O corpo da mensagem. Pode estar no formato HTML ou no formato de texto. Saiba mais sobre [HTML seguro no corpo da mensagem](/graph/outlook-create-send-messages#reading-messages-with-control-over-the-body-format-returned).|
+|bodyPreview|String|Os primeiros 255 caracteres do corpo da mensagem. Está no formato de texto. Se a mensagem contiver instâncias de [menção](mention.md), essa propriedade também conteria uma concatenação dessas menções. |
+|categories|String collection|As categorias associadas à mensagem. Cada categoria corresponde à propriedade **displayName** de uma [outlookCategory](outlookcategory.md) definida para o usuário. |
 |ccRecipients|Coleção [recipient](recipient.md)|Os destinatários Cc: da mensagem.|
 |changeKey|String|A versão da mensagem.|
 |conversationId|String|A ID da conversa à qual o email pertence.|
-|conversationIndex|Binária|O índice da conversa que pertence o email.|
+|conversationIndex|Binária|O Índice da conversa à qual o email pertence.|
 |createdDateTime|DateTimeOffset|A data e a hora em que a mensagem foi criada.|
 |sinalizar|[followUpFlag](followupflag.md)|O valor do sinalizador que indica o status, a data de início, a data de conclusão ou a data de finalização da mensagem.|
-|from|[recipient](recipient.md)|O proprietário da caixa de correio e o remetente da mensagem. O valor deve corresponder à caixa de correio real usada. Saiba mais sobre [configuração o de propriedades de remetente e](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) de uma mensagem.|
+|from|[recipient](recipient.md)|O proprietário da caixa de correio e o remetente da mensagem. O valor deve corresponder à caixa de correio real que foi usada. Saiba mais sobre [como definir as propriedades from e sender](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) de uma mensagem.|
 |hasAttachments|Booliano|Indica se a mensagem tem anexos. Esta propriedade não inclui anexos em linha, portanto, se uma mensagem contém somente anexos em linha, essa propriedade é falsa. Para verificar a existência de anexos em linha, analise a propriedade **body** para procurar um atributo `src`, como `<IMG src="cid:image001.jpg@01D26CD8.6C05F070">`. |
 |id|String|Identificador exclusivo da mensagem (observe que esse valor pode mudar se uma mensagem é movida ou alterada)|
 |importance|String| A importância da mensagem: `Low`, `Normal`, `High`.|
-|inferenceClassification|String| A classificação da mensagem para o usuário, com base na relevância deduzida ou importância, ou em um caso de sobreposição explícito. Os valores possíveis são: `focused` e `other`.|
-|internetMessageHeaders | Coleção [internetMessageHeader](internetmessageheader.md) | Uma coleção de cabeçalhos de mensagem definidas pelo [RFC5322](https://www.ietf.org/rfc/rfc5322.txt). O conjunto inclui cabeçalhos de mensagem indicando o caminho de rede ocupado por uma mensagem do remetente ao destinatário. Ele também pode conter cabeçalhos de mensagem personalizada que armazenam os dados de aplicativo para a mensagem. |
-|internetMessageId | String | A ID da mensagem no formato especificado pelo [RFC5322](https://www.ietf.org/rfc/rfc5322.txt). Atualizável somente se **isDraft** for true.|
-|isDeliveryReceiptRequested|Booliano|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
-|isDraft|Booliano|Indica se a mensagem é um rascunho. Uma mensagem é um rascunho quando ela ainda não foi enviada.|
-|isRead|Booliano|Indica se a mensagem foi lida.|
-|isReadReceiptRequested|Booliano|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
+|inferenceClassification|String| A classificação da mensagem para o usuário, com base na relevância deduzida ou na importância, ou em uma substituição explícita. Os valores possíveis são: `focused` e `other`.|
+|internetMessageHeaders | Coleção [internetMessageHeader](internetmessageheader.md) | Uma coleção de cabeçalhos de mensagens definidos por [RFC5322](https://www.ietf.org/rfc/rfc5322.txt). O conjunto inclui cabeçalhos de mensagens que indicam o caminho de rede adotado por uma mensagem do remetente para o destinatário. Também pode conter cabeçalhos de mensagens personalizadas que contêm dados do aplicativo para a mensagem. |
+|internetMessageId | String | A ID da mensagem no formato especificado por [RFC5322](https://www.ietf.org/rfc/rfc5322.txt). Atualizável apenas se **isDraft** for true.|
+|isDeliveryReceiptRequested|Boolean|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
+|isDraft|Boolean|Indica se a mensagem é um rascunho. Uma mensagem é um rascunho quando ela ainda não foi enviada.|
+|isRead|Boolean|Indica se a mensagem foi lida.|
+|isReadReceiptRequested|Boolean|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a mensagem foi alterada pela última vez.|
-|mentionsPreview|[mentionsPreview](mentionspreview.md)|Informações sobre menções na mensagem. Durante o processamento de um `GET` /messages solicitar, o servidor faz essa propriedade e inclui-la na resposta por padrão. O servidor retorna null se não houver nenhuma menções na mensagem. Opcional. |
+|mentionsPreview|[mentionsPreview](mentionspreview.md)|Informações sobre menções na mensagem. Ao processar uma solicitação `GET` /messages, o servidor define essa propriedade e a inclui na resposta por padrão. O servidor retornará null se não houver menções na mensagem. Opcional. |
 |parentFolderId|String|O identificador exclusivo para a mailFolder pai da mensagem.|
 |receivedDateTime|DateTimeOffset|A data e a hora em que a mensagem foi recebida.|
 |replyTo|Coleção [recipient](recipient.md)|Os endereços de email a serem usados ao responder.|
-|sender|[recipient](recipient.md)|A conta que é realmente usada para gerar a mensagem. Na maioria dos casos, esse valor é o mesmo que a propriedade **from** . Você pode definir essa propriedade como um valor diferente ao enviar uma mensagem de uma [caixa de correio compartilhada](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes)ou enviando uma mensagem como um [representante](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926). Em qualquer caso, o valor deve corresponder à caixa de correio real usada. Saiba mais sobre [configuração o de propriedades de remetente e](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) de uma mensagem.|
+|sender|[recipient](recipient.md)|A conta que é realmente usada para gerar a mensagem. Na maioria dos casos, esse valor é o mesmo da propriedade **from**. Você pode definir essa propriedade como um valor diferente ao enviar uma mensagem de uma [caixa de correio compartilhada](https://docs.microsoft.com/pt-BR/exchange/collaboration/shared-mailboxes/shared-mailboxes) ou ao enviar uma mensagem como um [delegado](https://support.office.com/pt-BR/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926). De qualquer forma, o valor deve corresponder à caixa de correio real que foi usada. Saiba mais sobre [como definir as propriedades from e sender](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) de uma mensagem.|
 |sentDateTime|DateTimeOffset|A data e a hora em que a mensagem foi enviada.|
 |subject|String|O assunto da mensagem.|
 |toRecipients|Coleção [recipient](recipient.md)|Os destinatários Para: da mensagem.|
 |uniqueBody|[itemBody](itembody.md)|A parte do corpo da mensagem que é exclusiva para a mensagem atual. **uniqueBody** não é fornecido por padrão, mas pode ser recuperado por uma determinada mensagem pelo uso da consulta `?$select=uniqueBody`. Pode estar no formato HTML ou no formato de texto.|
-|unsubscribeData|Cadeia de caracteres|As entradas válidas analisada a partir do cabeçalho de cancelar a lista.  São os dados para o comando mail no cabeçalho cancelar a assinatura lista se a propriedade UnsubscribeEnabled for true.|
-|unsubscribeEnabled|Booliano|Indica se a mensagem está habilitada para o cancelamento da assinatura.  Seu valueTrue se a lista-Cancelar cabeçalho está em conformidade com a rfc-2369.|
+|unsubscribeData|String|As entradas válidas analisadas no cabeçalho List-Unsubscribe.  Esses são os dados para o comando mail no cabeçalho List-Unsubscribe, se a propriedade UnsubscribeEnabled for true.|
+|unsubscribeEnabled|Booliano|Indica se a mensagem está habilitada para o cancelamento da assinatura.  valueTrue se o cabeçalho list-Unsubscribe estiver em conformidade com o rfc-2369.|
 |webLink|String|A URL para abrir a mensagem no Outlook Web App.<br><br>Você pode acrescentar um argumento ispopout ao final da URL para alterar como a mensagem é exibida. Se ispopout não houver presente ou estiver definido como 1, a mensagem será mostrada em uma janela pop-up. Se ispopout estiver definido como 0, o navegador mostrará a mensagem no painel de revisão do Outlook Web App.<br><br>A mensagem será aberta no navegador se você estiver conectado à sua caixa de correio por meio do Outlook Web App. Você será solicitado a fazer logon se ainda não estiver conectado no navegador.<br><br>Essa URL pode ser acessada de um iFrame.|
 
 
@@ -128,9 +128,9 @@ Veja a seguir uma representação JSON do recurso
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |attachments|Coleção [Attachment](attachment.md)|Os anexos [fileAttachment](fileattachment.md) e [itemAttachment](itemattachment.md) da mensagem.|
-|extensions|Coleção [Extension](extension.md)| A coleção de extensões open definidas para a mensagem. Anulável.|
-|menções|coleção [mencionar](mention.md) | Uma coleção de menções na mensagem, ordenados pelo **createdDateTime** do mais novo para o mais antigo. Por padrão, um `GET` /mensagens não retorna essa propriedade, a menos que você aplicar `$expand` na propriedade.|
-|multiValueExtendedProperties|Coleção [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de múltiplos valores definidos para a mensagem. Anulável.|
+|extensions|Coleção [Extension](extension.md)| A coleção de extensões abertas definidas para a mensagem. Anulável.|
+|menções|Coleção [mention](mention.md) | Uma coleção de menções na mensagem, ordenada pelo **createdDateTime**, do mais novo para o mais antigo. Por padrão, um `GET` /messages não retorna essa propriedade, a menos que você aplique `$expand` à propriedade.|
+|multiValueExtendedProperties|Coleção [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de vários valores definidas para a mensagem. Anulável.|
 |singleValueExtendedProperties|Coleção [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de valor único definidas para a mensagem. Anulável.|
 
 ## <a name="methods"></a>Métodos
@@ -141,20 +141,20 @@ Veja a seguir uma representação JSON do recurso
 |[Criar mensagem](../api/user-post-messages.md) | [message](message.md) | Criar um rascunho de uma nova mensagem. |
 |[Obter mensagem](../api/message-get.md) | [message](message.md) |Ler propriedades e relações do objeto mensage.|
 |[Update](../api/message-update.md) | [message](message.md) |Atualizar o objeto message. |
-|[Delete](../api/message-delete.md) | Nenhum |Excluir o objeto message. |
+|[Delete](../api/message-delete.md) | None |Excluir o objeto message. |
 |[copy](../api/message-copy.md)|[Message](message.md)|Copiar uma mensagem para uma pasta.|
-|[createForward](../api/message-createforward.md)|[Message](message.md)|Crie uma mensagem de rascunho sequencial para incluir um comentário ou atualizar as propriedades de mensagem todas em uma chamada de **createForward** . Em seguida, você pode [Atualizar](../api/message-update.md) ou [Enviar](../api/message-send.md) o rascunho.|
-|[createReply](../api/message-createreply.md)|[Message](message.md)|Crie um rascunho de uma mensagem de resposta para incluir um comentário ou atualizar as propriedades de mensagem todas em uma chamada de **createReply** . Em seguida, você pode [Atualizar](../api/message-update.md) ou [Enviar](../api/message-send.md) o rascunho.|
-|[createReplyAll](../api/message-createreplyall.md)|[Message](message.md)|Crie um rascunho de uma mensagem de responder a todos para incluir um comentário ou atualizar as propriedades de mensagem, todas em uma chamada de **createReplyAll** . Em seguida, você pode [Atualizar](../api/message-update.md) ou [Enviar](../api/message-send.md) o rascunho.|
+|[createForward](../api/message-createforward.md)|[Mensagem](message.md)|Crie uma mensagem de encaminhamento de rascunho para incluir um comentário ou atualizar todas as propriedades da mensagem em uma chamada **createForward**. Em seguida, você pode [atualizar](../api/message-update.md) ou [enviar](../api/message-send.md) esse rascunho.|
+|[createReply](../api/message-createreply.md)|[Mensagem](message.md)|Crie uma mensagem de resposta de rascunho para incluir um comentário ou atualizar todas as propriedades da mensagem em uma chamada **createReply**. Em seguida, você pode [atualizar](../api/message-update.md) ou [enviar](../api/message-send.md) esse rascunho.|
+|[createReplyAll](../api/message-createreplyall.md)|[Mensagem](message.md)|Crie uma mensagem para responder a todos de rascunho para incluir um comentário ou atualizar todas as propriedades da mensagem em uma chamada **createReplyAll**. Em seguida, você pode [atualizar](../api/message-update.md) ou [enviar](../api/message-send.md) esse rascunho.|
 |[delta](../api/message-delta.md)|Coleção [message](message.md)| Obtenha um conjunto de mensagens que foram adicionadas, excluídas ou atualizadas em uma pasta especificada.|
-|[forward](../api/message-forward.md)|Nenhum|Encaminhar uma mensagem, adicionar um comentário ou modificar quaisquer propriedades atualizáveis todas em uma chamada **para a frente** . Em seguida, a mensagem será salva na pasta Itens enviados.|
+|[forward](../api/message-forward.md)|Nenhum|Encaminhe uma mensagem, adicione um comentário ou modifique todas as propriedades atualizáveis em uma única chamada **forward**. A mensagem é então salva na pasta Itens Enviados.|
 |[move](../api/message-move.md)|[Message](message.md)|Mover a mensagem para uma pasta. Isso cria uma nova cópia da mensagem na pasta de destino.|
-|[reply](../api/message-reply.md)|Nenhum|Responder ao remetente de uma mensagem, adicionar um comentário ou modificar quaisquer propriedades atualizáveis todas em uma **resposta** de chamada. Em seguida, a mensagem será salva na pasta Itens enviados.|
-|[replyAll](../api/message-replyall.md)|Nenhum|Responder a todos os destinatários de uma mensagem especificando um comentário e modificar quaisquer propriedades atualizáveis para a resposta, tudo usando o método **replyAll** . Em seguida, a mensagem será salva na pasta Itens enviados.|
+|[reply](../api/message-reply.md)|Nenhum|Responda ao remetente de uma mensagem, adicione um comentário ou modifique todas as propriedades atualizáveis em uma única chamada **reply**. A mensagem é então salva na pasta Itens Enviados.|
+|[replyAll](../api/message-replyall.md)|Nenhum|Responda a todos os destinatários de uma mensagem especificando um comentário e modificando quaisquer **propriedades atualizáveis** da resposta, tudo isso usando o método ReplyAll. A mensagem é então salva na pasta Itens Enviados.|
 |[send](../api/message-send.md)|Nenhum|Envia um rascunho de mensagem anteriormente criado. A mensagem é então salva na pasta Itens Enviados.|
-|[Cancelar a assinatura](../api/message-unsubscribe.md)|Nenhum|Envie uma mensagem usando os dados e o endereço especificado no primeiro comando mailto no cabeçalho da lista de cancelamento de inscrição.|
+|[unsubscribe](../api/message-unsubscribe.md)|Nenhum|Envie uma mensagem usando os dados e o endereço especificados no primeiro comando mailto no cabeçalho List-Unsubscribe.|
 |**Anexos**| | |
-|[List attachments](../api/message-list-attachments.md) |Coleção [Attachment](attachment.md)| Obtenha todos os anexos em uma mensagem.|
+|[Listar anexos](../api/message-list-attachments.md) |Coleção [Attachment](attachment.md)| Obtenha todos os anexos em uma mensagem.|
 |[Add attachment](../api/message-post-attachments.md) |[Attachment](attachment.md)| Adicione um novo anexo a uma mensagem postando na coleção attachments.|
 |**Extensões abertas**| | |
 |[Criar extensão aberta](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Crie uma extensão aberta e adicione propriedades personalizadas a uma instância nova ou existente de um recurso.|
@@ -179,10 +179,15 @@ Veja a seguir uma representação JSON do recurso
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "message resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/message.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

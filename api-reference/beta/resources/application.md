@@ -1,23 +1,23 @@
 ---
-title: tipo de recurso de aplicativo
-description: 'Representa um aplicativo. Qualquer aplicativo que outsources autenticação do Azure Active Directory (AD Azure) deve ser registrado em um diretório. Registro de aplicativo envolve informando Azure AD sobre seu aplicativo, incluindo a URL onde ele tem localizado, a URL para enviar respostas após a autenticação, o URI para identificar o seu aplicativo e muito mais. Para obter mais informações, consulte Noções básicas sobre o registro de um aplicativo no Azure AD. Herda de directoryObject. '
+title: tipo de recurso do aplicativo
+description: 'Representa um aplicativo. Qualquer aplicativo que terceirize a autenticação no Azure Active Directory (Azure AD) deve estar registrado em um diretório. O registro do aplicativo envolve informar o Azure AD sobre seu aplicativo, incluindo a URL onde ele está localizado, a URL para enviar respostas após a autenticação, o URI para identificar seu aplicativo e muito mais. Para saber mais, confira Noções básicas de como registrar um aplicativo no Azure AD. Herda de directoryObject. '
 localization_priority: Priority
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 9fb5722640149471f6728ec6ab893cf388fa9b6d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 694f6b12dd8fe1fd59f12cafebd47c842a4077cb
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27946676"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529219"
 ---
-# <a name="application-resource-type"></a>tipo de recurso de aplicativo
+# <a name="application-resource-type"></a>tipo de recurso do aplicativo
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa um aplicativo. Qualquer aplicativo que outsources autenticação do Azure Active Directory (AD Azure) deve ser registrado em um diretório. Registro de aplicativo envolve informando Azure AD sobre seu aplicativo, incluindo a URL onde ele tem localizado, a URL para enviar respostas após a autenticação, o URI para identificar o seu aplicativo e muito mais. Para obter mais informações, consulte [Noções básicas sobre o registro de um aplicativo no Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/#basics-of-registering-an-application-in-azure-ad). Herda de [directoryObject](directoryobject.md). 
+Representa um aplicativo. Qualquer aplicativo que terceirize a autenticação no Azure Active Directory (Azure AD) deve estar registrado em um diretório. O registro do aplicativo envolve informar o Azure AD sobre seu aplicativo, incluindo a URL onde ele está localizado, a URL para enviar respostas após a autenticação, o URI para identificar seu aplicativo e muito mais. Para saber mais, confira [Noções básicas de como registrar um aplicativo no Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/#basics-of-registering-an-application-in-azure-ad). Herda de [directoryObject](directoryobject.md). 
 
-> **Observação:** Alterações para o tipo de recurso do aplicativo estejam atualmente em desenvolvimento. Para obter mais informações, consulte [problemas conhecidos com o Microsoft Graph](/graph/known-issues#application-and-serviceprincipal-api-changes).
+> **Observação:** atualmente, as alterações no tipo de recurso do aplicativo encontram-se em desenvolvimento. Para saber mais, confira [Problemas conhecidos com o Microsoft Graph](/graph/known-issues#application-and-serviceprincipal-api-changes).
 
 Esse recurso permite:
 
@@ -27,55 +27,55 @@ Esse recurso permite:
 
 | Método | Tipo de retorno | Descrição |
 |:---------------|:--------|:----------|
-|[Obtenha o aplicativo](../api/application-get.md) | aplicativo |Leia as propriedades e os relacionamentos do objeto application.|
-|[Criar aplicativo](../api/application-post-applications.md) | aplicativo | (Registradores) de cria um novo aplicativo.|
-|[Lista de aplicativos](../api/application-list.md) | aplicativo | Recupere a lista de aplicativos na organização. |
-|[Atualizar o aplicativo](../api/application-update.md) | aplicativo |Atualize o objeto application. |
+|[Obter aplicativo](../api/application-get.md) | application |Leia as propriedades e as relações do objeto application.|
+|[Criar aplicativo](../api/application-post-applications.md) | application | Cria (registra) um novo aplicativo.|
+|[Listar aplicativos](../api/application-list.md) | application | Recupere a lista de aplicativos na organização. |
+|[Atualizar aplicativo](../api/application-update.md) | application |Atualize o objeto application. |
 |[Excluir aplicativo](../api/application-delete.md) | Nenhum |Exclua o objeto application. |
-|[Políticas de lista atribuída](../api/policy-list-assigned.md)| coleção de [políticas](policy.md)| Obtenha todas as diretivas atribuídas a este objeto.|
-|[Criar proprietário](../api/application-post-owners.md) |[directoryObject](directoryobject.md)| Crie um novo proprietário pelo lançamento à coleção proprietários.|
-|[Listar proprietários](../api/application-list-owners.md) |Coleção [directoryObject](directoryobject.md)| Obtenha um proprietário de conjunto de objeto.|
-|[delta](../api/application-delta.md)|conjunto de aplicativos| Obtenha as alterações incrementais para aplicativos. |
-|[Criar chamada](../api/application-post-calls.md)|[chamada](call.md)|Crie uma nova chamada pelo lançamento à coleção de chamadas.|
-|[Criar a reunião online](../api/application-post-onlinemeetings.md)|[onlineMeeting](onlinemeeting.md)|Crie uma nova reunião online, lançamento à coleção onlineMeetings.|
+|[Listar políticas atribuídas](../api/policy-list-assigned.md)| Coleção [policy](policy.md)| Obtenha todas as políticas atribuídas a esse objeto.|
+|[Criar proprietário](../api/application-post-owners.md) |[directoryObject](directoryobject.md)| Crie um novo proprietário postando na coleção owners.|
+|[Listar proprietários](../api/application-list-owners.md) |Coleção [directoryObject](directoryobject.md)| Obtenha uma coleção de objetos owner.|
+|[delta](../api/application-delta.md)|Coleção application| Obtenha alterações incrementais para aplicativos. |
+|[Criar chamada](../api/application-post-calls.md)|[call](call.md)|Crie uma nova chamada postando na coleção calls.|
+|[Criar reunião online](../api/application-post-onlinemeetings.md)|[onlineMeeting](onlinemeeting.md)|Crie uma nova reunião online postando na coleção onlineMeetings.|
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|API|[API](api.md)| Especifica as configurações para um aplicativo de API. |
-|appId| Cadeia de caracteres | O identificador exclusivo para o aplicativo que está atribuído a um aplicativo ao Azure AD. Não anulável. Somente leitura. |
-|appRoles|coleção [appRole](approle.md)|A coleção de funções de aplicativos que um aplicativo pode declarar. Essas funções podem ser atribuídas a usuários, grupos ou entidades de serviço. Não anulável.|
-|createdDateTime|DateTimeOffset| A data e hora que o aplicativo foi registrado. |
-|deletedDateTime|DateTimeOffset| A data e hora que o aplicativo foi excluído. |
-|displayName|Cadeia de caracteres|O nome de exibição para o aplicativo. |
-|id|Cadeia de caracteres|O identificador exclusivo para o aplicativo. Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura. |
-|identifierUris|String collection| Os URIs que identifique o aplicativo. Para mais informações, consulte [objetos de aplicativo e objetos de entidade de serviço](https://azure.microsoft.com/documentation/articles/active-directory-application-objects/). Operador *any* é necessário para expressões de filtro propriedades de valores múltiplos. Não anulável. |
-|Info|[informationalUrl](informationalurl.md)| Informações básicas de perfil do aplicativo. |
-|isFallbackPublicClient|Booliano| Especifica o tipo de aplicativo de fallback como cliente pública, como um aplicativo instalado em execução em um dispositivo móvel. O valor padrão é *false* indicando o tipo de aplicativo de fallback é confidencial cliente como o aplicativo web. Há determinadas situações em que o Azure AD não pode determinar o tipo de aplicativo cliente (por exemplo, fluxo [ROPC](https://tools.ietf.org/html/rfc6749#section-4.3) onde ele está configurado sem a especificação de um URI de redirecionamento). Nesses casos Azure AD irá interpretar o tipo de aplicativo com base no valor dessa propriedade.|
-|keyCredentials|coleção [keyCredential](keycredential.md)|O conjunto de credenciais principais associados ao aplicativo não anuláveis. |
-|logotipo|Stream|O logotipo principal para o aplicativo. Não anulável. |
-|optionalClaims|optionalClaims| Reservado para uso futuro. |
-|orgRestrictions|String collection| Reservado para uso futuro. |
-|parentalControlSettings|[parentalControlSettings](parentalcontrolsettings.md) |Especifica as configurações de controle do responsável para um aplicativo.|
-|passwordCredentials|coleção [passwordCredential](passwordcredential.md)|A coleção de credenciais de senha associados ao aplicativo. Não anulável.|
-|publicClient|[publicClient](publicclient.md)| Especifica as configurações para clientes instalados como os dispositivos móveis ou da área de trabalho. |
-|publisherDomain| Cadeia de caracteres | O domínio verificado publisher para o aplicativo. Somente leitura.|
-|requiredResourceAccess|coleção [requiredResourceAccess](requiredresourceaccess.md)|Especifica os recursos que esse aplicativo requer acesso aos e o conjunto de escopos de permissão do OAuth e funções de aplicativos que ele precisa em cada um desses recursos. Essa configuração prévia do acesso a recursos necessários drives a experiência de consentimento. Não anulável.|
-|signInAudience | Cadeia de caracteres | Especifica quais contas da Microsoft são suportadas para o aplicativo atual. Valores suportados são:<ul><li>**AzureADMyOrg**: os usuários com o Microsoft trabalhar ou escola conta no locatário do Azure AD da minha organização (isto é, inquilino único)</li><li>**AzureADMultipleOrgs**: os usuários com o Microsoft trabalhar ou escola conta no locatário do Azure AD da organização, qualquer (ou seja, multilocatário)</li> <li>**AzureADandPersonalMicrosoftAccount**: os usuários com uma conta pessoal da Microsoft ou uma conta de trabalho ou da escola no locatário do Azure AD da organização, qualquer</li></ul> | `AzureADandPersonalMicrosoftAccount` |
-|marcas|String collection| Cadeias de caracteres personalizadas que podem ser usadas para categorizar e identificar o aplicativo. |
-|web|[Web](web.md)| Especifica as configurações para um aplicativo web. |
+|api|[api](api.md)| Especifica configurações para um aplicativo de API. |
+|appId| String | O identificador exclusivo para o aplicativo que está atribuído a um aplicativo pelo Azure AD. Não anulável. Somente leitura. |
+|appRoles|Coleção [appRole](approle.md)|A coleção de funções de aplicativo que um aplicativo pode declarar. Essas funções podem ser atribuídas a usuários, grupos ou entidades de serviço. Não anulável.|
+|createdDateTime|DateTimeOffset| A data e a hora que o aplicativo foi registrado. |
+|deletedDateTime|DateTimeOffset| A data e a hora que o aplicativo foi excluído. |
+|displayName|String|O nome de exibição do aplicativo. |
+|id|String|O identificador exclusivo do aplicativo. Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura. |
+|identifierUris|Coleção String| Os URIs que identificam o aplicativo. Para saber mais, confira [Objetos do aplicativo e objetos da entidade de serviço](https://azure.microsoft.com/documentation/articles/active-directory-application-objects/). O operador *any* é obrigatório para expressões de filtro em propriedades de vários valores. Não anulável. |
+|informações |[informationalUrl](informationalurl.md)| Informações de perfil básicas do aplicativo. |
+|isFallbackPublicClient|Booliano| Especifica o tipo de aplicativo de fallback como cliente público, como um aplicativo instalado em execução em um dispositivo móvel. O valor padrão é *false*. Isso significa que o tipo de aplicativo de fallback é cliente confidencial como o aplicativo Web. Há determinados cenários em que o Azure AD não pode determinar o tipo de aplicativo cliente (por exemplo, o fluxo [ROPC](https://tools.ietf.org/html/rfc6749#section-4.3), no qual ele é configurado sem especificar um URI de redirecionamento). Nesses casos, o Azure AD interpretará o tipo de aplicativo com base no valor dessa propriedade.|
+|keyCredentials|Coleção [keyCredential](keycredential.md)|A coleção de credenciais chaves associada ao aplicativo Não anulável. |
+|logo|Stream|O principal logotipo do aplicativo. Não anulável. |
+|optionalClaims|optionalClaims| Reserved for future use. |
+|orgRestrictions|Coleção String| Reserved for future use. |
+|parentalControlSettings|[parentalControlSettings](parentalcontrolsettings.md) |Especifica as configurações de controle parental de um aplicativo.|
+|passwordCredentials|Coleção [passwordCredential](passwordcredential.md)|A coleção de credenciais de senha associada ao aplicativo. Não anulável.|
+|publicClient|[publicClient](publicclient.md)| Especifica configurações para clientes instalados, como dispositivos móveis ou da área de trabalho. |
+|publisherDomain| String | O domínio do publicador verificado para o aplicativo. Somente leitura.|
+|requiredResourceAccess|[requiredResourceAccess](requiredresourceaccess.md) collection|Especifica os recursos para os quais esse aplicativo requer acesso e o conjunto de escopos de permissão e funções de aplicativo do OAuth necessários em cada um desses recursos. Essa pré-configuração de acesso necessário aos recursos impulsiona a experiência de consentimento. Não anulável.|
+|signInAudience | String | Especifica a quais contas da Microsoft são compatíveis com o aplicativo atual. Os valores compatíveis são:<ul><li>**AzureADMyOrg**: usuários com uma conta corporativa ou de estudante da Microsoft no locatário do Azure AD da organização (ou seja, locatário único)</li><li>**AzureADMultipleOrgs**: usuários com uma conta corporativa ou de estudante da Microsoft no locatário do Azure AD da organização (ou seja, multilocatário)</li> <li>**AzureADandPersonalMicrosoftAccount**: usuários com uma conta pessoal da Microsoft ou uma conta corporativa ou de estudante no locatário do Azure AD de qualquer organização</li></ul> | `AzureADandPersonalMicrosoftAccount` |
+|marcações|Coleção String| Sequências personalizadas que podem ser usadas para categorizar e identificar o aplicativo. |
+|web|[web](web.md)| Especifica configurações para um aplicativo Web. |
 
 ## <a name="relationships"></a>Relações
 
 | Relação | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|chamadas           |coleção de [chamada](call.md)                  |Somente leitura. Anulável.|
-|connectorGroup|[connectorGroup](connectorgroup.md)| O connectorGroup o aplicativo está usando com Proxy de aplicativo do Windows Azure AD. Anulável.|
+|calls           |Coleção [call](call.md)                   |Somente leitura. Anulável.|
+|connectorGroup|[connectorGroup](connectorgroup.md)| O connectorGroup que o aplicativo está usando com o Proxy de aplicativo do Azure AD. Anulável.|
 |createdOnBehalfOf|[directoryObject](directoryobject.md)| Somente leitura.|
-|onlineMeetings  |coleção [onlineMeeting](onlinemeeting.md)|Somente leitura. Anulável.|
-|owners|Coleção [directoryObject](directoryobject.md)|Objetos de diretório que são proprietários do aplicativo. Os proprietários são um conjunto de usuários não seja o administrador que têm permissão para modificar esse objeto. Requer a versão 2013-11-08 ou mais recente. Somente leitura. Anulável.|
-|Política|coleção de [políticas](policy.md)|As políticas atribuídas a esse aplicativo.|
+|onlineMeetings  |Coleção [onlineMeeting](onlinemeeting.md)|Somente leitura. Anulável.|
+|owners|Coleção [directoryObject](directoryobject.md)|Objetos de diretório que são proprietários do aplicativo. Os proprietários são um conjunto de usuários não administradores e que têm permissão para modificar esse objeto. Requer a versão 2013-11-08 ou mais recente. Somente leitura. Anulável.|
+|política|Coleção [policy](policy.md)|As políticas atribuídas a esse aplicativo.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -120,10 +120,15 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "application resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/application.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

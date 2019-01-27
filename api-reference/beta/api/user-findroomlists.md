@@ -1,24 +1,24 @@
 ---
-title: 'usuário: findRoomLists'
+title: 'user: findRoomLists'
 description: Obtenha as listas de salas definidas em um locatário.
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f170b40689b09f54ea53632ca113018de1671b4e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 1cc26367c9cecd16604f7cfefb3be5ce265e3c2c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27979289"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29520575"
 ---
-# <a name="user-findroomlists"></a>usuário: findRoomLists
+# <a name="user-findroomlists"></a>user: findRoomLists
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Obtenha as listas de salas definidas em um locatário.
 
-Inquilinos podem organizar as salas de reunião em listas de salas. Cada sala de reunião e a lista de salas é representado por uma instância de [emailAddress](../resources/emailaddress.md) .
-Você pode obter todas as listas de sala no locatário, [fazer todas as salas](user-findrooms.md) no locatário ou [fazer todas as salas](user-findrooms.md) em uma lista de sala específico.
+Os locatários podem organizar salas de reunião em listas de salas. Cada sala de reunião e a lista de salas são representadas por uma instância [emailAddress](../resources/emailaddress.md).
+Você pode ver todas as listas de salas no locatário, [obter todas as salas](user-findrooms.md) no locatário ou [todas as salas](user-findrooms.md) em uma lista de salas específica.
 
 
 ## <a name="permissions"></a>Permissões
@@ -51,7 +51,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` objeto de coleção [emailAddress](../resources/emailaddress.md) e código de resposta no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [emailAddress](../resources/emailaddress.md) no corpo da resposta.
 
 Se nenhuma lista for definida no locatário, uma matriz vazia será retornada.
 
@@ -69,9 +69,9 @@ GET https://graph.microsoft.com/beta/me/findRoomLists
 ```
 
 ##### <a name="response"></a>Resposta
-Este é um exemplo da resposta. 
+Veja a seguir um exemplo da resposta. 
 
-Observação: o objeto da resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "name": "user_get_room_lists",
@@ -101,10 +101,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "user: findRoomLists",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-findroomlists.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,16 +4,16 @@ description: Representa um objeto do Active Directory do Azure. O tipo **directo
 localization_priority: Priority
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 7f02687a8fc3b5b50f4e1e956da4bdc632ea389e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 87fb1c21e2fa1e9788890d97f6afbd0b494c555e
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27952934"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29521590"
 ---
 # <a name="directoryobject-resource-type"></a>Tipo de recurso directoryObject
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa um objeto do Active Directory do Azure. O tipo **directoryObject** é o tipo básico de muitos outros tipos de entidade de diretório.
 
@@ -31,14 +31,14 @@ Esse recurso permite:
 |[getMemberGroups](../api/directoryobject-getmembergroups.md)|Coleção de cadeias de caracteres|Retorne todos os grupos dos quais o objeto de usuário, grupo ou diretório é membro. A verificação é transitiva.|
 |[getMemberObjects](../api/directoryobject-getmemberobjects.md)|Coleção de cadeias de caracteres| Retorne todos os grupos e funções de diretório dos quais o objeto de usuário, grupo ou diretório é membro. A verificação é transitiva. |
 |[getByIds](../api/directoryobject-getbyids.md) | Coleção [directoryObject](directoryobject.md) | Obtenha um conjunto de objetos de diretório com base em um conjunto de ids fornecidas. |
-|[validateProperties](../api/directoryobject-validateproperties.md)|JSON| Validar o nome de exibição de um grupo Office 365 ou apelido de email está em conformidade com as políticas de nomenclatura. |
-|[delta](../api/directoryobject-delta.md)|Coleção directoryObject| Obtenha as alterações incrementais para objetos de diretório. Oferece suporte à filtragem por tipo de derrived. |
+|[validateProperties](../api/directoryobject-validateproperties.md)|JSON| Validar um nome de exibição ou um apelido de email do grupo do Office 365 em conformidade com as políticas de nomenclatura. |
+|[delta](../api/directoryobject-delta.md)|Coleção directoryObject| Obtenha alterações incrementais para objetos de diretório. Oferece suporte à filtragem por tipo derivado. |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|id|Cadeia de caracteres|Um Guid que é o identificador exclusivo para o objeto; Por exemplo, 12345678-9abc-def0-1234-56789abcde12. Chave. Não anulável. Somente leitura.|
+|id|String|Um Guid que é o identificador exclusivo do objeto; por exemplo, 12345678-9abc-def0-1234-56789abcde12. Chave. Não anulável. Somente leitura.|
 
 ## <a name="relationships"></a>Relações
 
@@ -66,10 +66,15 @@ Veja a seguir uma representação JSON do recurso
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "directoryObject resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/directoryobject.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

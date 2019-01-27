@@ -1,35 +1,35 @@
 ---
-title: Use a API do reservas Microsoft no Microsoft Graph
+title: Usar a API do Microsoft Bookings no Microsoft Graph
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 494b13016c20124e1a81f996d332c97c15e46852
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 7fc58a4fe0fb616963fd91d83a401d4ad8e1c43e
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27915729"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529856"
 ---
-# <a name="use-the-microsoft-bookings-api-in-microsoft-graph"></a>Use a API do reservas Microsoft no Microsoft Graph
+# <a name="use-the-microsoft-bookings-api-in-microsoft-graph"></a>Usar a API do Microsoft Bookings no Microsoft Graph
 
- > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-Microsoft Bookings permite que os proprietários de pequenas empresas gerencie informações com uma configuração mínima e reservas de cliente. Um proprietário de negócios pode criar uma ou mais empresas, com cada empresa que oferece um conjunto de serviços. O proprietário pode configurar membros da equipe e especifique os serviços que cada membro da equipe realiza. Um cliente pode agendar um compromisso para um serviço específico em que os negócios em um aplicativo online ou móvel. Reservas garante que a hora do compromisso é mantida atualizada para os negócios, os membros da equipe e clientes envolvido.
+O Microsoft Bookings permite que proprietários de pequenas empresas gerenciem reservas e informações de clientes com configuração mínima. Um proprietário de empresa pode criar um ou mais negócios e cada empresa oferece um conjunto de serviços. O proprietário pode definir membros da equipe e especificar os serviços que cada membro da equipe executará. Um cliente pode agendar um horário para um serviço específico nesse negócio em um aplicativo online ou móvel. O Bookings garante que o horário do compromisso seja mantido atualizado para a empresa, funcionários e clientes envolvidos.
 
-Programaticamente, um [bookingBusiness](bookingbusiness.md) na API reservas envolve os seguintes objetos:
+Programaticamente, um [bookingBusiness](bookingbusiness.md) na API do Bookings envolve os seguintes objetos:
  
-- Um ou mais objetos [bookingStaffMember](bookingstaffmember.md)
-- Um ou mais objetos [bookingService](bookingservice.md)
-- Um conjunto de instâncias de [bookingAppointment](bookingappointment.md)
+- Uma ou mais objetos [bookingStaffMember](bookingstaffmember.md)
+- Uma ou mais objetos [bookingService](bookingservice.md)
+- Um conjunto de instâncias [bookingAppointment](bookingappointment.md)
 - Um conjunto de objetos [bookingCustomer](bookingcustomer.md)
 
-## <a name="using-the-bookings-rest-api"></a>Usando as API REST reservas
+## <a name="using-the-bookings-rest-api"></a>Como usar a API REST do Bookings
 
-Explore as etapas a seguir antes de compromissos do cliente para uma empresa de reserva na primeira vez. Verifique se que você fornecer [tokens de acesso](/graph/auth-overview) apropriado para as operações correspondentes.
+Siga as etapas a seguir antes de agendar os compromissos do cliente para uma empresa pela primeira vez. Certifique-se de fornecer os [tokens de acesso](/graph/auth-overview) apropriados para as operações correspondentes.
 
-1. Verifique se que a empresa tem uma assinatura do [Office 365 Business Premium](https://products.office.com/en-us/business/office-365-business-premium) .
-2. Crie um novo **bookingBusiness** enviando uma operação POST no conjunto de entidade. No mínimo, você deve especificar um nome para o novo negócio que os clientes verão:<!-- { "blockType": "ignored" } -->
+1. Garanta que a empresa tenha um assinatura do [Office 365 Business Premium](https://products.office.com/pt-BR/business/office-365-business-premium).
+2. Crie um novo **bookingBusiness** enviando uma operação POST para o conjunto de entidades. Você deve pelo menos especificar um nome para o novo negócio que os clientes verão: <!-- { "blockType": "ignored" } -->
 ```http
 POST https://graph.microsoft.com/beta/bookingBusinesses
 Authorization: Bearer {access token}
@@ -39,9 +39,9 @@ Content-Type: application/json
     "displayName":"Contoso"
 }
 ```
-Use a propriedade **id** do novo **bookingBusiness** retornados na resposta POST para continuar para [Personalizar](../api/bookingbusiness-update.md) configurações de negócios e adicionar membros da equipe e serviços para a empresa.
+Use a propriedade **id** do novo **bookingBusiness** retornado na resposta do POST para continuar a [personalizar](../api/bookingbusiness-update.md) configurações de negócios e adicionar funcionários e serviços para a empresa.
 
-3. Adicione membros da equipe individuais para os negócios:<!-- { "blockType": "ignored" } -->
+3. Adicione membros individuais da equipe à empresa: <!-- { "blockType": "ignored" } -->
 ```http
 POST https://graph.microsoft.com/beta/bookingBusinesses/{id}/staffMembers
 Authorization: Bearer {access token}
@@ -53,7 +53,7 @@ Content-Type: application/json
     "role": "externalGuest"
 }
 ```
-4. Defina cada serviço oferecido pela empresa:<!-- { "blockType": "ignored" } -->
+4. Defina cada serviço oferecido pela empresa: <!-- { "blockType": "ignored" } -->
 ```http
 POST https://graph.microsoft.com/beta/bookingBusinesses/{id}/services
 Authorization: Bearer {access token}
@@ -63,36 +63,44 @@ Content-Type: application/json
     "displayName":"Bento"
 }
 ```
-5. Publica a página de agendamento para os negócios, para permitir que os clientes e iniciar o agendamento de compromissos de operadores de negócios:<!-- { "blockType": "ignored" } -->
+5. Publique a página de agendamento para a empresa para permitir que clientes e operadores de negócios comecem a agendar compromissos: <!-- { "blockType": "ignored" } -->
 ```http
 POST https://graph.microsoft.com/beta/bookingBusinesses/{id}/publish
 Authorization: Bearer {access token}
 ```
 
-Em geral, para listar todas as empresas de reserva em inquilino do Office 365:<!-- { "blockType": "ignored" } -->
+Em geral, para listar todas as empresas de reserva no locatário do Office 365: <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/bookingBusinesses
 Authorization: Bearer {access token}
 ```
 
-## <a name="common-use-cases"></a>Casos comuns de uso 
+## <a name="common-use-cases"></a>Casos de uso comuns 
 
-A tabela a seguir lista as operações comuns para uma empresa na API reservas.
+A tabela a seguir lista as operações comuns para uma empresa na API do Bookings.
 
 | Casos de uso        | Recursos REST | Confira também |
 |:---------------|:--------|:----------|
-| Criar, obter, atualizar ou excluir uma empresa | [bookingBusiness](bookingbusiness.md) | [Métodos de bookingBusiness](bookingbusiness.md#methods) |
+| Criar, acessar, atualizar ou excluir uma empresa | [bookingBusiness](bookingbusiness.md) | [Métodos de bookingBusiness](bookingbusiness.md#methods) |
 | Atualizar a política de agendamento | [bookingSchedulingPolicy](bookingschedulingpolicy.md) | [Atualizar um bookingBusiness](../api/bookingbusiness-update.md) |
 | Adicionar, obter, atualizar ou excluir membros da equipe | [bookingStaffMember](bookingstaffmember.md) | [Métodos de bookingStaffMember](bookingstaffmember.md#methods)  |
 | Adicionar, obter, atualizar ou excluir serviços | [bookingService](bookingservice.md) | [Métodos de bookingService](bookingservice.md#methods)  |
-| Publicar ou cancelar a publicação de página de agendamento | [bookingBusiness](bookingbusiness.md) | [Publicar](../api/bookingbusiness-publish.md) <br> [cancelamento de publicação](../api/bookingbusiness-unpublish.md) |
+| Publicar ou cancelar a publicação da página de agendamento | [bookingBusiness](bookingbusiness.md) | [publish](../api/bookingbusiness-publish.md) <br> [unpublish](../api/bookingbusiness-unpublish.md) |
 | Criar, obter, atualizar, excluir ou cancelar um compromisso | [bookingAppointment](bookingappointment.md) | [Métodos de bookingAppointment](bookingappointment.md#methods)  |
-| Obter compromissos em um intervalo de datas | [bookingBusiness](bookingbusiness.md) | [Lista reservas calendarView](../api/bookingbusiness-list-calendarview.md) |
-| Obtenha a moeda | [bookingCurrency](bookingcurrency.md) | [Métodos de bookingCurrency](bookingcurrency.md#methods) |
+| Obter compromissos em um intervalo de datas | [bookingBusiness](bookingbusiness.md) | [Listar o calendarView do Bookings](../api/bookingbusiness-list-calendarview.md) |
+| Obter moeda | [bookingCurrency](bookingcurrency.md) | [Métodos de bookingCurrency](bookingcurrency.md#methods) |
 
 
 ## <a name="see-also"></a>Confira também
 
 - Experimente a API no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).
-- Consulte [como alguns dos nossos parceiros estão usando o Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
-- Saiba como escolher as [permissões](/graph/permissions-reference) no Microsoft Graph.
+- Veja [como alguns de nossos parceiros usam o Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
+- Saiba como escolher [permissões](/graph/permissions-reference) no Microsoft Graph.
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/booking-api-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

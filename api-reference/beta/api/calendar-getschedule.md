@@ -1,21 +1,21 @@
 ---
-title: 'calendário: getSchedule'
-description: Obtenha as informações de disponibilidade para um conjunto de usuários, recursos ou listas de Distribuições por um período de tempo especificado.
+title: 'calendar: getSchedule'
+description: Obtenha as informações de disponibilidade para um conjunto de usuários, listas de distribuição ou recursos para um período especificado.
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 9089489d2b26b3dd4cd56b950538a72ab533c933
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 0c2f6a54664242831d7fd3f2ddfc6a44984674e0
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27956952"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29530024"
 ---
-# <a name="calendar-getschedule"></a>calendário: getSchedule
+# <a name="calendar-getschedule"></a>calendar: getSchedule
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha as informações de disponibilidade para um conjunto de usuários, recursos ou listas de Distribuições por um período de tempo especificado.
+Obtenha as informações de disponibilidade para um conjunto de usuários, listas de distribuição ou recursos para um período especificado.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -37,7 +37,7 @@ POST /users/{id|userPrincipalName}/calendar/getSchedule
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
 | Autorização  | string  | {token} de portador. Obrigatório. |
-| Content-Type  | string | Natureza dos dados no corpo de uma entidade, que é o aplicativo/json. Obrigatório.  |
+| Content-Type  | string | Natureza dos dados no corpo de uma entidade, que é application/json. Obrigatório.  |
 | Prefira: outlook.timezone | string | Use isto para especificar o fuso horário para horas de início e término na resposta. Se não especificado, esses valores de tempo serão retornados em UTC. Opcional. |
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -45,17 +45,17 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|availabilityViewInterval|String|Representa a duração de um intervalo de tempo em um **availabilityView** na resposta. O padrão é 30 minutos, mínimo é de 6, máximo é 1440. Opcional.|
-|endTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data, hora e fuso horário que termina o período.|
-|agendamentos|String collection|Uma coleção de endereços SMTP de usuários, listas de distribuição ou recursos para obter informações de disponibilidade.|
-|startTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data, hora e fuso horário que inicia o período.|
+|availabilityViewInterval|String|Representa a duração de um intervalo de tempo em ** availabilityView ** na resposta. O padrão é 30 minutos, o mínimo é 6, o máximo é 1440. Opcional.|
+|endTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data, a hora e o fuso horário em que o período termina.|
+|agendas|Coleção String|Uma coleção de endereços SMTP de usuários, listas de distribuição ou recursos para obter informações sobre disponibilidade.|
+|startTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data, a hora e o fuso horário em que o período começa.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [scheduleInformation](../resources/scheduleinformation.md) para cada objeto no `schedules` parâmetro.
+Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [scheduleInformation](../resources/scheduleinformation.md) para cada objeto no parâmetro `schedules`.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-O exemplo a seguir obtém as informações de disponibilidade de dois usuários para a data especificada, a hora e o fuso horário.
+O exemplo a seguir obtém as informações de disponibilidade de dois usuários em relação à data, a hora e o fuso horário especificados.
 
 <!-- {
   "blockType": "ignored",
@@ -232,10 +232,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "calendar: getSchedule",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/calendar-getschedule.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

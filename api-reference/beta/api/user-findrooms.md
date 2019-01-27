@@ -1,23 +1,23 @@
 ---
-title: 'usuário: findRooms'
-description: 'Obtenha todas as salas de reunião no locatário do usuário ou em uma lista de salas específico. '
+title: 'user: findRooms'
+description: 'Veja todas as salas de reunião no locatário do usuário ou em uma lista de salas específica. '
 localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0be6034056b20473b65e9a04c70419b3e4e1ba95
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 70bd060f3c2d5722dca365e4d5f4c7595eab26cd
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27934006"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524167"
 ---
-# <a name="user-findrooms"></a>usuário: findRooms
+# <a name="user-findrooms"></a>user: findRooms
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha todas as salas de reunião no locatário do usuário ou em uma lista de salas específico. 
+Veja todas as salas de reunião no locatário do usuário ou em uma lista de salas específica. 
 
-Inquilinos podem organizar as salas de reunião em listas de salas. Cada sala de reunião e a lista de salas é representado por uma instância de [emailAddress](../resources/emailaddress.md) . Você pode [fazer todas as listas de sala](user-findroomlists.md) no locatário, fazer todas as salas no locatário ou fazer todas as salas em uma lista de sala específico. Você pode acessar as primeiras 100 salas no inquilino.
+Os locatários podem organizar salas de reunião em listas de salas. Cada sala de reunião e a lista de salas são representadas por uma instância [emailAddress](../resources/emailaddress.md). Você pode [ver todas as listas de salas](user-findroomlists.md) no locatário, obter todas as salas no locatário ou todas as salas em uma lista de salas específica. É possível ter acesso até as primeiras 100 salas do locatário.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-Para obter todas as salas no locatário:
+Para ver todas as salas no locatário:
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -39,7 +39,7 @@ GET /me/findRooms
 GET /users/<id>/findRooms
 ```
 
-Para obter todas as salas em uma lista de sala específico de locatário:
+Para ver todas as salas em uma lista de salas específicas do locatário:
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -51,7 +51,7 @@ GET /users/<id>/findRooms(RoomList='{room_list}')
 
 | Parâmetro de consulta       | Tipo | Descrição |
 |:---------------|:----------|:----------|
-| RoomList | string | Endereço SMTP associado à lista de salas. Cada lista de salas é representada por uma instância de [emailAddress](../resources/emailaddress.md) que inclui um endereço SMTP. |
+| RoomList | string | O endereço SMTP associado à lista de salas. Cada lista de salas é representada por uma instância [emailAddress](../resources/emailaddress.md) que inclui um endereço SMTP. |
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição |
@@ -65,14 +65,14 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` objeto de coleção [emailAddress](../resources/emailaddress.md) e código de resposta no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [emailAddress](../resources/emailaddress.md) no corpo da resposta.
 
 
 ## <a name="example"></a>Exemplo
 
 ##### <a name="request-1"></a>Solicitação 1
 
-O exemplo primeiro obtém todas as salas definidas no locatário do usuário conectado.
+O primeiro exemplo obtém todas as salas definidas no locatário do usuário conectado.
 
 <!-- {
   "blockType": "request",
@@ -85,7 +85,7 @@ GET https://graph.microsoft.com/beta/me/findRooms
 ##### <a name="response-1"></a>Resposta 1
 Veja a seguir um exemplo da resposta. 
 
-Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "name": "user_get_rooms_in_tenant",
@@ -130,7 +130,7 @@ Content-type: application/json
 
 ##### <a name="request-2"></a>Solicitação 2
 
-O segundo exemplo obtém as salas na lista de sala especificado identificado pelo endereço de email Building2Rooms@contoso.onmicrosoft.com.
+O segundo exemplo recebe as salas na lista de salas especificada identificada pelo endereço de email Building2Rooms@contoso.onmicrosoft.com.
 
 <!-- {
   "blockType": "request",
@@ -143,7 +143,7 @@ GET https://graph.microsoft.com/beta/me/findRooms(RoomList='Building2Rooms@conto
 ##### <a name="response-2"></a>Resposta 2
 Veja a seguir um exemplo da resposta. 
 
-Observação: o objeto da resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "name": "user_get_rooms_from_specific_list",
@@ -177,10 +177,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "user: findRooms",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-findrooms.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

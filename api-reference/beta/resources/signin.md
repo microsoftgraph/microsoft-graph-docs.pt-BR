@@ -1,57 +1,57 @@
 ---
-title: tipo de recurso de logon
-description: 'Este recurso fornece detalhes sobre o usuário ou aplicativo entrar atividade em seu diretório. '
+title: tipo de recurso de domínio
+description: 'Esse recurso fornece detalhes sobre o usuário ou aplicativo atividade de entrada no diretório. '
 localization_priority: Priority
-ms.openlocfilehash: a2ccb84daee642d207919217aa2857745846c769
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.openlocfilehash: 3d9b9ffab6b588cbe0a465a637b12649110415d2
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889065"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571846"
 ---
-# <a name="signin-resource-type"></a>tipo de recurso de logon
-Este recurso fornece detalhes sobre o usuário ou aplicativo entrar atividade em seu diretório. 
+# <a name="signin-resource-type"></a>tipo de recurso de domínio
+Esse recurso fornece detalhes sobre o usuário ou aplicativo atividade de entrada no diretório. 
 
 ## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Entrando de lista](../api/signin-list.md) | [Entrando](signin.md) |Leia as propriedades e os relacionamentos de objetos de logon.|
-|[Fazer logon](../api/signin-get.md) | [Entrando](signin.md) |Leia as propriedades e relações de objeto de entrar.|
+|[Listar entrar](../api/signin-list.md) | [signIn](signin.md) |Leia as propriedades e os relacionamentos de objetos de domínio.|
+|[Obter entrar](../api/signin-get.md) | [signIn](signin.md) |Leia as propriedades e os relacionamentos de um objeto de domínio.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|appDisplayName|Cadeia de caracteres|Refere-se ao nome do aplicativo exibido no Portal do Windows Azure.|
-|appId|Cadeia de caracteres|Refere-se o GUID exclusivo que representa a Id do aplicativo no Windows Azure Active Directory.|
-|clientAppUsed|Cadeia de caracteres|Fornece o cliente herdado usado para entrar activty.E.g. inclui um navegador, Exchange Active Sync, clientes modernos, IMAP, MAPI, SMTP, POP.|
-|appliedConditionalAccessPolicy|coleção [conditionalAccessPolicy](conditionalaccesspolicy.md)|Fornece uma lista de políticas de acesso condicional que são acionadas pela atividade de entrada correspondente.|
-|conditionalAccessStatus|string| Fornece o status da política de acesso condicional disparado. Os valores possíveis são: `success`, `failure`, `notApplied`, `unknownFutureValue`.|
-|originalRequestId|Cadeia de caracteres|O id de solicitação da primeira solicitação na sequência de autenticação.|
-|isInteractive|Booliano|Indica se um logon é interativo ou não.|
-|tokenIssuerName|Cadeia de caracteres|Nome da identidade do provedor (por exemplo, sts.microsoft.com)|
+|appDisplayName|Cadeia de caracteres|Refere-se ao nome do aplicativo exibido no Portal do Azure.|
+|appId|Cadeia de caracteres|Se refere a GUID exclusivo que representa o Id de aplicativo no Azure Active Directory.|
+|clientAppUsed|Cadeia de caracteres|Fornece o cliente herdado usado para entrar na atividade E.g. inclui o navegador, Exchange Active Sync, clientes modernos, IMAP, MAPI, SMTP, POP.|
+|appliedConditionalAccessPolicy|[conditionalAccessPolicy](conditionalaccesspolicy.md) conjunto|Fornece uma lista de políticas de acesso condicional acionada por atividade correspondente entrar.|
+|conditionalAccessStatus|cadeia de caracteres| Fornece o status da política de acesso condicional disparado. Os valores possíveis são: `success`, `failure`, `notApplied`, `unknownFutureValue`.|
+|originalRequestId|Cadeia de caracteres|A id de solicitação da primeira solicitação na sequência de autenticação.|
+|isInteractive|Booliano|Indica se uma entrada é interativa ou não.|
+|tokenIssuerName|Cadeia de caracteres|Nome do provedor da identidade (por exemplo, sts.microsoft.com)|
 |tokenIssuerType|Cadeia de caracteres|Fornece o tipo de identityProvider. Os valores possíveis são `AzureAD`, `ADFederationServices`, `UnknownFutureValue`.|
-|correlationId|Cadeia de caracteres|Refere-se a ID que é enviada pelo cliente quando o sign-in é iniciado. Isso é usado para solução de problemas da atividade de entrada correspondente ao chamar suporte ou da assistência técnica.|
-|createdDateTime|DateTimeOffset|Fornece a data e hora que o sign-in tenha sido iniciado. O tipo de carimbo de hora é sempre em horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|deviceDetail|[deviceDetail](devicedetail.md)|Fornece as informações do dispositivo de onde a entrar ocorreu. Ele inclules informações como deviceId, sistema operacional, navegador. |
-|id|Cadeia de caracteres|Indica a identificação exclusiva que representa a atividade de entrada.|
-|ipAddress|Cadeia de caracteres|Fornece o endereço IP do cliente de onde a entrar ocorreu.|
-|location|[signInLocation](signinlocation.md)|Fornece a cidade, estado e código do país 2 de carta do qual a entrar ocorreu.|
-|processingTimeInMilliseconds|Int|Fornece o tempo em milissegundos no AD STS de processamento de solicitação|
-|riskDetail|`riskDetail`|Fornece o motivo por trás de um estado específico de um usuário riscado, entrar ou um evento de risco. Os valores possíveis são: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `unknownFutureValue`. O valor `none` significa que nenhuma ação foi realizada no usuário ou entrar até o momento. **Observação:** Detalhes para essa propriedade só estarão disponíveis para clientes do Windows Azure AD Premium P2. Serão retornados todos os outros clientes `hidden`.|
-|riskLevelAggregated|`riskLevel`|Fornece o nível de risco agregados. Os valores possíveis são: `none`, `low`, `medium`, `high`, `hidden`, e `unknownFutureValue`. O valor `hidden` significa que o usuário ou entrar não foi habilitada para a proteção de identidade do Windows Azure AD. **Observação:** Detalhes para essa propriedade só estarão disponíveis para clientes do Windows Azure AD Premium P2. Serão retornados todos os outros clientes `hidden`.|
-|riskLevelDuringSignIn|`riskLevel`|Fornece o nível de risco durante a entrada. Os valores possíveis são: `none`, `low`, `medium`, `high`, `hidden`, e `unknownFutureValue`. O valor `hidden` significa que o usuário ou entrar não foi habilitada para a proteção de identidade do Windows Azure AD. **Observação:** Detalhes para essa propriedade só estarão disponíveis para clientes do Windows Azure AD Premium P2. Serão retornados todos os outros clientes `hidden`.|
-|riskEventTypes|`riskEventTypes`|Fornece a lista de tipos de evento de risco associados a entrar. Os valores possíveis são: `unlikelyTravel`, `anonymizedIPAddress`, `maliciousIPAddress`, `unfamiliarFeatures`, `malwareInfectedIPAddress`, `suspiciousIPAddress`, `leakedCredentials`, `investigationsThreatIntelligence`, `generic`, e `unknownFutureValue`.|
-|riskState|`riskState`|Fornece o 'estado de risco' de um usuário riscado, entrar ou um evento de risco. Os valores possíveis são: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
-|mfaDetail|[mfaDetail](mfadetail.md)|Fornece o MFA relacionado informações como MFA, MFA Status Requerido para a entrada correspondente.|
-|networkLocationDetail|[networkLocationDetail](networklocationdetail.md)|Fornece detalhes sobre o local de rede.|
-|riskLevel|string| Fornece o nível de risco associado a entrar. Os valores possíveis são: `low`, `medium`, `high`.|
+|correlationId|Cadeia de caracteres|Refere-se a ID que é enviada do cliente quando é iniciado a entrada. Isso é usado para solução de problemas da atividade de entrada correspondente ao chamar o suporte ou obter assistência técnica.|
+|createdDateTime|DateTimeOffset|Fornece a data e hora que a entrada foi iniciada. O tipo de Timestamp é sempre UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|deviceDetail|[deviceDetail](devicedetail.md)|Fornece as informações de dispositivo do qual a entrada ocorreu. Ele inclue informações como deviceId, OS, navegador. |
+|id|Cadeia de caracteres|Indica que representa a atividade de ID exclusiva.|
+|ipAddress|Cadeia de caracteres|Fornece o endereço IP do cliente de onde a entrada ocorreu.|
+|location|[signInLocation](signinlocation.md)|Fornece a cidade, código de estado e 2 letras do país de onde a entrada ocorreu.|
+|processingTimeInMilliseconds|Int|Fornece a solicitação de processamento de tempo em milissegundos no AD STS|
+|riskDetail| enum-string |Fornece o motivo atrás um estado específico de um usuário arriscado, entrada ou um evento de risco. Os valores possíveis são `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `unknownFutureValue`. O valor `none` significa que nenhuma ação foi realizada pelo usuário ou entrar até o momento. **Observação:** detalhes para esta propriedade estão disponíveis apenas para clientes do Azure AD Premium P2. Outros clientes serão retornados `hidden`.|
+|riskLevelAggregated| enum-string |Fornece o nível de risco agregado. Os valores possíveis são: `none`, `low`, `medium`, `high`, `hidden`, e `unknownFutureValue`. O valor `hidden` significa que o usuário ou entrada não foi habilitado para proteção de identidade do Azure AD. **Observação:** detalhes para esta propriedade estão disponíveis apenas para clientes do Azure AD Premium P2. Outros clientes serão retornados `hidden`.|
+|riskLevelDuringSignIn| enum-string |Fornece o nível de risco durante a entrada. Os valores possíveis são: `none`, `low`, `medium`, `high`, `hidden`, e `unknownFutureValue`. O valor `hidden` significa que o usuário ou entrada não foi habilitado para proteção de identidade do Azure AD. **Observação:** detalhes para esta propriedade estão disponíveis apenas para clientes do Azure AD Premium P2. Outros clientes serão retornados `hidden`.|
+|riskEventTypes| enum-string |Fornece a lista de tipos de evento de risco associados a entrada. Os valores possíveis são: `unlikelyTravel`, `anonymizedIPAddress`, `maliciousIPAddress`, `unfamiliarFeatures`, `malwareInfectedIPAddress`, `suspiciousIPAddress`, `leakedCredentials`, `investigationsThreatIntelligence`,  `generic` e `unknownFutureValue`.|
+|riskState|`riskState`|Fornece o motivo atrás de um estado específico de um usuário arriscado, entrada ou um evento de risco. Os valores possíveis são `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
+|mfaDetail|[mfaDetail](mfadetail.md)|Fornece a MFA relacionada a informações como a MFA, MFA Status Requerido para a entrada correspondente.|
+|networkLocationDetail| [deviceDetail](networklocationdetail.md) |Fornece detalhes sobre o local de rede.|
+|riskLevel|cadeia de caracteres| Fornece o nível de riscos associado a entrar. Os valores possíveis são: `low`, `medium`, `high`.|
 |status|[signInStatus](signinstatus.md)|Fornece o status de entrada. Os valores possíveis incluem `Success` e `Failure`.|
-|userDisplayName|Cadeia de caracteres|Indica a exibição do nome do usuário.|
-|userId|Cadeia de caracteres|Indica o ID de usuário do usuário.|
-|userPrincipalName|Cadeia de caracteres|Indica o UPN do usuário.|
-|resourceDisplayName|Cadeia de caracteres|Indica o nome do recurso que o usuário entrado na|
-|resourceId|Cadeia de caracteres|Indica a identificação do recurso que o usuário entrado na.|
+|userDisplayName|Cadeia de caracteres|Indica o nome de exibição do usuário.|
+|userId|Cadeia de caracteres|Indica que o userId do usuário.|
+|userPrincipalName|Cadeia de caracteres|Indica o userId do usuário.|
+|resourceDisplayName|Cadeia de caracteres|Indica o nome do recurso que o usuário entrou|
+|resourceId|Cadeia de caracteres|Indica o Id do recurso que o usuário entrou.|
 |authenticationMethodsUsed|Cadeia de caracteres|Indica a lista de métodos de autenticação usado|
 
 ## <a name="relationships"></a>Relações
@@ -91,11 +91,11 @@ Veja a seguir uma representação JSON do recurso.
   "tokenIssuerType": "String",
   "deviceDetail": {"@odata.type": "microsoft.graph.deviceDetail"},
   "location": {"@odata.type": "microsoft.graph.signInLocation"},
-  "riskDetail": "string",
-  "riskLevelAggregated": "string",
-  "riskLevelDuringSignIn": "string",
-  "riskState": "string",
-  "riskEventTypes": "string",
+  "riskDetail": "none | adminGeneratedTemporaryPassword | userPerformedSecuredPasswordChange | userPerformedSecuredPasswordReset | adminConfirmedSigninSafe | aiConfirmedSigninSafe | userPassedMFADrivenByRiskBasedPolicy | adminDismissedAllRiskForUser | adminConfirmedSigninCompromised | unknownFutureValue",
+  "riskLevelAggregated": "enum-string",
+  "riskLevelDuringSignIn": "enum-string",
+  "riskState": "riskState",
+  "riskEventTypes": "enum-string",
   "resourceDisplayName": "string",
   "resourceId": "string",
   "authenticationMethodsUsed": "string",

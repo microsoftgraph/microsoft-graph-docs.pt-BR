@@ -1,27 +1,27 @@
 ---
-title: Criar equipe a partir de grupo
+title: Criar equipe a partir do grupo
 description: Crie uma nova equipe a partir de um grupo.
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 277a889201f6a161b2ed4191721616a11ead2f41
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: a28036cfb253405fab55eca80fa2b0a17232a96c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27938689"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524790"
 ---
-# <a name="create-team-from-group"></a>Criar equipe a partir de grupo
+# <a name="create-team-from-group"></a>Criar equipe a partir do grupo
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Crie uma nova [equipe](../resources/team.md) a partir de um [grupo](../resources/group.md).
 
-Para criar uma equipe, o grupo deve ter um mínimo de um proprietário.
+Para criar uma equipe, o grupo deve ter pelo menos um proprietário.
 
-Se o grupo foi criado há menos de 15 minutos, é possível para a chamada de equipe criar falha com um código de 404 erro devido aos atrasos de replicação. O padrão recomendado é repetir a chamada de equipe criar três vezes, com um atraso de segunda 10 entre chamadas.
+Se o grupo foi criado há menos de 15 minutos, é possível que a chamada Criar equipe falhe com um código de erro 404 devido a atrasos na replicação. O padrão recomendado é repetir a chamada Criar equipe três vezes, com um atraso de 10 segundos entre as chamadas.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Group.ReadWrite.All |
 
-> **Observação**: Esta API oferece suporte a permissões de administrador. Administradores globais e administradores de serviço de Teams da Microsoft podem acessar que eles não são membros de grupos.
+> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais e administradores do serviço do Microsoft Teams podem acessar grupos dos quais eles não são membros.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -50,11 +50,11 @@ PUT /groups/{id}/team
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON de um objeto de [equipe](../resources/team.md) .
+No corpo da solicitação, forneça uma representação JSON de um objeto [team](../resources/team.md).
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, esse método deve retornar uma `201 Created` código de resposta e um objeto de [equipe](../resources/team.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta `201 Created` e um objeto [team](../resources/team.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -130,14 +130,19 @@ Content-length: 401
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create Team",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/team-put-teams.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
 
 ## <a name="see-also"></a>Confira também
 
-- [Criando um grupo com uma equipe](/graph/teams-create-group-and-team)
+- [Como criar um grupo com uma equipe](/graph/teams-create-group-and-team)

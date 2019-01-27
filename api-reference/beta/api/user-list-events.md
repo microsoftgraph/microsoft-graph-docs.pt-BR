@@ -1,28 +1,28 @@
 ---
 title: Listar eventos
-description: 'Obtenha uma lista de objetos de eventos de calendário de padrão do usuário ou '
+description: 'Obtenha uma lista de objetos event no calendário padrão do usuário ou '
 localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 17e5123f5327ab3958f1ec9b2c53d49fc02ab74f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: ef16f9f0db1bc1e489bc7322ff72f58598d8d0a6
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27940089"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526659"
 ---
 # <a name="list-events"></a>Listar eventos
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha uma lista de objetos de [eventos](../resources/event.md) de calendário de padrão do usuário ou de um calendário especificado. A lista contém mestres de reuniões e série de única instância.
+Obtenha uma lista de objetos [event](../resources/event.md) no calendário padrão do usuário ou de um calendário especificado. A lista contém reuniões de instância única e reuniões mestres em série.
 
 Para obter instâncias de evento expandidas, [obtenha a visualização de calendário](calendar-list-calendarview.md) ou [obtenha as instâncias de um evento](event-list-instances.md).
 
-Há dois cenários onde um aplicativo pode obter eventos no calendário de outro usuário:
+Há dois cenários em que um aplicativo pode encontrar eventos do calendário de outro usuário:
 
-* Se o aplicativo tem permissões de aplicativo, ou,
-* Se o aplicativo tiver apropriada [permissões](#permissions) delegadas de um usuário, e outro usuário compartilhou um calendário com que o usuário ou, tem acesso delegado a esse usuário. Consulte os [detalhes e um exemplo](/graph/outlook-get-shared-events-calendars).
+* Se o aplicativo tem permissões de aplicativo ou
+* Se o aplicativo tem as [permissões](#permissions) delegadas apropriadas de um usuário e o outro usuário compartilhou um calendário com esse usuário ou concedeu acesso delegado ao usuário. Confira os [detalhes e um exemplo](/graph/outlook-get-shared-events-calendars).
 
 
 ### <a name="support-various-time-zones"></a>Suporte a vários fusos horários
@@ -72,7 +72,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |:-----------|:------|:----------|
 | Autorização  | string  | {token} de portador. Obrigatório. |
 | Prefira: outlook.timezone | string | Use isto para especificar o fuso horário para horas de início e término na resposta. Se não especificado, esses valores de tempo serão retornados em UTC. Opcional. |
-| Prefer: outlook.body-content-type | string | O formato da propriedade **corpo** a ser retornada. Os valores podem ser "text" ou "html". Um cabeçalho `Preference-Applied` é retornado como confirmação se este cabeçalho `Prefer` for especificado. Se o cabeçalho não for especificado, a propriedade **corpo** será retornada no formato HTML. Opcional. |
+| Prefer: outlook.body-content-type | cadeia de caracteres | O formato da propriedade **corpo** a ser retornada. Os valores podem ser "text" ou "html". Um cabeçalho `Preference-Applied` é retornado como confirmação se este cabeçalho `Prefer` for especificado. Se o cabeçalho não for especificado, a propriedade **corpo** será retornada no formato HTML. Opcional. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
@@ -82,12 +82,12 @@ Não forneça um corpo de solicitação para esse método.
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [event](../resources/event.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request-1"></a>Solicitação 1
-O exemplo primeiro obtém eventos de todas as do usuário. Especifica o seguinte:
+O primeiro exemplo obtém todos os eventos do usuário. Especifica o seguinte:
 
 - um cabeçalho `Prefer: outlook.timezone` para obter valores de data/hora retornados na Hora Oficial do Pacífico. 
 - Um parâmetro de consulta `$select` para retornar propriedades específicas. Sem um parâmetro `$select`, todas as propriedades do evento serão retornadas.
 
-A solicitação não especificar qualquer `Prefer: outlook.body-content-type` cabeçalho para indicar um formato específico para o corpo do evento retornado. 
+A solicitação não especifica nenhum cabeçalho `Prefer: outlook.body-content-type` para indicar um formato específico para o corpo do evento retornado. 
 
 <!-- {
   "blockType": "request",
@@ -98,7 +98,7 @@ GET https://graph.microsoft.com/beta/me/events?$select=subject,body,bodyPreview,
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
 ##### <a name="response-1"></a>Resposta 1
-Veja a seguir um exemplo da resposta. Porque nenhuma `Prefer: outlook.body-content-type` cabeçalho foi especificado, a propriedade **body** é retornada no formato HTML padrão.
+Veja a seguir um exemplo da resposta. Como nenhum cabeçalho `Prefer: outlook.body-content-type` foi especificado, a propriedade **body** será retornada no formato HTML padrão.
 <!-- {
   "blockType": "response",
   "name": "get_events",
@@ -181,9 +181,9 @@ Content-length: 1932
 ```
 
 ##### <a name="request-2"></a>Solicitação 2
-O segundo exemplo mostra como usar um `Prefer: outlook.body-content-type="text"` cabeçalho para obter a propriedade **corpo** da mensagem especificada no formato de texto.
+O segundo exemplo mostra como usar um cabeçalho `Prefer: outlook.body-content-type="text"` para obter a propriedade **body** da mensagem especificada no formato de texto.
 
-A solicitação também usa um `$select` parâmetro para retornar propriedades específicas de consulta. Sem um `$select` parâmetro, todas as propriedades de evento serão retornadas.
+A solicitação também usa um parâmetro de consulta `$select` para retornar propriedades específicas. Sem um parâmetro `$select`, todas as propriedades do evento serão retornadas.
 <!-- {
   "blockType": "request",
   "name": "get_events_in_text"
@@ -193,7 +193,7 @@ GET https://graph.microsoft.com/beta/me/events?$select=subject,body,bodyPreview
 Prefer: outlook.body-content-type="text" 
 ```
 ##### <a name="response-2"></a>Resposta 2
-Veja a seguir um exemplo da resposta. A propriedade **body** é retornada em formato de texto. 
+Veja a seguir um exemplo da resposta. A propriedade **body** é retornada no formato de texto. 
 
 <!-- {
   "blockType": "response",
@@ -226,10 +226,15 @@ Content-length: 640
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List events",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-list-events.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

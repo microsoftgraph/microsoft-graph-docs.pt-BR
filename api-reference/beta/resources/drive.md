@@ -5,16 +5,16 @@ ms.date: 09/10/2017
 title: Unidade
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 581a611fa077eab6d44db01d998d5ea42886f052
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 220f68d2888b29100fdcbb671b5085d3606ec3c2
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27938185"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29521268"
 ---
 # <a name="drive-resource-type"></a>tipo de recurso de unidade
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 O recurso drive é o objeto de nível superior que representa o OneDrive de um usuário ou uma biblioteca de documentos no SharePoint.
 
@@ -80,11 +80,11 @@ O recurso **drive** é derivado de [**baseItem**](baseitem.md) e herda proprieda
 | id                   | String                        | O identificador exclusivo da unidade. Somente leitura.                                                                                                                                                                                   |
 | lastModifiedBy       | [identitySet][]               | Identidade do usuário, dispositivo e aplicativo que modificou o item pela última vez. Somente leitura.                                                                                                                                           |
 | lastModifiedDateTime | dateTimeOffset                | Data e hora em que o item foi modificado pela última vez. Somente leitura.                                                                                                                                                                             |
-| name                 | string                        | O nome do item. Leitura e gravação.                                                                                                                                                                                                |
+| nome                 | string                        | O nome do item. Leitura e gravação.                                                                                                                                                                                                |
 | owner                | [identitySet](identityset.md) | Opcional. A conta do usuário que é proprietário da unidade. Somente leitura.                                                                                                                                                                       |
 | quota                | [quota](quota.md)             | Opcional. Informações sobre a cota de espaço de armazenamento da unidade. Somente leitura.                                                                                                                                                          |
 | sharepointIds        | [sharepointIds][]             | Retorna os identificadores úteis para fins de compatibilidade do REST do SharePoint. Somente leitura.                                                                                                                                                         |
-| system               | [systemFacet][]               | Se estiver presente, indica que se trata de uma unidade gerenciada pelo sistema. Somente leitura.
+| sistema               | [systemFacet][]               | Se estiver presente, indica que se trata de uma unidade gerenciada pelo sistema. Somente leitura.
 | webUrl               | string (url)                  | URL que exibe o recurso no navegador. Somente leitura.                                                                                                                                                                        |
 
 [identitySet]: identityset.md
@@ -99,7 +99,7 @@ O recurso **drive** é derivado de [**baseItem**](baseitem.md) e herda proprieda
 | items        | Coleção [driveitem](driveitem.md) | Todos os itens contidos na unidade. Somente leitura. Anulável.
 | root         | [driveitem](driveitem.md)            | A pasta raiz da unidade. Somente leitura.
 | special      | Coleção [driveitem](driveitem.md) | Coleção de pastas comuns disponíveis no OneDrive. Somente leitura. Anulável.
-| seguir    | Coleção [DriveItem](driveitem.md) | A lista de itens que o usuário está seguindo. Somente no OneDrive for Business.
+| seguindo    | Coleção [DriveItem](driveitem.md) | A lista de itens que o usuário está seguindo. Somente no OneDrive for Business.
 
 ## <a name="methods"></a>Métodos
 
@@ -107,14 +107,14 @@ O recurso **drive** é derivado de [**baseItem**](baseitem.md) e herda proprieda
 | :--------------------------------------------------------- | :-------------------------- |
 | [Recuperar metadados de outra Unidade][drive-get]           | `GET /drives/{drive-id}`    |
 | [Recuperar a pasta raiz da Unidade padrão do usuário][item-get]       | `GET /drive/root`           |
-| [Lista de atividades sob a Unidade][drive-activities]        | `GET /drive/activities`     |
-| [Lista seguido de itens][drive-following]                     | `GET /drive/following`      |
+| [Listar atividades sob a Unidade][drive-activities]        | `GET /drive/activities`     |
+| [Listar itens seguidos][drive-following]                     | `GET /drive/following`      |
 | [Listar filhos na Unidade][item-children]             | `GET /drive/root/children`  |
 | [Listar alterações de todos os Itens na Unidade][item-changes]    | `GET /drive/root/delta`     |
 | [Pesquisar Itens na Unidade][item-search]               | `GET /drive/root/search`    |
 | [Acessar pasta especial](../api/drive-get-specialfolder.md) | `GET /drive/special/{name}` |
 
-Na tabela anterior, os exemplos usam `/drive`, mas outros caminhos são muito válidos.
+Na tabela anterior, os exemplos usam `/drive`, mas outros caminhos também são válidos.
 
 [itemActivity]: itemactivity.md
 [item-resource]: driveitem.md
@@ -132,11 +132,18 @@ Na tabela anterior, os exemplos usam `/drive`, mas outros caminhos são muito v�
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Drive is a top level object for OneDrive API that provides access to the contents of a drive. ",
   "keywords": "drive,objects,resources",
   "section": "documentation",
   "tocPath": "Drives",
-  "tocBookmarks": { "Resources/Drive": "#" }
-} -->
+  "tocBookmarks": {
+    "Resources/Drive": "#"
+  },
+  "suppressions": [
+    "Error: /api-reference/beta/resources/drive.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
