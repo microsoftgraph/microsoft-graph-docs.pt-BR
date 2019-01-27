@@ -1,39 +1,39 @@
 ---
-title: Criar equipe a partir de grupo
+title: Criar equipe a partir do grupo
 description: Crie uma nova equipe a partir de um grupo.
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 277a889201f6a161b2ed4191721616a11ead2f41
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: a28036cfb253405fab55eca80fa2b0a17232a96c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27938689"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524790"
 ---
-# <a name="create-team-from-group"></a><span data-ttu-id="78f92-103">Criar equipe a partir de grupo</span><span class="sxs-lookup"><span data-stu-id="78f92-103">Create team from group</span></span>
+# <a name="create-team-from-group"></a><span data-ttu-id="bcec4-103">Criar equipe a partir do grupo</span><span class="sxs-lookup"><span data-stu-id="bcec4-103">Create team from group</span></span>
 
-> <span data-ttu-id="78f92-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="78f92-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="78f92-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="78f92-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="78f92-106">Crie uma nova [equipe](../resources/team.md) a partir de um [grupo](../resources/group.md).</span><span class="sxs-lookup"><span data-stu-id="78f92-106">Create a new [team](../resources/team.md) from a [group](../resources/group.md).</span></span>
+<span data-ttu-id="bcec4-104">Crie uma nova [equipe](../resources/team.md) a partir de um [grupo](../resources/group.md).</span><span class="sxs-lookup"><span data-stu-id="bcec4-104">Create a new [team](../resources/team.md) from a [group](../resources/group.md).</span></span>
 
-<span data-ttu-id="78f92-107">Para criar uma equipe, o grupo deve ter um mínimo de um proprietário.</span><span class="sxs-lookup"><span data-stu-id="78f92-107">In order to create a team, the group must have a least one owner.</span></span>
+<span data-ttu-id="bcec4-105">Para criar uma equipe, o grupo deve ter pelo menos um proprietário.</span><span class="sxs-lookup"><span data-stu-id="bcec4-105">In order to create a team, the group must have a least one owner.</span></span>
 
-<span data-ttu-id="78f92-108">Se o grupo foi criado há menos de 15 minutos, é possível para a chamada de equipe criar falha com um código de 404 erro devido aos atrasos de replicação.</span><span class="sxs-lookup"><span data-stu-id="78f92-108">If the group was created less than 15 minutes ago, it's possible for the Create team call to fail with a 404 error code due to replication delays.</span></span> <span data-ttu-id="78f92-109">O padrão recomendado é repetir a chamada de equipe criar três vezes, com um atraso de segunda 10 entre chamadas.</span><span class="sxs-lookup"><span data-stu-id="78f92-109">The recommended pattern is to retry the Create team call three times, with a 10 second delay between calls.</span></span>
+<span data-ttu-id="bcec4-106">Se o grupo foi criado há menos de 15 minutos, é possível que a chamada Criar equipe falhe com um código de erro 404 devido a atrasos na replicação.</span><span class="sxs-lookup"><span data-stu-id="bcec4-106">If the group was created less than 15 minutes ago, it's possible for the Create team call to fail with a 404 error code due to replication delays.</span></span> <span data-ttu-id="bcec4-107">O padrão recomendado é repetir a chamada Criar equipe três vezes, com um atraso de 10 segundos entre as chamadas.</span><span class="sxs-lookup"><span data-stu-id="bcec4-107">The recommended pattern is to retry the Create team call three times, with a 10 second delay between calls.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="78f92-110">Permissions</span><span class="sxs-lookup"><span data-stu-id="78f92-110">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="bcec4-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="bcec4-108">Permissions</span></span>
 
-<span data-ttu-id="78f92-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="78f92-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="bcec4-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="bcec4-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="78f92-113">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="78f92-113">Permission type</span></span>      | <span data-ttu-id="78f92-114">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="78f92-114">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="bcec4-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="bcec4-111">Permission type</span></span>      | <span data-ttu-id="bcec4-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="bcec4-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="78f92-115">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="78f92-115">Delegated (work or school account)</span></span> | <span data-ttu-id="78f92-116">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="78f92-116">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="78f92-117">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="78f92-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="78f92-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="78f92-118">Not supported.</span></span>    |
-|<span data-ttu-id="78f92-119">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="78f92-119">Application</span></span> | <span data-ttu-id="78f92-120">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="78f92-120">Group.ReadWrite.All</span></span> |
+|<span data-ttu-id="bcec4-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="bcec4-113">Delegated (work or school account)</span></span> | <span data-ttu-id="bcec4-114">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bcec4-114">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="bcec4-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="bcec4-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bcec4-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="bcec4-116">Not supported.</span></span>    |
+|<span data-ttu-id="bcec4-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="bcec4-117">Application</span></span> | <span data-ttu-id="bcec4-118">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bcec4-118">Group.ReadWrite.All</span></span> |
 
-> <span data-ttu-id="78f92-121">**Observação**: Esta API oferece suporte a permissões de administrador.</span><span class="sxs-lookup"><span data-stu-id="78f92-121">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="78f92-122">Administradores globais e administradores de serviço de Teams da Microsoft podem acessar que eles não são membros de grupos.</span><span class="sxs-lookup"><span data-stu-id="78f92-122">Global admins and Microsoft Teams service admins can access groups that they are not a member of.</span></span>
+> <span data-ttu-id="bcec4-119">**Observação**: esta API oferece transporte a permissões de administrador.</span><span class="sxs-lookup"><span data-stu-id="bcec4-119">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="bcec4-120">Os administradores globais e administradores do serviço do Microsoft Teams podem acessar grupos dos quais eles não são membros.</span><span class="sxs-lookup"><span data-stu-id="bcec4-120">Global admins and Microsoft Teams service admins can access groups that they are not a member of.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="78f92-123">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="78f92-123">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="bcec4-121">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="bcec4-121">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -41,26 +41,26 @@ ms.locfileid: "27938689"
 PUT /groups/{id}/team
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="78f92-124">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="78f92-124">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="bcec4-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="bcec4-122">Request headers</span></span>
 
-| <span data-ttu-id="78f92-125">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="78f92-125">Header</span></span>       | <span data-ttu-id="78f92-126">Valor</span><span class="sxs-lookup"><span data-stu-id="78f92-126">Value</span></span> |
+| <span data-ttu-id="bcec4-123">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="bcec4-123">Header</span></span>       | <span data-ttu-id="bcec4-124">Valor</span><span class="sxs-lookup"><span data-stu-id="bcec4-124">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="78f92-127">Autorização</span><span class="sxs-lookup"><span data-stu-id="78f92-127">Authorization</span></span>  | <span data-ttu-id="78f92-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="78f92-p105">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="78f92-130">Content-Type</span><span class="sxs-lookup"><span data-stu-id="78f92-130">Content-Type</span></span>  | <span data-ttu-id="78f92-131">application/json</span><span class="sxs-lookup"><span data-stu-id="78f92-131">application/json</span></span>  |
+| <span data-ttu-id="bcec4-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="bcec4-125">Authorization</span></span>  | <span data-ttu-id="bcec4-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="bcec4-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="bcec4-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="bcec4-128">Content-Type</span></span>  | <span data-ttu-id="bcec4-129">application/json</span><span class="sxs-lookup"><span data-stu-id="bcec4-129">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="78f92-132">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="78f92-132">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="bcec4-130">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="bcec4-130">Request body</span></span>
 
-<span data-ttu-id="78f92-133">No corpo da solicitação, fornece uma representação JSON de um objeto de [equipe](../resources/team.md) .</span><span class="sxs-lookup"><span data-stu-id="78f92-133">In the request body, supply a JSON representation of a [team](../resources/team.md) object.</span></span>
+<span data-ttu-id="bcec4-131">No corpo da solicitação, forneça uma representação JSON de um objeto [team](../resources/team.md).</span><span class="sxs-lookup"><span data-stu-id="bcec4-131">In the request body, supply a JSON representation of [plannerBucket](../resources/team.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="78f92-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="78f92-134">Response</span></span>
+## <a name="response"></a><span data-ttu-id="bcec4-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="bcec4-132">Response</span></span>
 
-<span data-ttu-id="78f92-135">Se tiver êxito, esse método deve retornar uma `201 Created` código de resposta e um objeto de [equipe](../resources/team.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="78f92-135">If successful, this method should return a `201 Created` response code and a [team](../resources/team.md) object in the response body.</span></span>
+<span data-ttu-id="bcec4-133">Se bem-sucedido, este método retorna um código de resposta `201 Created` e um objeto [team](../resources/team.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="bcec4-133">If successful, this method returns a `201 Created` response code and a [deviceManagementExchangeConnector](../resources/team.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="78f92-136">Exemplo</span><span class="sxs-lookup"><span data-stu-id="78f92-136">Example</span></span>
+## <a name="example"></a><span data-ttu-id="bcec4-134">Exemplo</span><span class="sxs-lookup"><span data-stu-id="bcec4-134">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="78f92-137">Solicitação</span><span class="sxs-lookup"><span data-stu-id="78f92-137">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="bcec4-135">Solicitação</span><span class="sxs-lookup"><span data-stu-id="bcec4-135">Request</span></span>
 
-<span data-ttu-id="78f92-138">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="78f92-138">The following is an example of the request.</span></span>
+<span data-ttu-id="bcec4-136">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="bcec4-136">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "ignored",
   "name": "create_team"
@@ -84,11 +84,11 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="78f92-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="78f92-139">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="bcec4-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="bcec4-137">Response</span></span>
 
-<span data-ttu-id="78f92-140">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="78f92-140">The following is an example of the response.</span></span> 
+<span data-ttu-id="bcec4-138">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="bcec4-138">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="78f92-p106">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="78f92-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="bcec4-p105">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="bcec4-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "ignored",
   "truncated": true,
@@ -130,14 +130,19 @@ Content-length: 401
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create Team",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/team-put-teams.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
 
-## <a name="see-also"></a><span data-ttu-id="78f92-143">Confira também</span><span class="sxs-lookup"><span data-stu-id="78f92-143">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="bcec4-141">Confira também</span><span class="sxs-lookup"><span data-stu-id="bcec4-141">See also</span></span>
 
-- [<span data-ttu-id="78f92-144">Criando um grupo com uma equipe</span><span class="sxs-lookup"><span data-stu-id="78f92-144">Creating a group with a team</span></span>](/graph/teams-create-group-and-team)
+- [<span data-ttu-id="bcec4-142">Como criar um grupo com uma equipe</span><span class="sxs-lookup"><span data-stu-id="bcec4-142">Creating a group with a team</span></span>](/graph/teams-create-group-and-team)

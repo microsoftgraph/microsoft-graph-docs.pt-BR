@@ -1,37 +1,37 @@
 ---
-title: 'usuário: findRoomLists'
+title: 'user: findRoomLists'
 description: Obtenha as listas de salas definidas em um locatário.
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f170b40689b09f54ea53632ca113018de1671b4e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 1cc26367c9cecd16604f7cfefb3be5ce265e3c2c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27979289"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29520575"
 ---
-# <a name="user-findroomlists"></a><span data-ttu-id="ce77e-103">usuário: findRoomLists</span><span class="sxs-lookup"><span data-stu-id="ce77e-103">user: findRoomLists</span></span>
+# <a name="user-findroomlists"></a><span data-ttu-id="42d52-103">user: findRoomLists</span><span class="sxs-lookup"><span data-stu-id="42d52-103">user: findRoomLists</span></span>
 
-> <span data-ttu-id="ce77e-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="ce77e-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="ce77e-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="ce77e-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ce77e-106">Obtenha as listas de salas definidas em um locatário.</span><span class="sxs-lookup"><span data-stu-id="ce77e-106">Get the room lists defined in a tenant.</span></span>
+<span data-ttu-id="42d52-104">Obtenha as listas de salas definidas em um locatário.</span><span class="sxs-lookup"><span data-stu-id="42d52-104">Get the room lists defined in a tenant.</span></span>
 
-<span data-ttu-id="ce77e-107">Inquilinos podem organizar as salas de reunião em listas de salas.</span><span class="sxs-lookup"><span data-stu-id="ce77e-107">Tenants can organize meeting rooms into room lists.</span></span> <span data-ttu-id="ce77e-108">Cada sala de reunião e a lista de salas é representado por uma instância de [emailAddress](../resources/emailaddress.md) .</span><span class="sxs-lookup"><span data-stu-id="ce77e-108">Each meeting room and room list is represented by an [emailAddress](../resources/emailaddress.md) instance.</span></span>
-<span data-ttu-id="ce77e-109">Você pode obter todas as listas de sala no locatário, [fazer todas as salas](user-findrooms.md) no locatário ou [fazer todas as salas](user-findrooms.md) em uma lista de sala específico.</span><span class="sxs-lookup"><span data-stu-id="ce77e-109">You can get all the room lists in the tenant, [get all the rooms](user-findrooms.md) in the tenant, or [get all the rooms](user-findrooms.md) in a specific room list.</span></span>
-
-
-## <a name="permissions"></a><span data-ttu-id="ce77e-110">Permissões</span><span class="sxs-lookup"><span data-stu-id="ce77e-110">Permissions</span></span>
-<span data-ttu-id="ce77e-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ce77e-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="42d52-105">Os locatários podem organizar salas de reunião em listas de salas.</span><span class="sxs-lookup"><span data-stu-id="42d52-105">Tenants can organize meeting rooms into room lists.</span></span> <span data-ttu-id="42d52-106">Cada sala de reunião e a lista de salas são representadas por uma instância [emailAddress](../resources/emailaddress.md).</span><span class="sxs-lookup"><span data-stu-id="42d52-106">Each meeting room and room list is represented by an [emailAddress](../resources/emailaddress.md) instance.</span></span>
+<span data-ttu-id="42d52-107">Você pode ver todas as listas de salas no locatário, [obter todas as salas](user-findrooms.md) no locatário ou [todas as salas](user-findrooms.md) em uma lista de salas específica.</span><span class="sxs-lookup"><span data-stu-id="42d52-107">You can get all the room lists in the tenant, [get all the rooms](user-findrooms.md) in the tenant, or [get all the rooms](user-findrooms.md) in a specific room list.</span></span>
 
 
-|<span data-ttu-id="ce77e-113">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="ce77e-113">Permission type</span></span>      | <span data-ttu-id="ce77e-114">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="ce77e-114">Permissions (from least to most privileged)</span></span>              |
+## <a name="permissions"></a><span data-ttu-id="42d52-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="42d52-108">Permissions</span></span>
+<span data-ttu-id="42d52-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="42d52-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+
+|<span data-ttu-id="42d52-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="42d52-111">Permission type</span></span>      | <span data-ttu-id="42d52-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="42d52-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="ce77e-115">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="ce77e-115">Delegated (work or school account)</span></span> | <span data-ttu-id="ce77e-116">User.ReadBasic.All, User.Read.All</span><span class="sxs-lookup"><span data-stu-id="ce77e-116">User.ReadBasic.All, User.Read.All</span></span>    |
-|<span data-ttu-id="ce77e-117">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="ce77e-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ce77e-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ce77e-118">Not supported.</span></span>    |
-|<span data-ttu-id="ce77e-119">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="ce77e-119">Application</span></span> | <span data-ttu-id="ce77e-120">User.Read.All</span><span class="sxs-lookup"><span data-stu-id="ce77e-120">User.Read.All</span></span> |
+|<span data-ttu-id="42d52-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="42d52-113">Delegated (work or school account)</span></span> | <span data-ttu-id="42d52-114">User.ReadBasic.All, User.Read.All</span><span class="sxs-lookup"><span data-stu-id="42d52-114">User.ReadBasic.All, User.Read.All, Directory.Read.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="42d52-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="42d52-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="42d52-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="42d52-116">Not supported.</span></span>    |
+|<span data-ttu-id="42d52-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="42d52-117">Application</span></span> | <span data-ttu-id="42d52-118">User.Read.All</span><span class="sxs-lookup"><span data-stu-id="42d52-118">User.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ce77e-121">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="ce77e-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="42d52-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="42d52-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/findRoomLists
@@ -39,26 +39,26 @@ GET /users/<id>/findRoomLists
 
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="ce77e-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="ce77e-122">Request headers</span></span>
-| <span data-ttu-id="ce77e-123">Nome</span><span class="sxs-lookup"><span data-stu-id="ce77e-123">Name</span></span>       | <span data-ttu-id="ce77e-124">Tipo</span><span class="sxs-lookup"><span data-stu-id="ce77e-124">Type</span></span> | <span data-ttu-id="ce77e-125">Descrição</span><span class="sxs-lookup"><span data-stu-id="ce77e-125">Description</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="42d52-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="42d52-120">Request headers</span></span>
+| <span data-ttu-id="42d52-121">Nome</span><span class="sxs-lookup"><span data-stu-id="42d52-121">Name</span></span>       | <span data-ttu-id="42d52-122">Tipo</span><span class="sxs-lookup"><span data-stu-id="42d52-122">Type</span></span> | <span data-ttu-id="42d52-123">Descrição</span><span class="sxs-lookup"><span data-stu-id="42d52-123">Description</span></span> |
 |:---------------|:----------|:----------|
-| <span data-ttu-id="ce77e-126">Autorização</span><span class="sxs-lookup"><span data-stu-id="ce77e-126">Authorization</span></span>  | <span data-ttu-id="ce77e-127">string</span><span class="sxs-lookup"><span data-stu-id="ce77e-127">string</span></span>  | <span data-ttu-id="ce77e-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="ce77e-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="ce77e-130">Content-Type</span><span class="sxs-lookup"><span data-stu-id="ce77e-130">Content-Type</span></span>  | <span data-ttu-id="ce77e-131">string</span><span class="sxs-lookup"><span data-stu-id="ce77e-131">string</span></span>  | <span data-ttu-id="ce77e-p105">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="ce77e-p105">application/json. Required.</span></span> |
+| <span data-ttu-id="42d52-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="42d52-124">Authorization</span></span>  | <span data-ttu-id="42d52-125">string</span><span class="sxs-lookup"><span data-stu-id="42d52-125">string</span></span>  | <span data-ttu-id="42d52-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="42d52-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="42d52-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="42d52-128">Content-Type</span></span>  | <span data-ttu-id="42d52-129">string</span><span class="sxs-lookup"><span data-stu-id="42d52-129">string</span></span>  | <span data-ttu-id="42d52-p104">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="42d52-p104">application/json. Required.</span></span> |
 
 
-## <a name="request-body"></a><span data-ttu-id="ce77e-134">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="ce77e-134">Request body</span></span>
-<span data-ttu-id="ce77e-135">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="ce77e-135">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="42d52-132">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="42d52-132">Request body</span></span>
+<span data-ttu-id="42d52-133">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="42d52-133">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="ce77e-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="ce77e-136">Response</span></span>
+## <a name="response"></a><span data-ttu-id="42d52-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="42d52-134">Response</span></span>
 
-<span data-ttu-id="ce77e-137">Se tiver êxito, este método retornará um `200 OK` objeto de coleção [emailAddress](../resources/emailaddress.md) e código de resposta no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="ce77e-137">If successful, this method returns a `200 OK` response code and [emailAddress](../resources/emailaddress.md) collection object in the response body.</span></span>
+<span data-ttu-id="42d52-135">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [emailAddress](../resources/emailaddress.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="42d52-135">If successful, this method returns a `200 OK` response code and [emailAddress](../resources/emailaddress.md) collection object in the response body.</span></span>
 
-<span data-ttu-id="ce77e-138">Se nenhuma lista for definida no locatário, uma matriz vazia será retornada.</span><span class="sxs-lookup"><span data-stu-id="ce77e-138">If no lists are defined in the tenant, then an empty array is returned.</span></span>
+<span data-ttu-id="42d52-136">Se nenhuma lista for definida no locatário, uma matriz vazia será retornada.</span><span class="sxs-lookup"><span data-stu-id="42d52-136">If no lists are defined in the tenant, then an empty array is returned.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ce77e-139">Exemplo</span><span class="sxs-lookup"><span data-stu-id="ce77e-139">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="ce77e-140">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ce77e-140">Request</span></span>
+## <a name="example"></a><span data-ttu-id="42d52-137">Exemplo</span><span class="sxs-lookup"><span data-stu-id="42d52-137">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="42d52-138">Solicitação</span><span class="sxs-lookup"><span data-stu-id="42d52-138">Request</span></span>
 
-<span data-ttu-id="ce77e-141">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="ce77e-141">Here is an example of the request.</span></span>
+<span data-ttu-id="42d52-139">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="42d52-139">Here is an example of the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -68,10 +68,10 @@ GET /users/<id>/findRoomLists
 GET https://graph.microsoft.com/beta/me/findRoomLists
 ```
 
-##### <a name="response"></a><span data-ttu-id="ce77e-142">Resposta</span><span class="sxs-lookup"><span data-stu-id="ce77e-142">Response</span></span>
-<span data-ttu-id="ce77e-143">Este é um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="ce77e-143">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="42d52-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="42d52-140">Response</span></span>
+<span data-ttu-id="42d52-141">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="42d52-141">Here is an example of the response.</span></span> 
 
-<span data-ttu-id="ce77e-p106">Observação: o objeto da resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="ce77e-p106">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="42d52-p105">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="42d52-p105">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "user_get_room_lists",
@@ -101,10 +101,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "user: findRoomLists",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-findroomlists.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
