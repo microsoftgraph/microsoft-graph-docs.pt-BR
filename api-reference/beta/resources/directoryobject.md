@@ -4,12 +4,12 @@ description: Representa um objeto do Active Directory do Azure. O tipo **directo
 localization_priority: Priority
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 87fb1c21e2fa1e9788890d97f6afbd0b494c555e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 5ba2454a5eda90ec50dbd6a0c152383bb42a437d
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521590"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573953"
 ---
 # <a name="directoryobject-resource-type"></a>Tipo de recurso directoryObject
 
@@ -25,12 +25,12 @@ Esse recurso permite:
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[Get directoryObject](../api/directoryobject-get.md) | [directoryObject](directoryobject.md) |Leia as propriedades de um objeto de diretório.|
+|[Get directoryObject](../api/directoryobject-get.md) | [directoryObject](../resources/directoryobject.md) |Leia as propriedades de um objeto de diretório.|
 |[Delete](../api/directoryobject-delete.md) | Nenhum |Exclua um objeto de diretório. |
 |[checkMemberGroups](../api/directoryobject-checkmembergroups.md)|Coleção de cadeias de caracteres|Verifique se há uma associação em uma lista de grupos. A verificação é transitiva.|
 |[getMemberGroups](../api/directoryobject-getmembergroups.md)|Coleção de cadeias de caracteres|Retorne todos os grupos dos quais o objeto de usuário, grupo ou diretório é membro. A verificação é transitiva.|
 |[getMemberObjects](../api/directoryobject-getmemberobjects.md)|Coleção de cadeias de caracteres| Retorne todos os grupos e funções de diretório dos quais o objeto de usuário, grupo ou diretório é membro. A verificação é transitiva. |
-|[getByIds](../api/directoryobject-getbyids.md) | Coleção [directoryObject](directoryobject.md) | Obtenha um conjunto de objetos de diretório com base em um conjunto de ids fornecidas. |
+|[getByIds](../api/directoryobject-getbyids.md) | Coleção [directoryObject](../resources/directoryobject.md) | Obtenha um conjunto de objetos de diretório com base em um conjunto de ids fornecidas. |
 |[validateProperties](../api/directoryobject-validateproperties.md)|JSON| Validar um nome de exibição ou um apelido de email do grupo do Office 365 em conformidade com as políticas de nomenclatura. |
 |[delta](../api/directoryobject-delta.md)|Coleção directoryObject| Obtenha alterações incrementais para objetos de diretório. Oferece suporte à filtragem por tipo derivado. |
 
@@ -61,7 +61,6 @@ Veja a seguir uma representação JSON do recurso
 {
   "id": "string (identifier)"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
