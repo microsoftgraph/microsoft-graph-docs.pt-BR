@@ -1,59 +1,58 @@
 ---
-title: Fazer logon
-description: Recupera as Azure AD entradas do usuário para seu locatário. Entradas que são interativas em natureza (onde uma nome de usuário/senha é passada como parte do token de autorização) e entradas federadas bem-sucedidas atualmente estão incluídas nos logs de entrar.
+title: Obter entrada
+description: Recupera as entradas de usuário do Azure AD usuário para seu locatário. Entradas que são interativas na natureza (onde um nome de usuário/senha é passado como parte de símbolo de autorização) e entradas federadas bem-sucedida atualmente estão incluídas nos logs de entrada.
 localization_priority: Priority
-ms.openlocfilehash: 5d2d0513f44196d48aa863ac19838af13d960f85
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.openlocfilehash: 79bebfda40b15a5524aecfc99e5b6d83a168b28e
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894492"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576609"
 ---
-# <a name="get-signin"></a><span data-ttu-id="d2ea3-104">Fazer logon</span><span class="sxs-lookup"><span data-stu-id="d2ea3-104">Get signIn</span></span>
-<span data-ttu-id="d2ea3-105">Recupera as Azure AD entradas do usuário para seu locatário.</span><span class="sxs-lookup"><span data-stu-id="d2ea3-105">Retrieves the Azure AD user sign-ins for your tenant.</span></span> <span data-ttu-id="d2ea3-106">Entradas que são interativas em natureza (onde uma nome de usuário/senha é passada como parte do token de autorização) e entradas federadas bem-sucedidas atualmente estão incluídas nos logs de entrar.</span><span class="sxs-lookup"><span data-stu-id="d2ea3-106">Sign-ins that are interactive in nature (where a username/password is passed as part of authorization token) and successful federated sign-ins are currently included in the sign-in logs.</span></span>
+# <a name="get-signin"></a><span data-ttu-id="bbe92-104">Obter entrada</span><span class="sxs-lookup"><span data-stu-id="bbe92-104">Get signIn</span></span>
+<span data-ttu-id="bbe92-105">Recupera as entradas de usuário do Azure AD usuário para seu locatário.</span><span class="sxs-lookup"><span data-stu-id="bbe92-105">Retrieves the Azure AD user sign-ins for your tenant.</span></span> <span data-ttu-id="bbe92-106">Entradas que são interativas na natureza (onde um nome de usuário/senha é passado como parte de símbolo de autorização) e entradas federadas bem-sucedida atualmente estão incluídas nos logs de entrada.</span><span class="sxs-lookup"><span data-stu-id="bbe92-106">Sign-ins that are interactive in nature (where a username/password is passed as part of authorization token) and successful federated sign-ins are currently included in the sign-in logs.</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="d2ea3-107">Permissions</span><span class="sxs-lookup"><span data-stu-id="d2ea3-107">Permissions</span></span>
-<span data-ttu-id="d2ea3-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d2ea3-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="bbe92-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="bbe92-107">Permissions</span></span>
+<span data-ttu-id="bbe92-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="bbe92-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="d2ea3-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="d2ea3-110">Permission type</span></span>      | <span data-ttu-id="d2ea3-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="d2ea3-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="bbe92-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="bbe92-110">Permission type</span></span>      | <span data-ttu-id="bbe92-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="bbe92-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="d2ea3-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="d2ea3-112">Delegated (work or school account)</span></span> | <span data-ttu-id="d2ea3-113">AuditLog.Read.All</span><span class="sxs-lookup"><span data-stu-id="d2ea3-113">AuditLog.Read.All</span></span> |
-|<span data-ttu-id="d2ea3-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="d2ea3-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d2ea3-115">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="d2ea3-115">Not supported</span></span>   |
-|<span data-ttu-id="d2ea3-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="d2ea3-116">Application</span></span> | <span data-ttu-id="d2ea3-117">AuditLog.Read.All</span><span class="sxs-lookup"><span data-stu-id="d2ea3-117">AuditLog.Read.All</span></span> | 
+|<span data-ttu-id="bbe92-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="bbe92-112">Delegated (work or school account)</span></span> | <span data-ttu-id="bbe92-113">AuditLog.Read.All</span><span class="sxs-lookup"><span data-stu-id="bbe92-113">AuditLog.Read.All</span></span> |
+|<span data-ttu-id="bbe92-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="bbe92-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="bbe92-115">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="bbe92-115">Not supported</span></span>   |
+|<span data-ttu-id="bbe92-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="bbe92-116">Application</span></span> | <span data-ttu-id="bbe92-117">AuditLog.Read.All</span><span class="sxs-lookup"><span data-stu-id="bbe92-117">AuditLog.Read.All</span></span> | 
 
-<span data-ttu-id="d2ea3-118">Além disso, os aplicativos devem ser [registrado corretamente](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) para o Windows Azure AD.</span><span class="sxs-lookup"><span data-stu-id="d2ea3-118">In addition, apps must be [properly registered](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to Azure AD.</span></span>
+<span data-ttu-id="bbe92-118">Além disso, os aplicativos devem ser [corretamente registrados](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) ao Azure AD.</span><span class="sxs-lookup"><span data-stu-id="bbe92-118">In addition, apps must be [properly registered](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to Azure AD.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="d2ea3-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="d2ea3-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="bbe92-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="bbe92-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /auditLogs/signIns/{id}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="d2ea3-120">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="d2ea3-120">Optional query parameters</span></span>
-<span data-ttu-id="d2ea3-121">Este método dá suporte aos seguintes Parâmetros de consulta OData para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="d2ea3-121">This method supports the following OData Query Parameters to help customize the response.</span></span> <span data-ttu-id="d2ea3-122">Verifique [Os parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para como usar esses parâmetros.</span><span class="sxs-lookup"><span data-stu-id="d2ea3-122">Check [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) for how to use these parameters.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="bbe92-120">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="bbe92-120">Optional query parameters</span></span>
+<span data-ttu-id="bbe92-121">Este método dá suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="bbe92-121">This method supports the following OData Query Parameters to help customize the response.</span></span> <span data-ttu-id="bbe92-122">Verifique [parâmetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) sobre como usar esses parâmetros.</span><span class="sxs-lookup"><span data-stu-id="bbe92-122">Check [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) for how to use these parameters.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="d2ea3-123">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="d2ea3-123">Request headers</span></span>
-| <span data-ttu-id="d2ea3-124">Nome</span><span class="sxs-lookup"><span data-stu-id="d2ea3-124">Name</span></span>      |<span data-ttu-id="d2ea3-125">Descrição</span><span class="sxs-lookup"><span data-stu-id="d2ea3-125">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="bbe92-123">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="bbe92-123">Request headers</span></span>
+| <span data-ttu-id="bbe92-124">Nome</span><span class="sxs-lookup"><span data-stu-id="bbe92-124">Name</span></span>      |<span data-ttu-id="bbe92-125">Descrição</span><span class="sxs-lookup"><span data-stu-id="bbe92-125">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="d2ea3-126">Autorização</span><span class="sxs-lookup"><span data-stu-id="d2ea3-126">Authorization</span></span>  | <span data-ttu-id="d2ea3-127">Portador {código}</span><span class="sxs-lookup"><span data-stu-id="d2ea3-127">Bearer {code}</span></span>|
+| <span data-ttu-id="bbe92-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="bbe92-126">Authorization</span></span>  | <span data-ttu-id="bbe92-127">Portador {código}</span><span class="sxs-lookup"><span data-stu-id="bbe92-127">Bearer {code}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="d2ea3-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="d2ea3-128">Request body</span></span>
-<span data-ttu-id="d2ea3-129">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="d2ea3-129">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="d2ea3-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="d2ea3-130">Response</span></span>
-<span data-ttu-id="d2ea3-131">Se tiver êxito, este método retornará um `200 OK` objeto response de código e [entrar](../resources/signin.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="d2ea3-131">If successful, this method returns a `200 OK` response code and [signIn](../resources/signin.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="d2ea3-132">Exemplo</span><span class="sxs-lookup"><span data-stu-id="d2ea3-132">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="d2ea3-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d2ea3-133">Request</span></span>
-<span data-ttu-id="d2ea3-134">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="d2ea3-134">Here is an example of the request.</span></span>
+## <a name="request-body"></a><span data-ttu-id="bbe92-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="bbe92-128">Request body</span></span>
+<span data-ttu-id="bbe92-129">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="bbe92-129">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="bbe92-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="bbe92-130">Response</span></span>
+<span data-ttu-id="bbe92-131">Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [signIn](../resources/signin.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="bbe92-131">If successful, this method returns a `200 OK` response code and a [windowsPhone81CompliancePolicy](../resources/signin.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="bbe92-132">Exemplo</span><span class="sxs-lookup"><span data-stu-id="bbe92-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="bbe92-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="bbe92-133">Request</span></span>
+<span data-ttu-id="bbe92-134">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="bbe92-134">Here is an example of the request.</span></span>
 <!-- {
-  "blockType": "reque|location/city| eq, startswith|
-st",
+  "blockType": "request",
   "name": "get_signin"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/auditLogs/signIns/{id}
 ```
-##### <a name="response"></a><span data-ttu-id="d2ea3-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="d2ea3-135">Response</span></span>
-<span data-ttu-id="d2ea3-136">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="d2ea3-136">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="bbe92-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="bbe92-135">Response</span></span>
+<span data-ttu-id="bbe92-136">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="bbe92-136">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,
