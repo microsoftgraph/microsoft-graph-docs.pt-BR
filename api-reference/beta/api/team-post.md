@@ -1,33 +1,33 @@
 ---
-title: Crie uma equipe
-description: Crie uma nova equipe.
+title: Criar uma equipe
+description: Criar uma nova equipe.
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 018d6085cec94a7aa2697e027f69b4b6f70cfaad
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 3e901225f5a8f94abb61a6b4052b0db2d47865c3
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27962734"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29519609"
 ---
-# <a name="create-team"></a><span data-ttu-id="734d0-103">Criar equipe</span><span class="sxs-lookup"><span data-stu-id="734d0-103">Create team</span></span>
+# <a name="create-team"></a><span data-ttu-id="3a518-103">Criar equipe</span><span class="sxs-lookup"><span data-stu-id="3a518-103">Create team</span></span>
 
-> <span data-ttu-id="734d0-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="734d0-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="734d0-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="734d0-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="734d0-106">Crie uma nova [equipe](../resources/team.md).</span><span class="sxs-lookup"><span data-stu-id="734d0-106">Create a new [team](../resources/team.md).</span></span>
+<span data-ttu-id="3a518-104">Criar uma nova [equipe](../resources/team.md).</span><span class="sxs-lookup"><span data-stu-id="3a518-104">Create a new [team](../resources/team.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="734d0-107">Permissions</span><span class="sxs-lookup"><span data-stu-id="734d0-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="3a518-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="3a518-105">Permissions</span></span>
 
-<span data-ttu-id="734d0-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="734d0-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="3a518-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3a518-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="734d0-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="734d0-110">Permission type</span></span>                        | <span data-ttu-id="734d0-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="734d0-111">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="3a518-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="3a518-108">Permission type</span></span>                        | <span data-ttu-id="3a518-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="3a518-109">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :------------------------------------------ |
-| <span data-ttu-id="734d0-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="734d0-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="734d0-113">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="734d0-113">Group.ReadWrite.All</span></span>                         |
-| <span data-ttu-id="734d0-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="734d0-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="734d0-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="734d0-115">Not supported.</span></span>                              |
-| <span data-ttu-id="734d0-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="734d0-116">Application</span></span>                            | <span data-ttu-id="734d0-117">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="734d0-117">Group.ReadWrite.All</span></span>                         |
+| <span data-ttu-id="3a518-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="3a518-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="3a518-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3a518-111">Group.ReadWrite.All</span></span>                         |
+| <span data-ttu-id="3a518-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="3a518-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3a518-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="3a518-113">Not supported.</span></span>                              |
+| <span data-ttu-id="3a518-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="3a518-114">Application</span></span>                            | <span data-ttu-id="3a518-115">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3a518-115">Group.ReadWrite.All</span></span>                         |
 
-## <a name="http-request"></a><span data-ttu-id="734d0-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="734d0-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3a518-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="3a518-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -35,28 +35,28 @@ ms.locfileid: "27962734"
 POST /teams
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="734d0-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="734d0-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="3a518-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="3a518-117">Request headers</span></span>
 
-| <span data-ttu-id="734d0-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="734d0-120">Header</span></span>        | <span data-ttu-id="734d0-121">Valor</span><span class="sxs-lookup"><span data-stu-id="734d0-121">Value</span></span>                     |
+| <span data-ttu-id="3a518-118">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="3a518-118">Header</span></span>        | <span data-ttu-id="3a518-119">Valor</span><span class="sxs-lookup"><span data-stu-id="3a518-119">Value</span></span>                     |
 | :------------ | :------------------------ |
-| <span data-ttu-id="734d0-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="734d0-122">Authorization</span></span> | <span data-ttu-id="734d0-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="734d0-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="734d0-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="734d0-125">Content-Type</span></span>  | <span data-ttu-id="734d0-126">application/json</span><span class="sxs-lookup"><span data-stu-id="734d0-126">application/json</span></span>          |
+| <span data-ttu-id="3a518-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="3a518-120">Authorization</span></span> | <span data-ttu-id="3a518-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="3a518-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="3a518-123">Content-Type</span><span class="sxs-lookup"><span data-stu-id="3a518-123">Content-Type</span></span>  | <span data-ttu-id="3a518-124">application/json</span><span class="sxs-lookup"><span data-stu-id="3a518-124">application/json</span></span>          |
 
-## <a name="request-body"></a><span data-ttu-id="734d0-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="734d0-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="3a518-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="3a518-125">Request body</span></span>
 
-<span data-ttu-id="734d0-128">No corpo da solicitação, fornece uma representação JSON de um objeto de [equipe](../resources/team.md) .</span><span class="sxs-lookup"><span data-stu-id="734d0-128">In the request body, supply a JSON representation of a [team](../resources/team.md) object.</span></span>
+<span data-ttu-id="3a518-126">No corpo da solicitação, forneça uma representação JSON de um objeto [team](../resources/team.md).</span><span class="sxs-lookup"><span data-stu-id="3a518-126">In the request body, supply a JSON representation of [plannerBucket](../resources/team.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="734d0-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="734d0-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="3a518-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="3a518-127">Response</span></span>
 
-<span data-ttu-id="734d0-130">Se tiver êxito, essa API retornará um `202 Accepted` resposta contendo um link para o [teamsAsyncOperation](../resources/teamsasyncoperation.md).</span><span class="sxs-lookup"><span data-stu-id="734d0-130">If successful, this API returns a `202 Accepted` response containing a link to the [teamsAsyncOperation](../resources/teamsasyncoperation.md).</span></span>
+<span data-ttu-id="3a518-128">Se bem-sucedida, essa API retornará uma resposta `202 Accepted` contendo um link para a [teamsAsyncOperation](../resources/teamsasyncoperation.md).</span><span class="sxs-lookup"><span data-stu-id="3a518-128">If successful, this API returns a `202 Accepted` response containing a link to the [teamsAsyncOperation](../resources/teamsasyncoperation.md).</span></span>
 
-## <a name="examples"></a><span data-ttu-id="734d0-131">Exemplos</span><span class="sxs-lookup"><span data-stu-id="734d0-131">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="3a518-129">Exemplos</span><span class="sxs-lookup"><span data-stu-id="3a518-129">Examples</span></span>
 
-### <a name="example---delegated-permissions"></a><span data-ttu-id="734d0-132">Exemplo - permissões delegadas</span><span class="sxs-lookup"><span data-stu-id="734d0-132">Example - delegated permissions</span></span>
+### <a name="example---delegated-permissions"></a><span data-ttu-id="3a518-130">Exemplo – permissões delegadas</span><span class="sxs-lookup"><span data-stu-id="3a518-130">Example - delegated permissions</span></span>
 
-<span data-ttu-id="734d0-133">Aqui está um exemplo de uma solicitação mínimo.</span><span class="sxs-lookup"><span data-stu-id="734d0-133">Here is an example of a minimal request.</span></span> <span data-ttu-id="734d0-134">Omitindo outras propriedades, o cliente está demorando implicitamente padrões do modelo pré-definidos representado por `template`.</span><span class="sxs-lookup"><span data-stu-id="734d0-134">By omitting other properties, the client is implicitly taking defaults from the pre-defined template represented by `template`.</span></span>
+<span data-ttu-id="3a518-131">Veja a seguir um exemplo de uma solicitação mínima.</span><span class="sxs-lookup"><span data-stu-id="3a518-131">Here is an example of a minimal request.</span></span> <span data-ttu-id="3a518-132">Ao omitir outras propriedades, o cliente está, implicitamente, obtendo padrões do modelo predefinido representado por `template`.</span><span class="sxs-lookup"><span data-stu-id="3a518-132">By omitting other properties, the client is implicitly taking defaults from the pre-defined template represented by `template`.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="734d0-135">Solicitação</span><span class="sxs-lookup"><span data-stu-id="734d0-135">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="3a518-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="3a518-133">Request</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/teams
@@ -68,7 +68,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="734d0-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="734d0-136">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="3a518-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="3a518-134">Response</span></span>
 
 ```http
 HTTP/1.1 202 Accepted
@@ -79,11 +79,11 @@ Content-Location: /teams/{teamId}
 }
 ```
 
-### <a name="example---create-a-team-with-an-app-installed-multiple-channels-with-pinned-tabs-using-delegated-permissions"></a><span data-ttu-id="734d0-137">Exemplo - criar uma equipe com um aplicativo instalado, vários canais com guias fixados usando delegada permissões</span><span class="sxs-lookup"><span data-stu-id="734d0-137">Example - create a team with an app installed, multiple channels with pinned tabs using delegated permissions</span></span>
+### <a name="example---create-a-team-with-an-app-installed-multiple-channels-with-pinned-tabs-using-delegated-permissions"></a><span data-ttu-id="3a518-135">Exemplo – criar uma equipe com um aplicativo instalado, vários canais com guias fixadas usando permissões delegadas</span><span class="sxs-lookup"><span data-stu-id="3a518-135">Example - create a team with an app installed, multiple channels with pinned tabs using delegated permissions</span></span>
 
-<span data-ttu-id="734d0-138">Aqui está uma solicitação com uma carga completa.</span><span class="sxs-lookup"><span data-stu-id="734d0-138">Here is request with a full payload.</span></span> <span data-ttu-id="734d0-139">O cliente pode substituir os valores no modelo base e adicionar a itens de valor matriz até os limites permitidos por regras de validação para o `specialization`.</span><span class="sxs-lookup"><span data-stu-id="734d0-139">The client can override values in the base template and add to array-valued items to the extent allowed by validation rules for the `specialization`.</span></span>
+<span data-ttu-id="3a518-136">Aqui está a solicitação com um conteúdo completo.</span><span class="sxs-lookup"><span data-stu-id="3a518-136">Here is request with a full payload.</span></span> <span data-ttu-id="3a518-137">O cliente pode substituir os valores no modelo-base e adicionar itens com valor de matriz na máxima extensão permitida por regras de validação para a `specialization`.</span><span class="sxs-lookup"><span data-stu-id="3a518-137">The client can override values in the base template and add to array-valued items to the extent allowed by validation rules for the `specialization`.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="734d0-140">Solicitação</span><span class="sxs-lookup"><span data-stu-id="734d0-140">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="3a518-138">Solicitação</span><span class="sxs-lookup"><span data-stu-id="3a518-138">Request</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/teams
@@ -166,7 +166,7 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="734d0-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="734d0-141">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="3a518-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="3a518-139">Response</span></span>
 
 ```http
 HTTP/1.1 202 Accepted
@@ -177,11 +177,11 @@ Content-Location: /teams/{teamId}
 }
 ```
 
-### <a name="example---application-permissions"></a><span data-ttu-id="734d0-142">Exemplo - permissões de aplicativo</span><span class="sxs-lookup"><span data-stu-id="734d0-142">Example - application permissions</span></span>
+### <a name="example---application-permissions"></a><span data-ttu-id="3a518-140">Exemplo – permissões de aplicativo</span><span class="sxs-lookup"><span data-stu-id="3a518-140">Example - application permissions</span></span>
 
-<span data-ttu-id="734d0-143">Aqui está um exemplo de uma solicitação mínimo usando permissões de aplicativo.</span><span class="sxs-lookup"><span data-stu-id="734d0-143">Here is an example of a minimal request using application permissions.</span></span> <span data-ttu-id="734d0-144">Omitindo outras propriedades, o cliente está demorando implicitamente padrões do modelo pré-definidos representado por `template`.</span><span class="sxs-lookup"><span data-stu-id="734d0-144">By omitting other properties, the client is implicitly taking defaults from the pre-defined template represented by `template`.</span></span> <span data-ttu-id="734d0-145">Quando a emitindo uma solicitação com permissões de aplicativo um [usuário](../resources/user.md) deve ser especificado no `owners` conjunto.</span><span class="sxs-lookup"><span data-stu-id="734d0-145">When issuing a request with application permissions a [user](../resources/user.md) must be specified in the `owners` collection.</span></span>
+<span data-ttu-id="3a518-141">Aqui está um exemplo de uma solicitação mínima com permissões de aplicativo.</span><span class="sxs-lookup"><span data-stu-id="3a518-141">Here is an example of a minimal request using application permissions.</span></span> <span data-ttu-id="3a518-142">Ao omitir outras propriedades, o cliente está, implicitamente, obtendo padrões do modelo predefinido representado por `template`.</span><span class="sxs-lookup"><span data-stu-id="3a518-142">By omitting other properties, the client is implicitly taking defaults from the pre-defined template represented by `template`.</span></span> <span data-ttu-id="3a518-143">Ao emitir uma solicitação com permissões de aplicativo, um [usuário](../resources/user.md) deve ser especificado na coleção `owners`.</span><span class="sxs-lookup"><span data-stu-id="3a518-143">When issuing a request with application permissions a [user](../resources/user.md) must be specified in the `owners` collection.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="734d0-146">Solicitação</span><span class="sxs-lookup"><span data-stu-id="734d0-146">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="3a518-144">Solicitação</span><span class="sxs-lookup"><span data-stu-id="3a518-144">Request</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/teams
@@ -196,7 +196,7 @@ Content-Type: application/json
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="734d0-147">Resposta</span><span class="sxs-lookup"><span data-stu-id="734d0-147">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="3a518-145">Resposta</span><span class="sxs-lookup"><span data-stu-id="3a518-145">Response</span></span>
 
 ```http
 HTTP/1.1 202 Accepted
@@ -207,6 +207,14 @@ Content-Location: /teams/{teamId}
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="734d0-148">Confira também</span><span class="sxs-lookup"><span data-stu-id="734d0-148">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="3a518-146">Confira também</span><span class="sxs-lookup"><span data-stu-id="3a518-146">See also</span></span>
 
-- [<span data-ttu-id="734d0-149">Criando um grupo com uma equipe</span><span class="sxs-lookup"><span data-stu-id="734d0-149">Creating a group with a team</span></span>](/graph/teams-create-group-and-team)
+- [<span data-ttu-id="3a518-147">Como criar um grupo com uma equipe</span><span class="sxs-lookup"><span data-stu-id="3a518-147">Creating a group with a team</span></span>](/graph/teams-create-group-and-team)
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/team-post.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
