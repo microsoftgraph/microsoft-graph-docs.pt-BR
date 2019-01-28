@@ -1,21 +1,21 @@
 ---
-title: Criar thread de bate-papo
-description: Crie um novo segmento de bate-papo no canal especificado, fornecendo as mensagens de raiz.
+title: Criar thread de chat
+description: Crie um novo thread de chat no canal especificado ao fornecer as mensagens raiz.
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: d748826b98336feffcded345f356663f8fb80f4f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: ef8d341310296c810c433a23f0d29be166ca47c5
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27946354"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29511244"
 ---
-# <a name="create-chat-thread"></a>Criar thread de bate-papo
+# <a name="create-chat-thread"></a>Criar thread de chat
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um novo segmento de bate-papo no [canal](../resources/channel.md) especificado, fornecendo as mensagens de raiz.
+Crie um novo thread de chat no [canal especificado](../resources/channel.md) ao fornecer as mensagens raiz.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
-> Atualmente, somente [permissões delegadas](/graph/permissions-reference) têm suporte para esta operação.  Permissões de aplicativo dará suporte a versões futuras. 
+> Atualmente, há suporte apenas para [permissões delegadas](/graph/permissions-reference) para essa operação.  Versões futuras terão suporte para permissões de aplicativo. 
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -43,11 +43,11 @@ No corpo da solicitação, fornece uma representação JSON de um objeto [chatTh
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` código de resposta com o corpo de uma resposta vazia.
+Se bem-sucedido, esse método retornará um código de resposta `201 Created` com um corpo de resposta vazio.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
+Eis um exemplo da solicitação.
 <!-- {
   "blockType": "request",
   "name": "create_chatthread_from_channel"
@@ -66,7 +66,7 @@ Content-type: application/json
 }
 ```
 
-> Atualmente, o contentType deve ser especificado como um inteiro, em vez de uma cadeia de caracteres: 0 para "text" ou 1 para "html".  Versões futuras do API corrigirá.
+> Atualmente, o contentType deve ser especificado como um inteiro em vez de uma cadeia de caracteres: 0 para “texto” ou 1 para “html”.  As versões futuras da API corrigirão isso.
 
 ##### <a name="response"></a>Resposta
 
@@ -88,10 +88,15 @@ Content-length: 160
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create thread",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/channel-post-chatthreads.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

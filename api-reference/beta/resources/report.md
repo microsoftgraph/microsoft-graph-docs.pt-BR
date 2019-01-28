@@ -3,26 +3,26 @@ title: Trabalhar com relatórios de uso do Office 365 no Microsoft Graph
 description: Com o Microsoft Graph, você pode acessar recursos de relatórios de uso do Office 365 para obter informações sobre como as pessoas em sua empresa estão usando os serviços do Office 365. Por exemplo, você pode identificar quem está usando muito um serviço e atingindo cotas, ou quem pode não precisar de uma licença do Office 365.
 localization_priority: Priority
 ms.prod: reports
-ms.openlocfilehash: ff0ac12d2a216face3381574effb080624af97e6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 3f389aa241d463bc906408e965a01482824a7084
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27978022"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509151"
 ---
 # <a name="working-with-office-365-usage-reports-in-microsoft-graph"></a>Trabalhar com relatórios de uso do Office 365 no Microsoft Graph
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Com o Microsoft Graph, você pode acessar recursos de relatórios de uso do Office 365 para obter informações sobre como as pessoas em sua empresa estão usando os serviços do Office 365. Por exemplo, você pode identificar quem está usando muito um serviço e atingindo cotas, ou quem pode não precisar de uma licença do Office 365.
 
 ## <a name="authorization"></a>Autorização
 
-O Microsoft Graph controla o acesso a recursos por meio de permissões. Você deve especificar as permissões necessárias para acessar os recursos dos Relatórios. Normalmente, você deve especificar permissões no portal do Azure Active Directory (Azure AD). Para saber mais, confira [Referência de permissões do Microsoft Graph](/graph/permissions-reference) e[Permissões de relatórios](/graph/permissions-reference#reports-permissions).
+O Microsoft Graph controla o acesso a recursos por meio de permissões. Você deve especificar as permissões necessárias para acessar os recursos dos Relatórios. Normalmente, você deve especificar permissões no portal do Azure Active Directory (Azure AD). Para saber mais, confira [Referência de permissões do Microsoft Graph](/graph/permissions-reference) e [Permissões de relatórios](/graph/permissions-reference#reports-permissions).
 
-## <a name="changes-to-the-reports-apis"></a>Alterações para as APIs de relatórios
+## <a name="changes-to-the-reports-apis"></a>Alterações em APIs de relatórios
 
-As APIs de relatórios original ter sido atualizadas, portanto, você pode chamar a API para o modo de exibição específico desejado em vez de passar um parâmetro de modo de exibição. Recomendamos que você começar a usar as novas APIs em seus aplicativos assim que possível. A tabela a seguir lista as APIs que foram removidas e as novas APIs que substituídas-los.
+As APIs originais de relatórios foram atualizadas para que você possa chamar a API para o modo de exibição específico desejado em vez de passar um parâmetro de modo de exibição. É recomendável que você comece a usar as novas APIs nos aplicativos assim que possível. A tabela a seguir lista as novas APIs que foram removidas e as novas APIs que as substituíram.
 
 | API original            | Nova API                                  |
 | :---------------------- | :--------------------------------------- |
@@ -53,3 +53,11 @@ APIs e recursos de relatório podem criar novas maneiras para você relacionar-s
 - Experimente a API no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).
 
 Precisa de mais ideias? Veja [como alguns de nossos parceiros usam o Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/report.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

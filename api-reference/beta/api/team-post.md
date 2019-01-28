@@ -1,23 +1,23 @@
 ---
-title: Crie uma equipe
-description: Crie uma nova equipe.
+title: Criar uma equipe
+description: Criar uma nova equipe.
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 018d6085cec94a7aa2697e027f69b4b6f70cfaad
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 3e901225f5a8f94abb61a6b4052b0db2d47865c3
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27962734"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29519609"
 ---
 # <a name="create-team"></a>Criar equipe
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie uma nova [equipe](../resources/team.md).
+Criar uma nova [equipe](../resources/team.md).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -44,17 +44,17 @@ POST /teams
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON de um objeto de [equipe](../resources/team.md) .
+No corpo da solicitação, forneça uma representação JSON de um objeto [team](../resources/team.md).
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, essa API retornará um `202 Accepted` resposta contendo um link para o [teamsAsyncOperation](../resources/teamsasyncoperation.md).
+Se bem-sucedida, essa API retornará uma resposta `202 Accepted` contendo um link para a [teamsAsyncOperation](../resources/teamsasyncoperation.md).
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example---delegated-permissions"></a>Exemplo - permissões delegadas
+### <a name="example---delegated-permissions"></a>Exemplo – permissões delegadas
 
-Aqui está um exemplo de uma solicitação mínimo. Omitindo outras propriedades, o cliente está demorando implicitamente padrões do modelo pré-definidos representado por `template`.
+Veja a seguir um exemplo de uma solicitação mínima. Ao omitir outras propriedades, o cliente está, implicitamente, obtendo padrões do modelo predefinido representado por `template`.
 
 #### <a name="request"></a>Solicitação
 
@@ -79,9 +79,9 @@ Content-Location: /teams/{teamId}
 }
 ```
 
-### <a name="example---create-a-team-with-an-app-installed-multiple-channels-with-pinned-tabs-using-delegated-permissions"></a>Exemplo - criar uma equipe com um aplicativo instalado, vários canais com guias fixados usando delegada permissões
+### <a name="example---create-a-team-with-an-app-installed-multiple-channels-with-pinned-tabs-using-delegated-permissions"></a>Exemplo – criar uma equipe com um aplicativo instalado, vários canais com guias fixadas usando permissões delegadas
 
-Aqui está uma solicitação com uma carga completa. O cliente pode substituir os valores no modelo base e adicionar a itens de valor matriz até os limites permitidos por regras de validação para o `specialization`.
+Aqui está a solicitação com um conteúdo completo. O cliente pode substituir os valores no modelo-base e adicionar itens com valor de matriz na máxima extensão permitida por regras de validação para a `specialization`.
 
 #### <a name="request"></a>Solicitação
 
@@ -177,9 +177,9 @@ Content-Location: /teams/{teamId}
 }
 ```
 
-### <a name="example---application-permissions"></a>Exemplo - permissões de aplicativo
+### <a name="example---application-permissions"></a>Exemplo – permissões de aplicativo
 
-Aqui está um exemplo de uma solicitação mínimo usando permissões de aplicativo. Omitindo outras propriedades, o cliente está demorando implicitamente padrões do modelo pré-definidos representado por `template`. Quando a emitindo uma solicitação com permissões de aplicativo um [usuário](../resources/user.md) deve ser especificado no `owners` conjunto.
+Aqui está um exemplo de uma solicitação mínima com permissões de aplicativo. Ao omitir outras propriedades, o cliente está, implicitamente, obtendo padrões do modelo predefinido representado por `template`. Ao emitir uma solicitação com permissões de aplicativo, um [usuário](../resources/user.md) deve ser especificado na coleção `owners`.
 
 #### <a name="request"></a>Solicitação
 
@@ -209,4 +209,12 @@ Content-Location: /teams/{teamId}
 
 ## <a name="see-also"></a>Confira também
 
-- [Criando um grupo com uma equipe](/graph/teams-create-group-and-team)
+- [Como criar um grupo com uma equipe](/graph/teams-create-group-and-team)
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/team-post.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

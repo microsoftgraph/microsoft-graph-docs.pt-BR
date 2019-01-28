@@ -1,49 +1,49 @@
 ---
-title: tipo de recurso de chatMessage
-description: Representa uma mensagem de bate-papo individuais dentro de uma entidade de bate-papo ou de canal. A mensagem pode ser uma mensagem de raiz ou a parte de um segmento que é definido pela propriedade **replyToId** na mensagem.
+title: Tipo de recurso chatMessage
+description: Representa uma mensagem de chat individual dentro de uma entidade de canal ou chat. A mensagem pode ser uma mensagem raiz ou parte de um thread que seja definido pela propriedade **replyToId** na mensagem.
 localization_priority: Priority
-ms.openlocfilehash: ad381102f7e93a4dcccd7b68435d0687ed6b4837
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.openlocfilehash: 98b9918d5763d6003a3c9a177057abe2e7b415ec
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855988"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29517964"
 ---
-# <a name="chatmessage-resource-type"></a>tipo de recurso de chatMessage
+# <a name="chatmessage-resource-type"></a>Tipo de recurso chatMessage
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma mensagem de bate-papo individuais dentro de uma entidade de bate-papo ou de [canal](channel.md) . A mensagem pode ser uma mensagem de raiz ou a parte de um segmento que é definido pela propriedade **replyToId** na mensagem.
+Representa uma mensagem de chat individual dentro de uma entidade de [canal](channel.md) ou chat. A mensagem pode ser uma mensagem raiz ou parte de um thread que seja definido pela propriedade **replyToId** na mensagem.
 
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[Mensagens de canal de lista](../api/channel-list-messages.md) | coleção [chatmessage](chatmessage.md) | Obter a lista de todas as mensagens de raiz em um canal.|
-|[Mensagem de canal Get](../api/channel-get-message.md) | [chatmessage](chatmessage.md) | Obtenha uma mensagem de raiz única de um canal.|
-|[Lista de respostas a uma mensagem](../api/channel-list-messagereplies.md) | coleção [chatmessage](chatmessage.md)| Obter a lista de todas as respostas a uma mensagem no canal.|
-|[Obtenha uma resposta a uma mensagem](../api/channel-get-messagereply.md) | [chatmessage](chatmessage.md)| Obtenha uma única resposta a uma mensagem em um canal.|
+|[List Channel messages](../api/channel-list-messages.md) | [chatmessage](chatmessage.md) collection | Obtenha uma lista de todas as mensagens raiz em um canal.|
+|[Get Channel message](../api/channel-get-message.md) | [chatmessage](chatmessage.md) | Obtenha uma mensagem raiz única de um canal.|
+|[List replies to a message](../api/channel-list-messagereplies.md) | [chatmessage](chatmessage.md) collection| Obtenha a lista de todas as respostas a uma mensagem no canal.|
+|[Get a reply to a message](../api/channel-get-messagereply.md) | [chatmessage](chatmessage.md)| Obtenha uma resposta a uma mensagem única em um canal.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|Cadeia de caracteres| Somente leitura. Identificação exclusiva da mensagem.|
-|replyToId| string | ID da mensagem pai mensagem/raiz do thread |
+|id|String| Somente leitura. ID única da mensagem.|
+|replyToId| string | ID da mensagem pai/raiz do thread |
 |from|[identitySet](identityset.md)| Detalhes do remetente da mensagem|
-|etag| string | Número de versão da mensagem |
-|messageType|Cadeia de caracteres|Os valores de tipo de mensagem, atual com suporte são: mensagem, chatEvent, digitando|
-|createdDateTime|dateTimeOffset|Somente leitura. Carimbo de hora de quando a mensagem foi criada|
-|lastModifiedDateTime|dateTimeOffset|Somente leitura. Carimbo de hora de quando a mensagem foi editado/atualizado|
-|isDeleted|booliano|Representa se uma mensagem tiver sido excluída soft|
-|deletedDateTime|dateTimeOffset|Somente leitura. Carimbo de hora em que a mensagem foi excluída. |
+|etag| string | O número de versão da mensagem |
+|messageType|String|Os valores de tipo de mensagem com suporte atualmente são: message, chatEvent, Typing|
+|createdDateTime|dateTimeOffset|Somente leitura. Carimbo de data/hora de quando a mensagem foi criada|
+|lastModifiedDateTime|dateTimeOffset|Somente leitura. Carimbo de data/hora de quando a mensagem foi editada/atualizada|
+|isDeleted|boolean|Representa se uma mensagem foi excluída temporariamente|
+|deletedDateTime|dateTimeOffset|Somente leitura. Carimbo de data/hora no qual a mensagem foi excluída |
 |subject|string|Linha de assunto da mensagem. Opcional|
-|body|[itemBody](itembody.md)|Representação em texto sem formatação/HTML do conteúdo da mensagem. Retorna o texto sem formatação por padrão, o aplicativo pode escolher HTML como parte de um parâmetro de consulta|
-|Resumo|string|Texto da mensagem que poderia ser usada para notificações por push e modos de exibição de resumo ou regressivo queda de modos de exibição de resumo|
-|menções|coleção [chatMessageMention](chatmention.md)| Lista de entidades mencionado na mensagem. Suporta atualmente o usuário, bot, equipe, de canal|
-|importance| string | A importância da mensagem: Normal, alta|
-|reações| coleção [chatMessageReaction](chatreaction.md) | Reações para esta mensagem (por exemplo,-Like)|
-|localidade|string|Localidade da mensagem definida pelo cliente|
-|attachments|coleção [chatMessageAttachment](chatattachment.md) |Arquivos anexados|
+|body|[itemBody](itembody.md)|Representação de texto sem formatação/HTML do conteúdo da mensagem. Retorna o texto sem formatação por padrão, o aplicativo pode escolher HTML como parte de um parâmetro de consulta|
+|summary|string|Texto de resumo da mensagem que poderia ser usado para notificações por push e modos de exibição de resumo ou de fallback|
+|mentions|[chatMessageMention](chatmention.md) collection| Lista de entidades mencionada na mensagem. Atualmente, dá suporte a usuário, bot, equipe, canal|
+|importance| string | A importância da mensagem: Normal, Alta|
+|reactions| [chatMessageReaction](chatreaction.md) collection | Reações para essa mensagem (por exemplo, Curtir)|
+|locale|string|Localidade da mensagem definida pelo cliente|
+|attachments|[chatMessageAttachment](chatattachment.md) collection |Arquivos anexos|
 
 
 ## <a name="json-representation"></a>Representação JSON
@@ -91,10 +91,15 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "chat message resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/chatmessage.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

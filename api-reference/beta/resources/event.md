@@ -4,30 +4,30 @@ description: Um evento em um calendário.
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 3a42bd4c87b6c4d8cb26160ae3c36bc7d6380b79
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 3db8b53cd6ebb6b04cc0ad4f20db5c20a60f9e79
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27981144"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29516046"
 ---
 # <a name="event-resource-type"></a>tipo de recurso de evento
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Um evento em um calendário do [usuário](user.md) ou o calendário padrão de um [grupo](group.md)do Office 365.
+Um evento em um calendário de [usuário](user.md) ou o calendário padrão de um [grupo](group.md) do Office 365.
 
 Esse recurso permite:
 
-- Adicionar seus próprios dados às propriedades personalizadas como [extensões](/graph/extensibility-overview).
-- Assinatura de [notificações de alteração](/graph/webhooks).
+- Adicionar seus próprios dados às propriedades personalizadas como [extensions](/graph/extensibility-overview).
+- Assinar as [notificações de alteração](/graph/webhooks).
 - Usar a [consulta delta](/graph/delta-query-overview) para controlar adições, exclusões e atualizações incrementais oferecendo uma função [delta](../api/event-delta.md).
 
-> **Observação:** Existem algumas pequenas diferenças da maneira que você pode interagir com calendários do usuário, grupo calendários e seus eventos:
+> **Observação:** existem algumas pequenas diferenças na maneira como você pode interagir com calendários de usuários, calendários de grupos e seus eventos:
 
- - Você pode organizar somente os calendários de usuário em um [calendarGroup](calendargroup.md).
- - Outlook automaticamente aceita todas as solicitações de reunião em nome de grupos. Você pode [Aceitar](../api/event-accept.md), [Aceitar provisoriamente](../api/event-tentativelyaccept.md)ou [Recusar](../api/event-decline.md) solicitações de reunião para apenas calendários de _usuário_ .
-  - O Outlook não oferece suporte a lembretes para eventos de grupo. É possível [Adiar](../api/event-snoozereminder.md) ou [Descartar](../api/event-dismissreminder.md) um [lembrete](reminder.md) para apenas calendários de _usuário_ .
+ - Você pode organizar apenas os calendários de usuários em [calendarGroup](calendargroup.md).
+ - O Outlook aceita automaticamente todas as solicitações de reunião em nome de grupos. Você pode [aceitar](../api/event-accept.md), [aceitar provisoriamente](../api/event-tentativelyaccept.md) ou [recusar](../api/event-decline.md) solicitações de reuniões apenas para calendários do _usuário_.
+  - O Outlook não oferece suporte a lembretes de eventos do grupo. Você pode [adiar](../api/event-snoozereminder.md) ou [descartar](../api/event-dismissreminder.md) um [lembrete](reminder.md) apenas para calendários de _usuário_.
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -95,10 +95,10 @@ Veja a seguir uma representação JSON do recurso
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|attendees|Coleção [ATTENDEE](attendee.md)|A coleção de participantes do evento.|
+|attendees|[Attendee](attendee.md) collection|A coleção de participantes do evento.|
 |corpo|[ItemBody](itembody.md)|O corpo da mensagem associada ao evento. Pode estar no formato HTML ou no formato de texto.|
 |bodyPreview|String|A visualização da mensagem associada ao evento. Está no formato de texto.|
-|categories|Coleção de cadeias de caracteres|As categorias associadas ao evento. Cada categoria corresponde à propriedade **displayName** de um [outlookCategory](outlookcategory.md) definidas para o usuário.|
+|categories|Coleção de cadeias de caracteres|As categorias associadas ao evento. Cada categoria corresponde à propriedade **displayName** de uma [outlookCategory](outlookcategory.md) definida para o usuário.|
 |changeKey|String|Identifica a versão do objeto event. Toda vez que o evento muda, ChangeKey também muda. Isso permite que o Exchange aplique alterações à versão correta do objeto.|
 |createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |end|[DateTimeTimeZone](datetimetimezone.md)|A data e a hora em que o evento termina.|
@@ -111,8 +111,8 @@ Veja a seguir uma representação JSON do recurso
 |isReminderOn|Booliano|Defina como true se um alerta estiver definido para lembrar o usuário sobre o evento.|
 |lastModifiedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |location|[Location](location.md)|O local do evento.|
-|locations|Coleção de [local](location.md)|Locais onde o evento é realizado ou onde participar. As propriedades **location** e **locations** sempre correspondem entre si. Se você atualizar a propriedade **location**, os locais anteriores na coleção **locations** deverão ser removidos e substituídos pelo novo valor **location**. |
-|onlineMeetingUrl|String|Uma URL para uma reunião online. A propriedade é definida somente quando um organizador Especifica um evento como uma reunião online, como Skype. Somente leitura.|
+|locations|[location](location.md) collection|Locais onde o evento é realizado ou onde participar. As propriedades **location** e **locations** sempre correspondem entre si. Se você atualizar a propriedade **location**, os locais anteriores na coleção **locations** deverão ser removidos e substituídos pelo novo valor **location**. |
+|onlineMeetingUrl|String|Uma URL para uma reunião online. A propriedade só é definida quando um organizador especifica um evento como uma reunião online como o Skype. Somente leitura.|
 |organizer|[Recipient](recipient.md)|O organizador do evento.|
 |originalEndTimeZone|String|O fuso horário de término que foi definido quando o evento foi criado. Um valor de `tzone://Microsoft/Custom` indica que um fuso horário personalizado herdado foi definido no Outlook para área de trabalho.|
 |originalStart|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
@@ -122,21 +122,21 @@ Veja a seguir uma representação JSON do recurso
 |responseRequested|Booliano|Defina como true se o remetente quiser receber uma resposta quando o evento for aceito ou recusado.|
 |responseStatus|[ResponseStatus](responsestatus.md)|Indica o tipo de resposta enviada em resposta a uma mensagem de evento.|
 |sensitivity|String| Os valores possíveis são: `normal`, `personal`, `private`, `confidential`.|
-|seriesMasterId|String|A ID para a série item mestre recorrente, se esse evento for parte de uma série recorrente.|
+|seriesMasterId|String|A ID do item mestre da série recorrente se este evento for parte de uma série recorrente.|
 |showAs|String|O status a ser exibido. Os possíveis valores são: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
 |iniciar|[DateTimeTimeZone](datetimetimezone.md)|A hora de início do evento.|
 |subject|String|O texto da linha de assunto do evento.|
 |type|String|O tipo de evento. Os valores possíveis são: `singleInstance`, `occurrence`, `exception`, `seriesMaster`. Somente leitura|
-|UID|String|Um identificador exclusivo que é compartilhado por todas as instâncias de um evento em calendários diferentes. **Observação:** dessa propriedade tem a mesma finalidade como o `iCalUid` propriedade no [recurso de evento](/graph/api/resources/event?view=graph-rest-1.0) no ponto de extremidade v 1.0, mas não é garantido que têm o mesmo valor.|
+|uid|String|Um identificador exclusivo que é compartilhado por todas as instâncias de um evento em calendários diferentes. **Observação:** essa propriedade exibe o mesmo objetivo da propriedade `iCalUid` no [recurso event](/graph/api/resources/event?view=graph-rest-1.0) no ponto de extremidade v1.0, mas não é garantido que tenha o mesmo valor.|
 |webLink|String|A URL para abrir o evento no Outlook Web App.<br/><br/>O evento será aberto no navegador se você estiver conectado à sua caixa de correio por meio do Outlook Web App. Você será solicitado a fazer logon se ainda não estiver conectado no navegador.<br/><br/>Essa URL pode ser acessada de um iFrame.|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|attachments|Coleção [Attachment](attachment.md)|A coleção de anexos [FileAttachment](fileattachment.md), [ItemAttachment](itemattachment.md)e [referenceAttachment](referenceattachment.md) para o evento. Propriedade de navegação. Somente leitura. Anulável.|
+|attachments|[Attachment](attachment.md) collection|A coleção de anexos [FileAttachment](fileattachment.md), [ItemAttachment](itemattachment.md) e [referenceAttachment](referenceattachment.md) do evento. Propriedade de navegação. Somente leitura. Anulável.|
 |calendar|[Calendar](calendar.md)|O calendário que contém o evento. Propriedade de navegação. Somente leitura.|
-|extensions|Coleção [Extension](extension.md)|A coleção de extensões open definidos para o evento. Anulável.|
-|instances|Coleção [Event](event.md)|As instâncias do evento. Propriedade de navegação. Somente leitura. Anulável.|
+|extensions|Coleção [Extension](extension.md)|A coleção de extensões abertas definidas para o evento. Anulável.|
+|instances|[Event](event.md) collection|As instâncias do evento. Propriedade de navegação. Somente leitura. Anulável.|
 |multiValueExtendedProperties|Coleção [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de vários valores definidas para o evento. Somente leitura. Anulável.|
 |singleValueExtendedProperties|Coleção [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de valor único definidas para o evento. Somente leitura. Anulável.|
 
@@ -144,22 +144,22 @@ Veja a seguir uma representação JSON do recurso
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Listar eventos](../api/user-list-events.md)|Coleção [Event](event.md) |Recuperar uma lista de objetos [event](../resources/event.md) na caixa de correio do usuário. A lista contém reuniões de instância única e reuniões mestres em série.|
+|[Listar eventos](../api/user-list-events.md)|[Event](event.md) collection |Recuperar uma lista de objetos [event](../resources/event.md) na caixa de correio do usuário. A lista contém reuniões de instância única e reuniões mestres em série.|
 |[Criar evento](../api/user-post-events.md) |[event](event.md)| Criar um novo evento postando na coleção de instâncias.|
 |[Obter evento](../api/event-get.md) | [event](event.md) |Ler as propriedades e as relações do objeto event.|
 |[Atualizar](../api/event-update.md) | [event](event.md)   |Atualizar o objeto event. |
 |[Excluir](../api/event-delete.md) | Nenhum |Excluir o objeto event. |
-|[cancel](../api/event-cancel.md) | Nenhum | Enviar mensagem de cancelamento do organizador para todos os participantes e Cancelar reunião especificada. |
+|[cancel](../api/event-cancel.md) | Nenhum | Enviar a mensagem de cancelamento do organizador para todos os participantes e cancelar a reunião específica. |
 |[accept](../api/event-accept.md)|Nenhum|Aceite o evento específico em um calendário do usuário.|
-|[tentativelyAccept](../api/event-tentativelyaccept.md)|Nenhum|Aceite provisoriamente o evento específico em um calendário do usuário.|
-|[decline](../api/event-decline.md)|Nenhum|Recusar o convite para o evento específico em um calendário do usuário.|
-|[forward](../api/event-forward.md)|Nenhum|Permite que o organizador ou o participante de um evento de reunião encaminhar a solicitação de reunião para um novo destinatário.|
+|[tentativelyAccept](../api/event-tentativelyaccept.md)|Nenhum|Aceitar provisoriamente o evento específico em um calendário de usuário.|
+|[decline](../api/event-decline.md)|Nenhum|Recusar o convite para o evento específico em um calendário de usuário.|
+|[forward](../api/event-forward.md)|Nenhum|Permite que o organizador ou os participantes de um evento de reunião encaminhe a solicitação de reunião para um novo destinatário.|
 |[delta](../api/event-delta.md)|Coleção [event](event.md)|Obtenha um conjunto de eventos que foram adicionados, excluídos ou atualizados em um **calendarView** (um intervalo de eventos) do calendário principal do usuário.|
-|[dismissReminder](../api/event-dismissreminder.md)|Nenhum|Descarte o lembrete para o evento específico em um calendário do usuário.|
-|[snoozeReminder](../api/event-snoozereminder.md)|Nenhum|Adie um lembrete sobre o evento específico em um calendário do usuário até um novo horário.|
-|[Listar instâncias](../api/event-list-instances.md) |Coleção [Event](event.md)| Obter uma coleção de objetos Event.|
+|[dismissReminder](../api/event-dismissreminder.md)|Nenhum|Descarte o lembrete do evento específico em um calendário de usuário.|
+|[snoozeReminder](../api/event-snoozereminder.md)|Nenhum|Adie um lembrete de evento específico em um calendário do usuário até um novo horário.|
+|[List instances](../api/event-list-instances.md) |[Event](event.md) collection| Obtenha uma coleção do objeto Event.|
 |**Anexos**| | |
-|[List attachments](../api/event-list-attachments.md) |Coleção [Attachment](attachment.md)| Obtenha todos os anexos em um evento.|
+|[Listar anexos](../api/event-list-attachments.md) |[Attachment](attachment.md) collection| Obtenha todos os anexos em um evento.|
 |[Add attachment](../api/event-post-attachments.md) |[Attachment](attachment.md)| Adicione um novo anexo a um evento postando na coleção attachments.|
 |**Extensões abertas**| | |
 |[Criar extensão aberta](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Crie uma extensão aberta e adicione propriedades personalizadas a uma instância nova ou existente de um recurso.|
@@ -170,7 +170,7 @@ Veja a seguir uma representação JSON do recurso
 |[Criar uma propriedade estendida de valor único](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[event](event.md)  |Criar uma ou mais propriedades estendidas de valor único em um evento novo ou existente.   |
 |[Obter evento com propriedade estendida de valor único](../api/singlevaluelegacyextendedproperty-get.md)  | [event](event.md) | Obter eventos que contenham uma propriedade estendida de valor único usando `$expand` ou `$filter`. |
 |[Criar propriedade estendida de vários valores](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [event](event.md) | Criar uma ou mais propriedades estendidas de vários valores em um evento novo ou existente.  |
-|[Obter evento com propriedade estendida de vários valores](../api/multivaluelegacyextendedproperty-get.md)  | [event](event.md) | Obter um evento que contenha uma propriedade estendida de vários valores usando `$expand`. |
+|[Obter evento com propriedade estendida de vários valores](../api/multivaluelegacyextendedproperty-get.md)  | [event](event.md) | Obtenha um evento que contenha uma propriedade estendida de vários valores usando `$expand`. |
 
 ## <a name="see-also"></a>Confira também
 
@@ -182,10 +182,15 @@ Veja a seguir uma representação JSON do recurso
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "event resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/event.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

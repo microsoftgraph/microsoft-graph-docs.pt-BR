@@ -1,21 +1,21 @@
 ---
 title: Obter foto
-description: Obtenha o profilePhoto especificado ou seus metadados (**profilePhoto** propriedades).
+description: Obtenha a profilePhoto específica ou seus metadados (propriedades **profilePhoto**).
 localization_priority: Priority
-ms.openlocfilehash: be20e243a89d258c8db2105efe0c53cbea0abebf
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.openlocfilehash: 759c0ff3ac2585f43ea38963e10b001250702c56
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851734"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509627"
 ---
 # <a name="get-photo"></a>Obter foto
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha o especificado [profilePhoto](../resources/profilephoto.md) ou seus metadados (**profilePhoto** propriedades).
+Obtenha a [profilePhoto](../resources/profilephoto.md) específica ou seus metadados (propriedades **profilePhoto**).
 
-Um GET foto operação primeiro tentar recuperar a foto especificada do Office 365. Se a foto não está disponível no Office 365, a API tenta recuperar a foto do Azure Active Directory.
+Uma primeira tentativa da operação OBTER foto em recuperar a foto específica do Office 365. Se a foto não estiver disponível no Office 365, a API tenta recuperar a foto do Azure Active Directory.
 
 Os tamanhos de fotos em HD compatíveis com o Office 365 são os seguintes: “48x48”, “64x64”, “96x96”, “120x120”, “240x240”, “360x360”, “432x432”, “504x504” e “648x648”. As fotos podem ser de todos os tamanhos, desde que estejam armazenadas no Azure Active Directory.
 
@@ -25,9 +25,9 @@ Por exemplo, quando o usuário carrega uma foto de 504x504 pixels, todos os tama
 Caso o tamanho especificado não esteja disponível na caixa de correio do usuário ou no Azure Active Directory, o tamanho “1x1” será retornado com o restante dos metadados.
 
 ## <a name="permissions"></a>Permissões
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Uma das permissões a seguir é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-> **Observação:** A operação de foto GET em beta oferece suporte a trabalho, escola ou contas pessoais do usuário. Operação GET foto metadados, entretanto, suporta apenas o usuário comercial ou contas de escola e contas não pessoais.
+> **Observação:** a operação OBTER foto em beta tem suporte para contas corporativas, de estudante ou pessoais do usuário. A operação de metadados OBTER foto, no entanto, tem suporte apenas para contas corporativas ou de estudante do usuário, ficando de fora as contas pessoais.
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -37,7 +37,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP 
 
-### <a name="get-the-photo"></a>Obtenha a foto
+### <a name="get-the-photo"></a>Obter a foto
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/photo/$value
@@ -48,7 +48,7 @@ GET /users/{id | userPrincipalName}/contacts/{id}/photo/$value
 GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 ```
-### <a name="get-the-metadata-of-the-photo"></a>Obtenha os metadados da foto
+### <a name="get-the-metadata-of-the-photo"></a>Obter os metadados da foto
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/photo
@@ -60,7 +60,7 @@ GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo
 GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo
 ```
 
-### <a name="get-the-metadata-for-a-specific-photo-size"></a>Obter os metadados para um tamanho específico de foto
+### <a name="get-the-metadata-for-a-specific-photo-size"></a>Obter os metadados de um tamanho de página específica.
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/photos/{size}
@@ -194,10 +194,15 @@ Se quiser exibir a imagem em uma página da Web, crie um objeto de memória usan
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get photo",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/profilephoto-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

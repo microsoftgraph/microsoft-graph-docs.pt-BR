@@ -1,67 +1,75 @@
 ---
-title: Visão geral sobre o API do log de auditoria AD Azure
-description: Azure Active Directory (AD Azure) rastreia métricas de atividade e a entrada do usuário e auditoria de cria relatórios de log que ajudarão-lo a entender como os usuários acessam e aproveitem os serviços do Azure AD. Use a API do Microsoft Graph para Azure AD para analisar os dados base esses relatórios e criar soluções personalizadas adequadas às necessidades específicas da sua organização.
+title: Visão geral da API de log de auditoria do Azure AD
+description: O Azure AD (Azure Active Directory) controla métricas de atividade e de entrada de usuário e cria logs de auditoria que ajudam você a entender como os usuários acessam e utilizam os serviços do Azure AD. Use a API do Microsoft Graph para o Azure AD para analisar os dados desses relatórios e criar soluções personalizadas adequadas às necessidades específicas da sua organização.
 localization_priority: Priority
-ms.openlocfilehash: 07d285ce4e7fbf736900c1d6d4acdf159b451424
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.openlocfilehash: 89be0007ae6c13fb48ba165ca991f5dfa9d9b9cf
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826219"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509599"
 ---
-# <a name="azure-ad-audit-log-api-overview"></a>Visão geral sobre o API do log de auditoria AD Azure
+# <a name="azure-ad-audit-log-api-overview"></a>Visão geral da API de log de auditoria do Azure AD
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Azure Active Directory (AD Azure) rastreia métricas de atividade e a entrada do usuário e auditoria de cria relatórios de log que ajudarão-lo a entender como os usuários acessam e aproveitem os serviços do Azure AD. Use a API do Microsoft Graph para Azure AD para analisar os dados base esses relatórios e criar soluções personalizadas adequadas às necessidades específicas da sua organização.
+O Azure AD (Azure Active Directory) controla métricas de atividade e de entrada de usuário e cria logs de auditoria que ajudam você a entender como os usuários acessam e utilizam os serviços do Azure AD. Use a API do Microsoft Graph para o Azure AD para analisar os dados desses relatórios e criar soluções personalizadas adequadas às necessidades específicas da sua organização.
 
-## <a name="what-are-azure-ad-activity-logs"></a>Cite atividade do Azure AD logs?
+## <a name="what-are-azure-ad-activity-logs"></a>O que são logs de atividade do Azure AD?
 
-Azure AD fornece dois tipos de logs de atividade:
+O Azure AD oferece dois tipos de logs de atividade:
 
-- logs de auditoria 
-- logs de entrar
+- Logs de auditoria 
+- Logs de entrada
 
 ### <a name="audit-logs"></a>Logs de auditoria
 
-O relatório de atividade de logs de auditoria oferece acesso ao histórico de cada tarefa seja executada no seu locatário. O relatório de logs de auditoria fornece registros de atividades do sistema para fins de conformidade. Entre outros, os dados fornecidos permite abordar cenários comuns, como:
+O relatório de atividades de logs de auditoria fornece acesso ao histórico de todas as tarefas executada em seu locatário. O relatório de logs de auditoria fornece registros de atividades do sistema de conformidade. Entre outros benefícios, os dados fornecidos permitem que você aborde cenários comuns, como:
 
-- Quem concedida acesso de administração de grupo a um usuário de diretório?
+- Quem concedeu acesso ao grupo de administradores a um usuário de diretório?
 
-- Quais usuários estão entrando para um aplicativo adquirido recentemente?
+- Quais usuários estão se conectando a um aplicativo adquirido recentemente?
 
-- Redefine as senhas quantos foram feitos dentro do diretório?
+- Quantas redefinições de senhas foram feitas no diretório?
 
-### <a name="sign-in-logs"></a>Inscreva-se nos logs
+### <a name="sign-in-logs"></a>Logs de entrada
 
-O relatório de atividade de logons ajuda a determinar quem executou as tarefas relatadas pelo relatórios do log de auditoria. O relatório de atividade de logons ajuda você a responder perguntas como:
+O relatório de atividade de entrada ajuda a determinar quem realizou as tarefas relatadas pelos relatórios de log de auditoria. O relatório de atividades de entrada ajuda a responder perguntas como:
 
-- O que é o padrão de um usuário entrar?
-- Quantos usuários tem entrado durante a última semana?
+- O que é o padrão de entrada de um usuário?
+- Quantos usuários entraram durante a semana passada?
 - Qual é o status dessas entradas?
 
-## <a name="what-can-i-do-with-audit-log-apis-in-microsoft-graph"></a>O que pode fazer com que o log de auditoria APIs no Microsoft Graph?
+## <a name="what-can-i-do-with-audit-log-apis-in-microsoft-graph"></a>O que posso fazer com as APIs de log de auditoria no Microsoft Graph?
 
-Aqui estão as solicitações de populares para trabalhar com dados de log de auditoria:
+Estas são solicitações populares para trabalhar com dados de log de auditoria:
 
 Operação | URL
 :----------|:----
-Obtenha as atividades do usuário de Inquilino | [https://graph.microsoft.com/beta/auditLogs/directoryAudits](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/directoryAudits&version=beta)
-OBTER locatário entradas do usuário | [https://graph.microsoft.com/beta/auditLogs/signIns](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/signIns&version=beta)
+OBTER atividades de usuário do locatário | [https://graph.microsoft.com/beta/auditLogs/directoryAudits](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/directoryAudits&version=beta)
+OBTER entradas de usuário do locatário | [https://graph.microsoft.com/beta/auditLogs/signIns](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/signIns&version=beta)
 
-## <a name="what-licenses-do-i-need"></a>Quais licenças são necessárias?
+## <a name="what-licenses-do-i-need"></a>De quais licenças eu preciso?
 
-Relatórios do log de auditoria estão disponíveis para os recursos que você licenciou.  Se você tiver uma licença para um recurso específico, você também tem acesso aos seus logs de auditoria.
+Os relatórios de log de auditoria estão disponíveis para os recursos que você tiver licenciado.  Se você tiver uma licença para um recurso específico, também terá acesso a seus logs de auditoria.
 
-Por exemplo, você precisa de uma licença do Windows Azure AD Premium P1 para acessar os relatórios de auditoria de senha de autoatendimento.  Para saber mais, consulte [Licenciamento do Azure AD](https://azure.microsoft.com/pricing/details/active-directory/).
+Por exemplo, você precisa de uma licença P1 do Azure AD Premium para acessar os relatórios de auditoria de senha de autoatendimento.  Para saber mais, confira [Licenciamento do Azure AD](https://azure.microsoft.com/pricing/details/active-directory/).
 
-Relatórios de entrar exigem uma licença do Windows Azure AD Premium.
+Relatórios de entrada requerem uma licença do Azure AD Premium.
 
-Para saber mais, consulte [preços do Azure AD](https://azure.microsoft.com/pricing/details/active-directory/).
+Para saber mais, consulte [Preços do Azure AD](https://azure.microsoft.com/pricing/details/active-directory/).
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- [Registrar seu aplicativo](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) para atender a pré-requisitos de log de auditoria. 
-- Saiba do [log de auditoria](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-audit-samples) e [exemplos de entrada](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-sign-in-activity-samples).  
-- Revise o recurso [directoryAudit](directoryaudit.md) e ações.
-- Revise o recurso de [logon](signin.md) e ações. 
+- [Registre seu aplicativo](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) para satisfazer aos pré-requisitos do log de auditoria. 
+- Aprenda com [amostras do log de auditoria](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-audit-samples) e de [entrada](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-sign-in-activity-samples).  
+- Analisar recurso e ações do [directoryAudit](directoryaudit.md).
+- Analisar recurso e ações do [signIn](signin.md). 
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/azure-ad-auditlog-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

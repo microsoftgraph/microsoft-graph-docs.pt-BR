@@ -5,16 +5,16 @@ ms.date: 09/10/2017
 title: Site
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 1676a314b7c1283918518655b3180cbc70ca193e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 17b9b8731a2b4e4ce39fa2ee10535bcb302f1be3
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27952346"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29514800"
 ---
-# <a name="site-resource-type"></a>tipo de recurso de site
+# <a name="site-resource-type"></a>tipo de recurso do site
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 O recurso **site** fornece metadados e relações para um site do SharePoint.
 
@@ -26,20 +26,20 @@ O recurso **site** fornece metadados e relações para um site do SharePoint.
 | [Obter site][]                   | GET /sites/{site-id}
 | [Obter site por caminho][]           | GET /sites/{hostname}:/{site-path}
 | [Obter o site para um grupo][]       | GET /groups/{group-id}/sites/root
-| [Obtenha a análise][]              | GET /sites/ {site-id} / análise
-| [Fazer atividades pelo intervalo][] | GET /sites/ {site-id} / getActivitiesByInterval
-| [Listar páginas][]                 | GET /sites/ {site-id} / páginas
-| [Lista de sites de raiz][]            | GET /sites? filtro = raiz ne nulo & Selecionar = siteCollection, webUrl
+| [Obter análises][]              | GET /sites/{site-id}/analytics
+| [Obter atividades por intervalo][] | GET /sites/{site-id}/getActivitiesByInterval
+| [Listar páginas][]                 | GET /sites/{site-id}/pages
+| [Lista sites raiz][]            | GET /sites?filter=root ne null&select=siteCollection,webUrl
 | [Procurar sites][]           | GET /sites?search={query}
 
 [Obter site]: ../api/site-get.md
 [Obter site raiz]: ../api/site-get.md
 [Obter site por caminho]: ../api/site-getbypath.md
 [Obter o site para um grupo]: ../api/site-get.md
-[Obtenha a análise]: ../api/itemanalytics-get.md
-[Fazer atividades pelo intervalo]: ../api/itemactivity-getbyinterval.md
+[Obter análises]: ../api/itemanalytics-get.md
+[Obter atividades por intervalo]: ../api/itemactivity-getbyinterval.md
 [Listar páginas]: ../api/sitepage-list.md
-[Lista de sites de raiz]: ../api/site-list.md
+[Lista sites raiz]: ../api/site-list.md
 [Procurar sites]: ../api/site-search.md
 
 
@@ -51,7 +51,7 @@ O recurso **site** fornece metadados e relações para um site do SharePoint.
 | **createdDateTime**      | DateTimeOffset     | A data e a hora da criação do item. Somente leitura.
 | **description**          | string             | O texto descritivo do site.
 | **eTag**                 | string             | ETag do item. Somente leitura.                                                                  |
-| **displayName**          | string             | O texto completo do site. Somente leitura.
+| **displayName**          | cadeia de caracteres             | O texto completo do site. Somente leitura.
 | **lastModifiedDateTime** | DateTimeOffset     | A data e a hora que o item foi modificado pela última vez. Somente leitura.
 | **name**                 | string             | O nome/título do item.
 | **root**                 | [root][]           | Se estiver presente, indica que este é o site raiz do conjunto de sites. Somente leitura.
@@ -63,14 +63,14 @@ O recurso **site** fornece metadados e relações para um site do SharePoint.
 
 | Nome da relação | Tipo                             | Descrição
 |:------------------|:---------------------------------|:----------------------
-| **análise**     | recurso de [itemAnalytics][]       | Análise sobre as atividades de modo de exibição que foram realizada neste site.
+| **analytics**     | [itemAnalytics][] resource       | Análise sobre as atividades de modo de exibição que ocorreram no site.
 | **columns**       | Collection([columnDefinition][]) | O conjunto de definições de coluna reutilizáveis entre listas nesse site.
 | **contentTypes**  | Collection([contentType][])      | O conjunto de tipos de conteúdo definido para esse site.
 | **drive**         | [drive][]                        | A unidade padrão (biblioteca de documentos) desse site.
 | **drives**        | Collection([drive][])            | O conjunto de unidades (bibliotecas de documentos) nesse site.
 | **items**         | Collection([baseItem][])         | Usado para lidar com qualquer item contido neste site. Não é possível enumerar este conjunto.
 | **lists**         | Collection([list][])             | O conjunto de listas neste site.
-| **páginas**         | Coleção ([sitePage][])         | A coleção de páginas na lista SitePages neste site.
+| **pages**         | Collection([sitePage][])         | O conjunto de páginas na lista SitePages no site.
 | **sites**         | Collection([site][])             | O conjunto dos subsites neste site.
 
 [columnDefinition]: columndefinition.md
@@ -79,7 +79,7 @@ O recurso **site** fornece metadados e relações para um site do SharePoint.
 [drive]: drive.md
 [identitySet]: identityset.md
 [itemAnalytics]: itemanalytics.md
-[lista]: list.md
+[list]: list.md
 [sitePage]: sitepage.md
 [root]: root.md
 [site]: site.md
@@ -135,11 +135,18 @@ O recurso **site** é derivado de [**baseItem**](baseitem.md) e herda propriedad
 }
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
   "tocPath": "Sites",
-  "tocBookmarks": { "Resources/Site": "#" }
-} -->
+  "tocBookmarks": {
+    "Resources/Site": "#"
+  },
+  "suppressions": [
+    "Error: /api-reference/beta/resources/site.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

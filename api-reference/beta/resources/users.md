@@ -4,16 +4,16 @@ description: Você pode usar o Microsoft Graph para criar experiências envolven
 localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a5e1ed5a2403def740d92b9f77d57a58f6d1a3e6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 5f1a08e008f1de343ca6cf4986006c43c7e115af
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27912012"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29518426"
 ---
-# <a name="working-with-users-in-microsoft-graph"></a>Trabalhando com usuários no Microsoft Graph
+# <a name="working-with-users-in-microsoft-graph"></a>Trabalhar com usuários no Microsoft Graph
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Você pode usar o Microsoft Graph para criar experiências envolventes do aplicativo com base nos usuários, em suas relações com outros usuários e em grupos e seus emails, calendário e arquivos.
 
@@ -42,14 +42,14 @@ Uma das seguintes [permissões](https://developer.microsoft.com/graph/docs/autho
 |givenName| O nome do usuário. |
 |surname| O sobrenome do usuário. |
 |email| O endereço de email do usuário. |
-|Foto| Foto de perfil do usuário. |
+|photo| A foto de perfil do usuário. |
 
 Para obter detalhes e uma lista de todas as propriedades, confira o objeto [user](user.md).
 
 ## <a name="common-operations"></a>Operações comuns
 >**Observação:** Algumas destas operações exigem permissões adicionais.
 
-| Path    | Descrição |
+| Caminho    | Descrição |
 |---------|-------------|
 |[`/users`](../api/user-list.md) | Lista os usuários na organização. |
 |[`/users/{id}`](../api/user-get.md) | Obtém um usuário específico pela id. |
@@ -59,4 +59,12 @@ Para obter detalhes e uma lista de todas as propriedades, confira o objeto [user
 |[`/users/{id}/events`](../api/user-list-events.md) | Lista os eventos futuros do usuário em seu calendário. |
 |[`/users/{id}/drive`](../api/drive-get.md)| Obtém o repositório de arquivos do OneDrive do usuário. |
 |[`/users/{id}/memberOf`](../api/user-list-memberof.md)| Lista os grupos dos quais o usuário é membro. |
-|[`/users/{id}/joinedTeams`](../api/user-list-joinedteams.md)| Lista Teams Microsoft que o usuário é membro de. |
+|[`/users/{id}/joinedTeams`](../api/user-list-joinedteams.md)| Lista as Microsoft Teams das quais o usuário é membro. |
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/users.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

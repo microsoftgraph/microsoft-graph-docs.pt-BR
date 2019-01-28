@@ -1,19 +1,19 @@
 ---
-title: tipo de recurso de servicePrincipal
-description: Representa uma instância de um aplicativo em um diretório. Herda de directoryObject.
+title: Tipo de recurso servicePrincipal
+description: Representa uma instância de um aplicativo em um diretório. Herda do directoryObject.
 localization_priority: Priority
-ms.openlocfilehash: 2df27225f62e7c2b7b026bb3d829abf546241267
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.openlocfilehash: cd0ac4d440b2e10f935c02393419754989394816
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880203"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29512112"
 ---
-# <a name="serviceprincipal-resource-type"></a>tipo de recurso de servicePrincipal
+# <a name="serviceprincipal-resource-type"></a>Tipo de recurso servicePrincipal
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma instância de um aplicativo em um diretório. Herda de [directoryObject](directoryobject.md).
+Representa uma instância de um aplicativo em um diretório. Herda do [directoryObject](directoryobject.md).
 
 Esse recurso permite:
 
@@ -65,67 +65,72 @@ Veja a seguir uma representação JSON do recurso
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|accountEnabled|Booliano| **true** se a conta de serviço principal estiver ativada; Caso contrário, **false**.            |
-|appDisplayName|Cadeia de caracteres|O nome de exibição exposto pelo aplicativo associado.|
-|appId|Cadeia de caracteres|O identificador exclusivo para o aplicativo associado (sua propriedade **appId** ).|
-|appRoleAssignmentRequired|Booliano|Especifica se um **appRoleAssignment** a um usuário ou grupo é necessária antes que o Azure AD emitirá um usuário ou um token de acesso ao aplicativo. Não anulável. |
-|appRoles|coleção [appRole](approle.md)|As funções do aplicativo expostas pelo aplicativo associado. Para obter mais informações, consulte a definição da propriedade **appRoles** sobre a entidade de [aplicativo](application.md) . Não anulável. |
-|displayName|Cadeia de caracteres|O nome de exibição para a entidade de serviço.|
-|errorUrl|Cadeia de caracteres|            |
-|home page|Cadeia de caracteres|A URL para a home page do aplicativo associado.|
-|keyCredentials|coleção [keyCredential](keycredential.md)|A coleção de credenciais de chave associado ao serviço principal. Não anulável.            |
-|logoutUrl|Cadeia de caracteres| Especifica a URL que será usada pelo serviço de autorização da Microsoft para logout um usuário usando o [canal de frente](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [back-channel](https://openid.net/specs/openid-connect-backchannel-1_0.html) ou protocolos de logout SAML.  |
-|oauth2Permissions|coleção [oAuth2Permission](oauth2permission.md)|As permissões de OAuth 2.0 expostas pelo aplicativo associado. Para obter mais informações, consulte a definição da propriedade **oauth2Permissions** sobre a entidade de [aplicativo](application.md) . Não anulável.            |
-|id|Cadeia de caracteres|O identificador exclusivo para a entidade de serviço. Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura.|
-|passwordCredentials|coleção [passwordCredential](passwordcredential.md)|A coleção de credenciais de senha associadas a entidade de serviço. Não anulável. |
-|preferredTokenSigningKeyThumbprint|Cadeia de caracteres|Reservado para uso interno apenas. Não gravar ou caso contrário, contam com esta propriedade. Pode ser removido em futuras versões. |
-|publisherName|Cadeia de caracteres|O nome de exibição do inquilino no qual o aplicativo associado for especificado.|
-|replyUrls|String collection|As URLs que os tokens do usuário são enviados para entrada com o aplicativo associado ou o redirecionamento códigos de autorização de URIs que OAuth 2.0 e tokens de acesso são enviados para o aplicativo associado. Não anulável. |
-|samlMetadataUrl|Cadeia de caracteres| |
-|servicePrincipalNames|String collection|Os URIs que identificam o aplicativo associado. Para mais informações, consulte [objetos de aplicativo e objetos de entidade de serviço](https://msdn.microsoft.com/library/azure/dn132633.aspx). Operador **any** é necessário para expressões de filtro propriedades de valores múltiplos.  Não anulável. |
-|marcas|Coleção de cadeias de caracteres| Não anulável. |
+|accountEnabled|Boolean| **True** se a entidade de serviço estiver habilitada; caso contrário, **false**.            |
+|appDisplayName|String|O nome de exibição exposto pelo aplicativo associado.|
+|appId|String|O identificador exclusivo do aplicativo associado (sua propriedade **appId**).|
+|appRoleAssignmentRequired|Boolean|Especifica se um **appRoleAssignment** de um usuário ou grupo é necessário antes que o Azure AD emita um token de usuário ou de acesso ao aplicativo. Não anulável. |
+|appRoles|[appRole](approle.md) collection|As funções do aplicativo expostas pelo aplicativo associado. Para obter mais informações, confira definição da propriedade **appRoles** na entidade [aplicativo](application.md). Não anulável. |
+|displayName|String|O nome de exibição da entidade de serviço.|
+|errorUrl|String|            |
+|homepage|String|A URL da home page do aplicativo associado.|
+|keyCredentials|[keyCredential](keycredential.md) collection|A coleção de credenciais principais associada à entidade de serviço. Não anulável.            |
+|logoutUrl|String| Especifica a URL que será usada pela autorização do serviço da Microsoft para fazer logoff de um usuário usando protocolos de logoff [front-channel](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [back-channel](https://openid.net/specs/openid-connect-backchannel-1_0.html) ou SAML.  |
+|oauth2Permissions|[oAuth2Permission](oauth2permission.md) collection|As permissões OAuth 2.0 expostas pelo aplicativo associado. Para obter mais informações, confira a definição da propriedade **oauth2Permissions** na entidade [aplicativo](application.md). Não anulável.            |
+|id|String|O identificador exclusivo da entidade de serviço. Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura.|
+|passwordCredentials|[passwordCredential](passwordcredential.md) collection|A coleção de credenciais de senha associada à entidade de serviço. Não anulável. |
+|preferredTokenSigningKeyThumbprint|String|Reservado apenas para uso interno. Não escreva ou dependa de alguma forma dessa propriedade. Pode ser removida em versões futuras. |
+|publisherName|String|O nome de exibição do locatário no qual o aplicativo associado está especificado.|
+|replyUrls|String collection|As URLs às quais os tokens de usuário são enviados para entrar com aplicativo associado ou os URIs de redirecionamento aos quais os códigos de autorização do OAuth 2.0 e tokens de acesso são enviados para o aplicativo associado. Não anulável. |
+|samlMetadataUrl|String| |
+|servicePrincipalNames|String collection|Os URIs que identificam o aplicativo associado. Para obter mais informações, confira [Objetos do aplicativo e da entidade de serviço](https://msdn.microsoft.com/library/azure/dn132633.aspx). O operador **any** é necessário para expressões de filtro em propriedades de vários valores.  Não anulável. |
+|tags|String collection| Não anulável. |
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo |Descrição|
 |:---------------|:--------|:----------|
 |appRoleAssignedTo|[appRoleAssignment](approleassignment.md)|Entidades (usuários, grupos e entidades de serviço) que são atribuídas a essa entidade de serviço. Somente leitura.|
-|appRoleAssignments|coleção [appRoleAssignment](approleassignment.md)|Aplicativos que a entidade de serviço é atribuída a. Somente leitura. Anulável.|
-|createdObjects|Coleção [directoryObject](directoryobject.md)|Objetos de diretório criados por essa entidade de serviço. Somente leitura. Anulável.|
-|memberOf|Coleção [directoryObject](directoryobject.md)|Funções que essa entidade de serviço é um membro de. Métodos HTTP: Obtenha somente leitura. Anulável.|
-|oauth2PermissionGrants|coleção [oAuth2PermissionGrant](oauth2permissiongrant.md)|Concede de representação de usuário associado a essa entidade de serviço. Somente leitura. Anulável.|
-|ownedObjects|Coleção [directoryObject](directoryobject.md)|Objetos de diretório pertencentes a essa entidade de serviço. Somente leitura. Anulável.|
-|owners|Coleção [directoryObject](directoryobject.md)|Objetos de diretório que são proprietários dessa entidade de serviço. Os proprietários são um conjunto de usuários não seja o administrador que têm permissão para modificar esse objeto. Somente leitura. Anulável.|
-|Política|coleção de [políticas](policy.md)|As políticas atribuídas para essa entidade de serviço.|
+|appRoleAssignments|[appRoleAssignment](approleassignment.md) collection|Aplicativos aos quais a entidade de serviço é atribuída. Somente leitura. Anulável.|
+|createdObjects|[directoryObject](directoryobject.md) collection|Objetos de diretório criados pela entidade de serviço. Somente leitura. Anulável.|
+|memberOf|[directoryObject](directoryobject.md) collection|Funções das quais essa entidade de serviço é membro. Métodos HTTP: GET somente leitura. Anulável.|
+|oauth2PermissionGrants|[oAuth2PermissionGrant](oauth2permissiongrant.md) collection|Concessões da representação de usuário associadas a essa entidade de serviço. Somente leitura. Anulável.|
+|ownedObjects|[directoryObject](directoryobject.md) collection|Objetos de diretório que pertencem a essa entidade de serviço. Somente leitura. Anulável.|
+|owners|[directoryObject](directoryobject.md) collection|Objetos de diretório que são proprietários dessa entidade de serviço. Os proprietários são um conjunto de usuários não administradores com permissão para modificar esse objeto. Somente leitura. Anulável.|
+|policy|[policy](policy.md) collection|As políticas atribuídas a essa entidade de serviço.|
 
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[Obter servicePrincipal](../api/serviceprincipal-get.md) | [servicePrincipal](serviceprincipal.md) |Leia as propriedades e os relacionamentos do objeto servicePrincipal.|
-|[Lista servicePrincipals](../api/serviceprincipal-list.md) | coleção [servicePrincipal](serviceprincipal.md) | Recupere uma lista de objetos servicePrincipal. |
-|[Criar appRoleAssignment](../api/serviceprincipal-post-approleassignments.md) |[appRoleAssignment](approleassignment.md)| Crie um novo appRoleAssignment pelo lançamento à coleção appRoleAssignments.|
-|[Lista appRoleAssignments](../api/serviceprincipal-list-approleassignments.md) |coleção [appRoleAssignment](approleassignment.md)| Obtenha uma coleção de objetos appRoleAssignment.|
-|[Listar createdObjects](../api/serviceprincipal-list-createdobjects.md) |Coleção [directoryObject](directoryobject.md)| Obtenha uma coleção de objetos createdObject.|
-|[Listar memberOf](../api/serviceprincipal-list-memberof.md) |Coleção [directoryObject](directoryobject.md)| Obtenha os grupos que esse serviço principal é um membro direto da propriedade membro navegação.|
-|[Membro de lista transitivo](../api/serviceprincipal-list-transitivememberof.md) |Coleção [directoryObject](directoryobject.md)| Liste os grupos que essa entidade de serviço é um membro de. Essa operação é transitiva e inclui os grupos que esse serviço principal é um membro aninhado do. |
-|[Políticas de lista atribuída](../api/policy-list-assigned.md)| coleção de [políticas](policy.md)| Obtenha todas as diretivas atribuídas a este objeto.|
-|[Lista oauth2PermissionGrants](../api/serviceprincipal-list-oauth2permissiongrants.md) |coleção [oAuth2PermissionGrant](oauth2permissiongrant.md)| Obtenha uma coleção de objetos oAuth2PermissionGrant.|
-|[Listar ownedObjects](../api/serviceprincipal-list-ownedobjects.md) |Coleção [directoryObject](directoryobject.md)| Obtenha uma coleção de objetos ownedObject.|
-|[Adicionar proprietário](../api/serviceprincipal-post-owners.md) |[directoryObject](directoryobject.md)| Crie um novo proprietário pelo lançamento à coleção proprietários.|
-|[Listar proprietários](../api/serviceprincipal-list-owners.md) |Coleção [directoryObject](directoryobject.md)| Obtenha um proprietário de conjunto de objeto.|
+|[Get servicePrincipal](../api/serviceprincipal-get.md) | [servicePrincipal](serviceprincipal.md) |Leia as propriedades e as relações do objeto servicePrincipal.|
+|[List servicePrincipals](../api/serviceprincipal-list.md) | [servicePrincipal](serviceprincipal.md) collection | Recupere uma lista de objetos servicePrincipal. |
+|[Create appRoleAssignment](../api/serviceprincipal-post-approleassignments.md) |[appRoleAssignment](approleassignment.md)| Crie um novo appRoleAssignment postando-o na coleção appRoleAssignments.|
+|[List appRoleAssignments](../api/serviceprincipal-list-approleassignments.md) |[appRoleAssignment](approleassignment.md) collection| Obtenha uma coleção de objeto appRoleAssignment.|
+|[List createdObjects](../api/serviceprincipal-list-createdobjects.md) |[directoryObject](directoryobject.md) collection| Obtenha uma coleção de objeto createdObject.|
+|[List memberOf](../api/serviceprincipal-list-memberof.md) |[directoryObject](directoryobject.md) collection| Obtenha grupos dos quais essa entidade de serviço é membro direto da propriedade de navegação memberOf.|
+|[List transitive memberOf](../api/serviceprincipal-list-transitivememberof.md) |[directoryObject](directoryobject.md) collection| Liste os grupos dos quais essa entidade de serviço é membro. Essa operação é transitiva e inclui os grupos dos quais essa entidade de serviço é um membro aninhado. |
+|[List assigned policies](../api/policy-list-assigned.md)| Coleção [policy](policy.md)| Obtenha todas as políticas atribuídas a esse objeto.|
+|[List oauth2PermissionGrants](../api/serviceprincipal-list-oauth2permissiongrants.md) |[oAuth2PermissionGrant](oauth2permissiongrant.md) collection| Obtenha uma coleção de objeto oAuth2PermissionGrant.|
+|[List ownedObjects](../api/serviceprincipal-list-ownedobjects.md) |[directoryObject](directoryobject.md) collection| Obtenha uma coleção de objeto ownedObject.|
+|[Add owner](../api/serviceprincipal-post-owners.md) |[directoryObject](directoryobject.md)| Crie um novo proprietário postando na coleção owners.|
+|[List owners](../api/serviceprincipal-list-owners.md) |[directoryObject](directoryobject.md) collection| Obtenha uma coleção de objeto owner.|
 |[Update](../api/serviceprincipal-update.md) | [servicePrincipal](serviceprincipal.md)  |Atualize o objeto servicePrincipal. |
-|[Delete](../api/serviceprincipal-delete.md) | Nenhum |Exclua objeto servicePrincipal. |
-|[checkMemberGroups](../api/serviceprincipal-checkmembergroups.md)|Coleção de cadeias de caracteres||
-|[getMemberGroups](../api/serviceprincipal-getmembergroups.md)|Coleção de cadeias de caracteres||
-|[getMemberObjects](../api/serviceprincipal-getmemberobjects.md)|Coleção de cadeias de caracteres||
-|[delta](../api/serviceprincipal-delta.md)|coleção servicePrincipal| Obtenha as alterações incrementais para entidades de serviço. |
+|[Delete](../api/serviceprincipal-delete.md) | Nenhum |Exclua o objeto servicePrincipal. |
+|[checkMemberGroups](../api/serviceprincipal-checkmembergroups.md)|String collection||
+|[getMemberGroups](../api/serviceprincipal-getmembergroups.md)|String collection||
+|[getMemberObjects](../api/serviceprincipal-getmemberobjects.md)|String collection||
+|[delta](../api/serviceprincipal-delta.md)|servicePrincipal collection| Obtenha alterações incrementais para entidades de serviço. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "servicePrincipal resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/serviceprincipal.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
