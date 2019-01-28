@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: Unidade
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 220f68d2888b29100fdcbb671b5085d3606ec3c2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: e788765c3405a1455eda55f6fefdc21ade3da8fd
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521268"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573925"
 ---
 # <a name="drive-resource-type"></a>tipo de recurso de unidade
 
@@ -96,10 +96,10 @@ O recurso **drive** é derivado de [**baseItem**](baseitem.md) e herda proprieda
 | Relação | Tipo                                 | Descrição
 |:-------------|:-------------------------------------|:-----------------------
 | activities   | Conjunto [itemActivity][]          | A lista de atividades recentes que ocorreram nesta unidade.
-| items        | Coleção [driveitem](driveitem.md) | Todos os itens contidos na unidade. Somente leitura. Anulável.
-| root         | [driveitem](driveitem.md)            | A pasta raiz da unidade. Somente leitura.
-| special      | Coleção [driveitem](driveitem.md) | Coleção de pastas comuns disponíveis no OneDrive. Somente leitura. Anulável.
-| seguindo    | Coleção [DriveItem](driveitem.md) | A lista de itens que o usuário está seguindo. Somente no OneDrive for Business.
+| items        | Coleção [driveItem](driveitem.md) | Todos os itens contidos na unidade. Somente leitura. Anulável.
+| root         | [driveItem](driveitem.md)            | A pasta raiz da unidade. Somente leitura.
+| special      | Coleção [driveItem](driveitem.md) | Coleção de pastas comuns disponíveis no OneDrive. Somente leitura. Anulável.
+| following    | Coleção [driveItem](driveitem.md) | A lista de itens que o usuário está seguindo. Somente no OneDrive for Business.
 
 ## <a name="methods"></a>Métodos
 

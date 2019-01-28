@@ -4,12 +4,12 @@ description: 'Representa um aplicativo. Qualquer aplicativo que terceirize a aut
 localization_priority: Priority
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 694f6b12dd8fe1fd59f12cafebd47c842a4077cb
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 0ba7bebb1165710c68f4714050109b5c927bddbd
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529219"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575052"
 ---
 # <a name="application-resource-type"></a>tipo de recurso do aplicativo
 
@@ -43,25 +43,25 @@ Esse recurso permite:
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|api|[api](api.md)| Especifica configurações para um aplicativo de API. |
+|api|[microsoft.graph.api](api.md)| Especifica as configurações para um aplicativo de API. |
 |appId| String | O identificador exclusivo para o aplicativo que está atribuído a um aplicativo pelo Azure AD. Não anulável. Somente leitura. |
-|appRoles|Coleção [appRole](approle.md)|A coleção de funções de aplicativo que um aplicativo pode declarar. Essas funções podem ser atribuídas a usuários, grupos ou entidades de serviço. Não anulável.|
+|appRoles|Coleção [microsoft.graph.entity](approle.md)|A coleção de funções de aplicativo que um aplicativo pode declarar. Essas funções podem ser atribuídas a usuários, grupos ou entidades de serviço. Não anulável.|
 |createdDateTime|DateTimeOffset| A data e a hora que o aplicativo foi registrado. |
 |deletedDateTime|DateTimeOffset| A data e a hora que o aplicativo foi excluído. |
 |displayName|String|O nome de exibição do aplicativo. |
-|id|String|O identificador exclusivo do aplicativo. Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura. |
+|id|String|O identificador exclusivo do aplicativo. Herdado de [microsoft.graph.directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura. |
 |identifierUris|Coleção String| Os URIs que identificam o aplicativo. Para saber mais, confira [Objetos do aplicativo e objetos da entidade de serviço](https://azure.microsoft.com/documentation/articles/active-directory-application-objects/). O operador *any* é obrigatório para expressões de filtro em propriedades de vários valores. Não anulável. |
-|informações |[informationalUrl](informationalurl.md)| Informações de perfil básicas do aplicativo. |
+|info|[microsoft.graph.informationalUrl](informationalurl.md)| Informações de perfil básicas do aplicativo. |
 |isFallbackPublicClient|Booliano| Especifica o tipo de aplicativo de fallback como cliente público, como um aplicativo instalado em execução em um dispositivo móvel. O valor padrão é *false*. Isso significa que o tipo de aplicativo de fallback é cliente confidencial como o aplicativo Web. Há determinados cenários em que o Azure AD não pode determinar o tipo de aplicativo cliente (por exemplo, o fluxo [ROPC](https://tools.ietf.org/html/rfc6749#section-4.3), no qual ele é configurado sem especificar um URI de redirecionamento). Nesses casos, o Azure AD interpretará o tipo de aplicativo com base no valor dessa propriedade.|
-|keyCredentials|Coleção [keyCredential](keycredential.md)|A coleção de credenciais chaves associada ao aplicativo Não anulável. |
+|keyCredentials|Coleção [microsoft.graph.keyCredential](keycredential.md)|A coleção de credenciais chaves associada ao aplicativo Não anulável. |
 |logo|Stream|O principal logotipo do aplicativo. Não anulável. |
-|optionalClaims|optionalClaims| Reserved for future use. |
+|optionalClaims|Coleção [microsoft.graph.entity](entity.md)| Reservado para uso futuro. |
 |orgRestrictions|Coleção String| Reserved for future use. |
-|parentalControlSettings|[parentalControlSettings](parentalcontrolsettings.md) |Especifica as configurações de controle parental de um aplicativo.|
-|passwordCredentials|Coleção [passwordCredential](passwordcredential.md)|A coleção de credenciais de senha associada ao aplicativo. Não anulável.|
-|publicClient|[publicClient](publicclient.md)| Especifica configurações para clientes instalados, como dispositivos móveis ou da área de trabalho. |
+|parentalControlSettings|Coleção [microsoft.graph.parentalControlSettings](parentalcontrolsettings.md) |Especifica as configurações de controle parental de um aplicativo.|
+|passwordCredentials|Coleção [microsoft.graph.passwordCredential](passwordcredential.md)|A coleção de credenciais de senha associadas ao aplicativo. Não anulável.|
+|publicClient|[microsoft.graph.publicClient](publicclient.md)| Especifica configurações para clientes instalados, como dispositivos móveis ou da área de trabalho. |
 |publisherDomain| String | O domínio do publicador verificado para o aplicativo. Somente leitura.|
-|requiredResourceAccess|[requiredResourceAccess](requiredresourceaccess.md) collection|Especifica os recursos para os quais esse aplicativo requer acesso e o conjunto de escopos de permissão e funções de aplicativo do OAuth necessários em cada um desses recursos. Essa pré-configuração de acesso necessário aos recursos impulsiona a experiência de consentimento. Não anulável.|
+|requiredResourceAccess|Coleção [microsoft.graph.requiredResourceAccess](requiredresourceaccess.md)|Especifica os recursos para os quais esse aplicativo requer acesso e o conjunto de escopos de permissão e funções de aplicativo do OAuth necessários em cada um desses recursos. Essa pré-configuração de acesso necessário aos recursos impulsiona a experiência de consentimento. Não anulável.|
 |signInAudience | String | Especifica a quais contas da Microsoft são compatíveis com o aplicativo atual. Os valores compatíveis são:<ul><li>**AzureADMyOrg**: usuários com uma conta corporativa ou de estudante da Microsoft no locatário do Azure AD da organização (ou seja, locatário único)</li><li>**AzureADMultipleOrgs**: usuários com uma conta corporativa ou de estudante da Microsoft no locatário do Azure AD da organização (ou seja, multilocatário)</li> <li>**AzureADandPersonalMicrosoftAccount**: usuários com uma conta pessoal da Microsoft ou uma conta corporativa ou de estudante no locatário do Azure AD de qualquer organização</li></ul> | `AzureADandPersonalMicrosoftAccount` |
 |marcações|Coleção String| Sequências personalizadas que podem ser usadas para categorizar e identificar o aplicativo. |
 |web|[web](web.md)| Especifica configurações para um aplicativo Web. |
@@ -92,29 +92,29 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "api": {"@odata.type": "microsoft.graph.apiApplication"},
+  "api": {"@odata.type": "#microsoft.graph.application"},
   "appId": "String",
-  "appRoles": [{"@odata.type": "microsoft.graph.appRole"}],
+  "appRoles": [{"@odata.type": "#microsoft.graph.approle"}],
   "createdDateTime": "String (timestamp)",
   "deletedDateTime": "String (timestamp)",
   "displayName": "String",
   "id": "String (identifier)",
   "identifierUris": ["String"],
-  "info": {"@odata.type": "microsoft.graph.informationalUrl"},
+  "info": {"@odata.type": "#microsoft.graph.informationalUrl"},
   "isFallbackPublicClient": true,
-  "keyCredentials": [{"@odata.type": "microsoft.graph.keyCredential"}],
+  "keyCredentials": [{"@odata.type": "#microsoft.graph.keyCredential"}],
   "logo": "Stream",
-  "optionalClaims": [{"@odata.type": "microsoft.graph.optionalClaims"}],
+  "optionalClaims": [{"@odata.type": "#microsoft.graph.entity"}],
   "orgRestrictions": ["Guid"],
   "parentalControlSettings": [{"@odata.type": "microsoft.graph.parentalControlSettings"}],
-  "passwordCredentials": [{"@odata.type": "microsoft.graph.passwordCredential"}],
-  "preAuthorizedApplications": [{"@odata.type": "microsoft.graph.preAuthorizedApplication"}],
-  "publicClient": {"@odata.type": "microsoft.graph.publicClientApplication"},
+  "passwordCredentials": [{"@odata.type": "#microsoft.graph.passwordCredential"}],
+  "preAuthorizedApplications": [{"@odata.type": "#microsoft.graph.preAuthorizedApplication"}],
+  "publicClient": {"@odata.type": "#microsoft.graph.publicClientApplication"},
   "publisherDomain": "String",
-  "requiredResourceAccess": [{"@odata.type": "microsoft.graph.requiredResourceAccess"}],
+  "requiredResourceAccess": [{"@odata.type": "#microsoft.graph.requiredResourceAccess"}],
   "signInAudience": "String",
   "tags": ["String"],
-  "web": {"@odata.type": "microsoft.graph.webApplication"}
+  "web": {"@odata.type": "#microsoft.graph.webApplication"}
 }
 ```
 

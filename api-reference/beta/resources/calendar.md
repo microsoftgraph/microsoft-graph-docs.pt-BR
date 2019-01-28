@@ -4,12 +4,12 @@ description: Um calendário que é um contêiner para eventos. Pode ser um calen
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 162c2a4787d7b89b55135f61f4334c580b224051
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 832a7bc18018f4774e2c8ea8786d510c50e2580c
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520267"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574702"
 ---
 # <a name="calendar-resource-type"></a>tipo de recurso calendar
 
@@ -63,8 +63,8 @@ Um calendário que é um contêiner para eventos. Pode ser um calendário para u
 |:---------------|:--------|:----------|
 |calendarView|Coleção [event](event.md)|O modo de exibição do calendário. Propriedade de navegação. Somente leitura.|
 |events|Coleção [event](event.md)|Os eventos do calendário. Propriedade de navegação. Somente leitura.|
-|multiValueExtendedProperties|Coleção [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de vários valores definidas para o calendário. Somente leitura. Anulável.|
-|singleValueExtendedProperties|Coleção [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de vários valores definidas para a mensagem. Somente leitura. Anulável.|
+|multiValueLegacyExtendedProperty| Coleção [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) | A coleção de propriedades estendidas de vários valores definidas para o calendário. Somente leitura. Anulável.|
+|singleValueLegacyExtendedProperty| Coleção [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) | A coleção de propriedades estendidas de vários valores definidas para a mensagem. Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -75,11 +75,35 @@ Veja a seguir uma representação JSON do recurso
   "optionalProperties": [
     "calendarView",
     "events",
-    "multiValueExtendedProperties",
-    "singleValueExtendedProperties"
+    "multiValueLegacyExtendedProperty",
+    "singleValueLegacyExtendedProperty"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.calendar"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.calendar",
+  "@odata.annotations": [
+    {
+      "property": "calendarView",
+      "capabilities": {
+        "changeTracking": true,
+        "deletable": false,
+        "expandable": false,
+        "insertable": false,
+        "navigability": "single",
+        "searchable": false,
+        "updatable": false
+      }
+    },
+    {
+      "property": "events",
+      "capabilities": {
+        "changeTracking": false,
+        "expandable": false,
+        "navigability": "single",
+        "searchable": false
+      }
+    }
+  ]
 }-->
 
 ```json
