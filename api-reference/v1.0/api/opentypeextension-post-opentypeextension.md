@@ -18,7 +18,7 @@ Crie uma extensão aberta (objeto [openTypeExtension](../resources/opentypeexten
 
 ## <a name="permissions"></a>Permissões
 
-Dependendo do recurso que você está criando a extensão do e a permissão tipo (delegado ou aplicativo) solicitado, permissão especificado na tabela a seguir é menos privilegiados necessário para fazer chamadas de API este. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Dependendo do recurso para o qual você está criando a extensão e o tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é a menos privilegiada necessária para fazer chamadas a esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Application |
 |:-----|:-----|:-----|:-----|
