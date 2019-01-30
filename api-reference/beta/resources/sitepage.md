@@ -5,12 +5,12 @@ ms.date: 03/15/2018
 title: SitePage
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 9ecc23abbee165bce9fd4d9a2a5d8aac8aa02f41
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 7b1634e79214f1cece85a78af29db6422ac03a81
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576238"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640655"
 ---
 # <a name="sitepage-resource"></a>recurso de sitePage
 
@@ -56,7 +56,7 @@ Aqui está uma representação JSON de um recurso de **sitePage** .
   /* page content */
   "title": "string",
   "pageLayout": "Article",
-  "webParts": [{ "@odata.type": "microsoft.graph.webPart" }],
+  "webParts": [{ "@odata.type": "microsoft.graph.sitePageWebParts" }],
 
   /* authoring metadata */
   "publishingState": { "@odata.type": "microsoft.graph.publicationFacet" },
@@ -121,7 +121,7 @@ O recurso de **sitePage** não tem relações para outros recursos.
 [columnDefinition]: columndefinition.md
 [identitySet]: identityset.md
 [itemReference]: itemreference.md
-[lista]: list.md
+[list]: list.md
 [listInfo]: listinfo.md
 [listItem]: listitem.md
 [publicationFacet]: publicationfacet.md

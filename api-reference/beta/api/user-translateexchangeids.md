@@ -1,21 +1,21 @@
 ---
 title: 'usuário: translateExchangeIds'
-description: Traduza os identificadores de recursos relacionados ao Outlook entre formatos.
+description: Traduzir os identificadores de recursos relacionados ao Outlook entre formatos.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3b09ae9bf6a1cbf1967a900770b07d8c9750ba21
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: a00368c918685f6f94020dbea655232bae58ad57
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571286"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643612"
 ---
 # <a name="user-translateexchangeids"></a>usuário: translateExchangeIds
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Traduza os identificadores de recursos relacionados ao Outlook entre formatos.
+Traduzir os identificadores de recursos relacionados ao Outlook entre formatos.
 
 ## <a name="permissions"></a>Permissões
 
@@ -23,8 +23,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:----------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante) | User.ReadBasic, User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
-| Delegado (conta pessoal da Microsoft) | User.ReadBasic, User.Read, User.ReadWrite |
+| Delegada (conta corporativa ou de estudante) | User.ReadBasic, User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
+| Delegada (conta pessoal da Microsoft) | User.ReadBasic, User.Read, User.ReadWrite |
 | Aplicativo | User.Read.All, User.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -114,11 +114,11 @@ Content-type: application/json
   "@odata.context": "https://graph.microsoft.com/testexchangebeta/$metadata#Collection(microsoft.graph.convertIdResult)",
   "value": [
     {
-      "sourceId": "{rest-formatted-id-1}",
+      "sourceId": "{rest-formatted-id-1},
       "targetId": "{rest-immutable-formatted-id-1}"
     },
     {
-      "sourceId": "{rest-formatted-id-2}",
+      "sourceId": "{rest-formatted-id-2},
       "targetId": "{rest-immutable-formatted-id-2}"
     }
   ]

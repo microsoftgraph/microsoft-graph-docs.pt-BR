@@ -2,12 +2,12 @@
 title: Criar uma propriedade estendida de vários valores
 description: 'Crie uma ou mais propriedades estendidas de vários valores em uma instância nova ou existente de um recurso. '
 localization_priority: Normal
-ms.openlocfilehash: 4ed9af6fda2117fee7ef1ac50c69c4f006abd45d
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: ba54bc3de2eb80fd7283f1a313448b77a04bbe4d
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576259"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642251"
 ---
 # <a name="create-multi-value-extended-property"></a>Criar uma propriedade estendida de vários valores
 
@@ -20,9 +20,9 @@ Há suporte para as seguintes fontes de dados:
 - [calendar](../resources/calendar.md)
 - [contact](../resources/contact.md)
 - [contactFolder](../resources/contactfolder.md) 
-- [event](../resources/event.md)
+- [evento](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
-- [message](../resources/message.md)
+- [mensagem](../resources/message.md)
 - [Tarefa do Outlook](../resources/outlooktask.md)
 - [Pasta de tarefas do Outlook](../resources/outlooktaskfolder.md)
 
@@ -150,15 +150,15 @@ PATCH /groups/{id}/events/{id}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-Fornecer um corpo JSON de cada objeto [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) na propriedade conjunto **multiValueLegacyExtendedProperty** da instância do recurso.
+Forneça um corpo JSON de cada objeto [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) na propriedade da coleção **multiValueExtendedProperties** da instância de recurso.
 
 |**Propriedade**|**Tipo**|**Descrição**|
 |:-----|:-----|:-----|
-|multiValueLegacyExtendedProperty|Coleção [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md)| Uma matriz de uma ou mais propriedades estendidas de vários valores. |
-|id|String|Para cada propriedade na coleção **multiValueLegacyExtendedProperty** , especifique isso para identificar a propriedade. Ele deve seguir um dos formatos suportados. Para obter mais informações, consulte [Visão geral das propriedades de estendida do Outlook](../resources/extended-properties-overview.md) . Obrigatório.|
-|valor|string|Para cada propriedade na coleção **multiValueLegacyExtendedProperty** , especifique o valor da propriedade. Obrigatório.|
+|multiValueExtendedProperties|Coleção [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md)| Uma matriz de uma ou mais propriedades estendidas de vários valores. |
+|id|String|Para cada propriedade na coleção **multiValueExtendedProperties**, especifique isso para identificar a propriedade. Ele deve seguir um dos formatos com suporte. Para saber mais, confira [Visão geral das propriedades estendidas do Outlook](../resources/extended-properties-overview.md). Obrigatório.|
+|valor|string|Para cada propriedade na coleção **multiValueExtendedProperties**, especifique o valor da propriedade. Obrigatório.|
 
-Ao criar uma propriedade estendida em uma _nova_ instância de recurso, a nova coleção de **multiValueLegacyExtendedProperty** , além de fornecer uma representação de JSON dessa instância do recurso (ou seja, uma [mensagem](../resources/message.md), [mailFolder](../resources/mailfolder.md) [evento](../resources/event.md), etc.)
+Ao criar uma propriedade estendida em uma _nova_ instância de recurso, além da nova coleção **multiValueExtendedProperties**, forneça uma representação JSON dessa instância de recurso (ou seja, [message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md), etc.)
 
 ## <a name="response"></a>Resposta
 
@@ -178,7 +178,7 @@ Ao criar uma propriedade estendida em uma _nova_ postagem de grupo, a resposta i
 ## <a name="example"></a>Exemplo
 ##### <a name="request-1"></a>Solicitação 1
 
-O primeiro exemplo cria uma propriedade em um novo evento todos na mesma operação POST estendida de valores múltiplos. Além das propriedades que você normalmente incluiria para um novo evento, o corpo da solicitação inclui a coleção de **multiValueLegacyExtendedProperty** que contém uma propriedade estendida. O corpo da solicitação inclui o seguinte para essa propriedade estendida de valores múltiplos:
+O primeiro exemplo cria uma propriedade estendida de vários valores em um novo evento, tudo na mesma operação POST. Além das propriedades que você normalmente incluiria para um novo evento, o corpo da solicitação inclui a coleção **multiValueExtendedProperties**, que contém uma propriedade estendida. O corpo da solicitação inclui o seguinte para essa propriedade estendida de vários valores:
 
 - **id**, que especifica a propriedade como uma matriz de cadeias de caracteres com o GUID especificado e o nome `Recreation`. 
 - **value**, que especifica `Recreation` como uma matriz de 3 valores de cadeia de caracteres, `["Food", "Hiking", "Swimming"]`.
@@ -219,7 +219,7 @@ Content-Type: application/json
       "type": "Required"
     }
   ],
-  "multiValueLegacyExtendedProperty": [
+  "multiValueExtendedProperties": [
      {
            "id":"StringArray {66f5a359-4659-4830-9070-00050ec6ac6e} Name Recreation",
            "value": ["Food", "Hiking", "Swimming"]
@@ -239,7 +239,7 @@ Para ver a propriedade estendida recém-criada, [obtenha o evento expandido com 
 
 ##### <a name="request-2"></a>Solicitação 2
 
-O segundo exemplo cria uma propriedade estendida de valores múltiplos para a mensagem especificada. Propriedade estendida é o único elemento na coleção **multiValueLegacyExtendedProperty** . O corpo da solicitação inclui o seguinte para a propriedade estendida:
+O segundo exemplo cria uma propriedade estendida de vários valores para a mensagem especificada. Essa propriedade estendida é o único elemento na coleção **multiValueExtendedProperties**. O corpo da solicitação inclui o seguinte para essa propriedade estendida:
 
 - **id** especifica a propriedade como uma matriz de cadeias de caracteres com o GUID especificado e o nome `Palette`.
 - **value** especifica `Palette` como uma matriz de 3 valores de cadeia de caracteres, `["Green", "Aqua", "Blue"]`.
@@ -251,7 +251,7 @@ PATCH https://graph.microsoft.com/beta/me/messages('AAMkAGE1M2_as77AACHsLrBBBA='
 Content-Type: application/json
 
 {
-  "multiValueLegacyExtendedProperty": [
+  "multiValueExtendedProperties": [
       {
          "id":"StringArray {66f5a359-4659-4830-9070-00049ec6ac6e} Name Palette",
          "value":["Green", "Aqua", "Blue"]

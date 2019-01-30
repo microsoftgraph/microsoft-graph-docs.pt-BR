@@ -2,12 +2,12 @@
 title: tipo de recurso de privilegedRoleAssignmentRequest
 description: Representa a solicitação para operações de atribuição de função no gerenciamento de identidades Privilegd.
 localization_priority: Normal
-ms.openlocfilehash: a0cb0bc03d8bb2436e45139bc9db5322cc3970cf
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: c0e0bbfa76b7ffb4e122d381d45dd4092f0843c1
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571741"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642426"
 ---
 # <a name="privilegedroleassignmentrequest-resource-type"></a>tipo de recurso de privilegedRoleAssignmentRequest
 
@@ -21,10 +21,10 @@ Representa a solicitação para operações de atribuição de função no geren
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-|[List](../api/privilegedroleassignmentrequest-list.md) | coleção [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md)|Lista solicitações de atribuição de função.|
-|[Create](../api/privilegedroleassignmentrequest-post.md)|  [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md)|Crie uma solicitação para gerenciar o ciclo de vida de atribuição de função de novo ou existente.|
+|[List](../api/privilegedroleassignmentrequest-list.md) | coleção [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md)|Lista solicitações de atribuição de função.|
+|[Create](../api/privilegedroleassignmentrequest-post.md)|  [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md)|Crie uma solicitação para gerenciar o ciclo de vida de atribuição de função de novo ou existente.|
 |[Cancel](../api/privilegedroleassignmentrequest-cancel.md)|  |Cancele uma solicitação de atribuição de função pendente.|
-|[Pessoal](../api/privilegedroleassignmentrequest-my.md)|  |Obtenha a solicitação de atribuição de função para o solicitante atual.|
+|[Pessoal](../api/privilegedroleassignmentrequest-my.md)|  |Obtenha a solicitação de atribuição de função para requstor atual.|
 
 ## <a name="properties"></a>Propriedades
 
@@ -36,7 +36,7 @@ Representa a solicitação para operações de atribuição de função no geren
 |motivo|String| O motivo para a atribuição de função.|
 |requestedDateTime|DateTimeOffset| Somente leitura. A solicitação criar horário. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
 |roleId|String| A identificação da função.|
-|agenda|[microsoft.graph.governanceSchedule](governanceschedule.md)| O objeto de agendamento da solicitação de atribuição de função.|
+|agenda|[governanceSchedule](governanceschedule.md)| O objeto de agendamento da solicitação de atribuição de função.|
 |status|String| Leitura-only.The o status da solicitação de atribuição de função. O valor pode ser `NotStarted`,`Completed`,`RequestedApproval`,`Scheduled`,`Approved`,`ApprovalDenied`,`ApprovalAborted`,`Cancelling`,`Cancelled`,`Revoked`,`RequestExpired`.|
 |ticketNumber|String| TicketNumber para a atribuição de função. |
 |ticketSystem|String| TicketSystem para a atribuição de função.|

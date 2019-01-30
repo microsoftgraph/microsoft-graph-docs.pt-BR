@@ -4,12 +4,12 @@ description: Tipo complexo que contém propriedades de ideias.
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 8cc7e686aebd531a25b6c1637fcf99338df09396
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 4fa4563904472fad9fc28fa4acb10b77887b5872
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572294"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642755"
 ---
 # <a name="resourcereference-resource-type"></a>tipo de recurso de resourceReference
 
@@ -20,15 +20,7 @@ Tipo complexo que contém propriedades de [ideias](insights.md).
 ## <a name="json-representation"></a>Representação JSON
 
 Veja a seguir uma representação JSON do recurso
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-    "attachments",
-    "singleValueLegacyExtendedProperty",
-    "multiValueLegacyExtendedProperty"
-  ],
-  "@odata.type": "microsoft.graph.resourceReference"
-}-->
+
 ```json
 {
   "webUrl": "string",

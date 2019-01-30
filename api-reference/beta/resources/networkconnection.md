@@ -2,12 +2,12 @@
 title: tipo de recurso networkConnection
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
 localization_priority: Normal
-ms.openlocfilehash: 6d28149854ed3157473b678db442ee3474e456c6
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: ce7de8d5a0f63c4d924e8092e4e9e05f984ec335
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571916"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643584"
 ---
 # <a name="networkconnection-resource-type"></a>tipo de recurso networkConnection
 
@@ -25,13 +25,13 @@ Contém informações com informações de estado sobre a conexão de rede relac
 |destinationPort|String|Porta de destino (da conexão de rede).|
 |destinationUrl|String|Cadeia de caracteres de URL/URI de conexão - excluindo os parâmetros de rede. (por exemplo, 'www.contoso.com/products/default.html')|
 |direção|connectionDirection|Direção da conexão de rede. Os valores possíveis são: `unknown`, `inbound`, `outbound`.|
-|domainRegisteredDateTime|DateTimeOffset|Data quando o domínio de destino foi registrado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|domainRegisteredDateTime|DateTimeOffset|Data quando o domínio de destino foi registrado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |localDnsName|String|O local a resolução de nomes DNS como ele aparece no cache DNS local do host (por exemplo, caso o arquivo 'hosts' foi violado).|
 |natDestinationAddress|String|Endereço IP de destino de conversão de endereço de rede.|
 |natDestinationPort|String|Porta de destino de conversão de endereço de rede.|
 |natSourceAddress|String|Endereço IP de origem de conversão de endereço de rede.|
 |natSourcePort|String|Porta de origem da conversão de endereço de rede.|
-|protocolo| securityNetworkProtocol |Protocolo de rede. Os valores possíveis são: `unknown`, `ip`, `icmp`, `igmp`, `ggp`, `ipv4`, `tcp`, `pup`, `udp`, `idp`, `ipv6`, `ipv6RoutingHeader`, `ipv6FragmentHeader`, `ipSecEncapsulatingSecurityPayload`, `ipSecAuthenticationHeader`, `icmpV6`, `ipv6NoNextHeader`, `ipv6DestinationOptions`, `nd` , `raw`, `ipx`, `spx`, `spxII`.|
+|protocolo|[securityNetworkProtocol](securitynetworkprotocolenumtype.md)|Protocolo de rede. Os valores possíveis são: `unknown`, `ip`, `icmp`, `igmp`, `ggp`, `ipv4`, `tcp`, `pup`, `udp`, `idp`, `ipv6`, `ipv6RoutingHeader`, `ipv6FragmentHeader`, `ipSecEncapsulatingSecurityPayload`, `ipSecAuthenticationHeader`, `icmpV6`, `ipv6NoNextHeader`, `ipv6DestinationOptions`, `nd` , `raw`, `ipx`, `spx`, `spxII`.|
 |riskScore|String|Provedor gerado/calculado o risco de pontuação de conexão de rede. Valor recomendado o intervalo de 0-1, que é igual a um percentual.|
 |Endereço_da_origem|String|Endereço IP de origem (isto é, origem) (da conexão de rede).|
 |Porta_da_origem|String|Porta de IP de origem (isto é, origem) (da conexão de rede).|

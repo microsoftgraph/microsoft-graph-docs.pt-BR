@@ -4,12 +4,12 @@ description: O **InvitationParticipant** é usado para representar um conjunto d
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 666de597d40570a567ea88a375ab15d1e5f09038
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: cb20dde1a74472695755e65dc404a6709f79c8b0
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573596"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641915"
 ---
 # <a name="invitationparticipantinfo-resource-type"></a>tipo de recurso de invitationParticipantInfo
 
@@ -21,7 +21,7 @@ O **InvitationParticipant** é usado para representar um conjunto de identidades
 
 | Propriedade                           | Tipo                          | Descrição                                                                          |
 | :--------------------------------- | :---------------------------- | :----------------------------------------------------------------------------------- |
-| endpointType                       | operationStatus               | Os valores possíveis são: `default` e `voicemail`. |
+| endpointType                       | String                        | Os valores possíveis são: `default` e `voicemail`. |
 | identity                           | [identitySet](identityset.md) | O [identitySet](identityset.md) associado a este convite.                   |
 | languageId                         | String                        | A cadeia de caracteres de cultura do idioma.                                                                                     |
 | região                             | String                        | Região do participante.                                                           |
@@ -40,7 +40,7 @@ Veja a seguir uma representação JSON do recurso.
 }-->
 ```json
 {
-  "endpointType": "operationStatus",
+  "endpointType": "default | voicemail",
   "identity": {"@odata.type": "#microsoft.graph.identitySet"},
   "languageId": "String",
   "region": "String",

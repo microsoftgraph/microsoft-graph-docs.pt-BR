@@ -2,12 +2,12 @@
 title: tipo de recurso de programControl
 description: No Windows Azure AD access analisa o recurso, o objeto de controle do programa representa um controle, vinculando uma revisão de acesso a um programa.
 localization_priority: Normal
-ms.openlocfilehash: 82d9263a909fb11e688ffa6b27f0cf92601ae9e9
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 3d9829b8e2585d4deda95551021e2fd9b8d14c7a
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576553"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29644004"
 ---
 # <a name="programcontrol-resource-type"></a>tipo de recurso de programControl
 
@@ -28,22 +28,22 @@ No recurso de [acesso analisa](accessreviews-root.md) Azure AD, o objeto de cont
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | ProgramControl.Read.All, ProgramControl.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte. |
+|Delegada (conta corporativa ou de estudante)     | ProgramControl.Read.All, ProgramControl.ReadWrite.All |
+|Delegada (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | Sem suporte. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 | `id`                     |`String`                | O identificador atribuído pelo recurso do vínculo entre o programa e controle                                      |
-| `programId`              |`String`                | O programId do programa esse controle é parte do. Necessários na criação.                            |
-| `controlId`              |`String`                | ControlId do controle, em especial o identificador de uma revisão de acesso. Necessários na criação.                                                |
-| `controlTypeId`          |`String`                | O programControlType identifica o tipo de controle do programa - por exemplo, um controle de vinculação para o acesso de convidado analisa. Necessários na criação. |
+| `programId`              |`String`                | O programId do programa esse controle é parte do. Obrigatório ao criar.                            |
+| `controlId`              |`String`                | ControlId do controle, em especial o identificador de uma revisão de acesso. Obrigatório ao criar.                                                |
+| `controlTypeId`          |`String`                | O programControlType identifica o tipo de controle do programa - por exemplo, um controle de vinculação para o acesso de convidado analisa. Obrigatório ao criar. |
 | `displayName`            |`String`                | O nome do controle.                                                             |
 | `status`                 |`String`                | O status do ciclo de vida do controle.                                                 |
 | `createdDateTime`        |`DateTimeOffset`        | A data de criação e a hora do controle programa.                                        |
 | `owner`                  |[userIdentity](useridentity.md)   | O usuário que criou o controle de programa.                                               |
-| `resource`               | [programResource](programresource.md)       | O recurso, um grupo ou um aplicativo alvo de revisão de acesso do controle este programa.                   |
+| `resource`               |`programResource`       | O recurso, um grupo ou um aplicativo alvo de revisão de acesso do controle este programa.                   |
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|

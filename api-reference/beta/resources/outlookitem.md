@@ -4,12 +4,12 @@ description: Veja a seguir uma representação JSON do recurso
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: fe582c4568995710d882ab22ebb7f4683469fc0f
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 8a44f9a2e568991c6803ebf72baf5f712f39ba64
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574744"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643794"
 ---
 # <a name="outlookitem-resource-type"></a>Tipo de recurso outlookItem
 
@@ -24,7 +24,7 @@ Veja a seguir uma representação JSON do recurso
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.outlookItem"
+  "@odata.type": "microsoft.graph.outlookitem"
 }-->
 
 ```json

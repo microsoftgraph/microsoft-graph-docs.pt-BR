@@ -4,12 +4,12 @@ description: Um bloco de anotações do OneNote.
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 715ed59e6a6d109c31f788e92cca751232327136
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: df7793208aa3ba752f1da0bc84903733b79871c9
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573337"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641621"
 ---
 # <a name="notebook-resource-type"></a>Tipo de recurso notebook
 
@@ -68,8 +68,8 @@ Veja a seguir uma representação JSON do recurso
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|sectionGroups|coleção [sectionGroup](sectiongroup.md)|Obtém os grupos de seção no bloco de anotações. Somente leitura. Anulável.|
-|sections|coleção [onenoteSection](section.md)|As seções no bloco de anotações. Somente leitura. Anulável.|
+|sectionGroups|Coleção [SectionGroup](sectiongroup.md)|Obtém os grupos de seção no bloco de anotações. Somente leitura. Anulável.|
+|sections|Coleção [Section](section.md)|As seções no bloco de anotações. Somente leitura. Anulável.|
 
 ## <a name="methods"></a>Métodos
 

@@ -4,12 +4,12 @@ description: 'Representa um locatário do Azure Active Directory. '
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b0e1e0563b0e29d49fbf5dece0f62f70e7a71c52
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: d06ba07c3cee402b88ad5e85e1b0bacc59b9810c
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574989"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642139"
 ---
 # <a name="organization-resource-type"></a>tipo de recurso organization
 
@@ -35,7 +35,7 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |assignedPlans|Coleção [assignedPlan](assignedplan.md)|A coleção de planos de serviço associados ao locatário. Não anulável.            |
-| businessPhones                      | String collection                                         | Número de telefone para a organização. **Observação:** embora essa seja uma coleção de cadeias de caracteres, somente um número pode ser definido para essa propriedade.                                                                                            |
+| businessPhones                      | Coleção de cadeias de caracteres                                         | Número de telefone para a organização. **Observação:** embora essa seja uma coleção de cadeias de caracteres, somente um número pode ser definido para essa propriedade.                                                                                            |
 |city|String| Nome da cidade do endereço da organização |
 |companyLastDirSyncTime|DateTimeOffset|A hora e a data em que o locatário foi sincronizado pela última vez com o diretório local. O tipo de Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |country|String| Nome do país/região do endereço da organização |
@@ -45,14 +45,14 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |dirSyncEnabled|Booliano|**True** se esse objeto está sincronizado de um diretório local; **false** se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; **null** se esse objeto nunca foi sido sincronizado de um diretório local (padrão).|
 |displayName|String|O nome de exibição do locatário.|
 |id|String|A ID do inquilino, um identificador exclusivo que representa a organização (ou Locatário). Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura.|
-|isMultipleDataLocationsForServicesEnabled|Boolean|**true** se a organização estiver habilitada; Multi-Geo **false** se a organização não estiver habilitado Multi-Geo; **Nulo** (padrão). Somente leitura. Para saber mais, confira [OneDrive Online Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
+|isMultipleDataLocationsForServicesEnabled|Booliano|**true** se a organização estiver habilitada; Multi-Geo **false** se a organização não estiver habilitado Multi-Geo; **Nulo** (padrão). Somente leitura. Para saber mais, confira [OneDrive Online Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
 |marketingNotificationEmails|Coleção de cadeias de caracteres| Não anulável.            |
 |objectType|String|Uma cadeia de caracteres que identifica o tipo de objeto. Para locatários, o valor é sempre "Empresa". |
 |postalCode|String| CEP do endereço da organização |
 |preferredLanguage|String| O idioma preferencial da organização. Deve seguir o código ISO 639-1; por exemplo "en". |
 |privacyProfile|[privacyProfile](privacyprofile.md)| O perfil de privacidade de uma organização.            |
-|provisionedPlans|coleção [provisionedPlan](provisionedplan.md)| Não anulável.            |
-|provisioningErrors|coleção OnPremisesProvisioningError| Não anulável.            |
+|provisionedPlans|Coleção [ProvisionedPlan](provisionedplan.md)| Não anulável.            |
+|provisioningErrors|Coleção ProvisioningError| Não anulável.            |
 |securityComplianceNotificationMails|Coleção de cadeias de caracteres||
 |securityComplianceNotificationPhones|Coleção de cadeias de caracteres||
 |state|String| Nome do estado do endereço da organização |

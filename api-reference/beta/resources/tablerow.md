@@ -4,12 +4,12 @@ description: Representa uma linha em uma tabela.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: ea675724af64517fe68d6d79638056a446e53b46
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: e1c9dc0f9aad61d815098b76da8620d808c2538a
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577218"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643745"
 ---
 # <a name="tablerow-resource-type"></a>Tipo de recurso TableRow
 
@@ -34,7 +34,7 @@ Representa uma linha em uma tabela.
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |índice|int|Retorna o número de índice da linha na coleção de linhas da tabela. Indexados com zero. Somente leitura.|
-|values|Json|Representa os valores brutos do intervalo especificado. Os dados retornados podem ser dos tipos: cadeia de caracteres, número ou booliano. Células que contêm um erro retornarão a cadeia de caracteres de erro.|
+|values|json|Representa os valores brutos do intervalo especificado. Os dados retornados podem ser dos tipos: cadeia de caracteres, número ou booliano. Células que contêm um erro retornarão a cadeia de caracteres de erro.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

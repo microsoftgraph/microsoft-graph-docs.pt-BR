@@ -4,12 +4,12 @@ description: Recupere uma lista de scopedRoleMembership para o usuário.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: af5d74161aff083e6d1bc70ad8efa7866d4cc02c
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: b6d458aa275b7405d25f60c8946e544b79bc7ac2
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577330"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29644011"
 ---
 # <a name="list-scopedadministratorof"></a>Lista scopedAdministratorOf
 
@@ -62,7 +62,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.scopedRoleMembership",
+  "@odata.type": "microsoft.graph.scopedrolemembership",
   "isCollection": true
 } -->
 ```http

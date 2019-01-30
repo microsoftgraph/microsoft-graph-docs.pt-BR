@@ -2,12 +2,12 @@
 title: Obter o ponto de extremidade
 description: Recupere as propriedades e relacionamentos de um objeto de ponto de extremidade específico.
 localization_priority: Normal
-ms.openlocfilehash: 7b7f7bee3d6aa935ca4a0a15721363aa159a7b94
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 7c5b7bd28b06e20dbc92b09ff961214828749999
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576560"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640424"
 ---
 # <a name="get-endpoint"></a>Obter o ponto de extremidade
 
@@ -60,7 +60,7 @@ Observação: o objeto response mostrado aqui pode estar truncado por motivos de
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.endpoint"
+  "@odata.type": "microsoft.graph.Endpoint"
 } -->
 ```http
 HTTP/1.1 200 OK

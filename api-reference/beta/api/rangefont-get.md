@@ -4,12 +4,12 @@ description: Recupere as propriedades e os relacionamentos do objeto rangefont.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: d01003edd44853221c9285876c819d4f97a18717
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 79eeb6379c4268ae3d429eb100df79abb93cb757
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576532"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640697"
 ---
 # <a name="get-rangefont"></a>Obter RangeFont
 
@@ -75,7 +75,7 @@ Content-length: 134
   "italic": true,
   "name": "name-value",
   "size": 99,
-  "underline": "None"
+  "underline": "underline-value"
 }
 ```
 

@@ -2,12 +2,12 @@
 title: Tipo de recurso itemBody
 description: Representa as propriedades do corpo de um item, como uma mensagem, um evento ou uma postagem de grupo.
 localization_priority: Normal
-ms.openlocfilehash: f316beda82f292e62d5063f45363e08eeeff7111
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 1cf79f78caa7b2772bc44b99c6b9bdc526340a87
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526141"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643189"
 ---
 # <a name="itembody-resource-type"></a>Tipo de recurso itemBody
 
@@ -18,8 +18,8 @@ Representa as propriedades do corpo de um item, como uma mensagem, um evento ou 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|content|String|O conteúdo do item.|
-|contentType|Cadeia de caracteres|O tipo de conteúdo. Os valores possíveis são: `Text` e `HTML`.|
+|content|Cadeia de caracteres|O conteúdo do item.|
+|contentType|Cadeia de caracteres|O tipo de conteúdo. Os valores possíveis são: `text` e `HTML`.|
 
 ## <a name="json-representation"></a>Representação JSON
 

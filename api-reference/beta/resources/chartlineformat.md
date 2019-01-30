@@ -4,12 +4,12 @@ description: Abrange as opções de formatação dos elementos de linha.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 6bede2e3e8eeb44dbac67832621a2b1586c6b319
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: b4409eb18dab41d43adc038b702a65fa8d63e4de
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577050"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640578"
 ---
 # <a name="chartlineformat-resource-type"></a>Tipo de recurso ChartLineFormat
 
@@ -22,8 +22,8 @@ Abrange as opções de formatação dos elementos de linha.
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Get ChartLineFormat](../api/chartlineformat-get.md) | [WorkbookChartLineFormat](chartlineformat.md) |Leia as propriedades e os relacionamentos do objeto chartLineFormat.|
-|[Update](../api/chartlineformat-update.md) | [WorkbookChartLineFormat](chartlineformat.md) |Atualize o objeto ChartLineFormat. |
+|[Get ChartLineFormat](../api/chartlineformat-get.md) | [ChartLineFormat](chartlineformat.md) |Leia as propriedades e os relacionamentos do objeto chartLineFormat.|
+|[Update](../api/chartlineformat-update.md) | [ChartLineFormat](chartlineformat.md) |Atualize o objeto ChartLineFormat. |
 |[Clear](../api/chartlineformat-clear.md)|Nenhum|Limpe a formatação da linha de um elemento do gráfico.|
 
 ## <a name="properties"></a>Propriedades
@@ -39,11 +39,12 @@ Nenhum
 
 Veja a seguir uma representação JSON do recurso.
 
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
-  "optionalProperties": [],
-  "@odata.type": "microsoft.graph.workbookChartLineFormat"
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.chartLineFormat"
 }-->
 
 ```json

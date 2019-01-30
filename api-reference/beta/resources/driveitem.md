@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: DriveItem
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: b2b09ddfd99da7094ae25addf95985fdf8c6cf99
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: fa172301e633a6f001133d44cb3332a5e133efe2
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572064"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641376"
 ---
 # <a name="driveitem-resource-type"></a>tipo de recurso de driveItem
 
@@ -38,22 +38,16 @@ Veja a seguir uma representação JSON de um recurso **driveItem**.
 
 O recurso **driveItem** é derivado de [**baseItem**][baseItem] e herda propriedades desse recurso.
 
-<!-- { 
-       "blockType": "resource", 
-       "@odata.type": "microsoft.graph.driveItem", 
-       "@type.aka": "oneDrive.item",
+<!-- { "blockType": "resource", "@type": "microsoft.graph.driveItem", "@type.aka": "oneDrive.item",
        "baseType": "microsoft.graph.baseItem",
        "optionalProperties": ["cTag", "children", "folder", "file", "image", "audio", "video",
        "location", "deleted", "specialFolder", "photo", "thumbnails", "searchResult", "remoteItem",
        "shared", "content", "@microsoft.graph.conflictBehavior", "@microsoft.graph.downloadUrl", "@content.sourceUrl",
        "sharepointIds"],
-       "keyProperty": "id", "openType": true 
-    } 
--->
+       "keyProperty": "id", "openType": true } -->
 
 ```json
 {
-  "@odata.type": "microsoft.graph.driveItem", 
   "audio": { "@odata.type": "microsoft.graph.audio" },
   "cTag": "string (etag)",
   "deleted": { "@odata.type": "microsoft.graph.deleted"},
@@ -106,7 +100,7 @@ O recurso **driveItem** é derivado de [**baseItem**][baseItem] e herda propried
 
 | Propriedade             | Tipo               | Descrição
 |:---------------------|:-------------------|:---------------------------------
-| audio                | [audio](audio.md)  | Metadados de áudio, se o item for um arquivo de áudio. Somente leitura.
+| audio                | [audio][]          | Metadados de áudio, se o item for um arquivo de áudio. Somente leitura.
 | createdBy            | [identitySet][]    | Identidade do usuário, dispositivo e aplicativo que criou o item. Somente leitura.
 | createdDateTime      | DateTimeOffset     | Data e hora de criação do item. Somente leitura.
 | cTag                 | String             | Uma eTag para o conteúdo do item. Essa eTag não será alterada se apenas os metadados forem alterados. **Observação** Essa propriedade não será retornada se o item for uma pasta. Somente leitura.
@@ -144,9 +138,9 @@ O recurso **driveItem** é derivado de [**baseItem**][baseItem] e herda propried
 | Relação       | Tipo                            | Descrição
 |:-------------------|:--------------------------------|:--------------------------
 | activities         | Conjunto [itemActivity][]     | A lista de atividades recentes que ocorreram neste item.
-| análise          | recurso de [itemAnalytics][]      | Análise sobre as atividades de modo de exibição que foram realizada neste item.
+| analytics          | [itemAnalytics][] resource      | Análise sobre as atividades de modo de exibição que foram realizada neste item.
 | content            | Fluxo                          | O fluxo de conteúdo, se o item representar um arquivo.
-| children           | coleção driveItem            | Conjunto que contêm objetos Item para os filhos imediatos de Item. Somente os itens que representam pastas têm filhos. Somente leitura. Anulável.
+| children           | Conjunto driveitem            | Conjunto que contêm objetos Item para os filhos imediatos de Item. Somente os itens que representam pastas têm filhos. Somente leitura. Anulável.
 | listItem           | [listItem][]                    | Para as unidades no SharePoint, o item de lista da biblioteca de documento associado. Somente leitura. Anulável.
 | permissions        | Coleção [permission][]       | O conjunto de permissões do item. Somente leitura. Anulável.
 | miniaturas         | Coleção [thumbnailSet][]     | Coleção contendo objetos [ThumbnailSet][] associados ao item. Para saber mais, confira [obtendo miniaturas][]. Somente leitura. Anulável.
@@ -171,8 +165,8 @@ A URL só estará disponível por um curto período de tempo (1 hora) antes de e
 |:---------------------------------------------------------|:------------------
 | [Obter item](../api/driveitem-get.md)                      | `GET /drive/items/{item-id}`
 | [Listar atividades](../api/activities-list.md)             | `GET /drive/items/{item-id}/activities`
-| [Obtenha a análise][]                                        | `GET /drive/items/{item-id}/analytics`
-| [Fazer atividades pelo intervalo][]                           | `GET /drive/items/{item-id}/getActivitiesByInterval`
+| [Obter análises][]                                        | `GET /drive/items/{item-id}/analytics`
+| [Obter atividades por intervalo][]                           | `GET /drive/items/{item-id}/getActivitiesByInterval`
 | [Listar filhos](../api/driveitem-list-children.md)       | `GET /drive/items/{item-id}/children`
 | [Listar versões](../api/driveitem-list-versions.md)       | `GET /drive/items/{item-id}/versions`
 | [Criar item](../api/driveitem-post-children.md)         | `POST /drive/items/{item-id}/children`
@@ -194,8 +188,8 @@ A URL só estará disponível por um curto período de tempo (1 hora) antes de e
 | [Item de visualização][item-preview]                             | `POST /drive/items/{item-id}/preview`
 
 [item-preview]: ../api/driveitem-preview.md
-[Obtenha a análise]: ../api/itemanalytics-get.md
-[Fazer atividades pelo intervalo]: ../api/itemactivity-getbyinterval.md
+[Obter análises]: ../api/itemanalytics-get.md
+[Obter atividades por intervalo]: ../api/itemactivity-getbyinterval.md
 
 ## <a name="remarks"></a>Comentários
 

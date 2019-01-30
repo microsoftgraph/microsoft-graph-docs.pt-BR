@@ -3,12 +3,12 @@ title: tipo de recurso de historyItem
 description: Representa um item de histórico de uma atividade em um aplicativo. As atividades do usuário representam um único destino dentro de seu aplicativo - por exemplo, um programa de TV, um documento ou uma campanha atual em um jogo de vídeo. Quando um usuário emprega com que a atividade, o compromisso é capturado como um item de histórico que indica a hora de início e término para a atividade. À medida que o usuário emprega novamente com que a atividade ao longo do tempo, vários itens de histórico são registrados para atividade de um único usuário.
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 582cfe71ab85602efc087d5e39005d5a9763394d
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 640b2e777337182b95572ba086f1caf3459ef57e
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576301"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640585"
 ---
 # <a name="historyitem-resource-type"></a>tipo de recurso de historyItem
 
@@ -29,7 +29,7 @@ Quando um aplicativo cria uma sessão, um objeto **historyItem** deve ser adicio
 
 |Nome | Tipo | Descrição|
 |:----|:-----|:-----------|
-|status | cadeia de caracteres de enum | Definido pelo servidor. Um código de status usado para identificar objetos válidos. Valores: ativo, atualizado, excluídos, ignorado.|
+|status | EnumType | Definido pelo servidor. Um código de status usado para identificar objetos válidos. Valores: ativo, atualizado, excluídos, ignorado.|
 |userTimezone | String | Opcional. O fuso horário no qual o dispositivo do usuário usado para gerar a atividade foi localizado no momento da criação de atividade. Valores fornecidos como Olson IDs para suportar a representação de plataforma cruzada.|
 |createdDateTime | DateTimeOffset | Definido pelo servidor. Data e hora em UTC quando o objeto foi criado no servidor.|
 |lastModifiedDateTime | DateTimeOffset | Definido pelo servidor. Data e hora em UTC quando o objeto foi modificado no servidor.|
@@ -61,7 +61,7 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-    "status": "enum-string",
+    "status": "String (EnumType)",
     "createdDateTime": "DateTimeOffset",
     "lastModifiedDateTime": "DateTimeOffset",
     "id": "String",

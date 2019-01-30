@@ -1,17 +1,17 @@
 ---
-title: Atualizar o aplicativo
+title: Atualizar aplicativo
 description: Atualize as propriedades do objeto application.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 9965a46e340063940e1a9af18a89ada7e492bf26
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 335281a0ac37ae3b966f731112223f019a67437d
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572210"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642825"
 ---
-# <a name="update-application"></a>Atualizar o aplicativo
+# <a name="update-application"></a>Atualizar aplicativo
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -41,23 +41,23 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|allowPublicClient|Boolean| Especifica se o aplicativo pode atuar como um cliente público. Por exemplo, um aplicativo instalado em execução em um dispositivo móvel. O valor padrão é *false*. |
-|API|[API](../resources/api.md)| Especifica as configurações para um aplicativo de API. |
-|appRoles|coleção [appRole](../resources/approle.md)|A coleção de funções de aplicativos que um aplicativo pode declarar. Essas funções podem ser atribuídas a usuários, grupos ou entidades de serviço. Não anulável.|
-|applicationAliases|String collection| Os URIs que identifique o aplicativo. Para mais informações, consulte [objetos de aplicativo e objetos de entidade de serviço](https://azure.microsoft.com/documentation/articles/active-directory-application-objects/). O operador *any* é obrigatório para expressões de filtro em propriedades de vários valores. Não anulável. |
-|createdDateTime|DateTimeOffset| A data e hora que o aplicativo foi registrado. |
-|deletedDateTime|DateTimeOffset| A data e hora que o aplicativo foi excluído. |
-|displayName|String|O nome de exibição para o aplicativo. |
-|id|String|O identificador exclusivo para o aplicativo. Herdado de [directoryObject](../resources/directoryobject.md). Chave. Não anulável. Somente leitura. |
-|Info|[informationalUrl](../resources/informationalurl.md)| Informações básicas de perfil do aplicativo. | Especifica as configurações para clientes instalados como os dispositivos móveis ou da área de trabalho. |
-|keyCredentials|coleção [keyCredential](../resources/keycredential.md)|O conjunto de credenciais principais associados ao aplicativo não anuláveis. |
-|logotipo|Stream|O logotipo principal para o aplicativo. Não anulável. |
-|orgRestrictions|String collection| O tenantIds organizacional à qual o aplicativo é restrito.  Se a coleção estiver vazia, o aplicativo está multilocatário (não restrito). Se a coleção contiver tenantIds, o aplicativo é restrito ao tenantIds organizacional na coleção. Especificar outros tenants, mas não a tenantId em que o aplicativo está registrado implica que a tenantId do aplicativo é indiretamente incluída. |
-|passwordCredentials|coleção [passwordCredential](../resources/passwordcredential.md)|A coleção de credenciais de senha associados ao aplicativo. Não anulável.|
+|allowPublicClient|Booliano| Especifica se o aplicativo pode atuar como um cliente público. Por exemplo, um aplicativo instalado em execução em um dispositivo móvel. O valor padrão é *false*. |
+|api|[api](../resources/api.md)| Especifica configurações para um aplicativo de API. |
+|appRoles|Coleção [appRole](../resources/approle.md)|A coleção de funções de aplicativo que um aplicativo pode declarar. Essas funções podem ser atribuídas a usuários, grupos ou entidades de serviço. Não anulável.|
+|applicationAliases|Coleção String| Os URIs que identificam o aplicativo. Para saber mais, confira [Objetos do aplicativo e objetos da entidade de serviço](https://azure.microsoft.com/documentation/articles/active-directory-application-objects/). O operador *any* é obrigatório para expressões de filtro em propriedades de vários valores. Não anulável. |
+|createdDateTime|DateTimeOffset| A data e a hora que o aplicativo foi registrado. |
+|deletedDateTime|DateTimeOffset| A data e a hora que o aplicativo foi excluído. |
+|displayName|String|O nome de exibição do aplicativo. |
+|id|String|O identificador exclusivo do aplicativo. Herdado de [directoryObject](../resources/directoryobject.md). Chave. Não anulável. Somente leitura. |
+|informações |[informationalUrl](../resources/informationalurl.md)| Informações de perfil básicas do aplicativo. | Especifica configurações para clientes instalados, como dispositivos móveis ou da área de trabalho. |
+|keyCredentials|Coleção [keyCredential](../resources/keycredential.md)|A coleção de credenciais chaves associada ao aplicativo Não anulável. |
+|logo|Stream|O principal logotipo do aplicativo. Não anulável. |
+|orgRestrictions|Coleção String| O tenantIds organizacional à qual o aplicativo é restrito.  Se a coleção estiver vazia, o aplicativo está multilocatário (não restrito). Se a coleção contiver tenantIds, o aplicativo é restrito ao tenantIds organizacional na coleção. Especificar outros tenants, mas não a tenantId em que o aplicativo está registrado implica que a tenantId do aplicativo é indiretamente incluída. |
+|passwordCredentials|Coleção [passwordCredential](../resources/passwordcredential.md)|A coleção de credenciais de senha associada ao aplicativo. Não anulável.|
 |preAuthorizedApplications|coleção [preAuthorizedApplication](../resources/preauthorizedapplication.md)| Lista de aplicativos e as permissões solicitadas para consentimento implícito. Requer um administrador tenha fornecido a consentimento para o aplicativo. preAuthorizedApplications não exigem o usuário concorda com as permissões solicitadas. Permissões listadas na preAuthorizedApplications não exigem consentimento do usuário. No entanto, qualquer permissões solicitadas adicionais não listados no preAuthorizedApplications exigem o consentimento do usuário. |
-|requiredResourceAccess|coleção [requiredResourceAccess](../resources/requiredresourceaccess.md)|Especifica os recursos que esse aplicativo requer acesso aos e o conjunto de escopos de permissão do OAuth e funções de aplicativos que ele precisa em cada um desses recursos. Essa configuração prévia do acesso a recursos necessários drives a experiência de consentimento. Não anulável.|
-|marcações|String collection| Cadeias de caracteres personalizadas que podem ser usadas para categorizar e identificar o aplicativo. |
-|web|[webApplication](../resources/web.md)| Especifica as configurações para um aplicativo web. |
+|requiredResourceAccess|[requiredResourceAccess](../resources/requiredresourceaccess.md) collection|Especifica os recursos para os quais esse aplicativo requer acesso e o conjunto de escopos de permissão e funções de aplicativo do OAuth necessários em cada um desses recursos. Essa pré-configuração de acesso necessário aos recursos impulsiona a experiência de consentimento. Não anulável.|
+|tags|Coleção String| Sequências personalizadas que podem ser usadas para categorizar e identificar o aplicativo. |
+|web|[web](../resources/web.md)| Especifica configurações para um aplicativo Web. |
 
 ## <a name="response"></a>Resposta
 

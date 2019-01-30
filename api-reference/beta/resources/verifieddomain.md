@@ -2,12 +2,12 @@
 title: Tipo de recurso verifiedDomain
 description: Especifica um domínio de um locatário. A propriedade **verifiedDomains** da entidade organization é uma coleção de **VerifiedDomain**.
 localization_priority: Normal
-ms.openlocfilehash: 01e2d174f47d08bea4de9d582ffd6126002e8f1f
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: c13c3b3da39b762c26d637deaddafbee5da40160
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576868"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641320"
 ---
 # <a name="verifieddomain-resource-type"></a>Tipo de recurso verifiedDomain
 
@@ -34,7 +34,7 @@ Veja a seguir uma representação JSON do recurso
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.verifiedDomain"
+  "@odata.type": "microsoft.graph.verifieddomain"
 }-->
 
 ```json

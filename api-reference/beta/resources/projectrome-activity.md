@@ -3,12 +3,12 @@ title: tipo de recurso de atividade
 description: Representa uma única atividade dentro de um aplicativo - por exemplo, um programa de TV, um documento ou uma campanha atual em um jogo de vídeo. Quando um usuário emprega com que a atividade, o compromisso é capturado como um item de histórico que indica a hora de início e término para a atividade. À medida que o usuário emprega novamente com que a atividade ao longo do tempo, vários itens de histórico são registrados para atividade de um único usuário.
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 3d05c684d9498378a07a944f7aebd5e8a6b97f53
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 5deaab5d7ea071bfda686380d49fb41214a7b29e
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573834"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641271"
 ---
 # <a name="activity-resource-type"></a>tipo de recurso de atividade
 
@@ -48,7 +48,7 @@ Suas atividades do usuário serão exibidas em experiências do usuário Cortana
 |visualElements| [visualInfo](../resources/projectrome-visualinfo.md) | Obrigatório. O objeto que contém informações para renderizar a atividade na UX.|
 |contentInfo | Objeto sem JSON | Opcional. Um parte personalizada de dados - descrição extensível de longa distância o JSON do conteúdo de acordo com a sintaxe [schema.org](https://schema.org) .|
 |expirationDateTime | DateTimeOffset | Definido pelo servidor. Data e hora em UTC quando o objeto expira no servidor.|
-|status | cadeia de caracteres de enum | Definido pelo servidor. Um código de status usado para identificar objetos válidos. Valores: ativo, atualizado, excluídos, ignorado.|
+|status | EnumType | Definido pelo servidor. Um código de status usado para identificar objetos válidos. Valores: ativo, atualizado, excluídos, ignorado.|
 
 ## <a name="relationships"></a>Relações
 
@@ -87,7 +87,7 @@ Veja a seguir uma representação JSON do recurso.
     "lastModifiedDateTime": "DateTimeOffset",
     "expirationDateTime": "DateTimeOffset",
     "id": "String",
-    "status": "active | updated | deleted | ignored",
+    "status": "EnumType",
     "contentInfo": { "@data.type": "microsoft.graph.Json" },
     "visualElements": { "@data.type": "microsoft.graph.visualInfo" },
     "historyItems": [{ "@odata.type": "microsoft.graph.historyItem" }]

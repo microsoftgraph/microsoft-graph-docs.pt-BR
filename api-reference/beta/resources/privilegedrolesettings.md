@@ -2,12 +2,12 @@
 title: tipo de recurso de privilegedRoleSettings
 description: Representa as configurações para uma função privilegiada.
 localization_priority: Normal
-ms.openlocfilehash: 673327e3c83a4111eb469ca48550836433dbdf0a
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 7d4c14065defc63190d1d25b435c734b9f219e36
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577148"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642776"
 ---
 # <a name="privilegedrolesettings-resource-type"></a>tipo de recurso de privilegedRoleSettings
 
@@ -20,22 +20,22 @@ Representa as configurações para uma função privilegiada.
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Obter privilegedRoleSettings](../api/privilegedrolesettings-get.md) | [privilegedRoleSettings](privilegedrolesettings.md) |Leia as propriedades e os relacionamentos do objeto privilegedRoleSettings.|
+|[Get privilegedRoleSettings](../api/privilegedrolesettings-get.md) | [privilegedRoleSettings](privilegedrolesettings.md) |Leia as propriedades e os relacionamentos do objeto privilegedRoleSettings.|
 |[Atualizar privilegedRoleSettings](../api/privilegedrolesettings-update.md) | [privilegedRoleSettings](privilegedrolesettings.md) |Atualize o objeto privilegedRoleSettings.|
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|elevationDuration| Cadeia de caracteres (timestamp) |A duração quando a função for ativada.|
-|id| cadeia de caracteres (identificador)| O identificador exclusivo para as configurações de função. Somente leitura.|
-|isMfaOnElevationConfigurable|booliano|**true** se mfaOnElevation é configurável. **false** se mfaOnElevation não é configurável.|
-|lastGlobalAdmin|booliano|Interno usado apenas.|
-|maxElavationDuration| cadeia de caracteres (identificador)| |Duração máxima para a função ativada.|
-|mfaOnElevation|booliano|**true** se MFA é necessária para ativar a função. **false** se MFA não é necessário para ativar a função.|
-|minElevationDuration|cadeia de caracteres (identificador)||Duração mínima para a função ativada.|
-|notificationToUserOnElevation|booliano|**True** se enviar notificação ao usuário final quando a função é ativada. **False** se não enviar notificação quando a função é ativada.|
-|ticketingInfoOnElevation|booliano|**true** se as informações de tickets são necessária quando ativar a função. **false** se as informações de tickets não são necessária quando ativar a função.|
-|approvalOnElevation|booliano|**true** se a aprovação é necessária quando ativar a função. **false** se a aprovação não é necessária quando ativar a função.|
-|approverIds| String collection |Lista de ids de aprovação, se a aprovação é necessária para a ativação.|
+|elevationDuration|duration|A duração quando a função for ativada.|
+|id|string| O identificador exclusivo para as configurações de função. Somente leitura.|
+|isMfaOnElevationConfigurable|boolean|**true** se mfaOnElevation é configurável. **false** se mfaOnElevation não é configurável.|
+|lastGlobalAdmin|boolean|Interno usado apenas.|
+|maxElavationDuration|duration|Duração máxima para a função ativada.|
+|mfaOnElevation|boolean|**true** se MFA é necessária para ativar a função. **false** se MFA não é necessário para ativar a função.|
+|minElevationDuration|duration|Duração mínima para a função ativada.|
+|notificationToUserOnElevation|boolean|**True** se enviar notificação ao usuário final quando a função é ativada. **False** se não enviar notificação quando a função é ativada.|
+|ticketingInfoOnElevation|boolean|**true** se as informações de tickets são necessária quando ativar a função. **false** se as informações de tickets não são necessária quando ativar a função.|
+|approvalOnElevation|boolean|**true** se a aprovação é necessária quando ativar a função. **false** se a aprovação não é necessária quando ativar a função.|
+|approverIds|array|Lista de ids de aprovação, se a aprovação é necessária para a ativação.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -65,7 +65,7 @@ Veja a seguir uma representação JSON do recurso.
   "notificationToUserOnElevation": true,
   "ticketingInfoOnElevation": true,
   "approvalOnElevation": false,
-  "approverIds": [ "String (identifier)" ]
+  "approverIds": []
 }
 
 ```

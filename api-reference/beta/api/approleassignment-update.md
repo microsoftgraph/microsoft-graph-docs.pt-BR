@@ -2,12 +2,12 @@
 title: Atualizar approleassignment
 description: Atualize as propriedades do objeto approleassignment.
 localization_priority: Normal
-ms.openlocfilehash: 89147651b1a3ea182247cf3620efba9464c4b055
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 54c256e3b94a5bb2d62c2ffe31ecf777d472b93c
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572910"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643472"
 ---
 # <a name="update-approleassignment"></a>Atualizar approleassignment
 
@@ -41,11 +41,11 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |creationTimestamp|DateTimeOffset|A hora em que a concessão foi criada.|
-|id|Guid|A id de função que foi atribuída à entidade de segurança.  Essa função deve ser declarada pelo destino recurso aplicativo **resourceId** em sua propriedade **appRoles** . Onde o recurso não declarar todas as permissões, uma id do padrão (zero GUID) deve ser especificada.                            **Anotações**: não anulável.            |
-|principalDisplayName|String|O nome de exibição da entidade que foi concedido o acesso.|
+|id|Guid|A ID de função que foi atribuída à entidade.  Essa função deve ser declarada pela **resourceId** do aplicativo do recurso de destino em sua propriedade **appRoles**. Quando o recurso não declarar nenhuma permissão, uma ID padrão (zero GUID) deve ser especificada.                            **Anotações**: não anulável.            |
+|principalDisplayName|String|O nome de exibição da entidade à qual foi concedido o acesso.|
 |principalId|Guid|O identificador exclusivo (**objectId**) para a entidade sendo concedida o acesso.                            **Observações**: necessários.            |
-|principalType|String|O tipo de entidade.  Isso pode ser "User", "Grupo" ou "ServicePrincipal".|
-|resourceDisplayName|String|O nome de exibição do recurso para o qual a atribuição foi feita.|
+|principalType|String|O tipo de entidade.  Pode ser “User”, “Group” ou “ServicePrincipal”.|
+|resourceDisplayName|String|O nome de exibição do recurso para o qual a tarefa foi feita.|
 |resourceId|Guid|O identificador exclusivo (**objectId**) para o recurso de destino (entidade de serviço) para o qual a atribuição foi feita.|
 
 ## <a name="response"></a>Resposta
@@ -76,7 +76,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.appRoleAssignment"
+  "@odata.type": "microsoft.graph.approleassignment"
 } -->
 ```http
 HTTP/1.1 200 OK

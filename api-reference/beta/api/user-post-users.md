@@ -4,12 +4,12 @@ description: Use essa API para criar um novo usuário.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 04ae713cca285bd9fc16c3957ea1ca71dfea01a6
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 9d1e98ffa4be67141d1e5ae679f9f51a71ef92fd
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574086"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642524"
 ---
 # <a name="create-user"></a>Criar usuário
 
@@ -48,7 +48,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar um usuá
 |displayName |string |Nome de exibição no catálogo de endereços do usuário.|
 |onPremisesImmutableId |string |Só precisa ser especificado ao criar uma nova conta de usuário se você está usando um domínio federado para propriedade userPrincipalName (UPN) do usuário.|
 |mailNickname |string |O alias de email do usuário.|
-|passwordProfile|[passwordProfile](../resources/passwordprofile.md) |O perfil de senha do usuário.|
+|passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |O perfil de senha do usuário.|
 |userPrincipalName |string |Nome UPN (usuario@contoso.com).|
 
 Desde que o recurso de **usuário** oferece suporte às [extensões](/graph/extensibility-overview), você pode usar o `POST` operação e adicionar propriedades personalizadas com seus próprios dados à instância do usuário ao criá-la.

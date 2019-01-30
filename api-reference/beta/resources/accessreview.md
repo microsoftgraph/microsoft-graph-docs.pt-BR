@@ -4,12 +4,12 @@ description: 'No Windows Azure AD access analisa o recurso, o `accessReview` rep
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a02cc7cfe74bf9f12c4e2a8568c764934cb0c842
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 2cb5d32a8dcc6b12330aca6e831a8ab2083759df
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576343"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642489"
 ---
 # <a name="accessreview-resource-type"></a>tipo de recurso de accessReview
 
@@ -40,8 +40,8 @@ No recurso de [acesso analisa](accessreviews-root.md) Azure AD, o `accessReview`
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | AccessReview.Read.All, AccessReview.ReadWrite.All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte. |
+|Delegada (conta corporativa ou de estudante)     | AccessReview.Read.All, AccessReview.ReadWrite.All |
+|Delegada (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | Sem suporte. |
 
 
@@ -49,15 +49,15 @@ No recurso de [acesso analisa](accessreviews-root.md) Azure AD, o `accessReview`
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 | `id`                      |`String`                                                        | O identificador exclusivo atribuído pelo recurso de uma revisão de acesso. |
-| `displayName`             |`String`                                                        | O nome de revisão de acesso. Necessários na criação. |
-| `startDateTime`           |`DateTimeOffset`                                                | DateTime quando a revisão está agendada para ser iniciar.  Isso poderia ser uma data no futuro.  Necessários na criação. |
-| `endDateTime`             |`DateTimeOffset`                                                | DateTime quando a revisão está agendada para terminar. Isto deve ser de pelo menos um dia mais recente do que a data de início.  Necessários na criação. |
+| `displayName`             |`String`                                                        | O nome de revisão de acesso. Obrigatório ao criar. |
+| `startDateTime`           |`DateTimeOffset`                                                | DateTime quando a revisão está agendada para ser iniciar.  Isso poderia ser uma data no futuro.  Obrigatório ao criar. |
+| `endDateTime`             |`DateTimeOffset`                                                | DateTime quando a revisão está agendada para terminar. Isto deve ser de pelo menos um dia mais recente do que a data de início.  Obrigatório ao criar. |
 | `status`                  |`String`                                                        | Este campo somente leitura Especifica o status de um accessReview. Os estados típicos incluem `Initializing`, `NotStarted`, `Starting`,`InProgress`, `Completing`, `Completed`, `AutoReviewing`, e `AutoReviewed`. |
 | `description`             |`String`                                                        | A descrição fornecida pelo criador de revisão do access, para mostrar aos revisores. |
-| `businessFlowTemplateId`  |`String`                                                        | O identificador de modelo de fluxo de negócios. Necessários na criação. |
-| `reviewerType`            |`String`                                                        | O tipo de relacionamento de revisor ao objeto de destino, uma das `self`, `delegated` ou `entityOwners`. Necessários na criação. | 
+| `businessFlowTemplateId`  |`String`                                                        | O identificador de modelo de fluxo de negócios. Obrigatório ao criar. |
+| `reviewerType`            |`String`                                                        | O tipo de relacionamento de revisor ao objeto de destino, uma das `self`, `delegated` ou `entityOwners`. Obrigatório ao criar. | 
 | `createdBy`               |[userIdentity](useridentity.md)                                 | O usuário que criou este examinar. |
-| `reviewedEntity`          |`microsoft.graph.identity`                                      | O objeto para o qual o access analisa é revisar as atribuições de direitos de acesso. Isso pode ser o grupo para a revisão de associações de usuários em um grupo, ou o aplicativo para uma análise das atribuições de usuários para um aplicativo. Necessários na criação. | 
+| `reviewedEntity`          |`microsoft.graph.identity`                                      | O objeto para o qual o access analisa é revisar as atribuições de direitos de acesso. Isso pode ser o grupo para a revisão de associações de usuários em um grupo, ou o aplicativo para uma análise das atribuições de usuários para um aplicativo. Obrigatório ao criar. | 
 | `settings`                |`microsoft.graph.accessReviewSettings`             | As configurações de um accessReview, consulte a definição de tipo abaixo. |
 
 
@@ -104,10 +104,10 @@ Veja a seguir uma representação JSON do recurso.
  "description": "string",
  "businessFlowTemplateId": "string (identifier)",
  "reviewerType": "string",
- "createdBy": "microsoft.graph.useridentity",
- "reviewedEntity": "microsoft.graph.entity",
- "settings": "microsoft.graph.entity",
- "reviewers": [ { "@odata.type": "#microsoft.graph.useridentity" } ]
+ "createdBy": "microsoft.graph.userIdentity",
+ "reviewedEntity": "microsoft.graph.identity",
+ "settings": "microsoft.graph.accessReviewSettings",
+ "reviewers": "Collection(microsoft.graph.userIdentity)"
 }
 
 ```

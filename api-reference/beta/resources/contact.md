@@ -4,12 +4,12 @@ description: Um contato é um item no Outlook no qual você pode organizar e sal
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 41eed344abda9e06040a7c20027e219526c83e8f
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: d2bdc1be9e504bc72ce12ffe924b6da0812b99ce
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576854"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642447"
 ---
 # <a name="contact-resource-type"></a>tipo de recurso contact
 
@@ -31,9 +31,9 @@ Veja a seguir uma representação JSON do recurso
   "blockType": "resource",
   "optionalProperties": [
     "extensions",
-    "multiValueLegacyExtendedProperty",
+    "multiValueExtendedProperties",
     "photo",
-    "singleValueLegacyExtendedProperty"
+    "singleValueExtendedProperties"
   ],
   "@odata.type": "microsoft.graph.contact"
 }-->
@@ -85,7 +85,7 @@ Veja a seguir uma representação JSON do recurso
 |:---------------|:--------|:----------|
 |assistantName|String|O nome do assistente do contato.|
 |birthday|DateTimeOffset|O aniversário do contato. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|categories|Coleção de cadeias de caracteres|As categorias associadas ao contato. Cada categoria corresponde à propriedade **displayName** de um [outlookCategory](outlookcategory.md) definidas para o usuário.|
+|categories|Coleção de cadeias de caracteres|As categorias associadas ao contato. Cada categoria corresponde à propriedade **displayName** de uma [outlookCategory](outlookcategory.md) definida para o usuário.|
 |changeKey|String|Identifica a versão do contato. Toda vez que o contato muda, a ChangeKey também muda. Isso permite que o Exchange aplique alterações na versão correta do objeto.|
 |children|Coleção de cadeias de caracteres|Os nomes dos filhos do contato.|
 |nomeDaEmpresa|String|O nome da empresa do contato.|
@@ -125,9 +125,9 @@ Veja a seguir uma representação JSON do recurso
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |extensions|Coleção [extension](extension.md)|A coleção de extensões open definidas para o contato. Anulável.|
-|multiValueLegacyExtendedProperty|Coleção [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de vários valores definidas para o contato. Somente leitura. Anulável.|
+|multiValueExtendedProperties|Coleção [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de vários valores definidas para o contato. Somente leitura. Anulável.|
 |Foto|[photo](profilephoto.md)| Imagem de contato opcional. Você pode obter ou definir uma foto de um contato.|
-|singleValueLegacyExtendedProperty|Coleção [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de valor único definidas para o contato. Somente leitura. Anulável.|
+|singleValueExtendedProperties|Coleção [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de valor único definidas para o contato. Somente leitura. Anulável.|
 
 ## <a name="methods"></a>Métodos
 | Método           | Tipo de retorno    |Descrição|

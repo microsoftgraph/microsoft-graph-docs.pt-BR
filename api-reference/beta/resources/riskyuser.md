@@ -4,12 +4,12 @@ description: Representa os usuários do Windows Azure AD que estão em risco. Az
 author: cloudhandler
 localization_priority: Normal
 ms.prod: security
-ms.openlocfilehash: 875df6db36e4075d0d02a682ede5c177d49cfe7d
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 27c189a81d6ba4e088c1242acfd2cf0d0f5c56c5
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572182"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643906"
 ---
 # <a name="riskyusers-resource-type"></a>tipo de recurso de riskyUsers
 
@@ -35,9 +35,9 @@ Para obter mais informações sobre eventos de risco, consulte [Proteção de id
 |`id`|`string`|Id exclusiva do usuário em risco|
 |`isDeleted`|`bool`|Indica se o usuário é excluído. Os valores possíveis são: `true`,`false`|
 |`isGuest`|`bool`|Indica se o usuário é um usuário convidado. Os valores possíveis são: `true` e `false`. True se a identidade do usuário encontra-se fora do locatário em consideração. Esse usuário pode ser uma B2B ou um usuário B2C com identidade no Azure AD, MSA ou 3º provedor de identidade de terceiros. False se a identidade do usuário estiver dentro do locatário em consideração|
-|`riskDetail`|`riskDetail`|Fornece o motivo por trás de um estado específico de um usuário riscado, entrar ou um evento de risco. Os valores possíveis são: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `unknownFutureValue`. O valor `none` significa que nenhuma ação foi realizada no usuário ou entrar até o momento.|
-|`riskLevel`|`riskLevel`|Fornece o nível de risco geral de um usuário riscado, entrar ou um evento de risco. Os valores possíveis são: `none`, `low`, `medium`, `high`, `hidden`, e `unknownFutureValue`. O valor `hidden` significa que o usuário ou entrar não foi habilitada para a proteção de identidade do Windows Azure AD.|
-|`riskState`|`riskState`|Fornece o 'estado de risco' de um usuário riscado, entrar ou um evento de risco. Os valores possíveis são: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
+|`riskDetail`|`riskDetail`|Fornece o motivo atrás um estado específico de um usuário arriscado, entrada ou um evento de risco. Os valores possíveis são `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `unknownFutureValue`. O valor `none` significa que nenhuma ação foi realizada pelo usuário ou entrar até o momento.|
+|`riskLevel`|`riskLevel`|Fornece o nível de risco geral de um usuário riscado, entrar ou um evento de risco. Os valores possíveis são: `none`, `low`, `medium`, `high`, `hidden`, e `unknownFutureValue`. O valor `hidden` significa que o usuário ou entrada não foi habilitado para proteção de identidade do Azure AD.|
+|`riskState`|`riskState`|Fornece o motivo atrás de um estado específico de um usuário arriscado, entrada ou um evento de risco. Os valores possíveis são `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
 |`riskLastUpdatedDateTime`|`datetime`|A data e hora em que o usuário riscado foi atualizada pela última vez|
 |`userDisplayName`|`string`|Nome de exibição do usuário riscado|
 |`userPrincipalName`|`string`|Nome principal de usuário riscado|
@@ -46,9 +46,9 @@ Para obter mais informações sobre eventos de risco, consulte [Proteção de id
 
 | Relação | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|id|string| O identificador exclusivo do usuário com a qual um evento de determinado risco está associado.|
-|isGuest|booliano| Um usuário riscado poderia ser um usuário Home (B2E) ou um usuário convidado (B2B, B2C).|
-|isDeleted|booliano| Um usuário pode ou não pode ser excluído. |
+|id|UserObjectId| O identificador exclusivo do usuário com a qual um evento de determinado risco está associado.|
+|isGuest|isGuest| Um usuário riscado poderia ser um usuário Home (B2E) ou um usuário convidado (B2B, B2C).|
+|isDeleted|isDeleted| Um usuário pode ou não pode ser excluído. |
 |riskState|riskState| Um usuário riscado pode existir em um dos vários estados. |
 |riskDetail|riskDetail| Um usuário riscado poderia ser em um determinado estado por vários motivos. |
 |riskLevel|riskLevel| Um usuário riscado poderia ser considerado um dos vários níveis de risco. |
@@ -60,8 +60,9 @@ Veja a seguir uma representação JSON do recurso.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
+
   ],
-  "@odata.type": "microsoft.graph.riskyUser"
+  "@odata.type": "microsoft.graph.riskyusers"
 }-->
 
 ```json

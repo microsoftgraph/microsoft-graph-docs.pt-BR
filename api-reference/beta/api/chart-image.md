@@ -4,12 +4,12 @@ description: Processa o gráfico como uma imagem codificada em base64, dimension
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 3405ebd80193028ad2e2150c800082993828183d
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 5892864d8adb94c4c6193dc4776f8febd938ff36
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571776"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642839"
 ---
 # <a name="chart-image"></a>Chart: Image
 
@@ -37,14 +37,14 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/Image(width=0,height=0,fitting
 | Autorização  | {token} de portador. Obrigatório. |
 | Workbook-Session-Id  | ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.|
 
-## <a name="path-parameters"></a>Parâmetros do caminho
+## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|height|Int32|A altura desejada da imagem resultante. Opcional.|
-|width|Int32|A largura desejada da imagem resultante. Opcional.|
-|fittingMode|string|O método usado para dimensionar o gráfico para as dimensões especificadas (se a altura e largura são definidas)."  Os valores possíveis são: `Fit`, `FitAndCenter`, `Fill`.|
+|height|number|Opcional. A altura desejada da imagem resultante.|
+|width|number|Opcional. A largura desejada da imagem resultante.|
+|fittingMode|string|Opcional. O método usado para dimensionar o gráfico para as dimensões especificadas (se height e width tiverem sido definidas).  Os valores possíveis são: `Fit`, `FitAndCenter` e `Fill`.|
 
 ## <a name="response"></a>Resposta
 
@@ -54,15 +54,14 @@ Se bem-sucedido, este método retorna o código de resposta `200 OK` e a cadeia 
 Eis um exemplo de como chamar esta API.
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
-
-<!-- { "blockType": "request" } -->
+<!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/Image(width=0,height=0,fittingMode='fit')
 ```
 
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
-<!-- { "blockType": "response", "@odata.type": "Edm.String" } -->
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -73,7 +72,7 @@ Content-length: 3
 }
 ```
 
-## <a name="usage"></a>Uso
+##### <a name="usage"></a>Uso
 
 Você pode exibir a cadeia de caracteres Base64 dentro de uma marca de imagem HTML: `<img src="data:image/png;base64,{base-64 chart image string}/>`.
 

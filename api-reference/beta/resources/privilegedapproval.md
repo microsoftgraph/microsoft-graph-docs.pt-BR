@@ -2,12 +2,12 @@
 title: tipo de recurso de privilegedApproval
 description: Representa uma aprovação solicitada no gerenciamento de identidades privilegiado para entrar em uma função.
 localization_priority: Normal
-ms.openlocfilehash: 03cdba4eee7b031645928b2f512288a18ba18bf8
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 283236d945e9a71a4ae0461bbefe66260efa88a4
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571014"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643871"
 ---
 # <a name="privilegedapproval-resource-type"></a>tipo de recurso de privilegedApproval
 
@@ -20,11 +20,11 @@ Representa uma aprovação solicitada no gerenciamento de identidades privilegia
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Obter privilegedApproval](../api/privilegedapproval-get.md) | [privilegedApproval](privilegedapproval.md) |Leia as propriedades e os relacionamentos do objeto privilegedApproval.|
-|[Objetos de privilegedApproval List](../api/privilegedapproval-list.md) | coleção [privilegedApproval](privilegedapproval.md)|Obtenha a coleção de privilegedApproval.|
-|[Criar privilegedApproval](../api/privilegedapproval-post-privilegedapproval.md) | [privilegedApproval](privilegedapproval.md)    |Crie objeto privilegedApproval. |
-|[Atualizar privilegedApproval](../api/privilegedapproval-update.md) | [privilegedApproval](privilegedapproval.md) |Atualize o objeto privilegedApproval. |
-|[Myrequests](../api/privilegedapproval-myrequests.md)|[privilegedApproval](privilegedapproval.md)|Obtenha as solicitações de aprovação do solicitador.|
+|[Get privilegedApproval](../api/privilegedapproval-get.md) | [privilegedApproval](privilegedapproval.md) |Leia as propriedades e os relacionamentos do objeto privilegedApproval.|
+|[Objetos de privilegedApproval List](../api/privilegedapproval-list.md) | [privilegedApproval](privilegedapproval.md) collection|Obtenha a coleção de privilegedApproval.|
+|[Create privilegedApproval](../api/privilegedapproval-post-privilegedapproval.md) | [privilegedApproval](privilegedapproval.md)    |Crie um objeto privilegedApproval. |
+|[Update privilegedApproval](../api/privilegedapproval-update.md) | [privilegedApproval](privilegedapproval.md) |Atualize um objeto privilegedApproval. |
+|[Myrequests](../api/privilegedapproval-myrequests.md)|[privilegedApproval](privilegedapproval.md)|Receba solicitações de aprovação do solicitante.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
@@ -43,8 +43,8 @@ Representa uma aprovação solicitada no gerenciamento de identidades privilegia
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|roleInfo| [privilegedRole](privilegedrole.md) | Somente leitura. Anulável.|
-|solicitação| [privilegedRoleAssignmentRequest](privilegedroleassignmentrequest.md) | Somente leitura. A solicitação de atribuição de função para este objeto de aprovação|
+|roleInfo|[privilegedRole](privilegedrole.md)| Somente leitura. Anulável.|
+|solicitação|[privilegedRoleAssignmentRequest](privilegedroleassignmentrequest.md)| Somente leitura. A solicitação de atribuição de função para este objeto de aprovação|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

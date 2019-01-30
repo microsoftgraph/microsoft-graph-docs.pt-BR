@@ -4,12 +4,12 @@ description: 'Tipo complexo que contém as propriedades de itens compartilhados.
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 380db80f120b29a0d1dca1a4b052679e483bc6f7
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 3fff669b2b337e9566cd41a7cd5eb5ab73a84944
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571034"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643346"
 ---
 # <a name="sharingdetail-resource-type"></a>tipo de recurso de sharingDetail
 
@@ -19,13 +19,7 @@ Tipo complexo que contém as propriedades de itens [compartilhados](insights-sha
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
 
-  ],
-  "@odata.type": "microsoft.graph.sharingDetail"
-}-->
 ```json
 {
   "sharedDateTime": "dateTimeOffset",

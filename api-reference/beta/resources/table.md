@@ -4,12 +4,12 @@ description: Representa uma tabela do Excel.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: a136d7bac22a127ada69c27c656cbded7f5302b5
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 2e3e9c93f7459d666fbe7f28a67241c2831b7079
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572679"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642643"
 ---
 # <a name="table-resource-type"></a>Tipo de recurso Table
 
@@ -56,10 +56,10 @@ Representa uma tabela do Excel.
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|columns|coleção [tableColumn](tablecolumn.md)|Representa uma coleção de todas as colunas na tabela. Somente leitura.|
-|rows|coleção [tableRow](tablerow.md)|Representa uma coleção de todas as linhas na tabela. Somente leitura.|
-|sort|[tableSort](tablesort.md)|Representa a classificação da tabela. Somente leitura.|
-|planilha|[workbookWorksheet](worksheet.md)|A planilha que contém a tabela atual. Somente leitura.|
+|columns|Coleção [TableColumn](tablecolumn.md)|Representa uma coleção de todas as colunas na tabela. Somente leitura.|
+|rows|Coleção [TableRow](tablerow.md)|Representa uma coleção de todas as linhas na tabela. Somente leitura.|
+|sort|[TableSort](tablesort.md)|Representa a classificação da tabela. Somente leitura.|
+|planilha|[Worksheet](worksheet.md)|A planilha que contém a tabela atual. Somente leitura.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -70,7 +70,7 @@ Veja a seguir uma representação JSON do recurso.
   "optionalProperties": [
      "legacyId"
   ],
-  "@odata.type": "microsoft.graph.workbookTable"
+  "@odata.type": "microsoft.graph.table"
 }-->
 
 ```json

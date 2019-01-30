@@ -1,15 +1,15 @@
 ---
-title: Criar appRoleAssignment
+title: Create appRoleAssignment
 description: Use essa API para criar um novo appRoleAssignment.
 localization_priority: Normal
-ms.openlocfilehash: 33bf7a577b01b2f23132a2b761bd80f24e8268c7
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 70993bf1e5402c3fab7229269fbc007602813c40
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574335"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643647"
 ---
-# <a name="create-approleassignment"></a>Criar appRoleAssignment
+# <a name="create-approleassignment"></a>Create appRoleAssignment
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -68,7 +68,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.appRoleAssignment"
+  "@odata.type": "microsoft.graph.approleassignment"
 } -->
 ```http
 HTTP/1.1 200 OK

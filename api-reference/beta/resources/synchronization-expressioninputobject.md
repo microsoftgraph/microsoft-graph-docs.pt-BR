@@ -2,18 +2,18 @@
 title: tipo de recurso de expressionInputObject
 description: 'Representa um objeto a ser usado como dados de teste de entrada quando a [synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md) ação realiza uma avaliação de expressão.'
 localization_priority: Normal
-ms.openlocfilehash: 4f0ba06651fdd8a296b0939d05ecefe996f0089f
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 3e631102505408b955404c4badb33b98f314236f
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29570957"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641649"
 ---
 # <a name="expressioninputobject-resource-type"></a>tipo de recurso de expressionInputObject
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa um objeto a ser usado como dados de teste de entrada quando a [synchronizationSchema: parseExpression](../api/synchronization-synchronizationschema-parseexpression.md) ação realiza uma avaliação de expressão.
+Representa um objeto a ser usado como dados de teste de entrada quando a [synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md) ação realiza uma avaliação de expressão.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|

@@ -2,12 +2,12 @@
 title: Criar uma propriedade estendida de valor único
 description: 'Crie uma ou mais propriedades estendidas de vários valores em uma instância nova ou existente de um recurso. '
 localization_priority: Normal
-ms.openlocfilehash: 6a9ddee699cac0e11a5656fc12174a9d4fb610c3
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 3b122eb1a02ddd9e413f5c58bf840b912dd8365f
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575444"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641390"
 ---
 # <a name="create-single-value-extended-property"></a>Criar uma propriedade estendida de valor único
 
@@ -20,9 +20,9 @@ Há suporte para as seguintes fontes de dados:
 - [calendar](../resources/calendar.md)
 - [contact](../resources/contact.md)
 - [contactFolder](../resources/contactfolder.md) 
-- [event](../resources/event.md)
+- [evento](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
-- [message](../resources/message.md)
+- [mensagem](../resources/message.md)
 - [Tarefa do Outlook](../resources/outlooktask.md)
 - [Pasta de tarefas do Outlook](../resources/outlooktaskfolder.md)
 
@@ -150,15 +150,15 @@ PATCH /groups/{id}/events/{id}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-Fornecer um corpo JSON de cada objeto [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) na propriedade conjunto **singleValueLegacyExtendedProperty** da instância do recurso.
+Forneça um corpo JSON de cada objeto [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) na propriedade da coleção **singleValueExtendedProperties** da instância do recurso.
 
 |**Propriedade**|**Tipo**|**Descrição**|
 |:-----|:-----|:-----|
-|singleValueLegacyExtendedProperty|Coleção [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md)| Uma matriz de uma ou mais propriedades estendidas de valor único. |
-|id|String|Para cada propriedade na coleção **singleValueLegacyExtendedProperty** , especifique isso para identificar a propriedade. Ele deve seguir um dos formatos suportados. Para obter mais informações, consulte [Visão geral das propriedades de estendida do Outlook](../resources/extended-properties-overview.md) . Obrigatório.|
-|valor|string|Para cada propriedade na coleção **singleValueLegacyExtendedProperty** , especifique o valor da propriedade. Obrigatório.|
+|singleValueExtendedProperties|Coleção [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md)| Uma matriz de uma ou mais propriedades estendidas de valor único. |
+|id|String|Para cada propriedade na coleção **singleValueExtendedProperties**, especifique isso para identificar a propriedade. Deve seguir um dos formatos com suporte. Para saber mais, confira [Visão geral das propriedades estendidas do Outlook](../resources/extended-properties-overview.md). Obrigatório.|
+|valor|string|Para cada propriedade na coleção **singleValueExtendedProperties**, especifique o valor da propriedade. Obrigatório.|
 
-Ao criar uma propriedade estendida em uma _nova_ instância de recurso, a nova coleção de **singleValueLegacyExtendedProperty** , além de fornecer uma representação de JSON dessa instância do recurso (ou seja, uma [mensagem](../resources/message.md), [mailFolder ](../resources/mailfolder.md), [evento](../resources/event.md), etc.)
+Ao criar uma propriedade estendida em uma _nova_ instância de recurso, além da nova coleção **singleValueExtendedProperties**, forneça uma representação JSON dessa instância de recurso (ou seja, [message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md), etc.)
 
 ## <a name="response"></a>Resposta
 
@@ -179,7 +179,7 @@ Ao criar uma propriedade estendida em uma _nova_ [postagem de grupo](../resource
 ## <a name="example"></a>Exemplo
 ##### <a name="request-1"></a>Solicitação 1
 
-O primeiro exemplo cria um novo evento e uma propriedade de valor único estendida na mesma operação POST. Além das propriedades que você normalmente incluiria para um novo evento, o corpo da solicitação inclui a coleção de **singleValueLegacyExtendedProperty** que contém uma propriedade estendida de valor único e as seguintes informações sobre a propriedade:
+O primeiro exemplo cria um novo evento e uma propriedade de valor único estendida na mesma operação POST. Além das propriedades que você normalmente incluiria para um novo evento, o corpo da solicitação inclui a coleção **singleValueExtendedProperties**, que contém uma propriedade estendida de valor único e as seguintes informações sobre a propriedade:
 
 - **id** especifica o tipo de propriedade como `String`, o GUID e a propriedade nomeada `Fun`.
 - **value** especifica `Food` como o valor da propriedade `Fun`. 
@@ -212,7 +212,7 @@ Content-Type: application/json
       "type": "Required"
     }
   ],
-  "singleValueLegacyExtendedProperty": [
+  "singleValueExtendedProperties": [
      {
            "id":"String {66f5a359-4659-4830-9070-00040ec6ac6e} Name Fun",
            "value":"Food"
@@ -232,7 +232,7 @@ Para ver a propriedade estendida recém-criada, [obtenha o evento expandido com 
 
 ##### <a name="request-2"></a>Solicitação 2
 
-O segundo exemplo cria um valor único estendido de propriedade para a mensagem existente especificada. Propriedade estendida é o único elemento na matriz **singleValueLegacyExtendedProperty** . O corpo da solicitação inclui o seguinte para a propriedade estendida:
+O segundo exemplo cria uma propriedade estendido de valor único para a mensagem especificada existente. A propriedade estendida é o único elemento na matriz **singleValueExtendedProperties**. O corpo da solicitação inclui o seguinte para essa propriedade estendida:
 - **id** especifica o tipo de propriedade como `String`, o GUID e a propriedade nomeada `Color`.
 - **value** especifica `Green` como o valor da propriedade `Color`.
 
@@ -243,7 +243,7 @@ PATCH https://graph.microsoft.com/beta/me/messages('AAMkAGE1M2_bs88AACHsLqWAAA='
 Content-Type: application/json
 
 {
-  "singleValueLegacyExtendedProperty": [
+  "singleValueExtendedProperties": [
       {
          "id":"String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color",
          "value":"Green"

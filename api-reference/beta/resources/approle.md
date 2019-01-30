@@ -2,12 +2,12 @@
 title: tipo de recurso appRole
 description: Representa uma função de aplicativo que podem ser solicitados por um aplicativo cliente chamar outro aplicativo ou que podem ser usadas para atribuir um aplicativo a usuários ou grupos em uma função de aplicativo especificado. A propriedade **appRoles** da entidade servicePrincipal e da entidade do aplicativo é uma coleção de **appRole**.
 localization_priority: Normal
-ms.openlocfilehash: 6f587c15073cf2ad5f6b9973de8f7ef66c294294
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 8a367406c64cf9d0d3da49716aeaf6ca3c1fa687
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571251"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640410"
 ---
 # <a name="approle-resource-type"></a>tipo de recurso appRole
 
@@ -26,7 +26,7 @@ Veja a seguir uma representação JSON do recurso
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.appRole"
+  "@odata.type": "microsoft.graph.approle"
 }-->
 
 ```json
@@ -44,7 +44,7 @@ Veja a seguir uma representação JSON do recurso
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|allowedMemberTypes|String collection|Especifica se esta definição de aplicativo de função pode ser atribuída aos usuários e grupos pela configuração para "User", ou para outros aplicativos (que estão acessando este aplicativo em cenários de serviço daemon) por configuração para "Aplicativo", ou ambos.|
+|allowedMemberTypes|Coleção de cadeias de caracteres|Especifica se esta definição de aplicativo de função pode ser atribuída aos usuários e grupos pela configuração para "User", ou para outros aplicativos (que estão acessando este aplicativo em cenários de serviço daemon) por configuração para "Aplicativo", ou ambos.|
 |description|String|Permissão ajudam o texto que aparece na atribuição app admin e experiências de consentimento.|
 |displayName|String|Nome para exibição da permissão que aparece nas experiências de atribuição de consentimento e app admin.|
 |id|Guid|Identificador exclusivo de função dentro da coleção **appRoles** .|

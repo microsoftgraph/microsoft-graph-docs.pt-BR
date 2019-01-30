@@ -1,17 +1,17 @@
 ---
-title: Fazer chamada
+title: Get call
 description: Recupere as propriedades e relacionamentos de um objeto de chamada.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 549c53c5e7dedc4d52cce9bbe5e592dc8622c4c7
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: f5f530fac12ae61c47a5a5e3e0f900720aac4c4e
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575423"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640340"
 ---
-# <a name="get-call"></a>Fazer chamada
+# <a name="get-call"></a>Get call
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,8 +22,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios)                  |
 | :-------------- | :----------------------------------------------------------- |
-| Delegado (conta corporativa ou de estudante)     | Não são suportados.                         |
-| Delegado (conta pessoal da Microsoft) | Não são suportados.                         |
+| Delegada (conta corporativa ou de estudante)     | Não são suportados.                         |
+| Delegada (conta pessoal da Microsoft) | Não são suportados.                         |
 | Aplicativo                            | Nenhum.                                  |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -115,7 +115,7 @@ Content-Length: 2821
   "direction": "incoming",
   "id": "id-value",
   "mediaConfig": {
-    "@odata.type": "microsoft.graph.appHostedMediaConfig",
+    "@odata.type": "#microsoft.graph.appHostedMediaConfig",
     "blob": "<media config blob>"
   },
   "meetingCapability": {
@@ -124,7 +124,7 @@ Content-Length: 2821
     "autoAdmittedUsers": "everyoneInCompany"
   },
   "meetingInfo": {
-    "@odata.type": "microsoft.graph.organizerMeetingInfo",
+    "@odata.type": "#microsoft.graph.organizerMeetingInfo",
     "organizer": {
       "user": {
         "id": "550fae72-d251-43ec-868c-373732c2704f",

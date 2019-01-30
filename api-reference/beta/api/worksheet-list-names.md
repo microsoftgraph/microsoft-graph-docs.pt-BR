@@ -4,12 +4,12 @@ description: 'Recupere uma lista de itens nomeados associados à planilha. '
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: f284063af0cf666f95561a7669419c62ad7211ca
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: f215441d8248752ac94b6d311b998412ac154ebd
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573974"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641341"
 ---
 # <a name="list-names"></a>Listar nomes
 
@@ -21,8 +21,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Files.Read, Files.ReadWrite, Sites.Read.All    |
-|Delegado (conta pessoal da Microsoft) | Files.Read, Files.ReadWrite    |
+|Delegada (conta corporativa ou de estudante) | Files.Read, Files.ReadWrite, Sites.Read.All    |
+|Delegada (conta pessoal da Microsoft) | Files.Read, Files.ReadWrite    |
 |Aplicativo | Sites.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -44,7 +44,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [NamedItem](../resources/workbooknameditem.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [NamedItem](../resources/nameditem.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
@@ -60,7 +60,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookNamedItem",
+  "@odata.type": "microsoft.graph.namedItem",
   "isCollection": true
 } -->
 ```http

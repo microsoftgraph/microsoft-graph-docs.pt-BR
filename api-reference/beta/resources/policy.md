@@ -2,12 +2,12 @@
 title: tipo de recurso de política
 description: 'Representa uma política do Azure AD. Políticas são regras personalizadas que podem ser aplicadas em toda a organização atribuídos a eles, entidades de serviço, grupos ou aplicativos. Atualmente, somente um tipo de política está disponível:'
 localization_priority: Normal
-ms.openlocfilehash: bd946da13fc36925e284ad2af29585b37d0a9a3a
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 118bac238d58734b5cbdeb1a4f346aedf680de6c
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576196"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642125"
 ---
 # <a name="policy-resource-type"></a>tipo de recurso de política
 
@@ -28,14 +28,14 @@ Esta diretiva é descrita em maiores detalhes a seguir.
 |[Excluir a diretiva](../api/policy-delete.md)|Nenhum|Exclua o objeto de diretiva.|
 |[Atribuir política](../api/policy-assign.md)|Nenhum|Atribua uma política a um aplicativo, entidade de serviço.|
 |[Lista de políticas](../api/policy-list.md)|Coleção de políticas|Obtenha todos os objetos de política na organização.|
-|[Políticas de lista atribuída](../api/policy-list-assigned.md)|Coleção de políticas|Obtenha todos os objetos de política atribuídos a um aplicativo ou entidade de serviço.|
+|[List assigned policies](../api/policy-list-assigned.md)|Coleção de políticas|Obtenha todos os objetos de política atribuídos a um aplicativo ou entidade de serviço.|
 
 ### <a name="common-properties"></a>Propriedades comuns
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|definição|String collection|A versão de cadeia de caracteres da diretiva específica. Veja a seguir. Obrigatório.|
+|definição|String|A versão de cadeia de caracteres da diretiva específica. Veja a seguir. Obrigatório.|
 |displayName|String|Um nome personalizado para a política. Obrigatório.|
-|IsOrganizationDefault|Boolean|Se definido como verdadeiro, ativa essa diretiva. Pode haver várias políticas para o mesmo tipo de política, mas apenas um pode ser ativado como o padrão da organização. Opcional, valor padrão é false.|
+|IsOrganizationDefault|Booliano|Se definido como verdadeiro, ativa essa diretiva. Pode haver várias políticas para o mesmo tipo de política, mas apenas um pode ser ativado como o padrão da organização. Opcional, valor padrão é false.|
 |type|String|Especifica o tipo de política. No momento deve ser "TokenLifetimePolicy". Obrigatório.|
 
 #### <a name="common-relationships"></a>Relações comuns
@@ -66,17 +66,10 @@ As propriedades abaixo o objeto JSON que representa uma política de vida útil 
 |MaxAgeMultiFactor|String|Controles quanto tempo um usuário pode continuar usando tokens de atualização para obter acesso/atualizar novo pares de tokens após a última vez em que eles autenticados com êxito com vários fatores.|10 minutos|até revogado|365 dias ou até revogado|
 |MaxAgeSessionSingleFactor|String|Controles quanto tempo um usuário pode continuar usando tokens de sessão para obter tokens do novos ID/sessão após a última vez em que eles autenticado com sucesso com apenas um fator único. Como o fator único é considerado menos seguro que a autenticação multifator, é recomendável que essa diretiva estiver definida como um valor igual ou menor que o MultiFactorSessionTokenMaxAge|10 minutos|até revogado|365 ou até revogado|
 |MaxAgeSessionMultiFactor|String|Controles quanto tempo um usuário pode continuar usando tokens de sessão para obter tokens do novos ID/sessão após a última vez em que eles autenticado com sucesso com vários fatores.|10 minutos|até revogado|365 ou até revogado|
-|Versão|Inteiro|Defina o valor de 1. Obrigatório.|Nenhum|Nenhum|Nenhum|
+|Versão|Número inteiro|Defina o valor de 1. Obrigatório.|Nenhum|Nenhum|Nenhum|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.policy"
-}-->
 
 ```json
 {

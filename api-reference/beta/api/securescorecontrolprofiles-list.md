@@ -2,12 +2,12 @@
 title: Lista secureScoreControlProfiles
 description: Recupere as propriedades e relacionamentos de um objeto secureScoreControlProfiles.
 localization_priority: Normal
-ms.openlocfilehash: 6177af7da65d268af7c089aee3772109fb182959
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 6627111633f54eb7bc2584af826b69fd5bd6cf49
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571090"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29644025"
 ---
 # <a name="list-securescorecontrolprofiles"></a>Lista secureScoreControlProfiles
 
@@ -21,8 +21,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  SecurityEvents.Read.All, SecurityEvents.ReadWrite.All.   |
-|Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
+|Delegada (conta corporativa ou de estudante) |  SecurityEvents.Read.All, SecurityEvents.ReadWrite.All.   |
+|Delegada (conta pessoal da Microsoft) |  Sem suporte.  |
 |Aplicativo | SecurityEvents.Read.All, SecurityEvents.ReadWrite.All. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -73,6 +73,7 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 
 {
     "value": [

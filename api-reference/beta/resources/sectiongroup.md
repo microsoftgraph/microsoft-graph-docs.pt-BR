@@ -4,12 +4,12 @@ description: Um grupo de seção em um bloco de anotações do OneNote. Grupos d
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 0b7368f18058c0c8b00c5b34e5a804521dc64682
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 65e420d014add658a538deb42c01518cd94d611c
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575517"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640949"
 ---
 # <a name="sectiongroup-resource-type"></a>Tipo de recurso sectionGroup
 
@@ -29,7 +29,7 @@ Veja a seguir uma representação JSON do recurso.
     "sectionGroups",
     "sections"
   ],
-  "@odata.type": "microsoft.graph.sectionGroup"
+  "@odata.type": "microsoft.graph.sectiongroup"
 }-->
 
 ```json
@@ -62,10 +62,10 @@ Veja a seguir uma representação JSON do recurso.
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|parentNotebook|[bloco de anotações](notebook.md)|O bloco de anotações que contém o grupo de seção. Somente leitura.|
-|parentSectionGroup|[sectionGroup](sectiongroup.md)|O grupo de seção que contém o grupo de seção. Somente leitura.|
-|sectionGroups|coleção [sectionGroup](sectiongroup.md)|Os grupos de seção na seção. Somente leitura. Anulável.|
-|sections|coleção [onenoteSection](section.md)|As seções no grupo de seção. Somente leitura. Anulável.|
+|parentNotebook|[Notebook](notebook.md)|O bloco de anotações que contém o grupo de seção. Somente leitura.|
+|parentSectionGroup|[SectionGroup](sectiongroup.md)|O grupo de seção que contém o grupo de seção. Somente leitura.|
+|sectionGroups|Coleção [SectionGroup](sectiongroup.md)|Os grupos de seção na seção. Somente leitura. Anulável.|
+|sections|Coleção [Section](section.md)|As seções no grupo de seção. Somente leitura. Anulável.|
 
 ## <a name="methods"></a>Métodos
 

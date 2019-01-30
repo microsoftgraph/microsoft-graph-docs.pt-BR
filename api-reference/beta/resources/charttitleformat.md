@@ -1,19 +1,21 @@
 ---
 title: Tipo de recurso ChartTitleFormat
-description: Abrange as propriedades de formatação do título do gráfico.
+description: Fornece acesso à formatação de arte do Office para o título do gráfico.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 7dd9400873234fd73ebe506a49caf6583d05b75b
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: b3c8bc4a3ebcc9a2cd347b89bc4cac376c588341
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574009"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640571"
 ---
 # <a name="charttitleformat-resource-type"></a>Tipo de recurso ChartTitleFormat
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Fornece acesso à formatação de arte do Office para o título do gráfico.
 
 
 ## <a name="methods"></a>Métodos
@@ -25,35 +27,15 @@ Nenhum
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|fill|[WorkbookChartFill](chartfill.md)|Representa o formato de preenchimento de um objeto, que inclui informações sobre a formatação da tela de fundo. Somente leitura.|
-|font|[WorkbookChartFont](chartfont.md)|Representa os atributos de fonte do objeto atual, como nome, tamanho, cor, dentre outros. Somente leitura.|
-
-
-
-## <a name="json-representation"></a>Representação JSON
-
-Veja a seguir uma representação JSON do recurso.
-
-<!--{
-  "blockType": "resource",
-  "optionalProperties": [],
-  "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.workbookChartTitleFormat"
-}-->
-
-```json
-{
-  "fill": {"@odata.type": "microsoft.graph.workbookChartFill"},
-  "font": {"@odata.type": "microsoft.graph.workbookChartFont"}
-}
-```
+|fill|[ChartFill](chartfill.md)|Representa o formato de preenchimento de um objeto, que inclui informações sobre a formatação da tela de fundo. Somente leitura.|
+|font|[ChartFont](chartfont.md)|Representa os atributos de fonte de um objeto, como nome, tamanho, cor, dentre outros. Somente leitura.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
 {
   "type": "#page.annotation",
-  "description": "ChartAreaFormat resource",
+  "description": "ChartTitleFormat resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

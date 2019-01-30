@@ -1,21 +1,21 @@
 ---
 title: tipo de recurso de directoryObjectPartnerReference
-description: Representa uma referência a um objeto de diretório em um locatário de parceiro. Herda de directoryObject.
+description: Representa uma referência a um objeto de diretório em um locatário de parceiro. Herda do directoryObject.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: ba72f70a29e778127454ec3bd4f259331d1fe4c5
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: a031586d1f92bf2b8b331e9b71058211b4617382
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29570741"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640305"
 ---
 # <a name="directoryobjectpartnerreference-resource-type"></a>tipo de recurso de directoryObjectPartnerReference
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma referência a um objeto de diretório em uma organização parceira. Herda de [directoryObject](../resources/directoryobject.md).
+Representa uma referência a um objeto de diretório em uma organização parceira. Herda do [directoryObject](directoryobject.md?view=graph-rest-beta).
 
 ## <a name="properties"></a>Propriedades
 
@@ -24,7 +24,7 @@ Representa uma referência a um objeto de diretório em uma organização parcei
 |description|String| Descrição do objeto retornado. Somente leitura. |
 |displayName|String| Nome do objeto de diretório retornado, como o grupo ou aplicativo. Somente leitura. |
 |externalPartnerTenantId|Guid| O identificador do locatário para o locatário de parceiro. Somente leitura. |
-|id|String| O identificador exclusivo para o recurso. Herdado de [directoryObject](../resources/directoryobject.md). Somente leitura. |
+|id|String| O identificador exclusivo para o recurso. Herdado de [directoryObject](directoryobject.md?view=graph-rest-beta). Somente leitura. |
 |objectType|String| O tipo do objeto referenciado no locatário parceiro. Somente leitura. |
 
 ## <a name="json-representation"></a>Representação JSON

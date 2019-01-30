@@ -2,12 +2,12 @@
 title: tipo de recurso de networkLocationDetail
 description: Indica detalhes associadas ao local de rede. .
 localization_priority: Normal
-ms.openlocfilehash: 62bdb23c63beb89b85386e6bea67face097cf1ae
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: bfa84591f543253ed794016bbc2d25d325cd0bcc
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29570936"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643759"
 ---
 # <a name="networklocationdetail-resource-type"></a>tipo de recurso de networkLocationDetail
 Indica detalhes associadas ao local de rede. .
@@ -17,7 +17,7 @@ Indica detalhes associadas ao local de rede. .
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|networkType| cadeia de caracteres de enum |Fornece o tipo da rede. Os valores possíveis são `intranet`, `extranet`, `namedNetwork`, e `trusted`.|
+|networkType|String|Fornece o tipo da rede. Os valores possíveis são `intranet`, `extranet`, `namedNetwork`, e `trusted`.|
 |networkName|String|Nome da rede.|
 
 
@@ -35,7 +35,7 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "networkTypes": " intranet | extranet | namedNetwork | trusted ",
+  "networkTypes": "namedNetork",
   "networkName": "String"
 }
 

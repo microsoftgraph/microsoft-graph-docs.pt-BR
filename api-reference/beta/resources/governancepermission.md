@@ -2,12 +2,12 @@
 title: tipo de recurso de governancePermission
 description: 'Representa a permissão de acesso que tenha um governanceSubject um governanceResource específico.  '
 localization_priority: Normal
-ms.openlocfilehash: 9b6e920d92d7010fb325be05cf0b645f9b8d81cd
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 255cd4c25a957a40e5e5ac765ed446f516c51607
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29570719"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643780"
 ---
 # <a name="governancepermission-resource-type"></a>tipo de recurso de governancePermission
 
@@ -20,20 +20,13 @@ Representa a permissão de acesso que um [governanceSubject](../resources/govern
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |accessLevel|String|O nível de acesso. Valores válidos: ``None``, ``UserRead``, ``AdminRead``, e ``AdminReadWrite``.|
-|isActive|Boolean|Indique se o solicitante tem qualquer atribuição de função ativa para o nível de acesso.|
-|isEligible|Boolean|Indica se o solicitante tem qualquer atribuição de função elegíveis para o nível de acesso.|
+|isActive|Booliano|Indique se o solicitante tem qualquer atribuição de função ativa para o nível de acesso.|
+|isEligible|Booliano|Indica se o solicitante tem qualquer atribuição de função elegíveis para o nível de acesso.|
 
 ## <a name="json-representation"></a>Representação JSON
 
 Veja a seguir uma representação JSON do recurso.
 
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.governancePermission"
-}-->
 ```json
 {
   "accessLevel": "String",

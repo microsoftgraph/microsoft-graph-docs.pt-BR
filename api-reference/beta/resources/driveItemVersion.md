@@ -2,15 +2,15 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/17/2017
-title: driveItemVersion
+title: DriveItemVersion
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 25b480a22b93ce454927177d2d842390496f54de
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 69c4ed030d090dce9d8bfd8e7ad7a410ad2d4b27
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528967"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642020"
 ---
 # <a name="driveitemversion-resource-type"></a>Tipo de recurso DriveItemVersion
 
@@ -28,7 +28,7 @@ As tarefas a seguir estão disponíveis para recursos driveItemVersion.
 | [Versões de lista][version-list]      | `GET /drive/items/{item-id}/versions`  |
 | [Obter versão][version-get]         | `GET /drive/items/{item-id}/versions/{version-id}`     |
 | [Obter conteúdo][content-get]        | `GET /drive/items/{item-id}/versions/{version-id}/content` |
-| [Restaurar versão][version-restore] | `POST /drive/items/{item-id}/versions/{version-id}/restore` |
+| [Restaurar versão][version-restore] | `POST /drive/items/{item-id}/versions/{version-id}/restoreversion` |
 
 [version-list]: ../api/driveitem-list-versions.md
 [version-get]: ../api/driveitemversion-get.md
@@ -58,7 +58,7 @@ Na tabela anterior, os exemplos usam `/drive`, mas há muitas solicitações vá
 | **id**                   | string                                               | A ID da versão. Somente leitura.                                       |
 | **lastModifiedBy**       | [IdentitySet](../resources/identityset.md)           | Identidade do usuário que modificou a versão pela última vez. Somente leitura.        |
 | **lastModifiedDateTime** | [DateTimeOffset](../resources/timestamp.md)          | Data e hora em que a versão foi modificada pela última vez. Somente leitura.                 |
-| publication          | [PublicationFacet](../resources/publicationfacet.md) | Indica o status de publicação desta versão específica. Somente leitura. |
+| **publication**          | [PublicationFacet](../resources/publicationfacet.md) | Indica o status de publicação desta versão específica. Somente leitura. |
 | **size**                 | Int64                                                | Indica o tamanho do fluxo de conteúdo para esta versão do item.  |
 
 ## <a name="relationships"></a>Relações

@@ -1,15 +1,15 @@
 ---
-title: tipo de recurso de usedInsight
+title: usado o tipo de recurso
 description: Uma compreensão dos representando documentos usados por um usuário específico. As ideias retorna os documentos mais relevantes que um usuário visualizados ou acessados.
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 056654a5e467e202b2bde5ac8ee98dccab93d7c9
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 35698741cd457f4e8d202b13dd9099bb2669b6e1
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574226"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642538"
 ---
 # <a name="used-resource-type"></a>usado o tipo de recurso
 
@@ -39,17 +39,11 @@ Uma compreensão dos representando documentos usados por um usuário específico
 
 | Propriedade      | Tipo          | Descrição  |
 | ------------- |---------------| -------------|
-| recurso      | coleção de entidade | Usado para navegar até o item que foi usado. Anexos de arquivo, o tipo é *fileAttachment*. Anexos vinculados, o tipo é *driveItem*. |
+| recurso      | Entity        | Usado para navegar até o item que foi usado. Anexos de arquivo, o tipo é *fileAttachment*. Anexos vinculados, o tipo é *driveItem*. |
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
 
-  ],
-  "@odata.type": "microsoft.graph.usedInsight"
-}-->
 ```json
 {
   "id": "string",

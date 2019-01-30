@@ -4,12 +4,12 @@ description: Limpe a cor de preenchimento de um elemento do gráfico.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 6a053814b1be4fdee947d4d28911263b7e53d55d
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: e8edef56f24d09877265b510ae067b59f1eae923
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573036"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641943"
 ---
 # <a name="chartfill-clear"></a>ChartFill: clear
 
@@ -40,7 +40,6 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/legend/format/fill/clear
 | Workbook-Session-Id  | ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
@@ -62,7 +61,8 @@ POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{i
 Veja a seguir um exemplo da resposta. 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.none"
 } -->
 ```http
 HTTP/1.1 200 OK

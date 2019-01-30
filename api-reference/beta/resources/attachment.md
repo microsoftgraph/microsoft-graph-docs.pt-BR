@@ -2,12 +2,12 @@
 title: tipo de recurso attachment
 description: Você pode adicionar conteúdo relacionado a um evento,
 localization_priority: Normal
-ms.openlocfilehash: 8f7a6f9392d376995a53d9a4c06083780b0437b9
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 59e1074cea9508af45cef0b6e61ea223a3ca851e
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573421"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643147"
 ---
 # <a name="attachment-resource-type"></a>tipo de recurso attachment
 
@@ -30,11 +30,11 @@ Os métodos a seguir se aplicam a qualquer um dos tipos de anexo derivados (**fi
 |[Obter anexo](../api/attachment-get.md) | [attachment](attachment.md) |Leia as propriedades e relacionamentos de um anexo, anexados a um evento, mensagem, tarefa do Outlook ou postagem.|
 |[Adicionar anexo a um event](../api/event-post-attachments.md) | [attachment](attachment.md) |Adicione um arquivo, item ou anexo de link a um evento.|
 |[Adicionar um anexo a uma mensagem](../api/message-post-attachments.md) | [attachment](attachment.md) |Adicione um arquivo, item ou anexo de link a uma mensagem.|
-|[Adicionar anexos para uma tarefa do Outlook](../api/outlooktask-post-attachments.md) | [attachment](attachment.md) |Adicione um arquivo, item ou anexo de link a uma tarefa do Outlook.|
+|[Adicionar anexos para uma tarefa do Outlook](../api/outlooktask-post-attachments.md) | [anexo](attachment.md) |Adicione um arquivo, item ou anexo de link a uma tarefa do Outlook.|
 |[Adicionar anexo a uma postagem](../api/post-post-attachments.md) | [attachment](attachment.md) |Adicione um arquivo, item ou anexo de link a uma postagem.|
 |[Listar anexos de um evento](../api/event-list-attachments.md) | Coleção [attachment](attachment.md) | Obtenha uma lista de anexos de um evento. |
 |[Listar anexos de uma mensagem](../api/message-list-attachments.md) | Coleção [attachment](attachment.md) | Obtenha uma lista de anexos de uma mensagem. |
-|[Listar anexos de uma tarefa do Outlook](../api/outlooktask-list-attachments.md) | Coleção [attachment](attachment.md) | Obtenha uma lista de anexos para uma tarefa do Outlook. |
+|[Listar anexos de uma tarefa do Outlook](../api/outlooktask-list-attachments.md) | Coleção [anexo](attachment.md) | Obtenha uma lista de anexos para uma tarefa do Outlook. |
 |[Listar anexos de uma postagem](../api/post-list-attachments.md) | Coleção [attachment](attachment.md) | Obtenha uma lista de anexos de uma postagem. |
 |[Delete](../api/attachment-delete.md) | Nenhum |Exclua um anexo em um evento, mensagem, tarefa do Outlook ou postagem. |
 
@@ -60,8 +60,6 @@ Veja a seguir uma representação JSON do recurso
 
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
-  "abstract": true,
   "optionalProperties": [
 
   ],

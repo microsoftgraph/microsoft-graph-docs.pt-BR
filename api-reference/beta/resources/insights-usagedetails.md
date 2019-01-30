@@ -4,12 +4,12 @@ description: Tipo complexo que contém as propriedades de itens usados. Obter in
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 04e064d5ebf8599466218722d89f46ececc5e58c
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 4df15bf635785aba054d52beb89b5ac04d48d3d3
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577484"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641523"
 ---
 # <a name="usagedetails-resource-type"></a>tipo de recurso usageDetails
 
@@ -20,13 +20,7 @@ Tipo complexo que contém as propriedades de itens [usado](insights-used.md) . O
 ## <a name="json-representation"></a>Representação JSON
 
 Veja a seguir uma representação JSON do recurso
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
 
-  ],
-  "@odata.type": "microsoft.graph.usageDetails"
-}-->
 ```json
 {
   "lastAccessedDateTime": "DateTimeOffset",

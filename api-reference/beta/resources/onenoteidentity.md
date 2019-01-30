@@ -4,12 +4,12 @@ description: '**Suporte em breve**'
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 33cb7d63ab103723ae5bb8d24c19add4bb7ef5ac
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: f1b03ad907a0b8f6f3cf2674d74f1ee8722357ea
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576875"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642132"
 ---
 # <a name="onenoteidentity-resource-type"></a>tipo de recurso de oneNoteIdentity
 
@@ -31,7 +31,7 @@ Veja a seguir uma representação JSON do recurso.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.oneNoteIdentity"
+  "@odata.type": "microsoft.graph.onenoteidentity"
 }-->
 
 ```json

@@ -4,12 +4,12 @@ ms.date: 09/10/2017
 title: Áudio
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: cd1f1af0e1ddcd1d56853c708da7ba03be740812
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: b4ff9e98b3024184298da144f90665ba2f192fef
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573631"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642272"
 ---
 # <a name="audio-facet"></a>Faceta Audio
 
@@ -50,11 +50,11 @@ Se um [**DriveItem**](driveitem.md) tiver uma faceta **audio** não nula, o item
 | **album**             | string  | O título do álbum deste arquivo de áudio.                          |
 | **albumArtist**       | string  | Artista nomeado no álbum para o arquivo de áudio.                    |
 | **artist**            | string  | O artista do arquivo de áudio.                            |
-| **bitrate**           | Int64   | Taxa de bits expressa em kbps.                                           |
+| **bitrate**           | Int32   | Taxa de bits expressa em kbps.                                           |
 | **composers**         | string  | O nome do compositor do arquivo de áudio.                          |
 | **copyright**         | string  | Informações de direitos autorais para o arquivo de áudio.                            |
-| **disc**              | Int16   | O número do disco do qual este arquivo de áudio é proveniente.                    |
-| **discCount**         | Int16   | O número total de discos neste álbum.                             |
+| **disc**              | Int32   | O número do disco do qual este arquivo de áudio é proveniente.                    |
+| **discCount**         | Int32   | O número total de discos neste álbum.                             |
 | **duration**          | Int64   | Duração do arquivo de áudio, expressa em milissegundos                |
 | **genre**             | string  | O gênero deste arquivo de áudio.                                        |
 | **hasDrm**            | booliano | Indica se o arquivo está protegido com o gerenciamento de direitos digitais.   |

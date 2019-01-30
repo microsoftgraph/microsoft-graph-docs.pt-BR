@@ -4,12 +4,12 @@ description: Veja a seguir uma representação JSON do recurso
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b3d13f84c2cf953c9a3b5fff3e260c55265fe533
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 01f606e8fb1f6ae51608853eed3bc39e0ec124df
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572014"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643528"
 ---
 # <a name="orgcontact-resource-type"></a>tipo de recurso de orgContact
 
@@ -19,43 +19,43 @@ ms.locfileid: "29572014"
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Obter orgContact](../api/orgcontact-get.md) | [orgContact](../resources/orgcontact.md) |Leia as propriedades e os relacionamentos do objeto orgContact.|
-|[Obtenha manager](../api/orgcontact-get-manager.md) |[directoryObject](../resources/directoryobject.md)| Obtenha o gerente do contato.|
-|[Listar directReports](../api/orgcontact-list-directreports.md) |Coleção [directoryObject](../resources/directoryobject.md)| Liste relatórios de diretos do contato.|
-|[Listar memberOf](../api/orgcontact-list-memberof.md) |Coleção [directoryObject](../resources/directoryobject.md)| Obtenha uma coleção de objetos do membro.|
+|[Obter orgContact](../api/orgcontact-get.md) | [orgContact](orgcontact.md) |Leia as propriedades e os relacionamentos do objeto orgContact.|
+|[Obtenha manager](../api/orgcontact-get-manager.md) |[directoryObject](directoryobject.md)| Obtenha o gerente do contato.|
+|[Listar directReports](../api/orgcontact-list-directreports.md) |Coleção [directoryObject](directoryobject.md)| Liste relatórios de diretos do contato.|
+|[Listar memberOf](../api/orgcontact-list-memberof.md) |Coleção [directoryObject](directoryobject.md)| Obtenha uma coleção de objetos do membro.|
 |[Delete](../api/orgcontact-delete.md) | Nenhum |Exclua objeto orgContact. |
 |[checkMemberGroups](../api/orgcontact-checkmembergroups.md)|Coleção de cadeias de caracteres| Verifique se a associação ao grupo. |
 |[getMemberGroups](../api/orgcontact-getmembergroups.md)|Coleção de cadeias de caracteres| Retorne todos os grupos que o contato especificado é um membro de. |
-|[getMemberObjects](../api/orgcontact-getmemberobjects.md)|String collection| Retorna uma lista de directoryObjects de que o contato é um membro. |
+|[getMemberObjects](../api/orgcontact-getmemberobjects.md)|Coleção de cadeias de caracteres| Retorna uma lista de directoryObjects de que o contato é um membro. |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| endereços                    | coleção [physicalOfficeAddress](../resources/physicalofficeaddress.md)           | Endereços postais para esse contato organizacional. Por enquanto um contato só pode ter um endereço físico. |
-| companyName                  | String                                                     | Nome da empresa que este contato organizacional pertencem.                                                                                                                                                                                                                                                                                                                 |
-| departamento                   | String                                                     | O nome para o departamento no qual o contato funciona.                                                                                                                                                                                                                                                                                                                                |
+| endereços                    | [physicalOfficeAddress](physicalofficeaddress.md)            | Endereços postais para esse contato organizacional. Por enquanto um contato só pode ter um endereço físico. |
+| companyName                  | String                                                    | Nome da empresa que este contato organizacional pertencem.                                                                                                                                                                                                                                                                                                                 |
+| department                   | String                                                     | O nome para o departamento no qual o contato funciona.                                                                                                                                                                                                                                                                                                                                |
 | displayName                  | String                                                     | Nome de exibição para esse contato organizacional.                                                                                                                                                                                                                                                                                                                                   |
 | givenName                    | String                                                     | Nome para esse contato organizacional.                                                                                                                                                                                                                                                                                                                                     |
 | id                           | String                                                     | Identificador exclusivo para esse contato organizacional.                                                                                                                                                                                                                                                                                                                             |
-| imAddresses                  | String collection                                          | Lista de endereços de mensagens Instantâneas para esse contato organizacional. Por enquanto um contato só pode ter um endereço SIP.                                                                                                                                                                                                                        |
+| imAddresses                  | Coleção de cadeias de caracteres                          | Lista de endereços de mensagens Instantâneas para esse contato organizacional. Por enquanto um contato só pode ter um endereço SIP.                                                                                                                                                                                                                        |
 | jobTitle                     | String                                                     | Cargo para esse contato organizacional.                                                                                                                                                                                                                                                                                                                                      |
-| email                         | String                                                     | O endereço SMTP do contato, por exemplo, "jeff@contoso.onmicrosoft.com". |
+|email|String| O endereço SMTP do contato, por exemplo, "jeff@contoso.onmicrosoft.com". |
 | mailNickname                 | String                                                     | Alias de email (parte do endereço de email previamente pendente o símbolo @) para esse contato organizacional.                                                                                                                                                                                                                                                                                |
 | onPremisesLastSyncDateTime   | DateTimeOffset                                             | Data e hora quando este contato organizacional foi último sincronizados a partir do AD local. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1 de Jan de 2014 ficaria assim: ' 2014-01-01T00:00:00Z'.   |
-| onPremisesProvisioningErrors | coleção [OnPremisesProvisioningError](../resources/onpremisesprovisioningerror.md)       | Lista de sincronização de provisionamento de erros para esse contato organizacional.                                                                                                                                                                                                                                                                                                |
-| onPremisesSyncEnabled|Boolean|**true** se este objeto é sincronizado a partir de um diretório local; **false** se este objeto foi originalmente sincronizados a partir de um diretório local, mas é não são mais sincronizados e agora são administrados no Exchange; **Nulo** se este objeto nunca foram sincronizado a partir de um diretório local (padrão).|
-| telefones                       | Coleção [phone](../resources/phone.md)                  | Lista de telefones para esse contato organizacional. Tipos de telefone podem ser businessFax, comercial e celular. Somente um de cada tipo nunca pode estar presente na coleção.                                                                                                                       |
-| proxyAddresses               | String collection                                          | Por exemplo: "SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com". O operador **any** é obrigatório para expressões de filtro em propriedades de vários valores. Suporta \$filtro.                                                                                                                                                                               |
+| onPremisesProvisioningErrors |coleção [OnPremisesProvisioningError](onpremisesprovisioningerror.md)       | Lista de sincronização de provisionamento de erros para esse contato organizacional.                                                                                                                                                                                                                                                                                                |
+|onPremisesSyncEnabled|Booliano|**true** se este objeto é sincronizado a partir de um diretório local; **false** se este objeto foi originalmente sincronizados a partir de um diretório local, mas é não são mais sincronizados e agora são administrados no Exchange; **Nulo** se este objeto nunca foram sincronizado a partir de um diretório local (padrão).|
+| telefones                       | Coleção [phone](phone.md)                            | Lista de telefones para esse contato organizacional. Tipos de telefone podem ser businessFax, comercial e celular. Somente um de cada tipo nunca pode estar presente na coleção.                                                                                                                       |
+| proxyAddresses               | Coleção de cadeias de caracteres                                         | Por exemplo: ["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]. O operador **any** é obrigatório para expressões de filtro em propriedades de vários valores. Suporta \$filtro.                                                                                                                                                                               |
 | surname                      | String                                                     | Sobrenome para esse contato organizacional.                          |
 
 ## <a name="relationships"></a>Relações
 
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|directReports|Coleção [directoryObject](../resources/directoryobject.md)| Relatórios de diretos do contato. (Os usuários e contatos que tenham sua propriedade manager definida para esse contato.)  Somente leitura. Anulável.|
-|manager|[directoryObject](../resources/directoryobject.md)| O usuário ou contato que é gerente do contato. Somente leitura.|
-|memberOf|Coleção [directoryObject](../resources/directoryobject.md)| Grupos que este contato é um membro de. Somente leitura. Anulável.|
+|directReports|Coleção [directoryObject](directoryobject.md)| Relatórios de diretos do contato. (Os usuários e contatos que tenham sua propriedade manager definida para esse contato.)  Somente leitura. Anulável.|
+|manager|[directoryObject](directoryobject.md)| O usuário ou contato que é gerente do contato. Somente leitura.|
+|memberOf|Coleção [directoryObject](directoryobject.md)| Grupos que este contato é um membro de. Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -73,7 +73,7 @@ Veja a seguir uma representação JSON do recurso
 
 ```json
 {
-  "addresses": [{"@odata.type": "#microsoft.graph.physicalOfficeAddress"}],
+  "addresses": [{"@odata.type": "microsoft.graph.physicalOfficeAddress"}],
   "companyName": "string",
   "department": "string",
   "displayName": "string",
@@ -83,9 +83,9 @@ Veja a seguir uma representação JSON do recurso
   "mail": "string",
   "mailNickname": "string",
   "onPremisesLastSyncDateTime": "string (timestamp)",
-  "onPremisesProvisioningErrors": [{"@odata.type": "#microsoft.graph.onPremisesProvisioningError"}],
+  "onPremisesProvisioningErrors": [{"@odata.type": "microsoft.graph.onPremisesProvisioningError"}],
   "onPremisesSyncEnabled": true,
-  "phones": [{"@odata.type": "#microsoft.graph.phone"}],
+  "phones": [{"@odata.type": "microsoft.graph.phone"}],
   "proxyAddresses": ["string"],
   "surname": "string"
 }

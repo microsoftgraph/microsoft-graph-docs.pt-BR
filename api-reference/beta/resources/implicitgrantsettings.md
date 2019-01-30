@@ -2,12 +2,12 @@
 title: tipo de recurso de implicitGrantSettings
 description: Especifica se esse aplicativo web pode solicitar tokens usando o fluxo de implícita OAuth 2.0. Propriedades separadas estão disponíveis para solicitar tokens de acesso e a ID como parte do fluxo de implícita. Para ativar o fluxo implícito, pelo menos uma das propriedades a seguir deve ser definida como true.
 localization_priority: Normal
-ms.openlocfilehash: 82051c3605d9815fef8a0852e0ffa9075f4a6d78
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 6714b9448f2e49419e41fa62822498ceaa232170
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574513"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642762"
 ---
 # <a name="implicitgrantsettings-resource-type"></a>tipo de recurso de implicitGrantSettings
 
@@ -19,18 +19,12 @@ Especifica se esse aplicativo web pode solicitar tokens usando o fluxo de implí
 
 | Propriedade | Tipo | Descrição |
 |:---------|:-----|:------------|
-|enableIdTokenIssuance| Boolean | Especifica se esse aplicativo web pode solicitar um token de ID usando o fluxo de implícita OAuth 2.0.|
-|enableAccessTokenIssuance| Boolean | Especifica se esse aplicativo web pode solicitar um token de acesso usando o fluxo de implícita OAuth 2.0.|
+|enableIdTokenIssuance| Booliano | Especifica se esse aplicativo web pode solicitar um token de ID usando o fluxo de implícita OAuth 2.0.|
+|enableAccessTokenIssuance| Booliano | Especifica se esse aplicativo web pode solicitar um token de acesso usando o fluxo de implícita OAuth 2.0.|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
 
-  ],
-  "@odata.type": "microsoft.graph.implicitGrantSettings"
-}-->
 ```json
 {
   "enableIdTokenIssuance": "Boolean",

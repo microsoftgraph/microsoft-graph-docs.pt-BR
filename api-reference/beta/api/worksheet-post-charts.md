@@ -4,12 +4,12 @@ description: Use esta API para criar um novo gráfico.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 07d310471aef6560557a8a78c62b8aa15767c90f
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 27bd441e6002d69cf94f79b8e3de40f9614ad6a6
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29570866"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29644060"
 ---
 # <a name="create-chart"></a>Criar gráfico
 
@@ -38,11 +38,11 @@ POST /workbook/worksheets/{id|name}/charts/
 | Workbook-Session-Id  | ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do objeto [workbookChart](../resources/chart.md) .
+No corpo da solicitação, forneça uma representação JSON do objeto [Chart](../resources/chart.md).
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` objeto response de código e [workbookChart](../resources/chart.md) no corpo da resposta.
+Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [Chart](../resources/chart.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -62,13 +62,13 @@ Content-length: 52
   "left": 99
 }
 ```
-No corpo da solicitação, fornece uma representação JSON do objeto [workbookChart](../resources/chart.md) .
+No corpo da solicitação, forneça uma representação JSON do objeto [Chart](../resources/chart.md).
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookChart"
+  "@odata.type": "microsoft.graph.chart"
 } -->
 ```http
 HTTP/1.1 201 Created

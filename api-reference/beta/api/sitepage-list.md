@@ -5,22 +5,22 @@ ms.date: 03/15/2018
 title: Lista as páginas em um site
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: d3d164c2d4f349b605823af3273ae84f6eea3627
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 127f3e470e7a9f4570923858b6c18c45d7bc6a7c
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576035"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641187"
 ---
 # <a name="list-the-pages-in-the-site-pages-list-of-a-site"></a>Lista as páginas na lista de páginas de site de um site
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha a coleção de [sitePages](../resources/sitepage.md) de de páginas do site [lista](../resources/list.md) em um [site](../resources/site.md)do site. Todas as páginas no site são retornadas (com paginação).
+Obtenha a coleção de [] do [sitePages] de de páginas do site [lista][] em um [site][]do site. Todas as páginas no site são retornadas (com paginação).
 
-[sitePage](../resources/sitepage.md)
-[lista](../resources/list.md)
-[site](../resources/site.md)
+[sitePage]: ../resources/sitepage.md
+[list]: ../resources/list.md
+[site]: ../resources/site.md
 
 ## <a name="permissions"></a>Permissões
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Sites.Read.All, Sites.ReadWrite.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sites.Read.All, Sites.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -51,16 +51,9 @@ GET /sites/{site-id}/pages
 
 #### <a name="response"></a>Resposta
 
-<!-- 
-{ 
-    "blockType": "response", 
-    "@odata.type": "microsoft.graph.sitePage", 
-    "truncated": true,
-    "isCollection" : true
-} 
--->
+<!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.sitePage)", "truncated": true } -->
 
-```http
+```json
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -125,12 +118,12 @@ Content-type: application/json
                         "properties": {
                             "webId": "4a15f359-257c-4f31-8350-5025104e30d5",
                             "siteId": "00c6b6c6-c466-4e64-a370-2b6ddb7cdfe3",
-                            "query": {  },
+                            "query": { ... },
                             "templateId": 1,
                             "maxItemsPerPage": 10,
                             "hideWebPartWhenEmpty": false,
                             "kqlQueryTemplate": "...",
-                            "displayMaps": {  },
+                            "displayMaps": { ... },
                             "sites": [],
                             "layoutId": "Card",
                             "dataProviderId": "Search"
@@ -140,7 +133,7 @@ Content-type: application/json
             ]
         },
         {
-            "id": "2",
+            "id": 2,
             "eTag": "75bc70e2-6587-45be-8493-c99a956b2e05,7",
             "createdDateTime": "2016-12-06T20:04:40Z",
             "lastModifiedDateTime": "2016-12-06T20:05:09Z",

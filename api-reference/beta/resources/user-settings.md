@@ -4,12 +4,12 @@ description: 'As configurações do usuário atual. '
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5812141d21a32b8ab1835a75c05cbd57ea25a3a4
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 208d232af609f92d5924267ae26831b9929e357a
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571811"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640508"
 ---
 # <a name="settings-resource-type"></a>tipo de recurso de configurações
 
@@ -25,24 +25,20 @@ Esse recurso permite:
 ## <a name="methods"></a>Métodos
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[Obter configurações de usuário](../api/user-get-settings.md) |[configurações](../resources/user-settings.md)| Obtenha as configurações de usuário e da organização. |
-|[Atualizar configurações de usuário](../api/user-update-settings.md) |[configurações](../resources/user-settings.md)| Atualize as configurações de usuário atual. |
+|[Obter configurações de usuário](../api/user-get-settings.md) |[Configurações](../resources/user-settings.md)| Obtenha as configurações de usuário e da organização. |
+|[Atualizar configurações de usuário](../api/user-update-settings.md) |[Configurações](../resources/user-settings.md)| Atualize as configurações de usuário atual. |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|contributionToContentDiscoveryDisabled|Boolean|API [de tendências](insights-trending.md) quando definido como true, o acesso de representante para o usuário está desabilitado. Quando definido como true, documentos no Office de me aprofundar o usuário estão desabilitadas. Quando definido como true, a relevância do conteúdo exibido no Office 365, por exemplo, em sites sugeridos na página inicial do SharePoint e o modo de exibição de descoberta no OneDrive for Business é afetado. Os usuários podem controlar essa configuração no [Office me aprofundar](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout). |
-|contributionToContentDiscoveryAsOrganizationDisabled|Boolean|Reflete a [configuração de nível de organização](https://support.office.com/en-us/article/office-delve-for-office-365-admins-54f87a42-15a4-44b4-9df0-d36287d9531b#bkmk_delveonoff) controlar o acesso de representante para a [análise de tendências](insights-trending.md) API. Quando definido como true, a organização não tem acesso ao Office me aprofundar. A relevância do conteúdo exibido no Office 365, por exemplo, em sites sugeridos na página inicial do SharePoint e o modo de descoberta no OneDrive for Business será afetada para toda a organização. Essa configuração é somente leitura e só pode ser alterada pelos administradores, no [Centro de administração do SharePoint](https://support.office.com/article/about-the-office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23?ui=en-US&rs=en-US&ad=US).|
+|contributionToContentDiscoveryDisabled|Booliano|API [de tendências](insights-trending.md) quando definido como true, o acesso de representante para o usuário está desabilitado. Quando definido como true, documentos no Office de me aprofundar o usuário estão desabilitadas. Quando definido como true, a relevância do conteúdo exibido no Office 365, por exemplo, em sites sugeridos na página inicial do SharePoint e o modo de exibição de descoberta no OneDrive for Business é afetado. Os usuários podem controlar essa configuração no [Office me aprofundar](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout). |
+|contributionToContentDiscoveryAsOrganizationDisabled|Booliano|Reflete a [configuração de nível de organização](https://support.office.com/en-us/article/office-delve-for-office-365-admins-54f87a42-15a4-44b4-9df0-d36287d9531b#bkmk_delveonoff) controlar o acesso de representante para a [análise de tendências](insights-trending.md) API. Quando definido como true, a organização não tem acesso ao Office me aprofundar. A relevância do conteúdo exibido no Office 365, por exemplo, em sites sugeridos na página inicial do SharePoint e o modo de descoberta no OneDrive for Business será afetada para toda a organização. Essa configuração é somente leitura e só pode ser alterada pelos administradores, no [Centro de administração do SharePoint](https://support.office.com/article/about-the-office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23?ui=en-US&rs=en-US&ad=US).|
 
 ## <a name="json-representation"></a>Representação JSON
 
 Veja a seguir uma representação JSON do recurso.
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [ ],
-  "@type": "microsoft.graph.userSettings"
-}-->
+
 ```json
 {
   "contributionToContentDiscoveryDisabled": false,

@@ -2,12 +2,12 @@
 title: Tipo de recurso multiValueLegacyExtendedProperty
 description: Uma propriedade estendida que contém uma coleção de valores.
 localization_priority: Normal
-ms.openlocfilehash: de77f94076fe6bb2f0aa3ded3b1839b8d25ce752
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 86ba1969e06dc549d1fca00148cbea96f94cf4b6
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575888"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643273"
 ---
 # <a name="multivaluelegacyextendedproperty-resource-type"></a>Tipo de recurso multiValueLegacyExtendedProperty
 
@@ -43,7 +43,7 @@ Veja a seguir uma representação JSON do recurso.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty"
+  "@odata.type": "microsoft.graph.multivaluelegacyextendedproperty"
 }-->
 
 ```json

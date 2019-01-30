@@ -2,12 +2,12 @@
 title: tipo de recurso de publicClient
 description: Especifica as configurações para não Web App ou o Api da Web. (por exemplo, celular ou outro cliente público, como um aplicativo instalado em execução em um dispositivo de área de trabalho)
 localization_priority: Normal
-ms.openlocfilehash: 866e27b4ea3e1386b7cc69f967635d38641f121c
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: ff1d77709293a7167868451671e1660196c9a4db
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571839"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29644053"
 ---
 # <a name="publicclient-resource-type"></a>tipo de recurso de publicClient
 
@@ -19,7 +19,7 @@ Especifica as configurações para não Web App ou o Api da Web. (por exemplo, c
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|redirectUris|String collection| Especifica o redirecionamento de códigos de autorização de URIs que OAuth 2.0 e tokens de acesso são enviados para ou as URLs que os tokens do usuário são enviados para entrar. |
+|redirectUris|Coleção de cadeias de caracteres| Especifica o redirecionamento de códigos de autorização de URIs que OAuth 2.0 e tokens de acesso são enviados para ou as URLs que os tokens do usuário são enviados para entrar. |
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -29,7 +29,7 @@ Veja a seguir uma representação JSON do recurso.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.publicClientApplication"
+  "@odata.type": "microsoft.graph.installedClient"
 }-->
 
 ```json

@@ -4,12 +4,12 @@ description: Configuração do mixer níveis para determinados participante de �
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: bb5d28ac45d510a715dcc5001c8ee02b8352bb8c
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 14804e02766e375568fac03cb97d2eaf76142353
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575416"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643829"
 ---
 # <a name="participantmixerlevel-resource-type"></a>tipo de recurso de participantMixerLevel
 
@@ -22,7 +22,7 @@ Configuração do mixer níveis para determinados participante de áudio
 | Propriedade               | Tipo                                                      | Descrição                                                                                         |
 | :--------------------- | :-------------------------------------------------------- | :---------------------------------------------------------------------------------------------------|
 | desviando                | [audioDuckingConfiguration](audioduckingconfiguration.md) | Configuração do desviando (Introdução gradual e sair) de outras fontes para este partipant mistura personalizada.       |
-| exclusiveMode          | booliano                                                   | Se fontes sem nível de origem explícitas devem ser removidas da combinação.                       |
+| exclusiveMode          | boolean                                                   | Se fontes sem nível de origem explícitas devem ser removidas da combinação.                       |
 | participante            | String                                                    | O participante para quem o mixer está sendo configurado.                                             |
 | sourceLevels           | coleção [audioSourceLevel](audiosourcelevel.md)        | Configuração de nível de outras fontes.                                                              |
 
@@ -39,10 +39,10 @@ Veja a seguir uma representação JSON do recurso.
 }-->
 ```json
 {
-  "ducking": { "@odata.type": "microsoft.graph.audioDuckingConfiguration" },
+  "ducking": { "@odata.type": "#microsoft.graph.audioDuckingConfiguration" },
   "exclusiveMode": true,
   "participant": "String",
-  "sourceLevels": [ { "@odata.type": "microsoft.graph.audioSourceLevel" } ]
+  "sourceLevels": [ { "@odata.type": "#microsoft.graph.audioSourceLevel" } ]
 }
 ```
 

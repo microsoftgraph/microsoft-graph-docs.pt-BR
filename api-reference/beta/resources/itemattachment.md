@@ -2,12 +2,12 @@
 title: Tipo de recurso itemAttachment
 description: Um contato, evento ou mensagem anexado a outro evento,
 localization_priority: Normal
-ms.openlocfilehash: b0e3b62e5f6100884e6fbea40d16221bf8503897
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: cce33cb7597f04435daff723a0125305968eea99
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571405"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640417"
 ---
 # <a name="itemattachment-resource-type"></a>Tipo de recurso itemAttachment
 
@@ -37,7 +37,7 @@ Derivado de [attachment](attachment.md).
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|item|[outlookItem](outlookitem.md)|O contato anexado, mensagem ou evento. Propriedade de navegação.|
+|item|[OutlookItem](outlookitem.md)|O contato anexado, mensagem ou evento. Propriedade de navegação.|
 
 ## <a name="json-representation"></a>Representação JSON
 

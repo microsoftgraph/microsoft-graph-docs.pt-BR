@@ -4,12 +4,12 @@ description: Protege uma planilha. Gera uma exceção se a planilha estiver prot
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 4bb02bfd77cd1e86f6acf9b4f2f393474f484b11
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 52c7b9a6d3437417e6b8d527d4625e64a9d91cc8
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572952"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643402"
 ---
 # <a name="worksheetprotection-protect"></a>WorksheetProtection: protect
 
@@ -42,7 +42,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|options|workbookWorksheetProtectionOptions|Opcional. Opções de proteção da planilha.|
+|opções|WorksheetProtectionOptions|Opcional. Opções de proteção da planilha.|
 
 ## <a name="response"></a>Resposta
 

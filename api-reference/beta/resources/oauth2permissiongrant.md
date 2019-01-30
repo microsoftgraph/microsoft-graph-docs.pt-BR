@@ -2,12 +2,12 @@
 title: tipo de recurso de oAuth2PermissionGrant
 description: Representa os escopos de OAuth 2.0 (permissões delegadas) que tiverem sido concedidos a um aplicativo (representado por uma entidade de serviço) como parte do processo de consentimento do usuário ou administrador.
 localization_priority: Normal
-ms.openlocfilehash: 5d3d900395843f39645f61d1b984e3ed4f79d476
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: ea6486aedca4c3fcf73e59a5652ccf517fb01ddc
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576966"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640774"
 ---
 # <a name="oauth2permissiongrant-resource-type"></a>tipo de recurso de oAuth2PermissionGrant
 
@@ -24,7 +24,7 @@ Veja a seguir uma representação JSON do recurso
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.oAuth2PermissionGrant"
+  "@odata.type": "microsoft.graph.oAuth2Permissiongrant"
 }-->
 
 ```json
@@ -61,7 +61,7 @@ Nenhum
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Obter oAuth2PermissionGrant](../api/oauth2permissiongrant-get.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md) |Leia as propriedades e os relacionamentos do objeto oAuth2PermissionGrant.|
-|[Lista oAuth2PermissionGrants](../api/oauth2permissiongrant-list.md) | coleção [oAuth2PermissionGrant](oauth2permissiongrant.md) | Recupere uma lista de objetos oauth2PermissionGrant. |
+|[Lista oAuth2PermissionGrants](../api/oauth2permissiongrant-list.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md) collection | Recupere uma lista de objetos oauth2PermissionGrant. |
 |[Atualizar oAuth2PermissionGrant](../api/oauth2permissiongrant-update.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md) |Atualize o objeto oAuth2PermissionGrant. |
 |[Excluir oAuth2PermissionGrant](../api/oauth2permissiongrant-delete.md) | Nenhum |Exclua objeto oAuth2PermissionGrant. |
 

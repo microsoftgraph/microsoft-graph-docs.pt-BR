@@ -2,12 +2,12 @@
 title: tipo de recurso fileAttachment
 description: Um arquivo (por exemplo, um arquivo de texto ou um documento do Word) anexado a um evento,
 localization_priority: Normal
-ms.openlocfilehash: 5f7be9bca3114fc7e74be711dc606a278e0025ff
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 7d9f92565e38aaf418691480b7f8f3187c57647c
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572798"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29644088"
 ---
 # <a name="fileattachment-resource-type"></a>tipo de recurso fileAttachment
 
@@ -32,9 +32,9 @@ Derivado de [attachment](attachment.md).
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|contentBytes|String|O conteúdo do arquivo codificado pela base64.|
+|contentBytes|Binária|O conteúdo do arquivo codificado pela base64.|
 |contentId|String|A ID do anexo no repositório do Exchange.|
-|contentLocation|String|Não use essa propriedade como ela não é suportada.|
+|contentLocation|Cadeia de caracteres|Não use essa propriedade que não tem suporte.|
 |contentType|String|O tipo de conteúdo do anexo.|
 |id|String|A ID do anexo.|
 |isInline|Booliano|Defina como true se este for um anexo embutido.|
@@ -60,7 +60,7 @@ Veja a seguir uma representação JSON do recurso
 
 ```json
 {
-  "contentBytes": "String",
+  "contentBytes": "binary",
   "contentId": "string",
   "contentLocation": "string",
   "contentType": "string",

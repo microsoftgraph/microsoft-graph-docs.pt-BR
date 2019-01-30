@@ -4,12 +4,12 @@ description: Recupere uma lista de objetos chartseries.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 69e84b83456d1c1f962e2c20bdadae81d9276917
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: d7b730ceed812d6496dfcaa29eaac9cc87de8c39
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572133"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641418"
 ---
 # <a name="list-series"></a>Listar séries
 
@@ -60,7 +60,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookChartSeries",
+  "@odata.type": "microsoft.graph.chartSeries",
   "isCollection": true
 } -->
 ```http

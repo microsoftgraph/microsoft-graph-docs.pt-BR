@@ -4,12 +4,12 @@ description: Esse objeto representa os atributos de fonte do objeto Chart, como 
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 7e9815d5d6d9bf7e7b0ef4ae97881e12c7ba9181
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: c507a966dc6b29e46935c5c77a85b557a84cc69c
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573624"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641166"
 ---
 # <a name="chartfont-resource-type"></a>Tipo de recurso ChartFont
 
@@ -22,8 +22,8 @@ Esse objeto representa os atributos de fonte do objeto Chart, como nome, tamanho
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Get ChartFont](../api/chartfont-get.md) | [WorkbookChartFont](chartfont.md) |Leia as propriedades e os relacionamentos do objeto chartFont.|
-|[Update](../api/chartfont-update.md) | [WorkbookChartFont](chartfont.md)   |Atualize o objeto ChartFont. |
+|[Get ChartFont](../api/chartfont-get.md) | [ChartFont](chartfont.md) |Leia as propriedades e os relacionamentos do objeto chartFont.|
+|[Update](../api/chartfont-update.md) | [ChartFont](chartfont.md)   |Atualize o objeto ChartFont. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
@@ -33,7 +33,7 @@ Esse objeto representa os atributos de fonte do objeto Chart, como nome, tamanho
 |italic|booliano|Representa o status da fonte em itálico.|
 |name|string|Nome da fonte (por exemplo, "Calibri")|
 |size|Double|Tamanho da fonte, por exemplo, 11.|
-|underline|string|Tipo de sublinhado aplicado à fonte. Os valores possíveis são: `None`, `Single`.|
+|underline|string|Tipo de sublinhado aplicado à fonte. Os valores possíveis são: `None` e `Single`.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -43,11 +43,12 @@ Nenhum
 
 Veja a seguir uma representação JSON do recurso.
 
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
-  "optionalProperties": [],
-  "@odata.type": "microsoft.graph.workbookChartFont"
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.chartFont"
 }-->
 
 ```json

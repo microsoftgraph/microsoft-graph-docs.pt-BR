@@ -2,27 +2,27 @@
 title: tipo de recurso de parseExpressionResponse
 description: 'Representa a resposta do [synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md) ação.'
 localization_priority: Normal
-ms.openlocfilehash: fc37c963e9c9588241d84570edc73a933eec49fc
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: f8ea708468e1e580693b2bd0e6f0e7f3494996f0
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572875"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641054"
 ---
 # <a name="parseexpressionresponse-resource-type"></a>tipo de recurso de parseExpressionResponse
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa a resposta do [synchronizationSchema: parseExpression](../api/synchronization-synchronizationschema-parseexpression.md) ação.
+Representa a resposta do [synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md) ação.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|erro| publicError |Detalhes do erro, se a avaliação da expressão resultou em um erro.|
-|evaluationResult|String collection|Uma coleção de valores gerados pela avaliação da expressão.|
-|evaluationSucceeded|Boolean|`true`Se a avaliação foi bem-sucedida.|
+|erro|OData.Error|Detalhes do erro, se a avaliação da expressão resultou em um erro.|
+|evaluationResult|Coleção de cadeias de caracteres|Uma coleção de valores gerados pela avaliação da expressão.|
+|evaluationSucceeded|Booliano|`true`Se a avaliação foi bem-sucedida.|
 |parsedExpression|[attributeMappingSource](synchronization-attributemappingsource.md)|Um objeto de [attributeMappingSource](synchronization-attributemappingsource.md) representando a expressão analisada.|
-|parsingSucceeded|Boolean|`true`Se a expressão foi analisada com êxito.|
+|parsingSucceeded|Booliano|`true`Se a expressão foi analisada com êxito.|
 
 ## <a name="json-representation"></a>Representação JSON
 

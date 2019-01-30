@@ -2,12 +2,12 @@
 title: 'servicePrincipal: listar appRoleAssignments'
 description: Recupere uma lista de objetos approleassignment.
 localization_priority: Normal
-ms.openlocfilehash: d9134985359a76b3d26b93aa675cdd82284a17b4
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: af98d4b92e936a961d0edefe6a4f00c71a5a75ed
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574653"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641982"
 ---
 # <a name="serviceprincipal-list-approleassignments"></a>servicePrincipal: listar appRoleAssignments
 
@@ -58,7 +58,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.appRoleAssignment",
+  "@odata.type": "microsoft.graph.approleassignment",
   "isCollection": true
 } -->
 ```http

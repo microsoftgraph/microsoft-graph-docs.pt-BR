@@ -2,12 +2,12 @@
 title: Criar governanceRoleAssignmentRequest
 description: Crie uma solicitação de atribuição de função para representar a operação desejado em uma atribuição de função. A tabela a seguir lista as operações.
 localization_priority: Normal
-ms.openlocfilehash: 0fc8d96585daf63f53bc6b33985a289e8f810d6b
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: c936a6cd0ba061fc1dd3758533781d7270673939
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572364"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641264"
 ---
 # <a name="create-governanceroleassignmentrequest"></a>Criar governanceRoleAssignmentRequest
 
@@ -15,7 +15,7 @@ ms.locfileid: "29572364"
 
 Crie uma solicitação de atribuição de função para representar a operação desejado em uma atribuição de função. A tabela a seguir lista as operações.
 
-| Operation       | Tipo | 
+| Operação       | Tipo | 
 |:---------------|:----------|
 | Atribuir uma atribuição de função| AdminAdd |
 | Ativar uma atribuição de função elegíveis| UserAdd | 
@@ -33,8 +33,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources  |
-|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources  |
+|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | PrivilegedAccess.ReadWrite.AzureResources |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -60,7 +60,7 @@ No corpo da solicitação, fornece uma representação JSON de um objeto [govern
 |assignmentState|String|Sim|O estado da atribuição. O valor pode ser ``Eligible`` e ``Active``.|
 |type|String|Sim|O tipo de solicitação. O valor pode ser `AdminAdd`, `UserAdd`, `AdminUpdate`, `AdminRemove`, `UserRemove`, `UserExtend`, `UserRenew`, `AdminRenew`e `AdminExtend`.|
 |motivo|String| |O motivo pelo qual deve ser fornecido para a solicitação de atribuição de função de auditoria e revise finalidade.|
-|agenda|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)| | O agendamento da solicitação de atribuição de função. Tipo de solicitação de `UserAdd`, `AdminAdd`, `AdminUpdate`, e `AdminExtend`, é necessário.|
+|agenda|[governanceSchedule](../resources/governanceschedule.md)| | O agendamento da solicitação de atribuição de função. Tipo de solicitação de `UserAdd`, `AdminAdd`, `AdminUpdate`, e `AdminExtend`, é necessário.|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) no corpo da resposta.
@@ -94,7 +94,7 @@ Neste exemplo, os administradores atribuem nawu@fimdev.net usuário à função 
 |assignmentState|String|Sim| Elegíveis / ativo|
 |type|String|Sim| AdminAdd|
 |motivo|String| depende de configurações de função||
-|agenda|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|Sim|        |
+|agenda|[governanceSchedule](../resources/governanceschedule.md)|Sim|        |
 ##### <a name="request"></a>Solicitação
 <!-- {
   "blockType": "request",
@@ -177,7 +177,7 @@ Neste exemplo, nawu@fimdev.net o usuário ativa a função de leitor de faturame
 |assignmentState|String|Sim| Ativo|
 |type|String|Sim| UserAdd|
 |motivo|String| depende de configurações de função||
-|agenda|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|Sim|        |
+|agenda|[governanceSchedule](../resources/governanceschedule.md)|Sim|        |
 ##### <a name="request"></a>Solicitação
 <!-- {
   "blockType": "request",
@@ -272,7 +272,7 @@ Neste exemplo, o nawu@fimdev.net usuário desativa a função de leitor de cobra
 |assignmentState|String|Sim| Ativo|
 |type|String|Sim| UserRemove|
 |motivo|String| Não||
-|agenda|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|Não|        |
+|agenda|[governanceSchedule](../resources/governanceschedule.md)|Não|        |
 ##### <a name="request"></a>Solicitação
 <!-- {
   "blockType": "request",
@@ -335,7 +335,7 @@ Neste exemplo, os administradores remover nawu@fimdev.net o usuário da função
 |assignmentState|String|Sim| Elegíveis / ativo|
 |type|String|Sim| AdminRemove|
 |motivo|String| Não||
-|agenda|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|Não|        |
+|agenda|[governanceSchedule](../resources/governanceschedule.md)|Não|        |
 ##### <a name="request"></a>Solicitação
 <!-- {
   "blockType": "request",
@@ -397,7 +397,7 @@ Neste exemplo, os administradores atualizar a atribuição de função para o us
 |assignmentState|String|Sim| Elegíveis / ativo|
 |type|String|Sim| AdminUpdate|
 |motivo|String| depende roleSettings||
-|agenda|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|Sim|        |
+|agenda|[governanceSchedule](../resources/governanceschedule.md)|Sim|        |
 ##### <a name="request"></a>Solicitação
 <!-- {
   "blockType": "request",
@@ -477,7 +477,7 @@ Este exemplo estende a atribuição de função expirar para usuário ANUJCUSER 
 |assignmentState|String|Sim| Elegíveis / ativo |
 |type|String|Sim| AdminExtend|
 |motivo|String| depende roleSettings||
-|agenda|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|Sim|        |
+|agenda|[governanceSchedule](../resources/governanceschedule.md)|Sim|        |
 ##### <a name="request"></a>Solicitação
 <!-- {
   "blockType": "request",

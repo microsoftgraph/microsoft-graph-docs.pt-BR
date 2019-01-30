@@ -4,12 +4,12 @@ description: 'Get recentemente criado, atualizado ou excluído objetos de diret�
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4b00f86dcb3789a2117a23ffa20e6392e557910d
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 56ee662050858ff3d46b12b6885ba9e418d0e59d
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573253"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641362"
 ---
 # <a name="directoryobject-delta"></a>directoryObject: delta
 
@@ -108,8 +108,7 @@ Adicionando um cabeçalho de solicitação opcionais - `prefer:return=minimal` -
 Este é um exemplo de solicitação. Não há nenhum `$select` parâmetro, para que um conjunto de propriedades padrão é controlado e retornado.
 <!-- {
   "blockType": "request",
-  "name": "user_delta",
-  "truncated": true
+  "name": "user_delta"
 }-->
 
 ```http
@@ -151,7 +150,8 @@ Content-type: application/json
       "department": null,
       "displayName": "John Smith",
       "givenName": null,
-      "jobTitle": null
+      "jobTitle": null,
+      <...response trimmed for brevity...>
     },
     {
       "@odata.type": "#microsoft.graph.group",
@@ -160,7 +160,8 @@ Content-type: application/json
       "classification": null,
       "createdDateTime": "2018-06-20T16:50:09Z",
       "description": null,
-      "displayName": "testgp"
+      "displayName": "testgp",
+      <...response trimmed for brevity...>
     },
     {
       "@odata.type": "#microsoft.graph.orgContact",
@@ -172,8 +173,11 @@ Content-type: application/json
       "department": "string",
       "displayName": "string",
       "givenName": "string",
-      "jobTitle": "string"
-    }    
+      "id": "string (identifier)",
+      "jobTitle": "string",
+      <...response trimmed for brevity...>
+    },
+    <...response trimmed for brevity...>
   ]
 }
 ```
@@ -183,8 +187,7 @@ Content-type: application/json
 O exemplo a seguir mostra o uso do comportamento de resposta mínimo alternativo:
 <!-- {
   "blockType": "request",
-  "name": "directoryObject_delta",
-  "truncated": true
+  "name": "directoryObject_delta"
 }-->
 
 ```http
@@ -226,7 +229,8 @@ Content-type: application/json
       "@odata.type": "#microsoft.graph.orgContact",
       "id": "8f301319-4b4e-493f-8067-bce1dec76e7a",
       "businessPhones": "12345"
-    }    
+    },
+    <...response trimmed for brevity...>
   ]
 }
 ```
@@ -236,8 +240,7 @@ Content-type: application/json
 O exemplo a seguir mostra a solicitação inicial usando o `isOf` operador para filtrar somente entidades de usuário e de grupo:
 <!-- {
   "blockType": "request",
-  "name": "directoryobject_delta",
-  "truncated": true
+  "name": "directoryobject_delta"
 }-->
 
 ```http
@@ -277,7 +280,8 @@ Content-type: application/json
       "department": null,
       "displayName": "John Smith",
       "givenName": null,
-      "jobTitle": null
+      "jobTitle": null,
+      <...response trimmed for brevity...>
     },
     {
       "@odata.type": "#microsoft.graph.group",
@@ -286,8 +290,10 @@ Content-type: application/json
       "classification": null,
       "createdDateTime": "2018-06-20T16:50:09Z",
       "description": null,
-      "displayName": "testgp"      
-    }    
+      "displayName": "testgp",
+      <...response trimmed for brevity...>
+    },
+    <...response trimmed for brevity...>
   ]
 }
 ```

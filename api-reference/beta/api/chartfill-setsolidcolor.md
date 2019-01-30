@@ -4,12 +4,12 @@ description: Define a formatação de preenchimento de um elemento do gráfico c
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 6c9e7a897d0dfb7a2577f69dff4fb9ac8f841cce
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: e841ee13719b7d19f1ca306ad3a555b447cb9cb6
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573078"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642328"
 ---
 # <a name="chartfill-setsolidcolor"></a>ChartFill: setSolidColor
 
@@ -72,7 +72,8 @@ Content-length: 28
 Veja a seguir um exemplo da resposta. 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.none"
 } -->
 ```http
 HTTP/1.1 200 OK

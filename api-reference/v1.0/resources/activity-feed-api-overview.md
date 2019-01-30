@@ -1,18 +1,18 @@
 ---
 title: Use a API REST de feed de atividade
-description: 'Você pode usar a API de feed no Microsoft Graph de atividade para retomar actiity de um usuário em plataformas e dispositivos. Solicitações de API de feed de atividade são realizadas em nome de um usuário por meio de permissões delegadas e a permissão de atividade do usuário, que pode ser usada com contas pessoais ou comercial e escola. '
+description: 'Você pode usar a API de feed no Microsoft Graph de atividade para retomar a atividade do usuário em plataformas e dispositivos. Solicitações de API de feed de atividade são realizadas em nome de um usuário por meio de permissões delegadas e a permissão de atividade do usuário, que pode ser usada com contas pessoais ou comercial e escola. '
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: a229a5231894598fce0ff11f15926256987caa84
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 00b1ac90bd4a1a9fe7cef2a9ffaebcebc2d8d5f4
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27971841"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641068"
 ---
 # <a name="use-the-activity-feed-rest-api"></a>Use a API REST de feed de atividade
 
-Você pode usar a API de feed no Microsoft Graph de atividade para retomar actiity de um usuário em plataformas e dispositivos. Solicitações de API de feed de atividade são realizadas em nome de um usuário por meio de [permissões delegadas](/graph/permissions-reference#delegated-permissions-application-permissions-and-effective-permissions) e a [permissão de atividade do usuário](/graph/permissions-reference), que pode ser usado com contas pessoais ou comercial e escola. 
+Você pode usar a API de feed no Microsoft Graph de atividade para retomar a atividade do usuário em plataformas e dispositivos. Solicitações de API de feed de atividade são realizadas em nome de um usuário por meio de [permissões delegadas](/graph/permissions-reference#delegated-permissions-application-permissions-and-effective-permissions) e a [permissão de atividade do usuário](/graph/permissions-reference), que pode ser usado com contas pessoais ou comercial e escola. 
 
 As atividades do usuário são representadas pelo recurso de [atividade](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/projectrome_activity) e são organizadas em um feed baseadas em tempo representada pela coleção me / atividades. 
 <!-- Add missing content.

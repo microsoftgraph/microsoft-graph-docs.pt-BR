@@ -4,12 +4,12 @@ description: Representa uma coluna em uma tabela.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 10c5dbffcb5460ea029368a4c9b6dcfb6c21f256
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 9f70b5363ccc7552975db8f2396af705d8bf1557
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574660"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643098"
 ---
 # <a name="tablecolumn-resource-type"></a>Tipo de recurso TableColumn
 
@@ -39,7 +39,7 @@ Representa uma coluna em uma tabela.
 |id|int|Retorna uma chave exclusiva que identifica a coluna na tabela. Somente leitura.|
 |índice|int|Retorna o número de índice da coluna na coleção de colunas da tabela. Indexado com zero. Somente leitura.|
 |name|string|Retorna o nome da coluna da tabela. Somente leitura.|
-|values|Json|Representa os valores brutos do intervalo especificado. Os dados retornados podem ser dos tipos: cadeia de caracteres, número ou booliano. Células que contêm um erro retornarão a cadeia de caracteres de erro.|
+|values|json|Representa os valores brutos do intervalo especificado. Os dados retornados podem ser dos tipos: cadeia de caracteres, número ou booliano. Células que contêm um erro retornarão a cadeia de caracteres de erro.|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|

@@ -4,12 +4,12 @@ description: RangeView representa um conjunto de células visíveis do intervalo
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: d01ab0b8b21814a363d838b61fca29aa90357156
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: ace424d12e38e4bb907923ea542ebd7330130d06
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574359"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643976"
 ---
 # <a name="rangeview-resource-type"></a>tipo de recurso rangeView
 
@@ -28,7 +28,6 @@ RangeView representa um conjunto de células visíveis do intervalo pai.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|cellAddresses|Json|Representa os endereços de célula
 |columnCount|Int32|Retorna o número de colunas visíveis. Somente leitura.|
 |formulas|Json|Representa a fórmula em notação A1. |
 |formulasLocal|Json|Representa a fórmula em notação A1, na formatação de número da localidade e no idioma do usuário. Por exemplo, a fórmula "=SUM(A1, 1.5)" em inglês seria "=SOMA(A1; 1,5)" em português.    |
@@ -37,7 +36,7 @@ RangeView representa um conjunto de células visíveis do intervalo pai.
 |numberFormat|Json|Representa o código de formato de número do Excel para determinada célula. Somente leitura. |
 |rowCount|Int32|Retorna o número de linhas visíveis. Somente leitura.  |
 |text|Json|Valores de texto do intervalo especificado. O valor de texto não depende da largura da célula. A substituição pelo sinal #, que ocorre na interface de usuário do Excel, não afeta o valor de texto retornado pela API. Somente leitura.    |
-|valueTypes|Json|Representa o tipo de dados de cada célula. Somente leitura. Os valores possíveis são: desconhecido, vazio, cadeia de caracteres, número inteiro, Double, Boolean, erro. |
+|valueTypes|Json|Representa o tipo de dados de cada célula. Somente leitura. Os valores possíveis são: Unknown, Empty, String, Integer, Double, Boolean, Error. |
 |values|Json|Representa os valores brutos da exibição do intervalo especificado. Os dados retornados podem ser dos tipos: cadeia de caracteres, número ou booliano. Células que contêm um erro retornarão a cadeia de caracteres de erro.   |
 
 ## <a name="relationships"></a>Relações
@@ -49,7 +48,6 @@ RangeView representa um conjunto de células visíveis do intervalo pai.
 Veja a seguir uma representação JSON do recurso.
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "optionalProperties": [  ],
   "@odata.type": "microsoft.graph.workbookRangeView"
 }-->

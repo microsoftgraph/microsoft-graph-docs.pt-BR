@@ -2,12 +2,12 @@
 title: Obter anexo
 description: Leia as propriedades e relacionamentos de um anexo, anexados a um evento, mensagem, tarefa do Outlook ou postagem.
 localization_priority: Normal
-ms.openlocfilehash: 650892a13fd4977697fa17788c509542b4f1b415
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: b346461dad8b0a15d12d0882e0fe8aa4cc2d4774
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574346"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641159"
 ---
 # <a name="get-attachment"></a>Obter anexo
 
@@ -138,7 +138,7 @@ Content-type: application/json
 Content-length: 199
 
 {
-  "@odata.type": "microsoft.graph.fileAttachment",
+  "@odata.type": "#microsoft.graph.fileAttachment",
   "contentType": "contentType-value",
   "contentLocation": "contentLocation-value",
   "contentBytes": "contentBytes-value",

@@ -4,18 +4,18 @@ description: Recupere as propriedades e os relacionamentos de um objeto page.
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 1cafa1b430f20fc74d045c498d7bba81eb160463
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 57a2c75bbe671086c89818a84f7f8266b90713c6
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572630"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642944"
 ---
 # <a name="get-page"></a>Get page
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de um objeto [page](../resources/onenotepage.md).
+Recupere as propriedades e os relacionamentos de um objeto [page](../resources/page.md).
 
 **Obtendo informações da página**
 
@@ -69,7 +69,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [page](../resources/onenotepage.md) no corpo da resposta.
+Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [page](../resources/page.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

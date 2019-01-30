@@ -4,12 +4,12 @@ description: Representa uma operação de diretiva de dados enviados. Ele conté
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4547221c8c1b859d4738a5468603ac6890246263
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 0d3ec392bb30614346d2726262851eebc29ee779
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29570922"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643990"
 ---
 # <a name="datapolicyoperation-resource-type"></a>tipo de recurso de dataPolicyOperation
 
@@ -32,7 +32,8 @@ Representa uma operação de diretiva de dados enviados. Ele contém as informa�
 |status|string| Os valores possíveis são: `notStarted`, `running`, `complete`, `failed`, `unknownFutureValue`.|
 |storageLocation|String|O local da URL para onde os dados está sendo exportados para solicitações de exportação.|
 |userId|String|A identificação do usuário no qual a operação é executada.|
-|submittedDateTime|DateTimeOffset|Representa quando a solicitação para esta operação de dados foi enviada, em tempo de UTC, usando o formato ISO 8601. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|submittedDateTime|DateTimeOffset|Representa quando a solicitação para esta operação de dados foi enviada, em tempo de UTC, usando o formato ISO 8601. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|progresso|Duplo|Especifica o progresso de uma operação.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -57,7 +58,8 @@ Veja a seguir uma representação JSON do recurso.
   "status": "string",
   "storageLocation": "String",
   "userId": "String",
-  "submittedDateTime": "String (timestamp)"
+  "submittedDateTime": "String (timestamp)",
+  "progress": "Double"
 }
 
 ```

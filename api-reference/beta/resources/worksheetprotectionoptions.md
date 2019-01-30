@@ -4,12 +4,12 @@ description: Representa as opções de proteção da planilha.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 786bcf4b26e2e7bedf3fe8fd0429ddc9f1f22b39
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: e32e41eb46cc5af98f6d9aeffcf470e22fbad349
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574142"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640522"
 ---
 # <a name="worksheetprotectionoptions-resource-type"></a>Tipo de recurso WorksheetProtectionOptions
 
@@ -41,7 +41,7 @@ Veja a seguir uma representação JSON do recurso.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.workbookWorksheetProtectionOptions"
+  "@odata.type": "microsoft.graph.worksheetProtectionOptions"
 }-->
 
 ```json

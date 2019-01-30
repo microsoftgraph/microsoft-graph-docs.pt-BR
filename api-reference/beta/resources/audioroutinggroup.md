@@ -4,12 +4,12 @@ description: O grupo de roteamento áudio armazena uma rota de áudio privada en
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: fb1303e2a6f9e269faf5767093d418cdd0980463
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: e7fc7de5b5caaa2f4079c453f9cd855a42577cb8
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573015"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643168"
 ---
 # <a name="audioroutinggroup-resource-type"></a>tipo de recurso de audioRoutingGroup
 
@@ -31,10 +31,10 @@ O grupo de roteamento áudio armazena uma rota de áudio privada entre os partic
 
 | Propriedade      | Tipo              | Descrição                                                          |
 | :----------   | :---------------- | :--------------------------------------------------------------------|
-| id            | String            | Somente leitura. Servidor foi gerado.                                         |
-| receptores     | Coleção de cadeia de caracteres | Lista de recebimento de ids de participante.                                   |
+| id            | String            | Somente leitura. Servidor gerado.                                         |
+| receptores     | String Collection | Lista de recebimento de ids de participante.                                   |
 | routingMode   | String            | Modo de grupo de roteamento.  Os valores possíveis são: `oneToOne` e `multicast`.   |
-| sources       | Coleção de cadeia de caracteres | Lista de ids de participante de origem.                                      |
+| sources       | String Collection | Lista de ids de participante de origem.                                      |
 
 > **Observação:** Modo de roteamento determina as restrições nas fontes e receptores. Há suporte para os seguintes grupos de roteamento.
 > - `oneToOne`-fontes e receptores possuem apenas um participante.
@@ -59,9 +59,9 @@ Veja a seguir uma representação JSON do recurso.
 ```json
 {
   "id": "String (identifier)",
-  "receivers": [ "Guid" ],
+  "receivers": [ "String" ],
   "routingMode": "oneToOne | multicast",
-  "sources": [ "Guid" ]
+  "sources": [ "String" ]
 }
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
