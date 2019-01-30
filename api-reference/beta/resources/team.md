@@ -4,12 +4,12 @@ description: 'No Microsoft Teams, uma equipe é um conjunto de canais. '
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 0e8f5a7644e56d1f6f2be08385fc1e9a280828ac
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 6ed8b298336563d2b07ce2d6a83b90c9400fe53f
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526204"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643773"
 ---
 # <a name="team-resource-type"></a>tipo de recurso de equipe
 
@@ -64,6 +64,7 @@ Confira mais informações sobre como trabalhar com grupos e membros em equipes,
 |channels|Coleção [channel](channel.md)|A coleção de canais e mensagens associadas à equipe.|
 |installedApps|Coleção [teamsAppInstallation](teamsappinstallation.md)|Os aplicativos instalados nessa equipe.|
 |owners|[user](user.md)| A lista de proprietários desta equipe. |
+|operations|Coleção [teamsAsyncOperation](teamsasyncoperation.md)| As operações assíncronas que foram executadas ou estão em execução nesta equipe. | 
 |template|[teamsTemplate](teamstemplate.md)| O modelo do qual essa equipe foi criada. |
 
 ## <a name="json-representation"></a>Representação JSON

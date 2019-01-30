@@ -1,24 +1,24 @@
 ---
-title: tipo de recurso de usuário
+title: Tipo de recurso de usuário
 description: Representa uma conta de usuário do Azure AD. Herda de directoryObject.
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1845bdbc349712141c5e356acaaafb8ba1c49aba
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 3eabe2fc411362a8c10337748205aff7a38509bb
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27964456"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642531"
 ---
-# <a name="user-resource-type"></a>tipo de recurso de usuário
+# <a name="user-resource-type"></a>Tipo de recurso de usuário
 
 Representa uma conta de usuário do Azure AD. Herda de [directoryObject](directoryobject.md).
 
 Esse recurso permite:
 
-- Adicionar seus próprios dados às propriedades personalizadas como [extensões](/graph/extensibility-overview).
-- Assinatura de [notificações de alteração](/graph/webhooks).
+- Adicionar seus próprios dados às propriedades personalizadas como [extensions](/graph/extensibility-overview).
+- Assinar as [notificações de alteração](/graph/webhooks).
 - Usar a [consulta delta](/graph/delta-query-overview) para controlar adições, exclusões e atualizações incrementais oferecendo uma função [delta](../api/user-delta.md).
 
 ## <a name="methods"></a>Métodos
@@ -72,17 +72,17 @@ Esse recurso permite:
 |:---------------|:--------|:----------|
 |aboutMe|String|Um campo de entrada de texto em forma livre para o usuário se descrever.|
 |accountEnabled|Booliano| **true** se a conta estiver habilitada; caso contrário, **false**. Essa propriedade é obrigatória quando um usuário é criado. Oferece suporte a $filter.    |
-|ageGroup|Cadeia de caracteres|Define o grupo de idade do usuário. Valores permitidos: `null`, `minor`, `notAdult` e `adult`. Consulte as [definições de propriedade do grupo de idade do departamento jurídico](#legal-age-group-property-definitions) para obter mais informações. |
+|ageGroup|String|Define a faixa etária do usuário. Valores permitidos: `null`, `minor`, `notAdult` e `adult`. Confira as [definições de propriedades da faixa etária legal](#legal-age-group-property-definitions) para obter mais informações. |
 |assignedLicenses|Coleção [assignedLicense](assignedlicense.md)|As licenças que são atribuídas ao usuário. Não anulável.            |
 |assignedPlans|Coleção [assignedPlan](assignedplan.md)|Os planos que são atribuídos ao usuário. Somente leitura. Não anulável. |
 |birthday|DateTimeOffset|O aniversário do usuário. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |businessPhones|String collection|Números de telefone para o usuário. OBSERVAÇÃO: Embora isso seja uma coleção de cadeias de caracteres, somente um número pode ser definido para essa propriedade.|
 |city|String|A cidade em que o usuário está localizado. Oferece suporte a $filter.|
 |companyName | String | O nome da empresa em que o usuário está associado. Somente leitura. |
-|consentProvidedForMinor|Cadeia de caracteres|Define se o consentimento tiver sido obtido aos menores. Valores permitidos: `null`, `granted`, `denied` e `notRequired`. Consulte as [definições de propriedade do grupo de idade do departamento jurídico](#legal-age-group-property-definitions) para obter mais informações.|
-|country|String|País/região em que o usuário está localizado. Por exemplo, "EUA" ou "Reino Unido". Oferece suporte a $filter.|
-|createdDateTime | DateTimeOffset |A data de criação do objeto de usuário. |
-|departamento|String|O nome do departamento no qual o usuário trabalha. Oferece suporte a $filter.|
+|consentProvidedForMinor|String|Define se o consentimento foi obtido para menores. Valores permitidos: `null`, `granted`, `denied` e `notRequired`. Confira as [definições de propriedades da faixa etária legal](#legal-age-group-property-definitions) para obter mais informações.|
+|country|String|O país/região em que o usuário está localizado. Por exemplo, "EUA" ou "Reino Unido". Oferece suporte a $filter.|
+|createdDateTime | DateTimeOffset |Data de criação do objeto do usuário. |
+|department|String|O nome do departamento no qual o usuário trabalha. Oferece suporte a $filter.|
 |displayName|String|O nome exibido no catálogo de endereços do usuário. É geralmente a combinação do nome, da inicial do meio e do sobrenome do usuário. Essa propriedade é obrigatória quando um usuário é criado e não pode ser apagado durante atualizações. Oferece suporte a $filter e $orderby.|
 |givenName|String|O nome fornecido (nome) do usuário. Oferece suporte a $filter.|
 |hireDate|DateTimeOffset|A data de contratação do usuário. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
@@ -90,27 +90,28 @@ Esse recurso permite:
 |imAddresses|String collection|Os endereços do Protocolo de Início de Sessão (SIP) de VoIP (Voice over IP) da mensagem instantânea para o usuário. Somente leitura.|
 |interests|Coleção de cadeias de caracteres|Uma lista para o usuário descrever os interesses dele.|
 |jobTitle|String|O cargo do usuário. Oferece suporte a $filter.|
-|legalAgeGroupClassification|String| Usado por aplicativos corporativos para determinar o grupo de idade legal do usuário. Essa propriedade é somente leitura e calculados com base em `ageGroup` e `consentProvidedForMinor` propriedades. Valores permitidos: `null`, `minorWithOutParentalConsent`, `minorWithParentalConsent`, `minorNoParentalConsentRequired`, `notAdult` e `adult`. Consulte as [definições de propriedade do grupo de idade do departamento jurídico](#legal-age-group-property-definitions) para obter mais informações.)|
-|Email|String|O endereço SMTP do usuário, por exemplo, "jeff@contoso.onmicrosoft.com". Somente Leitura. Oferece suporte a $filter.|
+|legalAgeGroupClassification|String| Usado por aplicativos empresariais para determinar a faixa etária legal do usuário. Essa propriedade é somente leitura e calculada com base nas propriedades `ageGroup` e `consentProvidedForMinor`. Valores permitidos: `null`, `minorWithOutParentalConsent`, `minorWithParentalConsent`, `minorNoParentalConsentRequired`, `notAdult` e `adult`. Confira as [definições de propriedades da faixa etária legal](#legal-age-group-property-definitions) para obter mais informações.|
+|licenseAssignmentStates|Coleção [licenseAssignmentState](licenseassignmentstate.md)|Estado das atribuições de licenças para esse usuário. Somente leitura.|
+|email|String|O endereço SMTP do usuário, por exemplo, "jeff@contoso.onmicrosoft.com". Somente Leitura. Oferece suporte a $filter.|
 |mailboxSettings|[mailboxSettings](mailboxsettings.md)|Configurações da caixa de correio principal do usuário conectado. Você pode [obter](../api/user-get-mailboxsettings.md) ou [atualizar](../api/user-update-mailboxsettings.md) as configurações de localidade, fuso horário ou de envio de respostas automáticas a mensagens de entrada.|
 |mailNickname|String|O alias de email do usuário. Essa propriedade deve ser especificada quando um usuário é criado. Oferece suporte a $filter.|
 |mobilePhone|String|O número de celular principal do usuário.|
 |mySite|String|A URL do site pessoal do usuário.|
 |officeLocation|String|A localização do escritório no local de trabalho do usuário.|
-|onPremisesDomainName|Cadeia de caracteres| Contém o local `domainFQDN`, também chamada Nome_de_domínio_dns sincronizados do diretório local. A propriedade é preenchida apenas para os clientes que estão sincronizando seu diretório local no Windows Azure Active Directory por meio do Connect do Azure AD. Somente leitura. |
-|onPremisesExtensionAttributes|[OnPremisesExtensionAttributes](onpremisesextensionattributes.md)|Contém extensionAttributes 1-15 para o usuário. Observe que os atributos de extensão individuais são não selecionável nem filtráveis. Para uma `onPremisesSyncEnabled` usuário, esse conjunto de propriedades mastered local e é somente leitura. Para um usuário somente na nuvem (onde `onPremisesSyncEnabled` é false), essas propriedades podem ser definida durante a criação ou atualização. |
-|onPremisesImmutableId|String|Essa propriedade é usada para associar uma conta de usuário do Active Directory local para seus objetos de usuário do Windows Azure AD. Esta propriedade deve ser especificada ao criar uma nova conta de usuário no gráfico, se você estiver usando um domínio federado para a propriedade de **userPrincipalName** (UPN) do usuário. **Importante:** O **$** e **\_** caracteres não podem ser usados ao especificar essa propriedade. Oferece suporte a $filter.                            |
+|onPremisesDomainName|String| Contém o `domainFQDN` local, também chamado dnsDomainName sincronizado do diretório local. A propriedade somente é preenchida para os clientes que estejam sincronizando o seu diretório local ao Azure Active Directory pelo Azure AD Connect. Somente leitura. |
+|onPremisesExtensionAttributes|[OnPremisesExtensionAttributes](onpremisesextensionattributes.md)|Contém extensionAttributes 1-15 para o usuário. Observe que os atributos de extensão individuais não são selecionáveis nem filtráveis. Para um usuário `onPremisesSyncEnabled`, esse conjunto de propriedades é masterizado no local e somente leitura. Para um usuário somente na nuvem (onde `onPremisesSyncEnabled` é falso), essas propriedades podem ser definidas durante a criação ou atualização. |
+|onPremisesImmutableId|String|Essa propriedade é usada para associar uma conta de usuário do Active Directory local com seu objeto de usuário do Azure AD. Esta propriedade deverá ser especificada ao criar uma nova conta de usuário no Graph se você estiver usando um domínio federado para a propriedade **userPrincipalName** (UPN) do usuário. **Importante:** Os caracteres **$** e **\_** não podem ser usados ao especificar esta propriedade. Oferece suporte a $filter.                            |
 |onPremisesLastSyncDateTime|DateTimeOffset|Indica a última vez em que o objeto foi sincronizado com o diretório local; por exemplo: "2013-02-16T03:04:54Z". O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura.|
-|onPremisesProvisioningErrors|coleção [onPremisesProvisioningError](onpremisesprovisioningerror.md)| Erros ao usar o produto de sincronização da Microsoft durante o provisionamento. |
-|onPremisesSamAccountName|Cadeia de caracteres| Contém o local `samAccountName` sincronizados do diretório local. A propriedade é preenchida apenas para os clientes que estão sincronizando seu diretório local no Windows Azure Active Directory por meio do Connect do Azure AD. Somente leitura. |
+|onPremisesProvisioningErrors|coleção [OnPremisesProvisioningError](onpremisesprovisioningerror.md)| Erros ao usar o produto de sincronização da Microsoft durante o provisionamento. |
+|onPremisesSamAccountName|String| Contém o `samAccountName` local sincronizado no diretório local. A propriedade somente é preenchida para os clientes que estejam sincronizando o seu diretório local ao Azure Active Directory pelo Azure AD Connect. Somente leitura. |
 |onPremisesSecurityIdentifier|String|Contém o identificador de segurança (SID) local do usuário que foi sincronizado do local com a nuvem. Somente leitura.|
 |onPremisesSyncEnabled|Booliano| **True** se esse objeto está sincronizado de um diretório local; **false** se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; **null** se esse objeto nunca foi sido sincronizado de um diretório local (padrão). Somente leitura |
-|onPremisesUserPrincipalName|Cadeia de caracteres| Contém o local `userPrincipalName` sincronizados do diretório local. A propriedade é preenchida apenas para os clientes que estão sincronizando seu diretório local no Windows Azure Active Directory por meio do Connect do Azure AD. Somente leitura. |
+|onPremisesUserPrincipalName|String| Contém o `userPrincipalName` local sincronizado no diretório local. A propriedade somente é preenchida para os clientes que estejam sincronizando o seu diretório local ao Azure Active Directory pelo Azure AD Connect. Somente leitura. |
 |passwordPolicies|String|Especifica as políticas de senha do usuário. Esse valor é uma enumeração cujo um dos valores possíveis é "DisableStrongPassword", o que permite especificar senhas mais fracas do que a política padrão. Também é possível especificar "DisablePasswordExpiration". Ambos podem ser especificados juntos; por exemplo: "DisablePasswordExpiration, DisableStrongPassword".|
 |passwordProfile|[PasswordProfile](passwordprofile.md)|Especifica o perfil de senha do usuário. O perfil contém a senha do usuário. Essa propriedade é obrigatória quando um usuário é criado. A senha no perfil deve atender a requisitos mínimos, conforme especificado pela propriedade **passwordPolicies**. Por padrão, é obrigatória uma senha forte.|
 |pastProjects|Coleção de cadeias de caracteres|Uma lista para o usuário enumerar seus projetos anteriores.|
 |postalCode|String|O código postal do endereço postal do usuário. O código postal é específico para o país/região do usuário. Nos Estados Unidos, esse atributo contém o CEP.|
-|preferredDataLocation|Cadeia de caracteres|A localização de dados preferida para o usuário. Para obter mais informações, consulte [Multi-Geo OneDrive Online](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
+|preferredDataLocation|String|O local de dados preferido para o usuário. Para saber mais, confira [OneDrive Online Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
 |preferredLanguage|String|O idioma preferencial do usuário. Deve seguir o código ISO 639-1; por exemplo "en-US".|
 |preferredName|String|O nome preferencial do usuário.|
 |provisionedPlans|Coleção [ProvisionedPlan](provisionedplan.md)|Os planos que estão provisionados para o usuário. Somente leitura. Não anulável. |
@@ -125,52 +126,52 @@ Esse recurso permite:
 |userPrincipalName|String|O nome UPN do usuário. O nome UPN é um nome de logon para o usuário ao estilo da Internet com base na RFC 822 padrão da Internet. Por convenção, ele deve ser mapeado para o nome de email do usuário. O formato geral é alias@domain, em que o domínio deve estar presente na coleção de domínios verificados do locatário. Essa propriedade é obrigatória quando um usuário é criado. Os domínios verificados para o locatário podem ser acessados pela propriedade **verifiedDomains** de [organization](organization.md). Oferece suporte a $filter e $orderby.
 |userType|String|Um valor de cadeia de caracteres que pode ser usado para classificar tipos de usuários no seu diretório, como “Member” e “Guest”. Oferece suporte a $filter.          |
 
-### <a name="legal-age-group-property-definitions"></a>Definições de propriedade do grupo de idade do departamento jurídico
+### <a name="legal-age-group-property-definitions"></a>Definições de propriedade da faixa etária legal
 
-Esta seção explica como os três age propriedades do grupo (`legalAgeGroupClassification`, `ageGroup` e `consentProvidedForMinor`) usadas pelos administradores do Windows Azure AD e os desenvolvedores de aplicativos do enterprise para cumprir as normas relacionadas a idade.
+Esta seção explica como as três propriedades de faixa etária (`legalAgeGroupClassification`, `ageGroup` e `consentProvidedForMinor`) são usadas pelos administradores do Azure AD e desenvolvedores de aplicativos empresariais para atender às normas de idade.
 
-Por exemplo: Cameron é administrador de um diretório para uma escola em Holyport no Reino Unido. No início do ano escola ele usa os trabalhos de papel admissão para obter o consentimento de pais do secundárias com base nas normas relacionadas a idade do Reino Unido. O consentimento obtido do pai permite que a conta do secundárias a ser usado pelo Holyport school e aplicativos do Microsoft. Cameron cria todas as contas e define ageGroup para "secundária" e consentProvidedForMinor "concedida". Aplicativos usados pelo seus alunos são capazes de suprimir recursos que não são adequados para menores.
+Por exemplo: Cameron é o administrador de um diretório em uma escola de ensino fundamental em Holyport, no Reino Unido. No início do ano letivo ele usa a documentação de admissão para obter o consentimento dos pais dos menores baseado nos regulamentos relacionadas com a idade no Reino Unido. O consentimento obtido do pai permite que a conta do menor seja usado pela escola de Holyport e os aplicativos da Microsoft. Cameron cria todas as contas e define o ageGroup para "menor" e consentProvidedForMinor para "concedido". Os aplicativos usados por seus alunos poderão, então suprimir recursos que não são adequados para menores.
 
-#### <a name="legal-age-group-classification"></a>Classificação de grupo de idade do departamento jurídico
+#### <a name="legal-age-group-classification"></a>Classificação da faixa etária legal
 
-Essa propriedade somente leitura é usada por desenvolvedores de aplicativos corporativos para garantir o tratamento correto de um usuário com base em seu grupo de idade do departamento jurídico. Ele é calculado com base em que o usuário `ageGroup` e `consentProvidedForMinor` propriedades.
+Essa propriedade de somente leitura é usada por desenvolvedores de aplicativos empresariais para garantir a manipulação correta do usuário com base em sua faixa etária legal. É calculada com base nas propriedades de `ageGroup` e `consentProvidedForMinor` do usuário.
 
 | Valor    | #  |Descrição|
 |:---------------|:--------|:----------|
-|nulo|0|Valor padrão, não `ageGroup` tiver sido definida para o usuário.|
+|null|0|Valor padrão, nenhum `ageGroup` foi definido para o usuário.|
 |minorWithoutParentalConsent |1|(Reservado para uso futuro)|
-|minorWithParentalConsent|2| O usuário será considerado uma secundárias com base nas normas relacionadas a idade do seu país ou região e o administrador da conta obteve consentimento apropriado de um pai ou responsável.|
-|adulto|3|O usuário considerado um adulto com base nas normas relacionadas a idade do seu país ou região.|
-|notAdult|4|O usuário é de um país ou região que tenha as normas relacionadas a idade adicionais (por exemplo, os Estados Unidos, Reino Unido, União Europeia ou Coreia do Sul) e a duração do usuário é entre uma secundárias e uma idade adultos (como estipulados com base no país). Geralmente, isso significa que os adolescentes são considerados como `notAdult` em regulamentado países.|
-|minorNoParentalConsentRequired|5|O usuário é uma secundárias, mas é de um país ou região que não tenha nenhuma regulamentos relacionados a idade.|
+|minorWithParentalConsent|2| O usuário é considerado menor baseado nos regulamentos relacionados com a idade de seu país ou região, e o administrador da conta obteve o consentimento apropriado dos pais ou responsável.|
+|adult|3|O usuário é considerado adulto baseado nos regulamentos relacionadas com a idade do seu país ou região.|
+|notAdult|4|O usuário é de um país ou região com regulamentações adicionais relacionados à idade (por exemplo, Estados Unidos, Reino Unido, União Europeia ou Coreia do Sul) e a idade do usuário está entre menor e adulto (como estipulado com base no país ou região). Em geral, isso significa que adolescentes são considerados como `notAdult` em países regulamentados.|
+|minorNoParentalConsentRequired|5|O usuário é menor de idade, mas é de um país ou região que não tem com regulamentações relacionadas com a idade.|
 
-#### <a name="age-group-and-minor-consent"></a>Grupo de idade e consentimento secundário
+#### <a name="age-group-and-minor-consent"></a>Faixa etária e consentimento de menor
 
-As propriedades de consentimento secundária e o grupo de idade são propriedades opcionais usadas pelos administradores do Windows Azure AD para ajudar a garantir que o uso de uma conta será tratado corretamente baseado nas relacionados a idade normativas regras que regem o país ou a região do usuário.
+As propriedades de faixa etária e consentimento de menor são propriedades opcionais usadas por administradores do Azure AD para garantir que o uso da conta é tratado corretamente com base nas regras de regulamentação relacionadas à idade que regem o país ou a região do usuário.
 
 #### <a name="agegroup-property"></a>propriedade ageGroup
 
 | Valor    | #  |Descrição|
 |:---------------|:--------|:----------|
-|nulo|0|Valor padrão, não `ageGroup` tiver sido definida para o usuário.|
-|secundária|1|O usuário, considere uma secundárias.|
-|notAdult|2|O usuário é de um país que tenha legais regulamentos dos Estados Unidos, Reino Unido, União Europeia ou Coreia do Sul) e duração do usuário é maior do que o limite superior da idade filho (conforme o país/região) e limite inferior menor do que a idade adultos (como estipulados com base no país) . Basicamente, adolescentes são considerados como `notAdult` em regulamentado países.|
-|adulto|3|O usuário deve ser tratadas como um adulto.|
+|null|0|Valor padrão, nenhum `ageGroup` foi definido para o usuário.|
+|minor|1|O usuário é considerado menor de idade.|
+|notAdult|2|O usuário é de um país que têm regulamentações estatutárias (Estados Unidos, Reino Unido, União Europeia ou Coreia do Sul) e a idade do usuário é maior do que o limite de idade para criança (conforme o país) e menor que o limite inferior de idade para adulto (como estipulado com base no país ou região). Basicamente, adolescentes são considerados como `notAdult` em países regulamentados.|
+|adult|3|O usuário deve ser tratado como um adulto.|
 
-#### <a name="consentprovidedforminor-property"></a>propriedade consentProvidedForMinor
+#### <a name="consentprovidedforminor-property"></a>Propriedade consentProvidedForMinor
 
 | Valor    | #  |Descrição|
 |:---------------|:--------|:----------|
-|nulo|0|Valor padrão, não `consentProvidedForMinor` tiver sido definida para o usuário.|
-|concedido|1|Tiver sido obtido consentimento para o usuário tenha uma conta.|
-|negado|2|Não tiver sido obtido consentimento para o usuário tenha uma conta.|
-|notRequired|3|O usuário é de um local que não exigem o consentimento.|
+|null|0|Valor padrão, nenhum `consentProvidedForMinor` foi definido para o usuário.|
+|granted|1|O consentimento foi obtido para o usuário ter uma conta.|
+|denied|2|O consentimento não foi obtido para o usuário ter uma conta.|
+|notRequired|3|O usuário é de um local que não exige consentimento.|
  
 ## <a name="relationships"></a>Relações
 
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|activities|coleção [userActivity](projectrome-activity.md)|Atividades do usuário entre dispositivos. Somente leitura. Anulável.|
+|activities|Coleção [userActivity](projectrome-activity.md)|Atividades do usuário em vários dispositivos. Somente leitura. Anulável.|
 |calendar|[Calendar](calendar.md)|O calendário principal do usuário. Somente leitura.|
 |calendarGroups|Coleção [CalendarGroup](calendargroup.md)|Os grupos de calendários do usuário. Somente leitura. Anulável.|
 |calendarView|Coleção [Event](event.md)|O modo de exibição do calendário. Somente leitura. Anulável.|
@@ -180,22 +181,22 @@ As propriedades de consentimento secundária e o grupo de idade são propriedade
 |createdObjects|Coleção [directoryObject](directoryobject.md)|Objetos directory que foram criados pelo usuário. Somente leitura. Anulável.|
 |directReports|Coleção [directoryObject](directoryobject.md)|Os usuários e contatos subordinados ao usuário. (Os usuários e contatos cuja propriedade manager está definida como esse usuário.) Somente leitura. Anulável. |
 |drive|[drive](drive.md)|O OneDrive do usuário. Somente leitura.|
-|drives|Coleção [drive](drive.md)| Uma coleção de unidades disponíveis para esse usuário. Somente leitura. |
+|unidades|Coleção [drive](drive.md)| Uma coleção de unidades disponíveis para este usuário. Somente leitura. |
 |events|Coleção [Event](event.md)|Os eventos do usuário. O padrão é mostrar eventos no Calendário Padrão. Somente leitura. Anulável.|
-|extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para o usuário. Somente leitura. Anulável.|
-|inferenceClassification | [inferenceClassification](inferenceclassification.md) | Classificação de relevância das mensagens do usuário com base em designações explícitas que substituem a relevância ou importância deduzida. |
+|extensions|[extension](extension.md) collection|A coleção de extensões abertas definidas para o usuário. Somente leitura. Anulável.|
+|inferenceClassification | [inferenceClassification](inferenceclassification.md) | Classificação de relevância das mensagens do usuário com base em designações explícitas que substituem a relevância ou importância inferidas. |
 |licenseDetails|Coleção [LicenseDetails](licensedetails.md)|Uma coleção de detalhes da licença do usuário. Anulável.|
 |mailFolders|Coleção [MailFolder](mailfolder.md)| As pastas de email do usuário. Somente leitura. Anulável.|
 |manager|[directoryObject](directoryobject.md)|O usuário ou contato que é o gerente do usuário. Somente leitura. (Métodos HTTP: GET, PUT, DELETE.)|
 |memberOf|Coleção [directoryObject](directoryobject.md)|Os grupos e as funções de diretório dos quais o usuário é membro. Somente leitura. Anulável.|
 |mensagens|Coleção [Message](message.md)|As mensagens em uma caixa de correio ou pasta. Somente leitura. Anulável.|
-|onenote|[OneNote](onenote.md)| Somente leitura.|
-|Outlook|[OutlookUser](outlookuser.md)| Somente leitura.|
+|onenote|[Onenote](onenote.md)| Somente leitura.|
+|outlook|[OutlookUser](outlookuser.md)| Somente leitura.|
 |ownedDevices|Coleção [directoryObject](directoryobject.md)|Dispositivos que pertencem ao usuário. Somente leitura. Anulável.|
 |ownedObjects|Coleção [directoryObject](directoryobject.md)|Objetos de diretório que pertencem ao usuário. Somente leitura. Anulável.|
-|pessoas|coleção de [pessoa](person.md)| Pessoas que são relevantes para o usuário. Somente leitura. Anulável.
-|Foto|[profilePhoto](profilephoto.md)| A foto de perfil do usuário. Somente leitura.|
-|planejador|[plannerUser](planneruser.md)| Ponto de entrada para o recurso de Planejador que pode existir para um usuário. Somente leitura.|
+|people|Coleção [person](person.md)| Pessoas que são relevantes para o usuário. Somente leitura. Anulável.
+|photo|[profilePhoto](profilephoto.md)| A foto de perfil do usuário. Somente leitura.|
+|planner|[plannerUser](planneruser.md)| Ponto de entrada para o recurso Planejador que pode existir para um usuário. Somente leitura.|
 |registeredDevices|Coleção [directoryObject](directoryobject.md)|Dispositivos que estão registrados para o usuário. Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
@@ -381,6 +382,7 @@ Veja a seguir uma representação JSON do recurso
   "interests": ["string"],
   "jobTitle": "string",
   "legalAgeGroupClassification": "string",
+  "licenseAssignmentStates": [{"@odata.type": "microsoft.graph.licenseAssignmentState"}],
   "mail": "string",
   "mailboxSettings": {"@odata.type": "microsoft.graph.mailboxSettings"},
   "mailNickname": "string",

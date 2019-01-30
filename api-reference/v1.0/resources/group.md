@@ -4,12 +4,12 @@ description: Representa um grupo do Azure Active Directory (Azure AD), que pode 
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 910af8e2eb87d2e36d39fbf1873477ecfc114c38
-ms.sourcegitcommit: 02a3ae7f3070d38d949158808545003e85ae8fe7
+ms.openlocfilehash: 68f3c5d9f1ee8086ce6f008e621feb8ca4598e7f
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726607"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641278"
 ---
 # <a name="group-resource-type"></a>tipo de recurso de grupo
 
@@ -98,27 +98,31 @@ Esse recurso permite:
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |allowExternalSenders|Boolean| Indica se as pessoas externas à empresa podem enviar mensagens para o grupo. O valor padrão é **false**. <br><br>Retornado apenas em $select. |
-|autoSubscribeNewMembers|Boolean|Indica se os novos membros adicionados ao grupo serão inscritos automaticamente para o recebimento de notificações por email. Você pode definir essa propriedade em uma solicitação PATCH para o grupo. Não a defina na solicitação POST inicial que cria esse grupo. O valor padrão é **false**. <br><br>Retornado apenas em $select.|
+|assignedLicenses|Coleção [assignedLicense](assignedlicense.md)|As licenças que são atribuídas ao grupo. <br><br>Retornado apenas em $select. Somente leitura.|
+|autoSubscribeNewMembers|Boolean|Indica se novos membros adicionados ao grupo serão automaticamente inscritos para receberem notificações por email. Você pode definir essa propriedade em uma solicitação PATCH para o grupo. Não a defina na solicitação POST inicial que cria esse grupo. O valor padrão é **false**. <br><br>Retornado apenas em $select.|
 |classificação|String|Descreve uma classificação para o grupo (como impacto comercial baixo, médio ou alto). Os valores válidos para esta propriedade são definidos criando um valor de [configuração](groupsetting.md) ClassificationList com base na [definição de modelo](groupsettingtemplate.md).<br><br>Retornado por padrão.|
 |createdDateTime|DateTimeOffset| Carimbo de data/hora da ocasião em que o grupo foi criado. Não é possível modificar o valor e ele é preenchido automaticamente quando o grupo é criado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. <br><br>Retornado por padrão. Somente leitura. |
 |description|String|Uma descrição opcional para o grupo. <br><br>Retornado por padrão.|
 |displayName|String|O nome de exibição do grupo. Essa propriedade é obrigatória quando um grupo é criado e não pode ser apagado durante as atualizações. <br><br>Retornado por padrão. Oferece suporte a $filter e $orderby. |
-|groupTypes|Coleção de cadeias de caracteres| Especifica o tipo de grupo a ser criado. Os valores possíveis são `Unified` para criar um grupo do Office 365 ou `DynamicMembership` para grupos dinâmicos.  Para todos os outros tipos de grupos, como grupos habilitados para segurança e grupos de segurança habilitados para email, não defina essa propriedade. <br><br>Retornado por padrão. Oferece suporte a $filter.|
+|groupTypes|Coleção de cadeias de caracteres| Especifica o tipo de grupo a ser criado. Os valores possíveis são `Unified` para criar um grupo do Office 365 ou `DynamicMembership` para grupos dinâmicos.  Para todos os outro tipos de grupos, como grupos habilitados para segurança e grupos de segurança habilitados para email, não defina essa propriedade. <br><br>Retornado por padrão. Oferece suporte a $filter.|
+|hasMembersWithLicenseErrors|Boolean|Indica se existem membros neste grupo com erros de licença da sua atribuição de licença baseada em grupo. <br><br>Esta propriedade nunca é retornada em uma operação GET. Você pode usá-lo como um argumento $filter para acessar os grupos que têm membros com erros de licença (ou seja, o filtro para essa propriedade é true). Veja um [exemplo](../api/group-list.md).|
 |id|String|O identificador exclusivo do grupo. <br><br>Retornado por padrão. Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura.|
 |isSubscribedByMail|Boolean|Indica se o usuário conectado está inscrito para receber conversas de email. O valor padrão é **true**. <br><br>Retornado apenas em $select. |
+|licenseProcessingState|String|Indica o status da atribuição de licença de grupo para todos os membros do grupo. O valor padrão é **false**. Somente leitura. Valores possíveis: `QueuedForProcessing`, `ProcessingInProgress` e `ProcessingComplete`.<br><br>Retornado apenas em $select. Somente leitura.|
 |email|String|O endereço SMTP do grupo, por exemplo, "serviceadmins@contoso.onmicrosoft.com". <br><br>Retornado por padrão. Somente leitura. Oferece suporte a $filter.|
 |mailEnabled|Boolean|Especifica se o grupo está habilitado para email. Se a propriedade **securityEnabled** também é **true**, o grupo é um grupo de segurança habilitado para email. Caso contrário, o grupo é um grupo de distribuição do Microsoft Exchange. <br><br>Retornado por padrão.|
 |mailNickname|String|O alias de email do grupo, exclusivo na organização. Essa propriedade deve ser especificada quando um grupo é criado. <br><br>Retornado por padrão. Oferece suporte a $filter.|
 |onPremisesLastSyncDateTime|DateTimeOffset|Indica a última vez em que o grupo foi sincronizado com o diretório local. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. <br><br>Retornado por padrão. Somente leitura. Oferece suporte a $filter.|
-|onPremisesProvisioningErrors|coleção [OnPremisesProvisioningError](onpremisesprovisioningerror.md)| Erros ao usar o produto de sincronização da Microsoft durante o provisionamento. <br><br>Retornado por padrão.|
-|onPremisesSecurityIdentifier|String|Contém o identificador de segurança (SID) local do grupo que foi sincronizado de um local para a nuvem. <br><br>Retornado por padrão. Somente leitura. |
-|onPremisesSyncEnabled|Boolean|**True** se esse grupo estiver sincronizado usando um diretório local; **false** se esse grupo tiver sido sincronizado originalmente usando um diretório local, mas não estiver mais sincronizado; **null** se esse objeto nunca tiver sido sincronizado usando um diretório local (padrão). <br><br>Retornado por padrão. Somente leitura. Oferece suporte a $filter.|
-|preferredDataLocation|String|O local de dados preferido para o grupo. Saiba mais em [OneDrive Online com Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction). <br><br>Retornado por padrão.|
+|onPremisesProvisioningErrors|coleção [OnPremisesProvisioningError](onpremisesprovisioningerror.md)| Erros ao usar o produto de sincronização da Microsoft durante a configuração. <br><br>Retornado por padrão.|
+|onPremisesSecurityIdentifier|String|Contém o identificador de segurança (SID) local do grupo que foi sincronizado do local com a nuvem. <br><br>Retornado por padrão. Somente leitura. |
+|onPremisesSyncEnabled|Boolean|**True** se esse grupo está sincronizado de um diretório local; **false** se esse grupo foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; **null** se esse objeto nunca foi sido sincronizado de um diretório local (padrão). <br><br>Retornado por padrão. Somente leitura. Oferece suporte a $filter.|
+|preferredDataLocation|String|O local de data preferido para o grupo. Saiba mais em [OneDrive Online com Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction). <br><br>Retornado por padrão.|
 |proxyAddresses|String collection| Endereços de email para o grupo que direcionam para a mesma caixa de correio do grupo. Por exemplo: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`. O operador **any** é obrigatório para filtrar expressões em propriedades de vários valores. <br><br>Retornado por padrão. Somente leitura. Não anulável. Oferece suporte a $filter. |
 |renewedDateTime|DateTimeOffset| Carimbo de data/hora da ocasião em que o grupo foi renovado pela última vez. Não é possível modificar isso diretamente e a atualização ocorre apenas por meio da [ação de renovação de serviço](../api/group-renew.md). O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. <br><br>Retornado por padrão. Somente leitura.|
 |securityEnabled|Boolean|Especifica se o grupo é um grupo de segurança. Se a propriedade **mailEnabled** também for true, o grupo será um de segurança habilitado para email; caso contrário, será um grupo de segurança. Deve ser **false** para grupos do Office 365. <br><br>Retornado por padrão. Oferece suporte a $filter.|
 |unseenCount|Int32|Contagem das conversas que receberam novas postagens desde que o usuário conectado visitou o grupo pela última vez. <br><br>Retornado apenas em $select. |
-|visibility|String| Especifica a visibilidade de um grupo do Office 365. Os valores possíveis são: `private`, `public` ou `hiddenmembership`; os valores em branco são tratados como públicos.  Saiba mais em [Opções de visibilidade do grupo](#group-visibility-options).<br>A visibilidade só pode ser configurada quando um grupo é criado, ela não é editável.<br>A visibilidade tem suporte apenas para grupos unificados; Não há suporte para grupos de segurança. <br><br>Retornado por padrão.|
+|visibility|String| Especifica a visibilidade de um grupo do Office 365. Valores possíveis são: `private`, `public`, ou `hiddenmembership`; valores em branco são tratados como públicos.  Saiba mais em [Opções de visibilidade do grupo](#group-visibility-options).<br>A visibilidade só pode ser configurada quando um grupo é criado, ela não é editável.<br>A visibilidade tem suporte apenas para grupos unificados; Não há suporte para grupos de segurança. <br><br>Retornado por padrão.|
+
 
 ### <a name="group-visibility-options"></a>Opções de visibilidade do grupo
 
@@ -146,6 +150,7 @@ Veja o que cada valor da propriedade de **visibilidade** significa:
 |groupLifecyclePolicies|Coleção [groupLifecyclePolicy](grouplifecyclepolicy.md)|O conjunto de políticas de ciclo de vida para esse grupo. Somente leitura. Anulável.|
 |memberOf|Coleção [directoryObject](directoryobject.md)|Grupos dos quais esse grupo é membro. Métodos HTTP: GET (com suporte para todos os grupos). Somente leitura. Anulável.|
 |membros|Coleção [directoryObject](directoryobject.md)| Os usuários e grupos que são membros desse grupo. Métodos HTTP: GET (com suporte para todos os grupos), POST (com suporte para grupos do Office 365, grupos de segurança e grupos de segurança habilitados para email), DELETE (com suporte para grupos do Office 365 e grupos de segurança) Anulável.|
+|membersWithLicenseErrors|Coleção [user](user.md)|Uma lista de membros do grupo com erros de licença desse grupo baseado em atribuição de licença. Somente leitura.|
 |onenote|[Onenote](onenote.md)| Somente leitura.|
 |owners|Coleção [directoryObject](directoryobject.md)|Os proprietários do grupo. Os proprietários são um conjunto de usuários não administradores e que têm permissão para modificar esse objeto. Limitado a 10 proprietários. Métodos HTTP: GET (com suporte para todos os grupos), POST (com suporte para grupos do Office 365, grupos de segurança e grupos de segurança habilitados para email), DELETE (com suporte para grupos do Office 365 e grupos de segurança). Anulável.|
 |Foto|[profilePhoto](profilephoto.md)| A foto de perfil do grupo |
@@ -282,14 +287,17 @@ Veja a seguir uma representação JSON do recurso.
 ```json
 {
   "allowExternalSenders": false,
+  "assignedLicenses": [{"@odata.type": "microsoft.graph.assignedLicense"}],
   "autoSubscribeNewMembers": true,
   "classification": "string",
   "createdDateTime": "String (timestamp)",
   "description": "string",
   "displayName": "string",
   "groupTypes": ["string"],
+  "hasMembersWithLicenseErrors": "Boolean",
   "id": "string (identifier)",
   "isSubscribedByMail": true,
+  "licenseProcessingState": "string",
   "mail": "string",
   "mailEnabled": true,
   "mailNickname": "string",
@@ -312,6 +320,7 @@ Veja a seguir uma representação JSON do recurso.
   "events": [ { "@odata.type": "microsoft.graph.event" }],
   "memberOf": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "members": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
+  "membersWithLicenseErrors": [{"@odata.type": "microsoft.graph.user"}],
   "owners": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "photo": { "@odata.type": "microsoft.graph.profilePhoto" },
   "rejectedSenders": [ { "@odata.type": "microsoft.graph.directoryObject" } ],

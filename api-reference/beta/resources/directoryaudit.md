@@ -4,12 +4,12 @@ description: Esse recurso representa seu conjunto e os itens de auditoria do dir
 author: lleonard-msft
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0f56dea1b07f0814c4b9f1295498c2555c98a2df
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 1f980208788731206dc58870635644a1f3edc4c7
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573155"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643752"
 ---
 # <a name="directoryaudit-resource-type"></a>Tipo de recurso directoryObject
 Esse recurso representa seu conjunto e os itens de auditoria do diretório
@@ -28,9 +28,9 @@ Esse recurso representa seu conjunto e os itens de auditoria do diretório
 |:---------------|:--------|:----------|
 |activityDateTime|DateTimeOffset|Indica a data e hora que a atividade foi executada. O tipo de Timestamp é sempre UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |activityDisplayName|Cadeia de caracteres|Indica o nome da atividade ou o nome da operação (ex.: "Criar usuário", "Adicionar membro ao grupo"). Para obter uma lista de atividades registradas, veja [lista de atividades do Azure Ad](https://docs.microsoft.com/pt-BR/azure/active-directory/active-directory-reporting-activity-audit-logs#azure-ad-audit-activity-list).|
-|additionalDetails|[KeyValue](keyvalue.md) conjunto|Indica detalhes adicionais sobre a atividade.|
+|additionalDetails|Coleção [KeyValue](keyvalue.md)|Indica detalhes adicionais sobre a atividade.|
 |category|Cadeia de caracteres|Indica qual categoria de recurso direcionada pela atividade. (Por exemplo: gerenciamento de usuário, grupo gerenciamento etc..)|
-|correlationId| Cadeia de caracteres (Identificador) |Indica uma ID exclusiva que ajuda correlacionar atividades que englobam vários serviços. Pode ser usado para os logs de serviços de rastreamento.|
+|correlationId|GUID|Indica uma ID exclusiva que ajuda correlacionar atividades que englobam vários serviços. Pode ser usado para os logs de serviços de rastreamento.|
 |id|Cadeia de caracteres| Indica que a ID exclusiva para a atividade. Este é um GUID.|
 |initiatedBy|[auditActivityInitiator](auditactivityinitiator.md)|Indica que informações sobre o usuário ou o aplicativo iniciou a atividade.|
 |loggedByService|Cadeia de caracteres|Indica informação em que o serviço iniciou a atividade (por exemplo: gerenciamento de senha de autoatendimento, principais diretório, B2C, os usuários convidados, Microsoft Identity Manager, Privileged Identity Management.|
@@ -60,7 +60,7 @@ Veja a seguir uma representação JSON do recurso.
   "activityDisplayName": "String",
   "additionalDetails": [{"@odata.type": "microsoft.graph.keyValue"}],
   "category": "String",
-  "correlationId": "String (identifier)",
+  "correlationId": "Guid",
   "id": "String (identifier)",
   "initiatedBy": {"@odata.type": "microsoft.graph.auditActivityInitiator"},
   "loggedByService": "String",
