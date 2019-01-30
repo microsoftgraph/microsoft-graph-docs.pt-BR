@@ -1,15 +1,15 @@
 ---
-title: tipo de recurso officeGraphInsights
+title: tipo de recurso de ideias
 description: Ideias são relações calculadas usando análises e técnicas de aprendizado de máquina. Por exemplo, você pode identificar tendências de documentos do OneDrive com usuários à sua volta.
 author: simonhult
 localization_priority: Priority
 ms.prod: insights
-ms.openlocfilehash: daded26bff88d611ea39754d98007fa3329d142b
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 4e71dbca7bf4ebbe054d0da83436e5dc2129cf19
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572455"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640165"
 ---
 # <a name="insights-resource-type"></a>tipo de recurso de ideias
 
@@ -29,23 +29,13 @@ Cada ideia é retornada com um tipo de valor complexo (CVT) `resourceVisualizati
 
 | Relação      | Tipo          | Descrição  |
 | ------------- |---------------| -------------|
-| tendências      | [tendências](insights-trending.md) conjunto       | Relação calculada identificando documentos mais populares. Os documentos mais populares podem ser armazenados no OneDrive ou em sites do SharePoint.   |
-| usado      | [usedInsight](insights-used.md) conjunto        | Relação calculada para identificar documentos exibidos e modificados por um usuário. Inclui documentos que o usuário usou no OneDrive for Business, SharePoint, aberto como anexos de email e anexos de link de fontes como o Box, DropBox e Google Drive.  |
-| compartilhado        | [compartilhado](insights-shared.md) conjunto       | Relação calculada identificando documentos mais populares compartilhados com um usuário. Documentos podem ser compartilhados como anexos de email ou links do OneDrive para Business enviados por email.   |
+| trending      | Coleção [Tendências](insights-trending.md)       | Relação calculada identificando documentos mais populares. Os documentos mais populares podem ser armazenados no OneDrive ou em sites do SharePoint.   |
+| used      | Coleção [Usado](insights-used.md)       | Relação calculada para identificar documentos exibidos e modificados por um usuário. Inclui documentos que o usuário usou no OneDrive for Business, SharePoint, aberto como anexos de email e anexos de link de fontes como o Box, DropBox e Google Drive.  |
+| shared        | Coleção [compartilhado](insights-shared.md)       | Relação calculada identificando documentos mais populares compartilhados com um usuário. Documentos podem ser compartilhados como anexos de email ou links do OneDrive para Business enviados por email.   |
 
 ## <a name="json-representation"></a>Representação JSON
 
 Veja a seguir uma representação JSON do recurso
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-    "attachments",
-    "singleValueLegacyExtendedProperty",
-    "multiValueLegacyExtendedProperty"
-  ],
-  "@odata.type": "microsoft.graph.officeGraphInsights"
-}-->
-
 ```json
 {
   "trending": [ { "@odata.type": "microsoft.graph.trending" } ],

@@ -4,12 +4,12 @@ description: " > **Importante:** as APIs na versão /beta no Microsoft Graph est
 localization_priority: Priority
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: cd55b2d26d7460e7421b9da19658990b53dd7580
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 042c63cfee833a1f9c7493a9e35a6bbb8eb2fbaa
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571692"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643084"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>Usar a API de Segurança do Microsoft Graph
 
@@ -44,7 +44,7 @@ As soluções integradas de Segurança do Microsoft Graph receberão alertas dos
 
 ## <a name="secure-score-preview"></a>Classificação de Segurança (versão prévia)
 
-A [Microsoft Secure Score](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Office-365-Secure-Score-is-now-Microsoft-Secure-Score/ba-p/182358) é uma solução de análise da segurança que fornece visibilidade ao seu portfólio de segurança e mostra como melhorá-lo. Com uma única classificação, é possível entender melhor o que você fez para reduzir o risco em soluções da Microsoft. Você pode também comparar sua classificação com outras organizações e ver como tem sido a tendência ao longo do tempo. As entidades [secureScore](securescores.md) e [secureScoreControlProfile](securescorecontrolprofiles.md) de Segurança do Microsoft Graph ajudam a equilibrar a segurança e a produtividade de que sua organização precisa, além de habilitar o mix adequado de recursos de segurança. Você também pode projetar qual seria sua classificação depois de adotar recursos de segurança.
+A [Microsoft Secure Score](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Office-365-Secure-Score-is-now-Microsoft-Secure-Score/ba-p/182358) é uma solução de análise da segurança que fornece visibilidade ao seu portfólio de segurança e mostra como melhorá-lo. Com uma única classificação, é possível entender melhor o que você fez para reduzir o risco em soluções da Microsoft. Você pode também comparar sua classificação com outras organizações e ver como tem sido sua tendência ao longo do tempo. As entidades [secureScore](securescores.md) e [secureScoreControlProfiles](securescorecontrolprofiles.md) de Segurança do Microsoft Graph ajudam você a equilibrar a segurança e a produtividade de que sua organização precisa, permitindo também o mix adequado de recursos de segurança. Você também pode projetar qual seria sua classificação depois de adotar recursos de segurança.
 
 ## <a name="common-use-cases"></a>Casos de uso comuns
 
@@ -62,9 +62,9 @@ Você pode usar o Microsoft Graph [webhooks](/graph/webhooks) para assinar e rec
 
 ## <a name="next-steps"></a>Próximas etapas
 
-A API de Segurança do Microsoft Graph pode abrir novas formas de interagir com soluções de segurança diferentes da Microsoft e de parceiros. Para começar, faça o seguinte:
+A API de Segurança do Microsoft Graph pode abrir novas formas de interagir com soluções de segurança diferentes da Microsoft e de parceiros. Siga estas etapas para iniciar:
 
-- Detalhe [alerts](alert.md), [secureScore](securescores.md) (versão prévia) e [secureScoreControlProfile](securescorecontrolprofiles.md) (versão prévia).
+- Detalhe [alerts](alert.md), [secureScore](securescores.md) (versão prévia) e [secureScoreControlProfiles](securescorecontrolprofiles.md) (versão prévia).
 - Experimente a API no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer). Em **Consultas de Exemplo**, escolha **mostrar mais amostras** e defina a categoria Segurança como **on**.
 - Experimente [assinar e receber notificações](/graph/webhooks) sobre alterações de entidade.
 

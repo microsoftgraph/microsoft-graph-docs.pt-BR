@@ -4,12 +4,12 @@ description: Uma mensagem em uma pasta da caixa de correio.
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: ffcd2bc0b61cd53285110b1700fd789124d893e8
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 6aae5af68f055c8d10c48024ff8db083a51451da
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573645"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641215"
 ---
 # <a name="message-resource-type"></a>tipo de recurso de mensagem
 
@@ -33,8 +33,8 @@ Veja a seguir uma representação JSON do recurso
   "optionalProperties": [
     "attachments",
     "extensions",
-    "singleValueLegacyExtendedProperty",
-    "multiValueLegacyExtendedProperty",
+    "singleValueExtendedProperties",
+    "multiValueExtendedProperties",
     "mentions"
   ],
   "@odata.type": "microsoft.graph.message"
@@ -49,7 +49,7 @@ Veja a seguir uma representação JSON do recurso
   "ccRecipients": [{"@odata.type": "microsoft.graph.recipient"}],
   "changeKey": "string",
   "conversationId": "string",
-  "conversationIndex": { "type":"String", "format":"base64"},
+  "conversationIndex": "binary",
   "createdDateTime": "String (timestamp)",
   "flag": {"@odata.type": "microsoft.graph.followupFlag"},
   "from": {"@odata.type": "microsoft.graph.recipient"},
@@ -80,8 +80,8 @@ Veja a seguir uma representação JSON do recurso
   "attachments": [{"@odata.type": "microsoft.graph.attachment"}],
   "extensions": [{"@odata.type": "microsoft.graph.extension"}],
   "mentions": [{"@odata.type": "microsoft.graph.mention"}],
-  "multiValueLegacyExtendedProperty": [{"@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty"}],
-  "singleValueLegacyExtendedProperty": [{"@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty"}]
+  "multiValueExtendedProperties": [{"@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty"}],
+  "singleValueExtendedProperties": [{"@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty"}]
 }
 
 ```
@@ -130,8 +130,8 @@ Veja a seguir uma representação JSON do recurso
 |attachments|Coleção [Attachment](attachment.md)|Os anexos [fileAttachment](fileattachment.md) e [itemAttachment](itemattachment.md) da mensagem.|
 |extensions|Coleção [Extension](extension.md)| A coleção de extensões abertas definidas para a mensagem. Anulável.|
 |menções|Coleção [mention](mention.md) | Uma coleção de menções na mensagem, ordenada pelo **createdDateTime**, do mais novo para o mais antigo. Por padrão, um `GET` /messages não retorna essa propriedade, a menos que você aplique `$expand` à propriedade.|
-|multiValueLegacyExtendedProperty|Coleção [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de vários valores definidas para a mensagem. Anulável.|
-|singleValueLegacyExtendedProperty|Coleção [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de valor único definidas para a mensagem. Anulável.|
+|multiValueExtendedProperties|Coleção [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de vários valores definidas para a mensagem. Anulável.|
+|singleValueExtendedProperties|Coleção [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de valor único definidas para a mensagem. Anulável.|
 
 ## <a name="methods"></a>Métodos
 

@@ -4,12 +4,12 @@ description: Um evento em um calendário.
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 1c8ba23c6137bdedbf282c5bfcaf1a63b975efac
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 3db8b53cd6ebb6b04cc0ad4f20db5c20a60f9e79
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577351"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643962"
 ---
 # <a name="event-resource-type"></a>tipo de recurso de evento
 
@@ -40,8 +40,8 @@ Veja a seguir uma representação JSON do recurso
     "calendar",
     "extensions",
     "instances",
-    "multiValueLegacyExtendedProperty",
-    "singleValueLegacyExtendedProperty"
+    "multiValueExtendedProperties",
+    "singleValueExtendedProperties"
   ],
   "@odata.type": "microsoft.graph.event"
 }-->
@@ -56,7 +56,7 @@ Veja a seguir uma representação JSON do recurso
   "createdDateTime": "String (timestamp)",
   "end": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "hasAttachments": true,
-  "uid": "string",
+  "iud": "string",
   "id": "string (identifier)",
   "importance": "String",
   "isAllDay": true,
@@ -87,8 +87,8 @@ Veja a seguir uma representação JSON do recurso
   "calendar": { "@odata.type": "microsoft.graph.calendar" },
   "extensions": [ { "@odata.type": "microsoft.graph.extension" } ],
   "instances": [ { "@odata.type": "microsoft.graph.event" }],
-  "multiValueLegacyExtendedProperty": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }],
-  "singleValueLegacyExtendedProperty": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }]
+  "multiValueExtendedProperties": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }],
+  "singleValueExtendedProperties": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }]
 }
 
 ```
@@ -133,12 +133,12 @@ Veja a seguir uma representação JSON do recurso
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|attachments|Coleção [anexo](attachment.md)|A coleção de anexos [FileAttachment](fileattachment.md), [ItemAttachment](itemattachment.md) e [referenceAttachment](referenceattachment.md) do evento. Propriedade de navegação. Somente leitura. Anulável.|
+|attachments|[Attachment](attachment.md) collection|A coleção de anexos [FileAttachment](fileattachment.md), [ItemAttachment](itemattachment.md) e [referenceAttachment](referenceattachment.md) do evento. Propriedade de navegação. Somente leitura. Anulável.|
 |calendar|[Calendar](calendar.md)|O calendário que contém o evento. Propriedade de navegação. Somente leitura.|
 |extensions|Coleção [Extension](extension.md)|A coleção de extensões abertas definidas para o evento. Anulável.|
 |instances|[Event](event.md) collection|As instâncias do evento. Propriedade de navegação. Somente leitura. Anulável.|
-|multiValueLegacyExtendedProperty|Coleção [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de vários valores definidas para o evento. Somente leitura. Anulável.|
-|singleValueLegacyExtendedProperty|Coleção [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de valor único definidas para o evento. Somente leitura. Anulável.|
+|multiValueExtendedProperties|Coleção [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de vários valores definidas para o evento. Somente leitura. Anulável.|
+|singleValueExtendedProperties|Coleção [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de valor único definidas para o evento. Somente leitura. Anulável.|
 
 ## <a name="methods"></a>Métodos
 

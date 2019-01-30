@@ -4,17 +4,17 @@ description: Obtenha as propriedades e os relacionamentos de um objeto de grupo.
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: 92b9c8de30f0070491d84acf9cfc56225c1a7981
-ms.sourcegitcommit: 7d94b581f7c6dc1995efecf6ee21b604c0b80998
+ms.openlocfilehash: 4954ee99b52d3d932421651d17e6b7a8b906f3bf
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/19/2019
-ms.locfileid: "29353087"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641334"
 ---
 # <a name="get-group"></a>Obter grupo
 Obtenha as propriedades e os relacionamentos de um objeto de grupo.
 
-Esta operação retorna, por padrão, apenas um subconjunto de todas as propriedades disponíveis, conforme indicado na seção [Propriedades](../resources/group.md#properties). Para obter propriedades _não_ retornadas por padrão, especifique-as em uma opção de consulta `$select` do OData. Veja um [exemplo](#request-2).
+Esta operação retorna, por padrão, apenas um subconjunto de todas as propriedades disponíveis, conforme indicado na seção [Propriedades](../resources/group.md#properties). Para obter propriedades _não_ retornadas por padrão, especifique-as em uma opção de consulta `$select` do OData. Veja um [exemplo](#request-2) de `$select`. A propriedade **hasMembersWithLicenseErrors** é uma exceção. Veja um [exemplo](group-list.md#request-2) de como usar essa propriedade.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

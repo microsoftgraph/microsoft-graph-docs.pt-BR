@@ -4,12 +4,12 @@ description: 'Um item do Outlook que pode acompanhar um item de trabalho. '
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 6a6d5809f2634f4b9e0f1e30e3fddb0c798f0f6c
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 63ab43dd33cb50ff643316865a942659e92304d4
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576434"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641474"
 ---
 # <a name="outlooktask-resource-type"></a>tipo de recurso outlookTask
 
@@ -79,8 +79,8 @@ Prefer: outlook.timezone="Eastern Standard Time"
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |attachments|Coleção [anexo](attachment.md)|A coleção de anexos [FileAttachment](fileattachment.md), [ItemAttachment](itemattachment.md) e [referenceAttachment](referenceattachment.md) da tarefa.  Somente leitura. Anulável.|
-|multiValueLegacyExtendedProperty|coleção [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)|A coleção de propriedades estendidas de vários valores definidas para a tarefa. Somente leitura. Anulável.|
-|singleValueLegacyExtendedProperty|Coleção [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)|A coleção de propriedades estendidas de valor único definidas para a tarefa. Somente leitura. Anulável.|
+|multiValueExtendedProperties|Coleção [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)|A coleção de propriedades estendidas de vários valores definidas para a tarefa. Somente leitura. Anulável.|
+|singleValueExtendedProperties|Coleção [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)|A coleção de propriedades estendidas de valor único definidas para a tarefa. Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -89,8 +89,8 @@ Veja a seguir uma representação JSON do recurso.
   "blockType": "resource",
   "optionalProperties": [
     "attachments",
-    "singleValueLegacyExtendedProperty",
-    "multiValueLegacyExtendedProperty"
+    "singleValueExtendedProperties",
+    "multiValueExtendedProperties"
   ],
   "@odata.type": "microsoft.graph.outlookTask"
 }-->

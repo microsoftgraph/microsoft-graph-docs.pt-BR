@@ -20,7 +20,7 @@ Representa uma operação de diretiva de dados enviados. Ele contém as informa�
 |status|string| Os valores possíveis são: `notStarted`, `running`, `complete`, `failed`, `unknownFutureValue`.|
 |storageLocation|String|O local da URL para onde os dados está sendo exportados para solicitações de exportação.|
 |userId|String|A identificação do usuário no qual a operação é executada.|
-|submittedDateTime|DateTimeOffset|Representa quando a solicitação para esta operação de dados foi enviada, em tempo de UTC, usando o formato ISO 8601. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|submittedDateTime|DateTimeOffset|Representa quando a solicitação para esta operação de dados foi enviada, em tempo de UTC, usando o formato ISO 8601. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |progresso|String|Especifica o progresso de uma operação.|
 
 ## <a name="relationships"></a>Relações

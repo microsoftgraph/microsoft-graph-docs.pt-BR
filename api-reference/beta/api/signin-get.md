@@ -2,12 +2,12 @@
 title: Obter entrada
 description: Recupera as entradas de usuário do Azure AD usuário para seu locatário. Entradas que são interativas na natureza (onde um nome de usuário/senha é passado como parte de símbolo de autorização) e entradas federadas bem-sucedida atualmente estão incluídas nos logs de entrada.
 localization_priority: Priority
-ms.openlocfilehash: 79bebfda40b15a5524aecfc99e5b6d83a168b28e
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 5d2d0513f44196d48aa863ac19838af13d960f85
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576609"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643878"
 ---
 # <a name="get-signin"></a>Obter entrada
 Recupera as entradas de usuário do Azure AD usuário para seu locatário. Entradas que são interativas na natureza (onde um nome de usuário/senha é passado como parte de símbolo de autorização) e entradas federadas bem-sucedida atualmente estão incluídas nos logs de entrada.
@@ -19,10 +19,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | AuditLog.Read.All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte   |
+|Delegado (conta pessoal da conta Microsoft) | Sem suporte   |
 |Aplicativo | AuditLog.Read.All | 
 
-Além disso, os aplicativos devem ser [corretamente registrados](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) ao Azure AD.
+Além disso, os aplicativos devem ser [corretamente registrados](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) no Azure AD.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -30,7 +30,7 @@ Além disso, os aplicativos devem ser [corretamente registrados](https://docs.mi
 GET /auditLogs/signIns/{id}
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta. Verifique [parâmetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) sobre como usar esses parâmetros.
+Este método dá suporte aos seguintes Parâmetros de Consulta OData para ajudar a personalizar a resposta. Verifique [parâmetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) sobre como usar esses parâmetros.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
@@ -45,7 +45,8 @@ Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto 
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 <!-- {
-  "blockType": "request",
+  "blockType": "reque|location/city| eq, startswith|
+st",
   "name": "get_signin"
 }-->
 ```http
