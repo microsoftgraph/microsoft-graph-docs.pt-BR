@@ -4,12 +4,12 @@ description: Representa a proteção de um objeto de planilha.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 6f32ad7b1cc25d9a937f2de68f1bd930d92ec8f9
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 7e87edcebae95f32ce0bccaf849a7d21140f4878
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572931"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29639941"
 ---
 # <a name="worksheetprotection-resource-type"></a>Tipo de recurso WorksheetProtection
 
@@ -22,7 +22,7 @@ Representa a proteção de um objeto de planilha.
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Get WorksheetProtection](../api/worksheetprotection-get.md) | [WorkbookWorksheetProtection](worksheetprotection.md) |Leia as propriedades e os relacionamentos do objeto worksheetProtection.|
+|[Get WorksheetProtection](../api/worksheetprotection-get.md) | [WorksheetProtection](worksheetprotection.md) |Leia as propriedades e os relacionamentos do objeto worksheetProtection.|
 |[Protect](../api/worksheetprotection-protect.md)|Nenhum|Protege uma planilha. Gera uma exceção se a planilha estiver protegida.|
 |[Unprotect](../api/worksheetprotection-unprotect.md)|Nenhum|Desprotege uma planilha.|
 
@@ -34,7 +34,7 @@ Representa a proteção de um objeto de planilha.
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|options|[workbookWorksheetProtection](worksheetprotectionoptions.md)|Opções de proteção da planilha. Somente leitura.|
+|options|[WorksheetProtectionOptions](worksheetprotectionoptions.md)|Opções de proteção da planilha. Somente leitura.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -43,16 +43,14 @@ Veja a seguir uma representação JSON do recurso.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-  "options"
+
   ],
-  "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.workbookWorksheetProtection"
+  "@odata.type": "microsoft.graph.worksheetProtection"
 }-->
 
 ```json
 {
-  "protected": true,
-  "options": { "@odata.type": "microsoft.graph.workbookWorksheetProtectionOptions" }
+  "protected": true
 }
 
 ```

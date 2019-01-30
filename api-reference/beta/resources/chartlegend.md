@@ -4,12 +4,12 @@ description: Representa a legenda de um gráfico.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 88330f98b2d652d347aae703ec91fd4de8678c9d
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 13c054403eb93afce03775138c151e67bc2f57d7
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576392"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640242"
 ---
 # <a name="chartlegend-resource-type"></a>Tipo de recurso ChartLegend
 
@@ -22,20 +22,20 @@ Representa a legenda de um gráfico.
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Get ChartLegend](../api/chartlegend-get.md) | [WorkbookChartLegend](chartlegend.md) |Leia as propriedades e os relacionamentos do objeto chartLegend.|
-|[Update](../api/chartlegend-update.md) | [WorkbookChartLegend](chartlegend.md) |Atualize o objeto ChartLegend. |
+|[Get ChartLegend](../api/chartlegend-get.md) | [ChartLegend](chartlegend.md) |Leia as propriedades e os relacionamentos do objeto chartLegend.|
+|[Update](../api/chartlegend-update.md) | [ChartLegend](chartlegend.md) |Atualize o objeto ChartLegend. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |overlay|booliano|Valor booliano para determinar se a legenda do gráfico deve se sobrepor ao corpo principal do gráfico.|
-|position|string|Representa a posição da legenda no gráfico. Os valores possíveis são: `Top`, `Bottom`, `Left`, `Right`, `Corner`, `Custom`.|
+|position|string|Representa a posição da legenda no gráfico. Os valores possíveis são: `Top`, `Bottom`, `Left`, `Right`, `Corner` e `Custom`.|
 |visible|booliano|Um valor booliano que representa a visibilidade de um objeto ChartLegend.|
 
 ## <a name="relationships"></a>Relacionamentos
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|formato|[WorkbookChartLegendFormat](chartlegendformat.md)|Representa a formatação de uma legenda de gráfico, que inclui a formatação de fonte e de preenchimento. Somente leitura.|
+|formato|[ChartLegendFormat](chartlegendformat.md)|Representa a formatação de uma legenda de gráfico, que inclui a formatação de fonte e de preenchimento. Somente leitura.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -43,19 +43,17 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.workbookChartLegend"
+  "@odata.type": "microsoft.graph.chartLegend"
 }-->
 
 ```json
 {
   "overlay": true,
   "position": "string",
-  "visible": true,
-  "format": {"@odata.type":"microsoft.graph.workbookChartLegendFormat"}
+  "visible": true
 }
 
 ```

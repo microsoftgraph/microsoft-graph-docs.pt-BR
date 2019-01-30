@@ -2,12 +2,12 @@
 title: tipo de recurso de secureScores
 description: 'superior = n, onde n = o número de dias de dados que você deseja recuperar. '
 localization_priority: Normal
-ms.openlocfilehash: fef5c43130aecf1604677d07f785a0cee0539568
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 8b4be9822b782303efe38dbdf5bd43e1ee543421
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576077"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640179"
 ---
 # <a name="securescores-resource-type"></a>tipo de recurso de secureScores
 
@@ -35,10 +35,10 @@ Propriedades que contêm de tipo de entidade de segurança locatário pontuaçã
 |   activeUserCount |   Int32   |   Contagem de usuário ativo do determinado inquilino.  |
 |   currentScore    |   Duplo  |   Pontuação de locatário atual que já alcançou na data especificada.    |
 |   maxScore |  Duplo  |   Locatário pontuação possíveis máxima na data especificada.    |
-|   enabledServices |   String collection   |   Serviços fornecida pela Microsoft para o locatário (por exemplo, Exchange online, Skype, Sharepoint).   |
+|   enabledServices |   Coleção de cadeias de caracteres   |   Serviços fornecida pela Microsoft para o locatário (por exemplo, Exchange online, Skype, Sharepoint).   |
 |   averageComparativeScores |  coleção [averageComparativeScore](averagecomparativescore.md)    |Pontuação média por escopos diferentes (por exemplo, média por setor, média por assentos) e a categoria de controle (identidade, dados, dispositivo, aplicativos, infra-estrutura) dentro do escopo. |
 |   controlScores | coleção [controlScore](controlscore.md)  |   Contém as pontuações de locatário de um conjunto de controles.   |
-|   vendorInformation | [securityVendorInformation](securityvendorinformation.md) | Contém detalhes sobre o fornecedor de serviço do produto de segurança, o provedor e subprovider (por exemplo, o fornecedor = Microsoft; provider = ATP do Windows Defender; subProvider = AppLocker).|
+
 
 ## <a name="relationships"></a>Relações
 
@@ -53,23 +53,24 @@ Veja a seguir uma representação JSON do recurso.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.secureScore"
+  "@odata.type": "microsoft.graph.secureScores"
 }-->
 
 ```json
 {
-    "id": "String",
-    "azureTenantId": "String (identifier)",
-    "createdDateTime": "DateTimeOffset",
-    "licensedUserCount": "Int32",
-    "activeUserCount": "Int32",
-    "currentScore": "Double",
-    "maxScore": "Double",    
-    "enabledServices": ["String"],
-    "averageComparativeScores": [{ "@odata.type":"microsoft.graph.averageComparativeScores"}],
-    "controlScores": [{"@odata.type":"microsoft.graph.controlScores"}],
-    "vendorInformation" : "microsoft.graph.securityVendorInformation"
+"id": "String",
+"azureTenantId": "Guid",
+"createdDate": "DateTimeOffset",
+"licensedUserCount": "Int32",
+"activeUserCount": "Int32",
+"currentScore": "Int32",
+"maxScore": "Int32",
+"averageScore": "Double",
+"enabledServices": "Collection(string)",
+"averageComparativeScores": "Collection(microsoft.graph.SecureScore.averageComparativeScores)",
+"controlScores": "Collection(microsoft.graph.SecureScore.controlScores)",
 }
+
 ```
 
 

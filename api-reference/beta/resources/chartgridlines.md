@@ -4,12 +4,12 @@ description: Representa as linhas de grade principais ou secundárias em um eixo
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 3c57c68e7d9dfcd26741d15e302dd5dddeaae378
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 852b52fd70e619b8720ef56fb0e857fb499f0abf
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572532"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640207"
 ---
 # <a name="chartgridlines-resource-type"></a>Tipo de recurso ChartGridlines
 
@@ -22,8 +22,8 @@ Representa as linhas de grade principais ou secundárias em um eixo do gráfico.
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Get ChartGridlines](../api/chartgridlines-get.md) | [WorkbookChartGridlines](chartgridlines.md) |Leia as propriedades e os relacionamentos do objeto chartGridlines.|
-|[Update](../api/chartgridlines-update.md) | [WorkbookChartGridlines](chartgridlines.md)    |Atualize o objeto ChartGridlines. |
+|[Get ChartGridlines](../api/chartgridlines-get.md) | [ChartGridlines](chartgridlines.md) |Leia as propriedades e os relacionamentos do objeto chartGridlines.|
+|[Update](../api/chartgridlines-update.md) | [ChartGridlines](chartgridlines.md)    |Atualize o objeto ChartGridlines. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
@@ -33,7 +33,7 @@ Representa as linhas de grade principais ou secundárias em um eixo do gráfico.
 ## <a name="relationships"></a>Relacionamentos
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|formato|[WorkbookChartGridlinesFormat](chartgridlinesformat.md)|Representa a formatação de linhas de grade do gráfico. Somente leitura.|
+|formato|[ChartGridlinesFormat](chartgridlinesformat.md)|Representa a formatação de linhas de grade do gráfico. Somente leitura.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -41,11 +41,10 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.workbookChartGridlines"
+  "@odata.type": "microsoft.graph.chartGridLines"
 }-->
 
 ```json

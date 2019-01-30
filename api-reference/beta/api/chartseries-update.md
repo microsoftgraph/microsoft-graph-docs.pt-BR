@@ -4,12 +4,12 @@ description: Atualiza as propriedades do objeto chartseries.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: d00a3c56e70ebce30d5763e7db7e94669cf7bb7e
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 312c2a0a219cd1f88ede106f253c0c9019109253
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577239"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640137"
 ---
 # <a name="update-chartseries"></a>Atualizar chartseries
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 PATCH /workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)
 ```
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
-| Nome       | Descrição|
+| Name       | Descrição|
 |:-----------|:-----------|
 | Autorização  | {token} de portador. Obrigatório. |
 | Workbook-Session-Id  | ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.|
@@ -45,7 +45,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto atualizado [workbookChartSeries](../resources/chartseries.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [ChartSeries](../resources/chartseries.md) atualizado no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
@@ -67,7 +67,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookChartSeries"
+  "@odata.type": "microsoft.graph.chartSeries"
 } -->
 ```http
 HTTP/1.1 200 OK

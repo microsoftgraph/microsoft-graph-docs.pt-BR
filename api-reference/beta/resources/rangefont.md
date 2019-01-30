@@ -4,12 +4,12 @@ description: Esse objeto representa os atributos de fonte de um objeto, como nom
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 5500ad7a2ea16336e9be617678c4c85562e04bb3
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 2dee07b7d2573081650bdd15799e4884c774e171
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571132"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640158"
 ---
 # <a name="rangefont-resource-type"></a>Tipo de recurso RangeFont
 
@@ -33,7 +33,7 @@ Esse objeto representa os atributos de fonte de um objeto, como nome, tamanho, c
 |italic|booliano|Representa o status da fonte em itálico.|
 |name|string|Nome da fonte (por exemplo, "Calibri")|
 |size|Double|Font Size|
-|underline| cadeia de caracteres de enum |Tipo de sublinhado aplicado à fonte. Os valores possíveis são: `None`, `Single`, `Double`, `SingleAccountant` e `DoubleAccountant`.|
+|underline|string|Tipo de sublinhado aplicado à fonte. Os valores possíveis são: `None`, `Single`, `Double`, `SingleAccountant` e `DoubleAccountant`.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -58,7 +58,7 @@ Veja a seguir uma representação JSON do recurso.
   "italic": true,
   "name": "string",
   "size": 1024,
-  "underline": "None | Single | Double | SingleAccountant | DoubleAccountant"
+  "underline": "string"
 }
 
 ```

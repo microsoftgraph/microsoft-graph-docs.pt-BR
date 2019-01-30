@@ -2,12 +2,12 @@
 title: tipo de recurso de synchronizationProgress
 description: Representa o progresso de um synchronizationJob rumo à conclusão.
 localization_priority: Normal
-ms.openlocfilehash: 39351f07720d44679675396f9e995f5e78e25fcc
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: b22bd95f54a9f268524dc98a8d3df94fcc14f773
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572742"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640067"
 ---
 # <a name="synchronizationprogress-resource-type"></a>tipo de recurso de synchronizationProgress
 
@@ -35,7 +35,7 @@ Veja a seguir uma representação JSON do recurso.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.synchronizationProgress"
+  "@odata.type": "microsoft.graph.synchronizationStatus"
 }-->
 
 ```json
