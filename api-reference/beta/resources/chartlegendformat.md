@@ -4,51 +4,31 @@ description: Abrange as propriedades de formato de uma legenda de gráfico.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 0ce9ac757f255bbee0334f5c6a3f397736a81884
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 8a61d92ada713da1533d6c25e3f8acbc30969d33
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29570943"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640074"
 ---
-# <a name="chartlegendformat-resource-type"></a><span data-ttu-id="ec579-103">Tipo de recurso ChartLegendFormat</span><span class="sxs-lookup"><span data-stu-id="ec579-103">ChartLegendFormat resource type</span></span>
+# <a name="chartlegendformat-resource-type"></a><span data-ttu-id="17220-103">Tipo de recurso ChartLegendFormat</span><span class="sxs-lookup"><span data-stu-id="17220-103">ChartLegendFormat resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ec579-104">Abrange as propriedades de formato de uma legenda de gráfico.</span><span class="sxs-lookup"><span data-stu-id="ec579-104">Encapsulates the format properties of a chart legend.</span></span>
+<span data-ttu-id="17220-104">Abrange as propriedades de formato de uma legenda de gráfico.</span><span class="sxs-lookup"><span data-stu-id="17220-104">Encapsulates the format properties of a chart legend.</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="ec579-105">Métodos</span><span class="sxs-lookup"><span data-stu-id="ec579-105">Methods</span></span>
-<span data-ttu-id="ec579-106">Nenhum</span><span class="sxs-lookup"><span data-stu-id="ec579-106">None</span></span>
+## <a name="methods"></a><span data-ttu-id="17220-105">Métodos</span><span class="sxs-lookup"><span data-stu-id="17220-105">Methods</span></span>
+<span data-ttu-id="17220-106">Nenhum</span><span class="sxs-lookup"><span data-stu-id="17220-106">None</span></span>
 
-## <a name="properties"></a><span data-ttu-id="ec579-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="ec579-107">Properties</span></span>
-<span data-ttu-id="ec579-108">Nenhum</span><span class="sxs-lookup"><span data-stu-id="ec579-108">None</span></span>
+## <a name="properties"></a><span data-ttu-id="17220-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="17220-107">Properties</span></span>
+<span data-ttu-id="17220-108">Nenhum</span><span class="sxs-lookup"><span data-stu-id="17220-108">None</span></span>
 
-## <a name="relationships"></a><span data-ttu-id="ec579-109">Relações</span><span class="sxs-lookup"><span data-stu-id="ec579-109">Relationships</span></span>
-| <span data-ttu-id="ec579-110">Relação</span><span class="sxs-lookup"><span data-stu-id="ec579-110">Relationship</span></span> | <span data-ttu-id="ec579-111">Tipo</span><span class="sxs-lookup"><span data-stu-id="ec579-111">Type</span></span>   |<span data-ttu-id="ec579-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="ec579-112">Description</span></span>|
+## <a name="relationships"></a><span data-ttu-id="17220-109">Relações</span><span class="sxs-lookup"><span data-stu-id="17220-109">Relationships</span></span>
+| <span data-ttu-id="17220-110">Relação</span><span class="sxs-lookup"><span data-stu-id="17220-110">Relationship</span></span> | <span data-ttu-id="17220-111">Tipo</span><span class="sxs-lookup"><span data-stu-id="17220-111">Type</span></span>   |<span data-ttu-id="17220-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="17220-112">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="ec579-113">fill</span><span class="sxs-lookup"><span data-stu-id="ec579-113">fill</span></span>|[<span data-ttu-id="ec579-114">WorkbookChartFill</span><span class="sxs-lookup"><span data-stu-id="ec579-114">WorkbookChartFill</span></span>](chartfill.md)|<span data-ttu-id="ec579-p101">Representa o formato de preenchimento de um objeto, que inclui informações sobre a formatação da tela de fundo. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="ec579-p101">Represents the fill format of an object, which includes background formating information. Read-only.</span></span>|
-|<span data-ttu-id="ec579-117">font</span><span class="sxs-lookup"><span data-stu-id="ec579-117">font</span></span>|[<span data-ttu-id="ec579-118">WorkbookChartFont</span><span class="sxs-lookup"><span data-stu-id="ec579-118">WorkbookChartFont</span></span>](chartfont.md)|<span data-ttu-id="ec579-p102">Representa os atributos de fonte, como nome, tamanho, cor, etc. de uma legenda de gráfico. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="ec579-p102">Represents the font attributes such as font name, font size, color, etc. of a chart legend. Read-only.</span></span>|
-
-
-## <a name="json-representation"></a><span data-ttu-id="ec579-121">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="ec579-121">JSON representation</span></span>
-
-<span data-ttu-id="ec579-122">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="ec579-122">Here is a JSON representation of the resource.</span></span>
-
-<!--{
-  "blockType": "resource",
-  "optionalProperties": [],
-  "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.workbookChartLegendFormat"
-}-->
-
-```json
-{
-  "fill": {"@odata.type": "microsoft.graph.workbookChartFill"},
-  "font": {"@odata.type": "microsoft.graph.workbookChartFont"}
-}
-```
-
+|<span data-ttu-id="17220-113">fill</span><span class="sxs-lookup"><span data-stu-id="17220-113">fill</span></span>|[<span data-ttu-id="17220-114">ChartFill</span><span class="sxs-lookup"><span data-stu-id="17220-114">ChartFill</span></span>](chartfill.md)|<span data-ttu-id="17220-p101">Representa o formato de preenchimento de um objeto, que inclui informações sobre a formatação da tela de fundo. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="17220-p101">Represents the fill format of an object, which includes background formating information. Read-only.</span></span>|
+|<span data-ttu-id="17220-117">font</span><span class="sxs-lookup"><span data-stu-id="17220-117">font</span></span>|[<span data-ttu-id="17220-118">ChartFont</span><span class="sxs-lookup"><span data-stu-id="17220-118">ChartFont</span></span>](chartfont.md)|<span data-ttu-id="17220-p102">Representa os atributos de fonte, como nome, tamanho, cor, etc. de uma legenda de gráfico. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="17220-p102">Represents the font attributes such as font name, font size, color, etc. of a chart legend. Read-only.</span></span>|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

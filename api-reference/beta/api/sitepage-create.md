@@ -5,30 +5,30 @@ ms.date: 05/07/2018
 title: Cria uma nova página em um site do SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: be3f24f3d4795c473562ddc01d75d54117dcedd3
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 0e66c38fc05402c8838d4ec081f492a394ea8ff2
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572784"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640151"
 ---
-# <a name="create-a-page-in-the-site-pages-list-of-a-site"></a><span data-ttu-id="37be4-102">Criar uma página na lista de páginas de site de um site</span><span class="sxs-lookup"><span data-stu-id="37be4-102">Create a page in the site pages list of a site</span></span>
+# <a name="create-a-page-in-the-site-pages-list-of-a-site"></a><span data-ttu-id="23074-102">Criar uma página na lista de páginas de site de um site</span><span class="sxs-lookup"><span data-stu-id="23074-102">Create a page in the site pages list of a site</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="37be4-103">Crie um novo [sitePage][] na de páginas do site [lista][] em um [site][].</span><span class="sxs-lookup"><span data-stu-id="37be4-103">Create a new [sitePage][] in the site pages [list][] in a [site][].</span></span>
+<span data-ttu-id="23074-103">Crie um novo [sitePage][] na de páginas do site [lista][] em um [site][].</span><span class="sxs-lookup"><span data-stu-id="23074-103">Create a new [sitePage][] in the site pages [list][] in a [site][].</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="37be4-104">Permissões</span><span class="sxs-lookup"><span data-stu-id="37be4-104">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="23074-104">Permissões</span><span class="sxs-lookup"><span data-stu-id="23074-104">Permissions</span></span>
 
-<span data-ttu-id="37be4-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="37be4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="23074-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="23074-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="37be4-107">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="37be4-107">Permission type</span></span>      | <span data-ttu-id="37be4-108">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="37be4-108">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="23074-107">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="23074-107">Permission type</span></span>      | <span data-ttu-id="23074-108">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="23074-108">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="37be4-109">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="37be4-109">Delegated (work or school account)</span></span> | <span data-ttu-id="37be4-110">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="37be4-110">Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="37be4-111">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="37be4-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="37be4-112">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="37be4-112">Not supported.</span></span>    |
-|<span data-ttu-id="37be4-113">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="37be4-113">Application</span></span> | <span data-ttu-id="37be4-114">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="37be4-114">Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="23074-109">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="23074-109">Delegated (work or school account)</span></span> | <span data-ttu-id="23074-110">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="23074-110">Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="23074-111">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="23074-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="23074-112">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="23074-112">Not supported.</span></span>    |
+|<span data-ttu-id="23074-113">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="23074-113">Application</span></span> | <span data-ttu-id="23074-114">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="23074-114">Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="37be4-115">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="37be4-115">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="23074-115">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="23074-115">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,13 +36,13 @@ ms.locfileid: "29572784"
 POST /sites/{site-id}/pages
 ```
 
-## <a name="request-body"></a><span data-ttu-id="37be4-116">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="37be4-116">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="23074-116">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="23074-116">Request body</span></span>
 
-<span data-ttu-id="37be4-117">No corpo da solicitação, fornece uma representação JSON do recurso [sitePage][] para criar.</span><span class="sxs-lookup"><span data-stu-id="37be4-117">In the request body, supply a JSON representation of the [sitePage][] resource to create.</span></span>
+<span data-ttu-id="23074-117">No corpo da solicitação, fornece uma representação JSON do recurso [sitePage][] para criar.</span><span class="sxs-lookup"><span data-stu-id="23074-117">In the request body, supply a JSON representation of the [sitePage][] resource to create.</span></span>
 
-## <a name="example"></a><span data-ttu-id="37be4-118">Exemplo</span><span class="sxs-lookup"><span data-stu-id="37be4-118">Example</span></span>
+## <a name="example"></a><span data-ttu-id="23074-118">Exemplo</span><span class="sxs-lookup"><span data-stu-id="23074-118">Example</span></span>
 
-<span data-ttu-id="37be4-119">O exemplo a seguir mostra como criar uma nova página.</span><span class="sxs-lookup"><span data-stu-id="37be4-119">The following example shows how to create a new page.</span></span>
+<span data-ttu-id="23074-119">O exemplo a seguir mostra como criar uma nova página.</span><span class="sxs-lookup"><span data-stu-id="23074-119">The following example shows how to create a new page.</span></span>
 
 <!-- { "blockType": "request", "name": "create-page", "scopes": "sites.readwrite.all" } -->
 
@@ -99,9 +99,9 @@ Content-Type: application/json
 }
 ```
 
-## <a name="response"></a><span data-ttu-id="37be4-120">Resposta</span><span class="sxs-lookup"><span data-stu-id="37be4-120">Response</span></span>
+## <a name="response"></a><span data-ttu-id="23074-120">Resposta</span><span class="sxs-lookup"><span data-stu-id="23074-120">Response</span></span>
 
-<span data-ttu-id="37be4-121">Se tiver êxito, esse método retorna um [sitePage][] no corpo da resposta para a página criada.</span><span class="sxs-lookup"><span data-stu-id="37be4-121">If successful, this method returns a [sitePage][] in the response body for the created page.</span></span>
+<span data-ttu-id="23074-121">Se tiver êxito, esse método retorna um [sitePage][] no corpo da resposta para a página criada.</span><span class="sxs-lookup"><span data-stu-id="23074-121">If successful, this method returns a [sitePage][] in the response body for the created page.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.sitePage", "truncated": true } -->
 
@@ -110,7 +110,7 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "id": "2",
+    "id": 2,
     "eTag": "75bc70e2-6587-45be-8493-c99a956b2e05,7",
     "createdDateTime": "2016-12-06T20:04:40Z",
     "lastModifiedDateTime": "2016-12-06T20:05:09Z",
@@ -182,9 +182,8 @@ Content-type: application/json
 }
 ```
 
-<span data-ttu-id="37be4-122">**Observação:** O objeto Response será truncado para mais clareza.</span><span class="sxs-lookup"><span data-stu-id="37be4-122">**Note:** The response object is truncated for clarity.</span></span> <span data-ttu-id="37be4-123">As propriedades padrão serão retornadas da chamada real.</span><span class="sxs-lookup"><span data-stu-id="37be4-123">Default properties will be returned from the actual call.</span></span>
+<span data-ttu-id="23074-122">**Observação:** O objeto Response será truncado para mais clareza.</span><span class="sxs-lookup"><span data-stu-id="23074-122">**Note:** The response object is truncated for clarity.</span></span> <span data-ttu-id="23074-123">As propriedades padrão serão retornadas da chamada real.</span><span class="sxs-lookup"><span data-stu-id="23074-123">Default properties will be returned from the actual call.</span></span>
 
-[lista]: ../resources/list.md
 [list]: ../resources/list.md
 [listItem]: ../resources/listitem.md
 [site]: ../resources/site.md
