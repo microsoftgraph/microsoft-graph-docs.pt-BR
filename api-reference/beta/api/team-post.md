@@ -4,12 +4,12 @@ description: Criar uma nova equipe.
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 3e901225f5a8f94abb61a6b4052b0db2d47865c3
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 0798ca15e61dcb9522019ba855f5b2e329b97356
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519609"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643843"
 ---
 # <a name="create-team"></a>Criar equipe
 
@@ -52,9 +52,9 @@ Se bem-sucedida, essa API retornará uma resposta `202 Accepted` contendo um lin
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example---delegated-permissions"></a>Exemplo – permissões delegadas
+### <a name="example-1-delegated-permissions"></a>Exemplo 1: Permissões delegadas
 
-Veja a seguir um exemplo de uma solicitação mínima. Ao omitir outras propriedades, o cliente está, implicitamente, obtendo padrões do modelo predefinido representado por `template`.
+Este é um exemplo de uma solicitação mínima. Ao omitir outras propriedades, o cliente está, implicitamente, obtendo padrões do modelo predefinido representado por `template`.
 
 #### <a name="request"></a>Solicitação
 
@@ -64,7 +64,7 @@ Content-Type: application/json
 {
   "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates/standard",
   "displayName": "My Sample Team",
-  "description": "My Sample Team’s Description",
+  "description": "My Sample Team’s Description"
 }
 ```
 
@@ -79,9 +79,39 @@ Content-Location: /teams/{teamId}
 }
 ```
 
-### <a name="example---create-a-team-with-an-app-installed-multiple-channels-with-pinned-tabs-using-delegated-permissions"></a>Exemplo – criar uma equipe com um aplicativo instalado, vários canais com guias fixadas usando permissões delegadas
+### <a name="example-2-application-permissions"></a>Exemplo 2: Permissões de aplicativos
 
-Aqui está a solicitação com um conteúdo completo. O cliente pode substituir os valores no modelo-base e adicionar itens com valor de matriz na máxima extensão permitida por regras de validação para a `specialization`.
+Aqui está um exemplo de uma solicitação mínima usando permissões de aplicativo. Ao omitir outras propriedades, o cliente está implicitamente obtendo padrões do modelo predefinido representado por `template`. Ao emitir uma solicitação com permissões de aplicativo, um [usuário](../resources/user.md) deve ser especificado no conjunto `owners`.
+
+#### <a name="request"></a>Solicitação
+
+```http
+POST https://graph.microsoft.com/beta/teams
+Content-Type: application/json
+{
+  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates/standard",
+  "displayName": "My Sample Team",
+  "description": "My Sample Team’s Description",
+  "owners@odata.bind": [
+    "https://graph.microsoft.com/beta/users('abc123')"
+  ]
+}
+```
+
+#### <a name="response"></a>Resposta
+
+```http
+HTTP/1.1 202 Accepted
+Content-Type: application/json
+Location: /teams/{teamId}/operations/{operationId}
+Content-Location: /teams/{teamId}
+{
+}
+```
+
+### <a name="example-3-create-a-team-with-an-app-installed-multiple-channels-with-pinned-tabs-using-delegated-permissions"></a>Exemplo 3: Criar uma equipe com um aplicativo instalado, vários canais com guias fixadas usando permissões delegadas
+
+Aqui está uma solicitação com um conteúdo completo. O cliente pode substituir os valores no modelo-base e adicionar itens com valor de matriz na máxima extensão permitida por regras de validação para a `specialization`. 
 
 #### <a name="request"></a>Solicitação
 
@@ -177,9 +207,13 @@ Content-Location: /teams/{teamId}
 }
 ```
 
-### <a name="example---application-permissions"></a>Exemplo – permissões de aplicativo
+### <a name="example-4-create-a-team-with-a-non-standard-base-template-type"></a>Exemplo 4: Criar uma equipe com um tipo de modelo de base não padrão
 
-Aqui está um exemplo de uma solicitação mínima com permissões de aplicativo. Ao omitir outras propriedades, o cliente está, implicitamente, obtendo padrões do modelo predefinido representado por `template`. Ao emitir uma solicitação com permissões de aplicativo, um [usuário](../resources/user.md) deve ser especificado na coleção `owners`.
+Os tipos de modelos base são modelos especiais criados pela Microsoft para setores específicos. Estes modelos base geralmente contêm aplicativos proprietários que não estão disponíveis nas lojas, e propriedade de equipe que ainda não tem suporte individual nos modelos do Microsoft Teams.
+
+Para criar uma equipe a partir de um modelo base não padrão, você vai precisar alterar a propriedade `template@odata.bind` no corpo da solicitação de `standard` para indicar o que você deseja criar para o modelo base padrão.
+
+Para saber mais sobre tipos de modelos base com suporte, confira [Comece a trabalhar com modelos do Teams](https://docs.microsoft.com/pt-BR/MicrosoftTeams/get-started-with-teams-templates).
 
 #### <a name="request"></a>Solicitação
 
@@ -187,12 +221,63 @@ Aqui está um exemplo de uma solicitação mínima com permissões de aplicativo
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
 {
-  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates/standard",
-  "displayName": "My Sample Team",
-  "description": "My Sample Team’s Description",
-  "owners@odata.bind": [
-    "https://graph.microsoft.com/beta/users('abc123')"
-  ]
+  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates/educationClass",
+  "displayName": "My Class Team",
+  "description": "My Class Team’s Description"
+}
+```
+
+#### <a name="response"></a>Resposta
+
+```http
+HTTP/1.1 202 Accepted
+Content-Type: application/json
+Location: /teams/{teamId}/operations/{operationId}
+Content-Location: /teams/{teamId}
+{
+}
+```
+
+### <a name="example-5-create-a-team-with-a-non-standard-base-template-type-with-extended-properties"></a>Exemplo 5: Criar uma equipe com um tipo de modelo base não padrão com propriedades estendidas
+
+Os tipos de modelos base podem ser estendidos com propriedade adicionais, permitindo que você crie sobre um modelo base existente com configurações, canais, aplicativos ou guias de equipe adicionais.
+
+Para saber mais sobre os tipos de modelos base com suporte e propriedades com suporte, confira [Comece a trabalhar com modelos do Teams](https://docs.microsoft.com/pt-BR/MicrosoftTeams/get-started-with-teams-templates).
+
+#### <a name="request"></a>Solicitação
+
+```http
+POST https://graph.microsoft.com/beta/teams
+Content-Type: application/json
+{
+  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates/educationClass",
+  "displayName": "My Class Team",
+  "description": "My Class Team’s Description",
+  "channels": [
+        {
+            "displayName": "Class Announcements 📢",
+            "isFavoriteByDefault": true
+        },
+        {
+            "displayName": "Homework 🏋️",
+            "isFavoriteByDefault": true,
+        }
+    ],
+    "memberSettings": {
+        "allowCreateUpdateChannels": false,
+        "allowDeleteChannels": false,
+        "allowAddRemoveApps": false,
+        "allowCreateUpdateRemoveTabs": false,
+        "allowCreateUpdateRemoveConnectors": false
+    },
+    "installedApps": [
+        {
+            "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.vsts')"
+        },
+        {
+            "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('1542629c-01b3-4a6d-8f76-1938b779e48d')"
+        }
+    ]
 }
 ```
 
@@ -210,11 +295,8 @@ Content-Location: /teams/{teamId}
 ## <a name="see-also"></a>Confira também
 
 - [Como criar um grupo com uma equipe](/graph/teams-create-group-and-team)
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "suppressions": [
-    "Error: /api-reference/beta/api/team-post.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+    "Error:{/api-reference/beta/api/team-post.md}:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+}-->
