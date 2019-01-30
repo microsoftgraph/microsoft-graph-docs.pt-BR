@@ -4,52 +4,52 @@ description: Recupera as propriedades e os relacionamentos do objeto chartlinefo
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: f4750168617058a9d46ef4cb90fc91a0fbb0a89d
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: a84e0d9c31f08ac8fe6396cb73e2fd7fb0993e0c
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29570712"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643934"
 ---
-# <a name="get-chartlineformat"></a><span data-ttu-id="9cb43-103">Obter ChartLineFormat</span><span class="sxs-lookup"><span data-stu-id="9cb43-103">Get ChartLineFormat</span></span>
+# <a name="get-chartlineformat"></a><span data-ttu-id="97666-103">Obter ChartLineFormat</span><span class="sxs-lookup"><span data-stu-id="97666-103">Get ChartLineFormat</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="9cb43-104">Recupera as propriedades e os relacionamentos do objeto chartlineformat.</span><span class="sxs-lookup"><span data-stu-id="9cb43-104">Retrieve the properties and relationships of chartlineformat object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="9cb43-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="9cb43-105">Permissions</span></span>
-<span data-ttu-id="9cb43-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9cb43-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="97666-104">Recupera as propriedades e os relacionamentos do objeto chartlineformat.</span><span class="sxs-lookup"><span data-stu-id="97666-104">Retrieve the properties and relationships of chartlineformat object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="97666-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="97666-105">Permissions</span></span>
+<span data-ttu-id="97666-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="97666-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="9cb43-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="9cb43-108">Permission type</span></span>      | <span data-ttu-id="9cb43-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="9cb43-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="97666-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="97666-108">Permission type</span></span>      | <span data-ttu-id="97666-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="97666-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="9cb43-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="9cb43-110">Delegated (work or school account)</span></span> | <span data-ttu-id="9cb43-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="9cb43-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="9cb43-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="9cb43-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9cb43-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="9cb43-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="9cb43-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="9cb43-114">Application</span></span> | <span data-ttu-id="9cb43-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="9cb43-115">Not supported.</span></span> |
+|<span data-ttu-id="97666-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="97666-110">Delegated (work or school account)</span></span> | <span data-ttu-id="97666-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="97666-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="97666-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="97666-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="97666-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="97666-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="97666-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="97666-114">Application</span></span> | <span data-ttu-id="97666-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="97666-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="9cb43-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="9cb43-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="97666-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="97666-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/format/line
 GET /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/format/line
 GET /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/majorgridlines/format/line
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="9cb43-117">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="9cb43-117">Optional query parameters</span></span>
-<span data-ttu-id="9cb43-118">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="9cb43-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="97666-117">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="97666-117">Optional query parameters</span></span>
+<span data-ttu-id="97666-118">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="97666-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="9cb43-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="9cb43-119">Request headers</span></span>
-| <span data-ttu-id="9cb43-120">Nome</span><span class="sxs-lookup"><span data-stu-id="9cb43-120">Name</span></span>      |<span data-ttu-id="9cb43-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="9cb43-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="97666-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="97666-119">Request headers</span></span>
+| <span data-ttu-id="97666-120">Nome</span><span class="sxs-lookup"><span data-stu-id="97666-120">Name</span></span>      |<span data-ttu-id="97666-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="97666-121">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="9cb43-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="9cb43-122">Authorization</span></span>  | <span data-ttu-id="9cb43-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="9cb43-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="9cb43-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="9cb43-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="9cb43-p103">ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.</span><span class="sxs-lookup"><span data-stu-id="9cb43-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="97666-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="97666-122">Authorization</span></span>  | <span data-ttu-id="97666-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="97666-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="97666-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="97666-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="97666-p103">ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.</span><span class="sxs-lookup"><span data-stu-id="97666-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="9cb43-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="9cb43-128">Request body</span></span>
-<span data-ttu-id="9cb43-129">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="9cb43-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="97666-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="97666-128">Request body</span></span>
+<span data-ttu-id="97666-129">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="97666-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="9cb43-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="9cb43-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="97666-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="97666-130">Response</span></span>
 
-<span data-ttu-id="9cb43-131">Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [ChartLineFormat](../resources/chartlineformat.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="9cb43-131">If successful, this method returns a `200 OK` response code and [ChartLineFormat](../resources/chartlineformat.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="9cb43-132">Exemplo</span><span class="sxs-lookup"><span data-stu-id="9cb43-132">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="9cb43-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="9cb43-133">Request</span></span>
-<span data-ttu-id="9cb43-134">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="9cb43-134">Here is an example of the request.</span></span>
+<span data-ttu-id="97666-131">Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [ChartLineFormat](../resources/chartlineformat.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="97666-131">If successful, this method returns a `200 OK` response code and [ChartLineFormat](../resources/chartlineformat.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="97666-132">Exemplo</span><span class="sxs-lookup"><span data-stu-id="97666-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="97666-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="97666-133">Request</span></span>
+<span data-ttu-id="97666-134">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="97666-134">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_chartlineformat"
@@ -57,12 +57,12 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/majorgridlines
 ```http
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/format/line
 ```
-##### <a name="response"></a><span data-ttu-id="9cb43-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="9cb43-135">Response</span></span>
-<span data-ttu-id="9cb43-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="9cb43-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="97666-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="97666-135">Response</span></span>
+<span data-ttu-id="97666-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="97666-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookChartLineFormat"
+  "@odata.type": "microsoft.graph.chartLineFormat"
 } -->
 ```http
 HTTP/1.1 200 OK

@@ -4,35 +4,34 @@ description: A configuração de mídia usada para conectar a uma chamada.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 0b2d8b8063307660b0d4cce459e1906f0b0a99c5
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: e4f6e940cd319d10cd3f03e3c94d0473164beb29
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573960"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642615"
 ---
-# <a name="mediaconfig-resource-type"></a><span data-ttu-id="5080f-103">tipo de recurso de mediaConfig</span><span class="sxs-lookup"><span data-stu-id="5080f-103">mediaConfig resource type</span></span>
+# <a name="mediaconfig-resource-type"></a><span data-ttu-id="3d53d-103">tipo de recurso de mediaConfig</span><span class="sxs-lookup"><span data-stu-id="3d53d-103">mediaConfig resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="5080f-104">A configuração de mídia usada para conectar a uma chamada.</span><span class="sxs-lookup"><span data-stu-id="5080f-104">The media configuration used to connect to a call.</span></span>
+<span data-ttu-id="3d53d-104">A configuração de mídia usada para conectar a uma chamada.</span><span class="sxs-lookup"><span data-stu-id="3d53d-104">The media configuration used to connect to a call.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="5080f-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="5080f-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="3d53d-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="3d53d-105">Properties</span></span>
 
-| <span data-ttu-id="5080f-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="5080f-106">Property</span></span>       | <span data-ttu-id="5080f-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="5080f-107">Type</span></span>    | <span data-ttu-id="5080f-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="5080f-108">Description</span></span>|
+| <span data-ttu-id="3d53d-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="3d53d-106">Property</span></span>       | <span data-ttu-id="3d53d-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="3d53d-107">Type</span></span>    | <span data-ttu-id="3d53d-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="3d53d-108">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="5080f-109">removeFromDefaultAudioGroup</span><span class="sxs-lookup"><span data-stu-id="5080f-109">removeFromDefaultAudioGroup</span></span> | <span data-ttu-id="5080f-110">Boolean</span><span class="sxs-lookup"><span data-stu-id="5080f-110">Boolean</span></span> |  |
+| <span data-ttu-id="3d53d-109">removeFromDefaultAudioGroup</span><span class="sxs-lookup"><span data-stu-id="3d53d-109">removeFromDefaultAudioGroup</span></span> | <span data-ttu-id="3d53d-110">Booliano</span><span class="sxs-lookup"><span data-stu-id="3d53d-110">Boolean</span></span> |  |
 
-## <a name="json-representation"></a><span data-ttu-id="5080f-111">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="5080f-111">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="3d53d-111">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="3d53d-111">JSON representation</span></span>
 
-<span data-ttu-id="5080f-112">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="5080f-112">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="3d53d-112">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="3d53d-112">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
     "removeFromDefaultAudioGroup"
   ],
-  "abstract": true,
   "@odata.type": "microsoft.graph.mediaConfig"
 }-->
 ```json

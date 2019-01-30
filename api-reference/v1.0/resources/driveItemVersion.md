@@ -3,37 +3,37 @@ title: Tipo de recurso DriveItemVersion
 description: O recurso de **DriveItemVersion** representa uma versão específica de um DriveItem.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 5b6e9ecd2c3c8ec14958cfa2645f8fb0dbfe30e8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: fd6052464d40fcce86b83d93601282dda252c69b
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27949588"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643983"
 ---
-# <a name="driveitemversion-resource-type"></a><span data-ttu-id="244bf-103">Tipo de recurso DriveItemVersion</span><span class="sxs-lookup"><span data-stu-id="244bf-103">DriveItemVersion resource type</span></span>
+# <a name="driveitemversion-resource-type"></a><span data-ttu-id="2ccde-103">Tipo de recurso DriveItemVersion</span><span class="sxs-lookup"><span data-stu-id="2ccde-103">DriveItemVersion resource type</span></span>
 
-<span data-ttu-id="244bf-104">O recurso **DriveItemVersion** representa uma versão específica de um [DriveItem](driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="244bf-104">The **DriveItemVersion** resource represents a specific version of a [DriveItem](driveitem.md).</span></span>
+<span data-ttu-id="2ccde-104">O recurso **DriveItemVersion** representa uma versão específica de um [DriveItem](driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="2ccde-104">The **DriveItemVersion** resource represents a specific version of a [DriveItem](driveitem.md).</span></span>
 
 
-## <a name="tasks-on-driveitemversion-resources"></a><span data-ttu-id="244bf-105">Tarefas em recursos DriveItemVersion</span><span class="sxs-lookup"><span data-stu-id="244bf-105">Tasks on DriveItemVersion resources</span></span>
+## <a name="tasks-on-driveitemversion-resources"></a><span data-ttu-id="2ccde-105">Tarefas em recursos DriveItemVersion</span><span class="sxs-lookup"><span data-stu-id="2ccde-105">Tasks on DriveItemVersion resources</span></span>
 
-<span data-ttu-id="244bf-106">As tarefas a seguir estão disponíveis para recursos driveItemVersion.</span><span class="sxs-lookup"><span data-stu-id="244bf-106">The following tasks are available for driveItemVersion resources.</span></span>
+<span data-ttu-id="2ccde-106">As tarefas a seguir estão disponíveis para recursos driveItemVersion.</span><span class="sxs-lookup"><span data-stu-id="2ccde-106">The following tasks are available for driveItemVersion resources.</span></span>
 
-|            <span data-ttu-id="244bf-107">Tarefa comum</span><span class="sxs-lookup"><span data-stu-id="244bf-107">Common task</span></span>             |         <span data-ttu-id="244bf-108">Método HTTP</span><span class="sxs-lookup"><span data-stu-id="244bf-108">HTTP method</span></span>         |
+|            <span data-ttu-id="2ccde-107">Tarefa comum</span><span class="sxs-lookup"><span data-stu-id="2ccde-107">Common task</span></span>             |         <span data-ttu-id="2ccde-108">Método HTTP</span><span class="sxs-lookup"><span data-stu-id="2ccde-108">HTTP method</span></span>         |
 | :--------------------------------- | :-------------------------- |
-| <span data-ttu-id="244bf-109">[Versões de lista][version-list]</span><span class="sxs-lookup"><span data-stu-id="244bf-109">[List versions][version-list]</span></span>      | `GET /drive/items/{item-id}/versions`  |
-| <span data-ttu-id="244bf-110">[Obter versão][version-get]</span><span class="sxs-lookup"><span data-stu-id="244bf-110">[Get version][version-get]</span></span>         | `GET /drive/items/{item-id}/versions/{version-id}`     |
-| <span data-ttu-id="244bf-111">[Obter conteúdo][content-get]</span><span class="sxs-lookup"><span data-stu-id="244bf-111">[Get contents][content-get]</span></span>        | `GET /drive/items/{item-id}/versions/{version-id}/content` |
-| <span data-ttu-id="244bf-112">[Restaurar versão][version-restore]</span><span class="sxs-lookup"><span data-stu-id="244bf-112">[Restore version][version-restore]</span></span> | `POST /drive/items/{item-id}/versions/{version-id}/restore` |
+| <span data-ttu-id="2ccde-109">[Versões de lista][version-list]</span><span class="sxs-lookup"><span data-stu-id="2ccde-109">[List versions][version-list]</span></span>      | `GET /drive/items/{item-id}/versions`  |
+| <span data-ttu-id="2ccde-110">[Obter versão][version-get]</span><span class="sxs-lookup"><span data-stu-id="2ccde-110">[Get version][version-get]</span></span>         | `GET /drive/items/{item-id}/versions/{version-id}`     |
+| <span data-ttu-id="2ccde-111">[Obter conteúdo][content-get]</span><span class="sxs-lookup"><span data-stu-id="2ccde-111">[Get contents][content-get]</span></span>        | `GET /drive/items/{item-id}/versions/{version-id}/content` |
+| <span data-ttu-id="2ccde-112">[Restaurar versão][version-restore]</span><span class="sxs-lookup"><span data-stu-id="2ccde-112">[Restore version][version-restore]</span></span> | `POST /drive/items/{item-id}/versions/{version-id}/restoreversion` |
 
 [version-list]: ../api/driveitem-list-versions.md
 [version-get]: ../api/driveitemversion-get.md
 [content-get]: ../api/driveitemversion-get-contents.md
 [version-restore]: ../api/driveitemversion-restore.md
 
-<span data-ttu-id="244bf-113">Na tabela anterior, os exemplos usam `/drive`, mas há muitas solicitações válidas.</span><span class="sxs-lookup"><span data-stu-id="244bf-113">In the previous table, the examples use `/drive`, but there are many valid requests.</span></span>
+<span data-ttu-id="2ccde-113">Na tabela anterior, os exemplos usam `/drive`, mas há muitas solicitações válidas.</span><span class="sxs-lookup"><span data-stu-id="2ccde-113">In the previous table, the examples use `/drive`, but there are many valid requests.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="244bf-114">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="244bf-114">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="2ccde-114">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="2ccde-114">JSON representation</span></span>
 
 <!--{
   "blockType": "resource",
@@ -53,16 +53,16 @@ ms.locfileid: "27949588"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="244bf-115">Propriedades</span><span class="sxs-lookup"><span data-stu-id="244bf-115">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="2ccde-115">Propriedades</span><span class="sxs-lookup"><span data-stu-id="2ccde-115">Properties</span></span>
 
-|      <span data-ttu-id="244bf-116">Nome da propriedade</span><span class="sxs-lookup"><span data-stu-id="244bf-116">Property name</span></span>       |                         <span data-ttu-id="244bf-117">Tipo</span><span class="sxs-lookup"><span data-stu-id="244bf-117">Type</span></span>                         |                               <span data-ttu-id="244bf-118">Descrição</span><span class="sxs-lookup"><span data-stu-id="244bf-118">Description</span></span>                               |
+|      <span data-ttu-id="2ccde-116">Nome da propriedade</span><span class="sxs-lookup"><span data-stu-id="2ccde-116">Property name</span></span>       |                         <span data-ttu-id="2ccde-117">Tipo</span><span class="sxs-lookup"><span data-stu-id="2ccde-117">Type</span></span>                         |                               <span data-ttu-id="2ccde-118">Descrição</span><span class="sxs-lookup"><span data-stu-id="2ccde-118">Description</span></span>                               |
 | :----------------------- | :--------------------------------------------------- | :---------------------------------------------------------------------- |
-| <span data-ttu-id="244bf-119">**id**</span><span class="sxs-lookup"><span data-stu-id="244bf-119">**id**</span></span>                   | <span data-ttu-id="244bf-120">string</span><span class="sxs-lookup"><span data-stu-id="244bf-120">string</span></span>                                               | <span data-ttu-id="244bf-121">A ID da versão.</span><span class="sxs-lookup"><span data-stu-id="244bf-121">The ID of the version.</span></span> <span data-ttu-id="244bf-122">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="244bf-122">Read-only.</span></span>                                       |
-| <span data-ttu-id="244bf-123">**lastModifiedBy**</span><span class="sxs-lookup"><span data-stu-id="244bf-123">**lastModifiedBy**</span></span>       | [<span data-ttu-id="244bf-124">IdentitySet</span><span class="sxs-lookup"><span data-stu-id="244bf-124">IdentitySet</span></span>](../resources/identityset.md)           | <span data-ttu-id="244bf-125">Identidade do usuário que modificou a versão pela última vez.</span><span class="sxs-lookup"><span data-stu-id="244bf-125">Identity of the user which last modified the version.</span></span> <span data-ttu-id="244bf-126">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="244bf-126">Read-only.</span></span>        |
-| <span data-ttu-id="244bf-127">**lastModifiedDateTime**</span><span class="sxs-lookup"><span data-stu-id="244bf-127">**lastModifiedDateTime**</span></span> | [<span data-ttu-id="244bf-128">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="244bf-128">DateTimeOffset</span></span>](../resources/timestamp.md)          | <span data-ttu-id="244bf-129">Data e hora em que a versão foi modificada pela última vez.</span><span class="sxs-lookup"><span data-stu-id="244bf-129">Date and time the version was last modified.</span></span> <span data-ttu-id="244bf-130">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="244bf-130">Read-only.</span></span>                 |
-| <span data-ttu-id="244bf-131">**publication**</span><span class="sxs-lookup"><span data-stu-id="244bf-131">**publication**</span></span>          | [<span data-ttu-id="244bf-132">PublicationFacet</span><span class="sxs-lookup"><span data-stu-id="244bf-132">PublicationFacet</span></span>](../resources/publicationfacet.md) | <span data-ttu-id="244bf-133">Indica o status de publicação desta versão específica.</span><span class="sxs-lookup"><span data-stu-id="244bf-133">Indicates the publication status of this particular version.</span></span> <span data-ttu-id="244bf-134">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="244bf-134">Read-only.</span></span> |
-| <span data-ttu-id="244bf-135">**size**</span><span class="sxs-lookup"><span data-stu-id="244bf-135">**size**</span></span>                 | <span data-ttu-id="244bf-136">Int64</span><span class="sxs-lookup"><span data-stu-id="244bf-136">Int64</span></span>                                                | <span data-ttu-id="244bf-137">Indica o tamanho do fluxo de conteúdo para esta versão do item.</span><span class="sxs-lookup"><span data-stu-id="244bf-137">Indicates the size of the content stream for this version of the item.</span></span>  |
-| <span data-ttu-id="244bf-138">**content**</span><span class="sxs-lookup"><span data-stu-id="244bf-138">**content**</span></span>              | <span data-ttu-id="244bf-139">Fluxo</span><span class="sxs-lookup"><span data-stu-id="244bf-139">Stream</span></span>                                               | <span data-ttu-id="244bf-140">O fluxo de conteúdo para esta versão do item.</span><span class="sxs-lookup"><span data-stu-id="244bf-140">The content stream for this version of the item.</span></span>                        |
+| <span data-ttu-id="2ccde-119">**id**</span><span class="sxs-lookup"><span data-stu-id="2ccde-119">**id**</span></span>                   | <span data-ttu-id="2ccde-120">string</span><span class="sxs-lookup"><span data-stu-id="2ccde-120">string</span></span>                                               | <span data-ttu-id="2ccde-121">A ID da versão.</span><span class="sxs-lookup"><span data-stu-id="2ccde-121">The ID of the version.</span></span> <span data-ttu-id="2ccde-122">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="2ccde-122">Read-only.</span></span>                                       |
+| <span data-ttu-id="2ccde-123">**lastModifiedBy**</span><span class="sxs-lookup"><span data-stu-id="2ccde-123">**lastModifiedBy**</span></span>       | [<span data-ttu-id="2ccde-124">IdentitySet</span><span class="sxs-lookup"><span data-stu-id="2ccde-124">IdentitySet</span></span>](../resources/identityset.md)           | <span data-ttu-id="2ccde-125">Identidade do usuário que modificou a versão pela última vez.</span><span class="sxs-lookup"><span data-stu-id="2ccde-125">Identity of the user which last modified the version.</span></span> <span data-ttu-id="2ccde-126">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="2ccde-126">Read-only.</span></span>        |
+| <span data-ttu-id="2ccde-127">**lastModifiedDateTime**</span><span class="sxs-lookup"><span data-stu-id="2ccde-127">**lastModifiedDateTime**</span></span> | [<span data-ttu-id="2ccde-128">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="2ccde-128">DateTimeOffset</span></span>](../resources/timestamp.md)          | <span data-ttu-id="2ccde-129">Data e hora em que a versão foi modificada pela última vez.</span><span class="sxs-lookup"><span data-stu-id="2ccde-129">Date and time the version was last modified.</span></span> <span data-ttu-id="2ccde-130">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="2ccde-130">Read-only.</span></span>                 |
+| <span data-ttu-id="2ccde-131">**publication**</span><span class="sxs-lookup"><span data-stu-id="2ccde-131">**publication**</span></span>          | [<span data-ttu-id="2ccde-132">PublicationFacet</span><span class="sxs-lookup"><span data-stu-id="2ccde-132">PublicationFacet</span></span>](../resources/publicationfacet.md) | <span data-ttu-id="2ccde-133">Indica o status de publicação desta versão específica.</span><span class="sxs-lookup"><span data-stu-id="2ccde-133">Indicates the publication status of this particular version.</span></span> <span data-ttu-id="2ccde-134">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="2ccde-134">Read-only.</span></span> |
+| <span data-ttu-id="2ccde-135">**size**</span><span class="sxs-lookup"><span data-stu-id="2ccde-135">**size**</span></span>                 | <span data-ttu-id="2ccde-136">Int64</span><span class="sxs-lookup"><span data-stu-id="2ccde-136">Int64</span></span>                                                | <span data-ttu-id="2ccde-137">Indica o tamanho do fluxo de conteúdo para esta versão do item.</span><span class="sxs-lookup"><span data-stu-id="2ccde-137">Indicates the size of the content stream for this version of the item.</span></span>  |
+| <span data-ttu-id="2ccde-138">**content**</span><span class="sxs-lookup"><span data-stu-id="2ccde-138">**content**</span></span>              | <span data-ttu-id="2ccde-139">Fluxo</span><span class="sxs-lookup"><span data-stu-id="2ccde-139">Stream</span></span>                                               | <span data-ttu-id="2ccde-140">O fluxo de conteúdo para esta versão do item.</span><span class="sxs-lookup"><span data-stu-id="2ccde-140">The content stream for this version of the item.</span></span>                        |
 
 <!-- {
   "type": "#page.annotation",

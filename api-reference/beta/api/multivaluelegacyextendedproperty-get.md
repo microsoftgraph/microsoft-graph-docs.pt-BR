@@ -2,156 +2,156 @@
 title: Obter multiValueLegacyExtendedProperty
 description: Expanda '.
 localization_priority: Normal
-ms.openlocfilehash: 75edf8df880ad8ebba2f407b8845ab95b019552f
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 7a649020bf326d4ec1ed3a83ae0c759a012378d4
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573687"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641082"
 ---
-# <a name="get-multivaluelegacyextendedproperty"></a><span data-ttu-id="36d7d-103">Obter multiValueLegacyExtendedProperty</span><span class="sxs-lookup"><span data-stu-id="36d7d-103">Get multiValueLegacyExtendedProperty</span></span>
+# <a name="get-multivaluelegacyextendedproperty"></a><span data-ttu-id="8f9cf-103">Obter multiValueLegacyExtendedProperty</span><span class="sxs-lookup"><span data-stu-id="8f9cf-103">Get multiValueLegacyExtendedProperty</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="36d7d-104">Obtenha uma instância do recurso que contém uma propriedade estendida com vários valores usando `$expand`.</span><span class="sxs-lookup"><span data-stu-id="36d7d-104">Get a resource instance that contains a multi-value extended property by using `$expand`.</span></span>
+<span data-ttu-id="8f9cf-104">Obtenha uma instância do recurso que contém uma propriedade estendida com vários valores usando `$expand`.</span><span class="sxs-lookup"><span data-stu-id="8f9cf-104">Get a resource instance that contains a multi-value extended property by using `$expand`.</span></span>
 
-<span data-ttu-id="36d7d-105">Usar o parâmetro de consulta `$expand` permite que você obtenha a instância especificada expandida com a propriedade estendida indicada.</span><span class="sxs-lookup"><span data-stu-id="36d7d-105">Using the query parameter `$expand` allows you to get the specified instance expanded with the indicated extended property.</span></span> <span data-ttu-id="36d7d-106">Atualmente, esta é a única maneira de obter o objeto [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) que representa uma propriedade estendida.</span><span class="sxs-lookup"><span data-stu-id="36d7d-106">This is currently the only way to get the [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) object that represents an extended property.</span></span>
+<span data-ttu-id="8f9cf-105">Usar o parâmetro de consulta `$expand` permite que você obtenha a instância especificada expandida com a propriedade estendida indicada.</span><span class="sxs-lookup"><span data-stu-id="8f9cf-105">Using the query parameter `$expand` allows you to get the specified instance expanded with the indicated extended property.</span></span> <span data-ttu-id="8f9cf-106">Atualmente, esta é a única maneira de obter o objeto [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) que representa uma propriedade estendida.</span><span class="sxs-lookup"><span data-stu-id="8f9cf-106">This is currently the only way to get the [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) object that represents an extended property.</span></span>
 
-<span data-ttu-id="36d7d-107">Há suporte para as seguintes fontes de dados:</span><span class="sxs-lookup"><span data-stu-id="36d7d-107">The following user resources are supported:</span></span>
+<span data-ttu-id="8f9cf-107">Há suporte para as seguintes fontes de dados:</span><span class="sxs-lookup"><span data-stu-id="8f9cf-107">The following user resources are supported:</span></span>
 
-- [<span data-ttu-id="36d7d-108">calendar</span><span class="sxs-lookup"><span data-stu-id="36d7d-108">calendar</span></span>](../resources/calendar.md)
-- [<span data-ttu-id="36d7d-109">contact</span><span class="sxs-lookup"><span data-stu-id="36d7d-109">contact</span></span>](../resources/contact.md)
-- [<span data-ttu-id="36d7d-110">contactFolder</span><span class="sxs-lookup"><span data-stu-id="36d7d-110">contactFolder</span></span>](../resources/contactfolder.md) 
-- [<span data-ttu-id="36d7d-111">event</span><span class="sxs-lookup"><span data-stu-id="36d7d-111">event</span></span>](../resources/event.md)
-- [<span data-ttu-id="36d7d-112">mailFolder</span><span class="sxs-lookup"><span data-stu-id="36d7d-112">mailFolder</span></span>](../resources/mailfolder.md)
-- [<span data-ttu-id="36d7d-113">message</span><span class="sxs-lookup"><span data-stu-id="36d7d-113">message</span></span>](../resources/message.md) 
-- [<span data-ttu-id="36d7d-114">Tarefa do Outlook</span><span class="sxs-lookup"><span data-stu-id="36d7d-114">Outlook task</span></span>](../resources/outlooktask.md)
-- [<span data-ttu-id="36d7d-115">Pasta de tarefas do Outlook</span><span class="sxs-lookup"><span data-stu-id="36d7d-115">Outlook task folder</span></span>](../resources/outlooktaskfolder.md)
+- [<span data-ttu-id="8f9cf-108">calendar</span><span class="sxs-lookup"><span data-stu-id="8f9cf-108">calendar</span></span>](../resources/calendar.md)
+- [<span data-ttu-id="8f9cf-109">contact</span><span class="sxs-lookup"><span data-stu-id="8f9cf-109">contact</span></span>](../resources/contact.md)
+- [<span data-ttu-id="8f9cf-110">contactFolder</span><span class="sxs-lookup"><span data-stu-id="8f9cf-110">contactFolder</span></span>](../resources/contactfolder.md) 
+- [<span data-ttu-id="8f9cf-111">evento</span><span class="sxs-lookup"><span data-stu-id="8f9cf-111">event</span></span>](../resources/event.md)
+- [<span data-ttu-id="8f9cf-112">mailFolder</span><span class="sxs-lookup"><span data-stu-id="8f9cf-112">mailFolder</span></span>](../resources/mailfolder.md)
+- [<span data-ttu-id="8f9cf-113">mensagem</span><span class="sxs-lookup"><span data-stu-id="8f9cf-113">message</span></span>](../resources/message.md) 
+- [<span data-ttu-id="8f9cf-114">Tarefa do Outlook</span><span class="sxs-lookup"><span data-stu-id="8f9cf-114">Outlook task</span></span>](../resources/outlooktask.md)
+- [<span data-ttu-id="8f9cf-115">Pasta de tarefas do Outlook</span><span class="sxs-lookup"><span data-stu-id="8f9cf-115">Outlook task folder</span></span>](../resources/outlooktaskfolder.md)
 
-<span data-ttu-id="36d7d-116">Também há suporte para os seguintes recursos de grupo:</span><span class="sxs-lookup"><span data-stu-id="36d7d-116">As well as the following group resources:</span></span>
+<span data-ttu-id="8f9cf-116">Também há suporte para os seguintes recursos de grupo:</span><span class="sxs-lookup"><span data-stu-id="8f9cf-116">As well as the following group resources:</span></span>
 
-- <span data-ttu-id="36d7d-117">grupo [calendar](../resources/calendar.md)</span><span class="sxs-lookup"><span data-stu-id="36d7d-117">group [calendar](../resources/calendar.md)</span></span>
-- <span data-ttu-id="36d7d-118">grupo [event](../resources/event.md)</span><span class="sxs-lookup"><span data-stu-id="36d7d-118">group [event](../resources/event.md)</span></span>
-- <span data-ttu-id="36d7d-119">grupo [post](../resources/post.md)</span><span class="sxs-lookup"><span data-stu-id="36d7d-119">group [post](../resources/post.md)</span></span> 
+- <span data-ttu-id="8f9cf-117">grupo [calendar](../resources/calendar.md)</span><span class="sxs-lookup"><span data-stu-id="8f9cf-117">group [calendar](../resources/calendar.md)</span></span>
+- <span data-ttu-id="8f9cf-118">grupo [event](../resources/event.md)</span><span class="sxs-lookup"><span data-stu-id="8f9cf-118">group [event](../resources/event.md)</span></span>
+- <span data-ttu-id="8f9cf-119">grupo [post](../resources/post.md)</span><span class="sxs-lookup"><span data-stu-id="8f9cf-119">group [post](../resources/post.md)</span></span> 
 
-<span data-ttu-id="36d7d-120">Confira [Visão geral de propriedades estendidas](../resources/extended-properties-overview.md) para saber mais sobre quando usar extensões abertas ou propriedades estendidas e sobre como especificar propriedades estendidas.</span><span class="sxs-lookup"><span data-stu-id="36d7d-120">See [Extended properties overview](../resources/extended-properties-overview.md) for more information about when to use open extensions or extended properties, and how to specify extended properties.</span></span>
+<span data-ttu-id="8f9cf-120">Confira [Visão geral de propriedades estendidas](../resources/extended-properties-overview.md) para saber mais sobre quando usar extensões abertas ou propriedades estendidas e sobre como especificar propriedades estendidas.</span><span class="sxs-lookup"><span data-stu-id="8f9cf-120">See [Extended properties overview](../resources/extended-properties-overview.md) for more information about when to use open extensions or extended properties, and how to specify extended properties.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="36d7d-121">Permissões</span><span class="sxs-lookup"><span data-stu-id="36d7d-121">Permissions</span></span>
-<span data-ttu-id="36d7d-122">Dependendo do recurso estiver recebendo a propriedade estendida da e a permissão digite (delegada ou aplicativos) você solicitação, a permissão especificada na tabela a seguir é o mínimo necessário para chamar essa API.</span><span class="sxs-lookup"><span data-stu-id="36d7d-122">Depending on the resource you're getting the extended property from and the permission type (delegated or application) you request, the permission specified in the following table is the minimum required to call this API.</span></span> <span data-ttu-id="36d7d-123">Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="36d7d-123">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="8f9cf-121">Permissões</span><span class="sxs-lookup"><span data-stu-id="8f9cf-121">Permissions</span></span>
+<span data-ttu-id="8f9cf-122">Dependendo do recurso estiver recebendo a propriedade estendida da e a permissão digite (delegada ou aplicativos) você solicitação, a permissão especificada na tabela a seguir é o mínimo necessário para chamar essa API.</span><span class="sxs-lookup"><span data-stu-id="8f9cf-122">Depending on the resource you're getting the extended property from and the permission type (delegated or application) you request, the permission specified in the following table is the minimum required to call this API.</span></span> <span data-ttu-id="8f9cf-123">Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8f9cf-123">To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="36d7d-124">Recurso com suporte</span><span class="sxs-lookup"><span data-stu-id="36d7d-124">Supported resource</span></span> | <span data-ttu-id="36d7d-125">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="36d7d-125">Delegated (work or school account)</span></span> | <span data-ttu-id="36d7d-126">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="36d7d-126">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="36d7d-127">Application</span><span class="sxs-lookup"><span data-stu-id="36d7d-127">Application</span></span> |
+| <span data-ttu-id="8f9cf-124">Recurso com suporte</span><span class="sxs-lookup"><span data-stu-id="8f9cf-124">Supported resource</span></span> | <span data-ttu-id="8f9cf-125">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="8f9cf-125">Delegated (work or school account)</span></span> | <span data-ttu-id="8f9cf-126">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="8f9cf-126">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8f9cf-127">Application</span><span class="sxs-lookup"><span data-stu-id="8f9cf-127">Application</span></span> |
 |:-----|:-----|:-----|:-----|
-| [<span data-ttu-id="36d7d-128">calendar</span><span class="sxs-lookup"><span data-stu-id="36d7d-128">calendar</span></span>](../resources/calendar.md) | <span data-ttu-id="36d7d-129">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="36d7d-129">Calendars.Read</span></span> | <span data-ttu-id="36d7d-130">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="36d7d-130">Calendars.Read</span></span> | <span data-ttu-id="36d7d-131">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="36d7d-131">Calendars.Read</span></span> |
-| [<span data-ttu-id="36d7d-132">contato</span><span class="sxs-lookup"><span data-stu-id="36d7d-132">contact</span></span>](../resources/contact.md) | <span data-ttu-id="36d7d-133">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="36d7d-133">Contacts.Read</span></span> | <span data-ttu-id="36d7d-134">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="36d7d-134">Contacts.Read</span></span> | <span data-ttu-id="36d7d-135">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="36d7d-135">Contacts.Read</span></span> |
-| [<span data-ttu-id="36d7d-136">contactFolder</span><span class="sxs-lookup"><span data-stu-id="36d7d-136">contactFolder</span></span>](../resources/contactfolder.md) | <span data-ttu-id="36d7d-137">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="36d7d-137">Contacts.Read</span></span> | <span data-ttu-id="36d7d-138">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="36d7d-138">Contacts.Read</span></span> | <span data-ttu-id="36d7d-139">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="36d7d-139">Contacts.Read</span></span> |
-| [<span data-ttu-id="36d7d-140">event</span><span class="sxs-lookup"><span data-stu-id="36d7d-140">event</span></span>](../resources/event.md) | <span data-ttu-id="36d7d-141">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="36d7d-141">Calendars.Read</span></span> | <span data-ttu-id="36d7d-142">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="36d7d-142">Calendars.Read</span></span> |  <span data-ttu-id="36d7d-143">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="36d7d-143">Calendars.Read</span></span>|
-| <span data-ttu-id="36d7d-144">grupo [calendar](../resources/calendar.md)</span><span class="sxs-lookup"><span data-stu-id="36d7d-144">group [calendar](../resources/calendar.md)</span></span> | <span data-ttu-id="36d7d-145">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="36d7d-145">Group.Read.All</span></span> | <span data-ttu-id="36d7d-146">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="36d7d-146">Not supported</span></span> | <span data-ttu-id="36d7d-147">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="36d7d-147">Not supported</span></span> |
-| <span data-ttu-id="36d7d-148">grupo [event](../resources/event.md)</span><span class="sxs-lookup"><span data-stu-id="36d7d-148">group [event](../resources/event.md)</span></span> | <span data-ttu-id="36d7d-149">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="36d7d-149">Group.Read.All</span></span> | <span data-ttu-id="36d7d-150">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="36d7d-150">Not supported</span></span> | <span data-ttu-id="36d7d-151">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="36d7d-151">Not supported</span></span> |
-| <span data-ttu-id="36d7d-152">grupo [post](../resources/post.md)</span><span class="sxs-lookup"><span data-stu-id="36d7d-152">group [post](../resources/post.md)</span></span> | <span data-ttu-id="36d7d-153">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="36d7d-153">Group.Read.All</span></span> | <span data-ttu-id="36d7d-154">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="36d7d-154">Not supported</span></span> | <span data-ttu-id="36d7d-155">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="36d7d-155">Group.Read.All</span></span> |
-| [<span data-ttu-id="36d7d-156">mailFolder</span><span class="sxs-lookup"><span data-stu-id="36d7d-156">mailFolder</span></span>](../resources/mailfolder.md) | <span data-ttu-id="36d7d-157">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="36d7d-157">Mail.Read</span></span> | <span data-ttu-id="36d7d-158">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="36d7d-158">Mail.Read</span></span> | <span data-ttu-id="36d7d-159">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="36d7d-159">Mail.Read</span></span> |
-| [<span data-ttu-id="36d7d-160">message</span><span class="sxs-lookup"><span data-stu-id="36d7d-160">message</span></span>](../resources/message.md) | <span data-ttu-id="36d7d-161">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="36d7d-161">Mail.Read</span></span> | <span data-ttu-id="36d7d-162">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="36d7d-162">Mail.Read</span></span> | <span data-ttu-id="36d7d-163">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="36d7d-163">Mail.Read</span></span> |
-| [<span data-ttu-id="36d7d-164">Tarefa do Outlook</span><span class="sxs-lookup"><span data-stu-id="36d7d-164">Outlook task</span></span>](../resources/outlooktask.md) | <span data-ttu-id="36d7d-165">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="36d7d-165">Tasks.Read</span></span> | <span data-ttu-id="36d7d-166">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="36d7d-166">Tasks.Read</span></span> | <span data-ttu-id="36d7d-167">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="36d7d-167">Not supported</span></span> |
-| [<span data-ttu-id="36d7d-168">Pasta de tarefas do Outlook</span><span class="sxs-lookup"><span data-stu-id="36d7d-168">Outlook task folder</span></span>](../resources/outlooktaskfolder.md) | <span data-ttu-id="36d7d-169">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="36d7d-169">Tasks.Read</span></span> | <span data-ttu-id="36d7d-170">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="36d7d-170">Tasks.Read</span></span> | <span data-ttu-id="36d7d-171">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="36d7d-171">Not supported</span></span> |
+| [<span data-ttu-id="8f9cf-128">calendar</span><span class="sxs-lookup"><span data-stu-id="8f9cf-128">calendar</span></span>](../resources/calendar.md) | <span data-ttu-id="8f9cf-129">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="8f9cf-129">Calendars.Read</span></span> | <span data-ttu-id="8f9cf-130">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="8f9cf-130">Calendars.Read</span></span> | <span data-ttu-id="8f9cf-131">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="8f9cf-131">Calendars.Read</span></span> |
+| [<span data-ttu-id="8f9cf-132">contato</span><span class="sxs-lookup"><span data-stu-id="8f9cf-132">contact</span></span>](../resources/contact.md) | <span data-ttu-id="8f9cf-133">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="8f9cf-133">Contacts.Read</span></span> | <span data-ttu-id="8f9cf-134">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="8f9cf-134">Contacts.Read</span></span> | <span data-ttu-id="8f9cf-135">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="8f9cf-135">Contacts.Read</span></span> |
+| [<span data-ttu-id="8f9cf-136">contactFolder</span><span class="sxs-lookup"><span data-stu-id="8f9cf-136">contactFolder</span></span>](../resources/contactfolder.md) | <span data-ttu-id="8f9cf-137">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="8f9cf-137">Contacts.Read</span></span> | <span data-ttu-id="8f9cf-138">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="8f9cf-138">Contacts.Read</span></span> | <span data-ttu-id="8f9cf-139">Contacts.Read</span><span class="sxs-lookup"><span data-stu-id="8f9cf-139">Contacts.Read</span></span> |
+| [<span data-ttu-id="8f9cf-140">evento</span><span class="sxs-lookup"><span data-stu-id="8f9cf-140">event</span></span>](../resources/event.md) | <span data-ttu-id="8f9cf-141">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="8f9cf-141">Calendars.Read</span></span> | <span data-ttu-id="8f9cf-142">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="8f9cf-142">Calendars.Read</span></span> |  <span data-ttu-id="8f9cf-143">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="8f9cf-143">Calendars.Read</span></span>|
+| <span data-ttu-id="8f9cf-144">grupo [calendar](../resources/calendar.md)</span><span class="sxs-lookup"><span data-stu-id="8f9cf-144">group [calendar](../resources/calendar.md)</span></span> | <span data-ttu-id="8f9cf-145">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="8f9cf-145">Group.Read.All</span></span> | <span data-ttu-id="8f9cf-146">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="8f9cf-146">Not supported</span></span> | <span data-ttu-id="8f9cf-147">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="8f9cf-147">Not supported</span></span> |
+| <span data-ttu-id="8f9cf-148">grupo [event](../resources/event.md)</span><span class="sxs-lookup"><span data-stu-id="8f9cf-148">group [event](../resources/event.md)</span></span> | <span data-ttu-id="8f9cf-149">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="8f9cf-149">Group.Read.All</span></span> | <span data-ttu-id="8f9cf-150">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="8f9cf-150">Not supported</span></span> | <span data-ttu-id="8f9cf-151">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="8f9cf-151">Not supported</span></span> |
+| <span data-ttu-id="8f9cf-152">grupo [post](../resources/post.md)</span><span class="sxs-lookup"><span data-stu-id="8f9cf-152">group [post](../resources/post.md)</span></span> | <span data-ttu-id="8f9cf-153">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="8f9cf-153">Group.Read.All</span></span> | <span data-ttu-id="8f9cf-154">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="8f9cf-154">Not supported</span></span> | <span data-ttu-id="8f9cf-155">Group.Read.All</span><span class="sxs-lookup"><span data-stu-id="8f9cf-155">Group.Read.All</span></span> |
+| [<span data-ttu-id="8f9cf-156">mailFolder</span><span class="sxs-lookup"><span data-stu-id="8f9cf-156">mailFolder</span></span>](../resources/mailfolder.md) | <span data-ttu-id="8f9cf-157">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="8f9cf-157">Mail.Read</span></span> | <span data-ttu-id="8f9cf-158">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="8f9cf-158">Mail.Read</span></span> | <span data-ttu-id="8f9cf-159">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="8f9cf-159">Mail.Read</span></span> |
+| [<span data-ttu-id="8f9cf-160">mensagem</span><span class="sxs-lookup"><span data-stu-id="8f9cf-160">message</span></span>](../resources/message.md) | <span data-ttu-id="8f9cf-161">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="8f9cf-161">Mail.Read</span></span> | <span data-ttu-id="8f9cf-162">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="8f9cf-162">Mail.Read</span></span> | <span data-ttu-id="8f9cf-163">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="8f9cf-163">Mail.Read</span></span> |
+| [<span data-ttu-id="8f9cf-164">Tarefa do Outlook</span><span class="sxs-lookup"><span data-stu-id="8f9cf-164">Outlook task</span></span>](../resources/outlooktask.md) | <span data-ttu-id="8f9cf-165">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="8f9cf-165">Tasks.Read</span></span> | <span data-ttu-id="8f9cf-166">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="8f9cf-166">Tasks.Read</span></span> | <span data-ttu-id="8f9cf-167">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="8f9cf-167">Not supported</span></span> |
+| [<span data-ttu-id="8f9cf-168">Pasta de tarefas do Outlook</span><span class="sxs-lookup"><span data-stu-id="8f9cf-168">Outlook task folder</span></span>](../resources/outlooktaskfolder.md) | <span data-ttu-id="8f9cf-169">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="8f9cf-169">Tasks.Read</span></span> | <span data-ttu-id="8f9cf-170">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="8f9cf-170">Tasks.Read</span></span> | <span data-ttu-id="8f9cf-171">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="8f9cf-171">Not supported</span></span> |
  
-## <a name="http-request"></a><span data-ttu-id="36d7d-172">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="36d7d-172">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8f9cf-172">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="8f9cf-172">HTTP request</span></span>
 
-<span data-ttu-id="36d7d-p103">Obtenha uma instância de recurso expandida com uma propriedade estendida que corresponde a um filtro na propriedade **id**. Aplique a [codificação de URL](https://www.w3schools.com/tags/ref_urlencode.asp) aos caracteres de espaço na cadeia de filtro.</span><span class="sxs-lookup"><span data-stu-id="36d7d-p103">Get a resource instance expanded with the extended property which matches a filter on the **id** property. Make sure you apply [URL encoding](https://www.w3schools.com/tags/ref_urlencode.asp) to the space characters in the filter string.</span></span>
+<span data-ttu-id="8f9cf-p103">Obtenha uma instância de recurso expandida com uma propriedade estendida que corresponde a um filtro na propriedade **id**. Aplique a [codificação de URL](https://www.w3schools.com/tags/ref_urlencode.asp) aos caracteres de espaço na cadeia de filtro.</span><span class="sxs-lookup"><span data-stu-id="8f9cf-p103">Get a resource instance expanded with the extended property which matches a filter on the **id** property. Make sure you apply [URL encoding](https://www.w3schools.com/tags/ref_urlencode.asp) to the space characters in the filter string.</span></span>
 
-<span data-ttu-id="36d7d-175">Obtenha uma instância de **mensagem** :<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="36d7d-175">Get a **message** instance: <!-- { "blockType": "ignored" } --></span></span>
+<span data-ttu-id="8f9cf-175">Obtenha uma instância de **mensagem** :<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="8f9cf-175">Get a **message** instance: <!-- { "blockType": "ignored" } --></span></span>
 ```http
-GET /me/messages/{id}?$expand=multiValueLegacyExtendedProperty($filter=id eq '{id_value}')
-GET /users/{id|userPrincipalName}/messages/{id}?$expand=multiValueLegacyExtendedProperty($filter=id eq '{id_value}')
-GET /me/mailFolders/{id}/messages/{id}?$expand=multiValueLegacyExtendedProperty($filter=id eq '{id_value}')
+GET /me/messages/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/messages/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+GET /me/mailFolders/{id}/messages/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
-<span data-ttu-id="36d7d-176">Obtenha uma instância de **mailFolder** :<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="36d7d-176">Get a **mailFolder** instance: <!-- { "blockType": "ignored" } --></span></span>
+<span data-ttu-id="8f9cf-176">Obtenha uma instância de **mailFolder** :<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="8f9cf-176">Get a **mailFolder** instance: <!-- { "blockType": "ignored" } --></span></span>
 ```http
-GET /me/mailFolders/{id}?$expand=multiValueLegacyExtendedProperty($filter=id eq '{id_value}')
-GET /users/{id|userPrincipalName}/mailFolders/{id}?$expand=multiValueLegacyExtendedProperty($filter=id eq '{id_value}')
-```
-
-<span data-ttu-id="36d7d-177">Obtenha uma instância do **evento** :<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="36d7d-177">Get an **event** instance: <!-- { "blockType": "ignored" } --></span></span>
-```http
-GET /me/events/{id}?$expand=multiValueLegacyExtendedProperty($filter=id eq '{id_value}')
-GET /users/{id|userPrincipalName}/events/{id}?$expand=multiValueLegacyExtendedProperty($filter=id eq '{id_value}')
-```
-<span data-ttu-id="36d7d-178">Obtenha uma instância de **calendário** :<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="36d7d-178">Get a **calendar** instance: <!-- { "blockType": "ignored" } --></span></span>
-```http
-GET /me/calendars/{id}?$expand=multiValueLegacyExtendedProperty($filter=id eq '{id_value}')
-GET /users/{id|userPrincipalName}/calendars/{id}?$expand=multiValueLegacyExtendedProperty($filter=id eq '{id_value}')
-```
-<span data-ttu-id="36d7d-179">Obtenha uma instância de **contato** :<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="36d7d-179">Get a **contact** instance: <!-- { "blockType": "ignored" } --></span></span>
-```http
-GET /me/contacts/{id}?$expand=multiValueLegacyExtendedProperty($filter=id eq '{id_value}')
-GET /users/{id|userPrincipalName}/contacts/{id}?$expand=multiValueLegacyExtendedProperty($filter=id eq '{id_value}')
-GET /me/contactFolders/{id}/contacts/{id}?$expand=multiValueLegacyExtendedProperty($filter=id eq '{id_value}')
-GET /users/{id|userPrincipalName}/contactFolders/{id}/contacts/{id}?$expand=multiValueLegacyExtendedProperty($filter=id eq '{id_value}')
-```
-<span data-ttu-id="36d7d-180">Obtenha uma instância de **contactFolder** :<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="36d7d-180">Get a **contactFolder** instance: <!-- { "blockType": "ignored" } --></span></span>
-```http
-GET /me/contactfolders/{id}?$expand=multiValueLegacyExtendedProperty($filter=id eq '{id_value}')
-GET /users/{id|userPrincipalName}/contactFolders/{id}?$expand=multiValueLegacyExtendedProperty($filter=id eq '{id_value}')
+GET /me/mailFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/mailFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-<span data-ttu-id="36d7d-181">Obtenha uma instância de **outlookTask** :<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="36d7d-181">Get an **outlookTask** instance: <!-- { "blockType": "ignored" } --></span></span>
+<span data-ttu-id="8f9cf-177">Obtenha uma instância do **evento** :<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="8f9cf-177">Get an **event** instance: <!-- { "blockType": "ignored" } --></span></span>
 ```http
-GET /me/outlook/tasks/{id}?$expand=multiValueLegacyExtendedProperty($filter=id eq '{id_value}')
-GET /users/{id|userPrincipalName}/outlook/tasks/{id}?$expand=multiValueLegacyExtendedProperty($filter=id eq '{id_value}')
-GET /me/outlook/taskFolders/{id}/tasks/{id}?$expand=multiValueLegacyExtendedProperty($filter=id eq '{id_value}')
-GET /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks/{id}?$expand=multiValueLegacyExtendedProperty($filter=id eq '{id_value}')
-GET /me/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}?$expand=multiValueLegacyExtendedProperty($filter=id eq '{id_value}')
-GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}?$expand=multiValueLegacyExtendedProperty($filter=id eq '{id_value}')
+GET /me/events/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/events/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
-<span data-ttu-id="36d7d-182">Obtenha uma instância de **outlookTaskFolder** :<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="36d7d-182">Get an **outlookTaskFolder** instance: <!-- { "blockType": "ignored" } --></span></span>
+<span data-ttu-id="8f9cf-178">Obtenha uma instância de **calendário** :<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="8f9cf-178">Get a **calendar** instance: <!-- { "blockType": "ignored" } --></span></span>
 ```http
-GET /me/outlook/taskFolders/{id}?$expand=multiValueLegacyExtendedProperty($filter=id eq '{id_value}')
-GET /users/{id|userPrincipalName}/outlook/taskFolders/{id}?$expand=multiValueLegacyExtendedProperty($filter=id eq '{id_value}')
-GET /me/outlook/taskGroups/{id}/taskFolders/{id}?$expand=multiValueLegacyExtendedProperty($filter=id eq '{id_value}')
-GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}?$expand=multiValueLegacyExtendedProperty($filter=id eq '{id_value}')
+GET /me/calendars/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/calendars/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
-
-<span data-ttu-id="36d7d-183">Obtenha uma instância de **evento** de grupo:<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="36d7d-183">Get a group **event** instance: <!-- { "blockType": "ignored" } --></span></span>
+<span data-ttu-id="8f9cf-179">Obtenha uma instância de **contato** :<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="8f9cf-179">Get a **contact** instance: <!-- { "blockType": "ignored" } --></span></span>
 ```http
-GET /groups/{id}/events/{id}?$expand=multiValueLegacyExtendedProperty($filter=id eq '{id_value}')
+GET /me/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+GET /me/contactFolders/{id}/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/contactFolders/{id}/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
-
-<span data-ttu-id="36d7d-184">Obtenha uma instância de **postagem** de grupo:<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="36d7d-184">Get a group **post** instance: <!-- { "blockType": "ignored" } --></span></span>
+<span data-ttu-id="8f9cf-180">Obtenha uma instância de **contactFolder** :<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="8f9cf-180">Get a **contactFolder** instance: <!-- { "blockType": "ignored" } --></span></span>
 ```http
-GET /groups/{id}/threads/{id}/posts/{id}?$expand=multiValueLegacyExtendedProperty($filter=id eq '{id_value}')
-GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=multiValueLegacyExtendedProperty($filter=id eq '{id_value}')
+GET /me/contactfolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/contactFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-## <a name="path-parameters"></a><span data-ttu-id="36d7d-185">Parâmetros do caminho</span><span class="sxs-lookup"><span data-stu-id="36d7d-185">Path parameters</span></span>
-|<span data-ttu-id="36d7d-186">**Parâmetro**</span><span class="sxs-lookup"><span data-stu-id="36d7d-186">**Parameter**</span></span>|<span data-ttu-id="36d7d-187">**Tipo**</span><span class="sxs-lookup"><span data-stu-id="36d7d-187">**Type**</span></span>|<span data-ttu-id="36d7d-188">**Descrição**</span><span class="sxs-lookup"><span data-stu-id="36d7d-188">**Description**</span></span>|
+<span data-ttu-id="8f9cf-181">Obtenha uma instância de **outlookTask** :<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="8f9cf-181">Get an **outlookTask** instance: <!-- { "blockType": "ignored" } --></span></span>
+```http
+GET /me/outlook/tasks/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/outlook/tasks/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+GET /me/outlook/taskFolders/{id}/tasks/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+GET /me/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+```
+<span data-ttu-id="8f9cf-182">Obtenha uma instância de **outlookTaskFolder** :<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="8f9cf-182">Get an **outlookTaskFolder** instance: <!-- { "blockType": "ignored" } --></span></span>
+```http
+GET /me/outlook/taskFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/outlook/taskFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+GET /me/outlook/taskGroups/{id}/taskFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+```
+
+<span data-ttu-id="8f9cf-183">Obtenha uma instância de **evento** de grupo:<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="8f9cf-183">Get a group **event** instance: <!-- { "blockType": "ignored" } --></span></span>
+```http
+GET /groups/{id}/events/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+```
+
+<span data-ttu-id="8f9cf-184">Obtenha uma instância de **postagem** de grupo:<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="8f9cf-184">Get a group **post** instance: <!-- { "blockType": "ignored" } --></span></span>
+```http
+GET /groups/{id}/threads/{id}/posts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
+```
+
+## <a name="path-parameters"></a><span data-ttu-id="8f9cf-185">Parâmetros do caminho</span><span class="sxs-lookup"><span data-stu-id="8f9cf-185">Path parameters</span></span>
+|<span data-ttu-id="8f9cf-186">**Parâmetro**</span><span class="sxs-lookup"><span data-stu-id="8f9cf-186">**Parameter**</span></span>|<span data-ttu-id="8f9cf-187">**Tipo**</span><span class="sxs-lookup"><span data-stu-id="8f9cf-187">**Type**</span></span>|<span data-ttu-id="8f9cf-188">**Descrição**</span><span class="sxs-lookup"><span data-stu-id="8f9cf-188">**Description**</span></span>|
 |:-----|:-----|:-----|
-|<span data-ttu-id="36d7d-189">id_value</span><span class="sxs-lookup"><span data-stu-id="36d7d-189">id_value</span></span>|<span data-ttu-id="36d7d-190">String</span><span class="sxs-lookup"><span data-stu-id="36d7d-190">String</span></span>|<span data-ttu-id="36d7d-p104">A ID da propriedade estendida a ser correspondida. Ele deve seguir um dos formatos com suporte. Para saber mais, confira [Visão geral das propriedades estendidas do Outlook](../resources/extended-properties-overview.md). Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="36d7d-p104">The ID of the extended property to match. It must follow one of the supported formats. See [Outlook extended properties overview](../resources/extended-properties-overview.md) for more information. Required.</span></span>|
+|<span data-ttu-id="8f9cf-189">id_value</span><span class="sxs-lookup"><span data-stu-id="8f9cf-189">id_value</span></span>|<span data-ttu-id="8f9cf-190">String</span><span class="sxs-lookup"><span data-stu-id="8f9cf-190">String</span></span>|<span data-ttu-id="8f9cf-p104">A ID da propriedade estendida a ser correspondida. Ele deve seguir um dos formatos com suporte. Para saber mais, confira [Visão geral das propriedades estendidas do Outlook](../resources/extended-properties-overview.md). Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="8f9cf-p104">The ID of the extended property to match. It must follow one of the supported formats. See [Outlook extended properties overview](../resources/extended-properties-overview.md) for more information. Required.</span></span>|
 
-## <a name="request-headers"></a><span data-ttu-id="36d7d-195">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="36d7d-195">Request headers</span></span>
-| <span data-ttu-id="36d7d-196">Nome</span><span class="sxs-lookup"><span data-stu-id="36d7d-196">Name</span></span>      |<span data-ttu-id="36d7d-197">Descrição</span><span class="sxs-lookup"><span data-stu-id="36d7d-197">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="8f9cf-195">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="8f9cf-195">Request headers</span></span>
+| <span data-ttu-id="8f9cf-196">Nome</span><span class="sxs-lookup"><span data-stu-id="8f9cf-196">Name</span></span>      |<span data-ttu-id="8f9cf-197">Descrição</span><span class="sxs-lookup"><span data-stu-id="8f9cf-197">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="36d7d-198">Autorização</span><span class="sxs-lookup"><span data-stu-id="36d7d-198">Authorization</span></span>  | <span data-ttu-id="36d7d-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="36d7d-p105">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="8f9cf-198">Autorização</span><span class="sxs-lookup"><span data-stu-id="8f9cf-198">Authorization</span></span>  | <span data-ttu-id="8f9cf-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="8f9cf-p105">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="36d7d-201">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="36d7d-201">Request body</span></span>
-<span data-ttu-id="36d7d-202">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="36d7d-202">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="8f9cf-201">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="8f9cf-201">Request body</span></span>
+<span data-ttu-id="8f9cf-202">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="8f9cf-202">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="36d7d-203">Resposta</span><span class="sxs-lookup"><span data-stu-id="36d7d-203">Response</span></span>
+## <a name="response"></a><span data-ttu-id="8f9cf-203">Resposta</span><span class="sxs-lookup"><span data-stu-id="8f9cf-203">Response</span></span>
 
-<span data-ttu-id="36d7d-204">Se bem-sucedido, este método retorna um código de resposta `200 OK`.</span><span class="sxs-lookup"><span data-stu-id="36d7d-204">If successful, this method returns a `200 OK` response code.</span></span> 
+<span data-ttu-id="8f9cf-204">Se bem-sucedido, este método retorna um código de resposta `200 OK`.</span><span class="sxs-lookup"><span data-stu-id="8f9cf-204">If successful, this method returns a `200 OK` response code.</span></span> 
 
-<span data-ttu-id="36d7d-205">O corpo da resposta inclui um objeto que representa a instância de recurso solicitada, expandida com o objeto [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) correspondente.</span><span class="sxs-lookup"><span data-stu-id="36d7d-205">The response body includes an object representing the requested resource instance, expanded with the matching [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) object.</span></span>
+<span data-ttu-id="8f9cf-205">O corpo da resposta inclui um objeto que representa a instância de recurso solicitada, expandida com o objeto [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) correspondente.</span><span class="sxs-lookup"><span data-stu-id="8f9cf-205">The response body includes an object representing the requested resource instance, expanded with the matching [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) object.</span></span>
 
-## <a name="example"></a><span data-ttu-id="36d7d-206">Exemplo</span><span class="sxs-lookup"><span data-stu-id="36d7d-206">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="36d7d-207">Solicitação</span><span class="sxs-lookup"><span data-stu-id="36d7d-207">Request</span></span>
-<span data-ttu-id="36d7d-p106">Este exemplo obtém e expande o evento especificado incluindo uma propriedade estendida de vários valores. O filtro retorna a propriedade estendida cuja **id** corresponde à cadeia de caracteres `StringArray {66f5a359-4659-4830-9070-00050ec6ac6e} Name Recreation` (com a URL de codificação removida aqui para facilitar a leitura).</span><span class="sxs-lookup"><span data-stu-id="36d7d-p106">This example gets and expands the specified event by including a multi-value extended property. The filter returns the extended property that has its **id** matching the string `StringArray {66f5a359-4659-4830-9070-00050ec6ac6e} Name Recreation` (with URL encoding removed here for ease of reading).</span></span>
+## <a name="example"></a><span data-ttu-id="8f9cf-206">Exemplo</span><span class="sxs-lookup"><span data-stu-id="8f9cf-206">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="8f9cf-207">Solicitação</span><span class="sxs-lookup"><span data-stu-id="8f9cf-207">Request</span></span>
+<span data-ttu-id="8f9cf-p106">Este exemplo obtém e expande o evento especificado incluindo uma propriedade estendida de vários valores. O filtro retorna a propriedade estendida cuja **id** corresponde à cadeia de caracteres `StringArray {66f5a359-4659-4830-9070-00050ec6ac6e} Name Recreation` (com a URL de codificação removida aqui para facilitar a leitura).</span><span class="sxs-lookup"><span data-stu-id="8f9cf-p106">This example gets and expands the specified event by including a multi-value extended property. The filter returns the extended property that has its **id** matching the string `StringArray {66f5a359-4659-4830-9070-00050ec6ac6e} Name Recreation` (with URL encoding removed here for ease of reading).</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/beta/me/events('AAMkAGE1M2_bs88AACbuFiiAAA=')?$expand=multiValueLegacyExtendedProperty($filter=id%20eq%20'StringArray%20{66f5a359-4659-4830-9070-00050ec6ac6e}%20Name%20Recreation')
+GET https://graph.microsoft.com/beta/me/events('AAMkAGE1M2_bs88AACbuFiiAAA=')?$expand=multiValueExtendedProperties($filter=id%20eq%20'StringArray%20{66f5a359-4659-4830-9070-00050ec6ac6e}%20Name%20Recreation')
 ```
-##### <a name="response"></a><span data-ttu-id="36d7d-210">Resposta</span><span class="sxs-lookup"><span data-stu-id="36d7d-210">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="8f9cf-210">Resposta</span><span class="sxs-lookup"><span data-stu-id="8f9cf-210">Response</span></span>
 
-<span data-ttu-id="36d7d-211">O corpo da resposta inclui todas as propriedades do evento especificado e a propriedade estendida retornada do filtro.</span><span class="sxs-lookup"><span data-stu-id="36d7d-211">The response body includes all the properties of the specified event and extended property returned from the filter.</span></span>
+<span data-ttu-id="8f9cf-211">O corpo da resposta inclui todas as propriedades do evento especificado e a propriedade estendida retornada do filtro.</span><span class="sxs-lookup"><span data-stu-id="8f9cf-211">The response body includes all the properties of the specified event and extended property returned from the filter.</span></span>
 
-<span data-ttu-id="36d7d-p107">Observação: O objeto **event** mostrado aqui é truncado para concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="36d7d-p107">Note: The **event** object shown here is truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="8f9cf-p107">Observação: O objeto **event** mostrado aqui é truncado para concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="8f9cf-p107">Note: The **event** object shown here is truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -176,8 +176,8 @@ Content-type: application/json
             "address": "christine@contoso.com"
         }
     },
-    "multiValueLegacyExtendedProperty@odata.context": "https://graph.microsoft.com/beta/$metadata#Me/events('AAMkAGE1M2_bs88AACbuFiiAAA%3D')/multiValueLegacyExtendedProperty",
-    "multiValueLegacyExtendedProperty": [
+    "multiValueExtendedProperties@odata.context": "https://graph.microsoft.com/beta/$metadata#Me/events('AAMkAGE1M2_bs88AACbuFiiAAA%3D')/multiValueExtendedProperties",
+    "multiValueExtendedProperties": [
         {
             "id": "StringArray {66f5a359-4659-4830-9070-00050ec6ac6e} Name Recreation",
             "value": [
