@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: ccb86dc58bd45329996fd02a439dfd06bf312bcb
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 49fea88ed8933f22f93955a3093d46588ca623b1
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577197"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641306"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -17,6 +17,12 @@ Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as 
 Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em [problemas conhecidos](known-issues.md).
 
 ## <a name="january-2019"></a>Janeiro de 2019
+
+### <a name="azure-ad-apis"></a>APIs do Azure AD
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Adição |v1.0|Introduzido um novo tipo de recurso da entidade [identityProvider](/graph/api/resources/identityprovider?view=graph-rest-v1.0) e as operações [criar](/graph/api/identityprovider-post-identityproviders?view=graph-rest-v1.0), [lista](/graph/api/identityprovider-list?view=graph-rest-v1.0), [obter](/graph/api/identityprovider-get?view=graph-rest-v1.0), [atualizar](/graph/api/identityprovider-update?view=graph-rest-v1.0) e [excluir](/graph/api/identityprovider-delete?view=graph-rest-v1.0).|
 
 ### <a name="reports-apis"></a>APIs de relatórios
 
@@ -28,7 +34,11 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição | v1.0 | Foi adicionada a propriedade **forceChangePasswordNextSignInWithMfa** para o tipo complexo [passwordProfile](/graph/api/resources/passwordprofile?view=graph-rest-v1.0).|
+| Adição | v1.0 | Adicionada a propriedade **forceChangePasswordNextSignInWithMfa** para o tipo complexo [passwordProfile](/graph/api/resources/passwordprofile?view=graph-rest-v1.0).|
+| Adição | v1.0 | Adicionada a propriedade **licenseAssignmentStates** para a entidade de[usuário](../api-reference/v1.0/resources/user.md) para [Licenciamento Baseado em Grupo](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).|
+| Adição | v1.0 | Adicionado o recurso **licenseAssignmentState** para [Licenciamento Baseado em Grupo](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).| 
+| Adição | v1.0 | Adicionadas as propriedades **assignedLicenses**, **licenseProcessingState**, **hasMembersWithLicenseErrors** e **membersWithLicenseErrors** para o relacionamento da entidade[Grupo ](../api-reference/v1.0/resources/group.md) para [Licenciamento Baseado em Grupo](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).|
+| Adição | beta | Adicionar a propriedade **createdDateTime** para o recurso [usuário](/graph/api/resources/user?view=graph-rest-beta).|
 
 ### <a name="microsoft-intune-apis"></a>APIs do Microsoft Intune
 
@@ -53,8 +63,13 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 |Exclusão|beta|Foram removidas as propriedades **localSecurityOptionsEnableAdministratorAccount**, **localSecurityOptionsEnableGuestAccount** e **lanManagerWorkstationEnableInsecureGuestLogons** da entidade [windows10EndpointProtectionConfiguration](/graph/api/resources/intune-deviceconfig-windows10endpointprotectionconfiguration?view=graph-rest-beta)|
 |Adição|beta|Foi adicionada a propriedade **useSecurityKeyForSignin** à entidade [windowsIdentityProtectionConfiguration](/graph/api/resources/intune-deviceconfig-windowsidentityprotectionconfiguration?view=graph-rest-beta)|
 |Adição|beta|Foi adicionada a propriedade de navegação **mobileAppTroubleshootingEvents** à entidade [deviceManagement](/graph/api/resources/intune-androidforwork-devicemanagement?view=graph-rest-beta)|
-|Adição|beta|Foi adicionada a propriedade de navegação **appLogCollectionRequests** à entidade [mobileAppTroubleshootingEvent](/graph/api/resources/intune-devices-mobileapptroubleshootingevent?view=graph-rest-beta)|
+|Adição|beta|Adicionada a propriedade de navegação **appLogCollectionRequests** à entidade [mobileAppTroubleshootingEvent](/graph/api/resources/intune-devices-mobileapptroubleshootingevent?view=graph-rest-beta)|
 
+### <a name="microsoft-teams-apis"></a>APIs do Microsoft Teams
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Adição |beta| Adicionado educationStandard, educationClass, educationProfessionalLearningCommunity, educationStaff e unknownFutureValue para a enumeração [teamSpecialization](/graph/api/resources/teamspecialization?view=graph-rest-beta).|
 
 ## <a name="december-2018"></a>Dezembro de 2018
 
