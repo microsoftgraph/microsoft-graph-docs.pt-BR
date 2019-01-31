@@ -3,11 +3,11 @@ title: Tipo de recurso page
 description: Uma página em um bloco de anotações do OneNote.
 localization_priority: Normal
 ms.openlocfilehash: d8c27cdc144e9b192bd0205f256653ff7f04df5f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519238"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29649361"
 ---
 # <a name="page-resource-type"></a>Tipo de recurso page
 
@@ -70,8 +70,8 @@ Veja a seguir uma representação JSON do recurso.
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Get page](../api/page-get.md) | [Página](page.md) |Leia as propriedades e as relações da página.|
-|[Atualizar o conteúdo da página](../api/page-update.md) | Nenhum |Atualizar o conteúdo HTML da página. |
-|[Excluir página](../api/page-delete.md) | Nenhum |Exclua a página. |
+|[Atualizar o conteúdo da página](../api/page-update.md) | None |Atualizar o conteúdo HTML da página. |
+|[Excluir página](../api/page-delete.md) | None |Exclua a página. |
 |[copyToSection](../api/page-copytosection.md)| None |Copia a página para uma seção específica.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
