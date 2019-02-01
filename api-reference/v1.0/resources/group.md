@@ -4,12 +4,12 @@ description: Representa um grupo do Azure Active Directory (Azure AD), que pode 
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 68f3c5d9f1ee8086ce6f008e621feb8ca4598e7f
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: aa3dd6974a0e75661b91d155a19bd197d3fe742e
+ms.sourcegitcommit: d6209114cbbe8072e3ecf7eba23819ae5ace7db5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641278"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "29690949"
 ---
 # <a name="group-resource-type"></a>tipo de recurso de grupo
 
@@ -42,6 +42,8 @@ Esse recurso permite:
 |[Remover proprietário](../api/group-delete-owners.md) | Nenhum |Remover um proprietário de um grupo do Office 365, grupo de segurança ou grupo de segurança habilitado para email por meio da propriedade de navegação **owners**.|
 |[Adicionar membro](../api/group-post-members.md) |Nenhum| Adicionar um usuário ou grupo a esse grupo postando na propriedade de navegação **members** (com suporte somente para grupos de segurança e grupos de segurança habilitados para email).|
 |[Listar membros](../api/group-list-members.md) |Coleção [directoryObject](directoryobject.md)| Obter os usuários e grupos que são membros diretos desse grupo da propriedade de navegação **members**.|
+|[Listar membros transitivos](../api/group-list-transitivemembers.md) |Coleção [directoryObject](directoryobject.md)| Obtenha os usuários, grupos e dispositivos que são membros, inclusive membros aninhados desse grupo.|
+|[Listar memberOf transitivos](../api/group-list-transitivememberof.md) |Coleção [directoryObject](directoryobject.md)| Enumera os grupos dos quais esse usuário é membro. Essa operação é transitiva e inclui os grupos que são membros aninhados desse grupo. |
 |[Remover membro](../api/group-delete-members.md) | None |Remover um membro de um grupo do Office 365, grupo de segurança ou grupo de segurança habilitado para email por meio da propriedade de navegação **members**. É possível remover usuários ou outros grupos. |
 |[checkMemberGroups](../api/group-checkmembergroups.md)|Coleção de cadeias de caracteres|Verificar esse grupo quanto a uma associação em uma lista de grupos. Essa função é transitiva.|
 |[getMemberGroups](../api/group-getmembergroups.md)|Coleção de cadeias de caracteres|Retornar todos os grupos dos quais o grupo é membro. Essa função é transitiva.|

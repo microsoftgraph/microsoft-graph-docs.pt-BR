@@ -4,12 +4,12 @@ description: Representa uma conta de usuário do Azure AD. Herda de directoryObj
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3eabe2fc411362a8c10337748205aff7a38509bb
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: 64c8cb0c580af0692ddc4aacca984774bc76ab2f
+ms.sourcegitcommit: d6209114cbbe8072e3ecf7eba23819ae5ace7db5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642531"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "29690956"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -49,6 +49,7 @@ Esse recurso permite:
 |[Listar directReports](../api/user-list-directreports.md) |Coleção [directoryObject](directoryobject.md)| Obter os usuários ou contatos subordinados ao usuário da propriedade de navegação directReports.|
 |[Listar gerente](../api/user-list-manager.md) |[directoryObject](directoryobject.md) | Obter o usuário ou contato que é o gerente do usuário da propriedade de navegação manager.|
 |[Listar memberOf](../api/user-list-memberof.md) |Coleção [directoryObject](directoryobject.md)| Obter os grupos e as funções de diretório dos quais o usuário é membro direto da propriedade de navegação memberOf.|
+|[Listar memberOf transitivos](../api/user-list-transitivememberof.md) |Coleção [directoryObject](directoryobject.md)| Enumera os grupos e as funções de diretório dos quais o usuário é membro. Essa operação é transitiva e inclui os grupos dos quais o usuário é membro aninhado. |
 |[Listar ownedDevices](../api/user-list-owneddevices.md) |Coleção [directoryObject](directoryobject.md)| Obter os dispositivos que pertencem ao usuário da propriedade de navegação ownedDevices.|
 |[Listar ownedObjects](../api/user-list-ownedobjects.md) |Coleção [directoryObject](directoryobject.md)| Obter os objetos directory que pertencem ao usuário da propriedade de navegação ownedObjects.|
 |[Listar registeredDevices](../api/user-list-registereddevices.md) |Coleção [directoryObject](directoryobject.md)| Obter os dispositivos que estão registrados para o usuário da propriedade de navegação registeredDevices.|
@@ -84,6 +85,8 @@ Esse recurso permite:
 |createdDateTime | DateTimeOffset |Data de criação do objeto do usuário. |
 |department|String|O nome do departamento no qual o usuário trabalha. Oferece suporte a $filter.|
 |displayName|String|O nome exibido no catálogo de endereços do usuário. É geralmente a combinação do nome, da inicial do meio e do sobrenome do usuário. Essa propriedade é obrigatória quando um usuário é criado e não pode ser apagado durante atualizações. Oferece suporte a $filter e $orderby.|
+|employeeId|String|O identificador de funcionário atribuído ao usuário pela organização. Com suporte para $filter.|
+|faxNumber|String|O número de fax do usuário.|
 |givenName|String|O nome fornecido (nome) do usuário. Oferece suporte a $filter.|
 |hireDate|DateTimeOffset|A data de contratação do usuário. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |id|String|O identificador exclusivo do usuário. Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura.|
@@ -98,6 +101,7 @@ Esse recurso permite:
 |mobilePhone|String|O número de celular principal do usuário.|
 |mySite|String|A URL do site pessoal do usuário.|
 |officeLocation|String|A localização do escritório no local de trabalho do usuário.|
+|onPremisesDistinguishedName|String| Contém o `distinguished name` do Active Directory no local ou `DN`. A propriedade somente é preenchida para os clientes que estejam sincronizando o seu diretório local ao Azure Active Directory pelo Azure AD Connect. Somente leitura. |
 |onPremisesDomainName|String| Contém o `domainFQDN` local, também chamado dnsDomainName sincronizado do diretório local. A propriedade somente é preenchida para os clientes que estejam sincronizando o seu diretório local ao Azure Active Directory pelo Azure AD Connect. Somente leitura. |
 |onPremisesExtensionAttributes|[OnPremisesExtensionAttributes](onpremisesextensionattributes.md)|Contém extensionAttributes 1-15 para o usuário. Observe que os atributos de extensão individuais não são selecionáveis nem filtráveis. Para um usuário `onPremisesSyncEnabled`, esse conjunto de propriedades é masterizado no local e somente leitura. Para um usuário somente na nuvem (onde `onPremisesSyncEnabled` é falso), essas propriedades podem ser definidas durante a criação ou atualização. |
 |onPremisesImmutableId|String|Essa propriedade é usada para associar uma conta de usuário do Active Directory local com seu objeto de usuário do Azure AD. Esta propriedade deverá ser especificada ao criar uma nova conta de usuário no Graph se você estiver usando um domínio federado para a propriedade **userPrincipalName** (UPN) do usuário. **Importante:** Os caracteres **$** e **\_** não podem ser usados ao especificar esta propriedade. Oferece suporte a $filter.                            |
@@ -107,6 +111,7 @@ Esse recurso permite:
 |onPremisesSecurityIdentifier|String|Contém o identificador de segurança (SID) local do usuário que foi sincronizado do local com a nuvem. Somente leitura.|
 |onPremisesSyncEnabled|Booliano| **True** se esse objeto está sincronizado de um diretório local; **false** se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; **null** se esse objeto nunca foi sido sincronizado de um diretório local (padrão). Somente leitura |
 |onPremisesUserPrincipalName|String| Contém o `userPrincipalName` local sincronizado no diretório local. A propriedade somente é preenchida para os clientes que estejam sincronizando o seu diretório local ao Azure Active Directory pelo Azure AD Connect. Somente leitura. |
+|otherMails|String| Uma lista de endereços de email adicional para o usuário; Por exemplo: `["bob@contoso.com", "Robert@fabrikam.com"]`. Oferece suporte a $filter.|
 |passwordPolicies|String|Especifica as políticas de senha do usuário. Esse valor é uma enumeração cujo um dos valores possíveis é "DisableStrongPassword", o que permite especificar senhas mais fracas do que a política padrão. Também é possível especificar "DisablePasswordExpiration". Ambos podem ser especificados juntos; por exemplo: "DisablePasswordExpiration, DisableStrongPassword".|
 |passwordProfile|[PasswordProfile](passwordprofile.md)|Especifica o perfil de senha do usuário. O perfil contém a senha do usuário. Essa propriedade é obrigatória quando um usuário é criado. A senha no perfil deve atender a requisitos mínimos, conforme especificado pela propriedade **passwordPolicies**. Por padrão, é obrigatória uma senha forte.|
 |pastProjects|Coleção de cadeias de caracteres|Uma lista para o usuário enumerar seus projetos anteriores.|
@@ -117,7 +122,8 @@ Esse recurso permite:
 |provisionedPlans|Coleção [ProvisionedPlan](provisionedplan.md)|Os planos que estão provisionados para o usuário. Somente leitura. Não anulável. |
 |proxyAddresses|Coleção de cadeias de caracteres|Por exemplo: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]` O operador **any** é obrigatório para expressões de filtro em propriedades de vários valores. Somente leitura, não anulável. Oferece suporte a $filter.          |
 |responsibilities|Coleção de cadeias de caracteres|Uma lista para o usuário enumerar suas responsabilidades.|
-|schools|Coleção de cadeias de caracteres|Uma lista para o usuário enumerar as escolas que ele frequentou.|
+|schools|Coleção de cadeias de caracteres|Uma lista para o usuário enumerar as escolas que frequentou.|
+|showInAddressList|Booliano|**true** se a lista de endereços global do Outlook deve conter o usuário, caso contrário **false**. Se não estiver configurado, isso será tratado como **true**. Para os usuários convidados por meio do Gerenciador de convites, essa propriedade será definida como **false**.|
 |skills|Coleção de cadeias de caracteres|Uma lista para o usuário enumerar suas qualificações.|
 |state|String|O estado ou município no endereço do usuário. Oferece suporte a $filter.|
 |streetAddress|String|O endereço do local de trabalho do usuário.|
@@ -375,6 +381,8 @@ Veja a seguir uma representação JSON do recurso
   "country": "string",
   "department": "string",
   "displayName": "string",
+  "employeeId": "string",
+  "faxNumber" : "string",
   "givenName": "string",
   "hireDate": "String (timestamp)",
   "id": "string (identifier)",
@@ -389,6 +397,7 @@ Veja a seguir uma representação JSON do recurso
   "mobilePhone": "string",
   "mySite": "string",
   "officeLocation": "string",
+  "onPremisesDistinguishedName": "string",
   "onPremisesDomainName": "string",
   "onPremisesExtensionAttributes": {"@odata.type": "microsoft.graph.onPremisesExtensionAttributes"},
   "onPremisesImmutableId": "string",
@@ -398,6 +407,7 @@ Veja a seguir uma representação JSON do recurso
   "onPremisesSecurityIdentifier": "string",
   "onPremisesSyncEnabled": true,
   "onPremisesUserPrincipalName": "string",
+  "otherMails": "string",
   "passwordPolicies": "string",
   "passwordProfile": {"@odata.type": "microsoft.graph.passwordProfile"},
   "pastProjects": ["string"],
@@ -409,6 +419,7 @@ Veja a seguir uma representação JSON do recurso
   "proxyAddresses": ["string"],
   "responsibilities": ["string"],
   "schools": ["string"],
+  "showInAddressList": true,
   "skills": ["string"],
   "state": "string",
   "streetAddress": "string",
