@@ -1,14 +1,27 @@
 ---
-title: valores de timeZoneStandard
-description: " Valor"
+title: Valores de enumeração
+description: Valores de enumeração do Microsoft Graph.
 localization_priority: Normal
-ms.openlocfilehash: 6f9a08a7f20ff9b4f5463c6d7e4877568c49eee1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 8022af214f9de374fcb7bc384a5557eb5625ede9
+ms.sourcegitcommit: d6209114cbbe8072e3ecf7eba23819ae5ace7db5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27825729"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "29690942"
 ---
+### <a name="contactrelationship-values"></a>valores de contactRelationship
+
+|Membro|Valor|Descrição|
+|:---|:---|:---|
+|pai|0|Pai do usuário.|
+|relativa|1| Do relativo de usuário.|
+|auxiliar|2| Auxiliar do usuário.|
+|médico|3| Médico do usuário.|
+|responsável|4| Responsável do usuário.|
+|filho|5| Filho do usuário.|
+|outros|6| Um relacionamento não especificado para o usuário.|
+|unknownFutureValue|7| Valor de marcador para compatibilidade futura.|
+
 ### <a name="timezonestandard-values"></a>valores de timeZoneStandard
 
 | Valor
@@ -42,7 +55,7 @@ ms.locfileid: "27825729"
 
 | Valor
 |:-------------------------
-| nenhum
+| none
 | contactsOnly
 | todos os
 
@@ -126,7 +139,7 @@ ms.locfileid: "27825729"
 |:---------------------
 | student
 | teacher
-| nenhum
+| none
 | unknownFutureValue
 
 
@@ -134,7 +147,7 @@ ms.locfileid: "27825729"
 
 | Valor
 |:-----------------
-| nenhum
+| none
 | meetingRequest
 | meetingCancelled
 | meetingAccepted
@@ -166,7 +179,7 @@ ms.locfileid: "27825729"
 | deviceDefault
 | Faixa
 | modal
-| nenhum
+| none
 
 ### <a name="deviceenrollmentfailurereason-values"></a>valores de deviceEnrollmentFailureReason
 
@@ -259,7 +272,7 @@ ms.locfileid: "27825729"
 
 | Valor
 |:-------------------------
-| Substituir
+| Replace
 | Acréscimo
 | Delete
 | Insert
@@ -293,7 +306,7 @@ ms.locfileid: "27825729"
 
 | Valor
 |:-------------------------
-| automatic
+| Automático
 | noPreview
 | lista de verificação
 | description
@@ -368,7 +381,7 @@ ms.locfileid: "27825729"
 
 | Valor
 |:-------------------------
-| nenhum
+| none
 | organizer
 | tentativelyAccepted
 | aceito
@@ -401,7 +414,7 @@ ms.locfileid: "27825729"
 
 | Membro   |Valor    
 |:---------|:--------
-| nenhum     | -1      
+| none     | -1      
 | preset0  | 0       
 | preset1  | 1       
 | preset2  | 2       
@@ -428,13 +441,9 @@ ms.locfileid: "27825729"
 | preset23 | 23      
 | preset24 | 24      
 
-# <a name="security-api-enums"></a>API de segurança enumerações
-
-# <a name="alertfeedback-enum-type"></a>tipo de enum alertFeedback
+### <a name="alertfeedback-values"></a>valores de alertFeedback
 
 Valores possíveis comentários no alerta fornecidos por um analista.
-
-## <a name="members"></a>Membros
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
@@ -443,11 +452,9 @@ Valores possíveis comentários no alerta fornecidos por um analista.
 |falsePositive|2| Alerta é falsos positivos.|
 |benignPositive|3| Alerta é benigno positivos.|
 
-# <a name="filehashtype-enum-type"></a>tipo de enum fileHashType
+### <a name="filehashtype-values"></a>valores de fileHashType
 
 Enum para tipos de arquivo de hash.
-
-## <a name="members"></a>Membros
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
@@ -461,11 +468,9 @@ Enum para tipos de arquivo de hash.
 |peSha1|7| Tipo de hash PESHA1.|
 |peSha256|8| Tipo de hash PESHA256.|
 
-# <a name="connectiondirection-enum-type"></a>tipo de enum connectionDirection
+### <a name="connectiondirection-values"></a>valores de connectionDirection
 
 Enum para a direção da conexão de rede (entrada/saída).
-
-## <a name="members"></a>Membros
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
@@ -473,11 +478,9 @@ Enum para a direção da conexão de rede (entrada/saída).
 |entrada|1|Conexão de entrada.|
 |saída|2| Conexão de saída.|
 
-# <a name="connectionstatus-enum-type"></a>tipo de enum connectionStatus
+### <a name="connectionstatus-values"></a>valores de connectionStatus
 
 Enum para o status das conexões.
-
-## <a name="members"></a>Membros
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
@@ -487,11 +490,9 @@ Enum para o status das conexões.
 |bloqueado|3| Conexão bloqueada.|
 |Falha|4| Falha de Conexão.|
 
-# <a name="processintegritylevel-enum-type"></a>tipo de enum processIntegrityLevel
+### <a name="processintegritylevel-values"></a>valores de processIntegrityLevel
 
 Valores de nível de integridade possíveis do processo.
-
-## <a name="members"></a>Membros
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
@@ -500,13 +501,11 @@ Valores de nível de integridade possíveis do processo.
 |low|20| Nível de integridade é baixo.|
 |medium|30| Nível de integridade é médio.|
 |high|40| Nível de integridade é alto.|
-|system|50| Nível de integridade é o sistema.|
+|sistema|50| Nível de integridade é o sistema.|
 
-# <a name="registryhive-enum-type"></a>tipo de enum registryHive
+### <a name="registryhive-values"></a>valores de registryHive
 
 Enum para registro seções conforme definido pela [https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives).
-
-## <a name="members"></a>Membros
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
@@ -518,11 +517,9 @@ Enum para registro seções conforme definido pela [https://docs.microsoft.com/e
 |localMachineSystem|5| HKEY_LOCAL_MACHINE\SYSTEM hive.|
 |usersDefault|6| HKEY_USERS\\. Hive padrão.|
 
-# <a name="registryoperation-enum-type"></a>tipo de enum registryOperation
+### <a name="registryoperation-values"></a>valores de registryOperation
 
 Operação que foi alterado o nome da chave do registro e/ou valor.
-
-## <a name="members"></a>Membros
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
@@ -531,11 +528,9 @@ Operação que foi alterado o nome da chave do registro e/ou valor.
 |modificar|2|Modifica o registro.|
 |delete|3|Exclua o registro.|
 
-# <a name="registryvaluetype-enum-type"></a>tipo de enum registryValueType
+### <a name="registryvaluetype-values"></a>valores de registryValueType
 
 Tipos de Enum para o valor do registro, conforme definido pela [https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types).
-
-## <a name="members"></a>Membros
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
@@ -547,16 +542,14 @@ Tipos de Enum para o valor do registro, conforme definido pela [https://docs.mic
 |expandSz|5| Tipo de valor do Registro REG_EXPAND_SZ.|
 |vínculo|6| Tipo de valor do registro REG_LINK.|
 |multiSz|7| Tipo de valor do registro REG_MULTI_SZ.|
-|nenhum|8| Tipo de valor do registro REG_NONE.|
+|none|8| Tipo de valor do registro REG_NONE.|
 |QWORD|9| Tipo de valor do registro REG_QWORD.|
 |qwordlittleEndian|10| Tipo de valor do registro REG_QWORD_LITTLE_ENDIAN.|
 |SZ|11| Tipo de valor do Registro REG_SZ.|
 
-# <a name="alertseverity-enum-type"></a>tipo de enum alertSeverity
+### <a name="alertseverity-values"></a>valores de alertSeverity
 
 Enum para gravidade de alertas.
-
-## <a name="members"></a>Membros
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
@@ -566,11 +559,9 @@ Enum para gravidade de alertas.
 |medium|3| Gravidade é medium.|
 |high|4| Gravidade é alta.|
 
-# <a name="alertstatus-enum-type"></a>tipo de enum alertStatus
+### <a name="alertstatus-values"></a>valores de alertStatus
 
 Valores possíveis de um ciclo de vida de alerta de status (estágio).
-
-## <a name="members"></a>Membros
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
@@ -579,11 +570,8 @@ Valores possíveis de um ciclo de vida de alerta de status (estágio).
 |inProgress|20|Alerta está em andamento.|
 |resolvido|30|Alerta é resolvida.|
 
-# <a name="emailrole-enum-type"></a>tipo de enum emailRole
-
+### <a name="emailrole-values"></a>valores de emailRole
 Valores possíveis para funções de email.
-
-## <a name="members"></a>Membros
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
@@ -591,11 +579,9 @@ Valores possíveis para funções de email.
 |sender|1|Remetente do email.|
 |destinatário|2|Destinatário do email.|
 
-# <a name="logontype-enum-type"></a>tipo de enum de um tipo de logon
+### <a name="logontype-values"></a>valores de um tipo de logon
 
 Valores possíveis para o método de logon do usuário.
-
-## <a name="members"></a>Membros
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
@@ -606,11 +592,9 @@ Valores possíveis para o método de logon do usuário.
 |batch|3| Logon é em lotes.|
 |service|4| Logon é um serviço.|
 
-# <a name="useraccountsecuritytype-enum-type"></a>tipo de enum userAccountSecurityType
+### <a name="useraccountsecuritytype-values"></a>valores de userAccountSecurityType
 
 Valores possíveis para tipos de conta de usuário (membros do grupo), por definição do Windows.
-
-## <a name="members"></a>Membros
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|

@@ -4,12 +4,12 @@ description: Um usuário no sistema. Essa é uma variante específica de educaç
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 6c0dce86c06036424e7be64f1864d900fef368fd
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4a1caaa7d81540f6a90052b13f04d7d3e5bf77da
+ms.sourcegitcommit: d6209114cbbe8072e3ecf7eba23819ae5ace7db5
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27968166"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "29690914"
 ---
 # <a name="educationuser-resource-type"></a>Tipo de recurso educationUser
 
@@ -41,7 +41,7 @@ Esse objeto fornece um subconjunto direcionado de propriedades do objeto princip
 |externalSource|`educationExternalSource`| De onde esse usuário foi criado. Os valores possíveis são: `sis`, `manual`, `unkownFutureValue`.|
 |givenName|String|O nome fornecido (nome) do usuário. Oferece suporte a $filter.|
 |id|String|O identificador exclusivo do usuário. Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura.|
-|mail|Cadeia de caracteres|O endereço SMTP do usuário, por exemplo, "jeff@contoso.onmicrosoft.com". Somente Leitura. Oferece suporte a $filter.|
+|mail|String|O endereço SMTP do usuário, por exemplo, "jeff@contoso.onmicrosoft.com". Somente Leitura. Oferece suporte a $filter.|
 |mailingAddress|[physicalAddress](physicaladdress.md)| Endereço de email do usuário.|
 |mailNickname|String|O alias de email do usuário. Essa propriedade deve ser especificada quando um usuário é criado. Oferece suporte a $filter.|
 |middleName| Cadeia de caracteres | O nome do meio do usuário.|
@@ -51,6 +51,7 @@ Esse objeto fornece um subconjunto direcionado de propriedades do objeto princip
 |preferredLanguage|String|O idioma preferencial do usuário. Deve seguir o código ISO 639-1; por exemplo, "en-US".|
 |primaryRole|educationUserRole| Função padrão de um usuário. A função do usuário pode ser diferente em uma aula individual. Os valores possíveis são: `student`, `teacher`, `unknownFutureValue`. Oferece suporte a $filter.|
 |provisionedPlans|Coleção [ProvisionedPlan](provisionedplan.md)|Os planos que estão provisionados para o usuário. Somente leitura. Não anulável. |
+|relatedContacts|coleção [relatedContact](relatedcontact.md)|Conjunto de contatos relacionados ao usuário.  Essa propriedade opcional deve ser especificada em uma cláusula $select e só pode ser recuperada para um usuário individual.|
 |residenceAddress|[physicalAddress](physicaladdress.md)| Endereço em que o usuário reside.|
 |student|[educationStudent](educationstudent.md)| Se a função principal for aluno, esse bloco conterá dados específicos do aluno.|
 |surname|String|O sobrenome (nome de família) do usuário. Oferece suporte a $filter.|
@@ -128,7 +129,9 @@ Veja a seguir uma representação JSON do recurso.
   "section": "documentation",
   "suppressions": [
     "Error: microsoft.graph.educationUser/assignments:
-      Referenced type microsoft.graph.educationAssignment is not defined in the doc set! Potential suggestion: UNKNOWN"
+      Referenced type microsoft.graph.educationAssignment is not defined in the doc set! Potential suggestion: UNKNOWN",
+    "Warning: /api-reference/v1.0/resources/educationuser.md/microsoft.graph.educationUser:
+      Property 'relatedContacts' found in markdown table but not in resource definition."
   ],
   "tocPath": ""
 }-->
