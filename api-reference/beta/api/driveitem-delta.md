@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: Sincronizar o conteúdo de uma unidade
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 14cc73d9e90c71815e6c72047fe78bf2b325abdd
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 17dc3a718260a5a40f1b9b8e778247354085f711
+ms.sourcegitcommit: a1f1e59ee568340bfabdb524e01cff7860bcc862
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525315"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29735583"
 ---
 # <a name="track-changes-for-a-drive"></a>Controlar alterações para uma unidade
 
@@ -208,11 +208,22 @@ Content-type: application/json
 * A propriedade `parentReference` em itens não incluirá um valor para **path**. Isso ocorre porque a renomeação de uma pasta não faz com que os descendentes dessa pasta sejam retornados de **delta**. **Ao usar delta, você sempre deve controlar itens por id**.
 * No OneDrive for Business e no SharePoint, `delta` só tem suporte na pasta `root`, e não em outras pastas dentro de uma unidade.
 
-* O delta não retornará as seguintes propriedades de DriveItem:
+* Delta consulta não retornará algumas propriedades DriveItem, dependendo da operação e o tipo de serviço, conforme mostrado nas tabelas a seguir.
 
-* **cTag**
-* **lastModifiedBy**
-* **size**
+    **OneDrive for Business**
+    
+    | Tipo de operação | Propriedades omitidas pela consulta delta |
+    |---------|----------|
+    | Criar/modificar | `ctag`, `lastModifiedBy` |
+    | Delete | `ctag`, `lastModifiedBy`, `name` |
+
+
+    **OneDrive (cliente)**
+    
+    | Tipo de operação | Propriedades omitidas pela consulta delta |
+    |---------|----------|
+    | Criar/modificar | n/d |
+    | Delete | `ctag`, `size` |
 
 ## <a name="error-responses"></a>Respostas de erro
 
