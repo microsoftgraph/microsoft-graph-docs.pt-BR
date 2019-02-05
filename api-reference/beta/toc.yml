@@ -263,7 +263,7 @@ items:
                 href: api/group-addfavorite.md
               - name: Adicionar membro
                 href: api/group-post-members.md
-              - name: Add owner
+              - name: Adicionar proprietário
                 href: api/group-post-owners.md
               - name: Verificar grupos de membros
                 href: api/group-checkmembergroups.md
@@ -663,7 +663,7 @@ items:
                 href: api/call-answer.md
               - name: Reject
                 href: api/call-reject.md
-              - name: Redirecionar
+              - name: Redirect
                 href: api/call-redirect.md
               - name: Transfer
                 href: api/call-transfer.md
@@ -6645,13 +6645,13 @@ items:
                 href: resources/program.md
                 items:
                   - name: Create
-                    href: api/program-list.md
+                    href: api/program-create.md
                   - name: Delete
-                    href: api/program-list.md
+                    href: api/program-delete.md
                   - name: Lista
                     href: api/program-list.md
                   - name: Atualizar
-                    href: api/program-list.md
+                    href: api/program-update.md
                   - name: Controles de lista
                     href: api/program-listcontrols.md
               - name: Controle de programa
@@ -6706,7 +6706,7 @@ items:
                 href: api/approleassignment-update.md
               - name: Excluir appRoleAssignment
                 href: api/approleassignment-delete.md
-          - name: Application
+          - name: Aplicativo
             href: resources/application.md
             items:
               - name: Listar aplicativos
@@ -6985,7 +6985,7 @@ items:
                 href: api/policy-delete.md
               - name: Atribuir política
                 href: api/policy-assign.md
-              - name: List assigned policies
+              - name: Listar políticas atribuídas
                 href: api/policy-list-assigned.md
               - name: Lista aplicada aos aplicativos
                 href: api/policy-list-appliesto.md
@@ -7715,7 +7715,7 @@ items:
                 href: api/alert-list.md
               - name: Obter alerta
                 href: api/alert-get.md
-              - name: Update alert
+              - name: Atualizar alertas
                 href: api/alert-update.md
           - name: As pontuações de seguro
             href: resources/securescores.md
@@ -7959,7 +7959,7 @@ items:
                 href: api/group-delete-members.md
               - name: Listar proprietários
                 href: api/group-list-owners.md
-              - name: Add owner
+              - name: Adicionar proprietário
                 href: api/group-post-owners.md
               - name: Remover proprietário
                 href: api/group-delete-owners.md
