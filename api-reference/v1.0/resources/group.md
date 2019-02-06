@@ -4,12 +4,12 @@ description: Representa um grupo do Azure Active Directory (Azure AD), que pode 
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: aa3dd6974a0e75661b91d155a19bd197d3fe742e
-ms.sourcegitcommit: d6209114cbbe8072e3ecf7eba23819ae5ace7db5
+ms.openlocfilehash: a99d63bd880fd37359ba1d72452093443d41236e
+ms.sourcegitcommit: d91ca408bae7842ea4d1d94b49594fd82a32e0c9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "29690949"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29745570"
 ---
 # <a name="group-resource-type"></a>tipo de recurso de grupo
 
@@ -179,15 +179,29 @@ Veja a seguir uma representação JSON do recurso.
     "conversations",
     "createdOnBehalfOf",
     "drive",
+    "drives",
     "events",
     "extensions",
+    "groupLifecyclePolicies",
     "memberOf",
     "members",
     "onenote",
     "owners",
     "photo",
+    "photos",
+    "planner",
     "rejectedSenders",
-    "threads"
+    "settings",
+    "sites",
+    "threads",
+
+    "allowExternalSenders",
+    "assignedLicenses",
+    "autoSubscribeNewMembers",
+    "hasMembersWithLicenseErrors",
+    "isSubscribedByMail",
+    "licenseProcessingState",
+    "unseenCount"
   ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.group",
