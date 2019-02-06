@@ -4,12 +4,12 @@ description: Uma mensagem em uma pasta da caixa de correio.
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 6aae5af68f055c8d10c48024ff8db083a51451da
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: b842fafe3ac1ef79a1ad211d30ca7acabbe5faa4
+ms.sourcegitcommit: d91ca408bae7842ea4d1d94b49594fd82a32e0c9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641215"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29745535"
 ---
 # <a name="message-resource-type"></a>tipo de recurso de mensagem
 
@@ -35,7 +35,9 @@ Veja a seguir uma representação JSON do recurso
     "extensions",
     "singleValueExtendedProperties",
     "multiValueExtendedProperties",
-    "mentions"
+    "mentions",
+
+    "internetMessageHeaders"
   ],
   "@odata.type": "microsoft.graph.message"
 }-->
@@ -103,7 +105,7 @@ Veja a seguir uma representação JSON do recurso
 |id|String|Identificador exclusivo da mensagem (observe que esse valor pode mudar se uma mensagem é movida ou alterada)|
 |importance|String| A importância da mensagem: `Low`, `Normal`, `High`.|
 |inferenceClassification|String| A classificação da mensagem para o usuário, com base na relevância deduzida ou na importância, ou em uma substituição explícita. Os valores possíveis são: `focused` e `other`.|
-|internetMessageHeaders | Coleção [internetMessageHeader](internetmessageheader.md) | Uma coleção de cabeçalhos de mensagens definidos por [RFC5322](https://www.ietf.org/rfc/rfc5322.txt). O conjunto inclui cabeçalhos de mensagens que indicam o caminho de rede adotado por uma mensagem do remetente para o destinatário. Também pode conter cabeçalhos de mensagens personalizadas que contêm dados do aplicativo para a mensagem. |
+|internetMessageHeaders | Coleção [internetMessageHeader](internetmessageheader.md) | Uma coleção de cabeçalhos de mensagens definidos por [RFC5322](https://www.ietf.org/rfc/rfc5322.txt). O conjunto inclui cabeçalhos de mensagens que indicam o caminho de rede adotado por uma mensagem do remetente para o destinatário. Também pode conter cabeçalhos de mensagens personalizadas que contêm dados do aplicativo para a mensagem. <br><br> Retornado apenas mediante aplicação da opção de consulta `$select`. Somente leitura.|
 |internetMessageId | String | A ID da mensagem no formato especificado por [RFC5322](https://www.ietf.org/rfc/rfc5322.txt). Atualizável apenas se **isDraft** for true.|
 |isDeliveryReceiptRequested|Boolean|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
 |isDraft|Boolean|Indica se a mensagem é um rascunho. Uma mensagem é um rascunho quando ela ainda não foi enviada.|
@@ -190,4 +192,4 @@ Veja a seguir uma representação JSON do recurso
     "Error: /api-reference/beta/resources/message.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }
--->
+

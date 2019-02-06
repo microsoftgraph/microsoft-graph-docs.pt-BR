@@ -4,12 +4,12 @@ description: Representa um grupo do Azure Active Directory (Azure AD), que pode 
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: ef94dc2b6fc6b86e3cae810dd25167b2a6eda8c4
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: e350ebe21b9db1f4e0b9b954a6621a1d26e81d29
+ms.sourcegitcommit: d91ca408bae7842ea4d1d94b49594fd82a32e0c9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641761"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29745556"
 ---
 # <a name="group-resource-type"></a>tipo de recurso de grupo
 
@@ -47,10 +47,10 @@ Esse recurso permite:
 |[Remover membro](../api/group-delete-members.md) | None |Remover um membro de um grupo do Office 365, grupo de segurança ou grupo de segurança habilitado para email por meio da propriedade de navegação **members**. É possível remover usuários ou outros grupos. |
 |[Listar memberOf](../api/group-list-memberof.md) |Coleção [directoryObject](directoryobject.md)| Obter os grupos e as unidades administrativas dos quais esse grupo é membro direto, da propriedade de navegação memberOf.|
 |[Listar membros transitivos](../api/group-list-transitivememberof.md) |Coleção [directoryObject](directoryobject.md)| Lista os grupos e funções de diretório e unidades administrativas dos quais o usuário é membro. Essa operação é transitiva e inclui os grupos que são membros aninhados desse grupo. |
-|[checkMemberGroups](../api/group-checkmembergroups.md)|Coleção de cadeias de caracteres|Verifique se há uma associação em uma lista de grupos. Essa função é transitiva.|
+|[checkMemberGroups](../api/group-checkmembergroups.md)|Coleção de cadeias de caracteres|Verificar associação em uma lista de grupos. Essa função é transitiva.|
 |[getMemberGroups](../api/group-getmembergroups.md)|Coleção de cadeias de caracteres|Retornar todos os grupos dos quais o grupo é membro. Essa função é transitiva.|
-|[getMemberObjects](../api/group-getmemberobjects.md)|String collection|Retorna todos os grupos e unidades administrativas dos quais o grupo é membro. Essa função é transitiva. |
-|[Criar configuração](../api/directorysetting-post-settings.md) | [directorySetting](directorysetting.md) |Crie um objeto de configuração com base em um directorySettingTemplate. A solicitação POST deve fornecer settingValues para todas as configurações definidas no modelo. Somente modelos específicos de grupos podem ser usados para essa operação.|
+|[getMemberObjects](../api/group-getmemberobjects.md)|Coleção de cadeias de caracteres|Retornar todas as unidades administrativas e grupos dos quais o grupo é membro. Essa função é transitiva. |
+|[Criar configuração](../api/directorysetting-post-settings.md) | [directorySetting](directorysetting.md) |Criar um objeto de configuração com base em um directorySettingTemplate. A solicitação POST deve fornecer settingValues para todas as configurações definidas no modelo. Somente modelos específicos de grupos podem ser usados para essa operação.|
 |[Obter configuração](../api/directorysetting-get.md) | [directorySetting](directorysetting.md) |Ler propriedades de um objeto de configuração específico.|
 |[Listar configurações](../api/directorysetting-list.md) | conjunto [directorySetting](directorysetting.md) |Lista propriedades de todos os objetos de configuração.|
 |[Atualizar configuração](../api/directorysetting-update.md) | [directorySetting](directorysetting.md)  |Atualizar um objeto setting. |
@@ -179,22 +179,38 @@ Veja a seguir uma representação JSON do recurso
   "blockType": "resource",
   "optionalProperties": [
     "acceptedSenders",
-    "appRoleAssignments",
     "calendar",
     "calendarView",
     "conversations",
     "createdOnBehalfOf",
     "drive",
+    "drives",
+    "endpoints",
     "events",
     "extensions",
+    "groupLifecyclePolicies",
     "memberOf",
     "members",
+    "membersWithLicenseErrors",
     "onenote",
     "owners",
     "photo",
-    "photos",    
+    "photos",
+    "planner",    
     "rejectedSenders",
-    "threads"
+    "settings",
+    "sites",
+    "threads",
+
+    "allowExternalSenders",
+    "assignedLicenses",
+    "autoSubscribeNewMembers",
+    "hasMembersWithLicenseErrors",
+    "isSubscribedByMail",
+    "licenseProcessingState",
+    "unseenConversationsCount",
+    "unseenCount",
+    "unseenMessagesCount"
   ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.group"

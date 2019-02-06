@@ -4,12 +4,12 @@ description: Uma mensagem em uma mailFolder.
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: ea66839fe756fc6ecd57008c775fd20a9a23633a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 40bb849ba7dd62a3571ab5bf95e70eb6b9a27a85
+ms.sourcegitcommit: d91ca408bae7842ea4d1d94b49594fd82a32e0c9
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27966451"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29745549"
 ---
 # <a name="message-resource-type"></a>tipo de recurso de mensagem
 
@@ -17,9 +17,9 @@ Uma mensagem em uma mailFolder.
 
 Esse recurso permite:
 
-- Adicionando seus próprios dados como cabeçalhos de mensagem da Internet personalizados. Adicionar cabeçalhos personalizados apenas ao criar uma mensagem e nomeie-los começando com "x-". Depois que a mensagem foi enviada, você não pode modificar os cabeçalhos. Para obter os cabeçalhos de uma mensagem, aplicar o `$select` consulta parâmetro em uma operação de [obter a mensagem](../api/message-get.md) .
-- Adicionando seus próprios dados como propriedades personalizadas como [extensões](/graph/extensibility-overview).
-- Assinatura de [notificações de alteração](/graph/webhooks).
+- Adicionar seus próprios dados como cabeçalhos personalizados de mensagens da Internet. Adicionar cabeçalhos personalizados somente ao criar uma mensagem e nomes que começam com"x-". Após a mensagem ter sido enviada, não será possível alterar os cabeçalhos. Para obter os cabeçalhos de uma mensagem, aplique o parâmetro de consulta `$select` em uma operação [get message](../api/message-get.md).
+- Adicionar seus próprios dados como propriedades personalizadas como [extensions](/graph/extensibility-overview).
+- Assinar as [notificações de alteração](/graph/webhooks).
 - Usar a [consulta delta](/graph/delta-query-overview) para controlar adições, exclusões e atualizações incrementais oferecendo uma função [delta](../api/message-delta.md).
 
 ## <a name="methods"></a>Métodos
@@ -30,7 +30,7 @@ Esse recurso permite:
 |[Criar mensagem](../api/user-post-messages.md) | [message](message.md) | [Criar](../api/user-post-messages.md#request-1) um rascunho de uma nova mensagem. |
 |[Obter mensagem](../api/message-get.md) | [message](message.md) |Ler propriedades e relações do objeto mensage.|
 |[Update](../api/message-update.md) | [message](message.md) |Atualizar o objeto message.|
-|[Delete](../api/message-delete.md) | Nenhum |Excluir o objeto message. |
+|[Delete](../api/message-delete.md) | None |Excluir o objeto message. |
 |[copy](../api/message-copy.md)|[Message](message.md)|Copiar uma mensagem para uma pasta.|
 |[createForward](../api/message-createforward.md)|[Message](message.md)|Criar um rascunho da mensagem de encaminhamento. Em seguida, você pode [atualizar](../api/message-update.md) ou [enviar](../api/message-send.md) esse rascunho.|
 |[createReply](../api/message-createreply.md)|[Message](message.md)|Criar um rascunho da mensagem de resposta. Em seguida, você pode [atualizar](../api/message-update.md) ou [enviar](../api/message-send.md) esse rascunho.|
@@ -42,7 +42,7 @@ Esse recurso permite:
 |[replyAll](../api/message-replyall.md)|Nenhum|Responder a todos os destinatários de uma mensagem. A mensagem é então salva na pasta Itens Enviados.|
 |[send](../api/message-send.md)|Nenhum|Envia um rascunho de mensagem anteriormente criado. A mensagem é então salva na pasta Itens Enviados.|
 |**Anexos**| | |
-|[List attachments](../api/message-list-attachments.md) |Coleção [Attachment](attachment.md)| Obtém todos os anexos em uma mensagem.|
+|[Listar anexos](../api/message-list-attachments.md) |Coleção [Attachment](attachment.md)| Obtém todos os anexos em uma mensagem.|
 |[Add attachment](../api/message-post-attachments.md) |[Attachment](attachment.md)| Adicione um novo anexo a uma mensagem postando na coleção attachments.|
 |**Extensões abertas**| | |
 |[Criar extensão aberta](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Criar uma extensão aberta e adicionar propriedades personalizadas em uma instância nova ou existente de um recurso.|
@@ -59,30 +59,30 @@ Esse recurso permite:
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |bccRecipients|Coleção [recipient](recipient.md)|Os destinatários Cco: da mensagem.|
-|body|[itemBody](itembody.md)|O corpo da mensagem. Ele pode ser no formato HTML ou texto. Saiba mais sobre [HTML seguro no corpo da mensagem](/graph/outlook-create-send-messages#reading-messages-with-control-over-the-body-format-returned).|
+|body|[itemBody](itembody.md)|O corpo da mensagem. Pode estar no formato HTML ou no formato de texto. Saiba mais sobre [HTML seguro no corpo da mensagem](/graph/outlook-create-send-messages#reading-messages-with-control-over-the-body-format-returned).|
 |bodyPreview|String|Os primeiros 255 caracteres do corpo da mensagem. Está no formato de texto.|
 |categories|String collection|As categorias associadas à mensagem.|
 |ccRecipients|Coleção [recipient](recipient.md)|Os destinatários Cc: da mensagem.|
 |changeKey|String|A versão da mensagem.|
 |conversationId|String|A ID da conversa à qual o email pertence.|
 |createdDateTime|DateTimeOffset|A data e a hora em que a mensagem foi criada.|
-|sinalizar|[Sinalizador de acompanhamento](followupflag.md)|O valor do sinalizador que indica o status, a data de início, a data de conclusão ou a data de finalização da mensagem.|
-|from|[recipient](recipient.md)|O proprietário da caixa de correio e o remetente da mensagem. O valor deve corresponder à caixa de correio real usada. Saiba mais sobre [configuração o de propriedades de remetente e](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) de uma mensagem.|
+|flag|[followupFlag](followupflag.md)|O valor do sinalizador que indica o status, a data de início, a data de conclusão ou a data de finalização da mensagem.|
+|from|[recipient](recipient.md)|O proprietário da caixa de correio e o remetente da mensagem. O valor deve corresponder à caixa de correio real que foi usada. Saiba mais sobre [como definir as propriedades from e sender](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) de uma mensagem.|
 |hasAttachments|Booliano|Indica se a mensagem tem anexos. Esta propriedade não inclui anexos em linha, portanto, se uma mensagem contém somente anexos em linha, essa propriedade é falsa. Para verificar a existência de anexos em linha, analise a propriedade **body** para procurar um atributo `src`, como `<IMG src="cid:image001.jpg@01D26CD8.6C05F070">`.|
 |id|String|Identificador exclusivo da mensagem (observe que esse valor pode mudar se uma mensagem é movida ou alterada)|
 |importance|importance| A importância da mensagem: `Low`, `Normal`, `High`.|
-|inferenceClassification | inferenceClassificationType | A classificação da mensagem para o usuário, com base na relevância deduzida ou importância, ou em um caso de sobreposição explícito. Os valores possíveis são: `focused` ou `other`. |
-|internetMessageHeaders | Coleção [internetMessageHeader](internetmessageheader.md) | Uma coleção de cabeçalhos de mensagem definidas pelo [RFC5322](https://www.ietf.org/rfc/rfc5322.txt). O conjunto inclui cabeçalhos de mensagem indicando o caminho de rede ocupado por uma mensagem do remetente ao destinatário. Ele também pode conter cabeçalhos de mensagem personalizada que armazenam os dados de aplicativo para a mensagem. |
+|inferenceClassification | inferenceClassificationType | A classificação da mensagem para o usuário, com base na relevância ou importância deduzida, ou em uma substituição explícita. Os valores possíveis são: `focused` ou `other`. |
+|internetMessageHeaders | Coleção [internetMessageHeader](internetmessageheader.md) | Uma coleção de cabeçalhos de mensagens definidos por [RFC5322](https://www.ietf.org/rfc/rfc5322.txt). O conjunto inclui cabeçalhos de mensagens que indicam o caminho de rede adotado por uma mensagem do remetente para o destinatário. Também pode conter cabeçalhos de mensagens personalizados com dados do aplicativo para a mensagem. <br><br> Retornado apenas mediante aplicação da opção de consulta `$select`. Somente leitura. |
 |internetMessageId |String |A ID da mensagem no formato especificado por [RFC2822](https://www.ietf.org/rfc/rfc2822.txt). |
-|isDeliveryReceiptRequested|Booliano|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
-|isDraft|Booliano|Indica se a mensagem é um rascunho. Uma mensagem é um rascunho quando ela ainda não foi enviada.|
-|isRead|Booliano|Indica se a mensagem foi lida.|
-|isReadReceiptRequested|Booliano|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
+|isDeliveryReceiptRequested|Boolean|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
+|isDraft|Boolean|Indica se a mensagem é um rascunho. Uma mensagem é um rascunho quando ela ainda não foi enviada.|
+|isRead|Boolean|Indica se a mensagem foi lida.|
+|isReadReceiptRequested|Boolean|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a mensagem foi alterada pela última vez.|
 |parentFolderId|String|O identificador exclusivo para a mailFolder pai da mensagem.|
 |receivedDateTime|DateTimeOffset|A data e a hora em que a mensagem foi recebida.|
 |replyTo|Coleção [recipient](recipient.md)|Os endereços de email a serem usados ao responder.|
-|sender|[recipient](recipient.md)|A conta que é realmente usada para gerar a mensagem. Na maioria dos casos, esse valor é o mesmo que a propriedade **from** . Você pode definir essa propriedade como um valor diferente ao enviar uma mensagem de uma [caixa de correio compartilhada](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes)ou enviando uma mensagem como um [representante](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926). Em qualquer caso, o valor deve corresponder à caixa de correio real usada. Saiba mais sobre [configuração o de propriedades de remetente e](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) de uma mensagem.|
+|sender|[recipient](recipient.md)|A conta que é realmente usada para gerar a mensagem. Na maioria dos casos, esse valor é o mesmo da propriedade **from**. Você pode definir essa propriedade como um valor diferente ao enviar uma mensagem de uma [caixa de correio compartilhada](https://docs.microsoft.com/pt-BR/exchange/collaboration/shared-mailboxes/shared-mailboxes) ou ao enviar uma mensagem como um [delegado](https://support.office.com/pt-BR/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926). De qualquer forma, o valor deve corresponder à caixa de correio real que foi usada. Saiba mais sobre [como definir as propriedades from e sender](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) de uma mensagem.|
 |sentDateTime|DateTimeOffset|A data e a hora em que a mensagem foi enviada.|
 |subject|String|O assunto da mensagem.|
 |toRecipients|Coleção [recipient](recipient.md)|Os destinatários Para: da mensagem.|
@@ -94,8 +94,8 @@ Esse recurso permite:
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |attachments|Coleção [attachment](attachment.md)|Os anexos [fileAttachment](fileattachment.md) e [itemAttachment](itemattachment.md) da mensagem.|
-|extensions|Coleção [extension](extension.md)|A coleção de extensões open definidas para a mensagem. Anulável.|
-|multiValueExtendedProperties|Coleção [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de múltiplos valores definidos para a mensagem. Anulável.|
+|extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para a mensagem. Anulável.|
+|multiValueExtendedProperties|Coleção [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de vários valores definidas para a mensagem. Anulável.|
 |singleValueExtendedProperties|Coleção [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de valor único definidas para a mensagem. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
@@ -110,7 +110,9 @@ Veja a seguir uma representação JSON do recurso
     "attachments",
     "extensions",
     "singleValueExtendedProperties",
-    "multiValueExtendedProperties"
+    "multiValueExtendedProperties",
+
+    "internetMessageHeaders"
   ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.message",

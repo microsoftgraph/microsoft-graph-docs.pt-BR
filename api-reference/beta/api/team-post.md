@@ -4,12 +4,12 @@ description: Criar uma nova equipe.
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 0798ca15e61dcb9522019ba855f5b2e329b97356
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: e34a095597064401f59ad5f78f8ca092e93b94b4
+ms.sourcegitcommit: d91ca408bae7842ea4d1d94b49594fd82a32e0c9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643843"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29745528"
 ---
 # <a name="create-team"></a>Criar equipe
 
@@ -294,7 +294,11 @@ Content-Location: /teams/{teamId}
 
 ## <a name="see-also"></a>Confira também
 
+- [Modelos disponíveis](https://docs.microsoft.com/pt-BR/MicrosoftTeams/get-started-with-teams-templates)
+- [Introdução aos modelos de Equipes de varejo](https://docs.microsoft.com/MicrosoftTeams/get-started-with-retail-teams-templates)
+- [Introdução aos modelos de Equipes médicas](https://docs.microsoft.com/MicrosoftTeams/healthcare/healthcare-templates)
 - [Como criar um grupo com uma equipe](/graph/teams-create-group-and-team)
+
 <!-- {
   "type": "#page.annotation",
   "suppressions": [

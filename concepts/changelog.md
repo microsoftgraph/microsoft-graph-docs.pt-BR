@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: c6cb4b23e6fa383074a0f1ff377060b4cdd9403f
-ms.sourcegitcommit: a1f1e59ee568340bfabdb524e01cff7860bcc862
+ms.openlocfilehash: 8ab58d47fc40434c17d6adf181724823e2f27da7
+ms.sourcegitcommit: d91ca408bae7842ea4d1d94b49594fd82a32e0c9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "29735618"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29745591"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -17,6 +17,12 @@ Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as 
 Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em [problemas conhecidos](known-issues.md).
 
 ## <a name="february-2019"></a>Fevereiro de 2019
+
+### <a name="directory-apis"></a>APIs de diretório
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Alteração |Beta e v1.0| Atualização da propriedade **companyName** no recurso do [usuário](/graph/api/resources/user?view=graph-rest-v1.0) para permitir a gravação.|
 
 ### <a name="education-apis"></a>APIs de educação
 
