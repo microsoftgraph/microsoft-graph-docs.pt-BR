@@ -4,12 +4,12 @@ description: 'No Microsoft Teams, uma equipe é um conjunto de canais. '
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 6ed8b298336563d2b07ce2d6a83b90c9400fe53f
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: 80283edd8d0a4ea2f9abca2a51fda3f96752d96e
+ms.sourcegitcommit: a1f1e59ee568340bfabdb524e01cff7860bcc862
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643773"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29735593"
 ---
 # <a name="team-resource-type"></a>tipo de recurso de equipe
 
@@ -51,6 +51,7 @@ Confira mais informações sobre como trabalhar com grupos e membros em equipes,
 |visibility|[teamVisibilityType](teamvisibilitytype.md)| A visibilidade de um grupo e equipe. O padrão é Público. |
 |funSettings|[teamFunSettings](teamfunsettings.md) |Configurações que definem o uso de Giphy, memes e figurinhas na equipe.|
 |guestSettings|[teamGuestSettings](teamguestsettings.md) |Configurações que definem se os convidados podem criar, atualizar ou excluir canais na equipe.|
+|internalId | string | Uma ID exclusiva da equipe, que foi usada em alguns locais, como o log de auditoria da [API da Atividade de Gestão do Office 365](https://docs.microsoft.com/pt-BR/office/office-365-management-api/office-365-management-activity-api-reference). |
 |isArchived|Booliano|Se essa equipe está no modo somente leitura. |
 |memberSettings|[teamMemberSettings](teammembersettings.md) |Configurações para configurar se os membros podem executar determinadas ações, por exemplo, criar canais e adicionar bots na equipe.|
 |messagingSettings|[teamMessagingSettings](teammessagingsettings.md) |Configurações para definir a mensagens e menções na equipe.|
@@ -83,6 +84,7 @@ Veja a seguir uma representação JSON do recurso.
   "memberSettings": {"@odata.type": "microsoft.graph.teamMemberSettings"},
   "messagingSettings": {"@odata.type": "microsoft.graph.teamMessagingSettings"},
   "funSettings": {"@odata.type": "microsoft.graph.teamFunSettings"},
+  "internalId": "19:...big.number...@thread.skype",
   "isArchived": false,
   "webUrl": "https://...longUrl..."
 }

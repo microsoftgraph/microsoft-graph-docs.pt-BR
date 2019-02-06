@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 7d5d0a9e7d19a2ae51ed2843a3aa56b9119163a4
-ms.sourcegitcommit: d6209114cbbe8072e3ecf7eba23819ae5ace7db5
+ms.openlocfilehash: c6cb4b23e6fa383074a0f1ff377060b4cdd9403f
+ms.sourcegitcommit: a1f1e59ee568340bfabdb524e01cff7860bcc862
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "29690970"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29735618"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -24,6 +24,12 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | :-------------- | :------------ | :--------------------------------------- |
 |Adição |beta|Adicionada nova propriedade relatedContacts em [educationUser](/graph/api/resources/educationUser?view=graph-rest-beta).|
 |Adição |v1.0|Adicionada nova propriedade relatedContacts em [educationUser](/graph/api/resources/educationUser?view=graph-rest-v1.0).|
+
+### <a name="microsoft-teams-apis"></a>APIs do Microsoft Teams
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Adição |Beta e v1.0| Adicionada a propriedade **internalId** ao recurso [team](/graph/api/resources/team?view=graph-rest-v1.0).|
 
 ## <a name="january-2019"></a>Janeiro de 2019
 

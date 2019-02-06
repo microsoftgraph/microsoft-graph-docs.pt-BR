@@ -2,12 +2,12 @@
 title: Tipo de recurso chatMessage
 description: Representa uma mensagem de chat individual dentro de uma entidade de canal ou chat. A mensagem pode ser uma mensagem raiz ou parte de um thread que seja definido pela propriedade **replyToId** na mensagem.
 localization_priority: Priority
-ms.openlocfilehash: 98b9918d5763d6003a3c9a177057abe2e7b415ec
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: ef91281eff0cc61f992f659bd33debec03841bb4
+ms.sourcegitcommit: a1f1e59ee568340bfabdb524e01cff7860bcc862
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517964"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29735576"
 ---
 # <a name="chatmessage-resource-type"></a>Tipo de recurso chatMessage
 
@@ -34,7 +34,7 @@ Representa uma mensagem de chat individual dentro de uma entidade de [canal](cha
 |messageType|String|Os valores de tipo de mensagem com suporte atualmente são: message, chatEvent, Typing|
 |createdDateTime|dateTimeOffset|Somente leitura. Carimbo de data/hora de quando a mensagem foi criada|
 |lastModifiedDateTime|dateTimeOffset|Somente leitura. Carimbo de data/hora de quando a mensagem foi editada/atualizada|
-|isDeleted|boolean|Representa se uma mensagem foi excluída temporariamente|
+|deleted|Booliano|Indica se uma mensagem foi excluída de modo reversível|
 |deletedDateTime|dateTimeOffset|Somente leitura. Carimbo de data/hora no qual a mensagem foi excluída |
 |subject|string|Linha de assunto da mensagem. Opcional|
 |body|[itemBody](itembody.md)|Representação de texto sem formatação/HTML do conteúdo da mensagem. Retorna o texto sem formatação por padrão, o aplicativo pode escolher HTML como parte de um parâmetro de consulta|
@@ -53,7 +53,7 @@ Veja a seguir uma representação JSON do recurso.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "isDeleted",
+    "deleted",
     "deletedDateTime",
     "attachments",
     "importance",
