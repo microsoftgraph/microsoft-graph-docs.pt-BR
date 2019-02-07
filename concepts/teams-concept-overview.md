@@ -4,12 +4,12 @@ description: 'O Microsoft Teams é o melhor hub para trabalhos em equipe e comun
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: eb87d270822193632fde376950ab4d52515237b6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: e1ac6977add3de95b76f27a5e9184ee9f79e798a
+ms.sourcegitcommit: 255061099661a38278140675db4cbadbdca9be7c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27967977"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "29760815"
 ---
 # <a name="microsoft-teams-api-overview"></a>Visão geral da API do Microsoft Teams
 
@@ -82,7 +82,7 @@ Usar a API do [Teams no Microsoft Graph](/graph/api/resources/teams-api-overview
 
 ## <a name="next-steps"></a>Próximas etapas
 
-- Assista ao [vídeo de visão geral](http://aka.ms/teamsgraph/v1/video).
+- Assista ao [vídeo de visão geral](https://aka.ms/teamsgraph/v1/video).
 - Saiba como [usar a API do Microsoft Teams](/graph/api/resources/teams-api-overview?view=graph-rest-1.0).
 - Analise em detalhes os métodos, propriedades e relações dos recursos de [equipe](/graph/api/resources/team?view=graph-rest-1.0), [canal](/graph/api/resources/channel?view=graph-rest-1.0) e [grupo](/graph/api/resources/group?view=graph-rest-1.0).
 - Experimente a API no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).

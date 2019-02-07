@@ -4,12 +4,12 @@ description: Atualize as propriedades da guia especificada.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 031f6f91576df2b19382e78461e6a42e2274ae0c
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 7a87839a1a6a151708b485d8c3fec9657f21f11a
+ms.sourcegitcommit: 255061099661a38278140675db4cbadbdca9be7c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576175"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "29760962"
 ---
 # <a name="update-tab"></a>Guia de atualização
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo                            | Group.ReadWrite.All                         |
 
-> **Observação**: Esta API oferece suporte a permissões de administrador. Administradores globais e administradores de serviço de Teams da Microsoft podem acessar as equipes que eles não serão um membro do.
+> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais e os administradores do serviço do Microsoft Teams podem acessar equipes das quais eles não são membros.
 
 ## <a name="http-request"></a>Solicitação HTTP
 ```http
@@ -56,7 +56,7 @@ Content-type: application/json
 Content-length: 211
 
 {
-  "name": "My Contoso Tab - updated"
+  "displayName": "My Contoso Tab - updated"
 }
 ```
 #### <a name="response"></a>Resposta
@@ -66,7 +66,7 @@ Content-type: application/json
 
 {
   "id": "tabId",
-  "name": "My Contoso Tab - updated",
+  "displayName": "My Contoso Tab - updated",
   "teamsAppId": "06805b9e-77e3-4b93-ac81-525eb87513b8",
   "configuration": {
     "entityId": "2DCA2E6C7A10415CAF6B8AB6661B3154",
@@ -81,7 +81,7 @@ Content-type: application/json
 
 ## <a name="see-also"></a>Confira também
 
-[Configurando os tipos de guia interna](/graph/teams-configuring-builtin-tabs)
+[Configurar tipos de guia internos](/graph/teams-configuring-builtin-tabs)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

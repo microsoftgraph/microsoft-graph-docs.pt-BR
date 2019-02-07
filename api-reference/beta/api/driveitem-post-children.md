@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: Criar uma nova pasta
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: ac78cc2e223f532c8c97fd413b799bd5cfd594cc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 2ccbedabb6fc7e6ec179e8ab5c97dd07959252c0
+ms.sourcegitcommit: 255061099661a38278140675db4cbadbdca9be7c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522984"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "29760843"
 ---
 # <a name="create-a-new-folder-in-a-drive"></a>Criar uma nova pasta em uma unidade
 
@@ -70,7 +70,7 @@ Content-Type: application/json
 
 ### <a name="response"></a>Resposta
 
-Se tiver êxito, esse método retorna a pasta recém-criada como um recurso [DriveItem][item-resource].
+Se tiver êxito, esse método retorna a pasta recém-criada como um [DriveItem] [ item-resource] recurso.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -110,8 +110,11 @@ Content-Type: application/json
 
 ## <a name="error-response"></a>Resposta de erro
 
-Leia o tópico [Error Responses][error-response] para saber mais sobre como os erros retornam.
-[-resposta de erro]: erros/gráfico / [recurso item]:.. /Resources/driveitem.MD [pasta-faceta]:.. /Resources/Folder.MD
+Confira mais informações sobre como os erros são retornados em [Respostas de erro][error-response].
+
+[error-response]: /graph/errors
+[item-resource]: ../resources/driveitem.md
+[folder-facet]: ../resources/folder.md
 
 <!--
 {
