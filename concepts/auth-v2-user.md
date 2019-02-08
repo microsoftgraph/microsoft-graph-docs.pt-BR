@@ -1,15 +1,15 @@
 ---
 title: Obter acesso em nome de um usuário
-description: 'Para usar o Microsoft Graph para ler e gravar recursos em nome de um usuário, seu aplicativo deve obter um token de acesso do Azure AD e anexar o token às solicitações que ele envia para o Microsoft Graph. O fluxo de autenticação exato que você usará para obter tokens de acesso, dependerá do tipo de aplicativo que você está desenvolvendo e se você deseja usar o OpenID Connect para conectar o usuário ao aplicativo. O fluxo de concessão de código de autorização do OAuth 2.0 é um fluxo comum usado por aplicativos nativos e móveis e também por alguns aplicativos Web. Neste tópico, podemos analisar um exemplo de uso esse fluxo. '
+description: Para usar o Microsoft Graph para ler e gravar recursos em nome de um usuário, seu aplicativo deve obter um token de acesso do Azure AD e anexar o token às solicitações que ele envia para o Microsoft Graph.
 author: jackson-woods
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6756657d2181f83f58db00f4b15b220a44492879
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 42bb4fc0e98294c9a319e20a6b4f632f040ef0da
+ms.sourcegitcommit: 255061099661a38278140675db4cbadbdca9be7c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27914266"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "29760927"
 ---
 # <a name="get-access-on-behalf-of-a-user"></a>Obter acesso em nome de um usuário
 Para usar o Microsoft Graph para ler e gravar recursos em nome de um usuário, seu aplicativo deve obter um token de acesso do Azure AD e anexar o token às solicitações que ele envia para o Microsoft Graph. O fluxo de autenticação exato que você usará para obter tokens de acesso, dependerá do tipo de aplicativo que você está desenvolvendo e se você deseja usar o OpenID Connect para conectar o usuário ao aplicativo. O fluxo de concessão de código de autorização do OAuth 2.0 é um fluxo comum usado por aplicativos nativos e móveis e também por alguns aplicativos Web. Neste tópico, podemos analisar um exemplo de uso esse fluxo. 
@@ -239,11 +239,11 @@ Você pode chamar o Microsoft Graph em nome de um usuário a partir dos seguinte
 - Aplicativos de página única (SPA)
 - APIs da Web do back-end: Por exemplo, em cenários onde um aplicativo de cliente, como um aplicativo nativo, implementa a funcionalidade em um back-end da API da Web. Com o ponto de extremidade do Azure AD v2.0, tanto o aplicativo de cliente quanto o back-end da API da Web devem ter a mesma ID do Aplicativo. 
 
-Para obter mais informações sobre os tipos de aplicativos compatíveis com o ponto de extremidade do Azure AD v2.0, confira [Tipos de aplicativos](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-flows).
+Para mais informações sobre os tipos de aplicativos compatíveis com o ponto de extremidade do Azure AD v2.0, veja [Tipos de aplicativos](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-flows).
 
-> **Observação**: Chamar o Microsoft Graph a partir de uma [API da Web autônoma](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-limitations#restrictions-on-app-types) atualmente não tem suporte do ponto de extremidade do Azure AD v2.0. Nesse cenário, você precisa usar o ponto de extremidade do Azure AD.
+> **Observação**: Chamar o Microsoft Graph a partir de uma API da Web autônoma atualmente não tem suporte do ponto de extremidade do Azure AD v2.0. Nesse cenário, você precisa usar o ponto de extremidade do Azure AD.
 
-Para obter mais informações sobre como obter acesso ao Microsoft Graph em nome de um usuário a partir do ponto de extremidade do Azure AD v2.0:
+Para mais informações sobre como obter acesso ao Microsoft Graph em nome de um usuário a partir do ponto de extremidade do Azure AD v2.0:
 
 - Para obter links para documentação de protocolos e artigos de introdução a diferentes tipos de aplicativos, confira a [documentação do ponto de extremidade do Azure AD v2.0](https://docs.microsoft.com/azure/active-directory/develop/active-directory-appmodel-v2-overview). 
 - Para obter explicações detalhadas dos fluxos de autenticação, confira os [protocolos do v2.0](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols).
@@ -252,8 +252,8 @@ Para obter mais informações sobre como obter acesso ao Microsoft Graph em nome
 ## <a name="azure-ad-endpoint-considerations"></a>Considerações sobre o ponto de extremidade do Azure AD
 Existem várias diferenças entre a utilização do ponto de extremidade do Azure AD e o ponto de extremidade do Azure AD v2.0. Por exemplo:
 
-- Você usa o [Portal do Azure](https://portal.azure.com) para configurar seu aplicativo. Para obter mais informações sobre como configurar aplicativos com o Portal do Azure, confira [Integração de aplicativos com o Azure Active Directory: Como adicionar um aplicativo](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#adding-an-application)
-- Seu aplicativo exigirá uma ID do aplicativo diferente (ID de cliente) para cada plataforma.
+- Use o [portal do Azure](https://portal.azure.com) para configurar seu aplicativo. Para obter mais informações sobre como configurar aplicativos com o portal do Azure, veja [Registrar um aplicativo com o ponto de extremidade do Azure Active Directory v2.0](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/quickstart-v2-register-an-app)
+- O aplicativo exigirá uma ID de aplicativo diferente (ID do cliente) para cada plataforma.
 - Se o aplicativo for um aplicativo multilocatário, você deve configurá-lo explicitamente para funcionar como vários locatários no [Portal do Azure](https://portal.azure.com).
 - Com o ponto de extremidade do Azure AD, todas as permissões que seu aplicativo precisa devem ser configuradas pelo desenvolvedor. O ponto de extremidade do Azure AD não oferece suporte ao consentimento dinâmico (incremental).
 - O ponto de extremidade do Azure AD usa um parâmetro `resource` em solicitações de autorização e de token para especificar o recurso, como o Microsoft Graph, para o qual ele deseja permissões. O ponto de extremidade não é compatível com o parâmetro `scope`. 

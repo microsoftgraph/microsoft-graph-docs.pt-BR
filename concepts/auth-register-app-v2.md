@@ -1,15 +1,15 @@
 ---
 title: Registrar um aplicativo no ponto de extremidade do Azure AD v2.0
-description: 'Seu aplicativo deve ser registrado no Azure AD. Registrar seu aplicativo estabelece uma identificação exclusiva do aplicativo e outros valores que o aplicativo usa para autenticar com o Azure AD e obter tokens. Para o ponto de extremidade Azure AD v2.0, você registra o aplicativo no Portal de Registro de Aplicativos da Microsoft. Você pode usar uma conta da Microsoft ou uma conta corporativa ou de estudante para registrar seu aplicativo. Dependendo do tipo de aplicativo que estiver desenvolvendo, você precisará copiar uma ou mais propriedades durante o registro para usar ao configurar autenticação e a autorização para seu aplicativo. '
+description: Seu aplicativo deve ser registrado no Azure AD. Registrar seu aplicativo estabelece uma identificação exclusiva do aplicativo e outros valores que o aplicativo usa para autenticar com o Azure AD e obter tokens.
 author: jackson-woods
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 87bff46dcb18585ba0814a5848f3cd67deb855d1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: d62fb12c094307fcd09f3e4600046b818ec4bbaa
+ms.sourcegitcommit: 255061099661a38278140675db4cbadbdca9be7c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27930555"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "29760955"
 ---
 # <a name="register-your-app-with-the-azure-ad-v20-endpoint"></a>Registrar um aplicativo no ponto de extremidade do Azure AD v2.0
 
@@ -89,6 +89,6 @@ Você usa o [Portal do Azure](https://aka.ms/aadapplist) para registrar seu apli
 - Você só pode usar uma conta corporativa ou de estudante para registrar um aplicativo.
 - Seu aplicativo exigirá uma ID do Aplicativo diferente para cada plataforma.
 - Se o aplicativo for um aplicativo multilocatário, você deve configurá-lo explicitamente para funcionar como vários locatários no portal.
-- Você deve configurar previamente todas as permissões (incluindo permissões do Microsoft Graph) que seu aplicativo precisa no portal. 
+- Você deve configurar previamente todas as permissões (incluindo as permissões do Microsoft Graph) que seu aplicativo precisa no portal. 
 
-Para obter orientação sobre como usar o Portal do Azure para adicionar um aplicativo, veja [Integração de aplicativos com o Azure Active Directory: Como adicionar um aplicativo](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#adding-an-application).
+Para obter orientação sobre como usar o Portal do Azure para adicionar um aplicativo, veja [Registrar um aplicativo no ponto de extremidade do Azure Active Directory v2.0nt](https://docs.microsoft.com/pt-BR/azure/active-directory/develop/quickstart-v2-register-an-app).
