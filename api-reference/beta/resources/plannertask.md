@@ -4,12 +4,12 @@ description: O recurso **plannerTask** representa uma tarefa de Planejador no Of
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 2313b31e0a962f27fa728af8c8953b646210397a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: daa5b451211b442fb1b5b197f323baa4cd37cda7
+ms.sourcegitcommit: 597dfc95a44e0f2354d056b5567bcff2bb2837f1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511209"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "29892502"
 ---
 # <a name="plannertask-resource-type"></a>tipo de recurso plannerTask
 
@@ -29,7 +29,7 @@ O recurso **plannerTask** representa uma tarefa de Planejador no Office 365. Uma
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|activeChecklistItemCount|Int32|Número de itens de lista de verificação com valor definido como 'false', representando itens incompletos.|
+|activeChecklistItemCount|Int32|Número de lista de verificação de itens com valor definido como `false`, que representa os itens incompletos.|
 |appliedCategories|[plannerAppliedCategories](plannerappliedcategories.md)|As categorias às quais a tarefa foi aplicada. Confira os possíveis valores em [Categorias aplicadas](plannerappliedcategories.md).|
 |assigneePriority|String|Dica usada para ordenar itens deste tipo em um modo de exibição de lista. O formato é definido como descrito [aqui](planner-order-hint-format.md).|
 |assignments|[plannerAssignments](plannerassignments.md)|O conjunto de destinatários aos quais a tarefa é atribuída.|
@@ -42,11 +42,11 @@ O recurso **plannerTask** representa uma tarefa de Planejador no Office 365. Uma
 |createdDateTime|DateTimeOffset|Somente leitura. A data e a hora que a tarefa é criada. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |dueDateTime|DateTimeOffset|A data e a hora que a tarefa já deve estar concluída. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |hasDescription|Booliano|Somente leitura. O valor é `true` se o objeto de detalhes da tarefa tem uma descrição não vazia e `false` caso contrário.|
-|id|Cadeia de caracteres|Somente leitura. Identificação da tarefa. É 28 caracteres longos e diferencia maiusculas de minúsculas. [Validação de formato](tasks-identifiers-disclaimer.md) é feita no serviço.|
+|id|String|Somente leitura. Identificação da tarefa. É 28 caracteres longos e diferencia maiusculas de minúsculas. [Validação de formato](tasks-identifiers-disclaimer.md) é feita no serviço.|
 |orderHint|String|Dica usada para ordenar itens deste tipo em um modo de exibição de lista. O formato é definido como descrito [aqui](planner-order-hint-format.md).|
 |percentComplete|Int32|A porcentagem de conclusão da tarefa. Quando definido como `100`, a tarefa será considerada concluída. |
 |planId|String|ID do plano ao qual a tarefa pertence.|
-|previewType|string|Isso define o tipo de visualização que aparece na tarefa. Os valores possíveis são: `automatic`, `noPreview`, `checklist`, `description` e `reference`.|
+|previewType|String|Isso define o tipo de visualização que aparece na tarefa. Os valores possíveis são: `automatic`, `noPreview`, `checklist`, `description` e `reference`.|
 |referenceCount|Int32|Número de referências externas existentes na tarefa.|
 |startDateTime|DateTimeOffset|A data e a hora que a tarefa começa. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |title|Cadeia de caracteres|Título da tarefa.|
@@ -89,7 +89,7 @@ Veja a seguir uma representação JSON do recurso.
   "orderHint": "String",
   "percentComplete": 1024,
   "planId": "String",
-  "previewType": "string",
+  "previewType": "String",
   "referenceCount": 1024,
   "startDateTime": "String (timestamp)",
   "title": "String"
