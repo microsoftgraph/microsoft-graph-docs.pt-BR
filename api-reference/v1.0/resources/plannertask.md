@@ -4,12 +4,12 @@ description: O recurso **plannerTask** representa uma tarefa de Planejador no Of
 localization_priority: Priority
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 3a90dcdc2cbad09355619c1afe1ff3200181fb39
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 52dd5917ef0ddb2ec0a05d6952962bfc430c6027
+ms.sourcegitcommit: 597dfc95a44e0f2354d056b5567bcff2bb2837f1
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917584"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "29892509"
 ---
 # <a name="plannertask-resource-type"></a>tipo de recurso plannerTask
 
@@ -27,11 +27,11 @@ O recurso **plannerTask** representa uma tarefa de Planejador no Office 365. Uma
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|activeChecklistItemCount|Int32|Número de itens de lista de verificação com valor definido como 'false', representando itens incompletos.|
+|activeChecklistItemCount|Int32|Número de itens de lista de verificação com valor definido como `false`, representando itens incompletos.|
 |appliedCategories|[plannerAppliedCategories](plannerappliedcategories.md)|As categorias às quais a tarefa foi aplicada. Confira os possíveis valores em [Categorias aplicadas](plannerappliedcategories.md).|
 |assigneePriority|String|Dica usada para ordenar itens deste tipo em um modo de exibição de lista. O formato é definido como descrito [aqui](planner-order-hint-format.md).|
 |assignments|[plannerAssignments](plannerassignments.md)|O conjunto de destinatários aos quais a tarefa é atribuída.|
-|bucketId|String|ID de Balde ao qual a tarefa pertence. O Balde deve estar no plano de que a tarefa está em. É 28 caracteres longos e diferencia maiusculas de minúsculas. [Validação de formato](planner-identifiers-disclaimer.md) é feita no serviço. |
+|bucketId|String|ID do bucket ao qual a tarefa pertence. O bucket precisa estar no plano no qual a tarefa está. Tem 28 caracteres e diferencia maiúsculas de minúsculas. [Formatar validação](planner-identifiers-disclaimer.md) é feito no serviço. |
 |checklistItemCount|Int32|Número de itens de lista de verificação que estão presentes na tarefa.|
 |completedBy|[identitySet](identityset.md)|Identidade do usuário que concluiu a tarefa.|
 |completedDateTime|DateTimeOffset|Somente leitura. A data e a hora na qual o `'percentComplete'` da tarefa está definido como `'100'`. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
@@ -40,11 +40,11 @@ O recurso **plannerTask** representa uma tarefa de Planejador no Office 365. Uma
 |createdDateTime|DateTimeOffset|Somente leitura. A data e a hora que a tarefa é criada. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |dueDateTime|DateTimeOffset|A data e a hora que a tarefa já deve estar concluída. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |hasDescription|Booliano|Somente leitura. O valor é `true` se o objeto de detalhes da tarefa tem uma descrição não vazia e `false` caso contrário.|
-|id|Cadeia de caracteres|Somente leitura. Identificação da tarefa. É 28 caracteres longos e diferencia maiusculas de minúsculas. [Validação de formato](planner-identifiers-disclaimer.md) é feita no serviço.|
+|id|String|Somente leitura. A ID da tarefa. Tem 28 caracteres e diferencia maiúsculas de minúsculas. [Formatar validação](planner-identifiers-disclaimer.md) é feito no serviço.|
 |orderHint|String|Dica usada para ordenar itens deste tipo em um modo de exibição de lista. O formato é definido como descrito [aqui](planner-order-hint-format.md).|
 |percentComplete|Int32|A porcentagem de conclusão da tarefa. Quando definido como `100`, a tarefa será considerada concluída. |
 |planId|String|ID do plano ao qual a tarefa pertence.|
-|previewType|plannerPreviewType|Isto define o tipo de visualização que aparecerá na tarefa. Os valores possíveis são: `automatic`, `noPreview`, `checklist`, `description`, `reference`.|
+|previewType|String|Isso define o tipo de visualização que aparece na tarefa. Os valores possíveis são: `automatic`, `noPreview`, `checklist`, `description`, `reference`.|
 |referenceCount|Int32|Número de referências externas existentes na tarefa.|
 |startDateTime|DateTimeOffset|A data e a hora que a tarefa começa. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |title|String|Título da tarefa.|
@@ -88,7 +88,7 @@ Veja a seguir uma representação JSON do recurso.
   "orderHint": "String",
   "percentComplete": 1024,
   "planId": "String",
-  "previewType": "string",
+  "previewType": "String",
   "referenceCount": 1024,
   "startDateTime": "String (timestamp)",
   "title": "String"
