@@ -5,12 +5,12 @@ author: jasonjoh
 localization_priority: Priority
 ms.prod: outlook
 ms.date: 01/16/2019
-ms.openlocfilehash: d25399ca6b30390b49b69f6265f1da2f93e0a89e
-ms.sourcegitcommit: 02a3ae7f3070d38d949158808545003e85ae8fe7
+ms.openlocfilehash: 44ddc4e4f9e7c535610bbd29fcc71eea8bfa8ee9
+ms.sourcegitcommit: 597dfc95a44e0f2354d056b5567bcff2bb2837f1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726544"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "29892488"
 ---
 # <a name="send-outlook-messages-from-another-user"></a>Enviar mensagens do Outlook de outro usuário
 
@@ -84,13 +84,11 @@ Por exemplo, para enviar emails do grupo `sales@contoso.com`, configure a mensag
       }
     }
   ],
-  "from": [
-    {
-      "emailAddress": {
-        "address": "sales@contoso.com"
-      }
+  "from": {
+    "emailAddress": {
+      "address": "sales@contoso.com"
     }
-  ]
+  }
 }
 ```
 
@@ -137,13 +135,11 @@ Content-Type: application/json
         }
       }
     ],
-    "from": [
-      {
-        "emailAddress": {
-          "address": "AllanD@contoso.com"
-        }
+    "from": {
+      "emailAddress": {
+        "address": "AllanD@contoso.com"
       }
-    ]
+    }
   }
 }
 ```
@@ -180,13 +176,11 @@ Content-Type: application/json
         }
       }
     ],
-    "from": [
-      {
-        "emailAddress": {
-          "address": "PattiF@contoso.com"
-        }
+    "from": {
+      "emailAddress": {
+        "address": "PattiF@contoso.com"
       }
-    ]
+    }
   }
 }
 ```
