@@ -1,17 +1,17 @@
 ---
-title: Atualizar alertas
+title: Atualizar alerta
 description: Atualize uma propriedade editável **alerta** dentro de qualquer solução integrada para manter o status de alerta e atribuições em sincronia nas soluções. Esse método atualiza qualquer solução que tem um registro de alerta referenciado ID.
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 7b218daa56f7648bc888bbc0cd25619b22799325
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 42bc945dde726466439802350796d628ee438e22
+ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27966031"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29967316"
 ---
-# <a name="update-alert"></a>Atualizar alertas
+# <a name="update-alert"></a>Atualizar alerta
 
 Atualize uma propriedade editável **alerta** dentro de qualquer solução integrada para manter o status de alerta e atribuições em sincronia nas soluções. Esse método atualiza qualquer solução que tem um registro de alerta referenciado ID.
 
@@ -19,15 +19,16 @@ Atualize uma propriedade editável **alerta** dentro de qualquer solução integ
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |   SecurityEvents.ReadWrite.All  |
-|Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
-|Aplicativo | SecurityEvents.ReadWrite.All |
+| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
+|:---------------------------------------|:------------------------------------|
+| Delegado (conta corporativa ou de estudante)     | SecurityEvents.ReadWrite.All        |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                      |
+| Aplicativo                            | SecurityEvents.ReadWrite.All        |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
 > **Observação:** Você deve incluir o ID de **alerta** como um parâmetro e vendorInformation contendo o `provider` e `vendor` com este método.
+
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -36,24 +37,24 @@ PATCH /security/alerts/{alert_id}
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
-| Nome       | Descrição|
-|:-----------|:-----------|
-| Autorização  | Portador {código}. Obrigatório.|
-|Preferir | retornar = representação |
+| Nome          | Descrição              |
+|:--------------|:-------------------------|
+| Autorização | Portador {código}. Obrigatório. |
+| Preferir        | retornar = representação    |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
 No corpo da solicitação, fornece uma representação JSON dos valores para os campos relevantes que devem ser atualizados. O corpo **deve** conter o `vendorInformation` propriedade com válido `provider` e `vendor` campos. A tabela a seguir lista os campos que podem ser atualizados para um alerta. Os valores para propriedades existentes que não estão incluídos no corpo da solicitação não serão alterado. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
 
-| Propriedade   | Tipo |Descrição|
-|:---------------|:--------|:----------|
-|assignedTo|String|Nome do analista de alerta é atribuída a triagem, investigação ou correção.|
-|closedDateTime|DateTimeOffset|Hora em que o alerta foi fechado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
-|comentários|String collection|Comentários de analistas no alerta (para gerenciamento de alerta do cliente).|
-|comentários|alertFeedback|Comentários analista no alerta. Os valores possíveis são: `unknown`, `truePositive`, `falsePositive`, `benignPositive`.|
-|status|alertStatus|Status do ciclo de vida de alerta (estágio). Os valores possíveis são: `unknown`, `newAlert`, `inProgress`, `resolved`.|
-|marcas|String collection|Rótulos podem ser definidos pelo usuário que podem ser aplicados a um alerta e podem servir como condições de filtro (por exemplo, "HVA", "SERRA).|
-|vendorInformation |[securityVendorInformation](../resources/securityvendorinformation.md)|Tipo complexo que contém detalhes sobre o fornecedor de serviço do produto de segurança, o provedor e subprovider (por exemplo, o fornecedor = Microsoft; provider = ATP do Windows Defender; subProvider = AppLocker). **Campos de provedor e fornecedor são necessários.**|
+| Propriedade          | Tipo                                                                   | Descrição |
+|:------------------|:-----------------------------------------------------------------------|:--|
+| assignedTo        | String                                                                 | Nome do analista de alerta é atribuída a triagem, investigação ou correção. |
+| closedDateTime    | DateTimeOffset                                                         | Tempo em que o alerta foi fechado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. |
+| comentários          | String collection                                                      | Comentários de analistas no alerta (para gerenciamento de alerta do cliente). |
+| comentários          | alertFeedback                                                          | Comentários do analista no alerta. Os valores possíveis são: `unknown`, `truePositive`, `falsePositive`, `benignPositive`. |
+| status            | alertStatus                                                            | Status do ciclo de vida de alerta (estágio). Os valores possíveis são: `unknown`, `newAlert`, `inProgress`, `resolved`. |
+| marcações              | String collection                                                      | Rótulos podem ser definidos pelo usuário que podem ser aplicados a um alerta e podem servir como condições de filtro (por exemplo, "HVA", "SERRA). |
+| vendorInformation | [securityVendorInformation](../resources/securityvendorinformation.md) | Tipo complexo que contém detalhes sobre o fornecedor, provedor e subprovedor de produtos / serviços de segurança (por exemplo, fornecedor = Microsoft; provedor = Windows Defender ATP; subProvedor = AppLocker). **Campos de provedor e fornecedor são necessários.** |
 
 ## <a name="response"></a>Resposta
 
@@ -61,9 +62,11 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 
 Se o cabeçalho de solicitação opcional for usado, o método retornará um `200 OK` código de resposta e o objeto atualizado [alerta](../resources/alert.md) no corpo da resposta.
 
-## <a name="example-1"></a>Exemplo 1
+## <a name="examples"></a>Exemplos
 
-### <a name="request"></a>Solicitação
+### <a name="example-1-request-without-prefer-header"></a>Exemplo 1: Solicitação sem cabeçalho Prefer
+
+#### <a name="request"></a>Solicitação
 
 Este é um exemplo de solicitação.
 <!-- {
@@ -78,21 +81,27 @@ Content-type: application/json
 {
   "assignedTo": "String",
   "closedDateTime": "String (timestamp)",
-  "comments": ["String"],
+  "comments": [
+    "String"
+  ],
   "feedback": "@odata.type: microsoft.graph.alertFeedback",
   "status": "@odata.type: microsoft.graph.alertStatus",
-  "tags": ["String"],
-  "vendorInformation":
-    {
-      "provider": "String",
-      "vendor": "String"
-    }
+  "tags": [
+    "String"
+  ],
+  "vendorInformation": {
+    "provider": "String",
+    "vendor": "String"
+  }
 }
 ```
 
-### <a name="response"></a>Resposta
+<!-- markdownlint-disable MD024 -->
 
-O exemplo a seguir é um exemplo de uma resposta bem-sucedida.
+#### <a name="response"></a>Resposta
+
+Veja a seguir o exemplo de uma resposta bem-sucedida.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -103,9 +112,9 @@ O exemplo a seguir é um exemplo de uma resposta bem-sucedida.
 HTTP/1.1 204 No Content
 ```
 
-## <a name="example-2"></a>Exemplo 2
+### <a name="example-2-request-with-prefer-header"></a>Exemplo 2: Solicitação com Prefer cabeçalho
 
-### <a name="request"></a>Solicitação
+#### <a name="request"></a>Solicitação
 
 O exemplo a seguir mostra uma solicitação que inclui o `Prefer` cabeçalho de solicitação.
 
@@ -122,23 +131,27 @@ Prefer: return=representation
 {
   "assignedTo": "String",
   "closedDateTime": "String (timestamp)",
-  "comments": ["String"],
+  "comments": [
+    "String"
+  ],
   "feedback": "@odata.type: microsoft.graph.alertFeedback",
   "status": "@odata.type: microsoft.graph.alertStatus",
-  "tags": ["String"],
-  "vendorInformation":
-    {
-      "provider": "String",
-      "vendor": "String"
-    }
+  "tags": [
+    "String"
+  ],
+  "vendorInformation": {
+    "provider": "String",
+    "vendor": "String"
+  }
 }
 ```
 
-### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 
 A seguir está um exemplo da resposta quando o opcional `Prefer: return=representation` cabeçalho de solicitação é usado.
 
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+
 <!-- {
   "blockType": "response",
   "truncated": true,

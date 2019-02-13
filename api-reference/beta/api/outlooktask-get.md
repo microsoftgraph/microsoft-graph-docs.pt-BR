@@ -1,33 +1,33 @@
 ---
 title: Obter outlookTask
-description: Obtenha as propriedades e relacionamentos de uma tarefa do Outlook na caixa de correio do usuário.
+description: Obtenha as propriedades e as relações de uma tarefa do Outlook na caixa de correio do usuário.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 47c6a24ccb76eb7752736386cf6ec17330832780
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: f140734b6e5fa3e6488b71dbe183a9e3d82fc795
+ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526316"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29967288"
 ---
 # <a name="get-outlooktask"></a>Obter outlookTask
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha as propriedades e relacionamentos de uma tarefa do Outlook na caixa de correio do usuário.
+Obtenha as propriedades e as relações de uma tarefa do Outlook na caixa de correio do usuário.
 
-Por padrão, esta operação (e as operações de tarefa POST, PATCH e [Concluir](../api/outlooktask-complete.md) ) retorna propriedades relacionadas a data em UTC. Você pode usar o cabeçalho `Prefer: outlook.timezone` para que todas as propriedades relacionadas à data na resposta sejam representadas em um fuso horário diferente de UTC.
+Por padrão, esta operação (e as operações de tarefa POST, PATCH e [Concluir](../api/outlooktask-complete.md) ) retorna propriedades relacionadas a data em UTC. Você pode usar o `Prefer: outlook.timezone` cabeçalho para que todas as propriedades relacionadas às datas como resposta representada em um fuso horário diferente do UTC.
 
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Tasks.Read    |
-|Delegado (conta pessoal da Microsoft) | Tasks.Read    |
-|Aplicativo | Sem suporte. |
+| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
+|:---------------------------------------|:------------------------------------|
+| Delegado (conta corporativa ou de estudante)     | Tasks.Read                          |
+| Delegado (conta pessoal da Microsoft) | Tasks.Read                          |
+| Aplicativo                            | Sem suporte.                      |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -44,10 +44,10 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
-| Nome      |Descrição|
-|:----------|:----------|
-| Autorização  | {token} de portador. Obrigatório. |
-| Prefira: outlook.timezone | Especifica o fuso horário para as propriedades de tempo na resposta, qual seria em UTC se este cabeçalho não for especificado. Opcional.|
+| Nome                     | Descrição                                       |
+|:-------------------------|:--------------------------------------------------|
+| Autorização            | {token} de portador. Obrigatório.                         |
+| Prefira: outlook.timezone | Especifica o fuso horário para as propriedades de tempo na resposta, qual seria em UTC se este cabeçalho não for especificado. Opcional. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -57,9 +57,11 @@ Não forneça um corpo de solicitação para esse método.
 
 Se tiver êxito, este método retornará um `200 OK` objeto response de código e [outlookTask](../resources/outlooktask.md) no corpo da resposta.
 
-## <a name="example-1"></a>Exemplo 1
+## <a name="examples"></a>Exemplos
 
-### <a name="request"></a>Solicitação
+### <a name="example-1-get-an-outlook-task"></a>O exemplo 1: Obtenha uma tarefa do Outlook
+
+#### <a name="request"></a>Solicitação
 
 Este é um exemplo da solicitação.
 <!-- {
@@ -71,11 +73,14 @@ Este é um exemplo da solicitação.
 GET https://graph.microsoft.com/beta/me/outlook/tasks('AAMkADA1MTrgAAA=')
 ```
 
-### <a name="response"></a>Resposta
+<!-- markdownlint-disable MD024 -->
+
+#### <a name="response"></a>Resposta
 
 Veja a seguir um exemplo da resposta. Por padrão, as propriedades de data e hora na resposta estão em UTC.
 
-> Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** O objeto da resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -85,14 +90,13 @@ Veja a seguir um exemplo da resposta. Por padrão, as propriedades de data e hor
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 376
 
 {
   "id": "AAMkADA1MTrgAAA=",
   "createdDateTime": "2016-04-22T06:03:35.9279794Z",
   "lastModifiedDateTime": "2016-04-22T06:03:35.9436052Z",
   "changeKey": "1/KC9Vmu40G3DwB6Lgs7MAAAIOJMyQ==",
-  "categories": [ ],
+  "categories": [],
   "assignedTo": null,
   "body": {
     "contentType": "text",
@@ -103,7 +107,7 @@ Content-length: 376
     "dateTime": "2016-04-27T04:00:00.0000000",
     "timeZone": "UTC"
   },
-  "hasAttachments":false,
+  "hasAttachments": false,
   "importance": "normal",
   "isReminderOn": false,
   "owner": "Administrator",
@@ -120,11 +124,12 @@ Content-length: 376
 }
 ```
 
-## <a name="example-2"></a>Exemplo 2
+### <a name="example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time"></a>Exemplo 2: Obter tarefa do Outlook com as propriedades de data / hora em hora oficial do Pacífico
 
-### <a name="request"></a>Solicitação
+#### <a name="request"></a>Solicitação
 
-Este exemplo usa o `Prefer: outlook.timezone` cabeçalho para especificar a exibição de propriedades de data / hora na resposta na hora oficial do Pacífico.
+Este exemplo usa o `Prefer: outlook.timezone` cabeçalho para especificar que a API deve retornar as propriedades de data / hora na resposta na hora oficial do Pacífico.
+
 <!-- {
   "blockType": "request",
   "name": "get_outlooktask"
@@ -137,9 +142,10 @@ Prefer: outlook.timezone="Pacific Standard Time"
 
 ### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. As propriedades de data / hora na resposta são exibidas na hora oficial do Pacífico especificada.
+Veja a seguir um exemplo da resposta. As propriedades de data / hora na resposta são retornadas na hora oficial do Pacífico especificada.
 
-> Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** O objeto da resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -149,14 +155,13 @@ Veja a seguir um exemplo da resposta. As propriedades de data / hora na resposta
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 576
 
 {
   "id": "AAMkADA1MHgwAAA=",
   "createdDateTime": "2016-04-22T15:19:18.9526004-07:00",
   "lastModifiedDateTime": "2016-04-22T15:19:19.015101-07:00",
   "changeKey": "1/KC9Vmu40G3DwB6Lgs7MAAAIW9XXA==",
-  "categories": [ ],
+  "categories": [],
   "assignedTo": "Dana Swope",
   "body": {
     "contentType": "text",
@@ -167,7 +172,7 @@ Content-length: 576
     "dateTime": "2016-05-04T021:00:00.0000000",
     "timeZone": "Pacific Standard Time"
   },
-  "hasAttachments":false,
+  "hasAttachments": false,
   "importance": "normal",
   "isReminderOn": false,
   "owner": "Administrator",

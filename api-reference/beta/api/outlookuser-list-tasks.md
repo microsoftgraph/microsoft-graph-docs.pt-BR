@@ -4,12 +4,12 @@ description: Obtenha todas as tarefas do Outlook na caixa de correio do usuário
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 8a9f9af56f821890e01f2a77f5bfb953e7bd31f0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: f854d5649c311531e65909c3d6b33f356cd5bac2
+ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523894"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29967351"
 ---
 # <a name="list-tasks"></a>Listar tarefas
 
@@ -17,7 +17,8 @@ ms.locfileid: "29523894"
 
 Obtenha todas as tarefas do Outlook na caixa de correio do usuário.
 
-Por padrão, esta operação (e as operações de tarefa POST, PATCH e [Concluir](../api/outlooktask-complete.md) ) retorna propriedades relacionadas a data em UTC. Você pode usar o cabeçalho `Prefer: outlook.timezone` para que todas as propriedades relacionadas à data na resposta sejam representadas em um fuso horário diferente de UTC. Ver um [exemplo](outlooktask-get.md#example-2) para obter uma única tarefa. Você pode aplicar o cabeçalho da mesma forma para obter várias tarefas. 
+Por padrão, esta operação (e as operações de tarefa POST, PATCH e [Concluir](../api/outlooktask-complete.md) ) retorna propriedades relacionadas a data em UTC.
+Você pode usar o `Prefer: outlook.timezone` cabeçalho para que todas as propriedades relacionadas às datas como resposta representada em um fuso horário diferente do UTC. Ver um [exemplo](outlooktask-get.md#example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time) para obter uma única tarefa. Você pode aplicar o cabeçalho da mesma forma para obter várias tarefas.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -59,7 +60,7 @@ Este é um exemplo da solicitação.
 GET https://graph.microsoft.com/beta/me/outlook/tasks
 ```
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Por padrão, as propriedades de data e hora na resposta estão em UTC. 
+Veja a seguir um exemplo da resposta. Por padrão, as propriedades de data e hora na resposta estão em UTC.
 
 Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {

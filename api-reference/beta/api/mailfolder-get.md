@@ -4,12 +4,12 @@ description: Recupere as propriedades e os relacionamentos de um objeto da pasta
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: eee7adf677696fbf2dc969262604b817c7cddabe
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: af2cc42c2ee72f1a57a1e0f9402209c107e259f4
+ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529905"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29967295"
 ---
 # <a name="get-mailfolder"></a>Obter mailFolder
 
@@ -19,11 +19,11 @@ Recupere as propriedades e os relacionamentos de um objeto da pasta de mensagens
 
 Há dois cenários onde um aplicativo pode obter a pasta de correio de outro usuário:
 
-* Se o aplicativo tem permissões de aplicativo, ou,
-* Se o aplicativo tiver apropriada [permissões](#permissions) delegadas de um usuário, e outro usuário compartilhou uma pasta de email com que o usuário ou, tem acesso delegado a esse usuário. Consulte os [detalhes e um exemplo](/graph/outlook-share-messages-folders).
-
+* Se o aplicativo tem permissões de aplicativo ou
+* Se o aplicativo tiver apropriada [permissões](#permissions) delegadas de um usuário, e outro usuário compartilhou uma pasta de email com que o usuário ou, tem acesso delegado a esse usuário. Confira os [detalhes e um exemplo](/graph/outlook-share-messages-folders).
 
 ## <a name="permissions"></a>Permissões
+
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -33,93 +33,124 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Aplicativo | Mail.Read, Mail.ReadWrite |
 
 ## <a name="http-request"></a>Solicitação HTTP
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/mailFolders/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+
 Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome       | Tipo | Descrição|
-|:-----------|:------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+
+| Nome          | Tipo   | Descrição               |
+|:--------------|:-------|:--------------------------|
+| Autorização | string | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
+
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
+
 Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [mailFolder](../resources/mailfolder.md) no corpo da resposta.
 
-## <a name="example-1"></a>Exemplo 1
-#### <a name="request-1"></a>Solicitação 1
+## <a name="examples"></a>Exemplos
+
+### <a name="example-1-get-a-mail-folder"></a>O exemplo 1: Obtenha uma pasta de email
+
+#### <a name="request"></a>Solicitação
+
 Este é um exemplo de solicitação.
+
 <!-- {
   "blockType": "request",
   "name": "get_mailfolder"
 }-->
+
 ```http
 GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM
 ```
 
-#### <a name="response-1"></a>Resposta 1
+<!-- markdownlint-disable MD024 -->
+
+#### <a name="response"></a>Resposta
+
 Este é um exemplo de resposta.
- >**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+
+> **Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.mailFolder"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 179
 
 {
-    "id": "AAMkAGVmMDEzM",
-    "displayName": "Inbox",
-    "parentFolderId": "AAMkAGVmMDEzI",
-    "childFolderCount": 2,
-    "unreadItemCount": 59,
-    "totalItemCount": 60,
-    "wellKnownName": "inbox"
+  "id": "AAMkAGVmMDEzM",
+  "displayName": "Inbox",
+  "parentFolderId": "AAMkAGVmMDEzI",
+  "childFolderCount": 2,
+  "unreadItemCount": 59,
+  "totalItemCount": 60,
+  "wellKnownName": "inbox"
 }
 ```
 
-## <a name="example-2"></a>Exemplo 2
-#### <a name="request-2"></a>Solicitação 2
-O exemplo a seguir é um exemplo de pasta de pesquisa da solicitação.
+### <a name="example-2-get-a-mail-search-folder"></a>Exemplo 2: Obter uma pasta de pesquisa de email
+
+#### <a name="request"></a>Solicitação
+
+Este é um exemplo de solicitação.
+
 <!-- {
   "blockType": "request",
   "name": "get_mailSearchfolder"
 }-->
+
 ```http
-GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM
+GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzN
 ```
 
-#### <a name="response-2"></a>Resposta 2
+#### <a name="response"></a>Resposta
+
 Este é um exemplo de resposta.
- >**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+
+> **Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.mailSearchFolder"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 179
 
 {
-    "id": "AAMkAGVmMDEzM",
-    "displayName": "Inbox",
-    "parentFolderId": "AAMkAGVmMDEzI",
-    "childFolderCount": 2,
-    "unreadItemCount": 59,
-    "totalItemCount": 60,
-    "wellKnownName": "inbox"
+  "@odata.type": "#microsoft.graph.mailSearchFolder",
+  "id": "AAMkAGVmMDEzN",
+  "displayName": "Get MyAnalytics",
+  "parentFolderId": "AAMkAGVmMDEzI",
+  "childFolderCount": 0,
+  "unreadItemCount": 6,
+  "totalItemCount": 6,
+  "wellKnownName": null,
+  "isSupported": true,
+  "includeNestedFolders": true,
+  "sourceFolderIDs": [
+    "AAMkAGVmMDEzM"
+  ],
+  "filterQuery": "contains(subject, 'MyAnalytics')"
 }
 ```
 

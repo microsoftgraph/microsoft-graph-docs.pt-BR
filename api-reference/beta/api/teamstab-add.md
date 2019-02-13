@@ -1,21 +1,21 @@
 ---
-title: Adicionar guia ao canal
-description: 'Adiciona (pins) uma guia para o canal especificado dentro de uma equipe. '
+title: Adicionar uma guia ao canal
+description: 'Adiciona (pins) a uma guia para o canal especificado dentro de uma equipe. '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1de8cfe1d553a6e0f70653aa4fe1d978c8d92323
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 5235cc7dd99098fce1bdad437a74d65e6a437742
+ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29570929"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29967225"
 ---
-# <a name="add-tab-to-channel"></a>Adicionar guia ao canal
+# <a name="add-tab-to-channel"></a>Adicionar uma guia ao canal
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adiciona (pins) um [guia](../resources/teamstab.md) para o [canal](../resources/channel.md) especificado dentro de uma [equipe](../resources/team.md). O aplicativo correspondente já deve estar [instalado na equipe de](../api/teamsappinstallation-add.md).
+Adiciona (pins) a uma [guia](../resources/teamstab.md) para o canal [especificado](../resources/channel.md) dentro de uma [equipe](../resources/team.md). O aplicativo correspondente já deve estar [instalado na equipe](../api/teamsappinstallation-add.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 | Aplicativo                            | Group.ReadWrite.All                         |
 
-> **Observação**: Esta API oferece suporte a permissões de administrador. Administradores globais e administradores de serviço de Teams da Microsoft podem acessar as equipes que eles não serão um membro do.
+> **Observação**: esta API oferece suporte a permissões de administrador. Os administradores globais e os administradores do serviço do Microsoft Teams podem acessar equipes das quais eles não são membros.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +41,7 @@ POST /teams/{id}/channels/{id}/tabs
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-Um [teamsTab](../resources/teamstab.md).
+Uma [teamsTab](../resources/teamstab.md).
 
 ## <a name="response"></a>Resposta
 
@@ -59,7 +59,7 @@ Este é um exemplo de solicitação.
 ```http
 POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs
 {
-  "name": "My Contoso Tab",
+  "displayName": "My Contoso Tab",
   "teamsApp@odata.bind" : "https://graph.microsoft.com/beta/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8",
   "configuration": {
     "entityId": "2DCA2E6C7A10415CAF6B8AB6661B3154",
@@ -72,7 +72,7 @@ POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs
 
 #### <a name="response"></a>Resposta
 
-Este é um exemplo de resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Este é um exemplo de resposta. Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "ignored",
   "truncated": true,
@@ -85,7 +85,7 @@ Content-type: application/json
 
 {
   "id": "794f0e4e-4d10-4bb5-9079-3a465a629eff",
-  "name": "My Contoso Tab",
+  "displayName": "My Contoso Tab",
   "configuration": {
     "entityId": "2DCA2E6C7A10415CAF6B8AB6661B3154",
     "contentUrl": "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154/tabView",
@@ -99,7 +99,7 @@ Content-type: application/json
 
 ## <a name="see-also"></a>Confira também
 
-[Configurando os tipos de guia interna](/graph/teams-configuring-builtin-tabs)
+[Configurar tipos de guia internos](/graph/teams-configuring-builtin-tabs)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

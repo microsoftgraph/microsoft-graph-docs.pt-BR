@@ -1,17 +1,17 @@
 ---
-title: Atualizar alertas
+title: Atualizar alerta
 description: Atualize uma propriedade editável de alerta em qualquer solução integrada para manter o status de alerta e atribuições em sincronia nas soluções.
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: fc0bc88dad83024d3da2d6f2adf3f16288719cb2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 8b1fec6bfca2ce116bc35c4a7c8a115418b15012
+ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517411"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29967323"
 ---
-# <a name="update-alert"></a>Atualizar alertas
+# <a name="update-alert"></a>Atualizar alerta
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -53,7 +53,7 @@ No corpo da solicitação, fornece uma representação JSON dos valores para os 
 |closedDateTime|DateTimeOffset|Tempo em que o alerta foi fechado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
 |comentários|String collection|Comentários de analistas no alerta (para gerenciamento de alerta do cliente).|
 |comentários|enumeração alertFeedback|Comentários do analista no alerta. Os valores possíveis são: `unknown`, `truePositive`, `falsePositive`, `benignPositive`.|
-|status|enumeração alertStatus|Status de alerta de ciclo de vida (estágio). Os valores possíveis são: `unknown`, `newAlert`, `inProgress`, `resolved`.|
+|status|enumeração alertStatus|Status do ciclo de vida de alerta (estágio). Os valores possíveis são: `unknown`, `newAlert`, `inProgress`, `resolved`.|
 |marcações|String collection|Rótulos podem ser definidos pelo usuário que podem ser aplicados a um alerta e podem servir como condições de filtro (por exemplo, "HVA", "SERRA).|
 |vendorInformation |[securityVendorInformation](../resources/securityvendorinformation.md)|Tipo complexo que contém detalhes sobre o fornecedor, provedor e subprovedor de produtos / serviços de segurança (por exemplo, fornecedor = Microsoft; provedor = Windows Defender ATP; subProvedor = AppLocker). **Campos de provedor e fornecedor são necessários.**|
 
@@ -63,11 +63,13 @@ Se tiver êxito, este método retornará um código de resposta `204 No Content`
 
 Se o cabeçalho de solicitação opcional for usado, o método retornará um `200 OK` código de resposta e o objeto atualizado [alerta](../resources/alert.md) no corpo da resposta.
 
-## <a name="example-1"></a>Exemplo 1
+## <a name="examples"></a>Exemplos
 
-### <a name="request"></a>Solicitação
+### <a name="example-1-request-without-prefer-header"></a>Exemplo 1: Solicitação sem cabeçalho Prefer
 
-Este é um exemplo de solicitação.
+#### <a name="request"></a>Solicitação
+
+A seguir está um exemplo da solicitação sem o `Prefer` cabeçalho.
 <!-- {
   "blockType": "request",
   "name": "update_alert"
@@ -92,7 +94,9 @@ Content-type: application/json
 }
 ```
 
-### <a name="response"></a>Resposta
+<!-- markdownlint-disable MD024 -->
+
+#### <a name="response"></a>Resposta
 
 Veja a seguir o exemplo de uma resposta bem-sucedida.
 <!-- {
@@ -105,9 +109,9 @@ Veja a seguir o exemplo de uma resposta bem-sucedida.
 HTTP/1.1 204 No Content
 ```
 
-## <a name="example-2"></a>Exemplo 2
+### <a name="example-2-request-with-prefer-header"></a>Exemplo 2: Solicitação com Prefer cabeçalho
 
-### <a name="request"></a>Solicitação
+#### <a name="request"></a>Solicitação
 
 O exemplo a seguir mostra uma solicitação que inclui o `Prefer` cabeçalho de solicitação.
 
@@ -136,7 +140,7 @@ Prefer: return=representation
 }
 ```
 
-### <a name="response"></a>Resposta
+#### <a name="response"></a>Resposta
 
 A seguir está um exemplo da resposta quando o opcional `Prefer: return=representation` cabeçalho de solicitação é usado.
 

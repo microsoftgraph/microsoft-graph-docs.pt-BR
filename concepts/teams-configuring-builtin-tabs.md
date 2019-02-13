@@ -4,12 +4,12 @@ description: Para criar ou configurar uma guia do Microsoft Teams usando as APIs
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 3f5ed08c25fad9b285397307f6c8e7f1d6cc70a1
-ms.sourcegitcommit: 02a3ae7f3070d38d949158808545003e85ae8fe7
-ms.translationtype: HT
+ms.openlocfilehash: b14fa7fac0106d03e930ea8e6601616f81076955
+ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726537"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29967190"
 ---
 # <a name="configuring-the-built-in-tab-types-in-microsoft-teams"></a>Configurar tipos de guia internos no Microsoft Teams
 
@@ -18,9 +18,9 @@ Este artigo explica como obter esses valores para os tipos internos de guia.
 
 ## <a name="custom-tabs"></a>Guias personalizadas
 
-Para usar o Microsoft Graph para configurar uma guia associada a um [provedor de guia](https://docs.microsoft.com/pt-BR/microsoftteams/platform/concepts/tabs/tabs-overview) que você escreveu, identifique o `entityId`, o `contentUrl`, o `removeUrl` e o `websiteUrl` que a [interface do usuário de configuração do aplicativo fornece ao Microsoft Teams](https://docs.microsoft.com/en-us/javascript/api/@microsoft/teams-js/microsoftteams.settings.settings?view=msteams-client-js-latest) e passe os mesmos valores de `entityId`, `contentUrl`, `removeUrl`, e `websiteUrl` valores para o Microsoft Graph.
+Para usar o Microsoft Graph para configurar uma guia associada a um [provedor de guia](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/tabs/tabs-overview) que você escreveu, identifique o `entityId`, o `contentUrl`, o `removeUrl` e o `websiteUrl` que a [interface do usuário de configuração do aplicativo fornece ao Microsoft Teams](https://docs.microsoft.com/en-us/javascript/api/@microsoft/teams-js/microsoftteams.settings.settings?view=msteams-client-js-latest) e passe os mesmos valores de `entityId`, `contentUrl`, `removeUrl`, e `websiteUrl` valores para o Microsoft Graph.
 
-O `teamsAppId` é igual a `id` no [esquema manifesto de aplicativo do Microsoft Teams](https://docs.microsoft.com/pt-BR/microsoftteams/platform/resources/schema/manifest-schema).
+O `teamsAppId` é igual a `id` no [esquema manifesto de aplicativo do Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/platform/resources/schema/manifest-schema).
 
 ## <a name="website-tabs"></a>Guias de site
 
@@ -115,7 +115,32 @@ Observe, contudo, que não há muito o que configurar. Em uma guia da wiki não 
 
 ## <a name="document-library-tabs"></a>Guias de biblioteca de documentos
 
-Para as guias de biblioteca de documentos, o `teamsAppId` é `com.microsoft.teamspace.tab.files.sharepoint`. Essa configuração não é compatível.
+Para as guias de biblioteca de documentos, o `teamsAppId` é `com.microsoft.teamspace.tab.files.sharepoint`. A configuração é a mostrada a seguir.
+
+| Propriedade   | Tipo        | Descrição                                              |
+| ---------- | ----------- | -------------------------------------------------------- |
+| entityId   | string      | Cadeia de caracteres vazia ("")                                        |
+| contentUrl | string      | A URL da pasta raiz da biblioteca de documentos. Você pode encontrar essa URL abrindo a pasta do SharePoint no seu navegador, copiando a URL e excluindo "/ Forms/AllItems.aspx" e tudo depois disso. |
+| removeUrl  | string      | Nulo                                                     |
+| websiteUrl | string      | Nulo                                                     |
+
+### <a name="example-create-a-configured-document-library-tab"></a>Exemplo: Criar uma guia de biblioteca de documentos configurados
+
+O exemplo a seguir criar uma guia configurada do Word.
+
+```http
+POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
+{
+    "displayName": "Document%20Library1",
+    "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/com.microsoft.teamspace.tab.files.sharepoint",
+    "configuration": {
+        "entityId": "",
+        "contentUrl": "https://microsoft.sharepoint-df.com/teams/WWWtest/Shared%20Documents",
+        "removeUrl": null,
+        "websiteUrl": null
+    }
+}
+```
 
 ## <a name="onenote-tabs"></a>Guias do OneNote
 

@@ -4,12 +4,12 @@ description: 'Obter a coleção de pasta sob a pasta especificada. Você pode us
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 9d54828b97bb82c9ce0ee9eceeee86a4aa975c3d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 96dec9ca1ba6dbd8e50e8eb978756a98657d2c9d
+ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512546"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29967232"
 ---
 # <a name="list-childfolders"></a>Listar childFolders
 
@@ -18,49 +18,66 @@ ms.locfileid: "29512546"
 Obtenha a coleção de pastas sob a pasta especificada. Você pode usar o atalho `.../me/MailFolders` para obter a coleção de pastas de nível superior e navegar até outra pasta.
 
 ## <a name="permissions"></a>Permissões
+
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-|Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Mail.Read, Mail.ReadWrite    |
-|Delegado (conta pessoal da Microsoft) | Mail.Read, Mail.ReadWrite    |
-|Aplicativo | Mail.Read, Mail.ReadWrite |
+| Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
+|:---------------------------------------|:------------------------------------|
+| Delegado (conta corporativa ou de estudante)     | Mail.Read, Mail.ReadWrite           |
+| Delegado (conta pessoal da Microsoft) | Mail.Read, Mail.ReadWrite           |
+| Aplicativo                            | Mail.Read, Mail.ReadWrite           |
 
 ## <a name="http-request"></a>Solicitação HTTP
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/mailFolders/{id}/childFolders
 GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
+
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
-| Nome       | Tipo | Descrição|
-|:-----------|:------|:----------|
-| Autorização  | string  | {token} de portador. Obrigatório. |
+
+| Nome          | Tipo   | Descrição               |
+|:--------------|:-------|:--------------------------|
+| Autorização | string | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
+
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
+
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [MailFolder](../resources/mailfolder.md) no corpo da resposta.
 
-## <a name="example-1"></a>Exemplo 1
-#### <a name="request-1"></a>Solicitação 1
+## <a name="examples"></a>Exemplos
+
+### <a name="example-1-list-mail-folders"></a>O exemplo 1: Lista de pastas de email
+
+#### <a name="request"></a>Solicitação
+
 Este é um exemplo de solicitação.
+
 <!-- {
   "blockType": "request",
   "name": "get_childfolders"
 }-->
+
 ```http
 GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/childFolders
 ```
 
-#### <a name="response-1"></a>Resposta 1
+<!-- markdownlint-disable MD024 -->
+
+#### <a name="response"></a>Resposta
+
 Este é um exemplo de resposta.
->**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+
+> **Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
   "blockType": "response",
@@ -68,58 +85,64 @@ Este é um exemplo de resposta.
   "@odata.type": "microsoft.graph.mailFolder",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 232
 
 {
   "value": [
     {
-        "id": "AAMkAGVmMDEzA",
-        "displayName": "Internal Screens",
-        "parentFolderId": "AAMkAGVmMDEzM",
-        "childFolderCount": 0,
-        "unreadItemCount": 2,
-        "totalItemCount": 2,
-        "wellKnownName": null
+      "id": "AAMkAGVmMDEzA",
+      "displayName": "Internal Screens",
+      "parentFolderId": "AAMkAGVmMDEzM",
+      "childFolderCount": 0,
+      "unreadItemCount": 2,
+      "totalItemCount": 2,
+      "wellKnownName": null
     },
     {
-        "id": "AAMkAGVmMDEzB",
-        "displayName": "Project Falcon",
-        "parentFolderId": "AAMkAGVmMDEzM",
-        "childFolderCount": 0,
-        "unreadItemCount": 5,
-        "totalItemCount": 5,
-        "wellKnownName": null
+      "id": "AAMkAGVmMDEzB",
+      "displayName": "Project Falcon",
+      "parentFolderId": "AAMkAGVmMDEzM",
+      "childFolderCount": 0,
+      "unreadItemCount": 5,
+      "totalItemCount": 5,
+      "wellKnownName": null
     },
     {
-        "id": "AAMkAGVmMDEzMA",
-        "displayName": "Finder",
-        "parentFolderId": "AAMkAGVmMDEzM",
-        "childFolderCount": 4,
-        "unreadItemCount": 0,
-        "totalItemCount": 0,
-        "wellKnownName": "searchfolders"
+      "id": "AAMkAGVmMDEzMA",
+      "displayName": "Finder",
+      "parentFolderId": "AAMkAGVmMDEzM",
+      "childFolderCount": 4,
+      "unreadItemCount": 0,
+      "totalItemCount": 0,
+      "wellKnownName": "searchfolders"
     }
   ]
 }
 ```
 
-## <a name="example-2"></a>Exemplo 2
-#### <a name="request-2"></a>Solicitação 2
+### <a name="example-2-list-mail-search-folders"></a>Exemplo 2: Lista as pastas de pesquisa de email
+
+#### <a name="request"></a>Solicitação
+
 Este é um exemplo de solicitação.
+
 <!-- {
   "blockType": "request",
   "name": "get_childfolders_of_searchfolders"
 }-->
+
 ```http
 GET https://graph.microsoft.com/beta/me/mailFolders/searchfolders/childFolders
 ```
 
-#### <a name="response-2"></a>Resposta 2
+#### <a name="response"></a>Resposta
+
 Este é um exemplo de resposta.
->**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+
+> **Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
   "blockType": "response",
@@ -127,39 +150,36 @@ Este é um exemplo de resposta.
   "@odata.type": "microsoft.graph.mailSearchFolder",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 232
 
 {
   "value": [
     {
-        "id": "AAMkAGVmMDEzA",
-        "displayName": "Internal Screens",
-        "parentFolderId": "AAMkAGVmMDEzM",
-        "childFolderCount": 0,
-        "unreadItemCount": 2,
-        "totalItemCount": 2,
-        "wellKnownName": null
+      "@odata.type": "#microsoft.graph.mailSearchFolder",
+      "id": "AAMkAGE1NWMz",
+      "displayName": "Get MyAnalytics",
+      "parentFolderId": "AAMkAGE1NWMx",
+      "childFolderCount": 0,
+      "unreadItemCount": 6,
+      "totalItemCount": 6,
+      "wellKnownName": null,
+      "isSupported": true,
+      "filterQuery": "contains(subject, 'MyAnalytics')"
     },
     {
-        "id": "AAMkAGVmMDEzB",
-        "displayName": "Project Falcon",
-        "parentFolderId": "AAMkAGVmMDEzM",
-        "childFolderCount": 0,
-        "unreadItemCount": 5,
-        "totalItemCount": 5,
-        "wellKnownName": null
-    },
-    {
-        "id": "AAMkAGVmMDEzMA",
-        "displayName": "Finder",
-        "parentFolderId": "AAMkAGVmMDEzM",
-        "childFolderCount": 4,
-        "unreadItemCount": 0,
-        "totalItemCount": 0,
-        "wellKnownName": "searchfolders"
+      "@odata.type": "#microsoft.graph.mailSearchFolder",
+      "id": "AAMkAGE1NWMy",
+      "displayName": "Action Required",
+      "parentFolderId": "AAMkAGE1NWMx",
+      "childFolderCount": 0,
+      "unreadItemCount": 2,
+      "totalItemCount": 4,
+      "wellKnownName": null,
+      "isSupported": true,
+      "filterQuery": "contains(subject, 'ACTION REQUIRED')"
     }
   ]
 }
