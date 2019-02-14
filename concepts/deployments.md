@@ -1,12 +1,12 @@
 ---
 title: Implantações de nuvens nacionais
 description: Além de uma rede global de datacenters, os serviços em nuvem da Microsoft estão disponíveis em três nuvens nacionais separadas. Essas versões nacional de nuvem são físicas e lógicas instâncias de isolados de rede de serviços de nuvem empresarial da Microsoft que são confinados dentro das bordas geográficas determinados países e operados pela equipe de local.
-ms.openlocfilehash: 06ca3c24cba17e2d18fc4755f00a2c754e508f88
-ms.sourcegitcommit: 597dfc95a44e0f2354d056b5567bcff2bb2837f1
+ms.openlocfilehash: e32330397a75670238f090599635ca68a89f115e
+ms.sourcegitcommit: a4773239d8559899c3f9433b3073e250a56d2e04
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "29892495"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29994388"
 ---
 # <a name="national-cloud-deployments"></a>Implantações de nuvem nacional
 
@@ -64,11 +64,11 @@ Os seguintes recursos do Microsoft Graph existem disponíveis no mercado de `/v1
 | Email do Outlook | ✔ | ✔ | ✔ |
 | Calendário do Outlook | ✔ | ✔ | ✔ |
 | Contatos Pessoais | ✔ | ✔ | ✔ |
-| SharePoint| ✔ | ✔* | ✔ |
+| SharePoint| ✔ | ✔ | ✔ |
 | Planner|✔ |✔ |✔ |
 | Relatórios  |➖| ✔ |➖|
+| Webhooks  | ➖|✔* |✔* |
 | Consulta delta | ➖ | ➖| ➖ |
-| Webhooks  | ➖| ➖| ➖
 |Extensões de esquema de diretório |➖|➖|➖|
 | Extensões de tipo aberto|➖|➖|➖|
   
@@ -78,7 +78,7 @@ Os seguintes recursos do Microsoft Graph adicionais estão disponíveis no modo 
 * Aplicativos
 * Entidades de serviço
 
-(*) Suporte limitado para essa API neste nuvem.
+(*) Suporte limitado para apenas os serviços Exchange e OneDrive. Serviços do Azure AD não são suportados. 
 
  > **Importante:** Determinados serviços e recursos que estão em regiões específicas do serviço global podem não estar disponíveis em todas as nuvens nacionais. Para descobrir quais serviços estão disponíveis, consulte [produtos disponíveis por região](https://azure.microsoft.com/global-infrastructure/services/?products=all&regions=usgov-non-regional,us-dod-central,us-dod-east,usgov-arizona,usgov-iowa,usgov-texas,usgov-virginia,china-non-regional,china-east,china-east-2,china-north,china-north-2,germany-non-regional,germany-central,germany-northeast).
 
