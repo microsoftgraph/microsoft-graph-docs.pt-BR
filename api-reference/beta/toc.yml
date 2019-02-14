@@ -171,7 +171,7 @@ items:
                 href: api/user-list-messages.md
               - name: Criar mensagem
                 href: api/user-post-messages.md
-              - name: Listar Substituições
+              - name: Listar substituições
                 href: api/inferenceclassification-list-overrides.md
               - name: Criar Substituição
                 href: api/inferenceclassification-post-overrides.md
@@ -7269,7 +7269,7 @@ items:
             items:
               - name: Criar Substituição
                 href: api/inferenceclassification-post-overrides.md
-              - name: Listar Substituições
+              - name: Listar substituições
                 href: api/inferenceclassification-list-overrides.md
               - name: Atualizar Substituição
                 href: api/inferenceclassificationoverride-update.md
@@ -7383,6 +7383,8 @@ items:
                 href: api/notebook-copynotebook.md
               - name: Obter blocos de anotações recentes
                 href: api/notebook-getrecentnotebooks.md
+              - name: Obter o bloco de anotações da URL da web
+                href: api/notebook-getnotebookfromweburl.md
               - name: Listar seções
                 href: api/notebook-list-sections.md
               - name: Criar seção
