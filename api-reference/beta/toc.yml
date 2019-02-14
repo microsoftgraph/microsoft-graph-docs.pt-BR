@@ -8014,11 +8014,10 @@ items:
                 href: api/channel-list-messagereplies.md
               - name: Obter resposta da mensagem
                 href: api/channel-get-messagereply.md
-          - name: Thread de chat
-            href: resources/chatthread.md
-            items:
-              - name: Criar thread de chat
-                href: api/channel-post-chatthreads.md
+              - name: Criar mensagem
+                href: api/channel-post-chatmessage.md
+              - name: Responder à mensagem
+                href: api/channel-post-messagereply.md
           - name: Aplicativos
             href: resources/teamsapp.md
             items:
