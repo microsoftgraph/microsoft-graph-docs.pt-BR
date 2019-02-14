@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 8ab58d47fc40434c17d6adf181724823e2f27da7
-ms.sourcegitcommit: d91ca408bae7842ea4d1d94b49594fd82a32e0c9
+ms.openlocfilehash: 8c97053db703709a172cc8403d3fb2fb1973aa71
+ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "29745591"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29967211"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -17,6 +17,12 @@ Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as 
 Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em [problemas conhecidos](known-issues.md).
 
 ## <a name="february-2019"></a>Fevereiro de 2019
+
+### <a name="onenote"></a>OneNote
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição        | Beta e v1.0 | Adicionar o método [getNotebookFromWebUrl](/graph/api/notebook-getnotebookfromweburl?view=graph-rest-1.0). |
 
 ### <a name="directory-apis"></a>APIs de diretório
 
@@ -36,6 +42,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 |Adição |Beta e v1.0| Adicionada a propriedade **internalId** ao recurso [team](/graph/api/resources/team?view=graph-rest-v1.0).|
+|Adição |Beta e v1.0| Adicionar suporte para configurar o Word, Excel, PowerPoint, PDF e biblioteca de documentos [guias](teams-configuring-builtin-tabs.md). |
 
 ## <a name="january-2019"></a>Janeiro de 2019
 
@@ -50,7 +57,6 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | **Tipo de alteração** | **Versão** | **Descrição**                  |
 |:----------------|:------------|:-----------------------------------------|
 | Adição        | Beta  | Foram adicionadas as propriedades **office365Active** e **office365Inactive** à entrada [office365ServicesUserCounts](/graph/api/resources/office365ServicesUserCounts?view=graph-rest-beta).|
-
 
 ### <a name="directory-apis"></a>APIs de diretório
 
@@ -1015,7 +1021,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 ### <a name="reports-apis"></a>APIs de relatórios
 |Tipo de alteração|Versão|Descrição|
 |:---|:---|:---|
-|Adição|beta| Adição de suporte para acesso delegado. |
+|Adição|beta| Adição de suporte para acesso do delegado. |
 |Adição|v1.0| Adição de suporte para acesso delegado. |
 
 ### <a name="security-apis"></a>APIs de segurança
