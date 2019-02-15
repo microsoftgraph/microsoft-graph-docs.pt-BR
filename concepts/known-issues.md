@@ -3,12 +3,12 @@ title: Problemas conhecidos com o Microsoft Graph
 description: Este artigo descreve os problemas conhecidos com o Microsoft Graph. Confira as informações sobre as atualizações mais recentes no Log de alterações do Microsoft Graph.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 351b02e3d423458fba8dbaec2050530ccaba4df0
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 21667092deabf8a0c078da114325c25dbe223045
+ms.sourcegitcommit: a4773239d8559899c3f9433b3073e250a56d2e04
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576784"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29994395"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conhecidos com o Microsoft Graph
 
@@ -38,10 +38,6 @@ A leitura e a atualização da foto do perfil do usuário só serão possíveis 
 Para saber mais sobre problemas conhecidos com o uso da consulta delta, veja a [seção da consulta delta](#delta-query) deste artigo.
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
-
-### <a name="create-chat-thread-api"></a>Criar API de thread de chat
-
-A API atual para [criar um thread de chat](/graph/api/channel-post-chatthreads?view=graph-rest-beta) será substituída por uma API mais rica, consistente com o esquema para [listar mensagens de canais](/graph/api/channel-list-messages?view=graph-rest-beta).
 
 ### <a name="graph-explorer-and-global-admins"></a>Explorador do Graph e administradores globais
 
