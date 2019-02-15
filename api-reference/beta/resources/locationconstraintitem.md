@@ -2,12 +2,14 @@
 title: Tipo de recurso locationConstraintItem
 description: As condições indicadas por um cliente para o local de uma reunião.
 localization_priority: Normal
-ms.openlocfilehash: 9752b3acec2dd9071e31b743245d662168ecdfd6
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 8e0b14096d8be66a6aab6d4e73cf0941d7db7b5c
+ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508850"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "30056998"
 ---
 # <a name="locationconstraintitem-resource-type"></a>Tipo de recurso locationConstraintItem
 
@@ -15,7 +17,7 @@ ms.locfileid: "29508850"
 
 As condições indicadas por um cliente para o local de uma reunião.
 
-Derivado de [location](location.md).
+Derivado de [locationDataModel](locationdatamodel.md).
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -48,7 +50,7 @@ Veja a seguir uma representação JSON do recurso
 | displayName  | String | O nome associado ao local.                       |
 | locationEmailAddress | String | O endereço de email opcional do local. |
 | locationUri | String | URI opcional que representa o local. |
-| resolveAvailability | Booliano | Se definido como true e o recurso especificado está ocupado, [findMeetingTimes](../api/user-findmeetingtimes.md) procura outro recurso livre. Se definido como false e o recurso especificado está ocupado, **findMeetingTimes** retorna o recurso melhor classificado no cache do usuário sem verificar se ele está livre. O padrão é true. |
+| resolveAvailability | Boolean | Se definido como true e o recurso especificado está ocupado, [findMeetingTimes](../api/user-findmeetingtimes.md) procura outro recurso livre. Se definido como false e o recurso especificado está ocupado, **findMeetingTimes** retorna o recurso melhor classificado no cache do usuário sem verificar se ele está livre. O padrão é true. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

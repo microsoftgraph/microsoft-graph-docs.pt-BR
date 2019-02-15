@@ -1,21 +1,23 @@
 ---
-title: Adicionar o aplicativo à equipe
+title: Adicionar aplicativo à equipe
 description: Instala um aplicativo para a equipe especificada.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 353298dc43479057e689f43e3a7274523468caee
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 35d2521d9bff37ea45f7496a825429762daaf8f7
+ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516823"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "30056991"
 ---
-# <a name="add-app-to-team"></a>Adicionar o aplicativo à equipe
+# <a name="add-app-to-team"></a>Adicionar aplicativo à equipe
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Instala um [aplicativo](../resources/teamsapp.md) para a [equipe](../resources/team.md)de especificado.
+Instala um [aplicativo](../resources/teamsapp.md) para a [equipe](../resources/team.md)especificada.
+
+>**Observação:** Se você estiver usando permissões de aplicativo, ocorrerá um problema conhecido. Para saber mais, confira [problemas conhecidos](graph/concepts/known-issues.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -24,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Sem suporte. |
+|Aplicativo | Group.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +43,7 @@ POST /teams/{id}/installedApps
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|teamsApp|String|A id do aplicativo para adicionar.|
+|teamsApp|String|A ID do aplicativo a ser adicionado.|
 
 
 ## <a name="response"></a>Resposta
@@ -61,7 +63,7 @@ POST https://graph.microsoft.com/beta/teams/{id}/installedApps
 }
 ```
 #### <a name="response"></a>Resposta
-Este é um exemplo de resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Este é um exemplo de resposta. Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "ignored",
   "truncated": true,
@@ -91,5 +93,5 @@ Content-length: 401
 }
 -->
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 

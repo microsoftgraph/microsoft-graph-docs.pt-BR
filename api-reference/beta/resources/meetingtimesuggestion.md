@@ -1,15 +1,15 @@
 ---
 title: Tipo de recurso meetingTimeSuggestion
-description: 'Uma sugestão de reunião que inclui informações sobre como tempo de reunião, a probabilidade de presença, indivíduo '
+description: 'Uma sugestão de reunião que inclui informações como o horário da reunião, a probabilidade de presença, individual '
 localization_priority: Normal
-author: VinodRavichandran
-ms.prod: microsoft-teams
-ms.openlocfilehash: 029e579ce5cba0a578741cb4ce30886090a71cd6
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 379bb4ac4be8e2d8d1bec494cf4d573550d46b55
+ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523180"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "30057026"
 ---
 # <a name="meetingtimesuggestion-resource-type"></a>Tipo de recurso meetingTimeSuggestion
 
@@ -31,10 +31,11 @@ Veja a seguir uma representação JSON do recurso
 
 ```json
 {
-  "attendeeAvailability": [{"@odata.type": "microsoft.graph.attendeeAvailability"}],
+  "attendeeAvailability": [{"@odata.type": "microsoft.graph.attendeeAvailabilityDataModel"}],
   "confidence": 1024.0,
-  "locations": [{"@odata.type": "microsoft.graph.location"}],
-  "meetingTimeSlot": {"@odata.type": "microsoft.graph.timeSlot"},
+  "locations": [{"@odata.type": "microsoft.graph.locationDataModel"}],
+  "meetingTimeSlot": {"@odata.type": "microsoft.graph.meetingTimeSlotDataModel"},
+  "order": 1024,
   "organizerAvailability": "String",
   "suggestionReason": "String"
 }
@@ -43,11 +44,11 @@ Veja a seguir uma representação JSON do recurso
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|attendeeAvailability|[attendeeAvailability](attendeeavailability.md) collection|Uma matriz que mostra o status de disponibilidade de cada participante para essa sugestão da reunião.|
+|attendeeAvailability|coleção [attendeeAvailabilityDataModel](attendeeavailabilitydatamodel.md)|Uma matriz que mostra o status de disponibilidade de cada participante para essa sugestão da reunião.|
 |confidence|Double|Uma porcentagem que representa a probabilidade de todos os participantes comparecerem.|
-|locations|Coleção [location](location.md)|Uma matriz que especifica o nome e a localização geográfica de cada local da reunião para esta sugestão de reunião.|
-|meetingTimeSlot|[timeSlot](timeslot.md)|Um período de tempo sugerido para a reunião.|
-|organizerAvailability|String| Disponibilidade do organizador da reunião para essa sugestão de reunião. Os possíveis valores são: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
+|locations|coleção [locationDataModel](locationdatamodel.md)|Uma matriz que especifica o nome e a localização geográfica de cada local da reunião para esta sugestão de reunião.|
+|meetingTimeSlot|[meetingTimeSlotDataModel](meetingtimeslotdatamodel.md)|Um período de tempo sugerido para a reunião.|
+|organizerAvailability|availabilityStatus| Disponibilidade do organizador da reunião para essa sugestão de reunião. Os possíveis valores são: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
 |suggestionReason|String|Razão da sugestão de horário da reunião.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

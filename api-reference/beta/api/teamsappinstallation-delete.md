@@ -1,21 +1,23 @@
 ---
-title: Excluir o aplicativo da equipe
-description: Desinstala um aplicativo da equipe do especificado.
+title: Excluir aplicativo da equipe
+description: Desinstala um aplicativo da equipe especificada.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 47db9ece65eea6d91d03b4c4652a8c5df59e9e7f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: aa75f72375432609afb748959cb82ff63fa1b721
+ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521983"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "30057019"
 ---
-# <a name="delete-app-from-team"></a>Excluir o aplicativo da equipe
+# <a name="delete-app-from-team"></a>Excluir aplicativo da equipe
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Desinstala um [aplicativo](../resources/teamsappinstallation.md) da [equipe](../resources/team.md)especificado.
+Desinstala um [aplicativo](../resources/teamsappinstallation.md) da [equipe](../resources/team.md)especificada.
+
+>**Observação:** Se você estiver usando permissões de aplicativo, ocorrerá um problema conhecido. Para saber mais, confira [problemas conhecidos](graph/concepts/known-issues.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -24,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Sem suporte. |
+|Aplicativo | Group.ReadWrite.All  |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -55,7 +57,7 @@ Este é um exemplo de solicitação.
 DELETE https://graph.microsoft.com/beta/teams/{id}/installedApps/{id}
 ```
 #### <a name="response"></a>Resposta
-Este é um exemplo de resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Este é um exemplo de resposta. Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "ignored",
   "truncated": true,

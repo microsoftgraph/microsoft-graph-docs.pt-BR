@@ -1,21 +1,23 @@
 ---
-title: Um aplicativo em uma equipe de atualização
+title: Atualizar um aplicativo em uma equipe
 description: Atualiza uma instalação de aplicativo em uma equipe
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 30398a21d1ba1d8d37932bf0933e454600f019b2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 9ef5c41c8b09512b0ee6ebb888be1df1166cf9c5
+ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514674"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "30056977"
 ---
-# <a name="upgrade-an-app-in-a-team"></a>Um aplicativo em uma equipe de atualização
+# <a name="upgrade-an-app-in-a-team"></a>Atualizar um aplicativo em uma equipe
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Atualiza uma [instalação de aplicativo](../resources/teamsappinstallation.md) em uma [equipe](../resources/team.md) para a versão mais recente do aplicativo.
+
+>**Observação:** Se você estiver usando permissões de aplicativo, ocorrerá um problema conhecido. Para saber mais, confira [problemas conhecidos](graph/concepts/known-issues.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -25,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Sem suporte. |
+|Aplicativo | Group.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

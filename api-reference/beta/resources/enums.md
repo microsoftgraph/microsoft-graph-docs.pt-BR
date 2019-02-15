@@ -1,25 +1,25 @@
 ---
 title: Valores de enumeração
 description: Valores de enumeração do Microsoft Graph
-ms.openlocfilehash: ab73a185b9e37f99a413486ef4fcdf50bbced7b2
-ms.sourcegitcommit: d6209114cbbe8072e3ecf7eba23819ae5ace7db5
+ms.openlocfilehash: 0e748b53d1b89a20e3973ec35aaf53e02d6a3428
+ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "29690935"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "30057047"
 ---
 ### <a name="contactrelationship-values"></a>valores de contactRelationship
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|pai|0|Pai do usuário.|
-|relativa|1| Do relativo de usuário.|
-|auxiliar|2| Auxiliar do usuário.|
-|médico|3| Médico do usuário.|
-|responsável|4| Responsável do usuário.|
-|filho|5| Filho do usuário.|
-|outros|6| Um relacionamento não especificado para o usuário.|
-|unknownFutureValue|7| Valor de marcador para compatibilidade futura.|
+|primário|,0|O pai do usuário.|
+|relativo|1| O relativo do usuário.|
+|facilita|duas| O auxílio do usuário.|
+|Doutor|3D| O médico do usuário.|
+|responsável|quatro| O guardião do usuário.|
+|pensão|0,5| O filho do usuário.|
+|outro|6| Uma relação não especificada com o usuário.|
+|unknownFutureValue|178| Valor de marcador para compatibilidade futura.|
 
 ### <a name="timezonestandard-values"></a>valores de timeZoneStandard
 
@@ -29,19 +29,51 @@ ms.locfileid: "29690935"
 | IANA
 
 
+### <a name="availabilitystatus-values"></a>valores de availabilityStatus
+
+| Valor
+|:-------------------------
+| unknown
+| macro
+| provisória
+| Atualmente
+| temporária  
+| workingElsewhere
+
+
 ### <a name="freebusystatus-values"></a>valores de freeBusyStatus
 
 | Membro            |Valor
 |:------------------|:-------
-| livre              | 0
-| provisório         | 1
-| ocupado              | 2
-| ausência temporária               | 3
-| workingElsewhere  | 4
+| macro              | ,0
+| provisória         | 1
+| Atualmente              | duas
+| temporária               | 3D
+| workingElsewhere  | quatro
 | unknown           | -1
 
 
-### <a name="attendeetype-values"></a>valores de attendeeType
+### <a name="addresstype-values"></a>valores AddressType
+
+| Valor
+|:-------------------------
+| unknown 
+| Casa
+| Business 
+| outro
+
+
+### <a name="physicaladdresstype-values"></a>valores de physicalAddressType
+
+| Valor
+|:-------------------------
+| unknown 
+| Casa
+| Business 
+| outro
+
+
+### <a name="attendeetype-values"></a>valores de attendetype
 
 | Valor
 |:-------------------------
@@ -63,7 +95,7 @@ ms.locfileid: "29690935"
 
 | Valor
 |:-------------------------
-| desabilitado
+| deficiência
 | alwaysEnabled
 | agendado
 
@@ -73,27 +105,27 @@ ms.locfileid: "29690935"
 | Membro     | Valor
 |:-----------|:----------
 | Automático       | -1
-| lightBlue  | 0
-| verdeluz | 1
-| lightOrange| 2
-| lightGray  | 3
-| lightYellow| 4
-| lightTeal  | 5
+| lightBlue  | ,0
+| lightGreen | 1
+| lightOrange| duas
+| lightGray  | 3D
+| lightYellow| quatro
+| lightTeal  | 0,5
 | lightPink  | 6
-| lightBrown | 7
-| vermelhaluz   | 8
-| maxColor   | 9
+| lightBrown | 178
+| lightRed   | 8
+| maxColor   | 241
 
 
 ### <a name="educationsynchronizationprofilestate-values"></a>valores de educationSynchronizationProfileState
 
 | Membro     | Valor
 |:-----------|:----------
-| excluindo          | 2
-| deletionFailed    | 3
-| provisioningFailed | 5
+| deleta          | duas
+| deletionFailed    | 3D
+| provisioningFailed | 0,5
 | provisionado        | 6
-| provisionamento       | 7
+| provisionamento       | 178
 | unknownFutureValue | 8
 
 
@@ -101,19 +133,19 @@ ms.locfileid: "29690935"
 
 | Membro     | Valor
 |:-----------|:----------
-| em pausa          | 0
+| pausado          | ,0
 | inProgress    | 1
-| sucesso | 2
-| erro        | 3
-| validationError | 4
-| em quarentena       | 5
+| sucesso | duas
+| erro        | 3D
+| validationError | quatro
+| em quarentena       | 0,5
 | unknownFutureValue | 6
 
 ### <a name="educationexternalsource-values"></a>valores de educationExternalSource
 
 | Valor
 |:-------------------------
-| SIS
+| activa
 | Manual
 | unknownFutureValue
 
@@ -122,9 +154,9 @@ ms.locfileid: "29690935"
 
 | Valor
 |:-------------------------
-| fêmea
-| Masculino
-| outros
+| feminino
+| canto
+| outro
 | unknownFutureValue
 
 
@@ -134,18 +166,18 @@ ms.locfileid: "29690935"
 |:-------------------------
 | singleInstance
 | ocorrência
-| exceção
-| seriesMaster
+| exceções
+| série
 
 
 ### <a name="sensitivity-values"></a>valores de sensibilidade
 
 | Valor
 |:-------------------------
-| normal
+| SS
 | pessoal
 | privada
-| confidencial
+| acordo
 
 
 ### <a name="importance-values"></a>valores de importância
@@ -153,7 +185,7 @@ ms.locfileid: "29690935"
 | Valor
 |:-------------------------
 | low
-| normal
+| SS
 | high
 
 
@@ -182,17 +214,17 @@ ms.locfileid: "29690935"
 
 | Valor
 |:-------------------------
-| notFlagged
+| não sinalizado
 | complete
-| sinalizado
+| indicado
 
 
 ### <a name="inferenceclassificationtype-values"></a>valores de inferenceClassificationType
 
 | Valor
 |:-----------------
-| focados
-| outros
+| Destaques
+| outro
 
 
 ### <a name="iosnotificationalerttype-values"></a>valores de iosNotificationAlertType
@@ -200,8 +232,8 @@ ms.locfileid: "29690935"
 | Valor
 |:-------------------------
 | deviceDefault
-| Faixa
-| modal
+| Bandeira
+| JanelaRestrita
 | none
 
 ### <a name="deviceenrollmentfailurereason-values"></a>valores de deviceEnrollmentFailureReason
@@ -209,26 +241,26 @@ ms.locfileid: "29690935"
 | Valor
 |:-------------
 | unknown
-| autenticação
-| autorização
+| autentica
+| nesse
 | accountValidation
 | userValidation
 | deviceNotSupported
-| inMaintenance
+| inManutenção
 | badRequest
 | featureNotSupported
 | enrollmentRestrictionsEnforced
 | clientDisconnected
 
 
-### <a name="bodytype-values"></a>valores de bodyType
+### <a name="bodytype-values"></a>valores de BodyType
 | Valor
 |:---------
 | texto
 | HTML
 
 
-### <a name="locationtype-values"></a>valores de TipoLocal
+### <a name="locationtype-values"></a>valores LocationType
 
 | Valor
 |:-------------------------
@@ -238,8 +270,8 @@ ms.locfileid: "29690935"
 | businessAddress
 | geoCoordinates
 | streetAddress
-| hotel
-| restaurante
+| diárias
+| restaurantes
 | localBusiness
 | Address
 
@@ -249,7 +281,7 @@ ms.locfileid: "29690935"
 |:-------------------------
 | unknown
 | locationStore
-| diretório
+| Directory
 | privada
 | Bing
 
@@ -262,22 +294,22 @@ ms.locfileid: "29690935"
 | call
 | doNotForward
 | Acompanhamento
-| FYI
+| conhecimento
 | encaminhar
 | noResponseNecessary
-| leitura
+| Saiba
 | responder
 | replyToAll
-| revisão
+| exame
 
 
 ### <a name="onenoteuserrole-values"></a>valores de onenoteUserRole
 
 | Membro      | Valor
 |:------------|:------------
-| Owner       | 0
+| Owner       | ,0
 | Colaborador | 1
-| Leitor      | 2
+| Leitor      | duas
 | Nenhum        | -1
 
 
@@ -297,7 +329,7 @@ ms.locfileid: "29690935"
 |:-------------------------
 | Replace
 | Acréscimo
-| Delete
+| Excluir
 | Insert
 | Preceder
 
@@ -309,20 +341,20 @@ ms.locfileid: "29690935"
 | Before
 
 
-### <a name="phonetype-values"></a>valores de phoneType
+### <a name="phonetype-values"></a>valores de PhoneType
 
 | Valor
 |:-------------------------
 | Casa
 | Business
-| celular
-| outros
-| Assistente
+| processadores
+| outro
+| assistência
 | homeFax
 | businessFax
 | otherFax
 | pager
-| rádio
+| Radio
 
 
 ### <a name="plannerpreviewtype-values"></a>valores de plannerPreviewType
@@ -340,10 +372,10 @@ ms.locfileid: "29690935"
 
 | Valor
 |:-----------------
-| ativo
+| active
 | atualizado
 | deleted
-| ignorado
+| ignor
 | unknownFutureValue
 
 
@@ -352,10 +384,10 @@ ms.locfileid: "29690935"
 | Valor
 |:-------------------------
 | primeiro
-| segundo
-| terceiro
-| quarto
-| última
+| secundária
+| terceiriza
+| etapa
+| durar
 
 
 ### <a name="dayofweek-values"></a>valores de dayOfWeek
@@ -363,19 +395,19 @@ ms.locfileid: "29690935"
 | Valor
 |:-------------------------
 | domingo
-| segunda-feira
-| Terça-feira
-| quarta-feira
+| período
+| feira
+| feira
 | quinta-feira
-| sexta-feira
-| Sábado
+| sexta
+| sábado
 
-### <a name="recurrencepatterntype-values"></a>valores de recurrencePatternType
+### <a name="recurrencepatterntype-values"></a>valores recurrencePattern
 
 | Valor
 |:-------------------------
 | diariamente
-| Semanalmente
+| mensal
 | absoluteMonthly
 | relativeMonthly
 | absoluteYearly
@@ -400,7 +432,7 @@ ms.locfileid: "29690935"
 | OnPremOneDriveForBusiness
 
 
-### <a name="responsetype-values"></a>valores de responseType
+### <a name="responsetype-values"></a>valores ResponseType
 
 | Valor
 |:-------------------------
@@ -409,7 +441,7 @@ ms.locfileid: "29690935"
 | tentativelyAccepted
 | aceito
 | recusada
-| notResponded
+| Não respondido
 
 
 ### <a name="activitydomain-values"></a>valores de activityDomain
@@ -422,14 +454,14 @@ ms.locfileid: "29690935"
 | irrestrito
 
 
-### <a name="websitetype-values"></a>valores de websiteType
+### <a name="websitetype-values"></a>valores de WebSiteType
 
 | Valor
 |:-------------------------
-| outros
+| outro
 | Casa
 | trabalho
-| blog
+| escrever
 | profile
 
 
@@ -438,152 +470,152 @@ ms.locfileid: "29690935"
 | Membro   |Valor    
 |:---------|:--------
 | none     | -1      
-| preset0  | 0       
+| preset0  | ,0       
 | preset1  | 1       
-| preset2  | 2       
-| preset3  | 3       
-| preset4  | 4       
-| preset5  | 5       
+| preset2  | duas       
+| preset3  | 3D       
+| preset4  | quatro       
+| preset5  | 0,5       
 | preset6  | 6       
-| preset7  | 7       
+| preset7  | 178       
 | preset8  | 8       
-| preset9  | 9       
-| preset10 | 10      
+| preset9  | 241       
+| preset10 | 254      
 | preset11 | 11      
-| preset12 | 12      
-| preset13 | 13      
+| preset12 | 3,6      
+| preset13 | Treze      
 | preset14 | 14      
 | preset15 | 15      
-| preset16 | 16      
-| preset17 | 17      
-| preset18 | 18      
+| preset16 | dezesseis      
+| preset17 | 17.07.06      
+| preset18 | anos      
 | preset19 | 19      
-| preset20 | 20      
+| preset20 | 508      
 | preset21 | 21      
 | preset22 | 22      
 | preset23 | 23      
-| preset24 | 24      
+| preset24 | dia      
 
 ### <a name="alertfeedback-values"></a>valores de alertFeedback
 
-Valores possíveis comentários no alerta fornecidos por um analista.
+Possíveis valores de comentários no alerta fornecido por um analista.
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|unknown|0|Desconhecido.|
-|truePositive|1|Alerta é true positivos.|
-|falsePositive|2| Alerta é falsos positivos.|
-|benignPositive|3| Alerta é benigno positivos.|
+|unknown|,0|Unknown.|
+|truePositive|1|O alerta é verdadeiro e positivo.|
+|falsePositive|duas| O alerta é falso positivo.|
+|benignPositive|3D| O alerta é benigno-positivo.|
 
-### <a name="filehashtype-values"></a>valores de fileHashType
+### <a name="filehashtype-values"></a>valores de fileHashtype
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|unknown|0|Tipo desconhecido.|
+|unknown|,0|Tipo desconhecido.|
 |SHA1|1|Tipo de hash SHA1.|
-|SHA256|2| Tipo de hash SHA256.|
-|MD5|3| Tipo de hash MD5.|
-|authenticodeHash256|4| Tipo de hash AuthenticodeHash256.|
-|lsHash|5| Tipo de hash LsHash.|
+|SHA256|duas| Tipo de hash SHA256.|
+|MD5|3D| Tipo de hash MD5.|
+|authenticodeHash256|quatro| Tipo de hash AuthenticodeHash256.|
+|lsHash|0,5| Tipo de hash LsHash.|
 |ctph|6| Tipo de hash CTPH.|
-|peSha1|7| Tipo de hash PESHA1.|
+|peSha1|178| Tipo de hash PESHA1.|
 |peSha256|8| Tipo de hash PESHA256.|
 
 ### <a name="connectiondirection-values"></a>valores de connectionDirection
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|unknown|0|Conexão desconhecido.|
+|unknown|,0|Conexão desconhecida.|
 |entrada|1|Conexão de entrada.|
-|saída|2| Conexão de saída.|
+|saída|duas| Conexão de saída.|
 
 ### <a name="connectionstatus-values"></a>valores de connectionStatus
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|unknown|0|Status da conexão desconhecido.|
-|tentada|1|Tentada de Conexão.|
-|foi bem-sucedida|2| Conexão bem-sucedida.|
-|bloqueado|3| Conexão bloqueada.|
-|Falha|4| Falha de Conexão.|
+|unknown|,0|Status de conexão desconhecido.|
+|tentou|1|Tentativa de conexão.|
+|adicionada|duas| Conexão bem-sucedida.|
+|bloqueou|3D| Conexão bloqueada.|
+|falhou|quatro| Falha de conexão.|
 
 ### <a name="processintegritylevel-values"></a>valores de processIntegrityLevel
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|unknown|0|Desconhecido.|
-|não confiável|10|Nível de integridade é não confiável.|
-|low|20| Nível de integridade é baixo.|
-|medium|30| Nível de integridade é médio.|
-|high|40| Nível de integridade é alto.|
-|sistema|50| Nível de integridade é o sistema.|
+|unknown|,0|Unknown.|
+|não confiáveis|254|O nível de integridade é não confiável.|
+|low|508| O nível de integridade é baixo.|
+|medium|até| O nível de integridade é médio.|
+|high|40| O nível de integridade é alto.|
+|sistema|50| O nível de integridade é System.|
 
 ### <a name="registryhive-values"></a>valores de registryHive
 
-Enum para registro seções conforme definido pela [https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives).
+Enumeração para hives do registro, conforme [https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives)definido por.
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|unknown|0|Hive desconhecido.|
+|unknown|,0|Hive desconhecido.|
 |currentConfig|1|Hive HKEY_CURRENT_CONFIG.|
-|currentUser|2| Hive HKEY_CURRENT_USER.|
-|localMachineSam|3| Hive HKEY_LOCAL_MACHINE\SAM.|
-|localMachineSamSoftware|4| HKEY_LOCAL_MACHINE\Software hive.|
-|localMachineSystem|5| HKEY_LOCAL_MACHINE\SYSTEM hive.|
+|currentUser|duas| Hive HKEY_CURRENT_USER.|
+|localMachineSam|3D| Hive HKEY_LOCAL_MACHINE\SAM.|
+|localMachineSamSoftware|quatro| Hive HKEY_LOCAL_MACHINE\Software.|
+|localMachineSystem|0,5| HKEY_LOCAL_MACHINE\System Hive.|
 |usersDefault|6| HKEY_USERS\\. Hive padrão.|
 
 ### <a name="registryoperation-values"></a>valores de registryOperation
 
-Operação que foi alterado o nome da chave do registro e/ou valor.
+Operação que alterou o nome da chave do registro e/ou o valor.
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|unknown|0|Tipo de valor do registro desconhecido.|
-|create|1|Crie registro.|
-|modificar|2|Modifica o registro.|
-|delete|3|Exclua o registro.|
+|unknown|,0|Tipo de valor de registro desconhecido.|
+|create|1|Criar registro.|
+|modifica|duas|Modificar o registro.|
+|delete|3D|Excluir registro.|
 
 ### <a name="registryvaluetype-values"></a>valores de registryValueType
 
-Tipos de Enum para o valor do registro, conforme definido pela [https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types).
+Enumeração para tipos de valor do registro conforme [https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types)definido por.
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|unknown|0|Tipo de valor do registro desconhecido.|
-|binário|1|Tipo de valor do registro REG_BINARY.|
-|DWORD|2| Tipo de valor do Registro REG_DWORD.|
-|dwordLittleEndian|3| Tipo de valor do registro REG_DWORD_LITTLE_ENDIAN.|
-|dwordBigEndian|4| Tipo de valor do registro REG_DWORD_BIG_ENDIAN.|
-|expandSz|5| Tipo de valor do Registro REG_EXPAND_SZ.|
+|unknown|,0|Tipo de valor de registro desconhecido.|
+|binário|1|Tipo de valor de registro REG_BINARY.|
+|últimas|duas| Tipo de valor do registro REG_DWORD.|
+|dwordLittleEndian|3D| Tipo de valor do registro REG_DWORD_LITTLE_ENDIAN.|
+|dwordBigEndian|quatro| Tipo de valor do registro REG_DWORD_BIG_ENDIAN.|
+|expandSz|0,5| Tipo de valor do registro REG_EXPAND_SZ.|
 |vínculo|6| Tipo de valor do registro REG_LINK.|
-|multiSz|7| Tipo de valor do registro REG_MULTI_SZ.|
+|multiSz|178| Tipo de valor de registro REG_MULTI_SZ.|
 |none|8| Tipo de valor do registro REG_NONE.|
-|QWORD|9| Tipo de valor do registro REG_QWORD.|
-|qwordlittleEndian|10| Tipo de valor do registro REG_QWORD_LITTLE_ENDIAN.|
-|SZ|11| Tipo de valor do Registro REG_SZ.|
+|QWORD|241| Tipo de valor do registro REG_QWORD.|
+|qwordlittleEndian|254| Tipo de valor do registro REG_QWORD_LITTLE_ENDIAN.|
+|v|11| Tipo de valor do registro REG_SZ.|
 
 ### <a name="alertseverity-values"></a>valores de alertSeverity
 
-Enum para gravidade de alertas.
+Enumeração para gravidade de alertas.
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|unknown|0|Gravidade é desconhecida.|
-|informativos|1|Gravidade é apenas para obter informações.|
-|low|2| Gravidade é baixa.|
-|medium|3| Gravidade é medium.|
-|high|4| Gravidade é alta.|
+|unknown|,0|A severidade é desconhecida.|
+|informativa|1|A severidade só é para informações.|
+|low|duas| A severidade é baixa.|
+|medium|3D| A severidade é média.|
+|high|quatro| A severidade é alta.|
 
 ### <a name="alertstatus-values"></a>valores de alertStatus
 
-Valores possíveis de um ciclo de vida de alerta de status (estágio).
+Valores possíveis de um status de ciclo de vida de alerta (estágio).
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|unknown|0|Status desconhecido.|
-|newAlert|10| Alerta é nova.|
-|inProgress|20|Alerta está em andamento.|
-|resolvido|30|Alerta é resolvida.|
+|unknown|,0|Status desconhecido.|
+|newAlert|254| O alerta é novo.|
+|inProgress|508|O alerta está em andamento.|
+|Obtido|até|O alerta foi resolvido.|
 
 ### <a name="emailrole-values"></a>valores de emailRole
 
@@ -591,30 +623,30 @@ Valores possíveis para funções de email.
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|unknown|0|Função desconhecida.|
+|unknown|,0|Função desconhecida.|
 |sender|1|Remetente do email.|
-|destinatário|2|Destinatário do email.|
+|recipient|duas|Destinatário do email.|
 
-### <a name="logontype-values"></a>valores de um tipo de logon
+### <a name="logontype-values"></a>valores de Logontype
 
-Valores possíveis para o método de logon do usuário.
+Valores possíveis para o método de User Sign.
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|unknown|-1|Desconhecido.|
-|interativo|0|Logon é interativo.|
-|remoteInteractive|1| Logon é remoto interativo.|
-|rede|2| Logon é a rede.|
-|batch|3| Logon é em lotes.|
-|service|4| Logon é um serviço.|
+|unknown|-1|Unknown.|
+|interativa|,0|O logon é interativo.|
+|remoteInteractive|1| O logon é interativo remoto.|
+|rede|duas| O logon é rede.|
+|batch|3D| O logon é em lote.|
+|service|quatro| O logon é serviço.|
 
 ### <a name="useraccountsecuritytype-values"></a>valores de userAccountSecurityType
 
-Valores possíveis para tipos de conta de usuário (membros do grupo), por definição do Windows.
+Valores possíveis para tipos de contas de usuário (Associação de grupo), por definição do Windows.
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|unknown|-1|Desconhecido.|
-|Standard|0|Membro do grupo de usuários padrão.|
-|alimentação|1| Membro do grupo usuários avançados.|
-|administrador|2| Membro do grupo Administradores.|
+|unknown|-1|Unknown.|
+|caracteres|,0|Membro do grupo de usuários padrão.|
+|força|1| Membro do grupo de usuários avançados.|
+|administrador|duas| Membro do grupo Administradores.|

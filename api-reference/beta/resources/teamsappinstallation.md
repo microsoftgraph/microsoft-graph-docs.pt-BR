@@ -1,36 +1,36 @@
 ---
-title: tipo de recurso de teamsAppInstallation
+title: tipo de recurso teamsAppInstallation
 description: 'Um teamsApp instalado em uma equipe. '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: b4cf14c36fc0ab0b33f88d4b330e76957e65164a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: f6ff72ab99d20eba9880630248e4b61fca5c2521
+ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512833"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "30057012"
 ---
-# <a name="teamsappinstallation-resource-type"></a>tipo de recurso de teamsAppInstallation
+# <a name="teamsappinstallation-resource-type"></a>tipo de recurso teamsAppInstallation
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Um [teamsApp](teamsapp.md) instalado em uma [equipe](team.md). Qualquer bots que fazem parte do aplicativo se tornará parte de qualquer aplicativo é adicionado de equipe.
+Um [teamsApp](teamsapp.md) instalado em uma [equipe](team.md). Qualquer bots que faça parte do aplicativo se tornará parte de qualquer equipe à qual o aplicativo é adicionado.
 
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[Lista de aplicativos](../api/teamsappinstallation-list.md) | [teamsAppInstallation](teamsapp.md) | Lista os aplicativos instalados em uma equipe.|
-|[Adicionar aplicativo](../api/teamsappinstallation-add.md) | [teamsAppInstallation](teamsapp.md) | Adiciona (instala) um aplicativo para uma equipe.|
-|[Remover aplicativo](../api/teamsappinstallation-delete.md) | Nenhum | Remove (desinstala) um aplicativo da equipe.|
-|[Atualizar o aplicativo](../api/teamsappinstallation-delete.md) | Nenhum | Atualizações para a versão mais recente do aplicativo.|
+|[Listar aplicativos](../api/teamsappinstallation-list.md) | [teamsAppInstallation](teamsapp.md) | Lista os aplicativos instalados em uma equipe.|
+|[Adicionar aplicativo](../api/teamsappinstallation-add.md) | [teamsAppInstallation](teamsapp.md) | Adiciona (instala) um aplicativo a uma equipe.|
+|[Remover aplicativo](../api/teamsappinstallation-delete.md) | Nenhum | Remove (desinstala) um aplicativo de uma equipe.|
+|[Atualizar aplicativo](../api/teamsappinstallation-upgrade.md) | Nenhum | Atualiza para a versão mais recente do aplicativo.|
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade            | Tipo     | Descrição |
 |:------------------- |:-------- |:----------- |
-| id                  | string   | Uma identificação exclusiva (não o appid equipes). |
+| id                  | string   | Uma ID exclusiva (não a AppID do Teams). |
 
 ## <a name="relationships"></a>Relacionamento
 

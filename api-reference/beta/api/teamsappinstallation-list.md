@@ -1,21 +1,21 @@
 ---
-title: Lista de aplicativos na equipe
-description: Recupere a lista de aplicativos instalados na equipe de especificado.
+title: Listar aplicativos em equipe
+description: Recupere a lista de aplicativos instalados na equipe especificada.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: fe3ba5cd3be91c7e69b77f67cb53ab702741c6f5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 749a0c0e0c3a93b54487d9dea8823ad59a2658fd
+ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524608"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "30057005"
 ---
-# <a name="list-apps-in-team"></a>Lista de aplicativos na equipe
+# <a name="list-apps-in-team"></a>Listar aplicativos em equipe
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere a lista de [aplicativos instalados](../resources/teamsappinstallation.md) na [equipe](../resources/team.md)de especificado.
+Recupere a lista de [aplicativos instalados](../resources/teamsappinstallation.md) na [equipe](../resources/team.md)especificada.
 
 ## <a name="permissions"></a>Permissões
 
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Group.Read.All, Group.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Sem suporte. |
+|Aplicativo | Group.Read.All, Group.ReadWrite.All  |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -37,7 +37,7 @@ GET /teams/{id}/installedApps
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte a $filter, $select, e $expand [OData parâmetros de consulta](/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método oferece suporte a $filter, $select e $expand [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -51,7 +51,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e a coleção de objetos [teamsApp](../resources/teamsapp.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [teamsApp](../resources/teamsapp.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -92,7 +92,7 @@ Content-length: 55
 }
 ```
 
-## <a name="example----getting-the-names-of-the-installed-apps"></a>Example - obtendo os nomes dos aplicativos instalados
+## <a name="example----getting-the-names-of-the-installed-apps"></a>Exemplo: obtendo os nomes dos aplicativos instalados
 
 ### <a name="request"></a>Solicitação
 
