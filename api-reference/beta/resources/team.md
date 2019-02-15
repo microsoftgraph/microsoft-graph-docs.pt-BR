@@ -4,12 +4,12 @@ description: 'No Microsoft Teams, uma equipe é um conjunto de canais. '
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 75afbbd61a1986ae4851326b4daba9264735379e
-ms.sourcegitcommit: d91ca408bae7842ea4d1d94b49594fd82a32e0c9
+ms.openlocfilehash: bcf6602dcb9673ffd7b1fb81a0d9349392fd6d3f
+ms.sourcegitcommit: a4773239d8559899c3f9433b3073e250a56d2e04
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "29745542"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29994458"
 ---
 # <a name="team-resource-type"></a>tipo de recurso de equipe
 
@@ -39,6 +39,7 @@ Confira mais informações sobre como trabalhar com grupos e membros em equipes,
 |[Adicionar aplicativo à equipe](../api/teamsappinstallation-add.md) | [teamsappinstallation](teamsappinstallation.md) | Adiciona (instala) um aplicativo a uma equipe.|
 |[Adicionar uma guia ao canal](../api/teamstab-add.md) | [teamsTab](../resources/teamstab.md) | Adiciona (instala) uma guia ao canal de uma equipe.|
 |[Listar mensagens do canal](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | [Obter mensagens em um canal](../api/channel-list-messages.md) |
+|[Enviar a mensagem do canal](../api/channel-post-chatmessage.md)  | [chatMessage](../resources/chatmessage.md) | [Enviar uma mensagem para um canal](../api/channel-post-chatmessage.md) |
 
 ## <a name="properties"></a>Propriedades
 

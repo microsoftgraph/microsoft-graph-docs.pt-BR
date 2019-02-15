@@ -4,12 +4,12 @@ description: 'Um canal é uma coleção de chatMessages dentro de uma equipe. '
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 73775cb446e9cd90eaf31ade28f25638465c884e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: d58a3e0b867a675e378fa126108331fd5b27856c
+ms.sourcegitcommit: a4773239d8559899c3f9433b3073e250a56d2e04
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510999"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29994465"
 ---
 # <a name="channel-resource-type"></a>Tipo de recurso de usuário
 
@@ -28,7 +28,8 @@ Um canal é uma coleção de [chatMessages](chatmessage.md) dentro de um [equipe
 |[Update channel](../api/channel-patch.md) | [channel](channel.md) | Atualize as propriedades do canal.|
 |[Delete channel](../api/channel-delete.md) | Nenhum | Exclua um canal.|
 |[List channel messages](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Obtenha mensagens em um canal. |
-|[Create chat thread](../api/channel-post-chatthreads.md) | [chatThread](chatthread.md) collection| Crie um thread de conversa no canal específico.|
+|[Enviar a mensagem do canal](../api/channel-post-chatmessage.md)  | [chatMessage](../resources/chatmessage.md) | [Enviar uma mensagem para um canal](../api/channel-post-chatmessage.md) |
+
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
@@ -45,8 +46,7 @@ Um canal é uma coleção de [chatMessages](chatmessage.md) dentro de um [equipe
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |messages|[chatMessage](chatmessage.md) collection|Uma coleção de todas as mensagens do canal. Uma propriedade de navegação. Anulável. No momento, esse API tem suporte apenas à leitura, mas eventualmente terá suporte a mensagens escritas também.|
-|chatThreads|[chatThread](chatthread.md) collection|(Está sendo extinto para favorecer a propriedade messages) chatThreads dá suporte à criação de novas mensagens, mas não à leitura de mensagens. O ChatThreads é uma propriedade de navegação e é Anulável.|
-|tabs|[teamsTab](../resources/teamstab.md) collection|Uma coleção de todas as guias do canal. Uma propriedade de navegação.|
+|guias|[teamsTab](../resources/teamstab.md) collection|Uma coleção de todas as guias do canal. Uma propriedade de navegação.|
 
 
 ## <a name="json-representation"></a>Representação JSON
@@ -56,7 +56,7 @@ Veja a seguir uma representação JSON do recurso
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "chatthreads"
+    "messages"
   ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.channel"
