@@ -4,12 +4,12 @@ description: Atualiza uma instalação de aplicativo em uma equipe
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 9ef5c41c8b09512b0ee6ebb888be1df1166cf9c5
-ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
+ms.openlocfilehash: 0ab151203e3b2ec3ee863bae34a8feed0c6d1064
+ms.sourcegitcommit: 4e9acb8029aca36dfade509a25f1111e1bd0ec6d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "30056977"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "30070803"
 ---
 # <a name="upgrade-an-app-in-a-team"></a>Atualizar um aplicativo em uma equipe
 
@@ -17,7 +17,7 @@ ms.locfileid: "30056977"
 
 Atualiza uma [instalação de aplicativo](../resources/teamsappinstallation.md) em uma [equipe](../resources/team.md) para a versão mais recente do aplicativo.
 
->**Observação:** Se você estiver usando permissões de aplicativo, ocorrerá um problema conhecido. Para saber mais, confira [problemas conhecidos](graph/concepts/known-issues.md).
+>**Observação:** Se você estiver usando permissões de aplicativo, ocorrerá um problema conhecido. Para saber mais, confira [problemas conhecidos](/graph/known-issues).
 
 ## <a name="permissions"></a>Permissões
 

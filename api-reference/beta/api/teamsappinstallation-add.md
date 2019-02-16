@@ -4,12 +4,12 @@ description: Instala um aplicativo para a equipe especificada.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 35d2521d9bff37ea45f7496a825429762daaf8f7
-ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
+ms.openlocfilehash: 261d186e23b516e58a428ecfdd2883f7a3bc111d
+ms.sourcegitcommit: 4e9acb8029aca36dfade509a25f1111e1bd0ec6d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "30056991"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "30070824"
 ---
 # <a name="add-app-to-team"></a>Adicionar aplicativo à equipe
 
@@ -17,7 +17,7 @@ ms.locfileid: "30056991"
 
 Instala um [aplicativo](../resources/teamsapp.md) para a [equipe](../resources/team.md)especificada.
 
->**Observação:** Se você estiver usando permissões de aplicativo, ocorrerá um problema conhecido. Para saber mais, confira [problemas conhecidos](graph/concepts/known-issues.md).
+>**Observação:** Se você estiver usando permissões de aplicativo, ocorrerá um problema conhecido. Para saber mais, confira [problemas conhecidos](/graph/known-issues).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
