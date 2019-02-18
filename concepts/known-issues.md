@@ -3,12 +3,12 @@ title: Problemas conhecidos com o Microsoft Graph
 description: Este artigo descreve os problemas conhecidos com o Microsoft Graph. Confira as informações sobre as atualizações mais recentes no Log de alterações do Microsoft Graph.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 21667092deabf8a0c078da114325c25dbe223045
-ms.sourcegitcommit: a4773239d8559899c3f9433b3073e250a56d2e04
+ms.openlocfilehash: 1b71c7d1ee9181a766f8aa20b9b16a085fcf31a8
+ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29994395"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "30056963"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conhecidos com o Microsoft Graph
 
@@ -39,11 +39,7 @@ Para saber mais sobre problemas conhecidos com o uso da consulta delta, veja a [
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-### <a name="graph-explorer-and-global-admins"></a>Explorador do Graph e administradores globais
-
-Atualmente, o Explorador do Graph permite que administradores globais manipulem equipes das quais não são proprietários ou membros; porém outros aplicativos que tentam fazer as mesmas chamadas de API falharão se o usuário atual não for um membro ou proprietário da equipe.
-
-### <a name="get-teams-and-post-teams-are-not-supported"></a>GET /teams e POST /teams não são suportados
+### <a name="get-teams-and-post-teams-are-not-supported"></a>Não há suporte para GET /teams e POST /teams
 
 Confira [listar todas as equipes](teams-list-all-teams.md) e [listar suas equipes](/graph/api/user-list-joinedteams?view=graph-rest-1.0) para obter uma lista de equipes.
 Confira [criar equipe](/graph/api/team-put-teams?view=graph-rest-1.0) para criar equipes.
@@ -54,6 +50,12 @@ Algumas equipes que foram criadas no passado mas não foram usadas recentemente 
 Novas equipes serão listadas.
 Algumas equipes antigas não têm uma propriedade **resourceProvisioningOptions** que contém “Equipe”, que é configurada em equipes recém-criadas e equipes que são visitadas no Microsoft Teams.
 No futuro, vamos configurar **resourceProvisioningOptions** em equipes existentes que não foram abertas no Microsoft Teams.
+
+### <a name="installing-and-uninstalling-applications-using-application-permissions"></a>Instalar e desinstalar aplicativos usando permissões de aplicativo
+
+Ao desinstalar um aplicativo de uma equipe com permissões de aplicativo, a API retornará um código de erro 500, mesmo que o aplicativo tenha sido desinstalado com êxito.
+
+Ao instalar, atualizar e desinstalar aplicativos em uma equipe com permissões de aplicativo, os eventos do log de auditoria não são gravados.
 
 ## <a name="groups"></a>Grupos
 
