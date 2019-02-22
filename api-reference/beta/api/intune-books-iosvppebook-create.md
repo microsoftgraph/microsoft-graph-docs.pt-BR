@@ -1,21 +1,21 @@
 ---
 title: Criar iosVppEBook
 description: Cria um novo objeto iosVppEBook.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 121f686e5709bcfe59ffab7151afcb9e5f48c127
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: bf780e1bc3bcb15392a6f2a1b164ef3c94ab1cc2
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29409752"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30165216"
 ---
 # <a name="create-iosvppebook"></a>Criar iosVppEBook
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Cria um novo objeto [iosVppEBook](../resources/intune-books-iosvppebook.md).
 
@@ -51,9 +51,9 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar iosVppEBook.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade. Herdado de [managedEBook](../resources/intune-books-managedebook.md)|
-|displayName|Cadeia de caracteres|Nome do livro eletrônico. Herdado de [managedEBook](../resources/intune-books-managedebook.md)|
-|description|Cadeia de caracteres|Descrição. Herdado de [managedEBook](../resources/intune-books-managedebook.md)|
-|publisher|Cadeia de caracteres|Publicador. Herdado de [managedEBook](../resources/intune-books-managedebook.md)|
+|displayName|String|Nome do livro eletrônico. Herdado de [managedEBook](../resources/intune-books-managedebook.md)|
+|description|String|Descrição. Herdado de [managedEBook](../resources/intune-books-managedebook.md)|
+|publisher|String|Publicador. Herdado de [managedEBook](../resources/intune-books-managedebook.md)|
 |publishedDateTime|DateTimeOffset|A data e hora em que o livro eletrônico foi publicado. Herdado de [managedEBook](../resources/intune-books-managedebook.md)|
 |largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|Capa do livro. Herdado de [managedEBook](../resources/intune-books-managedebook.md)|
 |createdDateTime|DateTimeOffset|A data e hora em que o livro eletrônico foi modificado pela última vez. Herdado de [managedEBook](../resources/intune-books-managedebook.md)|
@@ -61,14 +61,14 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar iosVppEBook.
 |informationUrl|String|A URL de informações adicionais. Herdado de [managedEBook](../resources/intune-books-managedebook.md)|
 |privacyInformationUrl|String|A URL da declaração de privacidade. Herdado de [managedEBook](../resources/intune-books-managedebook.md)|
 |vppTokenId|Guid|A ID de token Vpp.|
-|appleId|Cadeia de caracteres|O Apple ID associado ao token Vpp.|
-|vppOrganizationName|Cadeia de caracteres|O nome da organização do token Vpp.|
+|appleId|String|O Apple ID associado ao token Vpp.|
+|vppOrganizationName|String|O nome da organização do token Vpp.|
 |genres|Coleção de cadeias de caracteres|Gêneros.|
-|idioma|Cadeia de caracteres|Idioma.|
+|idioma|String|Idioma.|
 |seller|Cadeia de caracteres|Vendedor.|
 |totalLicenseCount|Int32|Contagem total de licenças.|
 |usedLicenseCount|Int32|Contagem de licenças usadas.|
-|roleScopeTagIds|String collection|Lista de escopo marcas para essa instância da entidade.|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade.|
 
 
 

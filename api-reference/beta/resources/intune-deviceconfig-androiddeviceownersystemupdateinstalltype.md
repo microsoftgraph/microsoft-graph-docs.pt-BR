@@ -1,31 +1,31 @@
 ---
-title: tipo de enum androidDeviceOwnerSystemUpdateInstallType
-description: Atualizar tipos de sistema para o proprietário de dispositivo Android.
-localization_priority: Normal
+title: tipo de enumeração androidDeviceOwnerSystemUpdateInstallType
+description: Tipos de atualização do sistema para o proprietário do dispositivo Android.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8d7caaa3c79062bba6b8aa06ea11389e1370fba5
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: b6f99ba32a5461913579a23e7fe8f29a3c0b6950
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29419174"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30163655"
 ---
-# <a name="androiddeviceownersystemupdateinstalltype-enum-type"></a>tipo de enum androidDeviceOwnerSystemUpdateInstallType
+# <a name="androiddeviceownersystemupdateinstalltype-enum-type"></a>tipo de enumeração androidDeviceOwnerSystemUpdateInstallType
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Atualizar tipos de sistema para o proprietário de dispositivo Android.
+Tipos de atualização do sistema para o proprietário do dispositivo Android.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|deviceDefault|0|Comportamento de padrão de dispositivo, que geralmente solicita que o usuário aceite atualizações de sistema.|
-|Adiar|1|Adie a instalação automática das atualizações de backup para 30 dias.|
-|em janelas|2|Instale automaticamente dentro de uma janela de manutenção diária.|
-|automatic|3|Instale automaticamente atualizações assim que possível.|
+|deviceDefault|,0|Comportamento padrão do dispositivo, que normalmente solicita que o usuário aceite atualizações do sistema.|
+|adiamento|1|Adiar a instalação automática de atualizações até 30 dias.|
+|em janelas|duas|Instale automaticamente dentro de uma janela de manutenção diária.|
+|Automático|3D|Instalar atualizações automaticamente o mais rápido possível.|
 
 
 

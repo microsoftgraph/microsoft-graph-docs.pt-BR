@@ -1,23 +1,23 @@
 ---
 title: Atualizar deviceManagementExchangeOnPremisesPolicy
-description: Atualize as propriedades de um objeto deviceManagementExchangeOnPremisesPolicy.
-localization_priority: Normal
+description: Atualiza as propriedades de um objeto deviceManagementExchangeOnPremisesPolicy.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 633f1b80895bd84c27c57b5cee26aa286b1d0e49
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: a94f22aa4d7dffcd448ad5e742198ddca809d781
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29407204"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30168023"
 ---
 # <a name="update-devicemanagementexchangeonpremisespolicy"></a>Atualizar deviceManagementExchangeOnPremisesPolicy
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Atualize as propriedades de um objeto [deviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md) .
+Atualiza as propriedades de um objeto [deviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
@@ -45,22 +45,22 @@ PATCH /deviceManagement/exchangeOnPremisesPolicies/{deviceManagementExchangeOnPr
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON para o objeto [deviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md) .
+No corpo da solicitação, forneça uma representação JSON do objeto [deviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md) .
 
-A tabela a seguir mostra as propriedades que são necessárias quando você cria o [deviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md).
+A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Ainda não documentado|
-|notificationContent|Binária|Texto de notificação que será enviado aos usuários em quarentena por essa política. Isso é a matriz de bytes UTF8 codificado em HTML.|
-|defaultAccessLevel|[deviceManagementExchangeAccessLevel](../resources/intune-onboarding-devicemanagementexchangeaccesslevel.md)|Estado de acesso padrão no Exchange. Esta regra se aplicam globalmente para toda a organização do Exchange. Os valores possíveis são: `none`, `allow`, `block`, `quarantine`.|
-|accessRules|coleção [deviceManagementExchangeAccessRule](../resources/intune-onboarding-devicemanagementexchangeaccessrule.md)|A lista de acesso de dispositivo regras no Exchange. As regras de acesso se aplicam globalmente para toda a organização do Exchange|
-|knownDeviceClasses|coleção [deviceManagementExchangeDeviceClass](../resources/intune-onboarding-devicemanagementexchangedeviceclass.md)|A lista de classes de dispositivo conhecido para o Exchange|
+|notificationContent|Binária|Texto de notificação que será enviado aos usuários colocados em quarentena por esta política. Este é um HTML de matriz de bytes codificado por UTF8.|
+|defaultAccessLevel|[deviceManagementExchangeAccessLevel](../resources/intune-onboarding-devicemanagementexchangeaccesslevel.md)|Estado de acesso padrão no Exchange. Essa regra se aplica globalmente a toda a organização do Exchange. Os valores possíveis são: `none`, `allow`, `block`, `quarantine`.|
+|accessRules|coleção [deviceManagementExchangeAccessRule](../resources/intune-onboarding-devicemanagementexchangeaccessrule.md)|A lista de regras de acesso do dispositivo no Exchange. As regras de acesso são aplicadas globalmente em toda a organização do Exchange|
+|knownDeviceClasses|coleção [deviceManagementExchangeDeviceClass](../resources/intune-onboarding-devicemanagementexchangedeviceclass.md)|A lista de classes de dispositivo conhecidas para o Exchange|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto atualizado [deviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [deviceManagementExchangeOnPremisesPolicy](../resources/intune-onboarding-devicemanagementexchangeonpremisespolicy.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

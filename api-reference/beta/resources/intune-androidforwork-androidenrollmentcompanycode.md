@@ -1,28 +1,28 @@
 ---
-title: tipo de recurso de androidEnrollmentCompanyCode
-description: Uma classe para armazenar dados de registro de especialidade usados para inscrevendo por meio Android API do Google de gerenciamento, como Token, Url e QR conteúdo de código
-localization_priority: Normal
+title: tipo de recurso androidEnrollmentCompanyCode
+description: Uma classe para manter os dados de registro Specialty usados para registrar-se por meio da API de gerenciamento do Android do Google, como token, URL e conteúdo de código QR
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: be5b2a94445e95fe18271467b6661320d8204d76
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: a0cd3ede4193ea3fdb33d33010349812150848e7
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29428989"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30169339"
 ---
-# <a name="androidenrollmentcompanycode-resource-type"></a>tipo de recurso de androidEnrollmentCompanyCode
+# <a name="androidenrollmentcompanycode-resource-type"></a>tipo de recurso androidEnrollmentCompanyCode
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Uma classe para armazenar dados de registro de especialidade usados para inscrevendo por meio Android API do Google de gerenciamento, como Token, Url e QR conteúdo de código
+Uma classe para manter os dados de registro Specialty usados para registrar-se por meio da API de gerenciamento do Android do Google, como token, URL e conteúdo de código QR
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|enrollmentToken|String|Usado pelo usuário para registrar seus dispositivos de Token de inscrição.|
+|enrollmentToken|String|Token de registro usado pelo usuário para registrar seus dispositivos.|
 |qrCodeContent|String|Cadeia de caracteres usada para gerar um código QR para o token.|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Código QR gerado para o token.|
 

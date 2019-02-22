@@ -1,30 +1,30 @@
 ---
-title: tipo de enum windowsHelloForBusinessPinUsage
-description: Windows Olá para opções de uso de pin de negócios
-localization_priority: Normal
+title: tipo de enumeração windowsHelloForBusinessPinUsage
+description: Opções de uso de PIN do Windows Hello para empresas
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 42e3ea7d0fcd91075c3b9b689210610c225ff478
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: a2a066728d28e12f8be9bd09a63005c88e391043
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29421694"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30169430"
 ---
-# <a name="windowshelloforbusinesspinusage-enum-type"></a>tipo de enum windowsHelloForBusinessPinUsage
+# <a name="windowshelloforbusinesspinusage-enum-type"></a>tipo de enumeração windowsHelloForBusinessPinUsage
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Windows Olá para opções de uso de pin de negócios
+Opções de uso de PIN do Windows Hello para empresas
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|permitido|0|Ainda não documentado|
+|autorizado|,0|Ainda não documentado|
 |obrigatório|1|Ainda não documentado|
-|não permitido|2|Ainda não documentado|
+|Não|duas|Ainda não documentado|
 
 
 

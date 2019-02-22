@@ -1,23 +1,23 @@
 ---
 title: Atualizar androidDeviceOwnerEnrollmentProfile
-description: Atualize as propriedades de um objeto androidDeviceOwnerEnrollmentProfile.
-localization_priority: Normal
+description: Atualiza as propriedades de um objeto androidDeviceOwnerEnrollmentProfile.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 966b538b161dca2bc5c85390cab5cd8bd371b236
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 67f60eb1adc0ba20354fb1f1d0fb3499c2fde231
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29413826"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30163095"
 ---
 # <a name="update-androiddeviceownerenrollmentprofile"></a>Atualizar androidDeviceOwnerEnrollmentProfile
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Atualize as propriedades de um objeto [androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) .
+Atualiza as propriedades de um objeto [androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
@@ -44,9 +44,9 @@ PATCH /deviceManagement/androidDeviceOwnerEnrollmentProfiles/{androidDeviceOwner
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON para o objeto [androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) .
+No corpo da solicitação, forneça uma representação JSON do objeto [androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) .
 
-A tabela a seguir mostra as propriedades que são necessárias quando você cria o [androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md).
+A tabela a seguir mostra as propriedades que são necessárias ao criar [androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
@@ -57,7 +57,7 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 |createdDateTime|DateTimeOffset|Data e hora de criação do perfil de registro.|
 |lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação do perfil de registro.|
 |tokenValue|String|Valor do token mais recentemente criado para este perfil de registro.|
-|tokenCreationDateTime|DateTimeOffset|Data hora em que o token mais recentemente criado foi criado.|
+|Propriedadetokencreationdatetime|DateTimeOffset|Data e hora em que o token criado mais recentemente foi criado.|
 |tokenExpirationDateTime|DateTimeOffset|Data e hora em que o token mais recentemente criado expirará.|
 |enrolledDeviceCount|Int32|Número total de dispositivos Android que foram registrados usando esse perfil de registro.|
 |qrCodeContent|String|Cadeia de caracteres usada para gerar um código QR para o token.|
@@ -66,7 +66,7 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto atualizado [androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

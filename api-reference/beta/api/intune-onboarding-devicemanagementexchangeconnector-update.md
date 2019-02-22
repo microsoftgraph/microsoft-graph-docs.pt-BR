@@ -1,21 +1,21 @@
 ---
 title: Atualizar deviceManagementExchangeConnector
 description: Atualizar as propriedades de um objeto deviceManagementExchangeConnector.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ba75d306c302f8f2fca760b3fb6075e340342088
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 5d8979bf3455c52e52eac735c025dbd45ac38382
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425012"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30169241"
 ---
 # <a name="update-devicemanagementexchangeconnector"></a>Atualizar deviceManagementExchangeConnector
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Atualizar as propriedades de um objeto [deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md).
 
@@ -52,13 +52,13 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [deviceManagemen
 |:---|:---|:---|
 |id|String|Ainda não documentado|
 |lastSyncDateTime|DateTimeOffset|Hora da última sincronização do Exchange Connector|
-|status|[deviceManagementExchangeConnectorStatus](../resources/intune-onboarding-devicemanagementexchangeconnectorstatus.md)|Status de conector do Exchange. Os valores possíveis são: `none`, `connectionPending`, `connected`, `disconnected`.|
-|primarySmtpAddress|Cadeia de caracteres|Endereço de email usado para configurar o serviço a serviço do Exchange Connector.|
-|serverName|Cadeia de caracteres|O nome do servidor do Exchange.|
-|connectorServerName|Cadeia de caracteres|O nome do servidor que hospeda o Exchange Connector.|
+|status|[deviceManagementExchangeConnectorStatus](../resources/intune-onboarding-devicemanagementexchangeconnectorstatus.md)|Status do Exchange Connector. Os valores possíveis são: `none`, `connectionPending`, `connected`, `disconnected`.|
+|primarySmtpAddress|String|Endereço de email usado para configurar o serviço a serviço do Exchange Connector.|
+|serverName|String|O nome do servidor Exchange.|
+|connectorServerName|String|O nome do servidor que hospeda o Exchange Connector.|
 |exchangeConnectorType|[deviceManagementExchangeConnectorType](../resources/intune-onboarding-devicemanagementexchangeconnectortype.md)|O tipo de Exchange Connector configurado. Os valores possíveis são: `onPremises`, `hosted`, `serviceToService`, `dedicated`.|
-|version|Cadeia de caracteres|A versão do ExchangeConnectorAgent|
-|exchangeAlias|Cadeia de caracteres|Um alias atribuído a um servidor Exchange|
+|version|String|A versão do ExchangeConnectorAgent|
+|exchangeAlias|String|Um alias atribuído a um servidor Exchange|
 |exchangeOrganization|Cadeia de caracteres|Organização do Exchange no servidor Exchange|
 
 

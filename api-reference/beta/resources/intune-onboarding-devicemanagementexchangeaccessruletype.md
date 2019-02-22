@@ -1,28 +1,28 @@
 ---
-title: tipo de enum deviceManagementExchangeAccessRuleType
-description: Os critérios que define o tipo de dispositivo esta regra de acesso se aplica
-localization_priority: Normal
+title: tipo de enumeração deviceManagementExchangeAccessRuleType
+description: Critérios que definem o tipo de dispositivo para o qual esta regra de acesso será aplicada
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4d9e8aac67184d8633484fc8b1e111cea64ae7af
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 2dfd4a71518996694482525b43955e80918d2552
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29421631"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30164138"
 ---
-# <a name="devicemanagementexchangeaccessruletype-enum-type"></a>tipo de enum deviceManagementExchangeAccessRuleType
+# <a name="devicemanagementexchangeaccessruletype-enum-type"></a>tipo de enumeração deviceManagementExchangeAccessRuleType
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Os critérios que define o tipo de dispositivo esta regra de acesso se aplica
+Critérios que definem o tipo de dispositivo para o qual esta regra de acesso será aplicada
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|família|0|Família de dispositivos|
+|produtos|,0|Família de dispositivos|
 |modelo|1|Modelo específico do dispositivo|
 
 

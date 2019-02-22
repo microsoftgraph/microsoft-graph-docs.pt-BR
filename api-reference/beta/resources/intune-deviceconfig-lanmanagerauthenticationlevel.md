@@ -1,33 +1,33 @@
 ---
-title: tipo de enum lanManagerAuthenticationLevel
+title: tipo de enumeração lanManagerAuthenticationLevel
 description: Valores possíveis para LanManagerAuthenticationLevel
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6e8c7b3df6f515d3dad0d7619b6c0b755ad799d7
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 63f04f1ef2fc12fa0352aeec803c46fb4ebab3d2
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29397453"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30166567"
 ---
-# <a name="lanmanagerauthenticationlevel-enum-type"></a>tipo de enum lanManagerAuthenticationLevel
+# <a name="lanmanagerauthenticationlevel-enum-type"></a>tipo de enumeração lanManagerAuthenticationLevel
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Valores possíveis para LanManagerAuthenticationLevel
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|lmAndNltm|0|Enviar LM & respostas NTLM|
-|lmNtlmAndNtlmV2|1|Enviar a segurança da sessão do LM & usar NTLM NTLMv2 se negociado|
-|lmAndNtlmOnly|2|Enviar LM & somente respostas NTLM|
-|lmAndNtlmV2|3|Enviar LM & respostas NTLMv2|
-|lmNtlmV2AndNotLm|4|Envie LM & respostas NTLMv2. Recusar LM|
-|lmNtlmV2AndNotLmOrNtm|5|Envie LM & respostas NTLMv2. Recusar LM e NTLM &|
+|lmAndNltm|,0|Enviar respostas LM & NTLM|
+|lmNtlmAndNtlmV2|1|Send LM & NTLM-use a segurança da sessão NTLMv2, se estiver negociada|
+|lmAndNtlmOnly|duas|Enviar somente respostas LM & NTLM|
+|lmAndNtlmV2|3D|Enviar somente respostas LM & NTLMv2|
+|lmNtlmV2AndNotLm|quatro|Enviar somente respostas LM & NTLMv2. Recusar LM|
+|lmNtlmV2AndNotLmOrNtm|0,5|Enviar somente respostas LM & NTLMv2. Recusar LM & NTLM|
 
 
 

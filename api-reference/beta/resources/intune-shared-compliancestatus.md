@@ -1,35 +1,35 @@
 ---
-title: tipo de enum complianceStatus
+title: tipo de enumeração complianceStatus
 description: Ainda não documentado
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 78da8ad7cb5a0c8c7c9ec821b14413319d32dff1
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 77c10919e67e5b05028fbd88ba1fe82aa1fba5a0
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29418124"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30168093"
 ---
-# <a name="compliancestatus-enum-type"></a>tipo de enum complianceStatus
+# <a name="compliancestatus-enum-type"></a>tipo de enumeração complianceStatus
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Ainda não documentado
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|unknown|0|Ainda não documentado|
-|notApplicable|1|Ainda não documentado|
-|compatível com|2|Ainda não documentado|
-|remediadas|3|Ainda não documentado|
-|fora de conformidade|4|Ainda não documentado|
-|erro|5|Ainda não documentado|
-|conflito|6|Ainda não documentado|
-|não atribuído|7|Ainda não documentado|
+|unknown|,0|Ainda não documentado|
+|Não aplicável|1|Ainda não documentado|
+|com|duas|Ainda não documentado|
+|corrigidos|3D|Ainda não documentado|
+|Incompatível|quatro|Ainda não documentado|
+|erro|0,5|Ainda não documentado|
+|apresentar|6|Ainda não documentado|
+|Não atribuído|178|Ainda não documentado|
 
 
 

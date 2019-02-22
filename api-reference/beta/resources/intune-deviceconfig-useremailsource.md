@@ -1,29 +1,29 @@
 ---
-title: tipo de enum userEmailSource
-description: Valores possíveis para o nome de usuário origem ou fonte de email.
-localization_priority: Normal
+title: tipo de enumeração userEmail
+description: Valores possíveis para origem de nome de usuário ou fonte de email.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4ffd50d6773ffa5cc037ef9ba6bfe44fd9e8a1be
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: eef7e91c27b60f8b285b9abed0cca3acb862fa32
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399091"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30166014"
 ---
-# <a name="useremailsource-enum-type"></a>tipo de enum userEmailSource
+# <a name="useremailsource-enum-type"></a>tipo de enumeração userEmail
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Valores possíveis para o nome de usuário origem ou fonte de email.
+Valores possíveis para origem de nome de usuário ou fonte de email.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|userPrincipalName|0|Nome principal do usuário.|
-|primarySmtpAddress|1|Endereço de SMTP principal.|
+|userPrincipalName|,0|Nome principal do usuário.|
+|primarySmtpAddress|1|Endereço SMTP principal.|
 
 
 
