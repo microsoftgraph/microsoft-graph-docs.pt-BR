@@ -1,30 +1,30 @@
 ---
-title: tipo de recurso de macOSLobChildApp
-description: Contém propriedades o MacOS LOB App em um pacote de pacote
-localization_priority: Normal
+title: tipo de recurso macOSLobChildApp
+description: Contém as propriedades do aplicativo de LOB do MacOS em um pacote de pacote
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a6a8cafc0f9b47f40fe7e922130a41d37a427e5e
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: f4bf8a8715bb681d1737a2fb1b39e5bac61fb9d7
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29403018"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30146995"
 ---
-# <a name="macoslobchildapp-resource-type"></a>tipo de recurso de macOSLobChildApp
+# <a name="macoslobchildapp-resource-type"></a>tipo de recurso macOSLobChildApp
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Contém propriedades o MacOS LOB App em um pacote de pacote
+Contém as propriedades do aplicativo de LOB do MacOS em um pacote de pacote
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |bundleId|String|O Nome da Identidade.|
-|buildNumber|String|O número de compilação da linha de MacOS do aplicativo de negócios (LoB).|
-|versionNumber|String|O número de versão da linha de MacOS do aplicativo de negócios (LoB).|
+|buildNumber|String|O número de compilação do aplicativo de linha de negócios (LoB) MacOS.|
+|versionNumber|String|O número da versão do aplicativo de linha de negócios (LoB) MacOS.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

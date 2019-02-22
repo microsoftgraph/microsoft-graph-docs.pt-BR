@@ -1,29 +1,29 @@
 ---
-title: tipo de recurso de unsupportedDeviceConfigurationDetail
-description: Uma descrição por que não há suporte para uma entidade.
-localization_priority: Normal
+title: tipo de recurso unsupportedDeviceConfigurationDetail
+description: Uma descrição do motivo pelo qual uma entidade não é suportada.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c03bdb20fc4c48fa7820e09b9212bf73250599aa
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 6ebdb6eb91dd64c1605288cc0cb1260f8fe7440a
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29400386"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30148465"
 ---
-# <a name="unsupporteddeviceconfigurationdetail-resource-type"></a>tipo de recurso de unsupportedDeviceConfigurationDetail
+# <a name="unsupporteddeviceconfigurationdetail-resource-type"></a>tipo de recurso unsupportedDeviceConfigurationDetail
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Uma descrição por que não há suporte para uma entidade.
+Uma descrição do motivo pelo qual uma entidade não é suportada.
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|mensagem|String|Uma mensagem que explica por que não há suporte para uma entidade.|
-|propertyName|String|Se a mensagem está relacionada a uma propriedade específica à entidade original e, em seguida, o nome dessa propriedade.|
+|mensagem|String|Uma mensagem explicando por que uma entidade não é suportada.|
+|NomeDaPropriedade|String|Se a mensagem estiver relacionada a uma propriedade específica na entidade original, o nome dessa propriedade.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

@@ -1,42 +1,42 @@
 ---
-title: tipo de recurso de appLogCollectionRequest
+title: tipo de recurso appLogCollectionRequest
 description: Entidade AppLogCollectionRequest.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 795b80b0194f2c3a1d314cbb317af954fb675063
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: ed0512340431be0456ebbbc5a3bffbb2713fda89
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29431258"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30151699"
 ---
-# <a name="applogcollectionrequest-resource-type"></a>tipo de recurso de appLogCollectionRequest
+# <a name="applogcollectionrequest-resource-type"></a>tipo de recurso appLogCollectionRequest
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Entidade AppLogCollectionRequest.
 
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Lista appLogCollectionRequests](../api/intune-devices-applogcollectionrequest-list.md)|coleção [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)|Lista as propriedades e os relacionamentos dos objetos [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) .|
-|[Obter appLogCollectionRequest](../api/intune-devices-applogcollectionrequest-get.md)|[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)|Leia as propriedades e os relacionamentos do objeto [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) .|
-|[Criar appLogCollectionRequest](../api/intune-devices-applogcollectionrequest-create.md)|[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)|Crie um novo objeto de [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) .|
-|[Excluir appLogCollectionRequest](../api/intune-devices-applogcollectionrequest-delete.md)|Nenhum|Exclui um [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md).|
-|[Atualizar appLogCollectionRequest](../api/intune-devices-applogcollectionrequest-update.md)|[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)|Atualize as propriedades de um objeto [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) .|
-|[ação de createDownloadUrl](../api/intune-devices-applogcollectionrequest-createdownloadurl.md)|[appLogCollectionDownloadDetails](../resources/intune-devices-applogcollectiondownloaddetails.md)|Ainda não documentado|
+|[Listar appLogCollectionRequests](../api/intune-devices-applogcollectionrequest-list.md)|coleção [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)|Listar Propriedades e relações dos objetos [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) .|
+|[Obter appLogCollectionRequest](../api/intune-devices-applogcollectionrequest-get.md)|[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)|Leia as propriedades e as relações do objeto [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) .|
+|[Criar appLogCollectionRequest](../api/intune-devices-applogcollectionrequest-create.md)|[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)|Criar um novo objeto [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) .|
+|[Excluir appLogCollectionRequest](../api/intune-devices-applogcollectionrequest-delete.md)|Nenhum|Exclui [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md).|
+|[Atualizar appLogCollectionRequest](../api/intune-devices-applogcollectionrequest-update.md)|[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)|Atualiza as propriedades de um objeto [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) .|
+|[ação createDownloadUrl](../api/intune-devices-applogcollectionrequest-createdownloadurl.md)|[appLogCollectionDownloadDetails](../resources/intune-devices-applogcollectiondownloaddetails.md)|Ainda não documentado|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo. Esse é o id de userId_DeviceId_AppId.|
-|status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|Status de carregamento de log. Os valores possíveis são: `pending`, `completed`, `failed`.|
-|errorMessage|String|Mensagem de erro, se houver algum durante o processo de carregamento|
-|customLogFolders|String collection|Lista de pastas de log. |
-|completedDateTime|DateTimeOffset|Hora em que a solicitação de log de carregamento atingido um estado de terminal|
+|id|String|O identificador exclusivo. Esta é a ID do userId_DeviceId_AppId.|
+|status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|Status de carregamento de logs. Os valores possíveis são: `pending`, `completed`, `failed`.|
+|errorMessage|String|Mensagem de erro se qualquer um durante o processo de carregamento|
+|customLogFolders|Coleção de cadeias de caracteres|Lista de pastas de log. |
+|completedDateTime|DateTimeOffset|Hora em que a solicitação de log de carregamento alcançou um estado de terminal|
 
 ## <a name="relationships"></a>Relações
 Nenhum

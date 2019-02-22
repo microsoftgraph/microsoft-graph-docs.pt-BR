@@ -1,46 +1,46 @@
 ---
-title: tipo de enum windowsPrivacyDataCategory
-description: Especificador de categoria Windows privacidade dados para acesso aos dados de privacidade.
-localization_priority: Normal
+title: tipo de enumeração windowsPrivacyDataCategory
+description: Especificador de categoria de dados de privacidade do Windows para acesso a dados de privacidade.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 484042130a4a1d6a3732ddd1b3ac7fc4aec41da3
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: c3097ed916ec9f215880caf46bcdc02616ce5d2c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29401142"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30154450"
 ---
-# <a name="windowsprivacydatacategory-enum-type"></a>tipo de enum windowsPrivacyDataCategory
+# <a name="windowsprivacydatacategory-enum-type"></a>tipo de enumeração windowsPrivacyDataCategory
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Especificador de categoria Windows privacidade dados para acesso aos dados de privacidade.
+Especificador de categoria de dados de privacidade do Windows para acesso a dados de privacidade.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|não-configuradas|0|Nenhum nível de acesso não especificado, nenhum propósitos. Dispositivo pode se comportam tanto como UserInControl ou ForceAllow. Ele pode depender os dados de privacidade foram acessados, versões do Windows e outros fatores.|
-|accountInfo|1|Permitir que o nome do usuário do access apps, imagem e outras informações de conta criada na conta da Microsoft. Adicionado no Windows 10, versão 1607.|
-|appsRunInBackground|2|Permitir aplicativos receber informações, enviar notificações e mantenha-se atualizado, mesmo quando o usuário não está usando a eles. Lembre-se de que quando desabilitando os aplicativos de comunicação (Email, voz, etc.) contra o acesso de plano de fundo esses aplicativos podem, ou talvez não funcione como estão com o acesso de plano de fundo. Adicionado ao Windows 10, versão 1703.|
-|calendário|3|Permitir que o calendário do usuário do access apps. Adicionado no Windows 10, versão 1607.|
-|callHistory|4|Permitir que o histórico de chamadas do usuário de acesso de aplicativos. Adicionado no Windows 10, versão 1607.|
-|câmera|5|Permitem que aplicativos acessar a câmera no dispositivo do usuário. Adicionado no Windows 10, versão 1607.|
-|contatos|6|Permitir que as informações de contato do usuário de acesso de aplicativos. Adicionado no Windows 10, versão 1607.|
-|diagnosticsInfo|7|Permitem que aplicativos acessar informações de diagnóstico sobre outros aplicativos em execução. Adicionado ao Windows 10, versão 1703.|
-|email|8|Permitir que o acesso de aplicativos e enviar email. Adicionado no Windows 10, versão 1607.|
-|location|9|Permitem que aplicativos acessar os dados de localização precisas do usuário do dispositivo. Adicionado no Windows 10, versão 1607.|
-|mensagens|10|Permitem que aplicativos ler ou enviar mensagens, texto ou MMS. Adicionado no Windows 10, versão 1607.|
-|microfone|11|Permitem que aplicativos use microfone no dispositivo do usuário. Adicionado no Windows 10, versão 1607.|
-|movimento|12|Permitem que aplicativos usam dados de movimento gerados no usuário do dispositivo. Adicionado no Windows 10, versão 1607.|
-|notificações|13|Deixe as notificações do usuário do access apps. Adicionado no Windows 10, versão 1607.|
-|phone|14|Permitir que o access apps dados de telefone e fazer chamadas telefônicas. Adicionado no Windows 10, versão 1607.|
-|rádios|15|Permitem que aplicativos use rádios, incluindo Bluetooth, para enviar e receber dados. Adicionado no Windows 10, versão 1607.|
-|tarefas|16|Acesso permitem que aplicativos Agendador de tarefas. Adicionado ao Windows 10, versão 1703.|
-|syncWithDevices|17|Permitem que aplicativos compartilhar automaticamente e sincronizar informações com dispositivos sem fio que não explicitamente emparelhar com o dispositivo do usuário. Adicionado no Windows 10, versão 1607.|
-|trustedDevices|18|Permitem que aplicativos acessar dispositivos confiáveis. Adicionado no Windows 10, versão 1607.|
+|notConfigured|,0|Nenhum nível de acesso especificado, sem tentativas. O dispositivo pode se comportar como no UserInControl ou no ForceAllow. Pode depender que os dados de privacidade foram acessados, versões do Windows e outros fatores.|
+|accountInfo|1|Permite que aplicativos acessem o nome do usuário, a imagem e outras informações da conta criadas na conta da Microsoft. Adicionado no Windows 10, versão 1607.|
+|appsRunInBackground|duas|Permitir que os aplicativos recebam informações, enviem notificações e permaneçam atualizados, mesmo quando o usuário não estiver usando-os. Lembre-se de que ao desabilitar os aplicativos de comunicação (email, voz, etc.) do acesso em segundo plano, esses aplicativos podem ou não funcionar como estão com o acesso em segundo plano. Adicionado no Windows 10, versão 1703.|
+|calendar|3D|Permitir que aplicativos acessem o calendário do usuário. Adicionado no Windows 10, versão 1607.|
+|callHistory|quatro|Permitir que aplicativos acessem o histórico de chamadas do usuário. Adicionado no Windows 10, versão 1607.|
+|Câmara|0,5|Permitir que os aplicativos acessem a câmera no dispositivo do usuário. Adicionado no Windows 10, versão 1607.|
+|contacts|6|Permitir que aplicativos acessem as informações de contato do usuário. Adicionado no Windows 10, versão 1607.|
+|diagnosticsInfo|178|Permitir que aplicativos acessem informações de diagnóstico sobre outros aplicativos em execução. Adicionado no Windows 10, versão 1703.|
+|email|8|Permitir que os aplicativos acessem e enviem emails. Adicionado no Windows 10, versão 1607.|
+|location|241|Permitir que os aplicativos acessem os dados de local preciso do usuário do dispositivo. Adicionado no Windows 10, versão 1607.|
+|SMS|254|Permitir que os aplicativos leiam ou enviem mensagens, texto ou MMS. Adicionado no Windows 10, versão 1607.|
+|microfone|11|Permitir que os aplicativos usem o microfone no dispositivo do usuário. Adicionado no Windows 10, versão 1607.|
+|movimento|3,6|Permitir que os aplicativos usem dados de movimento gerados no usuário do dispositivo. Adicionado no Windows 10, versão 1607.|
+|por|Treze|Permitir que aplicativos acessem notificações do usuário. Adicionado no Windows 10, versão 1607.|
+|phone|14|Permitir que aplicativos acessem dados de telefone e façam chamadas telefônicas. Adicionado no Windows 10, versão 1607.|
+|rádios|15|Permitir que os aplicativos usem rádios, incluindo Bluetooth, para enviar e receber dados. Adicionado no Windows 10, versão 1607.|
+|tarefas|dezesseis|Permitir que aplicativos acessem o Agendador de tarefas. Adicionado no Windows 10, versão 1703.|
+|syncWithDevices|17.07.06|Permita que os aplicativos compartilhem e sincronizem informações com dispositivos sem fio que não sejam explicitamente emparelhados com o dispositivo do usuário. Adicionado no Windows 10, versão 1607.|
+|trustedDevices|anos|Permitir que aplicativos acessem dispositivos confiáveis. Adicionado no Windows 10, versão 1607.|
 
 
 

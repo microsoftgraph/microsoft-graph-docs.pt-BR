@@ -1,34 +1,34 @@
 ---
-title: tipo de enum deviceGuardVirtualizationBasedSecurityState
+title: tipo de enumeração deviceGuardVirtualizationBasedSecurityState
 description: Ainda não documentado
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 39588aff1385bb14e1bf52f5d41b4848c1384138
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 2e05ff7e9354f8b8a5fbead8fb62369cb2e5d761
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399763"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30153043"
 ---
-# <a name="deviceguardvirtualizationbasedsecuritystate-enum-type"></a>tipo de enum deviceGuardVirtualizationBasedSecurityState
+# <a name="deviceguardvirtualizationbasedsecuritystate-enum-type"></a>tipo de enumeração deviceGuardVirtualizationBasedSecurityState
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Ainda não documentado
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|em execução|0|Executando|
-|rebootRequired|1|Raiz necessário|
-|require64BitArchitecture|2|arquitetura de 64 bits necessária|
-|notLicensed|3|Não licenciado|
-|não-configuradas|4|Não configurado|
-|doesNotMeetHardwareRequirements|5|Sistema não atende aos requisitos de hardware|
-|outros|42|Outros. Logs de eventos no microsoft-Windows-DeviceGuard ter mais detalhes.|
+|com|,0|Executando|
+|rebootRequired|1|Raiz necessária|
+|require64BitArchitecture|duas|é necessária a arquitetura de bits de 64|
+|Não licenciado|3D|Não licenciado|
+|notConfigured|quatro|Não configurado|
+|doesNotMeetHardwareRequirements|0,5|O sistema não atende aos requisitos de hardware|
+|outro|42|Outro. Os logs de eventos no Microsoft-Windows-DeviceGuard têm mais detalhes.|
 
 
 

@@ -1,31 +1,31 @@
 ---
-title: tipo de enum roleAssignmentScopeType
-description: Especifica o tipo de escopo para uma atribuição de função.
-localization_priority: Normal
+title: tipo de enumeração roleAssignmentScopeType
+description: Especifica o tipo de escopo de uma atribuição de função.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1b815cf7eb396aa82f49df792ceee0612678077c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 6089021851e3d953fce4874b11e343b4747adf40
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29419888"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30150691"
 ---
-# <a name="roleassignmentscopetype-enum-type"></a>tipo de enum roleAssignmentScopeType
+# <a name="roleassignmentscopetype-enum-type"></a>tipo de enumeração roleAssignmentScopeType
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Especifica o tipo de escopo para uma atribuição de função.
+Especifica o tipo de escopo de uma atribuição de função.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|resourceScope|0|Permitir que as atribuições para o ResourceScopes especificado.|
-|allDevices|1|Permitir que as atribuições para todos os dispositivos Intune.|
-|allLicensedUsers|2|Permitir que as atribuições para todos os usuários licenciado do Intune.|
-|allDevicesAndLicensedUsers|3|Permitir que as atribuições para todos os dispositivos de Intune e os usuários licenciados.|
+|resourceScope|,0|Permite atribuições para o ResourceScopes especificado.|
+|objectDevices|1|Permitir atribuições de todos os dispositivos do Intune.|
+|allLicensedUsers|duas|Permitir atribuições a todos os usuários licenciados do Intune.|
+|allDevicesAndLicensedUsers|3D|Permitir atribuições de todos os dispositivos do Intune e usuários licenciados.|
 
 
 

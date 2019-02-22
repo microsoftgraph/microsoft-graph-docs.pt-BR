@@ -1,30 +1,30 @@
 ---
-title: tipo de enum ownerType
+title: tipo de enumeração ownerType
 description: Tipo de proprietário de dispositivo.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8d55eaa360a99afe4a528b76963d24c124b35723
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 113744129e6a86cccc0188187cd54e64a1266cd6
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415485"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30150642"
 ---
-# <a name="ownertype-enum-type"></a>tipo de enum ownerType
+# <a name="ownertype-enum-type"></a>tipo de enumeração ownerType
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Tipo de proprietário de dispositivo.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|unknown|0|Desconhecido.|
-|companhia|1|Pertencentes a empresa.|
-|pessoal|2|Pertencentes a pessoa.|
+|unknown|,0|Unknown.|
+|companhia|1|Pertencentes à empresa.|
+|pessoal|duas|Pertencente à pessoa.|
 
 
 

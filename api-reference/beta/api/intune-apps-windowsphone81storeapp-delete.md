@@ -1,23 +1,23 @@
 ---
 title: Excluir windowsPhone81StoreApp
-description: Exclui um windowsPhone81StoreApp.
-localization_priority: Normal
+description: Exclui windowsPhone81StoreApp.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d00815232464bbf4cc2a766e93a05ca10413d58a
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: cb53c397eddff7d6c03dc55c57c60edffbb8f3a2
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29394891"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30153400"
 ---
 # <a name="delete-windowsphone81storeapp"></a>Excluir windowsPhone81StoreApp
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Exclui um [windowsPhone81StoreApp](../resources/intune-apps-windowsphone81storeapp.md).
+Exclui [windowsPhone81StoreApp](../resources/intune-apps-windowsphone81storeapp.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).

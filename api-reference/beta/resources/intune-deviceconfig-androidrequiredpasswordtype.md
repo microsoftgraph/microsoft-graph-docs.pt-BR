@@ -1,35 +1,35 @@
 ---
-title: tipo de enum androidRequiredPasswordType
-description: Tipo de senha necessária Android.
-localization_priority: Normal
+title: tipo de enumeração androidRequiredPasswordType
+description: Tipo de senha exigido pelo Android.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eebc6b0ad6eed346927fd48a2dc1f82b5e529b28
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 1845656d43ec2a8f567506ed61b5ee3bc6d8a9ad
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29392910"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30151517"
 ---
-# <a name="androidrequiredpasswordtype-enum-type"></a>tipo de enum androidRequiredPasswordType
+# <a name="androidrequiredpasswordtype-enum-type"></a>tipo de enumeração androidRequiredPasswordType
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Tipo de senha necessária Android.
+Tipo de senha exigido pelo Android.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|deviceDefault|0|Valor de padrão de dispositivo, sem intenção.|
-|alfabético|1|Senha alfabética necessária.|
-|alfanumérico|2|Senha alfanumérica necessária.|
-|alphanumericWithSymbols|3|Alfanumérico com senha de símbolos necessária.|
-|lowSecurityBiometric|4|Biométrica baixa segurança com base em senha necessária.|
-|numéricos|5|Senha numérica necessária.|
-|numericComplex|6|Senha complexa numérica necessária.|
-|qualquer|7|É necessária uma senha ou padrão e quaisquer é aceitável.|
+|deviceDefault|,0|Valor padrão do dispositivo, sem intenção.|
+|caracteres|1|Senha alfabética necessária.|
+|tecla|duas|Senha alfanumérica obrigatória.|
+|alphanumericWithSymbols|3D|Alfanumérica com símbolos de senha necessários.|
+|lowSecurityBiometric|quatro|Senha com base em Biometria de segurança baixa necessária.|
+|numéricos|0,5|Senha numérica obrigatória.|
+|numericComplex|6|Senha numérica complexa obrigatória.|
+|qualquer|178|Uma senha ou um padrão é necessário, e qualquer um é aceitável.|
 
 
 

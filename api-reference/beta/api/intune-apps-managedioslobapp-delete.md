@@ -1,21 +1,21 @@
 ---
 title: Excluir managedIOSLobApp
 description: Exclui managedIOSLobApp.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3fef3aec0205266678be174faf38a37453b50c82
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 464bf47c3f4e0f585abc4b28782dd5701fc78cdc
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29404761"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30154800"
 ---
 # <a name="delete-managedioslobapp"></a>Excluir managedIOSLobApp
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Exclui [managedIOSLobApp](../resources/intune-apps-managedioslobapp.md).
 

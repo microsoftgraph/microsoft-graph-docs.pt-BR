@@ -1,33 +1,33 @@
 ---
-title: tipo de enum windowsArchitecture
-description: Contém propriedades para a arquitetura do Windows.
-localization_priority: Normal
+title: tipo de enumeração windowsArchitecture
+description: Contém propriedades da arquitetura do Windows.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4cb46618b4a2ac56f336384148b5812b63cf6d60
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 64a3175d020e045361e13035f4cb101a26f2e8f6
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29393631"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30152119"
 ---
-# <a name="windowsarchitecture-enum-type"></a>tipo de enum windowsArchitecture
+# <a name="windowsarchitecture-enum-type"></a>tipo de enumeração windowsArchitecture
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Contém propriedades para a arquitetura do Windows.
+Contém propriedades da arquitetura do Windows.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|none|0|Nenhum sinalizador definido.|
-|x86|1|Ou não o X86 tipo de arquitetura do Windows é suportado.|
-|x64|2|Ou não o X64 tipo de arquitetura do Windows é suportado.|
-|ARM|4|Ou não há suporte para o tipo de arquitetura do Windows Arm.|
-|neutro|8|Ou não há suporte para o tipo de arquitetura do Windows neutro.|
-|arm64|16|Ou não há suporte para o tipo de arquitetura do Windows Arm64.|
+|Nenhuma|,0|Nenhum sinalizador definido.|
+|x|1|Se o tipo de arquitetura do Windows x86 é ou não suportado.|
+|Professional|duas|Se o tipo de arquitetura do Windows x64 é ou não suportado.|
+|equipe|quatro|Se o tipo de arquitetura Windows de braço é ou não suportado.|
+|neutraliza|8|Se o tipo de arquitetura neutra do Windows é ou não suportado.|
+|arm64|dezesseis|Se o tipo de arquitetura do Windows Arm64 é ou não suportado.|
 
 
 

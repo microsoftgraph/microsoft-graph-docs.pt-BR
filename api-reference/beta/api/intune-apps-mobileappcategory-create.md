@@ -1,21 +1,21 @@
 ---
 title: Criar mobileAppCategory
 description: Criar um novo objeto mobileAppCategory.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e88632627569af8a77ff60b11b7319b2acdaf430
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 7e6e5585cdba78c89eb928a1ad547cc6c4eacd43
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29423857"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30151727"
 ---
 # <a name="create-mobileappcategory"></a>Criar mobileAppCategory
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Criar um novo objeto [mobileAppCategory](../resources/intune-apps-mobileappcategory.md).
 
@@ -51,8 +51,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar mobileAp
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|A chave da entidade.|
-|displayName|Cadeia de caracteres|O nome da categoria do aplicativo.|
+|id|String|A chave da entidade.|
+|displayName|String|O nome da categoria do aplicativo.|
 |lastModifiedDateTime|DateTimeOffset|A data e hora que a mobileAppCategory foi modificada pela última vez.|
 
 

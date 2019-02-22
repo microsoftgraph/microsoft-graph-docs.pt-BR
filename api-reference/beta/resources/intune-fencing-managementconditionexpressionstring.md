@@ -1,23 +1,23 @@
 ---
-title: tipo de recurso de managementConditionExpressionString
-description: Uma cadeia de caracteres de expressão de condição de gerenciamento é uma representação de cadeia de caracteres de uma expressão de condição de gerenciamento.
-localization_priority: Normal
+title: tipo de recurso managementConditionExpressionString
+description: Uma sequência de expressão de condição de gerenciamento é uma representação de cadeia de caracteres de uma expressão de condição de gerenciamento.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8b8abc3492690afe6709070decbfe050356fd614
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: fc4552ab6cc97676ced32ae7e7f5649262c4f4f7
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29419188"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30151006"
 ---
-# <a name="managementconditionexpressionstring-resource-type"></a>tipo de recurso de managementConditionExpressionString
+# <a name="managementconditionexpressionstring-resource-type"></a>tipo de recurso managementConditionExpressionString
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Uma cadeia de caracteres de expressão de condição de gerenciamento é uma representação de cadeia de caracteres de uma expressão de condição de gerenciamento.
+Uma sequência de expressão de condição de gerenciamento é uma representação de cadeia de caracteres de uma expressão de condição de gerenciamento.
 
 
 Herda de [managementConditionExpression](../resources/intune-fencing-managementconditionexpression.md)
@@ -25,7 +25,7 @@ Herda de [managementConditionExpression](../resources/intune-fencing-managementc
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|valor|String|O valor de cadeia de caracteres do gerenciamento condição instrução expressão.|
+|valor|String|O valor da cadeia de caracteres da expressão da declaração de condição de gerenciamento.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

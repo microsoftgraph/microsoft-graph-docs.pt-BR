@@ -1,33 +1,33 @@
 ---
-title: tipo de enum ratingUnitedStatesMoviesType
-description: Filmes classificação rótulos nos Estados Unidos
-localization_priority: Normal
+title: tipo de enumeração ratingUnitedStatesMoviesType
+description: Rótulos de classificação de filmes nos Estados Unidos
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c14fcc87c949e3f16403ca4654ec987423f8b647
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8475e3cfa4dbdd2e93f685a1b954d44516104ac3
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29412223"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30152735"
 ---
-# <a name="ratingunitedstatesmoviestype-enum-type"></a>tipo de enum ratingUnitedStatesMoviesType
+# <a name="ratingunitedstatesmoviestype-enum-type"></a>tipo de enumeração ratingUnitedStatesMoviesType
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Filmes classificação rótulos nos Estados Unidos
+Rótulos de classificação de filmes nos Estados Unidos
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|allAllowed|0|Valor padrão, permitir todo o conteúdo de filmes|
-|allBlocked|1|Não permitir que qualquer conteúdo filmes|
-|geral|2|G, todos os anos admitidos|
-|parentalGuidance|3|PG, alguns material pode não ser adequado para filhos|
-|parentalGuidance13|4|PG13, alguns material pode ser inadequado para filhos em 13|
-|restrito|5|R, visualizadores em 17 exigem a complementar adulto ou responsável|
+|Permitido|,0|Valor padrão, permitir todo o conteúdo de filmes|
+|Bloqueado|1|Não permitir conteúdo de filmes|
+|geral|duas|G, todas as idades admitiram|
+|parentalGuidance|3D|PG, alguns materiais podem não ser adequados para crianças|
+|parentalGuidance13|quatro|PG13, alguns materiais podem ser inadequados para crianças com menos de 13 anos|
+|limitado|0,5|R, os espectadores em 17 exigem o guardião pai ou adulto de acompanhamento|
 |adultos|6|NC17, somente para adultos|
 
 

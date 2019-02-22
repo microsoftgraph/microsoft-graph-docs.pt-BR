@@ -1,34 +1,34 @@
 ---
-title: tipo de enum defenderThreatAction
-description: Ação de padrão do Defender assuma detectadas ameaças de Malware.
-localization_priority: Normal
+title: tipo de enumeração defenderThreatAction
+description: Ação padrão do defender a ser executada em ameaças de malware detectadas.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d092d5a23fc006a9accdf9062a27cd79f323d208
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 4849f369aa5dd04a68599050aa097b2ac63f5ef1
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29400267"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30154779"
 ---
-# <a name="defenderthreataction-enum-type"></a>tipo de enum defenderThreatAction
+# <a name="defenderthreataction-enum-type"></a>tipo de enumeração defenderThreatAction
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Ação de padrão do Defender assuma detectadas ameaças de Malware.
+Ação padrão do defender a ser executada em ameaças de malware detectadas.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|deviceDefault|0|Aplica a ação com base na definição de atualização.|
-|clean|1|Limpe ameaça detectada.|
-|quarentena|2|Quarentena ameaça detectada.|
-|remover|3|Remova ameaça detectada.|
-|permitir|4|Permitir ameaça detectada.|
-|userDefined|5|Permitir que o usuário determinar a ação a ser executada com ameaça detectada.|
-|bloquear|6|Bloquear ameaça detectada.|
+|deviceDefault|,0|Aplicar ação com base na definição de atualização.|
+|clean|1|Limpe a ameaça detectada.|
+|quarentena|duas|Colocar em quarentena a ameaça detectada.|
+|remover|3D|Remova a ameaça detectada.|
+|permitiu|quatro|Permitir a ameaça detectada.|
+|userDefined|0,5|Permitir que o usuário determine a ação a ser tomada com a ameaça detectada.|
+|Larga|6|Bloquear a ameaça detectada.|
 
 
 

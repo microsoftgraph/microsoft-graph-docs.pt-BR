@@ -1,37 +1,37 @@
 ---
-title: tipo de recurso de deviceProtectionOverview
+title: tipo de recurso deviceProtectionOverview
 description: Informações de hardware de um determinado dispositivo.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 902e3a6062d2aa50c96c27eb9d542905bf9a029d
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 2d6cd5cc1eef939476a6fa3b5c46a7cfa315607b
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29418985"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30154086"
 ---
-# <a name="deviceprotectionoverview-resource-type"></a>tipo de recurso de deviceProtectionOverview
+# <a name="deviceprotectionoverview-resource-type"></a>tipo de recurso deviceProtectionOverview
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Informações de hardware de um determinado dispositivo.
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|totalReportedDeviceCount|Int32|Contagem total de dispositivo.|
-|inactiveThreatAgentDeviceCount|Int32|Dispositivo com contagem de agente de ameaça inativa|
-|unknownStateThreatAgentDeviceCount|Int32|Dispositivo com o estado de agente de ameaça como contagem desconhecido.|
-|pendingSignatureUpdateDeviceCount|Int32|Dispositivo com a contagem de assinatura antigo.|
-|cleanDeviceCount|Int32|Limpar a contagem do dispositivo.|
-|pendingFullScanDeviceCount|Int32|Contagem de dispositivo pendentes verificação completa.|
-|pendingRestartDeviceCount|Int32|Contagem de reinicialização pendente do dispositivo.|
-|pendingManualStepsDeviceCount|Int32|Contagem de dispositivo pendentes etapas manuais.|
-|pendingOfflineScanDeviceCount|Int32|Contagem de dispositivo pendentes verificação offline.|
-|criticalFailuresDeviceCount|Int32|Contagem de falhas críticas do dispositivo.|
+|totalReportedDeviceCount|Int32|Contagem total de dispositivos.|
+|inactiveThreatAgentDeviceCount|Int32|Dispositivo com contagem inativa de agente de ameaça|
+|unknownStateThreatAgentDeviceCount|Int32|Dispositivo com o estado do agente de ameaça como contagem desconhecida.|
+|pendingSignatureUpdateDeviceCount|Int32|Dispositivo com a contagem de assinatura antiga.|
+|cleanDeviceCount|Int32|Limpar contagem de dispositivos.|
+|pendingFullScanDeviceCount|Int32|Contagem de dispositivos de verificação completa pendente.|
+|pendingRestartDeviceCount|Int32|Contagem de dispositivos de reinicialização pendente.|
+|pendingManualStepsDeviceCount|Int32|Contagem de dispositivos de etapas manuais pendentes.|
+|pendingOfflineScanDeviceCount|Int32|Contagem de dispositivos de verificação offline pendente.|
+|criticalFailuresDeviceCount|Int32|Contagem de dispositivos de falhas críticas.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

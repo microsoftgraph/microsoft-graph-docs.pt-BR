@@ -1,31 +1,31 @@
 ---
-title: tipo de enum iosWallpaperDisplayLocation
-description: Especificador de local de exibição de um tipo de enum de parede.
-localization_priority: Normal
+title: tipo de enumeração iosWallpaperDisplayLocation
+description: Um tipo enum para o especificador de local de exibição de papel de parede.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cdf6a0a837d420d37641221bf39b5b64f1046591
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: ea7980d8005f3a2ddbb515528f3330881296c191
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29429027"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30146624"
 ---
-# <a name="ioswallpaperdisplaylocation-enum-type"></a>tipo de enum iosWallpaperDisplayLocation
+# <a name="ioswallpaperdisplaylocation-enum-type"></a>tipo de enumeração iosWallpaperDisplayLocation
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Especificador de local de exibição de um tipo de enum de parede.
+Um tipo enum para o especificador de local de exibição de papel de parede.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|não-configuradas|0|Nenhum local especificado para a exibição de parede.|
-|lockScreen|1|Uma imagem de papel de parede configurado é exibida na tela de bloqueio.|
-|homeScreen|2|Uma imagem de papel de parede configurado é exibida na tela inicial (lista de ícone).|
-|lockAndHomeScreens|3|Uma imagem de papel de parede configurado é exibida na tela de bloqueio e a tela inicial.|
+|notConfigured|,0|Nenhum local especificado para exibição de papel de parede.|
+|Bloqueio|1|Uma imagem de papel de parede configurada é exibida na tela de bloqueio.|
+|homeScreen|duas|Uma imagem de papel de parede configurada é exibida na tela página inicial (lista de ícones).|
+|lockAndHomeScreens|3D|Uma imagem de papel de parede configurada é exibida na tela de bloqueio e na tela inicial.|
 
 
 

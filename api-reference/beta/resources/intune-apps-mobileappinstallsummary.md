@@ -1,44 +1,44 @@
 ---
-title: tipo de recurso de mobileAppInstallSummary
-description: Contém propriedades para o resumo da instalação de um aplicativo móvel.
-localization_priority: Normal
+title: tipo de recurso mobileAppInstallSummary
+description: Contém propriedades para o resumo de instalação de um aplicativo móvel.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a2bd7c30c1b00e83731766bcd80f9a9fafd8e8b7
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 9747d53c56f9e505b61e1fa38bf5abdc27d14e42
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29416710"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30150761"
 ---
-# <a name="mobileappinstallsummary-resource-type"></a>tipo de recurso de mobileAppInstallSummary
+# <a name="mobileappinstallsummary-resource-type"></a>tipo de recurso mobileAppInstallSummary
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Contém propriedades para o resumo da instalação de um aplicativo móvel.
+Contém propriedades para o resumo de instalação de um aplicativo móvel.
 
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Obter mobileAppInstallSummary](../api/intune-apps-mobileappinstallsummary-get.md)|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)|Leia as propriedades e os relacionamentos do objeto [mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md) .|
-|[Atualizar mobileAppInstallSummary](../api/intune-apps-mobileappinstallsummary-update.md)|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)|Atualize as propriedades de um objeto [mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md) .|
+|[Obter mobileAppInstallSummary](../api/intune-apps-mobileappinstallsummary-get.md)|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)|Leia as propriedades e as relações do objeto [mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md) .|
+|[Atualizar mobileAppInstallSummary](../api/intune-apps-mobileappinstallsummary-update.md)|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)|Atualiza as propriedades de um objeto [mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md) .|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade.|
-|installedDeviceCount|Int32|Número de dispositivos que instalou com sucesso deste aplicativo.|
-|failedDeviceCount|Int32|Número de dispositivos que não tenha conseguido instalar esse aplicativo.|
-|notApplicableDeviceCount|Int32|Número de dispositivos que não são aplicáveis para esse aplicativo.|
-|notInstalledDeviceCount|Int32|Número de dispositivos que não tem este aplicativo instalado.|
-|pendingInstallDeviceCount|Int32|Número de dispositivos que foram notificados para instalar esse aplicativo.|
-|installedUserCount|Int32|Número de usuários cujos dispositivos tiveram êxito para instalar esse aplicativo.|
-|failedUserCount|Int32|Número de usuários que têm 1 ou mais dispositivo com falha para instalar esse aplicativo.|
-|notApplicableUserCount|Int32|Número de usuários cujos dispositivos tudo não eram aplicáveis para esse aplicativo.|
-|notInstalledUserCount|Int32|Número de usuários que têm 1 ou mais dispositivos que não tiver instalado esse aplicativo.|
-|pendingInstallUserCount|Int32|Número de usuários que têm 1 ou mais dispositivo que foram notificados para instalar esse aplicativo e tiver 0 dispositivos com falhas.|
+|installedDeviceCount|Int32|Número de dispositivos que instalaram com êxito este aplicativo.|
+|failedDeviceCount|Int32|Número de dispositivos que falharam ao instalar este aplicativo.|
+|notApplicableDeviceCount|Int32|Número de dispositivos que não se aplicam a este aplicativo.|
+|notInstalledDeviceCount|Int32|Número de dispositivos que não possuem este aplicativo instalado.|
+|pendingInstallDeviceCount|Int32|Número de dispositivos que foram notificados para instalar este aplicativo.|
+|installedUserCount|Int32|Número de usuários cujos dispositivos foram todos bem-sucedidos para instalar este aplicativo.|
+|failedUserCount|Int32|Número de usuários que têm um ou mais dispositivos que não instalaram este aplicativo.|
+|notApplicableUserCount|Int32|Número de usuários cujos dispositivos não são todos aplicáveis para este aplicativo.|
+|notInstalledUserCount|Int32|Número de usuários que têm um ou mais dispositivos que não instalaram este aplicativo.|
+|pendingInstallUserCount|Int32|Número de usuários que têm um ou mais dispositivos que foram notificados para instalar este aplicativo e têm 0 dispositivos com falhas.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

@@ -1,33 +1,33 @@
 ---
-title: tipo de enum deviceManagementPartnerTenantState
-description: Estado de parceiro deste locatário.
-localization_priority: Normal
+title: tipo de enumeração deviceManagementPartnerTenantState
+description: Estado do parceiro desse locatário.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0044aae0069ceb87f8a8820e49a114b814da62c6
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 11276fa24b5128c52c39fcc4c8a944df39c865b2
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29407288"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30153330"
 ---
-# <a name="devicemanagementpartnertenantstate-enum-type"></a>tipo de enum deviceManagementPartnerTenantState
+# <a name="devicemanagementpartnertenantstate-enum-type"></a>tipo de enumeração deviceManagementPartnerTenantState
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Estado de parceiro deste locatário.
+Estado do parceiro desse locatário.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|unknown|0|Estado do parceiro é desconhecido.|
-|indisponível|1|Parceiro não está disponível.|
-|enabled|2|Parceiro está habilitado.|
-|terminada|3|Conexão de parceiro será encerrada.|
-|rejeitado|4|Mensagens de parceiro são rejeitadas.|
-|não responde|5|Parceiro não está respondendo.|
+|unknown|,0|O estado do parceiro é desconhecido.|
+|indisponível|1|O parceiro não está disponível.|
+|enabled|duas|O parceiro está habilitado.|
+|Cerro|3D|Conexão de parceiro terminada.|
+|rejeitar|quatro|As mensagens de parceiros são rejeitadas.|
+|Não responde|0,5|O parceiro não responde.|
 
 
 

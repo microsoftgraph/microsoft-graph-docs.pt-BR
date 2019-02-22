@@ -1,31 +1,31 @@
 ---
-title: tipo de enum keyStorageProviderOption
-description: Opções de importação do armazenamento de chave KSP (provedor).
-localization_priority: Normal
+title: tipo de enumeração keyStorageProviderOption
+description: Opções de importação do KSP (provedor de armazenamento de chave).
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6993d7e241ef94c572975c709c286a14f6eabf5b
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: ddc1cffe1f4e6056d53a151a3b36b2622c9bf4b5
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29424221"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30153015"
 ---
-# <a name="keystorageprovideroption-enum-type"></a>tipo de enum keyStorageProviderOption
+# <a name="keystorageprovideroption-enum-type"></a>tipo de enumeração keyStorageProviderOption
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Opções de importação do armazenamento de chave KSP (provedor).
+Opções de importação do KSP (provedor de armazenamento de chave).
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|useTpmKspOtherwiseUseSoftwareKsp|0|Importação para Trusted Platform Module (TPM) KSP se presente, caso contrário, importe para KSP de Software.|
-|useTpmKspOtherwiseFail|1|Importação para Trusted Platform Module (TPM) KSP se presente, caso contrário falhar.|
-|usePassportForWorkKspOtherwiseFail|2|Importar Passport trabalho KSP se estiver disponível, caso contrário falhar.|
-|useSoftwareKsp|3|Importação ao Software KSP.|
+|useTpmKspOtherwiseUseSoftwareKsp|,0|Importar para KSP de Trusted Platform Module (TPM) se presente, caso contrário, importe para o KSP de software.|
+|useTpmKspOtherwiseFail|1|Importar para KSP de Trusted Platform Module (TPM) se presente, caso contrário, falha.|
+|usePassportForWorkKspOtherwiseFail|duas|Importe para o Passport para trabalho do KSP, se disponível, caso contrário, falha.|
+|useSoftwareKsp|3D|Importar para KSP de software.|
 
 
 

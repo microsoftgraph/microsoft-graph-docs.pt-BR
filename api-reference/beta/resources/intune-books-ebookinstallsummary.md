@@ -1,21 +1,21 @@
 ---
 title: Tipo de recurso eBookInstallSummary
 description: Contém propriedades do resumo da instalação de um livro para um dispositivo.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d4e8952012624a038f497fea3c6b81ad364448a8
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 52d08d00bfbc26e0b72ddf53404eff8d55bb72b9
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415338"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30151237"
 ---
 # <a name="ebookinstallsummary-resource-type"></a>Tipo de recurso eBookInstallSummary
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Contém propriedades do resumo da instalação de um livro para um dispositivo.
 
