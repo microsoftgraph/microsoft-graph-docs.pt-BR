@@ -478,6 +478,7 @@ items:
                 href: api/opentypeextension-get.md
       - name: Calendário
         href: resources/calendar.md
+        displayname: Outlook calendar
         items:
           - name: Evento
             href: resources/event.md
@@ -1260,36 +1261,6 @@ items:
                     href: api/intune-books-iosvppebookassignment-delete.md
                   - name: Atualizar
                     href: api/intune-books-iosvppebookassignment-update.md
-              - name: Aplicativo VPP do macOS
-                href: resources/intune-apps-macosvppapp.md
-                items:
-                  - name: Listar
-                    href: api/intune-apps-macosvppapp-list.md
-                  - name: Obter
-                    href: api/intune-apps-macosvppapp-get.md
-                  - name: Criar
-                    href: api/intune-apps-macosvppapp-create.md
-                  - name: Excluir
-                    href: api/intune-apps-macosvppapp-delete.md
-                  - name: Atualizar
-                    href: api/intune-apps-macosvppapp-update.md
-              - name: Licença atribuída ao aplicativo do VPP do macOS
-                href: resources/intune-apps-macosvppappassignedlicense.md
-                items:
-                  - name: Listar
-                    href: api/intune-apps-macosvppappassignedlicense-list.md
-                  - name: Obter
-                    href: api/intune-apps-macosvppappassignedlicense-get.md
-                  - name: Criar
-                    href: api/intune-apps-macosvppappassignedlicense-create.md
-                  - name: Excluir
-                    href: api/intune-apps-macosvppappassignedlicense-delete.md
-                  - name: Atualizar
-                    href: api/intune-apps-macosvppappassignedlicense-update.md
-              - name: Configurações de atribuição do aplicativo VPP do macOS
-                href: resources/intune-apps-macosvppappassignmentsettings.md
-              - name: Resultado da ação de revogar licenças de aplicativo do VPP do macOS
-                href: resources/intune-apps-macosvppapprevokelicensesactionresult.md
               - name: Aplicativo LOB para macOS
                 href: resources/intune-apps-macoslobapp.md
                 items:
@@ -1320,7 +1291,37 @@ items:
                     href: api/intune-apps-macosofficesuiteapp-delete.md
                   - name: Atualizar
                     href: api/intune-apps-macosofficesuiteapp-update.md
-              - name: Aplicativo LOB do android gerenciado
+              - name: Aplicativo VPP do macOS
+                href: resources/intune-apps-macosvppapp.md
+                items:
+                  - name: Listar
+                    href: api/intune-apps-macosvppapp-list.md
+                  - name: Obter
+                    href: api/intune-apps-macosvppapp-get.md
+                  - name: Criar
+                    href: api/intune-apps-macosvppapp-create.md
+                  - name: Excluir
+                    href: api/intune-apps-macosvppapp-delete.md
+                  - name: Atualizar
+                    href: api/intune-apps-macosvppapp-update.md
+              - name: Licença atribuída ao aplicativo do VPP do macOS
+                href: resources/intune-apps-macosvppappassignedlicense.md
+                items:
+                  - name: Listar
+                    href: api/intune-apps-macosvppappassignedlicense-list.md
+                  - name: Obter
+                    href: api/intune-apps-macosvppappassignedlicense-get.md
+                  - name: Criar
+                    href: api/intune-apps-macosvppappassignedlicense-create.md
+                  - name: Excluir
+                    href: api/intune-apps-macosvppappassignedlicense-delete.md
+                  - name: Atualizar
+                    href: api/intune-apps-macosvppappassignedlicense-update.md
+              - name: Configurações de atribuição do aplicativo VPP do macOS
+                href: resources/intune-apps-macosvppappassignmentsettings.md
+              - name: Resultado da ação de revogar licenças de aplicativo do VPP do macOS
+                href: resources/intune-apps-macosvppapprevokelicensesactionresult.md
+              - name: Aplicativo LOB para Android gerenciado
                 href: resources/intune-apps-managedandroidlobapp.md
                 items:
                   - name: Listar
@@ -2174,7 +2175,7 @@ items:
               - name: Identidade importada do dispositivo do Windows autopilot
                 href: resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-list.md
                   - name: Obter
                     href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-get.md
@@ -2274,6 +2275,8 @@ items:
             items:
               - name: Estado de conformidade do dispositivo configurado pelo administrador
                 href: resources/intune-deviceconfig-administratorconfigureddevicecompliancestate.md
+              - name: Estado do BitLocker avançado
+                href: resources/intune-deviceconfig-advancedbitlockerstate.md
               - name: Estado de configuração do dispositivo de integração de proteção avançada contra ameaças
                 href: resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md
                 items:
@@ -2601,6 +2604,19 @@ items:
                     href: api/intune-deviceconfig-androidimportedpfxcertificateprofile-update.md
               - name: Recurso keyguard do Android
                 href: resources/intune-deviceconfig-androidkeyguardfeature.md
+              - name: Configuração de OMA CP do Android
+                href: resources/intune-deviceconfig-androidomacpconfiguration.md
+                items:
+                  - name: Lista
+                    href: api/intune-deviceconfig-androidomacpconfiguration-list.md
+                  - name: Obter
+                    href: api/intune-deviceconfig-androidomacpconfiguration-get.md
+                  - name: Criar
+                    href: api/intune-deviceconfig-androidomacpconfiguration-create.md
+                  - name: Excluir
+                    href: api/intune-deviceconfig-androidomacpconfiguration-delete.md
+                  - name: Atualizar
+                    href: api/intune-deviceconfig-androidomacpconfiguration-update.md
               - name: Perfil de certificado de PKCS do Android
                 href: resources/intune-deviceconfig-androidpkcscertificateprofile.md
                 items:
@@ -2955,6 +2971,32 @@ items:
                 href: resources/intune-deviceconfig-defendersubmitsamplesconsenttype.md
               - name: Ação de ameaça do Defender
                 href: resources/intune-deviceconfig-defenderthreataction.md
+              - name: Largura de banda de Otimização de Entrega
+                href: resources/intune-deviceconfig-deliveryoptimizationbandwidth.md
+              - name: Largura de banda absoluta de Otimização de Entrega
+                href: resources/intune-deviceconfig-deliveryoptimizationbandwidthabsolute.md
+              - name: Limite de horário comercial de largura de banda de Otimização de Entrega
+                href: resources/intune-deviceconfig-deliveryoptimizationbandwidthbusinesshourslimit.md
+              - name: Horas de largura de banda de Otimização de Entrega com porcentagem
+                href: resources/intune-deviceconfig-deliveryoptimizationbandwidthhourswithpercentage.md
+              - name: Porcentagem de largura de banda de Otimização de Entrega
+                href: resources/intune-deviceconfig-deliveryoptimizationbandwidthpercentage.md
+              - name: Personalização de ID de grupo de Otimização de Entrega
+                href: resources/intune-deviceconfig-deliveryoptimizationgroupidcustom.md
+              - name: Tipo de opções de ID de grupo de Otimização de Entrega
+                href: resources/intune-deviceconfig-deliveryoptimizationgroupidoptionstype.md
+              - name: Origem da ID do Grupo de Otimização de Entrega
+                href: resources/intune-deviceconfig-deliveryoptimizationgroupidsource.md
+              - name: Opções de Origem da ID do Grupo de Otimização de Entrega
+                href: resources/intune-deviceconfig-deliveryoptimizationgroupidsourceoptions.md
+              - name: Tamanho máximo de cache de Otimização de Entrega
+                href: resources/intune-deviceconfig-deliveryoptimizationmaxcachesize.md
+              - name: Tamanho Máximo Absoluto de Cache de Otimização de Entrega
+                href: resources/intune-deviceconfig-deliveryoptimizationmaxcachesizeabsolute.md
+              - name: Tamanho Máximo de Cache (Percentual) de Otimização de Entrega
+                href: resources/intune-deviceconfig-deliveryoptimizationmaxcachesizepercentage.md
+              - name: Restringir a Seleção de Pares de Otimização de Entrega por opções
+                href: resources/intune-deviceconfig-deliveryoptimizationrestrictpeerselectionbyoptions.md
               - name: Tipo de provedor de credencial derivada
                 href: resources/intune-deviceconfig-derivedcredentialprovidertype.md
               - name: Item de ação de conformidade do dispositivo
@@ -3208,9 +3250,11 @@ items:
                 href: resources/intune-deviceconfig-devicemanagementuserrightssetting.md
               - name: Nível de proteção contra ameaças ao dispositivo
                 href: resources/intune-deviceconfig-devicethreatprotectionlevel.md
+              - name: Tipos de dispositivo
+                href: resources/intune-deviceconfig-devicetypes.md
               - name: Modo de envio de dados de diagnóstico
                 href: resources/intune-deviceconfig-diagnosticdatasubmissionmode.md
-              - name: Tipo de política de enumeração de dispositivo de proteção DMA
+              - name: Tipo de política de enumeração de dispositivo de Proteção DMA
                 href: resources/intune-deviceconfig-dmaguarddeviceenumerationpolicytype.md
               - name: Origem do nome do domínio
                 href: resources/intune-deviceconfig-domainnamesource.md
@@ -3239,6 +3283,8 @@ items:
                 href: resources/intune-deviceconfig-edgehomebuttonopenscustomurl.md
               - name: Botão de página inicial de borda abre nova guia
                 href: resources/intune-deviceconfig-edgehomebuttonopensnewtab.md
+              - name: Tipo de restrição do modo de quiosque de borda
+                href: resources/intune-deviceconfig-edgekioskmoderestrictiontype.md
               - name: Opções de abertura de borda
                 href: resources/intune-deviceconfig-edgeopenoptions.md
               - name: Mecanismo de pesquisa de borda
@@ -3270,6 +3316,12 @@ items:
                 href: resources/intune-deviceconfig-emailsyncduration.md
               - name: Agenda de sincronização de emails
                 href: resources/intune-deviceconfig-emailsyncschedule.md
+              - name: Estado de preparação de criptografia
+                href: resources/intune-deviceconfig-encryptionreadinessstate.md
+              - name: Detalhes de política de relatório de criptografia
+                href: resources/intune-deviceconfig-encryptionreportpolicydetails.md
+              - name: Estado de criptografia
+                href: resources/intune-deviceconfig-encryptionstate.md
               - name: Uso estendido de chave
                 href: resources/intune-deviceconfig-extendedkeyusage.md
               - name: Tipo de método de verificação da lista de revogação de certificados do firewall
@@ -4013,6 +4065,19 @@ items:
                     href: api/intune-deviceconfig-manageddevicecertificatestate-delete.md
                   - name: Atualizar
                     href: api/intune-deviceconfig-manageddevicecertificatestate-update.md
+              - name: Estado de criptografia de dispositivo gerenciado
+                href: resources/intune-deviceconfig-manageddeviceencryptionstate.md
+                items:
+                  - name: Lista
+                    href: api/intune-deviceconfig-manageddeviceencryptionstate-list.md
+                  - name: Obter
+                    href: api/intune-deviceconfig-manageddeviceencryptionstate-get.md
+                  - name: Criar
+                    href: api/intune-deviceconfig-manageddeviceencryptionstate-create.md
+                  - name: Excluir
+                    href: api/intune-deviceconfig-manageddeviceencryptionstate-delete.md
+                  - name: Atualizar
+                    href: api/intune-deviceconfig-manageddeviceencryptionstate-update.md
               - name: Aplicativo reportado pelo dispositivo gerenciado
                 href: resources/intune-deviceconfig-manageddevicereportedapp.md
               - name: Classificação de conteúdo de mídia da Austrália
@@ -4826,8 +4891,6 @@ items:
                 href: resources/intune-deviceconfig-windowsupdateinstallscheduletype.md
               - name: Instalação agendada do Windows Update
                 href: resources/intune-deviceconfig-windowsupdatescheduledinstall.md
-              - name: Estado do Windows Update
-                href: resources/intune-deviceconfig-windowsupdatestate.md
               - name: Status do Windows Update
                 href: resources/intune-deviceconfig-windowsupdatestatus.md
               - name: Tipo de atualização do Windows
@@ -7722,6 +7785,7 @@ items:
                 href: api/reportroot-getyammergroupsactivitycounts.md
       - name: Segurança
         href: resources/security-api-overview.md
+        displayname: 'Security API, Microsoft Intelligent Security Graph'
         items:
           - name: Alertas
             href: resources/alert.md

@@ -3,12 +3,12 @@ title: Configurar notificações para alterações nos dados de usuário
 description: A API do Microsoft Graph usa um mecanismo de webhook para fornecer notificações aos clientes. Um cliente é um serviço Web que configura sua própria URL para receber notificações. Aplicativos cliente usam notificações para atualizar seu estado após alterações.
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: e6cd96f155ad88fa858c9c494538af8c31afa919
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 545a2470e85d82ad3e56ab99943d7487f5df3ca3
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27818505"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30168492"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Configurar notificações para alterações nos dados de usuário
 
@@ -20,28 +20,28 @@ Depois que o Microsoft Graph aceita a solicitação de assinatura, ele envia not
 
 Usando a API do Microsoft Graph, um aplicativo pode se inscrever para alterações nos seguintes recursos:
 
-- Mensagens
-- Eventos
-- Contatos
-- Usuários
-- Grupos
-- Conversas em grupo
-- Conteúdo compartilhado no OneDrive, incluindo unidades associadas a sites do SharePoint
-- Pastas do OneDrive pessoais do usuário
-- Alertas de segurança
+- [Mensagem][] do Outlook
+- [Evento][] do Outlook
+- [Contato][] pessoal do Outlook
+- [user][]
+- [group][]
+- [Conversa][] em grupo do Office 365
+- Conteúdo dentro da hierarquia do tipo de recurso [driveItem][] de _qualquer pasta_ no OneDrive pessoal do usuário
+- Conteúdo dentro da hierarquia do tipo de recurso [driveItem][] de _pasta raiz_ no OneDrive for Business
+- [Alerta][] de segurança
 
-Por exemplo, você pode criar uma assinatura para uma pasta de email específica: `me/mailFolders('inbox')/messages`
+Você pode criar uma assinatura para uma pasta de específica do Outlook, como a Caixa de Entrada: `me/mailFolders('inbox')/messages`
 
 Ou para um recurso de nível superior: `me/messages`, `me/contacts`, `me/events`, `users` ou `groups`
 
 Ou para uma instância de recurso específica: `users/{id}`, `groups/{id}`, `groups/{id}/conversations`
 
-Ou para uma unidade do SharePoint/OneDrive for Business: `/drive/root`
-
-Ou para o OneDrive pessoal de um usuário: `/drives/{id}/root`
+Ou para alguma pasta no OneDrive pessoal de um usuário: `/drives/{id}/root`
 `/drives/{id}/root/subfolder`
 
-Ou, para um novo [alerta da API de segurança](security-concept-overview.md): `/security/alerts?$filter=status eq ‘New’`, `/security/alerts?$filter=vendorInformation/provider eq ‘ASC’`
+Ou para a pasta raiz de uma unidade do SharePoint/OneDrive for Business: `/drive/root`
+
+Ou para um novo alerta da [API de Segurança](security-concept-overview.md): `/security/alerts?$filter=status eq ‘New’`, `/security/alerts?$filter=vendorInformation/provider eq ‘ASC’`
 
 ### <a name="azure-ad-resource-limitations"></a>Limitações de recursos do Microsoft Azure AD
 
@@ -240,8 +240,11 @@ Os exemplos de código a seguir estão disponíveis no GitHub.
 - [Obter assinatura](/graph/api/subscription-get?view=graph-rest-1.0)
 - [Criar assinatura](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0)
 
-[contact]: /graph/api/resources/contact?view=graph-rest-1.0
-[conversation]: /graph/api/resources/conversation?view=graph-rest-1.0
-[drive]: /graph/api/resources/drive?view=graph-rest-1.0
+[contato]: /graph/api/resources/contact?view=graph-rest-1.0
+[conversa]: /graph/api/resources/conversation?view=graph-rest-1.0
+[driveItem]: /graph/api/resources/driveitem?view=graph-rest-1.0
 [event]: /graph/api/resources/event?view=graph-rest-1.0
+[group]: /graph/api/resources/group?view=graph-rest-1.0
 [message]: /graph/api/resources/message?view=graph-rest-1.0
+[user]: /graph/api/resources/user?view=graph-rest-1.0
+[alert]: /graph/api/resources/alert?view=graph-rest-1.0
