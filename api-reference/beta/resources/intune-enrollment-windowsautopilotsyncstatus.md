@@ -1,31 +1,31 @@
 ---
-title: tipo de enum windowsAutopilotSyncStatus
+title: tipo de enumeração windowsAutopilotSyncStatus
 description: Ainda não documentado
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0940b53f4113536af5164f5cdcbbaeac70108fee
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: f9f41444f1b101c1e3f7b219e917a53aa95c9d46
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425803"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30161380"
 ---
-# <a name="windowsautopilotsyncstatus-enum-type"></a>tipo de enum windowsAutopilotSyncStatus
+# <a name="windowsautopilotsyncstatus-enum-type"></a>tipo de enumeração windowsAutopilotSyncStatus
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Ainda não documentado
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|unknown|0|Status da sincronização desconhecido|
-|inProgress|1|Sincronização está em andamento|
-|concluído|2|Sincronização concluída.|
-|Falha|3|Falha na sincronização.|
+|unknown|,0|Status de sincronização desconhecido|
+|inProgress|1|Sincronização em andamento|
+|Completed|duas|Sincronização concluída.|
+|falhou|3D|Falha na sincronização.|
 
 
 

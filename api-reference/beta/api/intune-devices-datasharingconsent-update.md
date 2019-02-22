@@ -1,23 +1,23 @@
 ---
 title: Atualizar dataSharingConsent
-description: Atualize as propriedades de um objeto dataSharingConsent.
-localization_priority: Normal
+description: Atualiza as propriedades de um objeto dataSharingConsent.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 143e2c655adac2403f49bb92afff2aca30a3653f
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 42be19a02b5839023a76568a1457df105036c4de
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29421113"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30157992"
 ---
 # <a name="update-datasharingconsent"></a>Atualizar dataSharingConsent
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Atualize as propriedades de um objeto [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) .
+Atualiza as propriedades de um objeto [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
@@ -44,24 +44,24 @@ PATCH /deviceManagement/dataSharingConsents/{dataSharingConsentId}
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON para o objeto [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) .
+No corpo da solicitação, forneça uma representação JSON do objeto [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) .
 
-A tabela a seguir mostra as propriedades que são necessárias quando você cria o [dataSharingConsent](../resources/intune-devices-datasharingconsent.md).
+A tabela a seguir mostra as propriedades que são necessárias ao criar [dataSharingConsent](../resources/intune-devices-datasharingconsent.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O consentimento de compartilhamento de dados Id|
-|Nome_para_exibição_do_serviço|String|O nome para exibição do fluxo de trabalho de serviço|
-|termsUrl|String|O TermsUrl para os consentimento de compartilhamento de dados|
-|concedido|Boolean|O estado foram concedido para os consentimento de compartilhamento de dados|
+|id|String|A ID de consentimento de compartilhamento de dados|
+|objectDisplayname|String|O nome de exibição do fluxo de trabalho do serviço|
+|termsUrl|String|O TermsUrl para o consentimento de compartilhamento de dados|
+|granted|Booliano|O Estado concedido para o consentimento de compartilhamento de dados|
 |grantDateTime|DateTimeOffset|O consentimento de tempo foi concedido para esta conta|
-|grantedByUpn|String|O Upn do usuário que tenha concedido consentimento para esta conta|
-|grantedByUserId|String|A identificação do usuário do usuário que tenha concedido consentimento para esta conta|
+|grantedByUpn|String|O UPN do usuário que concedeu o consentimento para esta conta|
+|grantedByUserId|String|O UserId do usuário que concedeu o consentimento para esta conta|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto atualizado [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

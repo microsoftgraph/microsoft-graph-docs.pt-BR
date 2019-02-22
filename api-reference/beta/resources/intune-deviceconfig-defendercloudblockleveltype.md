@@ -1,31 +1,31 @@
 ---
-title: tipo de enum defenderCloudBlockLevelType
-description: Valores possíveis de nível de bloco de nuvem
-localization_priority: Normal
+title: tipo de enumeração defenderCloudBlockLevelType
+description: Possíveis valores de nível de bloco de nuvem
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b309184623cff19e44ee5afea311d46fa89210fb
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: cbf442a11335602c510a210d7bd805b2a76eb7df
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425908"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30156921"
 ---
-# <a name="defendercloudblockleveltype-enum-type"></a>tipo de enum defenderCloudBlockLevelType
+# <a name="defendercloudblockleveltype-enum-type"></a>tipo de enumeração defenderCloudBlockLevelType
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Valores possíveis de nível de bloco de nuvem
+Possíveis valores de nível de bloco de nuvem
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|não-configuradas|0|Valor padrão, usa o padrão de bloqueio de antivírus do Windows Defender nível e fornece detecção forte sem aumentar o risco de detecção legítimos arquivos|
-|high|1|Alta aplica um alto nível de detecção.|
-|highPlus|2|Alta + usa o alto nível e aplica as medidas de proteção de adição|
-|zeroTolerance|3|Zero tolerância bloqueia todos os executáveis desconhecidos|
+|notConfigured|,0|O valor padrão usa o nível de bloqueio antivírus padrão do Windows Defender e fornece uma detecção forte sem aumentar o risco de detectar arquivos legítimos|
+|high|1|Alto aplica um nível forte de detecção.|
+|highPlus|duas|High + usa o alto nível e aplica medidas de proteção de adição|
+|zeroTolerance|3D|Tolerância zero bloqueia todos os executáveis desconhecidos|
 
 
 

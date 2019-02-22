@@ -1,23 +1,23 @@
 ---
 title: Criar userPFXCertificate
-description: Crie um novo objeto de userPFXCertificate.
-localization_priority: Normal
+description: Criar um novo objeto userPFXCertificate.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8896e3bb300507f0d1a89892852a2e1d4865d9b3
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: bf704664785eb1d61aacea3b72dcaed7a02bd24d
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29418166"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30158706"
 ---
 # <a name="create-userpfxcertificate"></a>Criar userPFXCertificate
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Crie um novo objeto de [userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md) .
+Criar um novo objeto [userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
@@ -44,30 +44,30 @@ POST /deviceManagement/userPfxCertificates
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON para o objeto userPFXCertificate.
+No corpo da solicitação, forneça uma representação JSON do objeto userPFXCertificate.
 
-A tabela a seguir mostra as propriedades que são necessárias quando você cria o userPFXCertificate.
+A tabela a seguir mostra as propriedades que são necessárias ao criar userPFXCertificate.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo para o certificado PFX.|
-|impressão digital|String|SHA-1 impressão digital do certificado PFX.|
-|intendedPurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|Destinada a finalidade do ponto de vista da implantação do certificado. Os valores possíveis são: `unassigned`, `smimeEncryption`, `smimeSigning`, `vpn`, `wifi`.|
-|userPrincipalName|String|Nome Principal de usuário do certificado PFX.|
+|id|String|Identificador exclusivo do certificado PFX.|
+|identificação|String|Impressão digital SHA-1 do certificado PFX.|
+|Da intendedpurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|Finalidade do certificado do ponto de vista da implantação. Os valores possíveis são: `unassigned`, `smimeEncryption`, `smimeSigning`, `vpn`, `wifi`.|
+|userPrincipalName|String|Nome principal de usuário do certificado PFX.|
 |startDateTime|DateTimeOffset|Data/hora de início da validade do certificado.|
-|expirationDateTime|DateTimeOffset|Data de expiração de validade/hora do certificado.|
-|providerName|String|Provedor de criptografia usado para criptografar essa blob.|
-|nome chave|String|Nome da chave (dentro do provedor) usado para criptografar o blob.|
-|paddingScheme|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|Esquema usado pelo provedor durante a criptografia/descriptografia de preenchimento. Os possíveis valores são: `none`, `pkcs1`, `oaepSha1`, `oaepSha256`, `oaepSha384`, `oaepSha512`.|
+|expirationDateTime|DateTimeOffset|Data/hora de validade do certificado.|
+|providerName|String|Provedor de criptografia usado para criptografar este BLOB.|
+|keyName|String|Nome da chave (dentro do provedor) usada para criptografar o blob.|
+|paddingScheme|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|Esquema de preenchimento usado pelo provedor durante a criptografia/descriptografia. Os possíveis valores são: `none`, `pkcs1`, `oaepSha1`, `oaepSha256`, `oaepSha384`, `oaepSha512`.|
 |encryptedPfxBlob|Binária|Blob PFX criptografado.|
 |encryptedPfxPassword|String|Senha PFX criptografada.|
-|createdDateTime|DateTimeOffset|Data/hora quando esse certificado PFX foi importado.|
-|lastModifiedDateTime|DateTimeOffset|Data/hora da última modificação desse certificado PFX.|
+|createdDateTime|DateTimeOffset|Data/hora em que este certificado PFX foi importado.|
+|lastModifiedDateTime|DateTimeOffset|Data/hora em que este certificado PFX foi modificado pela última vez.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

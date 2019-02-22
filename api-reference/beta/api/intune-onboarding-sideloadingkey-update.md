@@ -1,23 +1,23 @@
 ---
 title: Atualizar sideLoadingKey
-description: Atualize as propriedades de um objeto sideLoadingKey.
-localization_priority: Normal
+description: Atualiza as propriedades de um objeto sideLoadingKey.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4fd498404543353c45714f739a68b0195ae3d3dd
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 96484084533e4a72d4cb3fb7430e41048d2defa2
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29409857"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30156816"
 ---
 # <a name="update-sideloadingkey"></a>Atualizar sideLoadingKey
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Atualize as propriedades de um objeto [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) .
+Atualiza as propriedades de um objeto [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
@@ -44,23 +44,23 @@ PATCH /deviceAppManagement/sideLoadingKeys/{sideLoadingKeyId}
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON para o objeto [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) .
+No corpo da solicitação, forneça uma representação JSON do objeto [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) .
 
-A tabela a seguir mostra as propriedades que são necessárias quando você cria o [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md).
+A tabela a seguir mostra as propriedades que são necessárias ao criar [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Lado carregando o ID exclusivo principal.|
-|valor|String|Valor da chave Carregando lado, é 5x5 valor, separados por hiphens.|
-|displayName|String|Carregando da lado chave nome exibido para o ITPro Admins.|
-|description|String|Descrição de chave Carregando lado exibida para o ITPro Admins..|
-|totalActivation|Int32|Lado Carregando chave Total Activation exibida para o ITPro Admins.|
-|lastUpdatedDateTime|String|Lado Carregando chave última atualizado data exibida para o ITPro Admins.|
+|id|String|ID exclusiva da chave de carregamento do lado.|
+|valor|String|O valor da chave de carregamento do lado, é o valor de 5x5, separado por hiphens.|
+|displayName|String|Nome da chave de carregamento do lado exibido para os administradores do profissionais.|
+|description|String|Descrição da chave de carregamento do lado exibida para os administradores do profissionais..|
+|totalActivation|Int32|Chave de carregamento do lado ativação total exibida para os administradores do profissionais.|
+|lastUpdatedDateTime|String|Chave de carregamento lateral última data de atualização exibida para os administradores do profissionais.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto atualizado [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

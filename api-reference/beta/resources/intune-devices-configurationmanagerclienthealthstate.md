@@ -1,30 +1,30 @@
 ---
-title: tipo de recurso de configurationManagerClientHealthState
-description: Estado de integridade de cliente do Configuration manager
-localization_priority: Normal
+title: tipo de recurso configurationManagerClientHealthState
+description: Estado de integridade do cliente de gerenciador de configurações
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 55ba2b24df0d1d4c278f4785a310237c9c32cd9b
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 1a2d4083554f40bba138c5f886dfa77ad6c54a1d
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425824"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30159742"
 ---
-# <a name="configurationmanagerclienthealthstate-resource-type"></a>tipo de recurso de configurationManagerClientHealthState
+# <a name="configurationmanagerclienthealthstate-resource-type"></a>tipo de recurso configurationManagerClientHealthState
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Estado de integridade de cliente do Configuration manager
+Estado de integridade do cliente de gerenciador de configurações
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|state|[configurationManagerClientState](../resources/intune-devices-configurationmanagerclientstate.md)|Estado da cliente do Gerenciador de configuração atual. Os valores possíveis são: `unknown`, `installed`, `healthy`, `installFailed`, `updateFailed`, `communicationError`.|
-|errorCode|Int32|Código de erro para o estado de falha.|
-|lastSyncDateTime|DateTimeOffset|Ponto de DateTime fo última sincronização com o gerenciamento do Gerenciador de configuração.|
+|state|[configurationManagerClientState](../resources/intune-devices-configurationmanagerclientstate.md)|Estado atual do cliente do Configuration Manager. Os valores possíveis são: `unknown`, `installed`, `healthy`, `installFailed`, `updateFailed`, `communicationError`.|
+|errorCode|Int32|Código de erro para estado de falha.|
+|lastSyncDateTime|DateTimeOffset|DateTime fo última sincronização com o ponto de gerenciamento do Configuration Manager.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

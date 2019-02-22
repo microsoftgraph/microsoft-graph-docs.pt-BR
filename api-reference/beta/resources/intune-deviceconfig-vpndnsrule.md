@@ -1,32 +1,32 @@
 ---
-title: tipo de recurso de vpnDnsRule
-description: Definição de regra de DNS da VPN.
-localization_priority: Normal
+title: tipo de recurso vpnDnsRule
+description: Definição de regra DNS de VPN.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ae6141cc0579840a23a28be2dce951c160f90248
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 545c0dd8a84f19888452261e350a9b347061595c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425579"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30158503"
 ---
-# <a name="vpndnsrule-resource-type"></a>tipo de recurso de vpnDnsRule
+# <a name="vpndnsrule-resource-type"></a>tipo de recurso vpnDnsRule
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Definição de regra de DNS da VPN.
+Definição de regra DNS de VPN.
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|name|String|Nome.|
-|servidores|String collection|Servidores.|
-|proxyServerUri|String|Uri do servidor proxy.|
-|autoTrigger|Boolean|Conectar-se automaticamente à VPN quando o dispositivo se conecta a esse domínio: padrão False.|
-|persistente|Boolean|Mantenha esta regra ativos, mesmo quando não estiver conectada a VPN: padrão False|
+|name|String|Tdomínio.|
+|servidores|Coleção de cadeias de caracteres|Servidores.|
+|proxyServerUri|String|URI do servidor proxy.|
+|Gatilho autoTrigger|Booliano|Conectar-se automaticamente à VPN quando o dispositivo se conectar a este domínio: padrão false.|
+|persistente|Booliano|Manter esta regra ativa mesmo quando a VPN não estiver conectada: false padrão|
 
 ## <a name="relationships"></a>Relações
 Nenhum

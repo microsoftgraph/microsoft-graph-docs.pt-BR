@@ -79,7 +79,7 @@ items:
                 href: api/user-update.md
               - name: Excluir usuário
                 href: api/user-delete.md
-              - name: Obter delta
+              - name: Obter intervalo
                 href: api/user-delta.md
           - name: Calendário
             href: resources/event.md
@@ -319,7 +319,7 @@ items:
                 href: api/group-delete-event.md
               - name: Listar modo de exibição de calendário
                 href: api/group-list-calendarview.md
-              - name: Obter delta
+              - name: Obter intervalo
                 href: api/event-delta.md
               - name: Criar extensão aberta
                 href: api/opentypeextension-post-opentypeextension.md
@@ -431,6 +431,7 @@ items:
                 href: api/opentypeextension-get.md
       - name: Calendário
         href: resources/calendar.md
+        displayname: Outlook calendar
         items:
           - name: Evento
             href: resources/event.md
@@ -543,7 +544,7 @@ items:
             items:
               - name: Listar modo de exibição de calendário
                 href: api/calendar-list-calendarview.md
-              - name: Obter delta
+              - name: Obter intervalo
                 href: api/event-delta.md
               - name: Modo de exibição de lembrete
                 href: api/user-reminderview.md
@@ -3552,7 +3553,7 @@ items:
           - name: Uso de caixas de correio do Outlook
             href: resources/mailbox-usage-reports.md
             items:
-              - name: Obter detalhes de caixa de correio
+              - name: Obter detalhes da caixa de correio
                 href: api/reportroot-getmailboxusagedetail.md
               - name: Obter contagens da caixa de correio
                 href: api/reportroot-getmailboxusagemailboxcounts.md
@@ -3709,6 +3710,7 @@ items:
                 href: api/reportroot-getyammergroupsactivitycounts.md
       - name: Segurança
         href: resources/security-api-overview.md
+        displayname: 'Security API, Microsoft Intelligent Security Graph'
         items:
           - name: Alertas
             href: resources/alert.md

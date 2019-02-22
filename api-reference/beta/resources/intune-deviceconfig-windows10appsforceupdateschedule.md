@@ -1,30 +1,30 @@
 ---
-title: tipo de recurso de windows10AppsForceUpdateSchedule
-description: Agendamento de atualização do Windows 10 force para aplicativos
-localization_priority: Normal
+title: tipo de recurso windows10AppsForceUpdateSchedule
+description: Agendamento de atualização forçada do Windows 10 para aplicativos
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3e0bd9b0963f8547b03243aa7ef791a351dc2b08
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 7aa5573c3d644299b9c0aa424f348a67db8379d0
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29418831"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30158223"
 ---
-# <a name="windows10appsforceupdateschedule-resource-type"></a>tipo de recurso de windows10AppsForceUpdateSchedule
+# <a name="windows10appsforceupdateschedule-resource-type"></a>tipo de recurso windows10AppsForceUpdateSchedule
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Agendamento de atualização do Windows 10 force para aplicativos
+Agendamento de atualização forçada do Windows 10 para aplicativos
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|startDateTime|DateTimeOffset|A hora de início para a força reinicie.|
-|recurrence|[windows10AppsUpdateRecurrence](../resources/intune-deviceconfig-windows10appsupdaterecurrence.md)|Plano de recorrência. Os valores possíveis são: `none`, `daily`, `weekly`, `monthly`.|
-|runImmediatelyIfAfterStartDateTime|Boolean|Se for true, executa a tarefa imediatamente se StartDateTime está no passado, para outro, será executada na próxima recorrência.|
+|startDateTime|DateTimeOffset|A hora de início da reinicialização forçada.|
+|recurrence|[windows10AppsUpdateRecurrence](../resources/intune-deviceconfig-windows10appsupdaterecurrence.md)|Agenda de reCorrência. Os valores possíveis são: `none`, `daily`, `weekly`, `monthly`.|
+|runImmediatelyIfAfterStartDateTime|Booliano|Se true, executará a tarefa imediatamente se StartDatetime estiver no passado, senão, será executado na próxima recorrência.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

@@ -1,30 +1,30 @@
 ---
-title: tipo de enum certificateDestinationStore
+title: tipo de enumeração certificateDestinationStore
 description: Valores possíveis para o repositório de destino do certificado.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0be59a4fb105c7bfc3662cf3f06fedba6903b635
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 4a3e625ab3a1c2feaa2766ba120d59a9982b365a
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29403333"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30156704"
 ---
-# <a name="certificatedestinationstore-enum-type"></a>tipo de enum certificateDestinationStore
+# <a name="certificatedestinationstore-enum-type"></a>tipo de enumeração certificateDestinationStore
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Valores possíveis para o repositório de destino do certificado.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|computerCertStoreRoot|0|Repositório de certificados do computador - raiz.|
-|computerCertStoreIntermediate|1|Repositório de certificados do computador - intermediário.|
-|userCertStoreIntermediate|2|Repositório de certificados de usuário - intermediário.|
+|computerCertStoreRoot|,0|Repositório de certificados do computador-raiz.|
+|computerCertStoreIntermediate|1|Repositório de certificados do computador-intermediário.|
+|userCertStoreIntermediate|duas|Repositório de certificados do usuário-intermediário.|
 
 
 
