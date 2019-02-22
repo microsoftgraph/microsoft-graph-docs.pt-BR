@@ -1,32 +1,32 @@
 ---
-title: tipo de enum appLockerApplicationControlType
-description: Valores possíveis de tipos de controle do aplicativo de AppLocker
-localization_priority: Normal
+title: tipo de enumeração appLockerApplicationControlType
+description: Valores possíveis dos tipos de controle do aplicativo AppLocker
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b3bc89620a6dd13a65cfe40f37ba2f775e6a9c83
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 22d108dd3bad90341031d1e965948a9daa59efa1
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425719"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30141353"
 ---
-# <a name="applockerapplicationcontroltype-enum-type"></a>tipo de enum appLockerApplicationControlType
+# <a name="applockerapplicationcontroltype-enum-type"></a>tipo de enumeração appLockerApplicationControlType
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Valores possíveis de tipos de controle do aplicativo de AppLocker
+Valores possíveis dos tipos de controle do aplicativo AppLocker
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|não-configuradas|0|Valor de padrão de dispositivo, nenhum tipo de controle do aplicativo selecionado.|
-|enforceComponentsAndStoreApps|1|Impor o componente e armazenamento de aplicativos do Windows.|
-|auditComponentsAndStoreApps|2|Auditoria do componente e armazenamento de aplicativos do Windows.|
-|enforceComponentsStoreAppsAndSmartlocker|3|Aplicar os componentes do Windows, armazenar Bloqueador inteligente e aplicativos.|
-|auditComponentsStoreAppsAndSmartlocker|4|Componentes do Windows de auditoria, armazenar Bloqueador inteligente e aplicativos.|
+|notConfigured|,0|Valor padrão do dispositivo, nenhum tipo de controle do aplicativo selecionado.|
+|enforceComponentsAndStoreApps|1|Aplicar o componente do Windows e armazenar aplicativos.|
+|auditComponentsAndStoreApps|duas|Auditar o componente do Windows e armazenar aplicativos.|
+|enforceComponentsStoreAppsAndSmartlocker|3D|Aplicar componentes do Windows, armazenar aplicativos e armário inteligente.|
+|auditComponentsStoreAppsAndSmartlocker|quatro|Auditoria de componentes do Windows, aplicativos de armazenamento e armário inteligente.|
 
 
 

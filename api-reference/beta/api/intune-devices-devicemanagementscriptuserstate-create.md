@@ -1,23 +1,23 @@
 ---
 title: Criar deviceManagementScriptUserState
-description: Crie um novo objeto de deviceManagementScriptUserState.
-localization_priority: Normal
+description: Criar um novo objeto deviceManagementScriptUserState.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 01ab54a736a5e9d1a305bff44a601494e8ec8860
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 4e7e0a0f7f8c3f837d6125b6c91eee51f1bfed7e
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29424263"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30139344"
 ---
 # <a name="create-devicemanagementscriptuserstate"></a>Criar deviceManagementScriptUserState
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Crie um novo objeto de [deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md) .
+Criar um novo objeto [deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
@@ -44,21 +44,21 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRu
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON para o objeto deviceManagementScriptUserState.
+No corpo da solicitação, forneça uma representação JSON do objeto deviceManagementScriptUserState.
 
-A tabela a seguir mostra as propriedades que são necessárias quando você cria o deviceManagementScriptUserState.
+A tabela a seguir mostra as propriedades que são necessárias ao criar deviceManagementScriptUserState.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade de estado de usuário de script para gerenciamento do dispositivo.|
-|successDeviceCount|Int32|Contagem de dispositivo de sucesso para usuário específico.|
-|errorDeviceCount|Int32|Contagem de dispositivo de erro para usuário específico.|
-|userPrincipalName|String|Nome do princípio de usuário do usuário específico.|
+|id|String|Chave da entidade de estado do usuário de script de gerenciamento de dispositivos.|
+|successDeviceCount|Int32|Contagem de dispositivos com êxito para um usuário específico.|
+|errorDeviceCount|Int32|Contagem de dispositivos de erro para usuário específico.|
+|userPrincipalName|String|Nome principal do usuário do usuário específico.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

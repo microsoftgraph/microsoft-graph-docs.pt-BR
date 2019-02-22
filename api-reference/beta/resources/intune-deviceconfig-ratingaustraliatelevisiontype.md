@@ -1,36 +1,36 @@
 ---
-title: tipo de enum ratingAustraliaTelevisionType
+title: tipo de enumeração ratingAustraliaTelevisionType
 description: Rótulos de classificação de conteúdo de TV na Austrália
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 148e8c1bb12f8563261402b98e4ff0552e83f3f6
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: a223f19a0360f9fef851bcd1576187a2f5a7f58e
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29392889"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30139386"
 ---
-# <a name="ratingaustraliatelevisiontype-enum-type"></a>tipo de enum ratingAustraliaTelevisionType
+# <a name="ratingaustraliatelevisiontype-enum-type"></a>tipo de enumeração ratingAustraliaTelevisionType
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Rótulos de classificação de conteúdo de TV na Austrália
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|allAllowed|0|Valor padrão, para permitir que todos os TV mostra conteúdo|
-|allBlocked|1|Não permitir que qualquer TV mostra conteúdo|
-|preschoolers|2|A classificação de P destina-se a preschoolers|
-|children|3|A classificação de C destina-se em 14 de filhos|
-|geral|4|A classificação G é adequada para todos os anos|
-|parentalGuidance|5|A classificação PG é recomendada para visualizadores jovens|
-|implementação avançada|6|A classificação M é recomendada para os visualizadores de mais de 15|
-|agesAbove15|7|A classificação MA15 + não é adequada para os visualizadores em 15|
-|agesAbove15AdultViolence|8|A classificação AV15 + não é adequada para os visualizadores em 15, adulto violência específicos|
+|Permitido|,0|Valor padrão, permitir todos os programas de TV|
+|Bloqueado|1|Não permitir que qualquer TV mostre conteúdo|
+|poliescolares|duas|A classificação P destina-se a preaulas|
+|children|3D|A classificação de C destina-se a crianças com menos de 14|
+|geral|quatro|A classificação G é adequada para todas as idades|
+|parentalGuidance|0,5|A classificação PG é recomendada para visualizadores jovens|
+|completa|6|A classificação M é recomendada para visualizadores mais de 15|
+|agesAbove15|178|A classificação MA15 + não é adequada para visualizadores abaixo de 15|
+|agesAbove15AdultViolence|8|A classificação AV15 + não é adequada para visualizadores sob 15, específico violência adulto|
 
 
 

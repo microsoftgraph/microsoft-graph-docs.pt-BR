@@ -1,23 +1,23 @@
 ---
-title: ação de assignUserToDevice
-description: Atribui o usuário a dispositivos de piloto automático.
-localization_priority: Normal
+title: ação assignUserToDevice
+description: Atribui um usuário aos dispositivos do AutoPilot.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2003f8517a7863a485f1929cdee8c750b04d6d76
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: c996bbd846ad7a93609a7c79e6e5d4b4497a992c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29412279"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30141507"
 ---
-# <a name="assignusertodevice-action"></a>ação de assignUserToDevice
+# <a name="assignusertodevice-action"></a>ação assignUserToDevice
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Atribui o usuário a dispositivos de piloto automático.
+Atribui um usuário aos dispositivos do AutoPilot.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).

@@ -1,23 +1,23 @@
 ---
-title: Lista windowsManagedDevices
-description: Lista as propriedades e os relacionamentos dos objetos windowsManagedDevice.
-localization_priority: Normal
+title: Listar windowsManagedDevices
+description: Listar Propriedades e relações dos objetos windowsManagedDevice.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 16d71b025e0f324f6eb3ca822b9027eccb398b14
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 55043db2f0e5b935fecce60641b434003dd10f14
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29411810"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30143964"
 ---
-# <a name="list-windowsmanageddevices"></a>Lista windowsManagedDevices
+# <a name="list-windowsmanageddevices"></a>Listar windowsManagedDevices
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Lista as propriedades e os relacionamentos dos objetos [windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md) .
+Listar Propriedades e relações dos objetos [windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
@@ -49,7 +49,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceR
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -64,7 +64,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7907
+Content-Length: 7973
 
 {
   "value": [
@@ -163,7 +163,9 @@ Content-Length: 7907
         "resourceAccess": true,
         "deviceConfiguration": true,
         "compliancePolicy": true,
-        "windowsUpdateForBusiness": true
+        "windowsUpdateForBusiness": true,
+        "endpointProtection": true,
+        "officeApps": true
       },
       "wiFiMacAddress": "Wi Fi Mac Address value",
       "deviceHealthAttestationState": {

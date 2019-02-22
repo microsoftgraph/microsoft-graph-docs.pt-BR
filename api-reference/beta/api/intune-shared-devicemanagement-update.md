@@ -4,45 +4,45 @@ description: Atualizar as propriedades de um objeto deviceManagement.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: f4ef1c7eb4711afd2aa29071f160f440dceefba3
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 10242540e5f4bfb4d722253c86d25bf22e72d05e
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415772"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30141213"
 ---
 # <a name="update-devicemanagement"></a>Atualizar deviceManagement
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs na versão/beta no Microsoft Graph estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Atualizar as propriedades de um objeto [deviceManagement](../resources/intune-shared-devicemanagement.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference).
 
 Observe que a permissão varia de acordo com o fluxo de trabalho.
 
-| Permissão&nbsp;tipo&nbsp;(por&nbsp;fluxo de trabalho) | Permissões (de privilégios máximos a mínimos) |
+| Tipo&nbsp;&nbsp;de permissão (&nbsp;por fluxo de trabalho) | Permissões (de privilégios máximos a mínimos) |
 |:---|:---|
 | Delegado (conta corporativa ou de estudante) ||
-| &nbsp;&nbsp; **Android para o trabalho** | DeviceManagementConfiguration.ReadWrite.All  |
+| &nbsp;&nbsp; **Android para trabalho** | DeviceManagementConfiguration.ReadWrite.All  |
 | &nbsp;&nbsp; **Auditoria** | DeviceManagementApps.ReadWrite.All |
-| &nbsp;&nbsp; **Termos da empresa** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp; &nbsp; **Termos da empresa** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Configuração do dispositivo** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp; &nbsp; **Gerenciamento de dispositivo** | DeviceManagementManagedDevices.ReadWrite.All |
-| &nbsp;&nbsp; **SIM eletrônico** | DeviceManagementConfiguration.ReadWrite.All |
+| &nbsp;&nbsp; **Sim eletrônico** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp; &nbsp; **Registro** | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp; **Fencing** | DeviceManagementConfiguration.ReadWrite.All |
-| &nbsp; &nbsp; **Notification** | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp; **Onboarding** | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp; **O controle de acesso baseado em função (RBAC)** | DeviceManagementRBAC.ReadWrite.All |
+| &nbsp;&nbsp; **Isolamento** | DeviceManagementConfiguration.ReadWrite.All |
+| &nbsp; &nbsp; **Notificação** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp; &nbsp; **Integração** | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; **Controle de acesso baseado em função (RBAC)** | DeviceManagementRBAC.ReadWrite.All |
 | &nbsp;&nbsp; **Acesso remoto** | DeviceManagementConfiguration.Read.All |
 | &nbsp;&nbsp; **Assistência remota** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Gerenciamento de despesas de telecomunicações** | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp; **a solução de problemas** | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp; **Troublehooting** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp;&nbsp; **Proteção de informações do Windows** | DeviceManagementApps.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.|
 | Aplicativo | Sem suporte. |
@@ -73,22 +73,22 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 |:---|:---|:---|
 |id|String|Identificador exclusivo do dispositivo.|
 |**Configuração do dispositivo**|
-|intuneAccountId|GUID|ID da conta Intune para dado locatário|
-|legacyPcManangementEnabled|Boolean|A propriedade habilitem Non-MDM gerenciados herdado gerenciamento de PC para essa conta. Esta propriedade é somente leitura.|
-|maximumDepTokens|Int32|Número máximo de tokens DEP permitido por locatário.|
-|configurações|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Configurações de nível da conta.|
+|intuneAccountId|GUID|ID da conta do Intune para determinado locatário|
+|legacyPcManangementEnabled|Booliano|A propriedade para habilitar o gerenciamento de computador herdado não MDM gerenciado para esta conta. Esta propriedade é somente leitura.|
+|maximumDepTokens|Int32|Número máximo de tokens DEP permitidos por locatário.|
+|settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Configurações de nível da conta.|
 |**Gerenciamento de dispositivos**|
-|accountMoveCompletionDateTime|DateTimeOffset|A data hora & ao mover os dados de inquilinos entre scaleunits.|
+|accountMoveCompletionDateTime|DateTimeOffset|A data & hora em que os dados do locatário são movidos entre ScaleUnits.|
 |adminConsent|[adminConsent](../resources/intune-devices-adminconsent.md)|Informações de consentimento do administrador.|
-|deviceProtectionOverview|[deviceProtectionOverview](../resources/intune-devices-deviceprotectionoverview.md)|Visão geral de proteção do dispositivo.|
-|managedDeviceCleanupSettings|[managedDeviceCleanupSettings](../resources/intune-devices-manageddevicecleanupsettings.md)|Regra de limpeza do dispositivo|
+|deviceProtectionOverview|[deviceProtectionOverview](../resources/intune-devices-deviceprotectionoverview.md)|Visão geral da proteção de dispositivo.|
+|managedDeviceCleanupSettings|[managedDeviceCleanupSettings](../resources/intune-devices-manageddevicecleanupsettings.md)|Regra de limpeza de dispositivo|
 |subscriptionState|[deviceManagementSubscriptionState](../resources/intune-devices-devicemanagementsubscriptionstate.md)|Estado de assinatura de gerenciamento de dispositivo móvel do locatário. Os valores possíveis são: `pending`, `active`, `warning`, `disabled`, `deleted`, `blocked`, `lockedOut`.|
-|assinaturas|[deviceManagementSubscriptions](../resources/intune-devices-devicemanagementsubscriptions.md)|Assinatura de locatário. Os possíveis valores são: `none`, `intune`, `office365`, `intunePremium`, `intune_EDU`, `intune_SMB`.|
-|windowsMalwareOverview|[windowsMalwareOverview](../resources/intune-devices-windowsmalwareoverview.md)|Visão geral de malware para dispositivos do windows.|
-|**Inclusão**|
+|assinaturas|[deviceManagementSubscriptions](../resources/intune-devices-devicemanagementsubscriptions.md)|Assinatura do locatário. Os possíveis valores são: `none`, `intune`, `office365`, `intunePremium`, `intune_EDU`, `intune_SMB`.|
+|windowsMalwareOverview|[windowsMalwareOverview](../resources/intune-devices-windowsmalwareoverview.md)|Visão geral de malware para dispositivos Windows.|
+|**Integração**|
 |intuneBrand|[intuneBrand](../resources/intune-onboarding-intunebrand.md)|intuneBrand contém dados que são usados na personalização da aparência dos aplicativos do Portal da Empresa, bem como do portal da Web de usuários finais.|
 
-Suporte de propriedade de corpo de solicitação varia de acordo com o fluxo de trabalho.
+O suporte à propriedade do corpo da solicitação varia de acordo com o fluxo de trabalho
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um código de resposta `200 OK` e um objeto [deviceManagement](../resources/intune-shared-devicemanagement.md) atualizado no corpo da resposta.
@@ -97,7 +97,7 @@ Se tiver êxito, este método retornará um código de resposta `200 OK` e um ob
 
 ### <a name="request"></a>Solicitação
 
-Aqui está um exemplo de uma solicitação seguindo o fluxo de trabalho de gerenciamento de dispositivo:
+Veja a seguir um exemplo de uma solicitação após o fluxo de trabalho de gerenciamento de dispositivos:
 
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement
@@ -132,7 +132,7 @@ Content-length: 751
 
 Veja a seguir um exemplo da resposta. 
 
-Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Propriedades retornadas variam de acordo com o fluxo de trabalho e contexto.
+Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. As propriedades retornadas variam de acordo com o fluxo de trabalho e o contexto.
 
 ``` http
 HTTP/1.1 200 OK

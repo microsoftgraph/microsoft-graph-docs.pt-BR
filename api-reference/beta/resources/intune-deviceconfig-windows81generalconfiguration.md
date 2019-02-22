@@ -1,21 +1,21 @@
 ---
 title: Tipo de recurso windows81GeneralConfiguration
 description: Este tópico fornece descrições dos métodos declarados, das propriedades e das relações expostos pelo recurso windows81GeneralConfiguration.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9ad1d4587dab7474675d322ceb08f3fbfe149810
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 190a22e91510f25bb90ad14f4185f1e09553576f
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29400148"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30141745"
 ---
 # <a name="windows81generalconfiguration-resource-type"></a>Tipo de recurso windows81GeneralConfiguration
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Este tópico fornece descrições dos métodos declarados, das propriedades e das relações expostos pelo recurso windows81GeneralConfiguration.
 
@@ -36,34 +36,34 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 |:---|:---|:---|
 |id|String|Chave da entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|roleScopeTagIds|String collection|Lista de escopo marcas para essa instância da entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|Indica se ou não a configuração de dispositivo subjacente suporta a atribuição de marcas de escopo. Atribuir à propriedade ScopeTags não é permitida quando esse valor for false e entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no Portal do Windows Azure. Esta propriedade é somente leitura. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|Booliano|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Esta propriedade é somente leitura. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|description|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Versão da configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|accountsBlockAddingNonMicrosoftAccountEmail|Boolean|Indica se o usuário será impedido ou não de adicionar ao dispositivo contas de email não associadas a uma conta da Microsoft.|
-|applyOnlyToWindows81|Boolean|Valor que indica se esta política se aplica somente ao Windows 8.1. Essa propriedade é somente leitura.|
-|browserBlockAutofill|Boolean|Indica se o preenchimento automático deve ou não ser bloqueado.|
-|browserBlockAutomaticDetectionOfIntranetSites|Boolean|Indica se a detecção automática de sites da Intranet deve ou não ser bloqueada.|
-|browserBlockEnterpriseModeAccess|Boolean|Indica se o acesso ao modo Empresarial deve ou não ser bloqueado.|
-|browserBlockJavaScript|Boolean|Indica se o usuário será ou não impedido de usar JavaScript.|
-|browserBlockPlugins|Boolean|Indica se os plug-ins devem ou não ser bloqueados.|
-|browserBlockPopups|Boolean|Indica se janelas pop-ups devem ou não ser bloqueadas.|
-|browserBlockSendingDoNotTrackHeader|Boolean|Indica se o usuário será ou não impedido de enviar o cabeçalho Do Not Track.|
-|browserBlockSingleWordEntryOnIntranetSites|Boolean|Indica se a entrada de palavra única em sites da Intranet deve ou não ser bloqueada.|
-|browserRequireSmartScreen|Boolean|Indica se o usuário deverá ou não usar o Filtro SmartScreen.|
+|accountsBlockAddingNonMicrosoftAccountEmail|Booliano|Indica se o usuário será impedido ou não de adicionar ao dispositivo contas de email não associadas a uma conta da Microsoft.|
+|applyOnlyToWindows81|Booliano|Valor que indica se esta política se aplica somente ao Windows 8.1. Essa propriedade é somente leitura.|
+|browserBlockAutofill|Booliano|Indica se o preenchimento automático deve ou não ser bloqueado.|
+|browserBlockAutomaticDetectionOfIntranetSites|Booliano|Indica se a detecção automática de sites da Intranet deve ou não ser bloqueada.|
+|browserBlockEnterpriseModeAccess|Booliano|Indica se o acesso ao modo Empresarial deve ou não ser bloqueado.|
+|browserBlockJavaScript|Booliano|Indica se o usuário será ou não impedido de usar JavaScript.|
+|browserBlockPlugins|Booliano|Indica se os plug-ins devem ou não ser bloqueados.|
+|browserBlockPopups|Booliano|Indica se janelas pop-ups devem ou não ser bloqueadas.|
+|browserBlockSendingDoNotTrackHeader|Booliano|Indica se o usuário será ou não impedido de enviar o cabeçalho Do Not Track.|
+|browserBlockSingleWordEntryOnIntranetSites|Booliano|Indica se a entrada de palavra única em sites da Intranet deve ou não ser bloqueada.|
+|browserRequireSmartScreen|Booliano|Indica se o usuário deverá ou não usar o Filtro SmartScreen.|
 |browserEnterpriseModeSiteListLocation|String|O local da lista de sites do modo Empresarial. Pode ser um arquivo local, rede local ou local http.|
 |browserInternetSecurityLevel|[internetSiteSecurityLevel](../resources/intune-deviceconfig-internetsitesecuritylevel.md)|O nível de segurança da Internet. Os valores possíveis são: `userDefined`, `medium`, `mediumHigh`, `high`.|
-|browserIntranetSecurityLevel|[siteSecurityLevel](../resources/intune-deviceconfig-sitesecuritylevel.md)|O nível de segurança da Intranet. Os valores possíveis são: `userDefined`, `low`, `mediumLow`, `medium`, `mediumHigh`, `high`.|
+|browserIntranetSecurityLevel|[siteSecurityLevel](../resources/intune-deviceconfig-sitesecuritylevel.md)|O nível de segurança da Intranet. Os possíveis valores são: `userDefined`, `low`, `mediumLow`, `medium`, `mediumHigh`, `high`.|
 |browserLoggingReportLocation|String|O local do relatório de registro em log.|
-|browserRequireHighSecurityForRestrictedSites|Boolean|Indica se a alta segurança para sites restritos deve ou não ser exigida.|
-|browserRequireFirewall|Boolean|Indica se um firewall deve ou não ser exigido.|
-|browserRequireFraudWarning|Boolean|Indica se um aviso de fraude deve ou não ser exigido.|
+|browserRequireHighSecurityForRestrictedSites|Booliano|Indica se a alta segurança para sites restritos deve ou não ser exigida.|
+|browserRequireFirewall|Booliano|Indica se um firewall deve ou não ser exigido.|
+|browserRequireFraudWarning|Booliano|Indica se um aviso de fraude deve ou não ser exigido.|
 |browserTrustedSitesSecurityLevel|[siteSecurityLevel](../resources/intune-deviceconfig-sitesecuritylevel.md)|O nível de segurança de sites confiáveis. Os valores possíveis são: `userDefined`, `low`, `mediumLow`, `medium`, `mediumHigh`, `high`.|
-|cellularBlockDataRoaming|Boolean|Indica se o roaming de dados deve ou não ser bloqueado.|
-|diagnosticsBlockDataSubmission|Boolean|Indica se o envio de dados de diagnóstico deve ou não ser bloqueado.|
-|passwordBlockPicturePasswordAndPin|Boolean|Indica se o usuário será ou não impedido de usar senha com imagens ou pin.|
+|cellularBlockDataRoaming|Booliano|Indica se o roaming de dados deve ou não ser bloqueado.|
+|diagnosticsBlockDataSubmission|Booliano|Indica se o envio de dados de diagnóstico deve ou não ser bloqueado.|
+|passwordBlockPicturePasswordAndPin|Booliano|Indica se o usuário será ou não impedido de usar senha com imagens ou pin.|
 |passwordExpirationDays|Int32|Expiração da senha em dias.|
 |passwordMinimumLength|Int32|O comprimento mínimo da senha.|
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Os minutos de inatividade antes que a tela atinja o tempo limite.|
@@ -71,10 +71,10 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 |passwordPreviousPasswordBlockCount|Int32|O número de senhas anteriores cujo uso deve ser evitado. Valores válidos de 0 a 24|
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|O tipo de senha necessária. Os valores possíveis são: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|O número de falhas de entrada antes da redefinição de fábrica.|
-|storageRequireDeviceEncryption|Boolean|Indica se a criptografia é ou não necessária em um dispositivo móvel.|
-|minimumAutoInstallClassification|[updateClassification](../resources/intune-deviceconfig-updateclassification.md)|O mínimo de classificação para instalar automaticamente de atualização. Os valores possíveis são: `userDefined`, `recommendedAndImportant`, `important`, `none`.|
-|updatesMinimumAutoInstallClassification|[updateClassification](../resources/intune-deviceconfig-updateclassification.md)|O mínimo de classificação para instalar automaticamente de atualização. Os valores possíveis são: `userDefined`, `recommendedAndImportant`, `important`, `none`.|
-|updatesRequireAutomaticUpdates|Boolean|Indica se as atualizações automáticas devem ou não ser exigidas.|
+|storageRequireDeviceEncryption|Booliano|Indica se a criptografia é ou não necessária em um dispositivo móvel.|
+|minimumAutoInstallClassification|[updateClassification](../resources/intune-deviceconfig-updateclassification.md)|A classificação de atualização mínima para instalar automaticamente. Os valores possíveis são: `userDefined`, `recommendedAndImportant`, `important`, `none`.|
+|updatesMinimumAutoInstallClassification|[updateClassification](../resources/intune-deviceconfig-updateclassification.md)|A classificação de atualização mínima para instalar automaticamente. Os valores possíveis são: `userDefined`, `recommendedAndImportant`, `important`, `none`.|
+|updatesRequireAutomaticUpdates|Booliano|Indica se as atualizações automáticas devem ou não ser exigidas.|
 |userAccountControlSettings|[windowsUserAccountControlSettings](../resources/intune-deviceconfig-windowsuseraccountcontrolsettings.md)|As configurações de controle da conta do usuário. Os valores possíveis são: `userDefined`, `alwaysNotify`, `notifyOnAppChanges`, `notifyOnAppChangesWithoutDimming`, `neverNotify`.|
 |workFoldersUrl|String|A URL das pastas de trabalho|
 
@@ -84,7 +84,7 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 |groupAssignments|coleção [deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)|A lista de atribuições de grupo para o perfil de configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |assignments|Coleção [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|A lista de atribuições para o perfil de configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |deviceStatuses|Coleção [deviceConfigurationDeviceStatus](../resources/intune-deviceconfig-deviceconfigurationdevicestatus.md)|Status de instalação da configuração do dispositivo por dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|userStatuses|Coleção [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md)|Status de instalação da configuração de dispositivo por usuário. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|userStatuses|Coleção [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md)|Status de instalação da configuração do dispositivo por usuário. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|Visão geral de status dos dispositivos na Configuração do dispositivo Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|Visão geral de status dos usuários na Configuração do dispositivo Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |deviceSettingStateSummaries|Coleção [settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md)|Resumo de dispositivo de estado de configuração do dispositivo Herdada do [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|

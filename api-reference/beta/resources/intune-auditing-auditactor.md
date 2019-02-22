@@ -1,34 +1,34 @@
 ---
 title: Tipo de recurso auditActor
 description: Uma classe que contém as propriedades para Ator de auditoria.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fcb9ededd9d1a2bb93f970f9f0da0c41a248e840
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 9b748eaea907bc2f763bb5567d7963c33b31bddd
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425796"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30141122"
 ---
 # <a name="auditactor-resource-type"></a>Tipo de recurso auditActor
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Uma classe que contém as propriedades para Ator de auditoria.
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|type|Cadeia de caracteres|Tipo de ator.|
+|type|String|Tipo de ator.|
 |userPermissions|Conjunto de cadeia de caracteres|Lista de permissões de usuário de quando a auditoria foi executada.|
-|ApplicationId|Cadeia de caracteres|ID do aplicativo AAD.|
-|applicationDisplayName|Cadeia de caracteres|Nome do aplicativo.|
-|userPrincipalName|Cadeia de caracteres|Nome principal do usuário (UPN).|
-|servicePrincipalName|Cadeia de caracteres|Nome da entidade de serviço (SPN).|
-|ipAddress|Cadeia de caracteres|IPAddress.|
+|ApplicationId|String|ID do aplicativo AAD.|
+|applicationDisplayName|String|Nome do aplicativo.|
+|userPrincipalName|String|Nome principal do usuário (UPN).|
+|servicePrincipalName|String|Nome da entidade de serviço (SPN).|
+|ipAddress|String|IPAddress.|
 |userId|Cadeia de caracteres|ID do usuário.|
 
 ## <a name="relationships"></a>Relações

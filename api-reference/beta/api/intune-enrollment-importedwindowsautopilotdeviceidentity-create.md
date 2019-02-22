@@ -1,21 +1,21 @@
 ---
 title: Criar importedWindowsAutopilotDeviceIdentity
 description: Crie um novo objeto importedWindowsAutopilotDeviceIdentity.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0c951e6b0489d5d42035d6f415efe64a8b6fb5d3
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: c13f46d168bbb20d8166d063d3f12695ce02f50a
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29400722"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30146253"
 ---
 # <a name="create-importedwindowsautopilotdeviceidentity"></a>Criar importedWindowsAutopilotDeviceIdentity
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Criar um novo objeto [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md).
 
@@ -51,9 +51,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar imported
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O GUID do objeto.|
+|id|String|O GUID do objeto.|
 |orderIdentifier|Cadeia de caracteres|ID do pedido do dispositivo do Windows AutoPilot.|
-|serialNumber|Cadeia de caracteres|Número de série do dispositivo do Windows AutoPilot.|
+|serialNumber|String|Número de série do dispositivo do Windows AutoPilot.|
 |productKey|Cadeia de caracteres|Chave do produto (Product Key) do dispositivo do Windows AutoPilot.|
 |hardwareIdentifier|Binária|Blob de hardware do dispositivo do Windows AutoPilot.|
 |state|[importedWindowsAutopilotDeviceIdentityState](../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)|Estado atual do dispositivo importado.|

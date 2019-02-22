@@ -1,23 +1,23 @@
 ---
-title: ação de createGooglePlayWebToken
-description: Gera um token de web que é usado em um componente incorporável.
-localization_priority: Normal
+title: ação createGooglePlayWebToken
+description: Gera um token Web que é usado em um componente incorporável.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 22190ed207a4678a865392afc659a51f096a419c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 50355af2e5f9e593501094c0bfd1638cb070df9d
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29394709"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30141241"
 ---
-# <a name="creategoogleplaywebtoken-action"></a>ação de createGooglePlayWebToken
+# <a name="creategoogleplaywebtoken-action"></a>ação createGooglePlayWebToken
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Gera um token de web que é usado em um componente incorporável.
+Gera um token Web que é usado em um componente incorporável.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
@@ -50,7 +50,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|parentUri|String|O caminho de https da página que hospeda o componente.|
+|parentUri|String|O caminho https da página que hospeda o componente.|
 
 
 

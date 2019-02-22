@@ -1,34 +1,34 @@
 ---
-title: tipo de enum ratingGermanyMoviesType
-description: Filmes classificação rótulos na Alemanha
-localization_priority: Normal
+title: tipo de enumeração ratingGermanyMoviesType
+description: Rótulos de classificação de filmes na Alemanha
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dfa8211b562fac95e5c325c9afe682c38e5272db
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 3a8543c0dd565edd12fcb0db4e523e5273570d5b
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29395871"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30139519"
 ---
-# <a name="ratinggermanymoviestype-enum-type"></a>tipo de enum ratingGermanyMoviesType
+# <a name="ratinggermanymoviestype-enum-type"></a>tipo de enumeração ratingGermanyMoviesType
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Filmes classificação rótulos na Alemanha
+Rótulos de classificação de filmes na Alemanha
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|allAllowed|0|Valor padrão, permitir todo o conteúdo de filmes|
-|allBlocked|1|Não permitir que qualquer conteúdo filmes|
-|geral|2|Jahren AB 0, não há restrições de idade|
-|agesAbove6|3|Jahren de 6 AB, expira antigas e 6|
-|agesAbove12|4|Jahren de 12 AB, expira antigas e 12|
-|agesAbove16|5|Jahren de 16 AB, expira antigas e 16|
-|adultos|6|AB 18 Jahren, somente para adultos|
+|Permitido|,0|Valor padrão, permitir todo o conteúdo de filmes|
+|Bloqueado|1|Não permitir conteúdo de filmes|
+|geral|duas|AB 0 Jahren, sem restrições de idade|
+|agesAbove6|3D|AB 6 Jahren, anos 6 ou mais|
+|agesAbove12|quatro|AB 12 Jahren, 12 anos ou mais|
+|agesAbove16|0,5|AB 16 Jahren, 16 anos ou mais|
+|adultos|6|AB 18 Jahren, somente adultos|
 
 
 

@@ -1,29 +1,29 @@
 ---
-title: tipo de enum vppTokenAccountType
-description: Tipos possíveis de um token de programa de compra de Volume do Apple.
-localization_priority: Normal
+title: tipo de enumeração vppTokenAccountType
+description: Tipos possíveis de um token do Apple Volume Purchase Program.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a3fd5e8656a982deb28d92c19464b354708e503e
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 109cbfee1153ec4ef547ac14ca5efd0a2c2054b3
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29406532"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30143383"
 ---
-# <a name="vpptokenaccounttype-enum-type"></a>tipo de enum vppTokenAccountType
+# <a name="vpptokenaccounttype-enum-type"></a>tipo de enumeração vppTokenAccountType
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Tipos possíveis de um token de programa de compra de Volume do Apple.
+Tipos possíveis de um token do Apple Volume Purchase Program.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|Business|0|Símbolo de programa de compra de Volume do Apple associado a um programa de negócios.|
-|Educação|1|Símbolo de programa de compra de Volume do Apple associado a um programa de treinamento.|
+|Business|,0|Token do Apple Volume Purchase Program associado a um programa de negócios.|
+|educacionais|1|Token do Apple Volume Purchase Program associado a um programa Education.|
 
 
 

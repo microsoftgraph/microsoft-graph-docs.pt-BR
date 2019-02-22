@@ -1,23 +1,23 @@
 ---
 title: Atualizar advancedThreatProtectionOnboardingDeviceSettingState
-description: Atualize as propriedades de um objeto advancedThreatProtectionOnboardingDeviceSettingState.
-localization_priority: Normal
+description: Atualiza as propriedades de um objeto advancedThreatProtectionOnboardingDeviceSettingState.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2fe6b59f27a6041456096551fbfb0ca66f48329f
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 42a292d824c4e4c80cf4cb47e3812b05f8f733ab
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29408632"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30142781"
 ---
 # <a name="update-advancedthreatprotectiononboardingdevicesettingstate"></a>Atualizar advancedThreatProtectionOnboardingDeviceSettingState
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Atualize as propriedades de um objeto [advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md) .
+Atualiza as propriedades de um objeto [advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
@@ -44,30 +44,30 @@ PATCH /deviceManagement/advancedThreatProtectionOnboardingStateSummary/advancedT
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON para o objeto [advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md) .
+No corpo da solicitação, forneça uma representação JSON do objeto [advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md) .
 
-A tabela a seguir mostra as propriedades que são necessárias quando você cria o [advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md).
+A tabela a seguir mostra as propriedades que são necessárias ao criar [advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade|
-|platformType|[deviceType](../resources/intune-shared-devicetype.md)|Tipo de plataforma do dispositivo. Os valores possíveis são: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise` , `blackberry`, `palm`, `unknown`.|
-|configuração|Cadeia de caracteres|O nome da classe de configuração e o nome da propriedade.|
-|settingName|Cadeia de caracteres|O nome da configuração sendo relatada|
+|id|String|Chave da entidade|
+|platformType|[deviceType](../resources/intune-shared-devicetype.md)|Tipo de plataforma de dispositivo. Os valores possíveis são `desktop`: `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad` `iPod` `android`,,, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise` ,,,,,,,, , `blackberry`, `palm`, `unknown`.|
+|configuração|String|O nome da classe de configuração e o nome da propriedade.|
+|settingName|String|O nome da configuração sendo relatada|
 |deviceId|Cadeia de caracteres|A ID do dispositivo sendo relatada|
-|deviceName|Cadeia de caracteres|O nome do dispositivo sendo relatado|
-|userId|Cadeia de caracteres|A ID do usuário sendo relatada|
-|userEmail|Cadeia de caracteres|O endereço de email do usuário que está sendo relatado|
-|userName|Cadeia de caracteres|O nome de usuário que está sendo relatado|
-|userPrincipalName|Cadeia de caracteres|O PrincipalName do usuário que está sendo relatado|
-|deviceModel|Cadeia de caracteres|O modelo do dispositivo que está sendo relatado|
-|estado|[complianceStatus](../resources/intune-shared-compliancestatus.md)|O estado de conformidade da configuração. Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
+|deviceName|String|O nome do dispositivo sendo relatado|
+|userId|String|A ID do usuário sendo relatada|
+|userEmail|String|O endereço de email do usuário que está sendo relatado|
+|userName|String|O nome de usuário que está sendo relatado|
+|userPrincipalName|String|O PrincipalName do usuário que está sendo relatado|
+|deviceModel|String|O modelo do dispositivo que está sendo relatado|
+|state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|O estado de conformidade da configuração. Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|DateTime em que o período de cortesia de conformidade do dispositivo termina|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto atualizado [advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

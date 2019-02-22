@@ -1,30 +1,30 @@
 ---
-title: tipo de enum vpnTrafficRuleAppType
-description: Indica o tipo de aplicativo que uma regra de tráfego VPN está associada.
-localization_priority: Normal
+title: tipo de enumeração vpnTrafficRuleAppType
+description: Indica o tipo de aplicativo ao qual uma regra de tráfego VPN está associada.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 061cb5701830939576f5b9a649c73b4d44eada18
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: eb8be06a43c64dcb766da479414fcc437ee49cb9
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29396018"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30140527"
 ---
-# <a name="vpntrafficruleapptype-enum-type"></a>tipo de enum vpnTrafficRuleAppType
+# <a name="vpntrafficruleapptype-enum-type"></a>tipo de enumeração vpnTrafficRuleAppType
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Indica o tipo de aplicativo que uma regra de tráfego VPN está associada.
+Indica o tipo de aplicativo ao qual uma regra de tráfego VPN está associada.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|none|0|A regra de tráfego não está associada um aplicativo.|
-|área de trabalho|1|A regra de tráfego é associada um aplicativo de área de trabalho.|
-|universal|2|A regra de tráfego é associada um aplicativo Universal.|
+|Nenhuma|,0|A regra de tráfego não está associada a um aplicativo.|
+|placa|1|A regra de tráfego é associada a um aplicativo de área de trabalho.|
+|UTC|duas|A regra de tráfego é associada a um aplicativo universal.|
 
 
 

@@ -1,23 +1,23 @@
 ---
 title: Atualizar ndesConnector
-description: Atualize as propriedades de um objeto ndesConnector.
-localization_priority: Normal
+description: Atualiza as propriedades de um objeto ndesConnector.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8c78502bb0670eca08b896bf1a0b732f94b669cd
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: a4d51f22c71ef43784ec45e521f0e1900abdb9c0
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29418418"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30140275"
 ---
 # <a name="update-ndesconnector"></a>Atualizar ndesConnector
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Atualize as propriedades de um objeto [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) .
+Atualiza as propriedades de um objeto [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
@@ -44,21 +44,21 @@ PATCH /deviceManagement/ndesConnectors/{ndesConnectorId}
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON para o objeto [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) .
+No corpo da solicitação, forneça uma representação JSON do objeto [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) .
 
-A tabela a seguir mostra as propriedades que são necessárias quando você cria o [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md).
+A tabela a seguir mostra as propriedades que são necessárias ao criar [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|A chave do conector NDES.|
-|lastConnectionDateTime|DateTimeOffset|Hora da última conexão para o conector Ndes|
-|estado|[ndesConnectorState](../resources/intune-deviceconfig-ndesconnectorstate.md)|Status do conector NDES. Os valores possíveis são: `none`, `active`, `inactive`.|
-|displayName|String|O nome amigável do conector Ndes.|
+|lastConnectionDateTime|DateTimeOffset|Hora da última conexão para o conector NDES|
+|state|[ndesConnectorState](../resources/intune-deviceconfig-ndesconnectorstate.md)|Status do conector NDES. Os valores possíveis são: `none`, `active`, `inactive`.|
+|displayName|String|O nome amigável do conector NDES.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto atualizado [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

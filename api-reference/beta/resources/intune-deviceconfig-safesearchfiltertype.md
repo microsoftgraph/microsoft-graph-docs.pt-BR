@@ -1,30 +1,30 @@
 ---
-title: tipo de enum safeSearchFilterType
-description: Especifica qual nível de pesquisa segura (filtragem de conteúdo para adultos) é necessária
-localization_priority: Normal
+title: tipo de enumeração safeSearchFilterType
+description: Especifica o nível de pesquisa segura (filtragem de conteúdo adulto) é necessário
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4493c71b48a0f5ff4b0c48307504087c722393e1
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 196131eb11efad25a4b2fa541bf1b20d85dda33e
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29403480"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30140170"
 ---
-# <a name="safesearchfiltertype-enum-type"></a>tipo de enum safeSearchFilterType
+# <a name="safesearchfiltertype-enum-type"></a>tipo de enumeração safeSearchFilterType
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Especifica qual nível de pesquisa segura (filtragem de conteúdo para adultos) é necessária
+Especifica o nível de pesquisa segura (filtragem de conteúdo adulto) é necessário
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|userDefined|0|Definido pelo usuário, valor padrão, sem intenção.|
-|estrito|1|Restrito, mais alto de filtragem em relação a conteúdo para adultos.|
-|moderar|2|Moderar filtragem contra conteúdo para adultos (resultados de pesquisa válido não serão filtrados).|
+|userDefined|,0|Definido pelo usuário, valor padrão, sem intenção.|
+|impede|1|Filtragem mais rigorosa e estrita contra conteúdo adulto.|
+|moderado|duas|Filtragem moderada contra conteúdo adulto (os resultados de pesquisa válidos não serão filtrados).|
 
 
 

@@ -1,23 +1,23 @@
 ---
-title: tipo de recurso de windowsKioskSingleUWPApp
-description: A classe usada para identificar as informações de app UWP para a configuração de quiosque
-localization_priority: Normal
+title: tipo de recurso windowsKioskSingleUWPApp
+description: A classe usada para identificar as informações do aplicativo UWP para a configuração do quiosque
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e62dc6393cc2dc6a9133732a42527abdfadbd91e
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 804dd2f34416eecb956b322a0f178daaf39b2418
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29409374"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30142039"
 ---
-# <a name="windowskiosksingleuwpapp-resource-type"></a>tipo de recurso de windowsKioskSingleUWPApp
+# <a name="windowskiosksingleuwpapp-resource-type"></a>tipo de recurso windowsKioskSingleUWPApp
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-A classe usada para identificar as informações de app UWP para a configuração de quiosque
+A classe usada para identificar as informações do aplicativo UWP para a configuração do quiosque
 
 
 Herda de [windowsKioskAppConfiguration](../resources/intune-deviceconfig-windowskioskappconfiguration.md)
@@ -25,7 +25,7 @@ Herda de [windowsKioskAppConfiguration](../resources/intune-deviceconfig-windows
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|uwpApp|[windowsKioskUWPApp](../resources/intune-deviceconfig-windowskioskuwpapp.md)|Este é o único aplicativo usuário modelo ID (AUMID) que estarão disponíveis para uso no modo de quiosque de início|
+|uwpApp|[windowsKioskUWPApp](../resources/intune-deviceconfig-windowskioskuwpapp.md)|Esta é a única ID de modelo de usuário do aplicativo (AUMID) que estará disponível para iniciar o uso enquanto estiver no modo quiosque|
 
 ## <a name="relationships"></a>Relações
 Nenhum

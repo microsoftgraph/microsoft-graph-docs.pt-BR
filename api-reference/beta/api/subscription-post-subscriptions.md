@@ -1,38 +1,48 @@
 ---
 title: Criar assinatura
-description: Assinar um aplicativo de escuta para receber notificações quando as alterações de dados em um recurso do Microsoft Graph.
+description: Assina um aplicativo de escuta para receber notificações quando os dados de um recurso do Microsoft Graph são alterados.
 localization_priority: Normal
 author: piotrci
-ms.openlocfilehash: 002dd88c7db2650be2303e7df6f86ce9a5fbdaa9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: a8b8189780ac0b820551fb885adcf843c9ebe8f4
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527574"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30140163"
 ---
 # <a name="create-subscription"></a>Criar assinatura
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Assinar um aplicativo de escuta para receber notificações quando as alterações de dados em um recurso do Microsoft Graph.
+Assina um aplicativo de escuta para receber notificações quando o tipo solicitado de alterações ocorre no recurso especificado no Microsoft Graph.
 
 ## <a name="permissions"></a>Permissões
 
-Criar uma assinatura requer a permissão de leitura para o recurso para o qual o aplicativo receberá notificações. Por exemplo, para obter notificações sobre mensagens, seu aplicativo precisa o `Mail.Read` permissão. A tabela a seguir lista a permissão sugerida necessária para cada recurso. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+A criação de uma assinatura requer o escopo de leitura para o recurso. Por exemplo, para obter notificações sobre mensagens, seu aplicativo precisa da `Mail.Read` permissão. 
+ 
+ Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é o menos privilegiado necessário para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-| Tipo de recurso/item        | Permissão          |
-|-----------------------------|---------------------|
-| Contatos                    | Contacts.Read       |
-| Conversas               | Group.Read.All      |
-| Eventos                      | Calendars.Read      |
-| Mensagens                    | Mail.Read           |
-| Grupos                      | Group.Read.All      |
-| Usuários                       | User.Read.All       |
-| Drive (o OneDrive do usuário)    | Files.ReadWrite     |
-| Drives (conteúdo do SharePoint shared e unidades) | Files.ReadWrite.All |
-| Alerta de segurança              | SecurityEvents.ReadWrite.All |
+| Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Application |
+|:-----|:-----|:-----|:-----|
+|[contato](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
+|[driveItem](../resources/driveitem.md) (OneDrive pessoal do usuário) | Sem suporte | Files.ReadWrite | Sem suporte |
+|[driveItem](../resources/driveitem.md) (OneDrive for Business) | Files.ReadWrite.All | Sem suporte | Files.ReadWrite.All |
+|[event](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
+|[grupo](../resources/group.md) | Group.Read.All | Sem suporte | Group.Read.All |
+|[conversa de grupo](../resources/conversation.md) | Group.Read.All | Sem suporte | Sem suporte |
+|[message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
+|[alerta de segurança](../resources/alert.md) | SecurityEvents.ReadWrite.All | Sem suporte | SecurityEvents.ReadWrite.All |
+|[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
-> **Observação:** O ponto de extremidade /beta permite que as permissões de aplicativo para a maioria dos recursos. Não há suporte para conversas em itens de raiz uma unidade OneDrive e de grupo com permissões de aplicativo.
+> **Observação:** Há limitações adicionais para assinaturas em itens do OneDrive e do Outlook. As limitações se aplicam à criação e ao gerenciamento de assinaturas (obtendo, atualizando e excluindo assinaturas).
+
+- No OneDrive pessoal, você pode inscrever-se na pasta raiz ou em qualquer subpasta nessa unidade. No OneDrive for Business, você pode inscrever-se apenas na pasta raiz. As notificações são enviadas para os tipos solicitados de alterações na pasta inscrita ou qualquer arquivo, pasta ou outra instância do **driveItem** em sua hierarquia. Você não pode se inscrever em instâncias de **unidade** ou **driveItem** que não são pastas, como arquivos individuais.
+
+- No Outlook, a permissão delegada oferece suporte à assinatura de itens em pastas somente na caixa de correio do usuário conectado. Isso significa que, por exemplo, não é possível usar os calendários de permissão delegada. Leia para inscrever-se em eventos na caixa de correio de outro usuário.
+- Para inscrever-se para alterar as notificações de contatos, eventos ou mensagens do Outlook em pastas compartilhadas _ou delegadas_ :
+
+  - Use a permissão de aplicativo correspondente para inscrever-se nas alterações de itens em uma pasta ou em uma caixa de correio de _qualquer_ usuário no locatário.
+  - Não use as permissões de compartilhamento do Outlook (Contacts. Read. Shared, caLendars. Read. Shared, mail. Read. Shared e suas contrapartes de leitura/gravação), já que eles **não** oferecem suporte à inscrição para alterar notificações em itens em pastas compartilhadas ou delegadas.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -56,10 +66,10 @@ Se bem-sucedido, este método retorna o código de resposta `201 Created` e um o
 
 ##### <a name="request"></a>Solicitação
 
-No corpo da solicitação, fornece uma representação JSON do objeto de [inscrição](../resources/subscription.md) .
+No corpo da solicitação, forneça uma representação JSON do objeto [Subscription](../resources/subscription.md) .
 O `clientState` campo é opcional.
 
-Esta amostra da solicitação cria uma assinatura de notificações sobre novos emails recebidos pelo usuário atualmente conectado.
+Este exemplo de solicitação cria uma assinatura para notificações sobre novos emails recebidos pelo usuário conectado no momento.
 <!-- {
   "blockType": "request",
   "name": "create_subscription_from_subscriptions"
@@ -78,7 +88,7 @@ Content-type: application/json
 }
 ```
 
-A seguir estão os valores válidos para a propriedade de recurso:
+Estes são os valores válidos para a propriedade de recurso:
 
 | Tipo de recurso | Exemplos |
 |:------ |:----- |
@@ -86,10 +96,10 @@ A seguir estão os valores válidos para a propriedade de recurso:
 |Contatos|me/contacts|
 |Calendários|me/events|
 |Usuários|users|
-|Grupos|Grupos|
+|Grupos|Agrupe|
 |Conversas|groups('*{id}*')/conversations|
 |Unidades|me/drive/root|
-|Alerta de segurança|alertas de segurança /? $filter = status eq 'Novo'|
+|Alerta de segurança|segurança/alertas? $filter = status eq ' novo '|
 
 ##### <a name="response"></a>Resposta
 
@@ -120,7 +130,7 @@ Content-length: 252
 
 ## <a name="notification-endpoint-validation"></a>Validação de ponto de extremidade de notificação
 
-O ponto de extremidade de notificação de inscrição (especificado no `notificationUrl` propriedade) deve ser capaz de responder a uma solicitação de validação, conforme descrito em [Configurar notificações para que as alterações nos dados do usuário](/graph/webhooks#notification-endpoint-validation). Se a validação falhar, a solicitação para criar a assinatura retornará um erro de solicitação inválida a 400.
+O ponto de extremidade de notificação de assinatura `notificationUrl` (especificado na propriedade) deve ser capaz de responder a uma solicitação de validação, conforme descrito em [configurar notificações para alterações nos dados do usuário](/graph/webhooks#notification-endpoint-validation). Se a validação falhar, a solicitação para criar a assinatura retornará um erro de solicitação inVálida 400.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

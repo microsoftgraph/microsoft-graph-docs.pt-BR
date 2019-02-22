@@ -1,31 +1,31 @@
 ---
-title: tipo de enum edgeCookiePolicy
-description: Os valores possíveis para especificar quais os cookies são permitidos em Microsoft Edge.
-localization_priority: Normal
+title: tipo de enumeração edgeCookiePolicy
+description: Valores possíveis para especificar quais cookies são permitidos no Microsoft Edge.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d3afbe36c8d08105341cbc6d0fa54220eb22dbf8
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: c00e16e80847b5ab0f9ed7d8175fcc13fa92a582
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422387"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30143922"
 ---
-# <a name="edgecookiepolicy-enum-type"></a>tipo de enum edgeCookiePolicy
+# <a name="edgecookiepolicy-enum-type"></a>tipo de enumeração edgeCookiePolicy
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Os valores possíveis para especificar quais os cookies são permitidos em Microsoft Edge.
+Valores possíveis para especificar quais cookies são permitidos no Microsoft Edge.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|userDefined|0|Permitir que o usuário pode definir.|
-|permitir|1|Permita.|
-|blockThirdParty|2|Bloquear somente cookies de terceiros.|
-|blockAll|3|Bloquear todos os cookies.|
+|userDefined|,0|Permite que o usuário defina.|
+|permitiu|1|Permitiu.|
+|blockThirdParty|duas|Bloquear somente cookies de terceiros.|
+|blockAll|3D|Bloquear todos os cookies.|
 
 
 

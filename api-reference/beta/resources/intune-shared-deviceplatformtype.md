@@ -1,35 +1,35 @@
 ---
-title: tipo de enum devicePlatformType
-description: Tipos de plataforma com suporte.
-localization_priority: Normal
+title: tipo de enumeração devicePlatformType
+description: Tipos de plataforma suportados.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0927464dc16a7b2a0c2f1f580316c81774499287
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e060cba22c0f5dcb45ab17f5624f7a0246123810
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29419783"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30139904"
 ---
-# <a name="deviceplatformtype-enum-type"></a>tipo de enum devicePlatformType
+# <a name="deviceplatformtype-enum-type"></a>tipo de enumeração devicePlatformType
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Tipos de plataforma com suporte.
+Tipos de plataforma suportados.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|Android|0|Android.|
+|Android|,0|Android.|
 |androidForWork|1|AndroidForWork.|
-|iOS|2|iOS.|
-|macOS|3|MacOS.|
-|windowsPhone81|4|WindowsPhone 8.1.|
-|windows81AndLater|5|Windows 8.1 e posterior|
+|iOS|duas|emiti.|
+|macOS|3D|MacOS.|
+|windowsPhone81|quatro|Windowsphonee 8,1.|
+|windows81AndLater|0,5|Windows 8,1 e posterior|
 |windows10AndLater|6|Windows 10 e posterior.|
-|androidWorkProfile|7|Perfil de trabalho Android.|
+|androidWorkProfile|178|Perfil de trabalho do Android.|
 
 
 

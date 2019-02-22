@@ -1,23 +1,23 @@
 ---
 title: Criar termsAndConditionsGroupAssignment
-description: Crie um novo objeto de termsAndConditionsGroupAssignment.
-localization_priority: Normal
+description: Criar um novo objeto termsAndConditionsGroupAssignment.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e1d5d9576e886530bd4cf8af345390e9b9170a80
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: c7688bb77a1b2feb33487aa7bbda33da052cea52
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29417116"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30140093"
 ---
 # <a name="create-termsandconditionsgroupassignment"></a>Criar termsAndConditionsGroupAssignment
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Crie um novo objeto de [termsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md) .
+Criar um novo objeto [termsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
@@ -44,19 +44,19 @@ POST /deviceManagement/termsAndConditions/{termsAndConditionsId}/groupAssignment
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON para o objeto termsAndConditionsGroupAssignment.
+No corpo da solicitação, forneça uma representação JSON do objeto termsAndConditionsGroupAssignment.
 
-A tabela a seguir mostra as propriedades que são necessárias quando você cria o termsAndConditionsGroupAssignment.
+A tabela a seguir mostra as propriedades que são necessárias ao criar termsAndConditionsGroupAssignment.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Identificador exclusivo da entidade.|
-|targetGroupId|String|Identificador exclusivo de um grupo que a política de T&C é atribuída a.|
+|targetGroupId|String|Identificador exclusivo de um grupo ao qual a política T&C é atribuída.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [termsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [termsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

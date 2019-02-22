@@ -1,33 +1,33 @@
 ---
-title: tipo de enum deviceManagementSubscriptions
-description: Inscrições de gerenciamento de dispositivo móvel do inquilino.
-localization_priority: Normal
+title: tipo de enumeração deviceManagementSubscriptions
+description: Assinaturas de gerenciamento de dispositivo móvel de locatário.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 78ac6710c84bc94389cdca512fd420fa7a29debd
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 6dbf73ad6eac2bd60518446857c4fccc121d314f
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29421078"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30143978"
 ---
-# <a name="devicemanagementsubscriptions-enum-type"></a>tipo de enum deviceManagementSubscriptions
+# <a name="devicemanagementsubscriptions-enum-type"></a>tipo de enumeração deviceManagementSubscriptions
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Inscrições de gerenciamento de dispositivo móvel do inquilino.
+Assinaturas de gerenciamento de dispositivo móvel de locatário.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|none|0|Nenhum|
-|Intune|1|Inscrição do Microsoft Intune|
-|office365|2|Assinatura Office365|
-|intunePremium|4|Inscrição do Microsoft Intune Premium|
-|intune_EDU|8|Microsoft Intune para assinatura de educação|
-|intune_SMB|16|Microsoft Intune para assinatura de pequenas empresas|
+|Nenhuma|,0|Nenhum|
+|Intune|1|Assinatura do Microsoft Intune|
+|Office365|duas|Assinatura do Office365|
+|intunePremium|quatro|Assinatura do Microsoft Intune Premium|
+|intune_EDU|8|Assinatura do Microsoft Intune para educação|
+|intune_SMB|dezesseis|Assinatura do Microsoft Intune para pequenas empresas|
 
 
 

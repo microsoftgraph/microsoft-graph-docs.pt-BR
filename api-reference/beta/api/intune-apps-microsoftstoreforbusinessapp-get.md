@@ -1,21 +1,21 @@
 ---
 title: Get microsoftStoreForBusinessApp
 description: Ler propriedades e relações do objeto microsoftStoreForBusinessApp.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bbe97e3fe5af7a109c667cf1094556ee5b4d2d9c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 413021214e56182f51c70a8202268d4ad562ee8b
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29417361"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30140793"
 ---
 # <a name="get-microsoftstoreforbusinessapp"></a>Get microsoftStoreForBusinessApp
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Ler propriedades e relações do objeto [microsoftStoreForBusinessApp](../resources/intune-apps-microsoftstoreforbusinessapp.md).
 
@@ -67,7 +67,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1125
+Content-Length: 1368
 
 {
   "value": {
@@ -99,7 +99,14 @@ Content-Length: 1125
     "totalLicenseCount": 1,
     "productKey": "Product Key value",
     "licenseType": "online",
-    "packageIdentityName": "Package Identity Name value"
+    "packageIdentityName": "Package Identity Name value",
+    "licensingType": {
+      "@odata.type": "microsoft.graph.vppLicensingType",
+      "supportUserLicensing": true,
+      "supportDeviceLicensing": true,
+      "supportsUserLicensing": true,
+      "supportsDeviceLicensing": true
+    }
   }
 }
 ```

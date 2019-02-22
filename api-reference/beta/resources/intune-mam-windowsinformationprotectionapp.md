@@ -1,30 +1,30 @@
 ---
 title: Tipo de recurso windowsInformationProtectionApp
 description: Aplicativo para proteção de informações do Windows
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 45d428ee18e92e76f5a13c568373219f904fd886
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e2b8739fd045d4b8e6293164fc7e9b14154a475c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29403683"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30139281"
 ---
 # <a name="windowsinformationprotectionapp-resource-type"></a>Tipo de recurso windowsInformationProtectionApp
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Aplicativo para proteção de informações do Windows
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|Nome de exibição do aplicativo.|
-|descrição|Cadeia de caracteres|A descrição do aplicativo.|
-|publisherName|Cadeia de caracteres|O nome do distribuidor|
+|displayName|String|Nome de exibição do aplicativo.|
+|descrição|String|A descrição do aplicativo.|
+|publisherName|String|O nome do distribuidor|
 |productName|Cadeia de caracteres|O nome do produto.|
 |negado|Booliano|Se verdadeiro, é negada proteção ou isenção ao aplicativo.|
 

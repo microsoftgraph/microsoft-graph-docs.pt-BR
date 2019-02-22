@@ -1,23 +1,23 @@
 ---
 title: Atualizar deviceManagementScriptRunSummary
-description: Atualize as propriedades de um objeto deviceManagementScriptRunSummary.
-localization_priority: Normal
+description: Atualiza as propriedades de um objeto deviceManagementScriptRunSummary.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 55582147aff81bc8d566634a5fb9fdc1ff4ff2fd
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: dd41b6c7dbb7a2bb361175de564904c11e7e5e80
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29413987"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30141717"
 ---
 # <a name="update-devicemanagementscriptrunsummary"></a>Atualizar deviceManagementScriptRunSummary
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Atualize as propriedades de um objeto [deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md) .
+Atualiza as propriedades de um objeto [deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
@@ -44,22 +44,22 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runSu
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON para o objeto [deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md) .
+No corpo da solicitação, forneça uma representação JSON do objeto [deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md) .
 
-A tabela a seguir mostra as propriedades que são necessárias quando você cria o [deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md).
+A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave do script de gerenciamento de dispositivo execute entidade resumida.|
-|successDeviceCount|Int32|Contagem de sucesso do dispositivo.|
-|errorDeviceCount|Int32|Contagem de erros de dispositivo.|
-|successUserCount|Int32|Contagem de usuário de sucesso.|
-|errorUserCount|Int32|Contagem de erros de usuário.|
+|id|String|Chave da entidade de Resumo de execução do script de gerenciamento de dispositivo.|
+|successDeviceCount|Int32|Contagem de dispositivos com êxito.|
+|errorDeviceCount|Int32|Contagem de dispositivos de erro.|
+|successUserCount|Int32|Contagem de usuários com sucesso.|
+|errorUserCount|Int32|Erro contagem de usuários.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto atualizado [deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

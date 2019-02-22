@@ -1,32 +1,32 @@
 ---
-title: tipo de enum applicationGuardBlockFileTransferType
+title: tipo de enumeração applicationGuardBlockFileTransferType
 description: Valores possíveis para applicationGuardBlockFileTransfer
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9997956d192686a5287e181b25bd5f98184299c5
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 32b2d4ef3aabf8082074215825c8e3e08a44ba63
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29396270"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30142313"
 ---
-# <a name="applicationguardblockfiletransfertype-enum-type"></a>tipo de enum applicationGuardBlockFileTransferType
+# <a name="applicationguardblockfiletransfertype-enum-type"></a>tipo de enumeração applicationGuardBlockFileTransferType
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Valores possíveis para applicationGuardBlockFileTransfer
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|não-configuradas|0|Não configurado|
-|blockImageAndTextFile|1|Área de transferência do bloco para transferir um arquivo de imagem e texto|
-|blockImageFile|2|Área de transferência do bloco para transferir um arquivo de imagem|
-|blockNone|3|Nenhum arquivo de texto ou arquivo de imagem seja bloqueado para transferir|
-|blockTextFile|4|Área de transferência do bloco para transferir um arquivo de texto|
+|notConfigured|,0|Não configurado|
+|blockImageAndTextFile|1|Bloquear a área de transferência para transferir o arquivo de texto e imagem|
+|blockImageFile|duas|Bloquear área de transferência para transferir o arquivo de imagem|
+|blockNone|3D|Nenhum dos arquivos de texto ou de imagem está bloqueado da transferência|
+|blockTextFile|quatro|Bloquear área de transferência para transferir arquivo de texto|
 
 
 

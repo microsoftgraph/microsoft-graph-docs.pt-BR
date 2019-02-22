@@ -1,32 +1,32 @@
 ---
-title: tipo de enum ratingNewZealandTelevisionType
+title: tipo de enumeração ratingNewZealandTelevisionType
 description: Rótulos de classificação de conteúdo de TV na Nova Zelândia
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4030ce62a3ae37166c0f9f64d62e513db5a22baf
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 6a6f758007a7d964e443c576cbdca4a8e4bc0fee
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399105"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30144594"
 ---
-# <a name="ratingnewzealandtelevisiontype-enum-type"></a>tipo de enum ratingNewZealandTelevisionType
+# <a name="ratingnewzealandtelevisiontype-enum-type"></a>tipo de enumeração ratingNewZealandTelevisionType
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Rótulos de classificação de conteúdo de TV na Nova Zelândia
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|allAllowed|0|Valor padrão, para permitir que todos os TV mostra conteúdo|
-|allBlocked|1|Não permitir que qualquer TV mostra conteúdo|
-|geral|2|A classificação G exclui provavelmente danificar filhos em 14 de materiais|
-|parentalGuidance|3|A classificação de PGR incentiva pais e responsáveis para visualizadores mais jovens for o Supervisor|
-|adultos|4|A classificação AO não é adequada para filhos|
+|Permitido|,0|Valor padrão, permitir todos os programas de TV|
+|Bloqueado|1|Não permitir que qualquer TV mostre conteúdo|
+|geral|duas|A classificação G exclui os materiais que provavelmente danificarão os filhos em 14|
+|parentalGuidance|3D|A classificação do PGR incentiva os pais e os guardiões a supervisionar os visualizadores mais jovens|
+|adultos|quatro|A classificação ao ao não é adequada para crianças|
 
 
 

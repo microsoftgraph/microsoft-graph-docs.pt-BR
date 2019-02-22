@@ -1,29 +1,29 @@
 ---
-title: tipo de recurso de customSubjectAlternativeName
-description: Definição de nome alternativo da entidade personalizada
-localization_priority: Normal
+title: tipo de recurso customSubjectAlternativeName
+description: Definição do nome alternativo da entidade personalizada
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b3f081b37b79be45d6705d24be58ea7295b58b68
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 3b1583a88a52a626803fe45837e056ec020b05e2
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415667"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30146211"
 ---
-# <a name="customsubjectalternativename-resource-type"></a>tipo de recurso de customSubjectAlternativeName
+# <a name="customsubjectalternativename-resource-type"></a>tipo de recurso customSubjectAlternativeName
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Definição de nome alternativo da entidade personalizada
+Definição do nome alternativo da entidade personalizada
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |sanType|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|Tipo de SAN personalizado. Os valores possíveis são: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`.|
-|name|String|Nome de SAN personalizado|
+|name|String|Nome da SAN personalizada|
 
 ## <a name="relationships"></a>Relações
 Nenhum

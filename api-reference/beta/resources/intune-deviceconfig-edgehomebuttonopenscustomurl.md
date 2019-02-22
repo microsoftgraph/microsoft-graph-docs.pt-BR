@@ -1,23 +1,23 @@
 ---
-title: tipo de recurso de edgeHomeButtonOpensCustomURL
-description: Mostra o botão residencial; clicar no botão residencial carrega uma URL específica.
-localization_priority: Normal
+title: tipo de recurso edgeHomeButtonOpensCustomURL
+description: Mostrar o botão página inicial; clicar no botão página inicial carrega uma URL específica.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 06f73375772f53b546e7e9b758a7513366949326
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e83fd3dbb0961011584ef9d65e01c361ccf6a228
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29431315"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30143236"
 ---
-# <a name="edgehomebuttonopenscustomurl-resource-type"></a>tipo de recurso de edgeHomeButtonOpensCustomURL
+# <a name="edgehomebuttonopenscustomurl-resource-type"></a>tipo de recurso edgeHomeButtonOpensCustomURL
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Mostra o botão residencial; clicar no botão residencial carrega uma URL específica.
+Mostrar o botão página inicial; clicar no botão página inicial carrega uma URL específica.
 
 
 Herda de [edgeHomeButtonConfiguration](../resources/intune-deviceconfig-edgehomebuttonconfiguration.md)
@@ -25,7 +25,7 @@ Herda de [edgeHomeButtonConfiguration](../resources/intune-deviceconfig-edgehome
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|homeButtonCustomURL|String|A URL específica ao carregar.|
+|homeButtonCustomURL|String|A URL específica a ser carregada.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
