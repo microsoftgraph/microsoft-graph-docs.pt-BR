@@ -1,29 +1,29 @@
 ---
-title: tipo de enum hashAlgorithms
+title: tipo de enumeração hashAlgorithm
 description: Opções de algoritmo de hash.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c2c6890f0a6749095f11c86ff51a979447972aed
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 92788ec5afc3e3ddfbe89d847282ab5d5c74cc08
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425698"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30149718"
 ---
-# <a name="hashalgorithms-enum-type"></a><span data-ttu-id="94df0-103">tipo de enum hashAlgorithms</span><span class="sxs-lookup"><span data-stu-id="94df0-103">hashAlgorithms enum type</span></span>
+# <a name="hashalgorithms-enum-type"></a><span data-ttu-id="e8a06-103">tipo de enumeração hashAlgorithm</span><span class="sxs-lookup"><span data-stu-id="e8a06-103">hashAlgorithms enum type</span></span>
 
-> <span data-ttu-id="94df0-104">**Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações.</span><span class="sxs-lookup"><span data-stu-id="94df0-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="94df0-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="94df0-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="e8a06-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="e8a06-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="94df0-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.</span><span class="sxs-lookup"><span data-stu-id="94df0-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="e8a06-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="e8a06-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="94df0-107">Opções de algoritmo de hash.</span><span class="sxs-lookup"><span data-stu-id="94df0-107">Hash Algorithm Options.</span></span>
+<span data-ttu-id="e8a06-106">Opções de algoritmo de hash.</span><span class="sxs-lookup"><span data-stu-id="e8a06-106">Hash Algorithm Options.</span></span>
 
-## <a name="members"></a><span data-ttu-id="94df0-108">Membros</span><span class="sxs-lookup"><span data-stu-id="94df0-108">Members</span></span>
-|<span data-ttu-id="94df0-109">Membro</span><span class="sxs-lookup"><span data-stu-id="94df0-109">Member</span></span>|<span data-ttu-id="94df0-110">Valor</span><span class="sxs-lookup"><span data-stu-id="94df0-110">Value</span></span>|<span data-ttu-id="94df0-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="94df0-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="e8a06-107">Membros</span><span class="sxs-lookup"><span data-stu-id="e8a06-107">Members</span></span>
+|<span data-ttu-id="e8a06-108">Membro</span><span class="sxs-lookup"><span data-stu-id="e8a06-108">Member</span></span>|<span data-ttu-id="e8a06-109">Valor</span><span class="sxs-lookup"><span data-stu-id="e8a06-109">Value</span></span>|<span data-ttu-id="e8a06-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="e8a06-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="94df0-112">SHA1</span><span class="sxs-lookup"><span data-stu-id="94df0-112">sha1</span></span>|<span data-ttu-id="94df0-113">1</span><span class="sxs-lookup"><span data-stu-id="94df0-113">1</span></span>|<span data-ttu-id="94df0-114">Algoritmo de Hash SHA-1.</span><span class="sxs-lookup"><span data-stu-id="94df0-114">SHA-1 Hash Algorithm.</span></span>|
-|<span data-ttu-id="94df0-115">SHA2</span><span class="sxs-lookup"><span data-stu-id="94df0-115">sha2</span></span>|<span data-ttu-id="94df0-116">2</span><span class="sxs-lookup"><span data-stu-id="94df0-116">2</span></span>|<span data-ttu-id="94df0-117">Algoritmo de Hash SHA-2.</span><span class="sxs-lookup"><span data-stu-id="94df0-117">SHA-2 Hash Algorithm.</span></span>|
+|<span data-ttu-id="e8a06-111">SHA1</span><span class="sxs-lookup"><span data-stu-id="e8a06-111">sha1</span></span>|<span data-ttu-id="e8a06-112">1</span><span class="sxs-lookup"><span data-stu-id="e8a06-112">1</span></span>|<span data-ttu-id="e8a06-113">Algoritmo de hash SHA-1.</span><span class="sxs-lookup"><span data-stu-id="e8a06-113">SHA-1 Hash Algorithm.</span></span>|
+|<span data-ttu-id="e8a06-114">SHA2</span><span class="sxs-lookup"><span data-stu-id="e8a06-114">sha2</span></span>|<span data-ttu-id="e8a06-115">duas</span><span class="sxs-lookup"><span data-stu-id="e8a06-115">2</span></span>|<span data-ttu-id="e8a06-116">Algoritmo de hash SHA-2.</span><span class="sxs-lookup"><span data-stu-id="e8a06-116">SHA-2 Hash Algorithm.</span></span>|
 
 
 

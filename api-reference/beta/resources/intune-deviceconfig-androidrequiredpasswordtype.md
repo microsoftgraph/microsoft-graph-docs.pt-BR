@@ -1,35 +1,35 @@
 ---
-title: tipo de enum androidRequiredPasswordType
-description: Tipo de senha necessária Android.
-localization_priority: Normal
+title: tipo de enumeração androidRequiredPasswordType
+description: Tipo de senha exigido pelo Android.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eebc6b0ad6eed346927fd48a2dc1f82b5e529b28
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 1845656d43ec2a8f567506ed61b5ee3bc6d8a9ad
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29392910"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30151517"
 ---
-# <a name="androidrequiredpasswordtype-enum-type"></a><span data-ttu-id="dc2b5-103">tipo de enum androidRequiredPasswordType</span><span class="sxs-lookup"><span data-stu-id="dc2b5-103">androidRequiredPasswordType enum type</span></span>
+# <a name="androidrequiredpasswordtype-enum-type"></a><span data-ttu-id="34ba6-103">tipo de enumeração androidRequiredPasswordType</span><span class="sxs-lookup"><span data-stu-id="34ba6-103">androidRequiredPasswordType enum type</span></span>
 
-> <span data-ttu-id="dc2b5-104">**Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações.</span><span class="sxs-lookup"><span data-stu-id="dc2b5-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="dc2b5-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="dc2b5-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="34ba6-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="34ba6-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="dc2b5-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.</span><span class="sxs-lookup"><span data-stu-id="dc2b5-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="34ba6-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="34ba6-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="dc2b5-107">Tipo de senha necessária Android.</span><span class="sxs-lookup"><span data-stu-id="dc2b5-107">Android required password type.</span></span>
+<span data-ttu-id="34ba6-106">Tipo de senha exigido pelo Android.</span><span class="sxs-lookup"><span data-stu-id="34ba6-106">Android required password type.</span></span>
 
-## <a name="members"></a><span data-ttu-id="dc2b5-108">Membros</span><span class="sxs-lookup"><span data-stu-id="dc2b5-108">Members</span></span>
-|<span data-ttu-id="dc2b5-109">Membro</span><span class="sxs-lookup"><span data-stu-id="dc2b5-109">Member</span></span>|<span data-ttu-id="dc2b5-110">Valor</span><span class="sxs-lookup"><span data-stu-id="dc2b5-110">Value</span></span>|<span data-ttu-id="dc2b5-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="dc2b5-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="34ba6-107">Membros</span><span class="sxs-lookup"><span data-stu-id="34ba6-107">Members</span></span>
+|<span data-ttu-id="34ba6-108">Membro</span><span class="sxs-lookup"><span data-stu-id="34ba6-108">Member</span></span>|<span data-ttu-id="34ba6-109">Valor</span><span class="sxs-lookup"><span data-stu-id="34ba6-109">Value</span></span>|<span data-ttu-id="34ba6-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="34ba6-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="dc2b5-112">deviceDefault</span><span class="sxs-lookup"><span data-stu-id="dc2b5-112">deviceDefault</span></span>|<span data-ttu-id="dc2b5-113">0</span><span class="sxs-lookup"><span data-stu-id="dc2b5-113">0</span></span>|<span data-ttu-id="dc2b5-114">Valor de padrão de dispositivo, sem intenção.</span><span class="sxs-lookup"><span data-stu-id="dc2b5-114">Device default value, no intent.</span></span>|
-|<span data-ttu-id="dc2b5-115">alfabético</span><span class="sxs-lookup"><span data-stu-id="dc2b5-115">alphabetic</span></span>|<span data-ttu-id="dc2b5-116">1</span><span class="sxs-lookup"><span data-stu-id="dc2b5-116">1</span></span>|<span data-ttu-id="dc2b5-117">Senha alfabética necessária.</span><span class="sxs-lookup"><span data-stu-id="dc2b5-117">Alphabetic password required.</span></span>|
-|<span data-ttu-id="dc2b5-118">alfanumérico</span><span class="sxs-lookup"><span data-stu-id="dc2b5-118">alphanumeric</span></span>|<span data-ttu-id="dc2b5-119">2</span><span class="sxs-lookup"><span data-stu-id="dc2b5-119">2</span></span>|<span data-ttu-id="dc2b5-120">Senha alfanumérica necessária.</span><span class="sxs-lookup"><span data-stu-id="dc2b5-120">Alphanumeric password required.</span></span>|
-|<span data-ttu-id="dc2b5-121">alphanumericWithSymbols</span><span class="sxs-lookup"><span data-stu-id="dc2b5-121">alphanumericWithSymbols</span></span>|<span data-ttu-id="dc2b5-122">3</span><span class="sxs-lookup"><span data-stu-id="dc2b5-122">3</span></span>|<span data-ttu-id="dc2b5-123">Alfanumérico com senha de símbolos necessária.</span><span class="sxs-lookup"><span data-stu-id="dc2b5-123">Alphanumeric with symbols password required.</span></span>|
-|<span data-ttu-id="dc2b5-124">lowSecurityBiometric</span><span class="sxs-lookup"><span data-stu-id="dc2b5-124">lowSecurityBiometric</span></span>|<span data-ttu-id="dc2b5-125">4</span><span class="sxs-lookup"><span data-stu-id="dc2b5-125">4</span></span>|<span data-ttu-id="dc2b5-126">Biométrica baixa segurança com base em senha necessária.</span><span class="sxs-lookup"><span data-stu-id="dc2b5-126">Low security biometrics based password required.</span></span>|
-|<span data-ttu-id="dc2b5-127">numéricos</span><span class="sxs-lookup"><span data-stu-id="dc2b5-127">numeric</span></span>|<span data-ttu-id="dc2b5-128">5</span><span class="sxs-lookup"><span data-stu-id="dc2b5-128">5</span></span>|<span data-ttu-id="dc2b5-129">Senha numérica necessária.</span><span class="sxs-lookup"><span data-stu-id="dc2b5-129">Numeric password required.</span></span>|
-|<span data-ttu-id="dc2b5-130">numericComplex</span><span class="sxs-lookup"><span data-stu-id="dc2b5-130">numericComplex</span></span>|<span data-ttu-id="dc2b5-131">6</span><span class="sxs-lookup"><span data-stu-id="dc2b5-131">6</span></span>|<span data-ttu-id="dc2b5-132">Senha complexa numérica necessária.</span><span class="sxs-lookup"><span data-stu-id="dc2b5-132">Numeric complex password required.</span></span>|
-|<span data-ttu-id="dc2b5-133">qualquer</span><span class="sxs-lookup"><span data-stu-id="dc2b5-133">any</span></span>|<span data-ttu-id="dc2b5-134">7</span><span class="sxs-lookup"><span data-stu-id="dc2b5-134">7</span></span>|<span data-ttu-id="dc2b5-135">É necessária uma senha ou padrão e quaisquer é aceitável.</span><span class="sxs-lookup"><span data-stu-id="dc2b5-135">A password or pattern is required, and any is acceptable.</span></span>|
+|<span data-ttu-id="34ba6-111">deviceDefault</span><span class="sxs-lookup"><span data-stu-id="34ba6-111">deviceDefault</span></span>|<span data-ttu-id="34ba6-112">,0</span><span class="sxs-lookup"><span data-stu-id="34ba6-112">0</span></span>|<span data-ttu-id="34ba6-113">Valor padrão do dispositivo, sem intenção.</span><span class="sxs-lookup"><span data-stu-id="34ba6-113">Device default value, no intent.</span></span>|
+|<span data-ttu-id="34ba6-114">caracteres</span><span class="sxs-lookup"><span data-stu-id="34ba6-114">alphabetic</span></span>|<span data-ttu-id="34ba6-115">1</span><span class="sxs-lookup"><span data-stu-id="34ba6-115">1</span></span>|<span data-ttu-id="34ba6-116">Senha alfabética necessária.</span><span class="sxs-lookup"><span data-stu-id="34ba6-116">Alphabetic password required.</span></span>|
+|<span data-ttu-id="34ba6-117">tecla</span><span class="sxs-lookup"><span data-stu-id="34ba6-117">alphanumeric</span></span>|<span data-ttu-id="34ba6-118">duas</span><span class="sxs-lookup"><span data-stu-id="34ba6-118">2</span></span>|<span data-ttu-id="34ba6-119">Senha alfanumérica obrigatória.</span><span class="sxs-lookup"><span data-stu-id="34ba6-119">Alphanumeric password required.</span></span>|
+|<span data-ttu-id="34ba6-120">alphanumericWithSymbols</span><span class="sxs-lookup"><span data-stu-id="34ba6-120">alphanumericWithSymbols</span></span>|<span data-ttu-id="34ba6-121">3D</span><span class="sxs-lookup"><span data-stu-id="34ba6-121">3</span></span>|<span data-ttu-id="34ba6-122">Alfanumérica com símbolos de senha necessários.</span><span class="sxs-lookup"><span data-stu-id="34ba6-122">Alphanumeric with symbols password required.</span></span>|
+|<span data-ttu-id="34ba6-123">lowSecurityBiometric</span><span class="sxs-lookup"><span data-stu-id="34ba6-123">lowSecurityBiometric</span></span>|<span data-ttu-id="34ba6-124">quatro</span><span class="sxs-lookup"><span data-stu-id="34ba6-124">4</span></span>|<span data-ttu-id="34ba6-125">Senha com base em Biometria de segurança baixa necessária.</span><span class="sxs-lookup"><span data-stu-id="34ba6-125">Low security biometrics based password required.</span></span>|
+|<span data-ttu-id="34ba6-126">numéricos</span><span class="sxs-lookup"><span data-stu-id="34ba6-126">numeric</span></span>|<span data-ttu-id="34ba6-127">0,5</span><span class="sxs-lookup"><span data-stu-id="34ba6-127">5</span></span>|<span data-ttu-id="34ba6-128">Senha numérica obrigatória.</span><span class="sxs-lookup"><span data-stu-id="34ba6-128">Numeric password required.</span></span>|
+|<span data-ttu-id="34ba6-129">numericComplex</span><span class="sxs-lookup"><span data-stu-id="34ba6-129">numericComplex</span></span>|<span data-ttu-id="34ba6-130">6</span><span class="sxs-lookup"><span data-stu-id="34ba6-130">6</span></span>|<span data-ttu-id="34ba6-131">Senha numérica complexa obrigatória.</span><span class="sxs-lookup"><span data-stu-id="34ba6-131">Numeric complex password required.</span></span>|
+|<span data-ttu-id="34ba6-132">qualquer</span><span class="sxs-lookup"><span data-stu-id="34ba6-132">any</span></span>|<span data-ttu-id="34ba6-133">178</span><span class="sxs-lookup"><span data-stu-id="34ba6-133">7</span></span>|<span data-ttu-id="34ba6-134">Uma senha ou um padrão é necessário, e qualquer um é aceitável.</span><span class="sxs-lookup"><span data-stu-id="34ba6-134">A password or pattern is required, and any is acceptable.</span></span>|
 
 
 

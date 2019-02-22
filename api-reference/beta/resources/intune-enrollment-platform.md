@@ -1,33 +1,33 @@
 ---
-title: tipo de plataforma do enum
+title: tipo de enumeração de plataforma
 description: Ainda não documentado
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c5735f9ac4156ae3aa6657a23996228dd461242e
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: f07965ce3929a74d6596ed708cc7045437921a7a
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422786"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30148171"
 ---
-# <a name="platform-enum-type"></a><span data-ttu-id="34331-103">tipo de plataforma do enum</span><span class="sxs-lookup"><span data-stu-id="34331-103">platform enum type</span></span>
+# <a name="platform-enum-type"></a><span data-ttu-id="51de6-103">tipo de enumeração de plataforma</span><span class="sxs-lookup"><span data-stu-id="51de6-103">platform enum type</span></span>
 
-> <span data-ttu-id="34331-104">**Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações.</span><span class="sxs-lookup"><span data-stu-id="34331-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="34331-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="34331-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="51de6-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="51de6-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="34331-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.</span><span class="sxs-lookup"><span data-stu-id="34331-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="51de6-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="51de6-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="34331-107">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="34331-107">Not yet documented</span></span>
+<span data-ttu-id="51de6-106">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="51de6-106">Not yet documented</span></span>
 
-## <a name="members"></a><span data-ttu-id="34331-108">Membros</span><span class="sxs-lookup"><span data-stu-id="34331-108">Members</span></span>
-|<span data-ttu-id="34331-109">Membro</span><span class="sxs-lookup"><span data-stu-id="34331-109">Member</span></span>|<span data-ttu-id="34331-110">Valor</span><span class="sxs-lookup"><span data-stu-id="34331-110">Value</span></span>|<span data-ttu-id="34331-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="34331-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="51de6-107">Membros</span><span class="sxs-lookup"><span data-stu-id="51de6-107">Members</span></span>
+|<span data-ttu-id="51de6-108">Membro</span><span class="sxs-lookup"><span data-stu-id="51de6-108">Member</span></span>|<span data-ttu-id="51de6-109">Valor</span><span class="sxs-lookup"><span data-stu-id="51de6-109">Value</span></span>|<span data-ttu-id="51de6-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="51de6-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="34331-112">unknown</span><span class="sxs-lookup"><span data-stu-id="34331-112">unknown</span></span>|<span data-ttu-id="34331-113">0</span><span class="sxs-lookup"><span data-stu-id="34331-113">0</span></span>|<span data-ttu-id="34331-114">Plataforma de dispositivo desconhecido</span><span class="sxs-lookup"><span data-stu-id="34331-114">Unknown device platform</span></span>|
-|<span data-ttu-id="34331-115">IOS</span><span class="sxs-lookup"><span data-stu-id="34331-115">ios</span></span>|<span data-ttu-id="34331-116">1</span><span class="sxs-lookup"><span data-stu-id="34331-116">1</span></span>|<span data-ttu-id="34331-117">Plataforma do dispositivo IOS</span><span class="sxs-lookup"><span data-stu-id="34331-117">IOS device platform</span></span>|
-|<span data-ttu-id="34331-118">Android</span><span class="sxs-lookup"><span data-stu-id="34331-118">android</span></span>|<span data-ttu-id="34331-119">2</span><span class="sxs-lookup"><span data-stu-id="34331-119">2</span></span>|<span data-ttu-id="34331-120">Plataforma de dispositivo Android</span><span class="sxs-lookup"><span data-stu-id="34331-120">Android device platform</span></span>|
-|<span data-ttu-id="34331-121">Windows</span><span class="sxs-lookup"><span data-stu-id="34331-121">windows</span></span>|<span data-ttu-id="34331-122">3</span><span class="sxs-lookup"><span data-stu-id="34331-122">3</span></span>|<span data-ttu-id="34331-123">Plataforma de dispositivo do Windows</span><span class="sxs-lookup"><span data-stu-id="34331-123">Windows device platform</span></span>|
-|<span data-ttu-id="34331-124">windowsMobile</span><span class="sxs-lookup"><span data-stu-id="34331-124">windowsMobile</span></span>|<span data-ttu-id="34331-125">4</span><span class="sxs-lookup"><span data-stu-id="34331-125">4</span></span>|<span data-ttu-id="34331-126">Plataforma do dispositivo WindowsMobile</span><span class="sxs-lookup"><span data-stu-id="34331-126">WindowsMobile device platform</span></span>|
-|<span data-ttu-id="34331-127">macOS</span><span class="sxs-lookup"><span data-stu-id="34331-127">macOS</span></span>|<span data-ttu-id="34331-128">5</span><span class="sxs-lookup"><span data-stu-id="34331-128">5</span></span>|<span data-ttu-id="34331-129">Plataforma de dispositivo do Mac</span><span class="sxs-lookup"><span data-stu-id="34331-129">Mac device platform</span></span>|
+|<span data-ttu-id="51de6-111">unknown</span><span class="sxs-lookup"><span data-stu-id="51de6-111">unknown</span></span>|<span data-ttu-id="51de6-112">,0</span><span class="sxs-lookup"><span data-stu-id="51de6-112">0</span></span>|<span data-ttu-id="51de6-113">Plataforma de dispositivo desconhecida</span><span class="sxs-lookup"><span data-stu-id="51de6-113">Unknown device platform</span></span>|
+|<span data-ttu-id="51de6-114">emiti</span><span class="sxs-lookup"><span data-stu-id="51de6-114">ios</span></span>|<span data-ttu-id="51de6-115">1</span><span class="sxs-lookup"><span data-stu-id="51de6-115">1</span></span>|<span data-ttu-id="51de6-116">Plataforma de dispositivo IOS</span><span class="sxs-lookup"><span data-stu-id="51de6-116">IOS device platform</span></span>|
+|<span data-ttu-id="51de6-117">Android</span><span class="sxs-lookup"><span data-stu-id="51de6-117">android</span></span>|<span data-ttu-id="51de6-118">duas</span><span class="sxs-lookup"><span data-stu-id="51de6-118">2</span></span>|<span data-ttu-id="51de6-119">Plataforma do dispositivo Android</span><span class="sxs-lookup"><span data-stu-id="51de6-119">Android device platform</span></span>|
+|<span data-ttu-id="51de6-120">Windows</span><span class="sxs-lookup"><span data-stu-id="51de6-120">windows</span></span>|<span data-ttu-id="51de6-121">3D</span><span class="sxs-lookup"><span data-stu-id="51de6-121">3</span></span>|<span data-ttu-id="51de6-122">Plataforma de dispositivo do Windows</span><span class="sxs-lookup"><span data-stu-id="51de6-122">Windows device platform</span></span>|
+|<span data-ttu-id="51de6-123">windowsMobile</span><span class="sxs-lookup"><span data-stu-id="51de6-123">windowsMobile</span></span>|<span data-ttu-id="51de6-124">quatro</span><span class="sxs-lookup"><span data-stu-id="51de6-124">4</span></span>|<span data-ttu-id="51de6-125">Plataforma de dispositivo WindowsMobile</span><span class="sxs-lookup"><span data-stu-id="51de6-125">WindowsMobile device platform</span></span>|
+|<span data-ttu-id="51de6-126">macOS</span><span class="sxs-lookup"><span data-stu-id="51de6-126">macOS</span></span>|<span data-ttu-id="51de6-127">0,5</span><span class="sxs-lookup"><span data-stu-id="51de6-127">5</span></span>|<span data-ttu-id="51de6-128">Plataforma de dispositivo Mac</span><span class="sxs-lookup"><span data-stu-id="51de6-128">Mac device platform</span></span>|
 
 
 

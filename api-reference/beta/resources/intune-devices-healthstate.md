@@ -1,30 +1,30 @@
 ---
-title: tipo de enum healthState
+title: tipo de Enumeração HealthState
 description: Indica o estado de integridade do aplicativo de gerenciamento do Windows.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b9104c0e39e086f7cf8f417f11054221b6f30e8d
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 0cf4be1f307d855cf2189bca700d6102e446a80e
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422723"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30151671"
 ---
-# <a name="healthstate-enum-type"></a><span data-ttu-id="b8e0b-103">tipo de enum healthState</span><span class="sxs-lookup"><span data-stu-id="b8e0b-103">healthState enum type</span></span>
+# <a name="healthstate-enum-type"></a><span data-ttu-id="19d2a-103">tipo de Enumeração HealthState</span><span class="sxs-lookup"><span data-stu-id="19d2a-103">healthState enum type</span></span>
 
-> <span data-ttu-id="b8e0b-104">**Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações.</span><span class="sxs-lookup"><span data-stu-id="b8e0b-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="b8e0b-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="b8e0b-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="19d2a-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="19d2a-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="b8e0b-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.</span><span class="sxs-lookup"><span data-stu-id="b8e0b-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="19d2a-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="19d2a-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="b8e0b-107">Indica o estado de integridade do aplicativo de gerenciamento do Windows.</span><span class="sxs-lookup"><span data-stu-id="b8e0b-107">Indicates health state of the Windows management app.</span></span>
+<span data-ttu-id="19d2a-106">Indica o estado de integridade do aplicativo de gerenciamento do Windows.</span><span class="sxs-lookup"><span data-stu-id="19d2a-106">Indicates health state of the Windows management app.</span></span>
 
-## <a name="members"></a><span data-ttu-id="b8e0b-108">Membros</span><span class="sxs-lookup"><span data-stu-id="b8e0b-108">Members</span></span>
-|<span data-ttu-id="b8e0b-109">Membro</span><span class="sxs-lookup"><span data-stu-id="b8e0b-109">Member</span></span>|<span data-ttu-id="b8e0b-110">Valor</span><span class="sxs-lookup"><span data-stu-id="b8e0b-110">Value</span></span>|<span data-ttu-id="b8e0b-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="b8e0b-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="19d2a-107">Membros</span><span class="sxs-lookup"><span data-stu-id="19d2a-107">Members</span></span>
+|<span data-ttu-id="19d2a-108">Membro</span><span class="sxs-lookup"><span data-stu-id="19d2a-108">Member</span></span>|<span data-ttu-id="19d2a-109">Valor</span><span class="sxs-lookup"><span data-stu-id="19d2a-109">Value</span></span>|<span data-ttu-id="19d2a-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="19d2a-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="b8e0b-112">unknown</span><span class="sxs-lookup"><span data-stu-id="b8e0b-112">unknown</span></span>|<span data-ttu-id="b8e0b-113">0</span><span class="sxs-lookup"><span data-stu-id="b8e0b-113">0</span></span>|<span data-ttu-id="b8e0b-114">Estado desconhecido.</span><span class="sxs-lookup"><span data-stu-id="b8e0b-114">Unknown state.</span></span>|
-|<span data-ttu-id="b8e0b-115">Íntegro</span><span class="sxs-lookup"><span data-stu-id="b8e0b-115">healthy</span></span>|<span data-ttu-id="b8e0b-116">1</span><span class="sxs-lookup"><span data-stu-id="b8e0b-116">1</span></span>|<span data-ttu-id="b8e0b-117">Estado íntegro.</span><span class="sxs-lookup"><span data-stu-id="b8e0b-117">Healthy state.</span></span>|
-|<span data-ttu-id="b8e0b-118">não íntegro</span><span class="sxs-lookup"><span data-stu-id="b8e0b-118">unhealthy</span></span>|<span data-ttu-id="b8e0b-119">2</span><span class="sxs-lookup"><span data-stu-id="b8e0b-119">2</span></span>|<span data-ttu-id="b8e0b-120">Estado íntegro.</span><span class="sxs-lookup"><span data-stu-id="b8e0b-120">Unhealthy state.</span></span>|
+|<span data-ttu-id="19d2a-111">unknown</span><span class="sxs-lookup"><span data-stu-id="19d2a-111">unknown</span></span>|<span data-ttu-id="19d2a-112">,0</span><span class="sxs-lookup"><span data-stu-id="19d2a-112">0</span></span>|<span data-ttu-id="19d2a-113">Estado desconhecido.</span><span class="sxs-lookup"><span data-stu-id="19d2a-113">Unknown state.</span></span>|
+|<span data-ttu-id="19d2a-114">condições</span><span class="sxs-lookup"><span data-stu-id="19d2a-114">healthy</span></span>|<span data-ttu-id="19d2a-115">1</span><span class="sxs-lookup"><span data-stu-id="19d2a-115">1</span></span>|<span data-ttu-id="19d2a-116">Estado íntegro.</span><span class="sxs-lookup"><span data-stu-id="19d2a-116">Healthy state.</span></span>|
+|<span data-ttu-id="19d2a-117">íntegro</span><span class="sxs-lookup"><span data-stu-id="19d2a-117">unhealthy</span></span>|<span data-ttu-id="19d2a-118">duas</span><span class="sxs-lookup"><span data-stu-id="19d2a-118">2</span></span>|<span data-ttu-id="19d2a-119">Estado não íntegro.</span><span class="sxs-lookup"><span data-stu-id="19d2a-119">Unhealthy state.</span></span>|
 
 
 
