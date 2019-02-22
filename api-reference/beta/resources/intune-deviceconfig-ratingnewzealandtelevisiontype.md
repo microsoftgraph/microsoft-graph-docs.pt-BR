@@ -1,32 +1,32 @@
 ---
-title: tipo de enum ratingNewZealandTelevisionType
+title: tipo de enumeração ratingNewZealandTelevisionType
 description: Rótulos de classificação de conteúdo de TV na Nova Zelândia
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4030ce62a3ae37166c0f9f64d62e513db5a22baf
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 6a6f758007a7d964e443c576cbdca4a8e4bc0fee
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399105"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30144594"
 ---
-# <a name="ratingnewzealandtelevisiontype-enum-type"></a><span data-ttu-id="496e6-103">tipo de enum ratingNewZealandTelevisionType</span><span class="sxs-lookup"><span data-stu-id="496e6-103">ratingNewZealandTelevisionType enum type</span></span>
+# <a name="ratingnewzealandtelevisiontype-enum-type"></a><span data-ttu-id="88754-103">tipo de enumeração ratingNewZealandTelevisionType</span><span class="sxs-lookup"><span data-stu-id="88754-103">ratingNewZealandTelevisionType enum type</span></span>
 
-> <span data-ttu-id="496e6-104">**Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações.</span><span class="sxs-lookup"><span data-stu-id="496e6-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="496e6-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="496e6-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="88754-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="88754-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="496e6-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.</span><span class="sxs-lookup"><span data-stu-id="496e6-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="88754-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="88754-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="496e6-107">Rótulos de classificação de conteúdo de TV na Nova Zelândia</span><span class="sxs-lookup"><span data-stu-id="496e6-107">TV content rating labels in New Zealand</span></span>
+<span data-ttu-id="88754-106">Rótulos de classificação de conteúdo de TV na Nova Zelândia</span><span class="sxs-lookup"><span data-stu-id="88754-106">TV content rating labels in New Zealand</span></span>
 
-## <a name="members"></a><span data-ttu-id="496e6-108">Membros</span><span class="sxs-lookup"><span data-stu-id="496e6-108">Members</span></span>
-|<span data-ttu-id="496e6-109">Membro</span><span class="sxs-lookup"><span data-stu-id="496e6-109">Member</span></span>|<span data-ttu-id="496e6-110">Valor</span><span class="sxs-lookup"><span data-stu-id="496e6-110">Value</span></span>|<span data-ttu-id="496e6-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="496e6-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="88754-107">Membros</span><span class="sxs-lookup"><span data-stu-id="88754-107">Members</span></span>
+|<span data-ttu-id="88754-108">Membro</span><span class="sxs-lookup"><span data-stu-id="88754-108">Member</span></span>|<span data-ttu-id="88754-109">Valor</span><span class="sxs-lookup"><span data-stu-id="88754-109">Value</span></span>|<span data-ttu-id="88754-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="88754-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="496e6-112">allAllowed</span><span class="sxs-lookup"><span data-stu-id="496e6-112">allAllowed</span></span>|<span data-ttu-id="496e6-113">0</span><span class="sxs-lookup"><span data-stu-id="496e6-113">0</span></span>|<span data-ttu-id="496e6-114">Valor padrão, para permitir que todos os TV mostra conteúdo</span><span class="sxs-lookup"><span data-stu-id="496e6-114">Default value, allow all TV shows content</span></span>|
-|<span data-ttu-id="496e6-115">allBlocked</span><span class="sxs-lookup"><span data-stu-id="496e6-115">allBlocked</span></span>|<span data-ttu-id="496e6-116">1</span><span class="sxs-lookup"><span data-stu-id="496e6-116">1</span></span>|<span data-ttu-id="496e6-117">Não permitir que qualquer TV mostra conteúdo</span><span class="sxs-lookup"><span data-stu-id="496e6-117">Do not allow any TV shows content</span></span>|
-|<span data-ttu-id="496e6-118">geral</span><span class="sxs-lookup"><span data-stu-id="496e6-118">general</span></span>|<span data-ttu-id="496e6-119">2</span><span class="sxs-lookup"><span data-stu-id="496e6-119">2</span></span>|<span data-ttu-id="496e6-120">A classificação G exclui provavelmente danificar filhos em 14 de materiais</span><span class="sxs-lookup"><span data-stu-id="496e6-120">The G classification excludes materials likely to harm children under 14</span></span>|
-|<span data-ttu-id="496e6-121">parentalGuidance</span><span class="sxs-lookup"><span data-stu-id="496e6-121">parentalGuidance</span></span>|<span data-ttu-id="496e6-122">3</span><span class="sxs-lookup"><span data-stu-id="496e6-122">3</span></span>|<span data-ttu-id="496e6-123">A classificação de PGR incentiva pais e responsáveis para visualizadores mais jovens for o Supervisor</span><span class="sxs-lookup"><span data-stu-id="496e6-123">The PGR classification encourages parents and guardians to supervise younger viewers</span></span>|
-|<span data-ttu-id="496e6-124">adultos</span><span class="sxs-lookup"><span data-stu-id="496e6-124">adults</span></span>|<span data-ttu-id="496e6-125">4</span><span class="sxs-lookup"><span data-stu-id="496e6-125">4</span></span>|<span data-ttu-id="496e6-126">A classificação AO não é adequada para filhos</span><span class="sxs-lookup"><span data-stu-id="496e6-126">The AO classification is not suitable for children</span></span>|
+|<span data-ttu-id="88754-111">Permitido</span><span class="sxs-lookup"><span data-stu-id="88754-111">allAllowed</span></span>|<span data-ttu-id="88754-112">,0</span><span class="sxs-lookup"><span data-stu-id="88754-112">0</span></span>|<span data-ttu-id="88754-113">Valor padrão, permitir todos os programas de TV</span><span class="sxs-lookup"><span data-stu-id="88754-113">Default value, allow all TV shows content</span></span>|
+|<span data-ttu-id="88754-114">Bloqueado</span><span class="sxs-lookup"><span data-stu-id="88754-114">allBlocked</span></span>|<span data-ttu-id="88754-115">1</span><span class="sxs-lookup"><span data-stu-id="88754-115">1</span></span>|<span data-ttu-id="88754-116">Não permitir que qualquer TV mostre conteúdo</span><span class="sxs-lookup"><span data-stu-id="88754-116">Do not allow any TV shows content</span></span>|
+|<span data-ttu-id="88754-117">geral</span><span class="sxs-lookup"><span data-stu-id="88754-117">general</span></span>|<span data-ttu-id="88754-118">duas</span><span class="sxs-lookup"><span data-stu-id="88754-118">2</span></span>|<span data-ttu-id="88754-119">A classificação G exclui os materiais que provavelmente danificarão os filhos em 14</span><span class="sxs-lookup"><span data-stu-id="88754-119">The G classification excludes materials likely to harm children under 14</span></span>|
+|<span data-ttu-id="88754-120">parentalGuidance</span><span class="sxs-lookup"><span data-stu-id="88754-120">parentalGuidance</span></span>|<span data-ttu-id="88754-121">3D</span><span class="sxs-lookup"><span data-stu-id="88754-121">3</span></span>|<span data-ttu-id="88754-122">A classificação do PGR incentiva os pais e os guardiões a supervisionar os visualizadores mais jovens</span><span class="sxs-lookup"><span data-stu-id="88754-122">The PGR classification encourages parents and guardians to supervise younger viewers</span></span>|
+|<span data-ttu-id="88754-123">adultos</span><span class="sxs-lookup"><span data-stu-id="88754-123">adults</span></span>|<span data-ttu-id="88754-124">quatro</span><span class="sxs-lookup"><span data-stu-id="88754-124">4</span></span>|<span data-ttu-id="88754-125">A classificação ao ao não é adequada para crianças</span><span class="sxs-lookup"><span data-stu-id="88754-125">The AO classification is not suitable for children</span></span>|
 
 
 

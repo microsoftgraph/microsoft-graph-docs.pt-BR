@@ -1,30 +1,30 @@
 ---
-title: tipo de enum vpnTrafficRuleAppType
-description: Indica o tipo de aplicativo que uma regra de tráfego VPN está associada.
-localization_priority: Normal
+title: tipo de enumeração vpnTrafficRuleAppType
+description: Indica o tipo de aplicativo ao qual uma regra de tráfego VPN está associada.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 061cb5701830939576f5b9a649c73b4d44eada18
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: eb8be06a43c64dcb766da479414fcc437ee49cb9
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29396018"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30140527"
 ---
-# <a name="vpntrafficruleapptype-enum-type"></a><span data-ttu-id="505d2-103">tipo de enum vpnTrafficRuleAppType</span><span class="sxs-lookup"><span data-stu-id="505d2-103">vpnTrafficRuleAppType enum type</span></span>
+# <a name="vpntrafficruleapptype-enum-type"></a><span data-ttu-id="ef157-103">tipo de enumeração vpnTrafficRuleAppType</span><span class="sxs-lookup"><span data-stu-id="ef157-103">vpnTrafficRuleAppType enum type</span></span>
 
-> <span data-ttu-id="505d2-104">**Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações.</span><span class="sxs-lookup"><span data-stu-id="505d2-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="505d2-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="505d2-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="ef157-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="ef157-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="505d2-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.</span><span class="sxs-lookup"><span data-stu-id="505d2-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="ef157-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="ef157-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="505d2-107">Indica o tipo de aplicativo que uma regra de tráfego VPN está associada.</span><span class="sxs-lookup"><span data-stu-id="505d2-107">Indicates the type of app that a VPN traffic rule is associated with.</span></span>
+<span data-ttu-id="ef157-106">Indica o tipo de aplicativo ao qual uma regra de tráfego VPN está associada.</span><span class="sxs-lookup"><span data-stu-id="ef157-106">Indicates the type of app that a VPN traffic rule is associated with.</span></span>
 
-## <a name="members"></a><span data-ttu-id="505d2-108">Membros</span><span class="sxs-lookup"><span data-stu-id="505d2-108">Members</span></span>
-|<span data-ttu-id="505d2-109">Membro</span><span class="sxs-lookup"><span data-stu-id="505d2-109">Member</span></span>|<span data-ttu-id="505d2-110">Valor</span><span class="sxs-lookup"><span data-stu-id="505d2-110">Value</span></span>|<span data-ttu-id="505d2-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="505d2-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="ef157-107">Membros</span><span class="sxs-lookup"><span data-stu-id="ef157-107">Members</span></span>
+|<span data-ttu-id="ef157-108">Membro</span><span class="sxs-lookup"><span data-stu-id="ef157-108">Member</span></span>|<span data-ttu-id="ef157-109">Valor</span><span class="sxs-lookup"><span data-stu-id="ef157-109">Value</span></span>|<span data-ttu-id="ef157-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="ef157-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="505d2-112">none</span><span class="sxs-lookup"><span data-stu-id="505d2-112">none</span></span>|<span data-ttu-id="505d2-113">0</span><span class="sxs-lookup"><span data-stu-id="505d2-113">0</span></span>|<span data-ttu-id="505d2-114">A regra de tráfego não está associada um aplicativo.</span><span class="sxs-lookup"><span data-stu-id="505d2-114">The traffic rule is not associated with an app.</span></span>|
-|<span data-ttu-id="505d2-115">área de trabalho</span><span class="sxs-lookup"><span data-stu-id="505d2-115">desktop</span></span>|<span data-ttu-id="505d2-116">1</span><span class="sxs-lookup"><span data-stu-id="505d2-116">1</span></span>|<span data-ttu-id="505d2-117">A regra de tráfego é associada um aplicativo de área de trabalho.</span><span class="sxs-lookup"><span data-stu-id="505d2-117">The traffic rule is associated with a desktop app.</span></span>|
-|<span data-ttu-id="505d2-118">universal</span><span class="sxs-lookup"><span data-stu-id="505d2-118">universal</span></span>|<span data-ttu-id="505d2-119">2</span><span class="sxs-lookup"><span data-stu-id="505d2-119">2</span></span>|<span data-ttu-id="505d2-120">A regra de tráfego é associada um aplicativo Universal.</span><span class="sxs-lookup"><span data-stu-id="505d2-120">The traffic rule is associated with a Universal app.</span></span>|
+|<span data-ttu-id="ef157-111">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="ef157-111">none</span></span>|<span data-ttu-id="ef157-112">,0</span><span class="sxs-lookup"><span data-stu-id="ef157-112">0</span></span>|<span data-ttu-id="ef157-113">A regra de tráfego não está associada a um aplicativo.</span><span class="sxs-lookup"><span data-stu-id="ef157-113">The traffic rule is not associated with an app.</span></span>|
+|<span data-ttu-id="ef157-114">placa</span><span class="sxs-lookup"><span data-stu-id="ef157-114">desktop</span></span>|<span data-ttu-id="ef157-115">1</span><span class="sxs-lookup"><span data-stu-id="ef157-115">1</span></span>|<span data-ttu-id="ef157-116">A regra de tráfego é associada a um aplicativo de área de trabalho.</span><span class="sxs-lookup"><span data-stu-id="ef157-116">The traffic rule is associated with a desktop app.</span></span>|
+|<span data-ttu-id="ef157-117">UTC</span><span class="sxs-lookup"><span data-stu-id="ef157-117">universal</span></span>|<span data-ttu-id="ef157-118">duas</span><span class="sxs-lookup"><span data-stu-id="ef157-118">2</span></span>|<span data-ttu-id="ef157-119">A regra de tráfego é associada a um aplicativo universal.</span><span class="sxs-lookup"><span data-stu-id="ef157-119">The traffic rule is associated with a Universal app.</span></span>|
 
 
 

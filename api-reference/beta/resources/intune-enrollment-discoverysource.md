@@ -1,30 +1,30 @@
 ---
-title: tipo de enum discoverySource
+title: tipo de enumeração Discovery
 description: Ainda não documentado
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b15dfeaf06058323c1b74e5c831f89b11e2e8085
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 1999bfce9fa7057e133fa83f13ee5440d42f96b2
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29405678"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30140499"
 ---
-# <a name="discoverysource-enum-type"></a><span data-ttu-id="cdd48-103">tipo de enum discoverySource</span><span class="sxs-lookup"><span data-stu-id="cdd48-103">discoverySource enum type</span></span>
+# <a name="discoverysource-enum-type"></a><span data-ttu-id="9a07e-103">tipo de enumeração Discovery</span><span class="sxs-lookup"><span data-stu-id="9a07e-103">discoverySource enum type</span></span>
 
-> <span data-ttu-id="cdd48-104">**Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações.</span><span class="sxs-lookup"><span data-stu-id="cdd48-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="cdd48-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="cdd48-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="9a07e-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="9a07e-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="cdd48-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.</span><span class="sxs-lookup"><span data-stu-id="cdd48-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="9a07e-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="9a07e-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="cdd48-107">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="cdd48-107">Not yet documented</span></span>
+<span data-ttu-id="9a07e-106">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="9a07e-106">Not yet documented</span></span>
 
-## <a name="members"></a><span data-ttu-id="cdd48-108">Membros</span><span class="sxs-lookup"><span data-stu-id="cdd48-108">Members</span></span>
-|<span data-ttu-id="cdd48-109">Membro</span><span class="sxs-lookup"><span data-stu-id="cdd48-109">Member</span></span>|<span data-ttu-id="cdd48-110">Valor</span><span class="sxs-lookup"><span data-stu-id="cdd48-110">Value</span></span>|<span data-ttu-id="cdd48-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="cdd48-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="9a07e-107">Membros</span><span class="sxs-lookup"><span data-stu-id="9a07e-107">Members</span></span>
+|<span data-ttu-id="9a07e-108">Membro</span><span class="sxs-lookup"><span data-stu-id="9a07e-108">Member</span></span>|<span data-ttu-id="9a07e-109">Valor</span><span class="sxs-lookup"><span data-stu-id="9a07e-109">Value</span></span>|<span data-ttu-id="9a07e-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="9a07e-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="cdd48-112">unknown</span><span class="sxs-lookup"><span data-stu-id="cdd48-112">unknown</span></span>|<span data-ttu-id="cdd48-113">0</span><span class="sxs-lookup"><span data-stu-id="cdd48-113">0</span></span>|<span data-ttu-id="cdd48-114">DiscoverySource é desconhecido.</span><span class="sxs-lookup"><span data-stu-id="cdd48-114">DiscoverySource is Unknown.</span></span>|
-|<span data-ttu-id="cdd48-115">adminImport</span><span class="sxs-lookup"><span data-stu-id="cdd48-115">adminImport</span></span>|<span data-ttu-id="cdd48-116">2</span><span class="sxs-lookup"><span data-stu-id="cdd48-116">2</span></span>|<span data-ttu-id="cdd48-117">Dispositivo é importado pelo administrador.</span><span class="sxs-lookup"><span data-stu-id="cdd48-117">Device is imported by admin.</span></span>|
-|<span data-ttu-id="cdd48-118">deviceEnrollmentProgram</span><span class="sxs-lookup"><span data-stu-id="cdd48-118">deviceEnrollmentProgram</span></span>|<span data-ttu-id="cdd48-119">4</span><span class="sxs-lookup"><span data-stu-id="cdd48-119">4</span></span>|<span data-ttu-id="cdd48-120">Dispositivo é adicionado pelo programa de inscrição de dispositivo do Apple (Dep).</span><span class="sxs-lookup"><span data-stu-id="cdd48-120">Device is added by Apple device enrollment program (Dep).</span></span>|
+|<span data-ttu-id="9a07e-111">unknown</span><span class="sxs-lookup"><span data-stu-id="9a07e-111">unknown</span></span>|<span data-ttu-id="9a07e-112">,0</span><span class="sxs-lookup"><span data-stu-id="9a07e-112">0</span></span>|<span data-ttu-id="9a07e-113">O Discovery é desconhecido.</span><span class="sxs-lookup"><span data-stu-id="9a07e-113">DiscoverySource is Unknown.</span></span>|
+|<span data-ttu-id="9a07e-114">adminImport</span><span class="sxs-lookup"><span data-stu-id="9a07e-114">adminImport</span></span>|<span data-ttu-id="9a07e-115">duas</span><span class="sxs-lookup"><span data-stu-id="9a07e-115">2</span></span>|<span data-ttu-id="9a07e-116">O dispositivo é importado por administrador.</span><span class="sxs-lookup"><span data-stu-id="9a07e-116">Device is imported by admin.</span></span>|
+|<span data-ttu-id="9a07e-117">deviceEnrollmentProgram</span><span class="sxs-lookup"><span data-stu-id="9a07e-117">deviceEnrollmentProgram</span></span>|<span data-ttu-id="9a07e-118">quatro</span><span class="sxs-lookup"><span data-stu-id="9a07e-118">4</span></span>|<span data-ttu-id="9a07e-119">O dispositivo é adicionado pelo programa de registro de dispositivo (DEP) da Apple.</span><span class="sxs-lookup"><span data-stu-id="9a07e-119">Device is added by Apple device enrollment program (Dep).</span></span>|
 
 
 

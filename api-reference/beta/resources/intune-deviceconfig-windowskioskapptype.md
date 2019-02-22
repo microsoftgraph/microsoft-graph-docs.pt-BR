@@ -1,31 +1,31 @@
 ---
-title: tipo de enum windowsKioskAppType
-description: O tipo de aplicativo de quiosque do Windows.
-localization_priority: Normal
+title: tipo de enumeração windowsKioskAppType
+description: O tipo de aplicativo Windows quiosque.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 909a6a4aee9eec4c74a5f1c61f7514cbc429ed05
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: d61e5c9096c9452a5bc52b8716bee1ed3d79fb4a
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29429202"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30143376"
 ---
-# <a name="windowskioskapptype-enum-type"></a><span data-ttu-id="834dc-103">tipo de enum windowsKioskAppType</span><span class="sxs-lookup"><span data-stu-id="834dc-103">windowsKioskAppType enum type</span></span>
+# <a name="windowskioskapptype-enum-type"></a><span data-ttu-id="d5d5e-103">tipo de enumeração windowsKioskAppType</span><span class="sxs-lookup"><span data-stu-id="d5d5e-103">windowsKioskAppType enum type</span></span>
 
-> <span data-ttu-id="834dc-104">**Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações.</span><span class="sxs-lookup"><span data-stu-id="834dc-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="834dc-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="834dc-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="d5d5e-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="d5d5e-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="834dc-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.</span><span class="sxs-lookup"><span data-stu-id="834dc-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="d5d5e-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="d5d5e-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="834dc-107">O tipo de aplicativo de quiosque do Windows.</span><span class="sxs-lookup"><span data-stu-id="834dc-107">The type of Windows kiosk app.</span></span>
+<span data-ttu-id="d5d5e-106">O tipo de aplicativo Windows quiosque.</span><span class="sxs-lookup"><span data-stu-id="d5d5e-106">The type of Windows kiosk app.</span></span>
 
-## <a name="members"></a><span data-ttu-id="834dc-108">Membros</span><span class="sxs-lookup"><span data-stu-id="834dc-108">Members</span></span>
-|<span data-ttu-id="834dc-109">Membro</span><span class="sxs-lookup"><span data-stu-id="834dc-109">Member</span></span>|<span data-ttu-id="834dc-110">Valor</span><span class="sxs-lookup"><span data-stu-id="834dc-110">Value</span></span>|<span data-ttu-id="834dc-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="834dc-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="d5d5e-107">Membros</span><span class="sxs-lookup"><span data-stu-id="d5d5e-107">Members</span></span>
+|<span data-ttu-id="d5d5e-108">Membro</span><span class="sxs-lookup"><span data-stu-id="d5d5e-108">Member</span></span>|<span data-ttu-id="d5d5e-109">Valor</span><span class="sxs-lookup"><span data-stu-id="d5d5e-109">Value</span></span>|<span data-ttu-id="d5d5e-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="d5d5e-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="834dc-112">unknown</span><span class="sxs-lookup"><span data-stu-id="834dc-112">unknown</span></span>|<span data-ttu-id="834dc-113">0</span><span class="sxs-lookup"><span data-stu-id="834dc-113">0</span></span>|<span data-ttu-id="834dc-114">Desconhecido.</span><span class="sxs-lookup"><span data-stu-id="834dc-114">Unknown.</span></span>|
-|<span data-ttu-id="834dc-115">repositório</span><span class="sxs-lookup"><span data-stu-id="834dc-115">store</span></span>|<span data-ttu-id="834dc-116">1</span><span class="sxs-lookup"><span data-stu-id="834dc-116">1</span></span>|<span data-ttu-id="834dc-117">Aplicativo de repositório.</span><span class="sxs-lookup"><span data-stu-id="834dc-117">Store App.</span></span>|
-|<span data-ttu-id="834dc-118">área de trabalho</span><span class="sxs-lookup"><span data-stu-id="834dc-118">desktop</span></span>|<span data-ttu-id="834dc-119">2</span><span class="sxs-lookup"><span data-stu-id="834dc-119">2</span></span>|<span data-ttu-id="834dc-120">Aplicativo de área de trabalho.</span><span class="sxs-lookup"><span data-stu-id="834dc-120">Desktop App.</span></span>|
-|<span data-ttu-id="834dc-121">aumId</span><span class="sxs-lookup"><span data-stu-id="834dc-121">aumId</span></span>|<span data-ttu-id="834dc-122">3</span><span class="sxs-lookup"><span data-stu-id="834dc-122">3</span></span>|<span data-ttu-id="834dc-123">Entrada por AUMID.</span><span class="sxs-lookup"><span data-stu-id="834dc-123">Input by AUMID.</span></span>|
+|<span data-ttu-id="d5d5e-111">unknown</span><span class="sxs-lookup"><span data-stu-id="d5d5e-111">unknown</span></span>|<span data-ttu-id="d5d5e-112">,0</span><span class="sxs-lookup"><span data-stu-id="d5d5e-112">0</span></span>|<span data-ttu-id="d5d5e-113">Unknown.</span><span class="sxs-lookup"><span data-stu-id="d5d5e-113">Unknown.</span></span>|
+|<span data-ttu-id="d5d5e-114">Guarde</span><span class="sxs-lookup"><span data-stu-id="d5d5e-114">store</span></span>|<span data-ttu-id="d5d5e-115">1</span><span class="sxs-lookup"><span data-stu-id="d5d5e-115">1</span></span>|<span data-ttu-id="d5d5e-116">Aplicativo Store.</span><span class="sxs-lookup"><span data-stu-id="d5d5e-116">Store App.</span></span>|
+|<span data-ttu-id="d5d5e-117">placa</span><span class="sxs-lookup"><span data-stu-id="d5d5e-117">desktop</span></span>|<span data-ttu-id="d5d5e-118">duas</span><span class="sxs-lookup"><span data-stu-id="d5d5e-118">2</span></span>|<span data-ttu-id="d5d5e-119">Aplicativo da área de trabalho.</span><span class="sxs-lookup"><span data-stu-id="d5d5e-119">Desktop App.</span></span>|
+|<span data-ttu-id="d5d5e-120">aumId</span><span class="sxs-lookup"><span data-stu-id="d5d5e-120">aumId</span></span>|<span data-ttu-id="d5d5e-121">3D</span><span class="sxs-lookup"><span data-stu-id="d5d5e-121">3</span></span>|<span data-ttu-id="d5d5e-122">Entrada por AUMID.</span><span class="sxs-lookup"><span data-stu-id="d5d5e-122">Input by AUMID.</span></span>|
 
 
 

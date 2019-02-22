@@ -1,31 +1,31 @@
 ---
-title: tipo de enum androidManagedStoreAccountEnrollmentTarget
-description: Android para direcionamento de tipo para a conta de gerenciamento de dispositivos de trabalho
-localization_priority: Normal
+title: tipo de enumeração androidManagedStoreAccountEnrollmentTarget
+description: Tipo de direcionamento de gerenciamento de dispositivo do Android for Work para a conta
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9401953e2444dde72344bbfddd77415ba4339c82
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 038753c16fab1eba3d8d181a1e33fa94aaf7a8bd
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399063"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30139505"
 ---
-# <a name="androidmanagedstoreaccountenrollmenttarget-enum-type"></a><span data-ttu-id="6ccd8-103">tipo de enum androidManagedStoreAccountEnrollmentTarget</span><span class="sxs-lookup"><span data-stu-id="6ccd8-103">androidManagedStoreAccountEnrollmentTarget enum type</span></span>
+# <a name="androidmanagedstoreaccountenrollmenttarget-enum-type"></a><span data-ttu-id="09735-103">tipo de enumeração androidManagedStoreAccountEnrollmentTarget</span><span class="sxs-lookup"><span data-stu-id="09735-103">androidManagedStoreAccountEnrollmentTarget enum type</span></span>
 
-> <span data-ttu-id="6ccd8-104">**Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações.</span><span class="sxs-lookup"><span data-stu-id="6ccd8-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="6ccd8-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="6ccd8-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="09735-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="09735-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="6ccd8-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.</span><span class="sxs-lookup"><span data-stu-id="6ccd8-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="09735-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="09735-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="6ccd8-107">Android para direcionamento de tipo para a conta de gerenciamento de dispositivos de trabalho</span><span class="sxs-lookup"><span data-stu-id="6ccd8-107">Android for Work device management targeting type for the account</span></span>
+<span data-ttu-id="09735-106">Tipo de direcionamento de gerenciamento de dispositivo do Android for Work para a conta</span><span class="sxs-lookup"><span data-stu-id="09735-106">Android for Work device management targeting type for the account</span></span>
 
-## <a name="members"></a><span data-ttu-id="6ccd8-108">Membros</span><span class="sxs-lookup"><span data-stu-id="6ccd8-108">Members</span></span>
-|<span data-ttu-id="6ccd8-109">Membro</span><span class="sxs-lookup"><span data-stu-id="6ccd8-109">Member</span></span>|<span data-ttu-id="6ccd8-110">Valor</span><span class="sxs-lookup"><span data-stu-id="6ccd8-110">Value</span></span>|<span data-ttu-id="6ccd8-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="6ccd8-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="09735-107">Membros</span><span class="sxs-lookup"><span data-stu-id="09735-107">Members</span></span>
+|<span data-ttu-id="09735-108">Membro</span><span class="sxs-lookup"><span data-stu-id="09735-108">Member</span></span>|<span data-ttu-id="09735-109">Valor</span><span class="sxs-lookup"><span data-stu-id="09735-109">Value</span></span>|<span data-ttu-id="09735-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="09735-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="6ccd8-112">none</span><span class="sxs-lookup"><span data-stu-id="6ccd8-112">none</span></span>|<span data-ttu-id="6ccd8-113">0</span><span class="sxs-lookup"><span data-stu-id="6ccd8-113">0</span></span>|<span data-ttu-id="6ccd8-114">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="6ccd8-114">Not yet documented</span></span>|
-|<span data-ttu-id="6ccd8-115">todos os</span><span class="sxs-lookup"><span data-stu-id="6ccd8-115">all</span></span>|<span data-ttu-id="6ccd8-116">1</span><span class="sxs-lookup"><span data-stu-id="6ccd8-116">1</span></span>|<span data-ttu-id="6ccd8-117">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="6ccd8-117">Not yet documented</span></span>|
-|<span data-ttu-id="6ccd8-118">direcionado</span><span class="sxs-lookup"><span data-stu-id="6ccd8-118">targeted</span></span>|<span data-ttu-id="6ccd8-119">2</span><span class="sxs-lookup"><span data-stu-id="6ccd8-119">2</span></span>|<span data-ttu-id="6ccd8-120">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="6ccd8-120">Not yet documented</span></span>|
-|<span data-ttu-id="6ccd8-121">targetedAsEnrollmentRestrictions</span><span class="sxs-lookup"><span data-stu-id="6ccd8-121">targetedAsEnrollmentRestrictions</span></span>|<span data-ttu-id="6ccd8-122">3</span><span class="sxs-lookup"><span data-stu-id="6ccd8-122">3</span></span>|<span data-ttu-id="6ccd8-123">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="6ccd8-123">Not yet documented</span></span>|
+|<span data-ttu-id="09735-111">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="09735-111">none</span></span>|<span data-ttu-id="09735-112">,0</span><span class="sxs-lookup"><span data-stu-id="09735-112">0</span></span>|<span data-ttu-id="09735-113">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="09735-113">Not yet documented</span></span>|
+|<span data-ttu-id="09735-114">todos os</span><span class="sxs-lookup"><span data-stu-id="09735-114">all</span></span>|<span data-ttu-id="09735-115">1</span><span class="sxs-lookup"><span data-stu-id="09735-115">1</span></span>|<span data-ttu-id="09735-116">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="09735-116">Not yet documented</span></span>|
+|<span data-ttu-id="09735-117">visa</span><span class="sxs-lookup"><span data-stu-id="09735-117">targeted</span></span>|<span data-ttu-id="09735-118">duas</span><span class="sxs-lookup"><span data-stu-id="09735-118">2</span></span>|<span data-ttu-id="09735-119">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="09735-119">Not yet documented</span></span>|
+|<span data-ttu-id="09735-120">targetedAsEnrollmentRestrictions</span><span class="sxs-lookup"><span data-stu-id="09735-120">targetedAsEnrollmentRestrictions</span></span>|<span data-ttu-id="09735-121">3D</span><span class="sxs-lookup"><span data-stu-id="09735-121">3</span></span>|<span data-ttu-id="09735-122">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="09735-122">Not yet documented</span></span>|
 
 
 

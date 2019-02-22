@@ -1,39 +1,39 @@
 ---
 title: Tipo de recurso windowsDeviceADAccount
 description: Ainda não documentado
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c54811df35714d09a4c29e40fb8f3b2cfbe86ce7
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 9120c7722f62924e4a4ad407b3aac2ba4064b358
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29423927"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30140422"
 ---
-# <a name="windowsdeviceadaccount-resource-type"></a><span data-ttu-id="4d874-103">Tipo de recurso windowsDeviceADAccount</span><span class="sxs-lookup"><span data-stu-id="4d874-103">windowsDeviceADAccount resource type</span></span>
+# <a name="windowsdeviceadaccount-resource-type"></a><span data-ttu-id="a5181-103">Tipo de recurso windowsDeviceADAccount</span><span class="sxs-lookup"><span data-stu-id="a5181-103">windowsDeviceADAccount resource type</span></span>
 
-> <span data-ttu-id="4d874-104">**Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações.</span><span class="sxs-lookup"><span data-stu-id="4d874-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="4d874-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="4d874-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="a5181-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="a5181-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="4d874-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.</span><span class="sxs-lookup"><span data-stu-id="4d874-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="a5181-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="a5181-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="4d874-107">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="4d874-107">Not yet documented</span></span>
+<span data-ttu-id="a5181-106">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="a5181-106">Not yet documented</span></span>
 
 
-<span data-ttu-id="4d874-108">Herda de [windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md)</span><span class="sxs-lookup"><span data-stu-id="4d874-108">Inherits from [windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md)</span></span>
+<span data-ttu-id="a5181-107">Herda de [windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md)</span><span class="sxs-lookup"><span data-stu-id="a5181-107">Inherits from [windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="4d874-109">Propriedades</span><span class="sxs-lookup"><span data-stu-id="4d874-109">Properties</span></span>
-|<span data-ttu-id="4d874-110">Propriedade</span><span class="sxs-lookup"><span data-stu-id="4d874-110">Property</span></span>|<span data-ttu-id="4d874-111">Tipo</span><span class="sxs-lookup"><span data-stu-id="4d874-111">Type</span></span>|<span data-ttu-id="4d874-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="4d874-112">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="a5181-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="a5181-108">Properties</span></span>
+|<span data-ttu-id="a5181-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="a5181-109">Property</span></span>|<span data-ttu-id="a5181-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="a5181-110">Type</span></span>|<span data-ttu-id="a5181-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="a5181-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="4d874-113">password</span><span class="sxs-lookup"><span data-stu-id="4d874-113">password</span></span>|<span data-ttu-id="4d874-114">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="4d874-114">String</span></span>|<span data-ttu-id="4d874-115">Ainda não documentado. Herda de [windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md)</span><span class="sxs-lookup"><span data-stu-id="4d874-115">Not yet documented Inherited from [windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md)</span></span>|
-|<span data-ttu-id="4d874-116">domainName</span><span class="sxs-lookup"><span data-stu-id="4d874-116">domainName</span></span>|<span data-ttu-id="4d874-117">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="4d874-117">String</span></span>|<span data-ttu-id="4d874-118">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="4d874-118">Not yet documented</span></span>|
-|<span data-ttu-id="4d874-119">userName</span><span class="sxs-lookup"><span data-stu-id="4d874-119">userName</span></span>|<span data-ttu-id="4d874-120">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="4d874-120">String</span></span>|<span data-ttu-id="4d874-121">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="4d874-121">Not yet documented</span></span>|
+|<span data-ttu-id="a5181-112">password</span><span class="sxs-lookup"><span data-stu-id="a5181-112">password</span></span>|<span data-ttu-id="a5181-113">String</span><span class="sxs-lookup"><span data-stu-id="a5181-113">String</span></span>|<span data-ttu-id="a5181-114">Ainda não documentado. Herda de [windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md)</span><span class="sxs-lookup"><span data-stu-id="a5181-114">Not yet documented Inherited from [windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md)</span></span>|
+|<span data-ttu-id="a5181-115">domainName</span><span class="sxs-lookup"><span data-stu-id="a5181-115">domainName</span></span>|<span data-ttu-id="a5181-116">String</span><span class="sxs-lookup"><span data-stu-id="a5181-116">String</span></span>|<span data-ttu-id="a5181-117">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="a5181-117">Not yet documented</span></span>|
+|<span data-ttu-id="a5181-118">userName</span><span class="sxs-lookup"><span data-stu-id="a5181-118">userName</span></span>|<span data-ttu-id="a5181-119">String</span><span class="sxs-lookup"><span data-stu-id="a5181-119">String</span></span>|<span data-ttu-id="a5181-120">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="a5181-120">Not yet documented</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="4d874-122">Relações</span><span class="sxs-lookup"><span data-stu-id="4d874-122">Relationships</span></span>
-<span data-ttu-id="4d874-123">Nenhum</span><span class="sxs-lookup"><span data-stu-id="4d874-123">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="a5181-121">Relações</span><span class="sxs-lookup"><span data-stu-id="a5181-121">Relationships</span></span>
+<span data-ttu-id="a5181-122">Nenhum</span><span class="sxs-lookup"><span data-stu-id="a5181-122">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="4d874-124">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="4d874-124">JSON Representation</span></span>
-<span data-ttu-id="4d874-125">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="4d874-125">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="a5181-123">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="a5181-123">JSON Representation</span></span>
+<span data-ttu-id="a5181-124">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="a5181-124">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsDeviceADAccount"
