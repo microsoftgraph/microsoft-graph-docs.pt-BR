@@ -1,31 +1,31 @@
 ---
-title: tipo de enum macOSGatekeeperAppSources
-description: Opções de fonte do aplicativo para macOS Gatekeeper.
-localization_priority: Normal
+title: tipo de enumeração macOSGatekeeperAppSources
+description: Opções de origem do aplicativo para gatekeeper do macOS.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 18ab6884d211faccb81e93a40ee91f742d03475f
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: f3e43505a745e87e52f2f1c12a5cc5ff08825c09
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29394387"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30166203"
 ---
-# <a name="macosgatekeeperappsources-enum-type"></a><span data-ttu-id="18e23-103">tipo de enum macOSGatekeeperAppSources</span><span class="sxs-lookup"><span data-stu-id="18e23-103">macOSGatekeeperAppSources enum type</span></span>
+# <a name="macosgatekeeperappsources-enum-type"></a><span data-ttu-id="f5dda-103">tipo de enumeração macOSGatekeeperAppSources</span><span class="sxs-lookup"><span data-stu-id="f5dda-103">macOSGatekeeperAppSources enum type</span></span>
 
-> <span data-ttu-id="18e23-104">**Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações.</span><span class="sxs-lookup"><span data-stu-id="18e23-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="18e23-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="18e23-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="f5dda-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="f5dda-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="18e23-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.</span><span class="sxs-lookup"><span data-stu-id="18e23-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="f5dda-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="f5dda-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="18e23-107">Opções de fonte do aplicativo para macOS Gatekeeper.</span><span class="sxs-lookup"><span data-stu-id="18e23-107">App source options for macOS Gatekeeper.</span></span>
+<span data-ttu-id="f5dda-106">Opções de origem do aplicativo para gatekeeper do macOS.</span><span class="sxs-lookup"><span data-stu-id="f5dda-106">App source options for macOS Gatekeeper.</span></span>
 
-## <a name="members"></a><span data-ttu-id="18e23-108">Membros</span><span class="sxs-lookup"><span data-stu-id="18e23-108">Members</span></span>
-|<span data-ttu-id="18e23-109">Membro</span><span class="sxs-lookup"><span data-stu-id="18e23-109">Member</span></span>|<span data-ttu-id="18e23-110">Valor</span><span class="sxs-lookup"><span data-stu-id="18e23-110">Value</span></span>|<span data-ttu-id="18e23-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="18e23-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="f5dda-107">Membros</span><span class="sxs-lookup"><span data-stu-id="f5dda-107">Members</span></span>
+|<span data-ttu-id="f5dda-108">Membro</span><span class="sxs-lookup"><span data-stu-id="f5dda-108">Member</span></span>|<span data-ttu-id="f5dda-109">Valor</span><span class="sxs-lookup"><span data-stu-id="f5dda-109">Value</span></span>|<span data-ttu-id="f5dda-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="f5dda-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="18e23-112">não-configuradas</span><span class="sxs-lookup"><span data-stu-id="18e23-112">notConfigured</span></span>|<span data-ttu-id="18e23-113">0</span><span class="sxs-lookup"><span data-stu-id="18e23-113">0</span></span>|<span data-ttu-id="18e23-114">Valor de padrão de dispositivo, sem intenção.</span><span class="sxs-lookup"><span data-stu-id="18e23-114">Device default value, no intent.</span></span>|
-|<span data-ttu-id="18e23-115">macAppStore</span><span class="sxs-lookup"><span data-stu-id="18e23-115">macAppStore</span></span>|<span data-ttu-id="18e23-116">1</span><span class="sxs-lookup"><span data-stu-id="18e23-116">1</span></span>|<span data-ttu-id="18e23-117">Somente aplicativos a partir do AppStore Mac podem ser executados.</span><span class="sxs-lookup"><span data-stu-id="18e23-117">Only apps from the Mac AppStore can be run.</span></span>|
-|<span data-ttu-id="18e23-118">macAppStoreAndIdentifiedDevelopers</span><span class="sxs-lookup"><span data-stu-id="18e23-118">macAppStoreAndIdentifiedDevelopers</span></span>|<span data-ttu-id="18e23-119">2</span><span class="sxs-lookup"><span data-stu-id="18e23-119">2</span></span>|<span data-ttu-id="18e23-120">Podem ser executados somente aplicativos do Mac AppStore e desenvolvedores identificados.</span><span class="sxs-lookup"><span data-stu-id="18e23-120">Only apps from the Mac AppStore and identified developers can be run.</span></span>|
-|<span data-ttu-id="18e23-121">em qualquer lugar</span><span class="sxs-lookup"><span data-stu-id="18e23-121">anywhere</span></span>|<span data-ttu-id="18e23-122">3</span><span class="sxs-lookup"><span data-stu-id="18e23-122">3</span></span>|<span data-ttu-id="18e23-123">Aplicativos de qualquer lugar podem ser executados.</span><span class="sxs-lookup"><span data-stu-id="18e23-123">Apps from anywhere can be run.</span></span>|
+|<span data-ttu-id="f5dda-111">notConfigured</span><span class="sxs-lookup"><span data-stu-id="f5dda-111">notConfigured</span></span>|<span data-ttu-id="f5dda-112">,0</span><span class="sxs-lookup"><span data-stu-id="f5dda-112">0</span></span>|<span data-ttu-id="f5dda-113">Valor padrão do dispositivo, sem intenção.</span><span class="sxs-lookup"><span data-stu-id="f5dda-113">Device default value, no intent.</span></span>|
+|<span data-ttu-id="f5dda-114">macAppStore</span><span class="sxs-lookup"><span data-stu-id="f5dda-114">macAppStore</span></span>|<span data-ttu-id="f5dda-115">1</span><span class="sxs-lookup"><span data-stu-id="f5dda-115">1</span></span>|<span data-ttu-id="f5dda-116">Somente aplicativos do Mac loja podem ser executados.</span><span class="sxs-lookup"><span data-stu-id="f5dda-116">Only apps from the Mac AppStore can be run.</span></span>|
+|<span data-ttu-id="f5dda-117">macAppStoreAndIdentifiedDevelopers</span><span class="sxs-lookup"><span data-stu-id="f5dda-117">macAppStoreAndIdentifiedDevelopers</span></span>|<span data-ttu-id="f5dda-118">duas</span><span class="sxs-lookup"><span data-stu-id="f5dda-118">2</span></span>|<span data-ttu-id="f5dda-119">Somente os aplicativos do Mac loja e dos desenvolvedores identificados podem ser executados.</span><span class="sxs-lookup"><span data-stu-id="f5dda-119">Only apps from the Mac AppStore and identified developers can be run.</span></span>|
+|<span data-ttu-id="f5dda-120">em qualquer lugar</span><span class="sxs-lookup"><span data-stu-id="f5dda-120">anywhere</span></span>|<span data-ttu-id="f5dda-121">3D</span><span class="sxs-lookup"><span data-stu-id="f5dda-121">3</span></span>|<span data-ttu-id="f5dda-122">Os aplicativos de qualquer lugar podem ser executados.</span><span class="sxs-lookup"><span data-stu-id="f5dda-122">Apps from anywhere can be run.</span></span>|
 
 
 

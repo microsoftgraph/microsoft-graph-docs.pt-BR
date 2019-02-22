@@ -1,34 +1,34 @@
 ---
 title: Atualizar windowsInformationProtectionDeviceRegistration
-description: Atualize as propriedades de um objeto windowsInformationProtectionDeviceRegistration.
-localization_priority: Normal
+description: Atualiza as propriedades de um objeto windowsInformationProtectionDeviceRegistration.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0c84f81dd8d9df54c6f05b1435ee4644a1a75342
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: cc11fe9ce1bf16c53259e352087be4e1a9849c5a
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29429100"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30167841"
 ---
-# <a name="update-windowsinformationprotectiondeviceregistration"></a><span data-ttu-id="12817-103">Atualizar windowsInformationProtectionDeviceRegistration</span><span class="sxs-lookup"><span data-stu-id="12817-103">Update windowsInformationProtectionDeviceRegistration</span></span>
+# <a name="update-windowsinformationprotectiondeviceregistration"></a><span data-ttu-id="3ae71-103">Atualizar windowsInformationProtectionDeviceRegistration</span><span class="sxs-lookup"><span data-stu-id="3ae71-103">Update windowsInformationProtectionDeviceRegistration</span></span>
 
-> <span data-ttu-id="12817-104">**Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações.</span><span class="sxs-lookup"><span data-stu-id="12817-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="12817-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="12817-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="3ae71-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="3ae71-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="12817-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.</span><span class="sxs-lookup"><span data-stu-id="12817-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="3ae71-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="3ae71-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="12817-107">Atualize as propriedades de um objeto [windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md) .</span><span class="sxs-lookup"><span data-stu-id="12817-107">Update the properties of a [windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md) object.</span></span>
+<span data-ttu-id="3ae71-106">Atualiza as propriedades de um objeto [windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md) .</span><span class="sxs-lookup"><span data-stu-id="3ae71-106">Update the properties of a [windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="12817-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="12817-108">Prerequisites</span></span>
-<span data-ttu-id="12817-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="12817-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="3ae71-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="3ae71-107">Prerequisites</span></span>
+<span data-ttu-id="3ae71-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="3ae71-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
 
-|<span data-ttu-id="12817-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="12817-111">Permission type</span></span>|<span data-ttu-id="12817-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="12817-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="3ae71-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="3ae71-110">Permission type</span></span>|<span data-ttu-id="3ae71-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="3ae71-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="12817-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="12817-113">Delegated (work or school account)</span></span>|<span data-ttu-id="12817-114">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="12817-114">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="12817-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="12817-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="12817-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="12817-116">Not supported.</span></span>|
-|<span data-ttu-id="12817-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="12817-117">Application</span></span>|<span data-ttu-id="12817-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="12817-118">Not supported.</span></span>|
+|<span data-ttu-id="3ae71-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="3ae71-112">Delegated (work or school account)</span></span>|<span data-ttu-id="3ae71-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3ae71-113">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="3ae71-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="3ae71-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="3ae71-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="3ae71-115">Not supported.</span></span>|
+|<span data-ttu-id="3ae71-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="3ae71-116">Application</span></span>|<span data-ttu-id="3ae71-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="3ae71-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="12817-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="12817-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3ae71-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="3ae71-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,36 +37,36 @@ ms.locfileid: "29429100"
 PATCH /deviceAppManagement/windowsInformationProtectionDeviceRegistrations/{windowsInformationProtectionDeviceRegistrationId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="12817-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="12817-120">Request headers</span></span>
-|<span data-ttu-id="12817-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="12817-121">Header</span></span>|<span data-ttu-id="12817-122">Valor</span><span class="sxs-lookup"><span data-stu-id="12817-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="3ae71-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="3ae71-119">Request headers</span></span>
+|<span data-ttu-id="3ae71-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="3ae71-120">Header</span></span>|<span data-ttu-id="3ae71-121">Valor</span><span class="sxs-lookup"><span data-stu-id="3ae71-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="12817-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="12817-123">Authorization</span></span>|<span data-ttu-id="12817-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="12817-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="12817-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="12817-125">Accept</span></span>|<span data-ttu-id="12817-126">application/json</span><span class="sxs-lookup"><span data-stu-id="12817-126">application/json</span></span>|
+|<span data-ttu-id="3ae71-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="3ae71-122">Authorization</span></span>|<span data-ttu-id="3ae71-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="3ae71-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="3ae71-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="3ae71-124">Accept</span></span>|<span data-ttu-id="3ae71-125">application/json</span><span class="sxs-lookup"><span data-stu-id="3ae71-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="12817-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="12817-127">Request body</span></span>
-<span data-ttu-id="12817-128">No corpo da solicitação, fornece uma representação JSON para o objeto [windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md) .</span><span class="sxs-lookup"><span data-stu-id="12817-128">In the request body, supply a JSON representation for the [windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="3ae71-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="3ae71-126">Request body</span></span>
+<span data-ttu-id="3ae71-127">No corpo da solicitação, forneça uma representação JSON do objeto [windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md) .</span><span class="sxs-lookup"><span data-stu-id="3ae71-127">In the request body, supply a JSON representation for the [windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md) object.</span></span>
 
-<span data-ttu-id="12817-129">A tabela a seguir mostra as propriedades que são necessárias quando você cria o [windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md).</span><span class="sxs-lookup"><span data-stu-id="12817-129">The following table shows the properties that are required when you create the [windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md).</span></span>
+<span data-ttu-id="3ae71-128">A tabela a seguir mostra as propriedades que são necessárias ao criar [windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md).</span><span class="sxs-lookup"><span data-stu-id="3ae71-128">The following table shows the properties that are required when you create the [windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md).</span></span>
 
-|<span data-ttu-id="12817-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="12817-130">Property</span></span>|<span data-ttu-id="12817-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="12817-131">Type</span></span>|<span data-ttu-id="12817-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="12817-132">Description</span></span>|
+|<span data-ttu-id="3ae71-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="3ae71-129">Property</span></span>|<span data-ttu-id="3ae71-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="3ae71-130">Type</span></span>|<span data-ttu-id="3ae71-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="3ae71-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="12817-133">id</span><span class="sxs-lookup"><span data-stu-id="12817-133">id</span></span>|<span data-ttu-id="12817-134">String</span><span class="sxs-lookup"><span data-stu-id="12817-134">String</span></span>|<span data-ttu-id="12817-135">Chave da entidade.</span><span class="sxs-lookup"><span data-stu-id="12817-135">Key of the entity.</span></span>|
-|<span data-ttu-id="12817-136">userId</span><span class="sxs-lookup"><span data-stu-id="12817-136">userId</span></span>|<span data-ttu-id="12817-137">String</span><span class="sxs-lookup"><span data-stu-id="12817-137">String</span></span>|<span data-ttu-id="12817-138">ID do usuário associado a este registro de registro do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="12817-138">UserId associated with this device registration record.</span></span>|
-|<span data-ttu-id="12817-139">deviceRegistrationId</span><span class="sxs-lookup"><span data-stu-id="12817-139">deviceRegistrationId</span></span>|<span data-ttu-id="12817-140">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="12817-140">String</span></span>|<span data-ttu-id="12817-141">Identificador de dispositivo para este registro de registro do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="12817-141">Device identifier for this device registration record.</span></span>|
-|<span data-ttu-id="12817-142">deviceName</span><span class="sxs-lookup"><span data-stu-id="12817-142">deviceName</span></span>|<span data-ttu-id="12817-143">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="12817-143">String</span></span>|<span data-ttu-id="12817-144">Nome do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="12817-144">Device name.</span></span>|
-|<span data-ttu-id="12817-145">deviceType</span><span class="sxs-lookup"><span data-stu-id="12817-145">deviceType</span></span>|<span data-ttu-id="12817-146">String</span><span class="sxs-lookup"><span data-stu-id="12817-146">String</span></span>|<span data-ttu-id="12817-147">Tipo de dispositivo, por exemplo, Windows laptop VERSUS Windows phone.</span><span class="sxs-lookup"><span data-stu-id="12817-147">Device type, for example, Windows laptop VS Windows phone.</span></span>|
-|<span data-ttu-id="12817-148">deviceMacAddress</span><span class="sxs-lookup"><span data-stu-id="12817-148">deviceMacAddress</span></span>|<span data-ttu-id="12817-149">String</span><span class="sxs-lookup"><span data-stu-id="12817-149">String</span></span>|<span data-ttu-id="12817-150">Endereço Mac de dispositivo.</span><span class="sxs-lookup"><span data-stu-id="12817-150">Device Mac address.</span></span>|
-|<span data-ttu-id="12817-151">lastCheckInDateTime</span><span class="sxs-lookup"><span data-stu-id="12817-151">lastCheckInDateTime</span></span>|<span data-ttu-id="12817-152">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="12817-152">DateTimeOffset</span></span>|<span data-ttu-id="12817-153">Última hora de check-in do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="12817-153">Last checkin time of the device.</span></span>|
+|<span data-ttu-id="3ae71-132">id</span><span class="sxs-lookup"><span data-stu-id="3ae71-132">id</span></span>|<span data-ttu-id="3ae71-133">String</span><span class="sxs-lookup"><span data-stu-id="3ae71-133">String</span></span>|<span data-ttu-id="3ae71-134">Chave da entidade.</span><span class="sxs-lookup"><span data-stu-id="3ae71-134">Key of the entity.</span></span>|
+|<span data-ttu-id="3ae71-135">userId</span><span class="sxs-lookup"><span data-stu-id="3ae71-135">userId</span></span>|<span data-ttu-id="3ae71-136">String</span><span class="sxs-lookup"><span data-stu-id="3ae71-136">String</span></span>|<span data-ttu-id="3ae71-137">UserId associado a este registro de registro de dispositivo.</span><span class="sxs-lookup"><span data-stu-id="3ae71-137">UserId associated with this device registration record.</span></span>|
+|<span data-ttu-id="3ae71-138">deviceRegistrationId</span><span class="sxs-lookup"><span data-stu-id="3ae71-138">deviceRegistrationId</span></span>|<span data-ttu-id="3ae71-139">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="3ae71-139">String</span></span>|<span data-ttu-id="3ae71-140">Identificador de dispositivo para este registro de registro de dispositivo.</span><span class="sxs-lookup"><span data-stu-id="3ae71-140">Device identifier for this device registration record.</span></span>|
+|<span data-ttu-id="3ae71-141">deviceName</span><span class="sxs-lookup"><span data-stu-id="3ae71-141">deviceName</span></span>|<span data-ttu-id="3ae71-142">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="3ae71-142">String</span></span>|<span data-ttu-id="3ae71-143">Nome do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="3ae71-143">Device name.</span></span>|
+|<span data-ttu-id="3ae71-144">deviceType</span><span class="sxs-lookup"><span data-stu-id="3ae71-144">deviceType</span></span>|<span data-ttu-id="3ae71-145">String</span><span class="sxs-lookup"><span data-stu-id="3ae71-145">String</span></span>|<span data-ttu-id="3ae71-146">Tipo de dispositivo, por exemplo, Windows laptop VS Windows Phone.</span><span class="sxs-lookup"><span data-stu-id="3ae71-146">Device type, for example, Windows laptop VS Windows phone.</span></span>|
+|<span data-ttu-id="3ae71-147">deviceMacAddress</span><span class="sxs-lookup"><span data-stu-id="3ae71-147">deviceMacAddress</span></span>|<span data-ttu-id="3ae71-148">String</span><span class="sxs-lookup"><span data-stu-id="3ae71-148">String</span></span>|<span data-ttu-id="3ae71-149">Endereço MAC do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="3ae71-149">Device Mac address.</span></span>|
+|<span data-ttu-id="3ae71-150">lastCheckInDateTime</span><span class="sxs-lookup"><span data-stu-id="3ae71-150">lastCheckInDateTime</span></span>|<span data-ttu-id="3ae71-151">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="3ae71-151">DateTimeOffset</span></span>|<span data-ttu-id="3ae71-152">Hora da última verificação do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="3ae71-152">Last checkin time of the device.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="12817-154">Resposta</span><span class="sxs-lookup"><span data-stu-id="12817-154">Response</span></span>
-<span data-ttu-id="12817-155">Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto atualizado [windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="12817-155">If successful, this method returns a `200 OK` response code and an updated [windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="3ae71-153">Resposta</span><span class="sxs-lookup"><span data-stu-id="3ae71-153">Response</span></span>
+<span data-ttu-id="3ae71-154">Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="3ae71-154">If successful, this method returns a `200 OK` response code and an updated [windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="12817-156">Exemplo</span><span class="sxs-lookup"><span data-stu-id="12817-156">Example</span></span>
+## <a name="example"></a><span data-ttu-id="3ae71-155">Exemplo</span><span class="sxs-lookup"><span data-stu-id="3ae71-155">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="12817-157">Solicitação</span><span class="sxs-lookup"><span data-stu-id="12817-157">Request</span></span>
-<span data-ttu-id="12817-158">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="12817-158">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="3ae71-156">Solicitação</span><span class="sxs-lookup"><span data-stu-id="3ae71-156">Request</span></span>
+<span data-ttu-id="3ae71-157">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="3ae71-157">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/windowsInformationProtectionDeviceRegistrations/{windowsInformationProtectionDeviceRegistrationId}
 Content-type: application/json
@@ -83,8 +83,8 @@ Content-length: 366
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="12817-159">Resposta</span><span class="sxs-lookup"><span data-stu-id="12817-159">Response</span></span>
-<span data-ttu-id="12817-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="12817-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="3ae71-158">Resposta</span><span class="sxs-lookup"><span data-stu-id="3ae71-158">Response</span></span>
+<span data-ttu-id="3ae71-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="3ae71-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

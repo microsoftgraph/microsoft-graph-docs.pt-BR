@@ -1,28 +1,28 @@
 ---
-title: tipo de enum appLogDecryptionAlgorithm
+title: tipo de enumeração appLogDecryptionAlgorithm
 description: Ainda não documentado
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 433ea249ddb65392e817548999752d6bf633946e
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: cb264d43fe06f42548193a4c3ab1ba747df674f9
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29428988"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30166630"
 ---
-# <a name="applogdecryptionalgorithm-enum-type"></a><span data-ttu-id="da55d-103">tipo de enum appLogDecryptionAlgorithm</span><span class="sxs-lookup"><span data-stu-id="da55d-103">appLogDecryptionAlgorithm enum type</span></span>
+# <a name="applogdecryptionalgorithm-enum-type"></a><span data-ttu-id="7e60b-103">tipo de enumeração appLogDecryptionAlgorithm</span><span class="sxs-lookup"><span data-stu-id="7e60b-103">appLogDecryptionAlgorithm enum type</span></span>
 
-> <span data-ttu-id="da55d-104">**Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações.</span><span class="sxs-lookup"><span data-stu-id="da55d-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="da55d-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="da55d-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="7e60b-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="7e60b-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="da55d-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.</span><span class="sxs-lookup"><span data-stu-id="da55d-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="7e60b-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="7e60b-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="da55d-107">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="da55d-107">Not yet documented</span></span>
+<span data-ttu-id="7e60b-106">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="7e60b-106">Not yet documented</span></span>
 
-## <a name="members"></a><span data-ttu-id="da55d-108">Membros</span><span class="sxs-lookup"><span data-stu-id="da55d-108">Members</span></span>
-|<span data-ttu-id="da55d-109">Membro</span><span class="sxs-lookup"><span data-stu-id="da55d-109">Member</span></span>|<span data-ttu-id="da55d-110">Valor</span><span class="sxs-lookup"><span data-stu-id="da55d-110">Value</span></span>|<span data-ttu-id="da55d-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="da55d-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="7e60b-107">Membros</span><span class="sxs-lookup"><span data-stu-id="7e60b-107">Members</span></span>
+|<span data-ttu-id="7e60b-108">Membro</span><span class="sxs-lookup"><span data-stu-id="7e60b-108">Member</span></span>|<span data-ttu-id="7e60b-109">Valor</span><span class="sxs-lookup"><span data-stu-id="7e60b-109">Value</span></span>|<span data-ttu-id="7e60b-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="7e60b-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="da55d-112">aes256</span><span class="sxs-lookup"><span data-stu-id="da55d-112">aes256</span></span>|<span data-ttu-id="da55d-113">0</span><span class="sxs-lookup"><span data-stu-id="da55d-113">0</span></span>|<span data-ttu-id="da55d-114">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="da55d-114">Not yet documented</span></span>|
+|<span data-ttu-id="7e60b-111">aes256</span><span class="sxs-lookup"><span data-stu-id="7e60b-111">aes256</span></span>|<span data-ttu-id="7e60b-112">,0</span><span class="sxs-lookup"><span data-stu-id="7e60b-112">0</span></span>|<span data-ttu-id="7e60b-113">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="7e60b-113">Not yet documented</span></span>|
 
 
 

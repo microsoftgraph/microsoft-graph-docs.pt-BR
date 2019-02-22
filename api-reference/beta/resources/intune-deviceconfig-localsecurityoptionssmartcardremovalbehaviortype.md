@@ -1,31 +1,31 @@
 ---
-title: tipo de enum localSecurityOptionsSmartCardRemovalBehaviorType
+title: tipo de enumeração localSecurityOptionsSmartCardRemovalBehaviorType
 description: Valores possíveis para LocalSecurityOptionsSmartCardRemovalBehaviorType
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f6c2dd85ba053c3b1493dc598741f2417eb6c0aa
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 18a7e37d0dcd38b44b1ba9edc22e026f6e4a7be7
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29412356"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30163809"
 ---
-# <a name="localsecurityoptionssmartcardremovalbehaviortype-enum-type"></a><span data-ttu-id="26f43-103">tipo de enum localSecurityOptionsSmartCardRemovalBehaviorType</span><span class="sxs-lookup"><span data-stu-id="26f43-103">localSecurityOptionsSmartCardRemovalBehaviorType enum type</span></span>
+# <a name="localsecurityoptionssmartcardremovalbehaviortype-enum-type"></a><span data-ttu-id="3d126-103">tipo de enumeração localSecurityOptionsSmartCardRemovalBehaviorType</span><span class="sxs-lookup"><span data-stu-id="3d126-103">localSecurityOptionsSmartCardRemovalBehaviorType enum type</span></span>
 
-> <span data-ttu-id="26f43-104">**Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações.</span><span class="sxs-lookup"><span data-stu-id="26f43-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="26f43-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="26f43-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="3d126-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="3d126-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="26f43-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.</span><span class="sxs-lookup"><span data-stu-id="26f43-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="3d126-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="3d126-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="26f43-107">Valores possíveis para LocalSecurityOptionsSmartCardRemovalBehaviorType</span><span class="sxs-lookup"><span data-stu-id="26f43-107">Possible values for LocalSecurityOptionsSmartCardRemovalBehaviorType</span></span>
+<span data-ttu-id="3d126-106">Valores possíveis para LocalSecurityOptionsSmartCardRemovalBehaviorType</span><span class="sxs-lookup"><span data-stu-id="3d126-106">Possible values for LocalSecurityOptionsSmartCardRemovalBehaviorType</span></span>
 
-## <a name="members"></a><span data-ttu-id="26f43-108">Membros</span><span class="sxs-lookup"><span data-stu-id="26f43-108">Members</span></span>
-|<span data-ttu-id="26f43-109">Membro</span><span class="sxs-lookup"><span data-stu-id="26f43-109">Member</span></span>|<span data-ttu-id="26f43-110">Valor</span><span class="sxs-lookup"><span data-stu-id="26f43-110">Value</span></span>|<span data-ttu-id="26f43-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="26f43-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="3d126-107">Membros</span><span class="sxs-lookup"><span data-stu-id="3d126-107">Members</span></span>
+|<span data-ttu-id="3d126-108">Membro</span><span class="sxs-lookup"><span data-stu-id="3d126-108">Member</span></span>|<span data-ttu-id="3d126-109">Valor</span><span class="sxs-lookup"><span data-stu-id="3d126-109">Value</span></span>|<span data-ttu-id="3d126-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="3d126-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="26f43-112">lockWorkstation</span><span class="sxs-lookup"><span data-stu-id="26f43-112">lockWorkstation</span></span>|<span data-ttu-id="26f43-113">0</span><span class="sxs-lookup"><span data-stu-id="26f43-113">0</span></span>|<span data-ttu-id="26f43-114">Nenhuma ação</span><span class="sxs-lookup"><span data-stu-id="26f43-114">No Action</span></span>|
-|<span data-ttu-id="26f43-115">noAction</span><span class="sxs-lookup"><span data-stu-id="26f43-115">noAction</span></span>|<span data-ttu-id="26f43-116">1</span><span class="sxs-lookup"><span data-stu-id="26f43-116">1</span></span>|<span data-ttu-id="26f43-117">Bloquear estação de trabalho</span><span class="sxs-lookup"><span data-stu-id="26f43-117">Lock Workstation</span></span>|
-|<span data-ttu-id="26f43-118">forceLogoff</span><span class="sxs-lookup"><span data-stu-id="26f43-118">forceLogoff</span></span>|<span data-ttu-id="26f43-119">2</span><span class="sxs-lookup"><span data-stu-id="26f43-119">2</span></span>|<span data-ttu-id="26f43-120">Forçar Logoff</span><span class="sxs-lookup"><span data-stu-id="26f43-120">Force Logoff</span></span>|
-|<span data-ttu-id="26f43-121">disconnectRemoteDesktopSession</span><span class="sxs-lookup"><span data-stu-id="26f43-121">disconnectRemoteDesktopSession</span></span>|<span data-ttu-id="26f43-122">3</span><span class="sxs-lookup"><span data-stu-id="26f43-122">3</span></span>|<span data-ttu-id="26f43-123">Desconectar se uma sessão remota de serviços de área de trabalho remota</span><span class="sxs-lookup"><span data-stu-id="26f43-123">Disconnect if a remote Remote Desktop Services session</span></span>|
+|<span data-ttu-id="3d126-111">lockWorkstation</span><span class="sxs-lookup"><span data-stu-id="3d126-111">lockWorkstation</span></span>|<span data-ttu-id="3d126-112">,0</span><span class="sxs-lookup"><span data-stu-id="3d126-112">0</span></span>|<span data-ttu-id="3d126-113">Nenhuma ação</span><span class="sxs-lookup"><span data-stu-id="3d126-113">No Action</span></span>|
+|<span data-ttu-id="3d126-114">noAction</span><span class="sxs-lookup"><span data-stu-id="3d126-114">noAction</span></span>|<span data-ttu-id="3d126-115">1</span><span class="sxs-lookup"><span data-stu-id="3d126-115">1</span></span>|<span data-ttu-id="3d126-116">Bloquear estação de trabalho</span><span class="sxs-lookup"><span data-stu-id="3d126-116">Lock Workstation</span></span>|
+|<span data-ttu-id="3d126-117">forceLogoff</span><span class="sxs-lookup"><span data-stu-id="3d126-117">forceLogoff</span></span>|<span data-ttu-id="3d126-118">duas</span><span class="sxs-lookup"><span data-stu-id="3d126-118">2</span></span>|<span data-ttu-id="3d126-119">Forçar logoff</span><span class="sxs-lookup"><span data-stu-id="3d126-119">Force Logoff</span></span>|
+|<span data-ttu-id="3d126-120">disconnectRemoteDesktopSession</span><span class="sxs-lookup"><span data-stu-id="3d126-120">disconnectRemoteDesktopSession</span></span>|<span data-ttu-id="3d126-121">3D</span><span class="sxs-lookup"><span data-stu-id="3d126-121">3</span></span>|<span data-ttu-id="3d126-122">DesConectar se uma sessão remota de serviços de área de trabalho remota</span><span class="sxs-lookup"><span data-stu-id="3d126-122">Disconnect if a remote Remote Desktop Services session</span></span>|
 
 
 
