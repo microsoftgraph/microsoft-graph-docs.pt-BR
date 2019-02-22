@@ -1,23 +1,23 @@
 ---
-title: tipo de recurso de windowsKioskAppConfiguration
-description: A classe de base do aplicativo usada para identificar a informação de aplicativo para a configuração de quiosque
-localization_priority: Normal
+title: tipo de recurso windowsKioskAppConfiguration
+description: A classe base do aplicativo usada para identificar as informações do aplicativo da configuração do quiosque
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 287e88c23e1eaa260aa2d4be6a819fcba72b6cff
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: c17119ef3ae4b128cef89549385b1bd01bedfe9e
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29412685"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30175168"
 ---
-# <a name="windowskioskappconfiguration-resource-type"></a>tipo de recurso de windowsKioskAppConfiguration
+# <a name="windowskioskappconfiguration-resource-type"></a>tipo de recurso windowsKioskAppConfiguration
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-A classe de base do aplicativo usada para identificar a informação de aplicativo para a configuração de quiosque
+A classe base do aplicativo usada para identificar as informações do aplicativo da configuração do quiosque
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|

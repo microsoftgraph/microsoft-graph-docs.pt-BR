@@ -1,31 +1,31 @@
 ---
-title: tipo de enum notificationTemplateBrandingOptions
-description: Opções de marcas para o modelo de mensagem. A identidade visual é definida no Console do administrador do Intune.
-localization_priority: Normal
+title: tipo de enumeração notificationTemplateBrandingOptions
+description: Opções de identidade visual para o modelo de mensagem. A identidade visual é definida no Console do administrador do Intune.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fbd152ea3669f39e623f9301cbfeacc4f0b6b40f
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 4e208f0d1ba1e72e1598120ec844fa77a4b8d3b9
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29403522"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172440"
 ---
-# <a name="notificationtemplatebrandingoptions-enum-type"></a>tipo de enum notificationTemplateBrandingOptions
+# <a name="notificationtemplatebrandingoptions-enum-type"></a>tipo de enumeração notificationTemplateBrandingOptions
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Opções de marcas para o modelo de mensagem. A identidade visual é definida no Console do administrador do Intune.
+Opções de identidade visual para o modelo de mensagem. A identidade visual é definida no Console do administrador do Intune.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|none|0|Nenhuma marca.|
-|includeCompanyLogo|1|Inclua o logotipo da empresa.|
-|includeCompanyName|2|Inclua o nome da empresa.|
-|includeContactInformation|4|Inclua informações de contato.|
+|Nenhuma|,0|Sem identidade visual.|
+|includeCompanyLogo|1|Incluir logotipo da empresa.|
+|includeCompanyName|duas|Incluir o nome da empresa.|
+|includeContactInformation|quatro|Incluir informações de contato.|
 
 
 

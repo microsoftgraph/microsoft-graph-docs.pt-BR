@@ -1,46 +1,46 @@
 ---
-title: tipo de enum remoteAction
-description: Ações remotas Intune oferece suporte.
-localization_priority: Normal
+title: tipo de enumeração remoteaction
+description: As ações remotas do Intune dão suporte.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3177ea43599cd155e11af1786636111a8578d29b
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: c4eb232f53ecb6b857e1a762ac0bef59c9ca246a
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29405538"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30174871"
 ---
-# <a name="remoteaction-enum-type"></a>tipo de enum remoteAction
+# <a name="remoteaction-enum-type"></a>tipo de enumeração remoteaction
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Ações remotas Intune oferece suporte.
+As ações remotas do Intune dão suporte.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|unknown|0|Usuário inicia uma ação desconhecida.|
-|factoryReset|1|Usuário inicia uma ação à fábrica reiniciar um dispositivo. |
-|removeCompanyData|2|Usuário inicia uma ação para remover os dados da empresa de um dispositivo. |
-|resetPasscode|3|Usuário inicia uma ação para remover a senha de um dispositivo iOS ou redefinir a senha do Android / dispositivo do Windows. |
-|remoteLock|4|Usuário inicia uma ação para bloqueio remoto um dispositivo.|
-|enableLostMode|5|Usuário inicia uma ação para habilitar o modo perdido em um dispositivo iOS supervisionadas.|
-|disableLostMode|6|Usuário inicia uma ação para desativar o modo perdido em um dispositivo iOS supervisionadas.|
-|locateDevice|7|Usuário inicia uma ação para localizar um dispositivo iOS supervisionadas.|
-|rebootNow|8|Usuário inicia uma ação para reinicializar um dispositivo do Windows.|
-|recoverPasscode|9|Usuário inicia uma ação para redefinir o pin para passport para trabalhar no dispositivo do windows phone.|
-|cleanWindowsDevice|10|Usuário inicia uma ação para limpar o dispositivo do windows.|
-|logoutSharedAppleDeviceActiveUser|11|Usuário inicia uma ação para logoff do usuário atual no dispositivo apple compartilhado.|
-|quickScan|12|Usuário inicia uma ação para executar a verificação rápida no dispositivo.|
-|fullScan|13|Usuário inicia uma ação para executar a verificação completa no dispositivo.|
-|windowsDefenderUpdateSignatures|14|Usuário inicia uma ação para atualizar as assinaturas de malware no dispositivo.|
-|factoryResetKeepEnrollmentData|15|Usuário inicia um dispositivo de apagamento remoto de ação com mantendo os dados de inscrição.|
-|updateDeviceAccount|16|Usuário inicia uma ação para atualizar a conta no dispositivo.|
-|automaticRedeployment|17|Usuário inicia uma ação para o dispositivo de reimplantação de automatice|
-|Desligamento|18|Usuário inicia uma ação para desligar o dispositivo.|
+|unknown|,0|O usuário inicia uma ação desconhecida.|
+|factoryReset|1|O usuário inicia uma ação para a redefinição de fábrica de um dispositivo. |
+|removeCompanyData|duas|O usuário inicia uma ação para remover dados da empresa de um dispositivo. |
+|resetPasscode|3D|O usuário inicia uma ação para remover a senha de um dispositivo iOS ou redefinir a senha do dispositivo Android/Windows. |
+|remoteLock|quatro|O usuário inicia uma ação para bloquear remotamente um dispositivo.|
+|enableLostMode|0,5|O usuário inicia uma ação para habilitar o modo perdido em um dispositivo iOS supervisionado.|
+|disableLostMode|6|O usuário inicia uma ação para desabilitar o modo perdido em um dispositivo iOS supervisionado.|
+|locateDevice|178|O usuário inicia uma ação para localizar um dispositivo iOS supervisionado.|
+|rebootNow|8|O usuário inicia uma ação para reinicializar um dispositivo Windows.|
+|recoverPasscode|241|O usuário inicia uma ação para redefinir o PIN para o Passport para funcionar no dispositivo Windows Phone.|
+|cleanWindowsDevice|254|O usuário inicia uma ação para limpar o dispositivo Windows.|
+|logoutSharedAppleDeviceActiveUser|11|O usuário inicia uma ação para fazer o logoff do usuário atual em um dispositivo Apple compartilhado.|
+|quickScan|3,6|O usuário inicia uma ação para executar a verificação rápida no dispositivo.|
+|fullScan|Treze|O usuário inicia uma ação para executar a verificação completa no dispositivo.|
+|windowsDefenderUpdateSignatures|14|O usuário inicia uma ação para atualizar as assinaturas de malware no dispositivo.|
+|factoryResetKeepEnrollmentData|15|O usuário inicia um dispositivo de apagamento remoto de ação com a manutenção dos dados de registro.|
+|updateDeviceAccount|dezesseis|O usuário inicia uma ação para atualizar a conta no dispositivo.|
+|automaticRedeployment|17.07.06|O usuário inicia uma ação para automático reimplantar o dispositivo|
+|Parada|anos|O usuário inicia uma ação para desligar o dispositivo.|
 
 
 

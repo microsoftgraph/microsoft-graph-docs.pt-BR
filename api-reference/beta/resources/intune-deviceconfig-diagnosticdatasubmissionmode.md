@@ -1,32 +1,32 @@
 ---
-title: tipo de enum diagnosticDataSubmissionMode
-description: Permitir que o dispositivo enviar dados de telemetria de diagnóstico e uso, como Watson.
-localization_priority: Normal
+title: tipo de enumeração diagnosticDataSubmissionMode
+description: Permitir que o dispositivo envie dados de telemetria e diagnósticos de uso, como Watson.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8b587d6872bcd3610c3b878ae7a672c3e776ea01
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e749d2fc7a1eb191c62fbc9db389887cdd901c27
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422254"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30175217"
 ---
-# <a name="diagnosticdatasubmissionmode-enum-type"></a>tipo de enum diagnosticDataSubmissionMode
+# <a name="diagnosticdatasubmissionmode-enum-type"></a>tipo de enumeração diagnosticDataSubmissionMode
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Permitir que o dispositivo enviar dados de telemetria de diagnóstico e uso, como Watson.
+Permitir que o dispositivo envie dados de telemetria e diagnósticos de uso, como Watson.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|userDefined|0|Permitir que o usuário pode definir.|
-|none|1|Nenhum dado de telemetria é enviado de componentes do sistema operacional. Observação: Esse valor só é aplicável aos dispositivos enterprise e servidor. O uso dessa configuração em outros dispositivos é equivalente a definir o valor de 1.|
-|básico|2|Envia dados de Telemetria básica.|
-|Avançado|3|Envia aprimorado de dados de telemetria, incluindo dados de uso e ideias.|
-|completo|4|Envia dados de telemetria completo incluindo dados de diagnósticos, como o estado do sistema.|
+|userDefined|,0|Permite que o usuário defina.|
+|Nenhuma|1|Nenhum dado de telemetria é enviado dos componentes do sistema operacional. Observação: esse valor só é aplicável a dispositivos corporativos e de servidor. O uso dessa configuração em outros dispositivos equivale a definir o valor 1.|
+|Basic|duas|Envia dados básicos de telemetria.|
+|metarquivo|3D|Envia dados de telemetria avançados, incluindo dados de uso e insights.|
+|cheia|quatro|Envia dados de telemetria completos, incluindo dados de diagnóstico, como o estado do sistema.|
 
 
 

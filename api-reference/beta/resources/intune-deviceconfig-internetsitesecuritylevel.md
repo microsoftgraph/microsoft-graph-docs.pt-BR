@@ -1,31 +1,31 @@
 ---
-title: tipo de enum internetSiteSecurityLevel
-description: Valores possíveis para o nível de segurança de sites da internet.
-localization_priority: Normal
+title: tipo de enumeração internetSiteSecurityLevel
+description: Valores possíveis para o nível de segurança do site da Internet.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6a394dc6912f4358b3ead118a545604cb5b55c55
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 3526e8719e607ac3e4b2c41b126f1fa8517540f7
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399077"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172622"
 ---
-# <a name="internetsitesecuritylevel-enum-type"></a>tipo de enum internetSiteSecurityLevel
+# <a name="internetsitesecuritylevel-enum-type"></a>tipo de enumeração internetSiteSecurityLevel
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Valores possíveis para o nível de segurança de sites da internet.
+Valores possíveis para o nível de segurança do site da Internet.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|userDefined|0|Definido pelo usuário, valor padrão, sem intenção.|
+|userDefined|,0|Definido pelo usuário, valor padrão, sem intenção.|
 |medium|1|Média.|
-|mediumHigh|2|Médio-alto.|
-|high|3|Alto.|
+|mediumHigh|duas|Médio-alto.|
+|high|3D|Alto.|
 
 
 

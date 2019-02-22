@@ -1,30 +1,30 @@
 ---
-title: tipo de enum win32LobAppMsiPackageType
+title: tipo de enumeração win32LobAppMsiPackageType
 description: Indica o tipo de pacote de um Win32LobApp MSI.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2ec9245330f323ae6d52d46059643c6352f511d7
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 637c694eda2bb46d869b3f7aadd40b469879468e
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29404684"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172762"
 ---
-# <a name="win32lobappmsipackagetype-enum-type"></a>tipo de enum win32LobAppMsiPackageType
+# <a name="win32lobappmsipackagetype-enum-type"></a>tipo de enumeração win32LobAppMsiPackageType
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Indica o tipo de pacote de um Win32LobApp MSI.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|perMachine|0|Indica um pacote de aplicativos de por máquina.|
-|perUser|1|Indica um pacote de aplicativos por usuário.|
-|dualPurpose|2|Indica um pacote de aplicativos duas finalidades.|
+|perMachine|,0|Indica um pacote de aplicativo por máquina.|
+|perUser|1|Indica um pacote de aplicativo por usuário.|
+|dualPurpose|duas|Indica um pacote de aplicativos de uso duplo.|
 
 
 

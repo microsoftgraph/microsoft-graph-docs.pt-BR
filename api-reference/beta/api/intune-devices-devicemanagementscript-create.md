@@ -1,23 +1,23 @@
 ---
 title: Criar deviceManagementScript
-description: Crie um novo objeto de deviceManagementScript.
-localization_priority: Normal
+description: Criar um novo objeto deviceManagementScript.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: be0ffb8b912b25684ba0ed3dc383a995fb872f3b
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 40472e27f1ba900121c5c7927ec5d15f27582c99
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29409269"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30173616"
 ---
 # <a name="create-devicemanagementscript"></a>Criar deviceManagementScript
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Crie um novo objeto de [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md) .
+Criar um novo objeto [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
@@ -44,29 +44,29 @@ POST /deviceManagement/deviceManagementScripts
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON para o objeto deviceManagementScript.
+No corpo da solicitação, forneça uma representação JSON do objeto deviceManagementScript.
 
-A tabela a seguir mostra as propriedades que são necessárias quando você cria o deviceManagementScript.
+A tabela a seguir mostra as propriedades que são necessárias ao criar deviceManagementScript.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo para o script de gerenciamento de dispositivo.|
+|id|String|Identificador exclusivo do script de gerenciamento de dispositivo.|
 |displayName|String|Nome do script de gerenciamento de dispositivo.|
 |description|String|Descrição opcional para o script de gerenciamento de dispositivo.|
-|runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|O intervalo de script a ser executado. Se não definido o script será executado uma vez|
+|runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|O intervalo de execução do script. Se não definido, o script será executado uma vez|
 |scriptContent|Binária|O conteúdo de script.|
-|createdDateTime|DateTimeOffset|A data e hora em que o script de gerenciamento do dispositivo foi criado.|
-|lastModifiedDateTime|DateTimeOffset|A data e a hora que da última modificação o script de gerenciamento de dispositivo.|
-|runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indica o tipo de contexto de execução em que do script de gerenciamento de dispositivo é executado. Os valores possíveis são: `system` e `user`.|
-|enforceSignatureCheck|Boolean|Indica se a assinatura de script precisa ser verificada.|
+|createdDateTime|DateTimeOffset|A data e a hora em que o script de gerenciamento de dispositivo foi criado.|
+|lastModifiedDateTime|DateTimeOffset|A data e a hora em que o script de gerenciamento de dispositivo foi modificado pela última vez.|
+|runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indica o tipo de contexto de execução em que o script de gerenciamento de dispositivos é executado. Os valores possíveis são: `system` e `user`.|
+|enforceSignatureCheck|Booliano|Indica se a assinatura do script precisa ser verificada.|
 |fileName|String|Nome do arquivo de script.|
-|roleScopeTagIds|String collection|Lista de IDs de marca de escopo para essa instância do PowerShellScript.|
-|runAs32Bit|Boolean|Um valor que indica se o script do PowerShell deve ser executado como de 32 bits|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de IDs de marca de escopo para esta instância de PowerShellScript.|
+|runAs32Bit|Booliano|Um valor que indica se o script do PowerShell deve ser executado como 32 bits|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

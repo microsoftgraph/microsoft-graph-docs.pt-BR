@@ -1,21 +1,21 @@
 ---
-title: tipo de recurso de hardwareInformation
+title: tipo de recurso hardwareInformation
 description: Informações de hardware de um determinado dispositivo.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 32b6d0e637c477265a6d23f39e531ca89c7e490c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: be7d87f1d596a4756b3e964cd57f29da60f1c468
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29394821"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172874"
 ---
-# <a name="hardwareinformation-resource-type"></a>tipo de recurso de hardwareInformation
+# <a name="hardwareinformation-resource-type"></a>tipo de recurso hardwareInformation
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Informações de hardware de um determinado dispositivo.
 
@@ -24,26 +24,26 @@ Informações de hardware de um determinado dispositivo.
 |:---|:---|:---|
 |serialNumber|String|Número de série.|
 |totalStorageSpace|Int64|Espaço de armazenamento total do dispositivo.|
-|freeStorageSpace|Int64|Espaço livre de armazenamento do dispositivo.|
+|freeStorageSpace|Int64|Espaço de armazenamento livre do dispositivo.|
 |imei|String|IMEI|
 |meid|String|MEID|
 |fabricante|String|Fabricante do dispositivo|
 |modelo|String|Modelo do dispositivo|
 |phoneNumber|String|Número de telefone do dispositivo|
-|subscriberCarrier|String|Operadora de assinante do dispositivo|
-|cellularTechnology|String|Tecnologia de celular do dispositivo|
+|subscriberCarrier|String|Operadora do assinante do dispositivo|
+|cellularTechnology|String|Tecnologia celular do dispositivo|
 |wifiMac|String|Endereço MAC WiFi do dispositivo|
 |operatingSystemLanguage|String|Idioma do sistema operacional do dispositivo|
-|isSupervised|Boolean|Supervisionadas modo do dispositivo|
-|isEncrypted|Boolean|Status de criptografia do dispositivo|
-|isSharedDevice|Boolean|IPad compartilhado|
-|sharedDeviceCachedUsers|coleção [sharedAppleDeviceUser](../resources/intune-devices-sharedappledeviceuser.md)|Todos os usuários no compartilhados dispositivo Apple|
-|tpmSpecificationVersion|String|Cadeia de caracteres que especifica a versão de especificação.|
+|isSupervised|Booliano|Modo supervisionado do dispositivo|
+|isEncrypted|Booliano|Status de criptografia do dispositivo|
+|isSharedDevice|Booliano|IPad compartilhado|
+|sharedDeviceCachedUsers|coleção [sharedAppleDeviceUser](../resources/intune-devices-sharedappledeviceuser.md)|Todos os usuários no dispositivo Apple compartilhado|
+|tpmSpecificationVersion|String|Cadeia de caracteres que especifica a versão da especificação.|
 |operatingSystemEdition|String|Cadeia de caracteres que especifica a edição do sistema operacional.|
-|deviceFullQualifiedDomainName|String|Retorna o nome de domínio totalmente qualificado do dispositivo (se houver). Se o dispositivo não está associado ao domínio, ele retornará uma sequência vazia. |
-|deviceGuardVirtualizationBasedSecurityHardwareRequirementState|[deviceGuardVirtualizationBasedSecurityHardwareRequirementState](../resources/intune-devices-deviceguardvirtualizationbasedsecurityhardwarerequirementstate.md)|Status de requisito de hardware de segurança baseada em virtualização. Os valores possíveis são: `meetHardwareRequirements`, `secureBootRequired`, `dmaProtectionRequired`, `hyperVNotSupportedForGuestVM`, `hyperVNotAvailable`.|
-|deviceGuardVirtualizationBasedSecurityState|[deviceGuardVirtualizationBasedSecurityState](../resources/intune-devices-deviceguardvirtualizationbasedsecuritystate.md)|Status de segurança baseada em virtualização. . Os valores possíveis são: `running`, `rebootRequired`, `require64BitArchitecture`, `notLicensed`, `notConfigured`, `doesNotMeetHardwareRequirements`, `other`.|
-|deviceGuardLocalSystemAuthorityCredentialGuardState|[deviceGuardLocalSystemAuthorityCredentialGuardState](../resources/intune-devices-deviceguardlocalsystemauthoritycredentialguardstate.md)|Status do protetor de credencial sistema autoridade (LSA) local. . Os valores possíveis são: `running`, `rebootRequired`, `notLicensed`, `notConfigured`, `virtualizationBasedSecurityNotRunning`.|
+|deviceFullQualifiedDomainName|String|Retorna o nome de domínio totalmente qualificado do dispositivo (se houver algum). Se o dispositivo não ingressou no domínio, ele retornará uma cadeia de caracteres vazia. |
+|deviceGuardVirtualizationBasedSecurityHardwareRequirementState|[deviceGuardVirtualizationBasedSecurityHardwareRequirementState](../resources/intune-devices-deviceguardvirtualizationbasedsecurityhardwarerequirementstate.md)|Status do requisito de hardware de segurança baseado em virtualização. Os valores possíveis são: `meetHardwareRequirements`, `secureBootRequired`, `dmaProtectionRequired`, `hyperVNotSupportedForGuestVM`, `hyperVNotAvailable`.|
+|deviceGuardVirtualizationBasedSecurityState|[deviceGuardVirtualizationBasedSecurityState](../resources/intune-devices-deviceguardvirtualizationbasedsecuritystate.md)|Status de segurança baseado em virtualização. . Os valores possíveis são: `running`, `rebootRequired`, `require64BitArchitecture`, `notLicensed`, `notConfigured`, `doesNotMeetHardwareRequirements`, `other`.|
+|deviceGuardLocalSystemAuthorityCredentialGuardState|[deviceGuardLocalSystemAuthorityCredentialGuardState](../resources/intune-devices-deviceguardlocalsystemauthoritycredentialguardstate.md)|Status do LSA (autoridade do sistema local) . Os valores possíveis são: `running`, `rebootRequired`, `notLicensed`, `notConfigured`, `virtualizationBasedSecurityNotRunning`.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

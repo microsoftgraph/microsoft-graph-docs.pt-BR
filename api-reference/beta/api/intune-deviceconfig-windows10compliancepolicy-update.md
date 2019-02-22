@@ -1,21 +1,21 @@
 ---
 title: Atualizar windows10CompliancePolicy
 description: Atualiza as propriedades de um objeto windows10CompliancePolicy.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 776cd0a059b985667aa31e5ed08ad298aa111849
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: d4d24c0d964fd43e12c4fcd9a3ff91a0bcd1238b
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29396228"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172265"
 ---
 # <a name="update-windows10compliancepolicy"></a>Atualizar windows10CompliancePolicy
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Atualiza as propriedades de um objeto [windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy.md).
 
@@ -50,7 +50,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [windows10Compli
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|roleScopeTagIds|String collection|Lista de escopo marcas para essa instância da entidade. Herdado de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdado de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |id|String|Chave da entidade. Herdado de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdado de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdado de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
@@ -58,7 +58,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [windows10Compli
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdado de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |version|Int32|Versão da configuração do dispositivo. Herdado de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |passwordRequired|Booliano|Exige uma senha para desbloquear o dispositivo Windows.|
-|passwordBlockSimple|Booliano|Indica se a senha simples deve ou não ser bloqueada.|
+|passwordBlockSimple|Boolean|Indica se a senha simples deve ou não ser bloqueada.|
 |passwordRequiredToUnlockFromIdle|Booliano|Exige uma senha para desbloquear o dispositivo ocioso.|
 |passwordMinutesOfInactivityBeforeLock|Int32|Minutos de inatividade antes que uma senha seja necessária.|
 |passwordExpirationDays|Int32|A expiração da senha em dias.|
@@ -67,26 +67,26 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [windows10Compli
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|O tipo de senha necessária. Os valores possíveis são: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordPreviousPasswordBlockCount|Int32|O número de senhas anteriores cujo uso deve ser evitado.|
 |requireHealthyDeviceReport|Booliano|Exige que os dispositivos sejam indicados como íntegros pelo Atestado de Integridade do Dispositivo Windows.|
-|osMinimumVersion|Cadeia de caracteres|Versão mínima do Windows 10.|
-|osMaximumVersion|Cadeia de caracteres|Versão máxima do Windows 10.|
-|mobileOsMinimumVersion|Cadeia de caracteres|Versão mínima do Windows Phone.|
+|osMinimumVersion|String|Versão mínima do Windows 10.|
+|osMaximumVersion|String|Versão máxima do Windows 10.|
+|mobileOsMinimumVersion|String|Versão mínima do Windows Phone.|
 |mobileOsMaximumVersion|Cadeia de caracteres|Versão máxima do Windows Phone.|
-|earlyLaunchAntiMalwareDriverEnabled|Boolean|Exige que os dispositivos sejam indicados como íntegros pelo Atestado de Integridade do Dispositivo Windows - driver antimalware de inicialização antecipada habilitado.|
-|bitLockerEnabled|Boolean|Exige que os dispositivos sejam indicados como íntegros pelo Atestado de Integridade do Dispositivo Windows - bit locker desabilitado|
-|secureBootEnabled|Boolean|Exige que os dispositivos sejam indicados como íntegros pelo Atestado de Integridade do Dispositivo Windows - inicialização segura habilitada.|
-|codeIntegrityEnabled|Boolean|Exige que os dispositivos sejam indicados como íntegros pelo Atestado de Integridade do Dispositivo Windows.|
+|earlyLaunchAntiMalwareDriverEnabled|Booliano|Exige que os dispositivos sejam indicados como íntegros pelo Atestado de Integridade do Dispositivo Windows - driver antimalware de inicialização antecipada habilitado.|
+|bitLockerEnabled|Booliano|Exige que os dispositivos sejam indicados como íntegros pelo Atestado de Integridade do Dispositivo Windows - bit locker desabilitado|
+|secureBootEnabled|Booliano|Exige que os dispositivos sejam indicados como íntegros pelo Atestado de Integridade do Dispositivo Windows - inicialização segura habilitada.|
+|codeIntegrityEnabled|Booliano|Exige que os dispositivos sejam indicados como íntegros pelo Atestado de Integridade do Dispositivo Windows.|
 |storageRequireEncryption|Boolean|Exige criptografia em dispositivos Windows.|
-|activeFirewallRequired|Boolean|Exigir um firewall ativas em dispositivos do Windows.|
-|defenderEnabled|Boolean|Exigem o Windows Defender Antimalware em dispositivos do Windows.|
-|defenderVersion|String|Exigem a versão mínima do Windows Defender Antimalware em dispositivos do Windows.|
-|signatureOutOfDate|Boolean|Exigem o Windows Defender Antimalware assinatura a ser atualizado em dispositivos do Windows.|
-|rtpEnabled|Boolean|Exigem proteção em tempo real do Windows Defender Antimalware em dispositivos do Windows.|
-|antivirusRequired|Boolean|Exigir qualquer solução antivírus registrado na Central de Decurity do Windows para estar ligado e monitoramento (ex.: Symantec, Windows Defender).|
-|antiSpywareRequired|Boolean|Exigir qualquer solução de AntiSpyware registrado na Central de Decurity do Windows para estar ligado e monitoramento (ex.: Symantec, Windows Defender).|
-|validOperatingSystemBuildRanges|coleção [operatingSystemVersionRange](../resources/intune-deviceconfig-operatingsystemversionrange.md)|O sistema operacional válido criar intervalos em dispositivos do Windows. Essa coleção pode conter um máximo de 10.000 elementos.|
-|deviceThreatProtectionEnabled|Boolean|Exige que os dispositivos tenham habilitada a proteção contra ameaças.|
-|deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Exigir o nível de risco mínimo de proteção contra ameaças de dispositivo a ser relatado não-conformidade. Os possíveis valores são: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
-|configurationManagerComplianceRequired|Boolean|Exigem a considerar o estado de conformidade do SCCM em consideração para Intune estado de conformidade.|
+|Propriedades activefirewallrequired|Booliano|Exigir firewall ativo em dispositivos Windows.|
+|defenderEnabled|Booliano|Requer o Windows Defender Antimalware em dispositivos Windows.|
+|defenderVersion|String|Requer a versão mínima do Windows Defender Antimalware em dispositivos Windows.|
+|signatureOutOfDate|Booliano|Requer que a assinatura antimalware do Windows Defender esteja atualizada em dispositivos Windows.|
+|rtpEnabled|Booliano|Requer a proteção em tempo real do Windows Defender Antimalware em dispositivos Windows.|
+|antivirusRequired|Booliano|Exigir que qualquer solução antivírus registrada com o Windows Decurity Center seja ativada e monitorando (por exemplo, Symantec, Windows Defender).|
+|antiSpywareRequired|Booliano|Exija que qualquer solução AntiSpyware registrada com o Windows Decurity Center seja ativada e monitoramento (por exemplo, Symantec, Windows Defender).|
+|validOperatingSystemBuildRanges|coleção [operatingSystemVersionRange](../resources/intune-deviceconfig-operatingsystemversionrange.md)|Os intervalos válidos da compilação do sistema operacional em dispositivos Windows. Essa coleção pode conter um máximo de 10.000 elementos.|
+|deviceThreatProtectionEnabled|Booliano|Exige que os dispositivos tenham habilitada a proteção contra ameaças.|
+|deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Requer nível mínimo de risco de proteção contra ameaças ao dispositivo para relatar não conformidade. Os possíveis valores são: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
+|configurationManagerComplianceRequired|Booliano|Exigir que o estado de conformidade do SCCM seja considerado para o estado de conformidade do Intune.|
 
 
 

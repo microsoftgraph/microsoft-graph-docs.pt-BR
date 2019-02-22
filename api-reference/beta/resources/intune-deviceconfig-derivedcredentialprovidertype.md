@@ -1,32 +1,32 @@
 ---
-title: tipo de enum derivedCredentialProviderType
-description: Tipo de provedor de credenciais derivados.
-localization_priority: Normal
+title: tipo de enumeração derivedCredentialProviderType
+description: Tipo de provedor para credenciais derivadas.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ad4f77b23e1d5b89a39c39fb174c953ebe422bd1
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8e57a9874d1870a01a4be445bd23ca6210af18d1
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29431313"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30175308"
 ---
-# <a name="derivedcredentialprovidertype-enum-type"></a>tipo de enum derivedCredentialProviderType
+# <a name="derivedcredentialprovidertype-enum-type"></a>tipo de enumeração derivedCredentialProviderType
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Tipo de provedor de credenciais derivados.
+Tipo de provedor para credenciais derivadas.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|não-configuradas|0|Nenhum provedor de credencial derivada configurado.|
-|entrustDataCard|1|Entrust DataCard.|
-|purebred|2|Purebred - Defense Information Systems Agency.|
-|xTec|3|Xtec - AuthentX.|
-|interceder|4|Interceder.|
+|notConfigured|,0|Nenhum provedor de credenciais derivado configurado.|
+|entrustDataCard|1|Cartão de Entrust.|
+|purebred|duas|Agência de sistemas de informações do purebred-Defense.|
+|xTec|3D|Xtec-AuthentX.|
+|intercede|quatro|Intercede.|
 
 
 

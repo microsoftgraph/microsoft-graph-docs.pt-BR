@@ -1,21 +1,21 @@
 ---
 title: Tipo de recurso managedDeviceOverview
 description: Dados de resumo de dispositivos gerenciados
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: db5cebe36850971c871f673d07f18b8d5121cb1b
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e6c7187bc5cb984e4ca7e607068e6010f747f868
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422233"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30175000"
 ---
 # <a name="manageddeviceoverview-resource-type"></a>Tipo de recurso managedDeviceOverview
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Dados de resumo de dispositivos gerenciados
 
@@ -34,8 +34,8 @@ Dados de resumo de dispositivos gerenciados
 |dualEnrolledDeviceCount|Int32|O número de dispositivos registrados no MDM e no EAS|
 |deviceOperatingSystemSummary|[deviceOperatingSystemSummary](../resources/intune-devices-deviceoperatingsystemsummary.md)|Resumo do sistema operacional do dispositivo.|
 |deviceExchangeAccessStateSummary|[deviceExchangeAccessStateSummary](../resources/intune-devices-deviceexchangeaccessstatesummary.md)|Distribuição do Estado de acesso do Exchange no Intune|
-|managedDeviceModelsAndManufacturers|[managedDeviceModelsAndManufacturers](../resources/intune-devices-manageddevicemodelsandmanufacturers.md)|Modelos e fabricantes meatadata para dispositivos gerenciados na conta|
-|lastModifiedDateTime|DateTimeOffset|Última data modificada hora de visão geral do dispositivo|
+|managedDeviceModelsAndManufacturers|[managedDeviceModelsAndManufacturers](../resources/intune-devices-manageddevicemodelsandmanufacturers.md)|Modela e fabrica meatadata para dispositivos gerenciados na conta|
+|lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação da visão geral do dispositivo|
 
 ## <a name="relationships"></a>Relações
 Nenhum
