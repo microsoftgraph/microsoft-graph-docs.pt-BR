@@ -1,31 +1,31 @@
 ---
-title: tipo de enum installIntent
-description: Valores possíveis para a intenção de instalar escolhido pelo administrador a.
-localization_priority: Normal
+title: tipo de enumeração installIntent
+description: Valores possíveis para o propósito de instalação escolhido pelo administrador.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 386214850534080e59c5c14786fdba69d45d31f0
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 0a6c000524d8179643b4a32d47ca05df9c7b32de
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29405447"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30161254"
 ---
-# <a name="installintent-enum-type"></a><span data-ttu-id="63abb-103">tipo de enum installIntent</span><span class="sxs-lookup"><span data-stu-id="63abb-103">installIntent enum type</span></span>
+# <a name="installintent-enum-type"></a><span data-ttu-id="e1aa4-103">tipo de enumeração installIntent</span><span class="sxs-lookup"><span data-stu-id="e1aa4-103">installIntent enum type</span></span>
 
-> <span data-ttu-id="63abb-104">**Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações.</span><span class="sxs-lookup"><span data-stu-id="63abb-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="63abb-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="63abb-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="e1aa4-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="e1aa4-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="63abb-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.</span><span class="sxs-lookup"><span data-stu-id="63abb-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="e1aa4-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="e1aa4-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="63abb-107">Valores possíveis para a intenção de instalar escolhido pelo administrador a.</span><span class="sxs-lookup"><span data-stu-id="63abb-107">Possible values for the install intent chosen by the admin.</span></span>
+<span data-ttu-id="e1aa4-106">Valores possíveis para o propósito de instalação escolhido pelo administrador.</span><span class="sxs-lookup"><span data-stu-id="e1aa4-106">Possible values for the install intent chosen by the admin.</span></span>
 
-## <a name="members"></a><span data-ttu-id="63abb-108">Membros</span><span class="sxs-lookup"><span data-stu-id="63abb-108">Members</span></span>
-|<span data-ttu-id="63abb-109">Membro</span><span class="sxs-lookup"><span data-stu-id="63abb-109">Member</span></span>|<span data-ttu-id="63abb-110">Valor</span><span class="sxs-lookup"><span data-stu-id="63abb-110">Value</span></span>|<span data-ttu-id="63abb-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="63abb-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="e1aa4-107">Membros</span><span class="sxs-lookup"><span data-stu-id="e1aa4-107">Members</span></span>
+|<span data-ttu-id="e1aa4-108">Membro</span><span class="sxs-lookup"><span data-stu-id="e1aa4-108">Member</span></span>|<span data-ttu-id="e1aa4-109">Valor</span><span class="sxs-lookup"><span data-stu-id="e1aa4-109">Value</span></span>|<span data-ttu-id="e1aa4-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="e1aa4-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="63abb-112">disponível</span><span class="sxs-lookup"><span data-stu-id="63abb-112">available</span></span>|<span data-ttu-id="63abb-113">0</span><span class="sxs-lookup"><span data-stu-id="63abb-113">0</span></span>|<span data-ttu-id="63abb-114">Intenção de instalação disponíveis.</span><span class="sxs-lookup"><span data-stu-id="63abb-114">Available install intent.</span></span>|
-|<span data-ttu-id="63abb-115">obrigatório</span><span class="sxs-lookup"><span data-stu-id="63abb-115">required</span></span>|<span data-ttu-id="63abb-116">1</span><span class="sxs-lookup"><span data-stu-id="63abb-116">1</span></span>|<span data-ttu-id="63abb-117">Intenção de instalação necessários.</span><span class="sxs-lookup"><span data-stu-id="63abb-117">Required install intent.</span></span>|
-|<span data-ttu-id="63abb-118">desinstalar</span><span class="sxs-lookup"><span data-stu-id="63abb-118">uninstall</span></span>|<span data-ttu-id="63abb-119">2</span><span class="sxs-lookup"><span data-stu-id="63abb-119">2</span></span>|<span data-ttu-id="63abb-120">Desinstale a intenção de instalação.</span><span class="sxs-lookup"><span data-stu-id="63abb-120">Uninstall install intent.</span></span>|
-|<span data-ttu-id="63abb-121">availableWithoutEnrollment</span><span class="sxs-lookup"><span data-stu-id="63abb-121">availableWithoutEnrollment</span></span>|<span data-ttu-id="63abb-122">3</span><span class="sxs-lookup"><span data-stu-id="63abb-122">3</span></span>|<span data-ttu-id="63abb-123">Disponível sem intenção de instalação de inscrição.</span><span class="sxs-lookup"><span data-stu-id="63abb-123">Available without enrollment install intent.</span></span>|
+|<span data-ttu-id="e1aa4-111">disponível</span><span class="sxs-lookup"><span data-stu-id="e1aa4-111">available</span></span>|<span data-ttu-id="e1aa4-112">,0</span><span class="sxs-lookup"><span data-stu-id="e1aa4-112">0</span></span>|<span data-ttu-id="e1aa4-113">Tentativa de instalação disponível.</span><span class="sxs-lookup"><span data-stu-id="e1aa4-113">Available install intent.</span></span>|
+|<span data-ttu-id="e1aa4-114">obrigatório</span><span class="sxs-lookup"><span data-stu-id="e1aa4-114">required</span></span>|<span data-ttu-id="e1aa4-115">1</span><span class="sxs-lookup"><span data-stu-id="e1aa4-115">1</span></span>|<span data-ttu-id="e1aa4-116">Tentativa de instalação necessária.</span><span class="sxs-lookup"><span data-stu-id="e1aa4-116">Required install intent.</span></span>|
+|<span data-ttu-id="e1aa4-117">INTAL</span><span class="sxs-lookup"><span data-stu-id="e1aa4-117">uninstall</span></span>|<span data-ttu-id="e1aa4-118">duas</span><span class="sxs-lookup"><span data-stu-id="e1aa4-118">2</span></span>|<span data-ttu-id="e1aa4-119">Tentativa de instalação de desInstalação.</span><span class="sxs-lookup"><span data-stu-id="e1aa4-119">Uninstall install intent.</span></span>|
+|<span data-ttu-id="e1aa4-120">availableWithoutEnrollment</span><span class="sxs-lookup"><span data-stu-id="e1aa4-120">availableWithoutEnrollment</span></span>|<span data-ttu-id="e1aa4-121">3D</span><span class="sxs-lookup"><span data-stu-id="e1aa4-121">3</span></span>|<span data-ttu-id="e1aa4-122">Disponível sem a intenção de instalação do registro.</span><span class="sxs-lookup"><span data-stu-id="e1aa4-122">Available without enrollment install intent.</span></span>|
 
 
 

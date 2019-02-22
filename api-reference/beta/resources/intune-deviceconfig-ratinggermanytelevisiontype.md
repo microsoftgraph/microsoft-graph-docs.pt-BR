@@ -1,34 +1,34 @@
 ---
-title: tipo de enum ratingGermanyTelevisionType
+title: tipo de enumeração ratingGermanyTelevisionType
 description: Rótulos de classificação de conteúdo de TV na Alemanha
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d9bbe383b13e5a6f3d9ec704977b284eaf740aed
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 5efdbf5f9bd9aa3d29c366a0e3769aa29b6f411c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29424613"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30158139"
 ---
-# <a name="ratinggermanytelevisiontype-enum-type"></a><span data-ttu-id="86f11-103">tipo de enum ratingGermanyTelevisionType</span><span class="sxs-lookup"><span data-stu-id="86f11-103">ratingGermanyTelevisionType enum type</span></span>
+# <a name="ratinggermanytelevisiontype-enum-type"></a><span data-ttu-id="86266-103">tipo de enumeração ratingGermanyTelevisionType</span><span class="sxs-lookup"><span data-stu-id="86266-103">ratingGermanyTelevisionType enum type</span></span>
 
-> <span data-ttu-id="86f11-104">**Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações.</span><span class="sxs-lookup"><span data-stu-id="86f11-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="86f11-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="86f11-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="86266-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="86266-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="86f11-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.</span><span class="sxs-lookup"><span data-stu-id="86f11-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="86266-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="86266-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="86f11-107">Rótulos de classificação de conteúdo de TV na Alemanha</span><span class="sxs-lookup"><span data-stu-id="86f11-107">TV content rating labels in Germany</span></span>
+<span data-ttu-id="86266-106">Rótulos de classificação de conteúdo de TV na Alemanha</span><span class="sxs-lookup"><span data-stu-id="86266-106">TV content rating labels in Germany</span></span>
 
-## <a name="members"></a><span data-ttu-id="86f11-108">Membros</span><span class="sxs-lookup"><span data-stu-id="86f11-108">Members</span></span>
-|<span data-ttu-id="86f11-109">Membro</span><span class="sxs-lookup"><span data-stu-id="86f11-109">Member</span></span>|<span data-ttu-id="86f11-110">Valor</span><span class="sxs-lookup"><span data-stu-id="86f11-110">Value</span></span>|<span data-ttu-id="86f11-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="86f11-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="86266-107">Membros</span><span class="sxs-lookup"><span data-stu-id="86266-107">Members</span></span>
+|<span data-ttu-id="86266-108">Membro</span><span class="sxs-lookup"><span data-stu-id="86266-108">Member</span></span>|<span data-ttu-id="86266-109">Valor</span><span class="sxs-lookup"><span data-stu-id="86266-109">Value</span></span>|<span data-ttu-id="86266-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="86266-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="86f11-112">allAllowed</span><span class="sxs-lookup"><span data-stu-id="86f11-112">allAllowed</span></span>|<span data-ttu-id="86f11-113">0</span><span class="sxs-lookup"><span data-stu-id="86f11-113">0</span></span>|<span data-ttu-id="86f11-114">Valor padrão, para permitir que todos os TV mostra conteúdo</span><span class="sxs-lookup"><span data-stu-id="86f11-114">Default value, allow all TV shows content</span></span>|
-|<span data-ttu-id="86f11-115">allBlocked</span><span class="sxs-lookup"><span data-stu-id="86f11-115">allBlocked</span></span>|<span data-ttu-id="86f11-116">1</span><span class="sxs-lookup"><span data-stu-id="86f11-116">1</span></span>|<span data-ttu-id="86f11-117">Não permitir que qualquer TV mostra conteúdo</span><span class="sxs-lookup"><span data-stu-id="86f11-117">Do not allow any TV shows content</span></span>|
-|<span data-ttu-id="86f11-118">geral</span><span class="sxs-lookup"><span data-stu-id="86f11-118">general</span></span>|<span data-ttu-id="86f11-119">2</span><span class="sxs-lookup"><span data-stu-id="86f11-119">2</span></span>|<span data-ttu-id="86f11-120">Jahren AB 0, não há restrições de idade</span><span class="sxs-lookup"><span data-stu-id="86f11-120">Ab 0 Jahren, no age restrictions</span></span>|
-|<span data-ttu-id="86f11-121">agesAbove6</span><span class="sxs-lookup"><span data-stu-id="86f11-121">agesAbove6</span></span>|<span data-ttu-id="86f11-122">3</span><span class="sxs-lookup"><span data-stu-id="86f11-122">3</span></span>|<span data-ttu-id="86f11-123">Jahren de 6 AB, expira antigas e 6</span><span class="sxs-lookup"><span data-stu-id="86f11-123">Ab 6 Jahren, ages 6 and older</span></span>|
-|<span data-ttu-id="86f11-124">agesAbove12</span><span class="sxs-lookup"><span data-stu-id="86f11-124">agesAbove12</span></span>|<span data-ttu-id="86f11-125">4</span><span class="sxs-lookup"><span data-stu-id="86f11-125">4</span></span>|<span data-ttu-id="86f11-126">Jahren de 12 AB, expira antigas e 12</span><span class="sxs-lookup"><span data-stu-id="86f11-126">Ab 12 Jahren, ages 12 and older</span></span>|
-|<span data-ttu-id="86f11-127">agesAbove16</span><span class="sxs-lookup"><span data-stu-id="86f11-127">agesAbove16</span></span>|<span data-ttu-id="86f11-128">5</span><span class="sxs-lookup"><span data-stu-id="86f11-128">5</span></span>|<span data-ttu-id="86f11-129">Jahren de 16 AB, expira antigas e 16</span><span class="sxs-lookup"><span data-stu-id="86f11-129">Ab 16 Jahren, ages 16 and older</span></span>|
-|<span data-ttu-id="86f11-130">adultos</span><span class="sxs-lookup"><span data-stu-id="86f11-130">adults</span></span>|<span data-ttu-id="86f11-131">6</span><span class="sxs-lookup"><span data-stu-id="86f11-131">6</span></span>|<span data-ttu-id="86f11-132">AB 18 Jahren, somente para adultos</span><span class="sxs-lookup"><span data-stu-id="86f11-132">Ab 18 Jahren, adults only</span></span>|
+|<span data-ttu-id="86266-111">Permitido</span><span class="sxs-lookup"><span data-stu-id="86266-111">allAllowed</span></span>|<span data-ttu-id="86266-112">,0</span><span class="sxs-lookup"><span data-stu-id="86266-112">0</span></span>|<span data-ttu-id="86266-113">Valor padrão, permitir todos os programas de TV</span><span class="sxs-lookup"><span data-stu-id="86266-113">Default value, allow all TV shows content</span></span>|
+|<span data-ttu-id="86266-114">Bloqueado</span><span class="sxs-lookup"><span data-stu-id="86266-114">allBlocked</span></span>|<span data-ttu-id="86266-115">1</span><span class="sxs-lookup"><span data-stu-id="86266-115">1</span></span>|<span data-ttu-id="86266-116">Não permitir que qualquer TV mostre conteúdo</span><span class="sxs-lookup"><span data-stu-id="86266-116">Do not allow any TV shows content</span></span>|
+|<span data-ttu-id="86266-117">geral</span><span class="sxs-lookup"><span data-stu-id="86266-117">general</span></span>|<span data-ttu-id="86266-118">duas</span><span class="sxs-lookup"><span data-stu-id="86266-118">2</span></span>|<span data-ttu-id="86266-119">AB 0 Jahren, sem restrições de idade</span><span class="sxs-lookup"><span data-stu-id="86266-119">Ab 0 Jahren, no age restrictions</span></span>|
+|<span data-ttu-id="86266-120">agesAbove6</span><span class="sxs-lookup"><span data-stu-id="86266-120">agesAbove6</span></span>|<span data-ttu-id="86266-121">3D</span><span class="sxs-lookup"><span data-stu-id="86266-121">3</span></span>|<span data-ttu-id="86266-122">AB 6 Jahren, anos 6 ou mais</span><span class="sxs-lookup"><span data-stu-id="86266-122">Ab 6 Jahren, ages 6 and older</span></span>|
+|<span data-ttu-id="86266-123">agesAbove12</span><span class="sxs-lookup"><span data-stu-id="86266-123">agesAbove12</span></span>|<span data-ttu-id="86266-124">quatro</span><span class="sxs-lookup"><span data-stu-id="86266-124">4</span></span>|<span data-ttu-id="86266-125">AB 12 Jahren, 12 anos ou mais</span><span class="sxs-lookup"><span data-stu-id="86266-125">Ab 12 Jahren, ages 12 and older</span></span>|
+|<span data-ttu-id="86266-126">agesAbove16</span><span class="sxs-lookup"><span data-stu-id="86266-126">agesAbove16</span></span>|<span data-ttu-id="86266-127">0,5</span><span class="sxs-lookup"><span data-stu-id="86266-127">5</span></span>|<span data-ttu-id="86266-128">AB 16 Jahren, 16 anos ou mais</span><span class="sxs-lookup"><span data-stu-id="86266-128">Ab 16 Jahren, ages 16 and older</span></span>|
+|<span data-ttu-id="86266-129">adultos</span><span class="sxs-lookup"><span data-stu-id="86266-129">adults</span></span>|<span data-ttu-id="86266-130">6</span><span class="sxs-lookup"><span data-stu-id="86266-130">6</span></span>|<span data-ttu-id="86266-131">AB 18 Jahren, somente adultos</span><span class="sxs-lookup"><span data-stu-id="86266-131">Ab 18 Jahren, adults only</span></span>|
 
 
 
