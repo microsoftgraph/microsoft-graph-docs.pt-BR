@@ -1,34 +1,34 @@
 ---
-title: tipo de enum androidDeviceOwnerRequiredPasswordType
-description: Política do proprietário do dispositivo Android necessários tipo de senha.
-localization_priority: Normal
+title: tipo de enumeração androidDeviceOwnerRequiredPasswordType
+description: Política de proprietário do dispositivo Android tipo de senha exigido.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c405cf3a69597994d5539427698baa92cabd3904
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 79d71fbabc4597c87c9cee782904334e2f12d7e8
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29403536"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172587"
 ---
-# <a name="androiddeviceownerrequiredpasswordtype-enum-type"></a><span data-ttu-id="9530f-103">tipo de enum androidDeviceOwnerRequiredPasswordType</span><span class="sxs-lookup"><span data-stu-id="9530f-103">androidDeviceOwnerRequiredPasswordType enum type</span></span>
+# <a name="androiddeviceownerrequiredpasswordtype-enum-type"></a><span data-ttu-id="6695a-103">tipo de enumeração androidDeviceOwnerRequiredPasswordType</span><span class="sxs-lookup"><span data-stu-id="6695a-103">androidDeviceOwnerRequiredPasswordType enum type</span></span>
 
-> <span data-ttu-id="9530f-104">**Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações.</span><span class="sxs-lookup"><span data-stu-id="9530f-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="9530f-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="9530f-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="6695a-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="6695a-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="9530f-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.</span><span class="sxs-lookup"><span data-stu-id="9530f-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="6695a-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="6695a-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="9530f-107">Política do proprietário do dispositivo Android necessários tipo de senha.</span><span class="sxs-lookup"><span data-stu-id="9530f-107">Android Device Owner policy required password type.</span></span>
+<span data-ttu-id="6695a-106">Política de proprietário do dispositivo Android tipo de senha exigido.</span><span class="sxs-lookup"><span data-stu-id="6695a-106">Android Device Owner policy required password type.</span></span>
 
-## <a name="members"></a><span data-ttu-id="9530f-108">Membros</span><span class="sxs-lookup"><span data-stu-id="9530f-108">Members</span></span>
-|<span data-ttu-id="9530f-109">Membro</span><span class="sxs-lookup"><span data-stu-id="9530f-109">Member</span></span>|<span data-ttu-id="9530f-110">Valor</span><span class="sxs-lookup"><span data-stu-id="9530f-110">Value</span></span>|<span data-ttu-id="9530f-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="9530f-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="6695a-107">Membros</span><span class="sxs-lookup"><span data-stu-id="6695a-107">Members</span></span>
+|<span data-ttu-id="6695a-108">Membro</span><span class="sxs-lookup"><span data-stu-id="6695a-108">Member</span></span>|<span data-ttu-id="6695a-109">Valor</span><span class="sxs-lookup"><span data-stu-id="6695a-109">Value</span></span>|<span data-ttu-id="6695a-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="6695a-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="9530f-112">deviceDefault</span><span class="sxs-lookup"><span data-stu-id="9530f-112">deviceDefault</span></span>|<span data-ttu-id="9530f-113">0</span><span class="sxs-lookup"><span data-stu-id="9530f-113">0</span></span>|<span data-ttu-id="9530f-114">Valor de padrão de dispositivo, sem intenção.</span><span class="sxs-lookup"><span data-stu-id="9530f-114">Device default value, no intent.</span></span>|
-|<span data-ttu-id="9530f-115">obrigatório</span><span class="sxs-lookup"><span data-stu-id="9530f-115">required</span></span>|<span data-ttu-id="9530f-116">1</span><span class="sxs-lookup"><span data-stu-id="9530f-116">1</span></span>|<span data-ttu-id="9530f-117">Deve haver um conjunto de senha, mas não existem restrições no tipo.</span><span class="sxs-lookup"><span data-stu-id="9530f-117">There must be a password set, but there are no restrictions on type.</span></span>|
-|<span data-ttu-id="9530f-118">numéricos</span><span class="sxs-lookup"><span data-stu-id="9530f-118">numeric</span></span>|<span data-ttu-id="9530f-119">2</span><span class="sxs-lookup"><span data-stu-id="9530f-119">2</span></span>|<span data-ttu-id="9530f-120">AT menos numérico.</span><span class="sxs-lookup"><span data-stu-id="9530f-120">At least numeric.</span></span>|
-|<span data-ttu-id="9530f-121">numericComplex</span><span class="sxs-lookup"><span data-stu-id="9530f-121">numericComplex</span></span>|<span data-ttu-id="9530f-122">3</span><span class="sxs-lookup"><span data-stu-id="9530f-122">3</span></span>|<span data-ttu-id="9530f-123">AT menos numérico com sequências de repetição ou ordenadas.</span><span class="sxs-lookup"><span data-stu-id="9530f-123">At least numeric with no repeating or ordered sequences.</span></span>|
-|<span data-ttu-id="9530f-124">alfabético</span><span class="sxs-lookup"><span data-stu-id="9530f-124">alphabetic</span></span>|<span data-ttu-id="9530f-125">4</span><span class="sxs-lookup"><span data-stu-id="9530f-125">4</span></span>|<span data-ttu-id="9530f-126">Senha de pelo menos alfabética.</span><span class="sxs-lookup"><span data-stu-id="9530f-126">At least alphabetic password.</span></span>|
-|<span data-ttu-id="9530f-127">alfanumérico</span><span class="sxs-lookup"><span data-stu-id="9530f-127">alphanumeric</span></span>|<span data-ttu-id="9530f-128">5</span><span class="sxs-lookup"><span data-stu-id="9530f-128">5</span></span>|<span data-ttu-id="9530f-129">Senha alfanumérica pelo menos</span><span class="sxs-lookup"><span data-stu-id="9530f-129">At least alphanumeric password</span></span>|
-|<span data-ttu-id="9530f-130">alphanumericWithSymbols</span><span class="sxs-lookup"><span data-stu-id="9530f-130">alphanumericWithSymbols</span></span>|<span data-ttu-id="9530f-131">6</span><span class="sxs-lookup"><span data-stu-id="9530f-131">6</span></span>|<span data-ttu-id="9530f-132">Pelo menos alfanumérico com símbolos.</span><span class="sxs-lookup"><span data-stu-id="9530f-132">At least alphanumeric with symbols.</span></span>|
+|<span data-ttu-id="6695a-111">deviceDefault</span><span class="sxs-lookup"><span data-stu-id="6695a-111">deviceDefault</span></span>|<span data-ttu-id="6695a-112">,0</span><span class="sxs-lookup"><span data-stu-id="6695a-112">0</span></span>|<span data-ttu-id="6695a-113">Valor padrão do dispositivo, sem intenção.</span><span class="sxs-lookup"><span data-stu-id="6695a-113">Device default value, no intent.</span></span>|
+|<span data-ttu-id="6695a-114">obrigatório</span><span class="sxs-lookup"><span data-stu-id="6695a-114">required</span></span>|<span data-ttu-id="6695a-115">1</span><span class="sxs-lookup"><span data-stu-id="6695a-115">1</span></span>|<span data-ttu-id="6695a-116">Deve haver uma senha definida, mas não há restrições no tipo.</span><span class="sxs-lookup"><span data-stu-id="6695a-116">There must be a password set, but there are no restrictions on type.</span></span>|
+|<span data-ttu-id="6695a-117">numéricos</span><span class="sxs-lookup"><span data-stu-id="6695a-117">numeric</span></span>|<span data-ttu-id="6695a-118">duas</span><span class="sxs-lookup"><span data-stu-id="6695a-118">2</span></span>|<span data-ttu-id="6695a-119">Pelo menos numérico.</span><span class="sxs-lookup"><span data-stu-id="6695a-119">At least numeric.</span></span>|
+|<span data-ttu-id="6695a-120">numericComplex</span><span class="sxs-lookup"><span data-stu-id="6695a-120">numericComplex</span></span>|<span data-ttu-id="6695a-121">3D</span><span class="sxs-lookup"><span data-stu-id="6695a-121">3</span></span>|<span data-ttu-id="6695a-122">Pelo menos numérico sem sequências de repetição ou ordenadas.</span><span class="sxs-lookup"><span data-stu-id="6695a-122">At least numeric with no repeating or ordered sequences.</span></span>|
+|<span data-ttu-id="6695a-123">caracteres</span><span class="sxs-lookup"><span data-stu-id="6695a-123">alphabetic</span></span>|<span data-ttu-id="6695a-124">quatro</span><span class="sxs-lookup"><span data-stu-id="6695a-124">4</span></span>|<span data-ttu-id="6695a-125">Pelo menos a senha alfabética.</span><span class="sxs-lookup"><span data-stu-id="6695a-125">At least alphabetic password.</span></span>|
+|<span data-ttu-id="6695a-126">tecla</span><span class="sxs-lookup"><span data-stu-id="6695a-126">alphanumeric</span></span>|<span data-ttu-id="6695a-127">0,5</span><span class="sxs-lookup"><span data-stu-id="6695a-127">5</span></span>|<span data-ttu-id="6695a-128">Pelo menos a senha alfanumérica</span><span class="sxs-lookup"><span data-stu-id="6695a-128">At least alphanumeric password</span></span>|
+|<span data-ttu-id="6695a-129">alphanumericWithSymbols</span><span class="sxs-lookup"><span data-stu-id="6695a-129">alphanumericWithSymbols</span></span>|<span data-ttu-id="6695a-130">6</span><span class="sxs-lookup"><span data-stu-id="6695a-130">6</span></span>|<span data-ttu-id="6695a-131">Pelo menos alfanumérico com símbolos.</span><span class="sxs-lookup"><span data-stu-id="6695a-131">At least alphanumeric with symbols.</span></span>|
 
 
 

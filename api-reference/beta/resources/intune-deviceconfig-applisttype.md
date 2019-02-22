@@ -1,30 +1,30 @@
 ---
-title: tipo de enum appListType
-description: Possíveis valores da lista de aplicativos de conformidade.
-localization_priority: Normal
+title: tipo de enumeração appListType
+description: Valores possíveis da lista de aplicativos de conformidade.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cf8930136b00b7b5579ec5e7266b6a77a9a11968
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 3b7d11107ca3ea2b698e28cd288f163ec190b0a6
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415219"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172671"
 ---
-# <a name="applisttype-enum-type"></a><span data-ttu-id="14eca-103">tipo de enum appListType</span><span class="sxs-lookup"><span data-stu-id="14eca-103">appListType enum type</span></span>
+# <a name="applisttype-enum-type"></a><span data-ttu-id="297e0-103">tipo de enumeração appListType</span><span class="sxs-lookup"><span data-stu-id="297e0-103">appListType enum type</span></span>
 
-> <span data-ttu-id="14eca-104">**Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações.</span><span class="sxs-lookup"><span data-stu-id="14eca-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="14eca-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="14eca-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="297e0-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="297e0-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="14eca-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.</span><span class="sxs-lookup"><span data-stu-id="14eca-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="297e0-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="297e0-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="14eca-107">Possíveis valores da lista de aplicativos de conformidade.</span><span class="sxs-lookup"><span data-stu-id="14eca-107">Possible values of the compliance app list.</span></span>
+<span data-ttu-id="297e0-106">Valores possíveis da lista de aplicativos de conformidade.</span><span class="sxs-lookup"><span data-stu-id="297e0-106">Possible values of the compliance app list.</span></span>
 
-## <a name="members"></a><span data-ttu-id="14eca-108">Membros</span><span class="sxs-lookup"><span data-stu-id="14eca-108">Members</span></span>
-|<span data-ttu-id="14eca-109">Membro</span><span class="sxs-lookup"><span data-stu-id="14eca-109">Member</span></span>|<span data-ttu-id="14eca-110">Valor</span><span class="sxs-lookup"><span data-stu-id="14eca-110">Value</span></span>|<span data-ttu-id="14eca-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="14eca-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="297e0-107">Membros</span><span class="sxs-lookup"><span data-stu-id="297e0-107">Members</span></span>
+|<span data-ttu-id="297e0-108">Membro</span><span class="sxs-lookup"><span data-stu-id="297e0-108">Member</span></span>|<span data-ttu-id="297e0-109">Valor</span><span class="sxs-lookup"><span data-stu-id="297e0-109">Value</span></span>|<span data-ttu-id="297e0-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="297e0-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="14eca-112">none</span><span class="sxs-lookup"><span data-stu-id="14eca-112">none</span></span>|<span data-ttu-id="14eca-113">0</span><span class="sxs-lookup"><span data-stu-id="14eca-113">0</span></span>|<span data-ttu-id="14eca-114">Valor padrão, sem intenção.</span><span class="sxs-lookup"><span data-stu-id="14eca-114">Default value, no intent.</span></span>|
-|<span data-ttu-id="14eca-115">appsInListCompliant</span><span class="sxs-lookup"><span data-stu-id="14eca-115">appsInListCompliant</span></span>|<span data-ttu-id="14eca-116">1</span><span class="sxs-lookup"><span data-stu-id="14eca-116">1</span></span>|<span data-ttu-id="14eca-117">A lista representa os aplicativos que serão considerados compatível com (somente aplicativos na lista são compatíveis com).</span><span class="sxs-lookup"><span data-stu-id="14eca-117">The list represents the apps that will be considered compliant (only apps on the list are compliant).</span></span>|
-|<span data-ttu-id="14eca-118">appsNotInListCompliant</span><span class="sxs-lookup"><span data-stu-id="14eca-118">appsNotInListCompliant</span></span>|<span data-ttu-id="14eca-119">2</span><span class="sxs-lookup"><span data-stu-id="14eca-119">2</span></span>|<span data-ttu-id="14eca-120">A lista representa os aplicativos que serão considerados não compatível com (todos os aplicativos são compatíveis, exceto os aplicativos na lista).</span><span class="sxs-lookup"><span data-stu-id="14eca-120">The list represents the apps that will be considered non compliant (all apps are compliant except apps on the list).</span></span>|
+|<span data-ttu-id="297e0-111">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="297e0-111">none</span></span>|<span data-ttu-id="297e0-112">,0</span><span class="sxs-lookup"><span data-stu-id="297e0-112">0</span></span>|<span data-ttu-id="297e0-113">Valor padrão, sem intenção.</span><span class="sxs-lookup"><span data-stu-id="297e0-113">Default value, no intent.</span></span>|
+|<span data-ttu-id="297e0-114">appsInListCompliant</span><span class="sxs-lookup"><span data-stu-id="297e0-114">appsInListCompliant</span></span>|<span data-ttu-id="297e0-115">1</span><span class="sxs-lookup"><span data-stu-id="297e0-115">1</span></span>|<span data-ttu-id="297e0-116">A lista representa os aplicativos que serão considerados compatíveis (apenas os aplicativos na lista são compatíveis).</span><span class="sxs-lookup"><span data-stu-id="297e0-116">The list represents the apps that will be considered compliant (only apps on the list are compliant).</span></span>|
+|<span data-ttu-id="297e0-117">appsNotInListCompliant</span><span class="sxs-lookup"><span data-stu-id="297e0-117">appsNotInListCompliant</span></span>|<span data-ttu-id="297e0-118">duas</span><span class="sxs-lookup"><span data-stu-id="297e0-118">2</span></span>|<span data-ttu-id="297e0-119">A lista representa os aplicativos que serão considerados não compatíveis (todos os aplicativos são compatíveis, exceto os aplicativos na lista).</span><span class="sxs-lookup"><span data-stu-id="297e0-119">The list represents the apps that will be considered non compliant (all apps are compliant except apps on the list).</span></span>|
 
 
 

@@ -1,31 +1,31 @@
 ---
-title: tipo de enum iosNotificationAlertType
+title: tipo de enumeração iosNotificationAlertType
 description: Tipo de alerta de configurações de notificação.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: db289e15f82750d484fceed4261cfb190e826bea
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: c5af4a4e4718734220321a2867d2e6a6be36f254
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29407575"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172433"
 ---
-# <a name="iosnotificationalerttype-enum-type"></a><span data-ttu-id="0c5ed-103">tipo de enum iosNotificationAlertType</span><span class="sxs-lookup"><span data-stu-id="0c5ed-103">iosNotificationAlertType enum type</span></span>
+# <a name="iosnotificationalerttype-enum-type"></a><span data-ttu-id="d5cae-103">tipo de enumeração iosNotificationAlertType</span><span class="sxs-lookup"><span data-stu-id="d5cae-103">iosNotificationAlertType enum type</span></span>
 
-> <span data-ttu-id="0c5ed-104">**Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações.</span><span class="sxs-lookup"><span data-stu-id="0c5ed-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="0c5ed-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="0c5ed-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="d5cae-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="d5cae-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="0c5ed-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.</span><span class="sxs-lookup"><span data-stu-id="0c5ed-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="d5cae-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="d5cae-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="0c5ed-107">Tipo de alerta de configurações de notificação.</span><span class="sxs-lookup"><span data-stu-id="0c5ed-107">Notification Settings Alert Type.</span></span>
+<span data-ttu-id="d5cae-106">Tipo de alerta de configurações de notificação.</span><span class="sxs-lookup"><span data-stu-id="d5cae-106">Notification Settings Alert Type.</span></span>
 
-## <a name="members"></a><span data-ttu-id="0c5ed-108">Membros</span><span class="sxs-lookup"><span data-stu-id="0c5ed-108">Members</span></span>
-|<span data-ttu-id="0c5ed-109">Membro</span><span class="sxs-lookup"><span data-stu-id="0c5ed-109">Member</span></span>|<span data-ttu-id="0c5ed-110">Valor</span><span class="sxs-lookup"><span data-stu-id="0c5ed-110">Value</span></span>|<span data-ttu-id="0c5ed-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="0c5ed-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="d5cae-107">Membros</span><span class="sxs-lookup"><span data-stu-id="d5cae-107">Members</span></span>
+|<span data-ttu-id="d5cae-108">Membro</span><span class="sxs-lookup"><span data-stu-id="d5cae-108">Member</span></span>|<span data-ttu-id="d5cae-109">Valor</span><span class="sxs-lookup"><span data-stu-id="d5cae-109">Value</span></span>|<span data-ttu-id="d5cae-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="d5cae-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="0c5ed-112">deviceDefault</span><span class="sxs-lookup"><span data-stu-id="0c5ed-112">deviceDefault</span></span>|<span data-ttu-id="0c5ed-113">0</span><span class="sxs-lookup"><span data-stu-id="0c5ed-113">0</span></span>|<span data-ttu-id="0c5ed-114">Valor de padrão de dispositivo, sem intenção.</span><span class="sxs-lookup"><span data-stu-id="0c5ed-114">Device default value, no intent.</span></span>|
-|<span data-ttu-id="0c5ed-115">Faixa</span><span class="sxs-lookup"><span data-stu-id="0c5ed-115">banner</span></span>|<span data-ttu-id="0c5ed-116">1</span><span class="sxs-lookup"><span data-stu-id="0c5ed-116">1</span></span>|<span data-ttu-id="0c5ed-117">Faixa.</span><span class="sxs-lookup"><span data-stu-id="0c5ed-117">Banner.</span></span>|
-|<span data-ttu-id="0c5ed-118">modal</span><span class="sxs-lookup"><span data-stu-id="0c5ed-118">modal</span></span>|<span data-ttu-id="0c5ed-119">2</span><span class="sxs-lookup"><span data-stu-id="0c5ed-119">2</span></span>|<span data-ttu-id="0c5ed-120">Modal.</span><span class="sxs-lookup"><span data-stu-id="0c5ed-120">Modal.</span></span>|
-|<span data-ttu-id="0c5ed-121">none</span><span class="sxs-lookup"><span data-stu-id="0c5ed-121">none</span></span>|<span data-ttu-id="0c5ed-122">3</span><span class="sxs-lookup"><span data-stu-id="0c5ed-122">3</span></span>|<span data-ttu-id="0c5ed-123">Nenhum.</span><span class="sxs-lookup"><span data-stu-id="0c5ed-123">None.</span></span>|
+|<span data-ttu-id="d5cae-111">deviceDefault</span><span class="sxs-lookup"><span data-stu-id="d5cae-111">deviceDefault</span></span>|<span data-ttu-id="d5cae-112">,0</span><span class="sxs-lookup"><span data-stu-id="d5cae-112">0</span></span>|<span data-ttu-id="d5cae-113">Valor padrão do dispositivo, sem intenção.</span><span class="sxs-lookup"><span data-stu-id="d5cae-113">Device default value, no intent.</span></span>|
+|<span data-ttu-id="d5cae-114">Bandeira</span><span class="sxs-lookup"><span data-stu-id="d5cae-114">banner</span></span>|<span data-ttu-id="d5cae-115">1</span><span class="sxs-lookup"><span data-stu-id="d5cae-115">1</span></span>|<span data-ttu-id="d5cae-116">Bandeira.</span><span class="sxs-lookup"><span data-stu-id="d5cae-116">Banner.</span></span>|
+|<span data-ttu-id="d5cae-117">JanelaRestrita</span><span class="sxs-lookup"><span data-stu-id="d5cae-117">modal</span></span>|<span data-ttu-id="d5cae-118">duas</span><span class="sxs-lookup"><span data-stu-id="d5cae-118">2</span></span>|<span data-ttu-id="d5cae-119">JanelaRestrita.</span><span class="sxs-lookup"><span data-stu-id="d5cae-119">Modal.</span></span>|
+|<span data-ttu-id="d5cae-120">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="d5cae-120">none</span></span>|<span data-ttu-id="d5cae-121">3D</span><span class="sxs-lookup"><span data-stu-id="d5cae-121">3</span></span>|<span data-ttu-id="d5cae-122">Nenhum.</span><span class="sxs-lookup"><span data-stu-id="d5cae-122">None.</span></span>|
 
 
 

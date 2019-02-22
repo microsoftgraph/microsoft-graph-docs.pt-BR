@@ -1,32 +1,32 @@
 ---
-title: tipo de enum derivedCredentialProviderType
-description: Tipo de provedor de credenciais derivados.
-localization_priority: Normal
+title: tipo de enumeração derivedCredentialProviderType
+description: Tipo de provedor para credenciais derivadas.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ad4f77b23e1d5b89a39c39fb174c953ebe422bd1
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8e57a9874d1870a01a4be445bd23ca6210af18d1
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29431313"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30175308"
 ---
-# <a name="derivedcredentialprovidertype-enum-type"></a><span data-ttu-id="bd1f4-103">tipo de enum derivedCredentialProviderType</span><span class="sxs-lookup"><span data-stu-id="bd1f4-103">derivedCredentialProviderType enum type</span></span>
+# <a name="derivedcredentialprovidertype-enum-type"></a><span data-ttu-id="01040-103">tipo de enumeração derivedCredentialProviderType</span><span class="sxs-lookup"><span data-stu-id="01040-103">derivedCredentialProviderType enum type</span></span>
 
-> <span data-ttu-id="bd1f4-104">**Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações.</span><span class="sxs-lookup"><span data-stu-id="bd1f4-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="bd1f4-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="bd1f4-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="01040-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="01040-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="bd1f4-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.</span><span class="sxs-lookup"><span data-stu-id="bd1f4-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="01040-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="01040-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="bd1f4-107">Tipo de provedor de credenciais derivados.</span><span class="sxs-lookup"><span data-stu-id="bd1f4-107">Provider type for Derived Credentials.</span></span>
+<span data-ttu-id="01040-106">Tipo de provedor para credenciais derivadas.</span><span class="sxs-lookup"><span data-stu-id="01040-106">Provider type for Derived Credentials.</span></span>
 
-## <a name="members"></a><span data-ttu-id="bd1f4-108">Membros</span><span class="sxs-lookup"><span data-stu-id="bd1f4-108">Members</span></span>
-|<span data-ttu-id="bd1f4-109">Membro</span><span class="sxs-lookup"><span data-stu-id="bd1f4-109">Member</span></span>|<span data-ttu-id="bd1f4-110">Valor</span><span class="sxs-lookup"><span data-stu-id="bd1f4-110">Value</span></span>|<span data-ttu-id="bd1f4-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="bd1f4-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="01040-107">Membros</span><span class="sxs-lookup"><span data-stu-id="01040-107">Members</span></span>
+|<span data-ttu-id="01040-108">Membro</span><span class="sxs-lookup"><span data-stu-id="01040-108">Member</span></span>|<span data-ttu-id="01040-109">Valor</span><span class="sxs-lookup"><span data-stu-id="01040-109">Value</span></span>|<span data-ttu-id="01040-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="01040-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="bd1f4-112">não-configuradas</span><span class="sxs-lookup"><span data-stu-id="bd1f4-112">notConfigured</span></span>|<span data-ttu-id="bd1f4-113">0</span><span class="sxs-lookup"><span data-stu-id="bd1f4-113">0</span></span>|<span data-ttu-id="bd1f4-114">Nenhum provedor de credencial derivada configurado.</span><span class="sxs-lookup"><span data-stu-id="bd1f4-114">No Derived Credential Provider Configured.</span></span>|
-|<span data-ttu-id="bd1f4-115">entrustDataCard</span><span class="sxs-lookup"><span data-stu-id="bd1f4-115">entrustDataCard</span></span>|<span data-ttu-id="bd1f4-116">1</span><span class="sxs-lookup"><span data-stu-id="bd1f4-116">1</span></span>|<span data-ttu-id="bd1f4-117">Entrust DataCard.</span><span class="sxs-lookup"><span data-stu-id="bd1f4-117">Entrust DataCard.</span></span>|
-|<span data-ttu-id="bd1f4-118">purebred</span><span class="sxs-lookup"><span data-stu-id="bd1f4-118">purebred</span></span>|<span data-ttu-id="bd1f4-119">2</span><span class="sxs-lookup"><span data-stu-id="bd1f4-119">2</span></span>|<span data-ttu-id="bd1f4-120">Purebred - Defense Information Systems Agency.</span><span class="sxs-lookup"><span data-stu-id="bd1f4-120">Purebred - Defense Information Systems Agency.</span></span>|
-|<span data-ttu-id="bd1f4-121">xTec</span><span class="sxs-lookup"><span data-stu-id="bd1f4-121">xTec</span></span>|<span data-ttu-id="bd1f4-122">3</span><span class="sxs-lookup"><span data-stu-id="bd1f4-122">3</span></span>|<span data-ttu-id="bd1f4-123">Xtec - AuthentX.</span><span class="sxs-lookup"><span data-stu-id="bd1f4-123">Xtec - AuthentX.</span></span>|
-|<span data-ttu-id="bd1f4-124">interceder</span><span class="sxs-lookup"><span data-stu-id="bd1f4-124">intercede</span></span>|<span data-ttu-id="bd1f4-125">4</span><span class="sxs-lookup"><span data-stu-id="bd1f4-125">4</span></span>|<span data-ttu-id="bd1f4-126">Interceder.</span><span class="sxs-lookup"><span data-stu-id="bd1f4-126">Intercede.</span></span>|
+|<span data-ttu-id="01040-111">notConfigured</span><span class="sxs-lookup"><span data-stu-id="01040-111">notConfigured</span></span>|<span data-ttu-id="01040-112">,0</span><span class="sxs-lookup"><span data-stu-id="01040-112">0</span></span>|<span data-ttu-id="01040-113">Nenhum provedor de credenciais derivado configurado.</span><span class="sxs-lookup"><span data-stu-id="01040-113">No Derived Credential Provider Configured.</span></span>|
+|<span data-ttu-id="01040-114">entrustDataCard</span><span class="sxs-lookup"><span data-stu-id="01040-114">entrustDataCard</span></span>|<span data-ttu-id="01040-115">1</span><span class="sxs-lookup"><span data-stu-id="01040-115">1</span></span>|<span data-ttu-id="01040-116">Cartão de Entrust.</span><span class="sxs-lookup"><span data-stu-id="01040-116">Entrust DataCard.</span></span>|
+|<span data-ttu-id="01040-117">purebred</span><span class="sxs-lookup"><span data-stu-id="01040-117">purebred</span></span>|<span data-ttu-id="01040-118">duas</span><span class="sxs-lookup"><span data-stu-id="01040-118">2</span></span>|<span data-ttu-id="01040-119">Agência de sistemas de informações do purebred-Defense.</span><span class="sxs-lookup"><span data-stu-id="01040-119">Purebred - Defense Information Systems Agency.</span></span>|
+|<span data-ttu-id="01040-120">xTec</span><span class="sxs-lookup"><span data-stu-id="01040-120">xTec</span></span>|<span data-ttu-id="01040-121">3D</span><span class="sxs-lookup"><span data-stu-id="01040-121">3</span></span>|<span data-ttu-id="01040-122">Xtec-AuthentX.</span><span class="sxs-lookup"><span data-stu-id="01040-122">Xtec - AuthentX.</span></span>|
+|<span data-ttu-id="01040-123">intercede</span><span class="sxs-lookup"><span data-stu-id="01040-123">intercede</span></span>|<span data-ttu-id="01040-124">quatro</span><span class="sxs-lookup"><span data-stu-id="01040-124">4</span></span>|<span data-ttu-id="01040-125">Intercede.</span><span class="sxs-lookup"><span data-stu-id="01040-125">Intercede.</span></span>|
 
 
 
