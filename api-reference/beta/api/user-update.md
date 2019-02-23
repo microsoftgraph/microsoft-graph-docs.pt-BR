@@ -4,12 +4,12 @@ description: Atualize as propriedades de um objeto user.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f8be2b9fa3c135e710b8a0bcf819187e6cb57959
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: b45e18fd852d667d2d724e1b0b681f70159e86a7
+ms.sourcegitcommit: 7412dd2f2d5ed66afa2b0759c861ad23b4c6ecdf
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643217"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30212400"
 ---
 # <a name="update-user"></a>Atualizar usuário
 
@@ -21,7 +21,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | User.ReadWrite, User.ReadWrite.All, Directory.ReadWrite.All    |
+|Delegado (conta corporativa ou de estudante) | User. ReadWrite, User. ReadWrite. All, Directory. ReadWrite. All    |
 |Delegado (conta pessoal da Microsoft) | User.ReadWrite    |
 |Aplicativo | User.ReadWrite.All, Directory.ReadWrite.All |
 
@@ -64,18 +64,17 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |pastProjects|Coleção de cadeias de caracteres|Uma lista para o usuário enumerar seus projetos anteriores.|
 |postalCode|String|O código postal do endereço postal do usuário. O código postal é específico para o país/região do usuário. Nos Estados Unidos, esse atributo contém o CEP.|
 |preferredLanguage|String|O idioma preferencial do usuário. Deve seguir o código ISO 639-1; por exemplo "en-US".|
-|preferredName|String|O nome preferencial do usuário.|
 |responsibilities|Coleção de cadeias de caracteres|Uma lista para o usuário enumerar suas responsabilidades.|
 |schools|Coleção de cadeias de caracteres|Uma lista para o usuário enumerar as escolas que ele frequentou.|
 |skills|Coleção de cadeias de caracteres|Uma lista para o usuário enumerar suas qualificações.|
 |state|String|O estado ou município no endereço do usuário. Oferece suporte a $filter.|
 |streetAddress|String|O endereço do local de trabalho do usuário.|
 |surname|String|O sobrenome do usuário (nome de família ou sobrenome). Oferece suporte a $filter.|
-|usageLocation|String|Um código de duas letras (padrão ISO 3166). Obrigatório para os usuários que receberão licenças devido à exigência legal de verificar a disponibilidade de serviços nos países. Entre os exemplos temos: "US", "JP" e "GB". Não anulável. Oferece suporte a $filter.|
+|usageLocation|Cadeia de caracteres|Um código de duas letras (padrão ISO 3166). Obrigatório para os usuários que receberão licenças devido à exigência legal de verificar a disponibilidade de serviços nos países. Entre os exemplos temos: "US", "JP" e "GB". Não anulável. Oferece suporte a $filter.|
 |userPrincipalName|String|O nome UPN do usuário. O nome UPN é um nome de logon para o usuário ao estilo da Internet com base na RFC 822 padrão da Internet. Por convenção, ele deve ser mapeado para o nome de email do usuário. O formato geral é alias@domain, em que o domínio deve estar presente na coleção de domínios verificados do locatário. Essa propriedade é obrigatória quando um usuário é criado. Os domínios verificados para o locatário podem ser acessados pela propriedade **verifiedDomains** de [organization](../resources/organization.md). Oferece suporte a $filter e $orderby.
 |userType|String|Um valor de cadeia de caracteres que pode ser usado para classificar tipos de usuários no seu diretório, como “Member” e “Guest”. Oferece suporte a $filter.          |
 
-Desde que o recurso de **usuário** oferece suporte às [extensões](/graph/extensibility-overview), você pode usar o `PATCH` operação para adicionar, atualizar ou excluir seus próprios dados específicos do aplicativo nas propriedades personalizadas de uma extensão em uma instância existente do **usuário** .
+Como o recurso de **usuário** oferece suporte a [extensões](/graph/extensibility-overview), você `PATCH` pode usar a operação para adicionar, atualizar ou excluir seus próprios dados específicos de aplicativo em Propriedades personalizadas de uma extensão em uma instância de **usuário** existente.
 
 ## <a name="response"></a>Resposta
 
