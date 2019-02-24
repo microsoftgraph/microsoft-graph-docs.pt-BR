@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: c8962e6fce28776ab89c759d2e9a7789e82c4f02
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 47e4cb6afc2b3057ecc17f85cdbca3672927a06d
+ms.sourcegitcommit: 7412dd2f2d5ed66afa2b0759c861ad23b4c6ecdf
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30139673"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30212393"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -28,6 +28,8 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+|Adição |Beta e v1.0| Adicionar a propriedade **createdDateTime** na [organização](/graph/api/resources/organization?view=graph-rest-v1.0).|
+|Adição | v1.0 | Adicionado novo tipo de recurso [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-v1.0).|
 |Alteração |Beta e v1.0| Atualização da propriedade **companyName** no recurso do [usuário](/graph/api/resources/user?view=graph-rest-v1.0) para permitir a gravação.|
 
 ### <a name="education-apis"></a>APIs de educação

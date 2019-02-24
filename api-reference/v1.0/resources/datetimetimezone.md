@@ -2,12 +2,12 @@
 title: tipo de recurso dateTimeTimeZone
 description: Descreve a data, a hora e o fuso horário de um ponto no tempo.
 localization_priority: Priority
-ms.openlocfilehash: 9bec62c21f97c58b915ecc40010f8030ea760825
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.openlocfilehash: 9e031b053ebc185ee02fa11571019529a870cf04
+ms.sourcegitcommit: 7412dd2f2d5ed66afa2b0759c861ad23b4c6ecdf
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27827325"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30212358"
 ---
 # <a name="datetimetimezone-resource-type"></a>tipo de recurso dateTimeTimeZone
 
@@ -16,8 +16,8 @@ Descreve a data, a hora e o fuso horário de um ponto no tempo.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|dateTime|String|Um único ponto de tempo em uma representação combinada de data e hora (`<date>T<time>`).|
-|timeZone|String|Um dos seguintes nomes de fuso horário.|
+|dateTime|Cadeia de caracteres|Um único ponto de tempo em uma representação combinada de data e hora (`{date}T{time}`; por exemplo, `2017-08-29T04:00:00.0000000`).|
+|timeZone|Cadeia de caracteres|Um dos seguintes nomes de fuso horário.|
 
 A propriedade _TimeZone_ pode ser definida para qualquer um dos fusos horários com suporte no Windows, bem como os nomes de fusos horários a seguir.
 
