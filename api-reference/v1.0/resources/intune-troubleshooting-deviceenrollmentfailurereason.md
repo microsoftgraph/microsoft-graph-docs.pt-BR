@@ -1,42 +1,44 @@
 ---
-title: tipo de enum deviceEnrollmentFailureReason
-description: Categorias de falha de nível superior para o registro.
+title: tipo de enumeração deviceEnrollmentFailureReason
+description: Categorias de falha de nível superior para registro.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: efee4e4655d36e7575df9e0ddda508dbbcc473c5
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 623030bccfac9e023a0d1df2dff7ea317b503485
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27962069"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30258328"
 ---
-# <a name="deviceenrollmentfailurereason-enum-type"></a>tipo de enum deviceEnrollmentFailureReason
+# <a name="deviceenrollmentfailurereason-enum-type"></a>tipo de enumeração deviceEnrollmentFailureReason
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Categorias de falha de nível superior para o registro.
+Categorias de falha de nível superior para registro.
+
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|unknown|0|Valor padrão, o motivo da falha é desconhecido.|
-|autenticação|1|Falha na autenticação|
-|autorização|2|Chamada foi autenticada, mas não autorizada a registrar.|
-|accountValidation|3|Falha ao validar a conta para o registro. (Conta bloqueada, o registro não habilitado)|
-|userValidation|4|Usuário não pôde ser validado. (Usuário não existe, licença falta)|
-|deviceNotSupported|5|Não há suporte para o dispositivo para gerenciamento de dispositivos móveis.|
-|inMaintenance|6|Conta está na manutenção.|
-|badRequest|7|Cliente enviou uma solicitação que não seja compreendidos/suportados pelo serviço.|
-|featureNotSupported|8|Os recursos usados por esta inscrição não são suportados para essa conta.|
-|enrollmentRestrictionsEnforced|9|Restrições de registro configuradas pelo administrador bloqueado este registro.|
-|clientDisconnected|10|Cliente esgotado ou inscrição foi anulada pelo usuário final.|
-|userAbandonment|11|O registro foi abandonado pelo usuário final. (Usuário final inclusão de Introdução, mas não conseguiu concluí-la no modo oportuno)|
+|unknown|,0|O valor padrão, motivo da falha é desconhecido.|
+|autentica|1|Falha de autenticação|
+|nesse|duas|A chamada foi autenticada, mas não está autorizada a se inscrever.|
+|accountValidation|3D|Falha ao validar a conta para registro. (Conta bloqueada, registro não habilitado)|
+|userValidation|quatro|Não foi possível validar o usuário. (O usuário não existe, licença ausente)|
+|deviceNotSupported|0,5|O dispositivo não tem suporte para gerenciamento de dispositivos móveis.|
+|inManutenção|6|A conta está em manutenção.|
+|badRequest|178|O cliente enviou uma solicitação que não é compreendida/suportada pelo serviço.|
+|featureNotSupported|8|Não há suporte para os recursos usados por este registro para esta conta.|
+|enrollmentRestrictionsEnforced|241|As restrições de registro configuradas pelo administrador bloquearam esse registro.|
+|clientDisconnected|254|O cliente esgotou o tempo limite ou o registro foi anulado pelo enduser.|
+|Membrouserabandonment|11|O registro foi abandonado pelo enduser. (Enduser Started onboard, mas não conseguiu concluí-la na forma oportuna)|
 
 
 <!-- {
   "type": "#page.annotation",
   "suppressions": [
-    "Warning: Enum deviceEnrollmentFailureReason has some values specified and others unspecified."
+     "Warning: Enum deviceEnrollmentFailureReason has some values specified and others unspecified."
   ],
 }
 -->
+

@@ -1,28 +1,29 @@
 ---
-title: tipo de enum mobileThreatPartnerTenantState
-description: Estado de parceiro deste locatário.
+title: tipo de enumeração mobileThreatPartnerTenantState
+description: Estado do parceiro desse locatário.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 195fe8fcfac70bc0e98a0ac2f94c28a63b5c9983
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: c4962ff9f920b97a0dad361549e9b5829b3740b8
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937450"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30258090"
 ---
-# <a name="mobilethreatpartnertenantstate-enum-type"></a>tipo de enum mobileThreatPartnerTenantState
+# <a name="mobilethreatpartnertenantstate-enum-type"></a>tipo de enumeração mobileThreatPartnerTenantState
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Estado de parceiro deste locatário.
+Estado do parceiro desse locatário.
+
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|indisponível|0|Parceiro não está disponível.|
-|disponível|1|Parceiro está disponível.|
-|enabled|2|Parceiro está habilitado.|
-|não responde|3|Parceiro não está respondendo.|
+|indisponível|,0|O parceiro não está disponível.|
+|disponível|1|O parceiro está disponível.|
+|enabled|duas|O parceiro está habilitado.|
+|Não responde|3D|O parceiro não responde.|
 
 
 

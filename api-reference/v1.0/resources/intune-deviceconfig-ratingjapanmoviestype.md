@@ -1,30 +1,31 @@
 ---
-title: tipo de enum ratingJapanMoviesType
-description: Filmes classificação rótulos no Japão
+title: tipo de enumeração ratingJapanMoviesType
+description: Rótulos de classificação de filmes no Japão
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: fedb2a824151a1548d8a91471e3094077fb63b95
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 407c725b958c45fc395ba9adbe9634e78a288f53
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27957295"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30259273"
 ---
-# <a name="ratingjapanmoviestype-enum-type"></a>tipo de enum ratingJapanMoviesType
+# <a name="ratingjapanmoviestype-enum-type"></a>tipo de enumeração ratingJapanMoviesType
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Filmes classificação rótulos no Japão
+Rótulos de classificação de filmes no Japão
+
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|allAllowed|0|Valor padrão, permitir todo o conteúdo de filmes|
-|allBlocked|1|Não permitir que qualquer conteúdo filmes|
-|geral|2|Adequado para todos os anos|
-|parentalGuidance|3|A classificação PG-12 solicita a orientação dos pais para jovens em 12|
-|agesAbove15|4|A classificação R15 + é adequado para os visualizadores de 15 ou mais antigos|
-|agesAbove18|5|A classificação R18 + é adequado para os visualizadores de 18 ou posterior|
+|Permitido|,0|Valor padrão, permitir todo o conteúdo de filmes|
+|Bloqueado|1|Não permitir conteúdo de filmes|
+|geral|duas|Adequado para todas as idades|
+|parentalGuidance|3D|A orientação responsável pelas solicitações de classificação do PG-12 para jovens, às pequenas pessoas, menos de 12|
+|agesAbove15|quatro|A classificação R15 + é adequada para visualizadores de 15 ou mais|
+|agesAbove18|0,5|A classificação R18 + é adequada para visualizadores de 18 ou mais|
 
 
 

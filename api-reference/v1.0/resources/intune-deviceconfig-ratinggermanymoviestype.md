@@ -1,31 +1,32 @@
 ---
-title: tipo de enum ratingGermanyMoviesType
-description: Filmes classificação rótulos na Alemanha
+title: tipo de enumeração ratingGermanyMoviesType
+description: Rótulos de classificação de filmes na Alemanha
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: ef57f27d72204136e101b03dfa5e4af00ba39b1d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: c00c49022782fd2a677702a72fd202e2bf627604
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27928672"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30258272"
 ---
-# <a name="ratinggermanymoviestype-enum-type"></a>tipo de enum ratingGermanyMoviesType
+# <a name="ratinggermanymoviestype-enum-type"></a>tipo de enumeração ratingGermanyMoviesType
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Filmes classificação rótulos na Alemanha
+Rótulos de classificação de filmes na Alemanha
+
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|allAllowed|0|Valor padrão, permitir todo o conteúdo de filmes|
-|allBlocked|1|Não permitir que qualquer conteúdo filmes|
-|geral|2|Jahren AB 0, não há restrições de idade|
-|agesAbove6|3|Jahren de 6 AB, expira antigas e 6|
-|agesAbove12|4|Jahren de 12 AB, expira antigas e 12|
-|agesAbove16|5|Jahren de 16 AB, expira antigas e 16|
-|adultos|6|AB 18 Jahren, somente para adultos|
+|Permitido|,0|Valor padrão, permitir todo o conteúdo de filmes|
+|Bloqueado|1|Não permitir conteúdo de filmes|
+|geral|duas|AB 0 Jahren, sem restrições de idade|
+|agesAbove6|3D|AB 6 Jahren, anos 6 ou mais|
+|agesAbove12|quatro|AB 12 Jahren, 12 anos ou mais|
+|agesAbove16|0,5|AB 16 Jahren, 16 anos ou mais|
+|adultos|6|AB 18 Jahren, somente adultos|
 
 
 
