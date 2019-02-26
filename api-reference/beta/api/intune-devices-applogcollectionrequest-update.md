@@ -1,23 +1,23 @@
 ---
 title: Atualizar appLogCollectionRequest
-description: Atualize as propriedades de um objeto appLogCollectionRequest.
-localization_priority: Normal
+description: Atualiza as propriedades de um objeto appLogCollectionRequest.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 55974ed3c5158d4b005402fe4d6350854a197656
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8adcfb50cf48e8ad0d41c76addc29484232f3fa0
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29429164"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30157642"
 ---
 # <a name="update-applogcollectionrequest"></a>Atualizar appLogCollectionRequest
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Atualize as propriedades de um objeto [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) .
+Atualiza as propriedades de um objeto [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
@@ -44,22 +44,22 @@ PATCH /deviceManagement/mobileAppTroubleshootingEvents/{mobileAppTroubleshooting
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON para o objeto [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) .
+No corpo da solicitação, forneça uma representação JSON do objeto [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) .
 
-A tabela a seguir mostra as propriedades que são necessárias quando você cria o [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md).
+A tabela a seguir mostra as propriedades que são necessárias ao criar [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo. Esse é o id de userId_DeviceId_AppId.|
-|status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|Status de carregamento de log. Os valores possíveis são: `pending`, `completed`, `failed`.|
-|errorMessage|String|Mensagem de erro, se houver algum durante o processo de carregamento|
-|customLogFolders|String collection|Lista de pastas de log. |
-|completedDateTime|DateTimeOffset|Hora em que a solicitação de log de carregamento atingido um estado de terminal|
+|id|String|O identificador exclusivo. Esta é a ID do userId_DeviceId_AppId.|
+|status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|Status de carregamento de logs. Os valores possíveis são: `pending`, `completed`, `failed`.|
+|errorMessage|String|Mensagem de erro se qualquer um durante o processo de carregamento|
+|customLogFolders|Coleção de cadeias de caracteres|Lista de pastas de log. |
+|completedDateTime|DateTimeOffset|Hora em que a solicitação de log de carregamento alcançou um estado de terminal|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto atualizado [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

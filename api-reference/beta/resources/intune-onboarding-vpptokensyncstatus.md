@@ -1,31 +1,31 @@
 ---
-title: tipo de enum vppTokenSyncStatus
-description: Status de sincronização possíveis associados com um token de programa de compra de Volume do Apple.
-localization_priority: Normal
+title: tipo de enumeração vppTokenSyncStatus
+description: Possíveis status de sincronização associados a um token do Apple Volume Purchase Program.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1a53906018d45181bd16750e4ed3f0dac9dcb0d1
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 46de00423a08e7edc6f5ac9c62d1caf0165e1d94
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29398811"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30170424"
 ---
-# <a name="vpptokensyncstatus-enum-type"></a>tipo de enum vppTokenSyncStatus
+# <a name="vpptokensyncstatus-enum-type"></a>tipo de enumeração vppTokenSyncStatus
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Status de sincronização possíveis associados com um token de programa de compra de Volume do Apple.
+Possíveis status de sincronização associados a um token do Apple Volume Purchase Program.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|none|0|Status do padrão.|
+|Nenhuma|,0|Status padrão.|
 |inProgress|1|Última sincronização em andamento.|
-|concluído|2|Última sincronização concluída com êxito.|
-|Falha|3|Falha na última sincronização.|
+|Completed|duas|Última sincronização concluída com êxito.|
+|falhou|3D|Falha na última sincronização.|
 
 
 

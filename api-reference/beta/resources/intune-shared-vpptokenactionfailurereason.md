@@ -1,32 +1,32 @@
 ---
-title: tipo de enum vppTokenActionFailureReason
-description: Tipos possíveis razões para uma falha de token de ação do programa de compra de Volume do Apple.
-localization_priority: Normal
+title: tipo de enumeração vppTokenActionFailureReason
+description: Possíveis tipos de motivos para uma falha na ação de token do Apple Volume Purchase Program.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bba4c339b774fd32a852925729e2e158dc13e52d
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 05d3137bb5aac2aef3024825df5e7e0b84ffde51
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29393141"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30169689"
 ---
-# <a name="vpptokenactionfailurereason-enum-type"></a>tipo de enum vppTokenActionFailureReason
+# <a name="vpptokenactionfailurereason-enum-type"></a>tipo de enumeração vppTokenActionFailureReason
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Tipos possíveis razões para uma falha de token de ação do programa de compra de Volume do Apple.
+Possíveis tipos de motivos para uma falha na ação de token do Apple Volume Purchase Program.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|none|0|Nenhum.|
-|appleFailure|1|Houve um erro no serviço da Apple.|
-|internalError|2|Houve um erro interno.|
-|expiredVppToken|3|Houve um erro, porque o token do programa de compra de Volume do Apple expirou.|
-|expiredApplePushNotificationCertificate|4|Houve um erro, porque o certificado de notificação de Push do Apple Volume compra programa expirado.|
+|Nenhuma|,0|Nenhum.|
+|appleFailure|1|Ocorreu um erro no serviço da Apple.|
+|internalError|duas|Ocorreu um erro interno.|
+|expiredVppToken|3D|Ocorreu um erro porque o token do Apple Volume Purchase Program expirou.|
+|expiredApplePushNotificationCertificate|quatro|Ocorreu um erro porque o certificado de notificação por push do Apple Volume Purchase Program expirou.|
 
 
 

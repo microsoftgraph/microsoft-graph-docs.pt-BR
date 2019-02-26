@@ -1,23 +1,23 @@
 ---
-title: tipo de recurso de windowsPhone81StoreApp
-description: Contém propriedades e as propriedades herdadas para aplicativos do Windows Phone 8.1 repositório.
-localization_priority: Normal
+title: tipo de recurso windowsPhone81StoreApp
+description: Contém propriedades e propriedades herdadas para aplicativos do Windows Phone 8,1 Store.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a64b446ddf19043b9d5c7d63ed67c26b88952b0d
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 96909ca76ff6d65f32c9be1a1c985ffb8773e868
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425929"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30143880"
 ---
-# <a name="windowsphone81storeapp-resource-type"></a>tipo de recurso de windowsPhone81StoreApp
+# <a name="windowsphone81storeapp-resource-type"></a>tipo de recurso windowsPhone81StoreApp
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Contém propriedades e as propriedades herdadas para aplicativos do Windows Phone 8.1 repositório.
+Contém propriedades e propriedades herdadas para aplicativos do Windows Phone 8,1 Store.
 
 
 Herda de [mobileApp](../resources/intune-apps-mobileapp.md)
@@ -25,11 +25,11 @@ Herda de [mobileApp](../resources/intune-apps-mobileapp.md)
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Lista windowsPhone81StoreApps](../api/intune-apps-windowsphone81storeapp-list.md)|coleção [windowsPhone81StoreApp](../resources/intune-apps-windowsphone81storeapp.md)|Lista as propriedades e os relacionamentos dos objetos [windowsPhone81StoreApp](../resources/intune-apps-windowsphone81storeapp.md) .|
-|[Obter windowsPhone81StoreApp](../api/intune-apps-windowsphone81storeapp-get.md)|[windowsPhone81StoreApp](../resources/intune-apps-windowsphone81storeapp.md)|Leia as propriedades e os relacionamentos do objeto [windowsPhone81StoreApp](../resources/intune-apps-windowsphone81storeapp.md) .|
-|[Criar windowsPhone81StoreApp](../api/intune-apps-windowsphone81storeapp-create.md)|[windowsPhone81StoreApp](../resources/intune-apps-windowsphone81storeapp.md)|Crie um novo objeto de [windowsPhone81StoreApp](../resources/intune-apps-windowsphone81storeapp.md) .|
-|[Excluir windowsPhone81StoreApp](../api/intune-apps-windowsphone81storeapp-delete.md)|Nenhum|Exclui um [windowsPhone81StoreApp](../resources/intune-apps-windowsphone81storeapp.md).|
-|[Atualizar windowsPhone81StoreApp](../api/intune-apps-windowsphone81storeapp-update.md)|[windowsPhone81StoreApp](../resources/intune-apps-windowsphone81storeapp.md)|Atualize as propriedades de um objeto [windowsPhone81StoreApp](../resources/intune-apps-windowsphone81storeapp.md) .|
+|[Listar windowsPhone81StoreApps](../api/intune-apps-windowsphone81storeapp-list.md)|coleção [windowsPhone81StoreApp](../resources/intune-apps-windowsphone81storeapp.md)|Listar Propriedades e relações dos objetos [windowsPhone81StoreApp](../resources/intune-apps-windowsphone81storeapp.md) .|
+|[Obter windowsPhone81StoreApp](../api/intune-apps-windowsphone81storeapp-get.md)|[windowsPhone81StoreApp](../resources/intune-apps-windowsphone81storeapp.md)|Leia as propriedades e as relações do objeto [windowsPhone81StoreApp](../resources/intune-apps-windowsphone81storeapp.md) .|
+|[Criar windowsPhone81StoreApp](../api/intune-apps-windowsphone81storeapp-create.md)|[windowsPhone81StoreApp](../resources/intune-apps-windowsphone81storeapp.md)|Criar um novo objeto [windowsPhone81StoreApp](../resources/intune-apps-windowsphone81storeapp.md) .|
+|[Excluir windowsPhone81StoreApp](../api/intune-apps-windowsphone81storeapp-delete.md)|Nenhum|Exclui [windowsPhone81StoreApp](../resources/intune-apps-windowsphone81storeapp.md).|
+|[Atualizar windowsPhone81StoreApp](../api/intune-apps-windowsphone81storeapp-update.md)|[windowsPhone81StoreApp](../resources/intune-apps-windowsphone81storeapp.md)|Atualiza as propriedades de um objeto [windowsPhone81StoreApp](../resources/intune-apps-windowsphone81storeapp.md) .|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
@@ -47,11 +47,11 @@ Herda de [mobileApp](../resources/intune-apps-mobileapp.md)
 |owner|String|O proprietário do conteúdo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |developer|String|O desenvolvedor do aplicativo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |Observações|String|Anotações para o aplicativo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
-|uploadState|Int32|O estado de carregamento. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
-|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|O estado de publicação para o aplicativo. O aplicativo não pode ser assinado, a menos que ele seja publicado. Herdada do [mobileApp](../resources/intune-apps-mobileapp.md). Os valores possíveis são: `notPublished`, `processing`, `published`.|
+|uploadState|Int32|O estado de upload. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|O estado de publicação para o aplicativo. O aplicativo não pode ser assinado, a menos que ele seja publicado. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md). Os valores possíveis são: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|O valor que indica se o aplicativo é atribuído a pelo menos um grupo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
-|roleScopeTagIds|String collection|Lista de ids de marca de escopo para esse aplicativo móvel. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
-|appStoreUrl|String|A URL do repositório do Windows Phone 8.1 app.|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de IDs de marca de escopo para este aplicativo móvel. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|appStoreUrl|String|A URL da loja de aplicativos do Windows Phone 8,1.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -59,8 +59,8 @@ Herda de [mobileApp](../resources/intune-apps-mobileapp.md)
 |categories|Coleção [mobileAppCategory](../resources/intune-apps-mobileappcategory.md)|A lista de categorias para este aplicativo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |assignments|Coleção [mobileAppAssignment](../resources/intune-apps-mobileappassignment.md)|A lista de atribuições de grupo para esse aplicativo móvel. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |installSummary|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)|Resumo de instalação do aplicativo móvel. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
-|deviceStatuses|coleção [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)|A lista de estados de instalação para esse aplicativo móvel. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
-|userStatuses|coleção [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)|A lista de estados de instalação para esse aplicativo móvel. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|deviceStatuses|coleção [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)|A lista de Estados de instalação para este aplicativo móvel. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|userStatuses|coleção [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)|A lista de Estados de instalação para este aplicativo móvel. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

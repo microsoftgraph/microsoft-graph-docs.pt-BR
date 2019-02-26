@@ -1,33 +1,33 @@
 ---
-title: tipo de enum ratingFranceTelevisionType
+title: tipo de enumeração ratingFranceTelevisionType
 description: Rótulos de classificação de conteúdo de TV na França
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 45e55109a9f749c869ede07132be5b9264f890a9
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 9806d79e03576cedb23701f45e09b7766c4f6339
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29403648"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30155241"
 ---
-# <a name="ratingfrancetelevisiontype-enum-type"></a>tipo de enum ratingFranceTelevisionType
+# <a name="ratingfrancetelevisiontype-enum-type"></a>tipo de enumeração ratingFranceTelevisionType
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Rótulos de classificação de conteúdo de TV na França
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|allAllowed|0|Valor padrão, para permitir que todos os TV mostra conteúdo|
-|allBlocked|1|Não permitir que qualquer TV mostra conteúdo|
-|agesAbove10|2|A classificação-10 não é recomendado para filhos em 10|
-|agesAbove12|3|A classificação-12 não é recomendado para filhos em 12|
-|agesAbove16|4|A classificação-16 não é recomendado para filhos em 16|
-|agesAbove18|5|A classificação de-18 não é recomendado para as pessoas em 18|
+|Permitido|,0|Valor padrão, permitir todos os programas de TV|
+|Bloqueado|1|Não permitir que qualquer TV mostre conteúdo|
+|agesAbove10|duas|A classificação-10 não é recomendada para crianças com menos de 10|
+|agesAbove12|3D|A classificação-12 não é recomendada para crianças com menos de 12|
+|agesAbove16|quatro|A classificação-16 não é recomendada para crianças com menos de 16|
+|agesAbove18|0,5|A classificação-18 não é recomendada para pessoas com 18 anos|
 
 
 

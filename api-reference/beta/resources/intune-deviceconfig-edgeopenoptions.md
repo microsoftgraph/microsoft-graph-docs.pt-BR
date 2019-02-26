@@ -1,32 +1,32 @@
 ---
-title: tipo de enum edgeOpenOptions
-description: Valores possíveis para a configuração de EdgeOpensWith.
-localization_priority: Normal
+title: tipo de enumeração edgeOpenOptions
+description: Valores possíveis para a configuração EdgeOpensWith.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e3fb0b3dde0061334962005166581c77b6dc3a85
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: d70b459cfc77637a6084af27396a51cc9db6be68
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29428965"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30149221"
 ---
-# <a name="edgeopenoptions-enum-type"></a>tipo de enum edgeOpenOptions
+# <a name="edgeopenoptions-enum-type"></a>tipo de enumeração edgeOpenOptions
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Valores possíveis para a configuração de EdgeOpensWith.
+Valores possíveis para a configuração EdgeOpensWith.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|não-configuradas|0|Não configurado.|
-|página inicial|1|Página inicial.|
-|newTabPage|2|NewTabPage.|
-|previousPages|3|PreviousPages.|
-|specificPages|4|SpecificPages.|
+|notConfigured|,0|Não configurado.|
+|Inicial|1|Inicial.|
+|newTabPage|duas|NewTabPage.|
+|inPreviouspagetype|3D|PreviousPageType.|
+|specificPages|quatro|SpecificPages.|
 
 
 

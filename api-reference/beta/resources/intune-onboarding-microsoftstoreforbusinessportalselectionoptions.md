@@ -1,30 +1,30 @@
 ---
-title: tipo de enum microsoftStoreForBusinessPortalSelectionOptions
-description: Portal ao qual o admin sincroniza disponíveis Store Microsoft para aplicativos de negócios. Isso está disponível no Console de administração do Intune.
-localization_priority: Normal
+title: tipo de enumeração microsoftStoreForBusinessPortalSelectionOptions
+description: Portal para o qual o administrador sincroniza a Microsoft Store para aplicativos corporativos disponíveis. Isso está disponível no console de administração do Intune.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 589a6058a7ff2c30a967192b90c700f30068ab3c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 47182d7282c57b3a00aade30bd3f64319ab34479
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29419328"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30147940"
 ---
-# <a name="microsoftstoreforbusinessportalselectionoptions-enum-type"></a>tipo de enum microsoftStoreForBusinessPortalSelectionOptions
+# <a name="microsoftstoreforbusinessportalselectionoptions-enum-type"></a>tipo de enumeração microsoftStoreForBusinessPortalSelectionOptions
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Portal ao qual o admin sincroniza disponíveis Store Microsoft para aplicativos de negócios. Isso está disponível no Console de administração do Intune.
+Portal para o qual o administrador sincroniza a Microsoft Store para aplicativos corporativos disponíveis. Isso está disponível no console de administração do Intune.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|none|0|Essa opção não está disponível para a conta|
-|companyPortal|1|Somente para empresa Intune Portal.|
-|privateStore|2|Somente repositório MSFB particular.|
+|Nenhuma|,0|Essa opção não está disponível para a conta|
+|companyPortal|1|Somente portal da empresa do Intune.|
+|privateStore|duas|Somente repositório privado MSFB.|
 
 
 

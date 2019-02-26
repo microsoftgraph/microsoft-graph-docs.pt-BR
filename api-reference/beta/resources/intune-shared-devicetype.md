@@ -1,49 +1,49 @@
 ---
-title: tipo de enum deviceType
+title: tipo de enumeração DeviceType
 description: Tipo de dispositivo.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 31342399cad690b3f95dcbc8494998de455cdaa7
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 2e29fb236bbfeca914878e92d8b565502e5658f5
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29400617"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30142725"
 ---
-# <a name="devicetype-enum-type"></a>tipo de enum deviceType
+# <a name="devicetype-enum-type"></a>tipo de enumeração DeviceType
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Tipo de dispositivo.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|área de trabalho|0|Área de trabalho.|
+|placa|,0|Placa.|
 |windowsRT|1|WindowsRT.|
-|winMO6|2|WinMO6.|
-|Nokia|3|Nokia.|
-|windowsPhone|4|Telefone do Windows.|
-|mac|5|Mac.|
+|winMO6|duas|WinMO6.|
+|Nokia|3D|Nokia.|
+|Windowsphonee|quatro|Windows Phone.|
+|mac|0,5|MacOS.|
 |winCE|6|WinCE.|
-|winEmbedded|7|WinEmbedded.|
+|winEmbedded|178|WinEmbedded.|
 |iPhone|8|iPhone.|
-|iPad|9|iPad.|
-|iPod|10|iPodTouch.|
+|iPad|241|iPad.|
+|iPod|254|iPodTouch.|
 |Android|11|Android.|
-|iSocConsumer|12|iSocConsumer.|
-|UNIX|13|UNIX.|
-|macMDM|14|Cliente do Mac OS X usando criada no agente de MDM.|
-|holoLens|15|Windows 10 representando a sofisticada óculos.|
-|surfaceHub|16|Dispositivo superfície de HUB.|
-|androidForWork|17|Android para o dispositivo de trabalho.|
-|androidEnterprise|18|Dispositivo Android enterprise.|
-|BlackBerry|100|BlackBerry.|
+|iSocConsumer|3,6|iSocConsumer.|
+|UNIX|Treze|UNIX.|
+|macMDM|14|Cliente Mac OS X usando o agente MDM interno.|
+|holoLens|15|Representando o Windows 10 Goggles sofisticado.|
+|surfaceHub|dezesseis|Dispositivo de HUB de superfície.|
+|androidForWork|17.07.06|Android para dispositivo de trabalho.|
+|androidEnterprise|anos|Dispositivo de empresa Android.|
+|rim|100|Rim.|
 |Palm|101|Palm.|
-|unknown|255|Representa o tipo de dispositivo é desconhecido.|
+|unknown|255|Representa que o tipo de dispositivo é desconhecido.|
 
 
 

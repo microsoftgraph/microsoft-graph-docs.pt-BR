@@ -1,29 +1,29 @@
 ---
-title: tipo de enum groupPolicyType
-description: Tipo de arquivo de diretiva de grupo ou a definição.
-localization_priority: Normal
+title: tipo de enumeração groupPolicyType
+description: Tipo de arquivo de política de grupo ou definição.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 33cbf5e43cddd0b98fbe8655551008c7df338c14
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 728b60f72e7686a992ea660a0510208b9ac83eff
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29429268"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30168716"
 ---
-# <a name="grouppolicytype-enum-type"></a>tipo de enum groupPolicyType
+# <a name="grouppolicytype-enum-type"></a>tipo de enumeração groupPolicyType
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Tipo de arquivo de diretiva de grupo ou a definição.
+Tipo de arquivo de política de grupo ou definição.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|admxBacked|0|Agrupe os modelos administrativos da política internos para o provedor de serviço de configuração de política (CSP).|
-|admxIngested|1|Instalado usando o provedor de serviço de configuração de política (CSP) de modelos administrativos da diretiva de grupo.|
+|admxBacked|,0|Os modelos administrativos da política de grupo internos para o provedor de serviços de configuração de política (CSP).|
+|admxIngested|1|Modelos administrativos da política de grupo instalados usando o provedor de serviços de configuração de política (CSP).|
 
 
 

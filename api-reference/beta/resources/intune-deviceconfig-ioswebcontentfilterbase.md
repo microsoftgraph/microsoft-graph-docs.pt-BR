@@ -1,23 +1,23 @@
 ---
-title: tipo de recurso de iosWebContentFilterBase
-description: Representa um tipo de base de configuração de filtro de conteúdo da Web iOS. Uma base vazio e abstrato. Chamador deve usar um dos tipos de derivada para configurações.
-localization_priority: Normal
+title: tipo de recurso iosWebContentFilterBase
+description: Representa um tipo de base de configuração de filtro de conteúdo da Web iOS. Uma base vazia e abstrata. O chamador deve usar um dos tipos derivados para configurações.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 70d3619ead1e9a8748153a094960580773318a1f
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 440d85a8d3f07e61eb7936f31b01138ca6a74d53
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29409087"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30167624"
 ---
-# <a name="ioswebcontentfilterbase-resource-type"></a>tipo de recurso de iosWebContentFilterBase
+# <a name="ioswebcontentfilterbase-resource-type"></a>tipo de recurso iosWebContentFilterBase
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Representa um tipo de base de configuração de filtro de conteúdo da Web iOS. Uma base vazio e abstrato. Chamador deve usar um dos tipos de derivada para configurações.
+Representa um tipo de base de configuração de filtro de conteúdo da Web iOS. Uma base vazia e abstrata. O chamador deve usar um dos tipos derivados para configurações.
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|

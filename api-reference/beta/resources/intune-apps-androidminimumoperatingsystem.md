@@ -1,40 +1,40 @@
 ---
 title: Tipo de recurso androidMinimumOperatingSystem
 description: Contém propriedades para o sistema operacional mínimo obrigatório para um aplicativo móvel Android.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4328cfe06180be138b2c33840c72620efdaa277b
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 3f18e21dcc6e67eb7285bf15c29e76d2c64eff18
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29403123"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30153806"
 ---
 # <a name="androidminimumoperatingsystem-resource-type"></a>Tipo de recurso androidMinimumOperatingSystem
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Contém propriedades para o sistema operacional mínimo obrigatório para um aplicativo móvel Android.
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|v4_0|Booliano|Versão 4.0 ou posterior.|
-|v4_0_3|Booliano|Versão 4.0.3 ou posterior.|
-|v4_1|Booliano|Versão 4.1 ou posterior.|
-|v4_2|Booliano|Versão 4.2 ou posterior.|
-|v4_3|Booliano|Versão 4.3 ou posterior.|
-|v4_4|Booliano|Versão 4.4 ou posterior.|
-|v5_0|Booliano|Versão 5.0 ou posterior.|
-|v5_1|Booliano|Versão 5.1 ou posterior.|
-|v6_0|Boolean|Versão 6.0 ou posterior.|
-|v7_0|Boolean|Versão 7.0 ou posterior.|
-|v7_1|Boolean|Versão 7.1 ou posterior.|
-|v8_0|Booliano|Versão 8.0 ou posterior.|
-|v8_1|Booliano|Versão 8.1 ou posterior.|
+|v4_0|Boolean|Versão 4.0 ou posterior.|
+|v4_0_3|Boolean|Versão 4.0.3 ou posterior.|
+|v4_1|Boolean|Versão 4.1 ou posterior.|
+|v4_2|Boolean|Versão 4.2 ou posterior.|
+|v4_3|Boolean|Versão 4.3 ou posterior.|
+|v4_4|Boolean|Versão 4.4 ou posterior.|
+|v5_0|Boolean|Versão 5.0 ou posterior.|
+|v5_1|Boolean|Versão 5.1 ou posterior.|
+|v6_0|Boolean|Versão 6,0 ou posterior.|
+|v7_0|Boolean|Versão 7,0 ou posterior.|
+|v7_1|Boolean|Versão 7,1 ou posterior.|
+|v8_0|Boolean|Versão 8.0 ou posterior.|
+|v8_1|Boolean|Versão 8,1 ou posterior.|
 |v9_0|Booliano|Versão 9.0 ou posterior.|
 
 ## <a name="relationships"></a>Relações

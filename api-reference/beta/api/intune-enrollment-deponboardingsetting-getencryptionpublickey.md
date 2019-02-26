@@ -1,23 +1,23 @@
 ---
 title: função getEncryptionPublicKey
-description: Obtenha uma chave pública para usar para criptografar o programa de inscrição do dispositivo Apple token
-localization_priority: Normal
+description: Obter uma chave pública para usar para criptografar o token do programa de registro de dispositivo Apple
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b2d2359f5bc6c13f094b9c8fbe6e302ab82d9147
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 72149171a964d72be0ef35351638ffcdf27e0289
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29420595"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30154261"
 ---
 # <a name="getencryptionpublickey-function"></a>função getEncryptionPublicKey
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Obtenha uma chave pública para usar para criptografar o programa de inscrição do dispositivo Apple token
+Obter uma chave pública para usar para criptografar o token do programa de registro de dispositivo Apple
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).

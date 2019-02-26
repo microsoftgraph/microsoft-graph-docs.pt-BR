@@ -1,23 +1,23 @@
 ---
 title: Atualizar deviceManagementScriptDeviceState
-description: Atualize as propriedades de um objeto deviceManagementScriptDeviceState.
-localization_priority: Normal
+description: Atualiza as propriedades de um objeto deviceManagementScriptDeviceState.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 35768793279cdb96494a26dac8854f74e3c267ad
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 65da8583b854c2cd912e877729bbe3ec7735c92a
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29395150"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30170606"
 ---
 # <a name="update-devicemanagementscriptdevicestate"></a>Atualizar deviceManagementScriptDeviceState
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Atualize as propriedades de um objeto [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) .
+Atualiza as propriedades de um objeto [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
@@ -45,23 +45,23 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userR
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON para o objeto [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) .
+No corpo da solicitação, forneça uma representação JSON do objeto [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) .
 
-A tabela a seguir mostra as propriedades que são necessárias quando você cria o [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md).
+A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade de estado de dispositivo de script para gerenciamento do dispositivo.|
-|runState|[runState](../resources/intune-shared-runstate.md)|Estado de execução mais recente do script de gerenciamento de dispositivo. Os valores possíveis são: `unknown`, `success`, `fail`.|
+|id|String|Chave da entidade de estado do dispositivo de script de gerenciamento de dispositivos.|
+|runState|[runState](../resources/intune-shared-runstate.md)|Estado da última execução do script de gerenciamento de dispositivos. Os valores possíveis são: `unknown`, `success`, `fail`.|
 |resultMessage|String|Detalhes da saída de execução.|
-|lastStateUpdateDateTime|DateTimeOffset|Última vez em que o script de gerenciamento de dispositivo executa.|
-|errorCode|Int32|Código de erro correspondente à execução incorreta do script de gerenciamento de dispositivo.|
-|errorDescription|Cadeia de caracteres|Descrição do erro correspondente à execução incorreta do script de gerenciamento de dispositivo.|
+|lastStateUpdateDateTime|DateTimeOffset|Última vez em que o script de gerenciamento de dispositivos é executado.|
+|errorCode|Int32|Código de erro correspondente à execução errada do script de gerenciamento de dispositivos.|
+|errorDescription|Cadeia de caracteres|Descrição do erro correspondente à execução errada do script de gerenciamento de dispositivo.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto atualizado [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

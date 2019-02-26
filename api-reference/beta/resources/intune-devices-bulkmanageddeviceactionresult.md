@@ -1,31 +1,31 @@
 ---
-title: tipo de recurso de bulkManagedDeviceActionResult
+title: tipo de recurso bulkManagedDeviceActionResult
 description: Ainda não documentado
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5d1b23efdb5b8eed16c6c66d72a13efaef9e38d9
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 199fe08b4eaf339f17fdb67bb6dbcc0243fd90f9
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425838"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30168331"
 ---
-# <a name="bulkmanageddeviceactionresult-resource-type"></a>tipo de recurso de bulkManagedDeviceActionResult
+# <a name="bulkmanageddeviceactionresult-resource-type"></a>tipo de recurso bulkManagedDeviceActionResult
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Ainda não documentado
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|successfulDeviceIds|String collection|Dispositivos bem-sucedida|
-|failedDeviceIds|String collection|Dispositivos com falha|
-|notFoundDeviceIds|String collection|Não encontrado dispositivos|
-|notSupportedDeviceIds|String collection|Dispositivos não suportados|
+|successfulDeviceIds|Coleção de cadeias de caracteres|Dispositivos bem-sucedidos|
+|failedDeviceIds|Coleção de cadeias de caracteres|Dispositivos com falha|
+|notFoundDeviceIds|Coleção de cadeias de caracteres|Dispositivos não encontrados|
+|notSupportedDeviceIds|Coleção de cadeias de caracteres|Dispositivos não suportados|
 
 ## <a name="relationships"></a>Relações
 Nenhum

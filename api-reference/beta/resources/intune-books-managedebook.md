@@ -1,21 +1,21 @@
 ---
 title: Tipo de recurso managedEBook
 description: Uma classe abstrata que contém as propriedades base do livro eletrônico gerenciado.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 08bd5cc6f5630aca0ff5b35c5590875d259ad294
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 24a8619d92eee6c666b7126a84895b14e0404755
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422044"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30156032"
 ---
 # <a name="managedebook-resource-type"></a>Tipo de recurso managedEBook
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Uma classe abstrata que contém as propriedades base do livro eletrônico gerenciado.
 
@@ -30,8 +30,8 @@ Uma classe abstrata que contém as propriedades base do livro eletrônico gerenc
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade.|
-|displayName|Cadeia de caracteres|Nome do livro eletrônico.|
-|description|Cadeia de caracteres|Descrição.|
+|displayName|String|Nome do livro eletrônico.|
+|description|String|Descrição.|
 |publisher|Cadeia de caracteres|Publicador.|
 |publishedDateTime|DateTimeOffset|A data e hora em que o livro eletrônico foi publicado.|
 |largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|Capa do livro.|
@@ -43,7 +43,7 @@ Uma classe abstrata que contém as propriedades base do livro eletrônico gerenc
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
-|categories|coleção [managedEBookCategory](../resources/intune-books-managedebookcategory.md)|A lista de categorias para este livro eletrônico.|
+|categories|coleção [managedEBookCategory](../resources/intune-books-managedebookcategory.md)|A lista de categorias para este eBook.|
 |assignments|Coleção [managedEBookAssignment](../resources/intune-books-managedebookassignment.md)|A lista de atribuições para este livro eletrônico.|
 |installSummary|[eBookInstallSummary](../resources/intune-books-ebookinstallsummary.md)|Resumo de instalação do aplicativo móvel.|
 |deviceStates|Coleção [deviceInstallState](../resources/intune-books-deviceinstallstate.md)|A lista de estados de instalação para este livro eletrônico.|

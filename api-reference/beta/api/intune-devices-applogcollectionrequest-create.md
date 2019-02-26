@@ -1,23 +1,23 @@
 ---
 title: Criar appLogCollectionRequest
-description: Crie um novo objeto de appLogCollectionRequest.
-localization_priority: Normal
+description: Criar um novo objeto appLogCollectionRequest.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c3afd1cf00ba706e3fbc1e960e649fc010ae582f
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: da12791aab74c59d82b8efb4c98629ac1d809112
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29429150"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30144993"
 ---
 # <a name="create-applogcollectionrequest"></a>Criar appLogCollectionRequest
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Crie um novo objeto de [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) .
+Criar um novo objeto [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
@@ -44,22 +44,22 @@ POST /deviceManagement/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingE
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON para o objeto appLogCollectionRequest.
+No corpo da solicitação, forneça uma representação JSON do objeto appLogCollectionRequest.
 
-A tabela a seguir mostra as propriedades que são necessárias quando você cria o appLogCollectionRequest.
+A tabela a seguir mostra as propriedades que são necessárias ao criar appLogCollectionRequest.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo. Esse é o id de userId_DeviceId_AppId.|
-|status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|Status de carregamento de log. Os valores possíveis são: `pending`, `completed`, `failed`.|
-|errorMessage|String|Mensagem de erro, se houver algum durante o processo de carregamento|
-|customLogFolders|String collection|Lista de pastas de log. |
-|completedDateTime|DateTimeOffset|Hora em que a solicitação de log de carregamento atingido um estado de terminal|
+|id|String|O identificador exclusivo. Esta é a ID do userId_DeviceId_AppId.|
+|status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|Status de carregamento de logs. Os valores possíveis são: `pending`, `completed`, `failed`.|
+|errorMessage|String|Mensagem de erro se qualquer um durante o processo de carregamento|
+|customLogFolders|Coleção de cadeias de caracteres|Lista de pastas de log. |
+|completedDateTime|DateTimeOffset|Hora em que a solicitação de log de carregamento alcançou um estado de terminal|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

@@ -1,33 +1,33 @@
 ---
-title: tipo de recurso de outOfBoxExperienceSettings
-description: Configuração inicial pelo usuário configuração
-localization_priority: Normal
+title: tipo de recurso outOfBoxExperienceSettings
+description: Configuração de experiência inicial da caixa
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5d2b48fef00c9c3a291a0a2fdfe680b9f4e21030
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 1148ba609a6533dcc6cedb9abd50e9191dceb5d2
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29404600"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30145525"
 ---
-# <a name="outofboxexperiencesettings-resource-type"></a>tipo de recurso de outOfBoxExperienceSettings
+# <a name="outofboxexperiencesettings-resource-type"></a>tipo de recurso outOfBoxExperienceSettings
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Configuração inicial pelo usuário configuração
+Configuração de experiência inicial da caixa
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |hidePrivacySettings|Boolean|Mostrar ou ocultar as configurações de privacidade para o usuário|
-|hideEULA|Boolean|Mostrar ou ocultar o EULA ao usuário|
+|hideEULA|Boolean|Mostrar ou ocultar o EULA para o usuário|
 |userType|[windowsUserType](../resources/intune-enrollment-windowsusertype.md)|Tipo de usuário. Os valores possíveis são: `administrator` e `standard`.|
-|deviceUsageType|[windowsDeviceUsageType](../resources/intune-enrollment-windowsdeviceusagetype.md)|Tipo de autenticação de ingresso AAD. Os valores possíveis são: `singleUser` e `shared`.|
-|skipKeyboardSelectionPage|Boolean|Se definido, em seguida, ignore a seleção de teclado página se estiver definida região e idioma|
-|hideEscapeLink|Boolean|Se definido como verdadeiro, em seguida, o usuário não pode começar novamente com uma conta diferente, na empresa entrar|
+|deviceUsageType|[windowsDeviceUsageType](../resources/intune-enrollment-windowsdeviceusagetype.md)|Tipo de autenticação do AAD join. Os valores possíveis são: `singleUser` e `shared`.|
+|skipKeyboardSelectionPage|Boolean|Se definido, ignore a página de seleção de teclado se idioma e região estiverem definidos|
+|hideEscapeLink|Boolean|Se for definido como true, o usuário não poderá iniciar novamente com uma conta diferente, na entrada da empresa|
 
 ## <a name="relationships"></a>Relações
 Nenhum

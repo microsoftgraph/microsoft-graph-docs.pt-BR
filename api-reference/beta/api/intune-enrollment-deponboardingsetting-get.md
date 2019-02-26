@@ -1,23 +1,23 @@
 ---
 title: Obter depOnboardingSetting
-description: Leia as propriedades e os relacionamentos do objeto depOnboardingSetting.
-localization_priority: Normal
+description: Leia as propriedades e as relações do objeto depOnboardingSetting.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d5eb969b06216a756ad41ea92dd297e6ef25326f
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: ddd15a78115c41e148d3b346df8af0d5a1fe5625
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29393015"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30167603"
 ---
 # <a name="get-deponboardingsetting"></a>Obter depOnboardingSetting
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Leia as propriedades e os relacionamentos do objeto [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) .
+Leia as propriedades e as relações do objeto [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
@@ -50,7 +50,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://docs.microsof
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` objeto response de código e [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -65,7 +65,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 672
+Content-Length: 740
 
 {
   "value": {
@@ -81,7 +81,10 @@ Content-Length: 672
     "tokenType": "dep",
     "tokenName": "Token Name value",
     "syncedDeviceCount": 1,
-    "dataSharingConsentGranted": true
+    "dataSharingConsentGranted": true,
+    "roleScopeTagIds": [
+      "Role Scope Tag Ids value"
+    ]
   }
 }
 ```

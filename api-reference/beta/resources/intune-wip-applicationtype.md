@@ -1,29 +1,29 @@
 ---
-title: tipo de enum applicationType
-description: Tipos possíveis de aplicativo
-localization_priority: Normal
+title: tipo de enumeração ApplicationType
+description: Tipos de aplicativo possíveis
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7d98a7e06b41b1c683ed1110a6438daa45b75876
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e8026ee1b0becb4e465dd7688699d652ea01f892
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29421260"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30151279"
 ---
-# <a name="applicationtype-enum-type"></a>tipo de enum applicationType
+# <a name="applicationtype-enum-type"></a>tipo de enumeração ApplicationType
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Tipos possíveis de aplicativo
+Tipos de aplicativo possíveis
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|universal|1|O aplicativo universal do windows|
-|área de trabalho|2|O aplicativo de área de trabalho do windows|
+|UTC|1|O aplicativo Windows universal|
+|placa|duas|O aplicativo da área de trabalho Windows|
 
 
 

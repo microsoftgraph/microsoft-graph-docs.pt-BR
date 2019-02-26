@@ -1,23 +1,23 @@
 ---
-title: tipo de recurso de windowsAppX
-description: Contém propriedades e as propriedades herdadas para aplicativos do Windows AppX linha de negócios.
-localization_priority: Normal
+title: tipo de recurso windowsAppX
+description: Contém propriedades e propriedades herdadas para aplicativos de linha de negócios do Windows AppX.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 69b6bcbc7a51514cb338f67d94a368498bf78262
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 7b3b62d470942fd62dd407ea4cf53690b5ce2b4e
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425894"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30158559"
 ---
-# <a name="windowsappx-resource-type"></a>tipo de recurso de windowsAppX
+# <a name="windowsappx-resource-type"></a>tipo de recurso windowsAppX
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Contém propriedades e as propriedades herdadas para aplicativos do Windows AppX linha de negócios.
+Contém propriedades e propriedades herdadas para aplicativos de linha de negócios do Windows AppX.
 
 
 Herda de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
@@ -25,11 +25,11 @@ Herda de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Lista windowsAppXs](../api/intune-apps-windowsappx-list.md)|coleção [windowsAppX](../resources/intune-apps-windowsappx.md)|Lista as propriedades e os relacionamentos dos objetos [windowsAppX](../resources/intune-apps-windowsappx.md) .|
-|[Obter windowsAppX](../api/intune-apps-windowsappx-get.md)|[windowsAppX](../resources/intune-apps-windowsappx.md)|Leia as propriedades e os relacionamentos do objeto [windowsAppX](../resources/intune-apps-windowsappx.md) .|
-|[Criar windowsAppX](../api/intune-apps-windowsappx-create.md)|[windowsAppX](../resources/intune-apps-windowsappx.md)|Crie um novo objeto de [windowsAppX](../resources/intune-apps-windowsappx.md) .|
-|[Excluir windowsAppX](../api/intune-apps-windowsappx-delete.md)|Nenhum|Exclui um [windowsAppX](../resources/intune-apps-windowsappx.md).|
-|[Atualizar windowsAppX](../api/intune-apps-windowsappx-update.md)|[windowsAppX](../resources/intune-apps-windowsappx.md)|Atualize as propriedades de um objeto [windowsAppX](../resources/intune-apps-windowsappx.md) .|
+|[Listar windowsAppXs](../api/intune-apps-windowsappx-list.md)|coleção [windowsAppX](../resources/intune-apps-windowsappx.md)|Listar Propriedades e relações dos objetos [windowsAppX](../resources/intune-apps-windowsappx.md) .|
+|[Obter windowsAppX](../api/intune-apps-windowsappx-get.md)|[windowsAppX](../resources/intune-apps-windowsappx.md)|Leia as propriedades e as relações do objeto [windowsAppX](../resources/intune-apps-windowsappx.md) .|
+|[Criar windowsAppX](../api/intune-apps-windowsappx-create.md)|[windowsAppX](../resources/intune-apps-windowsappx.md)|Criar um novo objeto [windowsAppX](../resources/intune-apps-windowsappx.md) .|
+|[Excluir windowsAppX](../api/intune-apps-windowsappx-delete.md)|Nenhum|Exclui [windowsAppX](../resources/intune-apps-windowsappx.md).|
+|[Atualizar windowsAppX](../api/intune-apps-windowsappx-update.md)|[windowsAppX](../resources/intune-apps-windowsappx.md)|Atualiza as propriedades de um objeto [windowsAppX](../resources/intune-apps-windowsappx.md) .|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
@@ -47,10 +47,10 @@ Herda de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
 |owner|String|O proprietário do conteúdo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |developer|String|O desenvolvedor do aplicativo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |Observações|String|Anotações para o aplicativo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
-|uploadState|Int32|O estado de carregamento. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
-|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|O estado de publicação para o aplicativo. O aplicativo não pode ser assinado, a menos que ele seja publicado. Herdada do [mobileApp](../resources/intune-apps-mobileapp.md). Os valores possíveis são: `notPublished`, `processing`, `published`.|
+|uploadState|Int32|O estado de upload. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|O estado de publicação para o aplicativo. O aplicativo não pode ser assinado, a menos que ele seja publicado. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md). Os valores possíveis são: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|O valor que indica se o aplicativo é atribuído a pelo menos um grupo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
-|roleScopeTagIds|String collection|Lista de ids de marca de escopo para esse aplicativo móvel. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de IDs de marca de escopo para este aplicativo móvel. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |committedContentVersion|String|A versão do conteúdo interno confirmado. Herdado de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |fileName|String|O nome do arquivo do aplicativo Lob principal. Herdado de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |size|Int64|O tamanho total, incluindo todos os arquivos carregados. Herdado de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
@@ -68,8 +68,8 @@ Herda de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
 |categories|Coleção [mobileAppCategory](../resources/intune-apps-mobileappcategory.md)|A lista de categorias para este aplicativo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |assignments|Coleção [mobileAppAssignment](../resources/intune-apps-mobileappassignment.md)|A lista de atribuições de grupo para esse aplicativo móvel. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |installSummary|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)|Resumo de instalação do aplicativo móvel. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
-|deviceStatuses|coleção [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)|A lista de estados de instalação para esse aplicativo móvel. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
-|userStatuses|coleção [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)|A lista de estados de instalação para esse aplicativo móvel. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|deviceStatuses|coleção [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)|A lista de Estados de instalação para este aplicativo móvel. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|userStatuses|coleção [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)|A lista de Estados de instalação para este aplicativo móvel. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |contentVersions|Coleção [mobileAppContent](../resources/intune-apps-mobileappcontent.md)|A lista das versões de conteúdo deste aplicativo. Herdado de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 
 ## <a name="json-representation"></a>Representação JSON

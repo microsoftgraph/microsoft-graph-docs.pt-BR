@@ -1,40 +1,40 @@
 ---
-title: tipo de recurso de ndesConnector
-description: Entidade que representa um conector OnPrem Ndes.
-localization_priority: Normal
+title: tipo de recurso ndesConnector
+description: Entidade que representa um conector NDES local.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b504173c0a56e15fd2a4ba09ce50beeabbb20edc
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 71a37cc86e72ba48a32988c8cdd034874e490a8c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29411145"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30146926"
 ---
-# <a name="ndesconnector-resource-type"></a>tipo de recurso de ndesConnector
+# <a name="ndesconnector-resource-type"></a>tipo de recurso ndesConnector
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Entidade que representa um conector OnPrem Ndes.
+Entidade que representa um conector NDES local.
 
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Lista ndesConnectors](../api/intune-deviceconfig-ndesconnector-list.md)|coleção [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md)|Lista as propriedades e os relacionamentos dos objetos [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) .|
-|[Obter ndesConnector](../api/intune-deviceconfig-ndesconnector-get.md)|[ndesConnector](../resources/intune-deviceconfig-ndesconnector.md)|Leia as propriedades e os relacionamentos do objeto [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) .|
-|[Criar ndesConnector](../api/intune-deviceconfig-ndesconnector-create.md)|[ndesConnector](../resources/intune-deviceconfig-ndesconnector.md)|Crie um novo objeto de [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) .|
-|[Excluir ndesConnector](../api/intune-deviceconfig-ndesconnector-delete.md)|Nenhum|Exclui um [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md).|
-|[Atualizar ndesConnector](../api/intune-deviceconfig-ndesconnector-update.md)|[ndesConnector](../resources/intune-deviceconfig-ndesconnector.md)|Atualize as propriedades de um objeto [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) .|
+|[Listar ndesConnectors](../api/intune-deviceconfig-ndesconnector-list.md)|coleção [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md)|Listar Propriedades e relações dos objetos [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) .|
+|[Obter ndesConnector](../api/intune-deviceconfig-ndesconnector-get.md)|[ndesConnector](../resources/intune-deviceconfig-ndesconnector.md)|Leia as propriedades e as relações do objeto [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) .|
+|[Criar ndesConnector](../api/intune-deviceconfig-ndesconnector-create.md)|[ndesConnector](../resources/intune-deviceconfig-ndesconnector.md)|Criar um novo objeto [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) .|
+|[Excluir ndesConnector](../api/intune-deviceconfig-ndesconnector-delete.md)|Nenhum|Exclui [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md).|
+|[Atualizar ndesConnector](../api/intune-deviceconfig-ndesconnector-update.md)|[ndesConnector](../resources/intune-deviceconfig-ndesconnector.md)|Atualiza as propriedades de um objeto [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) .|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|A chave do conector NDES.|
-|lastConnectionDateTime|DateTimeOffset|Hora da última conexão para o conector Ndes|
-|estado|[ndesConnectorState](../resources/intune-deviceconfig-ndesconnectorstate.md)|Status do conector NDES. Os valores possíveis são: `none`, `active`, `inactive`.|
-|displayName|String|O nome amigável do conector Ndes.|
+|lastConnectionDateTime|DateTimeOffset|Hora da última conexão para o conector NDES|
+|state|[ndesConnectorState](../resources/intune-deviceconfig-ndesconnectorstate.md)|Status do conector NDES. Os valores possíveis são: `none`, `active`, `inactive`.|
+|displayName|String|O nome amigável do conector NDES.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

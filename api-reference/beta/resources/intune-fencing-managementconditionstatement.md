@@ -1,52 +1,52 @@
 ---
-title: tipo de recurso de managementConditionStatement
-description: Uma instrução de condição de gerenciamento é um grupo de condições de gerenciamento que habilitar/desabilitar configurações de dispositivo/aplicativo quando todas as condições de gerenciamento contidos forem atendidas.
-localization_priority: Normal
+title: tipo de recurso managementConditionStatement
+description: Uma instrução de condição de gerenciamento é um grupo de condições de gerenciamento que Habilita/desabilita as configurações de dispositivo/aplicativo quando todas as condições de gerenciamento contidas são atendidas.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3292dae241a3f79cc7d3417c93ccc1187c8b8d17
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 41b696ee92b3098ea06c55c923fb3058706414ce
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29395990"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30167470"
 ---
-# <a name="managementconditionstatement-resource-type"></a>tipo de recurso de managementConditionStatement
+# <a name="managementconditionstatement-resource-type"></a>tipo de recurso managementConditionStatement
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Uma instrução de condição de gerenciamento é um grupo de condições de gerenciamento que habilitar/desabilitar configurações de dispositivo/aplicativo quando todas as condições de gerenciamento contidos forem atendidas.
+Uma instrução de condição de gerenciamento é um grupo de condições de gerenciamento que Habilita/desabilita as configurações de dispositivo/aplicativo quando todas as condições de gerenciamento contidas são atendidas.
 
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Lista managementConditionStatements](../api/intune-fencing-managementconditionstatement-list.md)|coleção [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)|Lista as propriedades e os relacionamentos dos objetos [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) .|
-|[Obter managementConditionStatement](../api/intune-fencing-managementconditionstatement-get.md)|[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)|Leia as propriedades e os relacionamentos do objeto [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) .|
-|[Criar managementConditionStatement](../api/intune-fencing-managementconditionstatement-create.md)|[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)|Crie um novo objeto de [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) .|
-|[Excluir managementConditionStatement](../api/intune-fencing-managementconditionstatement-delete.md)|Nenhum|Exclui um [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md).|
-|[Atualizar managementConditionStatement](../api/intune-fencing-managementconditionstatement-update.md)|[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)|Atualize as propriedades de um objeto [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) .|
+|[Listar managementConditionStatements](../api/intune-fencing-managementconditionstatement-list.md)|coleção [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)|Listar Propriedades e relações dos objetos [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) .|
+|[Obter managementConditionStatement](../api/intune-fencing-managementconditionstatement-get.md)|[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)|Leia as propriedades e as relações do objeto [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) .|
+|[Criar managementConditionStatement](../api/intune-fencing-managementconditionstatement-create.md)|[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)|Criar um novo objeto [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) .|
+|[Excluir managementConditionStatement](../api/intune-fencing-managementconditionstatement-delete.md)|Nenhum|Exclui [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md).|
+|[Atualizar managementConditionStatement](../api/intune-fencing-managementconditionstatement-update.md)|[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)|Atualiza as propriedades de um objeto [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) .|
 |[função getManagementConditionStatementExpressionString](../api/intune-fencing-managementconditionstatement-getmanagementconditionstatementexpressionstring.md)|[managementConditionExpressionString](../resources/intune-fencing-managementconditionexpressionstring.md)|Ainda não documentado|
 |[função getManagementConditionStatementsForPlatform](../api/intune-fencing-managementconditionstatement-getmanagementconditionstatementsforplatform.md)|coleção [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md)|Ainda não documentado|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo para a declaração de condição de gerenciamento. Valor atribuído quando criado gerado pelo sistema.|
-|displayName|String|O nome definido admin da declaração de condição de gerenciamento.|
-|description|String|O administrador definidos descrição da declaração de condição de gerenciamento.|
-|createdDateTime|DateTimeOffset|A hora em que a declaração de condição de gerenciamento foi criada. Lado de serviço gerado.|
-|modifiedDateTime|DateTimeOffset|A hora que da última modificação a declaração de condição de gerenciamento. Lado de serviços atualizado.|
-|expressão|[managementConditionExpression](../resources/intune-fencing-managementconditionexpression.md)|A expressão da instrução gerenciamento condição usada para avaliar se um gerenciamento de condição instrução foi ativado/desativado.|
-|eTag|String|ETag da declaração de condição de gerenciamento. Lado de serviços atualizado.|
-|applicablePlatforms|coleção [devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|As plataformas aplicáveis para esta declaração de condição de gerenciamento.
-Isso é calculado a partir procurando as condições de gerenciamento associadas ao gerenciamento de condição de instrução e encontrar a interseção de plataformas aplicáveis.|
+|id|String|Identificador exclusivo da instrução de condição de gerenciamento. Valor gerado pelo sistema atribuído quando criado.|
+|displayName|String|O nome do administrador definido da instrução de condição de gerenciamento.|
+|description|Cadeia de caracteres|A descrição definida pelo administrador da instrução de condição de gerenciamento.|
+|createdDateTime|DateTimeOffset|A hora em que a instrução de gerenciamento da condição foi criada. Lado do serviço gerado.|
+|modifiedDateTime|DateTimeOffset|A hora em que a declaração de condição de gerenciamento foi modificada pela última vez. Atualizado o lado do serviço.|
+|expressão|[managementConditionExpression](../resources/intune-fencing-managementconditionexpression.md)|A expressão de instrução de condição de gerenciamento usada para avaliar se uma instrução de condição de gerenciamento foi ativada/desativada.|
+|eTag|String|ETag da instrução de condição de gerenciamento. Atualizado o lado do serviço.|
+|applicablePlatforms|coleção [devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|As plataformas aplicáveis para essa instrução de condição de gerenciamento.
+Isso é calculado a partir da aparência das condições de gerenciamento associadas à instrução de condição de gerenciamento e à localização da interseção de plataformas aplicáveis.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
-|managementConditions|coleção [managementCondition](../resources/intune-fencing-managementcondition.md)|As condições de gerenciamento associadas a declaração de condição de gerenciamento.|
+|managementConditions|coleção [managementCondition](../resources/intune-fencing-managementcondition.md)|As condições de gerenciamento associadas à instrução de condição de gerenciamento.|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

@@ -1,33 +1,33 @@
 ---
-title: tipo de enum enrollmentState
+title: tipo de enumeração de enrollmentid
 description: Ainda não documentado
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b71f41d459e3fdb50fd853c62a855b4591a8ca8e
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: dcb039563d9c45a33c4e42344fc8557dfe29b333
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29419104"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30159245"
 ---
-# <a name="enrollmentstate-enum-type"></a>tipo de enum enrollmentState
+# <a name="enrollmentstate-enum-type"></a>tipo de enumeração de enrollmentid
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Ainda não documentado
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|unknown|0|O estado de inscrição do dispositivo é desconhecido|
-|inscritos|1|Inscrever-se o dispositivo.|
-|pendingReset|2|Inscritos, mas ele está inscrito via perfil de inscrição e o perfil registrado é diferente do perfil atribuído.|
-|Falha|3|Não inscritos e não houver registro de falha de inscrição.|
-|notContacted|4|Dispositivo é importado, mas não inscritos.|
-|bloqueado|5|Dispositivo está inscrito como userless, mas seja bloqueado para mover para a inscrição do usuário porque o aplicativo falha na instalação.|
+|unknown|,0|O estado do registro do dispositivo é desconhecido|
+|registrados|1|O dispositivo está inscrito.|
+|pendingReset|duas|Inscrito, mas ele está inscrito via perfil de registro e o perfil inscrito é diferente do perfil atribuído.|
+|falhou|3D|Não registrado e o registro de falha de registro.|
+|Não contatado|quatro|O dispositivo é importado, mas não está inscrito.|
+|bloqueou|0,5|O dispositivo está inscrito como um não-usuário, mas é impedido de migrar para o registro do usuário porque o aplicativo não pôde ser instalado.|
 
 
 

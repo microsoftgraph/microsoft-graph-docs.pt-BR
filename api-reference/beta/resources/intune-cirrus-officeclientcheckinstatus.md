@@ -1,35 +1,35 @@
 ---
-title: tipo de recurso de officeClientCheckinStatus
-description: Entidade que descreve as estatísticas de check-in do inquilino.
+title: tipo de recurso officeClientCheckinStatus
+description: Entidade que descreve as estatísticas de check-in do locatário.
 localization_priority: Normal
 author: tfitzmac
 ms.prod: Intune
-ms.openlocfilehash: aebc534a6c424a9dac4316d0029e2fd35839f0a7
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 465b07ba286b9ee3a58132424be2a25b1c7e564e
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29403256"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30156053"
 ---
-# <a name="officeclientcheckinstatus-resource-type"></a>tipo de recurso de officeClientCheckinStatus
+# <a name="officeclientcheckinstatus-resource-type"></a>tipo de recurso officeClientCheckinStatus
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Entidade que descreve as estatísticas de check-in do inquilino.
+Entidade que descreve as estatísticas de check-in do locatário.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|userPrincipalName|String|Nome principal de usuário usando o dispositivo.|
-|deviceName|String|Nome do dispositivo tentando fazer check-in.|
-|devicePlatform|String|Plataforma de dispositivo tentando fazer check-in.|
-|devicePlatformVersion|String|Versão de plataforma do dispositivo tentando fazer check-in.|
-|wasSuccessful|Boolean|Se o último check-in foi bem-sucedida.|
+|userPrincipalName|String|Nome principal do usuário usando o dispositivo.|
+|deviceName|Cadeia de caracteres|Nome do dispositivo que está tentando fazer check-in.|
+|devicePlatform|String|Plataforma do dispositivo que está tentando fazer check-in.|
+|devicePlatformVersion|String|Versão da plataforma do dispositivo que está tentando fazer check-in.|
+|wasSuccessful|Boolean|Se o último check-in foi bem-sucedido.|
 |userId|String|Identificador de usuário usando o dispositivo.|
-|checkinDateTime|DateTimeOffset|Último dispositivo tempo check-in em UTC.|
-|errorMessage|String|Mensagem de erro, se houver algum associado para o último check-in.|
-|appliedPolicies|String collection|Lista de políticas entregues ao dispositivo como último check-in.|
+|checkinDateTime|DateTimeOffset|Tempo de check-in do último dispositivo em UTC.|
+|errorMessage|String|Mensagem de erro se algum associado para o último check-in.|
+|appliedPolicies|Coleção de cadeias de caracteres|Lista de políticas entregues ao dispositivo como última verificação.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

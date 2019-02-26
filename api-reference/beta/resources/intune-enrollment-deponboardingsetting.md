@@ -1,61 +1,62 @@
 ---
-title: tipo de recurso de depOnboardingSetting
-description: O depOnboardingSetting representa uma instância do serviço Apple DEP sendo onboarded para Intune. A instância do serviço onboarded gerencia um Token Apple usado para sincronizar dados entre Apple e Intune.
-localization_priority: Normal
+title: tipo de recurso depOnboardingSetting
+description: O depOnboardingSetting representa uma instância do serviço Apple DEP que está sendo integrado ao Intune. A instância de serviço integrada gerencia um token Apple usado para sincronizar dados entre o Apple e o Intune.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3c0e5bcbdf0a687d4601aa92c8fe0eacdd675cd2
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8a3c19a791f97b7cb40bdd2398fec4c1812fdcde
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29423766"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30145280"
 ---
-# <a name="deponboardingsetting-resource-type"></a>tipo de recurso de depOnboardingSetting
+# <a name="deponboardingsetting-resource-type"></a>tipo de recurso depOnboardingSetting
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-O depOnboardingSetting representa uma instância do serviço Apple DEP sendo onboarded para Intune. A instância do serviço onboarded gerencia um Token Apple usado para sincronizar dados entre Apple e Intune.
+O depOnboardingSetting representa uma instância do serviço Apple DEP que está sendo integrado ao Intune. A instância de serviço integrada gerencia um token Apple usado para sincronizar dados entre o Apple e o Intune.
 
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Lista depOnboardingSettings](../api/intune-enrollment-deponboardingsetting-list.md)|coleção [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)|Lista as propriedades e os relacionamentos dos objetos [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) .|
-|[Obter depOnboardingSetting](../api/intune-enrollment-deponboardingsetting-get.md)|[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)|Leia as propriedades e os relacionamentos do objeto [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) .|
-|[Criar depOnboardingSetting](../api/intune-enrollment-deponboardingsetting-create.md)|[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)|Crie um novo objeto de [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) .|
-|[Excluir depOnboardingSetting](../api/intune-enrollment-deponboardingsetting-delete.md)|Nenhum|Exclui um [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md).|
-|[Atualizar depOnboardingSetting](../api/intune-enrollment-deponboardingsetting-update.md)|[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)|Atualize as propriedades de um objeto [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) .|
-|[função getEncryptionPublicKey](../api/intune-enrollment-deponboardingsetting-getencryptionpublickey.md)|String|Obtenha uma chave pública para usar para criptografar o programa de inscrição do dispositivo Apple token|
-|[ação de uploadDepToken](../api/intune-enrollment-deponboardingsetting-uploaddeptoken.md)|Nenhum|Carrega um novo token do programa de inscrição do dispositivo|
-|[ação de syncWithAppleDeviceEnrollmentProgram](../api/intune-enrollment-deponboardingsetting-syncwithappledeviceenrollmentprogram.md)|Nenhum|Sincroniza entre Intune e o programa de inscrição do dispositivo Apple|
-|[ação de shareForSchoolDataSyncService](../api/intune-enrollment-deponboardingsetting-shareforschooldatasyncservice.md)|Nenhum|Ainda não documentado|
-|[ação de unshareForSchoolDataSyncService](../api/intune-enrollment-deponboardingsetting-unshareforschooldatasyncservice.md)|Nenhum|Ainda não documentado|
+|[Listar depOnboardingSettings](../api/intune-enrollment-deponboardingsetting-list.md)|coleção [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)|Listar Propriedades e relações dos objetos [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) .|
+|[Obter depOnboardingSetting](../api/intune-enrollment-deponboardingsetting-get.md)|[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)|Leia as propriedades e as relações do objeto [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) .|
+|[Criar depOnboardingSetting](../api/intune-enrollment-deponboardingsetting-create.md)|[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)|Criar um novo objeto [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) .|
+|[Excluir depOnboardingSetting](../api/intune-enrollment-deponboardingsetting-delete.md)|Nenhum|Exclui [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md).|
+|[Atualizar depOnboardingSetting](../api/intune-enrollment-deponboardingsetting-update.md)|[depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)|Atualiza as propriedades de um objeto [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) .|
+|[função getEncryptionPublicKey](../api/intune-enrollment-deponboardingsetting-getencryptionpublickey.md)|String|Obter uma chave pública para usar para criptografar o token do programa de registro de dispositivo Apple|
+|[Ação uploadDepToken](../api/intune-enrollment-deponboardingsetting-uploaddeptoken.md)|Nenhum|Carrega um novo token do programa de registro de dispositivos|
+|[Ação syncWithAppleDeviceEnrollmentProgram](../api/intune-enrollment-deponboardingsetting-syncwithappledeviceenrollmentprogram.md)|Nenhum|Sincroniza entre o programa de registro de dispositivo Apple e o Intune|
+|[Ação shareForSchoolDataSyncService](../api/intune-enrollment-deponboardingsetting-shareforschooldatasyncservice.md)|Nenhum|Ainda não documentado|
+|[Ação unshareForSchoolDataSyncService](../api/intune-enrollment-deponboardingsetting-unshareforschooldatasyncservice.md)|Nenhum|Ainda não documentado|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O UUID do objeto.|
-|appleIdentifier|Cadeia de caracteres|A ID do Apple usada para obter o token atual.|
-|tokenExpirationDateTime|DateTimeOffset|Quando o token irá expirar.|
-|lastModifiedDateTime|DateTimeOffset|Quando o serviço foi onboarded.|
-|lastSuccessfulSyncDateTime|DateTimeOffset|Quando o syned última do serviço com Intune|
-|lastSyncTriggeredDateTime|DateTimeOffset|Quando o Intune solicitado último uma sincronização.|
-|shareTokenWithSchoolDataSyncService|Boolean|Ou não o compartilhamento token do Dep está habilitado com o serviço de sincronização de dados da escola.|
-|lastSyncErrorCode|Int32|Código de erro relatado pelo Apple durante a última sincronização dep.|
-|tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|Obtém ou define o tipo de Token do Dep. Os valores possíveis são: `none`, `dep`, `appleSchoolManager`.|
-|tokenName|String|Nome amigável para o Token de Dep|
-|syncedDeviceCount|Int32|Obtém sincronizados contagem de dispositivo|
-|dataSharingConsentGranted|Boolean|Concedido consentimento para o compartilhamento de dados com Apple Dep Service|
+|id|String|O UUID do objeto.|
+|appleIdentifier|Cadeia de caracteres|A ID da Apple usada para obter o token atual.|
+|tokenExpirationDateTime|DateTimeOffset|Quando o token expirará.|
+|lastModifiedDateTime|DateTimeOffset|Quando o serviço foi integrado.|
+|lastSuccessfulSyncDateTime|DateTimeOffset|Quando o serviço última syned com o Intune|
+|lastSyncTriggeredDateTime|DateTimeOffset|Quando o Intune solicitou uma sincronização pela última vez.|
+|shareTokenWithSchoolDataSyncService|Boolean|Se o compartilhamento de token DEP está ou não habilitado com o serviço de sincronização de dados da escola.|
+|lastSyncErrorCode|Int32|Código de erro relatado pela Apple durante a última sincronização de Dep.|
+|TokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|Obtém ou define o tipo de token Dep. Os valores possíveis são: `none`, `dep`, `appleSchoolManager`.|
+|tokenname|String|Nome amigável para token Dep|
+|syncedDeviceCount|Int32|Obtém a contagem de dispositivos sincronizados|
+|dataSharingConsentGranted|Boolean|Consentimento concedido para compartilhamento de dados com o serviço Apple Dep|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
-|defaultIosEnrollmentProfile|[depIOSEnrollmentProfile](../resources/intune-enrollment-depiosenrollmentprofile.md)|IOS padrão perfil de inscrição|
-|defaultMacOsEnrollmentProfile|[depMacOSEnrollmentProfile](../resources/intune-enrollment-depmacosenrollmentprofile.md)|Perfil de inscrição MacOs padrão|
-|enrollmentProfiles|coleção [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|Os perfis de inscrição.|
-|importedAppleDeviceIdentities|coleção [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|As identidades de dispositivo Apple importadas.|
+|defaultIosEnrollmentProfile|[depIOSEnrollmentProfile](../resources/intune-enrollment-depiosenrollmentprofile.md)|Perfil de registro iOS padrão|
+|defaultMacOsEnrollmentProfile|[depMacOSEnrollmentProfile](../resources/intune-enrollment-depmacosenrollmentprofile.md)|Perfil de registro do MacOs padrão|
+|enrollmentProfiles|coleção [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|Os perfis de registro.|
+|importedAppleDeviceIdentities|coleção [importedAppleDeviceIdentity](../resources/intune-enrollment-importedappledeviceidentity.md)|As identidades importadas do dispositivo Apple.|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -79,7 +80,10 @@ Veja a seguir uma representação JSON do recurso.
   "tokenType": "String",
   "tokenName": "String",
   "syncedDeviceCount": 1024,
-  "dataSharingConsentGranted": true
+  "dataSharingConsentGranted": true,
+  "roleScopeTagIds": [
+    "String"
+  ]
 }
 ```
 

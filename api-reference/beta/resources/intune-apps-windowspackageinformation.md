@@ -1,31 +1,31 @@
 ---
-title: tipo de recurso de windowsPackageInformation
-description: Contém propriedades para as informações de pacote para uma linha do Windows do aplicativo de negócios.
-localization_priority: Normal
+title: tipo de recurso windowsPackageInformation
+description: Contém propriedades para as informações de pacote de um aplicativo de linha de negócios do Windows.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 112d84c5bae889e24b889b4598d61a6b3d63db50
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: ba69fe277809b3ce4d6f81a198fc305204984d73
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29403277"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30166448"
 ---
-# <a name="windowspackageinformation-resource-type"></a>tipo de recurso de windowsPackageInformation
+# <a name="windowspackageinformation-resource-type"></a>tipo de recurso windowsPackageInformation
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Contém propriedades para as informações de pacote para uma linha do Windows do aplicativo de negócios.
+Contém propriedades para as informações de pacote de um aplicativo de linha de negócios do Windows.
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|applicableArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|A arquitetura do Windows para a qual este aplicativo pode executar em. Os possíveis valores são: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
+|applicableArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|A arquitetura do Windows para a qual este aplicativo pode ser executado. Os possíveis valores são: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
 |displayName|String|O nome de exibição.|
 |identityName|String|O Nome da Identidade.|
-|identityPublisher|String|O Editor de identidade.|
+|identityPublisher|String|O editor de identidade.|
 |identityResourceIdentifier|String|O Identificador de Recurso da Identidade.|
 |identityVersion|String|A versão de identidade.|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|O valor do sistema de operacional mínimo aplicável.|

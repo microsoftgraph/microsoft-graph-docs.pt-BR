@@ -1,30 +1,30 @@
 ---
-title: tipo de enum ratingJapanTelevisionType
+title: tipo de enumeração ratingJapanTelevisionType
 description: Rótulos de classificação de conteúdo de TV no Japão
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4e91be76e7f15a772dda9feca892645e79e2f990
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: ace7af782204433990c8a24ae595b4b5cd0a0071
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425845"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30168688"
 ---
-# <a name="ratingjapantelevisiontype-enum-type"></a>tipo de enum ratingJapanTelevisionType
+# <a name="ratingjapantelevisiontype-enum-type"></a>tipo de enumeração ratingJapanTelevisionType
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Rótulos de classificação de conteúdo de TV no Japão
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|allAllowed|0|Valor padrão, para permitir que todos os TV mostra conteúdo|
-|allBlocked|1|Não permitir que qualquer TV mostra conteúdo|
-|explicitAllowed|2|Todo o conteúdo de TV seja explicitamente permitido|
+|Permitido|,0|Valor padrão, permitir todos os programas de TV|
+|Bloqueado|1|Não permitir que qualquer TV mostre conteúdo|
+|explicitAllowed|duas|Todo o conteúdo da TV é explicitamente permitido|
 
 
 

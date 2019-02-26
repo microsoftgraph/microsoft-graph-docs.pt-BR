@@ -1,23 +1,23 @@
 ---
 title: Atualizar windowsManagementAppHealthSummary
-description: Atualize as propriedades de um objeto windowsManagementAppHealthSummary.
-localization_priority: Normal
+description: Atualiza as propriedades de um objeto windowsManagementAppHealthSummary.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d7e8c077b8f06b9647e34a18fd5aa92987272e77
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 764549ee57bc3ab3a2a1e0c2db9c6ac16309b85d
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29394163"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30155962"
 ---
 # <a name="update-windowsmanagementapphealthsummary"></a>Atualizar windowsManagementAppHealthSummary
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Atualize as propriedades de um objeto [windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md) .
+Atualiza as propriedades de um objeto [windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
@@ -44,21 +44,21 @@ PATCH /deviceAppManagement/windowsManagementApp/healthSummary
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON para o objeto [windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md) .
+No corpo da solicitação, forneça uma representação JSON do objeto [windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md) .
 
-A tabela a seguir mostra as propriedades que são necessárias quando você cria o [windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md).
+A tabela a seguir mostra as propriedades que são necessárias ao criar [windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade Windows management app integridade resumida.|
-|healthyDeviceCount|Int32|Contagem de dispositivo íntegro.|
-|unhealthyDeviceCount|Int32|Contagem de dispositivo não íntegros.|
-|unknownDeviceCount|Int32|Contagem de dispositivo desconhecido.|
+|id|String|Chave da entidade de Resumo de integridade do aplicativo de gerenciamento do Windows.|
+|healthyDeviceCount|Int32|Contagem de dispositivos íntegros.|
+|unhealthyDeviceCount|Int32|Contagem de dispositivos não íntegros.|
+|unknownDeviceCount|Int32|Contagem desconhecida de dispositivos.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto atualizado [windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

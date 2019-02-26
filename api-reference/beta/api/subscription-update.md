@@ -3,12 +3,12 @@ title: Atualizar assinatura
 description: Renove uma assinatura ampliando seu tempo de validade.
 localization_priority: Normal
 author: piotrci
-ms.openlocfilehash: 19355ff8acbcdade689b140abca63e8d9885e3fc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: e868489ca5eb95cdc2ee8c33176c8da20271bd12
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512777"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30159532"
 ---
 # <a name="update-subscription"></a>Atualizar assinatura
 
@@ -16,25 +16,33 @@ ms.locfileid: "29512777"
 
 Renove uma assinatura ampliando seu tempo de validade.
 
-Assinaturas expiram após um período de tempo que varia de acordo com o tipo de recurso. Para evitar notificações de ausentes, um aplicativo deve renovar suas assinaturas bem antes de começar sua data de expiração. Consulte [assinatura](../resources/subscription.md) para o comprimento máximo de uma assinatura para cada tipo de recurso.
+As assinaturas expiram após um período de tempo que varia de acordo com o tipo de recurso. Para evitar notificações ausentes, um aplicativo deve renovar suas assinaturas bem antes da data de expiração. Consulte [Subscription](../resources/subscription.md) para obter o tamanho máximo de uma assinatura para cada tipo de recurso.
 
 ## <a name="permissions"></a>Permissões
 
-A tabela a seguir lista a permissão sugerida necessária para cada recurso. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é o menos privilegiado necessário para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-| Tipo de recurso/item        | Permissão          |
-|-----------------------------|---------------------|
-| Contatos                    | Contacts.Read       |
-| Conversas               | Group.Read.All      |
-| Eventos                      | Calendars.Read      |
-| Mensagens                    | Mail.Read           |
-| Grupos                      | Group.Read.All      |
-| Usuários                       | User.Read.All       |
-| Drive (o OneDrive do usuário)    | Files.ReadWrite     |
-| Drives (conteúdo do SharePoint shared e unidades) | Files.ReadWrite.All |
-|Alerta de segurança               | SecurityEvents.ReadWrite.All |
+| Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Application |
+|:-----|:-----|:-----|:-----|
+|[contato](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
+|[driveItem](../resources/driveitem.md) (OneDrive pessoal do usuário) | Sem suporte | Files.ReadWrite | Sem suporte |
+|[driveItem](../resources/driveitem.md) (OneDrive for Business) | Files.ReadWrite.All | Sem suporte | Files.ReadWrite.All |
+|[event](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
+|[group](../resources/group.md) | Group.Read.All | Sem suporte | Group.Read.All |
+|[conversa de grupo](../resources/conversation.md) | Group.Read.All | Sem suporte | Sem suporte |
+|[message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
+|[alerta de segurança](../resources/alert.md) | SecurityEvents.ReadWrite.All | Sem suporte | SecurityEvents.ReadWrite.All |
+|[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
-***Observação:*** O ponto de extremidade /beta permite que as permissões de aplicativo para a maioria dos recursos. Não há suporte para conversas em itens de raiz uma unidade OneDrive e de grupo com permissões de aplicativo.
+> **Observação:** Há limitações adicionais para assinaturas em itens do OneDrive e do Outlook. As limitações se aplicam à criação e ao gerenciamento de assinaturas (obtendo, atualizando e excluindo assinaturas).
+
+- No OneDrive pessoal, você pode inscrever-se na pasta raiz ou em qualquer subpasta nessa unidade. No OneDrive for Business, você pode inscrever-se apenas na pasta raiz. As notificações são enviadas para os tipos solicitados de alterações na pasta inscrita ou qualquer arquivo, pasta ou outro objeto driveItem em sua hierarquia. Você não pode se inscrever em instâncias de **unidade** ou **driveItem** que não são pastas, como arquivos individuais.
+
+- No Outlook, a permissão delegada oferece suporte à assinatura de itens em pastas somente na caixa de correio do usuário conectado. Isso significa que, por exemplo, não é possível usar os calendários de permissão delegada. Leia para inscrever-se em eventos na caixa de correio de outro usuário.
+- Para inscrever-se para alterar as notificações de contatos, eventos ou mensagens do Outlook em pastas compartilhadas _ou delegadas_ :
+
+  - Use a permissão de aplicativo correspondente para inscrever-se nas alterações de itens em uma pasta ou em uma caixa de correio de _qualquer_ usuário no locatário.
+  - Não use as permissões de compartilhamento do Outlook (Contacts. Read. Shared, caLendars. Read. Shared, mail. Read. Shared e suas contrapartes de leitura/gravação), já que eles **não** oferecem suporte à inscrição para alterar notificações em itens em pastas compartilhadas ou delegadas.
 
 ## <a name="http-request"></a>Solicitação HTTP
 

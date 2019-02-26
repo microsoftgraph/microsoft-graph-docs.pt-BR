@@ -1,30 +1,30 @@
 ---
-title: tipo de enum serviceStartType
-description: Os valores possíveis de serviço xbox iniciarem tipo
-localization_priority: Normal
+title: tipo de enumeração de inStarttype
+description: Possíveis valores de tipo de inicialização do serviço do Xbox
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 78651de02db6f07d63549b3f1edff5bb6503069b
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 7d078db092dd6cc316fc2c48f6b0bd9889957088
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422520"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30168758"
 ---
-# <a name="servicestarttype-enum-type"></a>tipo de enum serviceStartType
+# <a name="servicestarttype-enum-type"></a>tipo de enumeração de inStarttype
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Os valores possíveis de serviço xbox iniciarem tipo
+Possíveis valores de tipo de inicialização do serviço do Xbox
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|Manual|0|Type(default) de início manual de serviço|
-|automatic|1|Tipo de início automático de serviço|
-|desabilitado|2|Tipo de início do serviço desabilitado|
+|Manual|,0|Tipo de início de serviço manual (padrão)|
+|Automático|1|Tipo de inicialização automática de serviço|
+|deficiência|duas|Tipo de início de serviço desabilitado|
 
 
 

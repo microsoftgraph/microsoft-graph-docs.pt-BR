@@ -1,31 +1,31 @@
 ---
-title: tipo de enum androidForWorkEnrollmentTarget
-description: Android para direcionamento de tipo para a conta de gerenciamento de dispositivos de trabalho
-localization_priority: Normal
+title: tipo de enumeração androidForWorkEnrollmentTarget
+description: Tipo de direcionamento de gerenciamento de dispositivo do Android for Work para a conta
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1ee961c484254b44b32326be98b0a9a355d11951
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: d7287541a9862d2378a0af4aae49c50e1071067e
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415359"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30167834"
 ---
-# <a name="androidforworkenrollmenttarget-enum-type"></a>tipo de enum androidForWorkEnrollmentTarget
+# <a name="androidforworkenrollmenttarget-enum-type"></a>tipo de enumeração androidForWorkEnrollmentTarget
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Android para direcionamento de tipo para a conta de gerenciamento de dispositivos de trabalho
+Tipo de direcionamento de gerenciamento de dispositivo do Android for Work para a conta
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|none|0|Ainda não documentado|
+|Nenhuma|,0|Ainda não documentado|
 |todos os|1|Ainda não documentado|
-|direcionado|2|Ainda não documentado|
-|targetedAsEnrollmentRestrictions|3|Ainda não documentado|
+|visa|duas|Ainda não documentado|
+|targetedAsEnrollmentRestrictions|3D|Ainda não documentado|
 
 
 

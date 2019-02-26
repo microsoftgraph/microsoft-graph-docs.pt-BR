@@ -1,30 +1,30 @@
 ---
-title: tipo de enum managedDeviceOwnerType
+title: tipo de enumeração managedDeviceOwnerType
 description: Tipo de proprietário de dispositivo.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 46058226987fdba294f2a6c1c33ff9b57dd1e1fa
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 17f85b01ac2fb1dc54edf21e22cd4dd8aa883eb7
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29400708"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30153939"
 ---
-# <a name="manageddeviceownertype-enum-type"></a>tipo de enum managedDeviceOwnerType
+# <a name="manageddeviceownertype-enum-type"></a>tipo de enumeração managedDeviceOwnerType
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Tipo de proprietário de dispositivo.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|unknown|0|Desconhecido.|
-|companhia|1|Pertencentes a empresa.|
-|pessoal|2|Pertencentes a pessoa.|
+|unknown|,0|Unknown.|
+|companhia|1|Pertencentes à empresa.|
+|pessoal|duas|Pertencente à pessoa.|
 
 
 

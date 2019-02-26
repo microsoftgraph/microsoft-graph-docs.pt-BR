@@ -1,21 +1,21 @@
 ---
-title: tipo de recurso de win32LobAppPowerShellScriptDetection
+title: tipo de recurso win32LobAppPowerShellScriptDetection
 description: Contém propriedades de script do PowerShell para detectar um aplicativo Win32
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c5c02228589042d0abf36c34c5818c5a4610514e
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: fa5452fd9e73aef846d0b6de86a2b84e2c42ba26
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399637"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30168520"
 ---
-# <a name="win32lobapppowershellscriptdetection-resource-type"></a>tipo de recurso de win32LobAppPowerShellScriptDetection
+# <a name="win32lobapppowershellscriptdetection-resource-type"></a>tipo de recurso win32LobAppPowerShellScriptDetection
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Contém propriedades de script do PowerShell para detectar um aplicativo Win32
 
@@ -25,9 +25,9 @@ Herda de [win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|enforceSignatureCheck|Boolean|Um valor que indica se a verificação da assinatura será aplicada.|
-|runAs32Bit|Boolean|Um valor que indica se esse script deve ser executado como de 32 bits|
-|scriptContent|String|O base64 codificado conteúdo de script para detectar app Win32 linha de negócios (LoB)|
+|enforceSignatureCheck|Boolean|Um valor que indica se a verificação de assinatura é imposta|
+|runAs32Bit|Boolean|Um valor que indica se este script deve ser executado como 32 bits|
+|scriptContent|String|O conteúdo de script codificado em base64 para detectar o aplicativo de LoB (linha de negócios) do Win32|
 
 ## <a name="relationships"></a>Relações
 Nenhum

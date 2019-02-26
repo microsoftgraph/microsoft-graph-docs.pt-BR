@@ -1,34 +1,34 @@
 ---
-title: tipo de enum windowsAutopilotProfileAssignmentStatus
+title: tipo de enumeração windowsAutopilotProfileAssignmentStatus
 description: Ainda não documentado
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 68612e2f4ccee46612c82237630efafda484b7e9
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: b5d1af0e6c91dced1aa12ae72c22430d16674c21
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29419118"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30156375"
 ---
-# <a name="windowsautopilotprofileassignmentstatus-enum-type"></a>tipo de enum windowsAutopilotProfileAssignmentStatus
+# <a name="windowsautopilotprofileassignmentstatus-enum-type"></a>tipo de enumeração windowsAutopilotProfileAssignmentStatus
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Ainda não documentado
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|unknown|0|Status da atribuição desconhecido|
-|assignedInSync|1|Em sincronia com o programa piloto do Windows automático e atribuídos com êxito no Intune|
-|assignedOutOfSync|2|Não em sincronia com o programa piloto do Windows automático e atribuídos com êxito no Intune|
-|assignedUnkownSyncState|3|Atribuídos com êxito no Intune e qualquer em sincronia ou sair de sincronia com o programa piloto do Windows automático|
-|não atribuído|4|Não atribuído|
-|pendente|5|Atribuição pendente|
-|Falha|6| Falha de atribuição|
+|unknown|,0|Status de atribuição desconhecido|
+|assignedInSync|1|Atribuído com êxito no Intune e em sincronia com o programa piloto automático do Windows|
+|assignedOutOfSync|duas|Atribuído com êxito no Intune e não em sincronia com o programa piloto automático do Windows|
+|assignedUnkownSyncState|3D|Atribuído com êxito no Intune e em sincronia ou fora de sincronização com o programa piloto automático do Windows|
+|Não atribuído|quatro|Não atribuído|
+|função|0,5|Atribuição pendente|
+|falhou|6| Falha de atribuição|
 
 
 

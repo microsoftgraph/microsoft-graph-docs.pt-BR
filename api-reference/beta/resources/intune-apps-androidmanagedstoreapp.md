@@ -1,23 +1,23 @@
 ---
-title: tipo de recurso de androidManagedStoreApp
-description: Contém propriedades e as propriedades herdadas para aplicativos de repositório gerenciado Android.
-localization_priority: Normal
+title: tipo de recurso androidManagedStoreApp
+description: Contém propriedades e propriedades herdadas para aplicativos de repositório gerenciado do Android.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3b0169c71191ee1051059c88c1ccf024617ab27b
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: af39061c5a14490abb27a4adcbabf9906fa820c2
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399518"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30146841"
 ---
-# <a name="androidmanagedstoreapp-resource-type"></a>tipo de recurso de androidManagedStoreApp
+# <a name="androidmanagedstoreapp-resource-type"></a>tipo de recurso androidManagedStoreApp
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Contém propriedades e as propriedades herdadas para aplicativos de repositório gerenciado Android.
+Contém propriedades e propriedades herdadas para aplicativos de repositório gerenciado do Android.
 
 
 Herda de [mobileApp](../resources/intune-apps-mobileapp.md)
@@ -25,11 +25,11 @@ Herda de [mobileApp](../resources/intune-apps-mobileapp.md)
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Lista androidManagedStoreApps](../api/intune-apps-androidmanagedstoreapp-list.md)|coleção [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|Lista as propriedades e os relacionamentos dos objetos [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md) .|
-|[Obter androidManagedStoreApp](../api/intune-apps-androidmanagedstoreapp-get.md)|[androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|Leia as propriedades e os relacionamentos do objeto [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md) .|
-|[Criar androidManagedStoreApp](../api/intune-apps-androidmanagedstoreapp-create.md)|[androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|Crie um novo objeto de [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md) .|
-|[Excluir androidManagedStoreApp](../api/intune-apps-androidmanagedstoreapp-delete.md)|Nenhum|Exclui um [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md).|
-|[Atualizar androidManagedStoreApp](../api/intune-apps-androidmanagedstoreapp-update.md)|[androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|Atualize as propriedades de um objeto [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md) .|
+|[Listar androidManagedStoreApps](../api/intune-apps-androidmanagedstoreapp-list.md)|coleção [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|Listar Propriedades e relações dos objetos [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md) .|
+|[Obter androidManagedStoreApp](../api/intune-apps-androidmanagedstoreapp-get.md)|[androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|Leia as propriedades e as relações do objeto [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md) .|
+|[Criar androidManagedStoreApp](../api/intune-apps-androidmanagedstoreapp-create.md)|[androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|Criar um novo objeto [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md) .|
+|[Excluir androidManagedStoreApp](../api/intune-apps-androidmanagedstoreapp-delete.md)|Nenhum|Exclui [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md).|
+|[Atualizar androidManagedStoreApp](../api/intune-apps-androidmanagedstoreapp-update.md)|[androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md)|Atualiza as propriedades de um objeto [androidManagedStoreApp](../resources/intune-apps-androidmanagedstoreapp.md) .|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
@@ -47,15 +47,15 @@ Herda de [mobileApp](../resources/intune-apps-mobileapp.md)
 |owner|String|O proprietário do conteúdo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |developer|String|O desenvolvedor do aplicativo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |Observações|String|Anotações para o aplicativo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
-|uploadState|Int32|O estado de carregamento. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
-|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|O estado de publicação para o aplicativo. O aplicativo não pode ser assinado, a menos que ele seja publicado. Herdada do [mobileApp](../resources/intune-apps-mobileapp.md). Os valores possíveis são: `notPublished`, `processing`, `published`.|
+|uploadState|Int32|O estado de upload. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|O estado de publicação para o aplicativo. O aplicativo não pode ser assinado, a menos que ele seja publicado. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md). Os valores possíveis são: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|O valor que indica se o aplicativo é atribuído a pelo menos um grupo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
-|roleScopeTagIds|String collection|Lista de ids de marca de escopo para esse aplicativo móvel. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
-|packageId|String|O identificador do pacote.|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de IDs de marca de escopo para este aplicativo móvel. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|packageId|Cadeia de caracteres|O identificador do pacote.|
 |appIdentifier|String|O Nome da Identidade.|
 |usedLicenseCount|Int32|O número de aplicativos VPP em uso.|
 |totalLicenseCount|Int32|O número total de licenças VPP.|
-|appStoreUrl|String|Tocar para a URL do aplicativo de repositório de trabalho.|
+|appStoreUrl|String|A URL do aplicativo de reproduzir para o repositório de trabalho.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -63,8 +63,8 @@ Herda de [mobileApp](../resources/intune-apps-mobileapp.md)
 |categories|Coleção [mobileAppCategory](../resources/intune-apps-mobileappcategory.md)|A lista de categorias para este aplicativo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |assignments|Coleção [mobileAppAssignment](../resources/intune-apps-mobileappassignment.md)|A lista de atribuições de grupo para esse aplicativo móvel. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |installSummary|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)|Resumo de instalação do aplicativo móvel. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
-|deviceStatuses|coleção [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)|A lista de estados de instalação para esse aplicativo móvel. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
-|userStatuses|coleção [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)|A lista de estados de instalação para esse aplicativo móvel. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|deviceStatuses|coleção [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)|A lista de Estados de instalação para este aplicativo móvel. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|userStatuses|coleção [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)|A lista de Estados de instalação para este aplicativo móvel. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

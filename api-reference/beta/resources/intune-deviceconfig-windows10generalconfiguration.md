@@ -1,21 +1,21 @@
 ---
 title: Tipo de recurso windows10GeneralConfiguration
 description: Este tópico fornece descrições dos métodos declarados, das propriedades e das relações expostos pelo recurso windows10GeneralConfiguration.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7b3786db1ba09059e097a6417455d1ab8e7f49f5
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8b61a967d5ea252ac389afdce87ffb2bfcc1cfcd
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29396963"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30169780"
 ---
 # <a name="windows10generalconfiguration-resource-type"></a>Tipo de recurso windows10GeneralConfiguration
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Este tópico fornece descrições dos métodos declarados, das propriedades e das relações expostos pelo recurso windows10GeneralConfiguration.
 
@@ -36,33 +36,33 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 |:---|:---|:---|
 |id|String|Chave da entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|roleScopeTagIds|String collection|Lista de escopo marcas para essa instância da entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|Indica se ou não a configuração de dispositivo subjacente suporta a atribuição de marcas de escopo. Atribuir à propriedade ScopeTags não é permitida quando esse valor for false e entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no Portal do Windows Azure. Esta propriedade é somente leitura. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Esta propriedade é somente leitura. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Versão da configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|taskManagerBlockEndTask|Boolean|Especifique se não-administradores podem usar o Gerenciador de tarefas para finalizar tarefas.|
-|windows10AppsForceUpdateSchedule|[windows10AppsForceUpdateSchedule](../resources/intune-deviceconfig-windows10appsforceupdateschedule.md)|Windows 10 force o agendamento de atualização para aplicativos.|
-|enableAutomaticRedeployment|Boolean|Permitir que usuários com direitos administrativos para excluir todos os dados do usuário e configurações usando CTRL + Win + R na tela de bloqueio de dispositivo para que o dispositivo pode ser automaticamente reconfigurado e registrados novamente no gerenciamento.|
-|microsoftAccountSignInAssistantSettings|[signInAssistantOptions](../resources/intune-deviceconfig-signinassistantoptions.md)|Controla o serviço NT Microsoft conta Assistente de conexão (wlidsvc). Os valores possíveis são: `notConfigured` e `disabled`.|
-|authenticationAllowSecondaryDevice|Boolean|Permite que os dispositivos de autenticação secundária funcionar com o Windows.|
-|authenticationPreferredAzureADTenantDomainName|String|Especifica o domínio preferencial entre domínios disponíveis no locatário Azure AD.|
-|cryptographyAllowFipsAlgorithmPolicy|Boolean|Especifique se deseja permitir ou não a política Federal Information Processing Standard (FIPS).|
-|displayAppListWithGdiDPIScalingTurnedOn|String collection|Lista de aplicativos herdados que possuem GDI dimensionamento DPI ativada.|
-|displayAppListWithGdiDPIScalingTurnedOff|String collection|Lista de aplicativos herdados que possuem GDI dimensionamento DPI desativado.|
+|taskManagerBlockEndTask|Boolean|Especifique se os usuários que não são administradores podem usar o Gerenciador de tarefas para finalizar tarefas.|
+|windows10AppsForceUpdateSchedule|[windows10AppsForceUpdateSchedule](../resources/intune-deviceconfig-windows10appsforceupdateschedule.md)|Agendamento de atualização forçada do Windows 10 para aplicativos.|
+|enableAutomaticRedeployment|Boolean|Permitir que usuários com direitos administrativos excluam todos os dados e configurações de usuário usando CTRL + Win + R na tela de bloqueio de dispositivo para que o dispositivo possa ser automaticamente reconfigurado e inscrito novamente no gerenciamento.|
+|microsoftAccountSignInAssistantSettings|[signInAssistantOptions](../resources/intune-deviceconfig-signinassistantoptions.md)|Controla o serviço do assistente de conexão de conta da Microsoft (WLIDSVC) NT. Os valores possíveis são: `notConfigured` e `disabled`.|
+|authenticationAllowSecondaryDevice|Boolean|Permite que dispositivos de autenticação secundário funcionem com o Windows.|
+|authenticationPreferredAzureADTenantDomainName|String|Especifica o domínio preferencial entre os domínios disponíveis no locatário do Azure AD.|
+|cryptographyAllowFipsAlgorithmPolicy|Boolean|Especifique se deseja permitir ou não a política padrão do FIPS (Federal Information Processing Standard).|
+|displayAppListWithGdiDPIScalingTurnedOn|Coleção de cadeias de caracteres|Lista de aplicativos herdados com ajuste de DPI GDI ativado.|
+|displayAppListWithGdiDPIScalingTurnedOff|Coleção de cadeias de caracteres|Lista de aplicativos herdados com a expansão de DPI GDI desativada.|
 |enterpriseCloudPrintDiscoveryEndPoint|String|Ponto de extremidade para descoberta de impressoras na nuvem.|
 |enterpriseCloudPrintOAuthAuthority|String|Ponto de extremidade para aquisição de tokens OAuth.|
 |enterpriseCloudPrintOAuthClientIdentifier|String|GUID de um aplicativo cliente autorizado a recuperar tokens OAuth da autoridade OAuth.|
 |enterpriseCloudPrintResourceIdentifier|String|URI do recurso OAuth para serviço de impressão, conforme configurado no portal do Azure.|
 |enterpriseCloudPrintDiscoveryMaxLimit|Int32|Número máximo de impressoras que devem ser consultadas em um ponto de extremidade de descoberta. Esta é uma configuração somente para dispositivos móveis. Valores válidos de 1 a 65535|
 |enterpriseCloudPrintMopriaDiscoveryResourceIdentifier|String|URI do recurso OAuth para serviço de descoberta de impressoras, conforme configurado no portal do Azure.|
-|experienceDoNotSyncBrowserSettings|[browserSyncSetting](../resources/intune-deviceconfig-browsersyncsetting.md)|Permitir ou impedir a sincronização das configurações do navegador de borda da Microsoft. Opção para administradores de TI impedir a sincronização entre dispositivos, mas permitir substituição do usuário. Os valores possíveis são: `notConfigured`, `blockedWithUserOverride`, `blocked`.|
-|messagingBlockSync|Boolean|Indica se ou não bloquear a mensagem de texto fazer backup e restauração e mensagens em todos os lugares.|
-|messagingBlockMMS|Boolean|Indica se ou não bloquear o envio/recebimento do MMS a funcionalidade no dispositivo.|
-|messagingBlockRichCommunicationServices|Boolean|Indica se ou não bloquear o envio/recebimento o RCS a funcionalidade no dispositivo.|
-|printerNames|String collection|Provisione automaticamente impressoras com base em seus nomes (nomes de host de rede).|
-|printerDefaultName|String|Nome (nome de host de rede) de uma impressora instalada.|
+|experienceDoNotSyncBrowserSettings|[browserSyncSetting](../resources/intune-deviceconfig-browsersyncsetting.md)|Permitir ou impedir a sincronização das configurações do navegador Microsoft Edge. Opção para os administradores de ti impedir a sincronização entre dispositivos, mas permitir a substituição do usuário. Os valores possíveis são: `notConfigured`, `blockedWithUserOverride`, `blocked`.|
+|messagingBlockSync|Boolean|Indica se o backup e a restauração de mensagens de texto devem ou não ser bloqueados e mensagens em qualquer lugar.|
+|messagingBlockMMS|Boolean|Indica se a funcionalidade de envio/recebimento MMS deve ou não ser bloqueada no dispositivo.|
+|messagingBlockRichCommunicationServices|Boolean|Indica se a funcionalidade de envio/recebimento de RCS deve ou não ser bloqueada no dispositivo.|
+|printerNames|Coleção de cadeias de caracteres|Provisiona automaticamente impressoras com base em seus nomes (nomes de host de rede).|
+|printerDefaultName|String|Nome (nome do host de rede) de uma impressora instalada.|
 |printerBlockAddition|Boolean|Impedir a instalação do usuário de impressoras adicionais das configurações de impressoras.|
 |searchBlockDiacritics|Boolean|Especifica se a pesquisa pode usar diacríticos.|
 |searchDisableAutoLanguageDetection|Boolean|Especifica se a detecção automática de idioma será usada ao indexar conteúdo e propriedades.|
@@ -73,21 +73,21 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 |searchDisableIndexerBackoff|Boolean|Indica se o recurso de retirada de indexador de pesquisa deve ou não ser desativado.|
 |searchDisableIndexingRemovableDrive|Boolean|Indica se os usuários poderão ou não adicionar locais de unidades removíveis a bibliotecas e para serem indexados.|
 |searchEnableAutomaticIndexSizeManangement|Boolean|Especifica uma quantidade mínima de espaço em disco rígido na mesma unidade como o local do índice antes que a indexação seja interrompida.|
-|searchBlockWebResults|Boolean|Indica se deve ou não bloquear a busca na web.|
-|securityBlockAzureADJoinedDevicesAutoEncryption|Boolean|Especifique se deseja permitir a criptografia de dispositivo automática durante o OOBE quando o dispositivo está Azure AD ingressado (desktop).|
+|searchBlockWebResults|Boolean|Indica se a pesquisa da Web deve ou não ser bloqueada.|
+|securityBlockAzureADJoinedDevicesAutoEncryption|Boolean|Especifique se deseja permitir a criptografia automática do dispositivo durante o OOBE quando o dispositivo é associado ao AD do Azure (somente desktop).|
 |diagnosticsDataSubmissionMode|[diagnosticDataSubmissionMode](../resources/intune-deviceconfig-diagnosticdatasubmissionmode.md)|Obtém ou define um valor que permite que o dispositivo envie dados de diagnóstico e de telemetria de uso, como Watson. Os valores possíveis são: `userDefined`, `none`, `basic`, `enhanced`, `full`.|
 |oneDriveDisableFileSync|Boolean|Obtém ou define um valor para permitir que os administradores de TI impeçam aplicativos e recursos de trabalhar com arquivos no OneDrive.|
-|systemTelemetryProxyServer|String|Obtém ou define o nome de domínio totalmente qualificado (FQDN) ou o endereço IP de um servidor proxy para encaminhar solicitações de telemetria e experiências do usuário conectado.|
-|edgeTelemetryForMicrosoft365Analytics|[edgeTelemetryMode](../resources/intune-deviceconfig-edgetelemetrymode.md)|Especifica qual tipo de dados de telemetria (nenhum, intranet, internet, ambos) é enviada ao Microsoft 365 Analytics. Os valores possíveis são: `notConfigured`, `intranet`, `internet`, `intranetAndInternet`.|
-|inkWorkspaceAccess|[inkAccessSetting](../resources/intune-deviceconfig-inkaccesssetting.md)|Controla o acesso de usuário no espaço de trabalho de tinta, da área de trabalho e acima a tela de bloqueio. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
-|inkWorkspaceAccessState|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|Controla o acesso de usuário no espaço de trabalho de tinta, da área de trabalho e acima a tela de bloqueio. Os valores possíveis são: `notConfigured`, `blocked`, `allowed`.|
-|inkWorkspaceBlockSuggestedApps|Boolean|Especifique se deseja mostrar sugestões de app recomendada no espaço de trabalho de tinta.|
+|systemTelemetryProxyServer|String|Obtém ou define o nome de domínio totalmente qualificado (FQDN) ou o endereço IP de um servidor proxy para encaminhar as experiências de usuário conectado e solicitações de teleMetria.|
+|edgeTelemetryForMicrosoft365Analytics|[edgeTelemetryMode](../resources/intune-deviceconfig-edgetelemetrymode.md)|Especifica o tipo de dados de telemetria (nenhum, intranet, Internet, ambos) é enviado para a análise do Microsoft 365. Os valores possíveis são: `notConfigured`, `intranet`, `internet`, `intranetAndInternet`.|
+|inkWorkspaceAccess|[inkAccessSetting](../resources/intune-deviceconfig-inkaccesssetting.md)|Controla o acesso do usuário ao espaço de trabalho de tinta, da área de trabalho e de cima da tela de bloqueio. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|inkWorkspaceAccessState|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|Controla o acesso do usuário ao espaço de trabalho de tinta, da área de trabalho e de cima da tela de bloqueio. Os valores possíveis são: `notConfigured`, `blocked`, `allowed`.|
+|inkWorkspaceBlockSuggestedApps|Boolean|Especifique se deseja mostrar sugestões de aplicativos recomendadas no espaço de trabalho de tinta.|
 |smartScreenEnableAppInstallControl|Boolean|Permite que os administradores de TI controlem se os usuários poderão instalar aplicativos de lugares que não sejam a Store.|
 |personalizationDesktopImageUrl|String|Uma URL http ou https para uma imagem jpg, jpeg ou png que precisa ser baixada e usada como a imagem da área de trabalho ou uma URL de arquivo para uma imagem local no sistema de arquivos que precisa ser usada como a imagem da área de trabalho.|
 |personalizationLockScreenImageUrl|String|Uma URL http ou https para uma imagem jpg, jpeg ou png que precisa ser baixada e usada como a imagem da tela de bloqueio ou uma URL de arquivo para uma imagem local no sistema de arquivos que precisa ser usada como a imagem da tela de bloqueio.|
-|bluetoothAllowedServices|String collection|Especifica uma lista de serviços e perfis Bluetooth permitidos em cadeias de caracteres de formato hexadecimal.|
+|bluetoothAllowedServices|Coleção String|Especifica uma lista de serviços e perfis Bluetooth permitidos em cadeias de caracteres de formato hexadecimal.|
 |bluetoothBlockAdvertising|Boolean|Se o usuário será ou não impedido de usar a publicidade do bluetooth.|
-|bluetoothBlockPromptedProximalConnections|Boolean|Se deseja ou não bloquear os usuários utilizem o par de Swift e outra proximidade com base em cenários.|
+|bluetoothBlockPromptedProximalConnections|Boolean|Se os usuários devem ou não ser impedidos de usar o par Swift e outros cenários baseados em proximidade.|
 |bluetoothBlockDiscoverableMode|Boolean|Se o usuário será ou não impedido de usar o modo de descoberta de bluetooth.|
 |bluetoothBlockPrePairing|Boolean|Se determinados periféricos Bluetooth agrupados serão bloqueados ou não do emparelhamento automático com o dispositivo host.|
 |edgeBlockAutofill|Boolean|Indica se o preenchimento automático deve ou não ser bloqueado.|
@@ -106,38 +106,40 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 |edgeDisableFirstRunPage|Boolean|Bloquear a página da Web da Microsoft que é aberta na primeira utilização do Microsoft Edge. Esta política permite que empresas, como aquelas registradas em configurações de emissões zero, bloqueiem esta página.|
 |edgeBlockLiveTileDataCollection|Boolean|Bloquear a coleta de informações da Microsoft para criação de bloco dinâmico quando os usuários fixarem um site para iniciar no Microsoft Edge.|
 |edgeSyncFavoritesWithInternetExplorer|Boolean|Habilitar a sincronização de favoritos entre o Internet Explorer e o Microsoft Edge. Adições, exclusões, modificações e outras alterações para favoritos são compartilhadas entre navegadores.|
-|edgeFavoritesListLocation|String|O local da lista de Favoritos ao provisionar. Pode ser um arquivo local, rede local ou local http.|
-|edgeBlockEditFavorites|Boolean|Indica se deve ou não bloquear o usuário de fazer alterações em Favoritos.|
-|edgeNewTabPageURL|String|Especifique a página aberta quando novas guias são criados.|
-|edgeHomeButtonConfiguration|[edgeHomeButtonConfiguration](../resources/intune-deviceconfig-edgehomebuttonconfiguration.md)|Faz com que o botão página inicial ocultar, a página inicial padrão de carga, carrega uma nova página de guia ou uma URL personalizada|
-|edgeHomeButtonConfigurationEnabled|Boolean|Habilite a configuração de botão de Home.|
-|edgeOpensWith|[edgeOpenOptions](../resources/intune-deviceconfig-edgeopenoptions.md)|Especifica que tipo de páginas são abertos no início. Os valores possíveis são: `notConfigured`, `startPage`, `newTabPage`, `previousPages`, `specificPages`.|
-|edgeBlockSideloadingExtensions|Boolean|Indica se o usuário pode extensões sideload.|
-|edgeRequiredExtensionPackageFamilyNames|String collection|Especifica a lista de nomes da família de pacote de extensões de navegador que são necessários e não podem ser desativados pelo usuário.|
-|edgeBlockPrinting|Boolean|Configure a borda para permitir ou bloquear a impressão.|
-|edgeFavoritesBarVisibility|[visibilitySetting](../resources/intune-deviceconfig-visibilitysetting.md)|Obtém ou define um valor que especifica se deve definir a barra de Favoritos para ser sempre visíveis ou ocultos em qualquer página. Os valores possíveis são: `notConfigured`, `hide`, `show`.|
-|edgeBlockSavingHistory|Boolean|Configure a borda para permitir que sejam salvos ou nunca salvar o histórico de navegação de histórico de navegação.|
-|edgeBlockFullScreenMode|Boolean|Permitir ou impedir a borda inserindo o modo de tela inteira.|
-|edgeBlockWebContentOnNewTabPage|Boolean|Configure o que é exibido quando o Microsoft Edge abre uma nova guia.|
-|edgeBlockTabPreloading|Boolean|Configure se borda pré-carrega a nova página de guia na inicialização do Windows.|
-|edgeBlockPrelaunch|Boolean|Decida se Microsoft Edge é prelaunched na inicialização do Windows.|
-|edgeShowMessageWhenOpeningInternetExplorerSites|[internetExplorerMessageSetting](../resources/intune-deviceconfig-internetexplorermessagesetting.md)|Controla a mensagem exibida pela borda antes de alternar para o Internet Explorer. Os valores possíveis são: `notConfigured`, `disabled`, `enabled`, `keepGoing`.|
-|edgePreventCertificateErrorOverride|Boolean|Permitir ou impedir que os usuários substituam os erros de certificado.|
+|edgeFavoritesListLocation|String|O local da lista de favoritos a ser provisionada. Pode ser um arquivo local, rede local ou local http.|
+|edgeBlockEditFavorites|Boolean|Indica se o usuário será ou não impedido de fazer alterações em favoritos.|
+|edgeNewTabPageURL|String|Especifique a página aberta quando novas guias são criadas.|
+|edgeHomeButtonConfiguration|[edgeHomeButtonConfiguration](../resources/intune-deviceconfig-edgehomebuttonconfiguration.md)|Faz com que o botão página inicial oculte, carregue a página inicial padrão, carregue uma nova página de guia ou uma URL personalizada|
+|edgeHomeButtonConfigurationEnabled|Boolean|Habilitar a configuração do botão página inicial.|
+|edgeOpensWith|[edgeOpenOptions](../resources/intune-deviceconfig-edgeopenoptions.md)|Especifique o tipo de páginas que será aberto no início. Os valores possíveis são: `notConfigured`, `startPage`, `newTabPage`, `previousPages`, `specificPages`.|
+|edgeBlockSideloadingExtensions|Boolean|Indica se o usuário pode Sideload as extensões.|
+|edgeRequiredExtensionPackageFamilyNames|Coleção de cadeias de caracteres|Especifique a lista de nomes de famílias de pacotes de extensões de navegador que são necessários e que não podem ser desativados pelo usuário.|
+|edgeBlockPrinting|Boolean|Configure o Edge para permitir ou bloquear a impressão.|
+|edgeFavoritesBarVisibility|[visibilitySetting](../resources/intune-deviceconfig-visibilitysetting.md)|Obtém ou define um valor que especifica se a barra de favoritos deve ser configurada para sempre estar visível ou oculta em qualquer página. Os valores possíveis são: `notConfigured`, `hide`, `show`.|
+|edgeBlockSavingHistory|Boolean|Configure o Edge para permitir que o histórico de navegação seja salvo ou nunca salve o histórico de navegação.|
+|edgeBlockFullScreenMode|Boolean|Permitir ou impedir que a borda entre no modo de tela inteira.|
+|edgeBlockWebContentOnNewTabPage|Boolean|Configure o para carregar uma página em branco na borda em vez da página padrão nova guia e impedir que os usuários as alterem.|
+|edgeBlockTabPreloading|Boolean|Configure se a borda precarregará a página de nova guia na inicialização do Windows.|
+|edgeBlockPrelaunch|Boolean|Decida se o Microsoft Edge está inicializado na inicialização do Windows.|
+|edgeShowMessageWhenOpeningInternetExplorerSites|[internetExplorerMessageSetting](../resources/intune-deviceconfig-internetexplorermessagesetting.md)|Controla a mensagem exibida por borda antes de mudar para o Internet Explorer. Os valores possíveis são: `notConfigured`, `disabled`, `enabled`, `keepGoing`.|
+|edgePreventCertificateErrorOverride|Boolean|Permitir ou impedir que os usuários substituam erros de certificado.|
+|edgeKioskModeRestriction|[edgeKioskModeRestrictionType](../resources/intune-deviceconfig-edgekioskmoderestrictiontype.md)|Controla como as configurações do Microsoft Edge são restringidas com base no modo de configuração de quiosque. Os valores possíveis são: `notConfigured`, `digitalSignage`, `normalMode`, `publicBrowsingSingleApp`, `publicBrowsingMultiApp`.|
+|edgeKioskResetAfterIdleTimeInMinutes|Int32|Especifica o tempo, em minutos, da última atividade do usuário antes que o Microsoft Edge quiosque seja redefinido.  Os valores válidos são 0-1440. O padrão é 5. 0 indica nenhuma redefinição. Valores válidos de 0 a 1440|
 |cellularBlockDataWhenRoaming|Boolean|Se o usuário será ou não impedido de usar dados da rede celular durante roaming.|
 |cellularBlockVpn|Boolean|Se o usuário será ou não impedido de usar VPN na rede celular.|
 |cellularBlockVpnWhenRoaming|Boolean|Se o usuário será ou não impedido de usar VPN durante roaming na rede celular.|
-|cellularData|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Se deseja ou não permitir que o canal de dados via celular no dispositivo. Se não estiver configurado, o canal de dados via celular é permitido e o usuário pode desativá-la. Os valores possíveis são: `blocked`, `required`, `allowed`.|
+|cellularData|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Se o canal de dados da rede celular será ou não permitido. Se não configurada, o canal de dados da rede celular é permitido e o usuário pode desativá-lo. Os valores possíveis são: `blocked`, `required`, `allowed`.|
 |defenderBlockEndUserAccess|Boolean|Se o usuário final será ou não impedido de acessar o Defender.|
 |defenderDaysBeforeDeletingQuarantinedMalware|Int32|Número de dias antes da exclusão do malware em quarentena. Valores válidos de 0 a 90|
 |defenderDetectedMalwareActions|[defenderDetectedMalwareActions](../resources/intune-deviceconfig-defenderdetectedmalwareactions.md)|Obtém ou define ações do Defender a serem realizadas em um malware detectado por nível de ameaça.|
 |defenderSystemScanSchedule|[weeklySchedule](../resources/intune-deviceconfig-weeklyschedule.md)|Dia da semana em que o Defender fará a verificação do sistema. Os valores possíveis são: `userDefined`, `everyday`, `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
-|defenderFilesAndFoldersToExclude|String collection|Arquivos e pastas a serem excluídos das verificações e da proteção em tempo real.|
-|defenderFileExtensionsToExclude|String collection|Extensões de arquivo a serem excluídas das verificações e da proteção em tempo real.|
+|defenderFilesAndFoldersToExclude|Coleção de cadeias de caracteres|Arquivos e pastas a serem excluídos das verificações e da proteção em tempo real.|
+|defenderFileExtensionsToExclude|Coleção de cadeias de caracteres|Extensões de arquivo a serem excluídas das verificações e da proteção em tempo real.|
 |defenderScanMaxCpu|Int32|Porcentagem máxima de uso da CPU durante a verificação. Valores válidos de 0 a 100|
 |defenderMonitorFileActivity|[defenderMonitorFileActivity](../resources/intune-deviceconfig-defendermonitorfileactivity.md)|Valor de monitoramento da atividade do arquivo. Os valores possíveis são: `userDefined`, `disable`, `monitorAllFiles`, `monitorIncomingFilesOnly`, `monitorOutgoingFilesOnly`.|
-|defenderPotentiallyUnwantedAppAction|[defenderPotentiallyUnwantedAppAction](../resources/intune-deviceconfig-defenderpotentiallyunwantedappaction.md)|Obtém ou define a ação do Defender entrem em potencialmente indesejadas aplicativo (PUA), que inclui o software com comportamentos da ad injeção, solicitação de empacotamento, persistentes de software para o pagamento ou assinatura, etc. Usuário de alertas de Defender quando PUA está sendo baixado ou tenta instalar em si. Adicionado no Windows 10 para desktop. Os valores possíveis são: `deviceDefault`, `block`, `audit`.|
-|defenderPotentiallyUnwantedAppActionSetting|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Obtém ou define a ação do Defender entrem em potencialmente indesejadas aplicativo (PUA), que inclui o software com comportamentos da ad injeção, solicitação de empacotamento, persistentes de software para o pagamento ou assinatura, etc. Usuário de alertas de Defender quando PUA está sendo baixado ou tenta instalar em si. Adicionado no Windows 10 para desktop. Os valores possíveis são: `userDefined`, `enable`, `auditMode`.|
-|defenderProcessesToExclude|String collection|Processos a serem excluídos das verificações e da proteção em tempo real.|
+|defenderPotentiallyUnwantedAppAction|[defenderPotentiallyUnwantedAppAction](../resources/intune-deviceconfig-defenderpotentiallyunwantedappaction.md)|Obtém ou define a ação do defender a ser executada em aplicativos potencialmente inDesejados (PUA), que inclui software com comportamentos de injeção de anúncio, empacotamento de software, solicitação persistente para pagamento ou assinatura, etc. O defender alerta o usuário quando o PUA está sendo baixado ou tenta se instalar. Adicionado no Windows 10 para área de trabalho. Os valores possíveis são: `deviceDefault`, `block`, `audit`.|
+|defenderPotentiallyUnwantedAppActionSetting|[defenderProtectionType](../resources/intune-deviceconfig-defenderprotectiontype.md)|Obtém ou define a ação do defender a ser executada em aplicativos potencialmente inDesejados (PUA), que inclui software com comportamentos de injeção de anúncio, empacotamento de software, solicitação persistente para pagamento ou assinatura, etc. O defender alerta o usuário quando o PUA está sendo baixado ou tenta se instalar. Adicionado no Windows 10 para área de trabalho. Os valores possíveis são: `userDefined`, `enable`, `auditMode`.|
+|defenderProcessesToExclude|Coleção String|Processos a serem excluídos das verificações e da proteção em tempo real.|
 |defenderPromptForSampleSubmission|[defenderPromptForSampleSubmission](../resources/intune-deviceconfig-defenderpromptforsamplesubmission.md)|A configuração do modo como avisar um usuário do envio de exemplo. Os valores possíveis são: `userDefined`, `alwaysPrompt`, `promptBeforeSendingPersonalData`, `neverSendData`, `sendAllDataWithoutPrompting`.|
 |defenderRequireBehaviorMonitoring|Boolean|Indica se o monitoramento de comportamento deve ou não ser exigido.|
 |defenderRequireCloudProtection|Boolean|Indica se a proteção na nuvem deve ou não ser exigida.|
@@ -145,6 +147,9 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 |defenderRequireRealTimeMonitoring|Boolean|Indica se o monitoramento em tempo real deve ou não ser exigido.|
 |defenderScanArchiveFiles|Boolean|Indica se os arquivos mortos devem ou não ser verificados.|
 |defenderScanDownloads|Boolean|Indica se os downloads devem ou não ser verificados.|
+|defenderScheduleScanEnableLowCpuPriority|Boolean|Quando habilitada, a baixa prioridade da CPU será usada durante as verificações agendadas.|
+|defenderDisableCatchupQuickScan|Boolean|Quando bloqueado, as verificações de atualização de verificações rápidas agendadas serão desativadas.|
+|defenderDisableCatchupFullScan|Boolean|Quando bloqueado, as verificações de atualização para verificações completas agendadas serão desativadas.|
 |defenderScanNetworkFiles|Boolean|Indica se os arquivos abertos de uma pasta da rede devem ou não ser verificados.|
 |defenderScanIncomingMail|Boolean|Indica se as mensagens de email de entrada devem ou não ser verificadas.|
 |defenderScanMappedNetworkDrivesDuringFullScan|Boolean|Indica se as unidades de rede mapeadas devem ou não ser verificadas durante a verificação completa.|
@@ -155,11 +160,11 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 |defenderScheduledScanTime|TimeOfDay|A hora em que o Defender fará a verificação do sistema.|
 |defenderScheduledQuickScanTime|TimeOfDay|O horário de realização da verificação diária rápida.|
 |defenderCloudBlockLevel|[defenderCloudBlockLevelType](../resources/intune-deviceconfig-defendercloudblockleveltype.md)|Especifica o nível de proteção oferecido na nuvem. Os valores possíveis são: `notConfigured`, `high`, `highPlus`, `zeroTolerance`.|
-|defenderCloudExtendedTimeout|Int32|Extensão de tempo limite para o arquivo de varredura por nuvem. Valores válidos de 0 a 50|
-|defenderCloudExtendedTimeoutInSeconds|Int32|Extensão de tempo limite para o arquivo de varredura por nuvem. Valores válidos de 0 a 50|
-|defenderBlockOnAccessProtection|Boolean|Permite ou não a funcionalidade do Windows Defender na proteção de acesso.|
-|defenderScheduleScanDay|[defenderScheduleScanDay](../resources/intune-deviceconfig-defenderschedulescanday.md)|Seleciona o dia em que a verificação do Windows Defender deverá ser executado. Os valores possíveis são: `everyday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`, `sunday`, `noScheduledScan`.|
-|defenderSubmitSamplesConsentType|[defenderSubmitSamplesConsentType](../resources/intune-deviceconfig-defendersubmitsamplesconsenttype.md)|Nível no Windows Defender para enviar dados de consentimento de verificações para o usuário. Os valores possíveis são: `sendSafeSamplesAutomatically`, `alwaysPrompt`, `neverSend`, `sendAllSamplesAutomatically`.|
+|defenderCloudExtendedTimeout|Int32|Extensão de tempo limite para verificação de arquivo pela nuvem. Valores válidos de 0 a 50|
+|defenderCloudExtendedTimeoutInSeconds|Int32|Extensão de tempo limite para verificação de arquivo pela nuvem. Valores válidos de 0 a 50|
+|defenderBlockOnAccessProtection|Boolean|Permite ou proíbe a funcionalidade de proteção de acesso do Windows Defender.|
+|defenderScheduleScanDay|[defenderScheduleScanDay](../resources/intune-deviceconfig-defenderschedulescanday.md)|Seleciona o dia em que a verificação do Windows Defender deve ser executada. Os valores possíveis são: `everyday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`, `sunday`, `noScheduledScan`.|
+|defenderSubmitSamplesConsentType|[defenderSubmitSamplesConsentType](../resources/intune-deviceconfig-defendersubmitsamplesconsenttype.md)|Verifica se o nível de consentimento do usuário no Windows Defender deve enviar dados. Os valores possíveis são: `sendSafeSamplesAutomatically`, `alwaysPrompt`, `neverSend`, `sendAllSamplesAutomatically`.|
 |lockScreenAllowTimeoutConfiguration|Boolean|Especifique se deseja mostrar uma definição configurável pelo usuário para controlar o tempo limite da tela enquanto estiver na tela de bloqueio de dispositivos Windows Mobile 10. Se essa política estiver definida como Permitir, o valor definido por lockScreenTimeoutInSeconds será ignorado.|
 |lockScreenBlockActionCenterNotifications|Boolean|Indica se as notificações da central de ações na tela de bloqueio serão bloqueadas.|
 |lockScreenBlockCortana|Boolean|Indica se o usuário pode ou não interagir com a Cortana usando a fala enquanto o sistema estiver bloqueado.|
@@ -175,12 +180,12 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 |passwordRequireWhenResumeFromIdleState|Boolean|Indica se uma senha deve ou não ser exigida ao sair de um estado inativo.|
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|O tipo de senha necessária. Os valores possíveis são: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|O número de falhas de entrada antes da redefinição de fábrica. Valores válidos de 0 a 999|
-|passwordMinimumAgeInDays|Int32|Essa configuração determina o período de tempo (em dias) que uma senha deve ser usado antes que o usuário pode alterá-lo. Valores válidos 0 para 998|
+|passwordMinimumAgeInDays|Int32|Essa configuração de segurança determina o período de tempo (em dias) que uma senha deve ser usada para que o usuário possa alterá-la. Valores válidos de 0 a 998|
 |privacyAdvertisingId|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|Habilita ou desabilita o uso da ID de publicidade. Adicionado no Windows 10, versão 1607. Os valores possíveis são: `notConfigured`, `blocked`, `allowed`.|
 |privacyAutoAcceptPairingAndConsentPrompts|Boolean|Indica se será permitida ou não a aceitação automática da caixa de diálogo de consentimento do usuário com emparelhamento e privacidade ao iniciar aplicativos.|
 |privacyBlockInputPersonalization|Boolean|Indica se o uso dos serviços de fala baseados na nuvem será bloqueado para os aplicativos Cortana, Ditado ou Store.|
-|privacyBlockPublishUserActivities|Boolean|Bloqueia a experiências/descoberta compartilhada de recursos usados recentemente no alternador de tarefa etc.|
-|privacyBlockActivityFeed|Boolean|Bloqueia o uso dos serviços de fala com base de nuvem para Cortana, ditado ou armazenamento de aplicativos.|
+|privacyBlockPublishUserActivities|Boolean|Bloqueia as experiências/descoberta compartilhadas de recursos usados recentemente no alternador de tarefas, etc.|
+|privacyBlockActivityFeed|Boolean|Bloqueia o uso de serviços de fala baseados em nuvem para corTana, ditar ou armazenar aplicativos.|
 |startBlockUnpinningAppsFromTaskbar|Boolean|Indica se o usuário será ou não impedido de desafixar aplicativos da barra de tarefas.|
 |startMenuAppListVisibility|[windowsStartMenuAppListVisibilityType](../resources/intune-deviceconfig-windowsstartmenuapplistvisibilitytype.md)|A definição desse valor recolhe a lista de aplicativos, remove a lista de aplicativos totalmente ou desabilita a alternância correspondente no aplicativo Configurações. Os valores possíveis são: `userDefined`, `collapse`, `remove`, `disableSettingsApp`.|
 |startMenuHideChangeAccountSettings|Boolean|Habilitar essa política impede a exibição da configuração de conta de alteração no bloco de usuário no menu Iniciar.|
@@ -246,13 +251,14 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 |safeSearchFilter|[safeSearchFilterType](../resources/intune-deviceconfig-safesearchfiltertype.md)|Especifica que nível de filtro de pesquisa segura é necessário. Os valores possíveis são: `userDefined`, `strict`, `moderate`.|
 |edgeBlockPopups|Boolean|Indica se janelas pop-ups devem ou não ser bloqueadas.|
 |edgeBlockSearchSuggestions|Boolean|Indica se o usuário será ou não impedido de usar as sugestões de pesquisa na barra de endereços.|
-|edgeBlockSendingIntranetTrafficToInternetExplorer|Boolean|Indica se ou não alternar o tráfego de intranet de borda para o Internet Explorer. Observação: o nome dessa propriedade está incorreta. a propriedade é obsoleta, use EdgeSendIntranetTrafficToInternetExplorer em vez disso.|
-|edgeSendIntranetTrafficToInternetExplorer|Boolean|Indica se ou não alternar o tráfego de intranet de borda para o Internet Explorer.|
+|edgeBlockSearchEngineCustomization|Boolean|Indica se o usuário será ou não impedido de adicionar novo mecanismo de pesquisa ou de alterar o mecanismo de pesquisa padrão.|
+|edgeBlockSendingIntranetTrafficToInternetExplorer|Boolean|Indica se o tráfego de intranet deve ou não ser alternado da borda para o Internet Explorer. Observação: o nome dessa propriedade é inesperado; a propriedade é obsoleta, use EdgeSendIntranetTrafficToInternetExplorer em vez disso.|
+|edgeSendIntranetTrafficToInternetExplorer|Boolean|Indica se o tráfego de intranet deve ou não ser alternado da borda para o Internet Explorer.|
 |edgeRequireSmartScreen|Boolean|Indica se o usuário deverá ou não usar o Filtro SmartScreen.|
 |edgeEnterpriseModeSiteListLocation|String|Indica o local da lista de sites do modo Empresarial. Pode ser um arquivo local, rede local ou local http.|
 |edgeFirstRunUrl|String|A primeira URL a ser executada quando o navegador Edge é aberto pela primeira vez.|
 |edgeSearchEngine|[edgeSearchEngineBase](../resources/intune-deviceconfig-edgesearchenginebase.md)|Permite aos administradores de TI definir um mecanismo de pesquisa padrão para dispositivos controlados por MDM. Os usuários podem substituí-lo e alterar o mecanismo de pesquisa padrão fornecido, caso a política AllowSearchEngineCustomization não esteja definida.|
-|edgeHomepageUrls|String collection|A lista de URLs de home pages mostradas em dispositivos registrados no MDM no navegador Edge.|
+|edgeHomepageUrls|Coleção String|A lista de URLs de home pages mostradas em dispositivos registrados no MDM no navegador Edge.|
 |edgeBlockAccessToAboutFlags|Boolean|Indica se será impedido ou não o acesso a sinalizadores Sobre no navegador Edge.|
 |smartScreenBlockPromptOverride|Boolean|Indica se os usuários poderão ou não substituir avisos do Filtro SmartScreen sobre sites potencialmente maliciosos.|
 |smartScreenBlockPromptOverrideForFiles|Boolean|Indica se os usuários poderão ou não substituir os avisos do Filtro SmartScreen sobre sites baixados não verificados.|
@@ -296,10 +302,10 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 |experienceBlockErrorDialogWhenNoSIM|Boolean|Indica se a caixa de diálogo de erro poderá ou não ser exibida se nenhum cartão SIM for detectado.|
 |experienceBlockTaskSwitcher|Boolean|Indica se a alternância de tarefas será ativada ou não no dispositivo.|
 |logonBlockFastUserSwitching|Boolean|Desabilita a capacidade para alternar rapidamente entre os usuários conectados simultaneamente sem fazer logoff.|
-|tenantLockdownRequireNetworkDuringOutOfBoxExperience|Boolean|Se o dispositivo é necessária para conectar à rede.|
-|appManagementMSIAllowUserControlOverInstall|Boolean|Essa configuração de política permite que os usuários alterem opções de instalação que geralmente estão disponíveis somente para administradores de sistema.|
-|appManagementMSIAlwaysInstallWithElevatedPrivileges|Boolean|Essa configuração de diretiva direciona o Windows Installer utilize permissões elevadas ao instalar qualquer programa no sistema.|
-|dataProtectionBlockDirectMemoryAccess|Boolean|Essa configuração de política permite que você bloquear o acesso direto à memória (DMA) para todos os hot pluggable PCI portas downstream até que um usuário faz logon no Windows.|
+|Propriedadetenantlockdownrequirenetworkduringoutofboxexperience|Boolean|Se o dispositivo é necessário para se conectar à rede.|
+|appManagementMSIAllowUserControlOverInstall|Boolean|Essa configuração de política permite que os usuários alterem as opções de instalação que normalmente estão disponíveis somente para administradores do sistema.|
+|appManagementMSIAlwaysInstallWithElevatedPrivileges|Boolean|Essa configuração de política instrui o Windows Installer a usar permissões elevadas ao instalar qualquer programa no sistema.|
+|dataProtectionBlockDirectMemoryAccess|Boolean|Essa configuração de política permite bloquear o acesso direto à memória (DMA) para todas as portas de downstream PCI que podem ser conectadas a quente até que um usuário faça logon no Windows.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -307,11 +313,11 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 |groupAssignments|coleção [deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)|A lista de atribuições de grupo para o perfil de configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |assignments|Coleção [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|A lista de atribuições para o perfil de configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |deviceStatuses|Coleção [deviceConfigurationDeviceStatus](../resources/intune-deviceconfig-deviceconfigurationdevicestatus.md)|Status de instalação da configuração do dispositivo por dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|userStatuses|Coleção [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md)|Status de instalação da configuração de dispositivo por usuário. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|userStatuses|Coleção [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md)|Status de instalação da configuração do dispositivo por usuário. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|Visão geral de status dos dispositivos na Configuração do dispositivo Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|Visão geral de status dos usuários na Configuração do dispositivo Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |deviceSettingStateSummaries|Coleção [settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md)|Resumo de dispositivo de estado de configuração do dispositivo Herdada do [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|privacyAccessControls|coleção [windowsPrivacyDataAccessControlItem](../resources/intune-deviceconfig-windowsprivacydataaccesscontrolitem.md)|Indica uma lista de aplicativos com os níveis de acesso de controle sobre as categorias de dados de privacidade e/ou os níveis de acesso padrão por categoria.|
+|privacyAccessControls|coleção [windowsPrivacyDataAccessControlItem](../resources/intune-deviceconfig-windowsprivacydataaccesscontrolitem.md)|Indica uma lista de aplicativos com níveis de controle de acesso sobre categorias de dados de privacidade e/ou os níveis de acesso padrão por categoria.|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -432,6 +438,8 @@ Veja a seguir uma representação JSON do recurso.
   "edgeBlockPrelaunch": true,
   "edgeShowMessageWhenOpeningInternetExplorerSites": "String",
   "edgePreventCertificateErrorOverride": true,
+  "edgeKioskModeRestriction": "String",
+  "edgeKioskResetAfterIdleTimeInMinutes": 1024,
   "cellularBlockDataWhenRoaming": true,
   "cellularBlockVpn": true,
   "cellularBlockVpnWhenRoaming": true,
@@ -466,6 +474,9 @@ Veja a seguir uma representação JSON do recurso.
   "defenderRequireRealTimeMonitoring": true,
   "defenderScanArchiveFiles": true,
   "defenderScanDownloads": true,
+  "defenderScheduleScanEnableLowCpuPriority": true,
+  "defenderDisableCatchupQuickScan": true,
+  "defenderDisableCatchupFullScan": true,
   "defenderScanNetworkFiles": true,
   "defenderScanIncomingMail": true,
   "defenderScanMappedNetworkDrivesDuringFullScan": true,
@@ -574,6 +585,7 @@ Veja a seguir uma representação JSON do recurso.
   "safeSearchFilter": "String",
   "edgeBlockPopups": true,
   "edgeBlockSearchSuggestions": true,
+  "edgeBlockSearchEngineCustomization": true,
   "edgeBlockSendingIntranetTrafficToInternetExplorer": true,
   "edgeSendIntranetTrafficToInternetExplorer": true,
   "edgeRequireSmartScreen": true,

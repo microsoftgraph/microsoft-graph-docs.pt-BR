@@ -1,31 +1,31 @@
 ---
-title: tipo de enum defenderSecurityCenterITContactDisplayType
+title: tipo de enumeração defenderSecurityCenterITContactDisplayType
 description: Valores possíveis para defenderSecurityCenterITContactDisplay
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dccc00207990b021630ee3677e57874d13514b81
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: c9a91b83f14226cd3272939deb99139e312b1689
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29418397"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30170032"
 ---
-# <a name="defendersecuritycenteritcontactdisplaytype-enum-type"></a>tipo de enum defenderSecurityCenterITContactDisplayType
+# <a name="defendersecuritycenteritcontactdisplaytype-enum-type"></a>tipo de enumeração defenderSecurityCenterITContactDisplayType
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Valores possíveis para defenderSecurityCenterITContactDisplay
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|não-configuradas|0|Não configurado|
-|displayInAppAndInNotifications|1|Exibir no aplicativo e nas notificações|
-|displayOnlyInApp|2|Exibir apenas no aplicativo|
-|displayOnlyInNotifications|3|Exibir apenas no notificações|
+|notConfigured|,0|Não configurado|
+|displayInAppAndInNotifications|1|Exibir no aplicativo e em notificações|
+|displayOnlyInApp|duas|Exibir somente no aplicativo|
+|displayOnlyInNotifications|3D|Exibir somente em notificações|
 
 
 

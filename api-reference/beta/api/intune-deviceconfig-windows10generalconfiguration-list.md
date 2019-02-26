@@ -1,21 +1,21 @@
 ---
 title: Listar windows10GeneralConfigurations
 description: Listar propriedades e relações dos objetos windows10GeneralConfiguration.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 256fd9de47d91be93c7b6fb24c15397b4cc17aa5
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: d43b1f21095e713ec46aa14056a70f080d84b76c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29411957"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30146407"
 ---
 # <a name="list-windows10generalconfigurations"></a>Listar windows10GeneralConfigurations
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Listar propriedades e relações dos objetos [windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md).
 
@@ -63,7 +63,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 14497
+Content-Length: 14803
 
 {
   "value": [
@@ -177,6 +177,8 @@ Content-Length: 14497
       "edgeBlockPrelaunch": true,
       "edgeShowMessageWhenOpeningInternetExplorerSites": "disabled",
       "edgePreventCertificateErrorOverride": true,
+      "edgeKioskModeRestriction": "digitalSignage",
+      "edgeKioskResetAfterIdleTimeInMinutes": 4,
       "cellularBlockDataWhenRoaming": true,
       "cellularBlockVpn": true,
       "cellularBlockVpnWhenRoaming": true,
@@ -211,6 +213,9 @@ Content-Length: 14497
       "defenderRequireRealTimeMonitoring": true,
       "defenderScanArchiveFiles": true,
       "defenderScanDownloads": true,
+      "defenderScheduleScanEnableLowCpuPriority": true,
+      "defenderDisableCatchupQuickScan": true,
+      "defenderDisableCatchupFullScan": true,
       "defenderScanNetworkFiles": true,
       "defenderScanIncomingMail": true,
       "defenderScanMappedNetworkDrivesDuringFullScan": true,
@@ -319,6 +324,7 @@ Content-Length: 14497
       "safeSearchFilter": "strict",
       "edgeBlockPopups": true,
       "edgeBlockSearchSuggestions": true,
+      "edgeBlockSearchEngineCustomization": true,
       "edgeBlockSendingIntranetTrafficToInternetExplorer": true,
       "edgeSendIntranetTrafficToInternetExplorer": true,
       "edgeRequireSmartScreen": true,

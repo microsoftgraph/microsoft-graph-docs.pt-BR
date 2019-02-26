@@ -1,23 +1,23 @@
 ---
-title: ação de enableLostMode
-description: Habilitar o modo perdido
-localization_priority: Normal
+title: Ação enableLostMode
+description: Habilitar modo perdido
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 16a6bb61605272cc6412e788ae9a4af7a9e8340d
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: c3e72cd3620407dc44f2dbd7d3516ded2b641633
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29412615"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30168618"
 ---
-# <a name="enablelostmode-action"></a>ação de enableLostMode
+# <a name="enablelostmode-action"></a>Ação enableLostMode
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Habilitar o modo perdido
+Habilitar modo perdido
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
@@ -55,7 +55,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 |:---|:---|:---|
 |mensagem|String|Ainda não documentado|
 |phoneNumber|String|Ainda não documentado|
-|rodapé|String|Ainda não documentado|
+|cabeçalho|String|Ainda não documentado|
 
 
 

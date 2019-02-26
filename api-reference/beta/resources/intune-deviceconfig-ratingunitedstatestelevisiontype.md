@@ -1,35 +1,35 @@
 ---
-title: tipo de enum ratingUnitedStatesTelevisionType
+title: tipo de enumeração ratingUnitedStatesTelevisionType
 description: Rótulos de classificação de conteúdo de TV nos Estados Unidos
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 405aad7e63d1c323503dde0b0bd8829702a7dcaf
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: d016565ba9fdbb62ea24d39d52f0e2931bab3117
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29403354"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30166833"
 ---
-# <a name="ratingunitedstatestelevisiontype-enum-type"></a>tipo de enum ratingUnitedStatesTelevisionType
+# <a name="ratingunitedstatestelevisiontype-enum-type"></a>tipo de enumeração ratingUnitedStatesTelevisionType
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Rótulos de classificação de conteúdo de TV nos Estados Unidos
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|allAllowed|0|Valor padrão, para permitir que todos os TV mostra conteúdo|
-|allBlocked|1|Não permitir que qualquer TV mostra conteúdo|
-|childrenAll|2|TV-Y, todos os filhos|
-|childrenAbove7|3|TV-Y7 filhos age 7 e acima|
-|geral|4|TV-G, adequado para todos os anos|
-|parentalGuidance|5|TV-PG, orientação dos pais|
-|childrenAbove14|6|14 de TV, filhos age 14 e acima|
-|adultos|7|TV-MA, somente para adultos|
+|Permitido|,0|Valor padrão, permitir todos os programas de TV|
+|Bloqueado|1|Não permitir que qualquer TV mostre conteúdo|
+|childrenAll|duas|TV-Y, todos os filhos|
+|childrenAbove7|3D|TV-Y7, crianças da idade 7 e superior|
+|geral|quatro|TV-G, adequada para todas as idades|
+|parentalGuidance|0,5|TV-PG, orientação dos pais|
+|childrenAbove14|6|TV-14, crianças 14 e acima|
+|adultos|178|TV-MA, somente adultos|
 
 
 

@@ -1,23 +1,23 @@
 ---
 title: Criar advancedThreatProtectionOnboardingDeviceSettingState
-description: Crie um novo objeto de advancedThreatProtectionOnboardingDeviceSettingState.
-localization_priority: Normal
+description: Criar um novo objeto advancedThreatProtectionOnboardingDeviceSettingState.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 87db4f3c58a8f205ec6c72805d766e510dbb4188
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: d0d37c00522a5f27db84e180035c38cc7d45db48
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29394688"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30155899"
 ---
 # <a name="create-advancedthreatprotectiononboardingdevicesettingstate"></a>Criar advancedThreatProtectionOnboardingDeviceSettingState
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Crie um novo objeto de [advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md) .
+Criar um novo objeto [advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
@@ -44,30 +44,30 @@ POST /deviceManagement/advancedThreatProtectionOnboardingStateSummary/advancedTh
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON para o objeto advancedThreatProtectionOnboardingDeviceSettingState.
+No corpo da solicitação, forneça uma representação JSON do objeto advancedThreatProtectionOnboardingDeviceSettingState.
 
-A tabela a seguir mostra as propriedades que são necessárias quando você cria o advancedThreatProtectionOnboardingDeviceSettingState.
+A tabela a seguir mostra as propriedades que são necessárias ao criar advancedThreatProtectionOnboardingDeviceSettingState.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade|
-|platformType|[deviceType](../resources/intune-shared-devicetype.md)|Tipo de plataforma do dispositivo. Os valores possíveis são: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise` , `blackberry`, `palm`, `unknown`.|
-|configuração|Cadeia de caracteres|O nome da classe de configuração e o nome da propriedade.|
-|settingName|Cadeia de caracteres|O nome da configuração sendo relatada|
+|id|String|Chave da entidade|
+|platformType|[deviceType](../resources/intune-shared-devicetype.md)|Tipo de plataforma de dispositivo. Os valores possíveis são `desktop`: `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad` `iPod` `android`,,, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise` ,,,,,,,, , `blackberry`, `palm`, `unknown`.|
+|configuração|String|O nome da classe de configuração e o nome da propriedade.|
+|settingName|String|O nome da configuração sendo relatada|
 |deviceId|Cadeia de caracteres|A ID do dispositivo sendo relatada|
-|deviceName|Cadeia de caracteres|O nome do dispositivo sendo relatado|
-|userId|Cadeia de caracteres|A ID do usuário sendo relatada|
-|userEmail|Cadeia de caracteres|O endereço de email do usuário que está sendo relatado|
-|userName|Cadeia de caracteres|O nome de usuário que está sendo relatado|
-|userPrincipalName|Cadeia de caracteres|O PrincipalName do usuário que está sendo relatado|
-|deviceModel|Cadeia de caracteres|O modelo do dispositivo que está sendo relatado|
-|estado|[complianceStatus](../resources/intune-shared-compliancestatus.md)|O estado de conformidade da configuração. Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
+|deviceName|String|O nome do dispositivo sendo relatado|
+|userId|String|A ID do usuário sendo relatada|
+|userEmail|String|O endereço de email do usuário que está sendo relatado|
+|userName|String|O nome de usuário que está sendo relatado|
+|userPrincipalName|String|O PrincipalName do usuário que está sendo relatado|
+|deviceModel|String|O modelo do dispositivo que está sendo relatado|
+|state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|O estado de conformidade da configuração. Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|DateTime em que o período de cortesia de conformidade do dispositivo termina|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [advancedThreatProtectionOnboardingDeviceSettingState](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

@@ -1,34 +1,34 @@
 ---
-title: tipo de enum dayOfWeek
+title: tipo de enumeração de dayOfWeek
 description: Valores possíveis para um dia da semana
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 81f35389ac482ab429a35266959f233e6afc3404
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 7d618fe7a91ef52777cff272858079c1fedd5739
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425761"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30152063"
 ---
-# <a name="dayofweek-enum-type"></a>tipo de enum dayOfWeek
+# <a name="dayofweek-enum-type"></a>tipo de enumeração de dayOfWeek
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Valores possíveis para um dia da semana
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|domingo|0|Domingo.|
-|segunda-feira|1|Segunda-feira.|
-|Terça-feira|2|Terça-feira.|
-|quarta-feira|3|Quarta-feira.|
-|quinta-feira|4|Quinta-feira.|
-|sexta-feira|5|Sexta-feira.|
-|Sábado|6|Sábado.|
+|domingo|,0|Domingo.|
+|período|1|Segunda-feira.|
+|feira|duas|Terça-feira.|
+|feira|3D|Quarta-feira.|
+|quinta-feira|quatro|Quinta-feira.|
+|sexta|0,5|Sexta-feira.|
+|sábado|6|Sábado.|
 
 
 

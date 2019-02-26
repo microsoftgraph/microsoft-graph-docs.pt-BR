@@ -1,32 +1,32 @@
 ---
-title: tipo de enum appleSubjectNameFormat
+title: tipo de enumeração appleSubjectNameFormat
 description: Opções de formato de nome de entidade para dispositivos Apple.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b90588b9b1317ba08d5c14f3921d6310e35a8b31
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 4f58d1005e2b558e36572afffec1995c6b671e24
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415072"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30155591"
 ---
-# <a name="applesubjectnameformat-enum-type"></a>tipo de enum appleSubjectNameFormat
+# <a name="applesubjectnameformat-enum-type"></a>tipo de enumeração appleSubjectNameFormat
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Opções de formato de nome de entidade para dispositivos Apple.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|commonName|0|Nome comum.|
+|CommonName|,0|Nome comum.|
 |commonNameAsEmail|1|Nome comum como email.|
-|custom|2|Formato de nome de entidade personalizada.|
-|commonNameIncludingEmail|3|Nome comum, incluindo Email.|
-|commonNameAsIMEI|5|Nome comum como IMEI.|
+|custom|duas|Formato de nome de entidade personalizado.|
+|commonNameIncludingEmail|3D|Nome comum incluindo email.|
+|commonNameAsIMEI|0,5|Nome comum como IMEI.|
 |commonNameAsSerialNumber|6|Nome comum como número de série.|
 
 

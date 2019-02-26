@@ -1,23 +1,23 @@
 ---
 title: Atualizar deviceConfigurationUserStateSummary
-description: Atualize as propriedades de um objeto deviceConfigurationUserStateSummary.
-localization_priority: Normal
+description: Atualiza as propriedades de um objeto deviceConfigurationUserStateSummary.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 425ac4f2697363f92f61bdd627172fd074bf94b6
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 4be67e51768e82a9077fe52b718f7b747152e41e
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29420658"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30159924"
 ---
 # <a name="update-deviceconfigurationuserstatesummary"></a>Atualizar deviceConfigurationUserStateSummary
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Atualize as propriedades de um objeto [deviceConfigurationUserStateSummary](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md) .
+Atualiza as propriedades de um objeto [deviceConfigurationUserStateSummary](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
@@ -44,25 +44,25 @@ PATCH /deviceManagement/deviceConfigurationUserStateSummaries
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON para o objeto [deviceConfigurationUserStateSummary](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md) .
+No corpo da solicitação, forneça uma representação JSON do objeto [deviceConfigurationUserStateSummary](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md) .
 
-A tabela a seguir mostra as propriedades que são necessárias quando você cria o [deviceConfigurationUserStateSummary](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md).
+A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceConfigurationUserStateSummary](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade.|
 |unknownUserCount|Int32|Número de usuários desconhecidos|
 |notApplicableUserCount|Int32|Número de usuários não aplicáveis|
-|compliantUserCount|Int32|Número de usuários compatíveis|
-|remediatedUserCount|Int32|Número de usuários remediados por teste|
-|nonCompliantUserCount|Int32|Número de usuários de fora de conformidade|
+|compliantUserCount|Int32|Número de usuários em conformidade|
+|remediatedUserCount|Int32|Número de usuários corrigidos|
+|nonCompliantUserCount|Int32|Número de usuários não compatíveis|
 |errorUserCount|Int32|Número de usuários de erro|
-|conflictUserCount|Int32|Número de usuários de conflito|
+|conflictUserCount|Int32|Número de usuários em conflito|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto atualizado [deviceConfigurationUserStateSummary](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [deviceConfigurationUserStateSummary](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

@@ -1,21 +1,21 @@
 ---
 title: tipo de recurso organization
 description: O recurso da organização representa uma instância de configurações e recursos globais que operam e são provisionados no nível do locatário.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b47ec69063998a935640f05d04a17bfc5714c8d8
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 6de006bf465546fdb00769f5d3541a65a6b5580b
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29398230"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30167505"
 ---
 # <a name="organization-resource-type"></a>tipo de recurso organization
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 O recurso da organização representa uma instância de configurações e recursos globais que operam e são provisionados no nível do locatário.
 
@@ -23,7 +23,7 @@ O recurso da organização representa uma instância de configurações e recurs
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar organizações](../api/intune-onboarding-organization-list.md)|Coleção [organization](../resources/intune-onboarding-organization.md)|Listar propriedades e relações de objetos de [organização](../resources/intune-onboarding-organization.md).|
-|[Obter organização](../api/intune-onboarding-organization-get.md)|[organização](../resources/intune-onboarding-organization.md)|Ler propriedades e relações de objetos de [organização](../resources/intune-onboarding-organization.md).|
+|[Obter organização](../api/intune-onboarding-organization-get.md)|[organization](../resources/intune-onboarding-organization.md)|Ler propriedades e relações de objetos de [organização](../resources/intune-onboarding-organization.md).|
 |[Atualizar a organização](../api/intune-onboarding-organization-update.md)|[organização](../resources/intune-onboarding-organization.md)|Atualizar as propriedades de um objeto de [organização](../resources/intune-onboarding-organization.md).|
 |[Ação setMobileDeviceManagementAuthority](../api/intune-onboarding-organization-setmobiledevicemanagementauthority.md)|Int32|Define a autoridade de gerenciamento de dispositivo móvel|
 

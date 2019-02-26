@@ -1,23 +1,23 @@
 ---
-title: tipo de recurso de managementConditionExpression
-description: Uma expressão de condição de gerenciamento é uma expressão que produz um valor boolean quando avaliada, ou seja, uma das true ou false, indicando que uma declaração de condição de gerenciamento é ativado/desativado. Uma expressão de condição de gerenciamento pode ser composta de uma combinação das variáveis de expressão e operadores de expressão de valor booleano.
-localization_priority: Normal
+title: tipo de recurso managementConditionExpression
+description: Uma expressão de condição de gerenciamento é uma expressão que produz um valor Boolean quando avaliado, ou seja, true ou false, indicando que uma instrução de condição de gerenciamento é ativada/desativada. Uma expressão de condição de gerenciamento pode ser composta de uma combinação de variáveis de expressão e operadores de expressão de valor booleano.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e572cdae0104cf5bbb929286b4c3452dfd38eeea
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 0329504c86beedbc8b04ec35c25f764ff2b3114c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415506"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30164649"
 ---
-# <a name="managementconditionexpression-resource-type"></a>tipo de recurso de managementConditionExpression
+# <a name="managementconditionexpression-resource-type"></a>tipo de recurso managementConditionExpression
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Uma expressão de condição de gerenciamento é uma expressão que produz um valor boolean quando avaliada, ou seja, uma das true ou false, indicando que uma declaração de condição de gerenciamento é ativado/desativado. Uma expressão de condição de gerenciamento pode ser composta de uma combinação das variáveis de expressão e operadores de expressão de valor booleano.
+Uma expressão de condição de gerenciamento é uma expressão que produz um valor Boolean quando avaliado, ou seja, true ou false, indicando que uma instrução de condição de gerenciamento é ativada/desativada. Uma expressão de condição de gerenciamento pode ser composta de uma combinação de variáveis de expressão e operadores de expressão de valor booleano.
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|

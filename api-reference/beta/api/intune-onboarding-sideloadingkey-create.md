@@ -1,23 +1,23 @@
 ---
 title: Criar sideLoadingKey
-description: Crie um novo objeto de sideLoadingKey.
-localization_priority: Normal
+description: Criar um novo objeto sideLoadingKey.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3aa9efa7018a99f3e9f8d5f9a3d9e8569b895d0b
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: afaae9fca5d6f459b94e5a6e7a7818d9426a0b6f
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29400358"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30142949"
 ---
 # <a name="create-sideloadingkey"></a>Criar sideLoadingKey
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Crie um novo objeto de [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) .
+Criar um novo objeto [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
@@ -44,23 +44,23 @@ POST /deviceAppManagement/sideLoadingKeys
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON para o objeto sideLoadingKey.
+No corpo da solicitação, forneça uma representação JSON do objeto sideLoadingKey.
 
-A tabela a seguir mostra as propriedades que são necessárias quando você cria o sideLoadingKey.
+A tabela a seguir mostra as propriedades que são necessárias ao criar sideLoadingKey.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Lado carregando o ID exclusivo principal.|
-|valor|String|Valor da chave Carregando lado, é 5x5 valor, separados por hiphens.|
-|displayName|String|Carregando da lado chave nome exibido para o ITPro Admins.|
-|description|String|Descrição de chave Carregando lado exibida para o ITPro Admins..|
-|totalActivation|Int32|Lado Carregando chave Total Activation exibida para o ITPro Admins.|
-|lastUpdatedDateTime|String|Lado Carregando chave última atualizado data exibida para o ITPro Admins.|
+|id|String|ID exclusiva da chave de carregamento do lado.|
+|valor|String|O valor da chave de carregamento do lado, é o valor de 5x5, separado por hiphens.|
+|displayName|String|Nome da chave de carregamento do lado exibido para os administradores do profissionais.|
+|description|String|Descrição da chave de carregamento do lado exibida para os administradores do profissionais..|
+|totalActivation|Int32|Chave de carregamento do lado ativação total exibida para os administradores do profissionais.|
+|lastUpdatedDateTime|String|Chave de carregamento lateral última data de atualização exibida para os administradores do profissionais.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
