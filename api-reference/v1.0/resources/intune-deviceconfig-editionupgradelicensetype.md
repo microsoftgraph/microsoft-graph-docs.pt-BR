@@ -1,26 +1,27 @@
 ---
-title: tipo de enum editionUpgradeLicenseType
+title: tipo de enumeração editionUpgradeLicenseType
 description: Tipo de licença de atualização de edição
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 8d9b5c5e75bed3b0fca80ab4a3133acc52085a7a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: b37074a8f7d1a233d742f4deda81ce73c1b82707
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27960501"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30260855"
 ---
-# <a name="editionupgradelicensetype-enum-type"></a><span data-ttu-id="d1f95-103">tipo de enum editionUpgradeLicenseType</span><span class="sxs-lookup"><span data-stu-id="d1f95-103">editionUpgradeLicenseType enum type</span></span>
+# <a name="editionupgradelicensetype-enum-type"></a><span data-ttu-id="f42a4-103">tipo de enumeração editionUpgradeLicenseType</span><span class="sxs-lookup"><span data-stu-id="f42a4-103">editionUpgradeLicenseType enum type</span></span>
 
-> <span data-ttu-id="d1f95-104">**Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="d1f95-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="f42a4-104">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="f42a4-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="d1f95-105">Tipo de licença de atualização de edição</span><span class="sxs-lookup"><span data-stu-id="d1f95-105">Edition Upgrade License type</span></span>
-## <a name="members"></a><span data-ttu-id="d1f95-106">Membros</span><span class="sxs-lookup"><span data-stu-id="d1f95-106">Members</span></span>
-|<span data-ttu-id="d1f95-107">Membro</span><span class="sxs-lookup"><span data-stu-id="d1f95-107">Member</span></span>|<span data-ttu-id="d1f95-108">Valor</span><span class="sxs-lookup"><span data-stu-id="d1f95-108">Value</span></span>|<span data-ttu-id="d1f95-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="d1f95-109">Description</span></span>|
+<span data-ttu-id="f42a4-105">Tipo de licença de atualização de edição</span><span class="sxs-lookup"><span data-stu-id="f42a4-105">Edition Upgrade License type</span></span>
+
+## <a name="members"></a><span data-ttu-id="f42a4-106">Membros</span><span class="sxs-lookup"><span data-stu-id="f42a4-106">Members</span></span>
+|<span data-ttu-id="f42a4-107">Membro</span><span class="sxs-lookup"><span data-stu-id="f42a4-107">Member</span></span>|<span data-ttu-id="f42a4-108">Valor</span><span class="sxs-lookup"><span data-stu-id="f42a4-108">Value</span></span>|<span data-ttu-id="f42a4-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="f42a4-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="d1f95-110">productKey</span><span class="sxs-lookup"><span data-stu-id="d1f95-110">productKey</span></span>|<span data-ttu-id="d1f95-111">0</span><span class="sxs-lookup"><span data-stu-id="d1f95-111">0</span></span>|<span data-ttu-id="d1f95-112">Tipo de chave de produto</span><span class="sxs-lookup"><span data-stu-id="d1f95-112">Product Key Type</span></span>|
-|<span data-ttu-id="d1f95-113">licenseFile</span><span class="sxs-lookup"><span data-stu-id="d1f95-113">licenseFile</span></span>|<span data-ttu-id="d1f95-114">1</span><span class="sxs-lookup"><span data-stu-id="d1f95-114">1</span></span>|<span data-ttu-id="d1f95-115">Tipo de arquivo de licença</span><span class="sxs-lookup"><span data-stu-id="d1f95-115">License File Type</span></span>|
+|<span data-ttu-id="f42a4-110">productKey</span><span class="sxs-lookup"><span data-stu-id="f42a4-110">productKey</span></span>|<span data-ttu-id="f42a4-111">,0</span><span class="sxs-lookup"><span data-stu-id="f42a4-111">0</span></span>|<span data-ttu-id="f42a4-112">Tipo de chave do produto</span><span class="sxs-lookup"><span data-stu-id="f42a4-112">Product Key Type</span></span>|
+|<span data-ttu-id="f42a4-113">LicenseFile</span><span class="sxs-lookup"><span data-stu-id="f42a4-113">licenseFile</span></span>|<span data-ttu-id="f42a4-114">1</span><span class="sxs-lookup"><span data-stu-id="f42a4-114">1</span></span>|<span data-ttu-id="f42a4-115">Tipo de arquivo de licença</span><span class="sxs-lookup"><span data-stu-id="f42a4-115">License File Type</span></span>|
 
 
 

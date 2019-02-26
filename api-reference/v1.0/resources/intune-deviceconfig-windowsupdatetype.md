@@ -1,30 +1,31 @@
 ---
-title: tipo de enum windowsUpdateType
-description: Quais dispositivos de filial receberão suas atualizações do
+title: tipo de enumeração windowsUpdateType
+description: Para quais dispositivos de filial receberão suas atualizações
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 90d1f946dd497e650df5eb07004560dda028e14f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: f91657cabec59cf1307253d707ba632bf4f99463
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27930338"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30260218"
 ---
-# <a name="windowsupdatetype-enum-type"></a><span data-ttu-id="23219-103">tipo de enum windowsUpdateType</span><span class="sxs-lookup"><span data-stu-id="23219-103">windowsUpdateType enum type</span></span>
+# <a name="windowsupdatetype-enum-type"></a><span data-ttu-id="7c623-103">tipo de enumeração windowsUpdateType</span><span class="sxs-lookup"><span data-stu-id="7c623-103">windowsUpdateType enum type</span></span>
 
-> <span data-ttu-id="23219-104">**Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="23219-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="7c623-104">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="7c623-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="23219-105">Quais dispositivos de filial receberão suas atualizações do</span><span class="sxs-lookup"><span data-stu-id="23219-105">Which branch devices will receive their updates from</span></span>
-## <a name="members"></a><span data-ttu-id="23219-106">Membros</span><span class="sxs-lookup"><span data-stu-id="23219-106">Members</span></span>
-|<span data-ttu-id="23219-107">Membro</span><span class="sxs-lookup"><span data-stu-id="23219-107">Member</span></span>|<span data-ttu-id="23219-108">Valor</span><span class="sxs-lookup"><span data-stu-id="23219-108">Value</span></span>|<span data-ttu-id="23219-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="23219-109">Description</span></span>|
+<span data-ttu-id="7c623-105">Para quais dispositivos de filial receberão suas atualizações</span><span class="sxs-lookup"><span data-stu-id="7c623-105">Which branch devices will receive their updates from</span></span>
+
+## <a name="members"></a><span data-ttu-id="7c623-106">Membros</span><span class="sxs-lookup"><span data-stu-id="7c623-106">Members</span></span>
+|<span data-ttu-id="7c623-107">Membro</span><span class="sxs-lookup"><span data-stu-id="7c623-107">Member</span></span>|<span data-ttu-id="7c623-108">Valor</span><span class="sxs-lookup"><span data-stu-id="7c623-108">Value</span></span>|<span data-ttu-id="7c623-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="7c623-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="23219-110">userDefined</span><span class="sxs-lookup"><span data-stu-id="23219-110">userDefined</span></span>|<span data-ttu-id="23219-111">0</span><span class="sxs-lookup"><span data-stu-id="23219-111">0</span></span>|<span data-ttu-id="23219-112">Permitir que o usuário pode definir.</span><span class="sxs-lookup"><span data-stu-id="23219-112">Allow the user to set.</span></span>|
-|<span data-ttu-id="23219-113">todos os</span><span class="sxs-lookup"><span data-stu-id="23219-113">all</span></span>|<span data-ttu-id="23219-114">1</span><span class="sxs-lookup"><span data-stu-id="23219-114">1</span></span>|<span data-ttu-id="23219-115">O canal delimitadas anual (público alvo).</span><span class="sxs-lookup"><span data-stu-id="23219-115">Semi-annual Channel (Targeted).</span></span> <span data-ttu-id="23219-116">Dispositivo obtém todas as atualizações aplicáveis de recurso do canal delimitadas anual (multidifusão).</span><span class="sxs-lookup"><span data-stu-id="23219-116">Device gets all applicable feature updates from Semi-annual Channel (Targeted).</span></span>|
-|<span data-ttu-id="23219-117">businessReadyOnly</span><span class="sxs-lookup"><span data-stu-id="23219-117">businessReadyOnly</span></span>|<span data-ttu-id="23219-118">2</span><span class="sxs-lookup"><span data-stu-id="23219-118">2</span></span>|<span data-ttu-id="23219-119">Canal delimitadas anual.</span><span class="sxs-lookup"><span data-stu-id="23219-119">Semi-annual Channel.</span></span> <span data-ttu-id="23219-120">Dispositivo obtém atualizações de recurso do canal delimitadas anual.</span><span class="sxs-lookup"><span data-stu-id="23219-120">Device gets feature updates from Semi-annual Channel.</span></span>|
-|<span data-ttu-id="23219-121">windowsInsiderBuildFast</span><span class="sxs-lookup"><span data-stu-id="23219-121">windowsInsiderBuildFast</span></span>|<span data-ttu-id="23219-122">3</span><span class="sxs-lookup"><span data-stu-id="23219-122">3</span></span>|<span data-ttu-id="23219-123">Construir Insider Windows - Fast</span><span class="sxs-lookup"><span data-stu-id="23219-123">Windows Insider build - Fast</span></span>|
-|<span data-ttu-id="23219-124">windowsInsiderBuildSlow</span><span class="sxs-lookup"><span data-stu-id="23219-124">windowsInsiderBuildSlow</span></span>|<span data-ttu-id="23219-125">4</span><span class="sxs-lookup"><span data-stu-id="23219-125">4</span></span>|<span data-ttu-id="23219-126">Construir Insider Windows - lento</span><span class="sxs-lookup"><span data-stu-id="23219-126">Windows Insider build - Slow</span></span>|
-|<span data-ttu-id="23219-127">windowsInsiderBuildRelease</span><span class="sxs-lookup"><span data-stu-id="23219-127">windowsInsiderBuildRelease</span></span>|<span data-ttu-id="23219-128">5</span><span class="sxs-lookup"><span data-stu-id="23219-128">5</span></span>|<span data-ttu-id="23219-129">Criação de Insider Windows versão</span><span class="sxs-lookup"><span data-stu-id="23219-129">Release Windows Insider build</span></span>|
+|<span data-ttu-id="7c623-110">userDefined</span><span class="sxs-lookup"><span data-stu-id="7c623-110">userDefined</span></span>|<span data-ttu-id="7c623-111">,0</span><span class="sxs-lookup"><span data-stu-id="7c623-111">0</span></span>|<span data-ttu-id="7c623-112">Permite que o usuário defina.</span><span class="sxs-lookup"><span data-stu-id="7c623-112">Allow the user to set.</span></span>|
+|<span data-ttu-id="7c623-113">todos os</span><span class="sxs-lookup"><span data-stu-id="7c623-113">all</span></span>|<span data-ttu-id="7c623-114">1</span><span class="sxs-lookup"><span data-stu-id="7c623-114">1</span></span>|<span data-ttu-id="7c623-115">Canal semestral (direcionado).</span><span class="sxs-lookup"><span data-stu-id="7c623-115">Semi-annual Channel (Targeted).</span></span> <span data-ttu-id="7c623-116">O dispositivo obtém todas as atualizações de recursos aplicáveis do canal semestral (direcionado).</span><span class="sxs-lookup"><span data-stu-id="7c623-116">Device gets all applicable feature updates from Semi-annual Channel (Targeted).</span></span>|
+|<span data-ttu-id="7c623-117">businessReadyOnly</span><span class="sxs-lookup"><span data-stu-id="7c623-117">businessReadyOnly</span></span>|<span data-ttu-id="7c623-118">duas</span><span class="sxs-lookup"><span data-stu-id="7c623-118">2</span></span>|<span data-ttu-id="7c623-119">Canal semestral.</span><span class="sxs-lookup"><span data-stu-id="7c623-119">Semi-annual Channel.</span></span> <span data-ttu-id="7c623-120">O dispositivo Obtém atualizações de recursos do canal semestral.</span><span class="sxs-lookup"><span data-stu-id="7c623-120">Device gets feature updates from Semi-annual Channel.</span></span>|
+|<span data-ttu-id="7c623-121">windowsInsiderBuildFast</span><span class="sxs-lookup"><span data-stu-id="7c623-121">windowsInsiderBuildFast</span></span>|<span data-ttu-id="7c623-122">3D</span><span class="sxs-lookup"><span data-stu-id="7c623-122">3</span></span>|<span data-ttu-id="7c623-123">Compilação do Windows inSider-Fast</span><span class="sxs-lookup"><span data-stu-id="7c623-123">Windows Insider build - Fast</span></span>|
+|<span data-ttu-id="7c623-124">windowsInsiderBuildSlow</span><span class="sxs-lookup"><span data-stu-id="7c623-124">windowsInsiderBuildSlow</span></span>|<span data-ttu-id="7c623-125">quatro</span><span class="sxs-lookup"><span data-stu-id="7c623-125">4</span></span>|<span data-ttu-id="7c623-126">Compilação do Windows inSider-lenta</span><span class="sxs-lookup"><span data-stu-id="7c623-126">Windows Insider build - Slow</span></span>|
+|<span data-ttu-id="7c623-127">windowsInsiderBuildRelease</span><span class="sxs-lookup"><span data-stu-id="7c623-127">windowsInsiderBuildRelease</span></span>|<span data-ttu-id="7c623-128">0,5</span><span class="sxs-lookup"><span data-stu-id="7c623-128">5</span></span>|<span data-ttu-id="7c623-129">Versão de lançamento do Windows inSider</span><span class="sxs-lookup"><span data-stu-id="7c623-129">Release Windows Insider build</span></span>|
 
 
 

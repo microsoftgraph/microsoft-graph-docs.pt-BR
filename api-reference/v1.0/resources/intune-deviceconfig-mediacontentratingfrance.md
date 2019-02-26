@@ -3,29 +3,31 @@ title: Tipo de recurso mediaContentRatingFrance
 description: Ainda não documentado
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 4f6fe2e4f4ca0f629ac0d4dbc387aab68122896c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 979a5996b655ba13847e52dc09b083169ff0815a
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27913111"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30260225"
 ---
-# <a name="mediacontentratingfrance-resource-type"></a><span data-ttu-id="d428f-103">Tipo de recurso mediaContentRatingFrance</span><span class="sxs-lookup"><span data-stu-id="d428f-103">mediaContentRatingFrance resource type</span></span>
+# <a name="mediacontentratingfrance-resource-type"></a><span data-ttu-id="aa24b-103">Tipo de recurso mediaContentRatingFrance</span><span class="sxs-lookup"><span data-stu-id="aa24b-103">mediaContentRatingFrance resource type</span></span>
 
-> <span data-ttu-id="d428f-104">**Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="d428f-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="aa24b-104">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="aa24b-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="d428f-105">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="d428f-105">Not yet documented</span></span>
-## <a name="properties"></a><span data-ttu-id="d428f-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="d428f-106">Properties</span></span>
-|<span data-ttu-id="d428f-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="d428f-107">Property</span></span>|<span data-ttu-id="d428f-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="d428f-108">Type</span></span>|<span data-ttu-id="d428f-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="d428f-109">Description</span></span>|
+<span data-ttu-id="aa24b-105">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="aa24b-105">Not yet documented</span></span>
+
+## <a name="properties"></a><span data-ttu-id="aa24b-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="aa24b-106">Properties</span></span>
+|<span data-ttu-id="aa24b-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="aa24b-107">Property</span></span>|<span data-ttu-id="aa24b-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="aa24b-108">Type</span></span>|<span data-ttu-id="aa24b-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="aa24b-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="d428f-110">movieRating</span><span class="sxs-lookup"><span data-stu-id="d428f-110">movieRating</span></span>|[<span data-ttu-id="d428f-111">ratingFranceMoviesType</span><span class="sxs-lookup"><span data-stu-id="d428f-111">ratingFranceMoviesType</span></span>](../resources/intune-deviceconfig-ratingfrancemoviestype.md)|<span data-ttu-id="d428f-112">Filmes selecionado de classificação da França.</span><span class="sxs-lookup"><span data-stu-id="d428f-112">Movies rating selected for France.</span></span> <span data-ttu-id="d428f-113">Os possíveis valores são: `allAllowed`, `allBlocked`, `agesAbove10`, `agesAbove12`, `agesAbove16`, `agesAbove18`.</span><span class="sxs-lookup"><span data-stu-id="d428f-113">Possible values are: `allAllowed`, `allBlocked`, `agesAbove10`, `agesAbove12`, `agesAbove16`, `agesAbove18`.</span></span>|
-|<span data-ttu-id="d428f-114">tvRating</span><span class="sxs-lookup"><span data-stu-id="d428f-114">tvRating</span></span>|[<span data-ttu-id="d428f-115">ratingFranceTelevisionType</span><span class="sxs-lookup"><span data-stu-id="d428f-115">ratingFranceTelevisionType</span></span>](../resources/intune-deviceconfig-ratingfrancetelevisiontype.md)|<span data-ttu-id="d428f-116">Classificação de TV selecionada para França.</span><span class="sxs-lookup"><span data-stu-id="d428f-116">TV rating selected for France.</span></span> <span data-ttu-id="d428f-117">Os possíveis valores são: `allAllowed`, `allBlocked`, `agesAbove10`, `agesAbove12`, `agesAbove16`, `agesAbove18`.</span><span class="sxs-lookup"><span data-stu-id="d428f-117">Possible values are: `allAllowed`, `allBlocked`, `agesAbove10`, `agesAbove12`, `agesAbove16`, `agesAbove18`.</span></span>|
+|<span data-ttu-id="aa24b-110">movieRating</span><span class="sxs-lookup"><span data-stu-id="aa24b-110">movieRating</span></span>|[<span data-ttu-id="aa24b-111">ratingFranceMoviesType</span><span class="sxs-lookup"><span data-stu-id="aa24b-111">ratingFranceMoviesType</span></span>](../resources/intune-deviceconfig-ratingfrancemoviestype.md)|<span data-ttu-id="aa24b-112">Classificação de filmes selecionada para a França.</span><span class="sxs-lookup"><span data-stu-id="aa24b-112">Movies rating selected for France.</span></span> <span data-ttu-id="aa24b-113">Os possíveis valores são: `allAllowed`, `allBlocked`, `agesAbove10`, `agesAbove12`, `agesAbove16`, `agesAbove18`.</span><span class="sxs-lookup"><span data-stu-id="aa24b-113">Possible values are: `allAllowed`, `allBlocked`, `agesAbove10`, `agesAbove12`, `agesAbove16`, `agesAbove18`.</span></span>|
+|<span data-ttu-id="aa24b-114">tvRating</span><span class="sxs-lookup"><span data-stu-id="aa24b-114">tvRating</span></span>|[<span data-ttu-id="aa24b-115">ratingFranceTelevisionType</span><span class="sxs-lookup"><span data-stu-id="aa24b-115">ratingFranceTelevisionType</span></span>](../resources/intune-deviceconfig-ratingfrancetelevisiontype.md)|<span data-ttu-id="aa24b-116">Classificação de TV selecionada para a França.</span><span class="sxs-lookup"><span data-stu-id="aa24b-116">TV rating selected for France.</span></span> <span data-ttu-id="aa24b-117">Os possíveis valores são: `allAllowed`, `allBlocked`, `agesAbove10`, `agesAbove12`, `agesAbove16`, `agesAbove18`.</span><span class="sxs-lookup"><span data-stu-id="aa24b-117">Possible values are: `allAllowed`, `allBlocked`, `agesAbove10`, `agesAbove12`, `agesAbove16`, `agesAbove18`.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="d428f-118">Relações</span><span class="sxs-lookup"><span data-stu-id="d428f-118">Relationships</span></span>
-<span data-ttu-id="d428f-119">Nenhum</span><span class="sxs-lookup"><span data-stu-id="d428f-119">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="d428f-120">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="d428f-120">JSON Representation</span></span>
-<span data-ttu-id="d428f-121">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="d428f-121">Here is a JSON representation of the resource.</span></span>
+## <a name="relationships"></a><span data-ttu-id="aa24b-118">Relações</span><span class="sxs-lookup"><span data-stu-id="aa24b-118">Relationships</span></span>
+<span data-ttu-id="aa24b-119">Nenhum</span><span class="sxs-lookup"><span data-stu-id="aa24b-119">None</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="aa24b-120">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="aa24b-120">JSON Representation</span></span>
+<span data-ttu-id="aa24b-121">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="aa24b-121">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.mediaContentRatingFrance"
