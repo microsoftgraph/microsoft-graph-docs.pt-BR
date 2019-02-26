@@ -4,18 +4,18 @@ description: Atualizar as propriedades do objeto message.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 5a42e9d6a10e79a4ae801cca464c912dc6fade7b
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: 4b3c54e85c96524305fdba32525e277dd15508ed
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29644046"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30142816"
 ---
 # <a name="update-message"></a>Atualizar mensagem
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades de um objeto de mensagem.
+Atualiza as propriedades de um objeto Message.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -43,23 +43,24 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|bccRecipients|Destinatário|Os destinatários Cco da mensagem. |
-|corpo|ItemBody|O corpo da mensagem. Somente se atualizável isDraft = true.|
+|bccRecipients|Recipient|Os destinatários Cco da mensagem. |
+|corpo|ItemBody|O corpo da mensagem. Atualizável somente se isDraft = true.|
 |categories|Coleção de cadeias de caracteres|As categorias associadas à mensagem.|
-|ccRecipients|Coleção Recipient|Os destinatários Cc da mensagem. |
-|from|Destinatário|O proprietário da caixa de correio e o remetente da mensagem. Deve corresponder à caixa de correio real usada. |
+|ccRecipients|Coleção Recipient|Os destinatários CC da mensagem. |
+|flag|[followupFlag](../resources/followupflag.md)|O valor do sinalizador que indica o status, a data de início, a data de conclusão ou a data de finalização da mensagem.|
+|from|Recipient|O proprietário da caixa de correio e o remetente da mensagem. Deve corresponder à caixa de correio real usada. |
 |importance|String|A importância da mensagem. Os valores possíveis são: `Low`, `Normal` e `High`.|
 |inferenceClassification | String | A classificação da mensagem para o usuário, com base na relevância deduzida ou na importância, ou em uma substituição explícita. Os valores possíveis são: `focused` ou `other`. |
-|internetMessageId |String |A ID da mensagem no formato especificado por [RFC2822](https://www.ietf.org/rfc/rfc2822.txt). Somente se atualizável isDraft = true.|
-|isDeliveryReceiptRequested|Booliano|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
-|isRead|Booliano|Indica se a mensagem foi lida.|
-|isReadReceiptRequested|Booliano|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
+|internetMessageId |String |A ID da mensagem no formato especificado por [RFC2822](https://www.ietf.org/rfc/rfc2822.txt). Atualizável somente se isDraft = true.|
+|isDeliveryReceiptRequested|Boolean|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
+|isRead|Boolean|Indica se a mensagem foi lida.|
+|isReadReceiptRequested|Boolean|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
 |multiValueExtendedProperties|Coleção [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de vários valores definidas para a mensagem. Anulável.|
-|replyTo|Coleção Recipient|Os endereços de email a serem usados ao responder. Somente se atualizável isDraft = true.|
-|sender|Destinatário|A conta que é realmente usada para gerar a mensagem. Atualizável ao enviar uma mensagem de uma [caixa de correio compartilhada](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes)ou enviando uma mensagem como um [representante](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926). De qualquer forma, o valor deve corresponder à caixa de correio real que foi usada.|
+|replyTo|Coleção Recipient|Os endereços de email a serem usados ao responder. Atualizável somente se isDraft = true.|
+|sender|Destinatário|A conta que é realmente usada para gerar a mensagem. Atualizável ao enviar uma mensagem de uma [caixa de correio compartilhada](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes)ou enviar uma mensagem como um [Representante](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926). De qualquer forma, o valor deve corresponder à caixa de correio real que foi usada.|
 |singleValueExtendedProperties|Coleção [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de valor único definidas para a mensagem. Anulável.|
-|subject|String|O assunto da mensagem. Somente se atualizável isDraft = true.|
-|toRecipients|Coleção Recipient|Dos destinatários da mensagem. |
+|subject|String|O assunto da mensagem. Atualizável somente se isDraft = true.|
+|toRecipients|Coleção Recipient|Os destinatários para para a mensagem. |
 
 Como o recurso **message** dá suporte a [extensions](/graph/extensibility-overview), você pode usar a operação `PATCH` para adicionar, atualizar ou excluir seus próprios dados específicos do aplicativo nas propriedades personalizadas de uma extensão em uma instância de **message** existente.
 

@@ -3,19 +3,20 @@ title: Tipo de recurso deviceComplianceScheduledActionForRule
 description: Ação agendada para a regra
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 61e0fa49afaf3b048d1d10b1c06006cb0537f005
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: cf5b36d63ae1da9726e6948211f053a908ad04d5
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27965709"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30257838"
 ---
 # <a name="devicecompliancescheduledactionforrule-resource-type"></a>Tipo de recurso deviceComplianceScheduledActionForRule
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Ação agendada para a regra
+
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|

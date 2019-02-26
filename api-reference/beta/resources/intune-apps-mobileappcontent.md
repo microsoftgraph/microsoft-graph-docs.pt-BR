@@ -1,21 +1,21 @@
 ---
 title: Tipo de recurso mobileAppContent
 description: Contém propriedades de conteúdo para uma versão específica do aplicativo. Cada mobileAppContent pode ter vários mobileAppContentFile.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ceeb6cd4e989f4e020c885dde119c39d9659539c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 82c2100fb7bd9e906bf6cf9092d3df88865c26e8
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29418180"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30153442"
 ---
 # <a name="mobileappcontent-resource-type"></a>Tipo de recurso mobileAppContent
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Contém propriedades de conteúdo para uma versão específica do aplicativo. Cada mobileAppContent pode ter vários mobileAppContentFile.
 
@@ -37,7 +37,7 @@ Contém propriedades de conteúdo para uma versão específica do aplicativo. Ca
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |arquivos|Conjunto [mobileAppContentFile](../resources/intune-apps-mobileappcontentfile.md)|A lista dos arquivos desta versão de conteúdo do aplicativo.|
-|containedApps|coleção [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|A coleção de aplicativos contidos em um MobileLobApp atuando como um pacote.|
+|containedApps|coleção [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|A coleção de aplicativos contidos em um MobileLobApp que atua como um pacote.|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

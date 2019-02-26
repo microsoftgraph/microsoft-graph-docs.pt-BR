@@ -1,23 +1,24 @@
 ---
 title: função autopilotDeviceStream
-description: Crie uma solicitação de carregamento com fluxo de dispositivo piloto automático nela.
+description: Crie uma solicitação de upload com o fluxo de dispositivo do AutoPilot nele.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 656a3c525ac1eb6ede3efaa0759e28f6c32c5972
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: df3cd9c7deff70d7cc81f3016d1d08e62c277608
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27968448"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30253712"
 ---
 # <a name="autopilotdevicestream-function"></a>função autopilotDeviceStream
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Crie uma solicitação de carregamento com fluxo de dispositivo piloto automático nela.
+Crie uma solicitação de upload com o fluxo de dispositivo do AutoPilot nele.
+
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -47,6 +48,7 @@ Não forneça um corpo de solicitação para esse método.
 Se tiver êxito, esta função retornará um código de resposta `200 OK` e uma Cadeia de caracteres no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
+
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http

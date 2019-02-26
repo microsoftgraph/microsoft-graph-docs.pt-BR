@@ -3,19 +3,20 @@ title: Tipo de recurso windowsInformationProtectionAppLearningSummary
 description: Entidade de Resumo de AppLearning da Proteção de Informações do Windows
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 7175ec367bcf02843eff4dfff342c0e1da8120c3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 4149d585c187e8ec9c1f8f1f58aa1d646ba4a298
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27952612"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30257740"
 ---
 # <a name="windowsinformationprotectionapplearningsummary-resource-type"></a>Tipo de recurso windowsInformationProtectionAppLearningSummary
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Entidade de Resumo de AppLearning da Proteção de Informações do Windows
+
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
@@ -28,13 +29,14 @@ Entidade de Resumo de AppLearning da Proteção de Informações do Windows
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo do WindowsInformationProtectionAppLearningSummary.|
+|id|String|Identificador exclusivo do WindowsInformationProtectionAppLearningSummary.|
 |applicationName|Cadeia de caracteres|Nome do Aplicativo|
 |applicationType|[applicationType](../resources/intune-wip-applicationtype.md)|Tipo de aplicativo. Os valores possíveis são: `universal` e `desktop`.|
 |deviceCount|Int32|Contagem de dispositivos|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
+
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
 <!-- {

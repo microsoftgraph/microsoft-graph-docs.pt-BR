@@ -1,23 +1,23 @@
 ---
-title: Lista iosEducationDeviceConfigurations
-description: Lista as propriedades e os relacionamentos dos objetos iosEducationDeviceConfiguration.
-localization_priority: Normal
+title: Listar iosEducationDeviceConfigurations
+description: Listar Propriedades e relações dos objetos da ioseducationdeviceconfiguration.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2d4d89cbfbed3598456ae566e7fea6fff831f01e
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 85d75f00eaf515027ff00663e7595d3ea2587253
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29396998"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30171481"
 ---
-# <a name="list-ioseducationdeviceconfigurations"></a>Lista iosEducationDeviceConfigurations
+# <a name="list-ioseducationdeviceconfigurations"></a>Listar iosEducationDeviceConfigurations
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Lista as propriedades e os relacionamentos dos objetos [iosEducationDeviceConfiguration](../resources/intune-deviceconfig-ioseducationdeviceconfiguration.md) .
+Listar Propriedades e relações dos objetos [da ioseducationdeviceconfiguration](../resources/intune-deviceconfig-ioseducationdeviceconfiguration.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
@@ -48,7 +48,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [iosEducationDeviceConfiguration](../resources/intune-deviceconfig-ioseducationdeviceconfiguration.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [da ioseducationdeviceconfiguration](../resources/intune-deviceconfig-ioseducationdeviceconfiguration.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

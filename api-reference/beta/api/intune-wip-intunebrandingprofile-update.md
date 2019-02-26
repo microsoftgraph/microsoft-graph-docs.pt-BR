@@ -1,23 +1,23 @@
 ---
 title: Atualizar intuneBrandingProfile
-description: Atualize as propriedades de um objeto intuneBrandingProfile.
-localization_priority: Normal
+description: Atualiza as propriedades de um objeto intuneBrandingProfile.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fa1382101012bb202286f75489532a80a87bb381
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 1a66589e4be7d5cc175c792935e2f309c8f28e33
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29403088"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30162339"
 ---
 # <a name="update-intunebrandingprofile"></a>Atualizar intuneBrandingProfile
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Atualize as propriedades de um objeto [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) .
+Atualiza as propriedades de um objeto [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
@@ -44,37 +44,37 @@ PATCH /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON para o objeto [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) .
+No corpo da solicitação, forneça uma representação JSON do objeto [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) .
 
-A tabela a seguir mostra as propriedades que são necessárias quando você cria o [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md).
+A tabela a seguir mostra as propriedades que são necessárias ao criar [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md).
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave de perfil|
-|profileName|String|Nome do perfil|
+|ProfileName|String|Nome do perfil|
 |profileDescription|String|Descrição do perfil|
-|isDefaultProfile|Boolean|Apresenta se o perfil é usado para padrão.|
+|isDefaultProfile|Boolean|Apresenta se o perfil é usado para o padrão.|
 |createdDateTime|DateTimeOffset|Quando o BrandingProfile foi criado.|
-|lastModifiedDateTime|DateTimeOffset|Quando o BrandingProfile última modificação.|
-|displayName|Cadeia de caracteres|Nome da empresa/organização exibido para usuários finais.|
-|contactITName|Cadeia de caracteres|Nome da pessoa/organização responsável pelo suporte de TI.|
-|contactITPhoneNumber|Cadeia de caracteres|Número de telefone da pessoa/organização responsável pelo suporte de TI.|
-|contactITEmailAddress|Cadeia de caracteres|Endereço de email da pessoa/organização responsável pelo suporte de TI.|
-|contactITNotes|Cadeia de caracteres|Comentários de texto relacionados à pessoa/organização responsável pelo suporte de TI.|
-|privacyUrl|Cadeia de caracteres|URL da política de privacidade da empresa/organização.|
-|onlineSupportSiteUrl|Cadeia de caracteres|URL do site de assistência técnica de TI da empresa/organização.|
+|lastModifiedDateTime|DateTimeOffset|Quando o BrandingProfile foi modificado pela última vez.|
+|displayName|String|Nome da empresa/organização exibido para usuários finais.|
+|contactITName|String|Nome da pessoa/organização responsável pelo suporte de TI.|
+|contactITPhoneNumber|String|Número de telefone da pessoa/organização responsável pelo suporte de TI.|
+|contactITEmailAddress|String|Endereço de email da pessoa/organização responsável pelo suporte de TI.|
+|contactITNotes|String|Comentários de texto relacionados à pessoa/organização responsável pelo suporte de TI.|
+|privacyUrl|String|URL da política de privacidade da empresa/organização.|
+|onlineSupportSiteUrl|String|URL do site de assistência técnica de TI da empresa/organização.|
 |onlineSupportSiteName|Cadeia de caracteres|Nome de exibição do site de assistência técnica de TI da empresa/organização.|
 |themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|Cor de tema principal usado nos aplicativos e no portal da Web do Portal da Empresa.|
-|showLogo|Booliano|Booliano que indica se as imagens de logotipo fornecidas pelo administrador serão exibidas ou não.|
+|showLogo|Boolean|Booliano que indica se as imagens de logotipo fornecidas pelo administrador serão exibidas ou não.|
 |showDisplayNameNextToLogo|Booliano|Booliano que indica se o nome de exibição fornecido pelo administrador será exibido ao lado da imagem do logotipo.|
-|themeColorLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Imagem de logotipo exibida nos aplicativos de Portal da empresa nos planos de fundo de cores de tema.|
-|lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Imagem de logotipo exibida nos aplicativos de Portal da empresa nos planos de fundo claras.|
-|landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Imagem personalizada exibida na página inicial de aplicativos de Portal da empresa|
+|themeColorLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Imagem do logotipo exibida nos aplicativos do portal da empresa em planos de fundo de cores de tema.|
+|lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Imagem do logotipo exibida nos aplicativos do portal da empresa em planos de fundo claros.|
+|landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Imagem personalizada exibida na página inicial dos aplicativos do portal da empresa|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto atualizado [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

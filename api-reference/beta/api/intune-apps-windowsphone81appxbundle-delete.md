@@ -1,23 +1,23 @@
 ---
 title: Excluir windowsPhone81AppXBundle
-description: Exclui um windowsPhone81AppXBundle.
-localization_priority: Normal
+description: Exclui windowsPhone81AppXBundle.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f7f9c1f6f0bffd44621f5bbf2083adc621586aeb
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 9cf5188389e1fb2126b23f63d033d272ce5f56bb
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29405867"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30162332"
 ---
 # <a name="delete-windowsphone81appxbundle"></a>Excluir windowsPhone81AppXBundle
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Exclui um [windowsPhone81AppXBundle](../resources/intune-apps-windowsphone81appxbundle.md).
+Exclui [windowsPhone81AppXBundle](../resources/intune-apps-windowsphone81appxbundle.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).

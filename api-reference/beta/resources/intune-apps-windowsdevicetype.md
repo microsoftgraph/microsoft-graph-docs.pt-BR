@@ -1,32 +1,32 @@
 ---
-title: tipo de enum windowsDeviceType
-description: Contém propriedades para o tipo de dispositivo do Windows.
-localization_priority: Normal
+title: tipo de enumeração windowsDeviceType
+description: Contém propriedades do tipo de dispositivo do Windows.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 64bd296224c747e3042e6077bfc54aa5732fef02
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 554cfe0bbcc635ff2713a812a361de7d4922b3b8
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29406322"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30171425"
 ---
-# <a name="windowsdevicetype-enum-type"></a>tipo de enum windowsDeviceType
+# <a name="windowsdevicetype-enum-type"></a>tipo de enumeração windowsDeviceType
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Contém propriedades para o tipo de dispositivo do Windows.
+Contém propriedades do tipo de dispositivo do Windows.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|none|0|Nenhum sinalizador definido.|
-|área de trabalho|1|Ou não há suporte para o tipo de dispositivo do Windows de área de trabalho.|
-|celular|2|Ou não há suporte para o tipo de dispositivo Windows Mobile.|
-|holográfica|4|Ou não há suporte para o tipo de dispositivo do Windows holográfica.|
-|equipe|8|Ou não há suporte para o tipo de dispositivo do Windows de equipe.|
+|Nenhuma|,0|Nenhum sinalizador definido.|
+|placa|1|Se o tipo de dispositivo do Windows da área de trabalho é ou não suportado.|
+|processadores|duas|Se o tipo de dispositivo móvel do Windows é ou não suportado.|
+|Holographic|quatro|Se o tipo de dispositivo do Windows Holographic é ou não suportado.|
+|formação|8|Se o tipo de dispositivo do Windows de equipe é ou não suportado.|
 
 
 

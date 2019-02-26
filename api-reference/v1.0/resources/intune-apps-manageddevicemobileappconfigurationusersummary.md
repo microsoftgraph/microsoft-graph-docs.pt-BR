@@ -1,21 +1,22 @@
 ---
 title: Tipo de recurso managedDeviceMobileAppConfigurationUserSummary
 description: Contém propriedades, propriedades herdadas e ações para um resumo de status do usuário da configuração do aplicativo móvel de MDM.
-localization_priority: Normal
 author: tfitzmac
-ms.prod: intune
-ms.openlocfilehash: 385e9ac51b10d97e425cf19acb10007402eeeeb4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+localization_priority: Normal
+ms.prod: Intune
+ms.openlocfilehash: 96ec2f44864e29f374ab9ccf3f63a65a91692087
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27934888"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30253439"
 ---
 # <a name="manageddevicemobileappconfigurationusersummary-resource-type"></a>Tipo de recurso managedDeviceMobileAppConfigurationUserSummary
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Contém propriedades, propriedades herdadas e ações para um resumo de status do usuário da configuração do aplicativo móvel de MDM.
+
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
@@ -36,6 +37,7 @@ Contém propriedades, propriedades herdadas e ações para um resumo de status d
 
 ## <a name="relationships"></a>Relações
 Nenhum
+
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
 <!-- {

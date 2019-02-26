@@ -1,28 +1,29 @@
 ---
-title: tipo de enum windowsStartMenuAppListVisibilityType
-description: Tipo de visibilidade de lista de aplicativos de menu Iniciar.
+title: tipo de enumeração windowsStartMenuAppListVisibilityType
+description: Tipo de visibilidade da lista de aplicativos do menu iniciar.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: aaec41f28e14b4f14019bf62ef15db82baa5dbd5
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 5df3350a0d1cda4d4b6d160025675a9485b1b882
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27940187"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30252088"
 ---
-# <a name="windowsstartmenuapplistvisibilitytype-enum-type"></a>tipo de enum windowsStartMenuAppListVisibilityType
+# <a name="windowsstartmenuapplistvisibilitytype-enum-type"></a>tipo de enumeração windowsStartMenuAppListVisibilityType
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Tipo de visibilidade de lista de aplicativos de menu Iniciar.
+Tipo de visibilidade da lista de aplicativos do menu iniciar.
+
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|userDefined|0|Definido pelo usuário. Valor padrão.|
-|Recolher|1|Recolha a lista do aplicativo no menu Iniciar.|
-|remover|2|Remove a lista aplicativo inteiramente no menu Iniciar.|
-|disableSettingsApp|4|Desabilita a alternância correspondente (recolher ou remover) no aplicativo configurações.|
+|userDefined|,0|Definido pelo usuário. Valor padrão.|
+|combinados|1|Recolha a lista de aplicativos no menu iniciar.|
+|remover|duas|Remove totalmente a lista de aplicativos do menu iniciar.|
+|disableSettingsApp|quatro|Desabilita a alternância (recolhimento ou remoção) correspondente no aplicativo configurações.|
 
 
 

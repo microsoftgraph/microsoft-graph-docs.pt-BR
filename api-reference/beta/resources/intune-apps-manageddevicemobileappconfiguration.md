@@ -1,21 +1,21 @@
 ---
 title: Tipo de recurso managedDeviceMobileAppConfiguration
 description: Uma classe abstrata para a configuração do Aplicativo móvel para dispositivos registrados.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 90ac67285ba856916194d30831f556ce6b521dbd
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: dacccb00a30028a5b9e5144eb843ca52c60da876
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29400141"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30154247"
 ---
 # <a name="manageddevicemobileappconfiguration-resource-type"></a>Tipo de recurso managedDeviceMobileAppConfiguration
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Uma classe abstrata para a configuração do Aplicativo móvel para dispositivos registrados.
 
@@ -31,9 +31,9 @@ Uma classe abstrata para a configuração do Aplicativo móvel para dispositivos
 |:---|:---|:---|
 |id|String|Chave da entidade.|
 |targetedMobileApps|Coleção de cadeias de caracteres|o aplicativo associado.|
-|roleScopeTagIds|String collection|Lista de escopo marcas para essa entidade de configuração do aplicativo.|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta entidade de configuração de aplicativo.|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado.|
-|description|String|Descrição fornecida pelo administrador da Configuração do dispositivo.|
+|description|Cadeia de caracteres|Descrição fornecida pelo administrador da Configuração do dispositivo.|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo.|
 |version|Int32|Versão da configuração do dispositivo.|

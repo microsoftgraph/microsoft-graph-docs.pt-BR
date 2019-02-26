@@ -1,22 +1,23 @@
 ---
 title: iosManagedAppRegistration resource type
-description: Representa os detalhes de sincronização de um aplicativo para iOS, com recursos de gerenciamento, para um usuário específico.
-localization_priority: Normal
+description: Representa os detalhes de sincronização de um aplicativo para iOS, com recursos de gerenciamento, para um usuário específico. O recurso ManagedAppRegistration representa os detalhes de um aplicativo, com capacidade de gerenciamento, usado por um membro da organização.
 author: tfitzmac
-ms.prod: intune
-ms.openlocfilehash: 224c86f2671902fc84e4346f42b5af56d14419ac
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+localization_priority: Normal
+ms.prod: Intune
+ms.openlocfilehash: 29c8798898ea4e3e95ee051348363e0e0ba0ff71
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27971736"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30253670"
 ---
 # <a name="iosmanagedappregistration-resource-type"></a>iosManagedAppRegistration resource type
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Representa os detalhes de sincronização de um aplicativo para iOS, com recursos de gerenciamento, para um usuário específico.
 O recurso ManagedAppRegistration representa os detalhes de um aplicativo, com capacidade de gerenciamento, usado por um membro da organização.
+
 
 Herda de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)
 
@@ -30,17 +31,17 @@ Herda de [managedAppRegistration](../resources/intune-mam-managedappregistration
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|Data e hora de criação. Herdada de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
-|lastSyncDateTime|DateTimeOffset|Data e hora em que o último aplicativo foi sincronizado com o serviço de gerenciamento. Herdado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
+|lastSyncDateTime|DateTimeOffset|Data e hora em que o último aplicativo foi sincronizado com o serviço de gerenciamento. Herdada da [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |applicationVersion|String|Versão do aplicativo. Herdada de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |managementSdkVersion|String|Versão do SDK do gerenciamento de aplicativos. Herdada de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |platformVersion|String|Versão do sistema operacional. Herdada de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |deviceType|String|Tipo de dispositivo do host. Herdado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
-|deviceTag|String|Uma tag gerada pelo SDK de gerenciamento, que ajuda a relacionar aplicativos hospedados no mesmo dispositivo. Sem garantia de indicar aplicativos em todas as condições. Herdado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
+|deviceTag|Cadeia de caracteres|Uma tag gerada pelo SDK de gerenciamento, que ajuda a relacionar aplicativos hospedados no mesmo dispositivo. Sem garantia de indicar aplicativos em todas as condições. Herdado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |deviceName|String|Nome de dispositivo do host. Herdado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |flaggedReasons|coleção [managedAppFlaggedReason](../resources/intune-mam-managedappflaggedreason.md)|Zero ou mais motivos para a sinalização de um registro de aplicativo. E.g. Aplicativo em execução em um dispositivo root. Herdado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |userId|String|A ID de usuário à qual este registro de aplicativo pertence. Herdado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |appIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|O Identificador de pacote do aplicativo. Herdado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
-|id|String|Chave da entidade. Herdado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
+|id|String|Chave da entidade. Herdada de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |version|String|Versão da entidade. Herdado de [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 
 ## <a name="relationships"></a>Relações
@@ -87,7 +88,8 @@ Veja a seguir uma representação JSON do recurso.
   "type": "#page.annotation",
   "suppressions": [
      "Warning: /api-reference/v1.0/resources/intune-mam-iosmanagedappregistration.md/microsoft.graph.iosManagedAppRegistration/flaggedReasons:
-      Inconsistent types between parameter (String) and table (Object)"
+    Inconsistent types between parameter (String) and table (Object)"
   ],
 }
 -->
+

@@ -1,21 +1,21 @@
 ---
 title: Tipo de recurso deviceGeoLocation
 description: Localização do dispositivo
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3b2105711a9a8f84b705a5a01c658c87cbe48c75
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 1eaa46929ae627dbf6cdee8d300b7910b4817ffc
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29395052"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30149599"
 ---
 # <a name="devicegeolocation-resource-type"></a>Tipo de recurso deviceGeoLocation
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Localização do dispositivo
 
@@ -24,12 +24,12 @@ Localização do dispositivo
 |:---|:---|:---|
 |lastCollectedDateTimeUtc|DateTimeOffset|Hora em que a localização foi registrada, em relação ao UTC|
 |lastCollectedDateTime|DateTimeOffset|Hora em que a localização foi registrada, em relação ao UTC|
-|longitude|Double|Coordenada de longitude da localização do dispositivo|
-|latitude|Double|Coordenada de latitude da localização do dispositivo|
-|altitude|Double|Altitude, especificada em metros acima do nível do mar|
-|horizontalAccuracy|Double|Precisão da latitude e da longitude em metros|
-|verticalAccuracy|Double|Precisão da altitude em metros|
-|heading|Double|Direção em graus do norte verdadeiro|
+|longitude|Duplo|Coordenada de longitude da localização do dispositivo|
+|latitude|Duplo|Coordenada de latitude da localização do dispositivo|
+|altitude|Duplo|Altitude, especificada em metros acima do nível do mar|
+|horizontalAccuracy|Duplo|Precisão da latitude e da longitude em metros|
+|verticalAccuracy|Duplo|Precisão da altitude em metros|
+|heading|Duplo|Direção em graus do norte verdadeiro|
 |speed|Double|Velocidade na qual o dispositivo está viajando, em metros por segundo|
 
 ## <a name="relationships"></a>Relações

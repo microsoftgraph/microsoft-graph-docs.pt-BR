@@ -3,19 +3,20 @@ title: Tipo de recurso deviceCompliancePolicySettingStateSummary
 description: Resumo de estado de configuração de política de conformidade do dispositivo por toda a conta.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 73c5ad3df2b768d9cc1888de714876a2c963562e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: e976b22522b85330052d0fcc8f3a9a230b24ec5c
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27914868"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30256333"
 ---
 # <a name="devicecompliancepolicysettingstatesummary-resource-type"></a>Tipo de recurso deviceCompliancePolicySettingStateSummary
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Resumo de estado de configuração de política de conformidade do dispositivo por toda a conta.
+
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
@@ -29,9 +30,9 @@ Resumo de estado de configuração de política de conformidade do dispositivo p
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade.|
-|configuração|Cadeia de caracteres|O nome da classe de configuração e o nome da propriedade.|
+|configuração|String|O nome da classe de configuração e o nome da propriedade.|
 |settingName|Cadeia de caracteres|Nome da configuração.|
-|platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|Plataforma de configuração. Os valores possíveis são: `android`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `all`.|
+|platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|Configuração de plataforma. Os valores possíveis são: `android`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `all`.|
 |unknownDeviceCount|Int32|Número de dispositivos desconhecidos|
 |notApplicableDeviceCount|Int32|Número de dispositivos não aplicáveis|
 |compliantDeviceCount|Int32|Número de dispositivos em conformidade|

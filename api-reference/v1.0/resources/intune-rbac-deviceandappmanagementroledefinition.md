@@ -1,21 +1,22 @@
 ---
 title: Tipo de recurso deviceAndAppManagementRoleDefinition
 description: 'O recurso de Definição de Função. A definição da função é a base do acesso baseado em função no Intune. A função combina um recurso do Intune, como um aplicativo móvel e permissões de função associadas, como Criar ou Ler para o recurso. Existem dois tipos de funções: internas e personalizadas. Funções internas não podem ser modificadas. Tanto funções internas quanto personalizadas devem ter atribuições a serem impostas. Crie funções personalizadas se quiser definir uma função que permita que qualquer um dos recursos disponíveis e permissões de funções sejam combinados em uma única função.'
-localization_priority: Normal
 author: tfitzmac
-ms.prod: intune
-ms.openlocfilehash: b3a5204b766352436e1af3964b2f3f4baedc4efa
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+localization_priority: Normal
+ms.prod: Intune
+ms.openlocfilehash: e703909f818535eac7ae00284d15620bce55ba80
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27965184"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30253425"
 ---
 # <a name="deviceandappmanagementroledefinition-resource-type"></a>Tipo de recurso deviceAndAppManagementRoleDefinition
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 O recurso de Definição de Função. A definição da função é a base do acesso baseado em função no Intune. A função combina um recurso do Intune, como um aplicativo móvel e permissões de função associadas, como Criar ou Ler para o recurso. Existem dois tipos de funções: internas e personalizadas. Funções internas não podem ser modificadas. Tanto funções internas quanto personalizadas devem ter atribuições a serem impostas. Crie funções personalizadas se quiser definir uma função que permita que qualquer um dos recursos disponíveis e permissões de funções sejam combinados em uma única função.
+
 
 Herda de [roleDefinition](../resources/intune-rbac-roledefinition.md)
 
@@ -32,10 +33,10 @@ Herda de [roleDefinition](../resources/intune-rbac-roledefinition.md)
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade. É somente leitura e é gerada automaticamente. Herdado de [roleDefinition](../resources/intune-rbac-roledefinition.md)|
-|displayName|Cadeia de caracteres|Nome de exibição da definição de Função. Herdado de [roleDefinition](../resources/intune-rbac-roledefinition.md)|
+|displayName|String|Nome de exibição da definição de Função. Herdado de [roleDefinition](../resources/intune-rbac-roledefinition.md)|
 |description|Cadeia de caracteres|Descrição da definição de Função. Herdado de [roleDefinition](../resources/intune-rbac-roledefinition.md)|
-|rolePermissions|Coleção [rolePermission](../resources/intune-rbac-rolepermission.md)|Lista de Permissões de Função que esta função está autorizada a executar. Elas devem corresponder ao actionName definido como parte de rolePermission. Herdado de [roleDefinition](../resources/intune-rbac-roledefinition.md)|
-|isBuiltIn|Booliano|Tipo de Função. Defina como True se for uma definição de função interna ou como False se for uma definição de função personalizada. Herdado de [roleDefinition](../resources/intune-rbac-roledefinition.md)|
+|rolePermissions|Coleção [rolePermission](../resources/intune-rbac-rolepermission.md)|Lista de Permissões de Função que esta função está autorizada a executar. Elas devem corresponder ao actionName definido como parte de rolePermission. Herdada de [roleDefinition](../resources/intune-rbac-roledefinition.md)|
+|isBuiltIn|Booliano|Tipo de Função. Defina como True se for uma definição de função interna ou como False se for uma definição de função personalizada. Herdada de [roleDefinition](../resources/intune-rbac-roledefinition.md)|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
