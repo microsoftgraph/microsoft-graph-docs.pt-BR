@@ -1,29 +1,30 @@
 ---
-title: tipo de enum windowsUserAccountControlSettings
-description: Valores possíveis para configurações de controle de conta de usuário do Windows.
+title: tipo de enumeração windowsUserAccountControlSettings
+description: Valores possíveis para as configurações de controle de conta de usuário do Windows.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 0475d8fb013cbb07f8d69a659f8ecde2eb580e43
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 478e525847f7f6519b3bd2cb230ce2657b409f9b
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27972471"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30264103"
 ---
-# <a name="windowsuseraccountcontrolsettings-enum-type"></a>tipo de enum windowsUserAccountControlSettings
+# <a name="windowsuseraccountcontrolsettings-enum-type"></a>tipo de enumeração windowsUserAccountControlSettings
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Valores possíveis para configurações de controle de conta de usuário do Windows.
+Valores possíveis para as configurações de controle de conta de usuário do Windows.
+
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|userDefined|0|Definido pelo usuário, valor padrão, sem intenção.|
-|alwaysNotify|1|Sempre notifica.|
-|notifyOnAppChanges|2|Notifica sobre alterações de aplicativo.|
-|notifyOnAppChangesWithoutDimming|3|Notifica sobre mudanças de app sem escurecer a área de trabalho.|
-|neverNotify|4|Nunca notifica.|
+|userDefined|,0|Definido pelo usuário, valor padrão, sem intenção.|
+|alwaysNotify|1|Sempre notificar.|
+|notifyOnAppChanges|duas|Notificar alterações no aplicativo.|
+|notifyOnAppChangesWithoutDimming|3D|Notificar as alterações do aplicativo sem DIMM de área de trabalho.|
+|neverNotify|quatro|Nunca notificar.|
 
 
 

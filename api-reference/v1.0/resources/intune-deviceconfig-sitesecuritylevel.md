@@ -1,30 +1,31 @@
 ---
-title: tipo de enum siteSecurityLevel
+title: tipo de enumeração siteSecurityLevel
 description: Valores possíveis para o nível de segurança do site.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 00eb46dd4644d212d638e826d4437afb48202e86
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: dd414911da78a0a3c2576fe1f53d47250cdd3d78
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27991381"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30263879"
 ---
-# <a name="sitesecuritylevel-enum-type"></a>tipo de enum siteSecurityLevel
+# <a name="sitesecuritylevel-enum-type"></a>tipo de enumeração siteSecurityLevel
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Valores possíveis para o nível de segurança do site.
+
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|userDefined|0|Definido pelo usuário, valor padrão, sem intenção.|
+|userDefined|,0|Definido pelo usuário, valor padrão, sem intenção.|
 |low|1|Baixo.|
-|mediumLow|2|Médio-baixo.|
-|medium|3|Média.|
-|mediumHigh|4|Médio-alto.|
-|high|5|Alto.|
+|mediumLow|duas|Médio-baixo.|
+|medium|3D|Média.|
+|mediumHigh|quatro|Médio-alto.|
+|high|0,5|Alto.|
 
 
 

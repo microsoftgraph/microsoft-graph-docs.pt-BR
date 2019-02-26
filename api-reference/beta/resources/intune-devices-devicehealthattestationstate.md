@@ -1,58 +1,58 @@
 ---
 title: Tipo de recurso deviceHealthAttestationState
 description: Ainda não documentado
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8eea2d2d03a5f0241485e75448d477c5766a4589
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: ca4e5f1da8dc03c98c3d5e72fc03177cdcbf38b2
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422527"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30157460"
 ---
 # <a name="devicehealthattestationstate-resource-type"></a>Tipo de recurso deviceHealthAttestationState
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Ainda não documentado
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|lastUpdateDateTime|Cadeia de caracteres|Carimbo de data/hora da última atualização.|
-|contentNamespaceUrl|Cadeia de caracteres|A versão do relatório DHA. (Versão NameSpace)|
-|deviceHealthAttestationStatus|Cadeia de caracteres|A versão do relatório DHA. (Versão NameSpace)|
-|contentVersion|Cadeia de caracteres|Versão do esquema do estado HealthAttestation|
+|lastUpdateDateTime|String|Carimbo de data/hora da última atualização.|
+|contentNamespaceUrl|String|A versão do relatório DHA. (Versão NameSpace)|
+|deviceHealthAttestationStatus|String|A versão do relatório DHA. (Versão NameSpace)|
+|contentVersion|String|Versão do esquema do estado HealthAttestation|
 |issuedDateTime|DateTimeOffset|Data e hora em que o dispositivo foi avaliado ou emitido para o MDM|
-|attestationIdentityKey|Cadeia de caracteres|Quando houver uma chave de identidade de atestado (AIK) em um dispositivo, isso indica que o dispositivo tem um certificado de chave de endosso (EK).|
+|attestationIdentityKey|String|Quando houver uma chave de identidade de atestado (AIK) em um dispositivo, isso indica que o dispositivo tem um certificado de chave de endosso (EK).|
 |resetCount|Int64|Número de vezes que um dispositivo PC hibernou ou foi retomado|
 |restartCount|Int64|Número de vezes que um dispositivo PC foi reiniciado|
-|dataExcutionPolicy|Cadeia de caracteres|A Política de DEP define um conjunto de tecnologias de hardware e software que executa verificações adicionais na memória |
-|bitLockerStatus|Cadeia de caracteres|O status ativado ou desativado do BitLocker|
-|bootManagerVersion|Cadeia de caracteres|A versão do Gerenciador de Inicialização.|
-|codeIntegrityCheckVersion|Cadeia de caracteres|A versão do Gerenciador de Inicialização.|
-|secureBoot|Cadeia de caracteres|Quando a 	Inicialização Segura está habilitada, os principais componentes devem ter as assinaturas criptográficas corretas|
-|bootDebugging|Cadeia de caracteres|Quando BootDebugging está habilitado, o dispositivo é usado em desenvolvimentos e testes|
-|operatingSystemKernelDebugging|Cadeia de caracteres|Quando operatingSystemKernelDebugging está habilitado, o dispositivo é usado em desenvolvimentos e testes|
-|codeIntegrity|Cadeia de caracteres| Quando a integridade de código está habilitada, a execução do código fica restrita a código com integridade verificada|
-|testSigning|Cadeia de caracteres|Quando a assinatura de teste é permitida, o dispositivo não impõe a validação de assinatura durante a inicialização|
-|safeMode|Cadeia de caracteres|O modo de segurança é uma opção de solução de problemas do Windows que inicia o computador em um estado limitado|
-|windowsPE|Cadeia de caracteres|Sistema operacional executado com serviços limitados, usado para preparar um computador para o Windows|
-|earlyLaunchAntiMalwareDriverProtection|Cadeia de caracteres|ELAM fornece proteção aos computadores da sua rede quando eles são inicializados|
-|virtualSecureMode|Cadeia de caracteres|VSM é um contêiner que protege ativos de alto valor contra um kernel comprometido|
-|pcrHashAlgorithm|Cadeia de caracteres|Atributo informativo que identifica o algoritmo HASH usado por TPM|
-|bootAppSecurityVersion|Cadeia de caracteres|O número de versão de segurança do Aplicativo de Inicialização|
-|bootManagerSecurityVersion|Cadeia de caracteres|O número de versão de segurança do Aplicativo de Inicialização|
-|tpmVersion|Cadeia de caracteres|O número de versão de segurança do Aplicativo de Inicialização|
-|pcr0|Cadeia de caracteres|A medida capturada no PCR\[0\]|
-|secureBootConfigurationPolicyFingerPrint|Cadeia de caracteres|Impressão digital da política de configuração de Inicialização Segura personalizada|
-|codeIntegrityPolicy|Cadeia de caracteres|A política de Integridade de código que está controlando a segurança do ambiente de inicialização|
+|dataExcutionPolicy|String|A Política de DEP define um conjunto de tecnologias de hardware e software que executa verificações adicionais na memória |
+|bitLockerStatus|String|O status ativado ou desativado do BitLocker|
+|bootManagerVersion|String|A versão do Gerenciador de Inicialização.|
+|codeIntegrityCheckVersion|String|A versão do Gerenciador de Inicialização.|
+|secureBoot|String|Quando a 	Inicialização Segura está habilitada, os principais componentes devem ter as assinaturas criptográficas corretas|
+|bootDebugging|String|Quando BootDebugging está habilitado, o dispositivo é usado em desenvolvimentos e testes|
+|operatingSystemKernelDebugging|String|Quando operatingSystemKernelDebugging está habilitado, o dispositivo é usado em desenvolvimentos e testes|
+|codeIntegrity|String| Quando a integridade de código está habilitada, a execução do código fica restrita a código com integridade verificada|
+|testSigning|String|Quando a assinatura de teste é permitida, o dispositivo não impõe a validação de assinatura durante a inicialização|
+|safeMode|String|O modo de segurança é uma opção de solução de problemas do Windows que inicia o computador em um estado limitado|
+|windowsPE|String|Sistema operacional executado com serviços limitados, usado para preparar um computador para o Windows|
+|earlyLaunchAntiMalwareDriverProtection|String|ELAM fornece proteção aos computadores da sua rede quando eles são inicializados|
+|virtualSecureMode|String|VSM é um contêiner que protege ativos de alto valor contra um kernel comprometido|
+|pcrHashAlgorithm|String|Atributo informativo que identifica o algoritmo HASH usado por TPM|
+|bootAppSecurityVersion|String|O número de versão de segurança do Aplicativo de Inicialização|
+|bootManagerSecurityVersion|String|O número de versão de segurança do Aplicativo de Inicialização|
+|tpmVersion|String|O número de versão de segurança do Aplicativo de Inicialização|
+|pcr0|String|A medida capturada no PCR\[0\]|
+|secureBootConfigurationPolicyFingerPrint|String|Impressão digital da política de configuração de Inicialização Segura personalizada|
+|codeIntegrityPolicy|String|A política de Integridade de código que está controlando a segurança do ambiente de inicialização|
 |bootRevisionListInfo|Cadeia de caracteres|A Lista de revisão de inicialização carregada durante a inicialização inicial no dispositivo confirmado|
-|operatingSystemRevListInfo|Cadeia de caracteres|A Lista de revisão de sistema operacional carregada durante a inicialização inicial no dispositivo confirmado|
-|healthStatusMismatchInfo|Cadeia de caracteres|Esse atributo será exibido se o serviço DHA detectar um problema de integridade|
+|operatingSystemRevListInfo|String|A Lista de revisão de sistema operacional carregada durante a inicialização inicial no dispositivo confirmado|
+|healthStatusMismatchInfo|String|Esse atributo será exibido se o serviço DHA detectar um problema de integridade|
 |healthAttestationSupportedStatus|Cadeia de caracteres|Esse atributo indica se DHA é compatível com o dispositivo|
 
 ## <a name="relationships"></a>Relações

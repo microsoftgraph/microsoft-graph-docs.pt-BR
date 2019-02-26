@@ -1,21 +1,21 @@
 ---
 title: Tipo de recurso managedAppRegistration
 description: O ManagedAppEntity é o tipo de entidade de base para todos os outros tipos de entidades em um fluxo de trabalho de gerenciamento de aplicativos. O recurso ManagedAppRegistration representa os detalhes de um aplicativo, com capacidade de gerenciamento, usado por um membro da organização.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1a343dba3df1274693449b8f7cbefd83b131138c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 63645c7817281f201fd66e39e7fac2c59ff88f5c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29421435"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30151118"
 ---
 # <a name="managedappregistration-resource-type"></a>Tipo de recurso managedAppRegistration
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 O ManagedAppEntity é o tipo de entidade de base para todos os outros tipos de entidades em um fluxo de trabalho de gerenciamento de aplicativos.
 O recurso ManagedAppRegistration representa os detalhes de um aplicativo, com capacidade de gerenciamento, usado por um membro da organização.
@@ -32,16 +32,16 @@ O recurso ManagedAppRegistration representa os detalhes de um aplicativo, com ca
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|Data e hora de criação|
 |lastSyncDateTime|DateTimeOffset|Data e hora em que o último aplicativo foi sincronizado com o serviço de gerenciamento.|
-|applicationVersion|Cadeia de caracteres|Versão do Aplicativo|
-|managementSdkVersion|Cadeia de caracteres|Versão do SDK de gerenciamento do aplicativo|
-|platformVersion|Cadeia de caracteres|Versão do sistema operacional|
-|deviceType|Cadeia de caracteres|Tipo de dispositivo do host|
+|applicationVersion|String|Versão do Aplicativo|
+|managementSdkVersion|String|Versão do SDK de gerenciamento do aplicativo|
+|platformVersion|String|Versão do sistema operacional|
+|deviceType|String|Tipo de dispositivo do host|
 |deviceTag|String|Uma tag gerada pelo SDK de gerenciamento, que ajuda a relacionar aplicativos hospedados no mesmo dispositivo. Sem garantia de indicar aplicativos em todas as condições.|
 |deviceName|Cadeia de caracteres|Nome do dispositivo do host|
-|managedDeviceId|String|O identificador de dispositivo gerenciado do dispositivo de host. Valor poderia ser vazia, mesmo quando o dispositivo do host é gerenciado.|
-|azureADDeviceId|String|O identificador de dispositivo do Azure Active Directory do dispositivo de host. Valor poderia ser vazia, mesmo quando o dispositivo do host é o Azure Active Directory registrada.|
-|deviceModel|Cadeia de caracteres|O modelo de dispositivo para que o registro atual do aplicativo |
-|deviceManufacturer|String|O fabricante do dispositivo para que o registro atual do aplicativo |
+|managedDeviceId|String|O identificador de dispositivo gerenciado do dispositivo host. O valor pode ser vazio mesmo quando o dispositivo host é gerenciado.|
+|azureADDeviceId|String|O identificador de dispositivo do Azure Active Directory do dispositivo host. O valor pode ser vazio mesmo quando o dispositivo host é registrado no Azure Active Directory.|
+|deviceModel|String|O modelo de dispositivo para o registro de aplicativo atual |
+|deviceManufacturer|String|O fabricante do dispositivo para o registro de aplicativo atual |
 |flaggedReasons|coleção [managedAppFlaggedReason](../resources/intune-mam-managedappflaggedreason.md)|Zero ou mais motivos para a sinalização de um registro de aplicativo. E.g. aplicativo usado em dispositivo modificado|
 |userId|String|A ID de usuário à qual este registro de aplicativo pertence.|
 |appIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|O identificador do pacote do aplicativo|
