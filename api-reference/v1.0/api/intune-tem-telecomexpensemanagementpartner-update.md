@@ -3,21 +3,22 @@ title: Atualizar telecomExpenseManagementPartner
 description: Atualizar as propriedades de um objeto telecomExpenseManagementPartner.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 5941d48ddb8f3782f5bb631d6e28344b044d570d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 1694e1ec9d494e8e5b66b411051368c085372f4f
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27981340"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30255819"
 ---
 # <a name="update-telecomexpensemanagementpartner"></a>Atualizar telecomExpenseManagementPartner
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Atualizar as propriedades de um objeto [telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md).
+
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -47,11 +48,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [telecom
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo do parceiro TEM.|
-|displayName|Cadeia de caracteres|Nome de exibição do parceiro TEM.|
+|id|String|O identificador exclusivo do parceiro TEM.|
+|displayName|String|Nome de exibição do parceiro TEM.|
 |url|Cadeia de caracteres|URL do painel de controle administrativo do parceiro TEM, em que um administrador pode configurar o serviço TEM.|
 |appAuthorized|Booliano|Se aplicativo AAD do parceiro foi autorizado a acessar o Intune.|
-|enabled|Booliano|Se a conexão do Intune com o serviço TEM está habilitada ou desabilitada no momento.|
+|enabled|Boolean|Se a conexão do Intune com o serviço TEM está habilitada ou desabilitada no momento.|
 |lastConnectionDateTime|DateTimeOffset|Carimbo de data/hora da última solicitação enviada ao Intune pelo parceiro TEM.|
 
 
@@ -60,6 +61,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [telecom
 Se tiver êxito, este método retornará um código de resposta `200 OK` e um objeto [telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
+
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http

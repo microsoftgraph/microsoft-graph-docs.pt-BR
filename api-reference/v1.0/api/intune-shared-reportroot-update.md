@@ -4,25 +4,26 @@ description: Atualizar as propriedades de um objeto reportRoot.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: a902d341761cf56ced39a8309479ca27611ec5ce
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 0039490379054ddb98c687957c1af0462a2e7f02
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27934552"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30255448"
 ---
 # <a name="update-reportroot"></a>Atualizar reportRoot
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Atualizar as propriedades de um objeto [reportRoot](../resources/intune-shared-reportroot.md).
+
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)||
-| &nbsp;&nbsp; Configuração de dispositivo | DeviceManagementConfiguration.ReadWrite.All|
+| &nbsp;&nbsp; Configuração do dispositivo | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp;&nbsp; Solução de problemas | DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|

@@ -4,34 +4,34 @@ description: Essas categorias podem então ser aplicadas a um dispositivo no con
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 0267e547d9ee9f3846fa2f44596638d586f3158d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: a0bb1e994bcf42ba91a55fdfc75946204d1f9b06
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27968558"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30254895"
 ---
 # <a name="devicecategory-resource-type"></a>Tipo de recurso deviceCategory
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Categorias de dispositivo fornecem uma maneira de organizar seus dispositivos. Usando categorias de dispositivo, os administradores podem definir suas próprias categorias que fazem sentido para suas empresas.Essas categorias podem então ser aplicadas a um dispositivo no console do Intune Azure ou selecionadas por um usuário durante o registro de um dispositivo. Você pode filtrar relatórios e criar grupos de dispositivos dinâmicos do Azure Active Directory com base em categorias de dispositivo.
 
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|Coleção da [lista deviceCategories](../api/intune-shared-devicecategory-list.md)|Lista propriedades e relações dos objetos [deviceCategory](../resources/intune-shared-devicecategory.md).|
+|[Listar deviceCategories](../api/intune-shared-devicecategory-list.md) coleção|Lista propriedades e relações dos objetos [deviceCategory](../resources/intune-shared-devicecategory.md).|
 |[Obter deviceCategory](../api/intune-shared-devicecategory-get.md)|Propriedades de leitura e relações do objeto [deviceCategory](../resources/intune-shared-devicecategory.md).|
 |[Criar deviceCategory](../api/intune-shared-devicecategory-create.md)|Cria um novo objeto [deviceCategory](../resources/intune-shared-devicecategory.md).|
-|[Excluir deviceCategory](../api/intune-shared-devicecategory-delete.md).|
+|[Exclua deviceCategory](../api/intune-shared-devicecategory-delete.md).|
 |[Atualizar deviceCategory](../api/intune-shared-devicecategory-update.md)|Atualiza as propriedades de um objeto [deviceCategory](../resources/intune-shared-devicecategory.md).|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo da categoria do dispositivo. Somente leitura.|
-|**Inclusão**|
-|displayName|Cadeia de caracteres|Nome de exibição da categoria de dispositivo.|
+|id|String|O identificador exclusivo da categoria do dispositivo. Somente leitura.|
+|**Integração**|
+|displayName|String|Nome de exibição da categoria de dispositivo.|
 |description|Cadeia de caracteres|Descrição opcional da categoria do dispositivo.|
 
 ## <a name="relationships"></a>Relações

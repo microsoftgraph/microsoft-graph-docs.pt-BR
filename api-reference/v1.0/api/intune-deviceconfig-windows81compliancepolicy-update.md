@@ -3,21 +3,22 @@ title: Atualizar windows81CompliancePolicy
 description: Atualiza as propriedades de um objeto windows81CompliancePolicy.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 68e74069a00748a6e94f096dc483061be9ce4b78
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: bab0538680d99f9bb763a060655c39105c935bc6
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27987255"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30255364"
 ---
 # <a name="update-windows81compliancepolicy"></a>Atualizar windows81CompliancePolicy
 
-> **Observação:** o uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Atualiza as propriedades de um objeto [windows81CompliancePolicy](../resources/intune-deviceconfig-windows81compliancepolicy.md).
+
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -53,15 +54,15 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [windows81Compli
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdado de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdado de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |version|Int32|Versão da configuração do dispositivo. Herdado de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
-|passwordRequired|Booliano|Exige uma senha para desbloquear o dispositivo Windows.|
-|passwordBlockSimple|Booliano|Indica se a senha simples deve ou não ser bloqueada.|
+|passwordRequired|Boolean|Exige uma senha para desbloquear o dispositivo Windows.|
+|passwordBlockSimple|Boolean|Indica se a senha simples deve ou não ser bloqueada.|
 |passwordExpirationDays|Int32|Expiração da senha em dias.|
 |passwordMinimumLength|Int32|Comprimento mínimo da senha.|
 |passwordMinutesOfInactivityBeforeLock|Int32|Minutos de inatividade antes que uma senha seja necessária.|
 |passwordMinimumCharacterSetCount|Int32|O número de conjuntos de caracteres necessários na senha.|
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|O tipo de senha necessária. Os valores possíveis são: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordPreviousPasswordBlockCount|Int32|O número de senhas anteriores cujo uso deve ser evitado. Valores válidos de 0 a 24|
-|osMinimumVersion|Cadeia de caracteres|Versão mínima do Windows 8.1.|
+|osMinimumVersion|String|Versão mínima do Windows 8.1.|
 |osMaximumVersion|Cadeia de caracteres|Versão máxima do Windows 8.1.|
 |storageRequireEncryption|Booliano|Indica se a criptografia é ou não necessária em um dispositivo Windows 8.1.|
 
@@ -71,6 +72,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [windows81Compli
 Se tiver êxito, este método retornará o código de resposta `200 OK` e um objeto [windows81CompliancePolicy](../resources/intune-deviceconfig-windows81compliancepolicy.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
+
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http

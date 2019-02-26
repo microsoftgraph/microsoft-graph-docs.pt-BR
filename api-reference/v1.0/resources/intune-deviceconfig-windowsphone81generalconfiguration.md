@@ -1,21 +1,22 @@
 ---
 title: Tipo de recurso windowsPhone81GeneralConfiguration
 description: Este tópico fornece descrições dos métodos declarados, das propriedades e das relações expostos pelo recurso windowsPhone81GeneralConfiguration.
-localization_priority: Normal
 author: tfitzmac
-ms.prod: intune
-ms.openlocfilehash: fd792d1dd398a3e62f66c3e6ccafa4a147ac7f97
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+localization_priority: Normal
+ms.prod: Intune
+ms.openlocfilehash: 31ac8e5ba274795057fdefee6c6355330cb242cb
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27982523"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30255826"
 ---
 # <a name="windowsphone81generalconfiguration-resource-type"></a>Tipo de recurso windowsPhone81GeneralConfiguration
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Este tópico fornece descrições dos métodos declarados, das propriedades e das relações expostos pelo recurso windowsPhone81GeneralConfiguration.
+
 
 Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)
 
@@ -31,25 +32,25 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|id|String|Chave da entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |description|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Versão da configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|applyOnlyToWindowsPhone81|Booliano|Valor que indica se esta política se aplica somente ao Windows Phone 8.1. Essa propriedade é somente leitura.|
-|appsBlockCopyPaste|Booliano|Indica se a função copiar/colar deve ou não ser bloqueada.|
-|bluetoothBlocked|Booliano|Indica se o bluetooth deve ou não ser bloqueado.|
-|cameraBlocked|Booliano|Indica se a câmera deve ou não ser bloqueada.|
-|cellularBlockWifiTethering|Booliano|Indica se o compartilhamento de Internet por Wi-Fi deve ou não ser bloqueado. Não terá impacto se o Wi-Fi estiver bloqueado.|
+|applyOnlyToWindowsPhone81|Boolean|Valor que indica se esta política se aplica somente ao Windows Phone 8.1. Essa propriedade é somente leitura.|
+|appsBlockCopyPaste|Boolean|Indica se a função copiar/colar deve ou não ser bloqueada.|
+|bluetoothBlocked|Boolean|Indica se o bluetooth deve ou não ser bloqueado.|
+|cameraBlocked|Boolean|Indica se a câmera deve ou não ser bloqueada.|
+|cellularBlockWifiTethering|Boolean|Indica se o compartilhamento de Internet por Wi-Fi deve ou não ser bloqueado. Não terá impacto se o Wi-Fi estiver bloqueado.|
 |compliantAppsList|Coleção [appListItem](../resources/intune-deviceconfig-applistitem.md)|Lista de aplicativos em conformidade (lista de permissões ou lista de bloqueios, controladas por CompliantAppListType). Essa coleção pode conter um máximo de 10.000 elementos.|
 |compliantAppListType|[appListType](../resources/intune-deviceconfig-applisttype.md)|Lista que está em AppComplianceList. Os valores possíveis são: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
-|diagnosticDataBlockSubmission|Booliano|Indica se o envio de dados de diagnóstico deve ou não ser bloqueado.|
-|emailBlockAddingAccounts|Booliano|Indica se as contas de email personalizadas devem ou não ser bloqueadas.|
-|locationServicesBlocked|Booliano|Indica se os serviços de localização devem ou não ser bloqueados.|
-|microsoftAccountBlocked|Booliano|Indica se o uso de uma conta da Microsoft deve ou não ser bloqueado.|
-|nfcBlocked|Booliano|Indica se a comunicação a curta distância deve ou não ser bloqueada.|
-|passwordBlockSimple|Booliano|Indica se a sincronização do calendário deve ou não ser bloqueada.|
+|diagnosticDataBlockSubmission|Boolean|Indica se o envio de dados de diagnóstico deve ou não ser bloqueado.|
+|emailBlockAddingAccounts|Boolean|Indica se as contas de email personalizadas devem ou não ser bloqueadas.|
+|locationServicesBlocked|Boolean|Indica se os serviços de localização devem ou não ser bloqueados.|
+|microsoftAccountBlocked|Boolean|Indica se o uso de uma conta da Microsoft deve ou não ser bloqueado.|
+|nfcBlocked|Boolean|Indica se a comunicação a curta distância deve ou não ser bloqueada.|
+|passwordBlockSimple|Boolean|Indica se a sincronização do calendário deve ou não ser bloqueada.|
 |passwordExpirationDays|Int32|Número de dias antes da expiração da senha.|
 |passwordMinimumLength|Int32|Comprimento mínimo das senhas.|
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Minutos de inatividade antes que a tela atinja o tempo limite.|
@@ -57,22 +58,22 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 |passwordPreviousPasswordBlockCount|Int32|Número de senhas anteriores para bloquear. Valores válidos de 0 a 24|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Número permitido de falhas de entrada antes da redefinição de fábrica.|
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|Tipo de senha necessário. Os valores possíveis são: `deviceDefault`, `alphanumeric`, `numeric`.|
-|passwordRequired|Booliano|Indica se uma senha deve ou não ser exigida.|
-|screenCaptureBlocked|Booliano|Indica se capturas de tela devem ou não ser bloqueadas.|
-|storageBlockRemovableStorage|Booliano|Indica se o armazenamento removível deve ou não ser bloqueado.|
-|storageRequireEncryption|Booliano|Indica se a criptografia é ou não necessária.|
-|webBrowserBlocked|Booliano|Indica se o navegador da Web deve ou não ser bloqueado.|
-|wifiBlocked|Booliano|Indica se o Wi-Fi deve ou não ser bloqueado.|
-|wifiBlockAutomaticConnectHotspots|Booliano|Indica se a conexão automática a hotspots Wi-Fi deve ou não ser bloqueada. Não terá impacto se o Wi-Fi estiver bloqueado.|
-|wifiBlockHotspotReporting|Booliano|Indica se os relatórios de hotspot Wi-Fi devem ou não ser bloqueados. Não terá impacto se o Wi-Fi estiver bloqueado.|
-|windowsStoreBlocked|Booliano|Indica se a Windows Store deve ou não ser bloqueada.|
+|passwordRequired|Boolean|Indica se uma senha deve ou não ser exigida.|
+|screenCaptureBlocked|Boolean|Indica se capturas de tela devem ou não ser bloqueadas.|
+|storageBlockRemovableStorage|Boolean|Indica se o armazenamento removível deve ou não ser bloqueado.|
+|storageRequireEncryption|Boolean|Indica se a criptografia é ou não necessária.|
+|webBrowserBlocked|Boolean|Indica se o navegador da Web deve ou não ser bloqueado.|
+|wifiBlocked|Boolean|Indica se o Wi-Fi deve ou não ser bloqueado.|
+|wifiBlockAutomaticConnectHotspots|Boolean|Indica se a conexão automática a hotspots Wi-Fi deve ou não ser bloqueada. Não terá impacto se o Wi-Fi estiver bloqueado.|
+|wifiBlockHotspotReporting|Boolean|Indica se os relatórios de hotspot Wi-Fi devem ou não ser bloqueados. Não terá impacto se o Wi-Fi estiver bloqueado.|
+|windowsStoreBlocked|Boolean|Indica se a Windows Store deve ou não ser bloqueada.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |assignments|Coleção [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|A lista de atribuições para o perfil de configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |deviceStatuses|Coleção [deviceConfigurationDeviceStatus](../resources/intune-deviceconfig-deviceconfigurationdevicestatus.md)|Status de instalação da configuração do dispositivo por dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|userStatuses|Coleção [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md)|Status de instalação da configuração de dispositivo por usuário. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|userStatuses|Coleção [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md)|Status de instalação da configuração do dispositivo por usuário. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|Visão geral de status dos dispositivos na Configuração do dispositivo Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|Visão geral de status dos usuários na Configuração do dispositivo Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |deviceSettingStateSummaries|Coleção [settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md)|Resumo de dispositivo de estado de configuração do dispositivo Herdada do [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|

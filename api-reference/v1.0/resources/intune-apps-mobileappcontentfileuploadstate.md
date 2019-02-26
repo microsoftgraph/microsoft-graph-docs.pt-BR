@@ -1,28 +1,29 @@
 ---
-title: tipo de enum mobileAppContentFileUploadState
-description: Contém propriedades para estados de solicitação de carregamento.
+title: tipo de enumeração mobileAppContentFileUploadState
+description: Contém propriedades para carregar Estados de solicitação.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 801708a519f71ee04dbca2cdc66173d727f47299
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 50e17bbd002d42b439c8b4377a38532e13ed9f4b
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27973045"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30255518"
 ---
-# <a name="mobileappcontentfileuploadstate-enum-type"></a>tipo de enum mobileAppContentFileUploadState
+# <a name="mobileappcontentfileuploadstate-enum-type"></a>tipo de enumeração mobileAppContentFileUploadState
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Contém propriedades para estados de solicitação de carregamento.
+Contém propriedades para carregar Estados de solicitação.
+
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|sucesso|0|Ainda não documentado|
+|sucesso|,0|Ainda não documentado|
 |transientError|1|Ainda não documentado|
-|erro|2|Ainda não documentado|
-|unknown|3|Ainda não documentado|
+|erro|duas|Ainda não documentado|
+|unknown|3D|Ainda não documentado|
 |azureStorageUriRequestSuccess|100|Ainda não documentado|
 |azureStorageUriRequestPending|101|Ainda não documentado|
 |azureStorageUriRequestFailed|102|Ainda não documentado|

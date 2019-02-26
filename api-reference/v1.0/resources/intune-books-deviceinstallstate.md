@@ -3,19 +3,20 @@ title: Tipo de recurso deviceInstallState
 description: Contém propriedades do estado de instalação de um dispositivo.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 39f7331f8bc83840b8b5865cb71414382b3d5a50
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 6e737a58fc9547d54feeeeef47136286285c1e99
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27963686"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30255056"
 ---
 # <a name="deviceinstallstate-resource-type"></a>Tipo de recurso deviceInstallState
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Contém propriedades do estado de instalação de um dispositivo.
+
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
@@ -29,17 +30,18 @@ Contém propriedades do estado de instalação de um dispositivo.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade.|
-|deviceName|Cadeia de caracteres|Nome do dispositivo.|
-|deviceId|Cadeia de caracteres|ID do dispositivo.|
+|deviceName|String|Nome do dispositivo.|
+|deviceId|String|ID do dispositivo.|
 |lastSyncDateTime|DateTimeOffset|Última sincronização de data e hora.|
 |installState|[installState](../resources/intune-books-installstate.md)|O estado de instalação do livro eletrônico. Os valores possíveis são: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed`, `unknown`.|
-|errorCode|Cadeia de caracteres|O código de erro de falhas de instalação.|
-|osVersion|Cadeia de caracteres|Versão do sistema operacional.|
+|errorCode|String|O código de erro de falhas de instalação.|
+|osVersion|String|Versão do sistema operacional.|
 |osDescription|Cadeia de caracteres|Descrição do sistema operacional.|
 |userName|Cadeia de caracteres|Nome de usuário do dispositivo.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
+
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
 <!-- {

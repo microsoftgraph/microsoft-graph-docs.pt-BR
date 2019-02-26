@@ -1,29 +1,30 @@
 ---
-title: tipo de enum vppTokenState
-description: Estados possíveis associados a um token de programa de compra de Volume do Apple.
+title: tipo de enumeração vppTokenState
+description: Estados possíveis associados a um token do Apple Volume Purchase Program.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 6bdeb73b6491f3960ce30db91a35d06c0f8ffaf1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 573fe27064881f670e642e7c3727b8c9eb7db5a9
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986660"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30254930"
 ---
-# <a name="vpptokenstate-enum-type"></a>tipo de enum vppTokenState
+# <a name="vpptokenstate-enum-type"></a>tipo de enumeração vppTokenState
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Estados possíveis associados a um token de programa de compra de Volume do Apple.
+Estados possíveis associados a um token do Apple Volume Purchase Program.
+
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|unknown|0|Estado padrão.|
-|válido|1|Token é válido.|
-|expirou|2|Token expirou.|
-|Inválido|3|Token é inválido.|
-|assignedToExternalMDM|4|Token é gerenciada por outro serviço MDM.|
+|unknown|,0|Estado padrão.|
+|inválido|1|O token é válido.|
+|venceu|duas|O token expirou.|
+|Inválido|3D|O token é inválido.|
+|assignedToExternalMDM|quatro|O token é gerenciado por outro serviço MDM.|
 
 
 
