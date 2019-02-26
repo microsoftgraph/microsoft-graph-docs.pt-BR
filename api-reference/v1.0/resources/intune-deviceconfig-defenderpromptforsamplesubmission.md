@@ -1,29 +1,30 @@
 ---
-title: tipo de enum defenderPromptForSampleSubmission
-description: Valores possíveis para avisar o usuário para amostras de envio.
+title: tipo de enumeração defenderPromptForSampleSubmission
+description: Valores possíveis para avisar o usuário para envio de amostras.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: e103916bd55e6c2d505a85c379b80962ab9a0cac
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: c1df39da4989417a8e21e5d0dad61667354e28ed
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27928084"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30251038"
 ---
-# <a name="defenderpromptforsamplesubmission-enum-type"></a>tipo de enum defenderPromptForSampleSubmission
+# <a name="defenderpromptforsamplesubmission-enum-type"></a>tipo de enumeração defenderPromptForSampleSubmission
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Valores possíveis para avisar o usuário para amostras de envio.
+Valores possíveis para avisar o usuário para envio de amostras.
+
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|userDefined|0|Definido pelo usuário, valor padrão, sem intenção.|
+|userDefined|,0|Definido pelo usuário, valor padrão, sem intenção.|
 |alwaysPrompt|1|Sempre avisar.|
-|promptBeforeSendingPersonalData|2|Avisar antes de enviar dados pessoais.|
-|neverSendData|3|Nunca envie dados.|
-|sendAllDataWithoutPrompting|4|Envie todos os dados sem avisar.|
+|promptBeforeSendingPersonalData|duas|Avisar antes de enviar dados pessoais.|
+|neverSendData|3D|Nunca enviar dados.|
+|sendAllDataWithoutPrompting|quatro|Enviar todos os dados sem avisar.|
 
 
 

@@ -4,27 +4,28 @@ description: Atualize as propriedades de um objeto user.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 455a3e0c68fadc9768c434f5893dbc950a371bab
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 8fb82586ea0fda24297179963b730a097b2d81fa
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27922519"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30251346"
 ---
 # <a name="update-user"></a>Atualizar usuário
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Atualizar as propriedades de um objeto [user](../resources/intune-shared-user.md).
+
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)| _varia de acordo com o contexto_|
-| &nbsp;&nbsp; Gerenciamento de dispositivo | DeviceManagementManagedDevices.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante)| _varia por contexto_|
+| &nbsp;&nbsp; Gerenciamento de dispositivos | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp;&nbsp; MAM | DeviceManagementApps.ReadWrite.All |
-| &nbsp;&nbsp; Onboarding | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; Integração | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; Solução de problemas | DeviceManagementManagedDevices.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
@@ -52,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [user](.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Identificador exclusivo do usuário.|
-|**Inclusão**|
+|**Integração**|
 |deviceEnrollmentLimit|Int32|O limite do número máximo de dispositivos que o usuário tem permissão para inscrever. Os valores permitidos vão de 5 a 1000.|
 
 ## <a name="response"></a>Resposta

@@ -1,35 +1,36 @@
 ---
-title: tipo de enum managementAgentType
+title: tipo de enumeração managementAgentType
 description: Tipo de agente de gerenciamento.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: b76231a2781a153c5384c1dc3efdf8facec04dcc
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 9743c9c83e34a0c58dee78e73839f8fdcaaf2cda
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27966164"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30251563"
 ---
-# <a name="managementagenttype-enum-type"></a>tipo de enum managementAgentType
+# <a name="managementagenttype-enum-type"></a>tipo de enumeração managementAgentType
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Tipo de agente de gerenciamento.
+
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|EAs|1|O dispositivo é gerenciado pelo Exchange server.|
-|MDM|2|O dispositivo é gerenciado pelo MDM. Intune|
-|easMdm|3|O dispositivo é gerenciado pelo Exchange server e MDM de Intune.|
-|intuneClient|4|Cliente Intune gerenciados.|
-|easIntuneClient|5|O dispositivo está EAS Intune cliente e dual gerenciado.|
-|configurationManagerClient|8|O dispositivo é gerenciado pelo Gerenciador de configuração.|
-|configurationManagerClientMdm|10|O dispositivo é gerenciado pelo Gerenciador de configuração e MDM.|
-|configurationManagerClientMdmEas|11|O dispositivo é gerenciado pelo Gerenciador de configuração, MDM e Eas.|
-|unknown|16|Tipo de agente de gerenciamento desconhecido.|
-|jamf|32|Os atributos de dispositivo são buscados no Jamf.|
-|googleCloudDevicePolicyController|64|O dispositivo é gerenciado por CloudDPC do Google.|
+|Estendi|1|O dispositivo é gerenciado pelo Exchange Server.|
+|MDM|duas|O dispositivo é gerenciado pelo MDM do Intune.|
+|easMdm|3D|O dispositivo é gerenciado pelo Exchange Server e o MDM do Intune.|
+|intuneClient|quatro|Cliente do Intune gerenciado.|
+|easIntuneClient|0,5|O dispositivo é ESTENDIdo e o cliente do Intune é gerenciado duas.|
+|configurationManagerClient|8|O dispositivo é gerenciado pelo Configuration Manager.|
+|configurationManagerClientMdm|254|O dispositivo é gerenciado pelo Configuration Manager e pelo MDM.|
+|configurationManagerClientMdmEas|11|O dispositivo é gerenciado pelo Configuration Manager, MDM e EAS.|
+|unknown|dezesseis|Tipo de agente de gerenciamento desconhecido.|
+|JAMF|32|Os atributos do dispositivo são buscados do JAMF.|
+|googleCloudDevicePolicyController|64|O dispositivo é gerenciado pelo CloudDPC do Google.|
 
 
 

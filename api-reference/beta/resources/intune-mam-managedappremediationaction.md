@@ -1,29 +1,30 @@
 ---
-title: tipo de enum managedAppRemediationAction
-description: Um administrador que iniciou a ação a ser aplicada em um aplicativo gerenciado.
-localization_priority: Normal
+title: tipo de enumeração managedAppRemediationAction
+description: Uma ação iniciada pelo administrador para ser aplicada em um aplicativo gerenciado.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b46b0a9ca4afd3a086b04aa4db29c45383fcaaea
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: eabaa59c9419193d6dd984eaaa791e395f67eb50
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29394863"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30161716"
 ---
-# <a name="managedappremediationaction-enum-type"></a>tipo de enum managedAppRemediationAction
+# <a name="managedappremediationaction-enum-type"></a>tipo de enumeração managedAppRemediationAction
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Um administrador que iniciou a ação a ser aplicada em um aplicativo gerenciado.
+Uma ação iniciada pelo administrador para ser aplicada em um aplicativo gerenciado.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|bloquear|0|App e os dados da empresa correspondentes a ser bloqueado|
-|apagar|1|App e os dados da empresa correspondente seja apagada|
+|Larga|,0|aplicativo e os dados da empresa correspondentes a serem bloqueados|
+|revelar|1|aplicativo e os dados da empresa correspondentes a serem apagados|
+|emite|duas|o aplicativo e o usuário correspondente serão avisados|
 
 
 

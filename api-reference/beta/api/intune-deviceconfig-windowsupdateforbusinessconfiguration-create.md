@@ -1,21 +1,21 @@
 ---
 title: Criar windowsUpdateForBusinessConfiguration
 description: Cria um novo objeto windowsUpdateForBusinessConfiguration.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dade72412a64b5703fa253eda0a40829f2475549
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e857437e78e647e6762ffa8914ffbc0efc011785
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29406189"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30171957"
 ---
 # <a name="create-windowsupdateforbusinessconfiguration"></a>Criar windowsUpdateForBusinessConfiguration
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Cria um novo objeto [windowsUpdateForBusinessConfiguration](../resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md).
 
@@ -53,10 +53,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windowsU
 |:---|:---|:---|
 |id|String|Chave da entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|roleScopeTagIds|String collection|Lista de escopo marcas para essa instância da entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|Indica se ou não a configuração de dispositivo subjacente suporta a atribuição de marcas de escopo. Atribuir à propriedade ScopeTags não é permitida quando esse valor for false e entidades não estarão visíveis para usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no Portal do Windows Azure. Esta propriedade é somente leitura. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|Boolean|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Esta propriedade é somente leitura. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|description|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Versão da configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |deliveryOptimizationMode|[windowsDeliveryOptimizationMode](../resources/intune-deviceconfig-windowsdeliveryoptimizationmode.md)|Modo de otimização de entrega. Os valores possíveis são: `userDefined`, `httpOnly`, `httpWithPeeringNat`, `httpWithPeeringPrivateGroup`, `httpWithInternetPeering`, `simpleDownload`, `bypassMode`.|
@@ -71,24 +71,23 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windowsU
 |featureUpdatesPaused|Boolean|Pausar atualizações de recursos|
 |qualityUpdatesPauseExpiryDateTime|DateTimeOffset|Data e hora de expiração da pausa de atualizações de qualidade|
 |featureUpdatesPauseExpiryDateTime|DateTimeOffset|Data e hora de expiração da pausa de atualizações de recursos|
-|businessReadyUpdatesOnly|[windowsUpdateType](../resources/intune-deviceconfig-windowsupdatetype.md)|Determina quais dispositivos de filial receberão suas atualizações de. Os possíveis valores são: `userDefined`, `all`, `businessReadyOnly`, `windowsInsiderBuildFast`, `windowsInsiderBuildSlow`, `windowsInsiderBuildRelease`.|
-|skipChecksBeforeRestart|Boolean|Defina ignorar a verificação de todos os antes da reinicialização: nível de bateria = 40%, a presença do usuário, exibição necessários, o modo de apresentação, o modo de tela inteira, o estado de chamada telefônica, modo jogo etc. |
-|updateWeeks|[windowsUpdateForBusinessUpdateWeeks](../resources/intune-deviceconfig-windowsupdateforbusinessupdateweeks.md)|Agendada a instalação da atualização as semanas do mês. Os possíveis valores são: `userDefined`, `firstWeek`, `secondWeek`, `thirdWeek`, `fourthWeek`, `everyWeek`.|
-|qualityUpdatesPauseStartDate|Data|Data de início da pausa de atualizações de qualidade. Esta propriedade é somente leitura.|
-|featureUpdatesPauseStartDate|Data|Data de início do recurso atualizações pausar. Esta propriedade é somente leitura.|
-|featureUpdatesRollbackWindowInDays|Int32|O número de dias após uma atualização de recurso para o qual uma reversão é válida|
-|qualityUpdatesWillBeRolledBack|Boolean|Especifica se a reversão de atualizações de qualidade do dispositivo próximo check-in|
-|featureUpdatesWillBeRolledBack|Boolean|Especifica se a reversão de atualizações de recurso no dispositivo próximo check-in|
-|qualityUpdatesRollbackStartDateTime|DateTimeOffset|Datetime Iniciar de reversão de atualizações de qualidade|
-|featureUpdatesRollbackStartDateTime|DateTimeOffset|Datetime Iniciar de reversão de atualizações do recurso|
-|engagedRestartDeadlineInDays|Int32|Prazo final em dias antes de agendar automaticamente e executá-lo uma reinicialização pendente fora do horário ativo, com o intervalo válido de 2 a 30 dias|
-|engagedRestartSnoozeScheduleInDays|Int32|Número de dias que um usuário pode snooze notificações de lembrete reiniciar envolvidos com válidos variam de 1 a 3 dias|
-|engagedRestartTransitionScheduleInDays|Int32|Número de dias antes da transição do automático reinicia agendada fora do horário ativo participa reiniciar, que requer que o usuário agendar, com o intervalo válido entre 0 e 30 dias|
-|autoRestartNotificationDismissal|[autoRestartNotificationDismissalMethod](../resources/intune-deviceconfig-autorestartnotificationdismissalmethod.md)|Especifique o método pelo qual a reinicialização automática necessário notificação é liberada. Os valores possíveis são: `notConfigured`, `automatic`, `user`.|
-|scheduleRestartWarningInHours|Int32|Especifique o período para notificações de lembrete de aviso de reinicialização automática. Valores compatíveis: 2, 4, 8, 12 ou 24 (horas).|
-|scheduleImminentRestartWarningInMinutes|Int32|Especifique o período para notificações de aviso iminente da reinicialização automática. Suporte para valores: 15, 30 ou 60 (minutos).|
-|userPauseAccess|[habilitação] (.. /Resources/Intune-Shared-Enablement
-.MD)|Especifica se é habilitar o acesso do usuário final pausar atualizações de software. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
+|businessReadyUpdatesOnly|[windowsUpdateType](../resources/intune-deviceconfig-windowsupdatetype.md)|Determina quais dispositivos de filial receberão suas atualizações. Os possíveis valores são: `userDefined`, `all`, `businessReadyOnly`, `windowsInsiderBuildFast`, `windowsInsiderBuildSlow`, `windowsInsiderBuildRelease`.|
+|skipChecksBeforeRestart|Boolean|Definido como ignorar todas as verificação antes de reiniciar: nível da bateria = 40%, presença do usuário, exibição necessária, modo de apresentação, modo de tela cheia, estado de chamada telefônica, modo de jogo, etc. |
+|updateWeeks|[windowsUpdateForBusinessUpdateWeeks](../resources/intune-deviceconfig-windowsupdateforbusinessupdateweeks.md)|Agendou a instalação da atualização nas semanas do mês. Os possíveis valores são: `userDefined`, `firstWeek`, `secondWeek`, `thirdWeek`, `fourthWeek`, `everyWeek`.|
+|qualityUpdatesPauseStartDate|Data|Atualização de qualidade paUsar data de início. Esta propriedade é somente leitura.|
+|featureUpdatesPauseStartDate|Data|Atualização de recursos paUsar data de início. Esta propriedade é somente leitura.|
+|featureUpdatesRollbackWindowInDays|Int32|O número de dias após uma atualização de recurso para a qual uma reversão é válida|
+|qualityUpdatesWillBeRolledBack|Boolean|Especifica se é para reverter as atualizações de qualidade no próximo check-in de dispositivos|
+|featureUpdatesWillBeRolledBack|Boolean|Especifica se as atualizações de recursos devem ser revertidas no próximo check-in de dispositivos|
+|qualityUpdatesRollbackStartDateTime|DateTimeOffset|Data de início da reVersão de atualização de qualidade|
+|featureUpdatesRollbackStartDateTime|DateTimeOffset|Atualização de recursos data de início da reVersão|
+|engagedRestartDeadlineInDays|Int32|Prazo em dias antes de agendar automaticamente e executar uma reinicialização pendente fora do horário ativo, com intervalo válido de 2 a 30 dias|
+|engagedRestartSnoozeScheduleInDays|Int32|Número de dias durante os quais um usuário pode adiar notificações de lembrete de reInício envolvidos com um intervalo válido de 1 a 3 dias|
+|engagedRestartTransitionScheduleInDays|Int32|Número de dias antes da transição de reinícios automáticos agendados fora do horário ativo para o reinício envolvido, o que requer que o usuário agende, com o intervalo válido de 0 a 30 dias|
+|autoRestartNotificationDismissal|[autoRestartNotificationDismissalMethod](../resources/intune-deviceconfig-autorestartnotificationdismissalmethod.md)|Especifique o método pelo qual a notificação de reinício automático necessário é ignorada. Os valores possíveis são: `notConfigured`, `automatic`, `user`.|
+|scheduleRestartWarningInHours|Int32|Especifique o período para notificações de lembrete de aviso de reinício automático. Valores com suporte: 2, 4, 8, 12 ou 24 (horas).|
+|scheduleImminentRestartWarningInMinutes|Int32|Especifique o período para notificações de aviso iminentes de reinício automático. Valores com suporte: 15, 30 ou 60 (minutos).|
+|userPauseAccess|[habilitação](../resources/intune-shared-enablement.md)|Especifica se o acesso do usuário final deve ser habilitado para pausar as atualizações de software. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
 
 
 

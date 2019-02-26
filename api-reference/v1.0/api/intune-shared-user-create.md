@@ -4,27 +4,28 @@ description: Criar um novo objeto user.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 1b1789cbf0743384780147ce8c50f5472f9f2d64
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 95b01b4b00328c230d55b530cbdef2cb32dfe607
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27981501"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30250226"
 ---
 # <a name="create-user"></a>Criar usuário
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Criar um novo objeto [user](../resources/intune-shared-user.md).
+
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é necessário chamar essa API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).  A permissão específica necessária depende do contexto.
+Uma das seguintes permissões é necessária para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).  A permissão específica necessária depende do contexto.
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)| _varia de acordo com o contexto_ |
-| &nbsp;&nbsp; Gerenciamento de dispositivo | DeviceManagementManagedDevices.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante)| _varia por contexto_ |
+| &nbsp;&nbsp; Gerenciamento de dispositivos | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp;&nbsp; MAM | DeviceManagementApps.ReadWrite.All |
-| &nbsp;&nbsp; Onboarding | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; Integração | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; Solução de problemas | DeviceManagementManagedDevices.ReadWrite.All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
@@ -52,10 +53,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar user.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|Cadeia de caracteres|Identificador exclusivo do usuário.|
-|**Inclusão**|
+|**Integração**|
 |deviceEnrollmentLimit|Int32|O limite do número máximo de dispositivos que o usuário tem permissão para inscrever. Os valores permitidos vão de 5 a 1000.|
 
-Suporte de propriedade de corpo de solicitação varia de acordo com o contexto.
+O suporte à propriedade do corpo da solicitação varia de acordo com o contexto.
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um código de resposta `201 Created` e um objeto [user](../resources/intune-shared-user.md) no corpo da resposta.
@@ -76,7 +77,7 @@ Content-length: 46
 ```
 
 ### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Propriedades retornadas de uma chamada real variam de acordo com o contexto.
+Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. As propriedades retornadas de uma chamada real variam de acordo com o contexto.
 
 ``` http
 HTTP/1.1 201 Created

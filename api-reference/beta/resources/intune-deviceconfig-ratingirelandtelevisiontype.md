@@ -1,34 +1,34 @@
 ---
-title: tipo de enum ratingIrelandTelevisionType
+title: tipo de enumeração ratingIrelandTelevisionType
 description: Rótulos de classificação de conteúdo de TV na Irlanda
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8177ea18d5a8f840daf8f13c0493288fad342285
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: d186659ff2e67217c8d4c6f3b449925907822a11
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29394632"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172461"
 ---
-# <a name="ratingirelandtelevisiontype-enum-type"></a>tipo de enum ratingIrelandTelevisionType
+# <a name="ratingirelandtelevisiontype-enum-type"></a>tipo de enumeração ratingIrelandTelevisionType
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Rótulos de classificação de conteúdo de TV na Irlanda
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|allAllowed|0|Valor padrão, para permitir que todos os TV mostra conteúdo|
-|allBlocked|1|Não permitir que qualquer TV mostra conteúdo|
-|geral|2|A classificação de GA é adequada para todas as audiências|
-|children|3|A classificação CH é adequada para filhos|
-|youngAdults|4|A classificação YA é adequada para o público adolescente|
-|parentalSupervision|5|A classificação de PS convida pais e responsáveis a considerar o acesso dos filhos de restrição|
-|implementação avançada|6|A classificação MA é adequada para adultos|
+|Permitido|,0|Valor padrão, permitir todos os programas de TV|
+|Bloqueado|1|Não permitir que qualquer TV mostre conteúdo|
+|geral|duas|A classificação GA é adequada para todos os públicos|
+|children|3D|A classificação CH é adequada para crianças|
+|youngAdults|quatro|A classificação de YA é adequada para a audiência Teenage|
+|parentalSupervision|0,5|A classificação de PS convida os pais e os guardiões para considerar o acesso de crianças|
+|completa|6|A classificação MA é adequada para adultos|
 
 
 

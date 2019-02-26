@@ -1,21 +1,21 @@
 ---
-title: ação de updateDeviceProfileAssignment
+title: Ação updateDeviceProfileAssignment
 description: Ainda não documentado
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ca2cca2777a2043248257b26da10a6b191c6038e
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 03b49a02611508fa46c824bb98a8779c67cf934d
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29423311"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30173805"
 ---
-# <a name="updatedeviceprofileassignment-action"></a>ação de updateDeviceProfileAssignment
+# <a name="updatedeviceprofileassignment-action"></a>Ação updateDeviceProfileAssignment
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Ainda não documentado
 
@@ -50,7 +50,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|deviceIds|String collection|Ainda não documentado|
+|deviceIds|Coleção String|Ainda não documentado|
 
 
 

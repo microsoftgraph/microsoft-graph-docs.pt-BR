@@ -1,23 +1,23 @@
 ---
-title: tipo de recurso de unaryManagementConditionExpression
-description: Uma expressão de condição de gerenciamento que é avaliada usando uma operação unária.
-localization_priority: Normal
+title: tipo de recurso unaryManagementConditionExpression
+description: Uma expressão de condição de gerenciamento que é avaliada usando uma operação unário.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f1224a869ec2ec9cae2f38273f7a68b64d3d7333
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 9802cb8162973ecdaa387a29c70d1baa7aec4b8b
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29406777"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30164215"
 ---
-# <a name="unarymanagementconditionexpression-resource-type"></a>tipo de recurso de unaryManagementConditionExpression
+# <a name="unarymanagementconditionexpression-resource-type"></a>tipo de recurso unaryManagementConditionExpression
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Uma expressão de condição de gerenciamento que é avaliada usando uma operação unária.
+Uma expressão de condição de gerenciamento que é avaliada usando uma operação unário.
 
 
 Herda de [managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)
@@ -25,8 +25,8 @@ Herda de [managementConditionExpressionModel](../resources/intune-fencing-manage
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|operador|[unaryManagementConditionExpressionOperatorType](../resources/intune-fencing-unarymanagementconditionexpressionoperatortype.md)|O operador usado na avaliação da operação unário. Os valores possíveis são: `not`.|
-|operando|[managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)|O operando da operação unário.|
+|operador|[unaryManagementConditionExpressionOperatorType](../resources/intune-fencing-unarymanagementconditionexpressionoperatortype.md)|O operador usado na avaliação da operação unário. Os valores possíveis são `not`:.|
+|normaliza|[managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)|O operando da operação unário.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

@@ -1,23 +1,23 @@
 ---
-title: ação de syncWithAppleDeviceEnrollmentProgram
-description: Sincroniza entre Intune e o programa de inscrição do dispositivo Apple
-localization_priority: Normal
+title: Ação syncWithAppleDeviceEnrollmentProgram
+description: Sincroniza entre o programa de registro de dispositivo Apple e o Intune
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c7f556c74eaf5a186c1c275c2a0df7d80e23b088
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 3d18796ce3bec358be2d9af8be5f45f5b9e034f8
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29392791"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30173168"
 ---
-# <a name="syncwithappledeviceenrollmentprogram-action"></a>ação de syncWithAppleDeviceEnrollmentProgram
+# <a name="syncwithappledeviceenrollmentprogram-action"></a>Ação syncWithAppleDeviceEnrollmentProgram
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Sincroniza entre Intune e o programa de inscrição do dispositivo Apple
+Sincroniza entre o programa de registro de dispositivo Apple e o Intune
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).

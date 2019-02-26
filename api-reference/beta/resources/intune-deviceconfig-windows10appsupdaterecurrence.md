@@ -1,31 +1,31 @@
 ---
-title: tipo de enum windows10AppsUpdateRecurrence
-description: Os valores possíveis para o aplicativo atualizam nos Windows10 recorrência.
-localization_priority: Normal
+title: tipo de enumeração windows10AppsUpdateRecurrence
+description: Valores possíveis para atualização de aplicativos na recorrência do Windows10.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2bc9d6662b0b3198d22c9ffb297765ec88a002e8
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 932a374f7ec78eca46862f6f7693072b27ef5109
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399182"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172412"
 ---
-# <a name="windows10appsupdaterecurrence-enum-type"></a>tipo de enum windows10AppsUpdateRecurrence
+# <a name="windows10appsupdaterecurrence-enum-type"></a>tipo de enumeração windows10AppsUpdateRecurrence
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Os valores possíveis para o aplicativo atualizam nos Windows10 recorrência.
+Valores possíveis para atualização de aplicativos na recorrência do Windows10.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|none|0|Valor padrão, especifica uma única ocorrência.|
+|Nenhuma|,0|Valor padrão, especifica uma única ocorrência.|
 |diariamente|1|Diariamente.|
-|Semanalmente|2|Semanal.|
-|mensal|3|Mensalmente.|
+|mensal|duas|Mensal.|
+|mês|3D|Mês.|
 
 
 

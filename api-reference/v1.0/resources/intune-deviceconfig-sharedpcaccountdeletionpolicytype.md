@@ -1,27 +1,28 @@
 ---
-title: tipo de enum sharedPCAccountDeletionPolicyType
-description: Valores possíveis para quando as contas são excluídas em um PC compartilhado.
+title: tipo de enumeração sharedPCAccountDeletionPolicyType
+description: Valores possíveis para quando as contas são excluídas em um computador compartilhado.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 5dc216d20becdc233bd1664250a958aa7208f1c2
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 0c547a59c02e3c4cad9bd8140a2e11ca6e3c84a7
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937625"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30253229"
 ---
-# <a name="sharedpcaccountdeletionpolicytype-enum-type"></a>tipo de enum sharedPCAccountDeletionPolicyType
+# <a name="sharedpcaccountdeletionpolicytype-enum-type"></a>tipo de enumeração sharedPCAccountDeletionPolicyType
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Valores possíveis para quando as contas são excluídas em um PC compartilhado.
+Valores possíveis para quando as contas são excluídas em um computador compartilhado.
+
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|imediata|0|Exclua imediatamente.|
-|diskSpaceThreshold|1|Exclua cada limite de espaço em disco.|
-|diskSpaceThresholdOrInactiveThreshold|2|Exclua cada limite de espaço em disco ou o limite inativa.|
+|imediato|,0|Excluir imediatamente.|
+|diskSpaceThreshold|1|Excluir no limite de espaço em disco.|
+|diskSpaceThresholdOrInactiveThreshold|duas|Excluir no limite de espaço em disco ou limite inativo.|
 
 
 

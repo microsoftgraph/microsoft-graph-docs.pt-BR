@@ -1,28 +1,29 @@
 ---
-title: tipo de enum edgeCookiePolicy
-description: Os valores possíveis para especificar quais os cookies são permitidos em Microsoft Edge.
+title: tipo de enumeração edgeCookiePolicy
+description: Valores possíveis para especificar quais cookies são permitidos no Microsoft Edge.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: b9fcb0d338239976b8e52ab34015c9687cb39276
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: f11514978e187d87d9f8fae2990925ec8ea3f193
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27991808"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30251514"
 ---
-# <a name="edgecookiepolicy-enum-type"></a>tipo de enum edgeCookiePolicy
+# <a name="edgecookiepolicy-enum-type"></a>tipo de enumeração edgeCookiePolicy
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Os valores possíveis para especificar quais os cookies são permitidos em Microsoft Edge.
+Valores possíveis para especificar quais cookies são permitidos no Microsoft Edge.
+
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|userDefined|0|Permitir que o usuário pode definir.|
-|permitir|1|Permita.|
-|blockThirdParty|2|Bloquear somente cookies de terceiros.|
-|blockAll|3|Bloquear todos os cookies.|
+|userDefined|,0|Permite que o usuário defina.|
+|permitiu|1|Permitiu.|
+|blockThirdParty|duas|Bloquear somente cookies de terceiros.|
+|blockAll|3D|Bloquear todos os cookies.|
 
 
 

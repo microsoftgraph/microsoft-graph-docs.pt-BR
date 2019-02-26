@@ -3,30 +3,32 @@ title: Tipo de recurso iosMinimumOperatingSystem
 description: Contém as propriedades do sistema operacional mínimo obrigatório para um aplicativo móvel iOS.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: a80de09abe7e5fb513c95006f6b2c2fe719a4f39
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 7490ad7b27d55fa6f2b7c6de12083025e7b4ac93
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27925935"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30254566"
 ---
 # <a name="iosminimumoperatingsystem-resource-type"></a>Tipo de recurso iosMinimumOperatingSystem
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Contém as propriedades do sistema operacional mínimo obrigatório para um aplicativo móvel iOS.
+
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|v8_0|Booliano|Versão 8.0 ou posterior.|
-|v9_0|Booliano|Versão 9.0 ou posterior.|
-|v10_0|Booliano|Versão 10.0 ou posterior.|
+|v8_0|Boolean|Versão 8.0 ou posterior.|
+|v9_0|Boolean|Versão 9.0 ou posterior.|
+|v10_0|Boolean|Versão 10.0 ou posterior.|
 |v11_0|Booliano|Versão 11.0 ou posterior.|
-|v12_0|Booliano|Versão 12.0 ou posterior.|
+|v12_0|Boolean|Versão 12,0 ou posterior.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
+
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
 <!-- {

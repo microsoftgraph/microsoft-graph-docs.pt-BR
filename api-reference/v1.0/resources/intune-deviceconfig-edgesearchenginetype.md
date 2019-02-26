@@ -1,26 +1,27 @@
 ---
-title: tipo de enum edgeSearchEngineType
-description: Permite que admind IT definir um mecanismo de pesquisa padrão predefinido para dispositivos controlados pelo MDM
+title: tipo de enumeração edgeSearchEngineType
+description: Permite que ele seja definido como um mecanismo de pesquisa padrão predefinido para dispositivos controlados por MDM
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: c528479d0cb3a04e5ff4cddf082f22616fba2111
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: a9ce84430eeb483b1a97cacf5b3fb6897c72e80e
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27919922"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30253915"
 ---
-# <a name="edgesearchenginetype-enum-type"></a>tipo de enum edgeSearchEngineType
+# <a name="edgesearchenginetype-enum-type"></a>tipo de enumeração edgeSearchEngineType
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Permite que admind IT definir um mecanismo de pesquisa padrão predefinido para dispositivos controlados pelo MDM
+Permite que ele seja definido como um mecanismo de pesquisa padrão predefinido para dispositivos controlados por MDM
+
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|Padrão.|0|Usa as configurações de fábrica da borda para atribuir o mecanismo de pesquisa padrão conforme o mercado de usuário|
-|Bing|1|Define o Bing como o mecanismo de pesquisa padrão|
+|Padrão.|,0|Usa as configurações de fábrica da borda para atribuir o mecanismo de pesquisa padrão de acordo com o mercado de usuários|
+|Bing|1|Define Bing como o mecanismo de pesquisa padrão|
 
 
 

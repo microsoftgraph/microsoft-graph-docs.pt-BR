@@ -1,32 +1,32 @@
 ---
-title: tipo de enum windowsAppStartLayoutTileSize
-description: O tamanho de blocos de aplicativo do Windows no layout iniciar.
-localization_priority: Normal
+title: tipo de enumeração windowsAppStartLayoutTileSize
+description: O tamanho do bloco do aplicativo do Windows no layout de início.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f5347108df2d6a1716729011b30927fce5c68327
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: fdb4f09d8e9cec666c1b89aabe987891e093500c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29416213"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30173938"
 ---
-# <a name="windowsappstartlayouttilesize-enum-type"></a>tipo de enum windowsAppStartLayoutTileSize
+# <a name="windowsappstartlayouttilesize-enum-type"></a>tipo de enumeração windowsAppStartLayoutTileSize
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-O tamanho de blocos de aplicativo do Windows no layout iniciar.
+O tamanho do bloco do aplicativo do Windows no layout de início.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|hidden|0|Oculto.|
-|small|1|Pequeno 1x1.|
-|medium|2|Médio 2x2.|
-|ampla|3|2 x ampla 4.|
-|large|4|Grande 4 x 4.|
+|hidden|,0|Oculta.|
+|small|1|1x1 pequeno.|
+|medium|duas|2x2 médio.|
+|várias|3D|Wide 4x2.|
+|large|quatro|4x4 grande.|
 
 
 

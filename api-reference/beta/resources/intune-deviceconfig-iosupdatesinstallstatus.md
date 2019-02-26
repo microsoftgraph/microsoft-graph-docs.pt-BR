@@ -1,38 +1,38 @@
 ---
-title: tipo de enum iosUpdatesInstallStatus
+title: tipo de enumeração iosUpdatesInstallStatus
 description: Ainda não documentado
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1ae8e2503808009e0266a16431709b3eb0674bc0
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 7b4fdd0e857976d6e9721c3f50e9af6f7960454c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29398426"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30173056"
 ---
-# <a name="iosupdatesinstallstatus-enum-type"></a>tipo de enum iosUpdatesInstallStatus
+# <a name="iosupdatesinstallstatus-enum-type"></a>tipo de enumeração iosUpdatesInstallStatus
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Ainda não documentado
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|sucesso|0|Ainda não documentado|
+|sucesso|,0|Ainda não documentado|
 |disponível|1|Ainda não documentado|
-|ocioso|2|Ainda não documentado|
-|unknown|3|Ainda não documentado|
-|Baixando|-2016330712|Ainda não documentado|
+|Estado|duas|Ainda não documentado|
+|unknown|3D|Ainda não documentado|
+|Baixe|-2016330712|Ainda não documentado|
 |downloadFailed|-2016330711|Ainda não documentado|
 |downloadRequiresComputer|-2016330710|Ainda não documentado|
 |downloadInsufficientSpace|-2016330709|Ainda não documentado|
 |downloadInsufficientPower|-2016330708|Ainda não documentado|
 |downloadInsufficientNetwork|-2016330707|Ainda não documentado|
-|Instalando|-2016330706|Ainda não documentado|
+|instalado|-2016330706|Ainda não documentado|
 |installInsufficientSpace|-2016330705|Ainda não documentado|
 |installInsufficientPower|-2016330704|Ainda não documentado|
 |installPhoneCallInProgress|-2016330703|Ainda não documentado|

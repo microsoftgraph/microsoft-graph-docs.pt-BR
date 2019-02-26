@@ -1,28 +1,29 @@
 ---
-title: tipo de enum managedAppDataEncryptionType
-description: Representa o nível ao qual os dados de aplicativo são criptografados para aplicativos gerenciados
+title: tipo de enumeração managedAppDataEncryptionType
+description: Representa o nível ao qual os dados do aplicativo são criptografados para aplicativos gerenciados
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 08ac7a36e142a1d19dbaaeb0263ef095072a9e01
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 774312d5f19b223fd33e2c156610f516ae7f48a3
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27956812"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30256767"
 ---
-# <a name="managedappdataencryptiontype-enum-type"></a>tipo de enum managedAppDataEncryptionType
+# <a name="managedappdataencryptiontype-enum-type"></a>tipo de enumeração managedAppDataEncryptionType
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Representa o nível ao qual os dados de aplicativo são criptografados para aplicativos gerenciados
+Representa o nível ao qual os dados do aplicativo são criptografados para aplicativos gerenciados
+
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|useDeviceSettings|0|Dados de aplicativo são criptografados com base nas configurações padrão no dispositivo.|
-|afterDeviceRestart|1|Dados de aplicativo são criptografados quando o dispositivo for reiniciado.|
-|whenDeviceLockedExceptOpenFiles|2|Dados de aplicativo associados a essa política são criptografados quando o dispositivo é bloqueado, exceto os dados em arquivos que estão abertos|
-|whenDeviceLocked|3|Dados de aplicativo associados a essa política são criptografados quando o dispositivo está bloqueado|
+|useDeviceSettings|,0|Os dados do aplicativo são criptografados com base nas configurações padrão do dispositivo.|
+|afterDeviceRestart|1|Os dados do aplicativo são criptografados quando o dispositivo é reiniciado.|
+|whenDeviceLockedExceptOpenFiles|duas|Os dados de aplicativo associados a essa política são criptografados quando o dispositivo é bloqueado, exceto dados em arquivos que estão abertos|
+|whenDeviceLocked|3D|Os dados de aplicativo associados a essa política são criptografados quando o dispositivo é bloqueado|
 
 
 

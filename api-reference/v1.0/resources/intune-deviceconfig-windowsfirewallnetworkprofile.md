@@ -3,37 +3,39 @@ title: Tipo de recurso windowsFirewallNetworkProfile
 description: Políticas de perfil do firewall do Windows.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: e30f01031d46babf066b6778edf7801de7eac46c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 3e52555d8ac9b010028ee3bc716255db8a563e73
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917955"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30250954"
 ---
 # <a name="windowsfirewallnetworkprofile-resource-type"></a>Tipo de recurso windowsFirewallNetworkProfile
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Políticas de perfil do firewall do Windows.
+
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|firewallEnabled|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|Configura o dispositivo de host para permitir ou bloquear o firewall e imposição de segurança avançada para o perfil de rede. Os valores possíveis são: `notConfigured`, `blocked`, `allowed`.|
-|stealthModeBlocked|Booliano|Impedir que o servidor operando em modo oculto. Quando StealthModeRequired e StealthModeBlocked são ambos true, StealthModeBlocked tem prioridade.|
-|incomingTrafficBlocked|Booliano|Configura o firewall para bloquear todo o tráfego de entrada independentemente das outras configurações de política. Quando IncomingTrafficRequired e IncomingTrafficBlocked são ambos true, IncomingTrafficBlocked tem prioridade.|
-|unicastResponsesToMulticastBroadcastsBlocked|Booliano|Configura o firewall para bloquear respostas de unicast para tráfego de transmissão multicast. Quando UnicastResponsesToMulticastBroadcastsRequired e UnicastResponsesToMulticastBroadcastsBlocked são ambos true, UnicastResponsesToMulticastBroadcastsBlocked tem prioridade.|
-|inboundNotificationsBlocked|Booliano|Impede que o firewall exiba notificações quando um aplicativo é impedido de escutando em uma porta. Quando InboundNotificationsRequired e InboundNotificationsBlocked são ambos true, InboundNotificationsBlocked tem prioridade.|
-|authorizedApplicationRulesFromGroupPolicyMerged|Booliano|Configura o firewall para mesclar as regras de aplicativo autorizado da política de grupo com as de armazenamento local, em vez de ignorando as regras de armazenamento local. Quando AuthorizedApplicationRulesFromGroupPolicyNotMerged e AuthorizedApplicationRulesFromGroupPolicyMerged são ambos true, AuthorizedApplicationRulesFromGroupPolicyMerged tem prioridade.|
-|globalPortRulesFromGroupPolicyMerged|Booliano|Configura o firewall para mesclar as regras de porta global da política de grupo com as de armazenamento local, em vez de ignorando as regras de armazenamento local. Quando GlobalPortRulesFromGroupPolicyNotMerged e GlobalPortRulesFromGroupPolicyMerged são ambos true, GlobalPortRulesFromGroupPolicyMerged tem prioridade.|
-|connectionSecurityRulesFromGroupPolicyMerged|Booliano|Configura o firewall para mesclar as regras de segurança de conexão da política de grupo com as de armazenamento local, em vez de ignorando as regras de armazenamento local. Quando ConnectionSecurityRulesFromGroupPolicyNotMerged e ConnectionSecurityRulesFromGroupPolicyMerged são ambos true, ConnectionSecurityRulesFromGroupPolicyMerged tem prioridade.|
-|outboundConnectionsBlocked|Booliano|Configura o firewall para bloquear todas as conexões de saída por padrão. Quando OutboundConnectionsRequired e OutboundConnectionsBlocked são ambos true, OutboundConnectionsBlocked tem prioridade.|
-|inboundConnectionsBlocked|Booliano|Configura o firewall para bloquear todas as conexões de entrada por padrão. Quando InboundConnectionsRequired e InboundConnectionsBlocked são ambos true, InboundConnectionsBlocked tem prioridade.|
-|securedPacketExemptionAllowed|Booliano|Configura o firewall para permitir que o computador host responder ao tráfego de rede não solicitadas de que o tráfego é protegido pelo IPSec mesmo quando stealthModeBlocked está definida como true. Quando SecuredPacketExemptionBlocked e SecuredPacketExemptionAllowed são ambos true, SecuredPacketExemptionAllowed tem prioridade.|
-|policyRulesFromGroupPolicyMerged|Booliano|Configura o firewall para mesclar as políticas de regra de Firewall da política de grupo com as de armazenamento local, em vez de ignorando as regras de armazenamento local. Quando PolicyRulesFromGroupPolicyNotMerged e PolicyRulesFromGroupPolicyMerged são ambos true, PolicyRulesFromGroupPolicyMerged tem prioridade.|
+|firewallEnabled|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|Configura o dispositivo host para permitir ou bloquear o firewall e a imposição de segurança avançada para o perfil de rede. Os valores possíveis são: `notConfigured`, `blocked`, `allowed`.|
+|stealthModeBlocked|Boolean|Impedir que o servidor opere em modo oculto. Quando StealthModeRequired e StealthModeBlocked são true, StealthModeBlocked tem prioridade.|
+|incomingTrafficBlocked|Boolean|Configura o firewall para bloquear todo o tráfego de entrada independentemente de outras configurações de política. Quando IncomingTrafficRequired e IncomingTrafficBlocked são true, IncomingTrafficBlocked tem prioridade.|
+|unicastResponsesToMulticastBroadcastsBlocked|Boolean|Configura o firewall para bloquear respostas unicast para tráfego de difusão seletiva. Quando UnicastResponsesToMulticastBroadcastsRequired e UnicastResponsesToMulticastBroadcastsBlocked são true, UnicastResponsesToMulticastBroadcastsBlocked tem prioridade.|
+|inboundNotificationsBlocked|Boolean|Impede que o firewall exiba notificações quando um aplicativo é bloqueado de escutar em uma porta. Quando InboundNotificationsRequired e InboundNotificationsBlocked são true, InboundNotificationsBlocked tem prioridade.|
+|authorizedApplicationRulesFromGroupPolicyMerged|Boolean|Configura o firewall para mesclar regras de aplicativo autorizadas da política de grupo com as do armazenamento local, em vez de ignorar as regras de repositório local. Quando AuthorizedApplicationRulesFromGroupPolicyNotMerged e AuthorizedApplicationRulesFromGroupPolicyMerged são true, AuthorizedApplicationRulesFromGroupPolicyMerged tem prioridade.|
+|globalPortRulesFromGroupPolicyMerged|Boolean|Configura o firewall para mesclar regras de porta globais da política de grupo com as do armazenamento local, em vez de ignorar as regras de repositório local. Quando GlobalPortRulesFromGroupPolicyNotMerged e GlobalPortRulesFromGroupPolicyMerged são true, GlobalPortRulesFromGroupPolicyMerged tem prioridade.|
+|connectionSecurityRulesFromGroupPolicyMerged|Boolean|Configura o firewall para mesclar regras de segurança de conexão da política de grupo com as do armazenamento local, em vez de ignorar as regras de repositório local. Quando ConnectionSecurityRulesFromGroupPolicyNotMerged e ConnectionSecurityRulesFromGroupPolicyMerged são true, ConnectionSecurityRulesFromGroupPolicyMerged tem prioridade.|
+|outboundConnectionsBlocked|Boolean|Configura o firewall para bloquear todas as conexões de saída por padrão. Quando OutboundConnectionsRequired e OutboundConnectionsBlocked são true, OutboundConnectionsBlocked tem prioridade.|
+|inboundConnectionsBlocked|Boolean|Configura o firewall para bloquear todas as conexões de entrada por padrão. Quando InboundConnectionsRequired e InboundConnectionsBlocked são true, InboundConnectionsBlocked tem prioridade.|
+|securedPacketExemptionAllowed|Boolean|Configura o firewall para permitir que o computador host responda ao tráfego de rede não solicitado desse tráfego é protegido por IPSec, mesmo quando stealthModeBlocked está definido como true. Quando SecuredPacketExemptionBlocked e SecuredPacketExemptionAllowed são true, SecuredPacketExemptionAllowed tem prioridade.|
+|policyRulesFromGroupPolicyMerged|Booliano|Configura o firewall para mesclar políticas de regras de firewall da política de grupo com as do armazenamento local, em vez de ignorar as regras de repositório local. Quando PolicyRulesFromGroupPolicyNotMerged e PolicyRulesFromGroupPolicyMerged são true, PolicyRulesFromGroupPolicyMerged tem prioridade.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
+
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
 <!-- {

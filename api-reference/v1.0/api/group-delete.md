@@ -1,20 +1,24 @@
 ---
-title: Excluir grupo
-description: Excluir o grupo.
+title: Excluir grupo-API do Microsoft Graph
+description: Descreve o método Delete do recurso de grupo (entidade) da API do Microsoft Graph (REST).
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 65fd34fe01a2543389356e86334e986332210b08
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 1e252ddfddfcd82bcd3f790c75b34f016f54c9fb
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27968607"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30251192"
 ---
 # <a name="delete-group"></a>Excluir grupo
-Excluir o grupo.
+
+Excluir o grupo.  
+
+Quando excluídos, os grupos do Office 365 são movidos para um contêiner temporário e podem ser restaurados dentro de 30 dias.  Após esse tempo, elas serão excluídas permanentemente.  Para saber mais, confira [deletedItems](../resources/directory.md).  Isso se aplica apenas aos grupos do Office 365.
 
 ## <a name="permissions"></a>Permissões
+
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -24,24 +28,30 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Aplicativo | Group.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
+
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /groups/{id}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
+
 | Nome       | Tipo | Descrição|
 |:---------------|:--------|:----------|
 | Autorização  | string  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
+
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
+
 Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-#### <a name="request"></a>Solicitação
+
+### <a name="request"></a>Solicitação
+
 Este é um exemplo de solicitação.
 <!-- {
   "blockType": "request",
@@ -51,7 +61,8 @@ Este é um exemplo de solicitação.
 DELETE https://graph.microsoft.com/v1.0/groups/{id}
 ```
 
-#### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
+
 Este é um exemplo de resposta. 
 <!-- {
   "blockType": "response",

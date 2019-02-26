@@ -3,37 +3,39 @@ title: tipo de recurso deviceConfigurationSettingState
 description: Estado da definição de configuração de um determinado dispositivo.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 68c57b8842136494bf0604a31f62992f7a1c2501
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: d79d4c35572c98c82f80f8903d42cfa3b983c2e9
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27928007"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30252900"
 ---
 # <a name="deviceconfigurationsettingstate-resource-type"></a>tipo de recurso deviceConfigurationSettingState
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Estado da definição de configuração de um determinado dispositivo.
+
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|configuração|Cadeia de caracteres|A configuração que está sendo relatada|
-|settingName|Cadeia de caracteres|Nome traduzido/amigável para o usuário da configuração que está sendo relatada|
-|instanceDisplayName|Cadeia de caracteres|Nome da instância de configuração está sendo relatada.|
-|estado|[complianceStatus](../resources/intune-shared-compliancestatus.md)|O estado de conformidade da configuração. Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
+|configuração|String|A configuração que está sendo relatada|
+|settingName|String|Nome traduzido/amigável para o usuário da configuração que está sendo relatada|
+|instanceDisplayName|String|Nome da instância de configuração está sendo relatada.|
+|state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|O estado de conformidade da configuração. Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |errorCode|Int64|Código de erro da configuração|
-|errorDescription|Cadeia de caracteres|Descrição do erro|
-|userId|Cadeia de caracteres|UserId|
-|userName|Cadeia de caracteres|UserName|
-|userEmail|Cadeia de caracteres|UserEmail|
-|userPrincipalName|Cadeia de caracteres|UserPrincipalName.|
+|errorDescription|String|Descrição do erro|
+|userId|String|UserId|
+|userName|String|UserName|
+|userEmail|String|UserEmail|
+|userPrincipalName|String|UserPrincipalName.|
 |sources|Coleção [settingSource](../resources/intune-deviceconfig-settingsource.md)|Políticas colaboradoras|
 |currentValue|Cadeia de caracteres|Valor atual da configuração no dispositivo|
 
 ## <a name="relationships"></a>Relações
 Nenhum
+
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
 <!-- {

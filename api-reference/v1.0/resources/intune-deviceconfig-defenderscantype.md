@@ -1,28 +1,29 @@
 ---
-title: tipo de enum defenderScanType
-description: Os valores possíveis para o sistema examina a pasta tipo.
+title: tipo de enumeração defenderScanType
+description: Valores possíveis para o tipo de verificação do sistema.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: f34dde568482bae643dc3ad13f926429a6e210c4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 52d1002c7a242f0aca203d84c4d7d16763e5debd
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27975418"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30254300"
 ---
-# <a name="defenderscantype-enum-type"></a>tipo de enum defenderScanType
+# <a name="defenderscantype-enum-type"></a>tipo de enumeração defenderScanType
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Os valores possíveis para o sistema examina a pasta tipo.
+Valores possíveis para o tipo de verificação do sistema.
+
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|userDefined|0|Definido pelo usuário, valor padrão, sem intenção.|
-|desabilitado|1|Verificação de sistema desabilitada.|
-|rápida|2|Verificação rápida do sistema.|
-|completo|3|Verificação completa do sistema.|
+|userDefined|,0|Definido pelo usuário, valor padrão, sem intenção.|
+|deficiência|1|Verificação de sistema desabilitada.|
+|agiliza|duas|Verificação rápida do sistema.|
+|cheia|3D|Verificação completa do sistema.|
 
 
 

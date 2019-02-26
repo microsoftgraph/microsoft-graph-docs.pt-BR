@@ -1,23 +1,23 @@
 ---
-title: ação de setDeviceName
-description: Definir o nome do dispositivo do dispositivo.
-localization_priority: Normal
+title: Ação setDeviceName
+description: Defina o nome do dispositivo.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a73ec88c96b80fd6d8a2cd6843cacf0ff81807bd
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: ebfb37ecd2996cb7ae0fb104dd2291aa4e05fd95
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29411852"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30173511"
 ---
-# <a name="setdevicename-action"></a>ação de setDeviceName
+# <a name="setdevicename-action"></a>Ação setDeviceName
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Definir o nome do dispositivo do dispositivo.
+Defina o nome do dispositivo.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).

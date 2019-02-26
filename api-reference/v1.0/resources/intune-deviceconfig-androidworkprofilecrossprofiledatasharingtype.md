@@ -1,28 +1,29 @@
 ---
-title: tipo de enum androidWorkProfileCrossProfileDataSharingType
-description: Perfil de trabalho Android cruzar o compartilhamento de tipo de dados de perfil.
+title: tipo de enumeração androidWorkProfileCrossProfileDataSharingType
+description: Tipo de compartilhamento de dados entre perfis de perfil de trabalho do Android.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 7aa701f2e19ae008b0306d1d3c52fdcf53cbf33c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: ddfcfc6926005dff2f9befa400e5352d58f92b3b
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27967270"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30253012"
 ---
-# <a name="androidworkprofilecrossprofiledatasharingtype-enum-type"></a>tipo de enum androidWorkProfileCrossProfileDataSharingType
+# <a name="androidworkprofilecrossprofiledatasharingtype-enum-type"></a>tipo de enumeração androidWorkProfileCrossProfileDataSharingType
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Perfil de trabalho Android cruzar o compartilhamento de tipo de dados de perfil.
+Tipo de compartilhamento de dados entre perfis de perfil de trabalho do Android.
+
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|deviceDefault|0|Valor de padrão de dispositivo, sem intenção.|
-|preventAny|1|Impedir que qualquer compartilhamento.|
-|allowPersonalToWork|2|Permitir que a solicitação de perfil pessoal para trabalhar de perfil de compartilhamento de dados.|
-|noRestrictions|3|Sem restrições de compartilhamento.|
+|deviceDefault|,0|Valor padrão do dispositivo, sem intenção.|
+|preventAny|1|Impedir qualquer compartilhamento.|
+|allowPersonalToWork|duas|Permitir solicitação de compartilhamento de dados do perfil pessoal para o perfil de trabalho.|
+|noRestrictions|3D|Sem restrições no compartilhamento.|
 
 
 

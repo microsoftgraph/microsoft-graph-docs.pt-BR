@@ -1,27 +1,28 @@
 ---
-title: tipo de enum appListType
-description: Possíveis valores da lista de aplicativos de conformidade.
+title: tipo de enumeração appListType
+description: Valores possíveis da lista de aplicativos de conformidade.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: f1439ab860ab6a1fbf9ff4deb30320bb57fba338
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 379ec2e10e68d62353875cd2b49c0944fe11f4da
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27967235"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30254321"
 ---
-# <a name="applisttype-enum-type"></a>tipo de enum appListType
+# <a name="applisttype-enum-type"></a>tipo de enumeração appListType
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Possíveis valores da lista de aplicativos de conformidade.
+Valores possíveis da lista de aplicativos de conformidade.
+
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhum|0|Valor padrão, sem intenção.|
-|appsInListCompliant|1|A lista representa os aplicativos que serão considerados compatível com (somente aplicativos na lista são compatíveis com).|
-|appsNotInListCompliant|2|A lista representa os aplicativos que serão considerados não compatível com (todos os aplicativos são compatíveis, exceto os aplicativos na lista).|
+|Nenhuma|,0|Valor padrão, sem intenção.|
+|appsInListCompliant|1|A lista representa os aplicativos que serão considerados compatíveis (apenas os aplicativos na lista são compatíveis).|
+|appsNotInListCompliant|duas|A lista representa os aplicativos que serão considerados não compatíveis (todos os aplicativos são compatíveis, exceto os aplicativos na lista).|
 
 
 

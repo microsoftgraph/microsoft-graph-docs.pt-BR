@@ -1,37 +1,37 @@
 ---
 title: Tipo de recurso deviceCompliancePolicySettingState
 description: Estado da configuração da política de conformidade de dispositivo para um determinado dispositivo.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b17930161f66ca83d59e3f2f62777a79f82b79f0
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e0b98cc4809fb72bb7caf5fe55fe6e912fd00f9b
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425733"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30171495"
 ---
 # <a name="devicecompliancepolicysettingstate-resource-type"></a>Tipo de recurso deviceCompliancePolicySettingState
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Estado da configuração da política de conformidade de dispositivo para um determinado dispositivo.
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|configuração|Cadeia de caracteres|A configuração que está sendo relatada|
-|settingName|Cadeia de caracteres|Nome traduzido/amigável para o usuário da configuração que está sendo relatada|
-|instanceDisplayName|Cadeia de caracteres|Nome da instância de configuração está sendo relatada.|
-|estado|[complianceStatus](../resources/intune-shared-compliancestatus.md)|O estado de conformidade da configuração. Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
+|configuração|String|A configuração que está sendo relatada|
+|settingName|String|Nome traduzido/amigável para o usuário da configuração que está sendo relatada|
+|instanceDisplayName|String|Nome da instância de configuração está sendo relatada.|
+|state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|O estado de conformidade da configuração. Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |errorCode|Int64|Código de erro da configuração|
-|errorDescription|Cadeia de caracteres|Descrição do erro|
-|userId|Cadeia de caracteres|UserId|
-|userName|Cadeia de caracteres|UserName|
-|userEmail|Cadeia de caracteres|UserEmail|
-|userPrincipalName|Cadeia de caracteres|UserPrincipalName.|
+|errorDescription|String|Descrição do erro|
+|userId|String|UserId|
+|userName|String|UserName|
+|userEmail|String|UserEmail|
+|userPrincipalName|String|UserPrincipalName.|
 |sources|Coleção [settingSource](../resources/intune-deviceconfig-settingsource.md)|Políticas colaboradoras|
 |currentValue|Cadeia de caracteres|Valor atual da configuração no dispositivo|
 

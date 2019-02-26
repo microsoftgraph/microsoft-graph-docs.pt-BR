@@ -1,23 +1,23 @@
 ---
 title: Criar depOnboardingSetting
-description: Crie um novo objeto de depOnboardingSetting.
-localization_priority: Normal
+description: Criar um novo objeto depOnboardingSetting.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6aa17e5741df007d7ee449a4ab305be37807051d
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 2d32f988763de3134d5be0e9b13db0f524d82a37
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29409815"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30164383"
 ---
 # <a name="create-deponboardingsetting"></a>Criar depOnboardingSetting
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Crie um novo objeto de [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) .
+Criar um novo objeto [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
@@ -44,29 +44,30 @@ POST /deviceManagement/depOnboardingSettings
 |Aceitar|application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON para o objeto depOnboardingSetting.
+No corpo da solicitação, forneça uma representação JSON do objeto depOnboardingSetting.
 
-A tabela a seguir mostra as propriedades que são necessárias quando você cria o depOnboardingSetting.
+A tabela a seguir mostra as propriedades que são necessárias ao criar depOnboardingSetting.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O UUID do objeto.|
-|appleIdentifier|Cadeia de caracteres|A ID do Apple usada para obter o token atual.|
-|tokenExpirationDateTime|DateTimeOffset|Quando o token irá expirar.|
-|lastModifiedDateTime|DateTimeOffset|Quando o serviço foi onboarded.|
-|lastSuccessfulSyncDateTime|DateTimeOffset|Quando o syned última do serviço com Intune|
-|lastSyncTriggeredDateTime|DateTimeOffset|Quando o Intune solicitado último uma sincronização.|
-|shareTokenWithSchoolDataSyncService|Boolean|Ou não o compartilhamento token do Dep está habilitado com o serviço de sincronização de dados da escola.|
-|lastSyncErrorCode|Int32|Código de erro relatado pelo Apple durante a última sincronização dep.|
-|tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|Obtém ou define o tipo de Token do Dep. Os valores possíveis são: `none`, `dep`, `appleSchoolManager`.|
-|tokenName|String|Nome amigável para o Token de Dep|
-|syncedDeviceCount|Int32|Obtém sincronizados contagem de dispositivo|
-|dataSharingConsentGranted|Boolean|Concedido consentimento para o compartilhamento de dados com Apple Dep Service|
+|id|String|O UUID do objeto.|
+|appleIdentifier|Cadeia de caracteres|A ID da Apple usada para obter o token atual.|
+|tokenExpirationDateTime|DateTimeOffset|Quando o token expirará.|
+|lastModifiedDateTime|DateTimeOffset|Quando o serviço foi integrado.|
+|lastSuccessfulSyncDateTime|DateTimeOffset|Quando o serviço última syned com o Intune|
+|lastSyncTriggeredDateTime|DateTimeOffset|Quando o Intune solicitou uma sincronização pela última vez.|
+|shareTokenWithSchoolDataSyncService|Boolean|Se o compartilhamento de token DEP está ou não habilitado com o serviço de sincronização de dados da escola.|
+|lastSyncErrorCode|Int32|Código de erro relatado pela Apple durante a última sincronização de Dep.|
+|TokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|Obtém ou define o tipo de token Dep. Os valores possíveis são: `none`, `dep`, `appleSchoolManager`.|
+|tokenname|String|Nome amigável para token Dep|
+|syncedDeviceCount|Int32|Obtém a contagem de dispositivos sincronizados|
+|dataSharingConsentGranted|Boolean|Consentimento concedido para compartilhamento de dados com o serviço Apple Dep|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade.|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -75,7 +76,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings
 Content-type: application/json
-Content-length: 514
+Content-length: 576
 
 {
   "@odata.type": "#microsoft.graph.depOnboardingSetting",
@@ -88,7 +89,10 @@ Content-length: 514
   "tokenType": "dep",
   "tokenName": "Token Name value",
   "syncedDeviceCount": 1,
-  "dataSharingConsentGranted": true
+  "dataSharingConsentGranted": true,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
 
@@ -97,7 +101,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 627
+Content-Length: 689
 
 {
   "@odata.type": "#microsoft.graph.depOnboardingSetting",
@@ -112,7 +116,10 @@ Content-Length: 627
   "tokenType": "dep",
   "tokenName": "Token Name value",
   "syncedDeviceCount": 1,
-  "dataSharingConsentGranted": true
+  "dataSharingConsentGranted": true,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
 

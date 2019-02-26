@@ -1,29 +1,30 @@
 ---
-title: tipo de enum firewallPacketQueueingMethodType
+title: tipo de enumeração firewallPacketQueueingMethodType
 description: Valores possíveis para firewallPacketQueueingMethod
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 3700df6d2eaf0dd0d2dde8a3f4a90be2e3684951
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: cdd9dc0279abc332bbf7b686f7f429fbd8db8883
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27940096"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30258923"
 ---
-# <a name="firewallpacketqueueingmethodtype-enum-type"></a>tipo de enum firewallPacketQueueingMethodType
+# <a name="firewallpacketqueueingmethodtype-enum-type"></a>tipo de enumeração firewallPacketQueueingMethodType
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Valores possíveis para firewallPacketQueueingMethod
+
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|deviceDefault|0|Nenhum valor configurado por Intune, não substituir o valor padrão de dispositivo configurada pelo usuário|
-|desabilitado|1|Desabilitar o serviço de enfileiramento de pacotes|
-|queueInbound|2|Os pacotes criptografados entrados de fila|
-|queueOutbound|3|Fila descriptografados para encaminhamento de pacotes de saída|
-|queueBoth|4|Pacotes de entrada e saídos da fila|
+|deviceDefault|,0|Nenhum valor configurado pelo Intune, não substitua o valor padrão do dispositivo configurado pelo usuário|
+|deficiência|1|Desabilitar enfileiramento de pacotes|
+|queueInbound|duas|EnFileirar pacotes criptografados de entrada|
+|queueOutbound|3D|Pacotes de saída de fila descriptografados para encaminhamento|
+|queueBoth|quatro|EnFileiramento de pacotes de entrada e de saída|
 
 
 

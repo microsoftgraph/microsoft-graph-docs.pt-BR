@@ -1,29 +1,29 @@
 ---
-title: tipo de recurso de deviceManagementUserRightsSetting
-description: Representa uma definição de direitos de usuário.
-localization_priority: Normal
+title: tipo de recurso deviceManagementUserRightsSetting
+description: Representa uma configuração de direitos de usuário.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 35e6ec1a5faa5556a0e113df145d718c488b1669
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: f8fd9d2217fd39c4d2dc8e9db28cb5b5dcd0a1e6
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415051"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172181"
 ---
-# <a name="devicemanagementuserrightssetting-resource-type"></a>tipo de recurso de deviceManagementUserRightsSetting
+# <a name="devicemanagementuserrightssetting-resource-type"></a>tipo de recurso deviceManagementUserRightsSetting
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Representa uma definição de direitos de usuário.
+Representa uma configuração de direitos de usuário.
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|state|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|Configuração de direitos que representa o estado atual deste usuário. Os valores possíveis são: `notConfigured`, `blocked`, `allowed`.|
-|localUsersOrGroups|coleção [deviceManagementUserRightsLocalUserOrGroup](../resources/intune-deviceconfig-devicemanagementuserrightslocaluserorgroup.md)|Que representa uma coleção de usuários ou grupos que serão definidos no dispositivo se o estado dessa configuração é permitido locais. Esta coleção pode conter um máximo de 500 elementos.|
+|state|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|Representando o estado atual desta configuração de direitos do usuário. Os valores possíveis são: `notConfigured`, `blocked`, `allowed`.|
+|localUsersOrGroups|coleção [deviceManagementUserRightsLocalUserOrGroup](../resources/intune-deviceconfig-devicemanagementuserrightslocaluserorgroup.md)|Representar uma coleção de usuários ou grupos locais que serão definidos no dispositivo se o estado dessa configuração for permitido. Esta coleção pode conter um máximo de 500 elementos.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

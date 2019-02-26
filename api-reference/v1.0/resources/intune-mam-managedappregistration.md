@@ -1,22 +1,23 @@
 ---
 title: Tipo de recurso managedAppRegistration
-description: O ManagedAppEntity é o tipo de entidade de base para todos os outros tipos de entidades em um fluxo de trabalho de gerenciamento de aplicativos.
+description: O ManagedAppEntity é o tipo de entidade de base para todos os outros tipos de entidades em um fluxo de trabalho de gerenciamento de aplicativos. O recurso ManagedAppRegistration representa os detalhes de um aplicativo, com capacidade de gerenciamento, usado por um membro da organização.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 8a954c3465ba4bb4d2f7372ee544a00fcd8c2af7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: fc4754a190f19dab34ac417d2852ccc9e06ba9f4
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937086"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30252235"
 ---
 # <a name="managedappregistration-resource-type"></a>Tipo de recurso managedAppRegistration
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 O ManagedAppEntity é o tipo de entidade de base para todos os outros tipos de entidades em um fluxo de trabalho de gerenciamento de aplicativos.
 O recurso ManagedAppRegistration representa os detalhes de um aplicativo, com capacidade de gerenciamento, usado por um membro da organização.
+
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
@@ -29,11 +30,11 @@ O recurso ManagedAppRegistration representa os detalhes de um aplicativo, com ca
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|Data e hora de criação|
 |lastSyncDateTime|DateTimeOffset|Data e hora em que o último aplicativo foi sincronizado com o serviço de gerenciamento.|
-|applicationVersion|Cadeia de caracteres|Versão do Aplicativo|
-|managementSdkVersion|Cadeia de caracteres|Versão do SDK de gerenciamento do aplicativo|
-|platformVersion|Cadeia de caracteres|Versão do sistema operacional|
-|deviceType|Cadeia de caracteres|Tipo de dispositivo do host|
-|deviceTag|String|Uma tag gerada pelo SDK de gerenciamento, que ajuda a relacionar aplicativos hospedados no mesmo dispositivo. Sem garantia de indicar aplicativos em todas as condições.|
+|applicationVersion|String|Versão do Aplicativo|
+|managementSdkVersion|String|Versão do SDK de gerenciamento do aplicativo|
+|platformVersion|String|Versão do sistema operacional|
+|deviceType|String|Tipo de dispositivo do host|
+|deviceTag|Cadeia de caracteres|Uma tag gerada pelo SDK de gerenciamento, que ajuda a relacionar aplicativos hospedados no mesmo dispositivo. Sem garantia de indicar aplicativos em todas as condições.|
 |deviceName|Cadeia de caracteres|Nome do dispositivo do host|
 |flaggedReasons|coleção [managedAppFlaggedReason](../resources/intune-mam-managedappflaggedreason.md)|Zero ou mais motivos para a sinalização de um registro de aplicativo. E.g. aplicativo usado em dispositivo modificado|
 |userId|String|A ID de usuário à qual este registro de aplicativo pertence.|
@@ -79,12 +80,13 @@ Veja a seguir uma representação JSON do recurso.
 }
 ```
 
-
 <!-- {
   "type": "#page.annotation",
   "suppressions": [
      "Warning: /api-reference/v1.0/resources/intune-mam-managedappregistration.md/microsoft.graph.managedAppRegistration/flaggedReasons:
-      Inconsistent types between parameter (String) and table (Object)"
+    Inconsistent types between parameter (String) and table (Object)"
   ],
 }
 -->
+
+

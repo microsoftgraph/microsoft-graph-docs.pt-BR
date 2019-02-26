@@ -1,23 +1,23 @@
 ---
 title: Obter windowsStoreApp
-description: Leia as propriedades e os relacionamentos do objeto windowsStoreApp.
-localization_priority: Normal
+description: Leia as propriedades e as relações do objeto windowsStoreApp.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a624170c028a18ac4381ca00fd9cfde14f99034c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: f7e667a3159ad6cfd1a2d27551e6476a8f45e1cb
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29417823"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30171677"
 ---
 # <a name="get-windowsstoreapp"></a>Obter windowsStoreApp
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Leia as propriedades e os relacionamentos do objeto [windowsStoreApp](../resources/intune-apps-windowsstoreapp.md) .
+Leia as propriedades e as relações do objeto [windowsStoreApp](../resources/intune-apps-windowsstoreapp.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
@@ -52,7 +52,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://docs.microsof
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` objeto response de código e [windowsStoreApp](../resources/intune-apps-windowsstoreapp.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [windowsStoreApp](../resources/intune-apps-windowsstoreapp.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

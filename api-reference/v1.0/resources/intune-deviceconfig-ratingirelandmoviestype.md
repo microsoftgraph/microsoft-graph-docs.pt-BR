@@ -1,32 +1,33 @@
 ---
-title: tipo de enum ratingIrelandMoviesType
-description: Filmes rótulos na Irlanda de classificação
+title: tipo de enumeração ratingIrelandMoviesType
+description: Rótulos de classificação de filmes na Irlanda
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 18b83058e12e67d941ba2146a329582808141e66
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: d8197731b1c50290ad3fcf59f397804143a25359
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986738"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30251290"
 ---
-# <a name="ratingirelandmoviestype-enum-type"></a>tipo de enum ratingIrelandMoviesType
+# <a name="ratingirelandmoviestype-enum-type"></a>tipo de enumeração ratingIrelandMoviesType
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Filmes rótulos na Irlanda de classificação
+Rótulos de classificação de filmes na Irlanda
+
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|allAllowed|0|Valor padrão, permitir todo o conteúdo de filmes|
-|allBlocked|1|Não permitir que qualquer conteúdo filmes|
-|geral|2|Adequado para os filhos da escola indo idade|
-|parentalGuidance|3|A classificação PG avisos a orientação dos pais|
-|agesAbove12|4|A classificação 12A é adequado para os visualizadores de 12 ou mais antigos|
-|agesAbove15|5|A classificação de 15A é adequado para os visualizadores de 15 ou mais antigos|
-|agesAbove16|6|A classificação de 16 é adequado para os visualizadores de 16 ou mais antigos|
-|adultos|7|A classificação de 18, adequado somente para adultos|
+|Permitido|,0|Valor padrão, permitir todo o conteúdo de filmes|
+|Bloqueado|1|Não permitir conteúdo de filmes|
+|geral|duas|Adequado para crianças com idade de saída da escola|
+|parentalGuidance|3D|A classificação PG aconselha a orientação dos pais|
+|agesAbove12|quatro|A classificação 12A é adequada para visualizadores de 12 ou mais antigos|
+|agesAbove15|0,5|A classificação do 15A é adequada para visualizadores de 15 ou mais|
+|agesAbove16|6|A classificação 16 é adequada para visualizadores de 16 ou mais antigos|
+|adultos|178|A classificação 18, adequada somente para adultos|
 
 
 

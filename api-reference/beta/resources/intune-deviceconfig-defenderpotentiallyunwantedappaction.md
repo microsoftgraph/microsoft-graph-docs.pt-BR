@@ -1,30 +1,30 @@
 ---
-title: tipo de enum defenderPotentiallyUnwantedAppAction
-description: Ação do Defender executar em detectadas aplicativo potencialmente indesejadas (PUA).
-localization_priority: Normal
+title: tipo de enumeração defenderPotentiallyUnwantedAppAction
+description: Ação do defender a ser executada em aplicativo potencialmente inDesejado (PUA).
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2ace0cc29ad284cde63b7e4934fb8cb395f27bbe
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 02ac5da63c2787c2b87479a23899c9d2980c54c4
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422751"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30173350"
 ---
-# <a name="defenderpotentiallyunwantedappaction-enum-type"></a>tipo de enum defenderPotentiallyUnwantedAppAction
+# <a name="defenderpotentiallyunwantedappaction-enum-type"></a>tipo de enumeração defenderPotentiallyUnwantedAppAction
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Ação do Defender executar em detectadas aplicativo potencialmente indesejadas (PUA).
+Ação do defender a ser executada em aplicativo potencialmente inDesejado (PUA).
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|deviceDefault|0|Proteção de PUA está desativado. Defender não protegerá contra aplicativos potencialmente indesejados.|
-|bloquear|1|Proteção de PUA é no. Itens detectados serão bloqueados. Eles serão exibidas no histórico junto com outras ameaças.|
-|auditoria|2|Modo de auditoria. Defender detectar aplicativos potencialmente indesejados, mas não execute nenhuma ações. Você pode revisar as informações sobre aplicativos Defender teria levado ação contra pesquisando criados pelo Defender no evento Visualizador de eventos.|
+|deviceDefault|,0|A proteção do PUA está desativada. O defender não protegerá contra aplicativos potencialmente indesejados.|
+|Larga|1|A proteção do PUA está ativada. Os itens detectados são bloqueados. Eles serão mostrados em histórico junto com outras ameaças.|
+|Faça|duas|Modo de auditoria. O defender detectará aplicativos potencialmente indesejados, mas não realizará ações. Você pode revisar as informações sobre os aplicativos que o defender teria feito com a pesquisa de eventos criados pelo defender no Visualizador de eventos.|
 
 
 

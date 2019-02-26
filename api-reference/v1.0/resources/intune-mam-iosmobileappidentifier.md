@@ -3,19 +3,20 @@ title: Tipo de recurso iosMobileAppIdentifier
 description: O identificador de um aplicativo iOS.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 5e9305963654356c56bff31f6ffb9f97129f4980
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: eb0eaade90c88cc553072f30dd36c42db4f44513
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27922785"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30249960"
 ---
 # <a name="iosmobileappidentifier-resource-type"></a>Tipo de recurso iosMobileAppIdentifier
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 O identificador de um aplicativo iOS.
+
 
 Herda de [mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)
 
@@ -26,6 +27,7 @@ Herda de [mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)
 
 ## <a name="relationships"></a>Relações
 Nenhum
+
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
 <!-- {

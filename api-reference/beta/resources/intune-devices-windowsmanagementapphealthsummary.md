@@ -1,37 +1,37 @@
 ---
-title: tipo de recurso de windowsManagementAppHealthSummary
-description: Contém propriedades para o resumo da integridade do aplicativo de gerenciamento do Windows.
-localization_priority: Normal
+title: tipo de recurso windowsManagementAppHealthSummary
+description: Contém propriedades para o resumo de integridade do aplicativo de gerenciamento do Windows.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3ca46f61259b8b956439c541bf8d5703a35aa93b
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: f62f5967702143149176cecd2513478256ead6d3
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29393848"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172055"
 ---
-# <a name="windowsmanagementapphealthsummary-resource-type"></a>tipo de recurso de windowsManagementAppHealthSummary
+# <a name="windowsmanagementapphealthsummary-resource-type"></a>tipo de recurso windowsManagementAppHealthSummary
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Contém propriedades para o resumo da integridade do aplicativo de gerenciamento do Windows.
+Contém propriedades para o resumo de integridade do aplicativo de gerenciamento do Windows.
 
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Obter windowsManagementAppHealthSummary](../api/intune-devices-windowsmanagementapphealthsummary-get.md)|[windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md)|Leia as propriedades e os relacionamentos do objeto [windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md) .|
-|[Atualizar windowsManagementAppHealthSummary](../api/intune-devices-windowsmanagementapphealthsummary-update.md)|[windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md)|Atualize as propriedades de um objeto [windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md) .|
+|[Obter windowsManagementAppHealthSummary](../api/intune-devices-windowsmanagementapphealthsummary-get.md)|[windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md)|Leia as propriedades e as relações do objeto [windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md) .|
+|[Atualizar windowsManagementAppHealthSummary](../api/intune-devices-windowsmanagementapphealthsummary-update.md)|[windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md)|Atualiza as propriedades de um objeto [windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md) .|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade Windows management app integridade resumida.|
-|healthyDeviceCount|Int32|Contagem de dispositivo íntegro.|
-|unhealthyDeviceCount|Int32|Contagem de dispositivo não íntegros.|
-|unknownDeviceCount|Int32|Contagem de dispositivo desconhecido.|
+|id|String|Chave da entidade de Resumo de integridade do aplicativo de gerenciamento do Windows.|
+|healthyDeviceCount|Int32|Contagem de dispositivos íntegros.|
+|unhealthyDeviceCount|Int32|Contagem de dispositivos não íntegros.|
+|unknownDeviceCount|Int32|Contagem desconhecida de dispositivos.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

@@ -4,16 +4,16 @@ description: Desativa todos os dispositivos de gerenciamento deste usuário
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 62e0243fef90190fd1ca39c02bc2a7e568b475d3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 40baa470968c10bbe26af1d8397306f5b9e3f736
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27934286"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30252795"
 ---
 # <a name="removealldevicesfrommanagement-action"></a>Ação removeAllDevicesFromManagement
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Desativa todos os dispositivos de gerenciamento deste usuário
 
@@ -22,8 +22,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
-|Delegado (conta corporativa ou de estudante)| _varia de acordo com o contexto_ |
-| &nbsp;&nbsp; Gerenciamento de dispositivo | DeviceManagementManagedDevices.PriviligedOperation.All |
+|Delegado (conta corporativa ou de estudante)| _varia por contexto_ |
+| &nbsp;&nbsp; Gerenciamento de dispositivos | DeviceManagementManagedDevices.PriviligedOperation.All |
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 

@@ -1,30 +1,31 @@
 ---
-title: tipo de enum automaticUpdateMode
+title: tipo de enumeração Propriedades automaticupdatemode
 description: Valores possíveis para o modo de atualização automática.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: a31c50b5d16f4b9be8db4f95f2bbd9bd0ca123e4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 7fd45ff85cbab934aa2549f13ee3e6671c65f9ae
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27987857"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30251374"
 ---
-# <a name="automaticupdatemode-enum-type"></a>tipo de enum automaticUpdateMode
+# <a name="automaticupdatemode-enum-type"></a>tipo de enumeração Propriedades automaticupdatemode
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Valores possíveis para o modo de atualização automática.
+
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|userDefined|0|Definido pelo usuário, valor padrão, sem intenção.|
-|notifyDownload|1|Notifica baixados.|
-|autoInstallAtMaintenanceTime|2|Instalar automaticamente em tempo de manutenção.|
-|autoInstallAndRebootAtMaintenanceTime|3|Instalar automaticamente e reinicialize em tempo de manutenção.|
-|autoInstallAndRebootAtScheduledTime|4|Instalar automaticamente e reinicialize no horário agendado.|
-|autoInstallAndRebootWithoutEndUserControl|5|Instalar automaticamente e reinicie sem controle de usuário final|
+|userDefined|,0|Definido pelo usuário, valor padrão, sem intenção.|
+|notifyDownload|1|Notifique o download.|
+|autoInstallAtMaintenanceTime|duas|Instalação automática no momento da manutenção.|
+|autoInstallAndRebootAtMaintenanceTime|3D|Instalação automática e reinicialização no momento da manutenção.|
+|autoInstallAndRebootAtScheduledTime|quatro|Instalação automática e reinicialização no horário agendado.|
+|autoInstallAndRebootWithoutEndUserControl|0,5|Instalação e reinício automáticos sem controle de usuário final|
 
 
 

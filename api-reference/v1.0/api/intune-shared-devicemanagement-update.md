@@ -4,32 +4,33 @@ description: Atualizar as propriedades de um objeto deviceManagement.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: e7351eb15a194c68c4bd3b7abc59d866b5f4f237
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: c96877d25476ede3cee6ce407c1df84f08448a9a
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27985967"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30253054"
 ---
 # <a name="update-devicemanagement"></a>Atualizar deviceManagement
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Atualizar as propriedades de um objeto [deviceManagement](../resources/intune-shared-devicemanagement.md).
+
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-| Permissão&nbsp;tipo&nbsp;(por&nbsp;fluxo de trabalho) | Permissões (de privilégios máximos a mínimos) |
+| Tipo&nbsp;&nbsp;de permissão (&nbsp;por fluxo de trabalho) | Permissões (de privilégios máximos a mínimos) |
 |:---|:---|
 | Delegado (conta corporativa ou de estudante) |
 | &nbsp;&nbsp; Auditoria | DeviceManagementApps.ReadWrite.All |
 | &nbsp;&nbsp; Termos da empresa | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp; Inscrição corporativa | DeviceManagementServiceConfig.ReadWrite.All|
-| &nbsp;&nbsp; Configuração de dispositivo | DeviceManagementConfiguration.ReadWrite.All |
-| &nbsp;&nbsp; Gerenciamento de dispositivo | DeviceManagementManagedDevices.ReadWrite.All |
-| &nbsp;&nbsp; Proteção de ponto de extremidade | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp; Registro corporativo | DeviceManagementServiceConfig.ReadWrite.All|
+| &nbsp;&nbsp; Configuração do dispositivo | DeviceManagementConfiguration.ReadWrite.All |
+| &nbsp;&nbsp; Gerenciamento de dispositivos | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp; Endpoint Protection | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp;&nbsp; Notificação | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp; Onboarding | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; Integração | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; Controle de acesso baseado em função | DeviceManagementRBAC.ReadWrite.All |
 | &nbsp;&nbsp; Assistência remota | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; Gerenciamento de despesas de telecomunicações | DeviceManagementServiceConfig.ReadWrite.All |
@@ -60,15 +61,15 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo do dispositivo|
+|id|String|O identificador exclusivo do dispositivo|
 |**Configuração do dispositivo**|
-|configurações|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Configurações de nível da conta.|
+|settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Configurações de nível da conta.|
 |**Gerenciamento de dispositivos**|
-|subscriptionState|[deviceManagementSubscriptionState](../resources/intune-devices-devicemanagementsubscriptionstate.md)|Estado de assinatura de gerenciamento de dispositivo móvel do locatário. Os valores possíveis são: `pending`, `active`, `warning`, `disabled`, `deleted`, `blocked`, `lockedOut`.|
-|**Inclusão**|
+|subscriptionState|[deviceManagementSubscriptionState](../resources/intune-devices-devicemanagementsubscriptionstate.md)|Estado de assinatura de gerenciamento de dispositivo móvel do locatário. Os valores possíveis são `pending`, `active`, `warning`, `disabled`, `deleted`, `blocked`, `lockedOut`.|
+|**Integração**|
 |intuneBrand|[intuneBrand](../resources/intune-onboarding-intunebrand.md)|intuneBrand contém dados que são usados na personalização da aparência dos aplicativos do Portal da Empresa, bem como do portal da Web de usuários finais.|
 
-Suporte de propriedade de corpo de solicitação varia de acordo com o fluxo de trabalho.
+O suporte à propriedade do corpo da solicitação varia de acordo com o fluxo de trabalho
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará um código de resposta `200 OK` e um objeto [deviceManagement](../resources/intune-shared-devicemanagement.md) atualizado no corpo da resposta.
@@ -108,7 +109,7 @@ Content-length: 751
 
 ### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Propriedades retornadas variam de acordo com o fluxo de trabalho e contexto.
+Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. As propriedades retornadas variam de acordo com o fluxo de trabalho e o contexto.
 
 ``` http
 HTTP/1.1 200 OK
