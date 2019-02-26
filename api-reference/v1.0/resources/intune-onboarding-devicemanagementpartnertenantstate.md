@@ -1,30 +1,31 @@
 ---
-title: tipo de enum deviceManagementPartnerTenantState
-description: Estado de parceiro deste locatário.
+title: tipo de enumeração deviceManagementPartnerTenantState
+description: Estado do parceiro desse locatário.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 814fe428ff5b016b1f344743d1c2d06e2b076c76
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: c14c1806e65ba180837082288b76e047055f8a9f
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27981480"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30257978"
 ---
-# <a name="devicemanagementpartnertenantstate-enum-type"></a>tipo de enum deviceManagementPartnerTenantState
+# <a name="devicemanagementpartnertenantstate-enum-type"></a>tipo de enumeração deviceManagementPartnerTenantState
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Estado de parceiro deste locatário.
+Estado do parceiro desse locatário.
+
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|unknown|0|Estado do parceiro é desconhecido.|
-|indisponível|1|Parceiro não está disponível.|
-|enabled|2|Parceiro está habilitado.|
-|terminada|3|Conexão de parceiro será encerrada.|
-|rejeitado|4|Mensagens de parceiro são rejeitadas.|
-|não responde|5|Parceiro não está respondendo.|
+|unknown|,0|O estado do parceiro é desconhecido.|
+|indisponível|1|O parceiro não está disponível.|
+|enabled|duas|O parceiro está habilitado.|
+|Cerro|3D|Conexão de parceiro terminada.|
+|rejeitar|quatro|As mensagens de parceiros são rejeitadas.|
+|Não responde|0,5|O parceiro não responde.|
 
 
 

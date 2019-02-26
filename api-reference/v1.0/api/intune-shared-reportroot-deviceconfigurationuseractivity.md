@@ -4,25 +4,26 @@ description: Metadados para o relatório de atividades do usuário de configura�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: a0ee945ad87af2cec28a494d28ee752b5d460a43
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 5c83c9a6216e678d16af212f6a31648f7dea8a2b
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27972163"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30258020"
 ---
 # <a name="deviceconfigurationuseractivity-function"></a>Função deviceConfigurationUserActivity
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Metadados para o relatório de atividades do usuário de configuração do dispositivo
+
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)||
-| &nbsp;&nbsp; Configuração de dispositivo | DeviceManagementConfiguration.Read.All|
+| &nbsp;&nbsp; Configuração do dispositivo | DeviceManagementConfiguration.Read.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
