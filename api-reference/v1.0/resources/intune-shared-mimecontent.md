@@ -3,27 +3,29 @@ title: Tipo de recurso mimeContent
 description: Contém as propriedades de um conteúdo genérico MIME.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 8a486753c95afce9dff6ceec5846ff618b9103b3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: de4360ce5a8873fde7d3286f55fc0c8993936a7c
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27971897"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30260001"
 ---
 # <a name="mimecontent-resource-type"></a>Tipo de recurso mimeContent
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Contém as propriedades de um conteúdo genérico MIME.
+
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|type|Cadeia de caracteres|Indica o tipo de conteúdo MIME.|
+|type|String|Indica o tipo de conteúdo MIME.|
 |valor|Binária|A matriz de byte que contém o conteúdo atual.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
+
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
 <!-- {

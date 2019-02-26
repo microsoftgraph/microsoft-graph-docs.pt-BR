@@ -3,19 +3,20 @@ title: Tipo de recurso deviceEnrollmentConfiguration
 description: Ainda não documentado
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: d62bc9406b00632613d172df2ae4b4ab3fa045ab
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: fc515f291e2ab32b744756063869ca3ca0c86cb5
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27922496"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30259574"
 ---
 # <a name="deviceenrollmentconfiguration-resource-type"></a>Tipo de recurso deviceEnrollmentConfiguration
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Ainda não documentado
+
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
@@ -29,7 +30,7 @@ Ainda não documentado
 |:---|:---|:---|
 |id|String|Ainda não documentado|
 |displayName|String|Ainda não documentado|
-|descrição|String|Ainda não documentado|
+|descrição|Cadeia de caracteres|Ainda não documentado|
 |prioridade|Int32|Ainda não documentado|
 |createdDateTime|DateTimeOffset|Ainda não documentado|
 |lastModifiedDateTime|DateTimeOffset|Ainda não documentado|

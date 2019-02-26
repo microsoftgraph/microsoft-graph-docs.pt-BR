@@ -1,32 +1,33 @@
 ---
-title: tipo de enum ratingUnitedKingdomMoviesType
-description: Filmes classificação rótulos no Reino Unido
+title: tipo de enumeração ratingUnitedKingdomMoviesType
+description: Rótulos de classificação de filmes no Reino Unido
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: b80ad9cfb9f1b2f449e9758699bd677150903332
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 40cf4e473e48133e59822cdedba1a74cc7a9bb0c
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27962181"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30260680"
 ---
-# <a name="ratingunitedkingdommoviestype-enum-type"></a>tipo de enum ratingUnitedKingdomMoviesType
+# <a name="ratingunitedkingdommoviestype-enum-type"></a>tipo de enumeração ratingUnitedKingdomMoviesType
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Filmes classificação rótulos no Reino Unido
+Rótulos de classificação de filmes no Reino Unido
+
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|allAllowed|0|Valor padrão, permitir todo o conteúdo de filmes|
-|allBlocked|1|Não permitir que qualquer conteúdo filmes|
-|geral|2|A classificação de U é adequada para todos os anos|
-|universalChildren|3|A classificação de comunicação unificada é adequada para a pré-escola filhos, um rótulo de classificação antigo|
-|parentalGuidance|4|A classificação PG é adequada para adulto|
-|agesAbove12Video|5|12, vídeo de versão adequado para 12 anos e sobre|
-|agesAbove12Cinema|6|12a, adequado para 12 anos e ao longo de lançamento de cinema|
-|agesAbove15|7|15, antigas e adequado para quinze anos|
+|Permitido|,0|Valor padrão, permitir todo o conteúdo de filmes|
+|Bloqueado|1|Não permitir conteúdo de filmes|
+|geral|duas|A classificação U é adequada para todas as idades|
+|universalChildren|3D|A classificação UC é adequada para crianças de pré-produção, um rótulo de classificação antigo|
+|parentalGuidance|quatro|A classificação PG é adequada para o adulto|
+|agesAbove12Video|0,5|12, versão de vídeo adequada para 12 anos ou mais|
+|agesAbove12Cinema|6|12A, cinema versão adequada para 12 anos ou mais|
+|agesAbove15|178|15, adequado somente por 15 anos e mais|
 |adultos|8|Adequado somente para adultos|
 
 

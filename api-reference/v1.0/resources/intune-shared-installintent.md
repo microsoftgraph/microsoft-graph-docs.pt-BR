@@ -1,28 +1,29 @@
 ---
-title: tipo de enum installIntent
-description: Valores possíveis para a intenção de instalar escolhido pelo administrador a.
+title: tipo de enumeração installIntent
+description: Valores possíveis para o propósito de instalação escolhido pelo administrador.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: aaea49b0c808b0591a059f46ed0eb06fa17b6177
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 40c36022e08917ac8fbad0ff2647e28da18270bc
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27972051"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30260414"
 ---
-# <a name="installintent-enum-type"></a>tipo de enum installIntent
+# <a name="installintent-enum-type"></a>tipo de enumeração installIntent
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Valores possíveis para a intenção de instalar escolhido pelo administrador a.
+Valores possíveis para o propósito de instalação escolhido pelo administrador.
+
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|disponível|0|Intenção de instalação disponíveis.|
-|obrigatório|1|Intenção de instalação necessários.|
-|desinstalar|2|Desinstale a intenção de instalação.|
-|availableWithoutEnrollment|3|Disponível sem intenção de instalação de inscrição.|
+|disponível|,0|Tentativa de instalação disponível.|
+|obrigatório|1|Tentativa de instalação necessária.|
+|INTAL|duas|Tentativa de instalação de desInstalação.|
+|availableWithoutEnrollment|3D|Disponível sem a intenção de instalação do registro.|
 
 
 

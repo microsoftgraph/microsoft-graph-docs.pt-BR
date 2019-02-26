@@ -3,33 +3,35 @@ title: Tipo de recurso deviceGeoLocation
 description: Localização do dispositivo
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 248af3f66a78e3197a3f966225e864f5583f8597
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: b51768aea1338486431ceffadd95f8760a7216ab
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27940950"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30260211"
 ---
 # <a name="devicegeolocation-resource-type"></a>Tipo de recurso deviceGeoLocation
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Localização do dispositivo
+
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |lastCollectedDateTime|DateTimeOffset|Hora em que a localização foi registrada, em relação ao UTC|
-|longitude|Double|Coordenada de longitude da localização do dispositivo|
-|latitude|Double|Coordenada de latitude da localização do dispositivo|
-|altitude|Double|Altitude, especificada em metros acima do nível do mar|
-|horizontalAccuracy|Double|Precisão da latitude e da longitude em metros|
-|verticalAccuracy|Double|Precisão da altitude em metros|
-|heading|Double|Direção em graus do norte verdadeiro|
+|longitude|Duplo|Coordenada de longitude da localização do dispositivo|
+|latitude|Duplo|Coordenada de latitude da localização do dispositivo|
+|altitude|Duplo|Altitude, especificada em metros acima do nível do mar|
+|horizontalAccuracy|Duplo|Precisão da latitude e da longitude em metros|
+|verticalAccuracy|Duplo|Precisão da altitude em metros|
+|heading|Duplo|Direção em graus do norte verdadeiro|
 |speed|Double|Velocidade na qual o dispositivo está viajando, em metros por segundo|
 
 ## <a name="relationships"></a>Relações
 Nenhum
+
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
 <!-- {
