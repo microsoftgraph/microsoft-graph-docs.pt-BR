@@ -1,34 +1,34 @@
 ---
-title: ação de updatePriorities
-description: Atualize as prioridades de política.
+title: ação updatePriorities
+description: Atualizar prioridades de política.
 localization_priority: Normal
 author: tfitzmac
 ms.prod: Intune
-ms.openlocfilehash: a78ec2801522354709643dfdd88da0e6dd9756c8
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 6422cd3f40270f6502a58551e6c5c1b739219e00
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29412972"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30154989"
 ---
-# <a name="updatepriorities-action"></a><span data-ttu-id="43017-103">ação de updatePriorities</span><span class="sxs-lookup"><span data-stu-id="43017-103">updatePriorities action</span></span>
+# <a name="updatepriorities-action"></a><span data-ttu-id="c0592-103">ação updatePriorities</span><span class="sxs-lookup"><span data-stu-id="c0592-103">updatePriorities action</span></span>
 
-> <span data-ttu-id="43017-104">**Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações.</span><span class="sxs-lookup"><span data-stu-id="43017-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="43017-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="43017-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="c0592-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="c0592-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="43017-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.</span><span class="sxs-lookup"><span data-stu-id="43017-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="c0592-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="c0592-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="43017-107">Atualize as prioridades de política.</span><span class="sxs-lookup"><span data-stu-id="43017-107">Update policy priorities.</span></span>
+<span data-ttu-id="c0592-106">Atualizar prioridades de política.</span><span class="sxs-lookup"><span data-stu-id="c0592-106">Update policy priorities.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="43017-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="43017-108">Prerequisites</span></span>
-<span data-ttu-id="43017-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="43017-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="c0592-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="c0592-107">Prerequisites</span></span>
+<span data-ttu-id="c0592-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c0592-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="43017-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="43017-111">Permission type</span></span>|<span data-ttu-id="43017-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="43017-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="c0592-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="c0592-110">Permission type</span></span>|<span data-ttu-id="c0592-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="c0592-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="43017-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="43017-113">Delegated (work or school account)</span></span>|<span data-ttu-id="43017-114">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="43017-114">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="43017-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="43017-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="43017-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="43017-116">Not supported.</span></span>|
-|<span data-ttu-id="43017-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="43017-117">Application</span></span>|<span data-ttu-id="43017-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="43017-118">Not supported.</span></span>|
+|<span data-ttu-id="c0592-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="c0592-112">Delegated (work or school account)</span></span>|<span data-ttu-id="c0592-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c0592-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="c0592-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="c0592-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="c0592-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c0592-115">Not supported.</span></span>|
+|<span data-ttu-id="c0592-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="c0592-116">Application</span></span>|<span data-ttu-id="c0592-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c0592-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="43017-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="43017-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c0592-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="c0592-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,31 +37,31 @@ ms.locfileid: "29412972"
 POST /officeConfiguration/clientConfigurations/microsoft.management.services.api.updatePriorities
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="43017-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="43017-120">Request headers</span></span>
-|<span data-ttu-id="43017-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="43017-121">Header</span></span>|<span data-ttu-id="43017-122">Valor</span><span class="sxs-lookup"><span data-stu-id="43017-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="c0592-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="c0592-119">Request headers</span></span>
+|<span data-ttu-id="c0592-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="c0592-120">Header</span></span>|<span data-ttu-id="c0592-121">Valor</span><span class="sxs-lookup"><span data-stu-id="c0592-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="43017-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="43017-123">Authorization</span></span>|<span data-ttu-id="43017-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="43017-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="43017-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="43017-125">Accept</span></span>|<span data-ttu-id="43017-126">application/json</span><span class="sxs-lookup"><span data-stu-id="43017-126">application/json</span></span>|
+|<span data-ttu-id="c0592-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="c0592-122">Authorization</span></span>|<span data-ttu-id="c0592-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="c0592-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="c0592-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="c0592-124">Accept</span></span>|<span data-ttu-id="c0592-125">application/json</span><span class="sxs-lookup"><span data-stu-id="c0592-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="43017-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="43017-127">Request body</span></span>
-<span data-ttu-id="43017-128">No corpo da solicitação, forneça uma representação JSON dos parâmetros.</span><span class="sxs-lookup"><span data-stu-id="43017-128">In the request body, supply JSON representation of the parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c0592-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="c0592-126">Request body</span></span>
+<span data-ttu-id="c0592-127">No corpo da solicitação, forneça uma representação JSON dos parâmetros.</span><span class="sxs-lookup"><span data-stu-id="c0592-127">In the request body, supply JSON representation of the parameters.</span></span>
 
-<span data-ttu-id="43017-129">A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.</span><span class="sxs-lookup"><span data-stu-id="43017-129">The following table shows the parameters that can be used with this action.</span></span>
+<span data-ttu-id="c0592-128">A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.</span><span class="sxs-lookup"><span data-stu-id="c0592-128">The following table shows the parameters that can be used with this action.</span></span>
 
-|<span data-ttu-id="43017-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="43017-130">Property</span></span>|<span data-ttu-id="43017-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="43017-131">Type</span></span>|<span data-ttu-id="43017-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="43017-132">Description</span></span>|
+|<span data-ttu-id="c0592-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="c0592-129">Property</span></span>|<span data-ttu-id="c0592-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="c0592-130">Type</span></span>|<span data-ttu-id="c0592-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="c0592-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="43017-133">officeConfigurationPolicyIds</span><span class="sxs-lookup"><span data-stu-id="43017-133">officeConfigurationPolicyIds</span></span>|<span data-ttu-id="43017-134">String collection</span><span class="sxs-lookup"><span data-stu-id="43017-134">String collection</span></span>|<span data-ttu-id="43017-135">Lista de ids de política de configuração do office</span><span class="sxs-lookup"><span data-stu-id="43017-135">List of office configuration policy ids</span></span>|
-|<span data-ttu-id="43017-136">officeConfigurationPriorities</span><span class="sxs-lookup"><span data-stu-id="43017-136">officeConfigurationPriorities</span></span>|<span data-ttu-id="43017-137">Coleção Int32</span><span class="sxs-lookup"><span data-stu-id="43017-137">Int32 collection</span></span>|<span data-ttu-id="43017-138">Lista de prioridades de configuração do office</span><span class="sxs-lookup"><span data-stu-id="43017-138">List of office configuration priorities</span></span>|
+|<span data-ttu-id="c0592-132">officeConfigurationPolicyIds</span><span class="sxs-lookup"><span data-stu-id="c0592-132">officeConfigurationPolicyIds</span></span>|<span data-ttu-id="c0592-133">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="c0592-133">String collection</span></span>|<span data-ttu-id="c0592-134">Lista de IDs de política de configuração do Office</span><span class="sxs-lookup"><span data-stu-id="c0592-134">List of office configuration policy ids</span></span>|
+|<span data-ttu-id="c0592-135">officeConfigurationPriorities</span><span class="sxs-lookup"><span data-stu-id="c0592-135">officeConfigurationPriorities</span></span>|<span data-ttu-id="c0592-136">Coleção Int32</span><span class="sxs-lookup"><span data-stu-id="c0592-136">Int32 collection</span></span>|<span data-ttu-id="c0592-137">Lista de prioridades de configuração do Office</span><span class="sxs-lookup"><span data-stu-id="c0592-137">List of office configuration priorities</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="43017-139">Resposta</span><span class="sxs-lookup"><span data-stu-id="43017-139">Response</span></span>
-<span data-ttu-id="43017-140">Se tiver êxito, esta ação retornará um código de resposta `200 OK`.</span><span class="sxs-lookup"><span data-stu-id="43017-140">If successful, this action returns a `200 OK` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="c0592-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="c0592-138">Response</span></span>
+<span data-ttu-id="c0592-139">Se tiver êxito, esta ação retornará um código de resposta `200 OK`.</span><span class="sxs-lookup"><span data-stu-id="c0592-139">If successful, this action returns a `200 OK` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="43017-141">Exemplo</span><span class="sxs-lookup"><span data-stu-id="43017-141">Example</span></span>
+## <a name="example"></a><span data-ttu-id="c0592-140">Exemplo</span><span class="sxs-lookup"><span data-stu-id="c0592-140">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="43017-142">Solicitação</span><span class="sxs-lookup"><span data-stu-id="43017-142">Request</span></span>
-<span data-ttu-id="43017-143">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="43017-143">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="c0592-141">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c0592-141">Request</span></span>
+<span data-ttu-id="c0592-142">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="c0592-142">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/officeConfiguration/clientConfigurations/microsoft.management.services.api.updatePriorities
 
@@ -78,8 +78,8 @@ Content-length: 143
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="43017-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="43017-144">Response</span></span>
-<span data-ttu-id="43017-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="43017-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="c0592-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="c0592-143">Response</span></span>
+<span data-ttu-id="c0592-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="c0592-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 ```

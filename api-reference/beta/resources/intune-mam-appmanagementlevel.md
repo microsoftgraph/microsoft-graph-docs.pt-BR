@@ -1,31 +1,31 @@
 ---
-title: tipo de enum appManagementLevel
-description: Níveis de gerenciamento de aplicativos
-localization_priority: Normal
+title: tipo de enumeração appManagementLevel
+description: Níveis de gerenciamento para aplicativos
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 90ecfc62e0838a2ba969c4625bcec87501899b4c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 5768c6c11aa330eab3a94ce85c7abe1fef126dda
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29416612"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30168814"
 ---
-# <a name="appmanagementlevel-enum-type"></a><span data-ttu-id="1fd65-103">tipo de enum appManagementLevel</span><span class="sxs-lookup"><span data-stu-id="1fd65-103">appManagementLevel enum type</span></span>
+# <a name="appmanagementlevel-enum-type"></a><span data-ttu-id="10cc7-103">tipo de enumeração appManagementLevel</span><span class="sxs-lookup"><span data-stu-id="10cc7-103">appManagementLevel enum type</span></span>
 
-> <span data-ttu-id="1fd65-104">**Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações.</span><span class="sxs-lookup"><span data-stu-id="1fd65-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="1fd65-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="1fd65-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="10cc7-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="10cc7-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="1fd65-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.</span><span class="sxs-lookup"><span data-stu-id="1fd65-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="10cc7-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="10cc7-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="1fd65-107">Níveis de gerenciamento de aplicativos</span><span class="sxs-lookup"><span data-stu-id="1fd65-107">Management levels for apps</span></span>
+<span data-ttu-id="10cc7-106">Níveis de gerenciamento para aplicativos</span><span class="sxs-lookup"><span data-stu-id="10cc7-106">Management levels for apps</span></span>
 
-## <a name="members"></a><span data-ttu-id="1fd65-108">Membros</span><span class="sxs-lookup"><span data-stu-id="1fd65-108">Members</span></span>
-|<span data-ttu-id="1fd65-109">Membro</span><span class="sxs-lookup"><span data-stu-id="1fd65-109">Member</span></span>|<span data-ttu-id="1fd65-110">Valor</span><span class="sxs-lookup"><span data-stu-id="1fd65-110">Value</span></span>|<span data-ttu-id="1fd65-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="1fd65-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="10cc7-107">Membros</span><span class="sxs-lookup"><span data-stu-id="10cc7-107">Members</span></span>
+|<span data-ttu-id="10cc7-108">Membro</span><span class="sxs-lookup"><span data-stu-id="10cc7-108">Member</span></span>|<span data-ttu-id="10cc7-109">Valor</span><span class="sxs-lookup"><span data-stu-id="10cc7-109">Value</span></span>|<span data-ttu-id="10cc7-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="10cc7-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="1fd65-112">não for especificado</span><span class="sxs-lookup"><span data-stu-id="1fd65-112">unspecified</span></span>|<span data-ttu-id="1fd65-113">0</span><span class="sxs-lookup"><span data-stu-id="1fd65-113">0</span></span>|<span data-ttu-id="1fd65-114">Não especificado</span><span class="sxs-lookup"><span data-stu-id="1fd65-114">Unspecified</span></span>|
-|<span data-ttu-id="1fd65-115">não gerenciado</span><span class="sxs-lookup"><span data-stu-id="1fd65-115">unmanaged</span></span>|<span data-ttu-id="1fd65-116">1</span><span class="sxs-lookup"><span data-stu-id="1fd65-116">1</span></span>|<span data-ttu-id="1fd65-117">Não gerenciado</span><span class="sxs-lookup"><span data-stu-id="1fd65-117">Unmanaged</span></span>|
-|<span data-ttu-id="1fd65-118">MDM</span><span class="sxs-lookup"><span data-stu-id="1fd65-118">mdm</span></span>|<span data-ttu-id="1fd65-119">2</span><span class="sxs-lookup"><span data-stu-id="1fd65-119">2</span></span>|<span data-ttu-id="1fd65-120">MDM</span><span class="sxs-lookup"><span data-stu-id="1fd65-120">MDM</span></span>|
-|<span data-ttu-id="1fd65-121">androidEnterprise</span><span class="sxs-lookup"><span data-stu-id="1fd65-121">androidEnterprise</span></span>|<span data-ttu-id="1fd65-122">4</span><span class="sxs-lookup"><span data-stu-id="1fd65-122">4</span></span>|<span data-ttu-id="1fd65-123">Android Enterprise</span><span class="sxs-lookup"><span data-stu-id="1fd65-123">Android Enterprise</span></span>|
+|<span data-ttu-id="10cc7-111">não especificado</span><span class="sxs-lookup"><span data-stu-id="10cc7-111">unspecified</span></span>|<span data-ttu-id="10cc7-112">,0</span><span class="sxs-lookup"><span data-stu-id="10cc7-112">0</span></span>|<span data-ttu-id="10cc7-113">Não especificado</span><span class="sxs-lookup"><span data-stu-id="10cc7-113">Unspecified</span></span>|
+|<span data-ttu-id="10cc7-114">não gerenciados</span><span class="sxs-lookup"><span data-stu-id="10cc7-114">unmanaged</span></span>|<span data-ttu-id="10cc7-115">1</span><span class="sxs-lookup"><span data-stu-id="10cc7-115">1</span></span>|<span data-ttu-id="10cc7-116">Não gerenciados</span><span class="sxs-lookup"><span data-stu-id="10cc7-116">Unmanaged</span></span>|
+|<span data-ttu-id="10cc7-117">MDM</span><span class="sxs-lookup"><span data-stu-id="10cc7-117">mdm</span></span>|<span data-ttu-id="10cc7-118">duas</span><span class="sxs-lookup"><span data-stu-id="10cc7-118">2</span></span>|<span data-ttu-id="10cc7-119">MDM</span><span class="sxs-lookup"><span data-stu-id="10cc7-119">MDM</span></span>|
+|<span data-ttu-id="10cc7-120">androidEnterprise</span><span class="sxs-lookup"><span data-stu-id="10cc7-120">androidEnterprise</span></span>|<span data-ttu-id="10cc7-121">quatro</span><span class="sxs-lookup"><span data-stu-id="10cc7-121">4</span></span>|<span data-ttu-id="10cc7-122">Android Enterprise</span><span class="sxs-lookup"><span data-stu-id="10cc7-122">Android Enterprise</span></span>|
 
 
 

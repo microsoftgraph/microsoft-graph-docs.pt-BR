@@ -1,30 +1,30 @@
 ---
-title: tipo de enum usernameSource
-description: Nome de usuário origem.
-localization_priority: Normal
+title: tipo de enumeração usernamename
+description: Fonte de nome de usuário.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 98a1d9860a1c4e6610f0ad750a573c656fe6219e
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 001fb659c86b3403e6a206daa72f9d12d8bdb383
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399511"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30166231"
 ---
-# <a name="usernamesource-enum-type"></a><span data-ttu-id="03a47-103">tipo de enum usernameSource</span><span class="sxs-lookup"><span data-stu-id="03a47-103">usernameSource enum type</span></span>
+# <a name="usernamesource-enum-type"></a><span data-ttu-id="f8547-103">tipo de enumeração usernamename</span><span class="sxs-lookup"><span data-stu-id="f8547-103">usernameSource enum type</span></span>
 
-> <span data-ttu-id="03a47-104">**Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações.</span><span class="sxs-lookup"><span data-stu-id="03a47-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="03a47-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="03a47-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="f8547-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="f8547-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="03a47-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.</span><span class="sxs-lookup"><span data-stu-id="03a47-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="f8547-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="f8547-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="03a47-107">Nome de usuário origem.</span><span class="sxs-lookup"><span data-stu-id="03a47-107">Username source.</span></span>
+<span data-ttu-id="f8547-106">Fonte de nome de usuário.</span><span class="sxs-lookup"><span data-stu-id="f8547-106">Username source.</span></span>
 
-## <a name="members"></a><span data-ttu-id="03a47-108">Membros</span><span class="sxs-lookup"><span data-stu-id="03a47-108">Members</span></span>
-|<span data-ttu-id="03a47-109">Membro</span><span class="sxs-lookup"><span data-stu-id="03a47-109">Member</span></span>|<span data-ttu-id="03a47-110">Valor</span><span class="sxs-lookup"><span data-stu-id="03a47-110">Value</span></span>|<span data-ttu-id="03a47-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="03a47-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="f8547-107">Membros</span><span class="sxs-lookup"><span data-stu-id="f8547-107">Members</span></span>
+|<span data-ttu-id="f8547-108">Membro</span><span class="sxs-lookup"><span data-stu-id="f8547-108">Member</span></span>|<span data-ttu-id="f8547-109">Valor</span><span class="sxs-lookup"><span data-stu-id="f8547-109">Value</span></span>|<span data-ttu-id="f8547-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="f8547-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="03a47-112">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="03a47-112">userPrincipalName</span></span>|<span data-ttu-id="03a47-113">0</span><span class="sxs-lookup"><span data-stu-id="03a47-113">0</span></span>|<span data-ttu-id="03a47-114">Nome principal do usuário.</span><span class="sxs-lookup"><span data-stu-id="03a47-114">User principal name.</span></span>|
-|<span data-ttu-id="03a47-115">primarySmtpAddress</span><span class="sxs-lookup"><span data-stu-id="03a47-115">primarySmtpAddress</span></span>|<span data-ttu-id="03a47-116">1</span><span class="sxs-lookup"><span data-stu-id="03a47-116">1</span></span>|<span data-ttu-id="03a47-117">Endereço de SMTP principal.</span><span class="sxs-lookup"><span data-stu-id="03a47-117">Primary SMTP address.</span></span>|
-|<span data-ttu-id="03a47-118">samAccountName</span><span class="sxs-lookup"><span data-stu-id="03a47-118">samAccountName</span></span>|<span data-ttu-id="03a47-119">2</span><span class="sxs-lookup"><span data-stu-id="03a47-119">2</span></span>|<span data-ttu-id="03a47-120">Nome da conta sam do usuário.</span><span class="sxs-lookup"><span data-stu-id="03a47-120">The user sam account name.</span></span>|
+|<span data-ttu-id="f8547-111">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="f8547-111">userPrincipalName</span></span>|<span data-ttu-id="f8547-112">,0</span><span class="sxs-lookup"><span data-stu-id="f8547-112">0</span></span>|<span data-ttu-id="f8547-113">Nome principal do usuário.</span><span class="sxs-lookup"><span data-stu-id="f8547-113">User principal name.</span></span>|
+|<span data-ttu-id="f8547-114">primarySmtpAddress</span><span class="sxs-lookup"><span data-stu-id="f8547-114">primarySmtpAddress</span></span>|<span data-ttu-id="f8547-115">1</span><span class="sxs-lookup"><span data-stu-id="f8547-115">1</span></span>|<span data-ttu-id="f8547-116">Endereço SMTP principal.</span><span class="sxs-lookup"><span data-stu-id="f8547-116">Primary SMTP address.</span></span>|
+|<span data-ttu-id="f8547-117">samAccountName</span><span class="sxs-lookup"><span data-stu-id="f8547-117">samAccountName</span></span>|<span data-ttu-id="f8547-118">duas</span><span class="sxs-lookup"><span data-stu-id="f8547-118">2</span></span>|<span data-ttu-id="f8547-119">O nome da conta Sam do usuário.</span><span class="sxs-lookup"><span data-stu-id="f8547-119">The user sam account name.</span></span>|
 
 
 

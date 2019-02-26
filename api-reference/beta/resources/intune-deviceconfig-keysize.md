@@ -1,29 +1,29 @@
 ---
-title: tipo de enum keySize
-description: Opções de tamanho da chave.
-localization_priority: Normal
+title: tipo de enumeração keySize
+description: Opções de tamanho de chave.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cdfc2418c3de1c798b0bc8756aed67bde285547a
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e558cb0b11ca1c4afc555dbb3dff2e41264b2cf1
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29413735"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30167743"
 ---
-# <a name="keysize-enum-type"></a><span data-ttu-id="bd862-103">tipo de enum keySize</span><span class="sxs-lookup"><span data-stu-id="bd862-103">keySize enum type</span></span>
+# <a name="keysize-enum-type"></a><span data-ttu-id="807dc-103">tipo de enumeração keySize</span><span class="sxs-lookup"><span data-stu-id="807dc-103">keySize enum type</span></span>
 
-> <span data-ttu-id="bd862-104">**Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações.</span><span class="sxs-lookup"><span data-stu-id="bd862-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="bd862-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="bd862-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="807dc-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="807dc-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="bd862-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.</span><span class="sxs-lookup"><span data-stu-id="bd862-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="807dc-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="807dc-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="bd862-107">Opções de tamanho da chave.</span><span class="sxs-lookup"><span data-stu-id="bd862-107">Key Size Options.</span></span>
+<span data-ttu-id="807dc-106">Opções de tamanho de chave.</span><span class="sxs-lookup"><span data-stu-id="807dc-106">Key Size Options.</span></span>
 
-## <a name="members"></a><span data-ttu-id="bd862-108">Membros</span><span class="sxs-lookup"><span data-stu-id="bd862-108">Members</span></span>
-|<span data-ttu-id="bd862-109">Membro</span><span class="sxs-lookup"><span data-stu-id="bd862-109">Member</span></span>|<span data-ttu-id="bd862-110">Valor</span><span class="sxs-lookup"><span data-stu-id="bd862-110">Value</span></span>|<span data-ttu-id="bd862-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="bd862-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="807dc-107">Membros</span><span class="sxs-lookup"><span data-stu-id="807dc-107">Members</span></span>
+|<span data-ttu-id="807dc-108">Membro</span><span class="sxs-lookup"><span data-stu-id="807dc-108">Member</span></span>|<span data-ttu-id="807dc-109">Valor</span><span class="sxs-lookup"><span data-stu-id="807dc-109">Value</span></span>|<span data-ttu-id="807dc-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="807dc-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="bd862-112">size1024</span><span class="sxs-lookup"><span data-stu-id="bd862-112">size1024</span></span>|<span data-ttu-id="bd862-113">0</span><span class="sxs-lookup"><span data-stu-id="bd862-113">0</span></span>|<span data-ttu-id="bd862-114">1024 bits.</span><span class="sxs-lookup"><span data-stu-id="bd862-114">1024 Bits.</span></span>|
-|<span data-ttu-id="bd862-115">size2048</span><span class="sxs-lookup"><span data-stu-id="bd862-115">size2048</span></span>|<span data-ttu-id="bd862-116">1</span><span class="sxs-lookup"><span data-stu-id="bd862-116">1</span></span>|<span data-ttu-id="bd862-117">2048 bits.</span><span class="sxs-lookup"><span data-stu-id="bd862-117">2048 Bits.</span></span>|
+|<span data-ttu-id="807dc-111">size1024</span><span class="sxs-lookup"><span data-stu-id="807dc-111">size1024</span></span>|<span data-ttu-id="807dc-112">,0</span><span class="sxs-lookup"><span data-stu-id="807dc-112">0</span></span>|<span data-ttu-id="807dc-113">Bits 1024.</span><span class="sxs-lookup"><span data-stu-id="807dc-113">1024 Bits.</span></span>|
+|<span data-ttu-id="807dc-114">size2048</span><span class="sxs-lookup"><span data-stu-id="807dc-114">size2048</span></span>|<span data-ttu-id="807dc-115">1</span><span class="sxs-lookup"><span data-stu-id="807dc-115">1</span></span>|<span data-ttu-id="807dc-116">Bits 2048.</span><span class="sxs-lookup"><span data-stu-id="807dc-116">2048 Bits.</span></span>|
 
 
 

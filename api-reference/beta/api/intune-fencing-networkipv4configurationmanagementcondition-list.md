@@ -1,34 +1,34 @@
 ---
-title: Lista networkIPv4ConfigurationManagementConditions
-description: Lista as propriedades e os relacionamentos dos objetos networkIPv4ConfigurationManagementCondition.
-localization_priority: Normal
+title: Listar networkIPv4ConfigurationManagementConditions
+description: Listar Propriedades e relações dos objetos networkIPv4ConfigurationManagementCondition.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fa445b2e03159da71831227aece3dfce64fea02c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: b3115e992b03895276837fd8d7f0d44263ab97af
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29412566"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30159665"
 ---
-# <a name="list-networkipv4configurationmanagementconditions"></a><span data-ttu-id="ee753-103">Lista networkIPv4ConfigurationManagementConditions</span><span class="sxs-lookup"><span data-stu-id="ee753-103">List networkIPv4ConfigurationManagementConditions</span></span>
+# <a name="list-networkipv4configurationmanagementconditions"></a><span data-ttu-id="b6bc9-103">Listar networkIPv4ConfigurationManagementConditions</span><span class="sxs-lookup"><span data-stu-id="b6bc9-103">List networkIPv4ConfigurationManagementConditions</span></span>
 
-> <span data-ttu-id="ee753-104">**Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações.</span><span class="sxs-lookup"><span data-stu-id="ee753-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="ee753-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="ee753-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="b6bc9-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="b6bc9-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="ee753-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.</span><span class="sxs-lookup"><span data-stu-id="ee753-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="b6bc9-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="b6bc9-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="ee753-107">Lista as propriedades e os relacionamentos dos objetos [networkIPv4ConfigurationManagementCondition](../resources/intune-fencing-networkipv4configurationmanagementcondition.md) .</span><span class="sxs-lookup"><span data-stu-id="ee753-107">List properties and relationships of the [networkIPv4ConfigurationManagementCondition](../resources/intune-fencing-networkipv4configurationmanagementcondition.md) objects.</span></span>
+<span data-ttu-id="b6bc9-106">Listar Propriedades e relações dos objetos [networkIPv4ConfigurationManagementCondition](../resources/intune-fencing-networkipv4configurationmanagementcondition.md) .</span><span class="sxs-lookup"><span data-stu-id="b6bc9-106">List properties and relationships of the [networkIPv4ConfigurationManagementCondition](../resources/intune-fencing-networkipv4configurationmanagementcondition.md) objects.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="ee753-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="ee753-108">Prerequisites</span></span>
-<span data-ttu-id="ee753-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="ee753-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="b6bc9-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="b6bc9-107">Prerequisites</span></span>
+<span data-ttu-id="b6bc9-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="b6bc9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
 
-|<span data-ttu-id="ee753-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="ee753-111">Permission type</span></span>|<span data-ttu-id="ee753-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="ee753-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="b6bc9-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="b6bc9-110">Permission type</span></span>|<span data-ttu-id="b6bc9-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="b6bc9-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="ee753-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="ee753-113">Delegated (work or school account)</span></span>|<span data-ttu-id="ee753-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="ee753-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
-|<span data-ttu-id="ee753-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="ee753-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="ee753-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ee753-116">Not supported.</span></span>|
-|<span data-ttu-id="ee753-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="ee753-117">Application</span></span>|<span data-ttu-id="ee753-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ee753-118">Not supported.</span></span>|
+|<span data-ttu-id="b6bc9-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="b6bc9-112">Delegated (work or school account)</span></span>|<span data-ttu-id="b6bc9-113">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="b6bc9-113">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="b6bc9-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="b6bc9-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="b6bc9-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="b6bc9-115">Not supported.</span></span>|
+|<span data-ttu-id="b6bc9-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="b6bc9-116">Application</span></span>|<span data-ttu-id="b6bc9-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="b6bc9-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="ee753-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="ee753-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b6bc9-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="b6bc9-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,28 +38,28 @@ GET /deviceManagement/managementConditions
 GET /deviceManagement/managementConditions/{managementConditionId}/managementConditionStatements/{managementConditionStatementId}/managementConditions
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="ee753-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="ee753-120">Request headers</span></span>
-|<span data-ttu-id="ee753-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="ee753-121">Header</span></span>|<span data-ttu-id="ee753-122">Valor</span><span class="sxs-lookup"><span data-stu-id="ee753-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="b6bc9-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="b6bc9-119">Request headers</span></span>
+|<span data-ttu-id="b6bc9-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="b6bc9-120">Header</span></span>|<span data-ttu-id="b6bc9-121">Valor</span><span class="sxs-lookup"><span data-stu-id="b6bc9-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="ee753-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="ee753-123">Authorization</span></span>|<span data-ttu-id="ee753-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="ee753-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="ee753-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="ee753-125">Accept</span></span>|<span data-ttu-id="ee753-126">application/json</span><span class="sxs-lookup"><span data-stu-id="ee753-126">application/json</span></span>|
+|<span data-ttu-id="b6bc9-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="b6bc9-122">Authorization</span></span>|<span data-ttu-id="b6bc9-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="b6bc9-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="b6bc9-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="b6bc9-124">Accept</span></span>|<span data-ttu-id="b6bc9-125">application/json</span><span class="sxs-lookup"><span data-stu-id="b6bc9-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="ee753-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="ee753-127">Request body</span></span>
-<span data-ttu-id="ee753-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="ee753-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b6bc9-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="b6bc9-126">Request body</span></span>
+<span data-ttu-id="b6bc9-127">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="b6bc9-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="ee753-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="ee753-129">Response</span></span>
-<span data-ttu-id="ee753-130">Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [networkIPv4ConfigurationManagementCondition](../resources/intune-fencing-networkipv4configurationmanagementcondition.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="ee753-130">If successful, this method returns a `200 OK` response code and a collection of [networkIPv4ConfigurationManagementCondition](../resources/intune-fencing-networkipv4configurationmanagementcondition.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="b6bc9-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="b6bc9-128">Response</span></span>
+<span data-ttu-id="b6bc9-129">Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [networkIPv4ConfigurationManagementCondition](../resources/intune-fencing-networkipv4configurationmanagementcondition.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="b6bc9-129">If successful, this method returns a `200 OK` response code and a collection of [networkIPv4ConfigurationManagementCondition](../resources/intune-fencing-networkipv4configurationmanagementcondition.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ee753-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="ee753-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="b6bc9-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="b6bc9-130">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="ee753-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ee753-132">Request</span></span>
-<span data-ttu-id="ee753-133">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="ee753-133">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="b6bc9-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="b6bc9-131">Request</span></span>
+<span data-ttu-id="b6bc9-132">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="b6bc9-132">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/managementConditions
 ```
 
-### <a name="response"></a><span data-ttu-id="ee753-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="ee753-134">Response</span></span>
-<span data-ttu-id="ee753-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="ee753-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="b6bc9-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="b6bc9-133">Response</span></span>
+<span data-ttu-id="b6bc9-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="b6bc9-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

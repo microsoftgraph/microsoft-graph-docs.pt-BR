@@ -1,34 +1,34 @@
 ---
 title: Atualizar userAppInstallStatus
-description: Atualize as propriedades de um objeto userAppInstallStatus.
-localization_priority: Normal
+description: Atualiza as propriedades de um objeto userAppInstallStatus.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 237e9f28f36fb25ea5ddad46f5a6a75242767c6b
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: c3baa0d23be3b004fe32049cee0efe08e8f7d36d
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29413833"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30144902"
 ---
-# <a name="update-userappinstallstatus"></a><span data-ttu-id="cff99-103">Atualizar userAppInstallStatus</span><span class="sxs-lookup"><span data-stu-id="cff99-103">Update userAppInstallStatus</span></span>
+# <a name="update-userappinstallstatus"></a><span data-ttu-id="3cb14-103">Atualizar userAppInstallStatus</span><span class="sxs-lookup"><span data-stu-id="3cb14-103">Update userAppInstallStatus</span></span>
 
-> <span data-ttu-id="cff99-104">**Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações.</span><span class="sxs-lookup"><span data-stu-id="cff99-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="cff99-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="cff99-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="3cb14-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="3cb14-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="cff99-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.</span><span class="sxs-lookup"><span data-stu-id="cff99-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="3cb14-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="3cb14-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="cff99-107">Atualize as propriedades de um objeto [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) .</span><span class="sxs-lookup"><span data-stu-id="cff99-107">Update the properties of a [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) object.</span></span>
+<span data-ttu-id="3cb14-106">Atualiza as propriedades de um objeto [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) .</span><span class="sxs-lookup"><span data-stu-id="3cb14-106">Update the properties of a [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="cff99-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="cff99-108">Prerequisites</span></span>
-<span data-ttu-id="cff99-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="cff99-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="3cb14-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="3cb14-107">Prerequisites</span></span>
+<span data-ttu-id="3cb14-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="3cb14-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
 
-|<span data-ttu-id="cff99-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="cff99-111">Permission type</span></span>|<span data-ttu-id="cff99-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="cff99-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="3cb14-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="3cb14-110">Permission type</span></span>|<span data-ttu-id="3cb14-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="3cb14-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="cff99-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="cff99-113">Delegated (work or school account)</span></span>|<span data-ttu-id="cff99-114">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cff99-114">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="cff99-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="cff99-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="cff99-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="cff99-116">Not supported.</span></span>|
-|<span data-ttu-id="cff99-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="cff99-117">Application</span></span>|<span data-ttu-id="cff99-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="cff99-118">Not supported.</span></span>|
+|<span data-ttu-id="3cb14-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="3cb14-112">Delegated (work or school account)</span></span>|<span data-ttu-id="3cb14-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3cb14-113">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="3cb14-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="3cb14-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="3cb14-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="3cb14-115">Not supported.</span></span>|
+|<span data-ttu-id="3cb14-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="3cb14-116">Application</span></span>|<span data-ttu-id="3cb14-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="3cb14-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="cff99-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="cff99-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3cb14-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="3cb14-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,35 +37,35 @@ ms.locfileid: "29413833"
 PATCH /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="cff99-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="cff99-120">Request headers</span></span>
-|<span data-ttu-id="cff99-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="cff99-121">Header</span></span>|<span data-ttu-id="cff99-122">Valor</span><span class="sxs-lookup"><span data-stu-id="cff99-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="3cb14-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="3cb14-119">Request headers</span></span>
+|<span data-ttu-id="3cb14-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="3cb14-120">Header</span></span>|<span data-ttu-id="3cb14-121">Valor</span><span class="sxs-lookup"><span data-stu-id="3cb14-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="cff99-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="cff99-123">Authorization</span></span>|<span data-ttu-id="cff99-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="cff99-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="cff99-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="cff99-125">Accept</span></span>|<span data-ttu-id="cff99-126">application/json</span><span class="sxs-lookup"><span data-stu-id="cff99-126">application/json</span></span>|
+|<span data-ttu-id="3cb14-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="3cb14-122">Authorization</span></span>|<span data-ttu-id="3cb14-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="3cb14-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="3cb14-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="3cb14-124">Accept</span></span>|<span data-ttu-id="3cb14-125">application/json</span><span class="sxs-lookup"><span data-stu-id="3cb14-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="cff99-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="cff99-127">Request body</span></span>
-<span data-ttu-id="cff99-128">No corpo da solicitação, fornece uma representação JSON para o objeto [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) .</span><span class="sxs-lookup"><span data-stu-id="cff99-128">In the request body, supply a JSON representation for the [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="3cb14-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="3cb14-126">Request body</span></span>
+<span data-ttu-id="3cb14-127">No corpo da solicitação, forneça uma representação JSON do objeto [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) .</span><span class="sxs-lookup"><span data-stu-id="3cb14-127">In the request body, supply a JSON representation for the [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) object.</span></span>
 
-<span data-ttu-id="cff99-129">A tabela a seguir mostra as propriedades que são necessárias quando você cria o [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md).</span><span class="sxs-lookup"><span data-stu-id="cff99-129">The following table shows the properties that are required when you create the [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md).</span></span>
+<span data-ttu-id="3cb14-128">A tabela a seguir mostra as propriedades que são necessárias ao criar [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md).</span><span class="sxs-lookup"><span data-stu-id="3cb14-128">The following table shows the properties that are required when you create the [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md).</span></span>
 
-|<span data-ttu-id="cff99-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="cff99-130">Property</span></span>|<span data-ttu-id="cff99-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="cff99-131">Type</span></span>|<span data-ttu-id="cff99-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="cff99-132">Description</span></span>|
+|<span data-ttu-id="3cb14-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="3cb14-129">Property</span></span>|<span data-ttu-id="3cb14-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="3cb14-130">Type</span></span>|<span data-ttu-id="3cb14-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="3cb14-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="cff99-133">id</span><span class="sxs-lookup"><span data-stu-id="cff99-133">id</span></span>|<span data-ttu-id="cff99-134">String</span><span class="sxs-lookup"><span data-stu-id="cff99-134">String</span></span>|<span data-ttu-id="cff99-135">Chave da entidade.</span><span class="sxs-lookup"><span data-stu-id="cff99-135">Key of the entity.</span></span>|
-|<span data-ttu-id="cff99-136">userName</span><span class="sxs-lookup"><span data-stu-id="cff99-136">userName</span></span>|<span data-ttu-id="cff99-137">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="cff99-137">String</span></span>|<span data-ttu-id="cff99-138">Nome de usuário.</span><span class="sxs-lookup"><span data-stu-id="cff99-138">User name.</span></span>|
-|<span data-ttu-id="cff99-139">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="cff99-139">userPrincipalName</span></span>|<span data-ttu-id="cff99-140">String</span><span class="sxs-lookup"><span data-stu-id="cff99-140">String</span></span>|<span data-ttu-id="cff99-141">Nome Principal de usuário.</span><span class="sxs-lookup"><span data-stu-id="cff99-141">User Principal Name.</span></span>|
-|<span data-ttu-id="cff99-142">installedDeviceCount</span><span class="sxs-lookup"><span data-stu-id="cff99-142">installedDeviceCount</span></span>|<span data-ttu-id="cff99-143">Int32</span><span class="sxs-lookup"><span data-stu-id="cff99-143">Int32</span></span>|<span data-ttu-id="cff99-144">Contagem de dispositivos instalados.</span><span class="sxs-lookup"><span data-stu-id="cff99-144">Installed Device Count.</span></span>|
-|<span data-ttu-id="cff99-145">failedDeviceCount</span><span class="sxs-lookup"><span data-stu-id="cff99-145">failedDeviceCount</span></span>|<span data-ttu-id="cff99-146">Int32</span><span class="sxs-lookup"><span data-stu-id="cff99-146">Int32</span></span>|<span data-ttu-id="cff99-147">Falha na contagem de dispositivos.</span><span class="sxs-lookup"><span data-stu-id="cff99-147">Failed Device Count.</span></span>|
-|<span data-ttu-id="cff99-148">notInstalledDeviceCount</span><span class="sxs-lookup"><span data-stu-id="cff99-148">notInstalledDeviceCount</span></span>|<span data-ttu-id="cff99-149">Int32</span><span class="sxs-lookup"><span data-stu-id="cff99-149">Int32</span></span>|<span data-ttu-id="cff99-150">Sem contagem de dispositivos instalados.</span><span class="sxs-lookup"><span data-stu-id="cff99-150">Not installed device count.</span></span>|
+|<span data-ttu-id="3cb14-132">id</span><span class="sxs-lookup"><span data-stu-id="3cb14-132">id</span></span>|<span data-ttu-id="3cb14-133">String</span><span class="sxs-lookup"><span data-stu-id="3cb14-133">String</span></span>|<span data-ttu-id="3cb14-134">Chave da entidade.</span><span class="sxs-lookup"><span data-stu-id="3cb14-134">Key of the entity.</span></span>|
+|<span data-ttu-id="3cb14-135">userName</span><span class="sxs-lookup"><span data-stu-id="3cb14-135">userName</span></span>|<span data-ttu-id="3cb14-136">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="3cb14-136">String</span></span>|<span data-ttu-id="3cb14-137">Nome de usuário.</span><span class="sxs-lookup"><span data-stu-id="3cb14-137">User name.</span></span>|
+|<span data-ttu-id="3cb14-138">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="3cb14-138">userPrincipalName</span></span>|<span data-ttu-id="3cb14-139">String</span><span class="sxs-lookup"><span data-stu-id="3cb14-139">String</span></span>|<span data-ttu-id="3cb14-140">Nome principal do usuário.</span><span class="sxs-lookup"><span data-stu-id="3cb14-140">User Principal Name.</span></span>|
+|<span data-ttu-id="3cb14-141">installedDeviceCount</span><span class="sxs-lookup"><span data-stu-id="3cb14-141">installedDeviceCount</span></span>|<span data-ttu-id="3cb14-142">Int32</span><span class="sxs-lookup"><span data-stu-id="3cb14-142">Int32</span></span>|<span data-ttu-id="3cb14-143">Contagem de dispositivos instalados.</span><span class="sxs-lookup"><span data-stu-id="3cb14-143">Installed Device Count.</span></span>|
+|<span data-ttu-id="3cb14-144">failedDeviceCount</span><span class="sxs-lookup"><span data-stu-id="3cb14-144">failedDeviceCount</span></span>|<span data-ttu-id="3cb14-145">Int32</span><span class="sxs-lookup"><span data-stu-id="3cb14-145">Int32</span></span>|<span data-ttu-id="3cb14-146">Falha na contagem de dispositivos.</span><span class="sxs-lookup"><span data-stu-id="3cb14-146">Failed Device Count.</span></span>|
+|<span data-ttu-id="3cb14-147">notInstalledDeviceCount</span><span class="sxs-lookup"><span data-stu-id="3cb14-147">notInstalledDeviceCount</span></span>|<span data-ttu-id="3cb14-148">Int32</span><span class="sxs-lookup"><span data-stu-id="3cb14-148">Int32</span></span>|<span data-ttu-id="3cb14-149">Sem contagem de dispositivos instalados.</span><span class="sxs-lookup"><span data-stu-id="3cb14-149">Not installed device count.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="cff99-151">Resposta</span><span class="sxs-lookup"><span data-stu-id="cff99-151">Response</span></span>
-<span data-ttu-id="cff99-152">Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto atualizado [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="cff99-152">If successful, this method returns a `200 OK` response code and an updated [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="3cb14-150">Resposta</span><span class="sxs-lookup"><span data-stu-id="3cb14-150">Response</span></span>
+<span data-ttu-id="3cb14-151">Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="3cb14-151">If successful, this method returns a `200 OK` response code and an updated [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="cff99-153">Exemplo</span><span class="sxs-lookup"><span data-stu-id="cff99-153">Example</span></span>
+## <a name="example"></a><span data-ttu-id="3cb14-152">Exemplo</span><span class="sxs-lookup"><span data-stu-id="3cb14-152">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="cff99-154">Solicitação</span><span class="sxs-lookup"><span data-stu-id="cff99-154">Request</span></span>
-<span data-ttu-id="cff99-155">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="cff99-155">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="3cb14-153">Solicitação</span><span class="sxs-lookup"><span data-stu-id="3cb14-153">Request</span></span>
+<span data-ttu-id="3cb14-154">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="3cb14-154">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}
 Content-type: application/json
@@ -81,8 +81,8 @@ Content-length: 239
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="cff99-156">Resposta</span><span class="sxs-lookup"><span data-stu-id="cff99-156">Response</span></span>
-<span data-ttu-id="cff99-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="cff99-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="3cb14-155">Resposta</span><span class="sxs-lookup"><span data-stu-id="3cb14-155">Response</span></span>
+<span data-ttu-id="3cb14-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="3cb14-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

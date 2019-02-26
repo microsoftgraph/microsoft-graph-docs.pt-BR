@@ -1,29 +1,29 @@
 ---
-title: tipo de enum vpnAuthenticationMethod
-description: Método de autenticação de VPN.
-localization_priority: Normal
+title: tipo de enumeração vpnAuthenticationMethod
+description: Método de autenticação VPN.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 33400d7fcd94cd0aec0111b0627704a75e9729aa
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: d6f66d6c3f7f16494a0ae98600c02cd97bfac335
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29396102"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30146393"
 ---
-# <a name="vpnauthenticationmethod-enum-type"></a><span data-ttu-id="ec4ba-103">tipo de enum vpnAuthenticationMethod</span><span class="sxs-lookup"><span data-stu-id="ec4ba-103">vpnAuthenticationMethod enum type</span></span>
+# <a name="vpnauthenticationmethod-enum-type"></a><span data-ttu-id="00830-103">tipo de enumeração vpnAuthenticationMethod</span><span class="sxs-lookup"><span data-stu-id="00830-103">vpnAuthenticationMethod enum type</span></span>
 
-> <span data-ttu-id="ec4ba-104">**Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações.</span><span class="sxs-lookup"><span data-stu-id="ec4ba-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="ec4ba-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="ec4ba-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="00830-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="00830-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="ec4ba-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.</span><span class="sxs-lookup"><span data-stu-id="ec4ba-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="00830-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="00830-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="ec4ba-107">Método de autenticação de VPN.</span><span class="sxs-lookup"><span data-stu-id="ec4ba-107">VPN Authentication Method.</span></span>
+<span data-ttu-id="00830-106">Método de autenticação VPN.</span><span class="sxs-lookup"><span data-stu-id="00830-106">VPN Authentication Method.</span></span>
 
-## <a name="members"></a><span data-ttu-id="ec4ba-108">Membros</span><span class="sxs-lookup"><span data-stu-id="ec4ba-108">Members</span></span>
-|<span data-ttu-id="ec4ba-109">Membro</span><span class="sxs-lookup"><span data-stu-id="ec4ba-109">Member</span></span>|<span data-ttu-id="ec4ba-110">Valor</span><span class="sxs-lookup"><span data-stu-id="ec4ba-110">Value</span></span>|<span data-ttu-id="ec4ba-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="ec4ba-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="00830-107">Membros</span><span class="sxs-lookup"><span data-stu-id="00830-107">Members</span></span>
+|<span data-ttu-id="00830-108">Membro</span><span class="sxs-lookup"><span data-stu-id="00830-108">Member</span></span>|<span data-ttu-id="00830-109">Valor</span><span class="sxs-lookup"><span data-stu-id="00830-109">Value</span></span>|<span data-ttu-id="00830-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="00830-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="ec4ba-112">certificado</span><span class="sxs-lookup"><span data-stu-id="ec4ba-112">certificate</span></span>|<span data-ttu-id="ec4ba-113">0</span><span class="sxs-lookup"><span data-stu-id="ec4ba-113">0</span></span>|<span data-ttu-id="ec4ba-114">Autentica com um certificado.</span><span class="sxs-lookup"><span data-stu-id="ec4ba-114">Authenticate with a certificate.</span></span>|
-|<span data-ttu-id="ec4ba-115">usernameAndPassword</span><span class="sxs-lookup"><span data-stu-id="ec4ba-115">usernameAndPassword</span></span>|<span data-ttu-id="ec4ba-116">1</span><span class="sxs-lookup"><span data-stu-id="ec4ba-116">1</span></span>|<span data-ttu-id="ec4ba-117">Usar o nome de usuário e senha para autenticação.</span><span class="sxs-lookup"><span data-stu-id="ec4ba-117">Use username and password for authentication.</span></span>|
+|<span data-ttu-id="00830-111">certificado</span><span class="sxs-lookup"><span data-stu-id="00830-111">certificate</span></span>|<span data-ttu-id="00830-112">,0</span><span class="sxs-lookup"><span data-stu-id="00830-112">0</span></span>|<span data-ttu-id="00830-113">Autenticar com um certificado.</span><span class="sxs-lookup"><span data-stu-id="00830-113">Authenticate with a certificate.</span></span>|
+|<span data-ttu-id="00830-114">usernameAndPassword</span><span class="sxs-lookup"><span data-stu-id="00830-114">usernameAndPassword</span></span>|<span data-ttu-id="00830-115">1</span><span class="sxs-lookup"><span data-stu-id="00830-115">1</span></span>|<span data-ttu-id="00830-116">Usar nome de usuário e senha para autenticação.</span><span class="sxs-lookup"><span data-stu-id="00830-116">Use username and password for authentication.</span></span>|
 
 
 

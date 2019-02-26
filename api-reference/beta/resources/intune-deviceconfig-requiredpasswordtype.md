@@ -1,30 +1,30 @@
 ---
-title: tipo de enum requiredPasswordType
-description: Valores possíveis de senhas necessários.
-localization_priority: Normal
+title: tipo de enumeração requiredPasswordType
+description: Possíveis valores de senhas obrigatórias.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d254c18fd827db961c1d31e962a506fb82d32cb7
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 756a4623e117b8925c682d4a599d0f6ec05ebde0
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29416150"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30145469"
 ---
-# <a name="requiredpasswordtype-enum-type"></a><span data-ttu-id="3e7a1-103">tipo de enum requiredPasswordType</span><span class="sxs-lookup"><span data-stu-id="3e7a1-103">requiredPasswordType enum type</span></span>
+# <a name="requiredpasswordtype-enum-type"></a><span data-ttu-id="2123b-103">tipo de enumeração requiredPasswordType</span><span class="sxs-lookup"><span data-stu-id="2123b-103">requiredPasswordType enum type</span></span>
 
-> <span data-ttu-id="3e7a1-104">**Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações.</span><span class="sxs-lookup"><span data-stu-id="3e7a1-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="3e7a1-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="3e7a1-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="2123b-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="2123b-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="3e7a1-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.</span><span class="sxs-lookup"><span data-stu-id="3e7a1-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="2123b-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="2123b-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="3e7a1-107">Valores possíveis de senhas necessários.</span><span class="sxs-lookup"><span data-stu-id="3e7a1-107">Possible values of required passwords.</span></span>
+<span data-ttu-id="2123b-106">Possíveis valores de senhas obrigatórias.</span><span class="sxs-lookup"><span data-stu-id="2123b-106">Possible values of required passwords.</span></span>
 
-## <a name="members"></a><span data-ttu-id="3e7a1-108">Membros</span><span class="sxs-lookup"><span data-stu-id="3e7a1-108">Members</span></span>
-|<span data-ttu-id="3e7a1-109">Membro</span><span class="sxs-lookup"><span data-stu-id="3e7a1-109">Member</span></span>|<span data-ttu-id="3e7a1-110">Valor</span><span class="sxs-lookup"><span data-stu-id="3e7a1-110">Value</span></span>|<span data-ttu-id="3e7a1-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="3e7a1-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="2123b-107">Membros</span><span class="sxs-lookup"><span data-stu-id="2123b-107">Members</span></span>
+|<span data-ttu-id="2123b-108">Membro</span><span class="sxs-lookup"><span data-stu-id="2123b-108">Member</span></span>|<span data-ttu-id="2123b-109">Valor</span><span class="sxs-lookup"><span data-stu-id="2123b-109">Value</span></span>|<span data-ttu-id="2123b-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="2123b-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="3e7a1-112">deviceDefault</span><span class="sxs-lookup"><span data-stu-id="3e7a1-112">deviceDefault</span></span>|<span data-ttu-id="3e7a1-113">0</span><span class="sxs-lookup"><span data-stu-id="3e7a1-113">0</span></span>|<span data-ttu-id="3e7a1-114">Valor de padrão de dispositivo, sem intenção.</span><span class="sxs-lookup"><span data-stu-id="3e7a1-114">Device default value, no intent.</span></span>|
-|<span data-ttu-id="3e7a1-115">alfanumérico</span><span class="sxs-lookup"><span data-stu-id="3e7a1-115">alphanumeric</span></span>|<span data-ttu-id="3e7a1-116">1</span><span class="sxs-lookup"><span data-stu-id="3e7a1-116">1</span></span>|<span data-ttu-id="3e7a1-117">Senha alfanumérica necessária.</span><span class="sxs-lookup"><span data-stu-id="3e7a1-117">Alphanumeric password required.</span></span>|
-|<span data-ttu-id="3e7a1-118">numéricos</span><span class="sxs-lookup"><span data-stu-id="3e7a1-118">numeric</span></span>|<span data-ttu-id="3e7a1-119">2</span><span class="sxs-lookup"><span data-stu-id="3e7a1-119">2</span></span>|<span data-ttu-id="3e7a1-120">Senha numérica necessária.</span><span class="sxs-lookup"><span data-stu-id="3e7a1-120">Numeric password required.</span></span>|
+|<span data-ttu-id="2123b-111">deviceDefault</span><span class="sxs-lookup"><span data-stu-id="2123b-111">deviceDefault</span></span>|<span data-ttu-id="2123b-112">,0</span><span class="sxs-lookup"><span data-stu-id="2123b-112">0</span></span>|<span data-ttu-id="2123b-113">Valor padrão do dispositivo, sem intenção.</span><span class="sxs-lookup"><span data-stu-id="2123b-113">Device default value, no intent.</span></span>|
+|<span data-ttu-id="2123b-114">tecla</span><span class="sxs-lookup"><span data-stu-id="2123b-114">alphanumeric</span></span>|<span data-ttu-id="2123b-115">1</span><span class="sxs-lookup"><span data-stu-id="2123b-115">1</span></span>|<span data-ttu-id="2123b-116">Senha alfanumérica obrigatória.</span><span class="sxs-lookup"><span data-stu-id="2123b-116">Alphanumeric password required.</span></span>|
+|<span data-ttu-id="2123b-117">numéricos</span><span class="sxs-lookup"><span data-stu-id="2123b-117">numeric</span></span>|<span data-ttu-id="2123b-118">duas</span><span class="sxs-lookup"><span data-stu-id="2123b-118">2</span></span>|<span data-ttu-id="2123b-119">Senha numérica obrigatória.</span><span class="sxs-lookup"><span data-stu-id="2123b-119">Numeric password required.</span></span>|
 
 
 

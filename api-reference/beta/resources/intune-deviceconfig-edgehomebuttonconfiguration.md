@@ -1,33 +1,33 @@
 ---
-title: tipo de recurso de edgeHomeButtonConfiguration
-description: A classe de base de configuração do botão página inicial usada para identificar as opções disponíveis
-localization_priority: Normal
+title: tipo de recurso edgeHomeButtonConfiguration
+description: A classe base de configuração do botão de página inicial usada para identificar as opções disponíveis
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 78a57388fa698c137c27393896bbba657089fff5
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8f42b28a537aa591556d453475898d8a8cc4884e
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29429113"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30149466"
 ---
-# <a name="edgehomebuttonconfiguration-resource-type"></a><span data-ttu-id="ff29b-103">tipo de recurso de edgeHomeButtonConfiguration</span><span class="sxs-lookup"><span data-stu-id="ff29b-103">edgeHomeButtonConfiguration resource type</span></span>
+# <a name="edgehomebuttonconfiguration-resource-type"></a><span data-ttu-id="506e3-103">tipo de recurso edgeHomeButtonConfiguration</span><span class="sxs-lookup"><span data-stu-id="506e3-103">edgeHomeButtonConfiguration resource type</span></span>
 
-> <span data-ttu-id="ff29b-104">**Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações.</span><span class="sxs-lookup"><span data-stu-id="ff29b-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="ff29b-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="ff29b-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="506e3-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="506e3-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="ff29b-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.</span><span class="sxs-lookup"><span data-stu-id="ff29b-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="506e3-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="506e3-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="ff29b-107">A classe de base de configuração do botão página inicial usada para identificar as opções disponíveis</span><span class="sxs-lookup"><span data-stu-id="ff29b-107">The home button configuration base class used to identify the available options</span></span>
+<span data-ttu-id="506e3-106">A classe base de configuração do botão de página inicial usada para identificar as opções disponíveis</span><span class="sxs-lookup"><span data-stu-id="506e3-106">The home button configuration base class used to identify the available options</span></span>
 
-## <a name="properties"></a><span data-ttu-id="ff29b-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="ff29b-108">Properties</span></span>
-|<span data-ttu-id="ff29b-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="ff29b-109">Property</span></span>|<span data-ttu-id="ff29b-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="ff29b-110">Type</span></span>|<span data-ttu-id="ff29b-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="ff29b-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="506e3-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="506e3-107">Properties</span></span>
+|<span data-ttu-id="506e3-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="506e3-108">Property</span></span>|<span data-ttu-id="506e3-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="506e3-109">Type</span></span>|<span data-ttu-id="506e3-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="506e3-110">Description</span></span>|
 |:---|:---|:---|
 
-## <a name="relationships"></a><span data-ttu-id="ff29b-112">Relações</span><span class="sxs-lookup"><span data-stu-id="ff29b-112">Relationships</span></span>
-<span data-ttu-id="ff29b-113">Nenhum</span><span class="sxs-lookup"><span data-stu-id="ff29b-113">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="506e3-111">Relações</span><span class="sxs-lookup"><span data-stu-id="506e3-111">Relationships</span></span>
+<span data-ttu-id="506e3-112">Nenhum</span><span class="sxs-lookup"><span data-stu-id="506e3-112">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="ff29b-114">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="ff29b-114">JSON Representation</span></span>
-<span data-ttu-id="ff29b-115">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="ff29b-115">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="506e3-113">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="506e3-113">JSON Representation</span></span>
+<span data-ttu-id="506e3-114">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="506e3-114">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.edgeHomeButtonConfiguration"
