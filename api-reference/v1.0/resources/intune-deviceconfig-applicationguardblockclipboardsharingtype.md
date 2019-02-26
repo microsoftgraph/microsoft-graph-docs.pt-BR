@@ -1,29 +1,30 @@
 ---
-title: tipo de enum applicationGuardBlockClipboardSharingType
+title: tipo de enumeração applicationGuardBlockClipboardSharingType
 description: Valores possíveis para applicationGuardBlockClipboardSharingType
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 7dacce6dbe91a2bbc76b52795bc20de4cf0e5f71
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: f3d1b5132773bb0bf92f35c39b660726d7a1ef66
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27911879"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30261856"
 ---
-# <a name="applicationguardblockclipboardsharingtype-enum-type"></a><span data-ttu-id="d1166-103">tipo de enum applicationGuardBlockClipboardSharingType</span><span class="sxs-lookup"><span data-stu-id="d1166-103">applicationGuardBlockClipboardSharingType enum type</span></span>
+# <a name="applicationguardblockclipboardsharingtype-enum-type"></a><span data-ttu-id="3a40b-103">tipo de enumeração applicationGuardBlockClipboardSharingType</span><span class="sxs-lookup"><span data-stu-id="3a40b-103">applicationGuardBlockClipboardSharingType enum type</span></span>
 
-> <span data-ttu-id="d1166-104">**Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="d1166-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="3a40b-104">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="3a40b-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="d1166-105">Valores possíveis para applicationGuardBlockClipboardSharingType</span><span class="sxs-lookup"><span data-stu-id="d1166-105">Possible values for applicationGuardBlockClipboardSharingType</span></span>
-## <a name="members"></a><span data-ttu-id="d1166-106">Membros</span><span class="sxs-lookup"><span data-stu-id="d1166-106">Members</span></span>
-|<span data-ttu-id="d1166-107">Membro</span><span class="sxs-lookup"><span data-stu-id="d1166-107">Member</span></span>|<span data-ttu-id="d1166-108">Valor</span><span class="sxs-lookup"><span data-stu-id="d1166-108">Value</span></span>|<span data-ttu-id="d1166-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="d1166-109">Description</span></span>|
+<span data-ttu-id="3a40b-105">Valores possíveis para applicationGuardBlockClipboardSharingType</span><span class="sxs-lookup"><span data-stu-id="3a40b-105">Possible values for applicationGuardBlockClipboardSharingType</span></span>
+
+## <a name="members"></a><span data-ttu-id="3a40b-106">Membros</span><span class="sxs-lookup"><span data-stu-id="3a40b-106">Members</span></span>
+|<span data-ttu-id="3a40b-107">Membro</span><span class="sxs-lookup"><span data-stu-id="3a40b-107">Member</span></span>|<span data-ttu-id="3a40b-108">Valor</span><span class="sxs-lookup"><span data-stu-id="3a40b-108">Value</span></span>|<span data-ttu-id="3a40b-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="3a40b-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="d1166-110">não-configuradas</span><span class="sxs-lookup"><span data-stu-id="d1166-110">notConfigured</span></span>|<span data-ttu-id="d1166-111">0</span><span class="sxs-lookup"><span data-stu-id="d1166-111">0</span></span>|<span data-ttu-id="d1166-112">Não configurado</span><span class="sxs-lookup"><span data-stu-id="d1166-112">Not Configured</span></span>|
-|<span data-ttu-id="d1166-113">blockBoth</span><span class="sxs-lookup"><span data-stu-id="d1166-113">blockBoth</span></span>|<span data-ttu-id="d1166-114">1</span><span class="sxs-lookup"><span data-stu-id="d1166-114">1</span></span>|<span data-ttu-id="d1166-115">Área de transferência de bloco de compartilhamento de dados do Host para o contêiner e do contêiner ao Host</span><span class="sxs-lookup"><span data-stu-id="d1166-115">Block clipboard to share data both from Host to Container and from Container to Host</span></span>|
-|<span data-ttu-id="d1166-116">blockHostToContainer</span><span class="sxs-lookup"><span data-stu-id="d1166-116">blockHostToContainer</span></span>|<span data-ttu-id="d1166-117">2</span><span class="sxs-lookup"><span data-stu-id="d1166-117">2</span></span>|<span data-ttu-id="d1166-118">Área de transferência do bloco de compartilhamento de dados do Host para o contêiner</span><span class="sxs-lookup"><span data-stu-id="d1166-118">Block clipboard to share data from Host to Container</span></span>|
-|<span data-ttu-id="d1166-119">blockContainerToHost</span><span class="sxs-lookup"><span data-stu-id="d1166-119">blockContainerToHost</span></span>|<span data-ttu-id="d1166-120">3</span><span class="sxs-lookup"><span data-stu-id="d1166-120">3</span></span>|<span data-ttu-id="d1166-121">Área de transferência do bloco de compartilhamento de dados do contêiner para hospedar</span><span class="sxs-lookup"><span data-stu-id="d1166-121">Block clipboard to share data from Container to Host</span></span>|
-|<span data-ttu-id="d1166-122">blockNone</span><span class="sxs-lookup"><span data-stu-id="d1166-122">blockNone</span></span>|<span data-ttu-id="d1166-123">4</span><span class="sxs-lookup"><span data-stu-id="d1166-123">4</span></span>|<span data-ttu-id="d1166-124">Área de transferência do bloco compartilhem dados nem do Host para o contêiner do contêiner ao Host</span><span class="sxs-lookup"><span data-stu-id="d1166-124">Block clipboard to share data neither from Host to Container nor from Container to Host</span></span>|
+|<span data-ttu-id="3a40b-110">notConfigured</span><span class="sxs-lookup"><span data-stu-id="3a40b-110">notConfigured</span></span>|<span data-ttu-id="3a40b-111">,0</span><span class="sxs-lookup"><span data-stu-id="3a40b-111">0</span></span>|<span data-ttu-id="3a40b-112">Não configurado</span><span class="sxs-lookup"><span data-stu-id="3a40b-112">Not Configured</span></span>|
+|<span data-ttu-id="3a40b-113">blockBoth</span><span class="sxs-lookup"><span data-stu-id="3a40b-113">blockBoth</span></span>|<span data-ttu-id="3a40b-114">1</span><span class="sxs-lookup"><span data-stu-id="3a40b-114">1</span></span>|<span data-ttu-id="3a40b-115">Bloquear a área de transferência para compartilhar dados do host para o contêiner e de contêiner para o host</span><span class="sxs-lookup"><span data-stu-id="3a40b-115">Block clipboard to share data both from Host to Container and from Container to Host</span></span>|
+|<span data-ttu-id="3a40b-116">blockHostToContainer</span><span class="sxs-lookup"><span data-stu-id="3a40b-116">blockHostToContainer</span></span>|<span data-ttu-id="3a40b-117">duas</span><span class="sxs-lookup"><span data-stu-id="3a40b-117">2</span></span>|<span data-ttu-id="3a40b-118">Bloquear a área de transferência para compartilhar dados do host para o contêiner</span><span class="sxs-lookup"><span data-stu-id="3a40b-118">Block clipboard to share data from Host to Container</span></span>|
+|<span data-ttu-id="3a40b-119">blockContainerToHost</span><span class="sxs-lookup"><span data-stu-id="3a40b-119">blockContainerToHost</span></span>|<span data-ttu-id="3a40b-120">3D</span><span class="sxs-lookup"><span data-stu-id="3a40b-120">3</span></span>|<span data-ttu-id="3a40b-121">Bloquear área de transferência para compartilhar dados de contêiner para host</span><span class="sxs-lookup"><span data-stu-id="3a40b-121">Block clipboard to share data from Container to Host</span></span>|
+|<span data-ttu-id="3a40b-122">blockNone</span><span class="sxs-lookup"><span data-stu-id="3a40b-122">blockNone</span></span>|<span data-ttu-id="3a40b-123">quatro</span><span class="sxs-lookup"><span data-stu-id="3a40b-123">4</span></span>|<span data-ttu-id="3a40b-124">Bloquear área de transferência para compartilhar dados que não sejam do host para o contêiner nem do contêiner para o host</span><span class="sxs-lookup"><span data-stu-id="3a40b-124">Block clipboard to share data neither from Host to Container nor from Container to Host</span></span>|
 
 
 

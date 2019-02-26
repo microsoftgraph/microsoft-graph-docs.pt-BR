@@ -1,28 +1,29 @@
 ---
-title: tipo de enum bitLockerEncryptionMethod
-description: Tipos de BitLockerEncryptionMethod
+title: tipo de enumeração bitLockerEncryptionMethod
+description: Tipos BitLockerEncryptionMethod
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 8c40066deff5823c1aba469b8284fb6d6fcaf445
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: e1fd12622a29f4ec1dee1fe044309bb6d0d8bcc1
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27927706"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30262220"
 ---
-# <a name="bitlockerencryptionmethod-enum-type"></a><span data-ttu-id="bdb20-103">tipo de enum bitLockerEncryptionMethod</span><span class="sxs-lookup"><span data-stu-id="bdb20-103">bitLockerEncryptionMethod enum type</span></span>
+# <a name="bitlockerencryptionmethod-enum-type"></a><span data-ttu-id="ed5a3-103">tipo de enumeração bitLockerEncryptionMethod</span><span class="sxs-lookup"><span data-stu-id="ed5a3-103">bitLockerEncryptionMethod enum type</span></span>
 
-> <span data-ttu-id="bdb20-104">**Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="bdb20-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="ed5a3-104">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="ed5a3-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="bdb20-105">Tipos de BitLockerEncryptionMethod</span><span class="sxs-lookup"><span data-stu-id="bdb20-105">BitLockerEncryptionMethod types</span></span>
-## <a name="members"></a><span data-ttu-id="bdb20-106">Membros</span><span class="sxs-lookup"><span data-stu-id="bdb20-106">Members</span></span>
-|<span data-ttu-id="bdb20-107">Membro</span><span class="sxs-lookup"><span data-stu-id="bdb20-107">Member</span></span>|<span data-ttu-id="bdb20-108">Valor</span><span class="sxs-lookup"><span data-stu-id="bdb20-108">Value</span></span>|<span data-ttu-id="bdb20-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="bdb20-109">Description</span></span>|
+<span data-ttu-id="ed5a3-105">Tipos BitLockerEncryptionMethod</span><span class="sxs-lookup"><span data-stu-id="ed5a3-105">BitLockerEncryptionMethod types</span></span>
+
+## <a name="members"></a><span data-ttu-id="ed5a3-106">Membros</span><span class="sxs-lookup"><span data-stu-id="ed5a3-106">Members</span></span>
+|<span data-ttu-id="ed5a3-107">Membro</span><span class="sxs-lookup"><span data-stu-id="ed5a3-107">Member</span></span>|<span data-ttu-id="ed5a3-108">Valor</span><span class="sxs-lookup"><span data-stu-id="ed5a3-108">Value</span></span>|<span data-ttu-id="ed5a3-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="ed5a3-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="bdb20-110">aesCbc128</span><span class="sxs-lookup"><span data-stu-id="bdb20-110">aesCbc128</span></span>|<span data-ttu-id="bdb20-111">3</span><span class="sxs-lookup"><span data-stu-id="bdb20-111">3</span></span>|<span data-ttu-id="bdb20-112">AES-CBC 128 bits.</span><span class="sxs-lookup"><span data-stu-id="bdb20-112">AES-CBC 128-bit.</span></span>|
-|<span data-ttu-id="bdb20-113">aesCbc256</span><span class="sxs-lookup"><span data-stu-id="bdb20-113">aesCbc256</span></span>|<span data-ttu-id="bdb20-114">4</span><span class="sxs-lookup"><span data-stu-id="bdb20-114">4</span></span>|<span data-ttu-id="bdb20-115">AES-CBC 256 bits.</span><span class="sxs-lookup"><span data-stu-id="bdb20-115">AES-CBC 256-bit.</span></span>|
-|<span data-ttu-id="bdb20-116">xtsAes128</span><span class="sxs-lookup"><span data-stu-id="bdb20-116">xtsAes128</span></span>|<span data-ttu-id="bdb20-117">6</span><span class="sxs-lookup"><span data-stu-id="bdb20-117">6</span></span>|<span data-ttu-id="bdb20-118">XTS-AES de 128 bits.</span><span class="sxs-lookup"><span data-stu-id="bdb20-118">XTS-AES 128-bit.</span></span>|
-|<span data-ttu-id="bdb20-119">xtsAes256</span><span class="sxs-lookup"><span data-stu-id="bdb20-119">xtsAes256</span></span>|<span data-ttu-id="bdb20-120">7</span><span class="sxs-lookup"><span data-stu-id="bdb20-120">7</span></span>|<span data-ttu-id="bdb20-121">XTS-AES 256 bits.</span><span class="sxs-lookup"><span data-stu-id="bdb20-121">XTS-AES 256-bit.</span></span>|
+|<span data-ttu-id="ed5a3-110">aesCbc128</span><span class="sxs-lookup"><span data-stu-id="ed5a3-110">aesCbc128</span></span>|<span data-ttu-id="ed5a3-111">3D</span><span class="sxs-lookup"><span data-stu-id="ed5a3-111">3</span></span>|<span data-ttu-id="ed5a3-112">AES-CBC 128-bit.</span><span class="sxs-lookup"><span data-stu-id="ed5a3-112">AES-CBC 128-bit.</span></span>|
+|<span data-ttu-id="ed5a3-113">aesCbc256</span><span class="sxs-lookup"><span data-stu-id="ed5a3-113">aesCbc256</span></span>|<span data-ttu-id="ed5a3-114">quatro</span><span class="sxs-lookup"><span data-stu-id="ed5a3-114">4</span></span>|<span data-ttu-id="ed5a3-115">AES-CBC 256-bit.</span><span class="sxs-lookup"><span data-stu-id="ed5a3-115">AES-CBC 256-bit.</span></span>|
+|<span data-ttu-id="ed5a3-116">xtsAes128</span><span class="sxs-lookup"><span data-stu-id="ed5a3-116">xtsAes128</span></span>|<span data-ttu-id="ed5a3-117">6</span><span class="sxs-lookup"><span data-stu-id="ed5a3-117">6</span></span>|<span data-ttu-id="ed5a3-118">XTS-AES 128-bit.</span><span class="sxs-lookup"><span data-stu-id="ed5a3-118">XTS-AES 128-bit.</span></span>|
+|<span data-ttu-id="ed5a3-119">xtsAes256</span><span class="sxs-lookup"><span data-stu-id="ed5a3-119">xtsAes256</span></span>|<span data-ttu-id="ed5a3-120">178</span><span class="sxs-lookup"><span data-stu-id="ed5a3-120">7</span></span>|<span data-ttu-id="ed5a3-121">XTS-AES 256-bit.</span><span class="sxs-lookup"><span data-stu-id="ed5a3-121">XTS-AES 256-bit.</span></span>|
 
 
 
