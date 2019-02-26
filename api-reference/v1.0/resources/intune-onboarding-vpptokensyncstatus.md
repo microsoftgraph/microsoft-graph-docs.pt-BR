@@ -1,28 +1,29 @@
 ---
-title: tipo de enum vppTokenSyncStatus
-description: Status de sincronização possíveis associados com um token de programa de compra de Volume do Apple.
+title: tipo de enumeração vppTokenSyncStatus
+description: Possíveis status de sincronização associados a um token do Apple Volume Purchase Program.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: dfdb80ae40abcc505927b94a33330bc09454e790
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 6938fd41b6cd7c089b08edb629bc1197ec47c2d7
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27965079"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30254048"
 ---
-# <a name="vpptokensyncstatus-enum-type"></a><span data-ttu-id="52128-103">tipo de enum vppTokenSyncStatus</span><span class="sxs-lookup"><span data-stu-id="52128-103">vppTokenSyncStatus enum type</span></span>
+# <a name="vpptokensyncstatus-enum-type"></a><span data-ttu-id="07d6e-103">tipo de enumeração vppTokenSyncStatus</span><span class="sxs-lookup"><span data-stu-id="07d6e-103">vppTokenSyncStatus enum type</span></span>
 
-> <span data-ttu-id="52128-104">**Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="52128-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="07d6e-104">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="07d6e-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="52128-105">Status de sincronização possíveis associados com um token de programa de compra de Volume do Apple.</span><span class="sxs-lookup"><span data-stu-id="52128-105">Possible sync statuses associated with an Apple Volume Purchase Program token.</span></span>
-## <a name="members"></a><span data-ttu-id="52128-106">Membros</span><span class="sxs-lookup"><span data-stu-id="52128-106">Members</span></span>
-|<span data-ttu-id="52128-107">Membro</span><span class="sxs-lookup"><span data-stu-id="52128-107">Member</span></span>|<span data-ttu-id="52128-108">Valor</span><span class="sxs-lookup"><span data-stu-id="52128-108">Value</span></span>|<span data-ttu-id="52128-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="52128-109">Description</span></span>|
+<span data-ttu-id="07d6e-105">Possíveis status de sincronização associados a um token do Apple Volume Purchase Program.</span><span class="sxs-lookup"><span data-stu-id="07d6e-105">Possible sync statuses associated with an Apple Volume Purchase Program token.</span></span>
+
+## <a name="members"></a><span data-ttu-id="07d6e-106">Membros</span><span class="sxs-lookup"><span data-stu-id="07d6e-106">Members</span></span>
+|<span data-ttu-id="07d6e-107">Membro</span><span class="sxs-lookup"><span data-stu-id="07d6e-107">Member</span></span>|<span data-ttu-id="07d6e-108">Valor</span><span class="sxs-lookup"><span data-stu-id="07d6e-108">Value</span></span>|<span data-ttu-id="07d6e-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="07d6e-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="52128-110">nenhum</span><span class="sxs-lookup"><span data-stu-id="52128-110">none</span></span>|<span data-ttu-id="52128-111">0</span><span class="sxs-lookup"><span data-stu-id="52128-111">0</span></span>|<span data-ttu-id="52128-112">Status do padrão.</span><span class="sxs-lookup"><span data-stu-id="52128-112">Default status.</span></span>|
-|<span data-ttu-id="52128-113">inProgress</span><span class="sxs-lookup"><span data-stu-id="52128-113">inProgress</span></span>|<span data-ttu-id="52128-114">1</span><span class="sxs-lookup"><span data-stu-id="52128-114">1</span></span>|<span data-ttu-id="52128-115">Última sincronização em andamento.</span><span class="sxs-lookup"><span data-stu-id="52128-115">Last Sync in progress.</span></span>|
-|<span data-ttu-id="52128-116">concluído</span><span class="sxs-lookup"><span data-stu-id="52128-116">completed</span></span>|<span data-ttu-id="52128-117">2</span><span class="sxs-lookup"><span data-stu-id="52128-117">2</span></span>|<span data-ttu-id="52128-118">Última sincronização concluída com êxito.</span><span class="sxs-lookup"><span data-stu-id="52128-118">Last Sync completed successfully.</span></span>|
-|<span data-ttu-id="52128-119">Falha</span><span class="sxs-lookup"><span data-stu-id="52128-119">failed</span></span>|<span data-ttu-id="52128-120">3</span><span class="sxs-lookup"><span data-stu-id="52128-120">3</span></span>|<span data-ttu-id="52128-121">Falha na última sincronização.</span><span class="sxs-lookup"><span data-stu-id="52128-121">Last Sync failed.</span></span>|
+|<span data-ttu-id="07d6e-110">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="07d6e-110">none</span></span>|<span data-ttu-id="07d6e-111">,0</span><span class="sxs-lookup"><span data-stu-id="07d6e-111">0</span></span>|<span data-ttu-id="07d6e-112">Status padrão.</span><span class="sxs-lookup"><span data-stu-id="07d6e-112">Default status.</span></span>|
+|<span data-ttu-id="07d6e-113">inProgress</span><span class="sxs-lookup"><span data-stu-id="07d6e-113">inProgress</span></span>|<span data-ttu-id="07d6e-114">1</span><span class="sxs-lookup"><span data-stu-id="07d6e-114">1</span></span>|<span data-ttu-id="07d6e-115">Última sincronização em andamento.</span><span class="sxs-lookup"><span data-stu-id="07d6e-115">Last Sync in progress.</span></span>|
+|<span data-ttu-id="07d6e-116">Completed</span><span class="sxs-lookup"><span data-stu-id="07d6e-116">completed</span></span>|<span data-ttu-id="07d6e-117">duas</span><span class="sxs-lookup"><span data-stu-id="07d6e-117">2</span></span>|<span data-ttu-id="07d6e-118">Última sincronização concluída com êxito.</span><span class="sxs-lookup"><span data-stu-id="07d6e-118">Last Sync completed successfully.</span></span>|
+|<span data-ttu-id="07d6e-119">falhou</span><span class="sxs-lookup"><span data-stu-id="07d6e-119">failed</span></span>|<span data-ttu-id="07d6e-120">3D</span><span class="sxs-lookup"><span data-stu-id="07d6e-120">3</span></span>|<span data-ttu-id="07d6e-121">Falha na última sincronização.</span><span class="sxs-lookup"><span data-stu-id="07d6e-121">Last Sync failed.</span></span>|
 
 
 

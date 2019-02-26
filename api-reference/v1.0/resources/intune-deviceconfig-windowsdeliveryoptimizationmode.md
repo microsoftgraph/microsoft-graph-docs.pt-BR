@@ -1,31 +1,32 @@
 ---
-title: tipo de enum windowsDeliveryOptimizationMode
-description: Modo de otimização de entrega para distribuição de ponto
+title: tipo de enumeração windowsDeliveryOptimizationMode
+description: Modo de otimização de entrega para distribuição de mesmo nível
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: f80c6b5cbe7316c851954154bdb559f370f02b79
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: c9034c7c90257a7ca622cd203d4ab84387fd2014
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27951513"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30251500"
 ---
-# <a name="windowsdeliveryoptimizationmode-enum-type"></a><span data-ttu-id="2179c-103">tipo de enum windowsDeliveryOptimizationMode</span><span class="sxs-lookup"><span data-stu-id="2179c-103">windowsDeliveryOptimizationMode enum type</span></span>
+# <a name="windowsdeliveryoptimizationmode-enum-type"></a><span data-ttu-id="5938e-103">tipo de enumeração windowsDeliveryOptimizationMode</span><span class="sxs-lookup"><span data-stu-id="5938e-103">windowsDeliveryOptimizationMode enum type</span></span>
 
-> <span data-ttu-id="2179c-104">**Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="2179c-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="5938e-104">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="5938e-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="2179c-105">Modo de otimização de entrega para distribuição de ponto</span><span class="sxs-lookup"><span data-stu-id="2179c-105">Delivery optimization mode for peer distribution</span></span>
-## <a name="members"></a><span data-ttu-id="2179c-106">Membros</span><span class="sxs-lookup"><span data-stu-id="2179c-106">Members</span></span>
-|<span data-ttu-id="2179c-107">Membro</span><span class="sxs-lookup"><span data-stu-id="2179c-107">Member</span></span>|<span data-ttu-id="2179c-108">Valor</span><span class="sxs-lookup"><span data-stu-id="2179c-108">Value</span></span>|<span data-ttu-id="2179c-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="2179c-109">Description</span></span>|
+<span data-ttu-id="5938e-105">Modo de otimização de entrega para distribuição de mesmo nível</span><span class="sxs-lookup"><span data-stu-id="5938e-105">Delivery optimization mode for peer distribution</span></span>
+
+## <a name="members"></a><span data-ttu-id="5938e-106">Membros</span><span class="sxs-lookup"><span data-stu-id="5938e-106">Members</span></span>
+|<span data-ttu-id="5938e-107">Membro</span><span class="sxs-lookup"><span data-stu-id="5938e-107">Member</span></span>|<span data-ttu-id="5938e-108">Valor</span><span class="sxs-lookup"><span data-stu-id="5938e-108">Value</span></span>|<span data-ttu-id="5938e-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="5938e-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="2179c-110">userDefined</span><span class="sxs-lookup"><span data-stu-id="2179c-110">userDefined</span></span>|<span data-ttu-id="2179c-111">0</span><span class="sxs-lookup"><span data-stu-id="2179c-111">0</span></span>|<span data-ttu-id="2179c-112">Permitir que o usuário pode definir.</span><span class="sxs-lookup"><span data-stu-id="2179c-112">Allow the user to set.</span></span>|
-|<span data-ttu-id="2179c-113">httpOnly</span><span class="sxs-lookup"><span data-stu-id="2179c-113">httpOnly</span></span>|<span data-ttu-id="2179c-114">1</span><span class="sxs-lookup"><span data-stu-id="2179c-114">1</span></span>|<span data-ttu-id="2179c-115">HTTP apenas, nenhuma correspondência</span><span class="sxs-lookup"><span data-stu-id="2179c-115">HTTP only, no peering</span></span>|
-|<span data-ttu-id="2179c-116">httpWithPeeringNat</span><span class="sxs-lookup"><span data-stu-id="2179c-116">httpWithPeeringNat</span></span>|<span data-ttu-id="2179c-117">2</span><span class="sxs-lookup"><span data-stu-id="2179c-117">2</span></span>|<span data-ttu-id="2179c-118">Padrão do sistema operacional – Http misturados com correspondência atrás do mesmo conversor de endereços de rede</span><span class="sxs-lookup"><span data-stu-id="2179c-118">OS default – Http blended with peering behind the same network address translator</span></span>|
-|<span data-ttu-id="2179c-119">httpWithPeeringPrivateGroup</span><span class="sxs-lookup"><span data-stu-id="2179c-119">httpWithPeeringPrivateGroup</span></span>|<span data-ttu-id="2179c-120">3</span><span class="sxs-lookup"><span data-stu-id="2179c-120">3</span></span>|<span data-ttu-id="2179c-121">HTTP misturados com correspondência entre um grupo privado</span><span class="sxs-lookup"><span data-stu-id="2179c-121">HTTP blended with peering across a private group</span></span>|
-|<span data-ttu-id="2179c-122">httpWithInternetPeering</span><span class="sxs-lookup"><span data-stu-id="2179c-122">httpWithInternetPeering</span></span>|<span data-ttu-id="2179c-123">4</span><span class="sxs-lookup"><span data-stu-id="2179c-123">4</span></span>|<span data-ttu-id="2179c-124">HTTP misturado com correspondência de Internet</span><span class="sxs-lookup"><span data-stu-id="2179c-124">HTTP blended with Internet peering</span></span>|
-|<span data-ttu-id="2179c-125">simpleDownload</span><span class="sxs-lookup"><span data-stu-id="2179c-125">simpleDownload</span></span>|<span data-ttu-id="2179c-126">99</span><span class="sxs-lookup"><span data-stu-id="2179c-126">99</span></span>|<span data-ttu-id="2179c-127">Modo de download simples com nenhuma correspondência</span><span class="sxs-lookup"><span data-stu-id="2179c-127">Simple download mode with no peering</span></span>|
-|<span data-ttu-id="2179c-128">bypassMode</span><span class="sxs-lookup"><span data-stu-id="2179c-128">bypassMode</span></span>|<span data-ttu-id="2179c-129">100</span><span class="sxs-lookup"><span data-stu-id="2179c-129">100</span></span>|<span data-ttu-id="2179c-130">Modo de desvio.</span><span class="sxs-lookup"><span data-stu-id="2179c-130">Bypass mode.</span></span> <span data-ttu-id="2179c-131">Não use a otimização de entrega e usar o BITS</span><span class="sxs-lookup"><span data-stu-id="2179c-131">Do not use Delivery Optimization and use BITS instead</span></span>|
+|<span data-ttu-id="5938e-110">userDefined</span><span class="sxs-lookup"><span data-stu-id="5938e-110">userDefined</span></span>|<span data-ttu-id="5938e-111">,0</span><span class="sxs-lookup"><span data-stu-id="5938e-111">0</span></span>|<span data-ttu-id="5938e-112">Permite que o usuário defina.</span><span class="sxs-lookup"><span data-stu-id="5938e-112">Allow the user to set.</span></span>|
+|<span data-ttu-id="5938e-113">httpOnly</span><span class="sxs-lookup"><span data-stu-id="5938e-113">httpOnly</span></span>|<span data-ttu-id="5938e-114">1</span><span class="sxs-lookup"><span data-stu-id="5938e-114">1</span></span>|<span data-ttu-id="5938e-115">Somente HTTP, sem emparelhamento</span><span class="sxs-lookup"><span data-stu-id="5938e-115">HTTP only, no peering</span></span>|
+|<span data-ttu-id="5938e-116">httpWithPeeringNat</span><span class="sxs-lookup"><span data-stu-id="5938e-116">httpWithPeeringNat</span></span>|<span data-ttu-id="5938e-117">duas</span><span class="sxs-lookup"><span data-stu-id="5938e-117">2</span></span>|<span data-ttu-id="5938e-118">Padrão de so – http combinado com emparelhamento atrás do mesmo conversor de endereço de rede</span><span class="sxs-lookup"><span data-stu-id="5938e-118">OS default – Http blended with peering behind the same network address translator</span></span>|
+|<span data-ttu-id="5938e-119">httpWithPeeringPrivateGroup</span><span class="sxs-lookup"><span data-stu-id="5938e-119">httpWithPeeringPrivateGroup</span></span>|<span data-ttu-id="5938e-120">3D</span><span class="sxs-lookup"><span data-stu-id="5938e-120">3</span></span>|<span data-ttu-id="5938e-121">HTTP combinado com emparelhamento em um grupo privado</span><span class="sxs-lookup"><span data-stu-id="5938e-121">HTTP blended with peering across a private group</span></span>|
+|<span data-ttu-id="5938e-122">httpWithInternetPeering</span><span class="sxs-lookup"><span data-stu-id="5938e-122">httpWithInternetPeering</span></span>|<span data-ttu-id="5938e-123">quatro</span><span class="sxs-lookup"><span data-stu-id="5938e-123">4</span></span>|<span data-ttu-id="5938e-124">HTTP combinado com emparelhamento da Internet</span><span class="sxs-lookup"><span data-stu-id="5938e-124">HTTP blended with Internet peering</span></span>|
+|<span data-ttu-id="5938e-125">simpleDownload</span><span class="sxs-lookup"><span data-stu-id="5938e-125">simpleDownload</span></span>|<span data-ttu-id="5938e-126">99</span><span class="sxs-lookup"><span data-stu-id="5938e-126">99</span></span>|<span data-ttu-id="5938e-127">Modo de download simples sem emparelhamento</span><span class="sxs-lookup"><span data-stu-id="5938e-127">Simple download mode with no peering</span></span>|
+|<span data-ttu-id="5938e-128">bypassmode</span><span class="sxs-lookup"><span data-stu-id="5938e-128">bypassMode</span></span>|<span data-ttu-id="5938e-129">100</span><span class="sxs-lookup"><span data-stu-id="5938e-129">100</span></span>|<span data-ttu-id="5938e-130">Modo bypass.</span><span class="sxs-lookup"><span data-stu-id="5938e-130">Bypass mode.</span></span> <span data-ttu-id="5938e-131">Não usar otimização de entrega e usar BITS em vez disso</span><span class="sxs-lookup"><span data-stu-id="5938e-131">Do not use Delivery Optimization and use BITS instead</span></span>|
 
 
 

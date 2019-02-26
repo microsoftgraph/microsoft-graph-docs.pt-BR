@@ -1,29 +1,29 @@
 ---
-title: tipo de enum androidWiFiSecurityType
+title: tipo de enumeração androidWiFiSecurityType
 description: Tipos de segurança Wi-Fi para Android.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c6585558f3c9434e930fbec9bf612b591e74dbf3
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e83a43853a59deb4df16399f0b0b177baa2453a8
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29404257"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172986"
 ---
-# <a name="androidwifisecuritytype-enum-type"></a><span data-ttu-id="c6505-103">tipo de enum androidWiFiSecurityType</span><span class="sxs-lookup"><span data-stu-id="c6505-103">androidWiFiSecurityType enum type</span></span>
+# <a name="androidwifisecuritytype-enum-type"></a><span data-ttu-id="9f459-103">tipo de enumeração androidWiFiSecurityType</span><span class="sxs-lookup"><span data-stu-id="9f459-103">androidWiFiSecurityType enum type</span></span>
 
-> <span data-ttu-id="c6505-104">**Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações.</span><span class="sxs-lookup"><span data-stu-id="c6505-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="c6505-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="c6505-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="9f459-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="9f459-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="c6505-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.</span><span class="sxs-lookup"><span data-stu-id="c6505-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="9f459-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="9f459-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="c6505-107">Tipos de segurança Wi-Fi para Android.</span><span class="sxs-lookup"><span data-stu-id="c6505-107">Wi-Fi Security Types for Android.</span></span>
+<span data-ttu-id="9f459-106">Tipos de segurança Wi-Fi para Android.</span><span class="sxs-lookup"><span data-stu-id="9f459-106">Wi-Fi Security Types for Android.</span></span>
 
-## <a name="members"></a><span data-ttu-id="c6505-108">Membros</span><span class="sxs-lookup"><span data-stu-id="c6505-108">Members</span></span>
-|<span data-ttu-id="c6505-109">Membro</span><span class="sxs-lookup"><span data-stu-id="c6505-109">Member</span></span>|<span data-ttu-id="c6505-110">Valor</span><span class="sxs-lookup"><span data-stu-id="c6505-110">Value</span></span>|<span data-ttu-id="c6505-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="c6505-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="9f459-107">Membros</span><span class="sxs-lookup"><span data-stu-id="9f459-107">Members</span></span>
+|<span data-ttu-id="9f459-108">Membro</span><span class="sxs-lookup"><span data-stu-id="9f459-108">Member</span></span>|<span data-ttu-id="9f459-109">Valor</span><span class="sxs-lookup"><span data-stu-id="9f459-109">Value</span></span>|<span data-ttu-id="9f459-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="9f459-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="c6505-112">Abrir</span><span class="sxs-lookup"><span data-stu-id="c6505-112">open</span></span>|<span data-ttu-id="c6505-113">0</span><span class="sxs-lookup"><span data-stu-id="c6505-113">0</span></span>|<span data-ttu-id="c6505-114">Abra (nenhuma autenticação).</span><span class="sxs-lookup"><span data-stu-id="c6505-114">Open (No Authentication).</span></span>|
-|<span data-ttu-id="c6505-115">wpaEnterprise</span><span class="sxs-lookup"><span data-stu-id="c6505-115">wpaEnterprise</span></span>|<span data-ttu-id="c6505-116">1</span><span class="sxs-lookup"><span data-stu-id="c6505-116">1</span></span>|<span data-ttu-id="c6505-117">WPA-Enterprise/WPA2-Empresa.</span><span class="sxs-lookup"><span data-stu-id="c6505-117">WPA-Enterprise/WPA2-Enterprise.</span></span> <span data-ttu-id="c6505-118">Deve usar o tipo de AndroidEnterpriseWifiConfiguration para configurar opções da empresa.</span><span class="sxs-lookup"><span data-stu-id="c6505-118">Must use AndroidEnterpriseWifiConfiguration type to configure enterprise options.</span></span>|
+|<span data-ttu-id="9f459-111">Abre</span><span class="sxs-lookup"><span data-stu-id="9f459-111">open</span></span>|<span data-ttu-id="9f459-112">,0</span><span class="sxs-lookup"><span data-stu-id="9f459-112">0</span></span>|<span data-ttu-id="9f459-113">Abrir (sem autenticação).</span><span class="sxs-lookup"><span data-stu-id="9f459-113">Open (No Authentication).</span></span>|
+|<span data-ttu-id="9f459-114">wpaEnterprise</span><span class="sxs-lookup"><span data-stu-id="9f459-114">wpaEnterprise</span></span>|<span data-ttu-id="9f459-115">1</span><span class="sxs-lookup"><span data-stu-id="9f459-115">1</span></span>|<span data-ttu-id="9f459-116">WPA-Enterprise/WPA2-Enterprise.</span><span class="sxs-lookup"><span data-stu-id="9f459-116">WPA-Enterprise/WPA2-Enterprise.</span></span> <span data-ttu-id="9f459-117">Deve usar o tipo Androidenterprisewificonfiguration. para configurar opções da empresa.</span><span class="sxs-lookup"><span data-stu-id="9f459-117">Must use AndroidEnterpriseWifiConfiguration type to configure enterprise options.</span></span>|
 
 
 

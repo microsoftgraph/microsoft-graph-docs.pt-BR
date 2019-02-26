@@ -4,36 +4,36 @@ description: Atualizar as propriedades de um objeto deviceCategory.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 90f5305e2fb52b5ecd184aad837f2c9d8f6334ef
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 221b4700d91766040d899ef0c1048950d4e1d9cf
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29395010"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30161912"
 ---
-# <a name="update-devicecategory"></a><span data-ttu-id="4a275-103">Atualizar deviceCategory</span><span class="sxs-lookup"><span data-stu-id="4a275-103">Update deviceCategory</span></span>
+# <a name="update-devicecategory"></a><span data-ttu-id="0f526-103">Atualizar deviceCategory</span><span class="sxs-lookup"><span data-stu-id="0f526-103">Update deviceCategory</span></span>
 
-> <span data-ttu-id="4a275-104">**Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações.</span><span class="sxs-lookup"><span data-stu-id="4a275-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="4a275-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="4a275-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="0f526-104">**Importante:** As APIs na versão/beta no Microsoft Graph estão sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="0f526-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="0f526-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="0f526-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="4a275-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.</span><span class="sxs-lookup"><span data-stu-id="4a275-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="0f526-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="0f526-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="4a275-107">Atualizar as propriedades de um objeto [deviceCategory](../resources/intune-shared-devicecategory.md).</span><span class="sxs-lookup"><span data-stu-id="4a275-107">Update the properties of a [deviceCategory](../resources/intune-shared-devicecategory.md) object.</span></span>
+<span data-ttu-id="0f526-107">Atualizar as propriedades de um objeto [deviceCategory](../resources/intune-shared-devicecategory.md).</span><span class="sxs-lookup"><span data-stu-id="0f526-107">Update the properties of a [deviceCategory](../resources/intune-shared-devicecategory.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="4a275-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="4a275-108">Prerequisites</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="0f526-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="0f526-108">Prerequisites</span></span>
 
-<span data-ttu-id="4a275-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4a275-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="0f526-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0f526-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference).</span></span>
 
-|<span data-ttu-id="4a275-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="4a275-111">Permission type</span></span>|<span data-ttu-id="4a275-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="4a275-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="0f526-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="0f526-111">Permission type</span></span>|<span data-ttu-id="0f526-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="0f526-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="4a275-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="4a275-113">Delegated (work or school account)</span></span>||
-| <span data-ttu-id="4a275-114">&nbsp; &nbsp; **Gerenciamento de dispositivo**</span><span class="sxs-lookup"><span data-stu-id="4a275-114">&nbsp; &nbsp; **Device management**</span></span> | <span data-ttu-id="4a275-115">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4a275-115">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-| <span data-ttu-id="4a275-116">&nbsp;&nbsp; **Onboarding**</span><span class="sxs-lookup"><span data-stu-id="4a275-116">&nbsp; &nbsp; **Onboarding**</span></span> | <span data-ttu-id="4a275-117">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4a275-117">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-|<span data-ttu-id="4a275-118">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="4a275-118">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="4a275-119">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="4a275-119">Not supported.</span></span>|
-|<span data-ttu-id="4a275-120">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="4a275-120">Application</span></span>|<span data-ttu-id="4a275-121">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="4a275-121">Not supported.</span></span>|
+|<span data-ttu-id="0f526-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="0f526-113">Delegated (work or school account)</span></span>||
+| <span data-ttu-id="0f526-114">&nbsp; &nbsp; **Gerenciamento de dispositivo**</span><span class="sxs-lookup"><span data-stu-id="0f526-114">&nbsp; &nbsp; **Device management**</span></span> | <span data-ttu-id="0f526-115">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0f526-115">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+| <span data-ttu-id="0f526-116">&nbsp; &nbsp; **Integração**</span><span class="sxs-lookup"><span data-stu-id="0f526-116">&nbsp; &nbsp; **Onboarding**</span></span> | <span data-ttu-id="0f526-117">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0f526-117">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="0f526-118">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="0f526-118">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="0f526-119">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="0f526-119">Not supported.</span></span>|
+|<span data-ttu-id="0f526-120">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="0f526-120">Application</span></span>|<span data-ttu-id="0f526-121">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="0f526-121">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="4a275-122">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="4a275-122">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0f526-122">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="0f526-122">HTTP Request</span></span>
 
-<span data-ttu-id="4a275-123">**Gerenciamento de dispositivos**</span><span class="sxs-lookup"><span data-stu-id="4a275-123">**Device management**</span></span>
+<span data-ttu-id="0f526-123">**Gerenciamento de dispositivos**</span><span class="sxs-lookup"><span data-stu-id="0f526-123">**Device management**</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -43,7 +43,7 @@ ms.locfileid: "29395010"
 PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/deviceCategory
 ```
 
-<span data-ttu-id="4a275-124">**Nível de contratação**</span><span class="sxs-lookup"><span data-stu-id="4a275-124">**On-boarding**</span></span>
+<span data-ttu-id="0f526-124">**Integração**</span><span class="sxs-lookup"><span data-stu-id="0f526-124">**On-boarding**</span></span>
 
 <!-- {
   "blockType": "ignored"
@@ -53,35 +53,35 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 PATCH /deviceManagement/deviceCategories/{deviceCategoryId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="4a275-125">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="4a275-125">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="0f526-125">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="0f526-125">Request headers</span></span>
 
-|<span data-ttu-id="4a275-126">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="4a275-126">Header</span></span>|<span data-ttu-id="4a275-127">Valor</span><span class="sxs-lookup"><span data-stu-id="4a275-127">Value</span></span>|
+|<span data-ttu-id="0f526-126">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="0f526-126">Header</span></span>|<span data-ttu-id="0f526-127">Valor</span><span class="sxs-lookup"><span data-stu-id="0f526-127">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="4a275-128">Autorização</span><span class="sxs-lookup"><span data-stu-id="4a275-128">Authorization</span></span>|<span data-ttu-id="4a275-129">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="4a275-129">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="4a275-130">Aceitar</span><span class="sxs-lookup"><span data-stu-id="4a275-130">Accept</span></span>|<span data-ttu-id="4a275-131">application/json</span><span class="sxs-lookup"><span data-stu-id="4a275-131">application/json</span></span>|
+|<span data-ttu-id="0f526-128">Autorização</span><span class="sxs-lookup"><span data-stu-id="0f526-128">Authorization</span></span>|<span data-ttu-id="0f526-129">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="0f526-129">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="0f526-130">Aceitar</span><span class="sxs-lookup"><span data-stu-id="0f526-130">Accept</span></span>|<span data-ttu-id="0f526-131">application/json</span><span class="sxs-lookup"><span data-stu-id="0f526-131">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="4a275-132">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="4a275-132">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="0f526-132">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="0f526-132">Request body</span></span>
 
-<span data-ttu-id="4a275-133">No corpo da solicitação, forneça uma representação JSON do objeto [deviceCategory](../resources/intune-shared-devicecategory.md).</span><span class="sxs-lookup"><span data-stu-id="4a275-133">In the request body, supply a JSON representation for the [deviceCategory](../resources/intune-shared-devicecategory.md) object.</span></span>
+<span data-ttu-id="0f526-133">No corpo da solicitação, forneça uma representação JSON do objeto [deviceCategory](../resources/intune-shared-devicecategory.md).</span><span class="sxs-lookup"><span data-stu-id="0f526-133">In the request body, supply a JSON representation for the [deviceCategory](../resources/intune-shared-devicecategory.md) object.</span></span>
 
-<span data-ttu-id="4a275-134">A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceCategory](../resources/intune-shared-devicecategory.md).</span><span class="sxs-lookup"><span data-stu-id="4a275-134">The following table shows the properties that are required when you create the [deviceCategory](../resources/intune-shared-devicecategory.md).</span></span>
+<span data-ttu-id="0f526-134">A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceCategory](../resources/intune-shared-devicecategory.md).</span><span class="sxs-lookup"><span data-stu-id="0f526-134">The following table shows the properties that are required when you create the [deviceCategory](../resources/intune-shared-devicecategory.md).</span></span>
 
-|<span data-ttu-id="4a275-135">Propriedade</span><span class="sxs-lookup"><span data-stu-id="4a275-135">Property</span></span>|<span data-ttu-id="4a275-136">Tipo</span><span class="sxs-lookup"><span data-stu-id="4a275-136">Type</span></span>|<span data-ttu-id="4a275-137">Descrição</span><span class="sxs-lookup"><span data-stu-id="4a275-137">Description</span></span>|
+|<span data-ttu-id="0f526-135">Propriedade</span><span class="sxs-lookup"><span data-stu-id="0f526-135">Property</span></span>|<span data-ttu-id="0f526-136">Tipo</span><span class="sxs-lookup"><span data-stu-id="0f526-136">Type</span></span>|<span data-ttu-id="0f526-137">Descrição</span><span class="sxs-lookup"><span data-stu-id="0f526-137">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="4a275-138">id</span><span class="sxs-lookup"><span data-stu-id="4a275-138">id</span></span>|<span data-ttu-id="4a275-139">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="4a275-139">String</span></span>|<span data-ttu-id="4a275-140">O identificador exclusivo da categoria do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="4a275-140">Unique identifier for the device category.</span></span> <span data-ttu-id="4a275-141">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="4a275-141">Read-only.</span></span>|
-|<span data-ttu-id="4a275-142">**Inclusão**</span><span class="sxs-lookup"><span data-stu-id="4a275-142">**Onboarding**</span></span>|
-|<span data-ttu-id="4a275-143">description</span><span class="sxs-lookup"><span data-stu-id="4a275-143">description</span></span>|<span data-ttu-id="4a275-144">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="4a275-144">String</span></span>|<span data-ttu-id="4a275-145">Descrição opcional da categoria do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="4a275-145">Optional description for the device category.</span></span>|
-|<span data-ttu-id="4a275-146">displayName</span><span class="sxs-lookup"><span data-stu-id="4a275-146">displayName</span></span>|<span data-ttu-id="4a275-147">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="4a275-147">String</span></span>|<span data-ttu-id="4a275-148">Nome de exibição da categoria de dispositivo.</span><span class="sxs-lookup"><span data-stu-id="4a275-148">Display name for the device category.</span></span>|
+|<span data-ttu-id="0f526-138">id</span><span class="sxs-lookup"><span data-stu-id="0f526-138">id</span></span>|<span data-ttu-id="0f526-139">String</span><span class="sxs-lookup"><span data-stu-id="0f526-139">String</span></span>|<span data-ttu-id="0f526-140">O identificador exclusivo da categoria do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="0f526-140">Unique identifier for the device category.</span></span> <span data-ttu-id="0f526-141">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="0f526-141">Read-only.</span></span>|
+|<span data-ttu-id="0f526-142">**Integração**</span><span class="sxs-lookup"><span data-stu-id="0f526-142">**Onboarding**</span></span>|
+|<span data-ttu-id="0f526-143">description</span><span class="sxs-lookup"><span data-stu-id="0f526-143">description</span></span>|<span data-ttu-id="0f526-144">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="0f526-144">String</span></span>|<span data-ttu-id="0f526-145">Descrição opcional da categoria do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="0f526-145">Optional description for the device category.</span></span>|
+|<span data-ttu-id="0f526-146">displayName</span><span class="sxs-lookup"><span data-stu-id="0f526-146">displayName</span></span>|<span data-ttu-id="0f526-147">String</span><span class="sxs-lookup"><span data-stu-id="0f526-147">String</span></span>|<span data-ttu-id="0f526-148">Nome de exibição da categoria de dispositivo.</span><span class="sxs-lookup"><span data-stu-id="0f526-148">Display name for the device category.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="4a275-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="4a275-149">Response</span></span>
+## <a name="response"></a><span data-ttu-id="0f526-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="0f526-149">Response</span></span>
 
-<span data-ttu-id="4a275-150">Se tiver êxito, este método retornará um código de resposta `200 OK` e um objeto [deviceCategory](../resources/intune-shared-devicecategory.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="4a275-150">If successful, this method returns a `200 OK` response code and an updated [deviceCategory](../resources/intune-shared-devicecategory.md) object in the response body.</span></span>
+<span data-ttu-id="0f526-150">Se tiver êxito, este método retornará um código de resposta `200 OK` e um objeto [deviceCategory](../resources/intune-shared-devicecategory.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="0f526-150">If successful, this method returns a `200 OK` response code and an updated [deviceCategory](../resources/intune-shared-devicecategory.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="4a275-151">Exemplo</span><span class="sxs-lookup"><span data-stu-id="4a275-151">Example</span></span>
+## <a name="example"></a><span data-ttu-id="0f526-151">Exemplo</span><span class="sxs-lookup"><span data-stu-id="0f526-151">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="4a275-152">Solicitação</span><span class="sxs-lookup"><span data-stu-id="4a275-152">Request</span></span>
+### <a name="request"></a><span data-ttu-id="0f526-152">Solicitação</span><span class="sxs-lookup"><span data-stu-id="0f526-152">Request</span></span>
 
-<span data-ttu-id="4a275-153">Estes são exemplos da solicitação.</span><span class="sxs-lookup"><span data-stu-id="4a275-153">Here are examples of the request.</span></span>
+<span data-ttu-id="0f526-153">Aqui estão exemplos de solicitação.</span><span class="sxs-lookup"><span data-stu-id="0f526-153">Here are examples of the request.</span></span>
 
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceCategories/{deviceCategoryId}
@@ -96,9 +96,9 @@ Content-length: 82
 PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/deviceCategory
 ```
 
-### <a name="response"></a><span data-ttu-id="4a275-154">Resposta</span><span class="sxs-lookup"><span data-stu-id="4a275-154">Response</span></span>
+### <a name="response"></a><span data-ttu-id="0f526-154">Resposta</span><span class="sxs-lookup"><span data-stu-id="0f526-154">Response</span></span>
 
-<span data-ttu-id="4a275-155">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="4a275-155">Here is an example of the response.</span></span> <span data-ttu-id="4a275-156">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão.</span><span class="sxs-lookup"><span data-stu-id="4a275-156">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="4a275-157">Propriedades de resposta irá variar de acordo com o contexto.</span><span class="sxs-lookup"><span data-stu-id="4a275-157">Response properties will vary according to context.</span></span>
+<span data-ttu-id="0f526-155">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="0f526-155">Here is an example of the response.</span></span> <span data-ttu-id="0f526-156">Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão.</span><span class="sxs-lookup"><span data-stu-id="0f526-156">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="0f526-157">As propriedades de resposta irão variar de acordo com o contexto.</span><span class="sxs-lookup"><span data-stu-id="0f526-157">Response properties will vary according to context.</span></span>
 
 ``` http
 HTTP/1.1 200 OK

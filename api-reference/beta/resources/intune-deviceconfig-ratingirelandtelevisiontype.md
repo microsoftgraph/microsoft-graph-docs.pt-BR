@@ -1,34 +1,34 @@
 ---
-title: tipo de enum ratingIrelandTelevisionType
+title: tipo de enumeração ratingIrelandTelevisionType
 description: Rótulos de classificação de conteúdo de TV na Irlanda
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8177ea18d5a8f840daf8f13c0493288fad342285
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: d186659ff2e67217c8d4c6f3b449925907822a11
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29394632"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172461"
 ---
-# <a name="ratingirelandtelevisiontype-enum-type"></a><span data-ttu-id="47464-103">tipo de enum ratingIrelandTelevisionType</span><span class="sxs-lookup"><span data-stu-id="47464-103">ratingIrelandTelevisionType enum type</span></span>
+# <a name="ratingirelandtelevisiontype-enum-type"></a><span data-ttu-id="583c2-103">tipo de enumeração ratingIrelandTelevisionType</span><span class="sxs-lookup"><span data-stu-id="583c2-103">ratingIrelandTelevisionType enum type</span></span>
 
-> <span data-ttu-id="47464-104">**Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações.</span><span class="sxs-lookup"><span data-stu-id="47464-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="47464-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="47464-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="583c2-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="583c2-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="47464-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.</span><span class="sxs-lookup"><span data-stu-id="47464-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="583c2-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="583c2-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="47464-107">Rótulos de classificação de conteúdo de TV na Irlanda</span><span class="sxs-lookup"><span data-stu-id="47464-107">TV content rating labels in Ireland</span></span>
+<span data-ttu-id="583c2-106">Rótulos de classificação de conteúdo de TV na Irlanda</span><span class="sxs-lookup"><span data-stu-id="583c2-106">TV content rating labels in Ireland</span></span>
 
-## <a name="members"></a><span data-ttu-id="47464-108">Membros</span><span class="sxs-lookup"><span data-stu-id="47464-108">Members</span></span>
-|<span data-ttu-id="47464-109">Membro</span><span class="sxs-lookup"><span data-stu-id="47464-109">Member</span></span>|<span data-ttu-id="47464-110">Valor</span><span class="sxs-lookup"><span data-stu-id="47464-110">Value</span></span>|<span data-ttu-id="47464-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="47464-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="583c2-107">Membros</span><span class="sxs-lookup"><span data-stu-id="583c2-107">Members</span></span>
+|<span data-ttu-id="583c2-108">Membro</span><span class="sxs-lookup"><span data-stu-id="583c2-108">Member</span></span>|<span data-ttu-id="583c2-109">Valor</span><span class="sxs-lookup"><span data-stu-id="583c2-109">Value</span></span>|<span data-ttu-id="583c2-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="583c2-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="47464-112">allAllowed</span><span class="sxs-lookup"><span data-stu-id="47464-112">allAllowed</span></span>|<span data-ttu-id="47464-113">0</span><span class="sxs-lookup"><span data-stu-id="47464-113">0</span></span>|<span data-ttu-id="47464-114">Valor padrão, para permitir que todos os TV mostra conteúdo</span><span class="sxs-lookup"><span data-stu-id="47464-114">Default value, allow all TV shows content</span></span>|
-|<span data-ttu-id="47464-115">allBlocked</span><span class="sxs-lookup"><span data-stu-id="47464-115">allBlocked</span></span>|<span data-ttu-id="47464-116">1</span><span class="sxs-lookup"><span data-stu-id="47464-116">1</span></span>|<span data-ttu-id="47464-117">Não permitir que qualquer TV mostra conteúdo</span><span class="sxs-lookup"><span data-stu-id="47464-117">Do not allow any TV shows content</span></span>|
-|<span data-ttu-id="47464-118">geral</span><span class="sxs-lookup"><span data-stu-id="47464-118">general</span></span>|<span data-ttu-id="47464-119">2</span><span class="sxs-lookup"><span data-stu-id="47464-119">2</span></span>|<span data-ttu-id="47464-120">A classificação de GA é adequada para todas as audiências</span><span class="sxs-lookup"><span data-stu-id="47464-120">The GA classification is suitable for all audiences</span></span>|
-|<span data-ttu-id="47464-121">children</span><span class="sxs-lookup"><span data-stu-id="47464-121">children</span></span>|<span data-ttu-id="47464-122">3</span><span class="sxs-lookup"><span data-stu-id="47464-122">3</span></span>|<span data-ttu-id="47464-123">A classificação CH é adequada para filhos</span><span class="sxs-lookup"><span data-stu-id="47464-123">The CH classification is suitable for children</span></span>|
-|<span data-ttu-id="47464-124">youngAdults</span><span class="sxs-lookup"><span data-stu-id="47464-124">youngAdults</span></span>|<span data-ttu-id="47464-125">4</span><span class="sxs-lookup"><span data-stu-id="47464-125">4</span></span>|<span data-ttu-id="47464-126">A classificação YA é adequada para o público adolescente</span><span class="sxs-lookup"><span data-stu-id="47464-126">The YA classification is suitable for teenage audience</span></span>|
-|<span data-ttu-id="47464-127">parentalSupervision</span><span class="sxs-lookup"><span data-stu-id="47464-127">parentalSupervision</span></span>|<span data-ttu-id="47464-128">5</span><span class="sxs-lookup"><span data-stu-id="47464-128">5</span></span>|<span data-ttu-id="47464-129">A classificação de PS convida pais e responsáveis a considerar o acesso dos filhos de restrição</span><span class="sxs-lookup"><span data-stu-id="47464-129">The PS classification invites parents and guardians to consider restriction children’s access</span></span>|
-|<span data-ttu-id="47464-130">implementação avançada</span><span class="sxs-lookup"><span data-stu-id="47464-130">mature</span></span>|<span data-ttu-id="47464-131">6</span><span class="sxs-lookup"><span data-stu-id="47464-131">6</span></span>|<span data-ttu-id="47464-132">A classificação MA é adequada para adultos</span><span class="sxs-lookup"><span data-stu-id="47464-132">The MA classification is suitable for adults</span></span>|
+|<span data-ttu-id="583c2-111">Permitido</span><span class="sxs-lookup"><span data-stu-id="583c2-111">allAllowed</span></span>|<span data-ttu-id="583c2-112">,0</span><span class="sxs-lookup"><span data-stu-id="583c2-112">0</span></span>|<span data-ttu-id="583c2-113">Valor padrão, permitir todos os programas de TV</span><span class="sxs-lookup"><span data-stu-id="583c2-113">Default value, allow all TV shows content</span></span>|
+|<span data-ttu-id="583c2-114">Bloqueado</span><span class="sxs-lookup"><span data-stu-id="583c2-114">allBlocked</span></span>|<span data-ttu-id="583c2-115">1</span><span class="sxs-lookup"><span data-stu-id="583c2-115">1</span></span>|<span data-ttu-id="583c2-116">Não permitir que qualquer TV mostre conteúdo</span><span class="sxs-lookup"><span data-stu-id="583c2-116">Do not allow any TV shows content</span></span>|
+|<span data-ttu-id="583c2-117">geral</span><span class="sxs-lookup"><span data-stu-id="583c2-117">general</span></span>|<span data-ttu-id="583c2-118">duas</span><span class="sxs-lookup"><span data-stu-id="583c2-118">2</span></span>|<span data-ttu-id="583c2-119">A classificação GA é adequada para todos os públicos</span><span class="sxs-lookup"><span data-stu-id="583c2-119">The GA classification is suitable for all audiences</span></span>|
+|<span data-ttu-id="583c2-120">children</span><span class="sxs-lookup"><span data-stu-id="583c2-120">children</span></span>|<span data-ttu-id="583c2-121">3D</span><span class="sxs-lookup"><span data-stu-id="583c2-121">3</span></span>|<span data-ttu-id="583c2-122">A classificação CH é adequada para crianças</span><span class="sxs-lookup"><span data-stu-id="583c2-122">The CH classification is suitable for children</span></span>|
+|<span data-ttu-id="583c2-123">youngAdults</span><span class="sxs-lookup"><span data-stu-id="583c2-123">youngAdults</span></span>|<span data-ttu-id="583c2-124">quatro</span><span class="sxs-lookup"><span data-stu-id="583c2-124">4</span></span>|<span data-ttu-id="583c2-125">A classificação de YA é adequada para a audiência Teenage</span><span class="sxs-lookup"><span data-stu-id="583c2-125">The YA classification is suitable for teenage audience</span></span>|
+|<span data-ttu-id="583c2-126">parentalSupervision</span><span class="sxs-lookup"><span data-stu-id="583c2-126">parentalSupervision</span></span>|<span data-ttu-id="583c2-127">0,5</span><span class="sxs-lookup"><span data-stu-id="583c2-127">5</span></span>|<span data-ttu-id="583c2-128">A classificação de PS convida os pais e os guardiões para considerar o acesso de crianças</span><span class="sxs-lookup"><span data-stu-id="583c2-128">The PS classification invites parents and guardians to consider restriction children’s access</span></span>|
+|<span data-ttu-id="583c2-129">completa</span><span class="sxs-lookup"><span data-stu-id="583c2-129">mature</span></span>|<span data-ttu-id="583c2-130">6</span><span class="sxs-lookup"><span data-stu-id="583c2-130">6</span></span>|<span data-ttu-id="583c2-131">A classificação MA é adequada para adultos</span><span class="sxs-lookup"><span data-stu-id="583c2-131">The MA classification is suitable for adults</span></span>|
 
 
 

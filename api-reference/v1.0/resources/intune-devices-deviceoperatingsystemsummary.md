@@ -3,33 +3,35 @@ title: Tipo de recurso deviceOperatingSystemSummary
 description: Resumo do sistema operacional do dispositivo.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 2147034c060fa15e8e799d5ddbe72aabe635af08
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 53c806e250d6b201e6dfe49d90685c4144913182
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27975640"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30250401"
 ---
-# <a name="deviceoperatingsystemsummary-resource-type"></a><span data-ttu-id="179f6-103">Tipo de recurso deviceOperatingSystemSummary</span><span class="sxs-lookup"><span data-stu-id="179f6-103">deviceOperatingSystemSummary resource type</span></span>
+# <a name="deviceoperatingsystemsummary-resource-type"></a><span data-ttu-id="37fbb-103">Tipo de recurso deviceOperatingSystemSummary</span><span class="sxs-lookup"><span data-stu-id="37fbb-103">deviceOperatingSystemSummary resource type</span></span>
 
-> <span data-ttu-id="179f6-104">**Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="179f6-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="37fbb-104">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="37fbb-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="179f6-105">Resumo do sistema operacional do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="179f6-105">Device operating system summary.</span></span>
-## <a name="properties"></a><span data-ttu-id="179f6-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="179f6-106">Properties</span></span>
-|<span data-ttu-id="179f6-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="179f6-107">Property</span></span>|<span data-ttu-id="179f6-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="179f6-108">Type</span></span>|<span data-ttu-id="179f6-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="179f6-109">Description</span></span>|
+<span data-ttu-id="37fbb-105">Resumo do sistema operacional do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="37fbb-105">Device operating system summary.</span></span>
+
+## <a name="properties"></a><span data-ttu-id="37fbb-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="37fbb-106">Properties</span></span>
+|<span data-ttu-id="37fbb-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="37fbb-107">Property</span></span>|<span data-ttu-id="37fbb-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="37fbb-108">Type</span></span>|<span data-ttu-id="37fbb-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="37fbb-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="179f6-110">androidCount</span><span class="sxs-lookup"><span data-stu-id="179f6-110">androidCount</span></span>|<span data-ttu-id="179f6-111">Int32</span><span class="sxs-lookup"><span data-stu-id="179f6-111">Int32</span></span>|<span data-ttu-id="179f6-112">Número da contagem de dispositivos Android.</span><span class="sxs-lookup"><span data-stu-id="179f6-112">Number of android device count.</span></span>|
-|<span data-ttu-id="179f6-113">iosCount</span><span class="sxs-lookup"><span data-stu-id="179f6-113">iosCount</span></span>|<span data-ttu-id="179f6-114">Int32</span><span class="sxs-lookup"><span data-stu-id="179f6-114">Int32</span></span>|<span data-ttu-id="179f6-115">Número da contagem de dispositivo iOS.</span><span class="sxs-lookup"><span data-stu-id="179f6-115">Number of iOS device count.</span></span>|
-|<span data-ttu-id="179f6-116">macOSCount</span><span class="sxs-lookup"><span data-stu-id="179f6-116">macOSCount</span></span>|<span data-ttu-id="179f6-117">Int32</span><span class="sxs-lookup"><span data-stu-id="179f6-117">Int32</span></span>|<span data-ttu-id="179f6-118">Número da contagem de dispositivos Mac OS X.</span><span class="sxs-lookup"><span data-stu-id="179f6-118">Number of Mac OS X device count.</span></span>|
-|<span data-ttu-id="179f6-119">windowsMobileCount</span><span class="sxs-lookup"><span data-stu-id="179f6-119">windowsMobileCount</span></span>|<span data-ttu-id="179f6-120">Int32</span><span class="sxs-lookup"><span data-stu-id="179f6-120">Int32</span></span>|<span data-ttu-id="179f6-121">Número da contagem de dispositivos móveis Windows.</span><span class="sxs-lookup"><span data-stu-id="179f6-121">Number of Windows mobile device count.</span></span>|
-|<span data-ttu-id="179f6-122">windowsCount</span><span class="sxs-lookup"><span data-stu-id="179f6-122">windowsCount</span></span>|<span data-ttu-id="179f6-123">Int32</span><span class="sxs-lookup"><span data-stu-id="179f6-123">Int32</span></span>|<span data-ttu-id="179f6-124">Número da contagem de dispositivos Windows.</span><span class="sxs-lookup"><span data-stu-id="179f6-124">Number of Windows device count.</span></span>|
-|<span data-ttu-id="179f6-125">unknownCount</span><span class="sxs-lookup"><span data-stu-id="179f6-125">unknownCount</span></span>|<span data-ttu-id="179f6-126">Int32</span><span class="sxs-lookup"><span data-stu-id="179f6-126">Int32</span></span>|<span data-ttu-id="179f6-127">Número da contagem de dispositivos desconhecidos.</span><span class="sxs-lookup"><span data-stu-id="179f6-127">Number of unknown device count.</span></span>|
+|<span data-ttu-id="37fbb-110">androidCount</span><span class="sxs-lookup"><span data-stu-id="37fbb-110">androidCount</span></span>|<span data-ttu-id="37fbb-111">Int32</span><span class="sxs-lookup"><span data-stu-id="37fbb-111">Int32</span></span>|<span data-ttu-id="37fbb-112">Número da contagem de dispositivos Android.</span><span class="sxs-lookup"><span data-stu-id="37fbb-112">Number of android device count.</span></span>|
+|<span data-ttu-id="37fbb-113">iosCount</span><span class="sxs-lookup"><span data-stu-id="37fbb-113">iosCount</span></span>|<span data-ttu-id="37fbb-114">Int32</span><span class="sxs-lookup"><span data-stu-id="37fbb-114">Int32</span></span>|<span data-ttu-id="37fbb-115">Número da contagem de dispositivo iOS.</span><span class="sxs-lookup"><span data-stu-id="37fbb-115">Number of iOS device count.</span></span>|
+|<span data-ttu-id="37fbb-116">macOSCount</span><span class="sxs-lookup"><span data-stu-id="37fbb-116">macOSCount</span></span>|<span data-ttu-id="37fbb-117">Int32</span><span class="sxs-lookup"><span data-stu-id="37fbb-117">Int32</span></span>|<span data-ttu-id="37fbb-118">Número da contagem de dispositivos Mac OS X.</span><span class="sxs-lookup"><span data-stu-id="37fbb-118">Number of Mac OS X device count.</span></span>|
+|<span data-ttu-id="37fbb-119">windowsMobileCount</span><span class="sxs-lookup"><span data-stu-id="37fbb-119">windowsMobileCount</span></span>|<span data-ttu-id="37fbb-120">Int32</span><span class="sxs-lookup"><span data-stu-id="37fbb-120">Int32</span></span>|<span data-ttu-id="37fbb-121">Número da contagem de dispositivos móveis Windows.</span><span class="sxs-lookup"><span data-stu-id="37fbb-121">Number of Windows mobile device count.</span></span>|
+|<span data-ttu-id="37fbb-122">windowsCount</span><span class="sxs-lookup"><span data-stu-id="37fbb-122">windowsCount</span></span>|<span data-ttu-id="37fbb-123">Int32</span><span class="sxs-lookup"><span data-stu-id="37fbb-123">Int32</span></span>|<span data-ttu-id="37fbb-124">Número da contagem de dispositivos Windows.</span><span class="sxs-lookup"><span data-stu-id="37fbb-124">Number of Windows device count.</span></span>|
+|<span data-ttu-id="37fbb-125">unknownCount</span><span class="sxs-lookup"><span data-stu-id="37fbb-125">unknownCount</span></span>|<span data-ttu-id="37fbb-126">Int32</span><span class="sxs-lookup"><span data-stu-id="37fbb-126">Int32</span></span>|<span data-ttu-id="37fbb-127">Número da contagem de dispositivos desconhecidos.</span><span class="sxs-lookup"><span data-stu-id="37fbb-127">Number of unknown device count.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="179f6-128">Relações</span><span class="sxs-lookup"><span data-stu-id="179f6-128">Relationships</span></span>
-<span data-ttu-id="179f6-129">Nenhum</span><span class="sxs-lookup"><span data-stu-id="179f6-129">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="179f6-130">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="179f6-130">JSON Representation</span></span>
-<span data-ttu-id="179f6-131">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="179f6-131">Here is a JSON representation of the resource.</span></span>
+## <a name="relationships"></a><span data-ttu-id="37fbb-128">Relações</span><span class="sxs-lookup"><span data-stu-id="37fbb-128">Relationships</span></span>
+<span data-ttu-id="37fbb-129">Nenhum</span><span class="sxs-lookup"><span data-stu-id="37fbb-129">None</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="37fbb-130">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="37fbb-130">JSON Representation</span></span>
+<span data-ttu-id="37fbb-131">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="37fbb-131">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceOperatingSystemSummary"

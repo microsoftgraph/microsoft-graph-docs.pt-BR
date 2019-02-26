@@ -3,27 +3,29 @@ title: Tipo de recurso edgeSearchEngineBase
 description: Permite aos administradores de TI definir um mecanismo de pesquisa padrão para dispositivos controlados por MDM. Os usuários podem substituí-lo e alterar o mecanismo de pesquisa padrão fornecido, caso a política AllowSearchEngineCustomization não esteja definida.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: ed27e057c6801bb1800f4ceb97bc74c779032dbe
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: f2aeffb922ebf8b3a166b8f942d4159fa3fe7a3b
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27969678"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30253320"
 ---
-# <a name="edgesearchenginebase-resource-type"></a><span data-ttu-id="0b82f-104">Tipo de recurso edgeSearchEngineBase</span><span class="sxs-lookup"><span data-stu-id="0b82f-104">edgeSearchEngineBase resource type</span></span>
+# <a name="edgesearchenginebase-resource-type"></a><span data-ttu-id="be8c1-104">Tipo de recurso edgeSearchEngineBase</span><span class="sxs-lookup"><span data-stu-id="be8c1-104">edgeSearchEngineBase resource type</span></span>
 
-> <span data-ttu-id="0b82f-105">**Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="0b82f-105">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="be8c1-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="be8c1-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="0b82f-106">Permite aos administradores de TI definir um mecanismo de pesquisa padrão para dispositivos controlados por MDM.</span><span class="sxs-lookup"><span data-stu-id="0b82f-106">Allows IT admins to set a default search engine for MDM-Controlled devices.</span></span> <span data-ttu-id="0b82f-107">Os usuários podem substituí-lo e alterar o mecanismo de pesquisa padrão fornecido, caso a política AllowSearchEngineCustomization não esteja definida.</span><span class="sxs-lookup"><span data-stu-id="0b82f-107">Users can override this and change their default search engine provided the AllowSearchEngineCustomization policy is not set.</span></span>
-## <a name="properties"></a><span data-ttu-id="0b82f-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="0b82f-108">Properties</span></span>
-|<span data-ttu-id="0b82f-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="0b82f-109">Property</span></span>|<span data-ttu-id="0b82f-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="0b82f-110">Type</span></span>|<span data-ttu-id="0b82f-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="0b82f-111">Description</span></span>|
+<span data-ttu-id="be8c1-106">Permite aos administradores de TI definir um mecanismo de pesquisa padrão para dispositivos controlados por MDM.</span><span class="sxs-lookup"><span data-stu-id="be8c1-106">Allows IT admins to set a default search engine for MDM-Controlled devices.</span></span> <span data-ttu-id="be8c1-107">Os usuários podem substituí-lo e alterar o mecanismo de pesquisa padrão fornecido, caso a política AllowSearchEngineCustomization não esteja definida.</span><span class="sxs-lookup"><span data-stu-id="be8c1-107">Users can override this and change their default search engine provided the AllowSearchEngineCustomization policy is not set.</span></span>
+
+## <a name="properties"></a><span data-ttu-id="be8c1-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="be8c1-108">Properties</span></span>
+|<span data-ttu-id="be8c1-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="be8c1-109">Property</span></span>|<span data-ttu-id="be8c1-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="be8c1-110">Type</span></span>|<span data-ttu-id="be8c1-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="be8c1-111">Description</span></span>|
 |:---|:---|:---|
 
-## <a name="relationships"></a><span data-ttu-id="0b82f-112">Relações</span><span class="sxs-lookup"><span data-stu-id="0b82f-112">Relationships</span></span>
-<span data-ttu-id="0b82f-113">Nenhum</span><span class="sxs-lookup"><span data-stu-id="0b82f-113">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="0b82f-114">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="0b82f-114">JSON Representation</span></span>
-<span data-ttu-id="0b82f-115">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="0b82f-115">Here is a JSON representation of the resource.</span></span>
+## <a name="relationships"></a><span data-ttu-id="be8c1-112">Relações</span><span class="sxs-lookup"><span data-stu-id="be8c1-112">Relationships</span></span>
+<span data-ttu-id="be8c1-113">Nenhum</span><span class="sxs-lookup"><span data-stu-id="be8c1-113">None</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="be8c1-114">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="be8c1-114">JSON Representation</span></span>
+<span data-ttu-id="be8c1-115">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="be8c1-115">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.edgeSearchEngineBase"

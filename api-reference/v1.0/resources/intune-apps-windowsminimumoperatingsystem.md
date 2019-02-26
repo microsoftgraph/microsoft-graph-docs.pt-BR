@@ -3,30 +3,32 @@ title: Tipo de recurso windowsMinimumOperatingSystem
 description: O sistema operacional mínimo obrigatório para um aplicativo móvel do Windows.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 521b82448d58a831f88bdf9d548612aee86bcba6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: f337a61f3a0cfd52e042e65bb3d8de57dcf9f283
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27972947"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30254461"
 ---
-# <a name="windowsminimumoperatingsystem-resource-type"></a><span data-ttu-id="eace5-103">Tipo de recurso windowsMinimumOperatingSystem</span><span class="sxs-lookup"><span data-stu-id="eace5-103">windowsMinimumOperatingSystem resource type</span></span>
+# <a name="windowsminimumoperatingsystem-resource-type"></a><span data-ttu-id="72529-103">Tipo de recurso windowsMinimumOperatingSystem</span><span class="sxs-lookup"><span data-stu-id="72529-103">windowsMinimumOperatingSystem resource type</span></span>
 
-> <span data-ttu-id="eace5-104">**Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="eace5-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="72529-104">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="72529-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="eace5-105">O sistema operacional mínimo obrigatório para um aplicativo móvel do Windows.</span><span class="sxs-lookup"><span data-stu-id="eace5-105">The minimum operating system required for a Windows mobile app.</span></span>
-## <a name="properties"></a><span data-ttu-id="eace5-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="eace5-106">Properties</span></span>
-|<span data-ttu-id="eace5-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="eace5-107">Property</span></span>|<span data-ttu-id="eace5-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="eace5-108">Type</span></span>|<span data-ttu-id="eace5-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="eace5-109">Description</span></span>|
+<span data-ttu-id="72529-105">O sistema operacional mínimo obrigatório para um aplicativo móvel do Windows.</span><span class="sxs-lookup"><span data-stu-id="72529-105">The minimum operating system required for a Windows mobile app.</span></span>
+
+## <a name="properties"></a><span data-ttu-id="72529-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="72529-106">Properties</span></span>
+|<span data-ttu-id="72529-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="72529-107">Property</span></span>|<span data-ttu-id="72529-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="72529-108">Type</span></span>|<span data-ttu-id="72529-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="72529-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="eace5-110">v8_0</span><span class="sxs-lookup"><span data-stu-id="eace5-110">v8_0</span></span>|<span data-ttu-id="eace5-111">Booliano</span><span class="sxs-lookup"><span data-stu-id="eace5-111">Boolean</span></span>|<span data-ttu-id="eace5-112">Windows 8.0 ou posterior.</span><span class="sxs-lookup"><span data-stu-id="eace5-112">Windows version 8.0 or later.</span></span>|
-|<span data-ttu-id="eace5-113">v8_1</span><span class="sxs-lookup"><span data-stu-id="eace5-113">v8_1</span></span>|<span data-ttu-id="eace5-114">Booliano</span><span class="sxs-lookup"><span data-stu-id="eace5-114">Boolean</span></span>|<span data-ttu-id="eace5-115">Windows 8.1 ou posterior.</span><span class="sxs-lookup"><span data-stu-id="eace5-115">Windows version 8.1 or later.</span></span>|
-|<span data-ttu-id="eace5-116">v10_0</span><span class="sxs-lookup"><span data-stu-id="eace5-116">v10_0</span></span>|<span data-ttu-id="eace5-117">Booliano</span><span class="sxs-lookup"><span data-stu-id="eace5-117">Boolean</span></span>|<span data-ttu-id="eace5-118">Windows 10.0 ou posterior.</span><span class="sxs-lookup"><span data-stu-id="eace5-118">Windows version 10.0 or later.</span></span>|
+|<span data-ttu-id="72529-110">v8_0</span><span class="sxs-lookup"><span data-stu-id="72529-110">v8_0</span></span>|<span data-ttu-id="72529-111">Boolean</span><span class="sxs-lookup"><span data-stu-id="72529-111">Boolean</span></span>|<span data-ttu-id="72529-112">Windows 8.0 ou posterior.</span><span class="sxs-lookup"><span data-stu-id="72529-112">Windows version 8.0 or later.</span></span>|
+|<span data-ttu-id="72529-113">v8_1</span><span class="sxs-lookup"><span data-stu-id="72529-113">v8_1</span></span>|<span data-ttu-id="72529-114">Boolean</span><span class="sxs-lookup"><span data-stu-id="72529-114">Boolean</span></span>|<span data-ttu-id="72529-115">Windows 8.1 ou posterior.</span><span class="sxs-lookup"><span data-stu-id="72529-115">Windows version 8.1 or later.</span></span>|
+|<span data-ttu-id="72529-116">v10_0</span><span class="sxs-lookup"><span data-stu-id="72529-116">v10_0</span></span>|<span data-ttu-id="72529-117">Booliano</span><span class="sxs-lookup"><span data-stu-id="72529-117">Boolean</span></span>|<span data-ttu-id="72529-118">Windows 10.0 ou posterior.</span><span class="sxs-lookup"><span data-stu-id="72529-118">Windows version 10.0 or later.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="eace5-119">Relações</span><span class="sxs-lookup"><span data-stu-id="eace5-119">Relationships</span></span>
-<span data-ttu-id="eace5-120">Nenhum</span><span class="sxs-lookup"><span data-stu-id="eace5-120">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="eace5-121">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="eace5-121">JSON Representation</span></span>
-<span data-ttu-id="eace5-122">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="eace5-122">Here is a JSON representation of the resource.</span></span>
+## <a name="relationships"></a><span data-ttu-id="72529-119">Relações</span><span class="sxs-lookup"><span data-stu-id="72529-119">Relationships</span></span>
+<span data-ttu-id="72529-120">Nenhum</span><span class="sxs-lookup"><span data-stu-id="72529-120">None</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="72529-121">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="72529-121">JSON Representation</span></span>
+<span data-ttu-id="72529-122">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="72529-122">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsMinimumOperatingSystem"
