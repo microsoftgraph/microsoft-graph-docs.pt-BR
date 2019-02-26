@@ -1,27 +1,28 @@
 ---
-title: tipo de enum habilitação
+title: tipo de enumeração de habilitação
 description: Ainda não documentado
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 25ee1a9e3121dee96830a03e1f6cef18dca684ae
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 2bb862dd45b49e67bb1e02b7a34a7945845fd1e7
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27933530"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30256102"
 ---
-# <a name="enablement-enum-type"></a><span data-ttu-id="31678-103">tipo de enum habilitação</span><span class="sxs-lookup"><span data-stu-id="31678-103">enablement enum type</span></span>
+# <a name="enablement-enum-type"></a><span data-ttu-id="e1795-103">tipo de enumeração de habilitação</span><span class="sxs-lookup"><span data-stu-id="e1795-103">enablement enum type</span></span>
 
-> <span data-ttu-id="31678-104">**Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="31678-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="e1795-104">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="e1795-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="31678-105">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="31678-105">Not yet documented</span></span>
-## <a name="members"></a><span data-ttu-id="31678-106">Membros</span><span class="sxs-lookup"><span data-stu-id="31678-106">Members</span></span>
-|<span data-ttu-id="31678-107">Membro</span><span class="sxs-lookup"><span data-stu-id="31678-107">Member</span></span>|<span data-ttu-id="31678-108">Valor</span><span class="sxs-lookup"><span data-stu-id="31678-108">Value</span></span>|<span data-ttu-id="31678-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="31678-109">Description</span></span>|
+<span data-ttu-id="e1795-105">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="e1795-105">Not yet documented</span></span>
+
+## <a name="members"></a><span data-ttu-id="e1795-106">Membros</span><span class="sxs-lookup"><span data-stu-id="e1795-106">Members</span></span>
+|<span data-ttu-id="e1795-107">Membro</span><span class="sxs-lookup"><span data-stu-id="e1795-107">Member</span></span>|<span data-ttu-id="e1795-108">Valor</span><span class="sxs-lookup"><span data-stu-id="e1795-108">Value</span></span>|<span data-ttu-id="e1795-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="e1795-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="31678-110">não-configuradas</span><span class="sxs-lookup"><span data-stu-id="31678-110">notConfigured</span></span>|<span data-ttu-id="31678-111">0</span><span class="sxs-lookup"><span data-stu-id="31678-111">0</span></span>|<span data-ttu-id="31678-112">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="31678-112">Not yet documented</span></span>|
-|<span data-ttu-id="31678-113">enabled</span><span class="sxs-lookup"><span data-stu-id="31678-113">enabled</span></span>|<span data-ttu-id="31678-114">1</span><span class="sxs-lookup"><span data-stu-id="31678-114">1</span></span>|<span data-ttu-id="31678-115">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="31678-115">Not yet documented</span></span>|
-|<span data-ttu-id="31678-116">desabilitado</span><span class="sxs-lookup"><span data-stu-id="31678-116">disabled</span></span>|<span data-ttu-id="31678-117">2</span><span class="sxs-lookup"><span data-stu-id="31678-117">2</span></span>|<span data-ttu-id="31678-118">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="31678-118">Not yet documented</span></span>|
+|<span data-ttu-id="e1795-110">notConfigured</span><span class="sxs-lookup"><span data-stu-id="e1795-110">notConfigured</span></span>|<span data-ttu-id="e1795-111">,0</span><span class="sxs-lookup"><span data-stu-id="e1795-111">0</span></span>|<span data-ttu-id="e1795-112">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="e1795-112">Not yet documented</span></span>|
+|<span data-ttu-id="e1795-113">enabled</span><span class="sxs-lookup"><span data-stu-id="e1795-113">enabled</span></span>|<span data-ttu-id="e1795-114">1</span><span class="sxs-lookup"><span data-stu-id="e1795-114">1</span></span>|<span data-ttu-id="e1795-115">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="e1795-115">Not yet documented</span></span>|
+|<span data-ttu-id="e1795-116">deficiência</span><span class="sxs-lookup"><span data-stu-id="e1795-116">disabled</span></span>|<span data-ttu-id="e1795-117">duas</span><span class="sxs-lookup"><span data-stu-id="e1795-117">2</span></span>|<span data-ttu-id="e1795-118">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="e1795-118">Not yet documented</span></span>|
 
 
 
