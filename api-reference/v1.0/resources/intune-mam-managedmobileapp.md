@@ -3,19 +3,20 @@ title: Tipo de recurso managedMobileApp
 description: O identificador da implantação de um aplicativo.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: a22c4f3445fe5cf880ab35df80d453ed2935b742
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: a3cba546ba0d2d815ee95838b4ea32fbf39372d1
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27933131"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30262969"
 ---
 # <a name="managedmobileapp-resource-type"></a>Tipo de recurso managedMobileApp
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 O identificador da implantação de um aplicativo.
+
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
@@ -29,11 +30,12 @@ O identificador da implantação de um aplicativo.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |mobileAppIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|O identificador de um aplicativo com seu tipo de sistema operacional.|
-|id|Cadeia de caracteres|Chave da entidade.|
-|version|Cadeia de caracteres|Versão da entidade.|
+|id|String|Chave da entidade.|
+|version|String|Versão da entidade.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
+
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
 <!-- {

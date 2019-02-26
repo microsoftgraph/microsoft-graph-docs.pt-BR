@@ -1,21 +1,22 @@
 ---
 title: Tipo de recurso androidGeneralDeviceConfiguration
 description: Este tópico fornece descrições dos métodos declarados, das propriedades e das relações expostos pelo recurso androidGeneralDeviceConfiguration.
-localization_priority: Normal
 author: tfitzmac
-ms.prod: intune
-ms.openlocfilehash: c40c039208daef817701dd3f3dd43b0a0a2bd9d1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+localization_priority: Normal
+ms.prod: Intune
+ms.openlocfilehash: 9b0f3edb9d53cc42ec92d3330966cafec4bedcfa
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27945983"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30259518"
 ---
 # <a name="androidgeneraldeviceconfiguration-resource-type"></a>Tipo de recurso androidGeneralDeviceConfiguration
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Este tópico fornece descrições dos métodos declarados, das propriedades e das relações expostos pelo recurso androidGeneralDeviceConfiguration.
+
 
 Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)
 
@@ -31,67 +32,67 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|id|String|Chave da entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |description|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Versão da configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|appsBlockClipboardSharing|Booliano|Indica se a função de copiar e colar entre aplicativos será bloqueada ou não no compartilhamento de área de transferência.|
-|appsBlockCopyPaste|Booliano|Indica se a função de copiar e colar dentro de aplicativos será bloqueada ou não.|
-|appsBlockYouTube|Booliano|Indica se o aplicativo YouTube deve ou não ser bloqueado.|
-|bluetoothBlocked|Booliano|Indica se o Bluetooth deve ou não ser bloqueado.|
-|cameraBlocked|Booliano|Indica se o uso da câmera deve ou não ser bloqueado.|
-|cellularBlockDataRoaming|Booliano|Indica se o roaming de dados deve ou não ser bloqueado.|
-|cellularBlockMessaging|Booliano|Indica se as mensagens SMS/MMS devem ou não ser bloqueadas.|
-|cellularBlockVoiceRoaming|Booliano|Indica se o roaming de voz deve ou não ser bloqueado.|
-|cellularBlockWiFiTethering|Booliano|Indica se a sincronização de compartilhamento de Internet por Wi-Fi deve ou não ser bloqueada.|
+|appsBlockClipboardSharing|Boolean|Indica se a função de copiar e colar entre aplicativos será bloqueada ou não no compartilhamento de área de transferência.|
+|appsBlockCopyPaste|Boolean|Indica se a função de copiar e colar dentro de aplicativos será bloqueada ou não.|
+|appsBlockYouTube|Boolean|Indica se o aplicativo YouTube deve ou não ser bloqueado.|
+|bluetoothBlocked|Boolean|Indica se o Bluetooth deve ou não ser bloqueado.|
+|cameraBlocked|Boolean|Indica se o uso da câmera deve ou não ser bloqueado.|
+|cellularBlockDataRoaming|Boolean|Indica se o roaming de dados deve ou não ser bloqueado.|
+|cellularBlockMessaging|Boolean|Indica se as mensagens SMS/MMS devem ou não ser bloqueadas.|
+|cellularBlockVoiceRoaming|Boolean|Indica se o roaming de voz deve ou não ser bloqueado.|
+|cellularBlockWiFiTethering|Boolean|Indica se a sincronização de compartilhamento de Internet por Wi-Fi deve ou não ser bloqueada.|
 |compliantAppsList|Coleção [appListItem](../resources/intune-deviceconfig-applistitem.md)|Lista de aplicativos em conformidade (lista de permissões ou lista de bloqueios, controladas por CompliantAppListType). Essa coleção pode conter um máximo de 10.000 elementos.|
 |compliantAppListType|[appListType](../resources/intune-deviceconfig-applisttype.md)|Tipo de lista que está em CompliantAppsList. Os valores possíveis são: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
-|diagnosticDataBlockSubmission|Booliano|Indica se o envio de dados de diagnóstico deve ou não ser bloqueado.|
-|locationServicesBlocked|Booliano|Indica se os serviços de localização devem ou não ser bloqueados.|
-|googleAccountBlockAutoSync|Booliano|Indica se a sincronização automática da conta do Google deve ou não ser bloqueada.|
-|googlePlayStoreBlocked|Booliano|Indica se a Google Play Store deve ou não ser bloqueada.|
-|kioskModeBlockSleepButton|Booliano|Indica se o botão de suspensão de tela deve ou não ser bloqueado no modo quiosque.|
-|kioskModeBlockVolumeButtons|Booliano|Indica se os botões de volume devem ou não ser bloqueados no modo quiosque.|
+|diagnosticDataBlockSubmission|Boolean|Indica se o envio de dados de diagnóstico deve ou não ser bloqueado.|
+|locationServicesBlocked|Boolean|Indica se os serviços de localização devem ou não ser bloqueados.|
+|googleAccountBlockAutoSync|Boolean|Indica se a sincronização automática da conta do Google deve ou não ser bloqueada.|
+|googlePlayStoreBlocked|Boolean|Indica se a Google Play Store deve ou não ser bloqueada.|
+|kioskModeBlockSleepButton|Boolean|Indica se o botão de suspensão de tela deve ou não ser bloqueado no modo quiosque.|
+|kioskModeBlockVolumeButtons|Boolean|Indica se os botões de volume devem ou não ser bloqueados no modo quiosque.|
 |kioskModeApps|Coleção [appListItem](../resources/intune-deviceconfig-applistitem.md)|Uma lista de aplicativos que poderão ser executados quando o dispositivo estiver no modo quiosque. Esta coleção pode conter um máximo de 500 elementos.|
-|nfcBlocked|Booliano|Indica se a comunicação a curta distância deve ou não ser bloqueada.|
-|passwordBlockFingerprintUnlock|Booliano|Indica se o desbloqueio de impressão digital deve ou não ser bloqueado.|
-|passwordBlockTrustAgents|Booliano|Indica se o Smart Lock e outros agentes confiáveis devem ou não ser bloqueados.|
+|nfcBlocked|Boolean|Indica se a comunicação a curta distância deve ou não ser bloqueada.|
+|passwordBlockFingerprintUnlock|Boolean|Indica se o desbloqueio de impressão digital deve ou não ser bloqueado.|
+|passwordBlockTrustAgents|Boolean|Indica se o Smart Lock e outros agentes confiáveis devem ou não ser bloqueados.|
 |passwordExpirationDays|Int32|Número de dias antes da expiração da senha. Valores válidos de 1 a 365|
 |passwordMinimumLength|Int32|Comprimento mínimo das senhas. Valores válidos de 4 a 16|
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Minutos de inatividade antes que a tela atinja o tempo limite.|
 |passwordPreviousPasswordBlockCount|Int32|Número de senhas anteriores para bloquear. Valores válidos de 0 a 24|
-|passwordSignInFailureCountBeforeFactoryReset|Int32|Número permitido de falhas de entrada antes da redefinição de fábrica. Valores válidos de 4 a 11|
+|passwordSignInFailureCountBeforeFactoryReset|Int32|Número permitido de falhas de entrada antes da redefinição de fábrica. Valores válidos de 1 a 16|
 |passwordRequiredType|[androidRequiredPasswordType](../resources/intune-deviceconfig-androidrequiredpasswordtype.md)|Tipo de senha necessário. Os valores possíveis são: `deviceDefault`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `numeric`, `numericComplex`, `any`.|
-|passwordRequired|Booliano|Indica se uma senha deve ou não ser exigida.|
-|powerOffBlocked|Booliano|Indica se o desligamento do dispositivo deve ou não ser bloqueado.|
-|factoryResetBlocked|Booliano|Indica se o usuário será ou não impedido de executar uma restauração de fábrica.|
-|screenCaptureBlocked|Booliano|Indica se capturas de tela devem ou não ser bloqueadas.|
-|deviceSharingAllowed|Booliano|Indica se o modo de compartilhamento do dispositivo deve ou não ser permitido.|
-|storageBlockGoogleBackup|Booliano|Indica se o Backup do Google deve ou não ser bloqueado.|
-|storageBlockRemovableStorage|Booliano|Indica se o uso do armazenamento removível deve ou não ser bloqueado.|
-|storageRequireDeviceEncryption|Booliano|Indica se a criptografia do dispositivo é ou não necessária.|
-|storageRequireRemovableStorageEncryption|Booliano|Indica se a criptografia do armazenamento removível é ou não necessária.|
-|voiceAssistantBlocked|Booliano|Indica se o uso do Assistente de voz será ou não bloqueado.|
-|voiceDialingBlocked|Booliano|Indica se a discagem de voz deve ou não ser bloqueada.|
-|webBrowserBlockPopups|Booliano|Indica se os pop-ups dentro do navegador da Web devem ou não ser bloqueados.|
-|webBrowserBlockAutofill|Booliano|Indica se o recurso de preenchimento automático do navegador da Web deve ou não ser bloqueado.|
-|webBrowserBlockJavaScript|Booliano|Indica se o JavaScript dentro do navegador da Web deve ou não ser bloqueado.|
-|webBrowserBlocked|Booliano|Indica se o navegador da Web deve ou não ser bloqueado.|
+|passwordRequired|Boolean|Indica se uma senha deve ou não ser exigida.|
+|powerOffBlocked|Boolean|Indica se o desligamento do dispositivo deve ou não ser bloqueado.|
+|factoryResetBlocked|Boolean|Indica se o usuário será ou não impedido de executar uma restauração de fábrica.|
+|screenCaptureBlocked|Boolean|Indica se capturas de tela devem ou não ser bloqueadas.|
+|deviceSharingAllowed|Boolean|Indica se o modo de compartilhamento do dispositivo deve ou não ser permitido.|
+|storageBlockGoogleBackup|Boolean|Indica se o Backup do Google deve ou não ser bloqueado.|
+|storageBlockRemovableStorage|Boolean|Indica se o uso do armazenamento removível deve ou não ser bloqueado.|
+|storageRequireDeviceEncryption|Boolean|Indica se a criptografia do dispositivo é ou não necessária.|
+|storageRequireRemovableStorageEncryption|Boolean|Indica se a criptografia do armazenamento removível é ou não necessária.|
+|voiceAssistantBlocked|Boolean|Indica se o uso do Assistente de voz será ou não bloqueado.|
+|voiceDialingBlocked|Boolean|Indica se a discagem de voz deve ou não ser bloqueada.|
+|webBrowserBlockPopups|Boolean|Indica se os pop-ups dentro do navegador da Web devem ou não ser bloqueados.|
+|webBrowserBlockAutofill|Boolean|Indica se o recurso de preenchimento automático do navegador da Web deve ou não ser bloqueado.|
+|webBrowserBlockJavaScript|Boolean|Indica se o JavaScript dentro do navegador da Web deve ou não ser bloqueado.|
+|webBrowserBlocked|Boolean|Indica se o navegador da Web deve ou não ser bloqueado.|
 |webBrowserCookieSettings|[webBrowserCookieSettings](../resources/intune-deviceconfig-webbrowsercookiesettings.md)|Configuração de cookies do navegador da Web. Os valores possíveis são: `browserDefault`, `blockAlways`, `allowCurrentWebSite`, `allowFromWebsitesVisited`, `allowAlways`.|
-|wiFiBlocked|Booliano|Indica se a sincronização de Wi-Fi deve ou não ser bloqueada.|
+|wiFiBlocked|Boolean|Indica se a sincronização de Wi-Fi deve ou não ser bloqueada.|
 |appsInstallAllowList|Coleção [appListItem](../resources/intune-deviceconfig-applistitem.md)|Lista de aplicativos que podem ser instalados no dispositivo KNOX. Esta coleção pode conter um máximo de 500 elementos.|
 |appsLaunchBlockList|Coleção [appListItem](../resources/intune-deviceconfig-applistitem.md)|Lista de aplicativos que não podem ser abertos no dispositivo KNOX. Esta coleção pode conter um máximo de 500 elementos.|
 |appsHideList|Coleção [appListItem](../resources/intune-deviceconfig-applistitem.md)|Lista de aplicativos que devem ficar ocultos no dispositivo KNOX. Esta coleção pode conter um máximo de 500 elementos.|
-|securityRequireVerifyApps|Booliano|Exige que o recurso de verificação de aplicativos Android esteja ativado.|
+|securityRequireVerifyApps|Boolean|Exige que o recurso de verificação de aplicativos Android esteja ativado.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |assignments|Coleção [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|A lista de atribuições para o perfil de configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |deviceStatuses|Coleção [deviceConfigurationDeviceStatus](../resources/intune-deviceconfig-deviceconfigurationdevicestatus.md)|Status de instalação da configuração do dispositivo por dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|userStatuses|Coleção [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md)|Status de instalação da configuração de dispositivo por usuário. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|userStatuses|Coleção [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md)|Status de instalação da configuração do dispositivo por usuário. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|Visão geral de status dos dispositivos na Configuração do dispositivo Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|Visão geral de status dos usuários na Configuração do dispositivo Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |deviceSettingStateSummaries|Coleção [settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md)|Resumo de dispositivo de estado de configuração do dispositivo Herdada do [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|

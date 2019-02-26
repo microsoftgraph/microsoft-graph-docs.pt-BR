@@ -3,21 +3,22 @@ title: Criar deviceInstallState
 description: Criar um novo objeto deviceInstallState.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: e7e37857cfa7d7c8820844f506b59d50933c5866
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 03eeaaedcb4c4d5d6b1fee6077ab623cab946290
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27962538"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30263585"
 ---
 # <a name="create-deviceinstallstate"></a>Criar deviceInstallState
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Criar um novo objeto [deviceInstallState](../resources/intune-books-deviceinstallstate.md).
+
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -48,13 +49,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceIn
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade.|
-|deviceName|Cadeia de caracteres|Nome do dispositivo.|
-|deviceId|Cadeia de caracteres|ID do dispositivo.|
+|id|String|Chave da entidade.|
+|deviceName|String|Nome do dispositivo.|
+|deviceId|String|ID do dispositivo.|
 |lastSyncDateTime|DateTimeOffset|Última sincronização de data e hora.|
 |installState|[installState](../resources/intune-books-installstate.md)|O estado de instalação do livro eletrônico. Os valores possíveis são: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed`, `unknown`.|
-|errorCode|Cadeia de caracteres|O código de erro de falhas de instalação.|
-|osVersion|Cadeia de caracteres|Versão do sistema operacional.|
+|errorCode|String|O código de erro de falhas de instalação.|
+|osVersion|String|Versão do sistema operacional.|
 |osDescription|Cadeia de caracteres|Descrição do sistema operacional.|
 |userName|Cadeia de caracteres|Nome de usuário do dispositivo.|
 
@@ -64,6 +65,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceIn
 Se tiver êxito, esse método retornará um código de resposta `201 Created` e um objeto [deviceInstallState](../resources/intune-books-deviceinstallstate.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
+
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http

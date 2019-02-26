@@ -1,27 +1,28 @@
 ---
-title: tipo de enum firewallPreSharedKeyEncodingMethodType
+title: tipo de enumeração firewallPreSharedKeyEncodingMethodType
 description: Valores possíveis para firewallPreSharedKeyEncodingMethod
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 4ad59a11aec2fbf715657de95eb3aafc778da43a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 0c62144ef2974da5a3d975c759bb8d2bd2be6032
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27947824"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30259546"
 ---
-# <a name="firewallpresharedkeyencodingmethodtype-enum-type"></a>tipo de enum firewallPreSharedKeyEncodingMethodType
+# <a name="firewallpresharedkeyencodingmethodtype-enum-type"></a>tipo de enumeração firewallPreSharedKeyEncodingMethodType
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Valores possíveis para firewallPreSharedKeyEncodingMethod
+
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|deviceDefault|0|Nenhum valor configurado por Intune, não substituir o valor padrão de dispositivo configurada pelo usuário|
-|nenhum|1|Chave pré compartilhada não é codificado. Em vez disso, ele é mantido em seu formato de caractere largo|
-|utF8|2|Codificar a chave pré compartilhada usando a codificação UTF-8|
+|deviceDefault|,0|Nenhum valor configurado pelo Intune, não substitua o valor padrão do dispositivo configurado pelo usuário|
+|Nenhuma|1|A chave pré-compartilhada não está codificada. Em vez disso, ele é mantido em seu formato de caracteres largos|
+|utF8|duas|Codificar a chave pré-compartilhada usando UTF-8|
 
 
 

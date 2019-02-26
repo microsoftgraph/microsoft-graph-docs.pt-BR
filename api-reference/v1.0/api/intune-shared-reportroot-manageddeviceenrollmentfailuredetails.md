@@ -4,18 +4,19 @@ description: Ainda não documentado
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 128ad6e3985649b3dbaffa101c19f0b2440b0838
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: c234181bb70ca0df11cff01b67eb7d6fa60e27ca
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27980374"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30262990"
 ---
 # <a name="manageddeviceenrollmentfailuredetails-function"></a>função managedDeviceEnrollmentFailureDetails
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Ainda não documentado
+
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -65,7 +66,7 @@ GET https://graph.microsoft.com/v1/reports/managedDeviceEnrollmentFailureDetails
 ```
 
 ### <a name="response"></a>Resposta
-No objeto response mostrado aqui pode estar truncado para fins de concisão. Todas as propriedades serão retornadas de uma chamada real.
+O objeto de resposta mostrado aqui pode estar truncado por brevidade. Todas as propriedades serão retornadas de uma chamada real.
 
 ``` http
 HTTP/1.1 200 OK

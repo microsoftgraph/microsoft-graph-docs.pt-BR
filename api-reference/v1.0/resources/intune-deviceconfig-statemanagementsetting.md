@@ -1,27 +1,28 @@
 ---
-title: tipo de enum stateManagementSetting
+title: tipo de enumeração stateManagementSetting
 description: Configuração de gerenciamento de estado.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 2fa80090a7434dc0683d69cecb99211abb37214d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 5af70df2d1a873a670d36f02e4da9005a4b6b866
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937611"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30261660"
 ---
-# <a name="statemanagementsetting-enum-type"></a>tipo de enum stateManagementSetting
+# <a name="statemanagementsetting-enum-type"></a>tipo de enumeração stateManagementSetting
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Configuração de gerenciamento de estado.
+
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|não-configuradas|0|Não configurado.|
-|bloqueado|1|Bloqueado.|
-|permitido|2|Permitido.|
+|notConfigured|,0|Não configurado.|
+|bloqueou|1|Bloqueou.|
+|autorizado|duas|Autorizado.|
 
 
 

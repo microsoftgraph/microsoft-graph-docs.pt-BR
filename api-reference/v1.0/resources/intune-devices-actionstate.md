@@ -1,30 +1,31 @@
 ---
-title: tipo de enum actionState
+title: tipo de Enumeração ActionState
 description: Estado da ação no dispositivo
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 5579d8de986a764cd96e42dff30c007449130b0b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: e06b492e41ffa5e2f9aa4b64782e96125ea746a2
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27922442"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30261485"
 ---
-# <a name="actionstate-enum-type"></a>tipo de enum actionState
+# <a name="actionstate-enum-type"></a>tipo de Enumeração ActionState
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Estado da ação no dispositivo
+
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhum|0|Não é um estado de ação válido|
-|pendente|1|A ação é pendente|
-|cancelado|2|Ação foi cancelada.|
-|ativo|3|Ação está ativa.|
-|done|4|Ação concluída sem erros.|
-|Falha|5|Falha na ação|
+|Nenhuma|,0|Não é um estado de ação válido|
+|função|1|Ação pendente|
+|foi|duas|A ação foi cancelada.|
+|active|3D|A ação está ativa.|
+|done|quatro|Ação concluída sem erros.|
+|falhou|0,5|Falha na ação|
 |notSupported|6|Não há suporte para a ação.|
 
 

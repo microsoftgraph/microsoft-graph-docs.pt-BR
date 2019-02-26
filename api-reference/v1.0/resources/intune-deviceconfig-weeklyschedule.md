@@ -1,33 +1,34 @@
 ---
-title: tipo de enum weeklySchedule
-description: Valores possíveis para semanalmente.
+title: tipo de enumeração weeklySchedule
+description: Valores possíveis para um cronograma semanal.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 35f41be7d53017072b399fa4c82192897c804fe2
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 04773d2c23dde1d103e2865e6cc8d731337e38a9
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27934657"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30263018"
 ---
-# <a name="weeklyschedule-enum-type"></a>tipo de enum weeklySchedule
+# <a name="weeklyschedule-enum-type"></a>tipo de enumeração weeklySchedule
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Valores possíveis para semanalmente.
+Valores possíveis para um cronograma semanal.
+
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|userDefined|0|Definido pelo usuário, valor padrão, sem intenção.|
-|diárias|1|Todos os dias.|
-|domingo|2|Domingo.|
-|segunda-feira|3|Segunda-feira.|
-|Terça-feira|4|Terça-feira.|
-|quarta-feira|5|Quarta-feira.|
+|userDefined|,0|Definido pelo usuário, valor padrão, sem intenção.|
+|diário|1|Diário.|
+|domingo|duas|Domingo.|
+|período|3D|Segunda-feira.|
+|feira|quatro|Terça-feira.|
+|feira|0,5|Quarta-feira.|
 |quinta-feira|6|Quinta-feira.|
-|sexta-feira|7|Sexta-feira.|
-|Sábado|8|Sábado.|
+|sexta|178|Sexta-feira.|
+|sábado|8|Sábado.|
 
 
 

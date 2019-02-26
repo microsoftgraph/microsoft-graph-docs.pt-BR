@@ -1,35 +1,35 @@
 ---
-title: tipo de enum deviceEnrollmentType
-description: Maneiras possíveis de adição de um dispositivo móvel gerenciamento.
+title: tipo de enumeração deviceEnrollmentType
+description: Maneiras possíveis de adicionar um dispositivo móvel ao gerenciamento.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 72acbdf412ebb91269fcdc3f851ffbc204e0274b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 62ff257e2f758776265f52a0d64cde52dbc26115
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27987752"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30261961"
 ---
-# <a name="deviceenrollmenttype-enum-type"></a>tipo de enum deviceEnrollmentType
+# <a name="deviceenrollmenttype-enum-type"></a>tipo de enumeração deviceEnrollmentType
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Maneiras possíveis de adição de um dispositivo móvel gerenciamento.
+Maneiras possíveis de adicionar um dispositivo móvel ao gerenciamento.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|unknown|0|O valor padrão, tipo de registro não foi coletado.|
-|userEnrollment|1|Inscrição do orientado por usuário por meio do canal BYOD.|
-|deviceEnrollmentManager|2|Inscrição do usuário com uma conta de Gerenciador de inscrição do dispositivo.|
-|appleBulkWithUser|3|Inscrição do Apple em massa com o desafio de usuário (DEP, Apple configurador).|
-|appleBulkWithoutUser|4|Inscrição do Apple em massa sem o desafio de usuário (DEP, Apple configurador, Mobile Config).|
-|windowsAzureADJoin|5|Windows Azure AD de 10 ingressam.|
-|windowsBulkUserless|6|Inscrição em massa de 10 Windows por meio de ICD com certificado.|
-|windowsAutoEnrollment|7|Inscrição automática do Windows 10. (Adicionar a conta do trabalho)|
-|windowsBulkAzureDomainJoin|8|Windows 10 em massa ingressar do Windows Azure AD.|
-|windowsCoManagement|9|Gerenciamento de colegas Windows 10 acionado por piloto automático ou a diretiva de grupo.|
+|unknown|,0|O valor padrão, o tipo de registro não foi coletado.|
+|userRegistrar|1|Registro controlado pelo usuário por meio do canal BYOD.|
+|deviceEnrollmentManager|duas|Registro de usuário com uma conta de Gerenciador de registro de dispositivo.|
+|appleBulkWithUser|3D|Inscrição em massa da Apple com o desafio do usuário. (DEP, Apple conFigurator)|
+|appleBulkWithoutUser|quatro|Inscrição em massa da Apple sem o desafio do usuário. (DEP, Apple conFigurator, configuração móvel)|
+|windowsAzureADJoin|0,5|Ingressar no Azure AD do Windows 10.|
+|windowsBulkUserless|6|Registro em massa do Windows 10 através do ICD com o certificado.|
+|windowsAutoEnrollment|178|Registro automático do Windows 10. (Adicionar conta de trabalho)|
+|windowsBulkAzureDomainJoin|8|Ingresso no Azure AD em massa do Windows 10.|
+|windowsCoManagement|241|Co-gerenciamento de interGestão do Windows 10 disparado por autoPilot ou política de grupo.|
 
 
 

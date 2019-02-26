@@ -3,28 +3,30 @@ title: Tipo de recurso managedAppDiagnosticStatus
 description: Representa o status de diagnóstico.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 3a5204a4704eefc2d4e7c8e0d5b3b709e1750667
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: c2477039c3a0ebca3de09a4042691045782848b3
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937478"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30261548"
 ---
 # <a name="managedappdiagnosticstatus-resource-type"></a>Tipo de recurso managedAppDiagnosticStatus
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Representa o status de diagnóstico.
+
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|validationName|Cadeia de caracteres|O nome amigável da validação|
-|estado|Cadeia de caracteres|O estado da operação|
+|validationName|String|O nome amigável da validação|
+|estado|String|O estado da operação|
 |mitigationInstruction|Cadeia de caracteres|Instruções sobre como atenuar uma falha de validação|
 
 ## <a name="relationships"></a>Relações
 Nenhum
+
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
 <!-- {
