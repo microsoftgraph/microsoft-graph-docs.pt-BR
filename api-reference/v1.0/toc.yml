@@ -1093,6 +1093,7 @@ items:
                     href: api/intune-apps-windowsuniversalappx-update.md
           - name: Termos da empresa
             href: resources/intune-company-conceptual.md
+            displayName: Intune
             items:
               - name: Termos e condições
                 href: resources/intune-companyterms-termsandconditions.md
@@ -1135,11 +1136,12 @@ items:
                     href: api/intune-companyterms-termsandconditionsassignment-update.md
           - name: Registro corporativo
             href: resources/intune-enrollment-conceptual.md
+            displayName: Intune
             items:
               - name: Identidade importada do dispositivo do Windows Autopilot
                 href: resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-list.md
                   - name: Obter
                     href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-get.md
@@ -1170,6 +1172,7 @@ items:
                 href: resources/intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus.md
           - name: Configuração do dispositivo
             href: resources/intune-device-cfg-conceptual.md
+            displayName: Intune
             items:
               - name: Política de conformidade do Android
                 href: resources/intune-deviceconfig-androidcompliancepolicy.md
@@ -2042,6 +2045,7 @@ items:
                 href: resources/intune-deviceconfig-windowsuseraccountcontrolsettings.md
           - name: Gerenciamento de dispositivo
             href: resources/intune-device-mgt-conceptual.md
+            displayName: Intune
             items:
               - name: Estado da ação
                 href: resources/intune-devices-actionstate.md
@@ -2094,8 +2098,6 @@ items:
                 href: resources/intune-devices-deviceactionresult.md
               - name: Motivo da falha de registro do dispositivo
                 href: resources/intune-troubleshooting-deviceenrollmentfailurereason.md
-              - name: Tipo de registro de dispositivo
-                href: resources/intune-devices-deviceenrollmenttype.md
               - name: Resumo do estado de acesso do dispositivo Exchange
                 href: resources/intune-devices-deviceexchangeaccessstatesummary.md
               - name: Geolocalização de dispositivo
@@ -2168,7 +2170,7 @@ items:
                     href: api/intune-devices-manageddevice-update.md
                   - name: Ação retire
                     href: api/intune-devices-manageddevice-retire.md
-                  - name: Ação wipe
+                  - name: ação wipe
                     href: api/intune-devices-manageddevice-wipe.md
                   - name: Ação resetPasscode
                     href: api/intune-devices-manageddevice-resetpasscode.md
@@ -2263,12 +2265,13 @@ items:
                 href: resources/intune-devices-windowsdeviceaccount.md
               - name: Conta AD do dispositivo Windows
                 href: resources/intune-devices-windowsdeviceadaccount.md
-              - name: Conta do Azure AD do dispositivo Windows
+              - name: Conta Azure AD do dispositivo Windows
                 href: resources/intune-devices-windowsdeviceazureadaccount.md
-          - name: Gerenciamento de aplicativo móvel
+          - name: Gerenciamento de aplicativo móvel (GAM)
             href: resources/intune-mam-conceptual.md
+            displayName: Intune
             items:
-              - name: Proteção de aplicativo gerenciado Android
+              - name: Proteção de aplicativo gerenciado pelo Android
                 href: resources/intune-mam-androidmanagedappprotection.md
                 items:
                   - name: Listar
@@ -2569,6 +2572,7 @@ items:
                 href: resources/intune-mam-windowsinformationprotectionstoreapp.md
           - name: Integração
             href: resources/intune-onboarding-conceptual.md
+            displayName: Intune
             items:
               - name: Configuração de registro do dispositivo
                 href: resources/intune-onboarding-deviceenrollmentconfiguration.md
@@ -2737,8 +2741,9 @@ items:
                 href: resources/intune-onboarding-vpptokensyncstatus.md
               - name: Uso do PIN do Windows Hello para empresas
                 href: resources/intune-onboarding-windowshelloforbusinesspinusage.md
-          - name: Controle de acesso baseado em função
-            href: resources/intune-rbac-conceptual.md
+          - name: Controle de Acesso Baseado em Função (RBAC)
+            href: /resources/intune-rbac-conceptual.md
+            displayName: Intune
             items:
               - name: Atribuição de função de gerenciamento de aplicativo e dispositivo
                 href: resources/intune-rbac-deviceandappmanagementroleassignment.md
@@ -2811,6 +2816,7 @@ items:
                 href: resources/intune-rbac-rolepermission.md
           - name: Recursos compartilhados
             href: resources/intune-shared-conceptual.md
+            displayName: Intune
             items:
               - name: Destino de atribuição de todos os dispositivos
                 href: resources/intune-shared-alldevicesassignmenttarget.md
@@ -2842,6 +2848,8 @@ items:
                     href: api/intune-shared-devicecategory-delete.md
                   - name: Atualizar
                     href: api/intune-shared-devicecategory-update.md
+              - name: Tipo de registro de dispositivo
+                href: resources/intune-shared-deviceenrollmenttype.md
               - name: Gerenciamento de dispositivo
                 href: resources/intune-shared-devicemanagement.md
                 items:
@@ -2891,6 +2899,7 @@ items:
                 href: resources/intune-shared-vpptokenaccounttype.md
           - name: Despesas de telecomunicações
             href: resources/intune-tem-conceptual.md
+            displayName: Intune
             items:
               - name: Parceiro de gerenciamento de despesas com telecomunicações
                 href: resources/intune-tem-telecomexpensemanagementpartner.md
