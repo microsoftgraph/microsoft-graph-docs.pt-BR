@@ -1,20 +1,24 @@
 ---
-title: Excluir um usuário
-description: Excluir usuário.
+title: Excluir um usuário - Microsoft Graph API
+description: Descreve o método de exclusão de recursos do usuário (entidade) do Microsoft Graph API (REST).
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 93097c1d2f3f88e3e1f6b4a0166883728b402ba4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: ba27c81e5cb6b8bc8738c419b467e686932bc7c8
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27987087"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30258062"
 ---
 # <a name="delete-a-user"></a>Excluir um usuário
 
-Excluir usuário.
+Excluir usuário.  
+
+Quando excluído, os recursos do usuário são movidos para um contêiner temporário e poderá ser restaurados dentro de 30 dias.  Após esse período, elas serão permanentemente excluídos.  Para saber mais, confira [deletedItems](../resources/directory.md).
+
 ## <a name="permissions"></a>Permissões
+
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -24,17 +28,20 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Aplicativo | User.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
+
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /users/{id | userPrincipalName}
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
+
 | Cabeçalho       | Valor|
 |:-----------|:------|
 | Autorização  | {token} de portador. Obrigatório.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
+
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
@@ -42,7 +49,9 @@ Não forneça um corpo de solicitação para esse método.
 Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-##### <a name="request"></a>Solicitação
+
+## <a name="request"></a>Solicitação
+
 Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
@@ -51,7 +60,8 @@ Este é um exemplo da solicitação.
 ```http
 DELETE https://graph.microsoft.com/v1.0/users/{user-id}
 ```
-##### <a name="response"></a>Resposta
+### <a name="response"></a>Resposta
+
 Veja a seguir um exemplo da resposta. 
 <!-- {
   "blockType": "response",

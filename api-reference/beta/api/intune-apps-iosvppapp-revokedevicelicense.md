@@ -1,23 +1,23 @@
 ---
-title: ação de revokeDeviceLicense
-description: REVOKE atribuído iOS VPP dispositivo licença para fornecido app.
-localization_priority: Normal
+title: ação revokeDeviceLicense
+description: Revogar licença de dispositivo VPP do iOS atribuída para determinado aplicativo.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b58fe7440b1b77e5dc651a4a7c802dae8e5139c4
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: b0d00dfb436945583baaf276c8c5425fe3223df7
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29410403"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30174801"
 ---
-# <a name="revokedevicelicense-action"></a>ação de revokeDeviceLicense
+# <a name="revokedevicelicense-action"></a>ação revokeDeviceLicense
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-REVOKE atribuído iOS VPP dispositivo licença para fornecido app.
+Revogar licença de dispositivo VPP do iOS atribuída para determinado aplicativo.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
@@ -52,8 +52,8 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|managedDeviceId|String|DeviceId para quem a licença de aplicativo atribuídas é a ser revogado|
-|notifyManagedDevices|Boolean|Boolean que indica se revoke notificação deve ser enviada ao dispositivo|
+|managedDeviceId|String|A deViceid para a qual a licença de aplicativo atribuída deve ser revogada|
+|notifyManagedDevices|Booliano|Booliano que indica se a notificação de revogação deve ser enviada ao dispositivo|
 
 
 
