@@ -3,12 +3,12 @@ title: 'Referência de permissões do Microsoft Graph '
 description: O Microsoft Graph expõe as permissões granulares que controlam o acesso que os aplicativos têm aos recursos, como email, grupos e usuários. Como desenvolvedor, você decide quais permissões para o Microsoft Graph seu aplicativo deverá solicitar.
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: 6f29ce28546410f18d22fe22d353465c370a3296
-ms.sourcegitcommit: 255061099661a38278140675db4cbadbdca9be7c
+ms.openlocfilehash: cf5639e09977b052d0c5a9b56c535fdaf66789fa
+ms.sourcegitcommit: 98c3a9c791f82e5fab504f51f49a6835311381c6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "29760934"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30314620"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph 
 O Microsoft Graph expõe as permissões granulares que controlam o acesso que os aplicativos têm aos recursos, como email, grupos e usuários. Como desenvolvedor, você decide quais permissões para o Microsoft Graph seu aplicativo deverá solicitar. Quando um usuário entra no aplicativo, ele, ou, em alguns casos, um administrador, tem a opção de consentir essas permissões. Se o usuário consentir, seu aplicativo receberá acesso aos recursos e APIs que solicitados. Para aplicativos que não aceitam usuários conectados, as permissões podem ser previamente consentidas pelo administrador quando o aplicativo é instalado ou durante a inscrição. 
@@ -953,10 +953,10 @@ Essas permissões de sites só são válidas para contas corporativas ou de estu
 
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Tasks.Read_ | Ler tarefas do usuário | Permite que o aplicativo leia as tarefas do usuário. | Não | Sim |
-| _Tasks.Read.Shared_ | Ler as tarefas do usuário e as tarefas compartilhadas | Permite que o aplicativo leia as tarefas que o usuário tem permissão de acessar, incluindo as próprias tarefas e as tarefas compartilhadas. | Não | Não |
-| _Tasks.ReadWrite_ |    Criar, ler, atualizar e excluir tarefas e contêineres do usuário | Permite ao aplicativo criar, ler, atualizar e excluir tarefas e contêineres (e tarefas neles) que são atribuídos ou compartilhados com o usuário conectado.| Não | Sim |
-| _Tasks.ReadWrite.Shared_ | Ler e registrar as tarefas do usuário e as tarefas compartilhadas | Permite que o aplicativo crie, leia, atualize e exclua as tarefas permitidas para um usuário, incluindo suas próprias tarefas e as compartilhadas. | Não | Não |
+| _Tasks.Read_ | Ler as tarefas do usuário (visualização) | Permite que o aplicativo leia as tarefas do usuário. | Não | Sim |
+| _Tasks.Read.Shared_ | Ler as tarefas do usuário e as tarefas compartilhadas (visualização) | Permite que o aplicativo leia as tarefas que o usuário tem permissão de acessar, incluindo as próprias tarefas e as tarefas compartilhadas. | Não | Não |
+| _Tasks.ReadWrite_ | Criar, ler, atualizar e excluir tarefas e contêineres do usuário (visualização) | Permite ao aplicativo criar, ler, atualizar e excluir tarefas e contêineres (e tarefas neles) que são atribuídos ou compartilhados com o usuário conectado.| Não | Sim |
+| _Tasks.ReadWrite.Shared_ | Ler e registrar as tarefas do usuário e as tarefas compartilhadas (visualização) | Permite que o aplicativo crie, leia, atualize e exclua as tarefas permitidas para um usuário, incluindo suas próprias tarefas e as compartilhadas. | Não | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
