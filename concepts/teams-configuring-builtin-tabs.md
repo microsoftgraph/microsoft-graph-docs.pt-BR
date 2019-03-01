@@ -4,12 +4,12 @@ description: Para criar ou configurar uma guia do Microsoft Teams usando as APIs
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: b14fa7fac0106d03e930ea8e6601616f81076955
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.openlocfilehash: 2940edf1cef2adc6c240fe8dd737d91f434c27e8
+ms.sourcegitcommit: e8b488f8068845522b869bf97475da7b078bee3d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29967190"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30342279"
 ---
 # <a name="configuring-the-built-in-tab-types-in-microsoft-teams"></a>Configurar tipos de guia internos no Microsoft Teams
 
@@ -120,11 +120,11 @@ Para as guias de biblioteca de documentos, o `teamsAppId` é `com.microsoft.team
 | Propriedade   | Tipo        | Descrição                                              |
 | ---------- | ----------- | -------------------------------------------------------- |
 | entityId   | string      | Cadeia de caracteres vazia ("")                                        |
-| contentUrl | string      | A URL da pasta raiz da biblioteca de documentos. Você pode encontrar essa URL abrindo a pasta do SharePoint no seu navegador, copiando a URL e excluindo "/ Forms/AllItems.aspx" e tudo depois disso. |
+| contentUrl | string      | A URL da pasta raiz da biblioteca de documentos. Você pode encontrar essa URL abrindo a pasta do SharePoint em seu navegador, copiando a URL e excluindo o "/Forms/AllItems.aspx" e tudo o que quiser. |
 | removeUrl  | string      | Nulo                                                     |
 | websiteUrl | string      | Nulo                                                     |
 
-### <a name="example-create-a-configured-document-library-tab"></a>Exemplo: Criar uma guia de biblioteca de documentos configurados
+### <a name="example-create-a-configured-document-library-tab"></a>Exemplo: criar uma guia de biblioteca de documentos configurada
 
 O exemplo a seguir criar uma guia configurada do Word.
 
@@ -135,7 +135,7 @@ POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
     "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/com.microsoft.teamspace.tab.files.sharepoint",
     "configuration": {
         "entityId": "",
-        "contentUrl": "https://microsoft.sharepoint-df.com/teams/WWWtest/Shared%20Documents",
+        "contentUrl": "https://microsoft.sharepoint.com/teams/WWWtest/Shared%20Documents",
         "removeUrl": null,
         "websiteUrl": null
     }
