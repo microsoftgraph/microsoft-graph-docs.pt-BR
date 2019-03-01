@@ -1,17 +1,17 @@
 ---
-title: tipo de recurso de eventMessageRequest
+title: tipo de recurso eventMessageRequest
 description: Uma mensagem que representa uma solicitação de reunião.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 74fa4aa905d1165707a2e41caef4a1e0252a1945
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 1928273ef45b277fa81dba5a4db7b908134491d3
+ms.sourcegitcommit: e8b488f8068845522b869bf97475da7b078bee3d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513960"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30342300"
 ---
-# <a name="eventmessagerequest-resource-type"></a>tipo de recurso de eventMessageRequest
+# <a name="eventmessagerequest-resource-type"></a>tipo de recurso eventMessageRequest
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -82,38 +82,38 @@ Veja a seguir uma representação JSON do recurso
 |bccRecipients|Coleção [recipient](recipient.md)|Os destinatários Cco: da mensagem.|
 |body|[itemBody](itembody.md)|O corpo da mensagem.|
 |bodyPreview|String|Os primeiros 255 caracteres do corpo da mensagem.|
-|categories|String collection|As categorias associadas à mensagem.|
+|categories|Coleção de cadeias de caracteres|As categorias associadas à mensagem.|
 |ccRecipients|Coleção [recipient](recipient.md)|Os destinatários Cc: da mensagem.|
 |changeKey|String|A versão da mensagem.|
 |conversationId|Cadeia de caracteres|A ID da conversa à qual o email pertence.|
 |createdDateTime|DateTimeOffset|A data e a hora em que a mensagem foi criada.|
 |endDateTime|[DateTimeTimeZone](datetimetimezone.md)|A hora de término da reunião solicitada.|
 |from|[recipient](recipient.md)|O proprietário da caixa de correio e o remetente da mensagem.|
-|hasAttachments|Booliano|Indica se a mensagem tem anexos.|
-|id|String|Somente leitura.|
+|hasAttachments|Boolean|Indica se a mensagem tem anexos.|
+|id|Cadeia de caracteres|Somente leitura.|
 |importance|String| A importância da mensagem: `Low`, `Normal`, `High`.|
 |inferenceClassification|String| Os valores possíveis são: `Focused` e `Other`.|
-|isDeliveryReceiptRequested|Booliano|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
+|isDeliveryReceiptRequested|Boolean|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
 |isDraft|Booliano|Indica se a mensagem é um rascunho. Uma mensagem é um rascunho quando ela ainda não foi enviada.|
-|IsOutOfDate|Booliano|Indica se esta solicitação de reunião foi feita desatualizada por uma solicitação mais recente.|
+|isOutOfDate|Boolean|Indica se esta solicitação de reunião foi desfeita por uma solicitação mais recente.|
 |isRead|Boolean|Indica se a mensagem foi lida.|
 |isReadReceiptRequested|Boolean|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a mensagem foi alterada pela última vez.|
 |location|[Location](location.md)|O local da reunião solicitada.|
-|meetingMessageType|String| O tipo de mensagem de evento: `None`, `MeetingRequest`, `MeetingCancelled`, `MeetingAccepted`, `MeetingTenativelyAccepted`, `MeetingDeclined`.|
+|meetingMessageType|String| O tipo de mensagem de evento: `none`, `meetingRequest`, `meetingCancelled`, `meetingAccepted`, `meetingTentativelyAccepted`, `meetingDeclined`.|
 |parentFolderId|String|O identificador exclusivo para a mailFolder pai da mensagem.|
 |previousEndDateTime|[DateTimeTimeZone](datetimetimezone.md)|A hora de término anterior da reunião solicitada.|
 |previousLocation|[Localização](location.md)|O local anterior da reunião solicitada.|
-|previousStartDateTime|[DateTimeTimeZone](datetimetimezone.md)|A hora de início anterior da reunião solicitada.|
+|previousStartDateTime|[DateTimeTimeZone](datetimetimezone.md)|O horário de início anterior da reunião solicitada.|
 |receivedDateTime|DateTimeOffset|A data e a hora em que a mensagem foi recebida.|
 |recurrence|[PatternedRecurrence](patternedrecurrence.md)|O padrão de recorrência da reunião solicitada.|
 |replyTo|Coleção [recipient](recipient.md)|Os endereços de email a serem usados ao responder.|
 |sender|[recipient](recipient.md)|A conta que é realmente usada para gerar a mensagem.|
 |sentDateTime|DateTimeOffset|A data e a hora em que a mensagem foi enviada.|
-|startDateTime|[DateTimeTimeZone](datetimetimezone.md)|A hora de início da reunião solicitada.|
-|subject|Cadeia de caracteres|O assunto da mensagem.|
+|startDateTime|[DateTimeTimeZone](datetimetimezone.md)|O horário de início da reunião solicitada.|
+|subject|String|O assunto da mensagem.|
 |toRecipients|Coleção [recipient](recipient.md)|Os destinatários Para: da mensagem.|
-|type|String|O tipo de reunião solicitada: `singleInstance`, `occurence`, `exception`, `seriesMaster`.|
+|Tipo|String|O tipo de reunião solicitada `singleInstance`: `occurence`, `exception`, `seriesMaster`,.|
 |uniqueBody|[itemBody](itembody.md)|A parte do corpo da mensagem que é exclusiva para a mensagem atual.|
 |webLink|String|A URL para abrir a mensagem no Outlook Web App.<br><br>Você pode acrescentar um argumento ispopout ao final da URL para alterar como a mensagem é exibida. Se ispopout não houver presente ou estiver definido como 1, a mensagem será mostrada em uma janela pop-up. Se ispopout estiver definido como 0, o navegador mostrará a mensagem no painel de revisão do Outlook Web App.<br><br>A mensagem será aberta no navegador se você estiver conectado à sua caixa de correio por meio do Outlook Web App. Você será solicitado a fazer logon se ainda não estiver conectado no navegador.<br><br>Essa URL pode ser acessada de um iFrame.|
 
@@ -129,17 +129,17 @@ Veja a seguir uma representação JSON do recurso
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Get eventMessage](../api/eventmessage-get.md) | [eventMessage](eventmessage.md) |Ler propriedades e relações do objeto eventMessage.|
-|Criar anexo |[Anexo](attachment.md)| Criar um novo Anexo postando na coleção attachments.|
-|[List attachments](../api/eventmessage-list-attachments.md) |Coleção [Attachment](attachment.md)| Obter uma coleção de objetos Attachment.|
+|[Criar anexo](../api/eventmessage-post-attachments.md) |[Attachment](attachment.md)| Criar um novo Anexo postando na coleção attachments.|
+|[Listar anexos](../api/eventmessage-list-attachments.md) |Coleção [Attachment](attachment.md)| Obter uma coleção de objetos Attachment.|
 |[Update](../api/eventmessage-update.md) | [eventMessage](eventmessage.md)  |Atualizar o objeto eventMessage. |
 |[Delete](../api/eventmessage-delete.md) | Nenhuma |Excluir o objeto eventMessage. |
 |[copy](../api/message-copy.md)|[Message](message.md)||
 |[createForward](../api/message-createforward.md)|[Message](message.md)||
 |[createReply](../api/message-createreply.md)|[Message](message.md)||
-|[createReplyAll](../api/message-createreplyall.md)|[Message](message.md)||
-|[forward](../api/message-forward.md)|Nenhum|Encaminha uma mensagem. Em seguida, a mensagem será salva na pasta Itens enviados.|
-|[move](../api/message-move.md)|[Message](message.md)|Move a mensagem para um mailFolder.|
-|[reply](../api/message-reply.md)|Nenhum|Respostas que ela teve ao remetente de uma mensagem. Em seguida, a mensagem será salva na pasta Itens enviados.|
+|[createReplyAll](../api/message-createreplyall.md)|[Mensagem](message.md)||
+|[forward](../api/message-forward.md)|Nenhum|Encaminha uma mensagem. A mensagem é então salva na pasta Itens Enviados.|
+|[move](../api/message-move.md)|[Message](message.md)|Mover a mensagem para um mailFolder.|
+|[reply](../api/message-reply.md)|Nenhum|Responde ao remetente de uma mensagem. A mensagem é então salva na pasta Itens Enviados.|
 |[replyAll](../api/message-replyall.md)|Nenhum|Responder a todos os destinatários de uma mensagem. A mensagem é então salva na pasta Itens Enviados.|
 |[send](../api/message-send.md)|Nenhum|Envia um rascunho de mensagem anteriormente criado. A mensagem é então salva na pasta Itens Enviados.|
 

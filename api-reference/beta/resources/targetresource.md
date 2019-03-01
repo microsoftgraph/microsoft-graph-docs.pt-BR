@@ -1,39 +1,31 @@
 ---
-title: tipo de recurso de targetResource
-description: Indica uma coleção de tipos de recursos de destino associado à atividade de auditoria. Cada tipo de recurso de destino herdará as propriedades descritas abaixo deste recurso.
+title: tipo complexo de recurso de targetResource-API do Microsoft Graph
+description: Define o tipo complexo de recurso de entidade de targetResource da API do Microsoft Graph que oferece suporte à atividade de locatário de relatórios de log de auditoria (locatário).
+author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: f86cfe45870292dae93327859c32d38aa2b252fd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: azure-ad
+ms.openlocfilehash: a03ca03e0b7105c8f07347f6ed52aa322a6fd090
+ms.sourcegitcommit: e8b488f8068845522b869bf97475da7b078bee3d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828676"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30342286"
 ---
-# <a name="targetresource-resource-type"></a>tipo de recurso de targetResource
-Indica uma coleção de tipos de recursos de destino associado à atividade de auditoria. Cada tipo de recurso de destino herdará as propriedades descritas abaixo deste recurso.
+# <a name="targetresource-resource-type"></a>tipo de recurso targetResource
+
+Representa os tipos de recursos de destino associados à atividade de auditoria. 
 
 
 ## <a name="properties"></a>Propriedades
+
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|displayName|Cadeia de caracteres|Indica o nome de exibição dos recursos descritos em tipos de recursos de destino abaixo.|
-|id|Cadeia de caracteres|Indica a Id exclusiva do recurso (por exemplo: UserId, AppId, RoleId.).|
-|ModifiedProperties|coleção [modifiedProperty](modifiedproperty.md)|Indica o nome, o valor antigo e o novo valor de cada atributo a ser alterado. Isso é aplicável para qualquer atividades "Atualizar"|
-
-### <a name="target-resource-types"></a>Tipos de recursos de destino
-
-O tipo de recurso de destino varia de acordo com o recurso subjacente:
-
-|Nome do recurso| Referência|
-|-------------|----------|
-Device|[targetResourceDevice](targetresourcedevice.md)
-Diretório|[targetResourceDirectory] (targetresourcedirectory.md]
-Group|[targetResourceGroup](targetresourcegroup.md)
-Política|[targetResourcePolicy](targetresourcepolicy.md)
-Role|[targetResourceRole](targetresourcerole.md)
-Entidade de serviço|[targetResourceServicePrincipal](targetresourceserviceprincipal.md)
-Usuário|[targetResourceUser](targetresourceuser.md)
-Outros|[targetResourceOther](targetresourceother.md)
+|id|String|Indica a ID exclusiva do recurso.|
+|displayName|String|Indica o nome visível definido para o recurso. Normalmente especificado quando o recurso é criado.|
+|Tipo|String|Descreve o tipo de recurso.  Os valores de `Application`exemplo `Group`incluem `ServicePrincipal`,, `User`e.|
+|userPrincipalName|String|Quando o **tipo** está definido `User`como, isso inclui o nome de usuário que iniciou a ação; `null` para outros tipos.|
+|groupType|String|Quando **Type** é definido como `Group`, isso indica o tipo de grupo.|
+|ModifiedProperties|[](modifiedproperty.md) coleção modifiedproperty|Indica o nome, o valor antigo e o novo valor de cada atributo que foi alterado. Os valores de propriedade dependem do **tipo**de operação.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -49,12 +41,16 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "displayName": "String",
   "id": "String",
+  "displayName": "String",
+  "type": "String",
+  "userPrincipalName": "String",
+  "groupType": "String", 
   "modifiedProperties": [{"@odata.type": "microsoft.graph.modifiedProperty"}]
 }
 
 ```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

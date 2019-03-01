@@ -1,21 +1,21 @@
 ---
 title: Criar evento
-description: Use essa API para criar um novo evento no calendário especificado ou no padrão.
+description: Use esta API para criar um novo evento no calendário padrão ou especificado.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 7cd5c6ddf9834163bdd3b03dd2ab2aa36cd3b48b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: c620b2fb25a0ead99a07304b61db314300f6ea2e
+ms.sourcegitcommit: e8b488f8068845522b869bf97475da7b078bee3d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516326"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30342307"
 ---
 # <a name="create-event"></a>Criar evento
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use essa API para criar um novo evento no calendário especificado ou no padrão.
+Use esta API para criar um novo evento no calendário padrão ou especificado.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Aplicativo | Calendars.ReadWrite |
 
 ## <a name="http-request"></a>Solicitação HTTP
-<!-- { "blockType": "ignored" } -->Um usuário ou do grupo padrão [calendário](../resources/calendar.md).
+<!-- { "blockType": "ignored" } -->O [calendário](../resources/calendar.md)padrão de um usuário ou grupo.
 ```http
 POST /me/calendar/events
 POST /users/{id | userPrincipalName}/calendar/events
@@ -52,36 +52,54 @@ POST /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events
 | Content-Type  | application/json. Obrigatório.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [Event](../resources/event.md).
+No corpo da solicitação, forneça uma representação JSON do objeto [event](../resources/event.md).
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [Event](../resources/event.md) no corpo da resposta.
+Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [event](../resources/event.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
+No corpo da solicitação, forneça uma representação JSON do objeto [event](../resources/event.md).
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkAGViNDU7zAAAAAGtlAAA="],
   "name": "create_event_from_calendar"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/calendar/events
+POST https://graph.microsoft.com/beta/me/calendars/AAMkAGViNDU7zAAAAAGtlAAA=/events
 Content-type: application/json
-Content-length: 285
 
 {
-  "originalStartTimeZone": "originalStartTimeZone-value",
-  "originalEndTimeZone": "originalEndTimeZone-value",
-  "responseStatus": {
-    "response": "",
-    "time": "2016-10-19T10:37:00Z"
+  "subject": "Let's go for lunch",
+  "body": {
+    "contentType": "HTML",
+    "content": "Does next month work for you?"
   },
-  "reminderMinutesBeforeStart": 99,
-  "isReminderOn": true
+  "start": {
+      "dateTime": "2019-03-10T12:00:00",
+      "timeZone": "Pacific Standard Time"
+  },
+  "end": {
+      "dateTime": "2019-03-10T14:00:00",
+      "timeZone": "Pacific Standard Time"
+  },
+  "location":{
+      "displayName":"Harry's Bar"
+  },
+  "attendees": [
+    {
+      "emailAddress": {
+        "address":"adelev@contoso.onmicrosoft.com",
+        "name": "Adele Vance"
+      },
+      "type": "required"
+    }
+  ]
 }
 ```
-No corpo da solicitação, forneça uma representação JSON do objeto [event](../resources/event.md).
+
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
@@ -90,20 +108,86 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
   "@odata.type": "microsoft.graph.event"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 285
 
 {
-  "originalStartTimeZone": "originalStartTimeZone-value",
-  "originalEndTimeZone": "originalEndTimeZone-value",
-  "responseStatus": {
-    "response": "",
-    "time": "2016-10-19T10:37:00Z"
-  },
-  "uid": "iCalUId-value",
-  "reminderMinutesBeforeStart": 99,
-  "isReminderOn": true
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('5d8d505c-864f-4804-88c7-4583c966cde8')/calendars('AAMkAGViNDU7zAAAAAGtlAAA%3D')/events/$entity",
+    "@odata.etag": "W/\"/IUUrIl3PkG1JCSsPfU+8wAAGXjGjw==\"",
+    "id": "AAMkAGViNDU7zAAAAA7zAAAZe6CkAAA=",
+    "createdDateTime": "2019-02-28T21:36:26.7105485Z",
+    "lastModifiedDateTime": "2019-02-28T21:36:26.9577227Z",
+    "changeKey": "/IUUrIl3PkG1JCSsPfU+8wAAGXjGjw==",
+    "categories": [],
+    "originalStartTimeZone": "Pacific Standard Time",
+    "originalEndTimeZone": "Pacific Standard Time",
+    "uid": "040000008200C780DAE",
+    "reminderMinutesBeforeStart": 15,
+    "isReminderOn": true,
+    "hasAttachments": false,
+    "subject": "Let's go for lunch",
+    "bodyPreview": "Does next month work for you?",
+    "importance": "normal",
+    "sensitivity": "normal",
+    "isAllDay": false,
+    "isCancelled": false,
+    "isOrganizer": true,
+    "responseRequested": true,
+    "seriesMasterId": null,
+    "showAs": "busy",
+    "type": "singleInstance",
+    "webLink": "https://outlook.office365.com/owa/?itemid=AAMkAGViNDU7zAAAAA7zAAAZe6CkAAA%3D&exvsurl=1&path=/calendar/item",
+    "onlineMeetingUrl": null,
+    "recurrence": null,
+    "responseStatus": {
+        "response": "organizer",
+        "time": "0001-01-01T00:00:00Z"
+    },
+    "body": {
+        "contentType": "html",
+        "content": "<html>\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\r\n<meta content=\"text/html; charset=us-ascii\">\r\n</head>\r\n<body>\r\nDoes next month work for you?\r\n</body>\r\n</html>\r\n"
+    },
+    "start": {
+        "dateTime": "2019-03-10T12:00:00.0000000",
+        "timeZone": "Pacific Standard Time"
+    },
+    "end": {
+        "dateTime": "2019-03-10T14:00:00.0000000",
+        "timeZone": "Pacific Standard Time"
+    },
+    "location": {
+        "displayName": "Harry's Bar",
+        "locationType": "default",
+        "uniqueId": "Harry's Bar",
+        "uniqueIdType": "private"
+    },
+    "locations": [
+        {
+            "displayName": "Harry's Bar",
+            "locationType": "default",
+            "uniqueId": "Harry's Bar",
+            "uniqueIdType": "private"
+        }
+    ],
+    "attendees": [
+        {
+            "type": "required",
+            "status": {
+                "response": "none",
+                "time": "0001-01-01T00:00:00Z"
+            },
+            "emailAddress": {
+                "name": "Adele Vance",
+                "address": "AdeleV@contoso.OnMicrosoft.com"
+            }
+        }
+    ],
+    "organizer": {
+        "emailAddress": {
+            "name": "Megan Bowen",
+            "address": "MeganB@contoso.OnMicrosoft.com"
+        }
+    }
 }
 ```
 
@@ -112,7 +196,7 @@ Content-length: 285
 <!--
 {
   "type": "#page.annotation",
-  "description": "Create Event",
+  "description": "Create event",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

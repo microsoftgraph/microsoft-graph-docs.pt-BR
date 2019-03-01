@@ -4,12 +4,12 @@ description: 'Uma mensagem que representa uma solicitação, cancelamento ou res
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: e6effa3f97b0625786ec999f1b478c3dd8530f52
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 83bed60f90b5f2a5ddcb30c9bb22f5a01f645cec
+ms.sourcegitcommit: e8b488f8068845522b869bf97475da7b078bee3d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917723"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30342314"
 ---
 # <a name="eventmessage-resource-type"></a>Tipo de recurso eventMessage
 
@@ -19,9 +19,9 @@ A entidade **eventMessage** é derivada de [message](message.md). A propriedade 
 
 Quando um organizador ou um aplicativo envia uma solicitação de reunião, ela chega à Caixa de Entrada de um participante como uma instância **eventMessage** com o **meetingMessageType** de **meetingRequest**. Além disso, o Outlook cria automaticamente uma instância **event** no calendário do participante, com a propriedade **showAs** como **tentative**. 
 
-Para obter as propriedades do evento associado na caixa de correio de participante, o aplicativo pode usar a propriedade de navegação **event** de **eventMessage**, conforme mostrado neste [exemplo de obter mensagem de evento](../api/eventmessage-get.md#request-2). O aplicativo também pode responder ao evento em nome do participante programaticamente, [Aceitar](../api/event-accept.md), [Aceitar provisoriamente](../api/event-tentativelyaccept.md)ou [recusando](../api/event-decline.md) o evento.
+Para obter as propriedades do evento associado na caixa de correio de participante, o aplicativo pode usar a propriedade de navegação **event** de **eventMessage**, conforme mostrado neste [exemplo de obter mensagem de evento](../api/eventmessage-get.md#request-2). O aplicativo também pode responder ao evento em nome do participante de forma programática, [aceitando](../api/event-accept.md), [aceitando provisoriamente](../api/event-tentativelyaccept.md)ou [recusando](../api/event-decline.md) o evento.
 
-Além de uma solicitação de reunião, uma instância de **eventMessage** pode ser encontrada na pasta de caixa de entrada de um participante como resultado de um organizador de evento o cancelamento de uma reunião ou na caixa de entrada do organizador como resultado de um participante responder à solicitação de reunião. Um aplicativo pode atuar em mensagens de evento da mesma maneira que atua em mensagens com poucas diferenças.
+Além de uma solicitação de reunião, uma instância do **eventMessage** pode ser encontrada na pasta de caixa de entrada de um participante como resultado de um organizador de eventos cancelando uma reunião ou na caixa de entrada do organizador como resultado de um participante responder à solicitação de reunião. Um aplicativo pode atuar em mensagens de evento da mesma maneira que atua em mensagens com poucas diferenças.
 
 ## <a name="methods"></a>Métodos
 
@@ -29,7 +29,7 @@ Além de uma solicitação de reunião, uma instância de **eventMessage** pode 
 |:---------------|:--------|:----------|
 |[Get eventMessage](../api/eventmessage-get.md) | [eventMessage](eventmessage.md) |Ler propriedades e relações do objeto eventMessage.|
 |[Update](../api/eventmessage-update.md) | [eventMessage](eventmessage.md)  |Atualizar o objeto eventMessage. |
-|[Delete](../api/message-delete.md) | Nenhum |Excluir o objeto eventMessage. |
+|[Delete](../api/message-delete.md) | Nenhuma |Excluir o objeto eventMessage. |
 |[copy](../api/message-copy.md)|[message](message.md)|Copiar uma mensagem para uma pasta.|
 |[createForward](../api/message-createforward.md)|[message](message.md)|Criar um rascunho da mensagem de encaminhamento. Em seguida, você pode [atualizar](../api/message-update.md) ou [enviar](../api/message-send.md) esse rascunho.|
 |[createReply](../api/message-createreply.md)|[message](message.md)|Criar um rascunho da mensagem de resposta. Em seguida, você pode [atualizar](../api/message-update.md) ou [enviar](../api/message-send.md) esse rascunho.|
@@ -40,7 +40,7 @@ Além de uma solicitação de reunião, uma instância de **eventMessage** pode 
 |[replyAll](../api/message-replyall.md)|Nenhum|Responder a todos os destinatários de uma mensagem. A mensagem é então salva na pasta Itens Enviados.|
 |[send](../api/message-send.md)|Nenhum|Envia um rascunho de mensagem anteriormente criado. A mensagem é então salva na pasta Itens Enviados.|
 |**Anexos**| | |
-|[List attachments](../api/eventmessage-list-attachments.md) |Coleção [attachment](attachment.md)| Obtenha todos os anexos em um eventMessage.|
+|[Listar anexos](../api/eventmessage-list-attachments.md) |Coleção [attachment](attachment.md)| Obtenha todos os anexos em um eventMessage.|
 |[Add attachment](../api/eventmessage-post-attachments.md) |[attachment](attachment.md)| Adicionar um novo anexo a um eventMessage postando na coleção attachments.|
 |**Extensões abertas**| | |
 |[Criar extensão aberta](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Criar uma extensão aberta e adicionar propriedades personalizadas em uma instância nova ou existente de um recurso.|
@@ -57,15 +57,15 @@ Além de uma solicitação de reunião, uma instância de **eventMessage** pode 
 |bccRecipients|Coleção [recipient](recipient.md)|Os destinatários Cco: da mensagem.|
 |body|[itemBody](itembody.md)|O corpo da mensagem. Pode estar no formato HTML ou no formato de texto.|
 |bodyPreview|String|Os primeiros 255 caracteres do corpo da mensagem. Está no formato de texto.|
-|categories|String collection|As categorias associadas à mensagem.|
+|categories|Coleção de cadeias de caracteres|As categorias associadas à mensagem.|
 |ccRecipients|Coleção [recipient](recipient.md)|Os destinatários Cc: da mensagem.|
 |changeKey|String|A versão da mensagem.|
-|conversationId|String|A ID da conversa à qual o email pertence.|
+|conversationId|Cadeia de caracteres|A ID da conversa à qual o email pertence.|
 |createdDateTime|DateTimeOffset|A data e a hora em que a mensagem foi criada.|
-|sinalizar|[Sinalizador de acompanhamento](followupflag.md)|O valor do sinalizador que indica o status, a data de início, a data de conclusão ou a data de finalização da mensagem.|
+|flag|[followupFlag](followupflag.md)|O valor do sinalizador que indica o status, a data de início, a data de conclusão ou a data de finalização da mensagem.|
 |from|[recipient](recipient.md)|O proprietário da caixa de correio e o remetente da mensagem.|
 |hasAttachments|Boolean|Indica se a mensagem tem anexos.|
-|id|String|Identificador exclusivo para a mensagem de evento (Observe que este valor poderá ser alterado se uma mensagem é movida ou alterada)|
+|id|String|Identificador exclusivo da mensagem de evento (Observe que esse valor pode ser alterado se uma mensagem for movida ou alterada)|
 |importance|String| A importância da mensagem: `low`, `normal`, `high`.|
 |inferenceClassification|String| Os valores possíveis são: `focused`, `other`.|
 |internetMessageHeaders | Coleção [internetMessageHeader](internetmessageheader.md) | A coleção de cabeçalhos da mensagem, definida por [RFC5322](https://www.ietf.org/rfc/rfc5322.txt), que fornece detalhes do caminho de rede adotado por uma mensagem do remetente para o destinatário. Somente leitura.|
@@ -73,15 +73,15 @@ Além de uma solicitação de reunião, uma instância de **eventMessage** pode 
 |isDeliveryReceiptRequested|Boolean|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
 |isDraft|Booliano|Indica se a mensagem é um rascunho. Uma mensagem é um rascunho quando ela ainda não foi enviada.|
 |isRead|Boolean|Indica se a mensagem foi lida.|
-|isReadReceiptRequested|Booliano|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
+|isReadReceiptRequested|Boolean|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a mensagem foi alterada pela última vez.|
-|meetingMessageType|meetingMessageType| O tipo de mensagem de evento: `none`, `meetingRequest`, `meetingCancelled`, `meetingAccepted`, `meetingTenativelyAccepted`, `meetingDeclined`.|
+|meetingMessageType|meetingMessageType| O tipo de mensagem de evento: `none`, `meetingRequest`, `meetingCancelled`, `meetingAccepted`, `meetingTentativelyAccepted`, `meetingDeclined`.|
 |parentFolderId|String|O identificador exclusivo para a mailFolder pai da mensagem.|
 |receivedDateTime|DateTimeOffset|A data e a hora em que a mensagem foi recebida.|
 |replyTo|Coleção [recipient](recipient.md)|Os endereços de email a serem usados ao responder.|
 |sender|[recipient](recipient.md)|A conta que é realmente usada para gerar a mensagem.|
 |sentDateTime|DateTimeOffset|A data e a hora em que a mensagem foi enviada.|
-|subject|String|O assunto da mensagem.|
+|subject|Cadeia de caracteres|O assunto da mensagem.|
 |toRecipients|Coleção [recipient](recipient.md)|Os destinatários Para: da mensagem.|
 |uniqueBody|[itemBody](itembody.md)|A parte do corpo da mensagem que é exclusiva para a mensagem atual.|
 |webLink|String|A URL para abrir a mensagem no Outlook Web App.<br><br>Você pode acrescentar um argumento ispopout ao final da URL para alterar como a mensagem é exibida. Se ispopout não houver presente ou estiver definido como 1, a mensagem será mostrada em uma janela pop-up. Se ispopout estiver definido como 0, o navegador mostrará a mensagem no painel de revisão do Outlook Web App.<br><br>A mensagem será aberta no navegador se você estiver conectado à sua caixa de correio por meio do Outlook Web App. Você será solicitado a fazer logon se ainda não estiver conectado no navegador.<br><br>Essa URL pode ser acessada de um iFrame.|
