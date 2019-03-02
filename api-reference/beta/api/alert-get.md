@@ -1,21 +1,21 @@
 ---
 title: Obter alerta
-description: Recuperar as propriedades e relacionamentos de um objeto de alerta
+description: Recuperar as propriedades e os relacionamentos de um objeto Alert
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 47564a15d7218d439b8d89a442f08bd363b6daa2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 2aea4388ef29978606a7bc09813c7cd92f977ed5
+ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517180"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "30364595"
 ---
 # <a name="get-alert"></a>Obter alerta
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e relacionamentos de um objeto de [alerta](../resources/alert.md) .
+Recupere as propriedades e os relacionamentos de um objeto [Alert](../resources/alert.md) .
 
 ## <a name="permissions"></a>Permissões
 
@@ -23,9 +23,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  SecurityEvents.Read.All, SecurityEvents.ReadWrite.All   |
+|Delegado (conta corporativa ou de estudante) |  Escopo securityevents. Read. All, escopo securityevents. ReadWrite. All   |
 |Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
-|Aplicativo | SecurityEvents.Read.All, SecurityEvents.ReadWrite.All |
+|Aplicativo | Escopo securityevents. Read. All, escopo securityevents. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -47,7 +47,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto de **alerta** no corpo da resposta. Se um código de status diferente 2xx ou 404 é retornado por um provedor ou se um provedor de tempo limite, a resposta será um `206 Partial Content` código de status com a resposta do provedor em um cabeçalho de aviso. Para obter mais informações, consulte [respostas de erros de API de segurança do Microsoft Graph](../resources/security-error-codes.md).
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto **Alert** no corpo da resposta. Se um código de status diferente de 2xx ou 404 for retornado de um provedor ou se um provedor expirar, a resposta será um `206 Partial Content` código de status com a resposta do provedor em um cabeçalho de aviso. Para obter mais informações, consulte [respostas de erro da API de segurança do Microsoft Graph](../resources/security-error-codes.md).
 
 ## <a name="example"></a>Exemplo
 
@@ -106,6 +106,19 @@ Content-type: application/json
       "name": "String",
       "path": "String",
       "riskScore": "String"
+    }
+  ],
+  "historyStates": [
+    {
+      "appId": "appId-value",
+      "assignedTo": "assignedTo-value",
+      "comments": [
+        "comments-value"
+      ],
+      "feedback": "feedback-value",
+      "status": "status-value",
+      "updatedDateTime": "datetime-value",
+      "user": "user-value"
     }
   ],
   "hostStates": [

@@ -1,34 +1,34 @@
 ---
-title: tipo de recurso de securityVendorInformation
+title: tipo de recurso securityVendorInformation
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: e67a5306b1dd08933877dbe3e64cab766ccd6a96
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 7f48c27ba94d8419ce244143a48cf6ab04dd080e
+ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512175"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "30364581"
 ---
-# <a name="securityvendorinformation-resource-type"></a>tipo de recurso de securityVendorInformation
+# <a name="securityvendorinformation-resource-type"></a>tipo de recurso securityVendorInformation
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contém detalhes sobre o fornecedor de serviço do produto de segurança, o provedor e subprovider (por exemplo, o fornecedor = Microsoft; provider = ATP do Windows Defender; subProvider = AppLocker).
+Contém detalhes sobre o fornecedor de produtos/serviços de segurança, o provedor e o subfornecedor (por exemplo, fornecedor = Microsoft; Provider = Windows Defender ATP; subFornecedor = AppLocker).
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade   | Tipo|Descrição|
 |:---------------|:--------|:----------|
-|Provider= |String|Provedor específico (produto ou serviço - não a empresa de fornecedor); Por exemplo, WindowsDefenderATP.|
-|providerVersion|String|Versão do provedor ou subprovider, se ela existir, que gerou o alerta. *Required*|
-|subProvider|String|Subprovider específico (abaixo de agregação de provedor;) Por exemplo, WindowsDefenderATP.SmartScreen.|
-|fornecedor |String|Nome do alerta fornecedor (por exemplo, Microsoft, Dell, FireEye). *Required*|
+|provedor |String|Provedor específico (produto/serviço – empresa de fornecedor); por exemplo, WindowsDefenderATP.|
+|providerVersion|String|Versão do provedor ou do subfornecedor, se existir, que gerou o alerta. **Required**|
+|subprovedor|String|Subfornecedor específico (em provedor de agregação); por exemplo, WindowsDefenderATP. SmartScreen.|
+|fornecedor |String|Nome do fornecedor do alerta (por exemplo, Microsoft, Dell, FireEye). **Required**|
 
 ## <a name="json-representation"></a>Representação JSON
 
-A seguinte é uma representação de JSON do recurso.
+O folllowing é uma representação JSON do recurso.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
