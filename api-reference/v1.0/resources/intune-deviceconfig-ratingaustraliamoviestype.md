@@ -1,31 +1,32 @@
 ---
-title: tipo de enum ratingAustraliaMoviesType
-description: Filmes classificação rótulos na Austrália
+title: tipo de enumeração ratingAustraliaMoviesType
+description: Rótulos de classificação de filmes na Austrália
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 0f7df26bc12a92c2571967c68fcd82619a69cb64
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 3106197ce0efd3c0355461df58c5d22c314a08a6
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27911711"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30256536"
 ---
-# <a name="ratingaustraliamoviestype-enum-type"></a><span data-ttu-id="92a2b-103">tipo de enum ratingAustraliaMoviesType</span><span class="sxs-lookup"><span data-stu-id="92a2b-103">ratingAustraliaMoviesType enum type</span></span>
+# <a name="ratingaustraliamoviestype-enum-type"></a><span data-ttu-id="509f1-103">tipo de enumeração ratingAustraliaMoviesType</span><span class="sxs-lookup"><span data-stu-id="509f1-103">ratingAustraliaMoviesType enum type</span></span>
 
-> <span data-ttu-id="92a2b-104">**Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="92a2b-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="509f1-104">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="509f1-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="92a2b-105">Filmes classificação rótulos na Austrália</span><span class="sxs-lookup"><span data-stu-id="92a2b-105">Movies rating labels in Australia</span></span>
-## <a name="members"></a><span data-ttu-id="92a2b-106">Membros</span><span class="sxs-lookup"><span data-stu-id="92a2b-106">Members</span></span>
-|<span data-ttu-id="92a2b-107">Membro</span><span class="sxs-lookup"><span data-stu-id="92a2b-107">Member</span></span>|<span data-ttu-id="92a2b-108">Valor</span><span class="sxs-lookup"><span data-stu-id="92a2b-108">Value</span></span>|<span data-ttu-id="92a2b-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="92a2b-109">Description</span></span>|
+<span data-ttu-id="509f1-105">Rótulos de classificação de filmes na Austrália</span><span class="sxs-lookup"><span data-stu-id="509f1-105">Movies rating labels in Australia</span></span>
+
+## <a name="members"></a><span data-ttu-id="509f1-106">Membros</span><span class="sxs-lookup"><span data-stu-id="509f1-106">Members</span></span>
+|<span data-ttu-id="509f1-107">Membro</span><span class="sxs-lookup"><span data-stu-id="509f1-107">Member</span></span>|<span data-ttu-id="509f1-108">Valor</span><span class="sxs-lookup"><span data-stu-id="509f1-108">Value</span></span>|<span data-ttu-id="509f1-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="509f1-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="92a2b-110">allAllowed</span><span class="sxs-lookup"><span data-stu-id="92a2b-110">allAllowed</span></span>|<span data-ttu-id="92a2b-111">0</span><span class="sxs-lookup"><span data-stu-id="92a2b-111">0</span></span>|<span data-ttu-id="92a2b-112">Valor padrão, permitir todo o conteúdo de filmes</span><span class="sxs-lookup"><span data-stu-id="92a2b-112">Default value, allow all movies content</span></span>|
-|<span data-ttu-id="92a2b-113">allBlocked</span><span class="sxs-lookup"><span data-stu-id="92a2b-113">allBlocked</span></span>|<span data-ttu-id="92a2b-114">1</span><span class="sxs-lookup"><span data-stu-id="92a2b-114">1</span></span>|<span data-ttu-id="92a2b-115">Não permitir que qualquer conteúdo filmes</span><span class="sxs-lookup"><span data-stu-id="92a2b-115">Do not allow any movies content</span></span>|
-|<span data-ttu-id="92a2b-116">geral</span><span class="sxs-lookup"><span data-stu-id="92a2b-116">general</span></span>|<span data-ttu-id="92a2b-117">2</span><span class="sxs-lookup"><span data-stu-id="92a2b-117">2</span></span>|<span data-ttu-id="92a2b-118">A classificação G é adequada para todos</span><span class="sxs-lookup"><span data-stu-id="92a2b-118">The G classification is suitable for everyone</span></span>|
-|<span data-ttu-id="92a2b-119">parentalGuidance</span><span class="sxs-lookup"><span data-stu-id="92a2b-119">parentalGuidance</span></span>|<span data-ttu-id="92a2b-120">3</span><span class="sxs-lookup"><span data-stu-id="92a2b-120">3</span></span>|<span data-ttu-id="92a2b-121">O PG recomenda visualizadores em 15 com orientações dos pais ou responsáveis</span><span class="sxs-lookup"><span data-stu-id="92a2b-121">The PG recommends viewers under 15 with guidance from parents or guardians</span></span>|
-|<span data-ttu-id="92a2b-122">implementação avançada</span><span class="sxs-lookup"><span data-stu-id="92a2b-122">mature</span></span>|<span data-ttu-id="92a2b-123">4</span><span class="sxs-lookup"><span data-stu-id="92a2b-123">4</span></span>|<span data-ttu-id="92a2b-124">A classificação M não é recomendada para os visualizadores em 15</span><span class="sxs-lookup"><span data-stu-id="92a2b-124">The M classification is not recommended for viewers under 15</span></span>|
-|<span data-ttu-id="92a2b-125">agesAbove15</span><span class="sxs-lookup"><span data-stu-id="92a2b-125">agesAbove15</span></span>|<span data-ttu-id="92a2b-126">5</span><span class="sxs-lookup"><span data-stu-id="92a2b-126">5</span></span>|<span data-ttu-id="92a2b-127">A classificação MA15 + não é adequada para os visualizadores em 15</span><span class="sxs-lookup"><span data-stu-id="92a2b-127">The MA15+ classification is not suitable for viewers under 15</span></span>|
-|<span data-ttu-id="92a2b-128">agesAbove18</span><span class="sxs-lookup"><span data-stu-id="92a2b-128">agesAbove18</span></span>|<span data-ttu-id="92a2b-129">6</span><span class="sxs-lookup"><span data-stu-id="92a2b-129">6</span></span>|<span data-ttu-id="92a2b-130">A classificação R18 + não é adequada para os visualizadores em 18</span><span class="sxs-lookup"><span data-stu-id="92a2b-130">The R18+ classification is not suitable for viewers under 18</span></span>|
+|<span data-ttu-id="509f1-110">Permitido</span><span class="sxs-lookup"><span data-stu-id="509f1-110">allAllowed</span></span>|<span data-ttu-id="509f1-111">,0</span><span class="sxs-lookup"><span data-stu-id="509f1-111">0</span></span>|<span data-ttu-id="509f1-112">Valor padrão, permitir todo o conteúdo de filmes</span><span class="sxs-lookup"><span data-stu-id="509f1-112">Default value, allow all movies content</span></span>|
+|<span data-ttu-id="509f1-113">Bloqueado</span><span class="sxs-lookup"><span data-stu-id="509f1-113">allBlocked</span></span>|<span data-ttu-id="509f1-114">1</span><span class="sxs-lookup"><span data-stu-id="509f1-114">1</span></span>|<span data-ttu-id="509f1-115">Não permitir conteúdo de filmes</span><span class="sxs-lookup"><span data-stu-id="509f1-115">Do not allow any movies content</span></span>|
+|<span data-ttu-id="509f1-116">geral</span><span class="sxs-lookup"><span data-stu-id="509f1-116">general</span></span>|<span data-ttu-id="509f1-117">duas</span><span class="sxs-lookup"><span data-stu-id="509f1-117">2</span></span>|<span data-ttu-id="509f1-118">A classificação G é adequada para todos</span><span class="sxs-lookup"><span data-stu-id="509f1-118">The G classification is suitable for everyone</span></span>|
+|<span data-ttu-id="509f1-119">parentalGuidance</span><span class="sxs-lookup"><span data-stu-id="509f1-119">parentalGuidance</span></span>|<span data-ttu-id="509f1-120">3D</span><span class="sxs-lookup"><span data-stu-id="509f1-120">3</span></span>|<span data-ttu-id="509f1-121">A PG recomenda visualizadores em 15 com orientação de pais ou guardiões</span><span class="sxs-lookup"><span data-stu-id="509f1-121">The PG recommends viewers under 15 with guidance from parents or guardians</span></span>|
+|<span data-ttu-id="509f1-122">completa</span><span class="sxs-lookup"><span data-stu-id="509f1-122">mature</span></span>|<span data-ttu-id="509f1-123">quatro</span><span class="sxs-lookup"><span data-stu-id="509f1-123">4</span></span>|<span data-ttu-id="509f1-124">A classificação M não é recomendada para visualizadores abaixo de 15</span><span class="sxs-lookup"><span data-stu-id="509f1-124">The M classification is not recommended for viewers under 15</span></span>|
+|<span data-ttu-id="509f1-125">agesAbove15</span><span class="sxs-lookup"><span data-stu-id="509f1-125">agesAbove15</span></span>|<span data-ttu-id="509f1-126">0,5</span><span class="sxs-lookup"><span data-stu-id="509f1-126">5</span></span>|<span data-ttu-id="509f1-127">A classificação MA15 + não é adequada para visualizadores abaixo de 15</span><span class="sxs-lookup"><span data-stu-id="509f1-127">The MA15+ classification is not suitable for viewers under 15</span></span>|
+|<span data-ttu-id="509f1-128">agesAbove18</span><span class="sxs-lookup"><span data-stu-id="509f1-128">agesAbove18</span></span>|<span data-ttu-id="509f1-129">6</span><span class="sxs-lookup"><span data-stu-id="509f1-129">6</span></span>|<span data-ttu-id="509f1-130">A classificação R18 + não é adequada para visualizadores em 18</span><span class="sxs-lookup"><span data-stu-id="509f1-130">The R18+ classification is not suitable for viewers under 18</span></span>|
 
 
 
