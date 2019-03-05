@@ -1,32 +1,32 @@
 ---
-title: tipo de enum deviceGuardLocalSystemAuthorityCredentialGuardState
+title: tipo de enumeração deviceGuardLocalSystemAuthorityCredentialGuardState
 description: Ainda não documentado
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f95ce49ab0154f39f80b9501607c418f097a1354
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 882d7a37abcd34e80c9c0d894d0940a53478d6f3
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29418915"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30171173"
 ---
-# <a name="deviceguardlocalsystemauthoritycredentialguardstate-enum-type"></a><span data-ttu-id="cb84a-103">tipo de enum deviceGuardLocalSystemAuthorityCredentialGuardState</span><span class="sxs-lookup"><span data-stu-id="cb84a-103">deviceGuardLocalSystemAuthorityCredentialGuardState enum type</span></span>
+# <a name="deviceguardlocalsystemauthoritycredentialguardstate-enum-type"></a><span data-ttu-id="d3fbf-103">tipo de enumeração deviceGuardLocalSystemAuthorityCredentialGuardState</span><span class="sxs-lookup"><span data-stu-id="d3fbf-103">deviceGuardLocalSystemAuthorityCredentialGuardState enum type</span></span>
 
-> <span data-ttu-id="cb84a-104">**Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações.</span><span class="sxs-lookup"><span data-stu-id="cb84a-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="cb84a-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="cb84a-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="d3fbf-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="d3fbf-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="cb84a-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.</span><span class="sxs-lookup"><span data-stu-id="cb84a-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="d3fbf-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="d3fbf-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="cb84a-107">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="cb84a-107">Not yet documented</span></span>
+<span data-ttu-id="d3fbf-106">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="d3fbf-106">Not yet documented</span></span>
 
-## <a name="members"></a><span data-ttu-id="cb84a-108">Membros</span><span class="sxs-lookup"><span data-stu-id="cb84a-108">Members</span></span>
-|<span data-ttu-id="cb84a-109">Membro</span><span class="sxs-lookup"><span data-stu-id="cb84a-109">Member</span></span>|<span data-ttu-id="cb84a-110">Valor</span><span class="sxs-lookup"><span data-stu-id="cb84a-110">Value</span></span>|<span data-ttu-id="cb84a-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="cb84a-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="d3fbf-107">Membros</span><span class="sxs-lookup"><span data-stu-id="d3fbf-107">Members</span></span>
+|<span data-ttu-id="d3fbf-108">Membro</span><span class="sxs-lookup"><span data-stu-id="d3fbf-108">Member</span></span>|<span data-ttu-id="d3fbf-109">Valor</span><span class="sxs-lookup"><span data-stu-id="d3fbf-109">Value</span></span>|<span data-ttu-id="d3fbf-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="d3fbf-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="cb84a-112">em execução</span><span class="sxs-lookup"><span data-stu-id="cb84a-112">running</span></span>|<span data-ttu-id="cb84a-113">0</span><span class="sxs-lookup"><span data-stu-id="cb84a-113">0</span></span>|<span data-ttu-id="cb84a-114">Executando</span><span class="sxs-lookup"><span data-stu-id="cb84a-114">Running</span></span>|
-|<span data-ttu-id="cb84a-115">rebootRequired</span><span class="sxs-lookup"><span data-stu-id="cb84a-115">rebootRequired</span></span>|<span data-ttu-id="cb84a-116">1</span><span class="sxs-lookup"><span data-stu-id="cb84a-116">1</span></span>|<span data-ttu-id="cb84a-117">Reinicialização necessária</span><span class="sxs-lookup"><span data-stu-id="cb84a-117">Reboot required</span></span>|
-|<span data-ttu-id="cb84a-118">notLicensed</span><span class="sxs-lookup"><span data-stu-id="cb84a-118">notLicensed</span></span>|<span data-ttu-id="cb84a-119">2</span><span class="sxs-lookup"><span data-stu-id="cb84a-119">2</span></span>|<span data-ttu-id="cb84a-120">Não licenciados para o protetor de credencial</span><span class="sxs-lookup"><span data-stu-id="cb84a-120">Not licensed for Credential Guard</span></span>|
-|<span data-ttu-id="cb84a-121">não-configuradas</span><span class="sxs-lookup"><span data-stu-id="cb84a-121">notConfigured</span></span>|<span data-ttu-id="cb84a-122">3</span><span class="sxs-lookup"><span data-stu-id="cb84a-122">3</span></span>|<span data-ttu-id="cb84a-123">Não configurado</span><span class="sxs-lookup"><span data-stu-id="cb84a-123">Not configured</span></span>|
-|<span data-ttu-id="cb84a-124">virtualizationBasedSecurityNotRunning</span><span class="sxs-lookup"><span data-stu-id="cb84a-124">virtualizationBasedSecurityNotRunning</span></span>|<span data-ttu-id="cb84a-125">4</span><span class="sxs-lookup"><span data-stu-id="cb84a-125">4</span></span>|<span data-ttu-id="cb84a-126">Virtualização baseado em segurança não está em execução</span><span class="sxs-lookup"><span data-stu-id="cb84a-126">Virtualization Based security is not running</span></span>|
+|<span data-ttu-id="d3fbf-111">com</span><span class="sxs-lookup"><span data-stu-id="d3fbf-111">running</span></span>|<span data-ttu-id="d3fbf-112">,0</span><span class="sxs-lookup"><span data-stu-id="d3fbf-112">0</span></span>|<span data-ttu-id="d3fbf-113">Executando</span><span class="sxs-lookup"><span data-stu-id="d3fbf-113">Running</span></span>|
+|<span data-ttu-id="d3fbf-114">rebootRequired</span><span class="sxs-lookup"><span data-stu-id="d3fbf-114">rebootRequired</span></span>|<span data-ttu-id="d3fbf-115">1</span><span class="sxs-lookup"><span data-stu-id="d3fbf-115">1</span></span>|<span data-ttu-id="d3fbf-116">ReInicialização necessária</span><span class="sxs-lookup"><span data-stu-id="d3fbf-116">Reboot required</span></span>|
+|<span data-ttu-id="d3fbf-117">Não licenciado</span><span class="sxs-lookup"><span data-stu-id="d3fbf-117">notLicensed</span></span>|<span data-ttu-id="d3fbf-118">duas</span><span class="sxs-lookup"><span data-stu-id="d3fbf-118">2</span></span>|<span data-ttu-id="d3fbf-119">Não licenciado para o Credential Guard</span><span class="sxs-lookup"><span data-stu-id="d3fbf-119">Not licensed for Credential Guard</span></span>|
+|<span data-ttu-id="d3fbf-120">notConfigured</span><span class="sxs-lookup"><span data-stu-id="d3fbf-120">notConfigured</span></span>|<span data-ttu-id="d3fbf-121">3D</span><span class="sxs-lookup"><span data-stu-id="d3fbf-121">3</span></span>|<span data-ttu-id="d3fbf-122">Não configurado</span><span class="sxs-lookup"><span data-stu-id="d3fbf-122">Not configured</span></span>|
+|<span data-ttu-id="d3fbf-123">virtualizationBasedSecurityNotRunning</span><span class="sxs-lookup"><span data-stu-id="d3fbf-123">virtualizationBasedSecurityNotRunning</span></span>|<span data-ttu-id="d3fbf-124">quatro</span><span class="sxs-lookup"><span data-stu-id="d3fbf-124">4</span></span>|<span data-ttu-id="d3fbf-125">A segurança baseada em virtualização não está em execução</span><span class="sxs-lookup"><span data-stu-id="d3fbf-125">Virtualization Based security is not running</span></span>|
 
 
 

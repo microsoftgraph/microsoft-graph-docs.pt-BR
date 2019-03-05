@@ -1,29 +1,29 @@
 ---
-title: tipo de enum wiFiAuthenticationMethod
+title: tipo de enumeração wiFiAuthenticationMethod
 description: Método de autenticação Wi-Fi.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: af03f9136718d644c427e4261f74099df0be168c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 530265fc23a3ae94470779fb2b830aa6c677fb18
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399490"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30146715"
 ---
-# <a name="wifiauthenticationmethod-enum-type"></a><span data-ttu-id="33077-103">tipo de enum wiFiAuthenticationMethod</span><span class="sxs-lookup"><span data-stu-id="33077-103">wiFiAuthenticationMethod enum type</span></span>
+# <a name="wifiauthenticationmethod-enum-type"></a><span data-ttu-id="da9c0-103">tipo de enumeração wiFiAuthenticationMethod</span><span class="sxs-lookup"><span data-stu-id="da9c0-103">wiFiAuthenticationMethod enum type</span></span>
 
-> <span data-ttu-id="33077-104">**Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações.</span><span class="sxs-lookup"><span data-stu-id="33077-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="33077-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="33077-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="da9c0-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="da9c0-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="33077-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.</span><span class="sxs-lookup"><span data-stu-id="33077-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="da9c0-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="da9c0-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="33077-107">Método de autenticação Wi-Fi.</span><span class="sxs-lookup"><span data-stu-id="33077-107">Wi-Fi authentication method.</span></span>
+<span data-ttu-id="da9c0-106">Método de autenticação Wi-Fi.</span><span class="sxs-lookup"><span data-stu-id="da9c0-106">Wi-Fi authentication method.</span></span>
 
-## <a name="members"></a><span data-ttu-id="33077-108">Membros</span><span class="sxs-lookup"><span data-stu-id="33077-108">Members</span></span>
-|<span data-ttu-id="33077-109">Membro</span><span class="sxs-lookup"><span data-stu-id="33077-109">Member</span></span>|<span data-ttu-id="33077-110">Valor</span><span class="sxs-lookup"><span data-stu-id="33077-110">Value</span></span>|<span data-ttu-id="33077-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="33077-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="da9c0-107">Membros</span><span class="sxs-lookup"><span data-stu-id="da9c0-107">Members</span></span>
+|<span data-ttu-id="da9c0-108">Membro</span><span class="sxs-lookup"><span data-stu-id="da9c0-108">Member</span></span>|<span data-ttu-id="da9c0-109">Valor</span><span class="sxs-lookup"><span data-stu-id="da9c0-109">Value</span></span>|<span data-ttu-id="da9c0-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="da9c0-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="33077-112">certificado</span><span class="sxs-lookup"><span data-stu-id="33077-112">certificate</span></span>|<span data-ttu-id="33077-113">0</span><span class="sxs-lookup"><span data-stu-id="33077-113">0</span></span>|<span data-ttu-id="33077-114">Use um certificado de identidade para autenticação.</span><span class="sxs-lookup"><span data-stu-id="33077-114">Use an identity certificate for authentication.</span></span>|
-|<span data-ttu-id="33077-115">usernameAndPassword</span><span class="sxs-lookup"><span data-stu-id="33077-115">usernameAndPassword</span></span>|<span data-ttu-id="33077-116">1</span><span class="sxs-lookup"><span data-stu-id="33077-116">1</span></span>|<span data-ttu-id="33077-117">Usar o nome de usuário e senha para autenticação.</span><span class="sxs-lookup"><span data-stu-id="33077-117">Use username and password for authentication.</span></span>|
+|<span data-ttu-id="da9c0-111">certificado</span><span class="sxs-lookup"><span data-stu-id="da9c0-111">certificate</span></span>|<span data-ttu-id="da9c0-112">,0</span><span class="sxs-lookup"><span data-stu-id="da9c0-112">0</span></span>|<span data-ttu-id="da9c0-113">Use um certificado de identidade para autenticação.</span><span class="sxs-lookup"><span data-stu-id="da9c0-113">Use an identity certificate for authentication.</span></span>|
+|<span data-ttu-id="da9c0-114">usernameAndPassword</span><span class="sxs-lookup"><span data-stu-id="da9c0-114">usernameAndPassword</span></span>|<span data-ttu-id="da9c0-115">1</span><span class="sxs-lookup"><span data-stu-id="da9c0-115">1</span></span>|<span data-ttu-id="da9c0-116">Usar nome de usuário e senha para autenticação.</span><span class="sxs-lookup"><span data-stu-id="da9c0-116">Use username and password for authentication.</span></span>|
 
 
 

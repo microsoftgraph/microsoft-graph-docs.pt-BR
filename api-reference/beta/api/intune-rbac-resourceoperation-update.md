@@ -1,34 +1,34 @@
 ---
 title: Atualizar resourceOperation
 description: Atualizar as propriedades de um objeto resourceOperation.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 266d45150c5633a66c5996b5cb9285f97ecaf6bb
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 9e4e7ab1f3edd0de4e36eb8c051b4cc02306f707
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29411138"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30156746"
 ---
-# <a name="update-resourceoperation"></a><span data-ttu-id="e79cc-103">Atualizar resourceOperation</span><span class="sxs-lookup"><span data-stu-id="e79cc-103">Update resourceOperation</span></span>
+# <a name="update-resourceoperation"></a><span data-ttu-id="d6865-103">Atualizar resourceOperation</span><span class="sxs-lookup"><span data-stu-id="d6865-103">Update resourceOperation</span></span>
 
-> <span data-ttu-id="e79cc-104">**Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações.</span><span class="sxs-lookup"><span data-stu-id="e79cc-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="e79cc-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="e79cc-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="d6865-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="d6865-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="e79cc-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.</span><span class="sxs-lookup"><span data-stu-id="e79cc-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="d6865-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="d6865-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="e79cc-107">Atualizar as propriedades de um objeto [resourceOperation](../resources/intune-rbac-resourceoperation.md).</span><span class="sxs-lookup"><span data-stu-id="e79cc-107">Update the properties of a [resourceOperation](../resources/intune-rbac-resourceoperation.md) object.</span></span>
+<span data-ttu-id="d6865-106">Atualizar as propriedades de um objeto [resourceOperation](../resources/intune-rbac-resourceoperation.md).</span><span class="sxs-lookup"><span data-stu-id="d6865-106">Update the properties of a [resourceOperation](../resources/intune-rbac-resourceoperation.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="e79cc-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="e79cc-108">Prerequisites</span></span>
-<span data-ttu-id="e79cc-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="e79cc-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="d6865-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="d6865-107">Prerequisites</span></span>
+<span data-ttu-id="d6865-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="d6865-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
 
-|<span data-ttu-id="e79cc-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="e79cc-111">Permission type</span></span>|<span data-ttu-id="e79cc-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="e79cc-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="d6865-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="d6865-110">Permission type</span></span>|<span data-ttu-id="d6865-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="d6865-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="e79cc-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="e79cc-113">Delegated (work or school account)</span></span>|<span data-ttu-id="e79cc-114">DeviceManagementRBAC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e79cc-114">DeviceManagementRBAC.ReadWrite.All</span></span>|
-|<span data-ttu-id="e79cc-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="e79cc-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="e79cc-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="e79cc-116">Not supported.</span></span>|
-|<span data-ttu-id="e79cc-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="e79cc-117">Application</span></span>|<span data-ttu-id="e79cc-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="e79cc-118">Not supported.</span></span>|
+|<span data-ttu-id="d6865-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="d6865-112">Delegated (work or school account)</span></span>|<span data-ttu-id="d6865-113">DeviceManagementRBAC.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d6865-113">DeviceManagementRBAC.ReadWrite.All</span></span>|
+|<span data-ttu-id="d6865-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="d6865-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="d6865-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d6865-115">Not supported.</span></span>|
+|<span data-ttu-id="d6865-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="d6865-116">Application</span></span>|<span data-ttu-id="d6865-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="d6865-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="e79cc-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="e79cc-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d6865-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="d6865-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,35 +37,35 @@ ms.locfileid: "29411138"
 PATCH /deviceManagement/resourceOperations/{resourceOperationId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="e79cc-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="e79cc-120">Request headers</span></span>
-|<span data-ttu-id="e79cc-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="e79cc-121">Header</span></span>|<span data-ttu-id="e79cc-122">Valor</span><span class="sxs-lookup"><span data-stu-id="e79cc-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="d6865-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="d6865-119">Request headers</span></span>
+|<span data-ttu-id="d6865-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="d6865-120">Header</span></span>|<span data-ttu-id="d6865-121">Valor</span><span class="sxs-lookup"><span data-stu-id="d6865-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="e79cc-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="e79cc-123">Authorization</span></span>|<span data-ttu-id="e79cc-124">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="e79cc-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="e79cc-125">Aceitar</span><span class="sxs-lookup"><span data-stu-id="e79cc-125">Accept</span></span>|<span data-ttu-id="e79cc-126">application/json</span><span class="sxs-lookup"><span data-stu-id="e79cc-126">application/json</span></span>|
+|<span data-ttu-id="d6865-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="d6865-122">Authorization</span></span>|<span data-ttu-id="d6865-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="d6865-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="d6865-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="d6865-124">Accept</span></span>|<span data-ttu-id="d6865-125">application/json</span><span class="sxs-lookup"><span data-stu-id="d6865-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="e79cc-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="e79cc-127">Request body</span></span>
-<span data-ttu-id="e79cc-128">No corpo da solicitação, forneça uma representação JSON do objeto [resourceOperation](../resources/intune-rbac-resourceoperation.md).</span><span class="sxs-lookup"><span data-stu-id="e79cc-128">In the request body, supply a JSON representation for the [resourceOperation](../resources/intune-rbac-resourceoperation.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="d6865-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="d6865-126">Request body</span></span>
+<span data-ttu-id="d6865-127">No corpo da solicitação, forneça uma representação JSON do objeto [resourceOperation](../resources/intune-rbac-resourceoperation.md).</span><span class="sxs-lookup"><span data-stu-id="d6865-127">In the request body, supply a JSON representation for the [resourceOperation](../resources/intune-rbac-resourceoperation.md) object.</span></span>
 
-<span data-ttu-id="e79cc-129">A tabela a seguir mostra as propriedades obrigatórias ao criar [resourceOperation](../resources/intune-rbac-resourceoperation.md).</span><span class="sxs-lookup"><span data-stu-id="e79cc-129">The following table shows the properties that are required when you create the [resourceOperation](../resources/intune-rbac-resourceoperation.md).</span></span>
+<span data-ttu-id="d6865-128">A tabela a seguir mostra as propriedades obrigatórias ao criar [resourceOperation](../resources/intune-rbac-resourceoperation.md).</span><span class="sxs-lookup"><span data-stu-id="d6865-128">The following table shows the properties that are required when you create the [resourceOperation](../resources/intune-rbac-resourceoperation.md).</span></span>
 
-|<span data-ttu-id="e79cc-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="e79cc-130">Property</span></span>|<span data-ttu-id="e79cc-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="e79cc-131">Type</span></span>|<span data-ttu-id="e79cc-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="e79cc-132">Description</span></span>|
+|<span data-ttu-id="d6865-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="d6865-129">Property</span></span>|<span data-ttu-id="d6865-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="d6865-130">Type</span></span>|<span data-ttu-id="d6865-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="d6865-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="e79cc-133">id</span><span class="sxs-lookup"><span data-stu-id="e79cc-133">id</span></span>|<span data-ttu-id="e79cc-134">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="e79cc-134">String</span></span>|<span data-ttu-id="e79cc-135">Chave da operação de recurso.</span><span class="sxs-lookup"><span data-stu-id="e79cc-135">Key of the Resource Operation.</span></span> <span data-ttu-id="e79cc-136">Somente leitura, gerada automaticamente.</span><span class="sxs-lookup"><span data-stu-id="e79cc-136">Read-only, automatically generated.</span></span>|
-|<span data-ttu-id="e79cc-137">recurso</span><span class="sxs-lookup"><span data-stu-id="e79cc-137">resource</span></span>|<span data-ttu-id="e79cc-138">String</span><span class="sxs-lookup"><span data-stu-id="e79cc-138">String</span></span>|<span data-ttu-id="e79cc-139">Categoria de recurso ao qual esta operação pertence.</span><span class="sxs-lookup"><span data-stu-id="e79cc-139">Resource category to which this Operation belongs.</span></span>|
-|<span data-ttu-id="e79cc-140">resourceName</span><span class="sxs-lookup"><span data-stu-id="e79cc-140">resourceName</span></span>|<span data-ttu-id="e79cc-141">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="e79cc-141">String</span></span>|<span data-ttu-id="e79cc-142">Nome do recurso em que essa operação é executada.</span><span class="sxs-lookup"><span data-stu-id="e79cc-142">Name of the Resource this operation is performed on.</span></span>|
-|<span data-ttu-id="e79cc-143">actionName</span><span class="sxs-lookup"><span data-stu-id="e79cc-143">actionName</span></span>|<span data-ttu-id="e79cc-144">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="e79cc-144">String</span></span>|<span data-ttu-id="e79cc-145">Tipo de ação em que essa operação será executada.</span><span class="sxs-lookup"><span data-stu-id="e79cc-145">Type of action this operation is going to perform.</span></span> <span data-ttu-id="e79cc-146">O actionName deve ser conciso e limitado ao mínimo de palavras possível.</span><span class="sxs-lookup"><span data-stu-id="e79cc-146">The actionName should be concise and limited to as few words as possible.</span></span>|
-|<span data-ttu-id="e79cc-147">description</span><span class="sxs-lookup"><span data-stu-id="e79cc-147">description</span></span>|<span data-ttu-id="e79cc-148">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="e79cc-148">String</span></span>|<span data-ttu-id="e79cc-149">Descrição da operação de recurso.</span><span class="sxs-lookup"><span data-stu-id="e79cc-149">Description of the resource operation.</span></span> <span data-ttu-id="e79cc-150">A descrição é usada no texto exibido com o passar o mouse para a operação quando exibida no Portal do Azure.</span><span class="sxs-lookup"><span data-stu-id="e79cc-150">The description is used in mouse-over text for the operation when shown in the Azure Portal.</span></span>|
-|<span data-ttu-id="e79cc-151">enabledForScopeValidation</span><span class="sxs-lookup"><span data-stu-id="e79cc-151">enabledForScopeValidation</span></span>|<span data-ttu-id="e79cc-152">Boolean</span><span class="sxs-lookup"><span data-stu-id="e79cc-152">Boolean</span></span>|<span data-ttu-id="e79cc-153">Determina se a permissão é validada para escopos definidos por atribuição de função.</span><span class="sxs-lookup"><span data-stu-id="e79cc-153">Determines whether the Permission is validated for Scopes defined per Role Assignment.</span></span>|
+|<span data-ttu-id="d6865-132">id</span><span class="sxs-lookup"><span data-stu-id="d6865-132">id</span></span>|<span data-ttu-id="d6865-133">String</span><span class="sxs-lookup"><span data-stu-id="d6865-133">String</span></span>|<span data-ttu-id="d6865-134">Chave da operação de recurso.</span><span class="sxs-lookup"><span data-stu-id="d6865-134">Key of the Resource Operation.</span></span> <span data-ttu-id="d6865-135">Somente leitura, gerada automaticamente.</span><span class="sxs-lookup"><span data-stu-id="d6865-135">Read-only, automatically generated.</span></span>|
+|<span data-ttu-id="d6865-136">recurso</span><span class="sxs-lookup"><span data-stu-id="d6865-136">resource</span></span>|<span data-ttu-id="d6865-137">String</span><span class="sxs-lookup"><span data-stu-id="d6865-137">String</span></span>|<span data-ttu-id="d6865-138">Categoria de recurso à qual essa operação pertence.</span><span class="sxs-lookup"><span data-stu-id="d6865-138">Resource category to which this Operation belongs.</span></span>|
+|<span data-ttu-id="d6865-139">resourceName</span><span class="sxs-lookup"><span data-stu-id="d6865-139">resourceName</span></span>|<span data-ttu-id="d6865-140">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="d6865-140">String</span></span>|<span data-ttu-id="d6865-141">Nome do recurso em que essa operação é executada.</span><span class="sxs-lookup"><span data-stu-id="d6865-141">Name of the Resource this operation is performed on.</span></span>|
+|<span data-ttu-id="d6865-142">actionName</span><span class="sxs-lookup"><span data-stu-id="d6865-142">actionName</span></span>|<span data-ttu-id="d6865-143">String</span><span class="sxs-lookup"><span data-stu-id="d6865-143">String</span></span>|<span data-ttu-id="d6865-144">Tipo de ação em que essa operação será executada.</span><span class="sxs-lookup"><span data-stu-id="d6865-144">Type of action this operation is going to perform.</span></span> <span data-ttu-id="d6865-145">O actionName deve ser conciso e limitado ao mínimo de palavras possível.</span><span class="sxs-lookup"><span data-stu-id="d6865-145">The actionName should be concise and limited to as few words as possible.</span></span>|
+|<span data-ttu-id="d6865-146">description</span><span class="sxs-lookup"><span data-stu-id="d6865-146">description</span></span>|<span data-ttu-id="d6865-147">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="d6865-147">String</span></span>|<span data-ttu-id="d6865-148">Descrição da operação de recurso.</span><span class="sxs-lookup"><span data-stu-id="d6865-148">Description of the resource operation.</span></span> <span data-ttu-id="d6865-149">A descrição é usada no texto exibido com o passar o mouse para a operação quando exibida no Portal do Azure.</span><span class="sxs-lookup"><span data-stu-id="d6865-149">The description is used in mouse-over text for the operation when shown in the Azure Portal.</span></span>|
+|<span data-ttu-id="d6865-150">enabledForScopeValidation</span><span class="sxs-lookup"><span data-stu-id="d6865-150">enabledForScopeValidation</span></span>|<span data-ttu-id="d6865-151">Boolean</span><span class="sxs-lookup"><span data-stu-id="d6865-151">Boolean</span></span>|<span data-ttu-id="d6865-152">Determina se a permissão é validada para os esCopos definidos por atribuição de função.</span><span class="sxs-lookup"><span data-stu-id="d6865-152">Determines whether the Permission is validated for Scopes defined per Role Assignment.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="e79cc-154">Resposta</span><span class="sxs-lookup"><span data-stu-id="e79cc-154">Response</span></span>
-<span data-ttu-id="e79cc-155">Se tiver êxito, este método retornará um código de resposta `200 OK` e um objeto [resourceOperation](../resources/intune-rbac-resourceoperation.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="e79cc-155">If successful, this method returns a `200 OK` response code and an updated [resourceOperation](../resources/intune-rbac-resourceoperation.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="d6865-153">Resposta</span><span class="sxs-lookup"><span data-stu-id="d6865-153">Response</span></span>
+<span data-ttu-id="d6865-154">Se tiver êxito, este método retornará um código de resposta `200 OK` e um objeto [resourceOperation](../resources/intune-rbac-resourceoperation.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="d6865-154">If successful, this method returns a `200 OK` response code and an updated [resourceOperation](../resources/intune-rbac-resourceoperation.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e79cc-156">Exemplo</span><span class="sxs-lookup"><span data-stu-id="e79cc-156">Example</span></span>
+## <a name="example"></a><span data-ttu-id="d6865-155">Exemplo</span><span class="sxs-lookup"><span data-stu-id="d6865-155">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="e79cc-157">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e79cc-157">Request</span></span>
-<span data-ttu-id="e79cc-158">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="e79cc-158">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="d6865-156">Solicitação</span><span class="sxs-lookup"><span data-stu-id="d6865-156">Request</span></span>
+<span data-ttu-id="d6865-157">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="d6865-157">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/resourceOperations/{resourceOperationId}
 Content-type: application/json
@@ -81,8 +81,8 @@ Content-length: 249
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="e79cc-159">Resposta</span><span class="sxs-lookup"><span data-stu-id="e79cc-159">Response</span></span>
-<span data-ttu-id="e79cc-p106">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="e79cc-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="d6865-158">Resposta</span><span class="sxs-lookup"><span data-stu-id="d6865-158">Response</span></span>
+<span data-ttu-id="d6865-p105">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="d6865-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

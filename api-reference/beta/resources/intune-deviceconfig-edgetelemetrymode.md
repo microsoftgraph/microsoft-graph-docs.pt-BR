@@ -1,31 +1,31 @@
 ---
-title: tipo de enum edgeTelemetryMode
-description: Tipo de dados enviados à Microsoft 365 análise de navegação
-localization_priority: Normal
+title: tipo de enumeração edgeTelemetryMode
+description: Tipo de dados de navegação enviados para a análise do Microsoft 365
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 81d429f7629a5d6a6f2593785605902065d9f1c7
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: b48840debffcc7aedf1454d9cee11b6c0ab9edc1
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29429120"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172468"
 ---
-# <a name="edgetelemetrymode-enum-type"></a><span data-ttu-id="30cde-103">tipo de enum edgeTelemetryMode</span><span class="sxs-lookup"><span data-stu-id="30cde-103">edgeTelemetryMode enum type</span></span>
+# <a name="edgetelemetrymode-enum-type"></a><span data-ttu-id="cfda4-103">tipo de enumeração edgeTelemetryMode</span><span class="sxs-lookup"><span data-stu-id="cfda4-103">edgeTelemetryMode enum type</span></span>
 
-> <span data-ttu-id="30cde-104">**Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações.</span><span class="sxs-lookup"><span data-stu-id="30cde-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="30cde-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="30cde-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="cfda4-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="cfda4-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="30cde-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.</span><span class="sxs-lookup"><span data-stu-id="30cde-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="cfda4-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="cfda4-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="30cde-107">Tipo de dados enviados à Microsoft 365 análise de navegação</span><span class="sxs-lookup"><span data-stu-id="30cde-107">Type of browsing data sent to Microsoft 365 analytics</span></span>
+<span data-ttu-id="cfda4-106">Tipo de dados de navegação enviados para a análise do Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="cfda4-106">Type of browsing data sent to Microsoft 365 analytics</span></span>
 
-## <a name="members"></a><span data-ttu-id="30cde-108">Membros</span><span class="sxs-lookup"><span data-stu-id="30cde-108">Members</span></span>
-|<span data-ttu-id="30cde-109">Membro</span><span class="sxs-lookup"><span data-stu-id="30cde-109">Member</span></span>|<span data-ttu-id="30cde-110">Valor</span><span class="sxs-lookup"><span data-stu-id="30cde-110">Value</span></span>|<span data-ttu-id="30cde-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="30cde-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="cfda4-107">Membros</span><span class="sxs-lookup"><span data-stu-id="cfda4-107">Members</span></span>
+|<span data-ttu-id="cfda4-108">Membro</span><span class="sxs-lookup"><span data-stu-id="cfda4-108">Member</span></span>|<span data-ttu-id="cfda4-109">Valor</span><span class="sxs-lookup"><span data-stu-id="cfda4-109">Value</span></span>|<span data-ttu-id="cfda4-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="cfda4-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="30cde-112">não-configuradas</span><span class="sxs-lookup"><span data-stu-id="30cde-112">notConfigured</span></span>|<span data-ttu-id="30cde-113">0</span><span class="sxs-lookup"><span data-stu-id="30cde-113">0</span></span>|<span data-ttu-id="30cde-114">Padrão – sem dados de telemetria coletados ou enviados</span><span class="sxs-lookup"><span data-stu-id="30cde-114">Default – No telemetry data collected or sent</span></span>|
-|<span data-ttu-id="30cde-115">intranet</span><span class="sxs-lookup"><span data-stu-id="30cde-115">intranet</span></span>|<span data-ttu-id="30cde-116">1</span><span class="sxs-lookup"><span data-stu-id="30cde-116">1</span></span>|<span data-ttu-id="30cde-117">Permitir envio somente histórico de intranet: somente enviar dados para sites de intranet do histórico de navegação</span><span class="sxs-lookup"><span data-stu-id="30cde-117">Allow sending intranet history only: Only send browsing history data for intranet sites</span></span>|
-|<span data-ttu-id="30cde-118">Internet</span><span class="sxs-lookup"><span data-stu-id="30cde-118">internet</span></span>|<span data-ttu-id="30cde-119">2</span><span class="sxs-lookup"><span data-stu-id="30cde-119">2</span></span>|<span data-ttu-id="30cde-120">Permitem o envio somente histórico de internet: enviar apenas procurando dados de histórico para sites da internet</span><span class="sxs-lookup"><span data-stu-id="30cde-120">Allow sending internet history only: Only send browsing history data for internet sites</span></span>|
-|<span data-ttu-id="30cde-121">intranetAndInternet</span><span class="sxs-lookup"><span data-stu-id="30cde-121">intranetAndInternet</span></span>|<span data-ttu-id="30cde-122">3</span><span class="sxs-lookup"><span data-stu-id="30cde-122">3</span></span>|<span data-ttu-id="30cde-123">Permitem o envio de histórico de intranet quanto da internet: envio procurando dados de histórico para sites de intranet e internet</span><span class="sxs-lookup"><span data-stu-id="30cde-123">Allow sending both intranet and internet history: Send browsing history data for intranet and internet sites</span></span>|
+|<span data-ttu-id="cfda4-111">notConfigured</span><span class="sxs-lookup"><span data-stu-id="cfda4-111">notConfigured</span></span>|<span data-ttu-id="cfda4-112">,0</span><span class="sxs-lookup"><span data-stu-id="cfda4-112">0</span></span>|<span data-ttu-id="cfda4-113">Padrão – nenhum dado de telemetria coletado ou enviado</span><span class="sxs-lookup"><span data-stu-id="cfda4-113">Default – No telemetry data collected or sent</span></span>|
+|<span data-ttu-id="cfda4-114">Internet</span><span class="sxs-lookup"><span data-stu-id="cfda4-114">intranet</span></span>|<span data-ttu-id="cfda4-115">1</span><span class="sxs-lookup"><span data-stu-id="cfda4-115">1</span></span>|<span data-ttu-id="cfda4-116">Permitir o envio de histórico de intranet somente: enviar apenas dados de histórico de navegação para sites de intranet</span><span class="sxs-lookup"><span data-stu-id="cfda4-116">Allow sending intranet history only: Only send browsing history data for intranet sites</span></span>|
+|<span data-ttu-id="cfda4-117">provedor</span><span class="sxs-lookup"><span data-stu-id="cfda4-117">internet</span></span>|<span data-ttu-id="cfda4-118">duas</span><span class="sxs-lookup"><span data-stu-id="cfda4-118">2</span></span>|<span data-ttu-id="cfda4-119">Permitir o envio somente do histórico da Internet: Enviar somente dados de histórico de navegação para sites da Internet</span><span class="sxs-lookup"><span data-stu-id="cfda4-119">Allow sending internet history only: Only send browsing history data for internet sites</span></span>|
+|<span data-ttu-id="cfda4-120">intranetAndInternet</span><span class="sxs-lookup"><span data-stu-id="cfda4-120">intranetAndInternet</span></span>|<span data-ttu-id="cfda4-121">3D</span><span class="sxs-lookup"><span data-stu-id="cfda4-121">3</span></span>|<span data-ttu-id="cfda4-122">Permitir o envio do histórico de intranet e Internet: enviar dados de histórico de navegação para sites de intranet e Internet</span><span class="sxs-lookup"><span data-stu-id="cfda4-122">Allow sending both intranet and internet history: Send browsing history data for intranet and internet sites</span></span>|
 
 
 

@@ -3,29 +3,31 @@ title: Tipo de recurso mediaContentRatingNewZealand
 description: Ainda não documentado
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 7d6556409f0893430813d2e9dbd753f97fa76886
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 4c2d9d58413153699f93841470364cb673979a17
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27932242"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30253397"
 ---
-# <a name="mediacontentratingnewzealand-resource-type"></a><span data-ttu-id="1ba82-103">Tipo de recurso mediaContentRatingNewZealand</span><span class="sxs-lookup"><span data-stu-id="1ba82-103">mediaContentRatingNewZealand resource type</span></span>
+# <a name="mediacontentratingnewzealand-resource-type"></a><span data-ttu-id="d9d1e-103">Tipo de recurso mediaContentRatingNewZealand</span><span class="sxs-lookup"><span data-stu-id="d9d1e-103">mediaContentRatingNewZealand resource type</span></span>
 
-> <span data-ttu-id="1ba82-104">**Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="1ba82-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="d9d1e-104">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="d9d1e-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="1ba82-105">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="1ba82-105">Not yet documented</span></span>
-## <a name="properties"></a><span data-ttu-id="1ba82-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="1ba82-106">Properties</span></span>
-|<span data-ttu-id="1ba82-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="1ba82-107">Property</span></span>|<span data-ttu-id="1ba82-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="1ba82-108">Type</span></span>|<span data-ttu-id="1ba82-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="1ba82-109">Description</span></span>|
+<span data-ttu-id="d9d1e-105">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="d9d1e-105">Not yet documented</span></span>
+
+## <a name="properties"></a><span data-ttu-id="d9d1e-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="d9d1e-106">Properties</span></span>
+|<span data-ttu-id="d9d1e-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="d9d1e-107">Property</span></span>|<span data-ttu-id="d9d1e-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="d9d1e-108">Type</span></span>|<span data-ttu-id="d9d1e-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="d9d1e-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="1ba82-110">movieRating</span><span class="sxs-lookup"><span data-stu-id="1ba82-110">movieRating</span></span>|[<span data-ttu-id="1ba82-111">ratingNewZealandMoviesType</span><span class="sxs-lookup"><span data-stu-id="1ba82-111">ratingNewZealandMoviesType</span></span>](../resources/intune-deviceconfig-ratingnewzealandmoviestype.md)|<span data-ttu-id="1ba82-112">Filmes selecionado para a Nova Zelândia de classificação.</span><span class="sxs-lookup"><span data-stu-id="1ba82-112">Movies rating selected for New Zealand.</span></span> <span data-ttu-id="1ba82-113">Os valores possíveis são: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `mature`, `agesAbove13`, `agesAbove15`, `agesAbove16`, `agesAbove18`, `restricted`, `agesAbove16Restricted`.</span><span class="sxs-lookup"><span data-stu-id="1ba82-113">Possible values are: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `mature`, `agesAbove13`, `agesAbove15`, `agesAbove16`, `agesAbove18`, `restricted`, `agesAbove16Restricted`.</span></span>|
-|<span data-ttu-id="1ba82-114">tvRating</span><span class="sxs-lookup"><span data-stu-id="1ba82-114">tvRating</span></span>|[<span data-ttu-id="1ba82-115">ratingNewZealandTelevisionType</span><span class="sxs-lookup"><span data-stu-id="1ba82-115">ratingNewZealandTelevisionType</span></span>](../resources/intune-deviceconfig-ratingnewzealandtelevisiontype.md)|<span data-ttu-id="1ba82-116">Classificação de TV selecionada para a Nova Zelândia.</span><span class="sxs-lookup"><span data-stu-id="1ba82-116">TV rating selected for New Zealand.</span></span> <span data-ttu-id="1ba82-117">Os valores possíveis são: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `adults`.</span><span class="sxs-lookup"><span data-stu-id="1ba82-117">Possible values are: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `adults`.</span></span>|
+|<span data-ttu-id="d9d1e-110">movieRating</span><span class="sxs-lookup"><span data-stu-id="d9d1e-110">movieRating</span></span>|[<span data-ttu-id="d9d1e-111">ratingNewZealandMoviesType</span><span class="sxs-lookup"><span data-stu-id="d9d1e-111">ratingNewZealandMoviesType</span></span>](../resources/intune-deviceconfig-ratingnewzealandmoviestype.md)|<span data-ttu-id="d9d1e-112">Classificação de filmes selecionada para Nova Zelândia.</span><span class="sxs-lookup"><span data-stu-id="d9d1e-112">Movies rating selected for New Zealand.</span></span> <span data-ttu-id="d9d1e-113">Os valores possíveis são: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `mature`, `agesAbove13`, `agesAbove15`, `agesAbove16`, `agesAbove18`, `restricted`, `agesAbove16Restricted`.</span><span class="sxs-lookup"><span data-stu-id="d9d1e-113">Possible values are: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `mature`, `agesAbove13`, `agesAbove15`, `agesAbove16`, `agesAbove18`, `restricted`, `agesAbove16Restricted`.</span></span>|
+|<span data-ttu-id="d9d1e-114">tvRating</span><span class="sxs-lookup"><span data-stu-id="d9d1e-114">tvRating</span></span>|[<span data-ttu-id="d9d1e-115">ratingNewZealandTelevisionType</span><span class="sxs-lookup"><span data-stu-id="d9d1e-115">ratingNewZealandTelevisionType</span></span>](../resources/intune-deviceconfig-ratingnewzealandtelevisiontype.md)|<span data-ttu-id="d9d1e-116">Classificação de TV selecionada para Nova Zelândia.</span><span class="sxs-lookup"><span data-stu-id="d9d1e-116">TV rating selected for New Zealand.</span></span> <span data-ttu-id="d9d1e-117">Os valores possíveis são: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `adults`.</span><span class="sxs-lookup"><span data-stu-id="d9d1e-117">Possible values are: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `adults`.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="1ba82-118">Relações</span><span class="sxs-lookup"><span data-stu-id="1ba82-118">Relationships</span></span>
-<span data-ttu-id="1ba82-119">Nenhum</span><span class="sxs-lookup"><span data-stu-id="1ba82-119">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="1ba82-120">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="1ba82-120">JSON Representation</span></span>
-<span data-ttu-id="1ba82-121">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="1ba82-121">Here is a JSON representation of the resource.</span></span>
+## <a name="relationships"></a><span data-ttu-id="d9d1e-118">Relações</span><span class="sxs-lookup"><span data-stu-id="d9d1e-118">Relationships</span></span>
+<span data-ttu-id="d9d1e-119">Nenhum</span><span class="sxs-lookup"><span data-stu-id="d9d1e-119">None</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="d9d1e-120">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="d9d1e-120">JSON Representation</span></span>
+<span data-ttu-id="d9d1e-121">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="d9d1e-121">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.mediaContentRatingNewZealand"
