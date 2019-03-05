@@ -3,21 +3,22 @@ title: Atualizar sharedPCConfiguration
 description: Atualiza as propriedades de um objeto sharedPCConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: dad81d252c25b201bbca923f3e60f44ae62d4ea3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: f1162374198cb4bf960e28e34fab9fd7de161faf
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27922638"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30259413"
 ---
 # <a name="update-sharedpcconfiguration"></a>Atualizar sharedPCConfiguration
 
-> **Observação:** o uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Atualiza as propriedades de um objeto [sharedPCConfiguration](../resources/intune-deviceconfig-sharedpcconfiguration.md).
+
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -47,23 +48,23 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [sharedPCConfigu
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|id|String|Chave da entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|description|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Versão da configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |accountManagerPolicy|[sharedPCAccountManagerPolicy](../resources/intune-deviceconfig-sharedpcaccountmanagerpolicy.md)|Especifica como as contas são gerenciadas em um PC compartilhado. Aplica-se somente quando disableAccountManager é false.|
 |allowedAccounts|[sharedPCAllowedAccountType](../resources/intune-deviceconfig-sharedpcallowedaccounttype.md)|Indica que tipos de contas podem ser usadas em um PC compartilhado. Os valores possíveis são: `guest`, `domain`.|
-|allowLocalStorage|Booliano|Especifica se o armazenamento local é permitido em um PC compartilhado.|
-|disableAccountManager|Booliano|Desabilita o gerente de contas para o modo de PC compartilhado.|
-|disableEduPolicies|Booliano|Especifica se as políticas padrão de ambiente de educação do PC compartilhado devem ser desabilitadas. Para o Windows 10 RS2 e posterior, essa política será aplicada sem configurar Enabled como true.|
-|disablePowerPolicies|Booliano|Especifica se as políticas padrão de energia do PC compartilhado devem ser desabilitadas.|
+|allowLocalStorage|Boolean|Especifica se o armazenamento local é permitido em um PC compartilhado.|
+|disableAccountManager|Boolean|Desabilita o gerente de contas para o modo de PC compartilhado.|
+|disableEduPolicies|Boolean|Especifica se as políticas padrão de ambiente de educação do PC compartilhado devem ser desabilitadas. Para o Windows 10 RS2 e posterior, essa política será aplicada sem configurar Enabled como true.|
+|disablePowerPolicies|Boolean|Especifica se as políticas padrão de energia do PC compartilhado devem ser desabilitadas.|
 |disableSignInOnResume|Booliano|Desabilita o requisito de entrar sempre que o dispositivo sai do modo de suspensão.|
-|enabled|Booliano|Habilita o modo de PC compartilhado e aplica as políticas de PC compartilhadas.|
+|enabled|Boolean|Habilita o modo de PC compartilhado e aplica as políticas de PC compartilhadas.|
 |idleTimeBeforeSleepInSeconds|Int32|Especifica o tempo em segundos que um dispositivo deve ficar ocioso antes de o PC entrar em suspensão. Definir esse valor como 0 impede que o tempo limite de suspensão ocorra.|
-|kioskAppDisplayName|Cadeia de caracteres|Especifica o texto de exibição para a conta mostrada na tela de entrada que inicializa o aplicativo especificado por SetKioskAppUserModelId. Aplicável somente quando KioskAppUserModelId está definido.|
-|kioskAppUserModelId|Cadeia de caracteres|Especifica a ID do modelo de usuário do aplicativo para uso com acesso atribuído.|
+|kioskAppDisplayName|String|Especifica o texto de exibição para a conta mostrada na tela de entrada que inicializa o aplicativo especificado por SetKioskAppUserModelId. Aplicável somente quando KioskAppUserModelId está definido.|
+|kioskAppUserModelId|String|Especifica a ID do modelo de usuário do aplicativo para uso com acesso atribuído.|
 |maintenanceStartTime|TimeOfDay|Especifica o horário de início diário da hora de manutenção.|
 
 
@@ -72,6 +73,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [sharedPCConfigu
 Se tiver êxito, este método retornará o código de resposta `200 OK` e um objeto [sharedPCConfiguration](../resources/intune-deviceconfig-sharedpcconfiguration.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
+
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http

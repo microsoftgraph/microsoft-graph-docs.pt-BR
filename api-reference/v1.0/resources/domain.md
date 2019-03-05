@@ -4,12 +4,12 @@ description: Representa um domínio associado ao locatário.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 9474d476a27fe0822955ae7bbc4147a5f4a8949c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: bd141fe02ab7b2685f83ebcfb787aca4ced2294f
+ms.sourcegitcommit: 159cf5aaa39d3721d96d3fd800f6a8b91159f74d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27979758"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30379504"
 ---
 # <a name="domain-resource-type"></a>tipo de recurso de domínio
 
@@ -50,11 +50,13 @@ Para associar um domínio a um locatário:
 |authenticationType|String| Indica o tipo de autenticação configurado para o domínio. O valor será *Gerenciado* ou *Federado*.<br> *Gerenciado* indica um domínio gerenciado em nuvem, no qual o Azure AD realiza autenticação do usuário.<br>*Federada* indica que a autenticação é federada com um provedor de identidade como o Active Directory do locatário no local pelos Serviços de Federação do Active Directory. Não anulável |
 |availabilityStatus|String| Essa propriedade é sempre nula, exceto quando a ação [verify](../api/domain-verify.md) é usada. Quando a ação [verify](../api/domain-verify.md) é usada, uma entidade **domain** é retornada na resposta. A propriedade **availabilityStatus** da entidade **domain** na resposta é *AvailableImmediately* ou *EmailVerifiedDomainTakeoverScheduled*.|
 |id|String| O nome totalmente qualificado do domínio. Chave, imutável, não anulável, exclusivo |
-|isAdminManaged|Booliano| O valor da propriedade será false se o gerenciamento de registro DNS do domínio foi delegado para o Office 365. Caso contrário, o valor é verdadeiro. Não anulável |
-|isDefault|Booliano| True se este é o domínio padrão usado para a criação de usuário. Há apenas um domínio padrão por empresa. Não anulável |
-|isInitial|Booliano| True se este é o domínio inicial criado pelo Microsoft Online Services (nomedaempresa.onmicrosoft.com). Há apenas um domínio inicial por empresa. Não anulável |
-|isRoot|Booliano| True se o domínio é um domínio raiz verificado. Caso contrário, false se o domínio é um subdomínio ou não verificado. Não anulável |
+|isAdminManaged|Boolean| O valor da propriedade será false se o gerenciamento de registro DNS do domínio foi delegado para o Office 365. Caso contrário, o valor é verdadeiro. Não anulável |
+|isDefault|Boolean| True se este é o domínio padrão usado para a criação de usuário. Há apenas um domínio padrão por empresa. Não anulável |
+|isInitial|Boolean| True se este é o domínio inicial criado pelo Microsoft Online Services (nomedaempresa.onmicrosoft.com). Há apenas um domínio inicial por empresa. Não anulável |
+|isRoot|Boolean| True se o domínio é um domínio raiz verificado. Caso contrário, false se o domínio é um subdomínio ou não verificado. Não anulável |
 |isVerified|Booliano| True se o domínio tiver concluído a verificação de propriedade de domínio. Não anulável |
+|passwordNotificationWindowInDays|Int32|Especifica o número de dias antes que um usuário receba uma notificação de que a senha expirará. Se a propriedade não for definida, será usado um valor padrão de 14 dias.|
+|passwordValidityPeriodInDays|Int32| Especifica o período de tempo que uma senha é válida antes de ser alterada. Se a propriedade não for definida, será usado um valor padrão de 90 dias. |
 |supportedServices|Coleção de cadeias de caracteres| Os recursos atribuídos ao domínio.<br><br>Podem incluir 0, 1 ou mais dos seguintes valores: *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*<br><br> Os valores que você pode adicionar ou remover usando a API do Graph incluem: *Email*, *OfficeCommunicationsOnline*, *Yammer*<br>Não anulável|
 |estado|[domainState](domainstate.md)| Status de operações assíncronas agendadas em um domínio. |
 
@@ -89,6 +91,8 @@ Veja a seguir uma representação JSON do recurso.
   "isInitial": true,
   "isRoot": true,
   "isVerified": true,
+  "passwordNotificationWindowInDays": 14,
+  "passwordValidityPeriodInDays": 90,
   "state": {"@odata.type": "microsoft.graph.domainState"},
   "supportedServices": ["String"]
 }

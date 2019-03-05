@@ -1,32 +1,33 @@
 ---
-title: tipo de enum complianceStatus
+title: tipo de enumeração complianceStatus
 description: Ainda não documentado
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: d7493b53a015602f841c1320c776eff639c8d6fa
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: e25b5d1b84b6a485e4e3cb9753f54dde1ecaa277
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27972967"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30256214"
 ---
-# <a name="compliancestatus-enum-type"></a>tipo de enum complianceStatus
+# <a name="compliancestatus-enum-type"></a>tipo de enumeração complianceStatus
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Ainda não documentado
+
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|unknown|0|Ainda não documentado|
-|notApplicable|1|Ainda não documentado|
-|compatível com|2|Ainda não documentado|
-|remediadas|3|Ainda não documentado|
-|fora de conformidade|4|Ainda não documentado|
-|erro|5|Ainda não documentado|
-|conflito|6|Ainda não documentado|
-|não atribuído|7|Ainda não documentado|
+|unknown|,0|Ainda não documentado|
+|Não aplicável|1|Ainda não documentado|
+|com|duas|Ainda não documentado|
+|corrigidos|3D|Ainda não documentado|
+|Incompatível|quatro|Ainda não documentado|
+|erro|0,5|Ainda não documentado|
+|apresentar|6|Ainda não documentado|
+|Não atribuído|178|Ainda não documentado|
 
 
 

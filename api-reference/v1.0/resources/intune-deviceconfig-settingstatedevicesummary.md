@@ -3,19 +3,20 @@ title: Tipo de recurso settingStateDeviceSummary
 description: Configuração e política de conformidade de dispositivo para um resumo de estado de configuração
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: e63cb2ccd37c88b187102b01a2a1251845ccd57b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 429ee25a57383b7356948242ce39dcb45b4067ba
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27919879"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30256347"
 ---
 # <a name="settingstatedevicesummary-resource-type"></a>Tipo de recurso settingStateDeviceSummary
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Configuração e política de conformidade de dispositivo para um resumo de estado de configuração
+
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
@@ -29,7 +30,7 @@ Configuração e política de conformidade de dispositivo para um resumo de esta
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade.|
-|settingName|Cadeia de caracteres|Nome da configuração|
+|settingName|String|Nome da configuração|
 |instancePath|Cadeia de caracteres|Nome de InstancePath para a configuração|
 |unknownDeviceCount|Int32|Contagem desconhecida de dispositivos para a configuração|
 |notApplicableDeviceCount|Int32|Contagem não aplicável ao dispositivo para a configuração|
@@ -40,7 +41,8 @@ Configuração e política de conformidade de dispositivo para um resumo de esta
 |conflictDeviceCount|Int32|Contagem de erro de conflito de dispositivo para a configuração|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
+
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
 <!-- {

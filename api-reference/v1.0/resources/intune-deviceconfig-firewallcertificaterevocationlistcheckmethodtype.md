@@ -1,28 +1,29 @@
 ---
-title: tipo de enum firewallCertificateRevocationListCheckMethodType
+title: tipo de enumeração firewallCertificateRevocationListCheckMethodType
 description: Valores possíveis para firewallCertificateRevocationListCheckMethod
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: e479b10339ab515a17f67d85de0c8d43c1507825
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: a475f32d4572b0aa8ed2a52befc7a58eb6077253
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27940054"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30257628"
 ---
-# <a name="firewallcertificaterevocationlistcheckmethodtype-enum-type"></a>tipo de enum firewallCertificateRevocationListCheckMethodType
+# <a name="firewallcertificaterevocationlistcheckmethodtype-enum-type"></a>tipo de enumeração firewallCertificateRevocationListCheckMethodType
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Valores possíveis para firewallCertificateRevocationListCheckMethod
+
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|deviceDefault|0|Nenhum valor configurado por Intune, não substituir o valor padrão de dispositivo configurada pelo usuário|
-|nenhum|1|Não verificar a lista de revogação de certificado|
-|tentativa|2|Tente verificação CRL e permitir que um certificado somente se o certificado for confirmado pela verificação de|
-|exigir|3|Exigir uma verificação CRL bem-sucedida antes de permitir que um certificado|
+|deviceDefault|,0|Nenhum valor configurado pelo Intune, não substitua o valor padrão do dispositivo configurado pelo usuário|
+|Nenhuma|1|Não verificar a lista de certificados revogados|
+|Houve|duas|Tentar verificação de CRL e permitir um certificado somente se o certificado for confirmado pela verificação|
+|precisa|3D|Exigir uma verificação de CRL bem-sucedida antes de permitir um certificado|
 
 
 

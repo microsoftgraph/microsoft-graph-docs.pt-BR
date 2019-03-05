@@ -1,23 +1,23 @@
 ---
-title: tipo de recurso de windowsPhoneXAP
-description: Contém propriedades e as propriedades herdadas para aplicativos de linha de negócios do Windows Phone XAP.
-localization_priority: Normal
+title: tipo de recurso windowsPhoneXAP
+description: Contém propriedades e propriedades herdadas para a linha XAP de aplicativos de negócios do Windows Phone.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8619ea55da3c486e3917c3c035c9c799830ffd3a
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 4a0b670df4f4531790a0a4e09b98b60f7bfaf47d
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29406959"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30169087"
 ---
-# <a name="windowsphonexap-resource-type"></a>tipo de recurso de windowsPhoneXAP
+# <a name="windowsphonexap-resource-type"></a>tipo de recurso windowsPhoneXAP
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Contém propriedades e as propriedades herdadas para aplicativos de linha de negócios do Windows Phone XAP.
+Contém propriedades e propriedades herdadas para a linha XAP de aplicativos de negócios do Windows Phone.
 
 
 Herda de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
@@ -25,11 +25,11 @@ Herda de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Lista windowsPhoneXAPs](../api/intune-apps-windowsphonexap-list.md)|coleção [windowsPhoneXAP](../resources/intune-apps-windowsphonexap.md)|Lista as propriedades e os relacionamentos dos objetos [windowsPhoneXAP](../resources/intune-apps-windowsphonexap.md) .|
-|[Obter windowsPhoneXAP](../api/intune-apps-windowsphonexap-get.md)|[windowsPhoneXAP](../resources/intune-apps-windowsphonexap.md)|Leia as propriedades e os relacionamentos do objeto [windowsPhoneXAP](../resources/intune-apps-windowsphonexap.md) .|
-|[Criar windowsPhoneXAP](../api/intune-apps-windowsphonexap-create.md)|[windowsPhoneXAP](../resources/intune-apps-windowsphonexap.md)|Crie um novo objeto de [windowsPhoneXAP](../resources/intune-apps-windowsphonexap.md) .|
-|[Excluir windowsPhoneXAP](../api/intune-apps-windowsphonexap-delete.md)|Nenhum|Exclui um [windowsPhoneXAP](../resources/intune-apps-windowsphonexap.md).|
-|[Atualizar windowsPhoneXAP](../api/intune-apps-windowsphonexap-update.md)|[windowsPhoneXAP](../resources/intune-apps-windowsphonexap.md)|Atualize as propriedades de um objeto [windowsPhoneXAP](../resources/intune-apps-windowsphonexap.md) .|
+|[Listar windowsPhoneXAPs](../api/intune-apps-windowsphonexap-list.md)|coleção [windowsPhoneXAP](../resources/intune-apps-windowsphonexap.md)|Listar Propriedades e relações dos objetos [windowsPhoneXAP](../resources/intune-apps-windowsphonexap.md) .|
+|[Obter windowsPhoneXAP](../api/intune-apps-windowsphonexap-get.md)|[windowsPhoneXAP](../resources/intune-apps-windowsphonexap.md)|Leia as propriedades e as relações do objeto [windowsPhoneXAP](../resources/intune-apps-windowsphonexap.md) .|
+|[Criar windowsPhoneXAP](../api/intune-apps-windowsphonexap-create.md)|[windowsPhoneXAP](../resources/intune-apps-windowsphonexap.md)|Criar um novo objeto [windowsPhoneXAP](../resources/intune-apps-windowsphonexap.md) .|
+|[Excluir windowsPhoneXAP](../api/intune-apps-windowsphonexap-delete.md)|Nenhum|Exclui [windowsPhoneXAP](../resources/intune-apps-windowsphonexap.md).|
+|[Atualizar windowsPhoneXAP](../api/intune-apps-windowsphonexap-update.md)|[windowsPhoneXAP](../resources/intune-apps-windowsphonexap.md)|Atualiza as propriedades de um objeto [windowsPhoneXAP](../resources/intune-apps-windowsphonexap.md) .|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
@@ -47,10 +47,10 @@ Herda de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
 |owner|String|O proprietário do conteúdo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |developer|String|O desenvolvedor do aplicativo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |Observações|String|Anotações para o aplicativo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
-|uploadState|Int32|O estado de carregamento. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
-|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|O estado de publicação para o aplicativo. O aplicativo não pode ser assinado, a menos que ele seja publicado. Herdada do [mobileApp](../resources/intune-apps-mobileapp.md). Os valores possíveis são: `notPublished`, `processing`, `published`.|
+|uploadState|Int32|O estado de upload. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|O estado de publicação para o aplicativo. O aplicativo não pode ser assinado, a menos que ele seja publicado. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md). Os valores possíveis são: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|O valor que indica se o aplicativo é atribuído a pelo menos um grupo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
-|roleScopeTagIds|String collection|Lista de ids de marca de escopo para esse aplicativo móvel. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de IDs de marca de escopo para este aplicativo móvel. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |committedContentVersion|String|A versão do conteúdo interno confirmado. Herdado de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |fileName|String|O nome do arquivo do aplicativo Lob principal. Herdado de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |size|Int64|O tamanho total, incluindo todos os arquivos carregados. Herdado de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
@@ -64,8 +64,8 @@ Herda de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
 |categories|Coleção [mobileAppCategory](../resources/intune-apps-mobileappcategory.md)|A lista de categorias para este aplicativo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |assignments|Coleção [mobileAppAssignment](../resources/intune-apps-mobileappassignment.md)|A lista de atribuições de grupo para esse aplicativo móvel. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |installSummary|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)|Resumo de instalação do aplicativo móvel. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
-|deviceStatuses|coleção [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)|A lista de estados de instalação para esse aplicativo móvel. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
-|userStatuses|coleção [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)|A lista de estados de instalação para esse aplicativo móvel. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|deviceStatuses|coleção [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)|A lista de Estados de instalação para este aplicativo móvel. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|userStatuses|coleção [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md)|A lista de Estados de instalação para este aplicativo móvel. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |contentVersions|Coleção [mobileAppContent](../resources/intune-apps-mobileappcontent.md)|A lista das versões de conteúdo deste aplicativo. Herdado de [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 
 ## <a name="json-representation"></a>Representação JSON

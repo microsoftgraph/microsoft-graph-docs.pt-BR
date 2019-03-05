@@ -4,12 +4,12 @@ description: 'Uma mensagem que representa uma solicitação, cancelamento ou res
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 83bed60f90b5f2a5ddcb30c9bb22f5a01f645cec
-ms.sourcegitcommit: e8b488f8068845522b869bf97475da7b078bee3d
+ms.openlocfilehash: e6effa3f97b0625786ec999f1b478c3dd8530f52
+ms.sourcegitcommit: 159cf5aaa39d3721d96d3fd800f6a8b91159f74d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30342314"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30379518"
 ---
 # <a name="eventmessage-resource-type"></a>Tipo de recurso eventMessage
 
@@ -75,7 +75,7 @@ Além de uma solicitação de reunião, uma instância do **eventMessage** pode 
 |isRead|Boolean|Indica se a mensagem foi lida.|
 |isReadReceiptRequested|Boolean|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a mensagem foi alterada pela última vez.|
-|meetingMessageType|meetingMessageType| O tipo de mensagem de evento: `none`, `meetingRequest`, `meetingCancelled`, `meetingAccepted`, `meetingTentativelyAccepted`, `meetingDeclined`.|
+|meetingMessageType|meetingMessageType| O tipo de mensagem de evento: `none`, `meetingRequest`, `meetingCancelled`, `meetingAccepted`, `meetingTenativelyAccepted`, `meetingDeclined`.|
 |parentFolderId|String|O identificador exclusivo para a mailFolder pai da mensagem.|
 |receivedDateTime|DateTimeOffset|A data e a hora em que a mensagem foi recebida.|
 |replyTo|Coleção [recipient](recipient.md)|Os endereços de email a serem usados ao responder.|

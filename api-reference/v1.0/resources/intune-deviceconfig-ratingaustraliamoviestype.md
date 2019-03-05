@@ -1,31 +1,32 @@
 ---
-title: tipo de enum ratingAustraliaMoviesType
-description: Filmes classificação rótulos na Austrália
+title: tipo de enumeração ratingAustraliaMoviesType
+description: Rótulos de classificação de filmes na Austrália
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 0f7df26bc12a92c2571967c68fcd82619a69cb64
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 3106197ce0efd3c0355461df58c5d22c314a08a6
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27911711"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30256536"
 ---
-# <a name="ratingaustraliamoviestype-enum-type"></a>tipo de enum ratingAustraliaMoviesType
+# <a name="ratingaustraliamoviestype-enum-type"></a>tipo de enumeração ratingAustraliaMoviesType
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Filmes classificação rótulos na Austrália
+Rótulos de classificação de filmes na Austrália
+
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|allAllowed|0|Valor padrão, permitir todo o conteúdo de filmes|
-|allBlocked|1|Não permitir que qualquer conteúdo filmes|
-|geral|2|A classificação G é adequada para todos|
-|parentalGuidance|3|O PG recomenda visualizadores em 15 com orientações dos pais ou responsáveis|
-|implementação avançada|4|A classificação M não é recomendada para os visualizadores em 15|
-|agesAbove15|5|A classificação MA15 + não é adequada para os visualizadores em 15|
-|agesAbove18|6|A classificação R18 + não é adequada para os visualizadores em 18|
+|Permitido|,0|Valor padrão, permitir todo o conteúdo de filmes|
+|Bloqueado|1|Não permitir conteúdo de filmes|
+|geral|duas|A classificação G é adequada para todos|
+|parentalGuidance|3D|A PG recomenda visualizadores em 15 com orientação de pais ou guardiões|
+|completa|quatro|A classificação M não é recomendada para visualizadores abaixo de 15|
+|agesAbove15|0,5|A classificação MA15 + não é adequada para visualizadores abaixo de 15|
+|agesAbove18|6|A classificação R18 + não é adequada para visualizadores em 18|
 
 
 

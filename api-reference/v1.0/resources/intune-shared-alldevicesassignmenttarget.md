@@ -3,19 +3,20 @@ title: Tipo de recurso allDevicesAssignmentTarget
 description: Representa uma atribuição para todos os dispositivos gerenciados no locatário.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 5d5cdf795ded3b0af352f89f85ee6b133ddd1878
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: eff3076ec935cae75238df843d442789b716d22b
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27919425"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30259210"
 ---
 # <a name="alldevicesassignmenttarget-resource-type"></a>Tipo de recurso allDevicesAssignmentTarget
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Representa uma atribuição para todos os dispositivos gerenciados no locatário.
+
 
 Herda de [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)
 
@@ -25,6 +26,7 @@ Herda de [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-dev
 
 ## <a name="relationships"></a>Relações
 Nenhum
+
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
 <!-- {

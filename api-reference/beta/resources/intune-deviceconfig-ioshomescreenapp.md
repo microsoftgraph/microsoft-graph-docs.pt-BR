@@ -1,21 +1,21 @@
 ---
 title: Tipo de recurso iosHomeScreenApp
 description: Representa um ícone de um aplicativo na tela inicial
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dcc90e774f8d032d46968fc4f751923bcc52e559
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: faaa2bfa7ac0d4a25eeb4452349250ceb3d80524
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29412321"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30163172"
 ---
 # <a name="ioshomescreenapp-resource-type"></a>Tipo de recurso iosHomeScreenApp
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Representa um ícone de um aplicativo na tela inicial
 
@@ -25,7 +25,7 @@ Herda de [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|Nome do aplicativo Herdado de [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)|
+|displayName|String|Nome do aplicativo Herdado de [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)|
 |bundleID|Cadeia de caracteres|BundleID do aplicativo|
 
 ## <a name="relationships"></a>Relações

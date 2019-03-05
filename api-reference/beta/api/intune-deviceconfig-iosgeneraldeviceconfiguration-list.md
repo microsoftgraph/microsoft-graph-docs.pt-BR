@@ -1,21 +1,21 @@
 ---
 title: Listar iosGeneralDeviceConfigurations
 description: Listar propriedades e relações dos objetos iosGeneralDeviceConfiguration.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c2a988ecae56f11dc9b9cb20ce20687aba872de4
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: cc3e90bebe8da9f657aa564ed56206a205f01ba0
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29400841"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30163375"
 ---
 # <a name="list-iosgeneraldeviceconfigurations"></a>Listar iosGeneralDeviceConfigurations
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Listar propriedades e relações dos objetos [iosGeneralDeviceConfiguration](../resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md).
 
@@ -63,7 +63,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 9939
+Content-Length: 10318
 
 {
   "value": [
@@ -111,16 +111,20 @@ Content-Length: 9939
       "appStoreBlockInAppPurchases": true,
       "appStoreBlockUIAppInstallation": true,
       "appStoreRequirePassword": true,
+      "autoFillForceAuthentication": true,
       "bluetoothBlockModification": true,
       "cameraBlocked": true,
       "cellularBlockDataRoaming": true,
       "cellularBlockGlobalBackgroundFetchWhileRoaming": true,
       "cellularBlockPerAppDataModification": true,
       "cellularBlockPersonalHotspot": true,
+      "cellularBlockPlanModification": true,
       "cellularBlockVoiceRoaming": true,
       "certificatesBlockUntrustedTlsCertificates": true,
       "classroomAppBlockRemoteScreenObservation": true,
       "classroomAppForceUnpromptedScreenObservation": true,
+      "classroomForceAutomaticallyJoinClasses": true,
+      "classroomForceUnpromptedAppAndDeviceLock": true,
       "compliantAppsList": [
         {
           "@odata.type": "microsoft.graph.appListItem",
@@ -145,6 +149,7 @@ Content-Length: 9939
       ],
       "enterpriseAppBlockTrust": true,
       "enterpriseAppBlockTrustModification": true,
+      "esimBlockModification": true,
       "faceTimeBlocked": true,
       "findMyFriendsBlocked": true,
       "gamingBlockGameCenterFriends": true,
@@ -271,6 +276,7 @@ Content-Length: 9939
       "passcodeRequiredType": "alphanumeric",
       "passcodeRequired": true,
       "podcastsBlocked": true,
+      "proximityBlockSetupToNewDevice": true,
       "safariBlockAutofill": true,
       "safariBlockJavaScript": true,
       "safariBlockPopups": true,
@@ -288,6 +294,8 @@ Content-Length: 9939
       "siriBlockedWhenLocked": true,
       "siriBlockUserGeneratedContent": true,
       "siriRequireProfanityFilter": true,
+      "softwareUpdatesEnforcedDelayInDays": 2,
+      "softwareUpdatesForceDelayed": true,
       "spotlightBlockInternetResults": true,
       "voiceDialingBlocked": true,
       "wallpaperBlockModification": true,

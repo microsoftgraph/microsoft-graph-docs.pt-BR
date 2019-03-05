@@ -3,21 +3,22 @@ title: Listar windows10GeneralConfigurations
 description: Listar propriedades e relações dos objetos windows10GeneralConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 61152396259a81202b5002dc34a04bb66edc3732
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 16ccf2ec5c2cafa9ef45346d7c2790d0a99cc963
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27962314"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30259623"
 ---
 # <a name="list-windows10generalconfigurations"></a>Listar windows10GeneralConfigurations
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Listar propriedades e relações dos objetos [windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md).
+
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -47,6 +48,7 @@ Não forneça um corpo de solicitação para esse método.
 Se tiver êxito, este método retornará um código de resposta `200 OK` e uma coleção de objetos [windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
+
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http
@@ -58,7 +60,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 10901
+Content-Length: 10959
 
 {
   "value": [
@@ -242,6 +244,7 @@ Content-Length: 10901
       "edgeBlockPopups": true,
       "edgeBlockSearchSuggestions": true,
       "edgeBlockSendingIntranetTrafficToInternetExplorer": true,
+      "edgeSendIntranetTrafficToInternetExplorer": true,
       "edgeRequireSmartScreen": true,
       "edgeEnterpriseModeSiteListLocation": "Edge Enterprise Mode Site List Location value",
       "edgeFirstRunUrl": "https://example.com/edgeFirstRunUrl/",

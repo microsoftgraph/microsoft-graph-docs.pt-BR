@@ -1,30 +1,30 @@
 ---
-title: tipo de enum groupPolicyDefinitionClassType
-description: Tipo de classe de definição de diretiva de grupo.
-localization_priority: Normal
+title: tipo de enumeração groupPolicyDefinitionClassType
+description: Tipo de classe de definição de política de grupo.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: afd1e6a8ebead5b0e81fe9d13351061ff20a96b2
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: df93a8e1687008738b3b2bafb3a11d9c969f3191
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29429226"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30164929"
 ---
-# <a name="grouppolicydefinitionclasstype-enum-type"></a>tipo de enum groupPolicyDefinitionClassType
+# <a name="grouppolicydefinitionclasstype-enum-type"></a>tipo de enumeração groupPolicyDefinitionClassType
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Tipo de classe de definição de diretiva de grupo.
+Tipo de classe de definição de política de grupo.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|user|0|Identifica o posicionamento da configuração de diretiva no nó Configuração do usuário.|
-|máquina|1|Identifica o posicionamento da configuração de diretiva no nó Configuração do computador.|
-|ambos|2|Identifica o posicionamento da configuração de diretiva em nós de configuração do computador e do usuário.|
+|user|,0|Identifica o posicionamento da configuração de política no nó Configuração do usuário.|
+|máquina|1|Identifica o posicionamento da configuração de política no nó Configuração do computador.|
+|mesmo|duas|Identifica o posicionamento da configuração de política nos nós de configuração de computador e de usuário.|
 
 
 

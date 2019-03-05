@@ -4,20 +4,21 @@ description: Atualizar as propriedades de um objeto de deviceAppManagement.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: f100e91f6943d24dd63be9c28ba0e96213cfc012
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: f97316e06cec39cd0aeb1b22d6142925d81b77ae
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27991492"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30259364"
 ---
 # <a name="update-deviceappmanagement"></a>Atualizar deviceAppManagement
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Atualizar as propriedades de um objeto de [deviceAppManagement](../resources/intune-shared-deviceappmanagement.md).
+
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é necessário chamar essa API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).  Observe que a permissão apropriada varia de acordo com o fluxo de trabalho.
+Uma das seguintes permissões é necessária para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).  Observe que a permissão adequada varia de acordo com o fluxo de trabalho.
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -48,8 +49,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceA
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade.|
-|**Inclusão**|
-|isEnabledForMicrosoftStoreForBusiness|Booliano|Se a conta está ativada para sincronizar aplicativos do Microsoft Store para Empresa.|
+|**Integração**|
+|isEnabledForMicrosoftStoreForBusiness|Boolean|Se a conta está ativada para sincronizar aplicativos do Microsoft Store para Empresa.|
 |microsoftStoreForBusinessLanguage|String|As informações sobre a localidade usada para sincronizar aplicativos do Microsoft Store para Empresas. Culturas específicas de um país/região. Os nomes dessas culturas seguem a RFC 4646 (Windows Vista e mais recentes). O formato é <languagecode2>-<country/regioncode2>, onde <languagecode2> é um código em duas letras minúsculas derivado da ISO 639-1 e <country/regioncode2> é um código em duas letras maiúsculas derivado da ISO 3166. Por exemplo, en-US para inglês (Estados Unidos) é uma cultura específica.|
 |microsoftStoreForBusinessLastCompletedApplicationSyncTime|DateTimeOffset|A última vez em uma sincronização de aplicativo na Microsoft Store para Empresas foi concluída.|
 |microsoftStoreForBusinessLastSuccessfulSyncDateTime|DateTimeOffset|A última vez que os aplicativos da Microsoft Store para Empresas foram sincronizados com êxito para essa conta.|
@@ -69,7 +70,7 @@ Content-length: 2
 
 ## <a name="example-response"></a>Resposta de exemplo
 
-No objeto response mostrado aqui pode estar truncado para fins de concisão. Todas as propriedades serão retornadas de uma chamada real.
+O objeto de resposta mostrado aqui pode estar truncado por brevidade. Todas as propriedades serão retornadas de uma chamada real.
 
 ``` http
 HTTP/1.1 200 OK

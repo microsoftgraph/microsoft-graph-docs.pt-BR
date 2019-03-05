@@ -3,19 +3,20 @@ title: Tipo de recurso managedAppPolicyDeploymentSummary
 description: O ManagedAppEntity é o tipo de entidade de base para todos os outros tipos de entidades em um fluxo de trabalho de gerenciamento de aplicativos.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 4ded5ab6bfb4cbd744bfab9a614f3122c8d1ab53
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 84ca52db1321bc3a2fa356de50e1446f662e725b
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27957476"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30256368"
 ---
 # <a name="managedapppolicydeploymentsummary-resource-type"></a>Tipo de recurso managedAppPolicyDeploymentSummary
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 O ManagedAppEntity é o tipo de entidade de base para todos os outros tipos de entidades em um fluxo de trabalho de gerenciamento de aplicativos.
+
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
@@ -25,15 +26,16 @@ O ManagedAppEntity é o tipo de entidade de base para todos os outros tipos de e
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|Ainda não documentado|
+|displayName|String|Ainda não documentado|
 |configurationDeployedUserCount|Int32|Ainda não documentado|
 |lastRefreshTime|DateTimeOffset|Ainda não documentado|
 |configurationDeploymentSummaryPerApp|Conjunto [managedAppPolicyDeploymentSummaryPerApp](../resources/intune-mam-managedapppolicydeploymentsummaryperapp.md)|Ainda não documentado|
-|id|Cadeia de caracteres|Chave da entidade.|
-|version|Cadeia de caracteres|Versão da entidade.|
+|id|String|Chave da entidade.|
+|version|String|Versão da entidade.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
+
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
 <!-- {

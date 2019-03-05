@@ -1,34 +1,34 @@
 ---
-title: tipo de enum win32LobAppDetectionOperator
+title: tipo de enumeração win32LobAppDetectionOperator
 description: Contém propriedades para o operador de detecção.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5f600d545691741c37d8a315f8af3f5e12ec435c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 477306e8f4ed5029d9f504ca80ed7126ee1093f2
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29393043"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30165937"
 ---
-# <a name="win32lobappdetectionoperator-enum-type"></a>tipo de enum win32LobAppDetectionOperator
+# <a name="win32lobappdetectionoperator-enum-type"></a>tipo de enumeração win32LobAppDetectionOperator
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Contém propriedades para o operador de detecção.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|não-configuradas|0|Não configurado.|
-|igual|1|Operador igual.|
-|notEqual|2|Operador diferente.|
-|greaterThan|4|É maior que o operador.|
-|greaterThanOrEqual|5|Operador maior ou igual.|
-|lessThan|8|Menor que o operador.|
-|lessThanOrEqual|9|Menor que ou igual operador.|
+|notConfigured|,0|Não configurado.|
+|EQUAL|1|Operador equal.|
+|Não igual a|duas|Operador diferente de.|
+|greaterThan|quatro|Operador maior que.|
+|greaterThanOrEqual|0,5|Operador maior ou igual a.|
+|lessThan|8|Operador menor que.|
+|lessThanOrEqual|241|Operador menor ou igual.|
 
 
 

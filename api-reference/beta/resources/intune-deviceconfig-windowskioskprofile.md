@@ -1,29 +1,29 @@
 ---
-title: tipo de recurso de windowsKioskProfile
+title: tipo de recurso windowsKioskProfile
 description: Ainda não documentado
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 55d8c23d3bfae2baf9d632c33390b8aafb5e7ef8
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: f1c7107982a33452cd9dd00829cba08f108c6394
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29420245"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30164747"
 ---
-# <a name="windowskioskprofile-resource-type"></a>tipo de recurso de windowsKioskProfile
+# <a name="windowskioskprofile-resource-type"></a>tipo de recurso windowsKioskProfile
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Ainda não documentado
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|profileId|String|Chave da entidade.|
-|profileName|String|Este é um nome amigável usado para identificar um grupo de aplicativos, o layout desses aplicativos no menu Iniciar e os usuários aos quais essa configuração de quiosque é atribuída.|
+|ProfileId|String|Chave da entidade.|
+|ProfileName|String|Este é um nome amigável usado para identificar um grupo de aplicativos, o layout desses aplicativos no menu iniciar e os usuários aos quais esta configuração de quiosque é atribuída.|
 |appConfiguration|[windowsKioskAppConfiguration](../resources/intune-deviceconfig-windowskioskappconfiguration.md)|A configuração do aplicativo que será usada para esta configuração de quiosque.|
 |userAccountsConfiguration|coleção [windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md)|As contas de usuário que serão bloqueadas para esta configuração de quiosque. Essa coleção pode conter um máximo de 100 elementos.|
 
