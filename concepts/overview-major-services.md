@@ -3,12 +3,12 @@ title: Principais serviços e recursos do Microsoft Graph
 description: 'O Microsoft Graph permite que você se integre com o melhor dos serviços do Office 365, Windows 10 e Enterprise Mobility + Security no Microsoft 365 usando APIs REST e bibliotecas de cliente. Além disso, ele oferece segurança e inteligência social que podem aumentar a produtividade do usuário, a criatividade e a colaboração em equipe, além de proteger os recursos de negócios e os dados dos usuários. '
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 0d164dc95b4ae5de683180de1b6f186dcd98f5f2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 98981cddb22fae69bd6b50e05d7caebc4c5c0d8a
+ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820682"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "30361888"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Principais serviços e recursos do Microsoft Graph
 
@@ -117,6 +117,7 @@ Alguns serviços do Microsoft Graph iniciam-se no próprio Microsoft Graph, outr
 |Recurso     |Serviços de suporte  |Descrição |Mais informações |
 |:-----------|:--------------------|:-----------|:----------------|
 | Reserva de clientes (prévia) | Microsoft Bookings | Tem como alvo pequenas empresas para permitir que seus clientes reservem serviços diretamente na Web ou no Facebook. Permite que os operadores de negócios gerenciem as preferências, os serviços e os preços dos clientes, as listas de funcionários e os agendamentos e outras informações comerciais comuns. | [Visão geral da API do Microsoft Bookings](booking-concept-overview.md) |
+| Finanças (visualização) | Dynamics 365 Business Central | Permite o gerenciamento de dados financeiros automação e proteção da rede de fornecedores, gerenciamento de vendas e melhor atendimento ao cliente, gerenciamento de projetos e otimização das operações com a solução de gerenciamento de negócios tudo em um.| [Visão geral da API Business Central](dynamics-business-central-concept-overview.md) |
 
 
 ## <a name="next-steps"></a>Próximas etapas
