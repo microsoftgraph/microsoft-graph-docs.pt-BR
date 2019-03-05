@@ -1,23 +1,23 @@
 ---
-title: tipo de recurso de windowsKioskMultipleApps
-description: A classe usada para identificar a configuração de vários modos app para a configuração de quiosque
-localization_priority: Normal
+title: tipo de recurso tipo complexowindowskioskmultipleapps
+description: A classe usada para identificar a configuração do aplicativo multimodo para a configuração do quiosque
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b71b8a57151b08d0297a89dfd815f72d66c2d12a
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: b2d2ff38e3b07920f474d9e3894bbd1f8855e277
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29396025"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30162017"
 ---
-# <a name="windowskioskmultipleapps-resource-type"></a>tipo de recurso de windowsKioskMultipleApps
+# <a name="windowskioskmultipleapps-resource-type"></a>tipo de recurso tipo complexowindowskioskmultipleapps
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-A classe usada para identificar a configuração de vários modos app para a configuração de quiosque
+A classe usada para identificar a configuração do aplicativo multimodo para a configuração do quiosque
 
 
 Herda de [windowsKioskAppConfiguration](../resources/intune-deviceconfig-windowskioskappconfiguration.md)
@@ -25,10 +25,10 @@ Herda de [windowsKioskAppConfiguration](../resources/intune-deviceconfig-windows
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|Aplicativos|coleção [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|Estes são os únicos repositório aplicativos do Windows que estarão disponíveis para início no menu Iniciar. Essa coleção pode conter um máximo de 128 elementos.|
-|showTaskBar|Boolean|Essa configuração permite que o administrador especificar se a barra de tarefas é mostrada ou não.|
-|disallowDesktopApps|Boolean|Essa configuração indica que os aplicativos da área de trabalho são permitidos. Definido como true.|
-|startMenuLayoutXml|Binária|Permite que os administradores substituir o layout de início padrão e impede que o usuário alterá-la.O layout é modificado especificando um arquivo XML com base em um esquema de modificação de layout. XML deve estar em formato binário.|
+|apps|coleção [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|Estes são os únicos aplicativos da Windows Store que estarão disponíveis para inicialização no menu iniciar. Essa coleção pode conter um máximo de 128 elementos.|
+|a barra de tarefas|Boolean|Essa configuração permite que o administrador especifique se a barra de tarefas é mostrada ou não.|
+|disallowDesktopApps|Boolean|Essa configuração indica que os aplicativos de área de trabalho são permitidos. O padrão é true.|
+|startMenuLayoutXml|Binária|Permite que os administradores substituam o layout de início padrão e impede que o usuário o altere.O layout é modificado especificando um arquivo XML com base em um esquema de modificação de layout. XML precisa estar no formato binário.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

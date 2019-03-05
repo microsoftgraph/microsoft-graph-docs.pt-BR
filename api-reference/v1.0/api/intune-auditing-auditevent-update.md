@@ -3,21 +3,22 @@ title: Atualizar auditEvent
 description: Atualizar as propriedades do objeto auditEvent.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: f50bf7d2d67bf8d4fdfa78eed446c16dc82aa2b7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 2b1c4f094075d7f84fd4b8eec0929f4f3ed168bb
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27991028"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30252102"
 ---
 # <a name="update-auditevent"></a>Atualizar auditEvent
 
-> **Observação:** o uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Atualizar as propriedades do objeto [auditEvent](../resources/intune-auditing-auditevent.md).
+
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -48,14 +49,14 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [auditEvent](../
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade.|
-|displayName|Cadeia de caracteres|Nome de exibição do evento.|
-|componentName|Cadeia de caracteres|Nome do componente.|
+|displayName|String|Nome de exibição do evento.|
+|componentName|String|Nome do componente.|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|Usuários e aplicativos do AAD associados com o evento de auditoria.|
-|atividade|Cadeia de caracteres|Nome amigável da atividade.|
+|atividade|String|Nome amigável da atividade.|
 |activityDateTime|DateTimeOffset|A hora e data em UTC em que a atividade foi executada.|
-|activityType|Cadeia de caracteres|O tipo de atividade que foi executada.|
-|activityOperationType|Cadeia de caracteres|O tipo de operação HTTP da atividade.|
-|activityResult|Cadeia de caracteres|O resultado da atividade.|
+|activityType|String|O tipo de atividade que foi executada.|
+|activityOperationType|String|O tipo de operação HTTP da atividade.|
+|activityResult|String|O resultado da atividade.|
 |correlationId|Guid|A ID da solicitação de cliente usada para correlacionar a atividade dentro do sistema.|
 |recursos|Coleção [auditResource](../resources/intune-auditing-auditresource.md)|Recursos em modificação.|
 |Ferramentas para desenvolvedores|Cadeia de caracteres|Categoria de auditoria.|
@@ -66,6 +67,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [auditEvent](../
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [auditEvent](../resources/intune-auditing-auditevent.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
+
 ### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 ``` http

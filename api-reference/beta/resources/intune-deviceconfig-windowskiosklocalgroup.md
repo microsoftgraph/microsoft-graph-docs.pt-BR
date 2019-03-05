@@ -1,23 +1,23 @@
 ---
-title: tipo de recurso de windowsKioskLocalGroup
-description: A classe usada para identificar um grupo local para a configuração de quiosque
-localization_priority: Normal
+title: tipo de recurso windowsKioskLocalGroup
+description: A classe usada para identificar um grupo local para a configuração do quiosque
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1134b6a842b54dc49fcd15a92d21aef227b35182
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e3479226d770c7030fefed1a7f2f65a02808479d
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29424627"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30169521"
 ---
-# <a name="windowskiosklocalgroup-resource-type"></a>tipo de recurso de windowsKioskLocalGroup
+# <a name="windowskiosklocalgroup-resource-type"></a>tipo de recurso windowsKioskLocalGroup
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-A classe usada para identificar um grupo local para a configuração de quiosque
+A classe usada para identificar um grupo local para a configuração do quiosque
 
 
 Herda de [windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md)
@@ -25,7 +25,7 @@ Herda de [windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|groupName|String|O nome do grupo local será bloqueado para esta configuração de quiosque|
+|Nome_do_grupo|String|O nome do grupo local que será bloqueado para esta configuração de quiosque|
 
 ## <a name="relationships"></a>Relações
 Nenhum

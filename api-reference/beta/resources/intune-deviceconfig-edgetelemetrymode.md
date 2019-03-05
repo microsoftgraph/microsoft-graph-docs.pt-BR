@@ -1,31 +1,31 @@
 ---
-title: tipo de enum edgeTelemetryMode
-description: Tipo de dados enviados à Microsoft 365 análise de navegação
-localization_priority: Normal
+title: tipo de enumeração edgeTelemetryMode
+description: Tipo de dados de navegação enviados para a análise do Microsoft 365
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 81d429f7629a5d6a6f2593785605902065d9f1c7
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: b48840debffcc7aedf1454d9cee11b6c0ab9edc1
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29429120"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172468"
 ---
-# <a name="edgetelemetrymode-enum-type"></a>tipo de enum edgeTelemetryMode
+# <a name="edgetelemetrymode-enum-type"></a>tipo de enumeração edgeTelemetryMode
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Tipo de dados enviados à Microsoft 365 análise de navegação
+Tipo de dados de navegação enviados para a análise do Microsoft 365
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|não-configuradas|0|Padrão – sem dados de telemetria coletados ou enviados|
-|intranet|1|Permitir envio somente histórico de intranet: somente enviar dados para sites de intranet do histórico de navegação|
-|Internet|2|Permitem o envio somente histórico de internet: enviar apenas procurando dados de histórico para sites da internet|
-|intranetAndInternet|3|Permitem o envio de histórico de intranet quanto da internet: envio procurando dados de histórico para sites de intranet e internet|
+|notConfigured|,0|Padrão – nenhum dado de telemetria coletado ou enviado|
+|Internet|1|Permitir o envio de histórico de intranet somente: enviar apenas dados de histórico de navegação para sites de intranet|
+|provedor|duas|Permitir o envio somente do histórico da Internet: Enviar somente dados de histórico de navegação para sites da Internet|
+|intranetAndInternet|3D|Permitir o envio do histórico de intranet e Internet: enviar dados de histórico de navegação para sites de intranet e Internet|
 
 
 

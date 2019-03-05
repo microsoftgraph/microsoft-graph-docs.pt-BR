@@ -1,27 +1,28 @@
 ---
-title: tipo de enum safeSearchFilterType
-description: Especifica qual nível de pesquisa segura (filtragem de conteúdo para adultos) é necessária
+title: tipo de enumeração safeSearchFilterType
+description: Especifica o nível de pesquisa segura (filtragem de conteúdo adulto) é necessário
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 788a266cdd0161ce1cfef426a7fcf4d9726e3324
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: c82f80f6081f57a88fcdf26f7639277d72b5e0d8
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27964610"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30250583"
 ---
-# <a name="safesearchfiltertype-enum-type"></a>tipo de enum safeSearchFilterType
+# <a name="safesearchfiltertype-enum-type"></a>tipo de enumeração safeSearchFilterType
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Especifica qual nível de pesquisa segura (filtragem de conteúdo para adultos) é necessária
+Especifica o nível de pesquisa segura (filtragem de conteúdo adulto) é necessário
+
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|userDefined|0|Definido pelo usuário, valor padrão, sem intenção.|
-|estrito|1|Restrito, mais alto de filtragem em relação a conteúdo para adultos.|
-|moderar|2|Moderar filtragem contra conteúdo para adultos (resultados de pesquisa válido não serão filtrados).|
+|userDefined|,0|Definido pelo usuário, valor padrão, sem intenção.|
+|impede|1|Filtragem mais rigorosa e estrita contra conteúdo adulto.|
+|moderado|duas|Filtragem moderada contra conteúdo adulto (os resultados de pesquisa válidos não serão filtrados).|
 
 
 

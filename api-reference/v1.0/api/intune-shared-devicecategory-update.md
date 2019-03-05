@@ -4,25 +4,26 @@ description: Atualizar as propriedades de um objeto deviceCategory.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: b055f8865592e935aaa32e8a3a541151886d36de
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 831232fc656ad4aa0968e40aca5ae54b1e13ceef
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986856"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30255175"
 ---
 # <a name="update-devicecategory"></a>Atualizar deviceCategory
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Atualizar as propriedades de um objeto [deviceCategory](../resources/intune-shared-devicecategory.md).
+
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)||
-| &nbsp;&nbsp; **Onboarding** e <br> &nbsp;&nbsp; **Gerenciamento de dispositivo**| DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp;&nbsp; **Integração** e <br> &nbsp;&nbsp; **Gerenciamento de dispositivos**| DeviceManagementManagedDevices.ReadWrite.All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
@@ -49,9 +50,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceC
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo da categoria do dispositivo. Somente leitura.|
-|**Inclusão**|
-|displayName|Cadeia de caracteres|Nome de exibição da categoria de dispositivo.|
+|id|String|O identificador exclusivo da categoria do dispositivo. Somente leitura.|
+|**Integração**|
+|displayName|String|Nome de exibição da categoria de dispositivo.|
 |description|Cadeia de caracteres|Descrição opcional da categoria do dispositivo.|
 
 
@@ -61,7 +62,7 @@ Se tiver êxito, este método retornará um código de resposta `200 OK` e um ob
 
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação
-Estes são exemplos da solicitação.
+Aqui estão exemplos de solicitação.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceCategories/{deviceCategoryId}
 Content-type: application/json
@@ -76,7 +77,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 ```
 
 ### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Propriedades de resposta irá variar de acordo com o contexto.
+Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. As propriedades de resposta irão variar de acordo com o contexto.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

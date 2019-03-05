@@ -1,15 +1,15 @@
 ---
 title: Controle de acesso baseado em função no Microsoft Intune
-description: 'O controle de acesso baseado em função do Intune determina quem pode executar ações em objetos do Intune e fazer alterações para aplicativos gerenciados, usuários e dispositivos.   '
+description: Lista a API do Microsoft Graph para os pontos de extremidade do Intune (REST) que definem e gerenciam o controle de acesso baseado em função (RBAC) para uma organização de locatário.
 localization_priority: Normal
 author: tfitzmac
 ms.prod: intune
-ms.openlocfilehash: 4cdc5e875f698646288258fc225ad77f8c4c2ba8
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 24280426585014f5e397dab39daa71f8930b26c4
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29395745"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30160673"
 ---
 # <a name="role-based-access-control-in-microsoft-intune"></a>Controle de acesso baseado em função no Microsoft Intune
 
@@ -21,7 +21,7 @@ O controle de acesso baseado em função do Intune determina quem pode executar 
 
 Os seguintes recursos do Graph estão disponíveis para gerenciar o controle de acesso baseado em função no Intune:
 
-- [Gerenciamento de dispositivo e app atribuído detalhes da função](intune-rbac-deviceandappmanagementassignedroledetails.md)
+- [Detalhes de função atribuídos ao gerenciamento de aplicativo e dispositivo](intune-rbac-deviceandappmanagementassignedroledetails.md)
 - [Atribuição de função de gerenciamento de aplicativo e dispositivo](intune-rbac-deviceandappmanagementroleassignment.md)
 - [Definição de função de gerenciamento de aplicativo e dispositivo](intune-rbac-deviceandappmanagementroledefinition.md)
 - [Ação de recurso](intune-rbac-resourceaction.md)

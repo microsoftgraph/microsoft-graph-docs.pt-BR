@@ -1,15 +1,15 @@
 ---
-title: Termos e condições da empresa no Microsoft Intune
-description: É possível implantar termos e condições do Intune em grupos de usuários para explicar como o registro, o acesso a recursos de trabalho e o aplicativo Portal da Empresa afetam dispositivos e usuários. Os usuários devem aceitar os termos e condições antes de usarem o Portal da Empresa para registrar e acessar o trabalho deles.
+title: Termos e condições da empresa no Microsoft Intune-API do Microsoft Graph
+description: Lista os pontos de extremidade da API do Microsoft Graph para Intune (REST) que dão suporte a termos e condições da empresa.
 localization_priority: Normal
 author: tfitzmac
 ms.prod: intune
-ms.openlocfilehash: c9d5b41e0c672db5dfff82b6a70bc97214a56f4a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 3de3cdf4ac55177bceb56e59743d0bef9bd4cb50
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27925928"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30253530"
 ---
 # <a name="company-terms-and-conditions-in-microsoft-intune"></a>Termos e condições da empresa no Microsoft Intune
 

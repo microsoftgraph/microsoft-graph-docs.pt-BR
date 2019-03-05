@@ -1,28 +1,28 @@
 ---
-title: tipo de recurso de managedDeviceCleanupSettings
-description: Defina a regra quando o administrador deseja que os dispositivos devem ser limpos.
-localization_priority: Normal
+title: tipo de recurso managedDeviceCleanupSettings
+description: Defina a regra quando o administrador quiser que os dispositivos sejam limpos.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4bf756072dcc3cd13bda2fda59b8688b63f3cd43
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 76abaf4cb06156881a530d50e3322e649eedde51
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29424564"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30148479"
 ---
-# <a name="manageddevicecleanupsettings-resource-type"></a>tipo de recurso de managedDeviceCleanupSettings
+# <a name="manageddevicecleanupsettings-resource-type"></a>tipo de recurso managedDeviceCleanupSettings
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Defina a regra quando o administrador deseja que os dispositivos devem ser limpos.
+Defina a regra quando o administrador quiser que os dispositivos sejam limpos.
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|deviceInactivityBeforeRetirementInDays|String|Número de dias quando o dispositivo não foi contatado Intune.|
+|deviceInactivityBeforeRetirementInDays|String|Número de dias em que o dispositivo não entrou no Intune.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

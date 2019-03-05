@@ -1,21 +1,21 @@
 ---
-title: tipo de recurso de sharedAppleDeviceUser
+title: tipo de recurso sharedAppleDeviceUser
 description: Ainda não documentado
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 46e0993c69a8ae34a54a654959d8d67a1b7f4747
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8f737432597d4528d1a682cd15552230af0ae83e
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29394429"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30156501"
 ---
-# <a name="sharedappledeviceuser-resource-type"></a>tipo de recurso de sharedAppleDeviceUser
+# <a name="sharedappledeviceuser-resource-type"></a>tipo de recurso sharedAppleDeviceUser
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Ainda não documentado
 

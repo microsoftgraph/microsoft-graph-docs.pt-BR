@@ -1,31 +1,31 @@
 ---
-title: tipo de enum androidForWorkCrossProfileDataSharingType
-description: Android para trabalho cruzar o compartilhamento de tipo de dados de perfil.
-localization_priority: Normal
+title: tipo de enumeração androidForWorkCrossProfileDataSharingType
+description: Android para o tipo de compartilhamento de dados entre perfis de trabalho.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a6b1aa7e9eb4f5a041469b3670d954394580b9cf
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 7b9e27525b774678f0ff77d3d73f89b739f32918
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399973"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30162164"
 ---
-# <a name="androidforworkcrossprofiledatasharingtype-enum-type"></a>tipo de enum androidForWorkCrossProfileDataSharingType
+# <a name="androidforworkcrossprofiledatasharingtype-enum-type"></a>tipo de enumeração androidForWorkCrossProfileDataSharingType
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Android para trabalho cruzar o compartilhamento de tipo de dados de perfil.
+Android para o tipo de compartilhamento de dados entre perfis de trabalho.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|deviceDefault|0|Valor de padrão de dispositivo, sem intenção.|
-|preventAny|1|Impedir que qualquer compartilhamento.|
-|allowPersonalToWork|2|Permitir que a solicitação de perfil pessoal para trabalhar de perfil de compartilhamento de dados.|
-|noRestrictions|3|Sem restrições de compartilhamento.|
+|deviceDefault|,0|Valor padrão do dispositivo, sem intenção.|
+|preventAny|1|Impedir qualquer compartilhamento.|
+|allowPersonalToWork|duas|Permitir solicitação de compartilhamento de dados do perfil pessoal para o perfil de trabalho.|
+|noRestrictions|3D|Sem restrições no compartilhamento.|
 
 
 

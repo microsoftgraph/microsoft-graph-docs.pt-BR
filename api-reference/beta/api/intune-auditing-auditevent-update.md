@@ -1,21 +1,21 @@
 ---
 title: Atualizar auditEvent
 description: Atualizar as propriedades do objeto auditEvent.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5dc2b7f1f22deafbb0c77db9ec19529570d89479
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 74941b4c660cc9363fe7c021c8aea46314f4a89e
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29401212"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30152434"
 ---
 # <a name="update-auditevent"></a>Atualizar auditEvent
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Atualizar as propriedades do objeto [auditEvent](../resources/intune-auditing-auditevent.md).
 
@@ -51,14 +51,14 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [auditEvent](../
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade.|
-|displayName|Cadeia de caracteres|Nome de exibição do evento.|
-|componentName|Cadeia de caracteres|Nome do componente.|
+|displayName|String|Nome de exibição do evento.|
+|componentName|String|Nome do componente.|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|Usuários e aplicativos do AAD associados com o evento de auditoria.|
-|atividade|Cadeia de caracteres|Nome amigável da atividade.|
+|atividade|String|Nome amigável da atividade.|
 |activityDateTime|DateTimeOffset|A hora e data em UTC em que a atividade foi executada.|
-|activityType|Cadeia de caracteres|O tipo de atividade que foi executada.|
-|activityOperationType|Cadeia de caracteres|O tipo de operação HTTP da atividade.|
-|activityResult|Cadeia de caracteres|O resultado da atividade.|
+|activityType|String|O tipo de atividade que foi executada.|
+|activityOperationType|String|O tipo de operação HTTP da atividade.|
+|activityResult|String|O resultado da atividade.|
 |correlationId|Guid|A ID da solicitação de cliente usada para correlacionar a atividade dentro do sistema.|
 |recursos|Coleção [auditResource](../resources/intune-auditing-auditresource.md)|Recursos em modificação.|
 |Ferramentas para desenvolvedores|Cadeia de caracteres|Categoria de auditoria.|

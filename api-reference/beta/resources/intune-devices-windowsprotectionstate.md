@@ -1,51 +1,51 @@
 ---
-title: tipo de recurso de windowsProtectionState
-description: Entidade de status de proteção do dispositivo.
-localization_priority: Normal
+title: tipo de recurso Windowsprotectionstate foi
+description: Entidade de status de proteção de dispositivo.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1ef6c86983475abc687055ac2322ba02fae27ecd
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: eebf798a41e5cbab27fab849cdead8a288a782e2
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29423584"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30148311"
 ---
-# <a name="windowsprotectionstate-resource-type"></a>tipo de recurso de windowsProtectionState
+# <a name="windowsprotectionstate-resource-type"></a>tipo de recurso Windowsprotectionstate foi
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Entidade de status de proteção do dispositivo.
+Entidade de status de proteção de dispositivo.
 
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Obter windowsProtectionState](../api/intune-devices-windowsprotectionstate-get.md)|[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)|Leia as propriedades e os relacionamentos do objeto [windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md) .|
-|[Atualizar windowsProtectionState](../api/intune-devices-windowsprotectionstate-update.md)|[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)|Atualize as propriedades de um objeto [windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md) .|
+|[Obter Windowsprotectionstate foi](../api/intune-devices-windowsprotectionstate-get.md)|[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)|Leia as propriedades e as relações do objeto [windowsprotectionstate foi](../resources/intune-devices-windowsprotectionstate.md) .|
+|[Atualizar Windowsprotectionstate foi](../api/intune-devices-windowsprotectionstate-update.md)|[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)|Atualiza as propriedades de um objeto [windowsprotectionstate foi](../resources/intune-devices-windowsprotectionstate.md) .|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo para o objeto de status de proteção do dispositivo. Este é o id do dispositivo do dispositivo|
-|malwareProtectionEnabled|Boolean|Anti-malware está habilitado ou não|
-|deviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|Estado do computador (como limpar ou verificação completa ou pendentes reinicialização etc.). Os possíveis valores são: `clean`, `fullScanPending`, `rebootPending`, `manualStepsPending`, `offlineScanPending`, `critical`.|
-|realTimeProtectionEnabled|Boolean|Proteção em tempo real está habilitada ou não?|
+|id|String|O identificador exclusivo do objeto de status de proteção de dispositivo. Esta é a ID do dispositivo|
+|malwareProtectionEnabled|Boolean|O anti-malware está habilitado ou não|
+|DeviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|Estado do computador (como verificação completa ou pendente ou reinicialização pendente, etc.). Os possíveis valores são: `clean`, `fullScanPending`, `rebootPending`, `manualStepsPending`, `offlineScanPending`, `critical`.|
+|realTimeProtectionEnabled|Boolean|A proteção em tempo real está habilitada ou não?|
 |networkInspectionSystemEnabled|Boolean|Sistema de inspeção de rede habilitado ou não?|
-|quickScanOverdue|Boolean|Verificação rápida vencidos ou não?|
-|fullScanOverdue|Boolean|Completos exame vencido ou não?|
+|quickScanOverdue|Boolean|Verificação rápida em atraso ou não?|
+|fullScanOverdue|Boolean|Verificação completa em atraso ou não?|
 |signatureUpdateOverdue|Boolean|Assinatura desatualizada ou não?|
-|rebootRequired|Boolean|Reinicialização necessária ou não?|
+|rebootRequired|Boolean|ReInicialização necessária ou não?|
 |fullScanRequired|Boolean|Verificação completa necessária ou não?|
-|engineVersion|String|Versão do mecanismo de proteção de ponto de extremidade atual|
+|engineVersion|String|Versão atual do mecanismo do Endpoint Protection|
 |signatureVersion|String|Versão atual de definições de malware|
-|antiMalwareVersion|String|Atual anti-malware versão|
-|lastQuickScanDateTime|DateTimeOffset|Última data/hora de verificação rápida|
-|lastFullScanDateTime|DateTimeOffset|Última data/hora de verificação rápida|
-|lastQuickScanSignatureVersion|String|Última versão de assinatura de verificação rápida|
-|lastFullScanSignatureVersion|String|Última versão de assinatura de verificação completa|
-|lastReportedDateTime|DateTimeOffset|Tempo de informado último status de integridade do dispositivo|
+|antiMalwareVersion|String|Versão Antimalware atual|
+|lastQuickScanDateTime|DateTimeOffset|Data e hora da última verificação rápida|
+|lastFullScanDateTime|DateTimeOffset|Data e hora da última verificação rápida|
+|lastQuickScanSignatureVersion|String|Versão da última assinatura de verificação rápida|
+|lastFullScanSignatureVersion|String|Versão da última assinatura de verificação completa|
+|lastReportedDateTime|DateTimeOffset|Hora do último status de integridade do dispositivo relatado|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

@@ -4,25 +4,26 @@ description: Cria um novo objeto deviceCategory.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 709217670f946d92135c15b13b2c825703337daa
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 76c1d0c8b22484b3a35d0db49c5a4e578e656880
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27950449"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30255168"
 ---
 # <a name="create-devicecategory"></a>Criar deviceCategory
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Cria um novo objeto [deviceCategory](../resources/intune-shared-devicecategory.md).
+
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
 |Delegado (conta corporativa ou de estudante)||
-| &nbsp;&nbsp; **Onboarding** | DeviceManagementManaged Devices.ReadWrite.All|
+| &nbsp; &nbsp; **Integração** | Dispositivos DeviceManagementManaged. ReadWrite. All|
 |Delegado (conta pessoal da Microsoft)|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
@@ -48,9 +49,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceCa
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo da categoria do dispositivo. Somente leitura.|
-|**Inclusão**|
-|displayName|Cadeia de caracteres|Nome de exibição da categoria de dispositivo.|
+|id|String|O identificador exclusivo da categoria do dispositivo. Somente leitura.|
+|**Integração**|
+|displayName|String|Nome de exibição da categoria de dispositivo.|
 |description|Cadeia de caracteres|Descrição opcional da categoria do dispositivo.|
 
 

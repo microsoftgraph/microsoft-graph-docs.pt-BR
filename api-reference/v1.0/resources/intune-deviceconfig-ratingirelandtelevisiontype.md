@@ -1,31 +1,32 @@
 ---
-title: tipo de enum ratingIrelandTelevisionType
+title: tipo de enumeração ratingIrelandTelevisionType
 description: Rótulos de classificação de conteúdo de TV na Irlanda
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: eb03562a32fa9a8d41ea0d68cf7cd5cf5416ac0e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 5730f3be21aa18465ab7829b49dc098c122329b9
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27967305"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30252620"
 ---
-# <a name="ratingirelandtelevisiontype-enum-type"></a>tipo de enum ratingIrelandTelevisionType
+# <a name="ratingirelandtelevisiontype-enum-type"></a>tipo de enumeração ratingIrelandTelevisionType
 
-> **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Rótulos de classificação de conteúdo de TV na Irlanda
+
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|allAllowed|0|Valor padrão, para permitir que todos os TV mostra conteúdo|
-|allBlocked|1|Não permitir que qualquer TV mostra conteúdo|
-|geral|2|A classificação de GA é adequada para todas as audiências|
-|children|3|A classificação CH é adequada para filhos|
-|youngAdults|4|A classificação YA é adequada para o público adolescente|
-|parentalSupervision|5|A classificação de PS convida pais e responsáveis a considerar o acesso dos filhos de restrição|
-|implementação avançada|6|A classificação MA é adequada para adultos|
+|Permitido|,0|Valor padrão, permitir todos os programas de TV|
+|Bloqueado|1|Não permitir que qualquer TV mostre conteúdo|
+|geral|duas|A classificação GA é adequada para todos os públicos|
+|children|3D|A classificação CH é adequada para crianças|
+|youngAdults|quatro|A classificação de YA é adequada para a audiência Teenage|
+|parentalSupervision|0,5|A classificação de PS convida os pais e os guardiões para considerar o acesso de crianças|
+|completa|6|A classificação MA é adequada para adultos|
 
 
 

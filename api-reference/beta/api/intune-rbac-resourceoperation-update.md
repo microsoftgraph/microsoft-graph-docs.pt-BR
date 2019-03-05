@@ -1,21 +1,21 @@
 ---
 title: Atualizar resourceOperation
 description: Atualizar as propriedades de um objeto resourceOperation.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 266d45150c5633a66c5996b5cb9285f97ecaf6bb
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 9e4e7ab1f3edd0de4e36eb8c051b4cc02306f707
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29411138"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30156746"
 ---
 # <a name="update-resourceoperation"></a>Atualizar resourceOperation
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
 Atualizar as propriedades de um objeto [resourceOperation](../resources/intune-rbac-resourceoperation.md).
 
@@ -50,12 +50,12 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [resourceOperati
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Chave da operação de recurso. Somente leitura, gerada automaticamente.|
-|recurso|String|Categoria de recurso ao qual esta operação pertence.|
+|id|String|Chave da operação de recurso. Somente leitura, gerada automaticamente.|
+|recurso|String|Categoria de recurso à qual essa operação pertence.|
 |resourceName|Cadeia de caracteres|Nome do recurso em que essa operação é executada.|
-|actionName|Cadeia de caracteres|Tipo de ação em que essa operação será executada. O actionName deve ser conciso e limitado ao mínimo de palavras possível.|
+|actionName|String|Tipo de ação em que essa operação será executada. O actionName deve ser conciso e limitado ao mínimo de palavras possível.|
 |description|Cadeia de caracteres|Descrição da operação de recurso. A descrição é usada no texto exibido com o passar o mouse para a operação quando exibida no Portal do Azure.|
-|enabledForScopeValidation|Boolean|Determina se a permissão é validada para escopos definidos por atribuição de função.|
+|enabledForScopeValidation|Boolean|Determina se a permissão é validada para os esCopos definidos por atribuição de função.|
 
 
 

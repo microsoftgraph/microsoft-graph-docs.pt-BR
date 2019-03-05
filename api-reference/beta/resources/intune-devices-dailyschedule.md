@@ -1,23 +1,23 @@
 ---
-title: tipo de recurso de dailySchedule
-description: Agenda diária de execução de um script de gerenciamento de dispositivo recorrente.
-localization_priority: Normal
+title: tipo de recurso dailySchedule
+description: Agenda de execução diária de um script de gerenciamento de dispositivo recorrente.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c4cbe48aecf3fe561becad4734f7de0b5f68ffa0
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 310d9a4dbd995dfc162591547a40ace8c596f54b
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415247"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30152658"
 ---
-# <a name="dailyschedule-resource-type"></a>tipo de recurso de dailySchedule
+# <a name="dailyschedule-resource-type"></a>tipo de recurso dailySchedule
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Agenda diária de execução de um script de gerenciamento de dispositivo recorrente.
+Agenda de execução diária de um script de gerenciamento de dispositivo recorrente.
 
 
 Herda de [runSchedule](../resources/intune-devices-runschedule.md)
@@ -25,7 +25,7 @@ Herda de [runSchedule](../resources/intune-devices-runschedule.md)
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|interval|Int32|Intervalo de número de dias|
+|interval|Int32|Intervalo em número de dias|
 
 ## <a name="relationships"></a>Relações
 Nenhum

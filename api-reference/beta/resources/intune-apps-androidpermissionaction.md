@@ -1,29 +1,29 @@
 ---
-title: tipo de recurso de androidPermissionAction
-description: Mapeamento entre uma permissão de app Android e a ação Android deve ser adotada quando essa permissão é solicitada.
-localization_priority: Normal
+title: tipo de recurso androidPermissionAction
+description: O mapeamento entre uma permissão de aplicativo Android e a ação que o Android deve executar quando essa permissão é solicitada.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 62355c3427083df09963e316f3b6b3c104a8662f
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e00bb351f2eff093dee21cb393ba622bc5e29ea9
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425628"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30161569"
 ---
-# <a name="androidpermissionaction-resource-type"></a>tipo de recurso de androidPermissionAction
+# <a name="androidpermissionaction-resource-type"></a>tipo de recurso androidPermissionAction
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Mapeamento entre uma permissão de app Android e a ação Android deve ser adotada quando essa permissão é solicitada.
+O mapeamento entre uma permissão de aplicativo Android e a ação que o Android deve executar quando essa permissão é solicitada.
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|permissão|String|String de permissão Android, definido na documentação oficial Android.  Exemplo 'android.permission.READ_CONTACTS'.|
-|action|[androidPermissionActionType](../resources/intune-apps-androidpermissionactiontype.md)|Tipo de ação de permissão Android. Os valores possíveis são: `prompt`, `autoGrant`, `autoDeny`.|
+|autorização|String|Cadeia de caracteres de permissão Android, definida na documentação oficial do Android.  Exemplo ' Android. Permission. READ_CONTACTS '.|
+|action|[androidPermissionActionType](../resources/intune-apps-androidpermissionactiontype.md)|Tipo de ação de permissão de Android. Os valores possíveis são: `prompt`, `autoGrant`, `autoDeny`.|
 
 ## <a name="relationships"></a>Relacionamentos
 Nenhum

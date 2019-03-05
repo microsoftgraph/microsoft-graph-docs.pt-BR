@@ -1,33 +1,33 @@
 ---
-title: tipo de enum win32LobAppRegistryDetectionType
-description: Contém todos os suporte para o tipo de detecção de dados de registro.
-localization_priority: Normal
+title: tipo de enumeração win32LobAppRegistryDetectionType
+description: Contém todo o tipo de detecção de dados de registro com suporte.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 188f206e42b55e0c2cc2f8b6ed831f19a4b2052a
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 62028eefbfa85bceb669cbe8cc4bee8261d5837e
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29411082"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30158454"
 ---
-# <a name="win32lobappregistrydetectiontype-enum-type"></a>tipo de enum win32LobAppRegistryDetectionType
+# <a name="win32lobappregistrydetectiontype-enum-type"></a>tipo de enumeração win32LobAppRegistryDetectionType
 
-> **Importante:** APIs sob a versão /beta no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
-> **Observação:** A API do Microsoft Graph para Intune requer uma [licença de Intune ativa](https://go.microsoft.com/fwlink/?linkid=839381) para o inquilino.
+> **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Contém todos os suporte para o tipo de detecção de dados de registro.
+Contém todo o tipo de detecção de dados de registro com suporte.
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|não-configuradas|0|Não configurado.|
-|existe|1|Os valores ou chaves do registro especificado existe.|
-|doesNotExist|2|Os valores ou chaves do Registro especificada não existem.|
-|string|3|Tipo de valor de cadeia de caracteres.|
-|inteiro|4|Tipo de valor inteiro.|
-|version|5|Tipo de valor de versão.|
+|notConfigured|,0|Não configurado.|
+|houver|1|A chave ou o valor do registro especificado existe.|
+|doesNotExist|duas|A chave ou o valor do registro especificado não existe.|
+|string|3D|Tipo de valor de cadeia de caracteres.|
+|inteiro|quatro|Tipo de valor inteiro.|
+|version|0,5|Tipo de valor de versão.|
 
 
 
