@@ -96,7 +96,7 @@ items:
           - name: Arquivos
             href: onedrive-concept-overview.md
             displayName: 'OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint'
-          - name: Finanças
+          - name: Finanças (visualização)
             href: dynamics-business-central-concept-overview.md
             displayname: 'Dynamics, Dynamics 365 Business Central'
           - name: Identidade e acesso
@@ -169,7 +169,7 @@ items:
                     href: security-splunk-siemintegration.md
                   - name: QRadar
                     href: security-qradar-siemintegration.md
-              - name: Parceria com a API de segurança
+              - name: Oportunidades de parceria
                 href: security-partner-overview.md
           - name: Sites e listas
             href: sharepoint-concept-overview.md
