@@ -3,12 +3,12 @@ title: 'Referência de permissões do Microsoft Graph '
 description: O Microsoft Graph expõe as permissões granulares que controlam o acesso que os aplicativos têm aos recursos, como email, grupos e usuários. Como desenvolvedor, você decide quais permissões para o Microsoft Graph seu aplicativo deverá solicitar.
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: cf5639e09977b052d0c5a9b56c535fdaf66789fa
-ms.sourcegitcommit: 98c3a9c791f82e5fab504f51f49a6835311381c6
+ms.openlocfilehash: 7bdd5b9ca02a05676a2b745b6087acfb39cf3304
+ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30314620"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "30364560"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph 
 O Microsoft Graph expõe as permissões granulares que controlam o acesso que os aplicativos têm aos recursos, como email, grupos e usuários. Como desenvolvedor, você decide quais permissões para o Microsoft Graph seu aplicativo deverá solicitar. Quando um usuário entra no aplicativo, ele, ou, em alguns casos, um administrador, tem a opção de consentir essas permissões. Se o usuário consentir, seu aplicativo receberá acesso aos recursos e APIs que solicitados. Para aplicativos que não aceitam usuários conectados, as permissões podem ser previamente consentidas pelo administrador quando o aplicativo é instalado ou durante a inscrição. 
@@ -890,6 +890,9 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _SecurityEvents.Read.All_        |  Ler os eventos de segurança da organização | Permite ao aplicativo ler os eventos de segurança da sua organização em nome do usuário conectado. | Sim  | Não |
 | _SecurityEvents.ReadWrite.All_   | Ler e atualizar os eventos de segurança da organização | Permite ao aplicativo ler os eventos de segurança da sua organização em nome do usuário conectado. Também permite ao aplicativo atualizar as propriedades editáveis em eventos de segurança em nome do usuário conectado. | Sim  | Não |
+| _SecurityActions.Read.All_        |  Ler as ações de segurança da organização | Permite que o aplicativo leia as ações de segurança da sua organização em nome do usuário conectado. | Sim  | Não |
+| _SecurityActions.ReadWrite.All_   | Ler e atualizar as ações de segurança da organização | Permite que o aplicativo leia as ações de segurança da sua organização em nome do usuário conectado.  | Sim  | Não |
+| _ThreatIndicators.ReadWrite.OwnedBy_   | Gerenciar indicadores de ameaças que este aplicativo cria ou é proprietário | Permite que o aplicativo leia as ações de segurança da sua organização em nome do usuário conectado.  | Sim  | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
@@ -897,6 +900,9 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 |:----------------|:------------------|:-------------|:-----------------------|
 | _SecurityEvents.Read.All_        |  Ler os eventos de segurança da organização | Permite ao aplicativo ler os eventos de segurança da sua organização. | Sim  |
 | _SecurityEvents.ReadWrite.All_   | Ler e atualizar os eventos de segurança da organização | Permite ao aplicativo ler os eventos de segurança da sua organização. Também permite ao aplicativo atualizar as propriedades editáveis em eventos de segurança. | Sim  |
+| _SecurityActions.Read.All_        |  Ler os eventos de segurança da organização | Permite que o aplicativo leia os eventos de segurança da sua organização. | Sim  |
+| _SecurityActions.ReadWrite.All_   | Criar e ler ações de segurança da sua organização | Permite que o aplicativo leia ou crie ações de segurança, sem um usuário ter entrado. | Sim  |
+| _ThreatIndicators.ReadWrite.OwnedBy_   | Gerenciar indicadores de ameaças que este aplicativo cria ou é proprietário | Permite que o aplicativo crie indicadores de ameaças e gerencie totalmente esses indicadores de ameaças (ler, atualizar e excluir) sem um usuário ter entrado.  Ele não atualizará os indicadores de ameaças que não possui. | Sim  |
 
 ### <a name="remarks"></a>Comentários
 

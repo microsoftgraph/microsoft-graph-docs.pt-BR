@@ -4,45 +4,65 @@ description: " > **Importante:** as APIs na versão /beta no Microsoft Graph est
 localization_priority: Priority
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 042c63cfee833a1f9c7493a9e35a6bbb8eb2fbaa
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: a50a7a29f377bbb76c6dee8d8e58a07d258156b0
+ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643084"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "30364567"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>Usar a API de Segurança do Microsoft Graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A API de Segurança do Microsoft Graph fornece uma interface unificada e um esquema para integrar soluções de segurança da Microsoft e parceiros de ecossistema. Isso permite aos clientes agilizar as operações de segurança e a se proteger melhor contra as crescentes ameaças cibernéticas. A API de Segurança do Microsoft Graph pode ser usada como um serviço de agregação de segurança federado para enviar consultas a todos os provedores de segurança participantes e obter respostas agregadas. Use a API de Segurança do Microsoft Graph para compilar aplicativos que:
+A API de Segurança do Microsoft Graph fornece uma interface unificada e um esquema para integrar soluções de segurança da Microsoft e parceiros de ecossistema. Isso permite aos clientes agilizar as operações de segurança e a se proteger melhor contra as crescentes ameaças cibernéticas. A API de segurança do Microsoft Graph consulta todos os provedores de segurança integrados e agrega respostas. Use a API de Segurança do Microsoft Graph para compilar aplicativos que:
 
 - Consolidem e correlacionem alertas de segurança de várias fontes
 - Desbloqueiem dados contextuais para informar investigações
-- Automatizem as operações de segurança para maior eficiência
-- Forneçam visibilidade a dados de segurança para permitir o gerenciamento proativo de riscos
+- Automatizar tarefas de segurança, processos de negócios, fluxos de trabalho e relatórios
+- Enviar indicadores de ameaças para produtos da Microsoft para detecções personalizados
+- Usar ações em resposta às novas ameaças
+- Dê visibilidade aos dados de segurança para permitir o gerenciamento proativo dos riscos
 
 A API de Segurança do Microsoft Graph inclui as entidades principais a seguir.
 
 ## <a name="alerts"></a>Alertas
 
-Os alertas são possíveis problemas de segurança no locatário de um cliente identificado pela Microsoft ou por soluções de segurança de parceiros e são sinalizados para ação ou notificação. Com a entidade de [alertas](alert.md) de Segurança do Microsoft Graph, é  possível unificar e simplificar os problemas de segurança em todas as soluções integradas. Isso também permite que os aplicativos correlacionem alertas e contextos para melhorar a resposta e a proteção contra ameaças também. Eles desbloqueiam as eficiências operacionais de segurança ao reduzir o tempo de investigação e de resolução de incidentes. Com o recurso de atualização de alertas, é possível sincronizar o status de alertas específicos em diferentes produtos e serviços de segurança que estão integrados à API de Segurança do Microsoft Graph atualizando sua entidade de [alertas](alert.md).
+Os alertas são possíveis problemas de segurança no locatário de um cliente identificado pela Microsoft ou por soluções de segurança de parceiros identificadas e sinalizados para ação ou notificação. Com a entidade de [alertas](alert.md) de Segurança do Microsoft Graph, é possível unificar e simplificar o gerenciamento dos problemas de segurança de todas as soluções integradas. Isso também permite que os aplicativos correlacionem alertas e contextos para melhorar a resposta e a proteção contra ameaças também. Com o recurso de atualização de alertas, é possível sincronizar o status de alertas específicos em diferentes produtos e serviços de segurança que estão integrados à API de Segurança do Microsoft Graph atualizando sua entidade de [alertas](alert.md).
 
-As soluções integradas de Segurança do Microsoft Graph receberão alertas dos seguintes provedores de segurança:
+Alertas dos seguintes provedores estão disponíveis por meio da API de segurança do Microsoft Graph. O suporte para alertas GET, alertas PATCH (as atualizações estão disponíveis por meio da API de segurança do Microsoft Graph, mas não podem ser expostas no experiência de gerenciamento do provedor), e assinatura (via webhooks) é indicado na tabela a seguir.
 
-- [Central de Segurança do Azure](https://docs.microsoft.com/azure/security-center/security-center-alerts-type)
-- [Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/playbook)
-- [Segurança no Aplicativo da Microsoft Cloud](https://docs.microsoft.com/cloud-app-security/monitor-alerts )
-- [Proteção Avançada contra Ameaças do Windows Defender](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/attack-simulations-windows-defender-advanced-threat-protection)
-- [Proteção de Informações do Azure](https://docs.microsoft.com/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-a-security-provider-for-microsoft-graph-securityhow-does-this-work-and-what-alerts-will-i-receive) **(versão prévia)**
-- Microsoft Intune **(versão prévia privada)**
-- Office 365 **(em breve)**
-- Proteção Avançada contra Ameaças do Azure **(em breve)**
-- Soluções de parceiros, como a Estrutura de Aplicativo da Palo Alto Networks
+| Provedor de segurança | Alerta GET| Alerta PATCH| Assinar o alerta|
+|:------------------|:---------|:-----------|:------------------|
+|[Central de Segurança do Azure](https://docs.microsoft.com/azure/security-center/security-center-alerts-type)| &#x2713; | &#x2713; | &#x2713; |
+|[Proteção de identidade do Azure Active Directory](https://docs.microsoft.com/azure/active-directory/identity-protection/playbook) | &#x2713; | &#x2713; | &#x2713; |
+| [Segurança no Aplicativo da Microsoft Cloud](https://docs.microsoft.com/cloud-app-security/monitor-alerts) | &#x2713; | &#x2713; | &#x2713; |
+|[Proteção Avançada contra Ameaças do Windows Defender](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/attack-simulations-windows-defender-advanced-threat-protection)| &#x2713; | &#x2713; | [Problema de arquivo](https://github.com/microsoftgraph/security-api-solutions/issues/new) |
+|[Proteção Avançada contra Ameaças do Azure](https://docs.microsoft.com/azure-advanced-threat-protection/understanding-security-alerts#security-alert-categories)| &#x2713; | [Problema de arquivo](https://github.com/microsoftgraph/security-api-solutions/issues/new) | [Problema de arquivo](https://github.com/microsoftgraph/security-api-solutions/issues/new) |
+|Office 365 </br> <li> [Padrão](https://docs.microsoft.com/pt-BR/office365/securitycompliance/alert-policies#default-alert-policies)</li> <li>[Segurança no Aplicativo na Nuvem](https://docs.microsoft.com/pt-BR/office365/securitycompliance/anomaly-detection-policies-in-ocas)</li> | &#x2713; | [Problema de arquivo](https://github.com/microsoftgraph/security-api-solutions/issues/new) | [Problema de arquivo](https://github.com/microsoftgraph/security-api-solutions/issues/new) |
+|[Proteção de Informações do Azure](https://docs.microsoft.com/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-a-security-provider-for-microsoft-graph-securityhow-does-this-work-and-what-alerts-will-i-receive) **(visualização)**| &#x2713; | &#x2713; | &#x2713; |
+|[Azure Sentinel](https://docs.microsoft.com/azure/sentinel/quickstart-get-visibility) **(visualização)**| &#x2713; | [Problema de arquivo](https://github.com/microsoftgraph/security-api-solutions/issues/new) | [Problema de arquivo](https://github.com/microsoftgraph/security-api-solutions/issues/new) |
+|[Palo Alto Networks](https://docs.paloaltonetworks.com/pan-os/9-0/pan-os-web-interface-help/monitor/monitor-logs/log-types.html)| &#x2713; | [Problema de arquivo](https://github.com/microsoftgraph/security-api-solutions/issues/new) | [Problema de arquivo](https://github.com/microsoftgraph/security-api-solutions/issues/new) |
+> **Observação:** Novos provedores estão se integrando continuamente ao ecossistema de Segurança do Microsoft Graph. Para requerer o suporte aos novos provedores ou suporte estendido para os provedores existentes, [registre o problema no repositório GitHub de segurança do Microsoft Graph](https://github.com/microsoftgraph/security-api-solutions/issues/new).
 
-> **Observação:** novos provedores estão se integrando continuamente ao ecossistema de Segurança do Microsoft Graph.
+## <a name="threat-indicators-preview"></a>Indicadores de ameaças (visualização)
 
-## <a name="secure-score-preview"></a>Classificação de Segurança (versão prévia)
+Indicadores de ameaças, também conhecidos como indicadores de compromisso (IoCs), representam dados sobre ameaças conhecidas, como arquivos mal-intencionados, URLs, domínios e endereços IP. Os clientes podem gerar indicadores através da coleta interna de inteligência contra ameaças ou adquirir indicadores de comunidades de inteligência contra ameaças, feeds licenciados e outras fontes. Esses indicadores, em seguida, são usados nas várias ferramentas de segurança para proteger contra ameaças relacionadas.
+
+A entidade de segurança do Microsoft Graph [tiIndicators](tiindicator.md) permite que os clientes alimentem os indicadores de ameaças nas soluções de segurança da Microsoft para habilitar ações em bloco e de alerta em atividades mal-intencionados ou permitir ações de supressão para determinados indicadores não relevantes para a organização. Quando você envia indicadores, a solução Microsoft que utilizará a indicação e a ação a ser tomada sobre o indicador são especificadas.
+
+Você pode integrar a entidade [tiIndicator](tiindicator.md) em seu aplicativo ou use uma das seguintes plataformas integradas de inteligência contra ameaças (DICA):
+
+- [Compartilhamento de inteligência contra Ameaças Palo Alto Networks](https://www.paloaltonetworks.com/products/secure-the-network/subscriptions/minemeld)
+- [Plataforma de inteligência contra ameaças de Código Aberto MISP](http://www.misp-project.org/) disponíveis em [exemplo IT](https://aka.ms/tipmispsample)
+
+Indicadores de ameaças enviados por meio da API de segurança do Microsoft Graph estão disponíveis no [Azure Sentinel](https://docs.microsoft.com/azure/sentinel/overview) (Visualizar), que permite que você correlacione indicadores de ameaças com dados de log para obter alertas de atividade mal-intencionada. Suporte a outros serviços de segurança da Microsoft, incluindo Firewall do Azure, estará disponível em breve.
+
+## <a name="security-actions-preview"></a>Ações de Segurança (visualização)
+
+Executar uma ação imediata proteger contra ameaças usando a entidade [securityAction](securityaction.md)de Segurança do Microsoft Graph. Quando um analista de segurança descobre um indicador novo, como um arquivo mal-intencionado, URL, domínio ou endereço IP, a proteção pode ser habilitada instantaneamente em suas soluções de segurança da Microsoft. Usar uma ação específica do provedor, ver todas as ações executadas e cancelar uma ação, se necessário. Experimente as ações de segurança com o [ATP do Windows Defender](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) (em breve) para bloquear as atividades mal-intencionados seus pontos de extremidade do Windows usando as propriedades vistas nos alertas ou identificadas durante as investigações.
+
+## <a name="secure-score-preview"></a>Classificação de Segurança (visualização)
 
 A [Microsoft Secure Score](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Office-365-Secure-Score-is-now-Microsoft-Secure-Score/ba-p/182358) é uma solução de análise da segurança que fornece visibilidade ao seu portfólio de segurança e mostra como melhorá-lo. Com uma única classificação, é possível entender melhor o que você fez para reduzir o risco em soluções da Microsoft. Você pode também comparar sua classificação com outras organizações e ver como tem sido sua tendência ao longo do tempo. As entidades [secureScore](securescores.md) e [secureScoreControlProfiles](securescorecontrolprofiles.md) de Segurança do Microsoft Graph ajudam você a equilibrar a segurança e a produtividade de que sua organização precisa, permitindo também o mix adequado de recursos de segurança. Você também pode projetar qual seria sua classificação depois de adotar recursos de segurança.
 
@@ -53,10 +73,20 @@ A seguir, há algumas das solicitações mais populares para trabalhar com a API
 | **Casos de uso**   | **Recursos REST** | **Experimentar no Explorador do Graph** |
 |:---------------|:--------|:----------|
 | Listar alertas | [List alerts](../api/alert-list.md) | [https://graph.microsoft.com/beta/security/alerts](https://developer.microsoft.com/graph/graph-explorer?request=security/alerts&method=GET&version=beta&GraphUrl=https://graph.microsoft.com) |
-| Atualizar alertas | [Update alert](../api/alert-update.md) | [https://graph.microsoft.com/beta/security/alerts/{alert-id}](https://developer.microsoft.com/graph/graph-explorer?request=security/alerts/{alert-id}&method=PATCH&version=beta&GraphUrl=https://graph.microsoft.com) |
+| Atualizar alertas | [Atualizar alertas](../api/alert-update.md) </br> [Atualizar vários alertas](../api/alert-updatealerts.md) | [https://graph.microsoft.com/beta/security/alerts/{alert-id}](https://developer.microsoft.com/graph/graph-explorer?request=security/alerts/{alert-id}&method=PATCH&version=beta&GraphUrl=https://graph.microsoft.com) </br> [https://graph.microsoft.com/beta/security/alerts/updateAlerts](https://developer.microsoft.com/graph/graph-explorer?request=security/alerts/updateAlerts&method=POST&version=beta&GraphUrl=https://graph.microsoft.com) |
+| Obter a ação de segurança | [Obter ação segurança](../api/securityaction-get.md) (visualização)|[https://graph.microsoft.com/beta/security/securityActions/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/securityActions/{id}&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
+|Listar ações de segurança| [Listar ações de segurança](../api/securityactions-list.md) (visualização)|[https://graph.microsoft.com/beta/security/securityActions](https://developer.microsoft.com/graph/graph-explorer?request=security/securityActions&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
+|Criar ações de segurança|[Criar ações segurança](../api/securityactions-post.md) (visualização)|[https://graph.microsoft.com/beta/security/securityActions](https://developer.microsoft.com/graph/graph-explorer?request=security/securityActions&method=POST&version=beta&GraphUrl=https://graph.microsoft.com)|
+|Cancelar ação de segurança|[Cancelar ações de segurança](../api/securityaction-cancelsecurityaction.md) (visualização)| [https://graph.microsoft.com/beta/security/securityActions/{id}/cancelSecurityAction](https://developer.microsoft.com/graph/graph-explorer?request=security/securityActions/{id}/cancelSecurityAction&method=POST&version=beta&GraphUrl=https://graph.microsoft.com) |
+|Obter tiIndicator|[Obter tiIndicator](../api/tiindicator-get.md) (visualização)| [https://graph.microsoft.com/beta/security/tiIndicators/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators/{id}&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
+|Listar indicadores IT | [Listar tiIndicators](../api/tiindicators-list.md) (visualização) | [https://graph.microsoft.com/beta/security/tiIndicators](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
+|Criar um indicador IT|[Criar tiIndicator](../api/tiindicators-post.md) (visualização)|[https://graph.microsoft.com/beta/security/tiIndicators](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators&method=POST&version=beta&GraphUrl=https://graph.microsoft.com)|
+|Enviar indicadores IT|[Enviar tiIndicators](../api/tiindicator-submittiindicators.md) (visualização)| [https://graph.microsoft.com/beta/security/tiIndicators/submitTiIndicators](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators/submitTiIndicators&method=POST&version=beta&GraphUrl=https://graph.microsoft.com) |
+|Indicadores de atualização IT|[Atualizar tiIndicator](../api/tiindicator-update.md) (visualização) </br>[Atualizar várias tiIndicators](../api/tiindicator-updatetiindicators.md) (visualização)| [https://graph.microsoft.com/beta/security/tiIndicators/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators/{id}&method=POST&version=beta&GraphUrl=https://graph.microsoft.com) </br>[https://graph.microsoft.com/beta/security/tiIndicators/updateTiIndicators](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators/updateTiIndicators&method=POST&version=beta&GraphUrl=https://graph.microsoft.com)|
+|Excluir indicadores IT|[Excluir tiIndicator](../api/tiindicator-delete.md) (visualização) </br>[Excluir vários tiIndicators](../api/tiindicator-deletetiindicators.md) (visualização) </br>[Excluir tiIndicator by externalId](../api/tiindicator-deletetiindicatorsbyexternalid.md) (visualização)| EXCLUIR </br>[https://graph.microsoft.com/beta/security/tiIndicators/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators/{id}&method=DELETE&version=beta&GraphUrl=https://graph.microsoft.com) </br>POSTAR</br>[https://graph.microsoft.com/beta/security/tiIndicators/deleteTiIndicators](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators/deleteTiIndicators&method=POST&version=beta&GraphUrl=https://graph.microsoft.com)</br>POSTAR</br>[https://graph.microsoft.com/beta/security/tiIndicators/deleteTiIndicatorsByExternalId](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators/deleteTiIndicatorsByExternalId&method=POST&version=beta&GraphUrl=https://graph.microsoft.com)|
 |Listar classificações de segurança|[List secureScores](../api/securescores-list.md) (versão prévia)|[https://graph.microsoft.com/beta/security/secureScores](https://developer.microsoft.com/graph/graph-explorer?request=security/secureScores&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
 |Listar perfis de controle da classificação de segurança|[List secureScoreControlProfiles](../api/securescorecontrolprofiles-list.md) (versão prévia)|[https://graph.microsoft.com/beta/security/secureScoreControlProfiles](https://developer.microsoft.com/graph/graph-explorer?request=security/secureScoreControlProfiles&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
-|Atualizar perfis de controle da classificação de segurança|[Update secureScoreControlProfiles](../api/securescorecontrolprofiles-update.md) (versão prévia)|[https://graph.microsoft.com/beta/security/secureScoreControlProfiles/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/secureScoreControlProfiles/{id}&method=PATCH&version=beta&GraphUrl=https://graph.microsoft.com)|
+|Atualizar perfis de controle da classificação de segurança|[Atualizar secureScoreControlProfiles](../api/securescorecontrolprofiles-update.md) (visualização)|[https://graph.microsoft.com/beta/security/secureScoreControlProfiles/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/secureScoreControlProfiles/{id}&method=PATCH&version=beta&GraphUrl=https://graph.microsoft.com)|
 
 Você pode usar o Microsoft Graph [webhooks](/graph/webhooks) para assinar e receber notificações sobre as atualizações de entidades de Segurança do Microsoft Graph.
 
@@ -64,7 +94,7 @@ Você pode usar o Microsoft Graph [webhooks](/graph/webhooks) para assinar e rec
 
 A API de Segurança do Microsoft Graph pode abrir novas formas de interagir com soluções de segurança diferentes da Microsoft e de parceiros. Siga estas etapas para iniciar:
 
-- Detalhe [alerts](alert.md), [secureScore](securescores.md) (versão prévia) e [secureScoreControlProfiles](securescorecontrolprofiles.md) (versão prévia).
+- Detalhar [alertas](alert.md), [tiIndicator](tiindicator.md) (visualização) [securityAction](securityaction.md) (visualização) [secureScore](securescores.md) (visualização) e [secureScoreControlProfiles](securescorecontrolprofiles.md) (visualização).
 - Experimente a API no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer). Em **Consultas de Exemplo**, escolha **mostrar mais amostras** e defina a categoria Segurança como **on**.
 - Experimente [assinar e receber notificações](/graph/webhooks) sobre alterações de entidade.
 
@@ -72,11 +102,19 @@ Precisa de mais ideias? Veja [como alguns de nossos parceiros usam o Microsoft G
 
 ## <a name="see-also"></a>Confira também
 
-Codifique e contribua com esses exemplos da API de Segurança do Microsoft Graph:
+[Codifique e contribua](https://github.com/microsoftgraph/security-api-solutions/blob/master/CONTRIBUTING.md) com esses exemplos da API de Segurança do Microsoft Graph:
 
-- [Amostra do ASP.NET (C#)](https://github.com/microsoftgraph/aspnet-security-api-sample)
+- [Exemplo do ASP.NET (C#)](https://github.com/microsoftgraph/aspnet-security-api-sample)
 - [Amostra do Python](https://github.com/microsoftgraph/python-security-rest-sample)
-- [Amostra do Node.js (JavaScript)](https://github.com/microsoftgraph/nodejs-security-sample)
+- [Exemplo do Node.js (JavaScript)](https://github.com/microsoftgraph/nodejs-security-sample)
+- [Exemplo do PowerShell](https://aka.ms/graphsecuritypowershellsample)
+- [Outros exemplos ou contribuir com um novo exemplo](https://aka.ms/graphsecurityapicode)
+
+Explore outras opções para se conectar com a API de segurança da Microsoft Graph:
+
+- [Conectores de segurança do Microsoft Graph para Aplicativos de Lógica, Flow e PowerApps](https://aka.ms/graphsecurityconnectors)
+- [Conector de segurança do Microsoft Graph do Power BI](https://aka.ms/graphsecuritypowerbiconnectordoc)
+- [Exemplos de bloco de anotações Jupyter](https://aka.ms/graphsecurityjupyternotebooks)
 
 Participe da comunidade:
 
