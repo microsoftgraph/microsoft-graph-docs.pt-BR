@@ -4,12 +4,12 @@ description: Representa uma conta de usuário do Azure AD. Herda de directoryObj
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5b9d3def25d4039b1c5c7efd520671333c69ae55
-ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
+ms.openlocfilehash: d0581afe678fd17d50f669bed281d1f0a1e53998
+ms.sourcegitcommit: 159cf5aaa39d3721d96d3fd800f6a8b91159f74d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "30057075"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30379553"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -105,6 +105,7 @@ Esse recurso permite:
 |hireDate|DateTimeOffset|A data de contratação do usuário. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |id|String|O identificador exclusivo do usuário. Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura.|
 |interests|Coleção de cadeias de caracteres|Uma lista para o usuário descrever os interesses dele.|
+|isResourceAccount|Booliano| **Verdadeiro** se o usuário é uma conta de recursos; caso contrário, **falso**. O valor nulo deve ser considerado **falso**.|
 |jobTitle|String|O cargo do usuário. Oferece suporte a $filter.|
 |legalAgeGroupClassification|String| Usado por aplicativos empresariais para determinar a faixa etária legal do usuário. Essa propriedade é somente leitura e calculada com base nas propriedades `ageGroup` e `consentProvidedForMinor`. Valores permitidos: `null`, `minorWithOutParentalConsent`, `minorWithParentalConsent`, `minorNoParentalConsentRequired`, `notAdult` e `adult`. Confira as [definições de propriedades da faixa etária legal](#legal-age-group-property-definitions) para obter mais informações.|
 |licenseAssignmentStates|Coleção [licenseAssignmentState](licenseassignmentstate.md)|Estado das atribuições de licenças para esse usuário. Somente leitura.|
@@ -283,6 +284,7 @@ Veja a seguir uma representação JSON do recurso
   "hireDate": "String (timestamp)",
   "id": "string (identifier)",
   "interests": ["string"],
+  "isResourceAccount": false,
   "jobTitle": "string",
   "legalAgeGroupClassification": "string",
   "licenseAssignmentStates": [{"@odata.type": "microsoft.graph.licenseAssignmentState"}],

@@ -4,12 +4,12 @@ description: Representa uma conta de usuário do Azure AD. Herda de directoryObj
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 735ed7688dec1ef8cd79d9590981d0c3793ea996
-ms.sourcegitcommit: d91ca408bae7842ea4d1d94b49594fd82a32e0c9
+ms.openlocfilehash: 3d102e28bc04b6a2c2f8635e28f94e591c003bf5
+ms.sourcegitcommit: 159cf5aaa39d3721d96d3fd800f6a8b91159f74d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "29745563"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30379532"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -92,6 +92,7 @@ Esse recurso permite:
 |id|String|O identificador exclusivo do usuário. Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura.|
 |imAddresses|String collection|Os endereços do Protocolo de Início de Sessão (SIP) de VoIP (Voice over IP) da mensagem instantânea para o usuário. Somente leitura.|
 |interests|Coleção de cadeias de caracteres|Uma lista para o usuário descrever os interesses dele.|
+|isResourceAccount|Booliano| **Verdadeiro** se o usuário é uma conta de recursos; caso contrário, **falso**. O valor nulo deve ser considerado **falso**.|
 |jobTitle|String|O cargo do usuário. Oferece suporte a $filter.|
 |legalAgeGroupClassification|String| Usado por aplicativos empresariais para determinar a faixa etária legal do usuário. Essa propriedade é somente leitura e calculada com base nas propriedades `ageGroup` e `consentProvidedForMinor`. Valores permitidos: `null`, `minorWithOutParentalConsent`, `minorWithParentalConsent`, `minorNoParentalConsentRequired`, `notAdult` e `adult`. Confira as [definições de propriedades da faixa etária legal](#legal-age-group-property-definitions) para obter mais informações.|
 |licenseAssignmentStates|Coleção [licenseAssignmentState](licenseassignmentstate.md)|Estado das atribuições de licenças para esse usuário. Somente leitura.|
@@ -388,6 +389,7 @@ Veja a seguir uma representação JSON do recurso
   "id": "string (identifier)",
   "imAddresses": ["string"],
   "interests": ["string"],
+  "isResourceAccount": false,
   "jobTitle": "string",
   "legalAgeGroupClassification": "string",
   "licenseAssignmentStates": [{"@odata.type": "microsoft.graph.licenseAssignmentState"}],
