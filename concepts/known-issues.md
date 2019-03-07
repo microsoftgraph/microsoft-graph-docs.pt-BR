@@ -3,12 +3,12 @@ title: Problemas conhecidos com o Microsoft Graph
 description: Este artigo descreve os problemas conhecidos com o Microsoft Graph. Confira as informações sobre as atualizações mais recentes no Log de alterações do Microsoft Graph.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 1b71c7d1ee9181a766f8aa20b9b16a085fcf31a8
-ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
+ms.openlocfilehash: ce0246f20b12bee9f1e474455f87bb3fd9396aee
+ms.sourcegitcommit: d1a9e7c8e1376a99c5a5416257889ec113613a77
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "30056963"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "30458628"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conhecidos com o Microsoft Graph
 
@@ -50,12 +50,6 @@ Algumas equipes que foram criadas no passado mas não foram usadas recentemente 
 Novas equipes serão listadas.
 Algumas equipes antigas não têm uma propriedade **resourceProvisioningOptions** que contém “Equipe”, que é configurada em equipes recém-criadas e equipes que são visitadas no Microsoft Teams.
 No futuro, vamos configurar **resourceProvisioningOptions** em equipes existentes que não foram abertas no Microsoft Teams.
-
-### <a name="installing-and-uninstalling-applications-using-application-permissions"></a>Instalar e desinstalar aplicativos usando permissões de aplicativo
-
-Ao desinstalar um aplicativo de uma equipe com permissões de aplicativo, a API retornará um código de erro 500, mesmo que o aplicativo tenha sido desinstalado com êxito.
-
-Ao instalar, atualizar e desinstalar aplicativos em uma equipe com permissões de aplicativo, os eventos do log de auditoria não são gravados.
 
 ## <a name="groups"></a>Grupos
 

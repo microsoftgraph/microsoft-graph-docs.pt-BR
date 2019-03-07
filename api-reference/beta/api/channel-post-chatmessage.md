@@ -1,21 +1,21 @@
 ---
-title: Criar uma mensagem em um canal
-description: Crie uma nova mensagem no canal especificado.
+title: Enviar uma mensagem em um canal
+description: Enviar uma nova mensagem no canal especificado.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 891181c8797563fac6afb7862a27bd8b49628b5f
-ms.sourcegitcommit: a4773239d8559899c3f9433b3073e250a56d2e04
+ms.openlocfilehash: 42dcf26a5e67f58668f4bd321a68e684feef237f
+ms.sourcegitcommit: d1a9e7c8e1376a99c5a5416257889ec113613a77
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "30039548"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "30458635"
 ---
-# <a name="create-a-message-in-a-channel"></a>Criar uma mensagem em um canal
+# <a name="send-a-message-to-a-channel"></a>Enviar uma mensagem para um canal
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie uma nova [mensagem](../resources/chatmessage.md) no [canal](../resources/channel.md)especificado.
+Criar uma nova [mensagem](../resources/chatmessage.md) no [canal](../resources/channel.md)especificado.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -31,17 +31,20 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ```http
 POST /teams/{id}/channels/{id}/messages
 ```
+
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
 |:---------------|:--------|:----------|
 | Autorização  | string  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON de um objeto de [mensagem](../resources/chatmessage.md) . Somente a propriedade body é obrigatória, que outras propriedades são opcionais.
+No corpo da solicitação, forneça uma representação JSON de um objeto [Message](../resources/chatmessage.md) . Somente a Propriedade Body é obrigatória, outras propriedades são opcionais.
+
+> Observação: não há suporte para o envio de mensagens com anexos e imagens.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` código de resposta com a [mensagem](../resources/chatmessage.md) que foi criado.
+Se bem-sucedido, este método retorna `201 Created` o código de resposta com a [mensagem](../resources/chatmessage.md) que foi criada.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -114,7 +117,7 @@ Content-length: 160
 <!--
 {
   "type": "#page.annotation",
-  "description": "Create message",
+  "description": "Send message",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
