@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: ListItem
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 2a405ad8a71c766642bd23adbce64c2b57b72e23
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 435544db272b26e6fe3ac0e09803858eec9d05f6
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517439"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480877"
 ---
 # <a name="listitem-resource"></a>Recurso ListItem
 
@@ -28,16 +28,16 @@ Todos os exemplos a seguir referem-se a uma **[list][]**, por exemplo: `https://
 |:-------------------------------|:------------------------
 | [Get][]                        | GET /items/{item-id}
 | [Obter valores de coluna][Get]       | GET /items/{item-id}?expand=fields
-| [Obtenha a análise][]              | GET /items/ {id de item} / análise
-| [Fazer atividades pelo intervalo][] | GET /items/ {id de item} / getActivitiesByInterval
+| [Obter análises][]              | OBTER/Items/{Item-ID}/Analytics
+| [Obter atividades por intervalo][] | OBTER/items/{item-id}/getActivitiesByInterval
 | [Create][]                     | POST /items
 | [Delete][]                     | DELETE /items/{item-id}
 | [Update][]                     | PATCH /items/{item-id}
 | [Atualizar valores de coluna][Update] | PATCH /items/{item-id}/fields
 
 [Get]: ../api/listitem-get.md
-[Obtenha a análise]: ../api/itemanalytics-get.md
-[Fazer atividades pelo intervalo]: ../api/itemactivity-getbyinterval.md
+[Obter análises]: ../api/itemanalytics-get.md
+[Obter atividades por intervalo]: ../api/itemactivity-getbyinterval.md
 [Create]: ../api/listitem-create.md
 [Delete]: ../api/listitem-delete.md
 [Update]: ../api/listitem-update.md
@@ -110,10 +110,10 @@ As propriedades a seguir são herdadas do **[baseItem][]**.
 | Nome da relação | Tipo                           | Descrição
 |:------------------|:-------------------------------|:-------------------------------
 | activities        | Conjunto [itemActivity][]    | A lista de atividades recentes que ocorreram neste item.
-| Análise         | recurso de [itemAnalytics][]     | Análise sobre as atividades de modo de exibição que foram realizada neste item.
+| análises         | [itemAnalytics][] resource     | Análise sobre as atividades de exibição que ocorreram neste item.
 | driveItem         | [driveItem][]                  | Para bibliotecas de documentos, a relação **driveItem** expõe listItem como um **[driveItem][]**
 | campos            | [fieldValueSet][]              | Os valores das colunas definidos neste item de lista.
-| versions          | coleção [listItemVersion][] | Lista de versões anteriores do item da lista.
+| suas          | coleção [listItemVersion][] | A lista de versões anteriores do item de lista.
 
 [baseItem]: baseitem.md
 [contentTypeInfo]: contenttypeinfo.md
@@ -123,7 +123,7 @@ As propriedades a seguir são herdadas do **[baseItem][]**.
 [itemActivity]: itemactivity.md
 [itemAnalytics]: itemanalytics.md
 [itemReference]: itemreference.md
-[lista]: list.md
+[list]: list.md
 [listItemVersion]: listitemversion.md
 [sharepointIds]: sharepointids.md
 

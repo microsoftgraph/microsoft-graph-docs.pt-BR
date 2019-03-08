@@ -1,18 +1,18 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Listar arquivos compartilhados comigo
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 5008843a90e405cd1d775286a86e47e6ea62769e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 06c6607de9fa36fd8b1dedc3bf5ded3cfad1228e
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524272"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481010"
 ---
-# <a name="list-items-shared-with-the-signed-in-user"></a>Listar itens compartilhados com o usuário conectado
+# <a name="list-items-shared-with-the-signed-in-user"></a>Liste itens compartilhados com o usuário conectado
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Files.Read.All, Files.ReadWrite.All    |
 |Aplicativo | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
 
-**Observação:** embora a solicitação /sharedWithMe tenha êxito com as permissões Files.Read ou Files.ReadWrite, algumas propriedades podem estar ausentes.
+**Observação:** enquanto a solicitação/sharedWithMe for bem-sucedida com as permissões files. Read ou files. ReadWrite, algumas propriedades poderão estar ausentes.
 Além disso, sem uma das permissões **All**, os itens compartilhados retornados dessa API não ficarão acessíveis.
 
 ## <a name="http-request"></a>Solicitação HTTP

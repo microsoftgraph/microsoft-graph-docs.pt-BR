@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Vídeo
 localization_priority: Normal
-ms.openlocfilehash: 0e26804991128363780ed4336849486c92fc5a07
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: deba8cccb5f0ab80ca03395ef9f798719d542b8d
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889254"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480800"
 ---
 # <a name="video-resource-type"></a>Tipo de recurso Video
 
@@ -53,7 +53,7 @@ Veja a seguir uma representação JSON do recurso
 | **bitrate**               | Int32  | Taxa de bits do vídeo em bits por segundo.
 | **duration**              | Int64  | Duração do arquivo em milissegundos.
 | **fourCC**                | string | Nome do formato de vídeo "Código de quatro caracteres".
-| **taxa de quadros**             | double | Taxa de quadros do vídeo.
+| **frameRate**             | double | Taxa de quadros do vídeo.
 | **height**                | Int32  | A altura do vídeo em pixels.
 | **width**                 | Int32  | A largura do vídeo em pixels.
 

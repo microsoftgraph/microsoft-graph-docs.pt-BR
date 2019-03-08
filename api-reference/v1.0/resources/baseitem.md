@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: BaseItem
 localization_priority: Normal
-ms.openlocfilehash: daee18357e3f19f646a816070ca41a660f7b7ed3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: ae22b0a36acb46c2a9d872f224c0a6d4c567782c
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810945"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481129"
 ---
 # <a name="baseitem-resource-type"></a>Tipo de recurso BaseItem
 
@@ -55,11 +55,11 @@ Veja a seguir uma representação JSON de um recurso **baseItem**.
 | id                   | string            | O identificador exclusivo da unidade. Somente leitura.                                         |
 | createdBy            | [identitySet][]   | Identidade do usuário, dispositivo ou aplicativo que criou o item. Somente leitura.        |
 | createdDateTime      | dateTimeOffset    | Data e hora de criação do item. Somente leitura.                                             |
-| description          | Cadeia de caracteres            | Fornece uma descrição do usuário visíveis do item. Opcional.                             |
+| description          | String            | Fornece uma descrição do item visível para o usuário. Opcional.                             |
 | eTag                 | string            | ETag do item. Somente leitura.                                                          |
 | lastModifiedBy       | [identitySet][]   | Identidade do usuário, dispositivo e aplicativo que modificou o item pela última vez. Somente leitura. |
 | lastModifiedDateTime | dateTimeOffset    | Data e hora em que o item foi modificado pela última vez. Somente leitura.                                   |
-| name                 | string            | O nome do item. Leitura e gravação.                                                      |
+| nome                 | string            | O nome do item. Leitura e gravação.                                                      |
 | parentReference      | [itemReference][] | Informações do pai, se o item tiver um pai. Leitura e gravação.                              |
 | webUrl               | string (url)      | URL que exibe o recurso no navegador. Somente leitura.                              |
 

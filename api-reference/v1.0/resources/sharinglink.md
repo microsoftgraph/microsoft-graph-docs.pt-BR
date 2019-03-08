@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SharingLink
 localization_priority: Normal
-ms.openlocfilehash: 02a4c0251a5484edc7ba5e07095f44043c269ae5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: f16f8240800be4b9c1780a4057583381b736f079
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27863550"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481423"
 ---
 # <a name="sharinglink-resource-type"></a>Tipo de recurso SharingLink
 
@@ -43,7 +43,7 @@ Veja a seguir uma representação JSON do recurso.
 |:------------|:--------------|:-------------------------------------
 | aplicativo | [identity][]  | O aplicativo ao qual o link está associado.
 | type        | String        | O tipo do link criado.
-| scope       | String        | O escopo do link representado por esta permissão. O valor `anonymous` indica que o link é utilizável por qualquer pessoa; `organization` indica que o link só é útil para usuários conectados ao mesmo locatário.
+| scope       | Cadeia de caracteres        | O escopo do link representado por esta permissão. O valor `anonymous` indica que o link é utilizável por qualquer pessoa; `organization` indica que o link só é útil para usuários conectados ao mesmo locatário.
 | webHtml     | String        | Para links `embed`, essa propriedade contém o código HTML para um elemento `<iframe>` que inserirá o item em uma página da Web.
 | webUrl      | String        | Uma URL que abre o item no navegador no site do OneDrive.
 
@@ -63,8 +63,8 @@ Esta tabela define os valores possíveis para a propriedade **type**:
 
 | Valor          | Descrição
 |:---------------|:------------------------------------------------------------
-| `anonymous`    | Qualquer pessoa com o link possui acesso, sem precisar entrar. Isso pode incluir pessoas fora da sua organização.
-| `organization` | Qualquer pessoa entrado na sua organização (inquilino) pode usar o link para obter acesso. Disponível somente no OneDrive for Business e o SharePoint.
+| `anonymous`    | Qualquer pessoa com o link tem acesso, sem a necessidade de fazer logon. Isso pode incluir pessoas de fora da sua organização.
+| `organization` | Qualquer pessoa que se inscreveu em sua organização (locatário) pode usar o link para obter acesso. Disponível apenas no OneDrive for Business e no SharePoint.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

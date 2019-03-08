@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Fazer Check-In de arquivos
+title: Check-in de arquivos
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: ccb4a6dee07cd324a89a7f192b0fe1bb5aaa2e53
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: ea8d4b8ec5399e867bd94c261ce95783f8ea27ba
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529884"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481073"
 ---
 # <a name="check-in-changes-to-a-driveitem-resource"></a>Alterações de check-in em um recurso de DriveItem
 

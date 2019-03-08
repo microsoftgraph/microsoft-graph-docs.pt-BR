@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: TextColumn
 localization_priority: Normal
-ms.openlocfilehash: d064253cfad141d5879afb52451ca28fa2aeca67
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 1e10997bd70f97fa91177aee48a6ffcecff40ab5
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860876"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480835"
 ---
 # <a name="textcolumn-resource-type"></a>Tipo de recurso TextColumn
 
@@ -36,8 +36,8 @@ Aqui está uma representação JSON de um recurso **textColumn**.
 |:--------------------------------|:--------|:---------------------------------
 | **allowMultipleLines**          | booliano | Se deseja permitir várias linhas de texto.
 | **appendChangesToExistingText** | booliano | Se as atualizações nesta coluna devem substituir o texto existente ou acrescentar a ele.
-| **linesForEditing**             | int32   | O tamanho da caixa de texto.
-| **maxLength**                   | int32   | O número máximo de caracteres para o valor.
+| **linesForEditing**             | Int32   | O tamanho da caixa de texto.
+| **maxLength**                   | Int32   | O número máximo de caracteres para o valor.
 | **textType**                    | string  | O tipo de texto sendo armazenado. Deve ser `plain` ou `richText`
 
 <!-- {

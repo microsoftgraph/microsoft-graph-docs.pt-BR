@@ -1,26 +1,26 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Permissão
 localization_priority: Normal
-ms.openlocfilehash: 6a5a0af9c95900232ff87aa7aedb731a83a91cc5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 12390583dcb1a87a5c9492ae3dcbcb132a66f69c
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518846"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482074"
 ---
-# <a name="permission-resource-type"></a>Tipo de recurso permission
+# <a name="permission-resource-type"></a>tipo de recurso Permission
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O recurso **Permission** fornece informações sobre uma permissão de compartilhamento concedida a um recurso [DriveItem](driveitem.md).
+O recurso **Permission** fornece informações sobre uma permissão de compartilhamento concedida para um recurso [driveItem](driveitem.md) .
 
 As permissões de compartilhamento têm várias formas diferentes.
-O recurso **Permission** representa estes diferentes formatos por meio de facetas do recurso.
+O recurso **Permission** representa esses diferentes formatos através de facetas no recurso.
 
->**Observação:** OneDrive para negócios e SharePoint bibliotecas de documentos não retornou a propriedade **inheritedFrom** .
+>**Observação:** As bibliotecas de documentos do OneDrive for Business e do SharePoint não retornam a propriedade **inheritedFrom** .
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -64,14 +64,14 @@ Veja a seguir uma representação JSON do recurso.
 |:--------------------|:----------------------------|:-------------------------
 | id                  | String                      | O identificador exclusivo da permissão entre todas as permissões no item. Somente leitura.
 | grantedTo           | [IdentitySet][]             | Para permissões de tipo de usuário, os detalhes de usuários e aplicativos para esta permissão. Somente leitura.
-| grantedToIdentities | Coleção ([IdentitySet][]) | Para obter permissões de tipo de link, os detalhes dos usuários aos quais a permissão foi concedida. Somente leitura.
+| grantedToIdentities | Coleção ([identityset][]) | Para permissões de tipo de link, os detalhes dos usuários aos quais a permissão foi concedida. Somente leitura.
 | invitation          | [SharingInvitation][]       | Detalhes de um convite de compartilhamento associado para esta permissão. Somente leitura.
 | inheritedFrom       | [ItemReference][]           | Fornece uma referência para o ancestral da permissão atual, se ela for herdada de um ancestral. Somente leitura.
-| vínculo                | [SharingLink][]             | Fornece os detalhes do link de permissão atual, caso se trate de permissões de tipo de link. Somente leitura.
+| link                | [SharingLink][]             | Fornece os detalhes do link de permissão atual, caso se trate de permissões de tipo de link. Somente leitura.
 | funções               | Collection(String)          | O tipo de permissão, por exemplo, `read`. Veja abaixo a lista completa de funções. Somente leitura.
-| shareId             | String                      | Um token exclusivo que pode ser usado para acessar esse item compartilhado por meio da ** [API][] Shares**. Somente leitura.
-| expirationDateTime  | DateTimeOffset              | Um formato AAAA-MM-ddTHH:mm:ssZ de DateTimeOffset indica a hora de expiração da permissão. DateTime.MinValue indica que existem é nenhum vencimento definido para esta permissão. Opcional.
-| HasPassword         | Booliano                     | Isso indica que se a senha é definida para esta permissão, ele só Mostrar em resposta. Opcional e somente leitura e para OneDrive pessoal somente.
+| shareId             | String                      | Um token exclusivo que pode ser usado para acessar esse item compartilhado por meio da **[API][]** de compartilhamentos. Somente leitura.
+| expirationDateTime  | DateTimeOffset              | Um formato de yyyy-MM-ddTHH: mm: ssZ de DateTimeOffset indica o tempo de expiração da permissão. DateTime. MinValue indica que não há validade configurada para essa permissão. Opcional.
+| hasPassword         | Boolean                     | Isso indica se a senha está definida para essa permissão, ela só será mostrada em resposta. Opcional e somente leitura e somente para o OneDrive Personal.
 
 ### <a name="roles-enumeration-values"></a>Valores de enumeração de funções
 
@@ -90,18 +90,18 @@ Permissões com uma faceta [**invitation**][SharingInvitation] representam permi
 
 ## <a name="sharing-links"></a>Links de compartilhamento
 
-Permissões com um [**link**][SharingLink] faceta representam que compartilhamento links criados no item.
-Esses são os tipos mais comuns de permissões.
-Compartilhamento de links fornecem uma URL exclusiva que pode ser usada para acessar um arquivo ou pasta.
+Permissões com uma faceta [**link**][SharingLink] representam links de compartilhamento criados no item.
+Estes são os tipos de permissões mais comuns.
+Links de compartilhamento fornecem uma URL exclusiva que pode ser usada para acessar um arquivo ou uma pasta.
 Eles podem ser configurados para conceder acesso de várias maneiras.
-Por exemplo, você pode usar o [createLink][] API para criar um link que funciona para qualquer pessoa entrado na sua organização, ou você pode criar um link que funciona para qualquer pessoa, sem precisar entrar.
-Você pode usar a [Convidar][] API para criar um link que funciona somente para pessoas específicas, se eles estiverem em sua empresa ou não.
+Por exemplo, você pode usar a [][] API CreateLink para criar um link que funcione para qualquer pessoa que se inscreveu em sua organização ou pode criar um link que funcione para qualquer pessoa, sem precisar entrar.
+Você pode usar a API [INVITE][] para criar um link que funciona apenas para pessoas específicas, seja em sua empresa ou não.
 
 Aqui estão alguns exemplos de links de compartilhamento.
 
 ### <a name="view-link"></a>Link de exibição
 
-Este link Exibir fornece acesso somente leitura para qualquer pessoa com o link.
+Este link de exibição fornece acesso somente leitura a qualquer pessoa com o link.
 
 <!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-view-link" } -->
 
@@ -122,7 +122,7 @@ Este link Exibir fornece acesso somente leitura para qualquer pessoa com o link.
 
 ### <a name="edit-link"></a>Link de edição
 
-Este link Editar fornece acesso de leitura e gravação para qualquer pessoa da organização com o link.
+Este link de edição fornece acesso de leitura e gravação a qualquer pessoa na organização com o link.
 
 <!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-edit-link" } -->
 
@@ -141,9 +141,9 @@ Este link Editar fornece acesso de leitura e gravação para qualquer pessoa da 
 }
 ```
 
-### <a name="specific-people-link"></a>Link de pessoas específicas
+### <a name="specific-people-link"></a>Link de pessoas específico
 
-Este link fornece acesso de leitura e gravação para as pessoas específicas no `grantedToIdentities` conjunto.
+Este link fornece acesso de leitura e gravação às pessoas específicas na `grantedToIdentities` coleção.
 
 <!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-people-link" } -->
 
@@ -174,10 +174,10 @@ Este link fornece acesso de leitura e gravação para as pessoas específicas no
 }
 ```
 
-## <a name="sharing-invitations"></a>Convites de compartilhamento
+## <a name="sharing-invitations"></a>Compartilhar convites
 
-Permissões enviadas pela [Convidar][] API podem ter informações adicionais no aspecto de[SharingInvitation] [convite].
-Se um convite foi enviado a um endereço de email que não corresponda a uma conta conhecida, a propriedade **grantedTo** não pode ser definida até que o convite for trocado, o que ocorre na primeira vez em que o usuário clica no link e entra no.
+As permissões enviadas pela API [INVITE][] podem ter mais informações na faceta [][SharingInvitation] do convite.
+Se um convite foi enviado a um endereço de email que não corresponde a uma conta conhecida **** , a propriedade concedidoto pode não ser definida até que o convite seja resgatado, que ocorre na primeira vez que o usuário clica no link e entra no.
 
 <!-- {"blockType": "example", "@odata.type": "microsoft.graph.permission", "name": "permission-invite-email" } -->
 
@@ -223,16 +223,16 @@ Depois que o convite de compartilhamento tiver sido resgatado por um usuário, a
 |:---------------------------------------------------------|:-----------------------
 | [Listar permissões](../api/driveitem-list-permissions.md) | `GET /drive/items/{item-id}/permissions`
 | [Obter permissão](../api/permission-get.md)               | `GET /drive/items/{item-id}/permissions/{id}`
-| [Link Criar] [createLink]                                | `POST /drive/items/{item-id}/createLink`
-| [Convidar pessoas] [Convidar]                                  | `POST /drive/items/{item-id}/invite`
-| [Update](../api/permission-update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
+| [Criar link] [CreateLink]                                | `POST /drive/items/{item-id}/createLink`
+| [Convidar pessoas] [convidar]                                  | `POST /drive/items/{item-id}/invite`
+| [Atualizar](../api/permission-update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
 | [Delete](../api/permission-delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`
 
 
 
 [createLink]: ../api/driveitem-createlink.md
 [IdentitySet]: identityset.md
-[Convidar]: ../api/driveitem-invite.md
+[Alguém]: ../api/driveitem-invite.md
 [ItemReference]: itemreference.md
 [API de compartilhamentos]: ../api/shares-get.md
 [SharingInvitation]: sharinginvitation.md

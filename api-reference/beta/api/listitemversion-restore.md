@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Restaurar uma versão anterior de um item de lista do SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: ef3b5848b6a6f60bf0515f914e87383e0a6f66bc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 20cf0460aa679fc40a4bb11d0887bc4946ddcd74
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511552"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482081"
 ---
 # <a name="restore-a-previous-version-of-a-listitem"></a>Restaura uma versão anterior de um ListItem
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |            Tipo de permissão             |         Permissões (da com menos para a com mais privilégios)          |
 | :------------------------------------- | :----------------------------------------------------------- |
-| Delegada (conta corporativa ou de estudante)     | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All |
+| Delegado (conta corporativa ou de estudante)     | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All |
 | Delegada (conta pessoal da Microsoft) | n/d                                                          |
 | Aplicativo                            | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All |
 

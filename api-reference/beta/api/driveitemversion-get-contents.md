@@ -1,24 +1,24 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Baixe uma versão anterior
+title: Baixar uma versão anterior
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 57e280a1ecc371505ceda91596fdeb2d6be1abea
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 13ff0148980d7331e713334d9f40df5ade33a259
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528015"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481479"
 ---
 # <a name="download-contents-of-a-driveitemversion-resource-preview"></a>Baixar o conteúdo de um recurso de DriveItemVersion (prévia)
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recuperar o conteúdo de uma versão específica de um [DriveItem](../resources/driveitem.md). 
+Recuperar o conteúdo de uma versão específica de um [driveItem](../resources/driveitem.md). 
 
->**Observação:** Obtendo o conteúdo da versão atual não é suportado. Em vez disso, use o [ponto de extremidade conteúdo driveItem](driveitem-get-content.md).
+>**Observação:** Não há suporte para obter o conteúdo da versão atual. Em vez disso, use o [ponto de extremidade de conteúdo driveItem](driveitem-get-content.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -79,7 +79,7 @@ Location: https://onedrive.com/34FF49D6...
 
 O OneDrive não preserva os metadados completos de versões anteriores de um arquivo.
 
-Quando seu aplicativo recupera a lista de versões disponíveis para um arquivo, um recurso [driveItemVersion](../resources/driveitemversion.md) é retornado que fornece as informações disponíveis sobre a versão específica.
+Quando o aplicativo recupera a lista de versões disponíveis para um arquivo, um recurso [driveItemVersion](../resources/driveitemversion.md) é retornado que fornece as informações disponíveis sobre a versão específica.
 
 <!--
 {

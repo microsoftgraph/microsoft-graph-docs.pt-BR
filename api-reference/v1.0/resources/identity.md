@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Identidade
 localization_priority: Normal
-ms.openlocfilehash: 0d4e7284da7353e7c6902d7ae1958d41f9eafd8f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 103657764b2f7073d553a01cd3794c0abecdf4f4
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816013"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481178"
 ---
 # <a name="identity-resource-type"></a>Tipo de recurso Identity
 

@@ -1,18 +1,18 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Upload de arquivos retomável
+title: Carregamento de arquivo reTomável
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 4b121fb2f1cbeda13cd67f3f37ba06c67304e6ee
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: b0495a0c63400d6476c1ad9312e708b9ac880e42
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525336"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482389"
 ---
-# <a name="upload-large-files-with-an-upload-session"></a>Carregar arquivos grandes com uma sessão de upload
+# <a name="upload-large-files-with-an-upload-session"></a>Carregar arquivos grandes em uma sessão de carregamento
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -35,10 +35,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="create-an-upload-session"></a>Criar uma sessão de carregamento
 
-Para começar um carregamento de arquivos grandes, seu aplicativo deverá solicitar primeiro uma nova sessão de carregamento.
-Isso cria um local de armazenamento temporário onde os bytes do arquivo serão salvo até que o arquivo completo é carregado.
-Depois que o último byte do arquivo foram carregado a sessão de carregamento é concluída e o final do arquivo é mostrada na pasta de destino.
-Como alternativa, você pode adiar final criação do arquivo no destino até que você faça explicitamente uma solicitação para completar o carregamento, definindo o `deferCommit` propriedade nos argumentos solicitação.
+Para iniciar o upload de um arquivo grande, seu aplicativo deve primeiro solicitar uma nova sessão de upload.
+Isso cria um local de armazenamento temporário no qual os bytes do arquivo serão salvos até que este seja totalmente carregado.
+Depois que o último byte do arquivo for carregado, a sessão de upload será concluída, e o arquivo final aparecerá na pasta de destino.
+Como alternativa, você pode adiar a criação final do arquivo no destino até que você explicitamente faça uma solicitação para concluir o carregamento, definindo a `deferCommit` Propriedade nos argumentos de solicitação.
 
 ### <a name="http-request"></a>Solicitação HTTP
 
@@ -55,9 +55,9 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 ### <a name="request-body"></a>Corpo da solicitação
 
 Nenhum corpo de solicitação é obrigatório.
-No entanto, você pode especificar propriedades no corpo da solicitação, fornecendo dados adicionais sobre o arquivo que está sendo carregado e personalizando a semântica da operação de carregamento.
+No enTanto, você pode especificar propriedades no corpo da solicitação, fornecendo dados adicionais sobre o arquivo sendo carregado e personalizando a semântica da operação de upload.
 
-Por exemplo, o `item` propriedade permite definir os seguintes parâmetros:<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.driveItemUploadableProperties" } -->
+Por exemplo, a `item` propriedade permite definir os seguintes parâmetros:<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.driveItemUploadableProperties" } -->
 ```json
 {
   "@microsoft.graph.conflictBehavior": "rename | fail | overwrite",
@@ -66,7 +66,7 @@ Por exemplo, o `item` propriedade permite definir os seguintes parâmetros:<!-- 
 }
 ```
 
-O exemplo a seguir controla o comportamento se o nome do arquivo já é utilizado e também especifica que o final do arquivo não deve ser criada até que seja feita a uma solicitação de conclusão explícita:
+O exemplo a seguir controla o comportamento se o nome do arquivo já tiver sido obtido, e também especifica que o arquivo final não deve ser criado até que uma solicitação de conclusão explícita seja feita:
 
 <!-- { "blockType": "ignored" } -->
 ```json
@@ -82,20 +82,20 @@ O exemplo a seguir controla o comportamento se o nome do arquivo já é utilizad
 
 | Nome       | Valor | Descrição                                                                                                                                                            |
 |:-----------|:------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *if-match* | etag  | Se esse cabeçalho de solicitação for incluído e a eTag (ou cTag) fornecida não corresponder à eTag atual no item, uma resposta de erro `412 Precondition Failed` será retornada. |
+| *if-match* | etag  | Se este cabeçalho de solicitação estiver incluso e a eTag (ou cTag) fornecida não corresponder à ETag atual no item, uma `412 Precondition Failed` resposta de erro será retornada. |
 
 ## <a name="parameters"></a>Parâmetros
 
 | Parâmetro            | Tipo                          | Descrição
 |:---------------------|:------------------------------|:---------------------------------
 | item                 | driveItemUploadableProperties | Dados sobre o arquivo que está sendo carregado
-| deferCommit          | Booliano                       | Se definido como true, final de criação do arquivo no destino exigirá uma solicitação explícita. Somente em OneDrive for Business.
+| deferCommit          | Boolean                       | Se for definido como true, a criação final do arquivo no destino exigirá uma solicitação explícita. Somente no OneDrive for Business.
 
 ## <a name="item-properties"></a>Propriedades do item
 
 | Propriedade             | Tipo               | Descrição
 |:---------------------|:-------------------|:---------------------------------
-| description          | String             | Fornece uma descrição do item visível para o usuário. Leitura e gravação. Somente no OneDrive Personal
+| description          | String             | Fornece uma descrição do item visível para o usuário. Leitura e gravação. Somente no OneDrive Personal.
 | name                 | String             | O nome do item (nome do arquivo e extensão). Leitura e gravação.
 
 ### <a name="request"></a>Solicitação
@@ -141,7 +141,7 @@ Content-Type: application/json
 Para carregar o arquivo, ou uma parte do arquivo, o aplicativo faz uma solicitação PUT ao valor de **uploadUrl** recebido na resposta de **createUploadSession**.
 Você pode carregar o arquivo inteiro ou dividi-lo em vários intervalos de byte, desde que o máximo de bytes em qualquer solicitação específica seja menor que 60 MiB.
 
-Os fragmentos do arquivo devem ser carregados sequencialmente na ordem.
+Os fragmentos do arquivo devem ser carregados seqüencialmente na ordem.
 O upload de fragmentos fora de ordem resultará em um erro.
 
 **Observação:** se seu aplicativo dividir um arquivo em vários intervalos de byte, o tamanho de cada intervalo de bytes **DEVE** ser um múltiplo de 320 KiB (327.680 bytes). Usar um tamanho de fragmento que não divide uniformemente por 320 KiB resultará em erros ao confirmar alguns arquivos.
@@ -213,10 +213,10 @@ Content-Type: application/json
 
 ## <a name="completing-a-file"></a>Concluir um arquivo
 
-Se `deferCommit` for falso ou não definidas, e depois o carregamento é preenchido automaticamente quando o intervalo de bytes final do arquivo é COLOCADO para a URL de carregamento.
-Se `deferCommit` seja verdadeira, após o intervalo de bytes final do arquivo for COLOCADO para a URL de carregamento, o carregamento deve ser concluído explicitamente por uma solicitação POST final para o carregamento url com conteúdo de comprimento zero.
+Se `deferCommit` for false ou indefinida, o carregamento será concluído automaticamente quando o intervalo de bytes final do arquivo for colocado na URL de upload.
+Se `deferCommit` for true, depois que o intervalo de bytes final do arquivo for colocado na URL de upload, o carregamento deverá ser explicitamente concluído por uma solicitação post final para a URL de carregamento com conteúdo de comprimento zero.
 
-Quando o carregamento é concluído, o servidor responderá à solicitação final com um `HTTP 201 Created` ou `HTTP 200 OK`.
+Quando o upload estiver concluído, o servidor responderá à solicitação final com um `HTTP 201 Created` ou. `HTTP 200 OK`
 O corpo da resposta também incluirá o conjunto de propriedades padrão para o **driveItem** que representa o arquivo concluído.
 
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-final", "scopes": "files.readwrite" } -->

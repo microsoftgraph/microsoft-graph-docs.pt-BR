@@ -1,21 +1,21 @@
 ---
 title: tipo de recurso alertHistoryState
-description: Cada vez que um alerta é corrigido, a alteração é salva em um novo objeto de alertHistoryState e será retornada como parte do alerta modificado.
+description: Armazena as alterações feitas nos alertas.
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: a5dda54101264ee2ec4d01a283f96a93f1d6e5e3
-ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
+ms.openlocfilehash: 1a7975d870389be5163a8f230f6a6cc4cd1425c3
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30366963"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480828"
 ---
 # <a name="alerthistorystate-resource-type"></a>tipo de recurso alertHistoryState
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Cada vez que um alerta é corrigido, a alteração é salva em um novo objeto de alertHistoryState e será retornada como parte do alerta modificado.
+Armazena as alterações feitas nos alertas.
 
 ## <a name="properties"></a>Propriedades
 

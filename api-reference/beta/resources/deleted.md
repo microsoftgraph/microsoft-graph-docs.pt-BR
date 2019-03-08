@@ -1,21 +1,21 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Excluído
+title: Deleted
 localization_priority: Normal
-ms.openlocfilehash: de832eb4ecdf36081b00b94679dcafe9b94fe007
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 06fe9835ef4b31d7a48bad955b17872142a94b2d
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529436"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480779"
 ---
 # <a name="deleted-facet"></a>Faceta Deleted
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O recurso Deleted indica que o item foi excluído. Nesta versão da API, a presença (não nulo) do valor do recurso indica que o arquivo foi excluído. Um valor nulo (ou faltante) indica que o arquivo não foi excluído.
+O recurso **Deleted** indica que o item foi excluído. Nesta versão da API, a presença (não nulo) do valor do recurso indica que o arquivo foi excluído. Um valor nulo (ou faltante) indica que o arquivo não foi excluído.
 
 Consulte [exibir alterações de um item](../api/driveitem-delta.md) para saber mais sobre como acompanhar as alterações e localizar itens excluídos.
 
@@ -39,7 +39,7 @@ Veja a seguir uma representação JSON do recurso.
 
 | Propriedade | Tipo   | Descrição                               |
 |:---------|:-------|:------------------------------------------|
-| state    | Cadeia de caracteres | Representa o estado do item excluído. |
+| state    | String | Representa o estado do item excluído. |
 
 ## <a name="remarks"></a>Comentários 
 

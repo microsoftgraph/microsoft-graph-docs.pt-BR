@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: BooleanColumn
 localization_priority: Normal
-ms.openlocfilehash: 6c2429aad49064f1532a7bc298a3aeeba1b3d51b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 9da7ec74cad4e6b766816669506081f74c47530b
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525644"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482158"
 ---
 # <a name="booleancolumn-resource-type"></a>Tipo de recurso BooleanColumn
 

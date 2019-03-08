@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: Criar uma nova entrada em uma lista do SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 58e008ffc4685348aa8d69f44cbfcf59f4fbf715
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 1af6162fd12c9c3dfc470b97e42a25d0cad8ebea
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528813"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482410"
 ---
 # <a name="create-a-new-item-in-a-list"></a>Criar um novo item em uma lista
 

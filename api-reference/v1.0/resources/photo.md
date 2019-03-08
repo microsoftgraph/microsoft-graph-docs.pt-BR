@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Foto
 localization_priority: Normal
-ms.openlocfilehash: 4d108e4849595fcb945b676426d3d9c05dfb5ba0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 688bee72464c1e518c60720a7f9ca24da1f7d149
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873000"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480975"
 ---
 # <a name="photo-resource-type"></a>Tipo de recurso Photo
 
@@ -43,7 +43,7 @@ O recurso **photo** fornece propriedades de foto e câmera, por exemplo, metadad
 | **takenDateTime**       | DateTimeOffset | Representa a data e a hora em que a foto foi tirada. Somente leitura.
 | **cameraMake**          | String         | Fabricante da câmera. Somente leitura.
 | **cameraModel**         | String         | Modelo da câmera. Somente leitura.
-| **fNumber**             | Double         | O valor de f-stop da câmera. Somente leitura.
+| **fNumber**             | Duplo         | O valor de f-stop da câmera. Somente leitura.
 | **exposureDenominator** | Duplo         | O denominador da fração do tempo de exposição da câmera. Somente leitura.
 | **exposureNumerator**   | Duplo         | O numerador da fração do tempo de exposição da câmera. Somente leitura.
 | **focalLength**         | Double         | A distância focal da câmera. Somente leitura.

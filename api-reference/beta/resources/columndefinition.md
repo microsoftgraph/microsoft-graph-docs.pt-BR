@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: ColumnDefinition
 localization_priority: Normal
-ms.openlocfilehash: f4e0c3002068ec7dc8ee280b8e8143af621f178c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: ddd6b3c6d3048bf7a6d3ab2dbc8ff7259651ee2f
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528932"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481157"
 ---
 # <a name="columndefinition-resource-type"></a>tipo de recurso columnDefinition
 
@@ -17,7 +17,7 @@ ms.locfileid: "29528932"
 
 ## <a name="json-representation"></a>Representação JSON
 
-Aqui está uma representação JSON de um recurso columnDefinition.
+Veja a seguir uma representação JSON de um recurso columnDefinition.
 
 <!--{
   "blockType": "resource",
@@ -57,13 +57,13 @@ Aqui está uma representação JSON de um recurso columnDefinition.
 
 As colunas podem conter dados de vários tipos.
 As propriedades a seguir indicam qual tipo de dados uma coluna armazena, bem como configurações adicionais para esses dados.
-As propriedades relacionadas a tipo (booleana, calculada, escolha, moeda, data/hora, pesquisa, número, personOrGroup, texto) são mutuamente exclusivas--uma coluna só pode ter um deles especificado.
+As propriedades relacionadas ao tipo (Boolean, calculado, Choice, Currency, dateTime, Lookup, Number, personOrGroup, Text) são mutuamente excludentes--uma coluna só pode ter uma delas especificada.
 
 | Nome da propriedade           | Tipo    | Descrição
 |:------------------------|:--------|:-----------------------------------------
 | **columnGroup**         | string  | Para colunas de site, o nome do grupo ao qual esta coluna pertence. Ajuda a organizar as colunas relacionadas.
 | **description**         | string  | A descrição voltado para o usuário da coluna.
-| **displayName**         | string  | O nome voltado para o usuário da coluna.
+| **displayName**         | cadeia de caracteres  | O nome voltado para o usuário da coluna.
 | **enforceUniqueValues** | booliano | Se for verdadeiro, esse mesmo valor não constará em dois itens de lista nessa coluna.
 | **hidden**              | booliano | Especifica se a coluna é exibida na interface do usuário.
 | **id**                  | string  | O identificador exclusivo da coluna.
@@ -77,14 +77,14 @@ As propriedades relacionadas a tipo (booleana, calculada, escolha, moeda, data/h
 | **currency**      | [currencyColumn][]      | Esta coluna armazena valores monetários.
 | **dateTime**      | [dateTimeColumn][]      | Esta coluna armazena valores de datetime.
 | **defaultValue**  | [defaultColumnValue][]  | O valor padrão dessa coluna.
-| Localização geográfica   | [geolocationColumn][]   | Essa coluna armazena uma localização geográfica.
+| **localização geográfica**   | [geolocationColumn][]   | Esta coluna armazena uma localização geográfica.
 | **lookup**        | [lookupColumn][]        | Os dados dessa coluna são procurados por outra fonte no site.
 | **number**        | [numberColumn][]        | Esta coluna armazena valores numéricos.
 | **personOrGroup** | [personOrGroupColumn][] | Esta coluna armazena valores de Pessoa ou Grupo.
 | **text**          | [textColumn][]          | Esta coluna armazena valores de texto.
 
->Observação: essas propriedades correspondem à enumeração **SPFieldType** do SharePoint.
-Enquanto os tipos mais comuns de campo são representados na tabela anterior, essa versão beta API ainda faltam alguns.
+>**Observação:** Essas propriedades correspondem à enumeração de [][] UserField do SharePoint.
+Enquanto os tipos de campo mais comuns são representados na tabela anterior, esta API beta ainda não tem alguns.
 nestes casos, nenhuma das facetas do tipo de coluna serão preenchidas, e a coluna só terá as propriedades básicas.
 
 ## <a name="remarks"></a>Comentários

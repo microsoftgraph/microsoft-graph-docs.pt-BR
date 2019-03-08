@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Pasta
+title: Folder
 localization_priority: Normal
-ms.openlocfilehash: af22487f017830481af6f39e113b80009f2e567f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: b78e6038a8f8f9a91883dd29faeebe3d5db3ca04
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512749"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481213"
 ---
 # <a name="folder-resource-type"></a>Tipo de recurso Folder
 

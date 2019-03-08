@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Copiar um arquivo ou uma pasta
+title: Copiar um arquivo ou pasta
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: db953e3221c03cbf094f84e2e36eb1e5b2d7d24b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: a4a20a98badcf96848f5317d5625dc1b05750223
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27961985"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481388"
 ---
 # <a name="copy-a-driveitem"></a>Copiar um DriveItem
 
@@ -81,8 +81,7 @@ HTTP/1.1 202 Accepted
 Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
 ```
 
-O valor do cabeçalho `Location` fornece uma URL para um serviço que irá retornar o estado atual da operação de cópia.
-Você pode usar essas informações para [determinar quando a cópia terminou](/graph/long-running-actions-overview).
+O valor do cabeçalho `Location` fornece uma URL para um serviço que irá retornar o estado atual da operação de cópia. Você pode usar essas informações para [determinar quando a cópia terminou](/graph/long-running-actions-overview).
 
 ### <a name="remarks"></a>Comentários
 
