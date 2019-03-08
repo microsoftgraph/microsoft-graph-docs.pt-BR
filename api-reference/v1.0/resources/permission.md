@@ -1,22 +1,22 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Permissão
 localization_priority: Priority
-ms.openlocfilehash: 988a4d6dcd1b04b34c5d2d03aca404b0a570922f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.openlocfilehash: f2781726be786c5eb0d4ed8103dc3b9a62137597
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27834164"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482221"
 ---
-# <a name="permission-resource-type"></a>Tipo de recurso de permissão
+# <a name="permission-resource-type"></a>Tipo de recurso permission
 
 O recurso **Permission** fornece informações sobre uma permissão de compartilhamento concedida a um recurso [DriveItem](driveitem.md).
 
 As permissões de compartilhamento têm várias formas diferentes.
-O recurso **Permission** representa estes diferentes formatos por meio de facetas do recurso.
+O recurso **Permission** representa estes diferentes formulários por meio de facetas do recurso.
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -57,7 +57,7 @@ Veja a seguir uma representação JSON do recurso
 | inheritedFrom | [ItemReference](itemreference.md)         | Fornece uma referência para o ancestral da permissão atual, se ela for herdada de um ancestral. Somente leitura.
 | vínculo          | [SharingLink][]                           | Fornece os detalhes do link de permissão atual, caso se trate de permissões de tipo de link. Somente leitura.
 | funções         | Coleção de Cadeias de Caracteres                      | O tipo de permissão, por exemplo, `read`. Veja abaixo a lista completa de funções. Somente leitura.
-| shareId       | String                                    | Um token exclusivo que pode ser usado para acessar esse item compartilhado por meio da [ **API** Shares](../api/shares-get.md). Somente leitura.
+| shareId       | Cadeia de caracteres                                    | Um token exclusivo que pode ser usado para acessar esse item compartilhado por meio da [**API** Shares](../api/shares-get.md). Somente leitura.
 
 O recurso permission usa _facetas_ para fornecer informações sobre o tipo de permissão representado pelo recurso.
 
@@ -78,8 +78,7 @@ Permissões com uma faceta [**invitation**][SharingInvitation] representam permi
 | `sp.member` | Para o SharePoint e o OneDrive for Business, isso representa a função de membro.      |
 
 ## <a name="sharing-links"></a>Links de compartilhamento
-O tipo mais comum de permissões são os links de compartilhamento.
-Esses links fornecem uma URL exclusiva que inclui o recurso que está sendo compartilhado e um token de autenticação que fornece acesso ao recurso. Os usuários não precisam entrar para acessar o conteúdo compartilhado com um link de compartilhamento. Os usuários podem compartilhar um link que concede acesso somente leitura ou acesso de gravação ao conteúdo.
+O tipo mais comum de permissões são os links de compartilhamento. Esses links fornecem uma URL exclusiva que inclui o recurso que está sendo compartilhado e um token de autenticação que fornece acesso ao recurso. Os usuários não precisam entrar para acessar o conteúdo compartilhado com um link de compartilhamento. Os usuários podem compartilhar um link que concede acesso somente leitura ou acesso de gravação ao conteúdo.
 
 ### <a name="view-link"></a>Link de exibição
 Um link de exibição oferece acesso somente leitura a um item.
@@ -116,8 +115,7 @@ Um link de edição fornece acesso de leitura e gravação a um item.
 ```
 
 ### <a name="sharing-invitation"></a>Convite de compartilhamento
-Além de criar links de compartilhamento, um usuário pode ser convidado pelo endereço de email.
-Nesse cenário, a permissão cria um convite que é enviado ao email do usuário.
+Além de criar links de compartilhamento, um usuário pode ser convidado pelo endereço de email. Nesse cenário, a permissão cria um convite que é enviado ao email do usuário.
 
 #### <a name="invitation-to-an-email-address"></a>Convite para um endereço de email
 Se a permissão for enviada por meio do endereço de email para um destinatário que não tem uma conta correspondente, a propriedade **grantedTo** não poderá ser definida até que o convite seja resgatado, o que ocorre na primeira vez que um usuário clica no link e entra na sessão.

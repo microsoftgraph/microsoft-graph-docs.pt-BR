@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Unidade
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 3b9744d8b652f0374c71f5304c326ba862c288a4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: a6a406ef5cb011e82d14c54ea0a35cd93eaab837
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27929127"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480604"
 ---
 # <a name="drive-resource-type"></a>Tipo de unidade de recurso
 
@@ -82,7 +82,7 @@ O recurso **drive** é derivado de [**baseItem**](baseitem.md) e herda proprieda
 | owner                | [identitySet](identityset.md) | Opcional. A conta do usuário que é proprietário da unidade. Somente leitura.                                                                                                                                                                       |
 | quota                | [quota](quota.md)             | Opcional. Informações sobre a cota de espaço de armazenamento da unidade. Somente leitura.                                                                                                                                                          |
 | sharepointIds        | [sharepointIds][]             | Retorna os identificadores úteis para fins de compatibilidade do REST do SharePoint. Somente leitura.                                                                                                                                                         |
-| system               | [systemFacet][]               | Se estiver presente, indica que se trata de uma unidade gerenciada pelo sistema. Somente leitura.
+| sistema               | [systemFacet][]               | Se estiver presente, indica que se trata de uma unidade gerenciada pelo sistema. Somente leitura.
 | webUrl               | string (url)                  | URL que exibe o recurso no navegador. Somente leitura.                                                                                                                                                                        |
 
 [identitySet]: identityset.md
@@ -96,7 +96,7 @@ O recurso **drive** é derivado de [**baseItem**](baseitem.md) e herda proprieda
 | items        | Coleção [DriveItem](driveitem.md) | Todos os itens contidos na unidade. Somente leitura. Anulável.
 | root         | [DriveItem](driveitem.md)            | A pasta raiz da unidade. Somente leitura.
 | special      | Coleção [DriveItem](driveitem.md) | Coleção de pastas comuns disponíveis no OneDrive. Somente leitura. Anulável.
-| lista         | [List](list.md)                      | Para as unidades no SharePoint, a lista da biblioteca de documentos subjacentes. Somente leitura. Anulável.
+| list         | [List](list.md)                      | Para unidades no SharePoint, a lista de biblioteca de documentos subjacentes. Somente leitura. Anulável.
 
 ## <a name="methods"></a>Métodos
 
