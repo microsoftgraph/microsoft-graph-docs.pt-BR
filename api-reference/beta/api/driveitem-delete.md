@@ -1,34 +1,34 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Excluir um arquivo ou uma pasta
+title: Excluir um arquivo ou pasta
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 5317cee9288bb4a78b66d497b4a4b58f945c9198
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 114dd5d9ee96ef4f89f246a3a2ad5c74847f074b
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529016"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482326"
 ---
-# <a name="delete-a-driveitem"></a><span data-ttu-id="34ed7-102">Excluir um DriveItem</span><span class="sxs-lookup"><span data-stu-id="34ed7-102">Delete a DriveItem</span></span>
+# <a name="delete-a-driveitem"></a><span data-ttu-id="eed76-102">Excluir um DriveItem</span><span class="sxs-lookup"><span data-stu-id="eed76-102">Delete a DriveItem</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="34ed7-p101">Excluir um [DriveItem](../resources/driveitem.md) usando sua ID ou seu caminho. Observe que a exclusão de itens usando esse método moverá os itens para a Lixeira, ao invés de excluir permanentemente o item.</span><span class="sxs-lookup"><span data-stu-id="34ed7-p101">Delete a [DriveItem](../resources/driveitem.md) by using its ID or path. Note that deleting items using this method will move the items to the recycle bin instead of permanently deleting the item.</span></span>
+<span data-ttu-id="eed76-p101">Excluir um [DriveItem](../resources/driveitem.md) usando sua ID ou seu caminho. Observe que a exclusão de itens usando esse método moverá os itens para a Lixeira, ao invés de excluir permanentemente o item.</span><span class="sxs-lookup"><span data-stu-id="eed76-p101">Delete a [DriveItem](../resources/driveitem.md) by using its ID or path. Note that deleting items using this method will move the items to the recycle bin instead of permanently deleting the item.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="34ed7-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="34ed7-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="eed76-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="eed76-105">Permissions</span></span>
 
-<span data-ttu-id="34ed7-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="34ed7-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="eed76-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="eed76-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="34ed7-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="34ed7-108">Permission type</span></span>      | <span data-ttu-id="34ed7-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="34ed7-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="eed76-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="eed76-108">Permission type</span></span>      | <span data-ttu-id="eed76-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="eed76-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="34ed7-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="34ed7-110">Delegated (work or school account)</span></span> | <span data-ttu-id="34ed7-111">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="34ed7-111">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="34ed7-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="34ed7-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="34ed7-113">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="34ed7-113">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="34ed7-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="34ed7-114">Application</span></span> | <span data-ttu-id="34ed7-115">Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="34ed7-115">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="eed76-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="eed76-110">Delegated (work or school account)</span></span> | <span data-ttu-id="eed76-111">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="eed76-111">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="eed76-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="eed76-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="eed76-113">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="eed76-113">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="eed76-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="eed76-114">Application</span></span> | <span data-ttu-id="eed76-115">Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="eed76-115">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="34ed7-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="34ed7-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="eed76-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="eed76-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -40,15 +40,15 @@ DELETE /sites/{siteId}/drive/items/{itemId}
 DELETE /users/{userId}/drive/items/{itemId}
 ```
 
-## <a name="optional-request-headers"></a><span data-ttu-id="34ed7-117">Cabeçalhos de solicitação opcionais</span><span class="sxs-lookup"><span data-stu-id="34ed7-117">Optional request headers</span></span>
+## <a name="optional-request-headers"></a><span data-ttu-id="eed76-117">Cabeçalhos de solicitação opcionais</span><span class="sxs-lookup"><span data-stu-id="eed76-117">Optional request headers</span></span>
 
-| <span data-ttu-id="34ed7-118">Nome</span><span class="sxs-lookup"><span data-stu-id="34ed7-118">Name</span></span>          | <span data-ttu-id="34ed7-119">Tipo</span><span class="sxs-lookup"><span data-stu-id="34ed7-119">Type</span></span>   | <span data-ttu-id="34ed7-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="34ed7-120">Description</span></span>                                                                                                                                                                                       |
+| <span data-ttu-id="eed76-118">Nome</span><span class="sxs-lookup"><span data-stu-id="eed76-118">Name</span></span>          | <span data-ttu-id="eed76-119">Tipo</span><span class="sxs-lookup"><span data-stu-id="eed76-119">Type</span></span>   | <span data-ttu-id="eed76-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="eed76-120">Description</span></span>                                                                                                                                                                                       |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="34ed7-121">if-match</span><span class="sxs-lookup"><span data-stu-id="34ed7-121">if-match</span></span>      | <span data-ttu-id="34ed7-122">String</span><span class="sxs-lookup"><span data-stu-id="34ed7-122">String</span></span> | <span data-ttu-id="34ed7-123">Se este cabeçalho de solicitação estiver incluso e a eTag (ou cTag) fornecida não corresponder à marca atual no item, uma resposta `412 Precondition Failed` é exibida e o item não será excluído.</span><span class="sxs-lookup"><span data-stu-id="34ed7-123">If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted.</span></span> |
+| <span data-ttu-id="eed76-121">if-match</span><span class="sxs-lookup"><span data-stu-id="eed76-121">if-match</span></span>      | <span data-ttu-id="eed76-122">String</span><span class="sxs-lookup"><span data-stu-id="eed76-122">String</span></span> | <span data-ttu-id="eed76-123">Se este cabeçalho de solicitação estiver incluso e a eTag (ou cTag) fornecida não corresponder à marca atual no item, uma resposta `412 Precondition Failed` é exibida e o item não será excluído.</span><span class="sxs-lookup"><span data-stu-id="eed76-123">If this request header is included and the eTag (or cTag) provided does not match the current tag on the item, a `412 Precondition Failed` response is returned and the item will not be deleted.</span></span> |
 
-## <a name="example"></a><span data-ttu-id="34ed7-124">Exemplo</span><span class="sxs-lookup"><span data-stu-id="34ed7-124">Example</span></span>
+## <a name="example"></a><span data-ttu-id="eed76-124">Exemplo</span><span class="sxs-lookup"><span data-stu-id="eed76-124">Example</span></span>
 
-<span data-ttu-id="34ed7-125">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="34ed7-125">Here is an example of how to call this API.</span></span>
+<span data-ttu-id="eed76-125">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="eed76-125">Here is an example of how to call this API.</span></span>
 
 <!-- { "blockType": "request", "name": "delete-item", "scopes": "files.readwrite" } -->
 
@@ -56,9 +56,9 @@ DELETE /users/{userId}/drive/items/{itemId}
 DELETE /me/drive/items/{item-id}
 ```
 
-## <a name="response"></a><span data-ttu-id="34ed7-126">Resposta</span><span class="sxs-lookup"><span data-stu-id="34ed7-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="eed76-126">Resposta</span><span class="sxs-lookup"><span data-stu-id="eed76-126">Response</span></span>
 
-<span data-ttu-id="34ed7-127">Se bem sucedida, esta chamada retorna uma resposta `204 No Content` para indicar que o recurso foi excluído e que não havia nada a retornar.</span><span class="sxs-lookup"><span data-stu-id="34ed7-127">If successful, this call returns a `204 No Content` response to indicate that resource was deleted and there was nothing to return.</span></span>
+<span data-ttu-id="eed76-127">Se bem sucedida, esta chamada retorna uma resposta `204 No Content` para indicar que o recurso foi excluído e que não havia nada a retornar.</span><span class="sxs-lookup"><span data-stu-id="eed76-127">If successful, this call returns a `204 No Content` response to indicate that resource was deleted and there was nothing to return.</span></span>
 
 <!-- { "blockType": "response" } -->
 
@@ -66,9 +66,9 @@ DELETE /me/drive/items/{item-id}
 HTTP/1.1 204 No Content
 ```
 
-### <a name="error-responses"></a><span data-ttu-id="34ed7-128">Respostas de erro</span><span class="sxs-lookup"><span data-stu-id="34ed7-128">Error responses</span></span>
+### <a name="error-responses"></a><span data-ttu-id="eed76-128">Respostas de erro</span><span class="sxs-lookup"><span data-stu-id="eed76-128">Error responses</span></span>
 
-<span data-ttu-id="34ed7-129">Confira mais informações sobre como os erros são retornados em [Respostas de erro][error-response].</span><span class="sxs-lookup"><span data-stu-id="34ed7-129">See [Error Responses][error-response] for more info about how errors are returned.</span></span>
+<span data-ttu-id="eed76-129">Confira mais informações sobre como os erros são retornados em [Respostas de erro][error-response].</span><span class="sxs-lookup"><span data-stu-id="eed76-129">See [Error Responses][error-response] for more info about how errors are returned.</span></span>
 
 [error-response]: /graph/errors
 

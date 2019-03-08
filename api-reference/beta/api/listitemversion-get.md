@@ -1,35 +1,35 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Obter uma versão anterior de um item de lista - API do SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: a23a8218b2be3ff36d719ee25e6fb0c960c5750f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 88f442178d3e703c4861e3a6fe5746a7f0c5e8b8
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526253"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482102"
 ---
-# <a name="get-a-listitemversion-resource-preview"></a><span data-ttu-id="a8307-102">Obter um recurso ListItemVersion (prévia)</span><span class="sxs-lookup"><span data-stu-id="a8307-102">Get a ListItemVersion resource (preview)</span></span>
+# <a name="get-a-listitemversion-resource-preview"></a><span data-ttu-id="b054e-102">Obter um recurso ListItemVersion (prévia)</span><span class="sxs-lookup"><span data-stu-id="b054e-102">Get a ListItemVersion resource (preview)</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a8307-103">Recuperar os metadados de uma versão específica de um [ListItem](../resources/listitem.md).</span><span class="sxs-lookup"><span data-stu-id="a8307-103">Retrieve the metadata for a specific version of a [ListItem](../resources/listitem.md).</span></span>
+<span data-ttu-id="b054e-103">Recuperar os metadados de uma versão específica de um [ListItem](../resources/listitem.md).</span><span class="sxs-lookup"><span data-stu-id="b054e-103">Retrieve the metadata for a specific version of a [ListItem](../resources/listitem.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a8307-104">Permissões</span><span class="sxs-lookup"><span data-stu-id="a8307-104">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="b054e-104">Permissões</span><span class="sxs-lookup"><span data-stu-id="b054e-104">Permissions</span></span>
 
-<span data-ttu-id="a8307-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a8307-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="b054e-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b054e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|            <span data-ttu-id="a8307-107">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="a8307-107">Permission type</span></span>             | <span data-ttu-id="a8307-108">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="a8307-108">Permissions (from least to most privileged)</span></span> |
+|            <span data-ttu-id="b054e-107">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="b054e-107">Permission type</span></span>             | <span data-ttu-id="b054e-108">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="b054e-108">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :------------------------------------------ |
-| <span data-ttu-id="a8307-109">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="a8307-109">Delegated (work or school account)</span></span>     | <span data-ttu-id="a8307-110">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a8307-110">Sites.Read.All, Sites.ReadWrite.All</span></span>         |
-| <span data-ttu-id="a8307-111">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="a8307-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a8307-112">n/d</span><span class="sxs-lookup"><span data-stu-id="a8307-112">n/a</span></span>                                         |
-| <span data-ttu-id="a8307-113">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="a8307-113">Application</span></span>                            | <span data-ttu-id="a8307-114">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a8307-114">Sites.Read.All, Sites.ReadWrite.All</span></span>         |
+| <span data-ttu-id="b054e-109">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="b054e-109">Delegated (work or school account)</span></span>     | <span data-ttu-id="b054e-110">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b054e-110">Sites.Read.All, Sites.ReadWrite.All</span></span>         |
+| <span data-ttu-id="b054e-111">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="b054e-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b054e-112">n/d</span><span class="sxs-lookup"><span data-stu-id="b054e-112">n/a</span></span>                                         |
+| <span data-ttu-id="b054e-113">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="b054e-113">Application</span></span>                            | <span data-ttu-id="b054e-114">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b054e-114">Sites.Read.All, Sites.ReadWrite.All</span></span>         |
 
 
-## <a name="http-request"></a><span data-ttu-id="a8307-115">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="a8307-115">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b054e-115">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="b054e-115">HTTP request</span></span>
 
 <!-- { "blockType": "ignored"} -->
 
@@ -39,16 +39,16 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/versions/{version-id}
 ```
 
 
-## <a name="response"></a><span data-ttu-id="a8307-116">Resposta</span><span class="sxs-lookup"><span data-stu-id="a8307-116">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b054e-116">Resposta</span><span class="sxs-lookup"><span data-stu-id="b054e-116">Response</span></span>
 
-<span data-ttu-id="a8307-117">Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [ListItemVersion](../resources/listitemversion.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="a8307-117">If successful, this method returns a `200 OK` response code and a [ListItemVersion](../resources/listitemversion.md) object in the response body.</span></span>
+<span data-ttu-id="b054e-117">Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [ListItemVersion](../resources/listitemversion.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="b054e-117">If successful, this method returns a `200 OK` response code and a [ListItemVersion](../resources/listitemversion.md) object in the response body.</span></span>
 
 
-## <a name="example"></a><span data-ttu-id="a8307-118">Exemplo</span><span class="sxs-lookup"><span data-stu-id="a8307-118">Example</span></span>
+## <a name="example"></a><span data-ttu-id="b054e-118">Exemplo</span><span class="sxs-lookup"><span data-stu-id="b054e-118">Example</span></span>
 
-<span data-ttu-id="a8307-119">Este exemplo recupera uma versão de um item de lista e expande o conjunto de campos para solicitar os valores dos campos no listItem.</span><span class="sxs-lookup"><span data-stu-id="a8307-119">This example retrieves a version of a listItem and expands the fields collection to request the values of fields in the listItem.</span></span>
+<span data-ttu-id="b054e-119">Este exemplo recupera uma versão de um item de lista e expande o conjunto de campos para solicitar os valores dos campos no listItem.</span><span class="sxs-lookup"><span data-stu-id="b054e-119">This example retrieves a version of a listItem and expands the fields collection to request the values of fields in the listItem.</span></span>
 
-### <a name="http-request"></a><span data-ttu-id="a8307-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="a8307-120">HTTP request</span></span>
+### <a name="http-request"></a><span data-ttu-id="b054e-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="b054e-120">HTTP request</span></span>
 
 <!-- { "blockType": "request", "name": "get-single-version-listItem", "scopes": "files.read" } -->
 
@@ -56,9 +56,9 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/versions/{version-id}
 GET /sites/{site-id}/items/{item-id}/versions/{version-id}?expand=fields
 ```
 
-### <a name="response"></a><span data-ttu-id="a8307-121">Resposta</span><span class="sxs-lookup"><span data-stu-id="a8307-121">Response</span></span>
+### <a name="response"></a><span data-ttu-id="b054e-121">Resposta</span><span class="sxs-lookup"><span data-stu-id="b054e-121">Response</span></span>
 
-<span data-ttu-id="a8307-122">Isso retornará uma coleção de versões:</span><span class="sxs-lookup"><span data-stu-id="a8307-122">This returns a collection of versions:</span></span>
+<span data-ttu-id="b054e-122">Isso retornará uma coleção de versões:</span><span class="sxs-lookup"><span data-stu-id="b054e-122">This returns a collection of versions:</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.listItemVersion", "truncated": true } -->
 

@@ -1,23 +1,23 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: FieldValueSet
 localization_priority: Normal
-ms.openlocfilehash: 1f8c842f107b5090eb80bba9e614666f10d4dc0b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 163bbb9595da84628a0e9d8ca449fdafbf4089b3
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889688"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480786"
 ---
-# <a name="fieldvalueset-resource"></a><span data-ttu-id="97b7d-102">Recurso de FieldValueSet</span><span class="sxs-lookup"><span data-stu-id="97b7d-102">FieldValueSet resource</span></span>
+# <a name="fieldvalueset-resource"></a><span data-ttu-id="96ba6-102">Recurso de FieldValueSet</span><span class="sxs-lookup"><span data-stu-id="96ba6-102">FieldValueSet resource</span></span>
 
-<span data-ttu-id="97b7d-103">Representa os valores de coluna em um recurso [listItem](listitem.md).</span><span class="sxs-lookup"><span data-stu-id="97b7d-103">Represents the column values in a [listItem](listitem.md) resource.</span></span>
+<span data-ttu-id="96ba6-103">Representa os valores de coluna em um recurso [listItem](listitem.md).</span><span class="sxs-lookup"><span data-stu-id="96ba6-103">Represents the column values in a [listItem](listitem.md) resource.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="97b7d-104">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="97b7d-104">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="96ba6-104">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="96ba6-104">JSON representation</span></span>
 
-<span data-ttu-id="97b7d-105">Aqui está uma representação JSON de um recurso **fieldValueSet**.</span><span class="sxs-lookup"><span data-stu-id="97b7d-105">Here is a JSON representation of a **fieldValueSet** resource.</span></span>
+<span data-ttu-id="96ba6-105">Aqui está uma representação JSON de um recurso **fieldValueSet**.</span><span class="sxs-lookup"><span data-stu-id="96ba6-105">Here is a JSON representation of a **fieldValueSet** resource.</span></span>
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.fieldValueSet",
       "optionalProperties": ["Author", "AuthorLookupId", "Name", "Color", "Quantity" ],
        "baseType": "microsoft.graph.entity", "openType": true } -->
@@ -32,24 +32,24 @@ ms.locfileid: "27889688"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="97b7d-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="97b7d-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="96ba6-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="96ba6-106">Properties</span></span>
 
-<span data-ttu-id="97b7d-107">Cada campo de usuário visível em **listItem** é retornado como um par de nome e valor em **fieldValueSet**.</span><span class="sxs-lookup"><span data-stu-id="97b7d-107">Each user-visible field in the **listItem** is returned as a name-value pair in the **fieldValueSet**.</span></span>
-<span data-ttu-id="97b7d-108">O exemplo acima é para uma lista que contém quatro colunas **Autor**, **Nome**, **Cor** e **Quantidade**.</span><span class="sxs-lookup"><span data-stu-id="97b7d-108">The example above is for a list that contains four columns, **Author**, **Name**, **Color**, and **Quantity**.</span></span>
+<span data-ttu-id="96ba6-107">Cada campo de usuário visível em **listItem** é retornado como um par de nome e valor em **fieldValueSet**.</span><span class="sxs-lookup"><span data-stu-id="96ba6-107">Each user-visible field in the **listItem** is returned as a name-value pair in the **fieldValueSet**.</span></span>
+<span data-ttu-id="96ba6-108">O exemplo acima é para uma lista que contém quatro colunas **Autor**, **Nome**, **Cor** e **Quantidade**.</span><span class="sxs-lookup"><span data-stu-id="96ba6-108">The example above is for a list that contains four columns, **Author**, **Name**, **Color**, and **Quantity**.</span></span>
 
-<span data-ttu-id="97b7d-109">Campos de pesquisa (como `Author` acima) não são retornados por padrão.</span><span class="sxs-lookup"><span data-stu-id="97b7d-109">Lookup fields (like `Author` above) are not returned by default.</span></span>
-<span data-ttu-id="97b7d-110">Em vez disso, o servidor retorna um campo 'LookupId' (como `AuthorLookupId` acima) referenciando o listItem direcionado na pesquisa.</span><span class="sxs-lookup"><span data-stu-id="97b7d-110">Instead, the server returns a 'LookupId' field (like `AuthorLookupId` above) referencing the listItem targeted in the lookup.</span></span>
-<span data-ttu-id="97b7d-111">O nome do campo 'LookupId' é o nome do campo original seguido de `LookupId`.</span><span class="sxs-lookup"><span data-stu-id="97b7d-111">The name of the 'LookupId' field is the original field name followed by `LookupId`.</span></span>
+<span data-ttu-id="96ba6-109">Campos de pesquisa (como `Author` acima) não são retornados por padrão.</span><span class="sxs-lookup"><span data-stu-id="96ba6-109">Lookup fields (like `Author` above) are not returned by default.</span></span>
+<span data-ttu-id="96ba6-110">Em vez disso, o servidor retorna um campo 'LookupId' (como `AuthorLookupId` acima) referenciando o listItem direcionado na pesquisa.</span><span class="sxs-lookup"><span data-stu-id="96ba6-110">Instead, the server returns a 'LookupId' field (like `AuthorLookupId` above) referencing the listItem targeted in the lookup.</span></span>
+<span data-ttu-id="96ba6-111">O nome do campo 'LookupId' é o nome do campo original seguido de `LookupId`.</span><span class="sxs-lookup"><span data-stu-id="96ba6-111">The name of the 'LookupId' field is the original field name followed by `LookupId`.</span></span>
 
-<span data-ttu-id="97b7d-112">Até 12 campos de pesquisa podem ser solicitados em uma única consulta.</span><span class="sxs-lookup"><span data-stu-id="97b7d-112">Up to 12 lookup fields may be requested in a single query.</span></span>
-<span data-ttu-id="97b7d-113">O servidor retornará valores de pesquisa se sua solicitação incluir uma instrução `select` com os campos necessários.</span><span class="sxs-lookup"><span data-stu-id="97b7d-113">The server will return lookup values if your request includes a `select` statement with the fields you need.</span></span>
-<span data-ttu-id="97b7d-114">Exemplo:</span><span class="sxs-lookup"><span data-stu-id="97b7d-114">Example:</span></span>
+<span data-ttu-id="96ba6-112">Até 12 campos de pesquisa podem ser solicitados em uma única consulta.</span><span class="sxs-lookup"><span data-stu-id="96ba6-112">Up to 12 lookup fields may be requested in a single query.</span></span>
+<span data-ttu-id="96ba6-113">O servidor retornará valores de pesquisa se sua solicitação incluir uma instrução `select` com os campos necessários.</span><span class="sxs-lookup"><span data-stu-id="96ba6-113">The server will return lookup values if your request includes a `select` statement with the fields you need.</span></span>
+<span data-ttu-id="96ba6-114">Exemplo:</span><span class="sxs-lookup"><span data-stu-id="96ba6-114">Example:</span></span>
 
 ```http
 GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expand=fields(select=Author,BookTitle,PageCount)
 ```
 
-<span data-ttu-id="97b7d-115">você pode solicitar até 12 campos de pesquisa em uma única consulta, além de qualquer número de campos normais.</span><span class="sxs-lookup"><span data-stu-id="97b7d-115">You may request up to 12 lookup fields in a single query, plus any number of regular fields.</span></span>
+<span data-ttu-id="96ba6-115">você pode solicitar até 12 campos de pesquisa em uma única consulta, além de qualquer número de campos normais.</span><span class="sxs-lookup"><span data-stu-id="96ba6-115">You may request up to 12 lookup fields in a single query, plus any number of regular fields.</span></span>
 
 <!-- {
   "type": "#page.annotation",
