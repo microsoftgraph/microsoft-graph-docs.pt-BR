@@ -1,34 +1,34 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Carregar arquivos pequenos
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 30899a94783018580227e0d753169bf391ac081d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 59036213350b3efa5c22fd277328176999bbbc11
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27991542"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481507"
 ---
-# <a name="upload-or-replace-the-contents-of-a-driveitem"></a><span data-ttu-id="4fc11-102">Carregar ou substituir o conteúdo de um DriveItem</span><span class="sxs-lookup"><span data-stu-id="4fc11-102">Upload or replace the contents of a DriveItem</span></span>
+# <a name="upload-or-replace-the-contents-of-a-driveitem"></a><span data-ttu-id="4a363-102">Carregar ou substituir o conteúdo de um DriveItem</span><span class="sxs-lookup"><span data-stu-id="4a363-102">Upload or replace the contents of a DriveItem</span></span>
 
-<span data-ttu-id="4fc11-p101">A API de upload simples permite que você forneça o conteúdo de um novo arquivo ou atualize o conteúdo de um arquivo existente em uma única chamada à API. Este método só dá suporte a arquivos com até 4 MB de tamanho.</span><span class="sxs-lookup"><span data-stu-id="4fc11-p101">The simple upload API allows you to provide the contents of a new file or update the contents of an existing file in a single API call. This method only supports files up to 4MB in size.</span></span>
+<span data-ttu-id="4a363-p101">A API de upload simples permite que você forneça o conteúdo de um novo arquivo ou atualize o conteúdo de um arquivo existente em uma única chamada à API. Este método só dá suporte a arquivos com até 4 MB de tamanho.</span><span class="sxs-lookup"><span data-stu-id="4a363-p101">The simple upload API allows you to provide the contents of a new file or update the contents of an existing file in a single API call. This method only supports files up to 4MB in size.</span></span>
 
-<span data-ttu-id="4fc11-105">Para carregar arquivos grandes, confira [Carregar arquivos grandes com uma sessão de carregamento](driveitem-createuploadsession.md).</span><span class="sxs-lookup"><span data-stu-id="4fc11-105">To upload large files see [Upload large files with an upload session](driveitem-createuploadsession.md).</span></span>
+<span data-ttu-id="4a363-105">Para carregar arquivos grandes, confira [Carregar arquivos grandes com uma sessão de carregamento](driveitem-createuploadsession.md).</span><span class="sxs-lookup"><span data-stu-id="4a363-105">To upload large files see [Upload large files with an upload session](driveitem-createuploadsession.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="4fc11-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="4fc11-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="4a363-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="4a363-106">Permissions</span></span>
 
-<span data-ttu-id="4fc11-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4fc11-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="4a363-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4a363-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="4fc11-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="4fc11-109">Permission type</span></span>      | <span data-ttu-id="4fc11-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="4fc11-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="4a363-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="4a363-109">Permission type</span></span>      | <span data-ttu-id="4a363-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="4a363-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="4fc11-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="4fc11-111">Delegated (work or school account)</span></span> | <span data-ttu-id="4fc11-112">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4fc11-112">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="4fc11-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="4fc11-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4fc11-114">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4fc11-114">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="4fc11-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="4fc11-115">Application</span></span> | <span data-ttu-id="4fc11-116">Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4fc11-116">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="4a363-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="4a363-111">Delegated (work or school account)</span></span> | <span data-ttu-id="4a363-112">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4a363-112">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="4a363-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="4a363-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4a363-114">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4a363-114">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="4a363-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="4a363-115">Application</span></span> | <span data-ttu-id="4a363-116">Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4a363-116">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request-to-replace-an-existing-item"></a><span data-ttu-id="4fc11-117">Solicitação HTTP (para substituir um item existente)</span><span class="sxs-lookup"><span data-stu-id="4fc11-117">HTTP request (to replace an existing item)</span></span>
+## <a name="http-request-to-replace-an-existing-item"></a><span data-ttu-id="4a363-117">Solicitação HTTP (para substituir um item existente)</span><span class="sxs-lookup"><span data-stu-id="4a363-117">HTTP request (to replace an existing item)</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -40,7 +40,7 @@ PUT /sites/{site-id}/drive/items/{item-id}/content
 PUT /users/{user-id}/drive/items/{item-id}/content
 ```
 
-## <a name="http-request-to-upload-a-new-file"></a><span data-ttu-id="4fc11-118">Solicitação HTTP (para carregar um novo arquivo)</span><span class="sxs-lookup"><span data-stu-id="4fc11-118">HTTP request (to upload a new file)</span></span>
+## <a name="http-request-to-upload-a-new-file"></a><span data-ttu-id="4a363-118">Solicitação HTTP (para carregar um novo arquivo)</span><span class="sxs-lookup"><span data-stu-id="4a363-118">HTTP request (to upload a new file)</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -52,17 +52,17 @@ PUT /sites/{site-id}/drive/items/{parent-id}:/{filename}:/content
 PUT /users/{user-id}/drive/items/{parent-id}:/{filename}:/content
 ```
 
-## <a name="request-body"></a><span data-ttu-id="4fc11-119">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="4fc11-119">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="4a363-119">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="4a363-119">Request body</span></span>
 
-<span data-ttu-id="4fc11-120">O conteúdo do corpo da solicitação deve ser o fluxo binário do arquivo a ser carregado.</span><span class="sxs-lookup"><span data-stu-id="4fc11-120">The contents of the request body should be the binary stream of the file to be uploaded.</span></span>
+<span data-ttu-id="4a363-120">O conteúdo do corpo da solicitação deve ser o fluxo binário do arquivo a ser carregado.</span><span class="sxs-lookup"><span data-stu-id="4a363-120">The contents of the request body should be the binary stream of the file to be uploaded.</span></span>
 
-## <a name="response"></a><span data-ttu-id="4fc11-121">Resposta</span><span class="sxs-lookup"><span data-stu-id="4fc11-121">Response</span></span>
+## <a name="response"></a><span data-ttu-id="4a363-121">Resposta</span><span class="sxs-lookup"><span data-stu-id="4a363-121">Response</span></span>
 
-<span data-ttu-id="4fc11-122">Se for bem-sucedido, este método retornará um objeto [driveItem](../resources/driveitem.md) no corpo da resposta para o arquivo recém-criado ou atualizado.</span><span class="sxs-lookup"><span data-stu-id="4fc11-122">If successful, this method returns a [driveItem](../resources/driveitem.md) object in the response body for the newly created or updated file.</span></span>
+<span data-ttu-id="4a363-122">Se for bem-sucedido, este método retornará um objeto [driveItem](../resources/driveitem.md) no corpo da resposta para o arquivo recém-criado ou atualizado.</span><span class="sxs-lookup"><span data-stu-id="4a363-122">If successful, this method returns a [driveItem](../resources/driveitem.md) object in the response body for the newly created or updated file.</span></span>
 
-## <a name="example-upload-a-new-file"></a><span data-ttu-id="4fc11-123">Exemplo (carregar um novo arquivo)</span><span class="sxs-lookup"><span data-stu-id="4fc11-123">Example (upload a new file)</span></span>
+## <a name="example-upload-a-new-file"></a><span data-ttu-id="4a363-123">Exemplo (carregar um novo arquivo)</span><span class="sxs-lookup"><span data-stu-id="4a363-123">Example (upload a new file)</span></span>
 
-<span data-ttu-id="4fc11-124">Este exemplo carrega a cadeia de caracteres "O conteúdo do arquivo fica aqui".</span><span class="sxs-lookup"><span data-stu-id="4fc11-124">This example uploads the string "The contents of the file goes here."</span></span> <span data-ttu-id="4fc11-125">para um arquivo na unidade do usuário conectado em FolderA chamado FileB.txt.</span><span class="sxs-lookup"><span data-stu-id="4fc11-125">to a file in the signed-in user's drive under FolderA named FileB.txt.</span></span>
+<span data-ttu-id="4a363-124">Este exemplo carrega a cadeia de caracteres "O conteúdo do arquivo fica aqui".</span><span class="sxs-lookup"><span data-stu-id="4a363-124">This example uploads the string "The contents of the file goes here."</span></span> <span data-ttu-id="4a363-125">para um arquivo na unidade do usuário conectado em FolderA chamado FileB.txt.</span><span class="sxs-lookup"><span data-stu-id="4a363-125">to a file in the signed-in user's drive under FolderA named FileB.txt.</span></span>
 
 <!-- { "blockType": "request", "name": "upload-via-put", "scopes": "files.readwrite" } -->
 
@@ -73,9 +73,9 @@ Content-Type: text/plain
 The contents of the file goes here.
 ```
 
-### <a name="response"></a><span data-ttu-id="4fc11-126">Resposta</span><span class="sxs-lookup"><span data-stu-id="4fc11-126">Response</span></span>
+### <a name="response"></a><span data-ttu-id="4a363-126">Resposta</span><span class="sxs-lookup"><span data-stu-id="4a363-126">Response</span></span>
 
-<span data-ttu-id="4fc11-127">Se for bem-sucedido, esse método retornará um [recurso driveItem][item-resource] no corpo da resposta para o arquivo recém-criado.</span><span class="sxs-lookup"><span data-stu-id="4fc11-127">If successful, this method returns an [driveItem][item-resource] resource in the response body for the newly created file.</span></span>
+<span data-ttu-id="4a363-127">Se for bem-sucedido, esse método retornará um recurso [driveItem][item-resource] no corpo da resposta para o arquivo recém-criado.</span><span class="sxs-lookup"><span data-stu-id="4a363-127">If successful, this method returns an [driveItem][item-resource] resource in the response body for the newly created file.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -91,9 +91,9 @@ Content-Type: application/json
 }
 ```
 
-## <a name="example-updating-an-existing-file"></a><span data-ttu-id="4fc11-128">Exemplo (atualizando um arquivo existente)</span><span class="sxs-lookup"><span data-stu-id="4fc11-128">Example (updating an existing file)</span></span>
+## <a name="example-updating-an-existing-file"></a><span data-ttu-id="4a363-128">Exemplo (atualizando um arquivo existente)</span><span class="sxs-lookup"><span data-stu-id="4a363-128">Example (updating an existing file)</span></span>
 
-<span data-ttu-id="4fc11-129">Este exemplo substitui o conteúdo de um arquivo com uma ID conhecida.</span><span class="sxs-lookup"><span data-stu-id="4fc11-129">This example replaces the contents of a file with a known ID.</span></span>
+<span data-ttu-id="4a363-129">Este exemplo substitui o conteúdo de um arquivo com uma ID conhecida.</span><span class="sxs-lookup"><span data-stu-id="4a363-129">This example replaces the contents of a file with a known ID.</span></span>
 
 <!-- { "blockType": "request", "name": "upload-via-put-id", "scopes": "files.readwrite" } -->
 
@@ -104,9 +104,9 @@ Content-Type: text/plain
 The contents of the file goes here.
 ```
 
-### <a name="response"></a><span data-ttu-id="4fc11-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="4fc11-130">Response</span></span>
+### <a name="response"></a><span data-ttu-id="4a363-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="4a363-130">Response</span></span>
 
-<span data-ttu-id="4fc11-131">Se for bem-sucedido, esse método retornará um recurso [driveItem][item-resource] no corpo da resposta para o arquivo recém-criado.</span><span class="sxs-lookup"><span data-stu-id="4fc11-131">If successful, this method returns an [driveItem][item-resource] resource in the response body for the newly created file.</span></span>
+<span data-ttu-id="4a363-131">Se for bem-sucedido, esse método retornará um recurso [driveItem][item-resource] no corpo da resposta para o arquivo recém-criado.</span><span class="sxs-lookup"><span data-stu-id="4a363-131">If successful, this method returns an [driveItem][item-resource] resource in the response body for the newly created file.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -122,9 +122,9 @@ Content-Type: application/json
 }
 ```
 
-## <a name="error-responses"></a><span data-ttu-id="4fc11-132">Respostas de erro</span><span class="sxs-lookup"><span data-stu-id="4fc11-132">Error responses</span></span>
+## <a name="error-responses"></a><span data-ttu-id="4a363-132">Respostas de erro</span><span class="sxs-lookup"><span data-stu-id="4a363-132">Error responses</span></span>
 
-<span data-ttu-id="4fc11-133">Confira mais detalhes sobre como os erros são retornados em [Respostas de erro][error-response].</span><span class="sxs-lookup"><span data-stu-id="4fc11-133">See [Error Responses][error-response] for details about how errors are returned.</span></span>
+<span data-ttu-id="4a363-133">Confira mais detalhes sobre como os erros são retornados em [Respostas de erro][error-response].</span><span class="sxs-lookup"><span data-stu-id="4a363-133">See [Error Responses][error-response] for details about how errors are returned.</span></span>
 
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
