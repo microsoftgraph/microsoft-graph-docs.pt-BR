@@ -3,12 +3,12 @@ title: Usar a API do feed de atividades no Microsoft Graph para habilitar experi
 description: Quando você usa atividades, essas experiências da Microsoft podem começar a gerar interações com seu aplicativo. Você também pode exibir as atividades nos seus aplicativos para ajudar os usuários retomarem o que estavam fazendo em qualquer dispositivo e qualquer plataforma, incluindo Windows, Android e iOS.
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: d264ca473dae66a945144c69cb64416d7c703611
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 8e65615d46e795f1bd4d11d68ff291d938ac6c82
+ms.sourcegitcommit: 889145f924d50e7fe6abf3f59261197826b532a1
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27964939"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29760857"
 ---
 # <a name="using-the-activity-feed-api-in-microsoft-graph-to-enable-cross-device-experiences"></a>Usar a API do feed de atividades no Microsoft Graph para habilitar experiências entre dispositivos
 
@@ -25,8 +25,6 @@ Ao renderizar atividades em experiências da Microsoft como a Linha do Tempo do 
 
 ### <a name="let-microsoft-help-drive-app-usage-with-features-that-reach-hundreds-of-millions-of-customers"></a>Permitir que a Microsoft ajude a gerar mais uso para seu aplicativo com recursos que alcançam centenas de milhões de clientes
 A integração com as atividades do usuário permite que os usuários retomem facilmente atividades em seu aplicativo e também utilizem um conjunto crescente de experiências da Microsoft para o Windows, o iOS e o Android: experiências projetadas para aumentar a produtividade do usuário e ajudar os usuários a interagir com seu aplicativo em todos os dispositivos. Ao usar o Microsoft Graph, é possível integrar-se com atividades de usuários apenas uma vez e alcançar centenas de milhões de clientes e dezenas de milhões de clientes em organizações que usam o Windows, além de produtos da Microsoft para dispositivos iOS e Android.
-
-![Captura de tela da Linha do Tempo do Windows](https://winblogs.azureedge.net/win/2017/05/22-591a3ec9833f4.jpg)
 
 ## <a name="see-also"></a>Confira também
 

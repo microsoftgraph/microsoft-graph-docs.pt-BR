@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SharedDriveItem
 localization_priority: Normal
-ms.openlocfilehash: 22e449d725b94b7be458261e82cfde0b5d6fdf9c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: b146fdf0f7ee2e2037fcb1d36511d0afa503005b
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524118"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480625"
 ---
 # <a name="shareddriveitem-resource-type"></a>Tipo de recurso SharedDriveItem
 
@@ -61,14 +61,14 @@ O recurso **sharedDriveItem** é derivado de [**baseItem**](baseitem.md) e herda
 | **driveItem**     | [**driveItem**][driveItem] | Usado para acessar o **driveItem** subjacente
 | **list**          | [**list**][list]           | Usado para acessar a **lista** subjacente
 | **listItem**      | [**listItem**][listItem]   | Usado para acessar o **listItem** subjacente
-| **permission**    | **Permissão** | Usado para acessar a **permissão** que representa o link subjacente de compartilhamento
+| **permission**    | [**autorização**][permission] | Usado para acessar a **permissão** que representa o link de compartilhamento subjacente
 | **site**          | [**site**][site]           | Usado para acessar o **site** subjacente
 
 Como alternativa, para **driveItems** compartilhados de contas pessoais do OneDrive, as relações a seguir também podem ser usadas.
 
 | Nome da relação | Tipo                         | Descrição
 | ------------------|:-----------------------------|:-----------------------------------
-| **items**         | Coleção [**driveItem**][driveItem] | Todos os driveItems contidos na raiz de compartilhamento. Não é possível enumerar este conjunto.
+| **items**         | Coleção [**driveItem**][driveItem] | Todos os driveItems contidos na raiz de compartilhamento. Não é possível enumerar esta coleção.
 | **driveItem**     | [**driveItem**][driveItem]            | Usado para acessar o **driveItem** subjacente
 
 [driveItem]: driveitem.md

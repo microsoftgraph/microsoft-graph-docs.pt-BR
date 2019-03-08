@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: File
 localization_priority: Normal
-ms.openlocfilehash: 5812cffd4f7efbcd368cd576df0e16f4aedb7f1a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 219398ea62b825797479bef0b7a2bf52d014c8c0
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528414"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480402"
 ---
 # <a name="file-resource-type"></a>Tipo de recurso File
 
@@ -17,7 +17,7 @@ ms.locfileid: "29528414"
 
 O recurso **File** agrupa itens de dados relacionados a arquivos em uma única estrutura.
 
-Se um DriveItem tiver uma faceta file não nula, o item representa um arquivo. Além de outras propriedades, os arquivos têm um relacionamento content, que contém o fluxo de bytes do arquivo.
+Se um [**DriveItem**](driveitem.md) tiver uma faceta **file** não nula, o item representa um arquivo. Além de outras propriedades, os arquivos têm um relacionamento **content**, que contém o fluxo de bytes do arquivo.
 
 ## <a name="json-representation"></a>Representação JSON
 

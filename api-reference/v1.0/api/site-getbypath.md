@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Acessar site do SharePoint pelo caminho
+title: Obter site do SharePoint por caminho
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: baf8b4a8d319450d7558bdcf73c34dc7845d0c57
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4ecef58fb6d4ae63c5976bfce10aed0c47b408d1
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27948804"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481731"
 ---
 # <a name="get-a-site-resource-by-path"></a>Obter um recurso de site pelo caminho
 
@@ -20,7 +20,7 @@ Recupere as propriedades e as relações de um recurso [site][]. Um recurso **si
 
 Além de recuperar um [site pelo ID](site-get.md), você pode recuperar um site com base no caminho da URL relativa ao servidor.
 
-* Nome do host do conjunto de sites (contoso.sharepoint.com)
+* Hostname do conjunto de sites (contoso.sharepoint.com)
 * Caminho do site, em relação ao nome de host do servidor.
 
 Há também um identificador de site reservado, `root`, que sempre faz referência ao site raiz de um determinado destino da seguinte maneira:

@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: ColumnDefinition
 localization_priority: Normal
-ms.openlocfilehash: 598a781c25dd9271be84eb3dfc16b1e5ff439298
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 679f0139f7ad0e94eab1970cc113268a56722663
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862878"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481878"
 ---
 # <a name="columndefinition-resource"></a>Recurso ColumnDefinition
 
@@ -58,7 +58,7 @@ O recurso **columnDefinition** tem as seguintes propriedades.
 |:------------------------|:--------|:-----------------------------------------
 | **columnGroup**         | string  | Para colunas de site, o nome do grupo ao qual esta coluna pertence. Ajuda a organizar as colunas relacionadas.
 | **description**         | string  | A descrição voltado para o usuário da coluna.
-| **displayName**         | string  | O nome voltado para o usuário da coluna.
+| **displayName**         | cadeia de caracteres  | O nome voltado para o usuário da coluna.
 | **enforceUniqueValues** | booliano | Se for verdadeiro, esse mesmo valor não constará em dois itens de lista nessa coluna.
 | **hidden**              | booliano | Especifica se a coluna é exibida na interface do usuário.
 | **id**                  | string  | O identificador exclusivo da coluna.
@@ -85,7 +85,7 @@ Essas propriedades são mutuamente exclusivas: uma coluna só pode ter uma delas
 | **text**          | [textColumn][]          | Esta coluna armazena valores de texto.
 
 Observação: essas propriedades correspondem à enumeração [SPFieldType][] do SharePoint.
-Enquanto os tipos mais comuns de campo são representados acima, essa API ainda faltam alguns.
+Embora os tipos de campo mais comuns sejam representados acima, essa API ainda não tem alguns.
 nestes casos, nenhuma das facetas do tipo de coluna serão preenchidas, e a coluna só terá as propriedades básicas.
 
 ## <a name="remarks"></a>Comentários

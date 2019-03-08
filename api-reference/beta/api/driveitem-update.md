@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Atualizar um arquivo ou uma pasta
+title: Atualizar um arquivo ou pasta
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 5a10caf65846418013712e89ade7a182726c80a8
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 8da5c90383e7f73012bf86d668316c6443372425
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514597"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480618"
 ---
 # <a name="update-driveitem-properties"></a>Atualizar propriedades de DriveItem
 

@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: GeoCoordinates
 localization_priority: Normal
-ms.openlocfilehash: 33390fa893e99ffb0d7c44642c42751c66265ec8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: cafd9d72e6c7959b32672744959393ae9478c5b1
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885509"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481955"
 ---
 # <a name="geocoordinates-resource-type"></a>Tipo de recurso GeoCoordinates
 
@@ -39,8 +39,8 @@ Veja a seguir uma representação JSON do recurso
 
 | Propriedade  | Tipo   | Descrição
 |:----------|:-------|:--------------------------------------------------------
-| altitude  | Double | Opcional. A altitude (altura), em pés, acima do nível do mar para o item. Somente leitura.
-| latitude  | Double | Opcional. A latitude, em valor decimal, para o item. Somente leitura.
+| altitude  | Duplo | Opcional. A altitude (altura), em pés, acima do nível do mar para o item. Somente leitura.
+| latitude  | Duplo | Opcional. A latitude, em valor decimal, para o item. Somente leitura.
 | longitude | Double | Opcional. A longitude, em valor decimal, para o item. Somente leitura.
 
 ## <a name="remarks"></a>Comentários

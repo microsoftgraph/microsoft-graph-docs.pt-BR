@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Compartilhar um arquivo com um link
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: e80e27860216227e80780f637daedf0cc8b095b3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 94081dc75945e938e8559f9535d2f15832865dd6
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27923037"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480688"
 ---
 # <a name="create-a-sharing-link-for-a-driveitem"></a>Criar um link de compartilhamento para um DriveItem
 
@@ -70,8 +70,8 @@ Se o parâmetro **scope** não for especificado, o tipo de link padrão será cr
 
 | Valor          | Descrição
 |:---------------|:------------------------------------------------------------
-| `anonymous`    | Qualquer pessoa com o link possui acesso, sem precisar entrar. Isso pode incluir pessoas fora da sua organização. Suporte ao link anônimos pode ser desabilitado por um administrador.
-| `organization` | Qualquer pessoa entrado na sua organização (inquilino) pode usar o link para obter acesso. Disponível somente no OneDrive for Business e o SharePoint.
+| `anonymous`    | Qualquer pessoa com o link tem acesso, sem a necessidade de fazer logon. Isso pode incluir pessoas de fora da sua organização. O suporte a link anônimo pode ser desabilitado por um administrador.
+| `organization` | Qualquer pessoa que se inscreveu em sua organização (locatário) pode usar o link para obter acesso. Disponível apenas no OneDrive for Business e no SharePoint.
 
 
 ## <a name="response"></a>Resposta

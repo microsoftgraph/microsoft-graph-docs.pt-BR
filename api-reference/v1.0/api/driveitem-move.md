@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Mover um arquivo ou uma pasta
+title: Mover um arquivo ou pasta
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: e4ed7dd226b85d0b2ccf34acf935e342bf0c4ee9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 385c2d9013544b60be5d11fd13ce29df1a6a8ee0
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27981767"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481829"
 ---
 # <a name="move-a-driveitem-to-a-new-folder"></a>Mover um DriveItem para uma nova pasta
 

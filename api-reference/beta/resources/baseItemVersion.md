@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/17/2017
 title: BaseItemVersion
 localization_priority: Normal
-ms.openlocfilehash: fcf427300007277f7ea6382579ad3a0929ca97d1
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: 56a2c230c53c4b5bd50e8c123dd69eedec67a141
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643021"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480667"
 ---
 # <a name="baseitemversion-resource-type"></a>Tipo de recurso BaseItemVersion
 

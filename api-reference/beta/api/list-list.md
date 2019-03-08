@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: Lista as listas do SharePoint em um site
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: f7adfeba7f46eb7ed8541405221a1257637c2157
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: c91d7f8f395faa48965cb8334e1cc9eba78b978c
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512441"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480709"
 ---
 # <a name="enumerate-lists-in-a-site"></a>Enumerar listas em um site
 
@@ -86,7 +86,7 @@ Content-type: application/json
 Listas com a faceta [system][] estão ocultas por padrão.
 Para listá-los, inclua `system` na instrução `$select`.
 
-[sistema]: ../resources/systemfacet.md
+[system]: ../resources/systemfacet.md
 
 <!--
 {

@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Sincronizar o conteúdo de uma unidade
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 17dc3a718260a5a40f1b9b8e778247354085f711
-ms.sourcegitcommit: a1f1e59ee568340bfabdb524e01cff7860bcc862
+ms.openlocfilehash: 907c24a85230124473c6db5c067113e5c7d60ab5
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "29735583"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480485"
 ---
 # <a name="track-changes-for-a-drive"></a>Controlar alterações para uma unidade
 
@@ -52,7 +52,7 @@ GET /users/{userId}/drive/root/delta
 
 | Parâmetro   | Tipo  | Descrição                                                                                                                          |
 |:-------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
-| token  | string | Opcional. Se não for especificado, enumera o estado atual da hierarquia. Se `latest`, retorna esvaziar a resposta com o token de delta mais recente. Se um token delta anterior, retorna o novo estado desde esse token.
+| token  | string | Opcional. Quando não é especificado, enumera o estado da hierarquia atual. Quando é `latest`, retorna uma resposta vazia com o token delta mais recente. Quando é um token delta anterior, retorna o novo estado após o token.
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
@@ -206,24 +206,24 @@ Content-type: application/json
 * O feed delta mostra o estado mais recente de cada item, e não cada alteração. Se um item tiver sido renomeado duas vezes, ele só aparecerá uma vez, com seu nome mais recente.
 * O mesmo item pode aparecer mais de uma vez em um feed delta, por vários motivos. Você deve usar a última ocorrência que visualizar.
 * A propriedade `parentReference` em itens não incluirá um valor para **path**. Isso ocorre porque a renomeação de uma pasta não faz com que os descendentes dessa pasta sejam retornados de **delta**. **Ao usar delta, você sempre deve controlar itens por id**.
-* No OneDrive for Business e no SharePoint, `delta` só tem suporte na pasta `root`, e não em outras pastas dentro de uma unidade.
+* No OneDrive for Business e no SharePoint, `delta` tem suporte apenas na pasta `root`, e não em outras pastas dentro de uma unidade.
 
-* Delta consulta não retornará algumas propriedades DriveItem, dependendo da operação e o tipo de serviço, conforme mostrado nas tabelas a seguir.
+* A consulta delta não retornará algumas propriedades DriveItem, dependendo da operação e do tipo de serviço, conforme mostrado nas tabelas a seguir.
 
     **OneDrive for Business**
     
     | Tipo de operação | Propriedades omitidas pela consulta delta |
     |---------|----------|
-    | Criar/modificar | `ctag`, `lastModifiedBy` |
-    | Delete | `ctag`, `lastModifiedBy`, `name` |
+    | Criar/Modificar | `ctag`, `lastModifiedBy` |
+    | Excluir | `ctag`, `lastModifiedBy`, `name` |
 
 
-    **OneDrive (cliente)**
+    **OneDrive (consumidor)**
     
     | Tipo de operação | Propriedades omitidas pela consulta delta |
     |---------|----------|
-    | Criar/modificar | n/d |
-    | Delete | `ctag`, `size` |
+    | Criar/Modificar | n/d |
+    | Excluir | `ctag`, `size` |
 
 ## <a name="error-responses"></a>Respostas de erro
 

@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SiteCollection
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 865fc21691eb37811300caaf675b123d1a544ac0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: e9525882b08aaae5500ce23a4b54e95d0b0e0d65
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528127"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481801"
 ---
 # <a name="sitecollection-resource"></a>Recurso SiteCollection
 
@@ -46,7 +46,7 @@ Veja a seguir uma representação JSON do recurso.
 |:---------------------|:---------|:---------------------------------------------------
 | **hostname**         | string   | O nome do host do conjunto de sites. Somente leitura.
 | **dataLocationCode** | string   | O código de região geográfica para onde esse conjunto de sites reside. Somente leitura.
-| **root**             | [root][] | Se presente, indica que este é um conjunto de sites raiz no SharePoint. Somente leitura.
+| **root**             | [root][] | Se presente, indica que esse é um conjunto de sites raiz no SharePoint. Somente leitura.
 
 [root]: root.md
 

@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Obter permissões
 localization_priority: Normal
-ms.openlocfilehash: 1af1cdaa434a95ed77da360334c88dd653d8747a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 05faf2bdeccc5f1ed1dadc484cf690473902d941
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520022"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482291"
 ---
 # <a name="get-sharing-permission-for-a-file-or-folder"></a>Obter permissão de compartilhamento para um arquivo ou pasta
 
@@ -21,7 +21,7 @@ Permissões efetivas de um item podem vir de duas fontes: permissões definidas 
 
 Os chamadores podem diferenciar se a permissão é herdada ou não verificando a propriedade `inheritedFrom` Esta propriedade é um recurso [itemReference](../resources/itemreference.md) que faz referência ao ancestral do qual a permissão é herdada.
 
-Níveis de permissão do SharePoint definidos em um item retornam com um prefixo 'SP'. Por exemplo, SP.Somente exibição, SP.Acesso limitado, SP.Exibir Dados do Web Analytics. Consulte a [Lista completa de funções do SharePoint](https://technet.microsoft.com/en-us/library/cc721640.aspx#section1).
+Níveis de permissão do SharePoint definidos em um item retornam com um prefixo 'SP'. Por exemplo, SP.Somente exibição, SP.Acesso limitado, SP.Exibir Dados do Web Analytics. Confira a [Lista completa de funções do SharePoint](https://technet.microsoft.com/en-us/library/cc721640.aspx#section1).
 
 ## <a name="permissions"></a>Permissões
 

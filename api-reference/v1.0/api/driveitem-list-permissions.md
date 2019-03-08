@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Listar quem tem acesso a um arquivo
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: c85ca498cbdfce27e5fff549b3d75c89a805109d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 1157aaafbcebe784acef9c08ff3987a0921ef833
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27938283"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481913"
 ---
 # <a name="list-sharing-permissions-on-a-driveitem"></a>Listar permissões de compartilhamento em um DriveItem
 
@@ -68,7 +68,7 @@ As permissões efetivas de compartilhamento de um DriveItem podem vir de duas fo
 
 Os chamadores podem diferenciar se a permissão é herdada ou não verificando a propriedade **inheritedFrom**. Esta propriedade é um recurso [**itemReference**](../resources/itemreference.md) que referencia o ancestral do qual a permissão é herdada.
 
-Níveis de permissão do SharePoint definidos em um item retornam com um prefixo 'SP'. Por exemplo, SP.Somente exibição, SP.Acesso limitado, SP.Exibir Dados do Web Analytics. Consulte a [Lista completa de funções do SharePoint](https://technet.microsoft.com/en-us/library/cc721640.aspx#section1).
+Níveis de permissão do SharePoint definidos em um item retornam com um prefixo 'SP'. Por exemplo, SP.Somente exibição, SP.Acesso limitado, SP.Exibir Dados do Web Analytics. Confira a [Lista completa de funções do SharePoint](https://technet.microsoft.com/en-us/library/cc721640.aspx#section1).
 
 ## <a name="example"></a>Exemplo
 

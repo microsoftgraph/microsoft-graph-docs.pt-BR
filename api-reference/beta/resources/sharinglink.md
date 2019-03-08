@@ -1,23 +1,23 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SharingLink
 localization_priority: Normal
-ms.openlocfilehash: c21c891981106faa4b631bb2713913bfa8ed0713
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 7f0ecdbb498ee75133ec9499027f7cfdc6191327
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521450"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480415"
 ---
-# <a name="sharinglink-resource-type"></a>Tipo de recurso SharingLink
+# <a name="sharinglink-resource-type"></a>tipo de recurso sharingLink
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O recurso **SharingLink** agrupa itens de dados relacionados ao link em uma única estrutura.
+O recurso **sharingLink** agrupa itens de dados relacionados ao link em uma única estrutura.
 
-Se um recurso [**Permission**](permission.md) tiver uma faceta **sharingLink** não nula, a permissão representará um link de compartilhamento (em vez de permissões concedidas a uma pessoa ou um grupo).
+Se um recurso de [**permissão**](permission.md) tiver uma faceta **sharingLink** não nula, a permissão representa um link de compartilhamento (em oposição às permissões concedidas a uma pessoa ou grupo).
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -46,8 +46,8 @@ Veja a seguir uma representação JSON do recurso.
 |:---------------|:--------------|:-------------------------------------
 | aplicativo    | [identity][]  | O aplicativo ao qual o link está associado.
 | type           | String        | O tipo do link criado.
-| scope          | String        | O escopo do link representado por esta permissão. O valor `anonymous` indica que o link é utilizável por qualquer pessoa; `organization` indica que o link só é útil para usuários conectados ao mesmo locatário.
-| preventsDownload | Booliano       | Se for true, em seguida, o usuário só pode usar este link para exibir o item na web e não pode ser usado para baixar o conteúdo do item. Somente para OneDrive for Business e o SharePoint.
+| scope          | Cadeia de caracteres        | O escopo do link representado por esta permissão. O valor `anonymous` indica que o link é utilizável por qualquer pessoa; `organization` indica que o link só é útil para usuários conectados ao mesmo locatário.
+| preventsDownload | Boolean       | Se true, o usuário só pode usar este link para exibir o item na Web e não pode usá-lo para baixar o conteúdo do item. Somente para o OneDrive for Business e o SharePoint.
 | webHtml        | String        | Para links `embed`, essa propriedade contém o código HTML para um elemento `<iframe>` que inserirá o item em uma página da Web.
 | webUrl         | String        | Uma URL que abre o item no navegador no site do OneDrive.
 
@@ -55,7 +55,7 @@ Veja a seguir uma representação JSON do recurso.
 
 ### <a name="type-options"></a>Opções de tipo
 
-A tabela a seguir define os valores possíveis para a propriedade **type** .
+A tabela a seguir define os valores possíveis para a propriedade **Type** .
 
 | Valor    | Função     | Descrição
 |:---------|:---------|:---------------------------------------------------------
@@ -65,14 +65,14 @@ A tabela a seguir define os valores possíveis para a propriedade **type** .
 
 ### <a name="scope-options"></a>Opções de escopo
 
-A tabela a seguir define os valores possíveis para a propriedade de **escopo** .
+A tabela a seguir define os valores possíveis para a propriedade **Scope** .
 
 | Valor            | Descrição
 |:-----------------|:------------------------------------------------------------
-| `anonymous`      | Qualquer pessoa com o link possui acesso, sem precisar entrar. Isso pode incluir pessoas fora da sua organização.
-| `organization`   | Qualquer pessoa entrado na sua organização (inquilino) pode usar o link para obter acesso. Disponível somente no OneDrive for Business e o SharePoint.
-| `existingAccess` | Somente as pessoas que já tiverem sido concedidas acesso ao item por outros meios podem acessar o item usando este link. Disponível somente no OneDrive for Business e o SharePoint.
-| `users`          | O link concede acesso somente a uma lista específica de pessoas. Disponível somente no OneDrive for Business e o SharePoint.
+| `anonymous`      | Qualquer pessoa com o link tem acesso, sem a necessidade de fazer logon. Isso pode incluir pessoas de fora da sua organização.
+| `organization`   | Qualquer pessoa que se inscreveu em sua organização (locatário) pode usar o link para obter acesso. Disponível apenas no OneDrive for Business e no SharePoint.
+| `existingAccess` | Somente as pessoas que já receberam acesso ao item por meio de outros meios podem acessar o item usando este link. Disponível apenas no OneDrive for Business e no SharePoint.
+| `users`          | O link concede acesso somente a uma lista específica de pessoas. Disponível apenas no OneDrive for Business e no SharePoint.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

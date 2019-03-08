@@ -1,17 +1,17 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/14/2017
 title: Identidade
 localization_priority: Normal
-ms.openlocfilehash: 1ac2aea59ab0d6b09ae613b72fbfbf924240a4a0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 1f2d1f5a305698438748ee69f73b4143b8afd8fa
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518790"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481563"
 ---
-# <a name="identity-resource-type"></a>tipo de recurso de identidade
+# <a name="identity-resource-type"></a>tipo de recurso Identity
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -36,7 +36,7 @@ O recurso **Identity** representa uma identidade de um _actor_. Por exemplo, e a
 |:--------------------|:-------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | displayName         | String | Nome de exibição da identidade. Talvez isso nem sempre esteja disponível ou atualizado. Por exemplo, se um usuário troca seu nome de exibição, a API pode mostrar o novo valor em uma resposta futura, mas os itens associados ao usuário não aparecem como tendo sido alterados ao se usar [delta](../api/driveitem-delta.md).  |
 | id                  | String | Identificador exclusivo da identidade.                                                                                                                                                                                                                                                                                   |
-| tenantId            | String | Identidade exclusiva do inquilino (opcional).                                                                                                                                                                                                                                                                             |
+| tenantId            | String | Identidade exclusiva do locatário (opcional).                                                                                                                                                                                                                                                                             |
 
 ## <a name="remarks"></a>Comentários
 

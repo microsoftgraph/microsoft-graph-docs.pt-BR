@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Copiar um arquivo ou uma pasta
+title: Copiar um arquivo ou pasta
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 378f47d380e6d144791d3551a398d1dcd0886295
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: cdb22395cfde6820eb5450f39bd1e3408a4f82b2
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517551"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481899"
 ---
 # <a name="copy-a-driveitem"></a>Copiar um DriveItem
 
@@ -45,7 +45,7 @@ POST /users/{userId}/drive/items/{itemId}/copy
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 
-| Name            | Valor                                          | Descrição                                                                                                 |
+| Nome            | Valor                                          | Descrição                                                                                                 |
 |:----------------|:-----------------------------------------------|:------------------------------------------------------------------------------------------------------------|
 | parentReference | [ItemReference](../resources/itemreference.md) | Opcional. Referência ao item pai em que a cópia será criada.                                         |
 | name            | string                                         | Opcional. O novo nome para a cópia. Se isso não for fornecido, será usado o mesmo nome que o original.    |
@@ -83,8 +83,7 @@ HTTP/1.1 202 Accepted
 Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
 ```
 
-O valor do cabeçalho `Location` fornece uma URL para um serviço que irá retornar o estado atual da operação de cópia.
-Você pode usar essas informações para [determinar quando a cópia terminou](/graph/long-running-actions-overview).
+O valor do cabeçalho `Location` fornece uma URL para um serviço que irá retornar o estado atual da operação de cópia. Você pode usar essas informações para [determinar quando a cópia terminou](/graph/long-running-actions-overview).
 
 ### <a name="remarks"></a>Comentários
 

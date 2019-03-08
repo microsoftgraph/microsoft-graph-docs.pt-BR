@@ -1,17 +1,17 @@
 ---
-title: Criar ação de segurança
-description: Criar um novo objeto de ação de segurança. "
+title: Criar securityAction
+description: Criar um novo objeto SecurityAction. "
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: e1958f80219234fcae54220491629a921dd8bcfd
-ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
+ms.openlocfilehash: c8f9e98e57a351bd17776c77449f7d1ff8d8a897
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30366886"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482011"
 ---
-# <a name="create-security-action"></a>Criar ação de segurança
+# <a name="create-securityaction"></a>Criar securityAction
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,9 +23,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | SecurityActions. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     | SecurityActions.ReadWrite.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | SecurityActions. ReadWrite. All |
+| Aplicativo                            | SecurityActions.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 

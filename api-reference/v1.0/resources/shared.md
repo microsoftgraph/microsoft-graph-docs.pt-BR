@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Compartilhados
 localization_priority: Normal
-ms.openlocfilehash: 3478a8911a402bf86a04f196d87409e7cddb246e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: af426d5e51f87b9fd8894c6e956947cc75f1a38d
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868072"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481794"
 ---
 # <a name="shared-resource-type"></a>Tipo de recurso Shared
 
@@ -39,7 +39,7 @@ Se um [**Driveitem**](driveitem.md) tem uma faceta **shared** não nula, o item 
 | Propriedade       | Tipo                          | Descrição
 | :------------- |:------------------------------|:----------------------------
 | owner          | [IdentitySet](identityset.md) | A identidade do proprietário do item compartilhado. Somente leitura.
-| scope          | String                        | Indica o escopo de como o item é compartilhado: `anonymous`, `organization` ou `users`. Somente leitura.
+| escopo          | String                        | Indica o escopo de como o item é compartilhado: `anonymous`, `organization` ou `users`. Somente leitura.
 | sharedBy       | [identitySet](identityset.md) | A identidade do usuário que compartilhou o item. Somente leitura.
 | sharedDateTime | DateTimeOffset                | A data e a hora UTC que o item foi compartilhado. Somente leitura.
 
@@ -53,7 +53,7 @@ Se um [**Driveitem**](driveitem.md) tem uma faceta **shared** não nula, o item 
 
 ## <a name="remarks"></a>Comentários
 
-Para saber mais sobre as facetas de um **driveItem**, consulte [**driveItem**](driveitem.md).
+Para saber mais sobre as facetas de um **driveItem**, confira [**driveItem**](driveitem.md).
 
 <!-- {
   "type": "#page.annotation",

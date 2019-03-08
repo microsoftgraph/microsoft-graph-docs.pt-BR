@@ -4,12 +4,12 @@ description: Você pode usar a API de Segurança do Microsoft Graph para se cone
 author: preetikr
 localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: cde6b57d5b02ab25d6cd86b2db2ce1a7438558e5
-ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
+ms.openlocfilehash: b4a858182f1fca4ce123af05d271d68fc13088f5
+ms.sourcegitcommit: 2937b0e8983baf1b3d244c72a6ae3a211b17a1bd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30364546"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "30376418"
 ---
 # <a name="microsoft-graph-security-api-overview"></a>Visão geral da API de Segurança do Microsoft Graph
 
@@ -45,19 +45,19 @@ Marque os alertas com contexto adicional ou inteligência contra ameaças para i
 
 Aprofunde seus conhecimentos sobre inventários relevantes relacionados à segurança relevantes (como usuários, hosts e aplicativos) e adicione contexto organizacional de outros provedores do Microsoft Graph (Azure AD, Microsoft Intune, Office 365) para reunir os contextos comercial e de segurança e melhorar respostas a ameaças.
 
-## <a name="automate-security-workflows-and-reporting"></a>Automatizar fluxos de trabalho de segurança e relatórios
+### <a name="automate-security-workflows-and-reporting"></a>Automatizar fluxos de trabalho de segurança e relatórios
 
 Automatizar gerenciamento de segurança, monitorar e investigar para melhorar o desempenho operacional e o tempo de resposta. Obter mais informações e contexto ao integrar a segurança do Microsoft Graph em relatórios e painéis.
 
-## <a name="get-deep-insights-to-train-security-solutions"></a>Obtenha insights aprofundados para treinar as soluções de segurança
+### <a name="get-deep-insights-to-train-security-solutions"></a>Obtenha insights aprofundados para treinar as soluções de segurança
 
 Visualize seus dados em vários produtos de segurança diferentes na sua organização para obter insights de segurança aprofundados. Descubra oportunidades para aprender com os dados e treinar suas soluções de segurança. O esquema fornece várias propriedades de tabela dinâmica para construir conjuntos de dados ricos e exploratórios usando os dados de segurança.
 
-## <a name="utilize-your-threat-intelligence-in-microsoft-security-solutions-preview"></a>Utilize sua inteligência contra ameaças em soluções de segurança da Microsoft (visualização)
+### <a name="utilize-your-threat-intelligence-in-microsoft-security-solutions-preview"></a>Utilize sua inteligência contra ameaças em soluções de segurança da Microsoft (visualização)
 
 Enviar automaticamente indicadores de ameaças para soluções de segurança da Microsoft para habilitar `alert`, `block`, ou `allow` ações. Usar a API de segurança do Microsoft Graph diretamente ou aproveitar as integrações com plataformas precisas que possuem inteligência contra ameaças..
 
-## <a name="act-quickly-in-response-to-new-threats-preview"></a>Agir rapidamente em resposta às novas ameaças (visualização)
+### <a name="act-quickly-in-response-to-new-threats-preview"></a>Agir rapidamente em resposta às novas ameaças (visualização)
 
 Habilite a ação swift para se proteger contra novas ameaças, como ações para bloquear arquivos, URLs, domínios ou endereços IP nos fluxos de trabalho e nas ferramentas de segurança.
 

@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: UploadSession
 localization_priority: Normal
-ms.openlocfilehash: c5d15c380908f09ef292b7c5794046bad6e95ac8
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 85e26779d7c7df72a3176290654511ebd0f9493b
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507947"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480261"
 ---
 # <a name="uploadsession-resource"></a>Recurso UploadSession
 
@@ -46,7 +46,7 @@ Veja a seguir uma representação JSON do recurso
 
 ## <a name="see-also"></a>Confira também
 
-- Carregar arquivos grandes em uma sessão de carregamento
+- [Carregar arquivos grandes em uma sessão de carregamento](../api/driveitem-createuploadsession.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

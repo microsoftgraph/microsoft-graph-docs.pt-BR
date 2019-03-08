@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SpecialFolder
 localization_priority: Normal
-ms.openlocfilehash: 4c1facae90ea8981b1e83087d11e2d81a0354617
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: d30c1169d859bdb9299744b92efc6ab737c20851
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820094"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482109"
 ---
 # <a name="specialfolder-resource-type"></a>Tipo de recurso SpecialFolder
 
@@ -49,7 +49,7 @@ As pastas especiais são criadas automaticamente na primeira vez que um aplicati
 
 Aqui estão as pastas especiais disponíveis no OneDrive Personal e no OneDrive for Business.
 
-| Nome        | Id da pasta    | Descrição                                                              |
+| Name        | Id da pasta    | Descrição                                                              |
 |:------------|:-------------|:-------------------------------------------------------------------------|
 | Raiz de Aplicativo    | `approot`    | Pasta pessoal do aplicativo. Geralmente em `/Apps/{Application Name}` |
 | Imagens da Câmera | `cameraroll` | A pasta de Backup de Imagens da Câmera. Não disponível no OneDrive for Business.   |

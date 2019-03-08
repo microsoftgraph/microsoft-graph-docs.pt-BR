@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: FolderView
 localization_priority: Normal
-ms.openlocfilehash: 2b254568ec97bb5bce49e1143dbb83a183fade11
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 01b9860284f87ea31a969055fe2bfc7da624d3b6
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824168"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482004"
 ---
 # <a name="folderview-resource-type"></a>Tipo de recurso FolderView
 
@@ -39,7 +39,7 @@ Está disponível a partir da propriedade [folder][folder-facet] dos recursos [d
 
 Você pode usar a propriedade _sortBy_ para controlar a ordem de classificação dos itens em aplicativos que respeitam a faceta **viewType**.
 
-### <a name="sortby-options"></a>Opções de sortBy
+### <a name="sortby-options"></a>opções de sortBy
 
 Os seguintes valores são definidos para a propriedade **sortBy**.
 
@@ -54,7 +54,7 @@ Os seguintes valores são definidos para a propriedade **sortBy**.
 | `sequence`               | Os itens seguem uma sequência personalizada especificada pelo usuário.
 
 
-### <a name="sortorder-options"></a>Opções de sortOrder
+### <a name="sortorder-options"></a>opções de sortOrder
 
 Os seguintes valores são definidos para a propriedade **sortOrder**.
 
@@ -64,7 +64,7 @@ Os seguintes valores são definidos para a propriedade **sortOrder**.
 | `descending` | Os itens devem ser organizados em ordem decrescente.
 
 
-### <a name="viewtype-options"></a>Opções de viewType
+### <a name="viewtype-options"></a>opções de ViewType
 
 Os seguintes valores são definidos para a propriedade **viewType**.
 

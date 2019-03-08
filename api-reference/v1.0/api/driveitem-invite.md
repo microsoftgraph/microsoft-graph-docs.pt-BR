@@ -1,21 +1,21 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Enviar um convite para acessar um item
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 23e58c063e31f8ad68ac887a4fd1d2cd4dcd5274
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: f7d3a974143b738b966a8953848f4837c16cd6c8
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27976958"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480737"
 ---
 # <a name="send-a-sharing-invitation"></a>Enviar um convite de compartilhamento
 
-Envia um convite de compartilhamento para uma **DriveItem**.
-Um convite de compartilhamento fornece permissões para os destinatários e, opcionalmente, envia um email com um [link de compartilhamento][].
+Envia um convite de compartilhamento para um **DriveItem**.
+Um convite de compartilhamento fornece permissões aos destinatários e, opcionalmente, os envia um email com um [link de compartilhamento][].
 
 ## <a name="permissions"></a>Permissões
 
@@ -62,13 +62,13 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 |:-----------------|:-------------------------------|:-------------------------
 | destinatários       | Collection([DriveRecipient][]) | Uma coleção dos destinatários que receberão o acesso e o convite de compartilhamento.
 | mensagem          | String                         | Uma mensagem de texto sem formatação que está incluída no convite de compartilhamento. Comprimento máximo de 2000 caracteres.
-| requireSignIn    | Booliano                        | Especifica se o destinatário do convite é necessária para entrar para exibir o item compartilhado.
-| sendInvitation   | Booliano                        | Se for true, um [link de compartilhamento][] é enviada ao destinatário. Caso contrário, uma permissão é concedida diretamente, sem enviar a notificação.
-| funções            | Collection(String)             | Especifique as funções que serão concedidas para os destinatários do convite de compartilhamento.
+| requireSignIn    | Boolean                        | Especifica se o destinatário do convite deve entrar para exibir o item compartilhado.
+| sendInvitation   | Booliano                        | Se true, um [link de compartilhamento][] é enviado para o destinatário. Caso contrário, uma permissão é concedida diretamente sem enviar uma notificação.
+| funções            | Collection(String)             | Especifique as funções que devem ser concedidas aos destinatários do convite de compartilhamento.
 
 ## <a name="example"></a>Exemplo
 
-Este exemplo envia um convite de compartilhamento para um usuário com o endereço de email "ryan@contoso.com" com uma mensagem sobre um arquivo que está sendo uniram em.
+Este exemplo envia um convite de compartilhamento para um usuário com o endereço de email "ryan@contoso.com" com uma mensagem sobre um arquivo que está sendo colaborado.
 O convite concede acesso de leitura e gravação ao arquivo para Ryan.
 
 ### <a name="http-request"></a>Solicitação HTTP
@@ -129,14 +129,14 @@ Content-type: application/json
 * [Drives](../resources/drive.md) com **driveType** de `personal` (OneDrive Pessoal) não podem criar ou alterar as permissões no DriveItem raiz.
 * Para obter uma lista das funções disponíveis, consulte [Funções de enumeração](../resources/permission.md#roles-enumeration).
 
-## <a name="error-responses"></a>Respostas de erro
+## <a name="error-responses"></a>Respostas de Erro
 
 Saiba mais sobre como os erros são retornados em [Respostas de erro][error-response].
 
 
 [driveRecipient]: ../resources/driverecipient.md
 [error-response]: /graph/errors
-[compartilhamento de link]: ../resources/permission.md#sharing-links
+[link de compartilhamento]: ../resources/permission.md#sharing-links
 
 <!-- {
   "type": "#page.annotation",

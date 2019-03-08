@@ -4,12 +4,12 @@ description: Criar um novo tiIndicator.
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 893af5a56c517cbd4c100cbaa767aa42c70d74e2
-ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
+ms.openlocfilehash: 440515a45b4c530f32dd20fe29497e338b54a6bf
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30366977"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481437"
 ---
 # <a name="create-threat-intelligence-indicator"></a>Criar indicador de inteligência de ameaças
 
@@ -23,9 +23,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | ThreatIndicators. ReadWrite. OwnedBy  |
+| Delegado (conta corporativa ou de estudante)     | ThreatIndicators.ReadWrite.OwnedBy  |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | ThreatIndicators. ReadWrite. OwnedBy |
+| Aplicativo                            | ThreatIndicators.ReadWrite.OwnedBy |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -43,7 +43,7 @@ POST /security/tiIndicators
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça uma representação JSON de um objeto [tiIndicator](../resources/tiindicator.md) que contém pelo menos um observável.
+No corpo da solicitação, forneça uma representação JSON de um objeto [tiIndicator](../resources/tiindicator.md) que contém pelo menos um [email](../resources/tiindicator.md#indicator-observables---email), [arquivo](../resources/tiindicator.md#indicator-observables---file)ou [rede](../resources/tiindicator.md#indicator-observables---network) observável.
 
 ## <a name="response"></a>Resposta
 

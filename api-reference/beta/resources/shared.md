@@ -1,21 +1,21 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Compartilhados
 localization_priority: Normal
-ms.openlocfilehash: 33b12ea8e530fd862619c9c20e77a76989efb619
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 04504b5257dfc49ad14cbee1f645120dc31a3387
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507695"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480296"
 ---
 # <a name="shared-resource-type"></a>Tipo de recurso Shared
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O recurso Shared indica que um DriveItem foi compartilhado com outras pessoas. O recurso inclui informações sobre como o item é compartilhado.
+O recurso **Shared** indica que um DriveItem foi compartilhado com outras pessoas. O recurso inclui informações sobre como o item é compartilhado.
 
 Se um [**Driveitem**](driveitem.md) tem uma faceta **shared** não nula, o item foi compartilhada.
 
@@ -41,7 +41,7 @@ Se um [**Driveitem**](driveitem.md) tem uma faceta **shared** não nula, o item 
 | Propriedade       | Tipo                          | Descrição
 | :------------- |:------------------------------|:----------------------------
 | owner          | [IdentitySet](identityset.md) | A identidade do proprietário do item compartilhado. Somente leitura.
-| scope          | String                        | Indica o escopo de como o item é compartilhado: `anonymous`, `organization` ou `users`. Somente leitura.
+| escopo          | String                        | Indica o escopo de como o item é compartilhado: `anonymous`, `organization` ou `users`. Somente leitura.
 | sharedBy       | [identitySet](identityset.md) | A identidade do usuário que compartilhou o item. Somente leitura.
 | sharedDateTime | DateTimeOffset                | A data e a hora UTC que o item foi compartilhado. Somente leitura.
 
@@ -55,7 +55,7 @@ Se um [**Driveitem**](driveitem.md) tem uma faceta **shared** não nula, o item 
 
 ## <a name="remarks"></a>Comentários
 
-Para saber mais sobre as facetas de um **driveItem**, consulte [**driveItem**](driveitem.md).
+Para saber mais sobre as facetas de um **driveItem**, confira [**driveItem**](driveitem.md).
 
 <!--
 {

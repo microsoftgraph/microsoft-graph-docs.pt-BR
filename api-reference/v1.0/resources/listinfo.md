@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: ListInfo
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 459e51af92e01d10edd2ec1d86f3c288b125e1d6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 9be9d0dc133c9b62a89504a79ce9da4836337cfe
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27957463"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482403"
 ---
 # <a name="listinfo-resource"></a>Recurso de ListInfo
 
@@ -41,7 +41,7 @@ Veja a seguir uma representação JSON do recurso.
 
 | Nome da propriedade           | Tipo    | Descrição
 |:------------------------|:--------|:------------------------------------------------
-| **contentTypesEnabled** | Booliano | Se `true`, indica que os tipos de conteúdo estão habilitados nesta lista.
+| **contentTypesEnabled** | Boolean | Se `true`, indica que os tipos de conteúdo estão habilitados nesta lista.
 | **hidden**              | Booliano | Se `true`, indica que a lista não fica visível normalmente na experiência de usuário do SharePoint.
 | **template**            | String  | Um valor enumerado que representa o modelo de lista básica usado na criação da lista. Os valores possíveis incluem `documentLibrary`, `genericList`, `task`, `survey`, `announcements`, `contacts` e mais.
 

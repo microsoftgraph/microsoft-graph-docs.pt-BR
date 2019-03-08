@@ -1,17 +1,17 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: IdentitySet
 localization_priority: Normal
-ms.openlocfilehash: 63178fc9add3d097b7e8aaf0c5c2a697a91eaeed
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 0a963f7158dbb812fc1f51fbff208297a2a9f076
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807018"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482193"
 ---
-# <a name="identityset-resource-type"></a>tipo de recurso de identitySet
+# <a name="identityset-resource-type"></a>tipo de recurso identityset
 
 O recurso **IdentitySet** é uma coleção de chaves dos recursos [identity](identity.md). É usado para representar uma coleção de identidades associada a vários eventos de um item, como _created by_ ou _last modified by_.
 
@@ -49,14 +49,14 @@ Veja a seguir uma representação JSON do recurso.
 
 | Propriedade    | Tipo                    | Descrição                                             |
 |:------------|:------------------------|:--------------------------------------------------------|
-| application | [Identity](identity.md) | Opcional. O aplicativo associado a essa ação.  |
-| dispositivo      | [Identity](identity.md) | Opcional. O dispositivo associado a essa ação.       |
-| phone       | [identity](identity.md) | Opcional. O número de telefone associado a essa ação. |
+| application | [Identidade](identity.md) | Opcional. O aplicativo associado a essa ação.  |
+| device      | [Identidade](identity.md) | Opcional. O dispositivo associado a essa ação.       |
+| phone       | [identity](identity.md) | Opcional. O número de telefone associado a esta ação. |
 | user        | [Identity](identity.md) | Opcional. O usuário associado a essa ação.         |
 
 ## <a name="remarks"></a>Comentários 
 
-Consulte a [chamada](call.md) para o uso de recursos de **IdentitySet** .
+ConFira [chamada](call.md) para uso **** de recursos identityset.
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Alterar permissões de compartilhamento
 localization_priority: Normal
-ms.openlocfilehash: 0c12e42852d15dcd1cce7b18e8416ffc8d114299
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 64d6618b17b061293ab4e5b5296f7ad39d5a8512
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528876"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480723"
 ---
 # <a name="update-sharing-permission"></a>Atualizar a permissão de compartilhamento
 
@@ -51,8 +51,8 @@ PATCH /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 
 No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados.
 
-Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações em outros valores de propriedade.
-Para obter o melhor desempenho, não inclua valores existentes que não foram alterados.
+Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade.
+Para obter um melhor desempenho, não inclua valores existentes que não foram alterados.
 
 | Propriedade     | Tipo   | Descrição                   |
 |:-------------|:-------|:------------------------------|

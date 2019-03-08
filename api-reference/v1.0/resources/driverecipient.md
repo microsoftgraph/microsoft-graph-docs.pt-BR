@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: DriveRecipient
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: bd1b4466a361af031b9c8e11be63acb46044351a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4792a943598911cc2f0b8329016469ca157bda58
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27983377"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480324"
 ---
 # <a name="driverecipient-resource"></a>Recurso DriveRecipient
 
@@ -36,7 +36,7 @@ O recurso de destinatários possui essas propriedades.
 | Nome da propriedade | Tipo   | Descrição                                                                                             |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------|
 | email         | String | O endereço de email do destinatário, se este tiver um endereço de email associado.                  |
-| alias         | Cadeia de caracteres | O alias do objeto do domínio, para casos em que um endereço de email está indisponível (por exemplo, grupos de segurança). |
+| alias         | String | O alias do objeto do domínio, para casos em que um endereço de email está indisponível (por exemplo, grupos de segurança). |
 | objectId      | Cadeia de caracteres | O identificador exclusivo para o destinatário no diretório.                                               |
 
 ## <a name="remarks"></a>Comentários

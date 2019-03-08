@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Excluído
+title: Deleted
 localization_priority: Normal
-ms.openlocfilehash: a35bc781555486603c0319c819aa019704e362d9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: d52ca0a9815e46ebc11a653be381ac65f3cd209e
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27886139"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482179"
 ---
 # <a name="deleted-facet"></a>Faceta Deleted
 
@@ -37,7 +37,7 @@ Veja a seguir uma representação JSON do recurso.
 
 | Propriedade | Tipo   | Descrição                               |
 |:---------|:-------|:------------------------------------------|
-| state    | Cadeia de caracteres | Representa o estado do item excluído. |
+| state    | String | Representa o estado do item excluído. |
 
 ## <a name="remarks"></a>Comentários 
 

@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Obter Pastas Especiais
+title: Obter pastas especiais
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: a24b73e8f10c15e5bf8ab32ee99e193f7bddc1c1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 55b976a32583546d7ed5993083af82dc0a55121f
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27932130"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482375"
 ---
 # <a name="get-a-special-folder-by-name"></a>Obtenha uma pasta especial por nome
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |            Tipo de permissão             |                                           Permissões (da com menos para a com mais privilégios)                                            |
 | :------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------- |
 | Delegado (conta corporativa ou de estudante)     | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All                            |
-| Delegado (conta pessoal da Microsoft) | Files.ReadWrite.AppFolder, Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
+| Delegada (conta pessoal da Microsoft) | Files.ReadWrite.AppFolder, Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
 | Aplicativo                            | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All                                                         |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -44,7 +44,7 @@ GET /me/drive/special/{name}
 
 Os nomes de pasta especial a seguir estão disponíveis no OneDrive e no OneDrive for Business.
 
-| Name        | Id da pasta    | Descrição                                                              |
+| Nome        | Id da pasta    | Descrição                                                              |
 |:------------|:-------------|:-------------------------------------------------------------------------|
 | Documentos   | `documents`  | A pasta Documentos.                                                    |
 | Fotos      | `photos`     | A pasta Fotos.                                                       |

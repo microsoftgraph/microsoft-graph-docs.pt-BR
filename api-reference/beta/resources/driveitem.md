@@ -1,18 +1,18 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: DriveItem
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: fa172301e633a6f001133d44cb3332a5e133efe2
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: 9fa2f5cb9d40b0f8f12a5d1a6709eb03bf2975ba
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641376"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481486"
 ---
-# <a name="driveitem-resource-type"></a>tipo de recurso de driveItem
+# <a name="driveitem-resource-type"></a>tipo de recurso driveItem
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -105,7 +105,7 @@ O recurso **driveItem** é derivado de [**baseItem**][baseItem] e herda propried
 | createdDateTime      | DateTimeOffset     | Data e hora de criação do item. Somente leitura.
 | cTag                 | String             | Uma eTag para o conteúdo do item. Essa eTag não será alterada se apenas os metadados forem alterados. **Observação** Essa propriedade não será retornada se o item for uma pasta. Somente leitura.
 | deleted              | [deleted][]        | Informações sobre o estado excluído do item. Somente leitura.
-| descrição          | String             | Fornece uma descrição do item visível para o usuário. Leitura e gravação. Somente no OneDrive Personal
+| descrição          | Cadeia de caracteres             | Fornece uma descrição do item visível para o usuário. Leitura e gravação. Somente no OneDrive Personal
 | eTag                 | String             | eTag para o item inteiro (metadados + conteúdo). Somente leitura.
 | file                 | [file][]           | Metadados de arquivo, se o item for um arquivo. Somente leitura.
 | fileSystemInfo       | [fileSystemInfo][] | Informações do sistema de arquivos no cliente. Leitura e gravação.
@@ -138,13 +138,13 @@ O recurso **driveItem** é derivado de [**baseItem**][baseItem] e herda propried
 | Relação       | Tipo                            | Descrição
 |:-------------------|:--------------------------------|:--------------------------
 | activities         | Conjunto [itemActivity][]     | A lista de atividades recentes que ocorreram neste item.
-| analytics          | [itemAnalytics][] resource      | Análise sobre as atividades de modo de exibição que foram realizada neste item.
+| análises          | [itemAnalytics][] resource      | Análise sobre as atividades de exibição que ocorreram neste item.
 | content            | Fluxo                          | O fluxo de conteúdo, se o item representar um arquivo.
 | children           | Conjunto driveitem            | Conjunto que contêm objetos Item para os filhos imediatos de Item. Somente os itens que representam pastas têm filhos. Somente leitura. Anulável.
-| listItem           | [listItem][]                    | Para as unidades no SharePoint, o item de lista da biblioteca de documento associado. Somente leitura. Anulável.
-| permissions        | Coleção [permission][]       | O conjunto de permissões do item. Somente leitura. Anulável.
+| listItem           | [listItem][]                    | Para unidades no SharePoint, o item de lista da biblioteca de documentos associada. Somente leitura. Anulável.
+| permissões        | Coleção [permission][]       | O conjunto de permissões do item. Somente leitura. Anulável.
 | miniaturas         | Coleção [thumbnailSet][]     | Coleção contendo objetos [ThumbnailSet][] associados ao item. Para saber mais, confira [obtendo miniaturas][]. Somente leitura. Anulável.
-| versions           | coleção [driveItemVersion][] | Lista de versões anteriores do item. Para obter mais informações, consulte a [obtenção de versões anteriores][]. Somente leitura. Anulável.
+| suas           | coleção [driveItemVersion][] | A lista de versões anteriores do item. Para obter mais informações, consulte [obtendo versões anteriores][]. Somente leitura. Anulável.
 
 ## <a name="instance-attributes"></a>Atributos de instância
 
@@ -156,8 +156,8 @@ Atributos de instância são propriedades com comportamentos especiais. Essas pr
 | @microsoft.graph.downloadUrl      | string | Uma URL que pode ser usada para baixar conteúdo desse arquivo. Uma autenticação não é obrigatória com essa URL. Somente leitura.
 | @microsoft.graph.sourceUrl        | string | Quando uma solicitação PUT é emitida, essa anotação de instância pode ser usada para instruir o serviço a baixar o conteúdo da URL e armazená-lo como o arquivo. Somente gravação.
 
-**Observação:** O valor de @microsoft.graph.downloadUrl é uma URL de curta duração e não pode ser armazenados em cache.
-A URL só estará disponível por um curto período de tempo (1 hora) antes de ele será invalidado. Remover permissões de arquivo para um usuário não pode invalidar a URL imediatamente.
+**Observação:** O valor de @microsoft.graph.downloadUrl é uma URL de curta duração e não pode ser armazenado em cache.
+A URL só estará disponível por um curto período de tempo (1 hora) antes de ser invalidada. Remover permissões de arquivo para um usuário pode não invalidar imediatamente a URL.
 
 ## <a name="methods"></a>Métodos
 
@@ -184,8 +184,8 @@ A URL só estará disponível por um curto período de tempo (1 hora) antes de e
 | [Adicionar permissões](../api/driveitem-invite.md)            | `POST /drive/items/{item-id}/invite`
 | [Listar permissões](../api/driveitem-list-permissions.md) | `GET /drive/items/{item-id}/permissions`
 | [Excluir permissão](../api/permission-delete.md)         | `DELETE /drive/items/{item-id}/permissions/{perm-id}`
-| [Obtenha o canal WebSocket][getWebSocket]                    | `GET /drive/root/subscriptions/socketIo`
-| [Item de visualização][item-preview]                             | `POST /drive/items/{item-id}/preview`
+| [Obter o canal do webSocket][getWebSocket]                    | `GET /drive/root/subscriptions/socketIo`
+| [Visualizar item][item-preview]                             | `POST /drive/items/{item-id}/preview`
 
 [item-preview]: ../api/driveitem-preview.md
 [Obter análises]: ../api/itemanalytics-get.md
@@ -203,7 +203,7 @@ Em bibliotecas de documentos do OneDrive for Business ou do SharePoint, a propri
 [file]: file.md
 [fileSystemInfo]: filesysteminfo.md
 [folder]: folder.md
-[obtenção de versões anteriores]: ../api/driveitem-list-versions.md
+[obtendo versões anteriores]: ../api/driveitem-list-versions.md
 [obtendo miniaturas]: ../api/driveitem-list-thumbnails.md
 [getWebSocket]: ../api/driveitem-subscriptions-socketio.md
 [identitySet]: identityset.md

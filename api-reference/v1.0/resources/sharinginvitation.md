@@ -1,19 +1,19 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SharingInvitation
 localization_priority: Normal
-ms.openlocfilehash: f51f08ad174c661df14b688dc111d9447708523c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 0cb09136f4093b290f37ee851cb7d2d0ca10c1bf
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27846694"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480541"
 ---
 # <a name="sharinginvitation-resource-type"></a>Tipo de recurso SharingInvitation
 
-O recurso de **SharingInvitation** agrupa itens de dados relacionados ao convite em uma única estrutura.
+O recurso **SharingInvitation** agrupa itens de dados relacionados a convites em uma única estrutura.
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -37,7 +37,7 @@ Veja a seguir uma representação JSON do recurso.
 
 ## <a name="properties"></a>Propriedades
 
-| Nome da propriedade  | Tipo            | Descrição
+| Nome da Propriedade  | Tipo            | Descrição
 |:---------------|:----------------|:------------------------------------------
 | email          | String          | O endereço de email fornecido para o destinatário do convite de compartilhamento. Somente leitura.
 | invitedBy      | [identitySet][] | Fornece informações sobre quem enviou o convite que criou essa permissão, se essas informações estiverem disponíveis. Somente leitura.

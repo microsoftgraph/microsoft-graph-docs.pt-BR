@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Vídeo
 localization_priority: Normal
-ms.openlocfilehash: db560abc31daecc6064820ef6ef958808ddbc297
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 1e780c8392316be1f7fcc59f3818085dc462da29
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508542"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481591"
 ---
 # <a name="video-resource-type"></a>Tipo de recurso Video
 
@@ -17,7 +17,7 @@ ms.locfileid: "29508542"
 
 O recurso **Video** agrupa itens de dados relacionados a vídeos em uma única estrutura.
 
-Se um DriveItem tiver uma faceta video não nula, o item representa um vídeo. As propriedades do recurso Video são preenchidas extraindo-se os metadados do arquivo.
+Se um [**DriveItem**](driveitem.md) tiver uma faceta **video** não nula, o item representa um vídeo. As propriedades do recurso **Video** são preenchidas extraindo-se os metadados do arquivo.
 
 ## <a name="json-representation"></a>Representação JSON
 

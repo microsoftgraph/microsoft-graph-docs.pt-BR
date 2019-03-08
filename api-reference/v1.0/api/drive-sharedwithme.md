@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Listar arquivos compartilhados comigo
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 40da54a8edc4fe8be71909684dbcf6fbde14203b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 6d1b08de1c5a55f85fc54f5666dafcb9db346fc3
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27938206"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480184"
 ---
 # <a name="list-items-shared-with-the-signed-in-user"></a>Listar itens compartilhados com o usuário conectado
 

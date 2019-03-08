@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Listar o conteúdo de uma pasta
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: dea7edaa84076693b7217476f9ab2797296a5aef
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: f6e76ca362d8c200ee73b327cdd11ad4b0137e73
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27972478"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481045"
 ---
 # <a name="list-children-of-a-driveitem"></a>Listar os filhos de um driveItem
 
@@ -84,8 +84,7 @@ GET /drives/{drive-id}/root:/{path-relative-to-root}:/children
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, esse método retornará a lista de itens no conjunto de filhos do item de destino.
-A coleção de filhos será composta de recursos [driveItem][item-resource].
+Se tiver êxito, esse método retornará a lista de itens no conjunto de filhos do item de destino. A coleção de filhos será composta de recursos [driveItem][item-resource].
 
 <!-- { "blockType": "response", 
        "@odata.type": "Collection(microsoft.graph.driveItem)", 
@@ -109,7 +108,7 @@ Content-type: application/json
 
 **Observação:** Se uma coleção exceder o tamanho de página padrão (200 itens), a propriedade **@odata.nextLink** será retornada na resposta para indicar que mais itens estão disponíveis e fornecer a URL da solicitação para a próxima página de itens.
 
-Você pode controlar o tamanho da página por meio de [parâmetros de cadeia de consulta opcionais](https://developer.microsoft.com/graph/docs/concepts/query_parameters)
+Você pode controlar o tamanho da página por meio de [parâmetros de cadeia de caracteres de consulta opcional](https://developer.microsoft.com/graph/docs/concepts/query_parameters)
 
 ### <a name="error-responses"></a>Respostas de erro
 

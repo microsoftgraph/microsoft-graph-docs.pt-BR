@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SharePointIds
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 22bf6b1101be9d60ff350e0b04f7627e2b8fb529
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: c9f4c3dc54b9eee6cc1ab24058e3fe238fed89a3
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524027"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480597"
 ---
 # <a name="sharepointids-resource-type"></a>Tipo de recurso SharePointIds
 
@@ -47,11 +47,11 @@ Veja a seguir uma representação JSON do recurso
 | Propriedade         | Tipo         | Descrição
 |:-----------------|:-------------|:-------------------------------------------
 | listId           | string       | O identificador exclusivo (guid) para a lista do item no SharePoint.
-| listItemId       | string       | Um identificador inteiro para o item na lista contida.
+| listItemId       | cadeia de caracteres       | Um identificador inteiro para o item na lista contida.
 | listItemUniqueId | string       | O identificador exclusivo (guid) do item dentro do OneDrive for Business ou de um site do SharePoint.
 | siteId           | string       | O identificador exclusivo (guid) do conjunto de sites do item (SPSite).
 | siteUrl          | string (url) | A URL do SharePoint do site que contém o item.
-| tenantId         | string       | O identificador exclusivo (guid) de aluguel.
+| tenantId         | string       | O identificador exclusivo (GUID) da locação.
 | webId            | string       | O identificador exclusivo (guid) do site do item (SPWeb).
 
 ## <a name="remarks"></a>Comentários

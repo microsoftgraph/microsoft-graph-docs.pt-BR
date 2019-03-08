@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Obter Unidade
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 58f0a7f302aa41f286d949a4cbae56d6ff1cd62f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 0bea809fc719d90dadbde9282f64ac43df4b91e9
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518167"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481283"
 ---
 # <a name="get-drive"></a>Obter Unidade
 
@@ -60,9 +60,9 @@ GET /users/{idOrUserPrincipalName}/drive
 
 ### <a name="path-parameters"></a>Parâmetros do caminho
 
-| Nome do parâmetro | Valor  | Descrição                                       |
+| Nome do parâmetro  | Valor  | Descrição                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| _idOrUserPrincipalName_     | string | Obrigatório. O identificador de objeto do usuário proprietário do OneDrive. |
+| _idOrUserPrincipalName_     | cadeia de caracteres | Obrigatório. O identificador de objeto do usuário proprietário do OneDrive. |
 
 ## <a name="get-the-document-library-associated-with-a-group"></a>Obtenha a biblioteca de documentos associada a um grupo
 
@@ -78,9 +78,9 @@ GET /groups/{groupId}/drive
 
 ### <a name="path-parameters"></a>Parâmetros do caminho
 
-| Nome do parâmetro | Valor  | Descrição                                       |
+| Nome do parâmetro  | Valor  | Descrição                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| _groupId_      | string | Obrigatório. O identificador do grupo proprietário da biblioteca de documentos. |
+| _groupId_      | cadeia de caracteres | Obrigatório. O identificador do grupo proprietário da biblioteca de documentos. |
 
 ## <a name="get-the-document-library-for-a-site"></a>Obter a biblioteca de documentos de um site
 
@@ -94,9 +94,9 @@ GET /sites/{siteId}/drive
 
 ### <a name="path-parameters"></a>Parâmetros do caminho
 
-| Nome do parâmetro | Valor  | Descrição                                       |
+| Nome do parâmetro  | Valor  | Descrição                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| _siteId_       | string | Obrigatório. O identificador do site que contém a biblioteca de documentos. |
+| _siteId_       | cadeia de caracteres | Obrigatório. O identificador do site que contém a biblioteca de documentos. |
 
 ## <a name="get-a-drive-by-id"></a>Obtenha uma unidade por ID
 
@@ -112,7 +112,7 @@ GET /drives/{driveId}
 
 ### <a name="path-parameters"></a>Parâmetros do caminho
 
-| Nome do parâmetro | Valor  | Descrição                                       |
+| Nome do parâmetro  | Valor  | Descrição                                       |
 |:---------------|:-------|:--------------------------------------------------|
 | _driveId_      | string | Obrigatório. O identificador da unidade solicitada. |
 

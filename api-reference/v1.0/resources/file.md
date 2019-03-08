@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: File
 localization_priority: Normal
-ms.openlocfilehash: 8a247987447dcd97ac0f42a6a4e743a0c80f6bd5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 7478ba064b5193ce7ddcd8685fc571a72d4b0057
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862304"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480401"
 ---
 # <a name="file-resource-type"></a>Tipo de recurso File
 

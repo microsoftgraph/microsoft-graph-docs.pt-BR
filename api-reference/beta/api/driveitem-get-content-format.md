@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Converter em outros formatos
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 8d65b7604c2ec17d4225c9cb887cbbfad2223009
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: c3761525d0acbd5613a71519d9ebd56ab8475f03
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526302"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481822"
 ---
 # <a name="download-a-file-in-another-format"></a>Baixar um arquivo em outro formato
 
@@ -19,7 +19,7 @@ ms.locfileid: "29526302"
 Use esta API para recuperar os conteúdos de um item em um formato específico.
 Nem todos os arquivos podem ser convertidos em todos os formatos.
 
-Para baixar o item no formato original, consulte [fazer o download de conteúdo de um item](driveitem-get-content.md).
+Para baixar o item em seu formato original, confira [baixar o conteúdo de um item](driveitem-get-content.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -41,14 +41,14 @@ GET /drive/root:/{path and filename}:/content?format={format}
 | _format_  | string | Especifique o formato em que o conteúdo do item deve ser baixado. |
 
 
-Os seguintes valores são válidos para o parâmetro **format** :
+Os seguintes valores são válidos para o parâmetro **Format** :
 
 | Valor | Descrição                        | Extensões de origem com suporte
 |:------|:-----------------------------------|---------------------------------
-| glb   | Converte o item no formato de GLB  | legal, fbx, objetivo, módulo, stl, 3mf
-| HTML  | Converte o item em formato HTML | EML, md, msg
-| JPG   | Converte o item em formato JPG  | 3G 2, 3gp, 3gp2, 3gpp, 3mf, ai, arw, asf, avi, bas, bash, bat, bmp, c, cbl, cmd, legal, cpp, cr2, crw, cs, css, csv, atual, dcm, dcm30, dic, dicm, dicom, dng, doc, docx, dwg, eml, epi, eps, epsf, epsi, epub, FUNERRO, fbx, fppx, gif, glb, h, hcp , heic, heif, htm, html, ico, ícone, java, jfif, jpeg, jpg, js, json, chave, log, m2ts, m4a, m4v, redução, md, mef, mov, filme, mp3, mp4, mp4v, mrw, msg, mts, nef, nrw, números, objetivo, odp, odt, ogg, orf, páginas, pano, pdf, pef, php, pict, pl, módulo, png, pot , potm, potx, pps, ppsx, ppsxm, ppt, pptm, pptx, ps, ps1, psb, psd, Aj, bruto, rb, rtf, rw1, rw2, MOS, Esboce, sql, sr2, stl, tif, tiff, ts, txt, vb, webm, wma, wmv, xaml, xbm, fonte xcf, xd, xml, xpm, yaml, yml
-| PDF   | Converte o item em formato PDF.  | doc, docx, epub, eml, htm, html, md, msg, odp, ods, odt, pps, ppsx, ppt, pptx, rtf, tif, tiff, xls, xlsm, xlsx
+| glb   | Converte o item no formato GLB  | Cool, FBX, obj, estrato, STL, 3mf
+| HTML  | Converte o item em formato HTML | EML, MD, msg
+| jpg   | Converte o item em formato JPG  | 3G2, 3GP, 3GP2, 3GPP, 3mf, ai, ARW, ASF, AVI, Bas, Bash, bat, BMP, c CBL, cmd, cool, CPP, CR2, CRW, cs, CSS, CSV, CUR, DCM,, DIC, DICM, DICOM, DNG, Doc, docx,, o EPI, o, o EPSF, o, o EPSI, o , HEIC, HEIF, htm, HTML, ICO, Icon, Java, JFIF, JPEG, jpg, js, JSON, Key, log, M2TS, M4A, M4V, reparation, MD, MEF, MOV, o filme, mp3, o MRW, o NEF, o NRW, o (a), o, o, o formato de página, o, o png, o , potm, potx, PPS, ppsx, ppsxm, ppt, pptm, pptx, PS, ps1, PSB, PSD, py, RAW, RB, RTF, RW1, RW2, sh, esboço, SQL, SR2, STL, TIF, TIFF,, txt, webm, XBM,. WMA, XCF,, XPM, YAML, yml
+| documento   | Converte o item em formato PDF  | Doc, docx, ePub, EML, htm, HTML, MD, MSG, odp, ODS, odt, PPS, ppsx, XL, pptx, RTF, TIF, TIFF, xls, xlsm, xlsx
 
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
 

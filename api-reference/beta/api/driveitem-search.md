@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Pesquisar arquivos
+title: Procurar arquivos
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: ce18912b0fd116f13e2bd32d999dd852d6cc5182
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 201102a5332bc6e4ae6fe7d43a71238bb849b21e
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528218"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481370"
 ---
 # <a name="search-for-a-driveitems-within-a-drive"></a>Pesquisar um DriveItem em uma unidade
 
@@ -49,7 +49,7 @@ Este método oferece suporte aos [Parâmetros de consulta OData](/graph/query-pa
 
 | Parâmetro | Tipo  | Descrição                                                                                                                          |
 |:-----|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
-| t  | string | O texto de consulta usado para pesquisar itens. Os valores podem ser correspondidos em vários campos, incluindo nome do arquivo, metadados e conteúdo do arquivo. |
+| q  | string | O texto de consulta usado para pesquisar itens. Os valores podem ser correspondidos em vários campos, incluindo nome do arquivo, metadados e conteúdo do arquivo. |
 
 ## <a name="example"></a>Exemplo
 

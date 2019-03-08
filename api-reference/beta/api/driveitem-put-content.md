@@ -1,18 +1,18 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Carregar arquivos pequenos
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 408e88cc3fa670c525b9e994e82fbb652489dd9b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 151d7c9479068c5fdcecfb5a04166900bd527230
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508073"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482270"
 ---
-# <a name="upload-or-replace-the-contents-of-a-driveitem"></a>Carregar ou substituir o conteúdo de um DriveItem
+# <a name="upload-or-replace-the-contents-of-a-driveitem"></a>Carregue ou substitua o conteúdo de um DriveItem
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -108,7 +108,7 @@ The contents of the file goes here.
 
 ### <a name="response"></a>Resposta
 
-Se for bem-sucedido, esse método retornará um recurso [driveItem][item-resource] no corpo da resposta para o arquivo recém-criado.
+Se for bem-sucedido, esse método retornará um [recurso driveItem][item-resource] no corpo da resposta para o arquivo recém-criado.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
