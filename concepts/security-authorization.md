@@ -4,12 +4,12 @@ description: Os dados de segurança acessíveis por meio da API de Segurança do
 author: preetikr
 localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: e20a9abd036414eefc750fd667dbf7c1004b65bb
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4b46df393b84c72efb40bb88d8cdeb7aca44449d
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27947082"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480422"
 ---
 # <a name="authorization-and-the-microsoft-graph-security-api"></a>Autorização e API de Segurança do Microsoft Graph
 
@@ -78,7 +78,15 @@ Para registrar seu aplicativo:
 3. Na página de registro do novo aplicativo, escolha **Adicionar Plataforma ** > **Web**. No campo **URL de redirecionamento**, insira o URL de redirecionamento.
 4. Na seção **Permissões do Microsoft Graph**, em **Permissões delegadas**, escolha **Adicionar**. Na caixa de diálogo, escolha as permissões necessárias. Para obter uma lista de permissões, consulte [Permissões de segurança](permissions-reference.md#security-permissions).
 
-    >A API de Segurança do Microsoft Graph requer o escopo SecurityEvents.Read.All para consultas GET e o escopo SecurityEvents.ReadWrite.All para consultas PATCH/POST.
+    >**Observação** A API de Segurança do Microsoft Graph requer o escopo *.Read.All para consultas GET, e o escopo *.ReadWrite.All para consultas PATCH/POST/DELETE.
+
+    |Permissão | Entidade | Solicitações com suporte |
+    |:----------|:-------|:-------------------|
+    |SecurityActions.Read.All| &bull; [securityActions](/graph/api/resources/securityaction?view=graph-rest-beta) (visualização) | GET |
+    |SecurityActions.ReadWrite.All| &bull; [securityActions](/graph/api/resources/securityaction?view=graph-rest-beta) (visualização) | GET, POST |
+    |SecurityEvents.Read.All | &bull; [alerts](/graph/api/resources/alert?view=graph-rest-1.0)</br> &bull; [secureScores](/graph/api/resources/securescores?view=graph-rest-beta) (visualização)</br> &bull; [secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta) (visualização) | GET |
+    |SecurityEvents.ReadWrite.All | &bull; [alerts](/graph/api/resources/alert?view=graph-rest-1.0)</br> &bull; [secureScores](/graph/api/resources/securescores?view=graph-rest-beta) (visualização)</br> &bull; [secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta) (visualização) | GET, POST, PATCH |
+    |ThreatIndicators.ReadWrite.OwnedBy | &bull; [tiIndicator](/graph/api/resources/tiindicator?view=graph-rest-beta) (visualização) | GET, POST, PATCH, DELETE|
 
 5. Escolha **Salvar**.
 

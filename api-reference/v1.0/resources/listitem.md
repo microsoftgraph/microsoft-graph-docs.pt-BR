@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: ListItem
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 3823c53bffce783714a78dfc910299e9ea976d77
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: ba4b910f6d86caee23ce191b225d040ef023b4e7
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27921392"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481612"
 ---
 # <a name="listitem-resource"></a>Recurso ListItem
 
@@ -33,7 +33,7 @@ Todos os exemplos a seguir referem-se a uma **[list][]**, por exemplo: `https://
 
 [Get]: ../api/listitem-get.md
 [Create]: ../api/listitem-create.md
-[Delete]: ../api/listitem-delete.md
+[Excluir]: ../api/listitem-delete.md
 [Update]: ../api/listitem-update.md
 
 ## <a name="json-representation"></a>Representação JSON
@@ -103,7 +103,7 @@ As propriedades a seguir são herdadas do **[baseItem][]**.
 |:------------------|:-------------------------------|:-------------------------------
 | driveItem         | [driveItem][]                  | Para bibliotecas de documentos, a relação **driveItem** expõe listItem como um **[driveItem][]**
 | campos            | [fieldValueSet][]              | Os valores das colunas definidos neste item de lista.
-| versions          | coleção [listItemVersion][] | Lista de versões anteriores do item da lista.
+| versões          | coleção [listItemVersion][]  | A lista de versões anteriores do item de lista.
 
 [baseItem]: baseitem.md
 [contentTypeInfo]: contenttypeinfo.md
@@ -111,7 +111,7 @@ As propriedades a seguir são herdadas do **[baseItem][]**.
 [fieldValueSet]: fieldvalueset.md
 [identitySet]: identityset.md
 [itemReference]: itemreference.md
-[lista]: list.md
+[list]: list.md
 [listItemVersion]: listitemversion.md
 [sharepointIds]: sharepointids.md
 

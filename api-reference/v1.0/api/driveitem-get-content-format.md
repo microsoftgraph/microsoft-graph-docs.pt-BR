@@ -1,23 +1,23 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Converter em outros formatos
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: d33e03df0abcc9417c0fe5bc241e654185bd4313
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: b63e22aa280640362a70efcc4fa0d50673aab63d
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27978547"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481850"
 ---
 # <a name="download-a-file-in-another-format"></a>Baixar um arquivo em outro formato
 
 Use esta API para recuperar os conteúdos de um item em um formato específico.
 Nem todos os arquivos podem ser convertidos em todos os formatos.
 
-Para baixar o item no formato original, consulte [fazer o download de conteúdo de um item](driveitem-get-content.md).
+Para baixar o item no formato original, confira [Baixar o conteúdo de um item](driveitem-get-content.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -41,9 +41,9 @@ GET /drive/root:/{path and filename}:/content?format={format}
 
 ### <a name="format-options"></a>Opções de formato
 
-Os seguintes valores são válidos para o parâmetro **format** :
+Os seguintes valores são válidos para o parâmetro **format**:
 
-| Valor de formato | Descrição                        | Extensões de origem com suporte
+| Valor de format | Descrição                        | Extensões de origem com suporte
 |:-------------|:-----------------------------------|----------------------------
 | pdf          | Converte o item em formato PDF. | csv, doc, docx, odp, ods, odt, pot, potm, potx, pps, ppsx, ppsxm, ppt, pptm, pptx, rtf, xls, xlsx
 
@@ -78,7 +78,7 @@ Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 
 ### <a name="error-responses"></a>Respostas de erro
 
-Saiba mais sobre como os erros são retornados em [Respostas de erro][error-response].
+Confira [Respostas de erro][error-response] para saber mais sobre como os erros retornam.
 
 [error-response]: /graph/errors
 [file-facet]: ../resources/file.md
