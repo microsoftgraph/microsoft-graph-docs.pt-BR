@@ -1,32 +1,32 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Baixar um arquivo
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 963d9cb2b80fa51f6b4b09d1316505672d876965
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 836ffe051077e41c7fcf9cb0404d8bb016948177
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27927958"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481605"
 ---
-# <a name="download-the-contents-of-a-driveitem"></a><span data-ttu-id="88f42-102">Baixe o conteúdo de um DriveItem</span><span class="sxs-lookup"><span data-stu-id="88f42-102">Download the contents of a DriveItem</span></span>
+# <a name="download-the-contents-of-a-driveitem"></a><span data-ttu-id="da07b-102">Baixe o conteúdo de um DriveItem</span><span class="sxs-lookup"><span data-stu-id="da07b-102">Download the contents of a DriveItem</span></span>
 
-<span data-ttu-id="88f42-103">Baixar o conteúdo do fluxo principal (arquivo) de um DriveItem.</span><span class="sxs-lookup"><span data-stu-id="88f42-103">Download the contents of the primary stream (file) of a DriveItem.</span></span> <span data-ttu-id="88f42-104">Somente driveItems com a propriedade **file** podem ser baixados.</span><span class="sxs-lookup"><span data-stu-id="88f42-104">Only driveItems with the **file** property can be downloaded.</span></span>
+<span data-ttu-id="da07b-103">Baixar o conteúdo do fluxo principal (arquivo) de um DriveItem.</span><span class="sxs-lookup"><span data-stu-id="da07b-103">Download the contents of the primary stream (file) of a DriveItem.</span></span> <span data-ttu-id="da07b-104">Somente driveItems com a propriedade **file** podem ser baixados.</span><span class="sxs-lookup"><span data-stu-id="da07b-104">Only driveItems with the **file** property can be downloaded.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="88f42-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="88f42-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="da07b-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="da07b-105">Permissions</span></span>
 
-<span data-ttu-id="88f42-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="88f42-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="da07b-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="da07b-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="88f42-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="88f42-108">Permission type</span></span>      | <span data-ttu-id="88f42-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="88f42-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="da07b-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="da07b-108">Permission type</span></span>      | <span data-ttu-id="da07b-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="da07b-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="88f42-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="88f42-110">Delegated (work or school account)</span></span> | <span data-ttu-id="88f42-111">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="88f42-111">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="88f42-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="88f42-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="88f42-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="88f42-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="88f42-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="88f42-114">Application</span></span> | <span data-ttu-id="88f42-115">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="88f42-115">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="da07b-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="da07b-110">Delegated (work or school account)</span></span> | <span data-ttu-id="da07b-111">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="da07b-111">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="da07b-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="da07b-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="da07b-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="da07b-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="da07b-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="da07b-114">Application</span></span> | <span data-ttu-id="da07b-115">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="da07b-115">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="88f42-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="88f42-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="da07b-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="da07b-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -39,15 +39,15 @@ GET /sites/{siteId}/drive/items/{item-id}/content
 GET /users/{userId}/drive/items/{item-id}/content
 ```
 
-## <a name="optional-request-headers"></a><span data-ttu-id="88f42-117">Cabeçalhos de solicitação opcionais</span><span class="sxs-lookup"><span data-stu-id="88f42-117">Optional request headers</span></span>
+## <a name="optional-request-headers"></a><span data-ttu-id="da07b-117">Cabeçalhos de solicitação opcionais</span><span class="sxs-lookup"><span data-stu-id="da07b-117">Optional request headers</span></span>
 
-| <span data-ttu-id="88f42-118">Nome</span><span class="sxs-lookup"><span data-stu-id="88f42-118">Name</span></span>          | <span data-ttu-id="88f42-119">Valor</span><span class="sxs-lookup"><span data-stu-id="88f42-119">Value</span></span>  | <span data-ttu-id="88f42-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="88f42-120">Description</span></span>                                                                                                                                              |
+| <span data-ttu-id="da07b-118">Nome</span><span class="sxs-lookup"><span data-stu-id="da07b-118">Name</span></span>          | <span data-ttu-id="da07b-119">Valor</span><span class="sxs-lookup"><span data-stu-id="da07b-119">Value</span></span>  | <span data-ttu-id="da07b-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="da07b-120">Description</span></span>                                                                                                                                              |
 |:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="88f42-121">if-none-match</span><span class="sxs-lookup"><span data-stu-id="88f42-121">if-none-match</span></span> | <span data-ttu-id="88f42-122">String</span><span class="sxs-lookup"><span data-stu-id="88f42-122">String</span></span> | <span data-ttu-id="88f42-123">Se este cabeçalho de solicitação estiver incluso e a eTag (ou cTag) fornecida corresponder à marca atual do arquivo, uma resposta `HTTP 304 Not Modified` será exibida.</span><span class="sxs-lookup"><span data-stu-id="88f42-123">If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned.</span></span> |
+| <span data-ttu-id="da07b-121">if-none-match</span><span class="sxs-lookup"><span data-stu-id="da07b-121">if-none-match</span></span> | <span data-ttu-id="da07b-122">String</span><span class="sxs-lookup"><span data-stu-id="da07b-122">String</span></span> | <span data-ttu-id="da07b-123">Se este cabeçalho de solicitação estiver incluso e a eTag (ou cTag) fornecida corresponder à marca atual do arquivo, uma resposta `HTTP 304 Not Modified` será exibida.</span><span class="sxs-lookup"><span data-stu-id="da07b-123">If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned.</span></span> |
 
-## <a name="example"></a><span data-ttu-id="88f42-124">Exemplo</span><span class="sxs-lookup"><span data-stu-id="88f42-124">Example</span></span>
+## <a name="example"></a><span data-ttu-id="da07b-124">Exemplo</span><span class="sxs-lookup"><span data-stu-id="da07b-124">Example</span></span>
 
-<span data-ttu-id="88f42-125">Aqui está um exemplo para baixar um arquivo completo.</span><span class="sxs-lookup"><span data-stu-id="88f42-125">Here is an example to download a complete file.</span></span>
+<span data-ttu-id="da07b-125">Aqui está um exemplo para baixar um arquivo completo.</span><span class="sxs-lookup"><span data-stu-id="da07b-125">Here is an example to download a complete file.</span></span>
 
 
 <!-- { "blockType": "request", "name": "download-item-content", "scopes": "files.read" } -->
@@ -56,14 +56,14 @@ GET /users/{userId}/drive/items/{item-id}/content
 GET /me/drive/items/{item-id}/content
 ```
 
-### <a name="response"></a><span data-ttu-id="88f42-126">Resposta</span><span class="sxs-lookup"><span data-stu-id="88f42-126">Response</span></span>
+### <a name="response"></a><span data-ttu-id="da07b-126">Resposta</span><span class="sxs-lookup"><span data-stu-id="da07b-126">Response</span></span>
 
-<span data-ttu-id="88f42-p103">Retorna uma resposta `302 Found` que redireciona para uma URL de download previamente autenticada do arquivo. Esta é a mesma URL disponível por meio da propriedade `@microsoft.graph.downloadUrl` no DriveItem.</span><span class="sxs-lookup"><span data-stu-id="88f42-p103">Returns a `302 Found` response redirecting to a pre-authenticated download URL for the file. This is the same URL available through the `@microsoft.graph.downloadUrl` property on the DriveItem.</span></span>
+<span data-ttu-id="da07b-p103">Retorna uma resposta `302 Found` que redireciona para uma URL de download previamente autenticada do arquivo. Esta é a mesma URL disponível por meio da propriedade `@microsoft.graph.downloadUrl` no DriveItem.</span><span class="sxs-lookup"><span data-stu-id="da07b-p103">Returns a `302 Found` response redirecting to a pre-authenticated download URL for the file. This is the same URL available through the `@microsoft.graph.downloadUrl` property on the DriveItem.</span></span>
 
-<span data-ttu-id="88f42-129">Para baixar o conteúdo do arquivo, seu aplicativo precisa seguir o cabeçalho `Location` na resposta.</span><span class="sxs-lookup"><span data-stu-id="88f42-129">To download the contents of the file your application will need to follow the `Location` header in the response.</span></span>
-<span data-ttu-id="88f42-130">Muitas bibliotecas de cliente HTTP automaticamente seguirão o 302 redirecionamento e iniciar o download do arquivo imediatamente.</span><span class="sxs-lookup"><span data-stu-id="88f42-130">Many HTTP client libraries will automatically follow the 302 redirection and start downloading the file immediately.</span></span>
+<span data-ttu-id="da07b-129">Para baixar o conteúdo do arquivo, seu aplicativo precisa seguir o cabeçalho `Location` na resposta.</span><span class="sxs-lookup"><span data-stu-id="da07b-129">To download the contents of the file your application will need to follow the `Location` header in the response.</span></span>
+<span data-ttu-id="da07b-130">Várias bibliotecas de cliente HTTP seguirão automaticamente o redirecionamento 302 e começarão a baixar imediatamente o arquivo.</span><span class="sxs-lookup"><span data-stu-id="da07b-130">Many HTTP client libraries will automatically follow the 302 redirection and start downloading the file immedately.</span></span>
 
-<span data-ttu-id="88f42-131">URLs de download previamente autenticadas são válidas apenas por um curto período de tempo (alguns minutos) e não exigem um cabeçalho `Authorization` para download.</span><span class="sxs-lookup"><span data-stu-id="88f42-131">Pre-authenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header to download.</span></span>
+<span data-ttu-id="da07b-131">URLs de download previamente autenticadas são válidas apenas por um curto período de tempo (alguns minutos) e não exigem um cabeçalho `Authorization` para download.</span><span class="sxs-lookup"><span data-stu-id="da07b-131">Pre-authenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header to download.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "stream" } -->
 
@@ -72,9 +72,9 @@ HTTP/1.1 302 Found
 Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 ```
 
-## <a name="partial-range-downloads"></a><span data-ttu-id="88f42-132">Downloads de intervalo parcial</span><span class="sxs-lookup"><span data-stu-id="88f42-132">Partial range downloads</span></span>
+## <a name="partial-range-downloads"></a><span data-ttu-id="da07b-132">Downloads de intervalo parcial</span><span class="sxs-lookup"><span data-stu-id="da07b-132">Partial range downloads</span></span>
 
-<span data-ttu-id="88f42-p105">Para baixar um intervalo parcial de bytes do arquivo, o aplicativo pode usar o cabeçalho `Range` conforme especificado em [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt). Observe que você deve acrescentar o cabeçalho `Range` à URL `@microsoft.graph.downloadUrl` real e não à solicitação para `/content`.</span><span class="sxs-lookup"><span data-stu-id="88f42-p105">To download a partial range of bytes from the file, your app can use the `Range` header as specified in [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt). Note that you must append the `Range` header to the actual `@microsoft.graph.downloadUrl` URL and not to the request for `/content`.</span></span>
+<span data-ttu-id="da07b-p105">Para baixar um intervalo parcial de bytes do arquivo, o aplicativo pode usar o cabeçalho `Range` conforme especificado em [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt). Observe que você deve acrescentar o cabeçalho `Range` à URL `@microsoft.graph.downloadUrl` real e não à solicitação para `/content`.</span><span class="sxs-lookup"><span data-stu-id="da07b-p105">To download a partial range of bytes from the file, your app can use the `Range` header as specified in [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt). Note that you must append the `Range` header to the actual `@microsoft.graph.downloadUrl` URL and not to the request for `/content`.</span></span>
 
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "download-item-partial", "scopes": "files.read" } -->
 
@@ -83,7 +83,7 @@ GET https://b0mpua-by3301.files.1drv.com/y23vmag
 Range: bytes=0-1023
 ```
 
-<span data-ttu-id="88f42-p106">Isso retornará uma resposta `HTTP 206 Partial Content` com o intervalo de solicitação de bytes do arquivo. Se o intervalo não puder ser gerado, o cabeçalho do Intervalo poderá ser ignorado, e uma resposta `HTTP 200` será retornada com todo o conteúdo do arquivo.</span><span class="sxs-lookup"><span data-stu-id="88f42-p106">This will return an `HTTP 206 Partial Content` response with the request range of bytes from the file. If the range cannot be generated the Range header may be ignored and an `HTTP 200` response would be returned with the full contents of the file.</span></span>
+<span data-ttu-id="da07b-p106">Isso retornará uma resposta `HTTP 206 Partial Content` com o intervalo de solicitação de bytes do arquivo. Se o intervalo não puder ser gerado, o cabeçalho do Intervalo poderá ser ignorado, e uma resposta `HTTP 200` será retornada com todo o conteúdo do arquivo.</span><span class="sxs-lookup"><span data-stu-id="da07b-p106">This will return an `HTTP 206 Partial Content` response with the request range of bytes from the file. If the range cannot be generated the Range header may be ignored and an `HTTP 200` response would be returned with the full contents of the file.</span></span>
 
 <!-- { "blockType": "response", "name": "download-item-partial", "@odata.type": "stream" } -->
 
@@ -95,9 +95,9 @@ Content-Type: application/octet-stream
 <first 1024 bytes of file>
 ```
 
-### <a name="error-responses"></a><span data-ttu-id="88f42-137">Respostas de erro</span><span class="sxs-lookup"><span data-stu-id="88f42-137">Error responses</span></span>
+### <a name="error-responses"></a><span data-ttu-id="da07b-137">Respostas de erro</span><span class="sxs-lookup"><span data-stu-id="da07b-137">Error responses</span></span>
 
-<span data-ttu-id="88f42-138">Confira mais informações sobre como os erros são retornados em [Respostas de erro][error-response].</span><span class="sxs-lookup"><span data-stu-id="88f42-138">See [Error Responses][error-response] for more info about how errors are returned.</span></span>
+<span data-ttu-id="da07b-138">Confira mais informações sobre como os erros são retornados em [Respostas de erro][error-response].</span><span class="sxs-lookup"><span data-stu-id="da07b-138">See [Error Responses][error-response] for more info about how errors are returned.</span></span>
 
 [error-response]: /graph/errors
 
