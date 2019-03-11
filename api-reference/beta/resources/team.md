@@ -4,12 +4,12 @@ description: 'No Microsoft Teams, uma equipe é um conjunto de canais. '
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: bcf6602dcb9673ffd7b1fb81a0d9349392fd6d3f
-ms.sourcegitcommit: a4773239d8559899c3f9433b3073e250a56d2e04
+ms.openlocfilehash: 9a5f1968753d3d2412b3885e6a09e94f18731e40
+ms.sourcegitcommit: d1a9e7c8e1376a99c5a5416257889ec113613a77
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29994458"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "30458677"
 ---
 # <a name="team-resource-type"></a>tipo de recurso de equipe
 
@@ -65,7 +65,7 @@ Confira mais informações sobre como trabalhar com grupos e membros em equipes,
 |apps|Coleção [teamsApp](teamsapp.md)| (Obsoleto) Os aplicativos instalados nessa equipe.|
 |channels|Coleção [channel](channel.md)|A coleção de canais e mensagens associadas à equipe.|
 |installedApps|Coleção [teamsAppInstallation](teamsappinstallation.md)|Os aplicativos instalados nessa equipe.|
-|owners|[user](user.md)| A lista de proprietários desta equipe. |
+|owners|[user](user.md)| A lista de proprietários desta equipe. Atualmente, ao criar uma equipe usando permissões de aplicativo, exatamente um proprietário deve ser especificado. Ao usar permissões delegadas pelo usuário, nenhum proprietário pode ser especificado (o usuário atual é o proprietário). O proprietário deve ser especificado como um objeto ID (GUID), não um UPN. |
 |operations|Coleção [teamsAsyncOperation](teamsasyncoperation.md)| As operações assíncronas que foram executadas ou estão em execução nesta equipe. | 
 |template|[teamsTemplate](teamstemplate.md)| O modelo usado para criar essa equipe. Confira os [modelos disponíveis](https://docs.microsoft.com/pt-BR/MicrosoftTeams/get-started-with-teams-templates). |
 

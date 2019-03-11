@@ -2,12 +2,12 @@
 title: Tipo de recurso chatMessage
 description: Representa uma mensagem de chat individual dentro de uma entidade de canal ou chat. A mensagem pode ser uma mensagem raiz ou parte de um thread que seja definido pela propriedade **replyToId** na mensagem.
 localization_priority: Priority
-ms.openlocfilehash: ef91281eff0cc61f992f659bd33debec03841bb4
-ms.sourcegitcommit: a1f1e59ee568340bfabdb524e01cff7860bcc862
+ms.openlocfilehash: f61668d8c3892482043dd7531a6699974a964527
+ms.sourcegitcommit: d1a9e7c8e1376a99c5a5416257889ec113613a77
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "29735576"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "30458656"
 ---
 # <a name="chatmessage-resource-type"></a>Tipo de recurso chatMessage
 
@@ -23,6 +23,9 @@ Representa uma mensagem de chat individual dentro de uma entidade de [canal](cha
 |[Get Channel message](../api/channel-get-message.md) | [chatmessage](chatmessage.md) | Obtenha uma mensagem raiz única de um canal.|
 |[List replies to a message](../api/channel-list-messagereplies.md) | [chatmessage](chatmessage.md) collection| Obtenha a lista de todas as respostas a uma mensagem no canal.|
 |[Get a reply to a message](../api/channel-get-messagereply.md) | [chatmessage](chatmessage.md)| Obtenha uma resposta a uma mensagem única em um canal.|
+|[Enviar uma mensagem em um canal](../api/channel-post-chatmessage.md) | [chatmessage](chatmessage.md)| Crie uma nova mensagem de nível superior em um canal.|
+|[Responder a uma mensagem em um canal](../api/channel-post-messagereply.md) | [chatmessage](chatmessage.md)| Responder a uma mensagem existente em um canal.|
+
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|

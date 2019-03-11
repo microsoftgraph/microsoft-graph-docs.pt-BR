@@ -2175,7 +2175,7 @@ items:
               - name: Identidade importada do dispositivo do Windows autopilot
                 href: resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-list.md
                   - name: Obter
                     href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-get.md
@@ -5290,7 +5290,7 @@ items:
                     href: api/intune-devices-manageddevice-setdevicename.md
                   - name: Ação retire
                     href: api/intune-devices-manageddevice-retire.md
-                  - name: Ação wipe
+                  - name: ação wipe
                     href: api/intune-devices-manageddevice-wipe.md
                   - name: Ação resetPasscode
                     href: api/intune-devices-manageddevice-resetpasscode.md
@@ -6675,6 +6675,240 @@ items:
                 href: api/permission-update.md
               - name: Excluir permissão
                 href: api/permission-delete.md
+      - name: Finanças
+        href: resources/dynamics-graph-reference.md
+        displayname: 'Dynamics, Dynamics 365 Business Central'
+        items:
+          - name: Conta
+            href: resources/dynamics-account.md
+            items:
+              - name: Obter conta
+                href: api/dynamics-account-get.md
+          - name: Contas antigas a pagar
+            href: resources/dynamics-agedaccountspayable.md
+            items:
+              - name: Começar a pagar contas antigos
+                href: api/dynamics-agedaccountspayable-get.md
+          - name: Contas antigas a receber
+            href: resources/dynamics-agedaccountsreceivable.md
+            items:
+              - name: Começar a pagar contas antigos
+                href: api/dynamics-agedaccountsreceivable-get.md
+          - name: Empresas
+            href: resources/dynamics-companies.md
+            items:
+              - name: Obter empresas
+                href: api/dynamics-companies-get.md
+          - name: Informações da empresa
+            href: resources/dynamics-companyinformation.md
+            items:
+              - name: Obter informações da empresa
+                href: api/dynamics-companyinformation-get.md
+              - name: Atualizar informações da empresa
+                href: api/dynamics-companyinformation-update.md
+          - name: Países/regiões
+            href: resources/dynamics-countriesregions.md
+            items:
+              - name: Obter países/regiões
+                href: api/dynamics-countriesregions-get.md
+              - name: Criar países/regiões
+                href: api/dynamics-create-countriesregions.md
+              - name: Excluir países/regiões
+                href: api/dynamics-countriesregions-delete.md
+          - name: Moedas
+            href: resources/dynamics-currencies.md
+            items:
+              - name: Obter moedas
+                href: api/dynamics-currencies-get.md
+              - name: Criar moedas
+                href: api/dynamics-create-currencies.md
+              - name: Excluir moedas
+                href: api/dynamics-currencies-delete.md
+          - name: Cliente
+            href: resources/dynamics-customer.md
+            items:
+              - name: Obter cliente
+                href: api/dynamics-customer-get.md
+              - name: Criar um cliente
+                href: api/dynamics-create-customer.md
+              - name: Atualização de cliente
+                href: api/dynamics-customer-update.md
+              - name: Excluir clientes
+                href: api/dynamics-customer-delete.md
+          - name: Pagamento do cliente
+            href: resources/dynamics-customerpayment.md
+            items:
+              - name: Receber pagamento do cliente
+                href: api/dynamics-customerpayment-get.md
+              - name: Criar o pagamento do cliente
+                href: api/dynamics-create-customerpayment.md
+              - name: Atualizar o pagamento do cliente
+                href: api/dynamics-customerpayment-update.md
+              - name: Excluir o pagamento do cliente
+                href: api/dynamics-customerpayment-delete.md
+          - name: Diário de pagamento dos clientes
+            href: resources/dynamics-customerpaymentsjournal.md
+            items:
+              - name: Obter diário de pagamento dos clientes
+                href: api/dynamics-customerpaymentsjournal-get.md
+              - name: Criar diário de pagamento dos clientes
+                href: api/dynamics-create-customerpaymentsjournal.md
+              - name: Atualizar diário de pagamento dos clientes
+                href: api/dynamics-customerpaymentsjournal-update.md
+              - name: Excluir diário de pagamento dos clientes
+                href: api/dynamics-customerpaymentsjournal-delete.md
+          - name: Dimensão
+            href: resources/dynamics-dimension.md
+            items:
+              - name: Obter dimensão
+                href: api/dynamics-dimension-get.md
+          - name: Valor de dimensão
+            href: resources/dynamics-dimensionvalue.md
+            items:
+              - name: Obter dimensão
+                href: api/dynamics-dimensionvalue-get.md
+          - name: Funcionário
+            href: resources/dynamics-employee.md
+            items:
+              - name: Excluir funcionário
+                href: api/dynamics-employee-get.md
+              - name: Criar um funcionário
+                href: api/dynamics-create-employee.md
+              - name: Atualizar o funcionário
+                href: api/dynamics-employee-update.md
+              - name: Excluir um funcionário
+                href: api/dynamics-employee-delete.md
+          - name: Entradas de contabilidade
+            href: resources/dynamics-generalledgerentries.md
+            items:
+              - name: Obter entradas de contabilidade
+                href: api/dynamics-generalledgerentries-get.md
+          - name: Item
+            href: resources/dynamics-item.md
+            items:
+              - name: Obter item
+                href: api/dynamics-item-get.md
+              - name: Criar item
+                href: api/dynamics-create-item.md
+              - name: Atualizar item
+                href: api/dynamics-item-update.md
+              - name: Excluir item
+                href: api/dynamics-item-delete.md
+          - name: Categorias de itens
+            href: resources/dynamics-itemcategories.md
+            items:
+              - name: Obter categorias de itens
+                href: api/dynamics-itemcategories-get.md
+              - name: Criar categorias de itens
+                href: api/dynamics-create-itemcategories.md
+              - name: Atualizar categorias de itens
+                href: api/dynamics-itemcategories-update.md
+              - name: Excluir categorias de itens
+                href: api/dynamics-itemcategories-delete.md
+          - name: Diário
+            href: resources/dynamics-journal.md
+            items:
+              - name: Obter diário
+                href: api/dynamics-journal-get.md
+              - name: Criar diário
+                href: api/dynamics-create-journal.md
+              - name: Atualizar diário
+                href: api/dynamics-journal-update.md
+              - name: Excluir diário
+                href: api/dynamics-journal-delete.md
+          - name: Linha do diário
+            href: resources/dynamics-journalline.md
+            items:
+              - name: Linha de diário
+                href: api/dynamics-journalline-get.md
+              - name: Criar linha de diário
+                href: api/dynamics-create-journalline.md
+              - name: Atualizar a linha do diário
+                href: api/dynamics-journalline-update.md
+              - name: Excluir linhas do diário
+                href: api/dynamics-journalline-delete.md
+          - name: Forma de pagamento
+            href: resources/dynamics-paymentmethods.md
+            items:
+              - name: Editar formas de pagamento
+                href: api/dynamics-paymentmethods-get.md
+              - name: Criar formas de pagamento
+                href: api/dynamics-create-paymentmethods.md
+              - name: Atualizar formas de pagamento
+                href: api/dynamics-paymentmethods-update.md
+              - name: Excluir formas de pagamento
+                href: api/dynamics-paymentmethods-delete.md
+          - name: Condições de pagamento
+            href: resources/dynamics-paymentterms.md
+            items:
+              - name: Obter condições de pagamento
+                href: api/dynamics-paymentterms-get.md
+              - name: Criar condições de pagamento
+                href: api/dynamics-create-paymentterms.md
+              - name: Atualizar condições de pagamento
+                href: api/dynamics-paymentterms-update.md
+              - name: Excluir condições de pagamento
+                href: api/dynamics-paymentterms-delete.md
+          - name: Métodos de remessa
+            href: resources/dynamics-shipmentmethods.md
+            items:
+              - name: Obter métodos de remessa
+                href: api/dynamics-shipmentmethods-get.md
+              - name: Criar métodos de remessa
+                href: api/dynamics-create-shipmentmethods.md
+              - name: Atualizar métodos de remessa
+                href: api/dynamics-shipmentmethods-update.md
+              - name: Excluir métodos de remessa
+                href: api/dynamics-shipmentmethods-delete.md
+          - name: Área de imposto
+            href: resources/dynamics-taxarea.md
+            items:
+              - name: Obter a área de imposto
+                href: api/dynamics-taxarea-get.md
+              - name: Criar área de imposto
+                href: api/dynamics-create-taxarea.md
+              - name: Atualizar área de imposto
+                href: api/dynamics-taxarea-update.md
+              - name: Excluir a área de imposto
+                href: api/dynamics-taxarea-delete.md
+          - name: Grupos de imposto
+            href: resources/dynamics-taxgroups.md
+            items:
+              - name: Acessar grupos de imposto
+                href: api/dynamics-taxgroups-get.md
+              - name: Criar grupos de imposto
+                href: api/dynamics-create-taxgroups.md
+              - name: Atualizar grupos de imposto
+                href: api/dynamics-taxgroups-update.md
+              - name: Excluir grupos de imposto
+                href: api/dynamics-taxgroups-delete.md
+          - name: Balancete
+            href: resources/dynamics-trialbalance.md
+            items:
+              - name: Obter balancete
+                href: api/dynamics-trialbalance-get.md
+          - name: Unidades de medida
+            href: resources/dynamics-unitsofmeasure.md
+            items:
+              - name: Obter unidades de medida
+                href: api/dynamics-unitsofmeasure-get.md
+              - name: Criar unidades de medida
+                href: api/dynamics-create-unitsofmeasure.md
+              - name: Atualizar unidades de medida
+                href: api/dynamics-unitsofmeasure-update.md
+              - name: Excluir unidades de medida
+                href: api/dynamics-unitsofmeasure-delete.md
+          - name: Fornecedor
+            href: resources/dynamics-vendor.md
+            items:
+              - name: Obter fornecedor
+                href: api/dynamics-vendor-get.md
+              - name: Criar fornecedor
+                href: api/dynamics-create-vendor.md
+              - name: Atualizar fornecedor
+                href: api/dynamics-vendor-update.md
+              - name: Excluir fornecedor
+                href: api/dynamics-vendor-delete.md
       - name: Identidade e acesso
         href: resources/azure-ad-overview.md
         displayName: 'Azure AD, Microsoft identity platform'
@@ -7785,8 +8019,19 @@ items:
                 href: api/reportroot-getyammergroupsactivitycounts.md
       - name: Segurança
         href: resources/security-api-overview.md
-        displayname: 'Security API, Microsoft Intelligent Security Graph'
+        displayname: 'Security API, Microsoft Graph Security API'
         items:
+          - name: Ações
+            href: resources/securityaction.md
+            items:
+              - name: Listar ações de segurança
+                href: api/securityactions-list.md
+              - name: Criar ação de segurança
+                href: api/securityactions-post.md
+              - name: Obter ação de segurança
+                href: api/securityaction-get.md
+              - name: Cancelar a ação de segurança
+                href: api/securityaction-cancelsecurityaction.md
           - name: Alertas
             href: resources/alert.md
             items:
@@ -7796,6 +8041,8 @@ items:
                 href: api/alert-get.md
               - name: Atualizar alerta
                 href: api/alert-update.md
+              - name: Atualizar vários alertas
+                href: api/alert-updatealerts.md
           - name: Classificações de segurança
             href: resources/securescores.md
             items:
@@ -7808,6 +8055,27 @@ items:
                 href: api/securescorecontrolprofiles-list.md
               - name: Atualizar perfis de controle da classificação de segurança
                 href: api/securescorecontrolprofiles-update.md
+          - name: Indicadores de inteligência contra ameaças
+            href: resources/tiindicator.md
+            items:
+              - name: Listar
+                href: api/tiindicators-list.md
+              - name: Criar
+                href: api/tiindicators-post.md
+              - name: Enviar várias
+                href: api/tiindicator-submittiindicators.md
+              - name: Obter
+                href: api/tiindicator-get.md
+              - name: Atualizar
+                href: api/tiindicator-update.md
+              - name: Atualizar várias
+                href: api/tiindicator-updatetiindicators.md
+              - name: Excluir
+                href: api/tiindicator-delete.md
+              - name: Excluir várias tarefas
+                href: api/tiindicator-deletetiindicators.md
+              - name: Excluir várias pelo ID externo
+                href: api/tiindicator-deletetiindicatorsbyexternalid.md
           - name: Erros
             href: resources/security-error-codes.md
       - name: Sites e listas
@@ -8078,7 +8346,7 @@ items:
                 href: api/channel-list-messagereplies.md
               - name: Obter resposta da mensagem
                 href: api/channel-get-messagereply.md
-              - name: Criar mensagem
+              - name: Enviar mensagem
                 href: api/channel-post-chatmessage.md
               - name: Responder à mensagem
                 href: api/channel-post-messagereply.md
