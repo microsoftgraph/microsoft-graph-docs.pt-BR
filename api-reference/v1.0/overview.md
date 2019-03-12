@@ -2,12 +2,12 @@
 title: Referência da API REST do Microsoft Graph v1.0
 description: Bem-vindo à referência da API REST do Microsoft Graph para o ponto de extremidade v1.0.
 localization_priority: Priority
-ms.openlocfilehash: 6e0dde56aae7857e9ae042f89ba5eb6b01737efa
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.openlocfilehash: bdebe1415ea020f575b0cbf35712b30d7830df05
+ms.sourcegitcommit: 1089e82254068556b0d0c7be45e3270e46c961e6
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829069"
+ms.lasthandoff: 03/12/2019
+ms.locfileid: "30546006"
 ---
 # <a name="microsoft-graph-rest-api-v10-reference"></a>Referência da API REST do Microsoft Graph v1.0
 
@@ -52,5 +52,3 @@ Encontre mais informações em [Suporte e controle de versão](/graph/versioning
 Existem APIs adicionais ou recursos que você gostaria de ver no Microsoft Graph? Poste novas solicitações de recursos no [UserVoice](https://officespdev.uservoice.com/forums/224641-general/filters/new?category_id=101632).
 
 Possui comentários para APIs existentes do Microsoft Graph? Conecte-se conosco em [Github](https://github.com/microsoftgraph/microsoft-graph-docs/issues).
-
-Para fazer perguntas ou ajuda com o seu código usando Microsof

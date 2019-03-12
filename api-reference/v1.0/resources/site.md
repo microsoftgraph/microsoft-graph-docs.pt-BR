@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Site
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: cd0631d8426dffa6ea731fabe024a1028e080f1c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: d4dfb3f340a2b2b7ff5ad5a3c9279cb2a03c63be
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937009"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482088"
 ---
 # <a name="site-resource"></a>Recurso site
 
@@ -90,7 +90,7 @@ O recurso **site** é derivado de [**baseItem**](baseitem.md) e herda propriedad
 | **id**                   | string                              | O identificador exclusivo do item. Somente leitura.                                                  |
 | **createdDateTime**      | DateTimeOffset                      | A data e a hora da criação do item. Somente leitura.                                             |
 | **description**          | string                              | O texto descritivo do site.                                                             |
-| **displayName**          | string                              | O texto completo do site. Somente leitura.                                                        |
+| **displayName**          | cadeia de caracteres                              | O texto completo do site. Somente leitura.                                                        |
 | **eTag**                 | string                              | ETag do item. Somente leitura.                                                                  |
 | **lastModifiedDateTime** | DateTimeOffset                      | A data e a hora que o item foi modificado pela última vez. Somente leitura.                                       |
 | **name**                 | string                              | O nome/título do item.                                                                  |
