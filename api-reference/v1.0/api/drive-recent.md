@@ -1,18 +1,18 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Listar arquivos recentes
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 3548a708084da5b5c22bd31be1130630a577d7bb
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: be4f6632f86c62a8672bb94728dee9771aafc540
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27922722"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482123"
 ---
-# <a name="list-recent-files"></a>Listar arquivos recentes
+# <a name="list-recent-files"></a>Liste arquivos recentes
 
 Listar uma coleção de itens que foram usados recentemente pelo usuário conectado. Esta coleção inclui itens que estão na unidade do usuário, assim como itens aos quais ele tem acesso por meio de outras unidades.
 

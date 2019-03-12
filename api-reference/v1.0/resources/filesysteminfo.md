@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: FileSystemInfo
 localization_priority: Normal
-ms.openlocfilehash: 9a033a08b496225620245bb48cd1b0bef1f2a323
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 28f5cd631f9ea937150f9bb4c16e3775ea26d5d1
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806843"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482333"
 ---
 # <a name="filesysteminfo-facet"></a>Faceta fileSystemInfo
 

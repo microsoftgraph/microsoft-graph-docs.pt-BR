@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Alterar permissões de compartilhamento
 localization_priority: Normal
-ms.openlocfilehash: d972dc436b23fb62bb3df544584008eada0e99ca
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: b2c3c41c9feecf7b2874ffdcc468593b6eeb7444
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27825337"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482067"
 ---
 # <a name="update-sharing-permission"></a>Atualizar a permissão de compartilhamento
 
@@ -49,12 +49,12 @@ PATCH /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 
 No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados.
 
-Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações em outros valores de propriedade.
-Para obter o melhor desempenho, não inclua valores existentes que não foram alterados.
+Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade.
+Para obter um melhor desempenho, não inclua valores existentes que não foram alterados.
 
 | Propriedade | Tipo              | Descrição                   |
 |:---------|:------------------|:------------------------------|
-| funções    | String collection | Uma matriz de tipos de permissão. |
+| funções    | Coleção de cadeias de caracteres | Uma matriz de tipos de permissão. |
 
 ## <a name="response"></a>Resposta
 

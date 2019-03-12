@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Excluir um arquivo ou uma pasta
+title: Excluir um arquivo ou pasta
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 39c7706fab229e52c394c30c6daf478a1fefd581
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 6c6afe91167d6ce8c4bce3d53eb3cb9085bb394f
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27966864"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482144"
 ---
 # <a name="delete-a-driveitem"></a>Excluir um DriveItem
 
