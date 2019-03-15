@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos androidManagedStoreApp
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 30192b1329d643f66184aea4dfdd0e603fe5d65a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c4396aa3167be86158bf319382a9e5a016640446
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30170767"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571876"
 ---
 # <a name="list-androidmanagedstoreapps"></a>Listar androidManagedStoreApps
 
@@ -62,7 +62,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1202
+Content-Length: 1236
 
 {
   "value": [
@@ -95,7 +95,8 @@ Content-Length: 1202
       "appIdentifier": "App Identifier value",
       "usedLicenseCount": 0,
       "totalLicenseCount": 1,
-      "appStoreUrl": "https://example.com/appStoreUrl/"
+      "appStoreUrl": "https://example.com/appStoreUrl/",
+      "supportsOemConfig": true
     }
   ]
 }

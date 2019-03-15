@@ -4,12 +4,12 @@ description: Contém propriedades para aplicativos do Office365 excluídos.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4ba3e53a26ff71dde2d5a95fde811e42ba2ccb99
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 8dee0d5328f1f69c95159116bf913bc2abb959d7
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30154023"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571687"
 ---
 # <a name="excludedapps-resource-type"></a>tipo de recurso excludedApps
 
@@ -31,13 +31,14 @@ Contém propriedades para aplicativos do Office365 excluídos.
 |oneNote|Boolean|O valor de se o MS Office OneNote deve ser excluído ou não.|
 |outlook|Boolean|O valor de se o MS Office Outlook deve ser excluído ou não.|
 |Apresentação|Boolean|O valor de se o MS Office PowerPoint deve ser excluído ou não.|
-|publisher|Boolean|O valor de se o MS Office Publisher deve ser excluído ou não.|
+|publicador|Boolean|O valor de se o MS Office Publisher deve ser excluído ou não.|
 |sharePointDesigner|Boolean|O valor de se o MS Office SharePointDesigner deve ser excluído ou não.|
+|Teams|Boolean|O valor de se as equipes do MS Office devem ser excluídas ou não.|
 |Visio|Boolean|O valor de se o MS Office Visio deve ser excluído ou não.|
 |palavras|Boolean|O valor de se o MS Office Word deve ser excluído ou não.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -60,6 +61,7 @@ Veja a seguir uma representação JSON do recurso.
   "powerPoint": true,
   "publisher": true,
   "sharePointDesigner": true,
+  "teams": true,
   "visio": true,
   "word": true
 }

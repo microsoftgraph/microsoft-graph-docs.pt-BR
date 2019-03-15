@@ -4,12 +4,12 @@ description: Metadados para o relatório de detalhes de abandono de registro
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: d5721e0cb5e466ba684fa1e73572a1ecf87a398b
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 67cc5e74b70849df502ea5f00c39e37ed9c55c38
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30141059"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571274"
 ---
 # <a name="manageddeviceenrollmentabandonmentdetails-function"></a>função managedDeviceEnrollmentAbandonmentDetails
 
@@ -19,7 +19,7 @@ ms.locfileid: "30141059"
 
 Metadados para o relatório de detalhes de abandono de registro
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -49,7 +49,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta função.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|skip|Int32|Ainda não documentado|
+|ignorar|Int32|Ainda não documentado|
 |top|Int32|Ainda não documentado|
 |filter|String|Ainda não documentado|
 |skipToken|String|Ainda não documentado|

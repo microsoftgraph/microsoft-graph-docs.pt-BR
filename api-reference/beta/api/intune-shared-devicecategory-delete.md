@@ -4,12 +4,12 @@ description: Exclui deviceCategory.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 3f02bcad5c43ef787ad53ea59bb88853074db452
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ef1283329ac40356a4f81704b1969aebbb8b0dde
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30161751"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571127"
 ---
 # <a name="delete-devicecategory"></a>Excluir deviceCategory
 
@@ -19,7 +19,7 @@ ms.locfileid: "30161751"
 
 Exclui [deviceCategory](../resources/intune-shared-devicecategory.md).
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

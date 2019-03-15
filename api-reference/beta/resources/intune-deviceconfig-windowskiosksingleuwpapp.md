@@ -4,12 +4,12 @@ description: A classe usada para identificar as informações do aplicativo UWP 
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 804dd2f34416eecb956b322a0f178daaf39b2418
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: d0a3b56c7bc9856b98708b63c247479e6ccf9c9b
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30142039"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571155"
 ---
 # <a name="windowskiosksingleuwpapp-resource-type"></a>tipo de recurso windowsKioskSingleUWPApp
 
@@ -28,7 +28,7 @@ Herda de [windowsKioskAppConfiguration](../resources/intune-deviceconfig-windows
 |uwpApp|[windowsKioskUWPApp](../resources/intune-deviceconfig-windowskioskuwpapp.md)|Esta é a única ID de modelo de usuário do aplicativo (AUMID) que estará disponível para iniciar o uso enquanto estiver no modo quiosque|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -45,6 +45,7 @@ Veja a seguir uma representação JSON do recurso.
     "startLayoutTileSize": "String",
     "name": "String",
     "appType": "String",
+    "autoLaunch": true,
     "appUserModelId": "String",
     "appId": "String",
     "containedAppId": "String"

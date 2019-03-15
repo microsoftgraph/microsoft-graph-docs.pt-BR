@@ -4,12 +4,12 @@ description: Listar propriedades e relações dos objetos windows10EndpointProte
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7ac6beb73ce3084ad2d270d181b73cf8afb670fd
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 11201c32f6db44785d484f5b59559d6e6b872cb6
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30161765"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571869"
 ---
 # <a name="list-windows10endpointprotectionconfigurations"></a>Listar windows10EndpointProtectionConfigurations
 
@@ -63,7 +63,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 29491
+Content-Length: 30466
 
 {
   "value": [
@@ -80,6 +80,34 @@ Content-Length: 29491
       "displayName": "Display Name value",
       "version": 7,
       "dmaGuardDeviceEnumerationPolicy": "blockAll",
+      "firewallRules": [
+        {
+          "@odata.type": "microsoft.graph.windowsFirewallRule",
+          "displayName": "Display Name value",
+          "description": "Description value",
+          "packageFamilyName": "Package Family Name value",
+          "filePath": "File Path value",
+          "serviceName": "Service Name value",
+          "protocol": 8,
+          "localPortRanges": [
+            "Local Port Ranges value"
+          ],
+          "remotePortRanges": [
+            "Remote Port Ranges value"
+          ],
+          "localAddressRanges": [
+            "Local Address Ranges value"
+          ],
+          "remoteAddressRanges": [
+            "Remote Address Ranges value"
+          ],
+          "profileTypes": "domain",
+          "action": "blocked",
+          "trafficDirection": "out",
+          "interfaceTypes": "remoteAccess",
+          "localUserAuthorizations": "Local User Authorizations value"
+        }
+      ],
       "userRightsAccessCredentialManagerAsTrustedCaller": {
         "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
         "state": "blocked",

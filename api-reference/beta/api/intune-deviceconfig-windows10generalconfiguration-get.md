@@ -4,12 +4,12 @@ description: Ler propriedades e relações do objeto windows10GeneralConfigurati
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3fdb31e2832e7405ae561cff16911a0399bfd3a4
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 4f784ca0e989c1a55f583e754670f1ca870dffc3
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30154079"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30572044"
 ---
 # <a name="get-windows10generalconfiguration"></a>Get windows10GeneralConfiguration
 
@@ -67,7 +67,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 14159
+Content-Length: 14347
 
 {
   "value": {
@@ -92,6 +92,7 @@ Content-Length: 14159
     "enableAutomaticRedeployment": true,
     "microsoftAccountSignInAssistantSettings": "disabled",
     "authenticationAllowSecondaryDevice": true,
+    "authenticationWebSignIn": "enabled",
     "authenticationPreferredAzureADTenantDomainName": "Authentication Preferred Azure ADTenant Domain Name value",
     "cryptographyAllowFipsAlgorithmPolicy": true,
     "displayAppListWithGdiDPIScalingTurnedOn": [
@@ -232,7 +233,6 @@ Content-Length: 14159
     "defenderCloudExtendedTimeout": 12,
     "defenderCloudExtendedTimeoutInSeconds": 5,
     "defenderBlockOnAccessProtection": true,
-    "defenderScheduleScanDay": "monday",
     "defenderSubmitSamplesConsentType": "alwaysPrompt",
     "lockScreenAllowTimeoutConfiguration": true,
     "lockScreenBlockActionCenterNotifications": true,
@@ -252,6 +252,7 @@ Content-Length: 14159
     "passwordMinimumAgeInDays": 8,
     "privacyAdvertisingId": "blocked",
     "privacyAutoAcceptPairingAndConsentPrompts": true,
+    "privacyDisableLaunchExperience": true,
     "privacyBlockInputPersonalization": true,
     "privacyBlockPublishUserActivities": true,
     "privacyBlockActivityFeed": true,
@@ -385,7 +386,10 @@ Content-Length: 14159
     "tenantLockdownRequireNetworkDuringOutOfBoxExperience": true,
     "appManagementMSIAllowUserControlOverInstall": true,
     "appManagementMSIAlwaysInstallWithElevatedPrivileges": true,
-    "dataProtectionBlockDirectMemoryAccess": true
+    "dataProtectionBlockDirectMemoryAccess": true,
+    "appManagementPackageFamilyNamesToLaunchAfterLogOn": [
+      "App Management Package Family Names To Launch After Log On value"
+    ]
   }
 }
 ```

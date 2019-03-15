@@ -4,12 +4,12 @@ description: Listar propriedades e relações dos objetos managedAppProtection.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 42a852d3e3e45e4badc36878018122889231a2ba
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: d1ff2c12e777946cd53e67ffd1af5972b74ec748
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30155549"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30570826"
 ---
 # <a name="list-managedappprotections"></a>Listar managedAppProtections
 
@@ -64,7 +64,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2094
+Content-Length: 2155
 
 {
   "value": [
@@ -111,7 +111,8 @@ Content-Length: 2094
       "minimumWipeAppVersion": "Minimum Wipe App Version value",
       "appActionIfDeviceComplianceRequired": "wipe",
       "appActionIfMaximumPinRetriesExceeded": "wipe",
-      "pinRequiredInsteadOfBiometricTimeout": "-PT3M9.8396734S"
+      "pinRequiredInsteadOfBiometricTimeout": "-PT3M9.8396734S",
+      "allowedOutboundClipboardSharingExceptionLength": 14
     }
   ]
 }

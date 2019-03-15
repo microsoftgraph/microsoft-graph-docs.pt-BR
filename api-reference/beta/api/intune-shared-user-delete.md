@@ -4,12 +4,12 @@ description: Exclui usuário.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 6d0afb6c816241acf15319c3fb4082d3cc7935dd
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: acfdd4343f699f9db9aadee10d15be927f7bd105
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30165489"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571120"
 ---
 # <a name="delete-user"></a>Excluir usuário
 
@@ -19,7 +19,7 @@ ms.locfileid: "30165489"
 
 Exclui [usuário](../resources/intune-shared-user.md).
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é necessária para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference).  A permissão específica necessária depende do contexto.
+Uma das seguintes permissões é necessária para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).  A permissão específica necessária depende do contexto.
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

@@ -4,12 +4,12 @@ description: A classe usada para identificar a configuração do aplicativo mult
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b2d2ff38e3b07920f474d9e3894bbd1f8855e277
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c657300cf3ca00482b85b7983f28b4df3135c97d
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30162017"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30570840"
 ---
 # <a name="windowskioskmultipleapps-resource-type"></a>tipo de recurso tipo complexowindowskioskmultipleapps
 
@@ -27,11 +27,12 @@ Herda de [windowsKioskAppConfiguration](../resources/intune-deviceconfig-windows
 |:---|:---|:---|
 |apps|coleção [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|Estes são os únicos aplicativos da Windows Store que estarão disponíveis para inicialização no menu iniciar. Essa coleção pode conter um máximo de 128 elementos.|
 |a barra de tarefas|Boolean|Essa configuração permite que o administrador especifique se a barra de tarefas é mostrada ou não.|
+|allowAccessToDownloadsFolder|Boolean|Essa configuração permite o acesso à pasta downloads no explorador de arquivos.|
 |disallowDesktopApps|Boolean|Essa configuração indica que os aplicativos de área de trabalho são permitidos. O padrão é true.|
 |startMenuLayoutXml|Binária|Permite que os administradores substituam o layout de início padrão e impede que o usuário o altere.O layout é modificado especificando um arquivo XML com base em um esquema de modificação de layout. XML precisa estar no formato binário.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -49,12 +50,14 @@ Veja a seguir uma representação JSON do recurso.
       "startLayoutTileSize": "String",
       "name": "String",
       "appType": "String",
+      "autoLaunch": true,
       "appUserModelId": "String",
       "appId": "String",
       "containedAppId": "String"
     }
   ],
   "showTaskBar": true,
+  "allowAccessToDownloadsFolder": true,
   "disallowDesktopApps": true,
   "startMenuLayoutXml": "binary"
 }

@@ -4,12 +4,12 @@ description: A classe base de um tipo de aplicativo
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0487fa24ecd2d27817349b68063cf606a2401944
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 4cccd1b5e7ec7ca16aeb76b87fc31d90e92e7dcd
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30170473"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30572079"
 ---
 # <a name="windowskioskdesktopapp-resource-type"></a>tipo de recurso Complexowindowskioskdesktopapp
 
@@ -26,14 +26,15 @@ Herda de [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappb
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |Propriedadesstartlayouttilesize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|O tamanho do bloco do aplicativo para o layout inicial herdado de [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md). Os valores possíveis são: `hidden`, `small`, `medium`, `wide`, `large`.|
-|name|String|Representa o nome amigável de um aplicativo herdado de [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|
+|nome|String|Representa o nome amigável de um aplicativo herdado de [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|
 |appType|[windowsKioskAppType](../resources/intune-deviceconfig-windowskioskapptype.md)|O tipo de aplicativo herdado de [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md). Os valores possíveis são: `unknown`, `store`, `desktop`, `aumId`.|
+|autoLançamento|Boolean|Permitir que o aplicativo seja iniciado automaticamente no modo de quiosque de vários aplicativos herdado de [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|
 |caminho|String|Definir o caminho de um aplicativo de área de trabalho|
 |Propriedadesdesktopapplicationid|String|Definir o Propriedadesdesktopapplicationid do aplicativo|
 |desktopApplicationLinkPath|String|Definir o DesktopApplicationLinkPath do aplicativo|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -48,6 +49,7 @@ Veja a seguir uma representação JSON do recurso.
   "startLayoutTileSize": "String",
   "name": "String",
   "appType": "String",
+  "autoLaunch": true,
   "path": "String",
   "desktopApplicationId": "String",
   "desktopApplicationLinkPath": "String"

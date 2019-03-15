@@ -4,12 +4,12 @@ description: Leia as propriedades e relações do objeto sharedPCConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 032334db5ccfa7a87f06ca79a126210de4746a38
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 4ba2a44d75a582e23987eb761fce3deeebfa94f0
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30151090"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30570875"
 ---
 # <a name="get-sharedpcconfiguration"></a>Acessar sharedPCConfiguration
 
@@ -67,7 +67,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1373
+Content-Length: 1408
 
 {
   "value": {
@@ -104,7 +104,8 @@ Content-Length: 1373
     "idleTimeBeforeSleepInSeconds": 12,
     "kioskAppDisplayName": "Kiosk App Display Name value",
     "kioskAppUserModelId": "Kiosk App User Model Id value",
-    "maintenanceStartTime": "11:59:24.7240000"
+    "maintenanceStartTime": "11:59:24.7240000",
+    "fastFirstSignIn": "enabled"
   }
 }
 ```

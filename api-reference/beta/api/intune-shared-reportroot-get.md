@@ -4,12 +4,12 @@ description: Ler propriedades e relações do objeto reportRoot.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 5c32c68221d533b4e3ce0361fa4cf761404e4539
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 73eec43bbaf31d39e99cdad5e859debc08b08558
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30150341"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30570931"
 ---
 # <a name="get-reportroot"></a>Get reportRoot
 
@@ -19,7 +19,7 @@ ms.locfileid: "30150341"
 
 Ler propriedades e relações do objeto [reportRoot](../resources/intune-shared-reportroot.md).
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

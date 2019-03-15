@@ -4,12 +4,12 @@ description: Metadados para o relatório de tendências de falha de inscrição
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: f5374e608f5619dbbab6883a55d51da5a69e1f4b
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: d4d288e2197f1ef623ebdf7813cadc14fb619f19
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30151251"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571344"
 ---
 # <a name="manageddeviceenrollmentfailuretrends-function"></a>função managedDeviceEnrollmentFailureTrends
 
@@ -19,7 +19,7 @@ ms.locfileid: "30151251"
 
 Metadados para o relatório de tendências de falha de inscrição
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

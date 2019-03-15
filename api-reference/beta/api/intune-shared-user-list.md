@@ -4,12 +4,12 @@ description: Listar propriedades e relações de objetos de usuário.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 0fe1ab86e78e4bff46a6c9105048519a20c894a1
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 6508f45a96a140fcf94902a7a5e009adf21103dc
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30141234"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571778"
 ---
 # <a name="list-users"></a>Listar usuários
 
@@ -21,7 +21,7 @@ Listar propriedades e relações de objetos de [usuário](../resources/intune-sh
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-Uma das seguintes permissões é necessária para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference).  A permissão específica depende do contexto.
+Uma das seguintes permissões é necessária para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).  A permissão específica depende do contexto.
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

@@ -4,12 +4,12 @@ description: Ler propriedades de leitura e relações do objeto deviceCategory.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: b62523d4a17571c0ff6931b8ee462f21b4a1daa4
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c94c845ed067fe91766b7423d1fdb53dd58a8aeb
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30174535"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571904"
 ---
 # <a name="get-devicecategory"></a>Obter deviceCategory
 
@@ -21,7 +21,7 @@ Ler propriedades de leitura e relações do objeto [deviceCategory](../resources
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
