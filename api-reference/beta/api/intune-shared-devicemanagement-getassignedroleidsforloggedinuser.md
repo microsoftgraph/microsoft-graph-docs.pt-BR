@@ -4,31 +4,31 @@ description: Recupera as definições de função atribuídas e as atribuições
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 2927568b3363dc012070aae89a2dc3108fe7fa17
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 9326f490721f032b38f5fcb64d1cad12602ff76f
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30170291"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30570777"
 ---
-# <a name="getassignedroleidsforloggedinuser-function"></a><span data-ttu-id="16f09-103">função getAssignedRoleIdsForLoggedInUser</span><span class="sxs-lookup"><span data-stu-id="16f09-103">getAssignedRoleIdsForLoggedInUser function</span></span>
+# <a name="getassignedroleidsforloggedinuser-function"></a><span data-ttu-id="dc796-103">função getAssignedRoleIdsForLoggedInUser</span><span class="sxs-lookup"><span data-stu-id="dc796-103">getAssignedRoleIdsForLoggedInUser function</span></span>
 
-> <span data-ttu-id="16f09-104">**Importante:** As APIs na versão/beta no Microsoft Graph estão sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="16f09-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="16f09-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="16f09-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="dc796-104">**Importante:** As APIs na versão/beta no Microsoft Graph estão sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="dc796-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="dc796-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="dc796-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="16f09-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="16f09-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="dc796-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="dc796-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="16f09-107">Recupera as definições de função atribuídas e as atribuições de função do usuário atualmente autenticado.</span><span class="sxs-lookup"><span data-stu-id="16f09-107">Retrieves the assigned role definitions and role assignments of the currently authenticated user.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="16f09-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="16f09-108">Prerequisites</span></span>
-<span data-ttu-id="16f09-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="16f09-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference).</span></span>
+<span data-ttu-id="dc796-107">Recupera as definições de função atribuídas e as atribuições de função do usuário atualmente autenticado.</span><span class="sxs-lookup"><span data-stu-id="dc796-107">Retrieves the assigned role definitions and role assignments of the currently authenticated user.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="dc796-108">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="dc796-108">Prerequisites</span></span>
+<span data-ttu-id="dc796-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="dc796-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
 
-|<span data-ttu-id="16f09-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="16f09-111">Permission type</span></span>|<span data-ttu-id="16f09-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="16f09-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="dc796-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="dc796-111">Permission type</span></span>|<span data-ttu-id="dc796-112">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="dc796-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="16f09-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="16f09-113">Delegated (work or school account)</span></span>||
-| <span data-ttu-id="16f09-114">&nbsp;&nbsp; **Controle de acesso baseado em função (RBAC)**</span><span class="sxs-lookup"><span data-stu-id="16f09-114">&nbsp; &nbsp; **Role-based access control (RBAC)**</span></span> | <span data-ttu-id="16f09-115">DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All</span><span class="sxs-lookup"><span data-stu-id="16f09-115">DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All</span></span>|
-|<span data-ttu-id="16f09-116">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="16f09-116">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="16f09-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="16f09-117">Not supported.</span></span>|
-|<span data-ttu-id="16f09-118">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="16f09-118">Application</span></span>|<span data-ttu-id="16f09-119">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="16f09-119">Not supported.</span></span>|
+|<span data-ttu-id="dc796-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="dc796-113">Delegated (work or school account)</span></span>||
+| <span data-ttu-id="dc796-114">&nbsp; &nbsp; **RBAC (Controle de acesso baseado na função)**</span><span class="sxs-lookup"><span data-stu-id="dc796-114">&nbsp; &nbsp; **Role-based access control (RBAC)**</span></span> | <span data-ttu-id="dc796-115">DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All</span><span class="sxs-lookup"><span data-stu-id="dc796-115">DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All</span></span>|
+|<span data-ttu-id="dc796-116">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="dc796-116">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="dc796-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="dc796-117">Not supported.</span></span>|
+|<span data-ttu-id="dc796-118">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="dc796-118">Application</span></span>|<span data-ttu-id="dc796-119">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="dc796-119">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="16f09-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="16f09-120">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="dc796-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="dc796-120">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,27 +37,27 @@ ms.locfileid: "30170291"
 GET /deviceManagement/getAssignedRoleIdsForLoggedInUser
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="16f09-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="16f09-121">Request headers</span></span>
-|<span data-ttu-id="16f09-122">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="16f09-122">Header</span></span>|<span data-ttu-id="16f09-123">Valor</span><span class="sxs-lookup"><span data-stu-id="16f09-123">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="dc796-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="dc796-121">Request headers</span></span>
+|<span data-ttu-id="dc796-122">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="dc796-122">Header</span></span>|<span data-ttu-id="dc796-123">Valor</span><span class="sxs-lookup"><span data-stu-id="dc796-123">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="16f09-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="16f09-124">Authorization</span></span>|<span data-ttu-id="16f09-125">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="16f09-125">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="16f09-126">Aceitar</span><span class="sxs-lookup"><span data-stu-id="16f09-126">Accept</span></span>|<span data-ttu-id="16f09-127">application/json</span><span class="sxs-lookup"><span data-stu-id="16f09-127">application/json</span></span>|
+|<span data-ttu-id="dc796-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="dc796-124">Authorization</span></span>|<span data-ttu-id="dc796-125">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="dc796-125">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="dc796-126">Aceitar</span><span class="sxs-lookup"><span data-stu-id="dc796-126">Accept</span></span>|<span data-ttu-id="dc796-127">application/json</span><span class="sxs-lookup"><span data-stu-id="dc796-127">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="16f09-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="16f09-128">Request body</span></span>
-<span data-ttu-id="16f09-129">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="16f09-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="dc796-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="dc796-128">Request body</span></span>
+<span data-ttu-id="dc796-129">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="dc796-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="16f09-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="16f09-130">Response</span></span>
-<span data-ttu-id="16f09-131">Se tiver êxito, essa função retornará `200 OK` um código de resposta e um **deviceAndAppManagementAssignedRoleId** no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="16f09-131">If successful, this function returns a `200 OK` response code and a **deviceAndAppManagementAssignedRoleId** in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="dc796-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="dc796-130">Response</span></span>
+<span data-ttu-id="dc796-131">Se tiver êxito, essa função retornará `200 OK` um código de resposta e um **deviceAndAppManagementAssignedRoleId** no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="dc796-131">If successful, this function returns a `200 OK` response code and a **deviceAndAppManagementAssignedRoleId** in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="16f09-132">Exemplo</span><span class="sxs-lookup"><span data-stu-id="16f09-132">Example</span></span>
-### <a name="request"></a><span data-ttu-id="16f09-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="16f09-133">Request</span></span>
-<span data-ttu-id="16f09-134">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="16f09-134">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="dc796-132">Exemplo</span><span class="sxs-lookup"><span data-stu-id="dc796-132">Example</span></span>
+### <a name="request"></a><span data-ttu-id="dc796-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="dc796-133">Request</span></span>
+<span data-ttu-id="dc796-134">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="dc796-134">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/getAssignedRoleIdsForLoggedInUser
 ```
 
-### <a name="response"></a><span data-ttu-id="16f09-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="16f09-135">Response</span></span>
-<span data-ttu-id="16f09-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="16f09-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="dc796-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="dc796-135">Response</span></span>
+<span data-ttu-id="dc796-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="dc796-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

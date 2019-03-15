@@ -1,39 +1,40 @@
 ---
 title: Tipo de recurso iPv6Range
-description: Descreve o recurso de iPv6Range da Microsoft Graph API para Intune, que oferece suporte a vários fluxos de trabalho.
+description: Definição de intervalo IPv6.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 35b0401d3557a6afc84a27a2f47d35e17a3229a9
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.prod: Intune
+ms.openlocfilehash: 6b54782b1851ea800b548f02b34f60da3a3236a3
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29396347"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571533"
 ---
-# <a name="ipv6range-resource-type"></a><span data-ttu-id="7fbfd-103">Tipo de recurso iPv6Range</span><span class="sxs-lookup"><span data-stu-id="7fbfd-103">iPv6Range resource type</span></span>
+# <a name="ipv6range-resource-type"></a><span data-ttu-id="bdf01-103">Tipo de recurso iPv6Range</span><span class="sxs-lookup"><span data-stu-id="bdf01-103">iPv6Range resource type</span></span>
 
-> <span data-ttu-id="7fbfd-104">**Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e estão sujeitas a alterações.</span><span class="sxs-lookup"><span data-stu-id="7fbfd-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="7fbfd-105">Não há suporte para o uso dessas APIs em aplicativos de produção.</span><span class="sxs-lookup"><span data-stu-id="7fbfd-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="bdf01-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="bdf01-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="7fbfd-106">**Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://go.microsoft.com/fwlink/?linkid=839381) pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="7fbfd-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="bdf01-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="bdf01-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="7fbfd-107">Intervalo de IPV6</span><span class="sxs-lookup"><span data-stu-id="7fbfd-107">IP V6 range</span></span>
+<span data-ttu-id="bdf01-106">Definição de intervalo IPv6.</span><span class="sxs-lookup"><span data-stu-id="bdf01-106">IPv6 Range definition.</span></span>
 
-<span data-ttu-id="7fbfd-108">Herda de [ipRange](../resources/intune-shared-iprange.md)</span><span class="sxs-lookup"><span data-stu-id="7fbfd-108">Inherits from [ipRange](../resources/intune-shared-iprange.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="7fbfd-109">Propriedades</span><span class="sxs-lookup"><span data-stu-id="7fbfd-109">Properties</span></span>
-|<span data-ttu-id="7fbfd-110">Propriedade</span><span class="sxs-lookup"><span data-stu-id="7fbfd-110">Property</span></span>|<span data-ttu-id="7fbfd-111">Tipo</span><span class="sxs-lookup"><span data-stu-id="7fbfd-111">Type</span></span>|<span data-ttu-id="7fbfd-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="7fbfd-112">Description</span></span>|
+<span data-ttu-id="bdf01-107">Herda de [ipRange](../resources/intune-shared-iprange.md)</span><span class="sxs-lookup"><span data-stu-id="bdf01-107">Inherits from [ipRange](../resources/intune-shared-iprange.md)</span></span>
+
+## <a name="properties"></a><span data-ttu-id="bdf01-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="bdf01-108">Properties</span></span>
+|<span data-ttu-id="bdf01-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="bdf01-109">Property</span></span>|<span data-ttu-id="bdf01-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="bdf01-110">Type</span></span>|<span data-ttu-id="bdf01-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="bdf01-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="7fbfd-113">lowerAddress</span><span class="sxs-lookup"><span data-stu-id="7fbfd-113">lowerAddress</span></span>|<span data-ttu-id="7fbfd-114">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="7fbfd-114">String</span></span>|<span data-ttu-id="7fbfd-115">Endereço IP de número mais baixo</span><span class="sxs-lookup"><span data-stu-id="7fbfd-115">Lower IP Address</span></span>|
-|<span data-ttu-id="7fbfd-116">upperAddress</span><span class="sxs-lookup"><span data-stu-id="7fbfd-116">upperAddress</span></span>|<span data-ttu-id="7fbfd-117">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="7fbfd-117">String</span></span>|<span data-ttu-id="7fbfd-118">Endereço IP de número mais alto</span><span class="sxs-lookup"><span data-stu-id="7fbfd-118">Upper IP Address</span></span>|
+|<span data-ttu-id="bdf01-112">lowerAddress</span><span class="sxs-lookup"><span data-stu-id="bdf01-112">lowerAddress</span></span>|<span data-ttu-id="bdf01-113">String</span><span class="sxs-lookup"><span data-stu-id="bdf01-113">String</span></span>|<span data-ttu-id="bdf01-114">Endereço inferior.</span><span class="sxs-lookup"><span data-stu-id="bdf01-114">Lower address.</span></span>|
+|<span data-ttu-id="bdf01-115">upperAddress</span><span class="sxs-lookup"><span data-stu-id="bdf01-115">upperAddress</span></span>|<span data-ttu-id="bdf01-116">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="bdf01-116">String</span></span>|<span data-ttu-id="bdf01-117">Endereço superior.</span><span class="sxs-lookup"><span data-stu-id="bdf01-117">Upper address.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="7fbfd-119">Relações</span><span class="sxs-lookup"><span data-stu-id="7fbfd-119">Relationships</span></span>
-<span data-ttu-id="7fbfd-120">Nenhum</span><span class="sxs-lookup"><span data-stu-id="7fbfd-120">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="7fbfd-121">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="7fbfd-121">JSON Representation</span></span>
-<span data-ttu-id="7fbfd-122">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="7fbfd-122">Here is a JSON representation of the resource.</span></span>
+## <a name="relationships"></a><span data-ttu-id="bdf01-118">Relações</span><span class="sxs-lookup"><span data-stu-id="bdf01-118">Relationships</span></span>
+<span data-ttu-id="bdf01-119">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="bdf01-119">None</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="bdf01-120">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="bdf01-120">JSON Representation</span></span>
+<span data-ttu-id="bdf01-121">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="bdf01-121">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.iPv6Range"
 }
 -->
@@ -44,6 +45,7 @@ ms.locfileid: "29396347"
   "upperAddress": "String"
 }
 ```
+
 
 
 
