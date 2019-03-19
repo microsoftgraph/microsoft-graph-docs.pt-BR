@@ -4,12 +4,12 @@ description: Em uma configuração de escola ou trabalho, um cenário comum é v
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 18497a7178086fea25fb581fb2ba7c5c82fbe204
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: b2ed37055beb344c254e6715777b430baeceebf5
+ms.sourcegitcommit: 081cacecb4960aabc9e1011d12f06fe9ecf7d188
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27981263"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30657383"
 ---
 # <a name="get-freebusy-schedule-of-users-and-resources-preview"></a>Obtenha a agenda de horários livres/ocupados de usuários e recursos (visualização)
 
