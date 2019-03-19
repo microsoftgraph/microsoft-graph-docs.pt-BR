@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: Enviar um convite para acessar um item
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: cc88297c1848e9b66195f9a07ac96167d096a762
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.openlocfilehash: 1e02af913702aace46a5e3ca2f2e2650a2c7839e
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481206"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30676972"
 ---
 # <a name="send-a-sharing-invitation"></a>Enviar um convite de compartilhamento
 
@@ -66,6 +66,8 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | requireSignIn    | Boolean                                         | Especifica onde o destinatário do convite precisa entrar para exibir o item compartilhado.            |
 | sendInvitation   | Booliano                                         | Especifica se um email ou uma postagem é gerado (false) ou se a permissão é recém-criada (true).            |
 | funções            | Collection(String)                              | Especifique as funções que são concedidas aos destinatários do convite de compartilhamento.                         |
+| expirationDateTime | DateTimeOffset                       | Especifique o DateTime após o qual a permissão expira. Disponível em contas pessoais do OneDrive para o OneDrive for Business, SharePoint e Premium.
+| password           | String                         | A senha definida no convite pelo criador. Opcional e o OneDrive somente pessoal
 
 ## <a name="example"></a>Exemplo
 
@@ -91,7 +93,9 @@ Content-type: application/json
   "message": "Here's the file that we're collaborating on.",
   "requireSignIn": true,
   "sendInvitation": true,
-  "roles": [ "write" ]
+  "roles": [ "write" ],
+  "password": "password123",
+  "expirationDateTime": "2018-07-15T14:00:00.000Z"
 }
 ```
 
@@ -101,7 +105,7 @@ Veja a seguir um exemplo da resposta.
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.permission)", "truncated": true } -->
 
-```http
+```json
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -114,23 +118,94 @@ Content-type: application/json
           "id": "42F177F1-22C0-4BE3-900D-4507125C5C20"
         }
       },
+      "hasPassword": true,
       "id": "CCFC7CA3-7A19-4D57-8CEF-149DB9DDFA62",
       "invitation": {
         "email": "ryan@contoso.com",
         "signInRequired": true
       },
-      "roles": [ "write" ]
+      "roles": [ "write" ],
+      "expirationDateTime": "2018-07-15T14:00:00.000Z"
     }
   ]
 }
 ```
+### <a name="partial-success-response"></a>Resposta parcial com êxito
+
+Ao convidar vários destinatários, é possível que a notificação tenha êxito em alguns e falha para outras pessoas.
+Nesse caso, o serviço retorna uma resposta de êxito parcial com um código de status HTTP 207.
+Quando o sucesso parcial for retornado, a resposta para cada destinatário com falha conterá um `error` objeto com informações sobre o que deu errado e como corrigi-lo.
+
+Veja um exemplo da resposta parcial.  
+
+<!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.permission)", "truncated": true } -->
+
+```json
+HTTP/1.1 207 Multi-Status
+Content-type: application/json
+
+{
+  "value": [
+    {
+      "grantedTo": {
+        "user": {
+          "displayName": "John Adams",
+          "id": "5D8CA5D0-FFF8-4A97-B0A6-8F5AEA339681"
+        }
+      },
+      "id": "1EFG7CA3-7A19-4D57-8CEF-149DB9DDFA62",
+      "invitation": {
+        "email": "adams@contoso.com",
+        "signInRequired": true
+      },
+      "roles": [ "write" ],
+      "error": {
+        "code":"notAllowed",
+        "message":"Account verification needed to unblock sending emails.",
+        "localizedMessage": "Kontobestätigung erforderlich, um das Senden von E-Mails zu entsperren.",
+        "fixItUrl":"http://g.live.com/8SESkydrive/VerifyAccount",
+        "innererror":{  
+          "code":"accountVerificationRequired" 
+        }
+      }
+    },
+    {
+      "grantedTo": {
+        "user": {
+          "displayName": "Ryan Gregg",
+          "id": "42F177F1-22C0-4BE3-900D-4507125C5C20"
+        }
+      },
+      "id": "CCFC7CA3-7A19-4D57-8CEF-149DB9DDFA62",
+      "invitation": {
+        "email": "ryan@contoso.com",
+        "signInRequired": true
+      },
+      "roles": [ "write" ],
+      "expirationDateTime": "2018-07-15T14:00:00.000Z"
+    }
+  ]
+}
+```
+### <a name="sendnotification-errors"></a>Erros do SendNotification
+A seguir estão alguns erros adicionais que seu aplicativo pode encontrar nos objetos aninhados `innererror` ao enviar uma notificação falha. Os aplicativos não são necessários para lidar com eles.
+
+| Código                           | Descrição
+|:-------------------------------|:--------------------------------------------------------------------------------------
+| accountVerificationRequired    | A verificação da conta é necessária para desbloquear o envio de notificações.
+| hipCheckRequired               | É necessário resolver a verificação HIP (Host Intrusion Prevention) para desbloquear o envio de notificações.
+| exchangeInvalidUser            | A caixa de correio do usuário atual não foi encontrada.
+| exchangeOutOfMailboxQuota      | Fora da cota.
+| exchangeMaxRecipients          | Foi exCedido o número máximo de destinatários que podem receber notificações ao mesmo tempo.
+
+>**Observação:** O serviço pode adicionar novos códigos de erro ou parar de retornar os antigos a qualquer momento.
 
 ## <a name="remarks"></a>Comentários
 
 * [Drives](../resources/drive.md) com **driveType** de `personal` (OneDrive Pessoal) não podem criar ou alterar as permissões no DriveItem raiz.
 * Para obter uma lista das funções disponíveis, consulte [Funções de enumeração](../resources/permission.md#roles-enumeration-values).
 
-## <a name="error-responses"></a>Respostas de Erro
+## <a name="error-responses"></a>Respostas de erro
 
 Saiba mais sobre como os erros são retornados em [Respostas de erro][error-response].
 

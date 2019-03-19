@@ -4,12 +4,12 @@ description: Uma unidade de não trabalho no cronograma.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 933c940e25c772cede7918dabf62b52ee58f18d2
-ms.sourcegitcommit: 081cacecb4960aabc9e1011d12f06fe9ecf7d188
+ms.openlocfilehash: c15d65c6d0a5a9749654698a51996cb21c254a9d
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30657795"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30676986"
 ---
 # <a name="timeoff-resource-type"></a>tipo de recurso timeOff
 
@@ -28,12 +28,12 @@ Uma unidade de não trabalho no cronograma.
 |[Excluir timeOff](../api/timeoff-delete.md) | Nenhum | Excluir uma `timeOff` do agendamento.|
 
 ## <a name="properties"></a>Propriedades
-|Nome          |Tipo           |Descrição                                                                                                                                      |
+|Name          |Tipo           |Descrição                                                                                                                                      |
 |--------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | id            |`string`      |ID do `timeOff`.|
 | userId            |`string`      |ID do usuário atribuído ao `timeOff`. Obrigatório.|
-| sharedTimeOff     |`[timeOffItem](timeoffitem.md)`  |A versão compartilhada desse `timeOff` é visível por funcionários e gerentes. Obrigatório.|
-| draftTimeOff      |`[timeOffItem](timeoffitem.md)`        |A versão de rascunho desse `timeOff` documento que é visível por gerentes. Obrigatório.|
+| sharedTimeOff     |[timeOffItem](timeoffitem.md)  |A versão compartilhada desse `timeOff` é visível por funcionários e gerentes. Obrigatório.|
+| draftTimeOff      |[timeOffItem](timeoffitem.md)        |A versão de rascunho desse `timeOff` documento que é visível por gerentes. Obrigatório.|
 | createdDateTime       |`DateTimeOffset`        |O carimbo de data/hora `timeOff` em que foi criado pela primeira vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 teria a seguinte aparência: ' 2014-01-01T00:00:00Z '. |
 | lastModifiedDateTime      |`DateTimeOffset`        |O carimbo de data/hora `timeOff` em que foi atualizado pela última vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 teria a seguinte aparência: ' 2014-01-01T00:00:00Z '. |
 | lastModifiedBy        |`microsoft.graph.identitySet`        |A identidade que foi atualizada pela `timeOff`última vez. |

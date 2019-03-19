@@ -4,12 +4,12 @@ description: Um turno é uma unidade de trabalho agendado no cronograma.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: c392bfb4a1691ab99d852febdda27cdf1c3b8044
-ms.sourcegitcommit: 081cacecb4960aabc9e1011d12f06fe9ecf7d188
+ms.openlocfilehash: cd80cd36bd32ea9efba9e565aabd2da963c51ec8
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30657893"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30676965"
 ---
 # <a name="shift-resource-type"></a>tipo de recurso Shift
 
@@ -28,13 +28,13 @@ Uma unidade de trabalho agendado em um [cronograma](schedule.md).
 |[Excluir Shift](../api/shift-delete.md) | Nenhum | Excluir uma `shift` do agendamento.|
 
 ## <a name="properties"></a>Propriedades
-|Nome          |Tipo           |Descrição                                                                                                                                      |
+|Name          |Tipo           |Descrição                                                                                                                                      |
 |--------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | id            |`string`      |ID do `shift`.|
 | userId            |`string`      |ID do usuário atribuído ao `shift`. Obrigatório. |
 | schedulingGroupId         |`string`      |ID do grupo de agendamento do `shift` qual o faz parte. Obrigatório. |
-| sharedShift   |`[shiftItem](shiftitem.md)`  |A versão compartilhada desse `shift` é visível por funcionários e gerentes. Obrigatório. |
-| draftShift        |`[shiftItem](shiftitem.md)`        |A versão de rascunho desse `shift` documento que é visível por gerentes. Obrigatório. |
+| sharedShift   |[shiftItem](shiftitem.md)  |A versão compartilhada desse `shift` é visível por funcionários e gerentes. Obrigatório. |
+| draftShift        |[shiftItem](shiftitem.md)        |A versão de rascunho desse `shift` documento que é visível por gerentes. Obrigatório. |
 | createdDateTime       |`DateTimeOffset`        |O carimbo de data/ `shift` hora em que foi criado pela primeira vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 teria a seguinte aparência: ' 2014-01-01T00:00:00Z '. |
 | lastModifiedDateTime      |`DateTimeOffset`        |O carimbo de data/ `shift` hora em que foi atualizado pela última vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 teria a seguinte aparência: ' 2014-01-01T00:00:00Z '. |
 | lastModifiedBy        |`microsoft.graph.identitySet`        |A identidade que foi atualizada pela `shift`última vez.|
