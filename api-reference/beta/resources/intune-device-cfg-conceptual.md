@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 40439a32cb9f078d483113cfee8949cd6f288d71
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 691a528e381b4635af15bab6626f5858296c0979
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30159266"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30572436"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Configuração de dispositivo no Microsoft Intune
 
@@ -125,7 +125,6 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Solicitação de envio de exemplo do Defender](intune-deviceconfig-defenderpromptforsamplesubmission.md)
 - [Tipo de proteção do Defender](intune-deviceconfig-defenderprotectiontype.md)
 - [Tipo de verificação do Defender](intune-deviceconfig-defenderscantype.md)
-- [Dia de verificação do cronograma do Defender](intune-deviceconfig-defenderschedulescanday.md)
 - [Tipo de exibição de contatos de TI da Central de Segurança do Defender](intune-deviceconfig-defendersecuritycenteritcontactdisplaytype.md)
 - [Notificações do Centro de Segurança do Defender de tipo de aplicativo](intune-deviceconfig-defendersecuritycenternotificationsfromapptype.md)
 - [O Defender envia exemplos de tipos de consentimento](intune-deviceconfig-defendersubmitsamplesconsenttype.md)
@@ -432,6 +431,12 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Configuração de otimização de distribuição do Windows](intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md)
 - [Modo de otimização de distribuição do Windows](intune-deviceconfig-windowsdeliveryoptimizationmode.md)
 - [Perfil de rede de firewall do Windows](intune-deviceconfig-windowsfirewallnetworkprofile.md)
+- [Regra de firewall do Windows](intune-deviceconfig-windowsfirewallrule.md)
+- [Tipos de interface de regra de firewall do Windows](intune-deviceconfig-windowsfirewallruleinterfacetypes.md)
+- [Tipos de perfil de rede de regra de firewall do Windows](intune-deviceconfig-windowsfirewallrulenetworkprofiletypes.md)
+- [Tipo de direção de tráfego de regra do firewall do Windows](intune-deviceconfig-windowsfirewallruletrafficdirectiontype.md)
+- [Configuração de monitoramento de integridade do Windows](intune-deviceconfig-windowshealthmonitoringconfiguration.md)
+- [Escopo de monitoramento de integridade do Windows](intune-deviceconfig-windowshealthmonitoringscope.md)
 - [Configuração de proteção de identidade do Windows](intune-deviceconfig-windowsidentityprotectionconfiguration.md)
 - [Grupo do diretório ativo de quiosque do Windows](intune-deviceconfig-windowskioskactivedirectorygroup.md)
 - [Base do aplicativo de quiosque do Windows](intune-deviceconfig-windowskioskappbase.md)
@@ -471,6 +476,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Configuração do Windows Update para Empresas](intune-deviceconfig-windowsupdateforbusinessconfiguration.md)
 - [Semanas de atualização do Windows Update para empresas](intune-deviceconfig-windowsupdateforbusinessupdateweeks.md)
 - [Tipo de agendamento de instalação do Windows Update](intune-deviceconfig-windowsupdateinstallscheduletype.md)
+- [Opção de exibição de notificação do Windows Update](intune-deviceconfig-windowsupdatenotificationdisplayoption.md)
 - [Instalação agendada do Windows Update](intune-deviceconfig-windowsupdatescheduledinstall.md)
 - [Status do Windows Update](intune-deviceconfig-windowsupdatestatus.md)
 - [Tipo de atualização do Windows](intune-deviceconfig-windowsupdatetype.md)

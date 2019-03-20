@@ -4,12 +4,12 @@ description: Perfil de implantação do Windows AutoPilot
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b3b815e0184ab9969af348338c07c3fabf0b0597
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 69035ba93b04ac66ce9e8883c7b5f7b04dff429a
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30168870"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30572457"
 ---
 # <a name="windowsautopilotdeploymentprofile-resource-type"></a>tipo de recurso windowsAutopilotDeploymentProfile
 
@@ -23,14 +23,14 @@ Perfil de implantação do Windows AutoPilot
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Obter windowsAutopilotDeploymentProfile](../api/intune-enrollment-windowsautopilotdeploymentprofile-get.md)|[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|Leia as propriedades e as relações do objeto [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md) .|
-|[Ação assign](../api/intune-enrollment-windowsautopilotdeploymentprofile-assign.md)|Nenhum|Ainda não documentado|
+|[atribuir ação](../api/intune-enrollment-windowsautopilotdeploymentprofile-assign.md)|Nenhuma|Ainda não documentado|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave de perfil|
 |displayName|String|Nome do perfil|
-|description|String|Descrição do perfil|
+|descrição|String|Descrição do perfil|
 |idioma|Cadeia de caracteres|Idioma configurado no dispositivo|
 |createdDateTime|DateTimeOffset|Hora de criação do perfil|
 |lastModifiedDateTime|DateTimeOffset|Hora da última modificação do perfil|
@@ -38,6 +38,7 @@ Perfil de implantação do Windows AutoPilot
 |enrollmentStatusScreenSettings|[windowsEnrollmentStatusScreenSettings](../resources/intune-enrollment-windowsenrollmentstatusscreensettings.md)|Configuração da tela status do registro|
 |extractHardwareHash|Boolean|Extração HardwareHash para o perfil|
 |deviceNameTemplate|String|O modelo usado para nomear o dispositivo de piloto automático. Pode ser um texto personalizado e também pode conter o número de série do dispositivo ou um número gerado aleatoriamente. O comprimento total do texto gerado pelo modelo não pode ter mais de 15 caracteres.|
+|deviceType|[windowsAutopilotDeviceType](../resources/intune-enrollment-windowsautopilotdevicetype.md)|O tipo de dispositivo piloto automático ao qual esse perfil se aplica. Os valores possíveis são: `windowsPc` e `surfaceHub2`.|
 |enableWhiteGlove|Boolean|Habilite o Glove branco do piloto automático para o perfil.|
 
 ## <a name="relationships"></a>Relações
@@ -84,6 +85,7 @@ Veja a seguir uma representação JSON do recurso.
   },
   "extractHardwareHash": true,
   "deviceNameTemplate": "String",
+  "deviceType": "String",
   "enableWhiteGlove": true
 }
 ```

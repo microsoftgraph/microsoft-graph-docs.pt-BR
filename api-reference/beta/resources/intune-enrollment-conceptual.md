@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 240bdc2d65d1ed8920fe1f9c067f1ffcd31a9f11
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 4b4100265797fd3cefc60e0288961b74839199c2
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30149830"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30572387"
 ---
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>Registrar dispositivos de propriedade corporativa por meio do Intune
 
@@ -37,7 +37,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar dispositivos c
 - [Identidade do dispositivo importada](intune-enrollment-importeddeviceidentity.md)
 - [Resultado de identidade do dispositivo importada](intune-enrollment-importeddeviceidentityresult.md)
 - [Tipo de identidade do dispositivo importada](intune-enrollment-importeddeviceidentitytype.md)
-- [Identidade importada do dispositivo do Windows Autopilot](intune-enrollment-importedwindowsautopilotdeviceidentity.md)
+- [Identidade importada do dispositivo do Windows autopilot](intune-enrollment-importedwindowsautopilotdeviceidentity.md)
 - [Status de importação da identidade de dispositivo importada do windows autopilot](intune-enrollment-importedwindowsautopilotdeviceidentityimportstatus.md)
 - [Estado de identidade de dispositivo importado do windows autopilot](intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)
 - [Carregar identidade de dispositivo importado do windows autopilot](intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)
@@ -49,6 +49,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar dispositivos c
 - [Perfil de implantação do Windows Autopilot](intune-enrollment-windowsautopilotdeploymentprofile.md)
 - [Atribuição do perfil de implantação do Windows Autopilot](intune-enrollment-windowsautopilotdeploymentprofileassignment.md)
 - [Identidade do dispositivo do Windows Autopilot](intune-enrollment-windowsautopilotdeviceidentity.md)
+- [Tipo de dispositivo do Windows AutoPilot](intune-enrollment-windowsautopilotdevicetype.md)
 - [Status detalhado de atribuição do perfil do Windows Autopilot](intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)
 - [Status de atribuição do perfil do Windows Autopilot](intune-enrollment-windowsautopilotprofileassignmentstatus.md)
 - [Configurações do Windows Autopilot](intune-enrollment-windowsautopilotsettings.md)

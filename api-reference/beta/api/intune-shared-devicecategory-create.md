@@ -4,12 +4,12 @@ description: Cria um novo objeto deviceCategory.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 9f40ec6beb11ed6a299c23b6da905466a47fc5e9
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b324e952c91cf95c361ef277b428f0ed0ae5f26e
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30153708"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30572422"
 ---
 # <a name="create-devicecategory"></a>Criar deviceCategory
 
@@ -21,7 +21,7 @@ Cria um novo objeto [deviceCategory](../resources/intune-shared-devicecategory.m
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -56,8 +56,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceCa
 |:---|:---|:---|
 |id|String|O identificador exclusivo da categoria do dispositivo. Somente leitura.|
 |**Obboarding**|
-|description|Cadeia de caracteres|Descrição opcional da categoria do dispositivo.|
-|displayName|String|Nome de exibição da categoria de dispositivo.|
+|descrição|String|Descrição opcional da categoria do dispositivo.|
+|displayName|Cadeia de caracteres|Nome de exibição da categoria de dispositivo.|
 
 ## <a name="response"></a>Resposta
 

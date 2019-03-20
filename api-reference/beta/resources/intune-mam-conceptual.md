@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 4443c78c6ae58979b0390496d8d560bb15a90669
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 223efcd67b9e025347f510ce207b093122fa6b52
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30150397"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30572324"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Como proteger dados de aplicativos corporativos com o Microsoft Intune
 
@@ -25,6 +25,8 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 
 - [Proteção de aplicativo gerenciado Android](intune-mam-androidmanagedappprotection.md)
 - [Registro de aplicativo gerenciado Android](intune-mam-androidmanagedappregistration.md)
+- [Tipo de verificação de aplicativos de segurança do aplicativo gerenciado do Android](intune-mam-androidmanagedappsafetynetappsverificationtype.md)
+- [Tipo de atestado do dispositivo net de segurança de aplicativos gerenciados por Android](intune-mam-androidmanagedappsafetynetdeviceattestationtype.md)
 - [Identificador de aplicativo móvel Android](intune-mam-androidmobileappidentifier.md)
 - [Nível de gerenciamento de aplicativo](intune-mam-appmanagementlevel.md)
 - [Tipo de aplicativo](intune-wip-applicationtype.md)
@@ -65,7 +67,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Certificado de recuperação de dados de proteção de informações do Windows](intune-mam-windowsinformationprotectiondatarecoverycertificate.md)
 - [Aplicativo da área de trabalho da proteção de informações do Windows](intune-mam-windowsinformationprotectiondesktopapp.md)
 - [Registro de dispositivo de proteção de informações do Windows](intune-mam-windowsinformationprotectiondeviceregistration.md)
-- [Nível de aplicação da ´proteção de informações do Windows](intune-mam-windowsinformationprotectionenforcementlevel.md)
+- [Nível de aplicação da proteção de informações do Windows](intune-mam-windowsinformationprotectionenforcementlevel.md)
 - [Coleção de intervalos de IP da Proteção de Informações do Windows](intune-mam-windowsinformationprotectioniprangecollection.md)
 - [Resumo de aprendizagem da rede de proteção de informações do Windows](intune-wip-windowsinformationprotectionnetworklearningsummary.md)
 - [Requisitos de caracteres do PIN de proteção de informações do Windows](intune-mam-windowsinformationprotectionpincharacterrequirements.md)

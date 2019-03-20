@@ -4,12 +4,12 @@ description: Listar propriedades e relações dos objetos windowsUpdateForBusine
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 88a27d29ec61e70c239ebdf17c993fdd91aaf1d4
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 55462b641c1c6d82b73af5043fe520929e08e771
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30153260"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30572261"
 ---
 # <a name="list-windowsupdateforbusinessconfigurations"></a>Listar windowsUpdateForBusinessConfigurations
 
@@ -63,7 +63,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2185
+Content-Length: 2292
 
 {
   "value": [
@@ -111,7 +111,9 @@ Content-Length: 2185
       "autoRestartNotificationDismissal": "automatic",
       "scheduleRestartWarningInHours": 13,
       "scheduleImminentRestartWarningInMinutes": 7,
-      "userPauseAccess": "enabled"
+      "userPauseAccess": "enabled",
+      "userWindowsUpdateScanAccess": "enabled",
+      "updateNotificationLevel": "defaultNotifications"
     }
   ]
 }
