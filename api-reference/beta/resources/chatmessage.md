@@ -2,12 +2,12 @@
 title: Tipo de recurso chatMessage
 description: Representa uma mensagem de chat individual dentro de uma entidade de canal ou chat. A mensagem pode ser uma mensagem raiz ou parte de um thread que seja definido pela propriedade **replyToId** na mensagem.
 localization_priority: Priority
-ms.openlocfilehash: f61668d8c3892482043dd7531a6699974a964527
-ms.sourcegitcommit: d1a9e7c8e1376a99c5a5416257889ec113613a77
+ms.openlocfilehash: a74f422c6bf60e1293d8620b440152be77dacdc7
+ms.sourcegitcommit: cd4bdb2c6754b1d5658e68909ea6c219466da6df
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "30458656"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30644318"
 ---
 # <a name="chatmessage-resource-type"></a>Tipo de recurso chatMessage
 
@@ -31,22 +31,22 @@ Representa uma mensagem de chat individual dentro de uma entidade de [canal](cha
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |id|String| Somente leitura. ID única da mensagem.|
-|replyToId| string | ID da mensagem pai/raiz do thread |
-|from|[identitySet](identityset.md)| Detalhes do remetente da mensagem|
-|etag| string | O número de versão da mensagem |
-|messageType|String|Os valores de tipo de mensagem com suporte atualmente são: message, chatEvent, Typing|
-|createdDateTime|dateTimeOffset|Somente leitura. Carimbo de data/hora de quando a mensagem foi criada|
-|lastModifiedDateTime|dateTimeOffset|Somente leitura. Carimbo de data/hora de quando a mensagem foi editada/atualizada|
-|deleted|Booliano|Indica se uma mensagem foi excluída de modo reversível|
-|deletedDateTime|dateTimeOffset|Somente leitura. Carimbo de data/hora no qual a mensagem foi excluída |
-|subject|string|Linha de assunto da mensagem. Opcional|
-|body|[itemBody](itembody.md)|Representação de texto sem formatação/HTML do conteúdo da mensagem. Retorna o texto sem formatação por padrão, o aplicativo pode escolher HTML como parte de um parâmetro de consulta|
+|replyToId| string | ID da mensagem pai/raiz do thread. |
+|from|[identitySet](identityset.md)| Somente leitura. Detalhes do remetente da mensagem.|
+|etag| string | O número de versão da mensagem. |
+|messageType|String|Os valores de tipo de mensagem com suporte atualmente são: message, chatEvent, Typing.|
+|createdDateTime|dateTimeOffset|Somente leitura. Carimbo de data/hora de quando a mensagem foi criada.|
+|lastModifiedDateTime|dateTimeOffset|Somente leitura. Carimbo de data/hora de quando a mensagem foi editada/atualizada.|
+|deleted|Boolean|Indica se uma mensagem foi excluída de modo reversível.|
+|deletedDateTime|dateTimeOffset|Somente leitura. Carimbo de data/hora em que a mensagem foi excluída. |
+|Assunto|string|Linha de assunto da mensagem. Opcional.|
+|corpo|[itemBody](itembody.md)|Representação de texto sem formatação/HTML do conteúdo da mensagem. Retorna o texto sem formatação por padrão, o aplicativo pode escolher HTML como parte de um parâmetro de consulta|
 |summary|string|Texto de resumo da mensagem que poderia ser usado para notificações por push e modos de exibição de resumo ou de fallback|
-|mentions|[chatMessageMention](chatmention.md) collection| Lista de entidades mencionada na mensagem. Atualmente, dá suporte a usuário, bot, equipe, canal|
-|importance| string | A importância da mensagem: Normal, Alta|
+|mentions|[chatMessageMention](chatmention.md) collection| Lista de entidades mencionada na mensagem. Atualmente, dá suporte a usuário, bot, equipe, canal.|
+|importância| string | A importância da mensagem: Normal, Alta.|
 |reactions| [chatMessageReaction](chatreaction.md) collection | Reações para essa mensagem (por exemplo, Curtir)|
 |locale|string|Localidade da mensagem definida pelo cliente|
-|attachments|[chatMessageAttachment](chatattachment.md) collection |Arquivos anexos|
+|attachments|[chatMessageAttachment](chatattachment.md) collection |Arquivos anexos. No momento, os anexos são somente leitura, não há suporte para o envio de anexos. |
 
 
 ## <a name="json-representation"></a>Representação JSON
