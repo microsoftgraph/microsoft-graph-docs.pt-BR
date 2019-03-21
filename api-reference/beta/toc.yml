@@ -2157,6 +2157,10 @@ items:
                     href: api/intune-enrollment-importeddeviceidentity-update.md
                   - name: Ação importDeviceIdentityList
                     href: api/intune-enrollment-importeddeviceidentity-importdeviceidentitylist.md
+                  - name: Ação searchExistingIdentities
+                    href: api/intune-enrollment-importeddeviceidentity-searchexistingidentities.md
+                  - name: Ação searchExistingIdentities
+                    href: api/intune-enrollment-importeddeviceidentity-searchexistingidentities.md
               - name: Resultado de identidade do dispositivo importada
                 href: resources/intune-enrollment-importeddeviceidentityresult.md
                 items:
@@ -2249,6 +2253,12 @@ items:
                     href: api/intune-enrollment-windowsautopilotdeviceidentity-assignusertodevice.md
                   - name: ação unassignUserFromDevice
                     href: api/intune-enrollment-windowsautopilotdeviceidentity-unassignuserfromdevice.md
+                  - name: Ação assignResourceAccountToDevice
+                    href: api/intune-enrollment-windowsautopilotdeviceidentity-assignresourceaccounttodevice.md
+                  - name: Ação unassignResourceAccountFromDevice
+                    href: api/intune-enrollment-windowsautopilotdeviceidentity-unassignresourceaccountfromdevice.md
+              - name: Tipo de dispositivo do Windows Autopilot
+                href: resources/intune-enrollment-windowsautopilotdevicetype.md
               - name: Status detalhado de atribuição do perfil do Windows Autopilot
                 href: resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md
               - name: Status de atribuição do perfil do Windows Autopilot
@@ -2961,8 +2971,6 @@ items:
                 href: resources/intune-deviceconfig-defenderprotectiontype.md
               - name: Tipo de verificação do Defender
                 href: resources/intune-deviceconfig-defenderscantype.md
-              - name: Dia de verificação do cronograma do Defender
-                href: resources/intune-deviceconfig-defenderschedulescanday.md
               - name: Tipo de exibição de contatos de TI da Central de Segurança do Defender
                 href: resources/intune-deviceconfig-defendersecuritycenteritcontactdisplaytype.md
               - name: Notificações do Centro de Segurança do Defender de tipo de aplicativo
@@ -4670,6 +4678,29 @@ items:
                 href: resources/intune-deviceconfig-windowsdeliveryoptimizationmode.md
               - name: Perfil de rede de firewall do Windows
                 href: resources/intune-deviceconfig-windowsfirewallnetworkprofile.md
+              - name: Regra de firewall do Windows
+                href: resources/intune-deviceconfig-windowsfirewallrule.md
+              - name: Tipos de interface com regra de firewall do Windows
+                href: resources/intune-deviceconfig-windowsfirewallruleinterfacetypes.md
+              - name: Tipos de perfil de rede com regra de firewall do Windows
+                href: resources/intune-deviceconfig-windowsfirewallrulenetworkprofiletypes.md
+              - name: Tipo de direção de tráfego com regra de firewall do Windows
+                href: resources/intune-deviceconfig-windowsfirewallruletrafficdirectiontype.md
+              - name: Configuração de monitoramento de integridade do Windows
+                href: resources/intune-deviceconfig-windowshealthmonitoringconfiguration.md
+                items:
+                  - name: Listar
+                    href: api/intune-deviceconfig-windowshealthmonitoringconfiguration-list.md
+                  - name: Obter
+                    href: api/intune-deviceconfig-windowshealthmonitoringconfiguration-get.md
+                  - name: Criar
+                    href: api/intune-deviceconfig-windowshealthmonitoringconfiguration-create.md
+                  - name: Excluir
+                    href: api/intune-deviceconfig-windowshealthmonitoringconfiguration-delete.md
+                  - name: Atualizar
+                    href: api/intune-deviceconfig-windowshealthmonitoringconfiguration-update.md
+              - name: Escopo de monitoramento de integridade do Windows
+                href: resources/intune-deviceconfig-windowshealthmonitoringscope.md
               - name: Configuração de proteção de identidade do Windows
                 href: resources/intune-deviceconfig-windowsidentityprotectionconfiguration.md
                 items:
@@ -4889,6 +4920,8 @@ items:
                 href: resources/intune-deviceconfig-windowsupdateforbusinessupdateweeks.md
               - name: Tipo de agendamento de instalação do Windows Update
                 href: resources/intune-deviceconfig-windowsupdateinstallscheduletype.md
+              - name: Opção de exibição para notificação de atualização do Windows
+                href: resources/intune-deviceconfig-windowsupdatenotificationdisplayoption.md
               - name: Instalação agendada do Windows Update
                 href: resources/intune-deviceconfig-windowsupdatescheduledinstall.md
               - name: Status do Windows Update
@@ -5619,10 +5652,10 @@ items:
                     href: api/intune-devices-windowsprotectionstate-get.md
                   - name: Atualizar
                     href: api/intune-devices-windowsprotectionstate-update.md
-          - name: Gerenciamento de aplicativo móvel
+          - name: Gerenciamento de aplicativo móvel (GAM)
             href: resources/intune-mam-conceptual.md
             items:
-              - name: Proteção de aplicativo gerenciado Android
+              - name: Proteção de aplicativo gerenciado pelo Android
                 href: resources/intune-mam-androidmanagedappprotection.md
                 items:
                   - name: Listar
@@ -5642,8 +5675,12 @@ items:
                     href: api/intune-mam-androidmanagedappregistration-list.md
                   - name: Obter
                     href: api/intune-mam-androidmanagedappregistration-get.md
-                  - name: Criar
+                  - name: Create
                     href: api/intune-mam-androidmanagedappregistration-create.md
+              - name: Tipo de verificação de aplicativos de rede de segurança em aplicativo gerenciado para Android
+                href: resources/intune-mam-androidmanagedappsafetynetappsverificationtype.md
+              - name: Tipo de atestado de dispositivo de rede de segurança do aplicativo gerenciado para Android
+                href: resources/intune-mam-androidmanagedappsafetynetdeviceattestationtype.md
               - name: Identificador de aplicativo móvel Android
                 href: resources/intune-mam-androidmobileappidentifier.md
               - name: Nível de gerenciamento de aplicativo
@@ -6192,7 +6229,7 @@ items:
                     href: api/intune-onboarding-windows10enrollmentcompletionpageconfiguration-update.md
               - name: Uso do PIN do Windows Hello para empresas
                 href: resources/intune-onboarding-windowshelloforbusinesspinusage.md
-          - name: Controle de acesso baseado em função
+          - name: Controle de Acesso Baseado em Função (RBAC)
             href: /resources/intune-rbac-conceptual.md
             items:
               - name: Detalhes de função atribuídos ao gerenciamento de aplicativo e dispositivo
@@ -8402,6 +8439,67 @@ items:
                 href: api/opentypeextension-post-opentypeextension.md
               - name: Obter extensão aberta
                 href: api/opentypeextension-get.md
+          - name: Cronograma
+            href: resources/schedule.md
+            items:
+              - name: Criar ou substituir
+                href: api/team-put-schedule.md
+              - name: Obter
+                href: api/schedule-get.md
+              - name: Compartilhar
+                href: api/schedule-share.md
+          - name: Grupo de agendamento
+            href: resources/schedulinggroup.md
+            items:
+              - name: Criar
+                href: api/schedule-post-schedulinggroups.md
+              - name: Listar
+                href: api/schedule-list-schedulinggroups.md
+              - name: Obter
+                href: api/schedulinggroup-get.md
+              - name: Substituir
+                href: api/schedulinggroup-put.md
+              - name: Excluir
+                href: api/schedulinggroup-delete.md
+          - name: Shift
+            href: resources/shift.md
+            items:
+              - name: Criar
+                href: api/schedule-post-shifts.md
+              - name: Listar
+                href: api/schedule-list-shifts.md
+              - name: Obter
+                href: api/shift-get.md
+              - name: Substituir
+                href: api/shift-put.md
+              - name: Excluir
+                href: api/shift-delete.md
+          - name: Folga
+            href: resources/timeoff.md
+            items:
+              - name: Criar
+                href: api/schedule-post-timesoff.md
+              - name: Listar
+                href: api/schedule-list-timesoff.md
+              - name: Obter
+                href: api/timeoff-get.md
+              - name: Substituir
+                href: api/timeoff-put.md
+              - name: Excluir
+                href: api/timeoff-delete.md
+          - name: Motivo da folga
+            href: resources/timeoffreason.md
+            items:
+              - name: Criar
+                href: api/schedule-post-timeoffreasons.md
+              - name: Listar
+                href: api/schedule-list-timeoffreasons.md
+              - name: Obter
+                href: api/timeoffreason-get.md
+              - name: Substituir
+                href: api/timeoffreason-put.md
+              - name: Excluir
+                href: api/timeoffreason-delete.md
           - name: Unidade
             href: resources/drive.md
             items:
