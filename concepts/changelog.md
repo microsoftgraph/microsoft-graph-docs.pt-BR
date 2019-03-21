@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: f22796c779e93217cb28da29c333b4ab27e4d5c2
-ms.sourcegitcommit: d1a9e7c8e1376a99c5a5416257889ec113613a77
+ms.openlocfilehash: 3b483efe388887b89a12a99ecea27b1f85753efd
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "30458705"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571421"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -17,6 +17,38 @@ Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as 
 Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em [problemas conhecidos](known-issues.md).
 
 ## <a name="march-2019"></a>Março de 2019
+
+### <a name="microsoft-intune-apis"></a>APIs do Microsoft Intune
+|Tipo de alteração|Versão|Descrição|
+|:---|:---|:---|
+|Adição|beta|Foram adicionadas novas entidades:<br/>[windowsHealthMonitoringConfiguration](/graph/api/resources/intune-deviceconfig-windowshealthmonitoringconfiguration?view=graph-rest-beta)<br/>|
+|Adição|beta|Foram adicionados novos tipos complexos:<br/>[windowsFirewallRule](/graph/api/resources/intune-deviceconfig-windowsfirewallrule?view=graph-rest-beta)<br/>|
+|Adição|Beta|Foram adicionados novos tipos de enumeração:<br/>[androidManagedAppSafetyNetAppsVerificationType](/graph/api/resources/intune-mam-androidmanagedappsafetynetappsverificationtype?view=graph-rest-beta)<br/>[androidManagedAppSafetyNetDeviceAttestationType](/graph/api/resources/intune-mam-androidmanagedappsafetynetdeviceattestationtype?view=graph-rest-beta)<br/>[windowsAutopilotDeviceType](/graph/api/resources/intune-enrollment-windowsautopilotdevicetype?view=graph-rest-beta)<br/>[windowsFirewallRuleInterfaceTypes](/graph/api/resources/intune-deviceconfig-windowsfirewallruleinterfacetypes?view=graph-rest-beta)<br/>[windowsFirewallRuleNetworkProfileTypes](/graph/api/resources/intune-deviceconfig-windowsfirewallrulenetworkprofiletypes?view=graph-rest-beta)<br/>[windowsFirewallRuleTrafficDirectionType](/graph/api/resources/intune-deviceconfig-windowsfirewallruletrafficdirectiontype?view=graph-rest-beta)<br/>[windowsHealthMonitoringScope](/graph/api/resources/intune-deviceconfig-windowshealthmonitoringscope?view=graph-rest-beta)<br/>[windowsUpdateNotificationDisplayOption](/graph/api/resources/intune-deviceconfig-windowsupdatenotificationdisplayoption?view=graph-rest-beta)<br/>|
+|Adição|beta|A ação [searchExistingIdentities](o:searchExistingIdentities:Collection(microsoft.graph.importedDeviceIdentity)) foi adicionada à coleção [importedDeviceIdentity](/graph/api/resources/intune-enrollment-importeddeviceidentity?view=graph-rest-beta) |
+|Adição|beta|A ação [assignResourceAccountToDevice](/graph/api/intune-enrollment-windowsautopilotdeviceidentity-assignresourceaccounttodevice?view=graph-rest-beta) foi adicionada a [windowsAutopilotDeviceIdentity](/graph/api/resources/intune-enrollment-windowsautopilotdeviceidentity?view=graph-rest-beta) |
+|Adição|beta|A ação [unassignResourceAccountFromDevice](/graph/api/intune-enrollment-windowsautopilotdeviceidentity-unassignresourceaccountfromdevice?view=graph-rest-beta) foi adicionada a [windowsAutopilotDeviceIdentity](/graph/api/resources/intune-enrollment-windowsautopilotdeviceidentity?view=graph-rest-beta) |
+|Exclusão|Beta|Foram removidos os seguintes tipos de enumeração:<br/>**defenderScheduleScanDay**<br/>|
+|Adição|beta|As propriedades **requiredAndroidSafetyNetDeviceAttestationType**, **appActionIfAndroidSafetyNetDeviceAttestationFailed**, **requiredAndroidSafetyNetAppsVerificationType** e **appActionIfAndroidSafetyNetAppsVerificationFailed** foram adicionadas à entidade [androidManagedAppProtection](/graph/api/resources/intune-mam-androidmanagedappprotection?view=graph-rest-beta)|
+|Adição|beta|A propriedade **supportsOemConfig** foi adicionada à entidade [androidManagedStoreApp](/graph/api/resources/intune-apps-androidmanagedstoreapp?view=graph-rest-beta)|
+|Adição|beta|A propriedade **appSupportsOemConfig** foi adicionada à entidade [androidManagedStoreAppConfiguration](/graph/api/resources/intune-apps-androidmanagedstoreappconfiguration?view=graph-rest-beta)|
+|Adição|beta|As propriedades **requiredAndroidSafetyNetDeviceAttestationType**, **appActionIfAndroidSafetyNetDeviceAttestationFailed**, **requiredAndroidSafetyNetAppsVerificationType** e **appActionIfAndroidSafetyNetAppsVerificationFailed** foram adicionadas à entidade [defaultManagedAppProtection](/graph/api/resources/intune-mam-defaultmanagedappprotection?view=graph-rest-beta)|
+|Adição|beta|As propriedades **iCloudStorageDisabled** e **chooseYourLockScreenDisabled** foram adicionadas à entidade [depMacOSEnrollmentProfile](/graph/api/resources/intune-enrollment-depmacosenrollmentprofile?view=graph-rest-beta)|
+|Adição|beta|A propriedade **roleScopeTagIds** foi adicionada à entidade [iosLobAppProvisioningConfiguration](/graph/api/resources/intune-apps-ioslobappprovisioningconfiguration?view=graph-rest-beta)|
+|Adição|beta|A propriedade **allowedOutboundClipboardSharingExceptionLength** foi adicionada à entidade [managedAppProtection](/graph/api/resources/intune-mam-managedappprotection?view=graph-rest-beta)|
+|Adição|beta|A propriedade **fastFirstSignIn** foi adicionada à entidade [sharedPCConfiguration](/graph/api/resources/intune-deviceconfig-sharedpcconfiguration?view=graph-rest-beta)|
+|Adição|beta|A propriedade **tpmRequired** foi adicionada à entidade [windows10CompliancePolicy](/graph/api/resources/intune-deviceconfig-windows10compliancepolicy?view=graph-rest-beta)|
+|Adição|beta|A propriedade **firewallRules** foi adicionada à entidade [windows10EndpointProtectionConfiguration](/graph/api/resources/intune-deviceconfig-windows10endpointprotectionconfiguration?view=graph-rest-beta)|
+|Adição|beta|As propriedades **authenticationWebSignIn**, **privacyDisableLaunchExperience** e **appManagementPackageFamilyNamesToLaunchAfterLogOn** foram adicionadas à entidade [windows10GeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows10generalconfiguration?view=graph-rest-beta)|
+|Exclusão|beta|A propriedade **defenderScheduleScanDay** foi removida da entidade [windows10GeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows10generalconfiguration?view=graph-rest-beta)|
+|Adição|beta|A propriedade **deviceType** foi adicionada à entidade [windowsAutopilotDeploymentProfile](/graph/api/resources/intune-enrollment-windowsautopilotdeploymentprofile?view=graph-rest-beta)|
+|Adição|beta|As propriedades **resourceName**, **skuNumber**, **systemFamily**, **azureActiveDirectoryDeviceId** e **managedDeviceId** foram adicionadas à entidade [windowsAutopilotDeviceIdentity](/graph/api/resources/intune-enrollment-windowsautopilotdeviceidentity?view=graph-rest-beta)|
+|Exclusão|beta|A propriedade **edgeKioskResetAfterIdleTimeInMinutes** foi removida da entidade [windowsKioskConfiguration](/graph/api/resources/intune-deviceconfig-windowskioskconfiguration?view=graph-rest-beta)|
+|Adição|beta|As propriedades **userWindowsUpdateScanAccess** e **updateNotificationLevel** foram adicionadas à entidade [windowsUpdateForBusinessConfiguration](/graph/api/resources/intune-deviceconfig-windowsupdateforbusinessconfiguration?view=graph-rest-beta)|
+|Adição|beta|A propriedade **teams** foi adicionada ao tipo complexo [excludedApps](/graph/api/resources/intune-apps-excludedapps?view=graph-rest-beta)|
+|Adição|beta|A propriedade **autoLaunch** foi adicionada ao tipo complexo [windowsKioskAppBase](/graph/api/resources/intune-deviceconfig-windowskioskappbase?view=graph-rest-beta)|
+|Adição|beta|A propriedade **allowAccessToDownloadsFolder** foi adicionada ao tipo complexo [windowsKioskMultipleApps](/graph/api/resources/intune-deviceconfig-windowskioskmultipleapps?view=graph-rest-beta)|
+|Adição|beta|O membro **lowSecurityBiometric** foi adicionado ao tipo de enumeração [androidDeviceOwnerRequiredPasswordType](/graph/api/resources/intune-deviceconfig-androiddeviceownerrequiredpasswordtype?view=graph-rest-beta)|
+|Adição|beta|Os membros **androidBootloaderUnlocked** e **androidFactoryRomModified** foram adicionados ao tipo de enumeração [managedAppFlaggedReason](/graph/api/resources/intune-mam-managedappflaggedreason?view=graph-rest-beta)|
 
 ### <a name="directory-apis"></a>APIs de diretório
 
