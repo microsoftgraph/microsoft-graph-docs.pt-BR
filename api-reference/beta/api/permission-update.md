@@ -4,12 +4,12 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Alterar permissões de compartilhamento
 localization_priority: Normal
-ms.openlocfilehash: 64d6618b17b061293ab4e5b5296f7ad39d5a8512
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.openlocfilehash: fceffc8cc530e1beec9062aea6552d1dcc825c1e
+ms.sourcegitcommit: 3615f9475d57bfbb3a8c4402af863897f592dfbd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480723"
+ms.lasthandoff: 03/23/2019
+ms.locfileid: "30789659"
 ---
 # <a name="update-sharing-permission"></a>Atualizar a permissão de compartilhamento
 
@@ -56,7 +56,7 @@ Para obter um melhor desempenho, não inclua valores existentes que não foram a
 
 | Propriedade     | Tipo   | Descrição                   |
 |:-------------|:-------|:------------------------------|
-| **roles**    | String | Uma matriz de tipos de permissão. |
+| **roles**    | Coleção de cadeias de caracteres | Uma matriz de tipos de permissão. |
 
 ## <a name="response"></a>Resposta
 

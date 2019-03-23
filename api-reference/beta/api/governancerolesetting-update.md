@@ -2,12 +2,12 @@
 title: Atualizar governanceRoleSetting
 description: Atualize as propriedades de governanceRoleSetting.
 localization_priority: Normal
-ms.openlocfilehash: e5fc297690816227e1031af363ea7d4d38199e25
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: f9c851f95df340693626ff82c960243eb2f85b54
+ms.sourcegitcommit: 3615f9475d57bfbb3a8c4402af863897f592dfbd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509326"
+ms.lasthandoff: 03/23/2019
+ms.locfileid: "30789617"
 ---
 # <a name="update-governancerolesetting"></a>Atualizar governanceRoleSetting
 
@@ -18,13 +18,13 @@ Atualize as propriedades de [governanceRoleSetting](../resources/governanceroles
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
->**Observação:** Essa API também requer que o solicitante tem pelo menos um `Active` atribuição de função de administrador (`owner` ou `user access administrator`) no recurso.
+>**Observação:** Essa API também exige que o solicitante tenha pelo menos uma `Active` atribuição de função de`owner` administrador `user access administrator`(ou) no recurso.
 
 |Tipo de permissão      | Permissões              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources  |
+|Delegado (conta corporativa ou de estudante) | PrivilegedAccess. ReadWrite. AzureResources  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | PrivilegedAccess.ReadWrite.AzureResources |
+|Aplicativo | PrivilegedAccess. ReadWrite. AzureResources |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -43,16 +43,16 @@ No corpo da solicitação, forneça os valores para [governanceRuleSettings](../
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|adminEligibleSettings|[governanceRuleSetting](../resources/governancerulesetting.md)|As definições de regra que são avaliadas quando um administrador tenta adicionar uma atribuição de função elegíveis.|
-|adminMemberSettings|[governanceRuleSetting](../resources/governancerulesetting.md)|As definições de regra que são avaliadas quando um administrador tenta adicionar uma atribuição de função de membro direto.|
-|userEligibleSettings|[governanceRuleSetting](../resources/governancerulesetting.md)|As definições de regra que são avaliadas quando um usuário tentar adicionar uma atribuição de função elegíveis. Isso não é suportado para `pimforazurerbac` cenário no momento e podem estar disponíveis nos cenários futuros.|
-|userMemberSettings|[governanceRuleSetting](../resources/governancerulesetting.md)|As definições de regra que são avaliadas quando um usuário tentar ativar sua atribuição de função.|
+|adminEligibleSettings|coleção [governanceRuleSetting](../resources/governancerulesetting.md)|As configurações de regra que são avaliadas quando um administrador tenta adicionar uma atribuição de função qualificada.|
+|adminMemberSettings|coleção [governanceRuleSetting](../resources/governancerulesetting.md)|As configurações de regra que são avaliadas quando um administrador tenta adicionar uma atribuição de função de membro direto.|
+|userEligibleSettings|coleção [governanceRuleSetting](../resources/governancerulesetting.md)|As configurações de regra que são avaliadas quando um usuário tenta adicionar uma atribuição de função qualificada. Isso não é suportado para `pimforazurerbac` o cenário por enquanto, e pode estar disponível nos cenários futuros.|
+|userMemberSettings|coleção [governanceRuleSetting](../resources/governancerulesetting.md)|As configurações de regra que são avaliadas quando um usuário tenta ativar sua atribuição de função.|
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna um código de resposta `204 NoContent`. Não retorna nada no corpo da resposta. 
 
 ### <a name="error-codes"></a>Códigos de erro
-Essa API retorna os códigos de erro HTTP padrão. Além disso, ele retorna os seguintes códigos de erro personalizada.
+Essa API retorna os códigos de erro HTTP padrão. Além disso, ele retorna os seguintes códigos de erro personalizados.
 
 |Código de erro     | Mensagem de erro         | Detalhes             |
 |:--------------| :---------------------|:--------------------|
@@ -60,7 +60,7 @@ Essa API retorna os códigos de erro HTTP padrão. Além disso, ele retorna os s
 | 400 BadRequest| InvalidRoleSetting    | Os valores de [governanceRuleSettings](../resources/governancerulesetting.md) fornecidos no corpo da solicitação não são válidos.
 
 ## <a name="example"></a>Exemplo 
-Este exemplo atualiza a definição de função para 3 de função personalizada na assinatura Wingtip Toys - produção.
+Este exemplo atualiza a configuração de função para a função 3 personalizada na assinatura Wingtip Toys-prod.
 ##### <a name="request"></a>Solicitação
 <!-- {
   "blockType": "request",

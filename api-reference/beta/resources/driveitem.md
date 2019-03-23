@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: DriveItem
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 9fa2f5cb9d40b0f8f12a5d1a6709eb03bf2975ba
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.openlocfilehash: 7ac95379d8e5eeae07e520f40ae9403c47e98f58
+ms.sourcegitcommit: 3615f9475d57bfbb3a8c4402af863897f592dfbd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481486"
+ms.lasthandoff: 03/23/2019
+ms.locfileid: "30789638"
 ---
 # <a name="driveitem-resource-type"></a>tipo de recurso driveItem
 
@@ -49,6 +49,7 @@ O recurso **driveItem** é derivado de [**baseItem**][baseItem] e herda propried
 ```json
 {
   "audio": { "@odata.type": "microsoft.graph.audio" },
+  "content": { "@odata.type": "Edm.Stream" },
   "cTag": "string (etag)",
   "deleted": { "@odata.type": "microsoft.graph.deleted"},
   "description": "string",
@@ -72,11 +73,13 @@ O recurso **driveItem** é derivado de [**baseItem**][baseItem] e herda propried
 
   /* relationships */
   "activities": [{"@odata.type": "microsoft.graph.itemActivity"}],
-  "content": { "@odata.type": "Edm.Stream" },
-  "children": [ { "@odata.type": "microsoft.graph.driveItem" }],
+  "children": [{ "@odata.type": "microsoft.graph.driveItem" }],
+  "createdByUser": { "@odata.type": "microsoft.graph.user" },
+  "lastModifiedByUser": { "@odata.type": "microsoft.graph.user" },
   "permissions": [ {"@odata.type": "microsoft.graph.permission"} ],
+  "subscriptions": [ {"@odata.type": "microsoft.graph.subscription"} ],
   "thumbnails": [ {"@odata.type": "microsoft.graph.thumbnailSet"}],
-  "versions": [ {"@odata.type": "Collection(microsoft.graph.driveItemVersion)"}],
+  "versions": [ {"@odata.type": "microsoft.graph.driveItemVersion"}],
 
   /* inherited from baseItem */
   "id": "string (identifier)",
@@ -101,11 +104,12 @@ O recurso **driveItem** é derivado de [**baseItem**][baseItem] e herda propried
 | Propriedade             | Tipo               | Descrição
 |:---------------------|:-------------------|:---------------------------------
 | audio                | [audio][]          | Metadados de áudio, se o item for um arquivo de áudio. Somente leitura.
+| conteúdo              | Fluxo             | O fluxo de conteúdo, se o item representar um arquivo.
 | createdBy            | [identitySet][]    | Identidade do usuário, dispositivo e aplicativo que criou o item. Somente leitura.
 | createdDateTime      | DateTimeOffset     | Data e hora de criação do item. Somente leitura.
 | cTag                 | String             | Uma eTag para o conteúdo do item. Essa eTag não será alterada se apenas os metadados forem alterados. **Observação** Essa propriedade não será retornada se o item for uma pasta. Somente leitura.
 | deleted              | [deleted][]        | Informações sobre o estado excluído do item. Somente leitura.
-| descrição          | Cadeia de caracteres             | Fornece uma descrição do item visível para o usuário. Leitura e gravação. Somente no OneDrive Personal
+| descrição          | String             | Fornece uma descrição do item visível para o usuário. Leitura e gravação. Somente no OneDrive Personal
 | eTag                 | String             | eTag para o item inteiro (metadados + conteúdo). Somente leitura.
 | file                 | [file][]           | Metadados de arquivo, se o item for um arquivo. Somente leitura.
 | fileSystemInfo       | [fileSystemInfo][] | Informações do sistema de arquivos no cliente. Leitura e gravação.
@@ -135,16 +139,19 @@ O recurso **driveItem** é derivado de [**baseItem**][baseItem] e herda propried
 
 ## <a name="relationships"></a>Relações
 
-| Relação       | Tipo                            | Descrição
-|:-------------------|:--------------------------------|:--------------------------
-| activities         | Conjunto [itemActivity][]     | A lista de atividades recentes que ocorreram neste item.
-| análises          | [itemAnalytics][] resource      | Análise sobre as atividades de exibição que ocorreram neste item.
-| content            | Fluxo                          | O fluxo de conteúdo, se o item representar um arquivo.
-| children           | Conjunto driveitem            | Conjunto que contêm objetos Item para os filhos imediatos de Item. Somente os itens que representam pastas têm filhos. Somente leitura. Anulável.
-| listItem           | [listItem][]                    | Para unidades no SharePoint, o item de lista da biblioteca de documentos associada. Somente leitura. Anulável.
-| permissões        | Coleção [permission][]       | O conjunto de permissões do item. Somente leitura. Anulável.
-| miniaturas         | Coleção [thumbnailSet][]     | Coleção contendo objetos [ThumbnailSet][] associados ao item. Para saber mais, confira [obtendo miniaturas][]. Somente leitura. Anulável.
-| suas           | coleção [driveItemVersion][] | A lista de versões anteriores do item. Para obter mais informações, consulte [obtendo versões anteriores][]. Somente leitura. Anulável.
+| Relação       | Tipo                        | Descrição
+|:-------------------|:----------------------------|:--------------------------
+| activities         | Conjunto [itemActivity][] | A lista de atividades recentes que ocorreram neste item.
+| analytics          | [itemAnalytics][] resource  | Análise sobre as atividades de exibição que ocorreram neste item.
+| filhos           | coleção driveItem        | Coleção que contêm objetos Item para os filhos imediatos do Item. Somente os itens que representam pastas têm filhos. Somente leitura. Anulável.
+| createdByUser      | [user][]                    | A identidade do usuário que criou o item. Somente leitura.
+| lastModifiedByUser | [user][]                    | A identidade do usuário que modificou o item pela última vez. Somente leitura.
+| listItem           | [listItem][]                | Para unidades no SharePoint, o item da lista da biblioteca de documentos associado. Somente leitura. Anulável.
+| permissões        | Coleção [permission][]   | O conjunto de permissões do item. Somente leitura. Anulável.
+| assinaturas      | coleção [Subscription][] | O conjunto de assinaturas no item. Só há suporte para a raiz de uma unidade.
+| miniaturas         | Coleção [thumbnailSet][] | Coleção contendo objetos [ThumbnailSet][] associados ao item. Para saber mais, confira [obtendo miniaturas][]. Somente leitura. Anulável.
+| versões           | coleção [driveItemVersion][]  | A lista de todas as versões anteriores do item. Para saber mais, confira as informações sobre a [obtenção de versões anteriores][]. Somente leitura. Anulável.
+| pasta de trabalho           | [pasta de trabalho][]                | Para arquivos que são planilhas do Excel, acessa a API de pasta da trabalho para trabalhar com o conteúdo da planilha. Anulável.
 
 ## <a name="instance-attributes"></a>Atributos de instância
 
@@ -157,7 +164,8 @@ Atributos de instância são propriedades com comportamentos especiais. Essas pr
 | @microsoft.graph.sourceUrl        | string | Quando uma solicitação PUT é emitida, essa anotação de instância pode ser usada para instruir o serviço a baixar o conteúdo da URL e armazená-lo como o arquivo. Somente gravação.
 
 **Observação:** O valor de @microsoft.graph.downloadUrl é uma URL de curta duração e não pode ser armazenado em cache.
-A URL só estará disponível por um curto período de tempo (1 hora) antes de ser invalidada. Remover permissões de arquivo para um usuário pode não invalidar imediatamente a URL.
+A URL só estará disponível por um curto período de tempo (1 hora) antes de ser invalidada.
+Remover permissões de arquivo para um usuário pode não invalidar imediatamente a URL.
 
 ## <a name="methods"></a>Métodos
 
@@ -180,12 +188,12 @@ A URL só estará disponível por um curto período de tempo (1 hora) antes de s
 | [Pesquisar itens](../api/driveitem-search.md)               | `GET /drive/items/{item-id}/search(q='text')`
 | [Listar alterações em uma unidade](../api/driveitem-delta.md)     | `GET /drive/root/delta`
 | [Listar miniaturas](../api/driveitem-list-thumbnails.md)   | `GET /drive/items/{item-id}/thumbnails`
-| [Criar um link de compartilhamento](../api/driveitem-createlink.md)    | `POST /drive/items/{item-id}/createLink`
+| [Criar link de compartilhamento](../api/driveitem-createlink.md)    | `POST /drive/items/{item-id}/createLink`
 | [Adicionar permissões](../api/driveitem-invite.md)            | `POST /drive/items/{item-id}/invite`
 | [Listar permissões](../api/driveitem-list-permissions.md) | `GET /drive/items/{item-id}/permissions`
 | [Excluir permissão](../api/permission-delete.md)         | `DELETE /drive/items/{item-id}/permissions/{perm-id}`
 | [Obter o canal do webSocket][getWebSocket]                    | `GET /drive/root/subscriptions/socketIo`
-| [Visualizar item][item-preview]                             | `POST /drive/items/{item-id}/preview`
+| [Item de visualização][item-preview]                             | `POST /drive/items/{item-id}/preview`
 
 [item-preview]: ../api/driveitem-preview.md
 [Obter análises]: ../api/itemanalytics-get.md
@@ -203,7 +211,7 @@ Em bibliotecas de documentos do OneDrive for Business ou do SharePoint, a propri
 [file]: file.md
 [fileSystemInfo]: filesysteminfo.md
 [folder]: folder.md
-[obtendo versões anteriores]: ../api/driveitem-list-versions.md
+[obter versões anteriores]: ../api/driveitem-list-versions.md
 [obtendo miniaturas]: ../api/driveitem-list-thumbnails.md
 [getWebSocket]: ../api/driveitem-subscriptions-socketio.md
 [identitySet]: identityset.md
@@ -223,9 +231,11 @@ Em bibliotecas de documentos do OneDrive for Business ou do SharePoint, a propri
 [compartilhado]: shared.md
 [sharepointIds]: sharepointids.md
 [specialFolder]: specialfolder.md
+[subscription]: subscription.md
 [thumbnailSet]: thumbnailset.md
-[video]: video.md
-[user]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/users
+[vídeo]: video.md
+[pasta de trabalho]: workbook.md
+[Usuário]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/users
 [publicationFacet]: publicationfacet.md
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

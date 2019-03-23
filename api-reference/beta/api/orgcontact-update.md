@@ -4,12 +4,12 @@ description: Atualize as propriedades do objeto orgcontact.
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 50a0d50d4905c19b152302ee908cbece5eff399a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: cec4817472fe5192c7af836131cea83bcb60d77b
+ms.sourcegitcommit: 3615f9475d57bfbb3a8c4402af863897f592dfbd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517880"
+ms.lasthandoff: 03/23/2019
+ms.locfileid: "30789631"
 ---
 # <a name="update-orgcontact"></a>Atualizar orgcontact
 
@@ -42,13 +42,13 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |:---------------|:--------|:----------|
 |city|String||
 |country|String||
-|departamento|String||
+|department|String||
 |onPremisesSyncEnabled|Booliano||
 |displayName|String||
 |givenName|String||
 |jobTitle|String||
 |onPremisesLastSyncDateTime|DateTimeOffset||
-|Email|String||
+|email|String||
 |mailNickname|String||
 |mobilePhone|Cadeia de caracteres||
 |officeLocation|String||
@@ -57,11 +57,11 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |state|String||
 |streetAddress|String||
 |surname|String||
-|businessPhones|String||
+|businessPhones|String collection||
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto atualizado [orgContact](../resources/orgcontact.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [orgContact](../resources/orgcontact.md) atualizado no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

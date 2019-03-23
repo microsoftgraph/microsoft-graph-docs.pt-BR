@@ -1,23 +1,23 @@
 ---
 title: Atualizar uma configuração de diretório
-description: Atualize as propriedades de um objeto de configuração do diretório específico.
+description: Atualiza as propriedades de um objeto de configuração de diretório específico.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: baaf6994f7052155173dd58b2c6b021939dc7ba7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 1337527b7be6c8cc7f2b52f37a1698d61fa9b842
+ms.sourcegitcommit: 3615f9475d57bfbb3a8c4402af863897f592dfbd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529093"
+ms.lasthandoff: 03/23/2019
+ms.locfileid: "30789610"
 ---
 # <a name="update-a-directory-setting"></a>Atualizar uma configuração de diretório
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades de um objeto de configuração do diretório específico.
+Atualiza as propriedades de um objeto de configuração de diretório específico.
 
-> **Observação**: A versão de /beta desse API é só se aplica aos grupos. A versão de /v1.0 desse API foi renomeada para *Atualizar groupSettings*.
+> **Observação**: a versão do/beta dessa API só se aplica aos grupos. A versão/v1.0 dessa API foi renomeada para atualizar o *groupSettings*.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -29,7 +29,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Aplicativo | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
-<!-- { "blockType": "ignored" } -->Atualize a todo um locatário ou configuração específica de grupo.
+<!-- { "blockType": "ignored" } -->
+Atualizar uma configuração específica de grupo ou de locatário como um todo.
 ```http
 PATCH /settings/{id}
 PATCH /groups/{id}/settings/{id}
@@ -44,7 +45,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| values | settingValue | O conjunto atualizado de valores.  OBSERVAÇÃO: Você deve fornecer o conjunto inteiro. Você não pode atualizar um único conjunto de valores. |
+| values | [](../resources/settingvalue.md) coleção SettingValue | O conjunto atualizado de valores.  OBSERVAÇÃO: Você deve fornecer o conjunto inteiro. Você não pode atualizar um único conjunto de valores. |
 
 ## <a name="response"></a>Resposta
 
