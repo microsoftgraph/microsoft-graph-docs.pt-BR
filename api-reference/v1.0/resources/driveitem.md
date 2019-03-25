@@ -5,14 +5,14 @@ ms.date: 09/10/2017
 title: DriveItem
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 58253683bfcc7407af398ba801885f9624bb2c28
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.openlocfilehash: 8dbbf3b673fe7f436b9600366765425011ab129f
+ms.sourcegitcommit: 3615f9475d57bfbb3a8c4402af863897f592dfbd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482417"
+ms.lasthandoff: 03/23/2019
+ms.locfileid: "30789624"
 ---
-# <a name="driveitem-resource-type"></a>Tipo de recurso DriveItem
+# <a name="driveitem-resource-type"></a>tipo de recurso driveItem
 
 O recurso **DriveItem** representa um arquivo, pasta ou outro item armazenado em uma unidade. Todos os objetos do sistema de arquivos no OneDrive e no SharePoint são retornados como recursos **driveItem**.
 
@@ -74,6 +74,7 @@ O recurso **driveItem** é derivado de [**baseItem**][baseItem] e herda propried
   "createdByUser": { "@odata.type": "microsoft.graph.user" },
   "lastModifiedByUser": { "@odata.type": "microsoft.graph.user" },
   "permissions": [ {"@odata.type": "microsoft.graph.permission"} ],
+  "subscriptions": [ {"@odata.type": "microsoft.graph.subscription"} ],
   "thumbnails": [ {"@odata.type": "microsoft.graph.thumbnailSet"}],
   "versions": [ {"@odata.type": "microsoft.graph.driveItemVersion"}],
 
@@ -142,6 +143,7 @@ O recurso **driveItem** é derivado de [**baseItem**][baseItem] e herda propried
 | lastModifiedByUser | [user][]                    | A identidade do usuário que modificou o item pela última vez. Somente leitura.
 | listItem           | [listItem][]                | Para unidades no SharePoint, o item da lista da biblioteca de documentos associado. Somente leitura. Anulável.
 | permissões        | Coleção [permission][]   | O conjunto de permissões do item. Somente leitura. Anulável.
+| assinaturas      | conjunto de [assinaturas][] | O conjunto de assinaturas no item. Compatível somente na raiz de uma unidade.
 | miniaturas         | Coleção [thumbnailSet][] | Coleção contendo objetos [ThumbnailSet][] associados ao item. Para saber mais, confira [obtendo miniaturas][]. Somente leitura. Anulável.
 | versões           | coleção [driveItemVersion][]  | A lista de todas as versões anteriores do item. Para saber mais, confira as informações sobre a [obtenção de versões anteriores][]. Somente leitura. Anulável.
 | pasta de trabalho           | [pasta de trabalho][]                | Para arquivos que são planilhas do Excel, acessa a API de pasta da trabalho para trabalhar com o conteúdo da planilha. Anulável.
@@ -156,7 +158,9 @@ Atributos de instância são propriedades com comportamentos especiais. Essas pr
 | @microsoft.graph.downloadUrl      | string | Uma URL que pode ser usada para baixar conteúdo desse arquivo. Uma autenticação não é obrigatória com essa URL. Somente leitura.
 | @microsoft.graph.sourceUrl        | string | Quando uma solicitação PUT é emitida, essa anotação de instância pode ser usada para instruir o serviço a baixar o conteúdo da URL e armazená-lo como o arquivo. Somente gravação.
 
-**Observação:** O valor de @microsoft.graph.downloadUrl é uma URL de curta duração e não pode ser armazenado em cache. A URL só estará disponível por um curto período de tempo (1 hora) antes de ser invalidada.
+**Observação:** O valor de @microsoft.graph.downloadUrl é uma URL de curta duração e não pode ser armazenado em cache.
+A URL só estará disponível por um curto período de tempo (1 hora) antes de ser invalidada.
+A remoção das permissões de arquivo de um usuário pode não invalidar a URL imediatamente.
 
 ## <a name="methods"></a>Métodos
 
@@ -180,6 +184,7 @@ Atributos de instância são propriedades com comportamentos especiais. Essas pr
 | [Adicionar permissões](../api/driveitem-invite.md)            | `POST /drive/items/{item-id}/invite`
 | [Listar permissões](../api/driveitem-list-permissions.md) | `GET /drive/items/{item-id}/permissions`
 | [Excluir permissão](../api/permission-delete.md)         | `DELETE /drive/items/{item-id}/permissions/{perm-id}`
+| [Obter canal WebSocket][getWebSocket]                    | `GET /drive/root/subscriptions/socketIo`
 | [Item de visualização][item-preview]                             | `POST /drive/items/{item-id}/preview`
 
 [item-preview]: ../api/driveitem-preview.md
@@ -198,6 +203,7 @@ Em bibliotecas de documentos do OneDrive for Business ou do SharePoint, a propri
 [folder]: folder.md
 [obter versões anteriores]: ../api/driveitem-list-versions.md
 [obtendo miniaturas]: ../api/driveitem-list-thumbnails.md
+[getWebSocket]: ../api/driveitem-subscriptions-socketio.md
 [identitySet]: identityset.md
 [image]: image.md
 [itemReference]: itemreference.md
@@ -212,6 +218,7 @@ Em bibliotecas de documentos do OneDrive for Business ou do SharePoint, a propri
 [compartilhado]: shared.md
 [sharepointIds]: sharepointids.md
 [specialFolder]: specialfolder.md
+[assinatura]: subscription.md
 [thumbnailSet]: thumbnailset.md
 [vídeo]: video.md
 [pasta de trabalho]: workbook.md
