@@ -1,27 +1,47 @@
 ---
-title: tipo de recurso de educationAssignmentIndividualRecipient
-description: 'Usada dentro da propriedade assignment.assignTo. Quando definido para a lista de destinatários individual, serão de alunos selecionados na classe '
+title: tipo de recurso educationAssignmentIndividualRecipient
+description: 'Usada dentro da propriedade assignment. assignTo. Quando definido como lista de destinatários individuais, os alunos selecionados na classe serão '
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: de04344aae43160f5fe601c7ec4bf05337400f60
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 736345901faeeb4d3fab4d417752b684f1e19307
+ms.sourcegitcommit: 3410e1b8dcf62a7b0e4d6b11920912479f21feb2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522487"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30799988"
 ---
-# <a name="educationassignmentindividualrecipient-resource-type"></a>tipo de recurso de educationAssignmentIndividualRecipient
+# <a name="educationassignmentindividualrecipient-resource-type"></a>tipo de recurso educationAssignmentIndividualRecipient
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Usada dentro da propriedade [assignment.assignTo](educationassignment.md) . Quando definido para a lista de destinatários individual, alunos selecionados na classe receberá um objeto de envio quando a atribuição é publicada.
+Usada dentro da propriedade [assignment.](educationassignment.md) assignTo. Quando definido como lista de destinatários individuais, os alunos selecionados na classe receberão um objeto de envio quando a atribuição for publicada.
 
-Este recurso é uma subclasse de [educationAssignmentRecipient](educationassignmentrecipient.md).
+Esse recurso é uma subclasse de [educationAssignmentRecipient](educationassignmentrecipient.md).
 
 ## <a name="properties"></a>Propriedades
+| Propriedade     | Tipo   |Descrição|
+|:---------------|:--------|:----------|
+|recipients|Coleção de cadeias de caracteres|Uma coleção de IDs dos destinatários.|
 
-Nenhum.
+## <a name="json-representation"></a>Representação JSON
+
+Veja a seguir uma representação JSON do recurso.
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.educationAssignmentIndividualRecipient"
+}-->
+
+```json
+{
+  "recipients": ["String"]
+}
+
+```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
