@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 3b483efe388887b89a12a99ecea27b1f85753efd
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: 058b9c292690cce0d0a0462b82f73baf6618d74b
+ms.sourcegitcommit: 3615f9475d57bfbb3a8c4402af863897f592dfbd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30571421"
+ms.lasthandoff: 03/23/2019
+ms.locfileid: "30789687"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -17,6 +17,14 @@ Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as 
 Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em [problemas conhecidos](known-issues.md).
 
 ## <a name="march-2019"></a>Março de 2019
+
+### <a name="directory-apis"></a>APIs de diretório
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | v1.0 | Adicione as propriedades **passwordNotificationWindowInDays** e **passwordValidityPeriodInDays** ao recurso do [domínio](/graph/api/resources/domain?view=graph-rest-1.0).|
+| Adição | beta e v1.0 | Adicione as propriedades **complianceExpirationDateTime**, **profileType** e **systemLabels** ao recurso do [dispositivo](/graph/api/resources/device?view=graph-rest-1.0).|
+| Adição | beta e v1.0 | Adicione a propriedade **isResourceAccount** ao recurso do [usuário](/graph/api/resources/user?view=graph-rest-1.0).|
 
 ### <a name="microsoft-intune-apis"></a>APIs do Microsoft Intune
 |Tipo de alteração|Versão|Descrição|
@@ -50,13 +58,17 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 |Adição|beta|O membro **lowSecurityBiometric** foi adicionado ao tipo de enumeração [androidDeviceOwnerRequiredPasswordType](/graph/api/resources/intune-deviceconfig-androiddeviceownerrequiredpasswordtype?view=graph-rest-beta)|
 |Adição|beta|Os membros **androidBootloaderUnlocked** e **androidFactoryRomModified** foram adicionados ao tipo de enumeração [managedAppFlaggedReason](/graph/api/resources/intune-mam-managedappflaggedreason?view=graph-rest-beta)|
 
-### <a name="directory-apis"></a>APIs de diretório
+### <a name="microsoft-teams-apis"></a>APIs do Microsoft Teams
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição | v1.0 | Adicione as propriedades **passwordNotificationWindowInDays** e **passwordValidityPeriodInDays** ao recurso do [domínio](/graph/api/resources/domain?view=graph-rest-1.0).|
-| Adição | beta e v1.0 | Adicione as propriedades **complianceExpirationDateTime**, **profileType** e **systemLabels** ao recurso do [dispositivo](/graph/api/resources/device?view=graph-rest-1.0).|
-| Adição | beta e v1.0 | Adicione a propriedade **isResourceAccount** ao recurso do [usuário](/graph/api/resources/user?view=graph-rest-1.0).|
+| Adição | beta | Adicionar os recursos [schedule](/api-reference/beta/resources/schedule.md), [schedulingGroup](/api-reference/beta/resources/schedulinggroup.md), [shift](/api-reference/beta/resources/shift.md), [timeOffReason](/api-reference/beta/resources/timeoffreason.md) e [timeOff](/api-reference/beta/resources/timeoff.md) recursos e os métodos associados. |
+
+### <a name="onedrive-and-sharepoint-apis"></a>APIs do OneDrive e SharePoint
+
+| **Tipo de alteração** | **Versão** | **Descrição**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Adição        | v1.0        | Foi adicionada a propriedade de navegação **subscriptions** à entidade [driveItem](/graph/api/resources/driveItem?view=graph-rest-1.0) |
 
 ## <a name="february-2019"></a>Fevereiro de 2019
 
@@ -66,6 +78,12 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição        | Beta          | Adicionadas APIs financeiras para o Dynamics 365 Business Central. Para saber mais, confira o [Referência da API de finanças](/graph/api/resources/dynamics-graph-reference?view=graph-rest-v1.0).|
 
+### <a name="onedrive-and-sharepoint-apis"></a>APIs do OneDrive e SharePoint
+
+| **Tipo de alteração** | **Versão** | **Descrição**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Adição        | Beta        | Foi adicionada a propriedade **expirationDateTime** ao tipo DatetimeOffset [driveItem_invite](/graph/api/resources/driveItem_invite?view=graph-rest-beta). |
+| Adição        | Beta        | Foi adicionada a propriedade **password** ao tipo de cadeia de caracteres [driveItem_invite](/graph/api/resources/driveItem_invite?view=graph-rest-beta). |
 
 ## <a name="february-2019"></a>Fevereiro de 2019
 
@@ -2291,7 +2309,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 ### <a name="outlook-calendar"></a>Calendário do Outlook
 
-| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| **Tipo de alteração** | **Version**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição        | v1.0 e beta | Para **findMeetingTimes**, adicionou o novo valor de enumeração **unrestricted** que você especifica como a propriedade **activityDomain**, parte do parâmetro **timeConstraint**. Isso permite que **findMeetingTimes** procure os horários apropriados para o tipo de atividade que você está agendando. Confira detalhes na seção [corpo da solicitação](/graph/api/user-findmeetingtimes?view=graph-rest-1.0#request-body). |
 | Adição        | Beta          | Suporte para obter um corpo de **event** em um texto sem formatação, como alternativa ao formato HTML padrão. Confira os eventos [get](/graph/api/event-get?view=graph-rest-beta) e [list](/graph/api/user-list-events?view=graph-rest-beta) para obter detalhes. |
