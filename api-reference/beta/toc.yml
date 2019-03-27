@@ -6535,6 +6535,10 @@ items:
                 href: api/educationclass-list-assignments.md
               - name: Criar tarefa
                 href: api/educationclass-post-assignments.md
+              - name: Listar categorias
+                href: api/educationclass-list-categories.md
+              - name: Criar categoria
+                href: api/educationclass-post-category.md
           - name: Usuários
             href: resources/educationuser.md
             items:
@@ -6573,6 +6577,19 @@ items:
                 href: api/educationassignment-list-submissions.md
               - name: Obter URL da pasta do recurso
                 href: api/educationassignment-getresourcesfolderurl.md
+              - name: Listar categorias
+                href: api/educationassignment-list-categories.md
+              - name: Adicionar Categoria
+                href: api/educationassignment-add-categories.md
+              - name: Remover categoria
+                href: api/educationassignment-remove-category.md
+          - name: Categoria
+            href: resources/educationcategory.md
+            items:
+              - name: Obter categoria
+                href: api/educationcategory-get.md
+              - name: Excluir categoria
+                href: api/educationcategory-delete.md
           - name: Envio
             href: resources/educationsubmission.md
             items:

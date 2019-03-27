@@ -2,12 +2,12 @@
 title: Tipo de recurso chatMessage
 description: Representa uma mensagem de chat individual dentro de uma entidade de canal ou chat. A mensagem pode ser uma mensagem raiz ou parte de um thread que seja definido pela propriedade **replyToId** na mensagem.
 localization_priority: Priority
-ms.openlocfilehash: a74f422c6bf60e1293d8620b440152be77dacdc7
-ms.sourcegitcommit: cd4bdb2c6754b1d5658e68909ea6c219466da6df
+ms.openlocfilehash: 1f1e38e53a7c7ad1b0452c9facc6d7f97314094e
+ms.sourcegitcommit: 3410e1b8dcf62a7b0e4d6b11920912479f21feb2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30644318"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30799995"
 ---
 # <a name="chatmessage-resource-type"></a>Tipo de recurso chatMessage
 
@@ -38,8 +38,7 @@ Representa uma mensagem de chat individual dentro de uma entidade de [canal](cha
 |createdDateTime|dateTimeOffset|Somente leitura. Carimbo de data/hora de quando a mensagem foi criada.|
 |lastModifiedDateTime|dateTimeOffset|Somente leitura. Carimbo de data/hora de quando a mensagem foi editada/atualizada.|
 |deleted|Boolean|Indica se uma mensagem foi excluída de modo reversível.|
-|deletedDateTime|dateTimeOffset|Somente leitura. Carimbo de data/hora em que a mensagem foi excluída. |
-|Assunto|string|Linha de assunto da mensagem. Opcional.|
+|deletedDateTime|dateTimeOffset|Somente leitura. Carimbo de hora em que a mensagem foi excluída ou nulo se não foi excluído. |
 |corpo|[itemBody](itembody.md)|Representação de texto sem formatação/HTML do conteúdo da mensagem. Retorna o texto sem formatação por padrão, o aplicativo pode escolher HTML como parte de um parâmetro de consulta|
 |summary|string|Texto de resumo da mensagem que poderia ser usado para notificações por push e modos de exibição de resumo ou de fallback|
 |mentions|[chatMessageMention](chatmention.md) collection| Lista de entidades mencionada na mensagem. Atualmente, dá suporte a usuário, bot, equipe, canal.|
@@ -78,7 +77,6 @@ Veja a seguir uma representação JSON do recurso.
   "messageType": "string",
   "createdDateTime": "string (timestamp)",
   "lastModifiedDateTime": "string (timestamp)",
-  "isDeleted": "boolean",
   "deletedDateTime": "string (timestamp)",
   "subject": "string",
   "body": {"@odata.type": "microsoft.graph.itemBody"},
