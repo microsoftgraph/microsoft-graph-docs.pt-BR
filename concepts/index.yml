@@ -1,7 +1,7 @@
 ### YamlMime:YamlDocument
 ms.openlocfilehash: 2ff7e9f52c7f8671bd2246bedc9ac213bff0c859
 ms.sourcegitcommit: 10adbecb5f82556e5acc2301fc226ae6884e142b
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 03/20/2019
 ms.locfileid: "30693691"
@@ -19,14 +19,14 @@ metadata:
   ms.date: 03/20/2019
   ms.author: celested
 abstract:
-  description: O Microsoft Graph fornece um modelo de programação unificado que você pode usar para criar aplicativos para organizações e clientes que interagem com os dados de milhões de usuários. Você pode usar as APIs REST do Microsoft Graph para acessar dados no Azure Active Directory, serviços do Office 365, serviços corporativos de mobilidade e segurança, serviços do Windows 10, Dynamics 365 e muito mais. Explore nossa documentação para saber mais sobre como usar as APIs do Microsoft Graph.
+  description: Microsoft Graph fornece um modelo de programação unificada que você pode usar para criar aplicativos para empresas e clientes que interagem com os dados de milhões de usuários. Você pode usar as APIs REST do Microsoft Graph para acessar dados no Azure Active Directory, serviços do Office 365, Enterprise Mobility e serviços de segurança, serviços do Windows 10, Dynamics 365 e muito mais. Explore a nossa documentação para saber mais sobre como usar as APIs do Microsoft Graph.
   aside:
     image:
       alt: 
       height: 110
       src: ./images/index/whatsnew-video.png
       width: 250
-    title: O que há de novo no Microsoft Graph (12:39)
+    title: Novidades do Microsoft Graph (12:39)
     href: https://www.youtube.com/watch?v=3X10r2VVLCg
     width: 250
 sections:
@@ -37,39 +37,39 @@ sections:
     columns: 3
     items:
     - href: /graph/overview
-      html: <p>Descubra o que você pode fazer com o Microsoft Graph e veja alguns casos de uso da API populares.</p>
+      html: <p>Descubra o que você pode fazer com o Microsoft Graph e veja alguns casos de uso popular do API.</p>
       image:
         src: ./images/index/i_get-started.svg
       title: Visão geral do Microsoft Graph
     - href: /graph/overview-major-services
-      html: <p>Familiarize-se com os principais serviços e recursos disponíveis no Microsoft Graph.</p>
+      html: <p>Familiarize-se com os principais serviços e recursos que estão disponíveis no Microsoft Graph.</p>
       image:
         src: ./images/index/i_overview.svg
       title: Serviços e recursos
     - href: https://developer.microsoft.com/graph/graph-explorer/
-      html: <p>Faça solicitações e veja respostas no Microsoft Graph.</p>
+      html: <p>Crie solicitações e veja as respostas para Microsoft Graph.</p>
       image:
         src: ./images/index/i_queries.svg
       title: Explorador do Graph
     - href: /graph/use-the-api
-      html: <p>Descubra como começar a usar a API do Microsoft Graph para acessar os recursos do serviço de nuvem da Microsoft.</p>
+      html: <p>Saiba como começar a usar a API do Microsoft Graph para acessar recursos de serviço do Microsoft Cloud.</p>
       image:
         src: ./images/index/i_code-edit.svg
       title: Usar a API
     - href: /graph/api/overview?toc=.%2Fref%2Ftoc.json&view=graph-rest-1.0
-      html: <p>Use a API REST do Microsoft Graph v 1.0 para atender às suas necessidades de produção práticas.</p>
+      html: <p>Use API REST v1.0 do Microsoft Graph para atender às suas necessidades de produção prática.</p>
       image:
         src: ./images/index/i_api-reference.svg
-      title: API REST do Microsoft Graph v 1.0
+      title: APIs REST v1.0 do Microsoft Graph
     - href: /graph/api/overview?toc=.%2Fref%2Ftoc.json&view=graph-rest-beta
-      html: <p>Experimente o ponto de extremidade beta do Microsoft Graph.</p>
+      html: <p>Experimente o ponto de extremidade do Microsoft Graph beta.</p>
       image:
         src: ./images/index/i_api.svg
-      title: API REST do Microsoft Graph beta
+      title: API REST Beta do Microsoft Graph
 - title: Plataformas com suporte
   items:
   - type: paragraph
-    text: Encontre SDKs e siga os exercícios de treinamento passo a passo específicos de plataforma que orientam os conceitos básicos do Microsoft Graph, incluindo como criar um aplicativo simples que usa a autenticação do Azure AD e acessa dados por meio do Microsoft Graph.
+    text: Encontre SDKs e siga plataforma específica, passo a passo de exercícios de treinamento que orientam você por meio de conceitos básicos do Microsoft Graph, incluindo como criar um aplicativo simples que usa a autenticação do Azure AD e tem acesso a dados por meio do Microsoft Graph.
   - type: table
     style: dataMatrix
     columns:
@@ -87,7 +87,7 @@ sections:
       title: iOS
     - image:
         src: ./images/index/logo_java.svg
-      title: Miniaplicativo
+      title: Java
     - image:
         src: ./images/index/logo_js.svg
       title: JavaScript
@@ -110,7 +110,7 @@ sections:
         src: ./images/index/logo_xamarin.svg
       title: Xamarin
     rows:
-    - title: Iniciado
+    - title: Início rápido
       values:
       - href: https://developer.microsoft.com/graph/quick-start?platform=option-android
       - href: https://developer.microsoft.com/graph/quick-start?platform=option-angular
@@ -138,7 +138,7 @@ sections:
       - href: /graph/tutorials/ruby
       - href: /graph/tutorials/uwp
       - href: 
-    - title: Kit
+    - title: SDK
       values:
       - href: https://github.com/microsoftgraph/msgraph-sdk-android
       - href: https://github.com/microsoftgraph/msgraph-sdk-javascript
@@ -160,7 +160,7 @@ sections:
     columns: 3
     items:
     - href: /graph/changelog
-      html: <p>Descubra o que foi alterado nas versões v 1.0 e beta da API do Microsoft Graph.</p>
+      html: <p>Descubra o que mudou nas versões da API do Microsoft Graph v1.0 e beta.</p>
       image:
         src: ./images/index/i_backlog.svg
       title: Log de mudanças
@@ -170,7 +170,7 @@ sections:
         src: ./images/index/i_blog.svg
       title: Blog do Microsoft Graph
     - href: /graph/known-issues
-      html: <p>Saiba mais sobre problemas conhecidos com o Microsoft Graph.</p>
+      html: <p>Problemas conhecidos com o Microsoft Graph.</p>
       image:
         src: ./images/index/i_investigate.svg
       title: Problemas conhecidos
