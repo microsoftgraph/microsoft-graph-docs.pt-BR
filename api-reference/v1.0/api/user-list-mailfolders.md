@@ -1,15 +1,15 @@
 ---
 title: Listar mailFolders
-description: 'Obtenha a coleção de pastas de email sob a pasta raiz do usuário conectado. '
+description: 'Obter o conjunto de pastas de email sob a pasta raiz do usuário conectado. '
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8515e70ed9502c97706f8eab332c85c748384082
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: f92a933cc7b38ac713722a42809b2fe7f44c516f
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27972758"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869285"
 ---
 # <a name="list-mailfolders"></a>Listar mailFolders
 
@@ -26,6 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/mailFolders
 GET /users/{id | userPrincipalName}/mailFolders
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais

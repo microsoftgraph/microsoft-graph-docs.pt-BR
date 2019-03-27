@@ -4,12 +4,12 @@ description: Enviar a mensagem especificada no corpo da solicitação. A mensage
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 542c36f4d52c461b5a423d9a7fb93a06b94b9b70
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: f08bb8969ee05384f4de0fec90883bb216df19cc
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27975803"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869313"
 ---
 # <a name="send-mail"></a>Enviar email
 
@@ -30,6 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /me/sendMail
 POST /users/{id | userPrincipalName}/sendMail
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -43,8 +44,8 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|message|[Message](../resources/message.md)|A mensagem a enviar. Obrigatório.|
-|saveToSentItems|Booliano|Indica se é necessário salvar a mensagem nos Itens Enviados. Especifique-a somente se o parâmetro for false; o padrão é true.  Opcional. |
+|mensagem|[Message](../resources/message.md)|A mensagem a enviar. Obrigatório.|
+|saveToSentItems|Boolean|Indica se é necessário salvar a mensagem nos Itens Enviados. Especifique-a somente se o parâmetro for false; o padrão é true.  Opcional. |
 
 ## <a name="response"></a>Resposta
 
@@ -99,7 +100,7 @@ HTTP/1.1 202 Accepted
 ```
 
 ##### <a name="request-2"></a>Solicitação 2
-O próximo exemplo cria uma mensagem com cabeçalhos de mensagem personalizados da Internet e envia a mensagem.
+O exemplo a seguir cria uma mensagem com cabeçalhos personalizados de mensagem da Internet e envia a mensagem.
 <!-- {
   "blockType": "request",
   "name": "user_sendmail_with_headers"
