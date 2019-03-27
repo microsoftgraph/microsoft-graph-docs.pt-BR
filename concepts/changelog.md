@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 058b9c292690cce0d0a0462b82f73baf6618d74b
-ms.sourcegitcommit: 3615f9475d57bfbb3a8c4402af863897f592dfbd
+ms.openlocfilehash: b601d4daaac49bec565cef11cfb5b365fed0ac31
+ms.sourcegitcommit: 3410e1b8dcf62a7b0e4d6b11920912479f21feb2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30789687"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30800023"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -25,6 +25,10 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | Adição | v1.0 | Adicione as propriedades **passwordNotificationWindowInDays** e **passwordValidityPeriodInDays** ao recurso do [domínio](/graph/api/resources/domain?view=graph-rest-1.0).|
 | Adição | beta e v1.0 | Adicione as propriedades **complianceExpirationDateTime**, **profileType** e **systemLabels** ao recurso do [dispositivo](/graph/api/resources/device?view=graph-rest-1.0).|
 | Adição | beta e v1.0 | Adicione a propriedade **isResourceAccount** ao recurso do [usuário](/graph/api/resources/user?view=graph-rest-1.0).|
+
+### <a name="education-apis"></a>APIs de educação
+
+| Adição | beta | Adicionar o novo recurso de [educationCategory](/graph/api/resources/educationCategory?view=graph-rest-beta).| | Adição | beta | Adicionar as APIs para gerenciar recursos de [educationCategory](/graph/api/resources/educationCategory?view=graph-rest-beta) no [educationClass](/graph/api/resources/educationClass?view=graph-rest-beta) e [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta).| | Adição | beta | Adicionar o novo recurso de [educationFormResource](/graph/api/resources/educationFormResource?view=graph-rest-beta).| | Adicionar a propriedade do **recipients** no recurso de [educationAssignmentIndividualRecipient](/graph/api/resources/educationAssignmentIndividualRecipient?view=graph-rest-beta).|
 
 ### <a name="microsoft-intune-apis"></a>APIs do Microsoft Intune
 |Tipo de alteração|Versão|Descrição|
@@ -62,6 +66,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+|Remoção |beta| A propriedade **deleted** foi removida do [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta). Use **deletedDateTime** em seu lugar. |
 | Adição | beta | Adicionar os recursos [schedule](/api-reference/beta/resources/schedule.md), [schedulingGroup](/api-reference/beta/resources/schedulinggroup.md), [shift](/api-reference/beta/resources/shift.md), [timeOffReason](/api-reference/beta/resources/timeoffreason.md) e [timeOff](/api-reference/beta/resources/timeoff.md) recursos e os métodos associados. |
 
 ### <a name="onedrive-and-sharepoint-apis"></a>APIs do OneDrive e SharePoint
@@ -2309,7 +2314,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 ### <a name="outlook-calendar"></a>Calendário do Outlook
 
-| **Tipo de alteração** | **Version**   | **Descrição**                          |
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição        | v1.0 e beta | Para **findMeetingTimes**, adicionou o novo valor de enumeração **unrestricted** que você especifica como a propriedade **activityDomain**, parte do parâmetro **timeConstraint**. Isso permite que **findMeetingTimes** procure os horários apropriados para o tipo de atividade que você está agendando. Confira detalhes na seção [corpo da solicitação](/graph/api/user-findmeetingtimes?view=graph-rest-1.0#request-body). |
 | Adição        | Beta          | Suporte para obter um corpo de **event** em um texto sem formatação, como alternativa ao formato HTML padrão. Confira os eventos [get](/graph/api/event-get?view=graph-rest-beta) e [list](/graph/api/user-list-events?view=graph-rest-beta) para obter detalhes. |
