@@ -1,23 +1,23 @@
 ---
 title: Atualizar outlooktaskgroup
-description: Atualize as propriedades graváveis de um grupo de tarefa do Outlook.
+description: Atualizar as propriedades graváveis de um grupo de tarefas do Outlook.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: b109be3bbb0ac485dd4da7778a69a5dddf8342db
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: b628f0cf610afef88a198db721ee5395a34d1e08
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516389"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869481"
 ---
 # <a name="update-outlooktaskgroup"></a>Atualizar outlooktaskgroup
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades graváveis de um grupo de tarefa do Outlook.
+Atualizar as propriedades graváveis de um grupo de tarefas do Outlook.
 
-Observe que você não pode modificar o nome do grupo de tarefas padrão "Minhas tarefas".
+Observe que você não pode modificar o nome do grupo de tarefas padrão, "minhas tarefas".
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -30,6 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
+PATCH /me/outlook/taskGroups/{id}
 PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}
 ```
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
@@ -42,11 +43,11 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|name|String|O nome do grupo de tarefas.|
+|nome|String|O nome do grupo de tarefas.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto atualizado [outlookTaskGroup](../resources/outlooktaskgroup.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [outlookTaskGroup](../resources/outlooktaskgroup.md) atualizado no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 O exemplo a seguir altera o nome de um grupo de tarefas para "Tarefas Pessoais". 

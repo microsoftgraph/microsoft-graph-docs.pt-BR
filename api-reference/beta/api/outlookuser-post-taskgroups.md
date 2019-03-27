@@ -1,21 +1,21 @@
 ---
 title: Criar outlookTaskGroup
-description: Crie um grupo de tarefas do Outlook na caixa de correio do usuário.
+description: Criar um grupo de tarefas do Outlook na caixa de correio do usuário.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 291eb580228f28754acccff78f60ed6a2004155b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 364510c3d866b193012763d17dbc22f2e1d7c8f7
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516004"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869257"
 ---
 # <a name="create-outlooktaskgroup"></a>Criar outlookTaskGroup
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um grupo de tarefas do Outlook na caixa de correio do usuário.
+Criar um grupo de tarefas do Outlook na caixa de correio do usuário.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -28,8 +28,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /me/outlook/taskGroups
 POST /users/{id|userPrincipalName}/outlook/taskGroups
-
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
@@ -37,11 +37,11 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups
 | Autorização  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do objeto [outlookTaskGroup](../resources/outlooktaskgroup.md) .
+No corpo da solicitação, forneça uma representação JSON do objeto [outlookTaskGroup](../resources/outlooktaskgroup.md) .
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` objeto response de código e [outlookTaskGroup](../resources/outlooktaskgroup.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `201 Created` o código de resposta e o objeto [outlookTaskGroup](../resources/outlooktaskgroup.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -59,7 +59,7 @@ Content-length: 40
   "name": "Leisure tasks"
 }
 ```
-No corpo da solicitação, fornece uma representação JSON do objeto [outlookTaskGroup](../resources/outlooktaskgroup.md) .
+No corpo da solicitação, forneça uma representação JSON do objeto [outlookTaskGroup](../resources/outlooktaskgroup.md) .
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {

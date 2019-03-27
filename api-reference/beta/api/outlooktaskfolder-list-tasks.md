@@ -1,25 +1,25 @@
 ---
 title: Listar tarefas
-description: Obtenha todas as tarefas do Outlook na pasta especificada.
+description: Obter todas as tarefas do Outlook na pasta especificada.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: dfcd1438d55a22654c5601bc55827d0dedbdc6b2
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.openlocfilehash: a1769c83dc84e70ed051f5d1d284d00de7c71ae4
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29967260"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869464"
 ---
 # <a name="list-tasks"></a>Listar tarefas
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha todas as tarefas do Outlook na pasta especificada.
+Obter todas as tarefas do Outlook na pasta especificada.
 
-Por padrão, esta operação (e as operações de tarefa POST, PATCH e [Concluir](../api/outlooktask-complete.md) ) retorna propriedades relacionadas a data em UTC.  Você pode usar um `Prefer: outlook.timezone` cabeçalho de solicitação ter todas as propriedades relacionadas a data na resposta representada em um fuso horário diferente do UTC. Ver um [exemplo](outlooktask-get.md#example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time) para obter uma única tarefa. Você pode aplicar o cabeçalho da mesma forma para obter várias tarefas.
+Por padrão, essa operação (e as operações de POST, PATCH e tarefa [completa](../api/outlooktask-complete.md) ) retorna as propriedades relacionadas à data no UTC.  Você pode usar um `Prefer: outlook.timezone` cabeçalho de solicitação para ter todas as propriedades relacionadas à data na resposta representada em um fuso horário diferente de UTC. Veja um [exemplo](outlooktask-get.md#example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time) para obter uma única tarefa. Você pode aplicar o cabeçalho de forma semelhante para obter várias tarefas.
 
-Se houver mais de um grupo de tarefa e você deseja obter todas as tarefas em um grupo de tarefa específica, primeiro [fazer todas as pastas de tarefa nesse grupo de tarefa](outlooktaskgroup-list-taskfolders.md)e, em seguida, obtenha as tarefas em cada uma dessas pastas de tarefa.
+Se houver mais de um grupo de tarefas e você quiser obter todas as tarefas em um grupo de tarefas específico, primeiro [obtenha todas as pastas de tarefas desse grupo de tarefas](outlooktaskgroup-list-taskfolders.md)e, em seguida, obtenha as tarefas em cada uma dessas pastas de tarefas.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -33,6 +33,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/outlook/taskFolders/{id}/tasks
+GET /me/outlook/taskGroups/{id}/taskFolders/{id}/tasks
 GET /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks
 GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks
 ```
@@ -43,14 +45,14 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 | Nome      |Descrição|
 |:----------|:----------|
 | Autorização  | {token} de portador. Obrigatório. |
-| Prefira: outlook.timezone | Especifica o fuso horário para as propriedades de tempo na resposta, qual seria em UTC se este cabeçalho não for especificado. Opcional.|
+| Prefira: outlook.timezone | Especifica o fuso horário para as propriedades de hora na resposta, que seria no UTC se esse cabeçalho não for especificado. Opcional.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e a coleção de objetos [outlookTask](../resources/outlooktask.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [outlookTask](../resources/outlooktask.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

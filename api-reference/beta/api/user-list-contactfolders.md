@@ -1,21 +1,21 @@
 ---
 title: Listar contactFolders
-description: Obtenha todas as pastas de contato na caixa de correio do usuário conectado.
+description: Obter todas as pastas de contatos na caixa de correio do usuário conectado.
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f5f0a485c3c134b6627fce5d3b8f04c26dee503e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 4aca24e167f1d9f1bfe3529e44665347a5e1cdbd
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523278"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869264"
 ---
 # <a name="list-contactfolders"></a>Listar contactFolders
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha todas as pastas de contato na caixa de correio do usuário conectado.
+Obter todas as pastas de contatos na caixa de correio do usuário conectado.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -29,6 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/contactFolders
 GET /users/{id | userPrincipalName}/contactFolders
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -44,7 +45,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [ContactFolder](../resources/contactfolder.md) no corpo da resposta.
+Se bem sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [ContactFolder](../resources/contactfolder.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

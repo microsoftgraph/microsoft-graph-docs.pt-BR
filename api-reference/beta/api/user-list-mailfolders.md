@@ -4,12 +4,12 @@ description: Obtenha todas as pastas de email na caixa de correio do usuário co
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8de6fa03cb0f7b6a85e2055d060101e598265b43
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 64b96620d30188c720beaae4875712b1dc8d8e37
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509928"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869292"
 ---
 # <a name="list-mailfolders"></a>Listar mailFolders
 
@@ -29,6 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/mailFolders
 GET /users/{id | userPrincipalName}/mailFolders
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -44,7 +45,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [MailFolder](../resources/mailfolder.md) no corpo da resposta.
+Se bem sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [MailFolder](../resources/mailfolder.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

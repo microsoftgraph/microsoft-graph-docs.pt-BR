@@ -1,21 +1,21 @@
 ---
 title: Obter outlookTaskFolder
-description: Obtenha as propriedades e relacionamentos da pasta de tarefas do Outlook especificado.
+description: Obtenha as propriedades e os relacionamentos da pasta de tarefas especificada do Outlook.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: e68ed4fc6d1c418733827ca93c12335d8ee894a3
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 70ef38ce8b3d808bb66064f69353ef4f2ed0fb5b
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511167"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869411"
 ---
 # <a name="get-outlooktaskfolder"></a>Obter outlookTaskFolder
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha as propriedades e relacionamentos da pasta de tarefas do Outlook especificado.
+Obtenha as propriedades e os relacionamentos da pasta de tarefas especificada do Outlook.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -28,6 +28,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/outlook/taskFolders/{id}
+GET /me/outlook/taskGroups/{id}/taskFolders/{id}
 GET /users/{id|userPrincipalName}/outlook/taskFolders/{id}
 GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}
 ```
@@ -44,7 +46,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` objeto response de código e [outlookTaskFolder](../resources/outlooktaskfolder.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [outlookTaskFolder](../resources/outlooktaskfolder.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

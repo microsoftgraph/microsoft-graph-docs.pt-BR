@@ -1,29 +1,29 @@
 ---
-title: tipo de recurso de scheduleItem
-description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
+title: tipo de recurso scheduleItem
+description: Um item que descreve a disponibilidade de um usuário correspondente a um evento real no calendário padrão do usuário. Esse item também se aplica a um recurso.
 localization_priority: Normal
-ms.openlocfilehash: ed6b7441996cdf00b33be03f70afb888cc9bb251
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: a39f45598ab3c427a741659aa93615317c3c57a7
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511349"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869306"
 ---
-# <a name="scheduleitem-resource-type"></a>tipo de recurso de scheduleItem
+# <a name="scheduleitem-resource-type"></a>tipo de recurso scheduleItem
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-Um item que descreve a disponibilidade de um usuário correspondente a um evento real no calendário de padrão do usuário. Esse item se aplica a um recurso também.
+Um item que descreve a disponibilidade de um usuário correspondente a um evento real no calendário padrão do usuário. Este item se aplica a um recurso (sala ou equipamento) também.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|end |[dateTimeTimeZone](datetimetimezone.md) |A data, hora e fuso horário que termina o evento correspondente. |
-|IsPrivate |Booliano |A sensibilidade do evento correspondente. True se o evento é marcado como `private`, false caso contrário. |
-|location |String | O local onde o evento correspondente é mantido ou participou da. Opcional.|
-|start |[dateTimeTimeZone](datetimetimezone.md) |A data, hora e fuso horário que inicia o evento correspondente. |
-|status |String | O status de disponibilidade do usuário ou recurso durante o evento correspondente. Os valores possíveis são: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`. |
-|subject |Cadeia de caracteres | Linha de assunto do evento correspondente. Opcional.|
+|end |[dateTimeTimeZone](datetimetimezone.md) |A data, a hora e o fuso horário em que o evento correspondente termina. |
+|isPrivate |Boolean |A sensibilidade do evento correspondente. True se o evento estiver marcado `private`; caso contrário, false. Opcional. |
+|location |String | O local onde o evento correspondente é mantido ou participado. Opcional.|
+|iniciar |[dateTimeTimeZone](datetimetimezone.md) |A data, a hora e o fuso horário em que o evento correspondente é iniciado. |
+|status |freeBusyStatus | O status de disponibilidade do usuário ou recurso durante o evento correspondente. Os valores possíveis são: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`. |
+|Assunto |String | A linha de assunto do evento correspondente. Opcional.|
 
 
 ## <a name="json-representation"></a>Representação JSON
@@ -33,7 +33,9 @@ Veja a seguir uma representação JSON do recurso.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
+    "isPrivate",
+    "location",
+    "subject"
   ],
   "@odata.type": "microsoft.graph.scheduleItem"
 }-->

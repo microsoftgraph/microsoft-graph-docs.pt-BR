@@ -1,21 +1,21 @@
 ---
 title: Obter outlookTaskGroup
-description: Obtenha as propriedades e relacionamentos do grupo de tarefas especificado do Outlook.
+description: Obtenha as propriedades e os relacionamentos do grupo de tarefas especificado do Outlook.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: d113c913be669df4735c902f261b0ce3f77c67c9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: b4f260d1ae19cca26720a59f68125caac3b5a846
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513092"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869397"
 ---
 # <a name="get-outlooktaskgroup"></a>Obter outlookTaskGroup
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha as propriedades e relacionamentos do grupo de tarefas especificado do Outlook.
+Obtenha as propriedades e os relacionamentos do grupo de tarefas especificado do Outlook.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -28,6 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/outlook/taskGroups/{id}
 GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -43,7 +44,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` objeto response de código e [outlookTaskGroup](../resources/outlooktaskgroup.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [outlookTaskGroup](../resources/outlooktaskgroup.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

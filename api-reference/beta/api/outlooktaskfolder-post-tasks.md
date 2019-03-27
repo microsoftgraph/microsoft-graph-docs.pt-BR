@@ -1,23 +1,23 @@
 ---
 title: Criar outlookTask
-description: Crie uma tarefa do Outlook na pasta tarefa especificada.
+description: Criar uma tarefa do Outlook na pasta de tarefas especificada.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 8ba293d83e2a202a45cfebf4c318ee73d808e1e4
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 9d166a34d9cfa40c3a115a8e36e4f04a6732416c
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510593"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869390"
 ---
 # <a name="create-outlooktask"></a>Criar outlookTask
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie uma tarefa do Outlook na pasta tarefa especificada.
+Criar uma tarefa do Outlook na pasta de tarefas especificada.
 
-O método POST sempre ignora a parte de tempo de **startDateTime** e **dueDateTime** no corpo da solicitação e supõe que o tempo para ser sempre meia-noite no fuso horário especificado.
+O método POST sempre ignora a parte de hora de **StartDateTime** e **dueDateTime** no corpo da solicitação e pressupõe que o tempo seja sempre meia-noite no fuso horário especificado.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -31,6 +31,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /me/outlook/taskFolders/{id}/tasks
+POST /me/outlook/taskGroups/{id}/taskFolders/{id}/tasks
 POST /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks
 POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks
 ```
@@ -38,14 +40,14 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/task
 | Nome       | Descrição|
 |:---------------|:----------|
 | Autorização  | {token} de portador. Obrigatório. |
-| Prefira: outlook.timezone | Especifica o fuso horário para as propriedades de tempo na resposta, qual seria em UTC se este cabeçalho não for especificado. Opcional.|
+| Prefira: outlook.timezone | Especifica o fuso horário para as propriedades de hora na resposta, que seria no UTC se esse cabeçalho não for especificado. Opcional.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do objeto [outlookTask](../resources/outlooktask.md) .
+No corpo da solicitação, forneça uma representação JSON do objeto [outlookTask](../resources/outlooktask.md) .
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` objeto response de código e [outlookTask](../resources/outlooktask.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `201 Created` o código de resposta e o objeto [outlookTask](../resources/outlooktask.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -71,11 +73,11 @@ Content-length: 376
   }
 }
 ```
-No corpo da solicitação, fornece uma representação JSON do objeto [outlookTask](../resources/outlooktask.md) .
+No corpo da solicitação, forneça uma representação JSON do objeto [outlookTask](../resources/outlooktask.md) .
 ##### <a name="response"></a>Resposta
 O método POST ignora a parte da hora no corpo da solicitação e assume que a hora seja sempre meia-noite no fuso horário especificado (PST). Em seguida, por padrão, o método POST converte e mostra todas as propriedades relacionadas à data em UTC na resposta.
 
-Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,17 +1,17 @@
 ---
-title: Listar CalendarGroups
+title: Listar calendarGroups
 description: Obter os grupos de calendários do usuário.
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5a09f07eb5f5dca4c14f4f684485b38d41177333
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: ddd31fa4867d1653906ac6c331b284d18f3daa45
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27938591"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869320"
 ---
-# <a name="list-calendargroups"></a>Listar CalendarGroups
+# <a name="list-calendargroups"></a>Listar calendarGroups
 
 Obter os grupos de calendários do usuário.
 ## <a name="permissions"></a>Permissões
@@ -26,6 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/calendarGroups
 GET /users/{id | userPrincipalName}/calendarGroups
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -41,7 +42,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [CalendarGroup](../resources/calendargroup.md) no corpo da resposta.
+Se bem sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [CalendarGroup](../resources/calendargroup.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

@@ -4,12 +4,12 @@ description: Enviar a mensagem especificada no corpo da solicitação. A mensage
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: afa50b466bd7a90af4fedbdad4c5f7c5b4627b8c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 47cdb200f7de493c6fcc83b3d77be2af1824ef65
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517208"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869425"
 ---
 # <a name="send-mail"></a>Enviar email
 
@@ -17,10 +17,10 @@ ms.locfileid: "29517208"
 
 Enviar a mensagem especificada no corpo da solicitação. A mensagem é salva na pasta Itens Enviados por padrão.
 
-Na mesma chamada de ação **sendMail** , você pode:
+Na mesma chamada de ação de **sendmail** , você pode:
 
 - Incluir um [anexo](../resources/attachment.md)
-- Use um [mencionar](../resources/mention.md) chamar check-out de outro usuário na nova mensagem
+- Usar uma [menção](../resources/mention.md) para chamar outro usuário na nova mensagem
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -35,6 +35,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /me/sendMail
 POST /users/{id | userPrincipalName}/sendMail
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -49,12 +50,12 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |Message|[Message](../resources/message.md)|A mensagem a enviar. Obrigatório.|
-|SaveToSentItems|Booliano|Indica se é necessário salvar a mensagem nos Itens Enviados. Especifique-a somente se o parâmetro for false; o padrão é true.  Opcional.|
+|SaveToSentItems|Boolean|Indica se é necessário salvar a mensagem nos Itens Enviados. Especifique-a somente se o parâmetro for false; o padrão é true.  Opcional.|
 
-Se você quiser usar **mencionar** chamar check-out de outro usuário na nova mensagem:
+Se você quiser usar **menção** para chamar outro usuário na nova mensagem:
 
-- Inclua a propriedade necessários **toRecipients** , a propriedade **menções** e propriedades de qualquer mensagem graváveis no corpo da solicitação.
-- Para cada mencionam na propriedade **menções** , você deve especificar a propriedade **mencionado** .
+- Inclua a propriedade **** Required ToRecipients, a **** Propriedade mencionas e qualquer propriedade gravável de mensagem no corpo da solicitação.
+- Para cada menção na propriedade **menciona** , você deve especificar a propriedade **mencionado** .
 
 ## <a name="response"></a>Resposta
 
@@ -63,7 +64,7 @@ Se bem-sucedido, este método retorna um código de resposta `202 Accepted`. Nã
 ## <a name="example"></a>Exemplo
 Eis um exemplo de como chamar esta API.
 ##### <a name="request-1"></a>Solicitação 1
-Aqui está um exemplo da solicitação para criar e enviar uma mensagem dinamicamente.
+Aqui está um exemplo da solicitação para criar e enviar uma mensagem instantaneamente.
 <!-- {
   "blockType": "request",
   "name": "user_sendmail"
@@ -111,7 +112,7 @@ HTTP/1.1 202 Accepted
 
 
 ##### <a name="request-2"></a>Solicitação 2
-O exemplo a seguir mostra uma mensagem pelo usuário conectado para Samantha Booth. A mensagem também inclui um mencionam de outro usuário, Dana Swope.
+O exemplo a seguir mostra uma mensagem pelo usuário conectado ao estande de Paula. A mensagem também inclui uma menção de outro usuário, Dana Swope.
 <!-- {
   "blockType": "request",
   "name": "user_sendmail_with_mentions"
@@ -155,7 +156,7 @@ HTTP/1.1 202 Accepted
 ```
 
 ##### <a name="request-3"></a>Solicitação 3
-O próximo exemplo cria uma mensagem com cabeçalhos de mensagem personalizados da Internet e envia a mensagem.
+O próximo exemplo cria uma mensagem com cabeçalhos de mensagem da Internet personalizada e envia a mensagem.
 <!-- {
   "blockType": "request",
   "name": "user_sendmail_with_headers"
@@ -193,7 +194,7 @@ Content-type: application/json
 ```
 
 ##### <a name="response-3"></a>Resposta 3
-Este é um exemplo da resposta.
+Veja a seguir um exemplo da resposta.
 <!-- {
   "blockType": "response",
   "truncated": true

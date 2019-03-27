@@ -1,23 +1,23 @@
 ---
 title: Atualizar outlooktaskfolder
-description: Atualize as propriedades graváveis de uma pasta de tarefas do Outlook.
+description: Atualizar as propriedades graváveis de uma pasta de tarefas do Outlook.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 83b75fb2588f58480e51e4e548bfd5d05b7f941b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 0475e8b3279278f407ff979fa42cf270ae48192b
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29530157"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869404"
 ---
 # <a name="update-outlooktaskfolder"></a>Atualizar outlooktaskfolder
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades graváveis de uma pasta de tarefas do Outlook.
+Atualizar as propriedades graváveis de uma pasta de tarefas do Outlook.
 
-Você não pode alterar o valor da propriedade de **nome** da pasta de tarefas padrão, "Tarefas".
+Você não pode alterar o valor da propriedade **Name** da pasta de tarefas padrão, "tarefas".
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -30,6 +30,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
+PATCH /me/outlook/taskFolders/{id}
+PATCH /me/outlook/taskGroups/{id}/taskFolders/{id}
 PATCH /users/{id|userPrincipalName}/outlook/taskFolders/{id}
 PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}
 ```
@@ -43,14 +45,14 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|name|String|O nome da pasta de tarefas.|
+|nome|String|O nome da pasta de tarefas.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto atualizado [outlookTaskFolder](../resources/outlooktaskfolder.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [outlookTaskFolder](../resources/outlooktaskfolder.md) atualizado no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-O exemplo a seguir altera o nome da pasta tarefa especificada a `Charity work`.
+O exemplo a seguir altera o nome da pasta de tarefas especificada `Charity work`para.
 <!-- {
   "blockType": "request",
   "name": "update_outlooktaskfolder"

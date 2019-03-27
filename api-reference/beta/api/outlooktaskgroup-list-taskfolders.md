@@ -1,21 +1,21 @@
 ---
-title: Lista taskFolders
-description: Obtenha as pastas de tarefas do Outlook em um outlookTaskGroup específico.
+title: Listar taskFolders
+description: Obter pastas de tarefas do Outlook em um outlookTaskGroup específico.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 16a3463a7cdc4a3bc4efd401c7ca1a8932c82b7c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: c639fb0fe8e1ae010c3f5dbfb6b9c85c34009f00
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508283"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869460"
 ---
-# <a name="list-taskfolders"></a>Lista taskFolders
+# <a name="list-taskfolders"></a>Listar taskFolders
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha as pastas de tarefas do Outlook em um determinado [outlookTaskGroup](../resources/outlooktaskgroup.md).
+Obter pastas de tarefas do Outlook em um [outlookTaskGroup](../resources/outlooktaskgroup.md)específico.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -28,6 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/outlook/taskGroups/{id}/taskFolders
 GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -43,7 +44,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e a coleção de objetos [outlookTaskFolder](../resources/outlooktaskfolder.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [outlookTaskFolder](../resources/outlooktaskfolder.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

@@ -1,21 +1,21 @@
 ---
 title: Criar outlookTaskFolder
-description: Crie uma pasta de tarefas do Outlook em um outlookTaskGroup especificado.
+description: Criar uma pasta de tarefas do Outlook em um outlookTaskGroup especificado.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 734be5578f6319307fabcac9c4e4b591b575858e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: d1c6621e16d548b24cba264cb0434c5ea5dbd290
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529954"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869250"
 ---
 # <a name="create-outlooktaskfolder"></a>Criar outlookTaskFolder
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie uma pasta de tarefas do Outlook em um [outlookTaskGroup](../resources/outlooktaskgroup.md)de especificado.
+Criar uma pasta de tarefas do Outlook em um [outlookTaskGroup](../resources/outlooktaskgroup.md)especificado.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -28,8 +28,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /me/outlook/taskGroups/{id}/taskFolders
 POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders
-
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
@@ -37,15 +37,15 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders
 | Autorização  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do objeto [outlookTaskFolder](../resources/outlooktaskfolder.md) .
+No corpo da solicitação, forneça uma representação JSON do objeto [outlookTaskFolder](../resources/outlooktaskfolder.md) .
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` objeto response de código e [outlookTaskFolder](../resources/outlooktaskfolder.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `201 Created` o código de resposta e o objeto [outlookTaskFolder](../resources/outlooktaskfolder.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-O exemplo a seguir cria uma pasta de tarefas chamada `Cooking` do grupo de tarefa especificada.
+O exemplo a seguir cria uma pasta de `Cooking` tarefas chamada no grupo de tarefas especificado.
 <!-- {
   "blockType": "request",
   "name": "create_outlooktaskfolder_from_outlooktaskgroup"
@@ -60,7 +60,7 @@ Content-length: 131
   "name": "Cooking"
 }
 ```
-No corpo da solicitação, fornece uma representação JSON do objeto [outlookTaskFolder](../resources/outlooktaskfolder.md) .
+No corpo da solicitação, forneça uma representação JSON do objeto [outlookTaskFolder](../resources/outlooktaskfolder.md) .
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {

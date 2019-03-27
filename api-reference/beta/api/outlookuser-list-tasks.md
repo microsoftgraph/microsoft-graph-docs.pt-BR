@@ -1,24 +1,24 @@
 ---
 title: Listar tarefas
-description: Obtenha todas as tarefas do Outlook na caixa de correio do usuário.
+description: Obter todas as tarefas do Outlook na caixa de correio do usuário.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: f854d5649c311531e65909c3d6b33f356cd5bac2
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.openlocfilehash: 2681d988035bd590e4f03ae8b2393d44bcb6d976
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29967351"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869418"
 ---
 # <a name="list-tasks"></a>Listar tarefas
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha todas as tarefas do Outlook na caixa de correio do usuário.
+Obter todas as tarefas do Outlook na caixa de correio do usuário.
 
-Por padrão, esta operação (e as operações de tarefa POST, PATCH e [Concluir](../api/outlooktask-complete.md) ) retorna propriedades relacionadas a data em UTC.
-Você pode usar o `Prefer: outlook.timezone` cabeçalho para que todas as propriedades relacionadas às datas como resposta representada em um fuso horário diferente do UTC. Ver um [exemplo](outlooktask-get.md#example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time) para obter uma única tarefa. Você pode aplicar o cabeçalho da mesma forma para obter várias tarefas.
+Por padrão, essa operação (e as operações de POST, PATCH e tarefa [completa](../api/outlooktask-complete.md) ) retorna as propriedades relacionadas à data no UTC.
+Você pode usar o cabeçalho `Prefer: outlook.timezone` para que todas as propriedades relacionadas à data na resposta sejam representadas em um fuso horário diferente de UTC. Veja um [exemplo](outlooktask-get.md#example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time) para obter uma única tarefa. Você pode aplicar o cabeçalho de forma semelhante para obter várias tarefas.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -32,6 +32,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/outlook/tasks
 GET /users/{id|userPrincipalName}/outlook/tasks
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
@@ -41,14 +42,14 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 | Nome      |Descrição|
 |:----------|:----------|
 | Autorização  | {token} de portador. Obrigatório. |
-| Prefira: outlook.timezone | Especifica o fuso horário para as propriedades de tempo na resposta, qual seria em UTC se este cabeçalho não for especificado. Opcional.|
+| Prefira: outlook.timezone | Especifica o fuso horário para as propriedades de hora na resposta, que seria no UTC se esse cabeçalho não for especificado. Opcional.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e a coleção de objetos [outlookTask](../resources/outlooktask.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [outlookTask](../resources/outlooktask.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
@@ -62,7 +63,7 @@ GET https://graph.microsoft.com/beta/me/outlook/tasks
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Por padrão, as propriedades de data e hora na resposta estão em UTC.
 
-Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

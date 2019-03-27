@@ -4,12 +4,12 @@ description: Use essa API para criar uma nova pasta de email na pasta raiz da ca
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a1d67351469b197781c98028052ad7d1cae3bc92
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: c2f845f2a332c7e9c7a637839727fe7b82e50a46
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27974942"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869243"
 ---
 # <a name="create-mailfolder"></a>Criar MailFolder
 
@@ -26,6 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /me/mailFolders
 POST /users/{id | userPrincipalName}/mailFolders
 ```
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
