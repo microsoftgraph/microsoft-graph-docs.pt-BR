@@ -103,6 +103,8 @@ items:
                 href: api/user-reminderview.md
               - name: Obter agenda de disponibilidade
                 href: api/calendar-getschedule.md
+              - name: Encontrar horários de reunião
+                href: api/user-findmeetingtimes.md
               - name: Encontrar listas de salas
                 href: api/user-findroomlists.md
               - name: Encontrar salas
@@ -588,10 +590,10 @@ items:
                 href: api/calendar-list-events.md
               - name: Criar evento
                 href: api/calendar-post-events.md
-              - name: Encontrar horários de reunião
-                href: api/user-findmeetingtimes.md
               - name: Obter agenda de disponibilidade
                 href: api/calendar-getschedule.md
+              - name: Encontrar horários de reunião
+                href: api/user-findmeetingtimes.md
               - name: Encontrar listas de salas
                 href: api/user-findroomlists.md
               - name: Encontrar salas
