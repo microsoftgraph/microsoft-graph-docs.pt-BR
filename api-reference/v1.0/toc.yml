@@ -49,16 +49,16 @@ items:
             href: /graph/extensibility-open-users?toc=./ref/toc.json
           - name: Usar extensões de esquema (exemplo)
             href: /graph/extensibility-schema-groups?toc=./ref/toc.json
-      - name: Recursos
-        items:
-          - name: Práticas recomendadas
-            href: /graph/best-practices-concept?toc=./ref/toc.json
-          - name: Problemas conhecidos
-            href: /graph/known-issues?toc=./ref/toc.json
-          - name: Log de mudanças
-            href: /graph/changelog?toc=./ref/toc.json
-          - name: Erros
-            href: /graph/errors?toc=./ref/toc.json
+  - name: Recursos
+    items:
+      - name: Práticas recomendadas
+        href: /graph/best-practices-concept?toc=./ref/toc.json
+      - name: Problemas conhecidos
+        href: /graph/known-issues?toc=./ref/toc.json
+      - name: Log de mudanças
+        href: /graph/changelog?toc=./ref/toc.json
+      - name: Erros
+        href: /graph/errors?toc=./ref/toc.json
   - name: Referência
     href: overview.md
     expanded: true
@@ -99,8 +99,10 @@ items:
                 href: api/user-post-calendargroups.md
               - name: Listar visão de calendário
                 href: api/user-list-calendarview.md
-              - name: Modo de exibição Lembrete
+              - name: Modo de exibição de lembrete
                 href: api/user-reminderview.md
+              - name: Obter agenda de disponibilidade
+                href: api/calendar-getschedule.md
               - name: Encontrar horários de reunião
                 href: api/user-findmeetingtimes.md
           - name: Contatos
@@ -537,6 +539,8 @@ items:
                 href: api/calendar-post-events.md
               - name: Modo de exibição de lembrete
                 href: api/user-reminderview.md
+              - name: Obter agenda de disponibilidade
+                href: api/calendar-getschedule.md
               - name: Encontrar horários de reunião
                 href: api/user-findmeetingtimes.md
           - name: Modo de exibição de calendário
@@ -1141,7 +1145,7 @@ items:
               - name: Identidade importada do dispositivo do Windows Autopilot
                 href: resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-list.md
                   - name: Obter
                     href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-get.md

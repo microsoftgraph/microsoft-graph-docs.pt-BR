@@ -4,12 +4,12 @@ description: Representa uma conta de usuário do Azure AD. Herda de directoryObj
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d0581afe678fd17d50f669bed281d1f0a1e53998
-ms.sourcegitcommit: 159cf5aaa39d3721d96d3fd800f6a8b91159f74d
+ms.openlocfilehash: 2c566c671a3ba83168a77e358c2d8ceccfe1bf45
+ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30379553"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936315"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -63,7 +63,7 @@ Esse recurso permite:
 |[assignLicense](../api/user-assignlicense.md)|[user](user.md)|Adicionar ou remover assinaturas para o usuário. Você também pode habilitar e desabilitar planos específicos associados a uma assinatura.|
 |[Listar licenseDetails](../api/user-list-licensedetails.md) |Coleção [licenseDetails](licensedetails.md)| Obtenha uma coleção de objetos licenseDetails.|
 |[checkMemberGroups](../api/user-checkmembergroups.md)|Coleção de cadeias de caracteres|Verifique se há uma associação em uma lista de grupos. A verificação é transitiva.|
-|[findmeetingtimes](../api/user-findmeetingtimes.md)|[findMeetingTimesResponse](findmeetingtimesresponse.md)|Encontrar o tempo e locais para reunião com base na disponibilidade dos participantes, localização ou restrições de tempo.|
+|[findMeetingTimes](../api/user-findmeetingtimes.md)|[meetingTimeSuggestionsResult](meetingtimesuggestionsresult.md)|Encontrar o tempo e locais para reunião com base na disponibilidade dos participantes, localização ou restrições de tempo.|
 |[findRoomLists](../api/user-findroomlists.md)|Coleção [emailaddress.md](emailaddress.md) | Obter as listas de salas definidas em um locatário.|
 |[findRooms](../api/user-findrooms.md)|Coleção [emailaddress.md](emailaddress.md) | Obter todas as salas de reunião no locatário do usuário ou em uma lista de salas específica. |
 |[getMailTips](../api/user-getmailtips.md)|Coleção [mailTips](mailtips.md)|Retornar dicas de email de um ou mais destinatários conforme disponíveis para o usuário conectado. |
