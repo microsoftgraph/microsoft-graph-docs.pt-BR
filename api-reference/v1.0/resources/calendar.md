@@ -1,25 +1,25 @@
 ---
 title: tipo de recurso calendar
-description: Um calendário que é um contêiner para eventos. Pode ser um calendário para um user ou o calendário padrão de um group do Office 365.
+description: Um calendário que é um contêiner para eventos. Pode ser um calendário para um usuário ou o calendário padrão de um grupo do Office 365.
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 6d7f926c26b0fdcf0c70e7f6d02593cff8bb46a6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 1ca76ba581b4db8ab3a42ccc993e545afd9a922c
+ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917619"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936308"
 ---
 # <a name="calendar-resource-type"></a>tipo de recurso calendar
 
-Um calendário que é um contêiner para eventos. Pode ser um calendário para um [user](user.md) ou o calendário padrão de um [group](group.md) do Office 365.
+Um calendário que é um contêiner para eventos. Pode ser um calendário para um [usuário](user.md) ou o calendário padrão de um [grupo](group.md) do Office 365.
 
-> **Observação:** Existem algumas pequenas diferenças da maneira que você pode interagir com calendários do usuário e calendários de grupo:
+> **Observação:** existem algumas pequenas diferenças na maneira como você pode interagir com calendários de usuários e calendários de grupos:
 
- - Você pode organizar somente os calendários de usuário em um [calendarGroup](calendargroup.md).
- - Outlook automaticamente aceita todas as solicitações de reunião em nome de grupos. Você pode [Aceitar](../api/event-accept.md), [Aceitar provisoriamente](../api/event-tentativelyaccept.md)ou [Recusar](../api/event-decline.md) solicitações de reunião para apenas calendários de usuário.
-  - O Outlook não oferece suporte a lembretes para eventos de grupo. É possível [Adiar](../api/event-snoozereminder.md) ou [Descartar](../api/event-dismissreminder.md) um [lembrete](reminder.md) para apenas calendários de usuário.
+ - Você pode organizar apenas os calendários de usuários em [calendarGroup](calendargroup.md).
+ - O Outlook aceita automaticamente todas as solicitações de reunião em nome de grupos. Você pode [aceitar](../api/event-accept.md), [aceitar provisoriamente](../api/event-tentativelyaccept.md) ou [recusar](../api/event-decline.md) solicitações de reuniões apenas para calendários do usuário.
+  - O Outlook não oferece suporte a lembretes de eventos do grupo. Você pode [adiar](../api/event-snoozereminder.md) ou [descartar](../api/event-dismissreminder.md) um [lembrete](reminder.md) apenas para calendários do usuário.
 
 ## <a name="methods"></a>Métodos
 
@@ -32,8 +32,9 @@ Um calendário que é um contêiner para eventos. Pode ser um calendário para u
 |[Excluir](../api/calendar-delete.md) | Nenhum |Exclua um objeto calendar. |
 |[Listar calendarView](../api/calendar-list-calendarview.md) |Coleção [event](event.md)| Obtenha as ocorrências, as exceções e as instâncias de eventos únicas em uma visão de calendário definida por um intervalo de tempo, do calendário principal do usuário `(../me/calendarview)` ou de um calendário especificado.|
 |[Listar eventos](../api/calendar-list-events.md) |Coleção [event](event.md)| Recupera uma lista de eventos em um calendário.  A lista contém reuniões de instância única e reuniões mestres da série.|
-|[Criar evento](../api/calendar-post-events.md) |[event](event.md)| Crie um novo evento no padrão ou calendário especificado.|
-|[findMeetingTimes](../api/user-findmeetingtimes.md) |[meetingTimeSuggestionsResult](meetingtimesuggestionsresult.md) |Sugerir horários de reunião e locais com base na disponibilidade do organizador e participante e restrições de tempo ou local. |
+|[Criar evento](../api/calendar-post-events.md) |[event](event.md)| Crie um novo evento no calendário especificado ou padrão.|
+|[getSchedule](../api/calendar-getschedule.md) |Coleção [scheduleInformation](scheduleinformation.md)|Obtenha as informações de disponibilidade para um conjunto de usuários, listas de distribuição ou recursos para um período especificado. |
+|[findMeetingTimes](../api/user-findmeetingtimes.md) |[meetingTimeSuggestionsResult](meetingtimesuggestionsresult.md) |Sugira horários e locais para a reunião com base no organizador e na disponibilidade dos participantes, além de restrições de horário ou local. |
 |[Criar uma propriedade estendida de valor único](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[calendar](calendar.md)  |Criar uma ou mais propriedades estendidas de valor único em um calendário novo ou existente.   |
 |[Obter calendário com propriedade estendida de valor único](../api/singlevaluelegacyextendedproperty-get.md)  | [calendar](calendar.md) | Obter calendários que contenham uma propriedade estendida de valor único usando `$expand` ou `$filter`. |
 |[Criar propriedade estendida de vários valores](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [calendar](calendar.md) | Criar uma ou mais propriedades estendidas de vários valores em um calendário novo ou existente.  |
@@ -47,7 +48,7 @@ Um calendário que é um contêiner para eventos. Pode ser um calendário para u
 |canViewPrivateItems |Boolean |Verdadeira se o usuário pode ler itens do calendário que foram marcados como particulares, falsa caso contrário. |
 |changeKey|String|Identifica a versão do objeto calendar. Toda vez que o calendário é alterado, a changeKey também muda. Isso permite que o Exchange aplique as alterações na versão correta do objeto. Somente leitura.|
 |color|calendarColor|Especifica o tema de cores para distinguir o calendário de outros calendários em uma interface do usuário. Os valores de propriedade são: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1|
-|id|Cadeia de caracteres|O identificador exclusivo do grupo. Somente leitura.|
+|id|String|O identificador exclusivo do grupo. Somente leitura.|
 |name|String|O nome do calendário.|
 |owner |[emailAddress](emailaddress.md) | Se definida, representa o usuário que criou ou adicionou o calendário. Para um calendário que o usuário criou ou adicionou, a propriedade **owner** é definida para o usuário. Para um calendário compartilhado com o usuário, a propriedade **owner** é definida para a pessoa que compartilhou o calendário com o usuário. |
 
