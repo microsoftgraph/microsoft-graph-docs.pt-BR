@@ -49,16 +49,16 @@ items:
             href: /graph/extensibility-open-users?toc=./ref/toc.json
           - name: Usar extensões de esquema (exemplo)
             href: /graph/extensibility-schema-groups?toc=./ref/toc.json
-      - name: Recursos
-        items:
-          - name: Práticas recomendadas
-            href: /graph/best-practices-concept?toc=./ref/toc.json
-          - name: Problemas conhecidos
-            href: /graph/known-issues?toc=./ref/toc.json
-          - name: Log de mudanças
-            href: /graph/changelog?toc=./ref/toc.json
-          - name: Erros
-            href: /graph/errors?toc=./ref/toc.json
+  - name: Recursos
+    items:
+      - name: Práticas recomendadas
+        href: /graph/best-practices-concept?toc=./ref/toc.json
+      - name: Problemas conhecidos
+        href: /graph/known-issues?toc=./ref/toc.json
+      - name: Log de mudanças
+        href: /graph/changelog?toc=./ref/toc.json
+      - name: Erros
+        href: /graph/errors?toc=./ref/toc.json
   - name: Referência
     href: overview.md
     expanded: true
