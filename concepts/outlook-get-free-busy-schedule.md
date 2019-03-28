@@ -1,21 +1,21 @@
 ---
-title: Obtenha a agenda de horários livres/ocupados de usuários e recursos (visualização)
+title: Obter agenda de disponibilidade de usuários e recursos
 description: Em uma configuração de escola ou trabalho, um cenário comum é ver quando um usuário está livre para um reunião, ou então pesquisar a disponibilidade de uma equipe, sala ou equipamento para um período de tempo.
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: b2ed37055beb344c254e6715777b430baeceebf5
-ms.sourcegitcommit: 081cacecb4960aabc9e1011d12f06fe9ecf7d188
+ms.openlocfilehash: 8ecf31ec74327d4f5fbd9d585eef24fcaec60709
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30657383"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869194"
 ---
-# <a name="get-freebusy-schedule-of-users-and-resources-preview"></a>Obtenha a agenda de horários livres/ocupados de usuários e recursos (visualização)
+# <a name="get-freebusy-schedule-of-users-and-resources"></a>Obter agenda de disponibilidade de usuários e recursos
 
 Em uma configuração de escola ou trabalho, um cenário comum é ver quando um usuário está livre para um reunião, ou então pesquisar a disponibilidade de uma equipe, sala ou equipamento para um período de tempo.
 
-A ação [getSchedule](/graph/api/calendar-getschedule?view=graph-rest-beta) permite que você obtenha as informações de disponibilidade de uma ou mais entidades (usuários, listas de distribuição ou recursos) para um período específico de tempo. 
+A ação [getSchedule](/graph/api/calendar-getschedule?view=graph-rest-1.0) permite que você obtenha as informações de disponibilidade de uma ou mais entidades (usuários, listas de distribuição ou recursos) para um período específico de tempo. 
 
 ## <a name="example"></a>Exemplo
 
@@ -26,7 +26,7 @@ Um exemplo simples é encontrar a agenda de horários livres/ocupados de um cole
   "name": "calendar_getSchedule_concept"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/calendar/getschedule 
+POST https://graph.microsoft.com/v1.0/me/calendar/getschedule 
 Prefer: outlook.timezone="Pacific Standard Time"
 Content-Type: application/json
 
@@ -57,14 +57,13 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.scheduleInformation)",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.scheduleInformation)",
     "value":[
         {
             "scheduleId":"AlexW@contoso.OnMicrosoft.com",
             "availabilityView":"111111002222222200000000000000000000",
             "scheduleItems":[
                 {
-                    "isPrivate":false,
                     "status":"Tentative",
                     "start":{
                         "dateTime":"2018-08-06T09:00:00.0000000",
@@ -76,7 +75,6 @@ Content-type: application/json
                     }
                 },
                 {
-                    "isPrivate":false,
                     "status":"Busy",
                     "start":{
                         "dateTime":"2018-08-06T11:00:00.0000000",
@@ -135,7 +133,7 @@ Além da disponibilidade da agenda e das horas de trabalho do Alex, **getSchedul
 
 Por padrão, a duração de cada intervalo de tempo é de 30 minutos. Este exemplo usa a propriedade **availabilityViewInterval** para personalizar o intervalo de tempo para 15 minutos.
 
-## <a name="how-is-getschedule-different-from-findmeetingtimes"></a>Como getSchedule difere de findMeetingTimes
+## <a name="how-does-getschedule-compare-with-findmeetingtimes"></a>Como o getSchedule se compara ao findMeetingTimes
 
 A ação [findMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-1.0) é semelhante a **getSchedule** pelo fato de que as duas leem o status de disponibilidade e as horas de trabalho de usuários e recursos específicos. As duas ações são diferentes de algumas maneiras principais.
 
@@ -149,7 +147,7 @@ A ação [findMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-1.0
 
 É apropriada para cenários que dependem de [simplificação de reservas de compromissos](findmeetingtimes-example.md).
 
-**getSchedule** simplesmente retorna o status de disponibilidade dos eventos existentes em cada calendário solicitado para um determinado período de tempo, e supõe que o tempo restante daquele período de tempo seja livre. Você deve aplicar mais lógica de negócios para fazer uso desses dados para completar seu cenário.
+O **getSchedule** simplesmente retorna o status de disponibilidade dos eventos existentes em cada calendário solicitado por um determinado período de tempo e supõe que o tempo restante daquele período de tempo esteja livre. Você deve aplicar mais lógica de negócios para fazer uso desses dados para completar seu cenário.
 
 ### <a name="app-only-support"></a>Suporte somente aplicativo
 
@@ -157,23 +155,29 @@ A ação [findMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-1.0
 
 **getSchedule** é compatível com o cenários delegados e somente aplicativo. No último, o administrador consente que o aplicativo acesse todos os calendários sem um usuário conectado.
 
+### <a name="permissions"></a>Permissões
+A permissão menos privilegiada exigida pelo **findmeetingtimes**é Calendars.Read.Shared.
+
+A permissão menos privilegiada exigida pelo **getSchedule** é Calendar.Read. 
 
 ### <a name="version-support"></a>Suporte para versões
 
-**findmeetingtimes** geralmente é disponibilizado para todos os aplicativos. 
-
-**getSchedule** está disponível atualmente [no status de visualização](versioning-and-support.md#beta-version), e portanto não é apropriado para uso em aplicativos de produção.
+O **findmeetingtimes** e o **getSchedule** estão geralmente disponíveis e adequados para uso em aplicativos de produção.
 
 
-## <a name="permissions"></a>Permissions
-A permissão menos privilegiada que você necessita para obter informações de disponibilidade é Calendar.Read. Dependendo do cenário do aplicativo, esse consentimento pode vir do usuário conectado ou do administrador.
-Além do status de disponibilidade e do horário de trabalho das entidades solicitadas, **getSchedule** também pode retornar o assunto e o local de um evento, contanto que:
+## <a name="event-data-returned"></a>Dados de evento retornados
+A permissão menos privilegiada exigida pelo **getSchedule** para um aplicativo para obter informações de disponibilidade é Calendar.Read. Dependendo do cenário do aplicativo, este consentimento pode vir do usuário conectado ou do administrador.
 
-- Se o evento estiver marcado com nível de confidencialidade baixa – `normal` ou `personal` E uma ou mais das seguintes condições serão aplicados:
+Embora a permissão consentida permite com que um aplicativo use o **getSchedule** nos calendários dos usuários solicitados pelo Outlook, o usuário solicitado controla quais dados de evento, caso existam, o **getSchedule** retornará. 
 
-- As configurações de calendário do usuário solicitado permitem que todos os usuários da organização visualizem títulos e locais
-- O calendário do usuário solicitado é compartilhado com o usuário conectado
-- O usuário conectado é um administrador da mesma organização que o usuário solicitado.
+Por exemplo, o **getSchedule** pode retornar o status de disponibilidade e as horas de trabalho dos usuários solicitados ou também retornar as propriedades **subject**, **location**, e **isPrivate** de um evento, desde que:
+
+- O evento esteja marcado com um nível de confidencialidade baixo - `normal` ou `personal`- E uma ou mais das seguintes condições se aplicam:
+
+   - As configurações de calendário do usuário solicitado permitem com que o usuário conectado veja as linhas de assunto e localizações
+   - O calendário do usuário solicitado é compartilhado com o usuário conectado
+
+Estas condições se aplicam independentemente se o usuário conectado é um administrador na organização. O usuário solicitado tem controle sobre os dados de eventos retornados.
 
 ## <a name="time-zone-representation"></a>Representação de fuso horário
 Por padrão, as horas de início e de término de itens de agenda retornado são representados em UTC. Você pode usar um `Prefer` cabeçalho para especificar um fuso horário apropriado para o aplicativo. Como exemplo: 
@@ -187,6 +191,7 @@ Fique atento para os seguintes limites e condições de erro:
 - **getSchedule** pode dar suporte procurando informações sobre disponibilidade para até 20 entidades ao mesmo tempo. Este limite se aplica ao número de usuários identificados individualmente ou como membros de uma lista de distribuição, e também ao número de recursos.
 - O período de tempo para pesquisar deve ser menor que 42 dias.
 - Se **getSchedule** não puder identificar um usuário ou um recurso especificados, ela retornará um item de agenda único e indicará o erro 
+
 
 ## <a name="see-also"></a>Confira também
 - [Referência de permissões](permissions-reference.md#calendars-permissions)

@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: b601d4daaac49bec565cef11cfb5b365fed0ac31
-ms.sourcegitcommit: 3410e1b8dcf62a7b0e4d6b11920912479f21feb2
+ms.openlocfilehash: 8dce60410efda7f8ea5ad15fe462b447b5c11eb5
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30800023"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869229"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -25,6 +25,12 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | Adição | v1.0 | Adicione as propriedades **passwordNotificationWindowInDays** e **passwordValidityPeriodInDays** ao recurso do [domínio](/graph/api/resources/domain?view=graph-rest-1.0).|
 | Adição | beta e v1.0 | Adicione as propriedades **complianceExpirationDateTime**, **profileType** e **systemLabels** ao recurso do [dispositivo](/graph/api/resources/device?view=graph-rest-1.0).|
 | Adição | beta e v1.0 | Adicione a propriedade **isResourceAccount** ao recurso do [usuário](/graph/api/resources/user?view=graph-rest-1.0).|
+
+### <a name="dynamics-365-business-central-api"></a>API Central do Dynamics 365 Business
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição        | Beta          | Adicionadas APIs financeiras para o Dynamics 365 Business Central. Para saber mais, confira o [Referência da API de finanças](/graph/api/resources/dynamics-graph-reference?view=graph-rest-v1.0).|
 
 ### <a name="education-apis"></a>APIs de educação
 
@@ -74,21 +80,15 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Adição        | v1.0        | Foi adicionada a propriedade de navegação **subscriptions** à entidade [driveItem](/graph/api/resources/driveItem?view=graph-rest-1.0) |
+| Adição        | Beta        | Foi adicionada a propriedade **expirationDateTime** ao tipo DatetimeOffset [driveItem_invite](/graph/api/resources/driveItem_invite?view=graph-rest-beta). |
+| Adição        | Beta        | Foi adicionada a propriedade **password** ao tipo de cadeia de caracteres [driveItem_invite](/graph/api/resources/driveItem_invite?view=graph-rest-beta). |
 
-## <a name="february-2019"></a>Fevereiro de 2019
-
-### <a name="dynamics-365-business-central-api"></a>API Central do Dynamics 365 Business
+### <a name="outlook-calendar"></a>Calendário do Outlook
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição        | Beta          | Adicionadas APIs financeiras para o Dynamics 365 Business Central. Para saber mais, confira o [Referência da API de finanças](/graph/api/resources/dynamics-graph-reference?view=graph-rest-v1.0).|
+| Adição | v1.0 | Os tipos complexos [getSchedule](/graph/api/calendar-getschedule?view=graph-rest-1.0) ação e o [freeBusyError](/graph/api/resources/freebusyerror?view=graph-rest-1.0), [scheduleInformation](/graph/api/resources/scheduleinformation?view=graph-rest-1.0), e [scheduleItem](/graph/api/resources/scheduleitem?view=graph-rest-1.0) foram adicionados para oferecer suporte [obter informações de disponibilidade, informações de disponibilidade para listas de distribuição, usuários e recursos em um determinado período de tempo](outlook-get-free-busy-schedule.md). |
 
-### <a name="onedrive-and-sharepoint-apis"></a>APIs do OneDrive e SharePoint
-
-| **Tipo de alteração** | **Versão** | **Descrição**                          |
-| :-------------- | :---------- | :--------------------------------------- |
-| Adição        | Beta        | Foi adicionada a propriedade **expirationDateTime** ao tipo DatetimeOffset [driveItem_invite](/graph/api/resources/driveItem_invite?view=graph-rest-beta). |
-| Adição        | Beta        | Foi adicionada a propriedade **password** ao tipo de cadeia de caracteres [driveItem_invite](/graph/api/resources/driveItem_invite?view=graph-rest-beta). |
 
 ## <a name="february-2019"></a>Fevereiro de 2019
 
