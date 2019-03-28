@@ -2,16 +2,18 @@
 title: Tipo de recurso timeSlot
 description: Um período de tempo.
 localization_priority: Normal
-ms.openlocfilehash: e01b8d0f34a21eb18bc92e8bcc4e1b8365541d5c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 7b09ae7f1c60a8348e9f22b856c65f326432e408
+ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860561"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936238"
 ---
 # <a name="timeslot-resource-type"></a>Tipo de recurso timeSlot
 
-Um período de tempo.
+Representa um intervalo de tempo para uma reunião.
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -35,8 +37,8 @@ Veja a seguir uma representação JSON do recurso
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|end|[dateTimeTimeZone](datetimetimezone.md)|A hora em que um período inicia.|
-|iniciar|[dateTimeTimeZone](datetimetimezone.md)|A hora em que um período termina.|
+|end|[dateTimeTimeZone](datetimetimezone.md)|A data, a hora e o fuso horário em que um período começa. |
+|iniciar|[dateTimeTimeZone](datetimetimezone.md)|A data, a hora e o fuso horário que um período termina.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

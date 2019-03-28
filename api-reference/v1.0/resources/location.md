@@ -2,12 +2,14 @@
 title: Tipo de recurso Location
 description: Representa informações de localização para um evento.
 localization_priority: Normal
-ms.openlocfilehash: 553634aec386798ac17e00b83883c54a99c0f9ca
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: a18dbcbe4228fee0363a13fe89f452703732077a
+ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879797"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936273"
 ---
 # <a name="location-resource-type"></a>Tipo de recurso Location
 
@@ -27,11 +29,11 @@ Dependendo de como um evento é criado, o Outlook pode definir a propriedade **l
 |:----------|:-------|:----------------------------------------------------------------|
 | address | [physicalAddress](physicaladdress.md) |O endereço físico do local. |
 | coordenadas | [outlookGeoCoordinates](outlookgeocoordinates.md) | As coordenadas geográficas e a elevação do local. |
-| displayName  | Cadeia de caracteres | O nome associado ao local.                       |
+| displayName  | String | O nome associado ao local.                       |
 | locationEmailAddress | Cadeia de caracteres | O endereço de email opcional do local.              |
-| locationUri | Cadeia de caracteres | URI opcional que representa o local. |
+| locationUri | String | URI opcional que representa o local. |
 | locationType | locationType | O tipo de local. Os valores possíveis são: `default`, `conferenceRoom`, `homeAddress`, `businessAddress`,`geoCoordinates`, `streetAddress`, `hotel`, `restaurant`, `localBusiness`, `postalAddress`. Somente leitura.|
-| uniqueId | Cadeia de caracteres | Apenas para uso interno.|
+| uniqueId | String | Apenas para uso interno.|
 | uniqueIdType | locationUniqueIdType | Apenas para uso interno. |
 
 ## <a name="json-representation"></a>Representação JSON

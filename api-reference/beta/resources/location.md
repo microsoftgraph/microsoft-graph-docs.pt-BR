@@ -2,12 +2,14 @@
 title: Tipo de recurso Location
 description: Representa informações de localização para um evento.
 localization_priority: Normal
-ms.openlocfilehash: 6e3c61bcf8f22a20bf41053c2310dc51f5b800a7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 6c3dd1bdb565ce32e464e38d7909988b4f4c7791
+ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508605"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936280"
 ---
 # <a name="location-resource-type"></a>Tipo de recurso Location
 
@@ -28,14 +30,14 @@ Dependendo de como um evento é criado, o Outlook pode definir a propriedade **l
 
 
 ## <a name="properties"></a>Propriedades
-| Propriedade	  | Tipo   | Descrição                                                     |
+| Propriedade  | Tipo   | Descrição                                                     |
 |:----------|:-------|:----------------------------------------------------------------|
 | address | [physicalAddress](physicaladdress.md) |O endereço físico do local. |
 | coordenadas | [outlookGeoCoordinates](outlookgeocoordinates.md) | As coordenadas geográficas e a elevação do local. |
 | displayName  | String | O nome associado ao local.                       |
-| locationEmailAddress | String | O endereço de email opcional do local. |
+| locationEmailAddress | Cadeia de caracteres | O endereço de email opcional do local. |
 | locationUri | String | URI opcional que representa o local. |
-| locationType | String | O tipo de local. Os valores possíveis são: `default`, `conferenceRoom`, `homeAddress`, `businessAddress`,`geoCoordinates`, `streetAddress`, `hotel`, `restaurant`, `localBusiness`, `postalAddress`. Somente leitura.|
+| locationType | locationType | O tipo de local. Os valores possíveis são: `default`, `conferenceRoom`, `homeAddress`, `businessAddress`,`geoCoordinates`, `streetAddress`, `hotel`, `restaurant`, `localBusiness`, `postalAddress`. Somente leitura.|
 | uniqueId | String | Apenas para uso interno.|
 | uniqueIdType | String | Apenas para uso interno. |
 
@@ -55,8 +57,8 @@ Dependendo de como um evento é criado, o Outlook pode definir a propriedade **l
   "coordinates": {"@odata.type": "microsoft.graph.outlookGeoCoordinates"},
   "displayName": "string",
   "locationEmailAddress": "string",
-  "locationUri": "string",
   "locationType": "string",
+  "locationUri": "string",
   "uniqueId": "string",
   "uniqueIdType": "string"
 }

@@ -2,14 +2,14 @@
 title: Tipo de recurso meetingTimeSuggestionsResult
 description: Uma coleção de sugestões de reunião, se houver alguma, ou se não houver motivo.
 localization_priority: Normal
-author: VinodRavichandran
-ms.prod: microsoft-teams
-ms.openlocfilehash: ed3af37ba48a48f3bc864dc8d9ad67e729999398
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 3f4aa23e582ead2fc51b9091159e158373be1cd1
+ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27914182"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936266"
 ---
 # <a name="meetingtimesuggestionsresult-resource-type"></a>Tipo de recurso meetingTimeSuggestionsResult
 
@@ -19,11 +19,11 @@ A seguir estão os possíveis motivos que [findMeetingTimes](../api/user-findmee
 
 |**valor de emptySuggestionsReason**|**Motivos**|
 |:-----|:-----|
-| attendeesUnavailable | A disponibilidade de todos os participantes é conhecida, mas não há participantes suficientes disponíveis para alcançar o limite de [confiança da reunião](../api/user-findmeetingtimes.md#the-confidence-of-a-meeting-suggestion), que é de 50% por padrão, para qualquer período de tempo.|
+| attendeesUnavailable | A disponibilidade de todos os participantes é conhecida, mas não há participantes suficientes disponíveis para alcançar o limite de [confiança da reunião](../api/user-findmeetingtimes.md#the-confidence-of-a-meeting-suggestion) , que é de 50% por padrão, para qualquer período de tempo.|
 | attendeesUnavailableOrUnknown | Alguns ou todos os participantes têm disponibilidade desconhecida, fazendo com que a confiança na reunião caia para abaixo o limite definido, que é de 50% por padrão. A disponibilidade do participante poderá se tornar desconhecida se ele não for da organização ou se houver um erro ao obter informações sobre a disponibilidade.|
 | locationsUnavailable | A propriedade **isRequired** do parâmetro [locationConstraint](locationconstraint.md) é especificada como obrigatória, e ainda não existem locais disponíveis nos intervalos de tempo calculados. |
 | organizerUnavailable | O parâmetro **isOrganizerOptional** é falso, e o organizador não está disponível durante a janela de tempo solicitada. |
-| unknown | O motivo para não retornar qualquer sugestão de reunião não é conhecido.|
+| desconhecido | O motivo para não retornar qualquer sugestão de reunião não é conhecido.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -47,8 +47,8 @@ Veja a seguir uma representação JSON do recurso
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|emptySuggestionsReason|String|Um motivo para não retornando alguma sugestão de reunião. Os valores possíveis são: `attendeesUnavailable`, `attendeesUnavailableOrUnknown`, `locationsUnavailable`, `organizerUnavailable`, ou `unknown`. Essa propriedade será uma sequência vazia se a propriedade **meetingTimeSuggestions** incluir quaisquer sugestões de reunião.|
-|meetingTimeSuggestions|[meetingTimeSuggestion](meetingtimesuggestion.md) collection|Uma matriz de sugestões de reunião.|
+|emptySuggestionsReason|Cadeia de caracteres|Um motivo para não retornar qualquer sugestão de reunião. Os valores possíveis são: `attendeesUnavailable`, `attendeesUnavailableOrUnknown`, `locationsUnavailable`, `organizerUnavailable`, ou `unknown`. Esta propriedade é uma cadeia de caracteres vazia se a propriedade **meetingTimeSuggestions** inclui qualquer sugestão de reunião.|
+|meetingTimeSuggestions|Coleção [meetingTimeSuggestion](meetingtimesuggestion.md)|Uma matriz de sugestões de reunião.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

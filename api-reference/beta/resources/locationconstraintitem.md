@@ -4,12 +4,12 @@ description: As condições indicadas por um cliente para o local de uma reuniã
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 8e0b14096d8be66a6aab6d4e73cf0941d7db7b5c
-ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
+ms.openlocfilehash: 7063eb0a7aa437b51a2bfecb482012771297f766
+ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "30056998"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936252"
 ---
 # <a name="locationconstraintitem-resource-type"></a>Tipo de recurso locationConstraintItem
 
@@ -17,7 +17,7 @@ ms.locfileid: "30056998"
 
 As condições indicadas por um cliente para o local de uma reunião.
 
-Derivado de [locationDataModel](locationdatamodel.md).
+Derivado de [location](location.md).
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -38,7 +38,10 @@ Veja a seguir uma representação JSON do recurso
   "coordinates": {"@odata.type": "microsoft.graph.outlookGeoCoordinates"},
   "displayName": "string",
   "locationEmailAddress": "string",
-  "locationUri": "string"
+  "locationType": "string",
+  "locationUri": "string",
+  "uniqueId": "string",
+  "uniqueIdType": "string"
 }
 
 ```
@@ -48,9 +51,12 @@ Veja a seguir uma representação JSON do recurso
 | address | [physicalAddress](physicaladdress.md) |O endereço físico do local. |
 | coordenadas | [outlookGeoCoordinates](outlookgeocoordinates.md) | As coordenadas geográficas e a elevação do local. |
 | displayName  | String | O nome associado ao local.                       |
-| locationEmailAddress | String | O endereço de email opcional do local. |
+| locationEmailAddress | Cadeia de caracteres | O endereço de email opcional do local. |
+| locationType | locationType | O tipo de local. Os valores possíveis são: `default`, `conferenceRoom`, `homeAddress`, `businessAddress`,`geoCoordinates`, `streetAddress`, `hotel`, `restaurant`, `localBusiness`, `postalAddress`. Somente leitura.|
 | locationUri | String | URI opcional que representa o local. |
-| resolveAvailability | Boolean | Se definido como true e o recurso especificado está ocupado, [findMeetingTimes](../api/user-findmeetingtimes.md) procura outro recurso livre. Se definido como false e o recurso especificado está ocupado, **findMeetingTimes** retorna o recurso melhor classificado no cache do usuário sem verificar se ele está livre. O padrão é true. |
+| resolveAvailability | Booliano | Se definido como true e o recurso especificado está ocupado, [findMeetingTimes](../api/user-findmeetingtimes.md) procura outro recurso livre. Se definido como false e o recurso especificado está ocupado, **findMeetingTimes** retorna o recurso melhor classificado no cache do usuário sem verificar se ele está livre. O padrão é true. |
+| uniqueId | String | Apenas para uso interno.|
+| uniqueIdType | String | Apenas para uso interno. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

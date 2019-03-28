@@ -1,12 +1,12 @@
 ---
 title: Valores de enumeração
 description: Valores de enumeração do Microsoft Graph
-ms.openlocfilehash: 0e748b53d1b89a20e3973ec35aaf53e02d6a3428
-ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
+ms.openlocfilehash: 2f8bd0065136077cda2228cbec1c2d34d546c7d1
+ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "30057047"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936322"
 ---
 ### <a name="contactrelationship-values"></a>valores de contactRelationship
 
@@ -29,18 +29,6 @@ ms.locfileid: "30057047"
 | IANA
 
 
-### <a name="availabilitystatus-values"></a>valores de availabilityStatus
-
-| Valor
-|:-------------------------
-| unknown
-| macro
-| provisória
-| Atualmente
-| temporária  
-| workingElsewhere
-
-
 ### <a name="freebusystatus-values"></a>valores de freeBusyStatus
 
 | Membro            |Valor
@@ -50,24 +38,14 @@ ms.locfileid: "30057047"
 | Atualmente              | duas
 | temporária               | 3D
 | workingElsewhere  | quatro
-| unknown           | -1
-
-
-### <a name="addresstype-values"></a>valores AddressType
-
-| Valor
-|:-------------------------
-| unknown 
-| Casa
-| Business 
-| outro
+| desconhecido           | -1
 
 
 ### <a name="physicaladdresstype-values"></a>valores de physicalAddressType
 
 | Valor
 |:-------------------------
-| unknown 
+| desconhecido 
 | Casa
 | Business 
 | outro
@@ -86,7 +64,7 @@ ms.locfileid: "30057047"
 
 | Valor
 |:-------------------------
-| none
+| nenhuma
 | contactsOnly
 | todos os
 
@@ -194,7 +172,7 @@ ms.locfileid: "30057047"
 |:---------------------
 | student
 | teacher
-| none
+| nenhuma
 | unknownFutureValue
 
 
@@ -202,7 +180,7 @@ ms.locfileid: "30057047"
 
 | Valor
 |:-----------------
-| none
+| nenhuma
 | meetingRequest
 | meetingCancelled
 | meetingAccepted
@@ -234,13 +212,13 @@ ms.locfileid: "30057047"
 | deviceDefault
 | Bandeira
 | JanelaRestrita
-| none
+| nenhuma
 
 ### <a name="deviceenrollmentfailurereason-values"></a>valores de deviceEnrollmentFailureReason
 
 | Valor
 |:-------------
-| unknown
+| desconhecido
 | autentica
 | nesse
 | accountValidation
@@ -273,13 +251,13 @@ ms.locfileid: "30057047"
 | diárias
 | restaurantes
 | localBusiness
-| Address
+| postalAddress
 
 ### <a name="locationuniqueidtype-values"></a>valores de locationUniqueIdType
 
 | Valor
 |:-------------------------
-| unknown
+| desconhecido
 | locationStore
 | Directory
 | privada
@@ -295,10 +273,10 @@ ms.locfileid: "30057047"
 | doNotForward
 | Acompanhamento
 | conhecimento
-| encaminhar
+| direta
 | noResponseNecessary
 | Saiba
-| responder
+| resposta
 | replyToAll
 | exame
 
@@ -327,8 +305,8 @@ ms.locfileid: "30057047"
 
 | Valor
 |:-------------------------
-| Replace
-| Acréscimo
+| Substituir
+| Append
 | Excluir
 | Insert
 | Preceder
@@ -363,9 +341,9 @@ ms.locfileid: "30057047"
 |:-------------------------
 | Automático
 | noPreview
-| lista de verificação
-| description
-| reference
+| verificação
+| descrição
+| de referência
 
 
 ### <a name="status-values"></a>valores de status
@@ -426,7 +404,7 @@ ms.locfileid: "30057047"
 ### <a name="onenotesourceservice-values"></a>valores de onenoteSourceService
 | Valor
 |:---------------------
-| Desconhecida
+| Desconhecido
 | OneDrive
 | OneDriveForBusiness
 | OnPremOneDriveForBusiness
@@ -436,7 +414,7 @@ ms.locfileid: "30057047"
 
 | Valor
 |:-------------------------
-| none
+| nenhuma
 | organizer
 | tentativelyAccepted
 | aceito
@@ -448,7 +426,7 @@ ms.locfileid: "30057047"
 
 | Valor
 |:-------------------------
-| unknown
+| desconhecido
 | trabalho
 | pessoal
 | irrestrito
@@ -461,7 +439,7 @@ ms.locfileid: "30057047"
 | outro
 | Casa
 | trabalho
-| escrever
+| blog
 | profile
 
 
@@ -469,7 +447,7 @@ ms.locfileid: "30057047"
 
 | Membro   |Valor    
 |:---------|:--------
-| none     | -1      
+| nenhuma     | -1      
 | preset0  | ,0       
 | preset1  | 1       
 | preset2  | duas       
@@ -502,7 +480,7 @@ Possíveis valores de comentários no alerta fornecido por um analista.
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|unknown|,0|Unknown.|
+|desconhecido|,0|Unknown.|
 |truePositive|1|O alerta é verdadeiro e positivo.|
 |falsePositive|duas| O alerta é falso positivo.|
 |benignPositive|3D| O alerta é benigno-positivo.|
@@ -511,7 +489,7 @@ Possíveis valores de comentários no alerta fornecido por um analista.
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|unknown|,0|Tipo desconhecido.|
+|desconhecido|,0|Tipo desconhecido.|
 |SHA1|1|Tipo de hash SHA1.|
 |SHA256|duas| Tipo de hash SHA256.|
 |MD5|3D| Tipo de hash MD5.|
@@ -525,7 +503,7 @@ Possíveis valores de comentários no alerta fornecido por um analista.
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|unknown|,0|Conexão desconhecida.|
+|desconhecido|,0|Conexão desconhecida.|
 |entrada|1|Conexão de entrada.|
 |saída|duas| Conexão de saída.|
 
@@ -533,7 +511,7 @@ Possíveis valores de comentários no alerta fornecido por um analista.
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|unknown|,0|Status de conexão desconhecido.|
+|desconhecido|,0|Status de conexão desconhecido.|
 |tentou|1|Tentativa de conexão.|
 |adicionada|duas| Conexão bem-sucedida.|
 |bloqueou|3D| Conexão bloqueada.|
@@ -543,7 +521,7 @@ Possíveis valores de comentários no alerta fornecido por um analista.
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|unknown|,0|Unknown.|
+|desconhecido|,0|Unknown.|
 |não confiáveis|254|O nível de integridade é não confiável.|
 |low|508| O nível de integridade é baixo.|
 |medium|até| O nível de integridade é médio.|
@@ -556,7 +534,7 @@ Enumeração para hives do registro, conforme [https://docs.microsoft.com/en-us/
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|unknown|,0|Hive desconhecido.|
+|desconhecido|,0|Hive desconhecido.|
 |currentConfig|1|Hive HKEY_CURRENT_CONFIG.|
 |currentUser|duas| Hive HKEY_CURRENT_USER.|
 |localMachineSam|3D| Hive HKEY_LOCAL_MACHINE\SAM.|
@@ -570,7 +548,7 @@ Operação que alterou o nome da chave do registro e/ou o valor.
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|unknown|,0|Tipo de valor de registro desconhecido.|
+|desconhecido|,0|Tipo de valor de registro desconhecido.|
 |create|1|Criar registro.|
 |modifica|duas|Modificar o registro.|
 |delete|3D|Excluir registro.|
@@ -581,7 +559,7 @@ Enumeração para tipos de valor do registro conforme [https://docs.microsoft.co
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|unknown|,0|Tipo de valor de registro desconhecido.|
+|desconhecido|,0|Tipo de valor de registro desconhecido.|
 |binário|1|Tipo de valor de registro REG_BINARY.|
 |últimas|duas| Tipo de valor do registro REG_DWORD.|
 |dwordLittleEndian|3D| Tipo de valor do registro REG_DWORD_LITTLE_ENDIAN.|
@@ -589,7 +567,7 @@ Enumeração para tipos de valor do registro conforme [https://docs.microsoft.co
 |expandSz|0,5| Tipo de valor do registro REG_EXPAND_SZ.|
 |vínculo|6| Tipo de valor do registro REG_LINK.|
 |multiSz|178| Tipo de valor de registro REG_MULTI_SZ.|
-|none|8| Tipo de valor do registro REG_NONE.|
+|nenhuma|8| Tipo de valor do registro REG_NONE.|
 |QWORD|241| Tipo de valor do registro REG_QWORD.|
 |qwordlittleEndian|254| Tipo de valor do registro REG_QWORD_LITTLE_ENDIAN.|
 |v|11| Tipo de valor do registro REG_SZ.|
@@ -600,7 +578,7 @@ Enumeração para gravidade de alertas.
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|unknown|,0|A severidade é desconhecida.|
+|desconhecido|,0|A severidade é desconhecida.|
 |informativa|1|A severidade só é para informações.|
 |low|duas| A severidade é baixa.|
 |medium|3D| A severidade é média.|
@@ -612,7 +590,7 @@ Valores possíveis de um status de ciclo de vida de alerta (estágio).
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|unknown|,0|Status desconhecido.|
+|desconhecido|,0|Status desconhecido.|
 |newAlert|254| O alerta é novo.|
 |inProgress|508|O alerta está em andamento.|
 |Obtido|até|O alerta foi resolvido.|
@@ -623,9 +601,9 @@ Valores possíveis para funções de email.
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|unknown|,0|Função desconhecida.|
-|sender|1|Remetente do email.|
-|recipient|duas|Destinatário do email.|
+|desconhecido|,0|Função desconhecida.|
+|remetente|1|Remetente do email.|
+|destinatário|duas|Destinatário do email.|
 
 ### <a name="logontype-values"></a>valores de Logontype
 
@@ -633,7 +611,7 @@ Valores possíveis para o método de User Sign.
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|unknown|-1|Unknown.|
+|desconhecido|-1|Unknown.|
 |interativa|,0|O logon é interativo.|
 |remoteInteractive|1| O logon é interativo remoto.|
 |rede|duas| O logon é rede.|
@@ -646,7 +624,7 @@ Valores possíveis para tipos de contas de usuário (Associação de grupo), por
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|unknown|-1|Unknown.|
+|desconhecido|-1|Unknown.|
 |caracteres|,0|Membro do grupo de usuários padrão.|
 |força|1| Membro do grupo de usuários avançados.|
 |administrador|duas| Membro do grupo Administradores.|

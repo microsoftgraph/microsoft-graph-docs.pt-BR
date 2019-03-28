@@ -1,17 +1,19 @@
 ---
 title: Tipo de recurso attendeeAvailability
-description: O tipo e a disponibilidade dos participantes.
+description: A disponibilidade de um participante.
 localization_priority: Normal
-ms.openlocfilehash: a6dee994fc5eb3786fc1a432adcb9333bdb56ec8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 63014553824b833e2e4cdfb03485fcb7962c01a0
+ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27834745"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936245"
 ---
 # <a name="attendeeavailability-resource-type"></a>Tipo de recurso attendeeAvailability
 
-O tipo e a disponibilidade dos participantes.
+A disponibilidade de um participante.
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -35,7 +37,7 @@ Veja a seguir uma representação JSON do recurso
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|attendee|[AttendeeBase](attendeebase.md)|O tipo de participante, ou seja, se é um recurso ou uma pessoa e, no caso de uma pessoa, se é obrigatório ou opcional.|
+|attendee|[attendeeBase](attendeebase.md)|O endereço de email e o tipo de participante, se é uma pessoa ou um recurso, e se é obrigatório ou opcional se for uma pessoa.|
 |availability|freeBusyStatus| O status de disponibilidade do participante. Os valores possíveis são: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
