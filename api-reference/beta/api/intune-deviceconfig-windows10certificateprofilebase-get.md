@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto windows10Certificate
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 968781a2a405e9abd01aec6e216c3058d946f3a3
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: a7a035564fac516d278933edbaac0ab91b63b50f
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30147352"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30981164"
 ---
 # <a name="get-windows10certificateprofilebase"></a>Obter windows10CertificateProfileBase
 
@@ -20,7 +20,7 @@ ms.locfileid: "30147352"
 Leia as propriedades e as relações do objeto [windows10CertificateProfileBase](../resources/intune-deviceconfig-windows10certificateprofilebase.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

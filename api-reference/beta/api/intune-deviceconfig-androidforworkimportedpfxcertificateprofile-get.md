@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto androidForWorkImport
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0fe2d2f2f034f215d21b53bb0316f90484145dd9
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: f0b89534ed1657cb86943330d139a683489f44f3
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30160106"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30982060"
 ---
 # <a name="get-androidforworkimportedpfxcertificateprofile"></a>Obter androidForWorkImportedPFXCertificateProfile
 
@@ -20,7 +20,7 @@ ms.locfileid: "30160106"
 Leia as propriedades e as relações do objeto [androidForWorkImportedPFXCertificateProfile](../resources/intune-deviceconfig-androidforworkimportedpfxcertificateprofile.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

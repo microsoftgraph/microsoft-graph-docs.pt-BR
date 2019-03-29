@@ -4,12 +4,12 @@ description: Criar um novo objeto dataSharingConsent.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7002b45e1847b63a8692dff6cd7e16b2b9b882c5
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 0bb20f6e6029e33483d28545bf3f9be56b052a8f
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30167106"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30978077"
 ---
 # <a name="create-datasharingconsent"></a>Criar dataSharingConsent
 
@@ -20,7 +20,7 @@ ms.locfileid: "30167106"
 Criar um novo objeto [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

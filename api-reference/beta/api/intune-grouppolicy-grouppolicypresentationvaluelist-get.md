@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto groupPolicyPresentat
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d8ad6f91e79ab242d9fb157a87f8484505b19415
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c585b8d62b3a27b12a951ba58629eaff626e0455
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30139393"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30976922"
 ---
 # <a name="get-grouppolicypresentationvaluelist"></a>Obter groupPolicyPresentationValueList
 
@@ -20,7 +20,7 @@ ms.locfileid: "30139393"
 Leia as propriedades e as relações do objeto [groupPolicyPresentationValueList](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

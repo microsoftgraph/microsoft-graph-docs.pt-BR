@@ -4,12 +4,12 @@ description: Atualizar as propriedades do objeto auditEvent.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 74941b4c660cc9363fe7c021c8aea46314f4a89e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: bdc8a9e13f231b1cf424ada6fbcdfaaacd722cc1
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30152434"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30981199"
 ---
 # <a name="update-auditevent"></a>Atualizar auditEvent
 
@@ -20,7 +20,7 @@ ms.locfileid: "30152434"
 Atualizar as propriedades do objeto [auditEvent](../resources/intune-auditing-auditevent.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -58,10 +58,10 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [auditEvent](../
 |activityDateTime|DateTimeOffset|A hora e data em UTC em que a atividade foi executada.|
 |activityType|String|O tipo de atividade que foi executada.|
 |activityOperationType|String|O tipo de operação HTTP da atividade.|
-|activityResult|String|O resultado da atividade.|
+|activityResult|Cadeia de caracteres|O resultado da atividade.|
 |correlationId|Guid|A ID da solicitação de cliente usada para correlacionar a atividade dentro do sistema.|
 |recursos|Coleção [auditResource](../resources/intune-auditing-auditresource.md)|Recursos em modificação.|
-|Ferramentas para desenvolvedores|Cadeia de caracteres|Categoria de auditoria.|
+|Ferramentas para desenvolvedores|String|Categoria de auditoria.|
 
 
 

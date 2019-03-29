@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto mobileAppIntentAndState.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cc6226237b1ebc8d080642b0cfe9bd6fd3f2b500
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 4edea2daac0bae36f3fe91d50912ea60cf909466
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30173329"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30980261"
 ---
 # <a name="update-mobileappintentandstate"></a>Atualizar mobileAppIntentAndState
 
@@ -20,7 +20,7 @@ ms.locfileid: "30173329"
 Atualiza as propriedades de um objeto [mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

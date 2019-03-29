@@ -4,12 +4,12 @@ description: Revogar todas as licenças VPP da Apple para um dispositivo
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 891332dbed24d2fbc578b6c369dd6286fc702481
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c4ae37ed84d5edf951eacd709f2b326379228b93
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30171789"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30981444"
 ---
 # <a name="revokeapplevpplicenses-action"></a>Ação revokeAppleVppLicenses
 
@@ -20,7 +20,7 @@ ms.locfileid: "30171789"
 Revogar todas as licenças VPP da Apple para um dispositivo
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

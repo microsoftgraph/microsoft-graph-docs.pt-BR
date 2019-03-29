@@ -4,12 +4,12 @@ description: Criar um novo objeto windowsInformationProtectionWipeAction.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 26a90166c82843ccb0584b8d720f053fe6378844
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 0481318000dab5e87cce072af846762312a9b847
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30158846"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30979169"
 ---
 # <a name="create-windowsinformationprotectionwipeaction"></a>Criar windowsInformationProtectionWipeAction
 
@@ -20,7 +20,7 @@ ms.locfileid: "30158846"
 Criar um novo objeto [windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

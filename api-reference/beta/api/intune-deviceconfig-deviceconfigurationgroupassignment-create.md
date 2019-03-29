@@ -4,12 +4,12 @@ description: Criar um novo objeto deviceConfigurationGroupAssignment.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 686439ac3dceee93e9053490132d29b241cf49ac
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 9dc2a7895e33c8d9ecf0b5bc0a47e202dfed0b69
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30142291"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30981738"
 ---
 # <a name="create-deviceconfigurationgroupassignment"></a>Criar deviceConfigurationGroupAssignment
 
@@ -20,7 +20,7 @@ ms.locfileid: "30142291"
 Criar um novo objeto [deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -60,7 +60,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceCo
 |:---|:---|:---|
 |id|String|Chave da entidade.|
 |targetGroupId|String|A ID do grupo do AAD no qual estamos direcionando a configuração do dispositivo.|
-|excludeGroup|Booliano|Indica se esse grupo deve ser excluído. Padrões que o grupo deve ser incluído|
+|excludeGroup|Boolean|Indica se esse grupo deve ser excluído. Padrões que o grupo deve ser incluído|
 
 
 

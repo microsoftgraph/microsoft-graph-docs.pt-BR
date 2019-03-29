@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto windowsInformationPr
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3ad6684e7e2b409ce16805ffb10ecddd919eb12c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ad145cccf75ffad4abf8a939306e178440118b49
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30158902"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30977566"
 ---
 # <a name="get-windowsinformationprotectionwipeaction"></a>Obter windowsInformationProtectionWipeAction
 
@@ -20,7 +20,7 @@ ms.locfileid: "30158902"
 Leia as propriedades e as relações do objeto [windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

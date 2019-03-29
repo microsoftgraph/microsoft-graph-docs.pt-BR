@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto windowsMobileMSI.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 50dd490721b4a0b635bc4183a86cb0f7e5dcaa48
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ef7ec5a755feeef49e6196001c22a23cb18e6a75
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30151629"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30981227"
 ---
 # <a name="get-windowsmobilemsi"></a>Acessar windowsMobileMSI
 
@@ -20,7 +20,7 @@ ms.locfileid: "30151629"
 Leia as propriedades e as relações do objeto [windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

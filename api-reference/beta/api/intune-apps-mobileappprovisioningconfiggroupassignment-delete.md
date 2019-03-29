@@ -4,12 +4,12 @@ description: Exclui mobileAppProvisioningConfigGroupAssignment.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5153c06f6418963922e08093b58c80e2391dc12d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 99c7f9f91bc826346ae1c1aa3b2b039cd3d28806
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30153596"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30980688"
 ---
 # <a name="delete-mobileappprovisioningconfiggroupassignment"></a>Excluir mobileAppProvisioningConfigGroupAssignment
 
@@ -20,7 +20,7 @@ ms.locfileid: "30153596"
 Exclui [mobileAppProvisioningConfigGroupAssignment](../resources/intune-apps-mobileappprovisioningconfiggroupassignment.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

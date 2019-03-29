@@ -4,12 +4,12 @@ description: Exclui appLogCollectionRequest.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7dce5823e1d0deb60166875a38fe38e2307aa039
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 83ed69b62329a848f82642ca4949b6fdd6f7d2f5
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30165209"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30981808"
 ---
 # <a name="delete-applogcollectionrequest"></a>Excluir appLogCollectionRequest
 
@@ -20,7 +20,7 @@ ms.locfileid: "30165209"
 Exclui [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

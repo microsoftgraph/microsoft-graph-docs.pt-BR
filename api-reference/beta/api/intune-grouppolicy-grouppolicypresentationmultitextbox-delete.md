@@ -4,12 +4,12 @@ description: Exclui groupPolicyPresentationMultiTextBox.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 00af60b92d80f1aca9fbfe507affff12e2fadc82
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ce59d54569771d81fd5a306e3bdf571ab85ea133
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30150495"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30981045"
 ---
 # <a name="delete-grouppolicypresentationmultitextbox"></a>Excluir groupPolicyPresentationMultiTextBox
 
@@ -20,7 +20,7 @@ ms.locfileid: "30150495"
 Exclui [groupPolicyPresentationMultiTextBox](../resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

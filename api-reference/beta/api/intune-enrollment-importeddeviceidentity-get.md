@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto importedDeviceIdenti
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8bac93ae04a5a8e7b2a0edb280a9c6ca79a09394
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b3a7907ac172bb710257322002648bf0946cbbcc
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30141045"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30981962"
 ---
 # <a name="get-importeddeviceidentity"></a>Obter importedDeviceIdentity
 
@@ -20,7 +20,7 @@ ms.locfileid: "30141045"
 Leia as propriedades e as relações do objeto [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

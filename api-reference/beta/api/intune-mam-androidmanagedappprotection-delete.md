@@ -1,15 +1,15 @@
 ---
 title: Excluir androidManagedAppProtection
-description: Excluir um androidManagedAppProtection.
+description: Exclui androidManagedAppProtection.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8686dcd8140dc1f90c4b9c34273fb0417dde014f
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 4dc32cf19e303f11fb9e00ec0a652d7b2189a680
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30167869"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30981759"
 ---
 # <a name="delete-androidmanagedappprotection"></a>Excluir androidManagedAppProtection
 
@@ -20,7 +20,7 @@ ms.locfileid: "30167869"
 Exclui [androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

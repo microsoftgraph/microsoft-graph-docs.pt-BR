@@ -4,12 +4,12 @@ description: Exclui macOSScepCertificateProfile.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b0f98b522f557560f85c8b4de52f37568fbeae9b
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 2d6b2a382f6f184a9b6c730748f8253e382b8068
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30143124"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30980835"
 ---
 # <a name="delete-macosscepcertificateprofile"></a>Excluir macOSScepCertificateProfile
 
@@ -20,7 +20,7 @@ ms.locfileid: "30143124"
 Exclui [macOSScepCertificateProfile](../resources/intune-deviceconfig-macosscepcertificateprofile.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

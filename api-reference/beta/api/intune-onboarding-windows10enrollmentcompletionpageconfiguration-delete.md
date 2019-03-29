@@ -4,12 +4,12 @@ description: Exclui windows10EnrollmentCompletionPageConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dee1884a15e2de9c89e0a397dad53ce6720c7f08
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 5a1eb0c3851c643133286b59e616a2270d7bde68
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30160876"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30977188"
 ---
 # <a name="delete-windows10enrollmentcompletionpageconfiguration"></a>Excluir windows10EnrollmentCompletionPageConfiguration
 
@@ -20,7 +20,7 @@ ms.locfileid: "30160876"
 Exclui [windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

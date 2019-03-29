@@ -4,12 +4,12 @@ description: Exclui groupPolicyPresentationDecimalTextBox.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3b0f91578caf5b7d1a9d0da4dec6a8f0a1d73f61
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b7faf4a9365f297fa837cf6c0bbc90ef2a7e1f4a
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30175189"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30982473"
 ---
 # <a name="delete-grouppolicypresentationdecimaltextbox"></a>Excluir groupPolicyPresentationDecimalTextBox
 
@@ -20,7 +20,7 @@ ms.locfileid: "30175189"
 Exclui [groupPolicyPresentationDecimalTextBox](../resources/intune-grouppolicy-grouppolicypresentationdecimaltextbox.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

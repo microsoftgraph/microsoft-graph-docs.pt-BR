@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos androidDeviceOwnerEnro
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b0811979a0a5a28413155916ab8eb797ff57473c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c6c9164a02f7e94484ee254227bf1ec50d201ee7
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30164068"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30980443"
 ---
 # <a name="list-androiddeviceownerenrollmentprofiles"></a>Listar androidDeviceOwnerEnrollmentProfiles
 
@@ -20,7 +20,7 @@ ms.locfileid: "30164068"
 Listar Propriedades e relações dos objetos [androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

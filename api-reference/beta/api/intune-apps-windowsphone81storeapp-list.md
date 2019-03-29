@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos windowsPhone81StoreApp
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 22b5d0c7ba3b0a144218466d0a32157f8f5ed630
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 58b7fdffa08604cac29380a7aec3b1d0dff69f5e
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30160043"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30981017"
 ---
 # <a name="list-windowsphone81storeapps"></a>Listar windowsPhone81StoreApps
 
@@ -20,7 +20,7 @@ ms.locfileid: "30160043"
 Listar Propriedades e relações dos objetos [windowsPhone81StoreApp](../resources/intune-apps-windowsphone81storeapp.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos iosEduDeviceConfigurat
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 14f9f816f8eae63e69219ae4485bb0f32f70ec21
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 372e1a05753ce4f86ffb05f82dfeea02f5fcc1db
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30169290"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30981920"
 ---
 # <a name="list-iosedudeviceconfigurations"></a>Listar iosEduDeviceConfigurations
 
@@ -20,7 +20,7 @@ ms.locfileid: "30169290"
 Listar Propriedades e relações dos objetos [iosEduDeviceConfiguration](../resources/intune-deviceconfig-iosedudeviceconfiguration.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

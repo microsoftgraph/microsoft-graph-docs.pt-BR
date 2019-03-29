@@ -4,12 +4,12 @@ description: Exclui windowsPhone81GeneralConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 70c51e6b64229f31fc3660817ed0dc9ed3a97269
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: f9fd0e076d1255b84c104c3cc19abc24853d9fc8
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30150460"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30981136"
 ---
 # <a name="delete-windowsphone81generalconfiguration"></a>Excluir windowsPhone81GeneralConfiguration
 
@@ -20,7 +20,7 @@ ms.locfileid: "30150460"
 Exclui [windowsPhone81GeneralConfiguration](../resources/intune-deviceconfig-windowsphone81generalconfiguration.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

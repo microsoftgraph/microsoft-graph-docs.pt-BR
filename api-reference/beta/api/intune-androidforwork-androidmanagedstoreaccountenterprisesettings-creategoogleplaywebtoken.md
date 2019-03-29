@@ -4,12 +4,12 @@ description: Gera um token Web que é usado em um componente incorporável.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 50355af2e5f9e593501094c0bfd1638cb070df9d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b10259ef36897188102f0b553b6ed7df9b0fdbdd
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30141241"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30981710"
 ---
 # <a name="creategoogleplaywebtoken-action"></a>ação createGooglePlayWebToken
 
@@ -20,7 +20,7 @@ ms.locfileid: "30141241"
 Gera um token Web que é usado em um componente incorporável.
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
