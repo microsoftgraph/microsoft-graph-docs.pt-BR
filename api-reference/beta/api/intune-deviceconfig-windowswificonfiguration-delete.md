@@ -4,12 +4,12 @@ description: Exclui windowsWifiConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 38cd1a0ab60faf8ebf87353d25d742a2912ca56a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 83e76e8fa2d12f85b05f2f05cdf1a0d015b9c87a
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30165097"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30982760"
 ---
 # <a name="delete-windowswificonfiguration"></a>Excluir windowsWifiConfiguration
 
@@ -20,7 +20,7 @@ ms.locfileid: "30165097"
 Exclui [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

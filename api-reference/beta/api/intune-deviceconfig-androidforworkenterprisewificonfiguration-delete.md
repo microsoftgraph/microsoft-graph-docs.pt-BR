@@ -4,12 +4,12 @@ description: Exclui androidForWorkEnterpriseWiFiConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6e33062750ca1e1ea582c9d3e44ebbf6e1626937
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 072dc9745d9071b880f53c2193a72e2926d57ad6
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30140702"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30983985"
 ---
 # <a name="delete-androidforworkenterprisewificonfiguration"></a>Excluir androidForWorkEnterpriseWiFiConfiguration
 
@@ -20,7 +20,7 @@ ms.locfileid: "30140702"
 Exclui [androidForWorkEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-androidforworkenterprisewificonfiguration.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

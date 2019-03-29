@@ -4,12 +4,12 @@ description: Criar um novo objeto windowsUniversalAppXContainedApp.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 72e171d4a967b9b8dcc7a5271ba09c2afe8c6744
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 9ccfbcbf87fad0e8c793d394767f2bc7139e3dc8
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30164852"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30983264"
 ---
 # <a name="create-windowsuniversalappxcontainedapp"></a>Criar windowsUniversalAppXContainedApp
 
@@ -20,7 +20,7 @@ ms.locfileid: "30164852"
 Criar um novo objeto [windowsUniversalAppXContainedApp](../resources/intune-apps-windowsuniversalappxcontainedapp.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

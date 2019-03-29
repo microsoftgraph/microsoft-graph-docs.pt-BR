@@ -1,15 +1,15 @@
 ---
 title: Excluir iosVppEBook
-description: Exclui um iosVppEBook.
+description: Exclui iosVppEBook.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 94a5e5dab5d0a699f38e6c4fcd77839b69dfc315
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 519bb118777d13f2126ebb853046b0dda42ec2b4
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30259931"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30984307"
 ---
 # <a name="delete-iosvppebook"></a>Excluir iosVppEBook
 
@@ -18,7 +18,7 @@ ms.locfileid: "30259931"
 Exclui [iosVppEBook](../resources/intune-books-iosvppebook.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

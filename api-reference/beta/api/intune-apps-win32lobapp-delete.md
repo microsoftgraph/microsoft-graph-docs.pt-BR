@@ -4,12 +4,12 @@ description: Exclui win32LobApp.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d07cc615c6a7a36e1272adf82166bec8e898d289
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 1538dc056e8f559dee6c21808848f43350e1ca30
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30152413"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30985330"
 ---
 # <a name="delete-win32lobapp"></a>Excluir win32LobApp
 
@@ -20,7 +20,7 @@ ms.locfileid: "30152413"
 Exclui [win32LobApp](../resources/intune-apps-win32lobapp.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

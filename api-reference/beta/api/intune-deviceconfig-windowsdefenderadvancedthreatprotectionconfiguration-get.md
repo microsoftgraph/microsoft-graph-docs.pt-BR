@@ -4,12 +4,12 @@ description: Ler propriedades e relações do objeto windowsDefenderAdvancedThre
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a3730bf9cde8ba5b3ca8efe9c2908375fe3738f7
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 9f682deb3a67d91e047c2ae0d40911b8a25ba8c7
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30143929"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30983890"
 ---
 # <a name="get-windowsdefenderadvancedthreatprotectionconfiguration"></a>Obter windowsDefenderAdvancedThreatProtectionConfiguration
 
@@ -20,7 +20,7 @@ ms.locfileid: "30143929"
 Ler propriedades e relações do objeto [windowsDefenderAdvancedThreatProtectionConfiguration](../resources/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
