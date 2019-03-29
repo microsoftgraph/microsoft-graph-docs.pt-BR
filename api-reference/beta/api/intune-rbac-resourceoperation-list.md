@@ -4,12 +4,12 @@ description: Listar propriedades e relações dos objetos resourceOperation.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ccade11c368ce117e21c0c97fd45fb809d1076d3
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 555862ec61d17aa11afd3da6d957f9bf0ce03966
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30165027"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30983418"
 ---
 # <a name="list-resourceoperations"></a>Listar resourceOperations
 
@@ -20,7 +20,7 @@ ms.locfileid: "30165027"
 Listar propriedades e relações dos objetos [resourceOperation](../resources/intune-rbac-resourceoperation.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

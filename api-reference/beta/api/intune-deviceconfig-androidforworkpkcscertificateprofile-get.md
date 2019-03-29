@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto androidForWorkPkcsCe
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4f56c259f1aa224b21eae1c5946631ee9bcfa887
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 139f048e8e799e3f4722b804af7d66580bcbc7fe
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30156522"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30984629"
 ---
 # <a name="get-androidforworkpkcscertificateprofile"></a>Obter androidForWorkPkcsCertificateProfile
 
@@ -20,7 +20,7 @@ ms.locfileid: "30156522"
 Leia as propriedades e as relações do objeto [androidForWorkPkcsCertificateProfile](../resources/intune-deviceconfig-androidforworkpkcscertificateprofile.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

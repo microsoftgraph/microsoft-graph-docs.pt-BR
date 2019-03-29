@@ -4,12 +4,12 @@ description: Ainda não documentado
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 35a435ed128edc6dacd2db1fae87b78a83e7f322
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 9aaf46834b7b2407f85b31ce169184c6a130013e
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30256907"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30984251"
 ---
 # <a name="targetapps-action"></a>ação targetApps
 
@@ -18,7 +18,7 @@ ms.locfileid: "30256907"
 Ainda não documentado
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -48,7 +48,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|Aplicativos|Coleção [managedMobileApp](../resources/intune-mam-managedmobileapp.md)|Ainda não documentado|
+|apps|Coleção [managedMobileApp](../resources/intune-mam-managedmobileapp.md)|Ainda não documentado|
 
 
 

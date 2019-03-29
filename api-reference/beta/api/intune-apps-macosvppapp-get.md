@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto macOsVppApp.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9e4682df30ba115376687402bc3268577737ca57
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: fe5f85994c6aa46c422084e01661138cfb23dd52
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30159553"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30984594"
 ---
 # <a name="get-macosvppapp"></a>Obter macOsVppApp
 
@@ -20,7 +20,7 @@ ms.locfileid: "30159553"
 Leia as propriedades e as relações do objeto [macOsVppApp](../resources/intune-apps-macosvppapp.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

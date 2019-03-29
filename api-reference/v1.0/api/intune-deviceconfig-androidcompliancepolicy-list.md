@@ -4,12 +4,12 @@ description: Listar propriedades e relações dos objetos androidCompliancePolic
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 377c23d8eee457a0cf64d843448790c64b47e8ef
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: debd9ee54f2413859efcd27e380db8992fc9637a
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30264075"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30982858"
 ---
 # <a name="list-androidcompliancepolicies"></a>Listar androidCompliancePolicies
 
@@ -18,7 +18,7 @@ ms.locfileid: "30264075"
 Listar propriedades e relações dos objetos [androidCompliancePolicy](../resources/intune-deviceconfig-androidcompliancepolicy.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

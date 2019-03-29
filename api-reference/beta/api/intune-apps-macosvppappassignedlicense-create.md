@@ -4,12 +4,12 @@ description: Criar um novo objeto macOsVppAppAssignedLicense.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0de84c4e5cd7e4e9baefacbf4e1834fb01f736b2
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 05424b5f8eaff6f3d055fd6f3babe77fb726b194
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172608"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30983845"
 ---
 # <a name="create-macosvppappassignedlicense"></a>Criar macOsVppAppAssignedLicense
 
@@ -20,7 +20,7 @@ ms.locfileid: "30172608"
 Criar um novo objeto [macOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -52,7 +52,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar macOsVpp
 |:---|:---|:---|
 |id|String|Chave da entidade.|
 |userEmailAddress|String|O endereço de email do usuário.|
-|userId|String|A ID de usuário.|
+|userId|String|A ID do usuário.|
 |userName|Cadeia de caracteres|O nome de usuário.|
 |userPrincipalName|String|O nome da entidade de segurança do usuário.|
 

@@ -4,12 +4,12 @@ description: Reinicie o dispositivo
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d5ac468e8ff163318a7cd3b7138faca1700f01dd
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: bb4df13231924ad8a604360d4687d9272543a691
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30257502"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30983390"
 ---
 # <a name="rebootnow-action"></a>Ação rebootNow
 
@@ -18,7 +18,7 @@ ms.locfileid: "30257502"
 Reinicie o dispositivo
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

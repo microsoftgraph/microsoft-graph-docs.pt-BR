@@ -4,12 +4,12 @@ description: Revogar licença de dispositivo VPP do iOS atribuída para determin
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b0d00dfb436945583baaf276c8c5425fe3223df7
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 4933c6f5e26f27711142a3a48068c585c684a3db
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30174801"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30982585"
 ---
 # <a name="revokedevicelicense-action"></a>ação revokeDeviceLicense
 
@@ -20,7 +20,7 @@ ms.locfileid: "30174801"
 Revogar licença de dispositivo VPP do iOS atribuída para determinado aplicativo.
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -53,7 +53,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |managedDeviceId|String|A deViceid para a qual a licença de aplicativo atribuída deve ser revogada|
-|notifyManagedDevices|Booliano|Booliano que indica se a notificação de revogação deve ser enviada ao dispositivo|
+|notifyManagedDevices|Boolean|Booliano que indica se a notificação de revogação deve ser enviada ao dispositivo|
 
 
 

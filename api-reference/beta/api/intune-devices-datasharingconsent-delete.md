@@ -4,12 +4,12 @@ description: Exclui dataSharingConsent.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 17d0e85e7bb2ade068d3d5c6ec92aba849d5d3b0
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 61230e097fca3d9d5be2bccff6cf4d646f1f5ea2
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30142123"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30983285"
 ---
 # <a name="delete-datasharingconsent"></a>Excluir dataSharingConsent
 
@@ -20,7 +20,7 @@ ms.locfileid: "30142123"
 Exclui [dataSharingConsent](../resources/intune-devices-datasharingconsent.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

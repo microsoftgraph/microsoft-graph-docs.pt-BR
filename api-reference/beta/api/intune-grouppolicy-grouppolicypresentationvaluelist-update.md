@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto groupPolicyPresentationValueL
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3e77f78dc47033be4d92c9f9eff837c4f3873889
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 1e2be7f3f6f1cab47174f8be78ec9655e1d368fd
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30157803"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30983467"
 ---
 # <a name="update-grouppolicypresentationvaluelist"></a>Atualizar groupPolicyPresentationValueList
 
@@ -20,7 +20,7 @@ ms.locfileid: "30157803"
 Atualiza as propriedades de um objeto [groupPolicyPresentationValueList](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

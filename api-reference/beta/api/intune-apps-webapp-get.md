@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto webApp.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 33457eba172d603a47c8e17f83211249762eb714
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: a7dc60b3ccb71e55d49ad9d316f0d4635b9fce74
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30164936"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30983138"
 ---
 # <a name="get-webapp"></a>Acessar webApp
 
@@ -20,7 +20,7 @@ ms.locfileid: "30164936"
 Leia as propriedades e as relações do objeto [webApp](../resources/intune-apps-webapp.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

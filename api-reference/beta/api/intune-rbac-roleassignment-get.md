@@ -4,12 +4,12 @@ description: Ler propriedades e relações do objeto roleAssignment.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 081910e3f7d67f9e144dfd3b91b8437d63752aea
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c0edbea9376aafe775041c74d049f80813224131
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30143754"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30982578"
 ---
 # <a name="get-roleassignment"></a>Get roleAssignment
 
@@ -20,7 +20,7 @@ ms.locfileid: "30143754"
 Ler propriedades e relações do objeto [roleAssignment](../resources/intune-rbac-roleassignment.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

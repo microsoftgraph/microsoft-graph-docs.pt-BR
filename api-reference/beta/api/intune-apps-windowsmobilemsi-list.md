@@ -4,12 +4,12 @@ description: Listar propriedades e relações dos objetos windowsMobileMSI.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a9a81b53b3c715c09baf2d05d65ee6a0b2a7cd2d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e45836421f924356a80ceac29e39308c2aa9b65c
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30156333"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30983866"
 ---
 # <a name="list-windowsmobilemsis"></a>Listar windowsMobileMSIs
 
@@ -20,7 +20,7 @@ ms.locfileid: "30156333"
 Listar propriedades e relações dos objetos [windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

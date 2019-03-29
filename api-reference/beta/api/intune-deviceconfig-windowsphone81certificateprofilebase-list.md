@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos windowsPhone81Certific
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c09a8212bfe05d6a9cb9793ded4125e6f79eb7db
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 33c17c0c6017d9a2eaf0e573e9ae3c880a60d40c
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30145462"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30982536"
 ---
 # <a name="list-windowsphone81certificateprofilebases"></a>Listar windowsPhone81CertificateProfileBases
 
@@ -20,7 +20,7 @@ ms.locfileid: "30145462"
 Listar Propriedades e relações dos objetos [windowsPhone81CertificateProfileBase](../resources/intune-deviceconfig-windowsphone81certificateprofilebase.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

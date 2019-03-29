@@ -1,15 +1,15 @@
 ---
 title: Excluir mobileThreatDefenseConnector
-description: Exclui um mobileThreatDefenseConnector.
+description: Exclui mobileThreatDefenseConnector.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 75bdac45a3c8eb40f67c73392861be80d60092d8
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: d9d8a8acb40b1543e9acc6f3da412f5ea148c86a
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30255336"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30985162"
 ---
 # <a name="delete-mobilethreatdefenseconnector"></a>Excluir mobileThreatDefenseConnector
 
@@ -18,7 +18,7 @@ ms.locfileid: "30255336"
 Exclui [mobileThreatDefenseConnector](../resources/intune-onboarding-mobilethreatdefenseconnector.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

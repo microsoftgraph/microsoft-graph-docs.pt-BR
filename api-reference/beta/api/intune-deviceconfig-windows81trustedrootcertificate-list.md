@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos windows81TrustedRootCe
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4fbaa75c3b86ba46df6a26f26d3c062368280c0a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 97cad7fa2c52852fdbaefb2d8368b7e41ba4bad3
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30157950"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30985064"
 ---
 # <a name="list-windows81trustedrootcertificates"></a>Listar windows81TrustedRootCertificates
 
@@ -20,7 +20,7 @@ ms.locfileid: "30157950"
 Listar Propriedades e relações dos objetos [windows81TrustedRootCertificate](../resources/intune-deviceconfig-windows81trustedrootcertificate.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

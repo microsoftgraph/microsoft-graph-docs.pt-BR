@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto managedIOSStoreApp.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e95f9e6b7600fcfbdd72f6ea8c4cd4b51ab248e6
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ef9f933df7da1bfc4c3af366091a3d460dda2b71
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30162976"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30982865"
 ---
 # <a name="get-managediosstoreapp"></a>Acessar managedIOSStoreApp
 
@@ -20,7 +20,7 @@ ms.locfileid: "30162976"
 Leia as propriedades e as relações do objeto [managedIOSStoreApp](../resources/intune-apps-managediosstoreapp.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
