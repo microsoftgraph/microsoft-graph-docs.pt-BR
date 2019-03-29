@@ -4,12 +4,12 @@ description: Exclui windowsUpdateForBusinessConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c9e7bb5d04a11f4f6df446755dcf905434532fe2
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 6770c8898f0905051ff5b7b28554e9c95747d836
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30144349"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30962068"
 ---
 # <a name="delete-windowsupdateforbusinessconfiguration"></a>Excluir windowsUpdateForBusinessConfiguration
 
@@ -20,7 +20,7 @@ ms.locfileid: "30144349"
 Exclui [windowsUpdateForBusinessConfiguration](../resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

@@ -1,15 +1,15 @@
 ---
 title: Acessar managedEBook
-description: Propriedades de leitura e relações do objeto managedEBook.
+description: Leia as propriedades e as relações do objeto managedEBook.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fc3dfee1ea63d15a75e17e18b88c5d20e5b9a594
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 02dbbccae1e3ba04cf087b1509c69fe2500e8854
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30263781"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30965022"
 ---
 # <a name="get-managedebook"></a>Acessar managedEBook
 
@@ -18,7 +18,7 @@ ms.locfileid: "30263781"
 Leia as propriedades e as relações do objeto [managedEBook](../resources/intune-books-managedebook.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos iosTrustedRootCertific
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d9aa6609d1dd9832f071423a01f8457757b037fb
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 7a910c1de63dc9cfec661d80a56d75588c1417d4
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30148199"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30964077"
 ---
 # <a name="list-iostrustedrootcertificates"></a>Listar iosTrustedRootCertificates
 
@@ -20,7 +20,7 @@ ms.locfileid: "30148199"
 Listar Propriedades e relações dos objetos [iosTrustedRootCertificate](../resources/intune-deviceconfig-iostrustedrootcertificate.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

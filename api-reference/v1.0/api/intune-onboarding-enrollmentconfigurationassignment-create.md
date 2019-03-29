@@ -4,12 +4,12 @@ description: Criar um novo objeto enrollmentConfigurationAssignment.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b7043b3a30aa7dadf086b48024a71ed713e84257
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: a999e3286881d3e736904ed9c8e722aa78d28204
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30256053"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30963608"
 ---
 # <a name="create-enrollmentconfigurationassignment"></a>Criar enrollmentConfigurationAssignment
 
@@ -18,7 +18,7 @@ ms.locfileid: "30256053"
 Criar um novo objeto [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

@@ -4,12 +4,12 @@ description: Criar um novo objeto mobileAppCategory.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7d540c906bbf0f2b096f2a9d2fb1fa65101fba10
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 3abe0c2df1695f5e1f27a414265bfc357d832b1a
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30253845"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30963846"
 ---
 # <a name="create-mobileappcategory"></a>Criar mobileAppCategory
 
@@ -18,7 +18,7 @@ ms.locfileid: "30253845"
 Criar um novo objeto [mobileAppCategory](../resources/intune-apps-mobileappcategory.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -50,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar mobileAp
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|A chave da entidade.|
-|displayName|String|O nome da categoria do aplicativo.|
+|displayName|Cadeia de caracteres|O nome da categoria do aplicativo.|
 |lastModifiedDateTime|DateTimeOffset|A data e hora que a mobileAppCategory foi modificada pela última vez.|
 
 

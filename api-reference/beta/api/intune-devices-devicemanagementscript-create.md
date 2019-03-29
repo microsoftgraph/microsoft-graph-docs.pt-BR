@@ -4,12 +4,12 @@ description: Criar um novo objeto deviceManagementScript.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f7a27fef1e3487bf39a0140bad51c7ecae7e21a5
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: 1a46e5eed8a4b5c678c9510d7471e3b7dc450ccb
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30570757"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30959275"
 ---
 # <a name="create-devicemanagementscript"></a>Criar deviceManagementScript
 
@@ -20,7 +20,7 @@ ms.locfileid: "30570757"
 Criar um novo objeto [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -54,13 +54,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 |displayName|String|Nome do script de gerenciamento de dispositivo.|
 |descrição|String|Descrição opcional para o script de gerenciamento de dispositivo.|
 |runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|O intervalo de execução do script. Se não definido, o script será executado uma vez|
-|scriptContent|Binário|O conteúdo de script.|
+|scriptContent|Binary|O conteúdo de script.|
 |createdDateTime|DateTimeOffset|A data e a hora em que o script de gerenciamento de dispositivo foi criado.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que o script de gerenciamento de dispositivo foi modificado pela última vez.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indica o tipo de contexto de execução. Os valores possíveis são: `system` e `user`.|
 |enforceSignatureCheck|Boolean|Indica se a assinatura do script precisa ser verificada.|
 |fileName|String|Nome do arquivo de script.|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de IDs de marca de escopo para esta instância de PowerShellScript.|
+|roleScopeTagIds|Coleção String|Lista de IDs de marca de escopo para esta instância de PowerShellScript.|
 |runAs32Bit|Boolean|Um valor que indica se o script do PowerShell deve ser executado como 32 bits|
 
 

@@ -4,12 +4,12 @@ description: Exclui windowsDomainJoinConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 176560c04f052cbc3dd55c6c5877de0816bb81a4
-ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
+ms.openlocfilehash: 74cc1c53712bd20406209fc7ceca47d5eceb5786
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30572212"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30963034"
 ---
 # <a name="delete-windowsdomainjoinconfiguration"></a>Excluir windowsDomainJoinConfiguration
 
@@ -19,7 +19,7 @@ ms.locfileid: "30572212"
 
 Exclui [windowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md).
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

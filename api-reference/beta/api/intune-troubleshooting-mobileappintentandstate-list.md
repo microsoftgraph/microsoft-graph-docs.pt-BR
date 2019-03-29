@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos mobileAppIntentAndStat
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 75b4395f11f17f8a5529c81177a0cb1e73760ffa
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: a7c0699af0b7d4ea019ab6d18b2c61c44451cf74
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30158594"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30962691"
 ---
 # <a name="list-mobileappintentandstates"></a>Listar mobileAppIntentAndStates
 
@@ -20,7 +20,7 @@ ms.locfileid: "30158594"
 Listar Propriedades e relações dos objetos [mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

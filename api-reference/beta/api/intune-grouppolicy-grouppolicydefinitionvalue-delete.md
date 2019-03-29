@@ -4,12 +4,12 @@ description: Exclui groupPolicyDefinitionValue.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7c539b33e16ccde3a2c866d6ac9fb7b420354fd5
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 4313d00be592bacd8efc5d312b6a3d28a24cb7ae
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30157033"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30965456"
 ---
 # <a name="delete-grouppolicydefinitionvalue"></a>Excluir groupPolicyDefinitionValue
 
@@ -20,7 +20,7 @@ ms.locfileid: "30157033"
 Exclui [groupPolicyDefinitionValue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

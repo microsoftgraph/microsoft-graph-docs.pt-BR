@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto windowsStoreApp.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f7e667a3159ad6cfd1a2d27551e6476a8f45e1cb
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 0bffd776d09219c9ad589492afd8b6cd98c41388
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30171677"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30965330"
 ---
 # <a name="get-windowsstoreapp"></a>Obter windowsStoreApp
 
@@ -20,7 +20,7 @@ ms.locfileid: "30171677"
 Leia as propriedades e as relações do objeto [windowsStoreApp](../resources/intune-apps-windowsstoreapp.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

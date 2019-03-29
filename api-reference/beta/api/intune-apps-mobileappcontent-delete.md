@@ -4,12 +4,12 @@ description: Exclui mobileAppContent.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a9759da7c98c43fd07e0097bf0cd5cb6453a4586
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 7d933ff2b36f5fde05be773a16314381ec7b41e0
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30169367"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30962460"
 ---
 # <a name="delete-mobileappcontent"></a>Excluir mobileAppContent
 
@@ -20,7 +20,7 @@ ms.locfileid: "30169367"
 Exclui [mobileAppContent](../resources/intune-apps-mobileappcontent.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

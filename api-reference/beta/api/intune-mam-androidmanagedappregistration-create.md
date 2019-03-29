@@ -4,12 +4,12 @@ description: Cria um novo objeto androidManagedAppRegistration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0c05ba7fa13577134b148c8af836e3ba453a1e40
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: 97ff5274358abd9ada2ee14e624e516a74b01d29
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30571456"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30962810"
 ---
 # <a name="create-androidmanagedappregistration"></a>Criar androidManagedAppRegistration
 
@@ -20,7 +20,7 @@ ms.locfileid: "30571456"
 Cria um novo objeto [androidManagedAppRegistration](../resources/intune-mam-androidmanagedappregistration.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

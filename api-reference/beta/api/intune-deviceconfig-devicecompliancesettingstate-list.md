@@ -4,12 +4,12 @@ description: Listar propriedades e relações dos objetos deviceComplianceSettin
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5de2830828c9f2d94e91fdd8bf102bbc32f5840d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 160e35b4e1559c7be264071961285c207bc70269
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30171222"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30961893"
 ---
 # <a name="list-devicecompliancesettingstates"></a>Listar deviceComplianceSettingStates
 
@@ -20,7 +20,7 @@ ms.locfileid: "30171222"
 Listar propriedades e relações dos objetos [deviceComplianceSettingState](../resources/intune-deviceconfig-devicecompliancesettingstate.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

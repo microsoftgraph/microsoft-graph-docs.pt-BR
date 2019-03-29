@@ -1,15 +1,15 @@
 ---
 title: Listar managedAppStatusRaws
-description: Listar propriedades e relações de objetos de managedAppStatusRaw.
+description: Listar propriedades e relações dos objetos managedAppStatusRaw.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cdbb95f771c28ec9723362e823537b2f2f34f005
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 3772455d364050fd289a6d519849cb7af78a4344
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30254713"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30965911"
 ---
 # <a name="list-managedappstatusraws"></a>Listar managedAppStatusRaws
 
@@ -18,7 +18,7 @@ ms.locfileid: "30254713"
 Listar propriedades e relações dos objetos [managedAppStatusRaw](../resources/intune-mam-managedappstatusraw.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

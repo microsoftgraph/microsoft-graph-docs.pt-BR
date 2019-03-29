@@ -4,12 +4,12 @@ description: Estender as atualizações de recurso paUsar para um toque do Windo
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8f69d5bcb39617705d9cd920f4ac4fb29a3b396c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 52544ff78bbfb077936e9b20fa5fda6326f830f3
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30153456"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30963839"
 ---
 # <a name="extendfeatureupdatespause-action"></a>ação extendFeatureUpdatesPause
 
@@ -20,7 +20,7 @@ ms.locfileid: "30153456"
 Estender as atualizações de recurso paUsar para um toque do Windows Update para empresas.
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

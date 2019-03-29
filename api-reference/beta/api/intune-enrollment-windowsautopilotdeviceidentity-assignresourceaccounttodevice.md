@@ -1,17 +1,17 @@
 ---
-title: ação assignResourceAccountToDevice
+title: Ação assignResourceAccountToDevice
 description: Atribui a conta de recurso aos dispositivos do AutoPilot.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e46f12d33e26f15a87746720bfd1b418d4f21878
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: 587ef8cdd0b3c61edf4076c04c1d01e87b917dc9
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30631458"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30962922"
 ---
-# <a name="assignresourceaccounttodevice-action"></a>ação assignResourceAccountToDevice
+# <a name="assignresourceaccounttodevice-action"></a>Ação assignResourceAccountToDevice
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -20,7 +20,7 @@ ms.locfileid: "30631458"
 Atribui a conta de recurso aos dispositivos do AutoPilot.
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

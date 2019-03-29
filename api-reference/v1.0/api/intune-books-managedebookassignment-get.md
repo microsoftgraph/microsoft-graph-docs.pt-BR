@@ -4,12 +4,12 @@ description: Ler propriedades e relações do objeto managedEBookAssignment.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 718414ff1955704e31c2b8cd4de87dd7201dcd30
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 492945f542bb1640c95475071ca9769f778edd79
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30251661"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30965960"
 ---
 # <a name="get-managedebookassignment"></a>Get managedEBookAssignment
 
@@ -18,7 +18,7 @@ ms.locfileid: "30251661"
 Ler propriedades e relações do objeto [managedEBookAssignment](../resources/intune-books-managedebookassignment.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

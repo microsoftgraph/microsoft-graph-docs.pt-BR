@@ -4,12 +4,12 @@ description: Listar propriedades e relações de objetos de enrollmentConfigurat
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 123ee417cdfa7781b258d2bcc56e3bcb2fade9a9
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 4c4dd32834c7db0401f571c103f6e37f78f9795d
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30258314"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30961697"
 ---
 # <a name="list-enrollmentconfigurationassignments"></a>Listar enrollmentConfigurationAssignments
 
@@ -18,7 +18,7 @@ ms.locfileid: "30258314"
 Listar propriedades e relações de objetos de [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

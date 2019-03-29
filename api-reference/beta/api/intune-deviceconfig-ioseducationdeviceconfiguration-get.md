@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto da ioseducationdevic
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0515fc1f0743ed9533dfecdbae9205342f36d54d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 5e4dbdc8966d7142167c2a0dd848da9eda2b712a
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30175371"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30965540"
 ---
 # <a name="get-ioseducationdeviceconfiguration"></a>Obter da ioseducationdeviceconfiguration
 
@@ -20,7 +20,7 @@ ms.locfileid: "30175371"
 Leia as propriedades e as relações do objeto [da ioseducationdeviceconfiguration](../resources/intune-deviceconfig-ioseducationdeviceconfiguration.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

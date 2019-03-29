@@ -4,12 +4,12 @@ description: Atualizar as propriedades de um objeto deviceComplianceSettingState
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c22c97d8e15e79419066392d3a984ee0899589b7
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 735f9f3b564d7e810347d63a1c90233be7ff1de7
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30258664"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30963097"
 ---
 # <a name="update-devicecompliancesettingstate"></a>Atualizar deviceComplianceSettingState
 
@@ -18,7 +18,7 @@ ms.locfileid: "30258664"
 Atualizar as propriedades de um objeto [deviceComplianceSettingState](../resources/intune-deviceconfig-devicecompliancesettingstate.md) objeto.
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -51,10 +51,10 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [deviceComplianc
 |id|String|Chave da entidade|
 |configuração|String|O nome da classe de configuração e o nome da propriedade.|
 |settingName|String|O nome da configuração sendo relatada|
-|deviceId|Cadeia de caracteres|A ID do dispositivo sendo relatada|
+|deviceId|String|A ID do dispositivo sendo relatada|
 |deviceName|String|O nome do dispositivo sendo relatado|
 |userId|String|A ID do usuário sendo relatada|
-|userEmail|String|O endereço de email do usuário que está sendo relatado|
+|userEmail|Cadeia de caracteres|O endereço de email do usuário que está sendo relatado|
 |userName|String|O nome de usuário que está sendo relatado|
 |userPrincipalName|String|O PrincipalName do usuário que está sendo relatado|
 |deviceModel|String|O modelo do dispositivo que está sendo relatado|

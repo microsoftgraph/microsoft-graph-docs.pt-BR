@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos androidImportedPFXCert
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0742c97c359c49a606658d257682dbf1c6d2b710
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 4cbf512f176586984d1cc6e7e4f0af2dc0aa4799
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30139232"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30963657"
 ---
 # <a name="list-androidimportedpfxcertificateprofiles"></a>Listar androidImportedPFXCertificateProfiles
 
@@ -20,7 +20,7 @@ ms.locfileid: "30139232"
 Listar Propriedades e relações dos objetos [androidImportedPFXCertificateProfile](../resources/intune-deviceconfig-androidimportedpfxcertificateprofile.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

@@ -4,12 +4,12 @@ description: Cria um novo objeto iosVppEBook.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d70c6161c7897370895eb5f04f4ab8a43486b85d
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 6251e3ecda1597653ff2fed9575e7357e89f652f
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30257110"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30965057"
 ---
 # <a name="create-iosvppebook"></a>Criar iosVppEBook
 
@@ -18,7 +18,7 @@ ms.locfileid: "30257110"
 Cria um novo objeto [iosVppEBook](../resources/intune-books-iosvppebook.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -48,20 +48,20 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar iosVppEBook.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade. Herdado de [managedEBook](../resources/intune-books-managedebook.md)|
-|displayName|String|Nome do livro eletrônico. Herdado de [managedEBook](../resources/intune-books-managedebook.md)|
-|description|String|Descrição. Herdado de [managedEBook](../resources/intune-books-managedebook.md)|
-|publisher|String|Publicador. Herdado de [managedEBook](../resources/intune-books-managedebook.md)|
-|publishedDateTime|DateTimeOffset|A data e hora em que o livro eletrônico foi publicado. Herdado de [managedEBook](../resources/intune-books-managedebook.md)|
-|largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|Capa do livro. Herdado de [managedEBook](../resources/intune-books-managedebook.md)|
-|createdDateTime|DateTimeOffset|A data e hora em que o livro eletrônico foi modificado pela última vez. Herdado de [managedEBook](../resources/intune-books-managedebook.md)|
+|id|String|Chave da entidade. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
+|displayName|String|Nome do livro eletrônico. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
+|descrição|String|Descrição. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
+|publisher|String|Publicador. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
+|publishedDateTime|DateTimeOffset|A data e hora em que o livro eletrônico foi publicado. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
+|largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|Capa do livro. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
+|createdDateTime|DateTimeOffset|A data e hora em que o livro eletrônico foi modificado pela última vez. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
 |lastModifiedDateTime|DateTimeOffset|A data e hora da última modificação do livro eletrônico. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
-|informationUrl|String|A URL de informações adicionais. Herdado de [managedEBook](../resources/intune-books-managedebook.md)|
-|privacyInformationUrl|String|A URL da declaração de privacidade. Herdado de [managedEBook](../resources/intune-books-managedebook.md)|
+|informationUrl|String|A URL de informações adicionais. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
+|privacyInformationUrl|String|A URL da declaração de privacidade. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
 |vppTokenId|Guid|A ID de token Vpp.|
 |appleId|String|O Apple ID associado ao token Vpp.|
 |vppOrganizationName|String|O nome da organização do token Vpp.|
-|genres|Coleção de cadeias de caracteres|Gêneros.|
+|genres|Coleção de cadeia de caracteres|Gêneros.|
 |idioma|String|Idioma.|
 |seller|Cadeia de caracteres|Vendedor.|
 |totalLicenseCount|Int32|Contagem total de licenças.|

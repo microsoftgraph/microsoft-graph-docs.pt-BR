@@ -4,12 +4,12 @@ description: Atualizar as propriedades de um objeto managedDevice.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6219c7ef53dc222ec2e85caa448bb47b7f6d6eda
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 12c8c2dc628b7fcecef81296ca56f17845b39478
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30250758"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30962859"
 ---
 # <a name="update-manageddevice"></a>Atualizar managedDevice
 
@@ -18,7 +18,7 @@ ms.locfileid: "30250758"
 Atualizar as propriedades de um objeto [managedDevice](../resources/intune-devices-manageddevice.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -57,7 +57,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [managed
 |deviceActionResults|Coleção [deviceActionResult](../resources/intune-devices-deviceactionresult.md)|Lista de objetos ComplexType deviceActionResult.|
 |enrolledDateTime|DateTimeOffset|Hora de registro do dispositivo.|
 |lastSyncDateTime|DateTimeOffset|A data e a hora da última vez em que o dispositivo concluiu uma sincronização bem-sucedida com o Intune.|
-|operatingSystem|String|Sistema operacional do dispositivo. Windows, iOS, etc.|
+|operatingSystem|Cadeia de caracteres|Sistema operacional do dispositivo. Windows, iOS, etc.|
 |complianceState|[complianceState](../resources/intune-devices-compliancestate.md)|Estado de conformidade do dispositivo. Os valores possíveis são: `unknown`, `compliant`, `noncompliant`, `conflict`, `error`, `inGracePeriod`, `configManager`.|
 |jailBroken|String|se o dispositivo está desbloqueado ou modificado.|
 |managementAgent|[managementAgentType](../resources/intune-devices-managementagenttype.md)|Canal de gerenciamento do dispositivo. Intune, EAS, etc. Os valores possíveis são: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`.|
@@ -84,7 +84,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [managed
 |fabricante|String|Fabricante do dispositivo|
 |imei|String|IMEI|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|DateTime em que o período de cortesia de conformidade do dispositivo termina|
-|serialNumber|String|SerialNumber|
+|serialNumber|Cadeia de caracteres|SerialNumber|
 |phoneNumber|String|Número de telefone do dispositivo|
 |androidSecurityPatchLevel|String|Nível do patch de segurança Android|
 |userDisplayName|String|Nome de exibição do usuário|

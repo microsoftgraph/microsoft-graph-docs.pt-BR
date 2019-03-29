@@ -4,12 +4,12 @@ description: Retira a atribuição do usuário de um dispositivo piloto automát
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b26fb9b658504580c2b4e49c9f6ff8e51cc88491
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: bf8d5b70c09407f058a6fe01a450f827e91f89c4
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30154674"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30964000"
 ---
 # <a name="unassignuserfromdevice-action"></a>ação unassignUserFromDevice
 
@@ -20,7 +20,7 @@ ms.locfileid: "30154674"
 Retira a atribuição do usuário de um dispositivo piloto automático.
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

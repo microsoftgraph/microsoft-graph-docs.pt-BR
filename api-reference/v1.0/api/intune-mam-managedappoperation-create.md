@@ -4,12 +4,12 @@ description: Criar um novo objeto managedAppOperation.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6088eda4bdc518a0a486014b023d2bf0934575a2
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 354795b68992307d27189d0edaa9088509d710c8
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30262871"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30965281"
 ---
 # <a name="create-managedappoperation"></a>Criar managedAppOperation
 
@@ -18,7 +18,7 @@ ms.locfileid: "30262871"
 Criar um novo objeto [managedAppOperation](../resources/intune-mam-managedappoperation.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -48,11 +48,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar managedA
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|String|O nome da operação.|
+|displayName|Cadeia de caracteres|O nome da operação.|
 |lastModifiedDateTime|DateTimeOffset|Última vez em que a operação de aplicativo foi modificada.|
 |state|String|O estado atual da operação|
 |id|String|Chave da entidade.|
-|version|String|Versão da entidade.|
+|versão|String|Versão da entidade.|
 
 
 

@@ -4,12 +4,12 @@ description: Atualizar as propriedades de um objeto softwareUpdateStatusSummary.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 76475402e0bb240606cfff0ed25b4502b2feb206
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: cb2d0cf3c2dd048f2f1668d2cc88bf24871c0e84
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30145091"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30963769"
 ---
 # <a name="update-softwareupdatestatussummary"></a>Atualizar softwareUpdateStatusSummary
 
@@ -20,7 +20,7 @@ ms.locfileid: "30145091"
 Atualizar as propriedades de um objeto [softwareUpdateStatusSummary](../resources/intune-deviceconfig-softwareupdatestatussummary.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -51,7 +51,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [softwareUpdateS
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade.|
-|displayName|String|O nome da política.|
+|displayName|Cadeia de caracteres|O nome da política.|
 |compliantDeviceCount|Int32|Número de dispositivos em conformidade.|
 |nonCompliantDeviceCount|Int32|Número de dispositivos sem conformidade.|
 |remediatedDeviceCount|Int32|Número de dispositivos corrigidos.|

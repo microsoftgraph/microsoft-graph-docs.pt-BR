@@ -4,12 +4,12 @@ description: Criar um novo objeto microsoftStoreForBusinessContainedApp.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 547ada92d94bb5c2706a873055d58ced5ff4a050
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b49eedc4c82402f7391291c131d46c3bc00100da
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172902"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30964315"
 ---
 # <a name="create-microsoftstoreforbusinesscontainedapp"></a>Criar microsoftStoreForBusinessContainedApp
 
@@ -20,7 +20,7 @@ ms.locfileid: "30172902"
 Criar um novo objeto [microsoftStoreForBusinessContainedApp](../resources/intune-apps-microsoftstoreforbusinesscontainedapp.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos officeSuiteApp.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5ba39d5f0f6139104380b8e0cc7c9b8145b6fd7d
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: 3e14b6c6952fcafed417e815a5a0c8a22bd3d7e1
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30571526"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30958596"
 ---
 # <a name="list-officesuiteapps"></a>Listar officeSuiteApps
 
@@ -20,7 +20,7 @@ ms.locfileid: "30571526"
 Listar Propriedades e relações dos objetos [officeSuiteApp](../resources/intune-apps-officesuiteapp.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

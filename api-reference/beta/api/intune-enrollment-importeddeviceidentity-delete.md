@@ -4,12 +4,12 @@ description: Exclui importedDeviceIdentity.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a5c5d2669747eb16111eb5b50162b79e0621c463
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 87c8ee0c2671a11247e585c6cb92311bf810b2e2
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30152420"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30963993"
 ---
 # <a name="delete-importeddeviceidentity"></a>Excluir importedDeviceIdentity
 
@@ -20,7 +20,7 @@ ms.locfileid: "30152420"
 Exclui [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

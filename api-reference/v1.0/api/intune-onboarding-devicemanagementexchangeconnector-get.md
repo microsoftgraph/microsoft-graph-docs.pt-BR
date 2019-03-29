@@ -4,12 +4,12 @@ description: Ler propriedades e relações do objeto deviceManagementExchangeCon
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3278b7fae54095a12bb7c443be1b7646a69983d0
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: a4c4623d8d42dcf06b28ca2ffdcb955c4e10794c
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30263592"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30961949"
 ---
 # <a name="get-devicemanagementexchangeconnector"></a>Get deviceManagementExchangeConnector
 
@@ -18,7 +18,7 @@ ms.locfileid: "30263592"
 Ler propriedades e relações do objeto [deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

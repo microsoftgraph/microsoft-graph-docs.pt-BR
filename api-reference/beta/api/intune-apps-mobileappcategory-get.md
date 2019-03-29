@@ -4,12 +4,12 @@ description: Ler propriedades e relações do objeto mobileAppCategory.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 259874e721b995649a2b030a9e923869cc431717
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 17a39bb4f5845e98eb74db0ba45851017bf8ad71
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30153631"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30962166"
 ---
 # <a name="get-mobileappcategory"></a>Get mobileAppCategory
 
@@ -20,7 +20,7 @@ ms.locfileid: "30153631"
 Ler propriedades e relações do objeto [mobileAppCategory](../resources/intune-apps-mobileappcategory.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

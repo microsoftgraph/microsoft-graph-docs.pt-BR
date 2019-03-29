@@ -4,12 +4,12 @@ description: Confirma um arquivo de um determinado aplicativo.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 30ce7aee558c544aee29f1843d296e5e39ea8340
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: f3fe5733450ee3990ce9ec3c95c1b34ab23d2a5a
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30149060"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30962089"
 ---
 # <a name="commit-action"></a>Ação de confirmação
 
@@ -20,7 +20,7 @@ ms.locfileid: "30149060"
 Confirma um arquivo de um determinado aplicativo.
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

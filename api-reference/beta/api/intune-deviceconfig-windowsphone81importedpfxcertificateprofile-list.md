@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos windowsPhone81Imported
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 51f11184a17a9de86b6083d53852a0bade7916ce
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: a9e6e1d8900d5c0bb4dc541d2c09e92460a9bfde
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30168961"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30961389"
 ---
 # <a name="list-windowsphone81importedpfxcertificateprofiles"></a>Listar windowsPhone81ImportedPFXCertificateProfiles
 
@@ -20,7 +20,7 @@ ms.locfileid: "30168961"
 Listar Propriedades e relações dos objetos [windowsPhone81ImportedPFXCertificateProfile](../resources/intune-deviceconfig-windowsphone81importedpfxcertificateprofile.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

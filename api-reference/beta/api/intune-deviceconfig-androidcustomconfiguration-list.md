@@ -4,12 +4,12 @@ description: Listar propriedades e relações dos objetos androidCustomConfigura
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dcf9ba2749dec5fcf30f54f0747292364667d34a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: d98d0b28d252153e6d60a32d18c236c38dac214f
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30163053"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30964245"
 ---
 # <a name="list-androidcustomconfigurations"></a>Listar androidCustomConfigurations
 
@@ -20,7 +20,7 @@ ms.locfileid: "30163053"
 Listar propriedades e relações dos objetos [androidCustomConfiguration](../resources/intune-deviceconfig-androidcustomconfiguration.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

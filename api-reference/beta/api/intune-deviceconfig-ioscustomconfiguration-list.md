@@ -4,12 +4,12 @@ description: Listar propriedades e relações dos objetos iosCustomConfiguration
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7f2bbe98012246bfab30108fad1635370708a534
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: dd4b34ed73e546c3687e200567a8a58437aba95c
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30170109"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30964623"
 ---
 # <a name="list-ioscustomconfigurations"></a>Listar iosCustomConfigurations
 
@@ -20,7 +20,7 @@ ms.locfileid: "30170109"
 Listar propriedades e relações dos objetos [iosCustomConfiguration](../resources/intune-deviceconfig-ioscustomconfiguration.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

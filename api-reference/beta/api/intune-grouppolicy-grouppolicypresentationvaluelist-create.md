@@ -4,12 +4,12 @@ description: Criar um novo objeto groupPolicyPresentationValueList.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0fcd3dcb33b0442fb96ea16de1faf25c76f3a9e6
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 6a96c49817637e951f11b94e8dc2381df513c9a2
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30139001"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30964868"
 ---
 # <a name="create-grouppolicypresentationvaluelist"></a>Criar groupPolicyPresentationValueList
 
@@ -20,7 +20,7 @@ ms.locfileid: "30139001"
 Criar um novo objeto [groupPolicyPresentationValueList](../resources/intune-grouppolicy-grouppolicypresentationvaluelist.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

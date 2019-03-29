@@ -4,12 +4,12 @@ description: Listar propriedades e relações de objeto de deviceEnrollmentPlatf
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3bd5c4368190cb9c53a78a481c510d4ae3c76c63
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 9b0e374a83277df6d078464f7b9b116f71b575e9
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30250856"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30962978"
 ---
 # <a name="list-deviceenrollmentplatformrestrictionsconfigurations"></a>Listar deviceEnrollmentPlatformRestrictionsConfigurations
 
@@ -18,7 +18,7 @@ ms.locfileid: "30250856"
 Listar propriedades e relações de objeto de [deviceEnrollmentPlatformRestrictionsConfiguration](../resources/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

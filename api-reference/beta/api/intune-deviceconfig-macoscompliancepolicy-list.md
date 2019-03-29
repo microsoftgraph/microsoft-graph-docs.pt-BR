@@ -4,12 +4,12 @@ description: Listar propriedades e relações dos objetos macOSCompliancePolicy.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 812cfda38f69a8afb403bedf966e2cc5fa8f7a88
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 10a9395e37bb4759690a35f2ab683a5f2634f1b3
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30161135"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30963468"
 ---
 # <a name="list-macoscompliancepolicies"></a>Listar macOSCompliancePolicies
 
@@ -20,7 +20,7 @@ ms.locfileid: "30161135"
 Listar propriedades e relações dos objetos [macOSCompliancePolicy](../resources/intune-deviceconfig-macoscompliancepolicy.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

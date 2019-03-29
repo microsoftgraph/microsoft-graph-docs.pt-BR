@@ -4,12 +4,12 @@ description: Exclui windows81VpnConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1ff675736bda3515102112277f45ea26ce6b3f91
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c1e8a535296277a76de2201d0d19ff345aa0503a
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30165587"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30961851"
 ---
 # <a name="delete-windows81vpnconfiguration"></a>Excluir windows81VpnConfiguration
 
@@ -20,7 +20,7 @@ ms.locfileid: "30165587"
 Exclui [windows81VpnConfiguration](../resources/intune-deviceconfig-windows81vpnconfiguration.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

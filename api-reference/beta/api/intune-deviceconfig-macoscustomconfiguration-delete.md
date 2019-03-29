@@ -4,12 +4,12 @@ description: Exclui macOSCustomConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8b1900c791563497f3ec722f58d6b1a3867a9f73
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b1aeb36e161a85caaa4838412940697a1cf074ae
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30148962"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30961669"
 ---
 # <a name="delete-macoscustomconfiguration"></a>Excluir macOSCustomConfiguration
 
@@ -20,7 +20,7 @@ ms.locfileid: "30148962"
 Exclui [macOSCustomConfiguration](../resources/intune-deviceconfig-macoscustomconfiguration.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

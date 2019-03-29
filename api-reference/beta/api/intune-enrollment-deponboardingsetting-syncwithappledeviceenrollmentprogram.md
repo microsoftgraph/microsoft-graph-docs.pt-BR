@@ -4,12 +4,12 @@ description: Sincroniza entre o programa de registro de dispositivo Apple e o In
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3d18796ce3bec358be2d9af8be5f45f5b9e034f8
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 3cbe487c6c4ca5d0abf70b690edd59fe34d5ef98
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30173168"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30961459"
 ---
 # <a name="syncwithappledeviceenrollmentprogram-action"></a>Ação syncWithAppleDeviceEnrollmentProgram
 
@@ -20,7 +20,7 @@ ms.locfileid: "30173168"
 Sincroniza entre o programa de registro de dispositivo Apple e o Intune
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

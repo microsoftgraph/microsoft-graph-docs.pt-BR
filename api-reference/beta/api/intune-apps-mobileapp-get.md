@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto mobileApp.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0f8df17b26a7eb363e4c12951f6aca6a2552475d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 7d3b12cc29e2ab3d0266092f1849ec42d9087519
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30159448"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30962495"
 ---
 # <a name="get-mobileapp"></a>Acessar mobileApp
 
@@ -20,7 +20,7 @@ ms.locfileid: "30159448"
 Leia as propriedades e as relações do objeto [mobileApp](../resources/intune-apps-mobileapp.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

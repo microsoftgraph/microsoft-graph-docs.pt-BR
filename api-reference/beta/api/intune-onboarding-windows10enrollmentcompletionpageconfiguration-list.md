@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos windows10EnrollmentCom
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ef07ce0c3f37d2ac27c74557d10e2a697adac644
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 294e6db6593e11bf4c4c9e3c1e717892a71b12f8
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30154751"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30964329"
 ---
 # <a name="list-windows10enrollmentcompletionpageconfigurations"></a>Listar windows10EnrollmentCompletionPageConfigurations
 
@@ -20,7 +20,7 @@ ms.locfileid: "30154751"
 Listar Propriedades e relações dos objetos [windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

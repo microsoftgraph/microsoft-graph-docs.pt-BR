@@ -4,12 +4,12 @@ description: Ler propriedades e relações do objeto androidManagedAppProtection
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bf571deb9421d3362da2014ce2327eaaaef812b7
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: 70da0cc9fbeca949026eed1eb5114c307374e7ca
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30571022"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30962047"
 ---
 # <a name="get-androidmanagedappprotection"></a>Get androidManagedAppProtection
 
@@ -20,7 +20,7 @@ ms.locfileid: "30571022"
 Ler propriedades e relações do objeto [androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

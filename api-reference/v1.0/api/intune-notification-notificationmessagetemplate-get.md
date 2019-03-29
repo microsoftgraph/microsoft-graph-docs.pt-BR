@@ -4,12 +4,12 @@ description: Ler propriedades e relações do objeto notificationMessageTemplate
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 13e5bf52bff2ff17e97cd8d82d04ae5512ea84fc
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: de0d8a2c3d1a802ea4f3f42936b2bfded4c03128
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30258713"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30961907"
 ---
 # <a name="get-notificationmessagetemplate"></a>Get notificationMessageTemplate
 
@@ -18,7 +18,7 @@ ms.locfileid: "30258713"
 Ler propriedades e relações do objeto [notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

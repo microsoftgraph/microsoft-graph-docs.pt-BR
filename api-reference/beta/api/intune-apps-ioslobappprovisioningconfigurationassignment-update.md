@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto iosLobAppProvisioningConfigur
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c9ca12e3d799c666ad7b61d9a0aa400ae2b566ca
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: dcc683aa78c0f4de1c1d8d579482971411726876
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30171390"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30960871"
 ---
 # <a name="update-ioslobappprovisioningconfigurationassignment"></a>Atualizar iosLobAppProvisioningConfigurationAssignment
 
@@ -20,7 +20,7 @@ ms.locfileid: "30171390"
 Atualiza as propriedades de um objeto [iosLobAppProvisioningConfigurationAssignment](../resources/intune-apps-ioslobappprovisioningconfigurationassignment.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

@@ -4,12 +4,12 @@ description: Criar um novo objeto windowsKioskConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 237bf64f2ccb90304bb03f0e7ab9b7b5ed9197c0
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: b63e58c1b13b64a8869740d136597c46fa636a3e
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30572149"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30962509"
 ---
 # <a name="create-windowskioskconfiguration"></a>Criar windowsKioskConfiguration
 
@@ -20,7 +20,7 @@ ms.locfileid: "30572149"
 Criar um novo objeto [windowsKioskConfiguration](../resources/intune-deviceconfig-windowskioskconfiguration.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windowsK
 |:---|:---|:---|
 |id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |descrição|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
@@ -65,8 +65,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windowsK
 |kioskBrowserEnableNavigationButtons|Boolean|Habilite os botões de navegação do navegador quiosque (avançar/voltar). Por padrão, os botões de navegação estão desabilitados.|
 |kioskBrowserEnableEndSessionButton|Boolean|Habilite o botão encerrar sessão do navegador quiosque. Por padrão, o botão encerrar sessão está desabilitado.|
 |kioskBrowserRestartOnIdleTimeInMinutes|Int32|Especificar o número de minutos que a sessão ficará ociosa até que o navegador quiosque seja reiniciado em um estado novo.  Os valores válidos são 1-1440. Valores válidos de 1 a 1440|
-|kioskBrowserBlockedURLs|Coleção de cadeias de caracteres|Especificar URLs às quais os navegadores quiosques não devem navegar|
-|kioskBrowserBlockedUrlExceptions|Coleção de cadeias de caracteres|Especificar URLs às quais o navegador de quiosque pode navegar|
+|kioskBrowserBlockedURLs|Coleção String|Especificar URLs às quais os navegadores quiosques não devem navegar|
+|kioskBrowserBlockedUrlExceptions|Coleção String|Especificar URLs às quais o navegador de quiosque pode navegar|
 |edgeKioskEnablePublicBrowsing|Boolean|Habilitar modo quiosque de navegação pública para o navegador Microsoft Edge. O padrão é false.|
 
 

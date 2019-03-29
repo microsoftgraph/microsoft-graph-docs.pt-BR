@@ -4,12 +4,12 @@ description: Exclui deviceInstallState.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a621b0667661a657e4c0680e513c6cdefc92eea6
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 675d62032a9e5bd4543a098445fbf62bf0853f70
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30152700"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30965400"
 ---
 # <a name="delete-deviceinstallstate"></a>Excluir deviceInstallState
 
@@ -20,7 +20,7 @@ ms.locfileid: "30152700"
 Exclui [deviceInstallState](../resources/intune-books-deviceinstallstate.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

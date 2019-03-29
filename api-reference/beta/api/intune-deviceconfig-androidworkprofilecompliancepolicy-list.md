@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos na entidadeandroidwork
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c106b70423874ef58d4221df4dedbbf3e701b33c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 71215880a03e91e94da0595748fae5e6f486803b
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172286"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30961494"
 ---
 # <a name="list-androidworkprofilecompliancepolicies"></a>Listar androidWorkProfileCompliancePolicies
 
@@ -20,7 +20,7 @@ ms.locfileid: "30172286"
 Listar Propriedades e relações dos objetos [na entidadeandroidworkprofilecompliancepolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

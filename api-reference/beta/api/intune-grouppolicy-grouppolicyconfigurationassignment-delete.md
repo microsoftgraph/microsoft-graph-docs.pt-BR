@@ -4,12 +4,12 @@ description: Exclui groupPolicyConfigurationAssignment.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 34b2e411107783b43f42ebd83268f0a53e3537fc
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 56088b51ca36726eaafb10080aa316c7b26e70c9
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30174752"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30962964"
 ---
 # <a name="delete-grouppolicyconfigurationassignment"></a>Excluir groupPolicyConfigurationAssignment
 
@@ -20,7 +20,7 @@ ms.locfileid: "30174752"
 Exclui [groupPolicyConfigurationAssignment](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

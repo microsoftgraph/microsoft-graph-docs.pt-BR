@@ -4,12 +4,12 @@ description: Listar propriedades e relações dos objetos detectedApp.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 96c25b5b78b983078c4b316d293447d3daf91c73
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 6a786161c209dddb4fc244870f704755ddd07f4e
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30150257"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30965050"
 ---
 # <a name="list-detectedapps"></a>Listar detectedApps
 
@@ -20,7 +20,7 @@ ms.locfileid: "30150257"
 Listar propriedades e relações dos objetos [detectedApp](../resources/intune-devices-detectedapp.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

@@ -4,12 +4,12 @@ description: Listar propriedades e relações dos objetos windows10EnterpriseMod
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2d4a80addc249e7e9fe2e035ca68a3f415f51416
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: d1b2e72cf6fd7169b690550a5a4643b72380c454
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30252501"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30962271"
 ---
 # <a name="list-windows10enterprisemodernappmanagementconfigurations"></a>Listar windows10EnterpriseModernAppManagementConfigurations
 
@@ -18,7 +18,7 @@ ms.locfileid: "30252501"
 Listar propriedades e relações dos objetos [windows10EnterpriseModernAppManagementConfiguration](../resources/intune-deviceconfig-windows10enterprisemodernappmanagementconfiguration.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto deviceConfigurationD
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fb74ad2d5d765b7e15d8e928a2e8117d39ae3d5c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 838a20339e973b51f58aac5f70f1c1ab5ec21227
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30143096"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30961305"
 ---
 # <a name="get-deviceconfigurationdevicestatus"></a>Acessar deviceConfigurationDeviceStatus
 
@@ -20,7 +20,7 @@ ms.locfileid: "30143096"
 Leia as propriedades e as relações do objeto [deviceConfigurationDeviceStatus](../resources/intune-deviceconfig-deviceconfigurationdevicestatus.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

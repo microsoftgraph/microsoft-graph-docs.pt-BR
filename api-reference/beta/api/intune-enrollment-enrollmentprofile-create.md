@@ -4,12 +4,12 @@ description: Criar um novo objeto enrollmentProfile.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b38fe9bd6d418823cb2e94aa3fc8ac161ce471c0
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 2fea367f3a4978d02a117edc6de5ebc70466000c
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30175112"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30962873"
 ---
 # <a name="create-enrollmentprofile"></a>Criar enrollmentProfile
 
@@ -20,7 +20,7 @@ ms.locfileid: "30175112"
 Criar um novo objeto [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -50,13 +50,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar enrollme
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O GUID do objeto.|
+|id|Cadeia de caracteres|O GUID do objeto.|
 |displayName|String|Nome do perfil|
-|description|Cadeia de caracteres|Descrição do perfil|
-|requiresUserAuthentication|Booliano|Indica se o perfil requer autenticação do usuário|
+|descrição|String|Descrição do perfil|
+|requiresUserAuthentication|Boolean|Indica se o perfil requer autenticação do usuário|
 |configurationEndpointUrl|String|URL de ponto de extremidade de configuração a ser usada para registro|
-|Enableauthenticationviacompanyportal foi adicionada|Booliano|Indica a autenticação com o assistente de configuração da Apple em vez do portal da empresa.|
-|requireCompanyPortalOnSetupAssistantEnrolledDevices|Booliano|Indica que o portal da empresa é necessário no assistente de configuração dispositivos registrados|
+|Enableauthenticationviacompanyportal foi adicionada|Boolean|Indica a autenticação com o assistente de configuração da Apple em vez do portal da empresa.|
+|requireCompanyPortalOnSetupAssistantEnrolledDevices|Boolean|Indica que o portal da empresa é necessário no assistente de configuração dispositivos registrados|
 
 
 
