@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto remoteAssistancePart
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9a796cf6ca84e3364bb2322d846bae2ccf57e754
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: b9ebe24dd668eab75bfb45f8cdd34b25428f15b9
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30262829"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30976250"
 ---
 # <a name="get-remoteassistancepartner"></a>Acessar remoteAssistancePartner
 
@@ -18,7 +18,7 @@ ms.locfileid: "30262829"
 Leia as propriedades e as relações do objeto [remoteAssistancePartner](../resources/intune-remoteassistance-remoteassistancepartner.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

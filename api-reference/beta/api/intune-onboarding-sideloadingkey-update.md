@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto sideLoadingKey.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 96484084533e4a72d4cb3fb7430e41048d2defa2
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 408cc20d76eaa06260ddd1a0de485cc3a2d57abc
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30156816"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30977531"
 ---
 # <a name="update-sideloadingkey"></a>Atualizar sideLoadingKey
 
@@ -20,7 +20,7 @@ ms.locfileid: "30156816"
 Atualiza as propriedades de um objeto [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -51,9 +51,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [sideLoa
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|ID exclusiva da chave de carregamento do lado.|
-|valor|String|O valor da chave de carregamento do lado, é o valor de 5x5, separado por hiphens.|
+|value|Cadeia de caracteres|O valor da chave de carregamento do lado, é o valor de 5x5, separado por hiphens.|
 |displayName|String|Nome da chave de carregamento do lado exibido para os administradores do profissionais.|
-|description|String|Descrição da chave de carregamento do lado exibida para os administradores do profissionais..|
+|descrição|String|Descrição da chave de carregamento do lado exibida para os administradores do profissionais..|
 |totalActivation|Int32|Chave de carregamento do lado ativação total exibida para os administradores do profissionais.|
 |lastUpdatedDateTime|String|Chave de carregamento lateral última data de atualização exibida para os administradores do profissionais.|
 

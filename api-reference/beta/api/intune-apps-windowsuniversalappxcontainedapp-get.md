@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto windowsUniversalAppX
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b485328a7ed24e19d69ae869cc8488586cc54443
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: bed5522578cee4f414e352b73fcb295e106e1ec5
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30157831"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30976628"
 ---
 # <a name="get-windowsuniversalappxcontainedapp"></a>Obter windowsUniversalAppXContainedApp
 
@@ -20,7 +20,7 @@ ms.locfileid: "30157831"
 Leia as propriedades e as relações do objeto [windowsUniversalAppXContainedApp](../resources/intune-apps-windowsuniversalappxcontainedapp.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

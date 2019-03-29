@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto androidForWorkScepCe
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f9018211899a652f8c425cc376c6199d7ba34467
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 490c5a586f150f538b44596b99c6b48075b73c4b
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30145350"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30976306"
 ---
 # <a name="get-androidforworkscepcertificateprofile"></a>Obter androidForWorkScepCertificateProfile
 
@@ -20,7 +20,7 @@ ms.locfileid: "30145350"
 Leia as propriedades e as relações do objeto [androidForWorkScepCertificateProfile](../resources/intune-deviceconfig-androidforworkscepcertificateprofile.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

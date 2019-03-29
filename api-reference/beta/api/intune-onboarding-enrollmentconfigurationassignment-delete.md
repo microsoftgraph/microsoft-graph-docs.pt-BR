@@ -4,12 +4,12 @@ description: Exclui enrollmentConfigurationAssignment.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 513971a3a574597c3c6c46efd9a4b06ecb8d4e1f
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e55bd1c03007bd4c264ea8c7bcb949ebe964d44a
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30143299"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30973478"
 ---
 # <a name="delete-enrollmentconfigurationassignment"></a>Excluir enrollmentConfigurationAssignment
 
@@ -20,7 +20,7 @@ ms.locfileid: "30143299"
 Exclui [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

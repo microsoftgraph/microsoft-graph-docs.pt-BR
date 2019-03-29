@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos deviceConfigurationGro
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2f57e967cfac20ae32bf66ed421114e8d109e8ca
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 2f5d8262aa3b8c0cc19c4c85631a0a23a7aa5ba8
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30171964"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30976537"
 ---
 # <a name="list-deviceconfigurationgroupassignments"></a>Listar deviceConfigurationGroupAssignments
 
@@ -20,7 +20,7 @@ ms.locfileid: "30171964"
 Listar Propriedades e relações dos objetos [deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

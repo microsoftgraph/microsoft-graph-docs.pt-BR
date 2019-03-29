@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto managedApp.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: af536d421cda4db01979ed07789db382b35f805f
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ce0022ee16882cf4876df07161182f0ea461df70
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30174302"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30976698"
 ---
 # <a name="get-managedapp"></a>Acessar managedApp
 
@@ -20,7 +20,7 @@ ms.locfileid: "30174302"
 Leia as propriedades e as relações do objeto [managedApp](../resources/intune-apps-managedapp.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

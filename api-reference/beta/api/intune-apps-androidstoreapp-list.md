@@ -4,12 +4,12 @@ description: Listar propriedades e relações dos objetos androidStoreApp.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ec2c67e09eb07e126b2b3bcfb5d4ff0867ca3d16
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: f0ab42416053a69795cb660db4eac3ab77fb6ca6
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30148045"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30977258"
 ---
 # <a name="list-androidstoreapps"></a>Listar androidStoreApps
 
@@ -20,7 +20,7 @@ ms.locfileid: "30148045"
 Listar propriedades e relações dos objetos [androidStoreApp](../resources/intune-apps-androidstoreapp.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

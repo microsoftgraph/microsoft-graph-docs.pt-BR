@@ -4,12 +4,12 @@ description: Exclui androidForWorkGmailEasConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f4fb6945bee23a08017d5e8cd3f777b887963ae5
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 25159b2e372d2da345b21ae5f8124fda6e07c07e
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30156515"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30976187"
 ---
 # <a name="delete-androidforworkgmaileasconfiguration"></a>Excluir androidForWorkGmailEasConfiguration
 
@@ -20,7 +20,7 @@ ms.locfileid: "30156515"
 Exclui [androidForWorkGmailEasConfiguration](../resources/intune-deviceconfig-androidforworkgmaileasconfiguration.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

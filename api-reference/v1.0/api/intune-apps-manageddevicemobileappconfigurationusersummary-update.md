@@ -4,12 +4,12 @@ description: Atualizar as propriedades de um objeto managedDeviceMobileAppConfig
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b5789ce7e4daca6719fa106159f03157a6a0469a
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: fc12a1322dadc4cfafd28b64ec35002ece2ee34e
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30260946"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30977895"
 ---
 # <a name="update-manageddevicemobileappconfigurationusersummary"></a>Atualizar managedDeviceMobileAppConfigurationUserSummary
 
@@ -18,7 +18,7 @@ ms.locfileid: "30260946"
 Atualizar as propriedades de um objeto [managedDeviceMobileAppConfigurationUserSummary](../resources/intune-apps-manageddevicemobileappconfigurationusersummary.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

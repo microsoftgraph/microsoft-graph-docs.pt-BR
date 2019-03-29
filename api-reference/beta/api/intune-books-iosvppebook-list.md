@@ -1,15 +1,15 @@
 ---
 title: Listar iosVppEBooks
-description: Lista propriedades e relações dos objetos iosVppEBook.
+description: Listar propriedades e relações dos objetos iosVppEBook.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3ff43f2f398a4e89e37821867634c690d559ee67
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 41e55b35fd56d7353e179f2c3db9e2e8f6d304aa
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30150663"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30977615"
 ---
 # <a name="list-iosvppebooks"></a>Listar iosVppEBooks
 
@@ -20,7 +20,7 @@ ms.locfileid: "30150663"
 Listar propriedades e relações dos objetos [iosVppEBook](../resources/intune-books-iosvppebook.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

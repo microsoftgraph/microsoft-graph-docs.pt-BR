@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto macOSEndpointProtect
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ce44f08ad0e54e824afa9eb3b7b5cd778d3dec39
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 6cd9c4fe87492e905e819727cd2c6127072bbcf3
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30160337"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30975830"
 ---
 # <a name="get-macosendpointprotectionconfiguration"></a>Obter macOSEndpointProtectionConfiguration
 
@@ -20,7 +20,7 @@ ms.locfileid: "30160337"
 Leia as propriedades e as relações do objeto [macOSEndpointProtectionConfiguration](../resources/intune-deviceconfig-macosendpointprotectionconfiguration.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

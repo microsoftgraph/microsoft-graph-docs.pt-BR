@@ -4,12 +4,12 @@ description: Criar um novo objeto auditEvent.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b45ba33b93ba56c3f07e1946ef8a7ae2e0df11ef
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: a11ca29ca4d251285ef4f6a1842b9d7174ee66f5
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30149872"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30972680"
 ---
 # <a name="create-auditevent"></a>Criar auditEvent
 
@@ -20,7 +20,7 @@ ms.locfileid: "30149872"
 Criar um novo objeto [auditEvent](../resources/intune-auditing-auditevent.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -58,10 +58,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar auditEve
 |activityDateTime|DateTimeOffset|A hora e data em UTC em que a atividade foi executada.|
 |activityType|String|O tipo de atividade que foi executada.|
 |activityOperationType|String|O tipo de operação HTTP da atividade.|
-|activityResult|String|O resultado da atividade.|
+|activityResult|Cadeia de caracteres|O resultado da atividade.|
 |correlationId|Guid|A ID da solicitação de cliente usada para correlacionar a atividade dentro do sistema.|
 |recursos|Coleção [auditResource](../resources/intune-auditing-auditresource.md)|Recursos em modificação.|
-|Ferramentas para desenvolvedores|Cadeia de caracteres|Categoria de auditoria.|
+|Ferramentas para desenvolvedores|String|Categoria de auditoria.|
 
 
 

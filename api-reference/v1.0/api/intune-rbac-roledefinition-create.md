@@ -4,12 +4,12 @@ description: Criar um novo objeto roleDefinition
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 42954bdfaf2146fc286be1685244188f8a9d8cf5
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 4037ad311ed57b1c019f4cce7c423f5f81c4dd56
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30261940"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30973751"
 ---
 # <a name="create-roledefinition"></a>Criar roleDefinition
 
@@ -18,7 +18,7 @@ ms.locfileid: "30261940"
 Criar um novo objeto [roleDefinition](../resources/intune-rbac-roledefinition.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -48,9 +48,9 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar roleDefinition.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade. É somente leitura e é gerada automaticamente.|
-|displayName|String|Nome de exibição da definição de Função.|
-|description|Cadeia de caracteres|Descrição da definição de Função.|
+|id|String|Chave da entidade. É somente leitura e gerada automaticamente.|
+|displayName|Cadeia de caracteres|Nome de exibição da definição de Função.|
+|descrição|String|Descrição da definição de Função.|
 |rolePermissions|Coleção [rolePermission](../resources/intune-rbac-rolepermission.md)|Lista de Permissões de Função que esta função está autorizada a executar. Elas devem corresponder ao actionName definido como parte de rolePermission.|
 |isBuiltIn|Booliano|Tipo de Função. Defina como True se for uma definição de função interna ou como False se for uma definição de função personalizada.|
 

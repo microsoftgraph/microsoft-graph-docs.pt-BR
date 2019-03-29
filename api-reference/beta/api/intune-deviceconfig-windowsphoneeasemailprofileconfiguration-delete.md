@@ -4,12 +4,12 @@ description: Exclui windowsPhoneEASEmailProfileConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d955822778add2383ad02d8b08f26239e9abad18
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 4ff615700daafc4ab10b5c7372c24d0d80d8fd72
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30139449"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30976180"
 ---
 # <a name="delete-windowsphoneeasemailprofileconfiguration"></a>Excluir windowsPhoneEASEmailProfileConfiguration
 
@@ -20,7 +20,7 @@ ms.locfileid: "30139449"
 Exclui [windowsPhoneEASEmailProfileConfiguration](../resources/intune-deviceconfig-windowsphoneeasemailprofileconfiguration.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

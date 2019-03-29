@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos iosPkcsCertificateProf
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 820fff69109234b70787488fcbf3c2cadee6f667
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 49d7311d81edca24335c211c55244815246d08aa
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30164600"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30975809"
 ---
 # <a name="list-iospkcscertificateprofiles"></a>Listar iosPkcsCertificateProfiles
 
@@ -20,7 +20,7 @@ ms.locfileid: "30164600"
 Listar Propriedades e relações dos objetos [iosPkcsCertificateProfile](../resources/intune-deviceconfig-iospkcscertificateprofile.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

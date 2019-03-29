@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto deviceManagement.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: e4a07c2645686722c59e45f039aacb9dc3627a5d
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: 09563eeced6f557df2c2e40f126623f974cea2d7
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30570616"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30976502"
 ---
 # <a name="get-devicemanagement"></a>Acessar deviceManagement
 
@@ -21,7 +21,7 @@ Leia as propriedades e as relações do objeto [deviceManagement](../resources/i
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo&nbsp;&nbsp;de permissão (&nbsp;por fluxo de trabalho) | Permissões (de privilégios máximos a mínimos) |
 |:---|:---|
