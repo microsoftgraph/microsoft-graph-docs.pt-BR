@@ -4,31 +4,31 @@ description: Criar um novo objeto dataSharingConsent.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7002b45e1847b63a8692dff6cd7e16b2b9b882c5
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 0bb20f6e6029e33483d28545bf3f9be56b052a8f
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30167106"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30978077"
 ---
-# <a name="create-datasharingconsent"></a><span data-ttu-id="58b8a-103">Criar dataSharingConsent</span><span class="sxs-lookup"><span data-stu-id="58b8a-103">Create dataSharingConsent</span></span>
+# <a name="create-datasharingconsent"></a><span data-ttu-id="918e6-103">Criar dataSharingConsent</span><span class="sxs-lookup"><span data-stu-id="918e6-103">Create dataSharingConsent</span></span>
 
-> <span data-ttu-id="58b8a-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="58b8a-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="918e6-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="918e6-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="58b8a-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="58b8a-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="918e6-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="918e6-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="58b8a-106">Criar um novo objeto [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) .</span><span class="sxs-lookup"><span data-stu-id="58b8a-106">Create a new [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) object.</span></span>
+<span data-ttu-id="918e6-106">Criar um novo objeto [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) .</span><span class="sxs-lookup"><span data-stu-id="918e6-106">Create a new [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="58b8a-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="58b8a-107">Prerequisites</span></span>
-<span data-ttu-id="58b8a-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="58b8a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="918e6-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="918e6-107">Prerequisites</span></span>
+<span data-ttu-id="918e6-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="918e6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="58b8a-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="58b8a-110">Permission type</span></span>|<span data-ttu-id="58b8a-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="58b8a-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="918e6-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="918e6-110">Permission type</span></span>|<span data-ttu-id="918e6-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="918e6-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="58b8a-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="58b8a-112">Delegated (work or school account)</span></span>|<span data-ttu-id="58b8a-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="58b8a-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="58b8a-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="58b8a-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="58b8a-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="58b8a-115">Not supported.</span></span>|
-|<span data-ttu-id="58b8a-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="58b8a-116">Application</span></span>|<span data-ttu-id="58b8a-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="58b8a-117">Not supported.</span></span>|
+|<span data-ttu-id="918e6-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="918e6-112">Delegated (work or school account)</span></span>|<span data-ttu-id="918e6-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="918e6-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="918e6-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="918e6-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="918e6-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="918e6-115">Not supported.</span></span>|
+|<span data-ttu-id="918e6-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="918e6-116">Application</span></span>|<span data-ttu-id="918e6-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="918e6-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="58b8a-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="58b8a-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="918e6-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="918e6-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,36 +37,36 @@ ms.locfileid: "30167106"
 POST /deviceManagement/dataSharingConsents
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="58b8a-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="58b8a-119">Request headers</span></span>
-|<span data-ttu-id="58b8a-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="58b8a-120">Header</span></span>|<span data-ttu-id="58b8a-121">Valor</span><span class="sxs-lookup"><span data-stu-id="58b8a-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="918e6-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="918e6-119">Request headers</span></span>
+|<span data-ttu-id="918e6-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="918e6-120">Header</span></span>|<span data-ttu-id="918e6-121">Valor</span><span class="sxs-lookup"><span data-stu-id="918e6-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="58b8a-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="58b8a-122">Authorization</span></span>|<span data-ttu-id="58b8a-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="58b8a-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="58b8a-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="58b8a-124">Accept</span></span>|<span data-ttu-id="58b8a-125">application/json</span><span class="sxs-lookup"><span data-stu-id="58b8a-125">application/json</span></span>|
+|<span data-ttu-id="918e6-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="918e6-122">Authorization</span></span>|<span data-ttu-id="918e6-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="918e6-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="918e6-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="918e6-124">Accept</span></span>|<span data-ttu-id="918e6-125">application/json</span><span class="sxs-lookup"><span data-stu-id="918e6-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="58b8a-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="58b8a-126">Request body</span></span>
-<span data-ttu-id="58b8a-127">No corpo da solicitação, forneça uma representação JSON do objeto dataSharingConsent.</span><span class="sxs-lookup"><span data-stu-id="58b8a-127">In the request body, supply a JSON representation for the dataSharingConsent object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="918e6-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="918e6-126">Request body</span></span>
+<span data-ttu-id="918e6-127">No corpo da solicitação, forneça uma representação JSON do objeto dataSharingConsent.</span><span class="sxs-lookup"><span data-stu-id="918e6-127">In the request body, supply a JSON representation for the dataSharingConsent object.</span></span>
 
-<span data-ttu-id="58b8a-128">A tabela a seguir mostra as propriedades que são necessárias ao criar dataSharingConsent.</span><span class="sxs-lookup"><span data-stu-id="58b8a-128">The following table shows the properties that are required when you create the dataSharingConsent.</span></span>
+<span data-ttu-id="918e6-128">A tabela a seguir mostra as propriedades que são necessárias ao criar dataSharingConsent.</span><span class="sxs-lookup"><span data-stu-id="918e6-128">The following table shows the properties that are required when you create the dataSharingConsent.</span></span>
 
-|<span data-ttu-id="58b8a-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="58b8a-129">Property</span></span>|<span data-ttu-id="58b8a-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="58b8a-130">Type</span></span>|<span data-ttu-id="58b8a-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="58b8a-131">Description</span></span>|
+|<span data-ttu-id="918e6-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="918e6-129">Property</span></span>|<span data-ttu-id="918e6-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="918e6-130">Type</span></span>|<span data-ttu-id="918e6-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="918e6-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="58b8a-132">id</span><span class="sxs-lookup"><span data-stu-id="58b8a-132">id</span></span>|<span data-ttu-id="58b8a-133">String</span><span class="sxs-lookup"><span data-stu-id="58b8a-133">String</span></span>|<span data-ttu-id="58b8a-134">A ID de consentimento de compartilhamento de dados</span><span class="sxs-lookup"><span data-stu-id="58b8a-134">The data sharing consent Id</span></span>|
-|<span data-ttu-id="58b8a-135">objectDisplayname</span><span class="sxs-lookup"><span data-stu-id="58b8a-135">serviceDisplayName</span></span>|<span data-ttu-id="58b8a-136">String</span><span class="sxs-lookup"><span data-stu-id="58b8a-136">String</span></span>|<span data-ttu-id="58b8a-137">O nome de exibição do fluxo de trabalho do serviço</span><span class="sxs-lookup"><span data-stu-id="58b8a-137">The display name of the service work flow</span></span>|
-|<span data-ttu-id="58b8a-138">termsUrl</span><span class="sxs-lookup"><span data-stu-id="58b8a-138">termsUrl</span></span>|<span data-ttu-id="58b8a-139">String</span><span class="sxs-lookup"><span data-stu-id="58b8a-139">String</span></span>|<span data-ttu-id="58b8a-140">O TermsUrl para o consentimento de compartilhamento de dados</span><span class="sxs-lookup"><span data-stu-id="58b8a-140">The TermsUrl for the data sharing consent</span></span>|
-|<span data-ttu-id="58b8a-141">granted</span><span class="sxs-lookup"><span data-stu-id="58b8a-141">granted</span></span>|<span data-ttu-id="58b8a-142">Boolean</span><span class="sxs-lookup"><span data-stu-id="58b8a-142">Boolean</span></span>|<span data-ttu-id="58b8a-143">O Estado concedido para o consentimento de compartilhamento de dados</span><span class="sxs-lookup"><span data-stu-id="58b8a-143">The granted state for the data sharing consent</span></span>|
-|<span data-ttu-id="58b8a-144">grantDateTime</span><span class="sxs-lookup"><span data-stu-id="58b8a-144">grantDateTime</span></span>|<span data-ttu-id="58b8a-145">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="58b8a-145">DateTimeOffset</span></span>|<span data-ttu-id="58b8a-146">O consentimento de tempo foi concedido para esta conta</span><span class="sxs-lookup"><span data-stu-id="58b8a-146">The time consent was granted for this account</span></span>|
-|<span data-ttu-id="58b8a-147">grantedByUpn</span><span class="sxs-lookup"><span data-stu-id="58b8a-147">grantedByUpn</span></span>|<span data-ttu-id="58b8a-148">String</span><span class="sxs-lookup"><span data-stu-id="58b8a-148">String</span></span>|<span data-ttu-id="58b8a-149">O UPN do usuário que concedeu o consentimento para esta conta</span><span class="sxs-lookup"><span data-stu-id="58b8a-149">The Upn of the user that granted consent for this account</span></span>|
-|<span data-ttu-id="58b8a-150">grantedByUserId</span><span class="sxs-lookup"><span data-stu-id="58b8a-150">grantedByUserId</span></span>|<span data-ttu-id="58b8a-151">String</span><span class="sxs-lookup"><span data-stu-id="58b8a-151">String</span></span>|<span data-ttu-id="58b8a-152">O UserId do usuário que concedeu o consentimento para esta conta</span><span class="sxs-lookup"><span data-stu-id="58b8a-152">The UserId of the user that granted consent for this account</span></span>|
+|<span data-ttu-id="918e6-132">id</span><span class="sxs-lookup"><span data-stu-id="918e6-132">id</span></span>|<span data-ttu-id="918e6-133">String</span><span class="sxs-lookup"><span data-stu-id="918e6-133">String</span></span>|<span data-ttu-id="918e6-134">A ID de consentimento de compartilhamento de dados</span><span class="sxs-lookup"><span data-stu-id="918e6-134">The data sharing consent Id</span></span>|
+|<span data-ttu-id="918e6-135">objectDisplayname</span><span class="sxs-lookup"><span data-stu-id="918e6-135">serviceDisplayName</span></span>|<span data-ttu-id="918e6-136">String</span><span class="sxs-lookup"><span data-stu-id="918e6-136">String</span></span>|<span data-ttu-id="918e6-137">O nome de exibição do fluxo de trabalho do serviço</span><span class="sxs-lookup"><span data-stu-id="918e6-137">The display name of the service work flow</span></span>|
+|<span data-ttu-id="918e6-138">termsUrl</span><span class="sxs-lookup"><span data-stu-id="918e6-138">termsUrl</span></span>|<span data-ttu-id="918e6-139">String</span><span class="sxs-lookup"><span data-stu-id="918e6-139">String</span></span>|<span data-ttu-id="918e6-140">O TermsUrl para o consentimento de compartilhamento de dados</span><span class="sxs-lookup"><span data-stu-id="918e6-140">The TermsUrl for the data sharing consent</span></span>|
+|<span data-ttu-id="918e6-141">granted</span><span class="sxs-lookup"><span data-stu-id="918e6-141">granted</span></span>|<span data-ttu-id="918e6-142">Boolean</span><span class="sxs-lookup"><span data-stu-id="918e6-142">Boolean</span></span>|<span data-ttu-id="918e6-143">O Estado concedido para o consentimento de compartilhamento de dados</span><span class="sxs-lookup"><span data-stu-id="918e6-143">The granted state for the data sharing consent</span></span>|
+|<span data-ttu-id="918e6-144">grantDateTime</span><span class="sxs-lookup"><span data-stu-id="918e6-144">grantDateTime</span></span>|<span data-ttu-id="918e6-145">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="918e6-145">DateTimeOffset</span></span>|<span data-ttu-id="918e6-146">O consentimento de tempo foi concedido para esta conta</span><span class="sxs-lookup"><span data-stu-id="918e6-146">The time consent was granted for this account</span></span>|
+|<span data-ttu-id="918e6-147">grantedByUpn</span><span class="sxs-lookup"><span data-stu-id="918e6-147">grantedByUpn</span></span>|<span data-ttu-id="918e6-148">String</span><span class="sxs-lookup"><span data-stu-id="918e6-148">String</span></span>|<span data-ttu-id="918e6-149">O UPN do usuário que concedeu o consentimento para esta conta</span><span class="sxs-lookup"><span data-stu-id="918e6-149">The Upn of the user that granted consent for this account</span></span>|
+|<span data-ttu-id="918e6-150">grantedByUserId</span><span class="sxs-lookup"><span data-stu-id="918e6-150">grantedByUserId</span></span>|<span data-ttu-id="918e6-151">String</span><span class="sxs-lookup"><span data-stu-id="918e6-151">String</span></span>|<span data-ttu-id="918e6-152">O UserId do usuário que concedeu o consentimento para esta conta</span><span class="sxs-lookup"><span data-stu-id="918e6-152">The UserId of the user that granted consent for this account</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="58b8a-153">Resposta</span><span class="sxs-lookup"><span data-stu-id="58b8a-153">Response</span></span>
-<span data-ttu-id="58b8a-154">Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="58b8a-154">If successful, this method returns a `201 Created` response code and a [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="918e6-153">Resposta</span><span class="sxs-lookup"><span data-stu-id="918e6-153">Response</span></span>
+<span data-ttu-id="918e6-154">Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="918e6-154">If successful, this method returns a `201 Created` response code and a [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="58b8a-155">Exemplo</span><span class="sxs-lookup"><span data-stu-id="58b8a-155">Example</span></span>
+## <a name="example"></a><span data-ttu-id="918e6-155">Exemplo</span><span class="sxs-lookup"><span data-stu-id="918e6-155">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="58b8a-156">Solicitação</span><span class="sxs-lookup"><span data-stu-id="58b8a-156">Request</span></span>
-<span data-ttu-id="58b8a-157">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="58b8a-157">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="918e6-156">Solicitação</span><span class="sxs-lookup"><span data-stu-id="918e6-156">Request</span></span>
+<span data-ttu-id="918e6-157">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="918e6-157">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/dataSharingConsents
 Content-type: application/json
@@ -83,8 +83,8 @@ Content-length: 333
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="58b8a-158">Resposta</span><span class="sxs-lookup"><span data-stu-id="58b8a-158">Response</span></span>
-<span data-ttu-id="58b8a-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="58b8a-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="918e6-158">Resposta</span><span class="sxs-lookup"><span data-stu-id="918e6-158">Response</span></span>
+<span data-ttu-id="918e6-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="918e6-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
