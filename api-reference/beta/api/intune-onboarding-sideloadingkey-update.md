@@ -4,31 +4,31 @@ description: Atualiza as propriedades de um objeto sideLoadingKey.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 96484084533e4a72d4cb3fb7430e41048d2defa2
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 408cc20d76eaa06260ddd1a0de485cc3a2d57abc
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30156816"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30977531"
 ---
-# <a name="update-sideloadingkey"></a><span data-ttu-id="c5d21-103">Atualizar sideLoadingKey</span><span class="sxs-lookup"><span data-stu-id="c5d21-103">Update sideLoadingKey</span></span>
+# <a name="update-sideloadingkey"></a><span data-ttu-id="f1369-103">Atualizar sideLoadingKey</span><span class="sxs-lookup"><span data-stu-id="f1369-103">Update sideLoadingKey</span></span>
 
-> <span data-ttu-id="c5d21-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="c5d21-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="f1369-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="f1369-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="c5d21-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="c5d21-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="f1369-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="f1369-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="c5d21-106">Atualiza as propriedades de um objeto [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) .</span><span class="sxs-lookup"><span data-stu-id="c5d21-106">Update the properties of a [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) object.</span></span>
+<span data-ttu-id="f1369-106">Atualiza as propriedades de um objeto [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) .</span><span class="sxs-lookup"><span data-stu-id="f1369-106">Update the properties of a [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="c5d21-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="c5d21-107">Prerequisites</span></span>
-<span data-ttu-id="c5d21-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="c5d21-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="f1369-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="f1369-107">Prerequisites</span></span>
+<span data-ttu-id="f1369-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f1369-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c5d21-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="c5d21-110">Permission type</span></span>|<span data-ttu-id="c5d21-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="c5d21-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="f1369-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="f1369-110">Permission type</span></span>|<span data-ttu-id="f1369-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="f1369-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="c5d21-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="c5d21-112">Delegated (work or school account)</span></span>|<span data-ttu-id="c5d21-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c5d21-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="c5d21-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="c5d21-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="c5d21-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c5d21-115">Not supported.</span></span>|
-|<span data-ttu-id="c5d21-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="c5d21-116">Application</span></span>|<span data-ttu-id="c5d21-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c5d21-117">Not supported.</span></span>|
+|<span data-ttu-id="f1369-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="f1369-112">Delegated (work or school account)</span></span>|<span data-ttu-id="f1369-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f1369-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="f1369-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="f1369-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="f1369-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="f1369-115">Not supported.</span></span>|
+|<span data-ttu-id="f1369-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="f1369-116">Application</span></span>|<span data-ttu-id="f1369-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="f1369-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="c5d21-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="c5d21-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f1369-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="f1369-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,35 +37,35 @@ ms.locfileid: "30156816"
 PATCH /deviceAppManagement/sideLoadingKeys/{sideLoadingKeyId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="c5d21-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="c5d21-119">Request headers</span></span>
-|<span data-ttu-id="c5d21-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="c5d21-120">Header</span></span>|<span data-ttu-id="c5d21-121">Valor</span><span class="sxs-lookup"><span data-stu-id="c5d21-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="f1369-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="f1369-119">Request headers</span></span>
+|<span data-ttu-id="f1369-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="f1369-120">Header</span></span>|<span data-ttu-id="f1369-121">Valor</span><span class="sxs-lookup"><span data-stu-id="f1369-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="c5d21-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="c5d21-122">Authorization</span></span>|<span data-ttu-id="c5d21-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="c5d21-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="c5d21-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="c5d21-124">Accept</span></span>|<span data-ttu-id="c5d21-125">application/json</span><span class="sxs-lookup"><span data-stu-id="c5d21-125">application/json</span></span>|
+|<span data-ttu-id="f1369-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="f1369-122">Authorization</span></span>|<span data-ttu-id="f1369-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="f1369-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="f1369-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="f1369-124">Accept</span></span>|<span data-ttu-id="f1369-125">application/json</span><span class="sxs-lookup"><span data-stu-id="f1369-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="c5d21-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="c5d21-126">Request body</span></span>
-<span data-ttu-id="c5d21-127">No corpo da solicitação, forneça uma representação JSON do objeto [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) .</span><span class="sxs-lookup"><span data-stu-id="c5d21-127">In the request body, supply a JSON representation for the [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f1369-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="f1369-126">Request body</span></span>
+<span data-ttu-id="f1369-127">No corpo da solicitação, forneça uma representação JSON do objeto [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) .</span><span class="sxs-lookup"><span data-stu-id="f1369-127">In the request body, supply a JSON representation for the [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) object.</span></span>
 
-<span data-ttu-id="c5d21-128">A tabela a seguir mostra as propriedades que são necessárias ao criar [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md).</span><span class="sxs-lookup"><span data-stu-id="c5d21-128">The following table shows the properties that are required when you create the [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md).</span></span>
+<span data-ttu-id="f1369-128">A tabela a seguir mostra as propriedades que são necessárias ao criar [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md).</span><span class="sxs-lookup"><span data-stu-id="f1369-128">The following table shows the properties that are required when you create the [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md).</span></span>
 
-|<span data-ttu-id="c5d21-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="c5d21-129">Property</span></span>|<span data-ttu-id="c5d21-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="c5d21-130">Type</span></span>|<span data-ttu-id="c5d21-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="c5d21-131">Description</span></span>|
+|<span data-ttu-id="f1369-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="f1369-129">Property</span></span>|<span data-ttu-id="f1369-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="f1369-130">Type</span></span>|<span data-ttu-id="f1369-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="f1369-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="c5d21-132">id</span><span class="sxs-lookup"><span data-stu-id="c5d21-132">id</span></span>|<span data-ttu-id="c5d21-133">String</span><span class="sxs-lookup"><span data-stu-id="c5d21-133">String</span></span>|<span data-ttu-id="c5d21-134">ID exclusiva da chave de carregamento do lado.</span><span class="sxs-lookup"><span data-stu-id="c5d21-134">Side Loading Key Unique Id.</span></span>|
-|<span data-ttu-id="c5d21-135">valor</span><span class="sxs-lookup"><span data-stu-id="c5d21-135">value</span></span>|<span data-ttu-id="c5d21-136">String</span><span class="sxs-lookup"><span data-stu-id="c5d21-136">String</span></span>|<span data-ttu-id="c5d21-137">O valor da chave de carregamento do lado, é o valor de 5x5, separado por hiphens.</span><span class="sxs-lookup"><span data-stu-id="c5d21-137">Side Loading Key Value, it is 5x5 value, seperated by hiphens.</span></span>|
-|<span data-ttu-id="c5d21-138">displayName</span><span class="sxs-lookup"><span data-stu-id="c5d21-138">displayName</span></span>|<span data-ttu-id="c5d21-139">String</span><span class="sxs-lookup"><span data-stu-id="c5d21-139">String</span></span>|<span data-ttu-id="c5d21-140">Nome da chave de carregamento do lado exibido para os administradores do profissionais.</span><span class="sxs-lookup"><span data-stu-id="c5d21-140">Side Loading Key Name displayed to the ITPro Admins.</span></span>|
-|<span data-ttu-id="c5d21-141">description</span><span class="sxs-lookup"><span data-stu-id="c5d21-141">description</span></span>|<span data-ttu-id="c5d21-142">String</span><span class="sxs-lookup"><span data-stu-id="c5d21-142">String</span></span>|<span data-ttu-id="c5d21-143">Descrição da chave de carregamento do lado exibida para os administradores do profissionais..</span><span class="sxs-lookup"><span data-stu-id="c5d21-143">Side Loading Key description displayed to the ITPro Admins..</span></span>|
-|<span data-ttu-id="c5d21-144">totalActivation</span><span class="sxs-lookup"><span data-stu-id="c5d21-144">totalActivation</span></span>|<span data-ttu-id="c5d21-145">Int32</span><span class="sxs-lookup"><span data-stu-id="c5d21-145">Int32</span></span>|<span data-ttu-id="c5d21-146">Chave de carregamento do lado ativação total exibida para os administradores do profissionais.</span><span class="sxs-lookup"><span data-stu-id="c5d21-146">Side Loading Key Total Activation displayed to the ITPro Admins.</span></span>|
-|<span data-ttu-id="c5d21-147">lastUpdatedDateTime</span><span class="sxs-lookup"><span data-stu-id="c5d21-147">lastUpdatedDateTime</span></span>|<span data-ttu-id="c5d21-148">String</span><span class="sxs-lookup"><span data-stu-id="c5d21-148">String</span></span>|<span data-ttu-id="c5d21-149">Chave de carregamento lateral última data de atualização exibida para os administradores do profissionais.</span><span class="sxs-lookup"><span data-stu-id="c5d21-149">Side Loading Key Last Updated Date displayed to the ITPro Admins.</span></span>|
+|<span data-ttu-id="f1369-132">id</span><span class="sxs-lookup"><span data-stu-id="f1369-132">id</span></span>|<span data-ttu-id="f1369-133">String</span><span class="sxs-lookup"><span data-stu-id="f1369-133">String</span></span>|<span data-ttu-id="f1369-134">ID exclusiva da chave de carregamento do lado.</span><span class="sxs-lookup"><span data-stu-id="f1369-134">Side Loading Key Unique Id.</span></span>|
+|<span data-ttu-id="f1369-135">value</span><span class="sxs-lookup"><span data-stu-id="f1369-135">value</span></span>|<span data-ttu-id="f1369-136">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="f1369-136">String</span></span>|<span data-ttu-id="f1369-137">O valor da chave de carregamento do lado, é o valor de 5x5, separado por hiphens.</span><span class="sxs-lookup"><span data-stu-id="f1369-137">Side Loading Key Value, it is 5x5 value, seperated by hiphens.</span></span>|
+|<span data-ttu-id="f1369-138">displayName</span><span class="sxs-lookup"><span data-stu-id="f1369-138">displayName</span></span>|<span data-ttu-id="f1369-139">String</span><span class="sxs-lookup"><span data-stu-id="f1369-139">String</span></span>|<span data-ttu-id="f1369-140">Nome da chave de carregamento do lado exibido para os administradores do profissionais.</span><span class="sxs-lookup"><span data-stu-id="f1369-140">Side Loading Key Name displayed to the ITPro Admins.</span></span>|
+|<span data-ttu-id="f1369-141">descrição</span><span class="sxs-lookup"><span data-stu-id="f1369-141">description</span></span>|<span data-ttu-id="f1369-142">String</span><span class="sxs-lookup"><span data-stu-id="f1369-142">String</span></span>|<span data-ttu-id="f1369-143">Descrição da chave de carregamento do lado exibida para os administradores do profissionais..</span><span class="sxs-lookup"><span data-stu-id="f1369-143">Side Loading Key description displayed to the ITPro Admins..</span></span>|
+|<span data-ttu-id="f1369-144">totalActivation</span><span class="sxs-lookup"><span data-stu-id="f1369-144">totalActivation</span></span>|<span data-ttu-id="f1369-145">Int32</span><span class="sxs-lookup"><span data-stu-id="f1369-145">Int32</span></span>|<span data-ttu-id="f1369-146">Chave de carregamento do lado ativação total exibida para os administradores do profissionais.</span><span class="sxs-lookup"><span data-stu-id="f1369-146">Side Loading Key Total Activation displayed to the ITPro Admins.</span></span>|
+|<span data-ttu-id="f1369-147">lastUpdatedDateTime</span><span class="sxs-lookup"><span data-stu-id="f1369-147">lastUpdatedDateTime</span></span>|<span data-ttu-id="f1369-148">String</span><span class="sxs-lookup"><span data-stu-id="f1369-148">String</span></span>|<span data-ttu-id="f1369-149">Chave de carregamento lateral última data de atualização exibida para os administradores do profissionais.</span><span class="sxs-lookup"><span data-stu-id="f1369-149">Side Loading Key Last Updated Date displayed to the ITPro Admins.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="c5d21-150">Resposta</span><span class="sxs-lookup"><span data-stu-id="c5d21-150">Response</span></span>
-<span data-ttu-id="c5d21-151">Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="c5d21-151">If successful, this method returns a `200 OK` response code and an updated [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="f1369-150">Resposta</span><span class="sxs-lookup"><span data-stu-id="f1369-150">Response</span></span>
+<span data-ttu-id="f1369-151">Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="f1369-151">If successful, this method returns a `200 OK` response code and an updated [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c5d21-152">Exemplo</span><span class="sxs-lookup"><span data-stu-id="c5d21-152">Example</span></span>
+## <a name="example"></a><span data-ttu-id="f1369-152">Exemplo</span><span class="sxs-lookup"><span data-stu-id="f1369-152">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="c5d21-153">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c5d21-153">Request</span></span>
-<span data-ttu-id="c5d21-154">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="c5d21-154">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="f1369-153">Solicitação</span><span class="sxs-lookup"><span data-stu-id="f1369-153">Request</span></span>
+<span data-ttu-id="f1369-154">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="f1369-154">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/sideLoadingKeys/{sideLoadingKeyId}
 Content-type: application/json
@@ -81,8 +81,8 @@ Content-length: 246
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="c5d21-155">Resposta</span><span class="sxs-lookup"><span data-stu-id="c5d21-155">Response</span></span>
-<span data-ttu-id="c5d21-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="c5d21-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="f1369-155">Resposta</span><span class="sxs-lookup"><span data-stu-id="f1369-155">Response</span></span>
+<span data-ttu-id="f1369-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="f1369-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
