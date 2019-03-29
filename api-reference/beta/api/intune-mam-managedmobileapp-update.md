@@ -4,12 +4,12 @@ description: Atualizar as propriedades de um objeto managedMobileApp.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dfbeafd30626aa5de8679e27002eefbfdc49e4ee
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 378c28bfee54090fd0802ff4c5ae61b262adf41f
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30167197"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30972323"
 ---
 # <a name="update-managedmobileapp"></a>Atualizar managedMobileApp
 
@@ -20,7 +20,7 @@ ms.locfileid: "30167197"
 Atualizar as propriedades de um objeto [managedMobileApp](../resources/intune-mam-managedmobileapp.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -55,7 +55,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [managed
 |:---|:---|:---|
 |mobileAppIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|O identificador de um aplicativo com seu tipo de sistema operacional.|
 |id|String|Chave da entidade.|
-|version|String|Versão da entidade.|
+|versão|String|Versão da entidade.|
 
 
 

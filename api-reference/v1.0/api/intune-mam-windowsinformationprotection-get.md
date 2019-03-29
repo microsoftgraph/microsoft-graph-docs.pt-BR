@@ -1,15 +1,15 @@
 ---
 title: Acessar windowsInformationProtection
-description: Ler propriedades e relações do objeto windowsInformationProtection.
+description: Leia as propriedades e as relações do objeto windowsInformationProtection.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 76a591ac19fb82a54f7efb7c13399dba1dcaf4a1
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 16a7776cd0bca373e012e8150166377b6baf31e6
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30262577"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30968837"
 ---
 # <a name="get-windowsinformationprotection"></a>Acessar windowsInformationProtection
 
@@ -18,7 +18,7 @@ ms.locfileid: "30262577"
 Leia as propriedades e as relações do objeto [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

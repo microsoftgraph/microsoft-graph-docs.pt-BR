@@ -4,12 +4,12 @@ description: Atualizar as propriedades de um objeto windows10GeneralConfiguratio
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ae6479f0d4d422a29ddff741e1f8a2368f1a50ce
-ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
+ms.openlocfilehash: 297ceb338c1d84c6fde28d5af1975c8ecac4d064
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30572380"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30972029"
 ---
 # <a name="update-windows10generalconfiguration"></a>Atualizar windows10GeneralConfiguration
 
@@ -20,7 +20,7 @@ ms.locfileid: "30572380"
 Atualizar as propriedades de um objeto [windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -54,7 +54,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |:---|:---|:---|
 |id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |supportsScopeTags|Boolean|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |descrição|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
@@ -68,8 +68,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |authenticationWebSignIn|[habilitação](../resources/intune-shared-enablement.md)|Indica se o provedor de credenciais da Web será habilitado ou não. Os valores possíveis são: `notConfigured`, `enabled`, `disabled`.|
 |authenticationPreferredAzureADTenantDomainName|String|Especifica o domínio preferencial entre os domínios disponíveis no locatário do Azure AD.|
 |cryptographyAllowFipsAlgorithmPolicy|Boolean|Especifique se deseja permitir ou não a política padrão do FIPS (Federal Information Processing Standard).|
-|displayAppListWithGdiDPIScalingTurnedOn|Coleção de cadeias de caracteres|Lista de aplicativos herdados com ajuste de DPI GDI ativado.|
-|displayAppListWithGdiDPIScalingTurnedOff|Coleção de cadeias de caracteres|Lista de aplicativos herdados com a expansão de DPI GDI desativada.|
+|displayAppListWithGdiDPIScalingTurnedOn|Coleção String|Lista de aplicativos herdados com ajuste de DPI GDI ativado.|
+|displayAppListWithGdiDPIScalingTurnedOff|Coleção String|Lista de aplicativos herdados com a expansão de DPI GDI desativada.|
 |enterpriseCloudPrintDiscoveryEndPoint|String|Ponto de extremidade para descoberta de impressoras na nuvem.|
 |enterpriseCloudPrintOAuthAuthority|String|Ponto de extremidade para aquisição de tokens OAuth.|
 |enterpriseCloudPrintOAuthClientIdentifier|String|GUID de um aplicativo cliente autorizado a recuperar tokens OAuth da autoridade OAuth.|
@@ -80,7 +80,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |messagingBlockSync|Boolean|Indica se o backup e a restauração de mensagens de texto devem ou não ser bloqueados e mensagens em qualquer lugar.|
 |messagingBlockMMS|Boolean|Indica se a funcionalidade de envio/recebimento MMS deve ou não ser bloqueada no dispositivo.|
 |messagingBlockRichCommunicationServices|Boolean|Indica se a funcionalidade de envio/recebimento de RCS deve ou não ser bloqueada no dispositivo.|
-|printerNames|Coleção de cadeias de caracteres|Provisiona automaticamente impressoras com base em seus nomes (nomes de host de rede).|
+|printerNames|Coleção String|Provisiona automaticamente impressoras com base em seus nomes (nomes de host de rede).|
 |printerDefaultName|String|Nome (nome do host de rede) de uma impressora instalada.|
 |printerBlockAddition|Boolean|Impedir a instalação do usuário de impressoras adicionais das configurações de impressoras.|
 |searchBlockDiacritics|Boolean|Especifica se a pesquisa pode usar diacríticos.|
@@ -132,7 +132,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |edgeHomeButtonConfigurationEnabled|Boolean|Habilitar a configuração do botão página inicial.|
 |edgeOpensWith|[edgeOpenOptions](../resources/intune-deviceconfig-edgeopenoptions.md)|Especifique o tipo de páginas que será aberto no início. Os valores possíveis são: `notConfigured`, `startPage`, `newTabPage`, `previousPages`, `specificPages`.|
 |edgeBlockSideloadingExtensions|Boolean|Indica se o usuário pode Sideload as extensões.|
-|edgeRequiredExtensionPackageFamilyNames|Coleção de cadeias de caracteres|Especifique a lista de nomes de famílias de pacotes de extensões de navegador que são necessários e que não podem ser desativados pelo usuário.|
+|edgeRequiredExtensionPackageFamilyNames|Coleção String|Especifique a lista de nomes de famílias de pacotes de extensões de navegador que são necessários e que não podem ser desativados pelo usuário.|
 |edgeBlockPrinting|Boolean|Configure o Edge para permitir ou bloquear a impressão.|
 |edgeFavoritesBarVisibility|[visibilitySetting](../resources/intune-deviceconfig-visibilitysetting.md)|Obtém ou define um valor que especifica se a barra de favoritos deve ser configurada para sempre estar visível ou oculta em qualquer página. Os valores possíveis são: `notConfigured`, `hide`, `show`.|
 |edgeBlockSavingHistory|Boolean|Configure o Edge para permitir que o histórico de navegação seja salvo ou nunca salve o histórico de navegação.|
@@ -152,8 +152,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |defenderDaysBeforeDeletingQuarantinedMalware|Int32|Número de dias antes da exclusão do malware em quarentena. Valores válidos de 0 a 90|
 |defenderDetectedMalwareActions|[defenderDetectedMalwareActions](../resources/intune-deviceconfig-defenderdetectedmalwareactions.md)|Obtém ou define ações do Defender a serem realizadas em um malware detectado por nível de ameaça.|
 |defenderSystemScanSchedule|[weeklySchedule](../resources/intune-deviceconfig-weeklyschedule.md)|Dia da semana em que o Defender fará a verificação do sistema. Os valores possíveis são: `userDefined`, `everyday`, `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
-|defenderFilesAndFoldersToExclude|Coleção de cadeias de caracteres|Arquivos e pastas a serem excluídos das verificações e da proteção em tempo real.|
-|defenderFileExtensionsToExclude|Coleção de cadeias de caracteres|Extensões de arquivo a serem excluídas das verificações e da proteção em tempo real.|
+|defenderFilesAndFoldersToExclude|Coleção String|Arquivos e pastas a serem excluídos das verificações e da proteção em tempo real.|
+|defenderFileExtensionsToExclude|Coleção String|Extensões de arquivo a serem excluídas das verificações e da proteção em tempo real.|
 |defenderScanMaxCpu|Int32|Porcentagem máxima de uso da CPU durante a verificação. Valores válidos de 0 a 100|
 |defenderMonitorFileActivity|[defenderMonitorFileActivity](../resources/intune-deviceconfig-defendermonitorfileactivity.md)|Valor de monitoramento da atividade do arquivo. Os valores possíveis são: `userDefined`, `disable`, `monitorAllFiles`, `monitorIncomingFilesOnly`, `monitorOutgoingFilesOnly`.|
 |defenderPotentiallyUnwantedAppAction|[defenderPotentiallyUnwantedAppAction](../resources/intune-deviceconfig-defenderpotentiallyunwantedappaction.md)|Obtém ou define a ação do defender a ser executada em aplicativos potencialmente inDesejados (PUA), que inclui software com comportamentos de injeção de anúncio, empacotamento de software, solicitação persistente para pagamento ou assinatura, etc. O defender alerta o usuário quando o PUA está sendo baixado ou tenta se instalar. Adicionado no Windows 10 para área de trabalho. Os valores possíveis são: `deviceDefault`, `block`, `audit`.|
@@ -220,7 +220,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |startMenuHideSleep|Boolean|Habilitar essa política impede a exibição da suspensão no botão de energia no menu Iniciar.|
 |startMenuHideSwitchAccount|Boolean|Habilitar essa política impede a exibição da opção Alternar conta no bloco de usuário no menu Iniciar.|
 |startMenuHideUserTile|Boolean|Habilitar essa política impede a exibição do bloco de usuário no menu Iniciar.|
-|startMenuLayoutEdgeAssetsXml|Binário|Essa configuração de política permite importar ativos do Edge a serem usados com a política startMenuLayoutXml. O layout inicial pode conter um bloco secundário do aplicativo Microsoft Edge que procura pelo arquivo do ativo local do Edge. Nesse caso, o ativo local do Edge não existiria e faria com que o bloco secundário do Edge aparecesse vazio. Essa política só é aplicada quando a política startMenuLayoutXml é modificada. O valor deve ser uma matriz de bytes codificada em Base64 UTF-8.|
+|startMenuLayoutEdgeAssetsXml|Binary|Essa configuração de política permite importar ativos do Edge a serem usados com a política startMenuLayoutXml. O layout inicial pode conter um bloco secundário do aplicativo Microsoft Edge que procura pelo arquivo do ativo local do Edge. Nesse caso, o ativo local do Edge não existiria e faria com que o bloco secundário do Edge aparecesse vazio. Essa política só é aplicada quando a política startMenuLayoutXml é modificada. O valor deve ser uma matriz de bytes codificada em Base64 UTF-8.|
 |startMenuLayoutXml|Binária|Permite aos administradores substituir o layout padrão do menu Iniciar e impede que o usuário o altere. O layout é modificado especificando um arquivo XML com base em um esquema de modificação de layout. O XML deve estar em um formato de matriz de bytes codificada em UTF8.|
 |startMenuMode|[windowsStartMenuModeType](../resources/intune-deviceconfig-windowsstartmenumodetype.md)|Permite aos administradores decidir como o menu Iniciar é exibido. Os valores possíveis são: `userDefined`, `fullScreen`, `nonFullScreen`.|
 |startMenuPinnedFolderDocuments|[visibilitySetting](../resources/intune-deviceconfig-visibilitysetting.md)|Impõe a visibilidade (Mostrar/Ocultar) do atalho da pasta Documentos no menu Iniciar. Os valores possíveis são: `notConfigured`, `hide`, `show`.|
@@ -325,7 +325,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |appManagementMSIAllowUserControlOverInstall|Boolean|Essa configuração de política permite que os usuários alterem as opções de instalação que normalmente estão disponíveis somente para administradores do sistema.|
 |appManagementMSIAlwaysInstallWithElevatedPrivileges|Boolean|Essa configuração de política instrui o Windows Installer a usar permissões elevadas ao instalar qualquer programa no sistema.|
 |dataProtectionBlockDirectMemoryAccess|Boolean|Essa configuração de política permite bloquear o acesso direto à memória (DMA) para todas as portas de downstream PCI que podem ser conectadas a quente até que um usuário faça logon no Windows.|
-|appManagementPackageFamilyNamesToLaunchAfterLogOn|Coleção de cadeias de caracteres|Lista de nomes de família de pacotes delimitados por ponto e vírgula de aplicativos do Windows. Os aplicativos do Windows listados devem ser iniciados após o logon.|
+|appManagementPackageFamilyNamesToLaunchAfterLogOn|Coleção String|Lista de nomes de família de pacotes delimitados por ponto e vírgula de aplicativos do Windows. Os aplicativos do Windows listados devem ser iniciados após o logon.|
 
 
 

@@ -4,12 +4,12 @@ description: Criar um novo objeto managementConditionStatement.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f19cef2899a11a57b06590c006de2181865a9d45
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 5e4531f8819be505587a27008f36fb9c06f2d92a
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30156858"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30971637"
 ---
 # <a name="create-managementconditionstatement"></a>Criar managementConditionStatement
 
@@ -20,7 +20,7 @@ ms.locfileid: "30156858"
 Criar um novo objeto [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar manageme
 |:---|:---|:---|
 |id|String|Identificador exclusivo da instrução de condição de gerenciamento. Valor gerado pelo sistema atribuído quando criado.|
 |displayName|String|O nome do administrador definido da instrução de condição de gerenciamento.|
-|description|Cadeia de caracteres|A descrição definida pelo administrador da instrução de condição de gerenciamento.|
+|descrição|Cadeia de caracteres|A descrição definida pelo administrador da instrução de condição de gerenciamento.|
 |createdDateTime|DateTimeOffset|A hora em que a instrução de gerenciamento da condição foi criada. Lado do serviço gerado.|
 |modifiedDateTime|DateTimeOffset|A hora em que a declaração de condição de gerenciamento foi modificada pela última vez. Atualizado o lado do serviço.|
 |expressão|[managementConditionExpression](../resources/intune-fencing-managementconditionexpression.md)|A expressão de instrução de condição de gerenciamento usada para avaliar se uma instrução de condição de gerenciamento foi ativada/desativada.|

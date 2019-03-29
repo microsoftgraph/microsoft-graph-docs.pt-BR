@@ -1,15 +1,15 @@
 ---
 title: Criar importedWindowsAutopilotDeviceIdentity
-description: Crie um novo objeto importedWindowsAutopilotDeviceIdentity.
+description: Criar um novo objeto importedWindowsAutopilotDeviceIdentity.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c13f46d168bbb20d8166d063d3f12695ce02f50a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 2ed8ed1af797e68998318f5ef7dea3836343cff4
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30146253"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30968928"
 ---
 # <a name="create-importedwindowsautopilotdeviceidentity"></a>Criar importedWindowsAutopilotDeviceIdentity
 
@@ -20,7 +20,7 @@ ms.locfileid: "30146253"
 Criar um novo objeto [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -52,7 +52,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar imported
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|O GUID do objeto.|
-|orderIdentifier|Cadeia de caracteres|ID do pedido do dispositivo do Windows AutoPilot.|
+|orderIdentifier|String|ID do pedido do dispositivo do Windows AutoPilot.|
 |serialNumber|String|Número de série do dispositivo do Windows AutoPilot.|
 |productKey|Cadeia de caracteres|Chave do produto (Product Key) do dispositivo do Windows AutoPilot.|
 |hardwareIdentifier|Binária|Blob de hardware do dispositivo do Windows AutoPilot.|

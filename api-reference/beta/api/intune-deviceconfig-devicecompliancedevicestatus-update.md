@@ -4,12 +4,12 @@ description: Atualizar as propriedades de um objeto deviceComplianceDeviceStatus
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a47437df5173245834b1182e6c9eb77bf803acb4
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e787ca04d555c316fe524997af96a767ceab448f
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30149641"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30972946"
 ---
 # <a name="update-devicecompliancedevicestatus"></a>Atualizar deviceComplianceDeviceStatus
 
@@ -20,7 +20,7 @@ ms.locfileid: "30149641"
 Atualizar as propriedades de um objeto [deviceComplianceDeviceStatus](../resources/intune-deviceconfig-devicecompliancedevicestatus.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

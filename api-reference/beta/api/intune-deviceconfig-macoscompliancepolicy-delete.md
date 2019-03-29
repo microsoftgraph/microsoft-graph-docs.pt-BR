@@ -4,12 +4,12 @@ description: Exclui macOSCompliancePolicy.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7c825a7e9ea5b575e7620cc1beaf0b3646f7d4bb
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 438e5fdcf9353a4e6c07092c1366a45a3eecba4e
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30151440"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30974647"
 ---
 # <a name="delete-macoscompliancepolicy"></a>Excluir macOSCompliancePolicy
 
@@ -20,7 +20,7 @@ ms.locfileid: "30151440"
 Exclui [macOSCompliancePolicy](../resources/intune-deviceconfig-macoscompliancepolicy.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

@@ -4,12 +4,12 @@ description: Listar propriedades e relações dos objetos managedAppRegistration
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fe9d8aa57a971b3a1a2c61e324af8c673578e65a
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 94738c4b0aef555a536ceec2533db241007251a4
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30259042"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30975305"
 ---
 # <a name="list-managedappregistrations"></a>Listar managedAppRegistrations
 
@@ -18,7 +18,7 @@ ms.locfileid: "30259042"
 Listar propriedades e relações dos objetos [managedAppRegistration](../resources/intune-mam-managedappregistration.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

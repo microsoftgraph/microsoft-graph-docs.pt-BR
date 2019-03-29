@@ -4,12 +4,12 @@ description: Ainda não documentado
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e233feb9966fc90a56f38eff91c6bdab141b7462
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 68646ead33d9505522381ace92e5eeaa3e7b48ce
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30169724"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30974234"
 ---
 # <a name="gettopmobileapps-function"></a>função getTopMobileApps
 
@@ -20,7 +20,7 @@ ms.locfileid: "30169724"
 Ainda não documentado
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -50,7 +50,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta função.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |status|String|Ainda não documentado|
-|count|Int64|Ainda não documentado|
+|Count|Int64|Ainda não documentado|
 
 
 

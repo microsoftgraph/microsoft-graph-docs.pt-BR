@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos embeddedSIMActivationC
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 53a379b58e7e2acf4d9988f89acbca43121d921a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 389b160ad97bb63f3ef37cbc58a89dbf37f6dc0c
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30145539"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30971196"
 ---
 # <a name="list-embeddedsimactivationcodepools"></a>Listar embeddedSIMActivationCodePools
 
@@ -20,7 +20,7 @@ ms.locfileid: "30145539"
 Listar Propriedades e relações dos objetos [embeddedSIMActivationCodePool](../resources/intune-esim-embeddedsimactivationcodepool.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

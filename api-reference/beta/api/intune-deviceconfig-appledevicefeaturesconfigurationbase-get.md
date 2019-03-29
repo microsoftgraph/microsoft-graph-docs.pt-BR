@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto appleDeviceFeaturesC
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1a92968e61cdbacfb6e7d029b3fb2b6d9391a330
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: cf8f135b3874eaf8a3ac1f97fbe581482ea6f08d
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30142018"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30973506"
 ---
 # <a name="get-appledevicefeaturesconfigurationbase"></a>Acessar appleDeviceFeaturesConfigurationBase
 
@@ -20,7 +20,7 @@ ms.locfileid: "30142018"
 Leia as propriedades e as relações do objeto [appleDeviceFeaturesConfigurationBase](../resources/intune-deviceconfig-appledevicefeaturesconfigurationbase.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

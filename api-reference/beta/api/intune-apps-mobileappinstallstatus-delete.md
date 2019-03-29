@@ -4,12 +4,12 @@ description: Exclui mobileAppInstallStatus.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8f26960a07833c2c2e25be28b72072bc2755b9ba
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 2d777dc972740324931141f9ac3402a59b900658
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30165293"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30972540"
 ---
 # <a name="delete-mobileappinstallstatus"></a>Excluir mobileAppInstallStatus
 
@@ -20,7 +20,7 @@ ms.locfileid: "30165293"
 Exclui [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

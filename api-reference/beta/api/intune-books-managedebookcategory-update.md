@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto managedEBookCategory.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 525444a02c36473912a631c9a4f3e5f9c3f5b25a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 85cda4854d3bbe6f6b1932b1f6fc546044490a56
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30146554"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30973121"
 ---
 # <a name="update-managedebookcategory"></a>Atualizar managedEBookCategory
 
@@ -20,7 +20,7 @@ ms.locfileid: "30146554"
 Atualiza as propriedades de um objeto [managedEBookCategory](../resources/intune-books-managedebookcategory.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -51,7 +51,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [managed
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|A chave da entidade.|
+|id|String|A chave da entidade.|
 |displayName|String|O nome da categoria eBook.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que o ManagedEBookCategory foi modificado pela última vez.|
 

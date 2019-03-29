@@ -4,12 +4,12 @@ description: Envia mensagens de teste usando o notificationMessageTemplate espec
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4fe44c931b6962766c9daba1db85dce0354c717d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c4733ca6219fb4cd6ba1684856fcdc6b2a5b648e
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30147051"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30974640"
 ---
 # <a name="sendtestmessage-action"></a>Ação sendTestMessage
 
@@ -20,7 +20,7 @@ ms.locfileid: "30147051"
 Envia mensagens de teste usando o notificationMessageTemplate especificado no local padrão
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

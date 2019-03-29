@@ -4,12 +4,12 @@ description: Exclui windows10EndpointProtectionConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 80c0ffa049da944ec48f5e8931ae44e33e6a56a9
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 6976a71a22c0f571c1c3c6efb3dffc2737053a7f
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30159287"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30972253"
 ---
 # <a name="delete-windows10endpointprotectionconfiguration"></a>Excluir windows10EndpointProtectionConfiguration
 
@@ -20,7 +20,7 @@ ms.locfileid: "30159287"
 Exclui [windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

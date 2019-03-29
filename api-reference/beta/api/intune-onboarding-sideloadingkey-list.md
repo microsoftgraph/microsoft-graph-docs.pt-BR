@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos sideLoadingKey.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d3bf543c678815e563dd9607b56483084183a99a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 1cda8acb55662ff9f13f416b3972d01fdf00e908
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30143229"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30972799"
 ---
 # <a name="list-sideloadingkeies"></a>Listar sideLoadingKeies
 
@@ -20,7 +20,7 @@ ms.locfileid: "30143229"
 Listar Propriedades e relações dos objetos [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

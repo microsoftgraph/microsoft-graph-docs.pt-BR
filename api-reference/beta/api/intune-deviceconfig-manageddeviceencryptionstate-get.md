@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto managedDeviceEncrypt
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6d0b5767de4d9cc8cd4a542ee75b8c3c3e8bbaea
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: a34b285661196fe94846753a49ad02a2edd95b68
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30178098"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30974528"
 ---
 # <a name="get-manageddeviceencryptionstate"></a>Obter managedDeviceEncryptionState
 
@@ -20,7 +20,7 @@ ms.locfileid: "30178098"
 Leia as propriedades e as relações do objeto [managedDeviceEncryptionState](../resources/intune-deviceconfig-manageddeviceencryptionstate.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

@@ -4,12 +4,12 @@ description: Atualizar as propriedades de um objeto windowsInformationProtection
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c971045fe876663b19b1a0a09991d37bd7e6e94c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 68c2bf244ac650c682b303633e28d5d5b8bbca1e
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30157439"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30972141"
 ---
 # <a name="update-windowsinformationprotectionnetworklearningsummary"></a>Atualizar windowsInformationProtectionNetworkLearningSummary
 
@@ -20,7 +20,7 @@ ms.locfileid: "30157439"
 Atualizar as propriedades de um objeto [windowsInformationProtectionNetworkLearningSummary](../resources/intune-wip-windowsinformationprotectionnetworklearningsummary.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

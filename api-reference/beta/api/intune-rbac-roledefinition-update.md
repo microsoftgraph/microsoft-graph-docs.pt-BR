@@ -4,12 +4,12 @@ description: Atualizar as propriedades de um objeto roleDefinition.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dc06b734c0f18101c58347a239fffb60ffc158d0
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 5716202d2b6e9ca29e7561c839055096e7a6da8b
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30149690"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30973310"
 ---
 # <a name="update-roledefinition"></a>Atualizar roleDefinition
 
@@ -20,7 +20,7 @@ ms.locfileid: "30149690"
 Atualizar as propriedades de um objeto [roleDefinition](../resources/intune-rbac-roledefinition.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -51,14 +51,14 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [roleDef
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade. É somente leitura e é gerada automaticamente.|
-|displayName|String|Nome de exibição da definição de Função.|
-|description|Cadeia de caracteres|Descrição da definição de Função.|
-|permissions|Coleção [rolePermission](../resources/intune-rbac-rolepermission.md)|Lista de Permissões de Função que esta função está autorizada a executar. Elas devem corresponder ao actionName definido como parte de rolePermission.|
+|id|String|Chave da entidade. É somente leitura e gerada automaticamente.|
+|displayName|Cadeia de caracteres|Nome de exibição da definição de Função.|
+|descrição|String|Descrição da definição de Função.|
+|permissões|Coleção [rolePermission](../resources/intune-rbac-rolepermission.md)|Lista de Permissões de Função que esta função está autorizada a executar. Elas devem corresponder ao actionName definido como parte de rolePermission.|
 |rolePermissions|Coleção [rolePermission](../resources/intune-rbac-rolepermission.md)|Lista de Permissões de Função que esta função está autorizada a executar. Elas devem corresponder ao actionName definido como parte de rolePermission.|
 |isBuiltInRoleDefinition|Booliano|Tipo de Função. Defina como True se for uma definição de função interna ou como False se for uma definição de função personalizada.|
 |isBuiltIn|Booliano|Tipo de Função. Defina como True se for uma definição de função interna ou como False se for uma definição de função personalizada.|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade.|
+|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância de entidade.|
 
 
 

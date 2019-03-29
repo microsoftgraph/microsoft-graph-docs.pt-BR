@@ -4,12 +4,12 @@ description: Ainda não documentado
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e06f1fda065fc03fbe8ed009feb7bea77bca5f05
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 3541b8ff61b0f48f4461a87559819f06d0e3cebe
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30256249"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30972246"
 ---
 # <a name="getauditactivitytypes-function"></a>Função getAuditActivityTypes
 
@@ -18,7 +18,7 @@ ms.locfileid: "30256249"
 Ainda não documentado
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -47,12 +47,12 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta função.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|Ferramentas para desenvolvedores|Cadeia de caracteres|Ainda não documentado|
+|Ferramentas para desenvolvedores|String|Ainda não documentado|
 
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta `200 OK` e uma Coleção de cadeias de caracteres no corpo da resposta.
+Se tiver êxito, essa função retornará o código de resposta `200 OK` e a Coleção de cadeias de caracteres no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

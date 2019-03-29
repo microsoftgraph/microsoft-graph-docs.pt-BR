@@ -4,12 +4,12 @@ description: Criar um novo objeto deviceComplianceScheduledActionForRule.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 40a72428b64f5d99d12cf16175dc4765d7664008
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 372f942b1b099d728fb13a2d9d8c9b8654a270d3
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30140352"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30973856"
 ---
 # <a name="create-devicecompliancescheduledactionforrule"></a>Criar deviceComplianceScheduledActionForRule
 
@@ -20,7 +20,7 @@ ms.locfileid: "30140352"
 Criar um novo objeto [deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

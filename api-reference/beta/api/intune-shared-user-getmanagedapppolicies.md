@@ -4,12 +4,12 @@ description: Obtém as restrições de aplicativo para um determinado usuário.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 319c365976fe473af854dac4238840b42e113a2d
-ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
+ms.openlocfilehash: f1b32188f002b51cad4a2dd491c0a3ea8edeeb8d
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30572240"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30970888"
 ---
 # <a name="getmanagedapppolicies-function"></a>Função getManagedAppPolicies
 
@@ -21,7 +21,7 @@ Obtém as restrições de aplicativo para um determinado usuário.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

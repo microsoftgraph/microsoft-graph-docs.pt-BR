@@ -4,12 +4,12 @@ description: Listar propriedades e relações dos objetos androidManagedAppProte
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fa59dd37e66fe148792df58d285f87ad4d0e6d70
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: 8beb4d11f93732e5abcb594e9b8ea20fa244d45d
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30571162"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30972652"
 ---
 # <a name="list-androidmanagedappprotections"></a>Listar androidManagedAppProtections
 
@@ -20,7 +20,7 @@ ms.locfileid: "30571162"
 Listar propriedades e relações dos objetos [androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

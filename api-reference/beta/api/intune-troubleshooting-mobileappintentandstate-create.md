@@ -4,12 +4,12 @@ description: Criar um novo objeto mobileAppIntentAndState.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ea3c005473c4979515ab7810a4ce1b16a06ebabf
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c46a998b3be6c0cc501ab040f9452281210d3df2
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30145931"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30972204"
 ---
 # <a name="create-mobileappintentandstate"></a>Criar mobileAppIntentAndState
 
@@ -20,7 +20,7 @@ ms.locfileid: "30145931"
 Criar um novo objeto [mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

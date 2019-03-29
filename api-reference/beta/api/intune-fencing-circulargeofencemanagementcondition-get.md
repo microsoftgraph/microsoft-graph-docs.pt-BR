@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto circularGeofenceMana
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dfdc2f6a4561732f20f50d54ec76c3728baac287
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 581df7a9ffd552d66c6d5568e3ca7abcea1e7b5b
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30175140"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30971140"
 ---
 # <a name="get-circulargeofencemanagementcondition"></a>Obter circularGeofenceManagementCondition
 
@@ -20,7 +20,7 @@ ms.locfileid: "30175140"
 Leia as propriedades e as relações do objeto [circularGeofenceManagementCondition](../resources/intune-fencing-circulargeofencemanagementcondition.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

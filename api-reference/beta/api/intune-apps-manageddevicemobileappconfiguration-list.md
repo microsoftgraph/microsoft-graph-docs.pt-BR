@@ -4,12 +4,12 @@ description: Listar propriedades e relações dos objetos managedDeviceMobileApp
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 422119477596cd24fddf5d13c2bbaf39f78dc66f
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 2485a72a293cb1e09f31d3af8a5b88ce8b268703
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30173868"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30972421"
 ---
 # <a name="list-manageddevicemobileappconfigurations"></a>Listar managedDeviceMobileAppConfigurations
 
@@ -20,7 +20,7 @@ ms.locfileid: "30173868"
 Listar propriedades e relações dos objetos [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

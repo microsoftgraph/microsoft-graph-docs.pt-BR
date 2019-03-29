@@ -4,12 +4,12 @@ description: Exclui intuneBrandingProfile.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b68dbdaa34d3fc30f6a07c9486ef32bbd103ec38
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: db7d952620f1b7358a852a48f4fcd8d48beed21a
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30170732"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30973282"
 ---
 # <a name="delete-intunebrandingprofile"></a>Excluir intuneBrandingProfile
 
@@ -20,7 +20,7 @@ ms.locfileid: "30170732"
 Exclui [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

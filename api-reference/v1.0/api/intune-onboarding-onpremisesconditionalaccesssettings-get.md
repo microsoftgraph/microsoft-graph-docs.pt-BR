@@ -4,12 +4,12 @@ description: Ler propriedades e relações do objeto onPremisesConditionalAccess
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 309e50407a62b0c4dbb6bde11a42fa49d2920343
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 694a2811b29156e25b843391dc3a0255534d3066
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30252760"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30974164"
 ---
 # <a name="get-onpremisesconditionalaccesssettings"></a>Obter onPremisesConditionalAccessSettings
 
@@ -18,7 +18,7 @@ ms.locfileid: "30252760"
 Ler propriedades e relações do objeto [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

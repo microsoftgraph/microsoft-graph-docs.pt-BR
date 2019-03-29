@@ -4,12 +4,12 @@ description: Exclui importedAppleDeviceIdentityResult.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3c6585ec2b3c72d1d6afa5e874a31da57f257b2a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ed37f4876300133548993299be94573ee7f2505e
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30149592"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30973247"
 ---
 # <a name="delete-importedappledeviceidentityresult"></a>Excluir importedAppleDeviceIdentityResult
 
@@ -20,7 +20,7 @@ ms.locfileid: "30149592"
 Exclui [importedAppleDeviceIdentityResult](../resources/intune-enrollment-importedappledeviceidentityresult.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

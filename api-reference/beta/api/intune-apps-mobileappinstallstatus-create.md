@@ -4,12 +4,12 @@ description: Criar um novo objeto mobileAppInstallStatus.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 800845615e730c8e9da4573f499728b349121461
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 13fae27ccc022ce8795d787dbd86923d71e2ab24
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30149837"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30969887"
 ---
 # <a name="create-mobileappinstallstatus"></a>Criar mobileAppInstallStatus
 
@@ -20,7 +20,7 @@ ms.locfileid: "30149837"
 Criar um novo objeto [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -60,8 +60,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar mobileAp
 |installStateDetail|[resultantAppStateDetail](../resources/intune-apps-resultantappstatedetail.md)|Os detalhes do estado de instalação do aplicativo. Os valores possíveis são: `noAdditionalDetails`, `seeInstallErrorCode`, `seeUninstallErrorCode`, `pendingReboot`, `platformNotApplicable`, `minimumCpuSpeedNotMet`, `minimumLogicalProcessorCountNotMet`, `minimumPhysicalMemoryNotMet`, `minimumOsVersionNotMet`, `minimumDiskSpaceNotMet`, `processorArchitectureNotApplicable`.|
 |errorCode|Int32|O código de erro para instalação ou desinstalação de falhas.|
 |osVersion|String|Versão do sistema operacional|
-|osDescription|Cadeia de caracteres|Descrição do sistema operacional|
-|userName|String|Nome de usuário do dispositivo|
+|osDescription|String|Descrição do sistema operacional|
+|userName|Cadeia de caracteres|Nome de usuário do dispositivo|
 |userPrincipalName|String|Nome UPN|
 |displayVersion|String|Versão de leitura humana do aplicativo|
 

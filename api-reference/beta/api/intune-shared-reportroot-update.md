@@ -4,12 +4,12 @@ description: Atualizar as propriedades de um objeto reportRoot.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 99fc7d2afd2dc9c8576f0ecb94783ca4bcf6c481
-ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
+ms.openlocfilehash: 3127ca7804883c5e29fe91cf5e21bb15240a1314
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30572366"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30972806"
 ---
 # <a name="update-reportroot"></a>Atualizar reportRoot
 
@@ -19,7 +19,7 @@ ms.locfileid: "30572366"
 
 Atualizar as propriedades de um objeto [reportRoot](../resources/intune-shared-reportroot.md).
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

@@ -4,12 +4,12 @@ description: Lista propriedades e relações dos objetos deviceCategory.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 857d9db112853fe85c51df342e66b6bcaff7cfd0
-ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
+ms.openlocfilehash: 025334ad2d2d6db91c1b7c0d3c8457980ce19735
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30572499"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30970986"
 ---
 # <a name="list-devicecategories"></a>Listar deviceCategories
 
@@ -19,7 +19,7 @@ ms.locfileid: "30572499"
 
 Lista propriedades e relações dos objetos [deviceCategory](../resources/intune-shared-devicecategory.md).
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto managementCondition.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1dbff493bbdc39ced1fd9ac1a49b9cc6649bb505
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 8c68e295baff14b165d2a3a736af25e8f1ba12ff
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30175357"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30969460"
 ---
 # <a name="get-managementcondition"></a>Obter managementCondition
 
@@ -20,7 +20,7 @@ ms.locfileid: "30175357"
 Leia as propriedades e as relações do objeto [managementCondition](../resources/intune-fencing-managementcondition.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

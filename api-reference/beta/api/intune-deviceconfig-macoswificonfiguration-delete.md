@@ -4,12 +4,12 @@ description: Exclui macOSWiFiConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8ac21b3759f76c82c4e9c86be64d35eef2709cb2
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 6653e1b0dca1ab802191dda4f48dc5a59859e63d
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30147121"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30972988"
 ---
 # <a name="delete-macoswificonfiguration"></a>Excluir macOSWiFiConfiguration
 
@@ -20,7 +20,7 @@ ms.locfileid: "30147121"
 Exclui [macOSWiFiConfiguration](../resources/intune-deviceconfig-macoswificonfiguration.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

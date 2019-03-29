@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto windowsIdentityProte
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6ef845c6cf13c6d829baa7ad4c28cdf7ed1f7f9a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: cf319135d5c487f123a99a4d4ee64f602bdf5f61
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30168450"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30972428"
 ---
 # <a name="get-windowsidentityprotectionconfiguration"></a>Obter windowsIdentityProtectionConfiguration
 
@@ -20,7 +20,7 @@ ms.locfileid: "30168450"
 Leia as propriedades e as relações do objeto [windowsIdentityProtectionConfiguration](../resources/intune-deviceconfig-windowsidentityprotectionconfiguration.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

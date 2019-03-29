@@ -4,12 +4,12 @@ description: Exclui Entidadeandroidworkprofilescepcertificateprofile.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d3de9c34f570be577f03749fc6cfcde3b250a4cf
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 03bc28d4d7256ba03f55bc83d0a28e1809f72d76
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30160239"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30971623"
 ---
 # <a name="delete-androidworkprofilescepcertificateprofile"></a>Excluir Entidadeandroidworkprofilescepcertificateprofile
 
@@ -20,7 +20,7 @@ ms.locfileid: "30160239"
 Exclui [entidadeandroidworkprofilescepcertificateprofile](../resources/intune-deviceconfig-androidworkprofilescepcertificateprofile.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

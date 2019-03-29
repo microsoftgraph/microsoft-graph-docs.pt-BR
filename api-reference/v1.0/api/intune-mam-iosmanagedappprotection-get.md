@@ -4,12 +4,12 @@ description: Ler propriedades e relações do objeto iosManagedAppProtection.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ca7c0104d7d6fea9d8f7d1bdb3b0725f70ca9a93
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 109f9d7f828c635db9411b25c9805764a151ec67
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30253061"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30973996"
 ---
 # <a name="get-iosmanagedappprotection"></a>Obter iosManagedAppProtections
 
@@ -18,7 +18,7 @@ ms.locfileid: "30253061"
 Ler propriedades e relações do objeto [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

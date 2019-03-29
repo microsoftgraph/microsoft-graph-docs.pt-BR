@@ -4,12 +4,12 @@ description: Ler propriedades e relações do objeto windows10MobileCompliancePo
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7293bd567cbeead30b0e99f0fddf827840d2ebe2
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 4d9cb10a892844307187f29e38d758684bca81ea
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30264292"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30971098"
 ---
 # <a name="get-windows10mobilecompliancepolicy"></a>Get windows10MobileCompliancePolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "30264292"
 Ler propriedades e relações do objeto [windows10MobileCompliancePolicy](../resources/intune-deviceconfig-windows10mobilecompliancepolicy.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

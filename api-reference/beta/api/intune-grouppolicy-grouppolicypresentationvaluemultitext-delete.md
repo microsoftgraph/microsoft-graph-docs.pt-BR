@@ -4,12 +4,12 @@ description: Exclui groupPolicyPresentationValueMultiText.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7c59011c89267adf63b55d69f5d4e07172b79823
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 042757ee2a56122d498e2474989bf315262b9c79
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30155500"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30972995"
 ---
 # <a name="delete-grouppolicypresentationvaluemultitext"></a>Excluir groupPolicyPresentationValueMultiText
 
@@ -20,7 +20,7 @@ ms.locfileid: "30155500"
 Exclui [groupPolicyPresentationValueMultiText](../resources/intune-grouppolicy-grouppolicypresentationvaluemultitext.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos deviceManagementScript
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d63c3231d96f03ae4fb8dd9d7325056646b535c0
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 35f649d022694b7943153fd592aba2b3694b73d2
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30144818"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30973590"
 ---
 # <a name="list-devicemanagementscriptdevicestates"></a>Listar deviceManagementScriptDeviceStates
 
@@ -20,7 +20,7 @@ ms.locfileid: "30144818"
 Listar Propriedades e relações dos objetos [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

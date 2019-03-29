@@ -4,12 +4,12 @@ description: Exclui embeddedSIMDeviceState.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cde3b666a02bf2a8aeaab9ceadf510b31e645c60
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 5a5e2a2a8d65f3b1cdb8ea3d6e64f722af65d2d7
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30146729"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30970860"
 ---
 # <a name="delete-embeddedsimdevicestate"></a>Excluir embeddedSIMDeviceState
 
@@ -20,7 +20,7 @@ ms.locfileid: "30146729"
 Exclui [embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

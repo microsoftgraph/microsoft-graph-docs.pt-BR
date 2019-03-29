@@ -4,12 +4,12 @@ description: Criar um novo objeto deviceComplianceDeviceStatus.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ccf6b04e221571087ebfcb2ab3c07f98004cc3a8
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: a3f88b97de4d14405b53a4ee36bd22168c4e2798
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30166308"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30971375"
 ---
 # <a name="create-devicecompliancedevicestatus"></a>Criar deviceComplianceDeviceStatus
 
@@ -20,7 +20,7 @@ ms.locfileid: "30166308"
 Criar um novo objeto [deviceComplianceDeviceStatus](../resources/intune-deviceconfig-devicecompliancedevicestatus.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

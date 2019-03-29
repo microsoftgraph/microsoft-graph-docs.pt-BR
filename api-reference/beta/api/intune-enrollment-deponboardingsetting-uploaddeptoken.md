@@ -4,12 +4,12 @@ description: Carrega um novo token do programa de registro de dispositivos
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 41381bd722657333d1f4471ac81d2f2dbf884e8d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 8dae26d3ccef0a21e109475c470462d29e720d42
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30162157"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30972862"
 ---
 # <a name="uploaddeptoken-action"></a>Ação uploadDepToken
 
@@ -20,7 +20,7 @@ ms.locfileid: "30162157"
 Carrega um novo token do programa de registro de dispositivos
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

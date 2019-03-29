@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos androidManagedStoreApp
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7df116f50c0b3f0c35e85af5e25b8b57eed223bd
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: 3ec62be70ebbc3f47ac8473421cfce2f0d287559
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30570945"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30975501"
 ---
 # <a name="list-androidmanagedstoreappconfigurations"></a>Listar androidManagedStoreAppConfigurations
 
@@ -20,7 +20,7 @@ ms.locfileid: "30570945"
 Listar Propriedades e relações dos objetos [androidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

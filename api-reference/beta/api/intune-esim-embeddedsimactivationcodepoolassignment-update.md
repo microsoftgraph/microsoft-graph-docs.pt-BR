@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto embeddedSIMActivationCodePool
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4fa2030d6b2b8fb260c28d94caff031ec2db0ae1
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 03b9a29afd8e32e1a79ee1f363f2fc0d25623f0e
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30164446"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30971504"
 ---
 # <a name="update-embeddedsimactivationcodepoolassignment"></a>Atualizar embeddedSIMActivationCodePoolAssignment
 
@@ -20,7 +20,7 @@ ms.locfileid: "30164446"
 Atualiza as propriedades de um objeto [embeddedSIMActivationCodePoolAssignment](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

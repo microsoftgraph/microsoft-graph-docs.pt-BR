@@ -1,15 +1,15 @@
 ---
 title: Acessar targetedManagedAppConfiguration
-description: Ler propriedades e relações do objeto targetedManagedAppConfiguration.
+description: Leia as propriedades e as relações do objeto targetedManagedAppConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f7207dc5ad42ef4dfcc93160fd0d3ff7f21d7234
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 2ff30731715ee7d4448f715c07982bb55d68668f
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30155458"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30974801"
 ---
 # <a name="get-targetedmanagedappconfiguration"></a>Acessar targetedManagedAppConfiguration
 
@@ -20,7 +20,7 @@ ms.locfileid: "30155458"
 Leia as propriedades e as relações do objeto [targetedManagedAppConfiguration](../resources/intune-mam-targetedmanagedappconfiguration.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

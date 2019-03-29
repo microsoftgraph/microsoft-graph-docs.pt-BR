@@ -4,12 +4,12 @@ description: Exclui managementConditionStatement.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 554202d867b4d53b417f3be72aaab328491d98f1
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 8c876f58cdc112f9607cc3900e4a638c24e999cd
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30164495"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30971357"
 ---
 # <a name="delete-managementconditionstatement"></a>Excluir managementConditionStatement
 
@@ -20,7 +20,7 @@ ms.locfileid: "30164495"
 Exclui [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

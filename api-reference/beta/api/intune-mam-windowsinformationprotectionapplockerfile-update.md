@@ -4,12 +4,12 @@ description: Atualizar as propriedades de um objeto windowsInformationProtection
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fe11c8cba9d2cb1eaba6a4225fa48d2b71adf23b
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: fc465df11d9f0299f1074094f78058b48bc1df3a
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30144034"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30971406"
 ---
 # <a name="update-windowsinformationprotectionapplockerfile"></a>Atualizar windowsInformationProtectionAppLockerFile
 
@@ -20,7 +20,7 @@ ms.locfileid: "30144034"
 Atualizar as propriedades de um objeto [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -57,7 +57,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |fileHash|Cadeia de caracteres|Hash SHA256 do arquivo|
 |file|Binária|Arquivo como uma matriz de bytes|
 |id|String|Chave da entidade.|
-|version|String|Versão da entidade.|
+|versão|String|Versão da entidade.|
 
 
 

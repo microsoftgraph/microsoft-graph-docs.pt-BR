@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto Windowsprotectionstate foi.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cbd8c518dc0704bb563fccbd704b57edc77199cc
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 8a77cf48766d2ea6aec8f9f2f1017530226be5bc
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30143817"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30973884"
 ---
 # <a name="update-windowsprotectionstate"></a>Atualizar Windowsprotectionstate foi
 
@@ -20,7 +20,7 @@ ms.locfileid: "30143817"
 Atualiza as propriedades de um objeto [windowsprotectionstate foi](../resources/intune-devices-windowsprotectionstate.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |:---|:---|:---|
 |id|String|O identificador exclusivo do objeto de status de proteção de dispositivo. Esta é a ID do dispositivo|
 |malwareProtectionEnabled|Boolean|O anti-malware está habilitado ou não|
-|DeviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|Estado do computador (como verificação completa ou pendente ou reinicialização pendente, etc.). Os possíveis valores são: `clean`, `fullScanPending`, `rebootPending`, `manualStepsPending`, `offlineScanPending`, `critical`.|
+|DeviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|Estado do computador (como verificação completa ou pendente ou reinicialização pendente, etc.). Os valores possíveis são: `clean`, `fullScanPending`, `rebootPending`, `manualStepsPending`, `offlineScanPending`, `critical`.|
 |realTimeProtectionEnabled|Boolean|A proteção em tempo real está habilitada ou não?|
 |networkInspectionSystemEnabled|Boolean|Sistema de inspeção de rede habilitado ou não?|
 |quickScanOverdue|Boolean|Verificação rápida em atraso ou não?|

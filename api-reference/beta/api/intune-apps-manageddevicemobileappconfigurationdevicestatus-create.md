@@ -4,12 +4,12 @@ description: Criar um novo objeto managedDeviceMobileAppConfigurationDeviceStatu
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 05e1214862f44e224590ac6c3e41cfb4a4e124a1
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 370106dd87139ab678fdfac019cc17f6c826103b
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30152938"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30973618"
 ---
 # <a name="create-manageddevicemobileappconfigurationdevicestatus"></a>Criar managedDeviceMobileAppConfigurationDeviceStatus
 
@@ -20,7 +20,7 @@ ms.locfileid: "30152938"
 Criar um novo objeto [managedDeviceMobileAppConfigurationDeviceStatus](../resources/intune-apps-manageddevicemobileappconfigurationdevicestatus.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

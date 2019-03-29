@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos importedAppleDeviceIde
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 431d4cd4c85e1e97d9f701fba9468e567a95defd
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 63ee441c2d8b14a1788f51127542365b06ee17d1
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30154562"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30970923"
 ---
 # <a name="list-importedappledeviceidentityresults"></a>Listar importedAppleDeviceIdentityResults
 
@@ -20,7 +20,7 @@ ms.locfileid: "30154562"
 Listar Propriedades e relações dos objetos [importedAppleDeviceIdentityResult](../resources/intune-enrollment-importedappledeviceidentityresult.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

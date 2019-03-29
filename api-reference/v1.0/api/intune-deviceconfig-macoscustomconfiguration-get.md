@@ -4,12 +4,12 @@ description: Ler propriedades e relações do objeto macOSCustomConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ad093e4ac276cad34340bb030b387b49e41bff32
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 518de1a8e9710109b672a1b231852cfb92dedafd
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30250324"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30973807"
 ---
 # <a name="get-macoscustomconfiguration"></a>Get macOSCustomConfiguration
 
@@ -18,7 +18,7 @@ ms.locfileid: "30250324"
 Ler propriedades e relações do objeto [macOSCustomConfiguration](../resources/intune-deviceconfig-macoscustomconfiguration.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

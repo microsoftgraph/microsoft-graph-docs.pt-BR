@@ -4,12 +4,12 @@ description: Exclui settingStateDeviceSummary.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 393d85b1d5b4183ec1877249b7120b77f7543d11
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 523347773e894e214ea351e8137385fe24e6e584
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30165272"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30975508"
 ---
 # <a name="delete-settingstatedevicesummary"></a>Excluir settingStateDeviceSummary
 
@@ -20,7 +20,7 @@ ms.locfileid: "30165272"
 Exclui [settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

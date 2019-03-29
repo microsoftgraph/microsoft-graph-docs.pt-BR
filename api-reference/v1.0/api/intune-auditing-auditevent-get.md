@@ -4,12 +4,12 @@ description: Ler propriedades e relações do objeto auditEvent.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7a97f8e774d7f3ccb855ff8f9c923bbc8109581f
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 48509d87a9ff5396fe0b3ebc52c338a15aba336c
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30255119"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30974948"
 ---
 # <a name="get-auditevent"></a>Get auditEvent
 
@@ -18,7 +18,7 @@ ms.locfileid: "30255119"
 Ler propriedades e relações do objeto [auditEvent](../resources/intune-auditing-auditevent.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

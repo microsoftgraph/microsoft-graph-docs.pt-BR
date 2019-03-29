@@ -4,12 +4,12 @@ description: Atualizar as propriedades de um objeto androidForWorkEnrollmentProf
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 77c5dcd3af7caf26c8320486ccb693c5004acc7a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e276325bfc67651ec71cde49fef3705b77567911
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30145623"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30972099"
 ---
 # <a name="update-androidforworkenrollmentprofile"></a>Atualizar androidForWorkEnrollmentProfile
 
@@ -20,7 +20,7 @@ ms.locfileid: "30145623"
 Atualizar as propriedades de um objeto [androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [android
 |accountId|String|GUID de locatário ao qual o perfil de registro pertence.|
 |id|String|GUID exclusivo do perfil de registro.|
 |displayName|String|Nome de exibição do perfil de registro.|
-|description|String|Descrição do perfil de registro.|
+|descrição|String|Descrição do perfil de registro.|
 |createdDateTime|DateTimeOffset|Data e hora de criação do perfil de registro.|
 |lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação do perfil de registro.|
 |tokenValue|String|Valor do token mais recentemente criado para este perfil de registro.|

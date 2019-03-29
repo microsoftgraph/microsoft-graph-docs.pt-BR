@@ -4,12 +4,12 @@ description: Exclui androidWorkProfileCustomConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 47a0a95b476f05dfc6e39c42381b654b4eaef902
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: f683a2c44114e264f56bf28c6a02766f4f7841d8
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30251787"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30972442"
 ---
 # <a name="delete-androidworkprofilecustomconfiguration"></a>Excluir androidWorkProfileCustomConfiguration
 
@@ -18,7 +18,7 @@ ms.locfileid: "30251787"
 Exclui [androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

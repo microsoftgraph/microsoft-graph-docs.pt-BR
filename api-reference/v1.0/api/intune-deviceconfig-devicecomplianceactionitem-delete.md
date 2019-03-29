@@ -4,12 +4,12 @@ description: Exclui deviceComplianceActionItem.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5238701c8f1fc79d4570ad7470b382ee8d1891c8
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 189152018478877b4ee61f437f1c160d0fad1234
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30264341"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30973961"
 ---
 # <a name="delete-devicecomplianceactionitem"></a>Excluir deviceComplianceActionItem
 
@@ -18,7 +18,7 @@ ms.locfileid: "30264341"
 Exclui [deviceComplianceActionItem](../resources/intune-deviceconfig-devicecomplianceactionitem.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

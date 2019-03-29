@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto windows81VpnConfigur
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 19319f1813b731dfa3d41f444629c0f6375e2401
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 78c591cf2d8a452b0805adf8e937b3783529f0c4
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30143166"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30972162"
 ---
 # <a name="get-windows81vpnconfiguration"></a>Obter windows81VpnConfiguration
 
@@ -20,7 +20,7 @@ ms.locfileid: "30143166"
 Leia as propriedades e as relações do objeto [windows81VpnConfiguration](../resources/intune-deviceconfig-windows81vpnconfiguration.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

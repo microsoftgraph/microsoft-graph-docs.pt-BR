@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto user.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 82d2505bb2bc776af6421b64e79bfbf8f7d46b72
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: 7e6643fa2beccf83384c454451094473e7c80ac8
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30570959"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30970958"
 ---
 # <a name="get-user"></a>Obter usuário
 
@@ -21,7 +21,7 @@ Leia as propriedades e as relações do objeto [user](../resources/intune-shared
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-Uma das seguintes permissões é necessária para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).  A permissão específica depende do contexto.
+Uma das seguintes permissões é necessária para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).  A permissão específica depende do contexto.
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

@@ -1,15 +1,15 @@
 ---
 title: Excluir iosManagedAppProtection
-description: Excluir um iosManagedAppProtection.
+description: Exclui iosManagedAppProtection.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 76b3290f5b0a293dbb2d541eb8d8af2065eebdfa
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: ec756a3952e4f7956016bff9b2130a0eb2300106
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30250891"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30971931"
 ---
 # <a name="delete-iosmanagedappprotection"></a>Excluir iosManagedAppProtection
 
@@ -18,7 +18,7 @@ ms.locfileid: "30250891"
 Exclui [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

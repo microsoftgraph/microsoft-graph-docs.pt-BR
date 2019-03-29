@@ -4,12 +4,12 @@ description: Solicitar assistência remota
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 53ff1e9ab6917a1be5df9766d1aa0d0d4b9e1b86
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 1ffac9091275408fa4d68310ac9be11167422bba
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30147401"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30974815"
 ---
 # <a name="requestremoteassistance-action"></a>Ação requestRemoteAssistance
 
@@ -20,7 +20,7 @@ ms.locfileid: "30147401"
 Solicitar assistência remota
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

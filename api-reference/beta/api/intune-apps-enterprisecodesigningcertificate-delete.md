@@ -4,12 +4,12 @@ description: Exclui enterpriseCodeSigningCertificate.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e2c0bcb7a0b5f0234aa660642cbdcdcd13302b97
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 11bfa26aeed0d4ded24aeb1318c47152a12122e3
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30161030"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30974038"
 ---
 # <a name="delete-enterprisecodesigningcertificate"></a>Excluir enterpriseCodeSigningCertificate
 
@@ -20,7 +20,7 @@ ms.locfileid: "30161030"
 Exclui [enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

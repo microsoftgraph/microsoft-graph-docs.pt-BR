@@ -4,12 +4,12 @@ description: Criar um novo objeto restrictedAppsViolation.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fbba9348e8b97125651951bdb4df424dc3b9fe47
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b06d4666bca4852b25552ad49ac86e48e40f9abb
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30146400"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30975298"
 ---
 # <a name="create-restrictedappsviolation"></a>Criar restrictedAppsViolation
 
@@ -20,7 +20,7 @@ ms.locfileid: "30146400"
 Criar um novo objeto [restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -52,9 +52,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar restrict
 |:---|:---|:---|
 |id|String|Identificador exclusivo do objeto. Composto de AccountId, DeviceID, PolicyId e userId|
 |userId|String|O identificador exclusivo do usuário deve ser GUID|
-|userName|String|Nome de usuário|
+|userName|Cadeia de caracteres|Nome de usuário|
 |managedDeviceId|String|O identificador exclusivo do dispositivo gerenciado deve ser GUID|
-|deviceName|Cadeia de caracteres|Nome do dispositivo|
+|deviceName|String|Nome do dispositivo|
 |deviceConfigurationId|String|O identificador exclusivo do perfil de configuração do dispositivo deve ser GUID|
 |deviceConfigurationName|String|Nome do perfil de configuração do dispositivo|
 |platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|Tipo de plataforma. Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `all`.|

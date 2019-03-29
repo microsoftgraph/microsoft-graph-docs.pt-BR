@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos macOSEnterpriseWiFiCon
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a6b0d2cbdb58dfb52e14f12c0df8cd0faede9dd3
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 5611087e8b4c2bcd552859140cf5ec422ec20a4e
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30168359"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30974969"
 ---
 # <a name="list-macosenterprisewificonfigurations"></a>Listar macOSEnterpriseWiFiConfigurations
 
@@ -20,7 +20,7 @@ ms.locfileid: "30168359"
 Listar Propriedades e relações dos objetos [macOSEnterpriseWiFiConfiguration](../resources/intune-deviceconfig-macosenterprisewificonfiguration.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

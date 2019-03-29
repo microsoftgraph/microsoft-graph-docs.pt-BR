@@ -4,12 +4,12 @@ description: Exclui cartToClassAssociation.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 471f8d794c68a05ef6da2df619dc661208d2d563
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 26a4932d343edc6683f7b401902e004bc22eaa4e
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30161401"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30975207"
 ---
 # <a name="delete-carttoclassassociation"></a>Excluir cartToClassAssociation
 
@@ -20,7 +20,7 @@ ms.locfileid: "30161401"
 Exclui [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

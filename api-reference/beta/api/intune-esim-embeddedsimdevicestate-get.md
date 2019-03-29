@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto embeddedSIMDeviceSta
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a34d8ed9938e4c00774bf789969659c5ff41e1e3
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: f3bf5211c3e3ff86ac2bbb3d8898582948457099
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30152686"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30972106"
 ---
 # <a name="get-embeddedsimdevicestate"></a>Obter embeddedSIMDeviceState
 
@@ -20,7 +20,7 @@ ms.locfileid: "30152686"
 Leia as propriedades e as relações do objeto [embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

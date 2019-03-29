@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos windowsInformationProt
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1732249e765b308fdbbcba2e2f3c1353c58a60f4
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 144fc1dc4849a59c6c32063eb6de0ea8c56527cd
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30167281"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30972477"
 ---
 # <a name="list-windowsinformationprotectiondeviceregistrations"></a>Listar windowsInformationProtectionDeviceRegistrations
 
@@ -20,7 +20,7 @@ ms.locfileid: "30167281"
 Listar Propriedades e relações dos objetos [windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

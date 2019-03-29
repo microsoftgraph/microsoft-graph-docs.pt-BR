@@ -4,12 +4,12 @@ description: Metadados para o relatório de atividade do dispositivo de configur
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 0b20d9a51ac397ef0583b80deaa85d57545b83e8
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: e73b6158d54872e4cae84b18e9a2d42571efbb31
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30572087"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30971980"
 ---
 # <a name="deviceconfigurationdeviceactivity-function"></a>Função deviceConfigurationDeviceActivity
 
@@ -19,7 +19,7 @@ ms.locfileid: "30572087"
 
 Metadados para o relatório de atividade do dispositivo de configuração do dispositivo
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

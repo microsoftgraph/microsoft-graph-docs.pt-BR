@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto windowsInformationPr
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7e998a9b7d6fccda8339cdb43120ab6a89c10ace
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: d4d10d3ec64a19a97c8dfbe3467eb25f3c950728
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30251521"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30971938"
 ---
 # <a name="get-windowsinformationprotectionnetworklearningsummary"></a>Acessar windowsInformationProtectionNetworkLearningSummary
 
@@ -18,7 +18,7 @@ ms.locfileid: "30251521"
 Leia as propriedades e as relações do objeto [windowsInformationProtectionNetworkLearningSummary](../resources/intune-wip-windowsinformationprotectionnetworklearningsummary.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

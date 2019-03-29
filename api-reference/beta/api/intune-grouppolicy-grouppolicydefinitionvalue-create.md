@@ -4,12 +4,12 @@ description: Criar um novo objeto groupPolicyDefinitionValue.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 327228a370391a48d16a7315399af2c1aad4f318
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 20915d40828e5377502fbbb4f8c1c61a9c963f16
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30142998"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30973107"
 ---
 # <a name="create-grouppolicydefinitionvalue"></a>Criar groupPolicyDefinitionValue
 
@@ -20,7 +20,7 @@ ms.locfileid: "30142998"
 Criar um novo objeto [groupPolicyDefinitionValue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -51,7 +51,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar groupPol
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|A data e a hora em que o objeto foi criado.|
-|enabled|Booliano|Habilita ou desabilita a definição de política de grupo associada.|
+|enabled|Boolean|Habilita ou desabilita a definição de política de grupo associada.|
 |ConfigurationType|[groupPolicyConfigurationType](../resources/intune-grouppolicy-grouppolicyconfigurationtype.md)|Especifica como o valor deve ser configurado. Isso pode ser uma política ou uma preferência. Os valores possíveis são: `policy` e `preference`.|
 |id|String|Chave da entidade.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez.|

@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto macOSCertificateProf
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6973faf3690abca35ea5a0c3d1f7c4cb01e08dd7
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 1891e5022cd64364b53e75bfc179e461e116b379
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30159168"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30975487"
 ---
 # <a name="get-macoscertificateprofilebase"></a>Obter macOSCertificateProfileBase
 
@@ -20,7 +20,7 @@ ms.locfileid: "30159168"
 Leia as propriedades e as relações do objeto [macOSCertificateProfileBase](../resources/intune-deviceconfig-macoscertificateprofilebase.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

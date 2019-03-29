@@ -4,12 +4,12 @@ description: Ler propriedades e relações do objeto eBookInstallSummary.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bf367625fa887400a0def357fe36d0bcfb2b77f3
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: b62a12a1b8a616bfd9ef9d8188d4ebe53cf23092
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30253201"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30974605"
 ---
 # <a name="get-ebookinstallsummary"></a>Get eBookInstallSummary
 
@@ -18,7 +18,7 @@ ms.locfileid: "30253201"
 Ler propriedades e relações do objeto [eBookInstallSummary](../resources/intune-books-ebookinstallsummary.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

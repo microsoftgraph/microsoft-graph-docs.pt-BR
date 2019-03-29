@@ -4,12 +4,12 @@ description: Renova a URI SAS para um carregamento de arquivo de aplicativo.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0a2b8ffc6df365c01de77ae49579ea1d584ccbef
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: e68ae93113db49fe7bd8c12d335406db2f4a18b1
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30264033"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30975053"
 ---
 # <a name="renewupload-action"></a>Ação renewUpload
 
@@ -18,7 +18,7 @@ ms.locfileid: "30264033"
 Renova a URI SAS para um carregamento de arquivo de aplicativo.
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

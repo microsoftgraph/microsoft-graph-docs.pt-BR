@@ -4,12 +4,12 @@ description: Ler propriedades e relações do objeto localizedNotificationMessag
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8d4bc7f70c5c8b5cf0ccd8e4c0780af980bd3172
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: d924601cce1282725b793d4fca25053068d30254
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30255868"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30971672"
 ---
 # <a name="get-localizednotificationmessage"></a>Obter localizedNotificationMessage
 
@@ -18,7 +18,7 @@ ms.locfileid: "30255868"
 Ler propriedades e relações do objeto [localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

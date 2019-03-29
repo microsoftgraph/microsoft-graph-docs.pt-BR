@@ -4,12 +4,12 @@ description: Ler propriedades e relações do objeto windowsUpdateForBusinessCon
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 036f2d8918d2ded29a4d6d5f04329868fe159773
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: c66f7060dec6db43618046ad825e8fb9cbed0cff
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30262500"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30973737"
 ---
 # <a name="get-windowsupdateforbusinessconfiguration"></a>Get windowsUpdateForBusinessConfiguration
 
@@ -18,7 +18,7 @@ ms.locfileid: "30262500"
 Ler propriedades e relações do objeto [windowsUpdateForBusinessConfiguration](../resources/intune-deviceconfig-windowsupdateforbusinessconfiguration.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

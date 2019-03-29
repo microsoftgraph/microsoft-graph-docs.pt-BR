@@ -4,12 +4,12 @@ description: Criar um novo objeto networkIPv4ConfigurationManagementCondition.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6c90895b669a6d9c5eebc541575153442a782fbc
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e045c50df3e2ce74ed3bc4d4420c506ef5e7a651
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30167057"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30966170"
 ---
 # <a name="create-networkipv4configurationmanagementcondition"></a>Criar networkIPv4ConfigurationManagementCondition
 
@@ -20,7 +20,7 @@ ms.locfileid: "30167057"
 Criar um novo objeto [networkIPv4ConfigurationManagementCondition](../resources/intune-fencing-networkipv4configurationmanagementcondition.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -54,7 +54,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar networkI
 |id|String|Identificador exclusivo da condição de gerenciamento. Valor gerado pelo sistema atribuído quando criado. Herdado de [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |uniqueName|String|Nome exclusivo para a condição de gerenciamento. Usado em expressões de condição de gerenciamento. Herdado de [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |displayName|String|O nome do administrador definido da condição de gerenciamento. Herdado de [managementCondition](../resources/intune-fencing-managementcondition.md)|
-|description|Cadeia de caracteres|A descrição definida pelo administrador da condição de gerenciamento. Herdado de [managementCondition](../resources/intune-fencing-managementcondition.md)|
+|descrição|Cadeia de caracteres|A descrição definida pelo administrador da condição de gerenciamento. Herdado de [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |createdDateTime|DateTimeOffset|A hora em que a condição de gerenciamento foi criada. Lado do serviço gerado. Herdado de [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |modifiedDateTime|DateTimeOffset|A hora em que a condição de gerenciamento foi modificada pela última vez. Atualizado o lado do serviço. Herdado de [managementCondition](../resources/intune-fencing-managementcondition.md)|
 |eTag|String|ETag da condição de gerenciamento. Atualizado o lado do serviço. Herdado de [managementCondition](../resources/intune-fencing-managementcondition.md)|
@@ -62,8 +62,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar networkI
 |ipV4Prefix|String|A sub-rede IPv4 à qual está conectada. por exemplo, 10.0.0.0/8|
 |ipV4Gateway|String|O endereço do gateway IPv4. por exemplo, 10.0.0.0|
 |ipV4DHCPServer|String|O endereço IPv4 do servidor DHCP para o adaptador.|
-|ipV4DNSServerList|Coleção de cadeias de caracteres|Os servidores DNS IPv4 configurados para o adaptador.|
-|dnsSuffixList|Coleção de cadeias de caracteres|Sufixos DNS válidos para a rede atual. por exemplo, Seattle.contoso.com|
+|ipV4DNSServerList|Coleção String|Os servidores DNS IPv4 configurados para o adaptador.|
+|dnsSuffixList|Coleção String|Sufixos DNS válidos para a rede atual. por exemplo, Seattle.contoso.com|
 
 
 
