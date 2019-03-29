@@ -4,29 +4,29 @@ description: Listar propriedades e relações dos objetos windows10CompliancePol
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a967eb393376fdb545666a015fa984a1d8a8a8b5
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 7733de6813889c80094b23839e06634690a9ee56
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30254874"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30982284"
 ---
-# <a name="list-windows10compliancepolicies"></a><span data-ttu-id="fa334-103">Listar windows10CompliancePolicies</span><span class="sxs-lookup"><span data-stu-id="fa334-103">List windows10CompliancePolicies</span></span>
+# <a name="list-windows10compliancepolicies"></a><span data-ttu-id="c29ad-103">Listar windows10CompliancePolicies</span><span class="sxs-lookup"><span data-stu-id="c29ad-103">List windows10CompliancePolicies</span></span>
 
-> <span data-ttu-id="fa334-104">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="fa334-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="c29ad-104">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="c29ad-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="fa334-105">Listar propriedades e relações dos objetos [windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy.md).</span><span class="sxs-lookup"><span data-stu-id="fa334-105">List properties and relationships of the [windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy.md) objects.</span></span>
+<span data-ttu-id="c29ad-105">Listar propriedades e relações dos objetos [windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy.md).</span><span class="sxs-lookup"><span data-stu-id="c29ad-105">List properties and relationships of the [windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy.md) objects.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="fa334-106">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="fa334-106">Prerequisites</span></span>
-<span data-ttu-id="fa334-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="fa334-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="c29ad-106">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="c29ad-106">Prerequisites</span></span>
+<span data-ttu-id="c29ad-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c29ad-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="fa334-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="fa334-109">Permission type</span></span>|<span data-ttu-id="fa334-110">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="fa334-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="c29ad-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="c29ad-109">Permission type</span></span>|<span data-ttu-id="c29ad-110">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="c29ad-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="fa334-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="fa334-111">Delegated (work or school account)</span></span>|<span data-ttu-id="fa334-112">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="fa334-112">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
-|<span data-ttu-id="fa334-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="fa334-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="fa334-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="fa334-114">Not supported.</span></span>|
-|<span data-ttu-id="fa334-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="fa334-115">Application</span></span>|<span data-ttu-id="fa334-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="fa334-116">Not supported.</span></span>|
+|<span data-ttu-id="c29ad-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="c29ad-111">Delegated (work or school account)</span></span>|<span data-ttu-id="c29ad-112">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="c29ad-112">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="c29ad-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="c29ad-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="c29ad-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c29ad-114">Not supported.</span></span>|
+|<span data-ttu-id="c29ad-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="c29ad-115">Application</span></span>|<span data-ttu-id="c29ad-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c29ad-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="fa334-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="fa334-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c29ad-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="c29ad-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -35,28 +35,28 @@ ms.locfileid: "30254874"
 GET /deviceManagement/deviceCompliancePolicies
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="fa334-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="fa334-118">Request headers</span></span>
-|<span data-ttu-id="fa334-119">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="fa334-119">Header</span></span>|<span data-ttu-id="fa334-120">Valor</span><span class="sxs-lookup"><span data-stu-id="fa334-120">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="c29ad-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="c29ad-118">Request headers</span></span>
+|<span data-ttu-id="c29ad-119">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="c29ad-119">Header</span></span>|<span data-ttu-id="c29ad-120">Valor</span><span class="sxs-lookup"><span data-stu-id="c29ad-120">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="fa334-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="fa334-121">Authorization</span></span>|<span data-ttu-id="fa334-122">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="fa334-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="fa334-123">Aceitar</span><span class="sxs-lookup"><span data-stu-id="fa334-123">Accept</span></span>|<span data-ttu-id="fa334-124">application/json</span><span class="sxs-lookup"><span data-stu-id="fa334-124">application/json</span></span>|
+|<span data-ttu-id="c29ad-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="c29ad-121">Authorization</span></span>|<span data-ttu-id="c29ad-122">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="c29ad-122">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="c29ad-123">Aceitar</span><span class="sxs-lookup"><span data-stu-id="c29ad-123">Accept</span></span>|<span data-ttu-id="c29ad-124">application/json</span><span class="sxs-lookup"><span data-stu-id="c29ad-124">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="fa334-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="fa334-125">Request body</span></span>
-<span data-ttu-id="fa334-126">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="fa334-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c29ad-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="c29ad-125">Request body</span></span>
+<span data-ttu-id="c29ad-126">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="c29ad-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="fa334-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="fa334-127">Response</span></span>
-<span data-ttu-id="fa334-128">Se tiver êxito, este método retornará um código de resposta `200 OK` e uma coleção de objetos [windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="fa334-128">If successful, this method returns a `200 OK` response code and a collection of [windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="c29ad-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="c29ad-127">Response</span></span>
+<span data-ttu-id="c29ad-128">Se tiver êxito, este método retornará um código de resposta `200 OK` e uma coleção de objetos [windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="c29ad-128">If successful, this method returns a `200 OK` response code and a collection of [windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="fa334-129">Exemplo</span><span class="sxs-lookup"><span data-stu-id="fa334-129">Example</span></span>
+## <a name="example"></a><span data-ttu-id="c29ad-129">Exemplo</span><span class="sxs-lookup"><span data-stu-id="c29ad-129">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="fa334-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="fa334-130">Request</span></span>
-<span data-ttu-id="fa334-131">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="fa334-131">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="c29ad-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c29ad-130">Request</span></span>
+<span data-ttu-id="c29ad-131">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="c29ad-131">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies
 ```
 
-### <a name="response"></a><span data-ttu-id="fa334-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="fa334-132">Response</span></span>
-<span data-ttu-id="fa334-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="fa334-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="c29ad-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="c29ad-132">Response</span></span>
+<span data-ttu-id="c29ad-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="c29ad-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
