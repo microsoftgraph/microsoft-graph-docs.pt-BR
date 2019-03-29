@@ -4,18 +4,18 @@ description: 'No Microsoft Teams, uma equipe é um conjunto de canais. '
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 9a5f1968753d3d2412b3885e6a09e94f18731e40
-ms.sourcegitcommit: d1a9e7c8e1376a99c5a5416257889ec113613a77
+ms.openlocfilehash: 01bfcc5a036e2df8f91aad7ad06aa71ba41f1e28
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "30458677"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30967598"
 ---
 # <a name="team-resource-type"></a>tipo de recurso de equipe
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No Microsoft Teams, uma equipe é um conjunto de [canais](channel.md). Um canal representa um tópico e, portanto, um isolamento lógico da discussão em uma equipe.
+No Microsoft Teams, uma equipe é um conjunto de objetos de [canal](channel.md). Um canal representa um tópico e, portanto, um isolamento lógico da discussão em uma equipe.
 
 Cada equipe está associada a um [grupo](../resources/group.md).
 O grupo tem a mesma ID da equipe, por exemplo, /groups/{id}/team é igual a /teams/{id}.
@@ -36,7 +36,7 @@ Confira mais informações sobre como trabalhar com grupos e membros em equipes,
 |[Listar suas equipes](../api/user-list-joinedteams.md) | Coleção [team](team.md) | Liste as equipes das quais você é membro. |
 |[Listar todas as equipes](/graph/teams-list-all-teams) | Coleção [group](group.md) | Liste todos os grupos que têm equipes. |
 |[Publicar aplicativos para sua organização](../resources/teamsapp.md)| [teamsApp](../resources/teamsapp.md) | Crie aplicativos do Teams que apenas sua organização possa ver. |
-|[Adicionar aplicativo à equipe](../api/teamsappinstallation-add.md) | [teamsappinstallation](teamsappinstallation.md) | Adiciona (instala) um aplicativo a uma equipe.|
+|[Adicionar aplicativo à equipe](../api/teamsappinstallation-add.md) | [teamsAppInstallation](teamsappinstallation.md) | Adiciona (instala) um aplicativo a uma equipe.|
 |[Adicionar uma guia ao canal](../api/teamstab-add.md) | [teamsTab](../resources/teamstab.md) | Adiciona (instala) uma guia ao canal de uma equipe.|
 |[Listar mensagens do canal](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | [Obter mensagens em um canal](../api/channel-list-messages.md) |
 |[Enviar a mensagem do canal](../api/channel-post-chatmessage.md)  | [chatMessage](../resources/chatmessage.md) | [Enviar uma mensagem para um canal](../api/channel-post-chatmessage.md) |
