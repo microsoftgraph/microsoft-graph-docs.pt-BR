@@ -4,12 +4,12 @@ description: Atualizar as propriedades de um objeto mobileAppContent.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3b792deab5c10e8770666a707976afa330d03a4f
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: f38e95e3001665010d96f5be0008a82672243b80
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30149368"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30957000"
 ---
 # <a name="update-mobileappcontent"></a>Atualizar mobileAppContent
 
@@ -20,7 +20,7 @@ ms.locfileid: "30149368"
 Atualizar as propriedades de um objeto [mobileAppContent](../resources/intune-apps-mobileappcontent.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -52,7 +52,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [mobileA
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|A versão do conteúdo do aplicativo.|
+|id|String|A versão do conteúdo do aplicativo.|
 
 
 

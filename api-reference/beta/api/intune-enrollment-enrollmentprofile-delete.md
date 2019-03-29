@@ -4,12 +4,12 @@ description: Exclui enrollmentProfile.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f9525b2a8e143708ee62933ec5702f1c10a98b66
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ad20a6a282fa44f6d721f2175ca09f9d8f1273d3
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30161961"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30959730"
 ---
 # <a name="delete-enrollmentprofile"></a>Excluir enrollmentProfile
 
@@ -20,7 +20,7 @@ ms.locfileid: "30161961"
 Exclui [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

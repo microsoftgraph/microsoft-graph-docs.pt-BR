@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto managedAndroidStoreA
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d03e9fa741251cc77e1717757f70418813bd46bc
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 1af7a212eb0873f26a3b45977438e880f6a2f11f
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30153281"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30960066"
 ---
 # <a name="get-managedandroidstoreapp"></a>Acessar managedAndroidStoreApp
 
@@ -20,7 +20,7 @@ ms.locfileid: "30153281"
 Leia as propriedades e as relações do objeto [managedAndroidStoreApp](../resources/intune-apps-managedandroidstoreapp.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

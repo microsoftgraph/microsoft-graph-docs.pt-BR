@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto enterpriseCodeSigningCertific
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9e6bbceca4ef3c5e20fa327ce92e65ae6cfc53e7
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 3820c47b4aa87ecbeed4b5c6e5a5520e5126e3a1
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30143145"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30957518"
 ---
 # <a name="update-enterprisecodesigningcertificate"></a>Atualizar enterpriseCodeSigningCertificate
 
@@ -20,7 +20,7 @@ ms.locfileid: "30143145"
 Atualiza as propriedades de um objeto [enterpriseCodeSigningCertificate](../resources/intune-apps-enterprisecodesigningcertificate.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -51,10 +51,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [enterpr
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|A chave da entidade.|
-|content|Binária|O certificado de assinatura de código do Windows Enterprise no formato de dados brutos.|
+|conteúdo|Binary|O certificado de assinatura de código do Windows Enterprise no formato de dados brutos.|
 |status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|O status do certificado provisionado ou não foi provisionado. Os valores possíveis são: `notProvisioned` e `provisioned`.|
 |SubjectName|String|O nome da entidade do certificado.|
-|subject|String|O valor de entidade para o certificado.|
+|Assunto|String|O valor de entidade para o certificado.|
 |issuerName|String|O nome do emissor do certificado.|
 |emissor|String|O valor do emissor para o certificado.|
 |expirationDateTime|DateTimeOffset|A data de expiração do certificado.|

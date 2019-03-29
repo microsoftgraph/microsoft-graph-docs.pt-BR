@@ -4,12 +4,12 @@ description: Listar propriedades e relações dos objetos macOSDeviceFeaturesCon
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dd09102caf00f34ef93b4e9f513edb5e165f4d51
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 60effb48c82efd7fb37237550a350c9a3c8587bd
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30139351"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30957497"
 ---
 # <a name="list-macosdevicefeaturesconfigurations"></a>Listar macOSDeviceFeaturesConfigurations
 
@@ -20,7 +20,7 @@ ms.locfileid: "30139351"
 Listar propriedades e relações dos objetos [macOSDeviceFeaturesConfiguration](../resources/intune-deviceconfig-macosdevicefeaturesconfiguration.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

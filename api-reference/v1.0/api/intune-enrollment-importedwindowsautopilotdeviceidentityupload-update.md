@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto importedWindowsAutopilotDevic
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 558cc0552694ad40f3088fbac8a3b3c60b73fd9a
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 26cae41f03eb0e6d3febba419071680d45bb6188
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30250716"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30958876"
 ---
 # <a name="update-importedwindowsautopilotdeviceidentityupload"></a>Atualizar importedWindowsAutopilotDeviceIdentityUpload
 
@@ -18,7 +18,7 @@ ms.locfileid: "30250716"
 Atualiza as propriedades de um objeto [importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -48,7 +48,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [importe
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O GUID do objeto.|
+|id|String|O GUID do objeto.|
 |createdDateTimeUtc|DateTimeOffset|DateTime quando a entidade é criada.|
 |status|[importedWindowsAutopilotDeviceIdentityUploadStatus](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus.md)|Status de upload. Os valores possíveis são: `noUpload`, `pending`, `complete`, `error`.|
 

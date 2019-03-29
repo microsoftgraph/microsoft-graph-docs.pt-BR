@@ -4,12 +4,12 @@ description: Exclui deviceEnrollmentWindowsHelloForBusinessConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4c4f50711646619b4d3f18b85334a9769d193de8
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c5338a4ae00250e10106803e5f7de4aeb966e627
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30148591"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30959317"
 ---
 # <a name="delete-deviceenrollmentwindowshelloforbusinessconfiguration"></a>Excluir deviceEnrollmentWindowsHelloForBusinessConfiguration
 
@@ -20,7 +20,7 @@ ms.locfileid: "30148591"
 Exclui [deviceEnrollmentWindowsHelloForBusinessConfiguration](../resources/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

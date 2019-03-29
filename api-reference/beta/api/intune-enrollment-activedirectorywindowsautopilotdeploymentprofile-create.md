@@ -4,12 +4,12 @@ description: Criar um novo objeto activeDirectoryWindowsAutopilotDeploymentProfi
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1434d4cd171c28152ad84089ea3c4ad0b04fc5e7
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: 82a198ecf64d549514847826372584e4036b37dd
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30571666"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30960752"
 ---
 # <a name="create-activedirectorywindowsautopilotdeploymentprofile"></a>Criar activeDirectoryWindowsAutopilotDeploymentProfile
 
@@ -20,7 +20,7 @@ ms.locfileid: "30571666"
 Criar um novo objeto [activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

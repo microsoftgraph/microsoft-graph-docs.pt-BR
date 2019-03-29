@@ -4,12 +4,12 @@ description: Atualizar as propriedades de um objeto organização.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b639ff8d3a2d043bd001f160a0c04ca97a11dbba
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 01c366d5236a93da64d3f73d733ddfd264110fc0
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30258482"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30960360"
 ---
 # <a name="update-organization"></a>Atualize a organização
 
@@ -18,7 +18,7 @@ ms.locfileid: "30258482"
 Atualizar as propriedades de um objeto [organização](../resources/intune-onboarding-organization.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -48,7 +48,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [organiz
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O GUID do objeto.|
+|id|String|O GUID do objeto.|
 |mobileDeviceManagementAuthority|[mdmAuthority](../resources/intune-onboarding-mdmauthority.md)|Define autoridade de gerenciamento de dispositivo móvel. Os valores possíveis são: `unknown`, `intune`, `sccm`, `office365`.|
 
 

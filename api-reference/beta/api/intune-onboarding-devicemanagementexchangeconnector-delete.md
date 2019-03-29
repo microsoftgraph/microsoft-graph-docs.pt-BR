@@ -4,12 +4,12 @@ description: Exclui deviceManagementExchangeConnector.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a0379ae79eec9df460940bda0108f3eafcd95514
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 698a8eeea4213fa6a0c4ee48a6366a412fafd273
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30142466"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30959912"
 ---
 # <a name="delete-devicemanagementexchangeconnector"></a>Excluir deviceManagementExchangeConnector
 
@@ -20,7 +20,7 @@ ms.locfileid: "30142466"
 Exclui [deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

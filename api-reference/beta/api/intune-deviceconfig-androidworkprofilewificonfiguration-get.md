@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto androidWorkProfileWi
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9a47e2afa8dc58e67ed650e6bf4eb50bae7b2f20
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: bd8e8cd7f06cb2ae8ee892b2105d5a396870b1f6
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30157747"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30958848"
 ---
 # <a name="get-androidworkprofilewificonfiguration"></a>Obter androidWorkProfileWiFiConfiguration
 
@@ -20,7 +20,7 @@ ms.locfileid: "30157747"
 Leia as propriedades e as relações do objeto [androidWorkProfileWiFiConfiguration](../resources/intune-deviceconfig-androidworkprofilewificonfiguration.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

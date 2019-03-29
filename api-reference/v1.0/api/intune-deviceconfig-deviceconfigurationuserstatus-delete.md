@@ -4,12 +4,12 @@ description: Exclui deviceConfigurationUserStatus.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2ea8fb26a9a84e5dbfd6a967d5c4bb351b7e3488
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: d71d56a7aca31dd0503a9fa2ff04253e3cdb831f
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30255931"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30958358"
 ---
 # <a name="delete-deviceconfigurationuserstatus"></a>Excluir deviceConfigurationUserStatus
 
@@ -18,7 +18,7 @@ ms.locfileid: "30255931"
 Exclui [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

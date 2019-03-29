@@ -4,12 +4,12 @@ description: Redefinir senha
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5e5d532fe6dff8fccbbb647f6d801fc92e888308
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 87edea2b37f61ec05ce491d1d09697b9b1c77b6b
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30256417"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30960003"
 ---
 # <a name="resetpasscode-action"></a>Ação resetPasscode
 
@@ -18,7 +18,7 @@ ms.locfileid: "30256417"
 Redefinir senha
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

@@ -4,12 +4,12 @@ description: Leia as propriedades e relações de objetos de deviceComplianceUse
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a97f83591cb6fa691bff939a2f4af52835eb99d3
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 8415385cb1adb196536eb0dceae879ad12dd6a97
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30143264"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30958533"
 ---
 # <a name="get-devicecomplianceuseroverview"></a>Acessar deviceComplianceUserOverview
 
@@ -20,7 +20,7 @@ ms.locfileid: "30143264"
 Leia as propriedades e relações de objetos de [deviceComplianceUserOverview](../resources/intune-deviceconfig-devicecomplianceuseroverview.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

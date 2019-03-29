@@ -4,12 +4,12 @@ description: Criar um novo objeto resourceOperation.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5ecbe52ac2c988967a121904e63d1bd6e00929a5
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: fde65e56ec2f9c622140819e68064ed02138e90f
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30154149"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30960367"
 ---
 # <a name="create-resourceoperation"></a>Criar resourceOperation
 
@@ -20,7 +20,7 @@ ms.locfileid: "30154149"
 Criar um novo objeto [resourceOperation](../resources/intune-rbac-resourceoperation.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -53,8 +53,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar resource
 |id|String|Chave da operação de recurso. Somente leitura, gerada automaticamente.|
 |recurso|String|Categoria de recurso à qual essa operação pertence.|
 |resourceName|Cadeia de caracteres|Nome do recurso em que essa operação é executada.|
-|actionName|String|Tipo de ação em que essa operação será executada. O actionName deve ser conciso e limitado ao mínimo de palavras possível.|
-|description|Cadeia de caracteres|Descrição da operação de recurso. A descrição é usada no texto exibido com o passar o mouse para a operação quando exibida no Portal do Azure.|
+|actionName|Cadeia de caracteres|Tipo de ação em que essa operação será executada. O actionName deve ser conciso e limitado ao mínimo de palavras possível.|
+|descrição|String|Descrição da operação de recurso. A descrição é usada no texto exibido com o passar o mouse para a operação quando exibida no Portal do Azure.|
 |enabledForScopeValidation|Boolean|Determina se a permissão é validada para os esCopos definidos por atribuição de função.|
 
 

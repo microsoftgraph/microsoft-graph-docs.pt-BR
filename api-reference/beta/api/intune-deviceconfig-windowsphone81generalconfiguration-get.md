@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto windowsPhone81Genera
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5a1f4a657524f2b8633aa0c5c09bf57328856602
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 44ac993b268f1fb763095a7ff523211296982700
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30140373"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30959534"
 ---
 # <a name="get-windowsphone81generalconfiguration"></a>Acessar windowsPhone81GeneralConfiguration
 
@@ -20,7 +20,7 @@ ms.locfileid: "30140373"
 Leia as propriedades e as relações do objeto [windowsPhone81GeneralConfiguration](../resources/intune-deviceconfig-windowsphone81generalconfiguration.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

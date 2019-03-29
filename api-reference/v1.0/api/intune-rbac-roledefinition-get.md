@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto roleDefinition.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a18d199c0814d3b82fb75646fb99adc488dbfa33
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 4f972cbbf0ba1cc3a2dce300d9784694776e5cdf
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30257712"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30958449"
 ---
 # <a name="get-roledefinition"></a>Acessar roleDefinition
 
@@ -18,7 +18,7 @@ ms.locfileid: "30257712"
 Leia as propriedades e as relações do objeto [roleDefinition](../resources/intune-rbac-roledefinition.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

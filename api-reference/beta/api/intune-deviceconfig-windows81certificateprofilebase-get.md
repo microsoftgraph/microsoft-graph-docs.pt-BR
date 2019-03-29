@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto windows81Certificate
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ab8a31fae1a9202db6319c2a21605ea74b043185
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 6e9e4ea248b3ca99cf77358a9be5c04938cd7fe3
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30165545"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30957042"
 ---
 # <a name="get-windows81certificateprofilebase"></a>Obter windows81CertificateProfileBase
 
@@ -20,7 +20,7 @@ ms.locfileid: "30165545"
 Leia as propriedades e as relações do objeto [windows81CertificateProfileBase](../resources/intune-deviceconfig-windows81certificateprofilebase.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

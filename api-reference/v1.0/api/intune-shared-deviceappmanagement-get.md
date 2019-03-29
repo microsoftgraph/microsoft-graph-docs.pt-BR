@@ -1,15 +1,15 @@
 ---
 title: Get deviceAppManagement
-description: Ler propriedades e relações de objetos de deviceAppManagement.
+description: Ler propriedades e relações do objeto deviceAppManagement.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: c5d54e1dfeb67192465468a8abe2f26a39c2c50a
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 841282551258c23dc57e34c06e803d4184f86809
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30257383"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30958400"
 ---
 # <a name="get-deviceappmanagement"></a>Get deviceAppManagement
 
@@ -19,7 +19,7 @@ Ler propriedades e relações do objeto [deviceAppManagement](../resources/intun
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-Uma das seguintes permissões é necessária para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).  Observe que a permissão adequada varia de acordo com o fluxo de trabalho.
+Uma das seguintes permissões é necessária para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).  Observe que a permissão adequada varia de acordo com o fluxo de trabalho.
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

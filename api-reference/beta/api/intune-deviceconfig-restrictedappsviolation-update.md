@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto restrictedAppsViolation.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fc2a440872d399cc684c2ce52ce2d825ba52f9ce
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 514b2398d5198f5d9d5fa8c6895ce3fa56beec20
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30163347"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30958841"
 ---
 # <a name="update-restrictedappsviolation"></a>Atualizar restrictedAppsViolation
 
@@ -20,7 +20,7 @@ ms.locfileid: "30163347"
 Atualiza as propriedades de um objeto [restrictedAppsViolation](../resources/intune-deviceconfig-restrictedappsviolation.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -52,9 +52,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [restric
 |:---|:---|:---|
 |id|String|Identificador exclusivo do objeto. Composto de AccountId, DeviceID, PolicyId e userId|
 |userId|String|O identificador exclusivo do usuário deve ser GUID|
-|userName|String|Nome de usuário|
+|userName|Cadeia de caracteres|Nome de usuário|
 |managedDeviceId|String|O identificador exclusivo do dispositivo gerenciado deve ser GUID|
-|deviceName|Cadeia de caracteres|Nome do dispositivo|
+|deviceName|String|Nome do dispositivo|
 |deviceConfigurationId|String|O identificador exclusivo do perfil de configuração do dispositivo deve ser GUID|
 |deviceConfigurationName|String|Nome do perfil de configuração do dispositivo|
 |platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|Tipo de plataforma. Os valores possíveis são: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `all`.|

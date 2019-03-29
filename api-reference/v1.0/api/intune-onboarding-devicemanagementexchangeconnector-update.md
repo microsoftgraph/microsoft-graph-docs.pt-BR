@@ -4,12 +4,12 @@ description: Atualizar as propriedades de um objeto deviceManagementExchangeConn
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2c6756ebc93ae82b333ac298669c4e1f25b6b8ca
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: c3e8784796577f08bf8c1f30a748513ff5e081c9
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30264117"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30957420"
 ---
 # <a name="update-devicemanagementexchangeconnector"></a>Atualizar deviceManagementExchangeConnector
 
@@ -18,7 +18,7 @@ ms.locfileid: "30264117"
 Atualizar as propriedades de um objeto [deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -55,7 +55,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [deviceManagemen
 |serverName|String|O nome do servidor Exchange.|
 |connectorServerName|String|O nome do servidor que hospeda o Exchange Connector.|
 |exchangeConnectorType|[deviceManagementExchangeConnectorType](../resources/intune-onboarding-devicemanagementexchangeconnectortype.md)|O tipo de Exchange Connector configurado. Os valores possíveis são: `onPremises`, `hosted`, `serviceToService`, `dedicated`.|
-|version|String|A versão do ExchangeConnectorAgent|
+|versão|String|A versão do ExchangeConnectorAgent|
 |exchangeAlias|String|Um alias atribuído a um servidor Exchange|
 |exchangeOrganization|Cadeia de caracteres|Organização do Exchange no servidor Exchange|
 

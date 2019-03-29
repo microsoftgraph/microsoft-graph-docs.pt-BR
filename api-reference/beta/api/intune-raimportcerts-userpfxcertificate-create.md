@@ -4,12 +4,12 @@ description: Criar um novo objeto userPFXCertificate.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bf704664785eb1d61aacea3b72dcaed7a02bd24d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 32ac31aba2a3d88feb8b9254de7eedbd71d99a52
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30158706"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30958498"
 ---
 # <a name="create-userpfxcertificate"></a>Criar userPFXCertificate
 
@@ -20,7 +20,7 @@ ms.locfileid: "30158706"
 Criar um novo objeto [userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -58,8 +58,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar userPFXC
 |expirationDateTime|DateTimeOffset|Data/hora de validade do certificado.|
 |providerName|String|Provedor de criptografia usado para criptografar este BLOB.|
 |keyName|String|Nome da chave (dentro do provedor) usada para criptografar o blob.|
-|paddingScheme|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|Esquema de preenchimento usado pelo provedor durante a criptografia/descriptografia. Os possíveis valores são: `none`, `pkcs1`, `oaepSha1`, `oaepSha256`, `oaepSha384`, `oaepSha512`.|
-|encryptedPfxBlob|Binária|Blob PFX criptografado.|
+|paddingScheme|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|Esquema de preenchimento usado pelo provedor durante a criptografia/descriptografia. Os valores possíveis são: `none`, `pkcs1`, `oaepSha1`, `oaepSha256`, `oaepSha384`, `oaepSha512`.|
+|encryptedPfxBlob|Binary|Blob PFX criptografado.|
 |encryptedPfxPassword|String|Senha PFX criptografada.|
 |createdDateTime|DateTimeOffset|Data/hora em que este certificado PFX foi importado.|
 |lastModifiedDateTime|DateTimeOffset|Data/hora em que este certificado PFX foi modificado pela última vez.|

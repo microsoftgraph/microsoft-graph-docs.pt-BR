@@ -4,12 +4,12 @@ description: Exclui windowsKioskConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f64d9e0e5328fc90c53d7056b01f4f1e78cb79e1
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c019c86cd75d167243f918602f9ffa77a79f14d9
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172097"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30959541"
 ---
 # <a name="delete-windowskioskconfiguration"></a>Excluir windowsKioskConfiguration
 
@@ -20,7 +20,7 @@ ms.locfileid: "30172097"
 Exclui [windowsKioskConfiguration](../resources/intune-deviceconfig-windowskioskconfiguration.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

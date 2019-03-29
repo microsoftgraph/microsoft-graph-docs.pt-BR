@@ -4,12 +4,12 @@ description: Exclui iosVppEBookAssignment.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8364981b676c73b7d1610612bc104bce3237b116
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 17556ff93c13032457d0cf69cae9f2a15a9d7035
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30252004"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30956853"
 ---
 # <a name="delete-iosvppebookassignment"></a>Excluir iosVppEBookAssignment
 
@@ -18,7 +18,7 @@ ms.locfileid: "30252004"
 Exclui [iosVppEBookAssignment](../resources/intune-books-iosvppebookassignment.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto groupPolicyDefinitio
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3e779aadd2a4325d0cf2d30ea89623ed1776a8f6
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 97ac44260ef0c7bdc27e5156182db769c5e65fb7
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30154590"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30959198"
 ---
 # <a name="get-grouppolicydefinition"></a>Obter groupPolicyDefinition
 
@@ -20,7 +20,7 @@ ms.locfileid: "30154590"
 Leia as propriedades e as relações do objeto [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

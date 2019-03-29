@@ -4,12 +4,12 @@ description: Exclui iosVppApp.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c8fcd112133fe494a4441900da9a6285f857ff73
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 834dea9bbdaae0db742f8b5b5d7a47d63f5e5963
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30257404"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30959268"
 ---
 # <a name="delete-iosvppapp"></a>Excluir iosVppApp
 
@@ -18,7 +18,7 @@ ms.locfileid: "30257404"
 Exclui [iosVppApp](../resources/intune-apps-iosvppapp.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

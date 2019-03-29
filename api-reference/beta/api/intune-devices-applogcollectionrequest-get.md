@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto appLogCollectionRequ
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c7aa03741987a6ac013b80ae9038e2a993aec756
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 5f3daa16ac5a343db6f057e74f80096c568bc0eb
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30144923"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30959849"
 ---
 # <a name="get-applogcollectionrequest"></a>Obter appLogCollectionRequest
 
@@ -20,7 +20,7 @@ ms.locfileid: "30144923"
 Leia as propriedades e as relações do objeto [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

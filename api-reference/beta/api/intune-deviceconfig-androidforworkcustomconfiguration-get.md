@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto androidForWorkCustom
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0d3a06d0ca22c5c41b35a48eec9eeddf522e92c6
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: d7efbd5530e1574ec004f7e0b4d6b9cd2d7eb490
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30158510"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30960332"
 ---
 # <a name="get-androidforworkcustomconfiguration"></a>Obter androidForWorkCustomConfiguration
 
@@ -20,7 +20,7 @@ ms.locfileid: "30158510"
 Leia as propriedades e as relações do objeto [androidForWorkCustomConfiguration](../resources/intune-deviceconfig-androidforworkcustomconfiguration.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

@@ -4,12 +4,12 @@ description: Atualizar as propriedades de um objeto importedWindowsAutopilotDevi
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8a81e7b8291bab7698869c60d5403fd07be08cb5
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 1a8668fa78c5996b2d33af18e7cbd23a03df1200
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30261331"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30959765"
 ---
 # <a name="update-importedwindowsautopilotdeviceidentity"></a>Atualizar importedWindowsAutopilotDeviceIdentity
 
@@ -18,7 +18,7 @@ ms.locfileid: "30261331"
 Atualizar as propriedades de um objeto [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -50,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [importe
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|O GUID do objeto.|
-|orderIdentifier|Cadeia de caracteres|ID do pedido do dispositivo do Windows AutoPilot.|
+|orderIdentifier|String|ID do pedido do dispositivo do Windows AutoPilot.|
 |serialNumber|String|Número de série do dispositivo do Windows AutoPilot.|
 |productKey|Cadeia de caracteres|Chave do produto (Product Key) do dispositivo do Windows AutoPilot.|
 |hardwareIdentifier|Binária|Blob de hardware do dispositivo do Windows AutoPilot.|

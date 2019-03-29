@@ -4,12 +4,12 @@ description: Atualizar as propriedades de um objeto deviceManagement.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: a71212652d789b08a8cb496b6b98c18b12d3e9c7
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: f4ef1c7eb4711afd2aa29071f160f440dceefba3
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30571050"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30960402"
 ---
 # <a name="update-devicemanagement"></a>Atualizar deviceManagement
 
@@ -21,7 +21,7 @@ Atualizar as propriedades de um objeto [deviceManagement](../resources/intune-sh
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 Observe que a permissão varia de acordo com o fluxo de trabalho.
 
@@ -38,7 +38,7 @@ Observe que a permissão varia de acordo com o fluxo de trabalho.
 | &nbsp;&nbsp; **Isolamento** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp; &nbsp; **Notificação** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Integração** | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp; &nbsp; **RBAC (Controle de acesso baseado na função)** | DeviceManagementRBAC.ReadWrite.All |
+| &nbsp; &nbsp; **Controle de Acesso Baseado em Função (RBAC)** | DeviceManagementRBAC.ReadWrite.All |
 | &nbsp;&nbsp; **Acesso remoto** | DeviceManagementConfiguration.Read.All |
 | &nbsp;&nbsp; **Assistência remota** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Gerenciamento de despesas de telecomunicações** | DeviceManagementServiceConfig.ReadWrite.All |

@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos macOSCertificateProfil
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1bc5d08d878a5d978cadfa423dcb133f47f4bc27
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 996b0ec84d15e2f298a683accc8753e009e48413
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30146295"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30958064"
 ---
 # <a name="list-macoscertificateprofilebases"></a>Listar macOSCertificateProfileBases
 
@@ -20,7 +20,7 @@ ms.locfileid: "30146295"
 Listar Propriedades e relações dos objetos [macOSCertificateProfileBase](../resources/intune-deviceconfig-macoscertificateprofilebase.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

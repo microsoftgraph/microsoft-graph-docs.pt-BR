@@ -4,12 +4,12 @@ description: Excluir o usuário do dispositivo compartilhado da Apple
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c074bddbf3c249cf9effc39b4db04c0e773ffd94
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 36255c9a15982c0e18372c666218e2ce7dba3e55
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30140002"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30957756"
 ---
 # <a name="deleteuserfromsharedappledevice-action"></a>Ação deleteUserFromSharedAppleDevice
 
@@ -20,7 +20,7 @@ ms.locfileid: "30140002"
 Excluir o usuário do dispositivo compartilhado da Apple
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

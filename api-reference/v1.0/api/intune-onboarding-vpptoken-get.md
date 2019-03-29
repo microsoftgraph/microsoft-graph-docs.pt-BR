@@ -4,12 +4,12 @@ description: Ler propriedades e relações de objetos vppToken.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ec39e9a6352cb4a6c61d3947bba3c00cd91b2912
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: efc78b5ddbdd5766704343e8415c51c3eefbfa44
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30250212"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30956986"
 ---
 # <a name="get-vpptoken"></a>Obter vppToken
 
@@ -18,7 +18,7 @@ ms.locfileid: "30250212"
 Ler propriedades e relações de objetos [vppToken](../resources/intune-onboarding-vpptoken.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

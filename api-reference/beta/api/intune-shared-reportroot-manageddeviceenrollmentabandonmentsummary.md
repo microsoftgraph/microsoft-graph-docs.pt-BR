@@ -4,12 +4,12 @@ description: Metadados para o relatório de Resumo de abandono de registro
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 1a8a06cea56cdb9f21c491639bd24df8623a1e9d
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: 0bd8e82aa7987e89d9f9a740a8fa9c181570ccd8
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30571141"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30956657"
 ---
 # <a name="manageddeviceenrollmentabandonmentsummary-function"></a>função managedDeviceEnrollmentAbandonmentSummary
 
@@ -19,7 +19,7 @@ ms.locfileid: "30571141"
 
 Metadados para o relatório de Resumo de abandono de registro
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

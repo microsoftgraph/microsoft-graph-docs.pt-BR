@@ -4,12 +4,12 @@ description: Listar propriedades e relações dos objetos windows81CompliancePol
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2fe5700f00676ddfa8397558929802f4b800b01f
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 40ed80b53f7e94942a7c2aa9eca09b66f6d9a576
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30250653"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30959247"
 ---
 # <a name="list-windows81compliancepolicies"></a>Listar windows81CompliancePolicies
 
@@ -18,7 +18,7 @@ ms.locfileid: "30250653"
 Listar propriedades e relações dos objetos [windows81CompliancePolicy](../resources/intune-deviceconfig-windows81compliancepolicy.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

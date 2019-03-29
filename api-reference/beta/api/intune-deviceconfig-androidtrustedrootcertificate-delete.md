@@ -4,12 +4,12 @@ description: Exclui androidTrustedRootCertificate.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 85432895772dc5e50633e1a9d29b49dde916d537
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c6c73aecdb95d5c8c8649057700a778567d0de37
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30167785"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30956762"
 ---
 # <a name="delete-androidtrustedrootcertificate"></a>Excluir androidTrustedRootCertificate
 
@@ -20,7 +20,7 @@ ms.locfileid: "30167785"
 Exclui [androidTrustedRootCertificate](../resources/intune-deviceconfig-androidtrustedrootcertificate.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

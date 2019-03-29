@@ -4,12 +4,12 @@ description: Criar um novo objeto Propriedadesdeviceconfigurationconflictsummary
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9f11731ba86c6ada7474cf3b854d30ec0653e736
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 2e59946ce8e252daedc13cae4800eece4fdd8bd4
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30143201"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30960682"
 ---
 # <a name="create-deviceconfigurationconflictsummary"></a>Criar Propriedadesdeviceconfigurationconflictsummary
 
@@ -20,7 +20,7 @@ ms.locfileid: "30143201"
 Criar um novo objeto [propriedadesdeviceconfigurationconflictsummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -50,9 +50,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar Propried
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|conflictingDeviceConfigurations|Coleção [settingSource](../resources/intune-deviceconfig-settingsource.md)|O conjunto de políticas em conflito com a configuração determinada|
+|conflictingDeviceConfigurations|Conjunto [settingSource](../resources/intune-deviceconfig-settingsource.md)|O conjunto de políticas em conflito com a configuração determinada|
 |id|String|A ID desse conjunto de diretivas conflitantes. Esta ID é as identificações de todas as políticas no ConflictingDeviceConfigurations na ordem lexicographical separadas por sublinhados.|
-|contributingSettings|Coleção de cadeias de caracteres|O conjunto de configurações em conflito com as políticas determinadas|
+|contributingSettings|Coleção String|O conjunto de configurações em conflito com as políticas determinadas|
 |deviceCheckinsImpacted|Int32|A contagem de check-ins impactados pelas políticas e configurações conflitantes|
 
 

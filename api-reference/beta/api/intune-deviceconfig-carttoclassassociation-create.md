@@ -4,12 +4,12 @@ description: Criar um novo objeto cartToClassAssociation.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a4fe03f073fec54db6f9136ed104033e1deaf857
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 6996f3ad5f22a5b623d6f259e9bf1b8ee43d087d
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30150082"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30959352"
 ---
 # <a name="create-carttoclassassociation"></a>Criar cartToClassAssociation
 
@@ -20,7 +20,7 @@ ms.locfileid: "30150082"
 Criar um novo objeto [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -53,11 +53,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar cartToCl
 |id|String|Chave da entidade.|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado.|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|
-|version|Int32|Versão do CartToClassAssociation.|
+|versão|Int32|Versão do CartToClassAssociation.|
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo.|
-|description|Cadeia de caracteres|Descrição fornecida pelo administrador do CartToClassAssociation.|
-|deviceCartIds|Coleção de cadeias de caracteres|Identificadores de carrinhos de dispositivos a serem associados às classes.|
-|classroomIds|Coleção de cadeias de caracteres|Identificadores de salas de aula a serem associadas a carrinhos de dispositivos.|
+|descrição|String|Descrição fornecida pelo administrador do CartToClassAssociation.|
+|deviceCartIds|Coleção String|Identificadores de carrinhos de dispositivos a serem associados às classes.|
+|classroomIds|Coleção String|Identificadores de salas de aula a serem associadas a carrinhos de dispositivos.|
 
 
 

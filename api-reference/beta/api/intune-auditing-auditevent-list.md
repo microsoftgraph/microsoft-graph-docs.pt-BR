@@ -4,12 +4,12 @@ description: Listar propriedades e relações dos objetos auditEvent.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 979d8b9a9a045d99733ccdf5389510069ab21b74
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 37e730a605e65af74666d0baa4b7a5ed2f04f781
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30165797"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30959380"
 ---
 # <a name="list-auditevents"></a>Listar auditEvents
 
@@ -20,7 +20,7 @@ ms.locfileid: "30165797"
 Listar propriedades e relações dos objetos [auditEvent](../resources/intune-auditing-auditevent.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

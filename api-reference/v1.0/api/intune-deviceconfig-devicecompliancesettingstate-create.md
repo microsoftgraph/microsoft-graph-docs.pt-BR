@@ -4,12 +4,12 @@ description: Criar um novo objeto deviceComplianceSettingState.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 113960b55d75f84a463b6d49ad769b46de294ea5
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 4731d7475e4e27870ade2bbb4b4b54814562e0d9
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30253110"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30959835"
 ---
 # <a name="create-devicecompliancesettingstate"></a>Criar deviceComplianceSettingState
 
@@ -18,7 +18,7 @@ ms.locfileid: "30253110"
 Criar um novo objeto [deviceComplianceSettingState](../resources/intune-deviceconfig-devicecompliancesettingstate.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -51,10 +51,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceCo
 |id|String|Chave da entidade|
 |configuração|String|O nome da classe de configuração e o nome da propriedade.|
 |settingName|String|O nome da configuração sendo relatada|
-|deviceId|Cadeia de caracteres|A ID do dispositivo sendo relatada|
+|deviceId|String|A ID do dispositivo sendo relatada|
 |deviceName|String|O nome do dispositivo sendo relatado|
 |userId|String|A ID do usuário sendo relatada|
-|userEmail|String|O endereço de email do usuário que está sendo relatado|
+|userEmail|Cadeia de caracteres|O endereço de email do usuário que está sendo relatado|
 |userName|String|O nome de usuário que está sendo relatado|
 |userPrincipalName|String|O PrincipalName do usuário que está sendo relatado|
 |deviceModel|String|O modelo do dispositivo que está sendo relatado|

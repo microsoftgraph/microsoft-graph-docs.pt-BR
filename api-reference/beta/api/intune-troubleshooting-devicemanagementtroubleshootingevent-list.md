@@ -4,12 +4,12 @@ description: Listar propriedades e relações de objetos de deviceManagementTrou
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2fc61bcee4230e1495376f822cdf5404ccb7089f
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 12d0e2ea8ee41cd67f4f297731b85bec0b0e18b6
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30167393"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30960122"
 ---
 # <a name="list-devicemanagementtroubleshootingevents"></a>Listar deviceManagementTroubleshootingEvents
 
@@ -20,7 +20,7 @@ ms.locfileid: "30167393"
 Listar propriedades e relações de objetos de [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

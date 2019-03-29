@@ -4,12 +4,12 @@ description: Lista propriedades e relações dos objetos enrollmentTroubleshooti
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bfc06e4b2ed179a189a9756d254f0fcd0b999004
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e0fbe2d03a96af0dfe28fe08ce9bdd7e3a06f6c5
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30176902"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30960514"
 ---
 # <a name="list-enrollmenttroubleshootingevents"></a>Listar enrollmentTroubleshootingEvents
 
@@ -20,7 +20,7 @@ ms.locfileid: "30176902"
 Lista propriedades e relações dos objetos [enrollmentTroubleshootingEvent](../resources/intune-troubleshooting-enrollmenttroubleshootingevent.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

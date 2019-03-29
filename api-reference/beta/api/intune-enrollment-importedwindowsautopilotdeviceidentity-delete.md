@@ -4,12 +4,12 @@ description: Exclui uma importedWindowsAutopilotDeviceIdentity.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8e80bcf1ff8cbb37ed92f6ea7a727a360e83ea58
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 569f46952c88801b00ca5065b8d4a31e79378078
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30173546"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30957567"
 ---
 # <a name="delete-importedwindowsautopilotdeviceidentity"></a>Excluir importedWindowsAutopilotDeviceIdentity
 
@@ -20,7 +20,7 @@ ms.locfileid: "30173546"
 Exclui uma [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

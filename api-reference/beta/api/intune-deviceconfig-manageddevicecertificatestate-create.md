@@ -4,12 +4,12 @@ description: Criar um novo objeto managedDeviceCertificateState.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 65d4f145fd70787004b915caeaab9d042ff661ca
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 032005b88f248ec68781fb08d84295d22aa7610a
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30174050"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30959030"
 ---
 # <a name="create-manageddevicecertificatestate"></a>Criar managedDeviceCertificateState
 
@@ -20,7 +20,7 @@ ms.locfileid: "30174050"
 Criar um novo objeto [managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -84,7 +84,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar managedD
 |certificateIssuer|String|Emissor|
 |certificateThumbprint|String|Identificação|
 |certificateSerialNumber|String|Número de série|
-|certificateKeyLength|Int32|Comprimento da chave|
+|certificateKeyLength|Int32|Comprimento de chave|
 |certificateEnhancedKeyUsage|String|Uso estendido de chave|
 |certificateValidityPeriod|Int32|Período de validade|
 |certificateSubjectNameFormatString|String|Cadeia de caracteres de formato de nome de entidade para formatos de nome de entidade personalizados|

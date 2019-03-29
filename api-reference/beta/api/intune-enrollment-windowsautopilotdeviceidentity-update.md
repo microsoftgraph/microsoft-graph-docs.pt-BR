@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto windowsAutopilotDeviceIdentit
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7e6aaba99e2526b139fd06fa047ec36828ef24a6
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: 4132ebc9d93eae71712b04479c1139e1942a9979
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30570784"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30958729"
 ---
 # <a name="update-windowsautopilotdeviceidentity"></a>Atualizar windowsAutopilotDeviceIdentity
 
@@ -20,7 +20,7 @@ ms.locfileid: "30570784"
 Atualiza as propriedades de um objeto [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

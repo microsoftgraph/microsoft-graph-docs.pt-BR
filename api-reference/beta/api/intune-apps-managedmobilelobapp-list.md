@@ -4,12 +4,12 @@ description: Listar propriedades e relações dos objetos managedMobileLobApp.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3ec3ee0d61c0ca1878305326feb2b6d19a7e1569
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 7c0ca4455f5bf418389da059516a9f68ef5ca439
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30156585"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30959779"
 ---
 # <a name="list-managedmobilelobapps"></a>Listar managedMobileLobApps
 
@@ -20,7 +20,7 @@ ms.locfileid: "30156585"
 Listar propriedades e relações dos objetos [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

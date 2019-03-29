@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto dataSharingConsent.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 42be19a02b5839023a76568a1457df105036c4de
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 5f89d81976eeea5cb4832aeb670c0bee26069487
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30157992"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30958015"
 ---
 # <a name="update-datasharingconsent"></a>Atualizar dataSharingConsent
 
@@ -20,7 +20,7 @@ ms.locfileid: "30157992"
 Atualiza as propriedades de um objeto [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [dataSha
 |id|String|A ID de consentimento de compartilhamento de dados|
 |objectDisplayname|String|O nome de exibição do fluxo de trabalho do serviço|
 |termsUrl|String|O TermsUrl para o consentimento de compartilhamento de dados|
-|granted|Booliano|O Estado concedido para o consentimento de compartilhamento de dados|
+|granted|Boolean|O Estado concedido para o consentimento de compartilhamento de dados|
 |grantDateTime|DateTimeOffset|O consentimento de tempo foi concedido para esta conta|
 |grantedByUpn|String|O UPN do usuário que concedeu o consentimento para esta conta|
 |grantedByUserId|String|O UserId do usuário que concedeu o consentimento para esta conta|

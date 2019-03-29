@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos groupPolicyPresentatio
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a1e9df1541caf9cee20723f60e10ebd2744e4c43
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: d726351dff71be61e321dfd0b0232e5756c416e0
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30170018"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30959093"
 ---
 # <a name="list-grouppolicypresentationvaluebooleans"></a>Listar groupPolicyPresentationValueBooleans
 
@@ -20,7 +20,7 @@ ms.locfileid: "30170018"
 Listar Propriedades e relações dos objetos [groupPolicyPresentationValueBoolean](../resources/intune-grouppolicy-grouppolicypresentationvalueboolean.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

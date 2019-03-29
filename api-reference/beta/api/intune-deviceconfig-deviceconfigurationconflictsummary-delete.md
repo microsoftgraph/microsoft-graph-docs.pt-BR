@@ -4,12 +4,12 @@ description: Exclui Propriedadesdeviceconfigurationconflictsummary.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ab7660912c6654fe846209fb7c5ca3df25b4e4d6
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 691bc63782f1f47a7986b9640b61f961df7eecb6
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30142060"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30961074"
 ---
 # <a name="delete-deviceconfigurationconflictsummary"></a>Excluir Propriedadesdeviceconfigurationconflictsummary
 
@@ -20,7 +20,7 @@ ms.locfileid: "30142060"
 Exclui [propriedadesdeviceconfigurationconflictsummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

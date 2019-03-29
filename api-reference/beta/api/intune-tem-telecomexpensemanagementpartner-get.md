@@ -4,12 +4,12 @@ description: Ler propriedades de leitura e relações do objeto telecomExpenseMa
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: efa5eca8c19d549458411799a67791eaabe0537c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 91d87fae8aab71643a5e8aa50e4d182b1bff3fdc
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30144342"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30960213"
 ---
 # <a name="get-telecomexpensemanagementpartner"></a>Obter telecomExpenseManagementPartner
 
@@ -20,7 +20,7 @@ ms.locfileid: "30144342"
 Ler propriedades de leitura e relações do objeto [telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

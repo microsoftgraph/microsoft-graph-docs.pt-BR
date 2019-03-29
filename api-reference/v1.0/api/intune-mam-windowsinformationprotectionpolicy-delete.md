@@ -1,15 +1,15 @@
 ---
 title: Excluir windowsInformationProtectionPolicy
-description: Excluir um windowsInformationProtectionPolicy.
+description: Exclui windowsInformationProtectionPolicy.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 76f87a0dac94881bdd77c2d08fe1e3697f83372f
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 5ca74dfde0c5b03c2d520df4ea30c42359828679
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30262052"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30958204"
 ---
 # <a name="delete-windowsinformationprotectionpolicy"></a>Excluir windowsInformationProtectionPolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "30262052"
 Exclui [windowsInformationProtectionPolicy](../resources/intune-mam-windowsinformationprotectionpolicy.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
