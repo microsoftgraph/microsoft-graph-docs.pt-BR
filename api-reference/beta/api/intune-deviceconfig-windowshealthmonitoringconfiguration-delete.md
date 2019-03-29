@@ -4,12 +4,12 @@ description: Exclui windowsHealthMonitoringConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e40efa89375bc9cf3d81a04581096c328e1270e5
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: f6475ae5f644a63628afe7a050c7f4c1e656afa3
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30631429"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30978868"
 ---
 # <a name="delete-windowshealthmonitoringconfiguration"></a>Excluir windowsHealthMonitoringConfiguration
 
@@ -20,7 +20,7 @@ ms.locfileid: "30631429"
 Exclui [windowsHealthMonitoringConfiguration](../resources/intune-deviceconfig-windowshealthmonitoringconfiguration.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

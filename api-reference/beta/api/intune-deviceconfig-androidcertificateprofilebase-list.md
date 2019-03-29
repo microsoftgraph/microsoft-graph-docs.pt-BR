@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos androidCertificateProf
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c52c454bedf1a188db4cfb0323f4678003158f16
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 4e412772fedfea9dc4bea7582b9fc7f47e56a500
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30149942"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30980338"
 ---
 # <a name="list-androidcertificateprofilebases"></a>Listar androidCertificateProfileBases
 
@@ -20,7 +20,7 @@ ms.locfileid: "30149942"
 Listar Propriedades e relações dos objetos [androidCertificateProfileBase](../resources/intune-deviceconfig-androidcertificateprofilebase.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

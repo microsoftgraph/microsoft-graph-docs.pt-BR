@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto managedDeviceMobileA
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7449ab901ac06d6fcbe756dbb12dfef170ca99ea
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: d0b7a848aefebfbc35c6dd22e8243fc35309be6b
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30250884"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30978840"
 ---
 # <a name="get-manageddevicemobileappconfigurationuserstatus"></a>Acessar managedDeviceMobileAppConfigurationUserStatus
 
@@ -18,7 +18,7 @@ ms.locfileid: "30250884"
 Leia as propriedades e as relações do objeto [managedDeviceMobileAppConfigurationUserStatus](../resources/intune-apps-manageddevicemobileappconfigurationuserstatus.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

@@ -1,15 +1,15 @@
 ---
 title: Listar iosManagedAppRegistrations
-description: Lista propriedades e relações dos objetos iosManagedAppRegistration.
+description: Listar propriedades e relações dos objetos iosManagedAppRegistration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3d74a0d532a1645fd47d694974181b32fafd90ae
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 4861151aa140a63bd44d00b4a423ad917a3066dc
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30162402"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30977748"
 ---
 # <a name="list-iosmanagedappregistrations"></a>Listar iosManagedAppRegistrations
 
@@ -20,7 +20,7 @@ ms.locfileid: "30162402"
 Listar propriedades e relações dos objetos [iosManagedAppRegistration](../resources/intune-mam-iosmanagedappregistration.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

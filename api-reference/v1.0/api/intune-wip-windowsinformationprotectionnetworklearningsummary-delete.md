@@ -4,12 +4,12 @@ description: Exclui windowsInformationProtectionNetworkLearningSummary.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3297b19df832e11b51896592fb083bb73d6af2ab
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 8a212b5bccb18c110898c5d8cd36380f09ff635b
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30256326"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30979722"
 ---
 # <a name="delete-windowsinformationprotectionnetworklearningsummary"></a>Excluir windowsInformationProtectionNetworkLearningSummary
 
@@ -18,7 +18,7 @@ ms.locfileid: "30256326"
 Exclui [windowsInformationProtectionNetworkLearningSummary](../resources/intune-wip-windowsinformationprotectionnetworklearningsummary.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

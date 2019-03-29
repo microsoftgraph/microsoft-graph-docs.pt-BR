@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos groupPolicyConfigurati
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8c1d87bdb0dcb5c1af59219a8cee0f06e084cb4b
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 1859e8851a6ead18a79ed049ee7867e8447dc9a7
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30155094"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30979715"
 ---
 # <a name="list-grouppolicyconfigurations"></a>Listar groupPolicyConfigurations
 
@@ -20,7 +20,7 @@ ms.locfileid: "30155094"
 Listar Propriedades e relações dos objetos [groupPolicyConfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

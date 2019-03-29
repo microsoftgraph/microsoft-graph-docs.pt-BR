@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos androidWorkProfileGmai
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1d80112303ecc3cb1c63cbff1a0bc5ed8066d1b5
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e65e3c150f90cb66bb212afbaaedaa04defc5848
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172888"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30978378"
 ---
 # <a name="list-androidworkprofilegmaileasconfigurations"></a>Listar androidWorkProfileGmailEasConfigurations
 
@@ -20,7 +20,7 @@ ms.locfileid: "30172888"
 Listar Propriedades e relações dos objetos [androidWorkProfileGmailEasConfiguration](../resources/intune-deviceconfig-androidworkprofilegmaileasconfiguration.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

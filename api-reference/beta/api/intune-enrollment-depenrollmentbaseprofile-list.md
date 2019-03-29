@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos depEnrollmentBaseProfi
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0405fa1231fbcca92c31d4dd36c75aa61cba05a1
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 6d1eed381d2865bee7995b9707b8539330a95aab
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30175154"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30977741"
 ---
 # <a name="list-depenrollmentbaseprofiles"></a>Listar depEnrollmentBaseProfiles
 
@@ -20,7 +20,7 @@ ms.locfileid: "30175154"
 Listar Propriedades e relações dos objetos [depEnrollmentBaseProfile](../resources/intune-enrollment-depenrollmentbaseprofile.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

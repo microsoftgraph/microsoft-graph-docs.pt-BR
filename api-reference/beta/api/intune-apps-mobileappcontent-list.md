@@ -4,12 +4,12 @@ description: Listar propriedades e relações dos objetos mobileAppContent.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eb8f5fdb6de7e55b12f36dbb2ab40a2bedd04b41
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 804a8127fd780a80995f8de63b4b344fae2aaecc
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30163949"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30980422"
 ---
 # <a name="list-mobileappcontents"></a>Listar mobileAppContents
 
@@ -20,7 +20,7 @@ ms.locfileid: "30163949"
 Listar propriedades e relações dos objetos [mobileAppContent](../resources/intune-apps-mobileappcontent.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

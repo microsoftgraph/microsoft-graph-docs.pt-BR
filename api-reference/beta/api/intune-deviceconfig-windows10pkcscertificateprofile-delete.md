@@ -4,12 +4,12 @@ description: Exclui windows10PkcsCertificateProfile.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b8884fc28ddeb5306dc37f20ed286212d92f7533
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 88eaa7cc88b0bc586498d40ee51db805ec696aa3
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30154506"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30979036"
 ---
 # <a name="delete-windows10pkcscertificateprofile"></a>Excluir windows10PkcsCertificateProfile
 
@@ -20,7 +20,7 @@ ms.locfileid: "30154506"
 Exclui [windows10PkcsCertificateProfile](../resources/intune-deviceconfig-windows10pkcscertificateprofile.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

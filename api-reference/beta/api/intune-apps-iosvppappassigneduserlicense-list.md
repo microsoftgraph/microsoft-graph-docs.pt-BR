@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos iosVppAppAssignedUserL
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 17bea16e6ae3916950ea3d107e41291daf081e45
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 5b074988f1cc5112059840e8268647797f49c570
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30155024"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30977622"
 ---
 # <a name="list-iosvppappassigneduserlicenses"></a>Listar iosVppAppAssignedUserLicenses
 
@@ -20,7 +20,7 @@ ms.locfileid: "30155024"
 Listar Propriedades e relações dos objetos [iosVppAppAssignedUserLicense](../resources/intune-apps-iosvppappassigneduserlicense.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

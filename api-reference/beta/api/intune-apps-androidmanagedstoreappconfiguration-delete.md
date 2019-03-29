@@ -4,12 +4,12 @@ description: Exclui androidManagedStoreAppConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7f07362ed071a359877e2152de2149f2ab05a6b5
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 26ee85abe0f2ab9c841b1705007eb8936a61022f
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30160246"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30977986"
 ---
 # <a name="delete-androidmanagedstoreappconfiguration"></a>Excluir androidManagedStoreAppConfiguration
 
@@ -20,7 +20,7 @@ ms.locfileid: "30160246"
 Exclui [androidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

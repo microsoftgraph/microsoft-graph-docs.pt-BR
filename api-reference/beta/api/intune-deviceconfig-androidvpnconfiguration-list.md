@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos androidVpnConfiguratio
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bd49e87abd0e2250412b5c837e9fb565c2d93b86
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 13d7a246880002ea6603da47f10f3cba965f0442
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30155192"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30978406"
 ---
 # <a name="list-androidvpnconfigurations"></a>Listar androidVpnConfigurations
 
@@ -20,7 +20,7 @@ ms.locfileid: "30155192"
 Listar Propriedades e relações dos objetos [androidVpnConfiguration](../resources/intune-deviceconfig-androidvpnconfiguration.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
