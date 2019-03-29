@@ -4,12 +4,12 @@ description: Ler propriedades e relações do objeto androidStoreApp.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b3ff88aec3cb9d59f542ef765e4ffcedab41f5e8
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: d5c2215dc95bca835285e7ab008f9d77e8a8bdb3
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30140919"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30968158"
 ---
 # <a name="get-androidstoreapp"></a>Get androidStoreApp
 
@@ -20,7 +20,7 @@ ms.locfileid: "30140919"
 Ler propriedades e relações do objeto [androidStoreApp](../resources/intune-apps-androidstoreapp.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos windows10NetworkBounda
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d345d7bf9cf7cc371d082e0a70bd783c9f21c33f
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: fe9fa8895e8b513ff629d4b96bc766494b0fee43
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30153757"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30966415"
 ---
 # <a name="list-windows10networkboundaryconfigurations"></a>Listar windows10NetworkBoundaryConfigurations
 
@@ -20,7 +20,7 @@ ms.locfileid: "30153757"
 Listar Propriedades e relações dos objetos [windows10NetworkBoundaryConfiguration](../resources/intune-deviceconfig-windows10networkboundaryconfiguration.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

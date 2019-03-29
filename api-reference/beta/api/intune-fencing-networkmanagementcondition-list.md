@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos networkManagementCondi
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e07f6e7b06e19049dd1d3c876c291b03929de621
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 9f9f5fc623c669d2e8fa3e627e9d268485ff33cb
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30152154"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30967136"
 ---
 # <a name="list-networkmanagementconditions"></a>Listar networkManagementConditions
 
@@ -20,7 +20,7 @@ ms.locfileid: "30152154"
 Listar Propriedades e relações dos objetos [networkManagementCondition](../resources/intune-fencing-networkmanagementcondition.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

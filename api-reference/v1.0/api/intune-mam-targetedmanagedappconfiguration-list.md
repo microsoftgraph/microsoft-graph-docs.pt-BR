@@ -4,12 +4,12 @@ description: Listar propriedades e relações dos objetos targetedManagedAppConf
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b5845c1b0fb1ef3b59fa679bdc0d064984408194
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 3d58516c9e6b72f8412f3a75be53092f18b9fe2f
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30263599"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30970006"
 ---
 # <a name="list-targetedmanagedappconfigurations"></a>Listar targetedManagedAppConfigurations
 
@@ -18,7 +18,7 @@ ms.locfileid: "30263599"
 Listar propriedades e relações dos objetos [targetedManagedAppConfiguration](../resources/intune-mam-targetedmanagedappconfiguration.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

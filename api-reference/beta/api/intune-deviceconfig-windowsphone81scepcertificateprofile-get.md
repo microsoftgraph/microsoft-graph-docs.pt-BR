@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto windowsPhone81SCEPCe
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4fb5ae90e768e644f826289f8e81d32a429a2b35
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 5668f2a25af4ba7bc63327d4588065f67430dfa2
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30143208"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30968991"
 ---
 # <a name="get-windowsphone81scepcertificateprofile"></a>Obter windowsPhone81SCEPCertificateProfile
 
@@ -20,7 +20,7 @@ ms.locfileid: "30143208"
 Leia as propriedades e as relações do objeto [windowsPhone81SCEPCertificateProfile](../resources/intune-deviceconfig-windowsphone81scepcertificateprofile.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

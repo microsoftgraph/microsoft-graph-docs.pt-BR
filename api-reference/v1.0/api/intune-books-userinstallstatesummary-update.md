@@ -4,12 +4,12 @@ description: Atualizar as propriedades de um objeto userInstallStateSummary.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bfe9418d6816995de57011864bd4e0a468114d84
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: fabf57da88e740eea1ac43dd7c24e2d6884e5bbc
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30257607"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30969852"
 ---
 # <a name="update-userinstallstatesummary"></a>Atualizar userInstallStateSummary
 
@@ -18,7 +18,7 @@ ms.locfileid: "30257607"
 Atualizar as propriedades de um objeto [userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

@@ -4,12 +4,12 @@ description: Exclui groupPolicyPresentationValueBoolean.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 66a0b0a7cf12d8956c7a401ee585756b5702e486
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b6a032ede8e58879529675b418b60bff8f90d248
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30165468"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30966436"
 ---
 # <a name="delete-grouppolicypresentationvalueboolean"></a>Excluir groupPolicyPresentationValueBoolean
 
@@ -20,7 +20,7 @@ ms.locfileid: "30165468"
 Exclui [groupPolicyPresentationValueBoolean](../resources/intune-grouppolicy-grouppolicypresentationvalueboolean.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

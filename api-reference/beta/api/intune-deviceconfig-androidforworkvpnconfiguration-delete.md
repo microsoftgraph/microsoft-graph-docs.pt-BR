@@ -4,12 +4,12 @@ description: Exclui androidForWorkVpnConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d8d0bf3400008c65e7c0e592d8d64cbe6f74c4ac
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 0a58532e6a8d22c2a666d45693b5874902834418
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30145616"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30967605"
 ---
 # <a name="delete-androidforworkvpnconfiguration"></a>Excluir androidForWorkVpnConfiguration
 
@@ -20,7 +20,7 @@ ms.locfileid: "30145616"
 Exclui [androidForWorkVpnConfiguration](../resources/intune-deviceconfig-androidforworkvpnconfiguration.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

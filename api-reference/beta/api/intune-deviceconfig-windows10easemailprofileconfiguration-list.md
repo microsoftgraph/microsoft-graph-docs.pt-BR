@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos windows10EasEmailProfi
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f0341073b5adaccd2261ae66705b1af9489473ed
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: d32820a3370d77d9179cbce134bd8674f5cf81cf
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30173434"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30966366"
 ---
 # <a name="list-windows10easemailprofileconfigurations"></a>Listar windows10EasEmailProfileConfigurations
 
@@ -20,7 +20,7 @@ ms.locfileid: "30173434"
 Listar Propriedades e relações dos objetos [windows10EasEmailProfileConfiguration](../resources/intune-deviceconfig-windows10easemailprofileconfiguration.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

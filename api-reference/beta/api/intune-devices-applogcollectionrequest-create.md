@@ -4,12 +4,12 @@ description: Criar um novo objeto appLogCollectionRequest.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: da12791aab74c59d82b8efb4c98629ac1d809112
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 08a6c3943d669363b3667266d1b6e6013e501570
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30144993"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30968641"
 ---
 # <a name="create-applogcollectionrequest"></a>Criar appLogCollectionRequest
 
@@ -20,7 +20,7 @@ ms.locfileid: "30144993"
 Criar um novo objeto [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar appLogCo
 |id|String|O identificador exclusivo. Esta é a ID do userId_DeviceId_AppId.|
 |status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|Status de carregamento de logs. Os valores possíveis são: `pending`, `completed`, `failed`.|
 |errorMessage|String|Mensagem de erro se qualquer um durante o processo de carregamento|
-|customLogFolders|Coleção de cadeias de caracteres|Lista de pastas de log. |
+|customLogFolders|Coleção String|Lista de pastas de log. |
 |completedDateTime|DateTimeOffset|Hora em que a solicitação de log de carregamento alcançou um estado de terminal|
 
 

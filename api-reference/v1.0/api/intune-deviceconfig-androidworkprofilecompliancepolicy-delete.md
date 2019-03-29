@@ -4,12 +4,12 @@ description: Exclui na entidadeandroidworkprofilecompliancepolicy.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a3eecdc756a8e3e8cc2a23d21c42e0f786590218
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 430fe0ee970542e308aa8c0a7a1398719cf1ef7c
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30259511"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30970811"
 ---
 # <a name="delete-androidworkprofilecompliancepolicy"></a>Excluir na entidadeandroidworkprofilecompliancepolicy
 
@@ -18,7 +18,7 @@ ms.locfileid: "30259511"
 Exclui [na entidadeandroidworkprofilecompliancepolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto userAppInstallStatus.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c3baa0d23be3b004fe32049cee0efe08e8f7d36d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: dce7bcd1e1c806c8f50aa6f4674104fd8d0e781b
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30144902"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30966625"
 ---
 # <a name="update-userappinstallstatus"></a>Atualizar userAppInstallStatus
 
@@ -20,7 +20,7 @@ ms.locfileid: "30144902"
 Atualiza as propriedades de um objeto [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

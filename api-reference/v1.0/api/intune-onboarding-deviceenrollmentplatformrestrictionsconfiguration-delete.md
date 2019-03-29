@@ -4,12 +4,12 @@ description: Exclui deviceEnrollmentPlatformRestrictionsConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9e8d00d7e410fff297d3c769079c2402aa4b0de8
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: c168790421feca623426b88988a87847a4d00ef8
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30263144"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30968480"
 ---
 # <a name="delete-deviceenrollmentplatformrestrictionsconfiguration"></a>Excluir deviceEnrollmentPlatformRestrictionsConfiguration
 
@@ -18,7 +18,7 @@ ms.locfileid: "30263144"
 Exclui [deviceEnrollmentPlatformRestrictionsConfiguration](../resources/intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

@@ -4,12 +4,12 @@ description: Listar propriedades e relações dos objetos windowsPhone81CustomCo
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4e52c0f3dbd1591d2e49cd363f41da974b132b0e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: cb99c7dde498f0ec38ec5af3a573ca870d1d85c2
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30164173"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30966772"
 ---
 # <a name="list-windowsphone81customconfigurations"></a>Listar windowsPhone81CustomConfigurations
 
@@ -20,7 +20,7 @@ ms.locfileid: "30164173"
 Listar propriedades e relações dos objetos [windowsPhone81CustomConfiguration](../resources/intune-deviceconfig-windowsphone81customconfiguration.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

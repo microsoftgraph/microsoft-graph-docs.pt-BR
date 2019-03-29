@@ -4,12 +4,12 @@ description: Exclui windowsPhoneXAP.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7eb823dc8efa5475fa14f3165e1e10ab8c2dad27
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 7d2dce3852a2f980c55f1a989f1f033ce0fafc4e
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30159896"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30969026"
 ---
 # <a name="delete-windowsphonexap"></a>Excluir windowsPhoneXAP
 
@@ -20,7 +20,7 @@ ms.locfileid: "30159896"
 Exclui [windowsPhoneXAP](../resources/intune-apps-windowsphonexap.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

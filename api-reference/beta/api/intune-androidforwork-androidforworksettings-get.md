@@ -4,12 +4,12 @@ description: Ler propriedades e relações do objeto androidForWorkSettings.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f47fe16fc5dfc4ebbbdadbd9c71ed5dff6cdd658
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 94b9b0b4dd1da7590d6c734c52f2571d539bb290
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30158531"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30968914"
 ---
 # <a name="get-androidforworksettings"></a>Get androidForWorkSettings
 
@@ -20,7 +20,7 @@ ms.locfileid: "30158531"
 Ler propriedades e relações do objeto [androidForWorkSettings](../resources/intune-androidforwork-androidforworksettings.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

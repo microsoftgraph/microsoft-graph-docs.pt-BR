@@ -1,15 +1,15 @@
 ---
 title: Excluir iosGeneralDeviceConfiguration
-description: Excluir um iosGeneralDeviceConfiguration.
+description: Exclui iosGeneralDeviceConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c4c11a80cfd7d8f710efda8bbfa393423a546b95
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 817338282a809dbafcffa65d40c6e9855a747998
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30163550"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30967514"
 ---
 # <a name="delete-iosgeneraldeviceconfiguration"></a>Excluir iosGeneralDeviceConfiguration
 
@@ -20,7 +20,7 @@ ms.locfileid: "30163550"
 Exclui [iosGeneralDeviceConfiguration](../resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

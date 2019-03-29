@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto groupPolicyDefinitionFile.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e204382f9237428b30362f7464264f732e13541a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e82a9236f5d062a497eaa25a7fbcd31624d67082
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30169409"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30970552"
 ---
 # <a name="update-grouppolicydefinitionfile"></a>Atualizar groupPolicyDefinitionFile
 
@@ -20,7 +20,7 @@ ms.locfileid: "30169409"
 Atualiza as propriedades de um objeto [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -52,8 +52,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [groupPo
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |displayName|String|O nome amigável localizado do arquivo ADMX.|
-|descrição|Cadeia de caracteres|A descrição localizada das configurações de política no arquivo ADMX. O valor padrão é vazio.|
-|languageCodes|Coleção de cadeias de caracteres|Os códigos de idioma suportados para o arquivo ADMX.|
+|descrição|String|A descrição localizada das configurações de política no arquivo ADMX. O valor padrão é vazio.|
+|languageCodes|Coleção String|Os códigos de idioma suportados para o arquivo ADMX.|
 |targetPrefix|String|Especifica o nome lógico que se refere ao namespace dentro do arquivo ADMX.|
 |targetNamespace|String|Especifica o URI usado para identificar o namespace no arquivo ADMX.|
 |PolicyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Especifica o tipo de política de grupo. Os valores possíveis são: `admxBacked` e `admxIngested`.|

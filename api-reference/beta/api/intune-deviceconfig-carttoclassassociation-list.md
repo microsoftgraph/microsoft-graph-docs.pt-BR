@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos cartToClassAssociation
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0a3c10322c81eaa3ea107819ae3569dcb58ea87d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 18ccda1d786de54f5bb536da60235ace0fe1bb24
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30166371"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30962943"
 ---
 # <a name="list-carttoclassassociations"></a>Listar cartToClassAssociations
 
@@ -20,7 +20,7 @@ ms.locfileid: "30166371"
 Listar Propriedades e relações dos objetos [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

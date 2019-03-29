@@ -4,12 +4,12 @@ description: Exclui windowsManagedDevice.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2fcd4e66a13e6b8f92dec42d2ba5b3e6fa34ac1c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 19ebb4bec38efd7186bddb3727749ddcb4beb524
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30171103"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30967976"
 ---
 # <a name="delete-windowsmanageddevice"></a>Excluir windowsManagedDevice
 
@@ -20,7 +20,7 @@ ms.locfileid: "30171103"
 Exclui [windowsManagedDevice](../resources/intune-devices-windowsmanageddevice.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

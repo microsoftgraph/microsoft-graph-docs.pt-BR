@@ -4,12 +4,12 @@ description: Localizar um dispositivo
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f8e68a2cfdda20b02c5462283ae2140b54e913be
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: b0316a5598ba34962432e531b5d1fff82d3aace3
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30262878"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30967682"
 ---
 # <a name="locatedevice-action"></a>Ação locateDevice
 
@@ -18,7 +18,7 @@ ms.locfileid: "30262878"
 Localizar um dispositivo
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

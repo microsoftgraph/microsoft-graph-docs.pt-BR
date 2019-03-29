@@ -4,12 +4,12 @@ description: Atribui um usuário aos dispositivos do AutoPilot.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c996bbd846ad7a93609a7c79e6e5d4b4497a992c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: f3a1dcfee91b93b9c0fcf3bdf1e5bdf25b387c24
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30141507"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30967822"
 ---
 # <a name="assignusertodevice-action"></a>ação assignUserToDevice
 
@@ -20,7 +20,7 @@ ms.locfileid: "30141507"
 Atribui um usuário aos dispositivos do AutoPilot.
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

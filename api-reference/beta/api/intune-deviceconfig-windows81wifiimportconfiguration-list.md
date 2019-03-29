@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos windows81WifiImportCon
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1a3b4aa9fa71c38d64fb8dafce78995e12c629cf
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b9b636550debc3784d91dad8081c11ea952c9ed9
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30165615"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30966261"
 ---
 # <a name="list-windows81wifiimportconfigurations"></a>Listar windows81WifiImportConfigurations
 
@@ -20,7 +20,7 @@ ms.locfileid: "30165615"
 Listar Propriedades e relações dos objetos [windows81WifiImportConfiguration](../resources/intune-deviceconfig-windows81wifiimportconfiguration.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

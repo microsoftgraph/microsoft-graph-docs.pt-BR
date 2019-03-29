@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos androidForWorkEasEmail
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1591cda4dffb217ccbfdc3f082360398076acc39
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 7a3cf092e4dfe87ac6a863e81896138eb50e23f6
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30156690"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30966646"
 ---
 # <a name="list-androidforworkeasemailprofilebases"></a>Listar androidForWorkEasEmailProfileBases
 
@@ -20,7 +20,7 @@ ms.locfileid: "30156690"
 Listar Propriedades e relações dos objetos [androidForWorkEasEmailProfileBase](../resources/intune-deviceconfig-androidforworkeasemailprofilebase.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

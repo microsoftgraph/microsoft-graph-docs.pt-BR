@@ -4,12 +4,12 @@ description: Exclui iosVppAppAssignedDeviceLicense.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e5d50fac3b151fb4d185210670bcde3f66c6b51b
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b935da4ca179cad431bb27667592fa270a8afed4
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30173308"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30968683"
 ---
 # <a name="delete-iosvppappassigneddevicelicense"></a>Excluir iosVppAppAssignedDeviceLicense
 
@@ -20,7 +20,7 @@ ms.locfileid: "30173308"
 Exclui [iosVppAppAssignedDeviceLicense](../resources/intune-apps-iosvppappassigneddevicelicense.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

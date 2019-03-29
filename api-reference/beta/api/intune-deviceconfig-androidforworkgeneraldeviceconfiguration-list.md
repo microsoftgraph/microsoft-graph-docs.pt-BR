@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos androidForWorkGeneralD
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 734a788905bcb910093fb8ac7ff96580d14588cd
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e6538165d83dcf6fe0dec25bdeaafae816ff5b3e
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30143390"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30966590"
 ---
 # <a name="list-androidforworkgeneraldeviceconfigurations"></a>Listar androidForWorkGeneralDeviceConfigurations
 
@@ -20,7 +20,7 @@ ms.locfileid: "30143390"
 Listar Propriedades e relações dos objetos [androidForWorkGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

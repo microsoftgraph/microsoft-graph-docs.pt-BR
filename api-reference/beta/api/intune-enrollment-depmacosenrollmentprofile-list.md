@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos depMacOSEnrollmentProf
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 503a27afe7d649e51b5194750f3af628d2882518
-ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
+ms.openlocfilehash: d5266489799fd4e07a63d47957fb0b1e34e781c1
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30572429"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30970433"
 ---
 # <a name="list-depmacosenrollmentprofiles"></a>Listar depMacOSEnrollmentProfiles
 
@@ -20,7 +20,7 @@ ms.locfileid: "30572429"
 Listar Propriedades e relações dos objetos [depMacOSEnrollmentProfile](../resources/intune-enrollment-depmacosenrollmentprofile.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

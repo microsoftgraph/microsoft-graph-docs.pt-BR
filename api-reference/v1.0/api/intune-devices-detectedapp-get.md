@@ -4,12 +4,12 @@ description: Ler propriedades e relações do objeto detectedApp.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5569644cd0bb85a6213e0bb0bf930b162094eb57
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: f123ec56e64bbc6846e901b6022a3ac307e93e88
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30251430"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30968711"
 ---
 # <a name="get-detectedapp"></a>Get detectedApp
 
@@ -18,7 +18,7 @@ ms.locfileid: "30251430"
 Ler propriedades e relações do objeto [detectedApp](../resources/intune-devices-detectedapp.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

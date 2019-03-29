@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto remoteActionAudit.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6105145c9e284c1f522c85f6a1237dcb2320fa28
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 429ad79b6163f3c755bae5a47503c9b90536f44e
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30170221"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30969670"
 ---
 # <a name="update-remoteactionaudit"></a>Atualizar remoteActionAudit
 
@@ -20,7 +20,7 @@ ms.locfileid: "30170221"
 Atualiza as propriedades de um objeto [remoteActionAudit](../resources/intune-devices-remoteactionaudit.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

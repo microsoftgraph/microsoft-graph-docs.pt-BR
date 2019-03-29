@@ -4,12 +4,12 @@ description: Sincroniza as licenças associadas a um appleVolumePurchaseProgramT
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9d204199548564fcfa458b73969efa0eff042b3d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: fafcb15fb6911cf1c8ec7c25284ac95f6d848408
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30147422"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30968963"
 ---
 # <a name="synclicenses-action"></a>ação syncLicenses
 
@@ -20,7 +20,7 @@ ms.locfileid: "30147422"
 Sincroniza as licenças associadas a um appleVolumePurchaseProgramToken específico
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

@@ -4,12 +4,12 @@ description: Exclui macOSTrustedRootCertificate.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f888e9ab4dde4983f3e723e9a7be9563eff482fd
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c84b5a97a9c84a0b4107e17bc8687c5b3602603e
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30140044"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30970398"
 ---
 # <a name="delete-macostrustedrootcertificate"></a>Excluir macOSTrustedRootCertificate
 
@@ -20,7 +20,7 @@ ms.locfileid: "30140044"
 Exclui [macOSTrustedRootCertificate](../resources/intune-deviceconfig-macostrustedrootcertificate.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

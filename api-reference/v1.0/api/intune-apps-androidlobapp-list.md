@@ -4,12 +4,12 @@ description: Listar propriedades e relações dos objetos androidLobApp.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4ee9b497c98c88876acee5495a3f18f75ca1e01c
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: f55609586d58d38c8ecf7f126b0c68be3785e138
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30262101"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30970755"
 ---
 # <a name="list-androidlobapps"></a>Listar androidLobApps
 
@@ -18,7 +18,7 @@ ms.locfileid: "30262101"
 Listar propriedades e relações dos objetos [androidLobApp](../resources/intune-apps-androidlobapp.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
