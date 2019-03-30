@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto iosVppApp.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ba75e685dc0fc4a1a4c6886c7e7c1d983334d8f3
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 9153844b813616162d82a5adc244baf50954ca75
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30256382"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30989068"
 ---
 # <a name="get-iosvppapp"></a>Acessar iosVppApp
 
@@ -18,7 +18,7 @@ ms.locfileid: "30256382"
 Leia as propriedades e as relações do objeto [iosVppApp](../resources/intune-apps-iosvppapp.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

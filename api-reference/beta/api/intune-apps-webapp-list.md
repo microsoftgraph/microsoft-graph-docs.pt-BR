@@ -4,12 +4,12 @@ description: Listar propriedades e relações dos objetos webApp.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 46f4ea50a4f13e81e9b56ec6a4578c794a599340
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 787b81340b04806fa81912ea34d75c5edf794568
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30153568"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30988690"
 ---
 # <a name="list-webapps"></a>Listar webApps
 
@@ -20,7 +20,7 @@ ms.locfileid: "30153568"
 Listar propriedades e relações dos objetos [webApp](../resources/intune-apps-webapp.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

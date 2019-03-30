@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto deviceAndAppManageme
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5cb7fee4b48aab340ba248ab00fea41ae17ba41b
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 026b69fc58bc4cb466ad69ac2542eac13a44dadd
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30252172"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30988347"
 ---
 # <a name="get-deviceandappmanagementroledefinition"></a>Acessar deviceAndAppManagementRoleDefinition
 
@@ -18,7 +18,7 @@ ms.locfileid: "30252172"
 Leia as propriedades e as relações do objeto [deviceAndAppManagementRoleDefinition](../resources/intune-rbac-deviceandappmanagementroledefinition.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

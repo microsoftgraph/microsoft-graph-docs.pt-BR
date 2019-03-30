@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos androidWorkProfileVpnC
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 700739c0d20706519217586ab466c388d274f1f1
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 4bff300ae32a2801af7114fee368919a3dad8d01
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30171950"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30987920"
 ---
 # <a name="list-androidworkprofilevpnconfigurations"></a>Listar androidWorkProfileVpnConfigurations
 
@@ -20,7 +20,7 @@ ms.locfileid: "30171950"
 Listar Propriedades e relações dos objetos [androidWorkProfileVpnConfiguration](../resources/intune-deviceconfig-androidworkprofilevpnconfiguration.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

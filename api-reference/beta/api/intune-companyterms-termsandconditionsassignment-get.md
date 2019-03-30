@@ -4,12 +4,12 @@ description: Ler propriedades e relações do objeto termsAndConditionsAssignmen
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5ebd50039295cf468f21a6d4f5db4ba2b4cc462c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: f7d5465baf49fcfec2a87a5c88f50df0e948e10d
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30155787"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30987773"
 ---
 # <a name="get-termsandconditionsassignment"></a>Obter termsAndConditionsAssignment
 
@@ -20,7 +20,7 @@ ms.locfileid: "30155787"
 Ler propriedades e relações do objeto [termsAndConditionsAssignment](../resources/intune-companyterms-termsandconditionsassignment.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

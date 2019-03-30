@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto microsoftStoreForBusinessCont
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4eb65cec330fb8027bbbb6158dc31ee17444b060
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 645910272847fa075d34a6739258187b38acb8b6
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30146477"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30988256"
 ---
 # <a name="update-microsoftstoreforbusinesscontainedapp"></a>Atualizar microsoftStoreForBusinessContainedApp
 
@@ -20,7 +20,7 @@ ms.locfileid: "30146477"
 Atualiza as propriedades de um objeto [microsoftStoreForBusinessContainedApp](../resources/intune-apps-microsoftstoreforbusinesscontainedapp.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

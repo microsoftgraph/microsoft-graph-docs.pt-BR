@@ -4,12 +4,12 @@ description: Listar propriedades e relações dos objetos iosGeneralDeviceConfig
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cc3e90bebe8da9f657aa564ed56206a205f01ba0
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: a8208d5f7f57727c476c2ce985edbc1b35bd07a6
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30163375"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30987710"
 ---
 # <a name="list-iosgeneraldeviceconfigurations"></a>Listar iosGeneralDeviceConfigurations
 
@@ -20,7 +20,7 @@ ms.locfileid: "30163375"
 Listar propriedades e relações dos objetos [iosGeneralDeviceConfiguration](../resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

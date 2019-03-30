@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos activeDirectoryWindows
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 50e22ab4ce7218d21ce8a6f3c04ee2e715afeced
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: fef551b85ceb254fafcb4e38fea7efdc7faeeb9e
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30571708"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30987465"
 ---
 # <a name="list-activedirectorywindowsautopilotdeploymentprofiles"></a>Listar activeDirectoryWindowsAutopilotDeploymentProfiles
 
@@ -20,7 +20,7 @@ ms.locfileid: "30571708"
 Listar Propriedades e relações dos objetos [activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

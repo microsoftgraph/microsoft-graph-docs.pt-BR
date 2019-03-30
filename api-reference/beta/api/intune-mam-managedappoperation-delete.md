@@ -4,12 +4,12 @@ description: Exclui managedAppOperation.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6c351cfb170a5a96872b9469897f7a4d9dace194
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 3a2edab44e9650eabb541b42c7c530a358f1a606
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30149879"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30989495"
 ---
 # <a name="delete-managedappoperation"></a>Excluir managedAppOperation
 
@@ -20,7 +20,7 @@ ms.locfileid: "30149879"
 Exclui [managedAppOperation](../resources/intune-mam-managedappoperation.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

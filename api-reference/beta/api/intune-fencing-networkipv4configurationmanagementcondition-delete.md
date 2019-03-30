@@ -4,12 +4,12 @@ description: Exclui networkIPv4ConfigurationManagementCondition.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 307ae9e20ba727426cfb60ab2196c9859af86547
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c7fc89846d0f5e380a87259252b4266be58dede5
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30148801"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30989243"
 ---
 # <a name="delete-networkipv4configurationmanagementcondition"></a>Excluir networkIPv4ConfigurationManagementCondition
 
@@ -20,7 +20,7 @@ ms.locfileid: "30148801"
 Exclui [networkIPv4ConfigurationManagementCondition](../resources/intune-fencing-networkipv4configurationmanagementcondition.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

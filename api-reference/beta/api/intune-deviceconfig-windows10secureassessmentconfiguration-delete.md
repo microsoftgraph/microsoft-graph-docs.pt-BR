@@ -4,12 +4,12 @@ description: Exclui windows10SecureAssessmentConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4019a220a50cd112cc7b82b603c268810a37f206
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ef0e3d54011dae0e2e0d8bb18db8b6801a790112
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30160603"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30988627"
 ---
 # <a name="delete-windows10secureassessmentconfiguration"></a>Excluir windows10SecureAssessmentConfiguration
 
@@ -20,7 +20,7 @@ ms.locfileid: "30160603"
 Exclui [windows10SecureAssessmentConfiguration](../resources/intune-deviceconfig-windows10secureassessmentconfiguration.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos managementCondition.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 02011a375e90dc14d2b72e0b6833a92008408e9e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 43b1f28788eeb717894dfec2a19ed67b7b82cbc4
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30157229"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30989145"
 ---
 # <a name="list-managementconditions"></a>Listar managementConditions
 
@@ -20,7 +20,7 @@ ms.locfileid: "30157229"
 Listar Propriedades e relações dos objetos [managementCondition](../resources/intune-fencing-managementcondition.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

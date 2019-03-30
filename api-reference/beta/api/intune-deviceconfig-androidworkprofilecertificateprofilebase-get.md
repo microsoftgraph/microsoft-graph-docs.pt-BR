@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto Entidadeandroidworkp
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b9066be9899f30b09a80e760e01579f0fad51677
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 55f6584de93cf4316db028a967c05a65d0730841
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30168037"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30989166"
 ---
 # <a name="get-androidworkprofilecertificateprofilebase"></a>Obter Entidadeandroidworkprofilecertificateprofilebase
 
@@ -20,7 +20,7 @@ ms.locfileid: "30168037"
 Leia as propriedades e as relações do objeto [entidadeandroidworkprofilecertificateprofilebase](../resources/intune-deviceconfig-androidworkprofilecertificateprofilebase.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

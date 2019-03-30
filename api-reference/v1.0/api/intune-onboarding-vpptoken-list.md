@@ -1,15 +1,15 @@
 ---
 title: Listar vppTokens
-description: Listar propriedades e relações de objetos vppToken.
+description: Lista propriedades e relações de objetos vppToken.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3ff07758ac590c285e2148d08f873b9c9fd09c2f
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: a33bddfa179e2b8b7834ca581fa33c8d27ce7fae
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30252200"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30989229"
 ---
 # <a name="list-vpptokens"></a>Listar vppTokens
 
@@ -18,7 +18,7 @@ ms.locfileid: "30252200"
 Lista propriedades e relações de objetos [vppToken](../resources/intune-onboarding-vpptoken.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

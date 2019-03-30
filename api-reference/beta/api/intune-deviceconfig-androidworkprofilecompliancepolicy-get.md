@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto na entidadeandroidwo
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 597e8c27abd0ad1dfc054e0338185fdf56e44f40
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: a15ee1f91319259588d65888563ac940ab28d57b
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30140254"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30988074"
 ---
 # <a name="get-androidworkprofilecompliancepolicy"></a>Obter na entidadeandroidworkprofilecompliancepolicy
 
@@ -20,7 +20,7 @@ ms.locfileid: "30140254"
 Leia as propriedades e as relações do objeto [na entidadeandroidworkprofilecompliancepolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

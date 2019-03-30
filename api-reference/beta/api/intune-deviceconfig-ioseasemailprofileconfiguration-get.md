@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto iosEasEmailProfileCo
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 80a3bf0cdb7972917eda0d4002af891cb47b4eb3
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 808e5920ec189791243f38497512e293a48be1f9
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30160099"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30989096"
 ---
 # <a name="get-ioseasemailprofileconfiguration"></a>Obter iosEasEmailProfileConfiguration
 
@@ -20,7 +20,7 @@ ms.locfileid: "30160099"
 Leia as propriedades e as relações do objeto [iosEasEmailProfileConfiguration](../resources/intune-deviceconfig-ioseasemailprofileconfiguration.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

@@ -4,12 +4,12 @@ description: Atualizar as propriedades de um objeto roleAssignment.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 674a1baeb9f15dfb6eeb601784ed69f4b93c5955
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: b3cd839aac57e726d693c497a4f9dba7afeb27f8
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30253222"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30989117"
 ---
 # <a name="update-roleassignment"></a>Atualizar roleAssignment
 
@@ -18,7 +18,7 @@ ms.locfileid: "30253222"
 Atualizar as propriedades de um objeto [roleAssignment](../resources/intune-rbac-roleassignment.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -48,9 +48,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [roleAss
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade. É somente leitura e é gerada automaticamente.|
-|displayName|String|O nome de exibição ou nome amigável da atribuição de função.|
-|descrição|Cadeia de caracteres|Descrição da atribuição de função.|
+|id|String|Chave da entidade. É somente leitura e gerada automaticamente.|
+|displayName|Cadeia de caracteres|O nome de exibição ou nome amigável da atribuição de função.|
+|description|String|Descrição da atribuição de função.|
 |resourceScopes|Coleção de cadeias de caracteres|Lista de IDs de grupos de segurança de membros de escopo da função.  Estas são as IDs do Azure Active Directory.|
 
 

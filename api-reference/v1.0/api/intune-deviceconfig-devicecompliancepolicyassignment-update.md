@@ -4,12 +4,12 @@ description: Atualizar as propriedades de um objeto deviceCompliancePolicyAssign
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5bfc22224b9ae1661c9a57c785df488212a6d5e2
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 9bc05524538cbb9fd1321d2fdb12da4c5a6b7412
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30254230"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30988823"
 ---
 # <a name="update-devicecompliancepolicyassignment"></a>Atualizar deviceCompliancePolicyAssignment
 
@@ -18,7 +18,7 @@ ms.locfileid: "30254230"
 Atualizar as propriedades de um objeto [deviceCompliancePolicyAssignment](../resources/intune-deviceconfig-devicecompliancepolicyassignment.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

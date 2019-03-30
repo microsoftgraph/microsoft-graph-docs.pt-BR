@@ -1,15 +1,15 @@
 ---
 title: Excluir windows10TeamGeneralConfiguration
-description: Excluir um windows10TeamGeneralConfiguration
+description: Exclui windows10TeamGeneralConfiguration
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 261d441facdad0ae5ebf7bc803b839dd648a7097
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 416166e076d1b8977c66a54e19724ce331e3d315
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30140429"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30988375"
 ---
 # <a name="delete-windows10teamgeneralconfiguration"></a>Excluir windows10TeamGeneralConfiguration
 
@@ -20,7 +20,7 @@ ms.locfileid: "30140429"
 Exclui [windows10TeamGeneralConfiguration](../resources/intune-deviceconfig-windows10teamgeneralconfiguration.md)
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

@@ -4,18 +4,18 @@ description: 'Este artigo descreve as oportunidades de parceria habilitadas pela
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: f584e58c957e92ee4e61a6a12e333fc659428c48
-ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
+ms.openlocfilehash: 312c13cdad2ce8341095a87d33f4a5b01f7e1eef
+ms.sourcegitcommit: fd9f62fd9a6d311f98afe2e31afca8b818c402c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30367152"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31003696"
 ---
 # <a name="partnering-with-the-microsoft-graph-security-api--technology-partner-opportunities"></a>Parceria com a API de segurança do Microsoft Graph – oportunidades de parceiros de tecnologia
 
 Este artigo descreve as oportunidades de parceria habilitadas pela API de segurança do Microsoft Graph e foi projetado para ajudar os gerentes de produto e as funções de desenvolvimento de negócios a entender os caminhos de investimento e a fornecer informações sobre as propostas de valor de parceria.
 
-## <a name="background"></a>Histórico
+## <a name="background"></a>Background
 
 A maioria das organizações lida com altos volumes de dados de segurança e tem dezenas de soluções de segurança em sua empresa, tornando a tarefa de integração de vários produtos e serviços desanimadores e complexos. Esses desafios prejudicam a capacidade de as organizações se movimentarem rapidamente ao detectar e corrigir ameaças em um mundo de ataques de movimentação rápida e interrupções.
 
@@ -61,9 +61,8 @@ A seguir estão três benefícios importantes que podem ser obtidos por meio da 
 
 - Agregar alertas de vários provedores para criar incidentes.
 - AcEsse contexto adicional para informar a priorização e a resposta de alerta.
-
-Manter o status do alerta sincronizado entre sistemas Gerenciando alertas. </br>
-Ganhe visibilidade para a postura de segurança e recomendação sobre como aprimorá-la com pontuações seguras.
+- Manter o status do alerta sincronizado entre sistemas Gerenciando alertas.
+- Ganhe visibilidade para a postura de segurança e recomendação sobre como aprimorá-la com pontuações seguras.
 
 ### <a name="share-threat-intelligence-to-enable-custom-detections"></a>Compartilhar inteligência de ameaças para habilitar detecções personalizadas
 

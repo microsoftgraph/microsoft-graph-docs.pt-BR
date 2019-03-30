@@ -1,24 +1,24 @@
 ---
-title: Get managedDevice
-description: Ler propriedades e relações do objeto managedDevice.
+title: Acessar managedDevice
+description: Leia as propriedades e as relações do objeto managedDevice.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 201dcba08cceaf0cad62ea96c45d0af118636dcb
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 9936ba70226927c617cce6768313f2d91f2b1f5e
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30256704"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30988501"
 ---
-# <a name="get-manageddevice"></a>Get managedDevice
+# <a name="get-manageddevice"></a>Acessar managedDevice
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Ler propriedades e relações do objeto [managedDevice](../resources/intune-devices-manageddevice.md).
+Leia as propriedades e as relações do objeto [managedDevice](../resources/intune-devices-manageddevice.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -50,7 +50,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://docs.microsof
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retornará um código de resposta `200 OK` e um objeto [managedDevice](../resources/intune-devices-manageddevice.md) no corpo da resposta.
+Se tiver êxito, este método retornará o código de resposta `200 OK` e o objeto [managedDevice](../resources/intune-devices-manageddevice.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

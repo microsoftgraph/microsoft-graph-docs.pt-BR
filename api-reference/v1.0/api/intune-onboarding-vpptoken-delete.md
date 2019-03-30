@@ -4,12 +4,12 @@ description: Exclui um vppToken.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 67f9ad125d24f153b8a68064f5607fa712a966cd
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 693edc46517b0b7ecb01fcaf7fe07a0a8975d9cb
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30252466"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30988704"
 ---
 # <a name="delete-vpptoken"></a>Excluir vppToken
 
@@ -18,7 +18,7 @@ ms.locfileid: "30252466"
 Exclui um [vppToken](../resources/intune-onboarding-vpptoken.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

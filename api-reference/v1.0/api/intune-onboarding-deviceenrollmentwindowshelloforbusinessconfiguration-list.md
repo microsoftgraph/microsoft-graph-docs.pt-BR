@@ -4,12 +4,12 @@ description: Listar propriedades e relações de objetos de deviceEnrollmentWind
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2a566f17f47852ca2cec6c95306e19f20cb590b2
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 53d8f984862cede4a00a97af5536d76dbef38b56
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30260057"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30989131"
 ---
 # <a name="list-deviceenrollmentwindowshelloforbusinessconfigurations"></a>Listar deviceEnrollmentWindowsHelloForBusinessConfigurations
 
@@ -18,7 +18,7 @@ ms.locfileid: "30260057"
 Listar propriedades e relações de objetos de [deviceEnrollmentWindowsHelloForBusinessConfiguration](../resources/intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

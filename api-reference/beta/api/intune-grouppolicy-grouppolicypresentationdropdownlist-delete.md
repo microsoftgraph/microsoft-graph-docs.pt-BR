@@ -4,12 +4,12 @@ description: Exclui groupPolicyPresentationDropdownList.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a6c14a60df7c311ae4165362cb42f8b9ab3633be
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 0f0cf91368a692a113da7d1c878e993f94d11027
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30174001"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30989194"
 ---
 # <a name="delete-grouppolicypresentationdropdownlist"></a>Excluir groupPolicyPresentationDropdownList
 
@@ -20,7 +20,7 @@ ms.locfileid: "30174001"
 Exclui [groupPolicyPresentationDropdownList](../resources/intune-grouppolicy-grouppolicypresentationdropdownlist.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

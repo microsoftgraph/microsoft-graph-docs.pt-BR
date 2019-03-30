@@ -4,12 +4,12 @@ description: Listar propriedades e relações dos objetos defaultManagedAppProte
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a9e6e614334cf025eec45fc08a4e2289d14c9b95
-ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
+ms.openlocfilehash: 20661fcda1760d5f191c7deba5e16640344d2799
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30572443"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30989411"
 ---
 # <a name="list-defaultmanagedappprotections"></a>Listar defaultManagedAppProtections
 
@@ -20,7 +20,7 @@ ms.locfileid: "30572443"
 Listar propriedades e relações dos objetos [defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

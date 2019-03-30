@@ -1,17 +1,17 @@
 ---
-title: ação searchExistingIdentities
+title: Ação searchExistingIdentities
 description: Ainda não documentado
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1d8917d7a19f7a0186fe85e88aea4db65124b599
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: a9e9bdfaaf071962120852776481e7c5c072580a
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30631432"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30987549"
 ---
-# <a name="searchexistingidentities-action"></a>ação searchExistingIdentities
+# <a name="searchexistingidentities-action"></a>Ação searchExistingIdentities
 
 > **Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.
 
@@ -20,7 +20,7 @@ ms.locfileid: "30631432"
 Ainda não documentado
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

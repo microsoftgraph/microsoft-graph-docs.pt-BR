@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto managedDeviceCertificateState
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a360e35e83712178d71256bdd6f389081e4047c4
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e8a8756adb4ef548175723bc6238797f89ede944
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30171698"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30987563"
 ---
 # <a name="update-manageddevicecertificatestate"></a>Atualizar managedDeviceCertificateState
 
@@ -20,7 +20,7 @@ ms.locfileid: "30171698"
 Atualiza as propriedades de um objeto [managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -84,7 +84,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [managed
 |certificateIssuer|String|Emissor|
 |certificateThumbprint|String|Identificação|
 |certificateSerialNumber|String|Número de série|
-|certificateKeyLength|Int32|Comprimento da chave|
+|certificateKeyLength|Int32|Comprimento de chave|
 |certificateEnhancedKeyUsage|String|Uso estendido de chave|
 |certificateValidityPeriod|Int32|Período de validade|
 |certificateSubjectNameFormatString|String|Cadeia de caracteres de formato de nome de entidade para formatos de nome de entidade personalizados|

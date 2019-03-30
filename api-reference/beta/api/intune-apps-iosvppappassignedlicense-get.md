@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto iosVppAppAssignedLic
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 74a5c18c21e1266faee5328d01a95c3ed5bf1280
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 43e3771b9a8ad94a411d54c3329104c8b150fdbf
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30175182"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30987976"
 ---
 # <a name="get-iosvppappassignedlicense"></a>Obter iosVppAppAssignedLicense
 
@@ -20,7 +20,7 @@ ms.locfileid: "30175182"
 Leia as propriedades e as relações do objeto [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

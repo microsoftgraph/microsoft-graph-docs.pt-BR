@@ -4,12 +4,12 @@ description: Lê as propriedades e relações do objeto importedWindowsAutopilot
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 889f71b437ca9e08917e4e2893889a9f704d7703
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 459ba1a0673740b2f65147a198479ddc41ea99af
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30260827"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30989019"
 ---
 # <a name="get-importedwindowsautopilotdeviceidentity"></a>Obter importedWindowsAutopilotDeviceIdentity
 
@@ -18,7 +18,7 @@ ms.locfileid: "30260827"
 Lê as propriedades e relações do objeto [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
