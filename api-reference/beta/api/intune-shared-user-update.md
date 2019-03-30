@@ -4,12 +4,12 @@ description: Atualize as propriedades de um objeto user.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 0009e563e34d40e8dae434761ed4203564ce9d9b
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: 3401ae8c2a33e56e69121b5704cc2e45905429be
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30571981"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30986107"
 ---
 # <a name="update-user"></a>Atualizar usuário
 
@@ -21,7 +21,7 @@ Atualizar as propriedades de um objeto [user](../resources/intune-shared-user.md
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

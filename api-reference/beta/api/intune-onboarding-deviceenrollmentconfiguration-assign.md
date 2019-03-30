@@ -4,12 +4,12 @@ description: Ainda não documentado
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 36aba024599bce16a3c55cbcdf1757b43d1f417e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ef9a4919da7d22aa62b791b263e59101e1398090
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30164586"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30985932"
 ---
 # <a name="assign-action"></a>atribuir ação
 
@@ -20,7 +20,7 @@ ms.locfileid: "30164586"
 Ainda não documentado
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

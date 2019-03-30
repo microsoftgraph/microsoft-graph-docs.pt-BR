@@ -4,12 +4,12 @@ description: Atualizar as propriedades de um objeto settingStateDeviceSummary.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 13e8c4f61156f37a24b81cb08685215c8ae560a9
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 7fa47448fffacf3e48e7b9f63a34cf93b4392044
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30156935"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30986856"
 ---
 # <a name="update-settingstatedevicesummary"></a>Atualizar settingStateDeviceSummary
 
@@ -20,7 +20,7 @@ ms.locfileid: "30156935"
 Atualizar as propriedades de um objeto [settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

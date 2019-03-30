@@ -4,12 +4,12 @@ description: Cria um novo objeto windows10CompliancePolicy.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7f335b531228fa8bc8b1f5865cacb57007acd41a
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: 9af661ab4397c8096b45bea8fdd199d2c78b0bd1
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30572114"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30973863"
 ---
 # <a name="create-windows10compliancepolicy"></a>Criar windows10CompliancePolicy
 
@@ -20,7 +20,7 @@ ms.locfileid: "30572114"
 Cria um novo objeto [windows10CompliancePolicy](../resources/intune-deviceconfig-windows10compliancepolicy.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -50,44 +50,44 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar windows10Complia
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
+|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |id|String|Chave da entidade. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
-|descrição|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
+|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |version|Int32|Versão da configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
-|passwordRequired|Boolean|Exige uma senha para desbloquear o dispositivo Windows.|
-|passwordBlockSimple|Boolean|Indica se a senha simples deve ou não ser bloqueada.|
-|passwordRequiredToUnlockFromIdle|Boolean|Exige uma senha para desbloquear o dispositivo ocioso.|
+|passwordRequired|Booliano|Exige uma senha para desbloquear o dispositivo Windows.|
+|passwordBlockSimple|Booliano|Indica se a senha simples deve ou não ser bloqueada.|
+|passwordRequiredToUnlockFromIdle|Booliano|Exige uma senha para desbloquear o dispositivo ocioso.|
 |passwordMinutesOfInactivityBeforeLock|Int32|Minutos de inatividade antes que uma senha seja necessária.|
 |passwordExpirationDays|Int32|A expiração da senha em dias.|
 |passwordMinimumLength|Int32|Comprimento mínimo da senha.|
 |passwordMinimumCharacterSetCount|Int32|O número de conjuntos de caracteres necessários na senha.|
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|O tipo de senha necessária. Os valores possíveis são: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordPreviousPasswordBlockCount|Int32|O número de senhas anteriores cujo uso deve ser evitado.|
-|requireHealthyDeviceReport|Boolean|Exige que os dispositivos sejam indicados como íntegros pelo Atestado de Integridade do Dispositivo Windows.|
+|requireHealthyDeviceReport|Booliano|Exige que os dispositivos sejam indicados como íntegros pelo Atestado de Integridade do Dispositivo Windows.|
 |osMinimumVersion|String|Versão mínima do Windows 10.|
 |osMaximumVersion|String|Versão máxima do Windows 10.|
 |mobileOsMinimumVersion|String|Versão mínima do Windows Phone.|
 |mobileOsMaximumVersion|Cadeia de caracteres|Versão máxima do Windows Phone.|
-|earlyLaunchAntiMalwareDriverEnabled|Boolean|Exige que os dispositivos sejam indicados como íntegros pelo Atestado de Integridade do Dispositivo Windows - driver antimalware de inicialização antecipada habilitado.|
-|bitLockerEnabled|Boolean|Exige que os dispositivos sejam indicados como íntegros pelo Atestado de Integridade do Dispositivo Windows - bit locker desabilitado|
-|secureBootEnabled|Boolean|Exige que os dispositivos sejam indicados como íntegros pelo Atestado de Integridade do Dispositivo Windows - inicialização segura habilitada.|
+|earlyLaunchAntiMalwareDriverEnabled|Booliano|Exige que os dispositivos sejam indicados como íntegros pelo Atestado de Integridade do Dispositivo Windows - driver antimalware de inicialização antecipada habilitado.|
+|bitLockerEnabled|Booliano|Exige que os dispositivos sejam indicados como íntegros pelo Atestado de Integridade do Dispositivo Windows - bit locker desabilitado|
+|secureBootEnabled|Booliano|Exige que os dispositivos sejam indicados como íntegros pelo Atestado de Integridade do Dispositivo Windows - inicialização segura habilitada.|
 |codeIntegrityEnabled|Boolean|Exige que os dispositivos sejam indicados como íntegros pelo Atestado de Integridade do Dispositivo Windows.|
 |storageRequireEncryption|Boolean|Exige criptografia em dispositivos Windows.|
-|Propriedades activefirewallrequired|Boolean|Exigir firewall ativo em dispositivos Windows.|
-|defenderEnabled|Boolean|Requer o Windows Defender Antimalware em dispositivos Windows.|
+|Propriedades activefirewallrequired|Booliano|Exigir firewall ativo em dispositivos Windows.|
+|defenderEnabled|Booliano|Requer o Windows Defender Antimalware em dispositivos Windows.|
 |defenderVersion|String|Requer a versão mínima do Windows Defender Antimalware em dispositivos Windows.|
-|signatureOutOfDate|Boolean|Requer que a assinatura antimalware do Windows Defender esteja atualizada em dispositivos Windows.|
-|rtpEnabled|Boolean|Requer a proteção em tempo real do Windows Defender Antimalware em dispositivos Windows.|
-|antivirusRequired|Boolean|Exigir que qualquer solução antivírus registrada com o Windows Decurity Center seja ativada e monitorando (por exemplo, Symantec, Windows Defender).|
-|antiSpywareRequired|Boolean|Exija que qualquer solução AntiSpyware registrada com o Windows Decurity Center seja ativada e monitoramento (por exemplo, Symantec, Windows Defender).|
+|signatureOutOfDate|Booliano|Requer que a assinatura antimalware do Windows Defender esteja atualizada em dispositivos Windows.|
+|rtpEnabled|Booliano|Requer a proteção em tempo real do Windows Defender Antimalware em dispositivos Windows.|
+|antivirusRequired|Booliano|Exigir que qualquer solução antivírus registrada com o Windows Decurity Center seja ativada e monitorando (por exemplo, Symantec, Windows Defender).|
+|antiSpywareRequired|Booliano|Exija que qualquer solução AntiSpyware registrada com o Windows Decurity Center seja ativada e monitoramento (por exemplo, Symantec, Windows Defender).|
 |validOperatingSystemBuildRanges|coleção [operatingSystemVersionRange](../resources/intune-deviceconfig-operatingsystemversionrange.md)|Os intervalos válidos da compilação do sistema operacional em dispositivos Windows. Essa coleção pode conter um máximo de 10.000 elementos.|
 |deviceThreatProtectionEnabled|Boolean|Exige que os dispositivos tenham habilitada a proteção contra ameaças.|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Requer nível mínimo de risco de proteção contra ameaças ao dispositivo para relatar não conformidade. Os valores possíveis são: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
-|configurationManagerComplianceRequired|Boolean|Exigir que o estado de conformidade do SCCM seja considerado para o estado de conformidade do Intune.|
-|tpmRequired|Boolean|Requer o módulo de plataforma confiável (TPM) para estar presente.|
+|configurationManagerComplianceRequired|Booliano|Exigir que o estado de conformidade do SCCM seja considerado para o estado de conformidade do Intune.|
+|tpmRequired|Booliano|Requer o módulo de plataforma confiável (TPM) para estar presente.|
 
 
 

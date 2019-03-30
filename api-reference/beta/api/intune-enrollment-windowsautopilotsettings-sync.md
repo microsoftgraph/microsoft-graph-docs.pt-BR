@@ -4,12 +4,12 @@ description: Ainda não documentado
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ba5c69f0f5e932c642d45366115404dbc9f028d9
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e60f377eb2660b5bff56f2a34b7edf3e019e1168
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30145609"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30985687"
 ---
 # <a name="sync-action"></a>Ação sync
 
@@ -20,7 +20,7 @@ ms.locfileid: "30145609"
 Ainda não documentado
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

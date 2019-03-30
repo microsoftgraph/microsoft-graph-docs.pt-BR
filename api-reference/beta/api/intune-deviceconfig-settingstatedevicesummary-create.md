@@ -4,12 +4,12 @@ description: Criar um novo objeto settingStateDeviceSummary.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3af103ab586a636269e17b0f59cb1df7aad20bad
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 8d77324ee3d1e13d51cc196d90015ee09e5760c1
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30164880"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30986772"
 ---
 # <a name="create-settingstatedevicesummary"></a>Criar settingStateDeviceSummary
 
@@ -20,7 +20,7 @@ ms.locfileid: "30164880"
 Criar um novo objeto [settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

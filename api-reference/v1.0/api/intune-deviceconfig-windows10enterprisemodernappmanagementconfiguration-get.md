@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto windows10EnterpriseM
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fedbaf65eb00ec9e373e6b11e18f68bc80247858
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 8cbda36a445677cae79e5c6b3a83004274d36214
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30263410"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30985883"
 ---
 # <a name="get-windows10enterprisemodernappmanagementconfiguration"></a>Acessar windows10EnterpriseModernAppManagementConfiguration
 
@@ -18,7 +18,7 @@ ms.locfileid: "30263410"
 Leia as propriedades e as relações do objeto [windows10EnterpriseModernAppManagementConfiguration](../resources/intune-deviceconfig-windows10enterprisemodernappmanagementconfiguration.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

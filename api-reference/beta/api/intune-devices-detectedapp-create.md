@@ -4,12 +4,12 @@ description: Criar um novo objeto detectedApp.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1e7ca8cedef11ad25a943398854f3a779b2573fa
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: bc12d980eb63bf3e6af065c35b73f4f6e01e9e0e
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30144790"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30987192"
 ---
 # <a name="create-detectedapp"></a>Criar detectedApp
 
@@ -20,7 +20,7 @@ ms.locfileid: "30144790"
 Criar um novo objeto [detectedApp](../resources/intune-devices-detectedapp.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

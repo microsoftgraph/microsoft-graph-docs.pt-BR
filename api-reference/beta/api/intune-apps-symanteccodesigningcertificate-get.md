@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto symantecCodeSigningC
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 571a4361fda0f220d0c98a5bfe306e5187929d38
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e66a9f10e523aaf3906f17355f3eeac0402ff23d
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30165188"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30986716"
 ---
 # <a name="get-symanteccodesigningcertificate"></a>Obter symantecCodeSigningCertificate
 
@@ -20,7 +20,7 @@ ms.locfileid: "30165188"
 Leia as propriedades e as relações do objeto [symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

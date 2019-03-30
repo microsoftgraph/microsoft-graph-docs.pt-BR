@@ -4,12 +4,12 @@ description: Exclui termsAndConditions.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e94e4d2cd28a2cd15a6a90dccf8c62666268dfad
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 07c725cc682188dc96a63786ed35eb9ca53d1fc4
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30163781"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30985848"
 ---
 # <a name="delete-termsandconditions"></a>Excluir termsAndConditions
 
@@ -20,7 +20,7 @@ ms.locfileid: "30163781"
 Exclui [termsAndConditions](../resources/intune-companyterms-termsandconditions.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

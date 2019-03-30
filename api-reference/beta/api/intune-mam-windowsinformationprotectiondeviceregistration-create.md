@@ -4,12 +4,12 @@ description: Criar um novo objeto windowsInformationProtectionDeviceRegistration
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4b2e6131a1d4393026ebf88a7ed089ebba2390b2
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: f07481326f3766e8a9b1173fc07914bb301d6588
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30158839"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30985988"
 ---
 # <a name="create-windowsinformationprotectiondeviceregistration"></a>Criar windowsInformationProtectionDeviceRegistration
 
@@ -20,7 +20,7 @@ ms.locfileid: "30158839"
 Criar um novo objeto [windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -52,7 +52,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windowsI
 |:---|:---|:---|
 |id|String|Chave da entidade.|
 |userId|String|UserId associado a este registro de registro de dispositivo.|
-|deviceRegistrationId|Cadeia de caracteres|Identificador de dispositivo para este registro de registro de dispositivo.|
+|deviceRegistrationId|String|Identificador de dispositivo para este registro de registro de dispositivo.|
 |deviceName|Cadeia de caracteres|Nome do dispositivo.|
 |deviceType|String|Tipo de dispositivo, por exemplo, Windows laptop VS Windows Phone.|
 |deviceMacAddress|String|Endereço MAC do dispositivo.|

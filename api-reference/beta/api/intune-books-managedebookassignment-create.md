@@ -4,12 +4,12 @@ description: Criar um novo objeto managedEBookAssignment.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c7950663815677e84c9451c54957432d4176072c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 89e7f41962818f3d1ce535a792262f613f052929
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30139400"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30981311"
 ---
 # <a name="create-managedebookassignment"></a>Criar managedEBookAssignment
 
@@ -20,7 +20,7 @@ ms.locfileid: "30139400"
 Criar um novo objeto [managedEBookAssignment](../resources/intune-books-managedebookassignment.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

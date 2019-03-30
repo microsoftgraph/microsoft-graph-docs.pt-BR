@@ -4,12 +4,12 @@ description: Listar propriedades e relações de objetos de managedAppOperation.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 73964452850d45f835dc358c6b18c0451d22718a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 6fff514f3b98c119c9678489ed3cf593c9c6ca10
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30150901"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30964084"
 ---
 # <a name="list-managedappoperations"></a>Listar managedAppOperations
 
@@ -20,7 +20,7 @@ ms.locfileid: "30150901"
 Listar propriedades e relações de objetos de [managedAppOperation](../resources/intune-mam-managedappoperation.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

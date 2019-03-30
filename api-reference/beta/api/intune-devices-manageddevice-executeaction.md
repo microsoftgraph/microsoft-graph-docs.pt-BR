@@ -4,12 +4,12 @@ description: Ainda não documentado
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 84cb53d097b7f9e68869d48c618cb0a56f89d9db
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: cc4916bcc7056ade0bf935e31fa935933541b480
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30144531"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30982081"
 ---
 # <a name="executeaction-action"></a>Ação executeAction
 
@@ -20,7 +20,7 @@ ms.locfileid: "30144531"
 Ainda não documentado
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -53,7 +53,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |actionName|[managedDeviceRemoteAction](../resources/intune-devices-manageddeviceremoteaction.md)|Ainda não documentado|
-|deviceIds|Coleção String|Ainda não documentado|
+|deviceIds|String collection|Ainda não documentado|
 
 
 

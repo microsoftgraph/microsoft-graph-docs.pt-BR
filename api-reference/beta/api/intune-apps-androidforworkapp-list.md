@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos androidForWorkApp.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 03854d5b356a9b2c8f5032f531f5215292712fb5
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ca1a5639e03a1d4be957fe21e55d283a38bbe508
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30140779"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30986751"
 ---
 # <a name="list-androidforworkapps"></a>Listar androidForWorkApps
 
@@ -20,7 +20,7 @@ ms.locfileid: "30140779"
 Listar Propriedades e relações dos objetos [androidForWorkApp](../resources/intune-apps-androidforworkapp.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

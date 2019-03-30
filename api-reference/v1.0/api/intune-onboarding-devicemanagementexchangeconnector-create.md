@@ -4,12 +4,12 @@ description: Crie um novo objeto deviceManagementExchangeConnector.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 292562a2a7083e63f083d0ccad5e11071a27ce96
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: d8f077b54faa25aa4d56a3192baf91a9a2adc95c
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30256438"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30972645"
 ---
 # <a name="create-devicemanagementexchangeconnector"></a>Criar deviceManagementExchangeConnector
 
@@ -18,7 +18,7 @@ ms.locfileid: "30256438"
 Crie um novo objeto [deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -55,7 +55,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar deviceManagement
 |serverName|String|O nome do servidor Exchange.|
 |connectorServerName|String|O nome do servidor que hospeda o Exchange Connector.|
 |exchangeConnectorType|[deviceManagementExchangeConnectorType](../resources/intune-onboarding-devicemanagementexchangeconnectortype.md)|O tipo de Exchange Connector configurado. Os valores possíveis são: `onPremises`, `hosted`, `serviceToService`, `dedicated`.|
-|version|String|A versão do ExchangeConnectorAgent|
+|versão|String|A versão do ExchangeConnectorAgent|
 |exchangeAlias|String|Um alias atribuído a um servidor Exchange|
 |exchangeOrganization|Cadeia de caracteres|Organização do Exchange no servidor Exchange|
 

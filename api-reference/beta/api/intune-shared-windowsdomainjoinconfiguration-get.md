@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto windowsDomainJoinCon
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 89d6f6c2a53a1a00e6458fd155f2e6b45fe212ce
-ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
+ms.openlocfilehash: 64e8db69cc7a3bf158d5ae4d359fde15f1ab7751
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30572205"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30986821"
 ---
 # <a name="get-windowsdomainjoinconfiguration"></a>Obter windowsDomainJoinConfiguration
 
@@ -21,7 +21,7 @@ Leia as propriedades e as relações do objeto [windowsDomainJoinConfiguration](
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

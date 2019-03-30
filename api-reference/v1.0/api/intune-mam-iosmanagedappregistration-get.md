@@ -4,12 +4,12 @@ description: Ler propriedades e relações do objeto iosManagedAppRegistration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eb843c0915e082bd06f84dbc54ce52fea2208948
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: c333dd2abc88f0373516b3fce0e09594209016b6
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30259028"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30986506"
 ---
 # <a name="get-iosmanagedappregistration"></a>Get iosManagedAppRegistration
 
@@ -18,7 +18,7 @@ ms.locfileid: "30259028"
 Ler propriedades e relações do objeto [iosManagedAppRegistration](../resources/intune-mam-iosmanagedappregistration.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

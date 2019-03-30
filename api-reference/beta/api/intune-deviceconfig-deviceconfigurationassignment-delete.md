@@ -4,12 +4,12 @@ description: Exclui deviceConfigurationAssignment.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b68a29cf46a08f942663c220be1cd53521c8dd58
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 2b8e766c8d3056f1b00cd67858400e1ac55e1a14
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30155703"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30987185"
 ---
 # <a name="delete-deviceconfigurationassignment"></a>Excluir deviceConfigurationAssignment
 
@@ -20,7 +20,7 @@ ms.locfileid: "30155703"
 Exclui [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

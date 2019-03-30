@@ -4,12 +4,12 @@ description: Ainda não documentado
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 32cd505d2e93a254bf04127dac9672a76f8afb18
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 68a52635930a8bcb77d33b26c68ce53a855d51c4
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30167981"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30985981"
 ---
 # <a name="refreshdevicecompliancereportsummarization-action"></a>ação refreshDeviceComplianceReportSummarization
 
@@ -20,7 +20,7 @@ ms.locfileid: "30167981"
 Ainda não documentado
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

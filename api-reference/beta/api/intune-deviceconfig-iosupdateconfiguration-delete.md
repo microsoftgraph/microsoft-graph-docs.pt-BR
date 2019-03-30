@@ -4,12 +4,12 @@ description: Exclui iosUpdateConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2a4bafcfa1ba5d98727938b6678f7272334ec7ad
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 0df8439bbd97ad80fc1053e9a5e209f6ea64ebcc
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30173735"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30986016"
 ---
 # <a name="delete-iosupdateconfiguration"></a>Excluir iosUpdateConfiguration
 
@@ -20,7 +20,7 @@ ms.locfileid: "30173735"
 Exclui [iosUpdateConfiguration](../resources/intune-deviceconfig-iosupdateconfiguration.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

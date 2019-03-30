@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto androidWorkProfileGm
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f9e4955171cc585d58cd933f0ce9fcbcce18d81e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 001c2b803ac0fae75a90b0a9557f669706425804
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30166399"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30986030"
 ---
 # <a name="get-androidworkprofilegmaileasconfiguration"></a>Obter androidWorkProfileGmailEasConfiguration
 
@@ -20,7 +20,7 @@ ms.locfileid: "30166399"
 Leia as propriedades e as relações do objeto [androidWorkProfileGmailEasConfiguration](../resources/intune-deviceconfig-androidworkprofilegmaileasconfiguration.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

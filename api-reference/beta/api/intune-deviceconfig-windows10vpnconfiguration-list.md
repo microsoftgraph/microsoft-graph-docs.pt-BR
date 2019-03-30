@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos windows10VpnConfigurat
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4672352e448faef7b6495de37e37a590ae3ede42
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 9ace9c515b2cb4693b03abe94ed1b0c1318d2282
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30145812"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30983005"
 ---
 # <a name="list-windows10vpnconfigurations"></a>Listar windows10VpnConfigurations
 
@@ -20,7 +20,7 @@ ms.locfileid: "30145812"
 Listar Propriedades e relações dos objetos [windows10VpnConfiguration](../resources/intune-deviceconfig-windows10vpnconfiguration.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

@@ -4,12 +4,12 @@ description: Emite uma operação de apagamento em um registro de aplicativo com
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: ba8abcc4ed9b629c560c77d0c4df63f94207f242
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: 650ff602101cead593d39603beb0b361ac0421dc
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30570665"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30973639"
 ---
 # <a name="wipemanagedappregistrationbydevicetag-action"></a>Ação wipeManagedAppRegistrationByDeviceTag
 
@@ -21,7 +21,7 @@ Emite uma operação de apagamento em um registro de aplicativo com uma marcaç�
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

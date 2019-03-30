@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos groupPolicyPresentatio
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ba2ce8b194c2a4457befdc3643fba3ea1b929156
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ad3f970e6fbb6972c6cc4b0a5f81008862cca1fa
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30151825"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30986954"
 ---
 # <a name="list-grouppolicypresentationvaluelongdecimals"></a>Listar groupPolicyPresentationValueLongDecimals
 
@@ -20,7 +20,7 @@ ms.locfileid: "30151825"
 Listar Propriedades e relações dos objetos [groupPolicyPresentationValueLongDecimal](../resources/intune-grouppolicy-grouppolicypresentationvaluelongdecimal.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

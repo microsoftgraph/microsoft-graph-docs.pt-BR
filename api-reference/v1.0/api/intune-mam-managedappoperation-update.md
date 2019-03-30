@@ -4,12 +4,12 @@ description: Atualizar as propriedades de um objeto managedAppOperation.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 75752874f78d1f1044e50219dede240e00f0a441
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 52ff91c1db2d20a484b7bf1f8bde282007ea9485
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30250191"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30978469"
 ---
 # <a name="update-managedappoperation"></a>Atualizar managedAppOperation
 
@@ -18,7 +18,7 @@ ms.locfileid: "30250191"
 Atualizar as propriedades de um objeto [managedAppOperation](../resources/intune-mam-managedappoperation.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -48,11 +48,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [managed
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|String|O nome da operação.|
+|displayName|Cadeia de caracteres|O nome da operação.|
 |lastModifiedDateTime|DateTimeOffset|Última vez em que a operação de aplicativo foi modificada.|
 |state|String|O estado atual da operação|
 |id|String|Chave da entidade.|
-|version|String|Versão da entidade.|
+|versão|String|Versão da entidade.|
 
 
 

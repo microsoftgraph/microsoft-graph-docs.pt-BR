@@ -4,12 +4,12 @@ description: Exclui um iosMobileAppConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: effd516555a3ddc808af4716b4eedeb3e227f698
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 75160353484d4f7a44f0b786b5471c15be930c54
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30157068"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30986100"
 ---
 # <a name="delete-iosmobileappconfiguration"></a>Excluir iosMobileAppConfiguration
 
@@ -20,7 +20,7 @@ ms.locfileid: "30157068"
 Exclui um [iosMobileAppConfiguration](../resources/intune-apps-iosmobileappconfiguration.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

@@ -4,12 +4,12 @@ description: Listar propriedades e relações dos objetos microsoftStoreForBusin
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e4606ea6482fbeb774cee3ab29fcdb34b8d4b120
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 68dda0fe699d2d8e8597870550cadc90e1967317
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30173462"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30986744"
 ---
 # <a name="list-microsoftstoreforbusinessapps"></a>Listar microsoftStoreForBusinessApps
 
@@ -20,7 +20,7 @@ ms.locfileid: "30173462"
 Listar propriedades e relações dos objetos [microsoftStoreForBusinessApp](../resources/intune-apps-microsoftstoreforbusinessapp.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

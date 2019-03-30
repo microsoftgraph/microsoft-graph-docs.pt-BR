@@ -4,12 +4,12 @@ description: Crie um novo objeto deviceCompliancePolicySettingStateSummary.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 110b3853c7e36280cf530f6d5d18a197cfd33230
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 6aac612b6a94a59ff17d12d5a328b5eac793e3e9
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30170921"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30986548"
 ---
 # <a name="create-devicecompliancepolicysettingstatesummary"></a>Criar deviceCompliancePolicySettingStateSummary
 
@@ -20,7 +20,7 @@ ms.locfileid: "30170921"
 Crie um novo objeto [deviceCompliancePolicySettingStateSummary](../resources/intune-deviceconfig-devicecompliancepolicysettingstatesummary.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

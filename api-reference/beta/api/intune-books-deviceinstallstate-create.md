@@ -4,12 +4,12 @@ description: Criar um novo objeto deviceInstallState.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1589bd46e581e9d29c481dbc2c82dcd6733b51b1
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: aa2402605f77d9d901c4941ded593e8c1d787040
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30144132"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30986905"
 ---
 # <a name="create-deviceinstallstate"></a>Criar deviceInstallState
 
@@ -20,7 +20,7 @@ ms.locfileid: "30144132"
 Criar um novo objeto [deviceInstallState](../resources/intune-books-deviceinstallstate.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -58,7 +58,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceIn
 |installState|[installState](../resources/intune-books-installstate.md)|O estado de instalação do livro eletrônico. Os valores possíveis são: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed`, `unknown`.|
 |errorCode|String|O código de erro de falhas de instalação.|
 |osVersion|String|Versão do sistema operacional.|
-|osDescription|Cadeia de caracteres|Descrição do sistema operacional.|
+|osDescription|String|Descrição do sistema operacional.|
 |userName|Cadeia de caracteres|Nome de usuário do dispositivo.|
 
 

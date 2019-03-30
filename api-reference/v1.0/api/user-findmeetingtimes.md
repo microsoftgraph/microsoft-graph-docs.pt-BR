@@ -1,20 +1,22 @@
 ---
 title: 'user: findMeetingTimes'
-description: Sugerir horários de reunião e com base na disponibilidade do organizador e participante e restrições de tempo ou o local especificadas como parâmetros de locais.
+description: Localize as sugestões de hora da reunião com base no organizador e na disponibilidade dos participantes, assim como nas restrições de horário ou local especificadas como parâmetros.
 localization_priority: Priority
-author: dkershaw10
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b1e2ced373cffec19ab0d945dbc27e24833e8059
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 661b2f25f14baddd04e15c7a9fcf38d9f1df4079
+ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27923163"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936350"
 ---
 # <a name="user-findmeetingtimes"></a>user: findMeetingTimes
-Sugerir horários de reunião e com base na disponibilidade do organizador e participante e restrições de tempo ou o local especificadas como parâmetros de locais.
+Localize as sugestões de hora da reunião com base no organizador e na disponibilidade dos participantes, assim como nas restrições de horário ou local especificadas como parâmetros.
 
 Se **findMeetingTimes** não retorna nenhuma sugestão de reunião, a resposta seria indicar um motivo na propriedade **emptySuggestionsReason**. Com base nesse valor, é possível ajustar melhor os parâmetros e a chamada **findMeetingTimes** novamente.
+
+O algoritmo usado para ilustrar horários de reunião e locais passa por ajuste fino de tempos em tempos. Cenários como ambientes de teste onde permanecem estáticos parâmetros de entrada e dados de calendário, espere que os resultados sugeridos sejam diferentes ao longo do tempo.
 
 
 ## <a name="permissions"></a>Permissões
@@ -53,9 +55,9 @@ Todos os parâmetros suportados estão listados abaixo. Dependendo do cenário, 
 |returnSuggestionReasons|Edm.Boolean|Especifique `True` para retornar um motivo para cada sugestão de reunião na propriedade **suggestionReason**. O padrão é `false` para não retornar essa propriedade. Opcional.|
 |timeConstraint|[timeConstraint](../resources/timeconstraint.md)|Qualquer restrição de tempo para uma reunião, o que pode incluir a natureza da reunião (propriedade **activityDomain**) e possíveis intervalos de tempo da reunião (propriedade **timeSlots**). **findMeetingTimes** pressupõe **activityDomain** como `work` se você não especificar este parâmetro. Opcional.|
 
-A tabela a seguir descreve as restrições de **activityDomain** , que você poderá ampliar a especificação no parâmetro **timeConstraint** .
+A tabela a seguir descreve as restrições **activityDomain** que você pode especificar ainda mais no parâmetro **timeConstraint**.
 
-|valor de activityDomain|Sugestões de horário para reuniões|
+|Valor activityDomain|Sugestões de horário para reuniões|
 |:-----|:-----|
 |trabalho| As sugestões são nas horas de trabalho do usuário que são definidas na configuração do calendário do usuário e podem ser personalizadas pelo usuário ou administrador. As horas de trabalho padrão são de segunda a sexta, das 8h às 17h, no fuso horário definido para a caixa de correio. Este é o valor padrão se nenhum **activityDomain** for especificado. |
 |pessoal| As sugestões são dentro das horas de trabalho do usuário, e sábado e domingo. O padrão é de segunda a sexta, das 8h às 17h, na configuração de fuso horário da caixa de correio.|
@@ -103,13 +105,14 @@ O exemplo a seguir mostra como encontrar um horário para reunir-se em um local 
 - **attendees**
 - **locationConstraint**
 - **timeConstraint**
+- **isOrganizerOptional**
 - **meetingDuration**
 - **returnSuggestionReasons**
 - **minimumAttendeePercentage**
 
 Definindo o parâmetro **returnSuggestionReasons**, você também obtém uma explicação na propriedade **suggestionReason** para cada sugestão, se **findMeetingTimes** retornar qualquer sugestão.
 
-Observe que a solicitação especifica o horário no fuso Horário Padrão do Pacífico e a resposta retorna as sugestões de horário da reunião em UTC, por padrão. Você pode usar o cabeçalho `Prefer: outlook.timezone` para especificar os valores de horário para o Horário Padrão do Pacífico na resposta.
+Observe que a solicitação especifica o tempo no fuso horário PST. Por padrão, a resposta retorna horário em sugestões UTC. Você pode usar o cabeçalho `Prefer: outlook.timezone` para especificar os valores de horário para o Horário Padrão do Pacífico na resposta.
 
 ##### <a name="request"></a>Solicitação
 Aqui está a solicitação de exemplo.
@@ -127,8 +130,8 @@ Content-Type: application/json
     { 
       "type": "required",  
       "emailAddress": { 
-        "name": "Samantha Booth",
-        "address": "samanthab@contoso.onmicrosoft.com" 
+        "name": "Alex Wilbur",
+        "address": "alexw@contoso.onmicrosoft.com" 
       } 
     }
   ],  
@@ -143,23 +146,24 @@ Content-Type: application/json
     ] 
   },  
   "timeConstraint": {
-    "activityDomain":"unrestricted", 
+    "activityDomain":"work", 
     "timeslots": [ 
       { 
         "start": { 
-          "dateTime": "2017-04-17T09:00:00",  
+          "dateTime": "2019-04-16T09:00:00",  
           "timeZone": "Pacific Standard Time" 
         },  
         "end": { 
-          "dateTime": "2017-04-19T17:00:00",  
+          "dateTime": "2019-04-18T17:00:00",  
           "timeZone": "Pacific Standard Time" 
         } 
       } 
     ] 
   },  
-  "meetingDuration": "PT2H",
-  "returnSuggestionReasons": true,
-  "minimumAttendeePercentage": 100.0
+  "isOrganizerOptional": "false",
+  "meetingDuration": "PT1H",
+  "returnSuggestionReasons": "true",
+  "minimumAttendeePercentage": "100"
 }
 ```
 
@@ -175,75 +179,167 @@ Aqui está uma resposta de exemplo. Observação: O objeto da resposta mostrado 
 HTTP/1.1 200 OK
 Content-type: application/json
 Preference-Applied: outlook.timezone="Pacific Standard Time"
-Content-Length: 976
 
 {
-    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.meetingTimeSuggestionsResult",
-    "emptySuggestionsReason":"",
-    "meetingTimeSuggestions":[
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.meetingTimeSuggestionsResult",
+    "emptySuggestionsReason": "",
+    "meetingTimeSuggestions": [
         {
-            "confidence":100.0,
-            "organizerAvailability":"free",
-            "suggestionReason":"Suggested because it is one of the nearest times when all attendees are available.",
-            "meetingTimeSlot":{
-                "start":{
-                    "dateTime":"2017-04-17T18:00:00.0000000",
-                    "timeZone":"Pacific Standard Time"
-                },
-                "end":{
-                    "dateTime":"2017-04-17T20:00:00.0000000",
-                    "timeZone":"Pacific Standard Time"
-                }
-            },
-            "attendeeAvailability":[
+            "confidence": 100,
+            "order": 1,
+            "organizerAvailability": "free",
+            "suggestionReason": "Suggested because it is one of the nearest times when all attendees are available.",
+            "attendeeAvailability": [
                 {
-                    "availability":"free",
-                    "attendee":{
-                        "type":"required",
-                        "emailAddress":{
-                            "address":"samanthab@contoso.onmicrosoft.com"
+                    "availability": "free",
+                    "attendee": {
+                        "emailAddress": {
+                            "address": "alexw@contoso.onmicrosoft.com"
                         }
                     }
                 }
             ],
-            "locations":[
+            "locations": [
                 {
-                    "displayName":"Conf room Hood"
+                    "displayName": "Conf room Hood"
                 }
-            ]
+            ],
+            "meetingTimeSlot": {
+                "start": {
+                    "dateTime": "2019-04-18T16:00:00.0000000",
+                    "timeZone": "Pacific Standard Time"
+                },
+                "end": {
+                    "dateTime": "2019-04-18T17:00:00.0000000",
+                    "timeZone": "Pacific Standard Time"
+                }
+            }
         },
         {
-            "confidence":100.0,
-            "organizerAvailability":"free",
-            "suggestionReason":"Suggested because it is one of the nearest times when all attendees are available.",
-            "meetingTimeSlot":{
-                "start":{
-                    "dateTime":"2017-04-17T20:00:00.0000000",
-                    "timeZone":"Pacific Standard Time"
-                },
-                "end":{
-                    "dateTime":"2017-04-17T22:00:00.0000000",
-                    "timeZone":"Pacific Standard Time"
-                }
-            },
-            "attendeeAvailability":[
+            "confidence": 100,
+            "order": 2,
+            "organizerAvailability": "free",
+            "suggestionReason": "Suggested because it is one of the nearest times when all attendees are available.",
+            "attendeeAvailability": [
                 {
-                    "availability":"free",
-                    "attendee":{
-                        "type":"required",
-                        "emailAddress":{
-                            "address":"samanthab@contoso.onmicrosoft.com"
+                    "availability": "free",
+                    "attendee": {
+                        "emailAddress": {
+                            "address": "alexw@contoso.onmicrosoft.com"
                         }
                     }
                 }
             ],
-            "locations":[
+            "locations": [
                 {
-                    "displayName":"Conf room Hood"
+                    "displayName": "Conf room Hood"
                 }
-            ]
+            ],
+            "meetingTimeSlot": {
+                "start": {
+                    "dateTime": "2019-04-18T08:00:00.0000000",
+                    "timeZone": "Pacific Standard Time"
+                },
+                "end": {
+                    "dateTime": "2019-04-18T09:00:00.0000000",
+                    "timeZone": "Pacific Standard Time"
+                }
+            }
+        },
+        {
+            "confidence": 100,
+            "order": 3,
+            "organizerAvailability": "tentative",
+            "suggestionReason": "Suggested because it is one of the nearest times when all attendees are available.",
+            "attendeeAvailability": [
+                {
+                    "availability": "free",
+                    "attendee": {
+                        "emailAddress": {
+                            "address": "alexw@contoso.onmicrosoft.com"
+                        }
+                    }
+                }
+            ],
+            "locations": [
+                {
+                    "displayName": "Conf room Hood"
+                }
+            ],
+            "meetingTimeSlot": {
+                "start": {
+                    "dateTime": "2019-04-18T15:00:00.0000000",
+                    "timeZone": "Pacific Standard Time"
+                },
+                "end": {
+                    "dateTime": "2019-04-18T16:00:00.0000000",
+                    "timeZone": "Pacific Standard Time"
+                }
+            }
+        },
+        {
+            "confidence": 100,
+            "order": 4,
+            "organizerAvailability": "tentative",
+            "suggestionReason": "Suggested because it is one of the nearest times when all attendees are available.",
+            "attendeeAvailability": [
+                {
+                    "availability": "free",
+                    "attendee": {
+                        "emailAddress": {
+                            "address": "alexw@contoso.onmicrosoft.com"
+                        }
+                    }
+                }
+            ],
+            "locations": [
+                {
+                    "displayName": "Conf room Hood"
+                }
+            ],
+            "meetingTimeSlot": {
+                "start": {
+                    "dateTime": "2019-04-18T09:00:00.0000000",
+                    "timeZone": "Pacific Standard Time"
+                },
+                "end": {
+                    "dateTime": "2019-04-18T10:00:00.0000000",
+                    "timeZone": "Pacific Standard Time"
+                }
+            }
+        },
+        {
+            "confidence": 100,
+            "order": 5,
+            "organizerAvailability": "tentative",
+            "suggestionReason": "Suggested because it is one of the nearest times when all attendees are available.",
+            "attendeeAvailability": [
+                {
+                    "availability": "free",
+                    "attendee": {
+                        "emailAddress": {
+                            "address": "alexw@contoso.onmicrosoft.com"
+                        }
+                    }
+                }
+            ],
+            "locations": [
+                {
+                    "displayName": "Conf room Hood"
+                }
+            ],
+            "meetingTimeSlot": {
+                "start": {
+                    "dateTime": "2019-04-18T12:00:00.0000000",
+                    "timeZone": "Pacific Standard Time"
+                },
+                "end": {
+                    "dateTime": "2019-04-18T13:00:00.0000000",
+                    "timeZone": "Pacific Standard Time"
+                }
+            }
         }
-   ]
+    ]
 }
 ```
 
@@ -256,7 +352,9 @@ Content-Length: 976
   "section": "documentation",
   "suppressions": [
       "Warning: /api-reference/v1.0/api/user-findmeetingtimes.md:
-      Failed to parse any rows out of table with headers: |activityDomain value|Suggestions for meeting times|"
+      Failed to parse any rows out of table with headers: |activityDomain value|Suggestions for meeting times|",
+      "Error: user_findmeetingtimes/meetingTimeSuggestions/member/confidence:\r\n
+      Expected type Float but actual was Int64. Property: confidence, actual value: '100'"
   ],
   "tocPath": ""
 }-->

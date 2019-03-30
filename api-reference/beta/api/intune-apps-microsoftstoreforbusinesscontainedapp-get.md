@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto microsoftStoreForBus
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9a5c9e9c3a27f96e61eea227911e06c75592c906
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 2919b1d22e49dadb22f8571c680b5acf4732efd0
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30151741"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30977391"
 ---
 # <a name="get-microsoftstoreforbusinesscontainedapp"></a>Obter microsoftStoreForBusinessContainedApp
 
@@ -20,7 +20,7 @@ ms.locfileid: "30151741"
 Leia as propriedades e as relações do objeto [microsoftStoreForBusinessContainedApp](../resources/intune-apps-microsoftstoreforbusinesscontainedapp.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

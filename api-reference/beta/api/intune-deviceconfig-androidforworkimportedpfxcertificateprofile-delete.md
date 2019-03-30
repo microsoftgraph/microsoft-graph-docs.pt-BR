@@ -4,12 +4,12 @@ description: Exclui androidForWorkImportedPFXCertificateProfile.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7c8cb177e322d4d3f2ce9a1b51717f19d7617f08
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ef4c11e622fb8399cc835ae6d1aae3d2b5a45f24
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30167750"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30979428"
 ---
 # <a name="delete-androidforworkimportedpfxcertificateprofile"></a>Excluir androidForWorkImportedPFXCertificateProfile
 
@@ -20,7 +20,7 @@ ms.locfileid: "30167750"
 Exclui [androidForWorkImportedPFXCertificateProfile](../resources/intune-deviceconfig-androidforworkimportedpfxcertificateprofile.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

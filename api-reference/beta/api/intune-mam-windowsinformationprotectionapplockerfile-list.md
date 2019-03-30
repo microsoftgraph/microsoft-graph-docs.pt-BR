@@ -4,12 +4,12 @@ description: Listar propriedades e relações de objetos de windowsInformationPr
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e398b2e753e6b249166cf73bcb363b49b1fb9032
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 2e85388b8ed9e219bc5f2dbd8231e14f3a23254b
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30142935"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30985484"
 ---
 # <a name="list-windowsinformationprotectionapplockerfiles"></a>Listar windowsInformationProtectionAppLockerFiles
 
@@ -20,7 +20,7 @@ ms.locfileid: "30142935"
 Listar propriedades e relações de objetos de [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

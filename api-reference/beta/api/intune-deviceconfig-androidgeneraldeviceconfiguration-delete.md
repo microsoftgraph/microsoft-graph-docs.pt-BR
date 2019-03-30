@@ -4,12 +4,12 @@ description: Exclui androidGeneralDeviceConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e0182da862a2c7a6f421076590680f951508149a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 83fa83a9be670c3de6a15b747c03c9668de83fe6
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30159126"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30985925"
 ---
 # <a name="delete-androidgeneraldeviceconfiguration"></a>Excluir androidGeneralDeviceConfiguration
 
@@ -20,7 +20,7 @@ ms.locfileid: "30159126"
 Exclui [androidGeneralDeviceConfiguration](../resources/intune-deviceconfig-androidgeneraldeviceconfiguration.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto deviceCompliancePoli
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5ea0f64ea36486ade5ecf3f95b14b5c652b54d3e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: bb1a670a5bad56be70e7fcdf825593bede032038
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30173035"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30985491"
 ---
 # <a name="get-devicecompliancepolicydevicestatesummary"></a>Acessar deviceCompliancePolicyDeviceStateSummary
 
@@ -20,7 +20,7 @@ ms.locfileid: "30173035"
 Leia as propriedades e as relações do objeto [deviceCompliancePolicyDeviceStateSummary](../resources/intune-deviceconfig-devicecompliancepolicydevicestatesummary.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

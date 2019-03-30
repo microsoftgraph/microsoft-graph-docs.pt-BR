@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto groupPolicyPresentation.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 21f61b89f215f0440b27dbccae48e223ff6029c4
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 44da489c3cdf124b434ba35d52d39d63dba54209
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30175084"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30986975"
 ---
 # <a name="update-grouppolicypresentation"></a>Atualizar groupPolicyPresentation
 
@@ -20,7 +20,7 @@ ms.locfileid: "30175084"
 Atualiza as propriedades de um objeto [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -52,7 +52,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [groupPo
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |rótulo|String|Rótulo de texto localizado para qualquer entidade de apresentação. O valor padrão é vazio.|
-|id|Cadeia de caracteres|Chave da entidade.|
+|id|String|Chave da entidade.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez.|
 
 

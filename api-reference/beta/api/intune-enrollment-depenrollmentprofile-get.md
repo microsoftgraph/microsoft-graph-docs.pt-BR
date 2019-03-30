@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto depEnrollmentProfile
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 18dcb925c3185a2cb772080138347c6e8cc92d2a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 18d533a7713a431dd07231968c126a45b94a7da2
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30174703"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30965372"
 ---
 # <a name="get-depenrollmentprofile"></a>Obter depEnrollmentProfile
 
@@ -20,7 +20,7 @@ ms.locfileid: "30174703"
 Leia as propriedades e as relações do objeto [depEnrollmentProfile](../resources/intune-enrollment-depenrollmentprofile.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
