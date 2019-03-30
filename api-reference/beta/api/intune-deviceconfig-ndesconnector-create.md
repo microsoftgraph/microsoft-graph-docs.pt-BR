@@ -4,31 +4,31 @@ description: Criar um novo objeto ndesConnector.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 09988408e3b49490e66ed49c47e2696c8b0ad66c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 33d3d832df9e14692316b9b12132c531a2b610d3
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30158083"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30986177"
 ---
-# <a name="create-ndesconnector"></a><span data-ttu-id="1f2ca-103">Criar ndesConnector</span><span class="sxs-lookup"><span data-stu-id="1f2ca-103">Create ndesConnector</span></span>
+# <a name="create-ndesconnector"></a><span data-ttu-id="34d86-103">Criar ndesConnector</span><span class="sxs-lookup"><span data-stu-id="34d86-103">Create ndesConnector</span></span>
 
-> <span data-ttu-id="1f2ca-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="1f2ca-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="34d86-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="34d86-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="1f2ca-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="1f2ca-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="34d86-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="34d86-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="1f2ca-106">Criar um novo objeto [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) .</span><span class="sxs-lookup"><span data-stu-id="1f2ca-106">Create a new [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) object.</span></span>
+<span data-ttu-id="34d86-106">Criar um novo objeto [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) .</span><span class="sxs-lookup"><span data-stu-id="34d86-106">Create a new [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="1f2ca-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="1f2ca-107">Prerequisites</span></span>
-<span data-ttu-id="1f2ca-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="1f2ca-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="34d86-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="34d86-107">Prerequisites</span></span>
+<span data-ttu-id="34d86-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="34d86-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1f2ca-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="1f2ca-110">Permission type</span></span>|<span data-ttu-id="1f2ca-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="1f2ca-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="34d86-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="34d86-110">Permission type</span></span>|<span data-ttu-id="34d86-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="34d86-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="1f2ca-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="1f2ca-112">Delegated (work or school account)</span></span>|<span data-ttu-id="1f2ca-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1f2ca-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="1f2ca-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="1f2ca-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="1f2ca-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="1f2ca-115">Not supported.</span></span>|
-|<span data-ttu-id="1f2ca-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="1f2ca-116">Application</span></span>|<span data-ttu-id="1f2ca-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="1f2ca-117">Not supported.</span></span>|
+|<span data-ttu-id="34d86-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="34d86-112">Delegated (work or school account)</span></span>|<span data-ttu-id="34d86-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="34d86-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="34d86-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="34d86-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="34d86-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="34d86-115">Not supported.</span></span>|
+|<span data-ttu-id="34d86-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="34d86-116">Application</span></span>|<span data-ttu-id="34d86-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="34d86-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="1f2ca-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="1f2ca-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="34d86-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="34d86-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,33 +37,33 @@ ms.locfileid: "30158083"
 POST /deviceManagement/ndesConnectors
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="1f2ca-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="1f2ca-119">Request headers</span></span>
-|<span data-ttu-id="1f2ca-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="1f2ca-120">Header</span></span>|<span data-ttu-id="1f2ca-121">Valor</span><span class="sxs-lookup"><span data-stu-id="1f2ca-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="34d86-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="34d86-119">Request headers</span></span>
+|<span data-ttu-id="34d86-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="34d86-120">Header</span></span>|<span data-ttu-id="34d86-121">Valor</span><span class="sxs-lookup"><span data-stu-id="34d86-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="1f2ca-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="1f2ca-122">Authorization</span></span>|<span data-ttu-id="1f2ca-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="1f2ca-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="1f2ca-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="1f2ca-124">Accept</span></span>|<span data-ttu-id="1f2ca-125">application/json</span><span class="sxs-lookup"><span data-stu-id="1f2ca-125">application/json</span></span>|
+|<span data-ttu-id="34d86-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="34d86-122">Authorization</span></span>|<span data-ttu-id="34d86-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="34d86-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="34d86-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="34d86-124">Accept</span></span>|<span data-ttu-id="34d86-125">application/json</span><span class="sxs-lookup"><span data-stu-id="34d86-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="1f2ca-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="1f2ca-126">Request body</span></span>
-<span data-ttu-id="1f2ca-127">No corpo da solicitação, forneça uma representação JSON do objeto ndesConnector.</span><span class="sxs-lookup"><span data-stu-id="1f2ca-127">In the request body, supply a JSON representation for the ndesConnector object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="34d86-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="34d86-126">Request body</span></span>
+<span data-ttu-id="34d86-127">No corpo da solicitação, forneça uma representação JSON do objeto ndesConnector.</span><span class="sxs-lookup"><span data-stu-id="34d86-127">In the request body, supply a JSON representation for the ndesConnector object.</span></span>
 
-<span data-ttu-id="1f2ca-128">A tabela a seguir mostra as propriedades que são necessárias ao criar ndesConnector.</span><span class="sxs-lookup"><span data-stu-id="1f2ca-128">The following table shows the properties that are required when you create the ndesConnector.</span></span>
+<span data-ttu-id="34d86-128">A tabela a seguir mostra as propriedades que são necessárias ao criar ndesConnector.</span><span class="sxs-lookup"><span data-stu-id="34d86-128">The following table shows the properties that are required when you create the ndesConnector.</span></span>
 
-|<span data-ttu-id="1f2ca-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="1f2ca-129">Property</span></span>|<span data-ttu-id="1f2ca-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="1f2ca-130">Type</span></span>|<span data-ttu-id="1f2ca-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="1f2ca-131">Description</span></span>|
+|<span data-ttu-id="34d86-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="34d86-129">Property</span></span>|<span data-ttu-id="34d86-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="34d86-130">Type</span></span>|<span data-ttu-id="34d86-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="34d86-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="1f2ca-132">id</span><span class="sxs-lookup"><span data-stu-id="1f2ca-132">id</span></span>|<span data-ttu-id="1f2ca-133">String</span><span class="sxs-lookup"><span data-stu-id="1f2ca-133">String</span></span>|<span data-ttu-id="1f2ca-134">A chave do conector NDES.</span><span class="sxs-lookup"><span data-stu-id="1f2ca-134">The key of the NDES Connector.</span></span>|
-|<span data-ttu-id="1f2ca-135">lastConnectionDateTime</span><span class="sxs-lookup"><span data-stu-id="1f2ca-135">lastConnectionDateTime</span></span>|<span data-ttu-id="1f2ca-136">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="1f2ca-136">DateTimeOffset</span></span>|<span data-ttu-id="1f2ca-137">Hora da última conexão para o conector NDES</span><span class="sxs-lookup"><span data-stu-id="1f2ca-137">Last connection time for the Ndes Connector</span></span>|
-|<span data-ttu-id="1f2ca-138">state</span><span class="sxs-lookup"><span data-stu-id="1f2ca-138">state</span></span>|[<span data-ttu-id="1f2ca-139">ndesConnectorState</span><span class="sxs-lookup"><span data-stu-id="1f2ca-139">ndesConnectorState</span></span>](../resources/intune-deviceconfig-ndesconnectorstate.md)|<span data-ttu-id="1f2ca-140">Status do conector NDES.</span><span class="sxs-lookup"><span data-stu-id="1f2ca-140">Ndes Connector Status.</span></span> <span data-ttu-id="1f2ca-141">Os valores possíveis são: `none`, `active`, `inactive`.</span><span class="sxs-lookup"><span data-stu-id="1f2ca-141">Possible values are: `none`, `active`, `inactive`.</span></span>|
-|<span data-ttu-id="1f2ca-142">displayName</span><span class="sxs-lookup"><span data-stu-id="1f2ca-142">displayName</span></span>|<span data-ttu-id="1f2ca-143">String</span><span class="sxs-lookup"><span data-stu-id="1f2ca-143">String</span></span>|<span data-ttu-id="1f2ca-144">O nome amigável do conector NDES.</span><span class="sxs-lookup"><span data-stu-id="1f2ca-144">The friendly name of the Ndes Connector.</span></span>|
+|<span data-ttu-id="34d86-132">id</span><span class="sxs-lookup"><span data-stu-id="34d86-132">id</span></span>|<span data-ttu-id="34d86-133">String</span><span class="sxs-lookup"><span data-stu-id="34d86-133">String</span></span>|<span data-ttu-id="34d86-134">A chave do conector NDES.</span><span class="sxs-lookup"><span data-stu-id="34d86-134">The key of the NDES Connector.</span></span>|
+|<span data-ttu-id="34d86-135">lastConnectionDateTime</span><span class="sxs-lookup"><span data-stu-id="34d86-135">lastConnectionDateTime</span></span>|<span data-ttu-id="34d86-136">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="34d86-136">DateTimeOffset</span></span>|<span data-ttu-id="34d86-137">Hora da última conexão para o conector NDES</span><span class="sxs-lookup"><span data-stu-id="34d86-137">Last connection time for the Ndes Connector</span></span>|
+|<span data-ttu-id="34d86-138">state</span><span class="sxs-lookup"><span data-stu-id="34d86-138">state</span></span>|[<span data-ttu-id="34d86-139">ndesConnectorState</span><span class="sxs-lookup"><span data-stu-id="34d86-139">ndesConnectorState</span></span>](../resources/intune-deviceconfig-ndesconnectorstate.md)|<span data-ttu-id="34d86-140">Status do conector NDES.</span><span class="sxs-lookup"><span data-stu-id="34d86-140">Ndes Connector Status.</span></span> <span data-ttu-id="34d86-141">Os valores possíveis são: `none`, `active`, `inactive`.</span><span class="sxs-lookup"><span data-stu-id="34d86-141">Possible values are: `none`, `active`, `inactive`.</span></span>|
+|<span data-ttu-id="34d86-142">displayName</span><span class="sxs-lookup"><span data-stu-id="34d86-142">displayName</span></span>|<span data-ttu-id="34d86-143">String</span><span class="sxs-lookup"><span data-stu-id="34d86-143">String</span></span>|<span data-ttu-id="34d86-144">O nome amigável do conector NDES.</span><span class="sxs-lookup"><span data-stu-id="34d86-144">The friendly name of the Ndes Connector.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="1f2ca-145">Resposta</span><span class="sxs-lookup"><span data-stu-id="1f2ca-145">Response</span></span>
-<span data-ttu-id="1f2ca-146">Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="1f2ca-146">If successful, this method returns a `201 Created` response code and a [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="34d86-145">Resposta</span><span class="sxs-lookup"><span data-stu-id="34d86-145">Response</span></span>
+<span data-ttu-id="34d86-146">Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="34d86-146">If successful, this method returns a `201 Created` response code and a [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1f2ca-147">Exemplo</span><span class="sxs-lookup"><span data-stu-id="1f2ca-147">Example</span></span>
+## <a name="example"></a><span data-ttu-id="34d86-147">Exemplo</span><span class="sxs-lookup"><span data-stu-id="34d86-147">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="1f2ca-148">Solicitação</span><span class="sxs-lookup"><span data-stu-id="1f2ca-148">Request</span></span>
-<span data-ttu-id="1f2ca-149">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="1f2ca-149">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="34d86-148">Solicitação</span><span class="sxs-lookup"><span data-stu-id="34d86-148">Request</span></span>
+<span data-ttu-id="34d86-149">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="34d86-149">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/ndesConnectors
 Content-type: application/json
@@ -77,8 +77,8 @@ Content-length: 183
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="1f2ca-150">Resposta</span><span class="sxs-lookup"><span data-stu-id="1f2ca-150">Response</span></span>
-<span data-ttu-id="1f2ca-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="1f2ca-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="34d86-150">Resposta</span><span class="sxs-lookup"><span data-stu-id="34d86-150">Response</span></span>
+<span data-ttu-id="34d86-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="34d86-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
