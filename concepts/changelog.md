@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 8dce60410efda7f8ea5ad15fe462b447b5c11eb5
-ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
+ms.openlocfilehash: a2cd90fdd20e8039b7cc32ccbeae8769074febf3
+ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30869229"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936364"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -33,8 +33,12 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | Adição        | Beta          | Adicionadas APIs financeiras para o Dynamics 365 Business Central. Para saber mais, confira o [Referência da API de finanças](/graph/api/resources/dynamics-graph-reference?view=graph-rest-v1.0).|
 
 ### <a name="education-apis"></a>APIs de educação
-
-| Adição | beta | Adicionar o novo recurso de [educationCategory](/graph/api/resources/educationCategory?view=graph-rest-beta).| | Adição | beta | Adicionar as APIs para gerenciar recursos de [educationCategory](/graph/api/resources/educationCategory?view=graph-rest-beta) no [educationClass](/graph/api/resources/educationClass?view=graph-rest-beta) e [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta).| | Adição | beta | Adicionar o novo recurso de [educationFormResource](/graph/api/resources/educationFormResource?view=graph-rest-beta).| | Adicionar a propriedade do **recipients** no recurso de [educationAssignmentIndividualRecipient](/graph/api/resources/educationAssignmentIndividualRecipient?view=graph-rest-beta).|
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | beta | Adicionar o novo recurso [educationCategory](/graph/api/resources/educationCategory?view=graph-rest-beta).|
+| Adição | beta | Adicionar APIs para gerenciar os recursos do [educationCategory](/graph/api/resources/educationCategory?view=graph-rest-beta) no[educationClass](/graph/api/resources/educationClass?view=graph-rest-beta) e [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta).|
+| Adição | beta | Adicionar o novo recurso[educationFormResource](/graph/api/resources/educationFormResource?view=graph-rest-beta).|
+| Adição | beta | Adicionar a propriedade**destinatários** no recurso[educationAssignmentIndividualRecipient](/graph/api/resources/educationAssignmentIndividualRecipient?view=graph-rest-beta).|
 
 ### <a name="microsoft-intune-apis"></a>APIs do Microsoft Intune
 |Tipo de alteração|Versão|Descrição|
@@ -84,10 +88,17 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | Adição        | Beta        | Foi adicionada a propriedade **password** ao tipo de cadeia de caracteres [driveItem_invite](/graph/api/resources/driveItem_invite?view=graph-rest-beta). |
 
 ### <a name="outlook-calendar"></a>Calendário do Outlook
-
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição | v1.0 | Os tipos complexos [getSchedule](/graph/api/calendar-getschedule?view=graph-rest-1.0) ação e o [freeBusyError](/graph/api/resources/freebusyerror?view=graph-rest-1.0), [scheduleInformation](/graph/api/resources/scheduleinformation?view=graph-rest-1.0), e [scheduleItem](/graph/api/resources/scheduleitem?view=graph-rest-1.0) foram adicionados para oferecer suporte [obter informações de disponibilidade, informações de disponibilidade para listas de distribuição, usuários e recursos em um determinado período de tempo](outlook-get-free-busy-schedule.md). |
+|Adição | v1.0 | Os tipos complexos [getSchedule](/graph/api/calendar-getschedule?view=graph-rest-1.0) ação e o [freeBusyError](/graph/api/resources/freebusyerror?view=graph-rest-1.0), [scheduleInformation](/graph/api/resources/scheduleinformation?view=graph-rest-1.0), e [scheduleItem](/graph/api/resources/scheduleitem?view=graph-rest-1.0) foram adicionados para oferecer suporte [obter informações de disponibilidade, informações de disponibilidade para listas de distribuição, usuários e recursos em um determinado período de tempo](outlook-get-free-busy-schedule.md). |
+|Alteração | Beta | Revertida os tipos de alterações relacionadas à [findMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-beta) documentados [fevereiro de 2019](#february-2019). Os downloads específicos estão listados na tabela a seguir.|
+|Alteração | Beta | Foi alterado o tipo de dados dos seguintes parâmetros de [findMeetingTimes](/graph/api/user-findmeetingtimes?view=graph-rest-beta): <br>**participantes**: de **attendeeDataModel** para [attendeeBase](/graph/api/resources/attendeebase?view=graph-rest-beta) <br>**locationConstraint**: de **locationConstraints** para o[locationConstraint](/graph/api/resources/locationconstraint?view=graph-rest-beta) <br> **timeConstraint**: de **findMeetingTimesTimeConstraints** para o [timeConstraint](/graph/api/resources/timeconstraint?view=graph-rest-beta)|
+|Alteração | Beta | Foi alterado o tipo de retorno de **findMeetingTimes** de **findMeetingTimesResponse** para [meetingTimeSuggestionsResult](/graph/api/resources/meetingTimeSuggestionsResult?view=graph-rest-beta) |
+|Alteração | Beta | Foi alterado o tipo de base de [locationConstraintItem](/graph/api/resources/locationconstraintitem?view=graph-rest-beta) de **locationDataModel** para [location](/graph/api/resources/location?view=graph-rest-beta) |
+|Alteração | Beta | Foram alterados os tipos de dados das seguintes propriedades de [meetingTimeSuggestion](/graph/api/resources/meetingtimesuggestion?view=graph-rest-beta): <br> **attendeeAvailability**: do conjunto de **attendeeAvailabilityDataModel** para a coleção de [attendeeAvailability](/graph/api/resources/attendeeavailability?view=graph-rest-beta) <br> **locations**: do conjunto de **locationDataModel** para coleção de [location](/graph/api/resources/location?view=graph-rest-beta) <br> **meetingTimeSlot**: de**meetingTimeSlotDataModel** para o [timeSlot](/graph/api/resources/timeslot?view=graph-rest-beta) <br> **organizerAvailability**: de **availabilityStatus** para o **freeBusyStatus** |
+|Exclusão | Beta | Tipos complexos: <br> **attendeeAvailabilityDataModel** <br> **attendeeDataModel** <br> **findMeetingTimesResponse** <br> **findMeetingTimesTimeConstraints** <br> **locationConstraints** <br> **meetingTimeSlotDataModel** <br> **searchWindowTimeSlot**|
+|Exclusão | Beta | Enumerações: <br> **addressType** <br> **availabilityStatus** |
+|Adição | Beta | Foram removidos os seguintes tipos complexos: <br> [attendeeAvailability](/graph/api/resources/attendeeavailability?view=graph-rest-beta) <br> [locationConstraint](/graph/api/resources/locationconstraint?view=graph-rest-beta) <br> [meetingTimeSuggestionsResult](/graph/api/resources/meetingtimesuggestionsresult?view=graph-rest-beta) <br>[timeConstraint](/graph/api/resources/timeconstraint?view=graph-rest-beta) |
 
 
 ## <a name="february-2019"></a>Fevereiro de 2019
@@ -102,6 +113,12 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | Alteração | beta | O tipo [targetResource](/graph/api/resources/targetresource?view=graph-rest-beta) agora inclui propriedades disponíveis anteriormente para tipos derivados que não são mais compatíveis. |
 | Exclusão | beta | Os seguintes tipos de derivadas não são mais compatíveis e foram removidos: **targetResourceDevice**, **targetResourceDirectory**, **targetResourceGroup**, **targetResourcePolicy**, **targetResourceRole**, **targetResourceServicePrincipal**, **targetResourceUser** e **targetResourceOther**. |
 | Adição |beta | Adicionar as propriedades **passwordNotificationWindowInDays** e **passwordValidityPeriodInDays** no recurso [domain](/graph/api/resources/domain?view=graph-rest-beta).|
+
+### <a name="dynamics-365-business-central-api"></a>API Central do Dynamics 365 Business
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição        | Beta          | Adicionadas APIs financeiras para o Dynamics 365 Business Central. Para saber mais, confira o [Referência da API de finanças](/graph/api/resources/dynamics-graph-reference?view=graph-rest-v1.0).|
 
 ### <a name="education-apis"></a>APIs de educação
 
@@ -141,6 +158,13 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 |Adição |beta| Introdução da API [Responder a uma mensagem em um canal](/graph/api/channel-post-messagereply?view=graph-rest-beta). |
 |Exclusão |beta| Remoção da API POST /teams/{id}/channels/{id}/chatThreads. Em lugar dela, use [Criar uma mensagem em um canal](/graph/api/channel-post-chatmessage?view=graph-rest-beta). |
 |Adição |beta | Foi adicionado suporte para permissões do aplicativo para o recurso [installedApps](/graph/api/resources/teamsappinstallation?view=graph-rest-beta).|
+
+### <a name="onedrive-and-sharepoint-apis"></a>APIs do OneDrive e SharePoint
+
+| **Tipo de alteração** | **Versão** | **Descrição**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Adição        | Beta        | Foi adicionada a propriedade **expirationDateTime** ao tipo DatetimeOffset [driveItem_invite](/graph/api/resources/driveItem_invite?view=graph-rest-beta). |
+| Adição        | Beta        | Foi adicionada a propriedade **password** ao tipo de cadeia de caracteres [driveItem_invite](/graph/api/resources/driveItem_invite?view=graph-rest-beta). |
 
 ### <a name="onenote"></a>OneNote
 
