@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: a2cd90fdd20e8039b7cc32ccbeae8769074febf3
-ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
+ms.openlocfilehash: d1281b954ce02e239b7b03ec4b5b460577506c41
+ms.sourcegitcommit: fd9f62fd9a6d311f98afe2e31afca8b818c402c2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936364"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31003759"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -17,6 +17,13 @@ Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as 
 Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em [problemas conhecidos](known-issues.md).
 
 ## <a name="march-2019"></a>Março de 2019
+### <a name="risky-users-api"></a>Usuários arriscados API
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Adição |beta| Introduziu o método [Confirmar riskyUsers comprometidos](/graph/api/resources/riskyusers-confirmcompromised?view=graph-rest-beta) que permite que os administradores confirmem os usuários como comprometidos na Proteção de Identidade do Azure AD. |
+|Adição |beta| Introduziu o método [Ignorar riskyUsers](/graph/api/resources/riskyusers-dismiss?view=graph-rest-beta), o qual permite que os administradores ignorem os usuários marcados como arriscados na Proteção de Identidade do Azure AD. |
+|Adição |beta| Introduziu a propriedade **isProcessing** ao recurso [riskyUsers](/graph/api/resources/riskyuser?view=graph-rest-beta). |
 
 ### <a name="directory-apis"></a>APIs de diretório
 
@@ -2964,7 +2971,7 @@ Suporte adicionado para a associação de grupo dinâmico através de visualiza�
 
 ### <a name="calendar"></a>Calendário
 
-| **Tipo de alteração** | **Versão** | **Descrição**                          |
+| **Tipo de alteração** | **Version** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Adição        | Beta        | As propriedades _singleValueExtendedProperties_ e _multiValueExtendedProperties_ foram adicionadas. |
 | Adição        | Beta        | A propriedade _suggestionHint_ foi adicionada a _meetingTimeCandidate_. |
