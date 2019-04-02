@@ -7266,6 +7266,10 @@ items:
                     href: api/riskyusers-list.md
                   - name: Obter
                     href: api/riskyusers-get.md
+                  - name: Confirmar comprometimento
+                    href: api/riskyusers-confirmcompromised.md
+                  - name: Ignorar
+                    href: api/riskyusers-dismiss.md
           - name: Provedor de identidade
             href: resources/identityprovider.md
             items:
