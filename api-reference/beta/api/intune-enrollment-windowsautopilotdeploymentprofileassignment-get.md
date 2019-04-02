@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto windowsAutopilotDepl
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eb1894dc727ab8a38ca09a5acdc10a23ad4e0c49
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 56d0979f64711024986e2230cefab3186f00f7f8
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30150222"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30961165"
 ---
 # <a name="get-windowsautopilotdeploymentprofileassignment"></a>Obter windowsAutopilotDeploymentProfileAssignment
 
@@ -20,7 +20,7 @@ ms.locfileid: "30150222"
 Leia as propriedades e as relações do objeto [windowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

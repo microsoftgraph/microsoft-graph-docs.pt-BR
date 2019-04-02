@@ -1,26 +1,26 @@
 ---
 title: Listar contatos
-description: Obtenha os contatos na caixa de correio do usuário.
+description: Obter contatos na caixa de correio do usuário.
 localization_priority: Normal
-author: dkershaw10
+author: angelgolfer-ms
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8c444a818b933196ddc46ae0d12d64355656bd7f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: a1eaeac682f511bf9b895e06e6a19b3bc728a38c
+ms.sourcegitcommit: e6168b868660ad0078d460424d4e6f987d2684a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510908"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31026007"
 ---
 # <a name="list-contacts"></a>Listar contatos
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha os contatos na caixa de correio do usuário.
+Obter contatos na caixa de correio do usuário.
 
-Há dois cenários onde um aplicativo pode obter contatos na pasta de contatos de outro usuário:
+Há dois cenários em que um aplicativo pode obter contatos na pasta de contatos de outro usuário:
 
-* Se o aplicativo tem permissões de aplicativo, ou,
-* Se o aplicativo tiver apropriada [permissões](#permissions) delegadas de um usuário, e outro usuário compartilhou uma pasta de contato com que o usuário ou, tem acesso delegado a esse usuário. Consulte os [detalhes e um exemplo](/graph/outlook-get-shared-contacts-folders).
+* Se o aplicativo tem permissões de aplicativo ou
+* Se o aplicativo tiver as [permissões](#permissions) delegadas apropriadas de um usuário, e outro usuário tiver compartilhado uma pasta de contatos com esse usuário, ou, o terá acesso delegado a esse usuário. Confira os [detalhes e um exemplo](/graph/outlook-get-shared-contacts-folders).
 
 
 ## <a name="permissions"></a>Permissões
@@ -53,16 +53,16 @@ GET /me/contactFolder/{id}/childFolders/{id}/.../contacts
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Você pode usar o `$filter` parâmetro de consulta para contatos de filtro com base em seus endereços de email:
+Você pode usar o `$filter` parâmetro de consulta para filtrar os contatos com base em seus endereços de email:
 
 <!-- { "blockType": "ignored" } -->
 ``` http
 GET https://graph.microsoft.com/beta/me/contacts?$filter=emailAddresses/any(a:a/address eq 'garth@contoso.com')
 ```
 
-Observe que você pode usar `$filter`, `any`e o `eq` operador somente à propriedade sub-recursos do **endereço** do instâncias em um conjunto de **emailAddresses** . Ou seja, é possível filtrar o **nome** ou qualquer outra propriedade sub-recurso de uma instância de **emailAddresses**, nem você pode aplicar o operador any ou funcionar com `filter`, tais como `ne`, `le`, e `startswith()`.
+Observe que você pode usar `$filter`, `any`e o `eq` operador somente na subpropriedade **Address** de instâncias em uma coleção EmailAddresses **** . Ou seja, você não pode filtrar o **nome** ou qualquer outra subpropriedade de uma instância de **EmailAddresses**, nem pode aplicar qualquer outro operador ou função com `filter`, como `ne`, `le`e. `startswith()`
 
-Para obter informações gerais sobre o `$filter` consulta parâmetro, consulte [parâmetros de consulta OData](/graph/query-parameters).
+Para obter informações gerais sobre `$filter` o parâmetro de consulta, confira [parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
@@ -74,10 +74,10 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e a coleção de objetos de [contato](../resources/contact.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e uma coleção de objetos [Contact](../resources/contact.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-O exemplo a seguir obtém as propriedades **displayName** e **emailAddresses** de contatos do usuário conectado.
+O exemplo a seguir obtém as propriedades **DisplayName** e **EmailAddresses** dos contatos do usuário conectado.
 <!-- {
   "blockType": "request",
   "name": "get_contacts"
