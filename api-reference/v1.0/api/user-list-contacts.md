@@ -1,27 +1,27 @@
 ---
 title: Listar contatos
-description: Obter uma coleção de contato da pasta padrão Contatos do usuário conectado.
-author: dkershaw10
+description: Obter uma coleção de contatos da pasta padrão de contatos do usuário conectado.
+author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3f0f7fd86987e3d2923d8ea81a8ca7fbf87900b1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 3c648e753c3959d3b22072edbd4b796d0f8c154b
+ms.sourcegitcommit: e6168b868660ad0078d460424d4e6f987d2684a8
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27984133"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31026021"
 ---
 # <a name="list-contacts"></a>Listar contatos
 
-Obter uma coleção de contato da pasta padrão Contatos do usuário conectado.
+Obter uma coleção de contatos da pasta padrão de contatos do usuário conectado.
 
-Há dois cenários onde um aplicativo pode obter contatos na pasta de contatos de outro usuário:
+Há duas situações em que um aplicativo pode obter contatos na pasta de contatos de outro usuário:
 
-* Se o aplicativo tem permissões de aplicativo, ou,
-* Se o aplicativo tiver apropriada [permissões](#permissions) delegadas de um usuário, e outro usuário compartilhou uma pasta de contato com que o usuário ou, tem acesso delegado a esse usuário. Consulte os [detalhes e um exemplo](/graph/outlook-get-shared-contacts-folders).
+* Se o aplicativo tiver permissões de aplicativo ou
+* Se o aplicativo tiver as [permissões](#permissions) delegadas apropriadas de um usuário, e outro usuário tiver compartilhado uma pasta de contatos com esse usuário, ou tiver concedido acesso delegado a esse usuário. Confira [detalhes e um exemplo](/graph/outlook-get-shared-contacts-folders).
 
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -51,16 +51,16 @@ GET /me/contactFolder/{id}/childFolders/{id}/.../contacts
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Você pode usar o `$filter` parâmetro de consulta para contatos de filtro com base em seus endereços de email:
+Você pode usar o `$filter`parâmetro de consulta para filtrar contatos com base em seus endereços de email:
 
 <!-- { "blockType": "ignored" } -->
 ``` http
 GET https://graph.microsoft.com/v1.0/me/contacts?$filter=emailAddresses/any(a:a/address eq 'garth@contoso.com')
 ```
 
-Observe que você pode usar `$filter`, `any`e o `eq` operador somente à propriedade sub-recursos do **endereço** do instâncias em um conjunto de **emailAddresses** . Ou seja, é possível filtrar o **nome** ou qualquer outra propriedade sub-recurso de uma instância de **emailAddresses**, nem você pode aplicar o operador any ou funcionar com `filter`, tais como `ne`, `le`, e `startswith()`.
+Observe que você pode usar `$filter`, `any`, e o `eq` operador apenas na subpropriedade de **endereço** das instâncias em uma coleção **emailAddresses**. Ou seja, você não pode filtrar o **nome** ou qualquer outra subpropriedade de uma instância de **emailAddresses**, nem pode aplicar qualquer outro operador ou função com `filter`, como `ne`, `le` e `startswith()`.
 
-Para obter informações gerais sobre o `$filter` consulta parâmetro, consulte [parâmetros de consulta OData](/graph/query-parameters).
+Para obter informações gerais sobre o `$filter`parâmetro de consulta, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 
 
