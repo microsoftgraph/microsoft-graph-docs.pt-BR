@@ -4,66 +4,74 @@ description: Representa usuários do Azure AD que estão em risco. O Azure AD av
 author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3265ea40903ca2c5c10272f5df280bd3715af366
-ms.sourcegitcommit: fd9f62fd9a6d311f98afe2e31afca8b818c402c2
+ms.openlocfilehash: 927e4eb519f8a849ac2cb259bed962bad44d9a6d
+ms.sourcegitcommit: 9fd437a77da99d8436d6c852edd99a9ba873f8cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31003717"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31559979"
 ---
-# <a name="riskyusers-resource-type"></a><span data-ttu-id="7f5a9-105">tipo de recurso riskyUsers</span><span class="sxs-lookup"><span data-stu-id="7f5a9-105">riskyUsers resource type</span></span>
+# <a name="riskyusers-resource-type"></a><span data-ttu-id="5bafe-105">tipo de recurso riskyUsers</span><span class="sxs-lookup"><span data-stu-id="5bafe-105">riskyUsers resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="7f5a9-106">Representa usuários do Azure AD que estão em risco.</span><span class="sxs-lookup"><span data-stu-id="7f5a9-106">Represents Azure AD users who are at risk.</span></span> <span data-ttu-id="7f5a9-107">O Azure AD avalia continuamente o risco do usuário com base em vários sinais e aprendizado de máquina.</span><span class="sxs-lookup"><span data-stu-id="7f5a9-107">Azure AD continually evaluates user risk based on various signals and machine learning.</span></span> <span data-ttu-id="7f5a9-108">Essa API fornece acesso programático a todos os usuários de risco em seu Azure AD.</span><span class="sxs-lookup"><span data-stu-id="7f5a9-108">This API provides programmatic access to all at-risk users in your Azure AD.</span></span>
+<span data-ttu-id="5bafe-106">Representa usuários do Azure AD que estão em risco.</span><span class="sxs-lookup"><span data-stu-id="5bafe-106">Represents Azure AD users who are at risk.</span></span> <span data-ttu-id="5bafe-107">O Azure AD avalia continuamente o risco do usuário com base em vários sinais e aprendizado de máquina.</span><span class="sxs-lookup"><span data-stu-id="5bafe-107">Azure AD continually evaluates user risk based on various signals and machine learning.</span></span> <span data-ttu-id="5bafe-108">Essa API fornece acesso programático a todos os usuários de risco em seu Azure AD.</span><span class="sxs-lookup"><span data-stu-id="5bafe-108">This API provides programmatic access to all at-risk users in your Azure AD.</span></span>
 
-<span data-ttu-id="7f5a9-109">Para obter mais informações sobre eventos de risco, consulte [Azure Active Directory Identity Protection](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/).</span><span class="sxs-lookup"><span data-stu-id="7f5a9-109">For more information about risk events, see [Azure Active Directory Identity Protection](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/).</span></span>
+<span data-ttu-id="5bafe-109">Para obter mais informações sobre eventos de risco, consulte [Azure Active Directory Identity Protection](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/).</span><span class="sxs-lookup"><span data-stu-id="5bafe-109">For more information about risk events, see [Azure Active Directory Identity Protection](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/).</span></span>
 
-><span data-ttu-id="7f5a9-110">**Observação:** O uso da API riskyUsers requer uma licença do Azure AD Premium P2.</span><span class="sxs-lookup"><span data-stu-id="7f5a9-110">**Note:** Using the riskyUsers API requires an Azure AD Premium P2 license.</span></span>
+><span data-ttu-id="5bafe-110">**Observação:** O uso da API riskyUsers requer uma licença do Azure AD Premium P2.</span><span class="sxs-lookup"><span data-stu-id="5bafe-110">**Note:** Using the riskyUsers API requires an Azure AD Premium P2 license.</span></span>
 
-## <a name="methods"></a><span data-ttu-id="7f5a9-111">Métodos</span><span class="sxs-lookup"><span data-stu-id="7f5a9-111">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="5bafe-111">Métodos</span><span class="sxs-lookup"><span data-stu-id="5bafe-111">Methods</span></span>
 
-| <span data-ttu-id="7f5a9-112">Método</span><span class="sxs-lookup"><span data-stu-id="7f5a9-112">Method</span></span>   | <span data-ttu-id="7f5a9-113">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="7f5a9-113">Return Type</span></span>|<span data-ttu-id="7f5a9-114">Descrição</span><span class="sxs-lookup"><span data-stu-id="7f5a9-114">Description</span></span>|
+| <span data-ttu-id="5bafe-112">Método</span><span class="sxs-lookup"><span data-stu-id="5bafe-112">Method</span></span>   | <span data-ttu-id="5bafe-113">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="5bafe-113">Return Type</span></span>|<span data-ttu-id="5bafe-114">Descrição</span><span class="sxs-lookup"><span data-stu-id="5bafe-114">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="7f5a9-115">Listar riskyUsers</span><span class="sxs-lookup"><span data-stu-id="7f5a9-115">List riskyUsers</span></span>](../api/riskyusers-list.md) | [<span data-ttu-id="7f5a9-116">riskyUsers</span><span class="sxs-lookup"><span data-stu-id="7f5a9-116">riskyUsers</span></span>](riskyUser.md) |<span data-ttu-id="7f5a9-117">Listar usuários arriscados e suas propriedades.</span><span class="sxs-lookup"><span data-stu-id="7f5a9-117">List risky users and their properties.</span></span>|
-|[<span data-ttu-id="7f5a9-118">Obter riskyUsers</span><span class="sxs-lookup"><span data-stu-id="7f5a9-118">Get riskyUsers</span></span>](../api/riskyusers-get.md) | [<span data-ttu-id="7f5a9-119">riskyUsers</span><span class="sxs-lookup"><span data-stu-id="7f5a9-119">riskyUsers</span></span>](riskyUser.md)|<span data-ttu-id="7f5a9-120">Obtenha um usuário arriscado específico e suas propriedades.</span><span class="sxs-lookup"><span data-stu-id="7f5a9-120">Get a specific risky user and its properties.</span></span>|
-|[<span data-ttu-id="7f5a9-121">Confirmar riskyUsers comprometido</span><span class="sxs-lookup"><span data-stu-id="7f5a9-121">Confirm riskyUsers compromised</span></span>](../api/riskyusers-confirmcompromised.md)|<span data-ttu-id="7f5a9-122">Confirmar um usuário arriscado como comprometido.</span><span class="sxs-lookup"><span data-stu-id="7f5a9-122">Confirm a risky user as compromised.</span></span>|
-|[<span data-ttu-id="7f5a9-123">Ignorar riskyUsers</span><span class="sxs-lookup"><span data-stu-id="7f5a9-123">Dismiss riskyUsers</span></span>](../api/riskyusers-dismiss.md)|<span data-ttu-id="7f5a9-124">DesCartar o risco de um usuário arriscado.</span><span class="sxs-lookup"><span data-stu-id="7f5a9-124">Dismiss the risk of a risky user.</span></span>|
+|[<span data-ttu-id="5bafe-115">Listar riskyUsers</span><span class="sxs-lookup"><span data-stu-id="5bafe-115">List riskyUsers</span></span>](../api/riskyusers-list.md) | <span data-ttu-id="5bafe-116">coleção [riskyUser](riskyUser.md)</span><span class="sxs-lookup"><span data-stu-id="5bafe-116">[riskyUser](riskyUser.md) collection</span></span>|<span data-ttu-id="5bafe-117">Listar usuários arriscados e suas propriedades.</span><span class="sxs-lookup"><span data-stu-id="5bafe-117">List risky users and their properties.</span></span>|
+|[<span data-ttu-id="5bafe-118">Obter riskyUser</span><span class="sxs-lookup"><span data-stu-id="5bafe-118">Get riskyUser</span></span>](../api/riskyusers-get.md) | [<span data-ttu-id="5bafe-119">riskyUser</span><span class="sxs-lookup"><span data-stu-id="5bafe-119">riskyUser</span></span>](riskyUser.md)|<span data-ttu-id="5bafe-120">Obtenha um usuário arriscado específico e suas propriedades.</span><span class="sxs-lookup"><span data-stu-id="5bafe-120">Get a specific risky user and its properties.</span></span>|
+|[<span data-ttu-id="5bafe-121">Confirmar riskyUsers comprometido</span><span class="sxs-lookup"><span data-stu-id="5bafe-121">Confirm riskyUsers compromised</span></span>](../api/riskyusers-confirmcompromised.md)|<span data-ttu-id="5bafe-122">Nenhum</span><span class="sxs-lookup"><span data-stu-id="5bafe-122">None</span></span> |<span data-ttu-id="5bafe-123">Confirmar um usuário arriscado como comprometido.</span><span class="sxs-lookup"><span data-stu-id="5bafe-123">Confirm a risky user as compromised.</span></span>|
+|[<span data-ttu-id="5bafe-124">Ignorar riskyUsers</span><span class="sxs-lookup"><span data-stu-id="5bafe-124">Dismiss riskyUsers</span></span>](../api/riskyusers-dismiss.md)|<span data-ttu-id="5bafe-125">Nenhum</span><span class="sxs-lookup"><span data-stu-id="5bafe-125">None</span></span> | <span data-ttu-id="5bafe-126">DesCartar o risco de um usuário arriscado.</span><span class="sxs-lookup"><span data-stu-id="5bafe-126">Dismiss the risk of a risky user.</span></span>|
 
-## <a name="properties"></a><span data-ttu-id="7f5a9-125">Propriedades</span><span class="sxs-lookup"><span data-stu-id="7f5a9-125">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="5bafe-127">Propriedades</span><span class="sxs-lookup"><span data-stu-id="5bafe-127">Properties</span></span>
 
-| <span data-ttu-id="7f5a9-126">Propriedade</span><span class="sxs-lookup"><span data-stu-id="7f5a9-126">Property</span></span>   | <span data-ttu-id="7f5a9-127">Tipo</span><span class="sxs-lookup"><span data-stu-id="7f5a9-127">Type</span></span>|<span data-ttu-id="7f5a9-128">Descrição</span><span class="sxs-lookup"><span data-stu-id="7f5a9-128">Description</span></span>|
+| <span data-ttu-id="5bafe-128">Propriedade</span><span class="sxs-lookup"><span data-stu-id="5bafe-128">Property</span></span>   | <span data-ttu-id="5bafe-129">Tipo</span><span class="sxs-lookup"><span data-stu-id="5bafe-129">Type</span></span>|<span data-ttu-id="5bafe-130">Descrição</span><span class="sxs-lookup"><span data-stu-id="5bafe-130">Description</span></span>|
 |:---------------|:--------|:----------|
-|`id`|`string`|<span data-ttu-id="7f5a9-129">ID exclusiva do usuário em risco</span><span class="sxs-lookup"><span data-stu-id="7f5a9-129">Unique id of the user at risk</span></span>|
-|`isDeleted`|`bool`|<span data-ttu-id="7f5a9-130">Indica se o usuário é excluído.</span><span class="sxs-lookup"><span data-stu-id="7f5a9-130">Indicates whether the user is deleted.</span></span> <span data-ttu-id="7f5a9-131">Os valores possíveis são `true`:,`false`</span><span class="sxs-lookup"><span data-stu-id="7f5a9-131">Possible values are: `true`, `false`</span></span>|
-|`isGuest`|`bool`|<span data-ttu-id="7f5a9-132">Indica se o usuário é um usuário convidado.</span><span class="sxs-lookup"><span data-stu-id="7f5a9-132">Indicates whether the user is a guest user.</span></span> <span data-ttu-id="7f5a9-133">Os valores possíveis são: `true` e `false`.</span><span class="sxs-lookup"><span data-stu-id="7f5a9-133">Possible values are: `true`, `false`.</span></span> <span data-ttu-id="7f5a9-134">True se a identidade do usuário está fora do locatário em consideração.</span><span class="sxs-lookup"><span data-stu-id="7f5a9-134">True if user’s identity lies outside of the tenant in consideration.</span></span> <span data-ttu-id="7f5a9-135">Este usuário pode ser um usuário B2B ou B2C com identidade no Azure AD, no MSA ou no provedor de identidade de terceiros.</span><span class="sxs-lookup"><span data-stu-id="7f5a9-135">This user could be a B2B or a B2C user with identity in Azure AD, MSA or 3rd party identity provider.</span></span> <span data-ttu-id="7f5a9-136">False se a identidade do usuário está dentro do locatário em consideração</span><span class="sxs-lookup"><span data-stu-id="7f5a9-136">False if user’s identity lies inside the tenant in consideration</span></span>|
-|`isProcessing`|`bool`|<span data-ttu-id="7f5a9-137">Indica wehther que o estado arriscado de um usuário está sendo processado pelo backend</span><span class="sxs-lookup"><span data-stu-id="7f5a9-137">Indicates wehther a user's risky state is being processed by the backend</span></span>|
-|`risk`|[<span data-ttu-id="7f5a9-138">risco</span><span class="sxs-lookup"><span data-stu-id="7f5a9-138">risk</span></span>](risk.md)|<span data-ttu-id="7f5a9-139">Estado de usuário arriscado</span><span class="sxs-lookup"><span data-stu-id="7f5a9-139">Risky user state</span></span>|
-|`riskLastUpdatedDateTime`|`datetime`|<span data-ttu-id="7f5a9-140">A data e a hora em que o usuário arriscado foi atualizado pela última vez</span><span class="sxs-lookup"><span data-stu-id="7f5a9-140">The date and time that the risky user was last updated</span></span>|
-|`userDisplayName`|`string`|<span data-ttu-id="7f5a9-141">Nome de exibição do usuário arriscado</span><span class="sxs-lookup"><span data-stu-id="7f5a9-141">Risky user display name</span></span>|
-|`userPrincipalName`|`string`|<span data-ttu-id="7f5a9-142">Nome UPN de usuário arriscado</span><span class="sxs-lookup"><span data-stu-id="7f5a9-142">Risky user principal name</span></span>|
+|`id`|`string`|<span data-ttu-id="5bafe-131">ID exclusiva do usuário em risco</span><span class="sxs-lookup"><span data-stu-id="5bafe-131">Unique id of the user at risk</span></span>|
+|`isDeleted`|`bool`|<span data-ttu-id="5bafe-132">Indica se o usuário é excluído.</span><span class="sxs-lookup"><span data-stu-id="5bafe-132">Indicates whether the user is deleted.</span></span> <span data-ttu-id="5bafe-133">Os valores possíveis são `true`:,</span><span class="sxs-lookup"><span data-stu-id="5bafe-133">Possible values are: `true`,</span></span> `false`|
+|`isGuest`|`bool`|<span data-ttu-id="5bafe-134">Indica se o usuário é um usuário convidado.</span><span class="sxs-lookup"><span data-stu-id="5bafe-134">Indicates whether the user is a guest user.</span></span> <span data-ttu-id="5bafe-135">Os valores possíveis são: `true` e `false`.</span><span class="sxs-lookup"><span data-stu-id="5bafe-135">Possible values are: `true`, `false`.</span></span> <span data-ttu-id="5bafe-136">True se a identidade do usuário está fora do locatário em consideração.</span><span class="sxs-lookup"><span data-stu-id="5bafe-136">True if user’s identity lies outside of the tenant in consideration.</span></span> <span data-ttu-id="5bafe-137">Este usuário pode ser um usuário B2B ou B2C com identidade no Azure AD, no MSA ou no provedor de identidade de terceiros.</span><span class="sxs-lookup"><span data-stu-id="5bafe-137">This user could be a B2B or a B2C user with identity in Azure AD, MSA or 3rd party identity provider.</span></span> <span data-ttu-id="5bafe-138">False se a identidade do usuário está dentro do locatário em consideração</span><span class="sxs-lookup"><span data-stu-id="5bafe-138">False if user’s identity lies inside the tenant in consideration</span></span>|
+|`isProcessing`|`bool`|<span data-ttu-id="5bafe-139">Indica wehther que o estado arriscado de um usuário está sendo processado pelo backend</span><span class="sxs-lookup"><span data-stu-id="5bafe-139">Indicates wehther a user's risky state is being processed by the backend</span></span>|
+|`riskLastUpdatedDateTime`|`datetime`|<span data-ttu-id="5bafe-140">A data e a hora em que o usuário arriscado foi atualizado pela última vez</span><span class="sxs-lookup"><span data-stu-id="5bafe-140">The date and time that the risky user was last updated</span></span>|
+|`riskLevel`|`riskLevel`| <span data-ttu-id="5bafe-141">Os valores possíveis são baixo, médio, alto, oculto, nenhum, unknownFutureValue.</span><span class="sxs-lookup"><span data-stu-id="5bafe-141">Possible values are low, medium, high, hidden, none, unknownFutureValue.</span></span>  |
+|`riskState`|`riskState`| <span data-ttu-id="5bafe-142">Os valores possíveis são None, confirmedSafe, remediated, atRisk, unknownFutureValue.</span><span class="sxs-lookup"><span data-stu-id="5bafe-142">Possible values are none, confirmedSafe, remediated, atRisk, unknownFutureValue.</span></span>  |
+|`riskDetail`|`riskDetail`| <span data-ttu-id="5bafe-143">Os valores possíveis são None, adminGeneratedTemporaryPassword, userPerformedSecuredPasswordChange, userPerformedSecuredPasswordReset, adminConfirmedSigninSafe, aiConfirmedSigninSafe, userPassedMFADrivenByRiskBasedPolicy, adminDismissedAllRiskForUser, adminConfirmedSigninCompromised, oculto, adminConfirmedUserCompromised, unknownFutureValue.</span><span class="sxs-lookup"><span data-stu-id="5bafe-143">Possible values are none, adminGeneratedTemporaryPassword, userPerformedSecuredPasswordChange, userPerformedSecuredPasswordReset, adminConfirmedSigninSafe, aiConfirmedSigninSafe, userPassedMFADrivenByRiskBasedPolicy, adminDismissedAllRiskForUser, adminConfirmedSigninCompromised, hidden, adminConfirmedUserCompromised, unknownFutureValue.</span></span>  |
+|`userDisplayName`|`string`|<span data-ttu-id="5bafe-144">Nome de exibição do usuário arriscado</span><span class="sxs-lookup"><span data-stu-id="5bafe-144">Risky user display name</span></span>|
+|`userPrincipalName`|`string`|<span data-ttu-id="5bafe-145">Nome UPN de usuário arriscado</span><span class="sxs-lookup"><span data-stu-id="5bafe-145">Risky user principal name</span></span>|
 
+## <a name="relationships"></a><span data-ttu-id="5bafe-146">Relações</span><span class="sxs-lookup"><span data-stu-id="5bafe-146">Relationships</span></span>
+| <span data-ttu-id="5bafe-147">Relação</span><span class="sxs-lookup"><span data-stu-id="5bafe-147">Relationship</span></span> | <span data-ttu-id="5bafe-148">Tipo</span><span class="sxs-lookup"><span data-stu-id="5bafe-148">Type</span></span>   |<span data-ttu-id="5bafe-149">Descrição</span><span class="sxs-lookup"><span data-stu-id="5bafe-149">Description</span></span>|
+|:---------------|:--------|:----------|
+|<span data-ttu-id="5bafe-150">histórico</span><span class="sxs-lookup"><span data-stu-id="5bafe-150">history</span></span>|<span data-ttu-id="5bafe-151">coleção [riskyUserHistoryItem](riskyuserhistoryitem.md)</span><span class="sxs-lookup"><span data-stu-id="5bafe-151">[riskyUserHistoryItem](riskyuserhistoryitem.md) collection</span></span>| |
 
-## <a name="json-representation"></a><span data-ttu-id="7f5a9-143">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="7f5a9-143">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="5bafe-152">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="5bafe-152">JSON representation</span></span>
 
-<span data-ttu-id="7f5a9-144">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="7f5a9-144">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="5bafe-153">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="5bafe-153">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.riskyusers"
+  "@odata.type": "microsoft.graph.riskyUser"
 }-->
 
 ```json
 {
- "id": "string",
+"id": "string",
 "riskLastUpdatedDateTime": "dateTimeOffset",
 "isGuest": "boolean",
 "isProcessing": "boolean",
 "isDeleted": "boolean",
-"risk": {"@odata.type": "microsoft.graph.risk"},
+"riskDetail":  "string",
+"riskLevel":  "string",
+"riskState":  "string",
 "userDisplayName": "string",
 "userPrincipalName": "string"
 }
