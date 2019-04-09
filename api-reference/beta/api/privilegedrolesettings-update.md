@@ -2,12 +2,12 @@
 title: Atualizar privilegedRoleSettings
 description: Atualize as configurações de função para a configuração de função determinada. Um objeto privilegedRoleSettings será retornado.
 localization_priority: Normal
-ms.openlocfilehash: f416656362c5be0ccdaa2b3aaa7812511e357875
-ms.sourcegitcommit: 3615f9475d57bfbb3a8c4402af863897f592dfbd
+ms.openlocfilehash: 779b0d4cd61672c90c103ebb2545cb75324273fd
+ms.sourcegitcommit: 9fd437a77da99d8436d6c852edd99a9ba873f8cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30789603"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31560112"
 ---
 # <a name="update-privilegedrolesettings"></a>Atualizar privilegedRoleSettings
 
@@ -54,7 +54,7 @@ A tabela a seguir lista as propriedades que você pode fornecer ao atualizar uma
 |notificationToUserOnElevation|Booliano|**true** se enviar notificação para o usuário final quando a função é ativada. **false** se não enviar notificações quando a função for ativada. Obrigatório.|
 |ticketingInfoOnElevation|Booliano|**true** se as informações de tíquete são necessárias ao ativar a função. **false** se as informações de tíquete não são necessárias ao ativar a função. Obrigatório.|
 |approvalOnElevation|Booliano|**true** se a aprovação é necessária ao ativar a função. **false** se a aprovação não é necessária ao ativar a função. Obrigatório.|
-|approverIds|Coleção de cadeias de caracteres|Lista de IDs de aprovação, se a aprovação for necessária para ativação.|
+|approverIds|Coleção String|Lista de IDs de aprovação, se a aprovação for necessária para ativação.|
 
 ## <a name="response"></a>Resposta
 
@@ -88,7 +88,10 @@ Content-type: application/json
 ```
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta.
-
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}-->
 ```http
 HTTP/1.1 204 No Content
 ```

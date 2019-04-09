@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.date: 03/20/2019
-ms.openlocfilehash: 8e7a64e5762808691c4997c83b112a17c9667d47
-ms.sourcegitcommit: fd9f62fd9a6d311f98afe2e31afca8b818c402c2
+ms.openlocfilehash: 3027320b25c35e60e1b5dccabc7ff34ea642a953
+ms.sourcegitcommit: 9fd437a77da99d8436d6c852edd99a9ba873f8cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31013128"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31560098"
 ---
 # <a name="dismiss-riskyusers"></a>Ignorar riskyUsers
 
@@ -18,7 +18,7 @@ ms.locfileid: "31013128"
 
 >**Observação:** O uso da API riskyUsers requer uma licença do Azure AD Premium P2.
 
-DesCartar o risco de um objeto **riskyUsers** . Esta ação definirá o nível de risco do usuário de destino como nenhum.
+DesCartar o risco de um objeto **riskyUser** . Esta ação definirá o nível de risco do usuário de destino como nenhum.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -46,7 +46,7 @@ Especifique as userIds a serem descartadas no corpo da solicitação.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta `204 NoContent`.
+Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
@@ -56,8 +56,8 @@ Este é um exemplo da solicitação.
 }-->
 ```http
 POST https://graph.microsoft.com/beta/riskyUsers/dismiss
+Content-Type: application/json
 
-Request Body
 {
   "userIds": [
     "04487ee0-f4f6-4e7f-8999-facc5a30e232",
@@ -69,11 +69,10 @@ Request Body
 Veja a seguir um exemplo da resposta.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.riskyUsers"
+  "truncated": true
 } -->
 ```http
-HTTP/1.1 204 NoContent
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

@@ -1,23 +1,23 @@
 ---
 author: chackman
 ms.author: chackman
-title: Item de unidade de parar de seguir
+title: Item da unidade não seguir
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 064ab2d5ad86df5341a0f2f5a46fe7c227ff35fb
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 730bb02dda88f41bcac734b3ba282ad324267860
+ms.sourcegitcommit: 9fd437a77da99d8436d6c852edd99a9ba873f8cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513106"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31560105"
 ---
-# <a name="unfollow-drive-item"></a>Item de unidade de parar de seguir
+# <a name="unfollow-drive-item"></a>Item da unidade não seguir
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Parar de seguir um [driveItem](../resources/driveitem.md).
+Não seguir um [driveItem](../resources/driveitem.md).
 
->**Observação:** Para seguir um item, consulte [Siga Item](driveitem-follow.md).
+>**Observação:** Para seguir um item, consulte [follow item](driveitem-follow.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -44,25 +44,26 @@ Nenhum corpo de solicitação é obrigatório.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, a chamada API retorna um código `204 No Content`.
-
-<!-- { "blockType": "response" } -->
-
-```http
-HTTP/1.1 204 No Content
-```
+Se tiver êxito, a chamada API retorna um código `204 No Content`. Não retorna nada no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-
-Este exemplo unfollows um item identificado pela `{item-id}`.
+### <a name="request"></a>Solicitação
+Este é um exemplo da solicitação.
+Este exemplo não segue um item identificado por `{item-id}`.
 
 <!-- { "blockType": "request", "name": "unfollow-item", "scopes": "files.read" } -->
 
 ```http
 DELETE /me/drive/following/{item-id}
 ```
-
-
+### <a name="response"></a>Resposta
+<!-- { 
+    "blockType": "response", 
+    "truncated": true 
+} -->
+```http
+HTTP/1.1 204 No Content
+```
 <!--
 {
   "type": "#page.annotation",

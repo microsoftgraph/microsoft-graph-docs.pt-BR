@@ -1,21 +1,21 @@
 ---
-title: Obter riskyUsers
-description: Recupere as propriedades e os relacionamentos de um objeto **riskyUsers** .
+title: Obter riskyUser
+description: Recupere as propriedades e os relacionamentos de um objeto **riskyUser** .
 localization_priority: Normal
 author: cloudhandler
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b65135fcd1ad77304b98f18fa595154aee984910
-ms.sourcegitcommit: fd9f62fd9a6d311f98afe2e31afca8b818c402c2
+ms.openlocfilehash: 6ad7c9853b4f00850e77f3bc70e0136abfec3064
+ms.sourcegitcommit: 9fd437a77da99d8436d6c852edd99a9ba873f8cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31003710"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31559854"
 ---
-# <a name="get-riskyusers"></a>Obter riskyUsers
+# <a name="get-riskyuser"></a>Obter riskyUser
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de um objeto **riskyUsers** .
+Recupere as propriedades e os relacionamentos de um objeto **riskyUser** .
 
 >**Observação:** O uso da API riskyUsers requer uma licença do Azure AD Premium P2.
 
@@ -31,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /riskyUsers/{query}
+GET /riskyUsers/{id}
 ```
 
 
@@ -52,31 +52,34 @@ Se tiver êxito, este método retornará `200 OK` um código de resposta e um ob
 Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
-  "name": "get_riskyuser"
+  "name": "get_riskyuser",
+  "sampleKeys": ["c2b6c2b9-dddc-acd0-2b39-d519d803dbc3"]
 }-->
 ```http
-GET https://graph.microsoft.com/beta/riskyUsers/{id}
+GET https://graph.microsoft.com/beta/riskyUsers/c2b6c2b9-dddc-acd0-2b39-d519d803dbc3
 ```
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.riskyUsers"
+  "@odata.type": "microsoft.graph.riskyUser"
 } -->
 ```http
 HTTP/1.1 200 OK
+Content-type: application/json
+
 {
   "id": "c2b6c2b9-dddc-acd0-2b39-d519d803dbc3",
   "riskLastUpdatedDateTime": "2016-01-29T20:03:57.7872426Z",
-  "isGuest": "true",
+  "isGuest": true,
   "isProcessing": true,
-  "isDeleted": "true",
+  "isDeleted": true,
   "riskDetail": "adminConfirmedSigninCompromised",
   "riskLevel": "high",
   "riskState": "atRisk"
-  "userDisplayName": "Jon Doe",
-  "userPrincipalName": "jon@contoso.com"
+  "userDisplayName": "Alex Wilbur",
+  "userPrincipalName": "alexw@contoso.com"
 }
 ```
 

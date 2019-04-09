@@ -5,12 +5,12 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.date: 03/20/2019
-ms.openlocfilehash: 9ae07bf8d1d4a41764aa145a9c7508da339d7ce2
-ms.sourcegitcommit: fd9f62fd9a6d311f98afe2e31afca8b818c402c2
+ms.openlocfilehash: beca64415a2d03898d57cd9cda2fb248121c424b
+ms.sourcegitcommit: 9fd437a77da99d8436d6c852edd99a9ba873f8cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31013121"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31559972"
 ---
 # <a name="confirm-riskyusers-compromised"></a>Confirmar riskyUsers comprometido
 
@@ -18,7 +18,7 @@ ms.locfileid: "31013121"
 
 >**Observação:** A API riskyUsers requer uma licença do Azure AD Premium P2.
 
-Confirme um objeto [riskyUsers](../resources/riskyuser.md) como comprometido. Isso definirá o nível de risco do usuário de destino como alto.
+Confirme um objeto [riskyUser](../resources/riskyuser.md) como comprometido. Isso definirá o nível de risco do usuário de destino como alto.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -47,7 +47,7 @@ Especifique as userIds a serem descartadas no corpo da solicitação.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `204 No Content` um código de resposta
+Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
@@ -57,9 +57,8 @@ Este é um exemplo da solicitação.
 }-->
 ```http
 POST https://graph.microsoft.com/beta/riskyUsers/confirmCompromised
+Content-type: application/json
 
-
-Request Body
 {
   "userIds": [
     "29f270bb-4d23-4f68-8a57-dc73dc0d4caf",
@@ -71,11 +70,10 @@ Request Body
 Veja a seguir um exemplo da resposta.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.riskyUsers"
+  "truncated": true
 } -->
 ```http
-HTTP/1.1 204 NoContent
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -86,6 +84,5 @@ HTTP/1.1 204 NoContent
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/riskyusers-confirmcompromised.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  "suppressions": []
 }-->
