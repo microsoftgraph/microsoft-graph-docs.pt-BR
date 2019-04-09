@@ -4,12 +4,12 @@ description: 'Obtenha as mensagens na caixa de correio do usuário conectado (in
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 828dac4a345eaba3bb902ba5d96dec4852501033
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 3a29392318de78c1e1ff5bd4ad4b560bc9c460f4
+ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523565"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "31518529"
 ---
 # <a name="list-messages"></a>Listar mensagens
 
@@ -17,14 +17,14 @@ ms.locfileid: "29523565"
 
 Obtenha as mensagens na caixa de correio do usuário conectado (incluindo as pastas Itens Excluídos e Email Secundário). 
 
-Em particular, você pode filtrar as mensagens e obter somente aqueles que incluem um [mencionar](../resources/mention.md) do usuário conectado.
+Em particular, você pode filtrar as mensagens e obter apenas aquelas que incluem uma [menção](../resources/mention.md) do usuário conectado.
 
-Observe que, por padrão, o `GET /me/messages` operação não retorna a propriedade **menções** . Use o parâmetro de consulta `$expand`  para [encontrar detalhes](../api/message-get.md#request-2) de cada menção em uma mensagem.
+Observe que, por padrão, `GET /me/messages` a operação não retorna a propriedade **menciona** . Use o `$expand` parâmetro de consulta para [encontrar detalhes de cada menção em uma mensagem](../api/message-get.md#request-2).
 
-Há dois cenários onde um aplicativo pode obter mensagens na pasta de email de outro usuário:
+Há dois cenários em que um aplicativo pode obter mensagens na pasta email de outro usuário:
 
-* Se o aplicativo tem permissões de aplicativo, ou,
-* Se o aplicativo tiver apropriada [permissões](#permissions) delegadas de um usuário, e outro usuário compartilhou uma pasta de email com que o usuário ou, tem acesso delegado a esse usuário. Consulte os [detalhes e um exemplo](/graph/outlook-share-messages-folders).
+* Se o aplicativo tiver permissões de aplicativo ou
+* Se o aplicativo tiver as [permissões](#permissions) delegadas apropriadas de um usuário, e outro usuário tiver compartilhado uma pasta de email com esse usuário, ou, o terá acesso delegado a esse usuário. Confira [detalhes e um exemplo](/graph/outlook-share-messages-folders).
 
 
 ## <a name="permissions"></a>Permissões
@@ -32,8 +32,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Mail.Read, Mail.ReadWrite    |
-|Delegado (conta pessoal da Microsoft) | Mail.Read, Mail.ReadWrite    |
+|Delegado (conta corporativa ou de estudante) | Mail. ReadBasic, mail. Read, mail. ReadWrite    |
+|Delegado (conta pessoal da Microsoft) | Mail. ReadBasic, mail. Read, mail. ReadWrite    |
 |Aplicativo | Mail.Read, Mail.ReadWrite |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -54,7 +54,7 @@ GET /me/mailFolders/{id}/messages
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ```
 
-Para obter todas as mensagens na caixa de correio do usuário que incluem um **mencionar** do usuário:
+Para obter todas as mensagens na caixa de correio do usuário que incluam um **menção** do usuário:
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -65,7 +65,7 @@ GET /users/{id | userPrincipalName}/messages?$filter=mentionsPreview/isMentioned
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
 
-Você pode usar o `$filter` consulta parâmetro na propriedade **mentionsPreview** obter essas mensagens que mencionam o usuário conectado.
+Você pode usar o `$filter` parâmetro de consulta na propriedade **mentionsPreview** para obter as mensagens que mencionam o usuário conectado.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
@@ -78,13 +78,13 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e a coleção de objetos de [mensagem](../resources/message.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [Message](../resources/message.md) no corpo da resposta.
 
 O tamanho de página padrão para essa solicitação é dez mensagens. 
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request-1"></a>Solicitação 1
-O exemplo primeiro obtém as principais 10 mensagens na caixa de correio do usuário conectado.
+O primeiro exemplo obtém as 10 principais mensagens na caixa de correio do usuário conectado.
 <!-- {
   "blockType": "request",
   "name": "get_messages"
@@ -124,9 +124,9 @@ Content-length: 317
 
 
 ##### <a name="request-2"></a>Solicitação 2
-O exemplo a seguir filtra todas as mensagens na caixa de correio do usuário conectado para aqueles que mencionar o usuário. Ele usa `$select` para retornar um subconjunto das propriedades de cada mensagem na resposta. 
+O próximo exemplo filtra todas as mensagens na caixa de correio do usuário conectado para as que mencionam o usuário. Ele usa `$select` para retornar um subconjunto das propriedades de cada mensagem na resposta. 
 
-O exemplo também incorpora a codificação de caracteres de espaço na sequência de consulta de parâmetro de URL.
+O exemplo também incorpora a codificação de URL para os caracteres de espaço na cadeia de caracteres de parâmetro de consulta.
 <!-- {
   "blockType": "request",
   "name": "get_messages_with_mentions"
@@ -187,7 +187,7 @@ Content-length: 987
 ```
 
 ##### <a name="request-3"></a>Solicitação 3
-O terceiro exemplo mostra como usar um `Prefer: outlook.body-content-type="text"` cabeçalho para obter as propriedades de **corpo** e **uniqueBody** de cada mensagem no formato de texto.
+O terceiro exemplo mostra como usar um `Prefer: outlook.body-content-type="text"` cabeçalho para obter as propriedades **Body** e **uniqueBody** de cada mensagem em formato de texto.
 <!-- {
   "blockType": "request",
   "name": "get_messages_in_text"

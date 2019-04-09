@@ -1,16 +1,16 @@
 ---
 title: Implantações de nuvens nacionais
-description: Além de uma rede global de datacenters, os serviços em nuvem da Microsoft estão disponíveis em três nuvens nacionais separadas. Essas versões nacional de nuvem são físicas e lógicas instâncias de isolados de rede de serviços de nuvem empresarial da Microsoft que são confinados dentro das bordas geográficas determinados países e operados pela equipe de local.
-ms.openlocfilehash: e32330397a75670238f090599635ca68a89f115e
-ms.sourcegitcommit: a4773239d8559899c3f9433b3073e250a56d2e04
+description: Além de uma rede global de datacenters, os serviços em nuvem da Microsoft estão disponíveis em três nuvens nacionais separadas. Essas versões de nuvem nacionais são instâncias isoladas de rede física e lógica dos serviços de nuvem corporativa da Microsoft que são confinados nas bordas geográficas de países específicos e operados pela equipe local.
+ms.openlocfilehash: f04da510e46572140c70b0df89eefeac57974b00
+ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29994388"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "31518501"
 ---
 # <a name="national-cloud-deployments"></a>Implantações de nuvem nacional
 
-Além de uma rede global de datacenters, os serviços em nuvem da Microsoft estão disponíveis em três nuvens nacionais separadas. Essas versões nacional de nuvem são físicas e lógicas instâncias de isolados de rede de serviços de nuvem empresarial da Microsoft que são confinados dentro das bordas geográficas determinados países e operados pela equipe de local.
+Além de uma rede global de datacenters, os serviços em nuvem da Microsoft estão disponíveis em três nuvens nacionais separadas. Essas versões de nuvem nacionais são instâncias isoladas de rede física e lógica dos serviços de nuvem corporativa da Microsoft que são confinados nas bordas geográficas de países específicos e operados pela equipe local.
 
 As nuvens nacionais atuais incluem:
 
@@ -18,44 +18,47 @@ As nuvens nacionais atuais incluem:
 - Microsoft Cloud Germany
 - Azure e Office 365 operados pela 21Vianet na China
 
-Cada ambiente de nuvem nacional é exclusivo e diferente do ambiente global da Microsoft. É importante esteja ciente de alguns dessas diferenças cruciais ao desenvolver aplicativos para ambientes de nuvem nacional; Por exemplo, o registro de aplicativos, aquisição de tokens e chamando a API do Microsoft Graph podem ser diferentes.
+Cada ambiente de nuvem nacional é exclusivo e diferente do ambiente global da Microsoft. É importante estar ciente de algumas dessas diferenças importantes ao desenvolver aplicativos para ambientes de nuvem nacionais; por exemplo, registrar aplicativos, adquirir tokens e chamar a API do Microsoft Graph pode ser diferente.
 
-Este artigo fornece informações sobre as implantações de nuvem nacional diferentes do Microsoft Graph e os recursos que estão disponíveis para os desenvolvedores dentro de cada uma.
+Este artigo fornece informações sobre as diferentes implantações de nuvem nacional do Microsoft Graph e os recursos disponíveis para os desenvolvedores dentro de cada um.
 
-## <a name="app-registration-and-token-service-root-endpoints"></a>App registro e o token de serviço raiz pontos de extremidade
+## <a name="app-registration-and-token-service-root-endpoints"></a>Pontos de extremidade de registro de aplicativo e serviço de token
 
-Antes de chamar as APIs do Microsoft Graph, primeiro você deve registrar seu aplicativo e adquirir um token. A tabela a seguir lista as URLs de base para os pontos de extremidade do Azure Active Directory (AD Azure) para registrar seu aplicativo e adquira tokens para cada nacional nuvem.
+Antes de chamar as APIs do Microsoft Graph, você deve primeiro registrar seu aplicativo e adquirir um token. A tabela a seguir lista as URLs de base para os pontos de extremidade do Azure Active Directory (Azure AD) para registrar seu aplicativo e adquirir tokens para cada nuvem nacional.
 
-| Nuvem nacional | Endpoint portal do Azure AD| Ponto de extremidade do Azure AD|
+| Nuvem nacional | Ponto de extremidade do portal do Azure AD| Ponto de extremidade do Azure AD|
 |---------------------------|----------------|----------------|
 |Microsoft Azure AD para o Governo dos Estados Unidos |https://portal.azure.us|`https://login.microsoftonline.us`|
 |Microsoft Azure AD Alemanha |https://portal.microsoftazure.de|`https://login.microsoftonline.de`|
 |Microsoft Azure AD China operado pela 21Vianet |https://portal.azure.cn|`https://login.chinacloudapi.cn`|
 |Microsoft Azure AD (serviço global)|https://portal.azure.com |`https://login.microsoftonline.com`|
 
-Para saber que mais sobre o Azure AD acessar tokens e o Microsoft Graph, consulte [obter tokens de autenticação](./auth-overview.md). Para cenários de autenticação do Azure AD, consulte [Noções básicas de autenticação do Azure AD](https://docs.microsoft.com/azure/active-directory/develop/authentication-scenarios).
+Para saber mais sobre tokens de acesso do Azure AD e o Microsoft Graph, confira [obter tokens de autenticação](./auth-overview.md). Para cenários de autenticação do Azure AD, confira [noções básicas de autenticação do Azure ad](https://docs.microsoft.com/azure/active-directory/develop/authentication-scenarios).
 
 > **Observação:** Os [pontos de extremidade de Azure autorização e token do AD v 2.0](https://docs.microsoft.com/azure/active-directory/develop/v2-overview) estão disponíveis apenas no serviço global. Eles ainda não têm suporte para uso com implantações de nuvem nacional.
 
 
-## <a name="microsoft-graph-and-graph-explorer-service-root-endpoints"></a>Microsoft Graph e o Explorer do gráfico de pontos de extremidade da raiz de serviço
+## <a name="microsoft-graph-and-graph-explorer-service-root-endpoints"></a>Pontos de extremidade raiz do serviço do Microsoft Graph e do Graph Explorer
 
-A tabela a seguir mostra os pontos de extremidade do serviço raiz para o Microsoft Graph e o [Explorer do gráfico](https://developer.microsoft.com/graph/graph-explorer) para cada nacional nuvem.
+A tabela a seguir mostra os pontos de extremidade da raiz do serviço para o Microsoft Graph e o [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer) para cada nuvem nacional.
 
 | National Cloud | Microsoft Graph | Explorador do Graph |
 |---------------------------|----------------|----------------|
-| Microsoft Graph para o Governo dos Estados Unidos | https://graph.microsoft.us | Sem suporte. |
+| Microsoft Graph para o governo dos EUA | https://graph.microsoft.us | Sem suporte. |
+| Microsoft Graph para o governo dos EUA L5 (DOD) | https://dod-graph.microsoft.us | Sem suporte. |
 | Microsoft Graph Alemanha | https://graph.microsoft.de | Sem suporte. |
 | Microsoft Graph China operado pela 21Vianet | https://microsoftgraph.chinacloudapi.cn | https://developer.microsoft.com/zh-cn/graph/graph-explorer-china |
 | Serviço global do Microsoft Graph | https://graph.microsoft.com | https://developer.microsoft.com/graph/graph-explorer |
 
-> **Nota**: os aplicativos só podem acessar dados organizacionais por meio de pontos de extremidade de nuvens nacionais. Isso significa que apps só possam acessar dados em inquilinos registrados na nuvem nacional específica. Aplicativos que estão tentando acessar dados do consumidor associados a contas do Microsoft pessoais por meio do Microsoft Graph devem usar o serviço global `https://graph.microsoft.com`. Adquiridos para uma implantação de nuvem nacional de tokens de acesso não são intercambiáveis com aqueles adquirido para o serviço de global ou qualquer outro nuvem nacional.
+>**Importante:** Se você já tiver um aplicativo no governo dos EUA e estiver usando o ponto de `https://graph.microsoft.com`extremidade internacional, recomendamos mudar para `https://graph.microsoft.us` o novo ponto de extremidade. O acesso aos dados do governo dos EUA usando o ponto de extremidade internacional está funcional no momento, mas será desabilitado em um futuro próximo.
+
+> **Nota**: os aplicativos só podem acessar dados organizacionais por meio de pontos de extremidade de nuvens nacionais. Isso significa que os aplicativos só podem acessar dados em locatários registrados na nuvem nacional específica. Os aplicativos que estão tentando acessar os dados do cliente associados às contas pessoais da Microsoft por meio do Microsoft Graph `https://graph.microsoft.com`devem usar o serviço global. Tokens de acesso adquiridos para implantação de nuvem nacional não são intercambiáveis com aqueles adquiridos para o serviço global ou qualquer outra nuvem nacional.
 
 ## <a name="supported-features"></a>Recursos com suporte
 
-Os seguintes recursos do Microsoft Graph existem disponíveis no mercado de `/v1.0` ponto de extremidade em todas as implantações de nuvem nacional, exceto onde observado.
+Os seguintes recursos do Microsoft Graph geralmente estão disponíveis no `/v1.0` ponto de extremidade em todas as implantações de nuvem nacionais, exceto quando observado.
 
-| Recursos do Microsoft Graph | Microsoft Cloud para o Governo dos EUA | China Microsoft Cloud operado pela 21Vianet | Microsoft Cloud Germany |
+| Recursos do Microsoft Graph | Microsoft Cloud para o Governo dos EUA | Microsoft Cloud China operado pela 21Vianet | Microsoft Cloud Germany |
 |---------------------------|----------------|----------------|----------------|
 | Usuários | ✔ | ✔ | ✔ |
 | Grupos | ✔ | ✔ | ✔ |
@@ -63,7 +66,7 @@ Os seguintes recursos do Microsoft Graph existem disponíveis no mercado de `/v1
 | OneDrive | ✔ | ✔* | ✔ |
 | Email do Outlook | ✔ | ✔ | ✔ |
 | Calendário do Outlook | ✔ | ✔ | ✔ |
-| Contatos Pessoais | ✔ | ✔ | ✔ |
+| Contatos pessoais | ✔ | ✔ | ✔ |
 | SharePoint| ✔ | ✔ | ✔ |
 | Planner|✔ |✔ |✔ |
 | Relatórios  |➖| ✔ |➖|
@@ -72,22 +75,22 @@ Os seguintes recursos do Microsoft Graph existem disponíveis no mercado de `/v1
 |Extensões de esquema de diretório |➖|➖|➖|
 | Extensões de tipo aberto|➖|➖|➖|
   
-Os seguintes recursos do Microsoft Graph adicionais estão disponíveis no modo de visualização (sobre o `/beta` ponto de extremidade) em todas as implantações de nuvem nacional, exceto onde observado:
+Os seguintes recursos adicionais do Microsoft Graph estão disponíveis na visualização (no `/beta` ponto de extremidade) em todas as implantações de nuvem nacionais, exceto quando observado:
 
 * Contatos organizacionais
 * Aplicativos
 * Entidades de serviço
 
-(*) Suporte limitado para apenas os serviços Exchange e OneDrive. Serviços do Azure AD não são suportados. 
+(*) Suporte limitado somente para o Exchange e serviços do OneDrive. Não há suporte para os serviços do Azure AD. 
 
  > **Importante:** Determinados serviços e recursos que estão em regiões específicas do serviço global podem não estar disponíveis em todas as nuvens nacionais. Para descobrir quais serviços estão disponíveis, consulte [produtos disponíveis por região](https://azure.microsoft.com/global-infrastructure/services/?products=all&regions=usgov-non-regional,us-dod-central,us-dod-east,usgov-arizona,usgov-iowa,usgov-texas,usgov-virginia,china-non-regional,china-east,china-east-2,china-north,china-north-2,germany-non-regional,germany-central,germany-northeast).
 
 
-Para saber mais sobre nacionais nuvens, consulte os seguintes tópicos:
-- [Nuvens nacional da Microsoft](https://www.microsoft.com/TrustCenter/CloudServices/NationalCloud)
+Para saber mais sobre nuvens nacionais, confira os seguintes tópicos:
+- [Nuvens nacionais da Microsoft](https://www.microsoft.com/TrustCenter/CloudServices/NationalCloud)
 - [Office 365 para o governo dos EUA](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government)
 - [Office 365 operado pela 21Vianet](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)
-- [Alemanha do Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-germany)
-- [Azure governamentais](https://azure.microsoft.com/global-infrastructure/government/)
-- [China Azure 21Vianet](https://docs.microsoft.com/azure/china/)
-- [Alemanha Azure](https://docs.microsoft.com/azure/germany/)
+- [Office 365 Germany](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-germany)
+- [Governo do Azure](https://azure.microsoft.com/global-infrastructure/government/)
+- [Azure da 21Vianet da China](https://docs.microsoft.com/azure/china/)
+- [Microsoft Azure Alemanha](https://docs.microsoft.com/azure/germany/)

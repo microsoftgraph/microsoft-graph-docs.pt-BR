@@ -1,28 +1,28 @@
 ---
 title: Obter mensagem
-description: Recupere as propriedades e relações do objeto de mensagem.
+description: Recupere as propriedades e os relacionamentos do objeto Message.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: e5f7b8c73ac9e121a1f0cbe1bf4200326d2d4e29
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: 8d15a1f07ae42e9c203a26a970896fea0d360494
+ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643196"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "31518515"
 ---
 # <a name="get-message"></a>Obter mensagem
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e relações do objeto de [mensagem](../resources/message.md) .
+Recupere as propriedades e os relacionamentos do objeto [Message](../resources/message.md) .
 
-Por exemplo, você pode obter uma mensagem e expandir todas as instâncias [mencionar](../resources/mention.md) na mensagem.
+Por exemplo, você pode obter uma mensagem e expandir todas as instâncias de [menção](../resources/mention.md) na mensagem.
 
-Há dois cenários onde um aplicativo pode obter uma mensagem na pasta de email de outro usuário:
+Há dois cenários em que um aplicativo pode obter uma mensagem na pasta email de outro usuário:
 
-* Se o aplicativo tem permissões de aplicativo ou
-* Se o aplicativo tiver apropriada [permissões](#permissions) delegadas de um usuário, e outro usuário compartilhou uma pasta de email com que o usuário ou, tem acesso delegado a esse usuário. Confira os [detalhes e um exemplo](/graph/outlook-share-messages-folders).
+* Se o aplicativo tiver permissões de aplicativo ou
+* Se o aplicativo tiver as [permissões](#permissions) delegadas apropriadas de um usuário, e outro usuário tiver compartilhado uma pasta de email com esse usuário, ou, o terá acesso delegado a esse usuário. Confira [detalhes e um exemplo](/graph/outlook-share-messages-folders).
 
 Como o recurso **message** dá suporte a [extensions](/graph/extensibility-overview), você também pode usar a operação `GET` para obter propriedades personalizadas e dados de extensão em uma instância de **message**.
 
@@ -32,13 +32,14 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Mail.Read    |
-|Delegado (conta pessoal da Microsoft) | Mail.Read    |
+|Delegado (conta corporativa ou de estudante) | Mail. ReadBasic, mail. Read    |
+|Delegado (conta pessoal da Microsoft) | Mail. ReadBasic, mail. Read    |
 |Aplicativo | Mail.Read |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-Para obter a mensagem especificada:<!-- { "blockType": "ignored" } -->
+Para obter a mensagem especificada:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages/{id}
 GET /users/{id | userPrincipalName}/messages/{id}
@@ -46,7 +47,8 @@ GET /me/mailFolders/{id}/messages/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
 
-Para obter uma mensagem e expanda todas as menções na mensagem:<!-- { "blockType": "ignored" } -->
+Para obter uma mensagem e expandir todas as menção na mensagem:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages/{id}?$expand=mentions
 GET /users/{id | userPrincipalName}/messages/{id}?$expand=mentions
@@ -57,7 +59,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}?$expand=menti
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
 
-Você pode usar o `$expand` expandida de parâmetro de consulta na propriedade navegação **menções** para obter uma mensagem com os detalhes de cada [mencionar](../resources/mention.md) na mensagem.
+Você pode usar o `$expand` parâmetro de consulta na propriedade de navegação **menciona** para obter uma mensagem com os detalhes de cada [menção](../resources/mention.md) na mensagem expandida.
 
 
 
@@ -75,7 +77,7 @@ Não forneça um corpo de solicitação para esse método.
 Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [message](../resources/message.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request-1"></a>Solicitação 1
-O exemplo primeiro obtém a mensagem especificada. Não especifica nenhum cabeçalho para indicar o formato desejado do corpo a ser retornado.
+O primeiro exemplo obtém a mensagem especificada. Ele não especifica nenhum cabeçalho para indicar o formato desejado do corpo a ser retornado.
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkAGI1AAAoZCfHAAA="],
@@ -85,8 +87,8 @@ O exemplo primeiro obtém a mensagem especificada. Não especifica nenhum cabeç
 GET https://graph.microsoft.com/beta/me/messages('AAMkAGI1AAAoZCfHAAA=')
 ```
 ##### <a name="response-1"></a>Resposta 1
-Veja a seguir um exemplo da resposta. As propriedades de **corpo** e **uniqueBody** são retornadas no formato HTML padrão.
-Observação: No objeto response mostrado aqui é truncado para fins de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. As propriedades **Body** e **uniqueBody** são retornadas no formato HTML padrão.
+Observação: o objeto Response mostrado aqui é truncado por brevidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -115,7 +117,7 @@ Content-length: 523
 ```
 
 ##### <a name="request-2"></a>Solicitação 2
-No próximo exemplo, o usuário entrou no é Dana Swope. O exemplo mostra a obtenção de detalhes de todas as menções na mensagem especificada na caixa de correio da Dana.
+No próximo exemplo, o usuário conectado é Dana Swope. O exemplo mostra a obtenção de detalhes de todas as menções na mensagem especificada na caixa de correio da Dana.
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AQMkADJmMTUAAAgVZAAAA"],
@@ -225,7 +227,7 @@ Content-length: 2248
 
 ##### <a name="request-3"></a>Solicitação 3
 
-O terceiro exemplo mostra como usar um `Prefer: outlook.body-content-type="text"` cabeçalho para obter o **corpo** e o **uniqueBody** da mensagem especificada no formato de texto.
+O terceiro exemplo mostra como usar um `Prefer: outlook.body-content-type="text"` cabeçalho para obter o **corpo** e **uniqueBody** da mensagem especificada no formato de texto.
 
 <!-- {
   "blockType": "request",
@@ -240,7 +242,7 @@ Prefer: outlook.body-content-type="text"
 
 ##### <a name="response-3"></a>Resposta 3
 
-Veja a seguir um exemplo da resposta. Observação: A resposta inclui um `Preference-Applied: outlook.body-content-type` cabeçalho de agradecer a `Prefer: outlook.body-content-type` cabeçalho de solicitação.
+Veja a seguir um exemplo da resposta. Observação: a resposta inclui um `Preference-Applied: outlook.body-content-type` cabeçalho para confirmar o `Prefer: outlook.body-content-type` cabeçalho da solicitação.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -271,7 +273,7 @@ Content-length: 1550
 
 ##### <a name="request-4"></a>Solicitação 4
 
-O quarto exemplo mostra como obter os cabeçalhos de mensagem de Internet de uma mensagem específica.  
+O quarto exemplo mostra como obter os cabeçalhos de mensagem da Internet de uma mensagem específica.  
 
 <!-- {
   "blockType": "request",
@@ -285,7 +287,7 @@ GET https://graph.microsoft.com/beta/me/messages('AAMkAGVmMDEz')?$select=interne
 
 ##### <a name="response-4"></a>Resposta 4
 
-Veja a seguir um exemplo da resposta. Observação: O número de cabeçalhos de mensagem da Internet no objeto response foi reduzido para fins de concisão.
+Veja a seguir um exemplo da resposta. Observação: o número de cabeçalhos de mensagens da Internet no objeto Response foi reduzido por brevidade.
 
 <!-- {
   "blockType": "response",
@@ -328,9 +330,9 @@ Content-type: application/json
 
 ## <a name="see-also"></a>Confira também
 
-- [Adicionar dados personalizados a recursos usando extensões](/graph/extensibility-overview)
+- [Adicionar dados personalizados aos recursos usando extensões](/graph/extensibility-overview)
 - [Adicionar dados personalizados aos usuários usando extensões abertas (visualização)](/graph/extensibility-open-users)
-- [Adicionar dados personalizados a grupos usando extensões do esquema (visualização)](/graph/extensibility-schema-groups)
+- [Adicionar dados personalizados a grupos usando extensões de esquema (visualização)](/graph/extensibility-schema-groups)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
