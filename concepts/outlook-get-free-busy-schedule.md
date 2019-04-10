@@ -4,12 +4,12 @@ description: Em uma configuração de escola ou trabalho, um cenário comum é v
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 8ecf31ec74327d4f5fbd9d585eef24fcaec60709
-ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
+ms.openlocfilehash: 5e8fd1cd96c852c07c87bcaa35396fdd0fa5857d
+ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30869194"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "31518494"
 ---
 # <a name="get-freebusy-schedule-of-users-and-resources"></a>Obter agenda de disponibilidade de usuários e recursos
 
@@ -125,10 +125,10 @@ Content-type: application/json
 
 Além da disponibilidade da agenda e das horas de trabalho do Alex, **getSchedule** também retorna **availabilityView**, que é uma visualização mesclada da disponibilidade do Alex a cada dia. O modo de exibição mesclado é uma cadeia de caracteres que consiste em intervalos de tempo abrangendo aquele dia, sendo que cada intervalo de tempo indica a disponibilidade do Alex usando a seguinte convenção: 
 
-- `0` = livre
-- `1` = provisório
-- `2` = ocupado
-- `3` = ausência temporária
+- `0`= livre
+- `1`= provisório
+- `2`= ocupado
+- `3`= ausência temporária
 - `4`= trabalhando em outro lugar. 
 
 Por padrão, a duração de cada intervalo de tempo é de 30 minutos. Este exemplo usa a propriedade **availabilityViewInterval** para personalizar o intervalo de tempo para 15 minutos.
@@ -158,7 +158,7 @@ O **getSchedule** simplesmente retorna o status de disponibilidade dos eventos e
 ### <a name="permissions"></a>Permissões
 A permissão menos privilegiada exigida pelo **findmeetingtimes**é Calendars.Read.Shared.
 
-A permissão menos privilegiada exigida pelo **getSchedule** é Calendar.Read. 
+A permissão menos privilegiada exigida por **getSchedule** é Calendars.Read. 
 
 ### <a name="version-support"></a>Suporte para versões
 
@@ -166,7 +166,7 @@ O **findmeetingtimes** e o **getSchedule** estão geralmente disponíveis e adeq
 
 
 ## <a name="event-data-returned"></a>Dados de evento retornados
-A permissão menos privilegiada exigida pelo **getSchedule** para um aplicativo para obter informações de disponibilidade é Calendar.Read. Dependendo do cenário do aplicativo, este consentimento pode vir do usuário conectado ou do administrador.
+A permissão menos privilegiada exigida por **getSchedule** para que um aplicativo obtenha informações de disponibilidade é Calendars.Read. Dependendo do cenário do aplicativo, este consentimento pode vir do usuário conectado ou do administrador.
 
 Embora a permissão consentida permite com que um aplicativo use o **getSchedule** nos calendários dos usuários solicitados pelo Outlook, o usuário solicitado controla quais dados de evento, caso existam, o **getSchedule** retornará. 
 
