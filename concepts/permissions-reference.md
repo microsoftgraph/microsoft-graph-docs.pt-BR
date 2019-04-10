@@ -3,12 +3,12 @@ title: 'Referência de permissões do Microsoft Graph '
 description: O Microsoft Graph expõe as permissões granulares que controlam o acesso que os aplicativos têm aos recursos, como email, grupos e usuários. Como desenvolvedor, você decide quais permissões para o Microsoft Graph seu aplicativo deverá solicitar.
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: 7bdd5b9ca02a05676a2b745b6087acfb39cf3304
-ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
+ms.openlocfilehash: 6dd7d831c621170b6f9739d112793c215425b9c2
+ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30364560"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "31518557"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph 
 O Microsoft Graph expõe as permissões granulares que controlam o acesso que os aplicativos têm aos recursos, como email, grupos e usuários. Como desenvolvedor, você decide quais permissões para o Microsoft Graph seu aplicativo deverá solicitar. Quando um usuário entra no aplicativo, ele, ou, em alguns casos, um administrador, tem a opção de consentir essas permissões. Se o usuário consentir, seu aplicativo receberá acesso aos recursos e APIs que solicitados. Para aplicativos que não aceitam usuários conectados, as permissões podem ser previamente consentidas pelo administrador quando o aplicativo é instalado ou durante a inscrição. 
@@ -174,7 +174,7 @@ Nenhuma.
 
 #### <a name="application"></a>Aplicativo
 
-* _Calendars.Read_: Localizar eventos do calendário de uma sala de conferências organizado por pedro@contoso.com (`GET /users/{id | userPrincipalName}/events?$filter=organizer/emailAddress/address eq 'bob@contoso.com'`).
+* _Calendars.Read_: Localizar eventos em um calendário de sala de conferência organizado por bob@contoso.com (`GET /users/{id | userPrincipalName}/events?$filter=organizer/emailAddress/address eq 'bob@contoso.com'`).
 * _Calendars.Read_: Listar todos os eventos do mês de maio do calendário de um usuário (`GET /users/{id | userPrincipalName}/calendarView?startDateTime=2017-05-01T00:00:00&endDateTime=2017-06-01T00:00:00`)
 * _Calendars.ReadWrite_: Adicionar um evento de folga aprovada (`POST /users/{id | userPrincipalName}/events`) ao calendário de um usuário.
 * _Calendars.Send_: Enviar uma mensagem (`POST /users/{id | userPrincipalName}/sendCalendars`).
@@ -628,6 +628,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 |   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | _Mail.Read_ |    Ler emails do usuário | Permite ao aplicativo ler emails em caixas de correio do usuário. | Não | Sim
+| _Mail.ReadBasic_ |    Ler emails do usuário em modo básico (visualização) | (Visualização) Permite que o aplicativo leia a caixa de correio do usuário conectado, exceto o corpo, previewBody, anexos e quaisquer propriedades estendidas. Não inclui permissões para pesquisar mensagens. | Não | Sim
 | _Mail.ReadWrite_ |    Acesso de leitura e gravação aos emails do usuário | Permite ao aplicativo criar, ler, atualizar e excluir emails em caixas de correio do usuário. Não inclui a permissão para enviar emails.| Não | Sim
 | _Mail.Read.Shared_ |    Ler email compartilhado e de usuário | Permite que o aplicativo leia os emails que o usuário pode acessar, incluindo os próprios contatos do usuário e os emails compartilhados. | Não | Não
 | _Mail.ReadWrite.Shared_ |    Ler e registrar usuário e emails compartilhados | Permite que o aplicativo crie, leia, atualize e exclua emails que o usuário tem permissão de acessar, incluindo os emails compartilhados e os do próprio usuário. Não inclui a permissão para enviar emails. | Não | Não
@@ -664,7 +665,7 @@ Com a permissão _Mail.Send_ ou _Mail.Send.Shared_, um aplicativo pode enviar em
 
 #### <a name="application"></a>Aplicativo
 
-* _Mail.Read_: Localizar mensagens de pedro@contoso.com (`GET /users/{id | userPrincipalName}/messages?$filter=from/emailAddress/address eq 'bob@contoso.com'`).
+* _Mail.Read_: Localizar mensagens de bob@contoso.com (`GET /users/{id | userPrincipalName}/messages?$filter=from/emailAddress/address eq 'bob@contoso.com'`).
 * _Mail.ReadWrite_: Criar uma nova pasta na Caixa de Entrada chamada `Expense Reports` (`POST /users/{id | userPrincipalName}/mailfolders`).
 * _Mail.Send_: Enviar uma mensagem (`POST /users/{id | userPrincipalName}/sendmail`).
 * _MailboxSettings.Read_: Obter o fuso horário padrão para a caixa de correio do usuário (`GET /users/{id | userPrincipalName}/mailboxSettings/timeZone`)
@@ -807,7 +808,7 @@ Para cenários mais complexos que envolvem várias permissões, confira [Cenári
 | _email_ |    Exibir o endereço de email do usuário | Permite ao aplicativo ler o endereço de email principal do usuário. | Não | Não |
 | _offline_access_ |    Acessar dados do usuário a qualquer momento | Permite ao aplicativo ler e atualizar dados do usuário, mesmo quando eles não estiver usando o aplicativo.| Não | Não |
 | _openid_ |    Conectar os usuários | Permite aos usuários entrar no aplicativo com contas corporativas ou de estudante e permite ao aplicativo ver informações básicas do perfil do usuário.| Não | Não |
-| _profile_ |    Exibir os perfis básicos dos usuários | Permite que o aplicativo veja o perfil básico do usuário (nome, foto, nome de usuário).| Não | Não |
+| _perfil_ |    Exibir os perfis básicos dos usuários | Permite que o aplicativo veja o perfil básico do usuário (nome, foto, nome de usuário).| Não | Não |
 
 #### <a name="application-permissions"></a>Permissões de aplicativos
 
@@ -1137,9 +1138,9 @@ Esta seção mostra alguns cenários comuns direcionados aos recursos [usuário]
 
 ### <a name="access-scenarios-on-the-user-resource"></a>Cenários de acesso do recurso Usuário
 
-| **Tarefas do aplicativo envolvendo o Usuário**   |  **Permissões necessárias** | **Cadeias de caracteres de permissão** |
+| **Tarefas do aplicativo envolvendo o Usuário**   |  **Permissões obrigatórias** | **Cadeias de caracteres de permissão** |
 |:-------------------------------|:---------------------|:---------------|
-| O aplicativo deseja ler as informações básicas de outros usuários (somente o nome para exibição e a imagem), por exemplo, para mostrar uma experiência de seleção de pessoas   | _User.ReadBasic.All_  |  Ler todos os perfis básicos do usuário |
+| O aplicativo deseja ler as informações básicas de outros usuários (somente o nome e a imagem de exibição), por exemplo, para mostrar uma experiência de seleção de pessoas   | _User.ReadBasic.All_  |  Ler todos os perfis básicos do usuário |
 | O aplicativo deseja ler o perfil completo do usuário de um usuário conectado (ver subordinados diretos, gerente etc.)     | _User.Read_ | Habilitar entrada e ler o perfil de usuário|
 | O aplicativo deseja ler o perfil completo de todos os usuários  | _User.Read.All_ |  Ler os perfis completos de todos os usuários   |
 | O aplicativo deseja ler informações de arquivos, email e calendário do usuário conectado  | _User.Read_, _Files.Read_, _Mail.Read_, _Calendars.Read_ | Habilitar entrada e ler o perfil de usuário, ler arquivos dos usuários, ler email do usuário, ler calendários do usuário |
@@ -1152,9 +1153,9 @@ Esta seção mostra alguns cenários comuns direcionados aos recursos [usuário]
 
 ### <a name="access-scenarios-on-the-group-resource"></a>Cenários de acesso do recurso Grupo
     
-| **Tarefas do aplicativo envolvendo o Grupo**  |  **Permissões necessárias** |  **Cadeias de caracteres de permissão** |
+| **Tarefas do aplicativo envolvendo o Grupo**  |  **Permissões obrigatórias** |  **Cadeias de caracteres de permissão** |
 |:-------------------------------|:---------------------|:---------------|
-| O aplicativo deseja ler as informações básicas do grupo (somente o nome para exibição e a imagem), por exemplo, para mostrar uma experiência de seleção de um grupo  | _Group.Read.All_  | Ler todos os grupos|
+| O aplicativo deseja ler as informações básicas do grupo (somente o nome e a imagem de exibição), por exemplo, para mostrar uma experiência de seleção de um grupo  | _Group.Read.All_  | Ler todos os grupos|
 | O aplicativo deseja ler todo o conteúdo em todos os grupos do Office 365, incluindo arquivos, conversas.  Também precisa mostrar associações de grupo, ser capaz de atualizar associações de grupo (caso seja o proprietário).  |  _Group.Read.All_ | Ler itens em todos os conjuntos de sites, ler todos os grupos|
 | O aplicativo deseja ler e gravar todo o conteúdo em todos os grupos do Office 365, incluindo arquivos, conversas.  Também precisa mostrar associações de grupo, ser capaz de atualizar associações de grupo (caso seja o proprietário).  |   _Group.ReadWrite.All_, _Sites.ReadWrite.All_ |  Ler e gravar todos os grupos, editar ou excluir itens em todos os conjuntos de sites |
 | O aplicativo deseja descobrir (localizar) um grupo do Office 365. Permite ao usuário procurar um grupo específico e escolher um deles na lista enumerada para ingressar no grupo.     | _Group.ReadWrite.All_ | Ler e gravar todos os grupos|
