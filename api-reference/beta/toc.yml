@@ -5113,10 +5113,216 @@ items:
                 href: resources/intune-devices-deviceguardvirtualizationbasedsecuritystate.md
               - name: Estado do atestado de integridade do dispositivo
                 href: resources/intune-devices-devicehealthattestationstate.md
+              - name: Definição de configuração complexa abstrata de gerenciamento de dispositivos
+                href: resources/intune-deviceintent-devicemanagementabstractcomplexsettingdefinition.md
+                items:
+                  - name: Listar
+                    href: api/intune-deviceintent-devicemanagementabstractcomplexsettingdefinition-list.md
+                  - name: Obter
+                    href: api/intune-deviceintent-devicemanagementabstractcomplexsettingdefinition-get.md
+                  - name: Criar
+                    href: api/intune-deviceintent-devicemanagementabstractcomplexsettingdefinition-create.md
+                  - name: Excluir
+                    href: api/intune-deviceintent-devicemanagementabstractcomplexsettingdefinition-delete.md
+                  - name: Atualizar
+                    href: api/intune-deviceintent-devicemanagementabstractcomplexsettingdefinition-update.md
+              - name: Instância de configuração complexa abstrata de gerenciamento de dispositivos
+                href: resources/intune-deviceintent-devicemanagementabstractcomplexsettinginstance.md
+                items:
+                  - name: Listar
+                    href: api/intune-deviceintent-devicemanagementabstractcomplexsettinginstance-list.md
+                  - name: Obter
+                    href: api/intune-deviceintent-devicemanagementabstractcomplexsettinginstance-get.md
+                  - name: Criar
+                    href: api/intune-deviceintent-devicemanagementabstractcomplexsettinginstance-create.md
+                  - name: Excluir
+                    href: api/intune-deviceintent-devicemanagementabstractcomplexsettinginstance-delete.md
+                  - name: Atualizar
+                    href: api/intune-deviceintent-devicemanagementabstractcomplexsettinginstance-update.md
+              - name: Instância de configuração booleana de gerenciamento de dispositivos
+                href: resources/intune-deviceintent-devicemanagementbooleansettinginstance.md
+                items:
+                  - name: Listar
+                    href: api/intune-deviceintent-devicemanagementbooleansettinginstance-list.md
+                  - name: Obter
+                    href: api/intune-deviceintent-devicemanagementbooleansettinginstance-get.md
+                  - name: Criar
+                    href: api/intune-deviceintent-devicemanagementbooleansettinginstance-create.md
+                  - name: Excluir
+                    href: api/intune-deviceintent-devicemanagementbooleansettinginstance-delete.md
+                  - name: Atualizar
+                    href: api/intune-deviceintent-devicemanagementbooleansettinginstance-update.md
+              - name: Definição de configuração da coleção de gerenciamento de dispositivos
+                href: resources/intune-deviceintent-devicemanagementcollectionsettingdefinition.md
+                items:
+                  - name: Listar
+                    href: api/intune-deviceintent-devicemanagementcollectionsettingdefinition-list.md
+                  - name: Obter
+                    href: api/intune-deviceintent-devicemanagementcollectionsettingdefinition-get.md
+                  - name: Criar
+                    href: api/intune-deviceintent-devicemanagementcollectionsettingdefinition-create.md
+                  - name: Excluir
+                    href: api/intune-deviceintent-devicemanagementcollectionsettingdefinition-delete.md
+                  - name: Atualizar
+                    href: api/intune-deviceintent-devicemanagementcollectionsettingdefinition-update.md
+              - name: Instância de configuração da coleção de gerenciamento de dispositivos
+                href: resources/intune-deviceintent-devicemanagementcollectionsettinginstance.md
+                items:
+                  - name: Listar
+                    href: api/intune-deviceintent-devicemanagementcollectionsettinginstance-list.md
+                  - name: Obter
+                    href: api/intune-deviceintent-devicemanagementcollectionsettinginstance-get.md
+                  - name: Criar
+                    href: api/intune-deviceintent-devicemanagementcollectionsettinginstance-create.md
+                  - name: Excluir
+                    href: api/intune-deviceintent-devicemanagementcollectionsettinginstance-delete.md
+                  - name: Atualizar
+                    href: api/intune-deviceintent-devicemanagementcollectionsettinginstance-update.md
+              - name: Definição de configuração complexa de gerenciamento de dispositivos
+                href: resources/intune-deviceintent-devicemanagementcomplexsettingdefinition.md
+                items:
+                  - name: Listar
+                    href: api/intune-deviceintent-devicemanagementcomplexsettingdefinition-list.md
+                  - name: Obter
+                    href: api/intune-deviceintent-devicemanagementcomplexsettingdefinition-get.md
+                  - name: Criar
+                    href: api/intune-deviceintent-devicemanagementcomplexsettingdefinition-create.md
+                  - name: Excluir
+                    href: api/intune-deviceintent-devicemanagementcomplexsettingdefinition-delete.md
+                  - name: Atualizar
+                    href: api/intune-deviceintent-devicemanagementcomplexsettingdefinition-update.md
+              - name: Instância de configuração complexa de gerenciamento de dispositivos
+                href: resources/intune-deviceintent-devicemanagementcomplexsettinginstance.md
+                items:
+                  - name: Listar
+                    href: api/intune-deviceintent-devicemanagementcomplexsettinginstance-list.md
+                  - name: Obter
+                    href: api/intune-deviceintent-devicemanagementcomplexsettinginstance-get.md
+                  - name: Criar
+                    href: api/intune-deviceintent-devicemanagementcomplexsettinginstance-create.md
+                  - name: Excluir
+                    href: api/intune-deviceintent-devicemanagementcomplexsettinginstance-delete.md
+                  - name: Atualizar
+                    href: api/intune-deviceintent-devicemanagementcomplexsettinginstance-update.md
+              - name: Restrição de gerenciamento de dispositivos
+                href: resources/intune-deviceintent-devicemanagementconstraint.md
+              - name: Restrição de enum de gerenciamento de dispositivos
+                href: resources/intune-deviceintent-devicemanagementenumconstraint.md
+              - name: Valor de enum de gerenciamento de dispositivos
+                href: resources/intune-deviceintent-devicemanagementenumvalue.md
               - name: Estado de acesso do Exchange de gerenciamento de dispositivo
                 href: resources/intune-devices-devicemanagementexchangeaccessstate.md
               - name: Motivo do estado de acesso do Exchange de gerenciamento de dispositivo
                 href: resources/intune-devices-devicemanagementexchangeaccessstatereason.md
+              - name: Instância de configuração de inteiro do gerenciamento de dispositivos
+                href: resources/intune-deviceintent-devicemanagementintegersettinginstance.md
+                items:
+                  - name: Listar
+                    href: api/intune-deviceintent-devicemanagementintegersettinginstance-list.md
+                  - name: Obter
+                    href: api/intune-deviceintent-devicemanagementintegersettinginstance-get.md
+                  - name: Criar
+                    href: api/intune-deviceintent-devicemanagementintegersettinginstance-create.md
+                  - name: Excluir
+                    href: api/intune-deviceintent-devicemanagementintegersettinginstance-delete.md
+                  - name: Atualizar
+                    href: api/intune-deviceintent-devicemanagementintegersettinginstance-update.md
+              - name: Tentativa do gerenciamento de dispositivos
+                href: resources/intune-deviceintent-devicemanagementintent.md
+                items:
+                  - name: Listar
+                    href: api/intune-deviceintent-devicemanagementintent-list.md
+                  - name: Obter
+                    href: api/intune-deviceintent-devicemanagementintent-get.md
+                  - name: Criar
+                    href: api/intune-deviceintent-devicemanagementintent-create.md
+                  - name: Excluir
+                    href: api/intune-deviceintent-devicemanagementintent-delete.md
+                  - name: Atualizar
+                    href: api/intune-deviceintent-devicemanagementintent-update.md
+                  - name: ação updateSettings
+                    href: api/intune-deviceintent-devicemanagementintent-updatesettings.md
+                  - name: atribuir ação
+                    href: api/intune-deviceintent-devicemanagementintent-assign.md
+              - name: Atribuição de tentativa do gerenciamento de dispositivos
+                href: resources/intune-deviceintent-devicemanagementintentassignment.md
+                items:
+                  - name: Listar
+                    href: api/intune-deviceintent-devicemanagementintentassignment-list.md
+                  - name: Obter
+                    href: api/intune-deviceintent-devicemanagementintentassignment-get.md
+                  - name: Criar
+                    href: api/intune-deviceintent-devicemanagementintentassignment-create.md
+                  - name: Excluir
+                    href: api/intune-deviceintent-devicemanagementintentassignment-delete.md
+                  - name: Atualizar
+                    href: api/intune-deviceintent-devicemanagementintentassignment-update.md
+              - name: Resumo do estado da configuração do dispositivo de tentativa do gerenciamento de dispositivos
+                href: resources/intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md
+                items:
+                  - name: Listar
+                    href: api/intune-deviceintent-devicemanagementintentdevicesettingstatesummary-list.md
+                  - name: Obter
+                    href: api/intune-deviceintent-devicemanagementintentdevicesettingstatesummary-get.md
+                  - name: Criar
+                    href: api/intune-deviceintent-devicemanagementintentdevicesettingstatesummary-create.md
+                  - name: Excluir
+                    href: api/intune-deviceintent-devicemanagementintentdevicesettingstatesummary-delete.md
+                  - name: Atualizar
+                    href: api/intune-deviceintent-devicemanagementintentdevicesettingstatesummary-update.md
+              - name: Estado do dispositivo de tentativa do gerenciamento de dispositivos
+                href: resources/intune-deviceintent-devicemanagementintentdevicestate.md
+                items:
+                  - name: Listar
+                    href: api/intune-deviceintent-devicemanagementintentdevicestate-list.md
+                  - name: Obter
+                    href: api/intune-deviceintent-devicemanagementintentdevicestate-get.md
+                  - name: Criar
+                    href: api/intune-deviceintent-devicemanagementintentdevicestate-create.md
+                  - name: Excluir
+                    href: api/intune-deviceintent-devicemanagementintentdevicestate-delete.md
+                  - name: Atualizar
+                    href: api/intune-deviceintent-devicemanagementintentdevicestate-update.md
+              - name: Resumo do estado do dispositivo de tentativa do gerenciamento de dispositivos
+                href: resources/intune-deviceintent-devicemanagementintentdevicestatesummary.md
+                items:
+                  - name: Obter
+                    href: api/intune-deviceintent-devicemanagementintentdevicestatesummary-get.md
+                  - name: Atualizar
+                    href: api/intune-deviceintent-devicemanagementintentdevicestatesummary-update.md
+              - name: Categoria de configuração de tentativa do gerenciamento de dispositivos
+                href: resources/intune-deviceintent-devicemanagementintentsettingcategory.md
+                items:
+                  - name: Listar
+                    href: api/intune-deviceintent-devicemanagementintentsettingcategory-list.md
+                  - name: Obter
+                    href: api/intune-deviceintent-devicemanagementintentsettingcategory-get.md
+                  - name: Criar
+                    href: api/intune-deviceintent-devicemanagementintentsettingcategory-create.md
+                  - name: Excluir
+                    href: api/intune-deviceintent-devicemanagementintentsettingcategory-delete.md
+                  - name: Atualizar
+                    href: api/intune-deviceintent-devicemanagementintentsettingcategory-update.md
+              - name: Estado do usuário de tentativa do gerenciamento de dispositivos
+                href: resources/intune-deviceintent-devicemanagementintentuserstate.md
+                items:
+                  - name: Listar
+                    href: api/intune-deviceintent-devicemanagementintentuserstate-list.md
+                  - name: Obter
+                    href: api/intune-deviceintent-devicemanagementintentuserstate-get.md
+                  - name: Criar
+                    href: api/intune-deviceintent-devicemanagementintentuserstate-create.md
+                  - name: Excluir
+                    href: api/intune-deviceintent-devicemanagementintentuserstate-delete.md
+                  - name: Atualizar
+                    href: api/intune-deviceintent-devicemanagementintentuserstate-update.md
+              - name: Resumo do estado do usuário de tentativa do gerenciamento de dispositivos
+                href: resources/intune-deviceintent-devicemanagementintentuserstatesummary.md
+                items:
+                  - name: Obter
+                    href: api/intune-deviceintent-devicemanagementintentuserstatesummary-get.md
+                  - name: Atualizar
+                    href: api/intune-deviceintent-devicemanagementintentuserstatesummary-update.md
               - name: Script de gerenciamento de dispositivo
                 href: resources/intune-devices-devicemanagementscript.md
                 items:
@@ -5191,10 +5397,96 @@ items:
                     href: api/intune-devices-devicemanagementscriptuserstate-delete.md
                   - name: Atualizar
                     href: api/intune-devices-devicemanagementscriptuserstate-update.md
+              - name: Restrição booleana de configuração do gerenciamento de dispositivos
+                href: resources/intune-deviceintent-devicemanagementsettingbooleanconstraint.md
+              - name: Categoria de configuração do gerenciamento de dispositivos
+                href: resources/intune-deviceintent-devicemanagementsettingcategory.md
+                items:
+                  - name: Listar
+                    href: api/intune-deviceintent-devicemanagementsettingcategory-list.md
+                  - name: Obter
+                    href: api/intune-deviceintent-devicemanagementsettingcategory-get.md
+                  - name: Criar
+                    href: api/intune-deviceintent-devicemanagementsettingcategory-create.md
+                  - name: Excluir
+                    href: api/intune-deviceintent-devicemanagementsettingcategory-delete.md
+                  - name: Atualizar
+                    href: api/intune-deviceintent-devicemanagementsettingcategory-update.md
+              - name: Definição de configuração do gerenciamento de dispositivos
+                href: resources/intune-deviceintent-devicemanagementsettingdefinition.md
+                items:
+                  - name: Listar
+                    href: api/intune-deviceintent-devicemanagementsettingdefinition-list.md
+                  - name: Obter
+                    href: api/intune-deviceintent-devicemanagementsettingdefinition-get.md
+                  - name: Criar
+                    href: api/intune-deviceintent-devicemanagementsettingdefinition-create.md
+                  - name: Excluir
+                    href: api/intune-deviceintent-devicemanagementsettingdefinition-delete.md
+                  - name: Atualizar
+                    href: api/intune-deviceintent-devicemanagementsettingdefinition-update.md
+              - name: Dependência de configuração do gerenciamento de dispositivos
+                href: resources/intune-deviceintent-devicemanagementsettingdependency.md
+              - name: Instância de configuração do gerenciamento de dispositivos
+                href: resources/intune-deviceintent-devicemanagementsettinginstance.md
+                items:
+                  - name: Listar
+                    href: api/intune-deviceintent-devicemanagementsettinginstance-list.md
+                  - name: Obter
+                    href: api/intune-deviceintent-devicemanagementsettinginstance-get.md
+              - name: Restrição de número inteiro da configuração do gerenciamento de dispositivos
+                href: resources/intune-deviceintent-devicemanagementsettingintegerconstraint.md
+              - name: Restrição de regex de configuração do gerenciamento de dispositivos
+                href: resources/intune-deviceintent-devicemanagementsettingregexconstraint.md
+              - name: Restrição de comprimento de cadeia de caracteres de configuração do gerenciamento de dispositivos
+                href: resources/intune-deviceintent-devicemanagementsettingstringlengthconstraint.md
+              - name: Restrição de xml de configuração do gerenciamento de dispositivos
+                href: resources/intune-deviceintent-devicemanagementsettingxmlconstraint.md
+              - name: Instância de configuração da cadeia de caracteres do gerenciamento de dispositivos
+                href: resources/intune-deviceintent-devicemanagementstringsettinginstance.md
+                items:
+                  - name: Listar
+                    href: api/intune-deviceintent-devicemanagementstringsettinginstance-list.md
+                  - name: Obter
+                    href: api/intune-deviceintent-devicemanagementstringsettinginstance-get.md
+                  - name: Criar
+                    href: api/intune-deviceintent-devicemanagementstringsettinginstance-create.md
+                  - name: Excluir
+                    href: api/intune-deviceintent-devicemanagementstringsettinginstance-delete.md
+                  - name: Atualizar
+                    href: api/intune-deviceintent-devicemanagementstringsettinginstance-update.md
               - name: Estado de assinatura de gerenciamento de dispositivo
                 href: resources/intune-devices-devicemanagementsubscriptionstate.md
               - name: Assinaturas de gerenciamento de dispositivo
                 href: resources/intune-devices-devicemanagementsubscriptions.md
+              - name: Modelo do gerenciamento de dispositivos
+                href: resources/intune-deviceintent-devicemanagementtemplate.md
+                items:
+                  - name: Listar
+                    href: api/intune-deviceintent-devicemanagementtemplate-list.md
+                  - name: Obter
+                    href: api/intune-deviceintent-devicemanagementtemplate-get.md
+                  - name: Criar
+                    href: api/intune-deviceintent-devicemanagementtemplate-create.md
+                  - name: Excluir
+                    href: api/intune-deviceintent-devicemanagementtemplate-delete.md
+                  - name: Atualizar
+                    href: api/intune-deviceintent-devicemanagementtemplate-update.md
+                  - name: ação createInstance
+                    href: api/intune-deviceintent-devicemanagementtemplate-createinstance.md
+              - name: Categoria de configuração de modelo do gerenciamento de dispositivos
+                href: resources/intune-deviceintent-devicemanagementtemplatesettingcategory.md
+                items:
+                  - name: Listar
+                    href: api/intune-deviceintent-devicemanagementtemplatesettingcategory-list.md
+                  - name: Obter
+                    href: api/intune-deviceintent-devicemanagementtemplatesettingcategory-get.md
+                  - name: Criar
+                    href: api/intune-deviceintent-devicemanagementtemplatesettingcategory-create.md
+                  - name: Excluir
+                    href: api/intune-deviceintent-devicemanagementtemplatesettingcategory-delete.md
+                  - name: Atualizar
+                    href: api/intune-deviceintent-devicemanagementtemplatesettingcategory-update.md
               - name: Detalhes de erros de solução de problemas de gerenciamento de dispositivo
                 href: resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md
               - name: Recursos de erros de solução de problemas de gerenciamento de dispositivo
@@ -5212,6 +5504,8 @@ items:
                     href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-delete.md
                   - name: Atualizar
                     href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-update.md
+              - name: Tipo de valor de tentativa do gerenciamento de dispositivos
+                href: resources/intune-deviceintent-devicemanangementintentvaluetype.md
               - name: Resumo do sistema operacional do dispositivo
                 href: resources/intune-devices-deviceoperatingsystemsummary.md
               - name: Visão geral de proteção de dispositivo
@@ -5541,6 +5835,67 @@ items:
                 href: resources/intune-devices-revokeapplevpplicensesactionresult.md
               - name: Executar cronograma
                 href: resources/intune-devices-runschedule.md
+              - name: Estado de conformidade da linha de base de segurança
+                href: resources/intune-deviceintent-securitybaselinecompliancestate.md
+              - name: Estado do dispositivo de linha de base de segurança
+                href: resources/intune-deviceintent-securitybaselinedevicestate.md
+                items:
+                  - name: Listar
+                    href: api/intune-deviceintent-securitybaselinedevicestate-list.md
+                  - name: Obter
+                    href: api/intune-deviceintent-securitybaselinedevicestate-get.md
+                  - name: Criar
+                    href: api/intune-deviceintent-securitybaselinedevicestate-create.md
+                  - name: Excluir
+                    href: api/intune-deviceintent-securitybaselinedevicestate-delete.md
+                  - name: Atualizar
+                    href: api/intune-deviceintent-securitybaselinedevicestate-update.md
+              - name: Estado de configuração da linha de base de segurança
+                href: resources/intune-deviceintent-securitybaselinesettingstate.md
+                items:
+                  - name: Listar
+                    href: api/intune-deviceintent-securitybaselinesettingstate-list.md
+                  - name: Obter
+                    href: api/intune-deviceintent-securitybaselinesettingstate-get.md
+                  - name: Criar
+                    href: api/intune-deviceintent-securitybaselinesettingstate-create.md
+                  - name: Excluir
+                    href: api/intune-deviceintent-securitybaselinesettingstate-delete.md
+                  - name: Atualizar
+                    href: api/intune-deviceintent-securitybaselinesettingstate-update.md
+              - name: Estado da linha de base de segurança
+                href: resources/intune-deviceintent-securitybaselinestate.md
+                items:
+                  - name: Listar
+                    href: api/intune-deviceintent-securitybaselinestate-list.md
+                  - name: Obter
+                    href: api/intune-deviceintent-securitybaselinestate-get.md
+                  - name: Criar
+                    href: api/intune-deviceintent-securitybaselinestate-create.md
+                  - name: Excluir
+                    href: api/intune-deviceintent-securitybaselinestate-delete.md
+                  - name: Atualizar
+                    href: api/intune-deviceintent-securitybaselinestate-update.md
+              - name: Resumo do estado da linha de base de segurança
+                href: resources/intune-deviceintent-securitybaselinestatesummary.md
+                items:
+                  - name: Obter
+                    href: api/intune-deviceintent-securitybaselinestatesummary-get.md
+                  - name: Atualizar
+                    href: api/intune-deviceintent-securitybaselinestatesummary-update.md
+              - name: Modelo de linha da base de segurança
+                href: resources/intune-deviceintent-securitybaselinetemplate.md
+                items:
+                  - name: Listar
+                    href: api/intune-deviceintent-securitybaselinetemplate-list.md
+                  - name: Obter
+                    href: api/intune-deviceintent-securitybaselinetemplate-get.md
+                  - name: Criar
+                    href: api/intune-deviceintent-securitybaselinetemplate-create.md
+                  - name: Excluir
+                    href: api/intune-deviceintent-securitybaselinetemplate-delete.md
+                  - name: Atualizar
+                    href: api/intune-deviceintent-securitybaselinetemplate-update.md
               - name: Usuário de dispositivo Apple compartilhado
                 href: resources/intune-devices-sharedappledeviceuser.md
               - name: Expressões de condição de gerenciamento unário
