@@ -4,29 +4,30 @@ description: Opções de nome alternativo de entidade.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 89b638a00ca57b497a1447e0a5491563cd228e30
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ea055171fade56361562aeac065a67b23154e207
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30166392"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31792507"
 ---
-# <a name="subjectalternativenametype-enum-type"></a><span data-ttu-id="ad7f3-103">tipo de enumeração subjectAlternativeNameType</span><span class="sxs-lookup"><span data-stu-id="ad7f3-103">subjectAlternativeNameType enum type</span></span>
+# <a name="subjectalternativenametype-enum-type"></a><span data-ttu-id="e5694-103">tipo de enumeração subjectAlternativeNameType</span><span class="sxs-lookup"><span data-stu-id="e5694-103">subjectAlternativeNameType enum type</span></span>
 
-> <span data-ttu-id="ad7f3-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="ad7f3-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="e5694-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="e5694-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="ad7f3-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="ad7f3-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="e5694-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="e5694-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="ad7f3-106">Opções de nome alternativo de entidade.</span><span class="sxs-lookup"><span data-stu-id="ad7f3-106">Subject Alternative Name Options.</span></span>
+<span data-ttu-id="e5694-106">Opções de nome alternativo de entidade.</span><span class="sxs-lookup"><span data-stu-id="e5694-106">Subject Alternative Name Options.</span></span>
 
-## <a name="members"></a><span data-ttu-id="ad7f3-107">Membros</span><span class="sxs-lookup"><span data-stu-id="ad7f3-107">Members</span></span>
-|<span data-ttu-id="ad7f3-108">Membro</span><span class="sxs-lookup"><span data-stu-id="ad7f3-108">Member</span></span>|<span data-ttu-id="ad7f3-109">Valor</span><span class="sxs-lookup"><span data-stu-id="ad7f3-109">Value</span></span>|<span data-ttu-id="ad7f3-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="ad7f3-110">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="e5694-107">Membros</span><span class="sxs-lookup"><span data-stu-id="e5694-107">Members</span></span>
+|<span data-ttu-id="e5694-108">Membro</span><span class="sxs-lookup"><span data-stu-id="e5694-108">Member</span></span>|<span data-ttu-id="e5694-109">Valor</span><span class="sxs-lookup"><span data-stu-id="e5694-109">Value</span></span>|<span data-ttu-id="e5694-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="e5694-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="ad7f3-111">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="ad7f3-111">none</span></span>|<span data-ttu-id="ad7f3-112">,0</span><span class="sxs-lookup"><span data-stu-id="ad7f3-112">0</span></span>|<span data-ttu-id="ad7f3-113">Nenhum nome alternativo de entidade.</span><span class="sxs-lookup"><span data-stu-id="ad7f3-113">No subject alternative name.</span></span>|
-|<span data-ttu-id="ad7f3-114">emailAddress</span><span class="sxs-lookup"><span data-stu-id="ad7f3-114">emailAddress</span></span>|<span data-ttu-id="ad7f3-115">1</span><span class="sxs-lookup"><span data-stu-id="ad7f3-115">1</span></span>|<span data-ttu-id="ad7f3-116">Endereço de email.</span><span class="sxs-lookup"><span data-stu-id="ad7f3-116">Email address.</span></span>|
-|<span data-ttu-id="ad7f3-117">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="ad7f3-117">userPrincipalName</span></span>|<span data-ttu-id="ad7f3-118">duas</span><span class="sxs-lookup"><span data-stu-id="ad7f3-118">2</span></span>|<span data-ttu-id="ad7f3-119">Nome principal do usuário (UPN).</span><span class="sxs-lookup"><span data-stu-id="ad7f3-119">User Principal Name (UPN).</span></span>|
-|<span data-ttu-id="ad7f3-120">customAzureADAttribute</span><span class="sxs-lookup"><span data-stu-id="ad7f3-120">customAzureADAttribute</span></span>|<span data-ttu-id="ad7f3-121">quatro</span><span class="sxs-lookup"><span data-stu-id="ad7f3-121">4</span></span>|<span data-ttu-id="ad7f3-122">Atributo personalizado do Azure AD.</span><span class="sxs-lookup"><span data-stu-id="ad7f3-122">Custom Azure AD Attribute.</span></span>|
-|<span data-ttu-id="ad7f3-123">domainNameService</span><span class="sxs-lookup"><span data-stu-id="ad7f3-123">domainNameService</span></span>|<span data-ttu-id="ad7f3-124">8</span><span class="sxs-lookup"><span data-stu-id="ad7f3-124">8</span></span>|<span data-ttu-id="ad7f3-125">DNS (serviço de nomes de domínio).</span><span class="sxs-lookup"><span data-stu-id="ad7f3-125">Domain Name Service (DNS).</span></span>|
+|<span data-ttu-id="e5694-111">nenhuma</span><span class="sxs-lookup"><span data-stu-id="e5694-111">none</span></span>|<span data-ttu-id="e5694-112">,0</span><span class="sxs-lookup"><span data-stu-id="e5694-112">0</span></span>|<span data-ttu-id="e5694-113">Nenhum nome alternativo de entidade.</span><span class="sxs-lookup"><span data-stu-id="e5694-113">No subject alternative name.</span></span>|
+|<span data-ttu-id="e5694-114">emailAddress</span><span class="sxs-lookup"><span data-stu-id="e5694-114">emailAddress</span></span>|<span data-ttu-id="e5694-115">1</span><span class="sxs-lookup"><span data-stu-id="e5694-115">1</span></span>|<span data-ttu-id="e5694-116">Endereço de email.</span><span class="sxs-lookup"><span data-stu-id="e5694-116">Email address.</span></span>|
+|<span data-ttu-id="e5694-117">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="e5694-117">userPrincipalName</span></span>|<span data-ttu-id="e5694-118">duas</span><span class="sxs-lookup"><span data-stu-id="e5694-118">2</span></span>|<span data-ttu-id="e5694-119">Nome principal do usuário (UPN).</span><span class="sxs-lookup"><span data-stu-id="e5694-119">User Principal Name (UPN).</span></span>|
+|<span data-ttu-id="e5694-120">customAzureADAttribute</span><span class="sxs-lookup"><span data-stu-id="e5694-120">customAzureADAttribute</span></span>|<span data-ttu-id="e5694-121">quatro</span><span class="sxs-lookup"><span data-stu-id="e5694-121">4</span></span>|<span data-ttu-id="e5694-122">Atributo personalizado do Azure AD.</span><span class="sxs-lookup"><span data-stu-id="e5694-122">Custom Azure AD Attribute.</span></span>|
+|<span data-ttu-id="e5694-123">domainNameService</span><span class="sxs-lookup"><span data-stu-id="e5694-123">domainNameService</span></span>|<span data-ttu-id="e5694-124">8</span><span class="sxs-lookup"><span data-stu-id="e5694-124">8</span></span>|<span data-ttu-id="e5694-125">DNS (serviço de nomes de domínio).</span><span class="sxs-lookup"><span data-stu-id="e5694-125">Domain Name Service (DNS).</span></span>|
+
 
 
 

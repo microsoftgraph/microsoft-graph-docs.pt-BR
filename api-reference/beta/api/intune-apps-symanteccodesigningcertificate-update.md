@@ -4,31 +4,31 @@ description: Atualiza as propriedades de um objeto symantecCodeSigningCertificat
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 56c665a75d594d2f1ad0e28c3800348f0fbde9c3
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: d21f72c62bd31bb25312e2b86835c339807d81ae
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30957525"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31792682"
 ---
-# <a name="update-symanteccodesigningcertificate"></a><span data-ttu-id="4d7f0-103">Atualizar symantecCodeSigningCertificate</span><span class="sxs-lookup"><span data-stu-id="4d7f0-103">Update symantecCodeSigningCertificate</span></span>
+# <a name="update-symanteccodesigningcertificate"></a><span data-ttu-id="3b769-103">Atualizar symantecCodeSigningCertificate</span><span class="sxs-lookup"><span data-stu-id="3b769-103">Update symantecCodeSigningCertificate</span></span>
 
-> <span data-ttu-id="4d7f0-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="4d7f0-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="3b769-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="3b769-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="4d7f0-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="4d7f0-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="3b769-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="3b769-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="4d7f0-106">Atualiza as propriedades de um objeto [symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md) .</span><span class="sxs-lookup"><span data-stu-id="4d7f0-106">Update the properties of a [symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md) object.</span></span>
+<span data-ttu-id="3b769-106">Atualiza as propriedades de um objeto [symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md) .</span><span class="sxs-lookup"><span data-stu-id="3b769-106">Update the properties of a [symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="4d7f0-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="4d7f0-107">Prerequisites</span></span>
-<span data-ttu-id="4d7f0-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4d7f0-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="3b769-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="3b769-107">Prerequisites</span></span>
+<span data-ttu-id="3b769-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3b769-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="4d7f0-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="4d7f0-110">Permission type</span></span>|<span data-ttu-id="4d7f0-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="4d7f0-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="3b769-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="3b769-110">Permission type</span></span>|<span data-ttu-id="3b769-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="3b769-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="4d7f0-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="4d7f0-112">Delegated (work or school account)</span></span>|<span data-ttu-id="4d7f0-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4d7f0-113">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="4d7f0-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="4d7f0-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="4d7f0-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="4d7f0-115">Not supported.</span></span>|
-|<span data-ttu-id="4d7f0-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="4d7f0-116">Application</span></span>|<span data-ttu-id="4d7f0-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="4d7f0-117">Not supported.</span></span>|
+|<span data-ttu-id="3b769-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="3b769-112">Delegated (work or school account)</span></span>|<span data-ttu-id="3b769-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3b769-113">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="3b769-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="3b769-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="3b769-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="3b769-115">Not supported.</span></span>|
+|<span data-ttu-id="3b769-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="3b769-116">Application</span></span>|<span data-ttu-id="3b769-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="3b769-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="4d7f0-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="4d7f0-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3b769-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="3b769-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,39 +37,39 @@ ms.locfileid: "30957525"
 PATCH /deviceAppManagement/symantecCodeSigningCertificate
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="4d7f0-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="4d7f0-119">Request headers</span></span>
-|<span data-ttu-id="4d7f0-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="4d7f0-120">Header</span></span>|<span data-ttu-id="4d7f0-121">Valor</span><span class="sxs-lookup"><span data-stu-id="4d7f0-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="3b769-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="3b769-119">Request headers</span></span>
+|<span data-ttu-id="3b769-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="3b769-120">Header</span></span>|<span data-ttu-id="3b769-121">Valor</span><span class="sxs-lookup"><span data-stu-id="3b769-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="4d7f0-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="4d7f0-122">Authorization</span></span>|<span data-ttu-id="4d7f0-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="4d7f0-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="4d7f0-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="4d7f0-124">Accept</span></span>|<span data-ttu-id="4d7f0-125">application/json</span><span class="sxs-lookup"><span data-stu-id="4d7f0-125">application/json</span></span>|
+|<span data-ttu-id="3b769-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="3b769-122">Authorization</span></span>|<span data-ttu-id="3b769-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="3b769-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="3b769-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="3b769-124">Accept</span></span>|<span data-ttu-id="3b769-125">application/json</span><span class="sxs-lookup"><span data-stu-id="3b769-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="4d7f0-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="4d7f0-126">Request body</span></span>
-<span data-ttu-id="4d7f0-127">No corpo da solicitação, forneça uma representação JSON do objeto [symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md) .</span><span class="sxs-lookup"><span data-stu-id="4d7f0-127">In the request body, supply a JSON representation for the [symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="3b769-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="3b769-126">Request body</span></span>
+<span data-ttu-id="3b769-127">No corpo da solicitação, forneça uma representação JSON do objeto [symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md) .</span><span class="sxs-lookup"><span data-stu-id="3b769-127">In the request body, supply a JSON representation for the [symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md) object.</span></span>
 
-<span data-ttu-id="4d7f0-128">A tabela a seguir mostra as propriedades que são necessárias ao criar [symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md).</span><span class="sxs-lookup"><span data-stu-id="4d7f0-128">The following table shows the properties that are required when you create the [symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md).</span></span>
+<span data-ttu-id="3b769-128">A tabela a seguir mostra as propriedades que são necessárias ao criar [symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md).</span><span class="sxs-lookup"><span data-stu-id="3b769-128">The following table shows the properties that are required when you create the [symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md).</span></span>
 
-|<span data-ttu-id="4d7f0-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="4d7f0-129">Property</span></span>|<span data-ttu-id="4d7f0-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="4d7f0-130">Type</span></span>|<span data-ttu-id="4d7f0-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="4d7f0-131">Description</span></span>|
+|<span data-ttu-id="3b769-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="3b769-129">Property</span></span>|<span data-ttu-id="3b769-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="3b769-130">Type</span></span>|<span data-ttu-id="3b769-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="3b769-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="4d7f0-132">id</span><span class="sxs-lookup"><span data-stu-id="4d7f0-132">id</span></span>|<span data-ttu-id="4d7f0-133">String</span><span class="sxs-lookup"><span data-stu-id="4d7f0-133">String</span></span>|<span data-ttu-id="4d7f0-134">A chave da entidade.</span><span class="sxs-lookup"><span data-stu-id="4d7f0-134">The key of the entity.</span></span>|
-|<span data-ttu-id="4d7f0-135">conteúdo</span><span class="sxs-lookup"><span data-stu-id="4d7f0-135">content</span></span>|<span data-ttu-id="4d7f0-136">Binary</span><span class="sxs-lookup"><span data-stu-id="4d7f0-136">Binary</span></span>|<span data-ttu-id="4d7f0-137">O certificado de assinatura de código Symantec do Windows no formato de dados brutos.</span><span class="sxs-lookup"><span data-stu-id="4d7f0-137">The Windows Symantec Code-Signing Certificate in the raw data format.</span></span>|
-|<span data-ttu-id="4d7f0-138">status</span><span class="sxs-lookup"><span data-stu-id="4d7f0-138">status</span></span>|[<span data-ttu-id="4d7f0-139">certificateStatus</span><span class="sxs-lookup"><span data-stu-id="4d7f0-139">certificateStatus</span></span>](../resources/intune-apps-certificatestatus.md)|<span data-ttu-id="4d7f0-140">O status do certificado provisionado ou não foi provisionado.</span><span class="sxs-lookup"><span data-stu-id="4d7f0-140">The Cert Status Provisioned or not Provisioned.</span></span> <span data-ttu-id="4d7f0-141">Os valores possíveis são: `notProvisioned` e `provisioned`.</span><span class="sxs-lookup"><span data-stu-id="4d7f0-141">Possible values are: `notProvisioned`, `provisioned`.</span></span>|
-|<span data-ttu-id="4d7f0-142">password</span><span class="sxs-lookup"><span data-stu-id="4d7f0-142">password</span></span>|<span data-ttu-id="4d7f0-143">String</span><span class="sxs-lookup"><span data-stu-id="4d7f0-143">String</span></span>|<span data-ttu-id="4d7f0-144">A senha necessária para o arquivo. pfx.</span><span class="sxs-lookup"><span data-stu-id="4d7f0-144">The Password required for .pfx file.</span></span>|
-|<span data-ttu-id="4d7f0-145">SubjectName</span><span class="sxs-lookup"><span data-stu-id="4d7f0-145">subjectName</span></span>|<span data-ttu-id="4d7f0-146">String</span><span class="sxs-lookup"><span data-stu-id="4d7f0-146">String</span></span>|<span data-ttu-id="4d7f0-147">O nome da entidade do certificado.</span><span class="sxs-lookup"><span data-stu-id="4d7f0-147">The Subject Name for the cert.</span></span>|
-|<span data-ttu-id="4d7f0-148">Assunto</span><span class="sxs-lookup"><span data-stu-id="4d7f0-148">subject</span></span>|<span data-ttu-id="4d7f0-149">String</span><span class="sxs-lookup"><span data-stu-id="4d7f0-149">String</span></span>|<span data-ttu-id="4d7f0-150">O valor de entidade para o certificado.</span><span class="sxs-lookup"><span data-stu-id="4d7f0-150">The Subject value for the cert.</span></span>|
-|<span data-ttu-id="4d7f0-151">issuerName</span><span class="sxs-lookup"><span data-stu-id="4d7f0-151">issuerName</span></span>|<span data-ttu-id="4d7f0-152">String</span><span class="sxs-lookup"><span data-stu-id="4d7f0-152">String</span></span>|<span data-ttu-id="4d7f0-153">O nome do emissor do certificado.</span><span class="sxs-lookup"><span data-stu-id="4d7f0-153">The Issuer Name for the cert.</span></span>|
-|<span data-ttu-id="4d7f0-154">emissor</span><span class="sxs-lookup"><span data-stu-id="4d7f0-154">issuer</span></span>|<span data-ttu-id="4d7f0-155">String</span><span class="sxs-lookup"><span data-stu-id="4d7f0-155">String</span></span>|<span data-ttu-id="4d7f0-156">O valor do emissor para o certificado.</span><span class="sxs-lookup"><span data-stu-id="4d7f0-156">The Issuer value for the cert.</span></span>|
-|<span data-ttu-id="4d7f0-157">expirationDateTime</span><span class="sxs-lookup"><span data-stu-id="4d7f0-157">expirationDateTime</span></span>|<span data-ttu-id="4d7f0-158">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="4d7f0-158">DateTimeOffset</span></span>|<span data-ttu-id="4d7f0-159">A data de expiração do certificado.</span><span class="sxs-lookup"><span data-stu-id="4d7f0-159">The Cert Expiration Date.</span></span>|
-|<span data-ttu-id="4d7f0-160">uploadDateTime</span><span class="sxs-lookup"><span data-stu-id="4d7f0-160">uploadDateTime</span></span>|<span data-ttu-id="4d7f0-161">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="4d7f0-161">DateTimeOffset</span></span>|<span data-ttu-id="4d7f0-162">O tipo do certificado de codeSignação como CERT da Symantec.</span><span class="sxs-lookup"><span data-stu-id="4d7f0-162">The Type of the CodeSigning Cert as Symantec Cert.</span></span>|
+|<span data-ttu-id="3b769-132">id</span><span class="sxs-lookup"><span data-stu-id="3b769-132">id</span></span>|<span data-ttu-id="3b769-133">String</span><span class="sxs-lookup"><span data-stu-id="3b769-133">String</span></span>|<span data-ttu-id="3b769-134">A chave da entidade.</span><span class="sxs-lookup"><span data-stu-id="3b769-134">The key of the entity.</span></span>|
+|<span data-ttu-id="3b769-135">conteúdo</span><span class="sxs-lookup"><span data-stu-id="3b769-135">content</span></span>|<span data-ttu-id="3b769-136">Binary</span><span class="sxs-lookup"><span data-stu-id="3b769-136">Binary</span></span>|<span data-ttu-id="3b769-137">O certificado de assinatura de código Symantec do Windows no formato de dados brutos.</span><span class="sxs-lookup"><span data-stu-id="3b769-137">The Windows Symantec Code-Signing Certificate in the raw data format.</span></span>|
+|<span data-ttu-id="3b769-138">status</span><span class="sxs-lookup"><span data-stu-id="3b769-138">status</span></span>|[<span data-ttu-id="3b769-139">certificateStatus</span><span class="sxs-lookup"><span data-stu-id="3b769-139">certificateStatus</span></span>](../resources/intune-apps-certificatestatus.md)|<span data-ttu-id="3b769-140">O status do certificado provisionado ou não foi provisionado.</span><span class="sxs-lookup"><span data-stu-id="3b769-140">The Cert Status Provisioned or not Provisioned.</span></span> <span data-ttu-id="3b769-141">Os valores possíveis são: `notProvisioned` e `provisioned`.</span><span class="sxs-lookup"><span data-stu-id="3b769-141">Possible values are: `notProvisioned`, `provisioned`.</span></span>|
+|<span data-ttu-id="3b769-142">password</span><span class="sxs-lookup"><span data-stu-id="3b769-142">password</span></span>|<span data-ttu-id="3b769-143">String</span><span class="sxs-lookup"><span data-stu-id="3b769-143">String</span></span>|<span data-ttu-id="3b769-144">A senha necessária para o arquivo. pfx.</span><span class="sxs-lookup"><span data-stu-id="3b769-144">The Password required for .pfx file.</span></span>|
+|<span data-ttu-id="3b769-145">SubjectName</span><span class="sxs-lookup"><span data-stu-id="3b769-145">subjectName</span></span>|<span data-ttu-id="3b769-146">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="3b769-146">String</span></span>|<span data-ttu-id="3b769-147">O nome da entidade do certificado.</span><span class="sxs-lookup"><span data-stu-id="3b769-147">The Subject Name for the cert.</span></span>|
+|<span data-ttu-id="3b769-148">Assunto</span><span class="sxs-lookup"><span data-stu-id="3b769-148">subject</span></span>|<span data-ttu-id="3b769-149">String</span><span class="sxs-lookup"><span data-stu-id="3b769-149">String</span></span>|<span data-ttu-id="3b769-150">O valor de entidade para o certificado.</span><span class="sxs-lookup"><span data-stu-id="3b769-150">The Subject value for the cert.</span></span>|
+|<span data-ttu-id="3b769-151">issuerName</span><span class="sxs-lookup"><span data-stu-id="3b769-151">issuerName</span></span>|<span data-ttu-id="3b769-152">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="3b769-152">String</span></span>|<span data-ttu-id="3b769-153">O nome do emissor do certificado.</span><span class="sxs-lookup"><span data-stu-id="3b769-153">The Issuer Name for the cert.</span></span>|
+|<span data-ttu-id="3b769-154">emissor</span><span class="sxs-lookup"><span data-stu-id="3b769-154">issuer</span></span>|<span data-ttu-id="3b769-155">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="3b769-155">String</span></span>|<span data-ttu-id="3b769-156">O valor do emissor para o certificado.</span><span class="sxs-lookup"><span data-stu-id="3b769-156">The Issuer value for the cert.</span></span>|
+|<span data-ttu-id="3b769-157">expirationDateTime</span><span class="sxs-lookup"><span data-stu-id="3b769-157">expirationDateTime</span></span>|<span data-ttu-id="3b769-158">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="3b769-158">DateTimeOffset</span></span>|<span data-ttu-id="3b769-159">A data de expiração do certificado.</span><span class="sxs-lookup"><span data-stu-id="3b769-159">The Cert Expiration Date.</span></span>|
+|<span data-ttu-id="3b769-160">uploadDateTime</span><span class="sxs-lookup"><span data-stu-id="3b769-160">uploadDateTime</span></span>|<span data-ttu-id="3b769-161">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="3b769-161">DateTimeOffset</span></span>|<span data-ttu-id="3b769-162">O tipo do certificado de codeSignação como CERT da Symantec.</span><span class="sxs-lookup"><span data-stu-id="3b769-162">The Type of the CodeSigning Cert as Symantec Cert.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="4d7f0-163">Resposta</span><span class="sxs-lookup"><span data-stu-id="4d7f0-163">Response</span></span>
-<span data-ttu-id="4d7f0-164">Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="4d7f0-164">If successful, this method returns a `200 OK` response code and an updated [symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="3b769-163">Resposta</span><span class="sxs-lookup"><span data-stu-id="3b769-163">Response</span></span>
+<span data-ttu-id="3b769-164">Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="3b769-164">If successful, this method returns a `200 OK` response code and an updated [symantecCodeSigningCertificate](../resources/intune-apps-symanteccodesigningcertificate.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="4d7f0-165">Exemplo</span><span class="sxs-lookup"><span data-stu-id="4d7f0-165">Example</span></span>
+## <a name="example"></a><span data-ttu-id="3b769-165">Exemplo</span><span class="sxs-lookup"><span data-stu-id="3b769-165">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="4d7f0-166">Solicitação</span><span class="sxs-lookup"><span data-stu-id="4d7f0-166">Request</span></span>
-<span data-ttu-id="4d7f0-167">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="4d7f0-167">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="3b769-166">Solicitação</span><span class="sxs-lookup"><span data-stu-id="3b769-166">Request</span></span>
+<span data-ttu-id="3b769-167">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="3b769-167">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/symantecCodeSigningCertificate
 Content-type: application/json
@@ -89,8 +89,8 @@ Content-length: 421
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="4d7f0-168">Resposta</span><span class="sxs-lookup"><span data-stu-id="4d7f0-168">Response</span></span>
-<span data-ttu-id="4d7f0-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="4d7f0-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="3b769-168">Resposta</span><span class="sxs-lookup"><span data-stu-id="3b769-168">Response</span></span>
+<span data-ttu-id="3b769-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="3b769-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -110,6 +110,7 @@ Content-Length: 470
   "uploadDateTime": "2016-12-31T23:58:46.5747426-08:00"
 }
 ```
+
 
 
 
