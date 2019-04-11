@@ -4,29 +4,30 @@ description: Proprietário do dispositivo Android valores possíveis para Estado
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6242bc9470661d75b3174198761cfcab8284381d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 5e67dbdd96c1df067ead3724705a4c2067757130
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30159252"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31781775"
 ---
-# <a name="androiddeviceownerappautoupdatepolicytype-enum-type"></a><span data-ttu-id="813bd-103">tipo de enumeração androidDeviceOwnerAppAutoUpdatePolicyType</span><span class="sxs-lookup"><span data-stu-id="813bd-103">androidDeviceOwnerAppAutoUpdatePolicyType enum type</span></span>
+# <a name="androiddeviceownerappautoupdatepolicytype-enum-type"></a><span data-ttu-id="3fa2e-103">tipo de enumeração androidDeviceOwnerAppAutoUpdatePolicyType</span><span class="sxs-lookup"><span data-stu-id="3fa2e-103">androidDeviceOwnerAppAutoUpdatePolicyType enum type</span></span>
 
-> <span data-ttu-id="813bd-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="813bd-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="3fa2e-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="3fa2e-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="813bd-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="813bd-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="3fa2e-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="3fa2e-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="813bd-106">Proprietário do dispositivo Android valores possíveis para Estados da política de atualização automática do aplicativo do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="813bd-106">Android Device Owner possible values for states of the device's app auto update policy.</span></span>
+<span data-ttu-id="3fa2e-106">Proprietário do dispositivo Android valores possíveis para Estados da política de atualização automática do aplicativo do dispositivo.</span><span class="sxs-lookup"><span data-stu-id="3fa2e-106">Android Device Owner possible values for states of the device's app auto update policy.</span></span>
 
-## <a name="members"></a><span data-ttu-id="813bd-107">Membros</span><span class="sxs-lookup"><span data-stu-id="813bd-107">Members</span></span>
-|<span data-ttu-id="813bd-108">Membro</span><span class="sxs-lookup"><span data-stu-id="813bd-108">Member</span></span>|<span data-ttu-id="813bd-109">Valor</span><span class="sxs-lookup"><span data-stu-id="813bd-109">Value</span></span>|<span data-ttu-id="813bd-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="813bd-110">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="3fa2e-107">Membros</span><span class="sxs-lookup"><span data-stu-id="3fa2e-107">Members</span></span>
+|<span data-ttu-id="3fa2e-108">Membro</span><span class="sxs-lookup"><span data-stu-id="3fa2e-108">Member</span></span>|<span data-ttu-id="3fa2e-109">Valor</span><span class="sxs-lookup"><span data-stu-id="3fa2e-109">Value</span></span>|<span data-ttu-id="3fa2e-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="3fa2e-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="813bd-111">notConfigured</span><span class="sxs-lookup"><span data-stu-id="813bd-111">notConfigured</span></span>|<span data-ttu-id="813bd-112">,0</span><span class="sxs-lookup"><span data-stu-id="813bd-112">0</span></span>|<span data-ttu-id="813bd-113">Não configurado; Esse valor é ignorado.</span><span class="sxs-lookup"><span data-stu-id="813bd-113">Not configured; this value is ignored.</span></span>|
-|<span data-ttu-id="813bd-114">userChoice</span><span class="sxs-lookup"><span data-stu-id="813bd-114">userChoice</span></span>|<span data-ttu-id="813bd-115">1</span><span class="sxs-lookup"><span data-stu-id="813bd-115">1</span></span>|<span data-ttu-id="813bd-116">O usuário pode controlar as atualizações automáticas.</span><span class="sxs-lookup"><span data-stu-id="813bd-116">The user can control auto-updates.</span></span>|
-|<span data-ttu-id="813bd-117">Édito</span><span class="sxs-lookup"><span data-stu-id="813bd-117">never</span></span>|<span data-ttu-id="813bd-118">duas</span><span class="sxs-lookup"><span data-stu-id="813bd-118">2</span></span>|<span data-ttu-id="813bd-119">Os aplicativos nunca são atualizados automaticamente.</span><span class="sxs-lookup"><span data-stu-id="813bd-119">Apps are never auto-updated.</span></span>|
-|<span data-ttu-id="813bd-120">wiFiOnly</span><span class="sxs-lookup"><span data-stu-id="813bd-120">wiFiOnly</span></span>|<span data-ttu-id="813bd-121">3D</span><span class="sxs-lookup"><span data-stu-id="813bd-121">3</span></span>|<span data-ttu-id="813bd-122">Os aplicativos são atualizados automaticamente através de Wi-Fi apenas.</span><span class="sxs-lookup"><span data-stu-id="813bd-122">Apps are auto-updated over Wi-Fi only.</span></span>|
-|<span data-ttu-id="813bd-123">permanente</span><span class="sxs-lookup"><span data-stu-id="813bd-123">always</span></span>|<span data-ttu-id="813bd-124">quatro</span><span class="sxs-lookup"><span data-stu-id="813bd-124">4</span></span>|<span data-ttu-id="813bd-125">Os aplicativos são atualizados automaticamente a qualquer momento.</span><span class="sxs-lookup"><span data-stu-id="813bd-125">Apps are auto-updated at any time.</span></span> <span data-ttu-id="813bd-126">Tarifas de dados podem ser aplicadas.</span><span class="sxs-lookup"><span data-stu-id="813bd-126">Data charges may apply.</span></span>|
+|<span data-ttu-id="3fa2e-111">notConfigured</span><span class="sxs-lookup"><span data-stu-id="3fa2e-111">notConfigured</span></span>|<span data-ttu-id="3fa2e-112">,0</span><span class="sxs-lookup"><span data-stu-id="3fa2e-112">0</span></span>|<span data-ttu-id="3fa2e-113">Não configurado; Esse valor é ignorado.</span><span class="sxs-lookup"><span data-stu-id="3fa2e-113">Not configured; this value is ignored.</span></span>|
+|<span data-ttu-id="3fa2e-114">userChoice</span><span class="sxs-lookup"><span data-stu-id="3fa2e-114">userChoice</span></span>|<span data-ttu-id="3fa2e-115">1</span><span class="sxs-lookup"><span data-stu-id="3fa2e-115">1</span></span>|<span data-ttu-id="3fa2e-116">O usuário pode controlar as atualizações automáticas.</span><span class="sxs-lookup"><span data-stu-id="3fa2e-116">The user can control auto-updates.</span></span>|
+|<span data-ttu-id="3fa2e-117">Édito</span><span class="sxs-lookup"><span data-stu-id="3fa2e-117">never</span></span>|<span data-ttu-id="3fa2e-118">duas</span><span class="sxs-lookup"><span data-stu-id="3fa2e-118">2</span></span>|<span data-ttu-id="3fa2e-119">Os aplicativos nunca são atualizados automaticamente.</span><span class="sxs-lookup"><span data-stu-id="3fa2e-119">Apps are never auto-updated.</span></span>|
+|<span data-ttu-id="3fa2e-120">wiFiOnly</span><span class="sxs-lookup"><span data-stu-id="3fa2e-120">wiFiOnly</span></span>|<span data-ttu-id="3fa2e-121">3D</span><span class="sxs-lookup"><span data-stu-id="3fa2e-121">3</span></span>|<span data-ttu-id="3fa2e-122">Os aplicativos são atualizados automaticamente através de Wi-Fi apenas.</span><span class="sxs-lookup"><span data-stu-id="3fa2e-122">Apps are auto-updated over Wi-Fi only.</span></span>|
+|<span data-ttu-id="3fa2e-123">permanente</span><span class="sxs-lookup"><span data-stu-id="3fa2e-123">always</span></span>|<span data-ttu-id="3fa2e-124">quatro</span><span class="sxs-lookup"><span data-stu-id="3fa2e-124">4</span></span>|<span data-ttu-id="3fa2e-125">Os aplicativos são atualizados automaticamente a qualquer momento.</span><span class="sxs-lookup"><span data-stu-id="3fa2e-125">Apps are auto-updated at any time.</span></span> <span data-ttu-id="3fa2e-126">Tarifas de dados podem ser aplicadas.</span><span class="sxs-lookup"><span data-stu-id="3fa2e-126">Data charges may apply.</span></span>|
+
 
 
 
