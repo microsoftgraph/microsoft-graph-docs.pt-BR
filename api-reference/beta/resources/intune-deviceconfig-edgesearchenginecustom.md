@@ -4,12 +4,12 @@ description: Permite que os administradores de TI configurem um mecanismo de pes
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c1f97de9b4665769ea4e9731045603664673f64f
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: a936cc49aebb1021005a005ebcaf85473a355376
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30165727"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31787474"
 ---
 # <a name="edgesearchenginecustom-resource-type"></a>Tipo de recurso edgeSearchEngineCustom
 
@@ -28,7 +28,7 @@ Herda de [edgeSearchEngineBase](../resources/intune-deviceconfig-edgesearchengin
 |edgeSearchEngineOpenSearchXmlUrl|Cadeia de caracteres|Aponta para um link https que contém o arquivo xml de OpenSearch que contém no mínimo o nome curto e a URL do mecanismo de pesquisa.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -43,6 +43,7 @@ Veja a seguir uma representação JSON do recurso.
   "edgeSearchEngineOpenSearchXmlUrl": "String"
 }
 ```
+
 
 
 

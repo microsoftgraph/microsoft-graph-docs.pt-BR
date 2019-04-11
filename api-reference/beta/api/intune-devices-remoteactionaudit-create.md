@@ -4,12 +4,12 @@ description: Criar um novo objeto remoteActionAudit.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1ce034699478a3e670590e64beea240e0b24e1f9
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 820f6acd0d5959eb0c75e2bc0a272ca3ec3e5cf8
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30971546"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31788461"
 ---
 # <a name="create-remoteactionaudit"></a>Criar remoteActionAudit
 
@@ -52,12 +52,12 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar remoteAc
 |:---|:---|:---|
 |id|String|ID de relatório.|
 |deviceDisplayName|Cadeia de caracteres|Nome do dispositivo do Intune.|
-|userName|String|\[\] preterido use InitiatedByUserPrincipalName em vez disso.|
-|initiatedByUserPrincipalName|String|O formato de usuário que iniciou a ação do dispositivo é UPN.|
+|userName|Cadeia de caracteres|\[\] preterido use InitiatedByUserPrincipalName em vez disso.|
+|initiatedByUserPrincipalName|Cadeia de caracteres|O formato de usuário que iniciou a ação do dispositivo é UPN.|
 |action|[remoteaction](../resources/intune-devices-remoteaction.md)|O nome da ação. Os valores possíveis são `unknown`: `factoryReset`, `removeCompanyData`, `resetPasscode`, `remoteLock`, `enableLostMode`, `disableLostMode`, `locateDevice`, `rebootNow`, `recoverPasscode` `cleanWindowsDevice` `logoutSharedAppleDeviceActiveUser`,,, `quickScan`, `fullScan`, `windowsDefenderUpdateSignatures`, `factoryResetKeepEnrollmentData`, `updateDeviceAccount`, `automaticRedeployment`, `shutDown` ,,,,,,,, .|
 |requestDateTime|DateTimeOffset|Hora em que a ação foi emitida, dada em UTC.|
-|deviceOwnerUserPrincipalName|String|UPN do proprietário do dispositivo.|
-|deviceIMEI|String|IMEI do dispositivo.|
+|deviceOwnerUserPrincipalName|Cadeia de caracteres|UPN do proprietário do dispositivo.|
+|deviceIMEI|Cadeia de caracteres|IMEI do dispositivo.|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|Estado de ação. Os valores possíveis são: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 
 
@@ -107,6 +107,7 @@ Content-Length: 504
   "actionState": "pending"
 }
 ```
+
 
 
 

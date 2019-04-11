@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto deviceManagementIntentDeviceS
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4711d0942ea1d0bb3dd6a328b747373bcf3e52c9
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: f4c9a80e9b7221d9ab7ef42ec23b389c1f3bf326
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522598"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31787649"
 ---
 # <a name="update-devicemanagementintentdevicestate"></a>Atualizar deviceManagementIntentDeviceState
 
@@ -52,11 +52,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 |:---|:---|:---|
 |id|String|A ID|
 |userPrincipalName|String|O nome principal do usuário que está sendo relatado em um dispositivo|
-|userName|Cadeia de Caracteres|O nome de usuário que está sendo relatado em um dispositivo|
+|userName|Cadeia de caracteres|O nome de usuário que está sendo relatado em um dispositivo|
 |deviceDisplayName|Cadeia de caracteres|Nome do dispositivo que está sendo relatado|
 |lastReportedDateTime|DateTimeOffset|Data e hora da última modificação de um relatório de intenção|
 |state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Estado do dispositivo para uma intenção. Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
-|deviceId|Cadeia de Caracteres|ID do dispositivo que está sendo relatado|
+|deviceId|Cadeia de caracteres|ID do dispositivo que está sendo relatado|
 
 
 
@@ -101,8 +101,6 @@ Content-Length: 391
   "deviceId": "Device Id value"
 }
 ```
-
-
 
 
 

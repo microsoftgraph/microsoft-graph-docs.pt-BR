@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto unsupportedDeviceCon
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 03a0829e027d6722dfffa9bea54fb0d28cc6f8b7
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: f05552cc371c34a5310baad0f6ab43f9859643c1
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30967367"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31788776"
 ---
 # <a name="get-unsupporteddeviceconfiguration"></a>Obter unsupportedDeviceConfiguration
 
@@ -93,6 +93,7 @@ Content-Length: 747
   }
 }
 ```
+
 
 
 

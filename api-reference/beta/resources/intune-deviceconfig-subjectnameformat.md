@@ -4,12 +4,12 @@ description: Opções de formato de nome de entidade.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6f12068576ff78d74f2e1b6119a2030ff7835a7d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 6202deb0a225da136216eddbb44818cb3ba3a3c5
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30158552"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31789728"
 ---
 # <a name="subjectnameformat-enum-type"></a>tipo de enumeração subjectNameFormat
 
@@ -25,12 +25,13 @@ Opções de formato de nome de entidade.
 |CommonName|,0|Nome comum.|
 |commonNameIncludingEmail|1|Nome comum incluindo email.|
 |commonNameAsEmail|duas|Nome comum como email.|
-|custom|3D|Formato de nome de entidade personalizado.|
+|cliente|3D|Formato de nome de entidade personalizado.|
 |commonNameAsIMEI|0,5|Nome comum como IMEI.|
 |commonNameAsSerialNumber|6|Nome comum como número de série.|
 |commonNameAsAadDeviceId|178|Nome comum como número de série.|
 |commonNameAsIntuneDeviceId|8|Nome comum como número de série.|
 |commonNameAsDurableDeviceId|241|Nome comum como número de série.|
+
 
 
 

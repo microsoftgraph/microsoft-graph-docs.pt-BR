@@ -4,12 +4,12 @@ description: Agenda de execução diária de um script de gerenciamento de dispo
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 310d9a4dbd995dfc162591547a40ace8c596f54b
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: dd2b226255f433b4f82d042b6389830143515033
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30152658"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31788069"
 ---
 # <a name="dailyschedule-resource-type"></a>tipo de recurso dailySchedule
 
@@ -28,7 +28,7 @@ Herda de [runSchedule](../resources/intune-devices-runschedule.md)
 |interval|Int32|Intervalo em número de dias|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -43,6 +43,7 @@ Veja a seguir uma representação JSON do recurso.
   "interval": 1024
 }
 ```
+
 
 
 

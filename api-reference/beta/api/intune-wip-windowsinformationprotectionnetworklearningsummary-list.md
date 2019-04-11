@@ -4,12 +4,12 @@ description: Listar propriedades e relações de objetos de windowsInformationPr
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5bd0d6b720e41baa2db54cf5d5ab52e513f7098f
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 43601b15ce91a830e9557116101d2ba810fb755b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30976936"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31789063"
 ---
 # <a name="list-windowsinformationprotectionnetworklearningsummaries"></a>Listar windowsInformationProtectionNetworkLearningSummaries
 
@@ -75,6 +75,7 @@ Content-Length: 235
   ]
 }
 ```
+
 
 
 

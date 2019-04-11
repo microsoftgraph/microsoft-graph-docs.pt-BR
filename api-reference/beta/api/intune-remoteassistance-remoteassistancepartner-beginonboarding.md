@@ -1,15 +1,15 @@
 ---
 title: Ação beginOnboarding
-description: Ainda não documentado
+description: Uma solicitação para iniciar a integração.  Deve ser associado às informações de conta do TeamViewer apropriadas
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c6548edc23599760e4c4419f32edcf4052fbce7c
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 36fa3b2d27bbcad94ad2427c5a248a3ae5360fc8
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30976369"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31789868"
 ---
 # <a name="beginonboarding-action"></a>Ação beginOnboarding
 
@@ -17,7 +17,7 @@ ms.locfileid: "30976369"
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Ainda não documentado
+Uma solicitação para iniciar a integração.  Deve ser associado às informações de conta do TeamViewer apropriadas
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -62,6 +62,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

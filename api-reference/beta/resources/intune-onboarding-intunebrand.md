@@ -4,12 +4,12 @@ description: intuneBrand contém dados que são usados na personalização da ap
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e3e899f418ea9214530ac3b70e493a15655ca873
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ffaa20097147d5edcfc8af84418d65d6db29a746
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30167379"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31788293"
 ---
 # <a name="intunebrand-resource-type"></a>Tipo de recurso intuneBrand
 
@@ -23,23 +23,24 @@ intuneBrand contém dados que são usados na personalização da aparência dos 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |displayName|String|Nome da empresa/organização exibido para usuários finais.|
-|contactITName|String|Nome da pessoa/organização responsável pelo suporte de TI.|
-|contactITPhoneNumber|String|Número de telefone da pessoa/organização responsável pelo suporte de TI.|
-|contactITEmailAddress|String|Endereço de email da pessoa/organização responsável pelo suporte de TI.|
-|contactITNotes|String|Comentários de texto relacionados à pessoa/organização responsável pelo suporte de TI.|
-|privacyUrl|String|URL da política de privacidade da empresa/organização.|
-|onlineSupportSiteUrl|String|URL do site de assistência técnica de TI da empresa/organização.|
+|contactITName|Cadeia de caracteres|Nome da pessoa/organização responsável pelo suporte de TI.|
+|contactITPhoneNumber|Cadeia de caracteres|Número de telefone da pessoa/organização responsável pelo suporte de TI.|
+|contactITEmailAddress|Cadeia de caracteres|Endereço de email da pessoa/organização responsável pelo suporte de TI.|
+|contactITNotes|Cadeia de caracteres|Comentários de texto relacionados à pessoa/organização responsável pelo suporte de TI.|
+|privacyUrl|Cadeia de caracteres|URL da política de privacidade da empresa/organização.|
+|onlineSupportSiteUrl|Cadeia de caracteres|URL do site de assistência técnica de TI da empresa/organização.|
 |onlineSupportSiteName|Cadeia de caracteres|Nome de exibição do site de assistência técnica de TI da empresa/organização.|
 |themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|Cor de tema principal usado nos aplicativos e no portal da Web do Portal da Empresa.|
-|showLogo|Boolean|Booliano que indica se as imagens de logotipo fornecidas pelo administrador serão exibidas ou não.|
+|showLogo|Booliano|Booliano que indica se as imagens de logotipo fornecidas pelo administrador serão exibidas ou não.|
 |lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Imagem do logotipo exibida nos aplicativos do Portal da Empresa que têm um plano de fundo claro atrás do logotipo.|
 |darkBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Imagem do logotipo exibida nos aplicativos do Portal da Empresa que têm um plano de fundo escuro atrás do logotipo.|
 |showNameNextToLogo|Booliano|Booliano que indica se o nome de exibição fornecido pelo administrador será exibido ao lado da imagem do logotipo.|
-|landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Imagem personalizada exibida na página inicial do aplicativo do portal compnay|
+|landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Imagem personalizada exibida na página inicial do aplicativo do portal da empresa|
+|customPrivacyMessage|Cadeia de caracteres|Mensagem de privacidade personalizada.|
 |showDisplayNameNextToLogo|Booliano|Booliano que indica se o nome de exibição fornecido pelo administrador será exibido ao lado da imagem do logotipo.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -82,9 +83,11 @@ Veja a seguir uma representação JSON do recurso.
     "type": "String",
     "value": "binary"
   },
+  "customPrivacyMessage": "String",
   "showDisplayNameNextToLogo": true
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos depOnboardingSetting.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8a5151b4ab04cd5b1b76089f8ab5fd5c8e2519ed
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 2af4f462b47e5e2993f2a688be8cdd8440facf98
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30959135"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31789630"
 ---
 # <a name="list-deponboardingsettings"></a>Listar depOnboardingSettings
 
@@ -87,6 +87,7 @@ Content-Length: 786
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Ler propriedades e relações do objeto iosDeviceFeaturesConfigurat
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8970cefc9c6753be01b91a285ed24e59be184e09
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 05da25cc8ef6bf60f775af4ba305cdb622d04c0d
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30964112"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31789273"
 ---
 # <a name="get-iosdevicefeaturesconfiguration"></a>Get iosDeviceFeaturesConfiguration
 
@@ -197,6 +197,7 @@ Content-Length: 4093
   }
 }
 ```
+
 
 
 

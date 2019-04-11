@@ -4,12 +4,12 @@ description: Contém propriedades de informações de criptografia de arquivos p
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 060f8eac1bfff3f0d2e18d52428deb884da4a759
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 9a2236e2c63703ea5af2662d5b0f4594e7888799
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30168569"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31789721"
 ---
 # <a name="fileencryptioninfo-resource-type"></a>Tipo de recurso fileEncryptionInfo
 
@@ -22,16 +22,16 @@ Contém propriedades de informações de criptografia de arquivos para a versão
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|encryptionKey|Binária|A chave usada para criptografar o conteúdo do arquivo.|
-|initializationVector|Binária|O vetor de inicialização usado para o algoritmo de criptografia.|
-|mac|Binária|O hash do conteúdo do arquivo criptografado + IV (hash conteúdo).|
-|macKey|Binária|Chave usada para acessar mac.|
-|profileIdentifier|String|O identificador de perfil.|
+|encryptionKey|Binary|A chave usada para criptografar o conteúdo do arquivo.|
+|initializationVector|Binary|O vetor de inicialização usado para o algoritmo de criptografia.|
+|mac|Binary|O hash do conteúdo do arquivo criptografado + IV (hash conteúdo).|
+|macKey|Binary|Chave usada para acessar mac.|
+|profileIdentifier|Cadeia de caracteres|O identificador de perfil.|
 |fileDigest|Binária|O resumo de arquivo antes da criptografia.|
 |fileDigestAlgorithm|Cadeia de caracteres|O algoritmo de conteúdo do arquivo.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -52,6 +52,7 @@ Veja a seguir uma representação JSON do recurso.
   "fileDigestAlgorithm": "String"
 }
 ```
+
 
 
 

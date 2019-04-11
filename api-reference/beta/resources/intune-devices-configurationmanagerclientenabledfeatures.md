@@ -4,12 +4,12 @@ description: recursos habilitados pelo cliente do Gerenciador de Configurações
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ed376bc616c26f1ad6e8a3ea06d3898c051e8d0b
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 7a90b7f0009b4d9bd617b781338ceee3de2f432c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30148773"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31787922"
 ---
 # <a name="configurationmanagerclientenabledfeatures-resource-type"></a>Tipo de recurso configurationManagerClientEnabledFeatures
 
@@ -22,17 +22,17 @@ recursos habilitados pelo cliente do Gerenciador de Configurações
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|inventory|Boolean|Se o estoque é gerenciado pelo Intune|
-|modernApps|Boolean|Se o aplicativo moderno é gerenciado pelo Intune|
-|resourceAccess|Boolean|Se o acesso ao recurso é gerenciado pelo Intune|
-|deviceConfiguration|Boolean|Se a configuração do dispositivo é gerenciada pelo Intune|
-|compliancePolicy|Boolean|Se a política de conformidade é gerenciada pelo Intune|
+|inventory|Booliano|Se o estoque é gerenciado pelo Intune|
+|modernApps|Booliano|Se o aplicativo moderno é gerenciado pelo Intune|
+|resourceAccess|Booliano|Se o acesso ao recurso é gerenciado pelo Intune|
+|deviceConfiguration|Booliano|Se a configuração do dispositivo é gerenciada pelo Intune|
+|compliancePolicy|Booliano|Se a política de conformidade é gerenciada pelo Intune|
 |windowsUpdateForBusiness|Booliano|Se o Windows Update para Empresas é gerenciado pelo Intune|
-|endpointProtection|Boolean|Se o Endpoint Protection é gerenciado pelo Intune|
-|Officetreinamento|Boolean|Se o aplicativo do Office é gerenciado pelo Intune|
+|endpointProtection|Booliano|Se o Endpoint Protection é gerenciado pelo Intune|
+|Officetreinamento|Booliano|Se o aplicativo do Office é gerenciado pelo Intune|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -54,6 +54,7 @@ Veja a seguir uma representação JSON do recurso.
   "officeApps": true
 }
 ```
+
 
 
 

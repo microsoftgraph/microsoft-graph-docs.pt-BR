@@ -4,12 +4,12 @@ description: A entidade representa um valor de cadeia de caracteres de uma apres
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0fef2f1564f67cc3fce4e294e2d1b356f5d414ff
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 4a96a57ec89783d1ed1f06b1edc5d0a1f5e88068
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30162248"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31788713"
 ---
 # <a name="grouppolicypresentationvaluemultitext-resource-type"></a>tipo de recurso groupPolicyPresentationValueMultiText
 
@@ -37,7 +37,7 @@ Herda de [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppol
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que o objeto foi modificado pela última vez. Herdado de [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
 |createdDateTime|DateTimeOffset|A data e a hora em que o objeto foi criado. Herdado de [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
 |id|String|Chave da entidade. Herdado de [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
-|values|Coleção de cadeias de caracteres|Uma coleção de cadeias de caracteres não vazias para a apresentação associada.|
+|values|Coleção String|Uma coleção de cadeias de caracteres não vazias para a apresentação associada.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -64,6 +64,7 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos androidScepCertificate
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ecca45df51870e3e7e086ba0f37dc9c7014802df
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 1089102f6639bc7a522192288562cb38a25534d5
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30972589"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31787544"
 ---
 # <a name="list-androidscepcertificateprofiles"></a>Listar androidScepCertificateProfiles
 
@@ -103,6 +103,7 @@ Content-Length: 1303
   ]
 }
 ```
+
 
 
 

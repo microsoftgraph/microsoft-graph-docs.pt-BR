@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto depOnboardingSetting.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c882957b8fb44e1df539e98dec96e2c457fe854b
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 4ce491760b670953ca87e7953fb0d91c3c3a12f7
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30968235"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31787873"
 ---
 # <a name="update-deponboardingsetting"></a>Atualizar depOnboardingSetting
 
@@ -56,12 +56,12 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [depOnbo
 |lastModifiedDateTime|DateTimeOffset|Quando o serviço foi integrado.|
 |lastSuccessfulSyncDateTime|DateTimeOffset|Quando o serviço última syned com o Intune|
 |lastSyncTriggeredDateTime|DateTimeOffset|Quando o Intune solicitou uma sincronização pela última vez.|
-|shareTokenWithSchoolDataSyncService|Boolean|Se o compartilhamento de token DEP está ou não habilitado com o serviço de sincronização de dados da escola.|
+|shareTokenWithSchoolDataSyncService|Booliano|Se o compartilhamento de token DEP está ou não habilitado com o serviço de sincronização de dados da escola.|
 |lastSyncErrorCode|Int32|Código de erro relatado pela Apple durante a última sincronização de Dep.|
 |TokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md)|Obtém ou define o tipo de token Dep. Os valores possíveis são: `none`, `dep`, `appleSchoolManager`.|
-|tokenname|String|Nome amigável para token Dep|
+|tokenname|Cadeia de caracteres|Nome amigável para token Dep|
 |syncedDeviceCount|Int32|Obtém a contagem de dispositivos sincronizados|
-|dataSharingConsentGranted|Boolean|Consentimento concedido para compartilhamento de dados com o serviço Apple Dep|
+|dataSharingConsentGranted|Booliano|Consentimento concedido para compartilhamento de dados com o serviço Apple Dep|
 |roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância de entidade.|
 
 
@@ -122,6 +122,7 @@ Content-Length: 689
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Valores possíveis para ApplicationGuardEnabledOptions
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0954121ca183cf6f189206820770bea57fcb88af
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ac967cf80c15ce7947049f2ff444f8b8f0fb90fd
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30142634"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31789784"
 ---
 # <a name="applicationguardenabledoptions-enum-type"></a>tipo de enumeração applicationGuardEnabledOptions
 
@@ -26,6 +26,7 @@ Valores possíveis para ApplicationGuardEnabledOptions
 |enabledForEdge|1|Habilitado para borda|
 |enabledForOffice|duas|Habilitado para o Office|
 |enabledForEdgeAndOffice|3D|Habilitado para o Edge e o Office|
+
 
 
 

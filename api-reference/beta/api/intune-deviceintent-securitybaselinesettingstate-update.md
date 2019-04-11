@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto securityBaselineSettingState.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3295cb35fbc9002f458a60d6f1b78a2ef380126b
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: c65f3c49159f6025ae32ee9a12c7acc395742509
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31524579"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31787740"
 ---
 # <a name="update-securitybaselinesettingstate"></a>Atualizar securityBaselineSettingState
 
@@ -20,7 +20,7 @@ ms.locfileid: "31524579"
 Atualiza as propriedades de um objeto [securityBaselineSettingState](../resources/intune-deviceintent-securitybaselinesettingstate.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [securit
 |id|String|Identificador exclusivo da entidade|
 |settingName|Cadeia de caracteres|O nome da configuração que está sendo relatado|
 |state|[securityBaselineComplianceState](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|O estado de conformidade da configuração da linha de base de segurança. Os valores possíveis são: `unknown`, `secure`, `notApplicable`, `notSecure`, `error`, `conflict`.|
-|settingCategoryId|Cadeia de Caracteres|A ID da categoria de configuração à qual essa configuração pertence|
+|settingCategoryId|Cadeia de caracteres|A ID da categoria de configuração à qual essa configuração pertence|
 
 
 

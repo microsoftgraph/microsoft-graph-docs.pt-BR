@@ -4,12 +4,12 @@ description: Representa um elemento checkBox ADMX e um elemento Boolean do ADMX.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d50f04b39490f48d2efa316d8f2825ed9ee31461
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ba86365b83f3f6f961c2907eb4041ed15ce252a8
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30160638"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31788132"
 ---
 # <a name="grouppolicypresentationcheckbox-resource-type"></a>tipo de recurso groupPolicyPresentationCheckBox
 
@@ -34,10 +34,10 @@ Herda de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypr
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|rótulo|String|Rótulo de texto localizado para qualquer entidade de apresentação. O valor padrão é vazio. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|id|Cadeia de caracteres|Chave da entidade. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
+|rótulo|Cadeia de caracteres|Rótulo de texto localizado para qualquer entidade de apresentação. O valor padrão é vazio. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
+|id|String|Chave da entidade. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|defaultChecked|Boolean|Valor padrão da caixa de seleção. O valor padrão é false.|
+|defaultChecked|Booliano|Valor padrão da caixa de seleção. O valor padrão é falso.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -61,6 +61,7 @@ Veja a seguir uma representação JSON do recurso.
   "defaultChecked": true
 }
 ```
+
 
 
 

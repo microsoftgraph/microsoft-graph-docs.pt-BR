@@ -4,12 +4,12 @@ description: A classe usada para identificar um grupo local para a configuraçã
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e3479226d770c7030fefed1a7f2f65a02808479d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 54a4686282e4c13f657adf010a3e0272025eb249
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30169521"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31789518"
 ---
 # <a name="windowskiosklocalgroup-resource-type"></a>tipo de recurso windowsKioskLocalGroup
 
@@ -25,10 +25,10 @@ Herda de [windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|Nome_do_grupo|String|O nome do grupo local que será bloqueado para esta configuração de quiosque|
+|Nome_do_grupo|Cadeia de caracteres|O nome do grupo local que será bloqueado para esta configuração de quiosque|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -43,6 +43,7 @@ Veja a seguir uma representação JSON do recurso.
   "groupName": "String"
 }
 ```
+
 
 
 

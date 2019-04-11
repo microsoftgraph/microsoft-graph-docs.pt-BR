@@ -4,12 +4,12 @@ description: Ler propriedades e relações do objeto mdmWindowsInformationProtec
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0059dbe014745f64f622d9c0b0cfa9229d890bfc
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: b1755b929ef9b52c45587c5c030777e747e6c553
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30985575"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31788580"
 ---
 # <a name="get-mdmwindowsinformationprotectionpolicy"></a>Get mdmWindowsInformationProtectionPolicy
 
@@ -200,6 +200,7 @@ Content-Length: 4414
   }
 }
 ```
+
 
 
 

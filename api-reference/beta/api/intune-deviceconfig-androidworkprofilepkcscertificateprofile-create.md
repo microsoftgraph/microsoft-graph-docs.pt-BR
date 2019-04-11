@@ -4,12 +4,12 @@ description: Criar um novo objeto androidWorkProfilePkcsCertificateProfile.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1a222d8eed4d6934fcf12b2cad1c011a8d44fcb1
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: db76928fc56900bea778ff85f6d3bc32a9f83595
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30986044"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31788937"
 ---
 # <a name="create-androidworkprofilepkcscertificateprofile"></a>Criar androidWorkProfilePkcsCertificateProfile
 
@@ -64,11 +64,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar androidW
 |certificateValidityPeriodValue|Int32|Valor para o período de validade do certificado. Herdado de [entidadeandroidworkprofilecertificateprofilebase](../resources/intune-deviceconfig-androidworkprofilecertificateprofilebase.md)|
 |certificateValidityPeriodScale|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|Dimensionar o período de validade do certificado. Herdado de [entidadeandroidworkprofilecertificateprofilebase](../resources/intune-deviceconfig-androidworkprofilecertificateprofilebase.md). Os valores possíveis são: `days`, `months`, `years`.|
 |extendedKeyUsages|coleção [extendedKeyUsage](../resources/intune-deviceconfig-extendedkeyusage.md)|Configurações de EKU (uso estendido de chave). Esta coleção pode conter um máximo de 500 elementos. Herdado de [entidadeandroidworkprofilecertificateprofilebase](../resources/intune-deviceconfig-androidworkprofilecertificateprofilebase.md)|
-|certificationAuthority|String|Autoridade de certificação PKCS|
-|certificationAuthorityName|String|Nome da autoridade de certificação PKCS|
-|certificateTemplateName|String|Nome do modelo de certificado PKCS|
-|Subjectalternativenameformatstring foi|String|Cadeia de caracteres personalizada que define o atributo AAD.|
-|subjectAlternativeNameType|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|Tipo de nome alternativo da entidade do certificado. Os valores possíveis são: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`.|
+|subjectAlternativeNameType|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|Tipo de nome alternativo da entidade do certificado. Herdado de [entidadeandroidworkprofilecertificateprofilebase](../resources/intune-deviceconfig-androidworkprofilecertificateprofilebase.md). Os valores possíveis são: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`.|
+|certificationAuthority|Cadeia de caracteres|Autoridade de certificação PKCS|
+|certificationAuthorityName|Cadeia de caracteres|Nome da autoridade de certificação PKCS|
+|certificateTemplateName|Cadeia de caracteres|Nome do modelo de certificado PKCS|
+|Subjectalternativenameformatstring foi|Cadeia de caracteres|Cadeia de caracteres personalizada que define o atributo AAD.|
 
 
 
@@ -104,11 +104,11 @@ Content-length: 969
       "objectIdentifier": "Object Identifier value"
     }
   ],
+  "subjectAlternativeNameType": "emailAddress",
   "certificationAuthority": "Certification Authority value",
   "certificationAuthorityName": "Certification Authority Name value",
   "certificateTemplateName": "Certificate Template Name value",
-  "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value",
-  "subjectAlternativeNameType": "emailAddress"
+  "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value"
 }
 ```
 
@@ -142,13 +142,14 @@ Content-Length: 1141
       "objectIdentifier": "Object Identifier value"
     }
   ],
+  "subjectAlternativeNameType": "emailAddress",
   "certificationAuthority": "Certification Authority value",
   "certificationAuthorityName": "Certification Authority Name value",
   "certificateTemplateName": "Certificate Template Name value",
-  "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value",
-  "subjectAlternativeNameType": "emailAddress"
+  "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value"
 }
 ```
+
 
 
 

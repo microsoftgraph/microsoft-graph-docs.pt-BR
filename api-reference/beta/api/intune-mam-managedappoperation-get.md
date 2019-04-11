@@ -4,12 +4,12 @@ description: Ler propriedades e relações do objeto managedAppOperation.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6f1b1bc0a64312c10a078ffddccdd031f399eda9
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: a1c6d70cadf2d69849100e83af3d7e8add50ea6f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30976033"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31788594"
 ---
 # <a name="get-managedappoperation"></a>Get managedAppOperation
 
@@ -78,6 +78,7 @@ Content-Length: 303
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos windowsAppX.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 80ab7c16d1055a8c4ade4f3de4584e36404ab821
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: af3cdcad5b13efa9d67fb23a851dc62ab57d25b6
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30988739"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31789595"
 ---
 # <a name="list-windowsappxs"></a>Listar windowsAppXs
 
@@ -62,7 +62,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1717
+Content-Length: 1748
 
 {
   "value": [
@@ -91,6 +91,7 @@ Content-Length: 1717
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
       ],
+      "dependentAppCount": 1,
       "committedContentVersion": "Committed Content Version value",
       "fileName": "File Name value",
       "size": 4,
@@ -114,6 +115,7 @@ Content-Length: 1717
   ]
 }
 ```
+
 
 
 

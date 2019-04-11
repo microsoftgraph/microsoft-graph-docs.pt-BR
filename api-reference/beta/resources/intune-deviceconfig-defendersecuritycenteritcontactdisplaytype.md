@@ -4,12 +4,12 @@ description: Valores possíveis para defenderSecurityCenterITContactDisplay
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c9a91b83f14226cd3272939deb99139e312b1689
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 3baa7b83679a94b67fdccc6172eb81c7b616a9b7
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30170032"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31789476"
 ---
 # <a name="defendersecuritycenteritcontactdisplaytype-enum-type"></a>tipo de enumeração defenderSecurityCenterITContactDisplayType
 
@@ -26,6 +26,7 @@ Valores possíveis para defenderSecurityCenterITContactDisplay
 |displayInAppAndInNotifications|1|Exibir no aplicativo e em notificações|
 |displayOnlyInApp|duas|Exibir somente no aplicativo|
 |displayOnlyInNotifications|3D|Exibir somente em notificações|
+
 
 
 

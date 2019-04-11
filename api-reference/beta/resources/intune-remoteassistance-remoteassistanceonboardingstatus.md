@@ -1,15 +1,15 @@
 ---
 title: tipo de enumeração remoteAssistanceOnboardingStatus
-description: Ainda não documentado
+description: O status atual do conector do TeamViewer
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ed4e99b41df0a66389d56ae7160d6395b78d7bcf
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 23490e61f4134b723cfc066043f132c44c295019
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30163067"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31787894"
 ---
 # <a name="remoteassistanceonboardingstatus-enum-type"></a>tipo de enumeração remoteAssistanceOnboardingStatus
 
@@ -17,14 +17,15 @@ ms.locfileid: "30163067"
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Ainda não documentado
+O status atual do conector do TeamViewer
 
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|notOnboarded|,0|Ainda não documentado|
-|integração|1|Ainda não documentado|
-|integrado|duas|Ainda não documentado|
+|notOnboarded|,0|O status relatado quando não há conector do TeamViewer ativo configurado ou ativo|
+|integração|1|O status relatado quando o sistema iniciou uma conexão do TeamViewer, mas o serviço ainda não concluiu a confirmação de um conector|
+|integrado|duas|O status relatado quando o sistema trocava com êxito informações de conta com o TeamViewer e agora pode iniciar sessões de assistência remota com clientes|
+
 
 
 

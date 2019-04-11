@@ -4,12 +4,12 @@ description: Ação de conexão de regra por demanda da VPN.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6466031c4d913e7ab5679579c284d91ae64c5fa3
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 08e39402a0ab6211c3feec53cf325530ea216c85
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30154163"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31789175"
 ---
 # <a name="vpnondemandruleconnectionaction-enum-type"></a>tipo de enumeração vpnOnDemandRuleConnectionAction
 
@@ -26,6 +26,7 @@ Ação de conexão de regra por demanda da VPN.
 |evaluateConnection|1|Avaliar conexão.|
 |ignora|duas|Ignora.|
 |disconnect|3D|Desconectar.|
+
 
 
 
