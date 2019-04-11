@@ -4,36 +4,36 @@ description: Configurações do conector de certificado.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 09f4baf9ddd8be630c432fcec5d7df71c442bbe2
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 6fe154ed3150ae434f8068bc04a56dd6e5b48744
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30168303"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806479"
 ---
-# <a name="certificateconnectorsetting-resource-type"></a><span data-ttu-id="fd200-103">tipo de recurso certificateConnectorSetting</span><span class="sxs-lookup"><span data-stu-id="fd200-103">certificateConnectorSetting resource type</span></span>
+# <a name="certificateconnectorsetting-resource-type"></a><span data-ttu-id="970db-103">tipo de recurso certificateConnectorSetting</span><span class="sxs-lookup"><span data-stu-id="970db-103">certificateConnectorSetting resource type</span></span>
 
-> <span data-ttu-id="fd200-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="fd200-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="970db-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="970db-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="fd200-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="fd200-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="970db-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="970db-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="fd200-106">Configurações do conector de certificado.</span><span class="sxs-lookup"><span data-stu-id="fd200-106">Certificate connector settings.</span></span>
+<span data-ttu-id="970db-106">Configurações do conector de certificado.</span><span class="sxs-lookup"><span data-stu-id="970db-106">Certificate connector settings.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="fd200-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="fd200-107">Properties</span></span>
-|<span data-ttu-id="fd200-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="fd200-108">Property</span></span>|<span data-ttu-id="fd200-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="fd200-109">Type</span></span>|<span data-ttu-id="fd200-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="fd200-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="970db-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="970db-107">Properties</span></span>
+|<span data-ttu-id="970db-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="970db-108">Property</span></span>|<span data-ttu-id="970db-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="970db-109">Type</span></span>|<span data-ttu-id="970db-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="970db-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="fd200-111">status</span><span class="sxs-lookup"><span data-stu-id="fd200-111">status</span></span>|<span data-ttu-id="fd200-112">Int32</span><span class="sxs-lookup"><span data-stu-id="fd200-112">Int32</span></span>|<span data-ttu-id="fd200-113">Status do conector de certificado</span><span class="sxs-lookup"><span data-stu-id="fd200-113">Certificate connector status</span></span>|
-|<span data-ttu-id="fd200-114">certExpiryTime</span><span class="sxs-lookup"><span data-stu-id="fd200-114">certExpiryTime</span></span>|<span data-ttu-id="fd200-115">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="fd200-115">DateTimeOffset</span></span>|<span data-ttu-id="fd200-116">Tempo de validade do certificado</span><span class="sxs-lookup"><span data-stu-id="fd200-116">Certificate expire time</span></span>|
-|<span data-ttu-id="fd200-117">enrollmentError</span><span class="sxs-lookup"><span data-stu-id="fd200-117">enrollmentError</span></span>|<span data-ttu-id="fd200-118">String</span><span class="sxs-lookup"><span data-stu-id="fd200-118">String</span></span>|<span data-ttu-id="fd200-119">Erro de registro do conector de certificado</span><span class="sxs-lookup"><span data-stu-id="fd200-119">Certificate connector enrollment error</span></span>|
-|<span data-ttu-id="fd200-120">lastConnectorConnectionTime</span><span class="sxs-lookup"><span data-stu-id="fd200-120">lastConnectorConnectionTime</span></span>|<span data-ttu-id="fd200-121">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="fd200-121">DateTimeOffset</span></span>|<span data-ttu-id="fd200-122">Última vez em que o conector de certificado está conectado</span><span class="sxs-lookup"><span data-stu-id="fd200-122">Last time certificate connector connected</span></span>|
-|<span data-ttu-id="fd200-123">connectorVersion</span><span class="sxs-lookup"><span data-stu-id="fd200-123">connectorVersion</span></span>|<span data-ttu-id="fd200-124">String</span><span class="sxs-lookup"><span data-stu-id="fd200-124">String</span></span>|<span data-ttu-id="fd200-125">Versão do conector de certificado</span><span class="sxs-lookup"><span data-stu-id="fd200-125">Version of certificate connector</span></span>|
-|<span data-ttu-id="fd200-126">lastUploadVersion</span><span class="sxs-lookup"><span data-stu-id="fd200-126">lastUploadVersion</span></span>|<span data-ttu-id="fd200-127">Int64</span><span class="sxs-lookup"><span data-stu-id="fd200-127">Int64</span></span>|<span data-ttu-id="fd200-128">Versão do último conector de certificado carregado</span><span class="sxs-lookup"><span data-stu-id="fd200-128">Version of last uploaded certificate connector</span></span>|
+|<span data-ttu-id="970db-111">status</span><span class="sxs-lookup"><span data-stu-id="970db-111">status</span></span>|<span data-ttu-id="970db-112">Int32</span><span class="sxs-lookup"><span data-stu-id="970db-112">Int32</span></span>|<span data-ttu-id="970db-113">Status do conector de certificado</span><span class="sxs-lookup"><span data-stu-id="970db-113">Certificate connector status</span></span>|
+|<span data-ttu-id="970db-114">certExpiryTime</span><span class="sxs-lookup"><span data-stu-id="970db-114">certExpiryTime</span></span>|<span data-ttu-id="970db-115">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="970db-115">DateTimeOffset</span></span>|<span data-ttu-id="970db-116">Tempo de validade do certificado</span><span class="sxs-lookup"><span data-stu-id="970db-116">Certificate expire time</span></span>|
+|<span data-ttu-id="970db-117">enrollmentError</span><span class="sxs-lookup"><span data-stu-id="970db-117">enrollmentError</span></span>|<span data-ttu-id="970db-118">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="970db-118">String</span></span>|<span data-ttu-id="970db-119">Erro de registro do conector de certificado</span><span class="sxs-lookup"><span data-stu-id="970db-119">Certificate connector enrollment error</span></span>|
+|<span data-ttu-id="970db-120">lastConnectorConnectionTime</span><span class="sxs-lookup"><span data-stu-id="970db-120">lastConnectorConnectionTime</span></span>|<span data-ttu-id="970db-121">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="970db-121">DateTimeOffset</span></span>|<span data-ttu-id="970db-122">Última vez em que o conector de certificado está conectado</span><span class="sxs-lookup"><span data-stu-id="970db-122">Last time certificate connector connected</span></span>|
+|<span data-ttu-id="970db-123">connectorVersion</span><span class="sxs-lookup"><span data-stu-id="970db-123">connectorVersion</span></span>|<span data-ttu-id="970db-124">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="970db-124">String</span></span>|<span data-ttu-id="970db-125">Versão do conector de certificado</span><span class="sxs-lookup"><span data-stu-id="970db-125">Version of certificate connector</span></span>|
+|<span data-ttu-id="970db-126">lastUploadVersion</span><span class="sxs-lookup"><span data-stu-id="970db-126">lastUploadVersion</span></span>|<span data-ttu-id="970db-127">Int64</span><span class="sxs-lookup"><span data-stu-id="970db-127">Int64</span></span>|<span data-ttu-id="970db-128">Versão do último conector de certificado carregado</span><span class="sxs-lookup"><span data-stu-id="970db-128">Version of last uploaded certificate connector</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="fd200-129">Relações</span><span class="sxs-lookup"><span data-stu-id="fd200-129">Relationships</span></span>
-<span data-ttu-id="fd200-130">Nenhum</span><span class="sxs-lookup"><span data-stu-id="fd200-130">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="970db-129">Relações</span><span class="sxs-lookup"><span data-stu-id="970db-129">Relationships</span></span>
+<span data-ttu-id="970db-130">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="970db-130">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="fd200-131">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="fd200-131">JSON Representation</span></span>
-<span data-ttu-id="fd200-132">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="fd200-132">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="970db-131">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="970db-131">JSON Representation</span></span>
+<span data-ttu-id="970db-132">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="970db-132">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.certificateConnectorSetting"
@@ -50,6 +50,7 @@ ms.locfileid: "30168303"
   "lastUploadVersion": 1024
 }
 ```
+
 
 
 
