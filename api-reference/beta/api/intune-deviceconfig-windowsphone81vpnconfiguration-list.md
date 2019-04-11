@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos windowsPhone81VpnConfi
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c061e586f4c07af8921f85e319c8287ad728cf3a
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: fe42ea9114692c6105661e474e067d5078f5966f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30975144"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31773298"
 ---
 # <a name="list-windowsphone81vpnconfigurations"></a>Listar windowsPhone81VpnConfigurations
 
@@ -112,6 +112,7 @@ Content-Length: 1608
   ]
 }
 ```
+
 
 
 

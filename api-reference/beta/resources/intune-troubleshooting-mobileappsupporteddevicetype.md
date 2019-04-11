@@ -4,12 +4,12 @@ description: Propriedades do dispositivo
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 76b3ca431bc68f93144a33dd8c5e8e5f036764a0
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ba2998e1312d24fe6f86420cea883e6039f813a4
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30140576"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771793"
 ---
 # <a name="mobileappsupporteddevicetype-resource-type"></a>tipo de recurso mobileAppSupportedDeviceType
 
@@ -23,11 +23,11 @@ Propriedades do dispositivo
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |type|[deviceType](../resources/intune-shared-devicetype.md)|Tipo de dispositivo. Os valores possíveis são `desktop`: `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad` `iPod` `android`,,, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise` ,,,,,,,, , `blackberry`, `palm`, `unknown`.|
-|minimumOperatingSystemVersion|String|Versão mínima do sistema operacional|
-|maximumOperatingSystemVersion|String|Versão máxima do sistema operacional|
+|minimumOperatingSystemVersion|Cadeia de caracteres|Versão mínima do sistema operacional|
+|maximumOperatingSystemVersion|Cadeia de caracteres|Versão máxima do sistema operacional|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -44,7 +44,6 @@ Veja a seguir uma representação JSON do recurso.
   "maximumOperatingSystemVersion": "String"
 }
 ```
-
 
 
 

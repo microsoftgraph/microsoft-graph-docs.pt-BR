@@ -4,12 +4,12 @@ description: Valores possíveis para especificar quais cookies são permitidos n
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c00e16e80847b5ab0f9ed7d8175fcc13fa92a582
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 1df7873f43cae176a7ffa715fd1e8b2da47a614f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30143922"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31772164"
 ---
 # <a name="edgecookiepolicy-enum-type"></a>tipo de enumeração edgeCookiePolicy
 
@@ -26,6 +26,7 @@ Valores possíveis para especificar quais cookies são permitidos no Microsoft E
 |permitiu|1|Permitiu.|
 |blockThirdParty|duas|Bloquear somente cookies de terceiros.|
 |blockAll|3D|Bloquear todos os cookies.|
+
 
 
 

@@ -4,12 +4,12 @@ description: Item de histórico contido no evento de solução de problemas de a
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1a7171cdde4889ba97a9cd29c4cc8c81ab1a9d58
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: a19399788462b6dc7cae995971ddb443051b6959
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30159350"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31774649"
 ---
 # <a name="mobileapptroubleshootingapptargethistory-resource-type"></a>tipo de recurso mobileAppTroubleshootingAppTargetHistory
 
@@ -26,12 +26,12 @@ Herda de [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooti
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |occurrenceDateTime|DateTimeOffset|Hora em que o item de histórico ocorreu. Herdado de [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
-|securityGroupId|String|ID do grupo de segurança do AAD para o qual foi direcionado.|
+|securityGroupId|Cadeia de caracteres|ID do grupo de segurança do AAD para o qual foi direcionado.|
 |runState|[runState](../resources/intune-shared-runstate.md)|Status do item. Os valores possíveis são: `unknown`, `success`, `fail`.|
 |errorCode|Cadeia de caracteres|Código de erro para a falha, vazio se não houver falha.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -49,7 +49,6 @@ Veja a seguir uma representação JSON do recurso.
   "errorCode": "String"
 }
 ```
-
 
 
 

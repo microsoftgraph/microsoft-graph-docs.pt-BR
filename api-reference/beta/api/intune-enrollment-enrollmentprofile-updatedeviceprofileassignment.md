@@ -4,12 +4,12 @@ description: Ainda não documentado
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: edc2316f3d9a56908078cd2f25d91d0b3c1b09d4
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 87419b7d917b060cd74f1dceef49e71a6ec3b9ca
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30962761"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31772612"
 ---
 # <a name="updatedeviceprofileassignment-action"></a>Ação updateDeviceProfileAssignment
 
@@ -79,6 +79,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

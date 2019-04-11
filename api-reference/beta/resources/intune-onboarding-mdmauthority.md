@@ -4,12 +4,12 @@ description: Define autoridade de gerenciamento de dispositivo móvel.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 57d4b9de9dc5d77482e13d4d09686edf37a363e2
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 74a73ef71035594e3d9600499791525fe67c9c71
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30159427"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31774698"
 ---
 # <a name="mdmauthority-enum-type"></a>tipo de enumeração mdmAuthority
 
@@ -22,10 +22,11 @@ Define autoridade de gerenciamento de dispositivo móvel.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|unknown|,0|Desconhecido|
+|desconhecido|,0|Desconhecido|
 |Intune|1|Intune|
 |SCCM|duas|SCCM|
 |Office365|3D|Office365|
+
 
 
 

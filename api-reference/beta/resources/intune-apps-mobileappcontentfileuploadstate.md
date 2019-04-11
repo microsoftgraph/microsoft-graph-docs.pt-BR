@@ -4,12 +4,12 @@ description: Contém propriedades para carregar Estados de solicitação.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e6bbda483d68690709c0e9bd084ecd407b10d479
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 2b0011c0f6833599493a64734aeb3e29147bf949
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30156095"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771227"
 ---
 # <a name="mobileappcontentfileuploadstate-enum-type"></a>tipo de enumeração mobileAppContentFileUploadState
 
@@ -25,7 +25,7 @@ Contém propriedades para carregar Estados de solicitação.
 |sucesso|,0|Ainda não documentado|
 |transientError|1|Ainda não documentado|
 |erro|duas|Ainda não documentado|
-|unknown|3D|Ainda não documentado|
+|desconhecido|3D|Ainda não documentado|
 |azureStorageUriRequestSuccess|100|Ainda não documentado|
 |azureStorageUriRequestPending|101|Ainda não documentado|
 |azureStorageUriRequestFailed|102|Ainda não documentado|
@@ -38,6 +38,7 @@ Contém propriedades para carregar Estados de solicitação.
 |commitFilePending|301|Ainda não documentado|
 |commitFileFailed|302|Ainda não documentado|
 |commitFileTimedOut|303|Ainda não documentado|
+
 
 
 

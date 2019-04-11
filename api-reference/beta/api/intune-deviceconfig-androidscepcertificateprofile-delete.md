@@ -4,12 +4,12 @@ description: Exclui androidScepCertificateProfile.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0138a8aa509e971267d3da9003b6f96216693f02
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: c4f9b2c08a1309850bf2fe89aff59823a4227e67
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30988291"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31770498"
 ---
 # <a name="delete-androidscepcertificateprofile"></a>Excluir androidScepCertificateProfile
 
@@ -64,6 +64,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Ainda não documentado
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c2b91bb90b4f56bb90a63c26a5b91bcb17636f20
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 2769e8b8af8588713fa87d15eee682d201bfb249
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30161233"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771429"
 ---
 # <a name="importedwindowsautopilotdeviceidentityuploadstatus-enum-type"></a>tipo de enumeração importedWindowsAutopilotDeviceIdentityUploadStatus
 
@@ -26,6 +26,7 @@ Ainda não documentado
 |função|1|Status pendente.|
 |complete|duas|Status completo.|
 |erro|3D|Status do erro.|
+
 
 
 

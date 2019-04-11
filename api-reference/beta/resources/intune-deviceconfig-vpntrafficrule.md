@@ -4,12 +4,12 @@ description: Definição de regra de tráfego VPN.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fd004341928260187518966e2356f59faff57898
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c22ead3b037ff18dbd9c1dedbf68b11f2b55a3bc
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30139939"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771884"
 ---
 # <a name="vpntrafficrule-resource-type"></a>tipo de recurso vpnTrafficRule
 
@@ -22,7 +22,7 @@ Definição de regra de tráfego VPN.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|name|String|Tdomínio.|
+|nome|String|Tdomínio.|
 |protocolos|Int32|Protocolos (0-255). Valores válidos de 0 a 255|
 |localPortRanges|coleção [numberRange](../resources/intune-deviceconfig-numberrange.md)|O intervalo de porta local só pode ser definido quando o protocolo é TCP ou UDP (6 ou 17). Esta coleção pode conter um máximo de 500 elementos.|
 |remotePortRanges|coleção [numberRange](../resources/intune-deviceconfig-numberrange.md)|O intervalo de porta remoto só pode ser definido quando o protocolo é TCP ou UDP (6 ou 17). Esta coleção pode conter um máximo de 500 elementos.|
@@ -31,10 +31,10 @@ Definição de regra de tráfego VPN.
 |appId|String|Identificador de aplicativo, se essa regra de tráfego é disparada por um aplicativo.|
 |appType|[vpnTrafficRuleAppType](../resources/intune-deviceconfig-vpntrafficruleapptype.md)|Tipo de aplicativo, se essa regra de tráfego é disparada por um aplicativo. Os valores possíveis são: `none`, `desktop`, `universal`.|
 |routingPolicyType|[vpnTrafficRuleRoutingPolicyType](../resources/intune-deviceconfig-vpntrafficruleroutingpolicytype.md)|Quando o aplicativo é acionado, indica se deseja habilitar o túnel de divisão ao longo desta rota. Os valores possíveis são: `none`, `splitTunnel`, `forceTunnel`.|
-|afirma|String|Declarações associadas a esta regra de tráfego.|
+|afirma|Cadeia de caracteres|Declarações associadas a esta regra de tráfego.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -82,6 +82,7 @@ Veja a seguir uma representação JSON do recurso.
   "claims": "String"
 }
 ```
+
 
 
 

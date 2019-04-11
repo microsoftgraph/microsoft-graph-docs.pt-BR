@@ -4,12 +4,12 @@ description: Leia as propriedades e relações de objetos de deviceComplianceUse
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8415385cb1adb196536eb0dceae879ad12dd6a97
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 82e293e8dc15740c3f25b0d66ee07d26ededea87
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30958533"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31773760"
 ---
 # <a name="get-devicecomplianceuseroverview"></a>Acessar deviceComplianceUserOverview
 
@@ -82,6 +82,7 @@ Content-Length: 391
   }
 }
 ```
+
 
 
 

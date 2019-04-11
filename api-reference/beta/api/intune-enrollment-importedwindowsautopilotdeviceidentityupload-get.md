@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto importedWindowsAutop
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2c0d42f2e2b154cc9a9ca1313c23dd8a1f9eaa1f
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 68979aba86ed2cf4cc4a2b1dd6e2fde5eb2bf1c6
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30978070"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31770505"
 ---
 # <a name="get-importedwindowsautopilotdeviceidentityupload"></a>Obter importedWindowsAutopilotDeviceIdentityUpload
 
@@ -76,6 +76,7 @@ Content-Length: 248
   }
 }
 ```
+
 
 
 

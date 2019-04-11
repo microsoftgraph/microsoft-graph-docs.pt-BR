@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos managedDeviceCertifica
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 53cc6c3b8306dd6ff4f7611104eacb90c2342b37
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 8da69faf8a8137a55e4ae20a975fe186bdda2c65
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30963699"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31773767"
 ---
 # <a name="list-manageddevicecertificatestates"></a>Listar managedDeviceCertificateStates
 
@@ -113,6 +113,7 @@ Content-Length: 1703
   ]
 }
 ```
+
 
 
 

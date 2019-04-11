@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto iosEnterpriseWiFiCon
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 059560257e50e874b0d29f35940ded511bad417c
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 8c569f0822d1a250c2e867a59b6936175cdf20e4
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30978749"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31772507"
 ---
 # <a name="get-iosenterprisewificonfiguration"></a>Obter iosEnterpriseWiFiConfiguration
 
@@ -103,6 +103,7 @@ Content-Length: 1332
   }
 }
 ```
+
 
 
 

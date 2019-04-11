@@ -4,12 +4,12 @@ description: Estado de gerenciamento do dispositivo no Microsoft Intune.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3a53b07f89ee551d3e559a42bbe23c5fba808f20
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 05dc0db1ecbe88616ca36db82bad2081b4133e3f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30174141"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31772906"
 ---
 # <a name="managementstate-enum-type"></a>tipo de enumeração ManagementState
 
@@ -34,6 +34,7 @@ Estado de gerenciamento do dispositivo no Microsoft Intune.
 |wipeCanceled|241|Um comando de apagamento para este dispositivo foi cancelado|
 |retireCanceled|254|Um comando de desativação para este dispositivo foi cancelado|
 |recém-descobertas|11|O dispositivo é descoberto, mas não está totalmente inscrito.|
+
 
 
 

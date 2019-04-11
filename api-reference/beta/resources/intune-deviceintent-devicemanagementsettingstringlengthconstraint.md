@@ -4,12 +4,12 @@ description: Restrição que impõe um determinado intervalo de duração da cad
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 49d009571cdccf60dc8adcc2f1a703d39d0674c7
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 7f3873ab985692a35b959f712dc998025d11e303
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522332"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31773081"
 ---
 # <a name="devicemanagementsettingstringlengthconstraint-resource-type"></a>tipo de recurso deviceManagementSettingStringLengthConstraint
 
@@ -45,8 +45,6 @@ Veja a seguir uma representação JSON do recurso.
   "maximumLength": 1024
 }
 ```
-
-
 
 
 

@@ -4,12 +4,12 @@ description: Tipo Windows 10 Edition.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 18fba8f5fc663ff00b07a6338badf87e4ab5d875
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e76e35ce03c5af5f893148f02793d231721d24d7
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30173378"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31772640"
 ---
 # <a name="windows10editiontype-enum-type"></a>tipo de enumeração windows10EditionType
 
@@ -35,6 +35,7 @@ Tipo Windows 10 Edition.
 |windows10ProfessionalWorkstation|254|Windows 10 Professional para estações de trabalho|
 |windows10ProfessionalWorkstationN|11|Windows 10 Professional para estações de trabalho N|
 |notConfigured|3,6|NotConfigured|
+
 
 
 

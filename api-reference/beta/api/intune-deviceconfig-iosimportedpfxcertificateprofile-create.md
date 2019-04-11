@@ -4,12 +4,12 @@ description: Criar um novo objeto iosImportedPFXCertificateProfile.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 52dd23a885ba8a036653a54bad1833a72b6ac3e0
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: b53dbfb68420ff6d525319bab676746bbe6fef90
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30989159"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31774817"
 ---
 # <a name="create-iosimportedpfxcertificateprofile"></a>Criar iosImportedPFXCertificateProfile
 
@@ -110,6 +110,7 @@ Content-Length: 475
   "intendedPurpose": "smimeEncryption"
 }
 ```
+
 
 
 

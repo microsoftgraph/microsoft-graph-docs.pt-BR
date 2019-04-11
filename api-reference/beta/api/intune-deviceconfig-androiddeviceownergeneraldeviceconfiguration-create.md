@@ -4,12 +4,12 @@ description: Criar um novo objeto androidDeviceOwnerGeneralDeviceConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f82410f562d76f370e32863ed636cd3306cd4990
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: aa5f2ac532e4b8e912b47a50be755ab0ceb495fa
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30964175"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771765"
 ---
 # <a name="create-androiddeviceownergeneraldeviceconfiguration"></a>Criar androidDeviceOwnerGeneralDeviceConfiguration
 
@@ -73,9 +73,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar androidD
 |factoryResetDeviceAdministratorEmails|Coleção String|Lista de emails de conta do Google que serão necessários para autenticar após a redefinição de fábrica de um dispositivo antes que ele possa ser configurado.|
 |factoryResetBlocked|Boolean|Indica se a opção de redefinição de fábrica em configurações está desabilitada.|
 |kioskModeApps|Coleção [appListItem](../resources/intune-deviceconfig-applistitem.md)|Uma lista de aplicativos gerenciados que serão mostrados quando o dispositivo estiver no modo quiosque. Esta coleção pode conter um máximo de 500 elementos.|
-|kioskModeWallpaperUrl|String|URL para uma imagem publicamente acessível a ser usada para o papel de parede quando o dispositivo estiver no modo quiosque.|
-|kioskModeExitCode|String|Código de saída para permitir que um usuário saia do modo quiosque quando o dispositivo estiver no modo quiosque.|
+|kioskModeWallpaperUrl|Cadeia de caracteres|URL para uma imagem publicamente acessível a ser usada para o papel de parede quando o dispositivo estiver no modo quiosque.|
+|kioskModeExitCode|Cadeia de caracteres|Código de saída para permitir que um usuário saia do modo quiosque quando o dispositivo estiver no modo quiosque.|
 |kioskModeVirtualHomeButtonEnabled|Booliano|Se um botão de Home virtual será exibido ou não quando o dispositivo estiver no modo quiosque.|
+|kioskModeBluetoothConfigurationEnabled|Booliano|Se permitirá ou não que um usuário defina configurações de Bluetooth no modo quiosque.|
+|kioskModeWiFiConfigurationEnabled|Booliano|Se permitirá ou não que um usuário defina configurações de Wi-Fi no modo quiosque.|
 |microphoneForceMute|Booliano|Indica se a desativação do microfone no dispositivo deve ou não ser bloqueada.|
 |networkEscapeHatchAllowed|Booliano|Indica se o dispositivo permitirá ou não conexão com uma conexão de rede temporária no momento da inicialização.|
 |nfcBlockOutgoingBeam|Booliano|Indica se o feixe de saída NFC deve ou não ser bloqueado.|
@@ -83,10 +85,17 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar androidD
 |passwordBlockKeyguardFeatures|coleção [androidKeyguardFeature](../resources/intune-deviceconfig-androidkeyguardfeature.md)|Lista de recursos de keyguard de dispositivo para bloquear. Essa coleção pode conter um máximo de 7 elementos. Os valores possíveis são: `notConfigured`, `camera`, `notifications`, `unredactedNotifications`, `trustAgents`, `fingerprint`, `remoteInput`, `allFeatures`.|
 |passwordExpirationDays|Int32|Indica a quantidade de tempo, em segundos, que uma senha pode ser definida para antes de expirar e uma nova senha será necessária. Valores válidos de 1 a 365|
 |passwordMinimumLength|Int32|Indica o comprimento mínimo da senha necessária no dispositivo. Valores válidos de 4 a 16|
+|passwordMinimumLetterCharacters|Int32|Indica o número mínimo de caracteres de letras necessários para a senha do dispositivo. Valores válidos de 1 a 16|
+|passwordMinimumLowerCaseCharacters|Int32|Indica o número mínimo de caracteres de maiúsculas e minúsculas necessários para a senha do dispositivo. Valores válidos de 1 a 16|
+|passwordMinimumNonLetterCharacters|Int32|Indica o número mínimo de caracteres que não são letras necessários para a senha do dispositivo. Valores válidos de 1 a 16|
+|passwordMinimumNumericCharacters|Int32|Indica o número mínimo de caracteres numéricos necessários para a senha do dispositivo. Valores válidos de 1 a 16|
+|passwordMinimumSymbolCharacters|Int32|Indica o número mínimo de caracteres de símbolo necessários para a senha do dispositivo. Valores válidos de 1 a 16|
+|passwordMinimumUpperCaseCharacters|Int32|Indica o número mínimo de caracteres de caseletter superior necessários para a senha do dispositivo. Valores válidos de 1 a 16|
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Milissegundos de inatividade antes da tela expirar.|
 |passwordPreviousPasswordCountToBlock|Int32|Indica o comprimento do histórico de senhas, onde o usuário não poderá inserir uma nova senha que seja igual a qualquer senha no histórico. Valores válidos de 0 a 24|
 |passwordRequiredType|[androidDeviceOwnerRequiredPasswordType](../resources/intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)|Indica a qualidade mínima da senha necessária no dispositivo. Os valores possíveis são: `deviceDefault`, `required`, `numeric`, `numericComplex`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`.|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Indica o número de vezes que um usuário pode inserir uma senha incorreta antes que o dispositivo seja apagado. Valores válidos de 4 a 11|
+|playStoreMode|[androidDeviceOwnerPlayStoreMode](../resources/intune-deviceconfig-androiddeviceownerplaystoremode.md)|Indica o modo de repositório de execução do dispositivo. Os valores possíveis são: `notConfigured`, `allowList`, `blockList`.|
 |safeBootBlocked|Booliano|Indica se o dispositivo será reinicializado na inicialização segura está desabilitado.|
 |screenCaptureBlocked|Boolean|Indica se a capacidade de realizar capturas de tela deve ou não ser desabilitada.|
 |securityAllowDebuggingFeatures|Booliano|Indica se o usuário será ou não impedido de habilitar recursos de depuração no dispositivo.|
@@ -103,7 +112,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar androidD
 |usersBlockAdd|Booliano|Indica se os usuários e perfis serão ou não desabilitados.|
 |usersBlockRemove|Booliano|Indica se a remoção de outros usuários do dispositivo deve ou não ser desabilitada.|
 |volumeBlockAdjustment|Booliano|Indica se o ajuste do volume mestre está ou não desabilitado.|
-|vpnAlwaysOnPackageIdentifier|String|Nome do pacote do aplicativo Android para o aplicativo que manipulará uma conexão VPN sempre ativa.|
+|vpnAlwaysOnPackageIdentifier|Cadeia de caracteres|Nome do pacote do aplicativo Android para o aplicativo que manipulará uma conexão VPN sempre ativa.|
 |vpnAlwaysOnLockdownMode|Booliano|Se um nome de pacote VPN Always on for especificado, se o tráfego de rede será ou não bloqueado quando essa VPN for desconectada.|
 |wifiBlockEditConfigurations|Booliano|Indica se o usuário será ou não impedido de editar as configurações de conexão WiFi.|
 |wifiBlockEditPolicyDefinedConfigurations|Booliano|Indica se o usuário será ou não impedido de editar apenas as redes definidas pela política.|
@@ -120,7 +129,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 2517
+Content-length: 2905
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -158,6 +167,8 @@ Content-length: 2517
   "kioskModeWallpaperUrl": "https://example.com/kioskModeWallpaperUrl/",
   "kioskModeExitCode": "Kiosk Mode Exit Code value",
   "kioskModeVirtualHomeButtonEnabled": true,
+  "kioskModeBluetoothConfigurationEnabled": true,
+  "kioskModeWiFiConfigurationEnabled": true,
   "microphoneForceMute": true,
   "networkEscapeHatchAllowed": true,
   "nfcBlockOutgoingBeam": true,
@@ -167,10 +178,17 @@ Content-length: 2517
   ],
   "passwordExpirationDays": 6,
   "passwordMinimumLength": 5,
+  "passwordMinimumLetterCharacters": 15,
+  "passwordMinimumLowerCaseCharacters": 2,
+  "passwordMinimumNonLetterCharacters": 2,
+  "passwordMinimumNumericCharacters": 0,
+  "passwordMinimumSymbolCharacters": 15,
+  "passwordMinimumUpperCaseCharacters": 2,
   "passwordMinutesOfInactivityBeforeScreenTimeout": 14,
   "passwordPreviousPasswordCountToBlock": 4,
   "passwordRequiredType": "required",
   "passwordSignInFailureCountBeforeFactoryReset": 12,
+  "playStoreMode": "allowList",
   "safeBootBlocked": true,
   "screenCaptureBlocked": true,
   "securityAllowDebuggingFeatures": true,
@@ -201,7 +219,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2689
+Content-Length: 3077
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -242,6 +260,8 @@ Content-Length: 2689
   "kioskModeWallpaperUrl": "https://example.com/kioskModeWallpaperUrl/",
   "kioskModeExitCode": "Kiosk Mode Exit Code value",
   "kioskModeVirtualHomeButtonEnabled": true,
+  "kioskModeBluetoothConfigurationEnabled": true,
+  "kioskModeWiFiConfigurationEnabled": true,
   "microphoneForceMute": true,
   "networkEscapeHatchAllowed": true,
   "nfcBlockOutgoingBeam": true,
@@ -251,10 +271,17 @@ Content-Length: 2689
   ],
   "passwordExpirationDays": 6,
   "passwordMinimumLength": 5,
+  "passwordMinimumLetterCharacters": 15,
+  "passwordMinimumLowerCaseCharacters": 2,
+  "passwordMinimumNonLetterCharacters": 2,
+  "passwordMinimumNumericCharacters": 0,
+  "passwordMinimumSymbolCharacters": 15,
+  "passwordMinimumUpperCaseCharacters": 2,
   "passwordMinutesOfInactivityBeforeScreenTimeout": 14,
   "passwordPreviousPasswordCountToBlock": 4,
   "passwordRequiredType": "required",
   "passwordSignInFailureCountBeforeFactoryReset": 12,
+  "playStoreMode": "allowList",
   "safeBootBlocked": true,
   "screenCaptureBlocked": true,
   "securityAllowDebuggingFeatures": true,
@@ -279,6 +306,7 @@ Content-Length: 2689
   "wifiBlockEditPolicyDefinedConfigurations": true
 }
 ```
+
 
 
 

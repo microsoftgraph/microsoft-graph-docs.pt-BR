@@ -4,12 +4,12 @@ description: Tipos de conexão VPN.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e5e0e3248315fc598d95ea3eb2bb46a6445a5968
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 5ac61b494fc261832a864c4c87998532a863f87b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30166707"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31774138"
 ---
 # <a name="windows10vpnconnectiontype-enum-type"></a>tipo de enumeração windows10VpnConnectionType
 
@@ -32,6 +32,7 @@ Tipos de conexão VPN.
 |PPTP|178|PPTP.|
 |Citrix|8|Citrix.|
 |paloAltoGlobalProtect|241|GlobalProtect de redes de Palo Alto.|
+
 
 
 

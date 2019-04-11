@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos iosWiFiConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4cab4078b5fd7e9313c7993db4be3af551f4124a
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: a90253a8add80a081c25e91d9278bc2f004b6a47
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30961886"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31774474"
 ---
 # <a name="list-ioswificonfigurations"></a>Listar iosWiFiConfigurations
 
@@ -93,6 +93,7 @@ Content-Length: 964
   ]
 }
 ```
+
 
 
 

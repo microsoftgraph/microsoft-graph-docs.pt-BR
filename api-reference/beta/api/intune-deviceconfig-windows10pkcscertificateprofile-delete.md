@@ -4,12 +4,12 @@ description: Exclui windows10PkcsCertificateProfile.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 88eaa7cc88b0bc586498d40ee51db805ec696aa3
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 57bb216009bcb7745d22caf8618a0736a6b564bf
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30979036"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31774173"
 ---
 # <a name="delete-windows10pkcscertificateprofile"></a>Excluir windows10PkcsCertificateProfile
 
@@ -64,6 +64,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

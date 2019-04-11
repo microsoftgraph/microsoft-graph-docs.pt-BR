@@ -4,12 +4,12 @@ description: Exclui mobileAppCategory.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bdaae09805e8e9cb76b9a0ddc17e89f99dec409f
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: dab682a2f19c635924804f8bb798cfd827f18387
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30960640"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31773354"
 ---
 # <a name="delete-mobileappcategory"></a>Excluir mobileAppCategory
 
@@ -63,6 +63,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

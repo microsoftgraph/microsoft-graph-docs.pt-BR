@@ -4,12 +4,12 @@ description: A enumeração para especificar o canal de atualizações do office
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 62b91cc33ecce517015e7070caacd4dab8b9fbcf
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c4db2473213e879b7beee7f082767bb4a9f63aee
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30147856"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31772108"
 ---
 # <a name="officeupdatechannel-enum-type"></a>tipo de enumeração officeUpdateChannel
 
@@ -22,11 +22,12 @@ A enumeração para especificar o canal de atualizações do office365.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|Nenhuma|,0|Ainda não documentado|
+|nenhuma|,0|Ainda não documentado|
 |hoje|1|Ainda não documentado|
 |adiado|duas|Ainda não documentado|
 |firstReleaseCurrent|3D|Ainda não documentado|
 |firstReleaseDeferred|quatro|Ainda não documentado|
+
 
 
 

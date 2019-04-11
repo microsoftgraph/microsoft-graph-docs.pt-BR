@@ -1,15 +1,15 @@
 ---
 title: Tipo de recurso rolePermission
-description: Ainda não documentado
+description: Contém o conjunto de ResourceActions que determina as permissões permitidas e não permitidas para cada função.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5b56df927cda3cbf98e7d736311aba2db5e53906
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e9bbd4782022faebcf56b8bf582e233fd5ba54f6
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30145378"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771261"
 ---
 # <a name="rolepermission-resource-type"></a>Tipo de recurso rolePermission
 
@@ -17,16 +17,16 @@ ms.locfileid: "30145378"
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Ainda não documentado
+Contém o conjunto de ResourceActions que determina as permissões permitidas e não permitidas para cada função.
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|actions|String collection|Ações permitidas|
-|resourceActions|Coleção [resourceAction](../resources/intune-rbac-resourceaction.md)|Ações|
+|actions|Coleção String|Ações permitidas-preTeridas|
+|resourceActions|Coleção [resourceAction](../resources/intune-rbac-resourceaction.md)|Ações de recurso que contêm um conjunto de permissões permitidas e não permitidas.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -54,6 +54,7 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
 
 
 

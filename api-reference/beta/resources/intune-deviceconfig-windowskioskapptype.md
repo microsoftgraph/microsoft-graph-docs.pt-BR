@@ -4,12 +4,12 @@ description: O tipo de aplicativo Windows quiosque.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d61e5c9096c9452a5bc52b8716bee1ed3d79fb4a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c8c03bdc2e2ac94f1e3a5be74569afdfd8d5bb6a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30143376"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771121"
 ---
 # <a name="windowskioskapptype-enum-type"></a>tipo de enumeração windowsKioskAppType
 
@@ -22,10 +22,11 @@ O tipo de aplicativo Windows quiosque.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|unknown|,0|Unknown.|
+|desconhecido|,0|Unknown.|
 |Guarde|1|Aplicativo Store.|
 |placa|duas|Aplicativo da área de trabalho.|
 |aumId|3D|Entrada por AUMID.|
+
 
 
 

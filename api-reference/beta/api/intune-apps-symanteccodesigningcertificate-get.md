@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto symantecCodeSigningC
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e66a9f10e523aaf3906f17355f3eeac0402ff23d
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 396821b7e5250347ebec2d8bb28a52312b58c93d
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30986716"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771310"
 ---
 # <a name="get-symanteccodesigningcertificate"></a>Obter symantecCodeSigningCertificate
 
@@ -83,6 +83,7 @@ Content-Length: 511
   }
 }
 ```
+
 
 
 

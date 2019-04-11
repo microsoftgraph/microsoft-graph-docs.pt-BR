@@ -4,12 +4,12 @@ description: Opções de origem do aplicativo para gatekeeper do macOS.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f3e43505a745e87e52f2f1c12a5cc5ff08825c09
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 2dbe261b223a180f64016d41495a0f4fcec22868
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30166203"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771065"
 ---
 # <a name="macosgatekeeperappsources-enum-type"></a>tipo de enumeração macOSGatekeeperAppSources
 
@@ -26,6 +26,7 @@ Opções de origem do aplicativo para gatekeeper do macOS.
 |macAppStore|1|Somente aplicativos do Mac loja podem ser executados.|
 |macAppStoreAndIdentifiedDevelopers|duas|Somente os aplicativos do Mac loja e dos desenvolvedores identificados podem ser executados.|
 |em qualquer lugar|3D|Os aplicativos de qualquer lugar podem ser executados.|
+
 
 
 

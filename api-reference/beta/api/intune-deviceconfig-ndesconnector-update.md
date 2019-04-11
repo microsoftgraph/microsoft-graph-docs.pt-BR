@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto ndesConnector.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 73131809a6142068ff4324762e981dc61c4e9139
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 894690392b40bcb8d386ece0dc5da482900bec7f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30980926"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31774376"
 ---
 # <a name="update-ndesconnector"></a>Atualizar ndesConnector
 
@@ -92,6 +92,7 @@ Content-Length: 232
   "displayName": "Display Name value"
 }
 ```
+
 
 
 

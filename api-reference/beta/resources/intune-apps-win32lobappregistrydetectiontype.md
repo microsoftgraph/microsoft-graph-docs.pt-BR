@@ -4,12 +4,12 @@ description: Contém todo o tipo de detecção de dados de registro com suporte.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 62028eefbfa85bceb669cbe8cc4bee8261d5837e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 6c19d2dfa0c19be1d61178c25fdd04615d2f9dbd
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30158454"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31774257"
 ---
 # <a name="win32lobappregistrydetectiontype-enum-type"></a>tipo de enumeração win32LobAppRegistryDetectionType
 
@@ -27,7 +27,8 @@ Contém todo o tipo de detecção de dados de registro com suporte.
 |doesNotExist|duas|A chave ou o valor do registro especificado não existe.|
 |string|3D|Tipo de valor de cadeia de caracteres.|
 |inteiro|quatro|Tipo de valor inteiro.|
-|version|0,5|Tipo de valor de versão.|
+|versão|0,5|Tipo de valor de versão.|
+
 
 
 

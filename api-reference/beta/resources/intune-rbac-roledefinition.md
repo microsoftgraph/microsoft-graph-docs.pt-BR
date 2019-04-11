@@ -4,12 +4,12 @@ description: 'O recurso de Definição de Função. A definição da função é
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ba38f9293ce4a21d031a3c70e8d3bdbe5667f997
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: fca5f91c5ca708f715b1438f2fe8508060e3b91c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30173714"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31772003"
 ---
 # <a name="roledefinition-resource-type"></a>Tipo de recurso roleDefinition
 
@@ -23,7 +23,7 @@ O recurso de Definição de Função. A definição da função é a base do ace
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar roleDefinitions](../api/intune-rbac-roledefinition-list.md)|Coleção [roleDefinition](../resources/intune-rbac-roledefinition.md)|Listar propriedades e relações dos objetos [roleDefinition](../resources/intune-rbac-roledefinition.md).|
-|[Obter roleDefinition](../api/intune-rbac-roledefinition-get.md)|[roleDefinition](../resources/intune-rbac-roledefinition.md)|Ler propriedades e relações do objeto [roleDefinition](../resources/intune-rbac-roledefinition.md).|
+|[Acessar roleDefinition](../api/intune-rbac-roledefinition-get.md)|[roleDefinition](../resources/intune-rbac-roledefinition.md)|Leia as propriedades e as relações do objeto [roleDefinition](../resources/intune-rbac-roledefinition.md).|
 |[Criar roleDefinition](../api/intune-rbac-roledefinition-create.md)|[roleDefinition](../resources/intune-rbac-roledefinition.md)|Criar um novo objeto [roleDefinition](../resources/intune-rbac-roledefinition.md)|
 |[Excluir roleDefinition](../api/intune-rbac-roledefinition-delete.md)|Nenhum|Excluir um [roleDefinition](../resources/intune-rbac-roledefinition.md)|
 |[Atualizar roleDefinition](../api/intune-rbac-roledefinition-update.md)|[roleDefinition](../resources/intune-rbac-roledefinition.md)|Atualizar as propriedades de um objeto [roleDefinition](../resources/intune-rbac-roledefinition.md).|
@@ -31,14 +31,14 @@ O recurso de Definição de Função. A definição da função é a base do ace
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade. É somente leitura e é gerada automaticamente.|
-|displayName|String|Nome de exibição da definição de Função.|
-|description|Cadeia de caracteres|Descrição da definição de Função.|
-|permissions|Coleção [rolePermission](../resources/intune-rbac-rolepermission.md)|Lista de Permissões de Função que esta função está autorizada a executar. Elas devem corresponder ao actionName definido como parte de rolePermission.|
+|id|String|Chave da entidade. É somente leitura e gerada automaticamente.|
+|displayName|Cadeia de caracteres|Nome de exibição da definição de Função.|
+|description|String|Descrição da definição de Função.|
+|permissões|Coleção [rolePermission](../resources/intune-rbac-rolepermission.md)|Lista de Permissões de Função que esta função está autorizada a executar. Elas devem corresponder ao actionName definido como parte de rolePermission.|
 |rolePermissions|Coleção [rolePermission](../resources/intune-rbac-rolepermission.md)|Lista de Permissões de Função que esta função está autorizada a executar. Elas devem corresponder ao actionName definido como parte de rolePermission.|
 |isBuiltInRoleDefinition|Booliano|Tipo de Função. Defina como True se for uma definição de função interna ou como False se for uma definição de função personalizada.|
 |isBuiltIn|Booliano|Tipo de Função. Defina como True se for uma definição de função interna ou como False se for uma definição de função personalizada.|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade.|
+|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância de entidade.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -104,6 +104,7 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
 
 
 

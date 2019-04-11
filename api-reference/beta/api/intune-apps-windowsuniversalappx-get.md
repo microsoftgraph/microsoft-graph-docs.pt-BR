@@ -4,12 +4,12 @@ description: Ler propriedades e relações do objeto windowsUniversalAppX.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 54ad97589fa5abff356c32447d011b79342a5123
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 541cf185be92081cb5f675a691dafd886de9e337
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30977111"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31774502"
 ---
 # <a name="get-windowsuniversalappx"></a>Get windowsUniversalAppX
 
@@ -67,7 +67,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1667
+Content-Length: 1696
 
 {
   "value": {
@@ -95,6 +95,7 @@ Content-Length: 1667
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
     ],
+    "dependentAppCount": 1,
     "committedContentVersion": "Committed Content Version value",
     "fileName": "File Name value",
     "size": 4,
@@ -118,6 +119,7 @@ Content-Length: 1667
   }
 }
 ```
+
 
 
 

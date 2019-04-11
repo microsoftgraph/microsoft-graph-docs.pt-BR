@@ -4,12 +4,12 @@ description: A restrição que impõe o valor da configuração é de um conjunt
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 71af621a27830695bf4638715573299a163fda58
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 457582a5160aa9e17beb06d3b169c3817d216e4e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31523676"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31772535"
 ---
 # <a name="devicemanagementenumconstraint-resource-type"></a>tipo de recurso deviceManagementEnumConstraint
 
@@ -49,8 +49,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
-
 
 
 

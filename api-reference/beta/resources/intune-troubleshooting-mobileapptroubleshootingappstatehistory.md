@@ -4,12 +4,12 @@ description: Item de histórico contido no evento de solução de problemas de a
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bd39115de207532b42d1554da54e154a5066eb76
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 75285b5dec8b3b3808f2e81a4655d9298d12d486
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30150957"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31772080"
 ---
 # <a name="mobileapptroubleshootingappstatehistory-resource-type"></a>tipo de recurso mobileAppTroubleshootingAppStateHistory
 
@@ -31,7 +31,7 @@ Herda de [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooti
 |errorCode|Cadeia de caracteres|Código de erro para a falha, vazio se não houver falha.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -49,7 +49,6 @@ Veja a seguir uma representação JSON do recurso.
   "errorCode": "String"
 }
 ```
-
 
 
 

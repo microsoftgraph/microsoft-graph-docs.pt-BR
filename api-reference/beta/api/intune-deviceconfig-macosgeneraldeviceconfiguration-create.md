@@ -4,12 +4,12 @@ description: Cria um novo objeto macOSGeneralDeviceConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a813ee14200b07dc86d92acef01fb2cf1928d52a
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 3c2705b947e97597b38ef2d22441193cbafba01b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30975081"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31770729"
 ---
 # <a name="create-macosgeneraldeviceconfiguration"></a>Criar macOSGeneralDeviceConfiguration
 
@@ -54,9 +54,9 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar macOSGeneralDevi
 |id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|Booliano|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|descrição|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |compliantAppsList|Coleção [appListItem](../resources/intune-deviceconfig-applistitem.md)|Lista de aplicativos em conformidade (lista de permissões ou lista de bloqueios, controladas por CompliantAppListType). Essa coleção pode conter um máximo de 10.000 elementos.|
@@ -71,34 +71,34 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar macOSGeneralDevi
 |passwordPreviousPasswordBlockCount|Int32|Número de senhas anteriores para bloquear.|
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|Tipo de senha necessário. Os valores possíveis são: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordRequired|Boolean|Se uma senha deve ou não ser exigida.|
-|Propriedadeskeychainblockcloudsync|Boolean|Indica se a sincronização de chaves do iCloud está bloqueada (macOS 10,12 e posterior).|
-|airPrintBlocked|Boolean|Indica se o arquivo de impressão está bloqueado (macOS 10,12 e posterior).|
-|airPrintForceTrustedTLS|Boolean|Indica se certificados confiáveis são necessários para comunicação de impressão TLS (macOS 10,13 e posterior).|
-|airPrintBlockiBeaconDiscovery|Boolean|Indica se a descoberta de impressoras de impressão do iBeacon está ou não bloqueada. Isso impede os beacons Bluetooth de impressão de mensagens de phishing para tráfego de rede (macOS 10,3 e posterior).|
-|safariBlockAutofill|Boolean|Indica se o usuário será ou não impedido de usar o preenchimento automático no Safari.|
-|cameraBlocked|Boolean|Indica se o usuário será ou não impedido de acessar a câmera do dispositivo.|
-|iTunesBlockMusicService|Boolean|Indica se o serviço de música deve ou não ser bloqueado e o aplicativo de música é revertido para o modo clássico.|
+|Propriedadeskeychainblockcloudsync|Booliano|Indica se a sincronização de chaves do iCloud está bloqueada (macOS 10,12 e posterior).|
+|airPrintBlocked|Booliano|Indica se o arquivo de impressão está bloqueado (macOS 10,12 e posterior).|
+|airPrintForceTrustedTLS|Booliano|Indica se certificados confiáveis são necessários para comunicação de impressão TLS (macOS 10,13 e posterior).|
+|airPrintBlockiBeaconDiscovery|Booliano|Indica se a descoberta de impressoras de impressão do iBeacon está ou não bloqueada. Isso impede os beacons Bluetooth de impressão de mensagens de phishing para tráfego de rede (macOS 10,3 e posterior).|
+|safariBlockAutofill|Booliano|Indica se o usuário será ou não impedido de usar o preenchimento automático no Safari.|
+|cameraBlocked|Booliano|Indica se o usuário será ou não impedido de acessar a câmera do dispositivo.|
+|iTunesBlockMusicService|Booliano|Indica se o serviço de música deve ou não ser bloqueado e o aplicativo de música é revertido para o modo clássico.|
 |spotlightBlockInternetResults|Boolean|Indica se o Spotlight deve ou não bloquear o retorno de qualquer resultado de uma pesquisa na Internet.|
-|keyboardBlockDictation|Boolean|Indica se o usuário será ou não impedido de usar a entrada de ditado.|
-|definitionLookupBlocked|Boolean|Indica se a pesquisa de definição deve ou não ser bloqueada.|
-|appleWatchBlockAutoUnlock|Boolean|Indica se os usuários devem ou não bloquear seu Mac com o Apple Watch.|
-|iTunesBlockFileSharing|Boolean|Indica se os arquivos devem ou não ser transferidos usando o iTunes.|
+|keyboardBlockDictation|Booliano|Indica se o usuário será ou não impedido de usar a entrada de ditado.|
+|definitionLookupBlocked|Booliano|Indica se a pesquisa de definição deve ou não ser bloqueada.|
+|appleWatchBlockAutoUnlock|Booliano|Indica se os usuários devem ou não bloquear seu Mac com o Apple Watch.|
+|iTunesBlockFileSharing|Booliano|Indica se os arquivos devem ou não ser transferidos usando o iTunes.|
 |iCloudBlockDocumentSync|Boolean|Indica se a sincronização de documentos do iCloud deve ou não ser bloqueada.|
-|iCloudBlockMail|Boolean|Indica se o iCloud deve ou não bloquear emails de sincronização.|
-|iCloudBlockAddressBook|Boolean|Indica se o iCloud deve ou não bloquear os contatos de sincronização.|
-|iCloudBlockCalendar|Boolean|Indica se o iCloud deve ou não bloquear calendários de sincronização.|
-|iCloudBlockReminders|Boolean|Indica se o iCloud deve ou não bloquear lembretes de sincronização.|
-|iCloudBlockBookmarks|Boolean|Indica se o iCloud deve ou não bloquear os indicadores de sincronização.|
-|iCloudBlockNotes|Boolean|Indica se o iCloud deve ou não bloquear as anotações de sincronização.|
-|airDropBlocked|Boolean|Indica se o recurso de recebimento de esficado deve ou não ser permitido.|
-|passwordBlockModification|Boolean|Indica se a modificação de senha deve ou não ser permitida.|
-|passwordBlockFingerprintUnlock|Boolean|Indica se o desbloqueio de impressão digital deve ou não ser bloqueado.|
-|passwordBlockAutoFill|Boolean|Indica se o recurso de senhas de preenchimento automático deve ou não ser bloqueado.|
-|passwordBlockProximityRequests|Boolean|Indica se as senhas de solicitação devem ou não ser bloqueadas de dispositivos próximos.|
-|passwordBlockAirDropSharing|Boolean|Indica se as senhas de compartilhamento devem ou não ser bloqueadas com o recurso de senha de soltura.|
+|iCloudBlockMail|Booliano|Indica se o iCloud deve ou não bloquear emails de sincronização.|
+|iCloudBlockAddressBook|Booliano|Indica se o iCloud deve ou não bloquear os contatos de sincronização.|
+|iCloudBlockCalendar|Booliano|Indica se o iCloud deve ou não bloquear calendários de sincronização.|
+|iCloudBlockReminders|Booliano|Indica se o iCloud deve ou não bloquear lembretes de sincronização.|
+|iCloudBlockBookmarks|Booliano|Indica se o iCloud deve ou não bloquear os indicadores de sincronização.|
+|iCloudBlockNotes|Booliano|Indica se o iCloud deve ou não bloquear as anotações de sincronização.|
+|airDropBlocked|Booliano|Indica se o recurso de recebimento de esficado deve ou não ser permitido.|
+|passwordBlockModification|Booliano|Indica se a modificação de senha deve ou não ser permitida.|
+|passwordBlockFingerprintUnlock|Booliano|Indica se o desbloqueio de impressão digital deve ou não ser bloqueado.|
+|passwordBlockAutoFill|Booliano|Indica se o recurso de senhas de preenchimento automático deve ou não ser bloqueado.|
+|passwordBlockProximityRequests|Booliano|Indica se as senhas de solicitação devem ou não ser bloqueadas de dispositivos próximos.|
+|passwordBlockAirDropSharing|Booliano|Indica se as senhas de compartilhamento devem ou não ser bloqueadas com o recurso de senha de soltura.|
 |softwareUpdatesEnforcedDelayInDays|Int32|Define o número de dias que uma atualização de software será delyed para um dispositivo supervisionado. Valores válidos de 0 a 90|
-|softwareUpdatesForceDelayed|Boolean|Indica se o usuário deve ou não atrasar a visibilidade de atualizações de software quando o dispositivo estiver no modo supervisionado.|
-|contentCachingBlocked|Boolean|Indica se o cache de conteúdo deve ou não ser permitido.|
+|softwareUpdatesForceDelayed|Booliano|Indica se o usuário deve ou não atrasar a visibilidade de atualizações de software quando o dispositivo estiver no modo supervisionado.|
+|contentCachingBlocked|Booliano|Indica se o cache de conteúdo deve ou não ser permitido.|
 
 
 
@@ -247,6 +247,7 @@ Content-Length: 2160
   "contentCachingBlocked": true
 }
 ```
+
 
 
 

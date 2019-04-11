@@ -4,12 +4,12 @@ description: Listar propriedades e relações dos objetos windows10CompliancePol
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e839a66692ed4db5926b99b15aaadd6853d4fb5c
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: d0c3a74acc300fa47487b88bae8f6c080bb3c95d
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30980709"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771499"
 ---
 # <a name="list-windows10compliancepolicies"></a>Listar windows10CompliancePolicies
 
@@ -62,7 +62,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2087
+Content-Length: 2059
 
 {
   "value": [
@@ -113,12 +113,12 @@ Content-Length: 2087
       ],
       "deviceThreatProtectionEnabled": true,
       "deviceThreatProtectionRequiredSecurityLevel": "secured",
-      "configurationManagerComplianceRequired": true,
-      "tpmRequired": true
+      "configurationManagerComplianceRequired": true
     }
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Configuração de experiência inicial da caixa
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1148ba609a6533dcc6cedb9abd50e9191dceb5d2
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 0f465297f437f3710f8c789d8683794b7c9d5fa5
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30145525"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31773508"
 ---
 # <a name="outofboxexperiencesettings-resource-type"></a>tipo de recurso outOfBoxExperienceSettings
 
@@ -22,15 +22,15 @@ Configuração de experiência inicial da caixa
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|hidePrivacySettings|Boolean|Mostrar ou ocultar as configurações de privacidade para o usuário|
-|hideEULA|Boolean|Mostrar ou ocultar o EULA para o usuário|
+|hidePrivacySettings|Booliano|Mostrar ou ocultar as configurações de privacidade para o usuário|
+|hideEULA|Booliano|Mostrar ou ocultar o EULA para o usuário|
 |userType|[windowsUserType](../resources/intune-enrollment-windowsusertype.md)|Tipo de usuário. Os valores possíveis são: `administrator` e `standard`.|
 |deviceUsageType|[windowsDeviceUsageType](../resources/intune-enrollment-windowsdeviceusagetype.md)|Tipo de autenticação do AAD join. Os valores possíveis são: `singleUser` e `shared`.|
-|skipKeyboardSelectionPage|Boolean|Se definido, ignore a página de seleção de teclado se idioma e região estiverem definidos|
-|hideEscapeLink|Boolean|Se for definido como true, o usuário não poderá iniciar novamente com uma conta diferente, na entrada da empresa|
+|skipKeyboardSelectionPage|Booliano|Se definido, ignore a página de seleção de teclado se idioma e região estiverem definidos|
+|hideEscapeLink|Booliano|Se for definido como true, o usuário não poderá iniciar novamente com uma conta diferente, na entrada da empresa|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -50,6 +50,7 @@ Veja a seguir uma representação JSON do recurso.
   "hideEscapeLink": true
 }
 ```
+
 
 
 

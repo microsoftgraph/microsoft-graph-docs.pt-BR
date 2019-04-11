@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto windows10NetworkBoun
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 73ecc4290792d912258f25e8e2a3a475d258b647
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: cb48ebb65eec48b8aff6c380455d223710264109
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30988137"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31774824"
 ---
 # <a name="get-windows10networkboundaryconfiguration"></a>Obter windows10NetworkBoundaryConfiguration
 
@@ -116,6 +116,7 @@ Content-Length: 1519
   }
 }
 ```
+
 
 
 

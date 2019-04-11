@@ -4,12 +4,12 @@ description: Criar um novo objeto windows10EndpointProtectionConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e1fc2745ffe0a9c3274b23d424401f19f76cc50b
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 8af7cd90cf42ce3a8e79ba5a67a45e2b166200de
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30987234"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771653"
 ---
 # <a name="create-windows10endpointprotectionconfiguration"></a>Criar windows10EndpointProtectionConfiguration
 
@@ -98,9 +98,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows1
 |localSecurityOptionsBlockMicrosoftAccounts|Booliano|Impedir que os usuários adicionem novas contas da Microsoft a este computador.|
 |localSecurityOptionsBlockRemoteLogonWithBlankPassword|Booliano|Habilitar contas locais que não estão protegidas por senha para fazer logon de locais diferentes do dispositivo físico. O padrão é habilitado|
 |localSecurityOptionsDisableAdministratorAccount|Booliano|Determina se a conta de administrador local está habilitada ou desabilitada.|
-|localSecurityOptionsAdministratorAccountName|String|Defina um nome de conta diferente a ser associado ao identificador de segurança (SID) da conta "administrador".|
+|localSecurityOptionsAdministratorAccountName|Cadeia de caracteres|Defina um nome de conta diferente a ser associado ao identificador de segurança (SID) da conta "administrador".|
 |localSecurityOptionsDisableGuestAccount|Booliano|Determina se a conta de convidado está habilitada ou desabilitada.|
-|localSecurityOptionsGuestAccountName|String|Defina um nome de conta diferente a ser associado ao identificador de segurança (SID) da conta "convidado".|
+|localSecurityOptionsGuestAccountName|Cadeia de caracteres|Defina um nome de conta diferente a ser associado ao identificador de segurança (SID) da conta "convidado".|
 |localSecurityOptionsAllowUndockWithoutHavingToLogon|Booliano|Impedir que um computador portátil seja desencaixado sem ter que fazer logon.|
 |localSecurityOptionsBlockUsersInstallingPrinterDrivers|Booliano|Restringir a instalação dos drivers de impressora como parte da conexão a uma impressora compartilhada somente para administradores.|
 |localSecurityOptionsBlockRemoteOpticalDriveAccess|Booliano|Habilitar essa configuração permite que somente o usuário conectado interativamente acesse a mídia de CD-ROM.|
@@ -110,11 +110,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows1
 |localSecurityOptionsDoNotRequireCtrlAltDel|Booliano|Exigir CTRL + ALT + DEL para ser pressionada para que um usuário possa fazer logon.|
 |localSecurityOptionsHideLastSignedInUser|Booliano|Não exibe o nome de usuário da última pessoa que entrou neste dispositivo.|
 |localSecurityOptionsHideUsernameAtSignIn|Booliano|Não exibe o nome de usuário da pessoa que está entrando neste dispositivo depois que as credenciais são inseridas e antes da área de trabalho do dispositivo ser exibida.|
-|localSecurityOptionsLogOnMessageTitle|String|Defina o título da mensagem para usuários que tentam fazer logon.|
-|localSecurityOptionsLogOnMessageText|String|Definir o texto da mensagem para usuários que tentam fazer logon.|
+|localSecurityOptionsLogOnMessageTitle|Cadeia de caracteres|Defina o título da mensagem para usuários que tentam fazer logon.|
+|localSecurityOptionsLogOnMessageText|Cadeia de caracteres|Definir o texto da mensagem para usuários que tentam fazer logon.|
 |localSecurityOptionsAllowPKU2UAuthenticationRequests|Booliano|Bloquear solicitações de autenticação PKU2U para este dispositivo para usar identidades online.|
 |localSecurityOptionsAllowRemoteCallsToSecurityAccountsManagerHelperBool|Booliano|Boolean do auxiliar da interface do usuário para entidade LocalSecurityOptionsAllowRemoteCallsToSecurityAccountsManager|
-|localSecurityOptionsAllowRemoteCallsToSecurityAccountsManager|String|Edite a cadeia de caracteres de definição de descritor de segurança padrão para permitir ou impedir que usuários e grupos façam chamadas remotas para o SAM.|
+|localSecurityOptionsAllowRemoteCallsToSecurityAccountsManager|Cadeia de caracteres|Edite a cadeia de caracteres de definição de descritor de segurança padrão para permitir ou impedir que usuários e grupos façam chamadas remotas para o SAM.|
 |localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedClients|[localSecurityOptionsMinimumSessionSecurity](../resources/intune-deviceconfig-localsecurityoptionsminimumsessionsecurity.md)|Essa configuração de segurança permite que um cliente exija a negociação de criptografia de 128 bits e/ou segurança de sessão NTLMv2. Os valores possíveis são: `none`, `requireNtmlV2SessionSecurity`, `require128BitEncryption`, `ntlmV2And128BitEncryption`.|
 |localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedServers|[localSecurityOptionsMinimumSessionSecurity](../resources/intune-deviceconfig-localsecurityoptionsminimumsessionsecurity.md)|Essa configuração de segurança permite que um servidor exija a negociação de criptografia de 128 bits e/ou segurança de sessão NTLMv2. Os valores possíveis são: `none`, `requireNtmlV2SessionSecurity`, `require128BitEncryption`, `ntlmV2And128BitEncryption`.|
 |lanManagerAuthenticationLevel|[lanManagerAuthenticationLevel](../resources/intune-deviceconfig-lanmanagerauthenticationlevel.md)|Essa configuração de segurança determina qual protocolo de autenticação de desafio/resposta é usado para logons de rede. Os valores possíveis são: `lmAndNltm`, `lmNtlmAndNtlmV2`, `lmAndNtlmOnly`, `lmAndNtlmV2`, `lmNtlmV2AndNotLm`, `lmNtlmV2AndNotLmOrNtm`.|
@@ -156,10 +156,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows1
 |defenderSecurityCenterDisableSecureBootUI|Booliano|Usado para desabilitar a exibição da área de inicialização segura sob segurança de dispositivo.|
 |defenderSecurityCenterDisableTroubleshootingUI|Booliano|Usado para desabilitar a exibição do processo de segurança Solucionando problemas de segurança de dispositivo.|
 |defenderSecurityCenterDisableVulnerableTpmFirmwareUpdateUI|Booliano|Usado para desabilitar a exibição de atualizar o firmware do TPM quando um firmware vulnerável é detectado.|
-|defenderSecurityCenterOrganizationDisplayName|String|O nome da empresa que é exibido para os usuários.|
-|defenderSecurityCenterHelpEmail|String|O endereço de email que é exibido para os usuários.|
-|defenderSecurityCenterHelpPhone|String|O número de telefone ou Skype ID que é exibido aos usuários.|
-|defenderSecurityCenterHelpURL|String|A URL do portal da ajuda que é exibida para os usuários.|
+|defenderSecurityCenterOrganizationDisplayName|Cadeia de caracteres|O nome da empresa que é exibido para os usuários.|
+|defenderSecurityCenterHelpEmail|Cadeia de caracteres|O endereço de email que é exibido para os usuários.|
+|defenderSecurityCenterHelpPhone|Cadeia de caracteres|O número de telefone ou Skype ID que é exibido aos usuários.|
+|defenderSecurityCenterHelpURL|Cadeia de caracteres|A URL do portal da ajuda que é exibida para os usuários.|
 |defenderSecurityCenterNotificationsFromApp|[defenderSecurityCenterNotificationsFromAppType](../resources/intune-deviceconfig-defendersecuritycenternotificationsfromapptype.md)|Notificações para mostrar das áreas de aplicativo exibidas. Os valores possíveis são: `notConfigured`, `blockNoncriticalNotifications`, `blockAllNotifications`.|
 |defenderSecurityCenterITContactDisplay|[defenderSecurityCenterITContactDisplayType](../resources/intune-deviceconfig-defendersecuritycenteritcontactdisplaytype.md)|Configurar onde exibir informações de contato de ti para usuários finais. Os valores possíveis são: `notConfigured`, `displayInAppAndInNotifications`, `displayOnlyInApp`, `displayOnlyInNotifications`.|
 |firewallBlockStatefulFTP|Booliano|Bloqueia conexões de FTP com estado ao dispositivo|
@@ -1570,6 +1570,7 @@ Content-Length: 27813
   }
 }
 ```
+
 
 
 

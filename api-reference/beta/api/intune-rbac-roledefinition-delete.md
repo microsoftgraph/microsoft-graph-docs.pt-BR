@@ -4,12 +4,12 @@ description: Exclui roleDefinition
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9341a0c4abde5a19b66e977ef7326868f507187b
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 180a6c74467ad1e16ea829536494f67df20e7d51
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30965673"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31773816"
 ---
 # <a name="delete-roledefinition"></a>Excluir roleDefinition
 
@@ -63,6 +63,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

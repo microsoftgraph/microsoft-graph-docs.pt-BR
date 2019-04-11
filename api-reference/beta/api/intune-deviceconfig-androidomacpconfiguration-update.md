@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto androidOmaCpConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0e5734553212426268eb388fbb0dcd60752f5ad6
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 4f8b7bba614056e97081b8a7997a9fbae4e83e74
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30985232"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31772563"
 ---
 # <a name="update-androidomacpconfiguration"></a>Atualizar androidOmaCpConfiguration
 
@@ -111,6 +111,7 @@ Content-Length: 478
   "configurationXml": "Y29uZmlndXJhdGlvblhtbA=="
 }
 ```
+
 
 
 
