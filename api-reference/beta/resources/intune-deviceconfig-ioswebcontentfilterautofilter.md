@@ -4,35 +4,35 @@ description: Representa um tipo de configuração de filtro de conteúdo da Web 
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 74e281a4cbc08467730680b556e6e8026535ff3a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 91efedb47fff71a66d12e0d2c976d61fab2fa76c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30155661"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31777925"
 ---
-# <a name="ioswebcontentfilterautofilter-resource-type"></a><span data-ttu-id="e34e9-104">tipo de recurso iosWebContentFilterAutoFilter</span><span class="sxs-lookup"><span data-stu-id="e34e9-104">iosWebContentFilterAutoFilter resource type</span></span>
+# <a name="ioswebcontentfilterautofilter-resource-type"></a><span data-ttu-id="e9694-104">tipo de recurso iosWebContentFilterAutoFilter</span><span class="sxs-lookup"><span data-stu-id="e9694-104">iosWebContentFilterAutoFilter resource type</span></span>
 
-> <span data-ttu-id="e34e9-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="e34e9-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="e9694-105">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="e9694-105">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="e34e9-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="e34e9-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="e9694-106">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="e9694-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="e34e9-107">Representa um tipo de configuração de filtro de conteúdo da Web iOS, que habilita o recurso de filtro automático do iOS e permite o controle de acesso à URL adicional.</span><span class="sxs-lookup"><span data-stu-id="e34e9-107">Represents an iOS Web Content Filter setting type, which enables iOS automatic filter feature and allows for additional URL access control.</span></span> <span data-ttu-id="e34e9-108">Quando construído sem valores de propriedade, o dispositivo iOS habilitará o filtro automático independentemente.</span><span class="sxs-lookup"><span data-stu-id="e34e9-108">When constructed with no property values, the iOS device will enable the automatic filter regardless.</span></span>
+<span data-ttu-id="e9694-107">Representa um tipo de configuração de filtro de conteúdo da Web iOS, que habilita o recurso de filtro automático do iOS e permite o controle de acesso à URL adicional.</span><span class="sxs-lookup"><span data-stu-id="e9694-107">Represents an iOS Web Content Filter setting type, which enables iOS automatic filter feature and allows for additional URL access control.</span></span> <span data-ttu-id="e9694-108">Quando construído sem valores de propriedade, o dispositivo iOS habilitará o filtro automático independentemente.</span><span class="sxs-lookup"><span data-stu-id="e9694-108">When constructed with no property values, the iOS device will enable the automatic filter regardless.</span></span>
 
 
-<span data-ttu-id="e34e9-109">Herda de [iosWebContentFilterBase](../resources/intune-deviceconfig-ioswebcontentfilterbase.md)</span><span class="sxs-lookup"><span data-stu-id="e34e9-109">Inherits from [iosWebContentFilterBase](../resources/intune-deviceconfig-ioswebcontentfilterbase.md)</span></span>
+<span data-ttu-id="e9694-109">Herda de [iosWebContentFilterBase](../resources/intune-deviceconfig-ioswebcontentfilterbase.md)</span><span class="sxs-lookup"><span data-stu-id="e9694-109">Inherits from [iosWebContentFilterBase](../resources/intune-deviceconfig-ioswebcontentfilterbase.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="e34e9-110">Propriedades</span><span class="sxs-lookup"><span data-stu-id="e34e9-110">Properties</span></span>
-|<span data-ttu-id="e34e9-111">Propriedade</span><span class="sxs-lookup"><span data-stu-id="e34e9-111">Property</span></span>|<span data-ttu-id="e34e9-112">Tipo</span><span class="sxs-lookup"><span data-stu-id="e34e9-112">Type</span></span>|<span data-ttu-id="e34e9-113">Descrição</span><span class="sxs-lookup"><span data-stu-id="e34e9-113">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="e9694-110">Propriedades</span><span class="sxs-lookup"><span data-stu-id="e9694-110">Properties</span></span>
+|<span data-ttu-id="e9694-111">Propriedade</span><span class="sxs-lookup"><span data-stu-id="e9694-111">Property</span></span>|<span data-ttu-id="e9694-112">Tipo</span><span class="sxs-lookup"><span data-stu-id="e9694-112">Type</span></span>|<span data-ttu-id="e9694-113">Descrição</span><span class="sxs-lookup"><span data-stu-id="e9694-113">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="e34e9-114">allowedUrls</span><span class="sxs-lookup"><span data-stu-id="e34e9-114">allowedUrls</span></span>|<span data-ttu-id="e34e9-115">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="e34e9-115">String collection</span></span>|<span data-ttu-id="e34e9-116">URLs adicionais permitidas para acesso</span><span class="sxs-lookup"><span data-stu-id="e34e9-116">Additional URLs allowed for access</span></span>|
-|<span data-ttu-id="e34e9-117">blockedUrls</span><span class="sxs-lookup"><span data-stu-id="e34e9-117">blockedUrls</span></span>|<span data-ttu-id="e34e9-118">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="e34e9-118">String collection</span></span>|<span data-ttu-id="e34e9-119">URLs adicionais bloqueadas para acesso</span><span class="sxs-lookup"><span data-stu-id="e34e9-119">Additional URLs blocked for access</span></span>|
+|<span data-ttu-id="e9694-114">allowedUrls</span><span class="sxs-lookup"><span data-stu-id="e9694-114">allowedUrls</span></span>|<span data-ttu-id="e9694-115">Coleção String</span><span class="sxs-lookup"><span data-stu-id="e9694-115">String collection</span></span>|<span data-ttu-id="e9694-116">URLs adicionais permitidas para acesso</span><span class="sxs-lookup"><span data-stu-id="e9694-116">Additional URLs allowed for access</span></span>|
+|<span data-ttu-id="e9694-117">blockedUrls</span><span class="sxs-lookup"><span data-stu-id="e9694-117">blockedUrls</span></span>|<span data-ttu-id="e9694-118">Coleção String</span><span class="sxs-lookup"><span data-stu-id="e9694-118">String collection</span></span>|<span data-ttu-id="e9694-119">URLs adicionais bloqueadas para acesso</span><span class="sxs-lookup"><span data-stu-id="e9694-119">Additional URLs blocked for access</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="e34e9-120">Relações</span><span class="sxs-lookup"><span data-stu-id="e34e9-120">Relationships</span></span>
-<span data-ttu-id="e34e9-121">Nenhum</span><span class="sxs-lookup"><span data-stu-id="e34e9-121">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="e9694-120">Relações</span><span class="sxs-lookup"><span data-stu-id="e9694-120">Relationships</span></span>
+<span data-ttu-id="e9694-121">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="e9694-121">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="e34e9-122">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="e34e9-122">JSON Representation</span></span>
-<span data-ttu-id="e34e9-123">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="e34e9-123">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="e9694-122">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="e9694-122">JSON Representation</span></span>
+<span data-ttu-id="e9694-123">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="e9694-123">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.iosWebContentFilterAutoFilter"
@@ -49,6 +49,7 @@ ms.locfileid: "30155661"
   ]
 }
 ```
+
 
 
 
