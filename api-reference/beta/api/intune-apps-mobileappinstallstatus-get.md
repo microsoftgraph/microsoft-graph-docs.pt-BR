@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto mobileAppInstallStat
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5d6ab221f2798b4c93a248fbf49b08f318b8776d
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: a4153326c978cc28652a1900b7516469d56b791d
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30969705"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31775377"
 ---
 # <a name="get-mobileappinstallstatus"></a>Obter mobileAppInstallStatus
 
@@ -66,7 +66,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 645
+Content-Length: 651
 
 {
   "value": {
@@ -77,7 +77,7 @@ Content-Length: 645
     "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
     "mobileAppInstallStatusValue": "failed",
     "installState": "failed",
-    "installStateDetail": "seeInstallErrorCode",
+    "installStateDetail": "dependencyFailedToInstall",
     "errorCode": 9,
     "osVersion": "Os Version value",
     "osDescription": "Os Description value",
@@ -87,6 +87,7 @@ Content-Length: 645
   }
 }
 ```
+
 
 
 

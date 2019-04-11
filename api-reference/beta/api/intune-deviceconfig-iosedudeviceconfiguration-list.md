@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos iosEduDeviceConfigurat
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 372e1a05753ce4f86ffb05f82dfeea02f5fcc1db
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 9bffa31cd3ed338dcd6a23017df5818dae7c58f1
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30981920"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31778835"
 ---
 # <a name="list-iosedudeviceconfigurations"></a>Listar iosEduDeviceConfigurations
 
@@ -116,6 +116,7 @@ Content-Length: 2291
   ]
 }
 ```
+
 
 
 

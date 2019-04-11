@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos appLogCollectionReques
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0da9d487b250677cf4ef486c8fdeb39de317afba
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 0def63422162a6ef372ed1e42506869131293c91
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30964021"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31775356"
 ---
 # <a name="list-applogcollectionrequests"></a>Listar appLogCollectionRequests
 
@@ -79,6 +79,7 @@ Content-Length: 371
   ]
 }
 ```
+
 
 
 

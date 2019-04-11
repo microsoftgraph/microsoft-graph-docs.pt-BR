@@ -4,12 +4,12 @@ description: Entidade que representa o resumo de estado de configuração de dis
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f3c3e6a3630d3e28e62555db25565ab916dc7a91
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 00656b8462504c4b115caafa26929c2f0346d054
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31524054"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31778114"
 ---
 # <a name="devicemanagementintentdevicesettingstatesummary-resource-type"></a>tipo de recurso deviceManagementIntentDeviceSettingStateSummary
 
@@ -64,8 +64,6 @@ Veja a seguir uma representação JSON do recurso.
   "remediatedCount": 1024
 }
 ```
-
-
 
 
 

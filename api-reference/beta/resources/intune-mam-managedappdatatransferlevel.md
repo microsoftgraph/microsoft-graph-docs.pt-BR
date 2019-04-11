@@ -4,12 +4,12 @@ description: Os dados podem ser transferidos de/para essas classes de aplicativo
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9028e37c825be81c844ffe084a04ee6751cccc7d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: f5fdf418dbd3b2b959dbd23de6467b663491d89a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30145119"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31779563"
 ---
 # <a name="managedappdatatransferlevel-enum-type"></a>tipo de enumeração managedAppDataTransferLevel
 
@@ -24,7 +24,8 @@ Os dados podem ser transferidos de/para essas classes de aplicativos
 |:---|:---|:---|
 |todos os aplicativos|,0|Todos os aplicativos.|
 |managedApps|1|Aplicativos gerenciados.|
-|Nenhuma|duas|Nenhum aplicativo.|
+|nenhuma|duas|Nenhum aplicativo.|
+
 
 
 

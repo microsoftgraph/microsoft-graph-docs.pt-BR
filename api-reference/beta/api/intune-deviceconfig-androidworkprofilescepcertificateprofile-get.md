@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto Entidadeandroidworkp
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 75ecb79a5b6e0dd9ed66a5eb82878924d17ad3d4
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 6d3056ef08278cf99483813815ec44a48db2a08b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30968739"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31774999"
 ---
 # <a name="get-androidworkprofilescepcertificateprofile"></a>Obter Entidadeandroidworkprofilescepcertificateprofile
 
@@ -93,6 +93,7 @@ Content-Length: 1478
         "objectIdentifier": "Object Identifier value"
       }
     ],
+    "subjectAlternativeNameType": "emailAddress",
     "scepServerUrls": [
       "Scep Server Urls value"
     ],
@@ -108,11 +109,11 @@ Content-Length: 1478
         "sanType": "emailAddress",
         "name": "Name value"
       }
-    ],
-    "subjectAlternativeNameType": "emailAddress"
+    ]
   }
 }
 ```
+
 
 
 

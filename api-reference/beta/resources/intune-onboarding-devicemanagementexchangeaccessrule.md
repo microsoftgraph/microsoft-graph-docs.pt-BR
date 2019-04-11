@@ -4,12 +4,12 @@ description: Regras de acesso do dispositivo no Exchange.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 38b021bc2f0a4ffa19ca551c2621b08f21e8a35e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 832e11829300ccd1ac4e1d4e6b08acafb908f3b2
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30165776"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31779822"
 ---
 # <a name="devicemanagementexchangeaccessrule-resource-type"></a>tipo de recurso deviceManagementExchangeAccessRule
 
@@ -26,7 +26,7 @@ Regras de acesso do dispositivo no Exchange.
 |accessLevel|[deviceManagementExchangeAccessLevel](../resources/intune-onboarding-devicemanagementexchangeaccesslevel.md)|Nível de acesso para o Exchange concedido por esta regra. Os valores possíveis são: `none`, `allow`, `block`, `quarantine`.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -46,6 +46,7 @@ Veja a seguir uma representação JSON do recurso.
   "accessLevel": "String"
 }
 ```
+
 
 
 

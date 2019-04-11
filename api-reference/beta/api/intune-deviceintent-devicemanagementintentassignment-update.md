@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto deviceManagementIntentAssignm
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 05f3cb277e3b980bcbb6d8c978144737613158b4
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 18552402a6a0531ee1c966f71bd519e4b9127d31
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522878"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31778863"
 ---
 # <a name="update-devicemanagementintentassignment"></a>Atualizar deviceManagementIntentAssignment
 
@@ -90,8 +90,6 @@ Content-Length: 221
   }
 }
 ```
-
-
 
 
 

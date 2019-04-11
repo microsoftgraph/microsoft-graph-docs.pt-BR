@@ -4,12 +4,12 @@ description: A classe usada para identificar uma configuração de quiosque de l
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a754e53b6d23aacc469947318e8e1b9acfb3818f
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: dde52acf7a90f60d5065c4c12e0b0221d0afc379
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30149263"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31779423"
 ---
 # <a name="windowskioskautologon-resource-type"></a>tipo de recurso windowsKioskAutologon
 
@@ -27,7 +27,7 @@ Herda de [windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md
 |:---|:---|:---|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -41,6 +41,7 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.windowsKioskAutologon"
 }
 ```
+
 
 
 

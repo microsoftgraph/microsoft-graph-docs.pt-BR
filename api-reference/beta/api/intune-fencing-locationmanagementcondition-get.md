@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto locationManagementCo
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 88397c4b5a09b90fd66ba9e626a25bc19ddaf970
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 9efdd9433bd8aee58f0aad7bd3b8e909a95c0ebf
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30958337"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31776007"
 ---
 # <a name="get-locationmanagementcondition"></a>Obter locationManagementCondition
 
@@ -84,6 +84,7 @@ Content-Length: 476
   }
 }
 ```
+
 
 
 

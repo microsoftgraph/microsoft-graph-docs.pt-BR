@@ -4,12 +4,12 @@ description: O recurso windowsAutopilotSettings representa uma conta do Windows 
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b34d6edbed5bc98989ea70186b081d5c88a1c1b6
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e7882a522eb3e3adcf9ebdf24e2b8f820b0f3581
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30140513"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31778086"
 ---
 # <a name="windowsautopilotsettings-resource-type"></a>tipo de recurso windowsAutopilotSettings
 
@@ -24,12 +24,12 @@ O recurso windowsAutopilotSettings representa uma conta do Windows AutoPilot par
 |:---|:---|:---|
 |[Obter windowsAutopilotSettings](../api/intune-enrollment-windowsautopilotsettings-get.md)|[windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md)|Leia as propriedades e as relações do objeto [windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md) .|
 |[Atualizar windowsAutopilotSettings](../api/intune-enrollment-windowsautopilotsettings-update.md)|[windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md)|Atualiza as propriedades de um objeto [windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md) .|
-|[ação de sincronização](../api/intune-enrollment-windowsautopilotsettings-sync.md)|Nenhum|Ainda não documentado|
+|[Ação sync](../api/intune-enrollment-windowsautopilotsettings-sync.md)|Nenhuma|Ainda não documentado|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O GUID do objeto.|
+|id|String|O GUID do objeto.|
 |lastSyncDateTime|DateTimeOffset|Data e hora da última sincronização de dados com o DDS Service.|
 |lastManualSyncTriggerDateTime|DateTimeOffset|Data e hora da última sincronização de dados com o DDS Service.|
 |syncStatus|[windowsAutopilotSyncStatus](../resources/intune-enrollment-windowsautopilotsyncstatus.md)|Indica o status da sincronização com o serviço de DDS (sincronização de dados do dispositivo). Os valores possíveis são: `unknown`, `inProgress`, `completed`, `failed`.|
@@ -54,6 +54,7 @@ Veja a seguir uma representação JSON do recurso.
   "syncStatus": "String"
 }
 ```
+
 
 
 

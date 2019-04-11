@@ -4,12 +4,12 @@ description: Estado de preparação de criptografia
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 14aee643f6b0887d7f764aa43402e45668e8c9ba
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 45ececca88487d7191e3e3469e3ca16b4e602ea2
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30177998"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31775090"
 ---
 # <a name="encryptionreadinessstate-enum-type"></a>tipo de enumeração encryptionReadinessState
 
@@ -23,7 +23,8 @@ Estado de preparação de criptografia
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Não legível|,0|Não está pronto|
-|Pronto|1|Ready|
+|Pronto|1|Pronto|
+
 
 
 

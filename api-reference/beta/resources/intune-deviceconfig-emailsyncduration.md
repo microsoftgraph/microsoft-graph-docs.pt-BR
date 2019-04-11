@@ -4,12 +4,12 @@ description: Valores possíveis para duração da sincronização de email.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8f2408150ea590a5d154b71521ca46df7c0fcff9
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 0f66f3abc888205c66745906da0a8803c18b4522
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30142263"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31779185"
 ---
 # <a name="emailsyncduration-enum-type"></a>tipo de enumeração emailSyncDuration
 
@@ -29,6 +29,7 @@ Valores possíveis para duração da sincronização de email.
 |twoWeeks|quatro|Sincronize duas semanas de email.|
 |oneMonth|0,5|Sincronizar um mês de email.|
 |ilimitado|6|Sincronizar uma duração ilimitada de email.|
+
 
 
 

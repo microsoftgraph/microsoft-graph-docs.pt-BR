@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto deviceConfigurationUserStateS
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: efc16035394ec16af3b4334df2160a176332b14a
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: b03f366ba494e351e5dab898ec10e259db250521
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30983740"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31776315"
 ---
 # <a name="update-deviceconfigurationuserstatesummary"></a>Atualizar deviceConfigurationUserStateSummary
 
@@ -104,6 +104,7 @@ Content-Length: 324
   "conflictUserCount": 1
 }
 ```
+
 
 
 

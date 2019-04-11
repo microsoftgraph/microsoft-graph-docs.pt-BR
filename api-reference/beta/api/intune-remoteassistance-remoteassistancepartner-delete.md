@@ -4,12 +4,12 @@ description: Exclui remoteAssistancePartner.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9a1c34216433e2bd856cb14ff3c566a236e5ae62
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: ebc63833ffc5005e400f5a331bce6cad1481e1fc
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30975935"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31779416"
 ---
 # <a name="delete-remoteassistancepartner"></a>Excluir remoteAssistancePartner
 
@@ -62,6 +62,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

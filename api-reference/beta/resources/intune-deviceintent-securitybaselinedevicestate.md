@@ -4,12 +4,12 @@ description: O resumo do estado de conformidade da linha de base de segurança d
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d32e5523f540d5b9fa2e517efe88bc123825ae6b
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: f1fb6bd8ee8e474fdf96bc2c70f4db288571d795
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522528"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31779794"
 ---
 # <a name="securitybaselinedevicestate-resource-type"></a>tipo de recurso securityBaselineDeviceState
 
@@ -32,7 +32,7 @@ O resumo do estado de conformidade da linha de base de segurança da linha de ba
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Identificador exclusivo da entidade|
-|managedDeviceId|Cadeia de Caracteres|ID de dispositivo do Intune|
+|managedDeviceId|Cadeia de caracteres|ID de dispositivo do Intune|
 |deviceDisplayName|Cadeia de caracteres|Nome de exibição do dispositivo|
 |userPrincipalName|String|Nome UPN|
 |state|[securityBaselineComplianceState](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|Estado de conformidade da linha de base de segurança. Os valores possíveis são: `unknown`, `secure`, `notApplicable`, `notSecure`, `error`, `conflict`.|
@@ -60,8 +60,6 @@ Veja a seguir uma representação JSON do recurso.
   "lastReportedDateTime": "String (timestamp)"
 }
 ```
-
-
 
 
 

@@ -4,12 +4,12 @@ description: Uma classe que contém as propriedades para o Recurso de auditoria.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3f22ace5fa4c381584325ffc8434f0e09faaaaeb
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 20c39cc5138be5c731bc34b1e13f8536e7581c40
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30156011"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31775958"
 ---
 # <a name="auditresource-resource-type"></a>Tipo de recurso auditResource
 
@@ -28,7 +28,7 @@ Uma classe que contém as propriedades para o Recurso de auditoria.
 |resourceId|Cadeia de caracteres|ID do recurso de auditoria.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -53,6 +53,7 @@ Veja a seguir uma representação JSON do recurso.
   "resourceId": "String"
 }
 ```
+
 
 
 

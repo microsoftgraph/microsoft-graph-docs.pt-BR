@@ -4,12 +4,12 @@ description: Criar um novo objeto deviceManagementIntentDeviceState.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 594d1e4ffb425c2f2de8380c79a47359790d5f40
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: ff0032426fd28bec8ab0f022bffa2bb52d063408
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522934"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31779234"
 ---
 # <a name="create-devicemanagementintentdevicestate"></a>Criar deviceManagementIntentDeviceState
 
@@ -52,11 +52,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 |:---|:---|:---|
 |id|String|A ID|
 |userPrincipalName|String|O nome principal do usuário que está sendo relatado em um dispositivo|
-|userName|Cadeia de Caracteres|O nome de usuário que está sendo relatado em um dispositivo|
+|userName|Cadeia de caracteres|O nome de usuário que está sendo relatado em um dispositivo|
 |deviceDisplayName|Cadeia de caracteres|Nome do dispositivo que está sendo relatado|
 |lastReportedDateTime|DateTimeOffset|Data e hora da última modificação de um relatório de intenção|
 |state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Estado do dispositivo para uma intenção. Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
-|deviceId|Cadeia de Caracteres|ID do dispositivo que está sendo relatado|
+|deviceId|Cadeia de caracteres|ID do dispositivo que está sendo relatado|
 
 
 
@@ -101,8 +101,6 @@ Content-Length: 391
   "deviceId": "Device Id value"
 }
 ```
-
-
 
 
 

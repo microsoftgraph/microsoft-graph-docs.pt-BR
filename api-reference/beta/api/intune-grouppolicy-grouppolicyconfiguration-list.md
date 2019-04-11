@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos groupPolicyConfigurati
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1859e8851a6ead18a79ed049ee7867e8447dc9a7
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: b1b3e3927964c1a2e9d92f949730e80efbeb705f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30979715"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31777183"
 ---
 # <a name="list-grouppolicyconfigurations"></a>Listar groupPolicyConfigurations
 
@@ -77,6 +77,7 @@ Content-Length: 374
   ]
 }
 ```
+
 
 
 

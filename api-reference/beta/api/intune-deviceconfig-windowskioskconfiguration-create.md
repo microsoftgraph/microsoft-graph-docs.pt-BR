@@ -4,12 +4,12 @@ description: Criar um novo objeto windowsKioskConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b63e58c1b13b64a8869740d136597c46fa636a3e
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 0d34e55a4de496eff9d9305c35a4815a2910a2d7
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30962509"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31776847"
 ---
 # <a name="create-windowskioskconfiguration"></a>Criar windowsKioskConfiguration
 
@@ -54,20 +54,20 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windowsK
 |id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|Booliano|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|descrição|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |kioskProfiles|coleção [windowsKioskProfile](../resources/intune-deviceconfig-windowskioskprofile.md)|Essa configuração de política permite definir uma lista de perfis de quiosque para uma configuração de quiosque. Essa coleção pode conter um máximo de 3 elementos.|
-|kioskBrowserDefaultUrl|String|Especifique a URL padrão para a qual o navegador deve navegar na inicialização.|
-|kioskBrowserEnableHomeButton|Boolean|Habilite o botão Home do navegador quiosque. Por padrão, o botão página inicial está desabilitado.|
-|kioskBrowserEnableNavigationButtons|Boolean|Habilite os botões de navegação do navegador quiosque (avançar/voltar). Por padrão, os botões de navegação estão desabilitados.|
-|kioskBrowserEnableEndSessionButton|Boolean|Habilite o botão encerrar sessão do navegador quiosque. Por padrão, o botão encerrar sessão está desabilitado.|
+|kioskBrowserDefaultUrl|Cadeia de caracteres|Especifique a URL padrão para a qual o navegador deve navegar na inicialização.|
+|kioskBrowserEnableHomeButton|Booliano|Habilite o botão Home do navegador quiosque. Por padrão, o botão página inicial está desabilitado.|
+|kioskBrowserEnableNavigationButtons|Booliano|Habilite os botões de navegação do navegador quiosque (avançar/voltar). Por padrão, os botões de navegação estão desabilitados.|
+|kioskBrowserEnableEndSessionButton|Booliano|Habilite o botão encerrar sessão do navegador quiosque. Por padrão, o botão encerrar sessão está desabilitado.|
 |kioskBrowserRestartOnIdleTimeInMinutes|Int32|Especificar o número de minutos que a sessão ficará ociosa até que o navegador quiosque seja reiniciado em um estado novo.  Os valores válidos são 1-1440. Valores válidos de 1 a 1440|
 |kioskBrowserBlockedURLs|Coleção String|Especificar URLs às quais os navegadores quiosques não devem navegar|
 |kioskBrowserBlockedUrlExceptions|Coleção String|Especificar URLs às quais o navegador de quiosque pode navegar|
-|edgeKioskEnablePublicBrowsing|Boolean|Habilitar modo quiosque de navegação pública para o navegador Microsoft Edge. O padrão é false.|
+|edgeKioskEnablePublicBrowsing|Booliano|Habilitar modo quiosque de navegação pública para o navegador Microsoft Edge. O padrão é false.|
 
 
 
@@ -202,6 +202,7 @@ Content-Length: 1925
   "edgeKioskEnablePublicBrowsing": true
 }
 ```
+
 
 
 

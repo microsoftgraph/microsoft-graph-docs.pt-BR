@@ -4,12 +4,12 @@ description: Exclui sideLoadingKey.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0427d9d52c90f81b45843798d89c4a26df146db6
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 5af06688f2a94943f167724de3f16261f703183d
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30968921"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31779647"
 ---
 # <a name="delete-sideloadingkey"></a>Excluir sideLoadingKey
 
@@ -62,6 +62,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

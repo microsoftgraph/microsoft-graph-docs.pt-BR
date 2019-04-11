@@ -4,12 +4,12 @@ description: Exclui deviceManagementPartner.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 70100ea2dcb8c51750e9bcbb6a6067168af10751
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 4a07a8aecff16021ff5eca91b661e123302f11ff
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30984741"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31775986"
 ---
 # <a name="delete-devicemanagementpartner"></a>Excluir deviceManagementPartner
 
@@ -62,6 +62,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

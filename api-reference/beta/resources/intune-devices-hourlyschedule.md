@@ -4,12 +4,12 @@ description: Agendamento de execução por hora de um script de gerenciamento de
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bb3eacf4e17ed1137ce78d21112c394a45423c6b
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 0f86591326f2b4df8e887c657c05ad3d5021946e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30173413"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31778044"
 ---
 # <a name="hourlyschedule-resource-type"></a>tipo de recurso hourlySchedule
 
@@ -28,7 +28,7 @@ Herda de [runSchedule](../resources/intune-devices-runschedule.md)
 |interval|Int32|Intervalo em número de horas|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -43,6 +43,7 @@ Veja a seguir uma representação JSON do recurso.
   "interval": 1024
 }
 ```
+
 
 
 

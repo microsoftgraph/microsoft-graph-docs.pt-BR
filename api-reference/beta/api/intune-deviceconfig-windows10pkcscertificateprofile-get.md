@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto windows10PkcsCertifi
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7c51664d3cc4b830147e9fcfe5ec3f141836f706
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: c70f0e8268d7cd4c51fd1e2a82a8d4b3b4f1033b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30965995"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31776665"
 ---
 # <a name="get-windows10pkcscertificateprofile"></a>Obter windows10PkcsCertificateProfile
 
@@ -102,6 +102,7 @@ Content-Length: 1258
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Exclui webApp.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 39521fbdd3e3916c3a6b18a75f4faf17bf9e9856
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 98b675698cf076d41ea27c53d22e856cc8a8346d
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30974185"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31775951"
 ---
 # <a name="delete-webapp"></a>Excluir webApp
 
@@ -64,6 +64,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

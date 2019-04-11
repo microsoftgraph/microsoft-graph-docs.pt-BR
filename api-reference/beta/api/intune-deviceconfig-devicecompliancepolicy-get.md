@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto deviceCompliancePoli
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6ba5067aa02a837e1fddb37d83f313954a3bf451
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 78bd8fc9ff69e32b14053ca98440a039bacc01c3
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30971721"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31779318"
 ---
 # <a name="get-devicecompliancepolicy"></a>Acessar deviceCompliancePolicy
 
@@ -82,6 +82,7 @@ Content-Length: 433
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Exclui groupPolicyPresentationDecimalTextBox.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b7faf4a9365f297fa837cf6c0bbc90ef2a7e1f4a
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 44cfa282e02a8fd371ccf03f4b7d69562b40bf44
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30982473"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31776672"
 ---
 # <a name="delete-grouppolicypresentationdecimaltextbox"></a>Excluir groupPolicyPresentationDecimalTextBox
 
@@ -63,6 +63,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

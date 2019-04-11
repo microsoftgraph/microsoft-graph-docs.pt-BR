@@ -4,12 +4,12 @@ description: Informações de definição para um valor de enumeração
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: de1340223d45361825b2b8d8fc4e57194437f6b6
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 9fdddac077caa15fec5cbd516930747ef948665a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31523732"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31777988"
 ---
 # <a name="devicemanagementenumvalue-resource-type"></a>tipo de recurso deviceManagementEnumValue
 
@@ -42,8 +42,6 @@ Veja a seguir uma representação JSON do recurso.
   "displayName": "String"
 }
 ```
-
-
 
 
 

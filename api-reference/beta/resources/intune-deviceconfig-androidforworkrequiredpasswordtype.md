@@ -4,12 +4,12 @@ description: Android para o tipo de senha de trabalho necessário.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0e0e99a5e54797441070308882d4137859390820
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 0bfdca6204bd1745fc9a8350309e51cec2a8a718
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30169472"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31775720"
 ---
 # <a name="androidforworkrequiredpasswordtype-enum-type"></a>tipo de enumeração androidForWorkRequiredPasswordType
 
@@ -30,6 +30,7 @@ Android para o tipo de senha de trabalho necessário.
 |atLeastAlphabetic|0,5|É necessária pelo menos a senha alfabética.|
 |atLeastAlphanumeric|6|É necessária pelo menos a senha alfanumérica.|
 |alphanumericWithSymbols|178|É necessário pelo menos alfanumérico com senha de símbolo.|
+
 
 
 

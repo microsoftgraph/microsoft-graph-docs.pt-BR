@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos androidManagedStoreApp
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3ec62be70ebbc3f47ac8473421cfce2f0d287559
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 199591cab9bba7b4c4ca1ff97ca7522373e32205
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30975501"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31779045"
 ---
 # <a name="list-androidmanagedstoreappconfigurations"></a>Listar androidManagedStoreAppConfigurations
 
@@ -94,6 +94,7 @@ Content-Length: 889
   ]
 }
 ```
+
 
 
 

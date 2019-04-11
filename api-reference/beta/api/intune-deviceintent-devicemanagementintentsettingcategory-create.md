@@ -4,12 +4,12 @@ description: Criar um novo objeto deviceManagementIntentSettingCategory.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8bc000339b6227b4e5349b3a2ddfb78b601c5a71
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: add0d92a29f2bf2d29176e0d22dc68f7deb19a18
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522773"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31776616"
 ---
 # <a name="create-devicemanagementintentsettingcategory"></a>Criar deviceManagementIntentSettingCategory
 
@@ -86,8 +86,6 @@ Content-Length: 168
   "displayName": "Display Name value"
 }
 ```
-
-
 
 
 

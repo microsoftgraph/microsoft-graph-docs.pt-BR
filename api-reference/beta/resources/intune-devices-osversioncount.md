@@ -4,12 +4,12 @@ description: Contagem de dispositivos com malware para cada versão do sistema o
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 12ee68855f45ed6827f84a64084118c24081d266
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 7df4f920335c579e2e17cdeb275cc0545887f1d4
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30142746"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31778128"
 ---
 # <a name="osversioncount-resource-type"></a>tipo de recurso osVersionCount
 
@@ -27,7 +27,7 @@ Contagem de dispositivos com malware para cada versão do sistema operacional
 |lastUpdateDateTime|DateTimeOffset|O carimbo de data/hora da última atualização para a contagem de dispositivos em UTC|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -44,6 +44,7 @@ Veja a seguir uma representação JSON do recurso.
   "lastUpdateDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

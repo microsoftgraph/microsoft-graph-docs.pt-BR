@@ -4,12 +4,12 @@ description: Valores possíveis para informações de reunião de tela de boas-v
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 296b2e90542c9042e04c4153e9314872b530c451
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 8b967a654bfda0a0afe44496654412496984e356
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30158370"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31775860"
 ---
 # <a name="welcomescreenmeetinginformation-enum-type"></a>tipo de enumeração welcomeScreenMeetingInformation
 
@@ -25,6 +25,7 @@ Valores possíveis para informações de reunião de tela de boas-vindas.
 |userDefined|,0|Definido pelo usuário, valor padrão, sem intenção.|
 |showOrganizerAndTimeOnly|1|Mostrar somente organizador e hora.|
 |showOrganizerAndTimeAndSubject|duas|Mostrar organizador, hora e assunto (o assunto está oculto para reuniões privadas).|
+
 
 
 

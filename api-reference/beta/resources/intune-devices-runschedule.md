@@ -4,12 +4,12 @@ description: Executar o agendamento de um script de gerenciamento de dispositivo
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 65df0c70e28b9c33237022941156344ee4d28446
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 9ed3fb0705ce7ec0405549b8dc83f57c1782ef4b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30156403"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31778961"
 ---
 # <a name="runschedule-resource-type"></a>tipo de recurso runSchedule
 
@@ -24,7 +24,7 @@ Executar o agendamento de um script de gerenciamento de dispositivo recorrente.
 |:---|:---|:---|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -38,6 +38,7 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.runSchedule"
 }
 ```
+
 
 
 

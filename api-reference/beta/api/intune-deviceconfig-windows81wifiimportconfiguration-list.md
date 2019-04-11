@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos windows81WifiImportCon
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b9b636550debc3784d91dad8081c11ea952c9ed9
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: f01ed0fff6250bb4f729cb69b67fc6cf45b7fe47
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30966261"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31776343"
 ---
 # <a name="list-windows81wifiimportconfigurations"></a>Listar windows81WifiImportConfigurations
 
@@ -86,6 +86,7 @@ Content-Length: 642
   ]
 }
 ```
+
 
 
 

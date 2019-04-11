@@ -4,12 +4,12 @@ description: Define os resultados de ações em aplicativos de conteúdo do MacO
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7cf8390dc2c1541525e288b81defd073144f4132
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: bfe15398484dbcccdcbae876ea88c81268b8536c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30166504"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31775433"
 ---
 # <a name="macosvppapprevokelicensesactionresult-resource-type"></a>tipo de recurso macOsVppAppRevokeLicensesActionResult
 
@@ -23,7 +23,7 @@ Define os resultados de ações em aplicativos de conteúdo do MacOS, que conté
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |userId|String|UserId associado à ação.|
-|managedDeviceId|String|DeViceid associado à ação.|
+|managedDeviceId|Cadeia de caracteres|DeViceid associado à ação.|
 |totalLicensesCount|Int32|Uma contagem do número de licenças para as quais houve uma tentativa de revogação.|
 |failedLicensesCount|Int32|Uma contagem do número de licenças para as quais houve falha na revogação.|
 |actionFailureReason|[vppTokenActionFailureReason](../resources/intune-shared-vpptokenactionfailurereason.md)|O motivo da falha na ação de revogação de licenças. Os valores possíveis são: `none`, `appleFailure`, `internalError`, `expiredVppToken`, `expiredApplePushNotificationCertificate`.|
@@ -33,7 +33,7 @@ Define os resultados de ações em aplicativos de conteúdo do MacOS, que conté
 |lastUpdatedDateTime|DateTimeOffset|Hora da última atualização do estado da ação|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -56,6 +56,7 @@ Veja a seguir uma representação JSON do recurso.
   "lastUpdatedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

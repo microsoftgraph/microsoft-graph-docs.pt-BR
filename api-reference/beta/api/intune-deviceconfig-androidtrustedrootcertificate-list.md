@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos androidTrustedRootCert
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 38103c891877844ea6b6f4396f313ac466e1aeec
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: bb8ae6cfcb0072ceb4544c953c9f247686df361c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30972316"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31775580"
 ---
 # <a name="list-androidtrustedrootcertificates"></a>Listar androidTrustedRootCertificates
 
@@ -85,6 +85,7 @@ Content-Length: 624
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto androidWorkProfilePk
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7cb6a5c2ac893ba49e29d3d8cc67a5b2a6e073df
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: e526f087fdc880c5ace65824b9fa2e2083322d3b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30985673"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31777078"
 ---
 # <a name="get-androidworkprofilepkcscertificateprofile"></a>Obter androidWorkProfilePkcsCertificateProfile
 
@@ -93,14 +93,15 @@ Content-Length: 1214
         "objectIdentifier": "Object Identifier value"
       }
     ],
+    "subjectAlternativeNameType": "emailAddress",
     "certificationAuthority": "Certification Authority value",
     "certificationAuthorityName": "Certification Authority Name value",
     "certificateTemplateName": "Certificate Template Name value",
-    "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value",
-    "subjectAlternativeNameType": "emailAddress"
+    "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value"
   }
 }
 ```
+
 
 
 

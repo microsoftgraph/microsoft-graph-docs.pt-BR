@@ -4,12 +4,12 @@ description: Listar propriedades e relações dos objetos macOSOfficeSuiteApp.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 18d326229db61e0e85ff9f2fda28dccf5b7c2483
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 72056bec849b1f7b198049b3b22d39119fd4fc9e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30970013"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31779213"
 ---
 # <a name="list-macosofficesuiteapps"></a>Listar macOSOfficeSuiteApps
 
@@ -62,7 +62,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 992
+Content-Length: 1023
 
 {
   "value": [
@@ -90,11 +90,13 @@ Content-Length: 992
       "isAssigned": true,
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
-      ]
+      ],
+      "dependentAppCount": 1
     }
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Ler propriedades e relações do objeto managedAppProtection.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 16f6672d7ec9ba6a1f9140c85e881cb679dde8f7
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 74c0c03051fc785c4bac4e908198fda359c30971
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30975095"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31779297"
 ---
 # <a name="get-managedappprotection"></a>Get managedAppProtection
 
@@ -118,6 +118,7 @@ Content-Length: 2053
   }
 }
 ```
+
 
 
 

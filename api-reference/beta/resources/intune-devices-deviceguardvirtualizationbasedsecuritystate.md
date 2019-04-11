@@ -4,12 +4,12 @@ description: Ainda não documentado
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2e05ff7e9354f8b8a5fbead8fb62369cb2e5d761
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 51def159e90b256e772138264139f2a96fbd3344
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30153043"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31778527"
 ---
 # <a name="deviceguardvirtualizationbasedsecuritystate-enum-type"></a>tipo de enumeração deviceGuardVirtualizationBasedSecurityState
 
@@ -29,6 +29,7 @@ Ainda não documentado
 |notConfigured|quatro|Não configurado|
 |doesNotMeetHardwareRequirements|0,5|O sistema não atende aos requisitos de hardware|
 |outro|42|Outro. Os logs de eventos no Microsoft-Windows-DeviceGuard têm mais detalhes.|
+
 
 
 

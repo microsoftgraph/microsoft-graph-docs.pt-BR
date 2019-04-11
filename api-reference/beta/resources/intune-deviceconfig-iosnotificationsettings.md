@@ -4,12 +4,12 @@ description: Um item que descreve a configuração de notificação.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2876146e7e20ad94a7356f623a5b2e17443a18f8
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 2d2fbc197f858b595bfe8572badddef9dadf6b3c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172699"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31779640"
 ---
 # <a name="iosnotificationsettings-resource-type"></a>Tipo de recurso iosNotificationSettings
 
@@ -22,7 +22,7 @@ Um item que descreve a configuração de notificação.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|bundleID|String|Id de pacote do aplicativo ao qual aplicar essas configurações de notificação.|
+|bundleID|Cadeia de caracteres|Id de pacote do aplicativo ao qual aplicar essas configurações de notificação.|
 |appName|Cadeia de caracteres|Nome do aplicativo a ser associado à bundleID.|
 |publicador|String|Publicador a ser associado à bundleID.|
 |enabled|Boolean|Indica se são permitidas notificações neste aplicativo.|
@@ -33,7 +33,7 @@ Um item que descreve a configuração de notificação.
 |soundsEnabled|Booliano|Indica se são permitidos sons neste aplicativo.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -56,6 +56,7 @@ Veja a seguir uma representação JSON do recurso.
   "soundsEnabled": true
 }
 ```
+
 
 
 

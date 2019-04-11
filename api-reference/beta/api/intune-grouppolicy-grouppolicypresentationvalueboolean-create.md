@@ -4,12 +4,12 @@ description: Criar um novo objeto groupPolicyPresentationValueBoolean.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 37ff34e47be9311faaba4535b39dc9740aeef436
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: f3cb89bac8c8d934e1c2ce602c68c0fcffcd1a1a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30983397"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31777050"
 ---
 # <a name="create-grouppolicypresentationvalueboolean"></a>Criar groupPolicyPresentationValueBoolean
 
@@ -90,6 +90,7 @@ Content-Length: 267
   "value": true
 }
 ```
+
 
 
 

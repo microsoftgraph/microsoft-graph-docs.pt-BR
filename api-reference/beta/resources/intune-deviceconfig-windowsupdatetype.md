@@ -4,12 +4,12 @@ description: Para quais dispositivos de filial receberão suas atualizações
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 17aad82b25982b90ecea348d959e2ed2ec94a483
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 228cc5ba4b50681bfe78a15ef214d6f3ab2ebb17
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30169157"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31779689"
 ---
 # <a name="windowsupdatetype-enum-type"></a>tipo de enumeração windowsUpdateType
 
@@ -28,6 +28,7 @@ Para quais dispositivos de filial receberão suas atualizações
 |windowsInsiderBuildFast|3D|Compilação do Windows inSider-Fast|
 |windowsInsiderBuildSlow|quatro|Compilação do Windows inSider-lenta|
 |windowsInsiderBuildRelease|0,5|Versão de lançamento do Windows inSider|
+
 
 
 

@@ -4,12 +4,12 @@ description: Representa um tipo de configuração de filtro de conteúdo da Web 
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 74e281a4cbc08467730680b556e6e8026535ff3a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 91efedb47fff71a66d12e0d2c976d61fab2fa76c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30155661"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31777925"
 ---
 # <a name="ioswebcontentfilterautofilter-resource-type"></a>tipo de recurso iosWebContentFilterAutoFilter
 
@@ -25,11 +25,11 @@ Herda de [iosWebContentFilterBase](../resources/intune-deviceconfig-ioswebconten
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|allowedUrls|Coleção de cadeias de caracteres|URLs adicionais permitidas para acesso|
-|blockedUrls|Coleção de cadeias de caracteres|URLs adicionais bloqueadas para acesso|
+|allowedUrls|Coleção String|URLs adicionais permitidas para acesso|
+|blockedUrls|Coleção String|URLs adicionais bloqueadas para acesso|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -49,6 +49,7 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
 
 
 

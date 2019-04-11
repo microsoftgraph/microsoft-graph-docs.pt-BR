@@ -4,12 +4,12 @@ description: Valores possíveis para avisar o usuário para envio de amostras.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4eb469516dd4ae960ae351843df31f07ead90edf
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c81fe62d7ed2696b233b8684c665f7cf8341fbcd
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30146337"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31778373"
 ---
 # <a name="defenderpromptforsamplesubmission-enum-type"></a>tipo de enumeração defenderPromptForSampleSubmission
 
@@ -27,6 +27,7 @@ Valores possíveis para avisar o usuário para envio de amostras.
 |promptBeforeSendingPersonalData|duas|Avisar antes de enviar dados pessoais.|
 |neverSendData|3D|Nunca enviar dados.|
 |sendAllDataWithoutPrompting|quatro|Enviar todos os dados sem avisar.|
+
 
 
 

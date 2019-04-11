@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto unsupportedDeviceConfiguratio
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bb329eb11058ae8d1239360f07badd850060ec1f
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: d23dd67879e647949355412386175ff9d832681e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30958421"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31778660"
 ---
 # <a name="update-unsupporteddeviceconfiguration"></a>Atualizar unsupportedDeviceConfiguration
 
@@ -60,7 +60,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [unsuppo
 |description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|originalEntityTypeName|String|O tipo de entidade que seria retornado de outra forma.|
+|originalEntityTypeName|Cadeia de caracteres|O tipo de entidade que seria retornado de outra forma.|
 |detalhes|coleção [unsupportedDeviceConfigurationDetail](../resources/intune-deviceconfig-unsupporteddeviceconfigurationdetail.md)|Detalhes que descrevem por que a entidade não é suportada. Essa coleção pode conter um máximo de 1.000 elementos.|
 
 
@@ -126,6 +126,7 @@ Content-Length: 690
   ]
 }
 ```
+
 
 
 

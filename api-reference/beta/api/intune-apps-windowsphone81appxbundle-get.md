@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto windowsPhone81AppXBu
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1fa80236e7a08db0b4714cf9aa5c99bab2df031e
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 1cfccc740857b31fd66abaacce048def020c950a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30985337"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31777015"
 ---
 # <a name="get-windowsphone81appxbundle"></a>Obter windowsPhone81AppXBundle
 
@@ -67,7 +67,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2505
+Content-Length: 2534
 
 {
   "value": {
@@ -95,6 +95,7 @@ Content-Length: 2505
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
     ],
+    "dependentAppCount": 1,
     "committedContentVersion": "Committed Content Version value",
     "fileName": "File Name value",
     "size": 4,
@@ -139,6 +140,7 @@ Content-Length: 2505
   }
 }
 ```
+
 
 
 

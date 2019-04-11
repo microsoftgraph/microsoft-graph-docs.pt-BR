@@ -4,12 +4,12 @@ description: Tipo de agente de gerenciamento.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eb948626035bed2dac7ee18d103aa083bd0f2aeb
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: cf8a40b8d6951c13da49766430fdd7fb303cbba0
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172538"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31775300"
 ---
 # <a name="managementagenttype-enum-type"></a>tipo de enumeração managementAgentType
 
@@ -30,10 +30,11 @@ Tipo de agente de gerenciamento.
 |configurationManagerClient|8|O dispositivo é gerenciado pelo Configuration Manager.|
 |configurationManagerClientMdm|254|O dispositivo é gerenciado pelo Configuration Manager e pelo MDM.|
 |configurationManagerClientMdmEas|11|O dispositivo é gerenciado pelo Configuration Manager, MDM e EAS.|
-|unknown|dezesseis|Tipo de agente de gerenciamento desconhecido.|
+|desconhecido|dezesseis|Tipo de agente de gerenciamento desconhecido.|
 |JAMF|32|Os atributos do dispositivo são buscados do JAMF.|
 |googleCloudDevicePolicyController|64|O dispositivo é gerenciado pelo CloudDPC do Google.|
 |microsoft365ManagedMdm|258|Este dispositivo é gerenciado pelo Microsoft 365 por meio do Intune.|
+
 
 
 

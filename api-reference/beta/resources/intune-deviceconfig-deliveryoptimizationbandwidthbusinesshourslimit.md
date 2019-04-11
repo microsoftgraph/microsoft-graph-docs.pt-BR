@@ -4,12 +4,12 @@ description: Tipo de tempo de largura de banda e tipos de porcentagem
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ba15df46075e5cbea1a2eab8a798c333f4a60ae6
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 1115029cd7106f19a2a8a706540278a5282ca18d
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30178112"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31776252"
 ---
 # <a name="deliveryoptimizationbandwidthbusinesshourslimit-resource-type"></a>tipo de recurso deliveryOptimizationBandwidthBusinessHoursLimit
 
@@ -28,7 +28,7 @@ Tipo de tempo de largura de banda e tipos de porcentagem
 |bandwidthPercentageOutsideBusinessHours|Int32|Especifica a porcentagem de largura de banda para limitar o horário comercial de outsids (0-100). Valores válidos de 0 a 100|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -46,6 +46,7 @@ Veja a seguir uma representação JSON do recurso.
   "bandwidthPercentageOutsideBusinessHours": 1024
 }
 ```
+
 
 
 
