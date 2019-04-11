@@ -4,12 +4,12 @@ description: Status do registro do dispositivo.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f04d8c0fddb966504675e3b4c677dfd0bbabe64c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b777452b627208d8e2dd726815f321075e5745ae
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30144622"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31794012"
 ---
 # <a name="deviceregistrationstate-enum-type"></a>tipo de enumeração deviceRegistrationState
 
@@ -29,7 +29,8 @@ Status do registro do dispositivo.
 |approvalPending|0,5|O dispositivo está aguardando aprovação.|
 |certificateReset|6|O certificado de dispositivo foi redefinido.|
 |notRegisteredPendingEnrollment|178|O dispositivo não está registrado e registro pendente.|
-|unknown|8|O status do registro do dispositivo é desconhecido.|
+|desconhecido|8|O status do registro do dispositivo é desconhecido.|
+
 
 
 

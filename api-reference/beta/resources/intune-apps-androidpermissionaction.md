@@ -4,12 +4,12 @@ description: O mapeamento entre uma permissão de aplicativo Android e a ação 
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e00bb351f2eff093dee21cb393ba622bc5e29ea9
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: fec33b2600e88e6a4dfae644c335d9652c20abe0
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30161569"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31792962"
 ---
 # <a name="androidpermissionaction-resource-type"></a>tipo de recurso androidPermissionAction
 
@@ -22,11 +22,11 @@ O mapeamento entre uma permissão de aplicativo Android e a ação que o Android
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|autorização|String|Cadeia de caracteres de permissão Android, definida na documentação oficial do Android.  Exemplo ' Android. Permission. READ_CONTACTS '.|
+|autorização|Cadeia de caracteres|Cadeia de caracteres de permissão Android, definida na documentação oficial do Android.  Exemplo ' Android. Permission. READ_CONTACTS '.|
 |action|[androidPermissionActionType](../resources/intune-apps-androidpermissionactiontype.md)|Tipo de ação de permissão de Android. Os valores possíveis são: `prompt`, `autoGrant`, `autoDeny`.|
 
-## <a name="relationships"></a>Relacionamentos
-Nenhum
+## <a name="relationships"></a>Relações
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -42,6 +42,7 @@ Veja a seguir uma representação JSON do recurso.
   "action": "String"
 }
 ```
+
 
 
 

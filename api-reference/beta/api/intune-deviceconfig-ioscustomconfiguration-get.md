@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto iosCustomConfigurati
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 843efc378320ac92fe77ead25aeb77fdc66e8535
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 8a3cb932615b9366c3a4fa17054ee3b8f942d0b6
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30983607"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31791611"
 ---
 # <a name="get-ioscustomconfiguration"></a>Acessar iosCustomConfiguration
 
@@ -88,6 +88,7 @@ Content-Length: 590
   }
 }
 ```
+
 
 
 

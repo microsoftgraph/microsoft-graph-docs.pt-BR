@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos na entidadeandroidwork
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 71215880a03e91e94da0595748fae5e6f486803b
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 70a3e2dcfa04b74bfe3bb03e7b2d40a1aa9b1a00
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30961494"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31791058"
 ---
 # <a name="list-androidworkprofilecompliancepolicies"></a>Listar androidWorkProfileCompliancePolicies
 
@@ -103,6 +103,7 @@ Content-Length: 1620
   ]
 }
 ```
+
 
 
 

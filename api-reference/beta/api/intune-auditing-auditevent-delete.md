@@ -4,12 +4,12 @@ description: Exclui auditEvent.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b266750fde29ed115aa95c0f6263fd163983013c
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: b8fe9c21dd59858f61c0d5e6c79464fb9cd7c44a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30965589"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31790015"
 ---
 # <a name="delete-auditevent"></a>Excluir auditEvent
 
@@ -62,6 +62,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

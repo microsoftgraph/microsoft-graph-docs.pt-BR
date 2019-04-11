@@ -4,12 +4,12 @@ description: Valores possíveis para o modo de atualização automática.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bba7addc5ae3b7942c3e52e1d8989100e27b2831
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 9af00bda442c1a152820323fc0b7e1ddfcd8c384
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30156781"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31791478"
 ---
 # <a name="automaticupdatemode-enum-type"></a>tipo de enumeração Propriedades automaticupdatemode
 
@@ -29,6 +29,7 @@ Valores possíveis para o modo de atualização automática.
 |autoInstallAndRebootAtScheduledTime|quatro|Instalação automática e reinicialização no horário agendado.|
 |autoInstallAndRebootWithoutEndUserControl|0,5|Instalação e reinício automáticos sem controle de usuário final|
 |windowsDefault|6|ReDefina como o valor padrão do Windows.|
+
 
 
 

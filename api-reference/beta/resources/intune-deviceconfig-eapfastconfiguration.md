@@ -4,12 +4,12 @@ description: Configurações disponíveis para a configuração EAP-FAST.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d0d8a250b2272ae8b8287f9869697633493b116f
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 7acf6ffbf7a93bc5002f7f81679fc789ab313e2f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30173567"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31790624"
 ---
 # <a name="eapfastconfiguration-enum-type"></a>tipo de enumeração eapFastConfiguration
 
@@ -26,6 +26,7 @@ Configurações disponíveis para a configuração EAP-FAST.
 |useProtectedAccessCredential|1|Use a PAC (credencial de acesso protegido).|
 |useProtectedAccessCredentialAndProvision|duas|Use a PAC (credencial de acesso protegido) e proVisionar PAC.|
 |useProtectedAccessCredentialAndProvisionAnonymously|3D|Use a PAC (credencial de acesso protegido), proVisione PAC e faça isso de forma anônima.|
+
 
 
 

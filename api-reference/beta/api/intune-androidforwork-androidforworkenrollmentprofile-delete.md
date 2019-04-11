@@ -4,12 +4,12 @@ description: Exclui androidForWorkEnrollmentProfile.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 54a7bae59fb511f74b5d31d3a76da0396257e9c7
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 8a3f985be79acacf4810f52dd464fe44c4b6db2e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30985596"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31793221"
 ---
 # <a name="delete-androidforworkenrollmentprofile"></a>Excluir androidForWorkEnrollmentProfile
 
@@ -62,6 +62,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Tipo de provedor para credenciais derivadas.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8e57a9874d1870a01a4be445bd23ca6210af18d1
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e5477763723da5433550d9d96613caf82ff08f78
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30175308"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31794439"
 ---
 # <a name="derivedcredentialprovidertype-enum-type"></a>tipo de enumeração derivedCredentialProviderType
 
@@ -27,6 +27,7 @@ Tipo de provedor para credenciais derivadas.
 |purebred|duas|Agência de sistemas de informações do purebred-Defense.|
 |xTec|3D|Xtec-AuthentX.|
 |intercede|quatro|Intercede.|
+
 
 
 

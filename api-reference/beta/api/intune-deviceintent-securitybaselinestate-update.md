@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto securityBaselineState.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 33f4a65937f8139aa7ebee483cad6e66f989caa0
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: ad0bca78fdf54054b9319853123ab0e79321ed59
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522843"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31791926"
 ---
 # <a name="update-securitybaselinestate"></a>Atualizar securityBaselineState
 
@@ -20,7 +20,7 @@ ms.locfileid: "31522843"
 Atualiza as propriedades de um objeto [securityBaselineState](../resources/intune-deviceintent-securitybaselinestate.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -51,7 +51,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [securit
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade.|
-|securityBaselineTemplateId|Cadeia de Caracteres|A ID do modelo de linha de base de segurança|
+|securityBaselineTemplateId|Cadeia de caracteres|A ID do modelo de linha de base de segurança|
 |displayName|String|O nome de exibição da linha de base de segurança|
 
 

@@ -4,12 +4,12 @@ description: Valores possíveis para origem de nome de usuário ou fonte de emai
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eef7e91c27b60f8b285b9abed0cca3acb862fa32
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 6b544d0390b10c3cf7d1f48fcf6684f8128cdf6b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30166014"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31791072"
 ---
 # <a name="useremailsource-enum-type"></a>tipo de enumeração userEmail
 
@@ -24,6 +24,7 @@ Valores possíveis para origem de nome de usuário ou fonte de email.
 |:---|:---|:---|
 |userPrincipalName|,0|Nome principal do usuário.|
 |primarySmtpAddress|1|Endereço SMTP principal.|
+
 
 
 

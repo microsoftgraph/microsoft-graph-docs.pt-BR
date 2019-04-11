@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto iosCertificateProfil
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 296fe20c2393c15971b90ad6f693d795aad1ed3d
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: b62167615519bf5226810146826cd236f288907f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30988522"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31792444"
 ---
 # <a name="get-ioscertificateprofile"></a>Acessar iosCertificateProfile
 
@@ -84,6 +84,7 @@ Content-Length: 464
   }
 }
 ```
+
 
 
 

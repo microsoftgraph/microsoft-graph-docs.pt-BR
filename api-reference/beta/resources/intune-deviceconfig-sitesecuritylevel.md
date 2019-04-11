@@ -4,12 +4,12 @@ description: Valores possíveis para o nível de segurança do site.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d65ce6c6e3a57185b1daddcef4bec1732333bcc1
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 209b14cd5aff03d7cca2792999c9e1328774e578
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30152826"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31791646"
 ---
 # <a name="sitesecuritylevel-enum-type"></a>tipo de enumeração siteSecurityLevel
 
@@ -25,9 +25,10 @@ Valores possíveis para o nível de segurança do site.
 |userDefined|,0|Definido pelo usuário, valor padrão, sem intenção.|
 |low|1|Baixo.|
 |mediumLow|duas|Médio-baixo.|
-|medium|3D|Média.|
+|medium|3D|Médio.|
 |mediumHigh|quatro|Médio-alto.|
 |high|0,5|Alto.|
+
 
 
 

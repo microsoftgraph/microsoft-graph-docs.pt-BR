@@ -4,12 +4,12 @@ description: Opções de recuperação do BitLocker.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e8bbf0db0ca6dd784a47d1bfb5d743ae17695b81
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 5652add71ba19b1eba102a0579a787d7410d6c89
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30142109"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31791471"
 ---
 # <a name="bitlockerrecoveryoptions-resource-type"></a>tipo de recurso bitLockerRecoveryOptions
 
@@ -31,7 +31,7 @@ Opções de recuperação do BitLocker.
 |enableBitLockerAfterRecoveryInformationToStore|Booliano|Indica se o BitLocker deve ou não ser habilitado até que as informações de recuperação sejam armazenadas no AD DS.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -52,6 +52,7 @@ Veja a seguir uma representação JSON do recurso.
   "enableBitLockerAfterRecoveryInformationToStore": true
 }
 ```
+
 
 
 

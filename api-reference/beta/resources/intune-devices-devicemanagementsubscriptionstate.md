@@ -4,12 +4,12 @@ description: Estado de assinatura de gerenciamento de dispositivo móvel do loca
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 716e313ccd0c9c7827a11eba88e2388d50a3716e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 015768fb5150a64f13f3d34581a10b822712395c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30141780"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31791086"
 ---
 # <a name="devicemanagementsubscriptionstate-enum-type"></a>tipo de enumeração deviceManagementSubscriptionState
 
@@ -26,9 +26,10 @@ Estado de assinatura de gerenciamento de dispositivo móvel do locatário.
 |active|1|Ativo|
 |warning|duas|Aviso|
 |deficiência|3D|Desabilitado|
-|deleted|quatro|Deleted|
+|deleted|quatro|Excluído|
 |bloqueou|0,5|Blocked|
 |Bloqueado|8|Bloqueado|
+
 
 
 

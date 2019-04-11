@@ -4,12 +4,12 @@ description: Estado da definição de configuração de um determinado dispositi
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0acfcd697815ee9403e6144c5da34dd824022de3
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 2f24c08a2f2345f44ee4350ec5cd7d9415b2d6b5
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30165881"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31790596"
 ---
 # <a name="deviceconfigurationsettingstate-resource-type"></a>tipo de recurso deviceConfigurationSettingState
 
@@ -22,21 +22,21 @@ Estado da definição de configuração de um determinado dispositivo.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|configuração|String|A configuração que está sendo relatada|
-|settingName|String|Nome traduzido/amigável para o usuário da configuração que está sendo relatada|
-|instanceDisplayName|String|Nome da instância de configuração está sendo relatada.|
+|configuração|Cadeia de caracteres|A configuração que é relatada|
+|settingName|Cadeia de caracteres|Nome de configuração localizada/de usuário que é relatada|
+|instanceDisplayName|Cadeia de caracteres|Nome da instância de configuração que é relatada.|
 |state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|O estado de conformidade da configuração. Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |errorCode|Int64|Código de erro da configuração|
-|errorDescription|String|Descrição do erro|
+|errorDescription|Cadeia de caracteres|Descrição de erro|
 |userId|String|UserId|
-|userName|String|UserName|
-|userEmail|String|UserEmail|
+|userName|Cadeia de caracteres|UserName|
+|userEmail|Cadeia de caracteres|UserEmail|
 |userPrincipalName|String|UserPrincipalName.|
-|sources|Coleção [settingSource](../resources/intune-deviceconfig-settingsource.md)|Políticas colaboradoras|
-|currentValue|Cadeia de caracteres|Valor atual da configuração no dispositivo|
+|fontes|Conjunto [settingSource](../resources/intune-deviceconfig-settingsource.md)|Políticas de colaboração|
+|currentValue|Cadeia de caracteres|Valor atual da configuração em um dispositivo|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -68,6 +68,7 @@ Veja a seguir uma representação JSON do recurso.
   "currentValue": "String"
 }
 ```
+
 
 
 

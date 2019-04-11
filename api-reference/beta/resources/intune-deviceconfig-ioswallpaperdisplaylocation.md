@@ -4,12 +4,12 @@ description: Um tipo enum para o especificador de local de exibição de papel d
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ea7980d8005f3a2ddbb515528f3330881296c191
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: d408a37c1f535aeb0e51cc50327f2897803093b0
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30146624"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31791408"
 ---
 # <a name="ioswallpaperdisplaylocation-enum-type"></a>tipo de enumeração iosWallpaperDisplayLocation
 
@@ -26,6 +26,7 @@ Um tipo enum para o especificador de local de exibição de papel de parede.
 |Bloqueio|1|Uma imagem de papel de parede configurada é exibida na tela de bloqueio.|
 |homeScreen|duas|Uma imagem de papel de parede configurada é exibida na tela página inicial (lista de ícones).|
 |lockAndHomeScreens|3D|Uma imagem de papel de parede configurada é exibida na tela de bloqueio e na tela inicial.|
+
 
 
 

@@ -4,12 +4,12 @@ description: Limites de largura de banda em quilobytes por segundo.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9eca95ad33ced19e437e760663a73158aacc25d0
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 791748adb7620ed23082a597d2b62855467a5048
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30178266"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31794089"
 ---
 # <a name="deliveryoptimizationbandwidthabsolute-resource-type"></a>tipo de recurso deliveryOptimizationBandwidthAbsolute
 
@@ -31,7 +31,7 @@ O valor 0 (zero) significa que a otimização de entrega é ajustada dinamicamen
 O valor padrão é 0, que permite uma largura de banda possivelmente ilimitada (otimizada para uso mínimo da largura de banda de upload). Valores válidos de 0 a 4 milhões|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -47,6 +47,7 @@ Veja a seguir uma representação JSON do recurso.
   "maximumUploadBandwidthInKilobytesPerSecond": 1024
 }
 ```
+
 
 
 

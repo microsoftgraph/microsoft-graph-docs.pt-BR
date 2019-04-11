@@ -4,12 +4,12 @@ description: Exclui termsAndConditions.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 07c725cc682188dc96a63786ed35eb9ca53d1fc4
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 14be9cb2afe0f0e913a3835f68cdd6fca03bd4af
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30985848"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31792150"
 ---
 # <a name="delete-termsandconditions"></a>Excluir termsAndConditions
 
@@ -64,6 +64,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

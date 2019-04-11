@@ -4,12 +4,12 @@ description: Cria um novo objeto windows10CompliancePolicy.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9af661ab4397c8096b45bea8fdd199d2c78b0bd1
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 64649c1028a0ed7c4beca8ceb41eb683c25c8a27
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30973863"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31793578"
 ---
 # <a name="create-windows10compliancepolicy"></a>Criar windows10CompliancePolicy
 
@@ -55,7 +55,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar windows10Complia
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
-|displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
+|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |version|Int32|Versão da configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |passwordRequired|Booliano|Exige uma senha para desbloquear o dispositivo Windows.|
 |passwordBlockSimple|Booliano|Indica se a senha simples deve ou não ser bloqueada.|
@@ -67,9 +67,9 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar windows10Complia
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|O tipo de senha necessária. Os valores possíveis são: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordPreviousPasswordBlockCount|Int32|O número de senhas anteriores cujo uso deve ser evitado.|
 |requireHealthyDeviceReport|Booliano|Exige que os dispositivos sejam indicados como íntegros pelo Atestado de Integridade do Dispositivo Windows.|
-|osMinimumVersion|String|Versão mínima do Windows 10.|
+|osMinimumVersion|Cadeia de caracteres|Versão mínima do Windows 10.|
 |osMaximumVersion|String|Versão máxima do Windows 10.|
-|mobileOsMinimumVersion|String|Versão mínima do Windows Phone.|
+|mobileOsMinimumVersion|Cadeia de caracteres|Versão mínima do Windows Phone.|
 |mobileOsMaximumVersion|Cadeia de caracteres|Versão máxima do Windows Phone.|
 |earlyLaunchAntiMalwareDriverEnabled|Booliano|Exige que os dispositivos sejam indicados como íntegros pelo Atestado de Integridade do Dispositivo Windows - driver antimalware de inicialização antecipada habilitado.|
 |bitLockerEnabled|Booliano|Exige que os dispositivos sejam indicados como íntegros pelo Atestado de Integridade do Dispositivo Windows - bit locker desabilitado|
@@ -78,7 +78,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar windows10Complia
 |storageRequireEncryption|Boolean|Exige criptografia em dispositivos Windows.|
 |Propriedades activefirewallrequired|Booliano|Exigir firewall ativo em dispositivos Windows.|
 |defenderEnabled|Booliano|Requer o Windows Defender Antimalware em dispositivos Windows.|
-|defenderVersion|String|Requer a versão mínima do Windows Defender Antimalware em dispositivos Windows.|
+|defenderVersion|Cadeia de caracteres|Requer a versão mínima do Windows Defender Antimalware em dispositivos Windows.|
 |signatureOutOfDate|Booliano|Requer que a assinatura antimalware do Windows Defender esteja atualizada em dispositivos Windows.|
 |rtpEnabled|Booliano|Requer a proteção em tempo real do Windows Defender Antimalware em dispositivos Windows.|
 |antivirusRequired|Booliano|Exigir que qualquer solução antivírus registrada com o Windows Decurity Center seja ativada e monitorando (por exemplo, Symantec, Windows Defender).|
@@ -87,7 +87,6 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar windows10Complia
 |deviceThreatProtectionEnabled|Boolean|Exige que os dispositivos tenham habilitada a proteção contra ameaças.|
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Requer nível mínimo de risco de proteção contra ameaças ao dispositivo para relatar não conformidade. Os valores possíveis são: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |configurationManagerComplianceRequired|Booliano|Exigir que o estado de conformidade do SCCM seja considerado para o estado de conformidade do Intune.|
-|tpmRequired|Booliano|Requer o módulo de plataforma confiável (TPM) para estar presente.|
 
 
 
@@ -101,7 +100,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies
 Content-type: application/json
-Content-length: 1690
+Content-length: 1666
 
 {
   "@odata.type": "#microsoft.graph.windows10CompliancePolicy",
@@ -147,8 +146,7 @@ Content-length: 1690
   ],
   "deviceThreatProtectionEnabled": true,
   "deviceThreatProtectionRequiredSecurityLevel": "secured",
-  "configurationManagerComplianceRequired": true,
-  "tpmRequired": true
+  "configurationManagerComplianceRequired": true
 }
 ```
 
@@ -157,7 +155,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1862
+Content-Length: 1838
 
 {
   "@odata.type": "#microsoft.graph.windows10CompliancePolicy",
@@ -206,10 +204,10 @@ Content-Length: 1862
   ],
   "deviceThreatProtectionEnabled": true,
   "deviceThreatProtectionRequiredSecurityLevel": "secured",
-  "configurationManagerComplianceRequired": true,
-  "tpmRequired": true
+  "configurationManagerComplianceRequired": true
 }
 ```
+
 
 
 

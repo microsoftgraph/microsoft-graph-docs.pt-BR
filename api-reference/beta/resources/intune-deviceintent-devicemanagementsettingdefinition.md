@@ -4,12 +4,12 @@ description: Entidade que representa a definição de uma determinada configura�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1a37046b80ce51a698ba52f08c2693af821b7e52
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: c2e06522680085502e3007dd4863bd703c4bed44
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31524481"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31793557"
 ---
 # <a name="devicemanagementsettingdefinition-resource-type"></a>tipo de recurso deviceManagementSettingDefinition
 
@@ -33,10 +33,10 @@ Entidade que representa a definição de uma determinada configuração
 |:---|:---|:---|
 |id|String|A ID da definição de configuração|
 |valueType|[deviceManangementIntentValueType](../resources/intune-deviceintent-devicemanangementintentvaluetype.md)|O tipo de dados do valor. Os valores possíveis são: `integer`, `boolean`, `string`, `complex`, `collection`, `abstractComplex`.|
-|displayName|Cadeia de Caracteres|O nome de exibição da configuração|
+|displayName|Cadeia de caracteres|O nome de exibição da configuração|
 |isTopLevel|Booliano|Se a configuração for de nível superior, ela poderá ser configurada sem a necessidade de ser encapsulada em uma coleção ou configuração complexa|
 |description|String|A descrição da configuração|
-|documentationUrl|Cadeia de Caracteres|URL para configurar a documentação|
+|documentationUrl|Cadeia de caracteres|URL para configurar a documentação|
 |palavras-chave|Coleção String|Palavras-chave associadas à configuração|
 |as|coleção [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)|Conjunto de restrições para o valor de configuração|
 |relação|coleção [deviceManagementSettingDependency](../resources/intune-deviceintent-devicemanagementsettingdependency.md)|Coleção de dependências em outras configurações|
@@ -82,8 +82,6 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
-
-
 
 
 

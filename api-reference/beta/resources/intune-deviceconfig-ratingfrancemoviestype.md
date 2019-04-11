@@ -4,12 +4,12 @@ description: Rótulos de classificação de filmes na França
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 123a1e4c63891ad39cb0a238fd61393b555734f8
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 12c775d7717dfd06f20e8300fe3e04db6c526840
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172405"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31794152"
 ---
 # <a name="ratingfrancemoviestype-enum-type"></a>tipo de enumeração ratingFranceMoviesType
 
@@ -28,6 +28,7 @@ Rótulos de classificação de filmes na França
 |agesAbove12|3D|A classificação 12 proíbe a triagem do filme em menos de 12|
 |agesAbove16|quatro|A classificação 16 proíbe a triagem do filme para menores em 16|
 |agesAbove18|0,5|A classificação 18 proíbe a triagem para menores abaixo de 18|
+
 
 
 

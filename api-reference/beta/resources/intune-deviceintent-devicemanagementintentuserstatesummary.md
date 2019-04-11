@@ -4,12 +4,12 @@ description: Entidade que representa o resumo de estado do usuário para uma int
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c930b19e604aaf3867260e359a2b7fcb12153762
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 538d1e5da36a1d90aac95641175eb0cebeeb69c3
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31523991"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31790008"
 ---
 # <a name="devicemanagementintentuserstatesummary-resource-type"></a>tipo de recurso deviceManagementIntentUserStateSummary
 
@@ -57,8 +57,6 @@ Veja a seguir uma representação JSON do recurso.
   "successCount": 1024
 }
 ```
-
-
 
 
 

@@ -4,12 +4,12 @@ description: Valores possíveis para defenderSecurityCenterNotificationsFromApp
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cca9639bbf8807b40c3c6b92dbc64e322e65a1b2
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: fdb2ee251025ed56ac6bd9ffe3bd4f00938b0643
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30139253"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31791737"
 ---
 # <a name="defendersecuritycenternotificationsfromapptype-enum-type"></a>tipo de enumeração defenderSecurityCenterNotificationsFromAppType
 
@@ -25,6 +25,7 @@ Valores possíveis para defenderSecurityCenterNotificationsFromApp
 |notConfigured|,0|Não configurado|
 |blockNoncriticalNotifications|1|Bloquear notificações não críticas|
 |blockAllNotifications|duas|Bloquear todas as notificações|
+
 
 
 

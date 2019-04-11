@@ -4,12 +4,12 @@ description: Exclui androidVpnConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9cf85b25050a189fd56a06c22cbf147891aa5c04
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 939219de870d1a59c460e9c0a61482bb89926075
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30987066"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31790379"
 ---
 # <a name="delete-androidvpnconfiguration"></a>Excluir androidVpnConfiguration
 
@@ -64,6 +64,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

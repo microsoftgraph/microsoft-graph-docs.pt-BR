@@ -2,14 +2,14 @@
 title: Listar mensagens
 description: 'Obtenha as mensagens na caixa de correio do usuário conectado (incluindo as pastas Itens Excluídos e Email Secundário). '
 localization_priority: Normal
-author: dkershaw10
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3a29392318de78c1e1ff5bd4ad4b560bc9c460f4
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 19cb2dc1dd1e86cd697319a0dc8a729cb712e463
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31518529"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31792185"
 ---
 # <a name="list-messages"></a>Listar mensagens
 
@@ -17,7 +17,11 @@ ms.locfileid: "31518529"
 
 Obtenha as mensagens na caixa de correio do usuário conectado (incluindo as pastas Itens Excluídos e Email Secundário). 
 
-Em particular, você pode filtrar as mensagens e obter apenas aquelas que incluem uma [menção](../resources/mention.md) do usuário conectado.
+Dependendo do tamanho da página e dos dados da caixa de correio, a recebimento de mensagens de uma caixa de correio pode causar várias solicitações. O tamanho de página padrão é de 10 mensagens. Para obter a próxima página de mensagens, basta aplicar a URL inteira retornada `@odata.nextLink` à próxima solicitação get-messages. Esta URL inclui qualquer parâmetro de consulta que você possa ter especificado na solicitação inicial. 
+
+Não tente extrair o `$skip` valor da `@odata.nextLink` URL para manipular respostas. Essa API usa o `$skip` valor para manter a contagem de todos os itens que ele passou na caixa de correio do usuário para retornar uma página de itens de tipo de mensagem. Portanto, é possível que, mesmo na resposta inicial, o `$skip` valor seja maior do que o tamanho da página. Para obter mais informações, consulte paGinação [de dados do Microsoft Graph em seu aplicativo](/graph/paging).
+
+Você pode filtrar as mensagens e obter apenas aquelas que incluem [menção](../resources/mention.md) do usuário conectado.
 
 Observe que, por padrão, `GET /me/messages` a operação não retorna a propriedade **menciona** . Use o `$expand` parâmetro de consulta para [encontrar detalhes de cada menção em uma mensagem](../api/message-get.md#request-2).
 
@@ -80,20 +84,19 @@ Não forneça um corpo de solicitação para esse método.
 
 Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [Message](../resources/message.md) no corpo da resposta.
 
-O tamanho de página padrão para essa solicitação é dez mensagens. 
-
 ## <a name="example"></a>Exemplo
 ##### <a name="request-1"></a>Solicitação 1
-O primeiro exemplo obtém as 10 principais mensagens na caixa de correio do usuário conectado.
+O primeiro exemplo obtém o padrão, as 10 principais mensagens na caixa de correio do usuário conectado. Ele usa `$select` para retornar um subconjunto das propriedades de cada mensagem na resposta. 
 <!-- {
   "blockType": "request",
   "name": "get_messages"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/messages
+GET https://graph.microsoft.com/beta/me/messages?$select=sender,subject
 ```
 ##### <a name="response-1"></a>Resposta 1
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Para obter a próxima página de mensagens, aplique a URL retornada `@odata.nextLink` a uma solicitação get subsequente.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -103,28 +106,107 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 317
 
 {
-  "value": [
-    {
-      "receivedDateTime": "2016-10-19T10:37:00Z",
-      "sentDateTime": "2016-10-19T10:37:00Z",
-      "hasAttachments": true,
-      "subject": "subject-value",
-      "body": {
-        "contentType": "",
-        "content": "content-value"
-      },
-      "bodyPreview": "bodyPreview-value"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('bb8775a4-4d8c-42cf-a1d4-4d58c2bb668f')/messages(sender,subject)",
+    "@odata.nextLink": "https://graph.microsoft.com/beta/me/messages?$select=sender%2csubject&$skip=14",
+    "value": [
+        {
+            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAwR4Hg\"",
+            "id": "AAMkAGUAAAwTW09AAA=",
+            "subject": "You have late tasks!",
+            "sender": {
+                "emailAddress": {
+                    "name": "Microsoft Planner",
+                    "address": "noreply@Planner.Office365.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4D1e\"",
+            "id": "AAMkAGUAAAq5QKlAAA=",
+            "subject": "You have late tasks!",
+            "sender": {
+                "emailAddress": {
+                    "name": "Microsoft Planner",
+                    "address": "noreply@Planner.Office365.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4D0v\"",
+            "id": "AAMkAGUAAAq5QKkAAA=",
+            "subject": "Your Azure AD Identity Protection Weekly Digest",
+            "sender": {
+                "emailAddress": {
+                    "name": "Microsoft Azure",
+                    "address": "azure-noreply@microsoft.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4DsN\"",
+            "id": "AAMkAGUAAAq5QKjAAA=",
+            "subject": "Use attached file",
+            "sender": {
+                "emailAddress": {
+                    "name": "Megan Bowen",
+                    "address": "MeganB@contoso.OnMicrosoft.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4Dq9\"",
+            "id": "AAMkAGUAAAq5QKiAAA=",
+            "subject": "Original invitation",
+            "sender": {
+                "emailAddress": {
+                    "name": "Megan Bowen",
+                    "address": "MeganB@contoso.OnMicrosoft.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4Dq1\"",
+            "id": "AAMkAGUAAAq5QKhAAA=",
+            "subject": "Koala image",
+            "sender": {
+                "emailAddress": {
+                    "name": "Megan Bowen",
+                    "address": "MeganB@contoso.OnMicrosoft.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4Dqp\"",
+            "id": "AAMkAGUAAAq5QKgAAA=",
+            "subject": "Sales invoice template",
+            "sender": {
+                "emailAddress": {
+                    "name": "Megan Bowen",
+                    "address": "MeganB@contoso.OnMicrosoft.com"
+                }
+            }
+        },
+        {
+            "@odata.type": "#microsoft.graph.eventMessageRequest",
+            "@odata.etag": "W/\"CwAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4Dfa\"",
+            "id": "AAMkAGUAAAq5T8tAAA=",
+            "subject": "Review strategy for Q3",
+            "sender": {
+                "emailAddress": {
+                    "name": "Megan Bowen",
+                    "address": "MeganB@contoso.OnMicrosoft.com"
+                }
+            }
+        }
+    ]
 }
 ```
 
 
 ##### <a name="request-2"></a>Solicitação 2
-O próximo exemplo filtra todas as mensagens na caixa de correio do usuário conectado para as que mencionam o usuário. Ele usa `$select` para retornar um subconjunto das propriedades de cada mensagem na resposta. 
+O próximo exemplo filtra todas as mensagens na caixa de correio do usuário conectado para as que mencionam o usuário. Ele também usa `$select` para retornar um subconjunto das propriedades de cada mensagem na resposta. 
 
 O exemplo também incorpora a codificação de URL para os caracteres de espaço na cadeia de caracteres de parâmetro de consulta.
 <!-- {

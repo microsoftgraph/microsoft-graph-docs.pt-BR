@@ -4,12 +4,12 @@ description: Especificador de categoria de dados de privacidade do Windows para 
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c3097ed916ec9f215880caf46bcdc02616ce5d2c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 89f9f74c61888e9acbf40f8059444d41cef8afae
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30154450"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31792913"
 ---
 # <a name="windowsprivacydatacategory-enum-type"></a>tipo de enumeração windowsPrivacyDataCategory
 
@@ -41,6 +41,7 @@ Especificador de categoria de dados de privacidade do Windows para acesso a dado
 |tarefas|dezesseis|Permitir que aplicativos acessem o Agendador de tarefas. Adicionado no Windows 10, versão 1703.|
 |syncWithDevices|17.07.06|Permita que os aplicativos compartilhem e sincronizem informações com dispositivos sem fio que não sejam explicitamente emparelhados com o dispositivo do usuário. Adicionado no Windows 10, versão 1607.|
 |trustedDevices|anos|Permitir que aplicativos acessem dispositivos confiáveis. Adicionado no Windows 10, versão 1607.|
+
 
 
 

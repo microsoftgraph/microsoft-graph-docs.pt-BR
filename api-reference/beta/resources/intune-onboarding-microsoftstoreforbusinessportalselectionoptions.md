@@ -4,12 +4,12 @@ description: Portal para o qual o administrador sincroniza a Microsoft Store par
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 47182d7282c57b3a00aade30bd3f64319ab34479
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: bc1ad975ba35d0e942cf2d57f26929e66f02b661
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30147940"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31794236"
 ---
 # <a name="microsoftstoreforbusinessportalselectionoptions-enum-type"></a>tipo de enumeração microsoftStoreForBusinessPortalSelectionOptions
 
@@ -22,9 +22,10 @@ Portal para o qual o administrador sincroniza a Microsoft Store para aplicativos
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|Nenhuma|,0|Essa opção não está disponível para a conta|
+|nenhuma|,0|Essa opção não está disponível para a conta|
 |companyPortal|1|Somente portal da empresa do Intune.|
 |privateStore|duas|Somente repositório privado MSFB.|
+
 
 
 

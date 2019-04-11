@@ -4,12 +4,12 @@ description: Ainda não documentado
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0afb02cdd0dd1189642b9598639860f0a809a8ae
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 09ce410be4ba2a743a9fc09b05308b20fceec823
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30148499"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31790442"
 ---
 # <a name="deviceguardvirtualizationbasedsecurityhardwarerequirementstate-enum-type"></a>tipo de enumeração deviceGuardVirtualizationBasedSecurityHardwareRequirementState
 
@@ -27,6 +27,7 @@ Ainda não documentado
 |dmaProtectionRequired|duas|Proteção de DMA necessária|
 |hyperVNotSupportedForGuestVM|quatro|HyperV não suportado para VM conVidada|
 |hyperVNotAvailable|8|O recurso HyperV não está disponível|
+
 
 
 

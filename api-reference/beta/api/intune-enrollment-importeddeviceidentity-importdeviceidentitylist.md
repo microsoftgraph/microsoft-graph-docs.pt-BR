@@ -4,12 +4,12 @@ description: Ainda não documentado
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 644c5cb2d4c710b796015bf4d1fd005b6b78727d
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: ae23252d9a161328571e87a562c30ecbff5a2dcf
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30973268"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31790715"
 ---
 # <a name="importdeviceidentitylist-action"></a>Ação importDeviceIdentityList
 
@@ -112,6 +112,7 @@ Content-Length: 606
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Restrição que impõe a configuração corresponde a um determinad
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 52369b5309768bd5530d176a7ccfbfabb1365b62
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 76bb80edaec0ccd53cc9f0923a7df7b1c595dc60
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522374"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31792283"
 ---
 # <a name="devicemanagementsettingregexconstraint-resource-type"></a>tipo de recurso deviceManagementSettingRegexConstraint
 
@@ -25,7 +25,7 @@ Herda de [deviceManagementConstraint](../resources/intune-deviceintent-deviceman
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|Regex|Cadeia de Caracteres|O padrão RegEx a ser correspondido em relação|
+|Regex|Cadeia de caracteres|O padrão RegEx a ser correspondido em relação|
 
 ## <a name="relationships"></a>Relações
 Nenhuma
@@ -43,8 +43,6 @@ Veja a seguir uma representação JSON do recurso.
   "regex": "String"
 }
 ```
-
-
 
 
 

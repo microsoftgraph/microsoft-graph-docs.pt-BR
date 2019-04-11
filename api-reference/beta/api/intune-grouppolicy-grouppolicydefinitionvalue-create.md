@@ -4,12 +4,12 @@ description: Criar um novo objeto groupPolicyDefinitionValue.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 20915d40828e5377502fbbb4f8c1c61a9c963f16
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 60fef42cc86aa2cdef23b81223b1e715027c659a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30973107"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31793235"
 ---
 # <a name="create-grouppolicydefinitionvalue"></a>Criar groupPolicyDefinitionValue
 
@@ -93,6 +93,7 @@ Content-Length: 298
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
 
 
 

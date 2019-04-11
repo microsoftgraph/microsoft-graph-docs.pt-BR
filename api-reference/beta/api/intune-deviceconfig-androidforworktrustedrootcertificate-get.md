@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto androidForWorkTruste
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7386560bfaa63adaa20f2c3da8ebea3bcf8177fd
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 6812ca16fa83aa830cd7aabceb10713fb37a053c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30967584"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31792332"
 ---
 # <a name="get-androidforworktrustedrootcertificate"></a>Obter androidForWorkTrustedRootCertificate
 
@@ -86,6 +86,7 @@ Content-Length: 591
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos windowsPhoneEASEmailPr
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a6151ddbbe9641339a78b88cb38b2ea1dd2b0534
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 35da262e0e595b54d5c862f912bdc41475f37847
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30980044"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31794313"
 ---
 # <a name="list-windowsphoneeasemailprofileconfigurations"></a>Listar windowsPhoneEASEmailProfileConfigurations
 
@@ -97,6 +97,7 @@ Content-Length: 1099
   ]
 }
 ```
+
 
 
 

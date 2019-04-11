@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos managedEBookCategory.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2a02b69624664d74ae9fabaad1066ff1d625e144
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: c8b8053f4c25af438f937605ec65011509373fdf
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30966968"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31790778"
 ---
 # <a name="list-managedebookcategories"></a>Listar managedEBookCategories
 
@@ -76,6 +76,7 @@ Content-Length: 264
   ]
 }
 ```
+
 
 
 

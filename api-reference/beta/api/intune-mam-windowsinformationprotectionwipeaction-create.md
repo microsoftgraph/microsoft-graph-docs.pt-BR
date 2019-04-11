@@ -4,12 +4,12 @@ description: Criar um novo objeto windowsInformationProtectionWipeAction.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0481318000dab5e87cce072af846762312a9b847
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: a99aa4c89e80df93637cde6e3dc4bdd88018c76a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30979169"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31790155"
 ---
 # <a name="create-windowsinformationprotectionwipeaction"></a>Criar windowsInformationProtectionWipeAction
 
@@ -52,10 +52,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windowsI
 |:---|:---|:---|
 |id|String|Chave da entidade.|
 |status|[actionState](../resources/intune-shared-actionstate.md)|Status de ação de apagamento. Os valores possíveis são: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
-|targetedUserId|String|O UserId que está sendo direcionado para esta ação de apagamento.|
-|targetedDeviceRegistrationId|String|O DeviceRegistrationId que está sendo direcionado para esta ação de apagamento.|
-|targetedDeviceName|String|Nome do dispositivo de destino.|
-|targetedDeviceMacAddress|String|Endereço MAC do dispositivo de destino.|
+|targetedUserId|Cadeia de caracteres|O UserId que está sendo direcionado para esta ação de apagamento.|
+|targetedDeviceRegistrationId|Cadeia de caracteres|O DeviceRegistrationId que está sendo direcionado para esta ação de apagamento.|
+|targetedDeviceName|Cadeia de caracteres|Nome do dispositivo de destino.|
+|targetedDeviceMacAddress|Cadeia de caracteres|Endereço MAC do dispositivo de destino.|
 |lastCheckInDateTime|DateTimeOffset|Hora da última verificação do dispositivo direcionado por esta ação de apagamento.|
 
 
@@ -101,6 +101,7 @@ Content-Length: 461
   "lastCheckInDateTime": "2016-12-31T23:59:56.413532-08:00"
 }
 ```
+
 
 
 

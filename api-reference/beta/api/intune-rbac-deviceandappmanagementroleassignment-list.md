@@ -4,12 +4,12 @@ description: Lista propriedades e relações dos objetos deviceAndAppManagementR
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cc1bcb322f67a0bb8a0b0ef2c7565c9d7967e5d5
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 13c8a3550c48bc1afa8b9bfcb686f27d5d445f55
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30984202"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31790127"
 ---
 # <a name="list-deviceandappmanagementroleassignments"></a>Listar deviceAndAppManagementRoleAssignments
 
@@ -85,6 +85,7 @@ Content-Length: 480
   ]
 }
 ```
+
 
 
 

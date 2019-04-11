@@ -4,12 +4,12 @@ description: Ainda não documentado
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 81c401509315535e163b3a32224ee3a91ac67a15
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 95ed870849faebec289cd59ba9d58eee67d27fd9
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30145147"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31794047"
 ---
 # <a name="updatewindowsdeviceaccountactionparameter-resource-type"></a>Tipo de recurso updateWindowsDeviceAccountActionParameter
 
@@ -30,7 +30,7 @@ Ainda não documentado
 |sessionInitiationProtocalAddress|Cadeia de caracteres|Ainda não documentado|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -53,6 +53,7 @@ Veja a seguir uma representação JSON do recurso.
   "sessionInitiationProtocalAddress": "String"
 }
 ```
+
 
 
 

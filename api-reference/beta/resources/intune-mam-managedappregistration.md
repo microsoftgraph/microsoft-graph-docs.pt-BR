@@ -4,12 +4,12 @@ description: O ManagedAppEntity é o tipo de entidade de base para todos os outr
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 63645c7817281f201fd66e39e7fac2c59ff88f5c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 3be91dd094258f0bf998521c058f1c62659fbcc8
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30151118"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31794383"
 ---
 # <a name="managedappregistration-resource-type"></a>Tipo de recurso managedAppRegistration
 
@@ -24,34 +24,34 @@ O recurso ManagedAppRegistration representa os detalhes de um aplicativo, com ca
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar managedAppRegistrations](../api/intune-mam-managedappregistration-list.md)|Coleção [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|Listar propriedades e relações dos objetos de [managedAppRegistration](../resources/intune-mam-managedappregistration.md).|
-|[Obter managedAppRegistrations](../api/intune-mam-managedappregistration-get.md)|[managedAppRegistration](../resources/intune-mam-managedappregistration.md)|Ler propriedades e relações do objeto [managedAppRegistration](../resources/intune-mam-managedappregistration.md).|
-|[função getUserIdsWithFlaggedAppRegistration](../api/intune-mam-managedappregistration-getuseridswithflaggedappregistration.md)|Coleção String|Ainda não documentado|
+|[Get managedAppRegistration](../api/intune-mam-managedappregistration-get.md)|[managedAppRegistration](../resources/intune-mam-managedappregistration.md)|Ler propriedades e relações do objeto [managedAppRegistration](../resources/intune-mam-managedappregistration.md).|
+|[função getUserIdsWithFlaggedAppRegistration](../api/intune-mam-managedappregistration-getuseridswithflaggedappregistration.md)|String collection|Ainda não documentado|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|Data e hora de criação|
 |lastSyncDateTime|DateTimeOffset|Data e hora em que o último aplicativo foi sincronizado com o serviço de gerenciamento.|
-|applicationVersion|String|Versão do Aplicativo|
-|managementSdkVersion|String|Versão do SDK de gerenciamento do aplicativo|
-|platformVersion|String|Versão do sistema operacional|
-|deviceType|String|Tipo de dispositivo do host|
+|applicationVersion|Cadeia de caracteres|Versão do Aplicativo|
+|managementSdkVersion|Cadeia de caracteres|Versão do SDK de gerenciamento do aplicativo|
+|platformVersion|Cadeia de caracteres|Versão do sistema operacional|
+|deviceType|Cadeia de caracteres|Tipo de dispositivo do host|
 |deviceTag|String|Uma tag gerada pelo SDK de gerenciamento, que ajuda a relacionar aplicativos hospedados no mesmo dispositivo. Sem garantia de indicar aplicativos em todas as condições.|
 |deviceName|Cadeia de caracteres|Nome do dispositivo do host|
-|managedDeviceId|String|O identificador de dispositivo gerenciado do dispositivo host. O valor pode ser vazio mesmo quando o dispositivo host é gerenciado.|
-|azureADDeviceId|String|O identificador de dispositivo do Azure Active Directory do dispositivo host. O valor pode ser vazio mesmo quando o dispositivo host é registrado no Azure Active Directory.|
-|deviceModel|String|O modelo de dispositivo para o registro de aplicativo atual |
-|deviceManufacturer|String|O fabricante do dispositivo para o registro de aplicativo atual |
+|managedDeviceId|Cadeia de caracteres|O identificador de dispositivo gerenciado do dispositivo host. O valor pode ser vazio mesmo quando o dispositivo host é gerenciado.|
+|azureADDeviceId|Cadeia de caracteres|O identificador de dispositivo do Azure Active Directory do dispositivo host. O valor pode ser vazio mesmo quando o dispositivo host é registrado no Azure Active Directory.|
+|deviceModel|Cadeia de caracteres|O modelo de dispositivo para o registro de aplicativo atual |
+|deviceManufacturer|Cadeia de caracteres|O fabricante do dispositivo para o registro de aplicativo atual |
 |flaggedReasons|coleção [managedAppFlaggedReason](../resources/intune-mam-managedappflaggedreason.md)|Zero ou mais motivos para a sinalização de um registro de aplicativo. E.g. aplicativo usado em dispositivo modificado|
 |userId|String|A ID de usuário à qual este registro de aplicativo pertence.|
 |appIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|O identificador do pacote do aplicativo|
 |id|String|Chave da entidade.|
-|version|String|Versão da entidade.|
+|versão|Cadeia de caracteres|Versão da entidade.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
-|appliedPolicies|Coleção [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|Zero ou mais políticas já aplicadas no aplicativo registrado quando este foi sincronizado pela última vez com o serviço de gerenciamento.|
+|appliedPolicies|Conjunto [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|Zero ou mais políticas já aplicadas no aplicativo registrado quando este foi sincronizado pela última vez com o serviço de gerenciamento.|
 |intendedPolicies|Coleção [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|Zero ou mais administradores de políticas destinados ao aplicativo a partir de agora.|
 |operations|Coleção [managedAppOperation](../resources/intune-mam-managedappoperation.md)|Zero ou mais operações de longa execução desencadeadas no registro do aplicativo.|
 
@@ -89,6 +89,7 @@ Veja a seguir uma representação JSON do recurso.
   "version": "String"
 }
 ```
+
 
 
 

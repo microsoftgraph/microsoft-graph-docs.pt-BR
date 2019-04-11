@@ -4,12 +4,12 @@ description: Exclui iosUpdateConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0df8439bbd97ad80fc1053e9a5e209f6ea64ebcc
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 6ec4f8feab2ca79c3dbf761214b136a133dd9568
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30986016"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31794460"
 ---
 # <a name="delete-iosupdateconfiguration"></a>Excluir iosUpdateConfiguration
 
@@ -64,6 +64,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

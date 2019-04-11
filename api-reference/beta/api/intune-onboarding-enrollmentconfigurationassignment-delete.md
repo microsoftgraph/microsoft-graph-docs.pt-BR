@@ -4,12 +4,12 @@ description: Exclui enrollmentConfigurationAssignment.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e55bd1c03007bd4c264ea8c7bcb949ebe964d44a
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 06c9d0351702a99b645356d9100b229444c2341f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30973478"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31792983"
 ---
 # <a name="delete-enrollmentconfigurationassignment"></a>Excluir enrollmentConfigurationAssignment
 
@@ -62,6 +62,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 
