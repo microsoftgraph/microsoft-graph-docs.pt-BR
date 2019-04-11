@@ -4,12 +4,12 @@ description: Valores possíveis para as configurações de controle de conta de 
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8302566eea465ec4477a01845778ab2d7ddee9fe
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 6b63fe44abfb0a06e5978d78e49c392c08122e38
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30146708"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31795783"
 ---
 # <a name="windowsuseraccountcontrolsettings-enum-type"></a>tipo de enumeração windowsUserAccountControlSettings
 
@@ -27,6 +27,7 @@ Valores possíveis para as configurações de controle de conta de usuário do W
 |notifyOnAppChanges|duas|Notificar alterações no aplicativo.|
 |notifyOnAppChangesWithoutDimming|3D|Notificar as alterações do aplicativo sem DIMM de área de trabalho.|
 |neverNotify|quatro|Nunca notificar.|
+
 
 
 

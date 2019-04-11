@@ -4,12 +4,12 @@ description: Esta entidade contém dados que são usados na personalização da 
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0f21cc97cd701f9826743475c4055aed6bafe9ca
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 3eae52bbb19eaca46c74d275ae7da3d16050a50e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30144699"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31799913"
 ---
 # <a name="intunebrandingprofile-resource-type"></a>tipo de recurso intuneBrandingProfile
 
@@ -27,24 +27,24 @@ Esta entidade contém dados que são usados na personalização da aparência do
 |[Criar intuneBrandingProfile](../api/intune-wip-intunebrandingprofile-create.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|Criar um novo objeto [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) .|
 |[Excluir intuneBrandingProfile](../api/intune-wip-intunebrandingprofile-delete.md)|Nenhum|Exclui [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md).|
 |[Atualizar intuneBrandingProfile](../api/intune-wip-intunebrandingprofile-update.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|Atualiza as propriedades de um objeto [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) .|
-|[Ação assign](../api/intune-wip-intunebrandingprofile-assign.md)|Nenhum|Ainda não documentado|
+|[atribuir ação](../api/intune-wip-intunebrandingprofile-assign.md)|Nenhuma|Ainda não documentado|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave de perfil|
-|ProfileName|String|Nome do perfil|
-|profileDescription|String|Descrição do perfil|
+|ProfileName|Cadeia de caracteres|Nome do perfil|
+|profileDescription|Cadeia de caracteres|Descrição do perfil|
 |isDefaultProfile|Booliano|Apresenta se o perfil é usado para o padrão.|
 |createdDateTime|DateTimeOffset|Quando o BrandingProfile foi criado.|
 |lastModifiedDateTime|DateTimeOffset|Quando o BrandingProfile foi modificado pela última vez.|
 |displayName|String|Nome da empresa/organização exibido para usuários finais.|
-|contactITName|String|Nome da pessoa/organização responsável pelo suporte de TI.|
-|contactITPhoneNumber|String|Número de telefone da pessoa/organização responsável pelo suporte de TI.|
-|contactITEmailAddress|String|Endereço de email da pessoa/organização responsável pelo suporte de TI.|
-|contactITNotes|String|Comentários de texto relacionados à pessoa/organização responsável pelo suporte de TI.|
-|privacyUrl|String|URL da política de privacidade da empresa/organização.|
-|onlineSupportSiteUrl|String|URL do site de assistência técnica de TI da empresa/organização.|
+|contactITName|Cadeia de caracteres|Nome da pessoa/organização responsável pelo suporte de TI.|
+|contactITPhoneNumber|Cadeia de caracteres|Número de telefone da pessoa/organização responsável pelo suporte de TI.|
+|contactITEmailAddress|Cadeia de caracteres|Endereço de email da pessoa/organização responsável pelo suporte de TI.|
+|contactITNotes|Cadeia de caracteres|Comentários de texto relacionados à pessoa/organização responsável pelo suporte de TI.|
+|privacyUrl|Cadeia de caracteres|URL da política de privacidade da empresa/organização.|
+|onlineSupportSiteUrl|Cadeia de caracteres|URL do site de assistência técnica de TI da empresa/organização.|
 |onlineSupportSiteName|Cadeia de caracteres|Nome de exibição do site de assistência técnica de TI da empresa/organização.|
 |themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|Cor de tema principal usado nos aplicativos e no portal da Web do Portal da Empresa.|
 |showLogo|Booliano|Booliano que indica se as imagens de logotipo fornecidas pelo administrador serão exibidas ou não.|
@@ -108,6 +108,7 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
+
 
 
 

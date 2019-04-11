@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos mobileAppIntentAndStat
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a7c0699af0b7d4ea019ab6d18b2c61c44451cf74
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 2391b5a5359ddf82dcef2106cd8ef46009107c9c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30962691"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31797771"
 ---
 # <a name="list-mobileappintentandstates"></a>Listar mobileAppIntentAndStates
 
@@ -93,7 +93,6 @@ Content-Length: 1001
   ]
 }
 ```
-
 
 
 

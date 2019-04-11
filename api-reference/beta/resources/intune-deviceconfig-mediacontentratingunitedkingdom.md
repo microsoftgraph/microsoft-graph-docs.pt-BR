@@ -4,12 +4,12 @@ description: Ainda não documentado
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0169e26be7590031ba5e7e7f676d51f69a526452
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 2c91558168922c4b608d62add941b69a5749bc9f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30160176"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31795797"
 ---
 # <a name="mediacontentratingunitedkingdom-resource-type"></a>Tipo de recurso mediaContentRatingUnitedKingdom
 
@@ -25,8 +25,8 @@ Ainda não documentado
 |movieRating|[ratingUnitedKingdomMoviesType](../resources/intune-deviceconfig-ratingunitedkingdommoviestype.md)|Classificação de filmes selecionada para o Reino Unido. Os valores possíveis são: `allAllowed`, `allBlocked`, `general`, `universalChildren`, `parentalGuidance`, `agesAbove12Video`, `agesAbove12Cinema`, `agesAbove15`, `adults`.|
 |tvRating|[ratingUnitedKingdomTelevisionType](../resources/intune-deviceconfig-ratingunitedkingdomtelevisiontype.md)|Classificação de TV selecionada para o Reino Unido. Os valores possíveis são: `allAllowed`, `allBlocked`, `caution`.|
 
-## <a name="relationships"></a>Relacionamentos
-Nenhum
+## <a name="relationships"></a>Relações
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -42,6 +42,7 @@ Veja a seguir uma representação JSON do recurso.
   "tvRating": "String"
 }
 ```
+
 
 
 

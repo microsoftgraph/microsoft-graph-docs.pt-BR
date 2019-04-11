@@ -4,12 +4,12 @@ description: Contém as propriedades do sistema operacional mínimo obrigatório
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 98ad7191b919905e18246e904744b79dfeead06e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 3775a9bbc9eee6bfef5dd1bef8235bf6fc770603
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30161492"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31795173"
 ---
 # <a name="iosminimumoperatingsystem-resource-type"></a>Tipo de recurso iosMinimumOperatingSystem
 
@@ -22,14 +22,14 @@ Contém as propriedades do sistema operacional mínimo obrigatório para um apli
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|v8_0|Boolean|Versão 8.0 ou posterior.|
-|v9_0|Boolean|Versão 9.0 ou posterior.|
-|v10_0|Boolean|Versão 10.0 ou posterior.|
+|v8_0|Booliano|Versão 8.0 ou posterior.|
+|v9_0|Booliano|Versão 9.0 ou posterior.|
+|v10_0|Booliano|Versão 10.0 ou posterior.|
 |v11_0|Booliano|Versão 11.0 ou posterior.|
-|v12_0|Boolean|Versão 12,0 ou posterior.|
+|v12_0|Booliano|Versão 12,0 ou posterior.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -48,6 +48,7 @@ Veja a seguir uma representação JSON do recurso.
   "v12_0": true
 }
 ```
+
 
 
 

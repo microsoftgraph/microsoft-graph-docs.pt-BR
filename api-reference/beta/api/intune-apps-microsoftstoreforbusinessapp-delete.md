@@ -4,12 +4,12 @@ description: Exclui microsoftStoreForBusinessApp.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 380ba083214b44a0e70fe72a233ec35a2737245f
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: e1ecc9f35b1a0083719eca2a3a83b0ef8d81134a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30958750"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31796119"
 ---
 # <a name="delete-microsoftstoreforbusinessapp"></a>Excluir microsoftStoreForBusinessApp
 
@@ -64,6 +64,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

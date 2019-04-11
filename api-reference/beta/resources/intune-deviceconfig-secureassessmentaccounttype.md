@@ -4,12 +4,12 @@ description: Tipo de contas permitidas para o Windows10SecureAssessment Configur
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f6698086b3da16466e9069781312e15ccd7c80c3
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 4fa14d90465ed9278fd20362800d5d111de62950
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30169374"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31795006"
 ---
 # <a name="secureassessmentaccounttype-enum-type"></a>tipo de enumeração secureAssessmentAccountType
 
@@ -22,9 +22,10 @@ Tipo de contas permitidas para o Windows10SecureAssessment ConfigurationAccount.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|azureADAccount|,0|Indica uma conta do Azure AD no formato AzureAD\username@tenant.com.|
-|domainAccount|1|Indica uma conta de domínio no formato domínio \ usuário ou user@domain.com.|
+|azureADAccount|,0|Indica uma conta do Azure AD no formato AzureAD\username@tenant.comde.|
+|domainAccount|1|Indica uma conta de domínio no formato domínio \ user@domain.comusuário ou.|
 |localAccount|duas|Indica uma conta local em formato de nome de usuário.|
+
 
 
 

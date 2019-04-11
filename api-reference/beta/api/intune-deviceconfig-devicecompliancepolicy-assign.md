@@ -4,12 +4,12 @@ description: Ainda não documentado
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3bc193a057534c13e169eab6d0558cb0a752b8c2
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 6367aa4c86b00c77d4e64c31bf734407a8ac75d2
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30962936"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31796448"
 ---
 # <a name="assign-action"></a>atribuir ação
 
@@ -99,6 +99,7 @@ Content-Length: 274
   ]
 }
 ```
+
 
 
 

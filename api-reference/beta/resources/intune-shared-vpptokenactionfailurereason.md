@@ -4,12 +4,12 @@ description: Possíveis tipos de motivos para uma falha na ação de token do Ap
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 05d3137bb5aac2aef3024825df5e7e0b84ffde51
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c9adb896d384be99496c016ef3bd39b02ff1a28e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30169689"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31798527"
 ---
 # <a name="vpptokenactionfailurereason-enum-type"></a>tipo de enumeração vppTokenActionFailureReason
 
@@ -22,11 +22,12 @@ Possíveis tipos de motivos para uma falha na ação de token do Apple Volume Pu
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|Nenhuma|,0|Nenhum.|
+|nenhuma|,0|Nenhum.|
 |appleFailure|1|Ocorreu um erro no serviço da Apple.|
 |internalError|duas|Ocorreu um erro interno.|
 |expiredVppToken|3D|Ocorreu um erro porque o token do Apple Volume Purchase Program expirou.|
 |expiredApplePushNotificationCertificate|quatro|Ocorreu um erro porque o certificado de notificação por push do Apple Volume Purchase Program expirou.|
+
 
 
 

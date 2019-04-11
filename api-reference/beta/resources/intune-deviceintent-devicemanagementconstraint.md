@@ -4,12 +4,12 @@ description: Entidade base para uma restrição
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ae8520167224a7efea309022e92d42b3263abc5e
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 0886eaa03c25ab72387bc90a3caf1673ece7b23b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522346"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31797498"
 ---
 # <a name="devicemanagementconstraint-resource-type"></a>tipo de recurso deviceManagementConstraint
 
@@ -38,8 +38,6 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.deviceManagementConstraint"
 }
 ```
-
-
 
 
 

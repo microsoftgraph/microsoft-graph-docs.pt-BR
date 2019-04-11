@@ -4,12 +4,12 @@ description: A entidade representa um valor inteiro não assinado de uma apresen
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1ba15c9875b45ce9f250aabb2cbffc8cceea81f4
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e260c1f554667429e5086c1f5c9eb603bd098f56
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30163697"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31799164"
 ---
 # <a name="grouppolicypresentationvaluedecimal-resource-type"></a>tipo de recurso groupPolicyPresentationValueDecimal
 
@@ -37,7 +37,7 @@ Herda de [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppol
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que o objeto foi modificado pela última vez. Herdado de [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
 |createdDateTime|DateTimeOffset|A data e a hora em que o objeto foi criado. Herdado de [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
 |id|String|Chave da entidade. Herdado de [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
-|valor|Int64|Um valor inteiro não assinado para a apresentação associada.|
+|value|Int64|Um valor inteiro não assinado para a apresentação associada.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -62,6 +62,7 @@ Veja a seguir uma representação JSON do recurso.
   "value": 1024
 }
 ```
+
 
 
 

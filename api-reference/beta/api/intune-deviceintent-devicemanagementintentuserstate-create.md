@@ -4,12 +4,12 @@ description: Criar um novo objeto deviceManagementIntentUserState.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 76ab09e1d72bb9bc0a8482cd9d71e4e4b0c3f7e6
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: aa3b718bbf0b4e87805a79066bfd6f898e47a0d8
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522794"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31798695"
 ---
 # <a name="create-devicemanagementintentuserstate"></a>Criar deviceManagementIntentUserState
 
@@ -98,8 +98,6 @@ Content-Length: 324
   "state": "notApplicable"
 }
 ```
-
-
 
 
 

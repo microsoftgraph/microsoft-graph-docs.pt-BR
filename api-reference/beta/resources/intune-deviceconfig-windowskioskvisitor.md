@@ -4,12 +4,12 @@ description: A classe usada para identificar uma conta de quiosque de visitantes
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 954f5a5dd5bddc76a9374540012992aa0b207671
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 0cd6bc6e652b7058b55f60656191eafcae3c198c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30163242"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31798121"
 ---
 # <a name="windowskioskvisitor-resource-type"></a>tipo de recurso windowsKioskVisitor
 
@@ -27,7 +27,7 @@ Herda de [windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md
 |:---|:---|:---|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -41,6 +41,7 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.windowsKioskVisitor"
 }
 ```
+
 
 
 

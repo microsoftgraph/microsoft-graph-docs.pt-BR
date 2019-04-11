@@ -1,15 +1,15 @@
 ---
 title: Ação desconectar
-description: Ainda não documentado
+description: Uma solicitação para remover o conector do TeamViewer ativo
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b07297796f4da30421e5d9eaf8ffdcce2d46efdd
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: dda674128dc42690ec5385cf5e2ac350f9284fc1
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30970139"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31795405"
 ---
 # <a name="disconnect-action"></a>Ação disconnect
 
@@ -17,7 +17,7 @@ ms.locfileid: "30970139"
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Ainda não documentado
+Uma solicitação para remover o conector do TeamViewer ativo
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -62,6 +62,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

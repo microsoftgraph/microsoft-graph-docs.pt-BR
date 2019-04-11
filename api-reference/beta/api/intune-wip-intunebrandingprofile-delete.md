@@ -4,12 +4,12 @@ description: Exclui intuneBrandingProfile.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: db7d952620f1b7358a852a48f4fcd8d48beed21a
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 1b5aeea498a229280c348ff0a94045b0bc35b00d
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30973282"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31799710"
 ---
 # <a name="delete-intunebrandingprofile"></a>Excluir intuneBrandingProfile
 
@@ -62,6 +62,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

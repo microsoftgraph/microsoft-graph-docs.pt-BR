@@ -4,12 +4,12 @@ description: A entidade base para a apresentação de exibição de qualquer op�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1d6abbcde241059a15969236b3ab7bcb0825d67d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 00151ec7c75a071df9c6485a68749cce07e6f91a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30166875"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31797239"
 ---
 # <a name="grouppolicypresentation-resource-type"></a>tipo de recurso groupPolicyPresentation
 
@@ -28,8 +28,8 @@ A entidade base para a apresentação de exibição de qualquer opção adiciona
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|rótulo|String|Rótulo de texto localizado para qualquer entidade de apresentação. O valor padrão é vazio.|
-|id|Cadeia de caracteres|Chave da entidade.|
+|rótulo|Cadeia de caracteres|Rótulo de texto localizado para qualquer entidade de apresentação. O valor padrão é vazio.|
+|id|String|Chave da entidade.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez.|
 
 ## <a name="relationships"></a>Relações
@@ -53,6 +53,7 @@ Veja a seguir uma representação JSON do recurso.
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

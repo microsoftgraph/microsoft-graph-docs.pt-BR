@@ -4,12 +4,12 @@ description: Classe de resumo que contém as propriedades usadas para atribuir u
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 13b8612133656395519b7f053115e788f02a69c9
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 3b5fff18f7227b1b8f30bd4a9ec35076e6b3f5a0
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30158734"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31798037"
 ---
 # <a name="mobileappassignmentsettings-resource-type"></a>Tipo de recurso mobileAppAssignmentSettings
 
@@ -24,7 +24,7 @@ Classe de resumo que contém as propriedades usadas para atribuir um aplicativo 
 |:---|:---|:---|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -38,6 +38,7 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.mobileAppAssignmentSettings"
 }
 ```
+
 
 
 

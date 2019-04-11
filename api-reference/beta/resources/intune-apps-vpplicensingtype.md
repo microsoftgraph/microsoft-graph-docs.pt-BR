@@ -4,12 +4,12 @@ description: Contém propriedades para o tipo de licenciamento iOS Volume-Purcha
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f09ca9a8f891b90563ebad2cff74775f4c6fb7c2
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 2f4966b6608bcd96720c4260191388979e811061
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30168394"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31796462"
 ---
 # <a name="vpplicensingtype-resource-type"></a>Tipo de recurso vppLicensingType
 
@@ -22,13 +22,13 @@ Contém propriedades para o tipo de licenciamento iOS Volume-Purchased Program (
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|supportUserLicensing|Boolean|Se o programa dá suporte ao tipo de licença do usuário.|
+|supportUserLicensing|Booliano|Se o programa dá suporte ao tipo de licença do usuário.|
 |supportDeviceLicensing|Booliano|Se o programa dá suporte ao tipo de licenciamento do dispositivo.|
-|supportsUserLicensing|Boolean|Se o programa dá suporte ao tipo de licença do usuário.|
+|supportsUserLicensing|Booliano|Se o programa dá suporte ao tipo de licença do usuário.|
 |supportsDeviceLicensing|Booliano|Se o programa dá suporte ao tipo de licenciamento do dispositivo.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -46,6 +46,7 @@ Veja a seguir uma representação JSON do recurso.
   "supportsDeviceLicensing": true
 }
 ```
+
 
 
 

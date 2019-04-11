@@ -4,12 +4,12 @@ description: Revogar licença de usuário VPP do iOS atribuída para determinado
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 36acec91e93c357c48cff3ea75429232b09a0440
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 690e547929e53f2378ca0244c0c57a7444652628
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30972211"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31795643"
 ---
 # <a name="revokeuserlicense-action"></a>ação revokeUserLicense
 
@@ -53,7 +53,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta ação.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |userId|String|UserId para o qual a licença de aplicativo atribuída deve ser revogada|
-|notifyManagedDevices|Boolean|Booliano que indica se a notificação de revogação deve ser enviada ao dispositivo|
+|notifyManagedDevices|Booliano|Booliano que indica se a notificação de revogação deve ser enviada ao dispositivo|
 
 
 
@@ -81,6 +81,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

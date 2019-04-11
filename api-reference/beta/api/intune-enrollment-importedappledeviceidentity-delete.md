@@ -4,12 +4,12 @@ description: Exclui importedAppleDeviceIdentity.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2b4bb7bf903b68b53d77ec0b81cb5d88fd844e19
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 21ae40af17197dd31caba8f78052e6d5dfa6977d
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30969495"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31795083"
 ---
 # <a name="delete-importedappledeviceidentity"></a>Excluir importedAppleDeviceIdentity
 
@@ -62,6 +62,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

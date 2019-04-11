@@ -4,12 +4,12 @@ description: Ainda não documentado
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 68646ead33d9505522381ace92e5eeaa3e7b48ce
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 69874b6ccf94a78145c03279a5e6d13e0c45b995
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30974234"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31798184"
 ---
 # <a name="gettopmobileapps-function"></a>função getTopMobileApps
 
@@ -70,7 +70,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 982
+Content-Length: 1013
 
 {
   "value": [
@@ -98,11 +98,13 @@ Content-Length: 982
       "isAssigned": true,
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
-      ]
+      ],
+      "dependentAppCount": 1
     }
   ]
 }
 ```
+
 
 
 

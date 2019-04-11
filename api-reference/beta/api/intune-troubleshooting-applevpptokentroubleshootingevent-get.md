@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto appleVppTokenTrouble
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e1ecbbe5248f9893bb18473eb36a47987953b02b
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 8e3ccf0ce50197f99273540780a1caef9e28e8b5
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30962789"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31799738"
 ---
 # <a name="get-applevpptokentroubleshootingevent"></a>Obter appleVppTokenTroubleshootingEvent
 
@@ -99,7 +99,6 @@ Content-Length: 1003
   }
 }
 ```
-
 
 
 

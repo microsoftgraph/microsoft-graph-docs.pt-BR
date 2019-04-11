@@ -4,12 +4,12 @@ description: Contém propriedades para as informações de pacote de um aplicati
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ba69fe277809b3ce4d6f81a198fc305204984d73
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 5e1dda51d5c98cb27ab9e71c7bef9167959c9052
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30166448"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31799612"
 ---
 # <a name="windowspackageinformation-resource-type"></a>tipo de recurso windowsPackageInformation
 
@@ -22,16 +22,16 @@ Contém propriedades para as informações de pacote de um aplicativo de linha d
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|applicableArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|A arquitetura do Windows para a qual este aplicativo pode ser executado. Os possíveis valores são: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
+|applicableArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|A arquitetura do Windows para a qual este aplicativo pode ser executado. Os valores possíveis são: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
 |displayName|String|O nome de exibição.|
-|identityName|String|O Nome da Identidade.|
-|identityPublisher|String|O editor de identidade.|
+|identityName|Cadeia de caracteres|O Nome da Identidade.|
+|identityPublisher|Cadeia de caracteres|O editor de identidade.|
 |identityResourceIdentifier|String|O Identificador de Recurso da Identidade.|
 |identityVersion|String|A versão de identidade.|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|O valor do sistema de operacional mínimo aplicável.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -61,6 +61,7 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
+
 
 
 

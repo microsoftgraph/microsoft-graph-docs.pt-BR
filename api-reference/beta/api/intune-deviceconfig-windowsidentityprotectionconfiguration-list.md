@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos windowsIdentityProtect
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8661e998021d17eca77bdb737c9d55d9cae4aabc
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 55dbdbe088f4967f66929ab9d73a30a96976f6b3
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30981010"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31798219"
 ---
 # <a name="list-windowsidentityprotectionconfigurations"></a>Listar windowsIdentityProtectionConfigurations
 
@@ -97,6 +97,7 @@ Content-Length: 1115
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Dados exPortados
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d3b91b0186b2263a936cabe02bd533a550a24748
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 1a889e65463733971dd36d04e6bba8a140fdba16
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30154849"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31795706"
 ---
 # <a name="deviceandappmanagementdata-resource-type"></a>tipo de recurso deviceAndAppManagementData
 
@@ -22,10 +22,10 @@ Dados exPortados
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|content|Fluxo|Ainda não documentado|
+|conteúdo|Fluxo|Ainda não documentado|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -40,6 +40,7 @@ Veja a seguir uma representação JSON do recurso.
   "content": "<Unknown Primitive Type Edm.Stream>"
 }
 ```
+
 
 
 

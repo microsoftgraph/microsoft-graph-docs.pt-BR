@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto deviceManagementTemp
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2bb521dd7943125eee04bcdc0296c3688c559305
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: d128b9cc6771ebd41abfa66fd715f26733330ee6
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31524313"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31796749"
 ---
 # <a name="get-devicemanagementtemplate"></a>Obter deviceManagementTemplate
 
@@ -76,8 +76,6 @@ Content-Length: 221
   }
 }
 ```
-
-
 
 
 

@@ -4,12 +4,12 @@ description: Valores possíveis para recursos de pré-lançamento.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4d9cc6e2960858f68deb440362961c38eae39287
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b22e12d5c27db40cfdab07c54fda28239a3d08d0
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30144685"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31797568"
 ---
 # <a name="prereleasefeatures-enum-type"></a>tipo de enumeração prereleaseFeatures
 
@@ -26,6 +26,7 @@ Valores possíveis para recursos de pré-lançamento.
 |settingsOnly|1|Configurações apenas recursos de pré-lançamento.|
 |settingsAndExperimentations|duas|Configurações e experimentos recursos de pré-lançamento.|
 |notAllowed|3D|Recursos de pré-lançamento não permitidos.|
+
 
 
 

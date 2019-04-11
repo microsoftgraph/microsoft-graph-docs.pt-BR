@@ -4,12 +4,12 @@ description: Tipos de configuração EAP (Extensible Authentication Protocol).
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6aac4a2bf9c72d8d682ed444355ce2e410ff8f1c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 1c0fea3bed512c98cd26488a7703554ac6c600f7
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30146848"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31797421"
 ---
 # <a name="eaptype-enum-type"></a>tipo de enumeração eapType
 
@@ -28,6 +28,7 @@ Tipos de configuração EAP (Extensible Authentication Protocol).
 |eapTtls|21|Protocolo EAP-TTLS (Transport Layer Security).|
 |autenticação|25|PEAP (protocolo de autenticação exTensível protegido).|
 |eapFast|43|Autenticação flexível EAP por meio de encapsulamento seguro (EAP-FAST).|
+
 
 
 

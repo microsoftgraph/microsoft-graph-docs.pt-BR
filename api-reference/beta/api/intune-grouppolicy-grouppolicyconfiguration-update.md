@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto groupPolicyConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0caaa312b5375fb16734cab90bf8380a6cb1c28d
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: c3f343eacd5d19eb101d69cb2bac5941eeaf7ed5
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30971693"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31794971"
 ---
 # <a name="update-grouppolicyconfiguration"></a>Atualizar groupPolicyConfiguration
 
@@ -51,8 +51,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [groupPo
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|A data e a hora em que o objeto foi criado.|
-|displayName|String|Nome fornecido pelo usuário para o objeto Resource.|
-|descrição|String|Descrição fornecida pelo usuário para o objeto Resource.|
+|displayName|Cadeia de caracteres|Nome fornecido pelo usuário para o objeto Resource.|
+|description|String|Descrição fornecida pelo usuário para o objeto Resource.|
 |id|String|Chave da entidade.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez.|
 
@@ -93,6 +93,7 @@ Content-Length: 317
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
 
 
 

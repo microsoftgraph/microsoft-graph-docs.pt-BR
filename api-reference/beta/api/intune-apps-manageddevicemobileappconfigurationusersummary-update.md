@@ -4,12 +4,12 @@ description: Atualizar as propriedades de um objeto managedDeviceMobileAppConfig
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 484e6f2c2caa406ce95c4a3e4d9d78b9a879cd5f
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 69edffebf7bad2fbe2de307e0e99c33eebad330c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30983033"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31795748"
 ---
 # <a name="update-manageddevicemobileappconfigurationusersummary"></a>Atualizar managedDeviceMobileAppConfigurationUserSummary
 
@@ -107,6 +107,7 @@ Content-Length: 370
   "configurationVersion": 4
 }
 ```
+
 
 
 

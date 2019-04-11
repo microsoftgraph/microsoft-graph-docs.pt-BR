@@ -4,12 +4,12 @@ description: Ainda não documentado
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: be66d26126c2a8838ba54eda941fccc2d896cef9
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 840a28595e1ce812368d2e7907ce56eee88245df
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31523697"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31799129"
 ---
 # <a name="devicemanangementintentvaluetype-enum-type"></a>tipo de enumeração deviceManangementIntentValueType
 
@@ -28,8 +28,6 @@ Ainda não documentado
 |completo|3D|O valor de configuração é um objeto complexo|
 |collection|quatro|O valor de configuração é uma coleção|
 |abstractComplex|0,5|O valor de configuração é um objeto complexo abstrato|
-
-
 
 
 

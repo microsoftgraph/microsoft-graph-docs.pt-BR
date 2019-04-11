@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto appleDeviceFeaturesC
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cf8f135b3874eaf8a3ac1f97fbe581482ea6f08d
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 8b29edb6421c7422d6ee0a204018a34dd21c2029
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30973506"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31797869"
 ---
 # <a name="get-appledevicefeaturesconfigurationbase"></a>Acessar appleDeviceFeaturesConfigurationBase
 
@@ -94,6 +94,7 @@ Content-Length: 735
   }
 }
 ```
+
 
 
 

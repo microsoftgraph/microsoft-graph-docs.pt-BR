@@ -4,12 +4,12 @@ description: Obter uma chave pública para usar para criptografar o token do pro
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cd34c3e6e88d432601aacf6bd8c8df851c90baef
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 626d74fcb6a932f17bec55545248618fee53feee
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30965624"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31795237"
 ---
 # <a name="getencryptionpublickey-function"></a>função getEncryptionPublicKey
 
@@ -68,6 +68,7 @@ Content-Length: 50
   "value": "Get Encryption Public Key value"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Política de Servidor Proxy de Rede.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f29c69789f6b2a4d41bbb5179ff71f721c64c88f
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 120eff89a01434803c1e2f4f5ba84d3f088e1022
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30162101"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31796357"
 ---
 # <a name="windows10networkproxyserver-resource-type"></a>Tipo de recurso windows10NetworkProxyServer
 
@@ -27,7 +27,7 @@ Política de Servidor Proxy de Rede.
 |useForLocalAddresses|Booliano|Especifica se o servidor proxy deve ser usado para endereços locais (intranet).|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -46,6 +46,7 @@ Veja a seguir uma representação JSON do recurso.
   "useForLocalAddresses": true
 }
 ```
+
 
 
 

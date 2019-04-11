@@ -4,12 +4,12 @@ description: Criar um novo objeto iosPkcsCertificateProfile.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fb667dfc88e33bf6fc035624c1fb67f2bde2bf66
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: ce6be924f8db052b400b403af4eea44ac27d10d3
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30989033"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31796966"
 ---
 # <a name="create-iospkcscertificateprofile"></a>Criar iosPkcsCertificateProfile
 
@@ -64,10 +64,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar iosPkcsC
 |subjectAlternativeNameType|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|Tipo de nome alternativo da entidade do certificado. Herdado de [iosCertificateProfileBase](../resources/intune-deviceconfig-ioscertificateprofilebase.md). Os valores possíveis são: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`.|
 |certificateValidityPeriodValue|Int32|Valor para o período de validade do certificado. Herdado de [iosCertificateProfileBase](../resources/intune-deviceconfig-ioscertificateprofilebase.md)|
 |certificateValidityPeriodScale|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|Dimensionar o período de validade do certificado. Herdado de [iosCertificateProfileBase](../resources/intune-deviceconfig-ioscertificateprofilebase.md). Os valores possíveis são: `days`, `months`, `years`.|
-|certificationAuthority|String|Autoridade de certificação PKCS.|
-|certificationAuthorityName|String|Nome da autoridade de certificação PKCS.|
-|certificateTemplateName|String|Nome do modelo de certificado PKCS.|
-|Subjectalternativenameformatstring foi|String|Cadeia de caracteres personalizada que define o atributo AAD.|
+|certificationAuthority|Cadeia de caracteres|Autoridade de certificação PKCS.|
+|certificationAuthorityName|Cadeia de caracteres|Nome da autoridade de certificação PKCS.|
+|certificateTemplateName|Cadeia de caracteres|Nome do modelo de certificado PKCS.|
+|Subjectalternativenameformatstring foi|Cadeia de caracteres|Cadeia de caracteres personalizada que define o atributo AAD.|
 
 
 
@@ -134,6 +134,7 @@ Content-Length: 933
   "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value"
 }
 ```
+
 
 
 

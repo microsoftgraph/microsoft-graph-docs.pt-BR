@@ -4,12 +4,12 @@ description: Tipo absoluto de tamanho máximo de cache da otimização de entreg
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5e1ff180136804d6a98e2ebbb292acc358d908d6
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: a955197e1e75ecb1f953f5ddc50b33b7e01a574b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30178126"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31797190"
 ---
 # <a name="deliveryoptimizationmaxcachesizeabsolute-resource-type"></a>tipo de recurso deliveryOptimizationMaxCacheSizeAbsolute
 
@@ -29,7 +29,7 @@ Herda de [deliveryOptimizationMaxCacheSize](../resources/intune-deviceconfig-del
 O valor 0 (zero) significa cache "ilimitado". A otimização de entrega limpará o cache quando o dispositivo estiver com pouco espaço em disco. Valores válidos de 0 a 4294967295|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -44,6 +44,7 @@ Veja a seguir uma representação JSON do recurso.
   "maximumCacheSizeInGigabytes": 1024
 }
 ```
+
 
 
 

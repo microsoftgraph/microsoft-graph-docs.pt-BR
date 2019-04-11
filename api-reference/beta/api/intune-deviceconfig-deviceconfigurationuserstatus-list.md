@@ -4,12 +4,12 @@ description: Listar propriedades e relações dos objetos deviceConfigurationUse
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0a0772af8df8ce40676544abbd6a7fd29621587b
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: acbf3c3c064ce2dc6a426374e3309362a591fe70
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30989383"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31795629"
 ---
 # <a name="list-deviceconfigurationuserstatuses"></a>Listar deviceConfigurationUserStatuses
 
@@ -86,6 +86,7 @@ Content-Length: 400
   ]
 }
 ```
+
 
 
 

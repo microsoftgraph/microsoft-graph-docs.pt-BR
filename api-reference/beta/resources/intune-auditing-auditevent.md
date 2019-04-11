@@ -4,12 +4,12 @@ description: Uma classe que contém as propriedades de Evento de Auditoria.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8fd9971b5b6ddce9b3a826ff569d1925ef9cff97
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 1c6004db55f25f92261de8fd6ee2a5418928e9a1
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30153673"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31798520"
 ---
 # <a name="auditevent-resource-type"></a>Tipo de recurso auditEvent
 
@@ -23,28 +23,28 @@ Uma classe que contém as propriedades de Evento de Auditoria.
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar auditEvents](../api/intune-auditing-auditevent-list.md)|Conjunto [auditEvent](../resources/intune-auditing-auditevent.md)|Listar propriedades e relações de objetos de [auditEvent](../resources/intune-auditing-auditevent.md).|
-|[Obter auditEvent](../api/intune-auditing-auditevent-get.md)|[auditEvent](../resources/intune-auditing-auditevent.md)|Ler propriedades e relações de objetos de[auditEvent](../resources/intune-auditing-auditevent.md).|
-|[Criar auditEvent](../api/intune-auditing-auditevent-create.md)|[auditEvent](../resources/intune-auditing-auditevent.md)|Criar um novo objeto de[auditEvent](../resources/intune-auditing-auditevent.md).|
+|[Get auditEvent](../api/intune-auditing-auditevent-get.md)|[auditEvent](../resources/intune-auditing-auditevent.md)|Ler propriedades e relações do objeto [auditEvent](../resources/intune-auditing-auditevent.md).|
+|[Criar auditEvent](../api/intune-auditing-auditevent-create.md)|[auditEvent](../resources/intune-auditing-auditevent.md)|Criar um novo objeto [auditEvent](../resources/intune-auditing-auditevent.md).|
 |[Excluir auditEvent](../api/intune-auditing-auditevent-delete.md)|Nenhum|Excluir [auditEvent](../resources/intune-auditing-auditevent.md).|
-|[Atualizar auditEvent](../api/intune-auditing-auditevent-update.md)|[auditEvent](../resources/intune-auditing-auditevent.md)|Atualizar as propriedades do objeto de [auditEvent](../resources/intune-auditing-auditevent.md).|
-|[Função getAuditCategories](../api/intune-auditing-auditevent-getauditcategories.md)|Coleção String|Ainda não documentado|
-|[Função getAuditActivityTypes](../api/intune-auditing-auditevent-getauditactivitytypes.md)|Conjunto de cadeia de caracteres|Ainda não documentado|
+|[Atualizar auditEvent](../api/intune-auditing-auditevent-update.md)|[auditEvent](../resources/intune-auditing-auditevent.md)|Atualizar as propriedades do objeto [auditEvent](../resources/intune-auditing-auditevent.md).|
+|[Função getAuditCategories](../api/intune-auditing-auditevent-getauditcategories.md)|String collection|Ainda não documentado|
+|[Função getAuditActivityTypes](../api/intune-auditing-auditevent-getauditactivitytypes.md)|String collection|Ainda não documentado|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade.|
-|displayName|String|Nome de exibição do evento.|
-|componentName|String|Nome do componente.|
+|displayName|Cadeia de caracteres|Nome de exibição do evento.|
+|componentName|Cadeia de caracteres|Nome do componente.|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|Usuários e aplicativos do AAD associados com o evento de auditoria.|
-|atividade|String|Nome amigável da atividade.|
+|atividade|Cadeia de caracteres|Nome amigável da atividade.|
 |activityDateTime|DateTimeOffset|A hora e data em UTC em que a atividade foi executada.|
-|activityType|String|O tipo de atividade que foi executada.|
-|activityOperationType|String|O tipo de operação HTTP da atividade.|
-|activityResult|String|O resultado da atividade.|
+|activityType|Cadeia de caracteres|O tipo de atividade que foi executada.|
+|activityOperationType|Cadeia de caracteres|O tipo de operação HTTP da atividade.|
+|activityResult|Cadeia de caracteres|O resultado da atividade.|
 |correlationId|Guid|A ID da solicitação de cliente usada para correlacionar a atividade dentro do sistema.|
 |recursos|Coleção [auditResource](../resources/intune-auditing-auditresource.md)|Recursos em modificação.|
-|Ferramentas para desenvolvedores|Cadeia de caracteres|Categoria de auditoria.|
+|Ferramentas para desenvolvedores|String|Categoria de auditoria.|
 
 ## <a name="relationships"></a>Relações
 Nenhuma
@@ -101,6 +101,7 @@ Veja a seguir uma representação JSON do recurso.
   "category": "String"
 }
 ```
+
 
 
 

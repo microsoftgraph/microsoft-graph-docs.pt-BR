@@ -4,12 +4,12 @@ description: As ações remotas do Intune dão suporte.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c4eb232f53ecb6b857e1a762ac0bef59c9ca246a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 4d7835ac9ecc1c9e7df7724032a97d31d7d99069
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30174871"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31799437"
 ---
 # <a name="remoteaction-enum-type"></a>tipo de enumeração remoteaction
 
@@ -22,7 +22,7 @@ As ações remotas do Intune dão suporte.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|unknown|,0|O usuário inicia uma ação desconhecida.|
+|desconhecido|,0|O usuário inicia uma ação desconhecida.|
 |factoryReset|1|O usuário inicia uma ação para a redefinição de fábrica de um dispositivo. |
 |removeCompanyData|duas|O usuário inicia uma ação para remover dados da empresa de um dispositivo. |
 |resetPasscode|3D|O usuário inicia uma ação para remover a senha de um dispositivo iOS ou redefinir a senha do dispositivo Android/Windows. |
@@ -41,6 +41,7 @@ As ações remotas do Intune dão suporte.
 |updateDeviceAccount|dezesseis|O usuário inicia uma ação para atualizar a conta no dispositivo.|
 |automaticRedeployment|17.07.06|O usuário inicia uma ação para automático reimplantar o dispositivo|
 |Parada|anos|O usuário inicia uma ação para desligar o dispositivo.|
+
 
 
 

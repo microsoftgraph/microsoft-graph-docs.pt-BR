@@ -4,12 +4,12 @@ description: Ação do Android tomada quando um aplicativo solicita uma permiss�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 32e275ffc6fd3f6fd5faf4d44e594d19e599310a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 7c832add0d338a18ca098feae80ba54d1cc07032
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30168590"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31795202"
 ---
 # <a name="androidpermissionactiontype-enum-type"></a>tipo de enumeração androidPermissionActionType
 
@@ -22,9 +22,10 @@ Ação do Android tomada quando um aplicativo solicita uma permissão perigosa.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|Notifica|,0|Ainda não documentado|
+|prompt|,0|Ainda não documentado|
 |Concessão autoGrant|1|Ainda não documentado|
 |Negação de permissão|duas|Ainda não documentado|
+
 
 
 

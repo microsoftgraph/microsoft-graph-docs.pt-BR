@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto androidImportedPFXCertificate
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1f398cf4a696dc5402d53ede4e363560f2b82937
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 51078d0810389fc882180718dabf71f2888e7d09
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30986667"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31798807"
 ---
 # <a name="update-androidimportedpfxcertificateprofile"></a>Atualizar androidImportedPFXCertificateProfile
 
@@ -141,6 +141,7 @@ Content-Length: 891
   "intendedPurpose": "smimeEncryption"
 }
 ```
+
 
 
 
