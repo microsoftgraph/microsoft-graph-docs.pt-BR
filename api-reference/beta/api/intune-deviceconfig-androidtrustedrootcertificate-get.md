@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto androidTrustedRootCe
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6c6dedda2024b288880021029352e1f0173727ab
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: e99bd4b308c1a6c3f30e8447e89c962932b58fcf
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30969516"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31801922"
 ---
 # <a name="get-androidtrustedrootcertificate"></a>Obter androidTrustedRootCertificate
 
@@ -87,6 +87,7 @@ Content-Length: 584
   }
 }
 ```
+
 
 
 

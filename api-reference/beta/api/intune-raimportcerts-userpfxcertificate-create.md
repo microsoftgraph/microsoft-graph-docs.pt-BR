@@ -4,12 +4,12 @@ description: Criar um novo objeto userPFXCertificate.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 32ac31aba2a3d88feb8b9254de7eedbd71d99a52
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 518c7af676aa649866ea90fe7916cd257f0c5b91
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30958498"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31800256"
 ---
 # <a name="create-userpfxcertificate"></a>Criar userPFXCertificate
 
@@ -51,16 +51,16 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar userPFXC
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Identificador exclusivo do certificado PFX.|
-|identificação|String|Impressão digital SHA-1 do certificado PFX.|
+|identificação|Cadeia de caracteres|Impressão digital SHA-1 do certificado PFX.|
 |Da intendedpurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|Finalidade do certificado do ponto de vista da implantação. Os valores possíveis são: `unassigned`, `smimeEncryption`, `smimeSigning`, `vpn`, `wifi`.|
 |userPrincipalName|String|Nome principal de usuário do certificado PFX.|
 |startDateTime|DateTimeOffset|Data/hora de início da validade do certificado.|
 |expirationDateTime|DateTimeOffset|Data/hora de validade do certificado.|
-|providerName|String|Provedor de criptografia usado para criptografar este BLOB.|
-|keyName|String|Nome da chave (dentro do provedor) usada para criptografar o blob.|
+|providerName|Cadeia de caracteres|Provedor de criptografia usado para criptografar este BLOB.|
+|keyName|Cadeia de caracteres|Nome da chave (dentro do provedor) usada para criptografar o blob.|
 |paddingScheme|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|Esquema de preenchimento usado pelo provedor durante a criptografia/descriptografia. Os valores possíveis são: `none`, `pkcs1`, `oaepSha1`, `oaepSha256`, `oaepSha384`, `oaepSha512`.|
 |encryptedPfxBlob|Binary|Blob PFX criptografado.|
-|encryptedPfxPassword|String|Senha PFX criptografada.|
+|encryptedPfxPassword|Cadeia de caracteres|Senha PFX criptografada.|
 |createdDateTime|DateTimeOffset|Data/hora em que este certificado PFX foi importado.|
 |lastModifiedDateTime|DateTimeOffset|Data/hora em que este certificado PFX foi modificado pela última vez.|
 
@@ -117,7 +117,6 @@ Content-Length: 695
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 

@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto managedDeviceMobileA
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a3bcd0e90933a44bab21fba693429fe048e7acdf
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 0a21f023b78c9630a370b5d403b96a1696f8aad9
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30982914"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31800466"
 ---
 # <a name="get-manageddevicemobileappconfigurationassignment"></a>Acessar managedDeviceMobileAppConfigurationAssignment
 
@@ -77,6 +77,7 @@ Content-Length: 263
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Exclui iosLobApp.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 93d34dde8062828bbb616d87370dae55376541cb
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 5e2be7ea388ca7db70d24c9851a9f70c5ac4c4ad
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30974143"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31801950"
 ---
 # <a name="delete-ioslobapp"></a>Excluir iosLobApp
 
@@ -64,6 +64,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Entidade que representa uma coleção definida de configurações d
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3cf144ed30a017dc1f3ae84fc481568adc0d0d09
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: a55e4426f37f0261f5adbd1ac4830de6ede3e3ed
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522514"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31801873"
 ---
 # <a name="devicemanagementtemplate-resource-type"></a>tipo de recurso deviceManagementTemplate
 
@@ -27,13 +27,13 @@ Entidade que representa uma coleção definida de configurações de dispositivo
 |[Criar deviceManagementTemplate](../api/intune-deviceintent-devicemanagementtemplate-create.md)|[deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)|Criar um novo objeto [deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md) .|
 |[Excluir deviceManagementTemplate](../api/intune-deviceintent-devicemanagementtemplate-delete.md)|Nenhum|Exclui [deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md).|
 |[Atualizar deviceManagementTemplate](../api/intune-deviceintent-devicemanagementtemplate-update.md)|[deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)|Atualiza as propriedades de um objeto [deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md) .|
-|[ação CreateInstance](../api/intune-deviceintent-devicemanagementtemplate-createinstance.md)|[deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md)|Ainda não documentado|
+|[ação createInstance](../api/intune-deviceintent-devicemanagementtemplate-createinstance.md)|[deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md)|Ainda não documentado|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|A ID do modelo|
-|displayName|Cadeia de Caracteres|O nome de exibição do modelo|
+|displayName|Cadeia de caracteres|O nome de exibição do modelo|
 |description|String|A descrição do modelo|
 
 ## <a name="relationships"></a>Relações
@@ -58,8 +58,6 @@ Veja a seguir uma representação JSON do recurso.
   "description": "String"
 }
 ```
-
-
 
 
 

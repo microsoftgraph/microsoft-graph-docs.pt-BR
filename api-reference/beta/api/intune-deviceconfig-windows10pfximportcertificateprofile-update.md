@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto windows10PFXImportCertificate
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2a8486df1d22dea137926053cf90c028ef3a8fa3
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 77495930295654e04658f7908c3909a8c0c4863e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30986730"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31800375"
 ---
 # <a name="update-windows10pfximportcertificateprofile"></a>Atualizar windows10PFXImportCertificateProfile
 
@@ -111,6 +111,7 @@ Content-Length: 489
   "keyStorageProvider": "useTpmKspOtherwiseFail"
 }
 ```
+
 
 
 

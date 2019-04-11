@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto deviceManagementSettingDefini
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d349fd80a65020e03b691305bb2e968ec5407db5
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: f11167524956ff3eddc9a5508fb30fdd81e2aa73
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522570"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31801453"
 ---
 # <a name="update-devicemanagementsettingdefinition"></a>Atualizar deviceManagementSettingDefinition
 
@@ -55,10 +55,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 |:---|:---|:---|
 |id|String|A ID da definição de configuração|
 |valueType|[deviceManangementIntentValueType](../resources/intune-deviceintent-devicemanangementintentvaluetype.md)|O tipo de dados do valor. Os valores possíveis são: `integer`, `boolean`, `string`, `complex`, `collection`, `abstractComplex`.|
-|displayName|Cadeia de Caracteres|O nome de exibição da configuração|
+|displayName|Cadeia de caracteres|O nome de exibição da configuração|
 |isTopLevel|Booliano|Se a configuração for de nível superior, ela poderá ser configurada sem a necessidade de ser encapsulada em uma coleção ou configuração complexa|
 |description|String|A descrição da configuração|
-|documentationUrl|Cadeia de Caracteres|URL para configurar a documentação|
+|documentationUrl|Cadeia de caracteres|URL para configurar a documentação|
 |palavras-chave|Coleção String|Palavras-chave associadas à configuração|
 |as|coleção [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)|Conjunto de restrições para o valor de configuração|
 |relação|coleção [deviceManagementSettingDependency](../resources/intune-deviceintent-devicemanagementsettingdependency.md)|Coleção de dependências em outras configurações|
@@ -142,8 +142,6 @@ Content-Length: 777
   ]
 }
 ```
-
-
 
 
 

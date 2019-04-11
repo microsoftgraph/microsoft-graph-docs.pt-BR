@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto windowsAutopilotSettings.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e479fece08101d290505c3156aee7c045c581328
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: a0392fda945cb3b98c872e75d5f896a13b2f4ce2
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30971861"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31802062"
 ---
 # <a name="update-windowsautopilotsettings"></a>Atualizar windowsAutopilotSettings
 
@@ -92,6 +92,7 @@ Content-Length: 279
   "syncStatus": "inProgress"
 }
 ```
+
 
 
 

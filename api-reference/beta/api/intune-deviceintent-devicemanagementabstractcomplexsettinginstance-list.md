@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos deviceManagementAbstra
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7836634c929e581aac6c29b156d22d3132fe6a0c
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 93082dd1f194285fee31c52621aa1dd2df26ad6b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522654"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31802097"
 ---
 # <a name="list-devicemanagementabstractcomplexsettinginstances"></a>Listar deviceManagementAbstractComplexSettingInstances
 
@@ -79,8 +79,6 @@ Content-Length: 318
   ]
 }
 ```
-
-
 
 
 

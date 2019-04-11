@@ -4,12 +4,12 @@ description: Uma classe abstrata que contém as propriedades base do livro eletr
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 24a8619d92eee6c666b7126a84895b14e0404755
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 888df51e17ab45dcada3d69fad95315b26b4b20e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30156032"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31800396"
 ---
 # <a name="managedebook-resource-type"></a>Tipo de recurso managedEBook
 
@@ -23,14 +23,14 @@ Uma classe abstrata que contém as propriedades base do livro eletrônico gerenc
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar managedEBooks](../api/intune-books-managedebook-list.md)|Coleção [managedEBook](../resources/intune-books-managedebook.md)|Lista propriedades e relações dos objetos [managedEBook](../resources/intune-books-managedebook.md).|
-|[Obter managedEBook](../api/intune-books-managedebook-get.md)|[managedEBook](../resources/intune-books-managedebook.md)|Propriedades de leitura e relações do objeto [managedEBook](../resources/intune-books-managedebook.md).|
-|[ação assign](../api/intune-books-managedebook-assign.md)|Nenhum|Ainda não documentado|
+|[Acessar managedEBook](../api/intune-books-managedebook-get.md)|[managedEBook](../resources/intune-books-managedebook.md)|Leia as propriedades e as relações do objeto [managedEBook](../resources/intune-books-managedebook.md).|
+|[atribuir ação](../api/intune-books-managedebook-assign.md)|Nenhuma|Ainda não documentado|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade.|
-|displayName|String|Nome do livro eletrônico.|
+|displayName|Cadeia de caracteres|Nome do livro eletrônico.|
 |description|String|Descrição.|
 |publisher|Cadeia de caracteres|Publicador.|
 |publishedDateTime|DateTimeOffset|A data e hora em que o livro eletrônico foi publicado.|
@@ -38,7 +38,7 @@ Uma classe abstrata que contém as propriedades base do livro eletrônico gerenc
 |createdDateTime|DateTimeOffset|A data e hora em que o livro eletrônico foi modificado pela última vez.|
 |lastModifiedDateTime|DateTimeOffset|A data e hora da última modificação do livro eletrônico.|
 |informationUrl|String|A URL de informações adicionais.|
-|privacyInformationUrl|String|A URL da declaração de privacidade.|
+|privacyInformationUrl|Cadeia de caracteres|A URL da declaração de privacidade.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -76,6 +76,7 @@ Veja a seguir uma representação JSON do recurso.
   "privacyInformationUrl": "String"
 }
 ```
+
 
 
 

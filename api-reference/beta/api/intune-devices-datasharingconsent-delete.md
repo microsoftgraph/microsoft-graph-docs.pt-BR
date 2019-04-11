@@ -4,12 +4,12 @@ description: Exclui dataSharingConsent.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 61230e097fca3d9d5be2bccff6cf4d646f1f5ea2
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: fd78f437f9eaa68a9363f97c18a4e9942fdf10a4
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30983285"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31801110"
 ---
 # <a name="delete-datasharingconsent"></a>Excluir dataSharingConsent
 
@@ -62,6 +62,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Ainda não documentado
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bdcf2c3003d0e7daa5f65336f0282d89325a8b54
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 31672925bb1d08299cb52477fef817a2199cc994
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30158769"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31800823"
 ---
 # <a name="importedwindowsautopilotdeviceidentityimportstatus-enum-type"></a>tipo de enumeração importedWindowsAutopilotDeviceIdentityImportStatus
 
@@ -22,11 +22,12 @@ Ainda não documentado
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|unknown|,0|Status desconhecido.|
+|desconhecido|,0|Status desconhecido.|
 |função|1|Status pendente.|
 |parcial|duas|Status parcial.|
 |complete|3D|Status completo.|
 |erro|quatro|Status do erro.|
+
 
 
 

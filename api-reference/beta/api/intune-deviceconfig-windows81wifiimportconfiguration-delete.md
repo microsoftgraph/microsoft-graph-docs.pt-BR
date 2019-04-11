@@ -4,12 +4,12 @@ description: Exclui windows81WifiImportConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f5c50979949edbd161fa9c4a350eab8fed9f644b
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: eff5c150ca0c8a7c59852d0674562935e1799b2e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30965561"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31802069"
 ---
 # <a name="delete-windows81wifiimportconfiguration"></a>Excluir windows81WifiImportConfiguration
 
@@ -64,6 +64,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

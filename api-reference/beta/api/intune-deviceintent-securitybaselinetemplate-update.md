@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto securityBaselineTemplate.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e8d407646c4369352d8ce8f1760c5a64f4d99dbc
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 9f2cb66df449dc8586ef3fb3f822fadf62891902
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522766"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31800606"
 ---
 # <a name="update-securitybaselinetemplate"></a>Atualizar securityBaselineTemplate
 
@@ -51,7 +51,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [securit
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|A ID do modelo herdada de [deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)|
-|displayName|Cadeia de Caracteres|O nome de exibição do modelo herdado de [deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)|
+|displayName|Cadeia de caracteres|O nome de exibição do modelo herdado de [deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)|
 |description|String|A descrição do modelo herdado de [deviceManagementTemplate](../resources/intune-deviceintent-devicemanagementtemplate.md)|
 
 
@@ -89,8 +89,6 @@ Content-Length: 194
   "description": "Description value"
 }
 ```
-
-
 
 
 

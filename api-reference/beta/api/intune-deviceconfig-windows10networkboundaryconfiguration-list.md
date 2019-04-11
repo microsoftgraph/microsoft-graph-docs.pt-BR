@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos windows10NetworkBounda
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fe9fa8895e8b513ff629d4b96bc766494b0fee43
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 7de2416a9d2fcc9b318b202653e65618f344151f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30966415"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31800963"
 ---
 # <a name="list-windows10networkboundaryconfigurations"></a>Listar windows10NetworkBoundaryConfigurations
 
@@ -114,6 +114,7 @@ Content-Length: 1617
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Rótulos de classificação de filmes nos Estados Unidos
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8475e3cfa4dbdd2e93f685a1b954d44516104ac3
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 804110ee07c85a1ca68f259e8b4ae9a206f5f29b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30152735"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31801432"
 ---
 # <a name="ratingunitedstatesmoviestype-enum-type"></a>tipo de enumeração ratingUnitedStatesMoviesType
 
@@ -29,6 +29,7 @@ Rótulos de classificação de filmes nos Estados Unidos
 |parentalGuidance13|quatro|PG13, alguns materiais podem ser inadequados para crianças com menos de 13 anos|
 |limitado|0,5|R, os espectadores em 17 exigem o guardião pai ou adulto de acompanhamento|
 |adultos|6|NC17, somente para adultos|
+
 
 
 

@@ -4,12 +4,12 @@ description: Ação do defender a ser executada em aplicativo potencialmente inD
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 02ac5da63c2787c2b87479a23899c9d2980c54c4
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 1949ec58c7cfd2d896308f740b7eca16f2646b3e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30173350"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31800186"
 ---
 # <a name="defenderpotentiallyunwantedappaction-enum-type"></a>tipo de enumeração defenderPotentiallyUnwantedAppAction
 
@@ -25,6 +25,7 @@ Ação do defender a ser executada em aplicativo potencialmente inDesejado (PUA)
 |deviceDefault|,0|A proteção do PUA está desativada. O defender não protegerá contra aplicativos potencialmente indesejados.|
 |Larga|1|A proteção do PUA está ativada. Os itens detectados são bloqueados. Eles serão mostrados em histórico junto com outras ameaças.|
 |Faça|duas|Modo de auditoria. O defender detectará aplicativos potencialmente indesejados, mas não realizará ações. Você pode revisar as informações sobre os aplicativos que o defender teria feito com a pesquisa de eventos criados pelo defender no Visualizador de eventos.|
+
 
 
 

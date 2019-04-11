@@ -4,12 +4,12 @@ description: Nível de acesso no Exchange.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dc84149f9ca6b178807e4bd70984fe1abfff6a09
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c235d31e97b570f70145884349eaef6e2254194c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30174232"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31802461"
 ---
 # <a name="devicemanagementexchangeaccesslevel-enum-type"></a>tipo de enumeração deviceManagementExchangeAccessLevel
 
@@ -22,10 +22,11 @@ Nível de acesso no Exchange.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|Nenhuma|,0|Nenhuma regra de acesso do dispositivo foi configurada no Exchange.|
+|nenhuma|,0|Nenhuma regra de acesso do dispositivo foi configurada no Exchange.|
 |permitiu|1|Permitir que o dispositivo acesse o Exchange.|
 |Larga|duas|Bloquear o acesso do dispositivo ao Exchange.|
 |quarentena|3D|Colocar o dispositivo em quarentena no Exchange.|
+
 
 
 

@@ -4,12 +4,12 @@ description: Rótulos de classificação de conteúdo de TV na França
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9806d79e03576cedb23701f45e09b7766c4f6339
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 9148808d1b93e46a65582d8ac190f142743004c8
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30155241"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31801369"
 ---
 # <a name="ratingfrancetelevisiontype-enum-type"></a>tipo de enumeração ratingFranceTelevisionType
 
@@ -28,6 +28,7 @@ Rótulos de classificação de conteúdo de TV na França
 |agesAbove12|3D|A classificação-12 não é recomendada para crianças com menos de 12|
 |agesAbove16|quatro|A classificação-16 não é recomendada para crianças com menos de 16|
 |agesAbove18|0,5|A classificação-18 não é recomendada para pessoas com 18 anos|
+
 
 
 
