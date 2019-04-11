@@ -4,12 +4,12 @@ description: A entidade descreve todas as informações sobre uma única diretiv
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7c5062fda984dbe1dda518e77ff271750d30adb8
-ms.sourcegitcommit: cd4bdb2c6754b1d5658e68909ea6c219466da6df
+ms.openlocfilehash: a9e411c2672650e3e603bfa0e64fde1c4db53607
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30644283"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31802762"
 ---
 # <a name="grouppolicydefinition-resource-type"></a>tipo de recurso groupPolicyDefinition
 
@@ -30,9 +30,9 @@ A entidade descreve todas as informações sobre uma única diretiva de grupo.
 |:---|:---|:---|
 |classType|[groupPolicyDefinitionClassType](../resources/intune-grouppolicy-grouppolicydefinitionclasstype.md)|Identifica o tipo de grupo ao qual a política pode ser aplicada. Os valores possíveis são: `user` e `machine`.|
 |displayName|String|O nome da política localizada.|
-|Texto não criptografado|String|A explicação localizada ou o texto de ajuda associado à política. O valor padrão é vazio.|
-|categoryPath|String|O caminho de categoria completo localizado para a política.|
-|com suporte|String|Cadeia de caracteres localizada usada para especificar o sistema operacional ou a versão do aplicativo é afetada pela política.|
+|Texto não criptografado|Cadeia de caracteres|A explicação localizada ou o texto de ajuda associado à política. O valor padrão é vazio.|
+|categoryPath|Cadeia de caracteres|O caminho de categoria completo localizado para a política.|
+|com suporte|Cadeia de caracteres|Cadeia de caracteres localizada usada para especificar o sistema operacional ou a versão do aplicativo é afetada pela política.|
 |PolicyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Especifica o tipo de política de grupo. Os valores possíveis são: `admxBacked` e `admxIngested`.|
 |id|String|Chave da entidade.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez.|
@@ -64,6 +64,7 @@ Veja a seguir uma representação JSON do recurso.
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

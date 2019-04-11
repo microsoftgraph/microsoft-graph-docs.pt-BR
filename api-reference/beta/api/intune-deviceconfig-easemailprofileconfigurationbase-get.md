@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto easEmailProfileConfi
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5518718a4bc74e96492fa85b97141c91f73007cf
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: c73c6bd944fd5fd60f32967350e6c142c985fc4b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30989558"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31802790"
 ---
 # <a name="get-easemailprofileconfigurationbase"></a>Obter easEmailProfileConfigurationBase
 
@@ -89,6 +89,7 @@ Content-Length: 671
   }
 }
 ```
+
 
 
 

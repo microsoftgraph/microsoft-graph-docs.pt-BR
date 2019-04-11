@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto da ioseducationdevic
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5e4dbdc8966d7142167c2a0dd848da9eda2b712a
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 8e5c0a9f6999fdec9ce0e0589c08148aefe48558
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30965540"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31804379"
 ---
 # <a name="get-ioseducationdeviceconfiguration"></a>Obter da ioseducationdeviceconfiguration
 
@@ -85,6 +85,7 @@ Content-Length: 474
   }
 }
 ```
+
 
 
 

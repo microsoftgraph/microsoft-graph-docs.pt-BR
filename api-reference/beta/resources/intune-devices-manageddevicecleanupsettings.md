@@ -4,12 +4,12 @@ description: Defina a regra quando o administrador quiser que os dispositivos se
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 76abaf4cb06156881a530d50e3322e649eedde51
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 0d7e91d632860e47275cda158acf4d816c64e835
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30148479"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31804554"
 ---
 # <a name="manageddevicecleanupsettings-resource-type"></a>tipo de recurso managedDeviceCleanupSettings
 
@@ -22,10 +22,10 @@ Defina a regra quando o administrador quiser que os dispositivos sejam limpos.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|deviceInactivityBeforeRetirementInDays|String|Número de dias em que o dispositivo não entrou no Intune.|
+|deviceInactivityBeforeRetirementInDays|Cadeia de caracteres|Número de dias em que o dispositivo não entrou no Intune.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -40,6 +40,7 @@ Veja a seguir uma representação JSON do recurso.
   "deviceInactivityBeforeRetirementInDays": "String"
 }
 ```
+
 
 
 

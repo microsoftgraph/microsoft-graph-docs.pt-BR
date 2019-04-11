@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto windowsPhone81TrustedRootCert
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5a824512f8ddea266347f1d554d3e2dce2f44958
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: e0acc47bd427a61e9009db8ecb7cb16f65f0f2d8
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30987780"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31803518"
 ---
 # <a name="update-windowsphone81trustedrootcertificate"></a>Atualizar windowsPhone81TrustedRootCertificate
 
@@ -59,7 +59,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |trustedRootCertificate|Binary|Certificado raiz confiável|
-|certFileName|String|Nome do arquivo a ser exibido na interface do usuário.|
+|certFileName|Cadeia de caracteres|Nome do arquivo a ser exibido na interface do usuário.|
 
 
 
@@ -112,6 +112,7 @@ Content-Length: 546
   "certFileName": "Cert File Name value"
 }
 ```
+
 
 
 

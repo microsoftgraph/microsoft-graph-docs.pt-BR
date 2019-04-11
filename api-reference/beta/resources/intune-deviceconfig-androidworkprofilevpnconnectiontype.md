@@ -4,12 +4,12 @@ description: Tipo de conexão VPN do perfil de trabalho do Android.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0601ab517543ee30de2ac884313d6ccb3737e842
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 4d860650d254e610b371620b168562bef96179c9
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30162710"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31803987"
 ---
 # <a name="androidworkprofilevpnconnectiontype-enum-type"></a>tipo de enumeração androidWorkProfileVpnConnectionType
 
@@ -29,6 +29,7 @@ Tipo de conexão VPN do perfil de trabalho do Android.
 |checkPointCapsuleVpn|quatro|Verificar VPN de cápsula de ponto.|
 |Citrix|0,5|Citrix|
 |paloAltoGlobalProtect|6|GlobalProtect de redes de Palo Alto.|
+
 
 
 

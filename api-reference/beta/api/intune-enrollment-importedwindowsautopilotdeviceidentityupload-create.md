@@ -4,12 +4,12 @@ description: Criar um novo objeto importedWindowsAutopilotDeviceIdentityUpload.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6f9da24beab9076f01d18864aa9fe4a648bef902
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: fa8e18a8635be0a8955b3e2c7400a5884cf8d3c4
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30959884"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31803546"
 ---
 # <a name="create-importedwindowsautopilotdeviceidentityupload"></a>Criar importedWindowsAutopilotDeviceIdentityUpload
 
@@ -89,6 +89,7 @@ Content-Length: 221
   "status": "pending"
 }
 ```
+
 
 
 

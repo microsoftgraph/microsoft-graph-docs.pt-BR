@@ -4,12 +4,12 @@ description: Políticas de unidade fixa do BitLocker.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e09130a2426f6a7196d472a29f7667b9c044d313
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 7cc2441e03164787db5374827e0fd4ec153a8819
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30164292"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31803399"
 ---
 # <a name="bitlockerfixeddrivepolicy-resource-type"></a>tipo de recurso bitLockerFixedDrivePolicy
 
@@ -27,7 +27,7 @@ Políticas de unidade fixa do BitLocker.
 |recoveryOptions|[bitLockerRecoveryOptions](../resources/intune-deviceconfig-bitlockerrecoveryoptions.md)|Essa configuração de política permite controlar como as unidades de dados fixas protegidas por BitLocker são recuperadas na ausência das credenciais necessárias. Essa configuração de política é aplicada quando você ativa o BitLocker.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -53,6 +53,7 @@ Veja a seguir uma representação JSON do recurso.
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Ler propriedades e relações do objeto onPremisesConditionalAccess
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ba19221960ec2cde57ad526872f655400981fcd0
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 8876efd1d2f73814cdfd86863f846d50294870fa
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30959338"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31803770"
 ---
 # <a name="get-onpremisesconditionalaccesssettings"></a>Obter onPremisesConditionalAccessSettings
 
@@ -83,6 +83,7 @@ Content-Length: 363
   }
 }
 ```
+
 
 
 

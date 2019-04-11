@@ -4,12 +4,12 @@ description: Ainda não documentado
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 550ba33f81db9fb38f6d19f3b756a67d7c3b9aa1
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 03f028dffe4db6a2e43a90d708bc16c61615a6a0
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30158713"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31804449"
 ---
 # <a name="symanteccodesigningcertificate-resource-type"></a>tipo de recurso symantecCodeSigningCertificate
 
@@ -28,19 +28,19 @@ Ainda não documentado
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|A chave da entidade.|
-|content|Binária|O certificado de assinatura de código Symantec do Windows no formato de dados brutos.|
+|id|String|A chave da entidade.|
+|conteúdo|Binary|O certificado de assinatura de código Symantec do Windows no formato de dados brutos.|
 |status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|O status do certificado provisionado ou não foi provisionado. Os valores possíveis são: `notProvisioned` e `provisioned`.|
 |password|String|A senha necessária para o arquivo. pfx.|
-|SubjectName|String|O nome da entidade do certificado.|
-|subject|String|O valor de entidade para o certificado.|
-|issuerName|String|O nome do emissor do certificado.|
-|emissor|String|O valor do emissor para o certificado.|
+|SubjectName|Cadeia de caracteres|O nome da entidade do certificado.|
+|Assunto|String|O valor de entidade para o certificado.|
+|issuerName|Cadeia de caracteres|O nome do emissor do certificado.|
+|emissor|Cadeia de caracteres|O valor do emissor para o certificado.|
 |expirationDateTime|DateTimeOffset|A data de expiração do certificado.|
 |uploadDateTime|DateTimeOffset|O tipo do certificado de codeSignação como CERT da Symantec.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -65,6 +65,7 @@ Veja a seguir uma representação JSON do recurso.
   "uploadDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

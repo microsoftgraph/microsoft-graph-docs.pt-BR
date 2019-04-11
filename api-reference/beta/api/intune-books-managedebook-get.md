@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto managedEBook.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 87c5edeb8d77d410b84affb36c70bf44da3389ce
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 120f80c6208cdaa00500869be95c8bc2f9bf67a2
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30981654"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31804561"
 ---
 # <a name="get-managedebook"></a>Acessar managedEBook
 
@@ -87,6 +87,7 @@ Content-Length: 712
   }
 }
 ```
+
 
 
 

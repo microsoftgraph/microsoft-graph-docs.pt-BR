@@ -4,12 +4,12 @@ description: Exclui groupPolicyPresentationListBox.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e693a18ad7bd6821a1bd6509a923522cec09cd9b
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 561649f86faefd76bfa34af719976c29252e1862
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30966814"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31803693"
 ---
 # <a name="delete-grouppolicypresentationlistbox"></a>Excluir groupPolicyPresentationListBox
 
@@ -63,6 +63,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

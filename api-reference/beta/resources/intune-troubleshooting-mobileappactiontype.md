@@ -4,12 +4,12 @@ description: Ainda não documentado
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 624d91851e2182bd8196a1c2bd64df93190b098b
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 52a10e605e4f4c912a138dd5b97b6e8f7ed61184
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30152784"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31802440"
 ---
 # <a name="mobileappactiontype-enum-type"></a>tipo de enumeração ao
 
@@ -22,12 +22,11 @@ Ainda não documentado
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|unknown|,0|Resultado desconhecido.|
+|desconhecido|,0|Resultado desconhecido.|
 |installCommandSent|1|O comando de instalação de aplicativo foi enviado.|
 |instalação|3D|Aplicativo instalado.|
 |desinstalado|quatro|Aplicativo desinstalado.|
 |userRequestedInstall|0,5|Instalação solicitada pelo usuário|
-
 
 
 

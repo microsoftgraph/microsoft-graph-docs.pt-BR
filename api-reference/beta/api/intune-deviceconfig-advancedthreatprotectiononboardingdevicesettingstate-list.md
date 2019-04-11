@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos advancedThreatProtecti
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b7d98a560868cca37f819d001d2da3e002777f46
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 7d0c386c8d599a304cdfdd7d9f4af90d92bab38c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30985953"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31803175"
 ---
 # <a name="list-advancedthreatprotectiononboardingdevicesettingstates"></a>Listar advancedThreatProtectionOnboardingDeviceSettingStates
 
@@ -85,6 +85,7 @@ Content-Length: 711
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Exclui da ioseducationdeviceconfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 32970972fb20a55d5954d2d7037a9f58303ac07b
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 229b054ba474855242c36e95acd6feffbe515f90
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30988900"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31802664"
 ---
 # <a name="delete-ioseducationdeviceconfiguration"></a>Excluir da ioseducationdeviceconfiguration
 
@@ -64,6 +64,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

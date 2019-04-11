@@ -4,12 +4,12 @@ description: Contém propriedades de experiência de instalação para um aplica
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 01402384c2628e1f53a854fa35097415181aaa20
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 544825542cd178d53e3aa0a9be5373f1a9f49675
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30174944"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31804624"
 ---
 # <a name="win32lobappinstallexperience-resource-type"></a>tipo de recurso win32LobAppInstallExperience
 
@@ -25,7 +25,7 @@ Contém propriedades de experiência de instalação para um aplicativo Win32
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indica o tipo de contexto de execução em que o aplicativo é executado. Os valores possíveis são: `system`, `user`.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -40,6 +40,7 @@ Veja a seguir uma representação JSON do recurso.
   "runAsAccount": "String"
 }
 ```
+
 
 
 

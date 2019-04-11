@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto windowsManagementApp
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b45f8957fc744ea85719d1f1229c49eb9222a9ba
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 55553e438797b93ba123ba62602677790785b284
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30959163"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31804064"
 ---
 # <a name="get-windowsmanagementapphealthsummary"></a>Obter windowsManagementAppHealthSummary
 
@@ -77,6 +77,7 @@ Content-Length: 239
   }
 }
 ```
+
 
 
 

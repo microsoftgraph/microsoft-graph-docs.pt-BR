@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto groupPolicyPresentationValueD
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3adcfadc377f2289c58b29febaac5eca5f86bba0
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: ef618622393e91048a06102aab842a5b43741ce1
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30984545"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31804729"
 ---
 # <a name="update-grouppolicypresentationvaluedecimal"></a>Atualizar groupPolicyPresentationValueDecimal
 
@@ -90,6 +90,7 @@ Content-Length: 264
   "value": 5
 }
 ```
+
 
 
 

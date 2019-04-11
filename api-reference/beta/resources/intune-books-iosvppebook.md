@@ -4,12 +4,12 @@ description: Uma classe que contém as propriedades do livro eletrônico Vpp iOS
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ca890a6b15ac232d8fb685913379ba8bf69f35cc
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e792e79520c1ad02c90d2fcd54da995ea81ec6e3
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30149438"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31804743"
 ---
 # <a name="iosvppebook-resource-type"></a>Tipo de recurso iosVppEBook
 
@@ -26,7 +26,7 @@ Herda de [managedEBook](../resources/intune-books-managedebook.md)
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar iosVppEBooks](../api/intune-books-iosvppebook-list.md)|Coleção [iosVppEBook](../resources/intune-books-iosvppebook.md)|Lista propriedades e relações dos objetos [iosVppEBook](../resources/intune-books-iosvppebook.md).|
-|[Obter iosVppEBook](../api/intune-books-iosvppebook-get.md)|[iosVppEBook](../resources/intune-books-iosvppebook.md)|Propriedades de leitura e relações do objeto [iosVppEBook](../resources/intune-books-iosvppebook.md).|
+|[Acessar iosVppEBook](../api/intune-books-iosvppebook-get.md)|[iosVppEBook](../resources/intune-books-iosvppebook.md)|Leia as propriedades e as relações do objeto [iosVppEBook](../resources/intune-books-iosvppebook.md).|
 |[Criar iosVppEBook](../api/intune-books-iosvppebook-create.md)|[iosVppEBook](../resources/intune-books-iosvppebook.md)|Cria um novo objeto [iosVppEBook](../resources/intune-books-iosvppebook.md).|
 |[Excluir iosVppEBook](../api/intune-books-iosvppebook-delete.md)|Nenhum|Exclui um [iosVppEBook](../resources/intune-books-iosvppebook.md).|
 |[Atualizar iosVppEBook](../api/intune-books-iosvppebook-update.md)|[iosVppEBook](../resources/intune-books-iosvppebook.md)|Atualiza as propriedades de um objeto [iosVppEBook](../resources/intune-books-iosvppebook.md).|
@@ -34,32 +34,32 @@ Herda de [managedEBook](../resources/intune-books-managedebook.md)
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade. Herdado de [managedEBook](../resources/intune-books-managedebook.md)|
-|displayName|String|Nome do livro eletrônico. Herdado de [managedEBook](../resources/intune-books-managedebook.md)|
-|description|String|Descrição. Herdado de [managedEBook](../resources/intune-books-managedebook.md)|
-|publisher|String|Publicador. Herdado de [managedEBook](../resources/intune-books-managedebook.md)|
-|publishedDateTime|DateTimeOffset|A data e hora em que o livro eletrônico foi publicado. Herdado de [managedEBook](../resources/intune-books-managedebook.md)|
-|largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|Capa do livro. Herdado de [managedEBook](../resources/intune-books-managedebook.md)|
-|createdDateTime|DateTimeOffset|A data e hora em que o livro eletrônico foi modificado pela última vez. Herdado de [managedEBook](../resources/intune-books-managedebook.md)|
+|id|String|Chave da entidade. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
+|displayName|Cadeia de caracteres|Nome do livro eletrônico. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
+|description|String|Descrição. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
+|publisher|Cadeia de caracteres|Publicador. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
+|publishedDateTime|DateTimeOffset|A data e hora em que o livro eletrônico foi publicado. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
+|largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|Capa do livro. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
+|createdDateTime|DateTimeOffset|A data e hora em que o livro eletrônico foi modificado pela última vez. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
 |lastModifiedDateTime|DateTimeOffset|A data e hora da última modificação do livro eletrônico. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
-|informationUrl|String|A URL de informações adicionais. Herdado de [managedEBook](../resources/intune-books-managedebook.md)|
-|privacyInformationUrl|String|A URL da declaração de privacidade. Herdado de [managedEBook](../resources/intune-books-managedebook.md)|
+|informationUrl|String|A URL de informações adicionais. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
+|privacyInformationUrl|Cadeia de caracteres|A URL da declaração de privacidade. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
 |vppTokenId|Guid|A ID de token Vpp.|
-|appleId|String|O Apple ID associado ao token Vpp.|
-|vppOrganizationName|String|O nome da organização do token Vpp.|
-|genres|Coleção de cadeias de caracteres|Gêneros.|
-|idioma|String|Idioma.|
+|appleId|Cadeia de caracteres|O Apple ID associado ao token Vpp.|
+|vppOrganizationName|Cadeia de caracteres|O nome da organização do token Vpp.|
+|genres|Coleção de cadeia de caracteres|Gêneros.|
+|idioma|Cadeia de caracteres|Idioma.|
 |seller|Cadeia de caracteres|Vendedor.|
 |totalLicenseCount|Int32|Contagem total de licenças.|
 |usedLicenseCount|Int32|Contagem de licenças usadas.|
-|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade.|
+|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância de entidade.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
-|categories|coleção [managedEBookCategory](../resources/intune-books-managedebookcategory.md)|A lista de categorias para este eBook. Herdado de [managedEBook](../resources/intune-books-managedebook.md)|
-|assignments|Coleção [managedEBookAssignment](../resources/intune-books-managedebookassignment.md)|A lista de atribuições para este livro eletrônico. Herdado de [managedEBook](../resources/intune-books-managedebook.md)|
-|installSummary|[eBookInstallSummary](../resources/intune-books-ebookinstallsummary.md)|Resumo de instalação do aplicativo móvel. Herdado de [managedEBook](../resources/intune-books-managedebook.md)|
+|categories|coleção [managedEBookCategory](../resources/intune-books-managedebookcategory.md)|A lista de categorias para este eBook. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
+|assignments|Coleção [managedEBookAssignment](../resources/intune-books-managedebookassignment.md)|A lista de atribuições para este livro eletrônico. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
+|installSummary|[eBookInstallSummary](../resources/intune-books-ebookinstallsummary.md)|Resumo de instalação do aplicativo móvel. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
 |deviceStates|Coleção [deviceInstallState](../resources/intune-books-deviceinstallstate.md)|A lista de estados de instalação para este livro eletrônico. Herdado de [managedEBook](../resources/intune-books-managedebook.md)|
 |userStateSummary|Coleção [userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md)|A lista de estados de instalação para este livro eletrônico. Herdado de [managedEBook](../resources/intune-books-managedebook.md)|
 
@@ -103,6 +103,7 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
 
 
 

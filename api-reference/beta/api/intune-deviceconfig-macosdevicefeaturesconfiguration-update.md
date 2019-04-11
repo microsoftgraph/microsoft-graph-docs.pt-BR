@@ -4,12 +4,12 @@ description: Atualizar as propriedades de um objeto macOSDeviceFeaturesConfigura
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cdd65480ee4ce29ded7c841cd1ac33d59c05d974
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 1d3d583d894a11edc6d95a95f2b1869b08467689
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30957882"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31804316"
 ---
 # <a name="update-macosdevicefeaturesconfiguration"></a>Atualizar macOSDeviceFeaturesConfiguration
 
@@ -55,12 +55,30 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [macOSDe
 |id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|supportsScopeTags|Boolean|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|supportsScopeTags|Booliano|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|descrição|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |airPrintDestinations|coleção [airPrintDestination](../resources/intune-deviceconfig-airprintdestination.md)|Uma matriz de impressoras de impressão que sempre devem ser mostradas. Esta coleção pode conter um máximo de 500 elementos. Herdado de [appleDeviceFeaturesConfigurationBase](../resources/intune-deviceconfig-appledevicefeaturesconfigurationbase.md)|
+|autoLaunchItems|coleção [macOSLaunchItem](../resources/intune-deviceconfig-macoslaunchitem.md)|Lista de aplicativos, arquivos, pastas e outros itens a serem iniciados quando o usuário fizer logon. Esta coleção pode conter um máximo de 500 elementos.|
+|adminShowHostInfo|Booliano|Se deseja mostrar as informações de host de administrador na janela de logon.|
+|loginWindowText|Cadeia de caracteres|Texto personalizado a ser exibido na janela de logon.|
+|authorizedUsersListHidden|Booliano|Se deseja mostrar a caixa de diálogo nome e senha ou uma lista de usuários na janela de logon.|
+|authorizedUsersListHideLocalUsers|Booliano|Se deseja mostrar somente usuários de rede e de sistema na lista de usuários autorizados na janela de logon.|
+|authorizedUsersListHideMobileAccounts|Booliano|Se os usuários móveis serão ocultos na lista de usuários autorizados na janela de logon.|
+|authorizedUsersListIncludeNetworkUsers|Booliano|Se os usuários da rede serão mostrados na lista de usuários autorizados na janela de logon.|
+|authorizedUsersListHideAdminUsers|Booliano|Se os usuários de administrador serão ocultos na lista de usuários autorizados na janela de logon.|
+|authorizedUsersListShowOtherManagedUsers|Booliano|Se deseja mostrar outros usuários na lista de usuários autorizados na janela de logon.|
+|shutDownDisabled|Booliano|Se o item de botão desligar será ocultado na janela de logon.|
+|restartDisabled|Booliano|Se o item de botão de reInicialização será ocultado na janela de logon.|
+|sleepDisabled|Booliano|Se o item de menu de suspensão será ocultado na janela de logon.|
+|consoleAccessDisabled|Booliano|Se o outro usuário desconsiderará o uso do nome de usuário especial do >console>.|
+|shutDownDisabledWhileLoggedIn|Booliano|Se o item de menu desligar na janela de logon será desabilitado enquanto o usuário estiver conectado.|
+|restartDisabledWhileLoggedIn|Booliano|Se o item de menu reiniciar na janela de logon será desabilitado enquanto o usuário estiver conectado.|
+|powerOffDisabledWhileLoggedIn|Booliano|Se o item de menu desligar na janela de logon será desabilitado enquanto o usuário estiver conectado.|
+|logOutDisabledWhileLoggedIn|Booliano|Se o item de menu fazer logout na janela de logon será desabilitado enquanto o usuário estiver conectado.|
+|screenLockDisableImmediate|Booliano|Se as funções de bloqueio de tela imediata serão desabilitadas.|
 
 
 
@@ -74,7 +92,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 500
+Content-length: 1334
 
 {
   "@odata.type": "#microsoft.graph.macOSDeviceFeaturesConfiguration",
@@ -93,7 +111,31 @@ Content-length: 500
       "port": 4,
       "forceTls": true
     }
-  ]
+  ],
+  "autoLaunchItems": [
+    {
+      "@odata.type": "microsoft.graph.macOSLaunchItem",
+      "path": "Path value",
+      "hide": true
+    }
+  ],
+  "adminShowHostInfo": true,
+  "loginWindowText": "Login Window Text value",
+  "authorizedUsersListHidden": true,
+  "authorizedUsersListHideLocalUsers": true,
+  "authorizedUsersListHideMobileAccounts": true,
+  "authorizedUsersListIncludeNetworkUsers": true,
+  "authorizedUsersListHideAdminUsers": true,
+  "authorizedUsersListShowOtherManagedUsers": true,
+  "shutDownDisabled": true,
+  "restartDisabled": true,
+  "sleepDisabled": true,
+  "consoleAccessDisabled": true,
+  "shutDownDisabledWhileLoggedIn": true,
+  "restartDisabledWhileLoggedIn": true,
+  "powerOffDisabledWhileLoggedIn": true,
+  "logOutDisabledWhileLoggedIn": true,
+  "screenLockDisableImmediate": true
 }
 ```
 
@@ -102,7 +144,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 672
+Content-Length: 1506
 
 {
   "@odata.type": "#microsoft.graph.macOSDeviceFeaturesConfiguration",
@@ -124,9 +166,34 @@ Content-Length: 672
       "port": 4,
       "forceTls": true
     }
-  ]
+  ],
+  "autoLaunchItems": [
+    {
+      "@odata.type": "microsoft.graph.macOSLaunchItem",
+      "path": "Path value",
+      "hide": true
+    }
+  ],
+  "adminShowHostInfo": true,
+  "loginWindowText": "Login Window Text value",
+  "authorizedUsersListHidden": true,
+  "authorizedUsersListHideLocalUsers": true,
+  "authorizedUsersListHideMobileAccounts": true,
+  "authorizedUsersListIncludeNetworkUsers": true,
+  "authorizedUsersListHideAdminUsers": true,
+  "authorizedUsersListShowOtherManagedUsers": true,
+  "shutDownDisabled": true,
+  "restartDisabled": true,
+  "sleepDisabled": true,
+  "consoleAccessDisabled": true,
+  "shutDownDisabledWhileLoggedIn": true,
+  "restartDisabledWhileLoggedIn": true,
+  "powerOffDisabledWhileLoggedIn": true,
+  "logOutDisabledWhileLoggedIn": true,
+  "screenLockDisableImmediate": true
 }
 ```
+
 
 
 

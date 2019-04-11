@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos androidForWorkPkcsCert
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1ccad125433c3a8504f9b78272ee043a9c15ea5a
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 17e2f39028cf9744d912ce1eb3a33d75d31ab876
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30957784"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31803455"
 ---
 # <a name="list-androidforworkpkcscertificateprofiles"></a>Listar androidForWorkPkcsCertificateProfiles
 
@@ -90,15 +90,16 @@ Content-Length: 1278
           "objectIdentifier": "Object Identifier value"
         }
       ],
+      "subjectAlternativeNameType": "emailAddress",
       "certificationAuthority": "Certification Authority value",
       "certificationAuthorityName": "Certification Authority Name value",
       "certificateTemplateName": "Certificate Template Name value",
-      "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value",
-      "subjectAlternativeNameType": "emailAddress"
+      "subjectAlternativeNameFormatString": "Subject Alternative Name Format String value"
     }
   ]
 }
 ```
+
 
 
 

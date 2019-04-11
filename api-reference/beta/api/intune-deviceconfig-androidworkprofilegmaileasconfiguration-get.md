@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto androidWorkProfileGm
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 001c2b803ac0fae75a90b0a9557f669706425804
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 66d6cf7ed03b22531222e7d6931a32729dcb476b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30986030"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31803000"
 ---
 # <a name="get-androidworkprofilegmaileasconfiguration"></a>Obter androidWorkProfileGmailEasConfiguration
 
@@ -91,6 +91,7 @@ Content-Length: 720
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Uma classe que representa um aplicativo contido de um aplicativo do
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 68c7c8a18e3d22b983a232859f5d56d73a79cc87
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ff3f5b074d0a88c93fadd52c48059b73e6a82506
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30157922"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31804351"
 ---
 # <a name="windowsuniversalappxcontainedapp-resource-type"></a>tipo de recurso windowsUniversalAppXContainedApp
 
@@ -35,10 +35,10 @@ Herda de [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade. Herdado de [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|
-|appUserModelId|String|A ID do modelo do usuário do aplicativo do aplicativo contido de um aplicativo do WindowsUniversalAppX.|
+|appUserModelId|Cadeia de caracteres|A ID do modelo do usuário do aplicativo do aplicativo contido de um aplicativo do WindowsUniversalAppX.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -55,6 +55,7 @@ Veja a seguir uma representação JSON do recurso.
   "appUserModelId": "String"
 }
 ```
+
 
 
 

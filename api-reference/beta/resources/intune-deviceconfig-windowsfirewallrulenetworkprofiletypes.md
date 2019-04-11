@@ -4,12 +4,12 @@ description: Sinalizadores que representam quais tipos de perfil de rede se apli
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9aad571c5563427343ebd6686073f98b7ac703cb
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: 3cd5c501c50f74e53c0c00fcef2d3bb8a85cedf7
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30631427"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31804645"
 ---
 # <a name="windowsfirewallrulenetworkprofiletypes-enum-type"></a>tipo de enumeração windowsFirewallRuleNetworkProfileTypes
 
@@ -23,9 +23,10 @@ Sinalizadores que representam quais tipos de perfil de rede se aplicam a uma reg
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Nenhum sinalizador definido.|
-|domain|1|O perfil para redes que estão conectadas a domínios.|
+|domínio|1|O perfil para redes que estão conectadas a domínios.|
 |privada|duas|O perfil para redes privadas.|
 |public|quatro|O perfil para redes públicas.|
+
 
 
 

@@ -4,12 +4,12 @@ description: Opções de uso de PIN do Windows Hello para empresas
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a2a066728d28e12f8be9bd09a63005c88e391043
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 55a0aec3bbd27ac1b557285cb7ae2f722b8d72d1
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30169430"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31804540"
 ---
 # <a name="windowshelloforbusinesspinusage-enum-type"></a>tipo de enumeração windowsHelloForBusinessPinUsage
 
@@ -25,6 +25,7 @@ Opções de uso de PIN do Windows Hello para empresas
 |autorizado|,0|Ainda não documentado|
 |obrigatório|1|Ainda não documentado|
 |Não|duas|Ainda não documentado|
+
 
 
 

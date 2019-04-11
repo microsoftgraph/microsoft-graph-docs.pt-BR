@@ -4,12 +4,12 @@ description: Contém propriedades do resumo da instalação de um livro para um 
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 52d08d00bfbc26e0b72ddf53404eff8d55bb72b9
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 4eec97cd82224af5e74577a8d9ed9f378534263a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30151237"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31804393"
 ---
 # <a name="ebookinstallsummary-resource-type"></a>Tipo de recurso eBookInstallSummary
 
@@ -22,7 +22,7 @@ Contém propriedades do resumo da instalação de um livro para um dispositivo.
 ## <a name="methods"></a>Métodos
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
-|[Obter eBookInstallSummary](../api/intune-books-ebookinstallsummary-get.md)|[eBookInstallSummary](../resources/intune-books-ebookinstallsummary.md)|Ler propriedades e relações de objetos de [eBookInstallSummary](../resources/intune-books-ebookinstallsummary.md).|
+|[Get eBookInstallSummary](../api/intune-books-ebookinstallsummary-get.md)|[eBookInstallSummary](../resources/intune-books-ebookinstallsummary.md)|Ler propriedades e relações do objeto [eBookInstallSummary](../resources/intune-books-ebookinstallsummary.md).|
 |[Atualizar eBookInstallSummary](../api/intune-books-ebookinstallsummary-update.md)|[eBookInstallSummary](../resources/intune-books-ebookinstallsummary.md)|Atualizar as propriedades de um objeto de [eBookInstallSummary](../resources/intune-books-ebookinstallsummary.md).|
 
 ## <a name="properties"></a>Propriedades
@@ -37,7 +37,7 @@ Contém propriedades do resumo da instalação de um livro para um dispositivo.
 |notInstalledUserCount|Int32|Número de usuários que não instalaram este livro.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -59,6 +59,7 @@ Veja a seguir uma representação JSON do recurso.
   "notInstalledUserCount": 1024
 }
 ```
+
 
 
 

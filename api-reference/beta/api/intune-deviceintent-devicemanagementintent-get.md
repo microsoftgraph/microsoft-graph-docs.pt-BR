@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto deviceManagementInte
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d9669a260d7fb757438228119e39914b511d06e2
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 1e3743e164e312337bae39ac9264f384bd8636b3
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31524355"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31804848"
 ---
 # <a name="get-devicemanagementintent"></a>Obter deviceManagementIntent
 
@@ -79,8 +79,6 @@ Content-Length: 350
   }
 }
 ```
-
-
 
 
 

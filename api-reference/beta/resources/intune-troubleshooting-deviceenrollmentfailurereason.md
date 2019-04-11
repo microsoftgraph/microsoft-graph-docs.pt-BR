@@ -4,12 +4,12 @@ description: Categorias de falha de nível superior para registro.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f03ce73f1d6f8b5edc6b3e3b661f9a7ba79407bb
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: a0921098dcaa4905b0b7eaf5722acf4edac8419f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30163851"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31804792"
 ---
 # <a name="deviceenrollmentfailurereason-enum-type"></a>tipo de enumeração deviceEnrollmentFailureReason
 
@@ -22,7 +22,7 @@ Categorias de falha de nível superior para registro.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|unknown|,0|O valor padrão, motivo da falha é desconhecido.|
+|desconhecido|,0|O valor padrão, motivo da falha é desconhecido.|
 |autentica|1|Falha de autenticação|
 |nesse|duas|A chamada foi autenticada, mas não está autorizada a se inscrever.|
 |accountValidation|3D|Falha ao validar a conta para registro. (Conta bloqueada, registro não habilitado)|
@@ -34,7 +34,6 @@ Categorias de falha de nível superior para registro.
 |enrollmentRestrictionsEnforced|241|As restrições de registro configuradas pelo administrador bloquearam esse registro.|
 |clientDisconnected|254|O cliente esgotou o tempo limite ou o registro foi anulado pelo enduser.|
 |Membrouserabandonment|11|O registro foi abandonado pelo enduser. (Enduser Started onboard, mas não conseguiu concluí-la na forma oportuna)|
-
 
 
 

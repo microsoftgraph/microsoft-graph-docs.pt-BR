@@ -4,12 +4,12 @@ description: Listar propriedades e relações dos objetos androidForWorkEnrollme
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 557e2ef283f4e7c85d50a9eed367b95314508510
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 43b657a9e3512b8dec4fa6bce0ad92dfb3165f6c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30970769"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31803483"
 ---
 # <a name="list-androidforworkenrollmentprofiles"></a>Listar androidForWorkEnrollmentProfiles
 
@@ -87,6 +87,7 @@ Content-Length: 765
   ]
 }
 ```
+
 
 
 

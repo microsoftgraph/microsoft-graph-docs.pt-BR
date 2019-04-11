@@ -4,12 +4,12 @@ description: Definição de cadeia de caracteres para configurações de OMA.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5ba2da95a8a60ef0cf6d2ba03b024c5200e0c5a8
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: a22c69270126349d8d1d4afca4555abd18768aa3
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30162045"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31803028"
 ---
 # <a name="omasettingstring-resource-type"></a>Tipo de recurso omaSettingString
 
@@ -26,12 +26,12 @@ Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |displayName|String|Nome de exibição. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|descrição|String|Descrição. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|omaUri|String|OMA. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|valor|Cadeia de caracteres|Valor.|
+|description|String|Descrição. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|omaUri|Cadeia de caracteres|OMA. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|value|Cadeia de caracteres|Valor.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -49,6 +49,7 @@ Veja a seguir uma representação JSON do recurso.
   "value": "String"
 }
 ```
+
 
 
 
