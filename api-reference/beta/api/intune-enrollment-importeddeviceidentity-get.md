@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto importedDeviceIdenti
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b3a7907ac172bb710257322002648bf0946cbbcc
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 9b2ffd7def611165294ff21a95e629c6b3698a58
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30981962"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31805604"
 ---
 # <a name="get-importeddeviceidentity"></a>Obter importedDeviceIdentity
 
@@ -82,6 +82,7 @@ Content-Length: 543
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Exclui activeDirectoryWindowsAutopilotDeploymentProfile.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a0e14adc6b2b492733363370ba0d13e5720d307a
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 998faccfebf41b38df8961d6cc22de421d234da1
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30978161"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806458"
 ---
 # <a name="delete-activedirectorywindowsautopilotdeploymentprofile"></a>Excluir activeDirectoryWindowsAutopilotDeploymentProfile
 
@@ -64,6 +64,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

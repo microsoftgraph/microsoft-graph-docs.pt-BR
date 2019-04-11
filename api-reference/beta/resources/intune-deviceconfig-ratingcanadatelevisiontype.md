@@ -4,12 +4,12 @@ description: Rótulos de classificação de conteúdo de TV no Canadá
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bab12884cd87c18c5c303a075fc26033f188ffea
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 7fa3989f4fe1324f404a16603f357a81136e1d9e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30144517"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806969"
 ---
 # <a name="ratingcanadatelevisiontype-enum-type"></a>tipo de enumeração ratingCanadaTelevisionType
 
@@ -24,12 +24,13 @@ Rótulos de classificação de conteúdo de TV no Canadá
 |:---|:---|:---|
 |Permitido|,0|Valor padrão, permitir todos os programas de TV|
 |Bloqueado|1|Não permitir que qualquer TV mostre conteúdo|
-|children|duas|A classificação C é adequada para crianças com idade de 2 a 7 anos|
+|filhos|duas|A classificação C é adequada para crianças com idade de 2 a 7 anos|
 |childrenAbove8|3D|A classificação do C8 é adequada para crianças com 8 anos|
 |geral|quatro|A classificação G é adequada para a audiência geral|
 |parentalGuidance|0,5|PG, orientação dos pais|
 |agesAbove14|6|A classificação de 14 anos destina-se a visualizadores com 14 anos ou mais|
 |agesAbove18|178|A classificação de 18 anos destina-se a visualizadores com 18 anos ou mais|
+
 
 
 

@@ -4,12 +4,12 @@ description: Definição de regra DNS de VPN.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 545c0dd8a84f19888452261e350a9b347061595c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: db3be739e6ee1e7c5ebe2a5bd33af648488df54f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30158503"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31805849"
 ---
 # <a name="vpndnsrule-resource-type"></a>tipo de recurso vpnDnsRule
 
@@ -22,14 +22,14 @@ Definição de regra DNS de VPN.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|name|String|Tdomínio.|
-|servidores|Coleção de cadeias de caracteres|Servidores.|
-|proxyServerUri|String|URI do servidor proxy.|
+|nome|String|Tdomínio.|
+|servidores|Coleção String|Servidores.|
+|proxyServerUri|Cadeia de caracteres|URI do servidor proxy.|
 |Gatilho autoTrigger|Booliano|Conectar-se automaticamente à VPN quando o dispositivo se conectar a este domínio: padrão false.|
 |persistente|Booliano|Manter esta regra ativa mesmo quando a VPN não estiver conectada: false padrão|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -50,6 +50,7 @@ Veja a seguir uma representação JSON do recurso.
   "persistent": true
 }
 ```
+
 
 
 

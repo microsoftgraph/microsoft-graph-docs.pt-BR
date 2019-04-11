@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto deviceManagementIntentUserSta
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7a4ed99765d325930cae186a9c7b6548e0a477a8
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 1661770f444fe7479d47858ce6e8ad394d3ed98e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522829"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31805709"
 ---
 # <a name="update-devicemanagementintentuserstatesummary"></a>Atualizar deviceManagementIntentUserStateSummary
 
@@ -98,8 +98,6 @@ Content-Length: 247
   "successCount": 12
 }
 ```
-
-
 
 
 

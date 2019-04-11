@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto androidLobApp.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b2506bb62f4b932dbd3c9e4f3fc63a4d2bf2ba7e
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 7e239b3c2bb0638c547bdee80829f9a53de9be07
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30989313"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807662"
 ---
 # <a name="get-androidlobapp"></a>Acessar androidLobApp
 
@@ -67,7 +67,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1675
+Content-Length: 1704
 
 {
   "value": {
@@ -95,6 +95,7 @@ Content-Length: 1675
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
     ],
+    "dependentAppCount": 1,
     "committedContentVersion": "Committed Content Version value",
     "fileName": "File Name value",
     "size": 4,
@@ -123,6 +124,7 @@ Content-Length: 1675
   }
 }
 ```
+
 
 
 

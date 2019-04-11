@@ -4,12 +4,12 @@ description: Estado de conformidade da linha de base de segurança
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7c5503c957b54393b66ecfb5ec487cfe059d1d4f
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: bec545efcc5c2558f0a882781a475444a644a940
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31524474"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807529"
 ---
 # <a name="securitybaselinecompliancestate-enum-type"></a>tipo de enumeração securityBaselineComplianceState
 
@@ -28,8 +28,6 @@ Estado de conformidade da linha de base de segurança
 |Não seguro|3D|Estado não seguro|
 |erro|quatro|Estado de erro|
 |apresentar|0,5|Estado de conflito|
-
-
 
 
 

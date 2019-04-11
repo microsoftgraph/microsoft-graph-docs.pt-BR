@@ -4,12 +4,12 @@ description: Servidor proxy VPN.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0b8a452cdde7c4c360107a67396d8f5ce49d6eb1
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c711f02dc0b4f7e44ff1bd54669ed9befb73e42a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30145273"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807641"
 ---
 # <a name="vpnproxyserver-resource-type"></a>tipo de recurso vpnProxyServer
 
@@ -22,12 +22,12 @@ Servidor proxy VPN.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|automaticConfigurationScriptUrl|String|URL do script de configuração automática do proxy.|
+|automaticConfigurationScriptUrl|Cadeia de caracteres|URL do script de configuração automática do proxy.|
 |address|Cadeia de caracteres|Enfrentar.|
-|porta|Int32|Propor. Valores válidos de 0 a 65535|
+|propor|Int32|Propor. Valores válidos de 0 a 65535|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -44,6 +44,7 @@ Veja a seguir uma representação JSON do recurso.
   "port": 1024
 }
 ```
+
 
 
 

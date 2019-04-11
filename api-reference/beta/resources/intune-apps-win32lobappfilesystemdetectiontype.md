@@ -4,12 +4,12 @@ description: Contém todo o tipo de detecção de sistema de arquivos com suport
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fc62005b02c30902937035199faffe663e232f4a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 08783d51d6d54b0ccf2cf6d7077185e9e1c286fb
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30163494"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31804960"
 ---
 # <a name="win32lobappfilesystemdetectiontype-enum-type"></a>tipo de enumeração win32LobAppFileSystemDetectionType
 
@@ -26,8 +26,10 @@ Contém todo o tipo de detecção de sistema de arquivos com suporte.
 |houver|1|Se o arquivo ou a pasta especificada existe.|
 |modifiedDate|duas|Data da última modificação.|
 |createdDate|3D|Data de criação.|
-|version|quatro|Tipo de valor de versão.|
+|versão|quatro|Tipo de valor de versão.|
 |sizeInMB|0,5|Tipo de detecção de tamanho.|
+|doesNotExist|6|O arquivo ou a pasta especificada não existe.|
+
 
 
 

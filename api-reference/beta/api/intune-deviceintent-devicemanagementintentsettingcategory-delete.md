@@ -4,12 +4,12 @@ description: Exclui deviceManagementIntentSettingCategory.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 475dac0892fa5d202d4648a17e210ce3930716f6
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 86d274158a521e66d87af47a60bfe94b27b287ee
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31523683"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806899"
 ---
 # <a name="delete-devicemanagementintentsettingcategory"></a>Excluir deviceManagementIntentSettingCategory
 
@@ -62,8 +62,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

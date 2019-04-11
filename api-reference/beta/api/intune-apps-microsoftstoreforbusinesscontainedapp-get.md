@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto microsoftStoreForBus
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2919b1d22e49dadb22f8571c680b5acf4732efd0
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 2b5a9542c4a22dfab6de425d4bf685f1790b04fd
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30977391"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806864"
 ---
 # <a name="get-microsoftstoreforbusinesscontainedapp"></a>Obter microsoftStoreForBusinessContainedApp
 
@@ -77,6 +77,7 @@ Content-Length: 201
   }
 }
 ```
+
 
 
 

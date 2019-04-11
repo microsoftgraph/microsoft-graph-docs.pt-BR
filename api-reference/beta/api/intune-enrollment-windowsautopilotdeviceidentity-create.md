@@ -4,12 +4,12 @@ description: Criar um novo objeto windowsAutopilotDeviceIdentity.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1165fbd0ce159cc1c8717df2ed64431aac26f722
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: c1fe0f7195007eaf937b1d6d82b20f1978136559
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30958442"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31805772"
 ---
 # <a name="create-windowsautopilotdeviceidentity"></a>Criar windowsAutopilotDeviceIdentity
 
@@ -55,21 +55,22 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windowsA
 |deploymentProfileAssignmentStatus|[windowsAutopilotProfileAssignmentStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentstatus.md)|Status de atribuição de perfil do dispositivo do Windows AutoPilot. Os valores possíveis são: `unknown`, `assignedInSync`, `assignedOutOfSync`, `assignedUnkownSyncState`, `notAssigned`, `pending`, `failed`.|
 |deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|Atribuição de perfil status detalhado do dispositivo do Windows AutoPilot. Os valores possíveis são: `none` e `hardwareRequirementsNotMet`.|
 |deploymentProfileAssignedDateTime|DateTimeOffset|Hora do conjunto de perfis do dispositivo do Windows AutoPilot.|
-|orderIdentifier|String|Identificador de pedidos do dispositivo do Windows AutoPilot.|
-|purchaseOrderIdentifier|String|Identificador de ordem de compra do dispositivo do Windows AutoPilot.|
+|orderIdentifier|Cadeia de caracteres|Identificador de pedidos do dispositivo do Windows AutoPilot-preTerido|
+|groupTag|Cadeia de caracteres|Marca de grupo do dispositivo do Windows AutoPilot.|
+|purchaseOrderIdentifier|Cadeia de caracteres|Identificador de ordem de compra do dispositivo do Windows AutoPilot.|
 |serialNumber|String|Número de série do dispositivo do Windows AutoPilot.|
 |productKey|Cadeia de caracteres|Chave do produto (Product Key) do dispositivo do Windows AutoPilot.|
-|fabricante|String|Fabricante OEM do dispositivo do Windows AutoPilot.|
-|modelo|String|Nome do modelo do dispositivo do Windows AutoPilot.|
+|fabricante|Cadeia de caracteres|Fabricante OEM do dispositivo do Windows AutoPilot.|
+|modelo|Cadeia de caracteres|Nome do modelo do dispositivo do Windows AutoPilot.|
 |enrollmentid|[enrollmentid](../resources/intune-enrollment-enrollmentstate.md)|Estado de registro do Intune do dispositivo do Windows AutoPilot. Os valores possíveis são: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |lastContactedDateTime|DateTimeOffset|Data e hora do último contato do Intune para o dispositivo do Windows AutoPilot.|
-|addressableUserName|String|Nome de usuário endereçável.|
+|addressableUserName|Cadeia de caracteres|Nome de usuário endereçável.|
 |userPrincipalName|String|Nome principal do usuário.|
 |resourceName|Cadeia de caracteres|Nome do recurso.|
-|skuNumber|String|Número de SKU|
-|systemFamily|String|Família de sistema|
-|azureActiveDirectoryDeviceId|String|ID de dispositivo do AAD|
-|managedDeviceId|String|ID do dispositivo gerenciado|
+|skuNumber|Cadeia de caracteres|Número de SKU|
+|systemFamily|Cadeia de caracteres|Família de sistema|
+|azureActiveDirectoryDeviceId|Cadeia de caracteres|ID de dispositivo do AAD|
+|managedDeviceId|Cadeia de caracteres|ID do dispositivo gerenciado|
 
 
 
@@ -83,7 +84,7 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeviceIdentities
 Content-type: application/json
-Content-length: 1001
+Content-length: 1035
 
 {
   "@odata.type": "#microsoft.graph.windowsAutopilotDeviceIdentity",
@@ -91,6 +92,7 @@ Content-length: 1001
   "deploymentProfileAssignmentDetailedStatus": "hardwareRequirementsNotMet",
   "deploymentProfileAssignedDateTime": "2016-12-31T23:58:26.2447023-08:00",
   "orderIdentifier": "Order Identifier value",
+  "groupTag": "Group Tag value",
   "purchaseOrderIdentifier": "Purchase Order Identifier value",
   "serialNumber": "Serial Number value",
   "productKey": "Product Key value",
@@ -113,7 +115,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1050
+Content-Length: 1084
 
 {
   "@odata.type": "#microsoft.graph.windowsAutopilotDeviceIdentity",
@@ -122,6 +124,7 @@ Content-Length: 1050
   "deploymentProfileAssignmentDetailedStatus": "hardwareRequirementsNotMet",
   "deploymentProfileAssignedDateTime": "2016-12-31T23:58:26.2447023-08:00",
   "orderIdentifier": "Order Identifier value",
+  "groupTag": "Group Tag value",
   "purchaseOrderIdentifier": "Purchase Order Identifier value",
   "serialNumber": "Serial Number value",
   "productKey": "Product Key value",
@@ -138,6 +141,7 @@ Content-Length: 1050
   "managedDeviceId": "Managed Device Id value"
 }
 ```
+
 
 
 

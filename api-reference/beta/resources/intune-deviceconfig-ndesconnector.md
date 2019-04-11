@@ -4,12 +4,12 @@ description: Entidade que representa um conector NDES local.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 71a37cc86e72ba48a32988c8cdd034874e490a8c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 3781827d93f1e646becc2ee47de57cbba82dfc63
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30146926"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806661"
 ---
 # <a name="ndesconnector-resource-type"></a>tipo de recurso ndesConnector
 
@@ -37,7 +37,7 @@ Entidade que representa um conector NDES local.
 |displayName|String|O nome amigável do conector NDES.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -56,6 +56,7 @@ Veja a seguir uma representação JSON do recurso.
   "displayName": "String"
 }
 ```
+
 
 
 

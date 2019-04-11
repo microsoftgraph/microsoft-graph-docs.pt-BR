@@ -4,12 +4,12 @@ description: Direções de tráfego de regra de firewall.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 327ad851e56e6765ead3c47e45b863bae3adb3e7
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: dbde291788bb0f68f53dae57352e4942d1358fcf
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30631457"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31805765"
 ---
 # <a name="windowsfirewallruletrafficdirectiontype-enum-type"></a>tipo de enumeração windowsFirewallRuleTrafficDirectionType
 
@@ -25,6 +25,7 @@ Direções de tráfego de regra de firewall.
 |notConfigured|,0|Não configurado.|
 |bota|1|A regra se aplica ao tráfego de saída.|
 |no|duas|A regra se aplica ao tráfego de entrada.|
+
 
 
 

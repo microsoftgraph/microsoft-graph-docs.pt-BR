@@ -4,12 +4,12 @@ description: A classe base de um tipo de aplicativo
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4cccd1b5e7ec7ca16aeb76b87fc31d90e92e7dcd
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: 89f309b53e44b0f2843145dd7c0f4d3ffa6d7f98
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30572079"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31805212"
 ---
 # <a name="windowskioskdesktopapp-resource-type"></a>tipo de recurso Complexowindowskioskdesktopapp
 
@@ -28,10 +28,10 @@ Herda de [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappb
 |Propriedadesstartlayouttilesize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|O tamanho do bloco do aplicativo para o layout inicial herdado de [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md). Os valores possíveis são: `hidden`, `small`, `medium`, `wide`, `large`.|
 |nome|String|Representa o nome amigável de um aplicativo herdado de [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|
 |appType|[windowsKioskAppType](../resources/intune-deviceconfig-windowskioskapptype.md)|O tipo de aplicativo herdado de [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md). Os valores possíveis são: `unknown`, `store`, `desktop`, `aumId`.|
-|autoLançamento|Boolean|Permitir que o aplicativo seja iniciado automaticamente no modo de quiosque de vários aplicativos herdado de [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|
+|autoLançamento|Booliano|Permitir que o aplicativo seja iniciado automaticamente no modo de quiosque de vários aplicativos herdado de [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|
 |caminho|String|Definir o caminho de um aplicativo de área de trabalho|
-|Propriedadesdesktopapplicationid|String|Definir o Propriedadesdesktopapplicationid do aplicativo|
-|desktopApplicationLinkPath|String|Definir o DesktopApplicationLinkPath do aplicativo|
+|Propriedadesdesktopapplicationid|Cadeia de caracteres|Definir o Propriedadesdesktopapplicationid do aplicativo|
+|desktopApplicationLinkPath|Cadeia de caracteres|Definir o DesktopApplicationLinkPath do aplicativo|
 
 ## <a name="relationships"></a>Relações
 Nenhuma
@@ -55,6 +55,7 @@ Veja a seguir uma representação JSON do recurso.
   "desktopApplicationLinkPath": "String"
 }
 ```
+
 
 
 

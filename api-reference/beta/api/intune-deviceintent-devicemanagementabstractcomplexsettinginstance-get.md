@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto deviceManagementAbst
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 04e9572f32ffcc6ffae226577bfdfa58ffb03f49
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: eb984cb76058fbb6dd8774ce177380e11569c521
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522759"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807242"
 ---
 # <a name="get-devicemanagementabstractcomplexsettinginstance"></a>Obter deviceManagementAbstractComplexSettingInstance
 
@@ -80,8 +80,6 @@ Content-Length: 294
   }
 }
 ```
-
-
 
 
 

@@ -4,12 +4,12 @@ description: Restrições de registro específicas de plataformas
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eecbc405fd56d21f7be1c7b9bccd5254db89c8d1
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e8ba3306c5a4af4dfbb8b97e4d4794b917ebbf64
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30140597"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806451"
 ---
 # <a name="deviceenrollmentplatformrestriction-resource-type"></a>Tipo de recurso deviceEnrollmentPlatformRestriction
 
@@ -24,11 +24,11 @@ Restrições de registro específicas de plataformas
 |:---|:---|:---|
 |platformBlocked|Booliano|Bloqueia o registro da plataforma|
 |personalDeviceEnrollmentBlocked|Booliano|Bloqueia o registro de dispositivos de sua propriedade|
-|osMinimumVersion|String|Versão do SO mínimo compatível|
+|osMinimumVersion|Cadeia de caracteres|Versão do SO mínimo compatível|
 |osMaximumVersion|Cadeia de caracteres|Versão do SO máximo compatível|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -46,6 +46,7 @@ Veja a seguir uma representação JSON do recurso.
   "osMaximumVersion": "String"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Tipo de conexão VPN da Apple.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 53ed413b05e29a10cebf151c718e55c75de702c4
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 9cbb3b3ba87a65d248da248bfe66abb426fdd764
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30155598"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806017"
 ---
 # <a name="applevpnconnectiontype-enum-type"></a>tipo de enumeração Enumeraçãoapplevpnconnectiontype
 
@@ -36,6 +36,7 @@ Tipo de conexão VPN da Apple.
 |f5Access2018|11|F5 Access 2018.|
 |citrixSso|3,6|Citrix SSO.|
 |paloAltoGlobalProtectV2|Treze|O Palo Alto Networks GlobalProtect v2.|
+
 
 
 

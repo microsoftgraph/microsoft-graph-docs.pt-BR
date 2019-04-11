@@ -1531,6 +1531,8 @@ items:
                     href: api/intune-apps-mobileapp-assign.md
                   - name: getTopMobileApps
                     href: api/intune-apps-mobileapp-gettopmobileapps.md
+                  - name: ação updateRelationships
+                    href: api/intune-apps-mobileapp-updaterelationships.md
               - name: Atribuição de aplicativos móveis
                 href: resources/intune-apps-mobileappassignment.md
                 items:
@@ -1591,6 +1593,21 @@ items:
                     href: api/intune-apps-mobileappcontentfile-renewupload.md
               - name: Estado de carregamento do arquivo de conteúdo do aplicativo móvel
                 href: resources/intune-apps-mobileappcontentfileuploadstate.md
+              - name: Tipo de dependecy do aplicativo móvel
+                href: resources/intune-apps-mobileappdependecytype.md
+              - name: Dependência do aplicativo móvel
+                href: resources/intune-apps-mobileappdependency.md
+                items:
+                  - name: Listar
+                    href: api/intune-apps-mobileappdependency-list.md
+                  - name: Obter
+                    href: api/intune-apps-mobileappdependency-get.md
+                  - name: Criar
+                    href: api/intune-apps-mobileappdependency-create.md
+                  - name: Excluir
+                    href: api/intune-apps-mobileappdependency-delete.md
+                  - name: Atualizar
+                    href: api/intune-apps-mobileappdependency-update.md
               - name: Status de instalação do aplicativo móvel
                 href: resources/intune-apps-mobileappinstallstatus.md
                 items:
@@ -1626,6 +1643,15 @@ items:
                     href: api/intune-apps-mobileappprovisioningconfiggroupassignment-update.md
               - name: Estado de publicação do aplicativo móvel
                 href: resources/intune-apps-mobileapppublishingstate.md
+              - name: Relação do aplicativo móvel
+                href: resources/intune-apps-mobileapprelationship.md
+                items:
+                  - name: Listar
+                    href: api/intune-apps-mobileapprelationship-list.md
+                  - name: Obter
+                    href: api/intune-apps-mobileapprelationship-get.md
+              - name: Estado da relação do aplicativo móvel
+                href: resources/intune-apps-mobileapprelationshipstate.md
               - name: Aplicativo contido móvel
                 href: resources/intune-apps-mobilecontainedapp.md
                 items:
@@ -1767,6 +1793,8 @@ items:
                 href: resources/intune-apps-win32lobappfilesystemdetection.md
               - name: Tipo de detecção de sistema do arquivo do aplicativo LOB do Win32
                 href: resources/intune-apps-win32lobappfilesystemdetectiontype.md
+              - name: Requisitos do sistema de arquivos do aplicativo LOB Win32
+                href: resources/intune-apps-win32lobappfilesystemrequirement.md
               - name: Experiência de instalação do aplicativo LOB do Win32
                 href: resources/intune-apps-win32lobappinstallexperience.md
               - name: Informações de msi do aplicativo LOB do Win32
@@ -1777,12 +1805,20 @@ items:
                 href: resources/intune-apps-win32lobappnotification.md
               - name: Detecção de script powershell do aplicativo LOB do Win32
                 href: resources/intune-apps-win32lobapppowershellscriptdetection.md
+              - name: Tipo de detecção de script do aplicativo LOB Win32 do Shell de energia
+                href: resources/intune-apps-win32lobapppowershellscriptdetectiontype.md
+              - name: Requisito de script do Shell de energia do aplicativo LOB Win32
+                href: resources/intune-apps-win32lobapppowershellscriptrequirement.md
               - name: Detecção de código de produto do aplicativo LOB do Win32
                 href: resources/intune-apps-win32lobappproductcodedetection.md
               - name: Detecção de registro de aplicativo LOB do Win32
                 href: resources/intune-apps-win32lobappregistrydetection.md
               - name: Tipo de detecção de registro de aplicativo LOB do Win32
                 href: resources/intune-apps-win32lobappregistrydetectiontype.md
+              - name: Requisito do registro do aplicativo LOB Win32
+                href: resources/intune-apps-win32lobappregistryrequirement.md
+              - name: Requisito do aplicativo LOB do Win32
+                href: resources/intune-apps-win32lobapprequirement.md
               - name: Código de retorno de aplicativo LOB do Win32
                 href: resources/intune-apps-win32lobappreturncode.md
               - name: Tipo de código de retorno de aplicativo LOB do Win32
@@ -2191,6 +2227,10 @@ items:
                     href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-delete.md
                   - name: Atualizar
                     href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-update.md
+                  - name: ação de importação
+                    href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-import.md
+                  - name: ação de importação
+                    href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-import.md
               - name: Status de importação da identidade de dispositivo importada do windows autopilot
                 href: resources/intune-enrollment-importedwindowsautopilotdeviceidentityimportstatus.md
               - name: Estado de identidade de dispositivo importado do windows autopilot
@@ -2348,6 +2388,19 @@ items:
                 href: resources/intune-deviceconfig-androiddeviceownerappautoupdatepolicytype.md
               - name: Modo conectado da bateria do proprietário do dispositivo Android
                 href: resources/intune-deviceconfig-androiddeviceownerbatterypluggedmode.md
+              - name: Política de conformidade do proprietário do dispositivo Android
+                href: resources/intune-deviceconfig-androiddeviceownercompliancepolicy.md
+                items:
+                  - name: Listar
+                    href: api/intune-deviceconfig-androiddeviceownercompliancepolicy-list.md
+                  - name: Obter
+                    href: api/intune-deviceconfig-androiddeviceownercompliancepolicy-get.md
+                  - name: Criar
+                    href: api/intune-deviceconfig-androiddeviceownercompliancepolicy-create.md
+                  - name: Excluir
+                    href: api/intune-deviceconfig-androiddeviceownercompliancepolicy-delete.md
+                  - name: Atualizar
+                    href: api/intune-deviceconfig-androiddeviceownercompliancepolicy-update.md
               - name: Tipo de política de permissão de aplicativo padrão do proprietário do dispositivo Android
                 href: resources/intune-deviceconfig-androiddeviceownerdefaultapppermissionpolicytype.md
               - name: Configuração geral do dispositivo do proprietário do dispositivo Android
@@ -2363,6 +2416,8 @@ items:
                     href: api/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration-delete.md
                   - name: Atualizar
                     href: api/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration-update.md
+              - name: Modo de repositório de execução do proprietário do dispositivo Android
+                href: resources/intune-deviceconfig-androiddeviceownerplaystoremode.md
               - name: Tipo de senha obrigatória do proprietário do dispositivo Android
                 href: resources/intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md
               - name: Tipo de instalação de atualização do sistema do proprietário do dispositivo Android
@@ -2563,7 +2618,7 @@ items:
               - name: Configuração de VPN do Android for Work
                 href: resources/intune-deviceconfig-androidforworkvpnconfiguration.md
                 items:
-                  - name: Listar
+                  - name: Lista
                     href: api/intune-deviceconfig-androidforworkvpnconfiguration-list.md
                   - name: Obter
                     href: api/intune-deviceconfig-androidforworkvpnconfiguration-get.md
@@ -2619,7 +2674,7 @@ items:
               - name: Configuração de OMA CP do Android
                 href: resources/intune-deviceconfig-androidomacpconfiguration.md
                 items:
-                  - name: Lista
+                  - name: Listar
                     href: api/intune-deviceconfig-androidomacpconfiguration-list.md
                   - name: Obter
                     href: api/intune-deviceconfig-androidomacpconfiguration-get.md
@@ -3980,6 +4035,19 @@ items:
                     href: api/intune-deviceconfig-macosenterprisewificonfiguration-delete.md
                   - name: Atualizar
                     href: api/intune-deviceconfig-macosenterprisewificonfiguration-update.md
+              - name: configuração de extensões macOS
+                href: resources/intune-deviceconfig-macosextensionsconfiguration.md
+                items:
+                  - name: Listar
+                    href: api/intune-deviceconfig-macosextensionsconfiguration-list.md
+                  - name: Obter
+                    href: api/intune-deviceconfig-macosextensionsconfiguration-get.md
+                  - name: Criar
+                    href: api/intune-deviceconfig-macosextensionsconfiguration-create.md
+                  - name: Excluir
+                    href: api/intune-deviceconfig-macosextensionsconfiguration-delete.md
+                  - name: Atualizar
+                    href: api/intune-deviceconfig-macosextensionsconfiguration-update.md
               - name: Aplicativo de firewall do macOS
                 href: resources/intune-deviceconfig-macosfirewallapplication.md
               - name: Origens do aplicativo gatekeeper do macOS
@@ -4010,6 +4078,10 @@ items:
                     href: api/intune-deviceconfig-macosimportedpfxcertificateprofile-delete.md
                   - name: Atualizar
                     href: api/intune-deviceconfig-macosimportedpfxcertificateprofile-update.md
+              - name: extensão de kernel macOS
+                href: resources/intune-deviceconfig-macoskernelextension.md
+              - name: item de lançamento do macOS
+                href: resources/intune-deviceconfig-macoslaunchitem.md
               - name: Perfil de certificado do SCEP do macOS
                 href: resources/intune-deviceconfig-macosscepcertificateprofile.md
                 items:
@@ -6168,7 +6240,7 @@ items:
                     href: api/intune-mam-managedappprotection-list.md
                   - name: Obter
                     href: api/intune-mam-managedappprotection-get.md
-                  - name: ação targetApps
+                  - name: Ação targetApps
                     href: api/intune-mam-managedappprotection-targetapps.md
               - name: Registro de aplicativo gerenciado
                 href: resources/intune-mam-managedappregistration.md
@@ -8072,7 +8144,7 @@ items:
             items:
               - name: Listar blocos de anotações
                 href: api/onenote-list-notebooks.md
-              - name: Criar bloco de anotações
+              - name: Criar blocos de anotações
                 href: api/onenote-post-notebooks.md
               - name: Listar seções
                 href: api/onenote-list-sections.md

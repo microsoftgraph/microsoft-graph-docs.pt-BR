@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto ndesConnector.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ba6b5b735d6ad298825f940e5583188c3d854b96
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: b9c4dfa2a808b382d6178da7338b861bb6443168
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30958932"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806367"
 ---
 # <a name="get-ndesconnector"></a>Obter ndesConnector
 
@@ -77,6 +77,7 @@ Content-Length: 261
   }
 }
 ```
+
 
 
 

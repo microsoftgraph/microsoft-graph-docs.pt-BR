@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto groupPolicyDefinitionValue.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 34295191a0e0cf2e73b006ecd3b74269027d4bd8
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 5780357ef7e6720d01d043ae7b7aecc89195f0bb
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30961025"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807144"
 ---
 # <a name="update-grouppolicydefinitionvalue"></a>Atualizar groupPolicyDefinitionValue
 
@@ -94,6 +94,7 @@ Content-Length: 298
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
+
 
 
 

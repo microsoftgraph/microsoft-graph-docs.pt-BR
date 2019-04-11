@@ -4,12 +4,12 @@ description: Exclui androidForWorkWiFiConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 031e7184ddc46498236e10f63e73b521751472b8
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 1a115a921dcd5a6d5c26a65cce33a46eb544fcd1
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30976229"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31805919"
 ---
 # <a name="delete-androidforworkwificonfiguration"></a>Excluir androidForWorkWiFiConfiguration
 
@@ -64,6 +64,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

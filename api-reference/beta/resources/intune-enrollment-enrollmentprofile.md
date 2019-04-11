@@ -4,12 +4,12 @@ description: O recurso enrollmentProfile representa uma coleção de configuraç
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3d8947864611ac2c0d26256a5d739d41b86c383f
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: abc00f27ef65cdddfef30a06bef55a8fa44e488a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30151174"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31805520"
 ---
 # <a name="enrollmentprofile-resource-type"></a>tipo de recurso enrollmentProfile
 
@@ -27,23 +27,23 @@ O recurso enrollmentProfile representa uma coleção de configurações que deve
 |[Criar enrollmentProfile](../api/intune-enrollment-enrollmentprofile-create.md)|[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|Criar um novo objeto [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) .|
 |[Excluir enrollmentProfile](../api/intune-enrollment-enrollmentprofile-delete.md)|Nenhum|Exclui [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md).|
 |[Atualizar enrollmentProfile](../api/intune-enrollment-enrollmentprofile-update.md)|[enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|Atualiza as propriedades de um objeto [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) .|
-|[Ação setDefaultProfile](../api/intune-enrollment-enrollmentprofile-setdefaultprofile.md)|Nenhum|Ainda não documentado|
-|[função função exportmobileconfig](../api/intune-enrollment-enrollmentprofile-exportmobileconfig.md)|String|Exporta a configuração móvel|
-|[Ação updateDeviceProfileAssignment](../api/intune-enrollment-enrollmentprofile-updatedeviceprofileassignment.md)|Nenhum|Ainda não documentado|
+|[Ação setDefaultProfile](../api/intune-enrollment-enrollmentprofile-setdefaultprofile.md)|Nenhuma|Ainda não documentado|
+|[função função exportmobileconfig](../api/intune-enrollment-enrollmentprofile-exportmobileconfig.md)|Cadeia de caracteres|Exporta a configuração móvel|
+|[Ação updateDeviceProfileAssignment](../api/intune-enrollment-enrollmentprofile-updatedeviceprofileassignment.md)|Nenhuma|Ainda não documentado|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O GUID do objeto.|
-|displayName|String|Nome do perfil|
-|description|Cadeia de caracteres|Descrição do perfil|
+|id|Cadeia de caracteres|O GUID do objeto.|
+|displayName|Cadeia de caracteres|Nome do perfil|
+|description|String|Descrição do perfil|
 |requiresUserAuthentication|Booliano|Indica se o perfil requer autenticação do usuário|
-|configurationEndpointUrl|String|URL de ponto de extremidade de configuração a ser usada para registro|
+|configurationEndpointUrl|Cadeia de caracteres|URL de ponto de extremidade de configuração a ser usada para registro|
 |Enableauthenticationviacompanyportal foi adicionada|Booliano|Indica a autenticação com o assistente de configuração da Apple em vez do portal da empresa.|
 |requireCompanyPortalOnSetupAssistantEnrolledDevices|Booliano|Indica que o portal da empresa é necessário no assistente de configuração dispositivos registrados|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -65,6 +65,7 @@ Veja a seguir uma representação JSON do recurso.
   "requireCompanyPortalOnSetupAssistantEnrolledDevices": true
 }
 ```
+
 
 
 

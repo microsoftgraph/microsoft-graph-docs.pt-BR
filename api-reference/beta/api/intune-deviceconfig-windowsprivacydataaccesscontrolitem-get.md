@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto windowsPrivacyDataAc
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1620c645c55f3802923b89db4728ccb4af8c3487
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 5c63987c06263f4702163a3e0ce10a090f9a464b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30960479"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31805247"
 ---
 # <a name="get-windowsprivacydataaccesscontrolitem"></a>Obter windowsPrivacyDataAccessControlItem
 
@@ -78,6 +78,7 @@ Content-Length: 330
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Exclui macOsVppApp.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d0067c4170d9633a56aa0e5522a635b48b00f2c1
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: c869123973237676c98909255bbaa894fdcd2f12
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30982956"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31805079"
 ---
 # <a name="delete-macosvppapp"></a>Excluir macOsVppApp
 
@@ -64,6 +64,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

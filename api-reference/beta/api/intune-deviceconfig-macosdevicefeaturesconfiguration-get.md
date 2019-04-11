@@ -4,12 +4,12 @@ description: Ler propriedades e relações do objeto macOSDeviceFeaturesConfigur
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 291b4dece69f2a55b2916fa9d81d22f6aeb9151a
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 304d365248b05dc1cc0b823905f8f9d189eb3478
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30966863"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31805380"
 ---
 # <a name="get-macosdevicefeaturesconfiguration"></a>Obter macOSDeviceFeaturesConfiguration
 
@@ -67,7 +67,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 731
+Content-Length: 1613
 
 {
   "value": {
@@ -90,10 +90,35 @@ Content-Length: 731
         "port": 4,
         "forceTls": true
       }
-    ]
+    ],
+    "autoLaunchItems": [
+      {
+        "@odata.type": "microsoft.graph.macOSLaunchItem",
+        "path": "Path value",
+        "hide": true
+      }
+    ],
+    "adminShowHostInfo": true,
+    "loginWindowText": "Login Window Text value",
+    "authorizedUsersListHidden": true,
+    "authorizedUsersListHideLocalUsers": true,
+    "authorizedUsersListHideMobileAccounts": true,
+    "authorizedUsersListIncludeNetworkUsers": true,
+    "authorizedUsersListHideAdminUsers": true,
+    "authorizedUsersListShowOtherManagedUsers": true,
+    "shutDownDisabled": true,
+    "restartDisabled": true,
+    "sleepDisabled": true,
+    "consoleAccessDisabled": true,
+    "shutDownDisabledWhileLoggedIn": true,
+    "restartDisabledWhileLoggedIn": true,
+    "powerOffDisabledWhileLoggedIn": true,
+    "logOutDisabledWhileLoggedIn": true,
+    "screenLockDisableImmediate": true
   }
 }
 ```
+
 
 
 

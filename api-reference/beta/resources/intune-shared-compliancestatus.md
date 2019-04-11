@@ -4,12 +4,12 @@ description: Ainda não documentado
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 77c10919e67e5b05028fbd88ba1fe82aa1fba5a0
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b71b74c7819b108f5f1a68406614828e814104d8
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30168093"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806836"
 ---
 # <a name="compliancestatus-enum-type"></a>tipo de enumeração complianceStatus
 
@@ -22,7 +22,7 @@ Ainda não documentado
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|unknown|,0|Ainda não documentado|
+|desconhecido|,0|Ainda não documentado|
 |Não aplicável|1|Ainda não documentado|
 |com|duas|Ainda não documentado|
 |corrigidos|3D|Ainda não documentado|
@@ -30,6 +30,7 @@ Ainda não documentado
 |erro|0,5|Ainda não documentado|
 |apresentar|6|Ainda não documentado|
 |Não atribuído|178|Ainda não documentado|
+
 
 
 

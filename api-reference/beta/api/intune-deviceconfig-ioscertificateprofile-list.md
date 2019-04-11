@@ -4,12 +4,12 @@ description: Listar propriedades e relações dos objetos iosCertificateProfile.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4c1e5194150e3e687d78784003d82691388fd01a
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 979acf0c0384392ce97492fe6a71a745e361e214
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30964672"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806276"
 ---
 # <a name="list-ioscertificateprofiles"></a>Listar iosCertificateProfiles
 
@@ -83,6 +83,7 @@ Content-Length: 500
   ]
 }
 ```
+
 
 
 

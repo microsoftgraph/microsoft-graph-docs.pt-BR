@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos androidDeviceOwnerGene
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1532840c5c30646648be8b887513814c4f4ec2c9
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 38bdfd3c9db2b5b0a7a4f3e29fc908fd2f2b08c4
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30968564"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31805674"
 ---
 # <a name="list-androiddeviceownergeneraldeviceconfigurations"></a>Listar androidDeviceOwnerGeneralDeviceConfigurations
 
@@ -63,7 +63,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3014
+Content-Length: 3438
 
 {
   "value": [
@@ -106,6 +106,8 @@ Content-Length: 3014
       "kioskModeWallpaperUrl": "https://example.com/kioskModeWallpaperUrl/",
       "kioskModeExitCode": "Kiosk Mode Exit Code value",
       "kioskModeVirtualHomeButtonEnabled": true,
+      "kioskModeBluetoothConfigurationEnabled": true,
+      "kioskModeWiFiConfigurationEnabled": true,
       "microphoneForceMute": true,
       "networkEscapeHatchAllowed": true,
       "nfcBlockOutgoingBeam": true,
@@ -115,10 +117,17 @@ Content-Length: 3014
       ],
       "passwordExpirationDays": 6,
       "passwordMinimumLength": 5,
+      "passwordMinimumLetterCharacters": 15,
+      "passwordMinimumLowerCaseCharacters": 2,
+      "passwordMinimumNonLetterCharacters": 2,
+      "passwordMinimumNumericCharacters": 0,
+      "passwordMinimumSymbolCharacters": 15,
+      "passwordMinimumUpperCaseCharacters": 2,
       "passwordMinutesOfInactivityBeforeScreenTimeout": 14,
       "passwordPreviousPasswordCountToBlock": 4,
       "passwordRequiredType": "required",
       "passwordSignInFailureCountBeforeFactoryReset": 12,
+      "playStoreMode": "allowList",
       "safeBootBlocked": true,
       "screenCaptureBlocked": true,
       "securityAllowDebuggingFeatures": true,
@@ -145,6 +154,7 @@ Content-Length: 3014
   ]
 }
 ```
+
 
 
 

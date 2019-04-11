@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto Androidenterprisewif
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7bb24f974207d070d8e3e4b61cbc801ef65e8d64
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: eba7572805ba93d47ef01274fe6c15be1577d56c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30983509"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31805450"
 ---
 # <a name="get-androidenterprisewificonfiguration"></a>Obter Androidenterprisewificonfiguration.
 
@@ -95,6 +95,7 @@ Content-Length: 998
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: b1e9fc7512c3778fc3cf54223769c8f6dbe0a017
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 360b8e9bdda139246a5418898f1db3962fefaea4
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172216"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806563"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Como proteger dados de aplicativos corporativos com o Microsoft Intune
 
@@ -82,8 +82,8 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Licença atribuída ao aplicativo do VPP do macOS](intune-apps-macosvppappassignedlicense.md)
 - [Configurações de atribuição do aplicativo VPP do macOS](intune-apps-macosvppappassignmentsettings.md)
 - [Resultado da ação de revogar licenças de aplicativo do VPP do macOS](intune-apps-macosvppapprevokelicensesactionresult.md)
-- [Aplicativo LOB do android gerenciado](intune-apps-managedandroidlobapp.md)
-- [Aplicativo da loja do android gerenciado](intune-apps-managedandroidstoreapp.md)
+- [Aplicativo LOB para Android gerenciado](intune-apps-managedandroidlobapp.md)
+- [Aplicativo da loja do Android gerenciado](intune-apps-managedandroidstoreapp.md)
 - [Aplicativo gerenciado](intune-apps-managedapp.md)
 - [Disponibilidade do aplicativo gerenciado](intune-apps-managedappavailability.md)
 - [Configuração do aplicativo de dispositivo móvel gerenciado](intune-apps-manageddevicemobileappconfiguration.md)
@@ -110,10 +110,14 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Conteúdo do aplicativo móvel](intune-apps-mobileappcontent.md)
 - [Arquivo de conteúdo do aplicativo móvel](intune-apps-mobileappcontentfile.md)
 - [Estado de carregamento do arquivo de conteúdo do aplicativo móvel](intune-apps-mobileappcontentfileuploadstate.md)
+- [Tipo de dependecy do aplicativo móvel](intune-apps-mobileappdependecytype.md)
+- [Dependência do aplicativo móvel](intune-apps-mobileappdependency.md)
 - [Status de instalação do aplicativo móvel](intune-apps-mobileappinstallstatus.md)
 - [Resumo de instalação do aplicativo móvel](intune-apps-mobileappinstallsummary.md)
 - [Atribuição de grupo de configuração de provisionamento do aplicativo móvel](intune-apps-mobileappprovisioningconfiggroupassignment.md)
 - [Estado de publicação do aplicativo móvel](intune-apps-mobileapppublishingstate.md)
+- [Relação do aplicativo móvel](intune-apps-mobileapprelationship.md)
+- [Estado da relação do aplicativo móvel](intune-apps-mobileapprelationshipstate.md)
 - [Aplicativo contido móvel](intune-apps-mobilecontainedapp.md)
 - [Aplicativo LOB móvel](intune-apps-mobilelobapp.md)
 - [Status de check-in de cliente do Office](intune-cirrus-officeclientcheckinstatus.md)
@@ -139,14 +143,19 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Operador de detecção de aplicativo LOB do Win32](intune-apps-win32lobappdetectionoperator.md)
 - [Detecção de sistema do arquivo do aplicativo LOB do Win32](intune-apps-win32lobappfilesystemdetection.md)
 - [Tipo de detecção de sistema do arquivo do aplicativo LOB do Win32](intune-apps-win32lobappfilesystemdetectiontype.md)
+- [Requisitos do sistema de arquivos do aplicativo LOB Win32](intune-apps-win32lobappfilesystemrequirement.md)
 - [Experiência de instalação do aplicativo LOB do Win32](intune-apps-win32lobappinstallexperience.md)
 - [Informações de msi do aplicativo LOB do Win32](intune-apps-win32lobappmsiinformation.md)
 - [Tipo de pacote de msi do aplicativo LOB do Win32](intune-apps-win32lobappmsipackagetype.md)
 - [Notificação de aplicativo LOB do Win32](intune-apps-win32lobappnotification.md)
 - [Detecção de script powershell do aplicativo LOB do Win32](intune-apps-win32lobapppowershellscriptdetection.md)
+- [Tipo de detecção de script do aplicativo LOB Win32 do Shell de energia](intune-apps-win32lobapppowershellscriptdetectiontype.md)
+- [Requisito de script do Shell de energia do aplicativo LOB Win32](intune-apps-win32lobapppowershellscriptrequirement.md)
 - [Detecção de código de produto do aplicativo LOB do Win32](intune-apps-win32lobappproductcodedetection.md)
 - [Detecção de registro de aplicativo LOB do Win32](intune-apps-win32lobappregistrydetection.md)
 - [Tipo de detecção de registro de aplicativo LOB do Win32](intune-apps-win32lobappregistrydetectiontype.md)
+- [Requisito do registro do aplicativo LOB Win32](intune-apps-win32lobappregistryrequirement.md)
+- [Requisito do aplicativo LOB do Win32](intune-apps-win32lobapprequirement.md)
 - [Código de retorno de aplicativo LOB do Win32](intune-apps-win32lobappreturncode.md)
 - [Tipo de código de retorno de aplicativo LOB do Win32](intune-apps-win32lobappreturncodetype.md)
 - [Windows AppX](intune-apps-windowsappx.md)

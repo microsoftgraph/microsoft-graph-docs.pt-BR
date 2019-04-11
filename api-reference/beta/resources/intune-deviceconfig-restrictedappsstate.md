@@ -4,12 +4,12 @@ description: Estado de aplicativos restritos
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2618ffe217231ce83571ebb5157f82b51abc531e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 0eb8bc3f93f61cf0a2918f80e4464abc54fe8461
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30152840"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807830"
 ---
 # <a name="restrictedappsstate-enum-type"></a>tipo de enumeração restrictedAppsState
 
@@ -24,6 +24,7 @@ Estado de aplicativos restritos
 |:---|:---|:---|
 |prohibitedApps|,0|Aplicativos proibidos|
 |notApprovedApps|1|Aplicativos não aprovados|
+
 
 
 

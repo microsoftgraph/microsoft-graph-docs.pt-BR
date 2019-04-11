@@ -4,12 +4,12 @@ description: Cor em RGB.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4e58d4dfe1e75b4b37333e29858ce93d1383f75a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c5ca085d009f38a2879074d7ee95a78acddf0f4a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30155675"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807718"
 ---
 # <a name="rgbcolor-resource-type"></a>Tipo de recurso rgbColor
 
@@ -27,7 +27,7 @@ Cor em RGB.
 |b|Byte|Valor de azul|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -44,6 +44,7 @@ Veja a seguir uma representação JSON do recurso.
   "b": 1024
 }
 ```
+
 
 
 

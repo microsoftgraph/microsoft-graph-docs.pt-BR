@@ -4,12 +4,12 @@ description: Opções de importação do KSP (provedor de armazenamento de chave
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ddc1cffe1f4e6056d53a151a3b36b2622c9bf4b5
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b422443abcdb72cd76399ae9f2e0fea59bb6f34f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30153015"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807109"
 ---
 # <a name="keystorageprovideroption-enum-type"></a>tipo de enumeração keyStorageProviderOption
 
@@ -26,6 +26,7 @@ Opções de importação do KSP (provedor de armazenamento de chave).
 |useTpmKspOtherwiseFail|1|Importar para KSP de Trusted Platform Module (TPM) se presente, caso contrário, falha.|
 |usePassportForWorkKspOtherwiseFail|duas|Importe para o Passport para trabalho do KSP, se disponível, caso contrário, falha.|
 |useSoftwareKsp|3D|Importar para KSP de software.|
+
 
 
 

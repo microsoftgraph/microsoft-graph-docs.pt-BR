@@ -4,12 +4,12 @@ description: Atribuição de licença do programa de compra de volume MacOS. Ess
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c8c7d8eea98c92ae1a041b8220c171d62fceb385
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 31f8e078f7695a115ce92d6d3f687d41a13831fc
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30158888"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806297"
 ---
 # <a name="macosvppappassignedlicense-resource-type"></a>tipo de recurso macOsVppAppAssignedLicense
 
@@ -32,13 +32,13 @@ Atribuição de licença do programa de compra de volume MacOS. Essa classe não
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade.|
-|userEmailAddress|String|O endereço de email do usuário.|
-|userId|String|A ID de usuário.|
+|userEmailAddress|Cadeia de caracteres|O endereço de email do usuário.|
+|userId|String|A ID do usuário.|
 |userName|Cadeia de caracteres|O nome de usuário.|
 |userPrincipalName|String|O nome da entidade de segurança do usuário.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -58,6 +58,7 @@ Veja a seguir uma representação JSON do recurso.
   "userPrincipalName": "String"
 }
 ```
+
 
 
 

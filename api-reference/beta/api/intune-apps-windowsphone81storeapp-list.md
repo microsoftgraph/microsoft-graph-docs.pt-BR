@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos windowsPhone81StoreApp
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 58b7fdffa08604cac29380a7aec3b1d0dff69f5e
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 748ba568c959e2007fc0d7cf86b59c448cac265d
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30981017"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806262"
 ---
 # <a name="list-windowsphone81storeapps"></a>Listar windowsPhone81StoreApps
 
@@ -62,7 +62,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1053
+Content-Length: 1084
 
 {
   "value": [
@@ -91,11 +91,13 @@ Content-Length: 1053
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
       ],
+      "dependentAppCount": 1,
       "appStoreUrl": "https://example.com/appStoreUrl/"
     }
   ]
 }
 ```
+
 
 
 

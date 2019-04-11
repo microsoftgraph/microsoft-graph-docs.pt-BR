@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto windowsAutopilotDepl
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c49fd82a0efbb943777d5d9279bb887183167f26
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 42bbd6d7f57d5bb7951f56c74f69dfd1c01682c3
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30966268"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807018"
 ---
 # <a name="get-windowsautopilotdeploymentprofile"></a>Obter windowsAutopilotDeploymentProfile
 
@@ -104,6 +104,7 @@ Content-Length: 1341
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Valores possíveis de regras de redução da superfície de ataque 
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 85e305b4798d29bc3d3b607ce031b72a10a3de80
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 29610eca9dbb157a5ce4d51bcb67fa479814d17d
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30169941"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807949"
 ---
 # <a name="defenderattacksurfacetype-enum-type"></a>tipo de enumeração defenderAttackSurfaceType
 
@@ -25,6 +25,7 @@ Valores possíveis de regras de redução da superfície de ataque do defender
 |userDefined|,0|Valor padrão do dispositivo, sem intenção.|
 |Larga|1|Funcionalidade de bloqueio.|
 |auditmode|duas|Não altera a funcionalidade, mas gera logs.|
+
 
 
 

@@ -4,12 +4,12 @@ description: Exclui securityBaselineSettingState.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8f69ac521929963cc0482bfb7e752b72670636d6
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 84c12d56e33d2e8a1a4c44d2a77faad470eed8b7
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522808"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31805562"
 ---
 # <a name="delete-securitybaselinesettingstate"></a>Excluir securityBaselineSettingState
 
@@ -20,7 +20,7 @@ ms.locfileid: "31522808"
 Exclui [securityBaselineSettingState](../resources/intune-deviceintent-securitybaselinesettingstate.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

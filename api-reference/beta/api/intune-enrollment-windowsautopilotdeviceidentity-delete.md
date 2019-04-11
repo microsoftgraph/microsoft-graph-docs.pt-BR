@@ -4,12 +4,12 @@ description: Exclui windowsAutopilotDeviceIdentity.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: de11d867166214e07e5699cda644205cc35ff563
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: bd0bae7e475e18011e35639525e9d9422ced562e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30973079"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806129"
 ---
 # <a name="delete-windowsautopilotdeviceidentity"></a>Excluir windowsAutopilotDeviceIdentity
 
@@ -63,6 +63,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Exclui groupPolicyPresentationDropdownList.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0f0cf91368a692a113da7d1c878e993f94d11027
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: d13be5d3d02bfd20ac9cd2045e9ebc6a888f776b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30989194"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807550"
 ---
 # <a name="delete-grouppolicypresentationdropdownlist"></a>Excluir groupPolicyPresentationDropdownList
 
@@ -63,6 +63,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 
