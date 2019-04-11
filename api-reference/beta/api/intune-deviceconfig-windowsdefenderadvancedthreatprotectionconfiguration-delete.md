@@ -4,12 +4,12 @@ description: Exclui windowsDefenderAdvancedThreatProtectionConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4bbf70829e94efefeaf11285111373f0738f4290
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: ce68b7de135f514648eb68076468bc3892eaaf3d
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30967990"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31785493"
 ---
 # <a name="delete-windowsdefenderadvancedthreatprotectionconfiguration"></a>Excluir windowsDefenderAdvancedThreatProtectionConfiguration
 
@@ -64,6 +64,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

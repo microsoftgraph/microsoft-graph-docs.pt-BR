@@ -4,12 +4,12 @@ description: Contém propriedades usadas ao atribuir um aplicativo móvel do Win
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 83e384167984f1eda640ef1faa1f4241b1badbbb
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: f15af8bf60dae2b40473eb23a1093f9e73bda7b6
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30167575"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31785920"
 ---
 # <a name="windowsappxappassignmentsettings-resource-type"></a>tipo de recurso windowsAppXAppAssignmentSettings
 
@@ -28,7 +28,7 @@ Herda de [mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignm
 |useDeviceContext|Booliano|Se o contexto de execução de dispositivo deve ou não ser usado para o aplicativo móvel do Windows AppX.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -43,6 +43,7 @@ Veja a seguir uma representação JSON do recurso.
   "useDeviceContext": true
 }
 ```
+
 
 
 

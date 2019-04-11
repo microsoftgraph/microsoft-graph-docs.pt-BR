@@ -4,12 +4,12 @@ description: Valores possíveis para quando as contas são excluídas em um comp
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e9d94233233577d22a8c3661fb6e2ce82408d2a9
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 6db021476afdc47129fd677702bc6cc58af204fd
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30139932"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31787124"
 ---
 # <a name="sharedpcaccountdeletionpolicytype-enum-type"></a>tipo de enumeração sharedPCAccountDeletionPolicyType
 
@@ -25,6 +25,7 @@ Valores possíveis para quando as contas são excluídas em um computador compar
 |imediato|,0|Excluir imediatamente.|
 |diskSpaceThreshold|1|Excluir no limite de espaço em disco.|
 |diskSpaceThresholdOrInactiveThreshold|duas|Excluir no limite de espaço em disco ou limite inativo.|
+
 
 
 

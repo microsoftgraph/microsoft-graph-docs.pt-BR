@@ -4,12 +4,12 @@ description: Exclui deviceComplianceSettingState.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8cbd49946a991981a955054c1d7c9d92c54b608f
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 859f2409fd8a2d9e83b1028fa332f70dd699339d
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30984454"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31786417"
 ---
 # <a name="delete-devicecompliancesettingstate"></a>Excluir deviceComplianceSettingState
 
@@ -62,6 +62,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

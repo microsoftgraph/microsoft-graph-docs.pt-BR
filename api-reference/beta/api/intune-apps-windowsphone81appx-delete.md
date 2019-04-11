@@ -4,12 +4,12 @@ description: Exclui windowsPhone81AppX.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5c2f7d82f3ec43f7da4e6b4fc6d4de224af8d7b4
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: f15e0ff45b21fd855b7fd8f8e5ccb2fe470e3b4b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30968690"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31786795"
 ---
 # <a name="delete-windowsphone81appx"></a>Excluir windowsPhone81AppX
 
@@ -64,6 +64,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

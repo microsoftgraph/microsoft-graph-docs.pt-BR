@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto groupPolicyPresentationCheckB
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 92f5af7496dda48aced995e33e077be7fa6ff5f7
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: a00c21cf6fdd177432b5aa5a28e4e816a3b9ffea
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30962390"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31787586"
 ---
 # <a name="update-grouppolicypresentationcheckbox"></a>Atualizar groupPolicyPresentationCheckBox
 
@@ -51,10 +51,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [groupPo
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|rótulo|String|Rótulo de texto localizado para qualquer entidade de apresentação. O valor padrão é vazio. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
+|rótulo|Cadeia de caracteres|Rótulo de texto localizado para qualquer entidade de apresentação. O valor padrão é vazio. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |id|String|Chave da entidade. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez. Herdado de [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|defaultChecked|Boolean|Valor padrão da caixa de seleção. O valor padrão é falso.|
+|defaultChecked|Booliano|Valor padrão da caixa de seleção. O valor padrão é falso.|
 
 
 
@@ -92,6 +92,7 @@ Content-Length: 240
   "defaultChecked": true
 }
 ```
+
 
 
 

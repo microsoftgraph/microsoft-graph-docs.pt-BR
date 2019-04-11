@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto mobileAppInstallStatus.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fe31b91c8091d96b44ff0ea9435a3588068919de
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: a2cb7b3acedd1e036972380002eaf8795b1a35ba
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30969474"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31786998"
 ---
 # <a name="update-mobileappinstallstatus"></a>Atualizar mobileAppInstallStatus
 
@@ -52,18 +52,18 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [mobileA
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade.|
-|deviceName|String|Nome do dispositivo|
-|deviceId|String|ID do dispositivo|
+|deviceName|Cadeia de caracteres|Nome do dispositivo|
+|deviceId|Cadeia de caracteres|ID do dispositivo|
 |lastSyncDateTime|DateTimeOffset|Hora da data da última sincronização|
 |mobileAppInstallStatusValue|[resultantAppState](../resources/intune-shared-resultantappstate.md)|O estado de instalação do aplicativo. Os valores possíveis são: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown`, `notApplicable`.|
 |installState|[resultantAppState](../resources/intune-shared-resultantappstate.md)|O estado de instalação do aplicativo. Os valores possíveis são: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown`, `notApplicable`.|
-|installStateDetail|[resultantAppStateDetail](../resources/intune-apps-resultantappstatedetail.md)|Os detalhes do estado de instalação do aplicativo. Os valores possíveis são: `noAdditionalDetails`, `seeInstallErrorCode`, `seeUninstallErrorCode`, `pendingReboot`, `platformNotApplicable`, `minimumCpuSpeedNotMet`, `minimumLogicalProcessorCountNotMet`, `minimumPhysicalMemoryNotMet`, `minimumOsVersionNotMet`, `minimumDiskSpaceNotMet`, `processorArchitectureNotApplicable`.|
+|installStateDetail|[resultantAppStateDetail](../resources/intune-apps-resultantappstatedetail.md)|Os detalhes do estado de instalação do aplicativo. Os valores possíveis são `noAdditionalDetails`: `dependencyFailedToInstall`, `dependencyWithRequirementsNotMet`, `dependencyPendingReboot`, `dependencyWithAutoInstallDisabled`, `seeInstallErrorCode`, `autoInstallDisabled`, `seeUninstallErrorCode`, `pendingReboot`, `installingDependencies` `powerShellScriptRequirementNotMet` `registryRequirementNotMet`,,, `fileSystemRequirementNotMet`, `platformNotApplicable`, `minimumCpuSpeedNotMet`, `minimumLogicalProcessorCountNotMet`, `minimumPhysicalMemoryNotMet`, `minimumOsVersionNotMet`, `minimumDiskSpaceNotMet` ,,,,,,,, , `processorArchitectureNotApplicable`.|
 |errorCode|Int32|O código de erro para instalação ou desinstalação de falhas.|
 |osVersion|String|Versão do sistema operacional|
-|osDescription|String|Descrição do sistema operacional|
+|osDescription|Cadeia de caracteres|Descrição do sistema operacional|
 |userName|Cadeia de caracteres|Nome de usuário do dispositivo|
 |userPrincipalName|String|Nome UPN|
-|displayVersion|String|Versão de leitura humana do aplicativo|
+|displayVersion|Cadeia de caracteres|Versão de leitura humana do aplicativo|
 
 
 
@@ -77,7 +77,7 @@ Este é um exemplo da solicitação.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}
 Content-type: application/json
-Content-length: 549
+Content-length: 555
 
 {
   "@odata.type": "#microsoft.graph.mobileAppInstallStatus",
@@ -86,7 +86,7 @@ Content-length: 549
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
   "mobileAppInstallStatusValue": "failed",
   "installState": "failed",
-  "installStateDetail": "seeInstallErrorCode",
+  "installStateDetail": "dependencyFailedToInstall",
   "errorCode": 9,
   "osVersion": "Os Version value",
   "osDescription": "Os Description value",
@@ -101,7 +101,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 598
+Content-Length: 604
 
 {
   "@odata.type": "#microsoft.graph.mobileAppInstallStatus",
@@ -111,7 +111,7 @@ Content-Length: 598
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
   "mobileAppInstallStatusValue": "failed",
   "installState": "failed",
-  "installStateDetail": "seeInstallErrorCode",
+  "installStateDetail": "dependencyFailedToInstall",
   "errorCode": 9,
   "osVersion": "Os Version value",
   "osDescription": "Os Description value",
@@ -120,6 +120,7 @@ Content-Length: 598
   "displayVersion": "Display Version value"
 }
 ```
+
 
 
 

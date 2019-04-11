@@ -4,12 +4,12 @@ description: Indica o status do aplicativo móvel no dispositivo.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1df0b41636668e0ebcc38dfb6b399a73551658d1
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 472fd157ed26b8b446e272d37baa135584cbbe0b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30171040"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31785913"
 ---
 # <a name="mobileappintent-enum-type"></a>tipo de enumeração mobileAppIntent
 
@@ -28,8 +28,7 @@ Indica o status do aplicativo móvel no dispositivo.
 |requiredUninstall|3D|DesInstalação necessária|
 |requiredAndAvailableInstall|quatro|RequiredAndAvailableInstall|
 |availableInstallWithoutEnrollment|0,5|AvailableInstallWithoutEnrollment|
-|impedir|6|Impedir|
-
+|impedir|6|Excluir|
 
 
 

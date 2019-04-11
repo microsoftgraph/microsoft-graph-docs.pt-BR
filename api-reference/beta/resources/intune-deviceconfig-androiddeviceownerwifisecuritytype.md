@@ -4,12 +4,12 @@ description: Tipos de segurança Wi-Fi para o proprietário do dispositivo Andro
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b4cc9e90c4b28069f7731c4f24ae8e5dd6ae7043
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 4e334f9938102731aea69108c757b863416486b9
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30165594"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31785080"
 ---
 # <a name="androiddeviceownerwifisecuritytype-enum-type"></a>tipo de enumeração androidDeviceOwnerWiFiSecurityType
 
@@ -25,6 +25,7 @@ Tipos de segurança Wi-Fi para o proprietário do dispositivo Android.
 |Abre|,0|Abrir (sem autenticação).|
 |Deixa|1|Criptografia WEP.|
 |wpaPersonal|duas|WPA-Pessoal/WPA2-Pessoal.|
+
 
 
 

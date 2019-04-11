@@ -4,12 +4,12 @@ description: Valores possíveis para classificação de atualização automátic
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7e29c231afae24133283c7919770735b18a227f8
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: bc068892b37eb3b3e3ce29cfbc2ce8c8e1aaf2da
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30143138"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31785535"
 ---
 # <a name="updateclassification-enum-type"></a>tipo de enumeração updateClassification
 
@@ -25,7 +25,8 @@ Valores possíveis para classificação de atualização automática.
 |userDefined|,0|Definido pelo usuário, valor padrão, sem intenção.|
 |recommendedAndImportant|1|Recomendado e importante.|
 |Important|duas|Important.|
-|Nenhuma|3D|Nenhum.|
+|nenhuma|3D|Nenhum.|
+
 
 
 

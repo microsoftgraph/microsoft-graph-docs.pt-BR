@@ -4,12 +4,12 @@ description: Assinaturas de gerenciamento de dispositivo móvel de locatário.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6dbf73ad6eac2bd60518446857c4fccc121d314f
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 4e17823eb8fd07c9e7a624db425ef55540e43c96
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30143978"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31785059"
 ---
 # <a name="devicemanagementsubscriptions-enum-type"></a>tipo de enumeração deviceManagementSubscriptions
 
@@ -22,12 +22,13 @@ Assinaturas de gerenciamento de dispositivo móvel de locatário.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|Nenhuma|,0|Nenhum|
+|nenhuma|,0|Nenhuma|
 |Intune|1|Assinatura do Microsoft Intune|
 |Office365|duas|Assinatura do Office365|
 |intunePremium|quatro|Assinatura do Microsoft Intune Premium|
 |intune_EDU|8|Assinatura do Microsoft Intune para educação|
 |intune_SMB|dezesseis|Assinatura do Microsoft Intune para pequenas empresas|
+
 
 
 

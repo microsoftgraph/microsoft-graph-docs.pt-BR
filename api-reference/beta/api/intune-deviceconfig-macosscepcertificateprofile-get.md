@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto macOSScepCertificate
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f2bed9fd966aadd4ed92569a34141c707058a2f7
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 1b58adc1abfe314568e963604651189e9ee08a69
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30967535"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31785850"
 ---
 # <a name="get-macosscepcertificateprofile"></a>Obter macOSScepCertificateProfile
 
@@ -113,6 +113,7 @@ Content-Length: 1458
   }
 }
 ```
+
 
 
 

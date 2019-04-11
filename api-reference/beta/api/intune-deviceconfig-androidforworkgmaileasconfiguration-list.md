@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos androidForWorkGmailEas
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 500c5ba5359733337084588d638baf73f642b050
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 9077fb9a291b5f9f30bdf80ef31d787369508e07
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30959933"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784926"
 ---
 # <a name="list-androidforworkgmaileasconfigurations"></a>Listar androidForWorkGmailEasConfigurations
 
@@ -89,6 +89,7 @@ Content-Length: 764
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Exclui deviceConfigurationAssignment.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2b8e766c8d3056f1b00cd67858400e1ac55e1a14
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: f4914ef61a4cdd549442da5f70ada4baa9eece3b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30987185"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31787215"
 ---
 # <a name="delete-deviceconfigurationassignment"></a>Excluir deviceConfigurationAssignment
 
@@ -70,6 +70,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

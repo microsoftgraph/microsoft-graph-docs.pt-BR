@@ -4,12 +4,12 @@ description: Listar propriedades e relações dos objetos macOSCustomConfigurati
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9c521e074a12c4bdd5aa773c5402d92e567029e5
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 4de0d92b80a243813996aef8c3482d30fe0d4d7d
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30981514"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31786256"
 ---
 # <a name="list-macoscustomconfigurations"></a>Listar macOSCustomConfigurations
 
@@ -86,6 +86,7 @@ Content-Length: 634
   ]
 }
 ```
+
 
 
 

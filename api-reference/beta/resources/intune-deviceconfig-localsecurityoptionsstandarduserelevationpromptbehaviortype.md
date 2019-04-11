@@ -4,12 +4,12 @@ description: Valores possíveis para LocalSecurityOptionsStandardUserElevationPr
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7a4df38eee068ed87d8f84c0a043bb00838def70
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 8aca3e16b52acbd8655ece4db0098c3aafafca17
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30148213"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31785976"
 ---
 # <a name="localsecurityoptionsstandarduserelevationpromptbehaviortype-enum-type"></a>tipo de enumeração localSecurityOptionsStandardUserElevationPromptBehaviorType
 
@@ -26,6 +26,7 @@ Valores possíveis para LocalSecurityOptionsStandardUserElevationPromptBehavior
 |automaticallyDenyElevationRequests|1|Negar automaticamente solicitações de elevação|
 |promptForCredentialsOnTheSecureDesktop|duas|Solicitar credenciais na área de trabalho segura|
 |promptForCredentials|3D|Solicitar credenciais|
+
 
 
 

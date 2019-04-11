@@ -4,12 +4,12 @@ description: Criar um novo objeto termsAndConditionsAssignment.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 484f41c9862e2999937ad2609ff84493edf4df53
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: af88847ac2ce47b09f5a07304f02a1d1fcce2598
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30959751"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31786501"
 ---
 # <a name="create-termsandconditionsassignment"></a>Criar termsAndConditionsAssignment
 
@@ -90,6 +90,7 @@ Content-Length: 217
   }
 }
 ```
+
 
 
 

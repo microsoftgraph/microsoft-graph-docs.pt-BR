@@ -4,12 +4,12 @@ description: Ler propriedades e relações do objeto windowsPhone81CompliancePol
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c2ba662ec66a851f972658f5f278492797d87ab3
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 1b607397c1c9fb4a88c46c99b86a4f2d71991fd2
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30978497"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31785402"
 ---
 # <a name="get-windowsphone81compliancepolicy"></a>Get windowsPhone81CompliancePolicy
 
@@ -93,6 +93,7 @@ Content-Length: 902
   }
 }
 ```
+
 
 
 

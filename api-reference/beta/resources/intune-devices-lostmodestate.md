@@ -4,12 +4,12 @@ description: Estado do modo perdido, indicando se o modo perdido está habilitad
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a12e9d09a94ec17ae77b5ff754fca7ce18e43f94
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 7940ec90b85e09143cc5bc6fbc54e80b5fa4bf9e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30154723"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31786326"
 ---
 # <a name="lostmodestate-enum-type"></a>tipo de enumeração lostModeState
 
@@ -24,6 +24,7 @@ Estado do modo perdido, indicando se o modo perdido está habilitado ou desabili
 |:---|:---|:---|
 |deficiência|,0|O modo perdido está desabilitado.|
 |enabled|1|O modo perdido está habilitado.|
+
 
 
 

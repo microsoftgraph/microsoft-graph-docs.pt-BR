@@ -4,12 +4,12 @@ description: Modo de otimização de entrega para distribuição de mesmo nível
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2a4b0860e05d20ea480f9c91264033f7a9eb41a0
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 3872b7c09c8934e95725565b83cc195d9b9d8da5
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30149165"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31785290"
 ---
 # <a name="windowsdeliveryoptimizationmode-enum-type"></a>tipo de enumeração windowsDeliveryOptimizationMode
 
@@ -29,6 +29,7 @@ Modo de otimização de entrega para distribuição de mesmo nível
 |httpWithInternetPeering|quatro|HTTP combinado com emparelhamento da Internet|
 |simpleDownload|99|Modo de download simples sem emparelhamento|
 |bypassmode|100|Modo bypass. Não usar otimização de entrega e usar BITS em vez disso|
+
 
 
 

@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto androidScepCertifica
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9425818aacd160d82eaa0e2014749902733bcf63
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 05ca735640bf0b7a1d081c93967eefe1f26ca0f6
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30974766"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31786648"
 ---
 # <a name="get-androidscepcertificateprofile"></a>Obter androidScepCertificateProfile
 
@@ -105,6 +105,7 @@ Content-Length: 1227
   }
 }
 ```
+
 
 
 

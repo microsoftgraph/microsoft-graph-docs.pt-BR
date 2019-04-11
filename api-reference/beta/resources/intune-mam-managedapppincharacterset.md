@@ -4,12 +4,12 @@ description: Conjunto de caracteres que deve ser usado para o PIN do aplicativo 
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7e75f9f6100e37ae0be0daf910f65eccc61ea82a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 99c43073717368867602a29d2b65e5dbfbef1762
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30148570"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31785031"
 ---
 # <a name="managedapppincharacterset-enum-type"></a>tipo de enumeração managedAppPinCharacterSet
 
@@ -24,6 +24,7 @@ Conjunto de caracteres que deve ser usado para o PIN do aplicativo de um usuári
 |:---|:---|:---|
 |numéricos|,0|Caracteres numéricos|
 |alphanumericAndSymbol|1|Caracteres alfanuméricos e simbólicos|
+
 
 
 

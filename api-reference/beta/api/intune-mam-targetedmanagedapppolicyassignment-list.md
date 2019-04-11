@@ -4,12 +4,12 @@ description: Listar propriedades e relações de objetos de targetedManagedAppPo
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b13df5f340b5d349ee7be98ffebda55af550bc48
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 4faa618e4d074c0304d442252b6c5045b58ef5b0
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30974899"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31787397"
 ---
 # <a name="list-targetedmanagedapppolicyassignments"></a>Listar targetedManagedAppPolicyAssignments
 
@@ -80,6 +80,7 @@ Content-Length: 276
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Definição de ponto flutuante para configurações de OMA.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b4d1b1e4c2c02711d341f70bba28067489c3b817
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 506a005994e19e4eabef1a4fda951075f4ce8743
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30166805"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31786179"
 ---
 # <a name="omasettingfloatingpoint-resource-type"></a>Tipo de recurso omaSettingFloatingPoint
 
@@ -26,12 +26,12 @@ Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |displayName|String|Nome de exibição. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|descrição|String|Descrição. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|description|String|Descrição. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |omaUri|Cadeia de caracteres|OMA. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |value|Single|Valor.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -49,6 +49,7 @@ Veja a seguir uma representação JSON do recurso.
   "value": "<Unknown Primitive Type Edm.Single>"
 }
 ```
+
 
 
 
