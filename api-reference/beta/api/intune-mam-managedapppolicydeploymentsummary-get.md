@@ -4,12 +4,12 @@ description: Ler propriedades e relações do objeto managedAppPolicyDeploymentS
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 19eef6e2595e396cabd9cc4f3ae8fbf1198c39d9
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: cee5633d2c13fb48a5b0b8529cd91b3c15ad4d1a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30983110"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31783871"
 ---
 # <a name="get-managedapppolicydeploymentsummary"></a>Obter managedAppPolicyDeploymentSummary
 
@@ -91,6 +91,7 @@ Content-Length: 688
   }
 }
 ```
+
 
 
 

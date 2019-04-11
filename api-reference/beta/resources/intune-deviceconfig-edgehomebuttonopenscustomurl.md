@@ -4,12 +4,12 @@ description: Mostrar o botão página inicial; clicar no botão página inicial 
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e83fd3dbb0961011584ef9d65e01c361ccf6a228
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 2dad4baba5fd55b99efd6b2b7ebadf1973d6c9c8
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30143236"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31783712"
 ---
 # <a name="edgehomebuttonopenscustomurl-resource-type"></a>tipo de recurso edgeHomeButtonOpensCustomURL
 
@@ -25,10 +25,10 @@ Herda de [edgeHomeButtonConfiguration](../resources/intune-deviceconfig-edgehome
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|homeButtonCustomURL|String|A URL específica a ser carregada.|
+|homeButtonCustomURL|Cadeia de caracteres|A URL específica a ser carregada.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -43,6 +43,7 @@ Veja a seguir uma representação JSON do recurso.
   "homeButtonCustomURL": "String"
 }
 ```
+
 
 
 

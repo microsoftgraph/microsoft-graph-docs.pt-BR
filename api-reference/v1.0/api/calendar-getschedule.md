@@ -4,12 +4,12 @@ description: Obtenha as informações de disponibilidade para um conjunto de usu
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 24e58a1e11bac8e9707aad17db43543862cfe486
-ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
+ms.openlocfilehash: e39b5e010c57bb74f518321f51cc4f3e4c709637
+ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30926582"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "31518508"
 ---
 # <a name="calendar-getschedule"></a>calendar: getSchedule
 
@@ -20,9 +20,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Calendar.Read, Calendar.ReadWrite    |
+|Delegado (conta corporativa ou de estudante) | Calendars.Read, Calendars.ReadWrite    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo | Calendar.Read, Calendar.ReadWrite |
+|Aplicativo | Calendars.Read, Calendars.ReadWrite |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

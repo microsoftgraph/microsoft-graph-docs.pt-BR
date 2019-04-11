@@ -4,12 +4,12 @@ description: Resultado de ação de dispositivo
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4c435241056f5e29166355829d1c40438b525a92
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 2d46aa2d4359430d17e3f3892b8b526a9efed603
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30151426"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31781867"
 ---
 # <a name="deviceactionresult-resource-type"></a>Tipo de recurso deviceActionResult
 
@@ -28,7 +28,7 @@ Resultado de ação de dispositivo
 |lastUpdatedDateTime|DateTimeOffset|Hora da última atualização do estado da ação|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -46,6 +46,7 @@ Veja a seguir uma representação JSON do recurso.
   "lastUpdatedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

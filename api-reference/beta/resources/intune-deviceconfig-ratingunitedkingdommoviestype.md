@@ -4,12 +4,12 @@ description: Rótulos de classificação de filmes no Reino Unido
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a78b8569bea252951e4d325adf823b2954b2e0e0
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 4905a8f20b29f8b9eb9a1acaba8204e406c98290
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30148115"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782895"
 ---
 # <a name="ratingunitedkingdommoviestype-enum-type"></a>tipo de enumeração ratingUnitedKingdomMoviesType
 
@@ -31,6 +31,7 @@ Rótulos de classificação de filmes no Reino Unido
 |agesAbove12Cinema|6|12A, cinema versão adequada para 12 anos ou mais|
 |agesAbove15|178|15, adequado somente por 15 anos e mais|
 |adultos|8|Adequado somente para adultos|
+
 
 
 

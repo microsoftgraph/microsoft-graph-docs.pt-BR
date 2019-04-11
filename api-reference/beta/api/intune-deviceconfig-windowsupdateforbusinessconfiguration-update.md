@@ -4,12 +4,12 @@ description: Atualizar as propriedades de um objeto windowsUpdateForBusinessConf
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f1babb06a3a1f897a8abe67a52cbbe46119483c8
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 968543052b958789583737d386b8719ae1b2a847
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30989208"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784189"
 ---
 # <a name="update-windowsupdateforbusinessconfiguration"></a>Atualizar windowsUpdateForBusinessConfiguration
 
@@ -209,6 +209,7 @@ Content-Length: 2075
   "updateNotificationLevel": "defaultNotifications"
 }
 ```
+
 
 
 

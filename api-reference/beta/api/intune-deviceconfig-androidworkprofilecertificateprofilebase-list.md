@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos Entidadeandroidworkpro
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e3c278682db2da192c6fcdbc11906f88aad4913b
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 51f15a1595b380f32e036b54f4512e68cd853510
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30984106"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31780046"
 ---
 # <a name="list-androidworkprofilecertificateprofilebases"></a>Listar androidWorkProfileCertificateProfileBases
 
@@ -63,7 +63,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 926
+Content-Length: 979
 
 {
   "value": [
@@ -89,11 +89,13 @@ Content-Length: 926
           "name": "Name value",
           "objectIdentifier": "Object Identifier value"
         }
-      ]
+      ],
+      "subjectAlternativeNameType": "emailAddress"
     }
   ]
 }
 ```
+
 
 
 

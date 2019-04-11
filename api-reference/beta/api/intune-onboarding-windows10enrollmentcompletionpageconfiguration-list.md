@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos windows10EnrollmentCom
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 294e6db6593e11bf4c4c9e3c1e717892a71b12f8
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 44006f0be0dc91eecd4ce896b9738bb0ab32b332
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30964329"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31783836"
 ---
 # <a name="list-windows10enrollmentcompletionpageconfigurations"></a>Listar windows10EnrollmentCompletionPageConfigurations
 
@@ -89,6 +89,7 @@ Content-Length: 860
   ]
 }
 ```
+
 
 
 

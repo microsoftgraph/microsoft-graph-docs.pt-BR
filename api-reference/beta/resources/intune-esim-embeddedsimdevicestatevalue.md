@@ -4,12 +4,12 @@ description: Descreve os vários Estados de um código de ativação do SIM inco
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9bdc3250605de7db7a3778d64b5e743a415de4c0
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 4a4970e08ff9b305aaf2aad4d82daf994d2010bc
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30145420"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782958"
 ---
 # <a name="embeddedsimdevicestatevalue-enum-type"></a>tipo de enumeração embeddedSIMDeviceStateValue
 
@@ -30,6 +30,7 @@ Descreve os vários Estados de um código de ativação do SIM incorporado.
 |erro|0,5|Designa que há um erro com esse perfil.|
 |deleted|6|Designa que o perfil é excluído do dispositivo.|
 |removedByUser|178|Designa que o perfil foi removido do dispositivo pelo usuário|
+
 
 
 

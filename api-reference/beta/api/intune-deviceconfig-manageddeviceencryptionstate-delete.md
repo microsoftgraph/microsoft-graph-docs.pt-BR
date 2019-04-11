@@ -4,12 +4,12 @@ description: Exclui managedDeviceEncryptionState.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3460bad947ce835ef5c987af52c9bdfeba47ae1a
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 6c501a5c64ea77b9c31f5456f738fce6bed4886a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30969117"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782307"
 ---
 # <a name="delete-manageddeviceencryptionstate"></a>Excluir managedDeviceEncryptionState
 
@@ -62,6 +62,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

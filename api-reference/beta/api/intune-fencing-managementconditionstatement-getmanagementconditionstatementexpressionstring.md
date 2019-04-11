@@ -4,12 +4,12 @@ description: Ainda não documentado
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 25313f03cf5888f3f0176c4bff180ecf74716a8c
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: ad8bf4fdfc2576e29ffd948267a6ad032a4d6b8e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30983572"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31781866"
 ---
 # <a name="getmanagementconditionstatementexpressionstring-function"></a>função getManagementConditionStatementExpressionString
 
@@ -72,6 +72,7 @@ Content-Length: 126
   }
 }
 ```
+
 
 
 

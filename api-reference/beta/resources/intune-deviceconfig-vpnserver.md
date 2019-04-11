@@ -4,12 +4,12 @@ description: Definição do servidor VPN.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9dd09e7ab0280120dd207424a862696ba087e20c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 0bf45848059f7cbd74b408b4074b0ebc5c31b4e5
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30170459"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782832"
 ---
 # <a name="vpnserver-resource-type"></a>tipo de recurso vpnServer
 
@@ -22,12 +22,12 @@ Definição do servidor VPN.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|description|Cadeia de caracteres|Descrição.|
-|address|String|Endereço (endereço IP, FQDN ou URL)|
-|isDefaultServer|Boolean|Servidor padrão.|
+|description|String|Descrição.|
+|address|Cadeia de caracteres|Endereço (endereço IP, FQDN ou URL)|
+|isDefaultServer|Booliano|Servidor padrão.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -44,6 +44,7 @@ Veja a seguir uma representação JSON do recurso.
   "isDefaultServer": true
 }
 ```
+
 
 
 

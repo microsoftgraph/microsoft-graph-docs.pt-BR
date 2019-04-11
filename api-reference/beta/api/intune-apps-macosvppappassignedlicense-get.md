@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto macOsVppAppAssignedL
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 35851f344d1305b50f0f5f926e7b40e92151ccb6
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: a78b66682ae2a2a2ed52b1c2e4f3bb57add51013
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30983215"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784074"
 ---
 # <a name="get-macosvppappassignedlicense"></a>Obter macOsVppAppAssignedLicense
 
@@ -78,6 +78,7 @@ Content-Length: 316
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Tipos de percentual máximo de otimização de entrega.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7579b95d0adefb09c9312596f4604fe9d5b05548
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 5f48b85c269da4204b985a19701b9d40a50358e6
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30177830"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31780662"
 ---
 # <a name="deliveryoptimizationmaxcachesizepercentage-resource-type"></a>tipo de recurso deliveryOptimizationMaxCacheSizePercentage
 
@@ -28,7 +28,7 @@ Herda de [deliveryOptimizationMaxCacheSize](../resources/intune-deviceconfig-del
 |maximumCacheSizePercentage|Int32|Especifica o tamanho máximo de cache que a otimização de entrega pode utilizar, como um percentual do tamanho do disco (1-100). Valores válidos de 1 a 100|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -43,6 +43,7 @@ Veja a seguir uma representação JSON do recurso.
   "maximumCacheSizePercentage": 1024
 }
 ```
+
 
 
 

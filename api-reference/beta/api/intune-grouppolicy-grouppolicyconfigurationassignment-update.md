@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto groupPolicyConfigurationAssig
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ef4cf1394437d7fdbb867234160cd880b42de0df
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 1306abca31be57b71b883b7fdaa5d2e8ab47fec4
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30963916"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31780536"
 ---
 # <a name="update-grouppolicyconfigurationassignment"></a>Atualizar groupPolicyConfigurationAssignment
 
@@ -92,6 +92,7 @@ Content-Length: 287
   }
 }
 ```
+
 
 
 

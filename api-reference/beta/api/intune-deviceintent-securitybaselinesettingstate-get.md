@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto securityBaselineSett
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 689995c63e3337f057c31b83cc05068b2fc12a85
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 3c69cf7b4756f4f6b7bd1b6c057bf309d46ddcbf
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522325"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31781026"
 ---
 # <a name="get-securitybaselinesettingstate"></a>Obter securityBaselineSettingState
 
@@ -20,7 +20,7 @@ ms.locfileid: "31522325"
 Leia as propriedades e as relações do objeto [securityBaselineSettingState](../resources/intune-deviceintent-securitybaselinesettingstate.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|

@@ -4,12 +4,12 @@ description: Tipos de segurança Wi-Fi.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c16265ecf9b4fa56536838dde1f4f1f757d8b1f9
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 9144a5761691b0a50e40370b1f4d2d08967f2c28
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30159042"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31780004"
 ---
 # <a name="wifisecuritytype-enum-type"></a>tipo de enumeração à
 
@@ -28,6 +28,7 @@ Tipos de segurança Wi-Fi.
 |Deixa|3D|Criptografia WEP.|
 |wpa2Personal|quatro|WPA2-Pessoal.|
 |wpa2Enterprise|0,5|WPA2-Enterprise. Deve usar o tipo WindowsWifiEnterpriseEAPConfiguration para configurar opções da empresa.|
+
 
 
 

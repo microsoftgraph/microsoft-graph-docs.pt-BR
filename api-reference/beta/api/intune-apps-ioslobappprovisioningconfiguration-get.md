@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto iosLobAppProvisionin
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6666ab718789c2c954a2decbd0a46644fdd978cf
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 181b778ecf4d34cc1cd556f9c456e65e5807c11d
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30976761"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782944"
 ---
 # <a name="get-ioslobappprovisioningconfiguration"></a>Obter iosLobAppProvisioningConfiguration
 
@@ -85,6 +85,7 @@ Content-Length: 592
   }
 }
 ```
+
 
 
 

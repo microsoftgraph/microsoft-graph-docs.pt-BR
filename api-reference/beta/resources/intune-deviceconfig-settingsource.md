@@ -4,12 +4,12 @@ description: Ainda não documentado
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8a4c803d862f6ccf946f76f3be77bf41ba7fd4b5
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 87e925e13cd061c6b3eaa78f3a1cecc0cd9b730b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30139498"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31783357"
 ---
 # <a name="settingsource-resource-type"></a>Tipo de recurso settingSource
 
@@ -26,7 +26,7 @@ Ainda não documentado
 |displayName|String|Ainda não documentado|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -42,6 +42,7 @@ Veja a seguir uma representação JSON do recurso.
   "displayName": "String"
 }
 ```
+
 
 
 

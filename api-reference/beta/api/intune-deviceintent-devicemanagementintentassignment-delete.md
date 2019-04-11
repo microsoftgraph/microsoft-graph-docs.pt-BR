@@ -4,12 +4,12 @@ description: Exclui deviceManagementIntentAssignment.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0fc34df00e96f22daf589d89d44761ea06ffb7c6
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 9fd9f942458b0a5d4a31eb6dad361d0469755a06
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522451"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31783392"
 ---
 # <a name="delete-devicemanagementintentassignment"></a>Excluir deviceManagementIntentAssignment
 
@@ -62,8 +62,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

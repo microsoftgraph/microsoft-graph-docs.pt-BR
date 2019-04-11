@@ -4,12 +4,12 @@ description: Uma expressão de condição de gerenciamento é uma expressão que
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0329504c86beedbc8b04ec35c25f764ff2b3114c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 1b102fe5d23a3a6dddadbf569ac9b15817a5947e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30164649"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782503"
 ---
 # <a name="managementconditionexpression-resource-type"></a>tipo de recurso managementConditionExpression
 
@@ -24,7 +24,7 @@ Uma expressão de condição de gerenciamento é uma expressão que produz um va
 |:---|:---|:---|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -38,6 +38,7 @@ Veja a seguir uma representação JSON do recurso.
   "@odata.type": "#microsoft.graph.managementConditionExpression"
 }
 ```
+
 
 
 

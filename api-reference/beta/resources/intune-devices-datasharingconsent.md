@@ -4,12 +4,12 @@ description: Informações de consentimento de compartilhamento de dados.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 75ef8b899c6fa7645b31cd77ada7420b0f753a60
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 7e1cb144957ee000a4e077f0f9c58065fad3a8dc
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30174647"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31780193"
 ---
 # <a name="datasharingconsent-resource-type"></a>tipo de recurso dataSharingConsent
 
@@ -33,15 +33,15 @@ Informações de consentimento de compartilhamento de dados.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|A ID de consentimento de compartilhamento de dados|
-|objectDisplayname|String|O nome de exibição do fluxo de trabalho do serviço|
-|termsUrl|String|O TermsUrl para o consentimento de compartilhamento de dados|
+|objectDisplayname|Cadeia de caracteres|O nome de exibição do fluxo de trabalho do serviço|
+|termsUrl|Cadeia de caracteres|O TermsUrl para o consentimento de compartilhamento de dados|
 |granted|Booliano|O Estado concedido para o consentimento de compartilhamento de dados|
 |grantDateTime|DateTimeOffset|O consentimento de tempo foi concedido para esta conta|
-|grantedByUpn|String|O UPN do usuário que concedeu o consentimento para esta conta|
-|grantedByUserId|String|O UserId do usuário que concedeu o consentimento para esta conta|
+|grantedByUpn|Cadeia de caracteres|O UPN do usuário que concedeu o consentimento para esta conta|
+|grantedByUserId|Cadeia de caracteres|O UserId do usuário que concedeu o consentimento para esta conta|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -63,6 +63,7 @@ Veja a seguir uma representação JSON do recurso.
   "grantedByUserId": "String"
 }
 ```
+
 
 
 

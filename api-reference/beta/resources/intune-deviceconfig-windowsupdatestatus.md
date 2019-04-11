@@ -4,12 +4,12 @@ description: Estados do dispositivo de configuração do Windows Update para emp
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ed7549fb77cf5a9f7c3014192d5524019323405f
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 73cd3208b7729544d6fbd620a13ce295b39aff26
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30154156"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31780179"
 ---
 # <a name="windowsupdatestatus-enum-type"></a>tipo de enumeração windowsUpdateStatus
 
@@ -26,6 +26,7 @@ Estados do dispositivo de configuração do Windows Update para empresas
 |pendingInstallation|1|Há atualizações com instalação pendente que inclui atualizações que não foram aprovadas. Não há atualizações de reinicialização pendentes, não há atualizações com falha.|
 |pendingReboot|duas|Há atualizações que exigem reinicialização. Não há atualizações com falha.|
 |falhou|3D|Há atualizações que não puderam ser instaladas no dispositivo.|
+
 
 
 

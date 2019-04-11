@@ -4,12 +4,12 @@ description: Ainda não documentado
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 628d749446520a0925945dab1f200e1367804087
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: bccbd186c3b63145473509bec4312ad0633fe535
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30147961"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784140"
 ---
 # <a name="grouppolicypresentationdropdownlistitem-resource-type"></a>tipo de recurso groupPolicyPresentationDropdownListItem
 
@@ -23,10 +23,10 @@ Ainda não documentado
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |displayName|String|Nome de exibição localizado para o item de lista suspensa.|
-|valor|String|Valor associado para o item de lista suspensa|
+|value|Cadeia de caracteres|Valor associado para o item de lista suspensa|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -42,6 +42,7 @@ Veja a seguir uma representação JSON do recurso.
   "value": "String"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos macOSEndpointProtectio
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f3e636ddeaaf485c77c4892b95ac6ffae9fbd175
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 6990101ef954ce6926fccffb37e54a5ca0e4c4cd
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30966653"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31780221"
 ---
 # <a name="list-macosendpointprotectionconfigurations"></a>Listar macOSEndpointProtectionConfigurations
 
@@ -95,6 +95,7 @@ Content-Length: 944
   ]
 }
 ```
+
 
 
 

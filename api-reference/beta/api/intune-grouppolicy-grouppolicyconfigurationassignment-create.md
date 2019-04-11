@@ -4,12 +4,12 @@ description: Criar um novo objeto groupPolicyConfigurationAssignment.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 44ce089e1a0f5e6b7bee4c2c19a85b5aca1e3bdc
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 7b0deda8c76a52705a60787766711b18b4b6ff50
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30959205"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31780606"
 ---
 # <a name="create-grouppolicyconfigurationassignment"></a>Criar groupPolicyConfigurationAssignment
 
@@ -92,6 +92,7 @@ Content-Length: 287
   }
 }
 ```
+
 
 
 

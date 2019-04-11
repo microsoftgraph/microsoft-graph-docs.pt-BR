@@ -4,12 +4,12 @@ description: Atualiza as propriedades de um objeto intuneBrandingProfileAssignme
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e951ba830d60d1114c24f604e75d6afc55c83b1e
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 16b49bd41ed0ce612b1d481553386cc8f789e187
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30964518"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31780354"
 ---
 # <a name="update-intunebrandingprofileassignment"></a>Atualizar intuneBrandingProfileAssignment
 
@@ -90,6 +90,7 @@ Content-Length: 220
   }
 }
 ```
+
 
 
 

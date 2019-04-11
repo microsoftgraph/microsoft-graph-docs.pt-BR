@@ -4,12 +4,12 @@ description: Criar um novo objeto windows10NetworkBoundaryConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f350e2380b5d2fd97c7f5f5b7401e8494b064b90
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 8a85fcb44c022266b1f920664083a2ffe6a997cc
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30987507"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31780627"
 ---
 # <a name="create-windows10networkboundaryconfiguration"></a>Criar windows10NetworkBoundaryConfiguration
 
@@ -170,6 +170,7 @@ Content-Length: 1416
   }
 }
 ```
+
 
 
 

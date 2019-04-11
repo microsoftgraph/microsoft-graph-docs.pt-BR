@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto macOsVppApp.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fe5f85994c6aa46c422084e01661138cfb23dd52
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: f847cf750b423b5c9ba627594db8126fc9e1f60c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30984594"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782538"
 ---
 # <a name="get-macosvppapp"></a>Obter macOsVppApp
 
@@ -67,7 +67,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2141
+Content-Length: 2170
 
 {
   "value": {
@@ -95,6 +95,7 @@ Content-Length: 2141
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
     ],
+    "dependentAppCount": 1,
     "usedLicenseCount": 0,
     "totalLicenseCount": 1,
     "releaseDateTime": "2017-01-01T00:01:34.7470482-08:00",
@@ -128,6 +129,7 @@ Content-Length: 2141
   }
 }
 ```
+
 
 
 

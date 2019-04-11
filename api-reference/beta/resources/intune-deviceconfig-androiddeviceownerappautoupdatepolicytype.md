@@ -4,12 +4,12 @@ description: Proprietário do dispositivo Android valores possíveis para Estado
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6242bc9470661d75b3174198761cfcab8284381d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 5e67dbdd96c1df067ead3724705a4c2067757130
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30159252"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31781775"
 ---
 # <a name="androiddeviceownerappautoupdatepolicytype-enum-type"></a>tipo de enumeração androidDeviceOwnerAppAutoUpdatePolicyType
 
@@ -27,6 +27,7 @@ Proprietário do dispositivo Android valores possíveis para Estados da polític
 |Édito|duas|Os aplicativos nunca são atualizados automaticamente.|
 |wiFiOnly|3D|Os aplicativos são atualizados automaticamente através de Wi-Fi apenas.|
 |permanente|quatro|Os aplicativos são atualizados automaticamente a qualquer momento. Tarifas de dados podem ser aplicadas.|
+
 
 
 

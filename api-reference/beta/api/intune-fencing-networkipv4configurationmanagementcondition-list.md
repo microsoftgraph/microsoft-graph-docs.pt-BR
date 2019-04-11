@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos networkIPv4Configurati
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bae6132a3b4d1bf44f36b22102b5facccceccbe7
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 76d53c31da213cf3de1ca2f3b5fe32cc99b92d64
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30961634"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782111"
 ---
 # <a name="list-networkipv4configurationmanagementconditions"></a>Listar networkIPv4ConfigurationManagementConditions
 
@@ -92,6 +92,7 @@ Content-Length: 810
   ]
 }
 ```
+
 
 
 

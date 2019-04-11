@@ -4,12 +4,12 @@ description: Contém propriedades do estado de instalação de um dispositivo.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6c25c9b81be783734f54f4e2edc21f27b070e2ed
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: bd0fb8d9f73cf19c4bd2b8be0e6ff40c8247b247
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30166245"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782671"
 ---
 # <a name="deviceinstallstate-resource-type"></a>Tipo de recurso deviceInstallState
 
@@ -23,8 +23,8 @@ Contém propriedades do estado de instalação de um dispositivo.
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar deviceInstallStates](../api/intune-books-deviceinstallstate-list.md)|Conjunto [deviceInstallState](../resources/intune-books-deviceinstallstate.md)|Lê propriedades e relações de objetos de [deviceInstallState](../resources/intune-books-deviceinstallstate.md).|
-|[Obter deviceInstallState](../api/intune-books-deviceinstallstate-get.md)|[deviceInstallState](../resources/intune-books-deviceinstallstate.md)|Ler propriedades e relações de objetos de [deviceInstallState](../resources/intune-books-deviceinstallstate.md).|
-|[Criar deviceInstallState](../api/intune-books-deviceinstallstate-create.md)|[deviceInstallState](../resources/intune-books-deviceinstallstate.md)|Crie um novo objeto de [deviceInstallState](../resources/intune-books-deviceinstallstate.md).|
+|[Get deviceInstallState](../api/intune-books-deviceinstallstate-get.md)|[deviceInstallState](../resources/intune-books-deviceinstallstate.md)|Ler propriedades e relações do objeto [deviceInstallState](../resources/intune-books-deviceinstallstate.md).|
+|[Criar deviceInstallState](../api/intune-books-deviceinstallstate-create.md)|[deviceInstallState](../resources/intune-books-deviceinstallstate.md)|Criar um novo objeto [deviceInstallState](../resources/intune-books-deviceinstallstate.md).|
 |[Excluir deviceInstallState](../api/intune-books-deviceinstallstate-delete.md)|Nenhum|Excluir [deviceInstallState](../resources/intune-books-deviceinstallstate.md).|
 |[Atualizar deviceInstallState](../api/intune-books-deviceinstallstate-update.md)|[deviceInstallState](../resources/intune-books-deviceinstallstate.md)|Atualizar as propriedades de um objeto de [deviceInstallState](../resources/intune-books-deviceinstallstate.md).|
 
@@ -32,11 +32,11 @@ Contém propriedades do estado de instalação de um dispositivo.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade.|
-|deviceName|String|Nome do dispositivo.|
-|deviceId|String|ID do dispositivo.|
+|deviceName|Cadeia de caracteres|Nome do dispositivo.|
+|deviceId|Cadeia de caracteres|ID do dispositivo.|
 |lastSyncDateTime|DateTimeOffset|Última sincronização de data e hora.|
 |installState|[installState](../resources/intune-books-installstate.md)|O estado de instalação do livro eletrônico. Os valores possíveis são: `notApplicable`, `installed`, `failed`, `notInstalled`, `uninstallFailed`, `unknown`.|
-|errorCode|String|O código de erro de falhas de instalação.|
+|errorCode|Cadeia de caracteres|O código de erro de falhas de instalação.|
 |osVersion|String|Versão do sistema operacional.|
 |osDescription|Cadeia de caracteres|Descrição do sistema operacional.|
 |userName|Cadeia de caracteres|Nome de usuário do dispositivo.|
@@ -66,6 +66,7 @@ Veja a seguir uma representação JSON do recurso.
   "userName": "String"
 }
 ```
+
 
 
 

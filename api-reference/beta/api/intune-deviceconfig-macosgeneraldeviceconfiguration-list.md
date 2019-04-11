@@ -4,12 +4,12 @@ description: Listar propriedades e relações dos objetos macOSGeneralDeviceConf
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bb15598012be676ab567550acd008d3f70580784
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 63ec36b6db40f6b4f05525fe7441407931af55f6
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30973044"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782265"
 ---
 # <a name="list-macosgeneraldeviceconfigurations"></a>Listar macOSGeneralDeviceConfigurations
 
@@ -133,6 +133,7 @@ Content-Length: 2437
   ]
 }
 ```
+
 
 
 

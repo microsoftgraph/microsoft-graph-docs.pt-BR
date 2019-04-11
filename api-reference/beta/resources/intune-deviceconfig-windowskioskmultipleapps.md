@@ -4,12 +4,12 @@ description: A classe usada para identificar a configuração do aplicativo mult
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c657300cf3ca00482b85b7983f28b4df3135c97d
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: 8cae99ce452cdb9b002ebe4fe24968ec368c9fc0
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30570840"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31783434"
 ---
 # <a name="windowskioskmultipleapps-resource-type"></a>tipo de recurso tipo complexowindowskioskmultipleapps
 
@@ -26,9 +26,9 @@ Herda de [windowsKioskAppConfiguration](../resources/intune-deviceconfig-windows
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |apps|coleção [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|Estes são os únicos aplicativos da Windows Store que estarão disponíveis para inicialização no menu iniciar. Essa coleção pode conter um máximo de 128 elementos.|
-|a barra de tarefas|Boolean|Essa configuração permite que o administrador especifique se a barra de tarefas é mostrada ou não.|
-|allowAccessToDownloadsFolder|Boolean|Essa configuração permite o acesso à pasta downloads no explorador de arquivos.|
-|disallowDesktopApps|Boolean|Essa configuração indica que os aplicativos de área de trabalho são permitidos. O padrão é true.|
+|a barra de tarefas|Booliano|Essa configuração permite que o administrador especifique se a barra de tarefas é mostrada ou não.|
+|allowAccessToDownloadsFolder|Booliano|Essa configuração permite o acesso à pasta downloads no explorador de arquivos.|
+|disallowDesktopApps|Booliano|Essa configuração indica que os aplicativos de área de trabalho são permitidos. O padrão é true.|
 |startMenuLayoutXml|Binária|Permite que os administradores substituam o layout de início padrão e impede que o usuário o altere.O layout é modificado especificando um arquivo XML com base em um esquema de modificação de layout. XML precisa estar no formato binário.|
 
 ## <a name="relationships"></a>Relações
@@ -62,6 +62,7 @@ Veja a seguir uma representação JSON do recurso.
   "startMenuLayoutXml": "binary"
 }
 ```
+
 
 
 

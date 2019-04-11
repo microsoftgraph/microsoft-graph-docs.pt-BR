@@ -4,12 +4,12 @@ description: Tipos CertificateStore
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 76c703951a8c4531e52d7c5a0414bfe68ce7dabb
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: adc659ec10a892df4f34adbe4e8d37fdd6082b32
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30162416"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784345"
 ---
 # <a name="certificatestore-enum-type"></a>tipo de enumeração certificateStore
 
@@ -24,6 +24,7 @@ Tipos CertificateStore
 |:---|:---|:---|
 |user|1|Ainda não documentado|
 |máquina|duas|Ainda não documentado|
+
 
 
 

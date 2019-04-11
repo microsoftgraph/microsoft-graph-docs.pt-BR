@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto androidForWorkVpnCon
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c3ca3242df24e32bb3d97ff0880b585ec12db638
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: beebe65fe6d534c4624bfc9de1601f580ad029db
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30972022"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782447"
 ---
 # <a name="get-androidforworkvpnconfiguration"></a>Obter androidForWorkVpnConfiguration
 
@@ -113,6 +113,7 @@ Content-Length: 1254
   }
 }
 ```
+
 
 
 

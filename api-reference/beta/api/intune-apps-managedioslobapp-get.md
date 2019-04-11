@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto managedIOSLobApp.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eb615f9c416029e122852c0396a7c03a604905ed
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 7f480d553205ef1b6a17854dc93a8dd8ac724954
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30969523"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31783056"
 ---
 # <a name="get-managedioslobapp"></a>Acessar managedIOSLobApp
 
@@ -67,7 +67,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1727
+Content-Length: 1756
 
 {
   "value": {
@@ -95,6 +95,7 @@ Content-Length: 1727
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
     ],
+    "dependentAppCount": 1,
     "appAvailability": "lineOfBusiness",
     "version": "Version value",
     "committedContentVersion": "Committed Content Version value",
@@ -121,6 +122,7 @@ Content-Length: 1727
   }
 }
 ```
+
 
 
 

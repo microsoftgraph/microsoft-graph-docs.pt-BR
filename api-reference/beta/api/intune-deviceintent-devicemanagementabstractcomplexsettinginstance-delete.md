@@ -4,12 +4,12 @@ description: Exclui deviceManagementAbstractComplexSettingInstance.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2bfcc237d8414fd905c335bf2145fd347209cb2f
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 1c7e94db30b3f7c743559f71eaa1ea70618188bb
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31524082"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31781061"
 ---
 # <a name="delete-devicemanagementabstractcomplexsettinginstance"></a>Excluir deviceManagementAbstractComplexSettingInstance
 
@@ -65,8 +65,6 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

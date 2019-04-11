@@ -4,12 +4,12 @@ description: Valores possíveis para agenda de sincronização de email.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ad725c393b68805c2d6ac2470718fd68a7b0f16d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 1da569d7050e88dd5eb41640bc2d8eaa602bb2b7
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30174843"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31781278"
 ---
 # <a name="emailsyncschedule-enum-type"></a>tipo de enumeração emailSyncSchedule
 
@@ -29,6 +29,7 @@ Valores possíveis para agenda de sincronização de email.
 |thirtyMinutes|quatro|Sincronizar a cada trinta minutos.|
 |sixtyMinutes|0,5|Sincronizar a cada 60 minutos.|
 |basedOnMyUsage|6|Sincronizar com base no meu uso.|
+
 
 
 

@@ -4,12 +4,12 @@ description: Regras de Uso da Rede permitem que empresas especifiquem como aplic
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 03cc8c1586bb851d54d9ba87f947b6b6d7b254b5
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e91940e5d090cc64bd0d98fa5f644b72d7f3a0a7
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30168324"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31779892"
 ---
 # <a name="iosnetworkusagerule-resource-type"></a>Tipo de recurso iosNetworkUsageRule
 
@@ -23,11 +23,11 @@ Regras de Uso da Rede permitem que empresas especifiquem como aplicativos gerenc
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |managedApps|Coleção [appListItem](../resources/intune-deviceconfig-applistitem.md)|Informações sobre os aplicativos gerenciados aos quais essa regra se aplicará. Essa coleção pode conter um máximo de 500 elementos.|
-|cellularDataBlockWhenRoaming|Boolean|Se definido como true, os aplicativos gerenciados correspondentes não poderão usar dados celulares em roaming.|
+|cellularDataBlockWhenRoaming|Booliano|Se definido como true, os aplicativos gerenciados correspondentes não poderão usar dados celulares em roaming.|
 |cellularDataBlocked|Booliano|Se definido como true, os aplicativos gerenciados correspondentes não poderão usar dados celulares em nenhum momento.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -52,6 +52,7 @@ Veja a seguir uma representação JSON do recurso.
   "cellularDataBlocked": true
 }
 ```
+
 
 
 

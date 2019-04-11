@@ -4,12 +4,12 @@ description: Definição de aplicativo associado ao Windows 10.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 95f0114bbd39e85c137da2a71b7640ba8051b6dc
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 22adbc6be90718f95a574443c8bd2f96a55f2ee4
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30146680"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784639"
 ---
 # <a name="windows10associatedapps-resource-type"></a>tipo de recurso windows10AssociatedApps
 
@@ -23,10 +23,10 @@ Definição de aplicativo associado ao Windows 10.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |appType|[windows10AppType](../resources/intune-deviceconfig-windows10apptype.md)|Tipo de aplicativo. Os valores possíveis são: `desktop` e `universal`.|
-|identificador|String|Identificação.|
+|identificador|Cadeia de caracteres|Identificação.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -42,6 +42,7 @@ Veja a seguir uma representação JSON do recurso.
   "identifier": "String"
 }
 ```
+
 
 
 

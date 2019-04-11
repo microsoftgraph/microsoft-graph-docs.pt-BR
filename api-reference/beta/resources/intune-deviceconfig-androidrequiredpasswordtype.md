@@ -4,12 +4,12 @@ description: Tipo de senha exigido pelo Android.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1845656d43ec2a8f567506ed61b5ee3bc6d8a9ad
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: d70ac87a0e8e3e8d97705b46f5d6ec63d85fbcac
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30151517"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782069"
 ---
 # <a name="androidrequiredpasswordtype-enum-type"></a>tipo de enumeração androidRequiredPasswordType
 
@@ -30,6 +30,7 @@ Tipo de senha exigido pelo Android.
 |numéricos|0,5|Senha numérica obrigatória.|
 |numericComplex|6|Senha numérica complexa obrigatória.|
 |qualquer|178|Uma senha ou um padrão é necessário, e qualquer um é aceitável.|
+
 
 
 

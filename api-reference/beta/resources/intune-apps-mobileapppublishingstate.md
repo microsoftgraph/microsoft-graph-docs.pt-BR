@@ -4,12 +4,12 @@ description: Indica o estado de publicação de um aplicativo.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6ae8cdb97afb0b44acf268381c3cb128aaff9b7d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 5e644264c1e72092be16063156708b45364b5097
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30160162"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782748"
 ---
 # <a name="mobileapppublishingstate-enum-type"></a>tipo de enumeração mobileAppPublishingState
 
@@ -25,6 +25,7 @@ Indica o estado de publicação de um aplicativo.
 |Não publicado|,0|O aplicativo ainda não foi publicado.|
 |processe|1|O aplicativo está aguardando o processamento do lado do serviço.|
 |novamente|duas|O aplicativo é publicado.|
+
 
 
 

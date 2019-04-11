@@ -4,12 +4,12 @@ description: Contém propriedades para o resumo de instalação de um aplicativo
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9747d53c56f9e505b61e1fa38bf5abdc27d14e42
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: a981477daefae92b6afcd3612a173d75b37e8637
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30150761"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31781915"
 ---
 # <a name="mobileappinstallsummary-resource-type"></a>tipo de recurso mobileAppInstallSummary
 
@@ -41,7 +41,7 @@ Contém propriedades para o resumo de instalação de um aplicativo móvel.
 |pendingInstallUserCount|Int32|Número de usuários que têm um ou mais dispositivos que foram notificados para instalar este aplicativo e têm 0 dispositivos com falhas.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -67,6 +67,7 @@ Veja a seguir uma representação JSON do recurso.
   "pendingInstallUserCount": 1024
 }
 ```
+
 
 
 

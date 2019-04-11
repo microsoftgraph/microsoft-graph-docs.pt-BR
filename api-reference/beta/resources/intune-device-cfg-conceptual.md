@@ -4,12 +4,12 @@ description: Lista a API do Microsoft Graph para os pontos de extremidade do Int
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 691a528e381b4635af15bab6626f5858296c0979
-ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
+ms.openlocfilehash: 0c25373b7a1c7657b2aee290c9a6ce5d0ae23cb9
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30572436"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31781439"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Configuração de dispositivo no Microsoft Intune
 
@@ -31,8 +31,10 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Configuração personalizada do Android](intune-deviceconfig-androidcustomconfiguration.md)
 - [Tipo de política de atualização automática de aplicativo do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerappautoupdatepolicytype.md)
 - [Modo conectado da bateria do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerbatterypluggedmode.md)
+- [Política de conformidade do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownercompliancepolicy.md)
 - [Tipo de política de permissão de aplicativo padrão do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerdefaultapppermissionpolicytype.md)
 - [Configuração geral do dispositivo do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)
+- [Modo de repositório de execução do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerplaystoremode.md)
 - [Tipo de senha obrigatória do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)
 - [Tipo de instalação de atualização do sistema do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownersystemupdateinstalltype.md)
 - [Configuração Wi-Fi do proprietário do dispositivo Android](intune-deviceconfig-androiddeviceownerwificonfiguration.md)
@@ -88,7 +90,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Configuração de VPN do perfil de trabalho do Android](intune-deviceconfig-androidworkprofilevpnconfiguration.md)
 - [Tipo de conexão de VPN do perfil de trabalho do Android](intune-deviceconfig-androidworkprofilevpnconnectiontype.md)
 - [Configuração de Wi-Fi do perfil de trabalho do Android](intune-deviceconfig-androidworkprofilewificonfiguration.md)
-- [Item da lista do aplicativo](intune-deviceconfig-applistitem.md)
+- [Item de lista do aplicativo](intune-deviceconfig-applistitem.md)
 - [Tipo de lista do aplicativo](intune-deviceconfig-applisttype.md)
 - [Tipo de controle do aplicativo App Locker](intune-deviceconfig-applockerapplicationcontroltype.md)
 - [Base de configuração de recursos do dispositivo Apple](intune-deviceconfig-appledevicefeaturesconfigurationbase.md)
@@ -289,10 +291,13 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Configuração de recursos do dispositivo macOS](intune-deviceconfig-macosdevicefeaturesconfiguration.md)
 - [Configuração de proteção de ponto de extremidade do macOS](intune-deviceconfig-macosendpointprotectionconfiguration.md)
 - [Configuração de Wi-Fi corporativa do macOS](intune-deviceconfig-macosenterprisewificonfiguration.md)
+- [configuração de extensões macOS](intune-deviceconfig-macosextensionsconfiguration.md)
 - [Aplicativo de firewall do macOS](intune-deviceconfig-macosfirewallapplication.md)
 - [Origens do aplicativo gatekeeper do macOS](intune-deviceconfig-macosgatekeeperappsources.md)
 - [Configuração geral do dispositivo macOS](intune-deviceconfig-macosgeneraldeviceconfiguration.md)
 - [Perfil certificado PFX importado do macOS](intune-deviceconfig-macosimportedpfxcertificateprofile.md)
+- [extensão de kernel macOS](intune-deviceconfig-macoskernelextension.md)
+- [item de lançamento do macOS](intune-deviceconfig-macoslaunchitem.md)
 - [Perfil de certificado do SCEP do macOS](intune-deviceconfig-macosscepcertificateprofile.md)
 - [Certificado raiz confiável do macOS](intune-deviceconfig-macostrustedrootcertificate.md)
 - [Configuração de VPN do macOS](intune-deviceconfig-macosvpnconfiguration.md)
@@ -432,9 +437,9 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Modo de otimização de distribuição do Windows](intune-deviceconfig-windowsdeliveryoptimizationmode.md)
 - [Perfil de rede de firewall do Windows](intune-deviceconfig-windowsfirewallnetworkprofile.md)
 - [Regra de firewall do Windows](intune-deviceconfig-windowsfirewallrule.md)
-- [Tipos de interface de regra de firewall do Windows](intune-deviceconfig-windowsfirewallruleinterfacetypes.md)
-- [Tipos de perfil de rede de regra de firewall do Windows](intune-deviceconfig-windowsfirewallrulenetworkprofiletypes.md)
-- [Tipo de direção de tráfego de regra do firewall do Windows](intune-deviceconfig-windowsfirewallruletrafficdirectiontype.md)
+- [Tipos de interface com regra de firewall do Windows](intune-deviceconfig-windowsfirewallruleinterfacetypes.md)
+- [Tipos de perfil de rede com regra de firewall do Windows](intune-deviceconfig-windowsfirewallrulenetworkprofiletypes.md)
+- [Tipo de direção de tráfego com regra de firewall do Windows](intune-deviceconfig-windowsfirewallruletrafficdirectiontype.md)
 - [Configuração de monitoramento de integridade do Windows](intune-deviceconfig-windowshealthmonitoringconfiguration.md)
 - [Escopo de monitoramento de integridade do Windows](intune-deviceconfig-windowshealthmonitoringscope.md)
 - [Configuração de proteção de identidade do Windows](intune-deviceconfig-windowsidentityprotectionconfiguration.md)
@@ -473,10 +478,10 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Tipo de visibilidade de lista de aplicativos do menu Iniciar do Windows](intune-deviceconfig-windowsstartmenuapplistvisibilitytype.md)
 - [Tipo de modo do menu Iniciar do Windows](intune-deviceconfig-windowsstartmenumodetype.md)
 - [Instalação de horas ativas do Windows Update](intune-deviceconfig-windowsupdateactivehoursinstall.md)
-- [Configuração do Windows Update para Empresas](intune-deviceconfig-windowsupdateforbusinessconfiguration.md)
+- [Configuração do Windows Update para empresas](intune-deviceconfig-windowsupdateforbusinessconfiguration.md)
 - [Semanas de atualização do Windows Update para empresas](intune-deviceconfig-windowsupdateforbusinessupdateweeks.md)
 - [Tipo de agendamento de instalação do Windows Update](intune-deviceconfig-windowsupdateinstallscheduletype.md)
-- [Opção de exibição de notificação do Windows Update](intune-deviceconfig-windowsupdatenotificationdisplayoption.md)
+- [Opção de exibição para notificação de atualização do Windows](intune-deviceconfig-windowsupdatenotificationdisplayoption.md)
 - [Instalação agendada do Windows Update](intune-deviceconfig-windowsupdatescheduledinstall.md)
 - [Status do Windows Update](intune-deviceconfig-windowsupdatestatus.md)
 - [Tipo de atualização do Windows](intune-deviceconfig-windowsupdatetype.md)

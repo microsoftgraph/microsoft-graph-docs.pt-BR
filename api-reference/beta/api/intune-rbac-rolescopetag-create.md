@@ -4,12 +4,12 @@ description: Criar um novo objeto roleScopeTag.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dbdc7089dc7f02fc49610e3feab07105a83c5984
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 9c542d62ffb4f05de37569e45aae8bbcc90a1ac7
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30959450"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782608"
 ---
 # <a name="create-rolescopetag"></a>Criar roleScopeTag
 
@@ -52,8 +52,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar roleScop
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade. É somente leitura e gerada automaticamente.|
-|displayName|String|O nome de exibição ou amigável da marca de escopo da função.|
-|descrição|String|Descrição da marca de escopo da função.|
+|displayName|Cadeia de caracteres|O nome de exibição ou amigável da marca de escopo da função.|
+|description|String|Descrição da marca de escopo da função.|
 
 
 
@@ -90,6 +90,7 @@ Content-Length: 182
   "description": "Description value"
 }
 ```
+
 
 
 

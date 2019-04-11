@@ -4,12 +4,12 @@ description: Listar Propriedades e relações dos objetos windows10EasEmailProfi
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d32820a3370d77d9179cbce134bd8674f5cf81cf
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 18661c5268e8a218a6c224227cf3902e082b69eb
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30966366"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31781831"
 ---
 # <a name="list-windows10easemailprofileconfigurations"></a>Listar windows10EasEmailProfileConfigurations
 
@@ -96,6 +96,7 @@ Content-Length: 1054
   ]
 }
 ```
+
 
 
 

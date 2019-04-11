@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto windowsVpnConfigurat
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 52ba4abb1256664d36a7816a765b1c51c4c63327
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 333eb0267da25c4a6f657d0060a42a06c937cf46
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30974976"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31783147"
 ---
 # <a name="get-windowsvpnconfiguration"></a>Obter windowsVpnConfiguration
 
@@ -95,6 +95,7 @@ Content-Length: 760
   }
 }
 ```
+
 
 
 

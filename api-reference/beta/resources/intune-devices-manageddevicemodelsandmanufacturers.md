@@ -4,12 +4,12 @@ description: Modela e fabrica meatadata para dispositivos gerenciados na conta
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dfd8f068305bdae86a0acc9ef5f9113bb0d1c579
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 99291829bfa672a9ade85a0a015061e4f6ec8e10
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30148297"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782559"
 ---
 # <a name="manageddevicemodelsandmanufacturers-resource-type"></a>tipo de recurso managedDeviceModelsAndManufacturers
 
@@ -22,11 +22,11 @@ Modela e fabrica meatadata para dispositivos gerenciados na conta
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|deviceModels|Coleção de cadeias de caracteres|Lista de modelos para dispositivos gerenciados na conta|
-|deviceManufacturers|Coleção de cadeias de caracteres|Lista de fabricantes de dispositivos gerenciados na conta|
+|deviceModels|Coleção String|Lista de modelos para dispositivos gerenciados na conta|
+|deviceManufacturers|Coleção String|Lista de fabricantes de dispositivos gerenciados na conta|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -46,6 +46,7 @@ Veja a seguir uma representação JSON do recurso.
   ]
 }
 ```
+
 
 
 

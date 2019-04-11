@@ -4,12 +4,12 @@ description: Ação padrão do defender a ser executada em ameaças de malware d
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4849f369aa5dd04a68599050aa097b2ac63f5ef1
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 8e16ea7734b61213286d15467701fa3512ebb7d6
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30154779"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31781131"
 ---
 # <a name="defenderthreataction-enum-type"></a>tipo de enumeração defenderThreatAction
 
@@ -23,12 +23,13 @@ Ação padrão do defender a ser executada em ameaças de malware detectadas.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |deviceDefault|,0|Aplicar ação com base na definição de atualização.|
-|clean|1|Limpe a ameaça detectada.|
+|ordena|1|Limpe a ameaça detectada.|
 |quarentena|duas|Colocar em quarentena a ameaça detectada.|
 |remover|3D|Remova a ameaça detectada.|
 |permitiu|quatro|Permitir a ameaça detectada.|
 |userDefined|0,5|Permitir que o usuário determine a ação a ser tomada com a ameaça detectada.|
 |Larga|6|Bloquear a ameaça detectada.|
+
 
 
 

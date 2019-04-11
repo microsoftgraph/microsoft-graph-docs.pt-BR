@@ -4,12 +4,12 @@ description: Tipo de opções de ID de grupo
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1d54a98bef3b9c0e0517b426332b8d3223e904c8
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 0cd541fd9ff3a91f40be1b6ccea67787cdad2567
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30177851"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784863"
 ---
 # <a name="deliveryoptimizationgroupidsourceoptions-resource-type"></a>tipo de recurso deliveryOptimizationGroupIdSourceOptions
 
@@ -28,7 +28,7 @@ Herda de [deliveryOptimizationGroupIdSource](../resources/intune-deviceconfig-de
 |groupIdSourceOption|[deliveryOptimizationGroupIdOptionsType](../resources/intune-deviceconfig-deliveryoptimizationgroupidoptionstype.md)|Defina essa política para restringir a seleção de par para uma fonte específica. Os valores possíveis são: `notConfigured`, `adSite`, `authenticatedDomainSid`, `dhcpUserOption`, `dnsSuffix`.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -43,6 +43,7 @@ Veja a seguir uma representação JSON do recurso.
   "groupIdSourceOption": "String"
 }
 ```
+
 
 
 

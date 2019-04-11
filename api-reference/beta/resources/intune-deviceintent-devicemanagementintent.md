@@ -4,12 +4,12 @@ description: Entidade que representa uma intenção de aplicar configurações a
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 909b071279b35c2ffec4c27b3431d25f7da8ac46
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 2de7d4e8c177317aa220d6aafbba4bda8b7fe299
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31524243"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31780921"
 ---
 # <a name="devicemanagementintent-resource-type"></a>tipo de recurso deviceManagementIntent
 
@@ -34,11 +34,11 @@ Entidade que representa uma intenção de aplicar configurações a um dispositi
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|A ID de intenção|
-|displayName|Cadeia de Caracteres|O nome de exibição fornecido pelo usuário|
+|displayName|Cadeia de caracteres|O nome de exibição fornecido pelo usuário|
 |description|String|Descrição fornecida pelo usuário|
 |isAssigned|Boolean|Significa se a intenção é atribuída ou não aos usuários|
 |lastModifiedDateTime|DateTimeOffset|Quando a intenção foi modificada pela última vez|
-|templateId|Cadeia de Caracteres|A ID do modelo de que esta intenção foi criada (se houver)|
+|templateId|Cadeia de caracteres|A ID do modelo de que esta intenção foi criada (se houver)|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
@@ -71,8 +71,6 @@ Veja a seguir uma representação JSON do recurso.
   "templateId": "String"
 }
 ```
-
-
 
 
 

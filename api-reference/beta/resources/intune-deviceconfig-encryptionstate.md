@@ -4,12 +4,12 @@ description: Estado de criptografia
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1c08c0095405c8bc91cf6ba70714a8dbc537072a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 35496094cb5b7b70f2c193b20e952b086213b10c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30178175"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31781593"
 ---
 # <a name="encryptionstate-enum-type"></a>tipo de enumeração EncryptionState
 
@@ -23,7 +23,8 @@ Estado de criptografia
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |não criptografado|,0|Não criptografado|
-|encrypted|1|PPTP|
+|PPTP|1|PPTP|
+
 
 
 

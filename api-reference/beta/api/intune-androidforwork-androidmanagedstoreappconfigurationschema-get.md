@@ -4,12 +4,12 @@ description: Leia as propriedades e as relações do objeto androidManagedStoreA
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d072c59decb189b375c4bf83349e93a89260dd13
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: a92dd8bf421acc3dd735b804753ceb1b446f7958
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30966954"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31780018"
 ---
 # <a name="get-androidmanagedstoreappconfigurationschema"></a>Obter androidManagedStoreAppConfigurationSchema
 
@@ -97,6 +97,7 @@ Content-Length: 923
   }
 }
 ```
+
 
 
 

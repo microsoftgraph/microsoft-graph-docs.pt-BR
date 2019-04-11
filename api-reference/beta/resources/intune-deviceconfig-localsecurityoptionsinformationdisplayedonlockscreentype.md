@@ -4,12 +4,12 @@ description: Valores possíveis para LocalSecurityOptionsInformationDisplayedOnL
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5b44d24e5235251b5232ecb1bd5b2ab21059e32a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: fd1946843efa7f5967014abd5b4e7a230fc39826
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30166714"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31779878"
 ---
 # <a name="localsecurityoptionsinformationdisplayedonlockscreentype-enum-type"></a>tipo de enumeração localSecurityOptionsInformationDisplayedOnLockScreenType
 
@@ -26,6 +26,7 @@ Valores possíveis para LocalSecurityOptionsInformationDisplayedOnLockScreen
 |grupos|1|Nome de exibição do usuário, nomes de domínio e de usuário|
 |administratorsAndPowerUsers|duas|Somente nome de exibição do usuário|
 |administratorsAndInteractiveUsers|3D|Não exibir informações do usuário|
+
 
 
 

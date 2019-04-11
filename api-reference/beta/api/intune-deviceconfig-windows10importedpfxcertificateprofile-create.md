@@ -4,12 +4,12 @@ description: Criar um novo objeto windows10ImportedPFXCertificateProfile.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7317dec74c95056d2509b6bbc5be16683b6e86a7
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 0ae2fa6642c8e4278be33995892c4946df48ead5
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30988018"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31783364"
 ---
 # <a name="create-windows10importedpfxcertificateprofile"></a>Criar windows10ImportedPFXCertificateProfile
 
@@ -128,6 +128,7 @@ Content-Length: 758
   "intendedPurpose": "smimeEncryption"
 }
 ```
+
 
 
 

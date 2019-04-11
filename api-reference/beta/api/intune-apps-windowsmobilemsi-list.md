@@ -4,12 +4,12 @@ description: Listar propriedades e relações dos objetos windowsMobileMSI.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e45836421f924356a80ceac29e39308c2aa9b65c
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: b7c66f9bf1d94e7efcb41cdd3767d068cea72908
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30983866"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31780732"
 ---
 # <a name="list-windowsmobilemsis"></a>Listar windowsMobileMSIs
 
@@ -62,7 +62,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1376
+Content-Length: 1407
 
 {
   "value": [
@@ -91,6 +91,7 @@ Content-Length: 1376
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
       ],
+      "dependentAppCount": 1,
       "committedContentVersion": "Committed Content Version value",
       "fileName": "File Name value",
       "size": 4,
@@ -104,6 +105,7 @@ Content-Length: 1376
   ]
 }
 ```
+
 
 
 

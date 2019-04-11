@@ -4,12 +4,12 @@ description: Criar um novo objeto securityBaselineSettingState.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 01256dceacb34fb2b9e173ab671ab9f6b318449c
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 6d4a3a68eaab0f9f4c8b3bb7d4f9e8adf16dea37
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31523648"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31781824"
 ---
 # <a name="create-securitybaselinesettingstate"></a>Criar securityBaselineSettingState
 
@@ -20,7 +20,7 @@ ms.locfileid: "31523648"
 Criar um novo objeto [securityBaselineSettingState](../resources/intune-deviceintent-securitybaselinesettingstate.md) .
 
 ## <a name="prerequisites"></a>Pré-requisitos
-Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/concepts/permissions-reference.md).
+Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão|Permissões (de privilégios máximos a mínimos)|
 |:---|:---|
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar security
 |id|String|Identificador exclusivo da entidade|
 |settingName|Cadeia de caracteres|O nome da configuração que está sendo relatado|
 |state|[securityBaselineComplianceState](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|O estado de conformidade da configuração da linha de base de segurança. Os valores possíveis são: `unknown`, `secure`, `notApplicable`, `notSecure`, `error`, `conflict`.|
-|settingCategoryId|Cadeia de Caracteres|A ID da categoria de configuração à qual essa configuração pertence|
+|settingCategoryId|Cadeia de caracteres|A ID da categoria de configuração à qual essa configuração pertence|
 
 
 

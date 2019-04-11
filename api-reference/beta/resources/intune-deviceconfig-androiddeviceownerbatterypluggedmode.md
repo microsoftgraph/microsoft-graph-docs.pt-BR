@@ -4,12 +4,12 @@ description: O proprietário do dispositivo Android valores possíveis para Esta
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 529359a0227c208f0904e8bd84408208329f52a9
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ceaa8ee43139ab662c0d30a7b0b1d0d917dc1759
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30141129"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782734"
 ---
 # <a name="androiddeviceownerbatterypluggedmode-enum-type"></a>tipo de enumeração androidDeviceOwnerBatteryPluggedMode
 
@@ -26,6 +26,7 @@ O proprietário do dispositivo Android valores possíveis para Estados dos modos
 |AC|1|A fonte de alimentação é um carregador AC.|
 |dispositivo|duas|A fonte de alimentação é uma porta USB.|
 |conexão|3D|A fonte de energia é sem fio.|
+
 
 
 

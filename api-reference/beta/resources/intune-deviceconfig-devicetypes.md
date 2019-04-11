@@ -4,12 +4,12 @@ description: Tipo de dispositivo.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c1f70ebf9ab8e22512bdb6f1238bec7c4354582f
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 604009d8a636a367203f9c9ced69aa22f40bfbc7
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30178168"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31781033"
 ---
 # <a name="devicetypes-enum-type"></a>tipo de enumeração deviceTypes
 
@@ -43,7 +43,8 @@ Tipo de dispositivo.
 |androidEnterprise|anos|Dispositivo de empresa Android.|
 |rim|100|Rim.|
 |Palm|101|Palm.|
-|unknown|255|Representa que o tipo de dispositivo é desconhecido.|
+|desconhecido|255|Representa que o tipo de dispositivo é desconhecido.|
+
 
 
 
