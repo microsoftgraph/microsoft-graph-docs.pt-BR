@@ -4,12 +4,12 @@ description: 'Adiciona (pins) a uma guia para o canal especificado dentro de uma
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 5235cc7dd99098fce1bdad437a74d65e6a437742
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.openlocfilehash: 8a1caf00f16fc1f4384977913073623b02d2a33a
+ms.sourcegitcommit: 0a673c6f4ad7aed12fb0e69608c0f73957bae10e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29967225"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "31824413"
 ---
 # <a name="add-tab-to-channel"></a>Adicionar uma guia ao canal
 
@@ -45,7 +45,7 @@ Uma [teamsTab](../resources/teamstab.md).
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta `201 OK`.
+Se tiver êxito, este método retornará um código de resposta `201 Created`.
 
 ## <a name="example"></a>Exemplo
 

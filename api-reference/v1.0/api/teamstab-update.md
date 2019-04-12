@@ -1,20 +1,20 @@
 ---
 title: Atualizar guia
-description: Atualize as propriedades da guia especificada.
+description: Atualiza as propriedades da guia especificada.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 9aff620ce98b729d428ff15f303025d20a21caa3
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.openlocfilehash: 1a864e6d31caa07eaa9f30bfddc22b40659a277b
+ms.sourcegitcommit: 0a673c6f4ad7aed12fb0e69608c0f73957bae10e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29967001"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "31824392"
 ---
 # <a name="update-tab"></a>Atualizar guia
 
 
-Atualize as propriedades da [guia](../resources/teamstab.md)especificado. Isso pode ser usado para configurar o conteúdo da guia.
+Atualiza as propriedades da [guia](../resources/teamstab.md)especificada. Isso pode ser usado para configurar o conteúdo da guia.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo                            | Group.ReadWrite.All                         |
 
-> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais e os administradores do serviço do Microsoft Teams podem acessar equipes das quais eles não são membros.
+> **Observação**: esta API oferece suporte a permissões de administrador. Os administradores globais e os administradores do serviço do Microsoft Teams podem acessar equipes das quais eles não são membros.
 
 ## <a name="http-request"></a>Solicitação HTTP
 ```http
@@ -40,11 +40,11 @@ PATCH /teams/{id}/channels/{id}/tabs/{id}
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação de JSON do objeto [tab](../resources/teamstab.md) .
+No corpo da solicitação, forneça uma representação JSON do objeto [Tab](../resources/teamstab.md) .
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um código de resposta `204 No Content`.
+Se tiver êxito, este método retornará um código de resposta `200 OK`.
 
 ## <a name="example"></a>Exemplo
 #### <a name="request"></a>Solicitação
@@ -60,7 +60,7 @@ Content-length: 211
 ```
 #### <a name="response"></a>Resposta
 ```http
-HTTP/1.1 200 Success
+HTTP/1.1 200 OK
 Content-type: application/json
 
 {
