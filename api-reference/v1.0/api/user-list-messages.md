@@ -2,27 +2,31 @@
 title: Listar mensagens
 description: Obtenha as mensagens na caixa de correio do usuário conectado (incluindo as pastas Itens Excluídos e Email Secundário).
 localization_priority: Priority
-author: dkershaw10
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5bc831c952f13dbf67b4e7d3de6ccfd5aa28f0b1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: dd3a5cbf3e5f4ee87b74602187c230f6be92940a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27976020"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31799906"
 ---
 # <a name="list-messages"></a>Listar mensagens
 
 Obtenha as mensagens na caixa de correio do usuário conectado (incluindo as pastas Itens Excluídos e Email Secundário).
 
+Dependendo do tamanho da página e dos dados da caixa de correio, a obtenção de mensagens de uma caixa de correio pode incorrer em várias solicitações. O tamanho de página padrão é 10 mensagens. Para obter a próxima página de mensagens, basta aplicar a URL inteira retornada em `@odata.nextLink` à próxima solicitação de obtenção de mensagens. Esta URL inclui todos os parâmetros de consulta que você especificou na solicitação inicial. 
+
+Não tente extrair o valor `$skip` da URL `@odata.nextLink` para manipular respostas. Essa API usa o valor `$skip` para manter a contagem de todos os itens pelos quais passou na caixa de correio do usuário para retornar uma página de itens do tipo mensagem. Portanto, é possível que, mesmo na resposta inicial, o valor `$skip` seja maior que o tamanho da página. Para mais informações, consulte [Paginação de dados do Microsoft Graph em seu aplicativo](/graph/paging).
+
 No momento, essa operação retorna corpos de mensagens somente no formato HTML.
 
-Há dois cenários onde um aplicativo pode obter mensagens na pasta de email de outro usuário:
+Existem dois cenários em que um aplicativo pode receber mensagens na pasta de email de outro usuário:
 
-* Se o aplicativo tem permissões de aplicativo, ou,
-* Se o aplicativo tiver apropriada [permissões](#permissions) delegadas de um usuário, e outro usuário compartilhou uma pasta de email com que o usuário ou, tem acesso delegado a esse usuário. Consulte os [detalhes e um exemplo](/graph/outlook-share-messages-folders).
+* Se o aplicativo tiver permissões de aplicativo ou
+* Se o aplicativo tiver as [permissões](#permissions) delegadas apropriadas de um usuário e outro usuário tiver compartilhado uma pasta de email com esse usuário, ou tiver concedido acesso delegado a esse usuário. Confira [detalhes e um exemplo](/graph/outlook-share-messages-folders).
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -65,20 +69,19 @@ Não forneça um corpo de solicitação para esse método.
 
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [Message](../resources/message.md) no corpo da resposta.
 
-O tamanho de página padrão para essa solicitação é dez mensagens.
-
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
+Este exemplo obtém as 10 mensagens principais padrão na caixa de correio do usuário conectado. Ele usa `$select` para retornar um subconjunto das propriedades de cada mensagem na resposta.
 <!-- {
   "blockType": "request",
   "name": "get_messages"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/messages
+GET https://graph.microsoft.com/v1.0/me/messages?$select=sender,subject
 ```
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Para obter a próxima página de mensagens, aplique a URL retornada em `@odata.nextLink` a uma solicitação GET subsequente.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -88,22 +91,125 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 317
 
 {
-  "value": [
-    {
-      "receivedDateTime": "datetime-value",
-      "sentDateTime": "datetime-value",
-      "hasAttachments": true,
-      "subject": "subject-value",
-      "body": {
-        "contentType": "",
-        "content": "content-value"
-      },
-      "bodyPreview": "bodyPreview-value"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('bb8775a4-4d8c-42cf-a1d4-4d58c2bb668f')/messages(sender,subject)",
+    "@odata.nextLink": "https://graph.microsoft.com/v1.0/me/messages?$select=sender%2csubject&$skip=14",
+    "value": [
+        {
+            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAwR4Hg\"",
+            "id": "AAMkAGUAAAwTW09AAA=",
+            "subject": "You have late tasks!",
+            "sender": {
+                "emailAddress": {
+                    "name": "Microsoft Planner",
+                    "address": "noreply@Planner.Office365.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4D1e\"",
+            "id": "AAMkAGUAAAq5QKlAAA=",
+            "subject": "You have late tasks!",
+            "sender": {
+                "emailAddress": {
+                    "name": "Microsoft Planner",
+                    "address": "noreply@Planner.Office365.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4D0v\"",
+            "id": "AAMkAGUAAAq5QKkAAA=",
+            "subject": "Your Azure AD Identity Protection Weekly Digest",
+            "sender": {
+                "emailAddress": {
+                    "name": "Microsoft Azure",
+                    "address": "azure-noreply@microsoft.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4DsN\"",
+            "id": "AAMkAGUAAAq5QKjAAA=",
+            "subject": "Use attached file",
+            "sender": {
+                "emailAddress": {
+                    "name": "Megan Bowen",
+                    "address": "MeganB@contoso.OnMicrosoft.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4Dq9\"",
+            "id": "AAMkAGUAAAq5QKiAAA=",
+            "subject": "Original invitation",
+            "sender": {
+                "emailAddress": {
+                    "name": "Megan Bowen",
+                    "address": "MeganB@contoso.OnMicrosoft.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4Dq1\"",
+            "id": "AAMkAGUAAAq5QKhAAA=",
+            "subject": "Koala image",
+            "sender": {
+                "emailAddress": {
+                    "name": "Megan Bowen",
+                    "address": "MeganB@contoso.OnMicrosoft.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4Dqp\"",
+            "id": "AAMkAGUAAAq5QKgAAA=",
+            "subject": "Sales invoice template",
+            "sender": {
+                "emailAddress": {
+                    "name": "Megan Bowen",
+                    "address": "MeganB@contoso.OnMicrosoft.com"
+                }
+            }
+        },
+        {
+            "@odata.type": "#microsoft.graph.eventMessage",
+            "@odata.etag": "W/\"DAAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4Dft\"",
+            "id": "AAMkAGUAAAq5UMVAAA=",
+            "subject": "Accepted: Review strategy for Q3",
+            "sender": {
+                "emailAddress": {
+                    "name": "Adele Vance",
+                    "address": "/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=A17A02BCF30C4937A87B14273385667C-ADELEV"
+                }
+            }
+        },
+        {
+            "@odata.type": "#microsoft.graph.eventMessage",
+            "@odata.etag": "W/\"DAAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4DfF\"",
+            "id": "AAMkAGUAAAq5UMUAAA=",
+            "subject": "Accepted: Review strategy for Q3",
+            "sender": {
+                "emailAddress": {
+                    "name": "Adele Vance",
+                    "address": "/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=A17A02BCF30C4937A87B14273385667C-ADELEV"
+                }
+            }
+        },
+        {
+            "@odata.type": "#microsoft.graph.eventMessage",
+            "@odata.etag": "W/\"CwAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4Dfa\"",
+            "id": "AAMkAGUAAAq5T8tAAA=",
+            "subject": "Review strategy for Q3",
+            "sender": {
+                "emailAddress": {
+                    "name": "Megan Bowen",
+                    "address": "MeganB@contoso.OnMicrosoft.com"
+                }
+            }
+        }
+    ]
 }
 ```
 

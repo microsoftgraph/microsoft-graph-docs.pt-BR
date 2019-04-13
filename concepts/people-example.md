@@ -1,16 +1,16 @@
 ---
 title: Usar a API de Pessoas no Microsoft Graph para obter informações sobre as pessoas mais relevantes para você
-description: Os aplicativos do Microsoft Graph podem usar a API de Pessoas para recuperar as pessoas mais relevantes para um usuário. A relevância é determinada pelos padrões de comunicação e colaboração e pelas relações comerciais do usuário. As pessoas podem ser contatos locais, contatos das redes sociais ou do diretório de uma organização e as pessoas de comunicações recentes (como emails e Skype). Além de gerar essas informações, a API de Pessoas também fornece suporte para pesquisa de correspondência difusa e a capacidade de recuperar a lista de usuários relevantes para outro usuário na organização do usuário conectado.
-ms.date: 12/04/2018
+description: 'Os aplicativos do Microsoft Graph podem usar a API de Pessoas para recuperar as pessoas mais relevantes para um usuário. '
+ms.date: 4/9/2019
 author: simonhult
 localization_priority: Priority
 ms.prod: insights
-ms.openlocfilehash: 40c916de42cf8d3b56bf56ee07b3f1ae045a7557
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 9c1ff26acb2032a775e71cbb0caecec3331d058e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27966976"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31797141"
 ---
 # <a name="use-the-people-api-in-microsoft-graph-to-get-information-about-the-people-most-relevant-to-you"></a>Usar a API de Pessoas no Microsoft Graph para obter informações sobre as pessoas mais relevantes para você
 
@@ -937,7 +937,7 @@ Content-type: application/json
 
 ### <a name="perform-a-fuzzy-search"></a>Realizar uma pesquisa difusa
 
-As pesquisas implementam um algoritmo de correspondência difusa. Retornarão resultados com base em uma correspondência exata e também em Inferências sobre a intenção da pesquisa. Por exemplo, imagine que um usuário com o nome de exibição "Carlos Lima" e o endereço de email carloslim@example.com que esteja no conjunto **pessoas** do usuário conectado. Todas as pesquisas a seguir retornarão esse usuário Carlos como um dos resultados.
+As pesquisas implementam um algoritmo de correspondência difusa. Retornarão resultados com base em uma correspondência exata e também em Inferências sobre a intenção da pesquisa. Por exemplo, imagine um usuário com um nome de exibição de "Tyler Lee" e um endereço de email tylerle@example.com, o qual está na coleção de **pessoas** do usuário conectado. Todas as pesquisas a seguir retornarão esse usuário Tyler como um dos resultados.
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people?$search="tyler"                //matches both Tyler's name and email
@@ -946,3 +946,32 @@ GET https://graph.microsoft.com/v1.0/me/people?$search="tylerle@example.com"  //
 GET https://graph.microsoft.com/v1.0/me/people?$search="tiler"                //fuzzy match with Tyler's name
 GET https://graph.microsoft.com/v1.0/me/people?$search="tyler lee"            //matches Tyler's name. Note the quotes to enclose the space.
 ```
+
+### <a name="working-with-feature-implementation"></a>Trabalhando com implementação de recursos
+ 
+Deve haver um relacionamento público entre o proprietário do perfil e as outras pessoas para que essas pessoas apareçam na lista do proprietário do perfil. A ilustração a seguir mostra um Usuário A, um índice de relacionamentos com outros usuários (Usuário B) e um perfil público mostrando um subconjunto de relacionamentos de usuários.
+
+![Imagem sobre trabalhar com relacionamentos](images/working-with.png)
+ 
+A seguir, exemplos de relações públicas:
+
+- Indivíduos conectados no organograma: Gerente, Subordinado direto, Colegas (compartilham o mesmo gerente) 
+- Membros de um grupo público ou lista de distribuição com menos de 30 pessoas. Os grupos públicos têm listas de membros que estão disponíveis no diretório.
+ 
+Se o proprietário do perfil se comunicar com alguém e não houver nenhum relacionamento público entre eles, como uma conexão de organograma ou um grupo em comum, o fato de eles estarem se comunicando não será visível para outras pessoas.
+
+A classificação das pessoas − ou seja, a ordem em que aparecem na página do proprietário do perfil − é determinada pela comunicação privada e pública entre o proprietário do perfil e a pessoa na lista.
+ 
+Alguns exemplos de comunicação privada:
+- Enviar emails um ao outro em que o nome da outra pessoa está na linha PARA
+- Convidar usuários para reuniões incluindo seus nomes no convite da agenda 
+ 
+Alguns exemplos de interação pública:
+- Enviar ou receber emails diretamente um ao outro como parte de um grupo público 
+- Convidar usuários para reuniões como parte de um grupo ou onde mais de X pessoas são convidadas
+ 
+A classificação não muda com base em quem é o usuário A (a pessoa que está vendo a página de outra pessoa). A classificação é determinada pelo nível de interação entre o Usuário B (proprietário do perfil) e o Usuário C (pessoa que aparece na lista do proprietário do perfil).
+ 
+Para que o Usuário C apareça, o proprietário do perfil deve estar em um grupo/DL relativamente pequeno com esse usuário que é público (o que significa que a lista de membros está disponível no diretório).
+ 
+Pessoas externas à organização não serão exibidas na lista do proprietário do perfil. As pessoas com as quais eles se comunicam por email ou se encontram, mas que não fazem parte da mesma organização, não serão exibidas na seção Trabalhando com.
