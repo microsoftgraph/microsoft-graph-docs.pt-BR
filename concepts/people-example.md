@@ -1,41 +1,41 @@
 ---
 title: Usar a API de Pessoas no Microsoft Graph para obter informações sobre as pessoas mais relevantes para você
-description: Os aplicativos do Microsoft Graph podem usar a API de Pessoas para recuperar as pessoas mais relevantes para um usuário. A relevância é determinada pelos padrões de comunicação e colaboração e pelas relações comerciais do usuário. As pessoas podem ser contatos locais, contatos das redes sociais ou do diretório de uma organização e as pessoas de comunicações recentes (como emails e Skype). Além de gerar essas informações, a API de Pessoas também fornece suporte para pesquisa de correspondência difusa e a capacidade de recuperar a lista de usuários relevantes para outro usuário na organização do usuário conectado.
-ms.date: 12/04/2018
+description: 'Os aplicativos do Microsoft Graph podem usar a API de Pessoas para recuperar as pessoas mais relevantes para um usuário. '
+ms.date: 4/9/2019
 author: simonhult
 localization_priority: Priority
 ms.prod: insights
-ms.openlocfilehash: 40c916de42cf8d3b56bf56ee07b3f1ae045a7557
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 9c1ff26acb2032a775e71cbb0caecec3331d058e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27966976"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31797141"
 ---
-# <a name="use-the-people-api-in-microsoft-graph-to-get-information-about-the-people-most-relevant-to-you"></a><span data-ttu-id="dcf05-106">Usar a API de Pessoas no Microsoft Graph para obter informações sobre as pessoas mais relevantes para você</span><span class="sxs-lookup"><span data-stu-id="dcf05-106">Use the People API in Microsoft Graph to get information about the people most relevant to you</span></span>
+# <a name="use-the-people-api-in-microsoft-graph-to-get-information-about-the-people-most-relevant-to-you"></a><span data-ttu-id="de3c0-103">Usar a API de Pessoas no Microsoft Graph para obter informações sobre as pessoas mais relevantes para você</span><span class="sxs-lookup"><span data-stu-id="de3c0-103">Use the People API in Microsoft Graph to get information about the people most relevant to you</span></span>
 
-<span data-ttu-id="dcf05-p102">Os aplicativos do Microsoft Graph podem usar a API de Pessoas para recuperar as pessoas mais relevantes para um usuário. A relevância é determinada pelos padrões de comunicação e colaboração e pelas relações comerciais do usuário. As pessoas podem ser contatos locais, contatos das redes sociais ou do diretório de uma organização e as pessoas de comunicações recentes (como emails e Skype). Além de gerar essas informações, a API de Pessoas também fornece suporte para pesquisa de correspondência difusa e a capacidade de recuperar a lista de usuários relevantes para outro usuário na organização do usuário conectado. A API de Pessoas é particularmente útil para cenários de seleção de pessoas, como ao redigir um email ou criar uma reunião. Por exemplo, você pode usar a API de Pessoas em cenários de redação de emails.</span><span class="sxs-lookup"><span data-stu-id="dcf05-p102">Microsoft Graph applications can use the People API to retrieve the people who are most relevant to a user. Relevance is determined by the user’s communication and collaboration patterns and business relationships. People can be local contacts, contacts from social networking or from an organization’s directory, and people from recent communications (such as email and Skype). Along with generating this insight, the People API also provides fuzzy matching search support and the ability to retrieve the list of users relevant to another user in the signed-in user's organization. The People API is particularly useful for people picking scenarios, such as composing an email or creating a meeting. For example, you can use the People API in email compose scenarios.</span></span>
+<span data-ttu-id="de3c0-p101">Os aplicativos do Microsoft Graph podem usar a API de Pessoas para recuperar as pessoas mais relevantes para um usuário. A relevância é determinada pelos padrões de comunicação e colaboração e pelas relações comerciais do usuário. As pessoas podem ser contatos locais, contatos das redes sociais ou do diretório de uma organização e as pessoas de comunicações recentes (como emails e Skype). Além de gerar essas informações, a API de Pessoas também fornece suporte para pesquisa de correspondência difusa e a capacidade de recuperar a lista de usuários relevantes para outro usuário na organização do usuário conectado. A API de Pessoas é particularmente útil para cenários de seleção de pessoas, como ao redigir um email ou criar uma reunião. Por exemplo, você pode usar a API de Pessoas em cenários de redação de emails.</span><span class="sxs-lookup"><span data-stu-id="de3c0-p101">Microsoft Graph applications can use the People API to retrieve the people who are most relevant to a user. Relevance is determined by the user’s communication and collaboration patterns and business relationships. People can be local contacts, contacts from social networking or from an organization’s directory, and people from recent communications (such as email and Skype). Along with generating this insight, the People API also provides fuzzy matching search support and the ability to retrieve the list of users relevant to another user in the signed-in user's organization. The People API is particularly useful for people picking scenarios, such as composing an email or creating a meeting. For example, you can use the People API in email compose scenarios.</span></span>
 
-## <a name="authorization"></a><span data-ttu-id="dcf05-113">Autorização</span><span class="sxs-lookup"><span data-stu-id="dcf05-113">Authorization</span></span>
+## <a name="authorization"></a><span data-ttu-id="de3c0-110">Autorização</span><span class="sxs-lookup"><span data-stu-id="de3c0-110">Authorization</span></span>
 
-<span data-ttu-id="dcf05-114">Para chamar a API de Pessoas no Microsoft Graph, seu aplicativo precisará das permissões adequadas:</span><span class="sxs-lookup"><span data-stu-id="dcf05-114">To call the People API in Microsoft Graph, your app will need the appropriate permissions:</span></span>
+<span data-ttu-id="de3c0-111">Para chamar a API de Pessoas no Microsoft Graph, seu aplicativo precisará das permissões adequadas:</span><span class="sxs-lookup"><span data-stu-id="de3c0-111">To call the People API in Microsoft Graph, your app will need the appropriate permissions:</span></span>
 
-* <span data-ttu-id="dcf05-p103">People.Read – use para fazer chamadas gerais da API de Pessoas; por exemplo, `https://graph.microsoft.com/v1.0/me/people/`. People.Read requer o consentimento do usuário final.</span><span class="sxs-lookup"><span data-stu-id="dcf05-p103">People.Read - Use to make general People API calls; for example, `https://graph.microsoft.com/v1.0/me/people/`. People.Read requires end user consent.</span></span>
-* <span data-ttu-id="dcf05-117">People.Read.All - necessária para recuperar as pessoas mais relevantes para um usuário especificado nas chamadas (`https://graph.microsoft.com/v1.0/users('{id}')/people`) da organização do usuário conectado.</span><span class="sxs-lookup"><span data-stu-id="dcf05-117">People.Read.All - Required to retrieve the people most relevant to a specified user in the signed-in user’s organization (`https://graph.microsoft.com/v1.0/users('{id}')/people`) calls.</span></span> <span data-ttu-id="dcf05-118">People.Read.All requer o consentimento do administrador.</span><span class="sxs-lookup"><span data-stu-id="dcf05-118">People.Read.All requires admin consent.</span></span>
+* <span data-ttu-id="de3c0-p102">People.Read – use para fazer chamadas gerais da API de Pessoas; por exemplo, `https://graph.microsoft.com/v1.0/me/people/`. People.Read requer o consentimento do usuário final.</span><span class="sxs-lookup"><span data-stu-id="de3c0-p102">People.Read - Use to make general People API calls; for example, `https://graph.microsoft.com/v1.0/me/people/`. People.Read requires end user consent.</span></span>
+* <span data-ttu-id="de3c0-114">People.Read.All - necessária para recuperar as pessoas mais relevantes para um usuário especificado nas chamadas (`https://graph.microsoft.com/v1.0/users('{id}')/people`) da organização do usuário conectado.</span><span class="sxs-lookup"><span data-stu-id="de3c0-114">People.Read.All - Required to retrieve the people most relevant to a specified user in the signed-in user’s organization (`https://graph.microsoft.com/v1.0/users('{id}')/people`) calls.</span></span> <span data-ttu-id="de3c0-115">People.Read.All requer o consentimento do administrador.</span><span class="sxs-lookup"><span data-stu-id="de3c0-115">People.Read.All requires admin consent.</span></span>
 
-## <a name="browse-people"></a><span data-ttu-id="dcf05-119">Procurar pessoas</span><span class="sxs-lookup"><span data-stu-id="dcf05-119">Browse people</span></span>
+## <a name="browse-people"></a><span data-ttu-id="de3c0-116">Procurar pessoas</span><span class="sxs-lookup"><span data-stu-id="de3c0-116">Browse people</span></span>
 
-<span data-ttu-id="dcf05-p105">As solicitações nesta seção obtém as pessoas mais relevantes para o usuário conectado (`/me`) ou para um usuário específico na organização do usuário conectado. Essas solicitações exigem a permissão People.Read ou People.Read.All, respectivamente. Por padrão, cada resposta retorna 10 registros, mas você pode alterar isso usando o parâmetro de consulta *$top*.</span><span class="sxs-lookup"><span data-stu-id="dcf05-p105">The requests in this section get the people most relevant to the signed-in user (`/me`), or to a specific user in the signed-in user’s organization. These requests require the People.Read or People.Read.All permission respectively. By default, each response returns 10 records, but you can change this by using the *$top* query parameter.</span></span>
+<span data-ttu-id="de3c0-p104">As solicitações nesta seção obtém as pessoas mais relevantes para o usuário conectado (`/me`) ou para um usuário específico na organização do usuário conectado. Essas solicitações exigem a permissão People.Read ou People.Read.All, respectivamente. Por padrão, cada resposta retorna 10 registros, mas você pode alterar isso usando o parâmetro de consulta *$top*.</span><span class="sxs-lookup"><span data-stu-id="de3c0-p104">The requests in this section get the people most relevant to the signed-in user (`/me`), or to a specific user in the signed-in user’s organization. These requests require the People.Read or People.Read.All permission respectively. By default, each response returns 10 records, but you can change this by using the *$top* query parameter.</span></span>
 
-### <a name="get-a-collection-of-relevant-people"></a><span data-ttu-id="dcf05-123">Obter uma coleção de pessoas relevantes</span><span class="sxs-lookup"><span data-stu-id="dcf05-123">Get a collection of relevant people</span></span>
+### <a name="get-a-collection-of-relevant-people"></a><span data-ttu-id="de3c0-120">Obter uma coleção de pessoas relevantes</span><span class="sxs-lookup"><span data-stu-id="de3c0-120">Get a collection of relevant people</span></span>
 
-<span data-ttu-id="dcf05-124">A solicitação a seguir obtém as pessoas mais relevantes para o usuário conectado (`/me`), com base nos padrões de comunicação e colaboração e nas relações comerciais.</span><span class="sxs-lookup"><span data-stu-id="dcf05-124">The following request gets the people most relevant to the signed-in user (`/me`), based on communication and collaboration patterns and business relationships.</span></span>
+<span data-ttu-id="de3c0-121">A solicitação a seguir obtém as pessoas mais relevantes para o usuário conectado (`/me`), com base nos padrões de comunicação e colaboração e nas relações comerciais.</span><span class="sxs-lookup"><span data-stu-id="de3c0-121">The following request gets the people most relevant to the signed-in user (`/me`), based on communication and collaboration patterns and business relationships.</span></span>
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people/
 ```
 
-<span data-ttu-id="dcf05-p106">O exemplo a seguir mostra a resposta. Por padrão, cada resposta retorna 10 registros. Você pode alterar isso usando o parâmetro de consulta *$top*. Este exemplo usa *$top* para limitar a resposta a três registros.</span><span class="sxs-lookup"><span data-stu-id="dcf05-p106">The following example shows the response. By default, each response returns 10 records. You can change this by using the *$top* query parameter. This example uses *$top* to limit the response to three records.</span></span>
+<span data-ttu-id="de3c0-p105">O exemplo a seguir mostra a resposta. Por padrão, cada resposta retorna 10 registros. Você pode alterar isso usando o parâmetro de consulta *$top*. Este exemplo usa *$top* para limitar a resposta a três registros.</span><span class="sxs-lookup"><span data-stu-id="de3c0-p105">The following example shows the response. By default, each response returns 10 records. You can change this by using the *$top* query parameter. This example uses *$top* to limit the response to three records.</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -152,15 +152,15 @@ Content-type: application/json
 }
 ```
 
-### <a name="request-a-subsequent-page-of-people"></a><span data-ttu-id="dcf05-129">Solicitar uma página subsequente de pessoas</span><span class="sxs-lookup"><span data-stu-id="dcf05-129">Request a subsequent page of people</span></span>
+### <a name="request-a-subsequent-page-of-people"></a><span data-ttu-id="de3c0-126">Solicitar uma página subsequente de pessoas</span><span class="sxs-lookup"><span data-stu-id="de3c0-126">Request a subsequent page of people</span></span>
 
-<span data-ttu-id="dcf05-p107">Se a primeira resposta não contiver a lista completa das pessoas relevantes, você poderá fazer uma segunda solicitação usando *$top* e *$skip* para solicitar páginas adicionais de informações. Se a solicitação anterior tiver informações adicionais, a solicitação a seguir obterá a próxima página de pessoas do servidor.</span><span class="sxs-lookup"><span data-stu-id="dcf05-p107">If the first response does not contain the complete list of relevant people, you can make a second request using *$top* and *$skip* to request additional pages of information. If the previous request has additional information, the following request gets the next page of people from the server.</span></span>
+<span data-ttu-id="de3c0-p106">Se a primeira resposta não contiver a lista completa das pessoas relevantes, você poderá fazer uma segunda solicitação usando *$top* e *$skip* para solicitar páginas adicionais de informações. Se a solicitação anterior tiver informações adicionais, a solicitação a seguir obterá a próxima página de pessoas do servidor.</span><span class="sxs-lookup"><span data-stu-id="de3c0-p106">If the first response does not contain the complete list of relevant people, you can make a second request using *$top* and *$skip* to request additional pages of information. If the previous request has additional information, the following request gets the next page of people from the server.</span></span>
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people/?$top=3&$skip=10
 ```
 
-<span data-ttu-id="dcf05-p108">O exemplo a seguir mostra a resposta. Por padrão, cada resposta retorna 10 registros. Você pode alterar isso usando o parâmetro de consulta *$top*. Este exemplo usa *$top* para limitar a resposta a três registros.</span><span class="sxs-lookup"><span data-stu-id="dcf05-p108">The following example shows the response. By default, each response returns 10 records. You can change this by using the *$top* query parameter. This example uses *$top* to limit the response to three records.</span></span>
+<span data-ttu-id="de3c0-p107">O exemplo a seguir mostra a resposta. Por padrão, cada resposta retorna 10 registros. Você pode alterar isso usando o parâmetro de consulta *$top*. Este exemplo usa *$top* para limitar a resposta a três registros.</span><span class="sxs-lookup"><span data-stu-id="de3c0-p107">The following example shows the response. By default, each response returns 10 records. You can change this by using the *$top* query parameter. This example uses *$top* to limit the response to three records.</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -277,15 +277,15 @@ Content-type: application/json
 }
 ```
 
-### <a name="sort-the-response"></a><span data-ttu-id="dcf05-136">Classificar a resposta</span><span class="sxs-lookup"><span data-stu-id="dcf05-136">Sort the response</span></span>
+### <a name="sort-the-response"></a><span data-ttu-id="de3c0-133">Classificar a resposta</span><span class="sxs-lookup"><span data-stu-id="de3c0-133">Sort the response</span></span>
 
-<span data-ttu-id="dcf05-p109">Por padrão, as pessoas na resposta são classificadas pela relevância delas à consulta. Você pode alterar a ordem das pessoas na resposta ao usar o parâmetro *$orderby*. Essa consulta seleciona as pessoas mais relevantes para você, classifica-as por **displayName** e, em seguida, retorna as primeiras 10 pessoas na lista classificada.</span><span class="sxs-lookup"><span data-stu-id="dcf05-p109">By default, the people in the response are sorted by their relevance to your query. You can change the order of the people in the response by using the *$orderby* parameter. This query selects the people most relevant to you, sorts them by their **displayName**, and then returns the first 10 people on the sorted list.</span></span>
+<span data-ttu-id="de3c0-p108">Por padrão, as pessoas na resposta são classificadas pela relevância delas à consulta. Você pode alterar a ordem das pessoas na resposta ao usar o parâmetro *$orderby*. Essa consulta seleciona as pessoas mais relevantes para você, classifica-as por **displayName** e, em seguida, retorna as primeiras 10 pessoas na lista classificada.</span><span class="sxs-lookup"><span data-stu-id="de3c0-p108">By default, the people in the response are sorted by their relevance to your query. You can change the order of the people in the response by using the *$orderby* parameter. This query selects the people most relevant to you, sorts them by their **displayName**, and then returns the first 10 people on the sorted list.</span></span>
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people/?$orderby=displayName
 ```
 
-<span data-ttu-id="dcf05-p110">O exemplo a seguir mostra a resposta. Por padrão, cada resposta retorna 10 registros. Você pode alterar isso ao usar o parâmetro *$top*. O exemplo a seguir usa *$top* para limitar a resposta a três registros.</span><span class="sxs-lookup"><span data-stu-id="dcf05-p110">The following example shows the response. By default, each response returns 10 records. You can change this by using the *$top* parameter. The following example uses *$top* to limit the response to three records.</span></span>
+<span data-ttu-id="de3c0-p109">O exemplo a seguir mostra a resposta. Por padrão, cada resposta retorna 10 registros. Você pode alterar isso ao usar o parâmetro *$top*. O exemplo a seguir usa *$top* para limitar a resposta a três registros.</span><span class="sxs-lookup"><span data-stu-id="de3c0-p109">The following example shows the response. By default, each response returns 10 records. You can change this by using the *$top* parameter. The following example uses *$top* to limit the response to three records.</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -402,17 +402,17 @@ Content-type: application/json
 }
 ```
 
-### <a name="change-the-number-of-people-and-fields-returned"></a><span data-ttu-id="dcf05-144">Alterar o número de pessoas e campos retornados</span><span class="sxs-lookup"><span data-stu-id="dcf05-144">Change the number of people and fields returned</span></span>
+### <a name="change-the-number-of-people-and-fields-returned"></a><span data-ttu-id="de3c0-141">Alterar o número de pessoas e campos retornados</span><span class="sxs-lookup"><span data-stu-id="de3c0-141">Change the number of people and fields returned</span></span>
 
-<span data-ttu-id="dcf05-145">Você pode alterar o número de pessoas retornadas na resposta definindo o parâmetro *$top*.</span><span class="sxs-lookup"><span data-stu-id="dcf05-145">You can change the number of people returned in the response by setting the *$top* parameter.</span></span>
+<span data-ttu-id="de3c0-142">Você pode alterar o número de pessoas retornadas na resposta definindo o parâmetro *$top*.</span><span class="sxs-lookup"><span data-stu-id="de3c0-142">You can change the number of people returned in the response by setting the *$top* parameter.</span></span>
 
-<span data-ttu-id="dcf05-p111">O exemplo a seguir solicita as 1.000 pessoas mais relevantes para `/me`. A solicitação também limita a quantidade de dados enviados de volta do servidor solicitando somente o **displayName** da pessoa.</span><span class="sxs-lookup"><span data-stu-id="dcf05-p111">The following example requests the 1,000 people most relevant to `/me`. The request also limits the amount of data sent back from the server by requesting only the **displayName** of the person.</span></span>
+<span data-ttu-id="de3c0-p110">O exemplo a seguir solicita as 1.000 pessoas mais relevantes para `/me`. A solicitação também limita a quantidade de dados enviados de volta do servidor solicitando somente o **displayName** da pessoa.</span><span class="sxs-lookup"><span data-stu-id="de3c0-p110">The following example requests the 1,000 people most relevant to `/me`. The request also limits the amount of data sent back from the server by requesting only the **displayName** of the person.</span></span>
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people/?$top=1000&$Select=displayName
 ```
 
-<span data-ttu-id="dcf05-148">O exemplo a seguir mostra a resposta.</span><span class="sxs-lookup"><span data-stu-id="dcf05-148">The following example shows the response.</span></span>
+<span data-ttu-id="de3c0-145">O exemplo a seguir mostra a resposta.</span><span class="sxs-lookup"><span data-stu-id="de3c0-145">The following example shows the response.</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -476,17 +476,17 @@ Content-type: application/json
 }
 ```
 
-### <a name="select-the-fields-to-return"></a><span data-ttu-id="dcf05-149">Selecione os campos para retornar</span><span class="sxs-lookup"><span data-stu-id="dcf05-149">Select the fields to return</span></span>
+### <a name="select-the-fields-to-return"></a><span data-ttu-id="de3c0-146">Selecione os campos para retornar</span><span class="sxs-lookup"><span data-stu-id="de3c0-146">Select the fields to return</span></span>
 
-<span data-ttu-id="dcf05-p112">Você pode limitar a quantidade de dados retornados do servidor usando o parâmetro *$select* para escolher um ou mais campos. O campo `@odata.id` sempre é retornado.</span><span class="sxs-lookup"><span data-stu-id="dcf05-p112">You can limit the amount of data returned from the server by using the *$select* parameter to choose one or more fields. The `@odata.id` field is always returned.</span></span>
+<span data-ttu-id="de3c0-p111">Você pode limitar a quantidade de dados retornados do servidor usando o parâmetro *$select* para escolher um ou mais campos. O campo `@odata.id` sempre é retornado.</span><span class="sxs-lookup"><span data-stu-id="de3c0-p111">You can limit the amount of data returned from the server by using the *$select* parameter to choose one or more fields. The `@odata.id` field is always returned.</span></span>
 
-<span data-ttu-id="dcf05-152">O exemplo a seguir limita a resposta ao **displayName** e **scoredEmailAddresses** das 10 pessoas mais relevantes.</span><span class="sxs-lookup"><span data-stu-id="dcf05-152">The following example limits the response to the **displayName** and **scoredEmailAddresses** of the 10 most relevant people.</span></span>
+<span data-ttu-id="de3c0-149">O exemplo a seguir limita a resposta ao **displayName** e **scoredEmailAddresses** das 10 pessoas mais relevantes.</span><span class="sxs-lookup"><span data-stu-id="de3c0-149">The following example limits the response to the **displayName** and **scoredEmailAddresses** of the 10 most relevant people.</span></span>
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people/?$select=displayName,scoredEmailAddresses
 ```
 
-<span data-ttu-id="dcf05-p113">O exemplo a seguir mostra a resposta. Por padrão, cada resposta retorna 10 registros. Você pode alterar isso usando o parâmetro *$top*. Este exemplo usa *$top* para limitar a resposta a três registros.</span><span class="sxs-lookup"><span data-stu-id="dcf05-p113">The following example shows the response. By default, each response returns 10 records. You can change this using the *$top* parameter. This example uses *$top* to limit the response to three records.</span></span>
+<span data-ttu-id="de3c0-p112">O exemplo a seguir mostra a resposta. Por padrão, cada resposta retorna 10 registros. Você pode alterar isso usando o parâmetro *$top*. Este exemplo usa *$top* para limitar a resposta a três registros.</span><span class="sxs-lookup"><span data-stu-id="de3c0-p112">The following example shows the response. By default, each response returns 10 records. You can change this using the *$top* parameter. This example uses *$top* to limit the response to three records.</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -528,17 +528,17 @@ Content-type: application/json
 }
 ```
 
-### <a name="use-a-filter-to-limit-the-response"></a><span data-ttu-id="dcf05-157">Usar um filtro para limitar a resposta</span><span class="sxs-lookup"><span data-stu-id="dcf05-157">Use a filter to limit the response</span></span>
+### <a name="use-a-filter-to-limit-the-response"></a><span data-ttu-id="de3c0-154">Usar um filtro para limitar a resposta</span><span class="sxs-lookup"><span data-stu-id="de3c0-154">Use a filter to limit the response</span></span>
 
-<span data-ttu-id="dcf05-158">Você pode usar o parâmetro *$filter* para limitar a resposta apenas às pessoas cujo registro contém os critérios especificados.</span><span class="sxs-lookup"><span data-stu-id="dcf05-158">You can use the *$filter* parameter to limit the response to only those people whose record contains the specified criteria.</span></span>
+<span data-ttu-id="de3c0-155">Você pode usar o parâmetro *$filter* para limitar a resposta apenas às pessoas cujo registro contém os critérios especificados.</span><span class="sxs-lookup"><span data-stu-id="de3c0-155">You can use the *$filter* parameter to limit the response to only those people whose record contains the specified criteria.</span></span>
 
-<span data-ttu-id="dcf05-159">A consulta a seguir limita a resposta a instâncias **person** com a propriedade **personType** com as atribuições de **person** como **classe** e **organizationUser** como **subclasse**.</span><span class="sxs-lookup"><span data-stu-id="dcf05-159">The following query limits the response to **person** instances with the **personType** property being assigned **person** as **class** and **organizationUser** as **subclass**.</span></span>
+<span data-ttu-id="de3c0-156">A consulta a seguir limita a resposta a instâncias **person** com a propriedade **personType** com as atribuições de **person** como **classe** e **organizationUser** como **subclasse**.</span><span class="sxs-lookup"><span data-stu-id="de3c0-156">The following query limits the response to **person** instances with the **personType** property being assigned **person** as **class** and **organizationUser** as **subclass**.</span></span>
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people/?$filter=personType/class eq 'Person' and personType/subclass eq 'OrganizationUser'
 ```
 
-<span data-ttu-id="dcf05-p114">O exemplo a seguir mostra a resposta. Por padrão, cada resposta retorna 10 registros. Você pode alterar isso usando o parâmetro *$top*. Este exemplo usa *$top* para limitar a resposta a três registros.</span><span class="sxs-lookup"><span data-stu-id="dcf05-p114">The following example shows the response. By default, each response returns 10 records. You can change this using the *$top* parameter. This example uses *$top* to limit the response to three records.</span></span>
+<span data-ttu-id="de3c0-p113">O exemplo a seguir mostra a resposta. Por padrão, cada resposta retorna 10 registros. Você pode alterar isso usando o parâmetro *$top*. Este exemplo usa *$top* para limitar a resposta a três registros.</span><span class="sxs-lookup"><span data-stu-id="de3c0-p113">The following example shows the response. By default, each response returns 10 records. You can change this using the *$top* parameter. This example uses *$top* to limit the response to three records.</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -655,17 +655,17 @@ Content-type: application/json
 }
 ```
 
-### <a name="select-the-fields-to-return-in-a-filtered-response"></a><span data-ttu-id="dcf05-164">Selecionar os campos a serem retornados em uma resposta filtrada</span><span class="sxs-lookup"><span data-stu-id="dcf05-164">Select the fields to return in a filtered response</span></span>
+### <a name="select-the-fields-to-return-in-a-filtered-response"></a><span data-ttu-id="de3c0-161">Selecionar os campos a serem retornados em uma resposta filtrada</span><span class="sxs-lookup"><span data-stu-id="de3c0-161">Select the fields to return in a filtered response</span></span>
 
-<span data-ttu-id="dcf05-165">Você pode combinar os parâmetros *$select* e *$filter* para criar uma lista personalizada de pessoas relevantes para o usuário e obter somente os campos necessários para seu aplicativo.</span><span class="sxs-lookup"><span data-stu-id="dcf05-165">You can combine the *$select* and *$filter* parameters to create a custom list of people relevant to the user and get only the fields that your application needs.</span></span>
+<span data-ttu-id="de3c0-162">Você pode combinar os parâmetros *$select* e *$filter* para criar uma lista personalizada de pessoas relevantes para o usuário e obter somente os campos necessários para seu aplicativo.</span><span class="sxs-lookup"><span data-stu-id="de3c0-162">You can combine the *$select* and *$filter* parameters to create a custom list of people relevant to the user and get only the fields that your application needs.</span></span>
 
-<span data-ttu-id="dcf05-p115">O exemplo a seguir obtém **displayName** e **scoredEmailAddresses** das pessoas cujo nome de exibição corresponde ao nome especificado. Neste exemplo, somente as pessoas cujo nome para exibição corresponde a "Lorrie Frye" são retornadas.</span><span class="sxs-lookup"><span data-stu-id="dcf05-p115">The following example gets the **displayName** and **scoredEmailAddresses** of people whose display name equals the specified name. In this example, only people whose display name equals "Lorrie Frye" are returned.</span></span>
+<span data-ttu-id="de3c0-p114">O exemplo a seguir obtém **displayName** e **scoredEmailAddresses** das pessoas cujo nome de exibição corresponde ao nome especificado. Neste exemplo, somente as pessoas cujo nome para exibição corresponde a "Lorrie Frye" são retornadas.</span><span class="sxs-lookup"><span data-stu-id="de3c0-p114">The following example gets the **displayName** and **scoredEmailAddresses** of people whose display name equals the specified name. In this example, only people whose display name equals "Lorrie Frye" are returned.</span></span>
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people/?$select=displayName,scoredEmailAddresses&$filter=displayName eq 'Lorrie Frye'
 ```
 
-<span data-ttu-id="dcf05-168">O exemplo a seguir mostra a resposta.</span><span class="sxs-lookup"><span data-stu-id="dcf05-168">The following example shows the response.</span></span>
+<span data-ttu-id="de3c0-165">O exemplo a seguir mostra a resposta.</span><span class="sxs-lookup"><span data-stu-id="de3c0-165">The following example shows the response.</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -687,17 +687,17 @@ Content-type: application/json
 }
 ```
 
-### <a name="browse-another-users-relevant-people"></a><span data-ttu-id="dcf05-169">Procurar pessoas relevantes de outro usuário</span><span class="sxs-lookup"><span data-stu-id="dcf05-169">Browse another user’s relevant people</span></span>
+### <a name="browse-another-users-relevant-people"></a><span data-ttu-id="de3c0-166">Procurar pessoas relevantes de outro usuário</span><span class="sxs-lookup"><span data-stu-id="de3c0-166">Browse another user’s relevant people</span></span>
 
-<span data-ttu-id="dcf05-170">A solicitação a seguir obtém as pessoas mais relevantes para outra pessoa na organização do usuário conectado.</span><span class="sxs-lookup"><span data-stu-id="dcf05-170">The following request gets the people most relevant to another person in the signed-in user's organization.</span></span> <span data-ttu-id="dcf05-171">Esta solicitação requer a permissão People.Read.All.</span><span class="sxs-lookup"><span data-stu-id="dcf05-171">This request requires the People.Read.All permission.</span></span> <span data-ttu-id="dcf05-172">Os parâmetros de consulta descritos nas seções acima também se aplicam.</span><span class="sxs-lookup"><span data-stu-id="dcf05-172">All the query parameters described in the above sections apply as well.</span></span>
+<span data-ttu-id="de3c0-167">A solicitação a seguir obtém as pessoas mais relevantes para outra pessoa na organização do usuário conectado.</span><span class="sxs-lookup"><span data-stu-id="de3c0-167">The following request gets the people most relevant to another person in the signed-in user's organization.</span></span> <span data-ttu-id="de3c0-168">Esta solicitação requer a permissão People.Read.All.</span><span class="sxs-lookup"><span data-stu-id="de3c0-168">This request requires the People.Read.All permission.</span></span> <span data-ttu-id="de3c0-169">Os parâmetros de consulta descritos nas seções acima também se aplicam.</span><span class="sxs-lookup"><span data-stu-id="de3c0-169">All the query parameters described in the above sections apply as well.</span></span>
 
-<span data-ttu-id="dcf05-173">Neste exemplo, as pessoas relevantes de Vinícius Monte são exibidas.</span><span class="sxs-lookup"><span data-stu-id="dcf05-173">In this example, Roscoe Seidel's relevant people are displayed.</span></span>
+<span data-ttu-id="de3c0-170">Neste exemplo, as pessoas relevantes de Vinícius Monte são exibidas.</span><span class="sxs-lookup"><span data-stu-id="de3c0-170">In this example, Roscoe Seidel's relevant people are displayed.</span></span>
 
 ```http
 GET https://graph.microsoft.com/v1.0/users('roscoes@contoso.com')/people/
 ```
 
-<span data-ttu-id="dcf05-p117">O exemplo a seguir mostra a resposta. Por padrão, cada resposta retorna 10 registros. Você pode alterar isso usando o parâmetro *$top*. O exemplo abaixo usa *$top* para limitar a resposta a três registros.</span><span class="sxs-lookup"><span data-stu-id="dcf05-p117">The following example shows the response. By default, each response returns 10 records. You can change this using the *$top* parameter. The example below uses *$top* to limit the response to three records.</span></span>
+<span data-ttu-id="de3c0-p116">O exemplo a seguir mostra a resposta. Por padrão, cada resposta retorna 10 registros. Você pode alterar isso usando o parâmetro *$top*. O exemplo abaixo usa *$top* para limitar a resposta a três registros.</span><span class="sxs-lookup"><span data-stu-id="de3c0-p116">The following example shows the response. By default, each response returns 10 records. You can change this using the *$top* parameter. The example below uses *$top* to limit the response to three records.</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -814,21 +814,21 @@ Content-type: application/json
 }
 ```
 
-## <a name="search-people"></a><span data-ttu-id="dcf05-178">Pesquisar pessoas</span><span class="sxs-lookup"><span data-stu-id="dcf05-178">Search people</span></span>
+## <a name="search-people"></a><span data-ttu-id="de3c0-175">Pesquisar pessoas</span><span class="sxs-lookup"><span data-stu-id="de3c0-175">Search people</span></span>
 
-<span data-ttu-id="dcf05-p118">As solicitações nesta seção permitem procurar pessoas relevantes para o usuário conectado (`/me`) e para outros usuários na organização do usuário conectado. Essas solicitações requerem a permissão People.Read, com exceção da pesquisa de pessoas relevantes de outros usuários, que exige People.Read.All. Por padrão, cada resposta retorna 10 registros, mas você pode alterar isso usando o parâmetro *$top*.</span><span class="sxs-lookup"><span data-stu-id="dcf05-p118">The requests in this section allow you to search for people relevant to the signed-in user (`/me`) and other users in the signed-in user’s organization. These requests require the People.Read permission, with the exception of searching other users’ relevant people, which requires People.Read.All. By default, each response returns 10 records, but you can change this by using the *$top* parameter.</span></span>
+<span data-ttu-id="de3c0-p117">As solicitações nesta seção permitem procurar pessoas relevantes para o usuário conectado (`/me`) e para outros usuários na organização do usuário conectado. Essas solicitações requerem a permissão People.Read, com exceção da pesquisa de pessoas relevantes de outros usuários, que exige People.Read.All. Por padrão, cada resposta retorna 10 registros, mas você pode alterar isso usando o parâmetro *$top*.</span><span class="sxs-lookup"><span data-stu-id="de3c0-p117">The requests in this section allow you to search for people relevant to the signed-in user (`/me`) and other users in the signed-in user’s organization. These requests require the People.Read permission, with the exception of searching other users’ relevant people, which requires People.Read.All. By default, each response returns 10 records, but you can change this by using the *$top* parameter.</span></span>
 
-### <a name="use-search-to-select-people"></a><span data-ttu-id="dcf05-182">Usar a pesquisa para selecionar pessoas</span><span class="sxs-lookup"><span data-stu-id="dcf05-182">Use search to select people</span></span>
+### <a name="use-search-to-select-people"></a><span data-ttu-id="de3c0-179">Usar a pesquisa para selecionar pessoas</span><span class="sxs-lookup"><span data-stu-id="de3c0-179">Use search to select people</span></span>
 
-<span data-ttu-id="dcf05-183">Use o parâmetro *$search* para selecionar as pessoas que atendem a determinado conjunto de critérios.</span><span class="sxs-lookup"><span data-stu-id="dcf05-183">Use the *$search* parameter to select people who meet a particular set of criteria.</span></span>
+<span data-ttu-id="de3c0-180">Use o parâmetro *$search* para selecionar as pessoas que atendem a determinado conjunto de critérios.</span><span class="sxs-lookup"><span data-stu-id="de3c0-180">Use the *$search* parameter to select people who meet a particular set of criteria.</span></span>
 
-<span data-ttu-id="dcf05-184">A consulta de pesquisa a seguir retorna pessoas relevantes para `/me` cujo **displayName** ou \*emailAddress" tem uma palavra que começa com a letra "j".</span><span class="sxs-lookup"><span data-stu-id="dcf05-184">The following search query returns people relevant to `/me` whose **displayName** or \*emailAddress" has a word that begins with the letter "j".</span></span>
+<span data-ttu-id="de3c0-181">A consulta de pesquisa a seguir retorna pessoas relevantes para `/me` cujo **displayName** ou \*emailAddress" tem uma palavra que começa com a letra "j".</span><span class="sxs-lookup"><span data-stu-id="de3c0-181">The following search query returns people relevant to `/me` whose **displayName** or \*emailAddress" has a word that begins with the letter "j".</span></span>
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people/?$search=j
 ```
 
-<span data-ttu-id="dcf05-p119">O exemplo a seguir mostra a resposta. Por padrão, cada resposta retorna 10 registros. Você pode alterar isso usando o parâmetro *$top*. Este exemplo usa *$top* para limitar a resposta a três registros.</span><span class="sxs-lookup"><span data-stu-id="dcf05-p119">The following example shows the response. By default, each response returns 10 records. You can change this using the *$top* parameter. This example uses *$top* to limit the response to three records.</span></span>
+<span data-ttu-id="de3c0-p118">O exemplo a seguir mostra a resposta. Por padrão, cada resposta retorna 10 registros. Você pode alterar isso usando o parâmetro *$top*. Este exemplo usa *$top* para limitar a resposta a três registros.</span><span class="sxs-lookup"><span data-stu-id="de3c0-p118">The following example shows the response. By default, each response returns 10 records. You can change this using the *$top* parameter. This example uses *$top* to limit the response to three records.</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -935,9 +935,9 @@ Content-type: application/json
 }
 ```
 
-### <a name="perform-a-fuzzy-search"></a><span data-ttu-id="dcf05-189">Realizar uma pesquisa difusa</span><span class="sxs-lookup"><span data-stu-id="dcf05-189">Perform a fuzzy search</span></span>
+### <a name="perform-a-fuzzy-search"></a><span data-ttu-id="de3c0-186">Realizar uma pesquisa difusa</span><span class="sxs-lookup"><span data-stu-id="de3c0-186">Perform a fuzzy search</span></span>
 
-<span data-ttu-id="dcf05-190">As pesquisas implementam um algoritmo de correspondência difusa.</span><span class="sxs-lookup"><span data-stu-id="dcf05-190">Searches implement a fuzzy matching algorithm.</span></span> <span data-ttu-id="dcf05-191">Retornarão resultados com base em uma correspondência exata e também em Inferências sobre a intenção da pesquisa.</span><span class="sxs-lookup"><span data-stu-id="dcf05-191">They will return results based on an exact match and also on inferences about the intent of the search.</span></span> <span data-ttu-id="dcf05-192">Por exemplo, imagine que um usuário com o nome de exibição "Carlos Lima" e o endereço de email carloslim@example.com que esteja no conjunto **pessoas** do usuário conectado.</span><span class="sxs-lookup"><span data-stu-id="dcf05-192">For example, imagine a user with a display name of "Tyler Lee" and an email address of tylerle@example.com who is in the **people** collection of the signed-in user.</span></span> <span data-ttu-id="dcf05-193">Todas as pesquisas a seguir retornarão esse usuário Carlos como um dos resultados.</span><span class="sxs-lookup"><span data-stu-id="dcf05-193">All of the following searches will return this user Tyler as one of the results.</span></span>
+<span data-ttu-id="de3c0-187">As pesquisas implementam um algoritmo de correspondência difusa.</span><span class="sxs-lookup"><span data-stu-id="de3c0-187">Searches implement a fuzzy matching algorithm.</span></span> <span data-ttu-id="de3c0-188">Retornarão resultados com base em uma correspondência exata e também em Inferências sobre a intenção da pesquisa.</span><span class="sxs-lookup"><span data-stu-id="de3c0-188">They will return results based on an exact match and also on inferences about the intent of the search.</span></span> <span data-ttu-id="de3c0-189">Por exemplo, imagine um usuário com um nome de exibição de "Tyler Lee" e um endereço de email tylerle@example.com, o qual está na coleção de **pessoas** do usuário conectado.</span><span class="sxs-lookup"><span data-stu-id="de3c0-189">For example, imagine a user with a display name of "Tyler Lee" and an email address of tylerle@example.com who is in the people collection of the signed-in user.</span></span> <span data-ttu-id="de3c0-190">Todas as pesquisas a seguir retornarão esse usuário Tyler como um dos resultados.</span><span class="sxs-lookup"><span data-stu-id="de3c0-190">All of the following searches will return this user Tyler as one of the results.</span></span>
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people?$search="tyler"                //matches both Tyler's name and email
@@ -946,3 +946,32 @@ GET https://graph.microsoft.com/v1.0/me/people?$search="tylerle@example.com"  //
 GET https://graph.microsoft.com/v1.0/me/people?$search="tiler"                //fuzzy match with Tyler's name
 GET https://graph.microsoft.com/v1.0/me/people?$search="tyler lee"            //matches Tyler's name. Note the quotes to enclose the space.
 ```
+
+### <a name="working-with-feature-implementation"></a><span data-ttu-id="de3c0-191">Trabalhando com implementação de recursos</span><span class="sxs-lookup"><span data-stu-id="de3c0-191">Working with feature implementation</span></span>
+ 
+<span data-ttu-id="de3c0-192">Deve haver um relacionamento público entre o proprietário do perfil e as outras pessoas para que essas pessoas apareçam na lista do proprietário do perfil.</span><span class="sxs-lookup"><span data-stu-id="de3c0-192">There must be a public relationship between the profile owner and the other people in order for those people to show up on the profile owner's list.</span></span> <span data-ttu-id="de3c0-193">A ilustração a seguir mostra um Usuário A, um índice de relacionamentos com outros usuários (Usuário B) e um perfil público mostrando um subconjunto de relacionamentos de usuários.</span><span class="sxs-lookup"><span data-stu-id="de3c0-193">The following illustration shows a User A, an index of relationships with other users (User B), and a public profile showing a subset of user relationships.</span></span>
+
+![Imagem sobre trabalhar com relacionamentos](images/working-with.png)
+ 
+<span data-ttu-id="de3c0-195">A seguir, exemplos de relações públicas:</span><span class="sxs-lookup"><span data-stu-id="de3c0-195">The following are examples of public relationships:</span></span>
+
+- <span data-ttu-id="de3c0-196">Indivíduos conectados no organograma: Gerente, Subordinado direto, Colegas (compartilham o mesmo gerente)</span><span class="sxs-lookup"><span data-stu-id="de3c0-196">Individuals connected in the org chart: Manager, Direct report, Peers (share the same manager)</span></span> 
+- <span data-ttu-id="de3c0-197">Membros de um grupo público ou lista de distribuição com menos de 30 pessoas.</span><span class="sxs-lookup"><span data-stu-id="de3c0-197">Members of a public group or distribution list with fewer than 30 people.</span></span> <span data-ttu-id="de3c0-198">Os grupos públicos têm listas de membros que estão disponíveis no diretório.</span><span class="sxs-lookup"><span data-stu-id="de3c0-198">Public groups have membership lists that are available in the directory.</span></span>
+ 
+<span data-ttu-id="de3c0-199">Se o proprietário do perfil se comunicar com alguém e não houver nenhum relacionamento público entre eles, como uma conexão de organograma ou um grupo em comum, o fato de eles estarem se comunicando não será visível para outras pessoas.</span><span class="sxs-lookup"><span data-stu-id="de3c0-199">If the profile owner communicates with someone and there is no public relationship between them, such as an org chart connection or a group in common, the fact that they've been communicating will not be visible to others.</span></span>
+
+<span data-ttu-id="de3c0-200">A classificação das pessoas − ou seja, a ordem em que aparecem na página do proprietário do perfil − é determinada pela comunicação privada e pública entre o proprietário do perfil e a pessoa na lista.</span><span class="sxs-lookup"><span data-stu-id="de3c0-200">The ranking of people - that is, the order in which they appear on the profile owner's page - is determined by the private and public communication between the profile owner and the person on the list.</span></span>
+ 
+<span data-ttu-id="de3c0-201">Alguns exemplos de comunicação privada:</span><span class="sxs-lookup"><span data-stu-id="de3c0-201">Examples of a communication break include:</span></span>
+- <span data-ttu-id="de3c0-202">Enviar emails um ao outro em que o nome da outra pessoa está na linha PARA</span><span class="sxs-lookup"><span data-stu-id="de3c0-202">Sending emails to each other where the name of the other person is in the TO line</span></span>
+- <span data-ttu-id="de3c0-203">Convidar usuários para reuniões incluindo seus nomes no convite da agenda</span><span class="sxs-lookup"><span data-stu-id="de3c0-203">Inviting users to meetings by including their name in the calendar invite</span></span> 
+ 
+<span data-ttu-id="de3c0-204">Alguns exemplos de interação pública:</span><span class="sxs-lookup"><span data-stu-id="de3c0-204">Examples of public interaction include:</span></span>
+- <span data-ttu-id="de3c0-205">Enviar ou receber emails diretamente um ao outro como parte de um grupo público</span><span class="sxs-lookup"><span data-stu-id="de3c0-205">Sending or receiving emails to/from each other as part of a public group</span></span> 
+- <span data-ttu-id="de3c0-206">Convidar usuários para reuniões como parte de um grupo ou onde mais de X pessoas são convidadas</span><span class="sxs-lookup"><span data-stu-id="de3c0-206">Inviting users to meetings as part of group, or where more than X people are invited</span></span>
+ 
+<span data-ttu-id="de3c0-207">A classificação não muda com base em quem é o usuário A (a pessoa que está vendo a página de outra pessoa).</span><span class="sxs-lookup"><span data-stu-id="de3c0-207">The ranking doesn’t change based on who User A is (the person looking at someone else's page).</span></span> <span data-ttu-id="de3c0-208">A classificação é determinada pelo nível de interação entre o Usuário B (proprietário do perfil) e o Usuário C (pessoa que aparece na lista do proprietário do perfil).</span><span class="sxs-lookup"><span data-stu-id="de3c0-208">The ranking is determined by the interaction level between User B (profile owner) and User C (person showing up on profile owner's list).</span></span>
+ 
+<span data-ttu-id="de3c0-209">Para que o Usuário C apareça, o proprietário do perfil deve estar em um grupo/DL relativamente pequeno com esse usuário que é público (o que significa que a lista de membros está disponível no diretório).</span><span class="sxs-lookup"><span data-stu-id="de3c0-209">In order for User C to appear, the profile owner must be in a relatively small group/DL with that user that is public (meaning the membership list is available in the directory).</span></span>
+ 
+<span data-ttu-id="de3c0-210">Pessoas externas à organização não serão exibidas na lista do proprietário do perfil.</span><span class="sxs-lookup"><span data-stu-id="de3c0-210">People external to the organization will not show on the profile owner's list.</span></span> <span data-ttu-id="de3c0-211">As pessoas com as quais eles se comunicam por email ou se encontram, mas que não fazem parte da mesma organização, não serão exibidas na seção Trabalhando com.</span><span class="sxs-lookup"><span data-stu-id="de3c0-211">People they email or meet with, but who are not part of the same organization, will not show up in the Working with section.</span></span>
