@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: e3f559671f375450cf792fe4bf0f4530a4a759d2
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 958f51c4324385ad19aca7b1abfcd8c7789ea712
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31518599"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782139"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -17,6 +17,35 @@ Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as 
 Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em [problemas conhecidos](known-issues.md).
 
 ## <a name="april-2019"></a>Abril de 2019
+
+### <a name="microsoft-intune-apis"></a>APIs do Microsoft Intune
+|Tipo de alteração|Versão|Descrição|
+|:---|:---|:---|
+|Adição|beta|Foram adicionadas novas entidades:<br/>[androidDeviceOwnerCompliancePolicy](/graph/api/resources/intune-deviceconfig-androiddeviceownercompliancepolicy?view=graph-rest-beta)<br/><br/>[macOSExtensionsConfiguration](/graph/api/resources/intune-deviceconfig-macosextensionsconfiguration?view=graph-rest-beta)<br/><br/>[mobileAppDependency](/graph/api/resources/intune-apps-mobileappdependency?view=graph-rest-beta)<br/><br/>[mobileAppRelationship](/graph/api/resources/intune-apps-mobileapprelationship?view=graph-rest-beta)<br/><br/>|
+|Adição|beta|Foram adicionados novos tipos complexos:<br/>[macOSKernelExtension](/graph/api/resources/intune-deviceconfig-macoskernelextension?view=graph-rest-beta)<br/><br/>[macOSLaunchItem](/graph/api/resources/intune-deviceconfig-macoslaunchitem?view=graph-rest-beta)<br/><br/>[mobileAppRelationshipState](/graph/api/resources/intune-apps-mobileapprelationshipstate?view=graph-rest-beta)<br/><br/>[win32LobAppFileSystemRequirement](/graph/api/resources/intune-apps-win32lobappfilesystemrequirement?view=graph-rest-beta)<br/><br/>[win32LobAppPowerShellScriptRequirement](/graph/api/resources/intune-apps-win32lobapppowershellscriptrequirement?view=graph-rest-beta)<br/><br/>[win32LobAppRegistryRequirement](/graph/api/resources/intune-apps-win32lobappregistryrequirement?view=graph-rest-beta)<br/><br/>[win32LobAppRequirement](/graph/api/resources/intune-apps-win32lobapprequirement?view=graph-rest-beta)<br/><br/>|
+|Adição|Beta|Foram adicionados novos tipos de enumeração:<br/>[androidDeviceOwnerPlayStoreMode](/graph/api/resources/intune-deviceconfig-androiddeviceownerplaystoremode?view=graph-rest-beta)<br/><br/>[mobileAppDependecyType](/graph/api/resources/intune-apps-mobileappdependecytype?view=graph-rest-beta)<br/><br/>[win32LobAppPowerShellScriptDetectionType](/graph/api/resources/intune-apps-win32lobapppowershellscriptdetectiontype?view=graph-rest-beta)<br/><br/>|
+|Adição|beta|A ação [updateRelationships](/graph/api/intune-apps-mobileapp-updaterelationships?view=graph-rest-beta)<br/> foi adicionada a [mobileApp](/graph/api/resources/intune-apps-mobileapp?view=graph-rest-beta)<br/> |
+|Adição|beta|A ação **import** foi adicionada à coleção [importedWindowsAutopilotDeviceIdentity](/graph/api/resources/intune-enrollment-importedwindowsautopilotdeviceidentity?view=graph-rest-beta)<br/>   |
+|Adição|beta|A função [getRelatedAppStates](/graph/api/intune-apps-mobileapp-getrelatedappstates?view=graph-rest-beta)<br/> foi adicionada a [mobileApp](/graph/api/resources/intune-apps-mobileapp?view=graph-rest-beta)<br/> |
+|Adição|beta|As propriedades **kioskModeBluetoothConfigurationEnabled**, **kioskModeWiFiConfigurationEnabled**, **passwordMinimumLetterCharacters**, ** passwordMinimumLowerCaseCharacters**, **passwordMinimumNonLetterCharacters**, **passwordMinimumNumericCharacters**, ** passwordMinimumSymbolCharacters**, **passwordMinimumUpperCaseCharacters** e **playStoreMode** foram adicionadas à entidade [ androidDeviceOwnerGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration?view=graph-rest-beta)<br/>  |
+|Adição|beta|A propriedade **subjectAlternativeNameType** foi adicionada à entidade [androidForWorkPkcsCertificateProfile](/graph/api/resources/intune-deviceconfig-androidforworkcertificateprofilebase?view=graph-rest-beta)<br/>  |
+|Exclusão|beta|A propriedade **subjectAlternativeNameType** foi removida da entidade [androidForWorkPkcsCertificateProfile](/graph/api/resources/intune-deviceconfig-androidforworkpkcscertificateprofile?view=graph-rest-beta)<br/>  |
+|Exclusão|beta|A propriedade **subjectAlternativeNameType** foi removida da entidade [androidForWorkScepCertificateProfile](/graph/api/resources/intune-deviceconfig-androidforworkscepcertificateprofile?view=graph-rest-beta)<br/>  |
+|Adição|beta|A propriedade **subjectAlternativeNameType** foi adicionada à entidade [androidWorkProfileCertificateProfileBase](/graph/api/resources/intune-deviceconfig-androidworkprofilecertificateprofilebase?view=graph-rest-beta)<br/>  |
+|Exclusão|beta|A propriedade **subjectAlternativeNameType** foi removida da entidade [androidWorkProfilePkcsCertificateProfile](/graph/api/resources/intune-deviceconfig-androidworkprofilepkcscertificateprofile?view=graph-rest-beta)<br/>  |
+|Exclusão|beta|A propriedade **subjectAlternativeNameType** foi removida da entidade [androidWorkProfileScepCertificateProfile](/graph/api/resources/intune-deviceconfig-androidworkprofilescepcertificateprofile?view=graph-rest-beta)<br/>  |
+|Adição|beta|A propriedade **deviceNameTemplate** foi adicionada à entidade [depEnrollmentBaseProfile](/graph/api/resources/intune-enrollment-depenrollmentbaseprofile?view=graph-rest-beta)<br/>  |
+|Adição|beta|A propriedade **importId** foi adicionada à entidade [importedWindowsAutopilotDeviceIdentity](/graph/api/resources/intune-enrollment-importedwindowsautopilotdeviceidentity?view=graph-rest-beta)<br/>  |
+|Adição|beta|As propriedades **autoLaunchItems**, **adminShowHostInfo**, **loginWindowText**, **authorizedUsersListHidden**, ** authorizedUsersListHideLocalUsers**, **authorizedUsersListHideMobileAccounts**, **authorizedUsersListIncludeNetworkUsers**, ** authorizedUsersListHideAdminUsers**, **authorizedUsersListShowOtherManagedUsers**, **shutDownDisabled**, **restartDisabled**, **sleepDisabled**, **consoleAccessDisabled**, **shutDownDisabledWhileLoggedIn**, **restartDisabledWhileLoggedIn**, **powerOffDisabledWhileLoggedIn**, **logOutDisabledWhileLoggedIn** e **screenLockDisableImmediate** foram adicionadas à entidade [macOSDeviceFeaturesConfiguration](/graph/api/resources/intune-deviceconfig-macosdevicefeaturesconfiguration?view=graph-rest-beta)<br/>  |
+|Adição|beta|A propriedade **dependentAppCount** foi adicionada à entidade [mobileApp](/graph/api/resources/intune-apps-mobileapp?view=graph-rest-beta)<br/>  |
+|Adição|beta|A propriedade **requirementRules** foi adicionada à entidade [win32LobApp](/graph/api/resources/intune-apps-win32lobapp?view=graph-rest-beta)<br/>  |
+|Exclusão|beta|A propriedade **tpmRequired** foi removida da entidade [windows10CompliancePolicy](/graph/api/resources/intune-deviceconfig-windows10compliancepolicy?view=graph-rest-beta)<br/>  |
+|Adição|beta|A propriedade **groupTag** foi adicionada à entidade [windowsAutopilotDeviceIdentity](/graph/api/resources/intune-enrollment-windowsautopilotdeviceidentity?view=graph-rest-beta)<br/>  |
+|Adição|beta|A propriedade de navegação **users** foi adicionada à entidade [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta)<br/>  |
+|Adição|beta|A propriedade de navegação **relationships** foi adicionada à entidade [mobileApp](/graph/api/resources/intune-apps-mobileapp?view=graph-rest-beta)<br/>  |
+|Adição|beta|A propriedade **customPrivacyMessage** foi adicionada ao tipo complexo [intuneBrand](/graph/api/resources/intune-onboarding-intunebrand?view=graph-rest-beta)<br/>  |
+|Adição|beta|Os membros **dependencyFailedToInstall**, **dependencyWithRequirementsNotMet**, **dependencyPendingReboot**, ** dependencyWithAutoInstallDisabled**, **autoInstallDisabled**, **installingDependencies**, **powerShellScriptRequirementNotMet**, **registryRequirementNotMet** e **fileSystemRequirementNotMet** foram adicionados ao tipo de enumeração [resultantAppStateDetail](/graph/api/resources/intune-apps-resultantappstatedetail?view=graph-rest-beta)<br/>  |
+|Adição|beta|O membro **doesNotExist** foi adicionado ao tipo de enumeração [win32LobAppFileSystemDetectionType](/graph/api/resources/intune-apps-win32lobappfilesystemdetectiontype?view=graph-rest-beta)<br/>  |
 
 ### <a name="microsoft-intune-apis"></a>APIs do Microsoft Intune
 |Tipo de alteração|Versão|Descrição|
@@ -2617,7 +2646,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Alteração          | v1.0 e beta | As "extensões de dados do Office 365" anteriores foram renomeadas como "abrir extensões". |
-| Adição        | Beta          | Foram adicionados recursos que oferecem suporte a [extensões abertas](extensibility-overview.md#open-extensions): <br/>administrative unit<br/>device<br/>grupo<br/>organization<br/>user<br/>Veja o seguinte exemplo:<br/>[Adicionar dados personalizados aos usuários usando extensões abertas (visualização)](extensibility-open-users.md) |
+| Adição        | Beta          | Foram adicionados recursos que oferecem suporte a [extensões abertas](extensibility-overview.md#open-extensions): <br/>administrative unit<br/>device<br/>group<br/>organization<br/>user<br/>Veja o seguinte exemplo:<br/>[Adicionar dados personalizados aos usuários usando extensões abertas (visualização)](extensibility-open-users.md) |
 
 ### <a name="directory-apis"></a>APIs de diretório
 
