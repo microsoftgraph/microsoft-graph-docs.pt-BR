@@ -2,12 +2,13 @@
 title: tipo de recurso chatMessageMention
 description: 'Representa uma menção em uma entidade chat. A menção pode ser a um usuário, uma equipe, um bot ou um canal. '
 localization_priority: Normal
-ms.openlocfilehash: 45b4c60e22f727210150a64078935741dfb71640
-ms.sourcegitcommit: 953895b28b6bae6e17eead938565fde289c49ef7
+author: nkramer
+ms.openlocfilehash: 5d7304325e48c87bfd75b57bf49585f66a77b262
+ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "31481367"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "31889993"
 ---
 # <a name="chatmessagemention-resource-type"></a>tipo de recurso chatMessageMention
 
@@ -18,9 +19,9 @@ Representa uma menção em uma entidade [chat](chatmessage.md) . A menção pode
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|string|ID da entidade que está sendo mencionada|
-|mentionText|string|Cadeia de caracteres usada para representar a menção ex: nome de exibição do usuário, nome da equipe, etc.|
-|foi|[identitySet](identityset.md)|O usuário que foi mencionado|
+|id|int|Índice da entidade que está sendo mencionada. Corresponde à <at id="index"> marca do corpo da mensagem.|
+|mentionText|string|Cadeia de caracteres usada para representar a menção. Por exemplo, nome de exibição do usuário, nome da equipe.|
+|foi|[identitySet](identityset.md)|A entidade (usuário, aplicativo, equipe ou canal) que foi mencionada.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -34,7 +35,7 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "id": "string (identifier)",
+  "id": "number",
   "mentionText": "string",
   "mentioned": "microsoft.graph.identitySet"
  }

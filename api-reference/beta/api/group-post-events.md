@@ -4,12 +4,12 @@ description: Use esta API para criar um novo event.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 193cb6214d807c329d135f026f239bd6a36c236e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 978f156302380edc05df79ec3a53c1ab0f853f41
+ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529807"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "31889951"
 ---
 # <a name="create-event"></a>Criar evento
 
@@ -79,7 +79,7 @@ Este é um exemplo de resposta.
   "@odata.type": "microsoft.graph.event"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 285
 

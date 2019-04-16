@@ -1,12 +1,12 @@
 ---
 title: Implantações de nuvens nacionais
 description: Além de uma rede global de datacenters, os serviços em nuvem da Microsoft estão disponíveis em três nuvens nacionais separadas. Essas versões de nuvem nacionais são instâncias isoladas de rede física e lógica dos serviços de nuvem corporativa da Microsoft que são confinados nas bordas geográficas de países específicos e operados pela equipe local.
-ms.openlocfilehash: f04da510e46572140c70b0df89eefeac57974b00
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: a32d8bde766718aa0f6f6080ed4b8ff4e3e7f520
+ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31518501"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "31889902"
 ---
 # <a name="national-cloud-deployments"></a>Implantações de nuvem nacional
 
@@ -70,9 +70,9 @@ Os seguintes recursos do Microsoft Graph geralmente estão disponíveis no `/v1.
 | SharePoint| ✔ | ✔ | ✔ |
 | Planner|✔ |✔ |✔ |
 | Relatórios  |➖| ✔ |➖|
-| Webhooks  | ➖|✔* |✔* |
+| Notificações de alteração (WebHooks)  | ➖|✔* |✔* |
 | Consulta delta | ➖ | ➖| ➖ |
-|Extensões de esquema de diretório |➖|➖|➖|
+| Extensões de esquema de diretório |➖|➖|➖|
 | Extensões de tipo aberto|➖|➖|➖|
   
 Os seguintes recursos adicionais do Microsoft Graph estão disponíveis na visualização (no `/beta` ponto de extremidade) em todas as implantações de nuvem nacionais, exceto quando observado:
@@ -80,6 +80,7 @@ Os seguintes recursos adicionais do Microsoft Graph estão disponíveis na visua
 * Contatos organizacionais
 * Aplicativos
 * Entidades de serviço
+* Notificações de alteração (WebHooks)
 
 (*) Suporte limitado somente para o Exchange e serviços do OneDrive. Não há suporte para os serviços do Azure AD. 
 

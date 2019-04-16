@@ -1,21 +1,21 @@
 ---
-title: Obtenha uma resposta a uma mensagem de canal
-description: Obtenha uma única resposta a uma mensagem em um canal de uma equipe.
+title: Obter uma resposta a uma mensagem de canal
+description: Obter uma única resposta a uma mensagem em um canal de uma equipe.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1bfd1ab079119a55cd9a031dc6a42e01074288be
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: e61996d8f23e2606598954ce73ce0a4270308126
+ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515591"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "31889965"
 ---
-# <a name="get-a-reply-to-a-channel-message"></a>Obtenha uma resposta a uma mensagem de canal
+# <a name="get-a-reply-to-a-channel-message"></a>Obter uma resposta a uma mensagem de canal
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha uma única resposta a uma [mensagem](../resources/chatmessage.md) em um [canal](../resources/channel.md) de uma equipe.
+Obter uma única resposta a uma [mensagem](../resources/chatmessage.md) em um [canal](../resources/channel.md) de uma equipe.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -33,7 +33,7 @@ GET /teams/{id}/channels/{id}/messages/{id}/replies/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Os [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) não são suportados no momento.
+Atualmente, os [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) não têm suporte.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
@@ -44,7 +44,7 @@ Os [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/co
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [chatmessage](../resources/chatmessage.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [chatmessage](../resources/chatmessage.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
@@ -98,9 +98,14 @@ Content-length: 201
   ],
   "mentions": [
       {
-          "type": "user",
           "id": "id-value ",
-          "mentionText": "Test User"
+          "mentionText": "Test User",
+          "mentioned": {
+          "user": {
+            "id": "id-value",
+            "displayName: "string"
+          }
+        }
       }
   ],
   "importance": "normal",

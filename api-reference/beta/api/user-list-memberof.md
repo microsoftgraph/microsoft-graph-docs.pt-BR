@@ -1,21 +1,21 @@
 ---
-title: Membro de usuário da lista
-description: Obtenha os grupos, funções de diretório e unidades administrativas que o usuário é um membro direto. Esta operação não é transitiva.
+title: Listar usuário membro
+description: Obter grupos, funções de diretório e unidades administrativas dos quais o usuário é membro direto. Essa operação não é transitiva.
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c7d7f1fa0636be0831c866c23ed133361dd24df3
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 41c436cfe2a83da00eadda94914c707e1c1aee62
+ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509704"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "31889909"
 ---
-# <a name="list-user-memberof"></a>Membro de usuário da lista
+# <a name="list-user-memberof"></a>Listar usuário membro
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha os grupos, funções de diretório e unidades administrativas que o usuário é um membro direto. Esta operação não é transitiva.
+Obter grupos, funções de diretório e unidades administrativas dos quais o usuário é membro direto. Essa operação não é transitiva.
 
 ## <a name="permissions"></a>Permissões
 
@@ -31,6 +31,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/memberOf
+or
 GET /users/{id | userPrincipalName}/memberOf
 ```
 
