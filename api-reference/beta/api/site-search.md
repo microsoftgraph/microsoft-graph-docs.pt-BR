@@ -5,18 +5,18 @@ ms.date: 09/10/2017
 title: Localizar sites do SharePoint por palavra-chave
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: ee4aa139508e6a523ea1858c6b0598a5b8aaf9b5
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.openlocfilehash: 156093c9d3b87f0a4e44f6928b36a8aa92a4ef4d
+ms.sourcegitcommit: bbe42a15dad4ffe037a6934ab6001b585b7574c2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480751"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "31904109"
 ---
 # <a name="search-for-sites"></a>Procurar sites
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Pesquise em um locatário do SharePoint por [sites][] que correspondam a palavras-chave fornecidas.
+Pesquisar em um locatário do SharePoint para [sites][] que correspondam a palavras-chave fornecidas.
 
 [sites]: ../resources/site.md
 
@@ -67,6 +67,7 @@ Content-type: application/json
   ]
 }
 ```
+>**Observação:** A única propriedade que funciona para classificação é **createdDateTime**. O filtro de pesquisa é uma pesquisa de texto livre que usa várias propriedades ao recuperar os resultados da pesquisa.
 
 <!--
 {

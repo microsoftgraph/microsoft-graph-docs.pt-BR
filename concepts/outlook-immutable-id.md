@@ -4,18 +4,18 @@ description: 'Itens do Outlook (mensagens, eventos, contatos, tarefas) têm um c
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: e88f4d457f76990dc3e6145ebf2730087ad2a74e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: e0ddee215b7574e152fa5ffc574d218d5a2f811a
+ms.sourcegitcommit: bbe42a15dad4ffe037a6934ab6001b585b7574c2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27961712"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "31904088"
 ---
 # <a name="get-immutable-identifiers-for-outlook-resources"></a>Obter identificadores imutáveis para recursos do Outlook
 
 Itens do Outlook (mensagens, eventos, contatos, tarefas) têm um comportamento interessante que você provavelmente nunca percebeu ou que lhe causou frustração significativa: suas IDs se alteram. Isso não acontece com frequência, somente se o item é movido, mas pode causar problemas reais para aplicativos que armazenam IDs offline para uso posterior. Identificadores imutáveis permitem que o aplicativo obtenha uma ID que não é alterada durante o tempo de vida do item.
 
-> **Importante:** identificadores imutáveis estão disponíveis apenas na versão /beta no Microsoft Graph.
+> **Importante:** Identificadores imutáveis estão disponíveis apenas na versão /beta do Microsoft Graph.
 
 ## <a name="how-it-works"></a>Como funciona
 
