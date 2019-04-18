@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 958f51c4324385ad19aca7b1abfcd8c7789ea712
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.openlocfilehash: c99c3eb7cb7b1085e2609b460545c111537aeefe
+ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31782139"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "31889986"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -18,6 +18,13 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 ## <a name="april-2019"></a>Abril de 2019
 
+### <a name="directory-apis"></a>APIs de diretório
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | beta | Adicione a propriedade **signInSessionsValidFromDateTime** no recurso do [usuário](/graph/api/resources/user?view=graph-rest-beta). Essa é uma renomeação das propriedades **refreshTokensValidFromDateTime**, mas ambas as propriedades terão suporte para permitir que os clientes migrem sem problemas. Nos próximos dois meses, a propriedade antiga, **refreshTokensValidFromDateTime**, será removida.|
+| Adição | beta | Adicione a ação **revokeSignInSessions** no recurso do [usuário](/graph/api/resources/user?view=graph-rest-beta). Esta é uma renomeação da ação **invalidateAllRefreshTokens**, mas ambas as ações de serviço terão suporte para permitir que os clientes migrem sem problemas. Nos próximos dois meses, a ação de serviço antiga, **invalidateAllRefreshTokens**, será removida. |
+
 ### <a name="microsoft-intune-apis"></a>APIs do Microsoft Intune
 |Tipo de alteração|Versão|Descrição|
 |:---|:---|:---|
@@ -25,27 +32,27 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 |Adição|beta|Foram adicionados novos tipos complexos:<br/>[macOSKernelExtension](/graph/api/resources/intune-deviceconfig-macoskernelextension?view=graph-rest-beta)<br/><br/>[macOSLaunchItem](/graph/api/resources/intune-deviceconfig-macoslaunchitem?view=graph-rest-beta)<br/><br/>[mobileAppRelationshipState](/graph/api/resources/intune-apps-mobileapprelationshipstate?view=graph-rest-beta)<br/><br/>[win32LobAppFileSystemRequirement](/graph/api/resources/intune-apps-win32lobappfilesystemrequirement?view=graph-rest-beta)<br/><br/>[win32LobAppPowerShellScriptRequirement](/graph/api/resources/intune-apps-win32lobapppowershellscriptrequirement?view=graph-rest-beta)<br/><br/>[win32LobAppRegistryRequirement](/graph/api/resources/intune-apps-win32lobappregistryrequirement?view=graph-rest-beta)<br/><br/>[win32LobAppRequirement](/graph/api/resources/intune-apps-win32lobapprequirement?view=graph-rest-beta)<br/><br/>|
 |Adição|Beta|Foram adicionados novos tipos de enumeração:<br/>[androidDeviceOwnerPlayStoreMode](/graph/api/resources/intune-deviceconfig-androiddeviceownerplaystoremode?view=graph-rest-beta)<br/><br/>[mobileAppDependecyType](/graph/api/resources/intune-apps-mobileappdependecytype?view=graph-rest-beta)<br/><br/>[win32LobAppPowerShellScriptDetectionType](/graph/api/resources/intune-apps-win32lobapppowershellscriptdetectiontype?view=graph-rest-beta)<br/><br/>|
 |Adição|beta|A ação [updateRelationships](/graph/api/intune-apps-mobileapp-updaterelationships?view=graph-rest-beta)<br/> foi adicionada a [mobileApp](/graph/api/resources/intune-apps-mobileapp?view=graph-rest-beta)<br/> |
-|Adição|beta|A ação **import** foi adicionada à coleção [importedWindowsAutopilotDeviceIdentity](/graph/api/resources/intune-enrollment-importedwindowsautopilotdeviceidentity?view=graph-rest-beta)<br/>   |
+|Adição|beta|A ação **import** foi adicionada à coleção [importedWindowsAutopilotDeviceIdentity](/graph/api/resources/intune-enrollment-importedwindowsautopilotdeviceidentity?view=graph-rest-beta)<br/> coleção |
 |Adição|beta|A função [getRelatedAppStates](/graph/api/intune-apps-mobileapp-getrelatedappstates?view=graph-rest-beta)<br/> foi adicionada a [mobileApp](/graph/api/resources/intune-apps-mobileapp?view=graph-rest-beta)<br/> |
-|Adição|beta|As propriedades **kioskModeBluetoothConfigurationEnabled**, **kioskModeWiFiConfigurationEnabled**, **passwordMinimumLetterCharacters**, ** passwordMinimumLowerCaseCharacters**, **passwordMinimumNonLetterCharacters**, **passwordMinimumNumericCharacters**, ** passwordMinimumSymbolCharacters**, **passwordMinimumUpperCaseCharacters** e **playStoreMode** foram adicionadas à entidade [ androidDeviceOwnerGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration?view=graph-rest-beta)<br/>  |
-|Adição|beta|A propriedade **subjectAlternativeNameType** foi adicionada à entidade [androidForWorkPkcsCertificateProfile](/graph/api/resources/intune-deviceconfig-androidforworkcertificateprofilebase?view=graph-rest-beta)<br/>  |
-|Exclusão|beta|A propriedade **subjectAlternativeNameType** foi removida da entidade [androidForWorkPkcsCertificateProfile](/graph/api/resources/intune-deviceconfig-androidforworkpkcscertificateprofile?view=graph-rest-beta)<br/>  |
-|Exclusão|beta|A propriedade **subjectAlternativeNameType** foi removida da entidade [androidForWorkScepCertificateProfile](/graph/api/resources/intune-deviceconfig-androidforworkscepcertificateprofile?view=graph-rest-beta)<br/>  |
-|Adição|beta|A propriedade **subjectAlternativeNameType** foi adicionada à entidade [androidWorkProfileCertificateProfileBase](/graph/api/resources/intune-deviceconfig-androidworkprofilecertificateprofilebase?view=graph-rest-beta)<br/>  |
-|Exclusão|beta|A propriedade **subjectAlternativeNameType** foi removida da entidade [androidWorkProfilePkcsCertificateProfile](/graph/api/resources/intune-deviceconfig-androidworkprofilepkcscertificateprofile?view=graph-rest-beta)<br/>  |
-|Exclusão|beta|A propriedade **subjectAlternativeNameType** foi removida da entidade [androidWorkProfileScepCertificateProfile](/graph/api/resources/intune-deviceconfig-androidworkprofilescepcertificateprofile?view=graph-rest-beta)<br/>  |
-|Adição|beta|A propriedade **deviceNameTemplate** foi adicionada à entidade [depEnrollmentBaseProfile](/graph/api/resources/intune-enrollment-depenrollmentbaseprofile?view=graph-rest-beta)<br/>  |
-|Adição|beta|A propriedade **importId** foi adicionada à entidade [importedWindowsAutopilotDeviceIdentity](/graph/api/resources/intune-enrollment-importedwindowsautopilotdeviceidentity?view=graph-rest-beta)<br/>  |
-|Adição|beta|As propriedades **autoLaunchItems**, **adminShowHostInfo**, **loginWindowText**, **authorizedUsersListHidden**, ** authorizedUsersListHideLocalUsers**, **authorizedUsersListHideMobileAccounts**, **authorizedUsersListIncludeNetworkUsers**, ** authorizedUsersListHideAdminUsers**, **authorizedUsersListShowOtherManagedUsers**, **shutDownDisabled**, **restartDisabled**, **sleepDisabled**, **consoleAccessDisabled**, **shutDownDisabledWhileLoggedIn**, **restartDisabledWhileLoggedIn**, **powerOffDisabledWhileLoggedIn**, **logOutDisabledWhileLoggedIn** e **screenLockDisableImmediate** foram adicionadas à entidade [macOSDeviceFeaturesConfiguration](/graph/api/resources/intune-deviceconfig-macosdevicefeaturesconfiguration?view=graph-rest-beta)<br/>  |
-|Adição|beta|A propriedade **dependentAppCount** foi adicionada à entidade [mobileApp](/graph/api/resources/intune-apps-mobileapp?view=graph-rest-beta)<br/>  |
-|Adição|beta|A propriedade **requirementRules** foi adicionada à entidade [win32LobApp](/graph/api/resources/intune-apps-win32lobapp?view=graph-rest-beta)<br/>  |
-|Exclusão|beta|A propriedade **tpmRequired** foi removida da entidade [windows10CompliancePolicy](/graph/api/resources/intune-deviceconfig-windows10compliancepolicy?view=graph-rest-beta)<br/>  |
-|Adição|beta|A propriedade **groupTag** foi adicionada à entidade [windowsAutopilotDeviceIdentity](/graph/api/resources/intune-enrollment-windowsautopilotdeviceidentity?view=graph-rest-beta)<br/>  |
-|Adição|beta|A propriedade de navegação **users** foi adicionada à entidade [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta)<br/>  |
-|Adição|beta|A propriedade de navegação **relationships** foi adicionada à entidade [mobileApp](/graph/api/resources/intune-apps-mobileapp?view=graph-rest-beta)<br/>  |
-|Adição|beta|A propriedade **customPrivacyMessage** foi adicionada ao tipo complexo [intuneBrand](/graph/api/resources/intune-onboarding-intunebrand?view=graph-rest-beta)<br/>  |
-|Adição|beta|Os membros **dependencyFailedToInstall**, **dependencyWithRequirementsNotMet**, **dependencyPendingReboot**, ** dependencyWithAutoInstallDisabled**, **autoInstallDisabled**, **installingDependencies**, **powerShellScriptRequirementNotMet**, **registryRequirementNotMet** e **fileSystemRequirementNotMet** foram adicionados ao tipo de enumeração [resultantAppStateDetail](/graph/api/resources/intune-apps-resultantappstatedetail?view=graph-rest-beta)<br/>  |
-|Adição|beta|O membro **doesNotExist** foi adicionado ao tipo de enumeração [win32LobAppFileSystemDetectionType](/graph/api/resources/intune-apps-win32lobappfilesystemdetectiontype?view=graph-rest-beta)<br/>  |
+|Adição|beta|As propriedades **kioskModeBluetoothConfigurationEnabled**, **kioskModeWiFiConfigurationEnabled**, **passwordMinimumLetterCharacters**, ** passwordMinimumLowerCaseCharacters**, **passwordMinimumNonLetterCharacters**, **passwordMinimumNumericCharacters**, ** passwordMinimumSymbolCharacters**, **passwordMinimumUpperCaseCharacters** e **playStoreMode** foram adicionadas à entidade [ androidDeviceOwnerGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration?view=graph-rest-beta)<br/> entidade|
+|Adição|beta|A propriedade **subjectAlternativeNameType** foi adicionada à entidade [androidForWorkPkcsCertificateProfile](/graph/api/resources/intune-deviceconfig-androidforworkcertificateprofilebase?view=graph-rest-beta)<br/> entidade|
+|Exclusão|beta|A propriedade **subjectAlternativeNameType** foi removida da entidade [androidForWorkPkcsCertificateProfile](/graph/api/resources/intune-deviceconfig-androidforworkpkcscertificateprofile?view=graph-rest-beta)<br/> entidade|
+|Exclusão|beta|A propriedade **subjectAlternativeNameType** foi removida da entidade [androidForWorkScepCertificateProfile](/graph/api/resources/intune-deviceconfig-androidforworkscepcertificateprofile?view=graph-rest-beta)<br/> entidade|
+|Adição|beta|A propriedade **subjectAlternativeNameType** foi adicionada à entidade [androidWorkProfileCertificateProfileBase](/graph/api/resources/intune-deviceconfig-androidworkprofilecertificateprofilebase?view=graph-rest-beta)<br/> entidade|
+|Exclusão|beta|A propriedade **subjectAlternativeNameType** foi removida da entidade [androidWorkProfilePkcsCertificateProfile](/graph/api/resources/intune-deviceconfig-androidworkprofilepkcscertificateprofile?view=graph-rest-beta)<br/> entidade|
+|Exclusão|beta|A propriedade **subjectAlternativeNameType** foi removida da entidade [androidWorkProfileScepCertificateProfile](/graph/api/resources/intune-deviceconfig-androidworkprofilescepcertificateprofile?view=graph-rest-beta)<br/> entidade|
+|Adição|beta|A propriedade **deviceNameTemplate** foi adicionada à entidade [depEnrollmentBaseProfile](/graph/api/resources/intune-enrollment-depenrollmentbaseprofile?view=graph-rest-beta)<br/> entidade|
+|Adição|beta|A propriedade **importId** foi adicionada à entidade [importedWindowsAutopilotDeviceIdentity](/graph/api/resources/intune-enrollment-importedwindowsautopilotdeviceidentity?view=graph-rest-beta)<br/> entidade|
+|Adição|beta|As propriedades **autoLaunchItems**, **adminShowHostInfo**, **loginWindowText**, **authorizedUsersListHidden**, ** authorizedUsersListHideLocalUsers**, **authorizedUsersListHideMobileAccounts**, **authorizedUsersListIncludeNetworkUsers**, ** authorizedUsersListHideAdminUsers**, **authorizedUsersListShowOtherManagedUsers**, **shutDownDisabled**, **restartDisabled**, **sleepDisabled**, **consoleAccessDisabled**, **shutDownDisabledWhileLoggedIn**, **restartDisabledWhileLoggedIn**, **powerOffDisabledWhileLoggedIn**, **logOutDisabledWhileLoggedIn** e **screenLockDisableImmediate** foram adicionadas à entidade [macOSDeviceFeaturesConfiguration](/graph/api/resources/intune-deviceconfig-macosdevicefeaturesconfiguration?view=graph-rest-beta)<br/> entidade|
+|Adição|beta|A propriedade **dependentAppCount** foi adicionada à entidade [mobileApp](/graph/api/resources/intune-apps-mobileapp?view=graph-rest-beta)<br/> entidade|
+|Adição|beta|A propriedade **requirementRules** foi adicionada à entidade [win32LobApp](/graph/api/resources/intune-apps-win32lobapp?view=graph-rest-beta)<br/> entidade|
+|Exclusão|beta|A propriedade **tpmRequired** foi removida da entidade [windows10CompliancePolicy](/graph/api/resources/intune-deviceconfig-windows10compliancepolicy?view=graph-rest-beta)<br/> entidade|
+|Adição|beta|A propriedade **groupTag** foi adicionada à entidade [windowsAutopilotDeviceIdentity](/graph/api/resources/intune-enrollment-windowsautopilotdeviceidentity?view=graph-rest-beta)<br/> entidade|
+|Adição|beta|A propriedade de navegação **users** foi adicionada à entidade [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta)<br/> entidade|
+|Adição|beta|A propriedade de navegação **relationships** foi adicionada à entidade [mobileApp](/graph/api/resources/intune-apps-mobileapp?view=graph-rest-beta)<br/> entidade|
+|Adição|beta|A propriedade **customPrivacyMessage** foi adicionada ao tipo complexo [intuneBrand](/graph/api/resources/intune-onboarding-intunebrand?view=graph-rest-beta)<br/> tipo complexo|
+|Adição|beta|Os membros **dependencyFailedToInstall**, **dependencyWithRequirementsNotMet**, **dependencyPendingReboot**, ** dependencyWithAutoInstallDisabled**, **autoInstallDisabled**, **installingDependencies**, **powerShellScriptRequirementNotMet**, **registryRequirementNotMet** e **fileSystemRequirementNotMet** foram adicionados ao tipo de enumeração [resultantAppStateDetail](/graph/api/resources/intune-apps-resultantappstatedetail?view=graph-rest-beta)<br/> tipo de enum|
+|Adição|beta|O membro **doesNotExist** foi adicionado ao tipo de enumeração [win32LobAppFileSystemDetectionType](/graph/api/resources/intune-apps-win32lobappfilesystemdetectiontype?view=graph-rest-beta)<br/> tipo de enum|
 
 ### <a name="microsoft-intune-apis"></a>APIs do Microsoft Intune
 |Tipo de alteração|Versão|Descrição|
@@ -266,7 +273,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | :-------------- | :------------ | :--------------------------------------- |
 |Adição |v1.0|Introduzido um novo tipo de recurso da entidade [identityProvider](/graph/api/resources/identityprovider?view=graph-rest-v1.0) e as operações [criar](/graph/api/identityprovider-post-identityproviders?view=graph-rest-v1.0), [lista](/graph/api/identityprovider-list?view=graph-rest-v1.0), [obter](/graph/api/identityprovider-get?view=graph-rest-v1.0), [atualizar](/graph/api/identityprovider-update?view=graph-rest-v1.0) e [excluir](/graph/api/identityprovider-delete?view=graph-rest-v1.0).|
 
-### <a name="directory-apis"></a>APIs de diretório
+### <a name="directory-apis"></a>APIs de Diretório
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -384,7 +391,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | :-------------- | :---------- | :--------------------------------------- |
 | Adição        | beta        | Adicionada nova propriedade **progress** a [dataPolicyOperation](/graph/api/resources/dataPolicyOperation?view=graph-rest-beta). Isso especifica o progresso de uma operação.
 
-### <a name="directory-apis"></a>APIs de diretório
+### <a name="directory-apis"></a>APIs de Diretório
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -540,7 +547,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Alteração | beta | Alterar a entidade [privilegedapproval](/graph/api/resources/privilegedapproval?view=graph-rest-beta).|
-| Adição | beta | A entidade [privilegedroleassignmentrequest](/graph/api/resources/privilegedroleassignmentrequest?view=graph-rest-beta) e os seguintes métodos e ações foram adicionados:<br> [Listar](/graph/api/privilegedroleassignmentrequest-list?view=graph-rest-beta) <br> [Criar](/graph/api/privilegedroleassignmentrequest-post?view=graph-rest-beta) <br> [Cancelar](/graph/api/privilegedroleassignmentrequest-cancel?view=graph-rest-beta) <br> [Meu](/graph/api/privilegedroleassignmentrequest-my?view=graph-rest-beta) |
+| Adição | beta | A entidade [privilegedroleassignmentrequest](/graph/api/resources/privilegedroleassignmentrequest?view=graph-rest-beta) e os seguintes métodos e ações foram adicionados:<br> [List](/graph/api/privilegedroleassignmentrequest-list?view=graph-rest-beta) <br> [Create](/graph/api/privilegedroleassignmentrequest-post?view=graph-rest-beta) <br> [Cancel](/graph/api/privilegedroleassignmentrequest-cancel?view=graph-rest-beta) <br> [Pessoal](/graph/api/privilegedroleassignmentrequest-my?view=graph-rest-beta) |
 | Adição | beta | Adicionada a [atualização](/graph/api/privilegedrolesettings-update?view=graph-rest-beta) para [privilegedRoleSettings](/graph/api/resources/privilegedrolesettings?view=graph-rest-beta)|
 | Remoção |beta| Foi substituído a [Auto Ativação da Atribuição de Função](/graph/api/privilegedrole_selfactivate?view=graph-rest-beta)|
 
@@ -684,7 +691,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 | **Tipo de alteração** | **Versão** | **Descrição**              |
 | :-------------- | :---------- | :--------------------------------------- |
-| Adição        | Beta       | A pontuação de segurança de APIs [API de segurança](/graph/api/resources/securescore-api-overview?view=graph-rest-beta) foi adicionada, incluindo os seguintes recursos e operações:<br/>[secureScores](/graph/api/resources/securescores?view=graph-rest-beta) (e entidades relacionadas)<br/>[Listar secureScores](/graph/api/securescores-list?view=graph-rest-beta)<br/>[secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta)<br/>[Listar secureScoreControlProfiles](/graph/api/securescorecontrolprofiles-list?view=graph-rest-beta)<br/>[Atualizar secureScoreControlProfiles](/graph/api/securescorecontrolprofiles-update?view=graph-rest-beta) |
+| Adição        | Beta       | A pontuação de segurança de APIs [API de segurança](/graph/api/resources/securescore-api-overview?view=graph-rest-beta) foi adicionada, incluindo os seguintes recursos e operações:<br/>[secureScores](/graph/api/resources/securescores?view=graph-rest-beta) (e entidades relacionadas)<br/>[Lista secureScores](/graph/api/securescores-list?view=graph-rest-beta)<br/>[secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta)<br/>[Lista secureScoreControlProfiles](/graph/api/securescorecontrolprofiles-list?view=graph-rest-beta)<br/>[Atualizar secureScoreControlProfiles](/graph/api/securescorecontrolprofiles-update?view=graph-rest-beta) |
 | Adição        | Beta        | Introduzido um novo tipo complexo [secureScoreControlStateUpdate](/graph/api/resources/securescorecontrolstateupdate?view=graph-rest-beta) |
 
 
@@ -694,7 +701,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Adição        | Beta        | Adicionado o recurso de [consulta delta](delta-query-overview.md) para as entidades a seguir no Azure Active Directory:<br/>[aplicativo](/graph/api/application-delta?view=graph-rest-beta)<br/>[directoryRole](/graph/api/directoryrole-delta?view=graph-rest-beta)<br/>[servicePrincipal](/graph/api/serviceprincipal-delta?view=graph-rest-beta) |
+| Adição        | Beta        | Adicionado o recurso de [consulta delta](delta-query-overview.md) para as entidades a seguir no Azure Active Directory:<br/>[application](/graph/api/application-delta?view=graph-rest-beta)<br/>[directoryRole](/graph/api/directoryrole-delta?view=graph-rest-beta)<br/>[servicePrincipal](/graph/api/serviceprincipal-delta?view=graph-rest-beta) |
 
 ### <a name="directory-apis"></a>APIs de diretório
 
@@ -831,13 +838,13 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 ## <a name="july-2018"></a>Julho de 2018
 
-### <a name="application-and-serviceprincipal-api-changes"></a>Alterações do aplicativo e da API servicePrincipal
+### <a name="application-and-serviceprincipal-api-changes"></a>Alterações da API Application e servicePrincipal
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Alteração          | Beta        | As APIs de [aplicativo](/graph/api/resources/application?view=graph-rest-beta) e [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) serão atualizadas na visualização (beta). O primeiro conjunto de alterações será aplicado em 16 de julho de 2018. As alterações incluem a renomeação e a reestruturação de propriedade. A maioria das propriedades existentes não estará disponível até que as alterações sejam concluídas. Novas propriedades serão adicionadas. As alterações serão lançadas na Visualização (beta) antes do lançamento da versão 1.0. |
 
-### <a name="directory-apis"></a>APIs de diretório
+### <a name="directory-apis"></a>APIs de Diretório
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -970,12 +977,12 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Adição | beta | A entidade [privilegedAccess](/graph/api/resources/privilegedaccess?view=graph-rest-beta) foi adicionada.|
-| Adição | beta | A entidade [governanceResource](/graph/api/resources/governanceresource?view=graph-rest-beta) e os seguintes métodos e ações foram adicionados: <br> [Listar](/graph/api/governanceresource-list?view=graph-rest-beta) <br> [Obter](/graph/api/governanceresource-get?view=graph-rest-beta)<br>|
+| Adição | beta | A entidade [governanceResource](/graph/api/resources/governanceresource?view=graph-rest-beta) e os seguintes métodos e ações foram adicionados: <br> [List](/graph/api/governanceresource-list?view=graph-rest-beta) <br> [Get](/graph/api/governanceresource-get?view=graph-rest-beta)<br>|
 | Adição | beta | A entidade [governanceSubject](/graph/api/resources/governancesubject?view=graph-rest-beta) foi adicionada.|
-| Adição | beta | A entidade [governanceRoleDefinition](/graph/api/resources/governanceroledefinition?view=graph-rest-beta) e os seguintes métodos e ações foram adicionados:<br> [Listar](/graph/api/governanceroledefinition-list?view=graph-rest-beta) <br> [Obter](/graph/api/governanceroledefinition-get?view=graph-rest-beta) |
-| Adição | beta | A entidade [governanceRoleAssignment](/graph/api/resources/governanceroleassignment?view=graph-rest-beta) e os seguintes métodos e ações foram adicionados:<br> [Listar](/graph/api/governanceroleassignment-list?view=graph-rest-beta) <br> [Obter](/graph/api/governanceroleassignment-get?view=graph-rest-beta) <br> [Exportar](/graph/api/governanceroleassignment-export?view=graph-rest-beta) |
-| Adição | beta | A entidade [governanceRoleAssignmentRequest](/graph/api/resources/governanceroleassignmentrequest?view=graph-rest-beta) e os seguintes métodos e ações foram adicionados:<br> [Listar](/graph/api/governanceroleassignmentrequest-list?view=graph-rest-beta) <br> [Obter](/graph/api/governanceroleassignmentrequest-get?view=graph-rest-beta) <br> [Criar](/graph/api/governanceroleassignmentrequest-post?view=graph-rest-beta) <br> [Cancelar](/graph/api/governanceroleassignmentrequest-cancel?view=graph-rest-beta) <br> [Atualizar](/graph/api/governanceroleassignmentrequest-update?view=graph-rest-beta) |
-| Adição | beta | A entidade [governanceRoleSetting](/graph/api/resources/governancerolesetting?view=graph-rest-beta) e os seguintes métodos e ações foram adicionados:<br> [Listar](/graph/api/governancerolesetting-list?view=graph-rest-beta) <br> [Obter](/graph/api/governancerolesetting-get?view=graph-rest-beta) <br> [Atualizar](/graph/api/governancerolesetting-update?view=graph-rest-beta) |
+| Adição | beta | A entidade [governanceRoleDefinition](/graph/api/resources/governanceroledefinition?view=graph-rest-beta) e os seguintes métodos e ações foram adicionados:<br> [List](/graph/api/governanceroledefinition-list?view=graph-rest-beta) <br> [Get](/graph/api/governanceroledefinition-get?view=graph-rest-beta) |
+| Adição | beta | A entidade [governanceRoleAssignment](/graph/api/resources/governanceroleassignment?view=graph-rest-beta) e os seguintes métodos e ações foram adicionados:<br> [List](/graph/api/governanceroleassignment-list?view=graph-rest-beta) <br> [Get](/graph/api/governanceroleassignment-get?view=graph-rest-beta) <br> [Export](/graph/api/governanceroleassignment-export?view=graph-rest-beta) |
+| Adição | beta | A entidade [governanceRoleAssignmentRequest](/graph/api/resources/governanceroleassignmentrequest?view=graph-rest-beta) e os seguintes métodos e ações foram adicionados:<br> [List](/graph/api/governanceroleassignmentrequest-list?view=graph-rest-beta) <br> [Get](/graph/api/governanceroleassignmentrequest-get?view=graph-rest-beta) <br> [Create](/graph/api/governanceroleassignmentrequest-post?view=graph-rest-beta) <br> [Cancel](/graph/api/governanceroleassignmentrequest-cancel?view=graph-rest-beta) <br> [Update](/graph/api/governanceroleassignmentrequest-update?view=graph-rest-beta) |
+| Adição | beta | A entidade [governanceRoleSetting](/graph/api/resources/governancerolesetting?view=graph-rest-beta) e os seguintes métodos e ações foram adicionados:<br> [List](/graph/api/governancerolesetting-list?view=graph-rest-beta) <br> [Get](/graph/api/governancerolesetting-get?view=graph-rest-beta) <br> [Update](/graph/api/governancerolesetting-update?view=graph-rest-beta) |
 | Adição | beta | Os seguintes tipos complexos foram adicionados: <br> [governancePermission](/graph/api/resources/governancepermission?view=graph-rest-beta) <br> [governanceRoleAssignmentRequestStatus](/graph/api/resources/governanceroleassignmentrequeststatus?view=graph-rest-beta) <br> [governanceRuleSetting](/graph/api/resources/governancerulesetting?view=graph-rest-beta) <br> [governanceSchedule](/graph/api/resources/governanceschedule?view=graph-rest-beta)|
 
 ### <a name="security-apis"></a>APIs de segurança
@@ -992,7 +999,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | :-------------- | :------------ | :--------------------------------------- |
 | Alteração           | Beta          | A propriedade **creatorUserId** da entidade [assinatura](/graph/api/resources/subscription?view=graph-rest-beta) foi renomeada para **creatorId** para refletir melhor o significado. |
 
-### <a name="directory-apis"></a>APIs de diretório
+### <a name="directory-apis"></a>APIs de Diretório
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -1001,7 +1008,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 ### <a name="education-api"></a>API de Educação
 
-| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| **Tipo de alteração** | **Version**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Alteração          | v1.0 e beta | O escopo **Members.Read.Hidden** é necessário para ler ou atualizar o conjunto **Members** em uma entidade [educationClass](/graph/api/resources/educationclass?view=graph-rest-1.0) usando tokens somente de aplicativo. |
 |Alteração           |Beta           |Atualizado os valores possíveis do tipo **educationSubmissionStatus** na propriedade de status do  [educationsubmission](/graph/api/resources/educationsubmission?view=graph-rest-beta).|
@@ -1020,18 +1027,18 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição        | Beta          | Foi adicionada a entidade [settings](/graph/api/resources/user-settings?view=graph-rest-beta) e os seguintes métodos CRUD: <br> [Obter](/graph/api/user-get-settings?view=graph-rest-beta) <br> [Atualizar](/graph/api/user-update-settings?view=graph-rest-beta) |
+| Adição        | Beta          | Foi adicionada a entidade [settings](/graph/api/resources/user-settings?view=graph-rest-beta) e os seguintes métodos CRUD: <br> [Get](/graph/api/user-get-settings?view=graph-rest-beta) <br> [Update](/graph/api/user-update-settings?view=graph-rest-beta) |
 
 ### <a name="microsoft-bookings-api"></a>API do Microsoft Bookings
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Adição        | Beta          | Foi adicionada a entidade [bookingBusiness](/graph/api/resources/bookingbusiness?view=graph-rest-beta) e os seguintes métodos e ações CRUD: <br> [Listar](/graph/api/bookingbusiness-list?view=graph-rest-beta) <br> [Criar](/graph/api/bookingbusiness-post-bookingbusinesses?view=graph-rest-beta) <br> [Obter](/graph/api/bookingbusiness-get?view=graph-rest-beta) <br> [Atualizar](/graph/api/bookingbusiness-update?view=graph-rest-beta) <br> [Excluir](/graph/api/bookingbusiness-delete?view=graph-rest-beta) <br> [Publicar](/graph/api/bookingbusiness-publish?view=graph-rest-beta) <br> [Unpublish](/graph/api/bookingbusiness-unpublish?view=graph-rest-beta). <br> Saiba mais sobre a integração com a [API do Microsoft Bookings](booking-concept-overview.md). |
-| Adição        | Beta          | Foi adicionada a entidade [bookingAppointment](/graph/api/resources/bookingappointment?view=graph-rest-beta) e os seguintes métodos e ação CRUD: <br> [Listar](/graph/api/bookingbusiness-list-appointments?view=graph-rest-beta) <br> [Criar](/graph/api/bookingbusiness-post-appointments?view=graph-rest-beta) <br> [Obter](/graph/api/bookingappointment-get?view=graph-rest-beta) <br> [Atualizar](/graph/api/bookingappointment-update?view=graph-rest-beta) <br> [Excluir](/graph/api/bookingappointment-delete?view=graph-rest-beta) <br> [Cancel](/graph/api/bookingappointment-cancel?view=graph-rest-beta). |
-| Adição        | Beta          | Foi adicionada a entidade [bookingCurrency](/graph/api/resources/bookingcurrency?view=graph-rest-beta) e os seguintes métodos: <br> [Listar](/graph/api/bookingcurrency-list?view=graph-rest-beta) <br> [Get](/graph/api/bookingcurrency-get?view=graph-rest-beta). |
-| Adição        | Beta          | Foi adicionada a entidade [bookingCustomer](/graph/api/resources/bookingcustomer?view=graph-rest-beta) e os seguintes métodos CRUD: <br> [Listar](/graph/api/bookingbusiness-list-customers?view=graph-rest-beta) <br> [Criar](/graph/api/bookingbusiness-post-customers?view=graph-rest-beta) <br> [Obter](/graph/api/bookingcustomer-get?view=graph-rest-beta) <br> [Atualizar](/graph/api/bookingcustomer-update?view=graph-rest-beta) <br> [Delete](/graph/api/bookingcustomer-delete?view=graph-rest-beta).|
-| Adição        | Beta          | Foi adicionada a entidade [bookingService](/graph/api/resources/bookingservice?view=graph-rest-beta) e os seguintes métodos CRUD: <br> [Listar](/graph/api/bookingbusiness-list-services?view=graph-rest-beta) <br> [Criar](/graph/api/bookingbusiness-post-services?view=graph-rest-beta) <br> [Obter](/graph/api/bookingservice-get?view=graph-rest-beta) <br> [Atualizar](/graph/api/bookingservice-update?view=graph-rest-beta) <br> [Delete](/graph/api/bookingservice-delete?view=graph-rest-beta).|
-| Adição        | Beta          | Foi adicionada a entidade [bookingStaffMember](/graph/api/resources/bookingstaffmember?view=graph-rest-beta) e os seguintes métodos CRUD: <br> [Listar](/graph/api/bookingbusiness-list-staffmembers?view=graph-rest-beta) <br> [Criar](/graph/api/bookingbusiness-post-staffmembers?view=graph-rest-beta) <br> [Obter](/graph/api/bookingstaffmember-get?view=graph-rest-beta) <br> [Atualizar](/graph/api/bookingstaffmember-update?view=graph-rest-beta) <br> [Delete](/graph/api/bookingstaffmember-delete?view=graph-rest-beta).|
+| Adição        | Beta          | Foi adicionada a entidade [bookingBusiness](/graph/api/resources/bookingbusiness?view=graph-rest-beta) e os seguintes métodos e ações CRUD: <br> [List](/graph/api/bookingbusiness-list?view=graph-rest-beta) <br> [Create](/graph/api/bookingbusiness-post-bookingbusinesses?view=graph-rest-beta) <br> [Get](/graph/api/bookingbusiness-get?view=graph-rest-beta) <br> [Atualizar](/graph/api/bookingbusiness-update?view=graph-rest-beta) <br> [Delete](/graph/api/bookingbusiness-delete?view=graph-rest-beta) <br> [Publish](/graph/api/bookingbusiness-publish?view=graph-rest-beta) <br> [Unpublish](/graph/api/bookingbusiness-unpublish?view=graph-rest-beta). <br> Saiba mais sobre a integração com a [API do Microsoft Bookings](booking-concept-overview.md). |
+| Adição        | Beta          | Foi adicionada a entidade [bookingAppointment](/graph/api/resources/bookingappointment?view=graph-rest-beta) e os seguintes métodos e ação CRUD: <br> [List](/graph/api/bookingbusiness-list-appointments?view=graph-rest-beta) <br> [Create](/graph/api/bookingbusiness-post-appointments?view=graph-rest-beta) <br> [Get](/graph/api/bookingappointment-get?view=graph-rest-beta) <br> [Atualizar](/graph/api/bookingappointment-update?view=graph-rest-beta) <br> [Delete](/graph/api/bookingappointment-delete?view=graph-rest-beta) <br> [Cancel](/graph/api/bookingappointment-cancel?view=graph-rest-beta). |
+| Adição        | Beta          | Foi adicionada a entidade [bookingCurrency](/graph/api/resources/bookingcurrency?view=graph-rest-beta) e os seguintes métodos: <br> [List](/graph/api/bookingcurrency-list?view=graph-rest-beta) <br> [Get](/graph/api/bookingcurrency-get?view=graph-rest-beta). |
+| Adição        | Beta          | Foi adicionada a entidade [bookingCustomer](/graph/api/resources/bookingcustomer?view=graph-rest-beta) e os seguintes métodos CRUD: <br> [List](/graph/api/bookingbusiness-list-customers?view=graph-rest-beta) <br> [Create](/graph/api/bookingbusiness-post-customers?view=graph-rest-beta) <br> [Get](/graph/api/bookingcustomer-get?view=graph-rest-beta) <br> [Update](/graph/api/bookingcustomer-update?view=graph-rest-beta) <br> [Delete](/graph/api/bookingcustomer-delete?view=graph-rest-beta).|
+| Adição        | Beta          | Foi adicionada a entidade [bookingService](/graph/api/resources/bookingservice?view=graph-rest-beta) e os seguintes métodos CRUD: <br> [List](/graph/api/bookingbusiness-list-services?view=graph-rest-beta) <br> [Create](/graph/api/bookingbusiness-post-services?view=graph-rest-beta) <br> [Get](/graph/api/bookingservice-get?view=graph-rest-beta) <br> [Update](/graph/api/bookingservice-update?view=graph-rest-beta) <br> [Delete](/graph/api/bookingservice-delete?view=graph-rest-beta).|
+| Adição        | Beta          | Foi adicionada a entidade [bookingStaffMember](/graph/api/resources/bookingstaffmember?view=graph-rest-beta) e os seguintes métodos CRUD: <br> [List](/graph/api/bookingbusiness-list-staffmembers?view=graph-rest-beta) <br> [Create](/graph/api/bookingbusiness-post-staffmembers?view=graph-rest-beta) <br> [Get](/graph/api/bookingstaffmember-get?view=graph-rest-beta) <br> [Update](/graph/api/bookingstaffmember-update?view=graph-rest-beta) <br> [Delete](/graph/api/bookingstaffmember-delete?view=graph-rest-beta).|
 | Adição        | Beta          | Os seguintes tipos complexos foram adicionados: <br> [bookingNamedEntity](/graph/api/resources/bookingnamedentity?view=graph-rest-beta) <br> [bookingPerson](/graph/api/resources/bookingperson?view=graph-rest-beta) <br> [bookingReminder](/graph/api/resources/bookingreminder?view=graph-rest-beta) <br> [bookingWorkHours](/graph/api/resources/bookingworkhours?view=graph-rest-beta) <br> [bookingWorkTimeSlot](/graph/api/resources/bookingworktimeslot?view=graph-rest-beta).|
 
 ### <a name="microsoft-intune-apis"></a>APIs do Microsoft Intune
@@ -1209,7 +1216,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 |Adição | v1.0 | Os seguintes tipos complexos foram adicionados: <br> [workingHours](/graph/api/resources/workinghours?view=graph-rest-1.0) <br> [timeZoneBase](/graph/api/resources/timezonebase?view=graph-rest-1.0) <br> [customTimeZone](/graph/api/resources/customtimezone?view=graph-rest-1.0) <br> [standardTimeZoneOffset](/graph/api/resources/standardtimezoneoffset?view=graph-rest-1.0) <br> [daylightTimeZoneOffset](/graph/api/resources/daylighttimezoneoffset?view=graph-rest-1.0)|
 
 
-### <a name="project-rome-apis"></a>APIs do Projeto Roma
+### <a name="project-rome-apis"></a>APIs do Project Rome
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -1236,7 +1243,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 | **Tipo de alteração** | **Versão** | **Descrição**              |
 | :-------------- | :---------- | :--------------------------------------- |
-| Adição        | Beta       | A [API de segurança](/graph/api/resources/security-api-overview?view=graph-rest-beta) foi adicionada, incluindo os seguintes recursos e operações:<br/>[alerta](/graph/api/resources/alert?view=graph-rest-beta) (e entidades relacionadas)<br/>[Obter alerta](/graph/api/alert-get?view=graph-rest-beta)<br/>[Listar alertas](/graph/api/alert-list?view=graph-rest-beta)<br/>[Atualizar alerta](/graph/api/alert-update?view=graph-rest-beta)<br/><br/>A seguinte documentação de suporte foi adicionada:<br/>[Erros](/graph/api/resources/security-error-codes?view=graph-rest-beta)<br/>[Integrar com um SIEM](security-siemintegration.md)
+| Adição        | Beta       | A [API de segurança](/graph/api/resources/security-api-overview?view=graph-rest-beta) foi adicionada, incluindo os seguintes recursos e operações:<br/>[alerta](/graph/api/resources/alert?view=graph-rest-beta) (e entidades relacionadas)<br/>[Obter alerta](/graph/api/alert-get?view=graph-rest-beta)<br/>[Listar alertas](/graph/api/alert-list?view=graph-rest-beta)<br/>[Atualizar alertas](/graph/api/alert-update?view=graph-rest-beta)<br/><br/>A seguinte documentação de suporte foi adicionada:<br/>[Erros](/graph/api/resources/security-error-codes?view=graph-rest-beta)<br/>[Integrar com um SIEM](security-siemintegration.md)
 
 
 ## <a name="march-2018"></a>Março de 2018
@@ -1269,7 +1276,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | Adição        | beta        | Foi adicionada a nova entidade [dataPolicyOperation](/graph/api/resources/datapolicyoperation?view=graph-rest-beta). Isso representa uma operação de política de dados enviados para fins de acompanhamento.
 | Adição        | Beta        | Foi adicionada a ação [exportPersonalData](/graph/api/user-exportpersonaldata?view=graph-rest-beta) em [users](/graph/api/resources/users?view=graph-rest-beta). Essa ação envia uma solicitação de operação de política de dados para exportar dados pessoais armazenados pela Microsoft para um usuário. |
 
-### <a name="directory-apis"></a>APIs de diretório
+### <a name="directory-apis"></a>APIs de Diretório
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -1283,7 +1290,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | :-------------- | :---------- | :--------------------------------------- |
 |Alteração|v1.0|A propriedade **legacyId** foi adicionada à entidade [tabela do Excel](/graph/api/resources/table?view=graph-rest-1.0). Isso inclui o identificador do valor numérico (tipo de dados String) que permanecerá constante para uma determinada tabela do Excel. Isso é fornecido como metadados adicionais se o aplicativo dependeu do identificador antigo usado em aplicativos cliente anteriores. Observação: a propriedade `id` e `legacyId` deve ser tratada como um valor de cadeia de caracteres opacas e não deve ser analisada para qualquer outro tipo no seu aplicativo. |
 
-### <a name="group-lifecycle-policy"></a>Política de ciclo de vida de grupo
+### <a name="group-lifecycle-policy"></a>Política de ciclo de vida do grupo
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -1649,7 +1656,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 | Tipo de alteração | Versão | Descrição                              |
 | :---------- | :------ | :--------------------------------------- |
-| Adição    | Beta    | Suporte adicional para a sincronização de identidade do Azure AD, incluindo os seguintes recursos:<br/>[Trabalho](/graph/api/resources/synchronization-synchronizationjob?view=graph-rest-beta)<br/>[Esquema](/graph/api/resources/synchronization-synchronizationschema?view=graph-rest-beta)<br/>[Modelo](/graph/api/resources/synchronization-synchronizationtemplate?view=graph-rest-beta)<br/>Confira os tópicos de recursos para obter dados sobre os métodos disponíveis.|
+| Adição    | Beta    | Suporte adicional para a sincronização de identidade do Azure AD, incluindo os seguintes recursos:<br/>[Cargo](/graph/api/resources/synchronization-synchronizationjob?view=graph-rest-beta)<br/>[Esquema](/graph/api/resources/synchronization-synchronizationschema?view=graph-rest-beta)<br/>[Modelo](/graph/api/resources/synchronization-synchronizationtemplate?view=graph-rest-beta)<br/>Confira os tópicos de recursos para obter dados sobre os métodos disponíveis.|
 
 ### <a name="education-apis"></a>APIs de educação
 
@@ -1901,13 +1908,13 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 | Adição        | beta        | As ações [CheckIn][CheckIn-beta] e [CheckOut][CheckOut-beta] foram adicionadas ao recurso [DriveItem][DriveItem-beta]. |
 | Adição        | beta        | As propriedades **expirationDateTime**, **password**, **message** e **recipients** na ação [CreateLink][CreateLink-beta] foram adicionadas ao recurso [DriveItem][DriveItem-beta]. |
 
-[Unidade]: /graph/api/resources/drive?view=graph-rest-1.0
+[Drive]: /graph/api/resources/drive?view=graph-rest-1.0
 [DriveItem]: /graph/api/resources/driveitem?view=graph-rest-1.0
 [SharedDriveItem]: /graph/api/resources/shareddriveitem?view=graph-rest-1.0
 [FolderView]: /graph/api/resources/folderview?view=graph-rest-1.0
-[Pasta]: /graph/api/resources/folder?view=graph-rest-1.0
+[Folder]: /graph/api/resources/folder?view=graph-rest-1.0
 [ItemReference]: /graph/api/resources/itemreference?view=graph-rest-1.0
-[Vídeo]: /graph/api/resources/video?view=graph-rest-1.0
+[Video]: /graph/api/resources/video?view=graph-rest-1.0
 [Drive-beta]: /graph/api/resources/drive?view=graph-rest-beta
 [DriveItem-beta]: /graph/api/resources/driveitem?view=graph-rest-beta
 [DriveItemVersion-beta]: /graph/api/resources/driveitemversion?view=graph-rest-beta
@@ -2014,7 +2021,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 [DateTimeColumn]: /graph/api/resources/datetimecolumn?view=graph-rest-1.0
 [DefaultColumnValue]: /graph/api/resources/defaultcolumnvalue?view=graph-rest-1.0
 [List-beta]: /graph/api/resources/list?view=graph-rest-beta
-[Listar]: /graph/api/resources/list?view=graph-rest-1.0
+[List]: /graph/api/resources/list?view=graph-rest-1.0
 [ListInfo-beta]: /graph/api/resources/listinfo?view=graph-rest-beta
 [ListInfo]: /graph/api/resources/listinfo?view=graph-rest-1.0
 [ListItem-beta]: /graph/api/resources/listitem?view=graph-rest-beta
@@ -2147,7 +2154,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Adição        | Beta        | Adicionados os seguintes recursos e APIs:<br/>[Atividade](/graph/api/resources/projectrome-activity?view=graph-rest-beta)<br/>[Criar ou substituir uma atividade](/graph/api/projectrome-put-activity?view=graph-rest-beta)<br/>[Excluir uma atividade](/graph/api/projectrome-delete-activity?view=graph-rest-beta)<br/>[Item do histórico](/graph/api/resources/projectrome-historyitem?view=graph-rest-beta)<br/>[Criar ou substituir um item do histórico](/graph/api/projectrome-put-historyitem?view=graph-rest-beta)<br/>[Excluir um item do histórico](/graph/api/projectrome-delete-historyitem?view=graph-rest-beta) |
+| Adição        | Beta        | Adicionados os seguintes recursos e APIs:<br/>[Atividades](/graph/api/resources/projectrome-activity?view=graph-rest-beta)<br/>[Criar ou substituir uma atividade](/graph/api/projectrome-put-activity?view=graph-rest-beta)<br/>[Excluir uma atividade](/graph/api/projectrome-delete-activity?view=graph-rest-beta)<br/>[Item do histórico](/graph/api/resources/projectrome-historyitem?view=graph-rest-beta)<br/>[Criar ou substituir um item do histórico](/graph/api/projectrome-put-historyitem?view=graph-rest-beta)<br/>[Excluir um item do histórico](/graph/api/projectrome-delete-historyitem?view=graph-rest-beta) |
 
 ### <a name="outlook-calendar"></a>Calendário do Outlook
 
@@ -2220,9 +2227,9 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 ### <a name="remove-deprecated-planner-api"></a>Remover a API do Planner descontinuada
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Exclusão        | Beta        | Foram removidas as seguintes entidades:<br/>**tarefa**<br/>**plano**<br/>**bucket**<br/>**taskDetails**<br/>**planDetails**<br/>**taskBoardTaskFormat**<br/>**planTaskBoard** |
+| Exclusão        | Beta        | Foram removidas as seguintes entidades:<br/>**task**<br/>**plan**<br/>**bucket**<br/>**taskDetails**<br/>**planDetails**<br/>**taskBoardTaskFormat**<br/>**planTaskBoard** |
 
-### <a name="project-rome"></a>Projeto Roma
+### <a name="project-rome"></a>Project Rome
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -2248,7 +2255,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Adição        | v1.0        | Adicionar o suporte à função delta para v1.0. Adicionar às seguintes entidades para realizar [consulta delta](delta-query-overview.md):<br/>contact<br/>contactFolder<br/>event<br/>group<br/>mailFolder<br/>message<br/>user<br/>Confira os seguintes exemplos:<br/>[Obter alterações incrementais para grupos](delta-query-groups.md)<br/>[Obter alterações incrementais para as mensagens em uma pasta](delta-query-messages.md)<br/>[Obter alterações incrementais para usuários](delta-query-users.md) |
+| Adição        | v1.0        | Adicionar o suporte à função delta para v1.0. Adicionar às seguintes entidades para realizar [consulta delta](delta-query-overview.md):<br/>contact<br/>contactFolder<br/>event<br/>group<br/>mailFolder<br/>message<br/>user<br/>Confira os seguintes exemplos:<br/>[Obter as alterações incrementais para grupos](delta-query-groups.md)<br/>[Obter as alterações incrementais para as mensagens em uma pasta](delta-query-messages.md)<br/>[Obter as alterações incrementais para usuários](delta-query-users.md) |
 | Alteração          | Beta        | Adicionar um novo recurso de filtragem de consulta opcional (por ID) para [users](/graph/api/user-delta?view=graph-rest-beta) e [groups](/graph/api/group-delta?view=graph-rest-beta). |
 
 ### <a name="added-user-resource-support-for-deleted-items"></a>Foi adicionado suporte a recursos de usuário para os itens excluídos
@@ -2276,13 +2283,13 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Adição        | v1.0        | Operações adicionadas a [domains](/graph/api/resources/domain?view=graph-rest-1.0).<br/>Novas entidades:</br>[domínio](/graph/api/resources/domain?view=graph-rest-1.0)<br/>[domainDnsRecord](/graph/api/resources/domaindnsrecord?view=graph-rest-1.0)<br/>[domainDnsCnameRecord](/graph/api/resources/domaindnscnamerecord?view=graph-rest-1.0)<br/>[domainDnsMxRecord](/graph/api/resources/domaindnsmxrecord?view=graph-rest-1.0)<br/>[domainDnsSrvRecord](/graph/api/resources/domaindnssrvrecord?view=graph-rest-1.0)<br/>[domainDnsTxtRecord](/graph/api/resources/domaindnstxtrecord?view=graph-rest-1.0)<br/>[domainDnsUnavailableRecord](/graph/api/resources/domaindnsunavailablerecord?view=graph-rest-1.0)<br/>Novas ações:</br>[verificar](/graph/api/domain-verify?view=graph-rest-1.0) |
+| Adição        | v1.0        | Operações adicionadas a [domains](/graph/api/resources/domain?view=graph-rest-1.0).<br/>Novas entidades:</br>[domain](/graph/api/resources/domain?view=graph-rest-1.0)<br/>[domainDnsRecord](/graph/api/resources/domaindnsrecord?view=graph-rest-1.0)<br/>[domainDnsCnameRecord](/graph/api/resources/domaindnscnamerecord?view=graph-rest-1.0)<br/>[domainDnsMxRecord](/graph/api/resources/domaindnsmxrecord?view=graph-rest-1.0)<br/>[domainDnsSrvRecord](/graph/api/resources/domaindnssrvrecord?view=graph-rest-1.0)<br/>[domainDnsTxtRecord](/graph/api/resources/domaindnstxtrecord?view=graph-rest-1.0)<br/>[domainDnsUnavailableRecord](/graph/api/resources/domaindnsunavailablerecord?view=graph-rest-1.0)<br/>Novas ações:</br>[verify](/graph/api/domain-verify?view=graph-rest-1.0) |
 
 ### <a name="added-contracts-to-v10"></a>Adicionou contratos para v1.0
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Adição        | v1.0        | Nova entidade:</br>[contrato](/graph/api/resources/contract?view=graph-rest-1.0) |
+| Adição        | v1.0        | Nova entidade:</br>[contract](/graph/api/resources/contract?view=graph-rest-1.0) |
 
 ### <a name="added-licensedetails-to-v10"></a>Adicionou licenseDetails para v1.0
 
@@ -2626,13 +2633,13 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Adição        | Beta        | Novo recurso:</br>[contrato](/graph/api/resources/contract?view=graph-rest-beta) |
+| Adição        | Beta        | Novo recurso:</br>[contract](/graph/api/resources/contract?view=graph-rest-beta) |
 
 ### <a name="add-domain-operations-to-microsoft-graph"></a>Adicionar operações de domínio ao Microsoft Graph
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Adição        | Beta        | Adicionou funções nos [domínios](/graph/api/resources/domain?view=graph-rest-beta).<br/>Novas entidades:</br>[domínio](/graph/api/resources/domain?view=graph-rest-beta)<br/>[domainDnsRecord](/graph/api/resources/domaindnsrecord?view=graph-rest-beta)<br/>[domainDnsCnameRecord](/graph/api/resources/domaindnscnamerecord?view=graph-rest-beta)<br/>[domainDnsMxRecord](/graph/api/resources/domaindnsmxrecord?view=graph-rest-beta)<br/>[domainDnsSrvRecord](/graph/api/resources/domaindnssrvrecord?view=graph-rest-beta)<br/>[domainDnsTxtRecord](/graph/api/resources/domaindnstxtrecord?view=graph-rest-beta)<br/>[domainDnsUnavailableRecord](/graph/api/resources/domaindnsunavailablerecord?view=graph-rest-beta)<br/>Novas ações:</br>[forceDelete](/graph/api/domain-forcedelete?view=graph-rest-beta)</br>[verificar](/graph/api/domain-verify?view=graph-rest-beta) |
+| Adição        | Beta        | Adicionou funções nos [domínios](/graph/api/resources/domain?view=graph-rest-beta).<br/>Novas entidades:</br>[domain](/graph/api/resources/domain?view=graph-rest-beta)<br/>[domainDnsRecord](/graph/api/resources/domaindnsrecord?view=graph-rest-beta)<br/>[domainDnsCnameRecord](/graph/api/resources/domaindnscnamerecord?view=graph-rest-beta)<br/>[domainDnsMxRecord](/graph/api/resources/domaindnsmxrecord?view=graph-rest-beta)<br/>[domainDnsSrvRecord](/graph/api/resources/domaindnssrvrecord?view=graph-rest-beta)<br/>[domainDnsTxtRecord](/graph/api/resources/domaindnstxtrecord?view=graph-rest-beta)<br/>[domainDnsUnavailableRecord](/graph/api/resources/domaindnsunavailablerecord?view=graph-rest-beta)<br/>Novas ações:</br>[forceDelete](/graph/api/domain-forcedelete?view=graph-rest-beta)</br>[verify](/graph/api/domain-verify?view=graph-rest-beta) |
 
 ### <a name="add-custom-data-to-microsoft-graph-using-schema-extensions"></a>Adicionar dados personalizados ao Microsoft Graph usando extensões de esquema
 
@@ -2668,7 +2675,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Adição        | Beta        | Nova entidade:</br>[contrato](/graph/api/resources/contract?view=graph-rest-beta) |
+| Adição        | Beta        | Nova entidade:</br>[contract](/graph/api/resources/contract?view=graph-rest-beta) |
 
 ## <a name="february-2017"></a>Fevereiro de 2017
 
@@ -2753,7 +2760,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 | **Tipo de alteração** | **Versão** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Adição        | Beta        | Adicionar uma nova função delta para as seguintes entidades realizem [consulta delta](delta-query-overview.md):<br/>contact<br/>contactFolder<br/>event<br/>group<br/>mailFolder<br/>message<br/>user<br/>Confira os seguintes exemplos:<br/>[Obter alterações incrementais para grupos (visualização)](delta-query-groups.md)<br/>[Obter alterações incrementais para mensagens em uma pasta (prévia)](delta-query-messages.md)<br/>[Obter a alterações incrementais para usuários (visualização)](delta-query-users.md) |
+| Adição        | Beta        | Adicionar uma nova função delta para as seguintes entidades realizem [consulta delta](delta-query-overview.md):<br/>contact<br/>contactFolder<br/>event<br/>group<br/>mailFolder<br/>message<br/>user<br/>Confira os seguintes exemplos:<br/>[Obter as alterações incrementais para grupos (visualização)](delta-query-groups.md)<br/>[Obter as alterações incrementais para as mensagens em uma pasta (visualização)](delta-query-messages.md)<br/>[Obter as alterações incrementais para usuários (visualização)](delta-query-users.md) |
 
 ### <a name="excel-apis"></a>APIs do Excel
 

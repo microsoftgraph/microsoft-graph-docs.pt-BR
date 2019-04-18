@@ -4,12 +4,12 @@ description: " "
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 472b1cf54582dfde21bb2137c5d4628d17664e94
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: HT
+ms.openlocfilehash: 416b059eabe277dc356e3ac9c1de5849ade8aa23
+ms.sourcegitcommit: bbe42a15dad4ffe037a6934ab6001b585b7574c2
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27928868"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "31904074"
 ---
 # <a name="branding-guidelines-for-onenote-api-developers"></a>Diretrizes de marca para desenvolvedores da API do OneNote 
  
@@ -45,7 +45,7 @@ Determinados ambientes, como dispositivos pequenos, não oferecem espaço sufici
 
 Trate o logotipo com respeito e dê a ele espaço para se destacar. Um espaço livre mínimo equivalente à altura do símbolo deve circundar o logotipo.
 
-![Logo que inclui apenas o ícone - roxo no branco e reverso](images/onenotelogoclearspace.png)
+![Logotipo mostrando psace claro que é a altura do símbolo](images/onenotelogoclearspace.png)
 
 
 <a name="size"></a>
@@ -58,7 +58,7 @@ A altura do logotipo deve ser de pelo menos 16 pixels quando aparecer na tela e 
  
 **Impressão:**&nbsp;&nbsp;5 mm (0,2 polegadas) 
 
-![Logo que inclui apenas o ícone - roxo no branco e reverso](images/onenotelogominsize.png)
+![Logotipo mostrando o tamanho mínimo para a tela e a impressão](images/onenotelogominsize.png)
 
 
 <a name="color"></a>
@@ -71,7 +71,7 @@ Quando o logotipo do OneNote é usado em fundos brancos ou claros, a cor do logo
 
 **Impressão:**&nbsp;&nbsp;C75 M100 Y0 K0 
 
-  ![Logo que inclui apenas o ícone - roxo no branco e reverso](images/onenotelogobgs.png)
+  ![Mostrando do logotipo a cor da marca preferida com planos de fundo de cor branca e marca](images/onenotelogobgs.png)
  
 Em ambientes com cores limitadas e designs de uma única cor, o logotipo pode aparecer em preto. No entanto, o logotipo nunca deve aparecer em cinza.
 <!--or white?-->
@@ -170,7 +170,7 @@ Confira a tabela abaixo para obter detalhes sobre como se referir ao OneNote em 
 
 ![Bom exemplo de logotipo em empacotamento](images/onenoteusagepackaging1.png)
 
-![Bom exemplo de logotipo em empacotamento](images/onenoteusagepackaging2.png)
+![Outra exibição de um bom exemplo de logotipo na embalagem](images/onenoteusagepackaging2.png)
 
 
 Se você tiver alguma dúvida sobre essas diretrizes ou estiver criando novas comunicações usando os recursos da marca aqui mostrados, entre em contato conosco pelo [@onenotedev](https://twitter.com/onenotedev).
