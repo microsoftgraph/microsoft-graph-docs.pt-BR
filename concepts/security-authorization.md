@@ -4,12 +4,12 @@ description: Os dados de segurança acessíveis por meio da API de Segurança do
 author: preetikr
 localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: 4b46df393b84c72efb40bb88d8cdeb7aca44449d
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.openlocfilehash: 795ac1da43c3ba67dcbc83853e4bbb0d54cdae0f
+ms.sourcegitcommit: bbe42a15dad4ffe037a6934ab6001b585b7574c2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480422"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "31904039"
 ---
 # <a name="authorization-and-the-microsoft-graph-security-api"></a>Autorização e API de Segurança do Microsoft Graph
 
@@ -119,7 +119,7 @@ Para conceder as permissões:
 
 ## <a name="assign-azure-ad-roles-to-users"></a>Atribuir funções do Microsoft Azure AD aos usuários
 
-Depois que um aplicativo receber permissões, todas as pessoas com acesso ao aplicativo (ou seja, membros do locatário do Microsoft Azure AD) receberão as permissões concedidas. Para proteger ainda mais os dados confidenciais de segurança, a API de Segurança do Microsoft Graph também exige que os usuários recebam a função **Leitor de segurança** do Microsoft Azure AD. Para mais detalhes, consulte [Atribuindo funções de administrador](https://docs.microsoft.com/pt-BR/azure/active-directory/active-directory-assign-admin-roles-azure-portal) e [Atribuir funções de administrador a um usuário](https://docs.microsoft.com/pt-BR/azure/active-directory/active-directory-users-assign-role-azure-portal).
+Depois que um aplicativo receber permissões, todas as pessoas com acesso ao aplicativo (ou seja, membros do locatário do Microsoft Azure AD) receberão as permissões concedidas. Para proteger ainda mais os dados confidenciais de segurança, a API de Segurança do Microsoft Graph também exige que os usuários recebam a função **Leitor de segurança** do Microsoft Azure AD. Para detalhes, confira [Atribuir funções de administrador](https://docs.microsoft.com/pt-BR/azure/active-directory/active-directory-assign-admin-roles-azure-portal) e [Atribuir funções de administrador a um usuário](https://docs.microsoft.com/pt-BR/azure/active-directory/active-directory-users-assign-role-azure-portal).
 
 >**Observação:** Você precisa ser um administrador de locatários para executar esta etapa.
 

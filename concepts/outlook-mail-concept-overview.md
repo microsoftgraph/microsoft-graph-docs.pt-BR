@@ -4,12 +4,12 @@ description: O Outlook é um hub de comunicação de mensagens do Office 365. El
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 71bf282eea44edc0cb0ac38953e9b1e67bc05c39
-ms.sourcegitcommit: d9d8b908061b3680e8a52790a6c9aaf8e51ceea0
+ms.openlocfilehash: 5480d174b542766ba540af97a1af99456ad21cf2
+ms.sourcegitcommit: bbe42a15dad4ffe037a6934ab6001b585b7574c2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28327982"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "31904018"
 ---
 # <a name="outlook-mail-api-overview"></a>Visão geral da API de email do Outlook
 
@@ -27,7 +27,7 @@ Ao usar o [Microsoft Graph](overview.md), você pode integrar-se ao Outlook escr
 
 Os clientes gostam da forma como o Outlook ajuda na organização. O Microsoft Graph leva esses recursos aos desenvolvedores de aplicativo, permitindo que eles criem fluxos de trabalho que otimizam a descoberta e melhoram a eficiência e a produtividade do cliente.
 
-- Os clientes costumam organizar suas mensagens de várias maneiras: alguns deixam todas as mensagens na Caixa de Entrada e simplesmente buscam por elas; outros arquivam suas mensagens em pastas. Essas pessoas gostam da abordagem flexível e intuitiva do Outlook que oferece suporte a essas duas organizações: simples e com pastas. Os aplicativos podem, de forma conveniente, [filtrar, buscar ou classificar](query-parameters.md) as mensagem em pastas específicas ou em toda a caixa de correio do usuário.
+- Os clientes organizam suas mensagens de várias maneiras - alguns deixam todas as mensagens na Caixa de Entrada e simplesmente buscam por elas; outros arquivam suas mensagens em pastas. Essas pessoas gostam da abordagem flexível e intuitiva do Outlook que oferece suporte a essas duas organizações: simples e com pastas. Os aplicativos podem, de forma conveniente, [filtrar, buscar ou classificar](query-parameters.md) as mensagem em pastas específicas ou em toda a caixa de correio do usuário.
 
 - As categorias do Outlook são diferenciadas por nome e cor. As categorias permitem aos clientes classificarem as mensagens para aumentar a organização e a descoberta. Os aplicativos podem acessar e [definir a lista de categorias mestra do usuário](/graph/api/outlookuser-post-mastercategories?view=graph-rest-1.0). Além disso, essa lista é compartilhada entre mensagens do Outlook, assim como entre eventos, contatos, tarefas e postagens em grupo e ainda permitem cenários criativos para os desenvolvedores de aplicativo. Por exemplo, um provedor de treinamento online pode codificar por cor os emails, os eventos do curso e as atribuições de acompanhamento de cada curso que o usuário esteja inscrito.
 

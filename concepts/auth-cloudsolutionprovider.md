@@ -4,12 +4,12 @@ description: Este tópico descreve como habilitar o acesso do aplicativo aos dad
 author: jackson-woods
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e354230cb8dc3a27df56ea2caf5fbaed1e066fbc
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 3ed6feeeb14203b33138b4ac551db8f29bd4a1a5
+ms.sourcegitcommit: bbe42a15dad4ffe037a6934ab6001b585b7574c2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27967487"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "31904060"
 ---
 # <a name="call-microsoft-graph-from-a-cloud-solution-provider-application"></a>Chamar o Microsoft Graph por um Provedor de Soluções na Nuvem
 

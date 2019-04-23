@@ -4,18 +4,18 @@ description: q=excelstarter).
 localization_priority: Priority
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 234130a8fa56dfdc078c694069a9fe879140d27f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: a8fcc90d4050cb6f0db2fb5e2b3a22d267f8cede
+ms.sourcegitcommit: bbe42a15dad4ffe037a6934ab6001b585b7574c2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27954880"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "31904067"
 ---
 # <a name="write-data-to-an-excel-workbook-with-microsoft-graph"></a>Gravar dados em uma pasta de trabalho do Excel com o Microsoft Graph
 
 A API REST do Excel fornece uma maneira fácil e independente de plataforma de carregar informações em uma pasta de trabalho do Excel. Este tópico mostra como gravar conjuntos de dados simples em uma pasta de trabalho do Excel em três estruturas de desenvolvimento da Web: ASP.NET, Angular e React. Você pode examinar os exemplos de código em destaque neste tópico conferindo [Exemplos do Excel Starter do Microsoft Graph no GitHub](https://github.com/microsoftgraph?utf8=%E2%9C%93&q=excelstarter).
 
-> **Observação:** todos os três exemplos gravam dados em uma pasta de trabalho do Excel denominada **demo.xlxs**. Elas fornecem esta pasta de trabalho para que você carregar em seu próprio OneDrive, mas você também pode usar o Microsoft Graph para carregar arquivos no OneDrive. Se você tiver interesse em saber quais as chamadas REST você precisa carregar em um arquivo de qualquer tipo na pasta do OneDrive raiz, veja o [exemplo de lista de tarefas pendentes da ASP.NET API do Microsoft Graph Excel](https://github.com/microsoftgraph/aspnet-todo-rest-sample).
+> **Observação:** Todos os três exemplos gravam dados em uma pasta de trabalho do Excel denominada **demo.xlsx**. Elas fornecem esta pasta de trabalho para que você carregar em seu próprio OneDrive, mas você também pode usar o Microsoft Graph para carregar arquivos no OneDrive. Se você tiver interesse em saber quais as chamadas REST você precisa carregar em um arquivo de qualquer tipo na pasta do OneDrive raiz, veja o [exemplo de lista de tarefas pendentes da ASP.NET API do Microsoft Graph Excel](https://github.com/microsoftgraph/aspnet-todo-rest-sample).
 
 Todos os três exemplos do Excel Starter fazem o mesmo: recuperam nome e endereço do usuário conectado e adicionam esses dois tipos de informações a uma nova linha na pasta de trabalho **demo.xlsx**. Você pode modificar os exemplos para adicionar mais linhas, basta adicionar informações à matriz bidimensional que representa a linha ou linhas que você deseja adicionar.
 

@@ -3,12 +3,12 @@ title: Visão geral de usuários do Microsoft Graph
 description: Os usuários são a representação de uma conta de usuário corporativa ou de estudante do Azure Active Directory (Azure AD) ou uma conta da Microsoft no Microsoft Graph. O recurso **usuário** no Microsoft Graph é um hub do qual você pode acessar as relações e os recursos que são relevantes para seus usuários.
 author: dkershaw10
 localization_priority: Priority
-ms.openlocfilehash: b9854da9225f6ce254d44672e015e07908e09294
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 272a3f49a9886e6c1964165d78d78f0151cf47a0
+ms.sourcegitcommit: bbe42a15dad4ffe037a6934ab6001b585b7574c2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855248"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "31904011"
 ---
 # <a name="overview-of-users-in-microsoft-graph"></a>Visão geral de usuários do Microsoft Graph
 
@@ -66,7 +66,7 @@ Está procurando a referência de API para esse serviço?
 
 - Saiba mais sobre como [trabalhar com usuários](/graph/api/resources/users?view=graph-rest-1.0).
 - Explore seus próprios dados no recurso **usuário** no [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-- Autentique com o Microsoft Graph [em nome de um usuário](auth-v2-user.md) ou [como um daemon ou serviço de autorização de um administrador](auth-v2-service.md).
+- Autentique com o Microsoft Graph [em nome de um usuário](auth-v2-user.md) ou [como um daemon ou serviço autorizado por um administrador](auth-v2-service.md).
 - Configure o controle de acesso e políticas para usuários com a [API do Azure AD](/graph/api/resources/azure-ad-overview?view=graph-rest-1.0).
 - Analise as [permissões](permissions-reference.md) que serão necessárias para o aplicativo acessar dados do usuário. 
 <!-- This isn't really a next step; let's remove to keep the list of links concise.>

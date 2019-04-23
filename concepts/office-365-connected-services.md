@@ -4,12 +4,12 @@ description: Você pode usar os serviços conectados no Visual Studio para confi
 localization_priority: Priority
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 66a967097e32d9321bfab44e8f648c6cabebc165
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: c8a6336a45f6c67281c865c47e299715b5497d93
+ms.sourcegitcommit: bbe42a15dad4ffe037a6934ab6001b585b7574c2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571244"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "31904025"
 ---
 # <a name="call-office-365-services-in-visual-studio-2017-with-the-microsoft-graph-api"></a>Chamar serviços do Office 365 no Visual Studio 2017 com a API do Microsoft Graph
 
@@ -33,7 +33,7 @@ Agora você está pronto para adicionar o serviço Microsoft Graph ao seu projet
 
 1. No Gerenciador de Soluções, escolha **Serviços Conectados** para abrir a guia Serviços Conectados. 
 
-2. Escolha o provedor **Acessar os Serviços do Office 365 com o Microsoft Graph**. Siga o assistente. Selecione as seguintes permissões (você pode alterar a permissões depois):
+2. Escolha o provedor de **Acesso aos Serviços do Office 365 com o Microsoft Graph**. Siga o assistente. Selecione as seguintes permissões (você pode alterá-las posteriormente):
 
     - Nas APIs **Arquivo** defina permissões como **Ter acesso total a seus arquivos**.
     - Nas APIs **Email**, defina permissões como **Enviar email como você**.

@@ -3,12 +3,12 @@ title: Problemas conhecidos com o Microsoft Graph
 description: Este artigo descreve os problemas conhecidos com o Microsoft Graph. Confira as informações sobre as atualizações mais recentes no Log de alterações do Microsoft Graph.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: ce0246f20b12bee9f1e474455f87bb3fd9396aee
-ms.sourcegitcommit: d1a9e7c8e1376a99c5a5416257889ec113613a77
+ms.openlocfilehash: 12a24d57370dfd593c6056e30db0d956266b29a1
+ms.sourcegitcommit: bbe42a15dad4ffe037a6934ab6001b585b7574c2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "30458628"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "31904053"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conhecidos com o Microsoft Graph
 
@@ -293,9 +293,9 @@ Recursos de diretório, como **dispositivo**, **grupo** e **usuário**, atualmen
 
 ### <a name="filtering-on-schema-extension-properties-not-supported-on-all-entity-types"></a>Não há suporte a filtragem em propriedades de extensão de esquema em todos os tipos de entidade
 
-Não há suporte a filtragem em propriedades de extensão de esquema (usando a expressão `$filter`) para tipos de entidade do Outlook – **contact**, **event**, **message** ou **post**.
+Não há suporte a filtragem em propriedades de extensão de esquema (usando a expressão `$filter`) para tipos de entidade do Outlook – **contato**, **evento**, **mensagem** ou **postagem**.
 
-## <a name="json-batching"></a>Processamento em lotes JSON
+## <a name="json-batching"></a>Envio em lote JSON
 
 ### <a name="no-nested-batch"></a>Nenhum lote aninhado
 

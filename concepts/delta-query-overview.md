@@ -3,12 +3,12 @@ title: Usar a consulta delta para controlar alterações nos dados do Microsoft 
 description: A consulta delta permite que aplicativos localizem entidades recém-criadas, atualizadas ou excluídas sem executar uma leitura completa do recurso de destino com cada solicitação. Os aplicativos do Microsoft Graph podem usar consulta delta para sincronizar, com eficiência, alterações com armazenamento de dados local.
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: 77f5a4eae74e40655d858fb839697aca80851afb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: e0affa6f4e3edf1289d31422dcd5833a4d5b17ff
+ms.sourcegitcommit: bbe42a15dad4ffe037a6934ab6001b585b7574c2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823861"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "31904046"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>Usar a consulta delta para controlar alterações nos dados do Microsoft Graph
 
@@ -49,7 +49,7 @@ Se um cliente usa um parâmetro de consulta, ele deve ser especificado na solici
 Para usuários e grupos, existem restrições sobre como usar alguns parâmetros de consulta:
 
 - Se um parâmetro de consulta `$select` for usado, isso indica que o cliente prefere somente controlar alterações nas propriedades ou relações especificadas na instrução `$select`. Se ocorrer uma alteração em uma propriedade que não esteja selecionada, o recurso por meio do qual essa propriedade foi alterada não aparecerá na resposta delta após uma solicitação subsequente.
-- `$expand` tem suporte somente para as propriedades de navegação `manager` e `members` para usuários e grupos, respectivamente.
+- `$expand` tem suporte apenas para as propriedades de navegação `manager` e `members` para usuários e grupos, respectivamente.
 
 - Os filtros de escopo permitem controlar alterações para um ou mais usuários ou grupos específicos por objectId. Por exemplo, a seguinte solicitação: https://graph.microsoft.com/beta/groups/delta/?$filter= id eq '477e9fc6-5de7-4406-bb2a-7e5c83c9ae5f' or id eq '004d6a07-fe70-4b92-add5-e6e37b8acd8e' retorna alterações dos grupos que correspondem às IDs especificadas no filtro de consulta.
 
@@ -91,7 +91,7 @@ A consulta delta é compatível atualmente com os seguintes recursos.
 | Itens de unidade\* | Função [delta](/graph/api/driveitem-delta?view=graph-rest-1.0) do recurso [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) |
 | Itens do Planner\*\* | Função [delta](/graph/api/planneruser-list-delta?view=graph-rest-beta) de todos os segmentos do recurso [plannerUser](/graph/api/resources/planneruser?view=graph-rest-beta) (visualização) |
 
-> \* O padrão de uso dos recursos do OneDrive é semelhante a outros recursos compatíveis com algumas diferenças secundárias de sintaxe. A consulta delta para unidades será atualizada no futuro para serem consistentes com outros tipos de recursos. Confira mais detalhes sobre a sintaxe atual em [Controlar alterações para uma unidade](/graph/api/item-delta?view=graph-rest-1.0).
+> \* O padrão de uso dos recursos do OneDrive é semelhante a outros recursos compatíveis com algumas pequenas diferenças de sintaxe. A consulta delta para unidades será atualizada no futuro para serem consistentes com outros tipos de recursos. Confira mais detalhes sobre a sintaxe atual em [Controlar alterações para uma unidade](/graph/api/driveitem-delta?view=graph-rest-1.0).
 
 > \*\* O padrão de uso dos recursos do Planner é semelhante a outros recursos compatíveis, mas com algumas diferenças.  Para saber mais, consulte [Controlar alterações para o Planner](/graph/api/planneruser-list-delta?view=graph-rest-beta).
 
