@@ -3,277 +3,289 @@ metadata: {}
 items:
   - name: Documentação do Microsoft Graph
     href: index.yml
-  - name: Visão geral do Microsoft Graph
-    href: overview.md
+  - name: Explorar
     expanded: true
     items:
-      - name: Explorar
-        expanded: true
+      - name: Visão Geral do Microsoft Graph
+        href: overview.md
+      - name: Serviços no Microsoft Graph
+        href: overview-major-services.md
+      - name: Usuários que você pode alcançar
         items:
-          - name: Serviços no Microsoft Graph
-            href: overview-major-services.md
-            expanded: true
-            items:
-              - name: Usuários que você pode alcançar
-                href: users-you-can-reach.md
-                items:
-                  - name: Implantações de nuvem nacional
-                    href: deployments.md
-                  - name: Implantações híbridas (visualização)
-                    href: hybrid-rest-support.md
-              - name: Controle de versão e suporte
-                href: versioning-and-support.md
-              - name: Termos de uso
-                href: 'https://developer.microsoft.com/graph/terms-of-use'
-          - name: Conexão de dados do Microsoft Graph (visualização)
-            href: data-connect-overview.md
-          - name: Tutoriais
+          - name: Visão Geral
+            href: users-you-can-reach.md
+          - name: Implantações de nuvem nacional
+            href: deployments.md
+          - name: Implantações híbridas (visualização)
+            href: hybrid-rest-support.md
+      - name: Conexão de dados do Microsoft Graph (visualização)
+        href: data-connect-overview.md
+      - name: Tutoriais
+        items:
+          - name: Visão Geral
             href: tutorials.md
-            items:
-              - name: Android
-                href: /graph/tutorials/android
-              - name: Angular
-                href: /graph/tutorials/angular
-              - name: ASP.NET
-                href: /graph/tutorials/aspnet
-              - name: Microsoft Flow
-                href: /graph/tutorials/flow
-              - name: Node.js
-                href: /graph/tutorials/node
-              - name: PHP
-                href: /graph/tutorials/php
-              - name: Python
-                href: /graph/tutorials/python
-              - name: Ruby
-                href: /graph/tutorials/ruby
-              - name: React
-                href: /graph/tutorials/react
-              - name: UWP
-                href: /graph/tutorials/uwp
-              - name: Xamarin
-                href: /graph/tutorials/xamarin
-      - name: Aprender
-        expanded: true
+          - name: Android
+            href: /graph/tutorials/android
+          - name: Angular
+            href: /graph/tutorials/angular
+          - name: ASP.NET
+            href: /graph/tutorials/aspnet
+          - name: Microsoft Flow
+            href: /graph/tutorials/flow
+          - name: Node.js
+            href: /graph/tutorials/node
+          - name: PHP
+            href: /graph/tutorials/php
+          - name: Python
+            href: /graph/tutorials/python
+          - name: Ruby
+            href: /graph/tutorials/ruby
+          - name: React
+            href: /graph/tutorials/react
+          - name: UWP
+            href: /graph/tutorials/uwp
+          - name: Xamarin
+            href: /graph/tutorials/xamarin
+      - name: Controle de versão e suporte
+        href: versioning-and-support.md
+      - name: Termos de uso
+        href: 'https://developer.microsoft.com/graph/terms-of-use'
+  - name: Saiba mais
+    expanded: true
+    items:
+      - name: Usuários
+        href: azuread-users-concept-overview.md
+      - name: Grupos
+        href: office365-groups-concept-overview.md
+      - name: Calendário
+        displayName: Outlook
         items:
-          - name: Usuários
-            href: azuread-users-concept-overview.md
-          - name: Grupos
-            href: office365-groups-concept-overview.md
-          - name: Calendário
+          - name: Visão Geral
             href: outlook-calendar-concept-overview.md
-            displayName: Outlook
-            items:
-              - name: Encontrar horários de reunião
-                href: findmeetingtimes-example.md
-              - name: Obter agenda de disponibilidade
-                href: outlook-get-free-busy-schedule.md
-              - name: Agendar eventos recorrentes
-                href: outlook-schedule-recurring-events.md
-              - name: Obter eventos compartilhados
-                href: outlook-get-shared-events-calendars.md
-              - name: ID imutável (visualização)
-                href: outlook-immutable-id.md
-          - name: Experiências entre dispositivos
-            href: cross-device-concept-overview.md
-            displayName: Project Rome
-            items:
-              - name: Feed de atividades
-                href: activity-feed-concept-overview.md
-              - name: Retransmissão de dispositivo (visualização)
-                href: device-relay-concept-overview.md
-              - name: Notificações (visualização)
-                href: notifications-concept-overview.md
-              - name: Criar aplicativos entre dispositivos
-                href: cross-device-app-configuration.md
-          - name: Reserva de clientes (visualização)
-            href: booking-concept-overview.md
-            displayName: 'Bookings, Microsoft Bookings'
-          - name: Acesso a dados (visualização)
-            href: data-connect-concept-overview.md
-            displayName: Microsoft Graph data connect
-            items:
-              - name: Introdução
-                href: data-connect-get-started.md
-          - name: Dispositivos e aplicativos
-            href: intune-concept-overview.md
-            displayName: Intune
-          - name: Educação
-            href: education-concept-overview.md
-          - name: Arquivos
-            href: onedrive-concept-overview.md
-            displayName: 'OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint'
-          - name: Finanças (visualização)
-            href: dynamics-business-central-concept-overview.md
-            displayname: 'Dynamics, Dynamics 365 Business Central'
-          - name: Identidade e acesso
-            href: azuread-identity-access-management-concept-overview.md
-            displaName: 'Azure AD, Microsoft identity platform'
-          - name: Email
-            href: outlook-mail-concept-overview.md
-            displayName: 'Outlook, Outlook mail'
-            items:
-              - name: Automatizar mensagens
-                href: outlook-create-send-messages.md
-              - name: Organizar mensagens
-                href: outlook-organize-messages.md
-              - name: Receber mensagens compartilhadas
-                href: outlook-share-messages-folders.md
-              - name: ID imutável (visualização)
-                href: outlook-immutable-id.md
-              - name: Enviar email de outro usuário
-                href: outlook-send-mail-from-other-user.md
-          - name: Observações
-            href: integrate-with-onenote.md
-            idsplayName: OneNote
-            items:
-              - name: Obter conteúdo do OneNote
-                href: onenote-get-content.md
-              - name: Abrir o cliente do OneNote
-                href: open-onenote-client.md
-              - name: Criar páginas
-                href: onenote-create-page.md
-              - name: Atualizar conteúdo da página
-                href: onenote-update-page.md
-              - name: 'Adicionar imagens, vídeos e arquivos'
-                href: onenote-images-files.md
-              - name: Criar elementos posicionados absolutos
-                href: onenote-abs-pos.md
-              - name: Extrair dados
-                href: onenote-extract-data.md
-              - name: Usar marcas de anotação
-                href: onenote-note-tags.md
-              - name: RECURSOS
-              - name: HTML de entrada e saída
-                href: onenote-input-output-html.md
-              - name: Práticas recomendadas
-                href: onenote-best-practices.md
-              - name: Diretrizes de identidade visual
-                href: onenote-branding.md
-              - name: Códigos de erro
-                href: onenote-error-codes.md
-          - name: Contatos pessoais
-            href: outlook-contacts-concept-overview.md
-            displayName: 'Outlook, Outlook contacts, Outlook contact, People'
-            items:
-              - name: Obter contatos compartilhados
-                href: outlook-get-shared-contacts-folders.md
-              - name: ID imutável (visualização)
-                href: outlook-immutable-id.md
-          - name: Relatórios
-            href: reportroot-concept-overview.md
-          - name: Segurança
-            href: security-concept-overview.md
-            items:
-              - name: Fluxo de dados
-                href: security-dataflow.md
-              - name: Autorização
-                href: security-authorization.md
-              - name: Integrar com um SIEM
-                href: security-siemintegration.md
-                items:
-                  - name: Splunk
-                    href: security-splunk-siemintegration.md
-                  - name: QRadar
-                    href: security-qradar-siemintegration.md
-              - name: Oportunidades de parceria
-                href: security-partner-overview.md
-          - name: Sites e listas
-            href: sharepoint-concept-overview.md
-            displayName: 'SharePoint, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal'
-          - name: Inteligência social
-            href: social-intel-concept-overview.md
-            items:
-              - name: Obter informações sobre pessoas relevantes
-                href: people-example.md
-          - name: Tarefas e planos
-            href: planner-concept-overview.md
-            displayName: Planner
-          - name: Trabalho em equipe
-            href: teams-concept-overview.md
-            displayName: Microsoft Teams
-            items:
-              - name: Criar um grupo e equipe
-                href: teams-create-group-and-team.md
-              - name: Listar todas as equipes
-                href: teams-list-all-teams.md
-              - name: Como configurar guias internas
-                href: teams-configuring-builtin-tabs.md
-          - name: Pastas de trabalho e gráficos
-            href: excel-concept-overview.md
-            displayName: Excel
-            items:
-              - name: Gerenciar sessões
-                href: excel-manage-sessions.md
-              - name: Exibir uma imagem de gráfico
-                href: excel-display-chart-image.md
-              - name: Usar funções de pasta de trabalho
-                href: excel-use-functions.md
-              - name: Atualizar um formato de intervalo
-                href: excel-update-range-format.md
-              - name: Gravar dados em uma pasta de trabalho
-                href: excel-write-to-workbook.md
-      - name: Desenvolver
-        expanded: true
+          - name: Encontrar horários de reunião
+            href: findmeetingtimes-example.md
+          - name: Obter agenda de disponibilidade
+            href: outlook-get-free-busy-schedule.md
+          - name: Agendar eventos recorrentes
+            href: outlook-schedule-recurring-events.md
+          - name: Obter eventos compartilhados
+            href: outlook-get-shared-events-calendars.md
+          - name: ID imutável (visualização)
+            href: outlook-immutable-id.md
+      - name: Experiências entre dispositivos
+        displayName: Project Rome
         items:
-          - name: Obter tokens de autenticação
+          - name: Visão Geral
+            href: cross-device-concept-overview.md
+          - name: Feed de atividades
+            href: activity-feed-concept-overview.md
+          - name: Retransmissão de dispositivo (visualização)
+            href: device-relay-concept-overview.md
+          - name: Notificações (visualização)
+            href: notifications-concept-overview.md
+          - name: Criar aplicativos entre dispositivos
+            href: cross-device-app-configuration.md
+      - name: Reserva de clientes (visualização)
+        href: booking-concept-overview.md
+        displayName: 'Bookings, Microsoft Bookings'
+      - name: Acesso a dados (visualização)
+        displayName: Microsoft Graph data connect
+        items:
+          - name: Visão Geral
+            href: data-connect-concept-overview.md
+          - name: Introdução
+            href: data-connect-get-started.md
+      - name: Dispositivos e aplicativos
+        href: intune-concept-overview.md
+        displayName: Intune
+      - name: Educação
+        href: education-concept-overview.md
+      - name: Arquivos
+        href: onedrive-concept-overview.md
+        displayName: 'OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint'
+      - name: Finanças (visualização)
+        href: dynamics-business-central-concept-overview.md
+        displayname: 'Dynamics, Dynamics 365 Business Central'
+      - name: Identidade e acesso
+        href: azuread-identity-access-management-concept-overview.md
+        displaName: 'Azure AD, Microsoft identity platform'
+      - name: Correio
+        displayName: 'Outlook, Outlook mail'
+        items:
+          - name: Visão Geral
+            href: outlook-mail-concept-overview.md
+          - name: Automatizar mensagens
+            href: outlook-create-send-messages.md
+          - name: Organizar mensagens
+            href: outlook-organize-messages.md
+          - name: Receber mensagens compartilhadas
+            href: outlook-share-messages-folders.md
+          - name: ID imutável (visualização)
+            href: outlook-immutable-id.md
+          - name: Enviar email de outro usuário
+            href: outlook-send-mail-from-other-user.md
+      - name: Observações
+        displayName: OneNote
+        items:
+          - name: Visão Geral
+            href: integrate-with-onenote.md
+          - name: Obter conteúdo do OneNote
+            href: onenote-get-content.md
+          - name: Abrir o cliente do OneNote
+            href: open-onenote-client.md
+          - name: Criar páginas
+            href: onenote-create-page.md
+          - name: Atualizar conteúdo da página
+            href: onenote-update-page.md
+          - name: 'Adicionar imagens, vídeos e arquivos'
+            href: onenote-images-files.md
+          - name: Criar elementos posicionados absolutos
+            href: onenote-abs-pos.md
+          - name: Extrair dados
+            href: onenote-extract-data.md
+          - name: Usar marcas de anotação
+            href: onenote-note-tags.md
+          - name: RECURSOS
+          - name: HTML de entrada e saída
+            href: onenote-input-output-html.md
+          - name: Práticas recomendadas
+            href: onenote-best-practices.md
+          - name: Diretrizes de identidade visual
+            href: onenote-branding.md
+          - name: Códigos de erro
+            href: onenote-error-codes.md
+      - name: Contatos pessoais
+        displayName: 'Outlook, Outlook contacts, Outlook contact, People'
+        items:
+          - name: Visão Geral
+            href: outlook-contacts-concept-overview.md
+          - name: Obter contatos compartilhados
+            href: outlook-get-shared-contacts-folders.md
+          - name: ID imutável (visualização)
+            href: outlook-immutable-id.md
+      - name: Relatórios
+        href: reportroot-concept-overview.md
+      - name: Segurança
+        items:
+          - name: Visão Geral
+            href: security-concept-overview.md
+          - name: Fluxo de dados
+            href: security-dataflow.md
+          - name: Autorização
+            href: security-authorization.md
+          - name: Integrar com um SIEM
+            items:
+              - name: Visão Geral
+                href: security-siemintegration.md
+              - name: Splunk
+                href: security-splunk-siemintegration.md
+              - name: QRadar
+                href: security-qradar-siemintegration.md
+          - name: Oportunidades de parceria
+            href: security-partner-overview.md
+      - name: Sites e listas
+        href: sharepoint-concept-overview.md
+        displayName: 'SharePoint, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal'
+      - name: Inteligência social
+        items:
+          - name: Visão Geral
+            href: social-intel-concept-overview.md
+          - name: Obter informações sobre pessoas relevantes
+            href: people-example.md
+      - name: Tarefas e planos
+        href: planner-concept-overview.md
+        displayName: Planner
+      - name: Teamwork
+        displayName: Microsoft Teams
+        items:
+          - name: Visão Geral
+            href: teams-concept-overview.md
+          - name: Criar um grupo e equipe
+            href: teams-create-group-and-team.md
+          - name: Listar todas as equipes
+            href: teams-list-all-teams.md
+          - name: Como configurar guias internas
+            href: teams-configuring-builtin-tabs.md
+      - name: Workbooks e gráficos
+        displayName: Excel
+        items:
+          - name: Visão Geral
+            href: excel-concept-overview.md
+          - name: Gerenciar sessões
+            href: excel-manage-sessions.md
+          - name: Exibir uma imagem de gráfico
+            href: excel-display-chart-image.md
+          - name: Usar funções de pasta de trabalho
+            href: excel-use-functions.md
+          - name: Atualizar um formato de intervalo
+            href: excel-update-range-format.md
+          - name: Gravar dados em uma pasta de trabalho
+            href: excel-write-to-workbook.md
+  - name: Desenvolver
+    expanded: true
+    items:
+      - name: Obter tokens de autenticação
+        items:
+          - name: Visão Geral
             href: auth-overview.md
-            items:
-              - name: Registrar seu aplicativo
-                href: auth-register-app-v2.md
-              - name: Obter acesso em nome de um usuário
-                href: auth-v2-user.md
-              - name: Obter acesso sem um usuário
-                href: auth-v2-service.md
-              - name: Permissões
-                href: permissions-reference.md
-              - name: Gerenciar o acesso ao aplicativo (Provedores de Soluções na Nuvem da Microsoft)
-                href: auth-cloudsolutionprovider.md
-          - name: Usar a API
+          - name: Registrar seu aplicativo
+            href: auth-register-app-v2.md
+          - name: Obter acesso em nome de um usuário
+            href: auth-v2-user.md
+          - name: Obter acesso sem um usuário
+            href: auth-v2-service.md
+          - name: Permissões
+            href: permissions-reference.md
+          - name: Gerenciar o acesso ao aplicativo (Provedores de Soluções na Nuvem da Microsoft)
+            href: auth-cloudsolutionprovider.md
+      - name: Usar a API
+        items:
+          - name: Visão Geral
             href: use-the-api.md
+          - name: Paginação
+            href: paging.md
+          - name: Usar parâmetros de consulta
+            href: query-parameters.md
+          - name: Solicitações em lote
+            href: json-batching.md
+          - name: Limitação
+            href: throttling.md
+          - name: Notificações de alteração
+            href: webhooks.md
+            displayName: 'Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
+          - name: Controlar alterações
+            displayName: 'Delta query, Outlook calendar, Groups, Outlook mail, Users'
             items:
-              - name: Paginação
-                href: paging.md
-              - name: Usar parâmetros de consulta
-                href: query-parameters.md
-              - name: Solicitações em lote
-                href: json-batching.md
-              - name: Limitação
-                href: throttling.md
-              - name: Notificações de alteração
-                href: webhooks.md
-                displayName: 'Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
-              - name: Controlar alterações
+              - name: Visão Geral
                 href: delta-query-overview.md
-                displayName: 'Delta query, Outlook calendar, Groups, Outlook mail, Users'
-                items:
-                  - name: Obter alterações em eventos (exemplo)
-                    href: delta-query-events.md
-                  - name: Obter alterações em grupos (exemplo)
-                    href: delta-query-groups.md
-                  - name: Obter alterações em mensagens (exemplo)
-                    href: delta-query-messages.md
-                  - name: Obter alterações em usuários (exemplo)
-                    href: delta-query-users.md
-              - name: Adicionar dados personalizados
-                href: extensibility-overview.md
-                displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
-                items:
-                  - name: Usar extensões abertas (exemplo)
-                    href: extensibility-open-users.md
-                  - name: Usar extensões de esquema (exemplo)
-                    href: extensibility-schema-groups.md
-          - name: Recursos
-            expanded: true
+              - name: Obter alterações em eventos (exemplo)
+                href: delta-query-events.md
+              - name: Obter alterações em grupos (exemplo)
+                href: delta-query-groups.md
+              - name: Obter alterações em mensagens (exemplo)
+                href: delta-query-messages.md
+              - name: Obter alterações em usuários (exemplo)
+                href: delta-query-users.md
+          - name: Adicionar dados personalizados
+            displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
             items:
-              - name: Práticas recomendadas
-                href: best-practices-concept.md
-              - name: Problemas conhecidos
-                href: known-issues.md
-              - name: Log de mudanças
-                href: changelog.md
-              - name: Erros
-                href: errors.md
-      - name: Referência v1.0
-        href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-1.0
-      - name: Referência beta
-        href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-beta
+              - name: Visão Geral
+                href: extensibility-overview.md
+              - name: Usar extensões abertas (exemplo)
+                href: extensibility-open-users.md
+              - name: Usar extensões de esquema (exemplo)
+                href: extensibility-schema-groups.md
+      - name: Recursos
+        items:
+          - name: Práticas recomendadas
+            href: best-practices-concept.md
+          - name: Problemas conhecidos
+            href: known-issues.md
+          - name: Log de mudanças
+            href: changelog.md
+          - name: Erros
+            href: errors.md
+  - name: Referência v1.0
+    href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-1.0
+  - name: Referência beta
+    href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-beta
