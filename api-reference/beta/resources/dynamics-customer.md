@@ -5,11 +5,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: e4daa28018001fb6cb6e4866bedf8e256a72abef
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365931"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507256"
 ---
 # <a name="customers-resource-type"></a>tipo de recurso clientes
 Representa um cliente no Dynamics 365 Business central.
@@ -34,7 +34,7 @@ Representa um cliente no Dynamics 365 Business central.
 |phoneNumber  |string    |Especifica o número de telefone do cliente.|
 |email        |string    |Especifica o endereço de email do cliente.|
 |site      |string    |Especifica o endereço da home page do cliente.|
-|taxLiable    |boolean   |Especifica se o cliente ou fornecedor é responsável pelo imposto sobre vendas. Defina como **true** se o cliente for responsável por impostos.|
+|taxLiable    |booliano   |Especifica se o cliente ou fornecedor é responsável pelo imposto sobre vendas. Defina como **true** se o cliente for responsável por impostos.|
 |taxAreaId    |GUID      |Especifica a área de impostos à qual o cliente pertence.|
 |taxAreaDisplayName|string|Especificou o nome de exibição da área de impostos à qual o cliente pertence.|
 |taxRegistrationNumber|Cadeia de caracteres, tamanho máximo 20|Especificado o número de registro de imposto do cliente.|
@@ -47,7 +47,7 @@ Representa um cliente no Dynamics 365 Business central.
 |carga      |numéricos   |Especifica o valor do pagamento que o cliente está procurando para vendas concluídas. Esse valor também é conhecido como o saldo do cliente. Somente Leitura.|
 |overdueAmount|numéricos   |Especifica o valor vencido do cliente.|
 |totalSalesExcludingTax|numéricos|Especifica o valor total de vendas excluindo o imposto do cliente.|
-|lastModifiedDateTime|DateTime|O último DateTime que o cliente foi modificado. Somente Leitura.|  
+|lastModifiedDateTime|DateTime|O último DateTime que o cliente foi modificado. Somente leitura.|  
 
 
 ## <a name="relationships"></a>Relações

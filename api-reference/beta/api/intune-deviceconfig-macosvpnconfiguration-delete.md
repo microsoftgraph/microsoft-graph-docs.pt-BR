@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: bed0a28d1728511db554fe462788f64ec61f3e55
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31795804"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32518426"
 ---
 # <a name="delete-macosvpnconfiguration"></a>Excluir macOSVpnConfiguration
 

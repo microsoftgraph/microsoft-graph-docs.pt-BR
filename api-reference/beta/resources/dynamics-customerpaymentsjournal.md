@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: a8b01124db732866e1a7b971af57d7e0a2b692e1
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365735"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507249"
 ---
 # <a name="customerpaymentsjournals-resource-type"></a>tipo de recurso customerPaymentsJournals
 Representa um diário de pagamento do cliente no Dynamics 365 Business central.
@@ -29,9 +29,9 @@ Representa um diário de pagamento do cliente no Dynamics 365 Business central.
 | Propriedade           | Tipo                  |Descrição                                                             |
 |:-------------------|:----------------------|:-----------------------------------------------------------------------|
 |id                  |GUID                   |A ID exclusiva do diário de pagamento do cliente. Não editável.           |
-|código                |Cadeia de caracteres, tamanho máximo 10| O código do diário de pagamento do cliente.                             |
+|code                |Cadeia de caracteres, tamanho máximo 10| O código do diário de pagamento do cliente.                             |
 |displayName         |Cadeia de caracteres, tamanho máximo 50| O nome de exibição do diário de pagamentos do cliente.                     |
-|lastModifiedDateTime|DateTime               |O último DateTime que o diário de pagamentos do cliente foi modificado. Somente Leitura.|
+|lastModifiedDateTime|DateTime               |O último DateTime que o diário de pagamentos do cliente foi modificado. Somente leitura.|
 
 ## <a name="relationships"></a>Relações
 

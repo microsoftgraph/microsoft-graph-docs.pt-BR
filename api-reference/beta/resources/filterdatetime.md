@@ -3,11 +3,11 @@ title: Tipo de recurso FilterDatetime
 description: Indica como filtrar uma data ao filtrar valores.
 localization_priority: Normal
 ms.openlocfilehash: ad4341e13eadc911377ec7b9859d6a31305fadf8
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507548"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32506432"
 ---
 # <a name="filterdatetime-resource-type"></a>Tipo de recurso FilterDatetime
 
@@ -21,8 +21,8 @@ Indica como filtrar uma data ao filtrar valores.
 |data|string|A data no formato ISO8601 usada para filtrar os dados.|
 |especificidade|string|Como a data específica deve ser usada para manter os dados. Por exemplo, se a data for 2005-04-02 e a especificidade estiver definida como "mês", a operação de filtragem manterá todas as linhas com uma data do mês de abril de 2009. Os valores possíveis são: `Year`, `Monday`, `Day`, `Hour`, `Minute` e `Second`.|
 
-## <a name="relationships"></a>Relacionamento
-Nenhum
+## <a name="relationships"></a>Relações
+Nenhuma
 
 
 ## <a name="json-representation"></a>Representação JSON

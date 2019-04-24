@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: 1e4cd044d4b552a9239b742efb302633524ce22b
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30366645"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507235"
 ---
 # <a name="paymentmethods-resource-type"></a>tipo de recurso paymentMethods
 Representa um método de pagamento no Dynamics 365 Business central, como PayPal, cartão de crédito e conta bancária.
@@ -29,13 +29,13 @@ Representa um método de pagamento no Dynamics 365 Business central, como PayPal
 | Propriedade           | Tipo   |Descrição                                                  |
 |:-------------------|:-------|:------------------------------------------------------------|
 |id                  |GUID    |A ID exclusiva do paymentMethods. Não editável.           |
-|código                |string  |Especifica o código do método de pagamento.                           |
+|código                |cadeia de caracteres  |Especifica o código do método de pagamento.                           |
 |displayName         |string  |Especifica o nome de exibição do método de pagamento.                   |
-|lastModifiedDateTime|DateTime|A última data/hora em que o método de pagamento foi modificado. Somente Leitura.|  
+|lastModifiedDateTime|DateTime|A última data/hora em que o método de pagamento foi modificado. Somente leitura.|  
 
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 

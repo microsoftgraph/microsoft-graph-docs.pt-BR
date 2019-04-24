@@ -1,28 +1,28 @@
 ---
-title: tipo de recurso de fileSecurityState
+title: tipo de recurso fileSecuritystate
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
 localization_priority: Normal
 ms.openlocfilehash: 485addfda2707c8848c44c839f9593378943f327
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526953"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32506405"
 ---
-# <a name="filesecuritystate-resource-type"></a>tipo de recurso de fileSecurityState
+# <a name="filesecuritystate-resource-type"></a>tipo de recurso fileSecuritystate
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contém informações sobre o arquivo (não process) relacionada ao alerta.
+Contém informações sobre o arquivo (não processo) relacionado ao alerta.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade   | Tipo|Descrição|
 |:---------------|:--------|:----------|
-|fileHash|[fileHash](filehash.md)|Tipo complexo contendo hashes de arquivo (criptográficos e confidenciais local).|
-|name|Cadeia de caracteres|Nome de arquivo (sem o caminho).|
-|caminho|String|Caminho do arquivo completo do arquivo/imageFile.|
-|riskScore|String|Provedor gerado/calculado o risco de pontuação do arquivo de alerta. Valor recomendado o intervalo de 0-1, que é igual a um percentual.|
+|fileHash|[fileHash](filehash.md)|Tipo complexo contendo hashes de arquivo (criptográfico e diferencia local).|
+|nome|String|Nome do arquivo (sem o caminho).|
+|caminho|String|Caminho completo do arquivo/ImageFile.|
+|riskScore|String|Geração de um provedor/Pontuação de risco calculado do arquivo de alerta. O intervalo de valor recomendado de 0-1, que é igual a uma porcentagem.|
 
 ## <a name="json-representation"></a>Representação JSON
 

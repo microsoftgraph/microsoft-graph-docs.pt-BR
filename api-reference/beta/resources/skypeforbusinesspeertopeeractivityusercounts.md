@@ -1,28 +1,28 @@
 ---
-title: tipo de recurso de skypeForBusinessPeerToPeerActivityUserCounts
+title: tipo de recurso skypeForBusinessPeerToPeerActivityUserCounts
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 ms.openlocfilehash: 619e581fcdd25dda10be7210aefe5db8e4dcd8b7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828634"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32503881"
 ---
-# <a name="skypeforbusinesspeertopeeractivityusercounts-resource-type"></a>tipo de recurso de skypeForBusinessPeerToPeerActivityUserCounts
+# <a name="skypeforbusinesspeertopeeractivityusercounts-resource-type"></a>tipo de recurso skypeForBusinessPeerToPeerActivityUserCounts
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade          | Tipo   |
 | :---------------- | :----- |
-| mensagens instantâneas                | Int64  |
+| respectiva                | Int64  |
 | audio             | Int64  |
 | video             | Int64  |
 | appSharing        | Int64  |
-| fileTransfer      | Int64  |
+| transferência de      | Int64  |
 | reportRefreshDate | Data   |
 | reportDate        | Data   |
-| reportPeriod      | Cadeia de caracteres |
+| reportPeriod      | String |
 
 ## <a name="json-representation"></a>Representação JSON
 

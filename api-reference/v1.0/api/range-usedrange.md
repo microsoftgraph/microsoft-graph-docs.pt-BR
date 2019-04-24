@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: db17537de2cd002a16b2c0306d4e4c9304010e44
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27961474"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32503671"
 ---
 # <a name="range-usedrange"></a>Range: UsedRange
 
@@ -81,7 +81,7 @@ Content-length: 169
 }
 ```
 
-Aqui está um exemplo especificando o opcional `valuesOnly` parâmetro.
+Veja um exemplo que especifica o parâmetro `valuesOnly` opcional.
 
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

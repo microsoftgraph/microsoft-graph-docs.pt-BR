@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 836f2c647fd9894a7d39bba80e5f15f3f11ef81f
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30255861"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32502731"
 ---
 # <a name="delete-group"></a>Excluir grupo
 
@@ -17,7 +17,7 @@ ms.locfileid: "30255861"
 
 Exclui um grupo.  
 
-Quando excluídos, os grupos do Office 365 são movidos para um contêiner temporário e podem ser restaurados dentro de 30 dias.  Após esse tempo, elas serão excluídas permanentemente.  Para saber mais, confira [deletedItems](../resources/directory.md).  Isso se aplica apenas aos grupos do Office 365.
+Quando excluídos, os grupos do Office 365 são movidos para um contêiner temporário e podem ser restaurados dentro de 30 dias.  Após esse período, elas serão permanentemente excluídos.  Para saber mais, confira [deletedItems](../resources/directory.md).  Isso se aplica apenas aos grupos do Office 365.
 
 ## <a name="permissions"></a>Permissões
 

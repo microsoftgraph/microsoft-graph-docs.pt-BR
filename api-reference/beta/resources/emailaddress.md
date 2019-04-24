@@ -1,27 +1,27 @@
 ---
 title: Tipo de recurso emailAddress
-description: Representa o nome e o endereço SMTP de uma instância da entidade, por exemplo, uma mensagem destinatário ou calendário proprietário.
+description: Representa o nome e o endereço SMTP de uma instância de entidade, por exemplo, um destinatário de mensagem ou proprietário do calendário.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: bc1f00ab09ac71f4f3cd9eb1aff8163a537ce257
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518664"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32506724"
 ---
 # <a name="emailaddress-resource-type"></a>Tipo de recurso emailAddress
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa o nome e o endereço SMTP de uma instância da entidade, por exemplo, uma mensagem destinatário ou calendário proprietário.
+Representa o nome e o endereço SMTP de uma instância de entidade, por exemplo, um destinatário de mensagem ou proprietário do calendário.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|address|Cadeia de caracteres|O endereço de email de uma instância da entidade.|
-|name|String|O nome de exibição de uma instância da entidade.|
+|address|Cadeia de caracteres|O endereço de email de uma instância de entidade.|
+|nome|String|O nome de exibição de uma instância de entidade.|
 
 ## <a name="json-representation"></a>Representação JSON
 

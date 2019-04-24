@@ -1,17 +1,17 @@
 ---
-title: Tipo de recurso de aplicativo
+title: Tipo de recurso Application
 description: Representa o aplicativo Excel que gerencia a pasta de trabalho.
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: 48ee13a67d97f9c5c1a96a6ef6e104c5629f4108
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517614"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32506528"
 ---
-# <a name="application-resource-type"></a>Tipo de recurso de aplicativo
+# <a name="application-resource-type"></a>Tipo de recurso Application
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,16 +22,16 @@ Representa o aplicativo Excel que gerencia a pasta de trabalho.
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Obtenha o aplicativo](../api/excelapplication-get.md) | [Application](application.md) |Leia as propriedades e os relacionamentos do objeto application.|
+|[Obter aplicativo](../api/excelapplication-get.md) | [Aplicativo](application.md) |Leia as propriedades e as relações do objeto application.|
 |[Calculate](../api/excelapplication-calculate.md)|Nenhum|Recalcula todas as pastas de trabalho abertas no Excel no momento.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|calculationMode|string|Retorna o modo de cálculo usado na pasta de trabalho. Os valores possíveis são: `Automatic`, `AutomaticExceptTables`, `Manual`. Somente leitura.|
+|cálculomode|string|Retorna o modo de cálculo usado na pasta de trabalho. Os valores possíveis são: `Automatic`, `AutomaticExceptTables`, `Manual`. Somente leitura.|
 
-## <a name="relationships"></a>Relacionamento
-Nenhum
+## <a name="relationships"></a>Relações
+Nenhuma
 
 
 ## <a name="json-representation"></a>Representação JSON

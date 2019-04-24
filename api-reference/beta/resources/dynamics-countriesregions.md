@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: b6f50ba3046a402f2b8729529675653286808459
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365483"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507263"
 ---
 # <a name="countriesregions-resource-type"></a>tipo de recurso countriesRegions
 Representa um objeto countriesRegions no Dynamics 365 Business central, que é parte de um endereço.
@@ -29,14 +29,14 @@ Representa um objeto countriesRegions no Dynamics 365 Business central, que é p
 | Propriedade       | Tipo       |Descrição                                                  |
 |:---------------|:-----------|:------------------------------------------------------------|
 |id              |GUID        |A identificação exclusiva do país/região. Não editável.           |
-|código            |string      |Especifica o código do país/região.                    |
+|código            |cadeia de caracteres      |Especifica o código do país/região.                    |
 |displayName     |string      |Especifica o nome de exibição do país/região.            |
 |addressFormat   |string      |Especifica o formato do endereço exibido em documentos de face externa. Você vincula um formato de endereço a um código de país/região para que documentos externos baseados em cartões ou documentos com esse código de país/região usem o formato de endereço especificado.|
-|lastModifiedDateTime|DateTime|O último DateTime que o país/região foi modificado. Somente Leitura.|  
+|lastModifiedDateTime|DateTime|O último DateTime que o país/região foi modificado. Somente leitura.|  
 
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 

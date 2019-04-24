@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 2cfe8b1eee66c0aa950bf4c25fa499e0b74dd4b0
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31776189"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32509202"
 ---
 # <a name="create-devicemanagementintent"></a>Criar deviceManagementIntent
 
@@ -51,11 +51,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|A ID de intenção|
-|displayName|Cadeia de caracteres|O nome de exibição fornecido pelo usuário|
+|displayName|String|O nome de exibição fornecido pelo usuário|
 |description|String|Descrição fornecida pelo usuário|
 |isAssigned|Boolean|Significa se a intenção é atribuída ou não aos usuários|
 |lastModifiedDateTime|DateTimeOffset|Quando a intenção foi modificada pela última vez|
-|templateId|Cadeia de caracteres|A ID do modelo de que esta intenção foi criada (se houver)|
+|templateId|String|A ID do modelo de que esta intenção foi criada (se houver)|
 
 
 

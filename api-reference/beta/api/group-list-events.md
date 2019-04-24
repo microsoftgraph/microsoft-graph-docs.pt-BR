@@ -1,15 +1,15 @@
 ---
 title: Listar eventos
-description: Recupere uma lista de objetos de evento.
+description: Recupere uma lista de objetos event.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: c02318a8c7a8c7a8ffc7562d4a807fa06fae47a6
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525378"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32502428"
 ---
 # <a name="list-events"></a>Listar eventos
 
@@ -41,7 +41,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 |:---------------|:--------|:--------|
 | Autorização  | string | {token} de portador. Obrigatório.  |
 | Prefira: outlook.timezone  | string | Use isto para especificar o fuso horário para horas de início e término na resposta. Se não especificado, esses valores de tempo serão retornados em UTC. Opcional. |
-| Prefer: outlook.body-content-type | string | O formato da propriedade **corpo** a ser retornada. Os valores podem ser "text" ou "html". Um cabeçalho `Preference-Applied` é retornado como confirmação se este cabeçalho `Prefer` for especificado. Se o cabeçalho não for especificado, a propriedade **corpo** será retornada no formato HTML. Opcional. |
+| Prefer: outlook.body-content-type | string | O formato da propriedade **body** a ser retornada. Os valores podem ser "text" ou "html". Um cabeçalho `Preference-Applied` é retornado como confirmação quando este cabeçalho `Prefer` é especificado. Se o cabeçalho não for especificado, a propriedade **body** será retornada no formato HTML. Opcional. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

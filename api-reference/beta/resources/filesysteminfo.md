@@ -5,15 +5,13 @@ ms.date: 09/10/2017
 title: FileSystemInfo
 localization_priority: Normal
 ms.openlocfilehash: 65bbd2e371c856a6ffbd2c55ecba88c1635ce41c
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480282"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32506324"
 ---
 # <a name="filesysteminfo-facet"></a>Faceta fileSystemInfo
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 O recurso **FileSystemInfo** contém propriedades que são relatadas pelo sistema de arquivos local do dispositivo para a versão local de um item. Esta faceta pode ser usada para especificar a data da última modificação ou a data de criação do item como estava no dispositivo local.
 
@@ -63,15 +61,10 @@ Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.
 
 [item-resource]: ../resources/driveitem.md
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "The fileSystemInfo facet provides information about date created and modified by clients.",
   "keywords": "fileSystemInfo,client,system info,onedrive",
   "section": "documentation",
-  "tocPath": "Facets/FileSystemInfo",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/filesysteminfo.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": "Facets/FileSystemInfo"
+} -->

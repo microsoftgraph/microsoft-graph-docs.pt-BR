@@ -1,27 +1,27 @@
 ---
-title: tipo de recurso de educationWordResource
-description: 'Uma subclasse de educationResource. Esse é um recurso de documento do Word. O arquivo do Word deve ser carregado no diretório **fileResource** associado a '
+title: tipo de recurso educationWordResource
+description: 'Uma subclasse de educationResource. Este é um recurso de documento do Word. O arquivo do Word deve ser carregado no **** diretório fileresource associado ao '
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: 9d92b993ab920a894590346bf5fde0ff86c73e8d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529667"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32506696"
 ---
-# <a name="educationwordresource-resource-type"></a>tipo de recurso de educationWordResource
+# <a name="educationwordresource-resource-type"></a>tipo de recurso educationWordResource
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Uma subclasse de [educationResource](educationresource.md). Esse é um recurso de documento do Word. O arquivo do Word deve ser carregado no diretório **fileResource** associado a atribuição ou o envio.
+Uma subclasse de [educationResource](educationresource.md). Este é um recurso de documento do Word. O arquivo do Word deve ser carregado no **** diretório fileresource associado à atribuição ou ao envio.
 
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|FileURL|String|Local do arquivo no disco.|
+|fileUrl|String|Local do arquivo no disco.|
 
 ## <a name="json-representation"></a>Representação JSON
 

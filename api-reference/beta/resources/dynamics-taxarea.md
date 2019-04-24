@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: aeda0ca136c178355a8a8f9589eb7410399ef62a
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365448"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507228"
 ---
 # <a name="taxareas-resource-type"></a>tipo de recurso taxAreas
 Representa um tipo de recurso de área de imposto no Dynamics 365 Business central.
@@ -28,10 +28,10 @@ Representa um tipo de recurso de área de imposto no Dynamics 365 Business centr
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |id|GUID|A identificação exclusiva da área de impostos. Não editável.|
-|código|Cadeia de caracteres, tamanho máximo 20| O código da área de impostos.|
+|code|Cadeia de caracteres, tamanho máximo 20| O código da área de impostos.|
 |displayName|Cadeia de caracteres, tamanho máximo 50| O nome de exibição da área de impostos.|
 |taxType|string|O tipo de imposto da área de impostos.|
-|lastModifiedDateTime|DateTime|A última data/hora em que a área de impostos foi modificada. Somente Leitura.|
+|lastModifiedDateTime|DateTime|A última data/hora em que a área de impostos foi modificada. Somente leitura.|
 
 ## <a name="relationships"></a>Relações
 

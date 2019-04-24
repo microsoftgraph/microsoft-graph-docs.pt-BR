@@ -1,21 +1,21 @@
 ---
 title: Membros do grupo de lista
-description: Obtenha uma lista de membros de direto do grupo. Um grupo pode ter usuários, contatos, dispositivos, entidades de serviço e outros grupos como membros. Esta operação não é transitiva.
+description: Obtenha uma lista dos membros diretos do grupo. Um grupo pode ter usuários, contatos, dispositivos, entidades de serviço e outros grupos como membros. Essa operação não é transitiva.
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 ms.openlocfilehash: f1643aa759926cd466d121d1c20ec1ae40bbc7cf
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640886"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32502080"
 ---
 # <a name="list-group-members"></a>Membros do grupo de lista
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha uma lista de membros de direto do grupo. Um grupo pode ter usuários, contatos, dispositivos, entidades de serviço e outros grupos como membros. Esta operação não é transitiva.
+Obtenha uma lista dos membros diretos do grupo. Um grupo pode ter usuários, contatos, dispositivos, entidades de serviço e outros grupos como membros. Essa operação não é transitiva.
 
 ## <a name="permissions"></a>Permissões
 
@@ -23,11 +23,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Directory.Read.All, Directory.AccessAsUser.All, User.ReadBasic.All, User.Read.All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Directory.Read.All, User.Read.All |
+|Delegado (conta corporativa ou de estudante) | Directory. Read. All, Directory. AccessAsUser. All, User. ReadBasic. All, User. Read. All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Directory. Read. All, User. Read. All |
 
-> Observação: Para listar os membros de um grupo de associação oculta, a permissão de Member.Read.Hidden é obrigatório.
+> Observação: para listar os membros de um grupo de associação oculto, a permissão member. Read. Hidden é necessária.
  
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

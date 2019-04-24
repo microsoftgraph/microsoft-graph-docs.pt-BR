@@ -1,19 +1,19 @@
 ---
 title: Excluir identityProvider
-description: Exclua um identityProvider existente.
+description: Excluir o identityProvider existente.
 localization_priority: Normal
 ms.openlocfilehash: bb64f10b656697ab2cf611dd9be0468c295b15e8
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514352"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32501585"
 ---
 # <a name="delete-identityprovider"></a>Excluir identityProvider
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exclua um existente [identityProvider](../resources/identityprovider.md).
+Excluir o [identityProvider](../resources/identityprovider.md) existente.
 
 ## <a name="permissions"></a>Permissões
 
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft)| Sem suporte.|
 |Aplicativo|Sem suporte.|
 
-A conta do trabalho ou da escola deve ser um administrador global do inquilino.
+A conta corporativa ou de estudante deve ser um administrador global do locatário.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -50,7 +50,7 @@ Se bem sucedido, este método retorna um código de resposta `204 No Content`.
 
 ## <a name="example"></a>Exemplo
 
-O exemplo a seguir exclui uma **identityProvider**.
+O exemplo a seguir exclui um **identityProvider**.
 
 ##### <a name="request"></a>Solicitação
 

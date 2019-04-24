@@ -5,11 +5,11 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 ms.openlocfilehash: a5a6472427960d6e6179a80114fe9c9205e9e022
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529240"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32502418"
 ---
 # <a name="group-getmembergroups"></a>grupo: getMemberGroups
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                              |
 | Aplicativo                            | ~~Group.Read.All~~, Directory.Read.All, Directory.ReadWrite.All                             |
 
-> **Observação:** esta API atualmente exige o `Directory.Read.All` permissão ou posterior. Usando o `Group.Read.All` permissão retornará um erro. Este é um bug conhecido.
+> **Observação:** Essa API atualmente requer a `Directory.Read.All` permissão ou mais. O uso `Group.Read.All` da permissão retornará um erro. Este é um bug conhecido.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -51,7 +51,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro           | Tipo    | Descrição                                                                           |
 | :------------------ | :------ | :------------------------------------------------------------------------------------ |
-| securityEnabledOnly | Booliano | Defina como **false**. Há suporte para retornar somente os grupos de segurança habilitados apenas para usuários. |
+| securityEnabledOnly | Boolean | Defina como **false**. Há suporte para retornar somente os grupos de segurança habilitados apenas para usuários. |
 
 ## <a name="response"></a>Resposta
 

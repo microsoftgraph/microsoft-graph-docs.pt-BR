@@ -1,19 +1,19 @@
 ---
-title: Atualizar inferenceclassificationoverride
-description: 'Alterar o campo **classifyAs** de uma caixa de entrada com foco substituir conforme especificado. '
+title: Atualizar inferenceClassificationOverride
+description: 'Altere o **** campo classificas de uma substituição de caixa de entrada destaques, conforme especificado. '
 localization_priority: Normal
 ms.openlocfilehash: 0cb3eab7f8a4efece8099ca8f65577d8a06b18d6
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508514"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32500843"
 ---
-# <a name="update-inferenceclassificationoverride"></a>Atualizar inferenceclassificationoverride
+# <a name="update-inferenceclassificationoverride"></a>Atualizar inferenceClassificationOverride
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Alterar o campo **classifyAs** de uma [Caixa de entrada com foco](../resources/manage-focused-inbox.md) substituir conforme especificado. 
+Altere o **** campo classificas de uma substituição de [caixa de entrada destaques](../resources/manage-focused-inbox.md) , conforme especificado. 
 
 Você não pode usar PATCH para alterar outros campos em uma instância de [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md). 
 
@@ -48,11 +48,11 @@ No corpo da solicitação, forneça o novo valor para **classifyAs**. Para obter
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|classifyAs|string| Representa como classificar as mensagens recebidas de um remetente específico. Os valores possíveis são: `focused` e `other`.|
+|classifyAs|cadeia de caracteres| Representa como classificar as mensagens recebidas de um remetente específico. Os valores possíveis são: `focused` e `other`.|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) atualizado no corpo da resposta.
+Se for bem-sucedido, este método retornará um código de resposta `200 OK` e o objeto [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) atualizado no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 O exemplo a seguir altera a substituição para o endereço SMTP randiw@adatum.onmicrosoft.com de `other` para `focused`.

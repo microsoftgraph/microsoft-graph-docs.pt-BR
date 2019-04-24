@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: f4c9a80e9b7221d9ab7ef42ec23b389c1f3bf326
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31787649"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32508369"
 ---
 # <a name="update-devicemanagementintentdevicestate"></a>Atualizar deviceManagementIntentDeviceState
 
@@ -52,11 +52,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 |:---|:---|:---|
 |id|String|A ID|
 |userPrincipalName|String|O nome principal do usuário que está sendo relatado em um dispositivo|
-|userName|Cadeia de caracteres|O nome de usuário que está sendo relatado em um dispositivo|
+|userName|String|O nome de usuário que está sendo relatado em um dispositivo|
 |deviceDisplayName|Cadeia de caracteres|Nome do dispositivo que está sendo relatado|
 |lastReportedDateTime|DateTimeOffset|Data e hora da última modificação de um relatório de intenção|
 |state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Estado do dispositivo para uma intenção. Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
-|deviceId|Cadeia de caracteres|ID do dispositivo que está sendo relatado|
+|deviceId|String|ID do dispositivo que está sendo relatado|
 
 
 

@@ -1,15 +1,15 @@
 ---
-title: Lista governanceRoleDefinitions
+title: Listar governanceRoleDefinitions
 description: Obtenha uma coleção de governanceRoleDefinitions em um recurso.
 localization_priority: Normal
 ms.openlocfilehash: 0e03a75446723743cc43eef63c42dd0f39c86126
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525196"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32503051"
 ---
-# <a name="list-governanceroledefinitions"></a>Lista governanceRoleDefinitions
+# <a name="list-governanceroledefinitions"></a>Listar governanceRoleDefinitions
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Obtenha uma coleção de [governanceRoleDefinitions](../resources/governanceroledefinition.md) em um recurso.
@@ -19,11 +19,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources  |
+|Delegado (conta corporativa ou de estudante) | PrivilegedAccess. ReadWrite. AzureResources  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | PrivilegedAccess.ReadWrite.AzureResources |
+|Aplicativo | PrivilegedAccess. ReadWrite. AzureResources |
 
-Além do escopo de permissão, essa API requer o solicitante ter pelo menos uma atribuição no recurso.
+Além do escopo de permissão, essa API exige que o solicitante tenha pelo menos uma atribuição de função no recurso.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -32,23 +32,23 @@ GET /privilegedAccess/azureResources/resources/{resourceId}/roleDefinitions
 GET /privilegedAccess/azureResources/roleDefinitions?$filter=resourceId+eq+'{resourceId}'
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método oferece suporte para os [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
 |:----------|:----------|
-| Autorização  | Portador {código}|
+| Authorization  | Portador {código}|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e a coleção de objetos [governanceRoleDefinition](../resources/governanceroledefinition.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [governanceRoleDefinition](../resources/governanceroledefinition.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 <!-- {
   "blockType": "request",
   "name": "get_governanceroledefinitions"
 }-->
-Este exemplo mostra como obter todas as definições de função da assinatura Wingtip Toys - produção.
+Este exemplo mostra como obter todas as definições de função da assinatura Wingtip Toys-prod.
 ##### <a name="request"></a>Solicitação
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/resources/e5e7d29d-5465-45ac-885f-4716a5ee74b5/roleDefinitions  

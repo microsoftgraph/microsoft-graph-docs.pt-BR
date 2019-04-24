@@ -3,11 +3,11 @@ title: Tipo de recurso Filter
 description: Gerencia a filtragem da coluna de uma tabela.
 localization_priority: Normal
 ms.openlocfilehash: 6adc4e378b47bcb134a640e77bf54c32a35b3be2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518888"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32506404"
 ---
 # <a name="filter-resource-type"></a>Tipo de recurso Filter
 
@@ -20,16 +20,16 @@ Gerencia a filtragem da coluna de uma tabela.
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Aplicar](../api/filter-apply.md)|Nenhum|Aplica os critérios de filtro determinados à coluna fornecida.|
+|[Apply](../api/filter-apply.md)|Nenhum|Aplica os critérios de filtro determinados à coluna fornecida.|
 |[Clear](../api/filter-clear.md)|Nenhum|Limpa o filtro na coluna determinada.|
 
 ## <a name="properties"></a>Propriedades
 Nenhuma
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|critérios|[FilterCriteria](filtercriteria.md)|O filtro aplicado no momento à coluna fornecida. Somente leitura.|
+|criteria|[FilterCriteria](filtercriteria.md)|O filtro aplicado no momento à coluna fornecida. Somente leitura.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

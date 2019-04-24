@@ -3,11 +3,11 @@ title: Atualizar governanceRoleSetting
 description: Atualize as propriedades de governanceRoleSetting.
 localization_priority: Normal
 ms.openlocfilehash: f9c851f95df340693626ff82c960243eb2f85b54
-ms.sourcegitcommit: 3615f9475d57bfbb3a8c4402af863897f592dfbd
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30789617"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32503034"
 ---
 # <a name="update-governancerolesetting"></a>Atualizar governanceRoleSetting
 
@@ -34,7 +34,7 @@ PATCH /privilegedAccess/azureResources/roleSettings/{id}
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:-----------|:-----------|
-| Autorização  | Portador {código}|
+| Authorization  | Portador {código}|
 | Content-type  | application/json|
 
 

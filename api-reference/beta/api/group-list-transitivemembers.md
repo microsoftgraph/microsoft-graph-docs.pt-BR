@@ -1,21 +1,21 @@
 ---
-title: Membros do grupo de lista transitivos
-description: Obtenha uma lista de membros do grupo. Um grupo pode ter usuários, contatos, dispositivos, entidades de serviço e outros grupos como membros. Essa operação é transitiva e também retornará uma lista simples de todos os membros aninhados.
+title: Membros transitivos do grupo de lista
+description: Obtenha uma lista dos membros do grupo. Um grupo pode ter usuários, contatos, dispositivos, entidades de serviço e outros grupos como membros. Essa operação é transitiva e também retornará uma lista simples de todos os membros aninhados.
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 ms.openlocfilehash: e1dc5c2b89305373b22b6ef87cfaee25d6669750
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640739"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32502108"
 ---
-# <a name="list-group-transitive-members"></a>Membros do grupo de lista transitivos
+# <a name="list-group-transitive-members"></a>Membros transitivos do grupo de lista
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha uma lista de membros do grupo. Um grupo pode ter usuários, contatos, dispositivos, entidades de serviço e outros grupos como membros. Essa operação é transitiva e também retornará uma lista simples de todos os membros aninhados.
+Obtenha uma lista dos membros do grupo. Um grupo pode ter usuários, contatos, dispositivos, entidades de serviço e outros grupos como membros. Essa operação é transitiva e também retornará uma lista simples de todos os membros aninhados.
 
 ## <a name="permissions"></a>Permissões
 
@@ -23,11 +23,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Directory.Read.All, Directory.AccessAsUser.All, User.ReadBasic.All, User.Read.All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Directory.Read.All, User.Read.All |
+|Delegado (conta corporativa ou de estudante) | Directory. Read. All, Directory. AccessAsUser. All, User. ReadBasic. All, User. Read. All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
+|Aplicativo | Directory. Read. All, User. Read. All |
 
-> Observação: Para listar os membros de um grupo de associação oculta, a permissão de Member.Read.Hidden é obrigatório.
+> Observação: para listar os membros de um grupo de associação oculto, a permissão member. Read. Hidden é necessária.
 
 ## <a name="http-request"></a>Solicitação HTTP
 

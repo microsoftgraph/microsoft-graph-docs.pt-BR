@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: d21f72c62bd31bb25312e2b86835c339807d81ae
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31792682"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32488775"
 ---
 # <a name="update-symanteccodesigningcertificate"></a>Atualizar symantecCodeSigningCertificate
 
@@ -54,10 +54,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [symante
 |conteúdo|Binary|O certificado de assinatura de código Symantec do Windows no formato de dados brutos.|
 |status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|O status do certificado provisionado ou não foi provisionado. Os valores possíveis são: `notProvisioned` e `provisioned`.|
 |password|String|A senha necessária para o arquivo. pfx.|
-|SubjectName|Cadeia de caracteres|O nome da entidade do certificado.|
+|SubjectName|String|O nome da entidade do certificado.|
 |Assunto|String|O valor de entidade para o certificado.|
-|issuerName|Cadeia de caracteres|O nome do emissor do certificado.|
-|emissor|Cadeia de caracteres|O valor do emissor para o certificado.|
+|issuerName|String|O nome do emissor do certificado.|
+|emissor|String|O valor do emissor para o certificado.|
 |expirationDateTime|DateTimeOffset|A data de expiração do certificado.|
 |uploadDateTime|DateTimeOffset|O tipo do certificado de codeSignação como CERT da Symantec.|
 

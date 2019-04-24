@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 7f71d9087b457189d3796306e0585981c0e58855
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31785143"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32498211"
 ---
 # <a name="update-androidforworksettings"></a>Atualizar androidForWorkSettings
 
@@ -54,7 +54,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar [androidForWorkS
 |bindStatus|[androidForWorkBindStatus](../resources/intune-androidforwork-androidforworkbindstatus.md)|Vincule o status do locatário à API do Google EMM. Os valores possíveis são: `notBound`, `bound`, `boundAndValidated`, `unbinding`.|
 |lastAppSyncDateTime|DateTimeOffset|Hora da conclusão da última sincronização do aplicativo|
 |lastAppSyncStatus|[androidForWorkSyncStatus](../resources/intune-androidforwork-androidforworksyncstatus.md)|Resultado da última sincronização do aplicativo. Os valores possíveis são: `success`, `credentialsNotValid`, `androidForWorkApiError`, `managementServiceError`, `unknownError`, `none`.|
-|ownerUserPrincipalName|Cadeia de caracteres|UPN proprietária que criou a empresa|
+|ownerUserPrincipalName|String|UPN proprietária que criou a empresa|
 |ownerOrganizationName|String|Nome da organização usada ao integrar o Android for Work|
 |lastModifiedDateTime|DateTimeOffset|Hora da última modificação das configurações do Android for Work|
 |enrollmentTarget|[androidForWorkEnrollmentTarget](../resources/intune-androidforwork-androidforworkenrollmenttarget.md)|Indica quais usuários podem registrar dispositivos no Android para gerenciamento de dispositivos de trabalho. Os valores possíveis são: `none`, `all`, `targeted`, `targetedAsEnrollmentRestrictions`.|

@@ -3,11 +3,11 @@ title: Tipo de recurso Icon
 description: Representa um ícone de célula.
 localization_priority: Normal
 ms.openlocfilehash: c15ee02d1c6830cbb5246826665d0353b7e999b9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516298"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32506398"
 ---
 # <a name="icon-resource-type"></a>Tipo de recurso Icon
 
@@ -20,17 +20,17 @@ Representa um ícone de célula.
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|Get Icon | [Icon](icon.md) |Leia as propriedades e os relacionamentos do objeto de ícone.|
+|[Get Icon](../api/icon-get.md) | [Icon](icon.md) |Leia as propriedades e os relacionamentos do objeto de ícone.|
 |[Update](../api/icon-update.md) | [Icon](icon.md)  |Atualize o objeto Icon. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|índice|int|Representa o índice do ícone em determinado conjunto.|
+|index|int|Representa o índice do ícone em determinado conjunto.|
 |set|string|Representa o conjunto do qual o ícone faz parte. Os valores possíveis são: `Invalid`, `ThreeArrows`, `ThreeArrowsGray`, `ThreeFlags`, `ThreeTrafficLights1`, `ThreeTrafficLights2`, `ThreeSigns`, `ThreeSymbols`, `ThreeSymbols2`, `FourArrows`, `FourArrowsGray`, `FourRedToBlack`, `FourRating`, `FourTrafficLights`, `FiveArrows`, `FiveArrowsGray`, `FiveRating`, `FiveQuarters`, `ThreeStars`, `ThreeTriangles` e `FiveBoxes`.|
 
-## <a name="relationships"></a>Relacionamento
-Nenhum
+## <a name="relationships"></a>Relações
+Nenhuma
 
 
 ## <a name="json-representation"></a>Representação JSON

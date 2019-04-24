@@ -5,11 +5,11 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: b5cfe363922fe466eef7a7333ce81249311b4063
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527560"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32506864"
 ---
 # <a name="educationterm-resource-type"></a>Tipo de recurso educationTerm
 
@@ -22,7 +22,7 @@ Termo A. Isso representa uma parte designada do ano acadêmico. É usada dentro 
 |:---------------|:--------|:----------|
 |displayName| String| Nome de exibição do termo.| 
 |externalId|Cadeia de caracteres| ID do termo no sistema de sincronização.|
-|startDate|Data|Início do termo.|
+|startDate|Date|Início do termo.|
 |endDate|Data|Fim do termo.|
 
 ## <a name="json-representation"></a>Representação JSON
