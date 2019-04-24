@@ -4,16 +4,16 @@ ms.topic: include
 ms.date: 01/18/2019
 ms.author: jasonjoh
 ms.openlocfilehash: 9c3b11477fd5208480ee47a16121648af04d6e8b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29530185"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523026"
 ---
 <!-- markdownlint-disable MD041-->
 
 > [!IMPORTANT]
-> APIs sob o `/beta` versão no Microsoft Graph estão sujeitos a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
+> As `/beta` APIs na versão do Microsoft Graph estão sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 <!--
 {

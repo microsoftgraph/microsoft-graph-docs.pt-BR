@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 0cb94689fb4345fec41cd584b3b636ffbdeea325
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30264138"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32584758"
 ---
 # <a name="iosupdatesinstallstatus-enum-type"></a>tipo de enumeração iosUpdatesInstallStatus
 
@@ -23,7 +23,7 @@ Ainda não documentado
 |sucesso|,0|Ainda não documentado|
 |disponível|1|Ainda não documentado|
 |Estado|duas|Ainda não documentado|
-|unknown|3D|Ainda não documentado|
+|desconhecido|3D|Ainda não documentado|
 |Baixe|-2016330712|Ainda não documentado|
 |downloadFailed|-2016330711|Ainda não documentado|
 |downloadRequiresComputer|-2016330710|Ainda não documentado|

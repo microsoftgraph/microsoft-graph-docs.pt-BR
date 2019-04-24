@@ -3,11 +3,11 @@ title: Atualizar approleassignment
 description: Atualize as propriedades do objeto approleassignment.
 localization_priority: Normal
 ms.openlocfilehash: 54c256e3b94a5bb2d62c2ffe31ecf777d472b93c
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643472"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32458954"
 ---
 # <a name="update-approleassignment"></a>Atualizar approleassignment
 
@@ -43,14 +43,14 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |creationTimestamp|DateTimeOffset|A hora em que a concessão foi criada.|
 |id|Guid|A ID de função que foi atribuída à entidade.  Essa função deve ser declarada pela **resourceId** do aplicativo do recurso de destino em sua propriedade **appRoles**. Quando o recurso não declarar nenhuma permissão, uma ID padrão (zero GUID) deve ser especificada.                            **Anotações**: não anulável.            |
 |principalDisplayName|String|O nome de exibição da entidade à qual foi concedido o acesso.|
-|principalId|Guid|O identificador exclusivo (**objectId**) para a entidade sendo concedida o acesso.                            **Observações**: necessários.            |
+|principalId|Guid|O identificador exclusivo (**ObjectID**) da entidade de segurança que recebeu o acesso.                            **Observações**: obrigatório.            |
 |principalType|String|O tipo de entidade.  Pode ser “User”, “Group” ou “ServicePrincipal”.|
 |resourceDisplayName|String|O nome de exibição do recurso para o qual a tarefa foi feita.|
-|resourceId|Guid|O identificador exclusivo (**objectId**) para o recurso de destino (entidade de serviço) para o qual a atribuição foi feita.|
+|resourceId|Guid|O identificador exclusivo (**ObjectID**) do recurso de destino (entidade de serviço) para o qual a atribuição foi feita.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto atualizado [appRoleAssignment](../resources/approleassignment.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [appRoleAssignment](../resources/approleassignment.md) atualizado no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

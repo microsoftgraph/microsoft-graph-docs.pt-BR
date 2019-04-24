@@ -1,15 +1,15 @@
 ---
-title: tipo de recurso de operação
+title: tipo de recurso Operation
 description: O status de uma operação de execução longa.
 localization_priority: Normal
 ms.openlocfilehash: 4f2e2c9a6fb9eb6d26a3511c637e79822919e2f5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27884963"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462673"
 ---
-# <a name="operation-resource-type"></a>tipo de recurso de operação
+# <a name="operation-resource-type"></a>tipo de recurso Operation
 
 O status de uma operação de execução longa.
 
@@ -37,7 +37,7 @@ Veja a seguir uma representação JSON do recurso.
 |:---------------|:--------|:----------|
 |createdDateTime| DateTimeOffset |A hora de início da operação.|
 |lastActionDateTime| DateTimeOffset |A hora da última ação da operação.|
-|status|operationStatus|O status atual da operação: `notStarted`, `running`, `completed`, `failed` |
+|status|operationStatus|O status atual da operação: `notStarted`, `running`,, `completed``failed` |
 
 <!-- uuid: 13fa92b1-3b41-498b-aab1-f943464a124f
 2018-03-30 10:29:30 UTC -->

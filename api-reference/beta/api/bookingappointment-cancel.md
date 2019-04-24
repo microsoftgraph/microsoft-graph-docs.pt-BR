@@ -1,28 +1,28 @@
 ---
-title: 'bookingAppointment: Cancelar'
-description: Cancele o bookingAppointment especificado no bookingbusiness especificado e enviar uma mensagem para os membros da equipe e cliente envolvidos.
+title: 'bookingAppointment: cancelar'
+description: Cancelar o bookingAppointment especificado no bookingbusiness especificado e enviar uma mensagem para o cliente envolvido e os membros da equipe.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: c202ea309641bdcda3e1124792fdc04ad97e02ec
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514681"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460923"
 ---
-# <a name="bookingappointment-cancel"></a>bookingAppointment: Cancelar
+# <a name="bookingappointment-cancel"></a>bookingAppointment: cancelar
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Cancele o [bookingAppointment](../resources/bookingappointment.md) especificado no especificado [bookingbusiness](../resources/bookingbusiness.md)e enviar uma mensagem para o cliente envolvido e a membros da equipe.
+Cancelar o [bookingAppointment](../resources/bookingappointment.md) especificado no [bookingbusiness](../resources/bookingbusiness.md)especificado e enviar uma mensagem para o cliente envolvido e os membros da equipe.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
+|Delegado (conta corporativa ou de estudante) |  BookingsAppointment. ReadWrite. All, bookings. ReadWrite. All, bookings. Manage. All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.   |
 |Aplicativo | Sem suporte.  |
 
@@ -35,22 +35,22 @@ POST /bookingBusinesses/{id}/appointments/{id}/cancel
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
-| Autorização  | Portador {código}|
+| Authorization  | Portador {código}|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|cancellationMessage|String|Uma mensagem de agradecer com o cliente que o compromisso foi cancelado.|
+|cancellationMessage|String|Uma mensagem a ser reconhecida pelo cliente de que o compromisso foi cancelado.|
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna um código de resposta `204 No content`. Não retorna nada no corpo da resposta.
 
-Se você tentar cancelar um compromisso que não não exisit, esse método retorna `HTTP 404 Not found`.
+Se você tentar cancelar um compromisso que não exisit, este método retornará `HTTP 404 Not found`.
 
 ## <a name="example"></a>Exemplo
-Este é um exemplo de como chamar esta API.
+Veja a seguir um exemplo de como chamar essa API.
 ##### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 <!-- {

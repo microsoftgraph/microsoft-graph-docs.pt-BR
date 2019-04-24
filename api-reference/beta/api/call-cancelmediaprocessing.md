@@ -1,29 +1,29 @@
 ---
-title: 'chamar: cancelMediaProcessing'
-description: Mídia cancela o processamento para todos quaisquer operações PlayPrompt ou o registro em andamento.
+title: 'Call: cancelMediaProcessing'
+description: Cancela o processamento de mídia para todas as operações de PlayPrompt ou registro em andamento.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 77c35cb0cfeaea6ebb2e623b32b1fa3c70f65777
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527847"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461303"
 ---
-# <a name="call-cancelmediaprocessing"></a>chamar: cancelMediaProcessing
+# <a name="call-cancelmediaprocessing"></a>Call: cancelMediaProcessing
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Mídia cancela o processamento para todos quaisquer operações PlayPrompt ou o registro em andamento.
+Cancela o processamento de mídia para todas as operações de PlayPrompt ou registro em andamento.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Não são suportados.                              |
-| Delegado (conta pessoal da Microsoft) | Não são suportados.                              |
+| Delegado (conta corporativa ou de estudante)     | Sem suporte.                              |
+| Delegado (conta pessoal da conta Microsoft) | Sem suporte.                              |
 | Aplicativo                            | Nenhum.                                       |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -43,11 +43,11 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    | Descrição                                                    |
 |:---------------|:--------|:---------------------------------------------------------------|
-| ALL            | Booliano | O sinalizador indicando se pare todas as operações ou atual. |
-| ClientContext  | String  | O contexto de cliente.                                            |
+| todos os            | Booliano | O sinalizador que indica se todas as operações ou o atual devem ser interrompidos. |
+| clientContext  | String  | O contexto do cliente.                                            |
 
 ## <a name="response"></a>Resposta
-Retorna `202 Accepted` código de resposta e um cabeçalho de local com um uri para o [commsOperation](../resources/commsoperation.md) criado para essa solicitação.
+Retorna `202 Accepted` o código de resposta e um cabeçalho de local com um URI para o [commsOperation](../resources/commsoperation.md) criado para essa solicitação.
 
 ## <a name="example"></a>Exemplo
 O exemplo a seguir mostra como chamar essa API.
@@ -84,7 +84,7 @@ HTTP/1.1 202 Accepted
 Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
 ```
 
-##### <a name="notification---operation-completed"></a>Notificação - operação concluída
+##### <a name="notification---operation-completed"></a>Notificação-operação concluída
 
 ```http
 POST https://bot.contoso.com/api/calls

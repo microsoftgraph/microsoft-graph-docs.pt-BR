@@ -1,27 +1,27 @@
 ---
 title: Criar bookingStaffMember
-description: Crie um novo membro de equipe no bookingbusiness especificado.
+description: Criar um novo membro da equipe no bookingbusiness especificado.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: f3f13f30f646da8bf0fc8e32075002c0e591e902
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518608"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461651"
 ---
 # <a name="create-bookingstaffmember"></a>Criar bookingStaffMember
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um novo [membro da equipe](../resources/bookingstaffmember.md) no especificado [bookingbusiness](../resources/bookingbusiness.md).
+Criar um novo [membro da equipe](../resources/bookingstaffmember.md) no [bookingbusiness](../resources/bookingbusiness.md)especificado.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  Bookings.ReadWrite.All, Bookings.Manage.All   |
+|Delegado (conta corporativa ou de estudante) |  Bookings. ReadWrite. All, bookings. Manage. All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.   |
 |Aplicativo | Sem suporte.  |
 
@@ -34,18 +34,18 @@ POST /bookingBusinesses/{id}/staffMembers
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
-| Autorização  | Portador {código}|
+| Authorization  | Portador {código}|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do objeto [bookingStaffMember](../resources/bookingstaffmember.md) . Você deve incluir as seguintes propriedades:
+No corpo da solicitação, forneça uma representação JSON do objeto [bookingStaffMember](../resources/bookingstaffmember.md) . Você deve incluir as seguintes propriedades:
 
 - **displayName**
 - **emailAddress**
-- **Função**
+- **Role**
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `201, Created` objeto response de código e [bookingStaffMember](../resources/bookingstaffmember.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `201, Created` o código de resposta e o objeto [bookingStaffMember](../resources/bookingstaffmember.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -137,9 +137,9 @@ Content-length: 309
     ]
 }
 ```
-No corpo da solicitação, fornece uma representação JSON do objeto [bookingStaffMember](../resources/bookingstaffmember.md) .
+No corpo da solicitação, forneça uma representação JSON do objeto [bookingStaffMember](../resources/bookingstaffmember.md) .
 ##### <a name="response"></a>Resposta
-Este é um exemplo de resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Este é um exemplo de resposta. Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

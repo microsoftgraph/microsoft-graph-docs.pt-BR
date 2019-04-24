@@ -3,12 +3,12 @@ title: Configurar notificações para alterações nos dados de usuário
 description: A API do Microsoft Graph usa um mecanismo de webhook para fornecer notificações aos clientes. Um cliente é um serviço Web que configura sua própria URL para receber notificações. Aplicativos cliente usam notificações para atualizar seu estado após alterações.
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: 48f9d16374219868418107201ef13a1bf14fb7da
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 7060a1d6f213a413c453725774da8ffeedb1b277
+ms.sourcegitcommit: d264fa064215879fa88a4680402cd57a470d73db
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30263374"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31980932"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Configurar notificações para alterações nos dados de usuário
 
@@ -45,13 +45,17 @@ Ou para um novo alerta da [API de Segurança](security-concept-overview.md): `/s
 
 ### <a name="azure-ad-resource-limitations"></a>Limitações de recursos do Microsoft Azure AD
 
-Determinados limites se aplicam aos recursos baseados no Microsoft Azure AD (usuários, grupos) e podem gerar erros quando excedidos:
+Determinadas limites se aplicam aos recursos baseados no Azure AD (usuários, grupos) e gerarão erros se forem excedidos:
+
+> **Observação**: Esses limites não se aplicam aos recursos de serviços diferente do Azure AD. Por exemplo, um aplicativo pode criar muito mais assinaturas para `message` ou recursos `event` que são aceitos pelo serviço Exchange Online como parte do Microsoft Graph.
 
 - Cotas máximas de assinaturas:
 
   - Por aplicativo: total de 50 mil assinaturas
   - Por locatário: total de 1000 assinaturas em todos os aplicativos
   - Combinação por aplicativo e locatário: 100 assinaturas no total
+
+Quando os limites são excedidos, a tentativa de criar uma assinatura resultará em uma [resposta de erro](errors.md) - `403 Forbidden`. A propriedade `message` explicará qual limite foi excedido.
 
 - Não há suporte a locatários do Microsoft Azure AD B2C.
 

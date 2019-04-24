@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 2615d1331c024c1a04bc7db618e36966cc5bcdff
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30251164"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32465339"
 ---
 # <a name="managedapppolicy-resource-type"></a>Tipo de recurso managedAppPolicy
 
@@ -28,11 +28,11 @@ O recurso ManagedAppPolicy representa um tipo de base para políticas específic
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |displayName|String|Nome de exibição da política.|
-|descrição|String|Descrição da política.|
+|description|String|Descrição da política.|
 |createdDateTime|DateTimeOffset|A data e a hora da criação da política.|
 |lastModifiedDateTime|DateTimeOffset|Última hora em que a política foi modificada.|
 |id|String|Chave da entidade.|
-|version|String|Versão da entidade.|
+|versão|String|Versão da entidade.|
 
 ## <a name="relationships"></a>Relações
 Nenhuma

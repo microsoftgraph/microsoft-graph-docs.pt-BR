@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 922c600d81bf890980a9d33d14b3255f8ac70be6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27959892"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32585346"
 ---
 # <a name="workbookrange-rowsabove"></a>workbookRange: rowsAbove
 
@@ -85,7 +85,7 @@ Content-length: 157
 }
 ```
 
-Se for chamado sem o opcional `count` parâmetro, essa função retornará a única linha acima do intervalo.
+Se chamado sem o parâmetro `count` opcional, essa função retornará a única linha acima do intervalo.
 
 ##### <a name="request"></a>Solicitação
 <!--{

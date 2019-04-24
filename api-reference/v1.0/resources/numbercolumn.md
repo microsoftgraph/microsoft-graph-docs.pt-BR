@@ -5,11 +5,11 @@ ms.date: 09/11/2017
 title: NumberColumn
 localization_priority: Normal
 ms.openlocfilehash: 42824275bd79f4b631d53365997d2dd96984f7b5
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480849"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463072"
 ---
 # <a name="numbercolumn-resource-type"></a>Tipo de recurso NumberColumn
 
@@ -35,7 +35,7 @@ Aqui está uma representação JSON de um recurso **numberColumn**.
 |:-------------------|:-------|:-----------------------------------------------
 | **decimalPlaces**  | string | Quantas casas decimais exibir. Consulte abaixo para saber mais sobre os valores possíveis.
 | **displayAs**      | string | Como o valor deve ser apresentado na experiência do usuário. Deve ser `number` ou `percentage`. Se não for especificado, é tratado como `number`.
-| **maximum**        | duplo | O valor máximo permitido.
+| **maximum**        | double | O valor máximo permitido.
 | **minimum**        | double | O valor mínimo permitido.
 
 ## <a name="decimalplaces"></a>DecimalPlaces

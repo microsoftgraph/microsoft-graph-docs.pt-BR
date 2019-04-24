@@ -5,11 +5,11 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 3c68f4a9950437ddcebc0cd40237bef07c597648
-ms.sourcegitcommit: 3410e1b8dcf62a7b0e4d6b11920912479f21feb2
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30800944"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457911"
 ---
 # <a name="delete-educationcategory"></a>Excluir educationCategory
 
@@ -23,7 +23,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante)| EduAssignments. ReadWriteBasic, EduAssignments. ReadWrite |
-|Delegado (conta pessoal da Microsoft) |   Sem suporte. |
+|Delegado (conta pessoal da conta Microsoft) |   Sem suporte. |
 |Aplicativo | Sem suporte.  | 
 
 ## <a name="http-request"></a>Solicitação HTTP

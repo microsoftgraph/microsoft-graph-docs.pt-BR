@@ -1,25 +1,25 @@
 ---
 title: Criar uma configuração de diretório
-description: Use essa API para criar uma nova definição, com base em modelos de disponíveis no directorySettingTemplates. Essas configurações podem ser no nível do locatário ou em um nível de objeto (atualmente somente para grupos). A solicitação de criação deve fornecer settingValues para todas as configurações definidas no modelo. Para configurações específicas de grupo, somente a configuração que controlam se os membros de um grupo podem convidar usuários convidados pode ser definido. Depois que a capacidade de adicionar usuários convidados a um grupo estiver disponível, isso orientará esse comportamento.
+description: Use essa API para criar uma nova configuração, com base nos modelos disponíveis no directorySettingTemplates. Essas configurações podem ser no nível do locatário ou em um nível de objeto (atualmente somente para grupos). A solicitação de criação deve fornecer settingValues para todas as configurações definidas no modelo. Para configurações específicas de grupo, somente a configuração que determina se os membros de um grupo podem convidar usuários convidados podem ser definidos. Isso irá controlar esse comportamento assim que a capacidade de adicionar usuários convidados a um grupo estiver disponível.
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: f74c449f02726adc4ba0993f450a8a4351ec8f2a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520750"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454887"
 ---
 # <a name="create-a-directory-setting"></a>Criar uma configuração de diretório
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use essa API para criar uma nova definição, com base em modelos de disponíveis no directorySettingTemplates. Essas configurações podem ser no nível do locatário ou em um nível de objeto (atualmente somente para grupos). A solicitação de criação deve fornecer settingValues para todas as configurações definidas no modelo. Para configurações específicas de grupo, somente a configuração que controlam se os membros de um grupo podem convidar usuários convidados pode ser definido. Depois que a capacidade de adicionar usuários convidados a um grupo estiver disponível, isso orientará esse comportamento.
+Use essa API para criar uma nova configuração, com base nos modelos disponíveis no directorySettingTemplates. Essas configurações podem ser no nível do locatário ou em um nível de objeto (atualmente somente para grupos). A solicitação de criação deve fornecer settingValues para todas as configurações definidas no modelo. Para configurações específicas de grupo, somente a configuração que determina se os membros de um grupo podem convidar usuários convidados podem ser definidos. Isso irá controlar esse comportamento assim que a capacidade de adicionar usuários convidados a um grupo estiver disponível.
 
-> **Observação**: A versão de /beta desse API é só se aplica aos grupos. A versão de /v1.0 desse API foi renomeada para *criar groupSettings*.
+> **Observação**: a versão do/beta dessa API só se aplica aos grupos. A versão/v1.0 dessa API foi renomeada para *criar groupSettings*.
 
-Para obter uma lista de modelos e as propriedades que eles oferecem suporte na versão beta, use uma [consulta directorySettingTemplate](https://developer.microsoft.com/graph/graph-explorer?request=directorySettingTemplates&version=beta). (Para os pontos de extremidade v 1.0, chamada [groupSettingTemplates](https://developer.microsoft.com/graph/graph-explorer?request=groupSettingTemplates&version=v1.0).)
+Para obter uma lista de modelos e as propriedades que eles dão suporte na versão beta, use uma [consulta directorySettingTemplate](https://developer.microsoft.com/graph/graph-explorer?request=directorySettingTemplates&version=beta). (Para pontos de extremidade de v 1.0, chame [groupSettingTemplates](https://developer.microsoft.com/graph/graph-explorer?request=groupSettingTemplates&version=v1.0).)
 
 
 ## <a name="permissions"></a>Permissões
@@ -43,11 +43,11 @@ POST /groups/{id}/settings
 | Autorização  | {token} de portador. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do objeto [directorySetting](../resources/directorysetting.md) .  No entanto, o nome de exibição para a configuração será definido com base no nome do modelo de configurações referenciado.
+No corpo da solicitação, forneça uma representação JSON do objeto [directorySetting](../resources/directorysetting.md) .  No enTanto, o nome de exibição da configuração será definido com base no nome do modelo de configurações referenciado.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` objeto response de código e [directorySetting](../resources/directorysetting.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `201 Created` o código de resposta e o objeto [directorySetting](../resources/directorysetting.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -71,7 +71,7 @@ Content-length: 222
   ]
 }
 ```
-No corpo da solicitação, fornece uma representação JSON do objeto [directorySetting](../resources/directorysetting.md) .
+No corpo da solicitação, forneça uma representação JSON do objeto [directorySetting](../resources/directorysetting.md) .
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {

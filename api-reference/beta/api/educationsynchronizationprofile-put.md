@@ -1,21 +1,21 @@
 ---
 title: Atualizar um educationSynchronizationProfile
-description: Atualize as propriedades de um perfil de sincronização de dados escola existente no inquilino.
+description: Atualize as propriedades de um perfil de sincronização de dados da escola existente no locatário.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 668aad65abe2c9b3d4609400118f9341748210f1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510572"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464711"
 ---
 # <a name="update-an-educationsynchronizationprofile"></a>Atualizar um educationSynchronizationProfile
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades de um existente escola dados do [perfil de sincronização](../resources/educationsynchronizationprofile.md) no inquilino.
+Atualize as propriedades de um perfil de [sincronização](../resources/educationsynchronizationprofile.md) de dados da escola existente no locatário.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -23,7 +23,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Tipo de permissão | Permissões |
 |:-----------|:----------|
 | Delegado (conta corporativa ou de estudante) | EduAdministration.ReadWrite |
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta pessoal da Microsoft|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -39,10 +39,10 @@ PUT /synchronizationProfiles
 | Content-Type | string | application/json. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do objeto [synchronizationProfile](../resources/educationsynchronizationprofile.md) .
+No corpo da solicitação, forneça uma representação JSON do objeto [synchronizationProfile](../resources/educationsynchronizationprofile.md) .
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `202, Accepted` código de resposta e um objeto [synchronizationProfile](../resources/educationsynchronizationprofile.md) no corpo da resposta.
+Se tiver êxito, este método retornará `202, Accepted` um código de resposta e um objeto [synchronizationProfile](../resources/educationsynchronizationprofile.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação

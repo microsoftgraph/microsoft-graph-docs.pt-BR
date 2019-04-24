@@ -1,47 +1,47 @@
 ---
-title: tipo de recurso de teamsTab
-description: 'Um teamsTab é uma guia que tem fixados (anexado) a um canal de uma equipe. '
+title: tipo de recurso teamsTab
+description: 'Um teamsTab é uma guia fixa (anexada) a um canal dentro de uma equipe. '
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 ms.openlocfilehash: 181d2fd23ff922709b3e098f6069adf300ad3928
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574667"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456974"
 ---
-# <a name="teamstab-resource-type"></a>tipo de recurso de teamsTab
+# <a name="teamstab-resource-type"></a>tipo de recurso teamsTab
 
 
 
-Um teamsTab é uma [guia](../resources/teamstab.md) que tem fixados (anexado) a um [canal](channel.md) de dentro de uma [equipe](team.md). 
+Um teamsTab é uma [guia](../resources/teamstab.md) fixa (anexada) a um [canal](channel.md) dentro de uma [equipe](team.md). 
 
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[Guias de lista](../api/teamstab-list.md) | [teamsTab](teamstab.md) | Guias de listas fixados em um canal.|
-|[Obtenha o guia](../api/teamstab-get.md) | [teamsTab](teamstab.md) | Lê uma guia fixada em um canal.|
-|[Adicionar guia](../api/teamstab-add.md) | [teamsTab](teamstab.md) | Adiciona (pins) uma guia em um canal.|
-|[Remover guia](../api/teamstab-delete.md) | Nenhum | Remove (unpin) uma guia de um canal.|
-|[Guia de atualização](../api/teamstab-update.md) | [teamsTab](teamstab.md) | Atualiza as propriedades da guia.|
+|[Listar guias](../api/teamstab-list.md) | [teamsTab](teamstab.md) | Lista guias fixadas a um canal.|
+|[Obter guia](../api/teamstab-get.md) | [teamsTab](teamstab.md) | Lê uma guia fixada a um canal.|
+|[Adicionar guia](../api/teamstab-add.md) | [teamsTab](teamstab.md) | Adiciona (fixa) uma guia a um canal.|
+|[Guia remover](../api/teamstab-delete.md) | Nenhum | Remove (desfixa) uma guia de um canal.|
+|[Atualizar guia](../api/teamstab-update.md) | [teamsTab](teamstab.md) | Atualiza as propriedades da guia.|
 
 
 ## <a name="properties"></a>Propriedades
 
 |Propriedade|Tipo|Descrição|
 |:---------------|:--------|:----------|
-|  id              |   string                  |  Identificador que identifica exclusivamente uma instância específica de um canal na guia leitura apenas.     |
+|  id              |   string                  |  Identificador que identifica exclusivamente uma instância específica de uma guia de canal. somente leitura.     |
 |  displayName            |   string                  |  Nome da guia.     |
-|  webUrl          |   string                  |  Link profundo url da instância do guia. Somente leitura.     |
-|  configuration        |   [teamsTabConfiguration](teamstabconfiguration.md) |  Contêiner de configurações personalizadas aplicadas a uma guia. Na guia é considerada configurado somente depois que essa propriedade for definida.     |
+|  webUrl          |   cadeia de caracteres                  |  URL de link profundo da instância de guia. Somente leitura.     |
+|  Configuration        |   [teamsTabConfiguration](teamstabconfiguration.md) |  Contêiner para configurações personalizadas aplicadas a uma guia. A guia é considerada configurada somente quando essa propriedade é definida.     |
 
 ## <a name="relationships"></a>Relações
 
 | Relação | Tipo   | Descrição |
 |:---------------|:--------|:----------|
-|teamsApp|[teamsApp](teamsapp.md) | O aplicativo que está vinculado à guia. Isso não pode ser alterado após a criação da guia. |
+|teamsApp|[teamsApp](teamsapp.md) | O aplicativo que está vinculado à guia. Isso não pode ser alterado após a criação da Tabulação. |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -76,4 +76,4 @@ Veja a seguir uma representação JSON do recurso.
 
 ## <a name="see-also"></a>Confira também
 
-[Configurando os tipos de guia interna](/graph/teams-configuring-builtin-tabs)
+[Configurar tipos de guia internos](/graph/teams-configuring-builtin-tabs)

@@ -1,17 +1,17 @@
 ---
-title: 'chamar: transferência'
+title: 'Call: transferência'
 description: Transferir uma chamada ativa.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: b1c503be31b17fb608abbec340aa9390ce315435
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516249"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462428"
 ---
-# <a name="call-transfer"></a>chamar: transferência
+# <a name="call-transfer"></a>Call: transferência
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +22,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios)         |
 | :-------------- | :-------------------------------------------------- |
-| Delegado (conta corporativa ou de estudante)     | Não suportado                |
+| Delegado (conta corporativa ou de estudante)     | Não Suportado                |
 | Delegado (conta pessoal da Microsoft) | Não suportado                |
 | Aplicativo     | Calls.Initiate.All                                  |
 
@@ -44,14 +44,14 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
 |transferTarget|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)|O participante que é o destino da transferência.|
-|ClientContext|String|O contexto de cliente.|
+|clientContext|String|O contexto do cliente.|
 
 ## <a name="response"></a>Resposta
-Retorna `202 Accepted` código de resposta.
+Retorna `202 Accepted` o código de resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="transfer-call-directly-with-no-user-involvement"></a>Transferir a chamada diretamente, com nenhum envolvimento do usuário
+### <a name="transfer-call-directly-with-no-user-involvement"></a>Transferir a chamada diretamente, sem envolvimento do usuário
 
 O exemplo a seguir mostra como chamar essa API.
 
@@ -98,7 +98,7 @@ Content-Length: 430
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---transferring"></a>Notificação - transferindo
+##### <a name="notification---transferring"></a>Notificação-Transferindo
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -132,7 +132,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---transfer-accepted"></a>Notificação - transferência aceito
+##### <a name="notification---transfer-accepted"></a>Notificação-transferência aceita
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -166,7 +166,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---terminated"></a>Notificação - terminada
+##### <a name="notification---terminated"></a>Notificação-terminada
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -196,7 +196,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="consultative-transfer"></a>Transferência com consultoria
+### <a name="consultative-transfer"></a>Transferência consultiva
 
 ##### <a name="request"></a>Solicitação
 
@@ -236,7 +236,7 @@ Content-Type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---transferring"></a>Notificação - transferindo
+##### <a name="notification---transferring"></a>Notificação-Transferindo
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -270,7 +270,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---transfer-accepted"></a>Notificação - transferência aceito
+##### <a name="notification---transfer-accepted"></a>Notificação-transferência aceita
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -304,7 +304,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---terminated"></a>Notificação - terminada
+##### <a name="notification---terminated"></a>Notificação-terminada
 
 ```http
 POST https://bot.contoso.com/api/calls

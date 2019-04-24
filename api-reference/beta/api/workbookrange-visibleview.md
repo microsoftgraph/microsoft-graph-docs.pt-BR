@@ -1,15 +1,15 @@
 ---
 title: 'workbookRange: visibleView'
-description: Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira Permissões.
+description: Uma das seguintes permissões é necessária para chamar esta API. Para saber mais, incluindo como escolher permissões, confira Permissões.
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: b7ddea5635f8cf90e448d15223b5de51b0138f21
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525385"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460979"
 ---
 # <a name="workbookrange-visibleview"></a>workbookRange: visibleView
 

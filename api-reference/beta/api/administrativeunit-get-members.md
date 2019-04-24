@@ -1,21 +1,21 @@
 ---
-title: Obter membro
-description: Use essa API para obter um determinado membro (usuário ou grupo) em uma unidade administrativa.
+title: Obter um membro
+description: Use essa API para obter um membro específico (usuário ou grupo) em uma unidade administrativa.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 67067d0e465aab61449a42cd833f9e6ce07fcd12
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526792"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459623"
 ---
-# <a name="get-a-member"></a>Obter membro
+# <a name="get-a-member"></a>Obter um membro
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use essa API para obter um determinado membro (usuário ou grupo) em uma unidade administrativa.
+Use essa API para obter um membro específico (usuário ou grupo) em uma unidade administrativa.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -42,7 +42,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto de [usuário](../resources/user.md) ou [grupo](../resources/group.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [User](../resources/user.md) ou [Group](../resources/group.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -53,7 +53,7 @@ GET https://graph.microsoft.com/beta/administrativeUnits/{id}/members/{id}
 ```
 
 ##### <a name="response"></a>Resposta
-Aqui está um exemplo do respone. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja um exemplo de Respone. Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 
 ```http
 HTTP/1.1 200 OK

@@ -5,11 +5,11 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 683a290806f9a70f97bda4aa9429a64578fbcd97
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27916359"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463555"
 ---
 # <a name="educationstudent-resource-type"></a>Tipo de recurso educationStudent
 
@@ -19,10 +19,10 @@ Informações adicionais incluídas a um [educationUser](educationuser.md) que e
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |birthDate|Data| Data de nascimento do aluno.|
-|externalId|Cadeia de caracteres| ID do aluno no sistema de origem.|
+|externalId|String| ID do aluno no sistema de origem.|
 |gender|educationGender| Os valores possíveis são: `female`, `male`, `other`, `unknownFutureValue`.|
-|grade|Cadeia de caracteres|Nível de classificação atual do aluno.|
-|graduationYear|Cadeia de caracteres| Ano que o aluno está graduando na escola.|
+|grade|String|Nível de classificação atual do aluno.|
+|graduationYear|String| Ano que o aluno está graduando na escola.|
 |studentNumber|Cadeia de caracteres| Número do aluno.|
 
 ## <a name="json-representation"></a>Representação JSON

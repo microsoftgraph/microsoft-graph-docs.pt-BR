@@ -1,21 +1,21 @@
 ---
-title: Reiniciar a sincronização de um educationSynchronizationProfile
-description: Retome a sincronização de um perfil de sincronização de dados escola específico no inquilino.
+title: Continuar a sincronização em um educationSynchronizationProfile
+description: ReTome a sincronização de um perfil de sincronização de dados escolar específico no locatário.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 50ffcb4ceab401a3041ecb69baa1de0409be94a4
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513253"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464844"
 ---
-# <a name="resume-sync-on-an-educationsynchronizationprofile"></a>Reiniciar a sincronização de um educationSynchronizationProfile
+# <a name="resume-sync-on-an-educationsynchronizationprofile"></a>Continuar a sincronização em um educationSynchronizationProfile
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retome a sincronização de um de dados específicos escola [perfil de sincronização](../resources/educationsynchronizationprofile.md) no inquilino.
+ReTome a sincronização de um perfil de [sincronização](../resources/educationsynchronizationprofile.md) de dados escolar específico no locatário.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -23,7 +23,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Tipo de permissão | Permissões |
 |:-----------|:----------|
 | Delegado (conta corporativa ou de estudante) | EduAdministration.ReadWrite |
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta pessoal da Microsoft|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -55,7 +55,7 @@ POST https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/res
 
 ##### <a name="response"></a>Resposta
 
-Não há nenhum corpo de resposta.
+Não há corpo de resposta.
 
 <!-- {
   "blockType": "response",

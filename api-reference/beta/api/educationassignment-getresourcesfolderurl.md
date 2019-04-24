@@ -1,29 +1,29 @@
 ---
 title: 'educationAssignment: getResourcesFolderUrl'
-description: 'Essa função retorna a URL de OneDrive onde todos os recursos com base em arquivo (Word, Excel e assim por diante) devem ser carregados.  '
+description: 'Essa função retorna a URL do OneDrive onde todos os recursos baseados em arquivo (Word, Excel e assim por diante) devem ser carregados.  '
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 ms.openlocfilehash: 43bef729d2cf37561d0742ebb3adfb21fe4f486e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512028"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464649"
 ---
 # <a name="educationassignment-getresourcesfolderurl"></a>educationAssignment: getResourcesFolderUrl
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Essa função retorna a URL de OneDrive onde todos os recursos com base em arquivo (Word, Excel e assim por diante) devem ser carregados.  
-Observe que os arquivos devem estar localizados nesta pasta para ser adicionado como recursos. Somente um professor na classe pode determinar quais arquivos para carregar. 
+Essa função retorna a URL do OneDrive onde todos os recursos baseados em arquivo (Word, Excel e assim por diante) devem ser carregados.  
+Observe que os arquivos devem estar localizados nessa pasta para serem adicionados como recursos. Apenas um professor na turma pode determinar quais arquivos carregar. 
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  EduAssignments.ReadBasic, EduAssignments.Read  |
+|Delegado (conta corporativa ou de estudante) |  EduAssignments. ReadBasic, EduAssignments. Read  |
 |Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
 |Aplicativo | Sem suporte. | 
 
@@ -41,12 +41,12 @@ POST /education/classes/{id}/assignments/{id}/getResourcesFolderUrl
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta `200 Ok`. O corpo irá conter a URL de OneDrive de uma pasta na qual colocar todos os recursos baseados em arquivos.
+Se tiver êxito, este método retornará um código de resposta `200 Ok`. O corpo conterá a URL do OneDrive de uma pasta na qual colocar todos os recursos baseados em arquivo.
 
 ## <a name="example"></a>Exemplo
 O exemplo a seguir mostra como chamar essa API.
 ##### <a name="request"></a>Solicitação
-O exemplo a seguir é um exemplo de uma solicitação.
+Veja a seguir um exemplo de uma solicitação.
 <!-- {
   "blockType": "request",
   "name": "educationassignment_publish"
@@ -56,7 +56,7 @@ POST https://graph.microsoft.com/beta/education/classes/11012/assignments/19002/
 ```
 
 ##### <a name="response"></a>Resposta
-O exemplo a seguir é um exemplo de uma resposta. 
+Veja a seguir um exemplo de uma resposta. 
 
 <!-- {
   "blockType": "response",

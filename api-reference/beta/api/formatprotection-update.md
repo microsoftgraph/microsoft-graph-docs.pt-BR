@@ -3,11 +3,11 @@ title: Atualizar formatprotection
 description: Atualiza as propriedades do objeto formatprotection.
 localization_priority: Normal
 ms.openlocfilehash: f1ee62cf4c483c821d80de42dc8645f9cda2bdeb
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520526"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463956"
 ---
 # <a name="update-formatprotection"></a>Atualizar formatprotection
 
@@ -45,7 +45,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [FormatProtection](../resources/formatprotection.md) atualizado no corpo da resposta.
+Se bem sucedido, este método retorna um código de resposta `200 OK` e um objeto [FormatProtection](../resources/formatprotection.md) atualizado no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

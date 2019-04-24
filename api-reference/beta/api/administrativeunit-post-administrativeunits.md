@@ -1,21 +1,21 @@
 ---
 title: Criar administrativeUnit
-description: Use essa API para criar um novo administrativeUnit.
+description: Use esta API para criar um novo administrativeUnit.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 999f65db5c50ae012cf10242100523b2f6d0c4ce
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509683"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459302"
 ---
 # <a name="create-administrativeunit"></a>Criar administrativeUnit
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use essa API para criar um novo [administrativeUnit](../resources/administrativeunit.md).
+Use esta API para criar um novo [administrativeUnit](../resources/administrativeunit.md).
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -37,13 +37,13 @@ POST /administrativeUnits
 |:----------|:----------|
 | Autorização  | {token} de portador. Obrigatório. |
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do objeto [administrativeUnit](../resources/administrativeunit.md) .
+No corpo da solicitação, forneça uma representação JSON do objeto [administrativeUnit](../resources/administrativeunit.md) .
 
-Desde que o recurso de **administrativeUnit** oferece suporte às [extensões](/graph/extensibility-overview), você pode usar o `POST` operação e adicionar propriedades personalizadas com seus próprios dados para a unidade administrativa ao criá-la.
+Como o recurso **administrativeUnit** oferece suporte a [extensões](/graph/extensibility-overview), você pode `POST` usar a operação e adicionar propriedades personalizadas com seus próprios dados à unidade administrativa ao criá-la.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` objeto response de código e [administrativeUnit](../resources/administrativeunit.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `201 Created` o código de resposta e o objeto [administrativeUnit](../resources/administrativeunit.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -63,7 +63,7 @@ Content-length: 150
     "visibility": "true"
 }
 ```
-No corpo da solicitação, fornece uma representação JSON do objeto [administrativeUnit](../resources/administrativeunit.md) .
+No corpo da solicitação, forneça uma representação JSON do objeto [administrativeUnit](../resources/administrativeunit.md) .
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {

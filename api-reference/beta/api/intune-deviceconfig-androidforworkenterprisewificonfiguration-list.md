@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 188841a6c9fab4426ef13eb84775ada00a0bc907
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31798345"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32479012"
 ---
 # <a name="list-androidforworkenterprisewificonfigurations"></a>Listar androidForWorkEnterpriseWiFiConfigurations
 

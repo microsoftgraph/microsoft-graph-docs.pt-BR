@@ -1,17 +1,17 @@
 ---
-title: 'evento: Cancelar'
+title: 'evento: cancelar'
 description: 'Esta ação permite que o organizador de uma reunião envie uma mensagem de cancelamento e cancele o evento. '
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: e39066c3360113965b0009473e520557853ba284
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29530150"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457515"
 ---
-# <a name="event-cancel"></a>evento: Cancelar
+# <a name="event-cancel"></a>evento: cancelar
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

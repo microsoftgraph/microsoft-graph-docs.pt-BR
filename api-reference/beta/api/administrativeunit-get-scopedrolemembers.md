@@ -1,21 +1,21 @@
 ---
-title: Obtenha um scopedRoleMember
+title: Obter um scopedRoleMember
 description: Recupere um recurso scopedRoleMembership específico.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 0e961097184730922aebd4348f88b8570d5c24ca
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29644095"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459460"
 ---
-# <a name="get-a-scopedrolemember"></a>Obtenha um scopedRoleMember
+# <a name="get-a-scopedrolemember"></a>Obter um scopedRoleMember
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere um recurso específico [scopedRoleMembership](../resources/scopedrolemembership.md) .
+Recupere um recurso [scopedRoleMembership](../resources/scopedrolemembership.md) específico.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -44,7 +44,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto solicitada [scopedRoleMembership](../resources/scopedrolemembership.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e o objeto [scopedRoleMembership](../resources/scopedrolemembership.md) solicitado no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

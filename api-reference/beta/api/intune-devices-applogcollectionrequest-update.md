@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: a924def5da43959478ebaf060bd46e51408a2293
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31795762"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32466088"
 ---
 # <a name="update-applogcollectionrequest"></a>Atualizar appLogCollectionRequest
 
@@ -52,8 +52,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [appLogC
 |:---|:---|:---|
 |id|String|O identificador exclusivo. Esta é a ID do userId_DeviceId_AppId.|
 |status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|Status de carregamento de logs. Os valores possíveis são: `pending`, `completed`, `failed`.|
-|errorMessage|Cadeia de caracteres|Mensagem de erro se qualquer um durante o processo de carregamento|
-|customLogFolders|Coleção String|Lista de pastas de log. |
+|errorMessage|String|Mensagem de erro se qualquer um durante o processo de carregamento|
+|customLogFolders|Coleção de cadeias de caracteres|Lista de pastas de log. |
 |completedDateTime|DateTimeOffset|Hora em que a solicitação de log de carregamento alcançou um estado de terminal|
 
 

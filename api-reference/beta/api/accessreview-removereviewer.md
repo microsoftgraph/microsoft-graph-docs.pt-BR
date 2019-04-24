@@ -1,21 +1,21 @@
 ---
-title: Remover accessReview revisor
-description: 'No recurso de avaliações de acesso do Azure AD, atualize um objeto accessReview existente para remover um usuário como um revisor.  Essa operação só é permitida para uma revisão de acesso que ainda não foi concluída e apenas para uma revisão de acesso onde os revisores são explicitamente especificados. Essa operação não é permitida para uma revisão do access no qual os usuários revisam sua próprias acesso e não foi projetada para uma revisão de acesso na qual os proprietários do grupo são atribuídos como os revisores. '
+title: Remover revisor accessReview
+description: 'No recurso de revisões do Azure AD Access, atualize um objeto accessReview existente para remover um usuário como um revisor.  Essa operação só é permitida para uma revisão do Access que ainda não foi concluída e somente para uma revisão do Access em que os revisores são explicitamente especificados. Essa operação não é permitida para uma revisão do Access na qual os usuários revisam seu próprio acesso e não se destinam a uma revisão do Access na qual os proprietários do grupo são atribuídos como os revisores. '
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: d3b6ea0fecb6b9179f40fa185aa770a743776eaa
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523124"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459428"
 ---
-# <a name="remove-accessreview-reviewer"></a>Remover accessReview revisor
+# <a name="remove-accessreview-reviewer"></a>Remover revisor accessReview
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No recurso [acesso analisa](../resources/accessreviews-root.md) Azure AD, atualize um objeto [accessReview](../resources/accessreview.md) existente para remover um usuário como um revisor.  Essa operação só é permitida para uma revisão de acesso que ainda não foi concluída e apenas para uma revisão de acesso onde os revisores são explicitamente especificados. Essa operação não é permitida para uma revisão do access no qual os usuários revisam sua próprias acesso e não foi projetada para uma revisão de acesso na qual os proprietários do grupo são atribuídos como os revisores. 
+No recurso de revisões do Azure AD [Access](../resources/accessreviews-root.md) , atualize um objeto [accessReview](../resources/accessreview.md) existente para remover um usuário como um revisor.  Essa operação só é permitida para uma revisão do Access que ainda não foi concluída e somente para uma revisão do Access em que os revisores são explicitamente especificados. Essa operação não é permitida para uma revisão do Access na qual os usuários revisam seu próprio acesso e não se destinam a uma revisão do Access na qual os proprietários do grupo são atribuídos como os revisores. 
 
 
 ## <a name="permissions"></a>Permissões
@@ -23,7 +23,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | AccessReview.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante)     | AccessReview. ReadWrite. All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | Sem suporte. |
 
@@ -35,22 +35,22 @@ DELETE /accessReviews('{reviewId}')/reviewers('{userId'})
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome         | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| Autorização | string | Token de portador Obrigatório. |
+| Autorização | string | \{token\} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-Nenhum corpo da solicitação deve ser fornecido.
+Nenhum corpo de solicitação deve ser fornecido.
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, esse método retorna um código de resposta de série 200.
+Se tiver êxito, este método retornará um código de resposta da série 200.
 
 ## <a name="example"></a>Exemplo
 
-Este é um exemplo de atualização de uma única revisão de acesso (não recorrentes) para remover um revisor desnecessário.
+Este é um exemplo de atualização de um modo de exibição de acesso de uma única vez (não repetido) para remover um revisor desnecessário.
 
 
 ##### <a name="request"></a>Solicitação
-Na URL da solicitação, fornece a id do objeto accessReview e, em seguida, a id do objeto de usuário.
+Na URL da solicitação, forneça a ID do objeto accessReview e, em seguida, a ID do objeto user.
 
 <!-- {
   "blockType": "request",

@@ -3,12 +3,12 @@ title: Log de mudanças do Microsoft Graph
 description: Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as APIs do Microsoft Graph para pontos de extremidade v1.0 e beta.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: c99c3eb7cb7b1085e2609b460545c111537aeefe
-ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
+ms.openlocfilehash: 746902cb9e091a5b206966c631d6b68930e76ff9
+ms.sourcegitcommit: d264fa064215879fa88a4680402cd57a470d73db
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "31889986"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31981065"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Log de mudanças do Microsoft Graph
 
@@ -17,6 +17,12 @@ Esse log de mudanças cobre o que foi alterado no Microsoft Graph, incluindo as 
 Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em [problemas conhecidos](known-issues.md).
 
 ## <a name="april-2019"></a>Abril de 2019
+### <a name="azure-ad-b2c-apis"></a>APIs do Azure AD B2C
+
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Adição | Beta |Introduzido um novo tipo de recurso [trustFrameworkPolicy](/graph/api/resources/trustframeworkpolicy?view=graph-rest-beta). Este tipo de recurso oferece suporte a operações de [criar](/graph/api/trustframework-post-trustframeworkpolicy?view=graph-rest-beta), [listar](/graph/api/trustframework-list-trustframeworkpolicies?view=graph-rest-beta), [obter](/graph/api/trustframeworkpolicy-get?view=graph-rest-beta), [atualizar](/graph/api/trustframework-put-trustframeworkpolicy?view=graph-rest-beta), e [excluir](/graph/api/trustframerkpolicy-delete?view=graph-rest-beta).|
+
 
 ### <a name="directory-apis"></a>APIs de diretório
 
@@ -267,7 +273,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 ## <a name="january-2019"></a>Janeiro de 2019
 
-### <a name="azure-ad-apis"></a>APIs do Azure AD
+### <a name="azure-ad-b2c-apis"></a>APIs do Azure AD B2C
 
 | **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -1008,7 +1014,7 @@ Confira os detalhes sobre problemas conhecidos com as APIs do Microsoft Graph em
 
 ### <a name="education-api"></a>API de Educação
 
-| **Tipo de alteração** | **Version**   | **Descrição**                          |
+| **Tipo de alteração** | **Versão**   | **Descrição**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Alteração          | v1.0 e beta | O escopo **Members.Read.Hidden** é necessário para ler ou atualizar o conjunto **Members** em uma entidade [educationClass](/graph/api/resources/educationclass?view=graph-rest-1.0) usando tokens somente de aplicativo. |
 |Alteração           |Beta           |Atualizado os valores possíveis do tipo **educationSubmissionStatus** na propriedade de status do  [educationsubmission](/graph/api/resources/educationsubmission?view=graph-rest-beta).|
@@ -2867,7 +2873,7 @@ Suporte adicionado para a associação de grupo dinâmico através de visualiza�
 
 ### <a name="outlook-calendar"></a>Calendário do Outlook
 
-| **Tipo de alteração** | **Versão** | **Descrição**                          |
+| **Tipo de alteração** | **Version** | **Descrição**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Adição        | v1.0        | A propriedade **onlineMeetingUrl** foi adicionada ao recurso [event](/graph/api/resources/event?view=graph-rest-1.0). |
 | Adição        | Beta        | A ação [forward](/graph/api/event-forward?view=graph-rest-beta) foi adicionada ao recurso event. |

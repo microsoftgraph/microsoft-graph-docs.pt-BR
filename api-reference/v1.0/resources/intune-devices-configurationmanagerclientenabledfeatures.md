@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 91ffd0180660b33e9ead5210f9b23870af18e29a
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30264418"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32467306"
 ---
 # <a name="configurationmanagerclientenabledfeatures-resource-type"></a>Tipo de recurso configurationManagerClientEnabledFeatures
 
@@ -20,15 +20,15 @@ recursos habilitados pelo cliente do Gerenciador de Configurações
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|inventory|Boolean|Se o estoque é gerenciado pelo Intune|
-|modernApps|Boolean|Se o aplicativo moderno é gerenciado pelo Intune|
-|resourceAccess|Boolean|Se o acesso ao recurso é gerenciado pelo Intune|
-|deviceConfiguration|Boolean|Se a configuração do dispositivo é gerenciada pelo Intune|
-|compliancePolicy|Boolean|Se a política de conformidade é gerenciada pelo Intune|
+|inventory|Booliano|Se o estoque é gerenciado pelo Intune|
+|modernApps|Booliano|Se o aplicativo moderno é gerenciado pelo Intune|
+|resourceAccess|Booliano|Se o acesso ao recurso é gerenciado pelo Intune|
+|deviceConfiguration|Booliano|Se a configuração do dispositivo é gerenciada pelo Intune|
+|compliancePolicy|Booliano|Se a política de conformidade é gerenciada pelo Intune|
 |windowsUpdateForBusiness|Booliano|Se o Windows Update para Empresas é gerenciado pelo Intune|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

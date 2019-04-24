@@ -5,11 +5,11 @@ ms.date: 09/11/2017
 title: ColumnDefinition
 localization_priority: Normal
 ms.openlocfilehash: 679f0139f7ad0e94eab1970cc113268a56722663
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481878"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32584849"
 ---
 # <a name="columndefinition-resource"></a>Recurso ColumnDefinition
 
@@ -58,7 +58,7 @@ O recurso **columnDefinition** tem as seguintes propriedades.
 |:------------------------|:--------|:-----------------------------------------
 | **columnGroup**         | string  | Para colunas de site, o nome do grupo ao qual esta coluna pertence. Ajuda a organizar as colunas relacionadas.
 | **description**         | string  | A descrição voltado para o usuário da coluna.
-| **displayName**         | cadeia de caracteres  | O nome voltado para o usuário da coluna.
+| **displayName**         | string  | O nome voltado para o usuário da coluna.
 | **enforceUniqueValues** | booliano | Se for verdadeiro, esse mesmo valor não constará em dois itens de lista nessa coluna.
 | **hidden**              | booliano | Especifica se a coluna é exibida na interface do usuário.
 | **id**                  | string  | O identificador exclusivo da coluna.

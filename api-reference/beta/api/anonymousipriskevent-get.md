@@ -1,19 +1,19 @@
 ---
 title: Obter anonymousIpRiskEvent
-description: Recupere as propriedades e relacionamentos de um objeto anonymousipriskevent.
+description: Recupere as propriedades e os relacionamentos de um objeto anonymousipriskevent.
 localization_priority: Normal
 ms.openlocfilehash: c306593d55792035377d18ad1888f5a4ca707aa6
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519112"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459518"
 ---
 # <a name="get-anonymousipriskevent"></a>Obter anonymousIpRiskEvent
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e relacionamentos de um objeto anonymousipriskevent.
+Recupere as propriedades e os relacionamentos de um objeto anonymousipriskevent.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -40,7 +40,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` objeto response de código e [anonymousIpRiskEvent](../resources/anonymousipriskevent.md) no valor do corpo de resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [anonymousIpRiskEvent](../resources/anonymousipriskevent.md) no valor do corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

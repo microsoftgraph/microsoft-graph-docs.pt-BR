@@ -5,11 +5,11 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 ms.openlocfilehash: 1a7975d870389be5163a8f230f6a6cc4cd1425c3
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480828"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461037"
 ---
 # <a name="alerthistorystate-resource-type"></a>tipo de recurso alertHistoryState
 

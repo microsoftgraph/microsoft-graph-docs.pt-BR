@@ -5,11 +5,11 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: ae49192b349f39b091ecaa1706099e5f10782432
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517096"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464821"
 ---
 # <a name="update-educationuser-properties"></a>Atualizar propriedades de educationUser
 
@@ -38,7 +38,7 @@ PATCH /education/users/{id}
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações em outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
+No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
@@ -46,13 +46,13 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |givenName| String | Nome |
 |middleName| String | O nome do meio do usuário|
 |surname| String | Sobrenome do usuário|
-|mail| String| endereço de email|
+|email| String| endereço de email|
 |mobilePhone| Cadeia de caracteres | O número de celular do usuário |
 |externalSource|string| Os valores possíveis são: `sis`, `manual`, `enum_sentinel`.|
 |externalSource|string| De onde esse usuário foi criado.  Os valores possíveis são: `sis`, `manual`, `enum_sentinel`.|
 |mailingAddress|[physicalAddress](../resources/physicaladdress.md)| Endereço de email do usuário.|
 |residenceAddress|[physicalAddress](../resources/physicaladdress.md)| Endereço em que o usuário reside.|
-|primaryRole|string| Função padrão de um usuário.  A função do usuário pode ser diferente em uma aula individual. Os valores possíveis são: `student`, `teacher`, `enum_sentinel`.|
+|primaryRole|cadeia de caracteres| Função padrão de um usuário.  A função do usuário pode ser diferente em uma aula individual. Os valores possíveis são: `student`, `teacher`, `enum_sentinel`.|
 |student|[educationStudent](../resources/educationstudent.md)| Se a função principal for aluno, esse bloco conterá dados específicos do aluno.|
 |teacher|[educationTeacher](../resources/educationteacher.md)| Se a função principal for professor, esse bloco conterá dados específicos do professor.|
 

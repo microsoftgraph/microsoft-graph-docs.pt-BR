@@ -1,61 +1,61 @@
 ---
 title: Obter governanceRoleAssignment
-description: Recupere as propriedades e relacionamentos de um governanceRoleAssignment.
+description: Recupere as propriedades e os relacionamentos de um governanceRoleAssignment.
 localization_priority: Normal
 ms.openlocfilehash: f699e1b5332652b2b87f3972d2ae47b06894b2e4
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508836"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463835"
 ---
 # <a name="get-governanceroleassignment"></a>Obter governanceRoleAssignment
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e relacionamentos de um [governanceRoleAssignment](../resources/governanceroleassignment.md).
+Recupere as propriedades e os relacionamentos de um [governanceRoleAssignment](../resources/governanceroleassignment.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources  |
+|Delegado (conta corporativa ou de estudante) | PrivilegedAccess. ReadWrite. AzureResources  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | PrivilegedAccess.ReadWrite.AzureResources |
+|Aplicativo | PrivilegedAccess. ReadWrite. AzureResources |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
-1. Obtenha um [governanceRoleAssignment](../resources/governanceroleassignment.md) em um recurso
+1. Obter um [governanceRoleAssignment](../resources/governanceroleassignment.md) sobre um recurso
 
-    *Observação: Além do escopo de permissão, ele requer o solicitante ter pelo menos uma atribuição no recurso.* 
+    *Observação: além do escopo de permissão, ele exige que o solicitante tenha pelo menos uma atribuição de função no recurso.* 
 ```http
 GET /privilegedAccess/azureResources/resources/{resourceId}/roleAssignments/{id}
 GET /privilegedAccess/azureResources/roleAssignments/{id}?$filter=resourceId+eq+'{resourceId}'
 ```
-2. Obtenha um [governanceRoleAssignment](../resources/governanceroleassignment.md) meu
+2. Obter uma [governanceRoleAssignment](../resources/governanceroleassignment.md) de meus
 ```http
 GET /privilegedAccess/azureResources/roleAssignments/{id}?$filter=subjectId+eq+'{myId}'
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Esse método **suporta [Parâmetros de consulta OData](/graph/query-parameters) diferente de** `$filter` para ajudar a personalizar a resposta.
+Este método não **** oferece suporte a [parâmetros de consulta OData](/graph/query-parameters) diferentes de `$filter` para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
 |:----------|:----------|
-| Autorização  | Portador {código}|
+| Authorization  | Portador {código}|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` objeto response de código e [governanceRoleAssignment](../resources/governanceroleassignment.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [governanceRoleAssignment](../resources/governanceroleassignment.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 <!-- {
   "blockType": "request",
   "name": "get_governanceroleassignment"
 }-->
-Obtenha um [governanceRoleAssignment](../resources/governanceroleassignment.md) na assinatura "Wingtip Toys – produção"
+Obtenha um [governanceRoleAssignment](../resources/governanceroleassignment.md) na assinatura "Wingtip Toys-Prod"
 ##### <a name="request"></a>Solicitação
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignments/0ba78f41-ee7a-4227-adb9-1499431b2164?$filter=resourceId+eq+'e5e7d29d-5465-45ac-885f-4716a5ee74b5'

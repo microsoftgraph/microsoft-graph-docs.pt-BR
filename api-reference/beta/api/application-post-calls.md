@@ -1,32 +1,32 @@
 ---
 title: Criar chamada
-description: Crie uma nova chamada.
+description: Criar uma nova chamada.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 52255948a1d375871722a9af1aed8336844ac1bc
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643570"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459049"
 ---
 # <a name="create-call"></a>Criar chamada
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie uma nova chamada.
+Criar uma nova chamada.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)                                             |
 |:---------------------------------------|:----------------------------------------------------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Não suportado                                                                           |
+| Delegado (conta corporativa ou de estudante)     | Não Suportado                                                                           |
 | Delegado (conta pessoal da Microsoft) | Não suportado                                                                           |
-| Aplicativo                            | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All |
+| Aplicativo                            | Calls. JoinGroupCallsasGuest. All, calls. JoinGroupCalls. All, calls. initiate. All, calls. InitiateGroupCalls. All |
 
-> **Observação:** Para uma chamada com a mídia do aplicativo hospedado, você precisa ter a permissão de Calls.AccessMedia.All com uma das permissões listadas na tabela anterior.
+> **Observação:** Para uma chamada com mídia hospedada por aplicativo, você precisará da permissão calls. AccessMedia. All com uma das permissões listadas na tabela anterior.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -41,18 +41,18 @@ POST /applications/{id}/calls
 | Autorização | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON de um objeto de [chamada](../resources/call.md) .
+No corpo da solicitação, forneça uma representação JSON de um objeto [Call](../resources/call.md) .
 
-> **Observação:** Propriedades marcadas como `Server generated` serão ignorados durante o processamento `POST` em `app/calls`.
+> **Observação:** Propriedades marcadas `Server generated` como são ignoradas `POST` quando `app/calls`o processamento é ativado.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto de [chamada](../resources/call.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [Call](../resources/call.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="create-peer-to-peer-voip-call-with-service-hosted-media"></a>Criar chamada VOIP de ponto a ponto com mídia de serviço hospedado
+### <a name="create-peer-to-peer-voip-call-with-service-hosted-media"></a>Criar uma chamada VOIP ponto a ponto com mídia hospedada pelo serviço
 
-> **Observação:** Essa chamada precisa a permissão Calls.Initiate.All.
+> **Observação:** Essa chamada precisa da permissão calls. initiate. All.
 
 ##### <a name="request"></a>Solicitação
 O exemplo a seguir mostra a solicitação.
@@ -160,7 +160,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---establishing"></a>Notificação - estabelecendo
+##### <a name="notification---establishing"></a>Notificação-estabelecimento
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -188,7 +188,7 @@ Content-Type: application/json
   ]
 }
 ```
-##### <a name="notification---established"></a>Notificação - estabelecida
+##### <a name="notification---established"></a>Estabelecido em notificação
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -217,9 +217,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="create-peer-to-peer-voip-call-with-application-hosted-media"></a>Criar chamada VOIP de ponto a ponto com mídia de aplicativo hospedado
+### <a name="create-peer-to-peer-voip-call-with-application-hosted-media"></a>Criar uma chamada VOIP ponto a ponto com mídia hospedada pelo aplicativo
 
-> Observação: Precisa permissão Calls.Initiate.All e Calls.AccessMedia.All.
+> Observação: precisa de calls. initiate. All e calls. AccessMedia. All.
 
 ##### <a name="request"></a>Solicitação
 O exemplo a seguir mostra a solicitação.
@@ -268,9 +268,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="create-group-call-with-service-hosted-media"></a>Criar grupo de chamada com mídia de serviço hospedado
+### <a name="create-group-call-with-service-hosted-media"></a>Criar uma chamada de grupo com mídia hospedada pelo serviço
 
-> **Observação:** Este exemplo precisa as permissões Calls.InitiateGroupCalls.All e Calls.AccessMedia.All.
+> **Observação:** Este exemplo precisa das permissões calls. InitiateGroupCalls. All e calls. AccessMedia. All.
 
 ##### <a name="request"></a>Solicitação
 
@@ -334,9 +334,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="join-private-meeting-with-service-hosted-media"></a>Ingressar na reunião privada com mídia de serviço hospedado
+### <a name="join-private-meeting-with-service-hosted-media"></a>Ingressar em reunião privada com mídia hospedada pelo serviço
 
-> **Observação:** Este exemplo precisa a permissão Calls.JoinGroupCalls.All.
+> **Observação:** Este exemplo precisa da permissão calls. JoinGroupCalls. All.
 
 ##### <a name="request"></a>Solicitação
 
@@ -390,9 +390,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="join-channel-meeting-with-service-hosted-media"></a>Ingressar em reunião de canal com mídia de serviço hospedado
+### <a name="join-channel-meeting-with-service-hosted-media"></a>Reunião de canal de ingresso com mídia hospedada pelo serviço
 
-> **Observação:** Este exemplo precisa a permissão Calls.JoinGroupCalls.All.
+> **Observação:** Este exemplo precisa da permissão calls. JoinGroupCalls. All.
 
 ##### <a name="request"></a>Solicitação
 
@@ -447,9 +447,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="join-channel-meeting-as-a-guest-with-service-hosted-media"></a>Ingressar em reunião de canal como convidado com mídia de serviço hospedado
+### <a name="join-channel-meeting-as-a-guest-with-service-hosted-media"></a>Ingressar na reunião de canal como um convidado com mídia de serviço hospedado
 
-> **Observação:** Este exemplo precisa a permissão Calls.JoinGroupCallsAsGuest.All.
+> **Observação:** Este exemplo precisa da permissão calls. JoinGroupCallsAsGuest. All.
 
 ##### <a name="request"></a>Solicitação
 

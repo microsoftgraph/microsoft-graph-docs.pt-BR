@@ -1,21 +1,21 @@
 ---
 title: Tipo de recurso ChartTitle
-description: Representa um objeto de título de gráfico de um gráfico.
+description: Representa um objeto ChartTitle de um gráfico.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: a71aed2da93c2121492f1eb29826470b797768ed
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643311"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460986"
 ---
 # <a name="charttitle-resource-type"></a>Tipo de recurso ChartTitle
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa um objeto de título de gráfico de um gráfico.
+Representa um objeto ChartTitle de um gráfico.
 
 
 ## <a name="methods"></a>Métodos
@@ -32,10 +32,10 @@ Representa um objeto de título de gráfico de um gráfico.
 |texto|string|Representa o texto do título de um gráfico.|
 |visible|booliano|Um valor booliano que representa a visibilidade de um objeto de título de gráfico.|
 
-## <a name="relationships"></a>Relacionamentos
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|formato|[ChartTitleFormat](charttitleformat.md)|Representa a formatação de um título do gráfico, que inclui a formatação de fonte e de preenchimento. Somente leitura.|
+|format|[ChartTitleFormat](charttitleformat.md)|Representa a formatação de um título do gráfico, que inclui a formatação de fonte e de preenchimento. Somente leitura.|
 
 ## <a name="json-representation"></a>Representação JSON
 

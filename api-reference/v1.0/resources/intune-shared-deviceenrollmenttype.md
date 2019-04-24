@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 62ff257e2f758776265f52a0d64cde52dbc26115
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30261961"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32585359"
 ---
 # <a name="deviceenrollmenttype-enum-type"></a>tipo de enumeração deviceEnrollmentType
 
@@ -20,7 +20,7 @@ Maneiras possíveis de adicionar um dispositivo móvel ao gerenciamento.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|unknown|,0|O valor padrão, o tipo de registro não foi coletado.|
+|desconhecido|,0|O valor padrão, o tipo de registro não foi coletado.|
 |userRegistrar|1|Registro controlado pelo usuário por meio do canal BYOD.|
 |deviceEnrollmentManager|duas|Registro de usuário com uma conta de Gerenciador de registro de dispositivo.|
 |appleBulkWithUser|3D|Inscrição em massa da Apple com o desafio do usuário. (DEP, Apple conFigurator)|

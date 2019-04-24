@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: fa86724affd94d3eaaf6584ce3e70dc8266a5f00
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30251626"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32584807"
 ---
 # <a name="auditevent-resource-type"></a>Tipo de recurso auditEvent
 
@@ -25,7 +25,7 @@ Uma classe que contém as propriedades de Evento de Auditoria.
 |[Criar auditEvent](../api/intune-auditing-auditevent-create.md)|[auditEvent](../resources/intune-auditing-auditevent.md)|Criar um novo objeto de[auditEvent](../resources/intune-auditing-auditevent.md).|
 |[Excluir auditEvent](../api/intune-auditing-auditevent-delete.md)|Nenhum|Excluir [auditEvent](../resources/intune-auditing-auditevent.md).|
 |[Atualizar auditEvent](../api/intune-auditing-auditevent-update.md)|[auditEvent](../resources/intune-auditing-auditevent.md)|Atualizar as propriedades do objeto de [auditEvent](../resources/intune-auditing-auditevent.md).|
-|[Função getAuditCategories](../api/intune-auditing-auditevent-getauditcategories.md)|Coleção String|Ainda não documentado|
+|[Função getAuditCategories](../api/intune-auditing-auditevent-getauditcategories.md)|String collection|Ainda não documentado|
 |[Função getAuditActivityTypes](../api/intune-auditing-auditevent-getauditactivitytypes.md)|Conjunto de cadeia de caracteres|Ainda não documentado|
 
 ## <a name="properties"></a>Propriedades
@@ -39,10 +39,10 @@ Uma classe que contém as propriedades de Evento de Auditoria.
 |activityDateTime|DateTimeOffset|A hora e data em UTC em que a atividade foi executada.|
 |activityType|String|O tipo de atividade que foi executada.|
 |activityOperationType|String|O tipo de operação HTTP da atividade.|
-|activityResult|String|O resultado da atividade.|
+|activityResult|Cadeia de caracteres|O resultado da atividade.|
 |correlationId|Guid|A ID da solicitação de cliente usada para correlacionar a atividade dentro do sistema.|
 |recursos|Coleção [auditResource](../resources/intune-auditing-auditresource.md)|Recursos em modificação.|
-|Ferramentas para desenvolvedores|Cadeia de caracteres|Categoria de auditoria.|
+|Ferramentas para desenvolvedores|String|Categoria de auditoria.|
 
 ## <a name="relationships"></a>Relações
 Nenhuma

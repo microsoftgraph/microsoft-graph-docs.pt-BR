@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 588338589d90ad54db43810d5fd45541cea483eb
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31800648"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459120"
 ---
 # <a name="managedappdiagnosticstatus-resource-type"></a>Tipo de recurso managedAppDiagnosticStatus
 
@@ -22,7 +22,7 @@ Representa o status de diagnóstico.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|validationName|Cadeia de caracteres|O nome amigável da validação|
+|validationName|String|O nome amigável da validação|
 |state|String|O estado da operação|
 |mitigationInstruction|Cadeia de caracteres|Instruções sobre como atenuar uma falha de validação|
 

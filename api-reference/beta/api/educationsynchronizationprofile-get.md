@@ -1,30 +1,30 @@
 ---
-title: Obtenha um educationSynchronizationProfile
-description: Recupere um perfil de sincronização de dados escola no locatário com base no identificador.
+title: Obter um educationSynchronizationProfile
+description: Recupere um perfil de sincronização de dados da escola no locatário com base no identificador.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 47757956db9e93bb13f4167ef330c7b79d7851b1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29530178"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464709"
 ---
-# <a name="get-an-educationsynchronizationprofile"></a>Obtenha um educationSynchronizationProfile
+# <a name="get-an-educationsynchronizationprofile"></a>Obter um educationSynchronizationProfile
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere um de dados escola [perfil de sincronização](../resources/educationsynchronizationprofile.md) no locatário com base no identificador.
+Recupere um perfil de [sincronização](../resources/educationsynchronizationprofile.md) de dados da escola no locatário com base no identificador.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:-----------|:----------|
-| Delegado (conta corporativa ou de estudante) | EduAdministration.Read, EduAdministration.ReadWrite |
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
-|Aplicativo| EduAdministration.Read.All, EduAdministration.ReadWrite.All |
+| Delegado (conta corporativa ou de estudante) | EduAdministration. Read, EduAdministration. ReadWrite |
+|Delegado (conta pessoal da Microsoft|Sem suporte.|
+|Aplicativo| EduAdministration. Read. All, EduAdministration. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -40,7 +40,7 @@ GET /synchronizationProfiles/{id}
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação

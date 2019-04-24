@@ -1,30 +1,32 @@
 ---
-title: Tipo de recurso plannerCategoryDescriptions
-description: 'O recurso **plannerCategoryDescriptions** representa os rótulos descritivos das categorias que foram definidas para um plano. Ele pertence ao objeto plan details. Pode haver até 6 categorias definidas. '
+title: tipo de recurso plannerCategoryDescriptions
+description: 'O recurso **plannerCategoryDescriptions** representa os rótulos descritivos das categorias que foram definidas para um plano. Ele pertence ao objeto Plan details. Pode haver até 6 categorias definidas. '
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 1cf1ee1c6e8ccc4e90f78985b352062fce37df88
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27984343"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462260"
 ---
-# <a name="plannercategorydescriptions-resource-type"></a>Tipo de recurso plannerCategoryDescriptions
+# <a name="plannercategorydescriptions-resource-type"></a>tipo de recurso plannerCategoryDescriptions
 
-O recurso **plannerCategoryDescriptions** representa os rótulos descritivos das categorias que foram definidas para um plano. Ele pertence ao objeto [plan details](plannerplandetails.md). Pode haver até 6 categorias definidas. 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+O recurso **plannerCategoryDescriptions** representa os rótulos descritivos das categorias que foram definidas para um plano. Ele pertence ao objeto [Plan Details](plannerplandetails.md) . Pode haver até 6 categorias definidas. 
 
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|categoria1|String|O rótulo associado à Categoria 1.|
-|categoria2|String|O rótulo associado à Categoria 2.|
-|categoria3|String|O rótulo associado à Categoria 3.|
-|categoria4|String|O rótulo associado à Categoria 4.|
-|categoria5|String|O rótulo associado à Categoria 5.|
-|categoria6|String|O rótulo associado à Categoria 6.|
+|category1|String|O rótulo associado à categoria 1|
+|category2|String|O rótulo associado à categoria 2|
+|category3|String|O rótulo associado à categoria 3|
+|category4|String|O rótulo associado à categoria 4|
+|category5|String|O rótulo associado à categoria 5|
+|category6|String|O rótulo associado à categoria 6|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -51,10 +53,15 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "plannerCategoryDescriptions resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/plannercategorydescriptions.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -1,17 +1,17 @@
 ---
 title: Tipo de recurso timeConstraint
-description: Restringe as sugestões de horário para reuniões a certas horas e dias da semana de acordo com a natureza especificada da atividade e intervalos de tempo disponíveis.
+description: Restringe as sugestões de horário de reunião a determinadas horas e dias da semana de acordo com a natureza especificada da atividade e os intervalos de tempo abertos.
 localization_priority: Normal
 ms.openlocfilehash: b6e239abbd0d9f7b4f83df4a60625a2f88131476
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815089"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456948"
 ---
 # <a name="timeconstraint-resource-type"></a>Tipo de recurso timeConstraint
 
-Restringe as sugestões de horário para reuniões a certas horas e dias da semana de acordo com a natureza especificada da atividade e intervalos de tempo disponíveis.
+Restringe as sugestões de horário de reunião a determinadas horas e dias da semana de acordo com a natureza especificada da atividade e os intervalos de tempo abertos.
 
 ## <a name="json-representation"></a>Representação JSON
 

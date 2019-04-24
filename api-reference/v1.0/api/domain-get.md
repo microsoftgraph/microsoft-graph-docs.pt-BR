@@ -1,19 +1,19 @@
 ---
 title: Obter domínio
-description: Recupere as propriedades e os relacionamentos do objeto domain.
+description: Recupere as propriedades e os relacionamentos do objeto Domain.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 93139514ae66b4af4c6ade8de8f068050b985451
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27927353"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32467208"
 ---
 # <a name="get-domain"></a>Obter domínio
 
-Recupere as propriedades e os relacionamentos do objeto domain.
+Recupere as propriedades e os relacionamentos do objeto Domain.
 
 ## <a name="permissions"></a>Permissões
 
@@ -51,7 +51,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [domain](../resources/domain.md) no corpo da resposta.
+Se bem-sucedido, este método retorna o `200 OK` código de resposta e o objeto [Domain](../resources/domain.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 
@@ -64,7 +64,7 @@ Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto 
 GET https://graph.microsoft.com/v1.0/domains/contoso.com
 ```
 ##### <a name="response"></a>Resposta
-Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

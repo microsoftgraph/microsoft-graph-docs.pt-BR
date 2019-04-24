@@ -1,21 +1,21 @@
 ---
 title: Atualizar evento
-description: Atualize as propriedades do objeto event.
+description: Atualiza as propriedades do objeto Event.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: b3f101c14a69c6dc2b3687e9d4a1509e6ac7a531
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643948"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464031"
 ---
 # <a name="update-event"></a>Atualizar evento
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades do objeto [event](../resources/event.md) .
+Atualiza as propriedades do objeto [Event](../resources/event.md) .
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -55,32 +55,32 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade       | Tipo    | Descrição |
 |:---------------|:--------|:------------|
-| attendees|Attendee|A coleção de participantes do evento.|
+| attendees|Participante|A coleção de participantes do evento.|
 | corpo|ItemBody|O corpo da mensagem associada ao evento.|
 | categories|String|As categorias associadas ao evento.|
 | end|DateTimeTimeZone|A data e a hora em que o evento termina.<br/><br/>Por padrão, a hora de término é em UTC. Você pode especificar um fuso horário opcional em EndTimeZone, expressar a hora de término nesse fuso horário e incluir uma diferença de tempo em relação a UTC. Se usar EndTimeZone, você deverá especificar um valor para StartTimeZone também.<br/><br/>Este exemplo especifica 25 de fevereiro de 2015, 21: 34 na Hora Padrão do Pacífico: "2015-02-25T21:34:00-08:00". |
-| importance|Cadeia de caracteres|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
+| importância|String|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
 | isAllDay|Booliano|Defina como true se o evento durar o dia inteiro.|
 | isReminderOn|Booliano|Defina como true se um alerta estiver definido para lembrar o usuário sobre o evento.|
-| location|Local|O local do evento.|
+| location|Localização|O local do evento.|
 |locations|[location](../resources/location.md) collection|Locais onde o evento é realizado ou onde participar. As propriedades **location** e **locations** sempre correspondem entre si. Se você atualizar a propriedade **location**, os locais anteriores na coleção **locations** deverão ser removidos e substituídos pelo novo valor **location**. |
-| recurrence|PatternedRecurrence|O padrão de recorrência do evento.|
+| recorrência|PatternedRecurrence|O padrão de recorrência do evento.|
 | reminderMinutesBeforeStart|Int32|O número de minutos antes da hora de início do evento em que o alerta de lembrete ocorre.|
-| responseRequested|Booliano|Defina como true se o remetente quiser receber uma resposta quando o evento for aceito ou recusado.|
-| sensitivity|String| Os valores possíveis são: `normal`, `personal`, `private`, `confidential`.|
-| showAs|String|O status a ser exibido. Os valores possíveis são: `free` , `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
+| responseRequested|Boolean|Defina como true se o remetente quiser receber uma resposta quando o evento for aceito ou recusado.|
+| sensitivity|Cadeia de caracteres| Os valores possíveis são: `normal`, `personal`, `private`, `confidential`.|
+| showAs|String|O status a ser exibido. Os valores possíveis são `free` : `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`,.|
 | iniciar|DateTimeTimeZone|A hora de início do evento. <br/><br/>Por padrão, a hora de início é em UTC. Você pode especificar um fuso horário opcional em StartTimeZone, expressar a hora de início no fuso horário correspondente e incluir uma diferença de tempo em relação a UTC. Se usar StartTimeZone, você deverá especificar um valor para EndTimeZone também.<br/><br/>Este exemplo especifica 25 de fevereiro de 2015, 19:34 na Hora Padrão do Pacífico: "2015-02-25T19:34:00-08:00".  |
-| subject|String|O texto da linha de assunto do evento.|
+| Assunto|String|O texto da linha de assunto do evento.|
 
-Como o recurso de **evento** oferece suporte às [extensões](/graph/extensibility-overview), você pode usar o `PATCH` operação para adicionar, atualizar ou excluir seus próprios dados específicos do aplicativo nas propriedades personalizadas de uma extensão em uma instância existente do **evento** .
+Como o recurso de **evento** oferece suporte a [extensões](/graph/extensibility-overview), você `PATCH` pode usar a operação para adicionar, atualizar ou excluir seus próprios dados específicos de aplicativo em Propriedades personalizadas de uma extensão em uma instância de **evento** existente.
 
-Se o **evento** que você está atualizando é o evento mestre de uma série recorrente, contém vários participantes e tem instâncias que foram atualizadas separadamente, notificação de vários emails serão enviadas: uma para a série de mestre e um por instância que tenha foi atualizado.
+Se o **evento** que você está atualizando for o evento mestre de uma série recorrente, contiver vários participantes e tiver instâncias que foram atualizadas separadamente, vários emails de notificação serão enviados: um para a série mestre e um por instância que tenha foi atualizado.
 
 ## <a name="response"></a>Resposta
 
 Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [event](../resources/event.md) atualizado no corpo da resposta.
 
->**Observação:** Este método pode retornar uma resposta de HTTP 400 Solicitação incorreta com um código de erro de `ErrorOccurrenceCrossingBoundary` e a seguinte mensagem de erro: a ocorrência modificada é Cruzando ou sobrepostas ocorrência adjacente. Isso indica que a atualização viola a seguinte restrição do Outlook em exceções de recorrência: uma ocorrência não pode ser transferida para ou antes do dia da ocorrência anterior e não podem ser movida para ou após o dia da ocorrência seguinte.
+>**Observação:** Este método pode retornar uma resposta de solicitação inVálida HTTP 400 com um código `ErrorOccurrenceCrossingBoundary` de erro e a seguinte mensagem de erro: a ocorrência modificada está ultrapassando ou sobrepondo ocorrências adjacentes. Isso indica que a atualização viola a seguinte restrição do Outlook em exceções de recorrência: uma ocorrência não pode ser movida para ou antes do dia da ocorrência anterior e não pode ser movida para ou após o dia da ocorrência a seguir.
 
 ## <a name="example"></a>Exemplo
 

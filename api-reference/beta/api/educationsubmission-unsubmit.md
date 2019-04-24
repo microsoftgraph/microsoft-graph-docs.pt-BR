@@ -1,28 +1,28 @@
 ---
-title: 'educationSubmission: unsubmit'
-description: 'Uma ação que indica que um estudante deseja trabalhar no envio da atribuição depois que ele foi ativado. Essa ação só pode ser executada pelo aluno. '
+title: 'educationSubmission: não enviar'
+description: 'Uma ação que indica que um aluno deseja trabalhar no envio da atribuição depois que ela foi ativada. Esta ação só pode ser realizada pelo aluno. '
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: e8ce4c5d4bf68dca22f686a1b3647c67d7836bed
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513505"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457437"
 ---
-# <a name="educationsubmission-unsubmit"></a>educationSubmission: unsubmit
+# <a name="educationsubmission-unsubmit"></a>educationSubmission: não enviar
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Uma ação que indica que um estudante deseja trabalhar no envio da atribuição depois que ele foi ativado. Essa ação só pode ser executada pelo aluno. Isso irá alterar o status do envio de "enviado" para "trabalho". Durante o processo de envio, todos os recursos serão copiados do submittedResources para o Balde workingResources. O professor será observando a lista de recursos úteis para a classificação.
+Uma ação que indica que um aluno deseja trabalhar no envio da atribuição depois que ela foi ativada. Esta ação só pode ser realizada pelo aluno. Isso alterará o status do envio de "enviado" para "trabalho". Durante o processo de envio, todos os recursos serão copiados do submittedResources para o Bucket do workingResources. O professor examinará a lista de recursos de trabalho para fins de gradação.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
+|Delegado (conta corporativa ou de estudante) |  EduAssignments. ReadWriteBasic, EduAssignments. ReadWrite  |
 |Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
 |Aplicativo | Sem suporte. | 
 

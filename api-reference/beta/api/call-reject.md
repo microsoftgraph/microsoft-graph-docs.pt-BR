@@ -1,28 +1,28 @@
 ---
-title: 'chamar: rejeitar'
-description: Rejeite uma chamada de entrada.
+title: 'Call: rejeitar'
+description: Rejeite as chamadas recebidas.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 5b42ebee208431cd0a02be291d07f580d98c87a1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516186"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461301"
 ---
-# <a name="call-reject"></a>chamar: rejeitar
+# <a name="call-reject"></a>Call: rejeitar
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Rejeite uma chamada de entrada.
+Rejeite as chamadas recebidas.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios)                |
 | :-------------- | :--------------------------------------------------------- |
-| Delegado (conta corporativa ou de estudante)     | Não suportado                       |
+| Delegado (conta corporativa ou de estudante)     | Não Suportado                       |
 | Delegado (conta pessoal da Microsoft) | Não suportado                       |
 | Aplicativo     | Nenhum                                                       |
 
@@ -43,7 +43,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|Reason|String|O motivo de rejeição.|
+|motivos|String|O motivo da rejeição.|
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna um código de resposta `200 OK`. Não retorna nada no corpo da resposta.
@@ -55,7 +55,7 @@ Returns `202 Accepted` response code
 ## <a name="example"></a>Exemplo
 O exemplo a seguir mostra como chamar essa API.
 
-##### <a name="notification---incoming"></a>Notificação - entrada
+##### <a name="notification---incoming"></a>Notificação-entrada
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -137,7 +137,7 @@ Veja a seguir um exemplo da resposta.
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---deleted"></a>Notificação - excluída
+##### <a name="notification---deleted"></a>Notificação-excluído
 
 ```http
 POST https://bot.contoso.com/api/calls

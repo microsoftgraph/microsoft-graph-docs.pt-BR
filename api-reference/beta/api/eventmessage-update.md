@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 160fbf70f243174265fc6e4e54feabb8042bd450
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513582"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463957"
 ---
 # <a name="update-eventmessage"></a>Atualizar eventMessage
 
@@ -45,10 +45,10 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |categories|String|As categorias associadas à mensagem.|
-|importance|String|A importância da mensagem. Os valores possíveis são: `Low`, `Normal` e `High`.|
-|isAllDay |Booliano|Indica se o evento durar o dia inteiro. Ajustar essa propriedade requer ajustando as propriedades **startDateTime** e **endDateTime** do evento também.|
-|isDeliveryReceiptRequested|Booliano|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
-|isRead|Booliano|Indica se a mensagem foi lida.|
+|importância|String|A importância da mensagem. Os valores possíveis são: `Low`, `Normal` e `High`.|
+|isAllDay |Booliano|Indica se o evento dura todo o dia. Ajustar essa propriedade requer ajustar as **** Propriedades StartDateTime e EndDateTime do evento também. ****|
+|isDeliveryReceiptRequested|Boolean|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
+|isRead|Boolean|Indica se a mensagem foi lida.|
 |isReadReceiptRequested|Boolean|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
 
 ## <a name="response"></a>Resposta

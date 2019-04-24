@@ -1,21 +1,21 @@
 ---
-title: Obtenha o aplicativo
-description: Recupere as propriedades e relações do objeto application.
+title: Obter aplicativo
+description: Recuperar as propriedades e os relacionamentos do objeto application.
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: 024e2cde999e90b1f361e7f67ca28ddd71078824
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522921"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463989"
 ---
-# <a name="get-application"></a>Obtenha o aplicativo
+# <a name="get-application"></a>Obter aplicativo
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e relações do objeto application.
+Recuperar as propriedades e os relacionamentos do objeto application.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -43,7 +43,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto de [aplicativo](../resources/application.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [Application](../resources/application.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

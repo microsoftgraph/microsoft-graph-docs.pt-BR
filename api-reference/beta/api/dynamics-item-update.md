@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: c82d17aa57ab6535660f7264ca0b96e4d8128bc1
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365875"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32458345"
 ---
 # <a name="update-items"></a>Atualizar itens
 Atualizar as propriedades de um objeto de item para o Dynamics 365 Business central.
@@ -37,7 +37,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 |Cabeçalho       |Valor                    |
 |-------------|-------------------------|
 |Autorização|{token} de portador. Obrigatório.|
-|Content-Type |Application/JSON.        |
+|Content-Type |application/json.        |
 |If-Match     |Obrigatório. Quando esse cabeçalho de solicitação for incluído e a eTag fornecida não corresponder à marca atual nos **itens**, os **itens** não serão atualizados. |
 
 ## <a name="request-body"></a>Corpo da solicitação

@@ -1,29 +1,29 @@
 ---
-title: 'educationSubmission: recall'
-description: 'Indica que um estudante deseja reassumir o envio de um. Essa ação só pode ser feita por um estudante. '
+title: 'educationSubmission: rechamar'
+description: 'Indica que um aluno deseja fazer um envio. Esta ação só pode ser feita por um aluno. '
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 0be94d2888223ca31e37b71e490c4a9fdc28b7d0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520414"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457625"
 ---
-# <a name="educationsubmission-recall"></a>educationSubmission: recall
+# <a name="educationsubmission-recall"></a>educationSubmission: rechamar
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Indica que um estudante deseja reassumir o envio de um. Essa ação só pode ser feita por um estudante. Ele alterará o status do envio de "enviado" Voltar ao "trabalho".
+Indica que um aluno deseja fazer um envio. Esta ação só pode ser feita por um aluno. Ele alterará o status do envio de "enviado" de volta para "trabalho".
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
-|Delegado (conta pessoal da Microsoft) |  Sem suporte  |
+|Delegado (conta corporativa ou de estudante) |  EduAssignments. ReadWriteBasic, EduAssignments. ReadWrite  |
+|Delegado (conta pessoal da conta Microsoft) |  Sem suporte  |
 |Aplicativo |Sem suporte.  | 
 
 ## <a name="http-request"></a>Solicitação HTTP

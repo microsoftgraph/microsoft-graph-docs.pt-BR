@@ -1,29 +1,29 @@
 ---
-title: 'chamar: playPrompt'
-description: Reproduza um prompt na chamada.
+title: 'Call: playPrompt'
+description: ReProduza um prompt na chamada.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 32ea1b838a71d40a6f6106a648962c6a77c29057
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507786"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461231"
 ---
-# <a name="call-playprompt"></a>chamar: playPrompt
+# <a name="call-playprompt"></a>Call: playPrompt
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Reproduza um prompt na chamada.
+ReProduza um prompt na chamada.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Não são suportados.                               |
-| Delegado (conta pessoal da Microsoft) | Não são suportados.                               |
+| Delegado (conta corporativa ou de estudante)     | Sem suporte.                               |
+| Delegado (conta pessoal da conta Microsoft) | Sem suporte.                               |
 | Aplicativo                            | Nenhum.                                        |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -44,11 +44,11 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|solicita|coleção de [prompt](../resources/prompt.md)||
-|ClientContext|String|O contexto de cliente.|
+|prompts|coleção [prompt](../resources/prompt.md)||
+|clientContext|String|O contexto do cliente.|
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` objeto response de código e [playPromptOperation](../resources/playPromptOperation.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `200 OK` o código de resposta e o objeto [playPromptOperation](../resources/playPromptOperation.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 O exemplo a seguir mostra como chamar essa API.
@@ -94,7 +94,7 @@ HTTP/1.1 200 OK
 Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
 ```
 
-##### <a name="notification---operation-completed"></a>Notificação - operação concluída
+##### <a name="notification---operation-completed"></a>Notificação-operação concluída
 
 ```http
 POST https://bot.contoso.com/api/calls

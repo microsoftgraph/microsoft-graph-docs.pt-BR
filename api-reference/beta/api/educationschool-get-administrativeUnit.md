@@ -1,21 +1,21 @@
 ---
 title: Obter administrativeUnit
-description: Recupere o diretório simples **administrativeUnit** que corresponde a essa **educationSchool**.
+description: Recupere o diretório simples **administrativeUnit** que corresponde a esse **educationSchool**.
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: 47dd3b5543f7f10385529aef56e99537abc2f524
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520701"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457688"
 ---
 # <a name="get-administrativeunit"></a>Obter administrativeUnit
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere o diretório simples **administrativeUnit** que corresponde a essa **educationSchool**.
+Recupere o diretório simples **administrativeUnit** que corresponde a esse **educationSchool**.
 
 >**Observação:** se o token delegado for usado, os membros só poderão ver informações sobre as próprias escolas. Nesse caso, use o recurso `...beta/education/me/schools`.
 
@@ -41,7 +41,7 @@ GET /education/schools/{id}/administrativeUnit
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [administrativeUnit](../resources/administrativeunit.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [administrativeUnit](../resources/administrativeunit.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: c390ed0d3d5fce21cc69adfe513169833d8f4a43
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31787509"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32482449"
 ---
 # <a name="create-termsandconditionsgroupassignment"></a>Criar termsAndConditionsGroupAssignment
 
@@ -51,7 +51,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar termsAnd
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Identificador exclusivo da entidade.|
-|targetGroupId|Cadeia de caracteres|Identificador exclusivo de um grupo ao qual a política T&C é atribuída.|
+|targetGroupId|String|Identificador exclusivo de um grupo ao qual a política T&C é atribuída.|
 
 
 

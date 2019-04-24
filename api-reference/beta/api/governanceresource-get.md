@@ -1,30 +1,30 @@
 ---
-title: Obter governanceResource
-description: Recupere as propriedades e relacionamentos de um objeto governanceResource.
+title: Obter Entidadegovernanceresource
+description: Recupere as propriedades e os relacionamentos de um objeto Entidadegovernanceresource.
 localization_priority: Normal
 ms.openlocfilehash: be24fb8822101f7a67a5bd60f1fe018cf1a08f6b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522144"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463926"
 ---
-# <a name="get-governanceresource"></a>Obter governanceResource
+# <a name="get-governanceresource"></a>Obter Entidadegovernanceresource
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e relacionamentos de um objeto [governanceResource](../resources/governanceresource.md) .
+Recupere as propriedades e os relacionamentos de um objeto [entidadegovernanceresource](../resources/governanceresource.md) .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources  |
+|Delegado (conta corporativa ou de estudante) | PrivilegedAccess. ReadWrite. AzureResources  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | PrivilegedAccess.ReadWrite.AzureResources |
+|Aplicativo | PrivilegedAccess. ReadWrite. AzureResources |
 
-Além do escopo de permissão, essa API requer o solicitante ter pelo menos uma atribuição no recurso.
+Além do escopo de permissão, essa API exige que o solicitante tenha pelo menos uma atribuição de função no recurso.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -33,20 +33,20 @@ GET /privilegedAccess/azureResources/resources/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método **só** oferece suporte a `$select` e `$expand` [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método **só** oferece `$select` suporte `$expand` a [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
 |:----------|:----------|
-| Autorização  | Portador {código}|
+| Authorization  | Portador {código}|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` objeto response de código e [governanceResource](../resources/governanceresource.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [entidadegovernanceresource](../resources/governanceresource.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-Este exemplo mostra como obter os detalhes da assinatura Wingtip Toys - produção (e5e7d29d-5465-45ac-885f-4716a5ee74b5).
+Este exemplo mostra como obter os detalhes da assinatura Wingtip Toys-prod (e5e7d29d-5465-45ac-885f-4716a5ee74b5).
 <!-- {
   "blockType": "request",
   "name": "get_governanceresource"

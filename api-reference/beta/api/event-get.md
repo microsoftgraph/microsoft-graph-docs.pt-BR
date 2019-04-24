@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 49a4e16e6f24ebac22c760cf11e63c220181d0b9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509081"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457480"
 ---
 # <a name="get-event"></a>Obter evento
 
@@ -17,15 +17,15 @@ ms.locfileid: "29509081"
 
 Obtenha as propriedades e as relações do objeto [event](../resources/event.md) especificado.
 
-Há dois cenários onde um aplicativo pode obter um evento no calendário de outro usuário:
+Há dois cenários em que um aplicativo pode obter um evento no calendário de outro usuário:
 
-* Se o aplicativo tem permissões de aplicativo, ou,
-* Se o aplicativo tiver apropriada [permissões](#permissions) delegadas de um usuário, e outro usuário compartilhou um calendário com que o usuário ou, tem acesso delegado a esse usuário. Consulte os [detalhes e um exemplo](/graph/outlook-get-shared-events-calendars).
+* Se o aplicativo tem permissões de aplicativo ou
+* Se o aplicativo tem as [permissões](#permissions) delegadas apropriadas de um usuário e o outro usuário compartilhou um calendário com esse usuário ou concedeu acesso delegado ao usuário. Confira os [detalhes e um exemplo](/graph/outlook-get-shared-events-calendars).
 
 Como o recurso **event** dá suporte a [extensions](/graph/extensibility-overview), você também pode usar a operação `GET` para obter propriedades personalizadas e dados de extensão em uma instância de **event**.
 
 
-### <a name="support-various-time-zones"></a>Suporte para vários fusos horários
+### <a name="support-various-time-zones"></a>Suporte a vários fusos horários
 
 Para todas as operações GET que retornam eventos, você pode usar o cabeçalho `Prefer: outlook.timezone` para especificar o fuso horário para as horas de início e de término do evento na resposta. 
 
@@ -74,7 +74,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 |:-----------|:------|:----------|
 | Autorização  | string  | {token} de portador. Obrigatório. |
 | Prefira: outlook.timezone | string | Use isto para especificar o fuso horário para horas de início e término na resposta. Se não especificado, esses valores de tempo serão retornados em UTC. Opcional. |
-| Prefer: outlook.body-content-type | string | O formato da propriedade **corpo** a ser retornada. Os valores podem ser "text" ou "html". Um cabeçalho `Preference-Applied` é retornado como confirmação se este cabeçalho `Prefer` for especificado. Se o cabeçalho não for especificado, a propriedade **corpo** será retornada no formato HTML. Opcional. |
+| Prefer: outlook.body-content-type | string | O formato da propriedade **body** a ser retornada. Os valores podem ser "text" ou "html". Um cabeçalho `Preference-Applied` é retornado como confirmação quando este cabeçalho `Prefer` é especificado. Se o cabeçalho não for especificado, a propriedade **body** será retornada no formato HTML. Opcional. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
@@ -89,7 +89,7 @@ O primeiro exemplo obtém o evento especificado. Especifica o seguinte:
 - um cabeçalho `Prefer: outlook.timezone` para obter valores de data/hora retornados na Hora Oficial do Pacífico. 
 - Um parâmetro de consulta `$select` para retornar propriedades específicas. Sem um parâmetro `$select`, todas as propriedades do evento serão retornadas.
 
-A solicitação não especificar qualquer `Prefer: outlook.body-content-type` cabeçalho para indicar um formato específico para o corpo do evento retornado. 
+A solicitação não especifica nenhum cabeçalho `Prefer: outlook.body-content-type` para indicar um formato específico para o corpo do evento retornado. 
 
 <!-- {
   "blockType": "request",
@@ -100,7 +100,7 @@ GET https://graph.microsoft.com/beta/me/events('AAMkAGIAAAoZDOFAAA=')?$select=su
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
 ##### <a name="response-1"></a>Resposta 1
-Veja a seguir um exemplo da resposta. Porque nenhuma `Prefer: outlook.body-content-type` cabeçalho foi especificado, a propriedade **body** é retornada no formato HTML padrão. 
+Veja a seguir um exemplo da resposta. Como nenhum cabeçalho `Prefer: outlook.body-content-type` foi especificado, a propriedade **body** será retornada no formato HTML padrão. 
 
 <!-- {
   "blockType": "response",
@@ -178,9 +178,9 @@ Content-length: 1928
 ```
 
 ##### <a name="request-2"></a>Solicitação 2
-O segundo exemplo mostra como usar um `Prefer: outlook.body-content-type="text"` cabeçalho para obter a propriedade **body** do evento especificado no formato de texto.
+O segundo exemplo mostra como usar um `Prefer: outlook.body-content-type="text"` cabeçalho para obter a propriedade **Body** do evento especificado no formato de texto.
 
-A solicitação também usa um `$select` parâmetro para retornar propriedades específicas de consulta. Sem um `$select` parâmetro, todas as propriedades de evento serão retornadas.
+A solicitação também usa um parâmetro de consulta `$select` para retornar propriedades específicas. Sem um parâmetro `$select`, todas as propriedades do evento serão retornadas.
 
 <!-- {
   "blockType": "request",
@@ -191,7 +191,7 @@ GET https://graph.microsoft.com/beta/me/events('AAMkAGI1AAAoZDOFAAA=')?$select=s
 Prefer: outlook.body-content-type="text"
 ```
 ##### <a name="response-2"></a>Resposta 2
-Veja a seguir um exemplo da resposta. A propriedade **body** é retornada em formato de texto. 
+Veja a seguir um exemplo da resposta. A propriedade **body** é retornada no formato de texto. 
 
 <!-- {
   "blockType": "response",
@@ -221,7 +221,7 @@ Content-length: 636
 
 ##### <a name="request-3"></a>Solicitação 3
 
-O terceiro exemplo mostra como obter um evento que especifica a mais de um local. Uma solicitação especifica um parâmetro de consulta `$select` para retornar propriedades específicas. 
+O terceiro exemplo mostra obter um evento que especifica mais de um local. Uma solicitação especifica um parâmetro de consulta `$select` para retornar propriedades específicas. 
 
 <!-- {
   "blockType": "request",
@@ -233,7 +233,7 @@ GET https://graph.microsoft.com/beta/me/events('AAMkADAGAADDdm4NAAA=')?$select=s
 ##### <a name="response-3"></a>Resposta 3
 Veja a seguir um exemplo da resposta. A propriedade **locations** inclui detalhes dos três locais para os quais o evento é organizado. 
 
-Porque a solicitação não especificar qualquer `Prefer: outlook.timezone` ou `Prefer: outlook.body-content-type` cabeçalho, as propriedades **start** e **end** serão exibidas no fuso horário UTC padrão, e o corpo estiver no formato HTML padrão.  
+Como a `Prefer: outlook.timezone` solicitação não especifica nenhum cabeçalho ou `Prefer: outlook.body-content-type` , as propriedades **Start** e **end** são exibidas no fuso horário UTC padrão e o corpo está no formato HTML padrão.  
 
 <!-- {
   "blockType": "response",

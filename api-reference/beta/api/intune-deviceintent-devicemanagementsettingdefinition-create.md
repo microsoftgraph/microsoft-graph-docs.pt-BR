@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 66dc71a6e95f9838788a0aac22341a5a3881a5e9
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31803448"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32467019"
 ---
 # <a name="create-devicemanagementsettingdefinition"></a>Criar deviceManagementSettingDefinition
 
@@ -55,11 +55,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 |:---|:---|:---|
 |id|String|A ID da definição de configuração|
 |valueType|[deviceManangementIntentValueType](../resources/intune-deviceintent-devicemanangementintentvaluetype.md)|O tipo de dados do valor. Os valores possíveis são: `integer`, `boolean`, `string`, `complex`, `collection`, `abstractComplex`.|
-|displayName|Cadeia de caracteres|O nome de exibição da configuração|
+|displayName|String|O nome de exibição da configuração|
 |isTopLevel|Booliano|Se a configuração for de nível superior, ela poderá ser configurada sem a necessidade de ser encapsulada em uma coleção ou configuração complexa|
 |description|String|A descrição da configuração|
-|documentationUrl|Cadeia de caracteres|URL para configurar a documentação|
-|palavras-chave|Coleção String|Palavras-chave associadas à configuração|
+|documentationUrl|String|URL para configurar a documentação|
+|palavras-chave|Coleção de cadeias de caracteres|Palavras-chave associadas à configuração|
 |as|coleção [deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md)|Conjunto de restrições para o valor de configuração|
 |relação|coleção [deviceManagementSettingDependency](../resources/intune-deviceintent-devicemanagementsettingdependency.md)|Coleção de dependências em outras configurações|
 

@@ -1,15 +1,15 @@
 ---
-title: tipo de recurso de cloudAppSecurityState
+title: tipo de recurso cloudAppSecurityState
 description: Contém informações de estado sobre o aplicativo de nuvem (destinationServiceName, destinationServiceIp).
 localization_priority: Normal
 ms.openlocfilehash: ff76adf1d3879c3dac3f19ae122d82c9523d5193
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876801"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32584856"
 ---
-# <a name="cloudappsecuritystate-resource-type"></a>tipo de recurso de cloudAppSecurityState
+# <a name="cloudappsecuritystate-resource-type"></a>tipo de recurso cloudAppSecurityState
 
 Contém informações de estado sobre o aplicativo de nuvem (destinationServiceName, destinationServiceIp).
 
@@ -17,9 +17,9 @@ Contém informações de estado sobre o aplicativo de nuvem (destinationServiceN
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|destinationServiceIp|Cadeia de caracteres|Endereço IP de destino da conexão para o serviço/aplicativo de nuvem.|
-|destinationServiceName|Cadeia de caracteres|Nome do serviço do aplicativo de nuvem (por exemplo "Equipe de vendas", "Recados", etc.).|
-|riskScore|Cadeia de caracteres|Pontuação de risco de provedor-gerado/calculado do aplicativo/serviço de nuvem. Valor recomendado o intervalo de 0-1, que é igual a um percentual.|
+|destinationServiceIp|String|Endereço IP de destino da conexão com o aplicativo/serviço de nuvem.|
+|destinationServiceName|String|Nome do serviço/aplicativo na nuvem (por exemplo, "Salesforce", "DropBox", etc.).|
+|riskScore|String|Pontuação de risco calculado/gerado pelo provedor do aplicativo/serviço de nuvem. O intervalo de valor recomendado de 0-1, que é igual a uma porcentagem.|
 
 ## <a name="json-representation"></a>Representação JSON
 

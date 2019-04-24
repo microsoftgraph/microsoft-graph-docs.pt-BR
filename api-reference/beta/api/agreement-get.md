@@ -1,19 +1,19 @@
 ---
 title: Obter contrato
-description: Recupere as propriedades e relacionamentos de um objeto de contrato.
+description: Recupere as propriedades e os relacionamentos de um objeto de contrato.
 localization_priority: Normal
 ms.openlocfilehash: da36b6cb2d12c92d4bf12ec2ce4836f5bbc5efe1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517124"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459189"
 ---
 # <a name="get-agreement"></a>Obter contrato
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e relacionamentos de um objeto de [contrato](../resources/agreement.md) .
+Recupere as propriedades e os relacionamentos de um objeto de [contrato](../resources/agreement.md) .
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -36,12 +36,12 @@ This method supports the [OData Query Parameters](https://developer.microsoft.co
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome         | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| Autorização | string | Token de portador Obrigatório. |
+| Autorização | string | \{token\} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` objeto de [contrato](../resources/agreement.md) e código de resposta no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [Agreement](../resources/agreement.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 <!-- {
@@ -52,7 +52,7 @@ Se tiver êxito, este método retornará um `200 OK` objeto de [contrato](../res
 GET https://graph.microsoft.com/beta/agreements/<id>?$expand=files
 ```
 ##### <a name="response"></a>Resposta
->**Observação: **o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

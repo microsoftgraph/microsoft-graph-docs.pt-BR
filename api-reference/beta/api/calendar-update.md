@@ -1,15 +1,15 @@
 ---
 title: Atualizar o calendário
-description: 'Atualize as propriedades de um objeto calendar. O calendário pode ser uma para um usuário, '
+description: 'Atualize as propriedades de um objeto calendar. O calendário pode ser um para um usuário, '
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 2fb6ea839d6565c379c2d9af55920bd0166a7fb1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508472"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461721"
 ---
 # <a name="update-calendar"></a>Atualizar o calendário
 
@@ -26,7 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Aplicativo | Calendars.ReadWrite |
 
 ## <a name="http-request"></a>Solicitação HTTP
-<!-- { "blockType": "ignored" } -->Um usuário ou do grupo padrão [calendário](../resources/calendar.md).
+<!-- { "blockType": "ignored" } -->
+Um [calendar](../resources/calendar.md) padrão de um usuário ou grupo.
 ```http
 PATCH /me/calendar
 PATCH /users/{id | userPrincipalName}/calendar
@@ -56,9 +57,9 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|color|Cadeia de caracteres|Especifica o tema de cores para distinguir o calendário de outros calendários em uma interface do usuário. Os valores de propriedade são: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1|
-|isDefaultCalendar|Booliano|True se este for padrão calendário do usuário, false caso contrário.|
-|name|String|O nome do calendário.|
+|color|String|Especifica o tema de cores para distinguir o calendário de outros calendários em uma interface do usuário. Os valores de propriedade são: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1|
+|isDefaultCalendar|Booliano|True se esse calendário for o calendário padrão do usuário, caso contrário, será false.|
+|nome|String|O nome do calendário.|
 
 ## <a name="response"></a>Resposta
 

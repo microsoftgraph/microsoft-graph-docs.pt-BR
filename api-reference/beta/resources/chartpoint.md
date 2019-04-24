@@ -1,21 +1,21 @@
 ---
 title: Tipo de recurso ChartPoint
-description: Representa um ponto de uma série do gráfico.
+description: Representa o ponto de uma série do gráfico.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 4fd50e2e0b0f289f719dd6636eab16544e6a80f5
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641964"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460916"
 ---
 # <a name="chartpoint-resource-type"></a>Tipo de recurso ChartPoint
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa um ponto de uma série do gráfico.
+Representa o ponto de uma série do gráfico.
 
 
 ## <a name="methods"></a>Métodos
@@ -29,12 +29,12 @@ Representa um ponto de uma série do gráfico.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|valor|object|Retorna o valor de um ponto do gráfico. Somente leitura.|
+|valor|objeto|Retorna o valor de um ponto do gráfico. Somente leitura.|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|formato|[ChartPointFormat](chartpointformat.md)|Encapsula as propriedades de formato de um ponto do gráfico. Somente leitura.|
+|format|[ChartPointFormat](chartpointformat.md)|Encapsula as propriedades de formato de um ponto do gráfico. Somente leitura.|
 
 ## <a name="json-representation"></a>Representação JSON
 

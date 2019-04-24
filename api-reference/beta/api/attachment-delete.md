@@ -1,28 +1,28 @@
 ---
 title: Excluir anexo
-description: Exclua um anexo de um evento de calendário, mensagem, tarefa do Outlook ou postagem.
+description: Excluir um anexo de um evento de calendário, mensagem, tarefa do Outlook ou postagem.
 localization_priority: Normal
 ms.openlocfilehash: 5bb24fc97a2f99dbb0fbec77e2de941f770c27fc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510894"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32458965"
 ---
 # <a name="delete-attachment"></a>Excluir anexo
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exclua um anexo de um [evento](../resources/event.md)do calendário, [mensagem](../resources/message.md), [tarefa do Outlook](../resources/outlooktask.md)ou [postar](../resources/post.md).
+Excluir um anexo de um [evento](../resources/event.md)de calendário, [mensagem](../resources/message.md), [tarefa do Outlook](../resources/outlooktask.md)ou [postagem](../resources/post.md).
 
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-* Se estiver acessando anexos em Mensagens: Mail.ReadWrite.
-* Se estiver acessando anexos em Eventos: Calendars.ReadWrite.
-* Se acessando anexos em tarefas do Outlook: Tasks.ReadWrite
-* Se acessando anexos em postagens de grupo: Group.ReadWrite.All
+* Se estiver acessando anexos em mensagens: mail. ReadWrite
+* Se estiver acessando anexos em eventos: caLendars. ReadWrite
+* Se estiver acessando anexos em tarefas do Outlook: Tasks. ReadWrite
+* Se estiver acessando anexos em Postagens de Grupo: Group. ReadWrite. All
 
 <!--
 * If accessing attachments in Group Events or Posts: Group.ReadWrite.All
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-Anexos para um [evento](../resources/event.md).
+Anexos de um [evento](../resources/event.md).
 
 <!-- { "blockType": "ignored" } -->
 
@@ -59,14 +59,14 @@ DELETE /me/mailFolders/{id}/messages/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments/{id}
 ```
 
-Anexos de uma [message](../resources/message.md) contidos em uma pasta filha de uma [mailFolder](../resources/mailfolder.md) na caixa de correio de um usuário.  O exemplo a seguir mostra um nível de aninhamento, mas uma mensagem pode estar localizada em um filho de um filho, e assim por diante.
+Anexos de uma [message](../resources/message.md) contidos em uma pasta filha de uma [mailFolder](../resources/mailfolder.md) na caixa de correio de um usuário.  O exemplo a seguir mostra um nível de aninhamento, mas uma mensagem pode estar localizada em um filho de um filho, e assim por diante.<!-- { "blockType": "ignored" } -->
 
 ```http
 DELETE /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
 ```
 
-Anexos para uma [tarefa do Outlook](../resources/outlooktask.md).
+Anexos de uma [tarefa do Outlook](../resources/outlooktask.md).
 <!-- { "blockType": "ignored" } -->
 
 ```http

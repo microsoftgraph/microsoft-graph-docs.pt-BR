@@ -1,19 +1,19 @@
 ---
-title: tipo de recurso de anonymousIpRiskEvent
-description: Um evento de risco detectado pelo Windows Azure Active Directory identidade proteção onde uma conta entrar é tentada a partir de um endereço IP que se parece estar anônimo. Informações completas sobre eventos de risco podem ser encontradas na documentação de proteção de identidade do Windows Azure AD.
+title: tipo de recurso anonymousIpRiskEvent
+description: Um evento de risco detectado pela proteção de identidade do Azure Active Directory em que uma entrada de conta é tentada a partir de um endereço IP que parece ser anônimo. As informações completas sobre eventos de risco podem ser encontradas na documentação de proteção de identidade do Azure AD.
 localization_priority: Normal
 ms.openlocfilehash: 5f428a99466e67dfbbe4ef9b4ebe0006b56f99e9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519763"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461023"
 ---
-# <a name="anonymousipriskevent-resource-type"></a>tipo de recurso de anonymousIpRiskEvent
+# <a name="anonymousipriskevent-resource-type"></a>tipo de recurso anonymousIpRiskEvent
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Um evento de risco detectado pelo [Proteção de identidade do Windows Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/) onde uma conta entrar é tentada a partir de um endereço IP que se parece estar anônimo. Informações completas sobre eventos de risco podem ser encontradas na [documentação de proteção de identidade do Windows Azure AD](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection-risk-events-types/).
+Um evento de risco detectado pela [proteção de identidade do Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/) em que uma entrada de conta é tentada a partir de um endereço IP que parece ser anônimo. As informações completas sobre eventos de risco podem ser encontradas na [documentação de proteção de identidade do Azure ad](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection-risk-events-types/).
 
 
 ## <a name="methods"></a>Métodos
@@ -25,23 +25,23 @@ Um evento de risco detectado pelo [Proteção de identidade do Windows Azure Act
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|closedDateTime|dateTimeOffset| A data e hora em que o evento de risco foi fechado|
-|createdDateTime|dateTimeOffset| A data e hora em que o evento de risco foi criado. Sempre é maior ou igual ao datetime do evento risco em si. Esta é a propriedade correta a ser usado como um filtro ao consultar eventos de risco.|
+|closedDateTime|dateTimeOffset| A data e a hora em que o evento de risco foi fechado|
+|createdDateTime|dateTimeOffset| A data e a hora em que o evento de risco foi criado. Isso é sempre maior que ou igual ao DateTime do evento de risco propriamente dito. Esta é a propriedade correta a ser usada como filtro ao consultar eventos de risco.|
 |id|string| Somente leitura|
-|ipAddress|string| O endereço IP do sign-in|
-|location|string| O local anexado ao endereço IP do sign-in|
-|riskEventDateTime|dateTimeOffset| A data e hora quando o evento de risco ocorreu|
+|ipAddress|string| O endereço IP do logon|
+|location|cadeia de caracteres| O local anexado ao endereço IP do logon|
+|riskEventDateTime|dateTimeOffset| A data e a hora em que o evento de risco ocorreu|
 |riskEventStatus|string| Os valores possíveis são: `active`, `remediated`, `dismissedAsFixed`, `dismissedAsFalsePositive`, `dismissedAsIgnore`, `loginBlocked`, `closedMfaAuto`, `closedMultipleReasons`.|
-|riskLevel|string| Os valores possíveis são: `low`, `medium`, `high`.|
+|riskLevel|cadeia de caracteres| Os valores possíveis são: `low`, `medium`, `high`.|
 |riskEventType|string| O tipo de risco|
 |userDisplayName|string| O nome do usuário em risco|
 |userId|string| A identificação do usuário em risco|
-|userPrincipalName|string| O nome de usuário principal do usuário em risco|
+|userPrincipalName|string| O nome principal de usuário do usuário em risco|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|impactedUser|[user](user.md)| Somente leitura. Anulável.|
+|impactedUser|[usuário](user.md)| Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 

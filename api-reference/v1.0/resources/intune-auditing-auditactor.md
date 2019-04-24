@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 632e3018f606b62171461b4b1235ccdafc6b1b5a
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30254454"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32584702"
 ---
 # <a name="auditactor-resource-type"></a>Tipo de recurso auditActor
 
@@ -30,7 +30,7 @@ Uma classe que contém as propriedades para Ator de auditoria.
 |userId|Cadeia de caracteres|ID do usuário.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

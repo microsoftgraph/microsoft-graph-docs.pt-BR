@@ -1,17 +1,17 @@
 ---
-title: Atualizar o grupo de roteamento de áudio
+title: Atualizar grupo de roteamento de áudio
 description: Modificar fontes e receptores de um audioRoutingGroup.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 02a6c8142ec36becd2a06a16d81bff7d1ceff75b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524671"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461032"
 ---
-# <a name="update-audio-routing-group"></a>Atualizar o grupo de roteamento de áudio
+# <a name="update-audio-routing-group"></a>Atualizar grupo de roteamento de áudio
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,9 +22,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios)                |
 | :-------------- | :--------------------------------------------------------- |
-| Delegado (conta corporativa ou de estudante)     | Não suportado                       |
+| Delegado (conta corporativa ou de estudante)     | Não Suportado                       |
 | Delegado (conta pessoal da Microsoft) | Não suportado                       |
-| Aplicativo     | Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
+| Aplicativo     | Calls. JoinGroupCalls. All, calls. InitiateGroupCalls. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -39,16 +39,16 @@ PATCH /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 | Autorização | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações em outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
+No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
 
 | Propriedade       | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-| receptores | String collection | Os participantes de destino no audioRoutingGroup. |
-| routingMode | String | Os valores possíveis são: `oneToOne` e `multicast`. |
-| sources | String collection | O participante de origem no audioRoutingGroup. |
+| receptores | Coleção de cadeias de caracteres | Os participantes de destino no audioRoutingGroup. |
+| routingmode | String | Os valores possíveis são: `oneToOne` e `multicast`. |
+| fontes | Coleção de cadeias de caracteres | O participante de origem no audioRoutingGroup. |
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto atualizado [audioRoutingGroup](../resources/audioroutinggroup.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [audioRoutingGroup](../resources/audioroutinggroup.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -78,7 +78,7 @@ Content-Length: 233
 ```
 ##### <a name="response"></a>Resposta
 
-> **Observação: **o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
   "blockType": "response",

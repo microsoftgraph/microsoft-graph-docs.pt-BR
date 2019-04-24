@@ -1,35 +1,35 @@
 ---
-title: tipo de recurso de licenseAssignmentState
-description: A propriedade **licenseAssignmentStates** da entidade do usuário é uma coleção de objetos **licenseAssignmentState** . Ela fornece detalhes sobre as atribuições de licença a um usuário.
+title: tipo de recurso licenseAssignmentState
+description: A propriedade **licenseAssignmentStates** da entidade User é uma coleção de objetos **licenseAssignmentState** . Ele fornece detalhes sobre as atribuições de licença a um usuário.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 0822c975ab81badf5334881bb460532161858010
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29649365"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32585143"
 ---
-# <a name="licenseassignmentstate-resource-type"></a>tipo de recurso de licenseAssignmentState
+# <a name="licenseassignmentstate-resource-type"></a>tipo de recurso licenseAssignmentState
 
 
-A propriedade **licenseAssignmentStates** da entidade do [usuário](user.md) é uma coleção de objetos **licenseAssignmentState** . Ela fornece detalhes sobre as atribuições de licença a um usuário. Os detalhes incluem informações como:  
+A propriedade **licenseAssignmentStates** da entidade [User](user.md) é uma coleção de objetos **licenseAssignmentState** . Ele fornece detalhes sobre as atribuições de licença a um usuário. Os detalhes incluem informações como:  
 
  - Quais planos estão desabilitados para um usuário
  - Se a licença foi atribuída ao usuário diretamente ou herdada de um grupo
  - O estado atual da atribuição
- - Detalhes do erro se o estado de atribuição for erro 
+ - Detalhes do erro se o estado da atribuição for erro 
 
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|assignedByGroup|cadeia de caracteres|A identificação do grupo que atribui essa licença. Se a atribuição for uma licença atribuído diretamente, esse campo será Null. Somente Leitura.|
-|disabledPlans|Collection(String)|Os planos de serviço que serão desabilitados nessa atribuição. Somente Leitura.|
-|erro|String|Erro de falha de atribuição de licença. Se a licença foi distribuída com êxito, esse campo será Null. Somente Leitura. Valores possíveis: `CountViolation`, `MutuallyExclusiveViolation`, `DependencyViolation`, `ProhibitedInUsageLocationViolation`, `UniquenessViolation`, e `Others`. Para obter mais informações sobre como identificar e resolver a atribuição de licença erros consulte [aqui](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems).|
+|assignedByGroup|string|A ID do grupo que atribui essa licença. Se a atribuição for uma licença atribuída diretamente, esse campo será nulo. Somente Leitura.|
+|disabledPlans|Collection(String)|Os planos de serviço que estão desabilitados nesta atribuição. Somente Leitura.|
+|erro|String|Erro de falha na atribuição de licença. Se a licença for atribuída com êxito, este campo será nulo. Somente Leitura. Valores possíveis: `CountViolation`, `MutuallyExclusiveViolation`, `DependencyViolation` `ProhibitedInUsageLocationViolation` `UniquenessViolation`,, e `Others`. Para obter mais informações sobre como identificar e resolver erros de atribuição de licença, confira [aqui](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems).|
 |skuId|String|O identificador exclusivo da SKU. Somente Leitura.|
-|state|String|Indica o estado atual dessa atribuição. Somente Leitura. Valores possíveis: ativo, ActiveWithError, desabilitado e erro.|
+|state|String|Indica o estado atual desta atribuição. Somente Leitura. Valores possíveis: Active, ActiveWithError, Disabled e Error.|
 
 ## <a name="json-representation"></a>Representação JSON
 

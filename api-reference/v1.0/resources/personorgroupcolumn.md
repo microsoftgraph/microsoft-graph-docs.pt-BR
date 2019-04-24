@@ -5,11 +5,11 @@ title: PersonOrGroupColumn
 localization_priority: Normal
 ms.prod: insights
 ms.openlocfilehash: 5ff8d61a2796edd615a66416b4f8f4d6d565909a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27985443"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462470"
 ---
 # <a name="personorgroupcolumn-resource-type"></a>Tipo de recurso PersonOrGroupColumn
 
@@ -36,7 +36,7 @@ Aqui está uma representação JSON de um recurso **personOrGroupColumn**.
 | **displayAs**              | string  | Como exibir as informações sobre a pessoa ou grupo escolhido. Veja a seguir.
 | **chooseFromType**         | string  | Se permite somente a seleção de pessoas, ou de pessoas e grupos. Deve ser `peopleAndGroups` ou `peopleOnly`.
 
-## <a name="displayas-options"></a>Opções de displayAs
+## <a name="displayas-options"></a>Opções de displayas
 
 | Valor de displayAs               | Descrição
 |:------------------------------|:-----------------------

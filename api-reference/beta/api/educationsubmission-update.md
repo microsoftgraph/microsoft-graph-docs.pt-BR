@@ -1,21 +1,21 @@
 ---
 title: Atualizar educationsubmission
-description: Adicione um nível e os comentários para o envio de um. Professores só podem executar essa operação. Observe que a permissão básica não tem acesso às propriedades do nível e, portanto, não é possível gravar em nível ou comentários. Essa ação não libera o nível e comentários ao aluno. Um professor deve executar uma ação de versão explícita para os dados de nível a ser retornado ao aluno.
+description: Adicione uma classificação e comentários a um envio. Somente os professores podem executar essa operação. Observe que a permissão básica não tem acesso às propriedades da graduação e, portanto, não pode gravar no meio ou nos comentários. Esta ação não libera o conceito e o feedback para o aluno. Um professor deve executar uma ação de liberação explícita para que os dados da grade sejam retornados ao aluno.
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 5c420d2c6e512d8fed0d713340fea482b0888ca1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526113"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464842"
 ---
 # <a name="update-educationsubmission"></a>Atualizar educationsubmission
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adicione um nível e os comentários para o envio de um. Professores só podem executar essa operação. Observe que a permissão básica não tem acesso às propriedades do nível e, portanto, não é possível gravar em nível ou comentários. Essa ação não libera o nível e comentários ao aluno. Um professor deve executar uma ação de versão explícita para os dados de nível a ser retornado ao aluno.
+Adicione uma classificação e comentários a um envio. Somente os professores podem executar essa operação. Observe que a permissão básica não tem acesso às propriedades da graduação e, portanto, não pode gravar no meio ou nos comentários. Esta ação não libera o conceito e o feedback para o aluno. Um professor deve executar uma ação de liberação explícita para que os dados da grade sejam retornados ao aluno.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -37,7 +37,7 @@ PATCH /education/classes/{id}/assignments/{id}/submissions/{id}
 | Autorização  | {token} de portador. Obrigatório.  |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações em outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
+No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
 
 <!-- Provide the property descriptions. -->
 
@@ -47,7 +47,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |grade|educationAssignmentGrade||
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto atualizado [educationSubmission](../resources/educationsubmission.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [educationSubmission](../resources/educationsubmission.md) atualizado no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.

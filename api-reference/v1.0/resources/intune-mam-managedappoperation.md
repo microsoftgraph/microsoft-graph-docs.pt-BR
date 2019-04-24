@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: fe7416c5357b83bd9dc7eb82d94aae6a6d740667
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30253467"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32465213"
 ---
 # <a name="managedappoperation-resource-type"></a>Tipo de recurso managedAppOperation
 
@@ -29,11 +29,11 @@ Representa uma operação aplicada a um registro de aplicativo.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|String|O nome da operação.|
+|displayName|Cadeia de caracteres|O nome da operação.|
 |lastModifiedDateTime|DateTimeOffset|Última vez em que a operação de aplicativo foi modificada.|
 |state|String|O estado atual da operação|
 |id|String|Chave da entidade.|
-|version|String|Versão da entidade.|
+|versão|String|Versão da entidade.|
 
 ## <a name="relationships"></a>Relações
 Nenhuma

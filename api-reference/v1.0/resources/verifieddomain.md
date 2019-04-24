@@ -3,11 +3,11 @@ title: Tipo de recurso verifiedDomain
 description: Especifica um domínio de um locatário. A propriedade **verifiedDomains** da entidade organization é uma coleção de **VerifiedDomain**.
 localization_priority: Normal
 ms.openlocfilehash: 6eb6490ce8dac29f2617b7873230fad7c7b5c536
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876493"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456903"
 ---
 # <a name="verifieddomain-resource-type"></a>Tipo de recurso verifiedDomain
 
@@ -20,8 +20,8 @@ Especifica um domínio de um locatário. A propriedade **verifiedDomains** da en
 |capabilities|Cadeia de caracteres|Por exemplo, "Email" ou "OfficeCommunicationsOnline".|
 |isDefault|Booliano|                **true** se este é o domínio padrão associado ao locatário; caso contrário, **false**.            |
 |isInitial|Booliano|**true** se esse é o domínio inicial associado ao locatário; caso contrário, **false**|
-|name|Cadeia de caracteres|O nome de domínio; por exemplo, “contoso.onmicrosoft.com”.|
-|type|Cadeia de caracteres|Por exemplo, "Managed".|
+|nome|String|O nome de domínio; por exemplo, “contoso.onmicrosoft.com”.|
+|type|String|Por exemplo, "Managed".|
 
 ## <a name="json-representation"></a>Representação JSON
 

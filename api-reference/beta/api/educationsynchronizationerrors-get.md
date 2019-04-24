@@ -1,28 +1,28 @@
 ---
 title: Obter educationSynchronizationErrors
-description: 'Obtenha os erros gerados durante a validação de e/ou durante uma sincronização de um perfil de sincronização de dados escola específico no inquilino. '
+description: 'Obtenha os erros gerados durante a validação e/ou durante uma sincronização de um perfil de sincronização de dados escolar específico no locatário. '
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 48afa5ce7efc267eedc16449324980e527409dc9
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425124"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464269"
 ---
 # <a name="get-educationsynchronizationerrors"></a>Obter educationSynchronizationErrors
 
-Obtenha os erros gerados durante a validação de e/ou durante uma sincronização de um de dados específicos escola [perfil de sincronização](../resources/educationsynchronizationprofile.md) no inquilino. 
+Obtenha os erros gerados durante a validação e/ou durante uma sincronização de um perfil de [sincronização](../resources/educationsynchronizationprofile.md) de dados escolar específico no locatário. 
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:-----------|:------|
-| Delegado (conta corporativa ou de estudante) | EduAdministration.Read, EduAdministration.ReadWrite |
-|Delegada (conta pessoal da Microsoft|Sem suporte.|
-|Aplicativo| EduAdministration.Read.All, EduAdministration.ReadWrite.All |
+| Delegado (conta corporativa ou de estudante) | EduAdministration. Read, EduAdministration. ReadWrite |
+|Delegado (conta pessoal da Microsoft|Sem suporte.|
+|Aplicativo| EduAdministration. Read. All, EduAdministration. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 GET /synchronizationProfiles/{id}/errors
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Esse método suporta os seguintes [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta: $filter, $orderby, $top, $skip, Skip e $count.
+Este método dá suporte aos seguintes [parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta: $filter, $orderby, $top, $skip e $Count.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
@@ -40,7 +40,7 @@ Esse método suporta os seguintes [Parâmetros de consulta OData](https://develo
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos de [erro de sincronização](../resources/educationsynchronizationerror.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos de [erro de sincronização](../resources/educationsynchronizationerror.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação

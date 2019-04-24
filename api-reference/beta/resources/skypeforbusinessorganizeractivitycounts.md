@@ -1,21 +1,21 @@
 ---
-title: tipo de recurso de skypeForBusinessOrganizerActivityCounts
+title: tipo de recurso skypeForBusinessOrganizerActivityCounts
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 ms.openlocfilehash: 9f6c77e86f76ac2e34fb87cf8ca5b6bded35a2a2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866616"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461156"
 ---
-# <a name="skypeforbusinessorganizeractivitycounts-resource-type"></a>tipo de recurso de skypeForBusinessOrganizerActivityCounts
+# <a name="skypeforbusinessorganizeractivitycounts-resource-type"></a>tipo de recurso skypeForBusinessOrganizerActivityCounts
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade           | Tipo   |
 | :----------------- | :----- |
-| mensagens instantâneas                 | Int64  |
+| respectiva                 | Int64  |
 | audioVideo         | Int64  |
 | appSharing         | Int64  |
 | web                | Int64  |
@@ -23,7 +23,7 @@ ms.locfileid: "27866616"
 | dialInOutMicrosoft | Int64  |
 | reportRefreshDate  | Data   |
 | reportDate         | Data   |
-| reportPeriod       | Cadeia de caracteres |
+| reportPeriod       | String |
 
 ## <a name="json-representation"></a>Representação JSON
 

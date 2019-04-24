@@ -1,25 +1,25 @@
 ---
-title: Lista businessFlowTemplates
-description: No Windows Azure AD para acessar o recurso de revisões, liste todos os objetos businessFlowTemplate.
+title: Listar businessFlowTemplates
+description: No recurso de revisões do Azure AD Access, liste todos os objetos businessFlowTemplate.
 localization_priority: Normal
 ms.openlocfilehash: 5b1d96330f808600c7f306ca85009bc5948a22f4
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525560"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461616"
 ---
-# <a name="list-businessflowtemplates"></a>Lista businessFlowTemplates
+# <a name="list-businessflowtemplates"></a>Listar businessFlowTemplates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No recurso [acesso analisa](../resources/accessreviews-root.md) Azure AD, liste todos os objetos [businessFlowTemplate](../resources/businessflowtemplate.md) .
+No recurso de revisões do Azure AD [Access](../resources/accessreviews-root.md) , liste todos os objetos [businessFlowTemplate](../resources/businessflowtemplate.md) .
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | `AccessReview.Read.All`, `AccessReview.ReadWrite.All`.  O usuário conectado também deve estar em uma função de diretório que permite que uma revisão de acesso de leitura. |
+|Delegado (conta corporativa ou de estudante)     | `AccessReview.Read.All`, `AccessReview.ReadWrite.All`.  O usuário conectado também deve estar em uma função de diretório que permite que ele leia uma revisão do Access. |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | Sem suporte. |
 
@@ -31,13 +31,13 @@ GET /businessFlowTemplates
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome         | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| Autorização | string | Token de portador Obrigatório. |
+| Autorização | string | \{token\} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-Nenhum corpo da solicitação deve ser fornecido.
+Nenhum corpo de solicitação deve ser fornecido.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200, OK` código de resposta e uma matriz de objetos [businessFlowTemplate](../resources/businessflowtemplate.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200, OK` um código de resposta e uma matriz de objetos [businessFlowTemplate](../resources/businessflowtemplate.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -89,7 +89,7 @@ Content-type: application/json
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Criar accessReview](accessreview-create.md) |    [accessReview](../resources/accessreview.md) |  Crie um novo accessReview. |
+|[Criar accessReview](accessreview-create.md) |    [accessReview](../resources/accessreview.md) |  Criar um novo accessReview. |
 
 
 

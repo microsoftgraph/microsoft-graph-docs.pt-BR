@@ -1,28 +1,28 @@
 ---
 title: Obter educationSubmissionResource
-description: Recupera as propriedades de um recurso específico associado com o envio. Este recurso é na lista de recursos 'trabalho' e deve ser considerado de trabalho em andamento por um estudante. Este recurso é empacotado com um ponteiro possível de volta para o recurso de atribuição, se ele tiver sido copiado a atribuição.
+description: Recupera as propriedades de um recurso específico associado ao envio. Esse recurso está na lista de recursos de "trabalho" e deve ser considerado como trabalho em andamento por um aluno. Esse recurso é empacotado com um possível ponteiro de volta para o recurso de atribuição, caso tenha sido copiado da atribuição.
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: b76d697afa842fe5315792d803e9b704a628a0b0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518363"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464681"
 ---
 # <a name="get-educationsubmissionresource"></a>Obter educationSubmissionResource
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupera as propriedades de um recurso específico associado com o envio. Este recurso é na lista de recursos "trabalho" e deve ser considerado de trabalho em andamento por um estudante. Este recurso é empacotado com um ponteiro possível de volta para o recurso de atribuição, se ele tiver sido copiado a atribuição.
+Recupera as propriedades de um recurso específico associado ao envio. Esse recurso está na lista de recursos "trabalhando" e deve ser considerado como trabalho em andamento por um aluno. Esse recurso é empacotado com um possível ponteiro de volta para o recurso de atribuição, caso tenha sido copiado da atribuição.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite  |
+|Delegado (conta corporativa ou de estudante) |  EduAssignments. ReadBasic, EduAssignments. ReadWriteBasic, EduAssignments. Read, EduAssignments. ReadWrite  |
 |Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
 |Aplicativo | Sem suporte. | 
 
@@ -42,7 +42,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [educationSubmissionResource](../resources/educationsubmissionresource.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [educationSubmissionResource](../resources/educationsubmissionresource.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
