@@ -1,38 +1,38 @@
 ---
-title: Tipo de recurso planner
-description: O recurso **planner** é o ponto de entrada do modelo de objeto do Planner. Ele retorna um único recurso **planner**.  Ele não contém quaisquer propriedades utilizáveis.
+title: tipo de recurso Planner
+description: O recurso **Planner** é o ponto de entrada para o modelo de objeto do Planner. Ele retorna um recurso **planejador** singleton.  Ele não contém propriedades utilizáveis.
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: f6d25238436b79dec0397df1d005e67e6b17239a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27955132"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462274"
 ---
-# <a name="planner-resource-type"></a><span data-ttu-id="88d29-105">Tipo de recurso planner</span><span class="sxs-lookup"><span data-stu-id="88d29-105">planner resource type</span></span>
+# <a name="planner-resource-type"></a><span data-ttu-id="27bed-105">tipo de recurso Planner</span><span class="sxs-lookup"><span data-stu-id="27bed-105">planner resource type</span></span>
 
-<span data-ttu-id="88d29-p102">O recurso **planner** é o ponto de entrada do modelo de objeto do Planner. Ele retorna um único recurso **planner**.  Ele não contém quaisquer propriedades utilizáveis.</span><span class="sxs-lookup"><span data-stu-id="88d29-p102">The **planner** resource is the entry point for the Planner object model. It returns a singleton **planner** resource.  It doesn't contain any usable properties.</span></span>
+<span data-ttu-id="27bed-106">O recurso **Planner** é o ponto de entrada para o modelo de objeto do Planner.</span><span class="sxs-lookup"><span data-stu-id="27bed-106">The **planner** resource is the entry point for the Planner object model.</span></span> <span data-ttu-id="27bed-107">Ele retorna um recurso **planejador** singleton.</span><span class="sxs-lookup"><span data-stu-id="27bed-107">It returns a singleton **planner** resource.</span></span>  <span data-ttu-id="27bed-108">Ele não contém propriedades utilizáveis.</span><span class="sxs-lookup"><span data-stu-id="27bed-108">It doesn't contain any usable properties.</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="88d29-109">Métodos</span><span class="sxs-lookup"><span data-stu-id="88d29-109">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="27bed-109">Métodos</span><span class="sxs-lookup"><span data-stu-id="27bed-109">Methods</span></span>
 
-| <span data-ttu-id="88d29-110">Método</span><span class="sxs-lookup"><span data-stu-id="88d29-110">Method</span></span>           | <span data-ttu-id="88d29-111">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="88d29-111">Return Type</span></span>    |<span data-ttu-id="88d29-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="88d29-112">Description</span></span>|
+| <span data-ttu-id="27bed-110">Método</span><span class="sxs-lookup"><span data-stu-id="27bed-110">Method</span></span>           | <span data-ttu-id="27bed-111">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="27bed-111">Return Type</span></span>    |<span data-ttu-id="27bed-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="27bed-112">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="88d29-113">Criar plannerBucket</span><span class="sxs-lookup"><span data-stu-id="88d29-113">Create plannerBucket</span></span>](../api/planner-post-buckets.md) |[<span data-ttu-id="88d29-114">plannerBucket</span><span class="sxs-lookup"><span data-stu-id="88d29-114">plannerBucket</span></span>](plannerbucket.md)| <span data-ttu-id="88d29-115">Crie um novo **plannerBucket** ao postar na coleção de buckets.</span><span class="sxs-lookup"><span data-stu-id="88d29-115">Create a new **plannerBucket** by posting to the buckets collection.</span></span>|
-|[<span data-ttu-id="88d29-116">Criar plannerPlan</span><span class="sxs-lookup"><span data-stu-id="88d29-116">Create plannerPlan</span></span>](../api/planner-post-plans.md) |[<span data-ttu-id="88d29-117">plannerPlan</span><span class="sxs-lookup"><span data-stu-id="88d29-117">plannerPlan</span></span>](plannerplan.md)| <span data-ttu-id="88d29-118">Crie um novo **plannerPlan** ao postar na coleção de planos.</span><span class="sxs-lookup"><span data-stu-id="88d29-118">Create a new **plannerPlan** by posting to the plans collection.</span></span>|
-|[<span data-ttu-id="88d29-119">Criar plannerTask</span><span class="sxs-lookup"><span data-stu-id="88d29-119">Create plannerTask</span></span>](../api/planner-post-tasks.md) |[<span data-ttu-id="88d29-120">plannerTask</span><span class="sxs-lookup"><span data-stu-id="88d29-120">plannerTask</span></span>](plannertask.md)| <span data-ttu-id="88d29-121">Crie um novo **plannerTask** ao postar na coleção de tarefas.</span><span class="sxs-lookup"><span data-stu-id="88d29-121">Create a new **plannerTask** by posting to the tasks collection.</span></span>|
+|[<span data-ttu-id="27bed-113">Criar plannerBucket</span><span class="sxs-lookup"><span data-stu-id="27bed-113">Create plannerBucket</span></span>](../api/planner-post-buckets.md) |[<span data-ttu-id="27bed-114">plannerBucket</span><span class="sxs-lookup"><span data-stu-id="27bed-114">plannerBucket</span></span>](plannerbucket.md)| <span data-ttu-id="27bed-115">Crie um novo **plannerBucket** postando na coleção buckets.</span><span class="sxs-lookup"><span data-stu-id="27bed-115">Create a new **plannerBucket** by posting to the buckets collection.</span></span>|
+|[<span data-ttu-id="27bed-116">Criar plannerPlan</span><span class="sxs-lookup"><span data-stu-id="27bed-116">Create plannerPlan</span></span>](../api/planner-post-plans.md) |[<span data-ttu-id="27bed-117">plannerPlan</span><span class="sxs-lookup"><span data-stu-id="27bed-117">plannerPlan</span></span>](plannerplan.md)| <span data-ttu-id="27bed-118">Crie um novo **plannerPlan** postando na coleção Plans.</span><span class="sxs-lookup"><span data-stu-id="27bed-118">Create a new **plannerPlan** by posting to the plans collection.</span></span>|
+|[<span data-ttu-id="27bed-119">Criar plannerTask</span><span class="sxs-lookup"><span data-stu-id="27bed-119">Create plannerTask</span></span>](../api/planner-post-tasks.md) |[<span data-ttu-id="27bed-120">plannerTask</span><span class="sxs-lookup"><span data-stu-id="27bed-120">plannerTask</span></span>](plannertask.md)| <span data-ttu-id="27bed-121">Crie um novo **plannerTask** postando na coleção Tasks.</span><span class="sxs-lookup"><span data-stu-id="27bed-121">Create a new **plannerTask** by posting to the tasks collection.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="88d29-122">Relações</span><span class="sxs-lookup"><span data-stu-id="88d29-122">Relationships</span></span>
-| <span data-ttu-id="88d29-123">Relação</span><span class="sxs-lookup"><span data-stu-id="88d29-123">Relationship</span></span> | <span data-ttu-id="88d29-124">Tipo</span><span class="sxs-lookup"><span data-stu-id="88d29-124">Type</span></span>   |<span data-ttu-id="88d29-125">Descrição</span><span class="sxs-lookup"><span data-stu-id="88d29-125">Description</span></span>|
+## <a name="relationships"></a><span data-ttu-id="27bed-122">Relações</span><span class="sxs-lookup"><span data-stu-id="27bed-122">Relationships</span></span>
+| <span data-ttu-id="27bed-123">Relação</span><span class="sxs-lookup"><span data-stu-id="27bed-123">Relationship</span></span> | <span data-ttu-id="27bed-124">Tipo</span><span class="sxs-lookup"><span data-stu-id="27bed-124">Type</span></span>   |<span data-ttu-id="27bed-125">Descrição</span><span class="sxs-lookup"><span data-stu-id="27bed-125">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="88d29-126">buckets</span><span class="sxs-lookup"><span data-stu-id="88d29-126">buckets</span></span>|<span data-ttu-id="88d29-127">Coleção [plannerBucket](plannerbucket.md)</span><span class="sxs-lookup"><span data-stu-id="88d29-127">[plannerBucket](plannerbucket.md) collection</span></span>| <span data-ttu-id="88d29-p103">Somente leitura. Anulável. Retorna uma coleção dos buckets especificados</span><span class="sxs-lookup"><span data-stu-id="88d29-p103">Read-only. Nullable. Returns a collection of the specified buckets</span></span>|
-|<span data-ttu-id="88d29-131">plans</span><span class="sxs-lookup"><span data-stu-id="88d29-131">plans</span></span>|<span data-ttu-id="88d29-132">Coleção [plannerPlan](plannerplan.md)</span><span class="sxs-lookup"><span data-stu-id="88d29-132">[plannerPlan](plannerplan.md) collection</span></span>| <span data-ttu-id="88d29-p104">Somente leitura. Anulável. Retorna uma coleção dos planos especificados</span><span class="sxs-lookup"><span data-stu-id="88d29-p104">Read-only. Nullable. Returns a collection of the specified plans</span></span>|
-|<span data-ttu-id="88d29-136">tarefas</span><span class="sxs-lookup"><span data-stu-id="88d29-136">tasks</span></span>|<span data-ttu-id="88d29-137">Coleção [plannerTask](plannertask.md)</span><span class="sxs-lookup"><span data-stu-id="88d29-137">[plannerTask](plannertask.md) collection</span></span>| <span data-ttu-id="88d29-p105">Somente leitura. Anulável. Retorna uma coleção das tarefas especificadas</span><span class="sxs-lookup"><span data-stu-id="88d29-p105">Read-only. Nullable. Returns a collection of the specified tasks</span></span>|
+|<span data-ttu-id="27bed-126">buckets</span><span class="sxs-lookup"><span data-stu-id="27bed-126">buckets</span></span>|<span data-ttu-id="27bed-127">coleção [plannerBucket](plannerbucket.md)</span><span class="sxs-lookup"><span data-stu-id="27bed-127">[plannerBucket](plannerbucket.md) collection</span></span>| <span data-ttu-id="27bed-128">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="27bed-128">Read-only.</span></span> <span data-ttu-id="27bed-129">Anulável.</span><span class="sxs-lookup"><span data-stu-id="27bed-129">Nullable.</span></span> <span data-ttu-id="27bed-130">Retorna uma coleção dos buckets especificados</span><span class="sxs-lookup"><span data-stu-id="27bed-130">Returns a collection of the specified buckets</span></span>|
+|<span data-ttu-id="27bed-131">Planeje</span><span class="sxs-lookup"><span data-stu-id="27bed-131">plans</span></span>|<span data-ttu-id="27bed-132">Coleção [plannerPlan](plannerplan.md)</span><span class="sxs-lookup"><span data-stu-id="27bed-132">[plannerPlan](plannerplan.md) collection</span></span>| <span data-ttu-id="27bed-133">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="27bed-133">Read-only.</span></span> <span data-ttu-id="27bed-134">Anulável.</span><span class="sxs-lookup"><span data-stu-id="27bed-134">Nullable.</span></span> <span data-ttu-id="27bed-135">Retorna uma coleção de planos especificados</span><span class="sxs-lookup"><span data-stu-id="27bed-135">Returns a collection of the specified plans</span></span>|
+|<span data-ttu-id="27bed-136">tarefas</span><span class="sxs-lookup"><span data-stu-id="27bed-136">tasks</span></span>|<span data-ttu-id="27bed-137">Coleção [plannerTask](plannertask.md)</span><span class="sxs-lookup"><span data-stu-id="27bed-137">[plannerTask](plannertask.md) collection</span></span>| <span data-ttu-id="27bed-138">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="27bed-138">Read-only.</span></span> <span data-ttu-id="27bed-139">Anulável.</span><span class="sxs-lookup"><span data-stu-id="27bed-139">Nullable.</span></span> <span data-ttu-id="27bed-140">Retorna uma coleção das tarefas especificadas</span><span class="sxs-lookup"><span data-stu-id="27bed-140">Returns a collection of the specified tasks</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="88d29-141">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="88d29-141">JSON representation</span></span>
-<span data-ttu-id="88d29-142">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="88d29-142">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="27bed-141">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="27bed-141">JSON representation</span></span>
+<span data-ttu-id="27bed-142">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="27bed-142">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -45,9 +45,9 @@ ms.locfileid: "27955132"
 }
 ```
 
-## <a name="example"></a><span data-ttu-id="88d29-143">Exemplo</span><span class="sxs-lookup"><span data-stu-id="88d29-143">Example</span></span>
+## <a name="example"></a><span data-ttu-id="27bed-143">Exemplo</span><span class="sxs-lookup"><span data-stu-id="27bed-143">Example</span></span>
 
-<span data-ttu-id="88d29-144">O recurso de **Planejador** estará disponível na raiz do gráfico.</span><span class="sxs-lookup"><span data-stu-id="88d29-144">The **planner** resource is available at the root of the graph.</span></span>
+<span data-ttu-id="27bed-144">O recurso **Planner** está disponível na raiz do gráfico.</span><span class="sxs-lookup"><span data-stu-id="27bed-144">The **planner** resource is available at the root of the graph.</span></span>
 
 <!--{
   "blockType": "request"

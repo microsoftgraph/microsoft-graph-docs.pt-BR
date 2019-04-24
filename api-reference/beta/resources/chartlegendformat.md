@@ -1,34 +1,34 @@
 ---
 title: Tipo de recurso ChartLegendFormat
-description: Abrange as propriedades de formato de uma legenda de gráfico.
+description: Encapsula as propriedades de formato de uma legenda de gráfico.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 8a61d92ada713da1533d6c25e3f8acbc30969d33
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640074"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460948"
 ---
-# <a name="chartlegendformat-resource-type"></a><span data-ttu-id="17220-103">Tipo de recurso ChartLegendFormat</span><span class="sxs-lookup"><span data-stu-id="17220-103">ChartLegendFormat resource type</span></span>
+# <a name="chartlegendformat-resource-type"></a><span data-ttu-id="dc067-103">Tipo de recurso ChartLegendFormat</span><span class="sxs-lookup"><span data-stu-id="dc067-103">ChartLegendFormat resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="17220-104">Abrange as propriedades de formato de uma legenda de gráfico.</span><span class="sxs-lookup"><span data-stu-id="17220-104">Encapsulates the format properties of a chart legend.</span></span>
+<span data-ttu-id="dc067-104">Encapsula as propriedades de formato de uma legenda de gráfico.</span><span class="sxs-lookup"><span data-stu-id="dc067-104">Encapsulates the format properties of a chart legend.</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="17220-105">Métodos</span><span class="sxs-lookup"><span data-stu-id="17220-105">Methods</span></span>
-<span data-ttu-id="17220-106">Nenhum</span><span class="sxs-lookup"><span data-stu-id="17220-106">None</span></span>
+## <a name="methods"></a><span data-ttu-id="dc067-105">Métodos</span><span class="sxs-lookup"><span data-stu-id="dc067-105">Methods</span></span>
+<span data-ttu-id="dc067-106">Nenhum</span><span class="sxs-lookup"><span data-stu-id="dc067-106">None</span></span>
 
-## <a name="properties"></a><span data-ttu-id="17220-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="17220-107">Properties</span></span>
-<span data-ttu-id="17220-108">Nenhum</span><span class="sxs-lookup"><span data-stu-id="17220-108">None</span></span>
+## <a name="properties"></a><span data-ttu-id="dc067-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="dc067-107">Properties</span></span>
+<span data-ttu-id="dc067-108">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="dc067-108">None</span></span>
 
-## <a name="relationships"></a><span data-ttu-id="17220-109">Relações</span><span class="sxs-lookup"><span data-stu-id="17220-109">Relationships</span></span>
-| <span data-ttu-id="17220-110">Relação</span><span class="sxs-lookup"><span data-stu-id="17220-110">Relationship</span></span> | <span data-ttu-id="17220-111">Tipo</span><span class="sxs-lookup"><span data-stu-id="17220-111">Type</span></span>   |<span data-ttu-id="17220-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="17220-112">Description</span></span>|
+## <a name="relationships"></a><span data-ttu-id="dc067-109">Relações</span><span class="sxs-lookup"><span data-stu-id="dc067-109">Relationships</span></span>
+| <span data-ttu-id="dc067-110">Relação</span><span class="sxs-lookup"><span data-stu-id="dc067-110">Relationship</span></span> | <span data-ttu-id="dc067-111">Tipo</span><span class="sxs-lookup"><span data-stu-id="dc067-111">Type</span></span>   |<span data-ttu-id="dc067-112">Descrição</span><span class="sxs-lookup"><span data-stu-id="dc067-112">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="17220-113">fill</span><span class="sxs-lookup"><span data-stu-id="17220-113">fill</span></span>|[<span data-ttu-id="17220-114">ChartFill</span><span class="sxs-lookup"><span data-stu-id="17220-114">ChartFill</span></span>](chartfill.md)|<span data-ttu-id="17220-p101">Representa o formato de preenchimento de um objeto, que inclui informações sobre a formatação da tela de fundo. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="17220-p101">Represents the fill format of an object, which includes background formating information. Read-only.</span></span>|
-|<span data-ttu-id="17220-117">font</span><span class="sxs-lookup"><span data-stu-id="17220-117">font</span></span>|[<span data-ttu-id="17220-118">ChartFont</span><span class="sxs-lookup"><span data-stu-id="17220-118">ChartFont</span></span>](chartfont.md)|<span data-ttu-id="17220-p102">Representa os atributos de fonte, como nome, tamanho, cor, etc. de uma legenda de gráfico. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="17220-p102">Represents the font attributes such as font name, font size, color, etc. of a chart legend. Read-only.</span></span>|
+|<span data-ttu-id="dc067-113">fill</span><span class="sxs-lookup"><span data-stu-id="dc067-113">fill</span></span>|[<span data-ttu-id="dc067-114">ChartFill</span><span class="sxs-lookup"><span data-stu-id="dc067-114">ChartFill</span></span>](chartfill.md)|<span data-ttu-id="dc067-p101">Representa o formato de preenchimento de um objeto, que inclui informações sobre a formatação da tela de fundo. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="dc067-p101">Represents the fill format of an object, which includes background formating information. Read-only.</span></span>|
+|<span data-ttu-id="dc067-117">fonte</span><span class="sxs-lookup"><span data-stu-id="dc067-117">font</span></span>|[<span data-ttu-id="dc067-118">ChartFont</span><span class="sxs-lookup"><span data-stu-id="dc067-118">ChartFont</span></span>](chartfont.md)|<span data-ttu-id="dc067-p102">Representa os atributos de fonte, como nome, tamanho, cor, etc. de uma legenda de gráfico. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="dc067-p102">Represents the font attributes such as font name, font size, color, etc. of a chart legend. Read-only.</span></span>|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

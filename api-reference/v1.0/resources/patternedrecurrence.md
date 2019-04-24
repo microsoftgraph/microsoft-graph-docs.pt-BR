@@ -3,25 +3,27 @@ title: Tipo de recurso patternedRecurrence
 description: O padrão e o intervalo da recorrência.
 localization_priority: Normal
 ms.openlocfilehash: 8a9581150e3b7790f32268eb34f35b22abcb3642
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27840793"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462491"
 ---
-# <a name="patternedrecurrence-resource-type"></a><span data-ttu-id="5d7ce-103">Tipo de recurso patternedRecurrence</span><span class="sxs-lookup"><span data-stu-id="5d7ce-103">patternedRecurrence resource type</span></span>
+# <a name="patternedrecurrence-resource-type"></a><span data-ttu-id="b7820-103">Tipo de recurso patternedRecurrence</span><span class="sxs-lookup"><span data-stu-id="b7820-103">patternedRecurrence resource type</span></span>
 
-<span data-ttu-id="5d7ce-104">O padrão e o intervalo da recorrência.</span><span class="sxs-lookup"><span data-stu-id="5d7ce-104">The recurrence pattern and range.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-## <a name="properties"></a><span data-ttu-id="5d7ce-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="5d7ce-105">Properties</span></span>
-| <span data-ttu-id="5d7ce-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="5d7ce-106">Property</span></span>     | <span data-ttu-id="5d7ce-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="5d7ce-107">Type</span></span>   |<span data-ttu-id="5d7ce-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="5d7ce-108">Description</span></span>|
+<span data-ttu-id="b7820-104">O padrão e o intervalo da recorrência.</span><span class="sxs-lookup"><span data-stu-id="b7820-104">The recurrence pattern and range.</span></span>
+
+## <a name="properties"></a><span data-ttu-id="b7820-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="b7820-105">Properties</span></span>
+| <span data-ttu-id="b7820-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="b7820-106">Property</span></span>     | <span data-ttu-id="b7820-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="b7820-107">Type</span></span>   |<span data-ttu-id="b7820-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="b7820-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="5d7ce-109">pattern</span><span class="sxs-lookup"><span data-stu-id="5d7ce-109">pattern</span></span>|[<span data-ttu-id="5d7ce-110">RecurrencePattern</span><span class="sxs-lookup"><span data-stu-id="5d7ce-110">RecurrencePattern</span></span>](recurrencepattern.md)|<span data-ttu-id="5d7ce-111">A frequência de um evento.</span><span class="sxs-lookup"><span data-stu-id="5d7ce-111">The frequency of an event.</span></span>|
-|<span data-ttu-id="5d7ce-112">range</span><span class="sxs-lookup"><span data-stu-id="5d7ce-112">range</span></span>|[<span data-ttu-id="5d7ce-113">RecurrenceRange</span><span class="sxs-lookup"><span data-stu-id="5d7ce-113">RecurrenceRange</span></span>](recurrencerange.md)|<span data-ttu-id="5d7ce-114">A duração de um evento.</span><span class="sxs-lookup"><span data-stu-id="5d7ce-114">The duration of an event.</span></span>|
+|<span data-ttu-id="b7820-109">pattern</span><span class="sxs-lookup"><span data-stu-id="b7820-109">pattern</span></span>|[<span data-ttu-id="b7820-110">RecurrencePattern</span><span class="sxs-lookup"><span data-stu-id="b7820-110">RecurrencePattern</span></span>](recurrencepattern.md)|<span data-ttu-id="b7820-111">A frequência de um evento.</span><span class="sxs-lookup"><span data-stu-id="b7820-111">The frequency of an event.</span></span>|
+|<span data-ttu-id="b7820-112">range</span><span class="sxs-lookup"><span data-stu-id="b7820-112">range</span></span>|[<span data-ttu-id="b7820-113">RecurrenceRange</span><span class="sxs-lookup"><span data-stu-id="b7820-113">RecurrenceRange</span></span>](recurrencerange.md)|<span data-ttu-id="b7820-114">A duração de um evento.</span><span class="sxs-lookup"><span data-stu-id="b7820-114">The duration of an event.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="5d7ce-115">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="5d7ce-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="b7820-115">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="b7820-115">JSON representation</span></span>
 
-<span data-ttu-id="5d7ce-116">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="5d7ce-116">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="b7820-116">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="b7820-116">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -41,10 +43,15 @@ ms.locfileid: "27840793"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "patternedRecurrence resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/patternedrecurrence.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

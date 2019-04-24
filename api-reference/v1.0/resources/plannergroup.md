@@ -1,38 +1,38 @@
 ---
-title: Tipo de recurso plannerGroup
-description: O recurso de **plannerGroup** fornece acesso aos recursos de Planejador para um grupo. Não contém todas as propriedades utilizáveis.
+title: tipo de recurso do The Planner
+description: O recurso **Planner** fornece acesso a recursos do Planner para um grupo. Ele não contém propriedades utilizáveis.
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 6e60db0a3f33bc47d0ea63b7a773b7bb691cd5be
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27981417"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462372"
 ---
-# <a name="plannergroup-resource-type"></a><span data-ttu-id="a74c8-104">Tipo de recurso plannerGroup</span><span class="sxs-lookup"><span data-stu-id="a74c8-104">plannerGroup resource type</span></span>
+# <a name="plannergroup-resource-type"></a><span data-ttu-id="81751-104">tipo de recurso do The Planner</span><span class="sxs-lookup"><span data-stu-id="81751-104">plannerGroup resource type</span></span>
 
-<span data-ttu-id="a74c8-p102">O recurso **plannerGroup** oferece acesso aos recursos do Planner para um [grupo](group.md). Ele não contém quaisquer propriedades utilizáveis.</span><span class="sxs-lookup"><span data-stu-id="a74c8-p102">The **plannerGroup** resource provides access to Planner resources for a [group](group.md). It doesn't contain any usable properties.</span></span>
+<span data-ttu-id="81751-105">O recurso **Planner** fornece acesso a recursos do Planner para um [grupo](group.md).</span><span class="sxs-lookup"><span data-stu-id="81751-105">The **plannerGroup** resource provides access to Planner resources for a [group](group.md).</span></span> <span data-ttu-id="81751-106">Ele não contém propriedades utilizáveis.</span><span class="sxs-lookup"><span data-stu-id="81751-106">It doesn't contain any usable properties.</span></span>
 
-## <a name="methods"></a><span data-ttu-id="a74c8-107">Métodos</span><span class="sxs-lookup"><span data-stu-id="a74c8-107">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="81751-107">Métodos</span><span class="sxs-lookup"><span data-stu-id="81751-107">Methods</span></span>
 
-| <span data-ttu-id="a74c8-108">Método</span><span class="sxs-lookup"><span data-stu-id="a74c8-108">Method</span></span>           | <span data-ttu-id="a74c8-109">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="a74c8-109">Return Type</span></span>    |<span data-ttu-id="a74c8-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="a74c8-110">Description</span></span>|
+| <span data-ttu-id="81751-108">Método</span><span class="sxs-lookup"><span data-stu-id="81751-108">Method</span></span>           | <span data-ttu-id="81751-109">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="81751-109">Return Type</span></span>    |<span data-ttu-id="81751-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="81751-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="a74c8-111">Listar planos</span><span class="sxs-lookup"><span data-stu-id="a74c8-111">List plans</span></span>](../api/plannergroup-list-plans.md) |<span data-ttu-id="a74c8-112">Coleção [plannerPlan](plannerplan.md)</span><span class="sxs-lookup"><span data-stu-id="a74c8-112">[plannerPlan](plannerplan.md) collection</span></span>| <span data-ttu-id="a74c8-113">Obtenha uma coleção de objetos **plannerPlan**.</span><span class="sxs-lookup"><span data-stu-id="a74c8-113">Get a **plannerPlan** object collection.</span></span>|
+|[<span data-ttu-id="81751-111">Listar planos</span><span class="sxs-lookup"><span data-stu-id="81751-111">List plans</span></span>](../api/plannergroup-list-plans.md) |<span data-ttu-id="81751-112">Coleção [plannerPlan](plannerplan.md)</span><span class="sxs-lookup"><span data-stu-id="81751-112">[plannerPlan](plannerplan.md) collection</span></span>| <span data-ttu-id="81751-113">Obtenha uma coleção de objetos **plannerPlan** .</span><span class="sxs-lookup"><span data-stu-id="81751-113">Get a **plannerPlan** object collection.</span></span>|
 
-## <a name="properties"></a><span data-ttu-id="a74c8-114">Propriedades</span><span class="sxs-lookup"><span data-stu-id="a74c8-114">Properties</span></span>
-| <span data-ttu-id="a74c8-115">Propriedade</span><span class="sxs-lookup"><span data-stu-id="a74c8-115">Property</span></span>     | <span data-ttu-id="a74c8-116">Tipo</span><span class="sxs-lookup"><span data-stu-id="a74c8-116">Type</span></span>   |<span data-ttu-id="a74c8-117">Descrição</span><span class="sxs-lookup"><span data-stu-id="a74c8-117">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="81751-114">Propriedades</span><span class="sxs-lookup"><span data-stu-id="81751-114">Properties</span></span>
+| <span data-ttu-id="81751-115">Propriedade</span><span class="sxs-lookup"><span data-stu-id="81751-115">Property</span></span>     | <span data-ttu-id="81751-116">Tipo</span><span class="sxs-lookup"><span data-stu-id="81751-116">Type</span></span>   |<span data-ttu-id="81751-117">Descrição</span><span class="sxs-lookup"><span data-stu-id="81751-117">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="a74c8-118">id</span><span class="sxs-lookup"><span data-stu-id="a74c8-118">id</span></span>|<span data-ttu-id="a74c8-119">String</span><span class="sxs-lookup"><span data-stu-id="a74c8-119">String</span></span>| <span data-ttu-id="a74c8-p103">Somente leitura. O identificador do **plannerGroup**</span><span class="sxs-lookup"><span data-stu-id="a74c8-p103">Read-only. Identifier of the **plannerGroup**</span></span>|
+|<span data-ttu-id="81751-118">id</span><span class="sxs-lookup"><span data-stu-id="81751-118">id</span></span>|<span data-ttu-id="81751-119">String</span><span class="sxs-lookup"><span data-stu-id="81751-119">String</span></span>| <span data-ttu-id="81751-120">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="81751-120">Read-only.</span></span> <span data-ttu-id="81751-121">Identificador do complannerr \*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="81751-121">Identifier of the **plannerGroup**</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="a74c8-122">Relações</span><span class="sxs-lookup"><span data-stu-id="a74c8-122">Relationships</span></span>
-| <span data-ttu-id="a74c8-123">Relação</span><span class="sxs-lookup"><span data-stu-id="a74c8-123">Relationship</span></span> | <span data-ttu-id="a74c8-124">Tipo</span><span class="sxs-lookup"><span data-stu-id="a74c8-124">Type</span></span>   |<span data-ttu-id="a74c8-125">Descrição</span><span class="sxs-lookup"><span data-stu-id="a74c8-125">Description</span></span>|
+## <a name="relationships"></a><span data-ttu-id="81751-122">Relações</span><span class="sxs-lookup"><span data-stu-id="81751-122">Relationships</span></span>
+| <span data-ttu-id="81751-123">Relação</span><span class="sxs-lookup"><span data-stu-id="81751-123">Relationship</span></span> | <span data-ttu-id="81751-124">Tipo</span><span class="sxs-lookup"><span data-stu-id="81751-124">Type</span></span>   |<span data-ttu-id="81751-125">Descrição</span><span class="sxs-lookup"><span data-stu-id="81751-125">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="a74c8-126">plans</span><span class="sxs-lookup"><span data-stu-id="a74c8-126">plans</span></span>|<span data-ttu-id="a74c8-127">Coleção [plannerPlan](plannerplan.md)</span><span class="sxs-lookup"><span data-stu-id="a74c8-127">[plannerPlan](plannerplan.md) collection</span></span>| <span data-ttu-id="a74c8-p104">Somente leitura. Anulável. Retorna o [plannerPlans](plannerplan.md) que pertence ao grupo.</span><span class="sxs-lookup"><span data-stu-id="a74c8-p104">Read-only. Nullable. Returns the [plannerPlans](plannerplan.md) owned by the group.</span></span>|
+|<span data-ttu-id="81751-126">Planeje</span><span class="sxs-lookup"><span data-stu-id="81751-126">plans</span></span>|<span data-ttu-id="81751-127">Coleção [plannerPlan](plannerplan.md)</span><span class="sxs-lookup"><span data-stu-id="81751-127">[plannerPlan](plannerplan.md) collection</span></span>| <span data-ttu-id="81751-128">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="81751-128">Read-only.</span></span> <span data-ttu-id="81751-129">Anulável.</span><span class="sxs-lookup"><span data-stu-id="81751-129">Nullable.</span></span> <span data-ttu-id="81751-130">Retorna o [plannerPlans](plannerplan.md) de Propriedade do grupo.</span><span class="sxs-lookup"><span data-stu-id="81751-130">Returns the [plannerPlans](plannerplan.md) owned by the group.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="a74c8-131">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="a74c8-131">JSON representation</span></span>
-<span data-ttu-id="a74c8-132">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="a74c8-132">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="81751-131">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="81751-131">JSON representation</span></span>
+<span data-ttu-id="81751-132">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="81751-132">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

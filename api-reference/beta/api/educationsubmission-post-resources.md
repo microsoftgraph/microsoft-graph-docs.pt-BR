@@ -1,53 +1,53 @@
 ---
 title: Criar educationSubmissionResource
-description: 'Adiciona um recurso à lista de recursos. Essa ação só pode ser feita pelo aluno aos quais este envio é atribuído. Essa ação não será executado se o sinalizador **allowStudentsToAddResources** não estiver definido como true. Se o chamador quiser criar um novo recurso com base em arquivo, o arquivo deve ser carregado na pasta de recursos que está associado com o envio. Se o arquivo não existe ou não está nessa pasta, a solicitação POST falhará. '
+description: 'Adiciona um recurso à lista de recursos. Esta ação só pode ser feita pelo aluno a quem esse envio é atribuído. Esta ação não será bem-sucedida se o sinalizador **allowStudentsToAddResources** não estiver definido como true. Se o chamador quiser criar um novo recurso baseado em arquivo, o arquivo deverá ser carregado na pasta recursos que está associada ao envio. Se o arquivo não existir ou não estiver nessa pasta, a solicitação POST falhará. '
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: da0860d5b5f19a84643a05a88aaeb74651e2d8ea
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511727"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464776"
 ---
-# <a name="create-educationsubmissionresource"></a><span data-ttu-id="c0097-107">Criar educationSubmissionResource</span><span class="sxs-lookup"><span data-stu-id="c0097-107">Create educationSubmissionResource</span></span>
+# <a name="create-educationsubmissionresource"></a><span data-ttu-id="7b6ab-107">Criar educationSubmissionResource</span><span class="sxs-lookup"><span data-stu-id="7b6ab-107">Create educationSubmissionResource</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c0097-108">Adiciona um recurso à lista de recursos.</span><span class="sxs-lookup"><span data-stu-id="c0097-108">Adds a resource to the resources list.</span></span> <span data-ttu-id="c0097-109">Essa ação só pode ser feita pelo aluno aos quais este envio é atribuído.</span><span class="sxs-lookup"><span data-stu-id="c0097-109">This action can only be done by the student to whom this submission is assigned.</span></span> <span data-ttu-id="c0097-110">Essa ação não será executado se o sinalizador **allowStudentsToAddResources** não estiver definido como true.</span><span class="sxs-lookup"><span data-stu-id="c0097-110">This action will not succeed if the **allowStudentsToAddResources** flag is not set to true.</span></span> <span data-ttu-id="c0097-111">Se o chamador quiser criar um novo recurso com base em arquivo, o arquivo deve ser carregado na pasta de recursos que está associado com o envio.</span><span class="sxs-lookup"><span data-stu-id="c0097-111">If the caller wants to create a new file-based resource, the file must be uploaded to the resources folder that is associated with the submission.</span></span> <span data-ttu-id="c0097-112">Se o arquivo não existe ou não está nessa pasta, a solicitação POST falhará.</span><span class="sxs-lookup"><span data-stu-id="c0097-112">If the file does not exist or is not in that folder, the POST request will fail.</span></span> 
+<span data-ttu-id="7b6ab-108">Adiciona um recurso à lista de recursos.</span><span class="sxs-lookup"><span data-stu-id="7b6ab-108">Adds a resource to the resources list.</span></span> <span data-ttu-id="7b6ab-109">Esta ação só pode ser feita pelo aluno a quem esse envio é atribuído.</span><span class="sxs-lookup"><span data-stu-id="7b6ab-109">This action can only be done by the student to whom this submission is assigned.</span></span> <span data-ttu-id="7b6ab-110">Esta ação não será bem-sucedida se o sinalizador **allowStudentsToAddResources** não estiver definido como true.</span><span class="sxs-lookup"><span data-stu-id="7b6ab-110">This action will not succeed if the **allowStudentsToAddResources** flag is not set to true.</span></span> <span data-ttu-id="7b6ab-111">Se o chamador quiser criar um novo recurso baseado em arquivo, o arquivo deverá ser carregado na pasta recursos que está associada ao envio.</span><span class="sxs-lookup"><span data-stu-id="7b6ab-111">If the caller wants to create a new file-based resource, the file must be uploaded to the resources folder that is associated with the submission.</span></span> <span data-ttu-id="7b6ab-112">Se o arquivo não existir ou não estiver nessa pasta, a solicitação POST falhará.</span><span class="sxs-lookup"><span data-stu-id="7b6ab-112">If the file does not exist or is not in that folder, the POST request will fail.</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="c0097-113">Permissões</span><span class="sxs-lookup"><span data-stu-id="c0097-113">Permissions</span></span>
-<span data-ttu-id="c0097-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c0097-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="7b6ab-113">Permissões</span><span class="sxs-lookup"><span data-stu-id="7b6ab-113">Permissions</span></span>
+<span data-ttu-id="7b6ab-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7b6ab-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c0097-116">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="c0097-116">Permission type</span></span>      | <span data-ttu-id="c0097-117">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="c0097-117">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="7b6ab-116">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="7b6ab-116">Permission type</span></span>      | <span data-ttu-id="7b6ab-117">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="7b6ab-117">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c0097-118">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="c0097-118">Delegated (work or school account)</span></span> |  <span data-ttu-id="c0097-119">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c0097-119">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span></span>  |
-|<span data-ttu-id="c0097-120">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="c0097-120">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c0097-121">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c0097-121">Not supported.</span></span>  |
-|<span data-ttu-id="c0097-122">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="c0097-122">Application</span></span> | <span data-ttu-id="c0097-123">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c0097-123">Not supported.</span></span> | 
+|<span data-ttu-id="7b6ab-118">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="7b6ab-118">Delegated (work or school account)</span></span> |  <span data-ttu-id="7b6ab-119">EduAssignments. ReadWriteBasic, EduAssignments. ReadWrite</span><span class="sxs-lookup"><span data-stu-id="7b6ab-119">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span></span>  |
+|<span data-ttu-id="7b6ab-120">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="7b6ab-120">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7b6ab-121">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="7b6ab-121">Not supported.</span></span>  |
+|<span data-ttu-id="7b6ab-122">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="7b6ab-122">Application</span></span> | <span data-ttu-id="7b6ab-123">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="7b6ab-123">Not supported.</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="c0097-124">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="c0097-124">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7b6ab-124">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="7b6ab-124">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /education/classes/{id}/assignments/{id}/submissions/{id}/resources
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="c0097-125">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="c0097-125">Request headers</span></span>
-| <span data-ttu-id="c0097-126">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="c0097-126">Header</span></span>       | <span data-ttu-id="c0097-127">Valor</span><span class="sxs-lookup"><span data-stu-id="c0097-127">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="7b6ab-125">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="7b6ab-125">Request headers</span></span>
+| <span data-ttu-id="7b6ab-126">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="7b6ab-126">Header</span></span>       | <span data-ttu-id="7b6ab-127">Valor</span><span class="sxs-lookup"><span data-stu-id="7b6ab-127">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="c0097-128">Autorização</span><span class="sxs-lookup"><span data-stu-id="c0097-128">Authorization</span></span>  | <span data-ttu-id="c0097-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="c0097-p104">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="c0097-131">Content-Type</span><span class="sxs-lookup"><span data-stu-id="c0097-131">Content-Type</span></span>  | <span data-ttu-id="c0097-132">application/json</span><span class="sxs-lookup"><span data-stu-id="c0097-132">application/json</span></span>  |
+| <span data-ttu-id="7b6ab-128">Autorização</span><span class="sxs-lookup"><span data-stu-id="7b6ab-128">Authorization</span></span>  | <span data-ttu-id="7b6ab-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="7b6ab-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="7b6ab-131">Content-Type</span><span class="sxs-lookup"><span data-stu-id="7b6ab-131">Content-Type</span></span>  | <span data-ttu-id="7b6ab-132">application/json</span><span class="sxs-lookup"><span data-stu-id="7b6ab-132">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="c0097-133">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="c0097-133">Request body</span></span>
-<span data-ttu-id="c0097-134">No corpo da solicitação, fornece uma representação JSON do objeto [educationSubmissionResource](../resources/educationsubmissionresource.md) .</span><span class="sxs-lookup"><span data-stu-id="c0097-134">In the request body, supply a JSON representation of the [educationSubmissionResource](../resources/educationsubmissionresource.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="7b6ab-133">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="7b6ab-133">Request body</span></span>
+<span data-ttu-id="7b6ab-134">No corpo da solicitação, forneça uma representação JSON do objeto [educationSubmissionResource](../resources/educationsubmissionresource.md) .</span><span class="sxs-lookup"><span data-stu-id="7b6ab-134">In the request body, supply a JSON representation of the [educationSubmissionResource](../resources/educationsubmissionresource.md) object.</span></span>
 
 
-## <a name="response"></a><span data-ttu-id="c0097-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="c0097-135">Response</span></span>
-<span data-ttu-id="c0097-136">Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [educationSubmissionResource](../resources/educationsubmissionresource.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="c0097-136">If successful, this method returns a `201 Created` response code and an [educationSubmissionResource](../resources/educationsubmissionresource.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="7b6ab-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="7b6ab-135">Response</span></span>
+<span data-ttu-id="7b6ab-136">Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [educationSubmissionResource](../resources/educationsubmissionresource.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="7b6ab-136">If successful, this method returns a `201 Created` response code and an [educationSubmissionResource](../resources/educationsubmissionresource.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c0097-137">Exemplo</span><span class="sxs-lookup"><span data-stu-id="c0097-137">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="c0097-138">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c0097-138">Request</span></span>
-<span data-ttu-id="c0097-139">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="c0097-139">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="7b6ab-137">Exemplo</span><span class="sxs-lookup"><span data-stu-id="7b6ab-137">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="7b6ab-138">Solicitação</span><span class="sxs-lookup"><span data-stu-id="7b6ab-138">Request</span></span>
+<span data-ttu-id="7b6ab-139">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="7b6ab-139">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "ignored",
   "name": "create_educationsubmissionresource_from_educationsubmission"
@@ -87,10 +87,10 @@ Content-length: 1097
 
 ```
 
-##### <a name="response"></a><span data-ttu-id="c0097-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="c0097-140">Response</span></span>
-<span data-ttu-id="c0097-141">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="c0097-141">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="7b6ab-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="7b6ab-140">Response</span></span>
+<span data-ttu-id="7b6ab-141">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="7b6ab-141">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="c0097-p105">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="c0097-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="7b6ab-p105">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="7b6ab-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "ignored",

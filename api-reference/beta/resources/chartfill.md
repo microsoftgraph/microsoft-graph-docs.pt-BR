@@ -5,31 +5,31 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: ca968737007e5c1dfc223a45d2c2aeb3a0d12c3e
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641880"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461021"
 ---
-# <a name="chartfill-resource-type"></a><span data-ttu-id="6069f-103">Tipo de recurso ChartFill</span><span class="sxs-lookup"><span data-stu-id="6069f-103">ChartFill resource type</span></span>
+# <a name="chartfill-resource-type"></a><span data-ttu-id="b8900-103">Tipo de recurso ChartFill</span><span class="sxs-lookup"><span data-stu-id="b8900-103">ChartFill resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="6069f-104">Representa a formatação de preenchimento de um elemento do gráfico.</span><span class="sxs-lookup"><span data-stu-id="6069f-104">Represents the fill formatting for a chart element.</span></span>
+<span data-ttu-id="b8900-104">Representa a formatação de preenchimento de um elemento do gráfico.</span><span class="sxs-lookup"><span data-stu-id="b8900-104">Represents the fill formatting for a chart element.</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="6069f-105">Métodos</span><span class="sxs-lookup"><span data-stu-id="6069f-105">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="b8900-105">Métodos</span><span class="sxs-lookup"><span data-stu-id="b8900-105">Methods</span></span>
 
-| <span data-ttu-id="6069f-106">Método</span><span class="sxs-lookup"><span data-stu-id="6069f-106">Method</span></span>           | <span data-ttu-id="6069f-107">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="6069f-107">Return Type</span></span>    |<span data-ttu-id="6069f-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="6069f-108">Description</span></span>|
+| <span data-ttu-id="b8900-106">Método</span><span class="sxs-lookup"><span data-stu-id="b8900-106">Method</span></span>           | <span data-ttu-id="b8900-107">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="b8900-107">Return Type</span></span>    |<span data-ttu-id="b8900-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="b8900-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="6069f-109">Clear</span><span class="sxs-lookup"><span data-stu-id="6069f-109">Clear</span></span>](../api/chartfill-clear.md)|<span data-ttu-id="6069f-110">Nenhum</span><span class="sxs-lookup"><span data-stu-id="6069f-110">None</span></span>|<span data-ttu-id="6069f-111">Limpe a cor de preenchimento de um elemento do gráfico.</span><span class="sxs-lookup"><span data-stu-id="6069f-111">Clear the fill color of a chart element.</span></span>|
-|[<span data-ttu-id="6069f-112">Setsolidcolor</span><span class="sxs-lookup"><span data-stu-id="6069f-112">Setsolidcolor</span></span>](../api/chartfill-setsolidcolor.md)|<span data-ttu-id="6069f-113">Nenhum</span><span class="sxs-lookup"><span data-stu-id="6069f-113">None</span></span>|<span data-ttu-id="6069f-114">Define a formatação de preenchimento de um elemento do gráfico com uma cor uniforme.</span><span class="sxs-lookup"><span data-stu-id="6069f-114">Sets the fill formatting of a chart element to a uniform color.</span></span>|
+|[<span data-ttu-id="b8900-109">Clear</span><span class="sxs-lookup"><span data-stu-id="b8900-109">Clear</span></span>](../api/chartfill-clear.md)|<span data-ttu-id="b8900-110">Nenhum</span><span class="sxs-lookup"><span data-stu-id="b8900-110">None</span></span>|<span data-ttu-id="b8900-111">Limpe a cor de preenchimento de um elemento do gráfico.</span><span class="sxs-lookup"><span data-stu-id="b8900-111">Clear the fill color of a chart element.</span></span>|
+|[<span data-ttu-id="b8900-112">Setsolidcolor</span><span class="sxs-lookup"><span data-stu-id="b8900-112">Setsolidcolor</span></span>](../api/chartfill-setsolidcolor.md)|<span data-ttu-id="b8900-113">Nenhum</span><span class="sxs-lookup"><span data-stu-id="b8900-113">None</span></span>|<span data-ttu-id="b8900-114">Define a formatação de preenchimento de um elemento do gráfico com uma cor uniforme.</span><span class="sxs-lookup"><span data-stu-id="b8900-114">Sets the fill formatting of a chart element to a uniform color.</span></span>|
 
-## <a name="properties"></a><span data-ttu-id="6069f-115">Propriedades</span><span class="sxs-lookup"><span data-stu-id="6069f-115">Properties</span></span>
-<span data-ttu-id="6069f-116">Nenhum</span><span class="sxs-lookup"><span data-stu-id="6069f-116">None</span></span>
+## <a name="properties"></a><span data-ttu-id="b8900-115">Propriedades</span><span class="sxs-lookup"><span data-stu-id="b8900-115">Properties</span></span>
+<span data-ttu-id="b8900-116">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="b8900-116">None</span></span>
 
-## <a name="relationships"></a><span data-ttu-id="6069f-117">Relações</span><span class="sxs-lookup"><span data-stu-id="6069f-117">Relationships</span></span>
-<span data-ttu-id="6069f-118">Nenhum</span><span class="sxs-lookup"><span data-stu-id="6069f-118">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="b8900-117">Relações</span><span class="sxs-lookup"><span data-stu-id="b8900-117">Relationships</span></span>
+<span data-ttu-id="b8900-118">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="b8900-118">None</span></span>
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
