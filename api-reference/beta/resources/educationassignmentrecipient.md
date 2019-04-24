@@ -1,27 +1,27 @@
 ---
-title: tipo de recurso de educationAssignmentRecipient
-description: Usada dentro da propriedade **assignments.assignTo** . Essa superclasse é abstrata e não é possível
+title: tipo de recurso educationAssignmentRecipient
+description: Usada dentro da propriedade **assignments.** assignTo. Esta superclasse é abstrata e você não pode
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 ms.openlocfilehash: 43ce19e62bf49932eb42b04e0bf22e4ab8cf0261
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511783"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507314"
 ---
-# <a name="educationassignmentrecipient-resource-type"></a><span data-ttu-id="c955a-104">tipo de recurso de educationAssignmentRecipient</span><span class="sxs-lookup"><span data-stu-id="c955a-104">educationAssignmentRecipient resource type</span></span>
+# <a name="educationassignmentrecipient-resource-type"></a><span data-ttu-id="cd9f3-104">tipo de recurso educationAssignmentRecipient</span><span class="sxs-lookup"><span data-stu-id="cd9f3-104">educationAssignmentRecipient resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c955a-105">Usada dentro da propriedade **assignments.assignTo** .</span><span class="sxs-lookup"><span data-stu-id="c955a-105">Used within the **assignments.assignTo** property.</span></span> <span data-ttu-id="c955a-106">Essa superclasse é abstrata e você não pode definir a propriedade nas atribuições para esse valor.</span><span class="sxs-lookup"><span data-stu-id="c955a-106">This superclass is abstract and you cannot set the property in assignments to this value.</span></span> <span data-ttu-id="c955a-107">Essa superclasse representa que a atribuição deve ser atribuída quando a atribuição é publicada.</span><span class="sxs-lookup"><span data-stu-id="c955a-107">This superclass represents who the assignment should be assigned to when the assignment is published.</span></span>
+<span data-ttu-id="cd9f3-105">Usada dentro da propriedade **assignments.** assignTo.</span><span class="sxs-lookup"><span data-stu-id="cd9f3-105">Used within the **assignments.assignTo** property.</span></span> <span data-ttu-id="cd9f3-106">Essa superclasse é abstrata e você não pode definir a propriedade em assignments para esse valor.</span><span class="sxs-lookup"><span data-stu-id="cd9f3-106">This superclass is abstract and you cannot set the property in assignments to this value.</span></span> <span data-ttu-id="cd9f3-107">Essa superclasse representa quem a atribuição deve ser atribuída quando a atribuição é publicada.</span><span class="sxs-lookup"><span data-stu-id="cd9f3-107">This superclass represents who the assignment should be assigned to when the assignment is published.</span></span>
 
 
-<span data-ttu-id="c955a-108">O recurso de [educationAssignmentClassRecipient](educationassignmentclassrecipient.md) é uma subclasse de nessa superclasse.</span><span class="sxs-lookup"><span data-stu-id="c955a-108">The [educationAssignmentClassRecipient](educationassignmentclassrecipient.md) resource is a subclass of this superclass.</span></span>
+<span data-ttu-id="cd9f3-108">O recurso [educationAssignmentClassRecipient](educationassignmentclassrecipient.md) é uma subclasse dessa superclasse.</span><span class="sxs-lookup"><span data-stu-id="cd9f3-108">The [educationAssignmentClassRecipient](educationassignmentclassrecipient.md) resource is a subclass of this superclass.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="c955a-109">Propriedades</span><span class="sxs-lookup"><span data-stu-id="c955a-109">Properties</span></span>
-<span data-ttu-id="c955a-110">Nenhum.</span><span class="sxs-lookup"><span data-stu-id="c955a-110">None.</span></span>
+## <a name="properties"></a><span data-ttu-id="cd9f3-109">Propriedades</span><span class="sxs-lookup"><span data-stu-id="cd9f3-109">Properties</span></span>
+<span data-ttu-id="cd9f3-110">Nenhum</span><span class="sxs-lookup"><span data-stu-id="cd9f3-110">None.</span></span>
 
 <!-- {
   "blockType": "resource",

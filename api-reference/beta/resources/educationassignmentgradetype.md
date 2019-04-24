@@ -1,28 +1,28 @@
 ---
-title: tipo de recurso de educationAssignmentGradeType
-description: Representa como uma atribuição será Graduada. Isso é usado dentro da propriedade **assignments.grading** .
+title: tipo de recurso educationAssignmentGradeType
+description: Representa como uma atribuição será classificada. Isso é usado na propriedade **assignments. Grading** .
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 ms.openlocfilehash: 68809d88574f0ba01d6e2fafac2f60ea4229112c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523313"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507277"
 ---
-# <a name="educationassignmentgradetype-resource-type"></a><span data-ttu-id="c8a7f-104">tipo de recurso de educationAssignmentGradeType</span><span class="sxs-lookup"><span data-stu-id="c8a7f-104">educationAssignmentGradeType resource type</span></span>
+# <a name="educationassignmentgradetype-resource-type"></a><span data-ttu-id="884b6-104">tipo de recurso educationAssignmentGradeType</span><span class="sxs-lookup"><span data-stu-id="884b6-104">educationAssignmentGradeType resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c8a7f-105">Representa como uma atribuição será Graduada.</span><span class="sxs-lookup"><span data-stu-id="c8a7f-105">Represents how an assignment will be graded.</span></span> <span data-ttu-id="c8a7f-106">Isso é usado dentro da propriedade **assignments.grading** .</span><span class="sxs-lookup"><span data-stu-id="c8a7f-106">This is used within the **assignments.grading** property.</span></span>
+<span data-ttu-id="884b6-105">Representa como uma atribuição será classificada.</span><span class="sxs-lookup"><span data-stu-id="884b6-105">Represents how an assignment will be graded.</span></span> <span data-ttu-id="884b6-106">Isso é usado na propriedade **assignments. Grading** .</span><span class="sxs-lookup"><span data-stu-id="884b6-106">This is used within the **assignments.grading** property.</span></span>
 
-<span data-ttu-id="c8a7f-107">Essa superclasse não pode ser usada diretamente na propriedade atribuição.</span><span class="sxs-lookup"><span data-stu-id="c8a7f-107">This superclass can not be used directly in the assignment property.</span></span> <span data-ttu-id="c8a7f-108">Ele existe para permitir várias maneiras diferentes de atribuições de nível.</span><span class="sxs-lookup"><span data-stu-id="c8a7f-108">It exists to allow for multiple different ways to grade assignments.</span></span>
+<span data-ttu-id="884b6-107">Essa superclasse não pode ser usada diretamente na propriedade assignment.</span><span class="sxs-lookup"><span data-stu-id="884b6-107">This superclass can not be used directly in the assignment property.</span></span> <span data-ttu-id="884b6-108">Ele existe para permitir várias maneiras diferentes de comParecer as atribuições.</span><span class="sxs-lookup"><span data-stu-id="884b6-108">It exists to allow for multiple different ways to grade assignments.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="c8a7f-109">Propriedades</span><span class="sxs-lookup"><span data-stu-id="c8a7f-109">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="884b6-109">Propriedades</span><span class="sxs-lookup"><span data-stu-id="884b6-109">Properties</span></span>
 
-<span data-ttu-id="c8a7f-110">Nenhum.</span><span class="sxs-lookup"><span data-stu-id="c8a7f-110">None.</span></span>
+<span data-ttu-id="884b6-110">Nenhum</span><span class="sxs-lookup"><span data-stu-id="884b6-110">None.</span></span>
 
 <!-- {
   "blockType": "resource",

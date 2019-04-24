@@ -5,33 +5,33 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 5f48b85c269da4204b985a19701b9d40a50358e6
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31780662"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461203"
 ---
-# <a name="deliveryoptimizationmaxcachesizepercentage-resource-type"></a><span data-ttu-id="aa26d-103">tipo de recurso deliveryOptimizationMaxCacheSizePercentage</span><span class="sxs-lookup"><span data-stu-id="aa26d-103">deliveryOptimizationMaxCacheSizePercentage resource type</span></span>
+# <a name="deliveryoptimizationmaxcachesizepercentage-resource-type"></a><span data-ttu-id="03947-103">tipo de recurso deliveryOptimizationMaxCacheSizePercentage</span><span class="sxs-lookup"><span data-stu-id="03947-103">deliveryOptimizationMaxCacheSizePercentage resource type</span></span>
 
-> <span data-ttu-id="aa26d-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="aa26d-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="03947-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="03947-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="aa26d-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="aa26d-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="03947-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="03947-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="aa26d-106">Tipos de percentual máximo de otimização de entrega.</span><span class="sxs-lookup"><span data-stu-id="aa26d-106">Delivery Optimization Max cache size percentage types.</span></span>
+<span data-ttu-id="03947-106">Tipos de percentual máximo de otimização de entrega.</span><span class="sxs-lookup"><span data-stu-id="03947-106">Delivery Optimization Max cache size percentage types.</span></span>
 
 
-<span data-ttu-id="aa26d-107">Herda de [deliveryOptimizationMaxCacheSize](../resources/intune-deviceconfig-deliveryoptimizationmaxcachesize.md)</span><span class="sxs-lookup"><span data-stu-id="aa26d-107">Inherits from [deliveryOptimizationMaxCacheSize](../resources/intune-deviceconfig-deliveryoptimizationmaxcachesize.md)</span></span>
+<span data-ttu-id="03947-107">Herda de [deliveryOptimizationMaxCacheSize](../resources/intune-deviceconfig-deliveryoptimizationmaxcachesize.md)</span><span class="sxs-lookup"><span data-stu-id="03947-107">Inherits from [deliveryOptimizationMaxCacheSize](../resources/intune-deviceconfig-deliveryoptimizationmaxcachesize.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="aa26d-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="aa26d-108">Properties</span></span>
-|<span data-ttu-id="aa26d-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="aa26d-109">Property</span></span>|<span data-ttu-id="aa26d-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="aa26d-110">Type</span></span>|<span data-ttu-id="aa26d-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="aa26d-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="03947-108">Propriedades</span><span class="sxs-lookup"><span data-stu-id="03947-108">Properties</span></span>
+|<span data-ttu-id="03947-109">Propriedade</span><span class="sxs-lookup"><span data-stu-id="03947-109">Property</span></span>|<span data-ttu-id="03947-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="03947-110">Type</span></span>|<span data-ttu-id="03947-111">Descrição</span><span class="sxs-lookup"><span data-stu-id="03947-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="aa26d-112">maximumCacheSizePercentage</span><span class="sxs-lookup"><span data-stu-id="aa26d-112">maximumCacheSizePercentage</span></span>|<span data-ttu-id="aa26d-113">Int32</span><span class="sxs-lookup"><span data-stu-id="aa26d-113">Int32</span></span>|<span data-ttu-id="aa26d-114">Especifica o tamanho máximo de cache que a otimização de entrega pode utilizar, como um percentual do tamanho do disco (1-100).</span><span class="sxs-lookup"><span data-stu-id="aa26d-114">Specifies the maximum cache size that Delivery Optimization can utilize, as a percentage of disk size (1-100).</span></span> <span data-ttu-id="aa26d-115">Valores válidos de 1 a 100</span><span class="sxs-lookup"><span data-stu-id="aa26d-115">Valid values 1 to 100</span></span>|
+|<span data-ttu-id="03947-112">maximumCacheSizePercentage</span><span class="sxs-lookup"><span data-stu-id="03947-112">maximumCacheSizePercentage</span></span>|<span data-ttu-id="03947-113">Int32</span><span class="sxs-lookup"><span data-stu-id="03947-113">Int32</span></span>|<span data-ttu-id="03947-114">Especifica o tamanho máximo de cache que a otimização de entrega pode utilizar, como um percentual do tamanho do disco (1-100).</span><span class="sxs-lookup"><span data-stu-id="03947-114">Specifies the maximum cache size that Delivery Optimization can utilize, as a percentage of disk size (1-100).</span></span> <span data-ttu-id="03947-115">Valores válidos de 1 a 100</span><span class="sxs-lookup"><span data-stu-id="03947-115">Valid values 1 to 100</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="aa26d-116">Relações</span><span class="sxs-lookup"><span data-stu-id="aa26d-116">Relationships</span></span>
-<span data-ttu-id="aa26d-117">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="aa26d-117">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="03947-116">Relações</span><span class="sxs-lookup"><span data-stu-id="03947-116">Relationships</span></span>
+<span data-ttu-id="03947-117">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="03947-117">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="aa26d-118">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="aa26d-118">JSON Representation</span></span>
-<span data-ttu-id="aa26d-119">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="aa26d-119">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="03947-118">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="03947-118">JSON Representation</span></span>
+<span data-ttu-id="03947-119">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="03947-119">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deliveryOptimizationMaxCacheSizePercentage"
