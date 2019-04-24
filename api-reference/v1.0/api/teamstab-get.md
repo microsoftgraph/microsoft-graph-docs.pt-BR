@@ -1,21 +1,21 @@
 ---
 title: Obter guia
-description: 'Recupere as propriedades e relacionamentos da guia especificado. '
+description: 'Recupere as propriedades e os relacionamentos da guia especificada. '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 1513893907d6448287f2541ffdc4617ab94ef455
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29967015"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32522234"
 ---
 # <a name="get-tab"></a>Obter guia
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-
-Recupere as propriedades e relacionamentos da [guia](../resources/teamstab.md)especificado. 
+Recupere as propriedades e os relacionamentos da [guia](../resources/teamstab.md)especificada. 
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -35,7 +35,7 @@ GET /teams/{id}/channels/{id}/tabs/{id}
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte a $select e $expand [OData parâmetros de consulta](/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte ao $select e $expand [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
@@ -47,12 +47,12 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [tab](../resources/teamstab.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [Tab](../resources/teamstab.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 #### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 ```http
-GET https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs/{id}?$expand=teamsApp
+GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs/{id}?$expand=teamsApp
 ```
 #### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
@@ -90,6 +90,9 @@ Content-length: 401
   "description": "Get a channel tab",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/teamstab-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
 }
 -->

@@ -1,30 +1,30 @@
 ---
-title: Adicionar o aplicativo à equipe
+title: Adicionar aplicativo à equipe
 description: Instala um aplicativo para a equipe especificada.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8332204de2c75235720d7b2652d029e9f145f576
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: b1a241ebb9d39b26e12f59b6f8f08e71220d8021
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27922372"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32521891"
 ---
-# <a name="add-app-to-team"></a>Adicionar o aplicativo à equipe
+# <a name="add-app-to-team"></a>Adicionar aplicativo à equipe
 
 
 
-Instala um [aplicativo](../resources/teamsapp.md) para a [equipe](../resources/team.md)de especificado.
+Instala um [aplicativo](../resources/teamsapp.md) para a [equipe](../resources/team.md)especificada.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Sem suporte. |
+|Aplicativo | Group.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +41,7 @@ POST /teams/{id}/installedApps
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|teamsApp| [teamsApp](../resources/teamsapp.md) |Para adicionar o aplicativo.|
+|teamsApp| [teamsApp](../resources/teamsapp.md) |O aplicativo a ser adicionado.|
 
 
 ## <a name="response"></a>Resposta
@@ -62,7 +62,7 @@ POST /teams/{id}/installedApps
 }
 ```
 #### <a name="response"></a>Resposta
-Este é um exemplo de resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Este é um exemplo de resposta. Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "ignored",
   "truncated": true,
@@ -87,5 +87,5 @@ Content-length: xxx
   "tocPath": ""
 }-->
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Confira também
 

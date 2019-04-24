@@ -5,11 +5,11 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 ms.openlocfilehash: 8f789dab438316f16b9c2607947fa08b7fcefdc2
-ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30366928"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32522017"
 ---
 # <a name="securityactionstate-resource-type"></a>tipo de recurso securityActionState
 
@@ -22,7 +22,7 @@ Representa o histórico das alterações de estado SecurityAction.
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |appId|String|A ID de aplicativo do aplicativo de chamada que enviou uma atualização (PATCH) à ação. O `appId` deve ser extraído do token de autenticação e não inserido manualmente pelo aplicativo de chamada.|
-|status|Cadeia de caracteres| Status do SecurityAction nesta atualização. Os valores possíveis são: `NotStarted`, `Running`, `Completed`, `Failed`.|
+|status|String| Status do SecurityAction nesta atualização. Os valores possíveis são: `NotStarted`, `Running`, `Completed`, `Failed`.|
 |updatedDateTime|DateTimeOffset| Carimbo de data/hora em que ActionState foi atualizado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |user|String|O nome principal de usuário do usuário conectado que enviou uma atualização (PATCH) à ação. O `user` deve ser extraído do token de autenticação e não inserido manualmente pelo aplicativo de chamada.|
 

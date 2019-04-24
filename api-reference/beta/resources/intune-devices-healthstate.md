@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: b6192b7785f751521ebcee676905cf3426ad4145
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31784210"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32522185"
 ---
 # <a name="healthstate-enum-type"></a>tipo de Enumeração HealthState
 
@@ -23,8 +23,8 @@ Indica o estado de integridade do aplicativo de gerenciamento do Windows.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Estado desconhecido.|
-|condições|1|Estado íntegro.|
-|íntegro|duas|Estado não íntegro.|
+|condições|1 |Estado íntegro.|
+|íntegro|2 |Estado não íntegro.|
 
 
 

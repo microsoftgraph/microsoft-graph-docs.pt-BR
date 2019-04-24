@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 3f76918b5a959a6621fb7f5c6480a7a2513afead
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31804309"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32522395"
 ---
 # <a name="deviceprotectionoverview-resource-type"></a>tipo de recurso deviceProtectionOverview
 

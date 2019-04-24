@@ -5,11 +5,11 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 ms.openlocfilehash: 86a5415c20721f717947238838341345ec9a4250
-ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30366935"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32522682"
 ---
 # <a name="keyvaluepair-resource-type"></a>Tipo de recurso keyValuePair
 
@@ -21,8 +21,8 @@ Par de valores de chave para parâmetros de ação.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|name|String|Nome deste par chave-valor|
-|valor|Cadeia de caracteres|Valor deste par chave-valor|
+|nome|String|Nome deste par chave-valor|
+|value|Cadeia de caracteres|Valor deste par chave-valor|
 
 ## <a name="json-representation"></a>Representação JSON
 

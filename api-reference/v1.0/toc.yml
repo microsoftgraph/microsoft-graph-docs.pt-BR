@@ -2228,7 +2228,7 @@ items:
                     href: api/intune-notification-notificationmessagetemplate-list.md
                   - name: Obter
                     href: api/intune-notification-notificationmessagetemplate-get.md
-                  - name: Criar
+                  - name: Create
                     href: api/intune-notification-notificationmessagetemplate-create.md
                   - name: Excluir
                     href: api/intune-notification-notificationmessagetemplate-delete.md
@@ -2247,7 +2247,7 @@ items:
                     href: api/intune-remoteassistance-remoteassistancepartner-list.md
                   - name: Obter
                     href: api/intune-remoteassistance-remoteassistancepartner-get.md
-                  - name: Criar
+                  - name: Create
                     href: api/intune-remoteassistance-remoteassistancepartner-create.md
                   - name: Excluir
                     href: api/intune-remoteassistance-remoteassistancepartner-delete.md
@@ -2282,7 +2282,7 @@ items:
                     href: api/intune-mam-androidmanagedappprotection-list.md
                   - name: Obter
                     href: api/intune-mam-androidmanagedappprotection-get.md
-                  - name: Criar
+                  - name: Create
                     href: api/intune-mam-androidmanagedappprotection-create.md
                   - name: Excluir
                     href: api/intune-mam-androidmanagedappprotection-delete.md
@@ -2308,7 +2308,7 @@ items:
                     href: api/intune-mam-defaultmanagedappprotection-list.md
                   - name: Obter
                     href: api/intune-mam-defaultmanagedappprotection-get.md
-                  - name: Criar
+                  - name: Create
                     href: api/intune-mam-defaultmanagedappprotection-create.md
                   - name: Excluir
                     href: api/intune-mam-defaultmanagedappprotection-delete.md
@@ -2321,7 +2321,7 @@ items:
                     href: api/intune-mam-iosmanagedappprotection-list.md
                   - name: Obter
                     href: api/intune-mam-iosmanagedappprotection-get.md
-                  - name: Criar
+                  - name: Create
                     href: api/intune-mam-iosmanagedappprotection-create.md
                   - name: Excluir
                     href: api/intune-mam-iosmanagedappprotection-delete.md
@@ -2372,7 +2372,7 @@ items:
                     href: api/intune-mam-managedappoperation-list.md
                   - name: Obter
                     href: api/intune-mam-managedappoperation-get.md
-                  - name: Criar
+                  - name: Create
                     href: api/intune-mam-managedappoperation-create.md
                   - name: Excluir
                     href: api/intune-mam-managedappoperation-delete.md
@@ -2405,7 +2405,7 @@ items:
                     href: api/intune-mam-managedappprotection-list.md
                   - name: Obter
                     href: api/intune-mam-managedappprotection-get.md
-                  - name: ação targetApps
+                  - name: Ação targetApps
                     href: api/intune-mam-managedappprotection-targetapps.md
               - name: Registro de aplicativo gerenciado
                 href: resources/intune-mam-managedappregistration.md
@@ -3363,7 +3363,7 @@ items:
             items:
               - name: Listar blocos de anotações
                 href: api/onenote-list-notebooks.md
-              - name: Criar bloco de anotações
+              - name: Criar blocos de anotações
                 href: api/onenote-post-notebooks.md
               - name: Listar seções
                 href: api/onenote-list-sections.md

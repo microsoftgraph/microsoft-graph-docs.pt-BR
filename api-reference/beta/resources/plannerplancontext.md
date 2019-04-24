@@ -1,31 +1,31 @@
 ---
-title: tipo de recurso de plannerPlanContext
-description: O recurso de **plannerPlanContext** representa a relação entre um plannerPlan a uma experiência de usuário fora do planejador. Planos no planejador podem ser exibidos em outras experiências, como Teams da Microsoft, para controlar o trabalho no contexto dessa experiência.
+title: tipo de recurso plannerPlanContext
+description: O recurso **plannerPlanContext** representa a relação de um plannerPlan com uma experiência de usuário fora do Planner. Os planos no Planner podem ser reproduzidos em outras experiências, como o Microsoft Teams, para controlar o trabalho no contexto da experiência.
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 76260b51bc6f77acf6fac22e80bd676edd8b8e11
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509235"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32522155"
 ---
-# <a name="plannerplancontext-resource-type"></a>tipo de recurso de plannerPlanContext
+# <a name="plannerplancontext-resource-type"></a>tipo de recurso plannerPlanContext
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O recurso de **plannerPlanContext** representa a relação entre um [plannerPlan](plannerplan.md) a uma experiência de usuário fora do planejador. Planos no planejador podem ser exibidos em outras experiências, como Teams da Microsoft, para controlar o trabalho no contexto dessa experiência.
-A experiência que a entrada **plannerPlanContext** reresents pode ser identificada com base na propriedade **ownerAppId** :
- - 5e3ce6c0-2b1f-4285-8d4b-75ee78787346: A entrada do contexto pertence à Microsoft Teams.
- - 00000003-0000-0ff1-CE00-000000000000: pertence a entrada do contexto do SharePoint.
+O recurso **plannerPlanContext** representa a relação de um [plannerPlan](plannerplan.md) com uma experiência de usuário fora do Planner. Os planos no Planner podem ser reproduzidos em outras experiências, como o Microsoft Teams, para controlar o trabalho no contexto da experiência.
+A experiência que a entrada **plannerPlanContext** reenviado pode ser identificada com base na propriedade **ownerAppId** :
+ - 5e3ce6c0-2b1f-4285-8d4b-75ee78787346: a entrada de contexto pertence ao Microsoft Teams.
+ - 00000003-0000-0ff1-ce00-000000000000: a entrada de contexto pertence ao SharePoint.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|associationType|String|Anulável. Um tipo definido pelo aplicativo de associação entre o [plannerPlan](plannerplan.md) e o aplicativo. O aplicativo pode usar essas informações para rastrear diferentes tipos de relacionamentos para o mesmo [plannerPlan](plannerplan.md).|
+|Association|String|Anulável. Um tipo de associação definido pelo aplicativo entre o [plannerPlan](plannerplan.md) e o aplicativo. O aplicativo pode usar essas informações para rastrear diferentes tipos de relações com o mesmo [plannerPlan](plannerplan.md).|
 |createdDateTime|DateTimeOffset|Somente leitura. A data e hora em que o **plannerPlanContext** foi criado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
-|displayNameSegments|String collection|Os segmentos do nome da experiência do externo. Segmentos representam uma estrutura hierárquica que permite a outros aplicativos exibir o relacionamento.|
+|displayNameSegments|String collection|Os segmentos do nome da experiência externa. Segmentos representam uma estrutura hierárquica que permite que outros aplicativos exibam a relação.|
 |ownerAppId|String|Somente leitura. ID do aplicativo que criou o **plannerPlanContext**.|
 
 ## <a name="json-representation"></a>Representação JSON

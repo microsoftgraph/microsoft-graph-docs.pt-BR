@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: Thumbnail
 localization_priority: Normal
 ms.openlocfilehash: d11f9eead6faf885bee579c634267e038f8a8ee4
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482256"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32522220"
 ---
 # <a name="thumbnail-resource-type"></a>Tipo de recurso thumbnail
 

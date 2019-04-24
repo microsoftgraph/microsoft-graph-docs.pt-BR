@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 9716ebecf10cee31f543224249e9bacba7f458bd
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31778569"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32516557"
 ---
 # <a name="delete-windows10mobilecompliancepolicy"></a>Excluir windows10MobileCompliancePolicy
 

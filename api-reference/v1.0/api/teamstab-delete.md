@@ -1,21 +1,21 @@
 ---
-title: Excluir o guia de canal
-description: 'Remove (unpin) uma guia de canal especificado dentro de uma equipe. '
+title: Excluir Guia do canal
+description: 'Remove (desafixa) uma guia do canal especificado de uma equipe. '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: a5cb2334c250c63d0644c8fab3f97d35c481a515
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29967302"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32521772"
 ---
-# <a name="delete-tab-from-channel"></a>Excluir o guia de canal
+# <a name="delete-tab-from-channel"></a>Excluir Guia do canal
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-
-Remove (unpin) uma guia de [canal](../resources/channel.md) especificado dentro de uma [equipe](../resources/team.md). 
+Remove (desafixa) uma guia do [canal](../resources/channel.md) especificado de uma [equipe](../resources/team.md). 
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -26,7 +26,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Group.ReadWrite.All |
 
-> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais e os administradores do serviço do Microsoft Teams podem acessar equipes das quais eles não são membros.
+> **Observação**: esta API oferece suporte a permissões de administrador. Os administradores globais e os administradores do serviço do Microsoft Teams podem acessar equipes das quais eles não são membros.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -54,7 +54,7 @@ Este é um exemplo de solicitação.
   "name": "get_team"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs/{id}
+DELETE https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs/{id}
 ```
 #### <a name="response"></a>Resposta
 Este é um exemplo de resposta. Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
@@ -70,6 +70,9 @@ HTTP/1.1 204 No Content
   "description": "Delete tab from channel",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/teamstab-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
 }
 -->

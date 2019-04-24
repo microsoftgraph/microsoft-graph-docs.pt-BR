@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 0d7e91d632860e47275cda158acf4d816c64e835
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31804554"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32522115"
 ---
 # <a name="manageddevicecleanupsettings-resource-type"></a>tipo de recurso managedDeviceCleanupSettings
 
@@ -22,7 +22,7 @@ Defina a regra quando o administrador quiser que os dispositivos sejam limpos.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|deviceInactivityBeforeRetirementInDays|Cadeia de caracteres|Número de dias em que o dispositivo não entrou no Intune.|
+|deviceInactivityBeforeRetirementInDays|String|Número de dias em que o dispositivo não entrou no Intune.|
 
 ## <a name="relationships"></a>Relações
 Nenhuma

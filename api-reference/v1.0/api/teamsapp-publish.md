@@ -1,27 +1,27 @@
 ---
 title: Permissões
-description: 'Publica um aplicativo para o catálogo de aplicativos do Microsoft Teams. '
+description: 'Publicar um aplicativo no catálogo de aplicativos do Microsoft Teams. '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 0c8093092a6a5dfc6d8c97df372832f15cc8eb20
-ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28016741"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32521758"
 ---
-# <a name="publish-apps-to-your-organizations-app-catalog"></a>Publicar aplicativos ao catálogo de aplicativos da sua organização
+# <a name="publish-apps-to-your-organizations-app-catalog"></a>Publicar aplicativos no catálogo de aplicativos da sua organização
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-
-Publica um [aplicativo](../resources/teamsapp.md) para o catálogo de aplicativos do Microsoft Teams. Especificamente, essa API publica o aplicativo catálogo da sua organização (o catálogo de aplicativos do inquilino); o recurso criado terá `distributionMethod`  =  `organization`.
+Publicar um [aplicativo](../resources/teamsapp.md) no catálogo de aplicativos do Microsoft Teams. Especificamente, essa API publica o aplicativo no catálogo da sua organização (o catálogo de aplicativos do locatário); o recurso `distributionMethod`  =  `organization`criado terá.
 
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).
 
->**Observação:** Somente os administradores globais podem chamar essa API. 
+>**Observação:** Somente os administradores globais podem chamar esta API. 
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)|
 |:----------------------------------     |:-------------|
@@ -44,25 +44,25 @@ POST /appCatalogs/teamsApps
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-Carga de manifesto de Zip equipes. Para o aplicativo de equipes zip arquivo, [consulte Criar um pacote de aplicativos](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package). Não é possível criar um aplicativo para uma organização que tem a mesma ID de manifesto do aplicativo outra organização em questão.
+Carga do manifesto zip do teams. Para o arquivo zip do aplicativo do Teams, [consulte criar um pacote de aplicativos](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package). Você não pode criar um aplicativo para uma organização que tenha a mesma ID de manifesto que outro aplicativo da organização.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [teamsCatalogApp](../resources/teamsapp.md) .
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [teamsCatalogApp](../resources/teamsapp.md) .
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 
 ```http
-POST https://graph.microsoft.com/v1.0/appCatalogs/teamsApps
+POST https://graph.microsoft.com/beta/appCatalogs/teamsApps
 Content-type: application/zip
 Content-length: 244
 
 [Zip file containing a Teams app package]
 ```
 
-Para obter informações sobre como criar um arquivo do Microsoft Teams aplicativo zip, consulte [criar um pacote de aplicativos](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package). 
+Para obter informações sobre como criar um arquivo zip do aplicativo do Microsoft Teams, consulte [criar um pacote de aplicativos](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package). 
 
 ### <a name="response"></a>Resposta
 
@@ -78,3 +78,11 @@ Content-Type: application/json
   "distributionMethod": "organization"
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/teamsapp-publish.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

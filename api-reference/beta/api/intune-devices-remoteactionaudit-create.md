@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 820f6acd0d5959eb0c75e2bc0a272ca3ec3e5cf8
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31788461"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32522577"
 ---
 # <a name="create-remoteactionaudit"></a>Criar remoteActionAudit
 
@@ -52,12 +52,12 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar remoteAc
 |:---|:---|:---|
 |id|String|ID de relatório.|
 |deviceDisplayName|Cadeia de caracteres|Nome do dispositivo do Intune.|
-|userName|Cadeia de caracteres|\[\] preterido use InitiatedByUserPrincipalName em vez disso.|
-|initiatedByUserPrincipalName|Cadeia de caracteres|O formato de usuário que iniciou a ação do dispositivo é UPN.|
-|action|[remoteaction](../resources/intune-devices-remoteaction.md)|O nome da ação. Os valores possíveis são `unknown`: `factoryReset`, `removeCompanyData`, `resetPasscode`, `remoteLock`, `enableLostMode`, `disableLostMode`, `locateDevice`, `rebootNow`, `recoverPasscode` `cleanWindowsDevice` `logoutSharedAppleDeviceActiveUser`,,, `quickScan`, `fullScan`, `windowsDefenderUpdateSignatures`, `factoryResetKeepEnrollmentData`, `updateDeviceAccount`, `automaticRedeployment`, `shutDown` ,,,,,,,, .|
+|userName|String|\[\] preterido use InitiatedByUserPrincipalName em vez disso.|
+|initiatedByUserPrincipalName|String|O formato de usuário que iniciou a ação do dispositivo é UPN.|
+|ação|[remoteaction](../resources/intune-devices-remoteaction.md)|O nome da ação. Os valores possíveis são `unknown`: `factoryReset`, `removeCompanyData`, `resetPasscode`, `remoteLock`, `enableLostMode`, `disableLostMode`, `locateDevice`, `rebootNow`, `recoverPasscode` `cleanWindowsDevice` `logoutSharedAppleDeviceActiveUser`,,, `quickScan`, `fullScan`, `windowsDefenderUpdateSignatures`, `factoryResetKeepEnrollmentData`, `updateDeviceAccount`, `automaticRedeployment`, `shutDown` ,,,,,,,, .|
 |requestDateTime|DateTimeOffset|Hora em que a ação foi emitida, dada em UTC.|
-|deviceOwnerUserPrincipalName|Cadeia de caracteres|UPN do proprietário do dispositivo.|
-|deviceIMEI|Cadeia de caracteres|IMEI do dispositivo.|
+|deviceOwnerUserPrincipalName|String|UPN do proprietário do dispositivo.|
+|deviceIMEI|String|IMEI do dispositivo.|
 |actionState|[actionState](../resources/intune-shared-actionstate.md)|Estado de ação. Os valores possíveis são: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 
 

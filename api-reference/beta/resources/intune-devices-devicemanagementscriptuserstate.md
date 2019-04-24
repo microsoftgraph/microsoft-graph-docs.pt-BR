@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: f2476329a402e0d6a50594ab110e88da4b5f5ac1
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31792290"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32522402"
 ---
 # <a name="devicemanagementscriptuserstate-resource-type"></a>tipo de recurso deviceManagementScriptUserState
 
@@ -31,7 +31,7 @@ Contém propriedades para o estado de execução do usuário do script de gerenc
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade de estado do usuário de script de gerenciamento de dispositivos.|
+|id|Cadeia de caracteres|Chave da entidade de estado do usuário de script de gerenciamento de dispositivos.|
 |successDeviceCount|Int32|Contagem de dispositivos com êxito para um usuário específico.|
 |errorDeviceCount|Int32|Contagem de dispositivos de erro para usuário específico.|
 |userPrincipalName|String|Nome principal do usuário do usuário específico.|

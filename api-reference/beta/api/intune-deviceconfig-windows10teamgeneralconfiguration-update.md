@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: b0509474b2f830a9430517c7d5a6a06089c77528
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31777022"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32515551"
 ---
 # <a name="update-windows10teamgeneralconfiguration"></a>Atualizar windows10TeamGeneralConfiguration
 
@@ -54,14 +54,14 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |:---|:---|:---|
 |id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |supportsScopeTags|Booliano|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |versão|Int32|Versão da configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |azureOperationalInsightsBlockTelemetry|Booliano|Indica se os Insights Operacionais do Azure devem ou não ser bloqueados.|
-|azureOperationalInsightsWorkspaceId|Cadeia de caracteres|A ID do espaço de trabalho dos Insights Operacionais do Azure.|
+|azureOperationalInsightsWorkspaceId|String|A ID do espaço de trabalho dos Insights Operacionais do Azure.|
 |azureOperationalInsightsWorkspaceKey|Cadeia de caracteres|A chave do espaço de trabalho dos Insights Operacionais do Azure.|
 |connectAppBlockAutoLaunch|Booliano|Especifica se o aplicativo Connect deverá ser iniciado automaticamente sempre que uma projeção for iniciada.|
 |maintenanceWindowBlocked|Booliano|Indica se a configuração de uma janela de manutenção para atualizações do dispositivo deverá ou não ser bloqueada.|
@@ -72,7 +72,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [windows
 |miracastRequirePin|Booliano|Indica se será exigido um pin para a projeção sem fio.|
 |settingsBlockMyMeetingsAndFiles|Booliano|Especifica se o recurso "Meus arquivos e reuniões" no menu Iniciar, que mostra as reuniões e arquivos do usuário conectado do Office 365, deverá ser desativado.|
 |settingsBlockSessionResume|Booliano|Especifica se a capacidade de retomar uma sessão quando a sessão expirar será permitida.|
-|settingsBlockSigninSuggestions|Boolean|Especifica se o preenchimento automático da caixa de diálogo de entrada com os convidados de reuniões agendadas será desativado.|
+|settingsBlockSigninSuggestions|Booliano|Especifica se o preenchimento automático da caixa de diálogo de entrada com os convidados de reuniões agendadas será desativado.|
 |settingsDefaultVolume|Int32|Especifica o valor padrão de volume de uma nova sessão. Os valores permitidos ficam entre 0 e 100. O padrão é 45. Valores válidos de 0 a 100|
 |settingsScreenTimeoutInMinutes|Int32|Especifica o número de minutos até a tela do Hub ser desligada.|
 |settingsSessionTimeoutInMinutes|Int32|Especifica o número de minutos até a sessão atingir o tempo limite.|

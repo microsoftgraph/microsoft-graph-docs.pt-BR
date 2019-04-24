@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: c252ece92661c2b57c8d8c7ea6c1b714a9bb9594
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31797554"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32516564"
 ---
 # <a name="create-windows10mobilecompliancepolicy"></a>Criar windows10MobileCompliancePolicy
 
@@ -50,12 +50,12 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar windows10MobileC
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |id|String|Chave da entidade. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
-|displayName|Cadeia de caracteres|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
+|displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |version|Int32|Versão da configuração do dispositivo. Herdada de [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md)|
 |passwordRequired|Booliano|Exige uma senha para desbloquear o dispositivo Windows Phone.|
 |passwordBlockSimple|Booliano|Se a sincronização do calendário deve ou não ser bloqueada.|
@@ -66,7 +66,7 @@ A tabela a seguir mostra as propriedades obrigatórias ao criar windows10MobileC
 |passwordExpirationDays|Int32|Número de dias antes da expiração da senha. Valores válidos de 1 a 255|
 |passwordMinutesOfInactivityBeforeLock|Int32|Minutos de inatividade antes que uma senha seja necessária.|
 |passwordRequireToUnlockFromIdle|Booliano|Exige uma senha para desbloquear o dispositivo ocioso.|
-|osMinimumVersion|Cadeia de caracteres|Versão mínima do Windows Phone.|
+|osMinimumVersion|String|Versão mínima do Windows Phone.|
 |osMaximumVersion|String|Versão máxima do Windows Phone.|
 |earlyLaunchAntiMalwareDriverEnabled|Booliano|Exige que os dispositivos sejam indicados como íntegros pelo Atestado de Integridade do Dispositivo Windows - driver antimalware de inicialização antecipada habilitado.|
 |bitLockerEnabled|Booliano|Exige que os dispositivos sejam indicados como íntegros pelo Atestado de Integridade do Dispositivo Windows - bit locker desabilitado|

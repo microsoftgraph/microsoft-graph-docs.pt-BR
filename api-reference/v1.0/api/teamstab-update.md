@@ -4,15 +4,16 @@ description: Atualiza as propriedades da guia especificada.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1a864e6d31caa07eaa9f30bfddc22b40659a277b
-ms.sourcegitcommit: 0a673c6f4ad7aed12fb0e69608c0f73957bae10e
+ms.openlocfilehash: ed1138d5dbb1aec1cd3e14839b5fffaef4ee5f8f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "31824392"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32521835"
 ---
 # <a name="update-tab"></a>Atualizar guia
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Atualiza as propriedades da [guia](../resources/teamstab.md)especificada. Isso pode ser usado para configurar o conteúdo da guia.
 
@@ -50,7 +51,7 @@ Se tiver êxito, este método retornará um código de resposta `200 OK`.
 #### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 ```http
-PATCH https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs/{id}
+PATCH https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs/{id}
 Content-type: application/json
 Content-length: 211
 
@@ -90,6 +91,9 @@ Content-type: application/json
   "description": "Update tab in channel",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/teamstab-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
 }
 -->

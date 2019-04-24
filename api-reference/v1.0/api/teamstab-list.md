@@ -1,27 +1,28 @@
 ---
-title: Guias de lista no canal
-description: 'Recupere a lista das guias no canal especificado dentro de uma equipe. '
+title: Listar guias no canal
+description: 'Recupere a lista de guias no canal especificado dentro de uma equipe. '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: cb4a90109c58fb30f268bead15a90178d7317a71
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29967176"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32521744"
 ---
-# <a name="list-tabs-in-channel"></a>Guias de lista no canal
+# <a name="list-tabs-in-channel"></a>Listar guias no canal
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere a lista das [guias](../resources/teamstab.md) no [canal](../resources/channel.md) especificado dentro de uma [equipe](../resources/team.md). 
+Recupere a lista de [guias](../resources/teamstab.md) no [canal](../resources/channel.md) especificado dentro de uma [equipe](../resources/team.md). 
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All, Group.Read.All    |
+|Delegado (conta corporativa ou de estudante) | Group. ReadWrite. All, Group. Read. All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 | Aplicativo                            | Group.Read.All, Group.ReadWrite.All         |
 
@@ -46,13 +47,13 @@ Este método dá suporte aos [Parâmetros de consulta OData](/graph/query-parame
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e a coleção de objetos de [guias](../resources/teamstab.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [Tabs](../resources/teamstab.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 #### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 ```http
-GET https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs?$expand=teamsApp
+GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs?$expand=teamsApp
 ```
 
 #### <a name="response"></a>Resposta
@@ -104,6 +105,9 @@ Content-type: application/json
   "description": "List all tabs in channel",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/teamstab-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
 }
 -->

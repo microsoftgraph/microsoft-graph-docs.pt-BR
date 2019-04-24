@@ -1,26 +1,26 @@
 ---
-title: tipo de recurso de skypeForBusinessActivityUserCounts
+title: tipo de recurso skypeForBusinessActivityUserCounts
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 ms.openlocfilehash: e98133611d669a2a85bae65195fe70571d290442
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815481"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32521975"
 ---
-# <a name="skypeforbusinessactivityusercounts-resource-type"></a>tipo de recurso de skypeForBusinessActivityUserCounts
+# <a name="skypeforbusinessactivityusercounts-resource-type"></a>tipo de recurso skypeForBusinessActivityUserCounts
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade          | Tipo   |
 | :---------------- | :----- |
 | peerToPeer        | Int64  |
-| organizada         | Int64  |
-| participou      | Int64  |
+| organiza         | Int64  |
+| participaram      | Int64  |
 | reportRefreshDate | Data   |
 | reportDate        | Data   |
-| reportPeriod      | Cadeia de caracteres |
+| reportPeriod      | String |
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 0297eb08e3a44ab1d0746a99ddf89a2b0cb197e1
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31806997"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32515754"
 ---
 # <a name="create-windows10pkcscertificateprofile"></a>Criar windows10PkcsCertificateProfile
 
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows1
 |:---|:---|:---|
 |id|String|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta instância de entidade. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |supportsScopeTags|Booliano|Indica se a configuração de dispositivo subjacente é ou não compatível com a atribuição de marcas de escopo. A atribuição à propriedade ScopeTags não é permitida quando esse valor é false e as entidades não serão visíveis aos usuários com escopo. Isso ocorre para políticas herdadas criadas no Silverlight e pode ser resolvido excluindo e recriando a política no portal do Azure. Essa propriedade é somente leitura. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
@@ -65,10 +65,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar windows1
 |subjectAlternativeNameType|[subjectAlternativeNameType](../resources/intune-deviceconfig-subjectalternativenametype.md)|Tipo de nome alternativo de entidade do certificado herdado de [windowsCertificateProfileBase](../resources/intune-deviceconfig-windowscertificateprofilebase.md). Os valores possíveis são: `none`, `emailAddress`, `userPrincipalName`, `customAzureADAttribute`, `domainNameService`.|
 |certificateValidityPeriodValue|Int32|Valor para o período de validade do certificado herdado de [windowsCertificateProfileBase](../resources/intune-deviceconfig-windowscertificateprofilebase.md)|
 |certificateValidityPeriodScale|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|Dimensionar o período de validade do certificado herdado de [windowsCertificateProfileBase](../resources/intune-deviceconfig-windowscertificateprofilebase.md). Os valores possíveis são: `days`, `months`, `years`.|
-|certificationAuthority|Cadeia de caracteres|Autoridade de certificação PKCS|
-|certificationAuthorityName|Cadeia de caracteres|Nome da autoridade de certificação PKCS|
-|certificateTemplateName|Cadeia de caracteres|Nome do modelo de certificado PKCS|
-|Subjectalternativenameformatstring foi|Cadeia de caracteres|Cadeia de caracteres personalizada que define o atributo AAD.|
+|certificationAuthority|String|Autoridade de certificação PKCS|
+|certificationAuthorityName|String|Nome da autoridade de certificação PKCS|
+|certificateTemplateName|String|Nome do modelo de certificado PKCS|
+|Subjectalternativenameformatstring foi|String|Cadeia de caracteres personalizada que define o atributo AAD.|
 |extendedKeyUsages|coleção [extendedKeyUsage](../resources/intune-deviceconfig-extendedkeyusage.md)|Configurações de EKU (uso estendido de chave). Esta coleção pode conter um máximo de 500 elementos.|
 
 
