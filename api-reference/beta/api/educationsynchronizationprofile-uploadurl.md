@@ -1,25 +1,25 @@
 ---
 title: 'educationSynchronizationProfile: uploadUrl'
-description: Recupere uma assinatura de acesso compartilhado (SAS) para o carregamento de arquivos de origem para o armazenamento de blob Azure para um perfil de sincronização de dados específicos escola no inquilino. O token SAS tem uma validade de uma hora.
+description: Recupere uma assinatura de acesso compartilhado (SAS) para carregar arquivos de origem para o armazenamento de blob do Azure para um perfil de sincronização de dados escolar específico no locatário. O token SAS tem uma validade de uma hora.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 74f37f5653147691c408cf83e3039920957352c7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511594"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464695"
 ---
 # <a name="educationsynchronizationprofile-uploadurl"></a>educationSynchronizationProfile: uploadUrl
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma assinatura de acesso compartilhado (SAS) para carregar arquivos de origem para o armazenamento de blob Azure para um de dados específicos escola [perfil de sincronização](../resources/educationsynchronizationprofile.md) no inquilino. O token SAS tem uma validade de uma hora.
+Recupere uma assinatura de acesso compartilhado (SAS) para carregar arquivos de origem para o armazenamento de blob do Azure para um [perfil de sincronização](../resources/educationsynchronizationprofile.md) de dados escolar específico no locatário. O token SAS tem uma validade de uma hora.
 
-O carregamento URL é fornecido apenas para o [provedor de dados CSV](../resources/educationcsvdataprovider.md).
+A URL de upload é fornecida somente para o [provedor de dados CSV](../resources/educationcsvdataprovider.md).
 
-> **Observação:** Para acessar o armazenamento de blob com o token SAS, use o [armazenamento do Azure SDKs](https://github.com/search?q=org%3AAzure+azure-storage) ou [AzCopy](https://docs.microsoft.com/en-us/azure/storage/storage-use-azcopy).
+> **Observação:** Para acessar o armazenamento de blob com o token SAS, use os [SDKs de armazenamento do Azure](https://github.com/search?q=org%3AAzure+azure-storage) ou o [AzCopy](https://docs.microsoft.com/en-us/azure/storage/storage-use-azcopy).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Tipo de permissão | Permissões |
 |:-----------|:----------|
 | Delegado (conta corporativa ou de estudante) | EduAdministration.ReadWrite |
-|Delegado (conta pessoal da Microsoft)|Sem suporte.|
+|Delegado (conta pessoal da Microsoft|Sem suporte.|
 |Aplicativo|Sem suporte.|
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -44,9 +44,9 @@ GET /synchronizationProfiles/{id}/uploadUrl
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma URL de SAS para o [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e uma URL SAS para o [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) no corpo da resposta.
 
-Se uma solicitação anterior ainda está sendo processada, esse método retorna um `409 Conflict` indicando que o carregamento momento seja bloqueado para o [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md).
+Se uma solicitação anterior ainda estiver sendo processada, este método retornará `409 Conflict` um indicando que o carregamento está bloqueado atualmente para o [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md).
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação

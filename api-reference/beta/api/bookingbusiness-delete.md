@@ -1,27 +1,27 @@
 ---
 title: Excluir bookingBusiness
-description: Exclua um objeto bookingBusiness.
+description: Excluir um objeto bookingBusiness.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: 88f07b46231a942098a157f00097393d60253982
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511895"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462404"
 ---
 # <a name="delete-bookingbusiness"></a>Excluir bookingBusiness
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exclua um objeto [bookingBusiness](../resources/bookingbusiness.md) .
+Excluir um objeto [bookingBusiness](../resources/bookingbusiness.md) .
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  Bookings.Manage.All   |
+|Delegado (conta corporativa ou de estudante) |  Bookings. Manage. All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.   |
 |Aplicativo | Sem suporte.  |
 
@@ -34,7 +34,7 @@ DELETE /bookingBusinesses/<id>
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
-| Autorização  | Portador {código}|
+| Authorization  | Portador {código}|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

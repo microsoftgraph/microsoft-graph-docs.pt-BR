@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: cf092595f558d3aa1529023029ce84c6f2a4cb87
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524006"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463954"
 ---
 # <a name="list-attachments"></a>Listar anexos
 
@@ -44,7 +44,7 @@ GET /groups/{id}/events/{id}/attachments
 
 Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
 
-Em particular, você pode usar o `$expand` consulta parâmetro para incluir todos os o embutido de anexos de evento com o restante das propriedades do evento. Por exemplo:
+Em particular, você pode usar o `$expand` parâmetro de consulta para incluir todos os anexos de evento embutidos com o restante das propriedades do evento. Por exemplo:
 
 ```http
 GET https://graph.microsoft.com/beta/me/events/{id}?$expand=attachments
@@ -62,7 +62,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [Attachment](../resources/attachment.md) no corpo da resposta.
+Se bem sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [Attachment](../resources/attachment.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

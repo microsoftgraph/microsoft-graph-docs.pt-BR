@@ -1,28 +1,28 @@
 ---
-title: Lista de atribuições
-description: Recupere uma lista de objetos assignment. Um professor é permitido para ver todos os objetos de atribuição para a classe. Alunos só podem ver atribuições que são atribuídas a eles.
+title: Listar tarefas
+description: Recupere uma lista de objetos assignment. Um professor tem permissão para ver todos os objetos Assignment da classe. Os alunos só podem ver as atribuições atribuídas a eles.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 7cd47c61d4958d42ce099396147d421a6555041b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519140"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457869"
 ---
-# <a name="list-assignments"></a>Lista de atribuições
+# <a name="list-assignments"></a>Listar tarefas
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de objetos assignment. Um professor é permitido para ver todos os objetos de atribuição para a classe. Alunos só podem ver atribuições que são atribuídas a eles.
+Recupere uma lista de objetos assignment. Um professor tem permissão para ver todos os objetos Assignment da classe. Os alunos só podem ver as atribuições atribuídas a eles.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite   |
+|Delegado (conta corporativa ou de estudante) | EduAssignments. ReadBasic, EduAssignments. ReadWriteBasic, EduAssignments. Read, EduAssignments. ReadWrite   |
 |Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
 |Aplicativo | Sem suporte. | 
 
@@ -42,7 +42,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [educationAssignment](../resources/educationassignment.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [educationAssignment](../resources/educationassignment.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.

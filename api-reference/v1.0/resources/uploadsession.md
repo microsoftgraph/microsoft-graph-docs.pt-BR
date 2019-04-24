@@ -5,13 +5,15 @@ ms.date: 09/10/2017
 title: UploadSession
 localization_priority: Normal
 ms.openlocfilehash: 3e97a6396f39db690be8a1cfe235bb21592da4e0
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481549"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456921"
 ---
 # <a name="uploadsession-resource"></a>Recurso UploadSession
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 O recurso **UploadSession** fornece informações sobre como carregar arquivos grandes no OneDrive, no OneDrive for Business ou em bibliotecas de documentos do SharePoint.
 
@@ -44,13 +46,18 @@ Veja a seguir uma representação JSON do recurso
 
 ## <a name="see-also"></a>Confira também
 
-- [Carregar arquivos grandes em uma sessão de carregamento](../api/driveitem-createuploadsession.md)
+- [Carregar arquivos grandes com uma sessão de upload](../api/driveitem-createuploadsession.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "UploadSession is used to provide information about large file uploads.",
   "section": "documentation",
-  "tocPath": "Resources/UploadSession"
-} -->
+  "tocPath": "Resources/UploadSession",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/uploadsession.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

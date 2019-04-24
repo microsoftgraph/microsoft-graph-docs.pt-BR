@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: 54ff3632680d0819c33a6594a2a3c3b9e882fd98
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365364"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32458597"
 ---
 # <a name="delete-currencies"></a>Excluir moedas
 Excluir um objeto Currency do Dynamics 365 Business central.

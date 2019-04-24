@@ -1,28 +1,28 @@
 ---
-title: Lista reservas calendarView
-description: Obtenha a coleção de objetos bookingAppointment para um bookingBusiness, o que ocorre no intervalo de datas especificado.
+title: Listar o calendarView do Bookings
+description: Obter a coleção de objetos bookingAppointment para um bookingBusiness, que ocorre no intervalo de datas especificado.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: 39b96e089d035ffd21155064252e36fd07a0a6c5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526071"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461774"
 ---
-# <a name="list-bookings-calendarview"></a>Lista reservas calendarView
+# <a name="list-bookings-calendarview"></a>Listar o calendarView do Bookings
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha a coleção de objetos [bookingAppointment](../resources/bookingappointment.md) para um [bookingBusiness](../resources/bookingbusiness.md), que ocorre no intervalo de datas especificado.
+Obter a coleção de objetos [bookingAppointment](../resources/bookingappointment.md) para um [bookingBusiness](../resources/bookingbusiness.md), que ocorre no intervalo de datas especificado.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
+|Delegado (conta corporativa ou de estudante) |  Bookings. Read. All, BookingsAppointment. ReadWrite. All, bookings. ReadWrite. All, bookings. Manage. All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.   |
 |Aplicativo | Sem suporte.  |
 
@@ -35,21 +35,21 @@ GET /bookingBusinesses/{id}/calendarView?start={start-value}&end={end-value}
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
-| Autorização  | Portador {código}|
+| Authorization  | Portador {código}|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça os seguintes parâmetros de consulta com valores na URL solicitada.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|start|DateTimeOffset|A data de início e a hora de um intervalo de tempo, representados no formato ISO 8601, como UTC ou deslocamento do UTC. Por exemplo, meia-noite UTC em 1 de Jan de 2018, ficaria assim: ' 2018-01-01T00:00:00Z', e o mesmo tempo no PST ficaria assim: ' 2017-12-31T16:00:00-08:00 '.|
-|end|DateTimeOffset|A data de término e a hora de um intervalo de tempo, representados no formato ISO 8601, como UTC ou deslocamento do UTC. Por exemplo, 3 am UTC em 1 de Jan de 2018, ficaria assim: ' 2018-01-01T03:00:00Z', e o mesmo tempo no PST ficaria assim: ' 2017-12-31T19:00:00-08:00 '.|
+|iniciar|DateTimeOffset|A data e a hora de início de um intervalo de tempo, representadas no formato ISO 8601, como UTC ou offset do UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2018 teria a seguinte aparência: ' 2018-01-01T00:00:00Z ' e o mesmo tempo em PST teria a seguinte aparência: ' 2017-12-31T16:00:00-08:00 '.|
+|end|DateTimeOffset|A data e a hora de término de um intervalo de tempo, representadas no formato ISO 8601, como UTC ou offset do UTC. Por exemplo, 3am UTC em 1º de janeiro de 2018 teria a seguinte aparência: ' 2018-01-01T03:00: o 00Z ' e o mesmo momento em PST teria a seguinte aparência: ' 2017-12-31T19:00:00-08:00 '.|
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200, OK` objeto de coleção [bookingAppointment](../resources/bookingappointment.md) e código de resposta no corpo da resposta.
+Se bem-sucedido, este método retorna `200, OK` o código de resposta e o objeto da coleção [bookingAppointment](../resources/bookingappointment.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-Este é um exemplo de como chamar esta API.
+Veja a seguir um exemplo de como chamar essa API.
 ##### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 <!-- {
@@ -61,7 +61,7 @@ GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365
 ```
 
 ##### <a name="response"></a>Resposta
-Este é um exemplo de resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Este é um exemplo de resposta. Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

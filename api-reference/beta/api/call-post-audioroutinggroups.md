@@ -1,21 +1,21 @@
 ---
-title: Criar um grupo de roteamento de áudio
-description: Crie um novo **audioRoutingGroup**.
+title: Criar grupo de roteamento de áudio
+description: Criar um novo **audioRoutingGroup**.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: dc0e2a3463229762b3a641f33f77f2df8d506aa0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522858"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461217"
 ---
-# <a name="create-audio-routing-group"></a>Criar um grupo de roteamento de áudio
+# <a name="create-audio-routing-group"></a>Criar grupo de roteamento de áudio
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um novo **audioRoutingGroup**.
+Criar um novo **audioRoutingGroup**.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:---------------------------------------|:--------------------------------------------|
 | Delegado (conta corporativa ou de estudante)     | Sem suporte.                               |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                               |
-| Aplicativo                            | Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
+| Aplicativo                            | Calls. JoinGroupCalls. All, calls. InitiateGroupCalls. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -39,14 +39,14 @@ POST /applications/{id}/calls/{id}/audioRoutingGroups
 | Autorização | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do objeto [audioRoutingGroup](../resources/audioroutinggroup.md) .
+No corpo da solicitação, forneça uma representação JSON do objeto [audioRoutingGroup](../resources/audioroutinggroup.md) .
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` objeto response de código e [audioRoutingGroup](../resources/audioroutinggroup.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `200 OK` o código de resposta e o objeto [audioRoutingGroup](../resources/audioroutinggroup.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-one-to-one-audio-routing-group"></a>O exemplo 1: Grupo de roteamento de áudio individual
+### <a name="example-1-one-to-one-audio-routing-group"></a>Exemplo 1: grupo de roteamento de áudio de um para um
 
 ##### <a name="request"></a>Solicitação
 O exemplo a seguir mostra a solicitação.
@@ -72,7 +72,7 @@ Content-Length: 233
 }
 ```
 
-No corpo da solicitação, fornece uma representação JSON do objeto [audioRoutingGroup](../resources/audioroutinggroup.md) .
+No corpo da solicitação, forneça uma representação JSON do objeto [audioRoutingGroup](../resources/audioroutinggroup.md) .
 
 ##### <a name="response"></a>Resposta
 
@@ -99,7 +99,7 @@ Content-Length: 233
   ]
 }
 ```
-### <a name="example-2-multicast-audioroutinggroup"></a>Exemplo 2: AudioRoutingGroup Multicast
+### <a name="example-2-multicast-audioroutinggroup"></a>Exemplo 2: audioRoutingGroup de difusão seletiva
 
 ##### <a name="request"></a>Solicitação
 O exemplo a seguir mostra a solicitação.
@@ -130,11 +130,11 @@ Content-Length: 233
 }
 ```
 
-No corpo da solicitação, fornece uma representação JSON do objeto [audioRoutingGroup](../resources/audioroutinggroup.md) .
+No corpo da solicitação, forneça uma representação JSON do objeto [audioRoutingGroup](../resources/audioroutinggroup.md) .
 
 ##### <a name="response"></a>Resposta
 
-> **Observação: **o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
 ```http
 HTTP/1.1 200 OK

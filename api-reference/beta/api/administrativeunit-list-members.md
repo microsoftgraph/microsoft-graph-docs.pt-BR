@@ -1,21 +1,21 @@
 ---
 title: Listar membros
-description: Use essa API para obter os membros da lista (de usuário e de grupo) em uma unidade administrativa.
+description: Use essa API para obter a lista de Membros (usuário e grupo) em uma unidade administrativa.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: aa8d70d72c5d55cac0ff8aea66d3c56b4e9f80ce
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517852"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459495"
 ---
 # <a name="list-members"></a>Listar membros
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use essa API para obter os membros da lista (de usuário e de grupo) em uma unidade administrativa.
+Use essa API para obter a lista de Membros (usuário e grupo) em uma unidade administrativa.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Directory.Read.All, Directory.ReadWrite.All |
 
-> Observação: Para listar os membros de uma associação oculta em uma unidade administrativa, a permissão de Member.Read.Hidden é obrigatório.
+> Observação: para listar os membros de uma associação oculta em uma unidade administrativa, a permissão member. Read. Hidden é necessária.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -45,11 +45,11 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos de [usuário](../resources/user.md) e/ou [grupo](../resources/group.md) no corpo da resposta.  Em vez disso, se você colocar `$ref` ao final da solicitação, a resposta conterá uma coleção de `@odata.id` links/URLs aos membros.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [User](../resources/user.md) e/ou [Group](../resources/group.md) no corpo da resposta.  Em vez disso, se `$ref` você colocar no final da solicitação, a resposta conterá uma coleção de `@odata.id` links/URLs para os membros.
 
 ## <a name="examples"></a>Exemplos
-##### <a name="list-member-objects"></a>Objetos de membros da lista
-A seguinte solicitação listará os membros da unidade administrativa, retornando uma coleção de usuários e/ou em grupos.
+##### <a name="list-member-objects"></a>Listar objetos member
+A solicitação a seguir listará os membros da unidade administrativa, retornando um conjunto de usuários e/ou grupos.
 
 ```http
 GET https://graph.microsoft.com/beta/administrativeUnits/{id}/members
@@ -82,8 +82,8 @@ Content-length: 100
 }
 ```
 
-##### <a name="list-member-references"></a>Referências de membro de lista
-A seguinte solicitação listará as referências de membro da unidade administrativa, retornando uma coleção de `@odata.id` referências aos membros.
+##### <a name="list-member-references"></a>Listar referências de membros
+A solicitação a seguir listará as referências de membro da unidade administrativa, retornando uma `@odata.id` coleção de referências para os membros.
 ```
 GET https://graph.microsoft.com/beta/administrativeUnits/{id}/members/$ref
 ```

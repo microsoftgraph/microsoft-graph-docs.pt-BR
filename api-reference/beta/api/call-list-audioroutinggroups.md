@@ -1,17 +1,17 @@
 ---
-title: Grupos de roteamento áudio de lista
+title: Listar grupos de roteamento de áudio
 description: Recupere uma lista de objetos **audioRoutingGroup** .
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 02a782af2bb7690cc55dd3a4632aeb0cf93734da
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518524"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461256"
 ---
-# <a name="list-audio-routing-groups"></a>Grupos de roteamento áudio de lista
+# <a name="list-audio-routing-groups"></a>Listar grupos de roteamento de áudio
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,9 +22,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Não são suportados.                               |
-| Delegado (conta pessoal da Microsoft) | Não são suportados.                               |
-| Aplicativo     | Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
+| Delegado (conta corporativa ou de estudante)     | Sem suporte.                               |
+| Delegado (conta pessoal da conta Microsoft) | Sem suporte.                               |
+| Aplicativo     | Calls. JoinGroupCalls. All, calls. InitiateGroupCalls. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -34,7 +34,7 @@ GET /applications/{id}/calls/{id}/audioRoutingGroups
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método oferece suporte para os [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome          | Descrição               |
@@ -45,7 +45,7 @@ Este método oferece suporte para os [parâmetros de consulta OData](/graph/quer
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [audioRoutingGroup](../resources/audioroutinggroup.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [audioRoutingGroup](../resources/audioroutinggroup.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups
 
 ##### <a name="response"></a>Resposta
 
-> **Observação: **o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
   "blockType": "response",

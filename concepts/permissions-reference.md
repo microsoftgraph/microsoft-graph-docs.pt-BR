@@ -3,12 +3,12 @@ title: 'Referência de permissões do Microsoft Graph '
 description: O Microsoft Graph expõe as permissões granulares que controlam o acesso que os aplicativos têm aos recursos, como email, grupos e usuários. Como desenvolvedor, você decide quais permissões para o Microsoft Graph seu aplicativo deverá solicitar.
 author: jackson-woods
 localization_priority: Priority
-ms.openlocfilehash: ac2d600e41d2d535b12122f99630d548082bbe46
-ms.sourcegitcommit: bbe42a15dad4ffe037a6934ab6001b585b7574c2
+ms.openlocfilehash: 4ec732fdc9e2a1c91ff6e5bb58c26e606272e641
+ms.sourcegitcommit: d264fa064215879fa88a4680402cd57a470d73db
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "31904102"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31980953"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph 
 O Microsoft Graph expõe as permissões granulares que controlam o acesso que os aplicativos têm aos recursos, como email, grupos e usuários. Como desenvolvedor, você decide quais permissões para o Microsoft Graph seu aplicativo deverá solicitar. Quando um usuário entra no aplicativo, ele, ou, em alguns casos, um administrador, tem a opção de consentir essas permissões. Se o usuário consentir, seu aplicativo receberá acesso aos recursos e APIs que solicitados. Para aplicativos que não aceitam usuários conectados, as permissões podem ser previamente consentidas pelo administrador quando o aplicativo é instalado ou durante a inscrição. 
@@ -1013,6 +1013,30 @@ Os seguintes usos são válidos para permissões delegadas:
 * _Agreement.Read.All_: ler todos os acordos de termos de uso (`GET /beta/agreements`)
 * _Agreement.ReadWrite.All_: ler e gravar todos os acordos de termos de uso (`POST /beta/agreements`)
 * _AgreementAcceptance.Read_: ler os status de aceitação de termos de uso do usuário (`GET /beta/me/agreementAcceptances`)
+
+Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
+
+---
+
+## <a name="trust-framework-policy-permissions"></a>Permissões de política de Estrutura de Confiabilidade
+
+#### <a name="delegated-permissions"></a>Permissões delegadas
+
+|   Permissão    |  Exibir Cadeia de Caracteres   |  Descrição | Consentimento Obrigatório do Administrador | Suporte da conta da Microsoft |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _Policy.Read.All_ | Leia todas as Políticas trustFramework | Permite que o aplicativo leia todas as Políticas TrustFramework em nome de usuário conectado. | Sim | Não |
+| _Policy.ReadWrite.TrustFramework_ | Leitura e gravação de todas as Políticas trustFramework | Permite que o aplicativo leia e grave todas as Políticas TrustFramework em nome do usuário conectado. | Sim | Não |
+
+### <a name="remarks"></a>Comentários
+A conta corporativa ou de estudante deve ser um administrador global do locatário.
+
+### <a name="example-usage"></a>Exemplo de uso
+
+#### <a name="delegated"></a>Delegado
+Os seguintes usos são válidos para permissões delegadas:
+
+* _Policy.Read.All_: Ler todas as políticas trustFramework (`GET /beta/trustFramework/policies`)
+* _Policy.ReadWrite.TrustFramework_: Leitura e gravação de todas as políticas trustFramework (`POST /beta/trustFramework/policies`)
 
 Para cenários mais complexos que envolvem várias permissões, confira [Cenários de permissões](#permission-scenarios).
 

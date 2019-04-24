@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: f85627893b65140d5958a17cec842476c5ee4b8e
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31798114"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32465738"
 ---
 # <a name="create-devicemanagementscriptdevicestate"></a>Criar deviceManagementScriptDeviceState
 
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceMa
 |:---|:---|:---|
 |id|String|Chave da entidade de estado do dispositivo de script de gerenciamento de dispositivos.|
 |runState|[runState](../resources/intune-shared-runstate.md)|Estado da última execução do script de gerenciamento de dispositivos. Os valores possíveis são: `unknown`, `success`, `fail`.|
-|resultMessage|Cadeia de caracteres|Detalhes da saída de execução.|
+|resultMessage|String|Detalhes da saída de execução.|
 |lastStateUpdateDateTime|DateTimeOffset|Última vez em que o script de gerenciamento de dispositivos é executado.|
 |errorCode|Int32|Código de erro correspondente à execução errada do script de gerenciamento de dispositivos.|
 |errorDescription|Cadeia de caracteres|Descrição do erro correspondente à execução errada do script de gerenciamento de dispositivo.|

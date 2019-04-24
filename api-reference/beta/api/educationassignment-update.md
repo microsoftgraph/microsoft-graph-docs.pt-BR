@@ -1,28 +1,28 @@
 ---
 title: Atualizar educationassignment
-description: Atualize o objeto assignment. Somente professores na classe podem fazer isso. Observe que você não pode usar uma solicitação de PATCH para alterar o status de uma atribuição. Use a ação de publicação para alterar o status da atribuição.
+description: Atualize o objeto assignment. Somente os professores da turma podem fazer isso. Observe que você não pode usar uma solicitação PATCH para alterar o status de uma atribuição. Use a ação publicar para alterar o status da atribuição.
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 ms.openlocfilehash: eb5762f86e1572f9a9d5876199c945154a25293b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524958"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32458163"
 ---
 # <a name="update-educationassignment"></a>Atualizar educationassignment
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize o objeto assignment. Somente professores na classe podem fazer isso. Observe que você não pode usar uma solicitação de PATCH para alterar o status de uma atribuição. Use a ação [Publicar](../api/educationassignment-publish.md) para alterar o status da atribuição.
+Atualize o objeto assignment. Somente os professores da turma podem fazer isso. Observe que você não pode usar uma solicitação PATCH para alterar o status de uma atribuição. Use a ação [publicar](../api/educationassignment-publish.md) para alterar o status da atribuição.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
+|Delegado (conta corporativa ou de estudante) |  EduAssignments. ReadWriteBasic, EduAssignments. ReadWrite  |
 |Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
 |Aplicativo | Sem suporte. | 
 
@@ -38,21 +38,21 @@ PATCH /education/classes/{id}/assignments/{id}
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações em outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
+No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|allowLateSubmissions|Booliano| Se envios podem ser enviados após a data de vencimento.|
-|allowStudentsToAddResourcesToSubmission|Booliano| Se um estudante pode adicionar recursos para o envio de um. Indicado se os únicos itens no envio provém da lista de recursos de atribuição. |
-|assignDateTime|DateTimeOffset| Data em que a atribuição deve ser publicada aos alunos. |
-|assignTo|educationAssignmentRecipient| Alunos que fazer a atribuição.|
+|allowLateSubmissions|Booliano| Se os envios podem ser enviados após a data de conclusão.|
+|allowStudentsToAddResourcesToSubmission|Booliano| Se um aluno pode adicionar recursos a um envio. Indica se os únicos itens no envio vieram da lista de recursos de atribuição. |
+|assignDateTime|DateTimeOffset| Data em que a atribuição deve ser publicada para os alunos. |
+|atribuir|educationAssignmentRecipient| Estudantes que obtêm a atribuição.|
 |displayName|String| Nome da atribuição. |
-|dueDateTime|DateTimeOffset| Atribuição de data deve ser concluída. |
-|classificação|educationAssignmentGradeType| Como a atribuição vai ser Graduada.|
-|Instruções|item.body| Instruções a ser dada aos alunos junto com a atribuição. |
+|dueDateTime|DateTimeOffset| A atribuição de data deve ser concluída. |
+|notas|educationAssignmentGradeType| Como a atribuição será classificada.|
+|contida|doBody| Instruções a serem dadas aos alunos junto com a atribuição. |
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto atualizado [educationAssignment](../resources/educationassignment.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [educationAssignment](../resources/educationassignment.md) atualizado no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.

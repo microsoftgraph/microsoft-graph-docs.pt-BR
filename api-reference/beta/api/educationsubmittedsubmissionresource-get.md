@@ -1,28 +1,28 @@
 ---
 title: Obter educationSubmittedSubmissionResource
-description: Retorna um recurso enviado. Isso estará disponível para um professor após um estudante enviou e estarão disponível para o estudante após o professor lançou o envio.  Observe que professores podem deixar as anotações em alguns recursos.
+description: Retorna um recurso enviado. Isso estará disponível para um professor após o envio de um aluno e estará disponível para o aluno depois que o professor tiver liberado o envio.  Observe que os professores podem deixar anotações em alguns recursos.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: e529231e6503b67390b7248228af84dc59b5f633
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513274"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457477"
 ---
 # <a name="get-educationsubmittedsubmissionresource"></a>Obter educationSubmittedSubmissionResource
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retorna um recurso enviado. Isso estará disponível para um professor após um estudante enviou e estarão disponível para o estudante após o professor lançou o envio.  Observe que professores podem deixar as anotações em alguns recursos.
+Retorna um recurso enviado. Isso estará disponível para um professor após o envio de um aluno e estará disponível para o aluno depois que o professor tiver liberado o envio.  Observe que os professores podem deixar anotações em alguns recursos.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite  |
+|Delegado (conta corporativa ou de estudante) |  EduAssignments. ReadBasic, EduAssignments. ReadWriteBasic, EduAssignments. Read, EduAssignments. ReadWrite  |
 |Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
 |Aplicativo | Sem suporte. | 
 
@@ -42,7 +42,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [educationSubmissionResource](../resources/educationsubmissionresource.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [educationSubmissionResource](../resources/educationsubmissionresource.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.

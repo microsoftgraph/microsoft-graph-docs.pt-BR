@@ -1,30 +1,30 @@
 ---
-title: 'bookingBusiness: cancelamento de publicação'
-description: Verifique a página de agendamento dessa empresa não está disponível para clientes externos.
+title: 'bookingBusiness: cancelar publicação'
+description: Tornar a página de agendamento dessa empresa não disponível para clientes externos.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: 0b6c8122d37e5f6cdb1698b0d86295156e3481a0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517523"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461840"
 ---
-# <a name="bookingbusiness-unpublish"></a>bookingBusiness: cancelamento de publicação
+# <a name="bookingbusiness-unpublish"></a>bookingBusiness: cancelar publicação
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Verifique a página de agendamento dessa empresa não está disponível para clientes externos.
+Tornar a página de agendamento dessa empresa não disponível para clientes externos.
 
-Defina a propriedade **isPublished** como false e a propriedade **publicUrl** como nulo.
+Defina a **** Propriedade IsPublished como false e a propriedade **publicUrl** como NULL.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  Bookings.Manage.All   |
+|Delegado (conta corporativa ou de estudante) |  Bookings. Manage. All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.   |
 |Aplicativo | Sem suporte.  |
 
@@ -37,7 +37,7 @@ POST /bookingBusinesses/{id}/unpublish
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
-| Autorização  | Portador {código}|
+| Authorization  | Portador {código}|
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -45,7 +45,7 @@ POST /bookingBusinesses/{id}/unpublish
 Se bem-sucedido, este método retorna um código de resposta `204 No content`. Não retorna nada no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-Este é um exemplo de como chamar esta API.
+Veja a seguir um exemplo de como chamar essa API.
 ##### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
 <!-- {

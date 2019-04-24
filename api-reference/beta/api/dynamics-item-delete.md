@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: b8b03c12ccc4592af97ee4160ca317eac65f73f5
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365511"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32458478"
 ---
 # <a name="delete-items"></a>Excluir itens
 Excluir um item do Dynamics 365 Business central.

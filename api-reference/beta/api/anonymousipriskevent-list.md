@@ -1,15 +1,15 @@
 ---
-title: Lista anonymousIpRiskEvents
+title: Listar anonymousIpRiskEvents
 description: Recupere uma lista de objetos anonymousipriskevent.
 localization_priority: Normal
 ms.openlocfilehash: c2927ae470441d581a0879e97e395ca7720035f4
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516809"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459259"
 ---
-# <a name="list-anonymousipriskevents"></a>Lista anonymousIpRiskEvents
+# <a name="list-anonymousipriskevents"></a>Listar anonymousIpRiskEvents
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -40,7 +40,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e a coleção de objetos [anonymousIpRiskEvent](../resources/anonymousipriskevent.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [anonymousIpRiskEvent](../resources/anonymousipriskevent.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

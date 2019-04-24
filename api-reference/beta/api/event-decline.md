@@ -1,21 +1,21 @@
 ---
 title: 'event: decline'
-description: Recusar o convite para o evento específico em um calendário do usuário.
+description: Recusar o convite para o evento específico em um calendário de usuário.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 27b29221c741c9aca9e42009d437b2559224d832
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522151"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464464"
 ---
 # <a name="event-decline"></a>event: decline
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recusar o convite para o [evento](../resources/event.md) específico em um [calendário](../resources/calendar.md)do usuário.
+Recusar o convite para o [evento](../resources/event.md) especificado em um [calendário](../resources/calendar.md)do usuário.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

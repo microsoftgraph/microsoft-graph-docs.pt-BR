@@ -5,11 +5,11 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: 2549d8babd000a36f0ff3ccd38541ef3c1b2e466
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27925816"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463667"
 ---
 # <a name="educationschool-resource-type"></a>Tipo de recurso educationSchool
 
@@ -33,20 +33,20 @@ Recurso usado para gerenciar aulas, professores e alunos da escola representada.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|Cadeia de caracteres|GUID desta escola.|
-|displayName| Cadeia de caracteres| Nome de exibição da escola.| 
-|description| Cadeia de caracteres | Descrição da escola.| 
-|status| string| Somente Leitura. Os valores possíveis são: `inactive`, `active`, `expired`, `deleteable`.|
+|id|String|GUID desta escola.|
+|displayName| String| Nome de exibição da escola.| 
+|description| String | Descrição da escola.| 
+|status| cadeia de caracteres| Somente Leitura. Os valores possíveis são: `inactive`, `active`, `expired`, `deleteable`.|
 |externalSource| educationExternalSource| Somente Leitura.  Os valores possíveis são: `sis`, `manual`, `unknownFutureValue`.|
-|principalEmail| Cadeia de caracteres| Endereço de email da entidade de segurança.|
-|principalName| Cadeia de caracteres | Nome da entidade de segurança.|
-|externalPrincipalId| Cadeia de caracteres | ID da entidade de segurança no sistema de sincronização. |
-|highestGrade|Cadeia de caracteres| Ensino de nível mais alto. |
-|lowestGrade|Cadeia de caracteres| Ensino de nível mais baixo. |
-|schoolNumber|Cadeia de caracteres| Número da escola.|
+|principalEmail| String| Endereço de email da entidade de segurança.|
+|principalName| String | Nome da entidade de segurança.|
+|externalPrincipalId| String | ID da entidade de segurança no sistema de sincronização. |
+|highestGrade|String| Ensino de nível mais alto. |
+|lowestGrade|String| Ensino de nível mais baixo. |
+|schoolNumber|String| Número da escola.|
 |externalId|Cadeia de caracteres| ID da escola no sistema de sincronização. |
-|phone|Cadeia de caracteres| Número de telefone da escola. |
-|fax|Cadeia de caracteres| Número de fax da escola. |
+|phone|String| Número de telefone da escola. |
+|fax|String| Número de fax da escola. |
 |address|[physicalAddress](physicaladdress.md)| Endereço da escola.|
 |createdBy|[identitySet](identityset.md)|Entidade que criou a escola.|
 

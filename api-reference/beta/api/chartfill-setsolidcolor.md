@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: e841ee13719b7d19f1ca306ad3a555b447cb9cb6
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642328"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456635"
 ---
 # <a name="chartfill-setsolidcolor"></a>ChartFill: setSolidColor
 

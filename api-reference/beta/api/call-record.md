@@ -1,17 +1,17 @@
 ---
-title: 'chamar: registro'
+title: 'Call: Record'
 description: Registre a chamada.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 4dc409a502b18da9c0e897054a7c1d6386fa096f
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641901"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461294"
 ---
-# <a name="call-record"></a>chamar: registro
+# <a name="call-record"></a>Call: Record
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +22,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 | :-------------- | :------------------------------------------ |
-| Delegado (conta corporativa ou de estudante)     | Não suportado        |
+| Delegado (conta corporativa ou de estudante)     | Não Suportado        |
 | Delegado (conta pessoal da Microsoft) | Não suportado        |
 | Aplicativo     | Calls.AccessMedia.All                       |
 
@@ -43,18 +43,18 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|solicita|coleção [mediaprompt](../resources/mediaprompt.md) | Inicia a coleção de prompts para reproduzir (se houver) antes da gravação. Os clientes podem escolher especificar a ação de "playPrompt" separadamente ou especificar como parte do "Registro" - principalmente todos os registros são precedido por um prompt |
-|bargeInAllowed|Booliano| Permitir que os usuários insiram opção antes de concluir o prompt.                                                                 |
-|initialSilenceTimeoutInSeconds | Int32| Silêncio inicial máximo permitido desde o momento em que iniciamos a operação de registro antes de tempo limite e a operação de falha. Se podemos estiver reproduzindo um prompt, este timer começa após a conclusão da prompt. |
+|prompts|coleção [mediaprompt](../resources/mediaprompt.md) | Coleção de prompts a serem executados (se houver) antes da gravação começar. Os clientes podem optar por especificar a ação "playPrompt" separadamente ou especificar como parte de "Record"-principalmente todos os registros são precedidos por um prompt |
+|bargeInAllowed|Booliano| Permite que os usuários insiram opções antes de concluir o prompt.                                                                 |
+|initialSilenceTimeoutInSeconds | Int32| O silêncio inicial máximo permitido a partir da hora em que começamos a operação de registro antes do tempo limite e falha na operação. Se estivermos reproduzindo um prompt, este cronômetro será iniciado após a conclusão do prompt. |
 |maxSilenceTimeoutInSeconds|Int32| O tempo limite de silêncio máximo em segundos.|
-|maxRecordDurationInSeconds|Int32| A duração máxima de registro em segundos.|
-|playBeep|Booliano| Reproduz um alarme sonoro depois de reproduzir o prompt.|
-|streamWhileRecording|Booliano|Se definido como true, um local de recurso serão fornecidas assim que a gravação é iniciado. |
-|stopTones|Coleção de cadeias de caracteres|Pare de toques especificados para terminar gravação.|
-|clientContext|String|O contexto de cliente.|
+|maxRecordDurationInSeconds|Int32| A duração máxima do registro em segundos.|
+|playBeep|Booliano| ReProduz um aviso sonoro após a execução do prompt.|
+|streamWhileRecording|Booliano|Se for definido como true, um local de recurso será fornecido assim que a gravação for iniciada. |
+|stopTones|Coleção de cadeias de caracteres|Pare os toques especificados para terminar a gravação.|
+|clientContext|String|O contexto do cliente.|
 
 ## <a name="response"></a>Resposta
-Retorna `202 Accepted` código de resposta e um cabeçalho de local com um uri para o [commsOperation](../resources/commsoperation.md) criado para essa solicitação.
+Retorna `202 Accepted` o código de resposta e um cabeçalho de local com um URI para o [commsOperation](../resources/commsoperation.md) criado para essa solicitação.
 
 ## <a name="example"></a>Exemplo
 O exemplo a seguir mostra como chamar essa API.
@@ -108,7 +108,7 @@ HTTP/1.1 202 Accepted
 Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
 ```
 
-##### <a name="notification---operation-completed"></a>Notificação - operação concluída
+##### <a name="notification---operation-completed"></a>Notificação-operação concluída
 
 ```http
 POST https://bot.contoso.com/api/calls

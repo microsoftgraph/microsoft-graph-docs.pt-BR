@@ -1,21 +1,21 @@
 ---
-title: Chamada Delete
-description: Excluir ou desligar a uma chamada ativa.
+title: Excluir chamada
+description: Excluir ou desligar uma chamada ativa.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: ed4ae5c8fdd397541e015a31bc6ecee948f0ea0e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513232"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461304"
 ---
-# <a name="delete-call"></a>Chamada Delete
+# <a name="delete-call"></a>Excluir chamada
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir ou desligar a uma chamada ativa.
+Excluir ou desligar uma chamada ativa.
 
 ## <a name="permissions"></a>Permissões
 
@@ -23,8 +23,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios)                  |
 | :-------------- | :----------------------------------------------------------- |
-| Delegado (conta corporativa ou de estudante)     | Não são suportados.                         |
-| Delegado (conta pessoal da Microsoft) | Não são suportados.                         |
+| Delegado (conta corporativa ou de estudante)     | Sem suporte.                         |
+| Delegado (conta pessoal da conta Microsoft) | Sem suporte.                         |
 | Aplicativo                            | Nenhum.                                  |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -70,7 +70,7 @@ DELETE https://graph.microsoft.com/beta/app/calls/{id}
 HTTP/1.1 204 No Content
 ```
 
-##### <a name="notification---terminating"></a>Notificação - abortar
+##### <a name="notification---terminating"></a>Notificação-encerramento
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -99,7 +99,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---terminated"></a>Notificação - terminada
+##### <a name="notification---terminated"></a>Notificação-terminada
 
 ```http
 POST https://bot.contoso.com/api/calls

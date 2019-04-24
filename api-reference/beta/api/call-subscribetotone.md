@@ -1,28 +1,28 @@
 ---
-title: 'chamar: subscribeToTone'
-description: Assine DTMF (dual-tone multi-frequency sinalização). Isso permite que você seja notificado quando o usuário pressiona teclas em um telefone 'discagem por tom'.
+title: 'Call: subscribeToTone'
+description: Assine o DTMF (sinalização de multifrequência de tom dual). Isso permite que você seja notificado quando o usuário pressionar teclas em um telefone de ' toque '.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: f3fe078965877204b767b689ace293c3d4f46a9d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519441"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461250"
 ---
-# <a name="call-subscribetotone"></a>chamar: subscribeToTone
+# <a name="call-subscribetotone"></a>Call: subscribeToTone
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Assine DTMF (dual-tone multi-frequency sinalização). Isso permite que você seja notificado quando o usuário pressiona teclas em um telefone "discagem por tom".
+Assine o DTMF (sinalização de multifrequência de tom dual). Isso permite que você seja notificado quando o usuário pressionar teclas em um telefone de "toque".
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 | :-------------- | :------------------------------------------ |
-| Delegado (conta corporativa ou de estudante)     | Não suportado        |
+| Delegado (conta corporativa ou de estudante)     | Não Suportado        |
 | Delegado (conta pessoal da Microsoft) | Não suportado        |
 | Aplicativo     | Calls.AccessMedia.All                       |
 
@@ -43,10 +43,10 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    | Descrição |
 |:---------------|:--------|:------------|
-| ClientContext  | String  | O contexto de cliente. |
+| clientContext  | String  | O contexto do cliente. |
 
 ## <a name="response"></a>Resposta
-Retorna `202 Accepted` código de resposta e um cabeçalho de local com um uri para o [commsOperation](../resources/commsoperation.md) criado para essa solicitação.
+Retorna `202 Accepted` o código de resposta e um cabeçalho de local com um URI para o [commsOperation](../resources/commsoperation.md) criado para essa solicitação.
 
 ## <a name="example"></a>Exemplo
 O exemplo a seguir mostra como chamar essa API.
@@ -82,7 +82,7 @@ HTTP/1.1 202 Accepted
 Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
 ```
 
-##### <a name="notification---operation-completed"></a>Notificação - operação concluída
+##### <a name="notification---operation-completed"></a>Notificação-operação concluída
 
 ```http
 POST https://bot.contoso.com/api/calls

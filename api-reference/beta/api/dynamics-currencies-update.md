@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: e243325d4a7e7536c1e079385f695ef2cc7359c7
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365644"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32458548"
 ---
 # <a name="update-currencies"></a>Atualizar moedas
 Atualizar as propriedades de um objeto Currency para o Dynamics 365 Business central.

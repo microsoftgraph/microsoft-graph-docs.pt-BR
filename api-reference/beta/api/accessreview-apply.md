@@ -1,28 +1,28 @@
 ---
 title: Aplicar accessReview
-description: 'No Windows Azure AD para acessar o recurso de revisões, aplique as decisões de um accessReview concluída.  O objeto de destino pode ser uma revisão de acesso de uma única vez, ou uma instância de uma análise mais acesso recorrente.  '
+description: 'No recurso de revisões do Azure AD Access, aplique as decisões de um accessReview concluído.  O objeto de destino pode ser uma revisão de acesso única ou uma instância de uma revisão de acesso recorrente.  '
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 9612f3bcb8a032ee32cd7b058d3f21950c9b120f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512210"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456875"
 ---
 # <a name="apply-accessreview"></a>Aplicar accessReview
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O recurso [acesso analisa](../resources/accessreviews-root.md) Azure AD, aplica as decisões de um concluídas [accessReview](../resources/accessreview.md).  O objeto de destino pode ser uma revisão de acesso de uma única vez, ou uma instância de uma análise mais acesso recorrente.  
+No recurso de revisões do Azure AD [Access](../resources/accessreviews-root.md) , aplique as decisões de um [accessReview](../resources/accessreview.md)concluído.  O objeto de destino pode ser uma revisão de acesso única ou uma instância de uma revisão de acesso recorrente.  
 
 
-Depois que uma revisão do access for concluída, um porque atingiu a data de término ou um administrador parou de manualmente e aplicar auto não foi configurado para a revisão, é possível chamar Apply para aplicar as alterações. Até aplicar ocorre, as decisões para remover os direitos de acesso não aparecem no recurso de código-fonte, os usuários por exemplo mantêm suas associações de grupo. Chamando aplicar, o resultado da revisão é implementado, atualizando o grupo ou o aplicativo. Se o acesso do usuário foi negado na revisão, quando um administrador chama este API, o Azure AD remove a atribuição de seus aplicativos ou da associação. 
+Após a conclusão da revisão do Access, porque ela atingiu a data de término ou um administrador o interrompeu manualmente e a aplicação automática não foi configurada para a revisão, você pode chamar aplicar para aplicar as alterações. Até a aplicação ocorrer, as decisões para remover os direitos de acesso não aparecem no recurso de origem, os usuários da instância retêm suas associações de grupo. Ao chamar Apply, o resultado da revisão é implementado atualizando o grupo ou aplicativo. Se o acesso de um usuário tiver sido negado na revisão, quando um administrador chamar essa API, o Azure AD removerá sua associação ou atribuição de aplicativo. 
 
-Depois que uma revisão do access for concluída e aplicação de automática foi configurado, em seguida, o status da revisão deixará de ser concluído em estados intermediários e finalmente será alterado para o estado aplicado. Você deve esperar consulte negados users, se houver, que está sendo removido do recurso Agrupar atribuição de aplicativo ou associação em poucos minutos.
+Após a conclusão da revisão do Access, e a aplicação automática tiver sido configurada, o status da revisão será alterado de concluído através de Estados intermediários e, por fim, será alterado para estado aplicado. Você deve esperar ver os usuários negados, se houver, removidos da Associação de grupo de recursos ou da atribuição de aplicativo em alguns minutos.
 
-Um automático configurado a aplicação de revisão ou selecionando aplicar não tem efeito em um grupo que se origina de um diretório local ou um grupo dinâmico. Se você quiser alterar um grupo local de originado, baixe os resultados e aplicar essas alterações para a representação do grupo nesse diretório.
+Uma revisão de aplicação automática configurada ou a seleção de aplicar não tem efeito em um grupo que se origina em um diretório local ou em um grupo dinâmico. Se você quiser alterar um grupo que originou o local, baixe os resultados e aplique essas alterações à representação do grupo nesse diretório.
 
 
 ## <a name="permissions"></a>Permissões
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | AccessReview.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante)     | AccessReview. ReadWrite. All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | Sem suporte. |
 
@@ -42,7 +42,7 @@ POST /accessReviews('<id>')/applyDecisions()
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome         | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| Autorização | string | Token de portador Obrigatório. |
+| Autorização | string | \{token\} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
@@ -53,7 +53,7 @@ Se bem-sucedido, este método retorna um código de resposta `204, No Content`. 
 
 ## <a name="see-also"></a>Confira também
 
-- [Como concluir uma revisão do access](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-azure-ad-controls-complete-access-review)
+- [Como concluir uma revisão do Access](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-azure-ad-controls-complete-access-review)
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -65,7 +65,7 @@ Se bem-sucedido, este método retorna um código de resposta `204, No Content`. 
 POST https://graph.microsoft.com/beta/accessReviews('2975E9B5-44CE-4E71-93D3-30F03B5AA992')/applyDecisions()
 ```
 ##### <a name="response"></a>Resposta
->**Observação: **o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true

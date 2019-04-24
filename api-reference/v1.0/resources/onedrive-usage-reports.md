@@ -5,11 +5,11 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: fb27d69b3d63fb3f02b4d21e091d44340ec85541
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572399"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462960"
 ---
 # <a name="onedrive-usage-reports"></a>Relatórios de uso do OneDrive
 
@@ -21,7 +21,7 @@ Você pode usar os relatórios de uso do OneDrive para obter uma visão de alto 
 
 | Função                                 | Tipo de retorno | Descrição                              |
 | :--------------------------------------- | :---------- | ---------------------------------------- |
-| [Obter dados de conta](../api/reportroot-getonedriveusageaccountdetail.md) | Fluxo      | Obtenha dados sobre o uso do OneDrive por conta. |
+| [Obter dados de conta](../api/reportroot-getonedriveusageaccountdetail.md) | Stream      | Obtenha dados sobre o uso do OneDrive por conta. |
 | [Obter contagens de conta](../api/reportroot-getonedriveusageaccountcounts.md) | Fluxo      | Obtenha a tendência no número de sites ativos do OneDrive for Business. Qualquer site em que usuários visualizaram, modificaram, carregaram, baixaram, compartilharam ou sincronizaram arquivos é considerado um site ativo. |
-| [Obter contagens de arquivo](../api/reportroot-getonedriveusagefilecounts.md) | Fluxo      | Obtenha o número total de arquivos em todos os sites e quantos são arquivos ativos. Um arquivo é considerado ativo se ele foi salvo, sincronizado, modificado ou compartilhado dentro do período de tempo especificado. |
+| [Obter contagens de arquivo](../api/reportroot-getonedriveusagefilecounts.md) | Stream      | Obtenha o número total de arquivos em todos os sites e quantos são arquivos ativos. Um arquivo é considerado ativo se ele foi salvo, sincronizado, modificado ou compartilhado dentro do período de tempo especificado. |
 | [Obter armazenamento](../api/reportroot-getonedriveusagestorage.md) | Fluxo      | Obtenha a tendência da quantidade de armazenamento que você está usando no OneDrive for Business. |

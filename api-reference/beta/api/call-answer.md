@@ -1,28 +1,28 @@
 ---
-title: 'chamar: resposta'
-description: Atenda uma chamada de entrada.
+title: 'Call: resposta'
+description: Atenda às chamadas recebidas.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: c5a93121e5f01939ad28808f7055fcad98a734ff
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29530045"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461314"
 ---
-# <a name="call-answer"></a>chamar: resposta
+# <a name="call-answer"></a>Call: resposta
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atenda uma chamada de entrada.
+Atenda às chamadas recebidas.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios)                 |
 | :-------------- | :-----------------------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Não suportado                        |
+| Delegado (conta corporativa ou de estudante)     | Não Suportado                        |
 | Delegado (conta pessoal da Microsoft) | Não suportado                        |
 | Aplicativo     | Nenhum                                                        |
 
@@ -43,12 +43,12 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro        | Tipo                                     |Descrição                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
-|callbackUri       |String                                    |A ID de inscrição ou de retorno de chamada no qual serão entregues retornos de chamada. (obrigatório)                                                               |
-|acceptedModalities|String collection                         |A lista de aceitar modalidades. Valores possíveis são: `unknown`, `audio`, `video`, `screenSharing`, `videoBasedScreenSharing`, `data`. (obrigatório) |
-|mediaConfig       |[mediaConfig](../resources/mediaconfig.md)|A configuração de mídia. Obrigatório.                                                                                                            |
+|callbackUri       |String                                    |A ID de retorno de chamada ou de assinatura à qual os retornos serão entregues. Precisam                                                               |
+|acceptedModalities|Coleção de cadeias de caracteres                         |A lista de aceitar modalidades. O valor possível são `unknown`: `audio`, `video`, `screenSharing`, `videoBasedScreenSharing`, `data`,. Precisam |
+|mediaConfig       |[mediaConfig](../resources/mediaconfig.md)|A configuração de mídia. Precisam                                                                                                            |
 
 ## <a name="response"></a>Resposta
-Esse método retorna `202 Accepted` código de resposta.
+Este método retorna `202 Accepted` um código de resposta.
 
 ## <a name="examples"></a>Exemplos
 O exemplo a seguir mostra como chamar essa API.
@@ -89,9 +89,9 @@ Veja a seguir um exemplo da resposta.
 HTTP/1.1 202 Accepted
 ```
 
-### <a name="answer-voip-call-with-service-hosted-media"></a>Atender a chamada VOIP com mídia de serviço hospedado
+### <a name="answer-voip-call-with-service-hosted-media"></a>Responder chamada VOIP com mídia hospedada pelo serviço
 
-##### <a name="notification---incoming"></a>Notificação - entrada
+##### <a name="notification---incoming"></a>Notificação-entrada
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -197,7 +197,7 @@ Content-Type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---establishing"></a>Notificação - estabelecendo
+##### <a name="notification---establishing"></a>Notificação-estabelecimento
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -226,7 +226,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---established"></a>Notificação - estabelecida
+##### <a name="notification---established"></a>Estabelecido em notificação
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -255,9 +255,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="answer-voip-call-with-application-hosted-media"></a>Atender a chamada VOIP com mídia de aplicativo hospedado
+### <a name="answer-voip-call-with-application-hosted-media"></a>Responder chamada VOIP com mídia hospedada por aplicativo
 
-##### <a name="notification---incoming"></a>Notificação - entrada
+##### <a name="notification---incoming"></a>Notificação-entrada
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -341,7 +341,7 @@ Content-Type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---establishing"></a>Notificação - estabelecendo
+##### <a name="notification---establishing"></a>Notificação-estabelecimento
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -370,7 +370,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---established"></a>Notificação - estabelecida
+##### <a name="notification---established"></a>Estabelecido em notificação
 
 ```http
 POST https://bot.contoso.com/api/calls

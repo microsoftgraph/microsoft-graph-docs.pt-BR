@@ -1,27 +1,27 @@
 ---
 title: Atualizar bookingstaffmember
-description: Atualize as propriedades de um bookingStaffMember no bookingbusiness especificado.
+description: Atualiza as propriedades de um bookingStaffMember no bookingbusiness especificado.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: 608580a16d796a4ee1b296c0a19caea110326cff
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514555"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461658"
 ---
 # <a name="update-bookingstaffmember"></a>Atualizar bookingstaffmember
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades de um [bookingStaffMember](../resources/bookingstaffmember.md) no especificado [bookingbusiness](../resources/bookingbusiness.md).
+Atualiza as propriedades de um [bookingStaffMember](../resources/bookingstaffmember.md) no [bookingbusiness](../resources/bookingbusiness.md)especificado.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  Bookings.ReadWrite.All, Bookings.Manage.All   |
+|Delegado (conta corporativa ou de estudante) |  Bookings. ReadWrite. All, bookings. Manage. All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.   |
 |Aplicativo | Sem suporte.  |
 
@@ -33,26 +33,26 @@ PATCH /bookingBusinesses/{id}/staffMembers/{id}
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
 | Nome       | Descrição|
 |:-----------|:-----------|
-| Autorização  | Portador {código}|
+| Authorization  | Portador {código}|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|availabilityIsAffectedByPersonalCalendar|Booliano|True significa que, se o membro da equipe é um usuário do Office 365, a API de reservas usa a calendário pessoal do membro da equipe no Office 365, bem como a propriedade **workingHours** para determinar a disponibilidade. |
-|ColorIndex|Int32|Identifica uma cor para representar o membro da equipe. A cor corresponde à paleta de cores na página **detalhes da equipe** no aplicativo reservas.|
-|displayName|String|O nome do membro da equipe, como exibido aos clientes.|
-|emailAddress|String|O endereço de email do membro da equipe. Isso pode ser em inquilino do Office 365 como a empresa ou em um domínio de email diferentes. Esse endereço de email é usado se a propriedade **sendConfirmationsToOwner** estiver definida como true na diretiva de agendamento dos negócios.|
-|role|string| A função de membro da equipe de negócios. Os valores possíveis são: `guest`, `administrator`, `viewer`, `externalGuest`.|
-|useBusinessHours|Booliano|True significa a que disponibilidade do membro da equipe é determinada pela propriedade **businessHours** dos negócios. False significa que a disponibilidade é determinada pela configuração da propriedade **workingHouse** do membro da equipe.|
-|workingHours|coleção [bookingWorkHours](../resources/bookingworkhours.md)|O intervalo de horas por dia da semana em que o membro da equipe está disponível para marcação.|
+|availabilityIsAffectedByPersonalCalendar|Booliano|True significa que, se o membro da equipe for um usuário do Office 365, a API Books usa o calendário pessoal do membro da equipe no Office 365, bem como a propriedade **workingHours** para determinar a disponibilidade. |
+|colorIndex|Int32|Identifica uma cor para representar o membro da equipe. A cor corresponde à paleta de cores na página de **detalhes da equipe** no aplicativo de reservas.|
+|displayName|String|O nome do membro da equipe, conforme exibido para os clientes.|
+|emailAddress|String|O endereço de email do membro da equipe. Isso pode ser no mesmo locatário do Office 365 que a empresa ou em um domínio de email diferente. Esse endereço de email será usado se a propriedade **sendConfirmationsToOwner** estiver definida como true na política de agendamento da empresa.|
+|role|string| A função do membro da equipe na empresa. Os valores possíveis são: `guest`, `administrator`, `viewer`, `externalGuest`.|
+|useBusinessHours|Booliano|True significa que a disponibilidade do membro da equipe é determinada pela propriedade **businessHours** da empresa. False significa que a disponibilidade é determinada pela configuração da propriedade **workingHouse** do membro da equipe.|
+|workingHours|coleção [bookingWorkHours](../resources/bookingworkhours.md)|O intervalo de horas por dia da semana em que o membro da equipe está disponível para reserva.|
 
 ## <a name="response"></a>Resposta
 Se bem-sucedido, este método retorna um código de resposta `204 No content`. Não retorna nada no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-O exemplo a seguir altera a agenda do membro da equipe ter segundas-feiras.
+O exemplo a seguir altera a agenda do membro da equipe para que ela tenha opções de segunda-feira.
 <!-- {
   "blockType": "request",
   "name": "update_bookingstaffmember"

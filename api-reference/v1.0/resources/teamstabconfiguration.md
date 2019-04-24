@@ -1,31 +1,31 @@
 ---
-title: tipo de recurso de teamsTabConfiguration (Open tipo)
+title: tipo de recurso teamsTabConfiguration (tipo aberto)
 description: As configurações que determinam o conteúdo de uma guia.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 9873d9e03fec5d7751270b963015aed9eeb0ab48
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27953634"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456973"
 ---
-# <a name="teamstabconfiguration-resource-type-open-type"></a>tipo de recurso de teamsTabConfiguration (Open tipo)
+# <a name="teamstabconfiguration-resource-type-open-type"></a>tipo de recurso teamsTabConfiguration (tipo aberto)
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-
-As configurações que determinam o conteúdo de uma [guia](teamstab.md). Quando uma guia interativamente estiver configurada, essas informações são definidas pelo aplicativo do provedor de guia.
-Além das propriedades abaixo, alguns aplicativos de provedor de guia especificam propriedades personalizadas adicionais.
+As configurações que determinam o conteúdo de uma [guia](teamstab.md). Quando uma guia é configurada de forma interativa, essa informação é definida pelo aplicativo de provedor de guias.
+Além das propriedades abaixo, alguns aplicativos de provedor de guia especificam Propriedades personalizadas adicionais.
 
 ## <a name="properties"></a>Propriedades
 
 |Propriedade|Tipo|Descrição|
 |-|-|-|
-|  entityId   |   string |  Identificador da entidade hospedados pelo provedor de guia.     |
-|  contentUrl |   string |  URL usada para processar o conteúdo da guia em equipes. Obrigatório.    |
-|  removeUrl  |   string |  Chamado pelo cliente de equipes, quando uma guia é removida usando o cliente de equipes de URL.     |
-|  websiteUrl |   string |  URL para a exibição de conteúdo da guia fora equipes.     |
+|  entityId   |   string |  Identificador da entidade hospedada pelo provedor de guias.     |
+|  contentUrl |   string |  URL usada para renderizar o conteúdo da guia no Microsoft Teams. Obrigatório.    |
+|  removeUrl  |   string |  URL chamada pelo cliente Teams quando uma guia é removida usando o cliente Teams.     |
+|  websiteUrl |   string |  URL para mostrar o conteúdo de guia fora do teams.     |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -46,10 +46,15 @@ Veja a seguir uma representação JSON do recurso.
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "teamsTabConfiguration complex type (Open Type)",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/teamstabconfiguration.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

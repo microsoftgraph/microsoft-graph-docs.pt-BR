@@ -1,28 +1,28 @@
 ---
 title: Criar educationSubmissionResource
-description: 'Adiciona um recurso à lista de recursos. Essa ação só pode ser feita pelo aluno aos quais este envio é atribuído. Essa ação não será executado se o sinalizador **allowStudentsToAddResources** não estiver definido como true. Se o chamador quiser criar um novo recurso com base em arquivo, o arquivo deve ser carregado na pasta de recursos que está associado com o envio. Se o arquivo não existe ou não está nessa pasta, a solicitação POST falhará. '
+description: 'Adiciona um recurso à lista de recursos. Esta ação só pode ser feita pelo aluno a quem esse envio é atribuído. Esta ação não será bem-sucedida se o sinalizador **allowStudentsToAddResources** não estiver definido como true. Se o chamador quiser criar um novo recurso baseado em arquivo, o arquivo deverá ser carregado na pasta recursos que está associada ao envio. Se o arquivo não existir ou não estiver nessa pasta, a solicitação POST falhará. '
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: da0860d5b5f19a84643a05a88aaeb74651e2d8ea
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511727"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464776"
 ---
 # <a name="create-educationsubmissionresource"></a>Criar educationSubmissionResource
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adiciona um recurso à lista de recursos. Essa ação só pode ser feita pelo aluno aos quais este envio é atribuído. Essa ação não será executado se o sinalizador **allowStudentsToAddResources** não estiver definido como true. Se o chamador quiser criar um novo recurso com base em arquivo, o arquivo deve ser carregado na pasta de recursos que está associado com o envio. Se o arquivo não existe ou não está nessa pasta, a solicitação POST falhará. 
+Adiciona um recurso à lista de recursos. Esta ação só pode ser feita pelo aluno a quem esse envio é atribuído. Esta ação não será bem-sucedida se o sinalizador **allowStudentsToAddResources** não estiver definido como true. Se o chamador quiser criar um novo recurso baseado em arquivo, o arquivo deverá ser carregado na pasta recursos que está associada ao envio. Se o arquivo não existir ou não estiver nessa pasta, a solicitação POST falhará. 
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
+|Delegado (conta corporativa ou de estudante) |  EduAssignments. ReadWriteBasic, EduAssignments. ReadWrite  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.  |
 |Aplicativo | Sem suporte. | 
 
@@ -39,11 +39,11 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/resources
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do objeto [educationSubmissionResource](../resources/educationsubmissionresource.md) .
+No corpo da solicitação, forneça uma representação JSON do objeto [educationSubmissionResource](../resources/educationsubmissionresource.md) .
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [educationSubmissionResource](../resources/educationsubmissionresource.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [educationSubmissionResource](../resources/educationsubmissionresource.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação

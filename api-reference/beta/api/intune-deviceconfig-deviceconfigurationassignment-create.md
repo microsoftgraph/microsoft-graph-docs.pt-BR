@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 035828ad5266c745e33cbd57f097d925e6ea4c5c
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31792556"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32469590"
 ---
 # <a name="create-deviceconfigurationassignment"></a>Criar deviceConfigurationAssignment
 

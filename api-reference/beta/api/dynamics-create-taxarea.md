@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: 6addfb3617b05bcb8b6a12d6df31e115d5ea01a9
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365763"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463709"
 ---
 # <a name="create-taxareas"></a>Criar taxAreas
 Cria um objeto de área de impostos no Dynamics 365 Business central.

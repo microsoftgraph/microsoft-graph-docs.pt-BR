@@ -1,21 +1,21 @@
 ---
-title: tipo de recurso de meetingParticipants
-description: Participantes em uma reunião.
+title: tipo de recurso meetingParticipants
+description: Participantes de uma reunião.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 57a07e29beae6915c7e40f7fb8a6e941351fd38f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508780"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463821"
 ---
-# <a name="meetingparticipants-resource-type"></a>tipo de recurso de meetingParticipants
+# <a name="meetingparticipants-resource-type"></a>tipo de recurso meetingParticipants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Participantes em uma reunião.
+Participantes de uma reunião.
 
 ## <a name="properties"></a>Propriedades
 

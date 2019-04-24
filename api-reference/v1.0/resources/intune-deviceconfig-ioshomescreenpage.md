@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: f4317ac80e7ff6273b809eb747da745f5cf5edb6
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30254384"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464551"
 ---
 # <a name="ioshomescreenpage-resource-type"></a>Tipo de recurso iosHomeScreenPage
 
@@ -20,11 +20,11 @@ Uma página que contém aplicativos e pastas na tela inicial
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|Nome da página|
+|displayName|String|Nome da página|
 |ícones|Conjunto [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)|Uma lista dos aplicativos e pastas exibidos em uma página. Este conjunto pode conter um máximo de 500 elementos.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

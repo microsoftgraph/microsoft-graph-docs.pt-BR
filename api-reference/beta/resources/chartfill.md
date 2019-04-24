@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: ca968737007e5c1dfc223a45d2c2aeb3a0d12c3e
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641880"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461021"
 ---
 # <a name="chartfill-resource-type"></a>Tipo de recurso ChartFill
 
@@ -26,10 +26,10 @@ Representa a formatação de preenchimento de um elemento do gráfico.
 |[Setsolidcolor](../api/chartfill-setsolidcolor.md)|Nenhum|Define a formatação de preenchimento de um elemento do gráfico com uma cor uniforme.|
 
 ## <a name="properties"></a>Propriedades
-Nenhum
+Nenhuma
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

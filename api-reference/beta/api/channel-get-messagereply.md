@@ -4,12 +4,12 @@ description: Obter uma única resposta a uma mensagem em um canal de uma equipe.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: e61996d8f23e2606598954ce73ce0a4270308126
-ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
+ms.openlocfilehash: 991adbdef3ded60726d3e3531507547db918b1cf
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "31889965"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456658"
 ---
 # <a name="get-a-reply-to-a-channel-message"></a>Obter uma resposta a uma mensagem de canal
 
@@ -50,10 +50,11 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma cole
 Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["303d2c1c-f1c5-40ce-b68e-544343d7f42b", "19:fec4b0f2825d4c8c82abc09027a64184@thread.skype", "1555375673184", "1555377090002"],
   "name": "get_channel_message_reply"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages/{id}/replies/{id}
+GET https://graph.microsoft.com/beta/teams/303d2c1c-f1c5-40ce-b68e-544343d7f42b/channels/19:fec4b0f2825d4c8c82abc09027a64184@thread.skype/messages/1555375673184/replies/1555377090002
 ```
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. 
@@ -67,59 +68,67 @@ Veja a seguir um exemplo da resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 201
 
 {
-  "id": "id-value",
-  "replyToId": "id-value",
-  "from" : {
-      "user": { 
-        "id":  "id-value",
-        "displayName": "John Doe"
-      }  
-  },
-  "etag": "id-value",
-  "messageType": "message",
-  "createdDateTime": "2018-07-09T07:40:20.152Z",
-  "lastModifiedDateTime": "2018-07-09T07:40:20.152Z",
-  "body": {
-      "content": "This is a response to a message.",
-      "contentType": "Text"
-  },
-  "attachments": [
-        {
-            "id": "5e32f195-168a-474f-a273-12312312312",
-            "contentType": "reference",
-            "contentUrl": "https://test.sharepoint.com/sites/TestSite/Shared%20Documents/General/Test.txt",
-            "content": null,
-            "name": "Test.txt",
-            "thumbnailUrl": null
-        }
-  ],
-  "mentions": [
-      {
-          "id": "id-value ",
-          "mentionText": "Test User",
-          "mentioned": {
-          "user": {
-            "id": "id-value",
-            "displayName: "string"
-          }
-        }
-      }
-  ],
-  "importance": "normal",
-  "reactions": [
-      {
-        "reactionType": "like",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('303d2c1c-f1c5-40ce-b68e-544343d7f42b')/channels('19%3Afec4b0f2825d4c8c82abc09027a64184%40thread.skype')/messages('1555375673184')/replies/$entity",
+    "id": "1555377090002",
+    "replyToId": "1555375673184",
+    "etag": "1555377090002",
+    "messageType": "message",
+    "createdDateTime": "2019-04-16T01:11:30.002Z",
+    "lastModifiedDateTime": null,
+    "deletedDateTime": null,
+    "subject": null,
+    "summary": null,
+    "importance": "normal",
+    "locale": "en-us",
+    "policyViolation": null,
+    "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
         "user": {
-            "id": "id-value",
-            "displayName": "John Doe"
+            "id": "bb8775a4-4d8c-42cf-a1d4-4d58c2bb668f",
+            "displayName": "Adele Vance",
+            "userIdentityType": "aadUser"
+        }
+    },
+    "body": {
+        "contentType": "html",
+        "content": "<div><div>Ah, <at id=\"0\">Megan</at>, <at id=\"1\">Alex</at>, I saw them in a separate folder. Thanks!</div>\n</div>"
+    },
+    "attachments": [],
+    "mentions": [
+        {
+            "id": 0,
+            "mentionText": "Megan",
+            "mentioned": {
+                "application": null,
+                "device": null,
+                "conversation": null,
+                "user": {
+                    "id": "5d8d505c-864f-4804-88c7-4583c966cde8",
+                    "displayName": "Megan",
+                    "userIdentityType": "aadUser"
+                }
+            }
         },
-        "createdDateTime": "2018-07-09T07:40:20.152Z"
-      }
-  ],
-  "locale": "en-us"
+        {
+            "id": 1,
+            "mentionText": "Alex",
+            "mentioned": {
+                "application": null,
+                "device": null,
+                "conversation": null,
+                "user": {
+                    "id": "be178404-260a-4f80-b7e5-d52c1e6fdc71",
+                    "displayName": "Alex",
+                    "userIdentityType": "aadUser"
+                }
+            }
+        }
+    ],
+    "reactions": []
 }
 ```
 
@@ -128,7 +137,7 @@ Content-length: 201
 <!--
 {
   "type": "#page.annotation",
-  "description": "Get channel",
+  "description": "Get a reply to a channel message",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

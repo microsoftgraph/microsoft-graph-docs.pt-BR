@@ -1,21 +1,21 @@
 ---
 title: Excluir contato
-description: Excluir contato
+description: Exclua o contato.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: be83bb8f655190d2da6aace13def579e371ef024
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514765"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455734"
 ---
 # <a name="delete-contact"></a>Excluir contato
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Excluir contato
+Exclua o contato.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -26,7 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Aplicativo | Contacts.ReadWrite |
 
 ## <a name="http-request"></a>Solicitação HTTP
-<!-- { "blockType": "ignored" } -->Um [contato](../resources/contact.md) de de padrão do usuário [contactFolder](../resources/contactfolder.md).
+<!-- { "blockType": "ignored" } -->
+Um [contato](../resources/contact.md) do [contactFolder](../resources/contactfolder.md)padrão do usuário.
 ```http
 DELETE /me/contacts/{id}
 DELETE /users/{id | userPrincipalName}/contacts/{id}
@@ -36,7 +37,7 @@ Um [contact](../resources/contact.md) da [contactFolder](../resources/contactfol
 DELETE /me/contactFolders/{id}/contacts/{id}
 DELETE /users/{id | userPrincipalName}/contactFolders/{id}/contacts/{id}
 ```
-Um [contato](../resources/contact.md) contidos em uma pasta filho de um [contactFolder](../resources/mailfolder.md).  O exemplo a seguir mostra um nível de aninhamento, mas um contato pode estar localizado no filho de um filho e assim por diante.
+Um [contact](../resources/contact.md) incluso em uma pasta filha de uma [contactFolder](../resources/mailfolder.md).  O exemplo a seguir mostra um nível de aninhamento, mas um contato pode estar localizado em um filho de um filho e assim por diante.
 ```http
 DELETE /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
 DELETE /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}

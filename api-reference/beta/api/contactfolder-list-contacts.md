@@ -1,21 +1,21 @@
 ---
 title: Listar contatos
-description: Obtenha todos os contatos na caixa de correio do usuário conectado (.../me/contacts) ou a partir da pasta de contato especificada.
+description: Obter todos os contatos na caixa de correio do usuário conectado (. ../me/Contacts) ou a pasta de contatos especificada.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: b3e5ee2ad13e454c0ab118b1a5b14509c9b33fbd
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529205"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455692"
 ---
 # <a name="list-contacts"></a>Listar contatos
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha todos os contatos na caixa de correio do usuário conectado (.../me/contacts) ou a partir da pasta de contato especificada.
+Obter todos os contatos na caixa de correio do usuário conectado (. ../me/Contacts) ou a pasta de contatos especificada.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

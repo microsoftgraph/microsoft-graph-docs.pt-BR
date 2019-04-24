@@ -5,22 +5,24 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 9c26565b552471fe2601d8e3cb629fd933d72937
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27947579"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463695"
 ---
 # <a name="educationterm-resource-type"></a>Tipo de recurso educationTerm
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Termo A. Isso representa uma parte designada do ano acadêmico. É usada dentro de [educationClass](educationclass.md).
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|displayName| Cadeia de caracteres| Nome de exibição do termo.| 
+|displayName| String| Nome de exibição do termo.| 
 |externalId|Cadeia de caracteres| ID do termo no sistema de sincronização.|
-|startDate|Data|Início do termo.|
+|startDate|Date|Início do termo.|
 |endDate|Data|Fim do termo.|
 
 ## <a name="json-representation"></a>Representação JSON
@@ -46,10 +48,15 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 4e9d671f-3068-4e09-aba2-b39e81a0e452
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "educationTerm resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/educationterm.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

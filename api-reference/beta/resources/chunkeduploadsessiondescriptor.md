@@ -3,11 +3,11 @@ title: Tipo de recurso chunkedUploadSessionDescriptor
 description: Veja a seguir uma representação JSON do recurso
 localization_priority: Normal
 ms.openlocfilehash: b11bff34e70585c4cf7be23f5ce6d3a0c2ac0a0c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27834605"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460601"
 ---
 # <a name="chunkeduploadsessiondescriptor-resource-type"></a>Tipo de recurso chunkedUploadSessionDescriptor
 
@@ -15,7 +15,7 @@ ms.locfileid: "27834605"
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|name|Cadeia de caracteres||
+|nome|String||
 
 ## <a name="json-representation"></a>Representação JSON
 

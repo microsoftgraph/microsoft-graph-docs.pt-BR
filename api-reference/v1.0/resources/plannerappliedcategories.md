@@ -1,23 +1,25 @@
 ---
-title: Tipo de recurso plannerAppliedCategories
-description: O recurso de **AppliedCategoriesCollection** representa a coleção de categorias (ou rótulos) que tiverem sido aplicadas a uma tarefa. Ele faz parte do objeto plannerTask.
+title: tipo de recurso plannerAppliedCategories
+description: O recurso **AppliedCategoriesCollection** representa a coleção de categorias (ou rótulos) que foram aplicados a uma tarefa. Ele faz parte do objeto plannerTask.
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 604cf63d922ab59e038b5ccb8ea3b48a707a9bc0
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27981599"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462344"
 ---
-# <a name="plannerappliedcategories-resource-type"></a>Tipo de recurso plannerAppliedCategories
+# <a name="plannerappliedcategories-resource-type"></a>tipo de recurso plannerAppliedCategories
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O recurso **AppliedCategoriesCollection** representa a coleção de categorias (ou rótulos) que foram aplicadas a uma tarefa. Ele faz parte do objeto [plannerTask](plannertask.md). Pode haver até seis categorias aplicadas a uma tarefa. Descrições de categorias, por exemplo, `category1`, `category2` etc., fazem parte do objeto [plan details](plannerplandetails.md). Este é um Tipo Aberto.
+O recurso **AppliedCategoriesCollection** representa a coleção de categorias (ou rótulos) que foram aplicados a uma tarefa. Ele faz parte do objeto [plannerTask](plannertask.md) .
+Pode haver até 6 categorias aplicadas a uma tarefa. Descrições de categoria, por `category1`exemplo `category2` , etc., fazem parte do objeto [Plan Details](plannerplandetails.md) . Este é um tipo aberto.
 
 ## <a name="properties"></a>Propriedades
-As propriedades de um Tipo Aberto podem ser definidas pelo cliente. Nesse caso, o cliente deve fornecer `category1`, `category2`, `category3`, `category4`, `category5` e/ou `category6` como propriedades com seus valores representados pelo booliano `true` quando as categorias correspondentes são aplicadas à tarefa. Um exemplo é mostrado abaixo. Quando elas não se aplicam, as propriedades são automaticamente removidas ao configurar os valores com o booliano `false`. 
+As propriedades de um tipo aberto podem ser definidas pelo cliente. Nesse caso, no entanto, o cliente `category1`deve `category2`fornecer `category3`, `category4`, `category5` , e/ `category6` ou como propriedades com seus valores sendo `true` Boolean quando as categorias correspondentes são aplicadas à tarefa. O exemplo é mostrado abaixo. Quando eles não se aplicam, as propriedades são removidas automaticamente definindo seus `false` valores para o Boolean. 
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -25,8 +27,9 @@ Veja a seguir uma representação JSON do recurso
 
 <!-- {
   "blockType": "resource",
-  "openType": true,
-  "optionalProperties": [ "String-value" ],
+  "optionalProperties": [
+
+  ],
   "@odata.type": "microsoft.graph.plannerAppliedCategories"
 }-->
 
@@ -48,10 +51,15 @@ Exemplo:
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "plannerAppliedCategories resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/plannerappliedcategories.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

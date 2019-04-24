@@ -1,31 +1,31 @@
 ---
 title: Cancelar governanceRoleAssignmentRequest
-description: Cancele um governanceRoleAssignmentRequest.
+description: Cancelar uma governanceRoleAssignmentRequest.
 localization_priority: Normal
 ms.openlocfilehash: 0437051a3d2550da8a8fe3e9984214ff7c885e3a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521730"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32467320"
 ---
 # <a name="cancel-governanceroleassignmentrequest"></a>Cancelar governanceRoleAssignmentRequest
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Cancele um [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).
+Cancelar uma [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources  |
+|Delegado (conta corporativa ou de estudante) | PrivilegedAccess. ReadWrite. AzureResources  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | PrivilegedAccess.ReadWrite.AzureResources |
+|Aplicativo | PrivilegedAccess. ReadWrite. AzureResources |
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Esse método **não** suporta [Parâmetros da Consulta OData](/graph/query-parameters).
+Este método não **** oferece suporte a [parâmetros de consulta OData](/graph/query-parameters).
 
 ### <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -36,7 +36,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/cancel
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
-| Autorização  | Portador {código}|
+| Authorization  | Portador {código}|
 | Content-type  | application/json|
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -46,11 +46,11 @@ Não forneça um corpo de solicitação para esse método.
 Se bem-sucedido, este método retorna um código de resposta `204 NoContent`. Não retorna nada no corpo da resposta. 
 
 ## <a name="error-codes"></a>Códigos de erro
-Essa API segue o padrão dos códigos HTTP. Além disso, os códigos de erro personalizadas são mostrados abaixo.
+Essa API segue o padrão de códigos HTTP. Além disso, os códigos de erro personalizados são mostrados abaixo.
 |Código de erro     | Mensagem de erro              | Detalhes |
 |:--------------------| :---------------------|:--------------------|
 | 400 BadRequest | RoleAssignmentRequestNotFound | O governanceRoleAssignmentRequest não existe no sistema.
-| 400 BadRequest | RequestCannotBeCancelled    | Somente as solicitações em status de `Granted`, `PendingApproval`, `PendingApprovalProvisioning` e `PendingAdminDecision` pode ser cancelado.
+| 400 BadRequest | RequestCannotBeCancelled    | Somente as solicitações no status `Granted`de `PendingApproval`, `PendingApprovalProvisioning` e `PendingAdminDecision` podem ser canceladas.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação

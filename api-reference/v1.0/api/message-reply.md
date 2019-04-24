@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 1aacac847295926562036a65007cac1f542f50fd
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27961306"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463639"
 ---
 # <a name="message-reply"></a>message: reply
 
@@ -43,7 +43,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|comment|Cadeia de caracteres|Um comentário a incluir. Não pode ficar vazio.|
+|comment|String|Um comentário a incluir. Não pode ficar vazio.|
 
 ## <a name="response"></a>Resposta
 

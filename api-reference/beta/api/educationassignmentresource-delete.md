@@ -5,24 +5,24 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 0a6ac6f4cddde9d80e48080b0f54b2610e84782c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513036"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457916"
 ---
 # <a name="delete-educationassignmentresource"></a>Excluir educationAssignmentResource
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exclua um recurso de uma atribuição. Somente professores na classe podem remover um recurso. Depois que uma atribuição tiver sido publicada aos alunos, professores não é possível remover os recursos que são marcados como "distributeToStudents".
+Excluir um recurso de uma atribuição. Somente os professores da turma podem remover um recurso. Após uma atribuição ter sido publicada para estudantes, os professores não poderão remover recursos marcados como "distributeToStudents".
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
+|Delegado (conta corporativa ou de estudante) |  EduAssignments. ReadWriteBasic, EduAssignments. ReadWrite  |
 |Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
 |Aplicativo | Sem suporte. | 
 

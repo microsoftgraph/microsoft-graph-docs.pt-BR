@@ -1,21 +1,21 @@
 ---
-title: tipo de recurso de commsOperation
-description: O status de determinadas operações de execução longa.
+title: tipo de recurso commsOperation
+description: O status de determinadas operações de longa duração.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: b7914bd9692b4d9a94294f9a09659467e10550a6
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642202"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460594"
 ---
-# <a name="commsoperation-resource-type"></a>tipo de recurso de commsOperation
+# <a name="commsoperation-resource-type"></a>tipo de recurso commsOperation
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O status de determinadas operações de execução longa.
+O status de determinadas operações de longa duração.
 
 ## <a name="methods"></a>Métodos
 Nenhum
@@ -24,15 +24,15 @@ Nenhum
 
 | Propriedade           | Tipo                        | Descrição                                                                     |
 | :----------------- | :-------------------------- | :-------------------------------------------------------------------------------|
-| clientContext      | String                      | O contexto de cliente.                                                             |
+| clientContext      | String                      | O contexto do cliente.                                                             |
 | createdDateTime    | DateTimeOffset              | A hora de início da operação.                                                |
-| id                 | String                      | A id da operação. Somente leitura. Servidor gerado.                                  |
+| id                 | String                      | A ID da operação. Somente leitura. Servidor gerado.                                  |
 | lastActionDateTime | DateTimeOffset              | A hora da última ação da operação.                                   |
 | resultInfo         | [resultInfo](resultinfo.md) | As informações de resultado. Somente leitura. Servidor gerado.                            |
 | status             | String                      | Os valores possíveis são: `notStarted`, `running`, `completed`, `failed`. Somente leitura. |
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 

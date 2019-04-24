@@ -1,21 +1,21 @@
 ---
 title: Atualizar administrativeunit
-description: Atualize as propriedades de um objeto administrativeUnit.
+description: Atualiza as propriedades de um objeto administrativeUnit.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: f3c57f8784bf642df7944bc6295ebd4fadc0ba43
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511153"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459278"
 ---
 # <a name="update-administrativeunit"></a>Atualizar administrativeunit
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades de um objeto [administrativeUnit](../resources/administrativeunit.md) .
+Atualiza as propriedades de um objeto [administrativeUnit](../resources/administrativeunit.md) .
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -44,11 +44,11 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|description|string|Descrição para a unidade administrativa.|
-|displayName|string|Nome de exibição para a unidade administrativa.|
-|visibility|string|Visibilidade para a unidade administrativa. Se não estiver definido, então, o padrão é "público". Pode ser definido como "HiddenMembership", que oculta a associação de não-membros.|
+|description|string|Descrição da unidade administrativa.|
+|displayName|cadeia de caracteres|Nome de exibição para a unidade administrativa.|
+|visibility|string|Visibilidade para a unidade administrativa. Se não for definido, o padrão será "Public". Pode ser definido como "HiddenMembership", que oculta a associação de não membros.|
 
-Desde que o recurso de **administrativeUnit** oferece suporte às [extensões](/graph/extensibility-overview), você pode usar o `PATCH` operação para adicionar, atualizar ou excluir seus próprios dados específicos do aplicativo nas propriedades personalizadas de uma extensão em uma instância existente do **administrativeUnit** .
+Como o recurso **administrativeUnit** oferece suporte a [extensões](/graph/extensibility-overview), você pode `PATCH` usar a operação para adicionar, atualizar ou excluir seus próprios dados específicos de aplicativo em Propriedades personalizadas de uma extensão em uma instância existente do **administrativeUnit** .
 
 ## <a name="response"></a>Resposta
 

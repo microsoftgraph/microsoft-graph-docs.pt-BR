@@ -1,15 +1,15 @@
 ---
-title: Tipo de recurso phone
+title: tipo de recurso de telefone
 description: Representa um número de telefone.
 localization_priority: Normal
 ms.openlocfilehash: 6c34033b0895f81619589e7500441fc655842995
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805058"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462533"
 ---
-# <a name="phone-resource-type"></a>Tipo de recurso phone
+# <a name="phone-resource-type"></a>tipo de recurso de telefone
 
 Representa um número de telefone.
 
@@ -18,7 +18,7 @@ Representa um número de telefone.
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |number|string|O número de telefone.|
-|type|phoneType|O tipo de número de telefone. Os valores possíveis são: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
+|type|PhoneType|O tipo de número de telefone. Os valores possíveis são `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
 
 ## <a name="json-representation"></a>Representação JSON
 

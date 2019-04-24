@@ -1,30 +1,30 @@
 ---
-title: Registrar governanceResource
-description: Registre um objeto governanceResource não gerenciado no PIM.
+title: Registrar Entidadegovernanceresource
+description: Registre um objeto Entidadegovernanceresource não gerenciado no PIM.
 localization_priority: Normal
 ms.openlocfilehash: f65c8b5884f08377967d3418bade0d5fc70c2063
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519042"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463940"
 ---
-# <a name="register-governanceresource"></a>Registrar governanceResource
+# <a name="register-governanceresource"></a>Registrar Entidadegovernanceresource
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Registre um objeto não gerenciado [governanceResource](../resources/governanceresource.md) no gerenciamento de identidades privilegiado.
+Registre um objeto [entidadegovernanceresource](../resources/governanceresource.md) não gerenciado no gerenciamento de identidade privilegiado.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
->**Observação:** Essa API também requer que o solicitante tenha pelo menos uma atribuição de função ativa no recurso.
+>**Observação:** Essa API também exige que o solicitante tenha pelo menos uma atribuição de função ativa no recurso.
 
 |Tipo de permissão      | Permissões              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources  |
+|Delegado (conta corporativa ou de estudante) | PrivilegedAccess. ReadWrite. AzureResources  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | PrivilegedAccess.ReadWrite.AzureResources |
+|Aplicativo | PrivilegedAccess. ReadWrite. AzureResources |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -33,12 +33,12 @@ POST /privilegedAccess/azureResources/resources/register
 ```
 
 ### <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método **só** oferece suporte a `$select` e `$expand` [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método **só** oferece suporte `$select` a `$expand` [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ### <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
 |:----------|:----------|
-| Autorização  | Portador {código}|
+| Authorization  | Portador {código}|
 | Content-type  | application/json|
 
 ### <a name="request-body"></a>Corpo da solicitação
@@ -48,10 +48,10 @@ Este método **só** oferece suporte a `$select` e `$expand` [parâmetros de con
 |externalId    |Cadeia de caracteres                 |✓        |ExternalId do recurso a ser registrado no PIM.|
 
 ### <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` resposta.
+Se tiver êxito, este método retornará `200 OK` uma resposta.
 
 ### <a name="example"></a>Exemplo
-Este exemplo mostra como registrar uma assinatura do Azure Wingtip Toys - produção.
+Este exemplo mostra como registrar uma assinatura do Azure na Wingtip Toys-prod.
 <!-- {
   "blockType": "request",
   "name": "get_governanceresource"

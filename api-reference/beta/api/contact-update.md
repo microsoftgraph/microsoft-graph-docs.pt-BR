@@ -1,21 +1,21 @@
 ---
 title: Atualizar contato
-description: Atualize as propriedades do objeto de contato.
+description: Atualiza as propriedades do objeto de contato.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: c6ed3304b5f44a8bb1d35c1db491e8eaf7ae47b4
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528204"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455696"
 ---
 # <a name="update-contact"></a>Atualizar contato
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades do objeto de contato.
+Atualiza as propriedades do objeto de contato.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -26,7 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Aplicativo | Contacts.ReadWrite |
 
 ## <a name="http-request"></a>Solicitação HTTP
-<!-- { "blockType": "ignored" } -->Um [contato](../resources/contact.md) de de padrão do usuário [contactFolder](../resources/contactfolder.md).
+<!-- { "blockType": "ignored" } -->
+Um [contato](../resources/contact.md) do [contactFolder](../resources/contactfolder.md)padrão do usuário.
 ```http
 PATCH /me/contacts/{id}
 PATCH /users/{id | userPrincipalName}/contacts/{id}
@@ -36,7 +37,7 @@ Um [contact](../resources/contact.md) da [contactFolder](../resources/contactfol
 PATCH /me/contactFolders/{id}/contacts/{id}
 PATCH /users/{id | userPrincipalName}/contactFolders/{id}/contacts/{id}
 ```
-Um [contato](../resources/contact.md) contidos em uma pasta filho de um [contactFolder](../resources/mailfolder.md).  O exemplo a seguir mostra um nível de aninhamento, mas um contato pode estar localizado no filho de um filho e assim por diante.
+Um [contact](../resources/contact.md) incluso em uma pasta filha de uma [contactFolder](../resources/mailfolder.md).  O exemplo a seguir mostra um nível de aninhamento, mas um contato pode estar localizado em um filho de um filho e assim por diante.
 ```http
 PATCH /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
 PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
@@ -57,11 +58,11 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |categories|String|As categorias associadas ao contato.|
 |children|String||
 |companyName|String|O nome da empresa do contato.|
-|departamento|String|O departamento do contato.|
-|displayName|String|O nome para exibição do contato. Observe que as atualizações posteriores a outras propriedades podem causar um valor gerado automaticamente substituir o valor displayName que você especificou. Para preservar a um valor pré-existente, sempre incluí-lo como displayName em uma operação de atualização.|
+|department|String|O departamento do contato.|
+|displayName|String|O nome para exibição do contato. Observe que atualizações posteriores a outras propriedades podem fazer com que um valor gerado automaticamente substitua o valor displayName que você especificou. Para preservar um valor preexistente, sempre inclua-o como displayName em uma operação Update.|
 |emailAddresses|coleção [typedEmailAddress](../resources/typedemailaddress.md)|Os endereços de email do contato.|
 |fileAs|String|O nome com o qual o contato está arquivado.|
-|gender |String |Gênero do contato. |
+|gender |String |O sexo do contato. |
 |generation|String|A geração do contato.|
 |givenName|String|O nome do contato.|
 |imAddresses|String|Os endereços de mensagens instantâneas do contato.|
@@ -73,23 +74,23 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |officeLocation|String|O local do escritório do contato.|
 |parentFolderId|String|A ID da pasta pai do contato.|
 |personalNotes|String|As anotações do usuário sobre o contato.|
-|telefones |Coleção [phone](../resources/phone.md) |Números de telefone associados com o contato, por exemplo, telefone residencial, celular e telefone comercial. |
-|postalAddresses |coleção [physicalAddress](../resources/physicaladdress.md) |Endereços associados ao contato, por exemplo, início endereço e o endereço comercial. |
+|telefones |Coleção [phone](../resources/phone.md) |Números de telefone associados ao contato, por exemplo, telefone residencial, telefone celular e telefone comercial. |
+|postalAddresses |coleção [physicalAddress](../resources/physicaladdress.md) |Endereços associados ao contato, por exemplo, endereço residencial e endereço comercial. |
 |profession|String|A profissão do contato.|
 |spouseName|String|O nome do cônjuge/parceiro do contato.|
-|surname|Cadeia de caracteres|O sobrenome do contato.|
+|surname|String|O sobrenome do contato.|
 |title|Cadeia de caracteres|O título do contato.|
 |websites |Coleção [website](../resources/website.md)|Sites da Web associados ao contato. |
-|WeddingAnniversary |Data |Aniversário de chá do contato. |
+|weddingAnniversary |Data |Aniversário de casamento do contato. |
 |yomiCompanyName|String|O nome de empresa japonês fonético do contato. Essa propriedade é opcional.|
 |yomiGivenName|String|O nome japonês fonético do contato. Essa propriedade é opcional.|
 |yomiSurname|String|O sobrenome japonês fonético do contato. Essa propriedade é opcional.|
 
-Desde que o recurso **Contatos** oferece suporte às [extensões](/graph/extensibility-overview), você pode usar o `PATCH` operação para adicionar, atualizar ou excluir seus próprios dados específicos do aplicativo nas propriedades personalizadas de uma extensão em uma instância existente do **contato** .
+Como o recurso de **contato** oferece suporte a [extensões](/graph/extensibility-overview), você `PATCH` pode usar a operação para adicionar, atualizar ou excluir seus próprios dados específicos de aplicativo em Propriedades personalizadas de uma extensão em uma instância de **contato** existente.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e atualizadas, [entre em contato com](../resources/contact.md) o objeto no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [Contact](../resources/contact.md) atualizado no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 O exemplo a seguir atualiza o endereço de email pessoal do contato especificado.

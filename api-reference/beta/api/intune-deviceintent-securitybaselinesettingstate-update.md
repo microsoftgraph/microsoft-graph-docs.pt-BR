@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: c65f3c49159f6025ae32ee9a12c7acc395742509
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31787740"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32466123"
 ---
 # <a name="update-securitybaselinesettingstate"></a>Atualizar securityBaselineSettingState
 
@@ -53,7 +53,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [securit
 |id|String|Identificador exclusivo da entidade|
 |settingName|Cadeia de caracteres|O nome da configuração que está sendo relatado|
 |state|[securityBaselineComplianceState](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|O estado de conformidade da configuração da linha de base de segurança. Os valores possíveis são: `unknown`, `secure`, `notApplicable`, `notSecure`, `error`, `conflict`.|
-|settingCategoryId|Cadeia de caracteres|A ID da categoria de configuração à qual essa configuração pertence|
+|settingCategoryId|String|A ID da categoria de configuração à qual essa configuração pertence|
 
 
 

@@ -1,21 +1,21 @@
 ---
 title: Adicionar um membro
-description: Use essa API para adicionar um membro (usuário ou grupo) para uma unidade administrativa.
+description: Use esta API para adicionar um membro (usuário ou grupo) a uma unidade administrativa.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: c1cc9ce7e091ac96ca2484c74404c3a4b04b19ec
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509480"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459227"
 ---
 # <a name="add-a-member"></a>Adicionar um membro
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use essa API para adicionar um membro (usuário ou grupo) para uma unidade administrativa.
+Use esta API para adicionar um membro (usuário ou grupo) a uma unidade administrativa.
 
 `NOTE: Currently it's only possible to add one member at a time to an administrative unit.`
 
@@ -40,7 +40,7 @@ POST /administrativeUnits/{id}/members/$ref
 | Autorização  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON de um [usuário](../resources/user.md), [grupo](../resources/group.md) ou [directoryObject](../resources/directoryobject.md) a ser adicionado.
+No corpo da solicitação, forneça uma representação JSON de um [usuário](../resources/user.md), [grupo](../resources/group.md) ou [directoryobject](../resources/directoryobject.md) a ser adicionado.
 
 ## <a name="response"></a>Resposta
 
@@ -60,7 +60,7 @@ Content-length: 109
 }
 
 ```
-No corpo da solicitação, fornecer uma representação JSON do `id` do objeto de [usuário](../resources/user.md) ou [grupo](../resources/group.md) que deseja adicionar.
+No corpo da solicitação, forneça uma representação JSON do `id` objeto [User](../resources/user.md) ou [Group](../resources/group.md) que você deseja adicionar.
 
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta.

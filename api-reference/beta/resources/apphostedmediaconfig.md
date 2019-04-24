@@ -1,17 +1,17 @@
 ---
-title: tipo de recurso de appHostedMediaConfig
+title: tipo de recurso appHostedMediaConfig
 description: Pilha de mídia hospedada pelo aplicativo.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: a2e52c1c4d48649c5763be643f8b2ededb71bce5
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643689"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460895"
 ---
-# <a name="apphostedmediaconfig-resource-type"></a>tipo de recurso de appHostedMediaConfig
+# <a name="apphostedmediaconfig-resource-type"></a>tipo de recurso appHostedMediaConfig
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

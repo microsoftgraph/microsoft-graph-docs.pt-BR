@@ -1,21 +1,21 @@
 ---
 title: Remover um membro
-description: Use essa API para remover o membro (usuário ou grupo) a partir de uma unidade administrativa.
+description: Use esta API para remover um membro (usuário ou grupo) de uma unidade administrativa.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 29ea8aa11850909c9e7122c55dc6c686ae9135a1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528078"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459497"
 ---
 # <a name="remove-a-member"></a>Remover um membro
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use essa API para remover o membro (usuário ou grupo) a partir de uma unidade administrativa.
+Use esta API para remover um membro (usuário ou grupo) de uma unidade administrativa.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -46,7 +46,7 @@ Se bem-sucedido, este método retorna um código de resposta `204 No Content`. N
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação. No exemplo a seguir, id1 representa o identificador para a unidade administrativa de destino e ID2 da representa o identificador exclusivo para o usuário membro ou grupo a ser removido da unidade administrativa alvos. 
+Este é um exemplo da solicitação. No exemplo abaixo, ID1 representa o identificador para a unidade administrativa de destino e ID2 representa o identificador exclusivo para o usuário ou grupo membro a ser removido da unidade administrativa do direcionada. 
 
 ```http
 DELETE https://graph.microsoft.com/beta/administrativeUnits/{id1}/members/{id2}/$ref

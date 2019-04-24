@@ -1,28 +1,28 @@
 ---
-title: 'chamar: redirecionar'
-description: Redirecione uma chamada recebida.
+title: 'Call: Redirect'
+description: Redirecione as chamadas recebidas.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: a6a926aa082cc35896d11ec4124091b0d2c838c0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511986"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461267"
 ---
-# <a name="call-redirect"></a>chamar: redirecionar
+# <a name="call-redirect"></a>Call: Redirect
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Redirecione uma chamada recebida.
+Redirecione as chamadas recebidas.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios)         |
 | :-------------- | :-------------------------------------------------- |
-| Delegado (conta corporativa ou de estudante)     | Não suportado                |
+| Delegado (conta corporativa ou de estudante)     | Não Suportado                |
 | Delegado (conta pessoal da Microsoft) | Não suportado                |
 | Aplicativo     | Calls.Initiate.All                                  |
 
@@ -43,18 +43,18 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|Targets|coleção [invitationParticipantInfo](../resources/invitationparticipantinfo.md)|Os participantes de destino da operação de redirecionamento.|
+|targets|coleção [invitationParticipantInfo](../resources/invitationparticipantinfo.md)|Os participantes de destino da operação de redirecionamento.|
 |targetDisposition|String|O valor possível é:`default`|
 |timeout|Int32|O tempo limite em segundos para a operação de redirecionamento.|
-|maskCallee|Booliano|Indica se o receptor de máscara.|
-|maskCaller|Booliano|Indica se o chamador de máscara.|
+|maskCallee|Booliano|Indica se o receptor deve ser mascarado.|
+|maskCaller|Booliano|Indica se o chamador deve ser mascarado.|
 
 ## <a name="response"></a>Resposta
-Retorna `202 Accepted` código de resposta
+Retorna `202 Accepted` o código de resposta
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="redirect-a-call"></a>Redirecionar uma chamada
+### <a name="redirect-a-call"></a>ReDirecionar uma chamada
 
 ##### <a name="request"></a>Solicitação
 O exemplo a seguir mostra a solicitação.
@@ -103,9 +103,9 @@ Content-Length: 515
 HTTP/1.1 202 Accepted
 ```
 
-### <a name="forward-a-call"></a>Encaminhar uma chamada
+### <a name="forward-a-call"></a>EnCaminhar uma chamada
 
-##### <a name="notification---incoming"></a>Notificação - entrada
+##### <a name="notification---incoming"></a>Notificação-entrada
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -191,7 +191,7 @@ Content-Type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---redirecting"></a>Notificação - redirecionando
+##### <a name="notification---redirecting"></a>Notificação-redirecionamento
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -220,7 +220,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---terminated"></a>Notificação - terminada
+##### <a name="notification---terminated"></a>Notificação-terminada
 
 ```http
 POST https://bot.contoso.com/api/calls

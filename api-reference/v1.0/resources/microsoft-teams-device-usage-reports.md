@@ -5,11 +5,11 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: d04e0f96d97ee7b37b3e17bce3fa737296c779d7
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575552"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32458800"
 ---
 # <a name="microsoft-teams-device-usage-reports"></a>Relatórios de uso de dispositivos do Microsoft Teams
 
@@ -19,6 +19,6 @@ Use os relatórios de uso de dispositivos do Microsoft Teams para obter informa�
 
 | Método                                   | Tipo de retorno | Descrição                              |
 | :--------------------------------------- | :---------- | :--------------------------------------- |
-| [Obter dados de usuário](../api/reportroot-getteamsdeviceusageuserdetail.md) | Fluxo      | Obtém detalhes sobre o uso de dispositivos do Microsoft Teams por usuário. |
-| [Obter contagens de usuários](../api/reportroot-getteamsdeviceusageusercounts.md) | Fluxo      | Obtém o número de usuários exclusivos diários por tipo de dispositivo. |
+| [Obter dados de usuário](../api/reportroot-getteamsdeviceusageuserdetail.md) | Stream      | Obtém detalhes sobre o uso de dispositivos do Microsoft Teams por usuário. |
+| [Obter contagens de usuários](../api/reportroot-getteamsdeviceusageusercounts.md) | Stream      | Obtém o número de usuários exclusivos diários por tipo de dispositivo. |
 | [Obter contagens de usuários de distribuição](../api/reportroot-getteamsdeviceusagedistributionusercounts.md) | Fluxo      | Obtém o número de usuários exclusivos por tipo de dispositivo no período de tempo selecionado. |

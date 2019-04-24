@@ -1,28 +1,28 @@
 ---
 title: 'educationSubmission: enviar'
-description: Uma ação que indica que um estudante é feito com o trabalho e está pronto para informar na atribuição. Essa ação só pode ser executada pelo aluno.
+description: Uma ação que indica que um aluno foi feito com o trabalho e está pronto para ser entregue na atribuição. Esta ação só pode ser realizada pelo aluno.
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 3f67e5b07ed1093ee63e9b6fdf7647fa6891dacc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510768"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464723"
 ---
 # <a name="educationsubmission-submit"></a>educationSubmission: enviar
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Uma ação que indica que um estudante é feito com o trabalho e está pronto para informar na atribuição. Essa ação só pode ser executada pelo aluno. Isso alterará o status do envio de "trabalho" para "enviado". Durante o processo de envio, todos os recursos serão copiados para o Balde submittedResources. O professor será observando a lista de recursos enviados para a classificação.
+Uma ação que indica que um aluno foi feito com o trabalho e está pronto para ser entregue na atribuição. Esta ação só pode ser realizada pelo aluno. Isso alterará o status do envio de "trabalho" para "enviado". Durante o processo de envio, todos os recursos serão copiados para o Bucket submittedResources. O professor examinará a lista de recursos enviados para fins de gradação.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
+|Delegado (conta corporativa ou de estudante) |  EduAssignments. ReadWriteBasic, EduAssignments. ReadWrite  |
 |Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
 |Aplicativo | Sem suporte. | 
 

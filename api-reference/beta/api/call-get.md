@@ -1,29 +1,29 @@
 ---
-title: Get call
-description: Recupere as propriedades e relacionamentos de um objeto de chamada.
+title: Obter chamada
+description: Recupere as propriedades e os relacionamentos de um objeto de chamada.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: f5f530fac12ae61c47a5a5e3e0f900720aac4c4e
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640340"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461287"
 ---
-# <a name="get-call"></a>Get call
+# <a name="get-call"></a>Obter chamada
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e relacionamentos de um objeto de chamada.
+Recupere as propriedades e os relacionamentos de um objeto de chamada.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios)                  |
 | :-------------- | :----------------------------------------------------------- |
-| Delegada (conta corporativa ou de estudante)     | Não são suportados.                         |
-| Delegada (conta pessoal da Microsoft) | Não são suportados.                         |
+| Delegado (conta corporativa ou de estudante)     | Sem suporte.                         |
+| Delegado (conta pessoal da conta Microsoft) | Sem suporte.                         |
 | Aplicativo                            | Nenhum.                                  |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -34,7 +34,7 @@ GET /applications/{id}/calls/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método oferece suporte para os [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome          | Descrição               |
@@ -45,7 +45,7 @@ Este método oferece suporte para os [parâmetros de consulta OData](/graph/quer
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto de [chamada](../resources/call.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [Call](../resources/call.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/beta/app/calls/{id}
 
 ##### <a name="response"></a>Resposta
 
-> **Observação: **o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
   "blockType": "response",

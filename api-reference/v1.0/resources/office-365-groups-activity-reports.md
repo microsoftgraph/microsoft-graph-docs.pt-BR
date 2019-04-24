@@ -5,11 +5,11 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: 5d8c414034a110db64b770a72fe2e3540806acdd
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573463"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462946"
 ---
 # <a name="office-365-groups-activity-reports"></a>Relatórios de atividades dos Grupos do Office 365
 
@@ -21,8 +21,8 @@ Você pode usar os relatórios de atividades dos Grupos para obter informações
 
 | Função                                 | Tipo de retorno | Descrição                              |
 | :--------------------------------------- | :-------------- |  ---------------------------------------- |
-| [Obter dados de grupo](../api/reportroot-getoffice365groupsactivitydetail.md) | Fluxo          | Obtenha dados sobre as atividades dos Grupos do Office 365 por grupo. |
-| [Obter contagens de atividade](../api/reportroot-getoffice365groupsactivitycounts.md) | Fluxo          | Obtenha o número de atividades de grupo em todas as cargas de trabalho de grupo. |
-| [Obter contagens de grupo](../api/reportroot-getoffice365groupsactivitygroupcounts.md) | Fluxo          | Obtenha o número total diário de grupos e quantos deles estavam ativos com base em conversas de email, postagens do Yammer e atividades de arquivo do SharePoint. |
-| [Obter armazenamento](../api/reportroot-getoffice365groupsactivitystorage.md) | Fluxo          | Obtenha o armazenamento total usado em todas as caixas de correio de grupo e sites de grupo. |
+| [Obter dados de grupo](../api/reportroot-getoffice365groupsactivitydetail.md) | Stream          | Obtenha dados sobre as atividades dos Grupos do Office 365 por grupo. |
+| [Obter contagens de atividade](../api/reportroot-getoffice365groupsactivitycounts.md) | Stream          | Obtenha o número de atividades de grupo em todas as cargas de trabalho de grupo. |
+| [Obter contagens de grupo](../api/reportroot-getoffice365groupsactivitygroupcounts.md) | Stream          | Obtenha o número total diário de grupos e quantos deles estavam ativos com base em conversas de email, postagens do Yammer e atividades de arquivo do SharePoint. |
+| [Obter armazenamento](../api/reportroot-getoffice365groupsactivitystorage.md) | Stream          | Obtenha o armazenamento total usado em todas as caixas de correio de grupo e sites de grupo. |
 | [Obter contagens de arquivo](../api/reportroot-getoffice365groupsactivityfilecounts.md) | Fluxo          | Obtenha o número total de arquivos e quantos deles estavam ativos em todos os sites do grupo associados a um Grupo do Office 365. |

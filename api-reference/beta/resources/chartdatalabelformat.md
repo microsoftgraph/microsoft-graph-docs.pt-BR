@@ -1,28 +1,28 @@
 ---
 title: Tipo de recurso ChartDataLabelFormat
-description: Abrange as propriedades de formatação dos rótulos de dados do gráfico.
+description: Encapsula as propriedades de formato dos rótulos de dados do gráfico.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: ced4e03cf715efdddac9570dbd00c4dc0b59b9bb
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641012"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461006"
 ---
 # <a name="chartdatalabelformat-resource-type"></a>Tipo de recurso ChartDataLabelFormat
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Abrange as propriedades de formatação dos rótulos de dados do gráfico.
+Encapsula as propriedades de formato dos rótulos de dados do gráfico.
 
 
 ## <a name="methods"></a>Métodos
 Nenhum
 
 ## <a name="properties"></a>Propriedades
-Nenhum
+Nenhuma
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|

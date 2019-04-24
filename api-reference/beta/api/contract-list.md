@@ -1,21 +1,19 @@
 ---
 title: Listar contratos
-description: Recupere uma lista de objetos contract associados a um locatário do parceiro.
+description: Recupere uma lista de objetos Contract associados a um locatário do parceiro.
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 4161e6f4cfabaf5d2e4b23bef8007fd8a6c65c45
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520778"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455616"
 ---
 # <a name="list-contracts"></a>Listar contratos
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Recupere uma lista de objetos [contract](../resources/contract.md) associados a um locatário do parceiro.
+Recupere uma lista de objetos [Contract](../resources/contract.md) associados a um locatário do parceiro.
 
 ## <a name="permissions"></a>Permissões
 
@@ -39,7 +37,7 @@ GET /contracts
 
 Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta. 
 
-> A filtragem é compatível com customerId, defaultDomainName e displayName.
+> Há suporte para filtragem para customerId, defaultDomainname e displayName.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -53,7 +51,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [Contract](../resources/contract.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [Contract](../resources/contract.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -63,16 +61,16 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma cole
   "name": "get_contract"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/contracts
+GET https://graph.microsoft.com/v1.0/contracts
 ```
 
 ##### <a name="response"></a>Resposta
 
-Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.Contract",
+  "@odata.type": "microsoft.graph.contract",
   "isCollection": true
 } -->
 ```http
@@ -94,15 +92,10 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Get Contract",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/contract-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

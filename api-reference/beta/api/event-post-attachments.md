@@ -1,15 +1,15 @@
 ---
 title: Adicionar anexo
-description: Use essa API para adicionar um anexo a um evento. Desde daí
+description: Use esta API para adicionar um anexo a um evento. Como não há
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: ece15b579bae9e439eb9303c8b594631ce9b9b31
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525224"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464015"
 ---
 # <a name="add-attachment"></a>Adicionar anexo
 
@@ -176,7 +176,7 @@ Content-length: 162
 
 ### <a name="request"></a>Solicitação
 
-Aqui está um exemplo de uma solicitação que adiciona um anexo de referência para um evento existente.
+Veja um exemplo de uma solicitação que adiciona um anexo de referência a um evento existente.
 O anexo aponta para uma pasta no OneDrive.
 <!-- {
   "blockType": "request",
@@ -201,7 +201,7 @@ Content-length: 319
 
 ### <a name="response"></a>Resposta
 
-Aqui está um exemplo de uma resposta completa.
+Veja um exemplo de resposta completa.
 <!-- {
   "blockType": "response",
   "truncated": true,

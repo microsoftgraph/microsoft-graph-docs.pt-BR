@@ -1,21 +1,21 @@
 ---
 title: Listar participantes
-description: Recupere uma lista de objetos de participantes na chamada.
+description: Recupere uma lista de objetos participantes na chamada.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: bc38af4a6bee4a380a001310303d67efb2705dcf
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29967344"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461259"
 ---
 # <a name="list-participants"></a>Listar participantes
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de objetos de participantes na chamada.
+Recupere uma lista de objetos participantes na chamada.
 
 ## <a name="permissions"></a>Permissões
 
@@ -23,7 +23,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 | :-------------- | :------------------------------------------ |
-| Delegado (conta corporativa ou de estudante)     | Não suportado        |
+| Delegado (conta corporativa ou de estudante)     | Não Suportado        |
 | Delegado (conta pessoal da Microsoft) | Não suportado        |
 | Aplicativo     | Nenhum                                        |
 
@@ -38,7 +38,7 @@ GET /applications/{id}/calls/{id}/participants
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte para os [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -52,7 +52,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e a coleção de objetos de [participante](../resources/participant.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [participantes](../resources/participant.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
@@ -72,7 +72,7 @@ Authorization: Bearer <TOKEN>
 
 ### <a name="response"></a>Resposta
 
-> **Observação: **o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
   "blockType": "response",

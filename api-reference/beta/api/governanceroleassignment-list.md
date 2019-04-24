@@ -1,15 +1,15 @@
 ---
-title: Lista governanceRoleAssignments
+title: Listar governanceRoleAssignments
 description: Recupere uma coleção de governanceRoleAssignments.
 localization_priority: Normal
 ms.openlocfilehash: b6b83397d93ab502758202c7f22513d97db37540
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524867"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32465249"
 ---
-# <a name="list-governanceroleassignments"></a>Lista governanceRoleAssignments
+# <a name="list-governanceroleassignments"></a>Listar governanceRoleAssignments
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -20,22 +20,22 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources  |
+|Delegado (conta corporativa ou de estudante) | PrivilegedAccess. ReadWrite. AzureResources  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | PrivilegedAccess.ReadWrite.AzureResources |
+|Aplicativo | PrivilegedAccess. ReadWrite. AzureResources |
 
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 
-Uma coleção de [governanceRoleAssignments](../resources/governanceroleassignment.md) em um recurso de lista.
+Lista uma coleção de [governanceRoleAssignments](../resources/governanceroleassignment.md) em um recurso.
 
->**Observação:** Além do escopo de permissão, esta solicitação requer o solicitante ter pelo menos uma atribuição no recurso. 
+>**Observação:** Além do escopo de permissão, essa solicitação exige que o solicitante tenha pelo menos uma atribuição de função no recurso. 
 ```http
 GET /privilegedAccess/azureResources/resources/{resourceId}/roleAssignments
 GET /privilegedAccess/azureResources/roleAssignments?$filter=resourceId+eq+'{resourceId}'
 ```
-Uma coleção de [governanceRoleAssignments](../resources/governanceroleassignment.md) dos meus de lista.
+Liste uma coleção de [governanceRoleAssignments](../resources/governanceroleassignment.md) de meus.
 ```http
 GET /privilegedAccess/azureResources/roleAssignments?$filter=subjectId+eq+'{myId}'
 ```
@@ -45,16 +45,16 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
 |:----------|:----------|
-| Autorização  | Portador {código}|
+| Authorization  | Portador {código}|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [governanceRoleAssignment](../resources/governanceroleassignment.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [governanceRoleAssignment](../resources/governanceroleassignment.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 
-Este exemplo mostra como obter minhas atribuições de função na subscrição Wingtip Toys - produção.
+Este exemplo mostra como obter minhas atribuições de função na assinatura Wingtip Toys-prod.
 <!-- {
   "blockType": "request",
   "name": "get_governanceroleassignments"

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 317736fd016ca457a7fad9536ce71f00b6954b3b
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31776175"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460503"
 ---
 # <a name="keyvalue-resource-type"></a>tipo de recurso KeyValue
 
@@ -22,7 +22,7 @@ Definição de valor de chave.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|key|Cadeia de caracteres|Chave.|
+|key|String|Chave.|
 |value|Cadeia de caracteres|Valor.|
 
 ## <a name="relationships"></a>Relações

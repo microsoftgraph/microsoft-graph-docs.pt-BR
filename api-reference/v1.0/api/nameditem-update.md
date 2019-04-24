@@ -3,11 +3,11 @@ title: Atualizar nameditem
 description: Atualize as propriedades do objeto nameditem.
 localization_priority: Normal
 ms.openlocfilehash: 59919e030d06e4c84242396d61c68d601433cc7a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838707"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460875"
 ---
 # <a name="update-nameditem"></a>Atualizar nameditem
 
@@ -42,7 +42,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto de [WorkbookNamedItem](../resources/nameditem.md) atualizado no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [WorkbookNamedItem](../resources/nameditem.md) atualizado no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

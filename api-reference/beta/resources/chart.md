@@ -1,21 +1,21 @@
 ---
 title: Tipo de recurso Chart
-description: Representa um objeto de gráfico em uma pasta de trabalho.
+description: Representa um objeto chart em uma pasta de trabalho.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 4bc0ad0d31981e7e84241519e92569ab25c2cf18
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643231"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460937"
 ---
 # <a name="chart-resource-type"></a>Tipo de recurso Chart
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa um objeto de gráfico em uma pasta de trabalho.
+Representa um objeto chart em uma pasta de trabalho.
 
 
 ## <a name="methods"></a>Métodos
@@ -27,29 +27,29 @@ Representa um objeto de gráfico em uma pasta de trabalho.
 |[List series](../api/chart-list-series.md) |Coleção [ChartSeries](chartseries.md)| Obtenha uma coleção de objetos ChartSeries.|
 |[Update](../api/chart-update.md) | [Chart](chart.md)   |Atualize um objeto Chart. |
 |[Image](../api/chart-image.md)|Cadeia de caracteres de imagem codificada em base64|Processa o gráfico como uma imagem codificada em base64, dimensionando o gráfico para se ajustar às dimensões especificadas.|
-|[Delete](../api/chart-delete.md)|Nenhum|Exclui o objeto de gráfico.|
+|[Excluir](../api/chart-delete.md)|Nenhum|Exclui o objeto de gráfico.|
 |[SetData](../api/chart-setdata.md)|Nenhum|Redefine os dados de origem do gráfico.|
 |[Setposition](../api/chart-setposition.md)|Nenhum|Posiciona o gráfico em relação às células na planilha.|
 |[List](../api/chart-list.md) | Coleção [Chart](chart.md) |Obtenha a coleção de objetos do gráfico. |
-|[Itemat](../api/chartcollection-itemat.md)|[Chart](chart.md)|Obtém um gráfico com base em sua posição na coleção.|
+|[Itemat](../api/chartcollection-itemat.md)|[Gráfico](chart.md)|Obtém um gráfico com base em sua posição na coleção.|
 |[Add](../api/chartcollection-add.md)|[Chart](chart.md)|Cria um novo gráfico.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|height|Double|Representa a altura, em pontos, do objeto Chart.|
+|height|double|Representa a altura, em pontos, do objeto Chart.|
 |id|string|Obtém um gráfico com base em sua posição no conjunto. Somente leitura.|
-|left|Double|A distância, em pontos, da esquerda do gráfico à origem da planilha.|
-|name|string|Representa o nome de um objeto Chart.|
-|top|Double|Representa a distância, em pontos, da borda superior do objeto à parte superior da primeira linha de uma planilha ou da área de um gráfico.|
+|left|double|A distância, em pontos, da esquerda do gráfico à origem da planilha.|
+|nome|string|Representa o nome de um objeto Chart.|
+|top|duplo|Representa a distância, em pontos, da borda superior do objeto à parte superior da primeira linha de uma planilha ou da área de um gráfico.|
 |width|Double|Representa a largura, em pontos, do objeto de gráfico.|
 
-## <a name="relationships"></a>Relacionamentos
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |axes|[ChartAxes](chartaxes.md)|Representa os eixos de um gráfico. Somente leitura.|
 |dataLabels|[ChartDataLabels](chartdatalabels.md)|Representa os rótulos de dados no gráfico. Somente leitura.|
-|formato|[ChartAreaFormat](chartareaformat.md)|Encapsula as propriedades de formato da área do gráfico. Somente leitura.|
+|format|[ChartAreaFormat](chartareaformat.md)|Encapsula as propriedades de formato da área do gráfico. Somente leitura.|
 |legend|[ChartLegend](chartlegend.md)|Representa a legenda do gráfico. Somente leitura.|
 |series|Coleção [ChartSeries](chartseries.md)|Representa uma única série ou uma coleção de séries no gráfico. Somente leitura.|
 |title|[ChartTitle](charttitle.md)|Representa o título do gráfico especificado, incluindo o texto, a visibilidade, a posição e a formatação. Somente leitura.|
