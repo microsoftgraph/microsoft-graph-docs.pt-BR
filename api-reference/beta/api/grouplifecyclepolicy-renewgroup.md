@@ -1,23 +1,23 @@
 ---
-title: 'groupLifecyclePolicy: renewGroup'
+title: 'groupLifecyclePolicy: renovar'
 description: Renova o período de validade de um grupo. Após renovar um grupo, o período de validade é estendido de acordo com o número de dias definido na política.
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 ms.openlocfilehash: 7eb0ef44a5e07c8c293ba804cc8ec31a8312576d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520869"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32501844"
 ---
-# <a name="grouplifecyclepolicy-renewgroup"></a>groupLifecyclePolicy: renewGroup
+# <a name="grouplifecyclepolicy-renewgroup"></a>groupLifecyclePolicy: renovar
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Renova o período de validade de um grupo. Após renovar um grupo, o período de validade é estendido de acordo com o número de dias definido na política.
 
-> **Observação:** Na versão 1.0, [use o recurso de grupo para tornar renovar solicitações](/graph/api/group-renew?view=graph-rest-1.0).
+> **Observação:** Em V 1.0, [use o recurso de grupo para fazer solicitações de renovação](/graph/api/group-renew?view=graph-rest-1.0).
 
 ## <a name="permissions"></a>Permissões
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All ou Directory.ReadWrite.All    |
-|Delegado (conta pessoal da Microsoft) | Sem suporte |
+|Delegado (conta pessoal da conta Microsoft) | Sem suporte |
 |Aplicativo | Group.ReadWrite.All ou Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -49,7 +49,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|groupId|Guid| A identificação do grupo renovar. |
+|groupId|Guid| A ID do grupo a ser renovado. |
 
 ## <a name="response"></a>Resposta
 

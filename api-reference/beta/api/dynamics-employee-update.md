@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: c3d36d06f0a3eb819af07d3edf512114a03c4409
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365707"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32458443"
 ---
 # <a name="update-employees"></a>Atualizar funcionários
 Atualizar as propriedades de um objeto Employee para o Dynamics 365 Business central.
@@ -38,7 +38,7 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 |Cabeçalho         |Valor                     |
 |---------------|--------------------------|
 |Autorização  |{token} de portador. Obrigatório. |
-|Content-Type   |Application/JSON.         |
+|Content-Type   |application/json.         |
 |If-Match       |Obrigatório. Quando esse cabeçalho de solicitação for incluído e a eTag fornecida não corresponder à marca atual nos **funcionários**, os **funcionários** não serão atualizados. |
 
 ## <a name="request-body"></a>Corpo da solicitação

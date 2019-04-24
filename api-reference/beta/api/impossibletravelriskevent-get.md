@@ -1,19 +1,19 @@
 ---
 title: Obter impossibleTravelRiskEvent
-description: Recupere as propriedades e relacionamentos de um objeto impossibletravelriskevent.
+description: Recupere as propriedades e os relacionamentos de um objeto impossibletravelriskevent.
 localization_priority: Normal
 ms.openlocfilehash: e5f1d7a47c261a9524225a1308531de8cd8de27c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520715"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32501351"
 ---
 # <a name="get-impossibletravelriskevent"></a>Obter impossibleTravelRiskEvent
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e relacionamentos de um objeto impossibletravelriskevent.
+Recupere as propriedades e os relacionamentos de um objeto impossibletravelriskevent.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -39,7 +39,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` objeto response de código e [impossibleTravelRiskEvent](../resources/impossibletravelriskevent.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [impossibleTravelRiskEvent](../resources/impossibletravelriskevent.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

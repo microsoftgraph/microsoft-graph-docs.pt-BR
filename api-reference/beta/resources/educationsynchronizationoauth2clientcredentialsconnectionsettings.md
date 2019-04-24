@@ -1,23 +1,23 @@
 ---
-title: recurso de educationSynchronizationOAuth2ClientCredentialsConnectionSettings
-description: Quando OAuth2 Grant de credenciais de cliente será usado para se conectar ao provedor de dados, esse tipo de configurações de conexão deve ser usado para configurar o perfil.
+title: recurso educationSynchronizationOAuth2ClientCredentialsConnectionSettings
+description: Quando a concessão de credenciais de cliente do OAuth2 for usada para se conectar ao provedor de dados, esse tipo de configuração de conexão deverá ser usado para configurar o perfil.
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: 37121868793dd76aec2c3b48182e114348d21014
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523551"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507032"
 ---
-# <a name="educationsynchronizationoauth2clientcredentialsconnectionsettings-resource"></a>recurso de educationSynchronizationOAuth2ClientCredentialsConnectionSettings
+# <a name="educationsynchronizationoauth2clientcredentialsconnectionsettings-resource"></a>recurso educationSynchronizationOAuth2ClientCredentialsConnectionSettings
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Quando [OAuth2 Grant de credenciais de cliente](https://tools.ietf.org/html/rfc6749#section-4.4) será usado para se conectar ao provedor de dados, esse tipo de configurações de conexão deve ser usado para configurar o perfil.
+Quando a [concessão de credenciais de cliente do OAuth2](https://tools.ietf.org/html/rfc6749#section-4.4) for usada para se conectar ao provedor de dados, esse tipo de configuração de conexão deverá ser usado para configurar o perfil.
 
-Derivado do [educationSynchronizationConnectionSettings](educationsynchronizationconnectionsettings.md).
+Derivado de [educationSynchronizationConnectionSettings](educationsynchronizationconnectionsettings.md).
 
 ## <a name="properties"></a>Propriedades
 

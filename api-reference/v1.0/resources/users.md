@@ -5,13 +5,13 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: bfd7778d3fdc9675880b98a356dd690c4b1eaec8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27966941"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456882"
 ---
-# <a name="working-with-users-in-microsoft-graph"></a>Trabalhando com usuários no Microsoft Graph
+# <a name="working-with-users-in-microsoft-graph"></a>Trabalhar com usuários no Microsoft Graph
 
 Você pode usar o Microsoft Graph para criar experiências envolventes do aplicativo com base nos usuários, em suas relações com outros usuários e em grupos e seus emails, calendário e arquivos.
 
@@ -59,7 +59,7 @@ Para obter detalhes e uma lista de todas as propriedades, confira o objeto [user
 
 > **Observação:** Algumas destas operações exigem permissões adicionais.
 
-| Path    | Descrição |
+| Caminho    | Descrição |
 |:---------|:-------------|
 |[`/users`](../api/user-list.md) | Lista os usuários na organização. |
 |[`/users/{id}`](../api/user-get.md) | Obtém um usuário específico pela id. |

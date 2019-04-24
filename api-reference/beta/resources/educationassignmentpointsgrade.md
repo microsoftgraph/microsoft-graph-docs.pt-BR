@@ -1,27 +1,27 @@
 ---
-title: tipo de recurso de educationAssignmentPointsGrade
-description: Quando uma atribuição for definida como um tipo de nível de pontos, a cada envio terão este objeto associado com a propriedade **submission.grade** . Isso cria uma subclasse do educationAssignmentGrade,
+title: tipo de recurso educationAssignmentPointsGrade
+description: Quando uma atribuição é definida como um tipo de grade de pontos, cada envio terá esse objeto associado à propriedade enmisse **.** Isso cria uma subclasse de educationAssignmentGrade,
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 ms.openlocfilehash: 5d2a5cf6f6f886185179c6f1a61c1bb1d9d1ecfc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523733"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507333"
 ---
-# <a name="educationassignmentpointsgrade-resource-type"></a>tipo de recurso de educationAssignmentPointsGrade
+# <a name="educationassignmentpointsgrade-resource-type"></a>tipo de recurso educationAssignmentPointsGrade
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Quando uma atribuição for definida como um tipo de nível de pontos, a cada envio terão este objeto associado com a propriedade **submission.grade** . Isso cria uma subclasse do [educationAssignmentGrade](educationassignmentgrade.md), que adicionará a quem dados para esta propriedade. Os pontos máximo é armazenado na propriedade **assignments.grading** .
+Quando uma atribuição é definida como um tipo de grade de pontos, cada envio terá esse objeto associado à propriedade enmisse **.** Isso cria uma subclasse de [educationAssignmentGrade](educationassignmentgrade.md), que adicionará os dados de quem a essa propriedade. O máximo de pontos é armazenado na propriedade **assignments. Grading** .
 
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|points|Single|Número de pontos um professor está dando este objeto de envio.|
+|points|Único|Número de pontos que um professor está dando este objeto de envio.|
 
 ## <a name="json-representation"></a>Representação JSON
 

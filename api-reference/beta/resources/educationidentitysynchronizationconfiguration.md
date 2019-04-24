@@ -1,18 +1,18 @@
     ---
-título: "tipo de recurso de educationIdentitySynchronizationConfiguration" Descrição: "classe abstrata base para configurações de sincronização de identidade de perfil do escola dados todos. As classes derivadas definem o comportamento para sincronização de identidades. A seguir estão os tipos derivados."
-autor: "mmast-msft" localization_priority: ms.prod Normal: "educação"
+title: "tipo de recurso educationIdentitySynchronizationConfiguration" Descrição: "classe abstrata base para todas as configurações de sincronização de identidade de perfil de dados da escola. As classes derivadas definem o comportamento da sincronização de identidades. Estes são os tipos derivados. "
+Author: "mmast-MSFT" localization_priority: normal MS. Prod: "educação"
 ---
 
-# <a name="educationidentitysynchronizationconfiguration-resource-type"></a>tipo de recurso de educationIdentitySynchronizationConfiguration
+# <a name="educationidentitysynchronizationconfiguration-resource-type"></a>tipo de recurso educationIdentitySynchronizationConfiguration
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Classe base abstrata para todas as escola dados perfil identidade sincronização configurações. As classes derivadas definem o comportamento para sincronização de identidades. A seguir estão os tipos derivados.
+Classe abstrata de base para todas as configurações de sincronização de identidade de perfil de dados da escola. As classes derivadas definem o comportamento da sincronização de identidades. Estes são os tipos derivados.
 
 ## <a name="derived-types"></a>Tipos derivados
 | Tipo | Descrição |
 |:-|:-|
-| [**educationIdentityMatchingConfiguration**](educationidentitymatchingconfiguration.md) | Use este tipo para corresponder as contas de usuário existentes no Windows Azure Active Directory (AD Azure). |
+| [**educationIdentityMatchingConfiguration**](educationidentitymatchingconfiguration.md) | Use este tipo para fazer a correspondência de contas de usuário existentes no Azure Active Directory (Azure AD). |
 | [**educationIdentityCreationConfiguration**](educationidentitycreationconfiguration.md) | Use este tipo para criar novas contas de usuário no Azure AD. |
 <!--
 {

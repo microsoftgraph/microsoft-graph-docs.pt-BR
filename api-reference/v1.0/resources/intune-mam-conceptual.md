@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: 85c002b9b9a8271b47209ca11bb27eb2885815a1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27984378"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32465549"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Como proteger dados de aplicativos corporativos com o Microsoft Intune
 
@@ -34,15 +34,15 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Intervalo de IPv6](intune-mam-ipv6range.md)
 - [JSON](intune-mam-json.md)
 - [Par chave/valor](intune-mam-keyvaluepair.md)
-- [Gerenciados de nível de compartilhamento de área de transferência do aplicativo](intune-mam-managedappclipboardsharinglevel.md)
+- [Nível de compartilhamento de área de transferência do aplicativo gerenciado](intune-mam-managedappclipboardsharinglevel.md)
 - [Configuração de aplicativo gerenciado](intune-mam-managedappconfiguration.md)
-- [Tipo de criptografia de dados do aplicativo de gerenciados](intune-mam-managedappdataencryptiontype.md)
+- [Tipo de criptografia de dados do aplicativo gerenciado](intune-mam-managedappdataencryptiontype.md)
 - [Local de armazenamento de dados do aplicativo gerenciado](intune-mam-managedappdatastoragelocation.md)
-- [Nível de transferência de dados de aplicativo gerenciado](intune-mam-managedappdatatransferlevel.md)
+- [Nível de transferência de dados do aplicativo gerenciado](intune-mam-managedappdatatransferlevel.md)
 - [Status de diagnóstico de aplicativo gerenciado](intune-mam-managedappdiagnosticstatus.md)
-- [Motivo de app gerenciada sinalizado](intune-mam-managedappflaggedreason.md)
+- [Motivo de sinalização do aplicativo gerenciado](intune-mam-managedappflaggedreason.md)
 - [Operação de aplicativo gerenciado](intune-mam-managedappoperation.md)
-- [Conjunto de caracteres de app gerenciada PIN](intune-mam-managedapppincharacterset.md)
+- [Conjunto de caracteres do PIN do aplicativo gerenciado](intune-mam-managedapppincharacterset.md)
 - [Política de aplicativo gerenciado](intune-mam-managedapppolicy.md)
 - [Resumo da implantação da política de aplicativo gerenciado](intune-mam-managedapppolicydeploymentsummary.md)
 - [Resumo por aplicativo da implantação da política de aplicativo gerenciado](intune-mam-managedapppolicydeploymentsummaryperapp.md)
@@ -63,10 +63,10 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Arquivo do bloqueador de aplicativos da proteção de informações do Windows](intune-mam-windowsinformationprotectionapplockerfile.md)
 - [Certificado de recuperação de dados de proteção de informações do Windows](intune-mam-windowsinformationprotectiondatarecoverycertificate.md)
 - [Aplicativo da área de trabalho da proteção de informações do Windows](intune-mam-windowsinformationprotectiondesktopapp.md)
-- [Nível de imposição de proteção de informações do Windows](intune-mam-windowsinformationprotectionenforcementlevel.md)
+- [Nível de aplicação da proteção de informações do Windows](intune-mam-windowsinformationprotectionenforcementlevel.md)
 - [Coleção de intervalos de IP da Proteção de Informações do Windows](intune-mam-windowsinformationprotectioniprangecollection.md)
 - [Resumo de aprendizagem da rede de proteção de informações do Windows](intune-wip-windowsinformationprotectionnetworklearningsummary.md)
-- [Requisitos de caractere PIN de proteção de informações Windows](intune-mam-windowsinformationprotectionpincharacterrequirements.md)
+- [Requisitos de caracteres do PIN de proteção de informações do Windows](intune-mam-windowsinformationprotectionpincharacterrequirements.md)
 - [Política de proteção de informações do Windows](intune-mam-windowsinformationprotectionpolicy.md)
 - [Coleção de domínios como proxy da Proteção de Informações do Windows](intune-mam-windowsinformationprotectionproxieddomaincollection.md)
 - [Coleção de recursos da Proteção de Informações do Windows](intune-mam-windowsinformationprotectionresourcecollection.md)

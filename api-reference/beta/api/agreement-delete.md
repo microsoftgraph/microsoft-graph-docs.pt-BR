@@ -3,11 +3,11 @@ title: Excluir contrato
 description: Exclua um objeto de contrato.
 localization_priority: Normal
 ms.openlocfilehash: 95766f28e5456c1b4f410de65ae12dccd881727e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521317"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459546"
 ---
 # <a name="delete-agreement"></a>Excluir contrato
 
@@ -31,7 +31,7 @@ DELETE /agreements/<id>
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome         | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| Autorização | string | Token de portador Obrigatório. |
+| Autorização | string | \{token\} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
@@ -50,7 +50,7 @@ Se bem-sucedido, este método retorna um código de resposta `204, No Content`. 
 DELETE https://graph.microsoft.com/beta/agreements/<id>
 ```
 ##### <a name="response"></a>Resposta
->**Observação: **o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true

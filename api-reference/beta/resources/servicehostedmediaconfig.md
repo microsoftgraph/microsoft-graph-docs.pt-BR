@@ -1,28 +1,28 @@
 ---
-title: tipo de recurso de serviceHostedMediaConfig
-description: O tipo de serviceHostedMediaConfig.
+title: tipo de recurso serviceHostedMediaConfig
+description: O tipo serviceHostedMediaConfig.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 2ab19f992dd7fac48844cd46a0600a0242517709
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642223"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463275"
 ---
-# <a name="servicehostedmediaconfig-resource-type"></a>tipo de recurso de serviceHostedMediaConfig
+# <a name="servicehostedmediaconfig-resource-type"></a>tipo de recurso serviceHostedMediaConfig
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O tipo de serviceHostedMediaConfig.
+O tipo serviceHostedMediaConfig.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade                    | Tipo                                                        | Descrição                                       |
 | :-------------------------- | :---------------------------------------------------------- | :-------------------------------------------------|
-| preFetchMedia               | coleção [mediaInfo](mediainfo.md)                        | A lista de mídia para buscar previamente.                   |
-| removeFromDefaultAudioGroup | Booliano                                                     | Remova self participante do grupo de áudio padrão. |
+| preFetchMedia               | coleção [mediaInfo](mediainfo.md)                        | A lista de mídias a buscar previamente.                   |
+| removeFromDefaultAudioGroup | Booliano                                                     | Remover o próprio participante do grupo de áudio padrão. |
 
 ## <a name="json-representation"></a>Representação JSON
 

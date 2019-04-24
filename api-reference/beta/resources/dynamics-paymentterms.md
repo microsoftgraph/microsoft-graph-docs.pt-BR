@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: 4ed1f3791474cf6e29038e75fcd3625e4da300a0
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365637"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507326"
 ---
 # <a name="paymentterms-resource-type"></a>tipo de recurso paymentTerms
 Representa um termo de pagamento no Dynamics 365 Business central.
@@ -29,17 +29,17 @@ Representa um termo de pagamento no Dynamics 365 Business central.
 | Propriedade                     | Tipo     |Descrição                                                |
 |:-----------------------------|:-------|:----------------------------------------------------------|
 |id                            |GUID    |A ID exclusiva do paymentTerms. Não editável.           |
-|código                          |string  |Especifica o código da expressão de pagamento.                           |
+|código                          |cadeia de caracteres  |Especifica o código da expressão de pagamento.                           |
 |displayName                   |string  |Especifica o nome de exibição do termo de pagamento.                   |
 |dueDateCalculation            |string  |Especifica a fórmula usada para calcular a data em que um pagamento deve ser feito.|
 |discountDateCalculation       |string  |Especifica a fórmula usada para calcular a data em que um pagamento deve ser feito para obter um desconto.|
 |discountPercent               |dígitos |Especifica a porcentagem de desconto aplicada ao pagamento antecipado de um valor de fatura.|
-|calculateDiscountOnCreditMemos|boolean |Especifica se o desconto deve ser aplicado a memorandos de crédito. **True** indica que um desconto será fornecido, **false** indica que um desconto não será fornecido.|
-|lastModifiedDateTime          |DateTime|O último DateTime que o paymentTerms foi modificado. Somente Leitura.|  
+|calculateDiscountOnCreditMemos|booliano |Especifica se o desconto deve ser aplicado a memorandos de crédito. **True** indica que um desconto será fornecido, **false** indica que um desconto não será fornecido.|
+|lastModifiedDateTime          |DateTime|O último DateTime que o paymentTerms foi modificado. Somente leitura.|  
 
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 

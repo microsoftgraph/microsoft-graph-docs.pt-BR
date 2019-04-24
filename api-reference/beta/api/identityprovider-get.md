@@ -1,19 +1,19 @@
 ---
 title: Obter identityProvider
-description: Recupere as propriedades de um identityProvider existente.
+description: Recupere as propriedades de um identityprovider existente.
 localization_priority: Normal
 ms.openlocfilehash: 8315c43bcd99b9ea96b408cd2feb61a59369e4c1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523068"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32501333"
 ---
 # <a name="get-identityprovider"></a>Obter identityProvider
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades de um existente [identityProvider](../resources/identityprovider.md).
+Recuperar as propriedades de um [identityProvider](../resources/identityprovider.md) existente.
 
 ## <a name="permissions"></a>Permissões
 
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft)| Sem suporte.|
 |Aplicativo|Sem suporte.|
 
-A conta do trabalho ou da escola deve ser um administrador global do inquilino.
+A conta corporativa ou de estudante deve ser um administrador global do locatário.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -46,11 +46,11 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` código de resposta e uma representação de JSON do [identityProvider](../resources/identityprovider.md) no corpo da resposta.
+Se bem-sucedido, esse método retornará `200 OK` código de resposta e uma representação JSON do [identityProvider](../resources/identityprovider.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
-O exemplo a seguir recupera um específicos **identityProvider**.
+O exemplo a seguir recupera uma determinada **identityProvider**.
 
 ##### <a name="request"></a>Solicitação
 

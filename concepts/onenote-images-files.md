@@ -4,12 +4,12 @@ description: " Blocos de anotações empresariais no Office 365"
 author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
-ms.openlocfilehash: b2eee772a69270e8b88a8d998af27fa892df5eb1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: e07c9e3d4ccc16c19c83950eda2fdc24107c4b79
+ms.sourcegitcommit: d264fa064215879fa88a4680402cd57a470d73db
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27961719"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31980918"
 ---
 # <a name="add-images-videos-and-files-to-onenote-pages"></a>Adicionar imagens, vídeos e arquivos a páginas do OneNote
 
@@ -447,11 +447,13 @@ Content-Type: application/pdf
 
 ## <a name="size-limitations-for-post-pages-requests"></a>Limitações de tamanho para solicitações de páginas de POSTAGEM
 
-Ao enviar imagem e arquivo de dados, esteja ciente destas limitações: <!--TODO: check these-->
+Ao enviar a imagem e arquivo de dados, esteja ciente dessas limitações: <!--TODO: check these-->
 
-- O limite de tamanho da POSTAGEM total é de aproximadamente 70 MB, incluindo imagens, arquivos e outros dados. O limite real é afetado pela codificação downstream, portanto, não há um limite de número de bytes fixo. As solicitações que excederem o limite podem produzir resultados não confiáveis.
+- A API REST do Microsoft Graph tem um limite de solicitação de 4 MB. Qualquer item maior que isso falhará com a mensagem de erro "solicitação muito grande (413)". 
 
-- O limite de cada parte de dados é de 25 MB, incluindo os cabeçalhos das partes. Partes de dados que excedem o limite são rejeitadas pelo Microsoft Graph. 
+- O limite de solicitação da subjacentes API REST do OneNote é maior, mas não pode ser acessada usando a API do Microsoft Graph. 
+  - O limite de tamanho da POSTAGEM total é de aproximadamente 70 MB, incluindo imagens, arquivos e outros dados. O limite real é afetado pela codificação downstream, portanto, não há um limite de número de bytes fixo. As solicitações que excederem o limite podem gerar resultados não confiáveis.
+  - O limite de cada parte de dados é de 25 MB, incluindo os cabeçalhos das partes. Partes de dados que excedem o limite são rejeitadas pelo Microsoft Graph. 
 
 - O número máximo de imagens por página é 150. Ao usar o atributo `src="https://..."`, a API ignora rótulos **img** que ultrapassam o limite.
 

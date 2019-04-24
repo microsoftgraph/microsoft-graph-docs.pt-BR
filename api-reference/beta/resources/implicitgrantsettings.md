@@ -1,26 +1,26 @@
 ---
-title: tipo de recurso de implicitGrantSettings
-description: Especifica se esse aplicativo web pode solicitar tokens usando o fluxo de implícita OAuth 2.0. Propriedades separadas estão disponíveis para solicitar tokens de acesso e a ID como parte do fluxo de implícita. Para ativar o fluxo implícito, pelo menos uma das propriedades a seguir deve ser definida como true.
+title: tipo de recurso implicitGrantSettings
+description: Especifica se este aplicativo Web pode solicitar tokens usando o fluxo implícito do OAuth 2,0. Propriedades separadas estão disponíveis para solicitar tokens de ID e acesso como parte do fluxo implícito. Para habilitar o fluxo implícito, pelo menos uma das propriedades a seguir deve ser definida como true.
 localization_priority: Normal
 ms.openlocfilehash: 6714b9448f2e49419e41fa62822498ceaa232170
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642762"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32506219"
 ---
-# <a name="implicitgrantsettings-resource-type"></a>tipo de recurso de implicitGrantSettings
+# <a name="implicitgrantsettings-resource-type"></a>tipo de recurso implicitGrantSettings
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Especifica se esse aplicativo web pode solicitar tokens usando o fluxo de implícita OAuth 2.0. Propriedades separadas estão disponíveis para solicitar tokens de acesso e a ID como parte do fluxo de implícita. Para ativar o fluxo implícito, pelo menos uma das propriedades a seguir deve ser definida como true.
+Especifica se este aplicativo Web pode solicitar tokens usando o fluxo implícito do OAuth 2,0. Propriedades separadas estão disponíveis para solicitar tokens de ID e acesso como parte do fluxo implícito. Para habilitar o fluxo implícito, pelo menos uma das propriedades a seguir deve ser definida como true.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade | Tipo | Descrição |
 |:---------|:-----|:------------|
-|enableIdTokenIssuance| Booliano | Especifica se esse aplicativo web pode solicitar um token de ID usando o fluxo de implícita OAuth 2.0.|
-|enableAccessTokenIssuance| Booliano | Especifica se esse aplicativo web pode solicitar um token de acesso usando o fluxo de implícita OAuth 2.0.|
+|enableIdTokenIssuance| Booliano | Especifica se este aplicativo Web pode solicitar um token de ID usando o fluxo implícito do OAuth 2,0.|
+|enableAccessTokenIssuance| Booliano | Especifica se este aplicativo Web pode solicitar um token de acesso usando o fluxo implícito do OAuth 2,0.|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

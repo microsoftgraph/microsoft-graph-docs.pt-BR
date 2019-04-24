@@ -1,19 +1,19 @@
 ---
 title: Criar inferenceClassificationOverride
-description: 'Crie uma substituição de caixa de entrada com foco de um remetente identificado por um endereço SMTP. As mensagens futuras desse endereço SMTP serão classificadas consistentemente '
+description: 'Criar uma substituição de caixa de entrada destaques para um remetente identificado por um endereço SMTP. Mensagens futuras desse endereço SMTP serão consistentemente classificadas '
 localization_priority: Normal
 ms.openlocfilehash: 234972bea59343a13d9104bbe222edf4be526987
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516116"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32501291"
 ---
 # <a name="create-inferenceclassificationoverride"></a>Criar inferenceClassificationOverride
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie uma substituição de [Caixa de entrada com foco](../resources/manage-focused-inbox.md) de um remetente identificado por um endereço SMTP. Mensagens futura do que o endereço de SMTP será classificado consistentemente conforme especificado na substituição.
+Criar uma substituição de [caixa de entrada destaques](../resources/manage-focused-inbox.md) para um remetente identificado por um endereço SMTP. Mensagens futuras desse endereço SMTP serão consistentemente classificadas conforme especificado na substituição.
 
 **Observação**
 

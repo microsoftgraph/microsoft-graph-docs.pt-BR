@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: da3935b8e784b05551af123c1832d5dc84a2c81c
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365315"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507214"
 ---
 # <a name="dimensionvalues-resource-type"></a>tipo de recurso dimensionValues
 Representa um valor de dimensão no Dynamics 365 Business central.
@@ -27,7 +27,7 @@ Representa um valor de dimensão no Dynamics 365 Business central.
 | Propriedade           | Tipo                  |Descrição                                        |
 |:-------------------|:----------------------|:--------------------------------------------------|
 |id                  |GUID                   |A ID exclusiva do item.                         |
-|código                |Cadeia de caracteres, tamanho máximo 20|O código do valor da dimensão.                          |
+|code                |Cadeia de caracteres, tamanho máximo 20|O código do valor da dimensão.                          |
 |displayName         |string                 |Especifica o nome do valor da dimensão. Esse nome aparecerá onde o valor de dimensão é usado.|
 |lastModifiedDateTime|DateTime               |A última data/hora em que o valor de dimensão foi modificado.|  
 

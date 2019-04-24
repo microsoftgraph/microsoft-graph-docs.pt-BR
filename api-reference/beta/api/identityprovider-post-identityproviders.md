@@ -1,19 +1,19 @@
 ---
 title: Criar identityProvider
-description: Crie um novo identityProvider especificando o nome para exibição, tipo de identityProvider, ID de cliente e segredo do cliente.
+description: Criar um novo identityProvider especificando o nome de exibição, tipo de identityProvider, ID do cliente e o segredo do cliente.
 localization_priority: Normal
 ms.openlocfilehash: c0b005d729510fa68d9edd8bfea7b85687543cf2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514646"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32501263"
 ---
 # <a name="create-identityprovider"></a>Criar identityProvider
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um novo [identityProvider](../resources/identityprovider.md) especificando o nome para exibição, tipo de identityProvider, ID de cliente e segredo do cliente.
+Criar um novo [identityProvider](../resources/identityprovider.md) especificando o nome de exibição, tipo de identityProvider, ID do cliente e o segredo do cliente.
 
 ## <a name="permissions"></a>Permissões
 
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft)| Sem suporte.|
 |Aplicativo|Sem suporte.|
 
-A conta do trabalho ou da escola deve ser um administrador global do inquilino.
+A conta corporativa ou de estudante deve ser um administrador global do locatário.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -43,18 +43,18 @@ POST /identityProviders
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornecem uma representação de JSON do objeto [identityProvider](../resources/identityprovider.md) . Todas as propriedades listadas na tabela a seguir são necessárias.
+No corpo da solicitação, forneça uma representação JSON do objeto [identityProvider](../resources/identityprovider.md). Todas as propriedades listadas na tabela a seguir são necessárias.
 
 |Propriedade|Tipo|Descrição|
 |:---------------|:--------|:----------|
-|clientId|String|A identificação do cliente para o aplicativo. Esta é a ID de cliente obtida ao registrar o aplicativo com o provedor de identidade.|
-|client_secret|String|O segredo do cliente para o aplicativo. Esse é o segredo do cliente obtido ao registrar o aplicativo com o provedor de identidade.|
-|name|Cadeia de caracteres|O nome de exibição do provedor de identidade.|
-|type|String|O tipo de provedor de identidade. Ele deve ser um dos seguintes valores: <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook</ul>|
+|clientId|String|ID do cliente para o aplicativo. Esta é a ID do cliente obtida ao registrar o aplicativo com o provedor de identidade.|
+|clientSecret|Cadeia de caracteres|O segredo do cliente para o aplicativo. Este é o segredo do cliente obtido ao registrar o aplicativo com o provedor de identidade.|
+|nome|String|O nome de exibição exclusivo do provedor de identidade.|
+|Tipo|String|A identidade do provedor de identidade. Deve ser um dos seguintes valores: <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook</ul>|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` objeto response de código e [identityProvider](../resources/identityprovider.md) no corpo da resposta. Se não obtiver êxito, uma `4xx` será retornado o erro com detalhes específicos.
+Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [identityProvider](../resources/identityprovider.md) no corpo da resposta. Caso não consiga, um `4xx` erro será retornado com detalhes específicos.
 
 ## <a name="example"></a>Exemplo
 

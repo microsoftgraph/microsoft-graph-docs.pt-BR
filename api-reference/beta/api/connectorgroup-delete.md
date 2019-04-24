@@ -1,19 +1,19 @@
 ---
-title: Excluir connectorGroup
-description: Exclua um connectorGroup.
+title: Excluir um ou de conector
+description: Excluir um conector.
 localization_priority: Normal
 ms.openlocfilehash: a0fd138281b8337df49388f4a10dc34cc02da18d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516025"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455909"
 ---
-# <a name="delete-connectorgroup"></a>Excluir connectorGroup
+# <a name="delete-connectorgroup"></a>Excluir um ou de conector
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exclua um connectorGroup.
+Excluir um conector.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Directory.ReadWrite.All |
 
-> **Observação:** O grupo de conector não deve ter todos os conectores associados a ele.
+> **Observação:** O grupo de conectores não deve ter conectores associados a ele.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -34,7 +34,7 @@ DELETE /connectorGroups/{id}
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
-| Autorização  |  de portador Obrigatório|
+| Authorization  | Portador. Obrigatório|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

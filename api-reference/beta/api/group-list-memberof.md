@@ -1,23 +1,23 @@
 ---
-title: Membro do grupo de lista
-description: Obtenha grupos e unidades administrativas que o grupo é um membro direto.
+title: Grupo de lista memberOf
+description: Obter grupos e unidades administrativas dos quais o grupo é membro direto.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: ecf127e7cc4af4aada3d75ef6415a242b0a9411b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517537"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32502107"
 ---
-# <a name="list-group-memberof"></a>Membro do grupo de lista
+# <a name="list-group-memberof"></a>Grupo de lista memberOf
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha grupos e unidades administrativas que o grupo é um membro direto.
+Obter grupos e unidades administrativas dos quais o grupo é membro direto.
 
-Essa operação não é transitiva. Ao contrário de obter Grupos do Office 365 de um usuário, isso retorna todos os tipos de grupos, não apenas grupos do Office 365. 
+Essa operação não é transitiva. Ao contrário de obter os grupos do Office 365 de um usuário, isso retorna todos os tipos de grupos, não apenas grupos do Office 365. 
 
 ## <a name="permissions"></a>Permissões
 

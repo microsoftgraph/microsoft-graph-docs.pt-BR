@@ -1,23 +1,23 @@
 ---
-title: 'evento: encaminhar'
-description: 'Essa ação permite que o organizador ou o participante de um evento de reunião para encaminhar o '
+title: 'evento: forward'
+description: 'Esta ação permite que o organizador ou participante de um evento de reunião encaminhe o '
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 6f1b3e1f089d927aeb21ca80ff77edda63121c60
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510383"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464332"
 ---
-# <a name="event-forward"></a>evento: encaminhar
+# <a name="event-forward"></a>evento: forward
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Esta ação permite que o organizador ou o participante de um evento de reunião encaminhe a solicitação de reunião ao novo destinatário. 
+Esta ação permite que o organizador ou o participante de um [evento](../resources/event.md) de reunião encaminhe a solicitação de reunião para um novo destinatário. 
 
-Se o evento de reunião é encaminhado de caixa de correio do de um participante Office 365 para outro destinatário, essa ação também envia uma mensagem para notificar o organizador do encaminhamento e adiciona o destinatário para a cópia do organizador do evento reunião. Essa conveniência não está disponível no encaminhamento de uma conta do Outlook.com.
+Se o evento de reunião for encaminhado da caixa de correio do Office 365 de um participante para outro destinatário, essa ação também enviará uma mensagem para notificar o organizador sobre o encaminhamento e adiciona o destinatário à cópia do evento de reunião do organizador. Essa conveniência não está disponível no encaminhamento de uma conta do Outlook.com.
 
 
 ## <a name="permissions"></a>Permissões

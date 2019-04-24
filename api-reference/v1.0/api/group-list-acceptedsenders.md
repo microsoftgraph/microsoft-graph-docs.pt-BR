@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 4299b83e5cb11f4c6eea460621198b43ab3c0890
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27985757"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32584716"
 ---
 # <a name="list-acceptedsenders"></a>Listar acceptedSenders
 Obter uma lista de usuários ou grupos que estão na lista acceptedSenders desse grupo.
@@ -57,7 +57,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/acceptedSenders
 
 #### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
->**Observação:** no objeto response mostrado aqui pode ser reduzido para melhorar a legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

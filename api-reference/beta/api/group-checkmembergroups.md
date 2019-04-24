@@ -1,15 +1,15 @@
 ---
 title: 'group: checkMemberGroups'
-description: Verifique se a associação na lista especificada dos grupos. Retorna da lista os grupos dos quais
+description: Verifique se há associação na lista de grupos especificada. Retorna da lista os grupos dos quais
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 838ea805f6732965029690a05e8d3294fdd62c26
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514898"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32503104"
 ---
 # <a name="group-checkmembergroups"></a>group: checkMemberGroups
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                              |
 | Aplicativo                            | ~~Group.Read.All~~, Directory.Read.All, Directory.ReadWrite.All                             |
 
-> **Observação:** esta API atualmente exige o `Directory.Read.All` permissão ou posterior. Usando o `Group.Read.All` permissão retornará um erro. Este é um bug conhecido.
+> **Observação:** Essa API atualmente requer a `Directory.Read.All` permissão ou mais. O uso `Group.Read.All` da permissão retornará um erro. Este é um bug conhecido.
 
 ## <a name="http-request"></a>Solicitação HTTP
 

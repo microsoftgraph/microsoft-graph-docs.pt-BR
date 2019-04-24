@@ -4,11 +4,11 @@ description: A API REST do Microsoft Graph usa um mecanismo de webhook para forn
 localization_priority: Priority
 author: piotrci
 ms.openlocfilehash: 60def6f31ac13ad5417ad3d00e48e700550f6efe
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30159371"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456889"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>Usar a API do Microsoft Graph para acessar as notificações de alteração
 

@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: Hashes
 localization_priority: Normal
 ms.openlocfilehash: be7d3b27b1ef22976dc93ea5aecbc2a64031e8b4
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480114"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32506346"
 ---
 # <a name="hashes-resource-type"></a>Tipo de recurso de hashes
 

@@ -5,11 +5,11 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 ms.openlocfilehash: ac21262858137074ed92978f0ab6530052fcc2de
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515675"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32502153"
 ---
 # <a name="add-member"></a>Adicionar membro
 
@@ -61,7 +61,7 @@ Content-length: 30
   "@odata.id": "https://graph.microsoft.com/beta/directoryObjects/{id}"
 }
 ```
-No corpo da solicitação, fornecer uma representação JSON do `id` do objeto [directoryObject](../resources/directoryobject.md), [usuário](../resources/user.md)ou [grupo](../resources/group.md) que você deseja adicionar.
+No corpo da solicitação, forneça uma representação JSON `id` do objeto [directoryobject](../resources/directoryobject.md), [User](../resources/user.md)ou [Group](../resources/group.md) que você deseja adicionar.
 
 #### <a name="response"></a>Resposta
 Este é um exemplo de resposta.

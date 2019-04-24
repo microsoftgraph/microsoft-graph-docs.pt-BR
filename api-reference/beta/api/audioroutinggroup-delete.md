@@ -1,30 +1,30 @@
 ---
-title: Excluir um grupo de roteamento de áudio
+title: Excluir grupo de roteamento de áudio
 description: Exclua o grupo de roteamento de áudio especificado.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 0c0e5c0cd58c867f7c69a3ac5d4f99a11af223ee
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511440"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459350"
 ---
-# <a name="delete-audio-routing-group"></a>Excluir um grupo de roteamento de áudio
+# <a name="delete-audio-routing-group"></a>Excluir grupo de roteamento de áudio
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exclua o especificado [audioRoutingGroup](../resources/audioroutinggroup.md).
+Exclua o [audioRoutingGroup](../resources/audioroutinggroup.md)especificado.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios)  |
 | :-------------- | :------------------------------------------- |
-| Delegado (conta corporativa ou de estudante)     | Não suportado        |
+| Delegado (conta corporativa ou de estudante)     | Não Suportado        |
 | Delegado (conta pessoal da Microsoft) | Não suportado        |
-| Aplicativo     | Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
+| Aplicativo     | Calls. JoinGroupCalls. All, calls. InitiateGroupCalls. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -59,7 +59,7 @@ DELETE https://graph.microsoft.com/beta/app/calls/{id}/audioRoutingGroups/{id}
 
 ##### <a name="response"></a>Resposta
 
-> **Observação: **o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
   "blockType": "response",

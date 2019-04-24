@@ -1,29 +1,29 @@
 ---
 title: Criar bookingBusiness
-description: Crie um novo negócio Microsoft Bookings em um locatário.
+description: Criar uma nova empresa de livros da Microsoft em um locatário.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: 95a9217392953d287689dca7a7b6f4c74fbe6383
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519245"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461756"
 ---
 # <a name="create-bookingbusiness"></a>Criar bookingBusiness
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um novo negócio Microsoft Bookings em um locatário.
+Criar uma nova empresa de livros da Microsoft em um locatário.
 
-Esta é a primeira etapa na configuração de uma empresa reservas onde você deve especificar o nome de exibição de negócios. Você pode incluir outras informações como endereço comercial, o endereço do site e a diretiva de agendamento, ou definir essas informações posteriormente através da [atualização](bookingbusiness-update.md) , o **bookingBusiness**.
+Esta é a primeira etapa para configurar uma empresa de reservas onde você deve especificar o nome de exibição comercial. Você pode incluir outras informações, como endereço comercial, endereço do site da Web e política de agendamento, ou definir essas informações [](bookingbusiness-update.md) mais tarde, atualizando o **bookingBusiness**.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  Bookings.Manage.All  |
+|Delegado (conta corporativa ou de estudante) |  Bookings. Manage. All  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.   |
 |Aplicativo | Sem suporte. |
 
@@ -36,14 +36,14 @@ POST /bookingBusinesses
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
-| Autorização  | Portador {código}|
+| Authorization  | Portador {código}|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do objeto [bookingBusiness](../resources/bookingbusiness.md) .
+No corpo da solicitação, forneça uma representação JSON do objeto [bookingBusiness](../resources/bookingbusiness.md) .
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `201, Created` objeto response de código e [bookingBusiness](../resources/bookingbusiness.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `201, Created` o código de resposta e o objeto [bookingBusiness](../resources/bookingbusiness.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -73,9 +73,9 @@ Content-type: application/json
     "defaultCurrencyIso":"USD"
 }
 ```
-No corpo da solicitação, fornece uma representação JSON do objeto [bookingBusiness](../resources/bookingbusiness.md) .
+No corpo da solicitação, forneça uma representação JSON do objeto [bookingBusiness](../resources/bookingbusiness.md) .
 ##### <a name="response"></a>Resposta
-Este é um exemplo de resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Este é um exemplo de resposta. Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

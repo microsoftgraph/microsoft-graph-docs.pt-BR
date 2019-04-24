@@ -1,27 +1,27 @@
 ---
-title: Listar accessReview revisores
-description: No Windows Azure AD para acessar o recurso de revisões, recuperar os revisores de um objeto accessReview.
+title: Listar revisores do accessReview
+description: No recurso de revisões do Azure AD Access, recupere os revisores de um objeto accessReview.
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: d2227ed6343900780df57aeece2fe511f07da04f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529275"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459413"
 ---
-# <a name="list-accessreview-reviewers"></a>Listar accessReview revisores
+# <a name="list-accessreview-reviewers"></a>Listar revisores do accessReview
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O recurso [acesso analisa](../resources/accessreviews-root.md) Azure AD, pode recupere os revisores de um objeto [accessReview](../resources/accessreview.md) .
+No recurso de revisões do Azure AD [Access](../resources/accessreviews-root.md) , recupere os revisores de um objeto [accessReview](../resources/accessreview.md) .
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | `AccessReview.Read.All`, `AccessReview.ReadWrite.All`.  O usuário conectado também deve estar em uma função de diretório que permite que uma revisão de acesso de leitura. |
+|Delegado (conta corporativa ou de estudante)     | `AccessReview.Read.All`, `AccessReview.ReadWrite.All`.  O usuário conectado também deve estar em uma função de diretório que permite que ele leia uma revisão do Access. |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | Sem suporte. |
 
@@ -33,13 +33,13 @@ GET /accessReviews('{reviewId}')/reviewers
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome         | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| Autorização | string | Token de portador Obrigatório. |
+| Autorização | string | \{token\} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-Nenhum corpo da solicitação deve ser fornecido.
+Nenhum corpo de solicitação deve ser fornecido.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200, OK` código de resposta e uma matriz de objetos [userIdentity](../resources/useridentity.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200, OK` um código de resposta e uma matriz de objetos UserIdentity no corpo da resposta. [](../resources/useridentity.md)
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -77,9 +77,9 @@ Content-type: application/json
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Obter accessReview](accessreview-get.md) |  [accessReview](../resources/accessreview.md) |  Recupere uma revisão de acesso. |
-|[Adicionar Revisor accessReview](accessreview-addreviewer.md) |     Nenhum.   |   Adicione um revisor a um accessReview. |
-|[Remover accessReview revisor](accessreview-removereviewer.md) | Nenhum. |   Remova um revisor de um accessReview. |
+|[Obter accessReview](accessreview-get.md) |  [accessReview](../resources/accessreview.md) |  Recupere uma revisão do Access. |
+|[Adicionar revisor accessReview](accessreview-addreviewer.md) |     Nenhum   |   Adicionar um revisor a um accessReview. |
+|[Remover revisor accessReview](accessreview-removereviewer.md) | Nenhum |   Remover um revisor de um accessReview. |
 
 
 <!--

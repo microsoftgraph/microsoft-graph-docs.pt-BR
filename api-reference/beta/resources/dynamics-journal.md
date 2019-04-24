@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: bef5008bbacb1729f48758b228e55a3f6adc2af0
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365469"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507298"
 ---
 # <a name="journal-resource-type"></a>tipo de recurso diário
 Representa um diário no Dynamics 365 Business central.
@@ -29,7 +29,7 @@ Representa um diário no Dynamics 365 Business central.
 | Propriedade           | Tipo                  |Descrição                                           |
 |:-------------------|:----------------------|:-----------------------------------------------------|
 |id                  |GUID                   |A ID exclusiva do diário. Não editável.           |
-|código                |Cadeia de caracteres, tamanho máximo 10| O código do diário.                             |
+|code                |Cadeia de caracteres, tamanho máximo 10| O código do diário.                             |
 |displayName         |Cadeia de caracteres, tamanho máximo 50| O nome de exibição do diário.                     |
 |lastModifiedDateTime|DateTime               |O último DateTime que o diário foi modificado. Somente Leitura.|
 

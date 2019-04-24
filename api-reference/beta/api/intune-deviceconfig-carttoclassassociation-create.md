@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: c683b2ae19caa55c62f0af834fbb8b74d5fb904c
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31806374"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32471578"
 ---
 # <a name="create-carttoclassassociation"></a>Criar cartToClassAssociation
 
@@ -56,8 +56,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar cartToCl
 |versão|Int32|Versão do CartToClassAssociation.|
 |displayName|String|O administrador forneceu o nome da Configuração do dispositivo.|
 |description|String|Descrição fornecida pelo administrador do CartToClassAssociation.|
-|deviceCartIds|Coleção String|Identificadores de carrinhos de dispositivos a serem associados às classes.|
-|classroomIds|Coleção String|Identificadores de salas de aula a serem associadas a carrinhos de dispositivos.|
+|deviceCartIds|Coleção de cadeias de caracteres|Identificadores de carrinhos de dispositivos a serem associados às classes.|
+|classroomIds|Coleção de cadeias de caracteres|Identificadores de salas de aula a serem associadas a carrinhos de dispositivos.|
 
 
 

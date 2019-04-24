@@ -1,26 +1,26 @@
 ---
-title: tipo de recurso de plannerPlanContextDetails
-description: O recurso de **plannerPlanContextDetails** contém informações adicionais sobre um plannerPlanContext.
+title: tipo de recurso plannerPlanContextDetails
+description: O recurso **plannerPlanContextDetails** contém informações adicionais sobre um plannerPlanContext.
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 025e5b1623333d0235ae83e061e30247a3d130f6
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520246"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32505939"
 ---
-# <a name="plannerplancontextdetails-resource-type"></a>tipo de recurso de plannerPlanContextDetails
+# <a name="plannerplancontextdetails-resource-type"></a>tipo de recurso plannerPlanContextDetails
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O recurso de **plannerPlanContextDetails** contém informações adicionais sobre um [plannerPlanContext](plannerplancontext.md).
+O recurso **plannerPlanContextDetails** contém informações adicionais sobre um [plannerPlanContext](plannerplancontext.md).
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|url|String|URL da experiência do usuário representada pelo associado [plannerPlanContext](plannerplancontext.md). |
+|url|Cadeia de caracteres|URL da experiência do usuário representada pelo [plannerPlanContext](plannerplancontext.md)associado. |
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 20f4c0eaf8470f01619a9ff4067bec0d95851b3c
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31789749"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464621"
 ---
 # <a name="windowskioskactivedirectorygroup-resource-type"></a>tipo de recurso windowsKioskActiveDirectoryGroup
 
@@ -25,7 +25,7 @@ Herda de [windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|Nome_do_grupo|Cadeia de caracteres|O nome do grupo do AD que será bloqueado para esta configuração de quiosque|
+|Nome_do_grupo|String|O nome do grupo do AD que será bloqueado para esta configuração de quiosque|
 
 ## <a name="relationships"></a>Relações
 Nenhuma

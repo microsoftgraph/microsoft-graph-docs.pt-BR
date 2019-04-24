@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 3ba33de148e34ce80c0a709a6a1b5faf99d5f32d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515843"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32502078"
 ---
 # <a name="create-a-directory-setting-on-groups"></a>Criar uma configuração de diretório em grupos
 
@@ -33,14 +33,14 @@ POST /groups/{id}/settings
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
-| Autorização  | Portador <token>. Obrigatório|
+| Authorization  | <token> de portador. Obrigatório|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do objeto [directorySetting](../resources/directorysetting.md) .
+No corpo da solicitação, forneça uma representação JSON do objeto [directorySetting](../resources/directorysetting.md) .
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` objeto response de código e [directorySetting](../resources/directorysetting.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `201 Created` o código de resposta e o objeto [directorySetting](../resources/directorysetting.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -67,7 +67,7 @@ Content-length: 222
   }
 }
 ```
-No corpo da solicitação, fornece uma representação JSON do objeto [directorySetting](../resources/directorysetting.md) .
+No corpo da solicitação, forneça uma representação JSON do objeto [directorySetting](../resources/directorysetting.md) .
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {

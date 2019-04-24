@@ -1,28 +1,28 @@
 ---
-title: tipo de recurso de educationAssignmentGradeType
-description: Representa como uma atribuição será Graduada. Isso é usado dentro da propriedade **assignments.grading** .
+title: tipo de recurso educationAssignmentGradeType
+description: Representa como uma atribuição será classificada. Isso é usado na propriedade **assignments. Grading** .
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 ms.openlocfilehash: 68809d88574f0ba01d6e2fafac2f60ea4229112c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523313"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507277"
 ---
-# <a name="educationassignmentgradetype-resource-type"></a>tipo de recurso de educationAssignmentGradeType
+# <a name="educationassignmentgradetype-resource-type"></a>tipo de recurso educationAssignmentGradeType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa como uma atribuição será Graduada. Isso é usado dentro da propriedade **assignments.grading** .
+Representa como uma atribuição será classificada. Isso é usado na propriedade **assignments. Grading** .
 
-Essa superclasse não pode ser usada diretamente na propriedade atribuição. Ele existe para permitir várias maneiras diferentes de atribuições de nível.
+Essa superclasse não pode ser usada diretamente na propriedade assignment. Ele existe para permitir várias maneiras diferentes de comParecer as atribuições.
 
 
 ## <a name="properties"></a>Propriedades
 
-Nenhum.
+Nenhum
 
 <!-- {
   "blockType": "resource",

@@ -1,21 +1,21 @@
 ---
-title: tipo de recurso de educationSynchronizationCustomization
-description: 'Fornece configurações para personalizar a sincronização de perfil de dados da escola das entidades que recurso. A personalização pode ser aplicada a todas as entidades que está sendo sincronizadas. '
+title: tipo de recurso educationSynchronizationCustomization
+description: 'Fornece configurações para personalizar a sincronização do perfil de dados da escola das entidades de recurso. A personalização pode ser aplicada a todas as entidades que estão sendo sincronizadas. '
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 8af6c5e2173a8b04e730529123b4608fd236f959
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513603"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507044"
 ---
-# <a name="educationsynchronizationcustomization-resource-type"></a>tipo de recurso de educationSynchronizationCustomization
+# <a name="educationsynchronizationcustomization-resource-type"></a>tipo de recurso educationSynchronizationCustomization
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Fornece configurações para personalizar a sincronização de perfil de dados da escola das entidades que recurso. A personalização pode ser aplicada a todas as entidades que está sendo sincronizadas. 
+Fornece configurações para personalizar a sincronização do perfil de dados da escola das entidades de recurso. A personalização pode ser aplicada a todas as entidades que estão sendo sincronizadas. 
 
 >**Observação:** A propriedade **synchronizationStartDate** só se aplica à entidade **StudentEnrollment** .
 
@@ -23,9 +23,9 @@ Fornece configurações para personalizar a sincronização de perfil de dados d
 
 | Propriedade | Tipo | Descrição |
 |:-|:-|:-|
-| **optionalPropertiesToSync** | Coleção de Cadeias de Caracteres |  A coleção de nomes de propriedade para sincronização. Se definido como nulo, todas as propriedades serão sincronizados.       |
-| **synchronizationStartDate** | DateTime |  A data em que a sincronização deve ser iniciado. Este valor deve ser definido como uma data futura. Se definido como null, o recurso será sincronizado após a conclusão da configuração do perfil. **Observação:** Isso se aplica apenas à propriedade **StudentEnrollment** .      |
-|**isSyncDeferred** |Booliano | Indica se a sincronização da entidade pai é adiada para uma data posterior. |
+| **optionalPropertiesToSync** | coleção de cadeia de caracteres |  A coleção de nomes de propriedade a serem sincronizados. Se definido como nulo, todas as propriedades serão sincronizadas.       |
+| **synchronizationStartDate** | DateTime |  A data em que a sincronização deve ser iniciada. Esse valor deve ser definido para uma data futura. Se definido como nulo, o recurso será sincronizado quando a configuração do perfil for concluída. **Observação:** Isso só se aplica à propriedade **StudentEnrollment** .      |
+|**isSyncDeferred** |Booliano | Indica se a sincronização da entidade pai será adiada para uma data posterior. |
 | **allowDisplayNameUpdate** | Booliano |  Indica se o nome de exibição do recurso pode ser substituído pela sincronização.         |
 
 

@@ -1,15 +1,15 @@
 ---
-title: Lista governanceRoleAssignmentRequests
+title: Listar governanceRoleAssignmentRequests
 description: 'Recupere uma coleção de governanceRoleAssignmentRequests. '
 localization_priority: Normal
 ms.openlocfilehash: 5ad26ef352eae93e9c804cfb62f5d00df12e32ec
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515458"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32503272"
 ---
-# <a name="list-governanceroleassignmentrequests"></a>Lista governanceRoleAssignmentRequests
+# <a name="list-governanceroleassignmentrequests"></a>Listar governanceRoleAssignmentRequests
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -20,53 +20,54 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources  |
+|Delegado (conta corporativa ou de estudante) | PrivilegedAccess. ReadWrite. AzureResources  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | PrivilegedAccess.ReadWrite.AzureResources |
+|Aplicativo | PrivilegedAccess. ReadWrite. AzureResources |
 
 ## <a name="http-request"></a>Solicitação HTTP
-<!-- { "blockType": "ignored" } -->Uma coleção de [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) em um recurso de lista.
+<!-- { "blockType": "ignored" } -->
+Lista uma coleção de [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) em um recurso.
     
->**Observação:** Além do escopo de permissão, a solicitação exige o solicitante ter pelo menos uma atribuição no recurso.
+>**Observação:** Além do escopo de permissão, a solicitação exige que o solicitante tenha pelo menos uma atribuição de função no recurso.
 
 ```http
 GET /privilegedAccess/azureResources/resources/{resourceId}/roleAssignmentRequests
 GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=resourceId+eq+'{resourceId}'
 ```
-Uma coleção de [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) dos meus de lista.
+Liste uma coleção de [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) de meus.
 
 ```http
 GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=subjectId+eq+'{myId}'
 ```
 
-Uma coleção de [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) que são as decisões de administrador pendentes de lista.
+Liste uma coleção de [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) que estão com decisões de administrador pendentes.
     
->**Observação:** Além do escopo de permissão, esta solicitação requer o solicitante ter pelo menos um `Active` atribuição de função de administrador (`owner` ou `user access administrator`) no recurso.
+>**Observação:** Além do escopo de permissão, essa solicitação exige que o solicitante tenha pelo menos `Active` uma atribuição de função`owner` de `user access administrator`administrador (ou) no recurso.
 
 ```http
 GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=status/subStatus+eq+'PendingAdminDecision'
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método oferece suporte para os [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
 |:----------|:----------|
-| Autorização  | Portador {código}|
+| Authorization  | Portador {código}|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 <!-- {
   "blockType": "request",
   "name": "get_governanceroleassignmentrequests"
 }-->
-Os administradores de solicitações de atribuição de função pendente para assinatura Wingtip Toys - produção de consulta.
+Administradores consultam solicitações pendentes de atribuição de função para a assinatura Wingtip Toys-prod.
 ##### <a name="request"></a>Solicitação
 
 ```http

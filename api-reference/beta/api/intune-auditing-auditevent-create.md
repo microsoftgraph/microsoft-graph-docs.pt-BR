@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: db854a7a7331600ee33352010439936c59e90e08
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31782706"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32485408"
 ---
 # <a name="create-auditevent"></a>Criar auditEvent
 
@@ -51,13 +51,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar auditEve
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave da entidade.|
-|displayName|Cadeia de caracteres|Nome de exibição do evento.|
-|componentName|Cadeia de caracteres|Nome do componente.|
+|displayName|String|Nome de exibição do evento.|
+|componentName|String|Nome do componente.|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|Usuários e aplicativos do AAD associados com o evento de auditoria.|
-|atividade|Cadeia de caracteres|Nome amigável da atividade.|
+|atividade|String|Nome amigável da atividade.|
 |activityDateTime|DateTimeOffset|A hora e data em UTC em que a atividade foi executada.|
-|activityType|Cadeia de caracteres|O tipo de atividade que foi executada.|
-|activityOperationType|Cadeia de caracteres|O tipo de operação HTTP da atividade.|
+|activityType|String|O tipo de atividade que foi executada.|
+|activityOperationType|String|O tipo de operação HTTP da atividade.|
 |activityResult|Cadeia de caracteres|O resultado da atividade.|
 |correlationId|Guid|A ID da solicitação de cliente usada para correlacionar a atividade dentro do sistema.|
 |recursos|Coleção [auditResource](../resources/intune-auditing-auditresource.md)|Recursos em modificação.|

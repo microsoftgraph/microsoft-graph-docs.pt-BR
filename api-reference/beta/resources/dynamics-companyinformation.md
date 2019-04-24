@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: 0f8671cbade11cc9db6bf797c39eb17acf286ef7
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365910"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507270"
 ---
 # <a name="companyinformation-resource-type"></a>tipo de recurso companyInformation
 Representa as informações especificadas para a empresa atual no Dynamics 365 Business central, como nome, endereço, endereço de email e endereço do site.
@@ -40,11 +40,11 @@ Representa as informações especificadas para a empresa atual no Dynamics 365 B
 |indústria      |string   |O setor do qual a empresa faz parte.  |
 |Panorama       |stream   |O logotipo da empresa. Somente Leitura.          |
 |businessProfileId|string|A ID do perfil de negócios vinculada à empresa financeira. Somente Leitura.|
-|lastModifiedDateTime|DateTime|O último DateTime que a empresa foi modificada. Somente Leitura.|  
+|lastModifiedDateTime|DateTime|O último DateTime que a empresa foi modificada. Somente leitura.|  
 
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 ## <a name="json-representation"></a>Representação JSON
 

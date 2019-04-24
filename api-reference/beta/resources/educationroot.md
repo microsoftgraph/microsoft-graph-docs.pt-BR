@@ -5,11 +5,11 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 91f0162402b8c87042fab622710d314f27d6f4e0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523509"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507144"
 ---
 # <a name="educationroot-resource-type"></a>Tipo de recurso educationRoot
 
@@ -31,7 +31,7 @@ O namespace `/education` expõe funcionalidade específica ao setor de educaçã
 ## <a name="properties"></a>Propriedades
 Nenhum.
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |classes|Coleção [educationClass](educationclass.md)| Somente leitura. Anulável.|

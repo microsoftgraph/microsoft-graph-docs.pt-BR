@@ -1,32 +1,36 @@
 ---
-title: Tipo de recurso plannerAssignments
-description: 'O recurso de **plannerAssignments** representa atribuições de um recurso de plannerTask. Esse tipo é um tipo aberto. Nesse tipo de cada nome de propriedade '
+title: tipo de recurso plannerAssignments
+description: 'O recurso **plannerAssignments** representa as atribuições de um recurso plannerTask. Este tipo é um tipo aberto. Cada nome de propriedade neste tipo '
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: bf079cbf91e0c9b8b1a8c92403324b301bbde923
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27966815"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462365"
 ---
-# <a name="plannerassignments-resource-type"></a>Tipo de recurso plannerAssignments
+# <a name="plannerassignments-resource-type"></a>tipo de recurso plannerAssignments
 
-O recurso **plannerAssignment** representa as atribuições de um recurso [plannerTask](plannertask.md). Este é um Tipo Aberto. Cada nome de propriedade nesse tipo representa a ID do objeto de um usuário à qual uma tarefa é atribuída. Os usuários podem ser atribuídos a tarefas com a criação de novas propriedades nomeadas com sua ID, com um objeto [plannerassignment](plannerassignment.md) com a propriedade orderHint preenchida como o valor. Os destinatários podem ter a atribuição cancelada a partir da tarefa se a propriedade nomeada com a ID for configurada como nula.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+O recurso **plannerAssignments** representa as atribuições de um recurso [plannerTask](plannertask.md) . Este tipo é um tipo aberto. Cada nome de propriedade desse tipo é a ID de um objeto de usuário ao qual uma tarefa é atribuída. Os usuários podem ser atribuídos a tarefas com a criação de novas propriedades nomeadas com a ID, com um objeto [plannerassignment](plannerassignment.md) com a propriedade orderHint preenchida como o valor. Os destinatários podem ser desatribuídos da tarefa definindo o propriedade nomeado com sua ID como nulo.
 
 
 ## <a name="properties"></a>Propriedades
-As propriedades de um Tipo Aberto podem ser definidas pelo cliente. No entanto, nesse caso, o cliente deve fornecer IDs do usuário atribuídas como nomes de propriedades. A propriedade deve ser definida com um objeto **plannerAssignment** para criar ou modificar os destinatários e como nula para removê-los.
+As propriedades de um tipo aberto podem ser definidas pelo cliente. Nesse caso, no entanto, o cliente deve fornecer IDs de usuário atribuídas como nomes de propriedade. A propriedade deve ser definida como um objeto **plannerAssignment** para criar ou modificar destinatários, e como nulo para removê-los.
 
 Exemplo:
 
 <!-- {
   "blockType": "resource",
-  "openType": true,
-  "optionalProperties": [ "ca2a1df2-e36b-4987-9f6b-0ea462f4eb47", "4e98f8f1-bb03-4015-b8e0-19bb370949d8" ],
+  "optionalProperties": [
+
+  ],
   "@odata.type": "microsoft.graph.plannerAssignments"
 }-->
+
 ```json
 {
   "ca2a1df2-e36b-4987-9f6b-0ea462f4eb47": null,
@@ -36,14 +40,19 @@ Exemplo:
     }
 }
 ```
-Este exemplo remove usuário com a ID ca2a1df2-e36b-4987-9f6b-0ea462f4eb47 da lista de destinatários da tarefa ao alterar a ordem dos destinatário com o usuário ID 4e98f8f1-bb03-4015-b8e0-19bb370949d8. Se a tarefa já não estiver atribuída ao usuário com a ID 4e98f8f1-bb03-4015-b8e0-19bb370949d8, a tarefa será atribuída a esse usuário se as atribuições forem atualizadas com esse valor.
+Este exemplo remove o usuário com ID ca2a1df2-e36b-4987-9f6b-0ea462f4eb47 da lista de destinatários da tarefa, enquanto altera a ordem do destinatário com a ID de usuário 4e98f8f1-BB03-4015-B8E0-19bb370949d8. Se a tarefa ainda não estiver atribuída ao usuário com ID 4e98f8f1-BB03-4015-B8E0-19bb370949d8, a atualização das atribuições com esse valor atribuirá a tarefa a esse usuário.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "plannerAssignments resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/plannerassignments.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

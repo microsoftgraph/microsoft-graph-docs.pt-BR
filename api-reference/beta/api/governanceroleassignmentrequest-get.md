@@ -1,31 +1,31 @@
 ---
 title: Obter governanceRoleAssignmentRequest
-description: 'Obtenha um governanceRoleAssignmentRequest. '
+description: 'Obter um governanceRoleAssignmentRequest. '
 localization_priority: Normal
 ms.openlocfilehash: 6914dbe8c45bcc05bc684b08fb5fdf87405a045a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524132"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32503699"
 ---
 # <a name="get-governanceroleassignmentrequest"></a>Obter governanceRoleAssignmentRequest
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha um [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md). 
+Obter um [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md). 
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources  |
+|Delegado (conta corporativa ou de estudante) | PrivilegedAccess. ReadWrite. AzureResources  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | PrivilegedAccess.ReadWrite.AzureResources |
+|Aplicativo | PrivilegedAccess. ReadWrite. AzureResources |
 
 Além do escopo de permissão, ele requer o solicitante 
-*   ter pelo menos uma atribuição no recurso; ou
+*   para ter pelo menos uma atribuição de função no recurso; ou
 *   é o assunto do [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -39,16 +39,16 @@ Este método dá suporte a [Parâmetros de consulta OData](/graph/query-paramete
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
 |:----------|:----------|
-| Autorização  | Portador {código}|
+| Authorization  | Portador {código}|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-Obtenha uma solicitação de atribuição de função
+Obter uma solicitação de atribuição de função
 <!-- {
   "blockType": "request",
   "name": "get_governanceroleassignmentrequest"

@@ -1,21 +1,21 @@
 ---
 title: Atualizar contactfolder
-description: Atualizar as propriedades do objeto contactfolder.
+description: Atualiza as propriedades do objeto contactfolder.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 1d644e3f9f74a2ff34ad557f8dac97bc131f7f03
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520498"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455580"
 ---
 # <a name="update-contactfolder"></a>Atualizar contactfolder
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualizar as propriedades do objeto contactfolder.
+Atualiza as propriedades do objeto contactfolder.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -44,11 +44,11 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |:---------------|:--------|:----------|
 |displayName|String|O nome de exibição da pasta.|
 |parentFolderId|String|A ID da pasta pai da pasta.|
-|wellKnownName|string|O nome da pasta se a pasta for uma pasta reconhecida. No momento `contacts` é a única pasta Contatos reconhecidas.|
+|wellKnownName|string|O nome da pasta se a pasta for uma pasta reconhecida. Atualmente `contacts` é a única pasta de contatos reconhecida.|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [contactFolder](../resources/contactfolder.md) atualizado no corpo da resposta.
+Se bem sucedido, este método retorna um código de resposta `200 OK` e um objeto [contactFolder](../resources/contactfolder.md) atualizado no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

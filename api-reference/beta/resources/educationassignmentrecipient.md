@@ -1,27 +1,27 @@
 ---
-title: tipo de recurso de educationAssignmentRecipient
-description: Usada dentro da propriedade **assignments.assignTo** . Essa superclasse é abstrata e não é possível
+title: tipo de recurso educationAssignmentRecipient
+description: Usada dentro da propriedade **assignments.** assignTo. Esta superclasse é abstrata e você não pode
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 ms.openlocfilehash: 43ce19e62bf49932eb42b04e0bf22e4ab8cf0261
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511783"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507314"
 ---
-# <a name="educationassignmentrecipient-resource-type"></a>tipo de recurso de educationAssignmentRecipient
+# <a name="educationassignmentrecipient-resource-type"></a>tipo de recurso educationAssignmentRecipient
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Usada dentro da propriedade **assignments.assignTo** . Essa superclasse é abstrata e você não pode definir a propriedade nas atribuições para esse valor. Essa superclasse representa que a atribuição deve ser atribuída quando a atribuição é publicada.
+Usada dentro da propriedade **assignments.** assignTo. Essa superclasse é abstrata e você não pode definir a propriedade em assignments para esse valor. Essa superclasse representa quem a atribuição deve ser atribuída quando a atribuição é publicada.
 
 
-O recurso de [educationAssignmentClassRecipient](educationassignmentclassrecipient.md) é uma subclasse de nessa superclasse.
+O recurso [educationAssignmentClassRecipient](educationassignmentclassrecipient.md) é uma subclasse dessa superclasse.
 
 ## <a name="properties"></a>Propriedades
-Nenhum.
+Nenhum
 
 <!-- {
   "blockType": "resource",

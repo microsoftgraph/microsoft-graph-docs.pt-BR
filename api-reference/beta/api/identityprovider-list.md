@@ -1,19 +1,19 @@
 ---
 title: Lista identityProviders
-description: Recupere todos os identityProviders no diretório.
+description: Recuperar todos os identityProviders no diretório.
 localization_priority: Normal
 ms.openlocfilehash: 4226e6f091527d2df8bfb544327ec2e49f2b890c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529730"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32501312"
 ---
 # <a name="list-identityproviders"></a>Lista identityProviders
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere todos os [identityProviders](../resources/identityprovider.md) no diretório.
+Recuperar todos os [identityProviders](../resources/identityprovider.md) no diretório.
 
 ## <a name="permissions"></a>Permissões
 
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft)| Sem suporte.|
 |Aplicativo|Sem suporte.|
 
-A conta do trabalho ou da escola deve ser um administrador global do inquilino.
+A conta corporativa ou de estudante deve ser um administrador global do locatário.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -46,7 +46,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` código de resposta e uma coleção de [identityProviders](../resources/identityprovider.md) na representação JSON no corpo da resposta.
+Se bem-sucedido, esse método retornará `200 OK` código de resposta e um conjunto de [identityProviders](../resources/identityprovider.md) em representação JSON no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

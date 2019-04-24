@@ -5,15 +5,13 @@ ms.date: 09/11/2017
 title: FieldValueSet
 localization_priority: Normal
 ms.openlocfilehash: ed10b586ee55ccd32e81b03bdc6359ee13605877
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480163"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32506521"
 ---
 # <a name="fieldvalueset-resource"></a>Recurso de FieldValueSet
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa os valores de coluna em um recurso [listItem](listitem.md).
 
@@ -21,7 +19,8 @@ Representa os valores de coluna em um recurso [listItem](listitem.md).
 
 Aqui está uma representação JSON de um recurso **fieldValueSet**.
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.fieldValueSet",
-       "keyProperty": "id", "openType": true } -->
+      "optionalProperties": ["Author", "AuthorLookupId", "Name", "Color", "Quantity" ],
+       "baseType": "microsoft.graph.entity", "openType": true } -->
 
 ```json
 {
@@ -52,15 +51,10 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expan
 
 você pode solicitar até 12 campos de pesquisa em uma única consulta, além de qualquer número de campos normais.
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/FieldValueSet",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/fieldvalueset.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": "Resources/FieldValueSet"
+} -->

@@ -5,11 +5,11 @@ ms.date: 09/11/2017
 title: LookupColumn
 localization_priority: Normal
 ms.openlocfilehash: 1a38cc3e08917b0d4aa2a8df4943ebc932c937d4
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480793"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32506224"
 ---
 # <a name="lookupcolumn-resource-type"></a>Tipo de recurso LookupColumn
 

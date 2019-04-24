@@ -1,19 +1,19 @@
 ---
 title: Substituições de lista
-description: Obtenha as substituições de caixa de entrada focalizados em que um usuário tiver configurado para sempre classificar mensagens de determinados remetentes em meios específicos.
+description: Obtenha as substituições de caixa de entrada destaques que um usuário configurou para sempre classificar as mensagens de determinados remetentes de maneiras específicas.
 localization_priority: Normal
 ms.openlocfilehash: a49d47e39caff5c00981d02551b0eeb564239f73
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511916"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32501277"
 ---
 # <a name="list-overrides"></a>Substituições de lista
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha as substituições de [Caixa de entrada focalizados em](../resources/manage-focused-inbox.md) que um usuário tiver configurado para sempre classificar mensagens de determinados remetentes em meios específicos.
+Obtenha as substituições de [caixa de entrada destaques](../resources/manage-focused-inbox.md) que um usuário configurou para sempre classificar as mensagens de determinados remetentes de maneiras específicas.
 
 Cada substituição corresponde a um endereço SMTP de um remetente. Inicialmente, um usuário não tem quaisquer substituições.
 ## <a name="permissions"></a>Permissões
@@ -42,7 +42,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) no corpo da resposta.
+Se bem sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

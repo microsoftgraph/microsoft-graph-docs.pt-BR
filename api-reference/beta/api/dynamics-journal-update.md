@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: 5c5614a84852e81977cdf443543364507544bd27
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365854"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32458660"
 ---
 # <a name="update-journals"></a>Atualizar diários
 Atualizar as propriedades de um objeto Journal para o Dynamics 365 Business central.

@@ -1,19 +1,19 @@
 ---
-title: tipo de enum teamsAsyncOperationStatus
+title: tipo de enumeração teamsAsyncOperationStatus
 description: Descreve o status atual de um teamsAsyncOperation.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: b3ceaca73fe013b76f44cdf9290f3c0935e93b0a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27962076"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462225"
 ---
-# <a name="teamsasyncoperationstatus-enum-type"></a>tipo de enum teamsAsyncOperationStatus
+# <a name="teamsasyncoperationstatus-enum-type"></a>tipo de enumeração teamsAsyncOperationStatus
 
-
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Descreve o status atual de um [teamsAsyncOperation](teamsasyncoperation.md).
 
@@ -21,8 +21,16 @@ Descreve o status atual de um [teamsAsyncOperation](teamsasyncoperation.md).
 
 | Membro | Valor| Descrição |
 |:---------------|:--------|:----------|
-|Inválido|0|Valor inválido.|
+|Inválido|,0|Valor inválido.|
 |notStarted|1|A operação não foi iniciada.|
-|inProgress|2|A operação está sendo executado.|
-|foi bem-sucedida|3|A operação foi bem-sucedida.|
-|Falha|4|Falha na operação.|
+|inProgress|duas|A operação está sendo executada.|
+|adicionada|3D|A operação foi bem-sucedida.|
+|falhou|quatro|Falha na operação.|
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/teamsasyncoperationstatus.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

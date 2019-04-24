@@ -1,28 +1,28 @@
 ---
-title: tipo de recurso de educationOrganization
-description: 'Entidade abstrata usada para modelar o comum entre os tipos de organização diferentes dentro do setor de educação.  '
+title: tipo de recurso educationOrganization
+description: 'Entidade abstrata usada para modelar a semelhança entre diferentes tipos de organização dentro do setor educacional.  '
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 122717952781cd8effe415fb01b07ec9bf71143d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507471"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507177"
 ---
-# <a name="educationorganization-resource-type"></a>tipo de recurso de educationOrganization
+# <a name="educationorganization-resource-type"></a>tipo de recurso educationOrganization
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Entidade abstrata usada para modelar o comum entre os tipos de organização diferentes dentro do setor de educação.  
+Entidade abstrata usada para modelar a semelhança entre diferentes tipos de organização dentro do setor educacional.  
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |description|String| Descrição da organização.|
 |displayName|String| Nome de exibição da organização.|
-|externalSource|string| Fonte local a partir do qual esta organização foi criada. Os valores possíveis são: `sis`, `manual`, `unknownFutureValue`.|
+|externalSource|cadeia de caracteres| Origem de onde esta organização foi criada. Os valores possíveis são: `sis`, `manual`, `unknownFutureValue`.|
 
 ## <a name="relationships"></a>Relacionamentos
 Nenhum

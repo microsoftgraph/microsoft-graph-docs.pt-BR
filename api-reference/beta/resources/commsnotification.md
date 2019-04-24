@@ -1,21 +1,21 @@
 ---
-title: tipo de recurso de commsNotification
-description: Comunicações notificação tipo base publicado pelos servidores do Communications Server para notificar mudanças.
+title: tipo de recurso commsNotification
+description: Tipo de base de notificação de comunicação publicado por servidores de comunicação para notificar as alterações.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 2372720976b5d06ffe49c00068625bdb92048674
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529513"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460671"
 ---
-# <a name="commsnotification-resource-type"></a>tipo de recurso de commsNotification
+# <a name="commsnotification-resource-type"></a>tipo de recurso commsNotification
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Comunicações notificação tipo base publicado pelos servidores do Communications Server para notificar mudanças.
+Tipo de base de notificação de comunicação publicado por servidores de comunicação para notificar as alterações.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade       | Tipo    | Descrição                                                |
@@ -23,7 +23,7 @@ Comunicações notificação tipo base publicado pelos servidores do Communicati
 | changeType     | String  | Os valores possíveis são: `created`, `updated`, `deleted`.      |
 | recurso       | String  | URI do recurso que foi alterado.                      |
 
-> **Observação:** `resourceData` está disponível como dados adicionais. É uma entidade ou Collection(entity) dependendo do número de pacotes de notificação de alterações.
+> **Observação:** `resourceData` está disponível como dados adicionais. É uma entidade ou coleção (entidade), dependendo do número de alterações empacotadas na notificação.
 
 ## <a name="json-representation"></a>Representação JSON
 

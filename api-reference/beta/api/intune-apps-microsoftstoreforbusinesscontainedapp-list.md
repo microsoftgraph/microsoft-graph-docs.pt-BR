@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: a0119748c6fcf0ddb76cae8f3988d33776ebdf0e
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31775671"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32490938"
 ---
 # <a name="list-microsoftstoreforbusinesscontainedapps"></a>Listar microsoftStoreForBusinessContainedApps
 

@@ -5,11 +5,11 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 ms.openlocfilehash: 049c860be95e2f4f4b83848d8d8be6b3dd0ed9c5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517166"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32502139"
 ---
 # <a name="add-group-owner"></a>Adicionar proprietário do grupo
 
@@ -17,7 +17,7 @@ ms.locfileid: "29517166"
 
 Adiciona um usuário aos proprietários do grupo. Os proprietários são um conjunto de usuários que não são administradores e que têm permissão para alterar o objeto de grupo.
 
->**Importante:** Se você atualizar os proprietários do grupo e você criou uma equipe para o grupo, pode demorar até 2 horas para os proprietários ser sincronizado com o Microsoft Teams. Além disso, se quiser que o proprietário sejam capazes de fazer alterações em uma equipe - por exemplo, ao criar um plano de Planejador - o proprietário também precisa ser adicionado como um membro de equipe/grupo. 
+>**Importante:** Se você atualizar os proprietários do grupo e criou uma equipe para o grupo, pode levar até 2 horas para que os proprietários sejam sincronizados com o Microsoft Teams. Além disso, se você quiser que o proprietário seja capaz de fazer alterações em uma equipe, por exemplo, criando um plano do Planner-o proprietário também precisará ser adicionado como um membro de grupo/equipe. 
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

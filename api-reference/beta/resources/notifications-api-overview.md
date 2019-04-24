@@ -4,11 +4,11 @@ description: Você pode usar as API de notificações do Microsoft Graph para en
 localization_priority: Priority
 ms.prod: project-rome
 ms.openlocfilehash: 2a4c23955e348159d2e17514d6041260f13cffba
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513981"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32458786"
 ---
 # <a name="use-the-notifications-rest-api-in-microsoft-graph"></a>Usar as API REST de notificações no Microsoft Graph
 

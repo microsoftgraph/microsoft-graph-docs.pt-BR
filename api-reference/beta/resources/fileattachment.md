@@ -1,19 +1,19 @@
 ---
 title: tipo de recurso fileAttachment
-description: Um arquivo (por exemplo, um arquivo de texto ou um documento do Word) anexado a um evento,
+description: Um arquivo (como um arquivo de texto ou documento do Word) anexado a um evento
 localization_priority: Normal
 ms.openlocfilehash: 7d9f92565e38aaf418691480b7f8f3187c57647c
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29644088"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32506360"
 ---
 # <a name="fileattachment-resource-type"></a>tipo de recurso fileAttachment
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Um arquivo (por exemplo, um arquivo de texto ou um documento do Word) anexado a um [evento](../resources/event.md), [mensagem](../resources/message.md), [tarefa do Outlook](../resources/outlooktask.md)ou [postar](../resources/post.md). A propriedade **contentBytes** contém o conteúdo do arquivo codificado na base64.  
+Um arquivo (como um arquivo de texto ou documento do Word) anexado a um [evento](../resources/event.md), [mensagem](../resources/message.md), [tarefa do Outlook](../resources/outlooktask.md)ou [postagem](../resources/post.md). A propriedade **contentBytes** contém os conteúdos com codificação base64 do arquivo.  
 
 Ao criar um anexo de arquivo, inclua o seguinte no corpo da solicitação:
 
@@ -27,7 +27,7 @@ Derivado de [attachment](attachment.md).
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
 |[Get](../api/attachment-get.md) | [fileAttachment](fileattachment.md) |Leia as propriedades e os relacionamentos do objeto fileAttachment.|
-|[Delete](../api/attachment-delete.md) | Nenhuma |Exclua um objeto fileAttachment. |
+|[Excluir](../api/attachment-delete.md) | Nenhum |Exclua um objeto fileAttachment. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
@@ -39,11 +39,11 @@ Derivado de [attachment](attachment.md).
 |id|String|A ID do anexo.|
 |isInline|Booliano|Defina como true se este for um anexo embutido.|
 |lastModifiedDateTime|DateTimeOffset|Data e hora em que o anexo foi modificado pela última vez.|
-|name|String|O nome que representa o texto que é exibido abaixo do ícone que representa o anexo inserido. Não precisa ser o nome de arquivo real.|
+|nome|String|O nome que representa o texto que é exibido abaixo do ícone que representa o anexo inserido. Não precisa ser o nome de arquivo real.|
 |size|Int32|O tamanho do anexo em bytes.|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 
 ## <a name="json-representation"></a>Representação JSON

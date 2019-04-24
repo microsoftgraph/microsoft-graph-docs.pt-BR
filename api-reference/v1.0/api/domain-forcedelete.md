@@ -1,33 +1,33 @@
 ---
-title: Força a exclusão de domínio
-description: Exclui um domínio usando uma operação de longa execução assíncrona.
+title: Forçar exclusão de domínio
+description: Exclui um domínio usando uma operação assíncrona de execução longa.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: bbf56fdd2f623a918b43298626bd08269ad922ef
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27918424"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32467502"
 ---
-# <a name="force-domain-deletion"></a>Força a exclusão de domínio
+# <a name="force-domain-deletion"></a>Forçar exclusão de domínio
 
-Exclui um domínio usando uma operação de longa execução assíncrona.
+Exclui um domínio usando uma operação assíncrona de execução longa.
 
-As seguintes ações são executadas como parte dessa operação:
+As ações a seguir são executadas como parte desta operação:
 
-* Atualizações de `userPrincipalName`, `mail`, e `proxyAddresses` propriedades de `users` com referências ao domínio excluído para usar o domínio onmicrosoft.com inicial.
+* atualiza as `userPrincipalName`propriedades `mail`, e `proxyAddresses` de `users` com referências para o domínio excluído para usar o domínio onmicrosoft.com inicial.
 
-* Atualizações de `mail` propriedade do `groups` com referências ao domínio excluído para usar o domínio onmicrosoft.com inicial.
+* Atualiza a `mail` propriedade de `groups` com referências ao domínio excluído para usar o domínio onmicrosoft.com inicial.
 
-* Atualizações de `identifierUris` propriedade do `applications` com referências ao domínio excluído para usar o domínio onmicrosoft.com inicial.
+* Atualiza a `identifierUris` propriedade de `applications` com referências ao domínio excluído para usar o domínio onmicrosoft.com inicial.
 
-* Se o número de objetos a ser renomeado for maior que 1000, um erro será retornado.
+* Se o número de objetos a serem renomeados for maior que 1000, um erro será retornado.
 
-* Se um do `applications` a ser renomeado é um aplicativo de multilocatário, será retornado um erro.
+* Se um dos `applications` a ser renomeado for um aplicativo de vários locatários, um erro será retornado.
 
-Após a exclusão de domínio for concluído, as operações de API para o domínio excluído retornará um código de status HTTP 404. Para verificar a exclusão de um domínio, você pode executar uma operação [obter o domínio](domain-get.md) .
+Após a conclusão da exclusão do domínio, as operações de API para o domínio excluído retornarão um código de status HTTP 404. Para verificar a exclusão de um domínio, você pode executar uma operação [Get Domain](domain-get.md) .
 
 ## <a name="permissions"></a>Permissões
 
@@ -62,11 +62,11 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|`disableUserAccounts`|`Boolean`| Opção para desabilitar contas de usuário que são renomeadas. Se uma conta de usuário estiver desabilitada, o usuário não poderão entrar. Se definida como **true** o `users` atualizados como parte dessa operação será desabilitado.  Valor padrão é **true**. |
+|`disableUserAccounts`|`Boolean`| Opção para desabilitar as contas de usuário que são renomeadas. Se uma conta de usuário estiver desabilitada, o usuário não terá permissão para entrar. Se definido como **true** , `users` a parte atualizada como parte dessa operação será desabilitada.  O valor padrão é **true**. |
 
 ## <a name="response-body"></a>Corpo da resposta
 
-Se tiver êxito, este método retornará `HTTP/1.1 204 OK` código de status.
+Se bem-sucedido, este método retorna `HTTP/1.1 204 OK` o código de status.
 
 ## <a name="example"></a>Exemplo
 

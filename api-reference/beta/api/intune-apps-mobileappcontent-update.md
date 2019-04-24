@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 3a33cab7aa5d576ebf1a55986c3e5d9a0d9f0325
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31785605"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32489244"
 ---
 # <a name="update-mobileappcontent"></a>Atualizar mobileAppContent
 

@@ -1,21 +1,19 @@
 ---
 title: Excluir evento
-description: Exclua um evento.
+description: Exclui um evento.
 author: angelgolfer-ms
-localization_priority: Normal
+localization_priority: Priority
 ms.prod: outlook
 ms.openlocfilehash: f7a92fac01b8d53756032581670213573367ec93
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513316"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457393"
 ---
 # <a name="delete-event"></a>Excluir evento
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Exclua um evento.
+Exclui um evento.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -65,7 +63,7 @@ Este é um exemplo da solicitação.
   "name": "delete_event"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/me/events/{id}
+DELETE https://graph.microsoft.com/v1.0/me/events/{id}
 ```
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. 
@@ -79,15 +77,10 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Delete event",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/event-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->
