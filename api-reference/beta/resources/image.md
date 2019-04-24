@@ -5,21 +5,19 @@ ms.date: 09/10/2017
 title: Image
 localization_priority: Normal
 ms.openlocfilehash: b9b8e65442b268e58f920d9b08b60ae8de35df35
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482396"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32506312"
 ---
-# <a name="image-resource-type"></a><span data-ttu-id="964c3-102">Tipo de recurso Image</span><span class="sxs-lookup"><span data-stu-id="964c3-102">Image resource type</span></span>
+# <a name="image-resource-type"></a><span data-ttu-id="450c5-102">Tipo de recurso Image</span><span class="sxs-lookup"><span data-stu-id="450c5-102">Image resource type</span></span>
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+<span data-ttu-id="450c5-p101">O recurso **Image** agrupa propriedades relacionadas a imagens em uma única estrutura. Se um [**DriveItem**](driveitem.md) tiver uma faceta **image** não nula, o item representa uma imagem bitmap.</span><span class="sxs-lookup"><span data-stu-id="450c5-p101">The **Image** resource groups image-related properties into a single structure. If a [**DriveItem**](driveitem.md) has a non-null **image** facet, the item represents a bitmap image.</span></span>
 
-<span data-ttu-id="964c3-p101">O recurso **Image** agrupa propriedades relacionadas a imagens em uma única estrutura. Se um [**DriveItem**](driveitem.md) tiver uma faceta **image** não nula, o item representa uma imagem bitmap.</span><span class="sxs-lookup"><span data-stu-id="964c3-p101">The **Image** resource groups image-related properties into a single structure. If a [**DriveItem**](driveitem.md) has a non-null **image** facet, the item represents a bitmap image.</span></span>
+<span data-ttu-id="450c5-105">**Observação:** se o serviço não puder determinar a largura e a altura da imagem, o recurso **Image** poderá ficar vazio.</span><span class="sxs-lookup"><span data-stu-id="450c5-105">**Note:** If the service is unable to determine the width and height of the image, the **Image** resource may be empty.</span></span>
 
-<span data-ttu-id="964c3-105">**Observação:** se o serviço não puder determinar a largura e a altura da imagem, o recurso **Image** poderá ficar vazio.</span><span class="sxs-lookup"><span data-stu-id="964c3-105">**Note:** If the service is unable to determine the width and height of the image, the **Image** resource may be empty.</span></span>
-
-## <a name="json-representation"></a><span data-ttu-id="964c3-106">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="964c3-106">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="450c5-106">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="450c5-106">JSON representation</span></span>
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.image" } -->
 ```json
@@ -29,29 +27,24 @@ ms.locfileid: "30482396"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="964c3-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="964c3-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="450c5-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="450c5-107">Properties</span></span>
 
-| <span data-ttu-id="964c3-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="964c3-108">Property</span></span>   | <span data-ttu-id="964c3-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="964c3-109">Type</span></span>  | <span data-ttu-id="964c3-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="964c3-110">Description</span></span>                                |
+| <span data-ttu-id="450c5-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="450c5-108">Property</span></span>   | <span data-ttu-id="450c5-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="450c5-109">Type</span></span>  | <span data-ttu-id="450c5-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="450c5-110">Description</span></span>                                |
 |:-----------|:------|:-------------------------------------------|
-| <span data-ttu-id="964c3-111">**height**</span><span class="sxs-lookup"><span data-stu-id="964c3-111">**height**</span></span> | <span data-ttu-id="964c3-112">Int32</span><span class="sxs-lookup"><span data-stu-id="964c3-112">Int32</span></span> | <span data-ttu-id="964c3-p102">Opcional. A altura da imagem em pixels. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="964c3-p102">Optional. Height of the image, in pixels. Read-only.</span></span> |
-| <span data-ttu-id="964c3-116">**width**</span><span class="sxs-lookup"><span data-stu-id="964c3-116">**width**</span></span>  | <span data-ttu-id="964c3-117">Int32</span><span class="sxs-lookup"><span data-stu-id="964c3-117">Int32</span></span> | <span data-ttu-id="964c3-p103">Opcional. A largura da imagem em pixels. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="964c3-p103">Optional. Width of the image, in pixels. Read-only.</span></span>  |
+| <span data-ttu-id="450c5-111">**height**</span><span class="sxs-lookup"><span data-stu-id="450c5-111">**height**</span></span> | <span data-ttu-id="450c5-112">Int32</span><span class="sxs-lookup"><span data-stu-id="450c5-112">Int32</span></span> | <span data-ttu-id="450c5-p102">Opcional. A altura da imagem em pixels. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="450c5-p102">Optional. Height of the image, in pixels. Read-only.</span></span> |
+| <span data-ttu-id="450c5-116">**width**</span><span class="sxs-lookup"><span data-stu-id="450c5-116">**width**</span></span>  | <span data-ttu-id="450c5-117">Int32</span><span class="sxs-lookup"><span data-stu-id="450c5-117">Int32</span></span> | <span data-ttu-id="450c5-p103">Opcional. A largura da imagem em pixels. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="450c5-p103">Optional. Width of the image, in pixels. Read-only.</span></span>  |
 
-## <a name="remarks"></a><span data-ttu-id="964c3-121">Comentários</span><span class="sxs-lookup"><span data-stu-id="964c3-121">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="450c5-121">Comentários</span><span class="sxs-lookup"><span data-stu-id="450c5-121">Remarks</span></span>
 
-<span data-ttu-id="964c3-122">No OneDrive for Business, esse recurso retorna em itens que devem ser imagens com base na extensão de arquivo.</span><span class="sxs-lookup"><span data-stu-id="964c3-122">In OneDrive for Business, this resource is returned on items that are expected to be images based on file extension.</span></span>
+<span data-ttu-id="450c5-122">No OneDrive for Business, esse recurso retorna em itens que devem ser imagens com base na extensão de arquivo.</span><span class="sxs-lookup"><span data-stu-id="450c5-122">In OneDrive for Business, this resource is returned on items that are expected to be images based on file extension.</span></span>
 
-<span data-ttu-id="964c3-123">Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="964c3-123">For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).</span></span>
+<span data-ttu-id="450c5-123">Para saber mais sobre as facetas de um DriveItem, confira [DriveItem](driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="450c5-123">For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).</span></span>
 
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "The image facet describes properties of an image like width and height",
   "keywords": "image,width,height,item,facet",
   "section": "documentation",
-  "tocPath": "Facets/Image",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/image.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": "Facets/Image"
+} -->

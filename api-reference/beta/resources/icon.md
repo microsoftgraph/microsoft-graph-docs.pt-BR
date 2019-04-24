@@ -3,39 +3,39 @@ title: Tipo de recurso Icon
 description: Representa um ícone de célula.
 localization_priority: Normal
 ms.openlocfilehash: c15ee02d1c6830cbb5246826665d0353b7e999b9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516298"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32506398"
 ---
-# <a name="icon-resource-type"></a><span data-ttu-id="950ec-103">Tipo de recurso Icon</span><span class="sxs-lookup"><span data-stu-id="950ec-103">Icon resource type</span></span>
+# <a name="icon-resource-type"></a><span data-ttu-id="7be2c-103">Tipo de recurso Icon</span><span class="sxs-lookup"><span data-stu-id="7be2c-103">Icon resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="950ec-104">Representa um ícone de célula.</span><span class="sxs-lookup"><span data-stu-id="950ec-104">Represents a cell icon.</span></span>
+<span data-ttu-id="7be2c-104">Representa um ícone de célula.</span><span class="sxs-lookup"><span data-stu-id="7be2c-104">Represents a cell icon.</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="950ec-105">Métodos</span><span class="sxs-lookup"><span data-stu-id="950ec-105">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="7be2c-105">Métodos</span><span class="sxs-lookup"><span data-stu-id="7be2c-105">Methods</span></span>
 
-| <span data-ttu-id="950ec-106">Método</span><span class="sxs-lookup"><span data-stu-id="950ec-106">Method</span></span>           | <span data-ttu-id="950ec-107">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="950ec-107">Return Type</span></span>    |<span data-ttu-id="950ec-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="950ec-108">Description</span></span>|
+| <span data-ttu-id="7be2c-106">Método</span><span class="sxs-lookup"><span data-stu-id="7be2c-106">Method</span></span>           | <span data-ttu-id="7be2c-107">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="7be2c-107">Return Type</span></span>    |<span data-ttu-id="7be2c-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="7be2c-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="950ec-109">Get Icon</span><span class="sxs-lookup"><span data-stu-id="950ec-109">[Get Icon](../api/icon-get.md)</span></span> | [<span data-ttu-id="950ec-110">Icon</span><span class="sxs-lookup"><span data-stu-id="950ec-110">Icon</span></span>](icon.md) |<span data-ttu-id="950ec-111">Leia as propriedades e os relacionamentos do objeto de ícone.</span><span class="sxs-lookup"><span data-stu-id="950ec-111">Read properties and relationships of icon object.</span></span>|
-|[<span data-ttu-id="950ec-112">Update</span><span class="sxs-lookup"><span data-stu-id="950ec-112">Update</span></span>](../api/icon-update.md) | [<span data-ttu-id="950ec-113">Icon</span><span class="sxs-lookup"><span data-stu-id="950ec-113">Icon</span></span>](icon.md)  |<span data-ttu-id="950ec-114">Atualize o objeto Icon.</span><span class="sxs-lookup"><span data-stu-id="950ec-114">Update Icon object.</span></span> |
+|[<span data-ttu-id="7be2c-109">Get Icon</span><span class="sxs-lookup"><span data-stu-id="7be2c-109">Get Icon</span></span>](../api/icon-get.md) | [<span data-ttu-id="7be2c-110">Icon</span><span class="sxs-lookup"><span data-stu-id="7be2c-110">Icon</span></span>](icon.md) |<span data-ttu-id="7be2c-111">Leia as propriedades e os relacionamentos do objeto de ícone.</span><span class="sxs-lookup"><span data-stu-id="7be2c-111">Read properties and relationships of icon object.</span></span>|
+|[<span data-ttu-id="7be2c-112">Update</span><span class="sxs-lookup"><span data-stu-id="7be2c-112">Update</span></span>](../api/icon-update.md) | [<span data-ttu-id="7be2c-113">Icon</span><span class="sxs-lookup"><span data-stu-id="7be2c-113">Icon</span></span>](icon.md)  |<span data-ttu-id="7be2c-114">Atualize o objeto Icon.</span><span class="sxs-lookup"><span data-stu-id="7be2c-114">Update Icon object.</span></span> |
 
-## <a name="properties"></a><span data-ttu-id="950ec-115">Propriedades</span><span class="sxs-lookup"><span data-stu-id="950ec-115">Properties</span></span>
-| <span data-ttu-id="950ec-116">Propriedade</span><span class="sxs-lookup"><span data-stu-id="950ec-116">Property</span></span>     | <span data-ttu-id="950ec-117">Tipo</span><span class="sxs-lookup"><span data-stu-id="950ec-117">Type</span></span>   |<span data-ttu-id="950ec-118">Descrição</span><span class="sxs-lookup"><span data-stu-id="950ec-118">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="7be2c-115">Propriedades</span><span class="sxs-lookup"><span data-stu-id="7be2c-115">Properties</span></span>
+| <span data-ttu-id="7be2c-116">Propriedade</span><span class="sxs-lookup"><span data-stu-id="7be2c-116">Property</span></span>     | <span data-ttu-id="7be2c-117">Tipo</span><span class="sxs-lookup"><span data-stu-id="7be2c-117">Type</span></span>   |<span data-ttu-id="7be2c-118">Descrição</span><span class="sxs-lookup"><span data-stu-id="7be2c-118">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="950ec-119">índice</span><span class="sxs-lookup"><span data-stu-id="950ec-119">index</span></span>|<span data-ttu-id="950ec-120">int</span><span class="sxs-lookup"><span data-stu-id="950ec-120">int</span></span>|<span data-ttu-id="950ec-121">Representa o índice do ícone em determinado conjunto.</span><span class="sxs-lookup"><span data-stu-id="950ec-121">Represents the index of the icon in the given set.</span></span>|
-|<span data-ttu-id="950ec-122">set</span><span class="sxs-lookup"><span data-stu-id="950ec-122">set</span></span>|<span data-ttu-id="950ec-123">string</span><span class="sxs-lookup"><span data-stu-id="950ec-123">string</span></span>|<span data-ttu-id="950ec-p101">Representa o conjunto do qual o ícone faz parte. Os valores possíveis são: `Invalid`, `ThreeArrows`, `ThreeArrowsGray`, `ThreeFlags`, `ThreeTrafficLights1`, `ThreeTrafficLights2`, `ThreeSigns`, `ThreeSymbols`, `ThreeSymbols2`, `FourArrows`, `FourArrowsGray`, `FourRedToBlack`, `FourRating`, `FourTrafficLights`, `FiveArrows`, `FiveArrowsGray`, `FiveRating`, `FiveQuarters`, `ThreeStars`, `ThreeTriangles` e `FiveBoxes`.</span><span class="sxs-lookup"><span data-stu-id="950ec-p101">Represents the set that the icon is part of. Possible values are: `Invalid`, `ThreeArrows`, `ThreeArrowsGray`, `ThreeFlags`, `ThreeTrafficLights1`, `ThreeTrafficLights2`, `ThreeSigns`, `ThreeSymbols`, `ThreeSymbols2`, `FourArrows`, `FourArrowsGray`, `FourRedToBlack`, `FourRating`, `FourTrafficLights`, `FiveArrows`, `FiveArrowsGray`, `FiveRating`, `FiveQuarters`, `ThreeStars`, `ThreeTriangles`, `FiveBoxes`.</span></span>|
+|<span data-ttu-id="7be2c-119">index</span><span class="sxs-lookup"><span data-stu-id="7be2c-119">index</span></span>|<span data-ttu-id="7be2c-120">int</span><span class="sxs-lookup"><span data-stu-id="7be2c-120">int</span></span>|<span data-ttu-id="7be2c-121">Representa o índice do ícone em determinado conjunto.</span><span class="sxs-lookup"><span data-stu-id="7be2c-121">Represents the index of the icon in the given set.</span></span>|
+|<span data-ttu-id="7be2c-122">set</span><span class="sxs-lookup"><span data-stu-id="7be2c-122">set</span></span>|<span data-ttu-id="7be2c-123">string</span><span class="sxs-lookup"><span data-stu-id="7be2c-123">string</span></span>|<span data-ttu-id="7be2c-p101">Representa o conjunto do qual o ícone faz parte. Os valores possíveis são: `Invalid`, `ThreeArrows`, `ThreeArrowsGray`, `ThreeFlags`, `ThreeTrafficLights1`, `ThreeTrafficLights2`, `ThreeSigns`, `ThreeSymbols`, `ThreeSymbols2`, `FourArrows`, `FourArrowsGray`, `FourRedToBlack`, `FourRating`, `FourTrafficLights`, `FiveArrows`, `FiveArrowsGray`, `FiveRating`, `FiveQuarters`, `ThreeStars`, `ThreeTriangles` e `FiveBoxes`.</span><span class="sxs-lookup"><span data-stu-id="7be2c-p101">Represents the set that the icon is part of. Possible values are: `Invalid`, `ThreeArrows`, `ThreeArrowsGray`, `ThreeFlags`, `ThreeTrafficLights1`, `ThreeTrafficLights2`, `ThreeSigns`, `ThreeSymbols`, `ThreeSymbols2`, `FourArrows`, `FourArrowsGray`, `FourRedToBlack`, `FourRating`, `FourTrafficLights`, `FiveArrows`, `FiveArrowsGray`, `FiveRating`, `FiveQuarters`, `ThreeStars`, `ThreeTriangles`, `FiveBoxes`.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="950ec-126">Relacionamento</span><span class="sxs-lookup"><span data-stu-id="950ec-126">Relationships</span></span>
-<span data-ttu-id="950ec-127">Nenhum</span><span class="sxs-lookup"><span data-stu-id="950ec-127">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="7be2c-126">Relações</span><span class="sxs-lookup"><span data-stu-id="7be2c-126">Relationships</span></span>
+<span data-ttu-id="7be2c-127">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="7be2c-127">None</span></span>
 
 
-## <a name="json-representation"></a><span data-ttu-id="950ec-128">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="950ec-128">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="7be2c-128">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="7be2c-128">JSON representation</span></span>
 
-<span data-ttu-id="950ec-129">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="950ec-129">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="7be2c-129">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="7be2c-129">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
