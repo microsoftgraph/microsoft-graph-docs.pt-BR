@@ -1,23 +1,23 @@
 ---
 title: Excluir uma configuração de diretório
-description: Exclua uma configuração de diretório.
+description: Excluir uma configuração de diretório.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: c66335ec863460c9b2167e25a7e78850846e105c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515822"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454859"
 ---
 # <a name="delete-a-directory-setting"></a>Excluir uma configuração de diretório
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exclua uma configuração de diretório.
+Excluir uma configuração de diretório.
 
-> **Observação**: A versão de /beta desse API é só se aplica aos grupos. A versão de /v1.0 desse API foi renomeada para *Excluir groupSettings*.
+> **Observação**: a versão do/beta dessa API só se aplica aos grupos. A versão/v1.0 dessa API foi renomeada para *excluir groupSettings*.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -29,7 +29,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Aplicativo | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
-<!-- { "blockType": "ignored" } -->Excluir um locatário todo específico ou configuração de grupo
+<!-- { "blockType": "ignored" } -->
+Excluir uma configuração específica de todo o locatário ou grupo
 ```http
 DELETE /settings/{id}
 DELETE /groups/{id}/settings/{id}

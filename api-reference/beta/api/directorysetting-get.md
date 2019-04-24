@@ -1,23 +1,23 @@
 ---
-title: Fazer uma configuração de diretório
-description: Recupere as propriedades de um objeto de configuração do diretório específico.
+title: Obter uma configuração de diretório
+description: Recupere as propriedades de um objeto de configuração de diretório específico.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 0ad7b0137e741ff6c6766980f121838ae00d8200
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525287"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454834"
 ---
-# <a name="get-a-directory-setting"></a>Fazer uma configuração de diretório
+# <a name="get-a-directory-setting"></a>Obter uma configuração de diretório
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades de um objeto de configuração do diretório específico.
+Recupere as propriedades de um objeto de configuração de diretório específico.
 
-> **Observação**: A versão de /beta desse API é só se aplica aos grupos. A versão de /v1.0 desse API foi renomeada para *obter groupSettings*.
+> **Observação**: a versão do/beta dessa API só se aplica aos grupos. A versão do/v1.0 dessa API foi renomeada para *obter groupSettings*.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -29,7 +29,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Aplicativo | Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
-<!-- { "blockType": "ignored" } -->Obter um locatário todo específico ou configuração de grupo
+<!-- { "blockType": "ignored" } -->
+Obter uma configuração específica de todo o locatário ou grupo
 ```http
 GET /settings/{id}
 GET /groups/{id}/settings/{id}
@@ -47,7 +48,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` objeto response de código e [directorySetting](../resources/directorysetting.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [directorySetting](../resources/directorysetting.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

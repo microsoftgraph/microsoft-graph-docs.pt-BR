@@ -6,11 +6,11 @@ title: Compartilhar um arquivo com um link
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 3f119ea285b3fa9e59ec8c67d5a7b3fd304fd196
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480499"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454579"
 ---
 # <a name="create-a-sharing-link-for-a-driveitem"></a>Criar um link de compartilhamento para um DriveItem
 
@@ -49,7 +49,7 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 O corpo da solicitação define as propriedades do link de compartilhamento que seu aplicativo está solicitando.
 A solicitação deve ser um objeto JSON com as seguintes propriedades.
 
-|   Nome    |  Tipo  |                                 Descrição                                  |
+|   Name    |  Tipo  |                                 Descrição                                  |
 | :-------- | :----- | :--------------------------------------------------------------------------- |
 | **type**  | string | O tipo de link de compartilhamento a ser criado. Pode ser `view`, `edit` ou `embed`.       |
 | **scope** | string | Opcional. O escopo do link a ser criado. Pode ser `anonymous` ou `organization`. |

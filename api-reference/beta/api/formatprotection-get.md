@@ -3,11 +3,11 @@ title: Obter FormatProtection
 description: Recupere as propriedades e os relacionamentos do objeto formatprotection.
 localization_priority: Normal
 ms.openlocfilehash: 5b2f994eb411f366c321c2329893d485c2cec4b0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527023"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457155"
 ---
 # <a name="get-formatprotection"></a>Obter FormatProtection
 
@@ -43,7 +43,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [FormatProtection](../resources/formatprotection.md) no corpo da resposta.
+Se bem sucedido, este método retorna um código de resposta `200 OK` e um objeto [FormatProtection](../resources/formatprotection.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

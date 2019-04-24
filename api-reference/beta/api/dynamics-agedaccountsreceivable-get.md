@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.author: solsen
 ms.openlocfilehash: ccacb3626d982cc2cd08fe31ba443fadcdfaa315
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30366757"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454220"
 ---
 # <a name="get-agedaccountsreceivable"></a>Obter agedAccountsReceivable
 Recupere as propriedades e os relacionamentos de um objeto de relatório de contas a receber antigo para o Dynamics 365 Business central.

@@ -6,11 +6,11 @@ title: Check-in de arquivos
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: ea8d4b8ec5399e867bd94c261ce95783f8ea27ba
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481073"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454572"
 ---
 # <a name="check-in-changes-to-a-driveitem-resource"></a>Alterações de check-in em um recurso de DriveItem
 
@@ -45,7 +45,7 @@ POST /users/{userId}/drive/items/{itemId}/checkin
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 
-|   Nome    | Valor  |                                                Descrição                                                |
+|   Name    | Valor  |                                                Descrição                                                |
 | :-------- | :----- | :-------------------------------------------------------------------------------------------------------- |
 | checkInAs | string | Opcional. O status desejado do documento após a conclusão da operação de check-in. Pode ser `published` ou não especificado. |
 | comment   | string | Um comentário de check-in comentário associado à versão.                                                   |

@@ -3,18 +3,16 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Listar unidades
-localization_priority: Normal
+localization_priority: Priority
 ms.prod: sharepoint
 ms.openlocfilehash: 6a5d716aef5a47acf3f0752d91a478f2d3299a24
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480317"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454733"
 ---
 # <a name="list-available-drives"></a>Listar as unidades disponíveis
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Recupera a lista de recursos [Drive](../resources/drive.md) disponíveis para um User, Group ou [Site](../resources/site.md) de destino.
 
@@ -34,7 +32,7 @@ Para listar as bibliotecas de documentos de um grupo, seu aplicativo solicita a 
 
 ### <a name="http-request"></a>Solicitação HTTP
 
-<!-- {"blockType": "request", "name": "group-list-drives", "scopes": "groups.read.all" } -->
+<!-- {"blockType": "request", "name": "group-list-drives", "scopes": "groups.read.all", "tags": "service.graph" } -->
 
 ```http
 GET /groups/{groupId}/drives
@@ -44,7 +42,7 @@ GET /groups/{groupId}/drives
 
 Para listar as bibliotecas de documentos de um site, seu aplicativo solicita a relação de **unidades** no Site.
 
-<!-- {"blockType": "request", "name": "site-list-drives", "scopes": "sites.read.all" } -->
+<!-- {"blockType": "request", "name": "site-list-drives", "scopes": "sites.read.all", "tags": "service.graph" } -->
 
 ```http
 GET /sites/{siteId}/drives
@@ -52,7 +50,7 @@ GET /sites/{siteId}/drives
 
 ## <a name="list-a-users-drives"></a>Lista as unidades de um usuário
 
-<!-- {"blockType": "request", "name": "user-list-drives", "scopes": "files.read.all" } -->
+<!-- {"blockType": "request", "name": "user-list-drives", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /users/{userId}/drives
@@ -60,7 +58,7 @@ GET /users/{userId}/drives
 
 ## <a name="list-the-current-users-drives"></a>Lista as unidades do usuário atual
 
-<!-- {"blockType": "request", "name": "enum-drives", "scopes": "files.read" } -->
+<!-- {"blockType": "request", "name": "enum-drives", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drives
@@ -69,6 +67,7 @@ GET /me/drives
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
 Este método oferece suporte aos [Parâmetros de consulta OData](/graph/query-parameters) `$expand`, `$select`, `$skipToken`, `$top` e `$orderby` para personalizar as resposta.
+
 
 ## <a name="response"></a>Resposta
 
@@ -122,15 +121,10 @@ Para listá-los, inclua `system` na instrução `$select`.
 
 [system]: ../resources/systemfacet.md
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "List the available drives for a user, group, or site.",
   "keywords": "drive,onedrive.drive,list drives",
   "section": "documentation",
-  "tocPath": "Drives/List drives",
-  "suppressions": [
-    "Error: /api-reference/beta/api/drive-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": "Drives/List drives"
+} -->

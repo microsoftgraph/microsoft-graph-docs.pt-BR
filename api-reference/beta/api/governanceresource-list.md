@@ -1,28 +1,28 @@
 ---
-title: Lista governanceResources
-description: Recupere uma coleção de governanceResource que o solicitante tem acesso.
+title: Listar governanceResources
+description: Recupere uma coleção de Entidadegovernanceresource à qual o solicitante tem acesso.
 localization_priority: Normal
 ms.openlocfilehash: 998e18a0139f0cbe41901da935faee2f7f24e9eb
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525665"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457169"
 ---
-# <a name="list-governanceresources"></a>Lista governanceResources
+# <a name="list-governanceresources"></a>Listar governanceResources
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma coleção de [governanceResource](../resources/governanceresource.md) que o solicitante tem acesso.
+Recupere uma coleção de [entidadegovernanceresource](../resources/governanceresource.md) à qual o solicitante tem acesso.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources  |
+|Delegado (conta corporativa ou de estudante) | PrivilegedAccess. ReadWrite. AzureResources  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | PrivilegedAccess.ReadWrite.AzureResources |
+|Aplicativo | PrivilegedAccess. ReadWrite. AzureResources |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 GET /privilegedAccess/azureResources/resources
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método oferece suporte para os [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
@@ -40,10 +40,10 @@ Este método oferece suporte para os [parâmetros de consulta OData](/graph/quer
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e a coleção de objetos [governanceResource](../resources/governanceresource.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [entidadegovernanceresource](../resources/governanceresource.md) no corpo da resposta.
 ## <a name="examples"></a>Exemplos
 
-Este exemplo lista todos os recursos que podem acessar no momento.
+Este exemplo lista todos os recursos que eu posso acessar no momento.
 ##### <a name="request"></a>Solicitação
 <!-- {
   "blockType": "request",

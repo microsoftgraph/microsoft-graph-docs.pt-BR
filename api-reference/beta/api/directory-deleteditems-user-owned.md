@@ -1,25 +1,25 @@
 ---
-title: Permissions
+title: Permissões
 description: 'Recupera uma lista de itens excluídos recentemente pertencentes ao usuário especificado.  '
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: f02d6dccd005696c130c6bb4a1f42c603943e5c8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27960564"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455062"
 ---
 # <a name="list-deleted-items-owned-by-a-user"></a>**Listar itens excluídos pertencentes a um usuário**
 
 Recupera uma lista de itens excluídos recentemente pertencentes ao usuário especificado.  
 
-Atualmente, a funcionalidade de itens de lista excluída é suportada somente para [Agrupar](../resources/group.md) recursos pertencentes ao usuário.
+Atualmente, a funcionalidade Listar itens excluídos é suportada apenas para recursos de [grupo](../resources/group.md) pertencentes ao usuário.
 
-Esta é uma ação de serviço, o que significa que ele não dá suporte a paginação.  A API retorna até 1.000 objetos excluídos pertencentes ao usuário, classificado por ID.  O usuário deve pertencer 1.000 ou mais excluído objetos, a API retorna nothing.
+Esta é uma ação de serviço, o que significa que ele não oferece suporte à paginação.  A API retorna até 1.000 objetos excluídos pertencentes ao usuário, classificados por ID.  Se o usuário tiver 1.000 ou mais objetos excluídos, a API retornará Nothing.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).
 
@@ -54,12 +54,12 @@ O corpo da solicitação requer os seguintes parâmetros:
 
 | Parâmetro    | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|userId|Cadeia de caracteres|ID do proprietário.|
-|type|Cadeia de caracteres|Tipo de objetos pertencentes para retornar; `Group` atualmente é o único valor com suporte.|
+|userId|String|ID do proprietário.|
+|type|String|Tipo de objetos de propriedade a ser retornado; `Group` no momento, o único valor com suporte.|
 
 ## <a name="response"></a>Resposta
 
-Solicitações bem-sucedidas retornam `200 OK` códigos de resposta; o objeto de resposta inclui propriedades do [diretório (itens excluídos)](../resources/directory.md) .
+Solicitações bem-sucedidas retornam `200 OK` códigos de resposta; o objeto Response inclui propriedades [de diretório (itens excluídos)](../resources/directory.md) .
 
 ## <a name="example"></a>Exemplo
 
@@ -81,7 +81,7 @@ Content-type: application/json
 
 ###### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. Observação: Este objeto de resposta pode estar truncado para fins de concisão. Todas as propriedades com suporte são retornadas de chamadas reais.
+Veja a seguir um exemplo da resposta. Observação: esse objeto de resposta pode ser truncado por brevidade. Todas as propriedades com suporte são retornadas de chamadas reais.
 
 ``` http
 HTTP/1.1 200

@@ -1,23 +1,23 @@
 ---
-title: Lista directorySettingTemplates
-description: A definição de modelos de diretório representa um conjunto de modelos de configurações de diretório, do qual directory configurações podem ser criadas e usadas em um locatário.  Esta operação recupera a lista de objetos directorySettingTemplates disponíveis.
+title: Listar directorySettingTemplates
+description: Modelos de configuração de diretório representa um conjunto de modelos de configurações de diretório, de onde as configurações de diretório podem ser criadas e usadas dentro de um locatário.  Esta operação recupera a lista de objetos directorySettingTemplates disponíveis.
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 1cd0112bd0d9f98f969832427d497d6e9ba2aa14
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29530101"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454768"
 ---
-# <a name="list-directorysettingtemplates"></a>Lista directorySettingTemplates
+# <a name="list-directorysettingtemplates"></a>Listar directorySettingTemplates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A definição de modelos de diretório representa um conjunto de modelos de configurações de diretório, do qual directory configurações podem ser criadas e usadas em um locatário.  Esta operação recupera a lista de objetos directorySettingTemplates disponíveis.
+Modelos de configuração de diretório representa um conjunto de modelos de configurações de diretório, de onde as configurações de diretório podem ser criadas e usadas dentro de um locatário.  Esta operação recupera a lista de objetos directorySettingTemplates disponíveis.
 
-> **Observação**: A versão de /beta desse API é só se aplica aos grupos. A versão de /v1.0 desse API foi renomeada para *groupSettingTemplate de lista*.
+> **Observação**: a versão do/beta dessa API só se aplica aos grupos. A versão/v1.0 dessa API foi renomeada para listar *groupSettingTemplate*.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -46,7 +46,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e a coleção de objetos [directorySettingTemplate](../resources/directorysettingtemplate.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [directorySettingTemplate](../resources/directorysettingtemplate.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

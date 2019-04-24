@@ -1,21 +1,21 @@
 ---
 title: Verificar grupos de membros
-description: Verificar a associação em uma lista especificada de grupos e retorna a partir dessa lista desses grupos
+description: Verificar se há associação em uma lista de grupos especificada e retorna dessa lista esses grupos
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 53c89a6dd6fb0c16e0df7c6035ed0667c227787d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522522"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455188"
 ---
 # <a name="check-member-groups"></a>Verificar grupos de membros
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Verifique se a associação em uma lista especificada de grupos e retorna a partir dessa lista esses grupos dos quais o usuário especificado, o grupo, o serviço principal ou o objeto de diretório é membro. Essa função é transitiva.
+Verifique se há associação em uma lista especificada de grupos e retorna dessa lista os grupos dos quais o usuário, grupo, entidade de serviço ou objeto de diretório especificado é um membro. Esta função é transitiva.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -74,7 +74,7 @@ Content-type: application/json
 ```
 
 ##### <a name="response"></a>Resposta
-Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

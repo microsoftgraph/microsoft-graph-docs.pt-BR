@@ -1,21 +1,19 @@
 ---
 title: Obter domínio
-description: Recupere as propriedades e os relacionamentos do objeto domain.
+description: Recupere as propriedades e os relacionamentos do objeto Domain.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 03dcc7f5eff084ec79cb39a60688aadfaf0d63fc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514534"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454775"
 ---
 # <a name="get-domain"></a>Obter domínio
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Recupere as propriedades e os relacionamentos do objeto domain.
+Recupere as propriedades e os relacionamentos do objeto Domain.
 
 ## <a name="permissions"></a>Permissões
 
@@ -53,19 +51,20 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [domain](../resources/domain.md) no corpo da resposta.
+Se bem-sucedido, este método retorna o `200 OK` código de resposta e o objeto [Domain](../resources/domain.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["contoso.com"],
   "name": "get_domain"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/domains/contoso.com
+GET https://graph.microsoft.com/v1.0/domains/contoso.com
 ```
 ##### <a name="response"></a>Resposta
-Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -89,15 +88,10 @@ Content-length: 192
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Get domain",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/domain-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

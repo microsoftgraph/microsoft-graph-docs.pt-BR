@@ -1,21 +1,19 @@
 ---
 title: Listar childFolders
-description: Obtém uma coleção de pastas filho sob a pasta de contatos especificada.
+description: Obtenha uma coleção de pastas filho sob a pasta de contatos especificada.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 5e4230976e032ff77189bf0b691ddcd365e92522
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507842"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455658"
 ---
 # <a name="list-childfolders"></a>Listar childFolders
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Obtém uma coleção de pastas filho sob a pasta de contatos especificada.
+Obtenha uma coleção de pastas filho sob a pasta de contatos especificada.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -43,7 +41,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [ContactFolder](../resources/contactfolder.md) no corpo da resposta.
+Se bem sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [ContactFolder](../resources/contactfolder.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
@@ -52,7 +50,7 @@ Este é um exemplo da solicitação.
   "name": "get_childfolders"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/contactFolders/{id}/childFolders
+GET https://graph.microsoft.com/v1.0/me/contactFolders/{id}/childFolders
 ```
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
@@ -80,15 +78,10 @@ Content-length: 145
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "List childFolders",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/contactfolder-list-childfolders.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

@@ -3,18 +3,16 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Carregar arquivos pequenos
-localization_priority: Normal
+localization_priority: Priority
 ms.prod: sharepoint
 ms.openlocfilehash: 151d7c9479068c5fdcecfb5a04166900bd527230
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482270"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454395"
 ---
-# <a name="upload-or-replace-the-contents-of-a-driveitem"></a>Carregue ou substitua o conteúdo de um DriveItem
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+# <a name="upload-or-replace-the-contents-of-a-driveitem"></a>Carregar ou substituir o conteúdo de um DriveItem
 
 A API de upload simples permite que você forneça o conteúdo de um novo arquivo ou atualize o conteúdo de um arquivo existente em uma única chamada à API. Este método só dá suporte a arquivos com até 4 MB de tamanho.
 
@@ -77,7 +75,7 @@ The contents of the file goes here.
 
 ### <a name="response"></a>Resposta
 
-Se for bem-sucedido, esse método retornará um [recurso driveItem][item-resource] no corpo da resposta para o arquivo recém-criado.
+Se for bem-sucedido, esse método retornará um recurso [driveItem][item-resource] no corpo da resposta para o arquivo recém-criado.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -108,7 +106,7 @@ The contents of the file goes here.
 
 ### <a name="response"></a>Resposta
 
-Se for bem-sucedido, esse método retornará um [recurso driveItem][item-resource] no corpo da resposta para o arquivo recém-criado.
+Se for bem-sucedido, esse método retornará um recurso [driveItem][item-resource] no corpo da resposta para o arquivo recém-criado.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -131,14 +129,9 @@ Confira mais detalhes sobre como os erros são retornados em [Respostas de erro]
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Create a new file with content or update a file's content.",
   "keywords": "insert,upsert,update,upload",
-  "section": "documentation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/driveitem-put-content.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "section": "documentation"
+} -->

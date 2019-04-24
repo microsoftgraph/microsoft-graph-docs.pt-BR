@@ -1,15 +1,15 @@
 ---
 title: Obter objetos directory a partir de uma lista de ids
-description: Selecione ' opção de consulta não está disponível para esta operação.
+description: A opção selecionar não está disponível para todos os tipos de arquivo.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 7c76335889f336af6098eb00740085b40614c1ee
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512224"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455174"
 ---
 # <a name="get-directory-objects-from-a-list-of-ids"></a>Obter objetos directory a partir de uma lista de ids
 
@@ -55,7 +55,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro   | Tipo |Descrição|
 |:---------------|:--------|:----------|
 |ids|Coleção de cadeias de caracteres| Uma coleção de ids para a qual retornar objetos. Você pode especificar até 1000 ids. |
-|tipos|Coleção de cadeias de caracteres| Uma coleção dos tipos de recursos que especifica o conjunto de conjuntos de recursos para pesquisar. Se não especificado, o padrão é [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta), que contém todos os tipos de recursos definidos no diretório. Qualquer objeto que derive da [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta) pode ser especificado na coleção; Por exemplo: [usuário](/graph/api/resources/user?view=graph-rest-beta), [grupo](/graph/api/resources/group?view=graph-rest-beta), [dispositivo](/graph/api/resources/device?view=graph-rest-beta)e assim por diante. Para pesquisar referências a um parceiro de [Provedor de soluções de nuvem](https://partner.microsoft.com/en-us/cloud-solution-provider) organização especificar [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-beta). Se não especificado, o padrão é [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta), que contém todos os tipos de recursos definidos no diretório, exceto para referências a uma organização parceira de [Provedor de soluções de nuvem](https://partner.microsoft.com/en-us/cloud-solution-provider) . Os valores não diferenciam maiusculas de minúsculas.|
+|tipos|Coleção de cadeias de caracteres| Uma coleção de tipos de recursos que especifica o conjunto de coleções de recursos para pesquisar. Se não estiver especificado, o padrão será [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta), que contém todos os tipos de recursos definidos no diretório. Qualquer objeto deriva do [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta) pode ser especificado na coleção. Por exemplo: [usuário](/graph/api/resources/user?view=graph-rest-beta), [grupo](/graph/api/resources/group?view=graph-rest-beta), [dispositivo](/graph/api/resources/device?view=graph-rest-beta) e assim por diante. Para procurar referências para uma organização parceira do [Provedor de soluções de nuvem](https://partner.microsoft.com/en-us/cloud-solution-provider) especifique [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-beta). Se não for especificado, o padrão é [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta),  que contém todos os tipos de recursos definidos no diretório, exceto referências a uma organização parceira do [Provedor de soluções de nuvem](https://partner.microsoft.com/en-us/cloud-solution-provider). Os valores não diferenciam maiúsculas de minúsculas.|
 
 ## <a name="response"></a>Resposta
 
@@ -82,7 +82,7 @@ Content-type: application/json
 
 ##### <a name="response"></a>Resposta
 
-Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
   "blockType": "response",

@@ -6,11 +6,11 @@ title: Converter em outros formatos
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: c3761525d0acbd5613a71519d9ebd56ab8475f03
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481822"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454423"
 ---
 # <a name="download-a-file-in-another-format"></a>Baixar um arquivo em outro formato
 
@@ -19,7 +19,7 @@ ms.locfileid: "30481822"
 Use esta API para recuperar os conteúdos de um item em um formato específico.
 Nem todos os arquivos podem ser convertidos em todos os formatos.
 
-Para baixar o item em seu formato original, confira [baixar o conteúdo de um item](driveitem-get-content.md).
+Para baixar o item no formato original, confira [Baixar o conteúdo de um item](driveitem-get-content.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -41,18 +41,18 @@ GET /drive/root:/{path and filename}:/content?format={format}
 | _format_  | string | Especifique o formato em que o conteúdo do item deve ser baixado. |
 
 
-Os seguintes valores são válidos para o parâmetro **Format** :
+Os seguintes valores são válidos para o parâmetro **format**:
 
 | Valor | Descrição                        | Extensões de origem com suporte
 |:------|:-----------------------------------|---------------------------------
 | glb   | Converte o item no formato GLB  | Cool, FBX, obj, estrato, STL, 3mf
 | HTML  | Converte o item em formato HTML | EML, MD, msg
 | jpg   | Converte o item em formato JPG  | 3G2, 3GP, 3GP2, 3GPP, 3mf, ai, ARW, ASF, AVI, Bas, Bash, bat, BMP, c CBL, cmd, cool, CPP, CR2, CRW, cs, CSS, CSV, CUR, DCM,, DIC, DICM, DICOM, DNG, Doc, docx,, o EPI, o, o EPSF, o, o EPSI, o , HEIC, HEIF, htm, HTML, ICO, Icon, Java, JFIF, JPEG, jpg, js, JSON, Key, log, M2TS, M4A, M4V, reparation, MD, MEF, MOV, o filme, mp3, o MRW, o NEF, o NRW, o (a), o, o, o formato de página, o, o png, o , potm, potx, PPS, ppsx, ppsxm, ppt, pptm, pptx, PS, ps1, PSB, PSD, py, RAW, RB, RTF, RW1, RW2, sh, esboço, SQL, SR2, STL, TIF, TIFF,, txt, webm, XBM,. WMA, XCF,, XPM, YAML, yml
-| documento   | Converte o item em formato PDF  | Doc, docx, ePub, EML, htm, HTML, MD, MSG, odp, ODS, odt, PPS, ppsx, XL, pptx, RTF, TIF, TIFF, xls, xlsm, xlsx
+| pdf   | Converte o item em formato PDF  | Doc, docx, ePub, EML, htm, HTML, MD, MSG, odp, ODS, odt, PPS, ppsx, XL, pptx, RTF, TIF, TIFF, xls, xlsm, xlsx
 
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
 
-| Nome            | Valor   | Descrição                                                                                                                                              |
+| Name            | Valor   | Descrição                                                                                                                                              |
 |:----------------|:--------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | _if-none-match_ | String  | Se este cabeçalho de solicitação estiver incluso e a eTag (ou cTag) fornecida corresponder à marca atual do arquivo, uma resposta `HTTP 304 Not Modified` será exibida. |
 
@@ -81,7 +81,7 @@ Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 
 ### <a name="error-responses"></a>Respostas de erro
 
-Saiba mais sobre como os erros são retornados em [Respostas de erro][error-response].
+Confira [Respostas de erro][error-response] para saber mais sobre como os erros retornam.
 
 [error-response]: /graph/errors
 [file-facet]: ../resources/file.md

@@ -1,23 +1,21 @@
 ---
 title: Listar serviceConfigurationRecords
-description: Recupera uma lista de objetos domainDnsRecord necessários para ativar os serviços do domínio.
+description: Recupera uma lista de objetos domainDnsRecord necessários para habilitar serviços para o domínio.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 1aead8505135347826c4cbca9c758de689549ff1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516991"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454880"
 ---
 # <a name="list-serviceconfigurationrecords"></a>Listar serviceConfigurationRecords
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+Recupera uma lista de objetos [domainDnsRecord](../resources/domaindnsrecord.md) necessários para habilitar serviços para o domínio.
 
-Recupera uma lista de objetos [domainDnsRecord](../resources/domaindnsrecord.md) necessários para ativar os serviços do domínio.
-
-Use a lista retornada para adicionar registros para ao arquivo de zona do domínio. Isso pode ser feito por meio da configuração do servidor DNS ou do registrador de domínios.
+Use a lista retornada para adicionar registros ao arquivo de zona do domínio. Isso pode ser feito por meio do registrador de domínio ou configuração do servidor DNS.
 
 ## <a name="permissions"></a>Permissões
 
@@ -53,7 +51,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [domainDnsRecord](../resources/domaindnsrecord.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [domainDnsRecord](../resources/domaindnsrecord.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -63,10 +61,10 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma cole
   "name": "get_serviceconfigurationrecords"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/domains/contoso.com/serviceConfigurationRecords
+GET https://graph.microsoft.com/v1.0/domains/{domain-name}/serviceConfigurationRecords
 ```
 ##### <a name="response"></a>Resposta
-Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -81,6 +79,7 @@ Content-length: 220
 {
   "value": [
     {
+      "@odata.type":"microsoft.graph.domainDnsMxRecord",
       "isOptional": false,
       "label": "contoso.com",
       "recordType": "Mx",
@@ -90,10 +89,11 @@ Content-length: 220
       "preference": 0
     },
     {
+      "@odata.type":"microsoft.graph.domainDnsTxtRecord",
       "isOptional": false,
       "label": "contoso.com",
       "recordType": "Txt",
-      "supportedServices": "Email",
+      "supportedService": "Email",
       "ttl": 3600,
       "text": "v=spf1 include: spf.protection.outlook.com ~all"
     }
@@ -103,15 +103,10 @@ Content-length: 220
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "List serviceConfigurationRecords",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/domain-list-serviceconfigurationrecords.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

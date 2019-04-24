@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: b7b8719e0fe9506ba460c1ec98d5ceec51a95f10
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27949301"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32452846"
 ---
 # <a name="create-rangeborder"></a>Criar RangeBorder
 
@@ -38,11 +38,11 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders
 | Workbook-Session-Id  | ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do objeto [WorkbookRangeBorder](../resources/rangeborder.md) .
+No corpo da solicitação, forneça uma representação JSON do objeto [WorkbookRangeBorder](../resources/rangeborder.md) .
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` código de resposta e o objeto [WorkbookRangeBorder](../resources/rangeborder.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `201 Created` o código de resposta e o objeto [WorkbookRangeBorder](../resources/rangeborder.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -64,7 +64,7 @@ Content-length: 136
   "weight": "weight-value"
 }
 ```
-No corpo da solicitação, fornece uma representação JSON do objeto [WorkbookRangeBorder](../resources/rangeborder.md) .
+No corpo da solicitação, forneça uma representação JSON do objeto [WorkbookRangeBorder](../resources/rangeborder.md) .
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {

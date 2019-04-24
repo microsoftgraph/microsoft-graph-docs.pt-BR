@@ -1,27 +1,27 @@
 ---
-title: Usar a API do Microsoft Graph para obter notificações de alteração
-description: A API REST do Microsoft Graph usa um mecanismo de webhook para fornecer notificações de alteração aos clientes. Um cliente é um serviço Web que configura sua própria URL para receber notificações. Os aplicativos cliente usam notificações para atualizar seu estado nas alterações. Para obter mais detalhes, incluindo como inscrever-se e lidar com notificações de entrada, confira set up Notifications for Changes in User Data.
+title: Usar a API do Microsoft Graph para acessar as notificações de alteração
+description: A API REST do Microsoft Graph usa um mecanismo de webhook para fornecer notificações de alteração aos clientes. Um cliente é um serviço Web que configura sua própria URL para receber notificações. Aplicativos cliente usam notificações para atualizar seu estado após alterações. Para saber mais, incluindo como se inscrever e lidar com as notificações recebidas, confira Configurar notificações para alterações nos dados de usuário.
 localization_priority: Normal
 author: piotrci
 ms.openlocfilehash: 1d7a3d868ffc640f7659623942ac102575fb94fc
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30151489"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32453919"
 ---
-# <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>Usar a API do Microsoft Graph para obter notificações de alteração
+# <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>Usar a API do Microsoft Graph para acessar as notificações de alteração
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A API REST do Microsoft Graph usa um mecanismo de webhook para fornecer notificações de alteração aos clientes. Um cliente é um serviço Web que configura sua própria URL para receber notificações. Os aplicativos cliente usam notificações para atualizar seu estado nas alterações. Para obter mais detalhes, incluindo como inscrever-se e lidar com notificações de entrada, confira [set up Notifications for Changes in User Data](/graph/webhooks).
+A API REST do Microsoft Graph usa um mecanismo de webhook para fornecer notificações de alteração aos clientes. Um cliente é um serviço Web que configura sua própria URL para receber notificações. Aplicativos cliente usam notificações para atualizar seu estado após alterações. Para saber mais, incluindo como se inscrever e lidar com as notificações recebidas, confira [Configurar notificações para alterações nos dados de usuário](/graph/webhooks).
 
 Usando a API do Microsoft Graph, um aplicativo pode se inscrever para alterações nos seguintes recursos:
 
 - [Mensagem][] do Outlook
 - [Evento][] do Outlook
 - [Contato][] pessoal do Outlook
-- [usuário][]
+- [user][]
 - [group][]
 - [Conversa][] em grupo do Office 365
 - Conteúdo dentro da hierarquia do tipo de recurso [driveItem][] de _qualquer pasta_ no OneDrive pessoal do usuário
@@ -32,7 +32,7 @@ Usando a API do Microsoft Graph, um aplicativo pode se inscrever para alteraçõ
 
 Em geral, as operações de assinatura exigem permissão de leitura ao recurso. Por exemplo, para obter notificações de mensagens, seu aplicativo precisa da permissão `Mail.Read`. O artigo [criar assinatura](../api/subscription-post-subscriptions.md) lista as permissões necessárias para cada tipo de recurso. A tabela a seguir lista os tipos de permissões que o aplicativo pode solicitar para usar webhooks para tipos específicos de recursos.
 
-| Tipo de permissão                        | Tipos de recurso suportados                                                      |
+| Tipo de permissão                        | Tipos de recurso com suporte                                                      |
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
 | Delegado - conta corporativa ou de estudante     | [alerta][], [contato][], [conversa][], [driveItem][], [evento][], [grupo][], [mensagem][], [usuário][]|
 | Delegado - conta pessoal da Microsoft | [contato][], [driveItem][], [evento][], [mensagem][]                                        |
@@ -41,7 +41,7 @@ Em geral, as operações de assinatura exigem permissão de leitura ao recurso. 
 ## <a name="see-also"></a>Confira também
 
 - [Tipo de recurso de assinatura](subscription.md)
-- [Listar assinaturas](../api/subscription-list.md)
+- [Listar de assinaturas](../api/subscription-list.md)
 - [Obter assinatura](../api/subscription-get.md)
 - [Criar assinatura](../api/subscription-post-subscriptions.md)
 - [Atualizar assinatura](../api/subscription-update.md)

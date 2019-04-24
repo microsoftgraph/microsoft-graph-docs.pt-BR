@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 5f6360ce1eacc313f1bcc8a9f59b44b216a87b84
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27958737"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456861"
 ---
 # <a name="pivottable-resource-type"></a>tipo de recurso de tabela dinâmica
 
@@ -21,13 +21,13 @@ Representa uma Tabela Dinâmica do Excel.
 |:---------------|:--------|:----------|
 |[Get workbookPivotTable](../api/workbookpivottable-get.md) | [workbookPivotTable](workbookpivottable.md) |Leia as propriedades e relacionamentos do objeto workbookPivotTable.|
 |[Refresh](../api/workbookpivottable-refresh.md)|Nenhum|Atualiza a Tabela Dinâmica. |
-|[Refreshall](../api/workbookpivottable-refreshall.md)|None|Atualização de todas as tabelas dentro de uma determinada planilha. Observe que esta ação está disponível somente na coleção de tabela dinâmica.|
+|[Refreshall](../api/workbookpivottable-refreshall.md)|Nenhum|Atualização de todas as tabelas dentro de uma determinada planilha. Observe que esta ação está disponível somente na coleção de tabela dinâmica.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |id|Cadeia de caracteres| Id da Tabela Dinâmica.   Somente leitura.|
-|name|Cadeia de caracteres|Nome da Tabela Dinâmica.    |
+|nome|String|Nome da Tabela Dinâmica.    |
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|

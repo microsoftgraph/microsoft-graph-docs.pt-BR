@@ -1,19 +1,19 @@
 ---
 title: Atualizar connectorGroups
-description: Atualize as propriedades do objeto connectorgroup.
+description: Atualize as propriedades do objeto de conexão.
 localization_priority: Normal
 ms.openlocfilehash: 9d6feec19552aeeebe51ba0fab07e805c6f4a2bb
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29530108"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455762"
 ---
 # <a name="update-connectorgroups"></a>Atualizar connectorGroups
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades do objeto connectorgroup.
+Atualize as propriedades do objeto de conexão.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -29,21 +29,21 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 PATCH /connectorGroups/{id}
 ```
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
-| Nome       | Descrição|
+| Name       | Descrição|
 |:-----------|:-----------|
-| Autorização  |  de portador Obrigatório|
+| Autorização  | Portador. Obrigatório|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|connectorGroupType|string| Os valores possíveis são: `applicationProxy`.|
-|name|String|O nome da connectorGroup.|
+|connectorGroupType|string| Os valores possíveis são `applicationProxy`:.|
+|nome|String|O nome do conector.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto atualizado [connectorGroup](../resources/connectorgroup.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto de teleconnector atualizado no corpo da resposta. [](../resources/connectorgroup.md)
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

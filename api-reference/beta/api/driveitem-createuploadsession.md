@@ -2,17 +2,17 @@
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Carregamento de arquivo reTomável
+title: Upload de arquivos retomável
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: b0495a0c63400d6476c1ad9312e708b9ac880e42
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482389"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454437"
 ---
-# <a name="upload-large-files-with-an-upload-session"></a>Carregar arquivos grandes em uma sessão de carregamento
+# <a name="upload-large-files-with-an-upload-session"></a>Carregar arquivos grandes com uma sessão de upload
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -33,7 +33,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Files.ReadWrite, Files.ReadWrite.All    |
 |Aplicativo | Sites.ReadWrite.All |
 
-## <a name="create-an-upload-session"></a>Criar uma sessão de carregamento
+## <a name="create-an-upload-session"></a>Criar uma sessão de upload
 
 Para iniciar o upload de um arquivo grande, seu aplicativo deve primeiro solicitar uma nova sessão de upload.
 Isso cria um local de armazenamento temporário no qual os bytes do arquivo serão salvos até que este seja totalmente carregado.
@@ -57,7 +57,8 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 Nenhum corpo de solicitação é obrigatório.
 No enTanto, você pode especificar propriedades no corpo da solicitação, fornecendo dados adicionais sobre o arquivo sendo carregado e personalizando a semântica da operação de upload.
 
-Por exemplo, a `item` propriedade permite definir os seguintes parâmetros:<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.driveItemUploadableProperties" } -->
+Por exemplo, a `item` propriedade permite definir os seguintes parâmetros:
+<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.driveItemUploadableProperties" } -->
 ```json
 {
   "@microsoft.graph.conflictBehavior": "rename | fail | overwrite",
@@ -80,9 +81,9 @@ O exemplo a seguir controla o comportamento se o nome do arquivo já tiver sido 
 
 ### <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
 
-| Nome       | Valor | Descrição                                                                                                                                                            |
+| Name       | Valor | Descrição                                                                                                                                                            |
 |:-----------|:------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *if-match* | etag  | Se este cabeçalho de solicitação estiver incluso e a eTag (ou cTag) fornecida não corresponder à ETag atual no item, uma `412 Precondition Failed` resposta de erro será retornada. |
+| *if-match* | etag  | Se esse cabeçalho de solicitação for incluído e a eTag (ou cTag) fornecida não corresponder à eTag atual no item, retornará uma resposta de erro `412 Precondition Failed`. |
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -96,7 +97,7 @@ O exemplo a seguir controla o comportamento se o nome do arquivo já tiver sido 
 | Propriedade             | Tipo               | Descrição
 |:---------------------|:-------------------|:---------------------------------
 | description          | String             | Fornece uma descrição do item visível para o usuário. Leitura e gravação. Somente no OneDrive Personal.
-| name                 | String             | O nome do item (nome do arquivo e extensão). Leitura e gravação.
+| nome                 | String             | O nome do item (nome do arquivo e extensão). Leitura e gravação.
 
 ### <a name="request"></a>Solicitação
 
@@ -136,12 +137,12 @@ Content-Type: application/json
 }
 ```
 
-## <a name="upload-bytes-to-the-upload-session"></a>Carregar bytes na sessão de carregamento
+## <a name="upload-bytes-to-the-upload-session"></a>Carregar bytes na sessão de upload
 
-Para carregar o arquivo, ou uma parte do arquivo, o aplicativo faz uma solicitação PUT ao valor de **uploadUrl** recebido na resposta de **createUploadSession**.
+Para carregar o arquivo, ou uma parte do arquivo, o aplicativo faz uma solicitação PUT ao valor de **uploadUrl** recebido na de **createUploadSession**.
 Você pode carregar o arquivo inteiro ou dividi-lo em vários intervalos de byte, desde que o máximo de bytes em qualquer solicitação específica seja menor que 60 MiB.
 
-Os fragmentos do arquivo devem ser carregados seqüencialmente na ordem.
+Os fragmentos do arquivo devem ser carregados sequencialmente em ordem.
 O upload de fragmentos fora de ordem resultará em um erro.
 
 **Observação:** se seu aplicativo dividir um arquivo em vários intervalos de byte, o tamanho de cada intervalo de bytes **DEVE** ser um múltiplo de 320 KiB (327.680 bytes). Usar um tamanho de fragmento que não divide uniformemente por 320 KiB resultará em erros ao confirmar alguns arquivos.
@@ -164,7 +165,7 @@ Content-Range: bytes 0-25/128
 <bytes 0-25 of the file>
 ```
 
-**Importante:** seu aplicativo deve garantir que o tamanho total do arquivo especificado no cabeçalho **Content-Range** seja o mesmo para todas as solicitações.
+**Importante:** Seu aplicativo deve garantir que o tamanho total do arquivo especificado no cabeçalho **Content-Range** seja o mesmo para todas as solicitações.
 Se um intervalo de bytes declarar um tamanho de arquivo diferente, a solicitação falhará.
 
 ### <a name="response"></a>Resposta
@@ -184,7 +185,7 @@ Content-Type: application/json
 ```
 
 O aplicativo pode usar o valor de **nextExpectedRanges** para determinar onde iniciar o próximo intervalo de bytes.
-É possível ver vários intervalos especificados, indicando partes do arquivo que o servidor ainda não recebeu. Isso é útil quando você precisa retomar uma transferência que foi interrompida, e seu cliente não tem certeza sobre o estado do serviço.
+É possível ver vários intervalos especificados, indicando partes do arquivo que o servidor ainda não recebeu. Isso é útil quando você precisa retomar uma transferência que foi interrompida, e seu cliente não tem certeza sobre o estado no serviço.
 
 Você sempre deve determinar o tamanho dos intervalos de byte de acordo com as práticas recomendadas a seguir. Não suponha que **nextExpectedRanges** retornará intervalos de tamanho apropriado para carregar um intervalo de bytes.
 A propriedade **nextExpectedRanges** indica intervalos do arquivo que não foram recebidos, e não um padrão para como seu aplicativo deve carregar o arquivo.
@@ -211,7 +212,7 @@ Content-Type: application/json
 * Em falhas quando o cliente enviou um fragmento que o servidor já havia recebido, o servidor responderá com `HTTP 416 Requested Range Not Satisfiable`. Você pode [solicitar o status do upload](#resuming-an-in-progress-upload) para obter uma lista mais detalhada dos intervalos que estão faltando.
 * Incluindo o cabeçalho de autorização, fazer a chamada de `PUT` pode resultar em uma resposta `HTTP 401 Unauthorized`. O cabeçalho de autorização e o token de portador só devem ser enviados ao emitir o `POST` durante a primeira etapa. Não deve ser incluído ao emitir o `PUT`.
 
-## <a name="completing-a-file"></a>Concluir um arquivo
+## <a name="completing-a-file"></a>Concluindo um arquivo
 
 Se `deferCommit` for false ou indefinida, o carregamento será concluído automaticamente quando o intervalo de bytes final do arquivo for colocado na URL de upload.
 Se `deferCommit` for true, depois que o intervalo de bytes final do arquivo for colocado na URL de upload, o carregamento deverá ser explicitamente concluído por uma solicitação post final para a URL de carregamento com conteúdo de comprimento zero.
@@ -282,11 +283,11 @@ Content-Type: application/json
 }
 ```
 
-## <a name="cancel-the-upload-session"></a>Cancelar a sessão de carregamento
+## <a name="cancel-the-upload-session"></a>Cancelar a sessão de upload
 
 Para cancelar uma sessão de upload, envie uma solicitação DELETE para a URL de upload. Isso limpa o arquivo temporário que contém os dados anteriormente carregados. Isso deve ser usado em cenários em que o upload é interrompido, por exemplo, se o usuário cancelar a transferência.
 
-Os arquivos temporários e a sessão de carregamento que os acompanha são automaticamente limpos decorrido o valor de **expirationDateTime**.
+Os arquivos temporários e a sessão de upload que os acompanha são automaticamente limpos decorrido o valor de **expirationDateTime**.
 Arquivos temporários não podem ser excluídos imediatamente após o período de expiração.
 
 ### <a name="request"></a>Solicitação
@@ -365,7 +366,7 @@ If-Match: {etag or ctag}
 }
 ```
 
-**Observação:** você pode usar os cabeçalhos `@microsoft.graph.conflictBehavior` e `if-match` conforme esperado nessa chamada.
+**Observação:** Você pode usar os cabeçalhos `@microsoft.graph.conflictBehavior` e `if-match` conforme esperado nessa chamada.
 
 ### <a name="response"></a>Resposta
 
@@ -394,9 +395,9 @@ Content-Type: application/json
   * `504 Gateway Timeout`
 * Use uma estratégia de retirada exponencial se erros de servidor 5xx forem retornados ao retomar ou repetir solicitações de upload.
 * Para outros erros, você não deve usar uma estratégia de retirada exponencial, mas sim limitar o número de tentativas de repetição feitas.
-* Lide com erros `404 Not Found` ao fazer carregamentos retomáveis reiniciando todo o carregamento. Isso indica que a sessão de carregamento não existe mais.
+* Lide com erros `404 Not Found` ao fazer uploads retomáveis reiniciando o upload inteiro. Isso indica que a sessão de carregamento não existe mais.
 * Use transferências de arquivos retomáveis para arquivos com mais de 10 MiB (10.485.760 bytes).
-* Um tamanho de intervalo de bytes de 10 MiB para conexões estáveis de alta velocidade é ideal. Para conexões mais lentas ou menos confiáveis, você pode obter melhores resultados com um tamanho de fragmento menor. O tamanho do fragmento recomendado é entre 5 MiB e 10 MiB.
+* Um tamanho de intervalo de bytes de 10 MiB para conexões estáveis de alta velocidade é ideal. Para conexões mais lentas ou menos confiáveis, você pode obter melhores resultados com um tamanho de fragmento menor. O tamanho do fragmento recomendado é entre 5 e 10 MiB.
 * Use um tamanho de intervalo de bytes que seja múltiplo de 320 KiB (327.680 bytes). Uma falha ao usar um tamanho de fragmento que seja múltiplo de 320 KiB pode resultar na falha de transferências de arquivos grandes após o carregamento do último intervalo de bytes.
 
 ## <a name="error-responses"></a>Respostas de erro

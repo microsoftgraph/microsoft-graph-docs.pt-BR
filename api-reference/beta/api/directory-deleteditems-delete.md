@@ -5,11 +5,11 @@ author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 048008e31bc5cd7884dd3d7e9259412070404d9d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528197"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455118"
 ---
 # <a name="permanently-delete-item"></a>Excluir permanentemente item
 
@@ -22,8 +22,8 @@ Atualmente, a funcionalidade de itens excluídos apenas tem suporte para os recu
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-* Para usuários: User.ReadWrite.All, Directory.AccessAsUser.All
-* Para grupos: Group.ReadWrite.All, Directory.AccessAsUser.All
+* Para usuários: user. ReadWrite. All, Directory. AccessAsUser. All
+* Para grupos: Group. ReadWrite. All, Directory. AccessAsUser. All
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -54,7 +54,7 @@ Se bem-sucedido, este método retorna um código de resposta `204 No Content`. N
 DELETE https://graph.microsoft.com/beta/directory/deleteditems/46cc6179-19d0-473e-97ad-6ff84347bbbb
 ```
 ##### <a name="response"></a>Resposta
-Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true

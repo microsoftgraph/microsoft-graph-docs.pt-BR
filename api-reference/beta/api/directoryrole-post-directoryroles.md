@@ -1,21 +1,21 @@
 ---
 title: Ativar directoryRole
-description: Ative uma função de diretório. Para ler uma função de diretório ou atualizar seus membros, primeiro ela deve ser ativada no locatário. Somente Administradores de Empresa e as funções de Usuários de diretório implícitas são ativadas por padrão. Para acessar e atribuir membros a outra função de diretório, primeiro você deve ativá-lo com seu modelo de função de diretório correspondente (directoryRoleTemplate).
+description: Ative uma função de diretório. Para ler uma função de diretório ou atualizar seus membros, primeiro ela deve ser ativada no locatário. Somente as funções de diretório administradores da empresa e usuários implícitos são ativadas por padrão. Para acessar e atribuir membros a outra função de diretório, primeiro você deve ativá-lo com seu modelo de função de diretório correspondente (directoryRoleTemplate).
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 094374dd8aa5d68e1adaad89e9a3b46987bc7c8f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522725"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454748"
 ---
 # <a name="activate-directoryrole"></a>Ativar directoryRole
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ative uma função de diretório. Para ler uma função de diretório ou atualizar seus membros, ele deve primeiro ser ativado no inquilino. Somente os administradores da empresa e as funções de diretório de usuários implícitas serão ativadas por padrão. Para acessar e atribuir membros a outra função de diretório, você deve ativá-lo com o modelo de função correspondente do diretório ([directoryRoleTemplate](../resources/directoryroletemplate.md)).
+Ative uma função de diretório. Para ler uma função de diretório ou atualizar seus membros, primeiro ela deve ser ativada no locatário. Somente as funções de diretório administradores da empresa e usuários implícitos são ativadas por padrão. Para acessar e atribuir membros a outra função de diretório, primeiro você deve ativá-lo com seu modelo de função de diretório correspondente ([directoryRoleTemplate](../resources/directoryroletemplate.md)).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

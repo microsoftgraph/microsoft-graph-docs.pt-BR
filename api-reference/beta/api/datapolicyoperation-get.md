@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 5fff5d25ed83c6cfdf889c364630399acdeecb9e
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640753"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455259"
 ---
 # <a name="get-datapolicyoperation"></a>Obter dataPolicyOperation
 
@@ -20,9 +20,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) |  User.Export.All e User.Read.All  |
-|Delegada (conta pessoal da Microsoft) |  Não aplicável  |
-|Application | User.Export.All e User.Read.All | 
+|Delegado (conta corporativa ou de estudante) |  User. Export. All e User. Read. All  |
+|Delegado (conta pessoal da Microsoft) |  Não aplicável  |
+|Application | User. Export. All e User. Read. All | 
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -38,7 +38,7 @@ GET /dataPolicyOperations/{id}
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` objeto response de código e [dataPolicyOperation](../resources/datapolicyoperation.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [dataPolicyOperation](../resources/datapolicyoperation.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 <!-- {
@@ -49,7 +49,7 @@ Se tiver êxito, este método retornará um `200 OK` objeto response de código 
 GET https://graph.microsoft.com/beta/dataPolicyOperations/{id}
 ```
 ##### <a name="response"></a>Resposta
-Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

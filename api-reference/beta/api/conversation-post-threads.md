@@ -1,21 +1,19 @@
 ---
 title: Criar thread
-description: Crie um novo thread na conversa especificada.
+description: 'Crie um novo thread na conversa especificada. '
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 8a4284e51ee74b43ae3e678ed8a54300cf9b9fe9
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30149823"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455594"
 ---
 # <a name="create-thread"></a>Criar thread
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Crie um novo thread na conversa especificada.
+Crie um novo thread na conversa especificada. 
 
 Um thread e uma postagem são criados conforme especificado. Use [responder ao thread](conversationthread-reply.md) para incluir postagens adicionais no thread. Ou, se receber a ID de postagem, você também poderá [responder](post-reply.md) a essa postagem no thread.
 
@@ -55,7 +53,7 @@ Este é um exemplo da solicitação.
   "name": "create_conversationthread_from_conversation"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups/{id}/conversations/{id}/threads
+POST https://graph.microsoft.com/v1.0/groups/{id}/conversations/{id}/threads
 Content-type: application/json
 
 {
@@ -71,7 +69,7 @@ Content-type: application/json
 No corpo da solicitação, forneça uma representação JSON do objeto [ConversationThread](../resources/conversationthread.md).
 ##### <a name="response"></a>Resposta
 
-Se for bem-sucedido, este método retornará um código de resposta `201 Created` e o `id` do novo thread no corpo da resposta. Veja a seguir um exemplo da resposta.
+Se for bem-sucedido, este método retornará um código de resposta `201 Created` e o `id` do novo thread no corpo da resposta. Veja a seguir um exemplo da resposta. 
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -89,15 +87,10 @@ Content-length: 346
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Create thread",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/conversation-post-threads.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

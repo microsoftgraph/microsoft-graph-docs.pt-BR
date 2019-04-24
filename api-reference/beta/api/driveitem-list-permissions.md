@@ -6,15 +6,13 @@ title: Listar quem tem acesso a um arquivo
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 6917cb17cc9b6c1f04a63d85b05cd5d7e543fa84
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480842"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454388"
 ---
 # <a name="list-sharing-permissions-on-a-driveitem"></a>Listar permissões de compartilhamento em um DriveItem
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Liste as permissões efetivas de compartilhamento de um [DriveItem](../resources/driveitem.md).
 
@@ -55,7 +53,7 @@ Este método oferece suporte aos [Parâmetros de consulta OData](/graph/query-pa
 
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
 
-| Nome          | Tipo   | Descrição                                                                                                                                     |
+| Name          | Tipo   | Descrição                                                                                                                                     |
 |:--------------|:-------|:------------------------------------------------------------------------------------------------------------------------------------------------|
 | if-none-match | string | Se este cabeçalho de solicitação estiver incluso e a etag fornecida corresponder à marca atual do item, uma resposta `HTTP 304 Not Modified` será exibida. |
 
@@ -76,7 +74,7 @@ Níveis de permissão do SharePoint definidos em um item retornam com um prefixo
 
 Este exemplo recupera a coleção de permissões em um item na unidade do usuário conectado.
 
-<!-- { "blockType": "request", "name": "get-item-permissions", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "get-item-permissions", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive/items/{item-id}/permissions
@@ -142,15 +140,10 @@ Saiba mais sobre como os erros são retornados em [Respostas de erro][error-resp
 
 [error-response]: /graph/errors
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "List an item's permissions",
   "keywords": "permission, permissions, sharing",
   "section": "documentation",
-  "tocPath": "Sharing/Permissions",
-  "suppressions": [
-    "Error: /api-reference/beta/api/driveitem-list-permissions.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": "Sharing/Permissions"
+} -->

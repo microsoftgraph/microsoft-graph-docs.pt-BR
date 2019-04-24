@@ -6,15 +6,13 @@ title: Mover um arquivo ou pasta
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 18bd8493babed354576c5b8066b3bab5de537e65
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482032"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454332"
 ---
 # <a name="move-a-driveitem-to-a-new-folder"></a>Mover um DriveItem para uma nova pasta
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Para mover um DriveItem para um novo item pai, o aplicativo solicita a atualização de **parentReference** do DriveItem a ser movido.
 
@@ -46,7 +44,7 @@ PATCH /users/{user-id}/drive/items/{item-id}
 
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
 
-| Nome          | Tipo   | Descrição                                                                                                                                                         |
+| Name          | Tipo   | Descrição                                                                                                                                                         |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | if-match      | String | Se este cabeçalho de solicitação estiver incluso e a eTag (ou cTag) fornecida corresponder à eTag atual da pasta, uma resposta `412 Precondition Failed` será exibida. |
 
@@ -65,7 +63,7 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK` e o recurs
 
 Este exemplo move um item especificado por {item-id} para uma pasta na unidade do usuário com a ID `new-parent-folder-id`.
 
-<!-- { "blockType": "request", "name": "move-item", "scopes": "files.readwrite" } -->
+<!-- { "blockType": "request", "name": "move-item", "scopes": "files.readwrite", "tags": "service.graph" } -->
 
 ```http
 PATCH /me/drive/items/{item-id}
@@ -73,7 +71,7 @@ Content-type: application/json
 
 {
   "parentReference": {
-    "id": "new-parent-folder-id"
+    "id": "{new-parent-folder-id}"
   },
   "name": "new-item-name.txt"
 }
@@ -107,15 +105,10 @@ Confira mais informações sobre como os erros são retornados em [Respostas de 
 
 [error-response]: /graph/errors
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Move an item to another location or rename the item.",
   "keywords": "move,rename,mv,change location",
   "section": "documentation",
-  "tocPath": "Items/Move",
-  "suppressions": [
-    "Error: /api-reference/beta/api/driveitem-move.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": "Items/Move"
+} -->

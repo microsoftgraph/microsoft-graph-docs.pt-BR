@@ -5,11 +5,11 @@ author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: b6b0bc325620a27d9383b4a12d5f3da970c0c267
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515969"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455279"
 ---
 # <a name="get-device"></a>Obter dispositivo
 
@@ -17,7 +17,7 @@ ms.locfileid: "29515969"
 
 Obtém as propriedades e os relacionamentos de um objeto device.
 
-Desde que o recurso de **dispositivo** oferece suporte às [extensões](/graph/extensibility-overview), você também pode usar o `GET` operação obter dados de extensão e propriedades personalizadas em uma instância de **dispositivo** .
+Como o recurso de **dispositivo** suporta [extensões](/graph/extensibility-overview), você também pode usar `GET` a operação para obter propriedades personalizadas e dados de extensão em uma instância de **dispositivo** .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

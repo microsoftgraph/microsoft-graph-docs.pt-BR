@@ -5,25 +5,25 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: a63ee1d3ce2b7b43eea2993cb588b20897b31c32
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641348"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32453585"
 ---
 # <a name="workbook-resource-type"></a>Tipo de recurso de pasta de trabalho
 
 A pasta de trabalho é o objeto de nível superior que inclui os objetos workbook relacionados, como planilhas, tabelas, intervalos, etc.
 
 ## <a name="properties"></a>Propriedades
-Nenhum
+Nenhuma
 
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
 |[Criar Sessão](../api/workbook-createsession.md) | [workbookSessionInfo](workbooksessioninfo.md) |Crie uma sessão de pasta de trabalho para iniciar uma sessão persistente ou não persistente.|
-|[Fechar Sessão](../api/workbook-closesession.md) | None |Fechar uma sessão existente.|
+|[Fechar Sessão](../api/workbook-closesession.md) | Nenhum |Fechar uma sessão existente.|
 |[Atualizar Sessão](../api/workbook-refreshsession.md) | None |Atualizar uma sessão existente.|
 
 

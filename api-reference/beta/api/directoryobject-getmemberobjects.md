@@ -1,21 +1,21 @@
 ---
 title: Obter objetos de membros
-description: " Retorna todos os grupos, unidades administrativas e funções de diretório que um usuário, grupo, entidades de serviço ou objeto de diretório é um membro de. Essa função é transitiva. "
+description: " Retorna todos os grupos, unidades administrativas e funções de diretório de que um usuário, grupo, entidades de serviço ou objeto de diretório é membro. Esta função é transitiva. "
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 2425ef4f94188c39b0964f627dd05a98b3ad5ab2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527945"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455139"
 ---
 # <a name="get-member-objects"></a>Obter objetos de membros
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
- Retorna todos os grupos, unidades administrativas e funções de diretório que um usuário, grupo, entidades de serviço ou objeto de diretório é um membro de. Essa função é transitiva. 
+ Retorna todos os grupos, unidades administrativas e funções de diretório de que um usuário, grupo, entidades de serviço ou objeto de diretório é membro. Esta função é transitiva. 
  > Observação: Somente usuários podem ser membros de funções de diretório.
 
 ## <a name="permissions"></a>Permissões
@@ -72,7 +72,7 @@ Content-type: application/json
 ```
 
 ##### <a name="response"></a>Resposta
-Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

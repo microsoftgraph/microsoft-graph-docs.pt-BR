@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: cdb3ff01b0741f0f1a4a0bff22e3a8e3dc32335c
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642153"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456588"
 ---
 # <a name="chartcollection-add"></a>ChartCollection: add
 
@@ -44,7 +44,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 |:---------------|:--------|:----------|
 |type|string|Representa o tipo de um gráfico.  Os valores possíveis são: `ColumnClustered`, `ColumnStacked`, `ColumnStacked100`, `BarClustered`, `BarStacked`, `BarStacked100`, `LineStacked`, `LineStacked100`, `LineMarkers`, `LineMarkersStacked`, `LineMarkersStacked100`, `PieOfPie` e `etc.`.|
 |sourceData|string|O objeto Range que corresponde aos dados de origem.|
-|seriesBy|string|Opcional. Especifica a forma como as colunas ou linhas são usadas como séries de dados no gráfico.  Os valores possíveis são: `Auto`, `Columns` e `Rows`.|
+|seriesBy|cadeia de caracteres|Opcional. Especifica a forma como as colunas ou linhas são usadas como séries de dados no gráfico.  Os valores possíveis são: `Auto`, `Columns` e `Rows`.|
 
 ## <a name="response"></a>Resposta
 

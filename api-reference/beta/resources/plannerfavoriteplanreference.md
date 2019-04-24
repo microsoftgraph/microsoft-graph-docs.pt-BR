@@ -1,30 +1,30 @@
 ---
-title: tipo de recurso de plannerFavoritePlanReference
-description: 'O recurso de **plannerFavoritePlanReference** digite representa uma referência a um plannerPlan que foi marcada como favorita pelo usuário. '
+title: tipo de recurso plannerFavoritePlanReference
+description: 'O tipo de recurso **plannerFavoritePlanReference** representa uma referência a um plannerPlan que foi marcado como favorito pelo usuário. '
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 77a931a882cc4b01725bd8ceb0ae6bcc721a9013
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518384"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457095"
 ---
-# <a name="plannerfavoriteplanreference-resource-type"></a>tipo de recurso de plannerFavoritePlanReference
+# <a name="plannerfavoriteplanreference-resource-type"></a>tipo de recurso plannerFavoritePlanReference
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O recurso de **plannerFavoritePlanReference** digite representa uma referência a um [plannerPlan](plannerplan.md) que foi marcada como favorita pelo usuário. Os clientes devem observar que entradas de **plannerFavoritePlanReference** podem fazer referência a **plannerPlans** que são excluídas, que o usuário não pode acessar ou que foram atualizados com um título diferente.
+O tipo de recurso **plannerFavoritePlanReference** representa uma referência a um [plannerPlan](plannerplan.md) que foi marcado como favorito pelo usuário. Os clientes devem observar que as entradas do **plannerFavoritePlanReference** podem fazer referência a **plannerPlans** que foram excluídas, que o usuário não pode mais acessar ou que foram atualizadas com um título diferente.
 
-É recomendável que os clientes notificar os usuários quando houver discrepâncias e manter as entradas atualizado.
+Recomendamos que os clientes Notifiquem os usuários quando houver discrepâncias e mantenha as entradas atualizadas.
 
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|orderHint|String|Dica usada para ordenar itens deste tipo em um modo de exibição de lista. O formato é definido em [Como usar dicas de ordem no Planner](planner-order-hint-format.md).|
-|planTitle|String|Título do plano no momento em que o usuário marcado como um favorito.|
+|orderHint|String|Dica usada para ordenar itens desse tipo em um modo de exibição de lista. O formato é definido em [usando dicas de ordenação no Planner](planner-order-hint-format.md).|
+|planTitle|String|Título do plano no momento em que o usuário o marcou como favorito.|
 
 
 ## <a name="json-representation"></a>Representação JSON

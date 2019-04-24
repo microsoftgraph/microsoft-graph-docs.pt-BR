@@ -5,21 +5,19 @@ author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: a470f6bddb9cade8083afb3eb5d5cf76cf4dba32
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522837"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454950"
 ---
 # <a name="list-verificationdnsrecords"></a>Listar verificationDnsRecords
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+Recupere uma lista de objetos [domainDnsRecord](../resources/domaindnsrecord.md) .
 
-Recupere uma lista de objetos [domainDnsRecord](../resources/domaindnsrecord.md).
+Você não pode usar um domínio associado com seu locatário do Azure AD até que a propriedade seja verificada. Para verificar a propriedade do domínio, recupere os registros de verificação de domínio e adicione os detalhes ao arquivo de zona do domínio. Isso pode ser feito por meio do registrador de domínio ou configuração do servidor DNS.
 
-Você não pode usar um domínio associado ao seu locatário do Azure AD até que a propriedade seja verificada. Para verificar a propriedade do domínio, recupere os registros de verificação de domínio e adicione os detalhes ao arquivo de zona do domínio. Isso pode ser feito por meio da configuração do servidor DNS ou do registrador de domínios.
-
-Os domínios raiz exigem verificação. Por exemplo, contoso.com exige verificação. Se um domínio raiz for verificado, os subdomínios do domínio raiz serão verificados automaticamente. Por exemplo, o subdominio.contoso.com é automaticamente verificado se contoso.com for verificado.
+Os domínios raiz precisam de verificação. Por exemplo, contoso.com requer verificação. Se um domínio raiz é verificado, os subdomínios do domínio raiz são verificados automaticamente. Por exemplo, subdomain.contoso.com será verificada automaticamente se contoso.com tiver sido verificada.
 
 ## <a name="permissions"></a>Permissões
 
@@ -57,7 +55,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [domainDnsRecord](../resources/domaindnsrecord.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [domainDnsRecord](../resources/domaindnsrecord.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -67,12 +65,12 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma cole
   "name": "get_verificationdnsrecords"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/domains/contoso.com/verificationDnsRecords
+GET https://graph.microsoft.com/v1.0/domains/{domain-name}/verificationDnsRecords
 ```
 
 ##### <a name="response"></a>Resposta
 
-Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -100,15 +98,10 @@ Content-length: 220
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "List verificationDnsRecords",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/domain-list-verificationdnsrecords.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

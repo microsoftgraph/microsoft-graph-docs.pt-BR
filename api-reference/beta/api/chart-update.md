@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 2d1377a0a8c19538ea1c0c19483512736e129559
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640263"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456602"
 ---
 # <a name="update-chart"></a>Atualizar gráfico
 
@@ -41,10 +41,10 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|height|Double|Representa a altura, em pontos, do objeto Chart.|
-|left|Double|A distância, em pontos, da esquerda do gráfico à origem da planilha.|
-|name|string|Representa o nome de um objeto Chart.|
-|top|Double|Representa a distância, em pontos, da borda superior do objeto à parte superior da primeira linha de uma planilha ou da área de um gráfico.|
+|height|double|Representa a altura, em pontos, do objeto Chart.|
+|left|duplo|A distância, em pontos, da esquerda do gráfico à origem da planilha.|
+|nome|string|Representa o nome de um objeto Chart.|
+|top|duplo|Representa a distância, em pontos, da borda superior do objeto à parte superior da primeira linha de uma planilha ou da área de um gráfico.|
 |width|Double|Representa a largura, em pontos, do objeto de gráfico.|
 
 ## <a name="response"></a>Resposta

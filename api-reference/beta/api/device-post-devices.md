@@ -1,21 +1,21 @@
 ---
 title: Criar dispositivo
-description: Crie um novo dispositivo.
+description: Criar um novo dispositivo.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 4ad0400a74deec35daa4e28f91cafde5310c65c1
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640515"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455132"
 ---
 # <a name="create-device"></a>Criar dispositivo
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um novo dispositivo.
+Criar um novo dispositivo.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -40,7 +40,7 @@ POST /devices
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça uma representação JSON do objeto [device](../resources/device.md).
 
-Desde que o recurso de **dispositivo** oferece suporte às [extensões](/graph/extensibility-overview), você pode usar o `POST` operação e adicionar propriedades personalizadas com seus próprios dados à instância de dispositivo ao criá-la.
+Como o recurso de **dispositivo** suporta [extensões](/graph/extensibility-overview), você pode usar `POST` a operação e adicionar propriedades personalizadas com seus próprios dados à instância do dispositivo ao criá-la.
 
 ## <a name="response"></a>Resposta
 

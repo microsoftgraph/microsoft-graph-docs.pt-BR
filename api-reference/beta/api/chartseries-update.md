@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 312c2a0a219cd1f88ede106f253c0c9019109253
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640137"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455846"
 ---
 # <a name="update-chartseries"></a>Atualizar chartseries
 
@@ -41,7 +41,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|name|string|Representa o nome de uma série em um gráfico.|
+|nome|string|Representa o nome de uma série em um gráfico.|
 
 ## <a name="response"></a>Resposta
 

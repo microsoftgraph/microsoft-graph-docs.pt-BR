@@ -1,23 +1,23 @@
 ---
 title: Obter um modelo de configuração de diretório
-description: Um modelo de configuração de diretório representa um modelo de configurações do qual as configurações podem ser criadas em um locatário. Essa operação permite a recuperação das propriedades do objeto directorySettingTemplate, incluindo as configurações disponíveis e seus valores padrão.
+description: Um modelo de configuração de diretório representa um modelo de configurações das quais as configurações podem ser criadas em um locatário. Essa operação permite a recuperação das propriedades do objeto directorySettingTemplate, incluindo as configurações disponíveis e seus padrões.
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: c097d9919a52cde8559ead338f433b27a1e3e73d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529975"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454936"
 ---
 # <a name="get-a-directory-setting-template"></a>Obter um modelo de configuração de diretório
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Um modelo de configuração de diretório representa um modelo de configurações do qual as configurações podem ser criadas em um locatário. Essa operação permite a recuperação das propriedades do objeto directorySettingTemplate, incluindo as configurações disponíveis e seus valores padrão.
+Um modelo de configuração de diretório representa um modelo de configurações das quais as configurações podem ser criadas em um locatário. Essa operação permite a recuperação das propriedades do objeto directorySettingTemplate, incluindo as configurações disponíveis e seus padrões.
 
-> **Observação**: A versão de /beta desse API é só se aplica aos grupos. A versão de /v1.0 desse API foi renomeada para *obter groupSettingTemplate*.
+> **Observação**: a versão do/beta dessa API só se aplica aos grupos. A versão do/v1.0 dessa API foi renomeada para *obter groupSettingTemplate*.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -46,7 +46,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` objeto response de código e [directorySettingTemplate](../resources/directorysettingtemplate.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [directorySettingTemplate](../resources/directorysettingtemplate.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

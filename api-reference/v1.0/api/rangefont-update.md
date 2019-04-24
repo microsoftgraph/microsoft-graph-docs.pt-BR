@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 40dfe68ec16415dbfa4abcbdb46da8cc9f89c961
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27927300"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32453231"
 ---
 # <a name="update-rangefont"></a>Atualizar rangefont
 
@@ -44,13 +44,13 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |bold|booliano|Representa o status da fonte em negrito.|
 |color|string|Representação de código de cor HTML para a cor do texto. Por exemplo, #FF0000 representa vermelho.|
 |italic|booliano|Representa o status da fonte em itálico.|
-|name|string|Nome da fonte (por exemplo, "Calibri")|
+|nome|string|Nome da fonte (por exemplo, "Calibri")|
 |size|Double|Font Size|
 |underline|string|Tipo de sublinhado aplicado à fonte. Os valores possíveis são: `None`, `Single`, `Double`, `SingleAccountant`, `DoubleAccountant`.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto de [WorkbookRangeFont](../resources/rangefont.md) atualizado no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [WorkbookRangeFont](../resources/rangefont.md) atualizado no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

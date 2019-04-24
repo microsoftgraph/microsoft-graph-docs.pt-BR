@@ -5,11 +5,11 @@ author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 72a7e810f26b281158cc83c91627d6abf7982301
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517432"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455195"
 ---
 # <a name="list-deleted-items"></a>Listar itens excluídos
 
@@ -22,8 +22,8 @@ Atualmente, a funcionalidade de itens excluídos apenas tem suporte para os recu
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-* Para usuários: User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.AccessAsUser.All
-* Para grupos: Group.Read.All, Directory.Read.All, Group.ReadWrite.All, Directory.AccessAsUser.All
+* Para usuários: user. Read. All, Directory. Read. All, User. ReadWrite. All, Directory. AccessAsUser. All
+* Para grupos: Group. Read. All, Directory. Read. All, Group. ReadWrite. All, Directory. AccessAsUser. All
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -60,7 +60,7 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma cole
 GET https://graph.microsoft.com/beta/directory/deleteditems/microsoft.graph.group
 ```
 ##### <a name="response"></a>Resposta
-Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

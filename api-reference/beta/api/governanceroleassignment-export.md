@@ -1,45 +1,46 @@
 ---
 title: Exportar governanceRoleAssignmentRequests
-description: Recuperar uma coleção de governanceRoleAssignmentRequests no formato `application/octet-stream`, que pode ser analisada como um arquivo. csv no navegador.
+description: Recupere uma coleção de governanceRoleAssignmentRequests no formato `application/octet-stream`, que pode ser analisado como um arquivo. csv no navegador.
 localization_priority: Normal
 ms.openlocfilehash: 82c36f176dfed1a4a848c045ce3274e1152bb953
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522424"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457172"
 ---
 # <a name="export-governanceroleassignmentrequests"></a>Exportar governanceRoleAssignmentRequests
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recuperar uma coleção de [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) no formato `application/octet-stream`, que pode ser analisada como um arquivo. csv no navegador.
+Recupere uma coleção de [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) no formato `application/octet-stream`, que pode ser analisado como um arquivo. csv no navegador.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureResources  |
+|Delegado (conta corporativa ou de estudante) | PrivilegedAccess. ReadWrite. AzureResources  |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | PrivilegedAccess.ReadWrite.AzureResources |
+|Aplicativo | PrivilegedAccess. ReadWrite. AzureResources |
 
 
 ## <a name="http-request"></a>Solicitação HTTP
-<!-- { "blockType": "ignored" } -->Exportar uma coleção de [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) em um recurso
+<!-- { "blockType": "ignored" } -->
+Exportar uma coleção de [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) em um recurso
     
->**Observação:** Além do escopo de permissão, esta solicitação requer o solicitante ter pelo menos uma atribuição no recurso. 
+>**Observação:** Além do escopo de permissão, essa solicitação exige que o solicitante tenha pelo menos uma atribuição de função no recurso. 
     
 ```http
 GET /privilegedAccess/azureResources/roleAssignments/export?$filter=resourceId+eq+'{resourceId}'
 ```
 
-Exportar uma coleção de [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) dos meus
+Exportar uma coleção de [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) de meus
 ```http
 GET /privilegedAccess/azureResources/roleAssignments/export?$filter=subjectId+eq+'{myId}'
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método oferece suporte para os [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
@@ -50,10 +51,10 @@ Este método oferece suporte para os [parâmetros de consulta OData](/graph/quer
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o conteúdo do tipo `application/octet-stream`.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e o `application/octet-stream`conteúdo do tipo.
 
 ## <a name="example"></a>Exemplo
-Este exemplo salva todas as atribuições de função, como um arquivo. csv na assinatura Wingtip Toys - produção. 
+Este exemplo salva todas as atribuições de função como um arquivo. csv na assinatura Wingtip Toys-prod. 
 
 ##### <a name="request"></a>Solicitação
 ```http

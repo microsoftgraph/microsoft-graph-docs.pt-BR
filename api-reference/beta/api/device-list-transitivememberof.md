@@ -1,21 +1,21 @@
 ---
-title: Listar grupos transitivos do dispositivo
-description: Obtenha os grupos que o dispositivo é um membro de. Essa solicitação API é transitiva e também retornará todos os grupos que o dispositivo é um membro aninhado do.
+title: Listar grupos transitivos de dispositivo
+description: Obter grupos dos quais o dispositivo é membro. Essa solicitação de API é transitiva e também retorna todos os grupos dos quais o dispositivo é um membro aninhado.
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 69cd4e4be3f02d3609bc9f0af2f094533c67dba7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528162"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455083"
 ---
-# <a name="list-device-transitive-groups"></a>Listar grupos transitivos do dispositivo
+# <a name="list-device-transitive-groups"></a>Listar grupos transitivos de dispositivo
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha os grupos que o dispositivo é um membro de. Essa solicitação API é transitiva e também retornará todos os grupos que o dispositivo é um membro aninhado do.
+Obter grupos dos quais o dispositivo é membro. Essa solicitação de API é transitiva e também retorna todos os grupos dos quais o dispositivo é um membro aninhado.
 
 ## <a name="permissions"></a>Permissões
 

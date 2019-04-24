@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: ad49c3d4095283fc42c2e8f2046c646f3558ac18
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365798"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454185"
 ---
 # <a name="get-companyinformation"></a>Obter companyInformation
 Recupere as propriedades e os relacionamentos de um objeto de informações da empresa para o Dynamics 365 Business central.

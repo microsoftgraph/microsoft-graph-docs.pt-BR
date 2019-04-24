@@ -1,23 +1,23 @@
 ---
 title: Recursos compartilhados no Microsoft Intune
-description: Esses pontos de extremidade são usados em vários API do Microsoft Graph Intune fluxos de trabalho.  A intenção, finalidade e permissões necessárias para usar um determinado recurso varia de acordo com o fluxo de trabalho específico e o contexto da chamada subjacente.  Além disso, determinados métodos, propriedades e ações são suportadas somente para fluxos de trabalho específicos.
+description: Esses pontos de extremidade são usados em vários fluxos de trabalho do Microsoft Graph API para o Intune.  A intenção, finalidade e permissões necessárias para usar um determinado recurso varia de acordo com o fluxo de trabalho específico e o contexto da chamada subjacente.  Além disso, determinados métodos, propriedades e ações têm suporte apenas para fluxos de trabalho específicos.
 localization_priority: Normal
 author: tfitzmac
 ms.prod: intune
 ms.openlocfilehash: cfb3acbb3b736fcb96d22773301ca6e2e3e4403f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27966773"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32452180"
 ---
 # <a name="shared-resources-in-microsoft-intune"></a>Recursos compartilhados no Microsoft Intune
 
 > **Observação:** O uso das APIs do Microsoft Graph para configurar controles e políticas do Intune ainda exige que o serviço do Intune seja [corretamente licenciado](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-pricing) pelo cliente.
 
-Esses pontos de extremidade são usados em vários API do Microsoft Graph Intune fluxos de trabalho.  A intenção, finalidade e permissões necessárias para usar um determinado recurso varia de acordo com o fluxo de trabalho específico e o contexto da chamada subjacente.  Além disso, determinados métodos, propriedades e ações são suportadas somente para fluxos de trabalho específicos.
+Esses pontos de extremidade são usados em vários fluxos de trabalho do Microsoft Graph API para o Intune.  A intenção, finalidade e permissões necessárias para usar um determinado recurso varia de acordo com o fluxo de trabalho específico e o contexto da chamada subjacente.  Além disso, determinados métodos, propriedades e ações têm suporte apenas para fluxos de trabalho específicos.
 
-Os recursos de gráfico a seguir são compartilhados entre o Intune fluxos de trabalho:  
+Os seguintes recursos de gráfico são compartilhados entre fluxos de trabalho do Intune:  
 
 - [Destino de atribuição de todos os dispositivos](intune-shared-alldevicesassignmenttarget.md)
 - [Destino de atribuição de todos os usuários licenciados](intune-shared-alllicensedusersassignmenttarget.md)
@@ -28,11 +28,11 @@ Os recursos de gráfico a seguir são compartilhados entre o Intune fluxos de tr
 - [Gerenciamento de dispositivos](intune-shared-devicemanagement.md)
 - [Destino de atribuição de grupos de exclusão](intune-shared-exclusiongroupassignmenttarget.md)
 - [Destino de atribuição de grupo](intune-shared-groupassignmenttarget.md)
-- [Instalar a intenção](intune-shared-installintent.md)
+- [Intenção de instalação](intune-shared-installintent.md)
 - [Conteúdo MIME](intune-shared-mimecontent.md)
 - [Report](intune-shared-report.md)
 - [Raiz de relatório](intune-shared-reportroot.md)
-- [Salva as opções de geração de estado da interface do usuário](intune-shared-saveduistategenerationoptions.md)
+- [Opções de geração do estado da interface do usuário salvas](intune-shared-saveduistategenerationoptions.md)
 - [URI](intune-shared-uri.md)
 - [Usuário](intune-shared-user.md)
-- [Tipo de conta de token de VPP](intune-shared-vpptokenaccounttype.md)
+- [Tipo de conta do token VPP](intune-shared-vpptokenaccounttype.md)

@@ -5,11 +5,11 @@ ms.date: 09/14/2017
 title: VersionAction
 localization_priority: Normal
 ms.openlocfilehash: c65b3cf021321a7e021c5fa4193abdcdce6c635a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520603"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32453853"
 ---
 # <a name="versionaction-resource-type"></a>Tipo de recurso VersionAction
 

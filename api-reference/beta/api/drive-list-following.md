@@ -1,22 +1,22 @@
 ---
 author: chackman
 ms.author: chackman
-title: Listar itens visitados
+title: Listar itens seguidos
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: df38a11a09f4ec86eb029f236030cc4565e5d939
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523306"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454803"
 ---
-# <a name="list-followed-items"></a>Listar itens visitados
+# <a name="list-followed-items"></a>Listar itens seguidos
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Lista os [itens](../resources/driveitem.md) que foram visitados pelo usuário conectado.
-Esta coleção inclui itens que estão na unidade do usuário, bem como os itens que eles têm acesso a partir de outras unidades.
+Listar os [itens](../resources/driveitem.md) que foram seguidos pelo usuário conectado.
+Esta coleção inclui itens que estão na unidade do usuário, assim como itens aos quais ele tem acesso por meio de outras unidades.
 
 ## <a name="permissions"></a>Permissões
 
@@ -38,8 +38,8 @@ GET /me/drive/following
 
 ## <a name="response"></a>Resposta
 
-Esse método retorna uma coleção de recursos de [driveItem](../resources/driveitem.md) para itens que o proprietário da unidade está seguindo.
-Se nenhum item foi encontrado, uma coleção vazia é retornada.
+Este método retorna uma coleção de recursos [driveItem](../resources/driveitem.md) para itens que o proprietário da unidade está seguindo.
+Se não forem encontrados itens, uma coleção vazia será retornada.
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)", "truncated": true } -->
 

@@ -5,11 +5,11 @@ author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: c5327c246c3a1dc58b0b1431fdff330cf7b6a732
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526309"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455076"
 ---
 # <a name="list-registeredusers"></a>Listar registeredUsers
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Directory.Read.All ou Directory.ReadWrite.All ou Directory.AccessAsUser.All    |
+|Delegado (conta corporativa ou de estudante) | Directory. Read. All ou Directory. ReadWrite. All ou Directory. AccessAsUser. All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo | Directory.Read.All ou Directory.ReadWrite.All |
 

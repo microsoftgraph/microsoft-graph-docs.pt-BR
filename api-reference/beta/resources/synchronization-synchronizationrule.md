@@ -1,34 +1,34 @@
 ---
-title: tipo de recurso de synchronizationRule
-description: Define como a sincronização deve ser executada para o mecanismo de sincronização, incluindo quais objetos para sincronizar e na direção, como objetos do diretório de origem devem ser correspondidos com objetos no diretório de destino e como os atributos deve ser transformados quando elas estiver sincronizadas da origem para o diretório de destino.
+title: tipo de recurso synchronizationRule
+description: Define como a sincronização deve ser executada para o mecanismo de sincronização, incluindo quais objetos sincronizar e em que direção, como os objetos do diretório de origem devem ser correspondidos com objetos no diretório de destino e como os atributos deve ser transformada quando estiverem sincronizadas da origem para o diretório de destino.
 localization_priority: Normal
 ms.openlocfilehash: deaf27ec46268eebe289e502bdf3b62a659cf1fb
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517922"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32453641"
 ---
-# <a name="synchronizationrule-resource-type"></a>tipo de recurso de synchronizationRule
+# <a name="synchronizationrule-resource-type"></a>tipo de recurso synchronizationRule
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Define como a sincronização deve ser executada para o mecanismo de sincronização, incluindo quais objetos para sincronizar e na direção, como objetos do diretório de origem devem ser correspondidos com objetos no diretório de destino e como os atributos deve ser transformados quando elas estiver sincronizadas da origem para o diretório de destino.
+Define como a sincronização deve ser executada para o mecanismo de sincronização, incluindo quais objetos sincronizar e em que direção, como os objetos do diretório de origem devem ser correspondidos com objetos no diretório de destino e como os atributos deve ser transformada quando estiverem sincronizadas da origem para o diretório de destino.
 
->**Observação:** Regras de sincronização definem sincronização em uma direção - do diretório de origem para o diretório de destino. Os diretórios de origem e destino são definidos como parte das propriedades de regra.
+>**Observação:** As regras de sincronização definem a sincronização em uma direção – do diretório de origem para o diretório de destino. Os diretórios de origem e de destino são definidos como parte das propriedades da regra.
 
-Regras de sincronização são atualizadas como parte do [esquema de sincronização](synchronization-synchronizationschema.md).
+As regras de sincronização são atualizadas como parte do [esquema de sincronização](synchronization-synchronizationschema.md).
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade      | Tipo      | Descrição    |
 |:--------------|:----------|:---------------|
-|Editable       |Booliano    |`true`Se a regra de sincronização pode ser personalizada; `false` se esta regra é somente leitura e não deve ser alterada.|
-|id             |String     |Identificador da regra de sincronização. Deve ser um dos identificadores reconhecidos pelo mecanismo de sincronização. Suporte para a regra identificadores podem ser encontrados no modelo de sincronização retornado pela API.|
-|Metadata       |coleção [stringKeyStringValuePair](synchronization-stringkeystringvaluepair.md) |Propriedades adicionais de extensão. A menos que seja instruído explicitamente pela equipe de suporte, valores de metadados não devem ser alterados.|
-|name           |Cadeia de caracteres     |Legíveis nome da regra de sincronização. Não anulável.|
-|objectMappings |coleção [objectMapping](synchronization-objectmapping.md)    |Conjunto de mapeamentos de objeto suportado pela regra. Instrui o mecanismo de sincronização quais objetos devem ser sincronizados.|
-|prioridade       |Inteiro    |Prioridade em relação a outras regras no [synchronizationSchema](synchronization-synchronizationschema.md). As regras com o número de prioridade mais baixa serão processadas pela primeira vez.|
+|edita       |Boolean    |`true`se a regra de sincronização puder ser personalizada; `false` se essa regra é somente leitura e não deve ser alterada.|
+|id             |String     |Identificador de regra de sincronização. Deve ser um dos identificadores reconhecidos pelo mecanismo de sincronização. Os identificadores de regra suportados podem ser encontrados no modelo de sincronização retornado pela API.|
+|los       |coleção [stringKeyStringValuePair](synchronization-stringkeystringvaluepair.md) |Propriedades de extensão adicionais. A menos que instruído explicitamente pela equipe de suporte, os valores de metadados não devem ser alterados.|
+|nome           |String     |Nome legível da regra de sincronização. Não anulável.|
+|objectMappings |[](synchronization-objectmapping.md) coleção objectmapping    |Conjunto de mapeamentos de objeto com suporte da regra. Informa ao mecanismo de sincronização quais objetos devem ser sincronizados.|
+|prioridade       |Inteiro    |Prioridade relativa a outras regras no [synchronizationSchema](synchronization-synchronizationschema.md). As regras com o número de prioridade mais baixa serão processadas primeiro.|
 |sourceDirectoryName       |String    |Nome do diretório de origem. Deve corresponder a uma das definições de diretório no [synchronizationSchema](synchronization-synchronizationschema.md).|
 |targetDirectoryName       |String    |Nome do diretório de destino. Deve corresponder a uma das definições de diretório no [synchronizationSchema](synchronization-synchronizationschema.md).|
 

@@ -1,19 +1,19 @@
 ---
 title: Obter o ponto de extremidade
-description: Recupere as propriedades e relacionamentos de um objeto de ponto de extremidade específico.
+description: Recupere as propriedades e os relacionamentos de um objeto Endpoint específico.
 localization_priority: Normal
 ms.openlocfilehash: 7c5b7bd28b06e20dbc92b09ff961214828749999
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640424"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457460"
 ---
 # <a name="get-endpoint"></a>Obter o ponto de extremidade
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e relacionamentos de um objeto específico de [ponto de extremidade](../resources/endpoint.md) .
+Recupere as propriedades e os relacionamentos de um objeto [Endpoint](../resources/endpoint.md) específico.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -37,14 +37,14 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 | Nome      |Descrição|
 |:----------|:----------|
 | Autorização  | {token} de portador. Obrigatório.|
-| Content-Type   | Application/Json |
+| Content-Type   | Application/JSON |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto de [ponto de extremidade](../resources/endpoint.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [Endpoint](../resources/endpoint.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 
@@ -56,7 +56,7 @@ Se tiver êxito, este método retornará um `200 OK` código de resposta e o obj
 GET https://graph.microsoft.com/beta/groups/{id}/endpoints/{id}
 ```
 ##### <a name="response"></a>Resposta
-Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

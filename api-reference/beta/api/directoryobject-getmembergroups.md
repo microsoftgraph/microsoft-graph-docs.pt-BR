@@ -1,21 +1,21 @@
 ---
 title: Obter grupos de membros
-description: Retornar todos os grupos que o usuário especificado, o grupo, o serviço principal ou o objeto de diretório é um membro de. Essa função é transitiva.
+description: Retornar todos os grupos dos quais o usuário, grupo, entidade de serviço ou objeto de diretório especificado é um membro. Esta função é transitiva.
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 9ab73b691ed9cfa4c756e4f0134adf9df7350aae
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526169"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455097"
 ---
 # <a name="get-member-groups"></a>Obter grupos de membros
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retornar todos os grupos que o usuário especificado, o grupo, o serviço principal ou o objeto de diretório é um membro de. Essa função é transitiva.
+Retornar todos os grupos dos quais o usuário, grupo, entidade de serviço ou objeto de diretório especificado é um membro. Esta função é transitiva.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -71,7 +71,7 @@ Content-type: application/json
 ```
 
 ##### <a name="response"></a>Resposta
-Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

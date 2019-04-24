@@ -6,11 +6,11 @@ title: Listar o conteúdo de uma pasta
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 96c5623ba2534086fbcd2130b5b5228e53208c35
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482186"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454381"
 ---
 # <a name="list-children-of-a-driveitem"></a>Listar os filhos de um driveItem
 
@@ -110,7 +110,7 @@ Content-type: application/json
 
 **Observação:** Se uma coleção exceder o tamanho de página padrão (200 itens), a propriedade **@odata.nextLink** será retornada na resposta para indicar que mais itens estão disponíveis e fornecer a URL da solicitação para a próxima página de itens.
 
-Você pode controlar o tamanho da página por meio de [parâmetros de cadeia de consulta opcionais](https://developer.microsoft.com/graph/docs/concepts/query_parameters)
+Você pode controlar o tamanho da página por meio de [parâmetros de cadeia de caracteres de consulta opcional](https://developer.microsoft.com/graph/docs/concepts/query_parameters)
 
 ### <a name="error-responses"></a>Respostas de erro
 

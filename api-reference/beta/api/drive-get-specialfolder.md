@@ -6,15 +6,13 @@ title: Obter pastas especiais
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: ecf36cdc81373a2c6be2cce8ec1dd8fc6457ef34
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481297"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454782"
 ---
 # <a name="get-a-special-folder-by-name"></a>Obtenha uma pasta especial por nome
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Use a coleção especial para acessar uma pasta especial pelo nome.
 
@@ -31,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |            Tipo de permissão             |                                           Permissões (da com menos para a com mais privilégios)                                            |
 | :------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------- |
 | Delegado (conta corporativa ou de estudante)     | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All                            |
-| Delegada (conta pessoal da Microsoft) | Files.ReadWrite.AppFolder, Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | Files.ReadWrite.AppFolder, Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
 | Aplicativo                            | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All                                                         |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -87,10 +85,10 @@ Para solicitar os filhos de uma pasta especial, você pode solicitar a coleção
 
 ### <a name="http-request"></a>Solicitação HTTP
 
-<!-- { "blockType": "request", "name": "get-special-children", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "get-special-children", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
-GET /me/drive/special/{name}/children
+GET /me/drive/special/{special-folder-name}/children
 ```
 
 ### <a name="response"></a>Resposta
@@ -117,15 +115,10 @@ Content-Type: application/json
 
 Se seu aplicativo tiver permissões somente leitura, a solicitação para obter uma pasta especial ou os filhos de uma pasta especial poderá falhar com um erro `404 Not Found` ou `403 Forbidden`, se a pasta especial ainda não existir.
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Access known folders in OneDrive through the special folder collection",
   "keywords": "known folders",
   "section": "documentation",
-  "tocPath": "OneDrive/Drive/Special folders",
-  "suppressions": [
-    "Error: /api-reference/beta/api/drive-get-specialfolder.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": "OneDrive/Drive/Special folders"
+} -->

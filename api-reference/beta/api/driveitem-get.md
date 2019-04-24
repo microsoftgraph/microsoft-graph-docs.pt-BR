@@ -2,19 +2,17 @@
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Obter um arquivo ou pasta
-localization_priority: Normal
+title: obter um arquivo ou uma pasta
+localization_priority: Priority
 ms.prod: sharepoint
 ms.openlocfilehash: 578d7bcbba51876390f9e0134d3c589d64b51e81
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480450"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454416"
 ---
 # <a name="get-a-driveitem-resource"></a>Obter um recurso DriveItem
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Recupere os metadados de um [DriveItem](../resources/driveitem.md) em um [Drive](../resources/drive.md) por ID ou caminho do sistema de arquivos.
 
@@ -67,7 +65,7 @@ Se bem sucedido, este método retorna o código de resposta `200 OK` e o recurso
 
 Eis um exemplo de solicitação para a pasta raiz do OneDrive do usuário.
 
-<!-- { "blockType": "request", "name": "get-item-metadata" }-->
+<!-- { "blockType": "request", "name": "get-drive-root", "tags": "service.graph" }-->
 
 ```http
 GET /me/drive/root
@@ -111,22 +109,17 @@ Content-type: application/json
 
 ## <a name="remarks"></a>Comentários
 
-Saiba mais sobre como os erros são retornados em [Respostas de erro][error-response].
+Confira mais informações sobre como os erros são retornados em [Respostas de erro][error-response].
 
 [error-response]: /graph/errors
 [odata-parameters]: /graph/query-parameters
 [item-resource]: ../resources/driveitem.md
 [special-folder]: ../api/drive-get-specialfolder.md
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Retrieve metadata about an item and its children in OneDrive",
   "keywords": "retrieve,item,metadata",
   "section": "documentation",
-  "tocPath": "Items/Get item",
-  "suppressions": [
-    "Error: /api-reference/beta/api/driveitem-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": "Items/Get item"
+} -->

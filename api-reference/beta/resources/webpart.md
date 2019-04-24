@@ -2,21 +2,21 @@
 author: rahmit
 ms.author: rahmit
 ms.date: 09/01/2018
-title: Web Part
+title: WebPart
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 9c019da7cb10a8c26faa8d338c54436043f83db8
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640172"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32453606"
 ---
-# <a name="webpart-resource"></a>recurso de Web Part
+# <a name="webpart-resource"></a>recurso webPart
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O recurso de **Web Part** representa o tipo e informações de renderização de uma web part em um [sitePage](sitepage.md).
+O recurso **WebPart** representa informações sobre o tipo e a renderização de uma Web Part em um [sitePage](sitepage.md).
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -39,14 +39,14 @@ O recurso de **Web Part** representa o tipo e informações de renderização de
 
 | Propriedade                | Tipo             | Descrição
 |:------------------------|:-----------------|:----------------------------------
-| **type**                | String           | Um identificador exclusivo especificando o tipo de Web Part. Somente leitura.
-| **data**                | [sitePageData][] | As propriedades necessárias para a Web Part (varia de acordo com a Web Part)
+| **type**                | String           | Um identificador exclusivo que especifica o tipo de Web Part. Somente leitura.
+| **data**                | [sitePageData][] | As propriedades necessárias para a Web Part (varia por webPart)
 
 [sitePageData]: sitepagedata.md
 
 ## <a name="remarks"></a>Comentários
 
-Web parts do podem definir suas próprias propriedades necessárias em **dados**.
+As Web Parts podem definir suas próprias propriedades obrigatórias em **Data**.
 
 Para obter mais informações sobre páginas, consulte [sitePage](sitepage.md).
 <!--

@@ -6,11 +6,11 @@ title: Enviar um convite para acessar um item
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 1e02af913702aace46a5e3ca2f2e2650a2c7839e
-ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30676972"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454325"
 ---
 # <a name="send-a-sharing-invitation"></a>Enviar um convite de compartilhamento
 

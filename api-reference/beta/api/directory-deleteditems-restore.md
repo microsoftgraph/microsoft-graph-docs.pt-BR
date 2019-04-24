@@ -5,11 +5,11 @@ author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 42af211afb9f508e9033f3e77f2b1dd14aa484d7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520729"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455179"
 ---
 # <a name="restore-deleted-item"></a>Restaurar item excluído
 
@@ -24,8 +24,8 @@ Um item recentemente excluído permanecerá disponível por até 30 dias. Após 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-* Para usuários: User.ReadWrite.All, Directory.AccessAsUser.All
-* Para grupos: Group.ReadWrite.All, Directory.AccessAsUser.All
+* Para usuários: user. ReadWrite. All, Directory. AccessAsUser. All
+* Para grupos: Group. ReadWrite. All, Directory. AccessAsUser. All
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -58,7 +58,7 @@ POST https://graph.microsoft.com/beta/directory/deleteditems/46cc6179-19d0-473e-
 ```
 No corpo da solicitação, forneça uma representação JSON do objeto [directoryObject](../resources/directoryobject.md).
 ##### <a name="response"></a>Resposta
-Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

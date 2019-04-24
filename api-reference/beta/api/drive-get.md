@@ -3,18 +3,16 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Obter Unidade
-localization_priority: Normal
+localization_priority: Priority
 ms.prod: sharepoint
 ms.openlocfilehash: 0bea809fc719d90dadbde9282f64ac43df4b91e9
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481283"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454740"
 ---
 # <a name="get-drive"></a>Obter Unidade
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Recupere as propriedades e as relações de um recurso [Drive](../resources/drive.md).
 
@@ -38,7 +36,7 @@ Se o OneDrive do usuário não está provisionado, mas o usuário tem uma licen�
 
 ### <a name="http-request"></a>Solicitação HTTP
 
-<!-- { "blockType": "request", "name": "get-drive-default", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "get-drive-default", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive
@@ -52,7 +50,7 @@ Se o OneDrive do usuário não está provisionado, mas o usuário tem uma licen�
 
 ### <a name="http-request"></a>Solicitação HTTP
 
-<!-- { "blockType": "request", "name": "get-drive-by-user", "scopes": "files.read.all" } -->
+<!-- { "blockType": "request", "name": "get-drive-by-user", "scopes": "files.read.all", "tags": "service.graph" } -->
 
 ```http
 GET /users/{idOrUserPrincipalName}/drive
@@ -60,9 +58,9 @@ GET /users/{idOrUserPrincipalName}/drive
 
 ### <a name="path-parameters"></a>Parâmetros do caminho
 
-| Nome do parâmetro  | Valor  | Descrição                                       |
+| Nome do parâmetro | Valor  | Descrição                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| _idOrUserPrincipalName_     | cadeia de caracteres | Obrigatório. O identificador de objeto do usuário proprietário do OneDrive. |
+| _idOrUserPrincipalName_     | string | Obrigatório. O identificador de objeto do usuário proprietário do OneDrive. |
 
 ## <a name="get-the-document-library-associated-with-a-group"></a>Obtenha a biblioteca de documentos associada a um grupo
 
@@ -70,7 +68,7 @@ Para acessar uma biblioteca de documentos padrão de um Grupo, o aplicativo soli
 
 ### <a name="http-request"></a>Solicitação HTTP
 
-<!-- { "blockType": "request", "name": "get-drive-by-group", "scopes": "group.read.all" } -->
+<!-- { "blockType": "request", "name": "get-drive-by-group", "scopes": "group.read.all", "tags": "service.graph" } -->
 
 ```http
 GET /groups/{groupId}/drive
@@ -78,9 +76,9 @@ GET /groups/{groupId}/drive
 
 ### <a name="path-parameters"></a>Parâmetros do caminho
 
-| Nome do parâmetro  | Valor  | Descrição                                       |
+| Nome do parâmetro | Valor  | Descrição                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| _groupId_      | cadeia de caracteres | Obrigatório. O identificador do grupo proprietário da biblioteca de documentos. |
+| _groupId_      | string | Obrigatório. O identificador do grupo proprietário da biblioteca de documentos. |
 
 ## <a name="get-the-document-library-for-a-site"></a>Obter a biblioteca de documentos de um site
 
@@ -94,9 +92,9 @@ GET /sites/{siteId}/drive
 
 ### <a name="path-parameters"></a>Parâmetros do caminho
 
-| Nome do parâmetro  | Valor  | Descrição                                       |
+| Nome do parâmetro | Valor  | Descrição                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| _siteId_       | cadeia de caracteres | Obrigatório. O identificador do site que contém a biblioteca de documentos. |
+| _siteId_       | string | Obrigatório. O identificador do site que contém a biblioteca de documentos. |
 
 ## <a name="get-a-drive-by-id"></a>Obtenha uma unidade por ID
 
@@ -107,14 +105,14 @@ Se tiver o identificador exclusivo de uma unidade, você poderá acessá-lo dire
 <!-- { "blockType": "request", "name": "get-drive-by-id", "scopes": "files.read" } -->
 
 ```http
-GET /drives/{driveId}
+GET /drives/{drive-id}
 ```
 
 ### <a name="path-parameters"></a>Parâmetros do caminho
 
-| Nome do parâmetro  | Valor  | Descrição                                       |
+| Nome do parâmetro | Valor  | Descrição                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| _driveId_      | string | Obrigatório. O identificador da unidade solicitada. |
+| _driveId_      | cadeia de caracteres | Obrigatório. O identificador da unidade solicitada. |
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
@@ -155,15 +153,18 @@ Se a unidade não existir e não puder ser provisionada automaticamente (ao usar
 [drive-resource]: ../resources/drive.md
 [odata-query-parameters]: /graph/query-parameters
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Get metadata for a OneDrive, OneDrive for Business, or Office 365 group drive",
   "keywords": "drive,onedrive,default drive,group drive",
   "section": "documentation",
-  "tocPath": "Drives/Get drive",
   "suppressions": [
-    "Error: /api-reference/beta/api/drive-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+      "Warning: /api-reference/v1.0/api/drive-get.md:
+        Unable to map some markdown elements into schema.
+            Unmapped methods:
+        get-drive-default, get-drive-by-user, get-drive-by-group, get-drive-by-id
+            Unmapped tables:
+        Permissions - AuthScopes, Path parameters - PathParameters, Path parameters - PathParameters, Path parameters - PathParameters, Path parameters - PathParameters"
+  ],
+  "tocPath": "Drives/Get drive"
+} -->

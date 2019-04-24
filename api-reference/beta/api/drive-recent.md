@@ -6,15 +6,13 @@ title: Listar arquivos recentes
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: a32e9c3cf0e1d8265092e206b1083337dab9aa58
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480583"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454810"
 ---
 # <a name="list-recent-files"></a>Liste arquivos recentes
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Listar uma coleção de itens que foram usados recentemente pelo usuário conectado. Esta coleção inclui itens que estão na unidade do usuário, assim como itens aos quais ele tem acesso por meio de outras unidades.
 
@@ -33,6 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "request",
        "name": "view-recent-files", 
        "scopes": "files.read",
+       "tags": "service.graph",
        "target": "action" } -->
 
 ```http
@@ -97,15 +96,10 @@ Alguns driveItems retornados da ação **recent** incluirão a faceta **remoteIt
 GET /drives/{remoteItem-driveId}/items/{remoteItem-id}
 ```
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Retrieve a list of recently used files for the owner of the drive.",
   "keywords": "drive,onedrive.drive,default drive",
   "section": "documentation",
-  "tocPath": "Drives/Recent files",
-  "suppressions": [
-    "Error: /api-reference/beta/api/drive-recent.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": "Drives/Recent files"
+} -->

@@ -6,15 +6,13 @@ title: Copiar um arquivo ou pasta
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: cdb22395cfde6820eb5450f39bd1e3408a4f82b2
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481899"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454558"
 ---
 # <a name="copy-a-driveitem"></a>Copiar um DriveItem
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Cria uma cópia de forma assíncrona de um [driveItem][item-resource] (incluindo os filhos), em um novo item pai ou com um novo nome.
 
@@ -45,10 +43,10 @@ POST /users/{userId}/drive/items/{itemId}/copy
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 
-| Nome            | Valor                                          | Descrição                                                                                                 |
+| Name            | Valor                                          | Descrição                                                                                                 |
 |:----------------|:-----------------------------------------------|:------------------------------------------------------------------------------------------------------------|
 | parentReference | [ItemReference](../resources/itemreference.md) | Opcional. Referência ao item pai em que a cópia será criada.                                         |
-| name            | string                                         | Opcional. O novo nome para a cópia. Se isso não for fornecido, será usado o mesmo nome que o original.    |
+| nome            | string                                         | Opcional. O novo nome para a cópia. Se isso não for fornecido, será usado o mesmo nome que o original.    |
 
 **Observação:** _parentReference_ deve incluir os parâmetros `driveId` e `id` para a pasta de destino.
 
@@ -57,7 +55,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 Este exemplo copia um arquivo identificado por `{item-id}` em uma pasta identificada por um valor `driveId` e `id`.
 A nova cópia do arquivo será nomeada `contoso plan (copy).txt`.
 
-<!-- { "blockType": "request", "name": "copy-item", "scopes": "files.readwrite", "target": "action" } -->
+<!-- { "blockType": "request", "name": "copy-item", "scopes": "files.readwrite", "tags": "service.graph", "target": "action" } -->
 
 ```http
 POST /me/drive/items/{item-id}/copy
@@ -91,15 +89,10 @@ Em muitos casos, a ação de copiar é executada de forma assíncrona. A respost
 
 [item-resource]: ../resources/driveitem.md
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Create a copy of an existing item.",
   "keywords": "copy existing item",
   "section": "documentation",
-  "tocPath": "Items/Copy",
-  "suppressions": [
-    "Error: /api-reference/beta/api/driveitem-copy.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": "Items/Copy"
+} -->

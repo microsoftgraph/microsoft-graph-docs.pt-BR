@@ -1,15 +1,15 @@
 ---
-title: tipo de recurso da Web
+title: tipo de recurso Web
 description: Especifica configurações para um aplicativo Web.
 localization_priority: Normal
 ms.openlocfilehash: 7e03977481f0c021b7d67ec44fd4db275642cdf8
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643507"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32453947"
 ---
-# <a name="web-resource-type"></a>tipo de recurso da Web
+# <a name="web-resource-type"></a>tipo de recurso Web
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -19,10 +19,10 @@ Especifica configurações para um aplicativo Web.
 
 | Propriedade | Tipo | Descrição |
 |:---------|:-----|:------------|
-|implicitGrantSettings|[implicitGrantSettings](implicitgrantsettings.md)| Especifica se esse aplicativo web pode solicitar tokens usando o fluxo de implícita OAuth 2.0.|
+|implicitGrantSettings|[implicitGrantSettings](implicitgrantsettings.md)| Especifica se este aplicativo Web pode solicitar tokens usando o fluxo implícito do OAuth 2,0.|
 |logoutUrl|String| Especifica a URL que será usada pela autorização do serviço da Microsoft para fazer logoff de um usuário usando protocolos de logoff [front-channel](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [back-channel](https://openid.net/specs/openid-connect-backchannel-1_0.html) ou SAML. |
-|oauth2AllowImplicitFlow|Booliano| Obsoleto. Não a use. | 
-|redirectUris|Coleção de cadeias de caracteres| Especifica o redirecionamento de códigos de autorização de URIs que OAuth 2.0 e tokens de acesso são enviados para ou as URLs que os tokens do usuário são enviados para entrar. |
+|oauth2AllowImplicitFlow|Boolean| Obsoleto. Não usar. | 
+|redirectUris|Coleção de cadeias de caracteres| Especifica as URLs às quais os tokens de usuário são enviados para entrar ou os URIs de redirecionamento aos quais os códigos de autorização OAuth 2,0 e tokens de acesso são enviados. |
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

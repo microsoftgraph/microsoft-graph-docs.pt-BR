@@ -1,28 +1,28 @@
 ---
-title: tipo de recurso de meetingParticipantInfo
-description: Informações sobre um participante em uma reunião.
+title: tipo de recurso meetingParticipantInfo
+description: Informações sobre um participante de uma reunião.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 1ba727344b1f653125a482b592e7d28c11d1d3d5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515024"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457113"
 ---
-# <a name="meetingparticipantinfo-resource-type"></a>tipo de recurso de meetingParticipantInfo
+# <a name="meetingparticipantinfo-resource-type"></a>tipo de recurso meetingParticipantInfo
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Informações sobre um participante em uma reunião.
+Informações sobre um participante de uma reunião.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade       | Tipo                          | Descrição                              |
 |:---------------|:------------------------------|:-----------------------------------------|
-| [-Identity]       | [identitySet](identityset.md) | Informações de identidade do participante. |
-| UPN            | String                        | Nome principal de usuário do participante.  |
+| ladrões       | [identitySet](identityset.md) | Informações de identidade do participante. |
+| UPN            | String                        | Nome principal do usuário do participante.  |
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -1,21 +1,19 @@
 ---
-title: Grupos de dispositivos de lista
-description: Obtenha os grupos dos quais este dispositivo é um membro direto. Esta operação não é transitiva.
+title: Listar grupos de dispositivos
+description: Obter grupos dos quais este dispositivo é membro direto. Essa operação não é transitiva.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 8cd803fbb89f16488e29b0f6490fbe06eee8f6c9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528148"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455252"
 ---
-# <a name="list-device-groups"></a>Grupos de dispositivos de lista
+# <a name="list-device-groups"></a>Listar grupos de dispositivos
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Obtenha os grupos dos quais este dispositivo é um membro direto. Esta operação não é transitiva.
+Obter grupos dos quais este dispositivo é membro direto. Essa operação não é transitiva.
 
 ## <a name="permissions"></a>Permissões
 
@@ -57,7 +55,7 @@ Este é um exemplo da solicitação.
   "name": "get_user_memberof"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/devices/{id}/memberOf
+GET https://graph.microsoft.com/v1.0/devices/{id}/memberOf
 ```
 
 ### <a name="response"></a>Resposta
@@ -95,8 +93,5 @@ Content-type: application/json
   "description": "List memberOf",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/device-list-memberof.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "tocPath": ""
 }-->

@@ -1,23 +1,23 @@
 ---
 author: chackman
 ms.author: chackman
-title: Siga o item de unidade
+title: Seguir item de unidade
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: b0c8835593ed7203cc6239485f1dcd4f17f24fe7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518335"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454402"
 ---
-# <a name="follow-drive-item"></a>Siga o item de unidade
+# <a name="follow-drive-item"></a>Seguir item de unidade
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Siga um [driveItem](../resources/driveitem.md).
 
->**Observação:** Para parar de seguir um item, consulte [Unfollow item](driveitem-unfollow.md).
+>**Observação:** Para desacompanhar um item, confira [inseguir item](driveitem-unfollow.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -47,11 +47,11 @@ Nenhum corpo de solicitação é obrigatório.
 
 ## <a name="response"></a>Resposta
 
-Esse método retorna um [DriveItem](../resources/driveitem.md) para o item sendo seguido.
+Este método retorna um [DriveItem](../resources/driveitem.md) para o item que está sendo seguido.
 
 ## <a name="example"></a>Exemplo
 
-Este exemplo segue um item identificado pela `{item-id}`.
+Este exemplo segue um item identificado por `{item-id}`.
 
 <!-- { "blockType": "request", "name": "follow-item", "scopes": "files.read", "target": "action" } -->
 

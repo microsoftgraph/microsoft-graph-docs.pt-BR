@@ -5,11 +5,11 @@ author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 1337527b7be6c8cc7f2b52f37a1698d61fa9b842
-ms.sourcegitcommit: 3615f9475d57bfbb3a8c4402af863897f592dfbd
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30789610"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454796"
 ---
 # <a name="update-a-directory-setting"></a>Atualizar uma configuração de diretório
 
@@ -36,7 +36,7 @@ PATCH /settings/{id}
 PATCH /groups/{id}/settings/{id}
 ```
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
-| Nome       | Descrição|
+| Name       | Descrição|
 |:-----------|:-----------|
 | Autorização  | {token} de portador. Obrigatório.|
 

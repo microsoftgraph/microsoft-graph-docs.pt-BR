@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 83c46208edf769a2c3d3a97d242b874596d3308d
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641110"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456084"
 ---
 # <a name="update-chartlegend"></a>Atualizar chartlegend
 

@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: 1eb998bb101af576f570717c15d6fc5f1d30cacb
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365630"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32458429"
 ---
 # <a name="update-taxgroups"></a>Atualizar taxGroups
 Atualizar as propriedades de um objeto de grupos de impostos para o Dynamics 365 Business central.

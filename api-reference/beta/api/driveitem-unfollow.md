@@ -5,11 +5,11 @@ title: Item da unidade não seguir
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 730bb02dda88f41bcac734b3ba282ad324267860
-ms.sourcegitcommit: 9fd437a77da99d8436d6c852edd99a9ba873f8cd
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31560105"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454301"
 ---
 # <a name="unfollow-drive-item"></a>Item da unidade não seguir
 

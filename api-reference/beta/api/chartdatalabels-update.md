@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: b7eb067bed747ae2532939e61a9e0dec58ff4655
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640130"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456476"
 ---
 # <a name="update-chartdatalabels"></a>Atualizar chartdatalabels
 
@@ -41,7 +41,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|position|string|Valor de DataLabelPosition que representa a posição do rótulo de dados. Os valores possíveis são: `None`, `Center`, `InsideEnd`, `InsideBase`, `OutsideEnd`, `Left`, `Right`, `Top`, `Bottom`, `BestFit` e `Callout`.|
+|position|cadeia de caracteres|Valor de DataLabelPosition que representa a posição do rótulo de dados. Os valores possíveis são: `None`, `Center`, `InsideEnd`, `InsideBase`, `OutsideEnd`, `Left`, `Right`, `Top`, `Bottom`, `BestFit` e `Callout`.|
 |separador|string|Cadeia de caracteres que representa o separador usado para os rótulos de dados em um gráfico.|
 |showBubbleSize|booliano|Valor booliano que determina se o tamanho da bolha do rótulo de dados fica visível ou não.|
 |showCategoryName|booliano|Valor booliano que determina se o nome da categoria do rótulo de dados fica visível ou não.|

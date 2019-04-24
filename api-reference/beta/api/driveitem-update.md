@@ -2,19 +2,17 @@
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Atualizar um arquivo ou pasta
-localization_priority: Normal
+title: Atualizar um arquivo ou uma pasta
+localization_priority: Priority
 ms.prod: sharepoint
 ms.openlocfilehash: 8da5c90383e7f73012bf86d668316c6443372425
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480618"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454262"
 ---
 # <a name="update-driveitem-properties"></a>Atualizar propriedades de DriveItem
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Atualize os metadados de um [DriveItem](../resources/driveitem.md) por ID ou caminho.
 
@@ -44,7 +42,7 @@ PATCH /users/{user-id}/drive/items/{item-id}
 
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
 
-| Nome          | Tipo   | Descrição                                                                                                                                                         |
+| Name          | Tipo   | Descrição                                                                                                                                                         |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | if-match      | String | Se este cabeçalho de solicitação estiver incluso e a eTag (ou cTag) fornecida corresponder à eTag atual da pasta, uma resposta `412 Precondition Failed` será exibida. |
 
@@ -63,7 +61,7 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK` e o recurs
 
 Este exemplo renomeia o recurso DriveItem como "new-file-name.docx".
 
-<!-- { "blockType": "request", "name": "update-item" } -->
+<!-- { "blockType": "request", "name": "update-item", "tags": "service.graph" } -->
 
 ```http
 PATCH /me/drive/items/{item-id}
@@ -98,15 +96,10 @@ Confira mais detalhes sobre como os erros são retornados em [Respostas de erro]
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Update or replace the contents or properties of an item.",
   "keywords": "update,replace,contents,item",
   "section": "documentation",
-  "tocPath": "Items/Update",
-  "suppressions": [
-    "Error: /api-reference/beta/api/driveitem-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": "Items/Update"
+} -->

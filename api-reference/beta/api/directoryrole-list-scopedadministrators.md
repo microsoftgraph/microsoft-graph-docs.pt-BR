@@ -1,17 +1,17 @@
 ---
-title: Lista scopedMembers para uma função de diretório
+title: Listar scopedMembers para uma função de diretório
 description: Recupere uma lista de objetos scopedRoleMembership para uma função de diretório.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: ab6b68ac96e35249ef216266fafed76be68f40b7
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642475"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454957"
 ---
-# <a name="list-scopedmembers-for-a-directory-role"></a>Lista scopedMembers para uma função de diretório
+# <a name="list-scopedmembers-for-a-directory-role"></a>Listar scopedMembers para uma função de diretório
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,7 +43,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e a coleção de objetos [scopedRoleMembership](../resources/scopedrolemembership.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [scopedRoleMembership](../resources/scopedrolemembership.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

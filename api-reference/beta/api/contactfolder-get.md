@@ -5,22 +5,20 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 5ab29eb96f900404f035442605047bd2df3e37e2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29530017"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455657"
 ---
 # <a name="get-contactfolder"></a>Obter contactFolder
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Obtenha uma pasta de contatos usando a respectiva ID.
 
-Há dois cenários onde um aplicativo pode obter a pasta de contato do outro usuário:
+Há dois cenários em que um aplicativo pode obter a pasta de contatos de outro usuário:
 
-* Se o aplicativo tem permissões de aplicativo, ou,
-* Se o aplicativo tiver apropriada [permissões](#permissions) delegadas de um usuário, e outro usuário compartilhou uma pasta de contato com que o usuário ou, tem acesso delegado a esse usuário. Consulte os [detalhes e um exemplo](/graph/outlook-get-shared-contacts-folders).
+* Se o aplicativo tiver permissões de aplicativo ou
+* Se o aplicativo tiver as [permissões](#permissions) delegadas apropriadas de um usuário, e outro usuário tiver compartilhado uma pasta de contatos com esse usuário, ou tiver concedido acesso delegado a esse usuário. Confira [detalhes e um exemplo](/graph/outlook-get-shared-contacts-folders).
 
 
 ## <a name="permissions"></a>Permissões
@@ -59,7 +57,7 @@ Este é um exemplo da solicitação.
   "name": "get_contactfolder"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/contactFolders/{id}
+GET https://graph.microsoft.com/v1.0/me/contactFolders/{id}
 ```
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
@@ -76,22 +74,16 @@ Content-length: 104
 {
   "displayName": "Finance",
   "id": "AAMkAGI2TKI5AAA=",
-  "parentFolderId": "AAMkAGI2AAEOAAA=",
-  "wellKnownName": null
+  "parentFolderId": "AAMkAGI2AAEOAAA="
 }
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Get contactFolder",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/contactfolder-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

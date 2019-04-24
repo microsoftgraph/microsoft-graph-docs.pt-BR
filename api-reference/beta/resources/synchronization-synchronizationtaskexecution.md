@@ -1,15 +1,15 @@
 ---
-title: tipo de recurso de synchronizationTaskExecution
+title: tipo de recurso synchronizationTaskExecution
 description: Resume os resultados da execução do trabalho de sincronização.
 localization_priority: Normal
 ms.openlocfilehash: 37a0fd57269cef6d3cb03c5cc5c38d3024fe198d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510551"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32453860"
 ---
-# <a name="synchronizationtaskexecution-resource-type"></a>tipo de recurso de synchronizationTaskExecution
+# <a name="synchronizationtaskexecution-resource-type"></a>tipo de recurso synchronizationTaskExecution
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -18,20 +18,20 @@ Resume os resultados da execução do trabalho de sincronização.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|activityIdentifier           |String |Identificador da execução do trabalho.|
-|countEntitled                |Int64  |Contagem de entradas processadas que foram atribuídas para esse aplicativo.|
-|countEntitledForProvisioning |Int64  |Contagem de entradas processadas que foram atribuídas pelo provisionamento.|
-|countEscrowed                |Int64  |Contagem de entradas que foram caucionados (erros).|
-|countEscrowedRaw             |Int64  |Contagem de entradas que foram caucionadas, incluindo escrows gerada pelo sistema.|
+|activityIdentifier           |String |Identificador do trabalho executado.|
+|countEntitled                |Int64  |Contagem de entradas processadas que foram atribuídas para este aplicativo.|
+|countEntitledForProvisioning |Int64  |Contagem de entradas processadas que foram atribuídas para provisionamento.|
+|countEscrowed                |Int64  |Contagem de entradas que foram caução (erros).|
+|countEscrowedRaw             |Int64  |Contagem de entradas que foram caução, incluindo caução geradas pelo sistema.|
 |countExported                |Int64  |Contagem de entradas exportadas.|
-|countExports                 |Int64  |Contagem de entradas que eram esperados a ser exportado.|
+|countExports                 |Int64  |Contagem de entradas que devem ser exportadas.|
 |countImported                |Int64  |Contagem de entradas importadas.|
-|countImportedDeltas          |Int64  |Contagem de alterações de delta importadas.|
-|countImportedReferenceDeltas |Int64  |Contagem de alterações de delta importadas referentes às alterações de referência.|
-|erro                        |[synchronizationError](synchronization-synchronizationerror.md)|Se foi encontrado um erro, contém um objeto **synchronizationError** com detalhes.|
-|estado                        |String |Resumindo o resultado dessa execução de código. Os valores possíveis são: `Succeeded`, `Failed`, `EntryLevelErrors`.|
-|timeBegan                    |DateTimeOffset|Começou a hora quando esse trabalho é executado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
-|timeEnded                    |DateTimeOffset|Quando esse trabalho é executado de tempo é encerrada. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
+|countImportedDeltas          |Int64  |Contagem de alterações delta importadas.|
+|countImportedReferenceDeltas |Int64  |Contagem de alterações delta importadas referentes a alterações de referência.|
+|erro                        |[synchronizationError](synchronization-synchronizationerror.md)|Se for encontrado um erro, conterá um objeto **synchronizationError** com detalhes.|
+|state                        |String |Código que resume o resultado desta execução. Os valores possíveis são: `Succeeded`, `Failed`, `EntryLevelErrors`.|
+|timeComeçou                    |DateTimeOffset|Hora em que esta execução de trabalho começou. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
+|timeTerminou                    |DateTimeOffset|Hora em que esse trabalho foi executado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -3,18 +3,16 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Listar arquivos compartilhados comigo
-localization_priority: Normal
+localization_priority: Priority
 ms.prod: sharepoint
 ms.openlocfilehash: 06c6607de9fa36fd8b1dedc3bf5ded3cfad1228e
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481010"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454551"
 ---
-# <a name="list-items-shared-with-the-signed-in-user"></a>Liste itens compartilhados com o usuário conectado
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+# <a name="list-items-shared-with-the-signed-in-user"></a>Listar itens compartilhados com o usuário conectado
 
 Recupere uma coleção de recursos [DriveItem](../resources/driveitem.md) que foram compartilhados com o proprietário de [Drive](../resources/drive.md).
 
@@ -28,12 +26,12 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Files.Read.All, Files.ReadWrite.All    |
 |Aplicativo | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
 
-**Observação:** enquanto a solicitação/sharedWithMe for bem-sucedida com as permissões files. Read ou files. ReadWrite, algumas propriedades poderão estar ausentes.
+**Observação:** embora a solicitação /sharedWithMe tenha êxito com as permissões Files.Read ou Files.ReadWrite, algumas propriedades podem estar ausentes.
 Além disso, sem uma das permissões **All**, os itens compartilhados retornados dessa API não ficarão acessíveis.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-<!-- { "blockType": "request", "name": "shared-with-me", "scopes": "files.read", "target": "action" } -->
+<!-- { "blockType": "request", "name": "shared-with-me", "scopes": "files.read", "tags": "service.graph", "target": "action" } -->
 
 ```http
 GET /me/drive/sharedWithMe
@@ -91,15 +89,10 @@ DriveItems retornados da ação **sharedWithMe** sempre incluirão a faceta [**r
 GET /drives/{remoteItem-driveId}/items/{remoteItem-id}
 ```
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "List the items shared with the owner of a drive.",
   "keywords": "drive,onedrive.drive,default drive",
   "section": "documentation",
-  "tocPath": "Sharing/Shared with me",
-  "suppressions": [
-    "Error: /api-reference/beta/api/drive-sharedwithme.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": "Sharing/Shared with me"
+} -->

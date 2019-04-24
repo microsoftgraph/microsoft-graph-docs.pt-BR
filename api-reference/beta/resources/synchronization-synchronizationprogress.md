@@ -1,28 +1,28 @@
 ---
-title: tipo de recurso de synchronizationProgress
-description: Representa o progresso de um synchronizationJob rumo à conclusão.
+title: tipo de recurso synchronizationProgress
+description: Representa o andamento de um synchronizationJob para a conclusão.
 localization_priority: Normal
 ms.openlocfilehash: b22bd95f54a9f268524dc98a8d3df94fcc14f773
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640067"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32453954"
 ---
-# <a name="synchronizationprogress-resource-type"></a>tipo de recurso de synchronizationProgress
+# <a name="synchronizationprogress-resource-type"></a>tipo de recurso synchronizationProgress
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa o progresso de um [synchronizationJob](synchronization-synchronizationjob.md) rumo à conclusão.
+Representa o andamento de um [synchronizationJob](synchronization-synchronizationjob.md) para a conclusão.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade                              | Tipo      | Descrição    |
 |:--------------------------------------|:----------|:---------------|
-|completedUnits|Int32|O numerador de uma proporção de progresso; o número de unidades de alterações já processadas.|
-|progressObservationDateTime|DateTimeOffset|A hora de uma observação de progresso como um deslocamento em minutos de UTC.|
-|totalUnits|Int32|Denominador de uma proporção de progresso; um número de unidades de alterações a serem processados para realizar a sincronização.|
-|unidades|String|Uma descrição opcional das unidades.|
+|completedUnits|Int32|O numerador de uma taxa de progresso; o número de unidades de alterações já processadas.|
+|progressObservationDateTime|DateTimeOffset|O tempo de uma observação de progresso como um deslocamento em minutos do UTC.|
+|totalUnits|Int32|O denominador de uma taxa de progresso; várias unidades de alterações a serem processadas para realizar a sincronização.|
+|unid|String|Uma descrição opcional das unidades.|
 
 <!-- The troubleshootingUrl property is missing a description -->
 

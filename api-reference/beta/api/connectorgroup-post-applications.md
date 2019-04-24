@@ -1,19 +1,19 @@
 ---
 title: Criar aplicativo
-description: Use essa API para criar um novo aplicativo.
+description: Use esta API para criar um novo aplicativo.
 localization_priority: Normal
 ms.openlocfilehash: 350e5f0fcb45f7404a670c1a0af4e4ddd02a97c9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514240"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455937"
 ---
 # <a name="create-application"></a>Criar aplicativo
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use essa API para criar um novo aplicativo.
+Use esta API para criar um novo aplicativo.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -32,14 +32,14 @@ POST /connectorGroups/{id}/applications
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
-| Autorização  |  de portador Obrigatório|
+| Autorização  | Portador. Obrigatório|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do objeto [application](../resources/application.md) .
+No corpo da solicitação, forneça uma representação JSON do objeto [application](../resources/application.md).
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` objeto de códigos e [aplicativos](../resources/application.md) de resposta no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta `201 Created` e um objeto [application](../resources/application.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -57,7 +57,7 @@ Content-length: 329
   "@odata.id": "https://graph.microsoft.com/{ver}/applications/{id}"
 }
 ```
-No corpo da solicitação, fornece uma representação JSON do objeto [application](../resources/application.md) .
+No corpo da solicitação, forneça uma representação JSON do objeto [application](../resources/application.md).
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {

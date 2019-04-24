@@ -1,26 +1,26 @@
 ---
 title: Obter contato
-description: Recupere as propriedades e relacionamentos de objeto de contato.
+description: Recupere as propriedades e os relacionamentos do objeto de contato.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: e758a088400168ca755aae755054fcd57c1d092a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29530115"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455678"
 ---
 # <a name="get-contact"></a>Obter contato
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e relacionamentos de objeto de contato.
+Recupere as propriedades e os relacionamentos do objeto de contato.
 
-Há dois cenários em que um aplicativo pode receber um contato na pasta de contatos de outro usuário:
+Há dois cenários em que um aplicativo pode obter um contato na pasta de contatos de outro usuário:
 
-* Se o aplicativo tem permissões de aplicativo, ou,
-* Se o aplicativo tiver apropriada [permissões](#permissions) delegadas de um usuário, e outro usuário compartilhou uma pasta de contato com que o usuário ou, tem acesso delegado a esse usuário. Consulte os [detalhes e um exemplo](/graph/outlook-get-shared-contacts-folders).
+* Se o aplicativo tiver permissões de aplicativo ou
+* Se o aplicativo tiver as [permissões](#permissions) delegadas apropriadas de um usuário, e outro usuário tiver compartilhado uma pasta de contatos com esse usuário, ou tiver concedido acesso delegado a esse usuário. Confira [detalhes e um exemplo](/graph/outlook-get-shared-contacts-folders).
 
 
 ## <a name="permissions"></a>Permissões
@@ -33,25 +33,26 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Aplicativo | Contacts.Read, Contacts.ReadWrite |
 
 ## <a name="http-request"></a>Solicitação HTTP
-<!-- { "blockType": "ignored" } -->Um [contato](../resources/contact.md) na caixa de correio do usuário.
+<!-- { "blockType": "ignored" } -->
+Um [contato](../resources/contact.md) na caixa de correio do usuário.
 ```http
 GET /me/contacts/{id}
 GET /users/{id | userPrincipalName}/contacts/{id}
 ```
-Um [contato](../resources/contact.md) de um nível superior [contactFolder](../resources/contactfolder.md) do usuário.
+Um [contato](../resources/contact.md) de um [contactFolder](../resources/contactfolder.md) de nível superior do usuário.
 ```http
 GET /me/contactfolders/{Id}/contacts/{id}
 GET /users/{id | userPrincipalName}/contactfolders/{id}/contacts/{id}
 ```
-Um [contact](../resources/contact.md) incluso em uma pasta filha de uma [contactFolder](../resources/mailfolder.md). O exemplo a seguir mostra um nível de aninhamento, mas um contato pode estar localizado em um filho de um filho, e assim por diante.
+Um [contact](../resources/contact.md) incluso em uma pasta filha de uma [contactFolder](../resources/mailfolder.md).  O exemplo a seguir mostra um nível de aninhamento, mas um contato pode estar localizado em um filho de um filho e assim por diante.
 ```http
 GET /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-|Nome|Value|Descrição|
+|Name|Valor|Descrição|
 |:---------------|:--------|:-------|
-|$expand|string|Lista separada por vírgulas de relações para expandir e incluir na resposta. Consulte a tabela de relações do objeto de [contato](../resources/contact.md) para nomes com suporte. |
+|$expand|string|Lista separada por vírgulas de relações para expandir e incluir na resposta. Consulte tabela de relações de objeto de [contato](../resources/contact.md) para nomes compatíveis. |
 |$select|string|Lista separada por vírgulas de propriedades para incluir na resposta.|
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação

@@ -1,28 +1,28 @@
 ---
 title: Excluir educationSubmissionResource
-description: Exclui um recurso do envio. Isso só pode ser feito pelo aluno. Se o recurso foi copiado da atribuição, uma nova cópia do recurso será criada depois que a cópia atual for excluída.
+description: Exclui um recurso do envio. Isso só pode ser feito pelo aluno. Se o recurso foi copiado da atribuição, uma nova cópia do recurso será criada após a cópia atual ser excluída.
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: a735cb1451e8d3eb8df13e6fa395c3e02393f451
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518979"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457512"
 ---
 # <a name="delete-educationsubmissionresource"></a>Excluir educationSubmissionResource
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exclui um recurso do envio. Isso só pode ser feito pelo aluno. Se o recurso foi copiado da atribuição, uma nova cópia do recurso será criada depois que a cópia atual for excluída. Isso permite "Redefinir" o recurso ao seu estado original. Se o recurso não foi copiado da atribuição, mas foi adicionado de student, o recurso simplesmente é excluído.
+Exclui um recurso do envio. Isso só pode ser feito pelo aluno. Se o recurso foi copiado da atribuição, uma nova cópia do recurso será criada após a cópia atual ser excluída. Isso permite que você "Redefina" o recurso para seu estado original. Se o recurso não foi copiado da atribuição, mas foi adicionado do aluno, o recurso será simplesmente excluído.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
+|Delegado (conta corporativa ou de estudante) |  EduAssignments. ReadWriteBasic, EduAssignments. ReadWrite  |
 |Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
 |Aplicativo | Sem suporte. | 
 

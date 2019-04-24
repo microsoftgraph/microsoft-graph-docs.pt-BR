@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 745ed45b4e5b79c8d1764a86fac04cf7fcfdcc26
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27957799"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456847"
 ---
 # <a name="rangeview-resource-type"></a>tipo de recurso rangeView
 RangeView representa um conjunto de células visíveis do intervalo pai.
@@ -34,7 +34,7 @@ RangeView representa um conjunto de células visíveis do intervalo pai.
 |numberFormat|Json|Representa o código de formato de número do Excel para determinada célula. Somente leitura. |
 |rowCount|Int32|Retorna o número de linhas visíveis. Somente leitura.  |
 |text|Json|Valores de texto do intervalo especificado. O valor de texto não depende da largura da célula. A substituição pelo sinal #, que ocorre na interface de usuário do Excel, não afeta o valor de texto retornado pela API. Somente leitura.    |
-|valueTypes|Json|Representa o tipo de dados de cada célula. Somente leitura. Os valores possíveis são: desconhecido, vazio, cadeia de caracteres, número inteiro, Double, Boolean, erro. |
+|valueTypes|Json|Representa o tipo de dados de cada célula. Somente leitura. Os valores possíveis são: Unknown, Empty, String, Integer, Double, Boolean, Error. |
 |values|Json|Representa os valores brutos da exibição do intervalo especificado. Os dados retornados podem ser dos tipos: cadeia de caracteres, número ou booliano. Células que contêm um erro retornarão a cadeia de caracteres de erro.   |
 
 ## <a name="relationships"></a>Relações

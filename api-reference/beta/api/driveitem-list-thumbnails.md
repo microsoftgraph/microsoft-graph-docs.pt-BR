@@ -6,11 +6,11 @@ title: Recuperar miniaturas de um arquivo ou pasta
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 68c1adf275a6a8720aab4df638f69c7162e301a6
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481311"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454374"
 ---
 # <a name="list-thumbnails-for-a-driveitem"></a>Listar miniaturas para um DriveItem
 
@@ -110,7 +110,7 @@ GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}
 
 ### <a name="path-parameters"></a>Parâmetros do caminho
 
-| Nome         | Tipo   | Descrição                                                                              |
+| Name         | Tipo   | Descrição                                                                              |
 |:-------------|:-------|:-----------------------------------------------------------------------------------------|
 | **item-id**  | string | O identificador exclusivo do item referenciado.                                           |
 | **thumb-id** | number | O índice da miniatura, geralmente de 0 a 4. Se houver uma miniatura personalizada, seu índice será 0. |
@@ -212,7 +212,7 @@ Content-type: application/json
 
 Essa tabela define os possíveis tamanhos de miniaturas. Embora você possa solicitar qualquer tamanho de miniatura arbitrário, os valores definidos provavelmente existem e retornam um valor rapidamente:
 
-| Nome           | Solução  | Taxa de proporção | Descrição                                                          |
+| Nome           | Resolução  | Taxa de proporção | Descrição                                                          |
 |:---------------|:------------|:-------------|:---------------------------------------------------------------------|
 | `small`        | 96 mais longa  | Original     | Miniatura pequena e altamente compactada, recortada em uma taxa de proporção quadrada. |
 | `medium`       | 176 mais longa | Original     | Recortada no tamanho do item padrão para o modo de exibição de Web do OneDrive.         |

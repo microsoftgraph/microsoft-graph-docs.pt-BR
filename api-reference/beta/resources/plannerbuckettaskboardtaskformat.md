@@ -1,38 +1,38 @@
 ---
-title: Tipo de recurso plannerBucketTaskBoardTaskFormat
-description: O recurso **plannerBucketTaskBoardTaskFormat** representa as informações usadas para renderizar uma tarefa corretamente no modo de exibição Buckets do Quadro de Tarefas (um modo de exibição organizado por tarefas dentro dos buckets aos quais elas são atribuídas). Cada **tarefa** terá um objeto plannerBucketTaskBoardTaskFormat associado a ela.
+title: tipo de recurso plannerBucketTaskBoardTaskFormat
+description: O recurso **plannerBucketTaskBoardTaskFormat** representa as informações usadas para renderizar uma tarefa corretamente no modo de exibição buckets do quadro de tarefas (um modo de exibição organizado por tarefas dentro dos buckets aos quais são atribuídas). Cada tarefa terá um objeto **plannerBucketTaskBoardTaskFormat** associado a ela.
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: eca8865e54d68fb7b403364b065e642ad61e9276
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526946"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457057"
 ---
-# <a name="plannerbuckettaskboardtaskformat-resource-type"></a>Tipo de recurso plannerBucketTaskBoardTaskFormat
+# <a name="plannerbuckettaskboardtaskformat-resource-type"></a>tipo de recurso plannerBucketTaskBoardTaskFormat
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O recurso **plannerBucketTaskBoardTaskFormat** representa as informações usadas para renderizar uma tarefa corretamente no modo de exibição Buckets do Quadro de Tarefas (um modo de exibição organizado por tarefas dentro dos buckets aos quais elas são atribuídas). Cada [tarefa](plannertask.md) terá um objeto **plannerBucketTaskBoardTaskFormat** associado a ela.
+O recurso **plannerBucketTaskBoardTaskFormat** representa as informações usadas para renderizar uma tarefa corretamente no modo de exibição buckets do quadro de tarefas (um modo de exibição organizado por tarefas dentro dos buckets aos quais são atribuídas). Cada [tarefa](plannertask.md) terá um objeto **plannerBucketTaskBoardTaskFormat** associado a ela.
 
 
 ## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Get plannerBucketTaskBoardTaskFormat](../api/plannerbuckettaskboardtaskformat-get.md) | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md) |Leia as propriedades e as relações do objeto **plannerBucketTaskBoardTaskFormat**.|
-|[Update](../api/plannerbuckettaskboardtaskformat-update.md) | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md)  |Atualize o objeto **plannerBucketTaskBoardTaskFormat**. |
+|[Obter plannerBucketTaskBoardTaskFormat](../api/plannerbuckettaskboardtaskformat-get.md) | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md) |Leia as propriedades e os relacionamentos do objeto **plannerBucketTaskBoardTaskFormat** .|
+|[Atualização](../api/plannerbuckettaskboardtaskformat-update.md) | [plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md)  |Atualize o objeto **plannerBucketTaskBoardTaskFormat** . |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|Cadeia de caracteres| Somente leitura. ID do recurso. É 28 caracteres longos e diferencia maiusculas de minúsculas. [Validação de formato](tasks-identifiers-disclaimer.md) é feita no serviço.|
-|orderHint|String|Dica usada para ordenar tarefas no modo de exibição Bucket do Quadro de Tarefas. O formato é definido como descrito [aqui](planner-order-hint-format.md).|
+|id|String| Somente leitura. ID do recurso. Tem 28 caracteres e diferencia maiúsculas de minúsculas. [Formatar validação](tasks-identifiers-disclaimer.md) é feito no serviço.|
+|orderHint|String|Dica usada para ordenar tarefas no modo de exibição de Bucket do quadro de tarefas. O formato é definido conforme descrito [aqui](planner-order-hint-format.md).|
 
 ## <a name="relationships"></a>Relações
-Nenhum
+Nenhuma
 
 
 ## <a name="json-representation"></a>Representação JSON

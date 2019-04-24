@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: d22e4be6d282ba7750b6c896b2592ea8b0b71a62
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30984034"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32453564"
 ---
 # <a name="create-windowsinformationprotectionapplockerfile"></a>Criar windowsInformationProtectionAppLockerFile
 

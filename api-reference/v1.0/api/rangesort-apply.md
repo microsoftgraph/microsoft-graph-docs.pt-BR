@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: be024f3eacbb4e2d1178ec7b82a8e8ca604aff60
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27967102"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32452703"
 ---
 # <a name="rangesort-apply"></a>RangeSort: apply
 
@@ -45,8 +45,8 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 |campos|Coleção WorkbookSortField|A lista de condições para a classificação.|
 |matchCase|booliano|Opcional. Define se o uso de maiúsculas ou minúsculas afeta a ordenação da cadeia de caracteres.|
 |hasHeaders|booliano|Opcional. Se o intervalo tem um cabeçalho.|
-|orientation|string|Opcional. Se a operação é classificando linhas ou colunas.  Os valores possíveis são: `Rows`, `Columns`.|
-|method|string|Opcional. O método de ordenação usado para caracteres chineses.  Os valores possíveis são: `PinYin`, `StrokeCount`.|
+|orientation|string|Opcional. Se a operação classifica linhas ou colunas.  Os valores possíveis são: `Rows`, `Columns`.|
+|method|string|Opcional. O método de ordenação usado pelos caracteres chineses.  Os valores possíveis são: `PinYin`, `StrokeCount`.|
 
 ## <a name="response"></a>Resposta
 

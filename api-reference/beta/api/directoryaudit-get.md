@@ -1,20 +1,20 @@
 ---
 title: Obter directoryAudit
-description: Fornece (ou obtém) um item específico de log de auditoria do Active Directory do Windows Azure. Inclui os logs de auditoria gerados por vários serviços dentro do Azure Active Directory como usuário, aplicativo, dispositivo e gerenciamento do grupo, privilegiado Identity Management, avaliações de acesso, termos de uso, proteção de identidade, gerenciamento de senhas (SSPR e Admin redefinições de senha ), Etc. de gerenciamento do grupo de auto-atendimento …
+description: Fornece (ou obtém) um item específico de log de auditoria do Azure Active Directory. Inclui os logs de auditoria gerados por vários serviços no Azure Active Directory como Usuário, Aplicativo, Dispositivo e Gerenciamento de Grupos, Privileged Identity Management, Avaliações de Acesso, Termos de Uso, Proteção de Identidade, Gerenciamento de Senha (redefinição de senhas SSPR e pelos administradores), Autoatendimento e Gerenciamento de Grupo etc...
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 43b478aed8ac6beb28d9db53d0c97c01b34f173a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27956315"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455111"
 ---
 # <a name="get-directoryaudit"></a>Obter directoryAudit
-Fornece (ou obtém) um item específico de log de auditoria do Active Directory do Windows Azure. Inclui os logs de auditoria gerados por vários serviços dentro do Azure Active Directory como usuário, aplicativo, dispositivo e gerenciamento do grupo, privilegiado Identity Management, avaliações de acesso, termos de uso, proteção de identidade, gerenciamento de senhas (SSPR e Admin redefinições de senha ), Etc. de gerenciamento do grupo de auto-atendimento …
+Fornece (ou obtém) um item específico de log de auditoria do Azure Active Directory. Inclui os logs de auditoria gerados por vários serviços no Azure Active Directory como Usuário, Aplicativo, Dispositivo e Gerenciamento de Grupos, Privileged Identity Management, Avaliações de Acesso, Termos de Uso, Proteção de Identidade, Gerenciamento de Senha (redefinição de senhas SSPR e pelos administradores), Autoatendimento e Gerenciamento de Grupo etc...
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -23,7 +23,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte   |
 |Aplicativo | AuditLog.Read.All | 
 
-Além disso, os aplicativos devem ser [registrado corretamente](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) para o Windows Azure AD.
+Além disso, os aplicativos devem ser [corretamente registrados](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) no Azure AD.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -31,7 +31,7 @@ Além disso, os aplicativos devem ser [registrado corretamente](https://docs.mic
 GET /auditLogs/directoryAudits/{id}
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte aos seguintes Parâmetros de consulta OData para ajudar a personalizar a resposta. Verifique [Os parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para como usar esses parâmetros.
+Este método dá suporte aos seguintes Parâmetros de Consulta OData para ajudar a personalizar a resposta. Verifique [parâmetros de consulta de OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) sobre como usar esses parâmetros.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
@@ -41,7 +41,7 @@ Este método dá suporte aos seguintes Parâmetros de consulta OData para ajudar
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` objeto response de código e [directoryAudit](../resources/directoryaudit.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [directoryAudit](../resources/directoryaudit.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
