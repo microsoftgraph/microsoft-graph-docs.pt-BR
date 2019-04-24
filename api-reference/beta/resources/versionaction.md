@@ -5,21 +5,21 @@ ms.date: 09/14/2017
 title: VersionAction
 localization_priority: Normal
 ms.openlocfilehash: c65b3cf021321a7e021c5fa4193abdcdce6c635a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520603"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32453853"
 ---
-# <a name="versionaction-resource-type"></a><span data-ttu-id="d17b3-102">Tipo de recurso VersionAction</span><span class="sxs-lookup"><span data-stu-id="d17b3-102">VersionAction resource type</span></span>
+# <a name="versionaction-resource-type"></a><span data-ttu-id="cfc30-102">Tipo de recurso VersionAction</span><span class="sxs-lookup"><span data-stu-id="cfc30-102">VersionAction resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="d17b3-103">A presença do recurso **VersionAction** em uma [**itemActivity**][activity] indica que a atividade fez uma nova versão a ser criada.</span><span class="sxs-lookup"><span data-stu-id="d17b3-103">The presence of the **VersionAction** resource on an [**itemActivity**][activity] indicates that the activity caused a new version to be created.</span></span>
+<span data-ttu-id="cfc30-103">A presença do recurso **VersionAction** em uma [**itemActivity**][activity] indica que a atividade fez uma nova versão a ser criada.</span><span class="sxs-lookup"><span data-stu-id="cfc30-103">The presence of the **VersionAction** resource on an [**itemActivity**][activity] indicates that the activity caused a new version to be created.</span></span>
 
 [activity]: itemactivity.md
 
-## <a name="json-representation"></a><span data-ttu-id="d17b3-104">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="d17b3-104">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="cfc30-104">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="cfc30-104">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -33,15 +33,15 @@ ms.locfileid: "29520603"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="d17b3-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="d17b3-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="cfc30-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="cfc30-105">Properties</span></span>
 
-| <span data-ttu-id="d17b3-106">Nome da propriedade</span><span class="sxs-lookup"><span data-stu-id="d17b3-106">Property name</span></span> | <span data-ttu-id="d17b3-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="d17b3-107">Type</span></span>   | <span data-ttu-id="d17b3-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="d17b3-108">Description</span></span>
+| <span data-ttu-id="cfc30-106">Nome da propriedade</span><span class="sxs-lookup"><span data-stu-id="cfc30-106">Property name</span></span> | <span data-ttu-id="cfc30-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="cfc30-107">Type</span></span>   | <span data-ttu-id="cfc30-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="cfc30-108">Description</span></span>
 |:--------------|:-------|:----------------------------------------------------
-| <span data-ttu-id="d17b3-109">newVersion</span><span class="sxs-lookup"><span data-stu-id="d17b3-109">newVersion</span></span>    | <span data-ttu-id="d17b3-110">string</span><span class="sxs-lookup"><span data-stu-id="d17b3-110">string</span></span> | <span data-ttu-id="d17b3-111">O nome da nova versão que foi criada por esta ação.</span><span class="sxs-lookup"><span data-stu-id="d17b3-111">The name of the new version that was created by this action.</span></span>
+| <span data-ttu-id="cfc30-109">newVersion</span><span class="sxs-lookup"><span data-stu-id="cfc30-109">newVersion</span></span>    | <span data-ttu-id="cfc30-110">string</span><span class="sxs-lookup"><span data-stu-id="cfc30-110">string</span></span> | <span data-ttu-id="cfc30-111">O nome da nova versão que foi criada por esta ação.</span><span class="sxs-lookup"><span data-stu-id="cfc30-111">The name of the new version that was created by this action.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="d17b3-112">Comentários</span><span class="sxs-lookup"><span data-stu-id="d17b3-112">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="cfc30-112">Comentários</span><span class="sxs-lookup"><span data-stu-id="cfc30-112">Remarks</span></span>
 
-<span data-ttu-id="d17b3-113">Registros de atividade de item atualmente só estão disponíveis no SharePoint e no OneDrive for Business.</span><span class="sxs-lookup"><span data-stu-id="d17b3-113">Item activity records are currently only available on SharePoint and OneDrive for Business.</span></span>
+<span data-ttu-id="cfc30-113">Registros de atividade de item atualmente só estão disponíveis no SharePoint e no OneDrive for Business.</span><span class="sxs-lookup"><span data-stu-id="cfc30-113">Item activity records are currently only available on SharePoint and OneDrive for Business.</span></span>
 
 <!--
 {

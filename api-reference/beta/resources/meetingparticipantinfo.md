@@ -1,32 +1,32 @@
 ---
-title: tipo de recurso de meetingParticipantInfo
-description: Informações sobre um participante em uma reunião.
+title: tipo de recurso meetingParticipantInfo
+description: Informações sobre um participante de uma reunião.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 1ba727344b1f653125a482b592e7d28c11d1d3d5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515024"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457113"
 ---
-# <a name="meetingparticipantinfo-resource-type"></a><span data-ttu-id="23764-103">tipo de recurso de meetingParticipantInfo</span><span class="sxs-lookup"><span data-stu-id="23764-103">meetingParticipantInfo resource type</span></span>
+# <a name="meetingparticipantinfo-resource-type"></a><span data-ttu-id="1b40d-103">tipo de recurso meetingParticipantInfo</span><span class="sxs-lookup"><span data-stu-id="1b40d-103">meetingParticipantInfo resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="23764-104">Informações sobre um participante em uma reunião.</span><span class="sxs-lookup"><span data-stu-id="23764-104">Information about a participant in a meeting.</span></span>
+<span data-ttu-id="1b40d-104">Informações sobre um participante de uma reunião.</span><span class="sxs-lookup"><span data-stu-id="1b40d-104">Information about a participant in a meeting.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="23764-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="23764-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="1b40d-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="1b40d-105">Properties</span></span>
 
-| <span data-ttu-id="23764-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="23764-106">Property</span></span>       | <span data-ttu-id="23764-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="23764-107">Type</span></span>                          | <span data-ttu-id="23764-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="23764-108">Description</span></span>                              |
+| <span data-ttu-id="1b40d-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="1b40d-106">Property</span></span>       | <span data-ttu-id="1b40d-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="1b40d-107">Type</span></span>                          | <span data-ttu-id="1b40d-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="1b40d-108">Description</span></span>                              |
 |:---------------|:------------------------------|:-----------------------------------------|
-| <span data-ttu-id="23764-109">[-Identity]</span><span class="sxs-lookup"><span data-stu-id="23764-109">identity</span></span>       | [<span data-ttu-id="23764-110">identitySet</span><span class="sxs-lookup"><span data-stu-id="23764-110">identitySet</span></span>](identityset.md) | <span data-ttu-id="23764-111">Informações de identidade do participante.</span><span class="sxs-lookup"><span data-stu-id="23764-111">Identity information of the participant.</span></span> |
-| <span data-ttu-id="23764-112">UPN</span><span class="sxs-lookup"><span data-stu-id="23764-112">upn</span></span>            | <span data-ttu-id="23764-113">String</span><span class="sxs-lookup"><span data-stu-id="23764-113">String</span></span>                        | <span data-ttu-id="23764-114">Nome principal de usuário do participante.</span><span class="sxs-lookup"><span data-stu-id="23764-114">User principal name of the participant.</span></span>  |
+| <span data-ttu-id="1b40d-109">ladrões</span><span class="sxs-lookup"><span data-stu-id="1b40d-109">identity</span></span>       | [<span data-ttu-id="1b40d-110">identitySet</span><span class="sxs-lookup"><span data-stu-id="1b40d-110">identitySet</span></span>](identityset.md) | <span data-ttu-id="1b40d-111">Informações de identidade do participante.</span><span class="sxs-lookup"><span data-stu-id="1b40d-111">Identity information of the participant.</span></span> |
+| <span data-ttu-id="1b40d-112">UPN</span><span class="sxs-lookup"><span data-stu-id="1b40d-112">upn</span></span>            | <span data-ttu-id="1b40d-113">String</span><span class="sxs-lookup"><span data-stu-id="1b40d-113">String</span></span>                        | <span data-ttu-id="1b40d-114">Nome principal do usuário do participante.</span><span class="sxs-lookup"><span data-stu-id="1b40d-114">User principal name of the participant.</span></span>  |
 
-## <a name="json-representation"></a><span data-ttu-id="23764-115">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="23764-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="1b40d-115">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="1b40d-115">JSON representation</span></span>
 
-<span data-ttu-id="23764-116">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="23764-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="1b40d-116">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="1b40d-116">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

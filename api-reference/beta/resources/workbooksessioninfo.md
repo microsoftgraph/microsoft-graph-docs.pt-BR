@@ -5,20 +5,20 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: a2975fdf58d0f1d3a72f1f76853125d0a98bb485
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642216"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32453280"
 ---
-# <a name="workbooksessioninfo-resource-type"></a><span data-ttu-id="79c14-103">Tipo de recurso workbookSessionInfo</span><span class="sxs-lookup"><span data-stu-id="79c14-103">workbookSessionInfo resource type</span></span>
+# <a name="workbooksessioninfo-resource-type"></a><span data-ttu-id="ce2b1-103">Tipo de recurso workbookSessionInfo</span><span class="sxs-lookup"><span data-stu-id="ce2b1-103">workbookSessionInfo resource type</span></span>
 
-<span data-ttu-id="79c14-104">Fornece informações sobre a sessão de pasta de trabalho.</span><span class="sxs-lookup"><span data-stu-id="79c14-104">Provides information about workbook session.</span></span>
+<span data-ttu-id="ce2b1-104">Fornece informações sobre a sessão de pasta de trabalho.</span><span class="sxs-lookup"><span data-stu-id="ce2b1-104">Provides information about workbook session.</span></span>
 
 
-## <a name="json-representation"></a><span data-ttu-id="79c14-105">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="79c14-105">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="ce2b1-105">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="ce2b1-105">JSON representation</span></span>
 
-<span data-ttu-id="79c14-106">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="79c14-106">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="ce2b1-106">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="ce2b1-106">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -33,10 +33,10 @@ ms.locfileid: "29642216"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="79c14-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="79c14-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="ce2b1-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="ce2b1-107">Properties</span></span>
 
-| <span data-ttu-id="79c14-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="79c14-108">Property</span></span> | <span data-ttu-id="79c14-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="79c14-109">Type</span></span>  | <span data-ttu-id="79c14-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="79c14-110">Description</span></span>                               |
+| <span data-ttu-id="ce2b1-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="ce2b1-108">Property</span></span> | <span data-ttu-id="ce2b1-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="ce2b1-109">Type</span></span>  | <span data-ttu-id="ce2b1-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="ce2b1-110">Description</span></span>                               |
 |:---------|:------|:------------------------------------------|
-| <span data-ttu-id="79c14-111">id</span><span class="sxs-lookup"><span data-stu-id="79c14-111">id</span></span>  | <span data-ttu-id="79c14-112">string</span><span class="sxs-lookup"><span data-stu-id="79c14-112">string</span></span> | <span data-ttu-id="79c14-113">ID da sessão de pasta de trabalho.</span><span class="sxs-lookup"><span data-stu-id="79c14-113">Id of the workbook session.</span></span> |
-| <span data-ttu-id="79c14-114">persistChanges</span><span class="sxs-lookup"><span data-stu-id="79c14-114">persistChanges</span></span> | <span data-ttu-id="79c14-115">string</span><span class="sxs-lookup"><span data-stu-id="79c14-115">string</span></span> |  <span data-ttu-id="79c14-116">`true` para sessão persistente.</span><span class="sxs-lookup"><span data-stu-id="79c14-116">`true` for persistent session.</span></span> <span data-ttu-id="79c14-117">`false` para sessão não persistente (modo de exibição)</span><span class="sxs-lookup"><span data-stu-id="79c14-117">`false` for non-persistent session (view mode)</span></span> |
+| <span data-ttu-id="ce2b1-111">id</span><span class="sxs-lookup"><span data-stu-id="ce2b1-111">id</span></span>  | <span data-ttu-id="ce2b1-112">string</span><span class="sxs-lookup"><span data-stu-id="ce2b1-112">string</span></span> | <span data-ttu-id="ce2b1-113">ID da sessão de pasta de trabalho.</span><span class="sxs-lookup"><span data-stu-id="ce2b1-113">Id of the workbook session.</span></span> |
+| <span data-ttu-id="ce2b1-114">persistChanges</span><span class="sxs-lookup"><span data-stu-id="ce2b1-114">persistChanges</span></span> | <span data-ttu-id="ce2b1-115">string</span><span class="sxs-lookup"><span data-stu-id="ce2b1-115">string</span></span> |  <span data-ttu-id="ce2b1-116">`true` para sessão persistente.</span><span class="sxs-lookup"><span data-stu-id="ce2b1-116">`true` for persistent session.</span></span> <span data-ttu-id="ce2b1-117">`false` para sessão não persistente (modo de exibição)</span><span class="sxs-lookup"><span data-stu-id="ce2b1-117">`false` for non-persistent session (view mode)</span></span> |
 

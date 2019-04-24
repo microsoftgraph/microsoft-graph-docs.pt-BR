@@ -1,55 +1,55 @@
 ---
-title: Lista directorySettingTemplates
-description: A definição de modelos de diretório representa um conjunto de modelos de configurações de diretório, do qual directory configurações podem ser criadas e usadas em um locatário.  Esta operação recupera a lista de objetos directorySettingTemplates disponíveis.
+title: Listar directorySettingTemplates
+description: Modelos de configuração de diretório representa um conjunto de modelos de configurações de diretório, de onde as configurações de diretório podem ser criadas e usadas dentro de um locatário.  Esta operação recupera a lista de objetos directorySettingTemplates disponíveis.
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 1cd0112bd0d9f98f969832427d497d6e9ba2aa14
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29530101"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454768"
 ---
-# <a name="list-directorysettingtemplates"></a><span data-ttu-id="3dec5-104">Lista directorySettingTemplates</span><span class="sxs-lookup"><span data-stu-id="3dec5-104">List directorySettingTemplates</span></span>
+# <a name="list-directorysettingtemplates"></a><span data-ttu-id="f39ee-104">Listar directorySettingTemplates</span><span class="sxs-lookup"><span data-stu-id="f39ee-104">List directorySettingTemplates</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="3dec5-105">A definição de modelos de diretório representa um conjunto de modelos de configurações de diretório, do qual directory configurações podem ser criadas e usadas em um locatário.</span><span class="sxs-lookup"><span data-stu-id="3dec5-105">Directory setting templates represents a set of templates of directory settings, from which directory settings may be created and used within a tenant.</span></span>  <span data-ttu-id="3dec5-106">Esta operação recupera a lista de objetos directorySettingTemplates disponíveis.</span><span class="sxs-lookup"><span data-stu-id="3dec5-106">This operation retrieves the list of available directorySettingTemplates objects.</span></span>
+<span data-ttu-id="f39ee-105">Modelos de configuração de diretório representa um conjunto de modelos de configurações de diretório, de onde as configurações de diretório podem ser criadas e usadas dentro de um locatário.</span><span class="sxs-lookup"><span data-stu-id="f39ee-105">Directory setting templates represents a set of templates of directory settings, from which directory settings may be created and used within a tenant.</span></span>  <span data-ttu-id="f39ee-106">Esta operação recupera a lista de objetos directorySettingTemplates disponíveis.</span><span class="sxs-lookup"><span data-stu-id="f39ee-106">This operation retrieves the list of available directorySettingTemplates objects.</span></span>
 
-> <span data-ttu-id="3dec5-107">**Observação**: A versão de /beta desse API é só se aplica aos grupos.</span><span class="sxs-lookup"><span data-stu-id="3dec5-107">**Note**: The /beta version of this API is only applies to groups.</span></span> <span data-ttu-id="3dec5-108">A versão de /v1.0 desse API foi renomeada para *groupSettingTemplate de lista*.</span><span class="sxs-lookup"><span data-stu-id="3dec5-108">The /v1.0 version of this API has been renamed to *List groupSettingTemplate*.</span></span>
+> <span data-ttu-id="f39ee-107">**Observação**: a versão do/beta dessa API só se aplica aos grupos.</span><span class="sxs-lookup"><span data-stu-id="f39ee-107">**Note**: The /beta version of this API is only applies to groups.</span></span> <span data-ttu-id="f39ee-108">A versão/v1.0 dessa API foi renomeada para listar *groupSettingTemplate*.</span><span class="sxs-lookup"><span data-stu-id="f39ee-108">The /v1.0 version of this API has been renamed to *List groupSettingTemplate*.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="3dec5-109">Permissões</span><span class="sxs-lookup"><span data-stu-id="3dec5-109">Permissions</span></span>
-<span data-ttu-id="3dec5-p104">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3dec5-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="f39ee-109">Permissões</span><span class="sxs-lookup"><span data-stu-id="f39ee-109">Permissions</span></span>
+<span data-ttu-id="f39ee-p104">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f39ee-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="3dec5-112">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="3dec5-112">Permission type</span></span>      | <span data-ttu-id="3dec5-113">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="3dec5-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="f39ee-112">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="f39ee-112">Permission type</span></span>      | <span data-ttu-id="f39ee-113">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="f39ee-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="3dec5-114">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="3dec5-114">Delegated (work or school account)</span></span> | <span data-ttu-id="3dec5-115">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="3dec5-115">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="3dec5-116">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="3dec5-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3dec5-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="3dec5-117">Not supported.</span></span>    |
-|<span data-ttu-id="3dec5-118">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="3dec5-118">Application</span></span> | <span data-ttu-id="3dec5-119">Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3dec5-119">Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="f39ee-114">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="f39ee-114">Delegated (work or school account)</span></span> | <span data-ttu-id="f39ee-115">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="f39ee-115">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="f39ee-116">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="f39ee-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f39ee-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="f39ee-117">Not supported.</span></span>    |
+|<span data-ttu-id="f39ee-118">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="f39ee-118">Application</span></span> | <span data-ttu-id="f39ee-119">Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f39ee-119">Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="3dec5-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="3dec5-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f39ee-120">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="f39ee-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /directorySettingTemplates
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="3dec5-121">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="3dec5-121">Optional query parameters</span></span>
-<span data-ttu-id="3dec5-122">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="3dec5-122">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="f39ee-121">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="f39ee-121">Optional query parameters</span></span>
+<span data-ttu-id="f39ee-122">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="f39ee-122">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="3dec5-123">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="3dec5-123">Request headers</span></span>
-| <span data-ttu-id="3dec5-124">Nome</span><span class="sxs-lookup"><span data-stu-id="3dec5-124">Name</span></span>      |<span data-ttu-id="3dec5-125">Descrição</span><span class="sxs-lookup"><span data-stu-id="3dec5-125">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="f39ee-123">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="f39ee-123">Request headers</span></span>
+| <span data-ttu-id="f39ee-124">Nome</span><span class="sxs-lookup"><span data-stu-id="f39ee-124">Name</span></span>      |<span data-ttu-id="f39ee-125">Descrição</span><span class="sxs-lookup"><span data-stu-id="f39ee-125">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="3dec5-126">Autorização</span><span class="sxs-lookup"><span data-stu-id="3dec5-126">Authorization</span></span>  | <span data-ttu-id="3dec5-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="3dec5-p105">Bearer {token}. Required.</span></span>|
+| <span data-ttu-id="f39ee-126">Autorização</span><span class="sxs-lookup"><span data-stu-id="f39ee-126">Authorization</span></span>  | <span data-ttu-id="f39ee-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="f39ee-p105">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="3dec5-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="3dec5-129">Request body</span></span>
-<span data-ttu-id="3dec5-130">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="3dec5-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f39ee-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="f39ee-129">Request body</span></span>
+<span data-ttu-id="f39ee-130">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="f39ee-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="3dec5-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="3dec5-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f39ee-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="f39ee-131">Response</span></span>
 
-<span data-ttu-id="3dec5-132">Se tiver êxito, este método retornará um `200 OK` código de resposta e a coleção de objetos [directorySettingTemplate](../resources/directorysettingtemplate.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="3dec5-132">If successful, this method returns a `200 OK` response code and collection of [directorySettingTemplate](../resources/directorysettingtemplate.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="3dec5-133">Exemplo</span><span class="sxs-lookup"><span data-stu-id="3dec5-133">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="3dec5-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="3dec5-134">Request</span></span>
-<span data-ttu-id="3dec5-135">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="3dec5-135">Here is an example of the request.</span></span>
+<span data-ttu-id="f39ee-132">Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [directorySettingTemplate](../resources/directorysettingtemplate.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="f39ee-132">If successful, this method returns a `200 OK` response code and collection of [directorySettingTemplate](../resources/directorysettingtemplate.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="f39ee-133">Exemplo</span><span class="sxs-lookup"><span data-stu-id="f39ee-133">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="f39ee-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="f39ee-134">Request</span></span>
+<span data-ttu-id="f39ee-135">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="f39ee-135">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_directorysettingtemplates"
@@ -57,8 +57,8 @@ GET /directorySettingTemplates
 ```http
 GET https://graph.microsoft.com/beta/directorySettingTemplates
 ```
-##### <a name="response"></a><span data-ttu-id="3dec5-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="3dec5-136">Response</span></span>
-<span data-ttu-id="3dec5-p106">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="3dec5-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="f39ee-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="f39ee-136">Response</span></span>
+<span data-ttu-id="f39ee-p106">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="f39ee-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

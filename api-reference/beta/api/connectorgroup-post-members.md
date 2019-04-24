@@ -1,48 +1,48 @@
 ---
-title: Adicionar um conector para connectorGroup
-description: Use essa API para adicionar um conector a um connectorGroup.
+title: Adicionar conector ao conector
+description: Use esta API para adicionar um conector a um conector.
 localization_priority: Normal
 ms.openlocfilehash: 8df6fdda80007217164f8ae2f21a1d3f8d667d23
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518251"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455923"
 ---
-# <a name="add-connector-to-connectorgroup"></a><span data-ttu-id="e2370-103">Adicionar um conector para connectorGroup</span><span class="sxs-lookup"><span data-stu-id="e2370-103">Add connector to connectorGroup</span></span>
+# <a name="add-connector-to-connectorgroup"></a><span data-ttu-id="febe6-103">Adicionar conector ao conector</span><span class="sxs-lookup"><span data-stu-id="febe6-103">Add connector to connectorGroup</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e2370-104">Use essa API para adicionar um conector a um connectorGroup.</span><span class="sxs-lookup"><span data-stu-id="e2370-104">Use this API to add a connector to a connectorGroup.</span></span>
-## <a name="permissions"></a><span data-ttu-id="e2370-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="e2370-105">Permissions</span></span>
-<span data-ttu-id="e2370-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e2370-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="febe6-104">Use esta API para adicionar um conector a um conector.</span><span class="sxs-lookup"><span data-stu-id="febe6-104">Use this API to add a connector to a connectorGroup.</span></span>
+## <a name="permissions"></a><span data-ttu-id="febe6-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="febe6-105">Permissions</span></span>
+<span data-ttu-id="febe6-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="febe6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e2370-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="e2370-108">Permission type</span></span>      | <span data-ttu-id="e2370-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="e2370-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="febe6-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="febe6-108">Permission type</span></span>      | <span data-ttu-id="febe6-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="febe6-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="e2370-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="e2370-110">Delegated (work or school account)</span></span> | <span data-ttu-id="e2370-111">Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="e2370-111">Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="e2370-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="e2370-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e2370-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="e2370-113">Not supported.</span></span>    |
-|<span data-ttu-id="e2370-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="e2370-114">Application</span></span> | <span data-ttu-id="e2370-115">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e2370-115">Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="febe6-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="febe6-110">Delegated (work or school account)</span></span> | <span data-ttu-id="febe6-111">Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="febe6-111">Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="febe6-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="febe6-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="febe6-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="febe6-113">Not supported.</span></span>    |
+|<span data-ttu-id="febe6-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="febe6-114">Application</span></span> | <span data-ttu-id="febe6-115">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="febe6-115">Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e2370-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="e2370-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="febe6-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="febe6-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /connectorGroups/{id}/members/$ref
 ```
-## <a name="request-headers"></a><span data-ttu-id="e2370-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="e2370-117">Request headers</span></span>
-| <span data-ttu-id="e2370-118">Nome</span><span class="sxs-lookup"><span data-stu-id="e2370-118">Name</span></span>       | <span data-ttu-id="e2370-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="e2370-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="febe6-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="febe6-117">Request headers</span></span>
+| <span data-ttu-id="febe6-118">Nome</span><span class="sxs-lookup"><span data-stu-id="febe6-118">Name</span></span>       | <span data-ttu-id="febe6-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="febe6-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="e2370-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="e2370-120">Authorization</span></span>  | <span data-ttu-id="e2370-121"> de portador</span><span class="sxs-lookup"><span data-stu-id="e2370-121">Bearer.</span></span> <span data-ttu-id="e2370-122">Obrigatório</span><span class="sxs-lookup"><span data-stu-id="e2370-122">Required</span></span>|
+| <span data-ttu-id="febe6-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="febe6-120">Authorization</span></span>  | <span data-ttu-id="febe6-121">Portador.</span><span class="sxs-lookup"><span data-stu-id="febe6-121">Bearer.</span></span> <span data-ttu-id="febe6-122">Obrigatório</span><span class="sxs-lookup"><span data-stu-id="febe6-122">Required</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="e2370-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="e2370-123">Request body</span></span>
-<span data-ttu-id="e2370-124">No corpo da solicitação, fornece uma representação JSON de um link para um objeto de [conector](../resources/connector.md) .</span><span class="sxs-lookup"><span data-stu-id="e2370-124">In the request body, supply a JSON representation of a link to a   [connector](../resources/connector.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="febe6-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="febe6-123">Request body</span></span>
+<span data-ttu-id="febe6-124">No corpo da solicitação, forneça uma representação JSON de um link para um objeto [Connector](../resources/connector.md) .</span><span class="sxs-lookup"><span data-stu-id="febe6-124">In the request body, supply a JSON representation of a link to a   [connector](../resources/connector.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="e2370-125">Resposta</span><span class="sxs-lookup"><span data-stu-id="e2370-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="febe6-125">Resposta</span><span class="sxs-lookup"><span data-stu-id="febe6-125">Response</span></span>
 
-<span data-ttu-id="e2370-126">Se tiver êxito, este método retornará `201 Created` objeto de [conector](../resources/connector.md) e o código de resposta no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="e2370-126">If successful, this method returns `201 Created` response code and [connector](../resources/connector.md) object in the response body.</span></span>
+<span data-ttu-id="febe6-126">Se bem-sucedido, este método retorna `201 Created` o código de resposta e o objeto [Connector](../resources/connector.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="febe6-126">If successful, this method returns `201 Created` response code and [connector](../resources/connector.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e2370-127">Exemplo</span><span class="sxs-lookup"><span data-stu-id="e2370-127">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="e2370-128">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e2370-128">Request</span></span>
-<span data-ttu-id="e2370-129">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="e2370-129">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="febe6-127">Exemplo</span><span class="sxs-lookup"><span data-stu-id="febe6-127">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="febe6-128">Solicitação</span><span class="sxs-lookup"><span data-stu-id="febe6-128">Request</span></span>
+<span data-ttu-id="febe6-129">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="febe6-129">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_connector_from_connectorgroup"
@@ -56,9 +56,9 @@ Content-length: 104
   "@odata.id": "https://graph.microsoft.com/{ver}/connector/{id}"
 }
 ```
-<span data-ttu-id="e2370-130">No corpo da solicitação, fornece uma representação JSON de um link para um objeto de [conector](../resources/connector.md) .</span><span class="sxs-lookup"><span data-stu-id="e2370-130">In the request body, supply a JSON representation of a link to a  [connector](../resources/connector.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="e2370-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="e2370-131">Response</span></span>
-<span data-ttu-id="e2370-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="e2370-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="febe6-130">No corpo da solicitação, forneça uma representação JSON de um link para um objeto [Connector](../resources/connector.md) .</span><span class="sxs-lookup"><span data-stu-id="febe6-130">In the request body, supply a JSON representation of a link to a  [connector](../resources/connector.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="febe6-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="febe6-131">Response</span></span>
+<span data-ttu-id="febe6-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="febe6-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
