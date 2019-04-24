@@ -1,45 +1,43 @@
 ---
 title: Obter calendário
-description: 'Obtenha as propriedades e as relações de um objeto calendar. O calendário pode ser uma para um usuário, '
-localization_priority: Normal
+description: 'Obtenha as propriedades e as relações de um objeto calendar. O calendário pode ser um para um usuário, '
+localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 4f277fa6cd9621ddcf3a5374594ede7a2417334a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520491"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462085"
 ---
-# <a name="get-calendar"></a><span data-ttu-id="cf072-104">Obter calendário</span><span class="sxs-lookup"><span data-stu-id="cf072-104">Get calendar</span></span>
+# <a name="get-calendar"></a><span data-ttu-id="3018f-104">Obter calendário</span><span class="sxs-lookup"><span data-stu-id="3018f-104">Get calendar</span></span>
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+<span data-ttu-id="3018f-105">Obtenha as propriedades e as relações de um objeto [calendar](../resources/calendar.md).</span><span class="sxs-lookup"><span data-stu-id="3018f-105">Get the properties and relationships of a [calendar](../resources/calendar.md) object.</span></span> <span data-ttu-id="3018f-106">O calendário pode ser um para um [usuário](../resources/user.md) ou o calendário padrão de um [grupo](../resources/group.md) do Office 365.</span><span class="sxs-lookup"><span data-stu-id="3018f-106">The calendar can be one for a [user](../resources/user.md), or the default calendar of an Office 365 [group](../resources/group.md).</span></span>
 
-<span data-ttu-id="cf072-105">Obtenha as propriedades e as relações de um objeto [calendar](../resources/calendar.md).</span><span class="sxs-lookup"><span data-stu-id="cf072-105">Get the properties and relationships of a [calendar](../resources/calendar.md) object.</span></span> <span data-ttu-id="cf072-106">O calendário pode ser um para um [usuário](../resources/user.md) ou o calendário padrão de um [grupo](../resources/group.md) do Office 365.</span><span class="sxs-lookup"><span data-stu-id="cf072-106">The calendar can be one for a [user](../resources/user.md), or the default calendar of an Office 365 [group](../resources/group.md).</span></span>
+<span data-ttu-id="3018f-107">Há dois cenários em que um aplicativo pode obter o calendário de outro usuário:</span><span class="sxs-lookup"><span data-stu-id="3018f-107">There are two scenarios where an app can get another user's calendar:</span></span>
 
-<span data-ttu-id="cf072-107">Há dois cenários onde um aplicativo pode obter o calendário de outro usuário:</span><span class="sxs-lookup"><span data-stu-id="cf072-107">There are two scenarios where an app can get another user's calendar:</span></span>
+* <span data-ttu-id="3018f-108">Se o aplicativo tem permissões de aplicativo ou</span><span class="sxs-lookup"><span data-stu-id="3018f-108">If the app has application permissions, or,</span></span>
+* <span data-ttu-id="3018f-109">Se o aplicativo tem as [permissões](#permissions) delegadas apropriadas de um usuário e o outro usuário compartilhou um calendário com esse usuário ou concedeu acesso delegado ao usuário.</span><span class="sxs-lookup"><span data-stu-id="3018f-109">If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a calendar with that user, or, has given delegated access to that user.</span></span> <span data-ttu-id="3018f-110">Confira [detalhes e um exemplo](/graph/outlook-get-shared-events-calendars).</span><span class="sxs-lookup"><span data-stu-id="3018f-110">See [details and an example](/graph/outlook-get-shared-events-calendars).</span></span>
 
-* <span data-ttu-id="cf072-108">Se o aplicativo tem permissões de aplicativo, ou,</span><span class="sxs-lookup"><span data-stu-id="cf072-108">If the app has application permissions, or,</span></span>
-* <span data-ttu-id="cf072-109">Se o aplicativo tiver apropriada [permissões](#permissions) delegadas de um usuário, e outro usuário compartilhou um calendário com que o usuário ou, tem acesso delegado a esse usuário.</span><span class="sxs-lookup"><span data-stu-id="cf072-109">If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a calendar with that user, or, has given delegated access to that user.</span></span> <span data-ttu-id="cf072-110">Consulte os [detalhes e um exemplo](/graph/outlook-get-shared-events-calendars).</span><span class="sxs-lookup"><span data-stu-id="cf072-110">See [details and an example](/graph/outlook-get-shared-events-calendars).</span></span>
+## <a name="permissions"></a><span data-ttu-id="3018f-111">Permissões</span><span class="sxs-lookup"><span data-stu-id="3018f-111">Permissions</span></span>
+<span data-ttu-id="3018f-p104">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3018f-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-
-## <a name="permissions"></a><span data-ttu-id="cf072-111">Permissões</span><span class="sxs-lookup"><span data-stu-id="cf072-111">Permissions</span></span>
-<span data-ttu-id="cf072-p104">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="cf072-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
-
-|<span data-ttu-id="cf072-114">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="cf072-114">Permission type</span></span>      | <span data-ttu-id="cf072-115">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="cf072-115">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="3018f-114">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="3018f-114">Permission type</span></span>      | <span data-ttu-id="3018f-115">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="3018f-115">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="cf072-116">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="cf072-116">Delegated (work or school account)</span></span> | <span data-ttu-id="cf072-117">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="cf072-117">Calendars.Read</span></span>    |
-|<span data-ttu-id="cf072-118">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="cf072-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cf072-119">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="cf072-119">Calendars.Read</span></span>    |
-|<span data-ttu-id="cf072-120">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="cf072-120">Application</span></span> | <span data-ttu-id="cf072-121">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="cf072-121">Calendars.Read</span></span> |
+|<span data-ttu-id="3018f-116">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="3018f-116">Delegated (work or school account)</span></span> | <span data-ttu-id="3018f-117">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="3018f-117">Calendars.Read</span></span>    |
+|<span data-ttu-id="3018f-118">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="3018f-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3018f-119">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="3018f-119">Calendars.Read</span></span>    |
+|<span data-ttu-id="3018f-120">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="3018f-120">Application</span></span> | <span data-ttu-id="3018f-121">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="3018f-121">Calendars.Read</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="cf072-122">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="cf072-122">HTTP request</span></span>
-<span data-ttu-id="cf072-123"><!-- { "blockType": "ignored" } -->Um usuário ou do grupo padrão [calendário](../resources/calendar.md).</span><span class="sxs-lookup"><span data-stu-id="cf072-123"><!-- { "blockType": "ignored" } --> A user's or group's default [calendar](../resources/calendar.md).</span></span>
+## <a name="http-request"></a><span data-ttu-id="3018f-122">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="3018f-122">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+<span data-ttu-id="3018f-123">Um [calendar](../resources/calendar.md) padrão de um usuário ou grupo.</span><span class="sxs-lookup"><span data-stu-id="3018f-123">A user's or group's default [calendar](../resources/calendar.md).</span></span>
 ```http
 GET /me/calendar
 GET /users/{id | userPrincipalName}/calendar
 GET /groups/{id}/calendar
 ```
-<span data-ttu-id="cf072-124">Um [calendar](../resources/calendar.md) de um usuário em um [calendarGroup](../resources/calendargroup.md) padrão.</span><span class="sxs-lookup"><span data-stu-id="cf072-124">A user's [calendar](../resources/calendar.md) in the default [calendarGroup](../resources/calendargroup.md).</span></span>
+<span data-ttu-id="3018f-124">Um [calendar](../resources/calendar.md) de um usuário em um [calendarGroup](../resources/calendargroup.md) padrão.</span><span class="sxs-lookup"><span data-stu-id="3018f-124">A user's [calendar](../resources/calendar.md) in the default [calendarGroup](../resources/calendargroup.md).</span></span>
 ```http
 GET /me/calendars/{id}
 GET /users/{id | userPrincipalName}/calendars/{id}
@@ -47,38 +45,36 @@ GET /users/{id | userPrincipalName}/calendars/{id}
 GET /me/calendarGroup/calendars/{id}
 GET /users/{id | userPrincipalName}/calendarGroup/calendars/{id}
 ```
-<span data-ttu-id="cf072-125">Um [calendar](../resources/calendar.md) de um usuário em um [calendarGroup](../resources/calendargroup.md) específico.</span><span class="sxs-lookup"><span data-stu-id="cf072-125">A user's [calendar](../resources/calendar.md) in a specific [calendarGroup](../resources/calendargroup.md).</span></span>
+<span data-ttu-id="3018f-125">Um [calendar](../resources/calendar.md) de um usuário em um [calendarGroup](../resources/calendargroup.md) específico.</span><span class="sxs-lookup"><span data-stu-id="3018f-125">A user's [calendar](../resources/calendar.md) in a specific [calendarGroup](../resources/calendargroup.md).</span></span>
 ```http
 GET /me/calendarGroups/{id}/calendars/{id}
 GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="cf072-126">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="cf072-126">Optional query parameters</span></span>
-<span data-ttu-id="cf072-127">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="cf072-127">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="cf072-128">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="cf072-128">Request headers</span></span>
-| <span data-ttu-id="cf072-129">Nome</span><span class="sxs-lookup"><span data-stu-id="cf072-129">Name</span></span>       | <span data-ttu-id="cf072-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="cf072-130">Type</span></span> | <span data-ttu-id="cf072-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="cf072-131">Description</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="3018f-126">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="3018f-126">Optional query parameters</span></span>
+<span data-ttu-id="3018f-127">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="3018f-127">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="3018f-128">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="3018f-128">Request headers</span></span>
+| <span data-ttu-id="3018f-129">Nome</span><span class="sxs-lookup"><span data-stu-id="3018f-129">Name</span></span>       | <span data-ttu-id="3018f-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="3018f-130">Type</span></span> | <span data-ttu-id="3018f-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="3018f-131">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="cf072-132">Autorização</span><span class="sxs-lookup"><span data-stu-id="cf072-132">Authorization</span></span>  | <span data-ttu-id="cf072-133">string</span><span class="sxs-lookup"><span data-stu-id="cf072-133">string</span></span>  | <span data-ttu-id="cf072-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="cf072-p105">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="3018f-132">Autorização</span><span class="sxs-lookup"><span data-stu-id="3018f-132">Authorization</span></span>  | <span data-ttu-id="3018f-133">string</span><span class="sxs-lookup"><span data-stu-id="3018f-133">string</span></span>  | <span data-ttu-id="3018f-p105">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="3018f-p105">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="cf072-136">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="cf072-136">Request body</span></span>
-<span data-ttu-id="cf072-137">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="cf072-137">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="3018f-136">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="3018f-136">Request body</span></span>
+<span data-ttu-id="3018f-137">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="3018f-137">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="cf072-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="cf072-138">Response</span></span>
+## <a name="response"></a><span data-ttu-id="3018f-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="3018f-138">Response</span></span>
 
-<span data-ttu-id="cf072-139">Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [calendar](../resources/calendar.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="cf072-139">If successful, this method returns a `200 OK` response code and [calendar](../resources/calendar.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="cf072-140">Exemplo</span><span class="sxs-lookup"><span data-stu-id="cf072-140">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="cf072-141">Solicitação</span><span class="sxs-lookup"><span data-stu-id="cf072-141">Request</span></span>
-<span data-ttu-id="cf072-142">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="cf072-142">Here is an example of the request.</span></span>
-
+<span data-ttu-id="3018f-139">Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [calendar](../resources/calendar.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="3018f-139">If successful, this method returns a `200 OK` response code and [calendar](../resources/calendar.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="3018f-140">Exemplo</span><span class="sxs-lookup"><span data-stu-id="3018f-140">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="3018f-141">Solicitação</span><span class="sxs-lookup"><span data-stu-id="3018f-141">Request</span></span>
+<span data-ttu-id="3018f-142">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="3018f-142">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_calendar"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/calendar
+GET https://graph.microsoft.com/v1.0/me/calendar
 ```
-
-##### <a name="response"></a><span data-ttu-id="cf072-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="cf072-143">Response</span></span>
-<span data-ttu-id="cf072-p106">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="cf072-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="3018f-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="3018f-143">Response</span></span>
+<span data-ttu-id="3018f-p106">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="3018f-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -89,38 +85,28 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#me/calendars/$entity",
-    "@odata.id": "https://graph.microsoft.com/beta/users('ddfcd489-628b-40d7-b48b-57002df800e5@1717622f-1d94-4d0c-9d74-709fad664b77')/calendars('AAMkAGI2TGuLAAA=')",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#me/calendars/$entity",
+    "@odata.id": "https://graph.microsoft.com/v1.0/users('ddfcd489-628b-40d7-b48b-57002df800e5@1717622f-1d94-4d0c-9d74-709fad664b77')/calendars('AAMkAGI2TGuLAAA=')",
     "id": "AAMkAGI2TGuLAAA=",
     "name": "Calendar",
     "color": "auto",
-    "isDefaultCalendar": false,
     "changeKey": "nfZyf7VcrEKLNoU37KWlkQAAA0x0+w==",
     "canShare":true,
     "canViewPrivateItems":true,
-    "hexColor": "",
-    "isShared":false,
-    "isSharedWithMe":false,
     "canEdit":true,
     "owner":{
         "name":"Samantha Booth",
         "address":"samanthab@adatum.onmicrosoft.com"
     }
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Get calendar",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/calendar-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

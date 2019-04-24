@@ -1,61 +1,61 @@
 ---
 title: Criar chamada
-description: Crie uma nova chamada.
+description: Criar uma nova chamada.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 52255948a1d375871722a9af1aed8336844ac1bc
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643570"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459049"
 ---
-# <a name="create-call"></a><span data-ttu-id="f3b9b-103">Criar chamada</span><span class="sxs-lookup"><span data-stu-id="f3b9b-103">Create call</span></span>
+# <a name="create-call"></a><span data-ttu-id="56fba-103">Criar chamada</span><span class="sxs-lookup"><span data-stu-id="56fba-103">Create call</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f3b9b-104">Crie uma nova chamada.</span><span class="sxs-lookup"><span data-stu-id="f3b9b-104">Create a new call.</span></span>
+<span data-ttu-id="56fba-104">Criar uma nova chamada.</span><span class="sxs-lookup"><span data-stu-id="56fba-104">Create a new call.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="f3b9b-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="f3b9b-105">Permissions</span></span>
-<span data-ttu-id="f3b9b-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f3b9b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="56fba-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="56fba-105">Permissions</span></span>
+<span data-ttu-id="56fba-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="56fba-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="f3b9b-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="f3b9b-108">Permission type</span></span>                        | <span data-ttu-id="f3b9b-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="f3b9b-109">Permissions (from least to most privileged)</span></span>                                             |
+| <span data-ttu-id="56fba-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="56fba-108">Permission type</span></span>                        | <span data-ttu-id="56fba-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="56fba-109">Permissions (from least to most privileged)</span></span>                                             |
 |:---------------------------------------|:----------------------------------------------------------------------------------------|
-| <span data-ttu-id="f3b9b-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="f3b9b-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="f3b9b-111">Não suportado</span><span class="sxs-lookup"><span data-stu-id="f3b9b-111">Not Supported</span></span>                                                                           |
-| <span data-ttu-id="f3b9b-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="f3b9b-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f3b9b-113">Não suportado</span><span class="sxs-lookup"><span data-stu-id="f3b9b-113">Not Supported</span></span>                                                                           |
-| <span data-ttu-id="f3b9b-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="f3b9b-114">Application</span></span>                            | <span data-ttu-id="f3b9b-115">Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All</span><span class="sxs-lookup"><span data-stu-id="f3b9b-115">Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All</span></span> |
+| <span data-ttu-id="56fba-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="56fba-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="56fba-111">Não Suportado</span><span class="sxs-lookup"><span data-stu-id="56fba-111">Not Supported</span></span>                                                                           |
+| <span data-ttu-id="56fba-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="56fba-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="56fba-113">Não suportado</span><span class="sxs-lookup"><span data-stu-id="56fba-113">Not Supported</span></span>                                                                           |
+| <span data-ttu-id="56fba-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="56fba-114">Application</span></span>                            | <span data-ttu-id="56fba-115">Calls. JoinGroupCallsasGuest. All, calls. JoinGroupCalls. All, calls. initiate. All, calls. InitiateGroupCalls. All</span><span class="sxs-lookup"><span data-stu-id="56fba-115">Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All</span></span> |
 
-> <span data-ttu-id="f3b9b-116">**Observação:** Para uma chamada com a mídia do aplicativo hospedado, você precisa ter a permissão de Calls.AccessMedia.All com uma das permissões listadas na tabela anterior.</span><span class="sxs-lookup"><span data-stu-id="f3b9b-116">**Note:** For a call with app hosted media, you need the Calls.AccessMedia.All permission with one of the permissions listed in the previous table.</span></span>
+> <span data-ttu-id="56fba-116">**Observação:** Para uma chamada com mídia hospedada por aplicativo, você precisará da permissão calls. AccessMedia. All com uma das permissões listadas na tabela anterior.</span><span class="sxs-lookup"><span data-stu-id="56fba-116">**Note:** For a call with app hosted media, you need the Calls.AccessMedia.All permission with one of the permissions listed in the previous table.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="f3b9b-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="f3b9b-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="56fba-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="56fba-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls
 POST /applications/{id}/calls
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="f3b9b-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="f3b9b-118">Request headers</span></span>
-| <span data-ttu-id="f3b9b-119">Nome</span><span class="sxs-lookup"><span data-stu-id="f3b9b-119">Name</span></span>          | <span data-ttu-id="f3b9b-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="f3b9b-120">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="56fba-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="56fba-118">Request headers</span></span>
+| <span data-ttu-id="56fba-119">Nome</span><span class="sxs-lookup"><span data-stu-id="56fba-119">Name</span></span>          | <span data-ttu-id="56fba-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="56fba-120">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="f3b9b-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="f3b9b-121">Authorization</span></span> | <span data-ttu-id="f3b9b-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="f3b9b-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="56fba-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="56fba-121">Authorization</span></span> | <span data-ttu-id="56fba-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="56fba-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="f3b9b-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="f3b9b-124">Request body</span></span>
-<span data-ttu-id="f3b9b-125">No corpo da solicitação, fornece uma representação JSON de um objeto de [chamada](../resources/call.md) .</span><span class="sxs-lookup"><span data-stu-id="f3b9b-125">In the request body, supply a JSON representation of a [call](../resources/call.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="56fba-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="56fba-124">Request body</span></span>
+<span data-ttu-id="56fba-125">No corpo da solicitação, forneça uma representação JSON de um objeto [Call](../resources/call.md) .</span><span class="sxs-lookup"><span data-stu-id="56fba-125">In the request body, supply a JSON representation of a [call](../resources/call.md) object.</span></span>
 
-> <span data-ttu-id="f3b9b-126">**Observação:** Propriedades marcadas como `Server generated` serão ignorados durante o processamento `POST` em `app/calls`.</span><span class="sxs-lookup"><span data-stu-id="f3b9b-126">**Note:** Properties marked as `Server generated` are ignored when processing `POST` on `app/calls`.</span></span>
+> <span data-ttu-id="56fba-126">**Observação:** Propriedades marcadas `Server generated` como são ignoradas `POST` quando `app/calls`o processamento é ativado.</span><span class="sxs-lookup"><span data-stu-id="56fba-126">**Note:** Properties marked as `Server generated` are ignored when processing `POST` on `app/calls`.</span></span>
 
-## <a name="response"></a><span data-ttu-id="f3b9b-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="f3b9b-127">Response</span></span>
-<span data-ttu-id="f3b9b-128">Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto de [chamada](../resources/call.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="f3b9b-128">If successful, this method returns a `201 Created` response code and a [call](../resources/call.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="56fba-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="56fba-127">Response</span></span>
+<span data-ttu-id="56fba-128">Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [Call](../resources/call.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="56fba-128">If successful, this method returns a `201 Created` response code and a [call](../resources/call.md) object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="f3b9b-129">Exemplos</span><span class="sxs-lookup"><span data-stu-id="f3b9b-129">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="56fba-129">Exemplos</span><span class="sxs-lookup"><span data-stu-id="56fba-129">Examples</span></span>
 
-### <a name="create-peer-to-peer-voip-call-with-service-hosted-media"></a><span data-ttu-id="f3b9b-130">Criar chamada VOIP de ponto a ponto com mídia de serviço hospedado</span><span class="sxs-lookup"><span data-stu-id="f3b9b-130">Create peer to peer VOIP call with service hosted media</span></span>
+### <a name="create-peer-to-peer-voip-call-with-service-hosted-media"></a><span data-ttu-id="56fba-130">Criar uma chamada VOIP ponto a ponto com mídia hospedada pelo serviço</span><span class="sxs-lookup"><span data-stu-id="56fba-130">Create peer to peer VOIP call with service hosted media</span></span>
 
-> <span data-ttu-id="f3b9b-131">**Observação:** Essa chamada precisa a permissão Calls.Initiate.All.</span><span class="sxs-lookup"><span data-stu-id="f3b9b-131">**Note:** This call needs the Calls.Initiate.All permission.</span></span>
+> <span data-ttu-id="56fba-131">**Observação:** Essa chamada precisa da permissão calls. initiate. All.</span><span class="sxs-lookup"><span data-stu-id="56fba-131">**Note:** This call needs the Calls.Initiate.All permission.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="f3b9b-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="f3b9b-132">Request</span></span>
-<span data-ttu-id="f3b9b-133">O exemplo a seguir mostra a solicitação.</span><span class="sxs-lookup"><span data-stu-id="f3b9b-133">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="56fba-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="56fba-132">Request</span></span>
+<span data-ttu-id="56fba-133">O exemplo a seguir mostra a solicitação.</span><span class="sxs-lookup"><span data-stu-id="56fba-133">The following example shows the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -105,9 +105,9 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="f3b9b-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="f3b9b-134">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="56fba-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="56fba-134">Response</span></span>
 
-> <span data-ttu-id="f3b9b-p103">\*\*Observação: \*\*o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="f3b9b-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="56fba-p103">\*\*Observação: \*\*o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="56fba-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -160,7 +160,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---establishing"></a><span data-ttu-id="f3b9b-137">Notificação - estabelecendo</span><span class="sxs-lookup"><span data-stu-id="f3b9b-137">Notification - establishing</span></span>
+##### <a name="notification---establishing"></a><span data-ttu-id="56fba-137">Notificação-estabelecimento</span><span class="sxs-lookup"><span data-stu-id="56fba-137">Notification - establishing</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -188,7 +188,7 @@ Content-Type: application/json
   ]
 }
 ```
-##### <a name="notification---established"></a><span data-ttu-id="f3b9b-138">Notificação - estabelecida</span><span class="sxs-lookup"><span data-stu-id="f3b9b-138">Notification - established</span></span>
+##### <a name="notification---established"></a><span data-ttu-id="56fba-138">Estabelecido em notificação</span><span class="sxs-lookup"><span data-stu-id="56fba-138">Notification - established</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -217,12 +217,12 @@ Content-Type: application/json
 }
 ```
 
-### <a name="create-peer-to-peer-voip-call-with-application-hosted-media"></a><span data-ttu-id="f3b9b-139">Criar chamada VOIP de ponto a ponto com mídia de aplicativo hospedado</span><span class="sxs-lookup"><span data-stu-id="f3b9b-139">Create peer to peer VOIP call with application hosted media</span></span>
+### <a name="create-peer-to-peer-voip-call-with-application-hosted-media"></a><span data-ttu-id="56fba-139">Criar uma chamada VOIP ponto a ponto com mídia hospedada pelo aplicativo</span><span class="sxs-lookup"><span data-stu-id="56fba-139">Create peer to peer VOIP call with application hosted media</span></span>
 
-> <span data-ttu-id="f3b9b-140">Observação: Precisa permissão Calls.Initiate.All e Calls.AccessMedia.All.</span><span class="sxs-lookup"><span data-stu-id="f3b9b-140">Note: Needs Calls.Initiate.All and Calls.AccessMedia.All permission.</span></span>
+> <span data-ttu-id="56fba-140">Observação: precisa de calls. initiate. All e calls. AccessMedia. All.</span><span class="sxs-lookup"><span data-stu-id="56fba-140">Note: Needs Calls.Initiate.All and Calls.AccessMedia.All permission.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="f3b9b-141">Solicitação</span><span class="sxs-lookup"><span data-stu-id="f3b9b-141">Request</span></span>
-<span data-ttu-id="f3b9b-142">O exemplo a seguir mostra a solicitação.</span><span class="sxs-lookup"><span data-stu-id="f3b9b-142">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="56fba-141">Solicitação</span><span class="sxs-lookup"><span data-stu-id="56fba-141">Request</span></span>
+<span data-ttu-id="56fba-142">O exemplo a seguir mostra a solicitação.</span><span class="sxs-lookup"><span data-stu-id="56fba-142">The following example shows the request.</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/app/calls
@@ -268,11 +268,11 @@ Content-Type: application/json
 }
 ```
 
-### <a name="create-group-call-with-service-hosted-media"></a><span data-ttu-id="f3b9b-143">Criar grupo de chamada com mídia de serviço hospedado</span><span class="sxs-lookup"><span data-stu-id="f3b9b-143">Create group call with service hosted media</span></span>
+### <a name="create-group-call-with-service-hosted-media"></a><span data-ttu-id="56fba-143">Criar uma chamada de grupo com mídia hospedada pelo serviço</span><span class="sxs-lookup"><span data-stu-id="56fba-143">Create group call with service hosted media</span></span>
 
-> <span data-ttu-id="f3b9b-144">**Observação:** Este exemplo precisa as permissões Calls.InitiateGroupCalls.All e Calls.AccessMedia.All.</span><span class="sxs-lookup"><span data-stu-id="f3b9b-144">**Note:** This example needs the Calls.InitiateGroupCalls.All and Calls.AccessMedia.All permissions.</span></span>
+> <span data-ttu-id="56fba-144">**Observação:** Este exemplo precisa das permissões calls. InitiateGroupCalls. All e calls. AccessMedia. All.</span><span class="sxs-lookup"><span data-stu-id="56fba-144">**Note:** This example needs the Calls.InitiateGroupCalls.All and Calls.AccessMedia.All permissions.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="f3b9b-145">Solicitação</span><span class="sxs-lookup"><span data-stu-id="f3b9b-145">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="56fba-145">Solicitação</span><span class="sxs-lookup"><span data-stu-id="56fba-145">Request</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/app/calls
@@ -334,11 +334,11 @@ Content-Type: application/json
 }
 ```
 
-### <a name="join-private-meeting-with-service-hosted-media"></a><span data-ttu-id="f3b9b-146">Ingressar na reunião privada com mídia de serviço hospedado</span><span class="sxs-lookup"><span data-stu-id="f3b9b-146">Join private meeting with service hosted media</span></span>
+### <a name="join-private-meeting-with-service-hosted-media"></a><span data-ttu-id="56fba-146">Ingressar em reunião privada com mídia hospedada pelo serviço</span><span class="sxs-lookup"><span data-stu-id="56fba-146">Join private meeting with service hosted media</span></span>
 
-> <span data-ttu-id="f3b9b-147">**Observação:** Este exemplo precisa a permissão Calls.JoinGroupCalls.All.</span><span class="sxs-lookup"><span data-stu-id="f3b9b-147">**Note:** This example needs the Calls.JoinGroupCalls.All permission.</span></span>
+> <span data-ttu-id="56fba-147">**Observação:** Este exemplo precisa da permissão calls. JoinGroupCalls. All.</span><span class="sxs-lookup"><span data-stu-id="56fba-147">**Note:** This example needs the Calls.JoinGroupCalls.All permission.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="f3b9b-148">Solicitação</span><span class="sxs-lookup"><span data-stu-id="f3b9b-148">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="56fba-148">Solicitação</span><span class="sxs-lookup"><span data-stu-id="56fba-148">Request</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/app/calls
@@ -390,11 +390,11 @@ Content-Type: application/json
 }
 ```
 
-### <a name="join-channel-meeting-with-service-hosted-media"></a><span data-ttu-id="f3b9b-149">Ingressar em reunião de canal com mídia de serviço hospedado</span><span class="sxs-lookup"><span data-stu-id="f3b9b-149">Join channel meeting with service hosted media</span></span>
+### <a name="join-channel-meeting-with-service-hosted-media"></a><span data-ttu-id="56fba-149">Reunião de canal de ingresso com mídia hospedada pelo serviço</span><span class="sxs-lookup"><span data-stu-id="56fba-149">Join channel meeting with service hosted media</span></span>
 
-> <span data-ttu-id="f3b9b-150">**Observação:** Este exemplo precisa a permissão Calls.JoinGroupCalls.All.</span><span class="sxs-lookup"><span data-stu-id="f3b9b-150">**Note:** This example needs the Calls.JoinGroupCalls.All permission.</span></span>
+> <span data-ttu-id="56fba-150">**Observação:** Este exemplo precisa da permissão calls. JoinGroupCalls. All.</span><span class="sxs-lookup"><span data-stu-id="56fba-150">**Note:** This example needs the Calls.JoinGroupCalls.All permission.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="f3b9b-151">Solicitação</span><span class="sxs-lookup"><span data-stu-id="f3b9b-151">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="56fba-151">Solicitação</span><span class="sxs-lookup"><span data-stu-id="56fba-151">Request</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/app/calls
@@ -447,11 +447,11 @@ Content-Type: application/json
 }
 ```
 
-### <a name="join-channel-meeting-as-a-guest-with-service-hosted-media"></a><span data-ttu-id="f3b9b-152">Ingressar em reunião de canal como convidado com mídia de serviço hospedado</span><span class="sxs-lookup"><span data-stu-id="f3b9b-152">Join channel meeting as a guest with service hosted media</span></span>
+### <a name="join-channel-meeting-as-a-guest-with-service-hosted-media"></a><span data-ttu-id="56fba-152">Ingressar na reunião de canal como um convidado com mídia de serviço hospedado</span><span class="sxs-lookup"><span data-stu-id="56fba-152">Join channel meeting as a guest with service hosted media</span></span>
 
-> <span data-ttu-id="f3b9b-153">**Observação:** Este exemplo precisa a permissão Calls.JoinGroupCallsAsGuest.All.</span><span class="sxs-lookup"><span data-stu-id="f3b9b-153">**Note:** This example needs the Calls.JoinGroupCallsAsGuest.All permission.</span></span>
+> <span data-ttu-id="56fba-153">**Observação:** Este exemplo precisa da permissão calls. JoinGroupCallsAsGuest. All.</span><span class="sxs-lookup"><span data-stu-id="56fba-153">**Note:** This example needs the Calls.JoinGroupCallsAsGuest.All permission.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="f3b9b-154">Solicitação</span><span class="sxs-lookup"><span data-stu-id="f3b9b-154">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="56fba-154">Solicitação</span><span class="sxs-lookup"><span data-stu-id="56fba-154">Request</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/app/calls

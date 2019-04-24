@@ -5,30 +5,30 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 801d403745bea8fa3e4b962a0892ced2129bd92f
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31782146"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32469548"
 ---
-# <a name="create-deviceconfigurationconflictsummary"></a><span data-ttu-id="0db9e-103">Criar Propriedadesdeviceconfigurationconflictsummary</span><span class="sxs-lookup"><span data-stu-id="0db9e-103">Create deviceConfigurationConflictSummary</span></span>
+# <a name="create-deviceconfigurationconflictsummary"></a><span data-ttu-id="c0880-103">Criar Propriedadesdeviceconfigurationconflictsummary</span><span class="sxs-lookup"><span data-stu-id="c0880-103">Create deviceConfigurationConflictSummary</span></span>
 
-> <span data-ttu-id="0db9e-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="0db9e-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="c0880-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="c0880-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="0db9e-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="0db9e-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="c0880-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="c0880-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="0db9e-106">Criar um novo objeto [propriedadesdeviceconfigurationconflictsummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md) .</span><span class="sxs-lookup"><span data-stu-id="0db9e-106">Create a new [deviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md) object.</span></span>
+<span data-ttu-id="c0880-106">Criar um novo objeto [propriedadesdeviceconfigurationconflictsummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md) .</span><span class="sxs-lookup"><span data-stu-id="c0880-106">Create a new [deviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="0db9e-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="0db9e-107">Prerequisites</span></span>
-<span data-ttu-id="0db9e-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0db9e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="c0880-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="c0880-107">Prerequisites</span></span>
+<span data-ttu-id="c0880-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c0880-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="0db9e-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="0db9e-110">Permission type</span></span>|<span data-ttu-id="0db9e-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="0db9e-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="c0880-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="c0880-110">Permission type</span></span>|<span data-ttu-id="c0880-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="c0880-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="0db9e-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="0db9e-112">Delegated (work or school account)</span></span>|<span data-ttu-id="0db9e-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0db9e-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="0db9e-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="0db9e-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="0db9e-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="0db9e-115">Not supported.</span></span>|
-|<span data-ttu-id="0db9e-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="0db9e-116">Application</span></span>|<span data-ttu-id="0db9e-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="0db9e-117">Not supported.</span></span>|
+|<span data-ttu-id="c0880-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="c0880-112">Delegated (work or school account)</span></span>|<span data-ttu-id="c0880-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c0880-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="c0880-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="c0880-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="c0880-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c0880-115">Not supported.</span></span>|
+|<span data-ttu-id="c0880-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="c0880-116">Application</span></span>|<span data-ttu-id="c0880-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c0880-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="0db9e-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="0db9e-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c0880-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="c0880-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,33 +37,33 @@ ms.locfileid: "31782146"
 POST /deviceManagement/deviceConfigurationConflictSummary
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="0db9e-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="0db9e-119">Request headers</span></span>
-|<span data-ttu-id="0db9e-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="0db9e-120">Header</span></span>|<span data-ttu-id="0db9e-121">Valor</span><span class="sxs-lookup"><span data-stu-id="0db9e-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="c0880-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="c0880-119">Request headers</span></span>
+|<span data-ttu-id="c0880-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="c0880-120">Header</span></span>|<span data-ttu-id="c0880-121">Valor</span><span class="sxs-lookup"><span data-stu-id="c0880-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="0db9e-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="0db9e-122">Authorization</span></span>|<span data-ttu-id="0db9e-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="0db9e-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="0db9e-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="0db9e-124">Accept</span></span>|<span data-ttu-id="0db9e-125">application/json</span><span class="sxs-lookup"><span data-stu-id="0db9e-125">application/json</span></span>|
+|<span data-ttu-id="c0880-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="c0880-122">Authorization</span></span>|<span data-ttu-id="c0880-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="c0880-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="c0880-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="c0880-124">Accept</span></span>|<span data-ttu-id="c0880-125">application/json</span><span class="sxs-lookup"><span data-stu-id="c0880-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="0db9e-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="0db9e-126">Request body</span></span>
-<span data-ttu-id="0db9e-127">No corpo da solicitação, forneça uma representação JSON do objeto Propriedadesdeviceconfigurationconflictsummary.</span><span class="sxs-lookup"><span data-stu-id="0db9e-127">In the request body, supply a JSON representation for the deviceConfigurationConflictSummary object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c0880-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="c0880-126">Request body</span></span>
+<span data-ttu-id="c0880-127">No corpo da solicitação, forneça uma representação JSON do objeto Propriedadesdeviceconfigurationconflictsummary.</span><span class="sxs-lookup"><span data-stu-id="c0880-127">In the request body, supply a JSON representation for the deviceConfigurationConflictSummary object.</span></span>
 
-<span data-ttu-id="0db9e-128">A tabela a seguir mostra as propriedades que são necessárias ao criar Propriedadesdeviceconfigurationconflictsummary.</span><span class="sxs-lookup"><span data-stu-id="0db9e-128">The following table shows the properties that are required when you create the deviceConfigurationConflictSummary.</span></span>
+<span data-ttu-id="c0880-128">A tabela a seguir mostra as propriedades que são necessárias ao criar Propriedadesdeviceconfigurationconflictsummary.</span><span class="sxs-lookup"><span data-stu-id="c0880-128">The following table shows the properties that are required when you create the deviceConfigurationConflictSummary.</span></span>
 
-|<span data-ttu-id="0db9e-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="0db9e-129">Property</span></span>|<span data-ttu-id="0db9e-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="0db9e-130">Type</span></span>|<span data-ttu-id="0db9e-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="0db9e-131">Description</span></span>|
+|<span data-ttu-id="c0880-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="c0880-129">Property</span></span>|<span data-ttu-id="c0880-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="c0880-130">Type</span></span>|<span data-ttu-id="c0880-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="c0880-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="0db9e-132">conflictingDeviceConfigurations</span><span class="sxs-lookup"><span data-stu-id="0db9e-132">conflictingDeviceConfigurations</span></span>|<span data-ttu-id="0db9e-133">Conjunto [settingSource](../resources/intune-deviceconfig-settingsource.md)</span><span class="sxs-lookup"><span data-stu-id="0db9e-133">[settingSource](../resources/intune-deviceconfig-settingsource.md) collection</span></span>|<span data-ttu-id="0db9e-134">O conjunto de políticas em conflito com a configuração determinada</span><span class="sxs-lookup"><span data-stu-id="0db9e-134">The set of policies in conflict with the given setting</span></span>|
-|<span data-ttu-id="0db9e-135">id</span><span class="sxs-lookup"><span data-stu-id="0db9e-135">id</span></span>|<span data-ttu-id="0db9e-136">String</span><span class="sxs-lookup"><span data-stu-id="0db9e-136">String</span></span>|<span data-ttu-id="0db9e-137">A ID desse conjunto de diretivas conflitantes.</span><span class="sxs-lookup"><span data-stu-id="0db9e-137">The id for this set of conflicting policies.</span></span> <span data-ttu-id="0db9e-138">Esta ID é as identificações de todas as políticas no ConflictingDeviceConfigurations na ordem lexicographical separadas por sublinhados.</span><span class="sxs-lookup"><span data-stu-id="0db9e-138">This id is the ids of all the policies in ConflictingDeviceConfigurations in lexicographical order separated by underscores.</span></span>|
-|<span data-ttu-id="0db9e-139">contributingSettings</span><span class="sxs-lookup"><span data-stu-id="0db9e-139">contributingSettings</span></span>|<span data-ttu-id="0db9e-140">Coleção String</span><span class="sxs-lookup"><span data-stu-id="0db9e-140">String collection</span></span>|<span data-ttu-id="0db9e-141">O conjunto de configurações em conflito com as políticas determinadas</span><span class="sxs-lookup"><span data-stu-id="0db9e-141">The set of settings in conflict with the given policies</span></span>|
-|<span data-ttu-id="0db9e-142">deviceCheckinsImpacted</span><span class="sxs-lookup"><span data-stu-id="0db9e-142">deviceCheckinsImpacted</span></span>|<span data-ttu-id="0db9e-143">Int32</span><span class="sxs-lookup"><span data-stu-id="0db9e-143">Int32</span></span>|<span data-ttu-id="0db9e-144">A contagem de check-ins impactados pelas políticas e configurações conflitantes</span><span class="sxs-lookup"><span data-stu-id="0db9e-144">The count of checkins impacted by the conflicting policies and settings</span></span>|
+|<span data-ttu-id="c0880-132">conflictingDeviceConfigurations</span><span class="sxs-lookup"><span data-stu-id="c0880-132">conflictingDeviceConfigurations</span></span>|<span data-ttu-id="c0880-133">Conjunto [settingSource](../resources/intune-deviceconfig-settingsource.md)</span><span class="sxs-lookup"><span data-stu-id="c0880-133">[settingSource](../resources/intune-deviceconfig-settingsource.md) collection</span></span>|<span data-ttu-id="c0880-134">O conjunto de políticas em conflito com a configuração determinada</span><span class="sxs-lookup"><span data-stu-id="c0880-134">The set of policies in conflict with the given setting</span></span>|
+|<span data-ttu-id="c0880-135">id</span><span class="sxs-lookup"><span data-stu-id="c0880-135">id</span></span>|<span data-ttu-id="c0880-136">String</span><span class="sxs-lookup"><span data-stu-id="c0880-136">String</span></span>|<span data-ttu-id="c0880-137">A ID desse conjunto de diretivas conflitantes.</span><span class="sxs-lookup"><span data-stu-id="c0880-137">The id for this set of conflicting policies.</span></span> <span data-ttu-id="c0880-138">Esta ID é as identificações de todas as políticas no ConflictingDeviceConfigurations na ordem lexicographical separadas por sublinhados.</span><span class="sxs-lookup"><span data-stu-id="c0880-138">This id is the ids of all the policies in ConflictingDeviceConfigurations in lexicographical order separated by underscores.</span></span>|
+|<span data-ttu-id="c0880-139">contributingSettings</span><span class="sxs-lookup"><span data-stu-id="c0880-139">contributingSettings</span></span>|<span data-ttu-id="c0880-140">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="c0880-140">String collection</span></span>|<span data-ttu-id="c0880-141">O conjunto de configurações em conflito com as políticas determinadas</span><span class="sxs-lookup"><span data-stu-id="c0880-141">The set of settings in conflict with the given policies</span></span>|
+|<span data-ttu-id="c0880-142">deviceCheckinsImpacted</span><span class="sxs-lookup"><span data-stu-id="c0880-142">deviceCheckinsImpacted</span></span>|<span data-ttu-id="c0880-143">Int32</span><span class="sxs-lookup"><span data-stu-id="c0880-143">Int32</span></span>|<span data-ttu-id="c0880-144">A contagem de check-ins impactados pelas políticas e configurações conflitantes</span><span class="sxs-lookup"><span data-stu-id="c0880-144">The count of checkins impacted by the conflicting policies and settings</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="0db9e-145">Resposta</span><span class="sxs-lookup"><span data-stu-id="0db9e-145">Response</span></span>
-<span data-ttu-id="0db9e-146">Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [propriedadesdeviceconfigurationconflictsummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="0db9e-146">If successful, this method returns a `201 Created` response code and a [deviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="c0880-145">Resposta</span><span class="sxs-lookup"><span data-stu-id="c0880-145">Response</span></span>
+<span data-ttu-id="c0880-146">Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [propriedadesdeviceconfigurationconflictsummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="c0880-146">If successful, this method returns a `201 Created` response code and a [deviceConfigurationConflictSummary](../resources/intune-deviceconfig-deviceconfigurationconflictsummary.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="0db9e-147">Exemplo</span><span class="sxs-lookup"><span data-stu-id="0db9e-147">Example</span></span>
+## <a name="example"></a><span data-ttu-id="c0880-147">Exemplo</span><span class="sxs-lookup"><span data-stu-id="c0880-147">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="0db9e-148">Solicitação</span><span class="sxs-lookup"><span data-stu-id="0db9e-148">Request</span></span>
-<span data-ttu-id="0db9e-149">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="0db9e-149">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="c0880-148">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c0880-148">Request</span></span>
+<span data-ttu-id="c0880-149">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="c0880-149">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurationConflictSummary
 Content-type: application/json
@@ -85,8 +85,8 @@ Content-length: 361
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="0db9e-150">Resposta</span><span class="sxs-lookup"><span data-stu-id="0db9e-150">Response</span></span>
-<span data-ttu-id="0db9e-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="0db9e-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="c0880-150">Resposta</span><span class="sxs-lookup"><span data-stu-id="c0880-150">Response</span></span>
+<span data-ttu-id="c0880-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="c0880-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

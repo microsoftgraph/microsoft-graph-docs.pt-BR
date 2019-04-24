@@ -5,31 +5,31 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 4c05d695b05a001e6854e254bf065d6fb41ba773
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31791345"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461084"
 ---
-# <a name="win32lobappreturncode-resource-type"></a><span data-ttu-id="b7b05-103">tipo de recurso win32LobAppReturnCode</span><span class="sxs-lookup"><span data-stu-id="b7b05-103">win32LobAppReturnCode resource type</span></span>
+# <a name="win32lobappreturncode-resource-type"></a><span data-ttu-id="44e72-103">tipo de recurso win32LobAppReturnCode</span><span class="sxs-lookup"><span data-stu-id="44e72-103">win32LobAppReturnCode resource type</span></span>
 
-> <span data-ttu-id="b7b05-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="b7b05-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="44e72-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="44e72-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="b7b05-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="b7b05-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="44e72-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="44e72-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="b7b05-106">Contém propriedades de código de retorno para um aplicativo Win32</span><span class="sxs-lookup"><span data-stu-id="b7b05-106">Contains return code properties for a Win32 App</span></span>
+<span data-ttu-id="44e72-106">Contém propriedades de código de retorno para um aplicativo Win32</span><span class="sxs-lookup"><span data-stu-id="44e72-106">Contains return code properties for a Win32 App</span></span>
 
-## <a name="properties"></a><span data-ttu-id="b7b05-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="b7b05-107">Properties</span></span>
-|<span data-ttu-id="b7b05-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="b7b05-108">Property</span></span>|<span data-ttu-id="b7b05-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="b7b05-109">Type</span></span>|<span data-ttu-id="b7b05-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="b7b05-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="44e72-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="44e72-107">Properties</span></span>
+|<span data-ttu-id="44e72-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="44e72-108">Property</span></span>|<span data-ttu-id="44e72-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="44e72-109">Type</span></span>|<span data-ttu-id="44e72-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="44e72-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="b7b05-111">returnCode</span><span class="sxs-lookup"><span data-stu-id="b7b05-111">returnCode</span></span>|<span data-ttu-id="b7b05-112">Int32</span><span class="sxs-lookup"><span data-stu-id="b7b05-112">Int32</span></span>|<span data-ttu-id="b7b05-113">Código de retorno.</span><span class="sxs-lookup"><span data-stu-id="b7b05-113">Return code.</span></span>|
-|<span data-ttu-id="b7b05-114">type</span><span class="sxs-lookup"><span data-stu-id="b7b05-114">type</span></span>|[<span data-ttu-id="b7b05-115">win32LobAppReturnCodeType</span><span class="sxs-lookup"><span data-stu-id="b7b05-115">win32LobAppReturnCodeType</span></span>](../resources/intune-apps-win32lobappreturncodetype.md)|<span data-ttu-id="b7b05-116">O tipo de código de retorno.</span><span class="sxs-lookup"><span data-stu-id="b7b05-116">The type of return code.</span></span> <span data-ttu-id="b7b05-117">Os valores possíveis são: `failed`, `success`, `softReboot`, `hardReboot`, `retry`.</span><span class="sxs-lookup"><span data-stu-id="b7b05-117">Possible values are: `failed`, `success`, `softReboot`, `hardReboot`, `retry`.</span></span>|
+|<span data-ttu-id="44e72-111">returnCode</span><span class="sxs-lookup"><span data-stu-id="44e72-111">returnCode</span></span>|<span data-ttu-id="44e72-112">Int32</span><span class="sxs-lookup"><span data-stu-id="44e72-112">Int32</span></span>|<span data-ttu-id="44e72-113">Código de retorno.</span><span class="sxs-lookup"><span data-stu-id="44e72-113">Return code.</span></span>|
+|<span data-ttu-id="44e72-114">type</span><span class="sxs-lookup"><span data-stu-id="44e72-114">type</span></span>|[<span data-ttu-id="44e72-115">win32LobAppReturnCodeType</span><span class="sxs-lookup"><span data-stu-id="44e72-115">win32LobAppReturnCodeType</span></span>](../resources/intune-apps-win32lobappreturncodetype.md)|<span data-ttu-id="44e72-116">O tipo de código de retorno.</span><span class="sxs-lookup"><span data-stu-id="44e72-116">The type of return code.</span></span> <span data-ttu-id="44e72-117">Os valores possíveis são: `failed`, `success`, `softReboot`, `hardReboot`, `retry`.</span><span class="sxs-lookup"><span data-stu-id="44e72-117">Possible values are: `failed`, `success`, `softReboot`, `hardReboot`, `retry`.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="b7b05-118">Relações</span><span class="sxs-lookup"><span data-stu-id="b7b05-118">Relationships</span></span>
-<span data-ttu-id="b7b05-119">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="b7b05-119">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="44e72-118">Relações</span><span class="sxs-lookup"><span data-stu-id="44e72-118">Relationships</span></span>
+<span data-ttu-id="44e72-119">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="44e72-119">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="b7b05-120">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="b7b05-120">JSON Representation</span></span>
-<span data-ttu-id="b7b05-121">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="b7b05-121">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="44e72-120">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="44e72-120">JSON Representation</span></span>
+<span data-ttu-id="44e72-121">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="44e72-121">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.win32LobAppReturnCode"

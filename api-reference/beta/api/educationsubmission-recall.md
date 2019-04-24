@@ -1,51 +1,51 @@
 ---
-title: 'educationSubmission: recall'
-description: 'Indica que um estudante deseja reassumir o envio de um. Essa ação só pode ser feita por um estudante. '
+title: 'educationSubmission: rechamar'
+description: 'Indica que um aluno deseja fazer um envio. Esta ação só pode ser feita por um aluno. '
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 0be94d2888223ca31e37b71e490c4a9fdc28b7d0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520414"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457625"
 ---
-# <a name="educationsubmission-recall"></a><span data-ttu-id="50876-104">educationSubmission: recall</span><span class="sxs-lookup"><span data-stu-id="50876-104">educationSubmission: recall</span></span>
+# <a name="educationsubmission-recall"></a><span data-ttu-id="38029-104">educationSubmission: rechamar</span><span class="sxs-lookup"><span data-stu-id="38029-104">educationSubmission: recall</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="50876-105">Indica que um estudante deseja reassumir o envio de um.</span><span class="sxs-lookup"><span data-stu-id="50876-105">Indicates that a student wants to take back a submission.</span></span> <span data-ttu-id="50876-106">Essa ação só pode ser feita por um estudante.</span><span class="sxs-lookup"><span data-stu-id="50876-106">This action can only be done by a student.</span></span> <span data-ttu-id="50876-107">Ele alterará o status do envio de "enviado" Voltar ao "trabalho".</span><span class="sxs-lookup"><span data-stu-id="50876-107">It will change the status of the submission from "submitted" back to "working".</span></span>
+<span data-ttu-id="38029-105">Indica que um aluno deseja fazer um envio.</span><span class="sxs-lookup"><span data-stu-id="38029-105">Indicates that a student wants to take back a submission.</span></span> <span data-ttu-id="38029-106">Esta ação só pode ser feita por um aluno.</span><span class="sxs-lookup"><span data-stu-id="38029-106">This action can only be done by a student.</span></span> <span data-ttu-id="38029-107">Ele alterará o status do envio de "enviado" de volta para "trabalho".</span><span class="sxs-lookup"><span data-stu-id="38029-107">It will change the status of the submission from "submitted" back to "working".</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="50876-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="50876-108">Permissions</span></span>
-<span data-ttu-id="50876-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="50876-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="38029-108">Permissões</span><span class="sxs-lookup"><span data-stu-id="38029-108">Permissions</span></span>
+<span data-ttu-id="38029-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="38029-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="50876-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="50876-111">Permission type</span></span>      | <span data-ttu-id="50876-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="50876-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="38029-111">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="38029-111">Permission type</span></span>      | <span data-ttu-id="38029-112">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="38029-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="50876-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="50876-113">Delegated (work or school account)</span></span> |  <span data-ttu-id="50876-114">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="50876-114">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span></span>  |
-|<span data-ttu-id="50876-115">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="50876-115">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="50876-116">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="50876-116">Not supported</span></span>  |
-|<span data-ttu-id="50876-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="50876-117">Application</span></span> |<span data-ttu-id="50876-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="50876-118">Not supported.</span></span>  | 
+|<span data-ttu-id="38029-113">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="38029-113">Delegated (work or school account)</span></span> |  <span data-ttu-id="38029-114">EduAssignments. ReadWriteBasic, EduAssignments. ReadWrite</span><span class="sxs-lookup"><span data-stu-id="38029-114">EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite</span></span>  |
+|<span data-ttu-id="38029-115">Delegado (conta pessoal da conta Microsoft)</span><span class="sxs-lookup"><span data-stu-id="38029-115">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="38029-116">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="38029-116">Not supported</span></span>  |
+|<span data-ttu-id="38029-117">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="38029-117">Application</span></span> |<span data-ttu-id="38029-118">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="38029-118">Not supported.</span></span>  | 
 
-## <a name="http-request"></a><span data-ttu-id="50876-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="50876-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="38029-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="38029-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /education/classes/<id>/assignments/{id}/submissions/{id}/recall
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="50876-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="50876-120">Request headers</span></span>
-| <span data-ttu-id="50876-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="50876-121">Header</span></span>       | <span data-ttu-id="50876-122">Valor</span><span class="sxs-lookup"><span data-stu-id="50876-122">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="38029-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="38029-120">Request headers</span></span>
+| <span data-ttu-id="38029-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="38029-121">Header</span></span>       | <span data-ttu-id="38029-122">Valor</span><span class="sxs-lookup"><span data-stu-id="38029-122">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="50876-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="50876-123">Authorization</span></span>  | <span data-ttu-id="50876-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="50876-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="38029-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="38029-123">Authorization</span></span>  | <span data-ttu-id="38029-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="38029-p104">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="50876-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="50876-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="38029-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="38029-126">Request body</span></span>
 
-## <a name="response"></a><span data-ttu-id="50876-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="50876-127">Response</span></span>
-<span data-ttu-id="50876-p105">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="50876-p105">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="38029-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="38029-127">Response</span></span>
+<span data-ttu-id="38029-p105">Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="38029-p105">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="50876-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="50876-130">Example</span></span>
-<span data-ttu-id="50876-131">O exemplo a seguir mostra como chamar essa API.</span><span class="sxs-lookup"><span data-stu-id="50876-131">The following example shows how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="50876-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="50876-132">Request</span></span>
-<span data-ttu-id="50876-133">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="50876-133">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="38029-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="38029-130">Example</span></span>
+<span data-ttu-id="38029-131">O exemplo a seguir mostra como chamar essa API.</span><span class="sxs-lookup"><span data-stu-id="38029-131">The following example shows how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="38029-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="38029-132">Request</span></span>
+<span data-ttu-id="38029-133">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="38029-133">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "educationsubmission_recall"
@@ -54,8 +54,8 @@ POST /education/classes/<id>/assignments/{id}/submissions/{id}/recall
 POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/submissions/850f51b7/recall
 ```
 
-##### <a name="response"></a><span data-ttu-id="50876-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="50876-134">Response</span></span>
-<span data-ttu-id="50876-135">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="50876-135">The following is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="38029-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="38029-134">Response</span></span>
+<span data-ttu-id="38029-135">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="38029-135">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
