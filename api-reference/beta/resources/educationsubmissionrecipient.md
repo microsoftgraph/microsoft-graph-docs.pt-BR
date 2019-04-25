@@ -1,25 +1,25 @@
 ---
-title: tipo de recurso de educationSubmissionRecipient
-description: Classe abstrata que representa os diferentes conjuntos de usuários aos quais um envio pode ser atribuído. Os valores possíveis incluem indivíduos ou grupos. Isso é usado dentro da propriedade **submission.recipient** .
+title: tipo de recurso educationSubmissionRecipient
+description: Classe abstrata que representa os diferentes conjuntos de usuários aos quais um envio pode ser atribuído. Os valores possíveis incluem indivíduos ou grupos. Isso é usado dentro da propriedade de **envio. Recipient** .
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 27b9714c2ae20a46447adacb4e98112945d9c12a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516872"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542854"
 ---
-# <a name="educationsubmissionrecipient-resource-type"></a><span data-ttu-id="8811e-105">tipo de recurso de educationSubmissionRecipient</span><span class="sxs-lookup"><span data-stu-id="8811e-105">educationSubmissionRecipient resource type</span></span>
+# <a name="educationsubmissionrecipient-resource-type"></a><span data-ttu-id="6a378-105">tipo de recurso educationSubmissionRecipient</span><span class="sxs-lookup"><span data-stu-id="6a378-105">educationSubmissionRecipient resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="8811e-106">Classe abstrata que representa os diferentes conjuntos de usuários aos quais um envio pode ser atribuído.</span><span class="sxs-lookup"><span data-stu-id="8811e-106">Abstract class that represents the different sets of users to whom a submission can be assigned.</span></span> <span data-ttu-id="8811e-107">Os valores possíveis incluem indivíduos ou grupos.</span><span class="sxs-lookup"><span data-stu-id="8811e-107">Possible values include individuals or groups.</span></span> <span data-ttu-id="8811e-108">Isso é usado dentro da propriedade **submission.recipient** .</span><span class="sxs-lookup"><span data-stu-id="8811e-108">This is used within the **submission.recipient** property.</span></span>
+<span data-ttu-id="6a378-106">Classe abstrata que representa os diferentes conjuntos de usuários aos quais um envio pode ser atribuído.</span><span class="sxs-lookup"><span data-stu-id="6a378-106">Abstract class that represents the different sets of users to whom a submission can be assigned.</span></span> <span data-ttu-id="6a378-107">Os valores possíveis incluem indivíduos ou grupos.</span><span class="sxs-lookup"><span data-stu-id="6a378-107">Possible values include individuals or groups.</span></span> <span data-ttu-id="6a378-108">Isso é usado dentro da propriedade de **envio. Recipient** .</span><span class="sxs-lookup"><span data-stu-id="6a378-108">This is used within the **submission.recipient** property.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="8811e-109">Propriedades</span><span class="sxs-lookup"><span data-stu-id="8811e-109">Properties</span></span>
-<span data-ttu-id="8811e-110">Nenhum.</span><span class="sxs-lookup"><span data-stu-id="8811e-110">None.</span></span>
+## <a name="properties"></a><span data-ttu-id="6a378-109">Propriedades</span><span class="sxs-lookup"><span data-stu-id="6a378-109">Properties</span></span>
+<span data-ttu-id="6a378-110">Nenhum</span><span class="sxs-lookup"><span data-stu-id="6a378-110">None.</span></span>
 
 <!-- {
   "blockType": "resource",
