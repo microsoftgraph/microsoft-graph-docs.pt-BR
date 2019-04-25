@@ -1,15 +1,15 @@
 ---
-title: Tipo de recurso settingValue
+title: tipo de recurso SettingValue
 description: Uma configuração representada por um par de nome/valor.
 localization_priority: Normal
 ms.openlocfilehash: aa30fd61c1498be08be4d87175d18015c58323ba
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527735"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32584090"
 ---
-# <a name="settingvalue-resource-type"></a>Tipo de recurso settingValue
+# <a name="settingvalue-resource-type"></a>tipo de recurso SettingValue
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -20,7 +20,7 @@ Uma configuração representada por um par de nome/valor.
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |name|string|Nome da configuração (conforme definido pelo directorySettingTemplate).|
-|valor|string|Valor da configuração.|
+|value|string|Valor da configuração.|
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -1,19 +1,19 @@
 ---
 title: Tipo de recurso RangeFont
-description: Esse objeto representa os atributos de fonte de um objeto, como nome, tamanho, cor, etc.
+description: Esse objeto representa os atributos de fonte de um objeto, como nome, tamanho, cor, dentre outros.
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: 829b391d561aae63ae94972c55039acfdf4c48d7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27962293"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579519"
 ---
 # <a name="rangefont-resource-type"></a>Tipo de recurso RangeFont
 
-Esse objeto representa os atributos de fonte de um objeto, como nome, tamanho, cor, etc.
+Esse objeto representa os atributos de fonte de um objeto, como nome, tamanho, cor, dentre outros.
 
 
 ## <a name="methods"></a>Métodos

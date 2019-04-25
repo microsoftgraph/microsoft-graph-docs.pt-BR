@@ -1,32 +1,32 @@
 ---
-title: tipo de recurso de directoryDefinition
-description: Fornece as informações de mecanismo de sincronização sobre um diretório e seus objetos. Este recurso informa ao mecanismo de sincronização, por exemplo, se o diretório tem objetos com o nome de **usuário** e **grupo**, quais atributos são suportados para esses objetos e os tipos para esses atributos. Na ordem para o objeto e o atributo para participar de regras de sincronização e mapeamentos de objeto, ele devem ser definidos como parte da definição do diretório.
+title: tipo de recurso directoryDefinition
+description: Fornece as informações do mecanismo de sincronização sobre um diretório e seus objetos. Esse recurso instrui o mecanismo de sincronização, por exemplo, que o diretório tem objetos chamados **usuário** e **grupo**, quais atributos são compatíveis com esses objetos e os tipos desses atributos. Para que o objeto e o atributo participem das regras de sincronização e dos mapeamentos de objetos, eles devem ser definidos como parte da definição de diretório.
 localization_priority: Normal
 ms.openlocfilehash: 22ba4a7f3b5b5d3154ec6b3f5d42bd6f1b8f09d7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508122"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582058"
 ---
-# <a name="directorydefinition-resource-type"></a>tipo de recurso de directoryDefinition
+# <a name="directorydefinition-resource-type"></a>tipo de recurso directoryDefinition
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Fornece as informações de mecanismo de sincronização sobre um diretório e seus objetos. Este recurso informa ao mecanismo de sincronização, por exemplo, se o diretório tem objetos com o nome de **usuário** e **grupo**, quais atributos são suportados para esses objetos e os tipos para esses atributos. Na ordem para o objeto e o atributo para participar de [regras de sincronização](synchronization-synchronizationrule.md) e [mapeamentos de objeto](synchronization-objectmapping.md), ele devem ser definidos como parte da definição do diretório.
+Fornece as informações do mecanismo de sincronização sobre um diretório e seus objetos. Esse recurso instrui o mecanismo de sincronização, por exemplo, que o diretório tem objetos chamados **usuário** e **grupo**, quais atributos são compatíveis com esses objetos e os tipos desses atributos. Para que o objeto e o atributo participem das [regras de sincronização](synchronization-synchronizationrule.md) e dos mapeamentos de [objetos](synchronization-objectmapping.md), eles devem ser definidos como parte da definição de diretório.
 
-Em geral, o padrão de [esquema de sincronização](synchronization-synchronizationschema.md) fornecido como parte do [modelo de sincronização](synchronization-synchronizationtemplate.md) definirá mais comumente usados objetos e atributos para esse diretório. No entanto, se o diretório suporta a adição de atributos personalizados, convém expandir a definição padrão com seus próprios objetos personalizados ou atributos. Para obter mais informações, consulte [Configure sincronização com atributos personalizados](synchronization-configure-with-custom-target-attributes.md) e a [sincronização de Configure com atributos de extensão do diretório](synchronization-configure-with-directory-extension-attributes.md).
+Em geral, o [esquema de sincronização](synchronization-synchronizationschema.md) padrão fornecido como parte do [modelo de sincronização](synchronization-synchronizationtemplate.md) definirá os objetos e atributos usados com mais frequência para esse diretório. No enTanto, se o diretório oferecer suporte à adição de atributos personalizados, convém expandir a definição padrão com seus próprios objetos ou atributos personalizados. Para obter mais informações, consulte [Configurar a sincronização com atributos personalizados](synchronization-configure-with-custom-target-attributes.md) e [Configurar a sincronização com atributos de extensão de diretório](synchronization-configure-with-directory-extension-attributes.md).
 
-Definições do diretório são atualizadas como parte do [esquema de sincronização](synchronization-synchronizationschema.md).
+As definições de diretório são atualizadas como parte do [esquema de sincronização](synchronization-synchronizationschema.md).
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade      | Tipo      | Descrição    |
 |:--------------|:----------|:---------------|
-|id           |String     |Identificador de diretório. Não anulável.|
-|Metadata       |coleção metadataEntry    |Propriedades adicionais de extensão. A menos que mencionado explicitamente, valores de metadados não devem ser alterados.|
-|name           |Cadeia de caracteres     |Nome do diretório. Deve ser exclusivo dentro do [esquema de sincronização](synchronization-synchronizationschema.md). Não anulável.|
-|Objetos        |coleção [objectDefinition](synchronization-objectdefinition.md)    |Coleção de objetos compatíveis com o diretório.|
+|id           |Cadeia de caracteres     |Identificador de diretório. Não anulável.|
+|los       |coleção metadataEntry    |Propriedades de extensão adicionais. A menos que seja mencionado explicitamente, os valores de metadados não devem ser alterados.|
+|name           |String     |Nome do diretório. Deve ser exclusivo no [esquema de sincronização](synchronization-synchronizationschema.md). Não anulável.|
+|objectos        |[](synchronization-objectdefinition.md) coleção ObjectDefinition    |Conjunto de objetos suportados pelo diretório.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -49,7 +49,7 @@ Veja a seguir uma representação JSON do recurso.
 
 ```
 
-## <a name="json-example"></a>Exemplo JSON
+## <a name="json-example"></a>Exemplo de JSON
 
 <!-- {
   "blockType": "resource",

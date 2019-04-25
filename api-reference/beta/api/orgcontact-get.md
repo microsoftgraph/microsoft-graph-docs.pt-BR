@@ -1,21 +1,21 @@
 ---
 title: Obter orgContact
-description: Recupere as propriedades e relações do objeto orgcontact.
+description: Recupere as propriedades e os relacionamentos do objeto orgcontact.
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 68cb9953eed91cd00fd699f20817ea1231e16b92
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513421"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539985"
 ---
 # <a name="get-orgcontact"></a>Obter orgContact
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e relações do objeto orgcontact.
+Recupere as propriedades e os relacionamentos do objeto orgcontact.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -43,7 +43,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` objeto response de código e [orgContact](../resources/orgcontact.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [orgContact](../resources/orgcontact.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

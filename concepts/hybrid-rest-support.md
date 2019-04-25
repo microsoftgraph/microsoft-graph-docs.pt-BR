@@ -3,11 +3,11 @@ title: Usar APIs REST para acessar caixas de correio em implantações híbridas
 description: O Microsoft Graph sempre forneceu acesso a caixas de correio do cliente na nuvem no Exchange Online como parte do Office 365.
 localization_priority: Priority
 ms.openlocfilehash: 5dab9fea5a9d9c9177befc90ccb64b3bb03b6b33
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27864348"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32526171"
 ---
 # <a name="use-rest-apis-to-access-mailboxes-in-exchange-hybrid-deployments-preview"></a>Usar as APIs REST para acessar caixas de correio em implantações híbridas do Exchange (visualização)
 
@@ -20,7 +20,7 @@ Nos bastidores, quando o Microsoft Graph identifica que uma chamada à API REST 
 
 >Somente a versão 1.0 da API de Email, Calendário e Contatos está disponível para caixas de correio em implantações híbridas. Outros conjuntos de API da versão 1.0, como a API de [Grupos](/graph/api/resources/group?view=graph-rest-1.0) ou APIs em outras versões, não estão disponíveis. Se tentar usar uma API que não faça parte do conjunto compatível em uma implantação híbrida, você receberá a seguinte mensagem de erro:
 
->"As APIs REST para essa caixa de correio estão em modo de visualização no momento. Você pode encontrar mais informações sobre as APIs REST de modo de visualização em https://dev.outlook.com".
+>"As APIs REST para essa caixa de correio estão em modo de visualização no momento. Você pode encontrar mais informações sobre as APIs REST de modo de visualização em https://dev.outlook.com."
 
 ## <a name="requirements-for-the-rest-api-to-work-in-hybrid-deployments"></a>Requisitos para a API REST funcionar em implantações híbridas
 

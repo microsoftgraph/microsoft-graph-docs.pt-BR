@@ -1,26 +1,26 @@
 ---
-title: tipo de recurso de plannerRecentPlanReferenceCollection
-description: O recurso de **plannerRecentPlanReferenceCollection** representa a coleção de referências a planos que foram visualizados recentemente por um usuário. Este recurso é um tipo aberto e parte do objeto plannerUser. O nome da propriedade é a ID do plano correspondente. O valor do par de valor da propriedade é o objeto plannerRecentPlanReference.
+title: tipo de recurso plannerRecentPlanReferenceCollection
+description: O recurso **plannerRecentPlanReferenceCollection** representa a coleção de referências a planos que foram exibidos recentemente por um usuário. Esse recurso é um tipo aberto e faz parte do objeto plannerUser. O nome da propriedade é a ID do plano correspondente. O valor no par propriedade-valor é o objeto plannerRecentPlanReference.
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: e27375e3f2395b3528873d8b83f0b5aa6f48d52e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514989"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583176"
 ---
-# <a name="plannerrecentplanreferencecollection-resource-type"></a>tipo de recurso de plannerRecentPlanReferenceCollection
+# <a name="plannerrecentplanreferencecollection-resource-type"></a>tipo de recurso plannerRecentPlanReferenceCollection
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O recurso de **plannerRecentPlanReferenceCollection** representa a coleção de referências a planos que foram visualizados recentemente por um usuário. Este recurso é um tipo aberto e parte do objeto [plannerUser](planneruser.md) . O nome da propriedade é a ID do plano correspondente. O valor do par de valor da propriedade é o objeto [plannerRecentPlanReference](plannerrecentplanreference.md) .
-Adicionar referências de novas a essa coleção removerá automaticamente as entradas mais antigas quando o tamanho da coleção excede um valor máximo predefinido.
+O recurso **plannerRecentPlanReferenceCollection** representa a coleção de referências a planos que foram exibidos recentemente por um usuário. Esse recurso é um tipo aberto e faz parte do objeto [plannerUser](planneruser.md) . O nome da propriedade é a ID do plano correspondente. O valor no par propriedade-valor é o objeto [plannerRecentPlanReference](plannerrecentplanreference.md) .
+Adicionar novas referências a essa coleção removerá automaticamente as entradas mais antigas quando o tamanho da coleção exceder um valor máximo pré-determinado.
 
 
 ## <a name="properties"></a>Propriedades
-Você pode definir as propriedades desse tipo aberto. Os nomes de propriedade são `id` valores de recursos de [plannerPlan](plannerplan.md) e seus valores devem ser [plannerRecentPlanReference](plannerrecentplanreference.md) objetos. Para remover um item na lista de Favoritos, defina o valor da propriedade como `null`.
+Você pode definir as propriedades desse tipo aberto. Os nomes das propriedades `id` são valores dos recursos [plannerPlan](plannerplan.md) e seus valores devem ser objetos [plannerRecentPlanReference](plannerrecentplanreference.md) . Para remover um item da lista favoritos, defina o valor da propriedade como `null`.
 
 
 ## <a name="json-representation"></a>Representação JSON

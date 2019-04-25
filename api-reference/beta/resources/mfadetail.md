@@ -1,24 +1,24 @@
 ---
-title: tipo de recurso de mfaDetail
-description: 'Indica os detalhes MFA para uma entrada específica. Inclui o método de autenticação usado para fazer o login, bem como detalhes de autenticação (por exemplo: telefone, SMS ou caixa postal) '
+title: tipo de recurso mfaDetail
+description: 'Indica os detalhes de MFA de uma entrada específica. Ele inclui o método de autenticação usado para entrar e os detalhes de autenticação (por exemplo: telefone, SMS ou caixa postal) '
 localization_priority: Normal
 ms.openlocfilehash: 5069045fd202d443a94a80f7333f12ab5e707ada
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27883738"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581475"
 ---
-# <a name="mfadetail-resource-type"></a>tipo de recurso de mfaDetail
-Indica os detalhes MFA para uma entrada específica. Inclui o método de autenticação usado para fazer o login, bem como detalhes de autenticação (por exemplo: telefone, SMS ou caixa postal) 
+# <a name="mfadetail-resource-type"></a>tipo de recurso mfaDetail
+Indica os detalhes de MFA de uma entrada específica. Ele inclui o método de autenticação usado para entrar e os detalhes de autenticação (por exemplo: telefone, SMS ou caixa postal) 
 
 
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|authDetail|Cadeia de caracteres|Indica o detalhe de autenticação MFA da atividade de entrada correspondentes quando o MFA necessário é "Yes".|
-|authMethod|Cadeia de caracteres|Indica os métodos de autenticação MFA (SMS, telefone, autenticador App são alguns do valor) para a atividade de entrada correspondente quando o campo MFA necessário é "Yes".|
+|authDetail|String|Indica o detalhe de autenticação da MFA para a atividade de entrada correspondente quando a MFA necessária for "Sim".|
+|authMethod|String|Indica os métodos de autenticação da MFA (SMS, Phone, o aplicativo autenticador são alguns dos valores) para a atividade de entrada correspondente quando o campo obrigatório do MFA é "Yes".|
 
 ## <a name="json-representation"></a>Representação JSON
 

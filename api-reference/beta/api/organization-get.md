@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 0313fb5912d8cc9e12319fafac518becfee105a7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520078"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539787"
 ---
 # <a name="get-organization"></a>Obter organização
 
@@ -17,7 +17,7 @@ ms.locfileid: "29520078"
 
 Recupere as propriedades e os relacionamentos da organização autenticada no momento.
 
-Desde que o recurso de **organização** oferece suporte às [extensões](/graph/extensibility-overview), você também pode usar o `GET` operação obter dados de extensão e propriedades personalizadas em uma instância da **organização** .
+Como o recurso de **organização** suporta [extensões](/graph/extensibility-overview), você também pode usar `GET` a operação para obter propriedades personalizadas e dados de extensão em uma instância de **organização** .
 
 ## <a name="permissions"></a>Permissões
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | User.Read, Directory.Read.All |
-|Delegada (conta pessoal da Microsoft) | Sem suporte. |
+|Delegado (conta corporativa ou de estudante) | User. Read, Directory. Read. All |
+|Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo | Directory.Read.All |
 
 > Observação: os aplicativos que têm a permissão User.Read só conseguem ler as propriedades *id*, *displayName* e *verifiedDomains* da organização.  Todas as outras propriedades retornarão valores `null`. Para ler todas as propriedades, use Directory.Read.All.

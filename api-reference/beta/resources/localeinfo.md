@@ -3,11 +3,11 @@ title: Tipo de recurso localeInfo
 description: Informações sobre a localidade, incluindo o idioma preferencial e o país/região do usuário conectado.
 localization_priority: Normal
 ms.openlocfilehash: 7414130c1ed1e85353c653d9bbd36a0e488bcea9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520211"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32578149"
 ---
 # <a name="localeinfo-resource-type"></a>Tipo de recurso localeInfo
 
@@ -19,8 +19,8 @@ Informações sobre a localidade, incluindo o idioma preferencial e o país/regi
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|localidade|string|Uma representação da localidade do usuário, que inclui o idioma preferencial do usuário e o país/região. Por exemplo, "pt-br". O componente do idioma segue um padrão de código de duas letras, conforme definido na [ISO 639-1](https://www.iso.org/iso/home/standards/language_codes.htm), e o componente do país segue um padrão de código de duas letras, conforme definido na [ISO 3166-1 alpha-2](https://www.iso.org/iso/country_codes.htm).|
-|displayName|string|Um nome que representa a localidade do usuário em seu idioma natural, por exemplo, "Português (Brasil)".|
+|locale|string|Uma representação da localidade do usuário, que inclui o idioma preferencial do usuário e o país/região. Por exemplo, "pt-br". O componente do idioma segue um padrão de código de duas letras, conforme definido na [ISO 639-1](https://www.iso.org/iso/home/standards/language_codes.htm), e o componente do país segue um padrão de código de duas letras, conforme definido na [ISO 3166-1 alpha-2](https://www.iso.org/iso/country_codes.htm).|
+|displayName|cadeia de caracteres|Um nome que representa a localidade do usuário em seu idioma natural, por exemplo, "Português (Brasil)".|
 
 ## <a name="json-representation"></a>Representação JSON
 

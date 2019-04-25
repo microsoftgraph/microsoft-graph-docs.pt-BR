@@ -1,27 +1,27 @@
 ---
-title: recurso de educationSynchronizationOAuth1ConnectionSettings
-description: Quando OAuth1 deve ser usado para se conectar ao provedor de dados, esse tipo de configurações de conexão deve ser usado para configurar o perfil.
+title: recurso educationSynchronizationOAuth1ConnectionSettings
+description: Quando o OAuth1 é usado para se conectar ao provedor de dados, esse tipo de configuração de conexão deve ser usado para configurar o perfil.
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: 71e45033c022061b72c1ea0be815ff3e0b611475
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516669"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542817"
 ---
-# <a name="educationsynchronizationoauth1connectionsettings-resource"></a>recurso de educationSynchronizationOAuth1ConnectionSettings
+# <a name="educationsynchronizationoauth1connectionsettings-resource"></a>recurso educationSynchronizationOAuth1ConnectionSettings
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Quando OAuth1 deve ser usado para se conectar ao provedor de dados, esse tipo de configurações de conexão deve ser usado para configurar o perfil.
+Quando o OAuth1 é usado para se conectar ao provedor de dados, esse tipo de configuração de conexão deve ser usado para configurar o perfil.
 
-Derivado do [microsoft.graph.educationSynchronizationConnectionSettings](educationsynchronizationconnectionsettings.md).
+Derivado de [Microsoft. Graph. educationSynchronizationConnectionSettings](educationsynchronizationconnectionsettings.md).
 
 ## <a name="properties"></a>Propriedades
 
-Não há propriedades adicionais são expostas por esse tipo.
+Nenhuma propriedade adicional é exposta por esse tipo.
 
 ## <a name="json-representation"></a>Representação JSON
 <!-- {

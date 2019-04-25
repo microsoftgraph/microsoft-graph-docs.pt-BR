@@ -1,21 +1,21 @@
 ---
-title: Criar membro
-description: Use essa API para criar um novo membro.
+title: Criar memberOf
+description: Use esta API para criar um novo memberOf.
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 466074d2d23dc4b991c8c153252028587fd5afcc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518916"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539705"
 ---
-# <a name="create-memberof"></a>Criar membro
+# <a name="create-memberof"></a>Criar memberOf
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use essa API para criar um novo membro.
+Use esta API para criar um novo memberOf.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 

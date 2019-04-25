@@ -1,19 +1,19 @@
 ---
 title: Tipo de recurso itemAttachment
-description: Um contato, evento ou mensagem anexado a outro evento,
+description: Um contato, evento ou mensagem que está anexado a outro evento,
 localization_priority: Normal
 ms.openlocfilehash: cce33cb7597f04435daff723a0125305968eea99
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640417"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581089"
 ---
 # <a name="itemattachment-resource-type"></a>Tipo de recurso itemAttachment
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Um contato, evento ou mensagem anexado a outro [evento](../resources/event.md), [mensagem](../resources/message.md), [tarefa do Outlook](../resources/outlooktask.md)ou [postar](../resources/post.md).  
+Um contato, evento ou mensagem que está anexado a outro [evento](../resources/event.md), [mensagem](../resources/message.md), [tarefa do Outlook](../resources/outlooktask.md)ou [postagem](../resources/post.md).  
 
 Derivado de [attachment](attachment.md).
 
@@ -22,22 +22,22 @@ Derivado de [attachment](attachment.md).
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
 |[Get](../api/attachment-get.md) | [itemAttachment](itemattachment.md) |Leia as propriedades e os relacionamentos do objeto itemAttachment.|
-|[Delete](../api/attachment-delete.md) | Nenhum |Exclua o objeto itemAttachment. |
+|[Excluir](../api/attachment-delete.md) | Nenhum |Exclua o objeto itemAttachment. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |contentType|String|O tipo de conteúdo do anexo.|
-|id|String| A ID do anexo.|
+|id|Cadeia de caracteres| A ID do anexo.|
 |isInline|Booliano|Defina como verdadeiro se o anexo estiver embutido, como uma imagem incorporada no corpo do item.|
 |lastModifiedDateTime|DateTimeOffset|Última data e hora em que o anexo foi alterado.|
-|name|Cadeia de caracteres|O nome de exibição do anexo.|
+|name|String|O nome de exibição do anexo.|
 |size|Int32|O tamanho do anexo em bytes.|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|item|[OutlookItem](outlookitem.md)|O contato anexado, mensagem ou evento. Propriedade de navegação.|
+|item|[OutlookItem](outlookitem.md)|O contato anexado, a mensagem ou o evento. Propriedade de navegação.|
 
 ## <a name="json-representation"></a>Representação JSON
 

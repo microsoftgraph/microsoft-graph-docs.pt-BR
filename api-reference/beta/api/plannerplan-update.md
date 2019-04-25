@@ -1,21 +1,21 @@
 ---
-title: Atualizar plannerplan
-description: Atualize as propriedades do objeto **plannerplan**.
+title: Atualizar plannerPlan
+description: Atualize as propriedades do objeto **plannerPlan** .
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 86f486ceb5b2adca66049e5370dc0b6fa5c670ff
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509068"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538933"
 ---
-# <a name="update-plannerplan"></a>Atualizar plannerplan
+# <a name="update-plannerplan"></a>Atualizar plannerPlan
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades do objeto **plannerplan**.
+Atualize as propriedades do objeto **plannerPlan** .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -37,19 +37,19 @@ PATCH /planner/plans/<id>
 | Nome       | Descrição|
 |:-----------|:-----------|
 | Autorização  | {token} de portador. Obrigatório. |
-| If-Match  | O último valor ETag conhecido do objeto plannerPlan a ser atualizado. Obrigatório.|
+| If-Match  | Último valor de ETag conhecido para o plannerPlan a ser atualizado. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|owner|String|[Grupo](../resources/group.md) `id` ao qual o plano pertence. Deve haver um grupo válido para que esse campo possa ser definido. Após definido, ele só poderá ser atualizado pelo proprietário.|
+|owner|String|[Grupo](../resources/group.md) `id` pelo qual o plano é proprietário. Um grupo válido deve existir antes que este campo possa ser definido. Uma vez definido, isso só pode ser atualizado pelo proprietário.|
 |title|Cadeia de caracteres|Título do plano.|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [plannerPlan](../resources/plannerplan.md) atualizado no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [plannerPlan](../resources/plannerplan.md) atualizado no corpo da resposta.
 
 Este método pode retornar qualquer um dos [códigos de status de HTTP](/graph/errors). Os erros mais comuns que os aplicativos devem tratar para esse método são as respostas 400, 403, 404, 409 e 412. Saiba mais sobre esses erros em [Condições de erro comuns do Planner](../resources/planner-overview.md#common-planner-error-conditions).
 

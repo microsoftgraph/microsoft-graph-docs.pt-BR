@@ -1,19 +1,19 @@
 ---
-title: Atualizar synchronizationTemplate
-description: Atualização (substituição) o modelo de sincronização associado a um determinado aplicativo.
+title: Atualizar synchronizationtemplate
+description: Atualizar (substituir) o modelo de sincronização associado a um determinado aplicativo.
 localization_priority: Normal
 ms.openlocfilehash: 152186afd9f7b7cce2a04170de7148d454525d80
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517460"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536858"
 ---
-# <a name="update-synchronizationtemplate"></a>Atualizar synchronizationTemplate
+# <a name="update-synchronizationtemplate"></a>Atualizar synchronizationtemplate
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualização (substituição) o modelo de sincronização associado a um determinado aplicativo.
+Atualizar (substituir) o modelo de sincronização associado a um determinado aplicativo.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -38,7 +38,7 @@ PUT application/{id}/synchronization/templates/{templateId}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece o objeto [synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) para substituir o modelo existente. Verifique se que todas as propriedades são fornecidas. Propriedades ausentes serão apagadas.
+No corpo da solicitação, forneça o [](../resources/synchronization-synchronizationtemplate.md) objeto synchronizationtemplate para substituir o modelo existente. Certifique-se de que todas as propriedades sejam fornecidas. As propriedades ausentes serão apagadas.
 
 ### <a name="response"></a>Resposta
 
@@ -47,9 +47,9 @@ Se bem-sucedido, este método retorna um código de resposta `204 No Content`. N
 ### <a name="examples"></a>Exemplos
 
 ##### <a name="request"></a>Solicitação
-O exemplo a seguir é um exemplo de uma solicitação. 
+Veja a seguir um exemplo de uma solicitação. 
 
->**Observação:** O objeto request mostrado aqui é abreviado para fins de legibilidade. Inclua todas as propriedades em uma chamada real.
+>**Observação:** O objeto Request mostrado aqui é reduzido para legibilidade. Incluir todas as propriedades em uma chamada real.
 <!-- {
   "blockType": "request",
   "name": "update_synchronizationtemplate"
@@ -67,7 +67,7 @@ Content-type: application/json
 ```
 
 ##### <a name="response"></a>Resposta
-O exemplo a seguir é um exemplo de uma resposta.
+Veja a seguir um exemplo de uma resposta.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,19 +1,19 @@
 ---
 title: Atualizar synchronizationSchema
-description: Atualize o esquema de sincronização para um determinado trabalho ou de um modelo. Esse método substitui totalmente o esquema atual com aquele fornecido na solicitação. Para atualizar o esquema de um modelo, faça a chamada no objeto application. Você deve ser o proprietário do aplicativo.
+description: Atualize o esquema de sincronização de um determinado trabalho ou modelo. Esse método substitui completamente o esquema atual pelo fornecido na solicitação. Para atualizar o esquema de um modelo, faça a chamada no objeto Application. Você deve ser o proprietário do aplicativo.
 localization_priority: Normal
 ms.openlocfilehash: 13ee7d996b0e02834b77cd222380747c02d7fcc2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525546"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536954"
 ---
 # <a name="update-synchronizationschema"></a>Atualizar synchronizationSchema
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize o esquema de sincronização para um determinado trabalho ou de um modelo. Esse método substitui totalmente o esquema atual com aquele fornecido na solicitação. Para atualizar o esquema de um modelo, faça a chamada no objeto application. Você deve ser o proprietário do aplicativo.
+Atualize o esquema de sincronização de um determinado trabalho ou modelo. Esse método substitui completamente o esquema atual pelo fornecido na solicitação. Para atualizar o esquema de um modelo, faça a chamada no objeto Application. Você deve ser o proprietário do aplicativo.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -39,18 +39,18 @@ PUT /applications/{id}/synchronization/templates/{templateId}/schema
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece o objeto [synchronizationSchema](../resources/synchronization-synchronizationschema.md) para substituir o esquema existente com.
+No corpo da solicitação, forneça o objeto [synchronizationSchema](../resources/synchronization-synchronizationschema.md) para substituir o esquema existente por.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, retorna um `204 No Content` código de resposta. Ele não retornará nada no corpo da resposta.
+Se bem-sucedido, retorna um `204 No Content` código de resposta. Não retorna nada no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ##### <a name="request"></a>Solicitação
-O exemplo a seguir é um exemplo de uma solicitação.
+Veja a seguir um exemplo de uma solicitação.
 
->**Observação:** O objeto request mostrado aqui é abreviado para fins de legibilidade. Fornece todas as propriedades em uma chamada real.
+>**Observação:** O objeto Request mostrado aqui é reduzido para legibilidade. Forneça todas as propriedades em uma chamada real.
 <!-- {
   "blockType": "request",
   "name": "update_synchronizationschema"
@@ -102,7 +102,7 @@ PUT https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs
 ```
 
 ##### <a name="response"></a>Resposta
-O exemplo a seguir é um exemplo de uma resposta.
+Veja a seguir um exemplo de uma resposta.
 <!-- {
   "blockType": "response",
   "truncated": true,

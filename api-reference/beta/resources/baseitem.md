@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: BaseItem
 localization_priority: Normal
 ms.openlocfilehash: 8e01d219fcc67c583fddba8d9893ed94a23c409b
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481969"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535522"
 ---
 # <a name="baseitem-resource-type"></a>Tipo de recurso BaseItem
 
@@ -52,7 +52,7 @@ Veja a seguir uma representação JSON de um recurso **baseItem**.
 
 | Propriedade             | Tipo              | Descrição                                                                            |
 | :------------------- | :---------------- | :------------------------------------------------------------------------------------- |
-| id                   | string            | O identificador exclusivo da unidade. Somente leitura.                                         |
+| id                   | cadeia de caracteres            | O identificador exclusivo da unidade. Somente leitura.                                         |
 | createdBy            | [identitySet][]   | Identidade do usuário, dispositivo ou aplicativo que criou o item. Somente leitura.        |
 | createdDateTime      | dateTimeOffset    | Data e hora de criação do item. Somente leitura.                                             |
 | eTag                 | string            | ETag do item. Somente leitura.                                                          |

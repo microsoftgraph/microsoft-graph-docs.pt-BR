@@ -4,17 +4,17 @@ description: Criar uma extensão aberta (objeto openTypeExtension) e adicionar p
 localization_priority: Normal
 author: dkershaw10
 ms.openlocfilehash: a654d0bc48bc5f4f83be4adaf258fa3186914745
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642706"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539950"
 ---
 # <a name="create-open-extension"></a>Criar extensão aberta
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie uma extensão aberta (objeto[openTypeExtension](../resources/opentypeextension.md) ) e adicionar propriedades personalizadas em uma instância de um recurso com suporte do nova ou existente.
+Crie uma extensão aberta (objeto[openTypeExtension](../resources/opentypeextension.md) ) e adicione Propriedades personalizadas em uma instância nova ou existente de um recurso com suporte.
 
 > **Observação:** Se você estiver criando extensões abertas em recursos do Outlook, confira **considerações específicas do Outlook** no [tipo de recurso openTypeExtension](../resources/opentypeextension.md#outlook-specific-considerations).
 
@@ -90,11 +90,11 @@ Confira a seção [Solicitar corpo](#request-body) sobre como incluir _a extens�
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-Fornecer um corpo JSON de uma [openTypeExtension](../resources/opentypeextension.md), com os seguintes pares nome-valor necessários e quaisquer dados personalizados adicionais. Os dados na carga JSON podem ser primitivos tipos ou matrizes de tipos primitivos.
+Forneça um corpo JSON de um [openTypeExtension](../resources/opentypeextension.md), com os seguintes pares de nome-valor obrigatórios e quaisquer dados personalizados adicionais. Os dados na carga JSON podem ser tipos primitivos ou matrizes de tipos primitivos.
 
 | Name       | Valor |
 |:---------------|:----------|
-| @odata.type | Microsoft.Graph.OpenTypeExtension |
+| @odata.type | Microsoft. Graph. OpenTypeExtension |
 | extensionName | %unique_string% |
 
 Ao criar uma extensão em uma _nova_ instância de recursos, além de novos objetos **openTypeExtension**, fornecem uma representação JSON das propriedades relevantes para criar uma instância de recurso deste tipo.

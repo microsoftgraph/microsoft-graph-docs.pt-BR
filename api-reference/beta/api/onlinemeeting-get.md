@@ -1,24 +1,24 @@
 ---
-title: Get de Reunião Online
-description: Recupere as propriedades e relacionamentos de um objeto **onlineMeeting** .
+title: Obter reunião online
+description: Recupere as propriedades e os relacionamentos de um objeto **onlineMeeting** .
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: ef45d73aef8124d962d05ea84117c93bac16f0a2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510649"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539929"
 ---
-# <a name="get-online-meeting"></a>Get de Reunião Online
+# <a name="get-online-meeting"></a>Obter reunião online
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e relacionamentos de um objeto **onlineMeeting** .
+Recupere as propriedades e os relacionamentos de um objeto **onlineMeeting** .
 
-> **Observação:** O `GET` método está limitado a uma [id de conferência VTC](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up). Essas IDs são geradas para interoperabilidade de vídeo de nuvem licenciados usuários e este método é usado para obter os detalhes para ingressar na reunião.
-> Para fluxos de regulares, o bot pode usar o `joinURL` ingressar em uma reunião e nenhuma pesquisa é necessária.
+> **Observação:** O `GET` método é limitado a uma [ID de conferência do VTC](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up). Essas IDs são geradas para usuários licenciados de Cloud-Video-Interop e este método é usado para obter os detalhes para ingressar na reunião.
+> Para fluxos regulares, o bot pode usar o `joinURL` para ingressar em uma reunião e nenhuma pesquisa é necessária.
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,9 +26,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)           |
 |:---------------------------------------|:------------------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | Não são suportados.                                        |
-| Delegado (conta pessoal da Microsoft) | Não são suportados.                                        |
-| Aplicativo                            | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All |
+| Delegado (conta corporativa ou de estudante)     | Sem suporte.                                        |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                                        |
+| Aplicativo                            | OnlineMeetings. Read. All, OnlineMeetings. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -38,7 +38,7 @@ GET /applications/{id}/onlineMeetings/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método oferece suporte para os [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome          | Descrição               |
@@ -49,7 +49,7 @@ Este método oferece suporte para os [parâmetros de consulta OData](/graph/quer
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` objeto response de código e [onlineMeeting](../resources/onlinemeeting.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [onlineMeeting](../resources/onlinemeeting.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

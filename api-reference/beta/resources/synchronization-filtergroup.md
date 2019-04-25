@@ -1,25 +1,25 @@
 ---
-title: tipo de recurso de filterGroup
-description: Define um conjunto de cláusulas que um objeto deve satisfazer para ser considerados no escopo. Um objeto é considerado no escopo do grupo (o grupo é avaliado para `true`) somente se todas as cláusulas do grupo são avaliadas para `true`.
+title: tipo de recurso de filtro
+description: Define um conjunto de cláusulas que um objeto deve satisfazer para ser considerado em escopo. Um objeto é considerado no escopo do grupo (o grupo é avaliado como `true`) somente se todas as cláusulas do grupo são avaliadas. `true`
 localization_priority: Normal
 ms.openlocfilehash: b71bdf16d6639b5ecc8512565ccf56d592a0da58
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514184"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582028"
 ---
-# <a name="filtergroup-resource-type"></a>tipo de recurso de filterGroup
+# <a name="filtergroup-resource-type"></a>tipo de recurso de filtro
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Define um conjunto de cláusulas que um objeto deve satisfazer para ser considerados no escopo. Um objeto é considerado no escopo do grupo (o grupo é avaliado para `true`) somente se todas as cláusulas do grupo são avaliadas para `true`.
+Define um conjunto de cláusulas que um objeto deve satisfazer para ser considerado em escopo. Um objeto é considerado no escopo do grupo (o grupo é avaliado como `true`) somente se todas as cláusulas do grupo são avaliadas. `true`
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|Cláusulas|coleção [filterClause](synchronization-filterclause.md)|Filtre cláusulas (condições) desse grupo. Todas as cláusulas em um grupo devem ser atendidas para o grupo de filtro a ser avaliada como `true`.|
-|name|String|Legíveis nome do grupo de filtro.|
+|cláusulas|coleção [filterClause](synchronization-filterclause.md)|Cláusulas de filtro (condições) desse grupo. Todas as cláusulas em um grupo devem ser atendidas para que o grupo de filtros seja `true`avaliado.|
+|name|String|Nome legível do grupo de filtros.|
 
 ## <a name="json-representation"></a>Representação JSON
 

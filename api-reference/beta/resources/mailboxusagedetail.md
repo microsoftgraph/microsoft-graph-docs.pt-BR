@@ -1,17 +1,17 @@
 ---
-title: tipo de recurso de mailboxUsageDetail
+title: tipo de recurso mailboxUsageDetail
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 63b4b997a0ae559338fffd2acfabaa35dcc306e0
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27938731"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581265"
 ---
-# <a name="mailboxusagedetail-resource-type"></a>tipo de recurso de mailboxUsageDetail
+# <a name="mailboxusagedetail-resource-type"></a>tipo de recurso mailboxUsageDetail
 
 ## <a name="properties"></a>Propriedades
 

@@ -3,11 +3,11 @@ title: Obter entrada
 description: Recupera as entradas de usuário do Azure AD usuário para seu locatário. Entradas que são interativas na natureza (onde um nome de usuário/senha é passado como parte de símbolo de autorização) e entradas federadas bem-sucedida atualmente estão incluídas nos logs de entrada.
 localization_priority: Priority
 ms.openlocfilehash: 5d2d0513f44196d48aa863ac19838af13d960f85
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643878"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537290"
 ---
 # <a name="get-signin"></a>Obter entrada
 Recupera as entradas de usuário do Azure AD usuário para seu locatário. Entradas que são interativas na natureza (onde um nome de usuário/senha é passado como parte de símbolo de autorização) e entradas federadas bem-sucedida atualmente estão incluídas nos logs de entrada.

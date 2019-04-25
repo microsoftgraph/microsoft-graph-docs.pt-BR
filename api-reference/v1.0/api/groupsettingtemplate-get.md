@@ -1,15 +1,15 @@
 ---
 title: Obter um modelo de configuração de grupo
-description: Um modelo de configuração de grupo representa um modelo de configurações pelo qual as configurações podem ser criadas dentro de um locatário. Esta operação permite recuperação das propriedades do objeto groupSettingTemplate, inclusive as configurações disponíveis e seus padrões.
+description: Um modelo de configuração de grupo representa um modelo de configurações das quais as configurações podem ser criadas em um locatário. Essa operação permite a recuperação das propriedades do objeto groupSettingTemplate, incluindo as configurações disponíveis e seus padrões.
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: ed817747f947f3f8ef7d71d235a40e4237039db1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27934300"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32577774"
 ---
 # <a name="get-a-group-setting-template"></a>Obter um modelo de configuração de grupo
 
@@ -57,7 +57,7 @@ GET https://graph.microsoft.com/v1.0/groupSettingTemplates/{id}
 ```
 ##### <a name="response"></a>Resposta
 
-Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

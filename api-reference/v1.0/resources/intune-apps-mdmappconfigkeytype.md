@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 39dc2aa863af9da2920704ab1c00ac8872c45e90
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30257992"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583925"
 ---
 # <a name="mdmappconfigkeytype-enum-type"></a>tipo de enumeração mdmAppConfigKeyType
 
@@ -21,10 +21,10 @@ Tipos de chave de configuração de aplicativo.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |StringType|,0|Ainda não documentado|
-|IntegerType|1|Ainda não documentado|
-|RealType|duas|Ainda não documentado|
-|BooleanType|3D|Ainda não documentado|
-|TokenType|quatro|Ainda não documentado|
+|IntegerType|1 |Ainda não documentado|
+|RealType|2 |Ainda não documentado|
+|BooleanType|3 |Ainda não documentado|
+|TokenType|4 |Ainda não documentado|
 
 
 

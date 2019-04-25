@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 859428a352d3db6e7c5cbd0688878d3df672eaf5
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30966870"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32577109"
 ---
 # <a name="update-iosvppebook"></a>Atualizar iosVppEBook
 
@@ -48,9 +48,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [iosVppE
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
+|id|Cadeia de caracteres|Chave da entidade. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
 |displayName|String|Nome do livro eletrônico. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
-|descrição|String|Descrição. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
+|description|String|Descrição. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
 |publisher|String|Publicador. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
 |publishedDateTime|DateTimeOffset|A data e hora em que o livro eletrônico foi publicado. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|
 |largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|Capa do livro. Herdada de [managedEBook](../resources/intune-books-managedebook.md)|

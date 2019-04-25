@@ -1,15 +1,15 @@
 ---
 title: Obter eventMessage
-description: Expanda o parâmetro sobre a propriedade de navegação de **evento** para obter o evento associado no calendário do participante.
+description: Expanda o parâmetro na propriedade de navegação de **evento** para obter o evento associado no calendário de um participante.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 53428679904ba41ce5a539d62eba2a48cce4eedc
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27956700"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32584184"
 ---
 # <a name="get-eventmessage"></a>Obter eventMessage
 
@@ -145,7 +145,7 @@ O segundo exemplo mostra como obter o evento associado a uma mensagem de evento.
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkADYAAAImV_jAAA=?$expand=microsoft.graph.eventMessage/event
 ```
 ##### <a name="response-2"></a>Resposta 2
-Veja a seguir um exemplo da resposta. As propriedades do evento correspondente são retornadas na resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. As propriedades do evento correspondente são retornadas na resposta. Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "name": "get_event_based_on_eventmessage",

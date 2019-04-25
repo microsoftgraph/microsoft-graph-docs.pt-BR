@@ -3,18 +3,16 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: Lista as listas do SharePoint em um site
-localization_priority: Normal
+localization_priority: Priority
 ms.prod: sharepoint
 ms.openlocfilehash: c91d7f8f395faa48965cb8334e1cc9eba78b978c
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480709"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540961"
 ---
 # <a name="enumerate-lists-in-a-site"></a>Enumerar listas em um site
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Obter a coleção de [listas][] de um [site][].
 
@@ -34,17 +32,17 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 
 ```http
-GET https://graph.microsoft.com/beta/sites/{site-id}/lists
+GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 ```
 
 ## <a name="example"></a>Exemplo
 
 #### <a name="request"></a>Solicitação
 
-<!-- { "blockType": "request", "name": "enum-lists", "scopes": "sites.read.all service.sharepoint" } -->
+<!-- { "blockType": "request", "name": "enum-lists", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
 ```http
-GET https://graph.microsoft.com/beta/sites/{site-id}/lists
+GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 ```
 
 ##### <a name="response"></a>Resposta
@@ -88,15 +86,10 @@ Para listá-los, inclua `system` na instrução `$select`.
 
 [system]: ../resources/systemfacet.md
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Lists/Enumerate",
-  "suppressions": [
-    "Error: /api-reference/beta/api/list-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": "Lists/Enumerate"
+} -->

@@ -3,11 +3,11 @@ title: Tipo de recurso provisionedPlan
 description: A propriedade **provisionedPlans** das entidades user e organization é uma coleção de **provisionedPlan**.
 localization_priority: Normal
 ms.openlocfilehash: dd8d4f5b406a2291a829d7c11d4948bd9a08d453
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831483"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579661"
 ---
 # <a name="provisionedplan-resource-type"></a>Tipo de recurso provisionedPlan
 
@@ -17,7 +17,7 @@ A propriedade **provisionedPlans** das entidades [user](user.md) e [organization
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|capabilityStatus|Cadeia de caracteres|Por exemplo, “Enabled”.|
+|capabilityStatus|String|Por exemplo, “Enabled”.|
 |provisioningStatus|Cadeia de caracteres|Por exemplo, "Success".|
 |service|Cadeia de caracteres|O nome do serviço; por exemplo, "AccessControlS2S".|
 

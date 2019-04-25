@@ -1,29 +1,29 @@
 ---
-title: tipo de recurso de teamFunSettings
-description: Configurações para configurar o uso de Giphy, memes e adesivos na equipe de.
+title: tipo de recurso teamFunSettings
+description: Configurações que definem o uso de Giphy, memes e figurinhas na equipe.
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 ms.openlocfilehash: dc8d4cfa05f7bc6cbda9dfbf5d113370a1981ba5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515857"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583206"
 ---
-# <a name="teamfunsettings-resource-type"></a>tipo de recurso de teamFunSettings
+# <a name="teamfunsettings-resource-type"></a>tipo de recurso teamFunSettings
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Configurações para configurar o uso de Giphy, adesivos e memes em [equipe](team.md).
+Configurações para configurar o uso de Giphy, memes e selos na [equipe](team.md).
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|allowGiphy|Booliano|Se definido como true, permite que o uso de Giphy.|
-|giphyContentRating|Cadeia de caracteres (enum)|Classificação de conteúdo Giphy. Os valores possíveis são: `moderate` e `strict`.|
-|allowStickersAndMemes|Booliano|Se definido como true, permite que os usuários incluem adesivos e memes.|
-|allowCustomMemes|Booliano|Se definido como true, permite que os usuários incluem memes personalizado.|
+|allowGiphy|Booliano|Se definido como true, habilita o uso do Giphy.|
+|giphyContentRating|Cadeia de caracteres (enum)|Classificação de conteúdo do Giphy. Os valores possíveis são: `moderate` e `strict`.|
+|allowStickersAndMemes|Booliano|Se definido como true, permite que os usuários incluam adesivos e memes.|
+|allowCustomMemes|Booliano|Se definido como true, permite que os usuários incluam memes personalizados.|
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -1,19 +1,19 @@
 ---
 title: 'reportRoot: getOffice365ActivationsUserCounts'
-description: Obter a contagem de usuários que estão habilitados e aqueles que ativado a assinatura do Office na área de trabalho ou dispositivos ou computadores de compartilhadas.
+description: Obtenha a contagem de usuários habilitados e aqueles que ativaram a assinatura do Office em desktops ou dispositivos ou computadores compartilhados.
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: 9a150911e9234cde7258acbeed7f825fb9db4c66
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576098"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582154"
 ---
 # <a name="reportroot-getoffice365activationsusercounts"></a>reportRoot: getOffice365ActivationsUserCounts
 
-Obter a contagem de usuários que estão habilitados e aqueles que ativado a assinatura do Office na área de trabalho ou dispositivos ou computadores de compartilhadas.
+Obtenha a contagem de usuários habilitados e aqueles que ativaram a assinatura do Office em desktops ou dispositivos ou computadores compartilhados.
 
 > **Observação:** para saber mais sobre diferentes visualizações e nomes de relatórios, confira [Relatórios do Office 365 Reports - Ativações do Microsoft Office](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60).
 
@@ -23,8 +23,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :--------------------------------------- |
-| Delegada (conta corporativa ou de estudante)     | Reports.Read.All                         |
-| Delegada (conta pessoal da Microsoft) | Sem suporte.                           |
+| Delegado (conta corporativa ou de estudante)     | Reports.Read.All                         |
+| Delegado (conta pessoal da Microsoft) | Sem suporte.                           |
 | Aplicativo                            | Reports.Read.All                         |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -54,7 +54,7 @@ O arquivo CSV possui os seguintes cabeçalhos para colunas.
 - Tipo de produto
 - Atribuído
 - Ativado
-- Ativação do computador compartilhado
+- Ativação de computador compartilhado
 
 ## <a name="example"></a>Exemplo
 

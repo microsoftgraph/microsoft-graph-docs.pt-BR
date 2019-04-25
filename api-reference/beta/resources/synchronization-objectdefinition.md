@@ -1,26 +1,26 @@
 ---
-title: tipo de recurso de objectDefinition
-description: Descreve um objeto e seus atributos. Definições de objeto fazem parte do directoryDefinition, que é atualizado como parte do synchronizationSchema.
+title: tipo de recurso objectDefinition
+description: Descreve um objeto e seus atributos. As definições de objeto fazem parte do directoryDefinition, que é atualizado como parte do synchronizationSchema.
 localization_priority: Normal
 ms.openlocfilehash: d8182cad44deac156c077e977551abc9c31c7d25
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514128"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581752"
 ---
-# <a name="objectdefinition-resource-type"></a>tipo de recurso de objectDefinition
+# <a name="objectdefinition-resource-type"></a>tipo de recurso objectDefinition
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Descreve um objeto e seus atributos. Definições de objeto fazem parte do [directoryDefinition](synchronization-directorydefinition.md), que é atualizado como parte do [synchronizationSchema](synchronization-synchronizationschema.md).
+Descreve um objeto e seus atributos. As definições de objeto fazem parte do [directoryDefinition](synchronization-directorydefinition.md), que é atualizado como parte do [synchronizationSchema](synchronization-synchronizationschema.md).
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade      | Tipo      | Descrição    |
 |:--------------|:----------|:---------------|
 |attributes     |coleção [attributeDefinition](synchronization-attributedefinition.md)    | Define os atributos do objeto. |
-|Metadata       |coleção [metadataEntry](synchronization-metadataentry.md)   |Propriedades adicionais de extensão. A menos que mencionado explicitamente, valores de metadados não devem ser alterados.|
+|los       |coleção [metadataEntry](synchronization-metadataentry.md)   |Propriedades de extensão adicionais. A menos que seja mencionado explicitamente, os valores de metadados não devem ser alterados.|
 |name           |String     |Nome do objeto. Deve ser exclusivo dentro de uma definição de diretório. Não anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
@@ -43,7 +43,7 @@ Veja a seguir uma representação JSON do recurso.
 }
 ```
 
-## <a name="json-example"></a>Exemplo JSON
+## <a name="json-example"></a>Exemplo de JSON
 
 <!-- {
   "blockType": "resource",

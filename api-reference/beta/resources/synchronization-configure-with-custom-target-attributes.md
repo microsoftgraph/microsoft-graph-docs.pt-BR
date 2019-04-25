@@ -1,25 +1,25 @@
 ---
-title: Configurar a sincronização com atributos personalizados de destino
-description: Você pode personalizar seu esquema de sincronização para incluir atributos personalizados que são definidos no diretório de destino. Este artigo descreve como personalizar uma assinatura de equipe de vendas, adicionando um novo campo denominado `officeCode`. Configurar a sincronização do Azure Active Directory (AD Azure) para a equipe de vendas e para cada usuário, você preencherá o `officeCode` campo na equipe de vendas com o valor do `extensionAttribute10` campo no Azure AD.
+title: Configurar a sincronização com atributos de destino personalizados
+description: Você pode personalizar o esquema de sincronização para incluir atributos personalizados que são definidos no diretório de destino. Este artigo descreve como personalizar uma assinatura do Salesforce adicionando um novo campo chamado `officeCode`. Você configura a sincronização do Azure Active Directory (Azure AD) para o Salesforce e para cada usuário, você preencherá o `officeCode` campo na Salesforce com o valor do `extensionAttribute10` campo no Azure AD.
 localization_priority: Normal
 ms.openlocfilehash: 1b0a19bab796f7bd8261ebf898450c07bf1415e0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508878"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582109"
 ---
-# <a name="configure-synchronization-with-custom-target-attributes"></a>Configurar a sincronização com atributos personalizados de destino
+# <a name="configure-synchronization-with-custom-target-attributes"></a>Configurar a sincronização com atributos de destino personalizados
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Você pode personalizar seu esquema de sincronização para incluir atributos personalizados que são definidos no diretório de destino. Este artigo descreve como personalizar uma assinatura de equipe de vendas, adicionando um novo campo denominado `officeCode`. Configurar a sincronização do Azure Active Directory (AD Azure) para a equipe de vendas e para cada usuário, você preencherá o `officeCode` campo na equipe de vendas com o valor do `extensionAttribute10` campo no Azure AD.
+Você pode personalizar o esquema de sincronização para incluir atributos personalizados que são definidos no diretório de destino. Este artigo descreve como personalizar uma assinatura do Salesforce adicionando um novo campo chamado `officeCode`. Você configura a sincronização do Azure Active Directory (Azure AD) para o Salesforce e para cada usuário, você preencherá o `officeCode` campo na Salesforce com o valor do `extensionAttribute10` campo no Azure AD.
 
-Este artigo pressupõe que você já tenha adicionado a um aplicativo que oferece suporte à sincronização ao seu locatário através do [Portal do Windows Azure](https://portal.azure.com), você sabe o nome de exibição do aplicativo, e você tem um token de autorização para o Microsoft Graph. Para obter informações sobre como obter o token de autorização, consulte [tokens de acesso de Get para chamar o Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview).
+Este artigo pressupõe que você já tenha adicionado um aplicativo que oferece suporte à sincronização do seu locatário através do [portal do Azure](https://portal.azure.com), que você conhece o nome de exibição do aplicativo e que você tem um token de autorização para o Microsoft Graph. Para obter informações sobre como obter o token de autorização, confira [obter tokens de acesso para chamar o Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview).
 
-## <a name="find-the-service-principal-object-by-display-name"></a>Localizar o objeto de entidade de serviço por nome para exibição
+## <a name="find-the-service-principal-object-by-display-name"></a>Localizar o objeto de entidade de serviço por nome de exibição
 
-O exemplo a seguir mostra como localizar um objeto de entidade de serviço com o nome de exibição a equipe de vendas.
+O exemplo a seguir mostra como localizar um objeto de entidade de serviço com o nome de exibição Salesforce.
 
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals?$select=id,appId,displayName&$filter=startswith(displayName, 'salesforce')
@@ -50,9 +50,9 @@ Authorization: Bearer {Token}
 O `{servicePrincipalId}` é `167e33e9-f80e-490e-b4d8-698d4a80fb3e`.
 
 
-## <a name="list-synchronization-jobs-in-the-context-of-the-service-principal"></a>Trabalhos de sincronização de lista no contexto da entidade de serviço 
+## <a name="list-synchronization-jobs-in-the-context-of-the-service-principal"></a>Listar trabalhos de sincronização no contexto da entidade de serviço 
 
-O exemplo a seguir mostra como obter o `jobId` que você precisa para trabalhar com. Geralmente, a resposta retorna somente um trabalho.
+O exemplo a seguir mostra como obter o `jobId` que você precisa para trabalhar. Geralmente, a resposta retorna apenas um trabalho.
 
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a53b658cb5e1/synchronization/jobs
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalId}/sync
 Authorization: Bearer {Token}
 ```
 
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. Serão retornadas todas as propriedades em uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas em uma chamada real.
 
 <!-- {
   "blockType": "response",
@@ -183,20 +183,20 @@ HTTP/1.1 200 OK
 }
 ```
 
-## <a name="add-a-definition-for-the-officecode-attribute-and-a-mapping-between-attributes"></a>Adicione uma definição para o atributo officeCode e um mapeamento entre os atributos
+## <a name="add-a-definition-for-the-officecode-attribute-and-a-mapping-between-attributes"></a>Adicionar uma definição para o atributo officeCode e um mapeamento entre atributos
 
-Use um editor de texto sem formatação de sua preferência (por exemplo, [o bloco de notas + +](https://notepad-plus-plus.org/) ou [Editor JSON Online](https://www.jsoneditoronline.org/)) para:
+Use um editor de texto sem formatação de sua escolha (por exemplo, [bloco de notas + +](https://notepad-plus-plus.org/) ou [Editor JSON online](https://www.jsoneditoronline.org/)) para:
 
-1. Adicionar uma [definição de atributo](synchronization-attributedefinition.md) para o `officeCode` atributo. 
+1. Adicione uma [definição de atributo](synchronization-attributedefinition.md) para `officeCode` o atributo. 
 
-    - Em diretórios, encontre o diretório com o nome salesforce.com e na matriz do objeto, encontre o nomeado de um **usuário**.
-    - Adicione o novo atributo à lista, especificando o nome e tipo, conforme mostrado no exemplo a seguir.
+    - Em diretórios, encontre o diretório com o nome salesforce.com e, na matriz do objeto, localize aquele chamado **usuário**.
+    - Adicione o novo atributo à lista, especificando o nome e o tipo, conforme mostrado no exemplo a seguir.
 
-2. Adicionar um [mapeamento de atributo](synchronization-attributemapping.md) entre `officeCode` e `extensionAttribute10`.
+2. Adicione um [mapeamento](synchronization-attributemapping.md) de atributos `officeCode` entre `extensionAttribute10`o e o.
 
-    - Em [synchronizationRules](synchronization-synchronizationrule.md), localize a regra que especifica o Azure AD como o diretório de origem e Salesforce.com como o diretório de destino (`"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"`).
-    - Em [objectMappings](synchronization-objectmapping.md) da regra, localize o mapeamento entre usuários (`"sourceObjectName": "User",   "targetObjectName": "User"`).
-    - Na matriz [attributeMappings](synchronization-attributemapping.md) do **objectMapping**, adicione uma nova entrada, conforme mostrado no exemplo a seguir.
+    - Em [synchronizationRules](synchronization-synchronizationrule.md), localize a regra que especifica o Azure ad como o diretório de origem e Salesforce.com como o diretório de`"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"`destino ().
+    - Nos objectMappings da regra, encontre o mapeamento entre usuários ( [](synchronization-objectmapping.md) `"sourceObjectName": "User",   "targetObjectName": "User"`).
+    - Na matriz [attributeMappings](synchronization-attributemapping.md) do objectmapping ****, adicione uma nova entrada, conforme mostrado no exemplo a seguir.
 
 ```json
 {  
@@ -246,9 +246,9 @@ Use um editor de texto sem formatação de sua preferência (por exemplo, [o blo
 }
 ```
 
-## <a name="save-the-modified-synchronization-schema"></a>Salvar o esquema de sincronização modificadas
+## <a name="save-the-modified-synchronization-schema"></a>Salvar o esquema de sincronização modificado
 
-Quando você salva o esquema de sincronização atualizados, certifique-se de que você inclua o esquema inteiro, incluindo as partes não modificadas. Essa solicitação substituirão o esquema existente com aquele que você fornecer.
+Ao salvar o esquema de sincronização atualizado, certifique-se de incluir o esquema inteiro, incluindo as partes não modificadas. Essa solicitação substituirá o esquema existente pelo que você fornecer.
 
 ```http
 PUT https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalId}/synchronization/jobs/{jobId}/schema
@@ -261,7 +261,7 @@ Authorization: Bearer {Token}
 HTTP/1.1 201 No Content
 ```
 
-Se o esquema foi salvo com êxito, na iteração seguinte do trabalho de sincronização, ele iniciará o processamento novamente todas as contas no seu Azure AD e os novos mapeamentos serão aplicados a todas as contas provisionadas.
+Se o esquema foi salvo com êxito, na próxima iteração do trabalho de sincronização, ele começará a reprocessar todas as contas em seu Azure AD e os novos mapeamentos serão aplicados a todas as contas provisionadas.
 <!--
 {
   "type": "#page.annotation",

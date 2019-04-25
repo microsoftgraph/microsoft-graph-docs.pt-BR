@@ -1,31 +1,31 @@
 ---
-title: tipo de recurso de mediaStream
-description: O tipo de mediaStream.
+title: tipo de recurso mediaStream
+description: O tipo mediaStream.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 4867675da3427beb790beb240cd7bc0b86f04317
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519959"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581526"
 ---
-# <a name="mediastream-resource-type"></a>tipo de recurso de mediaStream
+# <a name="mediastream-resource-type"></a>tipo de recurso mediaStream
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O tipo de mediaStream.
+O tipo mediaStream.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade    | Tipo    | Descrição                                                                                                   |
 | :---------- | :------ | :------------------------------------------------------------------------------------------------------------ |
-| Direction   | String  | A direção. Os valores possíveis são `inactive`, `sendOnly`, `receiveOnly`, `sendReceive`.                  |
-| rótulo       | String  | O rótulo de fluxo de mídia.                                                                                       |
-| MediaType   | String  | O tipo de mídia. Os valores possíveis são `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.        |
-| serverMuted | Booliano | Se a mídia está sem som pelo servidor.                                                                          |
-| SourceId    | String  | A ID de origem.                                                                                                |
+| direction   | String  | A direção. Os valores possíveis são `inactive`: `sendOnly` `receiveOnly`,, `sendReceive`,.                  |
+| rótulo       | String  | O rótulo do fluxo de mídia.                                                                                       |
+| Mídia   | String  | O tipo de mídia. O valor possível é `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.        |
+| serverMuted | Booliano | Se a mídia estiver com mudo ativado pelo servidor.                                                                          |
+| sourceId    | String  | A ID da fonte.                                                                                                |
 
 ## <a name="json-representation"></a>Representação JSON
 

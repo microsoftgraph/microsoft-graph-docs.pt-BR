@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: Thumbnail
 localization_priority: Normal
 ms.openlocfilehash: 485714109005415d4a2c98fbbf2befb50ca991d0
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481752"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582848"
 ---
 # <a name="thumbnail-resource-type"></a>Tipo de recurso thumbnail
 
@@ -52,7 +52,7 @@ Veja a seguir uma representação JSON de um recurso **thumbnail**.
 
 | Nome    | Tipo   | Descrição                           |
 | :------ | :----- | :------------------------------------ |
-| content | Fluxo | O fluxo de conteúdo da miniatura. |
+| conteúdo | Fluxo | O fluxo de conteúdo da miniatura. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

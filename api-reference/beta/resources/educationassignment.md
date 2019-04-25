@@ -5,11 +5,11 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 ms.openlocfilehash: 03612cd65dbefac4e31f1a4d06085ba635fe1eab
-ms.sourcegitcommit: 3410e1b8dcf62a7b0e4d6b11920912479f21feb2
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30800002"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543039"
 ---
 # <a name="educationassignment-resource-type"></a>tipo de recurso educationAssignment
 
@@ -33,7 +33,7 @@ As APIs de atribuição são expostas no namespace da classe.
 |[Adicionar categorias](../api/educationassignment-add-categories.md) |[educationCategory](educationcategory.md) | Atribua um **educationCategory** pertencente à classe a essa atribuição.|
 |[Remover categoria](../api/educationassignment-remove-category.md) |Nenhum| Remover um **educationCategory** pertencente à classe dessa atribuição.|
 |[Update](../api/educationassignment-update.md) | [educationAssignment](educationassignment.md) |Atualize um objeto **educationAssignment** . |
-|[Excluir](../api/educationassignment-delete.md) | Nenhuma |Excluir um objeto **educationAssignment** . |
+|[Excluir](../api/educationassignment-delete.md) | Nenhum |Excluir um objeto **educationAssignment** . |
 |[Publish](../api/educationassignment-publish.md)|[educationAssignment](educationassignment.md)|Alterar o estado de um objeto **educationAssignment** de rascunho para publicado.|
 |[Obter URL da pasta do recurso](../api/educationassignment-getresourcesfolderurl.md)| string| A pasta do OneDrive em que os recursos baseados em arquivo devem ser colocados para fazer parte de um recurso de atribuição. Os arquivos devem estar localizados nessa pasta para serem adicionados como um recurso.|
 
@@ -62,7 +62,7 @@ As APIs de atribuição são expostas no namespace da classe.
 |:---------------|:--------|:----------|
 |recursos|coleção [educationAssignmentResource](educationassignmentresource.md)| Objetos de aprendizado associados a essa atribuição.  Somente os professores podem modificar essa lista. Anulável.|
 |envios|coleção [educationSubmission](educationsubmission.md)| Depois de publicado, há um objeto de envio para cada aluno representando seu trabalho e classificação.  Somente leitura. Anulável.|
-|Categorias|coleção [educationCategory](educationcategory.md)| Quando definido, permite que os usuários encontrem facilmente as atribuições de um determinado tipo.  Somente leitura. Anulável.|
+|categories|coleção [educationCategory](educationcategory.md)| Quando definido, permite que os usuários encontrem facilmente as atribuições de um determinado tipo.  Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 

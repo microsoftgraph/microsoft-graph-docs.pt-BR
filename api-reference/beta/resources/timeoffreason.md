@@ -5,11 +5,11 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 72597fa1678110a40b9dd1a0ea6e6235625144ab
-ms.sourcegitcommit: 081cacecb4960aabc9e1011d12f06fe9ecf7d188
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30657529"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582852"
 ---
 # <a name="timeoffreason-resource-type"></a>tipo de recurso timeOffReason
 
@@ -21,22 +21,22 @@ Uma razão válida para uma instância do [timeOff](timeoff.md) em um [cronogram
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[Criar timeOffReason](../api/schedule-post-timeoffreasons.md) | [timeOffReason](timeoffreason.md) | Criar um novo `timeOffReason`.|
-|[Listar timeOffReason](../api/schedule-list-timeoffreasons.md) | coleção [timeOffReason](timeoffreason.md) | Obtenha a lista `timeOffReasons` em um cronograma.|
-|[Obter timeOffReason](../api/timeoffreason-get.md) | [timeOffReason](timeoffreason.md) | Obter a `timeOffReason` por ID.|
-|[Substituir timeOffReason](../api/timeoffreason-put.md) | [timeOffReason](timeoffreason.md) | Substitua um `timeOffReason`.|
+|[Criar timeOffReason](../api/schedule-post-timeoffreasons.md) | [timeOffReason](timeoffreason.md) | Criar uma página `timeOffReason`.|
+|[Listar timeOffReason](../api/schedule-list-timeoffreasons.md) | coleção [timeOffReason](timeoffreason.md) | Obter uma lista dos `timeOffReasons` em um cronograma.|
+|[Obter timeOffReason](../api/timeoffreason-get.md) | [timeOffReason](timeoffreason.md) | Obter um `timeOffReason` por ID.|
+|[Substituir timeOffReason](../api/timeoffreason-put.md) | [timeOffReason](timeoffreason.md) | Substituir um `timeOffReason`.|
 |[Excluir timeOffReason](../api/timeoffreason-delete.md) | Nenhum | Marcar `timeOffReason` como inativa.|
 
 ## <a name="properties"></a>Propriedades
 |Nome          |Tipo           |Descrição                                                                                 |
 |--------------|---------------|--------------------------------------------------------------------------------------------|
-| id            |`string`      |ID do `timeOffReason`.|
-| displayName               | `string`                  | O nome do `timeOffReason`. Obrigatório. |
+| id            |`string`      |A ID da tarefa `timeOffReason`.|
+| Nome para exibição               | `string`                  | O nome do `timeOffReason`. Obrigatório. |
 | icontype | `enum`   | Tipos de ícone suportados: nenhum; automóvel dos com plano firstAid; Doutor Não funciona; medição juryDuty; Globe copo telefone Weather abrangência piggyBank; cachorro torta trafficCone; pessoal ensolarado. Obrigatório. |
-| IsActive          |`bool`      | Indica se o `timeOffReason` pode ser usado ao criar novas entidades ou atualizar as existentes. Obrigatório. |
-| createdDateTime       |`DateTimeOffset`        |O carimbo de data/hora `timeOffReason` em que foi criado pela primeira vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 teria a seguinte aparência: ' 2014-01-01T00:00:00Z '. |
-| lastModifiedDateTime      |`DateTimeOffset`         |O carimbo de data/hora `timeOffReason` em que foi atualizado pela última vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 teria a seguinte aparência: ' 2014-01-01T00:00:00Z '. |
-| lastModifiedBy        |`microsoft.graph.identitySet`        |A identidade que foi atualizada pela `timeOffReason`última vez.|
+| isActive          |`bool`      | Indica se o `timeOffReason` pode ser usada na criação de novas entidades ou atualizar as existentes. Obrigatório. |
+| createdDateTime       |`DateTimeOffset`        |O carimbo de data/hora `timeOffReason` em que foi criado pela primeira vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: '2014-01-01T00:00:00Z'. |
+| lastModifiedDateTime      |`DateTimeOffset`         |O carimbo de data/hora `timeOffReason` em que foi atualizado pela última vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: '2014-01-01T00:00:00Z'. |
+| lastModifiedBy        |`microsoft.graph.identitySet`        |A identidade da última atualização `timeOffReason`.|
 
 ## <a name="json-representation"></a>Representação JSON
 

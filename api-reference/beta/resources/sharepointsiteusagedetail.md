@@ -1,16 +1,16 @@
 ---
-title: tipo de recurso de sharePointSiteUsageDetail
+title: tipo de recurso sharePointSiteUsageDetail
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: e0827f6b6b991136198fc174e01e7d0e1f91c259
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27959906"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583995"
 ---
-# <a name="sharepointsiteusagedetail-resource-type"></a>tipo de recurso de sharePointSiteUsageDetail
+# <a name="sharepointsiteusagedetail-resource-type"></a>tipo de recurso sharePointSiteUsageDetail
 
 ## <a name="properties"></a>Propriedades
 
@@ -18,18 +18,18 @@ ms.locfileid: "27959906"
 | :---------------------- | :------ |
 | reportRefreshDate       | Data    |
 | siteId                  | Guid  |
-| siteUrl                 | Cadeia de caracteres  |
-| ownerDisplayName        | Cadeia de caracteres  |
+| siteUrl                 | String  |
+| ownerDisplayName        | String  |
 | isDeleted               | Booliano |
 | lastActivityDate        | Data    |
-| fileCount               | Int64   |
+| Contagem de FileCount               | Int64   |
 | activeFileCount         | Int64   |
 | pageViewCount           | Int64   |
 | visitedPageCount        | Int64   |
 | storageUsedInBytes      | Int64   |
 | storageAllocatedInBytes | Int64   |
-| rootWebTemplate         | Cadeia de caracteres  |
-| reportPeriod            | Cadeia de caracteres  |
+| rootWebTemplate         | String  |
+| reportPeriod            | String  |
 
 ## <a name="json-representation"></a>Representação JSON
 

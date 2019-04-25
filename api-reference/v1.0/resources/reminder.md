@@ -3,11 +3,11 @@ title: Tipo de recurso reminder
 description: Um lembrete para um evento em um calendário do usuário.
 localization_priority: Normal
 ms.openlocfilehash: e8aa591f078b90249b36d3dc2f666ddac4502461
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815719"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579342"
 ---
 # <a name="reminder-resource-type"></a>Tipo de recurso reminder
 
@@ -18,10 +18,10 @@ Um lembrete para um [evento](event.md) em um [calendário](calendar.md)do usuár
 |:---------------|:--------|:----------|
 |changeKey|String|Identifica a versão do lembrete. Toda vez que o lembrete é alterado, **changeKey** também muda. Isso permite que o Exchange aplique as alterações na versão correta do objeto.|
 |eventEndTime|[DateTimeTimeZone](datetimetimezone.md)|A data, a hora e o fuso horário em que o evento termina.|
-|eventId|Cadeia de caracteres|A ID exclusiva do evento. Somente leitura.|
+|eventId|String|A ID exclusiva do evento. Somente leitura.|
 |eventLocation|[Location](location.md)|O local do evento.|
 |eventStartTime|[DateTimeTimeZone](datetimetimezone.md)|A data, a hora e o fuso horário em que o evento começa.|
-|eventSubject|Cadeia de caracteres|O texto da linha de assunto do evento.|
+|eventSubject|String|O texto da linha de assunto do evento.|
 |eventWebLink|Cadeia de caracteres|A URL para abrir o evento no Outlook na Web.<br/><br/>O evento será aberto no navegador se você estiver conectado à sua caixa de correio através do Outlook na Web. Você será solicitado a fazer login se já não estiver conectado no navegador.<br/><br/>Essa URL pode ser acessada de um iFrame.|
 |reminderFireTime|[DateTimeTimeZone](datetimetimezone.md)|A data, a hora e o fuso horário do lembrete.|
 

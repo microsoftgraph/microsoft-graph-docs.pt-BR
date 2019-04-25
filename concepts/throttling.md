@@ -4,11 +4,11 @@ description: Os limites de controle limitam número de chamadas simultâneas par
 author: piotrci
 localization_priority: Priority
 ms.openlocfilehash: 8b3b8c5b0ec5a5209ad96f87dc677f4331c24e0b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812640"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32580978"
 ---
 # <a name="microsoft-graph-throttling-guidance"></a>Diretrizes de limitação do Microsoft Graph
 

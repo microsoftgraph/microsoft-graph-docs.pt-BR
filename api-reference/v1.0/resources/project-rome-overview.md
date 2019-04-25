@@ -1,33 +1,33 @@
 ---
 title: Usar a API do Microsoft Graph para trabalhar com o Project Roma
-description: Project Roma é uma iniciativa da Microsoft para criar uma referência cruzada de dispositivo experiências de plataforma. Project Roma permite que um aplicativo em um cliente local ou serviço interagir com aplicativos e serviços em um host remoto quando o usuário entra com a mesma conta da Microsoft que eles usam para entrar no dispositivo do cliente. Isso permite que você programa entre dispositivos plataforma cruzada experiências e que são centralizadas em torno de tarefas do usuário, em vez dos dispositivos.
+description: O Project Roma é uma iniciativa da Microsoft para criar uma plataforma de experiências entre dispositivos. O Project Roma permite que um aplicativo em um cliente ou serviço local interaja com aplicativos e serviços em um host remoto quando o usuário entrar com a mesma conta da Microsoft que eles usam para entrar no dispositivo cliente. Isso permite programar experiências entre dispositivos e várias plataformas centradas em tarefas do usuário, em vez de dispositivos.
 localization_priority: Normal
 ms.openlocfilehash: d103bb68560a39cc4491460969a36bb81bb6da44
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27840961"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579668"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-project-rome"></a>Usar a API do Microsoft Graph para trabalhar com o Project Roma
 
-[Project Roma](https://developer.microsoft.com/en-us/windows/project-rome) é uma iniciativa da Microsoft para criar uma referência cruzada de dispositivo experiências de plataforma. Project Roma permite que um aplicativo em um cliente local ou serviço interagir com aplicativos e serviços em um host remoto quando o usuário entra com a mesma conta da Microsoft que eles usam para entrar no dispositivo do cliente. Isso permite que você programa entre dispositivos plataforma cruzada experiências e que são centralizadas em torno de tarefas do usuário, em vez dos dispositivos.
+O [Project Roma](https://developer.microsoft.com/en-us/windows/project-rome) é uma iniciativa da Microsoft para criar uma plataforma de experiências entre dispositivos. O Project Roma permite que um aplicativo em um cliente ou serviço local interaja com aplicativos e serviços em um host remoto quando o usuário entrar com a mesma conta da Microsoft que eles usam para entrar no dispositivo cliente. Isso permite programar experiências entre dispositivos e várias plataformas centradas em tarefas do usuário, em vez de dispositivos.
 
-Um componente-chave é exposto por meio do Microsoft Graph para habilitar essas experiências: atividades.
+Um componente importante é exposto pelo Microsoft Graph para habilitar essas experiências: atividades.
 
 ## <a name="activities"></a>Atividades
 
-Atividades no Microsoft Graph habilitar compromisso do usuário de unidade com seus aplicativos em plataformas e dispositivos. Uma atividade é a unidade de compromisso do usuário e consiste em três componentes:
+As atividades no Microsoft Graph permitem que você direcionar o compromisso do usuário com seus aplicativos entre dispositivos e plataformas. Uma atividade é a unidade de contrato de usuário e consiste em três componentes:
 
 - Um link profundo
 - Uma representação visual
-- Metadados do conteúdo que descreve a atividade, usando o [https://schema.org/](https://schema.org/) shared vocabulário
+- Metadados de conteúdo que descrevem a atividade, usando [https://schema.org/](https://schema.org/) o vocabulário compartilhado
 
-Quando uma sessão é criada por um aplicativo, um item de histórico é adicionado à atividade para refletir o período de participação do usuário. Cada vez que um usuário reengages com uma atividade, um novo item de histórico é adicionado à atividade acumular compromisso do usuário.
+Quando uma sessão é criada por um aplicativo, um item de histórico é adicionado à atividade para refletir o período de envolvimento do usuário. Cada vez que um usuário reparticipa de uma atividade, um novo item de histórico é adicionado à atividade para acumular o envolvimento do usuário.
 
-Quando um aplicativo publica objetos de atividade do usuário, o objeto será mostrada no algumas das novas superfícies de interface do usuário no Windows; Por exemplo, Cortana notificações e linha do tempo. Você pode especificar metadados sofisticados (para permitir atividades a serem apresentados no contexto certo) e o ricas visuais (usando marcação [Cartão adaptável](https://adaptivecards.io/) ) em seus objetos de atividade.
+Quando um aplicativo publica objetos de atividade do usuário, o objeto aparecerá em algumas das novas superfícies de interface de usuário no Windows; por exemplo, notificações e cronograma da corTana. Você pode especificar tanto metadados avançados (para permitir que as atividades sejam apresentadas no contexto certo) e Visual ricos (usando a marcação de [cartão adaptável](https://adaptivecards.io/) ) em seus objetos de atividade.
 
-Você pode usar as seguintes APIs do Microsoft Graph para criar e recuperar as atividades do usuário:
+Você pode usar as seguintes APIs do Microsoft Graph para criar e recuperar atividades do usuário:
 
 - [Criar ou substituir atividade](../api/projectrome-put-activity.md)
 - [Obter atividades](../api/projectrome-get-activities.md)

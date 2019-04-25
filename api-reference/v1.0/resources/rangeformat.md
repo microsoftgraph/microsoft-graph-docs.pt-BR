@@ -1,19 +1,19 @@
 ---
 title: Tipo de recurso RangeFormat
-description: Um objeto de formatação que engloba a fonte, o preenchimento, as bordas, o alinhamento e outras propriedades do intervalo.
+description: Um objeto de formato que encapsula a fonte, o preenchimento, as bordas, o alinhamento e outras propriedades do intervalo.
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: f0e57522812b966c39a6981de964e786d33c5006
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27919208"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579498"
 ---
 # <a name="rangeformat-resource-type"></a>Tipo de recurso RangeFormat
 
-Um objeto de formatação que engloba a fonte, o preenchimento, as bordas, o alinhamento e outras propriedades do intervalo.
+Um objeto de formato que encapsula a fonte, o preenchimento, as bordas, o alinhamento e outras propriedades do intervalo.
 
 
 ## <a name="methods"></a>Métodos
@@ -31,15 +31,15 @@ Um objeto de formatação que engloba a fonte, o preenchimento, as bordas, o ali
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |columnWidth|double|Obtém ou define a largura de todas as colunas dentro do intervalo. Se as larguras das colunas não forem uniformes, será retornado null.|
-|horizontalAlignment|string|Representa o alinhamento horizontal do objeto especificado. Os valores possíveis são: `General`, `Left`, `Center`, `Right`, `Fill`, `Justify`, `CenterAcrossSelection`, `Distributed`.|
-|rowHeight|double|Obtém ou define a altura de todas as linhas do intervalo. Se as alturas das linhas não forem uniformes, será retornado null.|
+|horizontalAlignment|cadeia de caracteres|Representa o alinhamento horizontal do objeto especificado. Os valores possíveis são: `General`, `Left`, `Center`, `Right`, `Fill`, `Justify`, `CenterAcrossSelection`, `Distributed`.|
+|rowHeight|duplo|Obtém ou define a altura de todas as linhas do intervalo. Se as alturas das linhas não forem uniformes, será retornado null.|
 |verticalAlignment|string|Representa o alinhamento vertical do objeto especificado. Os valores possíveis são: `Top`, `Center`, `Bottom`, `Justify`, `Distributed`.|
 |wrapText|booliano|Indica se o Excel quebra automaticamente a linha de texto no objeto. Um valor nulo indica que o intervalo inteiro não tem configuração de quebra de linha automática uniforme.|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|borders|Coleção [WorkbookRangeBorder](rangeborder.md)|Coleção de objetos de borda que se aplicam a todo o intervalo selecionado. Somente leitura.|
+|Borders|Coleção [WorkbookRangeBorder](rangeborder.md)|Coleção de objetos de borda que se aplicam a todo o intervalo selecionado. Somente leitura.|
 |fill|[WorkbookRangeFill](rangefill.md)|Retorna o objeto de preenchimento definido em todo o intervalo. Somente leitura.|
 |font|[WorkbookRangeFont](rangefont.md)|Retorna o objeto Font definido em todo o intervalo selecionado. Somente leitura.|
 |protection|[WorkbookFormatProtection](formatprotection.md)|Retorna o objeto de proteção de formato para um intervalo. Somente leitura.|

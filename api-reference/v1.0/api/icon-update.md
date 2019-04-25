@@ -3,11 +3,11 @@ title: Atualizar ícone
 description: Atualize as propriedades do objeto de ícone.
 localization_priority: Normal
 ms.openlocfilehash: 250dc23e4e046d159be5f9c1d4eb2421d93a2c34
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27839162"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32577781"
 ---
 # <a name="update-icon"></a>Atualizar ícone
 
@@ -38,12 +38,12 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|índice|int|Representa o índice do ícone em determinado conjunto.|
-|set|string|Representa o que o ícone faz parte do conjunto. Os valores possíveis são: `Invalid`, `ThreeArrows`, `ThreeArrowsGray`, `ThreeFlags`, `ThreeTrafficLights1`, `ThreeTrafficLights2`, `ThreeSigns`, `ThreeSymbols`, `ThreeSymbols2`, `FourArrows`, `FourArrowsGray`, `FourRedToBlack`, `FourRating`, `FourTrafficLights`, `FiveArrows`, `FiveArrowsGray`, `FiveRating`, `FiveQuarters`, `ThreeStars` , `ThreeTriangles`, `FiveBoxes`.|
+|index|int|Representa o índice do ícone em determinado conjunto.|
+|set|string|Representa o conjunto do qual ícone faz parte. Os valores possíveis são: `Invalid`, `ThreeArrows`, `ThreeArrowsGray` `ThreeFlags` `ThreeTrafficLights1`,,, `ThreeTrafficLights2`, `ThreeSigns`, `ThreeSymbols`, `ThreeSymbols2` `FourArrows` `FourArrowsGray` `FourRedToBlack`,,,, `FourRating`, `FourTrafficLights` `FiveArrows`, `FiveArrowsGray`, `FiveRating`, `FiveQuarters` `ThreeStars` ,,,,, , `ThreeTriangles`, `FiveBoxes`.|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [Icon](../resources/icon.md) atualizado no corpo da resposta.
+Se bem sucedido, este método retorna um código de resposta `200 OK` e um objeto [Icon](../resources/icon.md) atualizado no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

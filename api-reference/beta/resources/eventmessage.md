@@ -5,11 +5,11 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 11b38679916f85d9606989442ffb53e41c51c855
-ms.sourcegitcommit: e8b488f8068845522b869bf97475da7b078bee3d
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30342321"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542958"
 ---
 # <a name="eventmessage-resource-type"></a>Tipo de recurso eventMessage
 
@@ -94,25 +94,25 @@ Veja a seguir uma representação JSON do recurso
 |bccRecipients|Coleção [recipient](recipient.md)|Os destinatários Cco: da mensagem.|
 |body|[itemBody](itembody.md)|O corpo da mensagem. Pode estar no formato HTML ou no formato de texto.|
 |bodyPreview|String|Os primeiros 255 caracteres do corpo da mensagem. Está no formato de texto. |
-|categories|Coleção de cadeias de caracteres|As categorias associadas à mensagem.|
+|categories|String collection|As categorias associadas à mensagem.|
 |ccRecipients|Coleção [recipient](recipient.md)|Os destinatários Cc: da mensagem.|
 |changeKey|String|A versão da mensagem.|
-|conversationId|Cadeia de caracteres|A ID da conversa à qual o email pertence.|
+|conversationId|String|A ID da conversa à qual o email pertence.|
 |conversationIndex|Binária|O Índice da conversa à qual o email pertence.|
 |createdDateTime|DateTimeOffset|A data e a hora em que a mensagem foi criada.|
 |endDateTime|[dateTimeTimeZone](datetimetimezone.md)|A hora de término da reunião solicitada.|
 |sinalizar|[followUpFlag](followupflag.md)|O valor do sinalizador que indica o status, a data de início, a data de conclusão ou a data de finalização da mensagem.|
 |from|[recipient](recipient.md)|O proprietário da caixa de correio e o remetente da mensagem.|
 |hasAttachments|Boolean|Indica se a mensagem tem anexos.|
-|id|Cadeia de caracteres||
-|importance|String| A importância da mensagem: `low`, `normal`, `high`.|
+|id|String||
+|importance|Cadeia de caracteres| A importância da mensagem: `low`, `normal`, `high`.|
 |inferenceClassification|String| Os valores possíveis são: `focused` e `other`.|
 |internetMessageHeaders | Coleção [internetMessageHeader](internetmessageheader.md) | A coleção de cabeçalhos da mensagem, definida por [RFC5322](https://www.ietf.org/rfc/rfc5322.txt), que fornece detalhes do caminho de rede adotado por uma mensagem do remetente para o destinatário. Somente leitura.|
 |internetMessageId |String |A ID da mensagem no formato especificado por [RFC5322](https://www.ietf.org/rfc/rfc5322.txt). |
-|isAllDay |Boolean|Indica se o evento dura todo o dia. Ajustar essa propriedade requer ajustar as **** Propriedades StartDateTime e EndDateTime do evento também. ****|
-|isDeliveryReceiptRequested|Boolean|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
-|isDraft|Booliano|Indica se a mensagem é um rascunho. Uma mensagem é um rascunho quando ela ainda não foi enviada.|
-|isOutOfDate|Boolean|Indica se esta solicitação de reunião foi desfeita por uma solicitação mais recente.|
+|isAllDay |Booliano|Indica se o evento dura todo o dia. Ajustar essa propriedade requer ajustar as **** Propriedades StartDateTime e EndDateTime do evento também. ****|
+|isDeliveryReceiptRequested|Booliano|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
+|isDraft|Boolean|Indica se a mensagem é um rascunho. Uma mensagem é um rascunho quando ela ainda não foi enviada.|
+|isOutOfDate|Booliano|Indica se esta solicitação de reunião foi desfeita por uma solicitação mais recente.|
 |isRead|Boolean|Indica se a mensagem foi lida.|
 |isReadReceiptRequested|Boolean|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a mensagem foi alterada pela última vez.|
@@ -120,14 +120,14 @@ Veja a seguir uma representação JSON do recurso
 |meetingMessageType|String| O tipo de mensagem de evento: `none`, `meetingRequest`, `meetingCancelled`, `meetingAccepted`, `meetingTentativelyAccepted`, `meetingDeclined`.|
 |parentFolderId|String|O identificador exclusivo para a mailFolder pai da mensagem.|
 |receivedDateTime|DateTimeOffset|A data e a hora em que a mensagem foi recebida.|
-|recurrence|[patternedRecurrence](patternedrecurrence.md)|O padrão de recorrência da reunião solicitada.|
+|recorrência|[patternedRecurrence](patternedrecurrence.md)|O padrão de recorrência da reunião solicitada.|
 |replyTo|Coleção [recipient](recipient.md)|Os endereços de email a serem usados ao responder.|
 |sender|[recipient](recipient.md)|A conta que é realmente usada para gerar a mensagem.|
 |sentDateTime|DateTimeOffset|A data e a hora em que a mensagem foi enviada.|
 |startDateTime|[dateTimeTimeZone](datetimetimezone.md)|O horário de início da reunião solicitada.|
 |subject|String|O assunto da mensagem.|
 |toRecipients|Coleção [recipient](recipient.md)|Os destinatários Para: da mensagem.|
-|Tipo|String|O tipo de reunião solicitada `singleInstance`: `occurence`, `exception`, `seriesMaster`,.|
+|type|String|O tipo de reunião solicitada `singleInstance`: `occurence`, `exception`, `seriesMaster`,.|
 |uniqueBody|[itemBody](itembody.md)|A parte do corpo da mensagem que é exclusiva para a mensagem atual.|
 |UnsubscribeData|String|As entradas válidas analisadas no cabeçalho List-Unsubscribe.  Esses são os dados para o comando mail no cabeçalho List-Unsubscribe, se a propriedade UnsubscribeEnabled for true.|
 |UnsubscribeEnabled|Booliano|Indica se a mensagem está habilitada para o cancelamento da assinatura.  valueTrue se o cabeçalho list-Unsubscribe estiver em conformidade com o rfc-2369.|
@@ -148,16 +148,16 @@ Veja a seguir uma representação JSON do recurso
 |:---------------|:--------|:----------|
 |[Get eventMessage](../api/eventmessage-get.md) | [eventMessage](eventmessage.md) |Ler propriedades e relações do objeto eventMessage.|
 |[Update](../api/eventmessage-update.md) | [eventMessage](eventmessage.md)  |Atualizar o objeto eventMessage.|
-|[Delete](../api/eventmessage-delete.md) | Nenhuma |Excluir o objeto eventMessage.|
-|[copy](../api/message-copy.md)|[message](message.md)|Copiar uma mensagem para uma pasta.|
-|[createForward](../api/message-createforward.md)|[message](message.md)|Criar um rascunho da mensagem de encaminhamento. Em seguida, você pode [atualizar](../api/message-update.md) ou [enviar](../api/message-send.md) esse rascunho.|
-|[createReply](../api/message-createreply.md)|[message](message.md)|Criar um rascunho da mensagem de resposta. Em seguida, você pode [atualizar](../api/message-update.md) ou [enviar](../api/message-send.md) esse rascunho.|
-|[createReplyAll](../api/message-createreplyall.md)|[message](message.md)|Criar um rascunho da mensagem Responder a Todos. Em seguida, você pode [atualizar](../api/message-update.md) ou [enviar](../api/message-send.md) esse rascunho.|
+|[Excluir](../api/eventmessage-delete.md) | None |Excluir o objeto eventMessage.|
+|[copy](../api/message-copy.md)|[mensagem](message.md)|Copiar uma mensagem para uma pasta.|
+|[createForward](../api/message-createforward.md)|[mensagem](message.md)|Criar um rascunho da mensagem de encaminhamento. Em seguida, você pode [atualizar](../api/message-update.md) ou [enviar](../api/message-send.md) esse rascunho.|
+|[createReply](../api/message-createreply.md)|[mensagem](message.md)|Criar um rascunho da mensagem de resposta. Em seguida, você pode [atualizar](../api/message-update.md) ou [enviar](../api/message-send.md) esse rascunho.|
+|[createReplyAll](../api/message-createreplyall.md)|[mensagem](message.md)|Criar um rascunho da mensagem Responder a Todos. Em seguida, você pode [atualizar](../api/message-update.md) ou [enviar](../api/message-send.md) esse rascunho.|
 |[forward](../api/message-forward.md)|Nenhum|Encaminhar uma mensagem. A mensagem é então salva na pasta Itens Enviados.|
 |[move](../api/message-move.md)|[message](message.md)|Mover uma mensagem para uma pasta. Isso cria uma nova cópia da mensagem na pasta de destino.|
 |[reply](../api/message-reply.md)|Nenhum|Responder ao remetente de uma mensagem. A mensagem é então salva na pasta Itens Enviados.|
-|[replyAll](../api/message-replyall.md)|Nenhum|Responder a todos os destinatários de uma mensagem. A mensagem é então salva na pasta Itens Enviados.|
-|[send](../api/message-send.md)|None|Envia um rascunho de mensagem anteriormente criado. A mensagem é então salva na pasta Itens Enviados.|
+|[replyAll](../api/message-replyall.md)|None|Responder a todos os destinatários de uma mensagem. A mensagem é então salva na pasta Itens Enviados.|
+|[send](../api/message-send.md)|Nenhum|Envia um rascunho de mensagem anteriormente criado. A mensagem é então salva na pasta Itens Enviados.|
 |[unsubscribe](../api/message-unsubscribe.md)|Nenhum|Envie uma mensagem usando os dados e o endereço especificados no primeiro comando mailto no cabeçalho List-Unsubscribe.|
 |**Anexos**| | |
 |[Listar anexos](../api/eventmessage-list-attachments.md) |Coleção [attachment](attachment.md)| Obtenha todos os anexos em um eventMessage.|

@@ -1,28 +1,28 @@
 ---
-title: tipo de recurso de attributeMappingSource
-description: 'Define como um valor deve ser extraída (ou transformados) do objeto de origem. Por exemplo, pode ser um valor simple tirado de um determinado atributo no objeto de origem, ou pode ser uma expressão mais complexa de cadeia de caracteres concatenação/extração/substituição com base em vários atributos de fonte. '
+title: tipo de recurso attributeMappingSource
+description: 'Define como um valor deve ser extraído (ou transformado) a partir do objeto Source. Por exemplo, pode ser um valor simples de um determinado atributo no objeto Source ou pode ser uma expressão mais complexa de concatenação/extração/substituição de cadeia de caracteres com base em vários atributos de origem. '
 localization_priority: Normal
 ms.openlocfilehash: 1d15cd82c0a58ac8bdd3ac5805abc166322f27fe
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510404"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582131"
 ---
-# <a name="attributemappingsource-resource-type"></a>tipo de recurso de attributeMappingSource
+# <a name="attributemappingsource-resource-type"></a>tipo de recurso attributeMappingSource
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Define como um valor deve ser extraída (ou transformados) do objeto de origem. Por exemplo, pode ser um valor simple tirado de um determinado atributo no objeto de origem, ou pode ser uma expressão mais complexa de cadeia de caracteres concatenação/extração/substituição com base em vários atributos de fonte. 
+Define como um valor deve ser extraído (ou transformado) a partir do objeto Source. Por exemplo, pode ser um valor simples de um determinado atributo no objeto Source ou pode ser uma expressão mais complexa de concatenação/extração/substituição de cadeia de caracteres com base em vários atributos de origem. 
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade              | Tipo                      | Descrição               |
 |:----------------------|:--------------------------|:--------------------------|
 |expressão             |String                     |Representação de expressão equivalente deste objeto **attributeMappingSource** .|
-|name                   |Cadeia de caracteres                     |Parâmetro nome da fonte de mapeamento. Dependendo do valor da propriedade **type** , isso pode ser o nome da função, o nome do atributo de origem, ou um valor de constante a ser usado. |
-|parâmetros             |coleção [stringKeyAttributeMappingSourceValuePair](synchronization-stringkeyattributemappingsourcevaluepair.md) | Se esse objeto representa uma função, lista os parâmetros da função. Parâmetros consistem em objetos **attributeMappingSource** sozinhos, permitindo expressões complexas. Se **tipo** não for `Function`, essa propriedade será null/vazio matriz. |
-|type                   | String                    |O tipo de fonte de mapeamento este atributo. Os valores possíveis são: `Attribute`, `Constant`, `Function`. O padrão é `Attribute`.| 
+|name                   |String                     |Parâmetro Name da origem do mapeamento. Dependendo do valor da propriedade **Type** , isso pode ser o nome da função, o nome do atributo de origem ou um valor constante a ser usado. |
+|parameters             |coleção [stringKeyAttributeMappingSourceValuePair](synchronization-stringkeyattributemappingsourcevaluepair.md) | Se este objeto representar uma função, lista os parâmetros da função. Os parâmetros consistem nos objetos **attributeMappingSource** , permitindo expressões complexas. Se **Type** não `Function`for, esta propriedade será NULL/matriz vazia. |
+|type                   | String                    |O tipo desta fonte de mapeamento de atributos. Os valores possíveis são: `Attribute`, `Constant`, `Function`. O padrão é `Attribute`.| 
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -45,9 +45,9 @@ Veja a seguir uma representação JSON do recurso.
 }
 ```
 
-## <a name="json-examples"></a>Exemplos JSON
+## <a name="json-examples"></a>Exemplos de JSON
 
-Mapeamento de atributo para o atributo simples
+Atributo simples para mapeamento de atributos
 
 <!-- {
   "blockType": "resource",
@@ -65,7 +65,7 @@ Mapeamento de atributo para o atributo simples
 }
 ```
 
-Expressão extraindo 8 primeiros caracteres do atributo de origem
+Expressão que extrai primeiro 8 caracteres do atributo Source
 
 <!-- {
   "blockType": "resource",

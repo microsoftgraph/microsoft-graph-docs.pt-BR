@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 7cc477f0193f80bb6df1fdc6f42eabe8e7fce220
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30957214"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32578327"
 ---
 # <a name="list-manageddevicemobileappconfigurationassignments"></a>Listar managedDeviceMobileAppConfigurationAssignments
 

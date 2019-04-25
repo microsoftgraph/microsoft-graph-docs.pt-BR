@@ -1,28 +1,28 @@
 ---
-title: tipo de recurso de educationAssignmentPointsGradeType
-description: Usada com a propriedade **assignments.grading** . Isso é uma subclasse de educationAssignmentGradeType.
+title: tipo de recurso educationAssignmentPointsGradeType
+description: Usada com a propriedade **assignments. Grading** . Esta é uma subclasse de educationAssignmentGradeType.
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 ms.openlocfilehash: 567bff38f8a20456dffffdd91775a1e32852fe20
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508892"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543083"
 ---
-# <a name="educationassignmentpointsgradetype-resource-type"></a>tipo de recurso de educationAssignmentPointsGradeType
+# <a name="educationassignmentpointsgradetype-resource-type"></a>tipo de recurso educationAssignmentPointsGradeType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Usada com a propriedade **assignments.grading** . Isso é uma subclasse de [educationAssignmentGradeType](educationassignmentgradetype.md).
+Usada com a propriedade **assignments. Grading** . Esta é uma subclasse de [educationAssignmentGradeType](educationassignmentgradetype.md).
 
-Isso indica que a atribuição varie e armazena o número máximo de pontos que cada estudante pode alcançar este item de trabalho. Quando isso é definido em uma atribuição, cada envio receberá uma propriedade [educationAssignmentPointsGrade](educationassignmentpointsgrade.md) associada a ela para o armazenamento de pontos de cada student.
+Isso indica que a atribuição foi classificada e armazena o número máximo de pontos que cada aluno pode obter nesse item de trabalho. Quando isso é definido em uma atribuição, cada envio receberá uma propriedade [educationAssignmentPointsGrade](educationassignmentpointsgrade.md) associada ao armazenamento dos pontos de cada aluno.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|maxPoints|Single| Max aponta possíveis para essa atribuição.  |
+|maxPoints|Único| Máximo de pontos possíveis para esta atribuição.  |
 
 ## <a name="json-representation"></a>Representação JSON
 

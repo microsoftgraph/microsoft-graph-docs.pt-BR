@@ -1,29 +1,29 @@
 ---
 title: 'message: replyAll'
-description: 'Responder a todos os destinatários de uma mensagem especificando um comentário e modificar quaisquer propriedades atualizáveis '
+description: 'Responder a todos os destinatários de uma mensagem especificando um comentário e modificando qualquer propriedade atualizável '
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 05f552676400196aed275c32020bcdf5211d0e31
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528610"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540384"
 ---
 # <a name="message-replyall"></a>message: replyAll
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Responda a todos os destinatários de uma mensagem especificando um comentário e modificando quaisquer **propriedades atualizáveis** da resposta, tudo isso usando o método ReplyAll. Em seguida, a mensagem será salva na pasta Itens enviados.
+Responda a todos os destinatários de uma mensagem especificando um comentário e modificando as propriedades atualizáveis da resposta, tudo usando o método **replyAll** . A mensagem é então salva na pasta Itens Enviados.
 
-Como alternativa, você pode primeiro [criar uma mensagem de responder a todos de rascunho](../api/message-createreplyall.md) para incluir um comentário ou atualizar qualquer propriedades da mensagem e, em seguida, [Enviar](../api/message-send.md) a resposta.
+Como alternativa, você pode primeiro [criar um rascunho de mensagem de resposta](../api/message-createreplyall.md) para incluir um comentário ou atualizar quaisquer propriedades de mensagem e, em seguida, [Enviar](../api/message-send.md) a resposta.
 
 **Observação**
 
-- Você pode especificar um comentário ou a propriedade **body** do `message` parâmetro. Especificar ambos retornará um erro HTTP 400 - Solicitação incorreta.
-- Se a propriedade **replyTo** for especificada na mensagem original, por um formato de mensagem da Internet ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), você deve enviar a resposta aos destinatários no  
-propriedades **replyTo** e **toRecipients** e não os destinatários nas propriedades **do** e **toRecipients** . 
+- Você pode especificar um comentário ou a propriedade **Body** do `message` parâmetro. Especificar ambos retornará um erro HTTP 400 - Solicitação incorreta.
+- Se a **** Propriedade ReplyTo for especificada na mensagem original, por formato de mensagem da Internet ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), você deve enviar a resposta aos destinatários no  
+**** as propriedades ReplyTo e ToRecipients e não os destinatários nas propriedades **from** e **** ToRecipients. **** 
 
 
 ## <a name="permissions"></a>Permissões
@@ -55,7 +55,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |comment|String|Um comentário a incluir. Não pode ficar vazio.|
-|message|[message](../resources/message.md)|Quaisquer propriedades graváveis ​​a serem atualizadas na mensagem de resposta.|
+|message|[mensagem](../resources/message.md)|Quaisquer propriedades graváveis ​​a serem atualizadas na mensagem de resposta.|
 
 ## <a name="response"></a>Resposta
 

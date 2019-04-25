@@ -1,15 +1,15 @@
 ---
-title: tipo de recurso de filterOperatorSchema
+title: tipo de recurso filterOperatorSchema
 description: Descreve um operador que pode ser usado em um filtro.
 localization_priority: Normal
 ms.openlocfilehash: 04bee90f81c0098832cd4b6355be266668d0f69b
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641817"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581734"
 ---
-# <a name="filteroperatorschema-resource-type"></a>tipo de recurso de filterOperatorSchema
+# <a name="filteroperatorschema-resource-type"></a>tipo de recurso filterOperatorSchema
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -19,10 +19,10 @@ Descreve um operador que pode ser usado em um [filtro](synchronization-filter.md
 
 | Propriedade                   | Tipo                      | Descrição    |
 |:---------------------------|:--------------------------|:---------------|
-|aridade                       |String          |Aridade do operador. Os valores possíveis são: `Binary` e `Unary`. O padrão é `Binary`.|
-|multivaluedComparisonType   |scopeOperatorMultiValuedComparisonType          |Os valores possíveis são: `All` e `Any`. Só se aplica aos atributos de valores múltiplos. `All`significa que todos os valores devem satisfazer a condição. `Any`significa que pelo menos um valor tem que satisfazer a condição. O padrão é `All`.|
+|arity                       |String          |Arity do operador. Os valores possíveis são: `Binary` e `Unary`. O padrão é `Binary`.|
+|multivaluedComparisonType   |scopeOperatorMultiValuedComparisonType          |Os valores possíveis são: `All` e `Any`. Aplica-se somente a atributos com vários valores. `All`significa que todos os valores devem atender à condição. `Any`significa que pelo menos um valor deve satisfazer a condição. O padrão é `All`.|
 |name                        |String                     |Nome do operador. |
-|supportedAttributeTypes     |Coleção de cadeias de caracteres         |Tipos suportados pela operadora de atributo. Os valores possíveis são: `Boolean`, `Binary`, `Reference`, `Integer`, `String`.|
+|supportedAttributeTypes     |Coleção de cadeias de caracteres         |Tipos de atributo suportados pelo operador. Os valores possíveis são: `Boolean`, `Binary`, `Reference`, `Integer`, `String`.|
 
 ## <a name="json-representation"></a>Representação JSON
 

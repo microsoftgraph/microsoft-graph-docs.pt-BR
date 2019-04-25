@@ -1,21 +1,21 @@
 ---
-title: Tipo de recurso plannerPlan
-description: O recurso de **plannerPlan** representa um plano no Office 365. Um plano pode pertencer a um grupo e contém uma coleção de plannerTasks. Ele também pode ter uma coleção de plannerBuckets. Cada objeto de plano tem um objeto de detalhes que pode conter mais informações sobre o plano. Para obter mais informações sobre os relacionamentos entre grupos, planos e tarefas, consulte planejador.
+title: tipo de recurso plannerPlan
+description: O recurso **plannerPlan** representa um plano no Office 365. Um plano pode pertencer a um grupo e contém uma coleção de plannerTasks. Também pode ter uma coleção de plannerBuckets. Cada objeto Plan tem um objeto Details que pode conter mais informações sobre o plano. Para obter mais informações sobre as relações entre grupos, planos e tarefas, consulte Planner.
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: f37f6ea08f2951256e2d7f94cf9abad7e8ac60b2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529548"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32578864"
 ---
-# <a name="plannerplan-resource-type"></a>Tipo de recurso plannerPlan
+# <a name="plannerplan-resource-type"></a>tipo de recurso plannerPlan
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O recurso de **plannerPlan** representa um plano no Office 365. Um plano pode pertencer a um [grupo](group.md) e contém uma coleção de [plannerTasks](plannertask.md). Ele também pode ter uma coleção de [plannerBuckets](plannerbucket.md). Cada objeto de plano tem um objeto de [detalhes](plannerplandetails.md) que pode conter mais informações sobre o plano. Para obter mais informações sobre os relacionamentos entre grupos, planos e tarefas, consulte [Planejador](planner-overview.md).
+O recurso **plannerPlan** representa um plano no Office 365. Um plano pode pertencer a um [grupo](group.md) e contém uma coleção de [plannerTasks](plannertask.md). Também pode ter uma coleção de [plannerBuckets](plannerbucket.md). Cada objeto Plan tem um objeto [Details](plannerplandetails.md) que pode conter mais informações sobre o plano. Para obter mais informações sobre as relações entre grupos, planos e tarefas, consulte [Planner](planner-overview.md).
 
 
 
@@ -23,27 +23,27 @@ O recurso de **plannerPlan** representa um plano no Office 365. Um plano pode pe
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Get plannerPlan](../api/plannerplan-get.md) | [plannerPlan](plannerplan.md) |Leia as propriedades e as relações do objeto **plannerPlan**.|
-|[Listar buckets](../api/plannerplan-list-buckets.md) |Coleção [plannerBucket](plannerbucket.md)| Obter uma coleção de objetos **plannerBucket**.|
-|[Listar tarefas](../api/plannerplan-list-tasks.md) |Coleção [plannerTask](plannertask.md)| Obter uma coleção de objetos **plannerTask**.|
-|[Atualizar](../api/plannerplan-update.md) | [plannerPlan](plannerplan.md) |Atualize o objeto **plannerPlan**. |
+|[Obter plannerPlan](../api/plannerplan-get.md) | [plannerPlan](plannerplan.md) |Leia as propriedades e os relacionamentos do objeto **plannerPlan** .|
+|[Listar buckets](../api/plannerplan-list-buckets.md) |coleção [plannerBucket](plannerbucket.md)| Obtenha uma coleção de objetos **plannerBucket** .|
+|[Listar tarefas](../api/plannerplan-list-tasks.md) |Coleção [plannerTask](plannertask.md)| Obtenha uma coleção de objetos **plannerTask** .|
+|[Update](../api/plannerplan-update.md) | [plannerPlan](plannerplan.md) |Atualize o objeto **plannerPlan** . |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|createdDateTime|DateTimeOffset|Somente leitura. A data e a hora que o plano foi criado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|id|String| Somente leitura. ID do plano. É 28 caracteres longos e diferencia maiusculas de minúsculas. [Validação de formato](tasks-identifiers-disclaimer.md) é feita no serviço.|
-|owner|String|ID do [grupo](group.md) que possui o plano. Um grupo válido deve existir antes que esse campo pode ser definido. Depois que ele for definido, essa propriedade não pode ser atualizada.|
+|createdDateTime|DateTimeOffset|Somente leitura. Data e hora em que o plano foi criado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|id|String| Somente leitura. ID do plano. Tem 28 caracteres e diferencia maiúsculas de minúsculas. [Formatar validação](tasks-identifiers-disclaimer.md) é feito no serviço.|
+|owner|String|ID do [grupo](group.md) que possui o plano. Um grupo válido deve existir antes que este campo possa ser definido. Após a definição, esta propriedade não pode ser atualizada.|
 |title|String|Obrigatório. Título do plano.|
 |createdBy|[identitySet](identityset.md)|Somente leitura. O usuário que criou o plano.|
-|contextos|[plannerPlanContextCollection](plannerplancontextcollection.md)| Somente leitura. Experiências de usuário adicional no qual este plano for usado, representado como entradas de [plannerPlanContext](plannerplancontext.md) .|
+|contextos|[plannerPlanContextCollection](plannerplancontextcollection.md)| Somente leitura. Experiências de usuário adicionais nas quais esse plano é usado, representado como entradas [plannerPlanContext](plannerplancontext.md) .|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|buckets|Coleção [plannerBucket](plannerbucket.md)| Somente leitura. Anulável. A coleção de buckets no plano.|
-|detalhes|[plannerPlanDetails](plannerplandetails.md)| Somente leitura. Anulável. Outros detalhes sobre o plano.|
-|tarefas|Coleção [plannerTask](plannertask.md)| Somente leitura. Anulável. A coleção de tarefas no plano.|
+|buckets|coleção [plannerBucket](plannerbucket.md)| Somente leitura. Anulável. Conjunto de buckets no plano.|
+|detalhes|[plannerPlanDetails](plannerplandetails.md)| Somente leitura. Anulável. Detalhes adicionais sobre o plano.|
+|tarefas|Coleção [plannerTask](plannertask.md)| Somente leitura. Anulável. Conjunto de tarefas no plano.|
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -5,11 +5,11 @@ author: lleonard-msft
 localization_priority: Normal
 ms.prod: azure-ad
 ms.openlocfilehash: a03ca03e0b7105c8f07347f6ed52aa322a6fd090
-ms.sourcegitcommit: e8b488f8068845522b869bf97475da7b078bee3d
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30342286"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583106"
 ---
 # <a name="targetresource-resource-type"></a>tipo de recurso targetResource
 
@@ -20,9 +20,9 @@ Representa os tipos de recursos de destino associados à atividade de auditoria.
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|String|Indica a ID exclusiva do recurso.|
+|id|Cadeia de caracteres|Indica a ID exclusiva do recurso.|
 |displayName|String|Indica o nome visível definido para o recurso. Normalmente especificado quando o recurso é criado.|
-|Tipo|String|Descreve o tipo de recurso.  Os valores de `Application`exemplo `Group`incluem `ServicePrincipal`,, `User`e.|
+|type|String|Descreve o tipo de recurso.  Os valores de `Application`exemplo `Group`incluem `ServicePrincipal`,, `User`e.|
 |userPrincipalName|String|Quando o **tipo** está definido `User`como, isso inclui o nome de usuário que iniciou a ação; `null` para outros tipos.|
 |groupType|String|Quando **Type** é definido como `Group`, isso indica o tipo de grupo.|
 |ModifiedProperties|[](modifiedproperty.md) coleção modifiedproperty|Indica o nome, o valor antigo e o novo valor de cada atributo que foi alterado. Os valores de propriedade dependem do **tipo**de operação.|

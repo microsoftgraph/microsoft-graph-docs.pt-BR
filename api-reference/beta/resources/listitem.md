@@ -6,11 +6,11 @@ title: ListItem
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 435544db272b26e6fe3ac0e09803858eec9d05f6
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480877"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581616"
 ---
 # <a name="listitem-resource"></a>Recurso ListItem
 
@@ -39,7 +39,7 @@ Todos os exemplos a seguir referem-se a uma **[list][]**, por exemplo: `https://
 [Obter análises]: ../api/itemanalytics-get.md
 [Obter atividades por intervalo]: ../api/itemactivity-getbyinterval.md
 [Create]: ../api/listitem-create.md
-[Delete]: ../api/listitem-delete.md
+[Excluir]: ../api/listitem-delete.md
 [Update]: ../api/listitem-update.md
 
 ## <a name="json-representation"></a>Representação JSON
@@ -91,7 +91,7 @@ As propriedades a seguir são herdadas do **[baseItem][]**.
 
 | Nome da propriedade        | Tipo              | Descrição
 |:---------------------|:------------------|:----------------------------------
-| id                   | string            | O identificador exclusivo do item. Somente leitura.
+| id                   | cadeia de caracteres            | O identificador exclusivo do item. Somente leitura.
 | name                 | string            | O nome/título do item.
 | createdBy            | [identitySet][]   | Identidade do criador desse item. Somente leitura.
 | createdDateTime      | DateTimeOffset    | A data e a hora da criação do item. Somente leitura.
@@ -110,10 +110,10 @@ As propriedades a seguir são herdadas do **[baseItem][]**.
 | Nome da relação | Tipo                           | Descrição
 |:------------------|:-------------------------------|:-------------------------------
 | activities        | Conjunto [itemActivity][]    | A lista de atividades recentes que ocorreram neste item.
-| análises         | [itemAnalytics][] resource     | Análise sobre as atividades de exibição que ocorreram neste item.
+| analytics         | [itemAnalytics][] resource     | Análise sobre as atividades de exibição que ocorreram neste item.
 | driveItem         | [driveItem][]                  | Para bibliotecas de documentos, a relação **driveItem** expõe listItem como um **[driveItem][]**
 | campos            | [fieldValueSet][]              | Os valores das colunas definidos neste item de lista.
-| suas          | coleção [listItemVersion][] | A lista de versões anteriores do item de lista.
+| versões          | coleção [listItemVersion][]  | A lista de versões anteriores do item de lista.
 
 [baseItem]: baseitem.md
 [contentTypeInfo]: contenttypeinfo.md

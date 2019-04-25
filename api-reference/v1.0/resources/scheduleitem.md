@@ -3,11 +3,11 @@ title: tipo de recurso scheduleItem
 description: Um item que descreve a disponibilidade de um usuário correspondente a um evento real no calendário padrão do usuário. Este item se aplica a um recurso (sala ou equipamento) também.
 localization_priority: Normal
 ms.openlocfilehash: 8a30dcb4394a963e35047fab00391f0cc7eb7715
-ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30926579"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579167"
 ---
 # <a name="scheduleitem-resource-type"></a>tipo de recurso scheduleItem
 
@@ -21,7 +21,7 @@ Um item que descreve a disponibilidade de um usuário correspondente a um evento
 |location |String | O local onde o evento correspondente é mantido ou participado. Opcional.|
 |iniciar |[dateTimeTimeZone](datetimetimezone.md) |A data, a hora e o fuso horário em que o evento correspondente é iniciado. |
 |status |freeBusyStatus | O status de disponibilidade do usuário ou recurso durante o evento correspondente. Os valores possíveis são: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`. |
-|Assunto |String | A linha de assunto do evento correspondente. Opcional.|
+|subject |String | A linha de assunto do evento correspondente. Opcional.|
 
 
 ## <a name="json-representation"></a>Representação JSON

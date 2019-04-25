@@ -1,33 +1,33 @@
 ---
-title: tipo de recurso de emailActivityUserDetail
+title: tipo de recurso emailActivityUserDetail
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: b871bf5dbaedd961fad09bf97be868f46e7430a1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27938304"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542829"
 ---
-# <a name="emailactivityuserdetail-resource-type"></a>tipo de recurso de emailActivityUserDetail
+# <a name="emailactivityuserdetail-resource-type"></a>tipo de recurso emailActivityUserDetail
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade          | Tipo              |
 | :---------------- | :---------------- |
 | reportRefreshDate | Data              |
-| userPrincipalName | Cadeia de caracteres            |
-| displayName       | Cadeia de caracteres            |
+| userPrincipalName | String            |
+| displayName       | String            |
 | isDeleted         | Booliano           |
 | deletedDate       | Data              |
 | lastActivityDate  | Data              |
 | sendCount         | Int64             |
 | receiveCount      | Int64             |
 | readCount         | Int64             |
-| assignedProducts  | String collection |
-| reportPeriod      | Cadeia de caracteres            |
+| assignedProducts  | Coleção de cadeias de caracteres |
+| reportPeriod      | String            |
 
 ## <a name="json-representation"></a>Representação JSON
 

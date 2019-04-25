@@ -3,11 +3,11 @@ title: Tipo de recurso referenceAttachment
 description: Um link para um arquivo (como um arquivo de texto ou um documento do Word) em uma unidade de nuvem do OneDrive for Business ou outros locais de armazenamento compatíveis, anexado a um evento, mensagem ou postagem.
 localization_priority: Normal
 ms.openlocfilehash: 0696ac4b0f93ed4982ec576a15afe071486f9c88
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853120"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579412"
 ---
 # <a name="referenceattachment-resource-type"></a>Tipo de recurso referenceAttachment
 
@@ -20,16 +20,16 @@ Derivado de [attachment](attachment.md).
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
 |[Get](../api/attachment-get.md) | [referenceAttachment](referenceattachment.md) |Leia as propriedades e os relacionamentos do objeto referenceAttachment.|
-|[Delete](../api/attachment-delete.md) | Nenhum |Exclua o objeto referenceAttachment. |
+|[Excluir](../api/attachment-delete.md) | None |Exclua o objeto referenceAttachment. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|contentType|Cadeia de caracteres|O tipo de conteúdo do anexo.|
+|contentType|String|O tipo de conteúdo do anexo.|
 |id|Cadeia de caracteres|A ID do anexo.  Somente leitura.|
 |isInline|Booliano|Defina como verdadeiro se o anexo é exibido embutido no corpo do objeto de incorporação.|
 |lastModifiedDateTime|DateTimeOffset|Data e hora em que o anexo foi modificado pela última vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|nome|Cadeia de caracteres|O texto exibido abaixo do ícone que representa o anexo incorporado. Não precisa ser o nome real do arquivo.|
+|name|String|O texto exibido abaixo do ícone que representa o anexo incorporado. Não precisa ser o nome real do arquivo.|
 |size|Int32|O tamanho dos metadados, em bytes, que são armazenados na mensagem para o anexo. Esse valor não indica o tamanho real do arquivo.|
 
 ## <a name="relationships"></a>Relações

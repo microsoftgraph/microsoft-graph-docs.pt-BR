@@ -2,14 +2,14 @@
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Item Remoto
+title: RemoteItem
 localization_priority: Normal
 ms.openlocfilehash: ceb66fdacd4a108318c84fd9297aca8b2332c3f3
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481122"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579335"
 ---
 # <a name="remoteitem-resource-type"></a>Tipo de recurso RemoteItem
 
@@ -57,13 +57,13 @@ Este recurso fornece as IDs exclusivas do da unidade de origem e do item de dest
 | file                 | [File](file.md)                     | Indica que o item remoto é um arquivo. Somente leitura.                                                                                                              |
 | fileSystemInfo       | [FileSystemInfo](filesysteminfo.md) | Informações sobre o item remoto do sistema de arquivos local. Somente leitura.                                                                                          |
 | folder               | [Folder](folder.md)                 | Indica que o item remoto é uma pasta. Somente leitura.                                                                                                            |
-| id                   | String                              | Identificador exclusivo do item remoto em sua unidade. Somente leitura.                                                                                                    |
+| id                   | Cadeia de caracteres                              | Identificador exclusivo do item remoto em sua unidade. Somente leitura.                                                                                                    |
 | lastModifiedBy       | [IdentitySet](identityset.md)       | Identidade do usuário, dispositivo e aplicativo que modificou o item pela última vez. Somente leitura.                                                                            |
 | lastModifiedDateTime | Timestamp                           | Data e hora em que o item foi modificado pela última vez. Somente leitura.                                                                                                              |
 | nome                 | String                              | Opcional. Nome de arquivo do item remoto. Somente leitura.                                                                                                                 |
 | pacote              | [Pacote](package.md)               | Se presente, indica que esse item é um pacote, e não uma pasta ou um arquivo. Pacotes são tratados como arquivos em alguns contextos e como pastas em outros. Somente leitura. |
 | parentReference      | [ItemReference](itemreference.md)   | Propriedades do pai do item remoto. Somente leitura.                                                                                                           |
-| shared               | [compartilhado](shared.md)                 | Indica que o item foi compartilhado com outras pessoas e fornece informações sobre o estado compartilhado desse item. Somente leitura.                                       |
+| compartilhado               | [compartilhado](shared.md)                 | Indica que o item foi compartilhado com outras pessoas e fornece informações sobre o estado compartilhado desse item. Somente leitura.                                       |
 | sharepointIds        | [SharepointIds](sharepointids.md)   | Fornece interoperabilidade entre itens no OneDrive for Business e no SharePoint com o conjunto completo de identificadores de item. Somente leitura.                                          |
 | size                 | Int64                               | Tamanho do item remoto. Somente leitura.                                                                                                                               |
 | specialFolder        | [specialFolder][]                   | Se o item atual também estiver disponível como uma pasta especial, essa faceta será retornada. Somente leitura.                                                                     |

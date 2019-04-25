@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: Cota
 localization_priority: Normal
 ms.openlocfilehash: a9a5da54aeef3c9666c22c7a2f9bc0d92fc7a405
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481451"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579491"
 ---
 # <a name="quota-resource-type"></a>Tipo de recurso Quota
 

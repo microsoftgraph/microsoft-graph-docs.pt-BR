@@ -3,11 +3,11 @@ title: Adicionar item nomeado FormulaLocal
 description: Adiciona um novo nome à coleção de escopo fornecido usando a localidade do usuário para a fórmula.
 localization_priority: Normal
 ms.openlocfilehash: 064bc4a6e8183b58242522dfe663d2585eed09b5
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643969"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540161"
 ---
 # <a name="add-named-item-formulalocal"></a>Adicionar item nomeado FormulaLocal
 Adiciona um novo nome à coleção de escopo fornecido usando a localidade do usuário para a fórmula.
