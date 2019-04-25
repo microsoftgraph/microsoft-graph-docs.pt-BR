@@ -6,31 +6,31 @@ title: Recuperar itens de uma lista do SharePoint
 localization_priority: Priority
 ms.prod: sharepoint
 ms.openlocfilehash: 358fc16065074e3b0b2f8b1d19e7a5c43a4126e6
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480492"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32541371"
 ---
-# <a name="enumerate-items-in-a-list"></a><span data-ttu-id="1513f-102">Enumerar itens em uma lista</span><span class="sxs-lookup"><span data-stu-id="1513f-102">Enumerate items in a list</span></span>
+# <a name="enumerate-items-in-a-list"></a><span data-ttu-id="26ec7-102">Enumerar itens em uma lista</span><span class="sxs-lookup"><span data-stu-id="26ec7-102">Enumerate items in a list</span></span>
 
-<span data-ttu-id="1513f-103">Obter a coleção de [itens][item] em uma [lista][].</span><span class="sxs-lookup"><span data-stu-id="1513f-103">Get the collection of [items][item] in a [list][].</span></span>
+<span data-ttu-id="26ec7-103">Obter a coleção de [itens][item] em uma [lista][].</span><span class="sxs-lookup"><span data-stu-id="26ec7-103">Get the collection of [items][item] in a [list][].</span></span>
 
 [lista]: ../resources/list.md
 [list]: ../resources/list.md
 [item]: ../resources/listitem.md
 
-## <a name="permissions"></a><span data-ttu-id="1513f-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="1513f-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="26ec7-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="26ec7-105">Permissions</span></span>
 
-<span data-ttu-id="1513f-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1513f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="26ec7-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="26ec7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1513f-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="1513f-108">Permission type</span></span>      | <span data-ttu-id="1513f-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="1513f-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="26ec7-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="26ec7-108">Permission type</span></span>      | <span data-ttu-id="26ec7-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="26ec7-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1513f-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="1513f-110">Delegated (work or school account)</span></span> | <span data-ttu-id="1513f-111">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1513f-111">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="1513f-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="1513f-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1513f-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="1513f-113">Not supported.</span></span>    |
-|<span data-ttu-id="1513f-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="1513f-114">Application</span></span> | <span data-ttu-id="1513f-115">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1513f-115">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="26ec7-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="26ec7-110">Delegated (work or school account)</span></span> | <span data-ttu-id="26ec7-111">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="26ec7-111">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="26ec7-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="26ec7-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="26ec7-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="26ec7-113">Not supported.</span></span>    |
+|<span data-ttu-id="26ec7-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="26ec7-114">Application</span></span> | <span data-ttu-id="26ec7-115">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="26ec7-115">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1513f-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="1513f-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="26ec7-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="26ec7-116">HTTP request</span></span>
 
 ```http
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items
@@ -38,9 +38,9 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items?expan
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items?expand=fields(select=Column1,Column2)
 ```
 
-## <a name="example"></a><span data-ttu-id="1513f-117">Exemplo</span><span class="sxs-lookup"><span data-stu-id="1513f-117">Example</span></span>
+## <a name="example"></a><span data-ttu-id="26ec7-117">Exemplo</span><span class="sxs-lookup"><span data-stu-id="26ec7-117">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="1513f-118">Solicitação</span><span class="sxs-lookup"><span data-stu-id="1513f-118">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="26ec7-118">Solicitação</span><span class="sxs-lookup"><span data-stu-id="26ec7-118">Request</span></span>
 
 <!-- { "blockType": "request", "name": "get-list-items", "scopes": "sites.read.all" } -->
 
@@ -48,7 +48,7 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items?expan
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items?expand=fields(select=Name,Color,Quantity)
 ```
 
-#### <a name="response"></a><span data-ttu-id="1513f-119">Resposta</span><span class="sxs-lookup"><span data-stu-id="1513f-119">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="26ec7-119">Resposta</span><span class="sxs-lookup"><span data-stu-id="26ec7-119">Response</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.listItem)", "truncated": true } -->
 
