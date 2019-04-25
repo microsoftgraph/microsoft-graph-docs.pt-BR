@@ -1,52 +1,52 @@
 ---
-title: tipo de recurso de bookingService
+title: tipo de recurso bookingService
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: 35e439888b39c81451242f01d2aaae89b65ad8ee
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519882"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535472"
 ---
-# <a name="bookingservice-resource-type"></a>tipo de recurso de bookingService
+# <a name="bookingservice-resource-type"></a>tipo de recurso bookingService
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-Representa informações sobre um serviço específico fornecido por um [bookingBusiness](bookingbusiness.md), como o nome do serviço, preço e a equipe que geralmente fornece tal serviço.
+Representa informações sobre um serviço específico fornecido por um [bookingBusiness](bookingbusiness.md), como o nome do serviço, o preço e a equipe que geralmente fornece esse serviço.
 
 ## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Lista de serviços](../api/bookingbusiness-list-services.md) | coleção [bookingService](bookingservice.md) | Obtenha uma lista de objetos **bookingService** no especificado [bookingbusiness](../resources/bookingbusiness.md).|
-|[Criar bookingService](../api/bookingbusiness-post-services.md) | [bookingService](bookingservice.md) | Crie um **bookingService** para o especificado [bookingbusiness](../resources/bookingbusiness.md). |
-|[Obter bookingService](../api/bookingservice-get.md) | [bookingService](bookingservice.md) |Obtenha as propriedades e relacionamentos de um objeto **bookingService** no especificado [bookingbusiness](../resources/bookingbusiness.md).|
-|[Update](../api/bookingservice-update.md) | [bookingService](bookingservice.md)    |Atualize um objeto **bookingService** o especificado [bookingbusiness](../resources/bookingbusiness.md). |
-|[Delete](../api/bookingservice-delete.md) | Nenhum |Exclua um objeto **bookingService** no especificado [bookingbusiness](../resources/bookingbusiness.md). |
+|[Listar serviços](../api/bookingbusiness-list-services.md) | coleção [bookingService](bookingservice.md) | Obtenha uma lista de objetos **bookingService** no [bookingbusiness](../resources/bookingbusiness.md)especificado.|
+|[Criar bookingService](../api/bookingbusiness-post-services.md) | [bookingService](bookingservice.md) | Crie um **bookingService** para o [bookingbusiness](../resources/bookingbusiness.md)especificado. |
+|[Obter bookingService](../api/bookingservice-get.md) | [bookingService](bookingservice.md) |Obtenha as propriedades e os relacionamentos de um objeto **bookingService** no [bookingbusiness](../resources/bookingbusiness.md)especificado.|
+|[Update](../api/bookingservice-update.md) | [bookingService](bookingservice.md)    |Atualize um objeto **bookingService** no [bookingbusiness](../resources/bookingbusiness.md)especificado. |
+|[Excluir](../api/bookingservice-delete.md) | None |Exclua um objeto **bookingService** no [bookingbusiness](../resources/bookingbusiness.md)especificado. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|defaultDuration|Duration|O comprimento padrão do serviço, representado em número de dias, horas, minutos e segundos. Por exemplo, P11D23H59M59.999999999999S. |
-|defaultLocation|[location](location.md)|A localização física padrão para o serviço.|
-|defaultPrice|Duplo|O preço monetários padrão para o serviço.|
-|defaultPriceType|string|A maneira padrão de serviço é cobrada. Os valores possíveis são: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`.|
-|defaultReminders|coleção [bookingReminder](bookingreminder.md)|O padrão é definido de lembretes para um compromisso desse serviço. O valor dessa propriedade está disponível somente quando a ler este **bookingService** pela sua identificação.|
+|defaultDuration|Duração|O comprimento padrão do serviço, representado em números de dias, horas, minutos e segundos. Por exemplo, P11D23H59M 59.999999999999 S. |
+|defaultLocation|[location](location.md)|O local físico padrão para o serviço.|
+|defaultPrice|Duplo|O preço monetário padrão do serviço.|
+|defaultPricetype|string|O modo padrão pelo qual o serviço é cobrado. Os valores possíveis são: `undefined`, `fixedPrice`, `startingAt`, `hourly`, `free`, `priceVaries`, `callUs`, `notSet`.|
+|defaultLembrers|coleção [bookingReminder](bookingreminder.md)|O conjunto padrão de lembretes para um compromisso desse serviço. O valor dessa propriedade está disponível somente ao se ler este **bookingService** por sua ID.|
 |description|String|Uma descrição de texto para o serviço.|
 |displayName|String|Um nome de serviço.|
-|emailAddress|String|Um email:  |
-|id|String|A identificação desse serviço, em um formato GUID. Somente leitura.|
-|isHiddenFromCustomers|Booliano|True significa que esse serviço não está disponível para os clientes de reserva.|
-|Observações|String|Informações adicionais sobre esse serviço.|
-|postBuffer|Duration|Encerra o tempo de buffer após um compromisso para este serviço e antes que a próxima compromisso do cliente pode ser agendado.|
-|preBuffer|Duration|O tempo de buffer antes de um compromisso para esse serviço pode iniciar.|
-|schedulingPolicy|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|O conjunto de diretivas que determinam como compromissos para esse tipo de serviço devem ser criados e gerenciados.|
-|staffMemberIds|String collection|Representa os [membros da equipe](bookingstaffmember.md) que forneça esse serviço. |
+|emailAddress|String|Um endereço de email|
+|id|Cadeia de caracteres|A ID do serviço, em um formato GUID. Somente leitura.|
+|isHiddenFromCustomers|Booliano|True significa que este serviço não está disponível para os clientes para reserva.|
+|notes|Cadeia de caracteres|Informações adicionais sobre este serviço.|
+|Buffer|Duração|O tempo para o buffer após o término de um compromisso desse serviço e antes do próximo compromisso do cliente pode ser registrado.|
+|antes do buffer|Duração|O tempo para o buffer antes que um compromisso para este serviço possa ser iniciado.|
+|schedulingPolicy|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|O conjunto de políticas que determinam como os compromissos desse tipo de serviço devem ser criados e gerenciados.|
+|staffMemberIds|Coleção de cadeias de caracteres|Representa os [membros da equipe](bookingstaffmember.md) que fornecem esse serviço. |
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 Nenhum
 
 

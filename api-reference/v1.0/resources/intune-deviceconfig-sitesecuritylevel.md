@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: dd414911da78a0a3c2576fe1f53d47250cdd3d78
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30263879"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32534574"
 ---
 # <a name="sitesecuritylevel-enum-type"></a>tipo de enumeração siteSecurityLevel
 
@@ -21,11 +21,11 @@ Valores possíveis para o nível de segurança do site.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |userDefined|,0|Definido pelo usuário, valor padrão, sem intenção.|
-|low|1|Baixo.|
-|mediumLow|duas|Médio-baixo.|
-|medium|3D|Média.|
-|mediumHigh|quatro|Médio-alto.|
-|high|0,5|Alto.|
+|low|1 |Baixo.|
+|mediumLow|2 |Médio-baixo.|
+|medium|3 |Médio.|
+|mediumHigh|4 |Médio-alto.|
+|high|5 |Alto.|
 
 
 

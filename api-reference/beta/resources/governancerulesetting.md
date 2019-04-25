@@ -1,26 +1,26 @@
 ---
-title: tipo de recurso de governanceRuleSetting
-description: Representa as regras que as configurações de função são compostas de.
+title: tipo de recurso governanceRuleSetting
+description: Representa as regras nas quais as configurações de função são compostas.
 localization_priority: Normal
 ms.openlocfilehash: bbb44760cf4b7377e5e5cc6dd312c2caee9897fa
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522235"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547445"
 ---
-# <a name="governancerulesetting-resource-type"></a>tipo de recurso de governanceRuleSetting
+# <a name="governancerulesetting-resource-type"></a>tipo de recurso governanceRuleSetting
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa as regras que as configurações de função são compostas de.
+Representa as regras nas quais as configurações de função são compostas.
 
 
 ## <a name="properties"></a>Propriedades
 |Propriedade      | Tipo         |Descrição|
 |:-------------|:-------------|:----------|
-|ruleIdentifier|String        |A id da regra. Por exemplo, ``ExpirationRule`` e ``MfaRule``.|
-|configuração       |Cadeia de caracteres        |As configurações da regra. O valor é uma cadeia de caracteres JSON com uma lista de pares no formato de Parameter_Name:Parameter_Value. Por exemplo, `{"permanentAssignment":false,"maximumGrantPeriodInMinutes":129600}`|
+|ruleIdentifier|String        |A ID da regra. Por exemplo, ``ExpirationRule`` e ``MfaRule``.|
+|configuração       |Cadeia de caracteres        |As configurações da regra. O valor é uma cadeia de caracteres JSON com uma lista de pares no formato de Parameter_Name: Parameter_Value. Por exemplo, `{"permanentAssignment":false,"maximumGrantPeriodInMinutes":129600}`|
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 296fac43d0aa415effd35f4477994bd38763cf86
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642048"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536901"
 ---
 # <a name="list-tablecollection"></a>Listar TableCollection
 

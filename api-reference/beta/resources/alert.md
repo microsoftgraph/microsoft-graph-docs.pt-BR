@@ -5,11 +5,11 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 ms.openlocfilehash: 8fa945cc69b3bc7779ae9ce23e2ee672c48eb1f8
-ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30364574"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535783"
 ---
 # <a name="alert-resource-type"></a>tipo de alerta do recurso
 
@@ -33,7 +33,7 @@ Os alertas podem ser recuperados de diferentes provedores de segurança listados
 | Propriedade   | Tipo|Descrição|
 |:---------------|:--------|:----------|
 |activityGroupName|String|Nome ou alias do grupo de atividades (invasor) a que este alerta é atribuído.|
-|assignedTo|String|Nome do analista ao qual o alerta está atribuído para triagem, investigação ou remediação (suporta [atualização](../api/alert-update.md)).|
+|assignedTo|Cadeia de caracteres|Nome do analista ao qual o alerta está atribuído para triagem, investigação ou remediação (suporta [atualização](../api/alert-update.md)).|
 |azureSubscriptionId|String|ID da assinatura do Azure, presente se o alerta estiver relacionado a um recurso do Azure.|
 |azureTenantId |String|Locatário do Azure Active Directory. Obrigatório. |
 |category|String|Categoria de alerta (por exemplo, credentialTheft ransomware, etc.).|
@@ -49,15 +49,15 @@ Os alertas podem ser recuperados de diferentes provedores de segurança listados
 |fileStates|[fileSecurityState](filesecuritystate.md)|Informações com estado relacionadas à segurança geradas pelo provedor sobre os arquivos relacionados a esse alerta.|
 |historyStates|coleção [alertHistoryState](alerthistorystate.md)| Uma coleção de **alertHistoryStates** que consiste em um log de auditoria de todas as atualizações feitas em um alerta. |
 |hostStates|Conjunto [hostSecurityState](hostsecuritystate.md)|Informações com estado relacionadas à segurança geradas pelo provedor sobre o(s) host(s) relacionados a esse alerta.|
-|id |String|Identificador GUID/exclusivo gerado pelo provedor. Somente leitura. Obrigatório.|
+|id |Cadeia de caracteres|Identificador GUID/exclusivo gerado pelo provedor. Somente leitura. Obrigatório.|
 |lastModifiedDateTime|DateTimeOffset|Hora na qual entidade alerta foi modificada pela última vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
 |malwareStates|conjunto [malwareState](malwarestate.md)|Inteligência contra ameaças referentes ao malware relacionado a esse alerta.|
 |networkConnections|conjunto [networkConnection](networkconnection.md)|Informações com estado relacionadas à segurança geradas pelo provedor sobre as conexões de rede relacionadas a esse alerta.|
 |processos|conjunto [processo](process.md)|Informações com estado relacionadas à segurança geradas pelo provedor sobre o processo ou processos relacionados a esse alerta.|
-|recommendedActions|Coleção de cadeias de caracteres|Ações recomendadas pelo provedor/fornecedor a serem tomadas como resultado do alerta (por exemplo, isolar máquina, enforce2FA, host de imagem de imagem).|
+|recommendedActions|String collection|Ações recomendadas pelo provedor/fornecedor a serem tomadas como resultado do alerta (por exemplo, isolar máquina, enforce2FA, host de imagem de imagem).|
 |registryKeyStates|conjunto [registryKeyState](registrykeystate.md)|Informações com estado relacionadas à segurança geradas pelo provedor sobre as chaves de registro relacionadas a esse alerta.|
 |severity |alertSeverity|Gravidade de alerta, definida pelo provedor/fornecedor. Os valores possíveis são: `unknown`, `informational`, `low`, `medium`, `high`. Obrigatório.|
-|sourceMaterials|String collection|Hiperlinks (URIs) para o material de origem relacionado ao alerta, por exemplo, a interface do usuário do provedor para alertas ou pesquisa de log, etc.|
+|sourceMaterials|Coleção de cadeias de caracteres|Hiperlinks (URIs) para o material de origem relacionado ao alerta, por exemplo, a interface do usuário do provedor para alertas ou pesquisa de log, etc.|
 |status |alertStatus|Status de alerta de ciclo de vida (estágio). Os valores possíveis são: `unknown`, `newAlert`, `inProgress`, `resolved`. (suporta [atualização](../api/alert-update.md)). Obrigatório.|
 |marcações|String collection|Etiquetas definidas pelo usuário que podem ser aplicadas a um alerta e podem servir como condições de filtro (por exemplo, "HVA", "SAW", etc.) (suporta [atualização](../api/alert-update.md)).|
 |title |String|Título do alerta. Obrigatório.|

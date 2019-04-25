@@ -1,15 +1,15 @@
 ---
 title: Adicionar anexo
-description: Use essa API para adicionar um anexo a uma publicação. Desde daí
+description: Use esta API para adicionar um attachment a uma postagem. Como não há
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 4349673b5400674394db33540f09a407a0a6af33
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527889"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538729"
 ---
 # <a name="add-attachment"></a>Adicionar anexo
 
@@ -35,7 +35,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Aplicativo | Group.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
-<!-- { "blockType": "ignored" } -->Anexos de uma [postagem](../resources/post.md) em um [segmento](../resources/conversationthread.md) pertencente a uma [conversa](../resources/conversation.md) de um grupo.
+<!-- { "blockType": "ignored" } -->
+Anexos de uma [post](../resources/post.md) em um [thread](../resources/conversationthread.md) que pertence a uma [conversation](../resources/conversation.md) de um grupo.
 ```http
 POST /groups/{id}/threads/{id}/posts/{id}/attachments
 POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments
@@ -141,7 +142,7 @@ Content-length: 162
 ## <a name="example-reference-attachment"></a>Exemplo (anexo de referência)
 
 ##### <a name="request"></a>Solicitação
-Aqui está um exemplo de uma solicitação que adiciona um anexo de referência a uma postagem existente.
+Veja um exemplo de uma solicitação que adiciona um anexo de referência a uma postagem existente.
 O anexo aponta para uma pasta no OneDrive.
 <!-- {
   "blockType": "request",
@@ -165,7 +166,7 @@ Content-length: 319
 ```
 
 ##### <a name="response"></a>Resposta
-Aqui está um exemplo de uma resposta completa.
+Veja um exemplo de resposta completa.
 <!-- {
   "blockType": "response",
   "truncated": true,

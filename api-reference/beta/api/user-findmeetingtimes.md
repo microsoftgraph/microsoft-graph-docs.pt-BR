@@ -1,25 +1,25 @@
 ---
 title: 'user: findMeetingTimes'
-description: Sugira horários e locais de reunião com base na disponibilidade do organizador e participantes e nas restrições de tempo ou local especificadas como parâmetros.
+description: Localize as sugestões de hora da reunião com base no organizador e na disponibilidade dos participantes, assim como nas restrições de horário ou local especificadas como parâmetros.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 2aa8f10d1462065f0ae889261f25a15a3c29359b
-ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936294"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536515"
 ---
 # <a name="user-findmeetingtimes"></a>user: findMeetingTimes
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Sugira horários e locais de reunião com base na disponibilidade do organizador e participantes e nas restrições de tempo ou local especificadas como parâmetros.
+Localize as sugestões de hora da reunião com base no organizador e na disponibilidade dos participantes, assim como nas restrições de horário ou local especificadas como parâmetros.
 
 Se **findMeetingTimes** não retorna nenhuma sugestão de reunião, a resposta seria indicar um motivo na propriedade **emptySuggestionsReason**. Com base nesse valor, é possível ajustar melhor os parâmetros e a chamada **findMeetingTimes** novamente.
 
-O algoritmo usado para sugerir horários e locais de reunião passa a ser ajustado de hora para a hora. Em cenários como ambientes de teste em que os parâmetros de entrada e dados de calendário permaneçam estáticos, espere que os resultados sugeridos podem diferir ao longo do tempo.
+O algoritmo usado para ilustrar horários de reunião e locais passa por ajuste fino de tempos em tempos. Cenários como ambientes de teste onde permanecem estáticos parâmetros de entrada e dados de calendário, espere que os resultados sugeridos sejam diferentes ao longo do tempo.
 
 
 ## <a name="permissions"></a>Permissões
@@ -89,7 +89,7 @@ A propriedade **confidence** de uma **meetingTimeSuggestion** varia de 0% a 100%
 - Se houver diversas sugestões de horário de reunião, a ação **findMeetingTimes** primeiramente classifica as sugestões por seu valor de confiança computado que vai de alto para baixo. Se houver sugestões com a mesma confiança, a ação ordena essas sugestões em ordem cronológica.
 - Você pode usar o parâmetro opcional **minimumAttendeePercentage** **findMeetingTimes** para especificar que apenas as sugestões de horário da reunião com pelo menos determinado nível de confiança retornem. Por exemplo, você pode especificar uma **minimumAttendeePercentage** de 80% se você quiser apenas sugestões que tenham uma chance de 80% ou mais de que todos os participantes comparecerão. Se você não especificar **minimumAttendeePercentage**, **findMeetingTimes** pressupõe um valor de 50%.
 
-Por exemplo, se uma sugestão de horário de reunião envolve 3 participantes com o seguinte status livre/ocupado:
+Por exemplo, se uma sugestão de horário de reunião envolve três participantes com o seguinte status livre/ocupado:
 
 |**Participante**|**Status disponível/ocupado**|**% de chance de comparecer**|
 |:-----|:-----|:-----|
@@ -115,7 +115,7 @@ O exemplo a seguir mostra como encontrar um horário para reunir-se em um local 
 
 Definindo o parâmetro **returnSuggestionReasons**, você também obtém uma explicação na propriedade **suggestionReason** para cada sugestão, se **findMeetingTimes** retornar qualquer sugestão.
 
-Observe que a solicitação especifica o horário no fuso horário de PST. Por padrão, a resposta retorna sugestões de horário de reunião no UTC. Você pode usar o cabeçalho `Prefer: outlook.timezone` para especificar os valores de horário para o Horário Padrão do Pacífico na resposta.
+Observe que a solicitação especifica o tempo no fuso horário PST. Por padrão, a resposta retorna horário em sugestões UTC. Você pode usar o cabeçalho `Prefer: outlook.timezone` para especificar os valores de horário para o Horário Padrão do Pacífico na resposta.
 
 ##### <a name="request"></a>Solicitação
 Aqui está a solicitação de exemplo.

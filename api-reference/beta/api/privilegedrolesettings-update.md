@@ -3,11 +3,11 @@ title: Atualizar privilegedRoleSettings
 description: Atualize as configurações de função para a configuração de função determinada. Um objeto privilegedRoleSettings será retornado.
 localization_priority: Normal
 ms.openlocfilehash: 779b0d4cd61672c90c103ebb2545cb75324273fd
-ms.sourcegitcommit: 9fd437a77da99d8436d6c852edd99a9ba873f8cd
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31560112"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538658"
 ---
 # <a name="update-privilegedrolesettings"></a>Atualizar privilegedRoleSettings
 
@@ -54,7 +54,7 @@ A tabela a seguir lista as propriedades que você pode fornecer ao atualizar uma
 |notificationToUserOnElevation|Booliano|**true** se enviar notificação para o usuário final quando a função é ativada. **false** se não enviar notificações quando a função for ativada. Obrigatório.|
 |ticketingInfoOnElevation|Booliano|**true** se as informações de tíquete são necessárias ao ativar a função. **false** se as informações de tíquete não são necessárias ao ativar a função. Obrigatório.|
 |approvalOnElevation|Booliano|**true** se a aprovação é necessária ao ativar a função. **false** se a aprovação não é necessária ao ativar a função. Obrigatório.|
-|approverIds|Coleção String|Lista de IDs de aprovação, se a aprovação for necessária para ativação.|
+|approverIds|Coleção de cadeias de caracteres|Lista de IDs de aprovação, se a aprovação for necessária para ativação.|
 
 ## <a name="response"></a>Resposta
 

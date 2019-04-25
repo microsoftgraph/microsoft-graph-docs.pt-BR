@@ -1,29 +1,29 @@
 ---
-title: tipo de recurso de alertTrigger
+title: tipo de recurso alertTrigger
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
 localization_priority: Normal
 author: preetikr
 ms.prod: security
 ms.openlocfilehash: cda1dde9b22b9304fd412405758435be2f6143bc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516312"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535691"
 ---
-# <a name="alerttrigger-resource-type"></a>tipo de recurso de alertTrigger
+# <a name="alerttrigger-resource-type"></a>tipo de recurso alertTrigger
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contém informações sobre as propriedades que disparou uma detecção (Propriedades existirem na entidade alerta).
+Contém informações sobre as propriedades que acionaram uma detecção (as propriedades existem na entidade de alerta).
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade   | Tipo|Descrição|
 |:---------------|:--------|:----------|
-|name|Cadeia de caracteres|Nome da propriedade servindo como um gatilho de detecção.|
-|type|String|Tipo da propriedade no par de chave: valor de interpretação. Por exemplo, String, Boolean, etc.|
-|valor|String|Valor da propriedade servindo como um gatilho de detecção.|
+|name|String|Nome da propriedade servindo como um gatilho de detecção.|
+|type|String|Tipo da propriedade no par chave: valor para interpretação. Por exemplo, String, Boolean, etc.|
+|value|Cadeia de caracteres|O valor da propriedade servindo como um gatilho de detecção.|
 
 ## <a name="json-representation"></a>Representação JSON
 

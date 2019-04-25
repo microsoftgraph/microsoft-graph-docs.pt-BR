@@ -3,11 +3,11 @@ title: Tipo de recurso alternativeSecurityId
 description: Apenas para uso interno.
 localization_priority: Normal
 ms.openlocfilehash: 23ef74085a4a3cc383f0854e9139c9a0b63e3d40
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853799"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569477"
 ---
 # <a name="alternativesecurityid-resource-type"></a>Tipo de recurso alternativeSecurityId
 
@@ -31,6 +31,6 @@ Apenas para uso interno.
 ## <a name="properties"></a>Propriedades
 | Propriedade         | Tipo       | Descrição
 |:-----------------|:-----------|:---------------------
-| type             | Int32      | Somente para uso interno
-| identityProvider | string     | Somente para uso interno
-| key              | Edm.Binary | Somente para uso interno
+| type             | Int32      | Apenas para uso interno
+| identityProvider | string     | Apenas para uso interno
+| chave              | EDM. Binary | Apenas para uso interno

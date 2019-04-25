@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: be607832be82b99853b4cd44cfa5b60449a2c432
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27929470"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32534511"
 ---
 # <a name="tablesort-resource-type"></a>Tipo de recurso TableSort
 
@@ -21,7 +21,7 @@ Gerencia operações de classificação em objetos Table.
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Get TableSort](../api/tablesort-get.md) | [WorkbookTableSort](tablesort.md) |Leia as propriedades e os relacionamentos do objeto tableSort.|
-|[Aplicar](../api/tablesort-apply.md)|Nenhum|Execute uma operação de classificação.|
+|[Apply](../api/tablesort-apply.md)|Nenhum|Execute uma operação de classificação.|
 |[Clear](../api/tablesort-clear.md)|Nenhum|Limpa a classificação que está na tabela. Essa ação não modifica a ordenação da tabela, mas limpa o estado dos botões do cabeçalho.|
 |[Reapply](../api/tablesort-reapply.md)|Nenhum|Reaplica os parâmetros de classificação atuais à tabela.|
 
@@ -30,7 +30,7 @@ Gerencia operações de classificação em objetos Table.
 |:---------------|:--------|:----------|
 |campos|Coleção [WorkbookSortField](sortfield.md)|Representa as condições atuais usadas para a última classificação da tabela. Somente leitura.|
 |matchCase|booliano|Indica se o uso de maiúsculas ou minúsculas afetou a última classificação da tabela. Somente leitura.|
-|method|string|Representa caracteres do chinês método última usado para classificar a tabela de pedidos. Os valores possíveis são: `PinYin`, `StrokeCount`. Somente leitura.|
+|method|string|Indica o último método de ordenação de caracteres chineses usado para classificar a tabela. Os valores possíveis são: `PinYin`, `StrokeCount`. Somente leitura.|
 
 ## <a name="json-representation"></a>Representação JSON
 

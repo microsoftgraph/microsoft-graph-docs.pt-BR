@@ -1,19 +1,19 @@
 ---
-title: Membro do lista servicePrincipal transitivo
-description: Obtenha os grupos e funções de diretório que esse serviço principal é um membro de. Essa operação é transitiva e incluirá todos os grupos que esse serviço principal é um membro aninhado do.
+title: Listar os memberOf transitivos de servicePrincipalName
+description: Obtenha os grupos e funções de diretório dos quais essa entidade de serviço é membro. Essa operação é transitiva e inclui todos os grupos dos quais essa entidade de serviço é um membro aninhado.
 localization_priority: Normal
 ms.openlocfilehash: 4588f5ea4c6190b3743988c1d97bfd5caacbfaa4
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526225"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545146"
 ---
-# <a name="list-serviceprincipal-transitive-memberof"></a>Membro do lista servicePrincipal transitivo
+# <a name="list-serviceprincipal-transitive-memberof"></a>Listar os memberOf transitivos de servicePrincipalName
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha os grupos e funções de diretório que esse serviço principal é um membro de. Essa operação é transitiva e incluirá todos os grupos que esse serviço principal é um membro aninhado do.
+Obtenha os grupos e funções de diretório dos quais essa entidade de serviço é membro. Essa operação é transitiva e inclui todos os grupos dos quais essa entidade de serviço é um membro aninhado.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

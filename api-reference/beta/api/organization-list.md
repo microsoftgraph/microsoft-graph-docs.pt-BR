@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: c119d755ca4fd9a795fd8eff70b9bb015dbc7829
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511881"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539802"
 ---
 # <a name="list-organization"></a>Listar organização
 

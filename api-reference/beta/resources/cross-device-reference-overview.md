@@ -1,27 +1,27 @@
 ---
 title: Usar a API do Microsoft Graph para habilitar experiências em vários dispositivos
-description: '{Este é a versão beta. Conteúdo é semelhante do project_rome_overview.md existente.}'
+description: '{Esta é a versão beta. O conteúdo é semelhante ao project_rome_overview. MD existente.'
 localization_priority: Normal
 ms.prod: project-rome
 ms.openlocfilehash: 9a365198edc337bbd6baf1b7a688e0bbeaa74cd5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529373"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543404"
 ---
 # <a name="use-the-microsoft-graph-api-to-enable-cross-device-experiences"></a>Usar a API do Microsoft Graph para habilitar experiências em vários dispositivos
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-{Este é a versão beta. Conteúdo é semelhante do project_rome_overview.md existente.}
+{Esta é a versão beta. O conteúdo é semelhante ao project_rome_overview. MD existente.
 
 # <a name="next-steps"></a>Próximas etapas
 
-- [Visão geral da habilitação entre dispositivos experiência usando a API do Microsoft Graph de feed de atividade](/graph/activity-feed-concept-overview)
+- [Visão geral da habilitação da experiência entre dispositivos usando a API do feed de atividades no Microsoft Graph](/graph/activity-feed-concept-overview)
 - [Usar a API de feed de atividades para retomar as atividades de um usuário entre dispositivos](activity-feed-api-overview.md)
-- [Visão geral da habilitação experiência entre dispositivos usando a API de repetição de dispositivo no Microsoft Graph](/graph/device-relay-concept-overview)
-- [Usar a API de retransmissão do dispositivo para transferir a experiência do usuário entre dispositivos](device-relay-api-overview.md)
+- [Visão geral da habilitação da experiência entre dispositivos usando a API de repetição de dispositivo no Microsoft Graph](/graph/device-relay-concept-overview)
+- [Usar a API de retransmissão de dispositivo para transferir a experiência de um usuário entre dispositivos](device-relay-api-overview.md)
 <!--
 {
   "type": "#page.annotation",

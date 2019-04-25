@@ -5,11 +5,11 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 19cb2dc1dd1e86cd697319a0dc8a729cb712e463
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31792185"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547789"
 ---
 # <a name="list-messages"></a>Listar mensagens
 
@@ -17,18 +17,18 @@ ms.locfileid: "31792185"
 
 Obtenha as mensagens na caixa de correio do usuário conectado (incluindo as pastas Itens Excluídos e Email Secundário). 
 
-Dependendo do tamanho da página e dos dados da caixa de correio, a recebimento de mensagens de uma caixa de correio pode causar várias solicitações. O tamanho de página padrão é de 10 mensagens. Para obter a próxima página de mensagens, basta aplicar a URL inteira retornada `@odata.nextLink` à próxima solicitação get-messages. Esta URL inclui qualquer parâmetro de consulta que você possa ter especificado na solicitação inicial. 
+Dependendo do tamanho da página e dos dados da caixa de correio, a obtenção de mensagens de uma caixa de correio pode incorrer em várias solicitações. O tamanho de página padrão é 10 mensagens. Para obter a próxima página de mensagens, basta aplicar a URL inteira retornada em `@odata.nextLink` à próxima solicitação de obtenção de mensagens. Esta URL inclui todos os parâmetros de consulta que você especificou na solicitação inicial. 
 
-Não tente extrair o `$skip` valor da `@odata.nextLink` URL para manipular respostas. Essa API usa o `$skip` valor para manter a contagem de todos os itens que ele passou na caixa de correio do usuário para retornar uma página de itens de tipo de mensagem. Portanto, é possível que, mesmo na resposta inicial, o `$skip` valor seja maior do que o tamanho da página. Para obter mais informações, consulte paGinação [de dados do Microsoft Graph em seu aplicativo](/graph/paging).
+Não tente extrair o valor `$skip` da URL `@odata.nextLink` para manipular respostas. Essa API usa o valor `$skip` para manter a contagem de todos os itens pelos quais passou na caixa de correio do usuário para retornar uma página de itens do tipo mensagem. Portanto, é possível que, mesmo na resposta inicial, o valor `$skip` seja maior que o tamanho da página. Para mais informações, consulte [Paginação de dados do Microsoft Graph em seu aplicativo](/graph/paging).
 
 Você pode filtrar as mensagens e obter apenas aquelas que incluem [menção](../resources/mention.md) do usuário conectado.
 
 Observe que, por padrão, `GET /me/messages` a operação não retorna a propriedade **menciona** . Use o `$expand` parâmetro de consulta para [encontrar detalhes de cada menção em uma mensagem](../api/message-get.md#request-2).
 
-Há dois cenários em que um aplicativo pode obter mensagens na pasta email de outro usuário:
+Existem dois cenários em que um aplicativo pode receber mensagens na pasta de email de outro usuário:
 
 * Se o aplicativo tiver permissões de aplicativo ou
-* Se o aplicativo tiver as [permissões](#permissions) delegadas apropriadas de um usuário, e outro usuário tiver compartilhado uma pasta de email com esse usuário, ou, o terá acesso delegado a esse usuário. Confira [detalhes e um exemplo](/graph/outlook-share-messages-folders).
+* Se o aplicativo tiver as [permissões](#permissions) delegadas apropriadas de um usuário e outro usuário tiver compartilhado uma pasta de email com esse usuário, ou tiver concedido acesso delegado a esse usuário. Confira [detalhes e um exemplo](/graph/outlook-share-messages-folders).
 
 
 ## <a name="permissions"></a>Permissões
@@ -95,7 +95,7 @@ O primeiro exemplo obtém o padrão, as 10 principais mensagens na caixa de corr
 GET https://graph.microsoft.com/beta/me/messages?$select=sender,subject
 ```
 ##### <a name="response-1"></a>Resposta 1
-Veja a seguir um exemplo da resposta. Para obter a próxima página de mensagens, aplique a URL retornada `@odata.nextLink` a uma solicitação get subsequente.
+Veja a seguir um exemplo da resposta. Para obter a próxima página de mensagens, aplique a URL retornada em `@odata.nextLink` a uma solicitação GET subsequente.
 
 <!-- {
   "blockType": "response",
@@ -279,7 +279,7 @@ GET https://graph.microsoft.com/beta/me/messages?$select=subject,body,bodyPrevie
 Prefer: outlook.body-content-type="text"
 ```
 ##### <a name="response-3"></a>Resposta 3
-Veja a seguir um exemplo da resposta. 
+Este é um exemplo da resposta. 
 
 <!--
 Note: The response includes a `Preference-Applied: outlook.body-content-type` header to acknowledge the `Prefer: outlook.body-content-type` request header.

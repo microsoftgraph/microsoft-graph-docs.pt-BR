@@ -3,11 +3,11 @@ title: tipo de recurso de diagnóstico
 description: Informações sobre um erro ou aviso para uma operação do OneNote.
 localization_priority: Normal
 ms.openlocfilehash: ef495374f84e0df887198b38a5c8488987a59343
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509501"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535211"
 ---
 # <a name="diagnostic-resource-type"></a>tipo de recurso de diagnóstico
 
@@ -38,7 +38,7 @@ Veja a seguir uma representação JSON do recurso
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |mensagem|String|A mensagem que descreve a condição que disparou o erro ou aviso.|
-|url|String|O link para a documentação para esse problema.|
+|url|Cadeia de caracteres|O link para a documentação para esse problema.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

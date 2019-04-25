@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: 1cec20dee4a124bb704d60ceb8229ea820aa55b0
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365658"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32534854"
 ---
 # <a name="vendors-resource-type"></a>tipo de recurso fornecedores
 Representa um fornecedor no Dynamics 365 Business central.
@@ -41,10 +41,10 @@ Representa um fornecedor no Dynamics 365 Business central.
 |irs1099Code|string|Especifica um código 1099 para o fornecedor. Somente EUA.|
 |paymentTermsId|GUID|A ID padrão dos termos de pagamento do fornecedor.|
 |paymentMethodId|GUID|A ID de método de pagamento padrão para o fornecedor.|
-|taxLiable|boolean|Especifica se o fornecedor é responsável por impostos.|
+|taxLiable|booliano|Especifica se o fornecedor é responsável por impostos.|
 |bloqueou|string|Especifica quais transações com o fornecedor que não podem ser lançados. Os valores aceitos estão em branco, pagamento ou todos|
 |carga|dígitos|O saldo do fornecedor. Somente Leitura.|
-|lastModifiedDateTime|DateTime|O último DateTime que o fornecedor foi modificado. Somente Leitura.|  
+|lastModifiedDateTime|DateTime|O último DateTime que o fornecedor foi modificado. Somente leitura.|  
 
 
 ## <a name="relationships"></a>Relações

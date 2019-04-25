@@ -1,21 +1,21 @@
 ---
 title: Atualizar plannerAssignedToTaskBoardTaskFormat
-description: Atualize as propriedades do objeto **plannerAssignedToTaskBoardTaskFormat**.
+description: Atualize as propriedades do objeto **plannerAssignedToTaskBoardTaskFormat** .
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: dac616314626f3acd5a88e6bc88755a3051f43fe
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524846"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539013"
 ---
 # <a name="update-plannerassignedtotaskboardtaskformat"></a>Atualizar plannerAssignedToTaskBoardTaskFormat
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades do objeto **plannerAssignedToTaskBoardTaskFormat**.
+Atualize as propriedades do objeto **plannerAssignedToTaskBoardTaskFormat** .
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -34,19 +34,19 @@ PATCH /planner/tasks/<id>/assignedToTaskBoardFormat
 | Nome       | Descrição|
 |:-----------|:-----------|
 | Autorização  | {token} de portador. Obrigatório. |
-| If-Match  | Último valor ETag conhecido do objeto **plannerAssignedToTaskBoardTaskFormat** a ser atualizado. Obrigatório.|
+| If-Match  | O último valor de ETag conhecido para **plannerAssignedToTaskBoardTaskFormat** a ser atualizado. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|orderHintsByAssignee|[plannerOrderHintsByAssignee](../resources/plannerorderhintsbyassignee.md)|Dicionário de dicas usado para tarefas de ordem na exibição AssignedTo da placa de tarefa. A chave de cada entrada é um dos usuários que a tarefa é atribuída ao e o valor é a dica de ordem. O formato de cada valor é definido no [usando dicas de ordem no planejador (… / resources/planner_order_hint_format.md).|
-|unassignedOrderHint|String|Valor de dica usado para solicitar a tarefa no modo de exibição AssignedTo da placa tarefa quando a tarefa não é atribuída a ninguém, ou se o dicionário orderHintsByAssignee não ofereça uma dica order para o usuário a tarefa é atribuída a. O formato é definido em [dicas de ordem de uso no planejador](../resources/planner-order-hint-format.md).|
+|orderHintsByAssignee|[plannerOrderHintsByAssignee](../resources/plannerorderhintsbyassignee.md)|Dicionário de dicas usado para ordenar tarefas na exibição AssignedTo do quadro de tarefas. A chave de cada entrada é um dos usuários para os quais a tarefa é atribuída e o valor é a dica ORDER. O formato de cada valor é definido em [using Order Hints in Planner (.. /Resources/planner_order_hint_format.MD).|
+|unassignedOrderHint|String|O valor de dica usado para ordenar a tarefa na exibição AssignedTo do quadro de tarefas quando a tarefa não é atribuída a qualquer pessoa ou quando o dicionário do orderHintsByAssignee não fornece uma dica de pedido para o usuário ao qual a tarefa é atribuída. O formato é definido em [usando dicas de ordenação no Planner](../resources/planner-order-hint-format.md).|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [plannerAssignedToTaskBoardTaskFormat](../resources/plannerassignedtotaskboardtaskformat.md) atualizado no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [plannerAssignedToTaskBoardTaskFormat](../resources/plannerassignedtotaskboardtaskformat.md) atualizado no corpo da resposta.
 
 Este método pode retornar qualquer um dos [códigos de status de HTTP](/graph/errors). Os erros mais comuns que os aplicativos devem tratar para esse método são as respostas 400, 403, 404, 409 e 412. Saiba mais sobre esses erros em [Condições de erro comuns do Planner](../resources/planner-overview.md#common-planner-error-conditions).
 

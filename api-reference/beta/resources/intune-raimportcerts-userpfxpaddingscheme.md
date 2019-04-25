@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 8e1028f5e3bcac6b3ece66efb1ca50e7b65ea2bf
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31776273"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566364"
 ---
 # <a name="userpfxpaddingscheme-enum-type"></a>tipo de enumeração userPfxPaddingScheme
 
@@ -22,12 +22,12 @@ Valores com suporte para o esquema de preenchimento usado pelo provedor de cript
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhuma|,0|Ainda não documentado|
-|PKCS1|1|Ainda não documentado|
-|oaepSha1|duas|Ainda não documentado|
-|oaepSha256|3D|Ainda não documentado|
-|oaepSha384|quatro|Ainda não documentado|
-|oaepSha512|0,5|Ainda não documentado|
+|Nenhuma|,0|Ainda não documentado|
+|PKCS1|1 |Ainda não documentado|
+|oaepSha1|2 |Ainda não documentado|
+|oaepSha256|3 |Ainda não documentado|
+|oaepSha384|4 |Ainda não documentado|
+|oaepSha512|5 |Ainda não documentado|
 
 
 

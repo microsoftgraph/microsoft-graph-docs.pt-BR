@@ -5,11 +5,11 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: f140734b6e5fa3e6488b71dbe183a9e3d82fc795
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29967288"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539722"
 ---
 # <a name="get-outlooktask"></a>Obter outlookTask
 
@@ -17,7 +17,7 @@ ms.locfileid: "29967288"
 
 Obtenha as propriedades e as relações de uma tarefa do Outlook na caixa de correio do usuário.
 
-Por padrão, esta operação (e as operações de tarefa POST, PATCH e [Concluir](../api/outlooktask-complete.md) ) retorna propriedades relacionadas a data em UTC. Você pode usar o `Prefer: outlook.timezone` cabeçalho para que todas as propriedades relacionadas às datas como resposta representada em um fuso horário diferente do UTC.
+Por padrão, essa operação (e as operações de POST, PATCH e tarefa [completa](../api/outlooktask-complete.md) ) retorna as propriedades relacionadas à data no UTC. Você pode usar o cabeçalho `Prefer: outlook.timezone` para que todas as propriedades relacionadas à data na resposta sejam representadas em um fuso horário diferente de UTC.
 
 ## <a name="permissions"></a>Permissões
 
@@ -47,7 +47,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 | Nome                     | Descrição                                       |
 |:-------------------------|:--------------------------------------------------|
 | Autorização            | {token} de portador. Obrigatório.                         |
-| Prefira: outlook.timezone | Especifica o fuso horário para as propriedades de tempo na resposta, qual seria em UTC se este cabeçalho não for especificado. Opcional. |
+| Prefira: outlook.timezone | Especifica o fuso horário para as propriedades de hora na resposta, que seria no UTC se esse cabeçalho não for especificado. Opcional. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -55,11 +55,11 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` objeto response de código e [outlookTask](../resources/outlooktask.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [outlookTask](../resources/outlooktask.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-get-an-outlook-task"></a>O exemplo 1: Obtenha uma tarefa do Outlook
+### <a name="example-1-get-an-outlook-task"></a>Exemplo 1: obter uma tarefa do Outlook
 
 #### <a name="request"></a>Solicitação
 
@@ -124,11 +124,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time"></a>Exemplo 2: Obter tarefa do Outlook com as propriedades de data / hora em hora oficial do Pacífico
+### <a name="example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time"></a>Exemplo 2: obter a tarefa do Outlook com as propriedades de data e hora no horário padrão do Pacífico
 
 #### <a name="request"></a>Solicitação
 
-Este exemplo usa o `Prefer: outlook.timezone` cabeçalho para especificar que a API deve retornar as propriedades de data / hora na resposta na hora oficial do Pacífico.
+Este exemplo usa o `Prefer: outlook.timezone` cabeçalho para especificar que a API deve retornar as propriedades de data e hora na resposta no horário padrão do Pacífico.
 
 <!-- {
   "blockType": "request",
@@ -142,7 +142,7 @@ Prefer: outlook.timezone="Pacific Standard Time"
 
 ### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. As propriedades de data / hora na resposta são retornadas na hora oficial do Pacífico especificada.
+Veja a seguir um exemplo da resposta. As propriedades de data e hora na resposta são retornadas no horário padrão do Pacífico especificado.
 
 > **Observação:** O objeto da resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 

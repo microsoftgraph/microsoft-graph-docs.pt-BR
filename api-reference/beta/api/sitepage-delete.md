@@ -6,27 +6,27 @@ title: Excluir uma página de um site do SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: f855942288556fdf07e2b3af78408976c34eb052
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513022"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537108"
 ---
-# <a name="delete-page-from-the-site-pages-list-of-a-site"></a>Excluir página na lista de páginas de site de um site
+# <a name="delete-page-from-the-site-pages-list-of-a-site"></a>Excluir página da lista de páginas do site de um site
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove um [sitePage][] de páginas do site [lista][] em um [site][].
+Remove um [sitePage][] da [lista][] de páginas do site em um [site][].
 
 [sitePage]: ../resources/sitepage.md
-[lista]: ../resources/list.md
+[list]: ../resources/list.md
 [site]: ../resources/site.md
 
 ## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
->**Observação:** Para excluir um item, o usuário deve ter concedido ao acesso de gravação do aplicativo até o item a ser excluído.
+>**Observação:** Para excluir um item, o usuário deve ter concedido o acesso de gravação do aplicativo ao item a ser excluído.
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -55,7 +55,7 @@ Não forneça um corpo de solicitação com esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, essa chamada retornará um `204 No Content` resposta para indicar que o recurso foi excluído e não houve nothing para retornar.
+Se bem sucedido, esta chamada `204 No Content` retorna uma resposta para indicar que o recurso foi excluído e não houve nada para retornar.
 
 ## <a name="example"></a>Exemplo
 

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 2d67b7789f30dd1226c7918e734d615db4ee83ac
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31773291"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550648"
 ---
 # <a name="groupassignmenttarget-resource-type"></a>Tipo de recurso groupAssignmentTarget
 
@@ -28,7 +28,7 @@ Herda de [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-dev
 |groupId|Cadeia de caracteres|A ID do Grupo que representa o destino da atribuição.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

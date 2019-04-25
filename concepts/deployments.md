@@ -2,11 +2,11 @@
 title: Implantações de nuvens nacionais
 description: Além de uma rede global de datacenters, os serviços em nuvem da Microsoft estão disponíveis em três nuvens nacionais separadas. Essas versões de nuvem nacionais são instâncias isoladas de rede física e lógica dos serviços de nuvem corporativa da Microsoft que são confinados nas bordas geográficas de países específicos e operados pela equipe local.
 ms.openlocfilehash: a32d8bde766718aa0f6f6080ed4b8ff4e3e7f520
-ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "31889902"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32526303"
 ---
 # <a name="national-cloud-deployments"></a>Implantações de nuvem nacional
 

@@ -1,19 +1,19 @@
 ---
-title: Enviar um comando de dispositivo
-description: 'Essa API permite que os recursos de projeto Roma para um dispositivo associado a uma conta da Microsoft de comando. Depois de fazer uma chamada GET em `me/devices`, passe a ID do dispositivo para emitir um comando para seu dispositivo. Dois tipos de comandos são suportados: LaunchURI e AppServices. Se você estiver usando LaunchURI, especifique os parâmetros de *tipo* e da *carga* . Para uma chamada de AppService, especifique o '
+title: Enviar comando do dispositivo
+description: 'Essa API permite que os recursos do Project Roma para o comando um dispositivo associado a uma conta da Microsoft. Depois de obter uma chamada GET `me/devices`, passe a ID do dispositivo para emitir um comando para seu dispositivo. Há suporte para dois tipos de comandos: LaunchURI e AppServices. Se você estiver usando o LaunchURI, especifique os parâmetros *Type* e *Payload* . Para uma chamada serviço, especifique o '
 localization_priority: Normal
 ms.openlocfilehash: d0c25200933a4a87a66349e457c500c496272b08
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526239"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537522"
 ---
-# <a name="send-device-command"></a>Enviar um comando de dispositivo
+# <a name="send-device-command"></a>Enviar comando do dispositivo
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Essa API permite que os recursos de projeto Roma para um dispositivo associado a uma conta da Microsoft de comando. Depois de fazer uma chamada GET em `me/devices`, passe a ID do dispositivo para emitir um comando para seu dispositivo. Dois tipos de comandos são suportados: LaunchURI e AppServices. Se você estiver usando LaunchURI, especifique os parâmetros de *tipo* e da *carga* . Para uma chamada de AppService, especifique o *tipo*, *carga*, *packageFamilyName*e *appServiceName* parâmetros.
+Essa API permite que os recursos do Project Roma para o comando um dispositivo associado a uma conta da Microsoft. Depois de obter uma chamada GET `me/devices`, passe a ID do dispositivo para emitir um comando para seu dispositivo. Há suporte para dois tipos de comandos: LaunchURI e AppServices. Se você estiver usando o LaunchURI, especifique os parâmetros *Type* e *Payload* . Para uma chamada serviço, especifique os parâmetros *Type*, *Payload*, *packageFamilyName*e *appServiceName* .
 
 ## <a name="permissions"></a>Permissões
 
@@ -44,7 +44,7 @@ POST me/devices/{id}/commands
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON das propriedades do comando.
+No corpo da solicitação, forneça uma representação JSON das propriedades do comando.
 
 ```json
 {
@@ -76,23 +76,23 @@ HTTP/1.1 201 OK
   "postBackUri": "postbackURI"
 }
 ```
-## <a name="command-properties"></a>Command Properties 
+## <a name="command-properties"></a>Propriedades de comando 
 
-|**Name**|**Tipo**|**Descrição**|
+|**Nome**|**Tipo**|**Descrição**|
 |:----|:------|:------|
-|payload | Microsoft.Graph.JSON| Carga para enviar para um serviço do aplicativo ou iniciar um URI em um dispositivo. |
-|responsePayload | Microsoft.Graph.JSON| Carga retornado do dispositivo de destino. |
-|postBackURI | String | URI para enviar notificações subsequentes das atualizações de volta de postagem. |
-|packageFamilyName | String | Nome da família Windows pacote de aplicativo. |
-|appServiceName | String | Nome do serviço de aplicativo definido pelo aplicativo de destino. Será necessário se lançar um serviço do aplicativo. |
-|type| String | LaunchURI ou AppService. |
-|id| String | A identificação de um comando que foi enviado ao dispositivo. |
+|payload | Microsoft. Graph. JSON| Carga a ser enviada a um serviço de aplicativo ou para iniciar um URI em um dispositivo. |
+|responsePayload | Microsoft. Graph. JSON| Carga retornada do dispositivo de destino. |
+|postBackURI | String | Postar URI para enviar notificações de atualizações subsequentes. |
+|packageFamilyName | String | Nome do aplicativo da família de pacote do Windows. |
+|appServiceName | String | Nome do serviço de aplicativo definido pelo aplicativo de destino. Necessário se iniciar um serviço de aplicativo. |
+|type| String | LaunchURI ou serviço. |
+|id| Cadeia de caracteres | A ID de um comando que foi enviado ao dispositivo. |
 |actionStatus | String | O [status](get-device-command-status.md) de um comando. |
 |erro| String| Quaisquer erros associados à solicitação do aplicativo de destino. |
 
-## <a name="launch-uri-example"></a>Exemplo URI de início
+## <a name="launch-uri-example"></a>Exemplo de URI de inicialização
 
-Aqui está um exemplo de uma solicitação de LaunchURI; ele iniciará um URI ou um aplicativo no dispositivo de destino. Para iniciar um aplicativo ou um URI, emitir um POST usando a ID do dispositivo (obtido fazendo uma chamada GET em `me/devices`). Definir os parâmetros de *tipo* para *LaunchURI* e fornecer um valor URI, tais como https://bing.com.
+Aqui está um exemplo de uma solicitação LaunchURI; ele iniciará um URI ou um aplicativo no dispositivo de destino. Para iniciar um URI ou um aplicativo, emita uma POSTAgem usando a ID do dispositivo (obtido de uma chamada GET ativada `me/devices`). Defina os parâmetros de *tipo* como *LaunchURI* e forneça um valor de URI https://bing.comcomo.
 
 #### <a name="request"></a>Solicitação
 
@@ -144,13 +144,13 @@ HTTP/1.1 201 OK
 ```
 
 
-## <a name="app-service-example"></a>Exemplo de aplicativo do serviço
+## <a name="app-service-example"></a>Exemplo de serviço de aplicativo
 
-Aqui está um exemplo de uma consulta de um serviço de aplicativo em um dispositivo. Para usar um serviço de aplicativo, você deve fazer uma chamada de POSTAGEM usando a id do dispositivo (obtido fazendo uma chamada GET em `me/devices`). Para usar o exemplo a seguir, você deve instalar o [aplicativo Roma](https://aka.ms/romanapp) no seu dispositivo de destino.
+Veja um exemplo de consulta de um serviço de aplicativo em um dispositivo. Para usar um serviço de aplicativo, você deve fazer uma chamada POST usando a ID do dispositivo (obtido de uma chamada GET ativada `me/devices`). Para usar o exemplo a seguir, você deve instalar o [aplicativo Roma](https://aka.ms/romanapp) no seu dispositivo de destino.
 
-Várias outras propriedades devem ser definidas na chamada. *Tipo* deve ser definida como *AppService*, *AppServiceName* deve ser definida com o nome da definida no aplicativo de serviço do aplicativo, *PackageFamilyName* deve ser definida como o nome da família de pacote definido no manifesto do aplicativo e *carga* contém as chaves e valores para o serviço que você está chamando dentro do aplicativo de destino.
+Várias propriedades adicionais devem ser definidas na chamada. O *tipo* deve ser definido *como serviço*, *AppServiceName* deve ser definido como o nome do serviço de aplicativo definido no aplicativo, *PackageFamilyName* deve ser definido como o nome da família do pacote definido no manifesto do aplicativo e *carga* contém as chaves e os valores para o serviço que você está chamando no aplicativo de destino.
 
-#### <a name="request"></a>Solicitar
+#### <a name="request"></a>Solicitação
 
 <!-- {
   "blockType": "ignored",

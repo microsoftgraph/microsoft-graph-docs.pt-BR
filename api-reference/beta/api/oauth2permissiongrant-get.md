@@ -1,19 +1,19 @@
 ---
 title: Obter oAuth2Permissiongrant
-description: Recupere as propriedades e relações do objeto oAuth2Permissiongrant.
+description: Recupere as propriedades e os relacionamentos do objeto oAuth2Permissiongrant.
 localization_priority: Normal
 ms.openlocfilehash: 2b389e7f811444b9dc9fb1d9c2f619006611e11e
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640536"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540153"
 ---
 # <a name="get-oauth2permissiongrant"></a>Obter oAuth2Permissiongrant
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e relações do objeto oAuth2Permissiongrant.
+Recupere as propriedades e os relacionamentos do objeto oAuth2Permissiongrant.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -45,7 +45,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` objeto response de código e [oAuth2Permissiongrant](../resources/oauth2permissiongrant.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [oAuth2Permissiongrant](../resources/oauth2permissiongrant.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

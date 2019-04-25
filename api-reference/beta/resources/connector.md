@@ -1,15 +1,15 @@
 ---
-title: tipo de recurso de conector
+title: tipo de recurso conector
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 ms.openlocfilehash: eed936c808e920f35a741a836a1fab64b2754bf8
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525728"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535519"
 ---
-# <a name="connector-resource-type"></a>tipo de recurso de conector
+# <a name="connector-resource-type"></a>tipo de recurso conector
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,21 +24,21 @@ ms.locfileid: "29525728"
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Obtenha o conector](../api/connector-get.md) | [Connector](connector.md) |Leia as propriedades e os relacionamentos de objeto de conector.|
-|[Listar memberOf](../api/connector-list-memberof.md) |coleção [connectorGroup](connectorgroup.md)| Obtenha o objeto de connectorGroup associado com o conector.|
+|[Obter conector](../api/connector-get.md) | [conector](connector.md) |Leia as propriedades e as relações do objeto Connector.|
+|[Listar memberOf](../api/connector-list-memberof.md) |[](connectorgroup.md) coleção de conectores| Obtenha o objeto de conexão associado ao conector.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|externalIp|String|O endereço IP externo como detectada pelo serviço para a máquina do conector. Somente leitura|
-|id|String| A id de objeto do conector. <BR>Somente leitura.|
-|machineName|String| O nome do computador que está executando o conector. <BR>Somente leitura|
-|status|string| Indica o status do conector. Os valores possíveis são: `active` e `inactive`. Somente leitura |
+|externalIp|String|O endereço IP externo, conforme detectado pelo serviço para o computador do conector. Somente leitura|
+|id|Cadeia de caracteres| A ID de objeto do conector. <BR>Somente leitura.|
+|Nomecomputador|String| O nome da máquina na qual o conector está sendo executado. <BR>Somente leitura|
+|status|cadeia de caracteres| Indica o status do conector. Os valores possíveis são: `active` e `inactive`. Somente leitura |
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|memberOf|coleção [connectorGroup](connectorgroup.md)| O connectorGroup conectar é membro de.<br>Somente leitura. |
+|memberOf|[](connectorgroup.md) coleção de conectores| O MemberGroup do qual a conexão é membro.<br>Somente leitura. |
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: a00368c918685f6f94020dbea655232bae58ad57
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643612"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536478"
 ---
 # <a name="user-translateexchangeids"></a>usuário: translateExchangeIds
 
@@ -23,8 +23,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:----------------|:--------------------------------------------|
-| Delegada (conta corporativa ou de estudante) | User.ReadBasic, User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
-| Delegada (conta pessoal da Microsoft) | User.ReadBasic, User.Read, User.ReadWrite |
+| Delegado (conta corporativa ou de estudante) | User. ReadBasic, User. Read, User. ReadWrite, User. ReadBasic. All, User. Read. All, User. ReadWrite. All |
+| Delegado (conta pessoal da Microsoft) | User. ReadBasic, User. Read, User. ReadWrite |
 | Aplicativo | User.Read.All, User.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -46,34 +46,34 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 | Parâmetro | Tipo | Descrição |
 |:----------|:-----|:------------|
-| inputIds | Coleção Edm.String | Uma coleção de identificadores para converter. Todos os identificadores na coleção devem ter o mesmo tipo de ID de fonte e devem ser para itens na mesma caixa de correio. Tamanho máximo dessa coleção é 1000 cadeias de caracteres. |
-| sourceIdType | exchangeIdFormat | O tipo de identificadores de na ID do `InputIds` parâmetro. |
-| targetIdType | exchangeIdFormat | O tipo de ID solicitado para converter em. |
+| inputIds | Coleção EDM. String | Uma coleção de identificadores a serem convertidos. Todos os identificadores na coleção devem ter o mesmo tipo de ID de fonte e devem ser para itens na mesma caixa de correio. O tamanho máximo dessa coleção é de 1000 cadeias de caracteres. |
+| sourceIdType | exchangeIdFormat | O tipo de ID dos identificadores no `InputIds` parâmetro. |
+| targetIdType | exchangeIdFormat | O tipo de ID solicitado a ser convertido. |
 
 ### <a name="exchangeidformat-values"></a>valores de exchangeIdFormat
 
 | Valores | Descrição |
 |:-------|:------------|
-| entryId | O formato de ID de entrada binário usado pelos clientes MAPI. |
-| ewsId | O formato de ID usado pelos clientes de serviços Web do Exchange. |
-| immutableEntryId | O compatível com MAPI imutável ID formato binário. |
-| restId | O formato de ID padrão usado pelo Microsoft Graph. |
+| entryId | O formato de ID de entrada binária usado por clientes MAPI. |
+| ewsId | O formato de ID usado pelos clientes dos serviços Web do Exchange. |
+| immutableEntryId | O formato de ID imutável binário compatível com MAPI. |
+| restid | O formato de ID padrão usado pelo Microsoft Graph. |
 | restImmutableEntryId | O formato de ID imutável usado pelo Microsoft Graph. |
 
-Formatos binários (`entryId` e `immutableEntryId`) são URL-safe codificação base64. URL-safeness é implementado, modificando a codificação base64 dos dados binários da seguinte maneira:
+Os formatos binários`entryId` ( `immutableEntryId`e) são codificados por URL com base em base64. A segurança de URL é implementada modificando a codificação Base64 dos dados binários da seguinte maneira:
 
-- Substituir `+` com`-`
-- Substituir `/` com`_`
-- Remova os caracteres de preenchimento à direita (`=`)
-- Adicionar um número inteiro até o final da cadeia de caracteres indicando quantos caracteres de preenchimento estavam em original (`0`, `1`, ou `2`)
+- Substituir `+` por`-`
+- Substituir `/` por`_`
+- Remover os caracteres de preenchimento à direita`=`()
+- Adicione um inteiro ao final da cadeia de caracteres indicando quantos caracteres de preenchimento estavam no original (`0`, `1`, ou) `2`
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` código de resposta e um conjunto de [convertIdResult](../resources/convertidresult.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `200 OK` um código de resposta e uma coleção [convertIdResult](../resources/convertidresult.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
-O exemplo a seguir mostra como converter vários identificadores do formato de API REST do normal (`restId`) para o formato de imutável REST (`restImmutableEntryId`).
+O exemplo a seguir mostra como converter vários identificadores do formato de API REST normal (`restId`) para o formato imutável (`restImmutableEntryId`) do REST.
 
 ### <a name="request"></a>Solicitação
 
@@ -99,7 +99,7 @@ Content-Type: application/json
 
 ### <a name="response"></a>Resposta
 
-Aqui está a resposta de exemplo
+Veja a seguir o exemplo de resposta
 <!-- {
   "blockType": "response",
   "@odata.type": "microsoft.graph.convertIdResult",

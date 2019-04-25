@@ -1,29 +1,29 @@
 ---
-title: tipo de recurso de bookingReminder
+title: tipo de recurso bookingReminder
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: 0e5188a5a440134d11404c102b4641fc98cad04f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526078"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535473"
 ---
-# <a name="bookingreminder-resource-type"></a>tipo de recurso de bookingReminder
+# <a name="bookingreminder-resource-type"></a>tipo de recurso bookingReminder
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-Representa quando e para os quais enviar um lembrete de email.
+Representa quando e para quem enviar um lembrete de email.
 
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|mensagem|String|A mensagem do lembrete.|
-|DESLOCAMENTO|Duration|A quantidade de tempo antes do início de um compromisso que o lembrete deve ser enviado. Ele é indicado no formato [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) .|
-|recipients|String| As pessoas que recebem shouold o lembrete. Os valores possíveis são: `allAttendees`, `staff`, `customer`.|
+|mensagem|String|A mensagem no lembrete.|
+|partida|Duração|O período de tempo antes do início de um compromisso para o qual o lembrete deve ser enviado. Ele é indicado no formato [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) .|
+|destinatários|String| As pessoas que shouold receberão o lembrete. Os valores possíveis são: `allAttendees`, `staff`, `customer`.|
 
 ## <a name="json-representation"></a>Representação JSON
 

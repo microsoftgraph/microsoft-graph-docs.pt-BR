@@ -1,31 +1,31 @@
 ---
-title: tipo de recurso de audioConferencing
-description: Representa as informações de acesso telefônicas de um onlineMeeting.
+title: tipo de recurso audioConferencing
+description: Representa as informações de acesso de telefone de um onlineMeeting.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: cb822f2049d84f9a2460370f05d5dfc85c347f15
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522172"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535538"
 ---
-# <a name="audioconferencing-resource-type"></a>tipo de recurso de audioConferencing
+# <a name="audioconferencing-resource-type"></a>tipo de recurso audioConferencing
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa as informações de acesso telefônicas de um [onlineMeeting](onlinemeeting.md).
+Representa as informações de acesso de telefone de um [onlineMeeting](onlinemeeting.md).
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade            | Tipo    | Descrição                                                                    |
 |:--------------------|:--------|:-------------------------------------------------------------------------------|
-| dialinUrl           | String  | Uma URL para a página da web acessível externamente que contém informações de discagem. |
-| leaderPasscode      | String  | A senha de líder necessária para conectar ao provedor de conferência de áudio.      |
-| participantPasscode | String  | A senha de participante necessária para conectar ao provedor de conferência de áudio. |
-| tollFreeNumber      | String  | O número de chamada gratuito para conectar ao provedor de conferência de áudio.              |
-| tollNumber          | String  | O número de Chamada Tarifada para conectar ao provedor de conferência de áudio.                   |
+| dialinUrl           | String  | Uma URL para a página da Web acessível externamente que contém informações de discagem. |
+| leaderPasscode      | String  | A senha de preenchimento necessária para se conectar ao provedor de conferência de áudio.      |
+| participantPasscode | String  | A senha do participante necessária para se conectar ao provedor de conferência de áudio. |
+| tollFreeNumber      | String  | O número de chamada gratuita para se conectar ao provedor de conferência de áudio.              |
+| tollNumber          | String  | O número de chamada tarifada para se conectar ao provedor de conferência de áudio.                   |
 
 ## <a name="json-representation"></a>Representação JSON
 

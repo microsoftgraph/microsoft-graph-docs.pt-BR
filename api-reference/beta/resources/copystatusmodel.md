@@ -1,15 +1,15 @@
 ---
-title: tipo de recurso de copyStatusModel
+title: tipo de recurso copyStatusModel
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 ms.openlocfilehash: bf1a88b74f38f21f89b089b31ea5b6e7b6af9f0b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521121"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535222"
 ---
-# <a name="copystatusmodel-resource-type"></a>tipo de recurso de copyStatusModel
+# <a name="copystatusmodel-resource-type"></a>tipo de recurso copyStatusModel
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -38,7 +38,7 @@ Veja a seguir uma representação JSON do recurso.
 |:---------------|:--------|:----------|
 |createdDateTime| DateTimeOffset ||
 |id|string||
-|status|string||
+|status|cadeia de caracteres||
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

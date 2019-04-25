@@ -3,11 +3,11 @@ title: Excluir foto
 description: Exclua uma foto.
 localization_priority: Normal
 ms.openlocfilehash: 8f29f272aeaebd8aed7de14b817d3e4c7719f511
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526925"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539020"
 ---
 # <a name="delete-photo"></a>Excluir foto
 

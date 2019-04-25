@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: 9063a9066c51956596e4f0aa918a2e7a53bf2ab9
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365609"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543096"
 ---
 # <a name="customerpayments-resource-type"></a>tipo de recurso customerPayments
 Representa um pagamento de cliente no Dynamics 365 Business central. Um pagamento de cliente é inserido como uma linha em um diário de pagamento do cliente.
@@ -31,7 +31,7 @@ Representa um pagamento de cliente no Dynamics 365 Business central. Um pagament
 |id|GUID|A ID exclusiva do pagamento do cliente. Não editável.|
 |journalDisplayName|string|O diário de pagamentos do cliente no qual o registro de pagamento é uma linha.|
 |lineNumber|inteiro|O número do pagamento do cliente.|
-|customerId|GUID|A ID exclusiva do cliente ao qual o pagamento está relacionado.|
+|Box|GUID|A ID exclusiva do cliente ao qual o pagamento está relacionado.|
 |customerNumber|Cadeia de caracteres, tamanho máximo 20|O número do cliente ao qual o pagamento está relacionado.|
 |ContactID|Cadeia de caracteres, tamanho máximo 250|A ID de contato do Exchange para o cliente específico. Se uma ID de cliente não for especificada, usaremos a ID de contato para encontrá-la.|
 |postingDate|data|A data em que o pagamento do cliente é lançado.|
@@ -42,7 +42,7 @@ Representa um pagamento de cliente no Dynamics 365 Business central. Um pagament
 |appliesToInvoiceNumber|Cadeia de caracteres, tamanho máximo 20|O número da fatura à qual o pagamento está relacionado.|
 |description|Cadeia de caracteres, tamanho máximo 50|A descrição do pagamento do cliente, fornecida pelo usuário ou pela autocriação.|
 |comment|Cadeia de caracteres, tamanho máximo 250|Um comentário especificado pelo usuário no pagamento do cliente.|
-|lastModifiedDateTime|DateTime|O último DateTime que o pagamento do cliente foi modificado. Somente Leitura.|
+|lastModifiedDateTime|DateTime|O último DateTime que o pagamento do cliente foi modificado. Somente leitura.|
 
 
 ## <a name="relationships"></a>Relações

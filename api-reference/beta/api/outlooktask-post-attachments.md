@@ -1,21 +1,21 @@
 ---
 title: Criar anexo
-description: Use essa API para adicionar um anexo a um outlookTask.
+description: Use esta API para adicionar um anexo a um outlookTask.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: ae6c420c9c0ccf10df4d2d62a27f4b8c0d857c32
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525021"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539785"
 ---
 # <a name="create-attachment"></a>Criar anexo
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use essa API para adicionar um [anexo](../resources/attachment.md) a um [outlookTask](../resources/outlooktask.md).
+Use esta API para adicionar um [anexo](../resources/attachment.md) a um [outlookTask](../resources/outlooktask.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -41,7 +41,7 @@ POST /users/{id|userPrincipalName}/outlook/tasks/{id}/attachments
 | Nome       | Descrição|
 |:---------------|:----------|
 | Autorização  | {token} de portador. Obrigatório. |
-| Content-Type | Uma string que representa o tipo de dados no corpo de uma entidade. Obrigatório. |
+| Content-Type | Uma cadeia de caracteres que representa o tipo de dados no corpo de uma entidade. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 

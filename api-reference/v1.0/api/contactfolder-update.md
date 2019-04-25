@@ -1,19 +1,19 @@
 ---
 title: Atualizar contactfolder
-description: Atualizar as propriedades do objeto contactfolder.
+description: Atualiza as propriedades do objeto contactfolder.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 39a0869757fe42fd4502b194b84c3fe3e3edad68
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27954173"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566105"
 ---
 # <a name="update-contactfolder"></a>Atualizar contactfolder
 
-Atualizar as propriedades do objeto contactfolder.
+Atualiza as propriedades do objeto contactfolder.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -40,12 +40,12 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|displayName|Cadeia de caracteres|O nome de exibição da pasta.|
-|parentFolderId|Cadeia de caracteres|A ID da pasta pai da pasta.|
+|displayName|String|O nome de exibição da pasta.|
+|parentFolderId|String|A ID da pasta pai da pasta.|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [contactFolder](../resources/contactfolder.md) atualizado no corpo da resposta.
+Se bem sucedido, este método retorna um código de resposta `200 OK` e um objeto [contactFolder](../resources/contactfolder.md) atualizado no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

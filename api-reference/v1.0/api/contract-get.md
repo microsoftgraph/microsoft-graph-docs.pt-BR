@@ -1,19 +1,19 @@
 ---
-title: Obter Contract
-description: Recupere as propriedades e os relacionamentos do objeto contract.
+title: Obter contrato
+description: Recupere as propriedades e os relacionamentos do objeto Contract.
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: ba6ba3dd1e0dc631f5aeb61dd6d714e9d7a81bb6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917423"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566175"
 ---
-# <a name="get-contract"></a>Obter Contract
+# <a name="get-contract"></a>Obter contrato
 
-Recupere as propriedades e os relacionamentos do objeto [contract](../resources/contract.md).
+Recupere as propriedades e os relacionamentos do objeto [Contract](../resources/contract.md) .
 
 ## <a name="permissions"></a>Permissões
 
@@ -48,7 +48,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [Contract](../resources/contract.md) no corpo da resposta.
+Se bem-sucedido, este método retorna o `200 OK` código de resposta e o objeto [Contract](../resources/contract.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/v1.0/contracts/{id}
 ```
 
 ##### <a name="response"></a>Resposta
-Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

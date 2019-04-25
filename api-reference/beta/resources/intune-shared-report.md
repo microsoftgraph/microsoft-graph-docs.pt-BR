@@ -5,11 +5,11 @@ localization_priority: Normal
 author: tfitzmac
 ms.prod: intune
 ms.openlocfilehash: f523f6df0b8b90cb6649ac81f1e433d6df227aea
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30165748"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32534812"
 ---
 # <a name="report-resource-type"></a>Tipo de recurso report
 
@@ -25,7 +25,7 @@ Retorna o conteúdo apropriado para o contexto, incluindo:
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|content|Fluxo|Conteúdo de relatórios; os detalhes variam por tipo de relatório.|
+|conteúdo|Fluxo|Conteúdo de relatórios; os detalhes variam por tipo de relatório.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

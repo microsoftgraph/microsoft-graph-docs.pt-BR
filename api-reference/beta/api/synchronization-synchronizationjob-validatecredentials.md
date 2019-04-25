@@ -1,19 +1,19 @@
 ---
 title: 'synchronizationJob: validateCredentials'
-description: Valide se as credenciais são válidas no inquilino.
+description: Valide se as credenciais são válidas no locatário.
 localization_priority: Normal
 ms.openlocfilehash: 122d673e89f15697b2fdeefbcefb516cf9ad89ca
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519000"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537116"
 ---
 # <a name="synchronizationjob-validatecredentials"></a>synchronizationJob: validateCredentials
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Valide se as credenciais são válidas no inquilino.
+Valide se as credenciais são válidas no locatário.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -33,18 +33,18 @@ POST /servicePrincipals/{id}/synchronization/jobs/{id}/validateCredentials
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
-| Autorização  | Portador {código}|
+| Authorization  | Portador {código}|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|useSavedCredentials|Booliano|Quando `true`, o `credentials` parâmetro será ignorado e as credenciais salvas anteriormente (se houver) serão validadas em vez disso. |
-|credenciais|coleção [synchronizationSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md)|Credenciais para validar. Ignorado quando o `useSavedCredentials` parâmetro é `true`.|
+|useSavedCredentials|Booliano|Quando `true`, o `credentials` parâmetro será ignorado e as credenciais salvas anteriormente (se houver alguma) serão validadas. |
+|las|coleção [synchronizationSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md)|Credenciais a serem validadas. Ignorado quando o `useSavedCredentials` parâmetro é `true`.|
 
 ## <a name="response"></a>Resposta
-Se a validação for bem-sucedida, esse método retorna um `204, No Content` código de resposta. Ele não retornará nada no corpo da resposta.
+Se a validação for bem-sucedida, este método retornará `204, No Content` um código de resposta. Não retorna nada no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

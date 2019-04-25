@@ -5,11 +5,11 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 1237ba7e4aa5ab0439af9f07902705e7b4061374
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513540"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540542"
 ---
 # <a name="delete-message"></a>Excluir mensagem
 
@@ -17,9 +17,9 @@ ms.locfileid: "29513540"
 
 Excluir uma mensagem na caixa de correio do usuário especificado ou excluir uma relação da mensagem.
 
-Por exemplo, você pode excluir um [@ mencionam](../resources/mention.md) específica do usuário especificado na mensagem.
+Por exemplo, você pode excluir uma [menção de @](../resources/mention.md) específica do usuário especificado na mensagem.
 
->**Observação** Você não poderá excluir itens na pasta itens recuperáveis exclusões (representado pelo [nome da pasta conhecido](../resources/mailfolder.md) `recoverableitemsdeletions`). Para obter mais informações, consulte [retenção de itens excluídos](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) e [Limpar itens excluídos](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items) .
+>**Observação** Você pode não conseguir excluir itens da pasta exclusão de itens recuperáveis (representado pelo [nome](../resources/mailfolder.md) `recoverableitemsdeletions`de pasta conhecido). Veja [retenção de item excluído](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) e [limpar itens excluídos](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items) para obter mais informações.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -32,7 +32,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-Para excluir a mensagem especificada:<!-- { "blockType": "ignored" } -->
+Para excluir a mensagem especificada:
+<!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/messages/{id}
 DELETE /users/{id | userPrincipalName}/messages/{id}
@@ -40,7 +41,8 @@ DELETE /me/mailFolders/{id}/messages/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
 
-Para excluir um específicos [mencionar](../resources/mention.md) em uma mensagem:<!-- { "blockType": "ignored" } -->
+Para excluir uma [menção](../resources/mention.md) específica em uma mensagem:
+<!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/messages/{id}/mentions/{id}
 DELETE /users/{id | userPrincipalName}/messages/{id}/mentions/{id}
@@ -81,7 +83,7 @@ HTTP/1.1 204 No Content
 ```
 
 ##### <a name="request-2"></a>Solicitação 2
-O exemplo a seguir exclui uma determinada **mencionar** na mensagem especificada.
+O próximo exemplo exclui uma determinada **menção** na mensagem especificada.
 <!-- {
   "blockType": "request",
   "name": "delete_mention_in_message"
@@ -90,7 +92,7 @@ O exemplo a seguir exclui uma determinada **mencionar** na mensagem especificada
 DELETE https://graph.microsoft.com/beta/me/messages/{id}/mentions/{id}
 ```
 ##### <a name="response-2"></a>Resposta 2
-Este é um exemplo da resposta. 
+Veja a seguir um exemplo da resposta. 
 <!-- {
   "blockType": "response",
   "truncated": true

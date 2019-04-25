@@ -1,30 +1,30 @@
 ---
-title: Enumerar os sites
-description: Liste o [de] [sites] disponíveis em uma organização que correspondem a critérios de filtro fornecida e opções de consulta.
+title: Enumerar sites
+description: Liste [sites] [] em uma organização que corresponda aos critérios de filtro e opções de consulta fornecidos.
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: f225d9990637f8251ae40e3f66b0f993bbf74f32
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520337"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545188"
 ---
-# <a name="enumerate-sites"></a>Enumerar os sites
+# <a name="enumerate-sites"></a>Enumerar sites
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Liste os [sites][] disponíveis em uma organização que coincidem com os critérios de filtro fornecida e opções de consulta.
+Listar os [sites][] disponíveis em uma organização que correspondam aos critérios de filtro e opções de consulta fornecidos.
 
-Somente as seguintes opções de consulta são atualmente suportadas:
+Há suporte apenas para as seguintes opções de consulta:
 
-| Instrução de filtro             | Instrução SELECT        | Descrição
+| Instrução Filter             | Instrução SELECT        | Descrição
 |:-----------------------------|:------------------------|:--------------------
-|`siteCollection/root ne null` | `siteCollection,webUrl` | Lista todos os conjuntos de sites de nível de raiz na organização. É útil para descobrir o site inicial para cada região geográfica.
+|`siteCollection/root ne null` | `siteCollection,webUrl` | Lista todos os conjuntos de sites de nível de raiz na organização. Útil para descobrir o site de casa de cada geografia.
 
-Além disso, você pode usar uma consulta de **[pesquisa][]** contra a coleção '/ sites' para encontrar sites correspondência determinados palavras-chave.
+Além disso, você pode usar uma consulta de **[pesquisa][]** em relação à coleção de '/sites ' para localizar sites que correspondem a palavras-chave dadas.
 
-[Search]: site-search.md
+[consulte]: site-search.md
 [sites]: ../resources/site.md
 
 ## <a name="permissions"></a>Permissões

@@ -2,15 +2,15 @@
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Obter um site do SharePoint
+title: Obter um Site do SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: bc1f4e478b93472b683cd8249d55a98f751dfaa0
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482284"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537311"
 ---
 # <a name="get-a-site-resource"></a>Obter um recurso de site
 
@@ -22,7 +22,7 @@ Recupere as propriedades e as relações de um recurso [site][]. Um recurso **si
 
 Um **site** é endereçado para ser um identificador exclusivo que é uma ID composta dos seguintes valores:
 
-* Nome do host do conjunto de sites (contoso.sharepoint.com)
+* Hostname do conjunto de sites (contoso.sharepoint.com)
 * ID exclusiva do conjunto de sites (GUID)
 * ID exclusiva do site (GUID)
 

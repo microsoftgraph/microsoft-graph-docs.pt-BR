@@ -1,19 +1,19 @@
 ---
 title: Obter locatedRiskEvent
-description: Recupere as propriedades e relacionamentos de um objeto locatedriskevent.
+description: Recupere as propriedades e os relacionamentos de um objeto locatedriskevent.
 localization_priority: Normal
 ms.openlocfilehash: aee63e3f9cbb90f839d3eaebf5ec37b2f5b53042
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509228"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540878"
 ---
 # <a name="get-locatedriskevent"></a>Obter locatedRiskEvent
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e relacionamentos de um objeto locatedriskevent.
+Recupere as propriedades e os relacionamentos de um objeto locatedriskevent.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -40,7 +40,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` objeto response de código e [locatedRiskEvent](../resources/locatedriskevent.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [locatedRiskEvent](../resources/locatedriskevent.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

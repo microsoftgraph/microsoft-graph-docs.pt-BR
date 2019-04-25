@@ -1,22 +1,22 @@
 ---
 title: Criar usuário
-description: Use essa API para criar um novo usuário.
+description: Use esta API para criar um novo usuário.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 9d1e98ffa4be67141d1e5ae679f9f51a71ef92fd
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: fe7fddb437684bbf038de39198b74be4fc5e1824
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642524"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536564"
 ---
 # <a name="create-user"></a>Criar usuário
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use essa API para criar um novo usuário.
-O corpo da solicitação contém o usuário crie. No mínimo, você deve especificar as propriedades necessárias para o usuário. Opcionalmente, você pode especificar todas as outras propriedades graváveis.
+Use esta API para criar um novo usuário.
+O corpo da solicitação contém o usuário a ser criado. No mínimo, você deve especificar as propriedades necessárias para o usuário. Opcionalmente, você pode especificar outras propriedades graváveis.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -45,13 +45,13 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar um usuá
 | Parâmetro | Tipo | Descrição|
 |:---------------|:--------|:----------|
 |accountEnabled |booliano |true se a conta estiver habilitada; caso contrário, false.|
-|displayName |string |Nome de exibição no catálogo de endereços do usuário.|
+|displayName |cadeia de caracteres |Nome de exibição no catálogo de endereços do usuário.|
 |onPremisesImmutableId |string |Só precisa ser especificado ao criar uma nova conta de usuário se você está usando um domínio federado para propriedade userPrincipalName (UPN) do usuário.|
 |mailNickname |string |O alias de email do usuário.|
 |passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |O perfil de senha do usuário.|
 |userPrincipalName |string |Nome UPN (usuario@contoso.com).|
 
-Desde que o recurso de **usuário** oferece suporte às [extensões](/graph/extensibility-overview), você pode usar o `POST` operação e adicionar propriedades personalizadas com seus próprios dados à instância do usuário ao criá-la.
+Como o recurso de **usuário** oferece suporte a [extensões](/graph/extensibility-overview), você `POST` pode usar a operação e adicionar propriedades personalizadas com seus próprios dados à instância de usuário ao criá-la.
 
 ## <a name="response"></a>Resposta
 
@@ -89,7 +89,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
   "@odata.type": "microsoft.graph.user"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 
 {

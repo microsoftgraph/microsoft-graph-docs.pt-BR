@@ -1,23 +1,23 @@
 ---
 title: Como trabalhar com APIs de educação no Microsoft Graph
-description: A formação APIs no Microsoft Graph melhore os recursos do Office 365 e os dados com as informações relevantes para cenários de educação, incluindo escolas, alunos, professores, classes, inscrições e atribuições. Isso facilita a criação de soluções que se integram aos recursos educacionais.
+description: As APIs de educação no Microsoft Graph aprimoram os recursos e dados do Office 365 com informações relevantes para cenários educacionais, incluindo escolas, estudantes, professores, classes, registradoras e atribuições. Isso facilita a criação de soluções que se integram aos recursos educacionais.
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: 9e106da7eb717a091941e16f4a70af8a012802f3
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516928"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32534868"
 ---
 # <a name="working-with-education-apis-in-microsoft-graph"></a>Como trabalhar com APIs de educação no Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A formação APIs no Microsoft Graph melhore os recursos do Office 365 e os dados com as informações relevantes para cenários de educação, incluindo escolas, alunos, professores, classes, inscrições e atribuições. Isso facilita a criação de soluções que se integram aos recursos educacionais.
+As APIs de educação no Microsoft Graph aprimoram os recursos e dados do Office 365 com informações relevantes para cenários educacionais, incluindo escolas, estudantes, professores, classes, registradoras e atribuições. Isso facilita a criação de soluções que se integram aos recursos educacionais.
 
-A formação APIs incluem recursos de rostering e recursos de atribuições que você pode usar para interagir com os serviços de rostering e a atribuição no Microsoft Teams. Você pode usar estes recursos para gerenciar uma lista de participação da escola e automatizar atribuições do estudante.
+As APIs de educação incluem recursos de listagem e recursos de atribuições que você pode usar para interagir com os serviços de lista e atribuição no Microsoft Teams. Você pode usar esses recursos para gerenciar uma lista de escolas e automatizar as atribuições de aluno.
 
 ## <a name="authorization"></a>Autorização
 
@@ -75,56 +75,56 @@ As APIs de escalação dão suporte aos seguintes cenários:
 
 <!-- Should you list delete scenarios here as well? -->
 
-## <a name="assignments"></a>Assignments 
+## <a name="assignments"></a>Atribuições 
 
-Você pode usar a APIs de educação relacionados a atribuição de integrar com atribuições em Teams da Microsoft. Microsoft Teams no Office 365 para educação se baseia na mesma formação APIs e fornece um caso de uso para que você pode fazer com as APIs. Seu aplicativo pode usar essas APIs para interagir com atribuições em todo o ciclo de vida de atribuição. 
+Você pode usar as APIs de educação relacionadas à atribuição para integrar com as atribuições no Microsoft Teams. O Microsoft Teams no Office 365 for Education é baseado nas mesmas APIs de educação e fornece um caso de uso para o que você pode fazer com as APIs. Seu aplicativo pode usar essas APIs para interagir com as atribuições ao longo do ciclo de vida da atribuição. 
 
-A atribuição APIs oferecem os seguintes recursos principais:
+As APIs de atribuição fornecem os seguintes recursos-chave:
 
-- [educationAssignment](educationassignment.md) - o objeto de núcleo das atribuições API. Representa uma tarefa ou a unidade de trabalho atribuído a um estudante ou membro da equipe em uma classe como parte de sua estudo.
-- [educationSubmission](educationsubmission.md) - representa os recursos que um individual (ou de grupo) envia para uma atribuição e o nível associado e comentários para essa atribuição.
-- [educationResource](educationresource.md) - representa o aprendizado do objeto ou seja sendo atribuída ou enviados. Um **educationResource** é associado um **educationAssignment** e/ou em um **educationSubmission**.
+- [educationAssignment](educationassignment.md) -o objeto principal da API assignments. Representa uma tarefa ou unidade de trabalho atribuída a um membro de aluno ou de equipe em uma classe como parte de seu estudo.
+- [educationSubmission](educationsubmission.md) -representa os recursos que um indivíduo (ou grupo) envia para uma atribuição e a grade associada e o feedback da atribuição.
+- [educationResource](educationresource.md) -representa o objeto de aprendizado que está sendo atribuído ou enviado. Um **educationResource** está associado a um **educationAssignment** e/ou um **educationSubmission**.
 
-A atribuição de APIs suportar os seguintes cenários:
+As APIs de atribuição dão suporte aos seguintes cenários:
 
-- [Criar atribuição](../api/educationclass-post-assignments.md)
-- [Publicar atribuição](../api/educationassignment-publish.md)
-- [Criar o recurso de atribuição](../api/educationassignment-post-resources.md)
-- [Criar o recurso de envio](../api/educationsubmission-post-resources.md)
+- [Criar tarefa](../api/educationclass-post-assignments.md)
+- [Publicar tarefa](../api/educationassignment-publish.md)
+- [Criar recurso de tarefa](../api/educationassignment-post-resources.md)
+- [Criar recurso de envio](../api/educationsubmission-post-resources.md)
 - [Enviar atribuição](../api/educationsubmission-submit.md) 
-- [Atribuição de unsubmit](../api/educationsubmission-unsubmit.md)   
-- [Notas de retorno e comentários ao estudante](../api/educationsubmission-return.md) 
-- [Conheça os detalhes de atribuição](../api/educationuser-list-assignments.md)
+- [Não enviar atribuição](../api/educationsubmission-unsubmit.md)   
+- [Retornar notas e comentários para o estudante](../api/educationsubmission-return.md) 
+- [Obter detalhes de atribuição](../api/educationuser-list-assignments.md)
 
-Estes são alguns casos de uso comuns para os APIs de educação relacionados a atribuição.
+A seguir estão alguns casos de uso comuns para as APIs de educação relacionadas à atribuição.
 
 |Caso de uso|Descrição|Confira também|
 |:-------|:----------|:-------|
-|Criar atribuições|Um sistema externo pode criar uma atribuição para a classe e anexar recursos à atribuição.|[Criar atribuição](../api/educationassignment-post-resources.md)|
-|Leia as informações de atribuição|Um aplicativo de análise pode obter informações sobre atribuições e envios de student, incluindo datas e notas.|[Fazer a atribuição](../api/educationassignment-get.md)|
-|Rastrear envios de student|Seu aplicativo pode fornecer um painel de professor que mostra quantos envios de alunos precisam ser graduadas.|[Recurso de envio](educationsubmission.md)|
+|Criar atribuições|Um sistema externo pode criar uma atribuição para a classe e anexar recursos à atribuição.|[Criar tarefa](../api/educationassignment-post-resources.md)|
+|Ler informações de atribuição|Um aplicativo de análise pode obter informações sobre atribuições e envios de alunos, incluindo datas e notas.|[Obter tarefa](../api/educationassignment-get.md)|
+|Acompanhar envios de alunos|Seu aplicativo pode fornecer um painel de professores que mostra quantos envios de alunos precisam ser compensados.|[Recurso de envio](educationsubmission.md)|
 
-## <a name="school-data-sync-management"></a>Gerenciamento de sincronização de dados de escola
+## <a name="school-data-sync-management"></a>Gerenciamento escolar de sincronização de dados
 
-[Sincronização de dados da escola](https://sds.microsoft.com/) ajuda a automatizar o processo de importação e a sincronização de dados de lista de participação de sistemas de informação de student com o Azure Active Directory (AD Azure) e Office 365. Você pode usar o gerenciamento de sincronização de dados escola APIs no Microsoft Graph para configurar a sincronização de um arquivo CSV ou um conector de API SIS com suporte.
+O [School Data Sync](https://sds.microsoft.com/) ajuda a automatizar o processo de importação e sincronização de dados de lista de sistemas de informações do aluno com o Active Directory do Azure (Azure AD) e o Office 365. Você pode usar as APIs de gerenciamento de sincronização de dados da escola no Microsoft Graph para configurar a sincronização de um arquivo CSV ou de um conector de API SIS suportado.
 
-Os dados da escola sincronizar o suporte ao gerenciamento de APIs os seguintes cenários:
+As APIs de gerenciamento de sincronização de dados da escola oferecem suporte aos seguintes cenários:
 
-- [Perfis de sincronização de lista](../api/educationsynchronizationprofile-list.md)
-- [Obtenha o perfil de sincronização](../api/educationsynchronizationprofile-get.md)
-- [Criar um perfil de sincronização](../api/educationsynchronizationprofile-post.md)
-- [Excluir o perfil de sincronização](../api/educationsynchronizationprofile-delete.md)
-- [Pausar uma sincronização em andamento](../api/educationsynchronizationprofile-pause.md)
-- [Retomar uma sincronização pausada](../api/educationsynchronizationprofile-resume.md)
+- [Listar perfis de sincronização](../api/educationsynchronizationprofile-list.md)
+- [Obter perfil de sincronização](../api/educationsynchronizationprofile-get.md)
+- [Criar perfil de sincronização](../api/educationsynchronizationprofile-post.md)
+- [Excluir perfil de sincronização](../api/educationsynchronizationprofile-delete.md)
+- [PaUsar uma sincronização contínua](../api/educationsynchronizationprofile-pause.md)
+- [ReTomar uma sincronização pausada](../api/educationsynchronizationprofile-resume.md)
 - [Redefinir uma sincronização](../api/educationsynchronizationprofile-reset.md)
-- [Iniciar sincronização para arquivos carregados](../api/educationsynchronizationprofile-start.md) 
-- [Obtenha uma URL de carregamento](../api/educationsynchronizationprofile-uploadurl.md)
+- [Iniciar a sincronização de arquivos carregados](../api/educationsynchronizationprofile-start.md) 
+- [Obter uma URL de upload](../api/educationsynchronizationprofile-uploadurl.md)
 - [Obter o status de uma sincronização](../api/educationsynchronizationprofilestatus-get.md)
-- [Obtenha os erros de sincronização](../api/educationsynchronizationerrors-get.md)
+- [Obter erros de sincronização](../api/educationsynchronizationerrors-get.md)
 
 
 ## <a name="next-steps"></a>Próximas etapas
-Use a APIs de educação do Microsoft Graph para construir soluções de educação que acessam as atribuições do estudante e escalações escola. Para saber mais:
+Use as APIs de educação do Microsoft Graph para criar soluções de educação que acessam as listas de alunos e as listagens da escola. Para saber mais:
 
 - Explore os recursos e os métodos mais úteis para seu cenário.
 - Experimente a API no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).

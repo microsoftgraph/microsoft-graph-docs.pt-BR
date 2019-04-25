@@ -1,19 +1,19 @@
 ---
 title: Obter synchronizationJob
-description: Recupere o trabalho de sincronização existentes e suas propriedades.
+description: Recupere o trabalho de sincronização existente e suas propriedades.
 localization_priority: Normal
 ms.openlocfilehash: bb7c61192b165e5d05c0bb3434488ed2ff7ee8c3
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521688"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537166"
 ---
 # <a name="get-synchronizationjob"></a>Obter synchronizationJob
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere o trabalho de sincronização existentes e suas propriedades.
+Recupere o trabalho de sincronização existente e suas propriedades.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -42,12 +42,12 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, retorna um `200 OK` resposta com um [synchronizationJob](../resources/synchronization-synchronizationjob.md) no corpo da resposta.
+Se tiver êxito, retornará `200 OK` uma resposta com um [synchronizationJob](../resources/synchronization-synchronizationjob.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ##### <a name="request"></a>Solicitação
-O exemplo a seguir é um exemplo de uma solicitação.
+Veja a seguir um exemplo de uma solicitação.
 <!-- {
   "blockType": "request",
   "name": "get_synchronizationjob"
@@ -57,7 +57,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs
 ```
 
 ##### <a name="response"></a>Resposta
-O exemplo a seguir é um exemplo de uma resposta. 
+Veja a seguir um exemplo de uma resposta. 
 
 >**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 

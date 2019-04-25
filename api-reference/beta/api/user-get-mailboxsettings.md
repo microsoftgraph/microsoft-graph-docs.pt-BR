@@ -1,25 +1,25 @@
 ---
 title: Obter as configurações da caixa de correio do usuário
-description: 'Obtenha mailboxSettings do usuário. Isso inclui configurações para respostas automáticas (notificar as pessoas automaticamente ao '
+description: 'Obtenha as mailboxSettings do usuário. Isso inclui configurações para respostas automáticas (notificar as pessoas automaticamente '
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 569a891e51d09c03467108c0a7ed012e04ba6352
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510243"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536544"
 ---
 # <a name="get-user-mailbox-settings"></a>Obter as configurações da caixa de correio do usuário
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha do usuário [mailboxSettings](../resources/mailboxsettings.md). Isso inclui configurações para respostas automáticas (notificar as pessoas automaticamente após o recebimento de seus emails), (país/região e idioma) de localidade, fuso horário e horário de trabalho.
+Obtenha as [mailboxSettings](../resources/mailboxsettings.md) do usuário. Isso inclui as configurações para respostas automáticas (notificar as pessoas automaticamente no recebimento de seus emails), localidade (idioma e país/região), fuso horário e horário de trabalho.
 
 Você pode exibir todas as configurações de caixa de correio ou obter configurações específicas.
 
-O fuso horário é uma das configurações de preferência que um usuário pode fazer na caixa de correio. O usuário escolhe-lo de que o [suporte para fusos horários](outlookuser-supportedtimezones.md) que um administrador tiver configurado para o servidor de caixa de correio do usuário. O administrador configura fusos horários no formato de fuso horário do Windows ou o [fuso horário de autoridade de números atribuídos da Internet (IANA)](https://www.iana.org/time-zones) (também conhecido como fuso horário Olson). O formato do Windows é o padrão. 
+O fuso horário é uma das configurações de preferência que um usuário pode fazer na caixa de correio. O usuário escolhe-o dos [fusos horários com suporte](outlookuser-supportedtimezones.md) que um administrador configurou para o servidor de caixa de correio do usuário. O administrador configura os fusos horários no formato de fuso horário do Windows ou da [autoridade de números da Internet (IANA)](https://www.iana.org/time-zones) (também conhecido como fuso horário do Olson). O formato do Windows é o padrão. 
 
 Ao obter o fuso horário de preferência de um usuário, ele é retornado no formato em que foi configurado. Se quiser que o fuso horário esteja em um formato específico (Windows ou IANA), você pode primeiro [atualizar o fuso horário de preferência nesse formato como uma configuração de caixa de correio](user-update-mailboxsettings.md). Posteriormente, você poderá obter o fuso horário nesse formato. Como alternativa, você pode gerenciar a conversão de formato separadamente no seu aplicativo.
 
@@ -33,13 +33,15 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Aplicativo | MailboxSettings.Read, MailboxSettings.ReadWrite |
 
 ## <a name="http-request"></a>Solicitação HTTP
-Para obter todas as definições de caixa de correio de um usuário:<!-- { "blockType": "ignored" } -->
+Para obter todas as configurações de caixa de correio de um usuário:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings
 GET /users/{id|userPrincipalName}/mailboxSettings
 ```
 
-Para obter configurações específicas - apenas as configurações de respostas automáticas, localidade, fuso horário ou horário de trabalho:<!-- { "blockType": "ignored" } -->
+Para obter configurações específicas – somente as configurações de respostas automáticas, localidade, fuso horário ou horário de trabalho:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailboxSettings/automaticRepliesSetting
 GET /users/{id|userPrincipalName}/mailboxSettings/automaticRepliesSetting
@@ -84,7 +86,7 @@ O primeiro exemplo obtém todas as configurações da caixa de correio do usuár
 GET https://graph.microsoft.com/beta/me/mailboxSettings
 ```
 ##### <a name="response-1"></a>Resposta 1
-A resposta inclui todas as configurações de caixa de correio do usuário conectado. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+A resposta inclui todas as configurações de caixa de correio do usuário conectado. Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -182,7 +184,7 @@ O terceiro exemplo obtém especificamente as configurações de horário de trab
 GET https://graph.microsoft.com/beta/me/mailboxSettings/workingHours
 ```
 ##### <a name="response-3"></a>Resposta 3
-A resposta inclui apenas as configurações de horário de trabalho. As horas de trabalho do usuário estão em um [fuso horário personalizado](../resources/customtimezone.md). Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+A resposta inclui apenas as configurações de horário de trabalho. As horas de trabalho do usuário estão em um [fuso horário personalizado](../resources/customtimezone.md). Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "ignored",
   "name": "get_mailboxsettings_3",

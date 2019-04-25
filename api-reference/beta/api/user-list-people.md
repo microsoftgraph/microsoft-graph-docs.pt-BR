@@ -1,21 +1,21 @@
 ---
 title: Listar pessoas
-description: Recupere uma lista de objetos de pessoa ordenados por sua relevância para o usuário, que é determinado pelo relacionamentos de negócios e os padrões de colaboração e comunicação do usuário.
+description: Recupere uma lista de objetos Person ordenados por sua relevância para o usuário, que é determinado pelos padrões de comunicação e colaboração do usuário e relações comerciais.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: insights
 ms.openlocfilehash: deb9fd929a2b0b8ce4da9392cb465497c2236b0c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517810"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544266"
 ---
 # <a name="list-people"></a>Listar pessoas
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de objetos de [pessoa](../resources/person.md) ordenados por sua relevância para o [usuário](../resources/user.md), que é determinado pelo relacionamentos de negócios e os padrões de colaboração e comunicação do usuário.
+Recupere uma lista de objetos [Person](../resources/person.md) ordenados por sua relevância para o [usuário](../resources/user.md), que é determinado pelos padrões de comunicação e colaboração do usuário e relações comerciais.
 
 ## <a name="permissions"></a>Permissões
 
@@ -38,13 +38,13 @@ GET /users/{id | userPrincipalName}/people
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Esse método suporta os seguintes parâmetros de consulta OData para ajudar a personalizar a resposta.
+Este método oferece suporte aos seguintes parâmetros de consulta OData para ajudar a personalizar a resposta.
 
 |Nome|Valor|Descrição|
 |:---------------|:--------|:-------|
 |$filter|string|Limita a resposta apenas às pessoas cujo registro contém os critérios especificados.|
-|$orderby|string|Por padrão, as pessoas na resposta são classificadas pela relevância delas à consulta. Você pode alterar a ordem das pessoas na resposta usando o parâmetro *$orderby*.|
-|$search|string|Pesquisar pessoas por nome ou alias. Suporta correspondência difusa. Parâmetro funciona apenas para a pesquisa de pessoas de relevantes do usuário conectado, não para pesquisar pessoas relevantes para outros usuários. Também oferece suporte a `topic` palavra-chave para localizar pessoas com base em tópicos extraídos de conversas de email com essa pessoa. Consulte a seção de *executar uma pesquisa difusa* em [obter as informações relevantes sobre pessoas](/graph/people-example#perform-a-fuzzy-search) para obter informações e exemplos.|
+|$orderby|cadeia de caracteres|Por padrão, as pessoas na resposta são classificadas pela relevância delas à consulta. Você pode alterar a ordem das pessoas na resposta usando o parâmetro *$orderby*.|
+|$search|string|Pesquisar pessoas por nome ou alias. Suporta correspondência difusa. O parâmetro funciona apenas para pesquisar pessoas relevantes do usuário conectado, e não para pesquisar pessoas relevantes a outros usuários. O `topic` também dá suporte à palavra-chave para localizar pessoas com base nos tópicos extraídos de conversas por email com essa pessoa. Consulte a seção *executar uma pesquisa difusa* em [obter informações relevantes sobre pessoas](/graph/people-example#perform-a-fuzzy-search) para obter informações e exemplos.|
 |$select|string|Lista separada por vírgulas de propriedades para incluir na resposta. Para um desempenho ideal, selecione apenas o subconjunto de propriedades necessário.|
 |$skip|int|Ignorar os primeiros n resultados, útil para paginação. Não é suportado ao usar *$search*.|
 |$top|int|Número de resultados a ser retornado.|
@@ -62,19 +62,19 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos da [pessoa](../resources/person.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [Person](../resources/person.md) no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="browse"></a>Procurar
+### <a name="browse"></a>Browse
 
-As solicitações nesta seção obtém as pessoas importantes para o usuário conectado (`/me`), com base na comunicação, colaboração e relacionamentos de negócios.
+As solicitações nesta seção obtêm as pessoas mais relevantes para o usuário conectado (`/me`), com base nas relações de comunicação, colaboração e negócios.
 
-Por padrão, cada resposta retorna 10 registros, mas você pode *alterar esse número* usando o parâmetro $top. Essas solicitações exigem a permissão People.Read.
+Por padrão, cada resposta retorna 10 registros, mas você pode alterar esse número usando o parâmetro *$top*. Essas solicitações exigem a permissão People. Read.
 
 #### <a name="request"></a>Solicitação
 
-O exemplo a seguir é um exemplo da solicitação padrão.
+Veja a seguir um exemplo da solicitação padrão.
 <!-- {
   "blockType": "request",
   "name": "get_person_collection_beta"
@@ -177,7 +177,7 @@ Content-length: 1326
 }
 ```
 
-#### <a name="requesting-a-subsequent-page-of-people"></a> Solicitação de uma página subsequente de pessoas
+#### <a name="requesting-a-subsequent-page-of-people"></a>Solicitação de uma página subsequente de pessoas
 
 Se a primeira resposta não contiver a lista completa das pessoas relevantes, você poderá fazer uma segunda solicitação usando *$top* e *$skip* para solicitar páginas adicionais de informações. Se a solicitação anterior tiver informações adicionais, a solicitação a seguir obterá a próxima página de pessoas do servidor.
 
@@ -193,41 +193,41 @@ Por padrão, as pessoas na resposta são classificadas pela relevância delas à
 GET https://graph.microsoft.com/beta/me/people/?$orderby=DisplayName
 ```
 
-#### <a name="changing-the-number-of-people-returned-and-the-fields-returned"></a> Alteração do número de pessoas e dos campos retornados
+#### <a name="changing-the-number-of-people-returned-and-the-fields-returned"></a>Alteração do número de pessoas e dos campos retornados
 
 Você pode alterar o número de pessoas retornadas na resposta definindo o parâmetro *$top*.
 
-O exemplo a seguir solicita as 1.000 pessoas mais relevantes para `/me`. A solicitação também limita a quantidade de dados enviados pelo servidor, solicitando apenas o nome para exibição da pessoa.
+O exemplo a seguir solicita as 1.000 pessoas mais relevantes `/me`. A solicitação também limita a quantidade de dados enviados de volta do servidor solicitando apenas o nome de exibição da pessoa.
 
 ```http
 GET https://graph.microsoft.com/beta/me/people/?$top=1000&$select=DisplayName
 ```
 
-#### <a name="selecting-the-fields-to-return"></a> Seleção dos campos que devem ser retornados
+#### <a name="selecting-the-fields-to-return"></a>Seleção dos campos que devem ser retornados
 
-Você pode limitar a quantidade de dados retornadas do servidor usando o parâmetro *$select* para escolher um ou mais campos. O campo *@odata.id* é sempre retornado.
+Você pode limitar a quantidade de dados retornados do servidor usando o parâmetro *$Select* para escolher um ou mais campos. O campo *@odata.id* é sempre retornado.
 
-O exemplo a seguir limita a resposta à *DisplayName* e *EmailAddress* das pessoas mais relevantes 10.
+O exemplo a seguir limita a resposta para *DisplayName* e *EmailAddress* das dez pessoas mais relevantes.
 
 ```http
 GET https://graph.microsoft.com/beta/me/people/?$select=DisplayName,EmailAddresses
 ```
 
-#### <a name="using-a-filter-to-limit-the-response"></a> Uso de um filtro para limitar a resposta
+#### <a name="using-a-filter-to-limit-the-response"></a>Uso de um filtro para limitar a resposta
 
 Você pode usar o parâmetro *$filter* para limitar a resposta apenas às pessoas cujo registro contém os critérios especificados.
 
-A seguinte consulta limita a resposta às pessoas com a fonte "Diretório".
+A consulta a seguir limita a resposta a pessoas com o "diretório" de origem.
 
 ```http
 GET https://graph.microsoft.com/beta/me/people/?$filter=Sources/Any (source: source/Type  eq 'Directory')
 ```
 
-#### <a name="selecting-the-fields-to-return-in-a-filtered-response"></a>Selecionar os campos para retornar em uma resposta filtrada
+#### <a name="selecting-the-fields-to-return-in-a-filtered-response"></a>Selecionar os campos a serem retornados em uma resposta filtrada
 
 Você pode combinar os parâmetros *$select* e *$filter* para criar uma lista personalizada de pessoas relevantes para o usuário e obter somente os campos necessários para seu aplicativo.
 
-O exemplo a seguir obtém o *DisplayName* e *EmailAddress* de pessoas cujo nome de exibição é igual ao nome especificado. Neste exemplo, somente as pessoas cujo nome de exibição é igual a "Nestor Kellum" são retornadas.
+O exemplo a seguir obtém o *DisplayName* e o *EmailAddress* de pessoas cujo nome de exibição é igual ao nome especificado. Neste exemplo, somente as pessoas cujo nome de exibição é igual a "Nestor Kellum" são retornadas.
 
 ```http
 +GET https://graph.microsoft.com/beta/me/people/?$select=DisplayName,EmailAddresses&$filter=DisplayName eq 'Nestor Kellum'
@@ -235,29 +235,29 @@ O exemplo a seguir obtém o *DisplayName* e *EmailAddress* de pessoas cujo nome 
 
 ### <a name="search-people"></a>Pesquisar pessoas
 
-As solicitações nesta seção também obtêm as pessoas importantes para o usuário conectado (`/me`). Solicitações de pesquisa exigem a permissão People.Read.
+As solicitações nesta seção também obtêm as pessoas mais relevantes para o usuário conectado (`/me`). As solicitações de pesquisa exigem a permissão People. Read.
 
-#### <a name="using-search-to-select-people"></a>Usando a pesquisa para selecionar as pessoas
+#### <a name="using-search-to-select-people"></a>Usando a pesquisa para selecionar pessoas
 
 Use o parâmetro *$search* para selecionar as pessoas que atendem a determinado conjunto de critérios.
 
-A seguinte consulta de pesquisa retorna pessoas relevantes para `/me` cujos GivenName ou sobrenome começa com a letra "j".
+A consulta de pesquisa a seguir retorna pessoas `/me` relevantes para o qual o determinadoname ou o sobrenome começa com a letra "j".
 
 ```http
 GET https://graph.microsoft.com/beta/me/people/?$search=j
 ```
 
-#### <a name="using-search-to-specify-a-relevant-topic"></a> Uso da pesquisa para especificar um tópico relevante
+#### <a name="using-search-to-specify-a-relevant-topic"></a>Uso da pesquisa para especificar um tópico relevante
 
-A solicitação a seguir retorna a pessoas relevantes para `/me` cujos nomes contêm "ma" e que têm uma associação com "planejamento do recurso".
+A solicitação a seguir retorna pessoas relevantes `/me` para o nome que contém "ma" e que têm uma associação com "planejamento de recursos".
 
 ```http
 GET https://graph.microsoft.com/beta/me/people/?$search="ma topic: feature planning"
 ```
 
-#### <a name="performing-a-fuzzy-search"></a>  Execução de uma pesquisa difusa
+#### <a name="performing-a-fuzzy-search"></a>Execução de uma pesquisa difusa
 
-A solicitação a seguir faz uma pesquisa de uma pessoa chamada "Saguão Hermaini." Como há uma pessoa chamada "Herminia Hull" relevantes para o usuário conectado, as informações de "Herminia Hull" são retornadas.
+A solicitação a seguir faz uma pesquisa por uma pessoa chamada "Hermaini Sousa". Como há uma pessoa denominada "Herminia Hull" relevante para o usuário conectado, as informações de "Herminia Hull" são retornadas.
 
 ```http
 GET https://graph.microsoft.com/beta/me/people/?$search="hermaini hall"
@@ -265,7 +265,7 @@ GET https://graph.microsoft.com/beta/me/people/?$search="hermaini hall"
 
 ### <a name="related-people"></a>Pessoas relacionadas
 
-A solicitação a seguir obtém as pessoas importantes para outra pessoa na organização do usuário. Esta solicitação requer o User.ReadBasic.All para People.Read.All permissão. Neste exemplo, as pessoas de relevantes do Nestor Kellum são exibidas.
+A solicitação a seguir obtém as pessoas mais relevantes para outra pessoa na organização do usuário. Essa solicitação exige o User. ReadBasic. All para a permissão People. Read. All. Neste exemplo, as pessoas relevantes do Marcos Kellum são exibidas.
 
 ```http
 GET https://graph.microsoft.com/beta/users('nestork@contoso.com')/people/

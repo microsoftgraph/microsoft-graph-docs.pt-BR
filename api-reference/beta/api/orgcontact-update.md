@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: cec4817472fe5192c7af836131cea83bcb60d77b
-ms.sourcegitcommit: 3615f9475d57bfbb3a8c4402af863897f592dfbd
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30789631"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539878"
 ---
 # <a name="update-orgcontact"></a>Atualizar orgcontact
 
@@ -57,7 +57,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |state|String||
 |streetAddress|String||
 |surname|String||
-|businessPhones|String collection||
+|businessPhones|Coleção de cadeias de caracteres||
 
 ## <a name="response"></a>Resposta
 

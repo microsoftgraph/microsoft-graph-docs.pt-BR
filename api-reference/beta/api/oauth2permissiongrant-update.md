@@ -3,11 +3,11 @@ title: Atualizar oAuth2PermissionGrant
 description: Atualize as propriedades do objeto oAuth2PermissionGrant.
 localization_priority: Normal
 ms.openlocfilehash: fb990c56b4d7ae62ac35935a91d69688b96bff28
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522137"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540202"
 ---
 # <a name="update-oauth2permissiongrant"></a>Atualizar oAuth2PermissionGrant
 
@@ -43,7 +43,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|scope|String| Especifica o valor da declaração escopo que o aplicativo de recurso deve esperar que no token de acesso OAuth 2.0. |
+|scope|String| Especifica o valor da declaração do escopo que o aplicativo de recursos deve esperar no token de acesso do OAuth 2,0. |
 
 ## <a name="response"></a>Resposta
 

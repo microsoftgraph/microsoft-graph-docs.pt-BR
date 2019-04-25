@@ -3,11 +3,11 @@ title: tipo de recurso addIn
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 ms.openlocfilehash: d2a63d4428cbb3bcc7cc169711eb6cc6b9e00a6f
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643717"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535771"
 ---
 # <a name="addin-resource-type"></a>tipo de recurso addIn
 
@@ -36,9 +36,9 @@ Veja a seguir uma representação JSON do recurso.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|GUID||
-|properties|coleção [keyValue](keyvalue.md)||
-|type|string||
+|id|#c0||
+|properties|Coleção [KeyValue](keyvalue.md)||
+|type|cadeia de caracteres||
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: 223efcd67b9e025347f510ce207b093122fa6b52
-ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30572324"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563977"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Como proteger dados de aplicativos corporativos com o Microsoft Intune
 
@@ -25,8 +25,8 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 
 - [Proteção de aplicativo gerenciado Android](intune-mam-androidmanagedappprotection.md)
 - [Registro de aplicativo gerenciado Android](intune-mam-androidmanagedappregistration.md)
-- [Tipo de verificação de aplicativos de segurança do aplicativo gerenciado do Android](intune-mam-androidmanagedappsafetynetappsverificationtype.md)
-- [Tipo de atestado do dispositivo net de segurança de aplicativos gerenciados por Android](intune-mam-androidmanagedappsafetynetdeviceattestationtype.md)
+- [Tipo de verificação de aplicativos de rede de segurança em aplicativo gerenciado para Android](intune-mam-androidmanagedappsafetynetappsverificationtype.md)
+- [Tipo de atestado de dispositivo de rede de segurança do aplicativo gerenciado para Android](intune-mam-androidmanagedappsafetynetdeviceattestationtype.md)
 - [Identificador de aplicativo móvel Android](intune-mam-androidmobileappidentifier.md)
 - [Nível de gerenciamento de aplicativo](intune-mam-appmanagementlevel.md)
 - [Tipo de aplicativo](intune-wip-applicationtype.md)

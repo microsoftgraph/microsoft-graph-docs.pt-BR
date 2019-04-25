@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: ee67d28a90732bdc1d804da41994de32bf0a7f4f
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30366589"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543076"
 ---
 # <a name="working-with-the-dynamics-365-business-central-api-in-microsoft-graph"></a>Trabalhar com a API do Dynamics 365 Business central no Microsoft Graph
 Você pode usar o Microsoft Graph para conectar e integrar seu serviço Web ou solução SaaS com o Microsoft Dynamics 365 Business central. Com o Microsoft Graph, você pode criar aplicativos que obtêm acesso autorizado e se integram perfeitamente com os dados do Microsoft Dynamics 365 Business central.
@@ -23,7 +23,7 @@ Use o ponto de extremidade do Azure AD v 2.0 para autenticar as APIs do Dynamics
 A API do Dynamics 365 Business central permite que você leia e modifique dados corporativos por meio de aplicativos conectados e integrados por meio de um único ponto de extremidade. Use a API para, por exemplo, obter acesso a informações de [cliente](../resources/dynamics-customer.md) e de [fornecedor](../resources/dynamics-vendor.md) ou [Exibir pagamentos vencidos](../resources/dynamics-agedaccountspayable.md).
 
 ## <a name="next-steps"></a>Próximas etapas
-A API do Dynamics 365 Business central pode abrir novas maneiras de contato com os usuários. Para saber mais, confira o seguinte:
+A API do Dynamics 365 Business central pode abrir novas maneiras de contato com os usuários. Para saber mais, consulte o seguinte:
 
 + [Visão geral do Dynamics 365 Business central](/graph/dynamics-business-central-concept-overview)
 + Experimente o [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer).

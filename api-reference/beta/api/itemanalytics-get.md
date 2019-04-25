@@ -2,27 +2,27 @@
 author: daspek
 ms.author: dspektor
 ms.date: 10/06/2017
-title: Obtenha a análise
+title: Obter análises
 localization_priority: Normal
 ms.openlocfilehash: d1f6b255747cffe7fdccb5d098e73a56151b6245
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516256"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32541039"
 ---
-# <a name="get-analytics"></a>Obtenha a análise
+# <a name="get-analytics"></a>Obter análises
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha [itemAnalytics][] sobre os modos de exibição que foi realizada sob este recurso.
-O recurso de **itemAnalytics** é uma maneira conveniente para obter as estatísticas de atividade do `allTime` e o `lastSevenDays`.
-Para um intervalo de tempo personalizado ou um intervalo, use o [getActivitiesByInterval][] API.
+Obtenha [][] o naanalytics sobre os modos de exibição que foram colocados sob esse recurso.
+O recurso do Microsoft **Analytics** é uma maneira conveniente de obter estatísticas de `allTime` atividades para `lastSevenDays`o e o.
+Para um intervalo ou intervalo de tempo personalizado, use a API [funçãogetactivitiesbyinterval][] .
 
->**Observação:** O recurso de **itemAnalytics** ainda não está disponível em todas as [implantações nacionais](/graph/deployments).
+>**Observação:** O **** recurso do naanalytics ainda não está disponível em todas as implantações [nacionais](/graph/deployments).
 
 [itemAnalytics]: ../resources/itemanalytics.md
-[getActivitiesByInterval]: ../api/itemactivity-getbyinterval.md
+[Funçãogetactivitiesbyinterval]: ../api/itemactivity-getbyinterval.md
 
 ## <a name="permissions"></a>Permissões
 

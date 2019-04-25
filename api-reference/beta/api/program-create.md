@@ -1,25 +1,25 @@
 ---
-title: Criação de programa
-description: No Windows Azure AD para acessar o recurso de revisões, crie um novo objeto de programa.
+title: Criar programa
+description: No recurso de revisões do Azure AD Access, crie um novo objeto de programa.
 localization_priority: Normal
 ms.openlocfilehash: a6e9ab300cf44a2f3973c468679af7fa48262680
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521296"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538536"
 ---
-# <a name="create-program"></a>Criação de programa
+# <a name="create-program"></a>Criar programa
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O recurso [acesso analisa](../resources/accessreviews-root.md) Azure AD, cria um novo objeto de [programa](../resources/program.md) .
+No recurso de revisões do Azure AD [Access](../resources/accessreviews-root.md) , crie um novo objeto de [programa](../resources/program.md) .
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | `ProgramControl.ReadWrite.All`.  O usuário conectado também deve ser uma função de diretório que permite a atualização-los para criar um programa. |
+|Delegado (conta corporativa ou de estudante)     | `ProgramControl.ReadWrite.All`.  O usuário conectado também deve estar em uma função de diretório que permite que eles criem um programa. |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | Sem suporte. |
 
@@ -31,12 +31,12 @@ POST /programs
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome         | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| Autorização | string | Token de portador Obrigatório. |
+| Autorização | string | \{token\} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON de um objeto de [programa](../resources/program.md) .
+No corpo da solicitação, forneça uma representação JSON de um objeto [Program](../resources/program.md) .
 
-A tabela a seguir mostra as propriedades que são necessárias quando você criar um programa.
+A tabela a seguir mostra as propriedades que são necessárias ao criar um programa.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
@@ -45,11 +45,11 @@ A tabela a seguir mostra as propriedades que são necessárias quando você cria
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `201, Created` objeto de [programa](../resources/program.md) e código de resposta no corpo da resposta.
+Se bem-sucedido, este método retorna um `201, Created` código de resposta e um objeto [Program](../resources/program.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-No corpo da solicitação, fornece uma representação JSON do objeto de [programa](../resources/program.md) .
+No corpo da solicitação, forneça uma representação JSON do objeto [Program](../resources/program.md) .
 
 <!-- {
   "blockType": "request",
@@ -66,7 +66,7 @@ Content-type: application/json
 ```
 
 ##### <a name="response"></a>Resposta
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação: **o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -87,10 +87,10 @@ Content-type: application/json
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Lista de programas](program-list.md) | coleção de [programa](../resources/program.md)|  Obtenha uma coleção de todos os programas.|
-|[Lista programControls de um programa](program-listcontrols.md) |     coleção [programControl](../resources/programcontrol.md)|    Obter uma coleção dos controles de um programa.|
-|[Programa de atualização](program-update.md) |  [programa](../resources/program.md)| Atualize um programa.|
-|[Criar programControl](programcontrol-create.md) |        [programControl](../resources/programcontrol.md)    |   Adicione um programControl a um programa.|
+|[Listar programas](program-list.md) | coleção [Program](../resources/program.md)|  Obtenha uma coleção de todos os programas.|
+|[Listar programControls de um programa](program-listcontrols.md) |     coleção [programControl](../resources/programcontrol.md)|    Obter uma coleção de controles de um programa.|
+|[Programa de atualização](program-update.md) |  [programa](../resources/program.md)| Atualizar um programa.|
+|[Criar programControl](programcontrol-create.md) |        [programControl](../resources/programcontrol.md)    |   Adicionar um programControl a um programa.|
 
 <!--
 {

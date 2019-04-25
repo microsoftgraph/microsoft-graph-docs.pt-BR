@@ -1,15 +1,15 @@
 ---
-title: Listar os modelos existentes de sincronização
+title: Listar modelos de sincronização existentes
 description: Lista os modelos de sincronização associados a um determinado aplicativo ou entidade de serviço.
 localization_priority: Normal
 ms.openlocfilehash: 309d1ddd6d702652b14e10895de10486a5d23783
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523628"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536968"
 ---
-# <a name="list-existing-synchronization-templates"></a>Listar os modelos existentes de sincronização
+# <a name="list-existing-synchronization-templates"></a>Listar modelos de sincronização existentes
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,12 +43,12 @@ Não forneça um corpo de solicitação para esse método.
 
 ### <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e acollection dos objetos [synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e acollection dos objetos [synchronizationtemplate](../resources/synchronization-synchronizationtemplate.md) no corpo da resposta.
 
 ### <a name="example"></a>Exemplo
 
 ##### <a name="request"></a>Solicitação
-O exemplo a seguir é um exemplo de uma solicitação.
+Veja a seguir um exemplo de uma solicitação.
 <!-- {
   "blockType": "request",
   "name": "get_synchronizationtemplate"
@@ -58,8 +58,8 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/temp
 ```
 
 ##### <a name="response"></a>Resposta
-O exemplo a seguir é um exemplo de uma resposta.
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. Serão retornadas todas as propriedades em uma chamada real.
+Veja a seguir um exemplo de uma resposta.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas em uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

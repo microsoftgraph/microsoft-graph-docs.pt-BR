@@ -1,29 +1,29 @@
 ---
-title: tipo de recurso de bookingNamedEntity
+title: tipo de recurso bookingNamedEntity
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: 1cee769181fdf8dce694050cdbc2658fdf29ece4
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515318"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535449"
 ---
-# <a name="bookingnamedentity-resource-type"></a>tipo de recurso de bookingNamedEntity
+# <a name="bookingnamedentity-resource-type"></a>tipo de recurso bookingNamedEntity
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-Este é um tipo de base para entidades do Microsoft Bookings que fornecem um nome para exibição, por exemplo, [bookingBusiness](bookingbusiness.md), [bookingPerson](bookingperson.md), [bookingService](bookingservice.md).
+Este é um tipo base para entidades de livros da Microsoft que fornecem um nome de exibição, por exemplo, [bookingBusiness](bookingbusiness.md), [bookingPerson](bookingperson.md), [bookingService](bookingservice.md).
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|displayName|String|Um nome da entidade derivada, qual interfaces com os clientes.|
+|displayName|String|Um nome para a entidade derivada, que faz interface com clientes.|
 |id|String| A ID da entidade derivada. Somente leitura.|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 Nenhum
 
 

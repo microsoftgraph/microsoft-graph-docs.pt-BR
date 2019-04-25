@@ -3,11 +3,11 @@ title: Listar NamedItemCollection
 description: Recupere uma lista de objetos nameditem.
 localization_priority: Normal
 ms.openlocfilehash: 45286b37a69749e7d4ebb543466f69f7df8b4ac3
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640557"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540223"
 ---
 # <a name="list-nameditemcollection"></a>Listar NamedItemCollection
 

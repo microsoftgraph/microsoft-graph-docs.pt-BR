@@ -2,21 +2,21 @@
 author: rahmit
 ms.author: rahmit
 ms.date: 05/07/2018
-title: Cria uma nova página em um site do SharePoint
+title: Criar uma nova página em um site do SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 0e66c38fc05402c8838d4ec081f492a394ea8ff2
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640151"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545335"
 ---
-# <a name="create-a-page-in-the-site-pages-list-of-a-site"></a>Criar uma página na lista de páginas de site de um site
+# <a name="create-a-page-in-the-site-pages-list-of-a-site"></a>Criar uma página na lista de páginas do site de um site
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um novo [sitePage][] na de páginas do site [lista][] em um [site][].
+Criar um novo [sitePage][] na [lista][] de páginas do site em um [site][].
 
 ## <a name="permissions"></a>Permissões
 
@@ -24,8 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Sites.ReadWrite.All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | Sites.ReadWrite.All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sites.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -38,7 +38,7 @@ POST /sites/{site-id}/pages
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON do recurso [sitePage][] para criar.
+No corpo da solicitação, forneça uma representação JSON do recurso [sitePage][] a ser criado.
 
 ## <a name="example"></a>Exemplo
 
@@ -101,7 +101,7 @@ Content-Type: application/json
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, esse método retorna um [sitePage][] no corpo da resposta para a página criada.
+Se bem-sucedido, este método retorna um [sitePage][] no corpo da resposta para a página criada.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.sitePage", "truncated": true } -->
 

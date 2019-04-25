@@ -1,15 +1,15 @@
 ---
 title: Tipo de recurso educationTeacher
-description: Informações adicionais incluídas a um `teacher` que está presente quando a primaryRole de um usuário é .
+description: Informações adicionais incluídas a um educationUser que está presente quando a primaryRole de um usuário é `teacher`.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 17019d5ff5c2bc9614e934ef66d63e459371469a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510852"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542907"
 ---
 # <a name="educationteacher-resource-type"></a>Tipo de recurso educationTeacher
 

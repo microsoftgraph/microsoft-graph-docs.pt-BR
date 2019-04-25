@@ -1,19 +1,19 @@
 ---
-title: Lista de aplicativos e entidades de serviço com políticas específicas atribuídas
-description: Recupere o aplicativo e objetos de entidades de serviço com a diretiva especificada atribuída.
+title: Listar aplicativos e entidades de serviço com política específica atribuída
+description: Recupere o aplicativo e os objetos de entidade de serviço com a política especificada atribuída.
 localization_priority: Normal
 ms.openlocfilehash: d7449428216a2e68d9ab8bb8399ca0e8dc4b72fd
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510474"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538744"
 ---
-# <a name="list-applications-and-service-principals-with-specific-policy-assigned"></a>Lista de aplicativos e entidades de serviço com políticas específicas atribuídas
+# <a name="list-applications-and-service-principals-with-specific-policy-assigned"></a>Listar aplicativos e entidades de serviço com política específica atribuída
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere os objetos de [aplicativo](../resources/application.md) e [serviço principal](../resources/serviceprincipal.md) com a diretiva especificada atribuída.
+Recupere o [aplicativo](../resources/application.md) e os objetos de [entidade de serviço](../resources/serviceprincipal.md) com a política especificada atribuída.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -39,10 +39,10 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` objetos de código e o [aplicativo](../resources/application.md) e a [entidade de serviço](../resources/serviceprincipal.md) de resposta no corpo da resposta. Se não obtiver êxito, uma `4xx` será retornado o erro com detalhes específicos.
+Se bem-sucedido, este método retorna `200 OK` o código de resposta e os objetos [Application](../resources/application.md) e [Service principal](../resources/serviceprincipal.md) no corpo da resposta. Caso não consiga, um `4xx` erro será retornado com detalhes específicos.
 
 ## <a name="example"></a>Exemplo
-O exemplo a seguir recupera os aplicativos e entidades de serviço com uma diretiva específica atribuída.
+O exemplo a seguir recupera os aplicativos e entidades de serviço com uma política específica atribuída.
 
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

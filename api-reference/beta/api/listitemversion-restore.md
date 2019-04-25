@@ -6,11 +6,11 @@ title: Restaurar uma versão anterior de um item de lista do SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 20cf0460aa679fc40a4bb11d0887bc4946ddcd74
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482081"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540911"
 ---
 # <a name="restore-a-previous-version-of-a-listitem"></a>Restaura uma versão anterior de um ListItem
 

@@ -1,19 +1,19 @@
 ---
-title: Excluir a diretiva
-description: Exclua uma política.
+title: Excluir política
+description: Excluir uma política.
 localization_priority: Normal
 ms.openlocfilehash: e4e5f5372e2904e1f74bc25224e3d2b1ce7ba154
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520435"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538721"
 ---
-# <a name="delete-policy"></a>Excluir a diretiva
+# <a name="delete-policy"></a>Excluir política
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exclua uma [política](../resources/policy.md).
+Excluir uma [política](../resources/policy.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -39,10 +39,10 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem sucedido, este método retorna um código de resposta `204 No Content`. Se não houver êxito …
+Se bem sucedido, este método retorna um código de resposta `204 No Content`. Se não tiver êxito...
 
 ## <a name="example"></a>Exemplo
-O exemplo a seguir exclui uma diretiva.
+O exemplo a seguir exclui uma política.
 
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

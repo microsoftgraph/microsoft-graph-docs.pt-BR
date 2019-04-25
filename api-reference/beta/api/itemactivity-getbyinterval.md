@@ -2,24 +2,24 @@
 author: daspek
 ms.author: dspektor
 ms.date: 10/06/2017
-title: Obter estatísticas de atividade de item pelo intervalo
+title: Obter estatísticas de atividade de item por intervalo
 localization_priority: Normal
 ms.openlocfilehash: f9601538d825efe346ab57fdbecd6c74dc9978d7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516452"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32541296"
 ---
-# <a name="get-item-activity-stats-by-interval"></a>Obter estatísticas de atividade de item pelo intervalo
+# <a name="get-item-activity-stats-by-interval"></a>Obter estatísticas de atividade de item por intervalo
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha [itemActivityStats][] para as atividades que foram realizada sob este recurso dentro do intervalo de tempo especificado.
+Obter [itemActivityStats][] para as atividades que foram realizadas sob esse recurso dentro do intervalo de tempo especificado.
 
->**Observação:** O recurso de **itemAnalytics** ainda não está disponível em todas as [implantações nacionais](/graph/deployments).
+>**Observação:** O **** recurso do naanalytics ainda não está disponível em todas as implantações [nacionais](/graph/deployments).
 
-Agregações da análise não podem estar disponíveis para todos os tipos de ação.
+As agregações de análise podem não estar disponíveis para todos os tipos de ação.
 
 [itemActivityStats]: ../resources/itemactivitystat.md
 
@@ -47,9 +47,9 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(sta
 
 | Parâmetro      | Tipo               | Descrição
 |:---------------|:-------------------|:---------------------------------------
-| startDateTime  | cadeia de caracteres (timestamp) | A hora de início através do qual a atividades de agregação.
-| endDateTime    | cadeia de caracteres (timestamp) | A hora de término através do qual a atividades de agregação.
-| interval       | string             | O intervalo de agregação de lista segura.
+| startDateTime  | Cadeia de caracteres (timestamp) | A hora de início em que as atividades serão agregadas.
+| endDateTime    | Cadeia de caracteres (timestamp) | A hora de término sobre a qual agregar atividades.
+| interval       | string             | O intervalo de agregação.
 
 ## <a name="example"></a>Exemplo
 

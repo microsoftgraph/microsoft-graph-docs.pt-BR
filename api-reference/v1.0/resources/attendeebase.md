@@ -3,11 +3,11 @@ title: Tipo de recurso attendeeBase
 description: O tipo de participante.
 localization_priority: Normal
 ms.openlocfilehash: d009ef6a58c63017addf8b8a1bdecc1974abbff3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27878670"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569350"
 ---
 # <a name="attendeebase-resource-type"></a>Tipo de recurso attendeeBase
 
@@ -38,7 +38,7 @@ Veja a seguir uma representação JSON do recurso
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|type|attendeeType| O tipo de participante. Os valores possíveis são: `required`, `optional`, `resource`. Se o nome do participante é uma pessoa, [findMeetingTimes](../api/user-findmeetingtimes.md) sempre considera atualmente a pessoa é do `Required` tipo.|
+|type|articipantetype| O tipo de participante. Os valores possíveis são: `required`, `optional`, `resource`. Atualmente, se o participante é uma pessoa, [findMeetingTimes](../api/user-findmeetingtimes.md) sempre considera que a pessoa é do tipo `Required`.|
 |emailAddress|[emailAddress](emailaddress.md)|Inclui o nome e endereço SMTP do participante.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

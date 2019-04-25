@@ -1,22 +1,20 @@
 ---
 title: Obter configurações
-description: Leia o objeto de configurações de usuário e da organização.
+description: Leia o objeto de configurações de organização e usuário.
 author: dkershaw10
-localization_priority: Normal
+localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 128feebf624350baaea9fee41c411bd46c2b42c5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507478"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536556"
 ---
 # <a name="get-settings"></a>Obter configurações
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Leia o objeto de [configurações](../resources/user-settings.md) de usuário e da organização.
-Para saber como atualizar as propriedades do objeto de [configurações](../resources/user-settings.md) , consulte [Atualizar configurações de usuário](user-update-settings.md).
+Leia o objeto de [configurações](../resources/user-settings.md) de organização e usuário.
+Para saber como atualizar as propriedades do objeto de [configurações](../resources/user-settings.md) , consulte [Update User Settings](user-update-settings.md).
 
 ## <a name="permissions"></a>Permissões
 
@@ -26,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | User.Read.All, User.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | User.Read.All,User.ReadWrite.All |
+|Aplicativo | User. Read. All, User. ReadWrite. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -34,7 +32,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 GET /me/settings/
 ```
 
-Solicitar com uma id de usuário' ' ou 'userPrincipalName' só está acessível pelo usuário ou por um usuário com as permissões User.ReadWrite.All. Para saber mais, consulte [Permissions](/graph/permissions-reference).
+A solicitação com uma "ID de usuário" ou "userPrincipalName" só pode ser acessada pelo usuário ou por um usuário com as permissões User. ReadWrite. All. Para saber mais, confira [permissões](/graph/permissions-reference).
 
 ```http
 GET /users/{id | userPrincipalName}/settings/
@@ -46,14 +44,14 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` objeto de [configurações de usuário](../resources/user-settings.md) e o código de resposta no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto de [configurações do usuário](../resources/user-settings.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ##### <a name="request"></a>Solicitação
 
 ```http
-GET https://graph.microsoft.com/beta/me/settings
+GET https://graph.microsoft.com/v1.0/me/settings
 ```
 
 ##### <a name="response"></a>Resposta
@@ -70,11 +68,4 @@ Content-length: 72
   "contributionToContentDiscoveryDisabled": false
 }
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/user-get-settings.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+

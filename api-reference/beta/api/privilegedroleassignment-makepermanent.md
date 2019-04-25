@@ -1,26 +1,26 @@
 ---
 title: 'privilegedRoleAssignment: makePermanent'
-description: Fazer a atribuição de função como permanente.
+description: Torne a atribuição de função como permanente.
 localization_priority: Normal
 ms.openlocfilehash: 9c6334662cf8496262b49b14ceb3f51f7a4f8dbc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511391"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538683"
 ---
 # <a name="privilegedroleassignment-makepermanent"></a>privilegedRoleAssignment: makePermanent
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Fazer a atribuição de função como permanente.
+Torne a atribuição de função como permanente.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-O inquilino deve ser registrado no PIM. Caso contrário, será retornado o erro de HTTP 403-Proibido.
+O locatário precisa ser registrado no PIM. Caso contrário, o erro HTTP 403 proibido será retornado.
 
-O solicitante precisa ter a função de _Administrador com privilégios de função_ . 
+O solicitante precisa ter função de _administrador de função privilegiada_ . 
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -43,13 +43,13 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|Reason|string|Opcional. O motivo para fazer essa chamada.|
-|ticketNumber|string|Opcional. O número de tíquete que é associado a essa ação.|
-|ticketSystem|string|Opcional. O sistema de tíquete.|
+|motivos|string|Opcional. O motivo para fazer essa chamada.|
+|ticketNumber|string|Opcional. O número do tíquete associado a esta ação.|
+|ticketSystem|string|Opcional. O sistema de permissão.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` objeto response de código e [privilegedRoleAssignment](../resources/privilegedroleassignment.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `200 OK` o código de resposta e o objeto [privilegedRoleAssignment](../resources/privilegedroleassignment.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 Eis um exemplo de como chamar esta API.

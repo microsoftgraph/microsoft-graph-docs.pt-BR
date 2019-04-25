@@ -1,29 +1,29 @@
 ---
-title: tipo de recurso de educationExcelResource
+title: tipo de recurso educationExcelResource
 description: 'Uma subclasse de educationResource. Esse tipo de recurso representa um documento do Excel.  '
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 14d7823f166ca12d202a6561bc9fe7b158ab7476
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522417"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542815"
 ---
-# <a name="educationexcelresource-resource-type"></a>tipo de recurso de educationExcelResource
+# <a name="educationexcelresource-resource-type"></a>tipo de recurso educationExcelResource
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Uma subclasse de [educationResource](educationresource.md). Esse tipo de recurso representa um documento do Excel.  
  
->**Observação:** O arquivo do Excel deve estar na pasta de recursos associada ao objeto de envio ou atribuição ao qual este recurso pertence.
+>**Observação:** O arquivo do Excel deve estar na pasta de recursos associada à atribuição ou ao objeto de envio ao qual este recurso pertence.
 
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|FileURL|String|Ponteiro para o objeto de arquivo do Excel.|
+|fileUrl|String|Ponteiro para o objeto de arquivo do Excel.|
 
 ## <a name="json-representation"></a>Representação JSON
 

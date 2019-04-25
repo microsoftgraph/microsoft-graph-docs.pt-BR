@@ -1,17 +1,17 @@
 ---
-title: Atualizar Sessão
+title: Atualizar sessão
 description: 'Use esta API para atualizar uma sessão de pasta de trabalho existente. '
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 288f0b4b41841a6393af837f1b6e5c048dfae77e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27977448"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536107"
 ---
-# <a name="refresh-session"></a>Atualizar Sessão
+# <a name="refresh-session"></a>Atualizar sessão
 
 Use esta API para atualizar uma sessão de pasta de trabalho existente. 
 
@@ -34,10 +34,10 @@ workbook-session-id: {session-id}
 | Nome       | Descrição|
 |:---------------|:----------|
 | Autorização  | {token} de portador. Obrigatório. |
-| workbook-session-id | ID de sessão da pasta de trabalho que será atualizada |
+| Workbook-session-ID | ID da sessão da pasta de trabalho a ser atualizada |
 
 ## <a name="request-body"></a>Corpo da solicitação
-Esta API não exige o corpo da solicitação.
+Essa API não requer nenhum corpo de solicitação.
 
 ## <a name="response"></a>Resposta
 
@@ -61,7 +61,7 @@ Content-length: 0
 }
 ```
 
-Observe que o cabeçalho workbook-session-id é necessário. 
+Observe que o cabeçalho Workbook-session-ID é necessário. 
 
 
 ##### <a name="response"></a>Resposta

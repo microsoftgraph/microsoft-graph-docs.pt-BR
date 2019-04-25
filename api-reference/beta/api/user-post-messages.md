@@ -5,11 +5,11 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 4c15bfc0a29909b1e7a7ba27b5ac221c0d11f815
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509746"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544078"
 ---
 # <a name="create-message"></a>Criar mensagem
 
@@ -17,10 +17,10 @@ ms.locfileid: "29509746"
 
 Use essa API para criar uma nova mensagem. Rascunhos podem ser criados em qualquer pasta e, opcionalmente, atualizados antes do envio. Para salvar na pasta Rascunhos, use o atalho /messages.
 
-Durante a criação de rascunho na mesma chamada **POST** , você pode:
+Ao criar o rascunho na mesma chamada **post** , você pode:
 
 - Incluir um [anexo](../resources/attachment.md) 
-- Use um [mencionar](../resources/mention.md) chamar check-out de outro usuário na nova mensagem
+- Usar uma [menção](../resources/mention.md) para chamar outro usuário na nova mensagem
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -46,22 +46,22 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do objeto de [mensagem](../resources/message.md) .
+No corpo da solicitação, forneça uma representação JSON do objeto [Message](../resources/message.md) .
 
-Se você quiser usar **mencionar** chamar check-out de outro usuário na nova mensagem:
+Se você quiser usar **menção** para chamar outro usuário na nova mensagem:
 
-- Inclua a propriedade necessários **toRecipients** , a propriedade **menções** e propriedades de qualquer mensagem graváveis no corpo da solicitação.
-- Para cada mencionam na propriedade **menções** , você deve especificar a propriedade **mencionado** .
+- Inclua a propriedade **** Required ToRecipients, a **** Propriedade mencionas e qualquer propriedade gravável de mensagem no corpo da solicitação.
+- Para cada menção na propriedade **menciona** , você deve especificar a propriedade **mencionado** .
 
 Como o recurso **message** dá suporte a [extensions](/graph/extensibility-overview), você pode usar a operação `POST` e adicionar propriedades personalizadas com seus próprios dados à mensagem ao criá-la.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto de [mensagem](../resources/message.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [Message](../resources/message.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request-1"></a>Solicitação 1
-Aqui está um exemplo da solicitação para criar um rascunho de uma nova mensagem.
+Veja a seguir um exemplo de solicitação para criar um rascunho de uma nova mensagem.
 <!-- {
   "blockType": "request",
   "name": "create_message_from_user"
@@ -158,7 +158,7 @@ Content-type: application/json
 ```
 
 ##### <a name="request-2"></a>Solicitação 2
-O exemplo a seguir mostra um email de rascunho por Randi Welch aos Samantha Booth. A mensagem também inclui um mencionam de outro usuário, Dana Swope.
+O exemplo a seguir mostra um rascunho de email do Randi Welch para o estande de Paula. A mensagem também inclui uma menção de outro usuário, Dana Swope.
 
 No corpo da solicitação, forneça uma representação JSON do objeto [message](../resources/message.md).
 <!-- {
@@ -252,7 +252,7 @@ Content-type: application/json
 ```
 
 ##### <a name="request-3"></a>Solicitação 3
-O exemplo a seguir adiciona duas cabeçalhos de mensagem de Internet do cliente durante a criação de rascunho da mensagem.
+O próximo exemplo adiciona alguns cabeçalhos de mensagem de Internet de cliente ao criar o rascunho da mensagem.
 <!-- {
   "blockType": "request",
   "name": "create_message_with_headers_from_user"
@@ -288,7 +288,7 @@ Content-type: application/json
 ```
 No corpo da solicitação, forneça uma representação JSON do objeto [message](../resources/message.md).
 ##### <a name="response-3"></a>Resposta 3
-Veja a seguir um exemplo da resposta. Observação: Os cabeçalhos de mensagens da Internet não são retornados por padrão em uma resposta de POSTAGEM. Também pode estar truncado no objeto response mostrado aqui para fins de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: cabeçalhos de mensagem da Internet não são retornados por padrão em uma resposta POST. O objeto Response mostrado aqui também pode ser truncado por brevidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "name": "create_message_with_headers_from_user",

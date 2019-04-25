@@ -1,19 +1,19 @@
 ---
-title: 'synchronizationJob: pause'
-description: Interrompa temporariamente a sincronização. Todos o andamento, incluindo o estado do trabalho é persistente e o trabalho continuará de onde ela parou quando é feita uma chamada de iniciar.
+title: 'synchronizationJob: pausar'
+description: Interromper temporariamente a sincronização. Todo o progresso, incluindo o estado do trabalho, é mantido e o trabalho continuará de onde parou quando uma chamada inicial é feita.
 localization_priority: Normal
 ms.openlocfilehash: 9f8cac05511b5efd17234ccf16b763999418bf2a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513918"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537167"
 ---
-# <a name="synchronizationjob-pause"></a>synchronizationJob: pause
+# <a name="synchronizationjob-pause"></a>synchronizationJob: pausar
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Interrompa temporariamente a sincronização. Todos o andamento, incluindo o estado do trabalho é persistente e o trabalho continuará de onde ela parou quando uma chamada [Iniciar](../api/synchronization-synchronizationjob-start.md) é feita.
+Interromper temporariamente a sincronização. Todo o progresso, incluindo o estado do trabalho, é mantido e o trabalho continuará de onde parou quando uma chamada [inicial](../api/synchronization-synchronizationjob-start.md) é feita.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -42,12 +42,12 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, retorna um `204 No Content` resposta. Ele não retornará nada no corpo da resposta.
+Se tiver êxito, retornará `204 No Content` uma resposta. Não retorna nada no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ##### <a name="request"></a>Solicitação
-O exemplo a seguir é um exemplo de uma solicitação.
+Veja a seguir um exemplo de uma solicitação.
 <!-- {
   "blockType": "request",
   "name": "synchronizationjob_pause"
@@ -57,7 +57,7 @@ POST https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/job
 ```
 
 ##### <a name="response"></a>Resposta
-O exemplo a seguir é um exemplo de uma resposta.
+Veja a seguir um exemplo de uma resposta.
 <!-- {
   "blockType": "response",
   "truncated": true,

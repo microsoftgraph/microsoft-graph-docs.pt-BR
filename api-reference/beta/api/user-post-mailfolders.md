@@ -5,15 +5,13 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: b5d439b6b91c697bac41224c028ac07e11412fc4
-ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30869348"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544111"
 ---
 # <a name="create-mailfolder"></a>Criar MailFolder
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Use essa API para criar uma nova pasta de email na pasta raiz da caixa de correio do usuário.
 ## <a name="permissions"></a>Permissões
@@ -56,7 +54,7 @@ Este é um exemplo da solicitação.
   "name": "create_mailfolder_from_user"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/mailFolders
+POST https://graph.microsoft.com/v1.0/me/mailFolders
 Content-type: application/json
 Content-length: 159
 
@@ -89,15 +87,10 @@ Content-length: 179
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Create MailFolder",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/user-post-mailfolders.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

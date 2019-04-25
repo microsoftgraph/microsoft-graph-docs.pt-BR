@@ -1,26 +1,26 @@
 ---
-title: tipo de recurso da API
-description: Especifica as configurações para um aplicativo Web API.
+title: tipo de recurso de API
+description: Especifica as configurações para um aplicativo da API Web.
 localization_priority: Normal
 ms.openlocfilehash: 9d9259911464feb545b97a9eb8585723a9c3e20e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521443"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535687"
 ---
-# <a name="api-resource-type"></a>tipo de recurso da API
+# <a name="api-resource-type"></a>tipo de recurso de API
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Especifica as configurações para um aplicativo Web API.
+Especifica as configurações para um aplicativo da API Web.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|requestedAccessTokenVersion|Int32| Especifica a versão de token de acesso aceito para o recurso de API atual. Valores possíveis são 1 ou 2.  |
-|oauth2PermissionScopes|coleção [permissionScope](permissionscope.md)| A coleção de escopos de permissão OAuth 2.0 que a web application API (recurso) expõe para os aplicativos cliente. Estes escopos de permissão podem ser concedidos aos aplicativos de cliente durante o consentimento. |
+|requestedAccessTokenVersion|Int32| Especifica a versão do token de acesso aceito para o recurso de API atual. Os valores possíveis são 1 ou 2.  |
+|oauth2PermissionScopes|coleção [permissionScope](permissionscope.md)| A coleção de escopos de permissão OAuth 2,0 que o aplicativo Web API (recurso) expõe para aplicativos cliente. Esses escopos de permissão podem ser concedidos aos aplicativos cliente durante o consentimento. |
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

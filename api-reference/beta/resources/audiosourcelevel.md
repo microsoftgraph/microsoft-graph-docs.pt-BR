@@ -1,29 +1,29 @@
 ---
-title: tipo de recurso de audioSourceLevel
-description: Configuração de nível de outras fontes.
+title: tipo de recurso audioSourceLevel
+description: Configuração de nível para outras fontes.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: c91a4c57b283f7669b2be22bba5de5d958b437ad
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528372"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535573"
 ---
-# <a name="audiosourcelevel-resource-type"></a>tipo de recurso de audioSourceLevel
+# <a name="audiosourcelevel-resource-type"></a>tipo de recurso audioSourceLevel
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Configuração de nível de outras fontes.
+Configuração de nível para outras fontes.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade               | Tipo    | Descrição                                                                                         |
 | :--------------------- | :------ | :---------------------------------------------------------------------------------------------------|
-| duckOthers             | Booliano | Habilita a essa fonte para jantar de outras fontes enquanto estão ativos. Se definido como true, desviando nível deve ser definido.|
-| nível                  | Int64   | Desviando nível da fonte se `duckOthers` estiver definida como `true`.                                     |
-| participante            | String  | O fluxo de áudio participante do código-fonte.                                                                |
+| duckOthers             | Booliano | Permite que essa fonte para o pato de outras fontes enquanto ativa. Se for definido como true, o nível de pato precisará ser definido.|
+| level                  | Int64   | O nível de pato da origem se `duckOthers` estiver definido como `true`.                                     |
+| participante            | String  | O fluxo de áudio do participante de origem.                                                                |
 
 ## <a name="json-representation"></a>Representação JSON
 

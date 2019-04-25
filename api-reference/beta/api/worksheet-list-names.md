@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: f215441d8248752ac94b6d311b998412ac154ebd
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641341"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535857"
 ---
 # <a name="list-names"></a>Listar nomes
 
@@ -21,8 +21,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | Files.Read, Files.ReadWrite, Sites.Read.All    |
-|Delegada (conta pessoal da Microsoft) | Files.Read, Files.ReadWrite    |
+|Delegado (conta corporativa ou de estudante) | Files. Read, files. ReadWrite, sites. Read. All    |
+|Delegado (conta pessoal da Microsoft) | Files. Read, files. ReadWrite    |
 |Aplicativo | Sites.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP

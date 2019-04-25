@@ -1,19 +1,19 @@
 ---
 title: Create appRoleAssignment
-description: Use essa API para criar um novo appRoleAssignment.
+description: Use esta API para criar um novo appRoleAssignment.
 localization_priority: Normal
 ms.openlocfilehash: 70993bf1e5402c3fab7229269fbc007602813c40
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643647"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545287"
 ---
 # <a name="create-approleassignment"></a>Create appRoleAssignment
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use essa API para criar um novo appRoleAssignment.
+Use esta API para criar um novo appRoleAssignment.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -36,11 +36,11 @@ POST /servicePrincipals/{id}/appRoleAssignments
 | Autorização  | string  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do objeto [appRoleAssignment](../resources/approleassignment.md) .
+No corpo da solicitação, forneça uma representação JSON do objeto [appRoleAssignment](../resources/approleassignment.md) .
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` objeto response de código e [appRoleAssignment](../resources/approleassignment.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `201 Created` o código de resposta e o objeto [appRoleAssignment](../resources/approleassignment.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -62,7 +62,7 @@ Content-length: 233
   "resourceDisplayName": "resourceDisplayName-value"
 }
 ```
-No corpo da solicitação, fornece uma representação JSON do objeto [appRoleAssignment](../resources/approleassignment.md) .
+No corpo da solicitação, forneça uma representação JSON do objeto [appRoleAssignment](../resources/approleassignment.md) .
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {

@@ -1,21 +1,21 @@
 ---
-title: Lista favoritePlans
-description: Recupere uma lista de plannerPlans que são marcados como favorito por um usuário. Você pode marcar um plano como favorito, atualizando o recurso plannerUser.
+title: Listar favoritePlans
+description: Recupere uma lista de plannerPlans marcados como favoritos por um usuário. Você pode marcar um plano como favorito, atualizando o recurso plannerUser.
 author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 ms.openlocfilehash: c189b3a3a7ed6d36272c05e9614fd6d0327600d4
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519119"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538718"
 ---
-# <a name="list-favoriteplans"></a>Lista favoritePlans
+# <a name="list-favoriteplans"></a>Listar favoritePlans
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de [plannerPlans](../resources/plannerplan.md) que são marcados como favorito por um usuário. Você pode marcar um plano como favorito, [Atualizando o recurso plannerUser](planneruser-update.md).
+Recupere uma lista de [plannerPlans](../resources/plannerplan.md) marcados como favoritos por um usuário. Você pode marcar um plano como favorito, [atualizando o recurso plannerUser](planneruser-update.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -43,7 +43,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [plannerPlan](../resources/plannerplan.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [plannerPlan](../resources/plannerplan.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.

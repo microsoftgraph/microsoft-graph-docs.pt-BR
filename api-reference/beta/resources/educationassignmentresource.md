@@ -1,37 +1,37 @@
 ---
-title: tipo de recurso de educationAssignmentResource
-description: Um objeto wrapper que armazena os recursos associados a uma atribuição. O wrapper adiciona a propriedade **distributeForStudentWork** e indica as datas que este recurso será
+title: tipo de recurso educationAssignmentResource
+description: Um objeto envoltório que armazena os recursos associados a uma atribuição. O wrapper adiciona a propriedade **distributeForStudentWork** e indica que este recurso irá
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 ms.openlocfilehash: 4d05cf5307e77dc6a7ac438c1bd4f4af4e73784e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529226"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542934"
 ---
-# <a name="educationassignmentresource-resource-type"></a>tipo de recurso de educationAssignmentResource
+# <a name="educationassignmentresource-resource-type"></a>tipo de recurso educationAssignmentResource
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Um objeto wrapper que armazena os recursos associados a uma atribuição. O wrapper adiciona a propriedade **distributeForStudentWork** e indica as datas que este recurso será copiado para o envio de student.  Se o objeto não for copiado, a cada aluno verão um link para o recurso na atribuição. O aluno não poderão atualizar esse recurso. Este é um folheto do professor ao aluno com nada a ser ativado. Se o recurso é distribuído, cada aluno receberá uma cópia desse recurso na lista de recursos de envio. Cada aluno poderá modificar suas cópias e enviá-la para a classificação.
+Um objeto envoltório que armazena os recursos associados a uma atribuição. O wrapper adiciona a propriedade **distributeForStudentWork** e indica que esse recurso será copiado para o envio do aluno.  Se o objeto não for copiado, cada aluno verá um link para o recurso na atribuição. O aluno não poderá atualizar esse recurso. Este é um folheto do professor para o aluno com nada para ser ativado. Se o recurso for distribuído, cada aluno receberá uma cópia desse recurso na lista de recursos do envio. Cada aluno poderá modificar a cópia e enviá-la para a gradação.
 
 
 ## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Obter educationAssignmentResource](../api/educationassignmentresource-get.md) | [educationAssignmentResource](educationassignmentresource.md) |Leia as propriedades e os relacionamentos de um objeto **educationAssignmentResource** .|
+|[Obter educationAssignmentResource](../api/educationassignmentresource-get.md) | [educationAssignmentResource](educationassignmentresource.md) |Ler propriedades e relações de um objeto **educationAssignmentResource** .|
 |[Update](../api/educationassignmentresource-update.md) | [educationAssignmentResource](educationassignmentresource.md) |Atualize um objeto **educationAssignmentResource** . |
-|[Delete](../api/educationassignmentresource-delete.md) | Nenhum |Exclua um objeto **educationAssignmentResource** . |
+|[Excluir](../api/educationassignmentresource-delete.md) | None |Excluir um objeto **educationAssignmentResource** . |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|distributeForStudentWork|Booliano|Indica se este recurso deve ser copiado para cada envio estudante para envio e modificação.|
-|id|String| Identificação desse recurso. Somente leitura.|
-|recurso|[educationResource](educationresource.md)|Objeto de recurso que tiver sido associado essa atribuição.|
+|distributeForStudentWork|Booliano|Indica se esse recurso deve ser copiado para cada aluno enviado para modificação e envio.|
+|id|String| ID desse recurso. Somente leitura.|
+|recurso|[educationResource](educationresource.md)|Objeto de recurso que foi associado a essa atribuição.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

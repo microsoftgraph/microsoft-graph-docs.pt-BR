@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: d2bdc1be9e504bc72ce12ffe924b6da0812b99ce
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642447"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535470"
 ---
 # <a name="contact-resource-type"></a>tipo de recurso contact
 
@@ -88,18 +88,18 @@ Veja a seguir uma representação JSON do recurso
 |categories|Coleção de cadeias de caracteres|As categorias associadas ao contato. Cada categoria corresponde à propriedade **displayName** de uma [outlookCategory](outlookcategory.md) definida para o usuário.|
 |changeKey|String|Identifica a versão do contato. Toda vez que o contato muda, a ChangeKey também muda. Isso permite que o Exchange aplique alterações na versão correta do objeto.|
 |children|Coleção de cadeias de caracteres|Os nomes dos filhos do contato.|
-|nomeDaEmpresa|String|O nome da empresa do contato.|
+|companyName|String|O nome da empresa do contato.|
 |createdDateTime|DateTimeOffset|A hora em que o contato foi criado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |department|String|O departamento do contato.|
-|displayName|String|O nome para exibição do contato. Você pode especificar o nome para exibição em uma operação de [criar](../api/user-post-contacts.md) ou [Atualizar](../api/contact-update.md) . Observe que as atualizações posteriores a outras propriedades podem causar um valor gerado automaticamente substituir o valor displayName que você especificou. Para preservar a um valor pré-existente, sempre incluí-lo como displayName em uma operação de [atualização](../api/contact-update.md) .|
+|displayName|String|O nome para exibição do contato. Você pode especificar o nome de exibição em uma operação de [criação](../api/user-post-contacts.md) ou [atualização](../api/contact-update.md) . Observe que atualizações posteriores a outras propriedades podem fazer com que um valor gerado automaticamente substitua o valor displayName que você especificou. Para preservar um valor preexistente, sempre inclua-o como displayName em uma operação [Update](../api/contact-update.md) .|
 |emailAddresses|coleção [typedEmailAddress](typedemailaddress.md)|Os endereços de email do contato.|
 |fileAs|String|O nome com o qual o contato está arquivado.|
-|sinalizar|[Sinalizador de acompanhamento](followupflag.md)|O valor de sinalizador que indica o status, data de início, data de conclusão ou data de conclusão do contato. |
-|gender |String |Gênero do contato. |
+|flag|[followupFlag](followupflag.md)|O valor do sinalizador que indica o status, a data de início, a data de conclusão ou a data de conclusão do contato. |
+|gender |String |O sexo do contato. |
 |generation|String|A geração do contato.|
 |givenName|String|O nome do contato.|
-|id|String|O identificador exclusivo do contato. Somente leitura.|
-|imAddresses|Coleção de cadeias de caracteres|Os endereços de mensagens instantâneas do contato.|
+|id|Cadeia de caracteres|O identificador exclusivo do contato. Somente leitura.|
+|imAddresses|String collection|Os endereços de mensagens instantâneas do contato.|
 |initials|String|As iniciais do contato.|
 |jobTitle|String|O cargo do contato.|
 |lastModifiedDateTime|DateTimeOffset|A hora em que o contato foi modificado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
@@ -109,14 +109,14 @@ Veja a seguir uma representação JSON do recurso
 |officeLocation|String|O local do escritório do contato.|
 |parentFolderId|String|A ID da pasta pai do contato.|
 |personalNotes|String|As anotações do usuário sobre o contato.|
-|telefones |Coleção [phone](phone.md) |Números de telefone associados com o contato, por exemplo, telefone residencial, celular e telefone comercial. |
-|postalAddresses |coleção [physicalAddress](physicaladdress.md) |Endereços associados ao contato, por exemplo, início endereço e o endereço comercial. |
+|telefones |Coleção [phone](phone.md) |Números de telefone associados ao contato, por exemplo, telefone residencial, telefone celular e telefone comercial. |
+|postalAddresses |coleção [physicalAddress](physicaladdress.md) |Endereços associados ao contato, por exemplo, endereço residencial e endereço comercial. |
 |profession|String|A profissão do contato.|
 |spouseName|String|O nome do cônjuge/parceiro do contato.|
 |surname|String|O sobrenome do contato.|
-|title|String|O título do contato.|
+|title|Cadeia de caracteres|O título do contato.|
 |websites |Coleção [website](website.md)|Sites da Web associados ao contato. |
-|weddingAnniversary |Data |Aniversário de chá do contato. |
+|weddingAnniversary |Data |Aniversário de casamento do contato. |
 |yomiCompanyName|String|O nome de empresa japonês fonético do contato.|
 |yomiGivenName|String|O nome japonês fonético do contato.|
 |yomiSurname|String|O sobrenome japonês fonético do contato.|
@@ -124,7 +124,7 @@ Veja a seguir uma representação JSON do recurso
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|extensions|Coleção [extension](extension.md)|A coleção de extensões open definidas para o contato. Anulável.|
+|extensions|Coleção [extension](extension.md)|A coleção de extensões abertas definidas para o contato. Anulável.|
 |multiValueExtendedProperties|Coleção [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de vários valores definidas para o contato. Somente leitura. Anulável.|
 |Foto|[photo](profilephoto.md)| Imagem de contato opcional. Você pode obter ou definir uma foto de um contato.|
 |singleValueExtendedProperties|Coleção [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de valor único definidas para o contato. Somente leitura. Anulável.|
@@ -132,10 +132,10 @@ Veja a seguir uma representação JSON do recurso
 ## <a name="methods"></a>Métodos
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Obter contato](../api/contact-get.md) | [contact](contact.md) |Leia as propriedades e as relações do objeto contact.|
-|[Create](../api/user-post-contacts.md) | [contact](contact.md) |Adicione um contato na pasta de Contatos raiz ou no ponto de extremidade de contatos de outra pasta de contatos.|
+|[Obter contato](../api/contact-get.md) | [contato](contact.md) |Leia as propriedades e as relações do objeto contact.|
+|[Create](../api/user-post-contacts.md) | [contato](contact.md) |Adicione um contato na pasta de Contatos raiz ou no ponto de extremidade de contatos de outra pasta de contatos.|
 |[Update](../api/contact-update.md) | [contact](contact.md) |Atualize o objeto contact. |
-|[Delete](../api/contact-delete.md) | Nenhuma |Exclua um objeto contact. |
+|[Excluir](../api/contact-delete.md) | Nenhum |Exclua um objeto contact. |
 |[delta](../api/contact-delta.md)|Coleção [Contact](contact.md)| Obtenha um conjunto de contatos que foram adicionados, excluídos ou atualizados em uma pasta especificada.|
 |**Extensões abertas**| | |
 |[Criar extensão aberta](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Crie uma extensão aberta e adicione propriedades personalizadas a uma instância nova ou existente de um recurso.|
@@ -143,9 +143,9 @@ Veja a seguir uma representação JSON do recurso
 |**Extensões de esquema**| | |
 |[Adicionar valores de extensões de esquema](/graph/extensibility-schema-groups) || Cria uma definição para a extensão de esquema e usa-a para adicionar dados digitados personalizados a um recurso.|
 |**Propriedades estendidas**| | |
-|[Criar uma propriedade estendida de valor único](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[contact](contact.md)  |Criar uma ou mais propriedades estendidas de valor único em um contato novo ou existente.   |
-|[Obter contato com propriedade estendida com valor único](../api/singlevaluelegacyextendedproperty-get.md)  | [contact](contact.md) | Obter contatos que contenham uma propriedade estendida de valor único usando `$expand` ou `$filter`. |
-|[Criar propriedade estendida de vários valores](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [contact](contact.md) | Criar uma ou mais propriedades estendidas de vários valores em um contato novo ou existente.  |
+|[Criar uma propriedade estendida de valor único](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[contato](contact.md)  |Criar uma ou mais propriedades estendidas de valor único em um contato novo ou existente.   |
+|[Obter contato com propriedade estendida com valor único](../api/singlevaluelegacyextendedproperty-get.md)  | [contato](contact.md) | Obter contatos que contenham uma propriedade estendida de valor único usando `$expand` ou `$filter`. |
+|[Criar propriedade estendida de vários valores](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [contato](contact.md) | Criar uma ou mais propriedades estendidas de vários valores em um contato novo ou existente.  |
 |[Obter contato com propriedade estendida de vários valores](../api/multivaluelegacyextendedproperty-get.md)  | [contact](contact.md) | Obter um contato que contenha uma propriedade estendida de vários valores usando `$expand`. |
 
 ## <a name="see-also"></a>Confira também

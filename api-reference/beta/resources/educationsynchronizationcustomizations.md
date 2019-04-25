@@ -1,25 +1,25 @@
 ---
-title: tipo de recurso de educationSynchronizationCustomizations
-description: Contém a lista de entidades de sincronização e suas personalizações, se houver alguma.
+title: tipo de recurso educationSynchronizationCustomizations
+description: Contém a lista de entidades a serem sincronizadas e suas personalizações, se houver.
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: 9e513e64afb1478ca7b5cc5d53f1964d16d9928b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523250"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543188"
 ---
-# <a name="educationsynchronizationcustomizations-resource-type"></a>tipo de recurso de educationSynchronizationCustomizations
+# <a name="educationsynchronizationcustomizations-resource-type"></a>tipo de recurso educationSynchronizationCustomizations
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contém a lista de entidades de sincronização e suas [personalizações](educationsynchronizationcustomization.md), se houver alguma.
+Contém a lista de entidades a serem sincronizadas [](educationsynchronizationcustomization.md)e suas personalizações, se houver.
 
-> **Observação:** Personalização das propriedades para sincronizar não se aplica às entidades **studentEnrollment** e **teacherRoster** .
+> **Observação:** A personalização das propriedades a serem sincronizadas não se aplica às entidades **studentEnrollment** e **teacherRoster** .
 
-Este recurso é membro dos provedores de dados a seguir:
+Este recurso é membro dos seguintes provedores de dados:
 
 * [educationCsvDataProvider](educationcsvdataprovider.md)
 * [educationPowerSchoolDataProvider](educationpowerschooldataprovider.md)
@@ -28,12 +28,12 @@ Este recurso é membro dos provedores de dados a seguir:
 
 | Propriedade | Tipo | Descrição |
 |:-|:-|:-|
-| **escola** | [educationSynchronizationCustomization](educationsynchronizationcustomization.md) |  Personalização para uma entidade escola.        |
-| **section** | [educationSynchronizationCustomization](educationsynchronizationcustomization.md) |  Personalização para uma entidade de seção.         |
-| student | [educationSynchronizationCustomization](educationsynchronizationcustomization.md) |  Personalização para uma entidade de student.         |
-| teacher | [educationSynchronizationCustomization](educationsynchronizationcustomization.md) |  Personalização para uma entidade de professor.         |
-| **studentEnrollment** | [educationSynchronizationCustomization](educationsynchronizationcustomization.md) |  Personalização para o registro de student.           |
-| **teacherRoster** | [educationSynchronizationCustomization](educationsynchronizationcustomization.md) |       Personalização para uma lista de participação do professor.    |
+| **escola** | [educationSynchronizationCustomization](educationsynchronizationcustomization.md) |  Personalização de uma entidade escolar.        |
+| **section** | [educationSynchronizationCustomization](educationsynchronizationcustomization.md) |  Personalização de uma entidade de seção.         |
+| **student** | [educationSynchronizationCustomization](educationsynchronizationcustomization.md) |  Personalização de uma entidade de aluno.         |
+| **teacher** | [educationSynchronizationCustomization](educationsynchronizationcustomization.md) |  Personalização de uma entidade professor.         |
+| **studentEnrollment** | [educationSynchronizationCustomization](educationsynchronizationcustomization.md) |  Personalização para registro de alunos.           |
+| **teacherRoster** | [educationSynchronizationCustomization](educationsynchronizationcustomization.md) |       Personalização de uma lista de professores.    |
 
 ## <a name="json-representation"></a>Representação JSON
 <!-- {

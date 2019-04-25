@@ -2,21 +2,21 @@
 author: rahmit
 ms.author: rahmit
 ms.date: 03/15/2018
-title: Obtenha uma página em um site
+title: Obter uma página em um site
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 2232a72cc116965332e055178be87eb5eea0405d
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640543"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545252"
 ---
-# <a name="get-a-page-in-the-site-pages-list-of-a-site"></a>Obtenha uma página na lista de páginas de site de um site
+# <a name="get-a-page-in-the-site-pages-list-of-a-site"></a>Obter uma página na lista de páginas do site de um site
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retorna os metadados para um [sitePage][] na de páginas do site [lista][] em um [site][].
+Retorna os metadados de um [sitePage][] na [lista][] de páginas do site em um [site][].
 
 [sitePage]: ../resources/sitepage.md
 [list]: ../resources/list.md
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Sites.Read.All, Sites.ReadWrite.All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sites.Read.All, Sites.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP

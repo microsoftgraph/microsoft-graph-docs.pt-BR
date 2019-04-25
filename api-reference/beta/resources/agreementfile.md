@@ -1,19 +1,19 @@
 ---
-title: tipo de recurso de agreementFile
-description: Representa um termos personalizável do arquivo do contrato de uso que gerencia de um inquilino com o Azure Active Directory (AD Azure). Ele contém metadados sobre o arquivo do contrato (por exemplo, o nome, o idioma, e se ele está o arquivo padrão).
+title: tipo de recurso contratofile
+description: Representa um arquivo de contrato de uso personalizável que um locatário gerencia com o Azure Active Directory (Azure AD). Ele contém metadados sobre o arquivo de contrato (por exemplo, o nome, o idioma e se é o arquivo padrão).
 localization_priority: Normal
 ms.openlocfilehash: 446173e83d32af96f938cbee15964ea204a62f7e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511426"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535744"
 ---
-# <a name="agreementfile-resource-type"></a>tipo de recurso de agreementFile
+# <a name="agreementfile-resource-type"></a>tipo de recurso contratofile
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa um termos personalizável do arquivo do contrato de uso que gerencia de um inquilino com o Azure Active Directory (AD Azure). Ele contém metadados sobre o arquivo do contrato (por exemplo, o nome, o idioma, e se ele está o arquivo padrão).
+Representa um arquivo de contrato de uso personalizável que um locatário gerencia com o Azure Active Directory (Azure AD). Ele contém metadados sobre o arquivo de contrato (por exemplo, o nome, o idioma e se é o arquivo padrão).
 
 <!--
 ## Methods
@@ -28,11 +28,11 @@ Representa um termos personalizável do arquivo do contrato de uso que gerencia 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|fileData|[agreementFileData](agreementfiledata.md)|Dados que representam as condições de usar o documento PDF. Somente leitura.|
-|fileName|String|Nome do arquivo contrato (por exemplo, TOU.pdf). Somente leitura.|
+|fileData|[agreementFileData](agreementfiledata.md)|Dados que representam o documento PDF termos de uso. Somente leitura.|
+|fileName|String|Nome do arquivo de contrato (por exemplo, TOU. pdf). Somente leitura.|
 |id|String|Somente leitura.|
-|isDefault|Booliano|Indica se esse é o arquivo padrão do contrato se nenhuma das culturas corresponder a preferência do cliente. Se nenhum dos arquivos estiverem marcados como padrão, primeiro será tratado como padrão. Somente leitura.|
-|idioma|Cadeia de caracteres|Cultura do arquivo no formato languagecode2-país/regioncode2 contrato. languagecode2 é um código de duas letras minúsculas, derivado do ISO 639-1. País/regioncode2 é derivado do ISO 3166 e normalmente consiste em duas letras maiusculas ou uma marca de idioma BCP-47 (por exemplo, en-US). Somente leitura.|
+|isDefault|Booliano|Indica se este é o arquivo de contrato padrão se nenhuma das culturas corresponder à preferência do cliente. Se nenhum dos arquivos estiver marcado como padrão, o primeiro será tratado como o padrão. Somente leitura.|
+|idioma|Cadeia de caracteres|Cultura do arquivo de contrato no formato languagecode2-Country/regioncode2. languagecode2 é um código de duas letras em minúsculas derivado de ISO 639-1. Country/regioncode2 é derivado de ISO 3166 e geralmente consiste em duas letras maiúsculas ou uma marca de idioma BCP-47 (por exemplo, en-US). Somente leitura.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

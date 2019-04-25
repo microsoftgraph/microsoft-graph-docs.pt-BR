@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 9f70b5363ccc7552975db8f2396af705d8bf1557
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643098"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32565608"
 ---
 # <a name="tablecolumn-resource-type"></a>Tipo de recurso TableColumn
 
@@ -28,7 +28,7 @@ Representa uma coluna em uma tabela.
 |[Headerrowrange](../api/tablecolumn-headerrowrange.md)|[Range](range.md)|Obtém o objeto de intervalo associado à linha de cabeçalho da coluna.|
 |[Range](../api/tablecolumn-range.md)|[Range](range.md)|Obtém o objeto de intervalo associado a toda a coluna.|
 |[Totalrowrange](../api/tablecolumn-totalrowrange.md)|[Range](range.md)|Obtém o objeto de intervalo associado à linha de totais da coluna.|
-|[Delete](../api/tablecolumn-delete.md)|Nenhum|Exclui a coluna da tabela.|
+|[Excluir](../api/tablecolumn-delete.md)|Nenhum|Exclui a coluna da tabela.|
 |[List](../api/tablecolumn-list.md) | Coleção [TableColumn](tablecolumn.md) |Obtenha uma coleção de objetos tableColumn. |
 |[Itemat](../api/tablecolumncollection-itemat.md)|[TableColumn](tablecolumn.md)|Obtém uma coluna com base em sua posição na coleção.|
 |[Add](../api/tablecolumncollection-add.md)|[TableColumn](tablecolumn.md)|Adiciona uma nova coluna à tabela.|
@@ -44,7 +44,7 @@ Representa uma coluna em uma tabela.
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|filtro|[Filter](filter.md)|Recupera o filtro aplicado à coluna. Somente leitura.|
+|filter|[Filter](filter.md)|Recupera o filtro aplicado à coluna. Somente leitura.|
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -5,11 +5,11 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 1cd48c866ea6384aa18631732065380e898b8bf7
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642692"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547127"
 ---
 # <a name="mailfolder-resource-type"></a>tipo de recurso mailFolder
 
@@ -19,35 +19,35 @@ Uma pasta de email na caixa de correio de um usuário, como Caixa de entrada e R
 
 Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overview) para controlar adições, exclusões e atualizações incrementais oferecendo uma função [delta](../api/mailfolder-delta.md).
 
-**Nomes de pasta conhecido**
+**Nomes de pastas conhecidos**
 
-O Outlook cria determinadas pastas para usuários por padrão. Em vez de usar o valor de **id** de pasta correspondente, para sua conveniência, você pode usar os nomes de pasta conhecido da tabela abaixo ao acessar essas pastas. Por exemplo, você pode obter a pasta Rascunhos usando seu nome conhecido com a seguinte consulta.
+O Outlook cria determinadas pastas para usuários por padrão. Em vez de usar o valor de **ID** de pasta correspondente, por conveniência, você pode usar os nomes de pasta conhecidos da tabela abaixo ao acessar essas pastas. Por exemplo, você pode obter a pasta Rascunhos usando seu nome conhecido com a seguinte consulta.
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/drafts
 ```
 
-Nomes conhecidos funcionam independentemente da localidade da caixa de correio do usuário, portanto, a consulta acima retornará sempre na pasta Rascunhos do usuário independentemente de como ele é chamado.
+Nomes conhecidos funcionam independentemente da localidade da caixa de correio do usuário, portanto, a consulta acima sempre retornará a pasta Rascunhos do usuário, independentemente de como ela é nomeada.
 
-| Nome da pasta conhecido | Descrição |
+| Nome de pasta conhecido | Descrição |
 |:-----------------------|:------------|
-| arquivo morto | As mensagens de pasta de arquivo morto são enviadas ao usar o recurso de arquivamento One_Click nos clientes do Outlook com suporte. **Observação:** isso não é o mesmo que o recurso de caixa de correio de arquivamento do Exchange online. |
-| desorganização | As mensagens de baixa prioridade de pasta desorganização são movidas para ao usar o recurso desorganização. |
-| conflitos | A pasta que contém itens conflitantes na caixa de correio. |
-| conversationhistory | A pasta onde o Skype salva conversas de mensagens Instantâneas (se Skype estiver configurada para fazê-lo). |
-| deleteditems | Os itens da pasta são movidos para quando eles são excluídos. |
-| rascunhos | A pasta que contém as mensagens não enviadas. |
-| caixa de entrada | A pasta de caixa de entrada. |
-| junkemail | A pasta de lixo eletrônico. |
-| localfailures | A pasta que contém itens que existem no cliente local, mas não puderam ser carregados no servidor. |
-| msgfolderroot | A pasta "Superior do armazenamento de informações". Essa pasta é a pasta pai para as pastas que são exibidos em clientes de email normal, como a caixa de entrada. |
-| caixa de saída | A pasta caixa de saída. |
-| recoverableitemsdeletions | A pasta que contém itens excluída: excluído da pasta Itens excluídos ou por pressionar shift + delete no Outlook. Essa pasta não é visível em qualquer cliente de email do Outlook, mas os usuários finais podem interagir com ele por meio do recurso de **Recuperar itens excluídos do servidor** do Outlook ou do Outlook na web. |
-| agendado | A pasta que contém as mensagens que são agendadas reaparecem na caixa de entrada usando o recurso de agendamento no Outlook para iOS. |
-| SearchFolders | A pasta pai para todas as pastas de pesquisa definido na caixa de correio do usuário. |
+| d' | As mensagens da pasta de arquivamento são enviadas ao usar o recurso de arquivo morto do One_Click em clientes do Outlook que dão suporte a ela. **Observação:** isso não é o mesmo que o recurso de caixa de correio de arquivo morto do Exchange Online. |
+| email | As mensagens de baixa prioridade da pasta de email secundário são movidas para ao usar o recurso de email secundário. |
+| conflita | A pasta que contém itens conflitantes na caixa de correio. |
+| conversationhistory | A pasta na qual o Skype salva conversas de IM (se o Skype estiver configurado para isso). |
+| deleteditems | Os itens da pasta são movidos para quando são excluídos. |
+| rascunhos | A pasta que contém mensagens não enviadas. |
+| postal | A pasta caixa de entrada. |
+| junkemail | A pasta lixo eletrônico. |
+| localfailures | A pasta que contém itens que existem no cliente local, mas que não puderam ser carregadas no servidor. |
+| msgfolderroot | A pasta "Top of Information Store". Essa pasta é a pasta pai para pastas que são exibidas em clientes de email normais, como a caixa de entrada. |
+| enviada | A pasta de saída. |
+| RecoverableItemsDeletions | A pasta que contém itens excluídos por software: excluídas da pasta itens excluídos ou pressionando Shift + Delete no Outlook. Esta pasta não está visível em nenhum cliente de email do Outlook, mas os usuários finais podem interagir com ele através do recurso **recuperar itens excluídos do servidor** no Outlook ou no Outlook na Web. |
+| agendado | A pasta que contém as mensagens agendadas para reaparecerem na caixa de entrada usando o recurso de agendamento no Outlook para iOS. |
+| SearchFolders | A pasta pai de todas as pastas de pesquisa definidas na caixa de correio do usuário. |
 | itens enviados | A pasta Itens enviados. |
-| serverfailures | A pasta que contém itens que existem no servidor, mas não pôde ser sincronizados no cliente local. |
+| serverfailures | A pasta que contém os itens existentes no servidor, mas que não puderam ser sincronizados com o cliente local. |
 | syncissues | A pasta que contém os logs de sincronização criados pelo Outlook. |
 
 ## <a name="methods"></a>Métodos
@@ -60,7 +60,7 @@ Nomes conhecidos funcionam independentemente da localidade da caixa de correio d
 |[Criar Mensagem](../api/mailfolder-post-messages.md) |[mensagem](message.md)| Crie uma nova mensagem na mailFolder atual postando na coleção de mensagens.|
 |[Listar mensagens](../api/mailfolder-list-messages.md) |Coleção [message](message.md)| Obtenha todas as mensagens na caixa de correio do usuário conectado, ou em uma pasta especificada na caixa de correio.|
 |[Update](../api/mailfolder-update.md) | [mailFolder](mailfolder.md)|Atualize o objeto mailFolder especificado. |
-|[Delete](../api/mailfolder-delete.md) | Nenhuma |Exclua o objeto mailFolder especificado. |
+|[Excluir](../api/mailfolder-delete.md) | Nenhum |Exclua o objeto mailFolder especificado. |
 |[copy](../api/mailfolder-copy.md)|[mailFolder](mailfolder.md)|Copie uma mailFolder e seu conteúdo para outra mailFolder.|
 |[delta](../api/mailfolder-delta.md)|Coleção [mailFolder](mailfolder.md)|Obtenha um conjunto de pastas de email que foram adicionadas, excluídas ou removidas da caixa de correio do usuário.|
 |[move](../api/mailfolder-move.md)|[mailFolder](mailfolder.md)|Mova uma mailFolder e seu conteúdo para outra mailFolder.|
@@ -76,22 +76,22 @@ Nomes conhecidos funcionam independentemente da localidade da caixa de correio d
 |:---------|:-----|:------------|
 |childFolderCount|Int32|O número de mailFolders filho imediatas na mailFolder atual.|
 |displayName|String|O nome de exibição da mailFolder.|
-|id|String|Identificador exclusivo do mailFolder.|
+|id|Cadeia de caracteres|Identificador exclusivo de mailFolder.|
 |parentFolderId|String|O identificador exclusivo de mailFolder do mailFolder pai.|
 |totalItemCount|Int32|O número de itens na mailFolder.|
 |unreadItemCount|Int32|O número de itens na mailFolder marcados como não lidos.|
-|wellKnownName|String|O nome da pasta conhecido para a pasta. Os valores possíveis são listados acima. Essa propriedade só é definida para pastas padrão criadas pelo Outlook. Para outras pastas, essa propriedade é **null**.|
+|wellKnownName|String|O nome de pasta conhecido para a pasta. Os valores possíveis estão listados acima. Essa propriedade só é definida para pastas padrão criadas pelo Outlook. Para outras pastas, essa propriedade é **NULL**.|
 
 **Acessar contagens de itens de forma eficiente**
 
-O `TotalItemCount` e `UnreadItemCount` propriedades de uma pasta permitem que você convenientemente calcular o número de itens de leitura na pasta.
-Eles permitem evitar consultas semelhante ao seguinte que pode acarretar uma latência significativa:
+As `TotalItemCount` propriedades `UnreadItemCount` e de uma pasta permitem que você Compute convenientemente o número de itens de leitura na pasta.
+Eles permitem que você evite consultas semelhante à seguinte, que podem causar latência significativa:
 
 ```http
 https://outlook.office.com/api/beta/me/folders/inbox/messages?$count=true&$filter=isread%20eq%20false
 ```
 
-Pastas de email no Outlook podem conter mais de um tipo de itens, por exemplo, a caixa de entrada pode conter itens que são diferentes dos itens de email da solicitação de reunião. `TotalItemCount`e `UnreadItemCount` incluir itens em uma pasta de email, independentemente de seus tipos de item.
+Pastas de email no Outlook podem conter mais de um tipo de itens, por exemplo, a caixa de entrada pode conter itens de solicitação de reunião que são diferentes dos itens de email. `TotalItemCount`e `UnreadItemCount` incluir itens em uma pasta de email independentemente de seus tipos de item.
 
 ## <a name="relationships"></a>Relações
 

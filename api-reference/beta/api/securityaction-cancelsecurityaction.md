@@ -4,12 +4,12 @@ description: Cancela uma operação de segurança.
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 1b37563ffde274944dc877482602c36d2bf3a4bd
-ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
+ms.openlocfilehash: be737b6c1f6a8421cc87a7dd8efc222b48d7c078
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30366949"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545666"
 ---
 # <a name="securityaction-cancelsecurityaction"></a>SecurityAction: cancelSecurityAction
 
@@ -23,9 +23,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | SecurityActions. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     | Sem suporte. |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | SecurityActions. ReadWrite. All |
+| Aplicativo                            | SecurityActions.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -39,7 +39,7 @@ POST /security/securityActions/{id}/cancelSecurityAction
 
 | Nome          | Descrição   |
 |:--------------|:--------------|
-| Autorização | Portador {código} |
+| Authorization | Portador {código} |
 
 ## <a name="request-body"></a>Corpo da solicitação
 

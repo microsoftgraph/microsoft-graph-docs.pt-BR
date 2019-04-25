@@ -4,12 +4,12 @@ description: Recupere uma lista de objetos SecurityAction.
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 1a161fd6113e6f29b061bd1dca9d2c4b16d7ee9c
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.openlocfilehash: 93988de6a970df22350e8d0fc89126c8becfe493
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482312"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537577"
 ---
 # <a name="list-securityactions"></a>Listar securityActions
 
@@ -23,7 +23,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | SecurityActions. Read. All, SecurityActions. ReadWrite. All |
+| Delegado (conta corporativa ou de estudante)     | Sem suporte. |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | SecurityActions. Read. All, SecurityActions. ReadWrite. All |
 
@@ -43,7 +43,7 @@ Este método oferece suporte a alguns dos parâmetros de consulta OData para aju
 
 | Nome      |Descrição|
 |:----------|:----------|
-| Autorização | Portador {código} |
+| Authorization | Portador {código} |
 
 ## <a name="request-body"></a>Corpo da solicitação
 

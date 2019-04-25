@@ -1,32 +1,32 @@
 ---
-title: tipo de recurso de audioDuckingConfiguration
-description: Parâmetros para desviando de outras fontes (Introdução gradual e sair de outras fontes.)
+title: tipo de recurso audioDuckingConfiguration
+description: Parâmetros para o pato de outras fontes (phasing dentro e fora de outras fontes).
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: d61e4150250df25e020f45a65676d1c55c0e4c9d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522459"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544097"
 ---
-# <a name="audioduckingconfiguration-resource-type"></a>tipo de recurso de audioDuckingConfiguration
+# <a name="audioduckingconfiguration-resource-type"></a>tipo de recurso audioDuckingConfiguration
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Parâmetros para desviando de outras fontes (Introdução gradual e sair de outras fontes.)
+Parâmetros para o pato de outras fontes (phasing dentro e fora de outras fontes).
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade      | Tipo     | Descrição                                                                     |
 | :------------ | :------- | :-------------------------------------------------------------------------------|
-| lowerLevel    | Int64    | O volume das fontes em % quando as fontes estão sendo ducked.             |
-| rampActive    | Int64    | A quantidade de tempo (em milissegundos) que leva para fontes ducked "desaparecer". |
-| rampInactive  | Int64    | A quantidade de tempo (em milissegundos) que leva para ducked fontes para "desaparecer".  |
-| upperLevel    | Int64    | O volume das fontes em % quando as fontes não estão sendo ducked.         |
+| lowerLevel    | Int64    | O volume de fontes em porcentagem quando as fontes estão sendo disparadas.             |
+| rampActive    | Int64    | A quantidade de tempo (em milissegundos) que demora para que as fontes em intervalo sejam "Fade out". |
+| rampInactive  | Int64    | A quantidade de tempo (em milissegundos) que demora para as fontes em um intervalo para "Fade in".  |
+| upperLevel    | Int64    | O volume de fontes em porcentagem quando as fontes não estão sendo disparadas.         |
 
-> **Observação:** Duração conheça não pode ser mais de 5.000 milissegundos.
+> **Observação:** A duração da rampa não pode ser maior que 5.000 milissegundos.
 
 ## <a name="json-representation"></a>Representação JSON
 

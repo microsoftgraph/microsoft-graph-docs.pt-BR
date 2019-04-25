@@ -1,24 +1,24 @@
 ---
-title: Atualizar schemaExtension
+title: Update schemaExtension
 description: Atualize as propriedades na definição da schemaExtension especificada.
 localization_priority: Normal
 author: dkershaw10
 ms.openlocfilehash: f457609af15716ef2ada3945132afd285fd2394c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515535"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537738"
 ---
-# <a name="update-schemaextension"></a>Atualizar schemaExtension
+# <a name="update-schemaextension"></a>Update schemaExtension
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades na definição da [schemaExtension](../resources/schemaextension.md) especificada.
+Atualize as propriedades na definição da [schemaExtension](../resources/schemaextension.md)especificada.
 
-A atualização se aplica a todos os recursos que estão incluídos na propriedade **targetTypes** da extensão. Esses recursos estão entre os [tipos de recurso de suporte](/graph/extensibility-overview#supported-resources).
+A atualização se aplica a todos os recursos incluídos na propriedade **TargetTypes** da extensão. Esses recursos estão entre os [tipos de recurso de suporte](/graph/extensibility-overview#supported-resources).
 
-Somente o aplicativo que criou uma extensão de esquema (proprietário do aplicativo) pode fazer atualizações aditivas à extensão quando a extensão estiver com o status **InDevelopment** ou **Available**. Isso significa que o aplicativo não consegue remover propriedades personalizadas ou tipos de recursos de destino da definição. Porém, o aplicativo pode alterar a descrição da extensão.
+Somente o aplicativo que criou uma extensão de esquema (aplicativo proprietário) pode fazer atualizações aditivas para a extensão quando a extensão está **** no indesenvolvimento ou status **disponível** . Isso significa que o aplicativo não pode remover propriedades personalizadas ou tipos de recurso de destino da definição. No entanto, o aplicativo pode alterar a descrição da extensão.
 
 ## <a name="permissions"></a>Permissões
 
@@ -53,8 +53,8 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |:---------------|:--------|:----------|
 |description|String|Descrição da extensão de esquema.|
 |properties|Coleção [extensionSchemaProperty](../resources/extensionschemaproperty.md)|A coleção de tipos e nomes de propriedades que compõem a definição da extensão de esquema. Somente as alterações aditivas são permitidas. |
-|status|String|O estado de ciclo de vida da extensão do esquema. O estado inicial após a criação é **InDevelopment**. Transições de estados possíveis vão de **InDevelopment** a **disponível** e **disponível** para **obsoleto**.|
-|targetTypes|Coleção de cadeias de caracteres|O conjunto de tipos do Microsoft Graph (que podem suportar extensões) ao qual a extensão de esquema pode ser aplicada.  Somente as alterações aditivas são permitidas.|
+|status|String|O estado do ciclo de vida da extensão do esquema. O estado inicial na criação é **** o indevelopment. Os possíveis transições de Estados **** estão de indevelopment para **Available** e **disponíveis** para preteridos. ****|
+|targetTypes|Coleção de cadeias de caracteres|Conjunto de tipos do Microsoft Graph (que podem suportar extensões) à qual a extensão de esquema pode ser aplicada.  Somente as alterações aditivas são permitidas.|
 
 ## <a name="response"></a>Resposta
 

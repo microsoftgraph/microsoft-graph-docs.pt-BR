@@ -1,19 +1,19 @@
 ---
-title: Criar synchronizationTemplate
-description: Crie um novo modelo de sincronização para um determinado aplicativo.
+title: Criar synchronizationtemplate
+description: Criar um novo modelo de sincronização para um determinado aplicativo.
 localization_priority: Normal
 ms.openlocfilehash: ce519b57766956b10d05b6b3745ca16f609b597c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509886"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536961"
 ---
-# <a name="create-synchronizationtemplate"></a>Criar synchronizationTemplate
+# <a name="create-synchronizationtemplate"></a>Criar synchronizationtemplate
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um novo modelo de sincronização para um determinado aplicativo.
+Criar um novo modelo de sincronização para um determinado aplicativo.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -38,16 +38,16 @@ POST /applications/{id}/synchronization/templates/
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece o objeto [synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) a ser criado. O `id`, `applicationId` e `factoryTag` propriedades são necessárias. Quando não `schema` é fornecida com o modelo, o esquema padrão associado a `factoryTag` propriedade será usada.
+No corpo da solicitação, forneça o [](../resources/synchronization-synchronizationtemplate.md) objeto synchronizationtemplate a ser criado. As `id`propriedades `applicationId` , `factoryTag` e são obrigatórias. Quando o `schema` não é fornecido com o modelo, o esquema padrão associado à `factoryTag` propriedade será usado.
 
 ### <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [synchronizationtemplate](../resources/synchronization-synchronizationtemplate.md) no corpo da resposta.
 
 ### <a name="example"></a>Exemplo
 
 ##### <a name="request"></a>Solicitação
-O exemplo a seguir é um exemplo de uma solicitação.
+Veja a seguir um exemplo de uma solicitação.
 <!-- {
   "blockType": "request",
   "name": "create_synchronizationtemplate_from_synchronization"
@@ -64,8 +64,8 @@ Content-type: application/json
 ```
 
 ##### <a name="response"></a>Resposta
-O exemplo a seguir é um exemplo de uma resposta.
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. Serão retornadas todas as propriedades em uma chamada real.
+Veja a seguir um exemplo de uma resposta.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas em uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

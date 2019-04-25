@@ -1,25 +1,25 @@
 ---
 title: Atualizar outlooktask
-description: Alterar propriedades graváveis de uma tarefa do Outlook.
+description: Alterar as propriedades graváveis de uma tarefa do Outlook.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 1908d9b918b13f87b1d5ab61dab912577f06da64
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526883"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539786"
 ---
 # <a name="update-outlooktask"></a>Atualizar outlooktask
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Alterar propriedades graváveis de uma tarefa do Outlook.
+Alterar as propriedades graváveis de uma tarefa do Outlook.
 
-A propriedade **CompletedDateTime** pode ser definida pela ação **Concluir**, ou explicitamente por uma operação PATCH. Se você usar PATCH para definir **CompletedDateTime**, certifique-se de definir o **Status** para `completed` também.
+A propriedade **completedDateTime** pode ser definida pela ação **Complete** ou explicitamente por uma operação patch. Se você usar PATCH para definir **completedDateTime**, certifique-se de **** `completed` definir o status também.
 
-Por padrão, esta operação (e as operações de tarefa POST, GET e [Concluir](../api/outlooktask-complete.md) ) retorna propriedades relacionadas a data em UTC. Você pode usar o cabeçalho `Prefer: outlook.timezone` para que todas as propriedades relacionadas à data na resposta sejam representadas em um fuso horário diferente de UTC.
+Por padrão, essa operação (e as operações de tarefa POST, GET e [Complete](../api/outlooktask-complete.md) ) retorna as propriedades relacionadas à data em UTC. Você pode usar o cabeçalho `Prefer: outlook.timezone` para que todas as propriedades relacionadas à data na resposta sejam representadas em um fuso horário diferente de UTC.
 
 ## <a name="permissions"></a>Permissões
 
@@ -45,7 +45,7 @@ PATCH /users/{id|userPrincipalName}/outlook/tasks/{id}
 | Nome       | Descrição|
 |:-----------|:-----------|
 | Autorização  | {token} de portador. Obrigatório. |
-| Prefira: outlook.timezone | Especifica o fuso horário para as propriedades de tempo na resposta, qual seria em UTC se este cabeçalho não for especificado. Opcional.|
+| Prefira: outlook.timezone | Especifica o fuso horário para as propriedades de hora na resposta, que seria no UTC se esse cabeçalho não for especificado. Opcional.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -53,35 +53,35 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|assignedTo|String|O nome da pessoa que tenha sido atribuído a tarefa.|
-|body|[itemBody](../resources/itembody.md)|O corpo da tarefa que normalmente contém informações sobre a tarefa. Observe que apenas o tipo de HTML é suportado.|
-|categories|String collection|As categorias associadas à tarefa.|
+|assignedTo|Cadeia de caracteres|O nome da pessoa a qual a tarefa foi atribuída.|
+|corpo|[itemBody](../resources/itembody.md)|Corpo da tarefa que normalmente contém informações sobre a tarefa. Observe para qual tipo de HTML há suporte.|
+|categories|Coleção de cadeias de caracteres|As categorias associadas à postagem.|
 |changeKey|String|A versão da tarefa.|
 |completedDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data no fuso horário especificado que a tarefa foi concluída.|
-|createdDateTime|DateTimeOffset|A data e hora em que a tarefa foi criada. Por padrão, ela é em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação. O valor da propriedade usa o formato ISO 8601. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
-|dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data em que o fuso horário especificado que a tarefa deve ser concluído.|
-|hasAttachments|Booliano|Defina como true se a tarefa tiver anexos.|
+|createdDateTime|DateTimeOffset|A data e a hora da criação da tarefa. Por padrão, está definida em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação. O valor da propriedade usa o formato ISO 8601. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
+|dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data no fuso horário especificado que a tarefa será concluída.|
+|hasAttachments|Booliano|Defina como verdadeiro se a tarefa tiver anexos.|
 |importance|string|A importância do evento. Os valores possíveis são: `low`, `normal`, `high`.|
-|isReminderOn|Boolean|Defina como true se um alerta for definido como lembrar o usuário da tarefa.|
-|lastModifiedDateTime|DateTimeOffset|A data e a hora da última modificação a tarefa. Por padrão, ela é em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação. O valor da propriedade usa o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
-|owner|String|O nome da pessoa que criou a tarefa.|
-|parentFolderId|String|O identificador exclusivo para a pasta do pai da tarefa.|
-|recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|O padrão de recorrência da tarefa.|
-|ReminderDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data e hora para um alerta de lembrete da tarefa ocorra.|
-|sensitivity|string|Indica o nível de privacidade para a tarefa. Os valores possíveis são: `normal`, `personal`, `private`, `confidential`.|
-|startDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data no fuso horário especificado quando a tarefa for começar.|
-|status|string|Indica o estado ou o progresso da tarefa. Os valores possíveis são: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
-|subject|Cadeia de caracteres|Uma breve descrição ou o título da tarefa.|
+|isReminderOn|Booliano|Definido como verdadeiro se um alerta é definido para lembrar o usuário da tarefa.|
+|lastModifiedDateTime|DateTimeOffset|A data e hora da última modificação da tarefa. Por padrão, está definida em UTC. Você pode fornecer um fuso horário personalizado no cabeçalho da solicitação. O valor da propriedade usa o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
+|proprietário|String|O nome da pessoa que criou a tarefa.|
+|parentFolderId|String|O identificador exclusivo para a pasta pai da tarefa.|
+|recorrência|[patternedRecurrence](../resources/patternedrecurrence.md)|O padrão de recorrência da tarefa.|
+|reminderDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data e hora do alerta de lembrete da tarefa.|
+|sensibilidade|cadeia de caracteres|Indica o nível de privacidade da tarefa. Os valores possíveis são: `normal`, `personal`, `private`, `confidential`.|
+|startDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|A data no fuso horário especificado que a tarefa será iniciada.|
+|status|cadeia de caracteres|Indica o estado ou o andamento da tarefa. Os valores possíveis são: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
+|subject|String|Uma breve descrição ou o título da tarefa.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto atualizado [outlookTask](../resources/outlooktask.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [outlookTask](../resources/outlooktask.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ### <a name="request"></a>Solicitação
 
-O exemplo a seguir modifica a propriedade **dueDateTime** e usa o `Prefer: outlook.timezone` cabeçalho para especificar expressar as propriedades relacionadas a data em que a resposta na hora padrão do Leste (EST).
+O exemplo a seguir modifica a propriedade **dueDateTime** e usa o `Prefer: outlook.timezone` cabeçalho para especificar a expressar as propriedades relacionadas à data na resposta na hora padrão do leste (EST).
 <!-- {
   "blockType": "request",
   "name": "update_outlooktask"

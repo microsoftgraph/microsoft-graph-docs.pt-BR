@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: Identidade
 localization_priority: Normal
 ms.openlocfilehash: 103657764b2f7073d553a01cd3794c0abecdf4f4
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481178"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32567813"
 ---
 # <a name="identity-resource-type"></a>Tipo de recurso Identity
 

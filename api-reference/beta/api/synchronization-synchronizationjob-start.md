@@ -1,19 +1,19 @@
 ---
 title: Iniciar synchronizationJob
-description: Inicie um trabalho de sincronização existente. Se o trabalho estiver em um estado pausado, ele continuará o processamento de alterações do ponto onde foi pausado. Se o trabalho estiver em quarentena, o status de quarentena vai ser limpa.
+description: Inicie um trabalho de sincronização existente. Se o trabalho estiver em um estado pausado, ele continuará processando as alterações do ponto em que foi pausado. Se o trabalho estiver em quarentena, o status da quarentena será limpo.
 localization_priority: Normal
 ms.openlocfilehash: 4648d9d3d889adf2cd7ec06e4fcf79b761c77132
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515367"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545261"
 ---
 # <a name="start-synchronizationjob"></a>Iniciar synchronizationJob
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Inicie um trabalho de sincronização existente. Se o trabalho estiver em um estado pausado, ele continuará o processamento de alterações do ponto onde foi pausado. Se o trabalho estiver em quarentena, o status de quarentena vai ser limpa.
+Inicie um trabalho de sincronização existente. Se o trabalho estiver em um estado pausado, ele continuará processando as alterações do ponto em que foi pausado. Se o trabalho estiver em quarentena, o status da quarentena será limpo.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -42,12 +42,12 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, retorna um `204 No Content` resposta. Ele não retornará nada no corpo da resposta.
+Se tiver êxito, retornará `204 No Content` uma resposta. Não retorna nada no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ##### <a name="request"></a>Solicitação
-O exemplo a seguir é um exemplo de uma solicitação.
+Veja a seguir um exemplo de uma solicitação.
 <!-- {
   "blockType": "request",
   "name": "synchronizationjob_start"
@@ -57,7 +57,7 @@ POST https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/job
 ```
 
 ##### <a name="response"></a>Resposta
-O exemplo a seguir é um exemplo de uma resposta.
+Veja a seguir um exemplo de uma resposta.
 <!-- {
   "blockType": "response",
   "truncated": true,

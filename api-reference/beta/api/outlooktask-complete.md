@@ -1,27 +1,27 @@
 ---
-title: 'outlookTask: completa'
-description: 'Concluir uma tarefa do Outlook que define a propriedade **completedDateTime** como a data atual, '
+title: 'outlookTask: concluir'
+description: 'Concluir uma tarefa do Outlook que define a propriedade **completedDateTime** para a data atual, '
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: de3d47d59b89f8bbef42b8b17a9099ecf9e80c98
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513554"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539895"
 ---
-# <a name="outlooktask-complete"></a>outlookTask: completa
+# <a name="outlooktask-complete"></a>outlookTask: concluir
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Concluir uma tarefa do Outlook que define a propriedade **completedDateTime** como a data atual e a propriedade **status** para `completed`.
+Concluir uma tarefa do Outlook que define a propriedade **completedDateTime** como a data atual e a propriedade **status** como `completed`.
 
-Se estiver Concluindo uma tarefa em uma série recorrente, na resposta, a coleção de tarefa conterá tarefa concluída na série e a próxima tarefa na série.
+Se você estiver realizando uma tarefa em uma série recorrente, na resposta, a coleção de tarefas conterá a tarefa concluída na série e a próxima tarefa na série.
 
-A propriedade **completedDateTime** representa a data quando a tarefa é concluída. Por padrão, a parte do tempo de **completedDateTime** é definida como meia-noite UTC.
+A propriedade **completedDateTime** representa a data em que a tarefa foi concluída. A parte de hora de **completedDateTime** é definida como meia-noite UTC por padrão.
 
-Por padrão, esta operação (e as operações de tarefa POST, GET e PATCH) retorna propriedades relacionadas a data em UTC. Você pode usar o cabeçalho `Prefer: outlook.timezone` para que todas as propriedades relacionadas à data na resposta sejam representadas em um fuso horário diferente de UTC.
+Por padrão, essa operação (e as operações de tarefa POST, GET e PATCH) retorna as propriedades relacionadas à data no UTC. Você pode usar o cabeçalho `Prefer: outlook.timezone` para que todas as propriedades relacionadas à data na resposta sejam representadas em um fuso horário diferente de UTC.
 
 ## <a name="permissions"></a>Permissões
 
@@ -47,7 +47,7 @@ POST /users/{id|userPrincipalName}/outlook/tasks/{id}/complete
 | Nome       | Descrição|
 |:---------------|:----------|
 | Autorização  | {token} de portador. Obrigatório. |
-| Prefira: outlook.timezone | Especifica o fuso horário para as propriedades de tempo na resposta, qual seria em UTC se este cabeçalho não for especificado. Opcional.|
+| Prefira: outlook.timezone | Especifica o fuso horário para as propriedades de hora na resposta, que seria no UTC se esse cabeçalho não for especificado. Opcional.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -55,11 +55,11 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` código de resposta e o objeto [outlookTask](../resources/outlooktask.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `200 OK` o código de resposta e o objeto [outlookTask](../resources/outlooktask.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
-O exemplo a seguir marca a tarefa especificada como concluída. Hora oficial do Pacífico (PST) em Especifica o `Prefer: outlook.timezone` cabeçalho.
+O exemplo a seguir marca a tarefa especificada como concluída. Ele especifica o `Prefer: outlook.timezone` horário padrão do Pacífico (PST) no cabeçalho.
 
 ### <a name="request"></a>Solicitação
 
@@ -76,9 +76,9 @@ Prefer: outlook.timezone="Pacific Standard Time"
 
 ### <a name="response"></a>Resposta
 
-Veja a seguir um exemplo da resposta. O **completedDateTime** e outras propriedades relacionadas a data na resposta são expressos em PST.
+Veja a seguir um exemplo da resposta. A **completedDateTime** e outras propriedades relacionadas à data na resposta são expressas em PST.
 
-> Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:** O objeto da resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

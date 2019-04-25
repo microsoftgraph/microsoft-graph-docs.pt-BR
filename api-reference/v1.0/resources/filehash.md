@@ -1,24 +1,24 @@
 ---
-title: tipo de recurso de fileHash
-description: Contém informações com informações de estado sobre hashes de arquivo (criptográficos e confidenciais local).
+title: tipo de recurso fileHash
+description: Contém informações com monitoração de hash de arquivo (criptografia e confidencialidade de local).
 localization_priority: Normal
 ms.openlocfilehash: 9d72812d1ad43999ea3ed5b28251d629b9380d47
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876766"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32564768"
 ---
-# <a name="filehash-resource-type"></a>tipo de recurso de fileHash
+# <a name="filehash-resource-type"></a>tipo de recurso fileHash
 
-Contém informações com informações de estado sobre hashes de arquivo (criptográficos e confidenciais local).
+Contém informações com monitoração de hash de arquivo (criptografia e confidencialidade de local).
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|hashType|fileHashType|Tipo de hash do arquivo. Os valores possíveis são: `unknown`, `sha1`, `sha256`, `md5`, `authenticodeHash256`, `lsHash`, `ctph`, `peSha1`, `peSha256`.|
-|hashValue|Cadeia de caracteres|Valor de hash do arquivo.|
+|hashtype|fileHashType|Tipo de hash de arquivo. Os valores possíveis são: `unknown`, `sha1`, `sha256`, `md5`, `authenticodeHash256`, `lsHash`, `ctph`, `peSha1`, `peSha256`.|
+|hashValue|String|Valor do hash do arquivo.|
 
 ## <a name="json-representation"></a>Representação JSON
 

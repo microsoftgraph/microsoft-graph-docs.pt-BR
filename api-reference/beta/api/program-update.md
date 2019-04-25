@@ -1,25 +1,25 @@
 ---
 title: Programa de atualização
-description: No Windows Azure AD para acessar o recurso de revisões, atualização de um objeto existente do programa.
+description: No recurso de revisões do Azure AD Access, atualize um objeto Program existente.
 localization_priority: Normal
 ms.openlocfilehash: 75562aac5a7b3f3aaef0c8a1251d32a7728813aa
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529919"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538543"
 ---
 # <a name="update-program"></a>Programa de atualização
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O recurso [acesso analisa](../resources/accessreviews-root.md) Azure AD, atualize um objeto existente do [programa](../resources/program.md) .
+No recurso de revisões do Azure AD [Access](../resources/accessreviews-root.md) , atualize um objeto [Program](../resources/program.md) existente.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | `ProgramControl.ReadWrite.All`.  O usuário conectado também deve ser em uma função de diretório que permite que eles atualizem o programa. |
+|Delegado (conta corporativa ou de estudante)     | `ProgramControl.ReadWrite.All`.  O usuário conectado também deve estar em uma função de diretório que permite a atualização de um programa. |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | Sem suporte. |
 
@@ -31,10 +31,10 @@ PATCH /programs('{programId}')
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome         | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| Autorização | string | Token de portador Obrigatório. |
+| Autorização | string | \{token\} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON de um objeto de [programa](../resources/program.md) .
+No corpo da solicitação, forneça uma representação JSON de um objeto [Program](../resources/program.md) .
 
 A tabela a seguir mostra as propriedades que podem ser fornecidas quando você atualiza um programa.
 
@@ -45,11 +45,11 @@ A tabela a seguir mostra as propriedades que podem ser fornecidas quando você a
 
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `204, Accepted` objeto de [programa](../resources/program.md) e código de resposta no corpo da resposta.
+Se bem-sucedido, este método retorna um `204, Accepted` código de resposta e um objeto [Program](../resources/program.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-No corpo da solicitação, fornece uma representação JSON dos parâmetros de objeto do [programa](../resources/program.md) para alterar.
+No corpo da solicitação, forneça uma representação JSON dos parâmetros do objeto [Program](../resources/program.md) a ser alterado.
 
 <!-- {
   "blockType": "request",
@@ -65,7 +65,7 @@ Content-type: application/json
 ```
 
 ##### <a name="response"></a>Resposta
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação: **o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -86,8 +86,8 @@ Content-type: application/json
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Lista programControls de um programa](program-listcontrols.md) |     coleção [programControl](../resources/programcontrol.md)|    Obter uma coleção dos controles de um programa.|
-|[Criar programControl](programcontrol-create.md) |        [programControl](../resources/programcontrol.md)    |   Adicione um programControl a um programa.|
+|[Listar programControls de um programa](program-listcontrols.md) |     coleção [programControl](../resources/programcontrol.md)|    Obter uma coleção de controles de um programa.|
+|[Criar programControl](programcontrol-create.md) |        [programControl](../resources/programcontrol.md)    |   Adicionar um programControl a um programa.|
 
 <!--
 {

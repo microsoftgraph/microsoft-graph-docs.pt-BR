@@ -3,11 +3,11 @@ title: Obter foto
 description: Recupere as propriedades e os relacionamentos do objeto de foto.
 localization_priority: Normal
 ms.openlocfilehash: ffe127cf7e59a4cf29275a7673cb95e1ce7e4581
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510348"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538949"
 ---
 # <a name="get-photo"></a>Obter foto
 
@@ -82,7 +82,7 @@ Veja a seguir um exemplo de solicitação de bytes de fotos.
 GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/photo/$value
 ```
 ##### <a name="response"></a>Resposta
-Este é um exemplo da resposta.
+Veja a seguir um exemplo da resposta.
 
 <!-- { "blockType": "ignored","@odata.type": "stream" } -->
 

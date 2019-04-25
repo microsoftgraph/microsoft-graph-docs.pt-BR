@@ -1,19 +1,19 @@
 ---
-title: Atualizar serviceprincipal
-description: Atualize as propriedades do objeto serviceprincipal.
+title: Atualizar o servicePrincipalName
+description: Atualiza as propriedades do objeto servicePrincipalName.
 localization_priority: Normal
 ms.openlocfilehash: a562bca03881923cfc21d32eadee2a7f7053fa9b
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641173"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537521"
 ---
-# <a name="update-serviceprincipal"></a>Atualizar serviceprincipal
+# <a name="update-serviceprincipal"></a>Atualizar o servicePrincipalName
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades do objeto serviceprincipal.
+Atualiza as propriedades do objeto servicePrincipalName.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -38,28 +38,28 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|accountEnabled|Boolean|                **True** se a entidade de serviço estiver habilitada; caso contrário, **false**.            |
-|appDisplayName|String|O nome de exibição exposto pelo aplicativo associado.|
+|accountEnabled|Booliano|                **True** se a entidade de serviço estiver habilitada; caso contrário, **false**.            |
+|appDisplayName|Cadeia de caracteres|O nome de exibição exposto pelo aplicativo associado.|
 |appId|String|O identificador exclusivo do aplicativo associado (sua propriedade **appId**).|
-|appRoleAssignmentRequired|Boolean|Especifica se um **appRoleAssignment** de um usuário ou grupo é necessário antes que o Azure AD emita um token de usuário ou de acesso ao aplicativo.                            **Observações**: requer a versão 1.5 ou mais recente, não são nulas.            |
-|appRoles|appRole|As funções do aplicativo expostas pelo aplicativo associado. Para obter mais informações, consulte a definição da propriedade **appRoles** sobre a entidade de aplicativo **Notes**: requer a versão 1.5 ou mais recente, não são nulas.            |
+|appRoleAssignmentRequired|Boolean|Especifica se um **appRoleAssignment** de um usuário ou grupo é necessário antes que o Azure AD emita um token de usuário ou de acesso ao aplicativo.                            **Observações**: requer a versão 1,5 ou posterior, não anulável.            |
+|appRoles|appRole|As funções do aplicativo expostas pelo aplicativo associado. Para obter mais informações, consulte a definição da propriedade **appRoles** na entidade de aplicativo **observações**: requer a versão 1,5 ou posterior, não anulável.            |
 |displayName|String|O nome de exibição da entidade de serviço.|
 |errorUrl|String|            |
-|homepage|String|A URL para a home page do aplicativo associado.|
+|homepage|String|A URL da home page do aplicativo associado.|
 |keyCredentials|keyCredential|A coleção de credenciais principais associada à entidade de serviço.                            **Anotações**: não anulável.            |
 |logoutUrl|String| Especifica a URL que será usada pela autorização do serviço da Microsoft para fazer logoff de um usuário usando protocolos de logoff [front-channel](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [back-channel](https://openid.net/specs/openid-connect-backchannel-1_0.html) ou SAML. |
-|oauth2Permissions|oAuth2Permission|As permissões OAuth 2.0 expostas pelo aplicativo associado. Para obter mais informações, confira a definição da propriedade **oauth2Permissions** na entidade aplicativo.                            **Observações**: requer a versão 1.5 ou mais recente, não são nulas.            |
+|oauth2Permissions|oAuth2Permission|As permissões OAuth 2.0 expostas pelo aplicativo associado. Para obter mais informações, confira a definição da propriedade **oauth2Permissions** na entidade aplicativo.                            **Observações**: requer a versão 1,5 ou posterior, não anulável.            |
 |passwordCredentials|passwordCredential|A coleção de credenciais de senha associada à entidade de serviço.                            **Anotações**: não anulável.            |
-|preferredTokenSigningKeyThumbprint|String|Reservado apenas para uso interno. Não escreva ou dependa de alguma forma dessa propriedade. Pode ser removida em versões futuras.                            **Observações**: requer a versão 1.5 ou mais recente.            |
+|preferredTokenSigningKeyThumbprint|String|Reservado apenas para uso interno. Não escreva ou dependa de alguma forma dessa propriedade. Pode ser removida em versões futuras.                            **Observações**: requer a versão 1,5 ou mais recente.            |
 |publisherName|String|O nome de exibição do locatário no qual o aplicativo associado está especificado.|
 |replyUrls|String|As URLs às quais os tokens de usuário são enviados para entrar com aplicativo associado ou os URIs de redirecionamento aos quais os códigos de autorização do OAuth 2.0 e tokens de acesso são enviados para o aplicativo associado.                            **Anotações**: não anulável.            |
 |samlMetadataUrl|String|            |
-|servicePrincipalNames|String|Os URIs que identificam o aplicativo associado. Para saber mais, confira [Objetos do aplicativo e objetos da entidade de serviço](https://msdn.microsoft.com/library/azure/dn132633.aspx).                            **Observações**: não são nulas, o operador **any** é necessário para expressões de filtro propriedades de valores múltiplos; Para obter mais informações, consulte [suporte para consultas, filtros e opções de paginação](https://msdn.microsoft.com/library/azure/dn727074.aspx).            |
-|tags|String|                                        **Anotações**: não anulável.            |
+|servicePrincipalNames|String|Os URIs que identificam o aplicativo associado. Para saber mais, confira [Objetos do aplicativo e objetos da entidade de serviço](https://msdn.microsoft.com/library/azure/dn132633.aspx).                            **Observações**: não nulos, o operador **any** é obrigatório para expressões de filtro em Propriedades de vários valores; para obter mais informações, consulte [supported queries, Filters, and paging Options](https://msdn.microsoft.com/library/azure/dn727074.aspx).            |
+|marcações|String|                                        **Anotações**: não anulável.            |
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto atualizado [servicePrincipal](../resources/serviceprincipal.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [servicePrincipalName](../resources/serviceprincipal.md) atualizado no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

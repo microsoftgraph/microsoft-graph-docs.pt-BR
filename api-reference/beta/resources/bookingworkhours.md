@@ -1,27 +1,27 @@
 ---
-title: tipo de recurso de bookingWorkHours
+title: tipo de recurso bookingWorkHours
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: 9a51fb9d4f97dde2e3b50d9a19481eeab31483d1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527532"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535477"
 ---
-# <a name="bookingworkhours-resource-type"></a>tipo de recurso de bookingWorkHours
+# <a name="bookingworkhours-resource-type"></a>tipo de recurso bookingWorkHours
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-Representa o conjunto de horário de trabalho em um único dia da semana, para um [bookingBusiness](bookingbusiness.md) ou [bookingStaffMember](bookingstaffmember.md).
+Representa o conjunto de horas de trabalho em um único dia da semana, para um [bookingBusiness](bookingbusiness.md) ou [bookingStaffMember](bookingstaffmember.md).
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |dia|String| O dia da semana representado por esta instância. Os valores possíveis são: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
-|intervalos de tempo|coleção [bookingWorkTimeSlot](bookingworktimeslot.md)|Uma lista de horas de início/término durante um dia.|
+|Intervalos|coleção [bookingWorkTimeSlot](bookingworktimeslot.md)|Uma lista de horários de início/término durante um dia.|
 
 ## <a name="json-representation"></a>Representação JSON
 

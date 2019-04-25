@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 47cdb200f7de493c6fcc83b3d77be2af1824ef65
-ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30869425"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536464"
 ---
 # <a name="send-mail"></a>Enviar email
 
@@ -156,7 +156,7 @@ HTTP/1.1 202 Accepted
 ```
 
 ##### <a name="request-3"></a>Solicitação 3
-O próximo exemplo cria uma mensagem com cabeçalhos de mensagem da Internet personalizada e envia a mensagem.
+O exemplo a seguir cria uma mensagem com cabeçalhos personalizados de mensagem da Internet e envia a mensagem.
 <!-- {
   "blockType": "request",
   "name": "user_sendmail_with_headers"
@@ -194,7 +194,7 @@ Content-type: application/json
 ```
 
 ##### <a name="response-3"></a>Resposta 3
-Veja a seguir um exemplo da resposta.
+Este é um exemplo da resposta.
 <!-- {
   "blockType": "response",
   "truncated": true

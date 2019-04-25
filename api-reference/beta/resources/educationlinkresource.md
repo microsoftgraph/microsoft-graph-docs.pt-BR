@@ -1,21 +1,21 @@
 ---
-title: tipo de recurso de educationLinkResource
-description: Uma subclasse de educationResource. Este recurso é um vínculo e não tem quaisquer dados adicionais associado a ela.
+title: tipo de recurso educationLinkResource
+description: Uma subclasse de educationResource. Este recurso é um link e não tem dados adicionais associados a ele.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 09e7c7c5070d6f8f288dbf18d6fb9ce81b456092
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516956"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542862"
 ---
-# <a name="educationlinkresource-resource-type"></a>tipo de recurso de educationLinkResource
+# <a name="educationlinkresource-resource-type"></a>tipo de recurso educationLinkResource
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Uma subclasse de [educationResource](educationresource.md). Este recurso é um vínculo e não tem quaisquer dados adicionais associado a ela.
+Uma subclasse de [educationResource](educationresource.md). Este recurso é um link e não tem dados adicionais associados a ele.
 
 
 ## <a name="properties"></a>Propriedades

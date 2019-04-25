@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 381aa191639e32677d4fccbf9e9f48c99f3d988f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27927902"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566147"
 ---
 # <a name="update-contact"></a>Atualizar contato
 
@@ -24,7 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Aplicativo | Contacts.ReadWrite |
 
 ## <a name="http-request"></a>Solicitação HTTP
-<!-- { "blockType": "ignored" } -->Um [contato](../resources/contact.md) do padrão de um usuário [contactFolder](../resources/contactfolder.md).
+<!-- { "blockType": "ignored" } -->
+Um [contact](../resources/contact.md) da [contactFolder](../resources/contactfolder.md) padrão do usuário.
 ```http
 PATCH /me/contacts/{id}
 PATCH /users/{id | userPrincipalName}/contacts/{id}
@@ -57,9 +58,9 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |businessPhones|String|Os números de telefone comerciais do contato.|
 |categories|String|As categorias associadas ao contato.|
 |children|String|Os nomes dos filhos do contato.|
-|nomeDaEmpresa|String|O nome da empresa do contato.|
-|departamento|String|O departamento do contato.|
-|displayName|String|O nome para exibição do contato. Observe que as atualizações posteriores a outras propriedades podem causar um valor gerado automaticamente substituir o valor displayName que você especificou. Para preservar a um valor pré-existente, sempre incluí-lo como displayName em uma operação de atualização.|
+|companyName|String|O nome da empresa do contato.|
+|department|String|O departamento do contato.|
+|displayName|String|O nome para exibição do contato. Observe que atualizações posteriores a outras propriedades podem fazer com que um valor gerado automaticamente substitua o valor displayName que você especificou. Para preservar um valor preexistente, sempre inclua-o como displayName em uma operação Update.|
 |emailAddresses|Coleção [EmailAddress](../resources/emailaddress.md)|Os endereços de email do contato.|
 |fileAs|String|O nome com o qual o contato está arquivado.|
 |generation|String|A geração do contato.|
@@ -80,7 +81,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |profession|String|A profissão do contato.|
 |spouseName|String|O nome do cônjuge/parceiro do contato.|
 |surname|String|O sobrenome do contato.|
-|title|String|O título do contato.|
+|title|Cadeia de caracteres|O título do contato.|
 |yomiCompanyName|String|O nome de empresa japonês fonético do contato. Essa propriedade é opcional.|
 |yomiGivenName|String|O nome japonês fonético do contato. Essa propriedade é opcional.|
 |yomiSurname|String|O sobrenome japonês fonético do contato. Essa propriedade é opcional.|

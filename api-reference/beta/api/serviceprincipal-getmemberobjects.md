@@ -1,19 +1,19 @@
 ---
-title: 'servicePrincipal: getMemberObjects'
-description: Obter a lista de grupos e funções de diretório que esse serviço principal é um membro de.  Essa verificação é transitiva.
+title: 'servicePrincipalName: getMemberObjects'
+description: Obtenha a lista de grupos e funções de diretório dos quais essa entidade de serviço é membro.  Essa verificação é transitiva.
 localization_priority: Normal
 ms.openlocfilehash: a1856e0c359e464078f7689043d1bea493c2bb13
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520757"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537473"
 ---
-# <a name="serviceprincipal-getmemberobjects"></a>servicePrincipal: getMemberObjects
+# <a name="serviceprincipal-getmemberobjects"></a>servicePrincipalName: getMemberObjects
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter a lista de grupos e funções de diretório que esse serviço principal é um membro de.  Essa verificação é transitiva.
+Obtenha a lista de grupos e funções de diretório dos quais essa entidade de serviço é membro.  Essa verificação é transitiva.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -40,7 +40,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|securityEnabledOnly|Booliano||
+|securityEnabledOnly|Boolean||
 
 ## <a name="response"></a>Resposta
 

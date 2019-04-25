@@ -1,25 +1,25 @@
 ---
-title: Lista privilegedRoles
+title: Listar privilegedRoles
 description: Recupere uma lista de objetos privilegedRole.
 localization_priority: Normal
 ms.openlocfilehash: d954cedbaf4b164fe0649a3565ea0212d148c322
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518076"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538581"
 ---
-# <a name="list-privilegedroles"></a>Lista privilegedRoles
+# <a name="list-privilegedroles"></a>Listar privilegedRoles
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Recupere uma lista de objetos [privilegedRole](../resources/privilegedrole.md) .
 
-Para filtrar os resultados da consulta, use o OData standard ``$filter`` expressões nos URIs.
+Para filtrar os resultados da consulta, use as expressões ``$filter`` padrão do OData nos URIs.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-O solicitante precisa ter uma das seguintes funções: _Leitor de segurança_, _Administrador Global_, _Administrador de segurança_ou _Administrador com privilégios de função_.
+O solicitante precisa ter uma das seguintes funções: administrador de _função privilegiada_, _administrador global_, _administrador de segurança_ou _leitor de segurança_.
  
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -46,9 +46,9 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e a coleção de objetos [privilegedRole](../resources/privilegedrole.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [privilegedRole](../resources/privilegedrole.md) no corpo da resposta.
 
-Observe que o inquilino deve ser registrado no PIM. Caso contrário, será retornado o código de status HTTP 403-Proibido.
+Observe que o locatário precisa ser registrado no PIM. Caso contrário, o código de status HTTP 403 proibido será retornado.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

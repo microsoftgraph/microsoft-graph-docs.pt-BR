@@ -1,38 +1,38 @@
 ---
-title: tipo de recurso de bookingCurrency
+title: tipo de recurso bookingCurrency
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: 9d4feac66e72c756173113101a88bf8bbe35563a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518195"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535452"
 ---
-# <a name="bookingcurrency-resource-type"></a>tipo de recurso de bookingCurrency
+# <a name="bookingcurrency-resource-type"></a>tipo de recurso bookingCurrency
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-Representa uma moeda monetária compatíveis com uma [bookingBusiness](bookingbusiness.md).
+Representa uma moeda monetária suportada por um [bookingBusiness](bookingbusiness.md).
 
 
 ## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Lista bookingCurrencies](../api/bookingcurrency-list.md) | coleção [bookingCurrency](bookingcurrency.md) |Obtenha uma lista de objetos de **bookingCurrency** disponíveis para uma empresa Microsoft Bookings.|
-|[Obter bookingCurrency](../api/bookingcurrency-get.md) | [bookingCurrency](bookingcurrency.md) |Obtenha as propriedades de um objeto **bookingCurrency** .|
+|[Listar bookingCurrencies](../api/bookingcurrency-list.md) | coleção [bookingCurrency](bookingcurrency.md) |Obtenha uma lista de objetos **bookingCurrency** disponíveis para uma empresa de livros da Microsoft.|
+|[Obter bookingCurrency](../api/bookingcurrency-get.md) | [bookingCurrency](bookingcurrency.md) |Obter as propriedades de um objeto **bookingCurrency** .|
 
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|String| Um código de moeda de 3 caracteres, com base em [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html). Por exemplo, o código de moeda para o dólar americano é USD e para o Dólar australiano é AUD. Somente leitura.|
-|Symbol|String| O símbolo da moeda. Por exemplo, o símbolo de moeda para o dólar americano e para o Dólar australiano é $.  |
+|id|String| Um código de moeda de 3 caracteres, com base na [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html). Por exemplo, o código de moeda dos Dólar dos EUA é USD, e para o dólar australiano é AUD. Somente leitura.|
+|formato|String| O símbolo da moeda. Por exemplo, o símbolo de moeda dos dólar americano e para o dólar australiano é $.  |
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 Nenhum
 
 

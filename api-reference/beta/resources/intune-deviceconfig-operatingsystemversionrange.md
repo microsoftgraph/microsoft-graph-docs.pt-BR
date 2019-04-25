@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 80b0afb706a71ef8e0e3d4877fa7d0df822fe1d6
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31788118"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566749"
 ---
 # <a name="operatingsystemversionrange-resource-type"></a>tipo de recurso operatingSystemVersionRange
 
@@ -23,11 +23,11 @@ Intervalo de versão do sistema operacional.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |description|String|A descrição desse intervalo (por exemplo, Builds 1702 válidos)|
-|lowestVersion|Cadeia de caracteres|A versão mais antiga inclusive que este intervalo contém.|
-|highestVersion|Cadeia de caracteres|A versão mais recente inclusive que este intervalo contém.|
+|lowestVersion|String|A versão mais antiga inclusive que este intervalo contém.|
+|highestVersion|String|A versão mais recente inclusive que este intervalo contém.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

@@ -1,21 +1,21 @@
 ---
-title: 'participante: Ativar Mudo'
-description: Ativar Mudo de um participante específico na chamada.
+title: 'participante: sem áudio'
+description: Ativar mudo de um participante específico na chamada.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 0fa4190ca6a3871c42af3c753cb3d9d48d320bd5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521737"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539396"
 ---
-# <a name="participant-mute"></a>participante: Ativar Mudo
+# <a name="participant-mute"></a>participante: sem áudio
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ativar Mudo de um participante específico na chamada.
+Ativar mudo de um participante específico na chamada.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -43,10 +43,10 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|ClientContext|String|O contexto de cliente.|
+|clientContext|String|O contexto do cliente.|
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará `200 OK` objeto response de código e [commsOperation](../resources/commsoperation.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `200 OK` o código de resposta e o objeto [commsOperation](../resources/commsoperation.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 O exemplo a seguir mostra como chamar essa API.
@@ -90,7 +90,7 @@ Content-Length: 259
 }
 ```
 
-## <a name="example---mute-specific-participant"></a>Exemplo - mudo participante específico
+## <a name="example---mute-specific-participant"></a>Exemplo-sem áudio o participante específico
 
 ##### <a name="request"></a>Solicitação
 
@@ -127,7 +127,7 @@ Content-Length: 259
 }
 ```
 
-##### <a name="notification---roster-updated-with-participant-muted"></a>Notificação - lista de participação atualizado com o mudo do participante
+##### <a name="notification---roster-updated-with-participant-muted"></a>Lista de notificação atualizada com o participante sem som
 
 ```http
 POST https://bot.contoso.com/api/calls

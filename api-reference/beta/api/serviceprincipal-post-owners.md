@@ -1,19 +1,19 @@
 ---
-title: 'servicePrincipal: Adicionar proprietário'
-description: Use essa API para adicionar um proprietário para a entidade de serviço.
+title: 'servicePrincipalName: Adicionar proprietário'
+description: Use esta API para adicionar um proprietário para a entidade de serviço.
 localization_priority: Normal
 ms.openlocfilehash: 67146ddf8fc4705b7c55487ec868a5bb090ecfa7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519091"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537486"
 ---
-# <a name="serviceprincipal-add-owner"></a>servicePrincipal: Adicionar proprietário
+# <a name="serviceprincipal-add-owner"></a>servicePrincipalName: Adicionar proprietário
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use essa API para adicionar um proprietário para a entidade de serviço.
+Use esta API para adicionar um proprietário para a entidade de serviço.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -22,7 +22,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Directory.AccessAsUser.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Application.ReadWrite.OwnedBy e Directory.Read.All, Application.ReadWrite.All e Directory.Read.All |
+|Aplicativo | Application. ReadWrite. OwnedBy e Directory. Read. All, Application. ReadWrite. All e Directory. Read. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

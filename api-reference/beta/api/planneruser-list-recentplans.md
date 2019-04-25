@@ -1,21 +1,21 @@
 ---
-title: Lista recentPlans
-description: Recupere uma lista de plannerPlans recentemente exibidos por um usuário. Você pode atualizar planos visualizados recentemente, atualizando o recurso plannerUser.
+title: Listar recentPlans
+description: Recupere uma lista de plannerPlans exibidos recentemente por um usuário. Você pode atualizar os planos exibidos recentemente atualizando o recurso plannerUser.
 author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 ms.openlocfilehash: b4a8e25a31ceb17f85aef139378fa3e3e9058ab4
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528736"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538697"
 ---
-# <a name="list-recentplans"></a>Lista recentPlans
+# <a name="list-recentplans"></a>Listar recentPlans
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de [plannerPlans](../resources/plannerplan.md) recentemente exibidos por um usuário. Você pode atualizar planos visualizados recentemente, [Atualizando o recurso plannerUser](planneruser-update.md).
+Recupere uma lista de [plannerPlans](../resources/plannerplan.md) exibidos recentemente por um usuário. Você pode atualizar os planos exibidos recentemente [atualizando o recurso plannerUser](planneruser-update.md).
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -40,7 +40,7 @@ GET /users/<id>/planner/recentPlans
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [plannerPlan](../resources/plannerplan.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [plannerPlan](../resources/plannerplan.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.

@@ -3,11 +3,11 @@ title: Tipo de recurso attendeeBase
 description: O tipo de participante.
 localization_priority: Normal
 ms.openlocfilehash: bce1550c107f2114d02744091b5863360ab0bcea
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643437"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535610"
 ---
 # <a name="attendeebase-resource-type"></a>Tipo de recurso attendeeBase
 

@@ -6,11 +6,11 @@ localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.date: 03/20/2019
 ms.openlocfilehash: beca64415a2d03898d57cd9cda2fb248121c424b
-ms.sourcegitcommit: 9fd437a77da99d8436d6c852edd99a9ba873f8cd
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31559972"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537731"
 ---
 # <a name="confirm-riskyusers-compromised"></a>Confirmar riskyUsers comprometido
 

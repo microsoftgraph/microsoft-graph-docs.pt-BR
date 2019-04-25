@@ -1,15 +1,15 @@
 ---
-title: Lista de políticas
+title: Listar políticas
 description: Recupere todos os objetos de política no diretório.
 localization_priority: Normal
 ms.openlocfilehash: 292eb457b87629d0034b97b3c781d75adc0da4e8
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510019"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538704"
 ---
-# <a name="list-policies"></a>Lista de políticas
+# <a name="list-policies"></a>Listar políticas
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -39,10 +39,10 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` objetos de código e a [diretiva](../resources/policy.md) de resposta no corpo da resposta. Se não houver êxito …
+Se bem-sucedido, este método retorna `200 OK` o código de resposta e os objetos [Policy](../resources/policy.md) no corpo da resposta. Se não tiver êxito...
 
 ## <a name="example"></a>Exemplo
-O exemplo a seguir recupera todas as diretivas.
+O exemplo a seguir recupera todas as políticas.
 
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

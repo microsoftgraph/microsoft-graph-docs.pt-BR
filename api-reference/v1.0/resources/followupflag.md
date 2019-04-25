@@ -1,18 +1,18 @@
 ---
 title: Tipo de recurso followupFlag
-description: 'Permite a definição de um sinalizador em um item para o usuário acompanhar posteriormente. '
+description: 'Permite definir um sinalizador em um item para que o usuário acompanhe mais tarde. '
 localization_priority: Normal
 ms.openlocfilehash: 60d2e40a10c3ba5b2af9aa798b84aadaebedd57a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885495"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32541994"
 ---
 # <a name="followupflag-resource-type"></a>Tipo de recurso followupFlag
 
 
-Permite a definição de um sinalizador em um item para o usuário acompanhar posteriormente. 
+Permite definir um sinalizador em um item para que o usuário acompanhe mais tarde. 
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|

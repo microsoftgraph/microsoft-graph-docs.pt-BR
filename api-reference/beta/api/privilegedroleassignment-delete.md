@@ -1,15 +1,15 @@
 ---
-title: Excluir privilegedRoleAssignment
+title: Delete privilegedRoleAssignment
 description: Exclua privilegedRoleAssignment.
 localization_priority: Normal
 ms.openlocfilehash: 2b98509457d7e26b4b65d42840f04550429bcc95
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526743"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546585"
 ---
-# <a name="delete-privilegedroleassignment"></a>Excluir privilegedRoleAssignment
+# <a name="delete-privilegedroleassignment"></a>Delete privilegedRoleAssignment
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -17,7 +17,7 @@ Exclua [privilegedRoleAssignment](../resources/privilegedroleassignment.md).
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-O solicitante precisa ter a função de _Administrador com privilégios de função_ .
+O solicitante precisa ter função de _administrador de função privilegiada_ .
  
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -32,7 +32,7 @@ O solicitante precisa ter a função de _Administrador com privilégios de funç
 DELETE /privilegedRoleAssignments/{id}
 ```
 
-Observe que ``<id>`` está no formato de 'userId_roleId', onde userId é a cadeia de caracteres do GUID para id de usuário do Windows Azure AD e roleId é a cadeia de caracteres do GUID para id de função de administrador do Azure.
+Observe que ``<id>`` está no formato de ' userId_roleId ', onde userid é a cadeia de caracteres GUID da ID de usuário do Azure AD e RoleID é a cadeia de caracteres GUID da ID da função de administrador do Azure.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
@@ -46,7 +46,7 @@ Não forneça um corpo de solicitação para esse método.
 
 Se bem-sucedido, este método retorna um código de resposta `204 No Content`. Não retorna nada no corpo da resposta.
 
-Observe que o inquilino deve ser registrado no PIM. Caso contrário, será retornado o código de status HTTP 403-Proibido.
+Observe que o locatário precisa ser registrado no PIM. Caso contrário, o código de status HTTP 403 proibido será retornado.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

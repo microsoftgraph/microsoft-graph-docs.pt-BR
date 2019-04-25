@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: bf078e34f216dde5a3daf3bcf0cecd27517e7da7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27941440"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32565412"
 ---
 # <a name="create-mailfolder"></a>Criar MailFolder
 
@@ -45,15 +45,15 @@ Especifique a pasta pai na URL de consulta como uma ID de pasta ou um nome de pa
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação. **displayName** é a propriedade gravável apenas para um objeto [mailFolder](../resources/mailfolder.md) .
+Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação. **DisplayName** é a única propriedade gravável para um objeto [mailFolder](../resources/mailfolder.md) .
 
 | Parâmetro | Tipo | Descrição |
 |:----------|:-----|:------------|
-|displayName|Cadeia de caracteres|O nome de exibição da nova pasta.|
+|displayName|String|O nome de exibição da nova pasta.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` código de resposta e um recurso [mailFolder](../resources/mailfolder.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `201 Created` um código de resposta e um recurso [mailFolder](../resources/mailfolder.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -78,7 +78,7 @@ Content-length: 159
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta.
 
-> **Observação:** no objeto response mostrado aqui pode ser reduzido para melhorar a legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

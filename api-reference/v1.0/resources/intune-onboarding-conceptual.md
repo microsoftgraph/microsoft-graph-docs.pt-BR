@@ -1,15 +1,15 @@
 ---
 title: Registrar dispositivos para o gerenciamento no Intune
-description: " Inscrição (BYOD) permite que os usuários registrar seus telefones pessoais, tablets ou PCs. O registro de dispositivo de propriedade corporativa (COD) permite cenários de gerenciamento como apagamento remoto, dispositivos compartilhados ou afinidade de usuários em um dispositivo."
+description: " O registro (BYOD) permite que os usuários registrem seus telefones, tablets ou computadores pessoais. O registro de dispositivo de propriedade corporativa (COD) permite cenários de gerenciamento como apagamento remoto, dispositivos compartilhados ou afinidade de usuários em um dispositivo."
 localization_priority: Normal
 author: tfitzmac
 ms.prod: intune
 ms.openlocfilehash: 2e7f6e85e32137804556c64a1995bd2e78b04068
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917437"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32564236"
 ---
 # <a name="enroll-devices-for-management-in-intune"></a>Registrar dispositivos para o gerenciamento no Intune
 
@@ -25,22 +25,22 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar registros no I
 - [Configuração das restrições da plataforma de registro do dispositivo](intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration.md)
 - [Configuração do Windows Hello para empresas do registro do dispositivo](intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration.md)
 - [Conector do Exchange de gerenciamento de dispositivo](intune-onboarding-devicemanagementexchangeconnector.md)
-- [Status de conector do exchange de gerenciamento de dispositivo](intune-onboarding-devicemanagementexchangeconnectorstatus.md)
-- [Tipo de sincronização de conector do exchange de gerenciamento de dispositivo](intune-onboarding-devicemanagementexchangeconnectorsynctype.md)
-- [Tipo de conector do exchange de gerenciamento de dispositivo](intune-onboarding-devicemanagementexchangeconnectortype.md)
+- [Status do conector do Exchange de gerenciamento de dispositivo](intune-onboarding-devicemanagementexchangeconnectorstatus.md)
+- [Tipo de sincronização do conector do Exchange de gerenciamento de dispositivo](intune-onboarding-devicemanagementexchangeconnectorsynctype.md)
+- [Tipo de conector do Exchange de gerenciamento de dispositivo](intune-onboarding-devicemanagementexchangeconnectortype.md)
 - [Parceiro de gerenciamento do dispositivo](intune-onboarding-devicemanagementpartner.md)
-- [Tipo de aplicativo de parceiro de gerenciamento de dispositivo](intune-onboarding-devicemanagementpartnerapptype.md)
-- [Estado de locatário de parceiro de gerenciamento de dispositivo](intune-onboarding-devicemanagementpartnertenantstate.md)
-- [Habilitação de](intune-onboarding-enablement.md)
+- [Tipo de aplicativo de parceiro de gerenciamento do dispositivo](intune-onboarding-devicemanagementpartnerapptype.md)
+- [Estado de locatário de parceiro de gerenciamento do dispositivo](intune-onboarding-devicemanagementpartnertenantstate.md)
+- [Habilitação](intune-onboarding-enablement.md)
 - [Atribuição de configuração do registro](intune-onboarding-enrollmentconfigurationassignment.md)
 - [Marca Intune](intune-onboarding-intunebrand.md)
 - [Autoridade MDM](intune-onboarding-mdmauthority.md)
 - [Conector de defesa contra ameaças móveis](intune-onboarding-mobilethreatdefenseconnector.md)
-- [Estado de locatário de parceiro ameaças móveis](intune-onboarding-mobilethreatpartnertenantstate.md)
+- [Estado de locatário do parceiro de ameaças móveis](intune-onboarding-mobilethreatpartnertenantstate.md)
 - [Configuração de acesso condicional local](intune-onboarding-onpremisesconditionalaccesssettings.md)
 - [Organização](intune-onboarding-organization.md)
 - [Cores RGB](intune-onboarding-rgbcolor.md)
 - [Token VPP](intune-onboarding-vpptoken.md)
-- [Estado de token VPP](intune-onboarding-vpptokenstate.md)
-- [Status da sincronização de token de VPP](intune-onboarding-vpptokensyncstatus.md)
-- [Windows Olá para uso PIN de negócios](intune-onboarding-windowshelloforbusinesspinusage.md)
+- [Estado do token VPP](intune-onboarding-vpptokenstate.md)
+- [Status de sincronização do token VPP](intune-onboarding-vpptokensyncstatus.md)
+- [Uso do PIN do Windows Hello para empresas](intune-onboarding-windowshelloforbusinesspinusage.md)

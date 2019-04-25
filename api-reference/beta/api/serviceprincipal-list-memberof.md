@@ -1,19 +1,19 @@
 ---
-title: Lista servicePrincipal membro
-description: Obtenha os grupos e funções de diretório que esse serviço principal é um membro direto. Esta operação não é transitiva.
+title: Listar o servicePrincipalName memberOf
+description: Obtenha os grupos e funções de diretório dos quais essa entidade de serviço é membro direto. Essa operação não é transitiva.
 localization_priority: Normal
 ms.openlocfilehash: 84f82f632ef9c8f7e933d024f4d7df958415f140
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524202"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537468"
 ---
-# <a name="list-serviceprincipal-memberof"></a>Lista servicePrincipal membro
+# <a name="list-serviceprincipal-memberof"></a>Listar o servicePrincipalName memberOf
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha os grupos e funções de diretório que esse serviço principal é um membro direto. Esta operação não é transitiva.
+Obtenha os grupos e funções de diretório dos quais essa entidade de serviço é membro direto. Essa operação não é transitiva.
 
 ## <a name="permissions"></a>Permissões
 

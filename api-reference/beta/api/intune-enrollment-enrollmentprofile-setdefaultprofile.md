@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 874ff79e25cfeaabcad0d92849cfbc01004c314a
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31793711"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32533133"
 ---
 # <a name="setdefaultprofile-action"></a>Ação setDefaultProfile
 

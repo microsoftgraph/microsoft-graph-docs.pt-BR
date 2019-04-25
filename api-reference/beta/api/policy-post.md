@@ -1,21 +1,21 @@
 ---
 title: Criar política
-description: Crie um novo objeto de diretiva especificando o nome para exibição, tipo de política e descrição da política.
+description: Criar um novo objeto de política especificando o nome de exibição, o tipo de política e a descrição da política.
 localization_priority: Normal
 ms.openlocfilehash: 30a311b45f9705a07b62541a4f3a110daade09fa
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527693"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546840"
 ---
 # <a name="create-policy"></a>Criar política
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um novo objeto de [diretiva](../resources/policy.md) especificando o nome para exibição, tipo de política e descrição da política.
+Criar um novo objeto de [política](../resources/policy.md) especificando o nome de exibição, o tipo de política e a descrição da política.
 
->Observação: Os detalhes da diretiva serão validados antes de serem armazenados. Se ele não passar na validação, um 400 Solicitação incorreta será retornado.
+>Observação: os detalhes da política serão validados antes de serem armazenados. Se ele não passar na validação, uma solicitação inVálida 400 será retornada.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -38,22 +38,22 @@ POST /policies
 | Content-Type | application/json  | Natureza dos dados no corpo de uma entidade. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornecem uma representação de JSON do objeto de [diretiva](../resources/policy.md) .
+No corpo da solicitação, forneça uma representação JSON do objeto [Policy](../resources/policy.md) .
 
-A tabela a seguir mostra as propriedades que são necessárias quando você criar uma diretiva.
+A tabela a seguir mostra as propriedades que são necessárias ao criar uma política.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|Definição|String|A versão de cadeia de caracteres do objeto de [diretiva](../resources/policy.md) .|
+|definir|String|A versão de cadeia de caracteres do objeto [Policy](../resources/policy.md) .|
 |displayName|String|Um nome personalizado para a política.|
-|type|String|Especifica o tipo de política. No momento deve ser "TokenLifetimePolicy"|
+|type|String|Especifica o tipo de política. No momento, deve ser "TokenLifetimePolicy"|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` objeto de código e a [diretiva](../resources/policy.md) de resposta no corpo da resposta. Se não obtiver êxito, uma `4xx` será retornado o erro com detalhes específicos.  
+Se bem-sucedido, este método retorna `201 Created` o código de resposta e o objeto [Policy](../resources/policy.md) no corpo da resposta. Caso não consiga, um `4xx` erro será retornado com detalhes específicos.  
 
 ## <a name="example"></a>Exemplo
-O exemplo a seguir cria uma nova vida útil do token política. Observe que o parâmetro de definição de cadeia de caracteres tem escape aspas duplas.
+O exemplo a seguir cria uma nova política de tempo de vida do token. Observe que o parâmetro de definição de cadeia de caracteres tem aspas duplas de escape.
 
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
