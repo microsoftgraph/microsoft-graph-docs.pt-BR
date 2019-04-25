@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 66b39b98aadff87b6609b0a40dd416693e5631d7
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31806010"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32529188"
 ---
 # <a name="list-windowsinformationprotectiondeviceregistrations"></a>Listar windowsInformationProtectionDeviceRegistrations
 
