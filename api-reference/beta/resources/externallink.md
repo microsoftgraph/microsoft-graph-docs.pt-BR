@@ -1,23 +1,21 @@
 ---
-title: Tipo de recurso externalLink
-description: Uma url que abre uma página do OneNote ou o bloco de anotações.
+title: tipo de recurso externalLink
+description: Uma URL que abre uma página do OneNote ou um bloco de anotações.
 localization_priority: Normal
 ms.openlocfilehash: 36acee037a9012290f489f7df675f92265feda1e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515612"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547638"
 ---
-# <a name="externallink-resource-type"></a><span data-ttu-id="7d689-103">Tipo de recurso externalLink</span><span class="sxs-lookup"><span data-stu-id="7d689-103">externalLink resource type</span></span>
+# <a name="externallink-resource-type"></a><span data-ttu-id="9975b-103">tipo de recurso externalLink</span><span class="sxs-lookup"><span data-stu-id="9975b-103">externalLink resource type</span></span>
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+<span data-ttu-id="9975b-104">Uma URL que abre uma página do OneNote ou um bloco de anotações.</span><span class="sxs-lookup"><span data-stu-id="9975b-104">A url that opens a OneNote page or notebook.</span></span>
 
-<span data-ttu-id="7d689-104">Uma url que abre uma página do OneNote ou o bloco de anotações.</span><span class="sxs-lookup"><span data-stu-id="7d689-104">A url that opens a OneNote page or notebook.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="9975b-105">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="9975b-105">JSON representation</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="7d689-105">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="7d689-105">JSON representation</span></span>
-
-<span data-ttu-id="7d689-106">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="7d689-106">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="9975b-106">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="9975b-106">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -33,22 +31,17 @@ ms.locfileid: "29515612"
 }
 
 ```
-## <a name="properties"></a><span data-ttu-id="7d689-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="7d689-107">Properties</span></span>
-| <span data-ttu-id="7d689-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="7d689-108">Property</span></span>     | <span data-ttu-id="7d689-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="7d689-109">Type</span></span>   |<span data-ttu-id="7d689-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="7d689-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="9975b-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="9975b-107">Properties</span></span>
+| <span data-ttu-id="9975b-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="9975b-108">Property</span></span>     | <span data-ttu-id="9975b-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="9975b-109">Type</span></span>   |<span data-ttu-id="9975b-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="9975b-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="7d689-111">href</span><span class="sxs-lookup"><span data-stu-id="7d689-111">href</span></span>|<span data-ttu-id="7d689-112">String</span><span class="sxs-lookup"><span data-stu-id="7d689-112">String</span></span>|<span data-ttu-id="7d689-113">A URL do link.</span><span class="sxs-lookup"><span data-stu-id="7d689-113">The url of the link.</span></span>|
+|<span data-ttu-id="9975b-111">href</span><span class="sxs-lookup"><span data-stu-id="9975b-111">href</span></span>|<span data-ttu-id="9975b-112">String</span><span class="sxs-lookup"><span data-stu-id="9975b-112">String</span></span>|<span data-ttu-id="9975b-113">A URL do link.</span><span class="sxs-lookup"><span data-stu-id="9975b-113">The url of the link.</span></span>|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "externalLink resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/externallink.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

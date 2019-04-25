@@ -6,21 +6,21 @@ title: SharePointIds
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 233c2aa4b8ce67b2382996181c9ba2ab57b9e69c
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480262"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549584"
 ---
-# <a name="sharepointids-resource-type"></a><span data-ttu-id="9e0f7-102">Tipo de recurso SharePointIds</span><span class="sxs-lookup"><span data-stu-id="9e0f7-102">SharePointIds resource type</span></span>
+# <a name="sharepointids-resource-type"></a><span data-ttu-id="3843f-102">Tipo de recurso SharePointIds</span><span class="sxs-lookup"><span data-stu-id="3843f-102">SharePointIds resource type</span></span>
 
-<span data-ttu-id="9e0f7-103">O recurso **SharePointIds** agrupa os vários identificadores de um item armazenado em um site do SharePoint ou no OneDrive for Business em uma única estrutura.</span><span class="sxs-lookup"><span data-stu-id="9e0f7-103">The **SharePointIds** resource groups the various identifiers for an item stored in a SharePoint site or OneDrive for Business into a single structure.</span></span>
+<span data-ttu-id="3843f-103">O recurso **SharePointIds** agrupa os vários identificadores de um item armazenado em um site do SharePoint ou no OneDrive for Business em uma única estrutura.</span><span class="sxs-lookup"><span data-stu-id="3843f-103">The **SharePointIds** resource groups the various identifiers for an item stored in a SharePoint site or OneDrive for Business into a single structure.</span></span>
 
-<span data-ttu-id="9e0f7-104">**Observação:** itens retornados do OneDrive pessoal não incluirão uma faceta **SharePointIds**.</span><span class="sxs-lookup"><span data-stu-id="9e0f7-104">**Note:** items returned from OneDrive personal will not include a **SharePointIds** facet.</span></span>
+<span data-ttu-id="3843f-104">**Observação:** itens retornados do OneDrive pessoal não incluirão uma faceta **SharePointIds**.</span><span class="sxs-lookup"><span data-stu-id="3843f-104">**Note:** items returned from OneDrive personal will not include a **SharePointIds** facet.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="9e0f7-105">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="9e0f7-105">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="3843f-105">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="3843f-105">JSON representation</span></span>
 
-<span data-ttu-id="9e0f7-106">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="9e0f7-106">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="3843f-106">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="3843f-106">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -39,20 +39,20 @@ ms.locfileid: "30480262"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="9e0f7-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="9e0f7-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="3843f-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="3843f-107">Properties</span></span>
 
-| <span data-ttu-id="9e0f7-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="9e0f7-108">Property</span></span>         | <span data-ttu-id="9e0f7-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="9e0f7-109">Type</span></span>         | <span data-ttu-id="9e0f7-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="9e0f7-110">Description</span></span>
+| <span data-ttu-id="3843f-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="3843f-108">Property</span></span>         | <span data-ttu-id="3843f-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="3843f-109">Type</span></span>         | <span data-ttu-id="3843f-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="3843f-110">Description</span></span>
 |:-----------------|:-------------|:-------------------------------------------
-| <span data-ttu-id="9e0f7-111">listId</span><span class="sxs-lookup"><span data-stu-id="9e0f7-111">listId</span></span>           | <span data-ttu-id="9e0f7-112">string</span><span class="sxs-lookup"><span data-stu-id="9e0f7-112">string</span></span>       | <span data-ttu-id="9e0f7-113">O identificador exclusivo (guid) para a lista do item no SharePoint.</span><span class="sxs-lookup"><span data-stu-id="9e0f7-113">The unique identifier (guid) for the item's list in SharePoint.</span></span>
-| <span data-ttu-id="9e0f7-114">listItemId</span><span class="sxs-lookup"><span data-stu-id="9e0f7-114">listItemId</span></span>       | <span data-ttu-id="9e0f7-115">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="9e0f7-115">string</span></span>       | <span data-ttu-id="9e0f7-116">Um identificador inteiro para o item na lista contida.</span><span class="sxs-lookup"><span data-stu-id="9e0f7-116">An integer identifier for the item within the containing list.</span></span>
-| <span data-ttu-id="9e0f7-117">listItemUniqueId</span><span class="sxs-lookup"><span data-stu-id="9e0f7-117">listItemUniqueId</span></span> | <span data-ttu-id="9e0f7-118">string</span><span class="sxs-lookup"><span data-stu-id="9e0f7-118">string</span></span>       | <span data-ttu-id="9e0f7-119">O identificador exclusivo (guid) do item dentro do OneDrive for Business ou de um site do SharePoint.</span><span class="sxs-lookup"><span data-stu-id="9e0f7-119">The unique identifier (guid) for the item within OneDrive for Business or a SharePoint site.</span></span>
-| <span data-ttu-id="9e0f7-120">siteId</span><span class="sxs-lookup"><span data-stu-id="9e0f7-120">siteId</span></span>           | <span data-ttu-id="9e0f7-121">string</span><span class="sxs-lookup"><span data-stu-id="9e0f7-121">string</span></span>       | <span data-ttu-id="9e0f7-122">O identificador exclusivo (guid) do conjunto de sites do item (SPSite).</span><span class="sxs-lookup"><span data-stu-id="9e0f7-122">The unique identifier (guid) for the item's site collection (SPSite).</span></span>
-| <span data-ttu-id="9e0f7-123">siteUrl</span><span class="sxs-lookup"><span data-stu-id="9e0f7-123">siteUrl</span></span>          | <span data-ttu-id="9e0f7-124">string (url)</span><span class="sxs-lookup"><span data-stu-id="9e0f7-124">string (url)</span></span> | <span data-ttu-id="9e0f7-125">A URL do SharePoint do site que contém o item.</span><span class="sxs-lookup"><span data-stu-id="9e0f7-125">The SharePoint URL for the site that contains the item.</span></span>
-| <span data-ttu-id="9e0f7-126">webId</span><span class="sxs-lookup"><span data-stu-id="9e0f7-126">webId</span></span>            | <span data-ttu-id="9e0f7-127">string</span><span class="sxs-lookup"><span data-stu-id="9e0f7-127">string</span></span>       | <span data-ttu-id="9e0f7-128">O identificador exclusivo (guid) do site do item (SPWeb).</span><span class="sxs-lookup"><span data-stu-id="9e0f7-128">The unique identifier (guid) for the item's site (SPWeb).</span></span>
+| <span data-ttu-id="3843f-111">listId</span><span class="sxs-lookup"><span data-stu-id="3843f-111">listId</span></span>           | <span data-ttu-id="3843f-112">string</span><span class="sxs-lookup"><span data-stu-id="3843f-112">string</span></span>       | <span data-ttu-id="3843f-113">O identificador exclusivo (guid) para a lista do item no SharePoint.</span><span class="sxs-lookup"><span data-stu-id="3843f-113">The unique identifier (guid) for the item's list in SharePoint.</span></span>
+| <span data-ttu-id="3843f-114">listItemId</span><span class="sxs-lookup"><span data-stu-id="3843f-114">listItemId</span></span>       | <span data-ttu-id="3843f-115">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="3843f-115">string</span></span>       | <span data-ttu-id="3843f-116">Um identificador inteiro para o item na lista contida.</span><span class="sxs-lookup"><span data-stu-id="3843f-116">An integer identifier for the item within the containing list.</span></span>
+| <span data-ttu-id="3843f-117">listItemUniqueId</span><span class="sxs-lookup"><span data-stu-id="3843f-117">listItemUniqueId</span></span> | <span data-ttu-id="3843f-118">string</span><span class="sxs-lookup"><span data-stu-id="3843f-118">string</span></span>       | <span data-ttu-id="3843f-119">O identificador exclusivo (guid) do item dentro do OneDrive for Business ou de um site do SharePoint.</span><span class="sxs-lookup"><span data-stu-id="3843f-119">The unique identifier (guid) for the item within OneDrive for Business or a SharePoint site.</span></span>
+| <span data-ttu-id="3843f-120">siteId</span><span class="sxs-lookup"><span data-stu-id="3843f-120">siteId</span></span>           | <span data-ttu-id="3843f-121">string</span><span class="sxs-lookup"><span data-stu-id="3843f-121">string</span></span>       | <span data-ttu-id="3843f-122">O identificador exclusivo (guid) do conjunto de sites do item (SPSite).</span><span class="sxs-lookup"><span data-stu-id="3843f-122">The unique identifier (guid) for the item's site collection (SPSite).</span></span>
+| <span data-ttu-id="3843f-123">siteUrl</span><span class="sxs-lookup"><span data-stu-id="3843f-123">siteUrl</span></span>          | <span data-ttu-id="3843f-124">string (url)</span><span class="sxs-lookup"><span data-stu-id="3843f-124">string (url)</span></span> | <span data-ttu-id="3843f-125">A URL do SharePoint do site que contém o item.</span><span class="sxs-lookup"><span data-stu-id="3843f-125">The SharePoint URL for the site that contains the item.</span></span>
+| <span data-ttu-id="3843f-126">webId</span><span class="sxs-lookup"><span data-stu-id="3843f-126">webId</span></span>            | <span data-ttu-id="3843f-127">string</span><span class="sxs-lookup"><span data-stu-id="3843f-127">string</span></span>       | <span data-ttu-id="3843f-128">O identificador exclusivo (guid) do site do item (SPWeb).</span><span class="sxs-lookup"><span data-stu-id="3843f-128">The unique identifier (guid) for the item's site (SPWeb).</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="9e0f7-129">Comentários</span><span class="sxs-lookup"><span data-stu-id="9e0f7-129">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="3843f-129">Comentários</span><span class="sxs-lookup"><span data-stu-id="3843f-129">Remarks</span></span>
 
-<span data-ttu-id="9e0f7-130">Para saber mais sobre as facetas de um **driveItem**, confira [**driveItem**](driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="9e0f7-130">For more information about the facets on a **driveItem**, see [**driveItem**](driveitem.md).</span></span>
+<span data-ttu-id="3843f-130">Para saber mais sobre as facetas de um **driveItem**, confira [**driveItem**](driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="3843f-130">For more information about the facets on a **driveItem**, see [**driveItem**](driveitem.md).</span></span>
 
 
 

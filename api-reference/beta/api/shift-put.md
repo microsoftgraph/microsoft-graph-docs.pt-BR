@@ -5,33 +5,33 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: d8614739757e3962e671440a9a893b9b06d6761f
-ms.sourcegitcommit: 081cacecb4960aabc9e1011d12f06fe9ecf7d188
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30657844"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537315"
 ---
-# <a name="replace-shift"></a><span data-ttu-id="18841-103">Substituir Shift</span><span class="sxs-lookup"><span data-stu-id="18841-103">Replace shift</span></span>
+# <a name="replace-shift"></a><span data-ttu-id="6fae1-103">Substituir Shift</span><span class="sxs-lookup"><span data-stu-id="6fae1-103">Replace shift</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="18841-104">Substitua um [turno](../resources/shift.md)existente.</span><span class="sxs-lookup"><span data-stu-id="18841-104">Replace an existing [shift](../resources/shift.md).</span></span>
+<span data-ttu-id="6fae1-104">Substitua um [turno](../resources/shift.md)existente.</span><span class="sxs-lookup"><span data-stu-id="6fae1-104">Replace an existing [shift](../resources/shift.md).</span></span>
 
-<span data-ttu-id="18841-105">Se o [turno](../resources/shift.md) especificado não existir, este método retornará `404 Not found`.</span><span class="sxs-lookup"><span data-stu-id="18841-105">If the specified [shift](../resources/shift.md) doesn't exist, this method returns `404 Not found`.</span></span>
+<span data-ttu-id="6fae1-105">Se o [turno](../resources/shift.md) especificado não existir, este método retornará `404 Not found`.</span><span class="sxs-lookup"><span data-stu-id="6fae1-105">If the specified [shift](../resources/shift.md) doesn't exist, this method returns `404 Not found`.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="18841-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="18841-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="6fae1-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="6fae1-106">Permissions</span></span>
 
-<span data-ttu-id="18841-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="18841-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="6fae1-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6fae1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="18841-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="18841-109">Permission type</span></span>      | <span data-ttu-id="18841-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="18841-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="6fae1-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="6fae1-109">Permission type</span></span>      | <span data-ttu-id="6fae1-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="6fae1-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="18841-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="18841-111">Delegated (work or school account)</span></span> | <span data-ttu-id="18841-112">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="18841-112">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="18841-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="18841-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="18841-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="18841-114">Not supported.</span></span>    |
-|<span data-ttu-id="18841-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="18841-115">Application</span></span> | <span data-ttu-id="18841-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="18841-116">Not supported.</span></span> |
+|<span data-ttu-id="6fae1-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="6fae1-111">Delegated (work or school account)</span></span> | <span data-ttu-id="6fae1-112">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6fae1-112">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="6fae1-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="6fae1-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6fae1-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="6fae1-114">Not supported.</span></span>    |
+|<span data-ttu-id="6fae1-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="6fae1-115">Application</span></span> | <span data-ttu-id="6fae1-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="6fae1-116">Not supported.</span></span> |
 
-> <span data-ttu-id="18841-117">**Observação**: esta API oferece suporte a permissões de administrador.</span><span class="sxs-lookup"><span data-stu-id="18841-117">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="18841-118">Os administradores globais podem acessar grupos dos quais eles não são membros.</span><span class="sxs-lookup"><span data-stu-id="18841-118">Global admins can access groups that they are not a member of.</span></span>
+> <span data-ttu-id="6fae1-117">**Observação**: esta API oferece transporte a permissões de administrador.</span><span class="sxs-lookup"><span data-stu-id="6fae1-117">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="6fae1-118">Os administradores globais podem acessar grupos dos quais eles não são membros.</span><span class="sxs-lookup"><span data-stu-id="6fae1-118">Global admins can access groups that they are not a member of.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="18841-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="18841-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6fae1-119">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="6fae1-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -39,26 +39,26 @@ ms.locfileid: "30657844"
 PUT /teams/{teamId}/schedule/shifts/{shiftId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="18841-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="18841-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="6fae1-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="6fae1-120">Request headers</span></span>
 
-| <span data-ttu-id="18841-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="18841-121">Header</span></span>       | <span data-ttu-id="18841-122">Valor</span><span class="sxs-lookup"><span data-stu-id="18841-122">Value</span></span> |
+| <span data-ttu-id="6fae1-121">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="6fae1-121">Header</span></span>       | <span data-ttu-id="6fae1-122">Valor</span><span class="sxs-lookup"><span data-stu-id="6fae1-122">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="18841-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="18841-123">Authorization</span></span>  | <span data-ttu-id="18841-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="18841-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="18841-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="18841-126">Content-Type</span></span>  | <span data-ttu-id="18841-127">application/json</span><span class="sxs-lookup"><span data-stu-id="18841-127">application/json</span></span>  |
+| <span data-ttu-id="6fae1-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="6fae1-123">Authorization</span></span>  | <span data-ttu-id="6fae1-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="6fae1-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="6fae1-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="6fae1-126">Content-Type</span></span>  | <span data-ttu-id="6fae1-127">application/json</span><span class="sxs-lookup"><span data-stu-id="6fae1-127">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="18841-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="18841-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="6fae1-128">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="6fae1-128">Request body</span></span>
 
-<span data-ttu-id="18841-129">No corpo da solicitação, forneça uma representação JSON de um objeto [Shift](../resources/shift.md) .</span><span class="sxs-lookup"><span data-stu-id="18841-129">In the request body, supply a JSON representation of a [shift](../resources/shift.md) object.</span></span>
+<span data-ttu-id="6fae1-129">No corpo da solicitação, forneça uma representação JSON de um objeto [Shift](../resources/shift.md) .</span><span class="sxs-lookup"><span data-stu-id="6fae1-129">In the request body, supply a JSON representation of a [shift](../resources/shift.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="18841-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="18841-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="6fae1-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="6fae1-130">Response</span></span>
 
-<span data-ttu-id="18841-131">Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [Shift](../resources/shift.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="18841-131">If successful, this method returns a `200 OK` response code and a [shift](../resources/shift.md) object in the response body.</span></span>
+<span data-ttu-id="6fae1-131">Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [Shift](../resources/shift.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="6fae1-131">If successful, this method returns a `200 OK` response code and a [shift](../resources/shift.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="18841-132">Exemplo</span><span class="sxs-lookup"><span data-stu-id="18841-132">Example</span></span>
+## <a name="example"></a><span data-ttu-id="6fae1-132">Exemplo</span><span class="sxs-lookup"><span data-stu-id="6fae1-132">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="18841-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="18841-133">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="6fae1-133">Solicitação</span><span class="sxs-lookup"><span data-stu-id="6fae1-133">Request</span></span>
 
-<span data-ttu-id="18841-134">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="18841-134">The following is an example of the request.</span></span>
+<span data-ttu-id="6fae1-134">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="6fae1-134">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "shift-put"
@@ -118,11 +118,11 @@ Prefer: return=representation
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="18841-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="18841-135">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="6fae1-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="6fae1-135">Response</span></span>
 
-<span data-ttu-id="18841-136">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="18841-136">The following is an example of the response.</span></span> 
+<span data-ttu-id="6fae1-136">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="6fae1-136">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="18841-p104">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="18841-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="6fae1-p104">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="6fae1-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
