@@ -1,25 +1,25 @@
 ---
 title: Excluir mailFolder
-description: Exclua o mailFolder especificado ou mailSearchFolder.
+description: Exclua o mailFolder ou o mailSearchFolder especificado.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: e993d4cb770db546a11e80aa9b9fe24501e2b281
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512994"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540923"
 ---
 # <a name="delete-mailfolder"></a>Excluir mailFolder
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exclua o especificado [mailFolder](../resources/mailfolder.md) ou [mailSearchFolder](../resources/mailsearchfolder.md).
+Exclua o [mailFolder](../resources/mailfolder.md) ou o [mailSearchFolder](../resources/mailsearchfolder.md)especificado.
 
-Você pode especificar uma pasta de email por sua ID de pasta, ou por seu [nome da pasta conhecido](../resources/mailfolder.md), se houver uma. 
+Você pode especificar uma pasta de email por sua ID de pasta ou por seu [nome de pasta conhecido](../resources/mailfolder.md), se houver uma. 
 
->**Observação** Você não poderá excluir itens na pasta itens recuperáveis exclusões (representado pelo nome da pasta conhecido `recoverableitemsdeletions`). Para obter mais informações, consulte [retenção de itens excluídos](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) e [Limpar itens excluídos](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items) .
+>**Observação** Você pode não conseguir excluir itens da pasta exclusão de itens recuperáveis (representado pelo nome `recoverableitemsdeletions`de pasta conhecido). Veja [retenção de item excluído](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) e [limpar itens excluídos](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items) para obter mais informações.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

@@ -1,21 +1,21 @@
 ---
 title: 'participante: convidar'
-description: Convide participantes à chamada ativa.
+description: Convide participantes para a chamada ativa.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 50c9ebd30bf70290006d8c04ccfb29e09ce0d566
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510166"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539462"
 ---
 # <a name="participant-invite"></a>participante: convidar
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Convide participantes à chamada ativa.
+Convide participantes para a chamada ativa.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | :-------------- | :--------------------------------------------------------- |
 | Delegado (conta corporativa ou de estudante)     | Não suportado                       |
 | Delegado (conta pessoal da Microsoft) | Não suportado                       |
-| Aplicativo     | Calls.InitiateGroupCalls.All                               |
+| Aplicativo     | Calls. InitiateGroupCalls. All                               |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -43,14 +43,14 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|participantes|coleção [invitationParticipantInfo](../resources/invitationparticipantinfo.md)| Para convidar os participantes.|
-|ClientContext|String|O contexto de cliente.|
+|participantes|coleção [invitationParticipantInfo](../resources/invitationparticipantinfo.md)| Os participantes a serem convidados.|
+|clientContext|String|O contexto do cliente.|
 
 ## <a name="response"></a>Resposta
-Retorna `202 Accepted` código de resposta e um cabeçalho de local com um uri para o [commsOperation](../resources/commsoperation.md) criado para essa solicitação.
+Retorna `202 Accepted` o código de resposta e um cabeçalho de local com um URI para o [commsOperation](../resources/commsoperation.md) criado para essa solicitação.
 
 ## <a name="examples"></a>Exemplos
-Os exemplos a seguir mostra como chamar essa API.
+Os exemplos a seguir mostram como chamar essa API.
 
 ##### <a name="request"></a>Solicitação
 O exemplo a seguir mostra a solicitação.
@@ -142,7 +142,7 @@ Content-Length: 259
 }
 ```
 
-##### <a name="notification---operation-completed"></a>Notificação - operação concluída
+##### <a name="notification---operation-completed"></a>Notificação-operação concluída
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -172,7 +172,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---roster-updated-with-participant-added"></a>Notificação - lista de participação atualizado com participante adicionado
+##### <a name="notification---roster-updated-with-participant-added"></a>Notificação-lista atualizada com o participante adicionado
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -247,11 +247,11 @@ Content-Type: application/json
 
 ### <a name="invite-participants-in-existing-p2p-meeting"></a>Convidar participantes na reunião P2P existente
 
-Este exemplo mostra um fluxo de E2E completo para [Convidar participantes](../api/participant-invite.md) em uma reunião P2P existente.
+Este exemplo mostra um fluxo de E2E completo para [convidar participantes](../api/participant-invite.md) em uma reunião P2P existente.
 
-##### <a name="answer-incoming-voip-call-with-service-hosted-media"></a>Atender a chamada de entrada VOIP com mídia de serviço hospedado
+##### <a name="answer-incoming-voip-call-with-service-hosted-media"></a>Atender a chamada VOIP de entrada com mídia hospedada pelo serviço
 
-##### <a name="notification---incoming"></a>Notificação - entrada
+##### <a name="notification---incoming"></a>Notificação-entrada
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -346,7 +346,7 @@ Content-Length: 306
 }
 ```
 
-##### <a name="notification---establishing"></a>Notificação - estabelecendo
+##### <a name="notification---establishing"></a>Notificação-estabelecimento
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -375,7 +375,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---established"></a>Notificação - estabelecida
+##### <a name="notification---established"></a>Estabelecido em notificação
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -406,9 +406,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="join-channel-meeting-without-media"></a>Ingressar em reunião de canal sem mídia
+### <a name="join-channel-meeting-without-media"></a>Reunião de canal de ingresso sem mídia
 
-> **Importante**: se a instância bot estiver ingressando apenas com o objetivo de facilitar a transferência, ele deverá evitar negociações de mídia.  Portanto, é melhor para adicioná-lo sem qualquer `requestedModalities` ou `mediaConfig`.
+> **Importante**: se a instância de bot estiver ingressando somente no objetivo de facilitar a transferência, ela deve evitar negociações de mídia.  Portanto, é melhor adicioná-lo sem qualquer um `requestedModalities` ou `mediaConfig`.
 
 ##### <a name="request"></a>Solicitação
 
@@ -453,7 +453,7 @@ HTTP/1.1 201 Created
 Location: https://graph.microsoft.com/beta/app/calls/90ED37DCD8E34E119DE330A955DDA06F
 ```
 
-##### <a name="notification---establishing"></a>Notificação - estabelecendo
+##### <a name="notification---establishing"></a>Notificação-estabelecimento
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -483,7 +483,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---established"></a>Notificação - estabelecida
+##### <a name="notification---established"></a>Estabelecido em notificação
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -513,7 +513,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="invite-participant-from-initial-incoming-call"></a>Convidar um participante da chamada de entrada inicial
+### <a name="invite-participant-from-initial-incoming-call"></a>Convidar o participante da chamada de entrada inicial
 
 ``` http
 POST /app/calls/90ED37DCD8E34E119DE330A955DDA06F/participants/invite
@@ -552,7 +552,7 @@ Content-Length: 306
 }
 ```
 
-##### <a name="notification---operation-completed"></a>Notificação - operação concluída
+##### <a name="notification---operation-completed"></a>Notificação-operação concluída
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -582,7 +582,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---roster-updated-with-participant-added"></a>Notificação - lista de participação atualizado com participante adicionado
+##### <a name="notification---roster-updated-with-participant-added"></a>Notificação-lista atualizada com o participante adicionado
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -655,7 +655,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---terminated-the-original-p2p-call"></a>Notificação - terminada a chamada P2P original
+##### <a name="notification---terminated-the-original-p2p-call"></a>Notificação – finalizou a chamada P2P original
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -685,7 +685,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---deleted-the-original-p2p-call"></a>Notificação - excluído a chamada P2P original
+##### <a name="notification---deleted-the-original-p2p-call"></a>Notification-exclusão da chamada P2P original
 
 ``` http
 POST https://bot.contoso.com/api/calls

@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: b394b2f5bc81954467ebb315750087141936f3d5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509907"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540468"
 ---
 # <a name="list-attachments"></a>Listar anexos
 
@@ -26,7 +26,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Aplicativo | Mail.Read |
 
 ## <a name="http-request"></a>Solicitação HTTP
-<!-- { "blockType": "ignored" } -->Anexos de uma [mensagem](../resources/message.md) na caixa de correio do usuário.
+<!-- { "blockType": "ignored" } -->
+Anexos de uma [message](../resources/message.md) em uma caixa de correio de usuário.
 ```http
 GET /me/messages/{id}/attachments
 GET /users/{id | userPrincipalName}/messages/{id}/attachments
@@ -44,7 +45,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
 
-Em particular, você pode usar o $expandir o parâmetro de consulta para incluir todos os anexos de mensagem em linha com o restante das propriedades de mensagem. Por exemplo:
+Em particular, você pode usar o $expand parâmetro de consulta para incluir todos os anexos de mensagem embutidos com o restante das propriedades de mensagem. Por exemplo:
 
 ```
 GET https://graph.microsoft.com/beta/me/messages/{id}?$expand=attachments
@@ -59,7 +60,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [Attachment](../resources/attachment.md) no corpo da resposta.
+Se bem sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [Attachment](../resources/attachment.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

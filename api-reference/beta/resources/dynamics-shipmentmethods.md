@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: 2f7ef9611fc85c13ac24c79b292e06a6bdc5d587
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365497"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543032"
 ---
 # <a name="shipmentmethods-resource-type"></a>tipo de recurso shipmentMethods
 Representa um método de entrega no Dynamics 365 Business central, como no-break, FEDEX e DHL.
@@ -29,9 +29,9 @@ Representa um método de entrega no Dynamics 365 Business central, como no-break
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |id|GUID|A ID exclusiva do shipmentMethod. Não editável.|
-|código|string|Especifica o código do método de remessa.|
+|código|cadeia de caracteres|Especifica o código do método de remessa.|
 |displayName|string|Especifica o nome de exibição do método de remessa.|
-|lastModifiedDateTime|DateTime|O último DateTime que o método de remessa foi modificado. Somente Leitura.|  
+|lastModifiedDateTime|DateTime|O último DateTime que o método de remessa foi modificado. Somente leitura.|  
 
 
 ## <a name="relationships"></a>Relações

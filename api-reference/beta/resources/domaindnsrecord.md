@@ -1,34 +1,32 @@
 ---
-title: Tipo de recurso domainDnsRecord
-description: Para cada domínio no locatário, talvez seja necessário adicionar os registros DNS ao arquivo de zona DNS do domínio para que ele possa ser usado pelo Microsoft Online Services. A entidade **DomainDnsRecord** é usada para apresentar esses registros DNS. A entidade base das entidades DomainDnsCnameRecord, DomainDnsMxRecord, DomainDnsSrvRecord e DomainDnsSrvRecord.
+title: tipo de recurso domainDnsRecord
+description: Para cada domínio no locatário, talvez seja necessário adicionar registros DNS ao arquivo de zona DNS do domínio antes que o domínio possa ser usado pelo Microsoft Online Services. A entidade **DomainDnsRecord** é usada para apresentar esses registros DNS. Entidade base para entidades DomainDnsCnameRecord, DomainDnsMxRecord, DomainDnsSrvRecord e DomainDnsSrvRecord.
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: b7b04e65da67bc61e3f3b91ed3dae7cba70a3d27
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519280"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543151"
 ---
-# <a name="domaindnsrecord-resource-type"></a>Tipo de recurso domainDnsRecord
+# <a name="domaindnsrecord-resource-type"></a>tipo de recurso domainDnsRecord
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Para cada domínio no locatário, talvez seja necessário adicionar os registros DNS ao arquivo de zona DNS do domínio para que ele possa ser usado pelo Microsoft Online Services. A entidade **DomainDnsRecord** é usada para apresentar esses registros DNS. A entidade base das entidades [DomainDnsCnameRecord](domaindnscnamerecord.md), [DomainDnsMxRecord](domaindnsmxrecord.md), [DomainDnsSrvRecord](domaindnssrvrecord.md) e [DomainDnsSrvRecord](domaindnssrvrecord.md).
+Para cada domínio no locatário, talvez seja necessário adicionar registros DNS ao arquivo de zona DNS do domínio antes que o domínio possa ser usado pelo Microsoft Online Services. A entidade **DomainDnsRecord** é usada para apresentar esses registros DNS. Entidade base para entidades [DomainDnsCnameRecord](domaindnscnamerecord.md), [DomainDnsMxRecord](domaindnsmxrecord.md), [DomainDnsSrvRecord](domaindnssrvrecord.md) e [DomainDnsSrvRecord](domaindnssrvrecord.md) .
 
 ## <a name="methods"></a>Métodos
-Não há suporte a consultas diretas para este recurso. Confira o tópico do [domínio](domain.md) para obter informações sobre como consultar registros de serviços do domínio.
+Não há suporte para consultas diretas a esse recurso. Confira o tópico de [domínio](domain.md) para obter informações sobre como consultar os registros de serviço de domínio.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|String| Identificador exclusivo atribuído a esta entidade. Não anulável, Somente Leitura.|
-|isOptional|Booliano| Se for falso, o registro deve ser configurado pelo cliente no host DNS do Microsoft Online Services para funcionar corretamente com o domínio. |
-|rótulo|String| O valor usado ao configurar o nome da propriedade do registro DNS no host DNS. |
-|recordType|String| Indica que tipo de registro DNS a entidade representa.</br></br>O valor pode ser um dos seguintes: *CName*, *Mx*, *Srv* e *Txt*</br></br>Tecla |
-|supportedService|String| O Microsoft Online Services ou o recurso que tiver uma dependência neste registro DNS.</br></br>Pode ser um dos seguintes valores: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*|
-|ttl|Int32| O valor a ser usado ao configurar a propriedade time-to-live (ttl) do registro DNS no host DNS. Não anulável |
+|id|String| Identificador exclusivo atribuído a esta entidade. Não anulável, somente leitura.|
+|isOptional|Booliano| Se for false, esse registro deve ser configurado pelo cliente no host DNS do Microsoft Online Services para funcionar corretamente com o domínio. |
+|rótulo|String| O valor usado ao configurar o nome do registro DNS no host DNS. |
+|recordType|String| Indica o tipo de registro DNS que esta entidade representa.</br></br>O valor pode ser um dos seguintes: *CNAME*, *MX*, *SRV*, *txt*</br></br>Chave |
+|supportedService|String| O Microsoft Online Services ou o recurso que tem uma dependência neste registro DNS.</br></br>Pode ser um dos seguintes valores: **NULL**, *email*, *SharePoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic *, *OrgIdAuthentication*, *Yammer*, *Intune*|
+|TTL|Int32| O valor a ser usado ao configurar a propriedade time-to-Live (TTL) do registro DNS no host DNS. Não anulável |
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -38,6 +36,7 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
@@ -58,15 +57,10 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "domainDnsRecord resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/domaindnsrecord.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

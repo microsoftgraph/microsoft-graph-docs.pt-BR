@@ -5,11 +5,11 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: e02cc4b10e4f1f933921f86735f9b09610cfe818
-ms.sourcegitcommit: 3410e1b8dcf62a7b0e4d6b11920912479f21feb2
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30800009"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542872"
 ---
 # <a name="educationclass-resource-type"></a>Tipo de recurso educationClass
 
@@ -41,8 +41,8 @@ Representa uma aula em uma escola. O recurso **educationClass** corresponde ao g
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id| String| O identificador exclusivo da aula.|
-|descrição|String| Descrição da aula.|
+|id| Cadeia de caracteres| O identificador exclusivo da aula.|
+|description|String| Descrição da aula.|
 |displayName|String| Nome da aula.|
 |mailNickname|String| Nome de email para enviar email a todos os membros, se essa propriedade estiver habilitada. |
 |createdBy|[identitySet](identityset.md)| Entidade que criou a aula |
@@ -60,7 +60,7 @@ Representa uma aula em uma escola. O recurso **educationClass** corresponde ao g
 |schools|Coleção [educationSchool](../resources/educationschool.md)| Todas as escolas às quais essa aula está associada. Anulável.|
 |teachers|Coleção [educationUser](../resources/educationuser.md)|  Todos os professores da aula. Anulável.|
 |assignments|coleção [educationAssignment](../resources/educationassignment.md)| Todas as atribuições associadas a esta classe. Anulável.|
-|Categorias|coleção [educationCategory](../resources/educationassignment.md)| Todas as categorias associadas a essa classe. Anulável.|
+|categories|coleção [educationCategory](../resources/educationassignment.md)| Todas as categorias associadas a essa classe. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 
