@@ -4,31 +4,31 @@ description: 'Por meio de um exemplo, vamos demonstrar como usar o recurso *abri
 author: dkershaw10
 localization_priority: Priority
 ms.openlocfilehash: 69b0918dba3159a552e2b00d4f54b21e67d017e4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867260"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32526137"
 ---
-# <a name="add-custom-data-to-users-using-open-extensions"></a><span data-ttu-id="302dd-103">Adicionar dados personalizados aos usuários usando extensões abertas</span><span class="sxs-lookup"><span data-stu-id="302dd-103">Add custom data to users using open extensions</span></span>
-<span data-ttu-id="302dd-104">Por meio de um exemplo, vamos demonstrar como usar o recurso *abrir extensões*.</span><span class="sxs-lookup"><span data-stu-id="302dd-104">We're going to walk you through an example to demonstrate how to use *open extensions*.</span></span> 
+# <a name="add-custom-data-to-users-using-open-extensions"></a><span data-ttu-id="93c7e-103">Adicionar dados personalizados aos usuários usando extensões abertas</span><span class="sxs-lookup"><span data-stu-id="93c7e-103">Add custom data to users using open extensions</span></span>
+<span data-ttu-id="93c7e-104">Por meio de um exemplo, vamos demonstrar como usar o recurso *abrir extensões*.</span><span class="sxs-lookup"><span data-stu-id="93c7e-104">We're going to walk you through an example to demonstrate how to use *open extensions*.</span></span> 
 
-<span data-ttu-id="302dd-p101">Imagine que você está criando um aplicativo que está disponível em várias plataformas cliente diferentes, como computadores e dispositivos móveis.  Você gostaria que os usuários pudessem configurar a própria experiência de interface do usuário para que ela fosse consistente, independentemente do dispositivo usado para entrar no seu aplicativo. Este é um requisito comum para a maioria dos aplicativos.</span><span class="sxs-lookup"><span data-stu-id="302dd-p101">Imagine you're building an application that is available on lots of different client platforms, such as desktop and mobile.  You want to let users configure their UI experience so it’s consistent no matter which device they use to sign in to your app. This is a common requirement for most apps.</span></span> 
+<span data-ttu-id="93c7e-p101">Imagine que você está criando um aplicativo que está disponível em várias plataformas cliente diferentes, como computadores e dispositivos móveis.  Você gostaria que os usuários pudessem configurar a própria experiência de interface do usuário para que ela fosse consistente, independentemente do dispositivo usado para entrar no seu aplicativo. Este é um requisito comum para a maioria dos aplicativos.</span><span class="sxs-lookup"><span data-stu-id="93c7e-p101">Imagine you're building an application that is available on lots of different client platforms, such as desktop and mobile.  You want to let users configure their UI experience so it’s consistent no matter which device they use to sign in to your app. This is a common requirement for most apps.</span></span> 
 
-<span data-ttu-id="302dd-108">Neste cenário, vamos mostrar como:</span><span class="sxs-lookup"><span data-stu-id="302dd-108">For this scenario, we're going to show you how to:</span></span>
+<span data-ttu-id="93c7e-108">Neste cenário, vamos mostrar como:</span><span class="sxs-lookup"><span data-stu-id="93c7e-108">For this scenario, we're going to show you how to:</span></span>
 
-1. <span data-ttu-id="302dd-109">Adicionar uma extensão aberta representando algumas informações do perfil móvel sobre o usuário.</span><span class="sxs-lookup"><span data-stu-id="302dd-109">Add an open extension representing some roaming profile information about the user.</span></span>
-2. <span data-ttu-id="302dd-110">Consultar o usuário e retornar o perfil móvel.</span><span class="sxs-lookup"><span data-stu-id="302dd-110">Query the user and return the roaming profile.</span></span>
-3. <span data-ttu-id="302dd-111">Alterar as informações do perfil móvel do usuário (o valor de extensão aberta).</span><span class="sxs-lookup"><span data-stu-id="302dd-111">Change the user's roaming profile information (the open extension value).</span></span>
-4. <span data-ttu-id="302dd-112">Excluir informações do perfil móvel do usuário.</span><span class="sxs-lookup"><span data-stu-id="302dd-112">Delete the user's roaming profile information.</span></span>
+1. <span data-ttu-id="93c7e-109">Adicionar uma extensão aberta representando algumas informações do perfil móvel sobre o usuário.</span><span class="sxs-lookup"><span data-stu-id="93c7e-109">Add an open extension representing some roaming profile information about the user.</span></span>
+2. <span data-ttu-id="93c7e-110">Consultar o usuário e retornar o perfil móvel.</span><span class="sxs-lookup"><span data-stu-id="93c7e-110">Query the user and return the roaming profile.</span></span>
+3. <span data-ttu-id="93c7e-111">Alterar as informações do perfil móvel do usuário (o valor de extensão aberta).</span><span class="sxs-lookup"><span data-stu-id="93c7e-111">Change the user's roaming profile information (the open extension value).</span></span>
+4. <span data-ttu-id="93c7e-112">Excluir informações do perfil móvel do usuário.</span><span class="sxs-lookup"><span data-stu-id="93c7e-112">Delete the user's roaming profile information.</span></span>
 
-><span data-ttu-id="302dd-p102">**Observação:** Este tópico mostra como adicionar, ler, atualizar e excluir extensões abertas em um recurso *user*.  Esses métodos também são suportados para os tipos de recurso *administrativeUnit*, *contact*, *device*, *event*, *group*, *group event*, *group post* e *organizaton*.</span><span class="sxs-lookup"><span data-stu-id="302dd-p102">**Note:** This topic shows you how to add, read, update and delete open extensions on a *user* resource.  These methods are also supported for the *administrativeUnit*, *contact*, *device*, *event*, *group*, *group event*, *group post* and *organizaton* resource types.</span></span>  
-<span data-ttu-id="302dd-p103">Basta atualizar as solicitações de exemplo abaixo usando qualquer um desses tipos de recursos. As respostas mostradas nos exemplos a seguir podem ser truncadas para resumir.</span><span class="sxs-lookup"><span data-stu-id="302dd-p103">Simply update the example requests below using any of those resource types. The responses shown in the examples below may be truncated for brevity.</span></span> 
+><span data-ttu-id="93c7e-p102">**Observação:** Este tópico mostra como adicionar, ler, atualizar e excluir extensões abertas em um recurso *user*.  Esses métodos também são suportados para os tipos de recurso *administrativeUnit*, *contact*, *device*, *event*, *group*, *group event*, *group post* e *organizaton*.</span><span class="sxs-lookup"><span data-stu-id="93c7e-p102">**Note:** This topic shows you how to add, read, update and delete open extensions on a *user* resource.  These methods are also supported for the *administrativeUnit*, *contact*, *device*, *event*, *group*, *group event*, *group post* and *organizaton* resource types.</span></span>  
+<span data-ttu-id="93c7e-p103">Basta atualizar as solicitações de exemplo abaixo usando qualquer um desses tipos de recursos. As respostas mostradas nos exemplos a seguir podem ser truncadas para resumir.</span><span class="sxs-lookup"><span data-stu-id="93c7e-p103">Simply update the example requests below using any of those resource types. The responses shown in the examples below may be truncated for brevity.</span></span> 
 
-## <a name="1-add-roaming-profile-information"></a><span data-ttu-id="302dd-117">1. Adicionar informações de perfil móvel</span><span class="sxs-lookup"><span data-stu-id="302dd-117">1. Add roaming profile information</span></span>
-<span data-ttu-id="302dd-p104">O usuário entra no aplicativo e configura a aparência do aplicativo.  Essas configurações de aplicativo devem transitar para que o usuário obtenha a mesma experiência em praticamente qualquer dispositivo usado para entrar no aplicativo.  Aqui, veremos como adicionar as informações do perfil móvel a um recurso user.</span><span class="sxs-lookup"><span data-stu-id="302dd-p104">The user signs in to the app and configures the look and feel of the app.  These app settings should roam so that the user gets the same experience on whatever device they sign in to the app from.  Here we'll see how to add the roaming profile information to a user resource.</span></span>
+## <a name="1-add-roaming-profile-information"></a><span data-ttu-id="93c7e-117">1. Adicionar informações de perfil móvel</span><span class="sxs-lookup"><span data-stu-id="93c7e-117">1. Add roaming profile information</span></span>
+<span data-ttu-id="93c7e-p104">O usuário entra no aplicativo e configura a aparência do aplicativo.  Essas configurações de aplicativo devem transitar para que o usuário obtenha a mesma experiência em praticamente qualquer dispositivo usado para entrar no aplicativo.  Aqui, veremos como adicionar as informações do perfil móvel a um recurso user.</span><span class="sxs-lookup"><span data-stu-id="93c7e-p104">The user signs in to the app and configures the look and feel of the app.  These app settings should roam so that the user gets the same experience on whatever device they sign in to the app from.  Here we'll see how to add the roaming profile information to a user resource.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="302dd-121">Solicitação</span><span class="sxs-lookup"><span data-stu-id="302dd-121">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="93c7e-121">Solicitação</span><span class="sxs-lookup"><span data-stu-id="93c7e-121">Request</span></span>
 ```http
 POST https://graph.microsoft.com/v1.0/me/extensions
 Content-type: application/json
@@ -40,7 +40,7 @@ Content-type: application/json
     "lang":"Japanese"
 }
 ```
-##### <a name="response"></a><span data-ttu-id="302dd-122">Resposta</span><span class="sxs-lookup"><span data-stu-id="302dd-122">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="93c7e-122">Resposta</span><span class="sxs-lookup"><span data-stu-id="93c7e-122">Response</span></span>
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
@@ -56,14 +56,14 @@ Content-length: 420
 }
 ```
 
-## <a name="2-retrieve-roaming-profile-information"></a><span data-ttu-id="302dd-123">2. Recuperar informações do perfil móvel do usuário.</span><span class="sxs-lookup"><span data-stu-id="302dd-123">2. Retrieve roaming profile information</span></span>
-<span data-ttu-id="302dd-p105">Quando o usuário entra no aplicativo de outro dispositivo, o aplicativo pode recuperar detalhes do perfil do usuário, além das configurações de roaming dele. Isso pode ser feito obtendo recursos do usuário e expandindo a propriedade de navegação da extensão.</span><span class="sxs-lookup"><span data-stu-id="302dd-p105">When the user signs in to the app from another device, the app can retrieve the user's profile details as well as their roaming settings. This can be done by getting the user's resource and expanding the extension navigation property.</span></span>
+## <a name="2-retrieve-roaming-profile-information"></a><span data-ttu-id="93c7e-123">2. Recuperar informações do perfil móvel do usuário.</span><span class="sxs-lookup"><span data-stu-id="93c7e-123">2. Retrieve roaming profile information</span></span>
+<span data-ttu-id="93c7e-p105">Quando o usuário entra no aplicativo de outro dispositivo, o aplicativo pode recuperar detalhes do perfil do usuário, além das configurações de roaming dele. Isso pode ser feito obtendo recursos do usuário e expandindo a propriedade de navegação da extensão.</span><span class="sxs-lookup"><span data-stu-id="93c7e-p105">When the user signs in to the app from another device, the app can retrieve the user's profile details as well as their roaming settings. This can be done by getting the user's resource and expanding the extension navigation property.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="302dd-126">Solicitação</span><span class="sxs-lookup"><span data-stu-id="302dd-126">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="93c7e-126">Solicitação</span><span class="sxs-lookup"><span data-stu-id="93c7e-126">Request</span></span>
 ```http
 GET https://graph.microsoft.com/v1.0/me?$select=id,displayName,mail,mobilePhone&$expand=extensions
 ```
-##### <a name="response"></a><span data-ttu-id="302dd-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="302dd-127">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="93c7e-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="93c7e-127">Response</span></span>
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -86,12 +86,12 @@ Content-length: 420
     ]
 }
 ```
-><span data-ttu-id="302dd-128">**Observação:** Se você tiver várias extensões, filtre o *id* para obter a extensão na qual está interessado.</span><span class="sxs-lookup"><span data-stu-id="302dd-128">**Note:** If you have multiple extensions, you can filter on the *id* to get the extension that you are interested in.</span></span>
+><span data-ttu-id="93c7e-128">**Observação:** Se você tiver várias extensões, filtre o *id* para obter a extensão na qual está interessado.</span><span class="sxs-lookup"><span data-stu-id="93c7e-128">**Note:** If you have multiple extensions, you can filter on the *id* to get the extension that you are interested in.</span></span>
 
-## <a name="3-change-roaming-profile-information"></a><span data-ttu-id="302dd-129">3. Alterar informações de perfil móvel</span><span class="sxs-lookup"><span data-stu-id="302dd-129">3. Change roaming profile information</span></span>
-<span data-ttu-id="302dd-p106">O usuário pode optar por alterar as próprias informações do perfil móvel.  Essa atualização pode ser feita com um ```PATCH``` no valor da extensão aberta.</span><span class="sxs-lookup"><span data-stu-id="302dd-p106">The user may choose to change their roaming profile information.  This update can be done with a ```PATCH``` on the open extension value.</span></span> 
+## <a name="3-change-roaming-profile-information"></a><span data-ttu-id="93c7e-129">3. Alterar informações de perfil móvel</span><span class="sxs-lookup"><span data-stu-id="93c7e-129">3. Change roaming profile information</span></span>
+<span data-ttu-id="93c7e-p106">O usuário pode optar por alterar as próprias informações do perfil móvel.  Essa atualização pode ser feita com um ```PATCH``` no valor da extensão aberta.</span><span class="sxs-lookup"><span data-stu-id="93c7e-p106">The user may choose to change their roaming profile information.  This update can be done with a ```PATCH``` on the open extension value.</span></span> 
 
-##### <a name="request"></a><span data-ttu-id="302dd-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="302dd-132">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="93c7e-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="93c7e-132">Request</span></span>
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/extensions/com.contoso.roamingSettings
 Content-type: application/json
@@ -102,30 +102,30 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="302dd-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="302dd-133">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="93c7e-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="93c7e-133">Response</span></span>
 ```
 HTTP/1.1 204 No content
 ```
 
-## <a name="4-delete-a-users-roaming-profile"></a><span data-ttu-id="302dd-134">4. Excluir um perfil de usuário móvel</span><span class="sxs-lookup"><span data-stu-id="302dd-134">4. Delete a user's roaming profile</span></span>
-<span data-ttu-id="302dd-p107">O usuário decide que, se não quiser mais um perfil móvel, pode excluí-lo. Esta atualização pode ser feita com uma solicitação ```DELETE``` no valor extensão aberto.</span><span class="sxs-lookup"><span data-stu-id="302dd-p107">The user decides that they don't want a roaming profile anymore, so they delete it. This can be done with a ```DELETE``` request on the open extension value.</span></span>
+## <a name="4-delete-a-users-roaming-profile"></a><span data-ttu-id="93c7e-134">4. Excluir um perfil de usuário móvel</span><span class="sxs-lookup"><span data-stu-id="93c7e-134">4. Delete a user's roaming profile</span></span>
+<span data-ttu-id="93c7e-p107">O usuário decide que, se não quiser mais um perfil móvel, pode excluí-lo. Esta atualização pode ser feita com uma solicitação ```DELETE``` no valor extensão aberto.</span><span class="sxs-lookup"><span data-stu-id="93c7e-p107">The user decides that they don't want a roaming profile anymore, so they delete it. This can be done with a ```DELETE``` request on the open extension value.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="302dd-137">Solicitação</span><span class="sxs-lookup"><span data-stu-id="302dd-137">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="93c7e-137">Solicitação</span><span class="sxs-lookup"><span data-stu-id="93c7e-137">Request</span></span>
 ```http
 DELETE https://graph.microsoft.com/v1.0/me/extensions/com.contoso.roamingSettings
 ```
 
-##### <a name="response"></a><span data-ttu-id="302dd-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="302dd-138">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="93c7e-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="93c7e-138">Response</span></span>
 ```
 HTTP/1.1 204 No content
 ```
 
-## <a name="see-also"></a><span data-ttu-id="302dd-139">Confira também</span><span class="sxs-lookup"><span data-stu-id="302dd-139">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="93c7e-139">Confira também</span><span class="sxs-lookup"><span data-stu-id="93c7e-139">See also</span></span>
 
-- [<span data-ttu-id="302dd-140">Adicionar dados personalizados a recursos usando extensões</span><span class="sxs-lookup"><span data-stu-id="302dd-140">Add custom data to resources using extensions</span></span>](extensibility-overview.md)
-- [<span data-ttu-id="302dd-141">Adicionar dados personalizados a grupos usando as extensões do esquema</span><span class="sxs-lookup"><span data-stu-id="302dd-141">Add custom data to groups using schema extensions</span></span>](extensibility-schema-groups.md)
-- [<span data-ttu-id="302dd-142">tipo de recurso openTypeExtension</span><span class="sxs-lookup"><span data-stu-id="302dd-142">openTypeExtension resource type</span></span>](/graph/api/resources/opentypeextension?view=graph-rest-1.0)
-- [<span data-ttu-id="302dd-143">Criar extensão aberta</span><span class="sxs-lookup"><span data-stu-id="302dd-143">Create open extension</span></span>](/graph/api/opentypeextension-post-opentypeextension?view=graph-rest-1.0)
-- [<span data-ttu-id="302dd-144">Obter extensão aberta</span><span class="sxs-lookup"><span data-stu-id="302dd-144">Get open extension</span></span>](/graph/api/opentypeextension-get?view=graph-rest-1.0)
-- [<span data-ttu-id="302dd-145">Atualizar extensão aberta</span><span class="sxs-lookup"><span data-stu-id="302dd-145">Update open extension</span></span>](/graph/api/opentypeextension-update?view=graph-rest-1.0)
-- [<span data-ttu-id="302dd-146">Excluir extensão aberta</span><span class="sxs-lookup"><span data-stu-id="302dd-146">Delete open extension</span></span>](/graph/api/opentypeextension-delete?view=graph-rest-1.0)
+- [<span data-ttu-id="93c7e-140">Adicionar dados personalizados a recursos usando extensões</span><span class="sxs-lookup"><span data-stu-id="93c7e-140">Add custom data to resources using extensions</span></span>](extensibility-overview.md)
+- [<span data-ttu-id="93c7e-141">Adicionar dados personalizados a grupos usando as extensões do esquema</span><span class="sxs-lookup"><span data-stu-id="93c7e-141">Add custom data to groups using schema extensions</span></span>](extensibility-schema-groups.md)
+- [<span data-ttu-id="93c7e-142">tipo de recurso openTypeExtension</span><span class="sxs-lookup"><span data-stu-id="93c7e-142">openTypeExtension resource type</span></span>](/graph/api/resources/opentypeextension?view=graph-rest-1.0)
+- [<span data-ttu-id="93c7e-143">Criar extensão aberta</span><span class="sxs-lookup"><span data-stu-id="93c7e-143">Create open extension</span></span>](/graph/api/opentypeextension-post-opentypeextension?view=graph-rest-1.0)
+- [<span data-ttu-id="93c7e-144">Obter extensão aberta</span><span class="sxs-lookup"><span data-stu-id="93c7e-144">Get open extension</span></span>](/graph/api/opentypeextension-get?view=graph-rest-1.0)
+- [<span data-ttu-id="93c7e-145">Atualizar extensão aberta</span><span class="sxs-lookup"><span data-stu-id="93c7e-145">Update open extension</span></span>](/graph/api/opentypeextension-update?view=graph-rest-1.0)
+- [<span data-ttu-id="93c7e-146">Excluir extensão aberta</span><span class="sxs-lookup"><span data-stu-id="93c7e-146">Delete open extension</span></span>](/graph/api/opentypeextension-delete?view=graph-rest-1.0)
