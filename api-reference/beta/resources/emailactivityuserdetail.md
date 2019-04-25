@@ -1,37 +1,37 @@
 ---
-title: tipo de recurso de emailActivityUserDetail
+title: tipo de recurso emailActivityUserDetail
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: b871bf5dbaedd961fad09bf97be868f46e7430a1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27938304"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542829"
 ---
-# <a name="emailactivityuserdetail-resource-type"></a><span data-ttu-id="5f8c1-103">tipo de recurso de emailActivityUserDetail</span><span class="sxs-lookup"><span data-stu-id="5f8c1-103">emailActivityUserDetail resource type</span></span>
+# <a name="emailactivityuserdetail-resource-type"></a><span data-ttu-id="f9410-103">tipo de recurso emailActivityUserDetail</span><span class="sxs-lookup"><span data-stu-id="f9410-103">emailActivityUserDetail resource type</span></span>
 
-## <a name="properties"></a><span data-ttu-id="5f8c1-104">Propriedades</span><span class="sxs-lookup"><span data-stu-id="5f8c1-104">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="f9410-104">Propriedades</span><span class="sxs-lookup"><span data-stu-id="f9410-104">Properties</span></span>
 
-| <span data-ttu-id="5f8c1-105">Propriedade</span><span class="sxs-lookup"><span data-stu-id="5f8c1-105">Property</span></span>          | <span data-ttu-id="5f8c1-106">Tipo</span><span class="sxs-lookup"><span data-stu-id="5f8c1-106">Type</span></span>              |
+| <span data-ttu-id="f9410-105">Propriedade</span><span class="sxs-lookup"><span data-stu-id="f9410-105">Property</span></span>          | <span data-ttu-id="f9410-106">Tipo</span><span class="sxs-lookup"><span data-stu-id="f9410-106">Type</span></span>              |
 | :---------------- | :---------------- |
-| <span data-ttu-id="5f8c1-107">reportRefreshDate</span><span class="sxs-lookup"><span data-stu-id="5f8c1-107">reportRefreshDate</span></span> | <span data-ttu-id="5f8c1-108">Data</span><span class="sxs-lookup"><span data-stu-id="5f8c1-108">Date</span></span>              |
-| <span data-ttu-id="5f8c1-109">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="5f8c1-109">userPrincipalName</span></span> | <span data-ttu-id="5f8c1-110">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="5f8c1-110">String</span></span>            |
-| <span data-ttu-id="5f8c1-111">displayName</span><span class="sxs-lookup"><span data-stu-id="5f8c1-111">displayName</span></span>       | <span data-ttu-id="5f8c1-112">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="5f8c1-112">String</span></span>            |
-| <span data-ttu-id="5f8c1-113">isDeleted</span><span class="sxs-lookup"><span data-stu-id="5f8c1-113">isDeleted</span></span>         | <span data-ttu-id="5f8c1-114">Booliano</span><span class="sxs-lookup"><span data-stu-id="5f8c1-114">Boolean</span></span>           |
-| <span data-ttu-id="5f8c1-115">deletedDate</span><span class="sxs-lookup"><span data-stu-id="5f8c1-115">deletedDate</span></span>       | <span data-ttu-id="5f8c1-116">Data</span><span class="sxs-lookup"><span data-stu-id="5f8c1-116">Date</span></span>              |
-| <span data-ttu-id="5f8c1-117">lastActivityDate</span><span class="sxs-lookup"><span data-stu-id="5f8c1-117">lastActivityDate</span></span>  | <span data-ttu-id="5f8c1-118">Data</span><span class="sxs-lookup"><span data-stu-id="5f8c1-118">Date</span></span>              |
-| <span data-ttu-id="5f8c1-119">sendCount</span><span class="sxs-lookup"><span data-stu-id="5f8c1-119">sendCount</span></span>         | <span data-ttu-id="5f8c1-120">Int64</span><span class="sxs-lookup"><span data-stu-id="5f8c1-120">Int64</span></span>             |
-| <span data-ttu-id="5f8c1-121">receiveCount</span><span class="sxs-lookup"><span data-stu-id="5f8c1-121">receiveCount</span></span>      | <span data-ttu-id="5f8c1-122">Int64</span><span class="sxs-lookup"><span data-stu-id="5f8c1-122">Int64</span></span>             |
-| <span data-ttu-id="5f8c1-123">readCount</span><span class="sxs-lookup"><span data-stu-id="5f8c1-123">readCount</span></span>         | <span data-ttu-id="5f8c1-124">Int64</span><span class="sxs-lookup"><span data-stu-id="5f8c1-124">Int64</span></span>             |
-| <span data-ttu-id="5f8c1-125">assignedProducts</span><span class="sxs-lookup"><span data-stu-id="5f8c1-125">assignedProducts</span></span>  | <span data-ttu-id="5f8c1-126">String collection</span><span class="sxs-lookup"><span data-stu-id="5f8c1-126">String collection</span></span> |
-| <span data-ttu-id="5f8c1-127">reportPeriod</span><span class="sxs-lookup"><span data-stu-id="5f8c1-127">reportPeriod</span></span>      | <span data-ttu-id="5f8c1-128">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="5f8c1-128">String</span></span>            |
+| <span data-ttu-id="f9410-107">reportRefreshDate</span><span class="sxs-lookup"><span data-stu-id="f9410-107">reportRefreshDate</span></span> | <span data-ttu-id="f9410-108">Data</span><span class="sxs-lookup"><span data-stu-id="f9410-108">Date</span></span>              |
+| <span data-ttu-id="f9410-109">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="f9410-109">userPrincipalName</span></span> | <span data-ttu-id="f9410-110">String</span><span class="sxs-lookup"><span data-stu-id="f9410-110">String</span></span>            |
+| <span data-ttu-id="f9410-111">displayName</span><span class="sxs-lookup"><span data-stu-id="f9410-111">displayName</span></span>       | <span data-ttu-id="f9410-112">String</span><span class="sxs-lookup"><span data-stu-id="f9410-112">String</span></span>            |
+| <span data-ttu-id="f9410-113">isDeleted</span><span class="sxs-lookup"><span data-stu-id="f9410-113">isDeleted</span></span>         | <span data-ttu-id="f9410-114">Booliano</span><span class="sxs-lookup"><span data-stu-id="f9410-114">Boolean</span></span>           |
+| <span data-ttu-id="f9410-115">deletedDate</span><span class="sxs-lookup"><span data-stu-id="f9410-115">deletedDate</span></span>       | <span data-ttu-id="f9410-116">Data</span><span class="sxs-lookup"><span data-stu-id="f9410-116">Date</span></span>              |
+| <span data-ttu-id="f9410-117">lastActivityDate</span><span class="sxs-lookup"><span data-stu-id="f9410-117">lastActivityDate</span></span>  | <span data-ttu-id="f9410-118">Data</span><span class="sxs-lookup"><span data-stu-id="f9410-118">Date</span></span>              |
+| <span data-ttu-id="f9410-119">sendCount</span><span class="sxs-lookup"><span data-stu-id="f9410-119">sendCount</span></span>         | <span data-ttu-id="f9410-120">Int64</span><span class="sxs-lookup"><span data-stu-id="f9410-120">Int64</span></span>             |
+| <span data-ttu-id="f9410-121">receiveCount</span><span class="sxs-lookup"><span data-stu-id="f9410-121">receiveCount</span></span>      | <span data-ttu-id="f9410-122">Int64</span><span class="sxs-lookup"><span data-stu-id="f9410-122">Int64</span></span>             |
+| <span data-ttu-id="f9410-123">readCount</span><span class="sxs-lookup"><span data-stu-id="f9410-123">readCount</span></span>         | <span data-ttu-id="f9410-124">Int64</span><span class="sxs-lookup"><span data-stu-id="f9410-124">Int64</span></span>             |
+| <span data-ttu-id="f9410-125">assignedProducts</span><span class="sxs-lookup"><span data-stu-id="f9410-125">assignedProducts</span></span>  | <span data-ttu-id="f9410-126">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="f9410-126">String collection</span></span> |
+| <span data-ttu-id="f9410-127">reportPeriod</span><span class="sxs-lookup"><span data-stu-id="f9410-127">reportPeriod</span></span>      | <span data-ttu-id="f9410-128">String</span><span class="sxs-lookup"><span data-stu-id="f9410-128">String</span></span>            |
 
-## <a name="json-representation"></a><span data-ttu-id="5f8c1-129">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="5f8c1-129">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="f9410-129">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="f9410-129">JSON representation</span></span>
 
-<span data-ttu-id="5f8c1-130">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="5f8c1-130">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="f9410-130">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="f9410-130">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

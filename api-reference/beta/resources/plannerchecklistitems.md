@@ -1,29 +1,29 @@
 ---
-title: Tipo de recurso plannerChecklistItems
-description: O recurso **plannerChecklistItemCollection** representa a coleção de itens da lista de verificação em uma tarefa. Este é um Tipo Aberto. Ele faz parte do objeto task details. O valor no par propriedade-valor é o objeto checklistItem.
+title: tipo de recurso plannerChecklistItems
+description: O recurso **plannerChecklistItemCollection** representa a coleção de itens de lista de verificação em uma tarefa. É um tipo aberto. Ele faz parte do objeto de detalhes da tarefa. O valor no par propriedade-valor é o objeto checklistItem.
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: cdc2822574497b2a76cc92c8b7b22f2e1bccc2e8
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511874"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579044"
 ---
-# <a name="plannerchecklistitems-resource-type"></a><span data-ttu-id="0a263-106">Tipo de recurso plannerChecklistItems</span><span class="sxs-lookup"><span data-stu-id="0a263-106">plannerChecklistItems resource type</span></span>
+# <a name="plannerchecklistitems-resource-type"></a><span data-ttu-id="dada4-106">tipo de recurso plannerChecklistItems</span><span class="sxs-lookup"><span data-stu-id="dada4-106">plannerChecklistItems resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="0a263-p102">O recurso **plannerChecklistItemCollection** representa a coleção de itens da lista de verificação em uma tarefa. Este é um Tipo Aberto. Ele faz parte do objeto [task details](plannertaskdetails.md). O valor no par propriedade-valor é o objeto [checklistItem](plannerchecklistitem.md).</span><span class="sxs-lookup"><span data-stu-id="0a263-p102">The **plannerChecklistItemCollection** resource represents the collection of checklist items on a task. It is an Open Type. It is part of the [task details](plannertaskdetails.md) object. The value in the property-value pair is the [checklistItem](plannerchecklistitem.md) object.</span></span>
+<span data-ttu-id="dada4-107">O recurso **plannerChecklistItemCollection** representa a coleção de itens de lista de verificação em uma tarefa.</span><span class="sxs-lookup"><span data-stu-id="dada4-107">The **plannerChecklistItemCollection** resource represents the collection of checklist items on a task.</span></span> <span data-ttu-id="dada4-108">É um tipo aberto.</span><span class="sxs-lookup"><span data-stu-id="dada4-108">It is an Open Type.</span></span> <span data-ttu-id="dada4-109">Ele faz parte do objeto de [detalhes da tarefa](plannertaskdetails.md) .</span><span class="sxs-lookup"><span data-stu-id="dada4-109">It is part of the [task details](plannertaskdetails.md) object.</span></span> <span data-ttu-id="dada4-110">O valor no par propriedade-valor é o objeto [checklistItem](plannerchecklistitem.md) .</span><span class="sxs-lookup"><span data-stu-id="dada4-110">The value in the property-value pair is the [checklistItem](plannerchecklistitem.md) object.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="0a263-111">Propriedades</span><span class="sxs-lookup"><span data-stu-id="0a263-111">Properties</span></span>
-<span data-ttu-id="0a263-p103">As propriedades de um Tipo Aberto podem ser definidas pelo cliente. Nesse caso, o cliente deve fornecer **GUIDs** como propriedades e seus valores devem ser objetos [checklistItem](plannerchecklistitem.md). Um exemplo é mostrado abaixo. Para remover um item da lista de verificação, defina o valor da propriedade como `null`.</span><span class="sxs-lookup"><span data-stu-id="0a263-p103">Properties of an Open Type can be defined by the client. In this case, the client should provide **GUIDs** as properties and their values must be [checklistItem](plannerchecklistitem.md) objects. Example is shown below. To remove an item in the checklist, set the value of the property to `null`.</span></span>
+## <a name="properties"></a><span data-ttu-id="dada4-111">Propriedades</span><span class="sxs-lookup"><span data-stu-id="dada4-111">Properties</span></span>
+<span data-ttu-id="dada4-112">As propriedades de um tipo aberto podem ser definidas pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="dada4-112">Properties of an Open Type can be defined by the client.</span></span> <span data-ttu-id="dada4-113">Nesse caso, o cliente deve fornecer **GUIDs** como propriedades e seus valores devem ser objetos [checklistItem](plannerchecklistitem.md) .</span><span class="sxs-lookup"><span data-stu-id="dada4-113">In this case, the client should provide **GUIDs** as properties and their values must be [checklistItem](plannerchecklistitem.md) objects.</span></span> <span data-ttu-id="dada4-114">O exemplo é mostrado abaixo.</span><span class="sxs-lookup"><span data-stu-id="dada4-114">Example is shown below.</span></span> <span data-ttu-id="dada4-115">Para remover um item da lista de verificação, defina o valor da propriedade como `null`.</span><span class="sxs-lookup"><span data-stu-id="dada4-115">To remove an item in the checklist, set the value of the property to `null`.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="0a263-116">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="0a263-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="dada4-116">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="dada4-116">JSON representation</span></span>
 
-<span data-ttu-id="0a263-117">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="0a263-117">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="dada4-117">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="dada4-117">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -45,7 +45,7 @@ ms.locfileid: "29511874"
   }
 }
 ```
-<span data-ttu-id="0a263-118">// Exemplo</span><span class="sxs-lookup"><span data-stu-id="0a263-118">// Example</span></span>
+<span data-ttu-id="dada4-118">Como</span><span class="sxs-lookup"><span data-stu-id="dada4-118">// Example</span></span>
 
 ```json
 {

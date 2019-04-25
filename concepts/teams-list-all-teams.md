@@ -5,28 +5,28 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.openlocfilehash: 847af7e9b2ff9f725ca2ebd2d7a1e82916e33c27
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27945787"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32580985"
 ---
-# <a name="list-all-teams-in-microsoft-teams-for-an-organization"></a><span data-ttu-id="a4afe-103">Listar todas as equipes do Microsoft Teams para uma organização</span><span class="sxs-lookup"><span data-stu-id="a4afe-103">List all teams in Microsoft Teams for an organization</span></span>
+# <a name="list-all-teams-in-microsoft-teams-for-an-organization"></a><span data-ttu-id="a7e4f-103">Listar todas as equipes do Microsoft Teams para uma organização</span><span class="sxs-lookup"><span data-stu-id="a7e4f-103">List all teams in Microsoft Teams for an organization</span></span>
 
-<span data-ttu-id="a4afe-104">Para listar todas as [equipes](/graph/api/resources/team?view=graph-rest-beta) em uma organização (locatário), você deve localizar todos os grupos que possuem equipes e, em seguida, obter informações de cada equipe.</span><span class="sxs-lookup"><span data-stu-id="a4afe-104">To list all [teams](/graph/api/resources/team?view=graph-rest-beta) in an organization (tenant), you find all groups that have teams, and then get information for each team.</span></span>
+<span data-ttu-id="a7e4f-104">Para listar todas as [equipes](/graph/api/resources/team?view=graph-rest-beta) em uma organização (locatário), você deve localizar todos os grupos que possuem equipes e, em seguida, obter informações de cada equipe.</span><span class="sxs-lookup"><span data-stu-id="a7e4f-104">To list all [teams](/graph/api/resources/team?view=graph-rest-beta) in an organization (tenant), you find all groups that have teams, and then get information for each team.</span></span>
 
-## <a name="get-a-list-of-groups"></a><span data-ttu-id="a4afe-105">Obter uma lista de grupos</span><span class="sxs-lookup"><span data-stu-id="a4afe-105">Get a list of groups</span></span>
+## <a name="get-a-list-of-groups"></a><span data-ttu-id="a7e4f-105">Obter uma lista de grupos</span><span class="sxs-lookup"><span data-stu-id="a7e4f-105">Get a list of groups</span></span>
 
-<span data-ttu-id="a4afe-106">Para obter uma lista de todos os [grupos](/graph/api/resources/group?view=graph-rest-beta) da organização que possuem equipes, obtenha uma [lista de todos os grupos](/graph/api/group-list?view=graph-rest-beta) e depois, em código, localize os que têm a propriedade **resourceProvisioningOptions** que contém “Equipe”.</span><span class="sxs-lookup"><span data-stu-id="a4afe-106">To get a list of all [groups](/graph/api/resources/group?view=graph-rest-beta) in the organization that have teams, get a [list of all groups](/graph/api/group-list?view=graph-rest-beta) and then in code find the ones that have a **resourceProvisioningOptions** property that contains "Team".</span></span>
-<span data-ttu-id="a4afe-107">Como os grupos são objetos grandes, use $select para obter as propriedades apenas do grupo que importa para você.</span><span class="sxs-lookup"><span data-stu-id="a4afe-107">Since groups are large objects, use $select to only get the properties of the group you care about.</span></span>
+<span data-ttu-id="a7e4f-106">Para obter uma lista de todos os [grupos](/graph/api/resources/group?view=graph-rest-beta) da organização que possuem equipes, obtenha uma [lista de todos os grupos](/graph/api/group-list?view=graph-rest-beta) e depois, em código, localize os que têm a propriedade **resourceProvisioningOptions** que contém “Equipe”.</span><span class="sxs-lookup"><span data-stu-id="a7e4f-106">To get a list of all [groups](/graph/api/resources/group?view=graph-rest-beta) in the organization that have teams, get a [list of all groups](/graph/api/group-list?view=graph-rest-beta) and then in code find the ones that have a **resourceProvisioningOptions** property that contains "Team".</span></span>
+<span data-ttu-id="a7e4f-107">Como os grupos são objetos grandes, use $select para obter as propriedades apenas do grupo que importa para você.</span><span class="sxs-lookup"><span data-stu-id="a7e4f-107">Since groups are large objects, use $select to only get the properties of the group you care about.</span></span>
 
 ```http
 GET /groups?$select=id,resourceProvisioningOptions
 ```
 
-> <span data-ttu-id="a4afe-108">**Observação**: certas equipes antigas não utilizadas não terão a configuração resourceProvisioningOptions.</span><span class="sxs-lookup"><span data-stu-id="a4afe-108">**Note**: Certain unused old teams will not have resourceProvisioningOptions set.</span></span> <span data-ttu-id="a4afe-109">Para saber mais, confira [problemas conhecidos](known-issues.md#missing-teams-in-list-all-teams).</span><span class="sxs-lookup"><span data-stu-id="a4afe-109">For details, see [known issues](known-issues.md#missing-teams-in-list-all-teams).</span></span>
+> <span data-ttu-id="a7e4f-108">**Observação**: certas equipes antigas não utilizadas não terão a configuração resourceProvisioningOptions.</span><span class="sxs-lookup"><span data-stu-id="a7e4f-108">**Note**: Certain unused old teams will not have resourceProvisioningOptions set.</span></span> <span data-ttu-id="a7e4f-109">Para saber mais, confira [problemas conhecidos](known-issues.md#missing-teams-in-list-all-teams).</span><span class="sxs-lookup"><span data-stu-id="a7e4f-109">For details, see [known issues](known-issues.md#missing-teams-in-list-all-teams).</span></span>
 
-<span data-ttu-id="a4afe-110">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="a4afe-110">The following is an example of the response.</span></span> 
+<span data-ttu-id="a7e4f-110">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="a7e4f-110">The following is an example of the response.</span></span> 
 
 ```http
 HTTP/1.1 200 OK
@@ -50,21 +50,21 @@ Content-length: xxx
 }
 ```
 
-## <a name="get-a-list-of-groups-using-beta-apis"></a><span data-ttu-id="a4afe-111">Obter uma lista de grupos usando as APIs beta</span><span class="sxs-lookup"><span data-stu-id="a4afe-111">Get a list of groups using beta APIs</span></span>
+## <a name="get-a-list-of-groups-using-beta-apis"></a><span data-ttu-id="a7e4f-111">Obter uma lista de grupos usando as APIs beta</span><span class="sxs-lookup"><span data-stu-id="a7e4f-111">Get a list of groups using beta APIs</span></span>
 
-<span data-ttu-id="a4afe-112">Usando as APIs beta, você pode usar $filter para retornar apenas os grupos que possuem equipes.</span><span class="sxs-lookup"><span data-stu-id="a4afe-112">Using the beta APIs, you can use $filter to return only the groups that have teams.</span></span>
+<span data-ttu-id="a7e4f-112">Usando as APIs beta, você pode usar $filter para retornar apenas os grupos que possuem equipes.</span><span class="sxs-lookup"><span data-stu-id="a7e4f-112">Using the beta APIs, you can use $filter to return only the groups that have teams.</span></span>
 
 ```http
 GET /groups?$filter=resourceProvisioningOptions/Any(x:x eq 'Team')
 ```
 
-> <span data-ttu-id="a4afe-113">**Observação**: $filter em /groups só está disponível por meio do ponto de extremidade beta.</span><span class="sxs-lookup"><span data-stu-id="a4afe-113">**Note**: $filter on /groups is only available through the beta endpoint.</span></span> <span data-ttu-id="a4afe-114">resourceProvisioningOptions está disponível na versão 1.0 e beta.</span><span class="sxs-lookup"><span data-stu-id="a4afe-114">resourceProvisioningOptions is available in v1.0 and beta.</span></span>
+> <span data-ttu-id="a7e4f-113">**Observação**: $filter em /groups só está disponível por meio do ponto de extremidade beta.</span><span class="sxs-lookup"><span data-stu-id="a7e4f-113">**Note**: $filter on /groups is only available through the beta endpoint.</span></span> <span data-ttu-id="a7e4f-114">resourceProvisioningOptions está disponível na versão 1.0 e beta.</span><span class="sxs-lookup"><span data-stu-id="a7e4f-114">resourceProvisioningOptions is available in v1.0 and beta.</span></span>
 
-> <span data-ttu-id="a4afe-115">**Observação**: certas equipes antigas não utilizadas não serão listadas.</span><span class="sxs-lookup"><span data-stu-id="a4afe-115">**Note**: Certain unused old teams will not be listed.</span></span> <span data-ttu-id="a4afe-116">Para saber mais, confira [problemas conhecidos](known-issues.md#missing-teams-in-list-all-teams).</span><span class="sxs-lookup"><span data-stu-id="a4afe-116">For details, see [known issues](known-issues.md#missing-teams-in-list-all-teams).</span></span>
+> <span data-ttu-id="a7e4f-115">**Observação**: certas equipes antigas não utilizadas não serão listadas.</span><span class="sxs-lookup"><span data-stu-id="a7e4f-115">**Note**: Certain unused old teams will not be listed.</span></span> <span data-ttu-id="a7e4f-116">Para saber mais, confira [problemas conhecidos](known-issues.md#missing-teams-in-list-all-teams).</span><span class="sxs-lookup"><span data-stu-id="a7e4f-116">For details, see [known issues](known-issues.md#missing-teams-in-list-all-teams).</span></span>
 
-<span data-ttu-id="a4afe-117">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="a4afe-117">The following is an example of the response.</span></span> 
+<span data-ttu-id="a7e4f-117">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="a7e4f-117">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="a4afe-118">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade.</span><span class="sxs-lookup"><span data-stu-id="a4afe-118">**Note:** The response object shown might be shortened for readability.</span></span> <span data-ttu-id="a4afe-119">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="a4afe-119">All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="a7e4f-118">**Observação:** o objeto de resposta mostrado aqui pode ser encurtado com fins de legibilidade.</span><span class="sxs-lookup"><span data-stu-id="a7e4f-118">**Note:** The response object shown might be shortened for readability.</span></span> <span data-ttu-id="a7e4f-119">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="a7e4f-119">All the properties will be returned from an actual call.</span></span>
 
 ```http
 HTTP/1.1 200 OK
@@ -110,17 +110,17 @@ Content-length: xxx
 }
 ```
 
-## <a name="get-team-information-for-a-group"></a><span data-ttu-id="a4afe-120">Obter informações de equipe para um grupo</span><span class="sxs-lookup"><span data-stu-id="a4afe-120">Get team information for a group</span></span>
+## <a name="get-team-information-for-a-group"></a><span data-ttu-id="a7e4f-120">Obter informações de equipe para um grupo</span><span class="sxs-lookup"><span data-stu-id="a7e4f-120">Get team information for a group</span></span>
 
-<span data-ttu-id="a4afe-121">Para obter informações de equipe para a equipe de um grupo específico, chame a API [get team](/graph/api/team-get?view=graph-rest-beta) e incluam a ID do grupo.</span><span class="sxs-lookup"><span data-stu-id="a4afe-121">To get team information for the team in a particular group, call the [get team](/graph/api/team-get?view=graph-rest-beta) API and include the group ID.</span></span>
+<span data-ttu-id="a7e4f-121">Para obter informações de equipe para a equipe de um grupo específico, chame a API [get team](/graph/api/team-get?view=graph-rest-beta) e incluam a ID do grupo.</span><span class="sxs-lookup"><span data-stu-id="a7e4f-121">To get team information for the team in a particular group, call the [get team](/graph/api/team-get?view=graph-rest-beta) API and include the group ID.</span></span>
 
 ```http
 GET /teams/{group-id}
 ```
 
-<span data-ttu-id="a4afe-122">O exemplo a seguir mostra a resposta.</span><span class="sxs-lookup"><span data-stu-id="a4afe-122">The following example shows the response.</span></span>
+<span data-ttu-id="a7e4f-122">O exemplo a seguir mostra a resposta.</span><span class="sxs-lookup"><span data-stu-id="a7e4f-122">The following example shows the response.</span></span>
 
-><span data-ttu-id="a4afe-p106">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="a4afe-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="a7e4f-p106">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="a7e4f-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "ignored",
   "truncated": true,
@@ -160,7 +160,7 @@ Content-length: 401
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="a4afe-125">Confira também</span><span class="sxs-lookup"><span data-stu-id="a4afe-125">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a7e4f-125">Confira também</span><span class="sxs-lookup"><span data-stu-id="a7e4f-125">See also</span></span>
 
-- [<span data-ttu-id="a4afe-126">Listar joinedTeams</span><span class="sxs-lookup"><span data-stu-id="a4afe-126">List joinedTeams</span></span>](/graph/api/user-list-joinedteams?view=graph-rest-beta)
-- [<span data-ttu-id="a4afe-127">Listar grupos</span><span class="sxs-lookup"><span data-stu-id="a4afe-127">List groups</span></span>](/graph/api/group-list?view=graph-rest-beta)
+- [<span data-ttu-id="a7e4f-126">Listar joinedTeams</span><span class="sxs-lookup"><span data-stu-id="a7e4f-126">List joinedTeams</span></span>](/graph/api/user-list-joinedteams?view=graph-rest-beta)
+- [<span data-ttu-id="a7e4f-127">Listar grupos</span><span class="sxs-lookup"><span data-stu-id="a7e4f-127">List groups</span></span>](/graph/api/group-list?view=graph-rest-beta)
