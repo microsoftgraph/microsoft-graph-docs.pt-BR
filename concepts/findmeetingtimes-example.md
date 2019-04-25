@@ -3,11 +3,11 @@ title: Encontrar possíveis horários de reunião no calendário do Outlook
 description: 'Seja no trabalho ou em uma instituição de ensino, procurar um horário e local em comum para uma reunião geralmente significa uma sobrecarga. Os aplicativos do Microsoft Graph podem usar o '
 localization_priority: Priority
 ms.openlocfilehash: 94e9cd7455d08741851662cc071e690b3ad0a558
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27819856"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32526404"
 ---
 # <a name="find-possible-meeting-times-on-the-outlook-calendar"></a>Encontrar possíveis horários de reunião no calendário do Outlook
 
