@@ -5,11 +5,11 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 ms.openlocfilehash: 2aa153234f6fab60d020c115bc6e972168a4fa37
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640284"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545664"
 ---
 # <a name="create-page"></a>Criar página
 
@@ -93,8 +93,7 @@ Content-Type:application/pdf
 --MyPartBoundary198374--
 ```
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: No objeto response mostrado aqui é truncado para fins de concisão. Todas as propriedades serão retornadas de uma chamada real.
-<!-- { "blockType": "ignored" } -->
+Veja a seguir um exemplo da resposta. Observação: O objeto response mostrado aqui está truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.<!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

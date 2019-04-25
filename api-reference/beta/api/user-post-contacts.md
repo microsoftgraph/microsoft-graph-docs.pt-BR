@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: dbac25f4cf86074876fd1be4f0632a5afdb08dc1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520162"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544080"
 ---
 # <a name="create-contact"></a>Criar contato
 
@@ -44,7 +44,7 @@ No corpo da solicitação, forneça uma representação JSON do objeto [contact]
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` objeto response de código e [de contato](../resources/contact.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `201 Created` o código de resposta e o objeto [Contact](../resources/contact.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação

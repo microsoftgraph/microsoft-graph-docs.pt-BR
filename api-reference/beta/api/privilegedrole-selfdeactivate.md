@@ -3,11 +3,11 @@ title: 'privilegedRole: selfDeactivate'
 description: Desative a função que é atribuída ao solicitante.
 localization_priority: Normal
 ms.openlocfilehash: 7175af64e7e36087bd048cd6e160393e2bf6377e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528687"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546554"
 ---
 # <a name="privilegedrole-selfdeactivate"></a>privilegedRole: selfDeactivate
 
@@ -17,7 +17,7 @@ Desative a função que é atribuída ao solicitante.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-O solicitante só pode chamar ```selfDeactivate``` para a função que é atribuída a ele. 
+O solicitante só pode chamar ```selfDeactivate``` a função que é atribuída a ele. 
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -31,7 +31,7 @@ O solicitante só pode chamar ```selfDeactivate``` para a função que é atribu
 POST /privilegedRoles/{id}/selfDeactivate
 ```
 
-Observe que ``<id>`` é a id de função de destino.
+Observe que ``<id>`` é a ID da função de destino.
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
@@ -42,9 +42,9 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` objeto response de código e [privilegedRoleAssignment](../resources/privilegedroleassignment.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `200 OK` o código de resposta e o objeto [privilegedRoleAssignment](../resources/privilegedroleassignment.md) no corpo da resposta.
 
-Observe que o inquilino deve ser registrado no PIM. Caso contrário, será retornado o código de status HTTP 403-Proibido.
+Observe que o locatário precisa ser registrado no PIM. Caso contrário, o código de status HTTP 403 proibido será retornado.
 ## <a name="example"></a>Exemplo
 Eis um exemplo de como chamar esta API.
 ##### <a name="request"></a>Solicitação

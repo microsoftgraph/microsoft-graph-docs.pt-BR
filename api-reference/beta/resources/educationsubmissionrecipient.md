@@ -1,25 +1,25 @@
 ---
-title: tipo de recurso de educationSubmissionRecipient
-description: Classe abstrata que representa os diferentes conjuntos de usuários aos quais um envio pode ser atribuído. Os valores possíveis incluem indivíduos ou grupos. Isso é usado dentro da propriedade **submission.recipient** .
+title: tipo de recurso educationSubmissionRecipient
+description: Classe abstrata que representa os diferentes conjuntos de usuários aos quais um envio pode ser atribuído. Os valores possíveis incluem indivíduos ou grupos. Isso é usado dentro da propriedade de **envio. Recipient** .
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 27b9714c2ae20a46447adacb4e98112945d9c12a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516872"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542854"
 ---
-# <a name="educationsubmissionrecipient-resource-type"></a>tipo de recurso de educationSubmissionRecipient
+# <a name="educationsubmissionrecipient-resource-type"></a>tipo de recurso educationSubmissionRecipient
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Classe abstrata que representa os diferentes conjuntos de usuários aos quais um envio pode ser atribuído. Os valores possíveis incluem indivíduos ou grupos. Isso é usado dentro da propriedade **submission.recipient** .
+Classe abstrata que representa os diferentes conjuntos de usuários aos quais um envio pode ser atribuído. Os valores possíveis incluem indivíduos ou grupos. Isso é usado dentro da propriedade de **envio. Recipient** .
 
 
 ## <a name="properties"></a>Propriedades
-Nenhum.
+Nenhum
 
 <!-- {
   "blockType": "resource",

@@ -1,19 +1,19 @@
 ---
 title: 'synchronizationSchema: funções'
-description: Liste todas as funções atualmente compatíveis com o attributeMappingSource.
+description: Listar todas as funções atualmente suportadas no attributeMappingSource.
 localization_priority: Normal
 ms.openlocfilehash: edfdb169f9945759e062cf2c57d5f6f3b4c22f2e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523411"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545238"
 ---
 # <a name="synchronizationschema-functions"></a>synchronizationSchema: funções
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Liste todas as funções atualmente compatíveis com o [attributeMappingSource](../resources/synchronization-attributemappingsource.md).
+Listar todas as funções atualmente suportadas no [attributeMappingSource](../resources/synchronization-attributemappingsource.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -44,12 +44,12 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [attributemappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [attributemappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ##### <a name="request"></a>Solicitação
-O exemplo a seguir é um exemplo de uma solicitação.
+Veja a seguir um exemplo de uma solicitação.
 <!-- {
   "blockType": "request",
   "name": "synchronizationschema_functions"
@@ -59,9 +59,9 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs
 ```
 
 ##### <a name="response"></a>Resposta
-O exemplo a seguir é um exemplo de uma resposta.
+Veja a seguir um exemplo de uma resposta.
 
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. Serão retornadas todas as propriedades em uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas em uma chamada real.
 
 <!--
 {

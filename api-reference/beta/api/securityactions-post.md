@@ -4,12 +4,12 @@ description: Criar um novo objeto SecurityAction. "
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: c8f9e98e57a351bd17776c77449f7d1ff8d8a897
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.openlocfilehash: 2d8b957df914225231623f0edbc633182393dff8
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482011"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545544"
 ---
 # <a name="create-securityaction"></a>Criar securityAction
 
@@ -23,7 +23,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | SecurityActions.ReadWrite.All |
+| Delegado (conta corporativa ou de estudante)     | Sem suporte. |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
 | Aplicativo                            | SecurityActions.ReadWrite.All |
 
@@ -39,7 +39,7 @@ POST /security/securityActions
 
 | Nome          | Descrição   |
 |:--------------|:--------------|
-| Autorização | Portador {código} |
+| Authorization | Portador {código} |
 
 ## <a name="request-body"></a>Corpo da solicitação
 

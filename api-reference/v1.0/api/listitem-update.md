@@ -6,11 +6,11 @@ title: Atualizar um registro em uma lista do SharePoint
 localization_priority: Priority
 ms.prod: sharepoint
 ms.openlocfilehash: f80f2607e953ba760893170366179f6751d9665d
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481990"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32541406"
 ---
 # <a name="update-an-item-in-a-list"></a>Atualizar um item em uma lista
 

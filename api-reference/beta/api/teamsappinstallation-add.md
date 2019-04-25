@@ -5,11 +5,11 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 1a77d3b01c70273d0d93ca1e3b1b66d1de53f8f0
-ms.sourcegitcommit: d1a9e7c8e1376a99c5a5416257889ec113613a77
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "30458670"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544649"
 ---
 # <a name="add-app-to-team"></a>Adicionar aplicativo à equipe
 

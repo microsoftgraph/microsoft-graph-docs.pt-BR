@@ -1,19 +1,19 @@
 ---
-title: Obter diretiva
+title: Obter política
 description: Recupere as propriedades de uma política.
 localization_priority: Normal
 ms.openlocfilehash: c2ef94c48e2b55f39cc812b9c2e3479a3352a6e6
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526736"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546847"
 ---
-# <a name="get-policy"></a>Obter diretiva
+# <a name="get-policy"></a>Obter política
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades de uma [diretiva](../resources/policy.md).
+Recupere as propriedades de uma [política](../resources/policy.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -39,10 +39,10 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` código de resposta e um objeto de [política](../resources/policy.md) no corpo da resposta. Se unsucccessful …
+Se bem-sucedido, este método retorna `200 OK` um código de resposta e um objeto [Policy](../resources/policy.md) no corpo da resposta. Se unsucccessful...
 
 ## <a name="example"></a>Exemplo
-O exemplo a seguir recupera uma diretiva específica.
+O exemplo a seguir recupera uma política específica.
 
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

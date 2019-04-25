@@ -1,15 +1,15 @@
 ---
-title: Criar uma propriedade estendida de vários valores
+title: Criar propriedade estendida de vários valores
 description: 'Crie uma ou mais propriedades estendidas de vários valores em uma instância nova ou existente de um recurso. '
 localization_priority: Normal
 ms.openlocfilehash: ba54bc3de2eb80fd7283f1a313448b77a04bbe4d
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642251"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540344"
 ---
-# <a name="create-multi-value-extended-property"></a>Criar uma propriedade estendida de vários valores
+# <a name="create-multi-value-extended-property"></a>Criar propriedade estendida de vários valores
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -35,9 +35,9 @@ Também há suporte para os seguintes recursos de grupo:
 Confira [Visão geral de propriedades estendidas](../resources/extended-properties-overview.md) para saber mais sobre quando usar extensões abertas ou propriedades estendidas e sobre como especificar propriedades estendidas.
 
 ## <a name="permissions"></a>Permissões
-Dependendo do recurso, você está criando a propriedade estendida no e a permissão digite (delegada ou aplicativos) você solicitação, a permissão especificada na tabela a seguir é o mínimo necessário para chamar essa API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Dependendo do recurso para o qual você está criando a propriedade estendida e o tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é o mínimo necessário para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-| Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Application |
+| Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Aplicativo |
 |:-----|:-----|:-----|:-----|
 | [calendar](../resources/calendar.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
 | [contato](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
@@ -54,8 +54,8 @@ Dependendo do recurso, você está criando a propriedade estendida no e a permis
 ## <a name="http-request"></a>Solicitação HTTP
 Você pode criar propriedades estendidas em uma instância de recurso nova ou existente.
 
-Para criar um ou mais propriedades estendidas em uma _nova_ instância de recurso, use a mesma solicitação REST como criando a instância e inclua as propriedades do novo recurso instância _e a propriedade estendida_ no corpo da solicitação.
-Observe que alguns recursos oferecem suporte a criação de mais de uma forma. Para obter mais informações sobre como criar essas instâncias de recurso, consulte os tópicos correspondentes para a criação de uma [mensagem](../resources/message.md), [mailFolder](../api/user-post-mailfolders.md), [evento](../api/user-post-events.md), [calendário](../api/user-post-calendars.md), [Contatos](../api/user-post-contacts.md), [contactFolder](../api/user-post-contactfolders.md), [, de [tarefa do Outlook](../resources/outlooktask.md) Pasta de tarefas do Outlook](../resources/outlooktaskfolder.md), [eventos de grupo](../api/group-post-events.md)e de [postagem de grupo](../resources/post.md). 
+Para criar uma ou mais propriedades estendidas em uma _nova_ instância de recurso, use a mesma solicitação REST válida para a criação da instância e inclua as propriedades da nova instância de recurso _e a propriedade estendida_ no corpo da solicitação.
+Observe que alguns recursos dão suporte à criação de mais de uma maneira. Para obter mais informações sobre como criar essas instâncias de recurso, consulte os tópicos correspondentes para criar uma [mensagem](../resources/message.md), [mailFolder](../api/user-post-mailfolders.md), [evento](../api/user-post-events.md), [calendário](../api/user-post-calendars.md), [contato](../api/user-post-contacts.md), [contactFolder](../api/user-post-contactfolders.md), [tarefa](../resources/outlooktask.md) [do Outlook Pasta de tarefas do Outlook](../resources/outlooktaskfolder.md), [evento de grupo](../api/group-post-events.md)e postagem de [grupo](../resources/post.md). 
  
 Veja a seguir a sintaxe das solicitações. 
 

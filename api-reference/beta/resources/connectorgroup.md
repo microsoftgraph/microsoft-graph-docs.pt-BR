@@ -1,15 +1,15 @@
 ---
-title: tipo de recurso de connectorGroup
+title: tipo de recurso do The Connector
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 ms.openlocfilehash: de405d2f0cbe0417271ab54e66c5c30073d8ee7f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517495"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543389"
 ---
-# <a name="connectorgroup-resource-type"></a>tipo de recurso de connectorGroup
+# <a name="connectorgroup-resource-type"></a>tipo de recurso do The Connector
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -17,27 +17,27 @@ ms.locfileid: "29517495"
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Obter connectorGroup](../api/connectorgroup-get.md) | [connectorGroup](connectorgroup.md) |Leia as propriedades e os relacionamentos do objeto connectorGroup.|
-|[Criar aplicativo](../api/connectorgroup-post-applications.md) |[application](application.md)| Associe um aplicativo com o grupo de conector pelo lançamento para o conjunto de aplicativos.|
-|[Lista de aplicativos](../api/connectorgroup-list-applications.md) |conjunto de [aplicativos](application.md)| Obter a coleção de objeto do aplicativo associado.|
-|[Criar um conector](../api/connectorgroup-post-members.md) |[Connector](connector.md)| Adicione um conector para o grupo de conector pelo lançamento para o conjunto de membros.|
-|[Listar membros](../api/connectorgroup-list-members.md) |coleção de [conector](connector.md)| Obtenha um conector a coleção de objetos.|
-|[Update](../api/connectorgroup-update.md) | [connectorGroup](connectorgroup.md)    |Atualize o objeto connectorGroup. |
-|[Delete](../api/connectorgroup-delete.md) | Nenhum |Exclua objeto connectorGroup. Todos os conectores devem ser remove antes de um conector de grupo pode ser excluído. |
+|[Obter um conector de conexão](../api/connectorgroup-get.md) | [connectorGroup](connectorgroup.md) |Leia as propriedades e as relações do objeto de conexão.|
+|[Criar aplicativo](../api/connectorgroup-post-applications.md) |[application](application.md)| Associe um aplicativo ao grupo de conectores postando na coleção de aplicativos.|
+|[Listar aplicativos](../api/connectorgroup-list-applications.md) |coleção [Application](application.md)| Obtenha a coleção de objetos de aplicativo associada.|
+|[Criar conector](../api/connectorgroup-post-members.md) |[conector](connector.md)| Adicionar um conector ao grupo de conectores postando na coleção Members.|
+|[Listar membros](../api/connectorgroup-list-members.md) |coleção [Connector](connector.md)| Obtenha uma coleção de objetos Connector.|
+|[Update](../api/connectorgroup-update.md) | [connectorGroup](connectorgroup.md)    |Atualize o objeto de conexão. |
+|[Excluir](../api/connectorgroup-delete.md) | Nenhum |Exclua objeto de conexão. Todos os conectores devem ser removidos para que um grupo do conector possa ser excluído. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|connectorGroupType|string| O tipo de conectores que será usado com o grupo. Os valores possíveis são: `applicationProxy`.|
-|id|String| O id de objeto do connectorGroup|
-|isDefault|Booliano| Indica se o connectorGroup é o grupo de conector padrão. Apenas um conector grupo pode ser o connectorGroup padrão e é definido pelo sistema.|
-|name|Cadeia de caracteres| O nome associado a connectorGroup.|
+|connectorGroupType|string| O tipo de conectores que serão usados com o grupo. Os valores possíveis são `applicationProxy`:.|
+|id|Cadeia de caracteres| A ID do objeto do conector|
+|isDefault|Booliano| Indica se o grupo de conectores é o padrão. Somente um grupo de conectores único pode ser o grupo de conectores padrão e é definido pelo sistema.|
+|name|String| O nome associado ao conector.|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|Aplicativos|conjunto de [aplicativos](application.md)| Somente leitura. Anulável.|
-|membros|coleção de [conector](connector.md)| Somente leitura. Anulável.|
+|Emprego|coleção [Application](application.md)| Somente leitura. Anulável.|
+|members|coleção [Connector](connector.md)| Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 

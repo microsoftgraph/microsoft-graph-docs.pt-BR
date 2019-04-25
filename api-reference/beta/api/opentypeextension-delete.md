@@ -4,11 +4,11 @@ description: 'Exclua uma extensão aberta (objeto openTypeExtension) da instânc
 localization_priority: Normal
 author: dkershaw10
 ms.openlocfilehash: 6882cd1502221642e10c7e0fe7cbca5d43e543a5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512525"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539952"
 ---
 # <a name="delete-open-extension"></a>Excluir extensão aberta
 
@@ -18,7 +18,7 @@ Exclua uma extensão aberta (objeto [openTypeExtension](../resources/opentypeext
 
 ## <a name="permissions"></a>Permissões
 
-Dependendo de permissão e o recurso que você está excluindo a extensão do tipo (delegado ou aplicativo) solicitada, a permissão especificada na tabela a seguir é menos privilegiada necessário chamar essa API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Dependendo do recurso do qual você está excluindo a extensão e do tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é o menos privilegiado necessário para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 | Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Application |
 |:-----|:-----|:-----|:-----|

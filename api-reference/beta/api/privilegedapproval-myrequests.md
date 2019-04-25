@@ -1,19 +1,19 @@
 ---
 title: 'privilegedApproval: myRequests'
-description: Obtenha as solicitações de aprovação do solicitador.
+description: Receba solicitações de aprovação do solicitante.
 localization_priority: Normal
 ms.openlocfilehash: 9fcbdab424c98633a8f543875b9b7c2275894df0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512889"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546665"
 ---
 # <a name="privilegedapproval-myrequests"></a>privilegedApproval: myRequests
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha as solicitações de aprovação do solicitador.
+Receba solicitações de aprovação do solicitante.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -40,9 +40,9 @@ GET /privilegedApproval/myRequests
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` objeto response de código e [privilegedApproval](../resources/privilegedapproval.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `200 OK` o código de resposta e o objeto [privilegedApproval](../resources/privilegedapproval.md) no corpo da resposta.
 
-Observe que o inquilino deve ser registrado no PIM. Caso contrário, será retornado o código de status HTTP 403-Proibido.
+Observe que o locatário precisa ser registrado no PIM. Caso contrário, o código de status HTTP 403 proibido será retornado.
 
 ## <a name="example"></a>Exemplo
 Eis um exemplo de como chamar esta API.

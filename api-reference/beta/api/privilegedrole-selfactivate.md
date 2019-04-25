@@ -3,11 +3,11 @@ title: 'privilegedRole: selfActivate'
 description: Ative a função que é atribuída ao solicitante.
 localization_priority: Normal
 ms.openlocfilehash: e0197599373246853906b879c0f3d13e61a45244
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515066"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546581"
 ---
 # <a name="privilegedrole-selfactivate"></a>privilegedRole: selfActivate
 
@@ -15,13 +15,13 @@ ms.locfileid: "29515066"
 
 Ative a função que é atribuída ao solicitante.
 
->**Observação:** De 2018 efetivo de dezembro, essa API não será suportada e não deve ser usado. Use o [PrivilegedRoleAssignmentRequest criar](privilegedroleassignmentrequest-post.md) .
+>**Observação:** A partir de dezembro de 2018, esta API não terá mais suporte e não deve ser usada. Use a [criar PrivilegedRoleAssignmentRequest](privilegedroleassignmentrequest-post.md) em vez disso.
 
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-O solicitante só pode chamar ```selfActivate``` para a função que é atribuída a ele.
+O solicitante só pode chamar ```selfActivate``` a função que é atribuída a ele.
  
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -47,16 +47,16 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|Reason|string|Opcional. Descrição sobre o motivo de ativação essa função.|
-|duration|string|Opcional. Valores válidos poderia ser ```min``` (duração mínima de ativação), ```default``` (duração de ativação padrão para a função,) ou um valor double para especificar quantas horas é a ativação. A duração especificada não pode ser maior que a duração de ativação da função da configuração da função. |
-|ticketNumber|string|Opcional. O número de tíquete que é usado para acompanhamento ativação essa função.|
-|ticketSystem|string|Opcional. O sistema de tíquete.|
+|motivos|string|Opcional. Descrição sobre o motivo para esta ativação de função.|
+|duration|string|Opcional. Os valores válidos podem ```min``` ser (duração mínima da ativação ```default``` ), (duração de ativação padrão para a função) ou um valor duplo para especificar quantas horas é a ativação. A duração especificada não pode ser maior do que a duração de ativação da função da configuração de função. |
+|ticketNumber|string|Opcional. O número do tíquete usado para controlar esta ativação de função.|
+|ticketSystem|string|Opcional. O sistema de permissão.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [privilegedRoleAssignment](../resources/privilegedroleassignment.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [privilegedRoleAssignment](../resources/privilegedroleassignment.md) no corpo da resposta.
 
-Observe que o inquilino deve ser registrado no PIM. Caso contrário, será retornado o código de status HTTP 403-Proibido.
+Observe que o locatário precisa ser registrado no PIM. Caso contrário, o código de status HTTP 403 proibido será retornado.
 ## <a name="example"></a>Exemplo
 O exemplo a seguir mostra como chamar essa API.
 ##### <a name="request"></a>Solicitação

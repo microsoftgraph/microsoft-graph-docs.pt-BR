@@ -1,40 +1,40 @@
 ---
-title: tipo de recurso de directorySettingTemplate
-description: Modelos de configuração de diretório representam as configurações definidas pelo sistema disponíveis para o inquilino. Configurações do diretório podem ser criadas com base nos directorySettingTemplates disponíveis e valores alterados de seus padrões predefinidas. Modelos de configuração do diretório não podem ser criados, atualizados ou excluídos. Essas configurações podem representar as configurações de todo o locatário, ou podem representar as configurações de entidade específica.  Atualmente, os únicos modelos disponíveis se aplicam a grupos do Office e incluem configurações como se os usuários podem criar grupos ou convidar pessoas de fora da organização para se tornar membros de um grupo.
+title: tipo de recurso directorySettingTemplate
+description: Modelos de configuração de diretório representam configurações definidas pelo sistema disponíveis para o locatário. As configurações de diretório podem ser criadas com base no directorySettingTemplates disponível e os valores alterados de seus padrões predefinidos. Os modelos de configuração de diretório não podem ser criados, atualizados ou excluídos. Essas configurações podem representar configurações de todo o locatário ou podem representar configurações específicas da entidade.  Atualmente, os únicos modelos disponíveis se aplicam aos grupos do Office e incluem configurações como se os usuários podem criar grupos ou convidar convidados de fora da organização para se tornarem membros de um grupo.
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 366817df422686a8db658f1cab1d5805c24c4f91
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516655"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543244"
 ---
-# <a name="directorysettingtemplate-resource-type"></a>tipo de recurso de directorySettingTemplate
+# <a name="directorysettingtemplate-resource-type"></a>tipo de recurso directorySettingTemplate
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Modelos de configuração de diretório representam as configurações definidas pelo sistema disponíveis para o inquilino. [Configurações do diretório](directorysetting.md) podem ser criados com base nos directorySettingTemplates disponíveis e valores alterados de seus padrões predefinidas. Modelos de configuração do diretório não podem ser criados, atualizados ou excluídos. Essas configurações podem representar as configurações de todo o locatário, ou podem representar as configurações de entidade específica.  Atualmente, os únicos modelos disponíveis se aplicam a grupos do Office e incluem configurações como se os usuários podem criar grupos ou convidar pessoas de fora da organização para se tornar membros de um grupo.
+Modelos de configuração de diretório representam configurações definidas pelo sistema disponíveis para o locatário. [As configurações de diretório](directorysetting.md) podem ser criadas com base no directorySettingTemplates disponível e os valores alterados de seus padrões predefinidos. Os modelos de configuração de diretório não podem ser criados, atualizados ou excluídos. Essas configurações podem representar configurações de todo o locatário ou podem representar configurações específicas da entidade.  Atualmente, os únicos modelos disponíveis se aplicam aos grupos do Office e incluem configurações como se os usuários podem criar grupos ou convidar convidados de fora da organização para se tornarem membros de um grupo.
 
-> **Observação**: A versão /beta do tipo de recurso directorySettingTemplate se aplica apenas aos grupos. A versão /v1.0 foi renomeada para groupSettingTemplate.
+> **Observação**: a versão do/beta do tipo de recurso directorySettingTemplate só se aplica a grupos. A versão do/v1.0 foi renomeada como groupSettingTemplate.
 
 ## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Obter directorySettingTemplate](../api/directorysettingtemplate-get.md) | [directorySettingTemplate](directorysettingtemplate.md) |Leia as propriedades específicas de um dos objetos directorySettingTemplate definidas pelo sistema.|
-|[Lista directorySettingTemplate](../api/directorysettingtemplate-list.md) | [Coleção de directorySettingTemplate](directorysettingtemplate.md) |Liste todos os objetos directorySettingTemplate definidas pelo sistema.|
+|[Obter directorySettingTemplate](../api/directorysettingtemplate-get.md) | [directorySettingTemplate](directorysettingtemplate.md) |Leia as propriedades específicas de um dos objetos directorySettingTemplate definidos pelo sistema.|
+|[Listar directorySettingTemplate](../api/directorysettingtemplate-list.md) | [Coleção de directorySettingTemplate](directorysettingtemplate.md) |Lista todos os objetos directorySettingTemplate definidos pelo sistema.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |description|string|Descrição do modelo. Somente leitura.|
-|displayName|string|Nome para exibição do modelo Somente leitura. |
-|id|string| O identificador exclusivo do modelo. Somente leitura.|
-|values|Conjunto [settingTemplateValue](settingtemplatevalue.md)| Coleção de settingTemplateValues que lista o conjunto de configurações disponíveis, padrões e tipos que compõem este modelo.  Somente leitura. |
+|displayName|string|Nome para exibição do modelo. Somente leitura. |
+|id|cadeia de caracteres| Identificador exclusivo do modelo. Somente leitura.|
+|values|coleção [settingTemplateValue](settingtemplatevalue.md)| Coleção de settingTemplateValues que lista o conjunto de configurações disponíveis, padrões e tipos que compõem esse modelo.  Somente leitura. |
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 Nenhum
 
 

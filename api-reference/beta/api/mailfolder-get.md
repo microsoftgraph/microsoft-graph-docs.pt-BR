@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: af2cc42c2ee72f1a57a1e0f9402209c107e259f4
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29967295"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540895"
 ---
 # <a name="get-mailfolder"></a>Obter mailFolder
 
@@ -17,10 +17,10 @@ ms.locfileid: "29967295"
 
 Recupere as propriedades e os relacionamentos de um objeto da pasta de mensagens.
 
-Há dois cenários onde um aplicativo pode obter a pasta de correio de outro usuário:
+Há dois cenários em que um aplicativo pode obter a pasta de email de outro usuário:
 
-* Se o aplicativo tem permissões de aplicativo ou
-* Se o aplicativo tiver apropriada [permissões](#permissions) delegadas de um usuário, e outro usuário compartilhou uma pasta de email com que o usuário ou, tem acesso delegado a esse usuário. Confira os [detalhes e um exemplo](/graph/outlook-share-messages-folders).
+* Se o aplicativo tiver permissões de aplicativo ou
+* Se o aplicativo tiver as [permissões](#permissions) delegadas apropriadas de um usuário e outro usuário tiver compartilhado uma pasta de email com esse usuário, ou tiver concedido acesso delegado a esse usuário. Confira [detalhes e um exemplo](/graph/outlook-share-messages-folders).
 
 ## <a name="permissions"></a>Permissões
 
@@ -61,7 +61,7 @@ Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto 
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-get-a-mail-folder"></a>O exemplo 1: Obtenha uma pasta de email
+### <a name="example-1-get-a-mail-folder"></a>Exemplo 1: obter uma pasta de email
 
 #### <a name="request"></a>Solicitação
 
@@ -105,7 +105,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-a-mail-search-folder"></a>Exemplo 2: Obter uma pasta de pesquisa de email
+### <a name="example-2-get-a-mail-search-folder"></a>Exemplo 2: obter uma pasta de pesquisa de email
 
 #### <a name="request"></a>Solicitação
 

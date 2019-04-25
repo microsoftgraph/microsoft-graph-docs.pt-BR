@@ -1,21 +1,21 @@
 ---
 title: Excluir programa
-description: No Windows Azure AD para acessar o recurso de revisões, excluir um objeto de programa.
+description: No recurso de revisões do Azure AD Access, exclua um objeto Program.
 localization_priority: Normal
 ms.openlocfilehash: 930367e6c61d354655e73fb7ece9c8776e15f34e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519504"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546381"
 ---
 # <a name="delete-program"></a>Excluir programa
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No recurso de [acesso analisa](../resources/accessreviews-root.md) Azure AD, exclua um objeto de [programa](../resources/program.md) .
+No recurso de revisões do Azure AD [Access](../resources/accessreviews-root.md) , exclua um objeto [Program](../resources/program.md) .
 
-Não exclua um programa que ainda tem `programControl` vinculadas a ela, as avaliações de acesso devem primeiro ser excluídas ou desligadas a partir do programa e vinculadas a um programa diferente.  Além disso, observe que o programa internos padrão não pode ser excluído.
+Não exclua um programa que ainda esteja `programControl` vinculado a ele, essas revisões de acesso devem primeiro ser excluídas ou desvinculadas do programa e vinculadas a um programa diferente.  Além disso, observe que o programa padrão interno não pode ser excluído.
 
 
 ## <a name="permissions"></a>Permissões
@@ -23,7 +23,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | `ProgramControl.ReadWrite.All`.  O usuário conectado também deve ser uma função de diretório que permite a atualização-los para criar um programa. |
+|Delegado (conta corporativa ou de estudante)     | `ProgramControl.ReadWrite.All`.  O usuário conectado também deve estar em uma função de diretório que permite que eles criem um programa. |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | Sem suporte. |
 
@@ -35,7 +35,7 @@ DELETE /programs('<id>')
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome         | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| Autorização | string | Token de portador Obrigatório. |
+| Autorização | string | \{token\} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

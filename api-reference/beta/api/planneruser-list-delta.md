@@ -1,27 +1,27 @@
 ---
-title: 'Planejador: delta'
-description: Recupera as alterações em objetos que o usuário está inscrito em.
+title: 'Planner: Delta'
+description: Recupera alterações nos objetos nos quais o usuário está inscrito.
 author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 ms.openlocfilehash: 772a5d487f48b1552707da45729a84c7fdf7da2f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525721"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546819"
 ---
-# <a name="planner-delta"></a>Planejador: delta
+# <a name="planner-delta"></a>Planner: Delta
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupera as alterações em objetos que o usuário está [inscrito](../resources/planner-overview.md#track-changes-using-delta-query) .
+Recupera alterações nos objetos nos quais o usuário está [inscrito](../resources/planner-overview.md#track-changes-using-delta-query) .
 
-Esse método permite que o seu aplicativo para controlar as alterações nos objetos que o usuário pode acessar dentro Planejador ao longo do tempo.
+Este método permite que seu aplicativo rastreie alterações para objetos que o usuário pode acessar no planejador ao longo do tempo.
 
-O valor de retorno deste método deve conter heterogêneo tipos de objetos do planejador.
+O valor de retorno desse método pode conter tipos heterogêneo de objetos do Planner.
 
-Para obter mais informações sobre o controle de alterações nos dados do Microsoft Graph, consulte [consulta delta de usar para rastrear alterações nos dados do Microsoft Graph](/graph/delta-query-overview).
+Para obter mais informações sobre o controle de alterações nos dados do Microsoft Graph, consulte [usar a consulta Delta para controlar alterações nos dados do Microsoft Graph](/graph/delta-query-overview).
 
 ## <a name="permissions"></a>Permissões
 
@@ -42,7 +42,7 @@ GET /me/planner/all/delta
 GET /users/<id>/planner/all/delta
 ```
 
-Sem parâmetros de consulta adicionais (como `$select`, `$expand`, ou `$filter`) são suportados atualmente na implementação do Planejador de consultas delta.
+Nenhum parâmetro de consulta adicional (como `$select`, `$expand`ou `$filter`) é suportado atualmente na implementação do Planner de consultas Delta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -56,13 +56,13 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um conjunto de alterações a serem aplicadas a objetos no corpo da resposta e um link de sincronização Delta a seguir.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e uma coleção de alterações a serem aplicadas aos objetos no corpo da resposta e um link de sincronização Delta a seguir.
 
-Se o `deltaLink` que usa o chamador é mal formados, esse ponto de extremidade retornará HTTP 400.
+Se o `deltaLink` chamador usa estiver malformado, este ponto de extremidade retornará http 400.
 
-Se o `deltaLink` que usa o chamador é muito antigo, esse ponto de extremidade retornará 410 HTTP.
+Se o `deltaLink` chamador usar for muito antigo, esse ponto de extremidade retornará http 410.
 
-Este método pode retornar qualquer um dos [códigos de status de HTTP](/graph/errors). Os erros mais comuns que os aplicativos devem tratar para esse método são as respostas 403 e 404. Saiba mais sobre esses erros em [Condições de erro comuns do Planner](../resources/planner-overview.md#common-planner-error-conditions).
+Este método pode retornar qualquer um dos [códigos de status http](/graph/errors). Os erros mais comuns que os aplicativos devem lidar com esse método são as respostas 403 e 404. Para obter mais informações sobre esses erros, confira [condições de erro do planejador comum](../resources/planner-overview.md#common-planner-error-conditions).
 
 ## <a name="example"></a>Exemplo
 

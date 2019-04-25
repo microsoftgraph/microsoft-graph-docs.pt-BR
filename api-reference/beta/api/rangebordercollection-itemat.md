@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: f0308049046cd91484d996d2e3de84b007c89223
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524552"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546182"
 ---
 # <a name="rangebordercollection-itemat"></a>RangeBorderCollection: ItemAt
 
@@ -44,7 +44,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|índice|number|Valor de índice do objeto a ser recuperado. Indexados com zero.|
+|index|number|Valor de índice do objeto a ser recuperado. Indexados com zero.|
 
 ## <a name="response"></a>Resposta
 

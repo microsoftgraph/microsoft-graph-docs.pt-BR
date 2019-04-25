@@ -1,19 +1,19 @@
 ---
-title: Políticas de lista atribuídas ao aplicativo ou entidade de serviço
-description: Recupere os objetos de política atribuídos a um aplicativo ou entidade de serviço.
+title: Listar políticas atribuídas à entidade de serviço ou aplicativo
+description: Recupere os objetos de política atribuídos a uma entidade de serviço ou aplicativo.
 localization_priority: Normal
 ms.openlocfilehash: 1ed39f376b7d090b784f867a59fcb93558bd5f1a
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640011"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546770"
 ---
-# <a name="list-policies-assigned-to-application-or-service-principal"></a>Políticas de lista atribuídas ao aplicativo ou entidade de serviço
+# <a name="list-policies-assigned-to-application-or-service-principal"></a>Listar políticas atribuídas à entidade de serviço ou aplicativo
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere os objetos de [política](../resources/policy.md) atribuídos a um aplicativo ou entidade de serviço.
+Recupere os objetos de [política](../resources/policy.md) atribuídos a uma entidade de serviço ou aplicativo.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -30,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 GET /applications/{id}/policies
 ```
 
-> Observação: O "id" na solicitação é a propriedade "id" do aplicativo ou serviço principal, não a propriedade "appid".
+> Observação: "ID" na solicitação é a propriedade "ID" da entidade de serviço ou aplicativo, não a propriedade "AppID".
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
@@ -42,7 +42,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` objetos de código e a [diretiva](../resources/policy.md) de resposta no corpo da resposta. Se não obtiver êxito, uma `4xx` será retornado o erro com detalhes específicos.
+Se bem-sucedido, este método retorna `200 OK` o código de resposta e os objetos [Policy](../resources/policy.md) no corpo da resposta. Caso não consiga, um `4xx` erro será retornado com detalhes específicos.
 
 ## <a name="example"></a>Exemplo
 O exemplo a seguir recupera as políticas atribuídas a um aplicativo.

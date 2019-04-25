@@ -5,11 +5,11 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 ms.openlocfilehash: 55613e3c13695a502b43c127c1164d2adf9f6534
-ms.sourcegitcommit: 3615f9475d57bfbb3a8c4402af863897f592dfbd
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30789666"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544397"
 ---
 # <a name="update-tiindicator"></a>Atualizar tiIndicator
 
@@ -48,11 +48,11 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|action|string| A ação a ser aplicada se o indicador for correspondido de dentro da ferramenta de segurança do targetProduct. Os valores possíveis são: `unknown`, `allow`, `block`, `alert`.|
+|ação|string| A ação a ser aplicada se o indicador for correspondido de dentro da ferramenta de segurança do targetProduct. Os valores possíveis são: `unknown`, `allow`, `block`, `alert`.|
 |activityGroupNames|Coleção de cadeias de caracteres|O nome do Cyber Threat Intelligence (s) para as partes responsáveis pela atividade mal-intencionada coberta pelo indicador de ameaças.|
 |additionalInformation|String|Uma área catchall na qual os dados extras do indicador não cobertos pelas outras propriedades de tiIndicator podem ser colocados. Os dados colocados no additionalInformation normalmente não serão utilizados pela ferramenta de segurança do targetProduct.|
 |confidence|Int32|Um inteiro representando a confiança dos dados dentro do indicador identifica precisamente o comportamento mal-intencionado. Os valores aceitáveis são 0 – 100 com 100 sendo os mais altos.|
-|descrição|String|Breve descrição (100 caracteres ou menos) da ameaça representada pelo indicador.|
+|description|String|Breve descrição (100 caracteres ou menos) da ameaça representada pelo indicador.|
 |diamondModel|[diamondModel](#diamondmodel-values)|A área do modelo em losango em que esse indicador existe. Os valores possíveis são: `unknown`, `adversary`, `capability`, `infrastructure`, `victim`.|
 |expirationDateTime|DateTimeOffset| Cadeia de caracteres DateTime indicando quando o indicador expira. Todos os indicadores devem ter uma data de vencimento para evitar indicadores obsoletos persistentes no sistema. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `2014-01-01T00:00:00Z`.|
 |externalId|Cadeia de caracteres|Um número de identificação que liga o indicador de volta para o sistema do provedor de indicadores (por exemplo, uma chave externa).|
@@ -81,9 +81,9 @@ Para obter informações sobre esse modelo, consulte [o modelo de losango](http:
 
 | Valores | Descrição |
 |:-------|:------------|
-|Ações|Representa "ações nos objetivos". O invasor está aproveitando o sistema comprometido para realizar ações como um ataque de negação de serviço distribuído.|
+|Actions|Representa "ações nos objetivos". O invasor está aproveitando o sistema comprometido para realizar ações como um ataque de negação de serviço distribuído.|
 |C2|Representa o canal de controle pelo qual um sistema comprometido é manipulado.|
-|Delivery|O processo de distribuição do código de exploração para vítimas (por exemplo, USB, email, sites).|
+|Entrega|O processo de distribuição do código de exploração para vítimas (por exemplo, USB, email, sites).|
 |Invasão|O código de exploração que aproveita as vulnerabilidades (por exemplo, execução de código).|
 |Instalação|Instalação de malware após uma vulnerabilidade ter sido explorada.|
 |Reconhecimento|O indicador é uma evidência de um grupo de atividades que coleta informações a serem usadas em um ataque futuro.|

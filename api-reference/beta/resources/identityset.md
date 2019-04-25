@@ -4,16 +4,17 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: IdentitySet
 localization_priority: Normal
-ms.openlocfilehash: 0a963f7158dbb812fc1f51fbff208297a2a9f076
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.openlocfilehash: 10b39bd5747e10ea4340bb5b4c54df0f94eb4229
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482193"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547141"
 ---
 # <a name="identityset-resource-type"></a>tipo de recurso identityset
 
-O recurso **IdentitySet** é uma coleção de chaves dos recursos [identity](identity.md). É usado para representar uma coleção de identidades associada a vários eventos de um item, como _created by_ ou _last modified by_.
+O **** recurso identityset é uma coleção com chave de recursos de [identidade](identity.md) .
+É usado para representar uma coleção de identidades associada a vários eventos de um item, como _created by_ ou _last modified by_.
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -25,6 +26,8 @@ Veja a seguir uma representação JSON do recurso.
   "optionalProperties": [
     "application",
     "applicationInstance",
+    "conversation",
+    "conversationIdentityType",
     "device",
     "encrypted",
     "guest",
@@ -35,13 +38,15 @@ Veja a seguir uma representação JSON do recurso.
 } -->
 ```json
 {
-  "application": {"@odata.type": "#microsoft.graph.identity"},
-  "applicationInstance": {"@odata.type": "#microsoft.graph.identity"},
-  "device": {"@odata.type": "#microsoft.graph.identity"},
-  "encrypted": {"@odata.type": "#microsoft.graph.identity"},
-  "guest": {"@odata.type": "#microsoft.graph.identity"},
-  "phone": {"@odata.type": "#microsoft.graph.identity"},
-  "user": {"@odata.type": "#microsoft.graph.identity"}
+  "application": {"@odata.type": "microsoft.graph.identity"},
+  "applicationInstance": {"@odata.type": "microsoft.graph.identity"},
+  "conversation": {"@odata.type": "microsoft.graph.identity"},
+  "conversationIdentityType": {"@odata.type": "microsoft.graph.identity"},
+  "device": {"@odata.type": "microsoft.graph.identity"},
+  "encrypted": {"@odata.type": "microsoft.graph.identity"},
+  "guest": {"@odata.type": "microsoft.graph.identity"},
+  "phone": {"@odata.type": "microsoft.graph.identity"},
+  "user": {"@odata.type": "microsoft.graph.identity"}
 }
 ```
 
@@ -50,6 +55,8 @@ Veja a seguir uma representação JSON do recurso.
 | Propriedade    | Tipo                    | Descrição                                             |
 |:------------|:------------------------|:--------------------------------------------------------|
 | application | [Identidade](identity.md) | Opcional. O aplicativo associado a essa ação.  |
+| conversa| [Identity](identity.md) | Opcional. A equipe ou canal associado a esta ação.       |
+| conversationIdentityType| [Identity](identity.md) | Opcional. Indica se a propriedade de **conversa** identifica uma equipe ou um canal.|
 | device      | [Identidade](identity.md) | Opcional. O dispositivo associado a essa ação.       |
 | phone       | [identity](identity.md) | Opcional. O número de telefone associado a esta ação. |
 | user        | [Identity](identity.md) | Opcional. O usuário associado a essa ação.         |

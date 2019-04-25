@@ -1,19 +1,19 @@
 ---
 title: Excluir synchronizationJob
-description: Interromper o trabalho de sincronização e excluir permanentemente todo o estado associado a ela. Sincronizadas contas são deixadas como-é.
+description: Interrompa o trabalho de sincronização e exclua permanentemente todo o estado associado a ele. As contas sincronizadas são deixadas como estão.
 localization_priority: Normal
 ms.openlocfilehash: 29083413c5b24a5ed07b671adfa048f58d437f0d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521681"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545211"
 ---
 # <a name="delete-synchronizationjob"></a>Excluir synchronizationJob
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Interromper o trabalho de sincronização e excluir permanentemente todo o estado associado a ela. Sincronizadas contas são deixadas como-é.
+Interrompa o trabalho de sincronização e exclua permanentemente todo o estado associado a ele. As contas sincronizadas são deixadas como estão.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -42,12 +42,12 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, retorna um `204 No Content` resposta. Ele não retornará nada no corpo da resposta.
+Se tiver êxito, retornará `204 No Content` uma resposta. Não retorna nada no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ##### <a name="request"></a>Solicitação
-O exemplo a seguir é um exemplo de uma solicitação.
+Veja a seguir um exemplo de uma solicitação.
 <!-- {
   "blockType": "request",
   "name": "delete_synchronizationjob"

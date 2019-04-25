@@ -1,27 +1,27 @@
 ---
-title: tipo de recurso de educationIdentityDomain
-description: 'Representa o mapeamento entre um tipo de usuário de educação e o domínio em que a conta do usuário pertence. O recurso de domínio é parte da configuração de criação de identidade. '
+title: tipo de recurso educationIdentityDomain
+description: 'Representa o mapeamento entre um tipo de usuário educacional e o domínio ao qual a conta do usuário pertence. O recurso de domínio faz parte da configuração de criação de identidade. '
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: 0c6004d18897b8f8284c06a3b09830072148df87
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528176"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543074"
 ---
-# <a name="educationidentitydomain-resource-type"></a>tipo de recurso de educationIdentityDomain
+# <a name="educationidentitydomain-resource-type"></a>tipo de recurso educationIdentityDomain
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa o mapeamento entre um tipo de usuário de educação e o domínio em que a conta do usuário pertence. O recurso de domínio é parte da [configuração de criação de identidade](educationidentitycreationconfiguration.md). 
+Representa o mapeamento entre um tipo de usuário educacional e o domínio ao qual a conta do usuário pertence. O recurso de domínio faz parte da [configuração de criação de identidade](educationidentitycreationconfiguration.md). 
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade | Tipo | Descrição |
 |:-|:-|:-|
-| appliesTo | string |  O tipo de função de usuário para atribuir a licença. Os valores possíveis são: `student` e `teacher`.      |
+| **appliesTo** | string |  O tipo de função de usuário a ser atribuído à licença. Os valores possíveis são: `student` e `teacher`.      |
 | **name** | string |  Representa o domínio da conta de usuário.         |
 
 ## <a name="json-representation"></a>Representação JSON

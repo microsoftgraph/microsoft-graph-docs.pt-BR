@@ -1,21 +1,21 @@
 ---
 title: Atualizar plannerUser
-description: Atualize as propriedades de um objeto plannerUser. Você pode usar essa operação para adicionar ou remover os planos da lista de planos de favoritos do usuário e indicar que o usuário estiver planejando acessou recentemente.
+description: Atualiza as propriedades de um objeto plannerUser. Você pode usar essa operação para adicionar ou remover planos da lista de planos favoritos de um usuário e para indicar quais planos o usuário exibiu recentemente.
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 95c631d39fb650dea0b87871bdd10d92a3ab31eb
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508920"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538747"
 ---
 # <a name="update-planneruser"></a>Atualizar plannerUser
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades de um objeto [plannerUser](../resources/planneruser.md) . Você pode usar essa operação para adicionar ou remover os planos da lista de planos de favoritos do usuário e indicar que o usuário estiver planejando acessou recentemente.
+Atualiza as propriedades de um objeto [plannerUser](../resources/planneruser.md) . Você pode usar essa operação para adicionar ou remover planos da lista de planos favoritos de um usuário e para indicar quais planos o usuário exibiu recentemente.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -35,24 +35,24 @@ PATCH /me/planner
 | Nome       | Descrição|
 |:-----------|:-----------|
 | Autorização  | Portador {código}. Obrigatório.|
-| If-Match  | Último valor conhecido do ETag para o **plannerUser** a ser atualizado. Obrigatório.|
+| If-Match  | Último valor de ETag conhecido para o **plannerUser** a ser atualizado. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações em outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
+No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|favoritePlanReferences|[plannerFavoritePlanReferenceCollection](../resources/plannerfavoriteplanreferencecollection.md)|Alterações à coleção que contém as referências para os planos de que o usuário tenha marcado como um favorito.|
-|recentPlanReferences|[plannerRecentPlanReferenceCollection](../resources/plannerrecentplanreferencecollection.md)|Alterações à coleção que contém as referências para os planos de que o usuário acessou recentemente.|
+|favoritePlanReferences|[plannerFavoritePlanReferenceCollection](../resources/plannerfavoriteplanreferencecollection.md)|Alterações à coleção que contém as referências para os planos que o usuário marcou como favorito.|
+|recentPlanReferences|[plannerRecentPlanReferenceCollection](../resources/plannerrecentplanreferencecollection.md)|Alterações à coleção que contém as referências para os planos que o usuário exibiu recentemente.|
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto atualizado [plannerUser](../resources/planneruser.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [plannerUser](../resources/planneruser.md) atualizado no corpo da resposta.
 
 Este método pode retornar qualquer um dos [códigos de status de HTTP](/graph/errors). Os erros mais comuns que os aplicativos devem tratar para esse método são as respostas 400, 403, 404, 409 e 412. Saiba mais sobre esses erros em [Condições de erro comuns do Planner](../resources/planner-overview.md#common-planner-error-conditions).
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-Este é um exemplo de solicitação. Essa solicitação adiciona o plano de "Próximo lançamento discussão" com o ID "jd8S5gOaFk2S8aWCIAJz42QAAxtD" como um favorito para o usuário e remove plano com ID "7oTB5aMIAE2rVo-1N-L7RmQAGX2q" da lista de planos favorito.
-Ele também atualiza a última vez em modo de exibição do plano de "jd8S5gOaFk2S8aWCIAJz42QAAxtD".
+Este é um exemplo de solicitação. Essa solicitação adiciona o plano "próxima discussão de lançamento" com ID "jd8S5gOaFk2S8aWCIAJz42QAAxtD" como um favorito para o usuário e remove o plano com ID "7oTB5aMIAE2rVo-1N-L7RmQAGX2q" da lista de planos favoritos.
+Ele também atualiza a hora da última exibição do plano "jd8S5gOaFk2S8aWCIAJz42QAAxtD".
 <!-- {
   "blockType": "ignored",
   "name": "update_planneruser"

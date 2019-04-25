@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: 4fc4d4f53014f5b8c656cd069cadf7b19190e0f0
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30366764"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543159"
 ---
 # <a name="complex-types-json"></a>JSON de tipos complexos
 Estes são os vários tipos complexos no Dynamics 365 Business central. Você pode ver o uso desses tipos complexos nos vários métodos individuais que fazem uso deles.
@@ -25,7 +25,7 @@ Representa um tipo complexo de endereço postal no Dynamics 365 Business central
 |:-------------|:---------|:-----------------------|
 |street        |string    |Rua do endereço postal.  |
 |city          |string    |Cidade do endereço postal.    |
-|state         |string    |Estado do endereço postal.   |
+|estado         |string    |Estado do endereço postal.   |
 |countryLetterCode|string |Código postal carta de país (palavra de dois caracteres)|
 |postalCode    |string    |Código de post de endereço postal|
 

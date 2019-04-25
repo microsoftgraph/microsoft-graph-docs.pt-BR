@@ -1,53 +1,53 @@
 ---
-title: tipo de recurso de governanceResource
-description: Representa os recursos que pôde ser gerenciados pelo gerenciamento de identidade privilegiado (PIM). Para obter recursos Azure, pode ser uma assinatura, um grupo de recursos e um recurso como uma máquina virtual, um banco de dados do SQL, etc.
+title: tipo de recurso Entidadegovernanceresource
+description: Representa os recursos que podem ser gerenciados pelo gerenciamento de identidade privilegiado (PIM). Para recursos do Azure, pode ser uma assinatura, um grupo de recursos e um recurso como uma máquina virtual, um banco de dados SQL, etc.
 localization_priority: Normal
 ms.openlocfilehash: 92a738350a47cc9eaf436382d020330fac89db1f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528554"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547421"
 ---
-# <a name="governanceresource-resource-type"></a>tipo de recurso de governanceResource
+# <a name="governanceresource-resource-type"></a>tipo de recurso Entidadegovernanceresource
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa os recursos que pôde ser gerenciados pelo gerenciamento de identidade privilegiado (PIM). Para obter recursos Azure, pode ser uma assinatura, um grupo de recursos e um recurso como uma máquina virtual, um banco de dados do SQL, etc.
+Representa os recursos que podem ser gerenciados pelo gerenciamento de identidade privilegiado (PIM). Para recursos do Azure, pode ser uma assinatura, um grupo de recursos e um recurso como uma máquina virtual, um banco de dados SQL, etc.
 
 
 ## <a name="methods"></a>Métodos
 
 | Método          | Tipo de retorno |Descrição|
 |:---------------|:--------|:----------|
-|[List](../api/governanceresource-list.md) | coleção [governanceResource](../resources/governanceresource.md)|Uma coleção de recursos para que o solicitante tem acesso de lista.|
-|[Get](../api/governanceresource-get.md) | [governanceResource](../resources/governanceresource.md) |As propriedades de leitura e relacionamentos de uma entidade de recurso especificado pelo id.|
-|Registro | |Registre um não gerenciado grupo Azure de assinatura ou de gerenciamento ao serviço PIM. |
+|[List](../api/governanceresource-list.md) | coleção [entidadegovernanceresource](../resources/governanceresource.md)|Lista uma coleção de recursos aos quais o solicitante tem acesso.|
+|[Get](../api/governanceresource-get.md) | [Entidadegovernanceresource](../resources/governanceresource.md) |Leia as propriedades e as relações de uma entidade de recurso especificada por ID.|
+|[Registrar](../api/governanceresource-register.md) | |Registre uma assinatura do Azure ou um grupo de gerenciamento não gerenciados no serviço PIM. |
 
-Não `POST`, `PUT`, `PATCH`, `DELETE` são suportados no `roleDefinitions` conjunto de entidade para agora.
+Não `POST`, `PUT`, `PATCH`, `DELETE` há suporte no `roleDefinitions` conjunto de entidades por enquanto.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade          |Tipo         |Descrição|
 |:------------------|:----------|:----------|
-|id                 |String     |A ID do recurso. Ela está no formato GUID.|
-|externalId           |Cadeia de caracteres   |A id externa do recurso, que representa seu id original no sistema externo. Por exemplo, id externo de um recurso assinatura pode ser "/ assinaturas/c14ae696-5e0c-4e5d-88cc-bef6637737ac". |
-|type               |String     |Obrigatório. Tipo de recurso Por exemplo, para recursos do Windows Azure, o tipo poderia ser "Assinatura", "ResourceGroup", "Microsoft.Sql/server", etc.|
+|id                 |Cadeia de caracteres     |A ID do recurso. Está no formato GUID.|
+|externalId           |String   |A ID externa do recurso, que representa sua ID original no sistema externo. Por exemplo, a ID externa de um recurso de assinatura pode ser "/subscriptions/c14ae696-5e0c-4E5D-88cc-bef6637737ac". |
+|type               |String     |Obrigatório. Tipo de recurso. Por exemplo, para recursos do Azure, o tipo poderia ser "Subscription", "resourcer", "Microsoft. SQL/Server", etc.|
 |displayName        |String     |O nome de exibição do recurso.|
-|status             |String     |O status de um determinado recurso. Por exemplo, poderia representar se o recurso está bloqueado ou não (valores: `Active` / `Locked`). Observação: Essa propriedade pode ser estendida no futuro para oferecer suporte a mais cenários.|
-|registeredDateTime|DateTimeOffset      |Representa a data hora quando o recurso é registrado no PIM.|
-|registeredRoot|String      |ExternalId do escopo de raiz do recurso que está registrado no PIM. O escopo de raiz pode ser o pai, avô ou recursos de ancestral superior.|
-|roleAssignmentCount|Int32      |Opcional. O número de atribuições de função para o recurso determinado. Para obter a propriedade, faça uso explicitamente `$select=roleAssignmentCount` na consulta.|
-|roleDefinitionCount|Int32      |Opcional. O número de definições de função para o recurso determinado. Para obter a propriedade, faça uso explicitamente `$select=roleDefinitionCount` na consulta.|
-|permissions|[governancePermission](../resources/governancepermission.md)      |Opcional. Representa o status de acesso do solicitador para o recurso. Para obter a propriedade, faça uso explicitamente `$select=permissions` na consulta.|
+|status             |String     |O status de um determinado recurso. Por exemplo, ele pode representar se o recurso está bloqueado ou não (valores: `Active` / `Locked`). Observação: essa propriedade pode ser estendida no futuro para dar suporte a mais cenários.|
+|registeredDateTime|DateTimeOffset      |Representa a data e hora em que o recurso é registrado no PIM.|
+|registeredRoot|String      |ExternalId do escopo raiz do recurso que é registrado no PIM. O escopo raiz pode ser os recursos pai, avô ou ancestral superior.|
+|roleAssignmentCount|Int32      |Opcional. O número de atribuições de função para determinado recurso. Para obter a propriedade, explictly use `$select=roleAssignmentCount` na consulta.|
+|roleDefinitionCount|Int32      |Opcional. O número de definições de função para o recurso especificado. Para obter a propriedade, explictly use `$select=roleDefinitionCount` na consulta.|
+|permissões|[governancePermission](../resources/governancepermission.md)      |Opcional. Ele representa o status do acesso do solicitante ao recurso. Para obter a propriedade, explictly use `$select=permissions` na consulta.|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação   | Tipo                                         |Descrição|
 |:---------------|:---------------------------------------------|:----------|
 |roleAssignments |coleção [governanceRoleAssignment](../resources/governanceroleassignment.md)|A coleção de atribuições de função para o recurso.|
-|roleDefinitions |coleção [governanceRoleDefinition](../resources/governanceroledefinition.md)|A coleção de definições de função para o recurso.|
+|roleDefinitions |coleção [governanceRoleDefinition](../resources/governanceroledefinition.md)|O conjunto de defintions de função para o recurso.|
 |roleAssignmentRequests |coleção [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|A coleção de solicitações de atribuição de função para o recurso.|
-|roleSettings |coleção [governanceRoleSetting](../resources/governancerolesetting.md)|A coleção de configurações de função para o recurso.|
-|Responsável          |[governanceResource](../resources/governanceresource.md)           |Somente leitura. O recurso de pai. para `pimforazurerbac` cenário, ela pode representar a assinatura que o recurso pertence.|
+|roleSettings |coleção [governanceRoleSetting](../resources/governancerolesetting.md)|O conjunto de configurações de função para o recurso.|
+|primário          |[Entidadegovernanceresource](../resources/governanceresource.md)           |Somente leitura. O recurso pai. para `pimforazurerbac` o cenário, ele pode representar a assinatura à qual o recurso pertence.|
 
 ## <a name="json-representation"></a>Representação JSON
 

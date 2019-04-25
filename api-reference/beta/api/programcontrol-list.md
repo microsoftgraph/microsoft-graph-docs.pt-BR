@@ -1,25 +1,25 @@
 ---
-title: Lista programControls
-description: No recurso de avaliações de acesso do Azure AD, liste todos os objetos de programControl, em todos os programas no inquilino.
+title: Listar programControls
+description: No recurso de revisões do Azure AD Access, liste todos os objetos programControl em todos os programas no locatário.
 localization_priority: Normal
 ms.openlocfilehash: 52361e3878445d4f739fd0cd33817d5b254ddc03
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525056"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546415"
 ---
-# <a name="list-programcontrols"></a>Lista programControls
+# <a name="list-programcontrols"></a>Listar programControls
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No recurso [acesso analisa](../resources/accessreviews-root.md) Azure AD, liste todos os objetos de [programControl](../resources/programcontrol.md) , em todos os programas no inquilino.
+No recurso de revisões do Azure AD [Access](../resources/accessreviews-root.md) , liste todos os objetos [programControl](../resources/programcontrol.md) em todos os programas no locatário.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | `ProgramControl.Read.All`, `ProgramControl.ReadWrite.All`.  O usuário conectado também deve ser uma função de diretório que permite a atualização-los para leitura de um programa. |
+|Delegado (conta corporativa ou de estudante)     | `ProgramControl.Read.All`, `ProgramControl.ReadWrite.All`.  O usuário conectado também deve estar em uma função de diretório que permite que ele leia um programa. |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | Sem suporte. |
 
@@ -31,13 +31,13 @@ GET /programControls
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome         | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| Autorização | string | Token de portador Obrigatório. |
+| Autorização | string | \{token\} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-Nenhum corpo da solicitação deve ser fornecido.
+Nenhum corpo de solicitação deve ser fornecido.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200, OK` código de resposta e uma matriz de objetos [programControl](../resources/programcontrol.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200, OK` um código de resposta e uma matriz de objetos [programControl](../resources/programcontrol.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -51,7 +51,7 @@ GET https://graph.microsoft.com/beta/programControls
 ```
 
 ##### <a name="response"></a>Resposta
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação: **o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -83,7 +83,7 @@ Content-type: application/json
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Lista programControls de um programa](program-listcontrols.md) |     coleção [programControl](../resources/programcontrol.md)|    Obter uma coleção dos controles de um programa.|
+|[Listar programControls de um programa](program-listcontrols.md) |     coleção [programControl](../resources/programcontrol.md)|    Obter uma coleção de controles de um programa.|
 
 
 <!--

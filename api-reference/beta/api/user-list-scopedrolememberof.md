@@ -1,17 +1,17 @@
 ---
-title: Lista scopedAdministratorOf
+title: Listar scopedAdministratorOf
 description: Recupere uma lista de scopedRoleMembership para o usuário.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: b6d458aa275b7405d25f60c8946e544b79bc7ac2
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29644011"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544208"
 ---
-# <a name="list-scopedadministratorof"></a>Lista scopedAdministratorOf
+# <a name="list-scopedadministratorof"></a>Listar scopedAdministratorOf
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -46,7 +46,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e a coleção de objetos [scopedRoleMembership](../resources/scopedrolemembership.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [scopedRoleMembership](../resources/scopedrolemembership.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

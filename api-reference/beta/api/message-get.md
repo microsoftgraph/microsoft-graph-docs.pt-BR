@@ -4,12 +4,12 @@ description: Recupere as propriedades e os relacionamentos do objeto Message.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 8d15a1f07ae42e9c203a26a970896fea0d360494
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: b1a94d396d5c249cdadda233632bb596d34a3625
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31518515"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540489"
 ---
 # <a name="get-message"></a>Obter mensagem
 
@@ -19,10 +19,12 @@ Recupere as propriedades e os relacionamentos do objeto [Message](../resources/m
 
 Por exemplo, você pode obter uma mensagem e expandir todas as instâncias de [menção](../resources/mention.md) na mensagem.
 
+Você pode usar o `$value` parâmetro para [obter o conteúdo MIME de uma mensagem](/graph/outlook-get-mime-message).
+
 Há dois cenários em que um aplicativo pode obter uma mensagem na pasta email de outro usuário:
 
 * Se o aplicativo tiver permissões de aplicativo ou
-* Se o aplicativo tiver as [permissões](#permissions) delegadas apropriadas de um usuário, e outro usuário tiver compartilhado uma pasta de email com esse usuário, ou, o terá acesso delegado a esse usuário. Confira [detalhes e um exemplo](/graph/outlook-share-messages-folders).
+* Se o aplicativo tiver as [permissões](#permissions) delegadas apropriadas de um usuário e outro usuário tiver compartilhado uma pasta de email com esse usuário, ou tiver concedido acesso delegado a esse usuário. Confira [detalhes e um exemplo](/graph/outlook-share-messages-folders).
 
 Como o recurso **message** dá suporte a [extensions](/graph/extensibility-overview), você também pode usar a operação `GET` para obter propriedades personalizadas e dados de extensão em uma instância de **message**.
 
@@ -47,6 +49,15 @@ GET /me/mailFolders/{id}/messages/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
 
+Para obter o conteúdo MIME da mensagem especificada:
+<!-- { "blockType": "ignored" } --> 
+```http 
+GET /me/messages/{id}/$value 
+GET /users/{id | userPrincipalName}/messages/{id}/$value 
+GET /me/mailFolders/{id}/messages/{id}/$value 
+GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/$value 
+```
+
 Para obter uma mensagem e expandir todas as menção na mensagem:
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -57,9 +68,11 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}?$expand=menti
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
-Você pode usar o `$expand` parâmetro de consulta na propriedade de navegação **menciona** para obter uma mensagem com os detalhes de cada [menção](../resources/mention.md) na mensagem expandida.
+Use o `$value` parâmetro para obter o conteúdo MIME de uma mensagem.
+
+Use o `$expand` parâmetro de consulta na propriedade de navegação **menciona** para obter uma mensagem com os detalhes de cada [menção](../resources/mention.md) na mensagem expandida.
 
 
 
@@ -330,9 +343,9 @@ Content-type: application/json
 
 ## <a name="see-also"></a>Confira também
 
-- [Adicionar dados personalizados aos recursos usando extensões](/graph/extensibility-overview)
+- [Adicionar dados personalizados a recursos usando extensões](/graph/extensibility-overview)
 - [Adicionar dados personalizados aos usuários usando extensões abertas (visualização)](/graph/extensibility-open-users)
-- [Adicionar dados personalizados a grupos usando extensões de esquema (visualização)](/graph/extensibility-schema-groups)
+- [Adicionar dados personalizados a grupos usando extensões do esquema (visualização)](/graph/extensibility-schema-groups)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -1,15 +1,15 @@
 ---
-title: Obter synchronizationTemplate
+title: Obter synchronizationtemplate
 description: Recupere um modelo de sincronização por seu identificador.
 localization_priority: Normal
 ms.openlocfilehash: 4fc13ee5d83d6501f75bb45ce69f189b8809270c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524370"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545166"
 ---
-# <a name="get-synchronizationtemplate"></a>Obter synchronizationTemplate
+# <a name="get-synchronizationtemplate"></a>Obter synchronizationtemplate
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,20 +43,20 @@ Não forneça um corpo de solicitação para esse método.
 
 ### <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [synchronizationtemplate](../resources/synchronization-synchronizationtemplate.md) no corpo da resposta.
 
 ### <a name="example"></a>Exemplo
 
 ##### <a name="request"></a>Solicitação
-O exemplo a seguir é um exemplo de uma solicitação.
+Veja a seguir um exemplo de uma solicitação.
 
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/templates/Slack
 ```
 
 ##### <a name="response"></a>Resposta
-O exemplo a seguir é um exemplo de uma resposta.
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. Serão retornadas todas as propriedades em uma chamada real.
+Veja a seguir um exemplo de uma resposta.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas em uma chamada real.
 
 ```http
 HTTP/1.1 200 OK

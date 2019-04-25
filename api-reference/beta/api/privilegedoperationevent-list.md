@@ -1,25 +1,25 @@
 ---
-title: Lista privilegedOperationEvents
-description: filtro ' expressão.
+title: Listar privilegedOperationEvents
+description: expressão ' ' do filtro.
 localization_priority: Normal
 ms.openlocfilehash: 4ea6f778098a8b56c8819f55fb33ffb5420cce6b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512630"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546583"
 ---
-# <a name="list-privilegedoperationevents"></a>Lista privilegedOperationEvents
+# <a name="list-privilegedoperationevents"></a>Listar privilegedOperationEvents
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista dos objetos de [privilegedOperationEvent](../resources/privilegedoperationevent.md) , que representam os eventos de auditoria que são gerados pelo gerenciamento de identidades privilegiado para as operações de função. Para obter detalhes sobre o evento de auditoria, consulte [privilegedOperationEvent](../resources/privilegedoperationevent.md). Para filtrar os resultados da consulta, use o OData standard ``$filter`` expressão.
+Recupere uma lista de objetos [privilegedOperationEvent](../resources/privilegedoperationevent.md) , que representam os eventos de auditoria gerados pelo gerenciamento de identidade privilegiado para as operações de função. Para obter detalhes sobre o evento de auditoria, consulte [privilegedOperationEvent](../resources/privilegedoperationevent.md). Para filtrar os resultados da consulta, use a expressão ``$filter`` OData padrão.
 
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-O solicitante precisa ter uma das seguintes funções: _Leitor de segurança_, _Administrador Global_, _Administrador de segurança_ou _Administrador com privilégios de função_.
+O solicitante precisa ter uma das seguintes funções: administrador de _função privilegiada_, _administrador global_, _administrador de segurança_ou _leitor de segurança_.
 
  
 
@@ -47,21 +47,21 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e a coleção de objetos [privilegedOperationEvent](../resources/privilegedoperationevent.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [privilegedOperationEvent](../resources/privilegedoperationevent.md) no corpo da resposta.
 
-Observe que o inquilino deve ser registrado no PIM. Caso contrário, será retornado o código de status HTTP 403-Proibido.
+Observe que o locatário precisa ser registrado no PIM. Caso contrário, o código de status HTTP 403 proibido será retornado.
 ## <a name="examples"></a>Exemplos
 
-### <a name="get-audit-events-for-role-assignment-operations"></a>Obtenha os eventos de auditoria para operações de atribuição de função
+### <a name="get-audit-events-for-role-assignment-operations"></a>Obter eventos de auditoria para operações de atribuição de função
 ##### <a name="request"></a>Solicitação
-O exemplo a seguir mostra uma solicitação para obter os eventos de auditoria para as operações de atribuição de função. Nesse caso, ``requestType`` valor é ``Assign``.
+O exemplo a seguir mostra uma solicitação para obter os eventos de auditoria para as operações de atribuição de função. Nesse caso, ``requestType`` Value é ``Assign``.
 
 <!-- { "blockType": "request" } -->
 ```http
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=requestType%20eq%20'Assign'
 ```
 ##### <a name="response"></a>Resposta
-O exemplo a seguir mostra a resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+O exemplo a seguir mostra a resposta. Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -112,16 +112,16 @@ Content-length: 547
     ]
 }
 ```
-### <a name="get-audit-events-for-the-operations-of-self-role-activation-and-makepermanent"></a>Obtenha os eventos de auditoria para as operações de ativação de função self e makePermanent
+### <a name="get-audit-events-for-the-operations-of-self-role-activation-and-makepermanent"></a>Obter eventos de auditoria para as operações de ativação de auto-função e makePermanent
 ##### <a name="request"></a>Solicitação
-O exemplo a seguir mostra uma solicitação para obter os eventos de auditoria para as operações de ativação de função self e makePermanent. Nesse caso, ``requestType`` valor é ``Activate``.
+O exemplo a seguir mostra uma solicitação para obter os eventos de auditoria para as operações de ativação de auto-função e makePermanent. Nesse caso, ``requestType`` Value é ``Activate``.
 
 <!-- { "blockType": "request" } -->
 ```http
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=requestType%20eq%20'Activate'
 ```
 ##### <a name="response"></a>Resposta
-O exemplo a seguir mostra a resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+O exemplo a seguir mostra a resposta. Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -173,16 +173,16 @@ Content-length: 547
 }
 ```
 
-### <a name="get-audit-events-for-role-assignment-deactivation"></a>Obtenha os eventos de auditoria para desativação de atribuição de função
+### <a name="get-audit-events-for-role-assignment-deactivation"></a>Obter eventos de auditoria para desativação de atribuição de função
 ##### <a name="request"></a>Solicitação
-O exemplo a seguir mostra uma solicitação para obter os eventos de auditoria de desativação de atribuição de função. Nesse caso, ``requestType`` valor é ``Deactivate``.
+O exemplo a seguir mostra uma solicitação para obter os eventos de auditoria para a desativação da atribuição de função. Nesse caso, ``requestType`` Value é ``Deactivate``.
 
 <!-- { "blockType": "request" } -->
 ```http
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=requestType%20eq%20'Deactivate'
 ```
 ##### <a name="response"></a>Resposta
-O exemplo a seguir mostra a resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+O exemplo a seguir mostra a resposta. Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -216,16 +216,16 @@ Content-length: 547
     ]
 }
 ```
-### <a name="get-audit-events-created-in-a-time-range"></a>Obtenha os eventos de auditoria criados em um intervalo de tempo
+### <a name="get-audit-events-created-in-a-time-range"></a>Obter eventos de auditoria criados em um intervalo de tempo
 ##### <a name="request"></a>Solicitação 
-O exemplo a seguir mostra uma solicitação para obter os eventos de auditoria, criados em um intervalo de tempo.
+O exemplo a seguir mostra uma solicitação para obter os eventos de auditoria criados em um intervalo de tempo.
 
 <!-- { "blockType": "request" } -->
 ```http
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=(creationDateTime%20ge%202017-06-25T07:00:00Z)%20and%20(creationDateTime%20le%202017-07-25T17:30:17Z)&$count=true&$orderby=creationDateTime%20desc
 ```
 ##### <a name="response"></a>Resposta
-O exemplo a seguir mostra a resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+O exemplo a seguir mostra a resposta. Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

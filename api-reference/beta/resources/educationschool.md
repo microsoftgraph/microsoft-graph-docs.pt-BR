@@ -1,21 +1,21 @@
 ---
 title: Tipo de recurso educationSchool
-description: 'Escola A. O recurso **educationSchool** atualmente corresponde a um recurso administrativeUnit e compartilha a mesma ID.  '
+description: 'Uma escola. O recurso **educationSchool** atualmente corresponde a um recurso administrativeUnit e compartilha a mesma ID.  '
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: 917395324e6ae519af468a4bb4b31056796e1498
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512539"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542911"
 ---
 # <a name="educationschool-resource-type"></a>Tipo de recurso educationSchool
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Escola A. O recurso **educationSchool** atualmente corresponde a um recurso [administrativeUnit](administrativeunit.md) e compartilha a mesma ID.  
+Uma escola. O recurso **educationSchool** atualmente corresponde a um recurso [administrativeUnit](administrativeunit.md) e compartilha a mesma ID.  
 
 Esse recurso é um subtipo de [educationOrganization](educationorganization.md).
 
@@ -33,18 +33,18 @@ Esse recurso é um subtipo de [educationOrganization](educationorganization.md).
 |[Adicionar usuário](../api/educationschool-post-users.md) |[educationUser](educationuser.md)| Adicione um novo **educationUser** para a escola postando na propriedade de navegação de **usuários**.|
 |[Listar usuários](../api/educationschool-list-users.md) |Coleção [educationUser](educationuser.md)| Obtenha a coleção de objetos **educationUser**.|
 |[Remover usuário](../api/educationschool-delete-users.md) |[educationUser](educationuser.md)| Remova um **educationUser** da escola por meio da propriedade de navegação **users**.|
-|[Obter administrativeUnit](../api/educationschool-get-administrativeunit.md) |[administrativeUnit](administrativeunit.md)| Obtenha a **administrativeUnit** que corresponde a essa **educationSchool**.|
+|[Obter administrativeUnit](../api/educationschool-get-administrativeunit.md) |[administrativeUnit](administrativeunit.md)| Obtenha o **administrativeUnit** que corresponde a esse **educationSchool**.|
 |[Atualizar](../api/educationschool-update.md) | [educationSchool](educationschool.md) |Atualize um objeto **educationSchool**. |
 |[Excluir](../api/educationschool-delete.md) | Nenhum |Exclua um objeto **educationSchool**. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|String|GUID desta escola.|
+|id|Cadeia de caracteres|GUID desta escola.|
 |displayName| String| Nome de exibição da escola.| 
 |description| String | Descrição da escola.| 
-|status| string| Somente Leitura. Os valores possíveis são: `inactive`, `active`, `expired`, `deleteable`.|
-|externalSource| string| Somente Leitura.  Os valores possíveis são: `sis`, `manual`, `unknownFutureValue`.|
+|status| cadeia de caracteres| Somente Leitura. Os valores possíveis são: `inactive`, `active`, `expired`, `deleteable`.|
+|externalSource| cadeia de caracteres| Somente Leitura.  Os valores possíveis são: `sis`, `manual`, `unknownFutureValue`.|
 |principalEmail| String| Endereço de email da entidade de segurança.|
 |principalName| String | Nome da entidade de segurança.|
 |externalPrincipalId| String | ID da entidade de segurança no sistema de sincronização. |
@@ -53,7 +53,7 @@ Esse recurso é um subtipo de [educationOrganization](educationorganization.md).
 |schoolNumber|String| Número da escola.|
 |externalId|Cadeia de caracteres| ID da escola no sistema de sincronização. |
 |phone|String| Número de telefone da escola. |
-|fax|Cadeia de caracteres| Número de fax da escola. |
+|fax|String| Número de fax da escola. |
 |address|[physicalAddress](physicaladdress.md)| Endereço da escola.|
 |createdBy|[identitySet](identityset.md)|Entidade que criou a escola.|
 

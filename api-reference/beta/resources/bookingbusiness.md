@@ -1,67 +1,67 @@
 ---
-title: tipo de recurso de bookingBusiness
+title: tipo de recurso bookingBusiness
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: 03790cfe39ef2de463ae843ba6b18cd6d91e754d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528918"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543843"
 ---
-# <a name="bookingbusiness-resource-type"></a>tipo de recurso de bookingBusiness
+# <a name="bookingbusiness-resource-type"></a>tipo de recurso bookingBusiness
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-Representa uma empresa no Microsoft Bookings. Esse é o objeto de nível superior na API Microsoft reservas. Ele contém informações comerciais e objetos de negócios relacionados, como compromissos, os clientes, serviços e membros da equipe.
+Representa uma empresa em Microsoft bookings. Este é o objeto de nível superior na API do Microsoft bookings. Ele contém informações comerciais e objetos corporativos relacionados, como compromissos, clientes, serviços e membros da equipe.
 
 ## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Lista bookingBusinesses](../api/bookingbusiness-list.md) | coleção [bookingBusiness](bookingbusiness.md) |Obtenha uma coleção de objetos bookingbusiness no inquilino. |
-|[Criar bookingBusiness](../api/bookingbusiness-post-bookingbusinesses.md) | [bookingBusiness](bookingbusiness.md) | Crie um novo negócio Bookings Microsoft. |
+|[Listar bookingBusinesses](../api/bookingbusiness-list.md) | coleção [bookingBusiness](bookingbusiness.md) |Obtenha uma coleção de objetos bookingbusiness no locatário. |
+|[Criar bookingBusiness](../api/bookingbusiness-post-bookingbusinesses.md) | [bookingBusiness](bookingbusiness.md) | Crie uma nova empresa de livros da Microsoft. |
 |[Obter bookingBusiness](../api/bookingbusiness-get.md) | [bookingBusiness](bookingbusiness.md) |Leia as propriedades e os relacionamentos do objeto bookingBusiness.|
-|[Update](../api/bookingbusiness-update.md) | [bookingBusiness](bookingbusiness.md) |Atualize propriedades em um objeto **bookingBusiness** . |
-|[Delete](../api/bookingbusiness-delete.md) | Nenhum |Exclua um objeto **bookingBusiness** . |
-|[Criar bookingAppointment](../api/bookingbusiness-post-appointments.md) |[bookingAppointment](bookingappointment.md)| Crie um novo bookingAppointment pelo lançamento para o conjunto de compromissos.|
-|[Lista de compromissos](../api/bookingbusiness-list-appointments.md) |coleção [bookingAppointment](bookingappointment.md)| Obtenha uma coleção de objetos bookingAppointment.|
-|[Criar bookingCustomer](../api/bookingbusiness-post-customers.md) |[bookingCustomer](bookingcustomer.md)| Crie um novo bookingCustomer pelo lançamento à coleção de clientes.|
-|[Clientes de lista](../api/bookingbusiness-list-customers.md) |coleção [bookingCustomer](bookingcustomer.md)| Obtenha uma coleção de objetos bookingCustomer.|
-|[Criar bookingService](../api/bookingbusiness-post-services.md) |[bookingService](bookingservice.md)| Crie um novo bookingService pelo lançamento para o conjunto de serviços.|
-|[Lista de serviços](../api/bookingbusiness-list-services.md) |coleção [bookingService](bookingservice.md)| Obtenha uma coleção de objetos bookingService.|
-|[Criar bookingStaffMember](../api/bookingbusiness-post-staffmembers.md) |[bookingStaffMember](bookingstaffmember.md)| Crie um novo bookingStaffMember pelo lançamento à coleção staffMembers.|
-|[Lista staffMembers](../api/bookingbusiness-list-staffmembers.md) |coleção [bookingStaffMember](bookingstaffmember.md)| Obtenha uma coleção de objetos bookingStaffMember.|
-|[Listar calendarView](../api/bookingbusiness-list-calendarview.md)|coleção [bookingAppointment](bookingappointment.md)|Obter a coleção de objetos **bookingAppointment** que ocorra no intervalo de datas especificado.|
-|[Publish](../api/bookingbusiness-publish.md)|Nenhum|Página de agendamento dessa empresa torne disponíveis para clientes externos. Defina a propriedade **isPublished** como true e a propriedade **publicUrl** para a URL da página de agendamento.|
-|[Unpublish](../api/bookingbusiness-unpublish.md).|Nenhum| Verifique a página de agendamento dessa empresa não está disponível para clientes externos. Defina a propriedade **isPublished** como false e a propriedade **publicUrl** como nulo.|
+|[Update](../api/bookingbusiness-update.md) | [bookingBusiness](bookingbusiness.md) |Atualize as propriedades em um objeto **bookingBusiness** . |
+|[Excluir](../api/bookingbusiness-delete.md) | Nenhum |Excluir um objeto **bookingBusiness** . |
+|[Criar bookingAppointment](../api/bookingbusiness-post-appointments.md) |[bookingAppointment](bookingappointment.md)| Crie um novo bookingAppointment postando na coleção de compromissos.|
+|[Listar compromissos](../api/bookingbusiness-list-appointments.md) |coleção [bookingAppointment](bookingappointment.md)| Obtenha uma coleção de objetos bookingAppointment.|
+|[Criar bookingCustomer](../api/bookingbusiness-post-customers.md) |[bookingCustomer](bookingcustomer.md)| Crie um novo bookingCustomer postando na coleção Customers.|
+|[Listar clientes](../api/bookingbusiness-list-customers.md) |coleção [bookingCustomer](bookingcustomer.md)| Obtenha uma coleção de objetos bookingCustomer.|
+|[Criar bookingService](../api/bookingbusiness-post-services.md) |[bookingService](bookingservice.md)| Crie um novo bookingService postando na coleção de serviços.|
+|[Listar serviços](../api/bookingbusiness-list-services.md) |coleção [bookingService](bookingservice.md)| Obtenha uma coleção de objetos bookingService.|
+|[Criar bookingStaffMember](../api/bookingbusiness-post-staffmembers.md) |[bookingStaffMember](bookingstaffmember.md)| Crie um novo bookingStaffMember postando na coleção staffMembers.|
+|[Listar staffMembers](../api/bookingbusiness-list-staffmembers.md) |coleção [bookingStaffMember](bookingstaffmember.md)| Obtenha uma coleção de objetos bookingStaffMember.|
+|[Listar calendarView](../api/bookingbusiness-list-calendarview.md)|coleção [bookingAppointment](bookingappointment.md)|Obtenha a coleção de objetos **bookingAppointment** que ocorre no intervalo de datas especificado.|
+|[publish](../api/bookingbusiness-publish.md)|Nenhum|Tornar a página de agendamento dessa empresa disponível para clientes externos. Defina a **** Propriedade IsPublished como true e a propriedade **PUBLICURL** para a URL da página de agendamento.|
+|[unpublish](../api/bookingbusiness-unpublish.md)|Nenhum| Tornar a página de agendamento dessa empresa não disponível para clientes externos. Defina a **** Propriedade IsPublished como false e a propriedade **publicUrl** como NULL.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|address|[physicalAddress](physicaladdress.md)|O endereço da empresa. A propriedade **address** , juntamente com o **telefone** e **webSiteUrl**, aparecem no rodapé de um página de agendamento de negócios.|
-|businessHours|coleção [bookingWorkHours](bookingworkhours.md)|Os horários de operação para a empresa.|
-|businessType|String|O tipo de negócio.|
-|defaultCurrencyIso|String|O código para a moeda que a empresa opera em Microsoft Bookings.|
-|displayName|String|O nome da empresa, interfaces com os clientes. Esse nome é exibido na parte superior do negócio o agendamento de página.|
-|email|String|O endereço de email para a empresa.|
-|id|String|Um identificador programático exclusivo para a empresa. Somente leitura.|
-|IsPublished|Booliano|A página de agendamento tenha sido disponibilizada para clientes externos. Use as ações de **Publicar** e **cancelamento de publicação** para definir essa propriedade. Somente leitura.|
-|phone|Cadeia de caracteres|O número de telefone para a empresa. A propriedade de **telefone** , junto com o **endereço** e **webSiteUrl**, aparecem no rodapé de um página de agendamento de negócios.|
-|publicUrl|String|A URL para a página de agendamento, que é definida após você [Publicar](../api/bookingbusiness-publish.md) ou [Cancelar a publicação](../api/bookingbusiness-unpublish.md) de página. Somente leitura.|
-|schedulingPolicy|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|Especifica como reservas podem ser criadas para esta empresa.|
-|websiteUrl|String|A URL do site da web de negócios. A propriedade de **webSiteUrl** , o **endereço**, **telefone**, aparecem no rodapé de uma página de agendamento de negócios.|
+|address|[physicalAddress](physicaladdress.md)|O endereço da empresa. A propriedade **Address** , junto com **Phone** e **webSiteUrl**, aparecem no rodapé de uma página de agendamento de negócios.|
+|businessHours|coleção [bookingWorkHours](bookingworkhours.md)|As horas de operação da empresa.|
+|businesstype|String|O tipo de negócio.|
+|defaultCurrencyIso|String|O código da moeda na qual a empresa opera em reservas da Microsoft.|
+|displayName|String|O nome da empresa, que é a interface com os clientes. Esse nome aparece na parte superior da página agendamento de negócios.|
+|email|String|O endereço de email da empresa.|
+|id|String|Um identificador de programação exclusivo para a empresa. Somente leitura.|
+|isPublished|Booliano|A página de agendamento foi disponibilizada para clientes externos. Use as ações **publicar** e cancelar **publicação** para definir essa propriedade. Somente leitura.|
+|phone|Cadeia de caracteres|O número de telefone da empresa. A propriedade **Phone** , junto com **endereço** e **webSiteUrl**, aparecem no rodapé de uma página de agendamento de negócios.|
+|publicUrl|String|A URL da página de agendamento, que é definida depois que você [publica](../api/bookingbusiness-publish.md) ou cancela a [publicação](../api/bookingbusiness-unpublish.md) da página. Somente leitura.|
+|schedulingPolicy|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|Especifica como as reservas podem ser criadas para essa empresa.|
+|webSiteUrl|String|A URL do site da empresa. A propriedade **webSiteUrl** , junto com **endereço**, **telefone**, aparece no rodapé de uma página de agendamento de negócios.|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|appointments|coleção [bookingAppointment](bookingappointment.md)| Todos os compromissos essa empresa. Somente leitura. Anulável.|
-|calendarView|coleção [bookingAppointment](bookingappointment.md)| O conjunto de compromissos deste negócio em um intervalo de datas especificado. Somente leitura. Anulável.|
-|clientes|coleção [bookingCustomer](bookingcustomer.md)| Todos os clientes desse negócio. Somente leitura. Anulável.|
-|Serviços|coleção [bookingService](bookingservice.md)| Todos os serviços oferecidos por essa empresa. Somente leitura. Anulável.|
-|staffMembers|coleção [bookingStaffMember](bookingstaffmember.md)| Todos os membros da equipe que fornecem serviços nesse negócio. Somente leitura. Anulável.|
+|appointments|coleção [bookingAppointment](bookingappointment.md)| Todos os compromissos dessa empresa. Somente leitura. Anulável.|
+|calendarView|coleção [bookingAppointment](bookingappointment.md)| O conjunto de compromissos dessa empresa em um intervalo de datas especificado. Somente leitura. Anulável.|
+|Eles|coleção [bookingCustomer](bookingcustomer.md)| Todos os clientes desse negócio. Somente leitura. Anulável.|
+|serviço|coleção [bookingService](bookingservice.md)| Todos os serviços oferecidos por essa empresa. Somente leitura. Anulável.|
+|staffMembers|coleção [bookingStaffMember](bookingstaffmember.md)| Todos os membros da equipe que fornecem serviços neste negócio. Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 

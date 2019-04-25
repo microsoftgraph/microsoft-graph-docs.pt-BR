@@ -1,27 +1,27 @@
 ---
 title: 'message: createReplyAll'
-description: 'Criar um rascunho de uma mensagem de responder a todos para incluir um comentário ou atualizar as propriedades de mensagem, '
+description: 'Criar um rascunho de uma mensagem de resposta para incluir um comentário ou atualizar quaisquer propriedades de mensagem, '
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 8d42517daa5c8242f28c6dfb3cb4d508b2667ed5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528575"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540524"
 ---
 # <a name="message-createreplyall"></a>message: createReplyAll
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um rascunho de uma mensagem de responder a todos para incluir um comentário ou atualizar as propriedades de mensagem, todas em uma chamada de **createReplyAll** . Em seguida, você pode [Atualizar](../api/message-update.md) ou [Enviar](../api/message-send.md) o rascunho.
+Crie uma mensagem para responder a todos de rascunho para incluir um comentário ou atualizar todas as propriedades da mensagem em uma chamada **createReplyAll**. Em seguida, você pode [atualizar](../api/message-update.md) ou [enviar](../api/message-send.md) esse rascunho.
 
 **Observação**
 
-- Você pode especificar um comentário ou a propriedade **body** do `message` parâmetro. Especificar ambos retornará um erro HTTP 400 - Solicitação incorreta.
-- Se a propriedade **replyTo** for especificada na mensagem original, por um formato de mensagem da Internet ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), você deve enviar a resposta aos destinatários no  
-propriedades **replyTo** e **toRecipients** e não os destinatários nas propriedades **do** e **toRecipients** . 
+- Você pode especificar um comentário ou a propriedade **Body** do `message` parâmetro. Especificar ambos retornará um erro HTTP 400 - Solicitação incorreta.
+- Se a **** Propriedade ReplyTo for especificada na mensagem original, por formato de mensagem da Internet ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), você deve enviar a resposta aos destinatários no  
+**** as propriedades ReplyTo e ToRecipients e não os destinatários nas propriedades **from** e **** ToRecipients. **** 
 
 
 ## <a name="permissions"></a>Permissões
@@ -53,14 +53,14 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |comment|String|Um comentário a incluir. Não pode ficar vazio.|
-|message|[message](../resources/message.md)|Quaisquer propriedades graváveis ​​a serem atualizadas na mensagem de resposta a todos.|
+|message|[mensagem](../resources/message.md)|Quaisquer propriedades graváveis ​​a serem atualizadas na mensagem de resposta a todos.|
 
 ## <a name="response"></a>Resposta
 
 Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [message](../resources/message.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-O exemplo a seguir cria um rascunho de resposta a todos e adiciona um anexo e comentário, tudo em uma única chamada **CreateReplyAll**.
+O exemplo a seguir cria um rascunho para responder a todos e adiciona um anexo e comentário tudo em uma chamada **createReplyAll** .
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 <!-- {

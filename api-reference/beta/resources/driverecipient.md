@@ -6,15 +6,13 @@ title: DriveRecipient
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 47a080b4f81645cfe5098ec8391d58cf07fca466
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482340"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543144"
 ---
 # <a name="driverecipient-resource"></a>Recurso DriveRecipient
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 O recurso **DriveRecipient** representa uma pessoa, um grupo ou outro destinatário com quem compartilhar usando a ação [invite](../api/driveitem-invite.md).
 
@@ -45,15 +43,10 @@ O recurso de destinatários possui essas propriedades.
 
 Ao usar [invite](../api/driveitem-invite.md) para adicionar permissões, DriveRecipient pode especificar **email**, **alias** ou **objectId**. É necessário somente um desses valores.
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Recipients resource defines a single recipient for the sharing invitation and permissions collection.",
   "keywords": "sharing,share,permissions,action.invite,invite,email",
   "section": "documentation",
-  "tocPath": "Resources/Recipients",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/driverecipient.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": "Resources/Recipients"
+} -->

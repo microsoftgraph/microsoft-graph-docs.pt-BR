@@ -1,27 +1,27 @@
 ---
-title: tipo de recurso de conditionalAccessPolicy
-description: Indica que os atributos relacionados a uma política de acesso condicional ou diretivas que é disparado pela atividade correspondente entrar
+title: tipo de recurso conditionalAccessPolicy
+description: Indica os atributos relacionados a uma política de acesso condicional ou políticas disparadas pela atividade de entrada correspondente
 localization_priority: Normal
 ms.openlocfilehash: 7b043e739f84715fb02fbdbd25599e5cfccc284a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820640"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543368"
 ---
-# <a name="conditionalaccesspolicy-resource-type"></a>tipo de recurso de conditionalAccessPolicy
-Indica que os atributos relacionados a uma política de acesso condicional ou diretivas que é disparado pela atividade correspondente entrar
+# <a name="conditionalaccesspolicy-resource-type"></a>tipo de recurso conditionalAccessPolicy
+Indica os atributos relacionados a uma política de acesso condicional ou políticas disparadas pela atividade de entrada correspondente
 
 
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|displayName|Cadeia de caracteres|Refere-se com o nome da política de acesso condicional (exemplo: "Exigir MFA para a equipe de vendas").|
-|enforcedGrantControls|String collection|Refere-se aos controles grant impostos com a política de acesso condicional (exemplo: "Exigem a autenticação multifator").|
-|enforcedSessionControls|String collection|Refere-se aos controles sessão impostos com a política de acesso condicional (exemplo: "Exigem controles app imposto").|
-|id|Cadeia de caracteres|GUID exclusivo da política de acesso condicional|
-|result|Cadeia de caracteres| Indica o resultado da política de autoridade de certificação que tiver sido disparado. Valores possíveis são:<br/> `success` <br/> `failure` <br/> `notApplied`-Diretiva não será aplicada, porque as condições da diretiva não foram atendidas. <br/> `notEnabled`-Isso acontece devido à política em estado desabilitado.|
+|displayName|String|Refere-se ao nome da política de acesso condicional (exemplo: "exigir MFA de Salesforce").|
+|enforcedGrantControls|Coleção de cadeias de caracteres|Refere-se aos controles Grant impostos pela política de acesso condicional (exemplo: "requer autenticação multifator").|
+|enforcedSessionControls|Coleção de cadeias de caracteres|Refere-se aos controles de sessão aplicados pela política de acesso condicional (exemplo: "exigir controles de aplicação imposta)").|
+|id|String|GUID exclusivo da política de acesso condicional|
+|result|String| Indica o resultado da política de autoridade de certificação que foi disparada. Os valores possíveis são:<br/> `success` <br/> `failure` <br/> `notApplied`-A política não é aplicada porque as condições da política não foram atendidas. <br/> `notEnabled`– Isso ocorre devido à política em estado desabilitado.|
 
 ## <a name="json-representation"></a>Representação JSON
 

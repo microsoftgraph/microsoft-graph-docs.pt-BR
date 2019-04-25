@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 599f1765b6305d2dc4d482ec035ee4b24eb5183a
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640865"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543382"
 ---
 # <a name="contactfolder-resource-type"></a>tipo de recurso contactFolder
 
@@ -17,7 +17,7 @@ ms.locfileid: "29640865"
 
 Uma pasta que contém contatos.
 
-Esse recurso suporta a utilização da [consulta delta](/graph/delta-query-overview) para controlar adições, exclusões e atualizações incrementais oferecendo uma função [delta](../api/contactfolder-delta.md).
+Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overview) para controlar adições, exclusões e atualizações incrementais oferecendo uma função [delta](../api/contactfolder-delta.md).
 
 
 ## <a name="methods"></a>Métodos
@@ -26,12 +26,12 @@ Esse recurso suporta a utilização da [consulta delta](/graph/delta-query-overv
 |:---------------|:--------|:----------|
 |[Obter contactFolder](../api/contactfolder-get.md) | [contactFolder](contactfolder.md) |Obtenha uma pasta de contatos usando a respectiva ID.|
 |[Update](../api/contactfolder-update.md) | [contactFolder](contactfolder.md) |Atualize o objeto contactFolder. |
-|[Delete](../api/contactfolder-delete.md) | Nenhuma |Exclua um objeto contactFolder. |
+|[Excluir](../api/contactfolder-delete.md) | Nenhum |Exclua um objeto contactFolder. |
 |[Listar childFolders](../api/contactfolder-list-childfolders.md) |Coleção [ContactFolder](contactfolder.md)| Obtenha uma coleção de pastas filho sob a pasta de contatos especificada.|
-|[Criar contactFolder filho](../api/contactfolder-post-childfolders.md) |[contactFolder](contactfolder.md)| Crie uma nova contactFolder como um filho de uma pasta especificada.|
+|[Criar contactFolder filho](../api/contactfolder-post-childfolders.md) |[contactFolder](contactfolder.md)| Cria uma nova contactFolder como um filho de uma pasta especificada.|
 |[delta](../api/contact-delta.md)|Coleção [Contact](contact.md)| Obtenha um conjunto de pastas de contatos que foram adicionadas, excluídas ou removidas da caixa de correio do usuário.|
 |[Listar contatos na pasta](../api/contactfolder-list-contacts.md) |Coleção [Contact](contact.md)| Obtém uma coleção de contatos da pasta de contatos padrão do usuário conectado (`.../me/contacts`), ou da pasta contato especificada.|
-|[Criar contato na pasta](../api/contactfolder-post-contacts.md) |[contato](contact.md)| Adicione um contato na pasta de contatos raiz ou no ponto de extremidade de `contacts` de outra pasta de contatos.|
+|[Criar contato na pasta](../api/contactfolder-post-contacts.md) |[contato](contact.md)| Adicione um contato na pasta de contatos raiz ou no ponto de extremidade do `contacts` de outra pasta de contatos.|
 |**Propriedades estendidas**| | |
 |[Criar uma propriedade estendida de valor único](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[contactFolder](contactfolder.md)  |Criar uma ou mais propriedades estendidas de valor único em uma contactFolder nova ou existente.   |
 |[Obter contactFolder com propriedade estendida de valor único](../api/singlevaluelegacyextendedproperty-get.md)  | [contactFolder](contactfolder.md) | Obtenha contactFolders que contêm uma propriedade estendida de valor único usando `$expand` ou `$filter`. |
@@ -42,9 +42,9 @@ Esse recurso suporta a utilização da [consulta delta](/graph/delta-query-overv
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |displayName|String|O nome de exibição da pasta.|
-|id|String|Identificador exclusivo da pasta de contatos. Somente leitura.|
+|id|Cadeia de caracteres|Identificador exclusivo da pasta de contatos. Somente leitura.|
 |parentFolderId|String|A ID da pasta pai da pasta.|
-|wellKnownName|string|O nome da pasta se a pasta for uma pasta reconhecida. No momento `contacts` é a única pasta Contatos reconhecidas.|
+|wellKnownName|string|O nome da pasta se a pasta for uma pasta reconhecida. Atualmente `contacts` é a única pasta de contatos reconhecida.|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|

@@ -1,19 +1,19 @@
 ---
 title: Atualizar secureScoreControlProfiles
-description: Atualize uma propriedade editável secureScoreControlProfiles dentro de qualquer solução integrada para alterar várias propriedades, como assignedTo ou tenantNote.
+description: Atualize uma propriedade secureScoreControlProfiles editável em qualquer solução integrada para alterar várias propriedades, como assignedTo ou tenantNote.
 localization_priority: Normal
 ms.openlocfilehash: 711fd29e906822def0a5f4b5fbca13a1d73732d6
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642027"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545563"
 ---
 # <a name="update-securescorecontrolprofiles"></a>Atualizar secureScoreControlProfiles
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize uma propriedade editável **secureScoreControlProfiles** dentro de qualquer solução integrada para alterar várias propriedades, como **assignedTo** ou **tenantNote**.
+Atualize uma propriedade **secureScoreControlProfiles** editável em qualquer solução integrada para alterar várias propriedades, como **assignedTo** ou **tenantNote**.
 
 ## <a name="permissions"></a>Permissões
 
@@ -21,9 +21,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) |   SecurityEvents.ReadWrite.All.  |
-|Delegada (conta pessoal da Microsoft) |  Sem suporte.  |
-|Aplicativo | SecurityEvents.ReadWrite.All. |
+|Delegado (conta corporativa ou de estudante) |   Escopo securityevents. ReadWrite. All.  |
+|Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
+|Aplicativo | Escopo securityevents. ReadWrite. All. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -38,24 +38,24 @@ PATCH /security/secureScoreControlProfiles/{id}
 | Nome       | Descrição|
 |:-----------|:-----------|
 | Autorização  | Portador {código}. Obrigatório.|
-|Preferir | retornar = representação. |
+|Preferir | Return = representação. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON dos valores para os campos relevantes que devem ser atualizados. A tabela a seguir lista os campos que podem ser atualizados por um secureScoreControlProfile. Os valores para propriedades existentes que não estão incluídos no corpo da solicitação não serão alterado. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
+No corpo da solicitação, forneça uma representação JSON dos valores de campos relevantes que devem ser atualizados. A tabela a seguir lista os campos que podem ser atualizados para um secureScoreControlProfile. Os valores das propriedades existentes que não estão incluídas no corpo da solicitação não serão alterados. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
 
 | Propriedade   | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|assignedTo|String|Nome do analista de controle é atribuída a triagem, implementação ou correção.|
-|tenantNote|String|Comentários de analistas no controle (para gerenciamento de controle do cliente).|
-|controlStateUpdates| String|Analista orientada a configuração no controle. Os valores possíveis são: `ignore`, `thirdParty`, `reviewed`.|
+|assignedTo|String|Nome do analista ao qual o controle é atribuído para a triagem, implementação ou correção.|
+|tenantNote|String|Comentários de analista sobre o controle (para o gerenciamento de controle de clientes).|
+|controlStateUpdates| String|Configuração orientada pelo analista no controle. Os valores possíveis são: `ignore`, `thirdParty`, `reviewed`.|
 
 
 ## <a name="response"></a>Resposta
 
 Se tiver êxito, este método retornará um código de resposta `204 No Content`.
 
-Se o cabeçalho de solicitação opcional for usado, o método retornará um `200 OK` código de resposta e o objeto atualizado [secureScoreControlProfiles](../resources/securescorecontrolprofiles.md) no corpo da resposta.
+Se o cabeçalho de solicitação opcional for usado, o método retornará `200 OK` um código de resposta e o objeto [secureScoreControlProfiles](../resources/securescorecontrolprofiles.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 188561f3e34063b6006cebd84283b8455686ed84
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29639927"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543729"
 ---
 # <a name="chartaxistitleformat-resource-type"></a>Tipo de recurso ChartAxisTitleFormat
 
@@ -22,7 +22,7 @@ Representa a formatação do título do eixo do gráfico.
 Nenhum
 
 ## <a name="properties"></a>Propriedades
-Nenhum
+Nenhuma
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|

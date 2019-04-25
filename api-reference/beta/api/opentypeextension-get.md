@@ -4,41 +4,41 @@ description: Obtenha uma extensão aberta (objeto openTypeExtension) identificad
 localization_priority: Normal
 author: dkershaw10
 ms.openlocfilehash: 010212497eef3de812c87055a5b1db3cd7b305ca
-ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "31890028"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539999"
 ---
 # <a name="get-open-extension"></a>Obter extensão aberta
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha uma extensão aberta (objeto[openTypeExtension](../resources/opentypeextension.md) ) identificada por nome ou nome totalmente qualificado.
+Obtenha uma extensão aberta (objeto [openTypeExtension](../resources/opentypeextension.md)) identificada por nome ou nome totalmente qualificado.
 
-A tabela a seguir lista os três cenários em que é possível obter uma extensão aberta de uma instância de recurso com suporte.
+A tabela a seguir lista os três cenários em que é possível obter uma extensão aberta de uma instância de recursos com suporte.
 
 |**Cenário GET**|**Recursos com suporte**|**Corpo da resposta**|
 |:-----|:-----|:-----|
-|Obtenha uma extensão específica de uma instância de recurso conhecida.| [Unidade administrativa](../resources/administrativeunit.md), [dispositivo](../resources/device.md), [evento](../resources/event.md), [grupo](../resources/group.md), [evento de grupo](../resources/event.md), postagem de [grupo](../resources/post.md), [mensagem](../resources/message.md), [organização](../resources/organization.md), [contato pessoal](../resources/contact.md), [usuário](../resources/user.md) | Somente a extensão aberta.|
+|Obtenha uma extensão específica de uma instância de recurso conhecida.| [Unidade administrativa](../resources/administrativeunit.md), [dispositivo](../resources/device.md), [evento](../resources/event.md), [grupo](../resources/group.md), [evento de grupo](../resources/event.md), postagem de [grupo](../resources/post.md), [mensagem](../resources/message.md), [organização](../resources/organization.md), [contato pessoal](../resources/contact.md), [usuário](../resources/user.md) | Somente extensão aberta.|
 |Obtenha uma instância de recurso conhecida, expandida com uma extensão específica.|Unidade administrativa, dispositivo, evento, grupo, evento de grupo, postagem de grupo, mensagem, organização, contato pessoal, usuário |Uma instância de recurso expandida com a extensão aberta.|
-|Encontre e expanda instâncias de recursos com uma extensão específica. | Evento, grupo evento, postagem de grupo, mensagem, contato pessoal |Instâncias de recursos expandidas com a extensão aberta.|
+|Encontre e expanda instâncias de recursos com uma extensão específica. | Evento, evento de grupo, postagem de grupo, mensagem, contato pessoal |Instâncias de recursos expandidas com a extensão aberta.|
 
 ## <a name="permissions"></a>Permissões
 
-Dependendo do recurso que contém a extensão e o tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é o menos privilegiado necessário para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Dependendo do recurso que contém a extensão e o tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é a menos privilegiada necessária para fazer chamadas a esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-| Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Aplicativo |
+| Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Application |
 |:-----|:-----|:-----|:-----|
 | [device](../resources/device.md) | Directory.Read.All | Sem suporte | Device.ReadWrite.All |
 | [evento](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 | [grupo](../resources/group.md) | Group.Read.All | Sem suporte | Group.Read.All |
 | [evento de grupo](../resources/event.md) | Group.Read.All | Sem suporte | Sem suporte |
 | [postagem de grupo](../resources/post.md) | Group.Read.All | Sem suporte | Group.Read.All |
-| [mensagem](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read | 
-| [organization](../resources/organization.md) | User.Read | Sem suporte | Sem suporte |
+| [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read | 
+| [organização](../resources/organization.md) | User.Read | Sem suporte | Sem suporte |
 | [contato pessoal](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
-| [user](../resources/user.md) | User.Read | User.Read | User.Read.All |
+| [usuário](../resources/user.md) | User.Read | User.Read | User.Read.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -64,7 +64,7 @@ GET /users/{Id|userPrincipalName}/extensions/{extensionId}
 
 ### <a name="get-a-known-resource-instance-expanded-with-a-matching-extension"></a>Obtenha uma instância de recurso conhecida, expandida com uma extensão correspondente. 
 
-Para os tipos de recurso evento, evento de grupo, postagem de grupo, mensagem, contato pessoal, você pode usar a mesma solicitação REST que obter a instância de recurso, procure uma extensão que corresponda a um filtro na propriedade **ID** e expanda a instância com a extensão. A resposta inclui a maioria das propriedades de recurso.
+Para os tipos de recurso de evento, evento de grupo, postagem de grupo, mensagem e contato pessoal, você pode usar a mesma solicitação REST e, enquanto obtém a instância de recurso, procure uma extensão que corresponda a um filtro em sua propriedade **id** e expanda a instância com a extensão. A resposta inclui a maioria das propriedades do recurso.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -76,7 +76,7 @@ GET /users/{Id|userPrincipalName}/contacts/{Id}?$expand=extensions($filter=id eq
 ```
 
 
-Para os tipos de recurso dispositivo, grupo, organização e usuário, você também deve usar um `$select` parâmetro para incluir a propriedade **ID** e qualquer outra propriedade que você queira da instância de recurso:
+Para os tipos de recurso de dispositivo, grupo, organização e usuário, você também deve usar um parâmetro `$select` para incluir a propriedade **id** e quaisquer outras propriedades que você deseja na instância do recurso:
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -100,7 +100,7 @@ GET /users/{Id|userPrincipalName}/messages?$filter=Extensions/any(f:f/id eq '{ex
 GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
 ```
 
->**Observação:** A sintaxe acima mostra algumas maneiras comuns de identificar uma instância de recurso ou coleção para obter uma extensão dela. Todas as outras sintaxes que permitem identificar essas instâncias de recursos ou coleções oferecem suporte para a introdução de extensões abertas de forma semelhante.
+>**Observação:** a sintaxe acima mostra algumas maneiras comuns de identificar uma instância de recurso ou coleção, para obter uma extensão dela. Todas as outras sintaxes que permitem identificar essas instâncias de recursos ou coleções dão suporte à obtenção de extensões abertas delas de maneira semelhante.
 
 
 ## <a name="path-parameters"></a>Parâmetros do caminho
@@ -111,7 +111,7 @@ GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{ex
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Certifique-se de aplicar a [codificação de URL](https://www.w3schools.com/tags/ref_urlencode.asp) aos caracteres de espaço na cadeia de caracteres `$filter`.
+Verifique se aplicou a [codificação de URL](https://www.w3schools.com/tags/ref_urlencode.asp) aos caracteres de espaço na cadeia de caracteres `$filter`.
 
 |**Nome**|**Valor**|**Descrição**|
 |:---------------|:--------|:-------|
@@ -129,7 +129,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se for bem-sucedido, esse método retornará um código de resposta `200 OK` e um objeto [openTypeExtension](../resources/opentypeextension.md) no corpo da resposta. Dependendo da consulta GET, o corpo da resposta exato pode ser diferente.
+Se bem-sucedido, este método retorna o código de resposta `200 OK` e um objeto [openTypeExtension](../resources/opentypeextension.md) no corpo da resposta. Dependendo da consulta GET, o corpo da resposta exato pode ser diferente.
 ## <a name="example"></a>Exemplo
 
 #### <a name="request-1"></a>Solicitação 1

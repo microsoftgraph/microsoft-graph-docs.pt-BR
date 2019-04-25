@@ -1,21 +1,21 @@
 ---
 title: Tipo de recurso ChartLineFormat
-description: Abrange as opções de formatação dos elementos de linha.
+description: Encapsula as opções de formatação dos elementos de linha.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: b4409eb18dab41d43adc038b702a65fa8d63e4de
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640578"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543782"
 ---
 # <a name="chartlineformat-resource-type"></a>Tipo de recurso ChartLineFormat
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Abrange as opções de formatação dos elementos de linha.
+Encapsula as opções de formatação dos elementos de linha.
 
 
 ## <a name="methods"></a>Métodos
@@ -29,9 +29,9 @@ Abrange as opções de formatação dos elementos de linha.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|color|string|Código de cor HTML que representa a cor das linhas no gráfico.|
+|color|string|Código de cores HTML que representa a cor das linhas no gráfico.|
 
-## <a name="relationships"></a>Relacionamentos
+## <a name="relationships"></a>Relações
 Nenhum
 
 
