@@ -1,36 +1,37 @@
 ---
 title: Atualizar o calendário
-description: 'Atualize as propriedades de um objeto calendar. O calendário pode ser uma para um usuário, '
+description: 'Atualize as propriedades de um objeto calendar. O calendário pode ser um para um usuário, '
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: ad372b18397d24185c3e05daabe206fc3336f544
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27987829"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32580584"
 ---
-# <a name="update-calendar"></a><span data-ttu-id="560dc-104">Atualizar o calendário</span><span class="sxs-lookup"><span data-stu-id="560dc-104">Update calendar</span></span>
+# <a name="update-calendar"></a><span data-ttu-id="6abc4-104">Atualizar o calendário</span><span class="sxs-lookup"><span data-stu-id="6abc4-104">Update calendar</span></span>
 
-<span data-ttu-id="560dc-105">Atualize as propriedades de um objeto [calendar](../resources/calendar.md).</span><span class="sxs-lookup"><span data-stu-id="560dc-105">Update the properties of of a [calendar](../resources/calendar.md) object.</span></span> <span data-ttu-id="560dc-106">O calendário pode ser um para um [usuário](../resources/user.md) ou o calendário padrão de um [grupo](../resources/group.md) do Office 365.</span><span class="sxs-lookup"><span data-stu-id="560dc-106">The calendar can be one for a [user](../resources/user.md), or the default calendar of an Office 365 [group](../resources/group.md).</span></span>
-## <a name="permissions"></a><span data-ttu-id="560dc-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="560dc-107">Permissions</span></span>
-<span data-ttu-id="560dc-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="560dc-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="6abc4-105">Atualize as propriedades de um objeto [calendar](../resources/calendar.md).</span><span class="sxs-lookup"><span data-stu-id="6abc4-105">Update the properties of of a [calendar](../resources/calendar.md) object.</span></span> <span data-ttu-id="6abc4-106">O calendário pode ser um para um [usuário](../resources/user.md) ou o calendário padrão de um [grupo](../resources/group.md) do Office 365.</span><span class="sxs-lookup"><span data-stu-id="6abc4-106">The calendar can be one for a [user](../resources/user.md), or the default calendar of an Office 365 [group](../resources/group.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="6abc4-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="6abc4-107">Permissions</span></span>
+<span data-ttu-id="6abc4-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6abc4-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="560dc-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="560dc-110">Permission type</span></span>      | <span data-ttu-id="560dc-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="560dc-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="6abc4-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="6abc4-110">Permission type</span></span>      | <span data-ttu-id="6abc4-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="6abc4-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="560dc-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="560dc-112">Delegated (work or school account)</span></span> | <span data-ttu-id="560dc-113">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="560dc-113">Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="560dc-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="560dc-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="560dc-115">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="560dc-115">Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="560dc-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="560dc-116">Application</span></span> | <span data-ttu-id="560dc-117">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="560dc-117">Calendars.ReadWrite</span></span> |
+|<span data-ttu-id="6abc4-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="6abc4-112">Delegated (work or school account)</span></span> | <span data-ttu-id="6abc4-113">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6abc4-113">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="6abc4-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="6abc4-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6abc4-115">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6abc4-115">Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="6abc4-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="6abc4-116">Application</span></span> | <span data-ttu-id="6abc4-117">Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="6abc4-117">Calendars.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="560dc-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="560dc-118">HTTP request</span></span>
-<span data-ttu-id="560dc-119"><!-- { "blockType": "ignored" } -->Um usuário ou do grupo padrão [calendário](../resources/calendar.md).</span><span class="sxs-lookup"><span data-stu-id="560dc-119"><!-- { "blockType": "ignored" } --> A user's or group's default [calendar](../resources/calendar.md).</span></span>
+## <a name="http-request"></a><span data-ttu-id="6abc4-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="6abc4-118">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+<span data-ttu-id="6abc4-119">Um [calendar](../resources/calendar.md) padrão de um usuário ou grupo.</span><span class="sxs-lookup"><span data-stu-id="6abc4-119">A user's or group's default [calendar](../resources/calendar.md).</span></span>
 ```http
 PATCH /me/calendar
 PATCH /users/{id | userPrincipalName}/calendar
 PATCH /groups/{id}/calendar
 ```
-<span data-ttu-id="560dc-120">Um [calendar](../resources/calendar.md) de um usuário em um [calendarGroup](../resources/calendargroup.md) padrão.</span><span class="sxs-lookup"><span data-stu-id="560dc-120">A user's [calendar](../resources/calendar.md) in the default [calendarGroup](../resources/calendargroup.md).</span></span>
+<span data-ttu-id="6abc4-120">Um [calendar](../resources/calendar.md) de um usuário em um [calendarGroup](../resources/calendargroup.md) padrão.</span><span class="sxs-lookup"><span data-stu-id="6abc4-120">A user's [calendar](../resources/calendar.md) in the default [calendarGroup](../resources/calendargroup.md).</span></span>
 ```http
 PATCH /me/calendars/{id}
 PATCH /users/{id | userPrincipalName}/calendars/{id}
@@ -38,31 +39,31 @@ PATCH /users/{id | userPrincipalName}/calendars/{id}
 PATCH /me/calendarGroup/calendars/{id}
 PATCH /users/{id | userPrincipalName}/calendarGroup/calendars/{id}
 ```
-<span data-ttu-id="560dc-121">Um [calendar](../resources/calendar.md) de um usuário em um [calendarGroup](../resources/calendargroup.md) específico.</span><span class="sxs-lookup"><span data-stu-id="560dc-121">A user's [calendar](../resources/calendar.md) in a specific [calendarGroup](../resources/calendargroup.md).</span></span>
+<span data-ttu-id="6abc4-121">Um [calendar](../resources/calendar.md) de um usuário em um [calendarGroup](../resources/calendargroup.md) específico.</span><span class="sxs-lookup"><span data-stu-id="6abc4-121">A user's [calendar](../resources/calendar.md) in a specific [calendarGroup](../resources/calendargroup.md).</span></span>
 ```http
 PATCH /me/calendarGroups/{id}/calendars/{id}
 PATCH /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="560dc-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="560dc-122">Request headers</span></span>
-| <span data-ttu-id="560dc-123">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="560dc-123">Header</span></span>       | <span data-ttu-id="560dc-124">Valor</span><span class="sxs-lookup"><span data-stu-id="560dc-124">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="6abc4-122">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="6abc4-122">Request headers</span></span>
+| <span data-ttu-id="6abc4-123">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="6abc4-123">Header</span></span>       | <span data-ttu-id="6abc4-124">Valor</span><span class="sxs-lookup"><span data-stu-id="6abc4-124">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="560dc-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="560dc-125">Authorization</span></span>  | <span data-ttu-id="560dc-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="560dc-p104">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="560dc-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="560dc-128">Content-Type</span></span>  | <span data-ttu-id="560dc-p105">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="560dc-p105">application/json. Required.</span></span>  |
+| <span data-ttu-id="6abc4-125">Autorização</span><span class="sxs-lookup"><span data-stu-id="6abc4-125">Authorization</span></span>  | <span data-ttu-id="6abc4-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="6abc4-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="6abc4-128">Content-Type</span><span class="sxs-lookup"><span data-stu-id="6abc4-128">Content-Type</span></span>  | <span data-ttu-id="6abc4-p105">application/json. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="6abc4-p105">application/json. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="560dc-131">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="560dc-131">Request body</span></span>
-<span data-ttu-id="560dc-p106">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="560dc-p106">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="6abc4-131">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="6abc4-131">Request body</span></span>
+<span data-ttu-id="6abc4-p106">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="6abc4-p106">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="560dc-135">Propriedade</span><span class="sxs-lookup"><span data-stu-id="560dc-135">Property</span></span>     | <span data-ttu-id="560dc-136">Tipo</span><span class="sxs-lookup"><span data-stu-id="560dc-136">Type</span></span>   |<span data-ttu-id="560dc-137">Descrição</span><span class="sxs-lookup"><span data-stu-id="560dc-137">Description</span></span>|
+| <span data-ttu-id="6abc4-135">Propriedade</span><span class="sxs-lookup"><span data-stu-id="6abc4-135">Property</span></span>     | <span data-ttu-id="6abc4-136">Tipo</span><span class="sxs-lookup"><span data-stu-id="6abc4-136">Type</span></span>   |<span data-ttu-id="6abc4-137">Descrição</span><span class="sxs-lookup"><span data-stu-id="6abc4-137">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="560dc-138">color</span><span class="sxs-lookup"><span data-stu-id="560dc-138">color</span></span>|<span data-ttu-id="560dc-139">String</span><span class="sxs-lookup"><span data-stu-id="560dc-139">String</span></span>|<span data-ttu-id="560dc-p107">Especifica o tema de cores para distinguir o calendário de outros calendários em uma interface do usuário. Os valores de propriedade são: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1</span><span class="sxs-lookup"><span data-stu-id="560dc-p107">Specifies the color theme to distinguish the calendar from other calendars in a UI. The property values are: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1</span></span>|
-|<span data-ttu-id="560dc-142">name</span><span class="sxs-lookup"><span data-stu-id="560dc-142">name</span></span>|<span data-ttu-id="560dc-143">String</span><span class="sxs-lookup"><span data-stu-id="560dc-143">String</span></span>|<span data-ttu-id="560dc-144">O nome do calendário.</span><span class="sxs-lookup"><span data-stu-id="560dc-144">The calendar name.</span></span>|
+|<span data-ttu-id="6abc4-138">color</span><span class="sxs-lookup"><span data-stu-id="6abc4-138">color</span></span>|<span data-ttu-id="6abc4-139">String</span><span class="sxs-lookup"><span data-stu-id="6abc4-139">String</span></span>|<span data-ttu-id="6abc4-p107">Especifica o tema de cores para distinguir o calendário de outros calendários em uma interface do usuário. Os valores de propriedade são: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1</span><span class="sxs-lookup"><span data-stu-id="6abc4-p107">Specifies the color theme to distinguish the calendar from other calendars in a UI. The property values are: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1</span></span>|
+|<span data-ttu-id="6abc4-142">name</span><span class="sxs-lookup"><span data-stu-id="6abc4-142">name</span></span>|<span data-ttu-id="6abc4-143">String</span><span class="sxs-lookup"><span data-stu-id="6abc4-143">String</span></span>|<span data-ttu-id="6abc4-144">O nome do calendário.</span><span class="sxs-lookup"><span data-stu-id="6abc4-144">The calendar name.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="560dc-145">Resposta</span><span class="sxs-lookup"><span data-stu-id="560dc-145">Response</span></span>
+## <a name="response"></a><span data-ttu-id="6abc4-145">Resposta</span><span class="sxs-lookup"><span data-stu-id="6abc4-145">Response</span></span>
 
-<span data-ttu-id="560dc-146">Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [calendar](../resources/calendar.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="560dc-146">If successful, this method returns a `200 OK` response code and updated [calendar](../resources/calendar.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="560dc-147">Exemplo</span><span class="sxs-lookup"><span data-stu-id="560dc-147">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="560dc-148">Solicitação</span><span class="sxs-lookup"><span data-stu-id="560dc-148">Request</span></span>
-<span data-ttu-id="560dc-149">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="560dc-149">Here is an example of the request.</span></span>
+<span data-ttu-id="6abc4-146">Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [calendar](../resources/calendar.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="6abc4-146">If successful, this method returns a `200 OK` response code and updated [calendar](../resources/calendar.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="6abc4-147">Exemplo</span><span class="sxs-lookup"><span data-stu-id="6abc4-147">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="6abc4-148">Solicitação</span><span class="sxs-lookup"><span data-stu-id="6abc4-148">Request</span></span>
+<span data-ttu-id="6abc4-149">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="6abc4-149">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_calendar"
@@ -75,8 +76,8 @@ Content-type: application/json
   "name": "Social events"
 }
 ```
-##### <a name="response"></a><span data-ttu-id="560dc-150">Resposta</span><span class="sxs-lookup"><span data-stu-id="560dc-150">Response</span></span>
-<span data-ttu-id="560dc-p108">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="560dc-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="6abc4-150">Resposta</span><span class="sxs-lookup"><span data-stu-id="6abc4-150">Response</span></span>
+<span data-ttu-id="6abc4-p108">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="6abc4-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

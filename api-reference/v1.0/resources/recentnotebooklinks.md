@@ -3,25 +3,25 @@ title: tipo de recurso recentNotebookLinks
 description: Links para abrir um bloco de anotações do OneNote. Esse tipo de recurso existe como uma propriedade em um recurso recentNotebook.
 localization_priority: Normal
 ms.openlocfilehash: 846047bd602d19cb4745e0a63f0326aaf7bfb512
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810581"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579477"
 ---
-# <a name="recentnotebooklinks-resource-type"></a><span data-ttu-id="6a01e-104">tipo de recurso recentNotebookLinks</span><span class="sxs-lookup"><span data-stu-id="6a01e-104">recentNotebookLinks resource type</span></span>
+# <a name="recentnotebooklinks-resource-type"></a><span data-ttu-id="c9a43-104">tipo de recurso recentNotebookLinks</span><span class="sxs-lookup"><span data-stu-id="c9a43-104">recentNotebookLinks resource type</span></span>
 
-<span data-ttu-id="6a01e-105">Links para abrir um bloco de anotações do OneNote.</span><span class="sxs-lookup"><span data-stu-id="6a01e-105">Links for opening a OneNote notebook.</span></span> <span data-ttu-id="6a01e-106">Esse tipo de recurso existe como uma propriedade em um recurso [recentNotebook](recentnotebook.md).</span><span class="sxs-lookup"><span data-stu-id="6a01e-106">This resource type exists as a property on a [recentNotebook](recentnotebook.md) resource.</span></span>
+<span data-ttu-id="c9a43-105">Links para abrir um bloco de anotações do OneNote.</span><span class="sxs-lookup"><span data-stu-id="c9a43-105">Links for opening a OneNote notebook.</span></span> <span data-ttu-id="c9a43-106">Esse tipo de recurso existe como uma propriedade em um recurso [recentNotebook](recentnotebook.md).</span><span class="sxs-lookup"><span data-stu-id="c9a43-106">This resource type exists as a property on a [recentNotebook](recentnotebook.md) resource.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="6a01e-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="6a01e-107">Properties</span></span>
-| <span data-ttu-id="6a01e-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="6a01e-108">Property</span></span>     | <span data-ttu-id="6a01e-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="6a01e-109">Type</span></span>   |<span data-ttu-id="6a01e-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="6a01e-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="c9a43-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="c9a43-107">Properties</span></span>
+| <span data-ttu-id="c9a43-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="c9a43-108">Property</span></span>     | <span data-ttu-id="c9a43-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="c9a43-109">Type</span></span>   |<span data-ttu-id="c9a43-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="c9a43-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="6a01e-111">oneNoteClientUrl</span><span class="sxs-lookup"><span data-stu-id="6a01e-111">oneNoteClientUrl</span></span>|[<span data-ttu-id="6a01e-112">externalLink</span><span class="sxs-lookup"><span data-stu-id="6a01e-112">externalLink</span></span>](externallink.md)|<span data-ttu-id="6a01e-113">Abre o bloco de anotações no cliente nativo do OneNote se ele estiver instalado.</span><span class="sxs-lookup"><span data-stu-id="6a01e-113">Opens the notebook in the OneNote native client if it's installed.</span></span>|
-|<span data-ttu-id="6a01e-114">oneNoteWebUrl</span><span class="sxs-lookup"><span data-stu-id="6a01e-114">oneNoteWebUrl</span></span>|[<span data-ttu-id="6a01e-115">externalLink</span><span class="sxs-lookup"><span data-stu-id="6a01e-115">externalLink</span></span>](externallink.md)|<span data-ttu-id="6a01e-116">Abre o bloco de anotações no OneNote Online.</span><span class="sxs-lookup"><span data-stu-id="6a01e-116">Opens the notebook in OneNote Online.</span></span>|
+|<span data-ttu-id="c9a43-111">oneNoteClientUrl</span><span class="sxs-lookup"><span data-stu-id="c9a43-111">oneNoteClientUrl</span></span>|[<span data-ttu-id="c9a43-112">externalLink</span><span class="sxs-lookup"><span data-stu-id="c9a43-112">externalLink</span></span>](externallink.md)|<span data-ttu-id="c9a43-113">Abre o bloco de anotações no cliente nativo do OneNote se ele estiver instalado.</span><span class="sxs-lookup"><span data-stu-id="c9a43-113">Opens the notebook in the OneNote native client if it's installed.</span></span>|
+|<span data-ttu-id="c9a43-114">oneNoteWebUrl</span><span class="sxs-lookup"><span data-stu-id="c9a43-114">oneNoteWebUrl</span></span>|[<span data-ttu-id="c9a43-115">externalLink</span><span class="sxs-lookup"><span data-stu-id="c9a43-115">externalLink</span></span>](externallink.md)|<span data-ttu-id="c9a43-116">Abre o bloco de anotações no OneNote Online.</span><span class="sxs-lookup"><span data-stu-id="c9a43-116">Opens the notebook in OneNote Online.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="6a01e-117">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="6a01e-117">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="c9a43-117">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="c9a43-117">JSON representation</span></span>
 
-<span data-ttu-id="6a01e-118">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="6a01e-118">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="c9a43-118">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="c9a43-118">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

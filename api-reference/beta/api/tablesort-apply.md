@@ -5,56 +5,56 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: f2279109f83758958cb00940604854c4edeecd45
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523439"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544565"
 ---
-# <a name="tablesort-apply"></a><span data-ttu-id="019e5-103">TableSort: apply</span><span class="sxs-lookup"><span data-stu-id="019e5-103">TableSort: apply</span></span>
+# <a name="tablesort-apply"></a><span data-ttu-id="01616-103">TableSort: apply</span><span class="sxs-lookup"><span data-stu-id="01616-103">TableSort: apply</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="019e5-104">Execute uma operação de classificação.</span><span class="sxs-lookup"><span data-stu-id="019e5-104">Perform a sort operation.</span></span>
-## <a name="permissions"></a><span data-ttu-id="019e5-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="019e5-105">Permissions</span></span>
-<span data-ttu-id="019e5-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="019e5-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="01616-104">Execute uma operação de classificação.</span><span class="sxs-lookup"><span data-stu-id="01616-104">Perform a sort operation.</span></span>
+## <a name="permissions"></a><span data-ttu-id="01616-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="01616-105">Permissions</span></span>
+<span data-ttu-id="01616-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="01616-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="019e5-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="019e5-108">Permission type</span></span>      | <span data-ttu-id="019e5-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="019e5-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="01616-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="01616-108">Permission type</span></span>      | <span data-ttu-id="01616-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="01616-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="019e5-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="019e5-110">Delegated (work or school account)</span></span> | <span data-ttu-id="019e5-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="019e5-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="019e5-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="019e5-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="019e5-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="019e5-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="019e5-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="019e5-114">Application</span></span> | <span data-ttu-id="019e5-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="019e5-115">Not supported.</span></span> |
+|<span data-ttu-id="01616-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="01616-110">Delegated (work or school account)</span></span> | <span data-ttu-id="01616-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="01616-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="01616-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="01616-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="01616-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="01616-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="01616-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="01616-114">Application</span></span> | <span data-ttu-id="01616-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="01616-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="019e5-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="019e5-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="01616-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="01616-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/tables/{id|name}/sort/apply
 POST /workbook/worksheets/{id|name}/tables/{id|name}/sort/apply
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="019e5-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="019e5-117">Request headers</span></span>
-| <span data-ttu-id="019e5-118">Nome</span><span class="sxs-lookup"><span data-stu-id="019e5-118">Name</span></span>       | <span data-ttu-id="019e5-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="019e5-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="01616-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="01616-117">Request headers</span></span>
+| <span data-ttu-id="01616-118">Nome</span><span class="sxs-lookup"><span data-stu-id="01616-118">Name</span></span>       | <span data-ttu-id="01616-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="01616-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="019e5-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="019e5-120">Authorization</span></span>  | <span data-ttu-id="019e5-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="019e5-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="019e5-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="019e5-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="019e5-p103">ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.</span><span class="sxs-lookup"><span data-stu-id="019e5-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="01616-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="01616-120">Authorization</span></span>  | <span data-ttu-id="01616-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="01616-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="01616-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="01616-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="01616-p103">ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.</span><span class="sxs-lookup"><span data-stu-id="01616-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="019e5-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="019e5-126">Request body</span></span>
-<span data-ttu-id="019e5-127">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="019e5-127">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="01616-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="01616-126">Request body</span></span>
+<span data-ttu-id="01616-127">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="01616-127">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="019e5-128">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="019e5-128">Parameter</span></span>    | <span data-ttu-id="019e5-129">Tipo</span><span class="sxs-lookup"><span data-stu-id="019e5-129">Type</span></span>   |<span data-ttu-id="019e5-130">Descrição</span><span class="sxs-lookup"><span data-stu-id="019e5-130">Description</span></span>|
+| <span data-ttu-id="01616-128">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="01616-128">Parameter</span></span>    | <span data-ttu-id="01616-129">Tipo</span><span class="sxs-lookup"><span data-stu-id="01616-129">Type</span></span>   |<span data-ttu-id="01616-130">Descrição</span><span class="sxs-lookup"><span data-stu-id="01616-130">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="019e5-131">campos</span><span class="sxs-lookup"><span data-stu-id="019e5-131">fields</span></span>|<span data-ttu-id="019e5-132">SortField</span><span class="sxs-lookup"><span data-stu-id="019e5-132">SortField</span></span>|<span data-ttu-id="019e5-133">A lista de condições para a classificação.</span><span class="sxs-lookup"><span data-stu-id="019e5-133">The list of conditions to sort on.</span></span>|
-|<span data-ttu-id="019e5-134">matchCase</span><span class="sxs-lookup"><span data-stu-id="019e5-134">matchCase</span></span>|<span data-ttu-id="019e5-135">booliano</span><span class="sxs-lookup"><span data-stu-id="019e5-135">boolean</span></span>|<span data-ttu-id="019e5-p104">Opcional. Define se o uso de maiúsculas ou minúsculas afeta a ordenação da cadeia de caracteres.</span><span class="sxs-lookup"><span data-stu-id="019e5-p104">Optional. Whether to have the casing impact string ordering.</span></span>|
-|<span data-ttu-id="019e5-138">method</span><span class="sxs-lookup"><span data-stu-id="019e5-138">method</span></span>|<span data-ttu-id="019e5-139">string</span><span class="sxs-lookup"><span data-stu-id="019e5-139">string</span></span>|<span data-ttu-id="019e5-p105">Opcional. O método de ordenação usado pelos caracteres chineses.  Os valores possíveis são: `PinYin` e `StrokeCount`.</span><span class="sxs-lookup"><span data-stu-id="019e5-p105">Optional. The ordering method used for Chinese characters.  Possible values are: `PinYin`, `StrokeCount`.</span></span>|
+|<span data-ttu-id="01616-131">campos</span><span class="sxs-lookup"><span data-stu-id="01616-131">fields</span></span>|<span data-ttu-id="01616-132">SortField</span><span class="sxs-lookup"><span data-stu-id="01616-132">SortField</span></span>|<span data-ttu-id="01616-133">A lista de condições para a classificação.</span><span class="sxs-lookup"><span data-stu-id="01616-133">The list of conditions to sort on.</span></span>|
+|<span data-ttu-id="01616-134">matchCase</span><span class="sxs-lookup"><span data-stu-id="01616-134">matchCase</span></span>|<span data-ttu-id="01616-135">booliano</span><span class="sxs-lookup"><span data-stu-id="01616-135">boolean</span></span>|<span data-ttu-id="01616-p104">Opcional. Define se o uso de maiúsculas ou minúsculas afeta a ordenação da cadeia de caracteres.</span><span class="sxs-lookup"><span data-stu-id="01616-p104">Optional. Whether to have the casing impact string ordering.</span></span>|
+|<span data-ttu-id="01616-138">method</span><span class="sxs-lookup"><span data-stu-id="01616-138">method</span></span>|<span data-ttu-id="01616-139">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="01616-139">string</span></span>|<span data-ttu-id="01616-p105">Opcional. O método de ordenação usado pelos caracteres chineses.  Os valores possíveis são: `PinYin` e `StrokeCount`.</span><span class="sxs-lookup"><span data-stu-id="01616-p105">Optional. The ordering method used for Chinese characters.  Possible values are: `PinYin`, `StrokeCount`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="019e5-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="019e5-143">Response</span></span>
+## <a name="response"></a><span data-ttu-id="01616-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="01616-143">Response</span></span>
 
-<span data-ttu-id="019e5-p106">Se bem-sucedido, este método retorna um código de resposta `200 OK`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="019e5-p106">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="01616-p106">Se bem-sucedido, este método retorna um código de resposta `200 OK`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="01616-p106">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="019e5-146">Exemplo</span><span class="sxs-lookup"><span data-stu-id="019e5-146">Example</span></span>
-<span data-ttu-id="019e5-147">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="019e5-147">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="019e5-148">Solicitação</span><span class="sxs-lookup"><span data-stu-id="019e5-148">Request</span></span>
-<span data-ttu-id="019e5-149">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="019e5-149">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="01616-146">Exemplo</span><span class="sxs-lookup"><span data-stu-id="01616-146">Example</span></span>
+<span data-ttu-id="01616-147">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="01616-147">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="01616-148">Solicitação</span><span class="sxs-lookup"><span data-stu-id="01616-148">Request</span></span>
+<span data-ttu-id="01616-149">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="01616-149">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "tablesort_apply"
@@ -83,8 +83,8 @@ Content-length: 298
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="019e5-150">Resposta</span><span class="sxs-lookup"><span data-stu-id="019e5-150">Response</span></span>
-<span data-ttu-id="019e5-151">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="019e5-151">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="01616-150">Resposta</span><span class="sxs-lookup"><span data-stu-id="01616-150">Response</span></span>
+<span data-ttu-id="01616-151">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="01616-151">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,
