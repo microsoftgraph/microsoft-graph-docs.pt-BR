@@ -1,30 +1,30 @@
 ---
-title: tipo de recurso de bookingSchedulingPolicy
+title: tipo de recurso bookingSchedulingPolicy
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: 3dee3314818d46c4131526dc92565eb4f8ca6ea2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523446"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543720"
 ---
-# <a name="bookingschedulingpolicy-resource-type"></a>tipo de recurso de bookingSchedulingPolicy
+# <a name="bookingschedulingpolicy-resource-type"></a>tipo de recurso bookingSchedulingPolicy
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-Representa o conjunto de diretivas que determinam como os compromissos devem ser criados em um calendário do Microsoft Bookings.
+Representa o conjunto de políticas que determinam como os compromissos devem ser criados em um calendário do Microsoft bookings.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|allowStaffSelection|Booliano|True se permitir que os clientes escolham uma pessoa específica para a reserva.|
-|maximumAdvance|Duration|Número máximo de dias de antecedência que pode ser feita uma reserva. Ela segue o formato [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) .|
-|minimumLeadTime|Duration|A quantidade mínima de tempo antes dos quais devem ser feitos reservas e cancelamentos. Ela segue o formato [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) .|
-|sendConfirmationsToOwner|Booliano| True para notificar os negócios via email quando uma reserva é criada ou alterada. Use o endereço de email especificado na propriedade **email** da entidade **bookingBusiness** para os negócios. |
-|timeSlotInterval|Duration|Duração de cada intervalo de tempo, denotado em formato [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) .|
+|allowStaffSelection|Booliano|True se para permitir que os clientes escolham uma pessoa específica para a reserva.|
+|maximumAdvance|Duração|Número máximo de dias de antecedência que uma reserva pode ser feita. Ele segue o formato [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) .|
+|minimumLeadTime|Duração|A quantidade mínima de tempo antes da qual as reservas e os cancelamentos devem ser feitos. Ele segue o formato [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) .|
+|sendConfirmationsToOwner|Booliano| True para notificar a empresa por email quando uma reserva é criada ou alterada. Use o endereço de email especificado na propriedade **email** da entidade **bookingBusiness** para a empresa. |
+|timeSlotInterval|Duração|Duração de cada intervalo de tempo, indicado no formato [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) .|
 
 ## <a name="json-representation"></a>Representação JSON
 

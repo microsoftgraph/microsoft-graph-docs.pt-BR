@@ -3,11 +3,11 @@ title: tipo de recurso scheduleInformation
 description: Representa a disponibilidade de um usuário, lista de distribuição ou recurso por um período de tempo especificado.
 localization_priority: Normal
 ms.openlocfilehash: a19689eeafe9723cdadeb6147700933ab171637c
-ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30926583"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579265"
 ---
 # <a name="scheduleinformation-resource-type"></a>tipo de recurso scheduleInformation
 

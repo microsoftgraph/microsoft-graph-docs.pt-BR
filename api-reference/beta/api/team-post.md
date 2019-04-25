@@ -5,11 +5,11 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.openlocfilehash: 394fa92f6ef97d6bc7a8dff0d4ddfe10c677bf99
-ms.sourcegitcommit: d1a9e7c8e1376a99c5a5416257889ec113613a77
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "30458684"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536828"
 ---
 # <a name="create-team"></a>Criar equipe
 

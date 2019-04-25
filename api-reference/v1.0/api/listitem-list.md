@@ -6,11 +6,11 @@ title: Recuperar itens de uma lista do SharePoint
 localization_priority: Priority
 ms.prod: sharepoint
 ms.openlocfilehash: 358fc16065074e3b0b2f8b1d19e7a5c43a4126e6
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480492"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32541371"
 ---
 # <a name="enumerate-items-in-a-list"></a>Enumerar itens em uma lista
 

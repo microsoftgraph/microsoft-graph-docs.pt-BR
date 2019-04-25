@@ -1,24 +1,24 @@
 ---
-title: tipo de recurso de agreementFileData
-description: Representa o blob do Azure Active Directory termos (Azure AD) do arquivo do contrato de uso.
+title: tipo de recurso agreementFileData
+description: Representa o blob de um arquivo de contrato de uso do Azure Active Directory (Azure AD).
 localization_priority: Normal
 ms.openlocfilehash: bc0e7395875f64a3ee52e43b26da1a2df6276c9c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517026"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544100"
 ---
-# <a name="agreementfiledata-resource-type"></a>tipo de recurso de agreementFileData
+# <a name="agreementfiledata-resource-type"></a>tipo de recurso agreementFileData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa o blob do Azure Active Directory termos (Azure AD) do arquivo do contrato de uso.
+Representa o blob de um arquivo de contrato de uso do Azure Active Directory (Azure AD).
 
 ## <a name="properties"></a>Propriedades
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-|data|Binária|Dados que representam as condições de usar o documento PDF. Somente leitura.|
+|data|Binário|Dados que representam o documento PDF termos de uso. Somente leitura.|
 
 ## <a name="json-representation"></a>Representação JSON
 

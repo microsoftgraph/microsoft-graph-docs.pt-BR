@@ -5,11 +5,11 @@ localization_priority: Priority
 author: simonhult
 ms.prod: insights
 ms.openlocfilehash: b5a89f46c8480fb90cd019e5b4fb370e0a6592bf
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509592"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582258"
 ---
 # <a name="use-the-microsoft-graph-api-to-integrate-social-intelligence-in-an-app"></a>Usar a API do Microsoft Graph para integrar a inteligência social em um aplicativo
 
