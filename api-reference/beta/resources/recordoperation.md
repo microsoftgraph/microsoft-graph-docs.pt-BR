@@ -1,30 +1,30 @@
 ---
-title: tipo de recurso de recordOperation
-description: O tipo de recordOperation
+title: tipo de recurso recordOperation
+description: O tipo recordOperation
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 6b9deb566e5b527a9f20db69441fa96908212a38
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641593"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563027"
 ---
-# <a name="recordoperation-resource-type"></a>tipo de recurso de recordOperation
+# <a name="recordoperation-resource-type"></a>tipo de recurso recordOperation
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O tipo de recordOperation
+O tipo recordOperation
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade                       | Tipo                        | Descrição                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| clientContext                  | String                      | O contexto de cliente.                                                                                                                               |
+| clientContext                  | String                      | O contexto do cliente.                                                                                                                               |
 | completionReason               | String                      | Os valores possíveis são: `operationCanceled`, `stopToneDetected`, `maxRecordDurationReached`, `initialSilenceTimeout`, `maxSilenceTimeout`, `playPromptFailed`, `playBeepFailed`, `mediaReceiveTimeout`, `unspecifiedError`, `none`. |
 | createdDateTime                | DateTimeOffset              | A hora em que a gravação foi criada.                                                                                                          |
-| id                             | String                      | A identificação de operação do servidor. Somente leitura. Servidor gerado.                                                                                             |
+| id                             | Cadeia de caracteres                      | A ID da operação do servidor. Somente leitura. Servidor gerado.                                                                                             |
 | lastActionDateTime             | DateTimeOffset              | A hora da última ação da operação.                                                                                                     |
 | recordResourceAccessToken      | String                      | O token de acesso necessário para recuperar a gravação.                                                                                              |
 | recordResourceLocation         | String                      | O local onde a gravação está localizada.                                                                                                      |

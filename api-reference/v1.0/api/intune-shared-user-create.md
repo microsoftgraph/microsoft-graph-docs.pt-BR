@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: 95b01b4b00328c230d55b530cbdef2cb32dfe607
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30250226"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32576822"
 ---
 # <a name="create-user"></a>Criar usuário
 
@@ -52,7 +52,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar user.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo do usuário.|
+|id|String|Identificador exclusivo do usuário.|
 |**Integração**|
 |deviceEnrollmentLimit|Int32|O limite do número máximo de dispositivos que o usuário tem permissão para inscrever. Os valores permitidos vão de 5 a 1000.|
 

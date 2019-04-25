@@ -1,19 +1,19 @@
 ---
 title: 'event: snoozeReminder'
-description: Adie um lembrete para um evento em um calendário do usuário até um novo horário.
+description: Adiar um lembrete para um evento em um calendário de usuário até um novo horário.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: d3f8ffab576182f5e67dad49e34c67d886fe0bde
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27932410"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32584303"
 ---
 # <a name="event-snoozereminder"></a>event: snoozeReminder
 
-Adie um lembrete para um [evento](../resources/event.md) em um [calendário](../resources/calendar.md) do usuário até um novo horário.
+Adiar um lembrete para um [evento](../resources/event.md) em um [calendário](../resources/calendar.md) de usuário até um novo horário.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

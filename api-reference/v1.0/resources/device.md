@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: e72777691f0c599067c885168c0c58bb49cec3cb
-ms.sourcegitcommit: 159cf5aaa39d3721d96d3fd800f6a8b91159f74d
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30379525"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32574607"
 ---
 # <a name="device-resource-type"></a>tipo de recurso de dispositivo
 
@@ -26,7 +26,7 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |[Listar dispositivos](../api/device-list.md) | Coleção [device](device.md)| Recupere uma lista de dispositivos registrados no diretório. |
 |[Atualizar dispositivo](../api/device-update.md) | [device](device.md) |Atualize as propriedades de um objeto device. |
 |[Excluir dispositivo](../api/device-delete.md) | Nenhuma |Exclua um objeto device. |
-|[Listar memberOf](../api/device-list-memberof.md) |[directoryObject](directoryobject.md) collection| Lista os grupos dos quais o dispositivo é membro direto. |
+|[Listar memberOf](../api/device-list-memberof.md) |Coleção [directoryObject](directoryobject.md)| Lista os grupos dos quais o dispositivo é membro direto. |
 |[Listar registeredOwners](../api/device-list-registeredowners.md) |Coleção [directoryObject](directoryobject.md)| Obtenha os usuários que são proprietários registrados do dispositivo da propriedade de navegação registeredOwners.|
 |[Listar registeredUsers](../api/device-list-registeredusers.md) |Coleção [directoryObject](directoryobject.md)| Obtenha os usuários registrados do dispositivo da propriedade de navegação registeredUsers.|
 |**Extensões abertas**| | |
@@ -38,25 +38,25 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|accountEnabled|Booliano| **true** se a conta estiver habilitada; caso contrário, **false**. Obrigatório.|
+|accountEnabled|Boolean| **true** se a conta estiver habilitada; caso contrário, **false**. Obrigatório.|
 |alternativeSecurityIds|Coleção alternativeSecurityId| Apenas para uso interno. Não anulável. |
 |approximateLastSignInDateTime|DateTimeOffset| O tipo TIMESTAMP representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura. |
 |complianceExpirationDateTime|DateTimeOffset| O carimbo de data/hora quando o dispositivo não é mais considerado compatível. O tipo TIMESTAMP representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura. |
 |deviceId|string| Identificador exclusivo definido pelo serviço de registro do dispositivo Azure no momento do registro. |
-|deviceMetadata|Cadeia de caracteres| Somente para uso interno. Definido como nulo. |
+|deviceMetadata|String| Somente para uso interno. Definido como nulo. |
 |deviceVersion|Int32| Somente para uso interno. |
 |displayName|String|O nome de exibição do dispositivo. Obrigatório. |
 |id|String|O identificador exclusivo do dispositivo. Herdado de [directoryObject](directoryobject.md). Chave, Não anulável. Somente leitura.|
-|isCompliant|Boolean|**True** se o dispositivo está em conformidade com políticas de MDM (Gerenciamento de Dispositivo Móvel); caso contrário, **false**. Somente leitura. Isso só pode ser atualizado pelo Intune para qualquer tipo de sistema operacional do dispositivo ou por um [aplicativo MDM aprovado](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) para dispositivos do sistema operacional Windows.|
-|isManaged|Boolean|**true** se o dispositivo for gerenciado por um aplicativo de gerenciamento de dispositivo móvel (MDM); caso contrário, **false**. Isso só pode ser atualizado pelo Intune para qualquer tipo de sistema operacional do dispositivo ou por um [aplicativo MDM aprovado](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) para dispositivos do sistema operacional Windows. |
+|isCompliant|Booliano|**True** se o dispositivo está em conformidade com políticas de MDM (Gerenciamento de Dispositivo Móvel); caso contrário, **false**. Somente leitura. Isso só pode ser atualizado pelo Intune para qualquer tipo de sistema operacional do dispositivo ou por um [aplicativo MDM aprovado](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) para dispositivos do sistema operacional Windows.|
+|isManaged|Booliano|**true** se o dispositivo for gerenciado por um aplicativo de gerenciamento de dispositivo móvel (MDM); caso contrário, **false**. Isso só pode ser atualizado pelo Intune para qualquer tipo de sistema operacional do dispositivo ou por um [aplicativo MDM aprovado](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) para dispositivos do sistema operacional Windows. |
 |onPremisesLastSyncDateTime|DateTimeOffset|A última vez em que o objeto foi sincronizado com o diretório local. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'` Somente leitura.|
-|onPremisesSyncEnabled|Boolean|**True** se esse objeto está sincronizado de um diretório local; **false** se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; **null** se esse objeto nunca foi sido sincronizado de um diretório local (padrão). Somente leitura. |
+|onPremisesSyncEnabled|Booliano|**True** se esse objeto está sincronizado de um diretório local; **false** se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; **null** se esse objeto nunca foi sido sincronizado de um diretório local (padrão). Somente leitura. |
 |operatingSystem|Cadeia de caracteres| O tipo de sistema operacional do dispositivo. Obrigatório. |
 |operatingSystemVersion|String|A versão do sistema operacional do dispositivo. Obrigatório. |
 |physicalIds|Coleção de cadeia de caracteres| Somente para uso interno. Não anulável. |
 |profiletype|String|O tipo de perfil do dispositivo. Valores possíveis:<br />**RegisteredDevice** será<br />**SecureVM**<br />**Printer**<br />**Compartilhado**<br />**IoT**|
 |systemLabels|Coleção de cadeias de caracteres| Lista de rótulos aplicados ao dispositivo pelo sistema. |
-|trustType|Cadeia de caracteres| Tipo de relação de confiança para o dispositivo associado. Somente leitura. Valores possíveis: <br />**Workplace** – indica *traga seus dispositivos pessoais*<br />**AzureAd** – apenas dispositivos associados na nuvem<br />**ServerAd** – dispositivos associados no domínio local unidos ao Azure AD. Saiba mais em [Introdução ao gerenciamento de dispositivo no Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction) |
+|trustType|String| Tipo de relação de confiança para o dispositivo associado. Somente leitura. Valores possíveis: <br />**Workplace** – indica *traga seus dispositivos pessoais*<br />**AzureAd** – apenas dispositivos associados na nuvem<br />**ServerAd** – dispositivos associados no domínio local unidos ao Azure AD. Saiba mais em [Introdução ao gerenciamento de dispositivo no Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction) |
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|

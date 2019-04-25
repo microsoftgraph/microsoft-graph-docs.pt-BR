@@ -1,21 +1,21 @@
 ---
-title: 'synchronizationSchema: parseExpression'
-description: '(.. / resources/synchronization_attributemappingsource.md) objeto. '
+title: 'synchronizationSchema: ParseName'
+description: '(.. objeto/Resources/synchronization_attributemappingsource.MD). '
 localization_priority: Normal
 ms.openlocfilehash: 27545333c6ff7b3c9ffde3e1c59abd09465db1c2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522963"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545356"
 ---
-# <a name="synchronizationschema-parseexpression"></a>synchronizationSchema: parseExpression
+# <a name="synchronizationschema-parseexpression"></a>synchronizationSchema: ParseName
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Analisar uma expressão de cadeia de caracteres específica em uma [attributeMappingSource | (… / resources/synchronization_attributemappingsource.md) objeto. 
+Analisar uma determinada expressão de cadeia de caracteres em um [attributeMappingSource | (.. objeto/Resources/synchronization_attributemappingsource.MD). 
 
-Para obter mais informações sobre expressões, consulte [Como escrever expressões para mapeamentos de atributo no Windows Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings).
+Para obter mais informações sobre expressões, consulte [Writing Expressions for Attribute Mappings in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -36,19 +36,19 @@ POST /servicePrincipals/{id}/synchronization/templates/{id}/schema/parseExpressi
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
-| Autorização  | Portador {código}|
+| Authorization  | Portador {código}|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|expressão               |String               |Expressão para analisar.|
-|testInputObject          |[expressionInputObject](../resources/synchronization-expressioninputobject.md)|Objeto de dados de teste para avaliar a expressão contra. Opcional.|
-|targetAttributeDefinition|[attributeDefinition](../resources/synchronization-attributedefinition.md) |Definição do atributo que será mapeada para esta expressão. Opcional.|
+|expressão               |String               |Expressão a ser analisada.|
+|testInputObject          |[expressionInputObject](../resources/synchronization-expressioninputobject.md)|Objeto de dados de teste para avaliar a expressão. Opcional.|
+|targetAttributeDefinition|[attributeDefinition](../resources/synchronization-attributedefinition.md) |Definição do atributo que será mapeado para esta expressão. Opcional.|
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto [parseExpressionResponse](../resources/synchronization-parseexpressionresponse.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [parseExpressionResponse](../resources/synchronization-parseexpressionresponse.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

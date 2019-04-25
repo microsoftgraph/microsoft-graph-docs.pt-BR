@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 00151ec7c75a071df9c6485a68749cce07e6f91a
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31797239"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575825"
 ---
 # <a name="grouppolicypresentation-resource-type"></a>tipo de recurso groupPolicyPresentation
 
@@ -28,7 +28,7 @@ A entidade base para a apresentação de exibição de qualquer opção adiciona
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|rótulo|Cadeia de caracteres|Rótulo de texto localizado para qualquer entidade de apresentação. O valor padrão é vazio.|
+|rótulo|String|Rótulo de texto localizado para qualquer entidade de apresentação. O valor padrão é vazio.|
 |id|String|Chave da entidade.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez.|
 

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 1db6b0d5d7376b5c71b3be5753a777477c3b3850
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31785759"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575790"
 ---
 # <a name="devicemanagementintentdevicestate-resource-type"></a>tipo de recurso deviceManagementIntentDeviceState
 
@@ -31,16 +31,16 @@ Entidade que representa o estado do dispositivo para uma intenção
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A ID|
+|id|Cadeia de caracteres|A ID|
 |userPrincipalName|String|O nome principal do usuário que está sendo relatado em um dispositivo|
-|userName|Cadeia de caracteres|O nome de usuário que está sendo relatado em um dispositivo|
+|userName|String|O nome de usuário que está sendo relatado em um dispositivo|
 |deviceDisplayName|Cadeia de caracteres|Nome do dispositivo que está sendo relatado|
 |lastReportedDateTime|DateTimeOffset|Data e hora da última modificação de um relatório de intenção|
-|state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Estado do dispositivo para uma intenção. Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
-|deviceId|Cadeia de caracteres|ID do dispositivo que está sendo relatado|
+|estado|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Estado do dispositivo para uma intenção. Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
+|deviceId|String|ID do dispositivo que está sendo relatado|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

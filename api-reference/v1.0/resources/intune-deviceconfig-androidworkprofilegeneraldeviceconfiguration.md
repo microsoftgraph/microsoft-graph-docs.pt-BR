@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 39c9a9ee5d995df6ee54809b07d70d347c6a9aea
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30254440"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575132"
 ---
 # <a name="androidworkprofilegeneraldeviceconfiguration-resource-type"></a>tipo de recurso Entidadeandroidforworkprofiledeviceconfiguration
 
@@ -32,13 +32,13 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|description|Cadeia de caracteres|O administrador forneceu a descrição da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|version|Int32|Versão da configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|passwordBlockFingerprintUnlock|Boolean|Indica se o desbloqueio de impressão digital deve ou não ser bloqueado.|
+|id|Cadeia de caracteres|Chave da entidade. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|description|String|O administrador forneceu a descrição da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|displayName|String|O administrador forneceu o nome da Configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|versão|Int32|Versão da configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|passwordBlockFingerprintUnlock|Booliano|Indica se o desbloqueio de impressão digital deve ou não ser bloqueado.|
 |passwordBlockTrustAgents|Boolean|Indica se o Smart Lock e outros agentes confiáveis devem ou não ser bloqueados.|
 |passwordExpirationDays|Int32|Número de dias antes da expiração da senha. Valores válidos de 1 a 365|
 |passwordMinimumLength|Int32|Comprimento mínimo das senhas. Valores válidos de 4 a 16|
@@ -47,17 +47,17 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Número permitido de falhas de entrada antes da redefinição de fábrica. Valores válidos de 1 a 16|
 |passwordRequiredType|[androidWorkProfileRequiredPasswordType](../resources/intune-deviceconfig-androidworkprofilerequiredpasswordtype.md)|Tipo de senha necessário. Os valores possíveis são: `deviceDefault`, `lowSecurityBiometric`, `required`, `atLeastNumeric`, `numericComplex`, `atLeastAlphabetic`, `atLeastAlphanumeric`, `alphanumericWithSymbols`.|
 |workProfileDataSharingType|[androidWorkProfileCrossProfileDataSharingType](../resources/intune-deviceconfig-androidworkprofilecrossprofiledatasharingtype.md)|Tipo de compartilhamento de dados permitido. Os valores possíveis são: `deviceDefault`, `preventAny`, `allowPersonalToWork`, `noRestrictions`.|
-|workProfileBlockNotificationsWhileDeviceLocked|Boolean|Indica se as notificações devem ou não ser bloqueadas enquanto o dispositivo estiver bloqueado.|
-|workProfileBlockAddingAccounts|Boolean|Impedir que os usuários adicionem/removam contas no perfil de trabalho.|
-|workProfileBluetoothEnableContactSharing|Boolean|Permitir que dispositivos Bluetooth acessem contatos da empresa.|
-|workProfileBlockScreenCapture|Boolean|Bloquear captura de tela em perfil de trabalho.|
-|workProfileBlockCrossProfileCallerId|Boolean|Bloquear exibir ID de chamadas de perfil de trabalho no perfil pessoal.|
-|workProfileBlockCamera|Boolean|Bloquear câmera de perfil de trabalho.|
-|workProfileBlockCrossProfileContactsSearch|Boolean|Bloquear disponibilidade de contatos de perfil de trabalho no perfil pessoal.|
-|workProfileBlockCrossProfileCopyPaste|Boolean|Booliano que indica se a configuração de desautorizar a cópia/colagem entre perfis está habilitada.|
+|workProfileBlockNotificationsWhileDeviceLocked|Booliano|Indica se as notificações devem ou não ser bloqueadas enquanto o dispositivo estiver bloqueado.|
+|workProfileBlockAddingAccounts|Booliano|Impedir que os usuários adicionem/removam contas no perfil de trabalho.|
+|workProfileBluetoothEnableContactSharing|Booliano|Permitir que dispositivos Bluetooth acessem contatos da empresa.|
+|workProfileBlockScreenCapture|Booliano|Bloquear captura de tela em perfil de trabalho.|
+|workProfileBlockCrossProfileCallerId|Booliano|Bloquear exibir ID de chamadas de perfil de trabalho no perfil pessoal.|
+|workProfileBlockCamera|Booliano|Bloquear câmera de perfil de trabalho.|
+|workProfileBlockCrossProfileContactsSearch|Booliano|Bloquear disponibilidade de contatos de perfil de trabalho no perfil pessoal.|
+|workProfileBlockCrossProfileCopyPaste|Booliano|Booliano que indica se a configuração de desautorizar a cópia/colagem entre perfis está habilitada.|
 |workProfileDefaultAppPermissionPolicy|[androidWorkProfileDefaultAppPermissionPolicyType](../resources/intune-deviceconfig-androidworkprofiledefaultapppermissionpolicytype.md)|Tipo de senha necessário. Os valores possíveis são: `deviceDefault`, `prompt`, `autoGrant`, `autoDeny`.|
-|Propriedades workprofilepasswordblockfingerprintunlock|Boolean|Indica se o desbloqueio de impressão digital para o perfil de trabalho deve ou não ser bloqueado.|
-|workProfilePasswordBlockTrustAgents|Boolean|Indica se o bloqueio inteligente e outros agentes de confiança devem ou não ser bloqueados para o perfil de trabalho.|
+|Propriedades workprofilepasswordblockfingerprintunlock|Booliano|Indica se o desbloqueio de impressão digital para o perfil de trabalho deve ou não ser bloqueado.|
+|workProfilePasswordBlockTrustAgents|Booliano|Indica se o bloqueio inteligente e outros agentes de confiança devem ou não ser bloqueados para o perfil de trabalho.|
 |workProfilePasswordExpirationDays|Int32|Número de dias antes da senha do perfil de trabalho expirar. Valores válidos de 1 a 365|
 |workProfilePasswordMinimumLength|Int32|Comprimento mínimo da senha do perfil de trabalho. Valores válidos de 4 a 16|
 |workProfilePasswordMinNumericCharacters|Int32|Mínimo de caracteres numéricos necessários na senha do perfil de trabalho. Valores válidos de 1 a 10|
@@ -70,18 +70,18 @@ Herda de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfigurat
 |workProfilePasswordPreviousPasswordBlockCount|Int32|Número de senhas de perfil de trabalho anteriores a serem bloqueadas. Valores válidos de 0 a 24|
 |workProfilePasswordSignInFailureCountBeforeFactoryReset|Int32|Número de falhas de entrada permitidas antes que o perfil de trabalho seja removido e todos os dados corporativos excluídos. Valores válidos de 1 a 16|
 |workProfilePasswordRequiredType|[androidWorkProfileRequiredPasswordType](../resources/intune-deviceconfig-androidworkprofilerequiredpasswordtype.md)|Tipo de senha de perfil de trabalho necessário. Os valores possíveis são: `deviceDefault`, `lowSecurityBiometric`, `required`, `atLeastNumeric`, `numericComplex`, `atLeastAlphabetic`, `atLeastAlphanumeric`, `alphanumericWithSymbols`.|
-|Workprofilerequirepassword foram adicionadas|Boolean|A senha é obrigatória ou não para o perfil de trabalho|
+|Workprofilerequirepassword foram adicionadas|Booliano|A senha é obrigatória ou não para o perfil de trabalho|
 |securityRequireVerifyApps|Boolean|Exige que o recurso de verificação de aplicativos Android esteja ativado.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
-|assignments|Coleção [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|A lista de atribuições para o perfil de configuração do dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|deviceStatuses|Coleção [deviceConfigurationDeviceStatus](../resources/intune-deviceconfig-deviceconfigurationdevicestatus.md)|Status de instalação da configuração do dispositivo por dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|userStatuses|Coleção [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md)|Status de instalação da configuração do dispositivo por usuário. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|Visão geral de status dos dispositivos na Configuração do dispositivo Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|userStatusOverview|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|Visão geral de status dos usuários na Configuração do dispositivo Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|deviceSettingStateSummaries|Coleção [settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md)|Resumo de dispositivo de estado de configuração do dispositivo Herdada do [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|assignments|Coleção [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|A lista de atribuições para o perfil de configuração do dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|deviceStatuses|Coleção [deviceConfigurationDeviceStatus](../resources/intune-deviceconfig-deviceconfigurationdevicestatus.md)|Status da instalação da configuração de dispositivo por dispositivo. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|userStatuses|Coleção [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md)|Status de instalação da configuração do dispositivo por usuário. Herdada de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|Visão geral de status de dispositivos para Configuração de Dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|userStatusOverview|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|Visão geral de status de usuários para Configuração de Dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|deviceSettingStateSummaries|Coleção [settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md)|Visão geral de dispositivos de configuração para Configuração de Dispositivo. Herdado de [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

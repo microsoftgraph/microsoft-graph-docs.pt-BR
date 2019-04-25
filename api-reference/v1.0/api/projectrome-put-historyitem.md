@@ -1,20 +1,20 @@
 ---
 title: Criar ou substituir um historyItem
-description: Criar uma nova ou substituir um item de histórico existente para uma atividade do usuário existente.
+description: Criar uma nova ou substituir um item de histórico existente para uma atividade existente do usuário.
 localization_priority: Normal
 ms.prod: project-rome
 ms.openlocfilehash: 21c4420ff64d105a5512df1f9a57a5e8309413f9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27912999"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575328"
 ---
 # <a name="create-or-replace-a-historyitem"></a>Criar ou substituir um historyItem
 
-Criar uma nova ou substituir um item de histórico existente para uma atividade do usuário existente.
+Criar uma nova ou substituir um item de histórico existente para uma atividade existente do usuário.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -33,7 +33,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 PUT /me/activities/{id}/historyItems/{id}
 ```
 
-ID deve ser um GUID.
+ID precisa ser um GUID.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -43,11 +43,11 @@ ID deve ser um GUID.
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON de um objeto [historyItem](../resources/projectrome-historyitem.md) .
+No corpo da solicitação, forneça uma representação JSON de um objeto [historyItem](../resources/projectrome-historyitem.md) .
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará o `201 Created` código de resposta se o historyItem foi criado ou `200 OK` se o historyItem foi substituído.
+Se tiver êxito, este método retornará `201 Created` o código de resposta se o historyItem foi `200 OK` criado ou se o historyItem foi substituído.
 
 ## <a name="example"></a>Exemplo
 

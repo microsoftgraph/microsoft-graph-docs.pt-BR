@@ -4,15 +4,15 @@ description: 'Atualize uma extensão aberta (objeto openTypeExtension) com as pr
 localization_priority: Normal
 author: dkershaw10
 ms.openlocfilehash: 80009db1f90393fbb706876264272b581575ce3d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986373"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32572567"
 ---
 # <a name="update-open-extension"></a>Atualizar extensão aberta
 
-Atualize uma extensão aberta (objeto [openTypeExtension](../resources/opentypeextension.md)) com as propriedades no corpo da solicitação:
+Atualize uma extensão aberta (objeto[openTypeExtension](../resources/opentypeextension.md) ) com as propriedades no corpo da solicitação:
 
 - Se uma propriedade no corpo da solicitação corresponder ao nome de uma propriedade existente na extensão, os dados na extensão serão atualizados.
 - Caso contrário, essa propriedade e seus dados serão adicionados à extensão. 
@@ -21,9 +21,9 @@ Os dados em uma extensão podem ser tipos primitivos ou matrizes de tipos primit
 
 ## <a name="permissions"></a>Permissões
 
-Dependendo do recurso que a extensão foi criada em e a permissão tipo (delegado ou aplicativo) solicitada, a permissão especificada na tabela a seguir é o menos privilegiada necessário chamar essa API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Dependendo do recurso no qual a extensão foi criada e o tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é o menos privilegiado necessário para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-| Recurso com suporte | Delegado (conta corporativa ou de estudante) | Delegado (conta pessoal da Microsoft) | Aplicação |
+| Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Application |
 |:-----|:-----|:-----|:-----|
 | [device](../resources/device.md) | Directory.AccessAsUser.All | Sem suporte | Device.ReadWrite.All |
 | [evento](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
@@ -33,7 +33,7 @@ Dependendo do recurso que a extensão foi criada em e a permissão tipo (delegad
 | [mensagem](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite | 
 | [organização](../resources/organization.md) | Directory.AccessAsUser.All | Sem suporte | Sem suporte |
 | [contato pessoal](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
-| [usuário](../resources/user.md) | User.ReadWrite.All | User.ReadWrite | User.ReadWrite.All |
+| [user](../resources/user.md) | User.ReadWrite.All | User.ReadWrite | User.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 Na solicitação, identifique a instância de recurso, use a propriedade de navegação **extensions** dessa instância para identificar a extensão e faça um `PATCH` nessa instância de extensão.
@@ -51,7 +51,7 @@ PATCH /users/{id|userPrincipalName}/contacts/{id}/extensions/{extensionId}
 PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
 ```
 
->**Observação:** A sintaxe acima mostra algumas maneiras comuns de identificar uma instância do recurso, para atualizar uma extensão nele. Todas as outras sintaxes que permitem identificar essas instâncias de recursos dão suporte à atualização de extensões abertas nelas de maneira semelhante.
+>**Observação:** A sintaxe acima mostra algumas maneiras comuns de identificar uma instância de recurso, a fim de atualizar uma extensão nela. Todas as outras sintaxes que permitem identificar essas instâncias de recurso oferecem suporte à atualização de extensões abertas nelas de maneira semelhante.
 
 Confira a seção [Solicitar corpo](#request-body) sobre como incluir no corpo de solicitação dados personalizados para alterar ou adicionar a essa extensão.
 

@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 1e4813ee72f7cccb109369ef12b884efe24e9563
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27916401"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32580067"
 ---
 # <a name="chartcollection-add"></a>ChartCollection: add
 
@@ -41,12 +41,12 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |type|string|Representa o tipo de um gráfico.  Os valores possíveis são: `ColumnClustered`, `ColumnStacked`, `ColumnStacked100`, `BarClustered`, `BarStacked`, `BarStacked100`, `LineStacked`, `LineStacked100`, `LineMarkers`, `LineMarkersStacked`, `LineMarkersStacked100`, `PieOfPie`, `etc.`.|
-|sourceData|Json|O objeto Range que corresponde aos dados de origem.|
-|seriesBy|string|Opcional. Especifica a maneira como colunas ou linhas são usadas como série de dados no gráfico.  Os valores possíveis são: `Auto`, `Columns`, `Rows`.|
+|sourceData|Json|O objeto Range correspondente aos dados de origem.|
+|seriesBy|string|Opcional. Especifica a forma como as colunas ou linhas são usadas como série de dados no gráfico.  Os valores possíveis são: `Auto`, `Columns`, `Rows`.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` código de resposta e o objeto [WorkbookChart](../resources/chart.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `200 OK` o código de resposta e o objeto [WorkbookChart](../resources/chart.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 Eis um exemplo de como chamar esta API.

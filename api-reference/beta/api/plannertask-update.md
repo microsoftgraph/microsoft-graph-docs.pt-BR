@@ -1,21 +1,21 @@
 ---
 title: Atualizar plannertask
-description: Atualize as propriedades do objeto **plannertask**.
+description: Atualize as propriedades do objeto **plannertask** .
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: ae2551165405161e071d23cf704851ac18fbf73e
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29967239"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538838"
 ---
 # <a name="update-plannertask"></a>Atualizar plannertask
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualize as propriedades do objeto **plannertask**.
+Atualize as propriedades do objeto **plannertask** .
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -31,10 +31,10 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 PATCH /planner/tasks/<id>
 ```
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
-| Name       | Descrição|
+| Nome       | Descrição|
 |:-----------|:-----------|
 | Autorização  | {token} de portador. Obrigatório. |
-| If-Match  | O último valor ETag conhecido do objeto **plannerTask** a ser atualizado. Obrigatório.|
+| If-Match  | Último valor de ETag conhecido para o **plannerTask** a ser atualizado. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.
@@ -44,17 +44,17 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |appliedCategories|[plannerAppliedCategories](../resources/plannerappliedcategories.md)|As categorias às quais a tarefa foi aplicada. Confira os possíveis valores em [Categorias aplicadas](../resources/plannerappliedcategories.md).|
 |assigneePriority|String|Dica usada para ordenar itens deste tipo em um modo de exibição de lista. O formato é definido como descrito [aqui](../resources/planner-order-hint-format.md).|
 |assignments|[plannerAssignments](../resources/plannerassignments.md)|O conjunto de usuários ao qual a tarefa é atribuída.|
-|bucketId|String|Id de Balde ao qual a tarefa pertence. O bucket precisa estar no plano no qual a tarefa está. Tem 28 caracteres e diferencia maiúsculas de minúsculas. [Formatar validação](../resources/tasks-identifiers-disclaimer.md) é feito no serviço. |
-|conversationThreadId|String|Identificação do thread da conversa na tarefa. Essa é a identificação do objeto do thread da conversa criado no grupo.|
+|bucketId|String|ID de Bucket à qual a tarefa pertence. O bucket precisa estar no plano no qual a tarefa está. Tem 28 caracteres e diferencia maiúsculas de minúsculas. [Formatar validação](../resources/tasks-identifiers-disclaimer.md) é feito no serviço. |
+|conversationThreadId|String|ID do thread da conversa na tarefa. Esta é a ID do objeto de thread de conversa criado no grupo.|
 |dueDateTime|DateTimeOffset|A data e a hora que a tarefa já deve estar concluída. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |orderHint|String|Dica usada para ordenar itens deste tipo em um modo de exibição de lista. O formato é definido como descrito [aqui](../resources/planner-order-hint-format.md).|
 |percentComplete|Int32|A porcentagem de conclusão da tarefa. Quando definido como `100`, a tarefa será considerada concluída. |
 |startDateTime|DateTimeOffset|A data e a hora que a tarefa começa. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|title|Cadeia de caracteres|Título da tarefa.|
+|title|String|Título da tarefa.|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [plannerTask](../resources/plannertask.md) atualizado no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [plannerTask](../resources/plannertask.md) atualizado no corpo da resposta.
 
 Este método pode retornar qualquer um dos [códigos de status de HTTP](/graph/errors). Os erros mais comuns que os aplicativos devem tratar para esse método são as respostas 400, 403, 404, 409 e 412. Saiba mais sobre esses erros em [Condições de erro comuns do Planner](../resources/planner-overview.md#common-planner-error-conditions).
 

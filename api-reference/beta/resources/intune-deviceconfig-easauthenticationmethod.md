@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 465370d47a38d4f4c234b724060f33ab4f89a723
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31774348"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32567127"
 ---
 # <a name="easauthenticationmethod-enum-type"></a>tipo de enumeração easAuthenticationMethod
 
@@ -23,7 +23,7 @@ Método de autenticação do Exchange Active Sync.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |usernameAndPassword|,0|Autenticar com um nome de usuário e senha.|
-|certificado|1|Autenticar com um certificado.|
+|certificado|1 |Autenticar com um certificado.|
 
 
 

@@ -1,17 +1,17 @@
 ---
-title: Criar Sessão
+title: Criar sessão
 description: 'Use essa API para criar uma nova sessão de pasta de trabalho. '
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 9a377c4bb86f468e9e6107e451b40494665f5b16
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27972814"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32573596"
 ---
-# <a name="create-session"></a>Criar Sessão
+# <a name="create-session"></a>Criar sessão
 
 Use essa API para criar uma nova sessão de pasta de trabalho. 
 
@@ -49,11 +49,11 @@ POST /workbook/createSession
 | Autorização  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça uma representação JSON do objeto [WorkbookSessionInfo](../resources/workbooksessioninfo.md).
+No corpo da solicitação, forneça uma representação JSON do objeto [WorkbookSessionInfo](../resources/workbooksessioninfo.md) .
 
 ## <a name="response"></a>Resposta
 
-Se for bem-sucedido, esse método retornará o código de resposta `201 Created` e o objeto [WorkbookSessionInfo](../resources/workbooksessioninfo.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `201 Created` o código de resposta e o objeto [WorkbookSessionInfo](../resources/workbooksessioninfo.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -71,7 +71,7 @@ Content-length: 52
   "persistChanges": true
 }
 ```
-No corpo da solicitação, forneça uma representação JSON do objeto [WorkbookSessionInfo](../resources/workbooksessioninfo.md).
+No corpo da solicitação, forneça uma representação JSON do objeto [WorkbookSessionInfo](../resources/workbooksessioninfo.md) .
 
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 9c0050ca126aa13587a3e5471953411de5a86ccf
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30976068"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32574499"
 ---
 # <a name="update-devicecomplianceuserstatus"></a>Atualizar deviceComplianceUserStatus
 
@@ -48,7 +48,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceC
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |userDisplayName|Cadeia de caracteres|Nome de usuário de DevicePolicyStatus.|
 |devicesCount|Int32|Contagem de dispositivos para esse usuário.|
 |status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Status de conformidade do relatório de políticas. Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|

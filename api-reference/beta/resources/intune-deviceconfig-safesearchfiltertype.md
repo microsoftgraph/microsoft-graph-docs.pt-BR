@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 564e641fcdc7e0d06d48666881fc3bcedfe3505c
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31794726"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32573211"
 ---
 # <a name="safesearchfiltertype-enum-type"></a>tipo de enumeração safeSearchFilterType
 
@@ -23,8 +23,8 @@ Especifica o nível de pesquisa segura (filtragem de conteúdo adulto) é necess
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |userDefined|,0|Definido pelo usuário, valor padrão, sem intenção.|
-|impede|1|Filtragem mais rigorosa e estrita contra conteúdo adulto.|
-|moderado|duas|Filtragem moderada contra conteúdo adulto (os resultados de pesquisa válidos não serão filtrados).|
+|impede|1 |Filtragem mais rigorosa e estrita contra conteúdo adulto.|
+|moderado|2 |Filtragem moderada contra conteúdo adulto (os resultados de pesquisa válidos não serão filtrados).|
 
 
 

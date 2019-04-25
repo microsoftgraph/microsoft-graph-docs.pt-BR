@@ -3,11 +3,11 @@ title: Tipo de recurso recurrenceRange
 description: 'Descreve um intervalo de datas sobre o qual um event recorrente se repete. '
 localization_priority: Normal
 ms.openlocfilehash: 4129b698e48b01e0208b88fbdc57fb777835cd4e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27872983"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579398"
 ---
 # <a name="recurrencerange-resource-type"></a>Tipo de recurso recurrenceRange
 
@@ -27,7 +27,7 @@ Descreve um intervalo de datas sobre o qual um [event](event.md) recorrente se r
 
 Use a propriedade **type** para especificar os diferentes tipos de **recorrenceRange**. Observe as propriedades necessárias para cada tipo, conforme descrito na tabela a seguir.
 
-| propriedade Type  | Tipo de intervalo de recorrência | Descrição | Exemplo | Propriedades necessárias |
+| Propriedade Type  | Tipo de intervalo de recorrência | Descrição | Exemplo | Propriedades necessárias |
 |:-------|:---------------|:--------|:--------|:--------|
 |`endDate` |Intervalo com data final | O evento se repete em todos os dias que se encaixam no padrão de recorrência correspondente entre **startDate** e **endDate**, incluindo essas datas. | Repita o evento no período entre 1º de junho de 2017 e 15 de junho de 2017. | **type**, **startDate**, **endDate** | 
 |`noEnd`  |Intervalo sem uma data final | O evento se repete em todos os dias que se encaixam no padrão de recorrência correspondente começando em **startDate**. | Repita o evento no intervalo de datas que começa em 1º de junho de 2017, indefinidamente. | **type**, **startDate** |

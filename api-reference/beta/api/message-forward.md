@@ -1,29 +1,29 @@
 ---
 title: 'message: forward'
-description: 'Encaminhar uma mensagem, adicionar um comentário ou modificar quaisquer propriedades atualizáveis  '
+description: 'EnCaminhar uma mensagem, adicionar um comentário ou modificar qualquer propriedade atualizável  '
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: ed3d51c28e6fe0404b5cb26fb17f6d8ed3bba212
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508885"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540469"
 ---
 # <a name="message-forward"></a>message: forward
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Encaminhar uma mensagem, adicionar um comentário ou modificar quaisquer propriedades atualizáveis  
-tudo em um **Encaminhar** chamadas. A mensagem será salva na pasta Itens enviados.
+EnCaminhar uma mensagem, adicionar um comentário ou modificar qualquer propriedade atualizável  
+tudo em uma **** chamada de encaminhamento. A mensagem é salva na pasta Itens Enviados.
 
 Outra opção é primeiro [criar um rascunho de mensagem de encaminhamento](../api/message-createforward.md) para incluir um comentário ou atualizar quaisquer propriedades da mensagem e, em seguida, [enviar](../api/message-send.md) o rascunho da mensagem.
 
 **Observação**
 
-- Você pode especificar um comentário ou a propriedade **body** do `message` parâmetro. Especificar ambos retornará um erro HTTP 400 - Solicitação incorreta.
-- Você deve especificar o `toRecipients` parâmetro ou a propriedade **toRecipients** do `message` parâmetro. Especificar ambos ou nenhum retornará um erro HTTP 400 - Solicitação incorreta.
+- Você pode especificar um comentário ou a propriedade **Body** do `message` parâmetro. Especificar ambos retornará um erro HTTP 400 - Solicitação incorreta.
+- Você deve especificar o `toRecipients` parâmetro ou a propriedade ToRecipients do **** `message` parâmetro. Especificar ambos ou nenhum retornará um erro HTTP 400 - Solicitação incorreta.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -55,14 +55,14 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 |:---------------|:--------|:----------|
 |comment|String|Um comentário a incluir. Não pode ficar vazio.|
 |toRecipients|Coleção [recipient](../resources/recipient.md)|A lista de destinatários.|
-|message|[message](../resources/message.md)|Quaisquer propriedades graváveis ​​a serem atualizadas na mensagem de resposta.|
+|message|[mensagem](../resources/message.md)|Quaisquer propriedades graváveis ​​a serem atualizadas na mensagem de resposta.|
 
 ## <a name="response"></a>Resposta
 
 Se bem-sucedido, este método retorna um código de resposta `202 Accepted`. Não retorna nada no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-O exemplo a seguir define a propriedade **IsDeliveryReceiptRequested** como verdadeira, adiciona um comentário e encaminha uma mensagem.
+O exemplo a seguir define a propriedade **isDeliveryReceiptRequested** como true, adiciona um comentário e encaminha a mensagem.
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 <!-- {

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 69f0bb3647e5d12d0d441f06e7436626b0d29334
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31779402"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32573911"
 ---
 # <a name="depenrollmentbaseprofile-resource-type"></a>tipo de recurso depEnrollmentBaseProfile
 
@@ -31,20 +31,20 @@ Herda de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O GUID do objeto herdado de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|displayName|Cadeia de caracteres|Nome do perfil herdado de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|id|Cadeia de caracteres|O GUID do objeto herdado de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|displayName|String|Nome do perfil herdado de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |description|String|Descrição do perfil herdado de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |requiresUserAuthentication|Booliano|Indica se o perfil requer autenticação de usuário herdada de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
-|configurationEndpointUrl|Cadeia de caracteres|URL de ponto de extremidade de configuração a ser usada para registro herdado de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
+|configurationEndpointUrl|String|URL de ponto de extremidade de configuração a ser usada para registro herdado de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |Enableauthenticationviacompanyportal foi adicionada|Booliano|Indica a autenticação com o assistente de configuração da Apple em vez do portal da empresa. Herdado de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |requireCompanyPortalOnSetupAssistantEnrolledDevices|Booliano|Indica que o portal da empresa é necessário no assistente de configuração dispositivos registrados herdados de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md)|
 |isDefault|Booliano|Indica se este é o perfil padrão|
 |supervisedModeEnabled|Booliano|Modo supervisionado, true para habilitar, caso contrário, false. Consulte https://docs.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intune para obter mais informações.|
-|supportDepartment|Cadeia de caracteres|Informações do departamento de suporte|
+|supportDepartment|String|Informações do departamento de suporte|
 |passCodeDisabled|Booliano|Indica se o painel de configuração de senha está desabilitado|
 |isMandatory|Booliano|Indica se o perfil é obrigatório|
 |locationDisabled|Booliano|Indica se o painel de instalação do serviço de localização está desabilitado|
-|supportPhoneNumber|Cadeia de caracteres|Número de telefone de suporte|
+|supportPhoneNumber|String|Número de telefone de suporte|
 |profileRemovalDisabled|Booliano|Indica se a opção de remoção de perfil está desabilitada|
 |restoreBlocked|Booliano|Indica se o painel de configuração de restauração está bloqueado|
 |appleIdDisabled|Booliano|Indica se o painel de configuração de ID da Apple está desabilitado|
@@ -56,10 +56,10 @@ Herda de [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md
 |diagnosticsDisabled|Booliano|Indica se o painel de configuração de diagnóstico está desabilitado|
 |displayToneSetupDisabled|Booliano|Indica se a tela de configuração do displaytone está desabilitada|
 |privacyPaneDisabled|Booliano|Indica se a tela de privacidade está desabilitada|
-|deviceNameTemplate|Cadeia de caracteres|Define um padrão literal ou de nome.|
+|deviceNameTemplate|String|Define um padrão literal ou de nome.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

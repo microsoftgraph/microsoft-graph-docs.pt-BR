@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: e260c1f554667429e5086c1f5c9eb603bd098f56
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31799164"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575741"
 ---
 # <a name="grouppolicypresentationvaluedecimal-resource-type"></a>tipo de recurso groupPolicyPresentationValueDecimal
 
@@ -37,7 +37,7 @@ Herda de [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppol
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que o objeto foi modificado pela última vez. Herdado de [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
 |createdDateTime|DateTimeOffset|A data e a hora em que o objeto foi criado. Herdado de [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
 |id|String|Chave da entidade. Herdado de [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
-|value|Int64|Um valor inteiro não assinado para a apresentação associada.|
+|valor|Int64|Um valor inteiro não assinado para a apresentação associada.|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|

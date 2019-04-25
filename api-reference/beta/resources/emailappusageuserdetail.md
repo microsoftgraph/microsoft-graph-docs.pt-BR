@@ -1,38 +1,38 @@
 ---
-title: tipo de recurso de emailAppUsageUserDetail
+title: tipo de recurso emailAppUsageUserDetail
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 1ebc99f25bf0b16343f48686496c1dbd7d329e65
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27977651"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542836"
 ---
-# <a name="emailappusageuserdetail-resource-type"></a>tipo de recurso de emailAppUsageUserDetail
+# <a name="emailappusageuserdetail-resource-type"></a>tipo de recurso emailAppUsageUserDetail
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade          | Tipo              |
 | :---------------- | :---------------- |
 | reportRefreshDate | Data              |
-| userPrincipalName | Cadeia de caracteres            |
-| displayName       | Cadeia de caracteres            |
+| userPrincipalName | String            |
+| displayName       | String            |
 | isDeleted         | Booliano           |
 | deletedDate       | Data              |
 | lastActivityDate  | Data              |
-| mailForMac        | String collection |
-| outlookForMac     | String collection |
-| outlookForWindows | String collection |
-| outlookForMobile  | String collection |
-| otherForMobile    | String collection |
-| outlookForWeb     | String collection |
-| pop3App           | String collection |
-| imap4App          | String collection |
-| smtpApp           | String collection |
-| reportPeriod      | Cadeia de caracteres            |
+| mailForMac        | Coleção de cadeias de caracteres |
+| outlookForMac     | Coleção de cadeias de caracteres |
+| outlookForWindows | Coleção de cadeias de caracteres |
+| outlookForMobile  | Coleção de cadeias de caracteres |
+| otherForMobile    | Coleção de cadeias de caracteres |
+| outlookForWeb     | Coleção de cadeias de caracteres |
+| pop3App           | Coleção de cadeias de caracteres |
+| imap4App          | Coleção de cadeias de caracteres |
+| smtpApp           | Coleção de cadeias de caracteres |
+| reportPeriod      | String            |
 
 ## <a name="json-representation"></a>Representação JSON
 

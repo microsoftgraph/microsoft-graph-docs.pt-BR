@@ -1,27 +1,27 @@
 ---
-title: tipo de recurso de typedEmailAddress
-description: Representa o nome, endereços de email e seu correspondente tipo de endereço de email de um contato.
+title: tipo de recurso typedEmailAddress
+description: Representa o nome, os endereços de email e o tipo de endereço de email correspondente de um contato.
 localization_priority: Normal
 ms.openlocfilehash: 3b1230dabc1e49c6cb9220eea95f0c3b93053d96
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510705"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32576455"
 ---
-# <a name="typedemailaddress-resource-type"></a>tipo de recurso de typedEmailAddress
+# <a name="typedemailaddress-resource-type"></a>tipo de recurso typedEmailAddress
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa o nome, endereços de email e seu correspondente tipo de endereço de email de um [contato](contact.md).
+Representa o nome, os endereços de email e o tipo de endereço de email correspondente de um [contato](contact.md).
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |address|Cadeia de caracteres|O endereço de email de um contato.|
-|name|Cadeia de caracteres|O nome de exibição de um contato.|
-|type |String |O tipo de endereço de email. Os valores possíveis são: `unknown`, `work`, `personal`, `main`, `other`. O valor padrão é `unknown`, que significa que o **endereço** não tiver sido definida como um tipo específico. |
-|otherLabel |String  |Para especificar um tipo personalizado de endereço de email, defina o **tipo** como `other`e atribuir **otherLabel** a uma cadeia de caracteres personalizada. Por exemplo, você pode usar um endereço de email específica para suas atividades voluntárias. Definir **tipo** `other`e configurado **otherLabel** como uma cadeia de caracteres personalizada como `Volunteer work`. |
+|name|String|O nome de exibição de um contato.|
+|type |String |O tipo de endereço de email. Os valores possíveis são: `unknown`, `work`, `personal`, `main`, `other`. O valor padrão é `unknown`, o que significa que o **endereço** não foi definido como um tipo específico. |
+|otherLabel |String  |Para especificar um tipo personalizado de endereço de email, **** defina Type `other`como e atribua **otherLabel** a uma cadeia de caracteres personalizada. Por exemplo, você pode usar um endereço de email específico para suas atividades de voluntários. Defina **** o tipo `other`como e defina **otherLabel** como uma cadeia de caracteres personalizada `Volunteer work`, como. |
 
 ## <a name="json-representation"></a>Representação JSON
 

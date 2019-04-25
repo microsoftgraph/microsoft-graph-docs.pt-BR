@@ -1,38 +1,38 @@
 ---
-title: tipo de recurso de dicas de email
-description: 'Mensagens informativas sobre um destinatário, que são exibidas aos usuários enquanto eles estão redigindo uma mensagem. Por exemplo, uma mensagem de ausência temporária '
+title: tipo de recurso dicas de texto
+description: 'Mensagens inFormativas sobre um destinatário, que são exibidas aos usuários enquanto eles compõem uma mensagem. Por exemplo, uma mensagem de ausência temporária '
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 11e64c09a90d130b7656d4e87770e6df3fb67408
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508409"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562599"
 ---
-# <a name="mailtips-resource-type"></a>tipo de recurso de dicas de email
+# <a name="mailtips-resource-type"></a>tipo de recurso dicas de texto
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Mensagens informativas sobre um destinatário, que são exibidas aos usuários enquanto eles estão redigindo uma mensagem. Por exemplo, uma mensagem de ausência temporária como uma resposta automática para um destinatário de mensagem.
+Mensagens inFormativas sobre um destinatário, que são exibidas aos usuários enquanto eles compõem uma mensagem. Por exemplo, uma mensagem de ausência temporária como uma resposta automática para um destinatário de mensagem.
 
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| automaticReplies | [automaticRepliesMailTips](../resources/automaticrepliesmailtips.md) | Dicas para a resposta automática de email se ele foi configurado pelo destinatário. |
-| CustomMailTip | String | Uma dica de email personalizado que pode ser definida na caixa de correio do destinatário. |
-| DeliveryRestricted| Booliano | Se caixa de correio do destinatário é restrita, por exemplo, aceitar mensagens de apenas uma lista de remetentes confiáveis, predefinida rejeitar mensagens de uma lista de remetentes predefinida, ou aceitar mensagens de apenas os remetentes autenticados. |
-| emailAddress | [emailAddress](../resources/emailaddress.md) | O endereço de email do destinatário para obter dicas de email para. |
-| erro | [mailTipsError](../resources/mailtipserror.md) | Erros que ocorrem durante a ação [getMailTips](../api/user-getmailtips.md) . |
-| ExternalMemberCount | Int32 | O número de membros externos se o destinatário é uma lista de distribuição. |
-| IsModerated |Booliano  | Se o envio de mensagens para o destinatário requer aprovação. Por exemplo, se o destinatário é uma lista de distribuição grandes e um moderador tiver sido definido até aprovar as mensagens enviadas para essa lista de distribuição ou se o envio de mensagens para um destinatário requer aprovação do gerente do destinatário. |
-| MailboxFull | Booliano | O status completo da caixa de correio do destinatário. |
-| MaxMessageSize | Int32 | O tamanho máximo da mensagem que tenha sido configurado para a organização ou a caixa de correio do destinatário. |
-| recipientScope | String | O escopo do destinatário. Os valores possíveis são: `none`, `internal`, `external`, `externalPartner`, `externalNonParther`. Por exemplo, um administrador pode definir outra organização seja seu parceiro de"". O escopo é útil quando um administrador deseja que seja acessível a determinados escopos determinadas dicas de email. Também é útil para remetentes para informar a eles que seus mensagem pode deixar a organização, ajudando-os a tomar as decisões corretas sobre palavras, o tom e o conteúdo.|
-| recipientSuggestions | Coleção [recipient](../resources/recipient.md) | Destinatários sugerido contextos de anteriores com base em onde eles aparecem na mesma mensagem. |
-| TotalMemberCount | Int32 | O número de membros se o destinatário é uma lista de distribuição. |
+| automaticReplies | [automaticRepliesMailTips](../resources/automaticrepliesmailtips.md) | Dicas de email para resposta automática se tiver sido configurada pelo destinatário. |
+| customMailTip | String | Uma dica de email personalizada que pode ser definida na caixa de correio do destinatário. |
+| deliveryRestricted| Booliano | Se a caixa de correio do destinatário é restrita, por exemplo, aceitando mensagens de apenas uma lista predefinida de remetentes, rejeitando mensagens de uma lista predefinida de remetentes ou aceitando mensagens de somente remetentes autenticados. |
+| emailAddress | [emailAddress](../resources/emailaddress.md) | O endereço de email do destinatário para o qual obter dicas de email. |
+| erro | [mailTipsError](../resources/mailtipserror.md) | Erros que ocorrem durante a [](../api/user-getmailtips.md) ação comdicas de as. |
+| externalMemberCount | Int32 | O número de membros externos se o destinatário for uma lista de distribuição. |
+| isModeradod |Booliano  | Se o envio de mensagens para o destinatário requer aprovação. Por exemplo, se o destinatário for uma lista de distribuição grande e um moderador tiver sido configurado para aprovar as mensagens enviadas para essa lista de distribuição ou se o envio de mensagens a um destinatário exigir a aprovação do gerente do destinatário. |
+| mailboxFull | Booliano | O status completo da caixa de correio do destinatário. |
+| maxMessageSize | Int32 | O tamanho máximo da mensagem que foi configurada para a organização ou caixa de correio do destinatário. |
+| recipientScope | String | O escopo do destinatário. Os valores possíveis são: `none`, `internal`, `external`, `externalPartner`, `externalNonParther`. Por exemplo, um administrador pode definir outra organização como "parceiro". O escopo será útil se um administrador quiser que determinadas dicas de usuários fiquem acessíveis para determinados escopos. Também é útil para os remetentes informar que a mensagem pode sair da organização, ajudando-os a tomar as decisões corretas sobre o texto, o Tom e o conteúdo.|
+| recipientSuggestions | Coleção [recipient](../resources/recipient.md) | Os destinatários sugeridos com base em contextos anteriores, onde aparecem na mesma mensagem. |
+| totalMemberCount | Int32 | O número de membros se o destinatário for uma lista de distribuição. |
 
 ## <a name="json-representation"></a>Representação JSON
 

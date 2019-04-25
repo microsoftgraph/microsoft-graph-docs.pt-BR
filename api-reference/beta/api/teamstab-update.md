@@ -5,11 +5,11 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 929c000790dc88c7fdcfd74b23995b56685a40bd
-ms.sourcegitcommit: 0a673c6f4ad7aed12fb0e69608c0f73957bae10e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "31824385"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544622"
 ---
 # <a name="update-tab"></a>Atualizar guia
 

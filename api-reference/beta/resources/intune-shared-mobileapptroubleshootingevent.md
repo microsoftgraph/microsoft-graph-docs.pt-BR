@@ -5,11 +5,11 @@ localization_priority: Normal
 author: tfitzmac
 ms.prod: Intune
 ms.openlocfilehash: cfa126fea86c7edb302953efc3b88376f2d68a09
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30162941"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32574443"
 ---
 # <a name="mobileapptroubleshootingevent-resource-type"></a>tipo de recurso mobileAppTroubleshootingEvent
 
@@ -32,7 +32,7 @@ Evento representando um status de instalação de aplicativo do dispositivo de u
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|UUID para o objeto.|
-|**Solução de problemas**|
+|**Solução de Problemas**|
 |additionalInformation|Coleção [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Um conjunto de pares de chave de cadeia de caracteres e valor de cadeia de caracteres que fornece informações adicionais sobre o evento de solução de problemas herdado de [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
 |ApplicationId|String|Identificador de aplicativo do Intune.|
 |correlationId|String|ID usada para rastrear a falha no serviço. |

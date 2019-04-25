@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 2d9659c4eaa1f4080ef5dd07a5e69f76a7a14d50
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31775685"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32573050"
 ---
 # <a name="roleassignmentscopetype-enum-type"></a>tipo de enumeração roleAssignmentScopeType
 
@@ -23,9 +23,9 @@ Especifica o tipo de escopo de uma atribuição de função.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |resourceScope|,0|Permite atribuições para o ResourceScopes especificado.|
-|objectDevices|1|Permitir atribuições de todos os dispositivos do Intune.|
-|allLicensedUsers|duas|Permitir atribuições a todos os usuários licenciados do Intune.|
-|allDevicesAndLicensedUsers|3D|Permitir atribuições de todos os dispositivos do Intune e usuários licenciados.|
+|objectDevices|1 |Permitir atribuições de todos os dispositivos do Intune.|
+|allLicensedUsers|2 |Permitir atribuições a todos os usuários licenciados do Intune.|
+|allDevicesAndLicensedUsers|3 |Permitir atribuições de todos os dispositivos do Intune e usuários licenciados.|
 
 
 

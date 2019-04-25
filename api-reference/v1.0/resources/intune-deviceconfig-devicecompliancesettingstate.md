@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 63285c5b0d0c7d1b342d13478777ddd6e87ae17f
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30254069"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32572385"
 ---
 # <a name="devicecompliancesettingstate-resource-type"></a>Tipo de recurso deviceComplianceSettingState
 
@@ -29,13 +29,13 @@ Estado de configuração de conformidade de um determinado dispositivo.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade|
+|id|Cadeia de caracteres|Chave da entidade|
 |configuração|String|O nome da classe de configuração e o nome da propriedade.|
 |settingName|String|O nome da configuração sendo relatada|
-|deviceId|Cadeia de caracteres|A ID do dispositivo sendo relatada|
+|deviceId|String|A ID do dispositivo sendo relatada|
 |deviceName|String|O nome do dispositivo sendo relatado|
 |userId|String|A ID do usuário sendo relatada|
-|userEmail|String|O endereço de email do usuário que está sendo relatado|
+|userEmail|Cadeia de caracteres|O endereço de email do usuário que está sendo relatado|
 |userName|String|O nome de usuário que está sendo relatado|
 |userPrincipalName|String|O PrincipalName do usuário que está sendo relatado|
 |deviceModel|String|O modelo do dispositivo que está sendo relatado|
@@ -43,7 +43,7 @@ Estado de configuração de conformidade de um determinado dispositivo.
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|DateTime em que o período de cortesia de conformidade do dispositivo termina|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

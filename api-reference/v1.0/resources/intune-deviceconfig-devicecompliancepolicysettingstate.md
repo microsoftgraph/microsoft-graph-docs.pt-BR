@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: c4d291f84a8c4404ff5b4425680260997b6b452f
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30261744"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32572413"
 ---
 # <a name="devicecompliancepolicysettingstate-resource-type"></a>Tipo de recurso deviceCompliancePolicySettingState
 
@@ -20,18 +20,18 @@ Estado da configuração da política de conformidade de dispositivo para um det
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|configuração|String|A configuração que está sendo relatada|
-|settingName|String|Nome traduzido/amigável para o usuário da configuração que está sendo relatada|
-|instanceDisplayName|String|Nome da instância de configuração está sendo relatada.|
+|configuração|String|A configuração que é relatada|
+|settingName|String|Nome de configuração localizada/de usuário que é relatada|
+|instanceDisplayName|String|Nome da instância de configuração que é relatada.|
 |state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|O estado de conformidade da configuração. Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |errorCode|Int64|Código de erro da configuração|
-|errorDescription|String|Descrição do erro|
+|errorDescription|String|Descrição de erro|
 |userId|String|UserId|
 |userName|String|UserName|
 |userEmail|String|UserEmail|
 |userPrincipalName|String|UserPrincipalName.|
-|sources|Coleção [settingSource](../resources/intune-deviceconfig-settingsource.md)|Políticas colaboradoras|
-|currentValue|Cadeia de caracteres|Valor atual da configuração no dispositivo|
+|fontes|Conjunto [settingSource](../resources/intune-deviceconfig-settingsource.md)|Políticas de colaboração|
+|currentValue|Cadeia de caracteres|Valor atual da configuração em um dispositivo|
 
 ## <a name="relationships"></a>Relações
 Nenhum

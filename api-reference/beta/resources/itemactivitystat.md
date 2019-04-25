@@ -2,20 +2,20 @@
 author: daspek
 ms.author: dspektor
 ms.date: 09/14/2017
-title: ItemActivityStat
+title: Entidadeitemactivitystat
 localization_priority: Normal
 ms.openlocfilehash: 1362116c0dbe997eda941cb790e00e9ddb078ae4
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517628"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561891"
 ---
-# <a name="itemactivitystat-resource-type"></a>tipo de recurso de itemActivityStat
+# <a name="itemactivitystat-resource-type"></a>tipo de recurso Entidadeitemactivitystat
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O recurso de **itemActivityStat** fornece informações sobre atividades realizadas dentro de um intervalo de tempo.
+O recurso **entidadeitemactivitystat** fornece informações sobre as atividades que aconteceram dentro de um intervalo de tempo.
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -45,15 +45,15 @@ O recurso de **itemActivityStat** fornece informações sobre atividades realiza
 
 | Propriedade         | Tipo                    | Descrição
 |:-----------------|:------------------------|:----------------------------------------
-| incompleteData   | [incompleteData][]      | Indica que as estatísticas nesse intervalo são baseadas em dados incompletos. Somente leitura.
-| isTrending       | Booliano                 | Indica se o item é "tendências". Somente leitura.
-| startDateTime    | DateTimeOffset          | Quando o intervalo for iniciado. Somente leitura.
+| incompleteData   | [incompleteData][]      | Indica que as estatísticas neste intervalo são baseadas em dados incompletos. Somente leitura.
+| isTendência       | Booliano                 | Indica se o item é "Trending". Somente leitura.
+| startDateTime    | DateTimeOffset          | Quando o intervalo é iniciado. Somente leitura.
 | endDateTime      | DateTimeOffset          | Quando o intervalo termina. Somente leitura.
-| create           | [itemActionStat][]      | Estatísticas sobre as ações **criar** nesse intervalo. Somente leitura.
-| edit             | [itemActionStat][]      | Estatísticas sobre as ações de **Editar** nesse intervalo. Somente leitura.
-| delete           | [itemActionStat][]      | Estatísticas sobre as ações **Excluir** nesse intervalo. Somente leitura.
-| move             | [itemActionStat][]      | Estatísticas sobre as ações de **Mover** nesse intervalo. Somente leitura.
-| Access           | [itemActionStat][]      | Estatísticas sobre as ações de **acesso** nesse intervalo. Somente leitura.
+| create           | [itemActionStat][]      | Estatísticas sobre as ações de **criação** neste intervalo. Somente leitura.
+| edit             | [itemActionStat][]      | Estatísticas sobre as ações de **edição** neste intervalo. Somente leitura.
+| delete           | [itemActionStat][]      | Estatísticas sobre as ações de **exclusão** neste intervalo. Somente leitura.
+| move             | [itemActionStat][]      | Estatísticas sobre as ações de **movimentação** neste intervalo. Somente leitura.
+| Access           | [itemActionStat][]      | Estatísticas sobre as ações de **acesso** neste intervalo. Somente leitura.
 
 [itemActionStat]: itemactionstat.md
 [incompleteData]: incompletedata.md
@@ -62,7 +62,7 @@ O recurso de **itemActivityStat** fornece informações sobre atividades realiza
 
 | Nome da relação | Tipo                        | Descrição
 |:------------------|:----------------------------|:---------------------------
-| activities        | Conjunto [itemActivity][] | Expõe **itemActivities** representados neste recurso **itemActivityStat** .
+| activities        | Conjunto [itemActivity][] | Expõe as **actividades** representadas neste recurso **entidadeitemactivitystat** .
 
 [itemActivity]: itemactivity.md
 

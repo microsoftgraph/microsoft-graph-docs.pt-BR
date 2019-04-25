@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 60fb4f0a782d9502f9e3da3f0a7da2389e937a7d
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30251423"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32573414"
 ---
 # <a name="deviceconfigurationassignment-resource-type"></a>Tipo de recurso deviceConfigurationAssignment
 
@@ -29,11 +29,11 @@ A entidade de atribuição de configuração do dispositivo atribui um grupo AAD
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|A chave da atribuição.|
+|id|String|A chave da atribuição.|
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|O destino da atribuição da configuração do dispositivo.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: Foto
 localization_priority: Normal
 ms.openlocfilehash: d14777b0f39983d6ccf83ae387896c6587635e66
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480912"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32573744"
 ---
 # <a name="photo-resource-type"></a>Tipo de recurso Photo
 

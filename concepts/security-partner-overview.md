@@ -5,17 +5,17 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 ms.openlocfilehash: 312c13cdad2ce8341095a87d33f4a5b01f7e1eef
-ms.sourcegitcommit: fd9f62fd9a6d311f98afe2e31afca8b818c402c2
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31003696"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32574838"
 ---
 # <a name="partnering-with-the-microsoft-graph-security-api--technology-partner-opportunities"></a>Parceria com a API de segurança do Microsoft Graph – oportunidades de parceiros de tecnologia
 
 Este artigo descreve as oportunidades de parceria habilitadas pela API de segurança do Microsoft Graph e foi projetado para ajudar os gerentes de produto e as funções de desenvolvimento de negócios a entender os caminhos de investimento e a fornecer informações sobre as propostas de valor de parceria.
 
-## <a name="background"></a>Background
+## <a name="background"></a>Histórico
 
 A maioria das organizações lida com altos volumes de dados de segurança e tem dezenas de soluções de segurança em sua empresa, tornando a tarefa de integração de vários produtos e serviços desanimadores e complexos. Esses desafios prejudicam a capacidade de as organizações se movimentarem rapidamente ao detectar e corrigir ameaças em um mundo de ataques de movimentação rápida e interrupções.
 

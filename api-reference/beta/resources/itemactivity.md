@@ -2,14 +2,14 @@
 author: daspek
 ms.author: dspektor
 ms.date: 09/14/2017
-title: itemActivity
+title: ItemActivity
 localization_priority: Normal
 ms.openlocfilehash: 5e2be549c3e3e9e799449679b605577ecd782a94
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517292"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561884"
 ---
 # <a name="itemactivity-resource-type"></a>Tipo de recurso ItemActivity
 
@@ -46,10 +46,10 @@ Disponível atualmente só no SharePoint e no OneDrive for Business.
 | Propriedade | Tipo                    | Descrição
 |:---------|:------------------------|:----------------------------------------
 | id       | string                  | O identificador exclusivo da atividade. Somente leitura.
-| Access   | [accessAction][]        | Um item foi acessado.
+| Access   | [accessaction][]        | Um item foi acessado.
 | action   | [itemActionSet][]       | Detalhes sobre a ação que ocorreu. Somente leitura.
 | actor    | [identitySet][]         | Identidade de quem executou a ação. Somente leitura.
-| location | [location][]            | Local físico onde a ação foi realizada. Somente leitura.
+| location | [location][]            | Local físico em que a ação foi executada. Somente leitura.
 | times    | [itemActivityTimeSet][] | Detalhes sobre quando ocorreu a atividade. Somente leitura.
 
 [identitySet]: identityset.md
@@ -85,7 +85,7 @@ Novas ações podem ser registradas no futuro, portanto, verifique se o seu apli
 | share       | [shareAction][]   | Um item foi compartilhado.
 | version     | [versionAction][] | Foi feito o controle de versão de um item.
 
-[accessAction]: accessaction.md
+[accessaction]: accessaction.md
 [commentAction]: commentaction.md
 [createAction]: createaction.md
 [deleteAction]: deleteaction.md

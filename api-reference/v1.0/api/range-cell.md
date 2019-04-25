@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: a46f0e43a9eb1099c2df615b88f15576afa30e9c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27951478"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575293"
 ---
 # <a name="range-cell"></a>Range: Cell
 
@@ -38,7 +38,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/cell
 | Workbook-Session-Id  | ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.|
 
 ## <a name="path-parameters"></a>Parâmetros do caminho
-No caminho, fornecem os seguintes parâmetros.
+No caminho, forneça os parâmetros a seguir.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|

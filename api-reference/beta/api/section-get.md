@@ -1,27 +1,27 @@
 ---
 title: Obter seção
-description: Recupere as propriedades e os relacionamentos de um objeto section.
+description: Recupere as propriedades e os relacionamentos de um objeto Section.
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 ms.openlocfilehash: 51b4ec977f92d6166540f3cf4a7dbfc54651732c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513659"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545463"
 ---
 # <a name="get-section"></a>Obter seção
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e os relacionamentos de um objeto [section](../resources/section.md).
+Recupere as propriedades e os relacionamentos de um objeto [Section](../resources/section.md) .
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All    |
+|Delegado (conta corporativa ou de estudante) | Notes. Create, Notes. Read, Notes. ReadWrite, Notes. Read. All, Notes. ReadWrite. All    |
 |Delegado (conta pessoal da Microsoft) | Notes.Create, Notes.Read, Notes.ReadWrite    |
 |Aplicativo | Notes.Read.All, Notes.ReadWrite.All |
 
@@ -34,9 +34,9 @@ GET /groups/{id}/onenote/sections/{id}
 GET /sites/{id}/onenote/sections/{id}
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a `select` e `expand` [Parâmetros de Consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+Este método oferece suporte `select` aos `expand` [parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
 
-A consulta padrão expande `parentNotebook` e escolhe suas propriedades `id`, `displayName` e `self`. Os valores `expand` válidos para esse parâmetro são `parentNotebook` e `parentSectionGroup`.
+A consulta padrão expande `parentNotebook` e seleciona suas `id`propriedades `displayName`, e `self` . Os `expand` valores válidos para as `parentNotebook` seções `parentSectionGroup`são e.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|

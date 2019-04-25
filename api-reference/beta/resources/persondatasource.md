@@ -1,21 +1,21 @@
 ---
-title: tipo de recurso de personDataSource
-description: Representa as fontes de que dados do usuário provêm, como o diretório e os contatos do Outlook.
+title: tipo de recurso personDataSource
+description: Representa as fontes das quais os dados do usuário vêm, como contatos do Active Directory e do Outlook.
 localization_priority: Normal
 author: simonhult
 ms.prod: insights
 ms.openlocfilehash: 431cd9163873305508d5244005e6fe0a80501771
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509088"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32573743"
 ---
-# <a name="persondatasource-resource-type"></a>tipo de recurso de personDataSource
+# <a name="persondatasource-resource-type"></a>tipo de recurso personDataSource
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa as fontes de que dados do usuário provêm, como o diretório e os contatos do Outlook.
+Representa as fontes das quais os dados do usuário vêm, como contatos do Active Directory e do Outlook.
 
 ## <a name="json-representation"></a>Representação JSON
 

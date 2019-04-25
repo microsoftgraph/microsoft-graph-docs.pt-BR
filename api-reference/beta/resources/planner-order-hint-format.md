@@ -5,23 +5,23 @@ author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 ms.openlocfilehash: 22596f7e9fea5954fc9b6fceb8dae117cf762cb5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525980"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32573771"
 ---
 # <a name="using-order-hints-in-planner"></a>Usando dicas de ordenação no Planner
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Objetos no planejador identificam sua ordem de classificação pelas dicas de ordenação. Os valores de dica de ordenação são cadeias de caracteres. Os clientes podem classificar as cadeias de caracteres com base no valor ordinal dos caracteres nelas para identificar a ordem dos itens. Os caracteres são comparados desde o início da cadeia de caracteres, até que uma diferença seja encontrada nos valores ordinais de caracteres ou uma cadeia de caracteres termina, caso em que a cadeia de caracteres mais curta seria classificada antes da mais longa. Os valores podem conter qualquer caractere ordinal entre 32 (espaço) e 126 (`~`)
+Os objetos no Planner identificam sua ordem de classificação pelas dicas de ordenação. Os valores de dica de ordenação são cadeias de caracteres. Os clientes podem classificar as cadeias de caracteres com base no valor ordinal dos caracteres nelas para identificar a ordem dos itens. Os caracteres são comparados desde o início da cadeia de caracteres, até que uma diferença seja encontrada nos valores ordinais de caracteres ou uma cadeia de caracteres termina, caso em que a cadeia de caracteres mais curta seria classificada antes da mais longa. Os valores podem conter qualquer caractere ordinal entre 32 (espaço) e 126 (`~`)
 
 Por exemplo, um item com dica de ordenação `a` (valor ordinal 97) seria colocado antes de outro item com dica de ordenação `z` (valor ordinal 122). Um item com dica de ordenação `abc` (valores ordinais 97, 98, 99), seriam colocados antes de outro item com dica de ordenação `abd` (valores ordinais 97, 98, 100). Um item com dica de ordenação `a` seria colocado antes de outro item com dica de ordenação `ab` já que todos os caracteres existentes são os mesmos e `a` é mais curto.
 
 Os valores de todas as dicas de ordenação são calculados pelo serviço. O cliente pode reordenar os itens especificando a dica de ordenação do item que foi movido entre dois itens definindo a dica de ordenação do seguinte valor: `<previous order hint> <next order hint>!`, onde `<previous order hint>` deve ser substituído pela dica de ordenação do item que vem antes do novo local desejado e `<next order hint>` deve ser substituído pela dica de ordenação do item que vem depois do novo local desejado. Há um caractere de espaço entre esses valores de dica de ordenação e o valor inteiro tem o sufixo `!`. Se o item não estiver presente, deve ser usada uma cadeia de caracteres vazia. Esse valor também pode ser composto por cálculos anteriores e pode ser usado no cliente para classificar os itens exatamente como as dicas de ordenação retornadas pelo serviço. Depois que o cliente envia esses valores em uma atualização, o serviço calculará um valor curto que classifica no local desejado.
 
-> **Observação:** Nos exemplos a seguir, os valores de dica de ordem real são circundados em caracteres de aspas simples (`'`) para manter a clareza, porém esses não fazem parte dos dados e não devem ser enviados para o serviço.
+> **Observação:** Nos exemplos a seguir, os valores de dica de ordem real são colocados entre caracteres de`'`aspas simples () para maior clareza, no entanto, eles não fazem parte dos dados e não devem ser enviados para o serviço.
  
 Por exemplo, considere a seguinte lista de dicas de ordem de classificação:
 
@@ -52,7 +52,7 @@ Por fim, mover o Item 5 entre o Item 3 e o Item 4 geraria:
 4. Item 2 (Dica de ordenação: `'adhg'`)
 5. Item 1 (Dica de ordenação: `'adhg ! !'`)
 
-Quando essas alterações para valores de dica de ordem são enviadas para o serviço em solicitações de patch, o serviço irá calcular valores adequados que mantêm a ordem destinada pelo cliente. O cliente pode obter a se imediata de valores do `Prefer: return=representation` especificado no cabeçalho de preferência o `PATCH` solicitações. Os valores do caso acima podem ter a seguinte aparência (os valores reais podem diferir). 
+Quando essas alterações nos valores de dica de ordenação são enviadas para o serviço em solicitações de patch, o serviço calculará os valores adequados que mantêm a ordem pretendida pelo cliente. O cliente pode obter os valores imediatos se `Prefer: return=representation` o cabeçalho de preferência for especificado `PATCH` nas solicitações. Os valores do caso acima podem ter a seguinte aparência (os valores reais podem diferir). 
 
 1. Item 3 (Dica de ordenação: `'432b'`)
 2. Item 5 (Dica de ordenação: `'6F"#'`)
@@ -60,7 +60,8 @@ Quando essas alterações para valores de dica de ordem são enviadas para o ser
 4. Item 2 (Dica de ordenação: `'adhg'`)
 5. Item 1 (Dica de ordenação: `'de5%'`)
 
-Dicas de ordenação podem ser especificadas para criar o primeiro item na lista como ` !`, pois nem um item anterior ou próximo existe nesse caso, porém isso é desnecessário, como o serviço gerará automaticamente valores para todos os valores de dica de ordenação nos itens se eles não forem especificados durante a criação do item. O exemplo a seguir ilustra as dicas de ordenação que devem ser usadas ao inserir itens em uma lista anteriormente vazia. Adicione o primeiro item:
+Dicas de ordenação podem ser especificadas para criar o primeiro item na lista como ` !`, pois nem um item anterior ou próximo existe nesse caso, porém isso é desnecessário, como o serviço gerará automaticamente valores para todos os valores de dica de ordenação nos itens se eles não forem especificados durante a criação do item. O exemplo a seguir ilustra as dicas de ordenação que devem ser usadas ao inserir itens em uma lista anteriormente vazia.
+Adicione o primeiro item:
 
 1. Item 1 (Dica de ordenação: `' !'`)
 

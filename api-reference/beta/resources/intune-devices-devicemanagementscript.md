@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 6599f0dbc083859bef4f7a334d36fdcdfa63ee86
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31801593"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32578012"
 ---
 # <a name="devicemanagementscript-resource-type"></a>tipo de recurso deviceManagementScript
 
@@ -32,17 +32,17 @@ O Intune fornecerá ao cliente a capacidade de executar os scripts do PowerShell
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo do script de gerenciamento de dispositivo.|
-|displayName|Cadeia de caracteres|Nome do script de gerenciamento de dispositivo.|
+|id|Cadeia de caracteres|Identificador exclusivo do script de gerenciamento de dispositivo.|
+|displayName|String|Nome do script de gerenciamento de dispositivo.|
 |description|String|Descrição opcional para o script de gerenciamento de dispositivo.|
 |runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|O intervalo de execução do script. Se não definido, o script será executado uma vez|
-|scriptContent|Binary|O conteúdo de script.|
+|scriptContent|Binário|O conteúdo de script.|
 |createdDateTime|DateTimeOffset|A data e a hora em que o script de gerenciamento de dispositivo foi criado.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que o script de gerenciamento de dispositivo foi modificado pela última vez.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Indica o tipo de contexto de execução. Os valores possíveis são: `system` e `user`.|
 |enforceSignatureCheck|Booliano|Indica se a assinatura do script precisa ser verificada.|
 |fileName|String|Nome do arquivo de script.|
-|roleScopeTagIds|Coleção String|Lista de IDs de marca de escopo para esta instância de PowerShellScript.|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de IDs de marca de escopo para esta instância de PowerShellScript.|
 |runAs32Bit|Booliano|Um valor que indica se o script do PowerShell deve ser executado como 32 bits|
 
 ## <a name="relationships"></a>Relações

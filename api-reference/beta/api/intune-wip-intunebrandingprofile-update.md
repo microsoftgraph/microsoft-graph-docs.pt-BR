@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 3f957966ed18003b65b164aff53b4a3d74468051
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31776973"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32541833"
 ---
 # <a name="update-intunebrandingprofile"></a>Atualizar intuneBrandingProfile
 
@@ -51,18 +51,18 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [intuneB
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|Chave de perfil|
-|ProfileName|Cadeia de caracteres|Nome do perfil|
-|profileDescription|Cadeia de caracteres|Descrição do perfil|
+|ProfileName|String|Nome do perfil|
+|profileDescription|String|Descrição do perfil|
 |isDefaultProfile|Booliano|Apresenta se o perfil é usado para o padrão.|
 |createdDateTime|DateTimeOffset|Quando o BrandingProfile foi criado.|
 |lastModifiedDateTime|DateTimeOffset|Quando o BrandingProfile foi modificado pela última vez.|
 |displayName|String|Nome da empresa/organização exibido para usuários finais.|
-|contactITName|Cadeia de caracteres|Nome da pessoa/organização responsável pelo suporte de TI.|
-|contactITPhoneNumber|Cadeia de caracteres|Número de telefone da pessoa/organização responsável pelo suporte de TI.|
-|contactITEmailAddress|Cadeia de caracteres|Endereço de email da pessoa/organização responsável pelo suporte de TI.|
-|contactITNotes|Cadeia de caracteres|Comentários de texto relacionados à pessoa/organização responsável pelo suporte de TI.|
-|privacyUrl|Cadeia de caracteres|URL da política de privacidade da empresa/organização.|
-|onlineSupportSiteUrl|Cadeia de caracteres|URL do site de assistência técnica de TI da empresa/organização.|
+|contactITName|String|Nome da pessoa/organização responsável pelo suporte de TI.|
+|contactITPhoneNumber|String|Número de telefone da pessoa/organização responsável pelo suporte de TI.|
+|contactITEmailAddress|String|Endereço de email da pessoa/organização responsável pelo suporte de TI.|
+|contactITNotes|String|Comentários de texto relacionados à pessoa/organização responsável pelo suporte de TI.|
+|privacyUrl|String|URL da política de privacidade da empresa/organização.|
+|onlineSupportSiteUrl|String|URL do site de assistência técnica de TI da empresa/organização.|
 |onlineSupportSiteName|Cadeia de caracteres|Nome de exibição do site de assistência técnica de TI da empresa/organização.|
 |themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|Cor de tema principal usado nos aplicativos e no portal da Web do Portal da Empresa.|
 |showLogo|Booliano|Booliano que indica se as imagens de logotipo fornecidas pelo administrador serão exibidas ou não.|

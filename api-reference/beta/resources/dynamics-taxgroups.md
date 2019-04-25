@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: bdfbec8f5373637924262388dab0e9c74c363af9
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30366687"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543123"
 ---
 # <a name="taxgroups-resource-type"></a>tipo de recurso taxGroups
 Representa um tipo de recurso taxGroups no Dynamics 365 Business central.
@@ -28,10 +28,10 @@ Representa um tipo de recurso taxGroups no Dynamics 365 Business central.
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |id|GUID|A identificação exclusiva da taxGroup. Somente Leitura.|
-|código|string|Especifica o grupo de impostos.|
+|código|cadeia de caracteres|Especifica o grupo de impostos.|
 |displayName|string|Especifica o nome de exibição do grupo de impostos.|
 |taxType|string|Especifica o tipo de imposto para o grupo.|
-|lastModifiedDateTime|DateTime|O último DateTime que o grupo de impostos foi modificado. Somente Leitura.|  
+|lastModifiedDateTime|DateTime|O último DateTime que o grupo de impostos foi modificado. Somente leitura.|  
 
 
 ## <a name="relationships"></a>Relações

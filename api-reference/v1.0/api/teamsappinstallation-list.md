@@ -1,23 +1,23 @@
 ---
-title: Lista de aplicativos na equipe
-description: Recupere a lista de aplicativos instalados na equipe de especificado.
+title: Listar aplicativos em equipe
+description: Recupere a lista de aplicativos instalados na equipe especificada.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 3289f7abc80e20a11d38c9ab35a9961981b81dd1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 62ed898417e53b4ec88e4c620cfcc7b974731e48
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27985729"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32574824"
 ---
-# <a name="list-apps-in-team"></a>Lista de aplicativos na equipe
+# <a name="list-apps-in-team"></a>Listar aplicativos em equipe
 
 
 
-Recupere a lista de [aplicativos instalados](../resources/teamsappinstallation.md) na [equipe](../resources/team.md)de especificado.
+Recupere a lista de [aplicativos instalados](../resources/teamsappinstallation.md) na [equipe](../resources/team.md)especificada.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -25,7 +25,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Group.Read.All, Group.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Sem suporte. |
+|Aplicativo | Group.Read.All, Group.ReadWrite.All    |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -37,7 +37,7 @@ GET /teams/{id}/installedApps
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte a $filter, $select, e $expand [OData parâmetros de consulta](/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método oferece suporte a $filter, $select e $expand [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -51,7 +51,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e a coleção de objetos [teamsApp](../resources/teamsapp.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [teamsApp](../resources/teamsapp.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -70,7 +70,7 @@ GET /teams/{id}/installedApps
 ### <a name="response"></a>Resposta
 
 Este é um exemplo de resposta.
->**Observação:** no objeto response mostrado aqui pode ser reduzido para melhorar a legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -92,7 +92,7 @@ Content-length: 55
 }
 ```
 
-## <a name="example----getting-the-names-of-the-installed-apps"></a>Example - obtendo os nomes dos aplicativos instalados
+## <a name="example----getting-the-names-of-the-installed-apps"></a>Exemplo: obtendo os nomes dos aplicativos instalados
 
 ### <a name="request"></a>Solicitação
 
@@ -110,7 +110,7 @@ GET https://graph.microsoft.com/v1.0/teams/{id}/installedApps?$expand=teamsAppDe
 
 Este é um exemplo de resposta.
 
->**Observação:** no objeto response mostrado aqui pode ser reduzido para melhorar a legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

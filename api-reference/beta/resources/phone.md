@@ -1,15 +1,15 @@
 ---
-title: Tipo de recurso phone
+title: tipo de recurso de telefone
 description: Representa um número de telefone.
 localization_priority: Normal
 ms.openlocfilehash: a343d4e1d65126048a27ad723c86ae49eb2ed752
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527226"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32573764"
 ---
-# <a name="phone-resource-type"></a>Tipo de recurso phone
+# <a name="phone-resource-type"></a>tipo de recurso de telefone
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 

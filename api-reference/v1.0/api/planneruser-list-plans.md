@@ -5,15 +5,15 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 836b220b3a43f76a3652f5c299f96c7b66733f28
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27961381"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32576406"
 ---
 # <a name="list-plans"></a>Listar planos
 
-Recupere uma lista de objetos **plannerplan** compartilhados com um objeto [user](../resources/user.md).
+Recupere uma lista de objetos **plannerplan** compartilhados com um objeto [User](../resources/user.md) .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -42,9 +42,9 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [plannerPlan](../resources/plannerplan.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [plannerPlan](../resources/plannerplan.md) no corpo da resposta.
 
-Este método pode retornar qualquer um dos [códigos de status de HTTP](/graph/errors). Os erros mais comuns que os aplicativos devem tratar para esse método são as respostas 403 e 404. Saiba mais sobre esses erros em [Condições de erro comuns do Planner](../resources/planner-overview.md#common-planner-error-conditions).
+Este método pode retornar qualquer um dos [códigos de status http](/graph/errors). Os erros mais comuns que os aplicativos devem lidar com esse método são as respostas 403 e 404. Para obter mais informações sobre esses erros, confira [condições de erro do planejador comum](../resources/planner-overview.md#common-planner-error-conditions).
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação

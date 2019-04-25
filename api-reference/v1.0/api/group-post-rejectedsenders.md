@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 851fd68fd1457ad4e926290bc103fc8222ead7c6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27968649"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32572917"
 ---
 # <a name="create-rejectedsender"></a>Criar rejectedSender
 Adiciona um novo usuário ou grupo à lista rejectedSender.

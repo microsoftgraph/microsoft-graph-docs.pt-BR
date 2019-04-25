@@ -1,21 +1,21 @@
 ---
-title: Lista de dispositivos de usuário
-description: Obtenha uma lista de dispositivos do usuário que oferecem suporte a recursos de projeto Roma. Isso inclui a capacidade de iniciar um aplicativo, ou de mensagem ou enviar dados para um aplicativo. Depois de fazer uma chamada GET em mim / dispositivos, passe a ID do dispositivo para enviar um comando para seu dispositivo.
+title: Listar os dispositivos do usuário
+description: Obtenha uma lista de dispositivos de usuário que dão suporte a recursos de Roma do projeto. Isso inclui a capacidade de iniciar um aplicativo ou uma mensagem ou enviar dados para um aplicativo. Depois de fazer uma chamada para mim/dispositivos, passe a ID do dispositivo para enviar um comando ao dispositivo.
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 891f66691149106d4ff5a2951170524203eb2ea7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509522"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544271"
 ---
-# <a name="list-user-devices"></a>Lista de dispositivos de usuário
+# <a name="list-user-devices"></a>Listar os dispositivos do usuário
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha uma lista de dispositivos do usuário que oferecem suporte a recursos de projeto Roma. Isso inclui a capacidade de iniciar um aplicativo, ou de mensagem ou enviar dados para um aplicativo. Depois de fazer uma chamada GET em mim / dispositivos, passe a ID do dispositivo para [Enviar um comando](send-device-command.md) para seu dispositivo.
+Obtenha uma lista de dispositivos de usuário que dão suporte a recursos de Roma do projeto. Isso inclui a capacidade de iniciar um aplicativo ou uma mensagem ou enviar dados para um aplicativo. Depois de fazer uma chamada para mim/dispositivos, passe a ID do dispositivo para [enviar um comando](send-device-command.md) ao dispositivo.
 
 ## <a name="permissions"></a>Permissões
 
@@ -48,7 +48,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, esse método retorna um código de 200 resposta e as propriedades de usuário do dispositivo no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta 200 e as propriedades do dispositivo do usuário no corpo da resposta.
 
 <!-- { "blockType": "ignored" } -->
 
@@ -76,7 +76,7 @@ HTTP/1.1 200 OK
 ```
 
 ## <a name="example"></a>Exemplo
-Este exemplo retornará a lista de dispositivos para um usuário. Para um dispositivo usando de comando `me/devices/{id}/command`, você precisará obter a ID do dispositivo que é retornado.
+Este exemplo retornará a lista de dispositivos de um usuário. Para executar um comando em `me/devices/{id}/command`um dispositivo usando o, você precisará obter a ID do dispositivo que é retornado.
 
 #### <a name="request"></a>Solicitação
 
@@ -95,7 +95,7 @@ Content-Type: application/json; charset=utf-8
 
 #### <a name="response"></a>Resposta
 
-Este é um exemplo de resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Este é um exemplo de resposta. Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
   "blockType": "ignored",

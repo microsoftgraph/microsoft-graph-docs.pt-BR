@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 93f50cd4f62909514145cfd369f32e1736b7215f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27928518"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563487"
 ---
 # <a name="chart-setdata"></a>Chart: setData
 
@@ -40,8 +40,8 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|sourceData|Json|O objeto Range que corresponde aos dados de origem.|
-|seriesBy|string|Opcional. Especifica a maneira como colunas ou linhas são usadas como série de dados no gráfico. Pode ser uma das seguintes opções: Auto (padrão), linhas, colunas.  Os valores possíveis são: `Auto`, `Columns`, `Rows`.|
+|sourceData|Json|O objeto Range correspondente aos dados de origem.|
+|seriesBy|string|Opcional. Especifica a forma como as colunas ou linhas são usadas como série de dados no gráfico. Pode ser um dos seguintes: Automático (padrão), Linhas, Colunas.  Os valores possíveis são: `Auto`, `Columns`, `Rows`.|
 
 ## <a name="response"></a>Resposta
 

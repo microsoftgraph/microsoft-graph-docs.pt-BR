@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 1f68023bb86ee08defb10c9b955e5691e07ea3ff
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27948398"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575944"
 ---
 # <a name="users-you-can-reach-with-microsoft-graph"></a>Usuários que você pode alcançar com o Microsoft Graph
 

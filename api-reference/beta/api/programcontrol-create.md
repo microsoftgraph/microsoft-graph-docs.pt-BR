@@ -1,25 +1,25 @@
 ---
 title: Criar programControl
-description: No Windows Azure AD para acessar o recurso de revisões, crie um novo objeto programControl.  Isso vincula uma revisão de acesso a um programa.
+description: No recurso de revisões do Azure AD Access, crie um novo objeto programControl.  Isso vincula uma revisão do Access a um programa.
 localization_priority: Normal
 ms.openlocfilehash: 89e31994ea91dba68e2f4563c64eeab53dd4db93
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511111"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546418"
 ---
 # <a name="create-programcontrol"></a>Criar programControl
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O recurso [acesso analisa](../resources/accessreviews-root.md) Azure AD, cria um novo objeto [programControl](../resources/programcontrol.md) .  Isso vincula uma revisão de acesso a um programa.
+No recurso de revisões do Azure AD [Access](../resources/accessreviews-root.md) , crie um novo objeto [programControl](../resources/programcontrol.md) .  Isso vincula uma revisão do Access a um programa.
 
-Antes de fazer essa solicitação, o chamador deve ter anteriormente
+Antes de fazer essa solicitação, o chamador deve ter sido
 
- - [criado um programa](program-create.md) ou [recuperados de um programa](program-list.md), para que o valor de `programId` para incluir na solicitação,
- - [criada uma revisão de acesso](accessreview-create.md) ou [recuperado uma revisão de acesso](accessreview-get.md), para que o valor de `controlId` para incluir na solicitação, e
- - [recuperou a lista de tipos de controle de programas](programcontroltype-list.md), para que o valor de `controlTypeId` para incluir na solicitação.
+ - [criou um programa](program-create.md) ou [recuperou um programa](program-list.md), para que o valor `programId` de a ser incluído na solicitação,
+ - [criou uma revisão do Access](accessreview-create.md) ou [recuperou uma revisão do Access](accessreview-get.md), para que `controlId` o valor de seja incluído na solicitação e
+ - [recuperada a lista de tipos de controle de programa](programcontroltype-list.md)para que o `controlTypeId` valor de seja incluído na solicitação.
 
 
 ## <a name="permissions"></a>Permissões
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | `ProgramControl.ReadWrite.All`.  O usuário conectado também deve ser uma função de diretório que permite a atualização-los para criar um programControl. |
+|Delegado (conta corporativa ou de estudante)     | `ProgramControl.ReadWrite.All`.  O usuário conectado também deve estar em uma função de diretório que permite que eles criem um programControl. |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | Sem suporte. |
 
@@ -39,26 +39,26 @@ POST /programControls
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome         | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| Autorização | string | Token de portador Obrigatório. |
+| Autorização | string | \{token\} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON de um objeto [programControl](../resources/programcontrol.md) .
+No corpo da solicitação, forneça uma representação JSON de um objeto [programControl](../resources/programcontrol.md) .
 
-A tabela a seguir mostra as propriedades que são necessárias quando você criar um controle de programa.
+A tabela a seguir mostra as propriedades que são necessárias ao criar um controle de programa.
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-| `programId`              |`String`                | O programId do programa esse controle vai se tornar uma parte do.                             |
-| `controlId`              |`String`                | ControlId do controle, em especial o identificador de uma revisão de acesso.                                                |
-| `controlTypeId`          |`String`                | O programControlType identifica o tipo de controle do programa - por exemplo, um controle de vinculação para o acesso de convidado analisa. |
+| `programId`              |`String`                | O ProgramId do programa para o qual esse controle se tornará parte.                             |
+| `controlId`              |`String`                | O controlId do controle, em particular, o identificador de uma revisão do Access.                                                |
+| `controlTypeId`          |`String`                | O programControlType identifica o tipo de controle de programa-por exemplo, um controle vinculando a revisões de acesso de convidados. |
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `201, Created` código de resposta e um objeto [programControl](../resources/programcontrol.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201, Created` um código de resposta e um objeto [programControl](../resources/programcontrol.md) no corpo da resposta.
 
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-No corpo da solicitação, fornece uma representação JSON do objeto [programControl](../resources/programcontrol.md) .
+No corpo da solicitação, forneça uma representação JSON do objeto [programControl](../resources/programcontrol.md) .
 
 <!-- {
   "blockType": "request",
@@ -76,7 +76,7 @@ Content-type: application/json
 ```
 
 ##### <a name="response"></a>Resposta
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação: **o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -101,7 +101,7 @@ Content-type: application/json
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Lista programControlTypes](../api/programcontroltype-list.md) | coleção [programControlType](../resources/programcontroltype.md)| Lista os tipos de controle do programa. |
+|[Listar programControlTypes](../api/programcontroltype-list.md) | coleção [programControlType](../resources/programcontroltype.md)| Listar tipos de controle de programa. |
 
 
 <!--

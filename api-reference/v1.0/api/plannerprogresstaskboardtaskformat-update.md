@@ -1,19 +1,19 @@
 ---
 title: Atualizar plannerProgressTaskBoardTaskFormat
-description: Atualize as propriedades do objeto **plannerProgressTaskBoardTaskFormat**.
+description: Atualize as propriedades do objeto **plannerProgressTaskBoardTaskFormat** .
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 2c21e364d292dfa446b4b5441ad9d1f8d3020a64
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27987227"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32574261"
 ---
 # <a name="update-plannerprogresstaskboardtaskformat"></a>Atualizar plannerProgressTaskBoardTaskFormat
 
-Atualize as propriedades do objeto **plannerProgressTaskBoardTaskFormat**.
+Atualize as propriedades do objeto **plannerProgressTaskBoardTaskFormat** .
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -32,18 +32,18 @@ PATCH /planner/tasks/{id}/progressTaskBoardFormat
 | Nome       | Descrição|
 |:-----------|:-----------|
 | Autorização  | {token} de portador. Obrigatório. |
-| If-Match  | Último valor ETag conhecido do objeto **plannerProgressTaskBoardTaskFormat** a ser atualizado. Obrigatório.|
+| If-Match  | Último valor de ETag conhecido para o **plannerProgressTaskBoardTaskFormat** a ser atualizado. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|orderHint|String|Valor da dica usado para ordenar a tarefa no modo de exibição Progress do Quadro de Tarefas. O formato é definido como descrito [aqui](../resources/planner-order-hint-format.md).|
+|orderHint|String|O valor de dica usado para ordenar a tarefa no modo de exibição de progresso do quadro de tarefas. O formato é definido conforme descrito [aqui](../resources/planner-order-hint-format.md).|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [plannerProgressTaskBoardTaskFormat](../resources/plannerprogresstaskboardtaskformat.md) atualizado no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [plannerProgressTaskBoardTaskFormat](../resources/plannerprogresstaskboardtaskformat.md) atualizado no corpo da resposta.
 
 Este método pode retornar qualquer um dos [códigos de status de HTTP](/graph/errors). Os erros mais comuns que os aplicativos devem tratar para esse método são as respostas 400, 403, 404, 409 e 412. Saiba mais sobre esses erros em [Condições de erro comuns do Planner](../resources/planner-overview.md#common-planner-error-conditions).
 

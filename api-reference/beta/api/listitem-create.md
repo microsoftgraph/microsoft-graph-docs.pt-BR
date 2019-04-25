@@ -3,18 +3,16 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: Criar uma nova entrada em uma lista do SharePoint
-localization_priority: Normal
+localization_priority: Priority
 ms.prod: sharepoint
 ms.openlocfilehash: 1af6162fd12c9c3dfc470b97e42a25d0cad8ebea
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482410"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32541007"
 ---
 # <a name="create-a-new-item-in-a-list"></a>Criar um novo item em uma lista
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Criar um novo [listItem][] em uma [lista][].
 
@@ -33,7 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items
+POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items
 ```
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -47,7 +45,7 @@ Aqui está um exemplo de como criar um novo item de lista genérica.
 <!-- { "blockType": "request", "name": "create-listitem", "scopes": "sites.readwrite.all" } -->
 
 ```json
-POST https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items
+POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items
 Content-Type: application/json
 
 {
@@ -93,15 +91,10 @@ Content-type: application/json
 [lista]: ../resources/list.md
 [listItem]: ../resources/listitem.md
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Add a new item to a SharePoint list.",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "ListItem/Create",
-  "suppressions": [
-    "Error: /api-reference/beta/api/listitem-create.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": "ListItem/Create"
+} -->

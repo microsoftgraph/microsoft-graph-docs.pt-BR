@@ -5,11 +5,11 @@ localization_priority: Normal
 author: tfitzmac
 ms.prod: intune
 ms.openlocfilehash: a2e41d9b17ca7acafa98dad65db5d2ff5ce30925
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30151293"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32572938"
 ---
 # <a name="reportroot-resource-type"></a>Tipo de recurso reportRoot
 
@@ -27,7 +27,7 @@ O recurso que representa uma instância de um dispositivo ou relatório de solu�
 |**Configuração do dispositivo**|
 |[Função deviceConfigurationUserActivity](../api/intune-shared-reportroot-deviceconfigurationuseractivity.md)|Metadados para o Relatório de atividades do usuário de configuração do dispositivo|
 |[função deviceConfigurationDeviceActivity](../api/intune-shared-reportroot-deviceconfigurationdeviceactivity.md)|Metadados para o relatório de atividade do dispositivo de configuração do dispositivo|
-|**Solução de problemas**|
+|**Solução de Problemas**|
 |[função managedDeviceEnrollmentAbandonmentDetails](../api/intune-shared-reportroot-manageddeviceenrollmentabandonmentdetails.md)|[relatório](../resources/intune-shared-report.md)|Metadados para o relatório de detalhes de abandono de registro|
 |[função managedDeviceEnrollmentAbandonmentSummary](../api/intune-shared-reportroot-manageddeviceenrollmentabandonmentsummary.md)|[relatório](../resources/intune-shared-report.md)|Metadados para o relatório de Resumo de abandono de registro|
 |[função managedDeviceEnrollmentFailureDetails](../api/intune-shared-reportroot-manageddeviceenrollmentfailuredetails.md)|Ainda não documentado|
@@ -37,7 +37,7 @@ O recurso que representa uma instância de um dispositivo ou relatório de solu�
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo dessa entidade.|
+|id|String|O identificador exclusivo dessa entidade.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

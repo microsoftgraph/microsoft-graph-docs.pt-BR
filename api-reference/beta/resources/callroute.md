@@ -1,29 +1,29 @@
 ---
-title: tipo de recurso de callRoute
-description: O tipo de callRoute.
+title: tipo de recurso callRoute
+description: O tipo callRoute.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: cfa470c4d3a03655221cab1f29baa60d00a8cf6c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512798"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543828"
 ---
-# <a name="callroute-resource-type"></a>tipo de recurso de callRoute
+# <a name="callroute-resource-type"></a>tipo de recurso callRoute
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O tipo de callRoute.
+O tipo callRoute.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade            | Tipo                          | Descrição                                                  |
 | :------------------ | :---------------------------- | :----------------------------------------------------------- |
-| Final               | [identitySet](identityset.md) | A identidade que foi resolvida na chamada.               |
-| Original            | [identitySet](identityset.md) | A identidade que originalmente utilizada na chamada.           |
-| routingType         | String                        | Os valores possíveis são: `forwarded`, `lookup`, `selfFork`.  |
+| recente               | [identitySet](identityset.md) | A identidade que foi resolvida para na chamada.               |
+| Original            | [identitySet](identityset.md) | A identidade que foi usada originalmente na chamada.           |
+| RoutingType         | String                        | Os valores possíveis são: `forwarded`, `lookup`, `selfFork`.  |
 
 ## <a name="json-representation"></a>Representação JSON
 

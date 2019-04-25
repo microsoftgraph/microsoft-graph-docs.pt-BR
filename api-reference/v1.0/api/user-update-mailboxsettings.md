@@ -1,15 +1,15 @@
 ---
 title: Atualizar as configurações de caixa de correio do usuário
-description: Atualize uma ou mais configurações da caixa de correio do usuário. Isso inclui configurações de respostas automáticas (notificar pessoas automaticamente ao receber emails), localidade (idioma e país/região), fuso horário e horário de trabalho.
+description: Atualize uma ou mais configurações da caixa de correio do usuário. Isso inclui as configurações para respostas automáticas (notificar as pessoas automaticamente no recebimento de seus emails), localidade (idioma e país/região), fuso horário e horário de trabalho.
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 78547e19335a65410e201b872e9514abf4656096
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27983797"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32573575"
 ---
 # <a name="update-user-mailbox-settings"></a>Atualizar as configurações de caixa de correio do usuário
 
@@ -48,7 +48,7 @@ No corpo da solicitação, forneça os valores para as propriedades relevantes q
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|automaticRepliesSetting|[automaticRepliesSetting](../resources/automaticrepliessetting.md)|Definições de configuração para notificar automaticamente o remetente de um email recebido com uma mensagem do usuário conectado. Você pode definir essas notificações para apenas um intervalo de data futura.|
+|automaticRepliesSetting|[automaticRepliesSetting](../resources/automaticrepliessetting.md)|Definições de configuração para notificar automaticamente o remetente de um email recebido com uma mensagem do usuário conectado. Você pode definir essas notificações para apenas um intervalo de datas futuras.|
 |idioma|[localeInfo](../resources/localeinfo.md)|Informações sobre a localidade do usuário, incluindo o idioma preferencial e o país/região.|
 |timeZone|string|O fuso horário padrão para a caixa de correio do usuário.|
 |workingHours|[workingHours](../resources/workinghours.md)|As horas, os dias de uma semana e o fuso horário em que o usuário trabalha.|
@@ -98,7 +98,7 @@ Content-Type: application/json
 }
 ```
 ##### <a name="response"></a>Resposta
-A resposta inclui apenas as configurações atualizadas de respostas automáticas. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+A resposta inclui apenas as configurações atualizadas de respostas automáticas. Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

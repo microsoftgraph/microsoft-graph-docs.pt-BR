@@ -3,11 +3,11 @@ title: Tipo de recurso privacyProfile
 description: Representa o perfil de privacidade de uma empresa que inclui uma URL da política de privacidade e uma pessoa de contato para tirar dúvidas sobre a política de privacidade.
 localization_priority: Normal
 ms.openlocfilehash: 29c4a01cde0e05c42ce74576e769ca005840e854
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27884977"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579878"
 ---
 # <a name="privacyprofile-resource-type"></a>Tipo de recurso privacyProfile
 
@@ -16,7 +16,7 @@ Representa o perfil de privacidade de uma empresa que inclui uma URL da polític
 ## <a name="properties"></a>Propriedades
 | Propriedade   | Tipo|Descrição|
 |:---------------|:--------|:----------|
-|contactEmail|Cadeia de caracteres| Um endereço de email smtp válido para o contato da política de privacidade. Não obrigatório.|
+|contactEmail|String| Um endereço de email smtp válido para o contato da política de privacidade. Não necessário.|
 |statementUrl|Cadeia de caracteres| Um formato de URL válido começando por http:// ou https://. O tamanho máximo é de 255 caracteres. A URL que direciona para a política de privacidade da empresa. Não obrigatório.|
 
 ## <a name="json-representation"></a>Representação JSON

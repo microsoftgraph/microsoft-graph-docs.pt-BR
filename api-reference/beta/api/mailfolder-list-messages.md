@@ -1,21 +1,21 @@
 ---
 title: Listar mensagens
-description: Lista de todas as mensagens na caixa de correio do usuário conectado ou essas mensagens em uma pasta especificada na caixa de correio ou unidade.
+description: Listar todas as mensagens na caixa de correio do usuário conectado ou as mensagens de uma pasta especificada na caixa de correio ou unidade.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 24f7a0792c264c059ea034e749e6683c0f9eb8c3
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515395"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540682"
 ---
 # <a name="list-messages"></a>Listar mensagens
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Lista de todas as mensagens na caixa de correio do usuário conectado ou essas mensagens em uma pasta especificada na caixa de correio ou unidade.
+Listar todas as mensagens na caixa de correio do usuário conectado ou as mensagens de uma pasta especificada na caixa de correio ou unidade.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

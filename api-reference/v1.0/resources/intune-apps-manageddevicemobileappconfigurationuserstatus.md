@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: f9e08e24ac36decdc672fa033b5d06790ca56e12
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30257054"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32584030"
 ---
 # <a name="manageddevicemobileappconfigurationuserstatus-resource-type"></a>Tipo de recurso managedDeviceMobileAppConfigurationUserStatus
 
@@ -29,15 +29,15 @@ Contém propriedades, propriedades herdadas e ações para um status de configur
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
-|userDisplayName|String|Nome de usuário de DevicePolicyStatus.|
+|id|Cadeia de caracteres|Chave da entidade.|
+|userDisplayName|Cadeia de caracteres|Nome de usuário de DevicePolicyStatus.|
 |devicesCount|Int32|Contagem de dispositivos para esse usuário.|
 |status|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Status de conformidade do relatório de políticas. Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |lastReportedDateTime|DateTimeOffset|Data e hora da última modificação do relatório de políticas.|
 |userPrincipalName|String|UserPrincipalName.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

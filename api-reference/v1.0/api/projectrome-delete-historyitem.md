@@ -1,20 +1,20 @@
 ---
 title: Excluir um historyItem
-description: Exclua um item de histórico existente para uma atividade do usuário existente.
+description: Excluir um item de histórico existente para uma atividade existente do usuário.
 localization_priority: Normal
 ms.prod: project-rome
 ms.openlocfilehash: 4814987367b7b9a278c645dbdca8fb5e795ce784
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27923933"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32576266"
 ---
 # <a name="delete-a-historyitem"></a>Excluir um historyItem
 
-Exclua um item de histórico existente para uma atividade do usuário existente.
+Excluir um item de histórico existente para uma atividade existente do usuário.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -41,11 +41,11 @@ DELETE /me/activities/{id}/historyItems/{id}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-Nenhum corpo da solicitação.
+Nenhum corpo de solicitação.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará o `204 No Content` código de resposta se o item de histórico foi excluído.
+Se tiver êxito, este método retornará `204 No Content` o código de resposta se o item do histórico tiver sido excluído.
 
 ## <a name="example"></a>Exemplo
 

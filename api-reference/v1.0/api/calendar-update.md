@@ -1,15 +1,15 @@
 ---
 title: Atualizar o calendário
-description: 'Atualize as propriedades de um objeto calendar. O calendário pode ser uma para um usuário, '
+description: 'Atualize as propriedades de um objeto calendar. O calendário pode ser um para um usuário, '
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: ad372b18397d24185c3e05daabe206fc3336f544
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27987829"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32580584"
 ---
 # <a name="update-calendar"></a>Atualizar o calendário
 
@@ -24,7 +24,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Aplicativo | Calendars.ReadWrite |
 
 ## <a name="http-request"></a>Solicitação HTTP
-<!-- { "blockType": "ignored" } -->Um usuário ou do grupo padrão [calendário](../resources/calendar.md).
+<!-- { "blockType": "ignored" } -->
+Um [calendar](../resources/calendar.md) padrão de um usuário ou grupo.
 ```http
 PATCH /me/calendar
 PATCH /users/{id | userPrincipalName}/calendar

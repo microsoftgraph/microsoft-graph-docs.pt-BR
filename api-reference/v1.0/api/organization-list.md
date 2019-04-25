@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 0fbd38f4d3c0e4ceec9f025e9822b635ce6a0d54
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27939158"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32572560"
 ---
 # <a name="list-organization"></a>Listar organização
 
@@ -21,8 +21,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | User.Read, Directory.Read.All, Directory.ReadWrite.All   |
-|Delegada (conta pessoal da Microsoft) | Sem suporte.    |
+|Delegado (conta corporativa ou de estudante) | User.Read, Directory.Read.All, Directory.ReadWrite.All   |
+|Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Directory.Read.All, Directory.ReadWrite.All |
 
 > Observação: os aplicativos que têm a permissão User.Read só conseguem ler as propriedades *id*, *displayName* e *verifiedDomains* da organização.  Todas as outras propriedades retornarão valores `null`. Para ler todas as propriedades, use Directory.Read.All.

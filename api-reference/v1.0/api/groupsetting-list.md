@@ -1,19 +1,19 @@
 ---
-title: Lista de configurações de grupo
-description: Recuperar uma lista de objetos de configuração de grupo.
+title: Configurações de grupo de lista
+description: Recupere uma lista de objetos de configuração de grupo.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8cb245c786ef1fbede3e305fd73df74eb574393c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 445e03aebe0743aaaf674e4ad458eb7b392186fb
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27932361"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32577837"
 ---
-# <a name="list-group-settings"></a>Lista de configurações de grupo
+# <a name="list-group-settings"></a>Configurações de grupo de lista
 
-Recuperar uma lista de objetos de configuração de grupo.
+Recupere uma lista de objetos de configuração de grupo.
 
 ## <a name="permissions"></a>Permissões
 
@@ -29,16 +29,16 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 
-Lista configurações de todo o locatário ou específico.
+Listar configurações de todo o locatário ou grupo.
 
 ```http
 GET /groupSettings
-GET group/{id}/settings
+GET groups/{id}/settings
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
-> Observação: $filter não é suportado.
+>**Observação:** $filter não é suportado.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome | Descrição |
@@ -50,7 +50,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [groupSetting](../resources/groupsetting.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [groupSetting](../resources/groupsetting.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 
 ##### <a name="request"></a>Solicitação
@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/v1.0/groupSettings
 ```
 ##### <a name="response"></a>Resposta
 
-Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

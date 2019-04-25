@@ -3,11 +3,11 @@ title: Tipo de recurso extensionSchemaProperty
 description: Use o recurso **extensionSchemaProperty** para definir o nome da propriedade e o tipo dela, como parte de uma definição schemaExtension.
 localization_priority: Normal
 ms.openlocfilehash: bb044aa2f85ea5accdba4ed43a1a5b1c856a209d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511503"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542647"
 ---
 # <a name="extensionschemaproperty-resource-type"></a>Tipo de recurso extensionSchemaProperty
 
@@ -19,7 +19,7 @@ Use o recurso **extensionSchemaProperty** para definir o nome da propriedade e o
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|name|Cadeia de caracteres| O nome da propriedade fortemente tipada definido como parte de uma extensão de esquema.|
+|name|String| O nome da propriedade fortemente tipada definida como parte de uma extensão de esquema.|
 |type|String| O tipo da propriedade digitada definido como parte de uma extensão de esquema.  Os valores permitidos são: *Binary, Boolean, DateTime, Integer* ou *String*.  Confira a tabela abaixo para ver mais detalhes.|
 
 #### <a name="supported-property-data-types"></a>Tipos de dados de propriedade com suporte 

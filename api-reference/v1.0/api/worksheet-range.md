@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: e7dade7e0c83808aa10700e87dd54a1e8fe9bb7c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27971967"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569687"
 ---
 # <a name="worksheet-range"></a>Worksheet: Range
 
@@ -79,7 +79,7 @@ Content-length: 169
 }
 ```
 
-Se o opcional `address` parâmetro não for especificado, essa função retorna o intervalo de planilha inteira.
+Se o parâmetro `address` optional não for especificado, essa função retornará todo o intervalo de planilha.
 
 ##### <a name="request"></a>Solicitação
 

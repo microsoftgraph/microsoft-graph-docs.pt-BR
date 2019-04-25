@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 4dc06d3f1d4b3abe00dd65e81287a0950c2d40c5
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30571092"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32572921"
 ---
 # <a name="runasaccounttype-enum-type"></a>tipo de enumeração runAsAccountType
 
@@ -23,4 +23,4 @@ Indica o contexto de execução de um script de gerenciamento de dispositivo ou 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |sistema|,0|Contexto de sistema|
-|user|1|Contexto de usuário|
+|user|1 |Contexto de usuário|

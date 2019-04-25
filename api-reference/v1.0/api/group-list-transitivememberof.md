@@ -1,19 +1,19 @@
 ---
-title: Membro transitivo do grupo de lista
-description: Obtenha os grupos dos quais o grupo é membro do.  Essa operação é transitiva e também incluirá todos os grupos que este grupos é um membro aninhado do. Diferentemente obtendo Office 365 grupos de um usuário, isto retorna todos os tipos de grupos, não apenas a grupos do Office 365.
+title: Lista de grupos transitivos transitivos
+description: Obter grupos dos quais o grupo é membro.  Essa operação é transitiva e também inclui todos os grupos dos quais esse grupo é um membro aninhado. Ao contrário de obter os grupos do Office 365 de um usuário, isso retorna todos os tipos de grupos, não apenas grupos do Office 365.
 author: anchanda
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 7134318471101309dcf8f2778106afa549e9aa62
-ms.sourcegitcommit: d6209114cbbe8072e3ecf7eba23819ae5ace7db5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "29694507"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542015"
 ---
-# <a name="list-group-transitive-memberof"></a>Membro transitivo do grupo de lista
+# <a name="list-group-transitive-memberof"></a>Lista de grupos transitivos transitivos
 
-Obtenha os grupos dos quais o grupo é membro do.  Essa operação é transitiva e também incluirá todos os grupos que este grupos é um membro aninhado do. Diferentemente obtendo Office 365 grupos de um usuário, isto retorna todos os tipos de grupos, não apenas a grupos do Office 365.
+Obter grupos dos quais o grupo é membro.  Essa operação é transitiva e também inclui todos os grupos dos quais esse grupo é um membro aninhado. Ao contrário de obter os grupos do Office 365 de um usuário, isso retorna todos os tipos de grupos, não apenas grupos do Office 365.
 
 ## <a name="permissions"></a>Permissões
 

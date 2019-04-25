@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: 76c1d0c8b22484b3a35d0db49c5a4e578e656880
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30255168"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32577032"
 ---
 # <a name="create-devicecategory"></a>Criar deviceCategory
 
@@ -49,10 +49,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar deviceCa
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|O identificador exclusivo da categoria do dispositivo. Somente leitura.|
+|id|Cadeia de caracteres|O identificador exclusivo da categoria do dispositivo. Somente leitura.|
 |**Integração**|
-|displayName|String|Nome de exibição da categoria de dispositivo.|
-|description|Cadeia de caracteres|Descrição opcional da categoria do dispositivo.|
+|displayName|Cadeia de caracteres|Nome de exibição da categoria de dispositivo.|
+|description|String|Descrição opcional da categoria do dispositivo.|
 
 
 

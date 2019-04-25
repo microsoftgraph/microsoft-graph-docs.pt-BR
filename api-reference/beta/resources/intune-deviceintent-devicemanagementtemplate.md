@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: a55e4426f37f0261f5adbd1ac4830de6ede3e3ed
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31801873"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575853"
 ---
 # <a name="devicemanagementtemplate-resource-type"></a>tipo de recurso deviceManagementTemplate
 
@@ -32,15 +32,15 @@ Entidade que representa uma coleção definida de configurações de dispositivo
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A ID do modelo|
-|displayName|Cadeia de caracteres|O nome de exibição do modelo|
+|id|Cadeia de caracteres|A ID do modelo|
+|displayName|String|O nome de exibição do modelo|
 |description|String|A descrição do modelo|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |settings|coleção [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|Coleção de todas as configurações que este modelo tem|
-|Categorias|coleção [deviceManagementTemplateSettingCategory](../resources/intune-deviceintent-devicemanagementtemplatesettingcategory.md)|Conjunto de categorias de configuração no modelo|
+|categories|coleção [deviceManagementTemplateSettingCategory](../resources/intune-deviceintent-devicemanagementtemplatesettingcategory.md)|Conjunto de categorias de configuração no modelo|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

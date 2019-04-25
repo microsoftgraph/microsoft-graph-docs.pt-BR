@@ -1,19 +1,19 @@
 ---
 title: Excluir oAuth2PermissionGrant
-description: Exclua um oAuth2PermissionGrant.
+description: Excluir um oAuth2PermissionGrant.
 localization_priority: Normal
 ms.openlocfilehash: 5c115ada8e39412fbe64259da02b1eadef3f263b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523355"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540146"
 ---
 # <a name="delete-oauth2permissiongrant"></a>Excluir oAuth2PermissionGrant
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exclua um oAuth2PermissionGrant.
+Excluir um oAuth2PermissionGrant.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

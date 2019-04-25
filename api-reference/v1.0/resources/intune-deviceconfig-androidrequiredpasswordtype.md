@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 59a95c74f19fa6e14440eaedd06d385b05d81e5d
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30255399"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575167"
 ---
 # <a name="androidrequiredpasswordtype-enum-type"></a>tipo de enumeração androidRequiredPasswordType
 
@@ -21,13 +21,13 @@ Tipo de senha exigido pelo Android.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |deviceDefault|,0|Valor padrão do dispositivo, sem intenção.|
-|caracteres|1|Senha alfabética necessária.|
-|tecla|duas|Senha alfanumérica obrigatória.|
-|alphanumericWithSymbols|3D|Alfanumérica com símbolos de senha necessários.|
-|lowSecurityBiometric|quatro|Senha com base em Biometria de segurança baixa necessária.|
-|numéricos|0,5|Senha numérica obrigatória.|
-|numericComplex|6|Senha numérica complexa obrigatória.|
-|qualquer|178|Uma senha ou um padrão é necessário, e qualquer um é aceitável.|
+|caracteres|1 |Senha alfabética necessária.|
+|tecla|2 |Senha alfanumérica obrigatória.|
+|alphanumericWithSymbols|3 |Alfanumérica com símbolos de senha necessários.|
+|lowSecurityBiometric|4 |Senha com base em Biometria de segurança baixa necessária.|
+|numéricos|5 |Senha numérica obrigatória.|
+|numericComplex|6 |Senha numérica complexa obrigatória.|
+|qualquer|7 |Uma senha ou um padrão é necessário, e qualquer um é aceitável.|
 
 
 

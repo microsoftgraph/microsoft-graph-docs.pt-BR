@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 0475e8b3279278f407ff979fa42cf270ae48192b
-ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30869404"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539698"
 ---
 # <a name="update-outlooktaskfolder"></a>Atualizar outlooktaskfolder
 
@@ -36,7 +36,7 @@ PATCH /users/{id|userPrincipalName}/outlook/taskFolders/{id}
 PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}
 ```
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
-| Nome       | Descrição|
+| Name       | Descrição|
 |:-----------|:-----------|
 | Autorização  | {token} de portador. Obrigatório. |
 
@@ -45,7 +45,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|nome|String|O nome da pasta de tarefas.|
+|name|String|O nome da pasta de tarefas.|
 
 ## <a name="response"></a>Resposta
 

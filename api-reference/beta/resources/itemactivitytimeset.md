@@ -5,11 +5,11 @@ ms.date: 09/14/2017
 title: ItemActivityTimeSet
 localization_priority: Normal
 ms.openlocfilehash: 474d20e08d96294a30029e764d0b01f5b0c6bfcd
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518510"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581583"
 ---
 # <a name="itemactivitytimeset-resource-type"></a>Tipo de recurso ItemActivityTimeSet
 

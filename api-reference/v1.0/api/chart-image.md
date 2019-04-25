@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 0f61866885f0798b9e96f80e22a636fb5f619e34
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27939718"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581682"
 ---
 # <a name="chart-image"></a>Chart: Image
 
@@ -44,7 +44,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 |:---------------|:--------|:----------|
 |height|Int32|A altura desejada da imagem resultante. Opcional.|
 |width|Int32|A largura desejada da imagem resultante. Opcional.|
-|fittingMode|string|O método usado para dimensionar o gráfico para as dimensões especificadas (se a altura e largura são definidas)."  Os valores possíveis são: `Fit`, `FitAndCenter`, `Fill`.|
+|fittingMode|string|O método usado para dimensionar o gráfico para as dimensões especificadas (se a altura e a largura forem definidas). "  Os valores possíveis são: `Fit`, `FitAndCenter`, `Fill`.|
 
 ## <a name="response"></a>Resposta
 
@@ -62,8 +62,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id
 ```
 
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
-<!-- { "blockType": "response", "@odata.type": "Edm.String" } -->
+Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.<!-- { "blockType": "response", "@odata.type": "Edm.String" } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json;odata.metadata=minimal;odata.streaming=true

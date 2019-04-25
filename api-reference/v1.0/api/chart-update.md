@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 03a375e874a06914f5da9039dad58079df1199a8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986317"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32572707"
 ---
 # <a name="update-chart"></a>Atualizar gráfico
 
@@ -39,15 +39,15 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|height|Double|Representa a altura, em pontos, do objeto Chart.|
-|left|Double|A distância, em pontos, da esquerda do gráfico à origem da planilha.|
+|height|double|Representa a altura, em pontos, do objeto Chart.|
+|left|double|A distância, em pontos, da esquerda do gráfico à origem da planilha.|
 |name|string|Representa o nome de um objeto Chart.|
-|top|Double|Representa a distância, em pontos, da borda superior do objeto à parte superior da primeira linha de uma planilha ou da área de um gráfico.|
+|top|duplo|Representa a distância, em pontos, da borda superior do objeto à parte superior da primeira linha de uma planilha ou da área de um gráfico.|
 |width|Double|Representa a largura, em pontos, do objeto de gráfico.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto de [WorkbookChart](../resources/chart.md) atualizado no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [WorkbookChart](../resources/chart.md) atualizado no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

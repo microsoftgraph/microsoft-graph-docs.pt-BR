@@ -1,19 +1,19 @@
 ---
-title: Get plannerBucketTaskBoardTaskFormat
-description: Recupere as propriedades e os relacionamentos do objeto **plannerBucketTaskBoardTaskFormat**.
+title: Obter plannerBucketTaskBoardTaskFormat
+description: Recupere as propriedades e os relacionamentos do objeto **plannerBucketTaskBoardTaskFormat** .
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: e713786f75e883e58a861256b599089380752af5
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27963504"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562010"
 ---
-# <a name="get-plannerbuckettaskboardtaskformat"></a>Get plannerBucketTaskBoardTaskFormat
+# <a name="get-plannerbuckettaskboardtaskformat"></a>Obter plannerBucketTaskBoardTaskFormat
 
-Recupere as propriedades e os relacionamentos do objeto **plannerBucketTaskBoardTaskFormat**.
+Recupere as propriedades e os relacionamentos do objeto **plannerBucketTaskBoardTaskFormat** .
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -39,9 +39,9 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [plannerBucketTaskBoardTaskFormat](../resources/plannerbuckettaskboardtaskformat.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [plannerBucketTaskBoardTaskFormat](../resources/plannerbuckettaskboardtaskformat.md) no corpo da resposta.
 
-Este método pode retornar qualquer um dos [códigos de status de HTTP](/graph/errors). Os erros mais comuns que os aplicativos devem tratar para esse método são as respostas 403 e 404. Saiba mais sobre esses erros em [Condições de erro comuns do Planner](../resources/planner-overview.md#common-planner-error-conditions).
+Este método pode retornar qualquer um dos [códigos de status http](/graph/errors). Os erros mais comuns que os aplicativos devem lidar com esse método são as respostas 403 e 404. Para obter mais informações sobre esses erros, confira [condições de erro do planejador comum](../resources/planner-overview.md#common-planner-error-conditions).
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação

@@ -5,11 +5,11 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: a1eaeac682f511bf9b895e06e6a19b3bc728a38c
-ms.sourcegitcommit: e6168b868660ad0078d460424d4e6f987d2684a8
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31026007"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544355"
 ---
 # <a name="list-contacts"></a>Listar contatos
 
@@ -17,10 +17,10 @@ ms.locfileid: "31026007"
 
 Obter contatos na caixa de correio do usuário.
 
-Há dois cenários em que um aplicativo pode obter contatos na pasta de contatos de outro usuário:
+Há duas situações em que um aplicativo pode obter contatos na pasta de contatos de outro usuário:
 
-* Se o aplicativo tem permissões de aplicativo ou
-* Se o aplicativo tiver as [permissões](#permissions) delegadas apropriadas de um usuário, e outro usuário tiver compartilhado uma pasta de contatos com esse usuário, ou, o terá acesso delegado a esse usuário. Confira os [detalhes e um exemplo](/graph/outlook-get-shared-contacts-folders).
+* Se o aplicativo tiver permissões de aplicativo ou
+* Se o aplicativo tiver as [permissões](#permissions) delegadas apropriadas de um usuário, e outro usuário tiver compartilhado uma pasta de contatos com esse usuário, ou tiver concedido acesso delegado a esse usuário. Confira [detalhes e um exemplo](/graph/outlook-get-shared-contacts-folders).
 
 
 ## <a name="permissions"></a>Permissões
@@ -53,16 +53,16 @@ GET /me/contactFolder/{id}/childFolders/{id}/.../contacts
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Você pode usar o `$filter` parâmetro de consulta para filtrar os contatos com base em seus endereços de email:
+Você pode usar o `$filter`parâmetro de consulta para filtrar contatos com base em seus endereços de email:
 
 <!-- { "blockType": "ignored" } -->
 ``` http
 GET https://graph.microsoft.com/beta/me/contacts?$filter=emailAddresses/any(a:a/address eq 'garth@contoso.com')
 ```
 
-Observe que você pode usar `$filter`, `any`e o `eq` operador somente na subpropriedade **Address** de instâncias em uma coleção EmailAddresses **** . Ou seja, você não pode filtrar o **nome** ou qualquer outra subpropriedade de uma instância de **EmailAddresses**, nem pode aplicar qualquer outro operador ou função com `filter`, como `ne`, `le`e. `startswith()`
+Observe que você pode usar `$filter`, `any`, e o `eq` operador apenas na subpropriedade de **endereço** das instâncias em uma coleção **emailAddresses**. Ou seja, você não pode filtrar o **nome** ou qualquer outra subpropriedade de uma instância de **emailAddresses**, nem pode aplicar qualquer outro operador ou função com `filter`, como `ne`, `le` e `startswith()`.
 
-Para obter informações gerais sobre `$filter` o parâmetro de consulta, confira [parâmetros de consulta OData](/graph/query-parameters).
+Para obter informações gerais sobre o `$filter`parâmetro de consulta, acesse [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |

@@ -1,18 +1,18 @@
 ---
 title: Excluir uma atividade
-description: Exclua uma atividade do usuário existente para seu aplicativo.
+description: Excluir uma atividade de usuário existente para seu aplicativo.
 localization_priority: Normal
 ms.prod: project-rome
 ms.openlocfilehash: cbe12a373f06c2893a5ca202247865f4ce4a8f52
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27966850"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32574198"
 ---
 # <a name="delete-an-activity"></a>Excluir uma atividade
 
-Exclua uma atividade do usuário existente para seu aplicativo.
+Excluir uma atividade de usuário existente para seu aplicativo.
 
 ## <a name="permissions"></a>Permissões
 
@@ -41,11 +41,11 @@ DELETE /me/activities/{id}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-Nenhum corpo da solicitação.
+Nenhum corpo de solicitação.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará o `204 No Content` código de resposta se a atividade foi excluída.
+Se tiver êxito, este método retornará `204 No Content` o código de resposta se a atividade tiver sido excluída.
 
 ## <a name="example"></a>Exemplo
 

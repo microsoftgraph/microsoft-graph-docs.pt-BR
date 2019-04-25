@@ -5,21 +5,19 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 ms.openlocfilehash: 9b8a48de889a0db5c6eea42fcbd64cae4ff23a43
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640809"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539965"
 ---
 # <a name="create-page"></a>Criar página
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Crie uma nova página do OneNote na seção padrão do bloco de anotações padrão.
 
-Para criar uma página em outra seção no bloco de anotações padrão, use o parâmetro de consulta `sectionName`.  Exemplo: `../onenote/pages?sectionName=My%20section`
+Para criar uma página em uma seção diferente no bloco de anotações padrão, você pode usar `sectionName` o parâmetro de consulta.  Exemplo: `../onenote/pages?sectionName=My%20section`
 
-O operação `POST /onenote/pages` só é usada para criar páginas no bloco de anotações atual do usuário padrão. Se estiver direcionando para outros blocos de anotações, você pode [criar páginas em uma seção especificada](../api/section-post-pages.md).           
+A `POST /onenote/pages` operação é usada apenas para criar páginas no bloco de anotações padrão do usuário atual. Se você estiver direcionando outros blocos de anotações, poderá [criar páginas em uma seção especificada](../api/section-post-pages.md).           
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -52,17 +50,17 @@ O corpo pode conter HTML colocado diretamente no corpo da solicitação ou pode 
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o código de resposta `201 Created` e o novo objeto [page](../resources/page.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201 Created` um código de resposta e o novo objeto [Page](../resources/page.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 
-No caminho `../onenote/pages`, você pode usar o parâmetro de consulta `sectionName` para criar uma página em uma seção específica no bloco de anotações padrão. Exemplo: `../onenote/pages?sectionName=My%20section`. Se a seção não existir (ou tiver sido renomeada), a API criará uma nova seção.
+No `../onenote/pages` caminho, você pode usar o `sectionName` parâmetro de consulta para criar uma página em uma seção específica no bloco de anotações padrão. Exemplo: `../onenote/pages?sectionName=My%20section`. Se a seção não existir (ou tiver sido renomeada), a API criará uma nova seção.
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST https://graph.microsoft.com/beta/me/onenote/pages
+POST https://graph.microsoft.com/v1.0/me/onenote/pages
 Content-length: 312
 Content-type: multipart/form-data; boundary=MyPartBoundary198374
 
@@ -101,8 +99,7 @@ Content-Type:application/pdf
 --MyPartBoundary198374--
 ```
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: No objeto response mostrado aqui é truncado para fins de concisão. Todas as propriedades serão retornadas de uma chamada real.
-<!-- { "blockType": "ignored" } -->
+Veja a seguir um exemplo da resposta. Observação: O objeto response mostrado aqui está truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.<!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -127,15 +124,10 @@ Content-length: 312
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Create Page",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/onenote-post-pages.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

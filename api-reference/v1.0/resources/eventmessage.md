@@ -5,11 +5,11 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: e6effa3f97b0625786ec999f1b478c3dd8530f52
-ms.sourcegitcommit: 159cf5aaa39d3721d96d3fd800f6a8b91159f74d
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30379518"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575776"
 ---
 # <a name="eventmessage-resource-type"></a>Tipo de recurso eventMessage
 
@@ -29,11 +29,11 @@ Além de uma solicitação de reunião, uma instância do **eventMessage** pode 
 |:---------------|:--------|:----------|
 |[Get eventMessage](../api/eventmessage-get.md) | [eventMessage](eventmessage.md) |Ler propriedades e relações do objeto eventMessage.|
 |[Update](../api/eventmessage-update.md) | [eventMessage](eventmessage.md)  |Atualizar o objeto eventMessage. |
-|[Delete](../api/message-delete.md) | Nenhuma |Excluir o objeto eventMessage. |
-|[copy](../api/message-copy.md)|[message](message.md)|Copiar uma mensagem para uma pasta.|
-|[createForward](../api/message-createforward.md)|[message](message.md)|Criar um rascunho da mensagem de encaminhamento. Em seguida, você pode [atualizar](../api/message-update.md) ou [enviar](../api/message-send.md) esse rascunho.|
-|[createReply](../api/message-createreply.md)|[message](message.md)|Criar um rascunho da mensagem de resposta. Em seguida, você pode [atualizar](../api/message-update.md) ou [enviar](../api/message-send.md) esse rascunho.|
-|[createReplyAll](../api/message-createreplyall.md)|[message](message.md)|Criar um rascunho da mensagem Responder a Todos. Em seguida, você pode [atualizar](../api/message-update.md) ou [enviar](../api/message-send.md) esse rascunho.|
+|[Excluir](../api/message-delete.md) | None |Excluir o objeto eventMessage. |
+|[copy](../api/message-copy.md)|[mensagem](message.md)|Copiar uma mensagem para uma pasta.|
+|[createForward](../api/message-createforward.md)|[mensagem](message.md)|Criar um rascunho da mensagem de encaminhamento. Em seguida, você pode [atualizar](../api/message-update.md) ou [enviar](../api/message-send.md) esse rascunho.|
+|[createReply](../api/message-createreply.md)|[mensagem](message.md)|Criar um rascunho da mensagem de resposta. Em seguida, você pode [atualizar](../api/message-update.md) ou [enviar](../api/message-send.md) esse rascunho.|
+|[createReplyAll](../api/message-createreplyall.md)|[mensagem](message.md)|Criar um rascunho da mensagem Responder a Todos. Em seguida, você pode [atualizar](../api/message-update.md) ou [enviar](../api/message-send.md) esse rascunho.|
 |[forward](../api/message-forward.md)|Nenhum|Encaminhar uma mensagem. A mensagem é então salva na pasta Itens Enviados.|
 |[move](../api/message-move.md)|[message](message.md)|Mover uma mensagem para uma pasta. Isso cria uma nova cópia da mensagem na pasta de destino.|
 |[reply](../api/message-reply.md)|Nenhum|Responder ao remetente de uma mensagem. A mensagem é então salva na pasta Itens Enviados.|
@@ -57,21 +57,21 @@ Além de uma solicitação de reunião, uma instância do **eventMessage** pode 
 |bccRecipients|Coleção [recipient](recipient.md)|Os destinatários Cco: da mensagem.|
 |body|[itemBody](itembody.md)|O corpo da mensagem. Pode estar no formato HTML ou no formato de texto.|
 |bodyPreview|String|Os primeiros 255 caracteres do corpo da mensagem. Está no formato de texto.|
-|categories|Coleção de cadeias de caracteres|As categorias associadas à mensagem.|
+|categories|String collection|As categorias associadas à mensagem.|
 |ccRecipients|Coleção [recipient](recipient.md)|Os destinatários Cc: da mensagem.|
 |changeKey|String|A versão da mensagem.|
-|conversationId|Cadeia de caracteres|A ID da conversa à qual o email pertence.|
+|conversationId|String|A ID da conversa à qual o email pertence.|
 |createdDateTime|DateTimeOffset|A data e a hora em que a mensagem foi criada.|
 |flag|[followupFlag](followupflag.md)|O valor do sinalizador que indica o status, a data de início, a data de conclusão ou a data de finalização da mensagem.|
 |from|[recipient](recipient.md)|O proprietário da caixa de correio e o remetente da mensagem.|
-|hasAttachments|Boolean|Indica se a mensagem tem anexos.|
+|hasAttachments|Booliano|Indica se a mensagem tem anexos.|
 |id|String|Identificador exclusivo da mensagem de evento (Observe que esse valor pode ser alterado se uma mensagem for movida ou alterada)|
-|importance|String| A importância da mensagem: `low`, `normal`, `high`.|
+|importance|Cadeia de caracteres| A importância da mensagem: `low`, `normal`, `high`.|
 |inferenceClassification|String| Os valores possíveis são: `focused`, `other`.|
 |internetMessageHeaders | Coleção [internetMessageHeader](internetmessageheader.md) | A coleção de cabeçalhos da mensagem, definida por [RFC5322](https://www.ietf.org/rfc/rfc5322.txt), que fornece detalhes do caminho de rede adotado por uma mensagem do remetente para o destinatário. Somente leitura.|
 |internetMessageId |String |A ID da mensagem no formato especificado por [RFC2822](https://www.ietf.org/rfc/rfc2822.txt). |
-|isDeliveryReceiptRequested|Boolean|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
-|isDraft|Booliano|Indica se a mensagem é um rascunho. Uma mensagem é um rascunho quando ela ainda não foi enviada.|
+|isDeliveryReceiptRequested|Booliano|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
+|isDraft|Boolean|Indica se a mensagem é um rascunho. Uma mensagem é um rascunho quando ela ainda não foi enviada.|
 |isRead|Boolean|Indica se a mensagem foi lida.|
 |isReadReceiptRequested|Boolean|Indica se uma confirmação de leitura foi solicitada para a mensagem.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a mensagem foi alterada pela última vez.|
@@ -81,7 +81,7 @@ Além de uma solicitação de reunião, uma instância do **eventMessage** pode 
 |replyTo|Coleção [recipient](recipient.md)|Os endereços de email a serem usados ao responder.|
 |sender|[recipient](recipient.md)|A conta que é realmente usada para gerar a mensagem.|
 |sentDateTime|DateTimeOffset|A data e a hora em que a mensagem foi enviada.|
-|subject|Cadeia de caracteres|O assunto da mensagem.|
+|subject|String|O assunto da mensagem.|
 |toRecipients|Coleção [recipient](recipient.md)|Os destinatários Para: da mensagem.|
 |uniqueBody|[itemBody](itembody.md)|A parte do corpo da mensagem que é exclusiva para a mensagem atual.|
 |webLink|String|A URL para abrir a mensagem no Outlook Web App.<br><br>Você pode acrescentar um argumento ispopout ao final da URL para alterar como a mensagem é exibida. Se ispopout não houver presente ou estiver definido como 1, a mensagem será mostrada em uma janela pop-up. Se ispopout estiver definido como 0, o navegador mostrará a mensagem no painel de revisão do Outlook Web App.<br><br>A mensagem será aberta no navegador se você estiver conectado à sua caixa de correio por meio do Outlook Web App. Você será solicitado a fazer logon se ainda não estiver conectado no navegador.<br><br>Essa URL pode ser acessada de um iFrame.|

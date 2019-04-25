@@ -1,46 +1,46 @@
 ---
-title: tipo de recurso de audioRoutingGroup
-description: O grupo de roteamento áudio armazena uma rota de áudio privada entre os participantes em uma conversa com vários participantes. Fonte é o participante propriamente dito e os receptores são um subconjunto dos outros participantes da conversa com vários participantes.
+title: tipo de recurso audioRoutingGroup
+description: O grupo de roteamento de áudio armazena uma rota de áudio privada entre os participantes de uma conversa de várias partes. Source é o próprio participante e os receptores são um subconjunto de outros participantes da conversa de vários participantes.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: e7fc7de5b5caaa2f4079c453f9cd855a42577cb8
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643168"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543998"
 ---
-# <a name="audioroutinggroup-resource-type"></a>tipo de recurso de audioRoutingGroup
+# <a name="audioroutinggroup-resource-type"></a>tipo de recurso audioRoutingGroup
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O grupo de roteamento áudio armazena uma rota de áudio privada entre os participantes em uma conversa com vários participantes. Fonte é o participante propriamente dito e os receptores são um subconjunto dos outros participantes da conversa com vários participantes.
+O grupo de roteamento de áudio armazena uma rota de áudio privada entre os participantes de uma conversa de várias partes. Source é o próprio participante e os receptores são um subconjunto de outros participantes da conversa de vários participantes.
 
-> **Observação:** [ConfigureMixer](../api/participant-configuremixer.md) não envolvem quaisquer rotas, é para toda a chamada para definir os níveis de volume para combinações de receptor de origem.
+> **Observação:** O [ConfigureMixer](../api/participant-configuremixer.md) não envolve nenhuma rota, é para toda a chamada para definir os níveis de volume para combinações de receptor de origem.
 
 ## <a name="methods"></a>Métodos
 
 | Método                                                  | Tipo de retorno                               | Descrição                                  |
 |:--------------------------------------------------------|:------------------------------------------|:---------------------------------------------|
 | [Obter audioRoutingGroup](../api/audioroutinggroup-get.md)| [audioRoutingGroup](audioroutinggroup.md) | Leia as propriedades e os relacionamentos do objeto audioRoutingGroup.|
-| [Update](../api/audioroutinggroup-update.md)            | [audioRoutingGroup](audioroutinggroup.md) | Lista de receptores de atualização.                       |
-| [Delete](../api/audioroutinggroup-delete.md)            | Nenhum                                      | Exclua o grupo de roteamento de áudio.              |
+| [Update](../api/audioroutinggroup-update.md)            | [audioRoutingGroup](audioroutinggroup.md) | Atualizar lista de receptores.                       |
+| [Excluir](../api/audioroutinggroup-delete.md)            | None                                      | Exclua o grupo roteamento de áudio.              |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade      | Tipo              | Descrição                                                          |
 | :----------   | :---------------- | :--------------------------------------------------------------------|
 | id            | String            | Somente leitura. Servidor gerado.                                         |
-| receptores     | String Collection | Lista de recebimento de ids de participante.                                   |
-| routingMode   | String            | Modo de grupo de roteamento.  Os valores possíveis são: `oneToOne` e `multicast`.   |
-| sources       | String Collection | Lista de ids de participante de origem.                                      |
+| receptores     | String Collection | Lista de IDs de participantes de recebimento.                                   |
+| routingmode   | String            | Modo de grupo de roteamento.  Os valores possíveis são: `oneToOne` e `multicast`.   |
+| fontes       | String Collection | Lista de IDs de participantes de origem.                                      |
 
-> **Observação:** Modo de roteamento determina as restrições nas fontes e receptores. Há suporte para os seguintes grupos de roteamento.
-> - `oneToOne`-fontes e receptores possuem apenas um participante.
-> - `multicast`-fonte com um participante, mas há vários receptores. Lista de receptores pode ser atualizada.
+> **Observação:** O modo de roteamento determina as restrições nas fontes e nos receptores. Só há suporte para os seguintes grupos de roteamento.
+> - `oneToOne`– fontes e receptores têm apenas um participante a cada.
+> - `multicast`-a fonte tem um participante, mas há vários receptores. A lista de receptores pode ser atualizada.
 
-> **Observação:** Se você criar vários grupos de roteamento áudio (por exemplo, um bot de cada participante), somente o áudio de superior 4 dominantes alto-falantes será encaminhado. Isso significa que mesmo com o grupo de roteamento personalizados áudio, se o alto-falante não está alto o suficiente no Misturador de principal, ele/ela não possa ser ouvido pelo bot, mesmo se não houver um grupo de áudio privado apenas para este alto-falante e o bot.
+> **Observação:** Se você criar muitos grupos de roteamento de áudio (por exemplo, um bot por participante), apenas o áudio dos quatro alto-falantes mais dominantes será encaminhado. Isso significa mesmo com o grupo de roteamento de áudio personalizado, se o alto-falante não estiver suficientemente alto no mixer principal, ele/ela não poderá ser ouvido pelo bot, mesmo se houver um grupo de áudio privado apenas para esse alto-falante e o bot.
 
 ## <a name="relationships"></a>Relações
 Nenhum

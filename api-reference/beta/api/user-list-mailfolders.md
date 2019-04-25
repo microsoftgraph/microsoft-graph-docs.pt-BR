@@ -5,11 +5,11 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 64b96620d30188c720beaae4875712b1dc8d8e37
-ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30869292"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544290"
 ---
 # <a name="list-mailfolders"></a>Listar mailFolders
 
@@ -45,7 +45,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [MailFolder](../resources/mailfolder.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [MailFolder](../resources/mailfolder.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

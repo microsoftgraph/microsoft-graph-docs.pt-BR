@@ -3,11 +3,11 @@ title: Atualizar inferenceclassificationoverride
 description: 'Altere o campo **classifyAs** de uma substituição conforme especificado. '
 localization_priority: Normal
 ms.openlocfilehash: fdd11e6c3d3f4fb72d9f94226e8cb3d35dde2c03
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843971"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32577571"
 ---
 # <a name="update-inferenceclassificationoverride"></a>Atualizar inferenceclassificationoverride
 
@@ -46,11 +46,11 @@ No corpo da solicitação, forneça o novo valor para **classifyAs**. Para obter
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|classifyAs|string| Especifica como mensagens recebidas de uma determinada remetente deve sempre ser classificada como. Os valores possíveis são: `focused`, `other`.|
+|classifyAs|cadeia de caracteres| Representa como classificar as mensagens recebidas de um remetente específico. Os valores possíveis são: `focused`, `other`.|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) atualizado no corpo da resposta.
+Se for bem-sucedido, este método retornará um código de resposta `200 OK` e o objeto [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) atualizado no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 O exemplo a seguir altera a substituição para o endereço SMTP randiw@adatum.onmicrosoft.com de `other` para `focused`.

@@ -4,12 +4,12 @@ description: Obtenha uma lista de instâncias recentNotebook que tenham sido ace
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 31f95d8e94ef22c6b0cbea1cbb5ff8b98c58d187
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: a911776e76c608576a3e86364970c7eb06c7f27e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27931668"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562185"
 ---
 # <a name="notebook-getrecentnotebooks"></a>notebook: getRecentNotebooks
 
@@ -32,7 +32,7 @@ GET /me/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks=includePer
 GET /users/{id | userPrincipalName}/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks=includePersonalNotebooks-value)
 ```
 
-O `<id | userPrincipalName>` para o usuário deve corresponder ao usuário codificado no token de autorização usado para fazer a solicitação.
+O `{id | userPrincipalName}` para o usuário deve corresponder ao usuário codificado no token de autorização usado para fazer a solicitação.
 
 ## <a name="function-parameters"></a>Parâmetros de função
 
@@ -43,7 +43,7 @@ O `<id | userPrincipalName>` para o usuário deve corresponder ao usuário codif
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
-| Autorização  | Portador {código}|
+| Authorization  | Portador {código}|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.

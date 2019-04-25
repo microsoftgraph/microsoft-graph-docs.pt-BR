@@ -1,15 +1,15 @@
 ---
 title: Adicionar anexo
-description: Use essa API para adicionar um anexo a uma publicação. Desde daí
+description: Use esta API para adicionar um attachment a uma postagem. Como não há
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: b2b1c619e40fa915b079f97a6efb444981b28709
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27949630"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32576287"
 ---
 # <a name="add-attachment"></a>Adicionar anexo
 
@@ -33,7 +33,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Aplicativo | Group.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
-<!-- { "blockType": "ignored" } -->Anexos de uma [postagem](../resources/post.md) em um [segmento](../resources/conversationthread.md) pertencente a uma [conversa](../resources/conversation.md) de um grupo.
+<!-- { "blockType": "ignored" } -->
+Anexos de uma [post](../resources/post.md) em um [thread](../resources/conversationthread.md) que pertence a uma [conversation](../resources/conversation.md) de um grupo.
 ```http
 POST /groups/{id}/threads/{id}/posts/{id}/attachments
 POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments

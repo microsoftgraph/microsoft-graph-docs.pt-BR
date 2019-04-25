@@ -1,38 +1,38 @@
 ---
-title: tipo de recurso do programa
-description: 'No Windows Azure AD access analisa o recurso, um programa é um contêiner, mantendo os controles de programa. Um locatário pode ter um ou mais programas.  Cada controle vincula uma revisão de acesso a um programa, para torná-la mais fáceis de localizar relacionados access analisa.  '
+title: tipo de recurso de programa
+description: 'No recurso de revisões do Azure AD Access, um programa é um contêiner, contendo controles de programa. Um locatário pode ter um ou mais programas.  Cada controle vincula uma revisão do Access a um programa, para facilitar a localização de revisões relacionadas do Access.  '
 localization_priority: Normal
 ms.openlocfilehash: 2498279f27f5859eadcfa1d70662e3d8f3b5246c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515185"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563369"
 ---
-# <a name="program-resource-type"></a>tipo de recurso do programa
+# <a name="program-resource-type"></a>tipo de recurso de programa
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-No recurso de [acesso analisa](accessreviews-root.md) Azure AD, um programa é um contêiner, mantendo os controles de programa. Um locatário pode ter um ou mais programas.  Cada controle vincula uma revisão de acesso a um programa, para torná-la mais fáceis de localizar relacionados access analisa.  
+No recurso de revisões do Azure AD [Access](accessreviews-root.md) , um programa é um contêiner, contendo controles de programa. Um locatário pode ter um ou mais programas.  Cada controle vincula uma revisão do Access a um programa, para facilitar a localização de revisões relacionadas do Access.  
 
-Cada locatário que tem em-hospedados Azure AD avaliações de acesso tem um programa, `Default program`.  Um administrador global pode criar programas adicionais, por exemplo representar as iniciativas de conformidade. 
+Cada locatário que tem revisões de acesso do Azure AD integradas tem um programa, `Default program`.  Um administrador global pode criar programas adicionais, por exemplo, para representar iniciativas de conformidade. 
 
 
 ## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Criação de programa](../api/program-create.md) |   [programa](program.md)   |   Crie um novo programa.|
-|[Excluir programa](../api/program-delete.md) |   Nenhum.   |   Exclua um programa.|
-|[Lista de programas](../api/program-list.md) |  coleção de [programa](program.md)|   Obtenha uma coleção de todos os programas.|
-|[Lista programControls de um programa](../api/program-listcontrols.md) |      coleção [programControl](programcontrol.md)| Obter uma coleção dos controles de um programa.|
-|[Programa de atualização](../api/program-update.md) |   [programa](program.md)|  Atualize um programa.|
+|[Criar programa](../api/program-create.md) |   [programa](program.md)   |   Criar um novo programa.|
+|[Excluir programa](../api/program-delete.md) |   Nenhum.   |   Excluir um programa.|
+|[Listar programas](../api/program-list.md) |  coleção [Program](program.md)|   Obtenha uma coleção de todos os programas.|
+|[Listar programControls de um programa](../api/program-listcontrols.md) |      coleção [programControl](programcontrol.md)| Obter uma coleção de controles de um programa.|
+|[Programa de atualização](../api/program-update.md) |   [programa](program.md)|  Atualizar um programa.|
 
 ## <a name="permissions"></a>Permissões
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | ProgramControl.Read.All, ProgramControl.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante)     | ProgramControl. Read. All, ProgramControl. ReadWrite. All |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | Sem suporte. |
 
@@ -40,14 +40,14 @@ Cada locatário que tem em-hospedados Azure AD avaliações de acesso tem um pro
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| `id`                        |`String`                              |  O identificador atribuído pelo recurso do programa.                    |
-| `displayName`               |`String`                              |  O nome do programa.  Necessários na criação.                  |
+| `id`                        |`String`                              |  O identificador do programa atribuído ao recurso.                    |
+| `displayName`               |`String`                              |  O nome do programa.  Obrigatório ao criar.                  |
 | `description`               |`String`                              |  A descrição do programa.           |
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| `controls`                  |[programControl](programcontrol.md) | Controles associados com o programa. |
+| `controls`                  |[programControl](programcontrol.md) | Controles associados ao programa. |
 
 ## <a name="json-representation"></a>Representação JSON
 

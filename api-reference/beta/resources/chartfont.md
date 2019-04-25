@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: c507a966dc6b29e46935c5c77a85b557a84cc69c
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641166"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543714"
 ---
 # <a name="chartfont-resource-type"></a>Tipo de recurso ChartFont
 

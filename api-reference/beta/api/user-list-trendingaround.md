@@ -1,23 +1,23 @@
 ---
-title: Lista trendingAround
-description: Percepção calculada que retorna a lista de itens de tendências em torno de um usuário.
+title: Listar trendingAround
+description: Informações calculadas que retornam a lista de itens que se referem a um usuário.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 625ae9d66ce1b891ebdba3209d92bd0e88b06a94
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507625"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544201"
 ---
-# <a name="list-trendingaround"></a>Lista trendingAround
+# <a name="list-trendingaround"></a>Listar trendingAround
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Percepção calculada que retorna a lista de itens de tendências em torno de um usuário.
+Informações calculadas que retornam a lista de itens que se referem a um usuário.
 
-**Observação:** Essa API será preterida e substituída pela [API de tendências](../resources/insights-trending.md).
+**Observação:** Essa API será preterida e substituída pela [API de tendência](../resources/insights-trending.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -49,7 +49,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, esse método retorna um código de resposta Okey 200 e a coleção de objetos [driveItem](../resources/driveitem.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um código de resposta de OK 200 e uma coleção de objetos [driveItem](../resources/driveitem.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação

@@ -1,26 +1,26 @@
-# <a name="datapolicyoperation-resource-type"></a>tipo de recurso de dataPolicyOperation
+# <a name="datapolicyoperation-resource-type"></a>tipo de recurso dataPolicyOperation
 
-Representa uma operação de diretiva de dados enviados. Ele contém as informações necessárias para rastrear o status de uma operação. Por exemplo, um administrador da empresa pode enviar uma solicitação de operação de política de dados para exportar os dados da empresa de um funcionário e, em seguida, rastrear mais tarde que a solicitação.
+Representa uma operação de política de dados enviada. Ele contém informações necessárias para controlar o status de uma operação. Por exemplo, um administrador da empresa pode enviar uma solicitação de operação de política de dados para exportar os dados da empresa de um funcionário e, posteriormente, rastrear essa solicitação.
 
 ## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Obter dataPolicyOperation](../api/datapolicyoperation-get.md) | [dataPolicyOperation](datapolicyoperation.md) |Recupere as propriedades do objeto **dataPolicyOperation** .|
-|[Exportar dados pessoais](../api/user-exportpersonaldata.md) | Nenhum |Enviar uma solicitação de operação de política de dados para exportar os dados do usuário organizacionais que posteriormente podem ser lidos com [obter dataPolicyOperation](../api/datapolicyoperation-get.md)|
+|[Exportar dados pessoais](../api/user-exportpersonaldata.md) | Nenhum |Enviar uma solicitação de operação de política de dados para exportar dados do usuário organizacional que podem ser lidas novamente usando [Get dataPolicyOperation](../api/datapolicyoperation-get.md)|
 
 ## <a name="properties"></a>Propriedades
 
-> **Observação:** Todas as propriedades desse recurso são somente leitura.
+> **Observação:** Todas as propriedades deste recurso são somente leitura.
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|completedDateTime|DateTimeOffset|Representa quando a solicitação para esta operação de política de dados foi concluída, em tempo de UTC, usando o formato ISO 8601. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Nulo até que a operação seja concluída.|
-|id|String| Chave exclusiva para essa operação. |
-|status|string| Os valores possíveis são: `notStarted`, `running`, `complete`, `failed`, `unknownFutureValue`.|
-|storageLocation|String|O local da URL para onde os dados está sendo exportados para solicitações de exportação.|
-|userId|String|A identificação do usuário no qual a operação é executada.|
-|submittedDateTime|DateTimeOffset|Representa quando a solicitação para esta operação de dados foi enviada, em tempo de UTC, usando o formato ISO 8601. Por exemplo, meia-noite em UTC no dia 1° de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
+|completedDateTime|DateTimeOffset|Representa quando a solicitação para esta operação de política de dados foi concluída, em horário UTC, usando o formato ISO 8601. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Nulo até que a operação seja concluída.|
+|id|Cadeia de caracteres| Chave exclusiva para esta operação. |
+|status|cadeia de caracteres| Os valores possíveis são: `notStarted`, `running`, `complete`, `failed`, `unknownFutureValue`.|
+|storageLocation|String|O local da URL para o qual os dados estão sendo exportados para solicitações de exportação.|
+|userId|String|A ID do usuário em que a operação é executada.|
+|submittedDateTime|DateTimeOffset|Representa quando a solicitação para esta operação de dados foi enviada, em horário UTC, usando o formato ISO 8601. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |progresso|String|Especifica o progresso de uma operação.|
 
 ## <a name="relationships"></a>Relações

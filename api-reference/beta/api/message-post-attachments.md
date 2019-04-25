@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 56693a04d6f0579d043b4d745fe53ae61536b82e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510089"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540461"
 ---
 # <a name="add-attachment"></a>Adicionar anexo
 
@@ -25,7 +25,7 @@ Um anexo pode ser de um dos seguintes tipos:
 
 Todos esses tipos de recursos de anexo são derivados do recurso [attachment](../resources/attachment.md). 
 
-Você pode adicionar um anexo a uma mensagem existente pelo lançamento em sua coleção de anexos ou a uma nova mensagem que está sendo [escreveu](../api/user-post-messages.md)ou [criado e enviado dinamicamente](../api/user-sendmail.md).
+Você pode adicionar um anexo a uma mensagem existente postando na coleção Attachments ou em uma nova mensagem que está sendo [rascunho](../api/user-post-messages.md), ou [criada e enviada em tempo real](../api/user-sendmail.md).
 
 Como atualmente há um limite de 4 MB para o tamanho total de cada solicitação REST, isso limita o tamanho do anexo que você pode adicionar a 4 MB.
 ## <a name="permissions"></a>Permissões
@@ -38,7 +38,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Aplicativo | Mail.ReadWrite |
 
 ## <a name="http-request"></a>Solicitação HTTP
-<!-- { "blockType": "ignored" } -->Anexos de uma [mensagem](../resources/message.md) na caixa de correio do usuário.
+<!-- { "blockType": "ignored" } -->
+Anexos de uma [message](../resources/message.md) em uma caixa de correio de usuário.
 ```http
 POST /me/messages/{id}/attachments
 POST /users/{id | userPrincipalName}/messages/{id}/attachments
@@ -64,7 +65,7 @@ No corpo da solicitação, forneça uma representação JSON do objeto [Attachme
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` código de resposta e o objeto de [anexo](../resources/attachment.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `201 Created` o código de resposta e o objeto [Attachment](../resources/attachment.md) no corpo da resposta.
 
 ## <a name="example-file-attachment"></a>Exemplo (anexo de arquivo)
 
@@ -174,7 +175,7 @@ Content-length: 162
 ## <a name="example-reference-attachment"></a>Exemplo (anexo de referência)
 
 ##### <a name="request"></a>Solicitação
-Aqui está um exemplo de uma solicitação que adiciona um anexo de referência a uma mensagem existente.
+Veja um exemplo de uma solicitação que adiciona um anexo de referência a uma mensagem existente.
 O anexo aponta para uma pasta no OneDrive.
 <!-- {
   "blockType": "request",
@@ -198,7 +199,7 @@ Content-length: 319
 ```
 
 ##### <a name="response"></a>Resposta
-Aqui está um exemplo de uma resposta completa.
+Veja um exemplo de resposta completa.
 <!-- {
   "blockType": "response",
   "truncated": true,

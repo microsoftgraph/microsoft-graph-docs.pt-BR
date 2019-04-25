@@ -1,27 +1,27 @@
 ---
 title: Relatório de atividades do SharePoint
-description: Você pode obter a atividade de todos os usuários licenciados para usar o SharePoint examinando sua interação com os arquivos. Você também pode observar o nível de colaboração em andamento com base no número de arquivos compartilhados.
+description: Você pode obter a atividade de cada usuário licenciado para usar o SharePoint examinando sua interação com os arquivos. Você também pode observar o nível de colaboração em andamento com base no número de arquivos compartilhados.
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: 98d0393545963a73852197f5bd78241cfb958a22
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577113"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32584087"
 ---
 # <a name="sharepoint-activity-reports"></a>Relatório de atividades do SharePoint
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Você pode obter a atividade de todos os usuários licenciados para usar o SharePoint examinando sua interação com os arquivos. Você também pode observar o nível de colaboração em andamento com base no número de arquivos compartilhados.
+Você pode obter a atividade de cada usuário licenciado para usar o SharePoint examinando sua interação com os arquivos. Você também pode observar o nível de colaboração em andamento com base no número de arquivos compartilhados.
 
 > **Observação:** para saber mais sobre diferentes visualizações e nomes de relatórios, confira [Relatórios do Office 365 Reports - Atividade do SharePoint](https://support.office.com/client/SharePoint-activity-a91c958f-1279-499d-9959-12f0de08dc8f).
 
 ## <a name="reports"></a>Relatórios
 
-| Função                                 | Tipo de retorno de CSV | Tipo de retorno JSON                         | Descrição                              |
+| Função                                 | Tipo de retorno CSV | Tipo de retorno JSON                         | Descrição                              |
 | :--------------------------------------- | :-------------- | :--------------------------------------- | ---------------------------------------- |
 | [Obter dados de usuário](../api/reportroot-getsharepointactivityuserdetail.md) | Fluxo          | [sharePointActivityUserDetail](../resources/sharepointactivityuserdetail.md) | Obtenha dados sobre as atividades do SharePoint por usuário. |
 | [Obter contagens de arquivo](../api/reportroot-getsharepointactivityfilecounts.md) | Fluxo          | [siteActivitySummary](../resources/siteactivitysummary.md) | Obtenha o número de usuários únicos licenciados que interagiram com arquivos armazenados em sites do SharePoint. |

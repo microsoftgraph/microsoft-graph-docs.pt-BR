@@ -5,11 +5,11 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 54e901751fc404ba2099205c6b16d86c99d9b05f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528463"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540595"
 ---
 # <a name="update-mailsearchfolder"></a>Atualizar mailSearchFolder
 
@@ -45,12 +45,12 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 | displayName | String | O nome de exibição do [mailFolder](../resources/mailfolder.md).|
-| includeNestedFolders | Booliano | Como a hierarquia de pastas de caixa de correio deve ser percorrida. `true`significa que uma profundidade de pesquisa deve ser feito ao `false` significa rasos de pesquisa devem ser feito em vez disso. |
-| sourceFolderIDs | String collection | As pastas de caixa de correio que devem ser extraídas. |
+| includeNestedFolders | Booliano | Como a hierarquia da pasta de caixa de correio deve ser percorrida. `true`significa que uma pesquisa profunda deve ser feita enquanto `false` uma pesquisa superficial deve ser realizada. |
+| sourceFolderIDs | Coleção de cadeias de caracteres | As pastas de caixa de correio que devem ser minadas. |
 | filterQuery | String | A consulta OData para filtrar as mensagens. |
 
 ## <a name="response"></a>Resposta
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [mailFolder](../resources/mailfolder.md) atualizado no corpo da resposta.
+Se bem sucedido, este método retorna um código de resposta `200 OK` e um objeto [mailFolder](../resources/mailfolder.md) atualizado no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 #### <a name="request"></a>Solicitação

@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: 865da0c1e1256e2ba2a25902e37a00da9081eedf
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30366652"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543060"
 ---
 # <a name="employees-resource-type"></a>tipo de recurso Employees
 Representa um funcionário no Dynamics 365 Business central.
@@ -45,7 +45,7 @@ Representa um funcionário no Dynamics 365 Business central.
 |status              |cadeia de caracteres  |Especifica o status do funcionário. Os valores possíveis estão ativos, inativos ou terminados|
 |birthDate           |data    |Especifica a data de nascimento do funcionário.                |
 |Panorama             |stream  |A imagem do funcionário. Somente Leitura.                       |
-|lastModifiedDateTime|DateTime|O último DateTime que o funcionário foi modificado. Somente Leitura.|  
+|lastModifiedDateTime|DateTime|O último DateTime que o funcionário foi modificado. Somente leitura.|  
 
 
 ## <a name="relationships"></a>Relações

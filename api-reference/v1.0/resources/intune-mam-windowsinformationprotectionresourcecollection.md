@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 74d7549f57ecc59f70aa1af4350544ec21b156ec
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30254818"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32574457"
 ---
 # <a name="windowsinformationprotectionresourcecollection-resource-type"></a>Tipo de recurso windowsInformationProtectionResourceCollection
 
@@ -20,7 +20,7 @@ Coleção de recursos da Proteção de Informações do Windows
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|Nome de exibição|
+|displayName|String|Nome de exibição|
 |recursos|String collection|Coleção de recursos|
 
 ## <a name="relationships"></a>Relações

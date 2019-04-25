@@ -1,25 +1,25 @@
 ---
-title: Configurar a sincronização com os atributos de extensão de diretório
-description: 'Você pode personalizar seu esquema de sincronização para incluir os atributos de extensão de diretório do Windows Azure Active Directory (AD Azure). Este artigo descreve como usar um atributo de extensão de diretório (**extension_9d98asdfl15980a_Nickname**) para preencher o valor da User.CommunityNickname em equipe de vendas. Neste cenário, você tem Connect do Azure AD configurado para provisionar um número de atributos de extensão do diretório do Windows Server Active Directory local para o Windows Azure AD. '
+title: Configurar a sincronização com atributos de extensão de diretório
+description: 'Você pode personalizar o esquema de sincronização para incluir os atributos de extensão de diretório do Azure Active Directory (Azure AD). Este artigo descreve como usar um atributo de extensão de diretório (**extension_9d98asdfl15980a_Nickname**) para popular o valor de User. CommunityNickname no Salesforce. Neste cenário, você tem o Azure AD Connect configurado para provisionar um número de atributos de extensão de diretório do Windows Server Active Directory no local para o Azure AD. '
 localization_priority: Normal
 ms.openlocfilehash: 4160a95acfc6b23f5d5a9d880f36d9ca6a1f3362
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523859"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582112"
 ---
-# <a name="configure-synchronization-with-directory-extension-attributes"></a>Configurar a sincronização com os atributos de extensão de diretório
+# <a name="configure-synchronization-with-directory-extension-attributes"></a>Configurar a sincronização com atributos de extensão de diretório
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Você pode personalizar seu esquema de sincronização para incluir os atributos de extensão de diretório do Windows Azure Active Directory (AD Azure). Este artigo descreve como usar um atributo de extensão de diretório (**extension_9d98asdfl15980a_Nickname**) para preencher o valor da User.CommunityNickname em equipe de vendas. Neste cenário, você tem Connect do Azure AD configurado para provisionar um número de atributos de extensão do diretório do Windows Server Active Directory local para o Windows Azure AD. 
+Você pode personalizar o esquema de sincronização para incluir os atributos de extensão de diretório do Azure Active Directory (Azure AD). Este artigo descreve como usar um atributo de extensão de diretório (**extension_9d98asdfl15980a_Nickname**) para popular o valor de User. CommunityNickname no Salesforce. Neste cenário, você tem o Azure AD Connect configurado para provisionar um número de atributos de extensão de diretório do Windows Server Active Directory no local para o Azure AD. 
 
-Este artigo pressupõe que você já tenha adicionado a um aplicativo que oferece suporte à sincronização ao seu locatário através do [Portal do Windows Azure](https://portal.azure.com), você sabe o nome de exibição do aplicativo, e você tem um token de autorização para o Microsoft Graph. Para obter informações sobre como obter o token de autorização, consulte [tokens de acesso de Get para chamar o Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview).
+Este artigo pressupõe que você já tenha adicionado um aplicativo que oferece suporte à sincronização do seu locatário através do [portal do Azure](https://portal.azure.com), que você conhece o nome de exibição do aplicativo e que você tem um token de autorização para o Microsoft Graph. Para obter informações sobre como obter o token de autorização, confira [obter tokens de acesso para chamar o Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview).
 
-## <a name="find-the-service-principal-object-by-display-name"></a>Localizar o objeto de entidade de serviço por nome para exibição
+## <a name="find-the-service-principal-object-by-display-name"></a>Localizar o objeto de entidade de serviço por nome de exibição
 
-O exemplo a seguir mostra como localizar um objeto de entidade de serviço com o nome para exibição "Área restrita a equipe de vendas".
+O exemplo a seguir mostra como localizar um objeto de entidade de serviço com o nome de exibição "área restrita" da Salesforce.
 
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals?$select=id,appId,displayName&$filter=startswith(displayName, 'salesforce')
@@ -51,9 +51,9 @@ Authorization: Bearer {Token}
 
 O `{servicePrincipalId}` é `60443998-8cf7-4e61-b05c-a53b658cb5e1`.
 
-## <a name="list-synchronization-jobs-in-the-context-of-the-service-principal"></a>Trabalhos de sincronização de lista no contexto da entidade de serviço 
+## <a name="list-synchronization-jobs-in-the-context-of-the-service-principal"></a>Listar trabalhos de sincronização no contexto da entidade de serviço 
 
-O exemplo a seguir mostra como obter o `jobId` que você precisa para trabalhar com. Geralmente, a resposta retorna somente um trabalho.
+O exemplo a seguir mostra como obter o `jobId` que você precisa para trabalhar. Geralmente, a resposta retorna apenas um trabalho.
 
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a53b658cb5e1/synchronization/jobs
@@ -76,12 +76,12 @@ Authorization: Bearer {Token}
 
 O `{jobId}` é `SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa`.
 
-## <a name="find-the-name-of-the-directory-extension-attribute-you-need"></a>Localize o nome do atributo de extensão do directory que você precisa
+## <a name="find-the-name-of-the-directory-extension-attribute-you-need"></a>Encontre o nome do atributo de extensão de diretório que você precisa
 
-Você precisará o nome completo do atributo extensão. Se você não souber o nome completo (que deve ser semelhante ao **extension_9d98asdfl15980a_Nickname**), consulte as seguintes informações sobre os atributos de extensão de diretório e como inspecioná-las: 
+Você precisará do nome completo do atributo de extensão. Se você não souber o nome completo (que deve ser semelhante a **extension_9d98asdfl15980a_Nickname**), Confira as seguintes informações sobre atributos de extensão de diretório e como inspecioná-los: 
 
-* [Estendendo o esquema de diretório do Windows Azure AD com propriedades personalizadas](https://azure.microsoft.com/en-us/resources/samples/active-directory-dotnet-graphapi-directoryextensions-web/)
-* [Extensões de esquema do diretório | Conceitos de API do gráfico](https://msdn.microsoft.com/library/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions)
+* [Estender o esquema de diretório do Azure AD com propriedades personalizadas](https://azure.microsoft.com/en-us/resources/samples/active-directory-dotnet-graphapi-directoryextensions-web/)
+* [Extensões de esquema de diretório | Conceitos da API do Graph](https://msdn.microsoft.com/library/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions)
 
 
 ## <a name="get-the-synchronization-schema"></a>Obter o esquema de sincronização
@@ -96,7 +96,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalId}/sync
 Authorization: Bearer {Token}
 ```
 
->**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. Serão retornadas todas as propriedades em uma chamada real.
+>**Observação:** o objeto de resposta mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas em uma chamada real.
 
 <!-- {
   "blockType": "response",
@@ -193,20 +193,20 @@ HTTP/1.1 200 OK
 }
 ```
 
-## <a name="add-a-definition-for-the-directory-extension-attribute-and-a-mapping-between-the-attributes"></a>Adicione uma definição para o atributo de extensão de diretório e um mapeamento entre os atributos
+## <a name="add-a-definition-for-the-directory-extension-attribute-and-a-mapping-between-the-attributes"></a>Adicionar uma definição para o atributo de extensão de diretório e um mapeamento entre os atributos
 
-Use um editor de texto sem formatação de sua preferência (por exemplo, [o bloco de notas + +](https://notepad-plus-plus.org/) ou [Editor JSON Online](https://www.jsoneditoronline.org/)) para:
+Use um editor de texto sem formatação de sua escolha (por exemplo, [bloco de notas + +](https://notepad-plus-plus.org/) ou [Editor JSON online](https://www.jsoneditoronline.org/)) para:
 
-1. Adicionar uma [definição de atributo](synchronization-attributedefinition.md) para o `extension_9d98asdfl15980a_Nickname` atributo. 
+1. Adicione uma [definição de atributo](synchronization-attributedefinition.md) para `extension_9d98asdfl15980a_Nickname` o atributo. 
 
-    - Em diretórios, localize o diretório com o nome "Azure Active Directory" e na matriz do objeto, localize o nomeado de um **usuário**.
-    - Adicione o novo atributo à lista, especificando o nome e tipo, conforme mostrado no exemplo a seguir.
+    - Em diretórios, encontre o diretório com o nome "Azure Active Directory" e, na matriz do objeto, localize aquele chamado **usuário**.
+    - Adicione o novo atributo à lista, especificando o nome e o tipo, conforme mostrado no exemplo a seguir.
 
-2. Adicione um [mapeamento de atributo](synchronization-attributemapping.md) entre extension_9d98asdfl15980a_Nickname e CommunityNickname.
+2. Adicione um [mapeamento de atributos](synchronization-attributemapping.md) entre Extension_9d98asdfl15980a_Nickname e CommunityNickname.
 
-    - Em [synchronizationRules](synchronization-synchronizationrule.md), localize a regra que especifica o Azure AD como o diretório de origem e Salesforce.com como o diretório de destino (`"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"`).
-    - Em [objectMappings](synchronization-objectmapping.md) da regra, localize o mapeamento entre usuários (`"sourceObjectName": "User",   "targetObjectName": "User"`).
-    - Na matriz [attributeMappings](synchronization-attributemapping.md) do **objectMapping**, adicione uma nova entrada, conforme mostrado no exemplo a seguir.
+    - Em [synchronizationRules](synchronization-synchronizationrule.md), localize a regra que especifica o Azure ad como diretório de origem e Salesforce.com como o diretório de`"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"`destino ().
+    - Nos objectMappings da regra, encontre o mapeamento entre usuários ( [](synchronization-objectmapping.md) `"sourceObjectName": "User",   "targetObjectName": "User"`).
+    - Na matriz [attributeMappings](synchronization-attributemapping.md) do objectmapping ****, adicione uma nova entrada, conforme mostrado no exemplo a seguir.
 
     ```json
     {
@@ -257,9 +257,9 @@ Use um editor de texto sem formatação de sua preferência (por exemplo, [o blo
     }
     ```
 
-## <a name="save-the-modified-synchronization-schema"></a>Salvar o esquema de sincronização modificadas
+## <a name="save-the-modified-synchronization-schema"></a>Salvar o esquema de sincronização modificado
 
-Quando você salva o esquema de sincronização atualizados, certifique-se de que você inclua o esquema inteiro, incluindo as partes não modificadas. Essa solicitação substituirão o esquema existente com aquele que você fornecer.
+Ao salvar o esquema de sincronização atualizado, certifique-se de incluir o esquema inteiro, incluindo as partes não modificadas. Essa solicitação substituirá o esquema existente pelo que você fornecer.
 
 ```http
 PUT https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalId}/synchronization/jobs/{jobId}/schema
@@ -272,7 +272,7 @@ Authorization: Bearer {Token}
 HTTP/1.1 201 No Content
 ```
 
-Se o esquema foi salvo com êxito, na iteração seguinte do trabalho de sincronização, ele iniciará o processamento novamente todas as contas no seu Azure AD e os novos mapeamentos serão aplicados a todas as contas provisionadas.
+Se o esquema foi salvo com êxito, na próxima iteração do trabalho de sincronização, ele começará a reprocessar todas as contas em seu Azure AD e os novos mapeamentos serão aplicados a todas as contas provisionadas.
 <!--
 {
   "type": "#page.annotation",

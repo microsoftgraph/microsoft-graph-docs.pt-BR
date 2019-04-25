@@ -1,26 +1,26 @@
 ---
-title: tipo de recurso de educationFileResource
-description: Uma subclasse de educationResource que representa um objeto de arquivo que está associado a atribuição ou o envio.  Nesse caso, o arquivo não é um dos arquivos especiais (Word, Excel e assim por diante), mas é um arquivo que não tem manipulação especial dentro do sistema. O recurso de arquivo deve ser armazenado em **resourceFolder** que está associado a atribuição ou o envio que este recurso está anexado.
+title: tipo de recurso educationFileResource
+description: Uma subclasse de educationResource que representa um objeto File associado à atribuição ou ao envio.  Nesse caso, o arquivo não é um dos arquivos especiais (Word, Excel e assim por diante), mas é um arquivo que não tem tratamento especial no sistema. O recurso de arquivo deve ser armazenado no **resourceFolder** que está associado à atribuição ou ao envio ao qual este recurso está anexado.
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: 15ca31576618f15e64b85d860077785160c25989
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520792"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542850"
 ---
-# <a name="educationfileresource-resource-type"></a>tipo de recurso de educationFileResource
+# <a name="educationfileresource-resource-type"></a>tipo de recurso educationFileResource
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Uma subclasse de [educationResource](educationresource.md) que representa um objeto de arquivo que está associado a atribuição ou o envio.  Nesse caso, o arquivo não é um dos arquivos especiais (Word, Excel e assim por diante), mas é um arquivo que não tem manipulação especial dentro do sistema. O recurso de arquivo deve ser armazenado em **resourceFolder** que está associado a atribuição ou o envio que este recurso está anexado.
+Uma subclasse de [educationResource](educationresource.md) que representa um objeto File associado à atribuição ou ao envio.  Nesse caso, o arquivo não é um dos arquivos especiais (Word, Excel e assim por diante), mas é um arquivo que não tem tratamento especial no sistema. O recurso de arquivo deve ser armazenado no **resourceFolder** que está associado à atribuição ou ao envio ao qual este recurso está anexado.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|FileURL|String|Local no disco do recurso de arquivo.|
+|fileUrl|String|Local no disco do recurso de arquivo.|
 
 ## <a name="json-representation"></a>Representação JSON
 

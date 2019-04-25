@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 6f2ccbf60dffa6f8f0fafd6cfc4238b57e1d17c6
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31799661"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32573099"
 ---
 # <a name="resourceoperation-resource-type"></a>Tipo de recurso resourceOperation
 
@@ -32,15 +32,15 @@ Isso define uma operação ou ação que pode ser executada em um recurso (ou en
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da operação de recurso. Somente leitura, gerada automaticamente.|
-|recurso|Cadeia de caracteres|Categoria de recurso à qual essa operação pertence.|
+|id|Cadeia de caracteres|Chave da operação de recurso. Somente leitura, gerada automaticamente.|
+|recurso|String|Categoria de recurso à qual essa operação pertence.|
 |resourceName|Cadeia de caracteres|Nome do recurso em que essa operação é executada.|
 |actionName|Cadeia de caracteres|Tipo de ação em que essa operação será executada. O actionName deve ser conciso e limitado ao mínimo de palavras possível.|
 |description|String|Descrição da operação de recurso. A descrição é usada no texto exibido com o passar o mouse para a operação quando exibida no Portal do Azure.|
 |enabledForScopeValidation|Booliano|Determina se a permissão é validada para os esCopos definidos por atribuição de função.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

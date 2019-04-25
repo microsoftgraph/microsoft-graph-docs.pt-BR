@@ -1,19 +1,19 @@
 ---
-title: 'privilegedRoleAssignment: meu'
-description: Obtenha as atribuições de função privilegiado do solicitador.
+title: 'privilegedRoleAssignment: My'
+description: Obtenha as atribuições de função privilegiada do solicitante.
 localization_priority: Normal
 ms.openlocfilehash: fe3f0486d7c5f011abbac60deed831b798802aef
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520057"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546546"
 ---
-# <a name="privilegedroleassignment-my"></a>privilegedRoleAssignment: meu
+# <a name="privilegedroleassignment-my"></a>privilegedRoleAssignment: My
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha as atribuições de função privilegiado do solicitador.
+Obtenha as atribuições de função privilegiada do solicitante.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -39,7 +39,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` objeto de coleção [privilegedRoleAssignment](../resources/privilegedroleassignment.md) e código de resposta no corpo da resposta.
+Se bem-sucedido, este método retorna `200 OK` o código de resposta e o objeto da coleção [privilegedRoleAssignment](../resources/privilegedroleassignment.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 Eis um exemplo de como chamar esta API.

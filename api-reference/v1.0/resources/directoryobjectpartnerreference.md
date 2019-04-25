@@ -5,11 +5,11 @@ author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 0b84b7447d689759444e9cfd99982857eafa71eb
-ms.sourcegitcommit: 7412dd2f2d5ed66afa2b0759c861ad23b4c6ecdf
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30224123"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32574684"
 ---
 # <a name="directoryobjectpartnerreference-resource-type"></a>tipo de recurso directoryObjectPartnerReference
 
@@ -19,10 +19,10 @@ Representa uma referência a um objeto Directory em uma organização parceira. 
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|description|Cadeia de caracteres| Descrição do objeto retornado. Somente leitura. |
-|displayName|String| Nome do objeto de diretório que está sendo retornado, como o grupo ou o aplicativo. Somente leitura. |
+|description|String| Descrição do objeto retornado. Somente leitura. |
+|displayName|Cadeia de caracteres| Nome do objeto de diretório que está sendo retornado, como o grupo ou o aplicativo. Somente leitura. |
 |externalPartnerTenantId|Guid| O identificador de locatário para o locatário do parceiro. Somente leitura. |
-|id|String| O identificador exclusivo do recurso. Herdado de [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0). Somente leitura. |
+|id|Cadeia de caracteres| O identificador exclusivo do recurso. Herdado de [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0). Somente leitura. |
 |objectType|String| O tipo do objeto referenciado no locatário do parceiro. Somente leitura. |
 
 ## <a name="json-representation"></a>Representação JSON

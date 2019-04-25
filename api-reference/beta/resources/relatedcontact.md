@@ -1,31 +1,31 @@
 ---
-title: tipo de recurso de relatedContact
-description: Registro de contato relacionado a um educationUser que fornece informações para responsáveis, auxílios, os médicos e assim por diante.
+title: tipo de recurso relatedContact
+description: Registro de contato relacionado a um educationUser que fornece informações para guardiões, auxílios, médicos e assim por diante.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: d29cf93154e2c032ac7010372e3f116f2a1dd46c
-ms.sourcegitcommit: d6209114cbbe8072e3ecf7eba23819ae5ace7db5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "29694472"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563041"
 ---
-# <a name="relatedcontact-resource-type"></a>tipo de recurso de relatedContact
+# <a name="relatedcontact-resource-type"></a>tipo de recurso relatedContact
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Entre em contato com o registro de um [educationUser](../resources/educationuser.md) que fornece informações para responsáveis, auxílios, os médicos e assim por diante.
+Registro de contato relacionado a um [educationUser](../resources/educationuser.md) que fornece inforation para guardiões, auxílios, médicos e assim por diante.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|String|Identidade do contato dentro do Azure Active Directory.|
-|displayName|String|Nome do contato. Obrigatório.|
+|id|Cadeia de caracteres|Identidade do contato no Azure Active Directory.|
+|displayName|Cadeia de caracteres|Nome do contato. Obrigatório.|
 |emailAddress|String|Endereço de email principal do contato.|
-|mobilePhone|String|Número de telefone celular do contato.|
-|Relação|`contactRelationship`|Relacionamento ao usuário. Os valores possíveis são `parent`, `relative`, `aide`, `doctor`, `guardian`, `child`, `other`, `unknownFutureValue`.|
-|accessConsent|Boolean|Indica se o usuário foi aceitou para acessar dados de student.|
+|mobilePhone|String|Número do telefone celular do contato.|
+|relação|`contactRelationship`|Relação com o usuário. Os valores possíveis `parent`são `relative`: `aide` `doctor` `guardian` `child`,,,, `other`, `unknownFutureValue`,.|
+|accessConsent|Booliano|Indica se o usuário foi remetido para acessar os dados dos alunos.|
 
 ## <a name="json-representation"></a>Representação JSON
 

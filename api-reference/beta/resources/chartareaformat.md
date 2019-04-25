@@ -1,28 +1,28 @@
 ---
 title: Tipo de recurso ChartAreaFormat
-description: Abrange as propriedades de formatação da área geral do gráfico.
+description: Encapsula as propriedades de formato da área de gráfico geral.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 6801cb5e2c28dfd106fda111977221bbd36b2c42
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29644039"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543849"
 ---
 # <a name="chartareaformat-resource-type"></a>Tipo de recurso ChartAreaFormat
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Abrange as propriedades de formatação da área geral do gráfico.
+Encapsula as propriedades de formato da área de gráfico geral.
 
 
 ## <a name="methods"></a>Métodos
 Nenhum
 
 ## <a name="properties"></a>Propriedades
-Nenhum
+Nenhuma
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|

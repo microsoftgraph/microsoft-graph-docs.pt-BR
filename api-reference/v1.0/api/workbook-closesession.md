@@ -1,17 +1,17 @@
 ---
-title: Fechar Sessão
+title: Fechar sessão
 description: 'Use esta API para fechar uma sessão de pasta de trabalho existente. '
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 9fbbaea28f93b757881550f36d76540fb6cfb388
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27972856"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32573561"
 ---
-# <a name="close-session"></a>Fechar Sessão
+# <a name="close-session"></a>Fechar sessão
 
 Use esta API para fechar uma sessão de pasta de trabalho existente. 
 
@@ -34,10 +34,10 @@ workbook-session-id: {session-id}
 | Nome       | Descrição|
 |:---------------|:----------|
 | Autorização  | {token} de portador. Obrigatório. | | Workbook-Session-Id  | ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.|
-| workbook-session-id | Id de sessão de pasta de trabalho a ser fechada |
+| Workbook-session-ID | ID da sessão da pasta de trabalho a ser fechada |
 
 ## <a name="request-body"></a>Corpo da solicitação
-Esta API não exige o corpo da solicitação.
+Essa API não requer nenhum corpo de solicitação.
 
 ## <a name="response"></a>Resposta
 
@@ -61,7 +61,7 @@ Content-length: 0
 }
 ```
 
-Observe que o cabeçalho workbook-session-id é necessário. 
+Observe que o cabeçalho Workbook-session-ID é necessário. 
 
 
 ##### <a name="response"></a>Resposta

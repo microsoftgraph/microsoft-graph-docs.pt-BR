@@ -2,26 +2,24 @@
 title: Listar blocos de anotações
 description: Recupere uma lista de objetos notebook.
 author: jewan-microsoft
-localization_priority: Normal
+localization_priority: Priority
 ms.prod: onenote
 ms.openlocfilehash: 49274d1ed7ab74ee5a4322bf9e13d849052f1c35
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511125"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540188"
 ---
 # <a name="list-notebooks"></a>Listar blocos de anotações
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Recupere uma lista de objetos [notebook](../resources/notebook.md).
+Recupere uma lista de objetos [Notebook](../resources/notebook.md) .
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All    |
+|Delegado (conta corporativa ou de estudante) | Notes. Create, Notes. Read, Notes. ReadWrite, Notes. Read. All, Notes. ReadWrite. All    |
 |Delegado (conta pessoal da Microsoft) | Notes.Create, Notes.Read, Notes.ReadWrite    |
 |Aplicativo | Notes.Read.All, Notes.ReadWrite.All |
 
@@ -36,9 +34,9 @@ GET /sites/{id}/onenote/notebooks
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
 
-A ordem de classificação padrão é `name asc`. 
+A ordem de classificação padrão `name asc`é. 
 
-Os valores `expand` válidos para os blocos de anotações são `sections` e `sectionGroups`.
+Os `expand` valores válidos para blocos de `sections` anotações `sectionGroups`são e.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
@@ -51,7 +49,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [notebook](../resources/notebook.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [Notebook](../resources/notebook.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
@@ -60,7 +58,7 @@ Este é um exemplo da solicitação.
   "name": "get_notebooks"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/onenote/notebooks
+GET https://graph.microsoft.com/v1.0/me/onenote/notebooks
 ```
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: O objeto response mostrado aqui está truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
@@ -84,7 +82,6 @@ Content-length: 369
       "isShared": true,
       "sectionsUrl": "sectionsUrl-value",
       "sectionGroupsUrl": "sectionGroupsUrl-value",
-      "id": "8fcb5dbc-d5aa-4681-8e31-b001d5168d79",
       "links": {
         "oneNoteClientUrl": {
           "href": "href-value"
@@ -100,15 +97,10 @@ Content-length: 369
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "List notebooks",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/onenote-list-notebooks.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

@@ -1,18 +1,18 @@
 ---
 title: Criar ou substituir uma atividade
-description: Criar uma nova ou substituir uma atividade do usuário existente para seu aplicativo. Se você gostaria de criar uma atividade do usuário e seu relacionados **historyItems** em uma solicitação, você pode usar Inserir aprofundada.
+description: Criar um novo ou substituir uma atividade de usuário existente para seu aplicativo. Se quiser criar uma atividade de usuário e seus **historyItems** relacionados em uma solicitação, você poderá usar a inserção profunda.
 localization_priority: Normal
 ms.prod: project-rome
 ms.openlocfilehash: 3f0864d5bdd8e393a21df49ec3fade6930fdcbde
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29967281"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575307"
 ---
 # <a name="create-or-replace-an-activity"></a>Criar ou substituir uma atividade
 
-Criar uma nova ou substituir uma atividade do usuário existente para seu aplicativo. Se você gostaria de criar uma atividade do usuário e seu relacionados **historyItems** em uma solicitação, você pode usar a [profundidade inserir](#example-2-deep-insert).
+Criar um novo ou substituir uma atividade de usuário existente para seu aplicativo. Se quiser criar uma atividade de usuário e seus **historyItems** relacionados em uma solicitação, você poderá usar a [inserção profunda](#example-2-deep-insert).
 
 ## <a name="permissions"></a>Permissões
 
@@ -32,7 +32,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 PUT /me/activities/{appActivityId}
 ```
 
-> **Observação:** O appActivityId na URL precisa ser URL-safe (todos os caracteres, com exceção do RFC 2396 caracteres não reservadas devem ser convertidos em sua representação hexadecimal), mas o appActivityId original não precisa ser URL-safe.
+> **Observação:** O appActivityId na URL precisa ser de URL segura (todos os caracteres, exceto os caracteres não reservados RFC 2396, devem ser convertidos em sua representação hexadecimal), mas o appActivityId original não precisa ser URL-seguro.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -42,15 +42,15 @@ PUT /me/activities/{appActivityId}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON de um objeto de [atividade](../resources/projectrome-activity.md) .
+No corpo da solicitação, forneça uma representação JSON de um objeto [Activity](../resources/projectrome-activity.md) .
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará o `201 Created` código de resposta se a atividade foi criada ou `200 OK` se a atividade foi substituída.
+Se tiver êxito, este método retornará `201 Created` o código de resposta se a atividade foi `200 OK` criada ou se a atividade foi substituída.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-create-an-activity"></a>O exemplo 1: Criar uma atividade
+### <a name="example-1-create-an-activity"></a>Exemplo 1: criar uma atividade
 
 #### <a name="request"></a>Solicitação
 
@@ -160,9 +160,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-deep-insert"></a>Exemplo 2: Inserir profundidade
+### <a name="example-2-deep-insert"></a>Exemplo 2: inserção profunda
 
-Este exemplo cria uma nova atividade e um item de histórico para a atividade em uma solicitação.
+Este exemplo cria uma nova atividade e um item de histórico para essa atividade em uma solicitação.
 
 #### <a name="request"></a>Solicitação
 

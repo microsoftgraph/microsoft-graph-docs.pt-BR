@@ -6,11 +6,11 @@ title: Listar
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: aafae9e9214f98ade129d46b63f0e7f930ac4a9c
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481514"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581528"
 ---
 # <a name="list-resource"></a>Recurso List
 
@@ -31,9 +31,9 @@ Todos os exemplos a seguir referem-se a um site: `https://graph.microsoft.com/be
 |:--------------------------|:------------------------------
 | [Obter lista][]              | GET /lists/{list-id}
 | [Enumerar itens de lista][]  | GET /lists/{list-id}/items
-| [Update list item][]      | PATCH /lists/{list-id}/items/{item-id}
+| [Atualizar item de lista][]      | PATCH /lists/{list-id}/items/{item-id}
 | [Excluir item de lista][]      | DELETE /lists/{list-id}/items/{item-id}
-| [Create list item][]      | POST /lists/{list-id}
+| [Criar item de lista][]      | POST /lists/{list-id}
 | [Obter atividades recentes][] | GET /lists/{list-id}/activities
 
 [Obter lista]: ../api/list-get.md
@@ -88,7 +88,7 @@ O recurso **list** tem as seguintes propriedades.
 |:-----------------|:---------------------------------|:---------------------------
 | **columns**      | Collection([columnDefinition][]) | A coleção de definições de campo para esta lista.
 | **contentTypes** | Collection([contentType][])      | A coleção de tipos de conteúdo presentes nesta lista.
-| **displayName**  | cadeia de caracteres                           | O título em exibição da lista.
+| **displayName**  | string                           | O título em exibição da lista.
 | **list**         | [listInfo][]                     | Fornece mais detalhes sobre a lista.
 | **system**       | [systemFacet][]                  | Se estiver presente, indica que se trata de uma lista gerenciada pelo sistema. Somente leitura.
 

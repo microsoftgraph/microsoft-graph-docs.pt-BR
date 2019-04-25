@@ -3,15 +3,13 @@ title: Tipo de recurso extension
 description: Um tipo abstrato para oferecer suporte ao tipo openTypeExtension livre do OData v4.
 localization_priority: Normal
 ms.openlocfilehash: b261ceeff4639b8a602edbb411b34ab19d46ea8e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512742"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542633"
 ---
 # <a name="extension-resource-type"></a>Tipo de recurso extension
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Um tipo abstrato para oferecer suporte ao tipo [openTypeExtension](opentypeextension.md) livre do OData v4.
 
@@ -20,7 +18,10 @@ Um tipo abstrato para oferecer suporte ao tipo [openTypeExtension](opentypeexten
 Veja a seguir uma representação JSON do recurso
 
 <!-- {
+  "abstract": "true",
+  "baseType": "microsoft.graph.entity",
   "blockType": "resource",
+  "openType": true,
   "optionalProperties": [
 
   ],
@@ -38,8 +39,8 @@ Veja a seguir uma representação JSON do recurso
 |:---------------|:--------|:----------|
 |id|String| Somente leitura.|
 
-## <a name="relationships"></a>Relacionamento
-Nenhum
+## <a name="relationships"></a>Relações
+Nenhuma
 
 
 ## <a name="methods"></a>Métodos
@@ -49,15 +50,10 @@ Consulte os métodos do tipo derivado [openTypeExtension](opentypeextension.md) 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "extension resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/extension.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

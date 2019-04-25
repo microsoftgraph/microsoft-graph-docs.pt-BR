@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: 4b4100265797fd3cefc60e0288961b74839199c2
-ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30572387"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32573918"
 ---
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>Registrar dispositivos de propriedade corporativa por meio do Intune
 
@@ -49,7 +49,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar dispositivos c
 - [Perfil de implantação do Windows Autopilot](intune-enrollment-windowsautopilotdeploymentprofile.md)
 - [Atribuição do perfil de implantação do Windows Autopilot](intune-enrollment-windowsautopilotdeploymentprofileassignment.md)
 - [Identidade do dispositivo do Windows Autopilot](intune-enrollment-windowsautopilotdeviceidentity.md)
-- [Tipo de dispositivo do Windows AutoPilot](intune-enrollment-windowsautopilotdevicetype.md)
+- [Tipo de dispositivo do Windows Autopilot](intune-enrollment-windowsautopilotdevicetype.md)
 - [Status detalhado de atribuição do perfil do Windows Autopilot](intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)
 - [Status de atribuição do perfil do Windows Autopilot](intune-enrollment-windowsautopilotprofileassignmentstatus.md)
 - [Configurações do Windows Autopilot](intune-enrollment-windowsautopilotsettings.md)

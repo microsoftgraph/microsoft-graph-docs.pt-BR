@@ -1,19 +1,19 @@
 ---
 title: Atualizar mailfolder
-description: Atualizar as propriedades do objeto de mailfolder.
+description: Atualize as propriedades do objeto mailfolder.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 849b5e99f96b3ca891ef719e6ae45e8a2bcdd372
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27938647"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561415"
 ---
 # <a name="update-mailfolder"></a>Atualizar mailfolder
 
-Atualizar as propriedades do objeto de mailfolder.
+Atualize as propriedades do objeto mailfolder.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -40,11 +40,11 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|displayName|Cadeia de caracteres|O nome de exibição da mailFolder.|
+|displayName|String|O nome de exibição da mailFolder.|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [mailFolder](../resources/mailfolder.md) atualizado no corpo da resposta.
+Se bem sucedido, este método retorna um código de resposta `200 OK` e um objeto [mailFolder](../resources/mailfolder.md) atualizado no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

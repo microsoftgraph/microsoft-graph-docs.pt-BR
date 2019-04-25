@@ -1,21 +1,21 @@
 ---
 title: Listar anexos
-description: Obtenha uma lista de objetos attachment anexado a uma tarefa do Outlook.
+description: Obter uma lista de objetos Attachment anexados a uma tarefa do Outlook.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 9d330f0a86b99bbd667ff1f32a5b5fc549dfc7f2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526904"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539778"
 ---
 # <a name="list-attachments"></a>Listar anexos
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha uma lista de objetos [attachment](../resources/attachment.md) anexado a uma tarefa do Outlook.
+Obter uma lista de objetos [Attachment](../resources/attachment.md) anexados a uma tarefa do Outlook.
 
 ## <a name="permissions"></a>Permissões
 
@@ -52,7 +52,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e a coleção de objetos de [anexo](../resources/attachment.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [Attachment](../resources/attachment.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

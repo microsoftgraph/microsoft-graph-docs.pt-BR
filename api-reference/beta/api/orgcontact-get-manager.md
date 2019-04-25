@@ -1,21 +1,21 @@
 ---
-title: 'orgContact: Get manager'
-description: Obtenha o gerente do contato
+title: 'orgContact: obter gerente'
+description: Obter o gerente do contato
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 96833e9b38b2d988a3843e097a11fe38a247c0b6
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524853"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539798"
 ---
-# <a name="orgcontact-get-manager"></a>orgContact: Get manager
+# <a name="orgcontact-get-manager"></a>orgContact: obter gerente
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha o gerente do contato
+Obter o gerente do contato
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/beta/contacts/{id}/manager
 
 #### <a name="response"></a>Resposta
 
-Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

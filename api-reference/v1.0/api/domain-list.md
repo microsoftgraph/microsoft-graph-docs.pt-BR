@@ -1,19 +1,19 @@
 ---
 title: Listar domínios
-description: Recupere uma lista de objetos domain.
+description: Recupere uma lista de objetos Domain.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 4039995fc8b588b3a6a318b457e0eaba28b8dfa6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27927346"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583617"
 ---
 # <a name="list-domains"></a>Listar domínios
 
-Recupere uma lista de objetos domain.
+Recupere uma lista de objetos Domain.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -36,14 +36,14 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 | Nome      |Descrição|
 |:----------|:----------|
 | Autorização  | {token} de portador. Obrigatório.|
-| Aceitar         | application/json; |
+| Aceitar         | Application/JSON; |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [domain](../resources/domain.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e uma coleção de objetos [Domain](../resources/domain.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 
@@ -55,7 +55,7 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma cole
 GET https://graph.microsoft.com/v1.0/domains
 ```
 ##### <a name="response"></a>Resposta
-Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

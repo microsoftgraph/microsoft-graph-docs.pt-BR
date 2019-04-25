@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 2de7d4e8c177317aa220d6aafbba4bda8b7fe299
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31780921"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32541854"
 ---
 # <a name="devicemanagementintent-resource-type"></a>tipo de recurso deviceManagementIntent
 
@@ -33,18 +33,18 @@ Entidade que representa uma intenção de aplicar configurações a um dispositi
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A ID de intenção|
-|displayName|Cadeia de caracteres|O nome de exibição fornecido pelo usuário|
+|id|Cadeia de caracteres|A ID de intenção|
+|displayName|String|O nome de exibição fornecido pelo usuário|
 |description|String|Descrição fornecida pelo usuário|
 |isAssigned|Boolean|Significa se a intenção é atribuída ou não aos usuários|
 |lastModifiedDateTime|DateTimeOffset|Quando a intenção foi modificada pela última vez|
-|templateId|Cadeia de caracteres|A ID do modelo de que esta intenção foi criada (se houver)|
+|templateId|String|A ID do modelo de que esta intenção foi criada (se houver)|
 
 ## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:---|:---|:---|
 |settings|coleção [deviceManagementSettingInstance](../resources/intune-deviceintent-devicemanagementsettinginstance.md)|Coleção de todas as configurações a serem aplicadas|
-|Categorias|coleção [deviceManagementIntentSettingCategory](../resources/intune-deviceintent-devicemanagementintentsettingcategory.md)|Conjunto de categorias de configuração dentro da intenção|
+|categories|coleção [deviceManagementIntentSettingCategory](../resources/intune-deviceintent-devicemanagementintentsettingcategory.md)|Conjunto de categorias de configuração dentro da intenção|
 |assignments|coleção [deviceManagementIntentAssignment](../resources/intune-deviceintent-devicemanagementintentassignment.md)|Coleção de atribuições|
 |deviceSettingStateSummaries|coleção [deviceManagementIntentDeviceSettingStateSummary](../resources/intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md)|Conjunto de configurações e seus Estados e contagens de dispositivos que pertencem ao estado correspondente de todas as configurações dentro da intenção|
 |deviceStates|coleção [deviceManagementIntentDeviceState](../resources/intune-deviceintent-devicemanagementintentdevicestate.md)|Conjunto de Estados de todos os dispositivos aos quais a intenção é aplicada|

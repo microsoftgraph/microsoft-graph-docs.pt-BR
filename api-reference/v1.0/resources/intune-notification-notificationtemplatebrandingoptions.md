@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 68393d569cf76b01ff7582c864bee4a35a68c739
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30261891"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32574506"
 ---
 # <a name="notificationtemplatebrandingoptions-enum-type"></a>tipo de enumeração notificationTemplateBrandingOptions
 
@@ -21,9 +21,9 @@ Opções de identidade visual para o modelo de mensagem. A identidade visual é 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Nenhuma|,0|Sem identidade visual.|
-|includeCompanyLogo|1|Incluir logotipo da empresa.|
-|includeCompanyName|duas|Incluir o nome da empresa.|
-|includeContactInformation|quatro|Incluir informações de contato.|
+|includeCompanyLogo|1 |Incluir logotipo da empresa.|
+|includeCompanyName|2 |Incluir o nome da empresa.|
+|includeContactInformation|4 |Incluir informações de contato.|
 
 
 

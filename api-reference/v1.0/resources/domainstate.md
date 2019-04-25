@@ -1,27 +1,27 @@
 ---
-title: Tipo de recurso domainState
-description: Representa o status das operações assíncronas agendadas em um domínio.
+title: tipo de recurso domainstate
+description: Representa o status de operações assíncronas agendadas em um domínio.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 6a7741448b9c91be32f67f89cbafa5a579320083
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27938290"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562773"
 ---
-# <a name="domainstate-resource-type"></a>Tipo de recurso domainState
+# <a name="domainstate-resource-type"></a>tipo de recurso domainstate
 
-Representa o status das operações assíncronas agendadas em um domínio.
+Representa o status de operações assíncronas agendadas em um domínio.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade   | Tipo | Descrição |
 |:---------------|:--------|:----------|
-| lastActionDateTime | DateTimeOffset | O carimbo de data/hora de quando a última atividade ocorreu. O valor é atualizado quando uma operação é agendada, a tarefa assíncrona começa e quando a operação é concluída. |
-| operação | String | Tipo de operação assíncrona. Os valores podem ser *ForceDelete* ou *Verification* |
-| status | String | Status atual da operação. <br> *Scheduled* – A operação foi agendada, mas não foi iniciada. <br> *InProgress* – A tarefa foi iniciada e está em andamento. <br> *Failed* - A operação falhou. |
+| lastActionDateTime | DateTimeOffset | Carimbo de data/hora de quando a última atividade ocorreu. O valor é atualizado quando uma operação é agendada, a tarefa assíncrona é iniciada e quando a operação é concluída. |
+| operações | String | Tipo de operação assíncrona. Os valores podem ser *ForceDelete* ou *verificação* |
+| status | String | Status atual da operação. <br> *Scheduled* -a operação foi agendada, mas não foi iniciada. <br> *InProgress* – a tarefa foi iniciada e está em andamento. <br> *Failed* -a operação falhou. |
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

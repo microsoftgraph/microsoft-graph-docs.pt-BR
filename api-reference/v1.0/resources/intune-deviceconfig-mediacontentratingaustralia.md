@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 37e42c3629e73d8dc629ba754583f8023c168b30
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30259112"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32572371"
 ---
 # <a name="mediacontentratingaustralia-resource-type"></a>Tipo de recurso mediaContentRatingAustralia
 

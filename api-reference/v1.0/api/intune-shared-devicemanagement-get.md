@@ -1,21 +1,21 @@
 ---
-title: Get deviceManagement
-description: Ler propriedades e relações do objeto deviceManagement.
+title: Acessar deviceManagement
+description: Leia as propriedades e as relações do objeto deviceManagement.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: 7ae3300ffa73aa42481930e5701755d2551a6076
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30250632"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32576948"
 ---
-# <a name="get-devicemanagement"></a>Get deviceManagement
+# <a name="get-devicemanagement"></a>Acessar deviceManagement
 
 > **Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.
 
-Ler propriedades e relações do objeto [deviceManagement](../resources/intune-shared-devicemanagement.md).
+Leia as propriedades e as relações do objeto [deviceManagement](../resources/intune-shared-devicemanagement.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -61,7 +61,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um código de resposta `200 OK` e um objeto [deviceManagement](../resources/intune-shared-devicemanagement.md) no corpo da resposta.
+Se tiver êxito, este método retornará o código de resposta `200 OK` e o objeto [deviceManagement](../resources/intune-shared-devicemanagement.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ### <a name="request"></a>Solicitação

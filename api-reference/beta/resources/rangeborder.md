@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 5b3b814da53013d1daca686d549596a7ab656027
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515381"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563228"
 ---
 # <a name="rangeborder-resource-type"></a>Tipo de recurso RangeBorder
 
@@ -22,10 +22,10 @@ Representa a borda de um objeto.
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|Get RangeBorder | RangeBorder |Leia as propriedades e relacionamentos do objeto rangeBorder.|
-|[Update](../api/rangeborder-update.md) | RangeBorder |Atualize o objeto RangeBorder. |
-|[List](../api/rangeborder-list.md) | Coleção RangeBorder |Obtenha a coleção de objetos rangeBorder. |
-|[Itemat](../api/rangebordercollection-itemat.md)|RangeBorder|Obtém um objeto de borda usando seu índice.|
+|[Get RangeBorder](../api/rangeborder-get.md) | [RangeBorder](rangeborder.md) |Leia as propriedades e relacionamentos do objeto rangeBorder.|
+|[Update](../api/rangeborder-update.md) | [RangeBorder](rangeborder.md) |Atualize o objeto RangeBorder. |
+|[List](../api/rangeborder-list.md) | Coleção [RangeBorder](rangeborder.md) |Obtenha a coleção de objetos rangeBorder. |
+|[Itemat](../api/rangebordercollection-itemat.md)|[RangeBorder](rangeborder.md)|Obtém um objeto de borda usando seu índice.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
@@ -33,10 +33,10 @@ Representa a borda de um objeto.
 |color|string|Código de cor HTML que representa a cor #RRGGBB da linha de borda do formulário (por exemplo, "FFA500") ou uma cor HTML nomeada (por exemplo, "laranja").|
 |id|string|Representa o identificador da borda. Os valores possíveis são: `EdgeTop`, `EdgeBottom`, `EdgeLeft`, `EdgeRight`, `InsideVertical`, `InsideHorizontal`, `DiagonalDown` e `DiagonalUp`. Somente leitura.|
 |sideIndex|string|Valor constante que indica o lado específico da borda. Os valores possíveis são: `EdgeTop`, `EdgeBottom`, `EdgeLeft`, `EdgeRight`, `InsideVertical`, `InsideHorizontal`, `DiagonalDown` e `DiagonalUp`. Somente leitura.|
-|estilo|string|Uma das constantes de estilo de linha especificando o estilo de linha da borda. Os valores possíveis são: `None`, `Continuous`, `Dash`, `DashDot`, `DashDotDot`, `Dot`, `Double` e `SlantDashDot`.|
-|weight|string|Especifica a espessura da borda em torno de um intervalo. Os valores possíveis são: `Hairline`, `Thin`, `Medium` e `Thick`.|
+|estilo|cadeia de caracteres|Uma das constantes de estilo de linha especificando o estilo de linha da borda. Os valores possíveis são: `None`, `Continuous`, `Dash`, `DashDot`, `DashDotDot`, `Dot`, `Double` e `SlantDashDot`.|
+|weight|cadeia de caracteres|Especifica a espessura da borda em torno de um intervalo. Os valores possíveis são: `Hairline`, `Thin`, `Medium` e `Thick`.|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 Nenhum
 
 

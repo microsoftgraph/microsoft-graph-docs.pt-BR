@@ -5,15 +5,13 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: a5383bacedef2e7e6df718a4286f034e67f6a7d9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524713"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539003"
 ---
 # <a name="create-plannerplan"></a>Criar plannerPlan
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Use essa API para criar um novo **plannerPlan**.
 
@@ -44,7 +42,8 @@ POST /planner/plans
 
 No corpo da solicitação, forneça uma representação JSON do objeto [plannerPlan](../resources/plannerplan.md). A propriedade owner do **plannerPlan** deve ser definida com uma identificação de um objeto [group](../resources/group.md).
 
->**Observação:** O usuário que está criando o plano deve ser um membro do grupo que será o proprietário do plano. Quando você cria um novo grupo usando [Criar grupo](../api/group-post-groups.md), você não é adicionados ao grupo como um membro. Depois que o grupo é criado, adicione si mesmo como membro usando o [grupo postar membros](../api/group-post-members.md).
+>**Observação**: o usuário que está criando o plano deve ser um membro do grupo que será proprietário do plano. Ao criar um novo grupo usando [Criar grupo](../api/group-post-groups.md), você não é adicionado ao grupo como membro. Depois que o grupo for criado, adicione a si mesmo como membro usando [membros de postagem do grupo](../api/group-post-members.md).
+
 
 ## <a name="response"></a>Resposta
 
@@ -57,12 +56,13 @@ Este método pode retornar qualquer um dos [códigos de status de HTTP](/graph/e
 ### <a name="request"></a>Solicitação
 
 Este é um exemplo da solicitação.
+
 <!-- {
   "blockType": "request",
   "name": "create_plannerplan_from_planner"
 }-->
 ``` http
-POST https://graph.microsoft.com/beta/planner/plans
+POST https://graph.microsoft.com/v1.0/planner/plans
 Content-type: application/json
 Content-length: 381
 
@@ -77,6 +77,7 @@ No corpo da solicitação, forneça uma representação JSON do objeto [plannerP
 ### <a name="response"></a>Resposta
 
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -105,15 +106,10 @@ Content-length: 357
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Create plannerPlan",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/planner-post-plans.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

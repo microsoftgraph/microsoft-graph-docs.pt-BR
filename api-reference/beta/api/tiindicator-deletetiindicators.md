@@ -5,11 +5,11 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 ms.openlocfilehash: 49475f15520f02cc36bb1bf37af9a5849a8ee245
-ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30366956"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544655"
 ---
 # <a name="tiindicator-deletetiindicators"></a>tiIndicator: deleteTiIndicators
 
@@ -23,9 +23,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegado (conta corporativa ou de estudante)     | ThreatIndicators. ReadWrite. OwnedBy |
+| Delegado (conta corporativa ou de estudante)     | ThreatIndicators.ReadWrite.OwnedBy |
 | Delegado (conta pessoal da Microsoft) | Sem suporte. |
-| Aplicativo                            | ThreatIndicators. ReadWrite. OwnedBy |
+| Aplicativo                            | ThreatIndicators.ReadWrite.OwnedBy |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -39,7 +39,7 @@ POST /security/tiIndicators/deleteTiIndicators
 
 | Nome          | Descrição   |
 |:--------------|:--------------|
-| Autorização | Portador {código} |
+| Authorization | Portador {código} |
 
 ## <a name="request-body"></a>Corpo da solicitação
 

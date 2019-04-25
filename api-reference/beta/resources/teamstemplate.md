@@ -1,27 +1,27 @@
 ---
-title: tipo de recurso de teamsTemplate
-description: Descreve a entidade teamsTemplate.
+title: tipo de recurso Teams
+description: Descreve a entidade Teams.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: e75b3d8df318b116d5d908a40d4f756d9ee70864
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513043"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583162"
 ---
-# <a name="teamstemplate-resource-type"></a>tipo de recurso de teamsTemplate
+# <a name="teamstemplate-resource-type"></a>tipo de recurso Teams
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Um modelo de equipe é um blueprint para a criação de uma [equipe](../resources/team.md) no Microsoft Teams. Um modelo especifica a estrutura, configurações e até mesmo conteúdo que deve ser provisionado em uma nova criada usando o modelo de equipe. A Microsoft fornece um pacote de modelos de base e os clientes podem salvar seus próprios modelos personalizados.
+Um modelo de equipe é um gráfico para a criação de uma [equipe](../resources/team.md) no Microsoft Teams. Um modelo especifica a estrutura, as configurações e até o conteúdo que deve ser provisionado em uma nova equipe criada usando o modelo. A Microsoft fornece um pacote de modelos básicos e os clientes podem salvar seus próprios modelos personalizados.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade            | Tipo     | Descrição |
 |:------------------- |:-------- |:----------- |
-| id                  | String   | Identificador exclusivo do modelo. Não pode ser nula. |
+| id                  | String   | Identificador exclusivo do modelo. Não pode ser nulo. |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -39,7 +39,7 @@ Um modelo de equipe é um blueprint para a criação de uma [equipe](../resource
 
 # <a name="see-also"></a>Confira também
 
-- [equipe](team.md)
+- [team](team.md)
 
 <!--
 {
