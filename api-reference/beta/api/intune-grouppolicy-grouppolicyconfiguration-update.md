@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: c3f343eacd5d19eb101d69cb2bac5941eeaf7ed5
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31794971"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32532055"
 ---
 # <a name="update-grouppolicyconfiguration"></a>Atualizar groupPolicyConfiguration
 
@@ -51,9 +51,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [groupPo
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|A data e a hora em que o objeto foi criado.|
-|displayName|Cadeia de caracteres|Nome fornecido pelo usuário para o objeto Resource.|
+|displayName|String|Nome fornecido pelo usuário para o objeto Resource.|
 |description|String|Descrição fornecida pelo usuário para o objeto Resource.|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que a entidade foi modificada pela última vez.|
 
 

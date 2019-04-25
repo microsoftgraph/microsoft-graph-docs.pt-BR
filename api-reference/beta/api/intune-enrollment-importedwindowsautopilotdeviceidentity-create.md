@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: f7a35693408b214d028af90945e0d3179af83395
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31774761"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32532720"
 ---
 # <a name="create-importedwindowsautopilotdeviceidentity"></a>Criar importedWindowsAutopilotDeviceIdentity
 
@@ -52,10 +52,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar imported
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|O GUID do objeto.|
-|orderIdentifier|Cadeia de caracteres|ID do pedido do dispositivo do Windows AutoPilot.|
+|orderIdentifier|String|ID do pedido do dispositivo do Windows AutoPilot.|
 |serialNumber|String|Número de série do dispositivo do Windows AutoPilot.|
 |productKey|Cadeia de caracteres|Chave do produto (Product Key) do dispositivo do Windows AutoPilot.|
-|importid|Cadeia de caracteres|A ID de importação do dispositivo do Windows AutoPilot.|
+|importid|String|A ID de importação do dispositivo do Windows AutoPilot.|
 |hardwareIdentifier|Binária|Blob de hardware do dispositivo do Windows AutoPilot.|
 |state|[importedWindowsAutopilotDeviceIdentityState](../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)|Estado atual do dispositivo importado.|
 

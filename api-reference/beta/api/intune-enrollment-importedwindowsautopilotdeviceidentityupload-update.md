@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: e75ec2ea82aa28cfab5a1d29b9ead6e8a409c64c
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31771149"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32532426"
 ---
 # <a name="update-importedwindowsautopilotdeviceidentityupload"></a>Atualizar importedWindowsAutopilotDeviceIdentityUpload
 

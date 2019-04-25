@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 6e7ddc6a41ac7753ca827f6849ecd7964e86db6f
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31793277"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32532013"
 ---
 # <a name="update-managementconditionstatement"></a>Atualizar managementConditionStatement
 
@@ -51,9 +51,9 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [managem
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo da instrução de condição de gerenciamento. Valor gerado pelo sistema atribuído quando criado.|
-|displayName|Cadeia de caracteres|O nome do administrador definido da instrução de condição de gerenciamento.|
-|description|Cadeia de caracteres|A descrição definida pelo administrador da instrução de condição de gerenciamento.|
+|id|Cadeia de caracteres|Identificador exclusivo da instrução de condição de gerenciamento. Valor gerado pelo sistema atribuído quando criado.|
+|displayName|String|O nome do administrador definido da instrução de condição de gerenciamento.|
+|description|String|A descrição definida pelo administrador da instrução de condição de gerenciamento.|
 |createdDateTime|DateTimeOffset|A hora em que a instrução de gerenciamento da condição foi criada. Lado do serviço gerado.|
 |modifiedDateTime|DateTimeOffset|A hora em que a declaração de condição de gerenciamento foi modificada pela última vez. Atualizado o lado do serviço.|
 |expressão|[managementConditionExpression](../resources/intune-fencing-managementconditionexpression.md)|A expressão de instrução de condição de gerenciamento usada para avaliar se uma instrução de condição de gerenciamento foi ativada/desativada.|

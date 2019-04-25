@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 1fbf7679467e228531bb7bc57eb9e11f5a2c9eff
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31797757"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32532384"
 ---
 # <a name="update-embeddedsimdevicestate"></a>Atualizar embeddedSIMDeviceState
 
@@ -54,11 +54,11 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [embedde
 |createdDateTime|DateTimeOffset|A hora em que o status do dispositivo SIM incorporado foi criado. Lado do serviço gerado.|
 |modifiedDateTime|DateTimeOffset|A hora em que o status do dispositivo SIM incorporado foi modificado pela última vez. Atualizado o lado do serviço.|
 |lastSyncDateTime|DateTimeOffset|A hora em que o dispositivo SIM incorporado foi verificado pela última vez. Atualizado o lado do serviço.|
-|universalIntegratedCircuitCardIdentifier|Cadeia de caracteres|O identificador de cartão de circuito integrado universal (UICCID) identificando o hardware no qual um perfil deve ser implantado.|
+|universalIntegratedCircuitCardIdentifier|String|O identificador de cartão de circuito integrado universal (UICCID) identificando o hardware no qual um perfil deve ser implantado.|
 |deviceName|String|Nome do dispositivo para o qual a assinatura foi provisionada, por exemplo, DESKTOP-JOE|
-|userName|Cadeia de caracteres|Nome de usuário para o qual a assinatura foi provisionada, por exemplo,joe@contoso.com|
-|state|[embeddedSIMDeviceStateValue](../resources/intune-esim-embeddedsimdevicestatevalue.md)|O estado da operação de perfil aplicada ao dispositivo. Os valores possíveis são: `notEvaluated`, `failed`, `installing`, `installed`, `deleting`, `error`, `deleted`, `removedByUser`.|
-|stateDetails|Cadeia de caracteres|Descrição da cadeia de caracteres do estado de provisionamento.|
+|userName|Cadeia de caracteres|Nome de usuário para o qual a assinatura foi provisionada, por exemplo, joe@contoso.com|
+|estado|[embeddedSIMDeviceStateValue](../resources/intune-esim-embeddedsimdevicestatevalue.md)|O estado da operação de perfil aplicada ao dispositivo. Os valores possíveis são: `notEvaluated`, `failed`, `installing`, `installed`, `deleting`, `error`, `deleted`, `removedByUser`.|
+|stateDetails|String|Descrição da cadeia de caracteres do estado de provisionamento.|
 
 
 
