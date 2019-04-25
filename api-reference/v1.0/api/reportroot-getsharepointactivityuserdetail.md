@@ -5,29 +5,29 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: 7fec31dd0ceab917f85714cf452617a5bba4b32d
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572245"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32525590"
 ---
-# <a name="reportroot-getsharepointactivityuserdetail"></a><span data-ttu-id="420bb-103">reportRoot: getSharePointActivityUserDetail</span><span class="sxs-lookup"><span data-stu-id="420bb-103">reportRoot: getSharePointActivityUserDetail</span></span>
+# <a name="reportroot-getsharepointactivityuserdetail"></a><span data-ttu-id="fa4ad-103">reportRoot: getSharePointActivityUserDetail</span><span class="sxs-lookup"><span data-stu-id="fa4ad-103">reportRoot: getSharePointActivityUserDetail</span></span>
 
-<span data-ttu-id="420bb-104">Obtenha dados sobre as atividades do SharePoint por usuário.</span><span class="sxs-lookup"><span data-stu-id="420bb-104">Get details about SharePoint activity by user.</span></span>
+<span data-ttu-id="fa4ad-104">Obtenha dados sobre as atividades do SharePoint por usuário.</span><span class="sxs-lookup"><span data-stu-id="fa4ad-104">Get details about SharePoint activity by user.</span></span>
 
-> <span data-ttu-id="420bb-105">**Observação:** para saber mais sobre diferentes visualizações e nomes de relatórios, confira [Relatórios do Office 365 Reports - Atividade do SharePoint](https://support.office.com/client/SharePoint-activity-a91c958f-1279-499d-9959-12f0de08dc8f).</span><span class="sxs-lookup"><span data-stu-id="420bb-105">**Note:** For details about different report views and names, see [Office 365 Reports - SharePoint activity](https://support.office.com/client/SharePoint-activity-a91c958f-1279-499d-9959-12f0de08dc8f).</span></span>
+> <span data-ttu-id="fa4ad-105">**Observação:** para saber mais sobre diferentes visualizações e nomes de relatórios, confira [Relatórios do Office 365 Reports - Atividade do SharePoint](https://support.office.com/client/SharePoint-activity-a91c958f-1279-499d-9959-12f0de08dc8f).</span><span class="sxs-lookup"><span data-stu-id="fa4ad-105">**Note:** For details about different report views and names, see [Office 365 Reports - SharePoint activity](https://support.office.com/client/SharePoint-activity-a91c958f-1279-499d-9959-12f0de08dc8f).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="420bb-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="420bb-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="fa4ad-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="fa4ad-106">Permissions</span></span>
 
-<span data-ttu-id="420bb-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="420bb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="fa4ad-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="fa4ad-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="420bb-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="420bb-109">Permission type</span></span>                        | <span data-ttu-id="420bb-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="420bb-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="fa4ad-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="fa4ad-109">Permission type</span></span>                        | <span data-ttu-id="fa4ad-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="fa4ad-110">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :--------------------------------------- |
-| <span data-ttu-id="420bb-111">Delegada (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="420bb-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="420bb-112">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="420bb-112">Reports.Read.All</span></span>                         |
-| <span data-ttu-id="420bb-113">Delegada (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="420bb-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="420bb-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="420bb-114">Not supported.</span></span>                           |
-| <span data-ttu-id="420bb-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="420bb-115">Application</span></span>                            | <span data-ttu-id="420bb-116">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="420bb-116">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="fa4ad-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="fa4ad-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="fa4ad-112">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="fa4ad-112">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="fa4ad-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="fa4ad-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fa4ad-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="fa4ad-114">Not supported.</span></span>                           |
+| <span data-ttu-id="fa4ad-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="fa4ad-115">Application</span></span>                            | <span data-ttu-id="fa4ad-116">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="fa4ad-116">Reports.Read.All</span></span>                         |
 
-## <a name="http-request"></a><span data-ttu-id="420bb-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="420bb-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="fa4ad-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="fa4ad-117">HTTP request</span></span>
 
 <!-- { "blockType": "samples" } --> 
 
@@ -36,50 +36,50 @@ GET /reports/getSharePointActivityUserDetail(period='{period_value}')
 GET /reports/getSharePointActivityUserDetail(date={date_value})
 ```
 
-## <a name="function-parameters"></a><span data-ttu-id="420bb-118">Parâmetros de função</span><span class="sxs-lookup"><span data-stu-id="420bb-118">Function parameters</span></span>
+## <a name="function-parameters"></a><span data-ttu-id="fa4ad-118">Parâmetros de função</span><span class="sxs-lookup"><span data-stu-id="fa4ad-118">Function parameters</span></span>
 
-<span data-ttu-id="420bb-119">Na URL da solicitação, forneça um valor válido a um dos seguintes parâmetros.</span><span class="sxs-lookup"><span data-stu-id="420bb-119">In the request URL, provide one of the following parameters with a valid value.</span></span>
+<span data-ttu-id="fa4ad-119">Na URL da solicitação, forneça um valor válido a um dos seguintes parâmetros.</span><span class="sxs-lookup"><span data-stu-id="fa4ad-119">In the request URL, provide one of the following parameters with a valid value.</span></span>
 
-| <span data-ttu-id="420bb-120">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="420bb-120">Parameter</span></span> | <span data-ttu-id="420bb-121">Tipo</span><span class="sxs-lookup"><span data-stu-id="420bb-121">Type</span></span>   | <span data-ttu-id="420bb-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="420bb-122">Description</span></span>                              |
+| <span data-ttu-id="fa4ad-120">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="fa4ad-120">Parameter</span></span> | <span data-ttu-id="fa4ad-121">Tipo</span><span class="sxs-lookup"><span data-stu-id="fa4ad-121">Type</span></span>   | <span data-ttu-id="fa4ad-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="fa4ad-122">Description</span></span>                              |
 | :-------- | :----- | :--------------------------------------- |
-| <span data-ttu-id="420bb-123">ponto</span><span class="sxs-lookup"><span data-stu-id="420bb-123">period</span></span>    | <span data-ttu-id="420bb-124">string</span><span class="sxs-lookup"><span data-stu-id="420bb-124">string</span></span> | <span data-ttu-id="420bb-125">Especifica o período de tempo durante o qual o relatório é agregado.</span><span class="sxs-lookup"><span data-stu-id="420bb-125">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="420bb-126">Os valores com suporte para {period_value} são: D7, D30, D90 e D180.</span><span class="sxs-lookup"><span data-stu-id="420bb-126">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="420bb-127">Eles seguem o formato D*n*, em que *n* representa o número de dias em que o relatório é agregado.</span><span class="sxs-lookup"><span data-stu-id="420bb-127">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> |
-| <span data-ttu-id="420bb-128">data</span><span class="sxs-lookup"><span data-stu-id="420bb-128">date</span></span>      | <span data-ttu-id="420bb-129">Data</span><span class="sxs-lookup"><span data-stu-id="420bb-129">Date</span></span>   | <span data-ttu-id="420bb-130">Especifica a data para a qual você deseja visualizar os usuários que realizaram qualquer atividade.</span><span class="sxs-lookup"><span data-stu-id="420bb-130">Specifies the date for which you would like to view the users who performed any activity.</span></span> <span data-ttu-id="420bb-131">{date_value} deve ter um formato de AAAA-MM-DD.</span><span class="sxs-lookup"><span data-stu-id="420bb-131">{date_value} must have a format of YYYY-MM-DD.</span></span> <span data-ttu-id="420bb-132">Como este relatório está disponível apenas para os últimos 30 dias, {date_value} deve ser uma data desse intervalo.</span><span class="sxs-lookup"><span data-stu-id="420bb-132">As this report is only available for the past 30 days, {date_value} should be a date from that range.</span></span> |
+| <span data-ttu-id="fa4ad-123">ponto</span><span class="sxs-lookup"><span data-stu-id="fa4ad-123">period</span></span>    | <span data-ttu-id="fa4ad-124">cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="fa4ad-124">string</span></span> | <span data-ttu-id="fa4ad-125">Especifica o período de tempo durante o qual o relatório é agregado.</span><span class="sxs-lookup"><span data-stu-id="fa4ad-125">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="fa4ad-126">Os valores com suporte para {period_value} são: D7, D30, D90 e D180.</span><span class="sxs-lookup"><span data-stu-id="fa4ad-126">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="fa4ad-127">Eles seguem o formato D*n*, em que *n* representa o número de dias em que o relatório é agregado.</span><span class="sxs-lookup"><span data-stu-id="fa4ad-127">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> |
+| <span data-ttu-id="fa4ad-128">data</span><span class="sxs-lookup"><span data-stu-id="fa4ad-128">date</span></span>      | <span data-ttu-id="fa4ad-129">Data</span><span class="sxs-lookup"><span data-stu-id="fa4ad-129">Date</span></span>   | <span data-ttu-id="fa4ad-130">Especifica a data para a qual você deseja visualizar os usuários que realizaram qualquer atividade.</span><span class="sxs-lookup"><span data-stu-id="fa4ad-130">Specifies the date for which you would like to view the users who performed any activity.</span></span> <span data-ttu-id="fa4ad-131">{date_value} deve ter um formato de AAAA-MM-DD.</span><span class="sxs-lookup"><span data-stu-id="fa4ad-131">{date_value} must have a format of YYYY-MM-DD.</span></span> <span data-ttu-id="fa4ad-132">Como este relatório está disponível apenas para os últimos 30 dias, {date_value} deve ser uma data desse intervalo.</span><span class="sxs-lookup"><span data-stu-id="fa4ad-132">As this report is only available for the past 30 days, {date_value} should be a date from that range.</span></span> |
 
-> <span data-ttu-id="420bb-133">**Observação:** você precisa definir o período ou data na URL.</span><span class="sxs-lookup"><span data-stu-id="420bb-133">**Note:** You need to set either period or date in the URL.</span></span>
+> <span data-ttu-id="fa4ad-133">**Observação:** você precisa definir o período ou data na URL.</span><span class="sxs-lookup"><span data-stu-id="fa4ad-133">**Note:** You need to set either period or date in the URL.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="420bb-134">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="420bb-134">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="fa4ad-134">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="fa4ad-134">Request headers</span></span>
 
-| <span data-ttu-id="420bb-135">Nome</span><span class="sxs-lookup"><span data-stu-id="420bb-135">Name</span></span>          | <span data-ttu-id="420bb-136">Descrição</span><span class="sxs-lookup"><span data-stu-id="420bb-136">Description</span></span>                              |
+| <span data-ttu-id="fa4ad-135">Nome</span><span class="sxs-lookup"><span data-stu-id="fa4ad-135">Name</span></span>          | <span data-ttu-id="fa4ad-136">Descrição</span><span class="sxs-lookup"><span data-stu-id="fa4ad-136">Description</span></span>                              |
 | :------------ | :--------------------------------------- |
-| <span data-ttu-id="420bb-137">Autorização</span><span class="sxs-lookup"><span data-stu-id="420bb-137">Authorization</span></span> | <span data-ttu-id="420bb-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="420bb-p104">Bearer {token}. Required.</span></span>                |
-| <span data-ttu-id="420bb-140">If-None-Match</span><span class="sxs-lookup"><span data-stu-id="420bb-140">If-None-Match</span></span> | <span data-ttu-id="420bb-141">Se este cabeçalho de solicitação estiver incluso e a eTag fornecida corresponder à marca atual do arquivo, um código de resposta `304 Not Modified` será exibido.</span><span class="sxs-lookup"><span data-stu-id="420bb-141">If this request header is included and the eTag provided matches the current tag on the file, a `304 Not Modified` response code is returned.</span></span> <span data-ttu-id="420bb-142">Opcional.</span><span class="sxs-lookup"><span data-stu-id="420bb-142">Optional.</span></span> |
+| <span data-ttu-id="fa4ad-137">Autorização</span><span class="sxs-lookup"><span data-stu-id="fa4ad-137">Authorization</span></span> | <span data-ttu-id="fa4ad-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="fa4ad-p104">Bearer {token}. Required.</span></span>                |
+| <span data-ttu-id="fa4ad-140">If-None-Match</span><span class="sxs-lookup"><span data-stu-id="fa4ad-140">If-None-Match</span></span> | <span data-ttu-id="fa4ad-141">Se este cabeçalho de solicitação estiver incluso e a eTag fornecida corresponder à marca atual do arquivo, um código de resposta `304 Not Modified` será exibido.</span><span class="sxs-lookup"><span data-stu-id="fa4ad-141">If this request header is included and the eTag provided matches the current tag on the file, a `304 Not Modified` response code is returned.</span></span> <span data-ttu-id="fa4ad-142">Opcional.</span><span class="sxs-lookup"><span data-stu-id="fa4ad-142">Optional.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="420bb-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="420bb-143">Response</span></span>
+## <a name="response"></a><span data-ttu-id="fa4ad-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="fa4ad-143">Response</span></span>
 
-<span data-ttu-id="420bb-144">Se for bem-sucedido, este método retorna uma resposta `302 Found` que redireciona para uma URL de download pré-autenticada para o relatório.</span><span class="sxs-lookup"><span data-stu-id="420bb-144">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="420bb-145">Essa URL pode ser encontrada no cabeçalho `Location` na resposta.</span><span class="sxs-lookup"><span data-stu-id="420bb-145">That URL can be found in the `Location` header in the response.</span></span>
+<span data-ttu-id="fa4ad-144">Se for bem-sucedido, este método retorna uma resposta `302 Found` que redireciona para uma URL de download pré-autenticada para o relatório.</span><span class="sxs-lookup"><span data-stu-id="fa4ad-144">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="fa4ad-145">Essa URL pode ser encontrada no cabeçalho `Location` na resposta.</span><span class="sxs-lookup"><span data-stu-id="fa4ad-145">That URL can be found in the `Location` header in the response.</span></span>
 
-<span data-ttu-id="420bb-146">As URLs de download previamente autenticadas são válidas apenas por um curto período de tempo (alguns minutos) e não exigem um cabeçalho `Authorization`.</span><span class="sxs-lookup"><span data-stu-id="420bb-146">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
+<span data-ttu-id="fa4ad-146">As URLs de download previamente autenticadas são válidas apenas por um curto período de tempo (alguns minutos) e não exigem um cabeçalho `Authorization`.</span><span class="sxs-lookup"><span data-stu-id="fa4ad-146">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
 
-<span data-ttu-id="420bb-147">O arquivo CSV possui os seguintes cabeçalhos para colunas.</span><span class="sxs-lookup"><span data-stu-id="420bb-147">The CSV file has the following headers for columns.</span></span>
+<span data-ttu-id="fa4ad-147">O arquivo CSV possui os seguintes cabeçalhos para colunas.</span><span class="sxs-lookup"><span data-stu-id="fa4ad-147">The CSV file has the following headers for columns.</span></span>
 
-- <span data-ttu-id="420bb-148">Data de atualização do relatório</span><span class="sxs-lookup"><span data-stu-id="420bb-148">Report Refresh Date</span></span>
-- <span data-ttu-id="420bb-149">Nome UPN</span><span class="sxs-lookup"><span data-stu-id="420bb-149">User Principal Name</span></span>
-- <span data-ttu-id="420bb-150">Excluído</span><span class="sxs-lookup"><span data-stu-id="420bb-150">Is Deleted</span></span>
-- <span data-ttu-id="420bb-151">Data de exclusão</span><span class="sxs-lookup"><span data-stu-id="420bb-151">Deleted Date</span></span>
-- <span data-ttu-id="420bb-152">Data da última atividade</span><span class="sxs-lookup"><span data-stu-id="420bb-152">Last Activity Date</span></span>
-- <span data-ttu-id="420bb-153">Contagem de arquivos exibidos ou editados</span><span class="sxs-lookup"><span data-stu-id="420bb-153">Viewed Or Edited File Count</span></span>
-- <span data-ttu-id="420bb-154">Contagem de arquivos sincronizados</span><span class="sxs-lookup"><span data-stu-id="420bb-154">Synced File Count</span></span>
-- <span data-ttu-id="420bb-155">Contagem de arquivos compartilhados internamente</span><span class="sxs-lookup"><span data-stu-id="420bb-155">Shared Internally File Count</span></span>
-- <span data-ttu-id="420bb-156">Contagem de arquivos compartilhados externamente</span><span class="sxs-lookup"><span data-stu-id="420bb-156">Shared Externally File Count</span></span>
-- <span data-ttu-id="420bb-157">Contagem de páginas visitadas</span><span class="sxs-lookup"><span data-stu-id="420bb-157">Visited Page Count</span></span>
-- <span data-ttu-id="420bb-158">Produtos Atribuídos</span><span class="sxs-lookup"><span data-stu-id="420bb-158">Assigned Products</span></span>
-- <span data-ttu-id="420bb-159">Período de Relatório</span><span class="sxs-lookup"><span data-stu-id="420bb-159">Report Period</span></span>
+- <span data-ttu-id="fa4ad-148">Data de atualização do relatório</span><span class="sxs-lookup"><span data-stu-id="fa4ad-148">Report Refresh Date</span></span>
+- <span data-ttu-id="fa4ad-149">Nome UPN</span><span class="sxs-lookup"><span data-stu-id="fa4ad-149">User Principal Name</span></span>
+- <span data-ttu-id="fa4ad-150">Excluído</span><span class="sxs-lookup"><span data-stu-id="fa4ad-150">Is Deleted</span></span>
+- <span data-ttu-id="fa4ad-151">Data de exclusão</span><span class="sxs-lookup"><span data-stu-id="fa4ad-151">Deleted Date</span></span>
+- <span data-ttu-id="fa4ad-152">Data da última atividade</span><span class="sxs-lookup"><span data-stu-id="fa4ad-152">Last Activity Date</span></span>
+- <span data-ttu-id="fa4ad-153">Contagem de arquivos exibidos ou editados</span><span class="sxs-lookup"><span data-stu-id="fa4ad-153">Viewed Or Edited File Count</span></span>
+- <span data-ttu-id="fa4ad-154">Contagem de arquivos sincronizados</span><span class="sxs-lookup"><span data-stu-id="fa4ad-154">Synced File Count</span></span>
+- <span data-ttu-id="fa4ad-155">Contagem de arquivos compartilhados internamente</span><span class="sxs-lookup"><span data-stu-id="fa4ad-155">Shared Internally File Count</span></span>
+- <span data-ttu-id="fa4ad-156">Contagem de arquivos compartilhados externamente</span><span class="sxs-lookup"><span data-stu-id="fa4ad-156">Shared Externally File Count</span></span>
+- <span data-ttu-id="fa4ad-157">Contagem de páginas visitadas</span><span class="sxs-lookup"><span data-stu-id="fa4ad-157">Visited Page Count</span></span>
+- <span data-ttu-id="fa4ad-158">Produtos Atribuídos</span><span class="sxs-lookup"><span data-stu-id="fa4ad-158">Assigned Products</span></span>
+- <span data-ttu-id="fa4ad-159">Período de Relatório</span><span class="sxs-lookup"><span data-stu-id="fa4ad-159">Report Period</span></span>
 
-## <a name="example"></a><span data-ttu-id="420bb-160">Exemplo</span><span class="sxs-lookup"><span data-stu-id="420bb-160">Example</span></span>
+## <a name="example"></a><span data-ttu-id="fa4ad-160">Exemplo</span><span class="sxs-lookup"><span data-stu-id="fa4ad-160">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="420bb-161">Solicitação</span><span class="sxs-lookup"><span data-stu-id="420bb-161">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="fa4ad-161">Solicitação</span><span class="sxs-lookup"><span data-stu-id="fa4ad-161">Request</span></span>
 
-<span data-ttu-id="420bb-162">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="420bb-162">The following is an example of the request.</span></span>
+<span data-ttu-id="fa4ad-162">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="fa4ad-162">The following is an example of the request.</span></span>
 
 <!--{
   "blockType": "request",
@@ -91,9 +91,9 @@ GET /reports/getSharePointActivityUserDetail(date={date_value})
 GET https://graph.microsoft.com/v1.0/reports/getSharePointActivityUserDetail(period='D7')
 ```
 
-#### <a name="response"></a><span data-ttu-id="420bb-163">Resposta</span><span class="sxs-lookup"><span data-stu-id="420bb-163">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="fa4ad-163">Resposta</span><span class="sxs-lookup"><span data-stu-id="fa4ad-163">Response</span></span>
 
-<span data-ttu-id="420bb-164">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="420bb-164">The following is an example of the response.</span></span>
+<span data-ttu-id="fa4ad-164">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="fa4ad-164">The following is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -107,7 +107,7 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
-<span data-ttu-id="420bb-165">Siga o redirecionamento 302 e o arquivo CSV baixado terá o seguinte esquema.</span><span class="sxs-lookup"><span data-stu-id="420bb-165">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
+<span data-ttu-id="fa4ad-165">Siga o redirecionamento 302 e o arquivo CSV baixado terá o seguinte esquema.</span><span class="sxs-lookup"><span data-stu-id="fa4ad-165">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 

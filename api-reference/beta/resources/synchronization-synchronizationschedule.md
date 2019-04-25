@@ -1,30 +1,30 @@
 ---
-title: tipo de recurso de synchronizationSchedule
-description: Define a agenda usada para executar um synchronizationJob.
+title: tipo de recurso synchronizationSchedule
+description: Define o agendamento usado para executar um synchronizationJob.
 localization_priority: Normal
 ms.openlocfilehash: 0e9714e4833c5586e54c8d812a0d72e41a513e5b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515584"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32525961"
 ---
-# <a name="synchronizationschedule-resource-type"></a><span data-ttu-id="d93a2-103">tipo de recurso de synchronizationSchedule</span><span class="sxs-lookup"><span data-stu-id="d93a2-103">synchronizationSchedule resource type</span></span>
+# <a name="synchronizationschedule-resource-type"></a><span data-ttu-id="5fa5b-103">tipo de recurso synchronizationSchedule</span><span class="sxs-lookup"><span data-stu-id="5fa5b-103">synchronizationSchedule resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="d93a2-104">Define a agenda usada para executar um [synchronizationJob](synchronization-synchronizationjob.md).</span><span class="sxs-lookup"><span data-stu-id="d93a2-104">Defines the schedule used to run a [synchronizationJob](synchronization-synchronizationjob.md).</span></span>
+<span data-ttu-id="5fa5b-104">Define o agendamento usado para executar um [synchronizationJob](synchronization-synchronizationjob.md).</span><span class="sxs-lookup"><span data-stu-id="5fa5b-104">Defines the schedule used to run a [synchronizationJob](synchronization-synchronizationjob.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="d93a2-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="d93a2-105">Properties</span></span>
-| <span data-ttu-id="d93a2-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="d93a2-106">Property</span></span>     | <span data-ttu-id="d93a2-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="d93a2-107">Type</span></span>   |<span data-ttu-id="d93a2-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="d93a2-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="5fa5b-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="5fa5b-105">Properties</span></span>
+| <span data-ttu-id="5fa5b-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="5fa5b-106">Property</span></span>     | <span data-ttu-id="5fa5b-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="5fa5b-107">Type</span></span>   |<span data-ttu-id="5fa5b-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="5fa5b-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="d93a2-109">Expiração</span><span class="sxs-lookup"><span data-stu-id="d93a2-109">expiration</span></span>|<span data-ttu-id="d93a2-110">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="d93a2-110">DateTimeOffset</span></span>|<span data-ttu-id="d93a2-111">Data e hora em que esse trabalho expirará.</span><span class="sxs-lookup"><span data-stu-id="d93a2-111">Date and time when this job will expire.</span></span> <span data-ttu-id="d93a2-112">O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC.</span><span class="sxs-lookup"><span data-stu-id="d93a2-112">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="d93a2-113">Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.</span><span class="sxs-lookup"><span data-stu-id="d93a2-113">For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.</span></span>|
-|<span data-ttu-id="d93a2-114">interval</span><span class="sxs-lookup"><span data-stu-id="d93a2-114">interval</span></span>|<span data-ttu-id="d93a2-115">Duration</span><span class="sxs-lookup"><span data-stu-id="d93a2-115">Duration</span></span>|<span data-ttu-id="d93a2-116">O intervalo entre iterações de sincronização.</span><span class="sxs-lookup"><span data-stu-id="d93a2-116">The interval between synchronization iterations.</span></span>|
-|<span data-ttu-id="d93a2-117">estado</span><span class="sxs-lookup"><span data-stu-id="d93a2-117">state</span></span>|<span data-ttu-id="d93a2-118">String</span><span class="sxs-lookup"><span data-stu-id="d93a2-118">String</span></span>| <span data-ttu-id="d93a2-119">Os valores possíveis são: `Active` e `Disabled`.</span><span class="sxs-lookup"><span data-stu-id="d93a2-119">Possible values are: `Active`, `Disabled`.</span></span>|
+|<span data-ttu-id="5fa5b-109">validade</span><span class="sxs-lookup"><span data-stu-id="5fa5b-109">expiration</span></span>|<span data-ttu-id="5fa5b-110">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="5fa5b-110">DateTimeOffset</span></span>|<span data-ttu-id="5fa5b-111">Data e hora em que este trabalho vai expirar.</span><span class="sxs-lookup"><span data-stu-id="5fa5b-111">Date and time when this job will expire.</span></span> <span data-ttu-id="5fa5b-112">O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC.</span><span class="sxs-lookup"><span data-stu-id="5fa5b-112">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="5fa5b-113">Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.</span><span class="sxs-lookup"><span data-stu-id="5fa5b-113">For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.</span></span>|
+|<span data-ttu-id="5fa5b-114">interval</span><span class="sxs-lookup"><span data-stu-id="5fa5b-114">interval</span></span>|<span data-ttu-id="5fa5b-115">Duração</span><span class="sxs-lookup"><span data-stu-id="5fa5b-115">Duration</span></span>|<span data-ttu-id="5fa5b-116">O intervalo entre as iterações de sincronização.</span><span class="sxs-lookup"><span data-stu-id="5fa5b-116">The interval between synchronization iterations.</span></span>|
+|<span data-ttu-id="5fa5b-117">state</span><span class="sxs-lookup"><span data-stu-id="5fa5b-117">state</span></span>|<span data-ttu-id="5fa5b-118">String</span><span class="sxs-lookup"><span data-stu-id="5fa5b-118">String</span></span>| <span data-ttu-id="5fa5b-119">Os valores possíveis são: `Active` e `Disabled`.</span><span class="sxs-lookup"><span data-stu-id="5fa5b-119">Possible values are: `Active`, `Disabled`.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="d93a2-120">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="d93a2-120">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="5fa5b-120">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="5fa5b-120">JSON representation</span></span>
 
-<span data-ttu-id="d93a2-121">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="d93a2-121">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="5fa5b-121">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="5fa5b-121">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

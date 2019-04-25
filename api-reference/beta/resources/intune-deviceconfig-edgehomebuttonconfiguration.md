@@ -5,29 +5,29 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 018b8b44649d5fa9c43ce8d96db5eff63d8ec948
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31784534"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32525289"
 ---
-# <a name="edgehomebuttonconfiguration-resource-type"></a><span data-ttu-id="2e39a-103">tipo de recurso edgeHomeButtonConfiguration</span><span class="sxs-lookup"><span data-stu-id="2e39a-103">edgeHomeButtonConfiguration resource type</span></span>
+# <a name="edgehomebuttonconfiguration-resource-type"></a><span data-ttu-id="a9ee7-103">tipo de recurso edgeHomeButtonConfiguration</span><span class="sxs-lookup"><span data-stu-id="a9ee7-103">edgeHomeButtonConfiguration resource type</span></span>
 
-> <span data-ttu-id="2e39a-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="2e39a-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="a9ee7-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="a9ee7-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="2e39a-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="2e39a-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="a9ee7-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="a9ee7-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="2e39a-106">A classe base de configuração do botão de página inicial usada para identificar as opções disponíveis</span><span class="sxs-lookup"><span data-stu-id="2e39a-106">The home button configuration base class used to identify the available options</span></span>
+<span data-ttu-id="a9ee7-106">A classe base de configuração do botão de página inicial usada para identificar as opções disponíveis</span><span class="sxs-lookup"><span data-stu-id="a9ee7-106">The home button configuration base class used to identify the available options</span></span>
 
-## <a name="properties"></a><span data-ttu-id="2e39a-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="2e39a-107">Properties</span></span>
-|<span data-ttu-id="2e39a-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="2e39a-108">Property</span></span>|<span data-ttu-id="2e39a-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="2e39a-109">Type</span></span>|<span data-ttu-id="2e39a-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="2e39a-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="a9ee7-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="a9ee7-107">Properties</span></span>
+|<span data-ttu-id="a9ee7-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="a9ee7-108">Property</span></span>|<span data-ttu-id="a9ee7-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="a9ee7-109">Type</span></span>|<span data-ttu-id="a9ee7-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="a9ee7-110">Description</span></span>|
 |:---|:---|:---|
 
-## <a name="relationships"></a><span data-ttu-id="2e39a-111">Relações</span><span class="sxs-lookup"><span data-stu-id="2e39a-111">Relationships</span></span>
-<span data-ttu-id="2e39a-112">Nenhuma</span><span class="sxs-lookup"><span data-stu-id="2e39a-112">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="a9ee7-111">Relações</span><span class="sxs-lookup"><span data-stu-id="a9ee7-111">Relationships</span></span>
+<span data-ttu-id="a9ee7-112">Nenhum</span><span class="sxs-lookup"><span data-stu-id="a9ee7-112">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="2e39a-113">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="2e39a-113">JSON Representation</span></span>
-<span data-ttu-id="2e39a-114">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="2e39a-114">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="a9ee7-113">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="a9ee7-113">JSON Representation</span></span>
+<span data-ttu-id="a9ee7-114">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="a9ee7-114">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.edgeHomeButtonConfiguration"

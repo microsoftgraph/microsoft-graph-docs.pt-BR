@@ -5,30 +5,30 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: eabd6e795558ee719ef3e6c1ac79039b3ef040b7
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31794663"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32526710"
 ---
-# <a name="update-telecomexpensemanagementpartner"></a><span data-ttu-id="99da5-103">Atualizar telecomExpenseManagementPartner</span><span class="sxs-lookup"><span data-stu-id="99da5-103">Update telecomExpenseManagementPartner</span></span>
+# <a name="update-telecomexpensemanagementpartner"></a><span data-ttu-id="c3617-103">Atualizar telecomExpenseManagementPartner</span><span class="sxs-lookup"><span data-stu-id="c3617-103">Update telecomExpenseManagementPartner</span></span>
 
-> <span data-ttu-id="99da5-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="99da5-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="c3617-104">**Importante:** As APIs do Microsoft Graph na versão/beta estão sujeitas a alterações; Não há suporte para o uso de produção.</span><span class="sxs-lookup"><span data-stu-id="c3617-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="99da5-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="99da5-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="c3617-105">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="c3617-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="99da5-106">Atualizar as propriedades de um objeto [telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md).</span><span class="sxs-lookup"><span data-stu-id="99da5-106">Update the properties of a [telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md) object.</span></span>
+<span data-ttu-id="c3617-106">Atualizar as propriedades de um objeto [telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md).</span><span class="sxs-lookup"><span data-stu-id="c3617-106">Update the properties of a [telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="99da5-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="99da5-107">Prerequisites</span></span>
-<span data-ttu-id="99da5-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="99da5-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="c3617-107">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="c3617-107">Prerequisites</span></span>
+<span data-ttu-id="c3617-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c3617-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="99da5-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="99da5-110">Permission type</span></span>|<span data-ttu-id="99da5-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="99da5-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="c3617-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="c3617-110">Permission type</span></span>|<span data-ttu-id="c3617-111">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="c3617-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="99da5-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="99da5-112">Delegated (work or school account)</span></span>|<span data-ttu-id="99da5-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="99da5-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="99da5-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="99da5-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="99da5-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="99da5-115">Not supported.</span></span>|
-|<span data-ttu-id="99da5-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="99da5-116">Application</span></span>|<span data-ttu-id="99da5-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="99da5-117">Not supported.</span></span>|
+|<span data-ttu-id="c3617-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="c3617-112">Delegated (work or school account)</span></span>|<span data-ttu-id="c3617-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c3617-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="c3617-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="c3617-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="c3617-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c3617-115">Not supported.</span></span>|
+|<span data-ttu-id="c3617-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="c3617-116">Application</span></span>|<span data-ttu-id="c3617-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c3617-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="99da5-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="99da5-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c3617-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="c3617-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,35 +37,35 @@ ms.locfileid: "31794663"
 PATCH /deviceManagement/telecomExpenseManagementPartners/{telecomExpenseManagementPartnerId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="99da5-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="99da5-119">Request headers</span></span>
-|<span data-ttu-id="99da5-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="99da5-120">Header</span></span>|<span data-ttu-id="99da5-121">Valor</span><span class="sxs-lookup"><span data-stu-id="99da5-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="c3617-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="c3617-119">Request headers</span></span>
+|<span data-ttu-id="c3617-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="c3617-120">Header</span></span>|<span data-ttu-id="c3617-121">Valor</span><span class="sxs-lookup"><span data-stu-id="c3617-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="99da5-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="99da5-122">Authorization</span></span>|<span data-ttu-id="99da5-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="99da5-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="99da5-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="99da5-124">Accept</span></span>|<span data-ttu-id="99da5-125">application/json</span><span class="sxs-lookup"><span data-stu-id="99da5-125">application/json</span></span>|
+|<span data-ttu-id="c3617-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="c3617-122">Authorization</span></span>|<span data-ttu-id="c3617-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="c3617-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="c3617-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="c3617-124">Accept</span></span>|<span data-ttu-id="c3617-125">application/json</span><span class="sxs-lookup"><span data-stu-id="c3617-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="99da5-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="99da5-126">Request body</span></span>
-<span data-ttu-id="99da5-127">No corpo da solicitação, forneça uma representação JSON do objeto [telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md).</span><span class="sxs-lookup"><span data-stu-id="99da5-127">In the request body, supply a JSON representation for the [telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c3617-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="c3617-126">Request body</span></span>
+<span data-ttu-id="c3617-127">No corpo da solicitação, forneça uma representação JSON do objeto [telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md).</span><span class="sxs-lookup"><span data-stu-id="c3617-127">In the request body, supply a JSON representation for the [telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md) object.</span></span>
 
-<span data-ttu-id="99da5-128">A tabela a seguir mostra as propriedades que são necessárias ao criar [telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md).</span><span class="sxs-lookup"><span data-stu-id="99da5-128">The following table shows the properties that are required when you create the [telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md).</span></span>
+<span data-ttu-id="c3617-128">A tabela a seguir mostra as propriedades que são necessárias ao criar [telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md).</span><span class="sxs-lookup"><span data-stu-id="c3617-128">The following table shows the properties that are required when you create the [telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md).</span></span>
 
-|<span data-ttu-id="99da5-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="99da5-129">Property</span></span>|<span data-ttu-id="99da5-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="99da5-130">Type</span></span>|<span data-ttu-id="99da5-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="99da5-131">Description</span></span>|
+|<span data-ttu-id="c3617-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="c3617-129">Property</span></span>|<span data-ttu-id="c3617-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="c3617-130">Type</span></span>|<span data-ttu-id="c3617-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="c3617-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="99da5-132">id</span><span class="sxs-lookup"><span data-stu-id="99da5-132">id</span></span>|<span data-ttu-id="99da5-133">String</span><span class="sxs-lookup"><span data-stu-id="99da5-133">String</span></span>|<span data-ttu-id="99da5-134">O identificador exclusivo do parceiro TEM.</span><span class="sxs-lookup"><span data-stu-id="99da5-134">Unique identifier of the TEM partner.</span></span>|
-|<span data-ttu-id="99da5-135">displayName</span><span class="sxs-lookup"><span data-stu-id="99da5-135">displayName</span></span>|<span data-ttu-id="99da5-136">String</span><span class="sxs-lookup"><span data-stu-id="99da5-136">String</span></span>|<span data-ttu-id="99da5-137">Nome de exibição do parceiro TEM.</span><span class="sxs-lookup"><span data-stu-id="99da5-137">Display name of the TEM partner.</span></span>|
-|<span data-ttu-id="99da5-138">url</span><span class="sxs-lookup"><span data-stu-id="99da5-138">url</span></span>|<span data-ttu-id="99da5-139">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="99da5-139">String</span></span>|<span data-ttu-id="99da5-140">URL do painel de controle administrativo do parceiro TEM, em que um administrador pode configurar o serviço TEM.</span><span class="sxs-lookup"><span data-stu-id="99da5-140">URL of the TEM partner's administrative control panel, where an administrator can configure their TEM service.</span></span>|
-|<span data-ttu-id="99da5-141">appAuthorized</span><span class="sxs-lookup"><span data-stu-id="99da5-141">appAuthorized</span></span>|<span data-ttu-id="99da5-142">Booliano</span><span class="sxs-lookup"><span data-stu-id="99da5-142">Boolean</span></span>|<span data-ttu-id="99da5-143">Se aplicativo AAD do parceiro foi autorizado a acessar o Intune.</span><span class="sxs-lookup"><span data-stu-id="99da5-143">Whether the partner's AAD app has been authorized to access Intune.</span></span>|
-|<span data-ttu-id="99da5-144">enabled</span><span class="sxs-lookup"><span data-stu-id="99da5-144">enabled</span></span>|<span data-ttu-id="99da5-145">Boolean</span><span class="sxs-lookup"><span data-stu-id="99da5-145">Boolean</span></span>|<span data-ttu-id="99da5-146">Se a conexão do Intune com o serviço TEM está habilitada ou desabilitada no momento.</span><span class="sxs-lookup"><span data-stu-id="99da5-146">Whether Intune's connection to the TEM service is currently enabled or disabled.</span></span>|
-|<span data-ttu-id="99da5-147">lastConnectionDateTime</span><span class="sxs-lookup"><span data-stu-id="99da5-147">lastConnectionDateTime</span></span>|<span data-ttu-id="99da5-148">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="99da5-148">DateTimeOffset</span></span>|<span data-ttu-id="99da5-149">Carimbo de data/hora da última solicitação enviada ao Intune pelo parceiro TEM.</span><span class="sxs-lookup"><span data-stu-id="99da5-149">Timestamp of the last request sent to Intune by the TEM partner.</span></span>|
+|<span data-ttu-id="c3617-132">id</span><span class="sxs-lookup"><span data-stu-id="c3617-132">id</span></span>|<span data-ttu-id="c3617-133">String</span><span class="sxs-lookup"><span data-stu-id="c3617-133">String</span></span>|<span data-ttu-id="c3617-134">O identificador exclusivo do parceiro TEM.</span><span class="sxs-lookup"><span data-stu-id="c3617-134">Unique identifier of the TEM partner.</span></span>|
+|<span data-ttu-id="c3617-135">displayName</span><span class="sxs-lookup"><span data-stu-id="c3617-135">displayName</span></span>|<span data-ttu-id="c3617-136">String</span><span class="sxs-lookup"><span data-stu-id="c3617-136">String</span></span>|<span data-ttu-id="c3617-137">Nome de exibição do parceiro TEM.</span><span class="sxs-lookup"><span data-stu-id="c3617-137">Display name of the TEM partner.</span></span>|
+|<span data-ttu-id="c3617-138">url</span><span class="sxs-lookup"><span data-stu-id="c3617-138">url</span></span>|<span data-ttu-id="c3617-139">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="c3617-139">String</span></span>|<span data-ttu-id="c3617-140">URL do painel de controle administrativo do parceiro TEM, em que um administrador pode configurar o serviço TEM.</span><span class="sxs-lookup"><span data-stu-id="c3617-140">URL of the TEM partner's administrative control panel, where an administrator can configure their TEM service.</span></span>|
+|<span data-ttu-id="c3617-141">appAuthorized</span><span class="sxs-lookup"><span data-stu-id="c3617-141">appAuthorized</span></span>|<span data-ttu-id="c3617-142">Booliano</span><span class="sxs-lookup"><span data-stu-id="c3617-142">Boolean</span></span>|<span data-ttu-id="c3617-143">Se aplicativo AAD do parceiro foi autorizado a acessar o Intune.</span><span class="sxs-lookup"><span data-stu-id="c3617-143">Whether the partner's AAD app has been authorized to access Intune.</span></span>|
+|<span data-ttu-id="c3617-144">enabled</span><span class="sxs-lookup"><span data-stu-id="c3617-144">enabled</span></span>|<span data-ttu-id="c3617-145">Boolean</span><span class="sxs-lookup"><span data-stu-id="c3617-145">Boolean</span></span>|<span data-ttu-id="c3617-146">Se a conexão do Intune com o serviço TEM está habilitada ou desabilitada no momento.</span><span class="sxs-lookup"><span data-stu-id="c3617-146">Whether Intune's connection to the TEM service is currently enabled or disabled.</span></span>|
+|<span data-ttu-id="c3617-147">lastConnectionDateTime</span><span class="sxs-lookup"><span data-stu-id="c3617-147">lastConnectionDateTime</span></span>|<span data-ttu-id="c3617-148">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="c3617-148">DateTimeOffset</span></span>|<span data-ttu-id="c3617-149">Carimbo de data/hora da última solicitação enviada ao Intune pelo parceiro TEM.</span><span class="sxs-lookup"><span data-stu-id="c3617-149">Timestamp of the last request sent to Intune by the TEM partner.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="99da5-150">Resposta</span><span class="sxs-lookup"><span data-stu-id="99da5-150">Response</span></span>
-<span data-ttu-id="99da5-151">Se tiver êxito, este método retornará um código de resposta `200 OK` e um objeto [telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="99da5-151">If successful, this method returns a `200 OK` response code and an updated [telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="c3617-150">Resposta</span><span class="sxs-lookup"><span data-stu-id="c3617-150">Response</span></span>
+<span data-ttu-id="c3617-151">Se tiver êxito, este método retornará um código de resposta `200 OK` e um objeto [telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="c3617-151">If successful, this method returns a `200 OK` response code and an updated [telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="99da5-152">Exemplo</span><span class="sxs-lookup"><span data-stu-id="99da5-152">Example</span></span>
+## <a name="example"></a><span data-ttu-id="c3617-152">Exemplo</span><span class="sxs-lookup"><span data-stu-id="c3617-152">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="99da5-153">Solicitação</span><span class="sxs-lookup"><span data-stu-id="99da5-153">Request</span></span>
-<span data-ttu-id="99da5-154">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="99da5-154">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="c3617-153">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c3617-153">Request</span></span>
+<span data-ttu-id="c3617-154">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="c3617-154">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/telecomExpenseManagementPartners/{telecomExpenseManagementPartnerId}
 Content-type: application/json
@@ -81,8 +81,8 @@ Content-length: 248
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="99da5-155">Resposta</span><span class="sxs-lookup"><span data-stu-id="99da5-155">Response</span></span>
-<span data-ttu-id="99da5-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="99da5-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="c3617-155">Resposta</span><span class="sxs-lookup"><span data-stu-id="c3617-155">Response</span></span>
+<span data-ttu-id="c3617-p102">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="c3617-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

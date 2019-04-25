@@ -1,32 +1,32 @@
 ---
-title: tipo de recurso de synchronizationError
+title: tipo de recurso synchronizationError
 description: Representa um erro que ocorreu durante o processo de sincronização.
 localization_priority: Normal
 ms.openlocfilehash: f37dca5b65a67eb36b2b6a130eee8feb692cd271
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513169"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32525975"
 ---
-# <a name="synchronizationerror-resource-type"></a><span data-ttu-id="921a3-103">tipo de recurso de synchronizationError</span><span class="sxs-lookup"><span data-stu-id="921a3-103">synchronizationError resource type</span></span>
+# <a name="synchronizationerror-resource-type"></a><span data-ttu-id="209c1-103">tipo de recurso synchronizationError</span><span class="sxs-lookup"><span data-stu-id="209c1-103">synchronizationError resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="921a3-104">Representa um erro que ocorreu durante o processo de sincronização.</span><span class="sxs-lookup"><span data-stu-id="921a3-104">Represents an error that occurred during the synchronization process.</span></span>
+<span data-ttu-id="209c1-104">Representa um erro que ocorreu durante o processo de sincronização.</span><span class="sxs-lookup"><span data-stu-id="209c1-104">Represents an error that occurred during the synchronization process.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="921a3-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="921a3-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="209c1-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="209c1-105">Properties</span></span>
 
 <!-- Add descriptions for the properties. -->
-| <span data-ttu-id="921a3-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="921a3-106">Property</span></span>     | <span data-ttu-id="921a3-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="921a3-107">Type</span></span>   |<span data-ttu-id="921a3-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="921a3-108">Description</span></span>|
+| <span data-ttu-id="209c1-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="209c1-106">Property</span></span>     | <span data-ttu-id="209c1-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="209c1-107">Type</span></span>   |<span data-ttu-id="209c1-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="209c1-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="921a3-109">código</span><span class="sxs-lookup"><span data-stu-id="921a3-109">code</span></span>|<span data-ttu-id="921a3-110">String</span><span class="sxs-lookup"><span data-stu-id="921a3-110">String</span></span>||
-|<span data-ttu-id="921a3-111">mensagem</span><span class="sxs-lookup"><span data-stu-id="921a3-111">message</span></span>|<span data-ttu-id="921a3-112">String</span><span class="sxs-lookup"><span data-stu-id="921a3-112">String</span></span>||
-|<span data-ttu-id="921a3-113">tenantActionable</span><span class="sxs-lookup"><span data-stu-id="921a3-113">tenantActionable</span></span>|<span data-ttu-id="921a3-114">Booliano</span><span class="sxs-lookup"><span data-stu-id="921a3-114">Boolean</span></span>||
+|<span data-ttu-id="209c1-109">código</span><span class="sxs-lookup"><span data-stu-id="209c1-109">code</span></span>|<span data-ttu-id="209c1-110">String</span><span class="sxs-lookup"><span data-stu-id="209c1-110">String</span></span>||
+|<span data-ttu-id="209c1-111">mensagem</span><span class="sxs-lookup"><span data-stu-id="209c1-111">message</span></span>|<span data-ttu-id="209c1-112">String</span><span class="sxs-lookup"><span data-stu-id="209c1-112">String</span></span>||
+|<span data-ttu-id="209c1-113">tenantActionable</span><span class="sxs-lookup"><span data-stu-id="209c1-113">tenantActionable</span></span>|<span data-ttu-id="209c1-114">Booliano</span><span class="sxs-lookup"><span data-stu-id="209c1-114">Boolean</span></span>||
 
-## <a name="json-representation"></a><span data-ttu-id="921a3-115">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="921a3-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="209c1-115">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="209c1-115">JSON representation</span></span>
 
-<span data-ttu-id="921a3-116">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="921a3-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="209c1-116">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="209c1-116">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

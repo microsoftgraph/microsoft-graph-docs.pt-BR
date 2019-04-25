@@ -5,26 +5,27 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 ms.openlocfilehash: 3617022652bd1e5fc0df0ed3497fb4b5f2e4f576
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27915484"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32521037"
 ---
-# <a name="create-page"></a><span data-ttu-id="9ef19-103">Criar página</span><span class="sxs-lookup"><span data-stu-id="9ef19-103">Create page</span></span>
+# <a name="create-page"></a><span data-ttu-id="36419-103">Criar página</span><span class="sxs-lookup"><span data-stu-id="36419-103">Create page</span></span>
 
-<span data-ttu-id="9ef19-104">Crie uma nova [página](../resources/page.md) na seção especificado.</span><span class="sxs-lookup"><span data-stu-id="9ef19-104">Create a new [page](../resources/page.md) in the specified section.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-## <a name="permissions"></a><span data-ttu-id="9ef19-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="9ef19-105">Permissions</span></span>
-<span data-ttu-id="9ef19-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9ef19-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="36419-104">Crie uma nova [página](../resources/page.md) na seção especificado.</span><span class="sxs-lookup"><span data-stu-id="36419-104">Create a new [page](../resources/page.md) in the specified section.</span></span>
+## <a name="permissions"></a><span data-ttu-id="36419-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="36419-105">Permissions</span></span>
+<span data-ttu-id="36419-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="36419-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="9ef19-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="9ef19-108">Permission type</span></span>      | <span data-ttu-id="9ef19-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="9ef19-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="36419-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="36419-108">Permission type</span></span>      | <span data-ttu-id="36419-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="36419-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="9ef19-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="9ef19-110">Delegated (work or school account)</span></span> | <span data-ttu-id="9ef19-111">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9ef19-111">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span></span>    |
-|<span data-ttu-id="9ef19-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="9ef19-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9ef19-113">Notes.Create, Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="9ef19-113">Notes.Create, Notes.ReadWrite</span></span>    |
-|<span data-ttu-id="9ef19-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="9ef19-114">Application</span></span> | <span data-ttu-id="9ef19-115">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9ef19-115">Notes.ReadWrite.All</span></span> |
+|<span data-ttu-id="36419-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="36419-110">Delegated (work or school account)</span></span> | <span data-ttu-id="36419-111">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="36419-111">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span></span>    |
+|<span data-ttu-id="36419-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="36419-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="36419-113">Notes.Create, Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="36419-113">Notes.Create, Notes.ReadWrite</span></span>    |
+|<span data-ttu-id="36419-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="36419-114">Application</span></span> | <span data-ttu-id="36419-115">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="36419-115">Notes.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="9ef19-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="9ef19-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="36419-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="36419-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onenote/sections/{id}/pages
@@ -32,28 +33,28 @@ POST /users/{id | userPrincipalName}/onenote/sections/{id}/pages
 POST /groups/{id}/onenote/sections/{id}/pages
 POST /sites/{id}/onenote/sections/{id}/pages
 ```
-## <a name="request-headers"></a><span data-ttu-id="9ef19-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="9ef19-117">Request headers</span></span>
-| <span data-ttu-id="9ef19-118">Nome</span><span class="sxs-lookup"><span data-stu-id="9ef19-118">Name</span></span>       | <span data-ttu-id="9ef19-119">Tipo</span><span class="sxs-lookup"><span data-stu-id="9ef19-119">Type</span></span> | <span data-ttu-id="9ef19-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="9ef19-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="36419-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="36419-117">Request headers</span></span>
+| <span data-ttu-id="36419-118">Nome</span><span class="sxs-lookup"><span data-stu-id="36419-118">Name</span></span>       | <span data-ttu-id="36419-119">Tipo</span><span class="sxs-lookup"><span data-stu-id="36419-119">Type</span></span> | <span data-ttu-id="36419-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="36419-120">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="9ef19-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="9ef19-121">Authorization</span></span>  | <span data-ttu-id="9ef19-122">string</span><span class="sxs-lookup"><span data-stu-id="9ef19-122">string</span></span>  | <span data-ttu-id="9ef19-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="9ef19-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="9ef19-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="9ef19-125">Content-Type</span></span> | <span data-ttu-id="9ef19-126">string</span><span class="sxs-lookup"><span data-stu-id="9ef19-126">string</span></span> | <span data-ttu-id="9ef19-p103">`text/html`ou `application/xhtml+xml` para o conteúdo HTML, inclusive para a parte obrigatória "Apresentação" de solicitações com várias partes. As solicitações com várias partes usam o tipo de conteúdo `multipart/form-data; boundary=your-boundary`.</span><span class="sxs-lookup"><span data-stu-id="9ef19-p103">`text/html` or `application/xhtml+xml` for the HTML content, including for the required "Presentation" part of multipart requests. Multipart requests use the `multipart/form-data; boundary=your-boundary` content type.</span></span> |
+| <span data-ttu-id="36419-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="36419-121">Authorization</span></span>  | <span data-ttu-id="36419-122">string</span><span class="sxs-lookup"><span data-stu-id="36419-122">string</span></span>  | <span data-ttu-id="36419-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="36419-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="36419-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="36419-125">Content-Type</span></span> | <span data-ttu-id="36419-126">string</span><span class="sxs-lookup"><span data-stu-id="36419-126">string</span></span> | <span data-ttu-id="36419-p103">`text/html`ou `application/xhtml+xml` para o conteúdo HTML, inclusive para a parte obrigatória "Apresentação" de solicitações com várias partes. As solicitações com várias partes usam o tipo de conteúdo `multipart/form-data; boundary=your-boundary`.</span><span class="sxs-lookup"><span data-stu-id="36419-p103">`text/html` or `application/xhtml+xml` for the HTML content, including for the required "Presentation" part of multipart requests. Multipart requests use the `multipart/form-data; boundary=your-boundary` content type.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="9ef19-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="9ef19-129">Request body</span></span>
-<span data-ttu-id="9ef19-130">No corpo da solicitação, forneça a página HTML do conteúdo.</span><span class="sxs-lookup"><span data-stu-id="9ef19-130">In the request body, supply the page HTML content.</span></span>
+## <a name="request-body"></a><span data-ttu-id="36419-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="36419-129">Request body</span></span>
+<span data-ttu-id="36419-130">No corpo da solicitação, forneça a página HTML do conteúdo.</span><span class="sxs-lookup"><span data-stu-id="36419-130">In the request body, supply the page HTML content.</span></span>
 
-<span data-ttu-id="9ef19-p104">O corpo pode conter HTML colocado diretamente no corpo da solicitação ou pode conter um formato de mensagem com várias partes conforme mostrado no exemplo. Se você estiver enviando dados binários, envie uma solicitação com várias partes.</span><span class="sxs-lookup"><span data-stu-id="9ef19-p104">The body can contain HTML placed directly in the request body, or it can contain a multipart message format as shown in the example. If you're sending binary data, then you must send a multipart request.</span></span>
+<span data-ttu-id="36419-p104">O corpo pode conter HTML colocado diretamente no corpo da solicitação ou pode conter um formato de mensagem com várias partes conforme mostrado no exemplo. Se você estiver enviando dados binários, envie uma solicitação com várias partes.</span><span class="sxs-lookup"><span data-stu-id="36419-p104">The body can contain HTML placed directly in the request body, or it can contain a multipart message format as shown in the example. If you're sending binary data, then you must send a multipart request.</span></span>
 
-## <a name="response"></a><span data-ttu-id="9ef19-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="9ef19-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="36419-133">Resposta</span><span class="sxs-lookup"><span data-stu-id="36419-133">Response</span></span>
 
-<span data-ttu-id="9ef19-134">Se bem-sucedido, este método retorna o código de resposta `201 Created` e o novo objeto [page](../resources/page.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="9ef19-134">If successful, this method returns `201 Created` response code and the new [page](../resources/page.md) object in the response body.</span></span>
+<span data-ttu-id="36419-134">Se bem-sucedido, este método retorna o código de resposta `201 Created` e o novo objeto [page](../resources/page.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="36419-134">If successful, this method returns `201 Created` response code and the new [page](../resources/page.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="9ef19-135">Exemplo</span><span class="sxs-lookup"><span data-stu-id="9ef19-135">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="9ef19-136">Solicitação</span><span class="sxs-lookup"><span data-stu-id="9ef19-136">Request</span></span>
-<span data-ttu-id="9ef19-137">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="9ef19-137">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="36419-135">Exemplo</span><span class="sxs-lookup"><span data-stu-id="36419-135">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="36419-136">Solicitação</span><span class="sxs-lookup"><span data-stu-id="36419-136">Request</span></span>
+<span data-ttu-id="36419-137">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="36419-137">Here is an example of the request.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST https://graph.microsoft.com/v1.0/me/onenote/sections/{id}/pages
+POST https://graph.microsoft.com/beta/me/onenote/sections/{id}/pages
 Content-length: 312
 Content-type: multipart/form-data; boundary=MyPartBoundary198374
 
@@ -91,9 +92,8 @@ Content-Type:application/pdf
 
 --MyPartBoundary198374--
 ```
-##### <a name="response"></a><span data-ttu-id="9ef19-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="9ef19-138">Response</span></span>
-<span data-ttu-id="9ef19-139">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="9ef19-139">Here is an example of the response.</span></span> <span data-ttu-id="9ef19-140">Observação: No objeto response mostrado aqui é truncado para fins de concisão.</span><span class="sxs-lookup"><span data-stu-id="9ef19-140">Note: The response object shown here is truncated for brevity.</span></span> <span data-ttu-id="9ef19-141">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="9ef19-141">All of the properties will be returned from an actual call.</span></span>
-<!-- { "blockType": "ignored" } -->
+##### <a name="response"></a><span data-ttu-id="36419-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="36419-138">Response</span></span>
+<span data-ttu-id="36419-p105">Veja a seguir um exemplo da resposta. Observação: O objeto response mostrado aqui está truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="36419-p105">Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call. </span></span><!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -117,10 +117,15 @@ Content-length: 312
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create Page",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/section-post-pages.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
