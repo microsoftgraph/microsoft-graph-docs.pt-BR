@@ -1,59 +1,59 @@
 ---
 title: Atualizar plannerbucket
-description: Atualize as propriedades do objeto **plannerbucket**.
+description: Atualize as propriedades do objeto **plannerbucket** .
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: e85cdc1ffa1781420b5ef911147f25ef97a726dc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517824"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538992"
 ---
-# <a name="update-plannerbucket"></a><span data-ttu-id="291e7-103">Atualizar plannerbucket</span><span class="sxs-lookup"><span data-stu-id="291e7-103">Update plannerbucket</span></span>
+# <a name="update-plannerbucket"></a><span data-ttu-id="7705e-103">Atualizar plannerbucket</span><span class="sxs-lookup"><span data-stu-id="7705e-103">Update plannerbucket</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="291e7-104">Atualize as propriedades do objeto **plannerbucket**.</span><span class="sxs-lookup"><span data-stu-id="291e7-104">Update the properties of **plannerbucket** object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="291e7-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="291e7-105">Permissions</span></span>
-<span data-ttu-id="291e7-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="291e7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="7705e-104">Atualize as propriedades do objeto **plannerbucket** .</span><span class="sxs-lookup"><span data-stu-id="7705e-104">Update the properties of **plannerbucket** object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="7705e-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="7705e-105">Permissions</span></span>
+<span data-ttu-id="7705e-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7705e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="291e7-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="291e7-108">Permission type</span></span>      | <span data-ttu-id="291e7-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="291e7-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="7705e-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="7705e-108">Permission type</span></span>      | <span data-ttu-id="7705e-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="7705e-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="291e7-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="291e7-110">Delegated (work or school account)</span></span> | <span data-ttu-id="291e7-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="291e7-111">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="291e7-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="291e7-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="291e7-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="291e7-113">Not supported.</span></span>    |
-|<span data-ttu-id="291e7-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="291e7-114">Application</span></span> | <span data-ttu-id="291e7-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="291e7-115">Not supported.</span></span> |
+|<span data-ttu-id="7705e-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="7705e-110">Delegated (work or school account)</span></span> | <span data-ttu-id="7705e-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7705e-111">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="7705e-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="7705e-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7705e-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="7705e-113">Not supported.</span></span>    |
+|<span data-ttu-id="7705e-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="7705e-114">Application</span></span> | <span data-ttu-id="7705e-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="7705e-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="291e7-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="291e7-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7705e-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="7705e-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /planner/buckets/<id>
 ```
-## <a name="optional-request-headers"></a><span data-ttu-id="291e7-117">Cabeçalhos de solicitação opcionais</span><span class="sxs-lookup"><span data-stu-id="291e7-117">Optional request headers</span></span>
-| <span data-ttu-id="291e7-118">Nome</span><span class="sxs-lookup"><span data-stu-id="291e7-118">Name</span></span>       | <span data-ttu-id="291e7-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="291e7-119">Description</span></span>|
+## <a name="optional-request-headers"></a><span data-ttu-id="7705e-117">Cabeçalhos de solicitação opcionais</span><span class="sxs-lookup"><span data-stu-id="7705e-117">Optional request headers</span></span>
+| <span data-ttu-id="7705e-118">Name</span><span class="sxs-lookup"><span data-stu-id="7705e-118">Name</span></span>       | <span data-ttu-id="7705e-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="7705e-119">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="291e7-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="291e7-120">Authorization</span></span>  | <span data-ttu-id="291e7-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="291e7-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="291e7-123">If-Match</span><span class="sxs-lookup"><span data-stu-id="291e7-123">If-Match</span></span>  | <span data-ttu-id="291e7-p103">O último valor ETag conhecido do objeto **plannerBucket** a ser atualizado. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="291e7-p103">Last known ETag value for the **plannerBucket** to be updated. Required.</span></span>|
+| <span data-ttu-id="7705e-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="7705e-120">Authorization</span></span>  | <span data-ttu-id="7705e-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="7705e-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="7705e-123">If-Match</span><span class="sxs-lookup"><span data-stu-id="7705e-123">If-Match</span></span>  | <span data-ttu-id="7705e-124">Último valor de ETag conhecido para o **plannerBucket** a ser atualizado.</span><span class="sxs-lookup"><span data-stu-id="7705e-124">Last known ETag value for the **plannerBucket** to be updated.</span></span> <span data-ttu-id="7705e-125">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="7705e-125">Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="291e7-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="291e7-126">Request body</span></span>
-<span data-ttu-id="291e7-p104">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="291e7-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="7705e-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="7705e-126">Request body</span></span>
+<span data-ttu-id="7705e-p104">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="7705e-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="291e7-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="291e7-130">Property</span></span>     | <span data-ttu-id="291e7-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="291e7-131">Type</span></span>   |<span data-ttu-id="291e7-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="291e7-132">Description</span></span>|
+| <span data-ttu-id="7705e-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="7705e-130">Property</span></span>     | <span data-ttu-id="7705e-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="7705e-131">Type</span></span>   |<span data-ttu-id="7705e-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="7705e-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="291e7-133">name</span><span class="sxs-lookup"><span data-stu-id="291e7-133">name</span></span>|<span data-ttu-id="291e7-134">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="291e7-134">String</span></span>|<span data-ttu-id="291e7-135">Nome do bucket.</span><span class="sxs-lookup"><span data-stu-id="291e7-135">Name of the bucket.</span></span>|
-|<span data-ttu-id="291e7-136">orderHint</span><span class="sxs-lookup"><span data-stu-id="291e7-136">orderHint</span></span>|<span data-ttu-id="291e7-137">String</span><span class="sxs-lookup"><span data-stu-id="291e7-137">String</span></span>|<span data-ttu-id="291e7-p105">Dica usada para ordenar itens deste tipo em um modo de exibição de lista. O formato é definido em [Como usar dicas de ordem no Planner](../resources/planner-order-hint-format.md).</span><span class="sxs-lookup"><span data-stu-id="291e7-p105">Hint used to order items of this type in a list view. The format is defined in [Using order hints in Planner](../resources/planner-order-hint-format.md).</span></span>|
-|<span data-ttu-id="291e7-140">planId</span><span class="sxs-lookup"><span data-stu-id="291e7-140">planId</span></span>|<span data-ttu-id="291e7-141">String</span><span class="sxs-lookup"><span data-stu-id="291e7-141">String</span></span>|<span data-ttu-id="291e7-142">ID do plano ao qual o bucket pertence.</span><span class="sxs-lookup"><span data-stu-id="291e7-142">Plan id to which the bucket belongs.</span></span>|
+|<span data-ttu-id="7705e-133">name</span><span class="sxs-lookup"><span data-stu-id="7705e-133">name</span></span>|<span data-ttu-id="7705e-134">String</span><span class="sxs-lookup"><span data-stu-id="7705e-134">String</span></span>|<span data-ttu-id="7705e-135">Nome do Bucket.</span><span class="sxs-lookup"><span data-stu-id="7705e-135">Name of the bucket.</span></span>|
+|<span data-ttu-id="7705e-136">orderHint</span><span class="sxs-lookup"><span data-stu-id="7705e-136">orderHint</span></span>|<span data-ttu-id="7705e-137">String</span><span class="sxs-lookup"><span data-stu-id="7705e-137">String</span></span>|<span data-ttu-id="7705e-138">Dica usada para ordenar itens desse tipo em um modo de exibição de lista.</span><span class="sxs-lookup"><span data-stu-id="7705e-138">Hint used to order items of this type in a list view.</span></span> <span data-ttu-id="7705e-139">O formato é definido em [usando dicas de ordenação no Planner](../resources/planner-order-hint-format.md).</span><span class="sxs-lookup"><span data-stu-id="7705e-139">The format is defined in [Using order hints in Planner](../resources/planner-order-hint-format.md).</span></span>|
+|<span data-ttu-id="7705e-140">planId</span><span class="sxs-lookup"><span data-stu-id="7705e-140">planId</span></span>|<span data-ttu-id="7705e-141">String</span><span class="sxs-lookup"><span data-stu-id="7705e-141">String</span></span>|<span data-ttu-id="7705e-142">ID do plano ao qual o Bucket pertence.</span><span class="sxs-lookup"><span data-stu-id="7705e-142">Plan id to which the bucket belongs.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="291e7-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="291e7-143">Response</span></span>
+## <a name="response"></a><span data-ttu-id="7705e-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="7705e-143">Response</span></span>
 
-<span data-ttu-id="291e7-144">Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [plannerBucket](../resources/plannerbucket.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="291e7-144">If successful, this method returns a `200 OK` response code and updated [plannerBucket](../resources/plannerbucket.md) object in the response body.</span></span>
+<span data-ttu-id="7705e-144">Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [plannerBucket](../resources/plannerbucket.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="7705e-144">If successful, this method returns a `200 OK` response code and updated [plannerBucket](../resources/plannerbucket.md) object in the response body.</span></span>
 
-<span data-ttu-id="291e7-p106">Este método pode retornar qualquer um dos [códigos de status de HTTP](/graph/errors). Os erros mais comuns que os aplicativos devem tratar para esse método são as respostas 400, 403, 404, 409 e 412. Saiba mais sobre esses erros em [Condições de erro comuns do Planner](../resources/planner-overview.md#common-planner-error-conditions).</span><span class="sxs-lookup"><span data-stu-id="291e7-p106">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 400, 403, 404, 409, and 412 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
+<span data-ttu-id="7705e-p106">Este método pode retornar qualquer um dos [códigos de status de HTTP](/graph/errors). Os erros mais comuns que os aplicativos devem tratar para esse método são as respostas 400, 403, 404, 409 e 412. Saiba mais sobre esses erros em [Condições de erro comuns do Planner](../resources/planner-overview.md#common-planner-error-conditions).</span><span class="sxs-lookup"><span data-stu-id="7705e-p106">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 400, 403, 404, 409, and 412 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
 
-## <a name="example"></a><span data-ttu-id="291e7-148">Exemplo</span><span class="sxs-lookup"><span data-stu-id="291e7-148">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="291e7-149">Solicitação</span><span class="sxs-lookup"><span data-stu-id="291e7-149">Request</span></span>
-<span data-ttu-id="291e7-150">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="291e7-150">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="7705e-148">Exemplo</span><span class="sxs-lookup"><span data-stu-id="7705e-148">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="7705e-149">Solicitação</span><span class="sxs-lookup"><span data-stu-id="7705e-149">Request</span></span>
+<span data-ttu-id="7705e-150">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="7705e-150">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_plannerbucket"
@@ -68,8 +68,8 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
   "name": "Development"
 }
 ```
-##### <a name="response"></a><span data-ttu-id="291e7-151">Resposta</span><span class="sxs-lookup"><span data-stu-id="291e7-151">Response</span></span>
-<span data-ttu-id="291e7-p107">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="291e7-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="7705e-151">Resposta</span><span class="sxs-lookup"><span data-stu-id="7705e-151">Response</span></span>
+<span data-ttu-id="7705e-p107">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="7705e-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

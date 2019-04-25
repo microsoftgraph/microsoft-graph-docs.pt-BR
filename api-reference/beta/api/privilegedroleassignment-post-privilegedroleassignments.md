@@ -1,51 +1,51 @@
 ---
-title: Criar privilegedRoleAssignment
-description: Use essa API para criar um novo privilegedRoleAssignment.
+title: Create privilegedRoleAssignment
+description: Use esta API para criar um novo privilegedRoleAssignment.
 localization_priority: Normal
 ms.openlocfilehash: 5522956b129eae8a19fd00b0e70b41380dbdd25e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513400"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538582"
 ---
-# <a name="create-privilegedroleassignment"></a><span data-ttu-id="38762-103">Criar privilegedRoleAssignment</span><span class="sxs-lookup"><span data-stu-id="38762-103">Create privilegedRoleAssignment</span></span>
+# <a name="create-privilegedroleassignment"></a><span data-ttu-id="6c69f-103">Create privilegedRoleAssignment</span><span class="sxs-lookup"><span data-stu-id="6c69f-103">Create privilegedRoleAssignment</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="38762-104">Use essa API para criar um novo [privilegedRoleAssignment](../resources/privilegedroleassignment.md).</span><span class="sxs-lookup"><span data-stu-id="38762-104">Use this API to create a new  [privilegedRoleAssignment](../resources/privilegedroleassignment.md).</span></span>
-## <a name="permissions"></a><span data-ttu-id="38762-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="38762-105">Permissions</span></span>
-<span data-ttu-id="38762-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="38762-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="6c69f-104">Use esta API para criar um novo [privilegedRoleAssignment](../resources/privilegedroleassignment.md).</span><span class="sxs-lookup"><span data-stu-id="6c69f-104">Use this API to create a new  [privilegedRoleAssignment](../resources/privilegedroleassignment.md).</span></span>
+## <a name="permissions"></a><span data-ttu-id="6c69f-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="6c69f-105">Permissions</span></span>
+<span data-ttu-id="6c69f-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6c69f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-<span data-ttu-id="38762-108">O solicitante precisa ter a função de _Administrador com privilégios de função_ .</span><span class="sxs-lookup"><span data-stu-id="38762-108">The requestor needs to have _Privileged Role Administrator_ role.</span></span> 
+<span data-ttu-id="6c69f-108">O solicitante precisa ter função de _administrador de função privilegiada_ .</span><span class="sxs-lookup"><span data-stu-id="6c69f-108">The requestor needs to have _Privileged Role Administrator_ role.</span></span> 
 
-|<span data-ttu-id="38762-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="38762-109">Permission type</span></span>      | <span data-ttu-id="38762-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="38762-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="6c69f-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="6c69f-109">Permission type</span></span>      | <span data-ttu-id="6c69f-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="6c69f-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="38762-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="38762-111">Delegated (work or school account)</span></span> | <span data-ttu-id="38762-112">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="38762-112">Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="38762-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="38762-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="38762-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="38762-114">Not supported.</span></span>    |
-|<span data-ttu-id="38762-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="38762-115">Application</span></span> | <span data-ttu-id="38762-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="38762-116">Not supported.</span></span> |
+|<span data-ttu-id="6c69f-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="6c69f-111">Delegated (work or school account)</span></span> | <span data-ttu-id="6c69f-112">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="6c69f-112">Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="6c69f-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="6c69f-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6c69f-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="6c69f-114">Not supported.</span></span>    |
+|<span data-ttu-id="6c69f-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="6c69f-115">Application</span></span> | <span data-ttu-id="6c69f-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="6c69f-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="38762-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="38762-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6c69f-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="6c69f-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /privilegedRoleAssignments
 ```
-## <a name="request-headers"></a><span data-ttu-id="38762-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="38762-118">Request headers</span></span>
-| <span data-ttu-id="38762-119">Nome</span><span class="sxs-lookup"><span data-stu-id="38762-119">Name</span></span>       | <span data-ttu-id="38762-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="38762-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="6c69f-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="6c69f-118">Request headers</span></span>
+| <span data-ttu-id="6c69f-119">Nome</span><span class="sxs-lookup"><span data-stu-id="6c69f-119">Name</span></span>       | <span data-ttu-id="6c69f-120">Descrição</span><span class="sxs-lookup"><span data-stu-id="6c69f-120">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="38762-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="38762-121">Authorization</span></span>  | <span data-ttu-id="38762-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="38762-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="6c69f-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="6c69f-121">Authorization</span></span>  | <span data-ttu-id="6c69f-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="6c69f-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="38762-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="38762-124">Request body</span></span>
-<span data-ttu-id="38762-125">No corpo da solicitação, fornece uma representação JSON do objeto [privilegedRoleAssignment](../resources/privilegedroleassignment.md) .</span><span class="sxs-lookup"><span data-stu-id="38762-125">In the request body, supply a JSON representation of [privilegedRoleAssignment](../resources/privilegedroleassignment.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="6c69f-124">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="6c69f-124">Request body</span></span>
+<span data-ttu-id="6c69f-125">No corpo da solicitação, forneça uma representação JSON do objeto [privilegedRoleAssignment](../resources/privilegedroleassignment.md) .</span><span class="sxs-lookup"><span data-stu-id="6c69f-125">In the request body, supply a JSON representation of [privilegedRoleAssignment](../resources/privilegedroleassignment.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="38762-126">Resposta</span><span class="sxs-lookup"><span data-stu-id="38762-126">Response</span></span>
+## <a name="response"></a><span data-ttu-id="6c69f-126">Resposta</span><span class="sxs-lookup"><span data-stu-id="6c69f-126">Response</span></span>
 
-<span data-ttu-id="38762-127">Se tiver êxito, este método retornará `201 Created` objeto response de código e [privilegedRoleAssignment](../resources/privilegedroleassignment.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="38762-127">If successful, this method returns `201 Created` response code and [privilegedRoleAssignment](../resources/privilegedroleassignment.md) object in the response body.</span></span>
+<span data-ttu-id="6c69f-127">Se bem-sucedido, este método retorna `201 Created` o código de resposta e o objeto [privilegedRoleAssignment](../resources/privilegedroleassignment.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="6c69f-127">If successful, this method returns `201 Created` response code and [privilegedRoleAssignment](../resources/privilegedroleassignment.md) object in the response body.</span></span>
 
-<span data-ttu-id="38762-128">Observe que o inquilino deve ser registrado no PIM.</span><span class="sxs-lookup"><span data-stu-id="38762-128">Note that the tenant needs to be registered to PIM.</span></span> <span data-ttu-id="38762-129">Caso contrário, será retornado o código de status HTTP 403-Proibido.</span><span class="sxs-lookup"><span data-stu-id="38762-129">Otherwise, the HTTP 403 Forbidden status code will be returned.</span></span>
-## <a name="example"></a><span data-ttu-id="38762-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="38762-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="38762-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="38762-131">Request</span></span>
-<span data-ttu-id="38762-132">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="38762-132">Here is an example of the request.</span></span>
+<span data-ttu-id="6c69f-128">Observe que o locatário precisa ser registrado no PIM.</span><span class="sxs-lookup"><span data-stu-id="6c69f-128">Note that the tenant needs to be registered to PIM.</span></span> <span data-ttu-id="6c69f-129">Caso contrário, o código de status HTTP 403 proibido será retornado.</span><span class="sxs-lookup"><span data-stu-id="6c69f-129">Otherwise, the HTTP 403 Forbidden status code will be returned.</span></span>
+## <a name="example"></a><span data-ttu-id="6c69f-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="6c69f-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="6c69f-131">Solicitação</span><span class="sxs-lookup"><span data-stu-id="6c69f-131">Request</span></span>
+<span data-ttu-id="6c69f-132">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="6c69f-132">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_privilegedroleassignment_from_privilegedroleassignments"
@@ -60,9 +60,9 @@ Content-length: 164
   "roleId": "roleId-value"
 }
 ```
-<span data-ttu-id="38762-133">No corpo da solicitação, fornece uma representação JSON do objeto [privilegedRoleAssignment](../resources/privilegedroleassignment.md) .</span><span class="sxs-lookup"><span data-stu-id="38762-133">In the request body, supply a JSON representation of [privilegedRoleAssignment](../resources/privilegedroleassignment.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="38762-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="38762-134">Response</span></span>
-<span data-ttu-id="38762-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="38762-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="6c69f-133">No corpo da solicitação, forneça uma representação JSON do objeto [privilegedRoleAssignment](../resources/privilegedroleassignment.md) .</span><span class="sxs-lookup"><span data-stu-id="6c69f-133">In the request body, supply a JSON representation of [privilegedRoleAssignment](../resources/privilegedroleassignment.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="6c69f-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="6c69f-134">Response</span></span>
+<span data-ttu-id="6c69f-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="6c69f-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

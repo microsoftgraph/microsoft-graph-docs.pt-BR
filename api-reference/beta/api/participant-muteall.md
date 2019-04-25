@@ -1,59 +1,59 @@
 ---
 title: 'participante: muteAll'
-description: Ativar Mudo de todos os participantes na chamada.
+description: Ative o mudo para todos os participantes em uma chamada.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 2a74a224141b77f0a09718bbafee3cf1dab0e8e9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522830"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539369"
 ---
-# <a name="participant-muteall"></a><span data-ttu-id="b975d-103">participante: muteAll</span><span class="sxs-lookup"><span data-stu-id="b975d-103">participant: muteAll</span></span>
+# <a name="participant-muteall"></a><span data-ttu-id="e81e5-103">participante: muteAll</span><span class="sxs-lookup"><span data-stu-id="e81e5-103">participant: muteAll</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b975d-104">Ativar Mudo de todos os participantes na chamada.</span><span class="sxs-lookup"><span data-stu-id="b975d-104">Mute all participants in the call.</span></span>
+<span data-ttu-id="e81e5-104">Ative o mudo para todos os participantes em uma chamada.</span><span class="sxs-lookup"><span data-stu-id="e81e5-104">Mute all participants in the call.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="b975d-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="b975d-105">Permissions</span></span>
-<span data-ttu-id="b975d-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b975d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="e81e5-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="e81e5-105">Permissions</span></span>
+<span data-ttu-id="e81e5-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e81e5-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="b975d-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="b975d-108">Permission type</span></span>                        | <span data-ttu-id="b975d-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="b975d-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="e81e5-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="e81e5-108">Permission type</span></span>                        | <span data-ttu-id="e81e5-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="e81e5-109">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="b975d-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="b975d-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="b975d-111">Não suportado</span><span class="sxs-lookup"><span data-stu-id="b975d-111">Not Supported</span></span>                               |
-| <span data-ttu-id="b975d-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="b975d-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b975d-113">Não suportado</span><span class="sxs-lookup"><span data-stu-id="b975d-113">Not Supported</span></span>                               |
-| <span data-ttu-id="b975d-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="b975d-114">Application</span></span>                            | <span data-ttu-id="b975d-115">Nenhum</span><span class="sxs-lookup"><span data-stu-id="b975d-115">None</span></span>                                        |
+| <span data-ttu-id="e81e5-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="e81e5-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="e81e5-111">Não suportado</span><span class="sxs-lookup"><span data-stu-id="e81e5-111">Not Supported</span></span>                               |
+| <span data-ttu-id="e81e5-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="e81e5-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e81e5-113">Não suportado</span><span class="sxs-lookup"><span data-stu-id="e81e5-113">Not Supported</span></span>                               |
+| <span data-ttu-id="e81e5-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="e81e5-114">Application</span></span>                            | <span data-ttu-id="e81e5-115">Nenhum</span><span class="sxs-lookup"><span data-stu-id="e81e5-115">None</span></span>                                        |
 
-## <a name="http-request"></a><span data-ttu-id="b975d-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="b975d-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e81e5-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="e81e5-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/participants/muteAll
 POST /applications/{id}/calls/{id}/participants/muteAll
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="b975d-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="b975d-117">Request headers</span></span>
-| <span data-ttu-id="b975d-118">Nome</span><span class="sxs-lookup"><span data-stu-id="b975d-118">Name</span></span>          | <span data-ttu-id="b975d-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="b975d-119">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="e81e5-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="e81e5-117">Request headers</span></span>
+| <span data-ttu-id="e81e5-118">Nome</span><span class="sxs-lookup"><span data-stu-id="e81e5-118">Name</span></span>          | <span data-ttu-id="e81e5-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="e81e5-119">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="b975d-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="b975d-120">Authorization</span></span> | <span data-ttu-id="b975d-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="b975d-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="e81e5-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="e81e5-120">Authorization</span></span> | <span data-ttu-id="e81e5-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="e81e5-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="b975d-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="b975d-123">Request body</span></span>
-<span data-ttu-id="b975d-124">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="b975d-124">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e81e5-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="e81e5-123">Request body</span></span>
+<span data-ttu-id="e81e5-124">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="e81e5-124">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="b975d-125">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="b975d-125">Parameter</span></span>      | <span data-ttu-id="b975d-126">Tipo</span><span class="sxs-lookup"><span data-stu-id="b975d-126">Type</span></span>    |<span data-ttu-id="b975d-127">Descrição</span><span class="sxs-lookup"><span data-stu-id="b975d-127">Description</span></span>|
+| <span data-ttu-id="e81e5-125">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="e81e5-125">Parameter</span></span>      | <span data-ttu-id="e81e5-126">Tipo</span><span class="sxs-lookup"><span data-stu-id="e81e5-126">Type</span></span>    |<span data-ttu-id="e81e5-127">Descrição</span><span class="sxs-lookup"><span data-stu-id="e81e5-127">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="b975d-128">participantes</span><span class="sxs-lookup"><span data-stu-id="b975d-128">participants</span></span>|<span data-ttu-id="b975d-129">String collection</span><span class="sxs-lookup"><span data-stu-id="b975d-129">String collection</span></span>|<span data-ttu-id="b975d-130">Os participantes para ser ativado.</span><span class="sxs-lookup"><span data-stu-id="b975d-130">The participants to be muted.</span></span>|
-|<span data-ttu-id="b975d-131">ClientContext</span><span class="sxs-lookup"><span data-stu-id="b975d-131">clientContext</span></span>|<span data-ttu-id="b975d-132">String</span><span class="sxs-lookup"><span data-stu-id="b975d-132">String</span></span>|<span data-ttu-id="b975d-133">O contexto de cliente.</span><span class="sxs-lookup"><span data-stu-id="b975d-133">The client context.</span></span>|
+|<span data-ttu-id="e81e5-128">participantes</span><span class="sxs-lookup"><span data-stu-id="e81e5-128">participants</span></span>|<span data-ttu-id="e81e5-129">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="e81e5-129">String collection</span></span>|<span data-ttu-id="e81e5-130">Os participantes a serem mudo.</span><span class="sxs-lookup"><span data-stu-id="e81e5-130">The participants to be muted.</span></span>|
+|<span data-ttu-id="e81e5-131">clientContext</span><span class="sxs-lookup"><span data-stu-id="e81e5-131">clientContext</span></span>|<span data-ttu-id="e81e5-132">String</span><span class="sxs-lookup"><span data-stu-id="e81e5-132">String</span></span>|<span data-ttu-id="e81e5-133">O contexto do cliente.</span><span class="sxs-lookup"><span data-stu-id="e81e5-133">The client context.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="b975d-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="b975d-134">Response</span></span>
-<span data-ttu-id="b975d-135">Se tiver êxito, este método retornará `200 OK` objeto response de código e [commsOperation](../resources/commsoperation.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="b975d-135">If successful, this method returns `200 OK` response code and [commsOperation](../resources/commsoperation.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="e81e5-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="e81e5-134">Response</span></span>
+<span data-ttu-id="e81e5-135">Se bem-sucedido, este método retorna `200 OK` o código de resposta e o objeto [commsOperation](../resources/commsoperation.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="e81e5-135">If successful, this method returns `200 OK` response code and [commsOperation](../resources/commsoperation.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="b975d-136">Exemplo</span><span class="sxs-lookup"><span data-stu-id="b975d-136">Example</span></span>
-<span data-ttu-id="b975d-137">O exemplo a seguir mostra como chamar essa API.</span><span class="sxs-lookup"><span data-stu-id="b975d-137">The following example shows how to call this API.</span></span>
+## <a name="example"></a><span data-ttu-id="e81e5-136">Exemplo</span><span class="sxs-lookup"><span data-stu-id="e81e5-136">Example</span></span>
+<span data-ttu-id="e81e5-137">O exemplo a seguir mostra como chamar essa API.</span><span class="sxs-lookup"><span data-stu-id="e81e5-137">The following example shows how to call this API.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="b975d-138">Solicitação</span><span class="sxs-lookup"><span data-stu-id="b975d-138">Request</span></span>
-<span data-ttu-id="b975d-139">O exemplo a seguir mostra a solicitação.</span><span class="sxs-lookup"><span data-stu-id="b975d-139">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="e81e5-138">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e81e5-138">Request</span></span>
+<span data-ttu-id="e81e5-139">O exemplo a seguir mostra a solicitação.</span><span class="sxs-lookup"><span data-stu-id="e81e5-139">The following example shows the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "participant-muteAll"
@@ -71,9 +71,9 @@ Content-Length: 81
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="b975d-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="b975d-140">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="e81e5-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="e81e5-140">Response</span></span>
 
-> <span data-ttu-id="b975d-p103">\*\*Observação: \*\*o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="b975d-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="e81e5-p103">\*\*Observação: \*\*o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="e81e5-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

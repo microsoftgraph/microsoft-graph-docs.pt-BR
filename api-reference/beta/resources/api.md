@@ -1,29 +1,29 @@
 ---
-title: tipo de recurso da API
-description: Especifica as configurações para um aplicativo Web API.
+title: tipo de recurso de API
+description: Especifica as configurações para um aplicativo da API Web.
 localization_priority: Normal
 ms.openlocfilehash: 9d9259911464feb545b97a9eb8585723a9c3e20e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521443"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535687"
 ---
-# <a name="api-resource-type"></a><span data-ttu-id="3ff2a-103">tipo de recurso da API</span><span class="sxs-lookup"><span data-stu-id="3ff2a-103">api resource type</span></span>
+# <a name="api-resource-type"></a><span data-ttu-id="7ecb7-103">tipo de recurso de API</span><span class="sxs-lookup"><span data-stu-id="7ecb7-103">api resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="3ff2a-104">Especifica as configurações para um aplicativo Web API.</span><span class="sxs-lookup"><span data-stu-id="3ff2a-104">Specifies settings for a Web API application.</span></span>
+<span data-ttu-id="7ecb7-104">Especifica as configurações para um aplicativo da API Web.</span><span class="sxs-lookup"><span data-stu-id="7ecb7-104">Specifies settings for a Web API application.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="3ff2a-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="3ff2a-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="7ecb7-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="7ecb7-105">Properties</span></span>
 
-| <span data-ttu-id="3ff2a-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="3ff2a-106">Property</span></span> | <span data-ttu-id="3ff2a-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="3ff2a-107">Type</span></span> | <span data-ttu-id="3ff2a-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="3ff2a-108">Description</span></span> |
+| <span data-ttu-id="7ecb7-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="7ecb7-106">Property</span></span> | <span data-ttu-id="7ecb7-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="7ecb7-107">Type</span></span> | <span data-ttu-id="7ecb7-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="7ecb7-108">Description</span></span> |
 |:---------------|:--------|:----------|
-|<span data-ttu-id="3ff2a-109">requestedAccessTokenVersion</span><span class="sxs-lookup"><span data-stu-id="3ff2a-109">requestedAccessTokenVersion</span></span>|<span data-ttu-id="3ff2a-110">Int32</span><span class="sxs-lookup"><span data-stu-id="3ff2a-110">Int32</span></span>| <span data-ttu-id="3ff2a-111">Especifica a versão de token de acesso aceito para o recurso de API atual.</span><span class="sxs-lookup"><span data-stu-id="3ff2a-111">Specifies the accepted access token version for the current API resource.</span></span> <span data-ttu-id="3ff2a-112">Valores possíveis são 1 ou 2.</span><span class="sxs-lookup"><span data-stu-id="3ff2a-112">Possible values are 1 or 2.</span></span>  |
-|<span data-ttu-id="3ff2a-113">oauth2PermissionScopes</span><span class="sxs-lookup"><span data-stu-id="3ff2a-113">oauth2PermissionScopes</span></span>|<span data-ttu-id="3ff2a-114">coleção [permissionScope](permissionscope.md)</span><span class="sxs-lookup"><span data-stu-id="3ff2a-114">[permissionScope](permissionscope.md) collection</span></span>| <span data-ttu-id="3ff2a-115">A coleção de escopos de permissão OAuth 2.0 que a web application API (recurso) expõe para os aplicativos cliente.</span><span class="sxs-lookup"><span data-stu-id="3ff2a-115">The collection of OAuth 2.0 permission scopes that the web API (resource) application exposes to client applications.</span></span> <span data-ttu-id="3ff2a-116">Estes escopos de permissão podem ser concedidos aos aplicativos de cliente durante o consentimento.</span><span class="sxs-lookup"><span data-stu-id="3ff2a-116">These permission scopes may be granted to client applications during consent.</span></span> |
+|<span data-ttu-id="7ecb7-109">requestedAccessTokenVersion</span><span class="sxs-lookup"><span data-stu-id="7ecb7-109">requestedAccessTokenVersion</span></span>|<span data-ttu-id="7ecb7-110">Int32</span><span class="sxs-lookup"><span data-stu-id="7ecb7-110">Int32</span></span>| <span data-ttu-id="7ecb7-111">Especifica a versão do token de acesso aceito para o recurso de API atual.</span><span class="sxs-lookup"><span data-stu-id="7ecb7-111">Specifies the accepted access token version for the current API resource.</span></span> <span data-ttu-id="7ecb7-112">Os valores possíveis são 1 ou 2.</span><span class="sxs-lookup"><span data-stu-id="7ecb7-112">Possible values are 1 or 2.</span></span>  |
+|<span data-ttu-id="7ecb7-113">oauth2PermissionScopes</span><span class="sxs-lookup"><span data-stu-id="7ecb7-113">oauth2PermissionScopes</span></span>|<span data-ttu-id="7ecb7-114">coleção [permissionScope](permissionscope.md)</span><span class="sxs-lookup"><span data-stu-id="7ecb7-114">[permissionScope](permissionscope.md) collection</span></span>| <span data-ttu-id="7ecb7-115">A coleção de escopos de permissão OAuth 2,0 que o aplicativo Web API (recurso) expõe para aplicativos cliente.</span><span class="sxs-lookup"><span data-stu-id="7ecb7-115">The collection of OAuth 2.0 permission scopes that the web API (resource) application exposes to client applications.</span></span> <span data-ttu-id="7ecb7-116">Esses escopos de permissão podem ser concedidos aos aplicativos cliente durante o consentimento.</span><span class="sxs-lookup"><span data-stu-id="7ecb7-116">These permission scopes may be granted to client applications during consent.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="3ff2a-117">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="3ff2a-117">JSON representation</span></span>
-<span data-ttu-id="3ff2a-118">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="3ff2a-118">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="7ecb7-117">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="7ecb7-117">JSON representation</span></span>
+<span data-ttu-id="7ecb7-118">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="7ecb7-118">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

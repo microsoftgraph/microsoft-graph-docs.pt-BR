@@ -1,31 +1,31 @@
 ---
-title: tipo de recurso de commsNotifications
-description: Lista de notificações usado pelos servidores Communications para envio de notificações de vários em um único lote.
+title: tipo de recurso commsNotifications
+description: Lista de notificações usadas pelos servidores de comunicação para o envio de várias notificações em um único lote.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 2d002b74bffe0911e2ba1fef4eed324b52ebcc49
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520589"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535497"
 ---
-# <a name="commsnotifications-resource-type"></a><span data-ttu-id="f2fae-103">tipo de recurso de commsNotifications</span><span class="sxs-lookup"><span data-stu-id="f2fae-103">commsNotifications resource type</span></span>
+# <a name="commsnotifications-resource-type"></a><span data-ttu-id="afc8c-103">tipo de recurso commsNotifications</span><span class="sxs-lookup"><span data-stu-id="afc8c-103">commsNotifications resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f2fae-104">Lista de notificações usado pelos servidores Communications para envio de notificações de vários em um único lote.</span><span class="sxs-lookup"><span data-stu-id="f2fae-104">List of notifications used by the Communications servers for sending multiple notifications in a single batch.</span></span>
+<span data-ttu-id="afc8c-104">Lista de notificações usadas pelos servidores de comunicação para o envio de várias notificações em um único lote.</span><span class="sxs-lookup"><span data-stu-id="afc8c-104">List of notifications used by the Communications servers for sending multiple notifications in a single batch.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="f2fae-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="f2fae-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="afc8c-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="afc8c-105">Properties</span></span>
 
-| <span data-ttu-id="f2fae-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="f2fae-106">Property</span></span>       | <span data-ttu-id="f2fae-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="f2fae-107">Type</span></span>                                                 | <span data-ttu-id="f2fae-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="f2fae-108">Description</span></span>                                   |
+| <span data-ttu-id="afc8c-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="afc8c-106">Property</span></span>       | <span data-ttu-id="afc8c-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="afc8c-107">Type</span></span>                                                 | <span data-ttu-id="afc8c-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="afc8c-108">Description</span></span>                                   |
 |:---------------|:-----------------------------------------------------|:----------------------------------------------|
-| <span data-ttu-id="f2fae-109">valor</span><span class="sxs-lookup"><span data-stu-id="f2fae-109">value</span></span>          | <span data-ttu-id="f2fae-110">coleção [commsNotification](commsnotification.md)</span><span class="sxs-lookup"><span data-stu-id="f2fae-110">[commsNotification](commsnotification.md) collection</span></span> | <span data-ttu-id="f2fae-111">A notificação de alteração no recurso.</span><span class="sxs-lookup"><span data-stu-id="f2fae-111">The notification of a change in the resource.</span></span> |
+| <span data-ttu-id="afc8c-109">valor</span><span class="sxs-lookup"><span data-stu-id="afc8c-109">value</span></span>          | <span data-ttu-id="afc8c-110">coleção [commsNotification](commsnotification.md)</span><span class="sxs-lookup"><span data-stu-id="afc8c-110">[commsNotification](commsnotification.md) collection</span></span> | <span data-ttu-id="afc8c-111">A notificação de uma alteração no recurso.</span><span class="sxs-lookup"><span data-stu-id="afc8c-111">The notification of a change in the resource.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="f2fae-112">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="f2fae-112">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="afc8c-112">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="afc8c-112">JSON representation</span></span>
 
-<span data-ttu-id="f2fae-113">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="f2fae-113">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="afc8c-113">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="afc8c-113">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

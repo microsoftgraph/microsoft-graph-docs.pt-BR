@@ -1,33 +1,33 @@
 ---
-title: tipo de recurso de audioSourceLevel
-description: Configuração de nível de outras fontes.
+title: tipo de recurso audioSourceLevel
+description: Configuração de nível para outras fontes.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: c91a4c57b283f7669b2be22bba5de5d958b437ad
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528372"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535573"
 ---
-# <a name="audiosourcelevel-resource-type"></a><span data-ttu-id="bb8e8-103">tipo de recurso de audioSourceLevel</span><span class="sxs-lookup"><span data-stu-id="bb8e8-103">audioSourceLevel resource type</span></span>
+# <a name="audiosourcelevel-resource-type"></a><span data-ttu-id="561bd-103">tipo de recurso audioSourceLevel</span><span class="sxs-lookup"><span data-stu-id="561bd-103">audioSourceLevel resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="bb8e8-104">Configuração de nível de outras fontes.</span><span class="sxs-lookup"><span data-stu-id="bb8e8-104">Level configuration for other sources.</span></span>
+<span data-ttu-id="561bd-104">Configuração de nível para outras fontes.</span><span class="sxs-lookup"><span data-stu-id="561bd-104">Level configuration for other sources.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="bb8e8-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="bb8e8-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="561bd-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="561bd-105">Properties</span></span>
 
-| <span data-ttu-id="bb8e8-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="bb8e8-106">Property</span></span>               | <span data-ttu-id="bb8e8-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="bb8e8-107">Type</span></span>    | <span data-ttu-id="bb8e8-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="bb8e8-108">Description</span></span>                                                                                         |
+| <span data-ttu-id="561bd-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="561bd-106">Property</span></span>               | <span data-ttu-id="561bd-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="561bd-107">Type</span></span>    | <span data-ttu-id="561bd-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="561bd-108">Description</span></span>                                                                                         |
 | :--------------------- | :------ | :---------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="bb8e8-109">duckOthers</span><span class="sxs-lookup"><span data-stu-id="bb8e8-109">duckOthers</span></span>             | <span data-ttu-id="bb8e8-110">Booliano</span><span class="sxs-lookup"><span data-stu-id="bb8e8-110">Boolean</span></span> | <span data-ttu-id="bb8e8-111">Habilita a essa fonte para jantar de outras fontes enquanto estão ativos.</span><span class="sxs-lookup"><span data-stu-id="bb8e8-111">Enables this source to duck other sources while active.</span></span> <span data-ttu-id="bb8e8-112">Se definido como true, desviando nível deve ser definido.</span><span class="sxs-lookup"><span data-stu-id="bb8e8-112">If set to true, ducking level has to be set.</span></span>|
-| <span data-ttu-id="bb8e8-113">nível</span><span class="sxs-lookup"><span data-stu-id="bb8e8-113">level</span></span>                  | <span data-ttu-id="bb8e8-114">Int64</span><span class="sxs-lookup"><span data-stu-id="bb8e8-114">Int64</span></span>   | <span data-ttu-id="bb8e8-115">Desviando nível da fonte se `duckOthers` estiver definida como `true`.</span><span class="sxs-lookup"><span data-stu-id="bb8e8-115">Ducking level of the source if `duckOthers` is set to `true`.</span></span>                                     |
-| <span data-ttu-id="bb8e8-116">participante</span><span class="sxs-lookup"><span data-stu-id="bb8e8-116">participant</span></span>            | <span data-ttu-id="bb8e8-117">String</span><span class="sxs-lookup"><span data-stu-id="bb8e8-117">String</span></span>  | <span data-ttu-id="bb8e8-118">O fluxo de áudio participante do código-fonte.</span><span class="sxs-lookup"><span data-stu-id="bb8e8-118">The source participant audio stream.</span></span>                                                                |
+| <span data-ttu-id="561bd-109">duckOthers</span><span class="sxs-lookup"><span data-stu-id="561bd-109">duckOthers</span></span>             | <span data-ttu-id="561bd-110">Booliano</span><span class="sxs-lookup"><span data-stu-id="561bd-110">Boolean</span></span> | <span data-ttu-id="561bd-111">Permite que essa fonte para o pato de outras fontes enquanto ativa.</span><span class="sxs-lookup"><span data-stu-id="561bd-111">Enables this source to duck other sources while active.</span></span> <span data-ttu-id="561bd-112">Se for definido como true, o nível de pato precisará ser definido.</span><span class="sxs-lookup"><span data-stu-id="561bd-112">If set to true, ducking level has to be set.</span></span>|
+| <span data-ttu-id="561bd-113">level</span><span class="sxs-lookup"><span data-stu-id="561bd-113">level</span></span>                  | <span data-ttu-id="561bd-114">Int64</span><span class="sxs-lookup"><span data-stu-id="561bd-114">Int64</span></span>   | <span data-ttu-id="561bd-115">O nível de pato da origem se `duckOthers` estiver definido como `true`.</span><span class="sxs-lookup"><span data-stu-id="561bd-115">Ducking level of the source if `duckOthers` is set to `true`.</span></span>                                     |
+| <span data-ttu-id="561bd-116">participante</span><span class="sxs-lookup"><span data-stu-id="561bd-116">participant</span></span>            | <span data-ttu-id="561bd-117">String</span><span class="sxs-lookup"><span data-stu-id="561bd-117">String</span></span>  | <span data-ttu-id="561bd-118">O fluxo de áudio do participante de origem.</span><span class="sxs-lookup"><span data-stu-id="561bd-118">The source participant audio stream.</span></span>                                                                |
 
-## <a name="json-representation"></a><span data-ttu-id="bb8e8-119">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="bb8e8-119">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="561bd-119">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="561bd-119">JSON representation</span></span>
 
-<span data-ttu-id="bb8e8-120">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="bb8e8-120">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="561bd-120">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="561bd-120">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

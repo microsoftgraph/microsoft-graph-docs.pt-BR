@@ -5,41 +5,41 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 13c054403eb93afce03775138c151e67bc2f57d7
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640242"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543736"
 ---
-# <a name="chartlegend-resource-type"></a><span data-ttu-id="ef38c-103">Tipo de recurso ChartLegend</span><span class="sxs-lookup"><span data-stu-id="ef38c-103">ChartLegend resource type</span></span>
+# <a name="chartlegend-resource-type"></a><span data-ttu-id="5ef13-103">Tipo de recurso ChartLegend</span><span class="sxs-lookup"><span data-stu-id="5ef13-103">ChartLegend resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ef38c-104">Representa a legenda de um gráfico.</span><span class="sxs-lookup"><span data-stu-id="ef38c-104">Represents the legend in a chart.</span></span>
+<span data-ttu-id="5ef13-104">Representa a legenda de um gráfico.</span><span class="sxs-lookup"><span data-stu-id="5ef13-104">Represents the legend in a chart.</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="ef38c-105">Métodos</span><span class="sxs-lookup"><span data-stu-id="ef38c-105">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="5ef13-105">Métodos</span><span class="sxs-lookup"><span data-stu-id="5ef13-105">Methods</span></span>
 
-| <span data-ttu-id="ef38c-106">Método</span><span class="sxs-lookup"><span data-stu-id="ef38c-106">Method</span></span>           | <span data-ttu-id="ef38c-107">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="ef38c-107">Return Type</span></span>    |<span data-ttu-id="ef38c-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="ef38c-108">Description</span></span>|
+| <span data-ttu-id="5ef13-106">Método</span><span class="sxs-lookup"><span data-stu-id="5ef13-106">Method</span></span>           | <span data-ttu-id="5ef13-107">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="5ef13-107">Return Type</span></span>    |<span data-ttu-id="5ef13-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="5ef13-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="ef38c-109">Get ChartLegend</span><span class="sxs-lookup"><span data-stu-id="ef38c-109">Get ChartLegend</span></span>](../api/chartlegend-get.md) | [<span data-ttu-id="ef38c-110">ChartLegend</span><span class="sxs-lookup"><span data-stu-id="ef38c-110">ChartLegend</span></span>](chartlegend.md) |<span data-ttu-id="ef38c-111">Leia as propriedades e os relacionamentos do objeto chartLegend.</span><span class="sxs-lookup"><span data-stu-id="ef38c-111">Read properties and relationships of chartLegend object.</span></span>|
-|[<span data-ttu-id="ef38c-112">Update</span><span class="sxs-lookup"><span data-stu-id="ef38c-112">Update</span></span>](../api/chartlegend-update.md) | [<span data-ttu-id="ef38c-113">ChartLegend</span><span class="sxs-lookup"><span data-stu-id="ef38c-113">ChartLegend</span></span>](chartlegend.md) |<span data-ttu-id="ef38c-114">Atualize o objeto ChartLegend.</span><span class="sxs-lookup"><span data-stu-id="ef38c-114">Update ChartLegend object.</span></span> |
+|[<span data-ttu-id="5ef13-109">Get ChartLegend</span><span class="sxs-lookup"><span data-stu-id="5ef13-109">Get ChartLegend</span></span>](../api/chartlegend-get.md) | [<span data-ttu-id="5ef13-110">ChartLegend</span><span class="sxs-lookup"><span data-stu-id="5ef13-110">ChartLegend</span></span>](chartlegend.md) |<span data-ttu-id="5ef13-111">Leia as propriedades e os relacionamentos do objeto chartLegend.</span><span class="sxs-lookup"><span data-stu-id="5ef13-111">Read properties and relationships of chartLegend object.</span></span>|
+|[<span data-ttu-id="5ef13-112">Update</span><span class="sxs-lookup"><span data-stu-id="5ef13-112">Update</span></span>](../api/chartlegend-update.md) | [<span data-ttu-id="5ef13-113">ChartLegend</span><span class="sxs-lookup"><span data-stu-id="5ef13-113">ChartLegend</span></span>](chartlegend.md) |<span data-ttu-id="5ef13-114">Atualize o objeto ChartLegend.</span><span class="sxs-lookup"><span data-stu-id="5ef13-114">Update ChartLegend object.</span></span> |
 
-## <a name="properties"></a><span data-ttu-id="ef38c-115">Propriedades</span><span class="sxs-lookup"><span data-stu-id="ef38c-115">Properties</span></span>
-| <span data-ttu-id="ef38c-116">Propriedade</span><span class="sxs-lookup"><span data-stu-id="ef38c-116">Property</span></span>     | <span data-ttu-id="ef38c-117">Tipo</span><span class="sxs-lookup"><span data-stu-id="ef38c-117">Type</span></span>   |<span data-ttu-id="ef38c-118">Descrição</span><span class="sxs-lookup"><span data-stu-id="ef38c-118">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="5ef13-115">Propriedades</span><span class="sxs-lookup"><span data-stu-id="5ef13-115">Properties</span></span>
+| <span data-ttu-id="5ef13-116">Propriedade</span><span class="sxs-lookup"><span data-stu-id="5ef13-116">Property</span></span>     | <span data-ttu-id="5ef13-117">Tipo</span><span class="sxs-lookup"><span data-stu-id="5ef13-117">Type</span></span>   |<span data-ttu-id="5ef13-118">Descrição</span><span class="sxs-lookup"><span data-stu-id="5ef13-118">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="ef38c-119">overlay</span><span class="sxs-lookup"><span data-stu-id="ef38c-119">overlay</span></span>|<span data-ttu-id="ef38c-120">booliano</span><span class="sxs-lookup"><span data-stu-id="ef38c-120">boolean</span></span>|<span data-ttu-id="ef38c-121">Valor booliano para determinar se a legenda do gráfico deve se sobrepor ao corpo principal do gráfico.</span><span class="sxs-lookup"><span data-stu-id="ef38c-121">Boolean value for whether the chart legend should overlap with the main body of the chart.</span></span>|
-|<span data-ttu-id="ef38c-122">position</span><span class="sxs-lookup"><span data-stu-id="ef38c-122">position</span></span>|<span data-ttu-id="ef38c-123">string</span><span class="sxs-lookup"><span data-stu-id="ef38c-123">string</span></span>|<span data-ttu-id="ef38c-p101">Representa a posição da legenda no gráfico. Os valores possíveis são: `Top`, `Bottom`, `Left`, `Right`, `Corner` e `Custom`.</span><span class="sxs-lookup"><span data-stu-id="ef38c-p101">Represents the position of the legend on the chart. Possible values are: `Top`, `Bottom`, `Left`, `Right`, `Corner`, `Custom`.</span></span>|
-|<span data-ttu-id="ef38c-126">visible</span><span class="sxs-lookup"><span data-stu-id="ef38c-126">visible</span></span>|<span data-ttu-id="ef38c-127">booliano</span><span class="sxs-lookup"><span data-stu-id="ef38c-127">boolean</span></span>|<span data-ttu-id="ef38c-128">Um valor booliano que representa a visibilidade de um objeto ChartLegend.</span><span class="sxs-lookup"><span data-stu-id="ef38c-128">A boolean value the represents the visibility of a ChartLegend object.</span></span>|
+|<span data-ttu-id="5ef13-119">overlay</span><span class="sxs-lookup"><span data-stu-id="5ef13-119">overlay</span></span>|<span data-ttu-id="5ef13-120">booliano</span><span class="sxs-lookup"><span data-stu-id="5ef13-120">boolean</span></span>|<span data-ttu-id="5ef13-121">Valor booliano para determinar se a legenda do gráfico deve se sobrepor ao corpo principal do gráfico.</span><span class="sxs-lookup"><span data-stu-id="5ef13-121">Boolean value for whether the chart legend should overlap with the main body of the chart.</span></span>|
+|<span data-ttu-id="5ef13-122">position</span><span class="sxs-lookup"><span data-stu-id="5ef13-122">position</span></span>|<span data-ttu-id="5ef13-123">string</span><span class="sxs-lookup"><span data-stu-id="5ef13-123">string</span></span>|<span data-ttu-id="5ef13-p101">Representa a posição da legenda no gráfico. Os valores possíveis são: `Top`, `Bottom`, `Left`, `Right`, `Corner` e `Custom`.</span><span class="sxs-lookup"><span data-stu-id="5ef13-p101">Represents the position of the legend on the chart. Possible values are: `Top`, `Bottom`, `Left`, `Right`, `Corner`, `Custom`.</span></span>|
+|<span data-ttu-id="5ef13-126">visible</span><span class="sxs-lookup"><span data-stu-id="5ef13-126">visible</span></span>|<span data-ttu-id="5ef13-127">booliano</span><span class="sxs-lookup"><span data-stu-id="5ef13-127">boolean</span></span>|<span data-ttu-id="5ef13-128">Um valor booliano que representa a visibilidade de um objeto ChartLegend.</span><span class="sxs-lookup"><span data-stu-id="5ef13-128">A boolean value the represents the visibility of a ChartLegend object.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="ef38c-129">Relacionamentos</span><span class="sxs-lookup"><span data-stu-id="ef38c-129">Relationships</span></span>
-| <span data-ttu-id="ef38c-130">Relação</span><span class="sxs-lookup"><span data-stu-id="ef38c-130">Relationship</span></span> | <span data-ttu-id="ef38c-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="ef38c-131">Type</span></span>   |<span data-ttu-id="ef38c-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="ef38c-132">Description</span></span>|
+## <a name="relationships"></a><span data-ttu-id="5ef13-129">Relações</span><span class="sxs-lookup"><span data-stu-id="5ef13-129">Relationships</span></span>
+| <span data-ttu-id="5ef13-130">Relação</span><span class="sxs-lookup"><span data-stu-id="5ef13-130">Relationship</span></span> | <span data-ttu-id="5ef13-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="5ef13-131">Type</span></span>   |<span data-ttu-id="5ef13-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="5ef13-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="ef38c-133">formato</span><span class="sxs-lookup"><span data-stu-id="ef38c-133">format</span></span>|[<span data-ttu-id="ef38c-134">ChartLegendFormat</span><span class="sxs-lookup"><span data-stu-id="ef38c-134">ChartLegendFormat</span></span>](chartlegendformat.md)|<span data-ttu-id="ef38c-p102">Representa a formatação de uma legenda de gráfico, que inclui a formatação de fonte e de preenchimento. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="ef38c-p102">Represents the formatting of a chart legend, which includes fill and font formatting. Read-only.</span></span>|
+|<span data-ttu-id="5ef13-133">format</span><span class="sxs-lookup"><span data-stu-id="5ef13-133">format</span></span>|[<span data-ttu-id="5ef13-134">ChartLegendFormat</span><span class="sxs-lookup"><span data-stu-id="5ef13-134">ChartLegendFormat</span></span>](chartlegendformat.md)|<span data-ttu-id="5ef13-p102">Representa a formatação de uma legenda de gráfico, que inclui a formatação de fonte e de preenchimento. Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="5ef13-p102">Represents the formatting of a chart legend, which includes fill and font formatting. Read-only.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="ef38c-137">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="ef38c-137">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="5ef13-137">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="5ef13-137">JSON representation</span></span>
 
-<span data-ttu-id="ef38c-138">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="ef38c-138">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="5ef13-138">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="5ef13-138">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -1,59 +1,59 @@
 ---
 title: 'participante: configureMixer'
-description: Configure como áudio misto para diferentes participantes em uma conversa com vários participantes.
+description: Configure o modo como o áudio é misturado para diferentes participantes em uma conversa de várias partes.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 0be23ec4c9e7835c919328655e89880003546472
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29530038"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539461"
 ---
-# <a name="participant-configuremixer"></a><span data-ttu-id="78066-103">participante: configureMixer</span><span class="sxs-lookup"><span data-stu-id="78066-103">participant: configureMixer</span></span>
+# <a name="participant-configuremixer"></a><span data-ttu-id="3822b-103">participante: configureMixer</span><span class="sxs-lookup"><span data-stu-id="3822b-103">participant: configureMixer</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="78066-104">Configure como áudio misto para diferentes participantes em uma conversa com vários participantes.</span><span class="sxs-lookup"><span data-stu-id="78066-104">Configure how audio is mixed for different participants in a multiparty conversation.</span></span>
+<span data-ttu-id="3822b-104">Configure o modo como o áudio é misturado para diferentes participantes em uma conversa de várias partes.</span><span class="sxs-lookup"><span data-stu-id="3822b-104">Configure how audio is mixed for different participants in a multiparty conversation.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="78066-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="78066-105">Permissions</span></span>
-<span data-ttu-id="78066-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="78066-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="3822b-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="3822b-105">Permissions</span></span>
+<span data-ttu-id="3822b-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3822b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="78066-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="78066-108">Permission type</span></span> | <span data-ttu-id="78066-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="78066-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="3822b-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="3822b-108">Permission type</span></span> | <span data-ttu-id="3822b-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="3822b-109">Permissions (from least to most privileged)</span></span> |
 | :-------------- | :------------------------------------------ |
-| <span data-ttu-id="78066-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="78066-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="78066-111">Não suportado</span><span class="sxs-lookup"><span data-stu-id="78066-111">Not Supported</span></span>        |
-| <span data-ttu-id="78066-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="78066-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="78066-113">Não suportado</span><span class="sxs-lookup"><span data-stu-id="78066-113">Not Supported</span></span>        |
-| <span data-ttu-id="78066-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="78066-114">Application</span></span>     | <span data-ttu-id="78066-115">Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All</span><span class="sxs-lookup"><span data-stu-id="78066-115">Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All</span></span> |
+| <span data-ttu-id="3822b-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="3822b-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="3822b-111">Não suportado</span><span class="sxs-lookup"><span data-stu-id="3822b-111">Not Supported</span></span>        |
+| <span data-ttu-id="3822b-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="3822b-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3822b-113">Não suportado</span><span class="sxs-lookup"><span data-stu-id="3822b-113">Not Supported</span></span>        |
+| <span data-ttu-id="3822b-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="3822b-114">Application</span></span>     | <span data-ttu-id="3822b-115">Calls. JoinGroupCalls. All, calls. InitiateGroupCalls. All</span><span class="sxs-lookup"><span data-stu-id="3822b-115">Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="78066-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="78066-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3822b-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="3822b-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/participants/configureMixer
 POST /applications/{id}/calls/{id}/participants/configureMixer
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="78066-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="78066-117">Request headers</span></span>
-| <span data-ttu-id="78066-118">Nome</span><span class="sxs-lookup"><span data-stu-id="78066-118">Name</span></span>          | <span data-ttu-id="78066-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="78066-119">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="3822b-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="3822b-117">Request headers</span></span>
+| <span data-ttu-id="3822b-118">Nome</span><span class="sxs-lookup"><span data-stu-id="3822b-118">Name</span></span>          | <span data-ttu-id="3822b-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="3822b-119">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="78066-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="78066-120">Authorization</span></span> | <span data-ttu-id="78066-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="78066-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="3822b-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="3822b-120">Authorization</span></span> | <span data-ttu-id="3822b-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="3822b-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="78066-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="78066-123">Request body</span></span>
-<span data-ttu-id="78066-124">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="78066-124">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="3822b-123">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="3822b-123">Request body</span></span>
+<span data-ttu-id="3822b-124">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="3822b-124">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="78066-125">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="78066-125">Parameter</span></span>      | <span data-ttu-id="78066-126">Tipo</span><span class="sxs-lookup"><span data-stu-id="78066-126">Type</span></span>    |<span data-ttu-id="78066-127">Descrição</span><span class="sxs-lookup"><span data-stu-id="78066-127">Description</span></span>|
+| <span data-ttu-id="3822b-125">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="3822b-125">Parameter</span></span>      | <span data-ttu-id="3822b-126">Tipo</span><span class="sxs-lookup"><span data-stu-id="3822b-126">Type</span></span>    |<span data-ttu-id="3822b-127">Descrição</span><span class="sxs-lookup"><span data-stu-id="3822b-127">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="78066-128">participantMixerLevels</span><span class="sxs-lookup"><span data-stu-id="78066-128">participantMixerLevels</span></span>|<span data-ttu-id="78066-129">coleção [participantMixerLevel](../resources/participantmixerlevel.md)</span><span class="sxs-lookup"><span data-stu-id="78066-129">[participantMixerLevel](../resources/participantmixerlevel.md) collection</span></span>| <span data-ttu-id="78066-130">Configuração do mixer redistribui para determinados participante de áudio.</span><span class="sxs-lookup"><span data-stu-id="78066-130">Configuration of mixer levels for given audio participant.</span></span>|
-|<span data-ttu-id="78066-131">ClientContext</span><span class="sxs-lookup"><span data-stu-id="78066-131">clientContext</span></span>|<span data-ttu-id="78066-132">String</span><span class="sxs-lookup"><span data-stu-id="78066-132">String</span></span>|<span data-ttu-id="78066-133">O contexto de cliente.</span><span class="sxs-lookup"><span data-stu-id="78066-133">The client context.</span></span>|
+|<span data-ttu-id="3822b-128">participantMixerLevels</span><span class="sxs-lookup"><span data-stu-id="3822b-128">participantMixerLevels</span></span>|<span data-ttu-id="3822b-129">coleção [participantMixerLevel](../resources/participantmixerlevel.md)</span><span class="sxs-lookup"><span data-stu-id="3822b-129">[participantMixerLevel](../resources/participantmixerlevel.md) collection</span></span>| <span data-ttu-id="3822b-130">Configuração dos níveis de mixer para determinado participante de áudio.</span><span class="sxs-lookup"><span data-stu-id="3822b-130">Configuration of mixer levels for given audio participant.</span></span>|
+|<span data-ttu-id="3822b-131">clientContext</span><span class="sxs-lookup"><span data-stu-id="3822b-131">clientContext</span></span>|<span data-ttu-id="3822b-132">String</span><span class="sxs-lookup"><span data-stu-id="3822b-132">String</span></span>|<span data-ttu-id="3822b-133">O contexto do cliente.</span><span class="sxs-lookup"><span data-stu-id="3822b-133">The client context.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="78066-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="78066-134">Response</span></span>
-<span data-ttu-id="78066-135">Retorna `202 Accepted` código de resposta e um cabeçalho de local com um uri para o [commsOperation](../resources/commsoperation.md) criado para essa solicitação.</span><span class="sxs-lookup"><span data-stu-id="78066-135">Returns `202 Accepted` response code and a Location header with a uri to the [commsOperation](../resources/commsoperation.md) created for this request.</span></span>
+## <a name="response"></a><span data-ttu-id="3822b-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="3822b-134">Response</span></span>
+<span data-ttu-id="3822b-135">Retorna `202 Accepted` o código de resposta e um cabeçalho de local com um URI para o [commsOperation](../resources/commsoperation.md) criado para essa solicitação.</span><span class="sxs-lookup"><span data-stu-id="3822b-135">Returns `202 Accepted` response code and a Location header with a uri to the [commsOperation](../resources/commsoperation.md) created for this request.</span></span>
 
-## <a name="example"></a><span data-ttu-id="78066-136">Exemplo</span><span class="sxs-lookup"><span data-stu-id="78066-136">Example</span></span>
-<span data-ttu-id="78066-137">O exemplo a seguir mostra como chamar essa API.</span><span class="sxs-lookup"><span data-stu-id="78066-137">The following example shows how to call this API.</span></span>
+## <a name="example"></a><span data-ttu-id="3822b-136">Exemplo</span><span class="sxs-lookup"><span data-stu-id="3822b-136">Example</span></span>
+<span data-ttu-id="3822b-137">O exemplo a seguir mostra como chamar essa API.</span><span class="sxs-lookup"><span data-stu-id="3822b-137">The following example shows how to call this API.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="78066-138">Solicitação</span><span class="sxs-lookup"><span data-stu-id="78066-138">Request</span></span>
-<span data-ttu-id="78066-139">O exemplo a seguir mostra a solicitação.</span><span class="sxs-lookup"><span data-stu-id="78066-139">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="3822b-138">Solicitação</span><span class="sxs-lookup"><span data-stu-id="3822b-138">Request</span></span>
+<span data-ttu-id="3822b-139">O exemplo a seguir mostra a solicitação.</span><span class="sxs-lookup"><span data-stu-id="3822b-139">The following example shows the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -88,9 +88,9 @@ Content-Length: 501
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="78066-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="78066-140">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="3822b-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="3822b-140">Response</span></span>
 
-> <span data-ttu-id="78066-p103">\*\*Observação: \*\*o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="78066-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="3822b-p103">\*\*Observação: \*\*o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="3822b-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -102,7 +102,7 @@ HTTP/1.1 202 Accepted
 Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
 ```
 
-##### <a name="notification---operation-completed"></a><span data-ttu-id="78066-143">Notificação - operação concluída</span><span class="sxs-lookup"><span data-stu-id="78066-143">Notification - operation completed</span></span>
+##### <a name="notification---operation-completed"></a><span data-ttu-id="3822b-143">Notificação-operação concluída</span><span class="sxs-lookup"><span data-stu-id="3822b-143">Notification - operation completed</span></span>
 
 ```http
 POST https://bot.contoso.com/api/calls
