@@ -2,18 +2,18 @@
 title: Adicionar uma guia ao canal
 description: 'Adiciona (pins) a uma guia para o canal especificado dentro de uma equipe. '
 author: nkramer
-localization_priority: Priority
+localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: b0beb699a52c2981166245e72d4d1c2361ac914c
-ms.sourcegitcommit: 0a673c6f4ad7aed12fb0e69608c0f73957bae10e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "31824399"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32521751"
 ---
 # <a name="add-tab-to-channel"></a>Adicionar uma guia ao canal
 
-
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Adiciona (pins) a uma [guia](../resources/teamstab.md) para o canal [especificado](../resources/channel.md) dentro de uma [equipe](../resources/team.md). O aplicativo correspondente já deve estar [instalado na equipe](../api/teamsappinstallation-add.md).
 
@@ -57,10 +57,10 @@ Este é um exemplo de solicitação.
   "name": "get_team"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs
+POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs
 {
   "displayName": "My Contoso Tab",
-  "teamsApp@odata.bind" : "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8",
+  "teamsApp@odata.bind" : "https://graph.microsoft.com/beta/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8",
   "configuration": {
     "entityId": "2DCA2E6C7A10415CAF6B8AB6661B3154",
     "contentUrl": "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154/tabView",
@@ -109,6 +109,9 @@ Content-type: application/json
   "description": "Add tab to channel",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/teamstab-add.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
 }
 -->

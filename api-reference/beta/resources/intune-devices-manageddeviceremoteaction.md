@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: c619a45f1ddfe20654c208fed424631e4d3e183c
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31801131"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32521310"
 ---
 # <a name="manageddeviceremoteaction-enum-type"></a>tipo de enumeração managedDeviceRemoteAction
 
@@ -23,10 +23,10 @@ Ainda não documentado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Ative|,0|Ainda não documentado|
-|delete|1|Ainda não documentado|
-|fullScan|duas|Ainda não documentado|
-|quickScan|3D|Ainda não documentado|
-|signatureUpdate|quatro|Ainda não documentado|
+|delete|1 |Ainda não documentado|
+|fullScan|2 |Ainda não documentado|
+|quickScan|3 |Ainda não documentado|
+|signatureUpdate|4 |Ainda não documentado|
 
 
 

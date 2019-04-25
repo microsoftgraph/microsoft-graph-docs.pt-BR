@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 9c542d62ffb4f05de37569e45aae8bbcc90a1ac7
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31782608"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32527305"
 ---
 # <a name="create-rolescopetag"></a>Criar roleScopeTag
 
@@ -51,8 +51,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar roleScop
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade. É somente leitura e gerada automaticamente.|
-|displayName|Cadeia de caracteres|O nome de exibição ou amigável da marca de escopo da função.|
+|id|Cadeia de caracteres|Chave da entidade. É somente leitura e gerada automaticamente.|
+|displayName|String|O nome de exibição ou amigável da marca de escopo da função.|
 |description|String|Descrição da marca de escopo da função.|
 
 

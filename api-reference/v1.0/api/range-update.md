@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: fda18c3632874cd60da881ec82ff174c5ede5b7d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27987598"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32525562"
 ---
 # <a name="update-range"></a>Intervalo de atualização
 
@@ -42,7 +42,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |columnHidden|booliano|Representa se todas as colunas do intervalo atual estão ocultas.|
-|fórmulas|Json|Representa a fórmula em notação A1.|
+|formulas|Json|Representa a fórmula em notação A1.|
 |formulasLocal|Json|Representa a fórmula em notação A1, na formatação de número da localidade e no idioma do usuário.  Por exemplo, a fórmula "=SUM(A1, 1.5)" em inglês seria "=SOMA(A1; 1,5)" em português.|
 |formulasR1C1|Json|Representa a fórmula em notação no estilo L1C1.|
 |numberFormat|Json|Representa o código de formato de número do Excel para determinada célula.|

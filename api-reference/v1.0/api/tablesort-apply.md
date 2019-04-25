@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 69fda9b0a49c59a86a17e9a41eb89159085d857e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27963756"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32520239"
 ---
 # <a name="tablesort-apply"></a>TableSort: apply
 
@@ -43,7 +43,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 |:---------------|:--------|:----------|
 |campos|Coleção WorkbookSortField|A lista de condições para a classificação.|
 |matchCase|booliano|Opcional. Define se o uso de maiúsculas ou minúsculas afeta a ordenação da cadeia de caracteres.|
-|method|string|Opcional. O método de ordenação usado para caracteres chineses.  Os valores possíveis são: `PinYin`, `StrokeCount`.|
+|method|string|Opcional. O método de ordenação usado pelos caracteres chineses.  Os valores possíveis são: `PinYin`, `StrokeCount`.|
 
 ## <a name="response"></a>Resposta
 

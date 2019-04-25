@@ -1,28 +1,28 @@
 ---
-title: tipo de recurso de parseExpressionResponse
-description: 'Representa a resposta do [synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md) ação.'
+title: tipo de recurso parseExpressionResponse
+description: 'Representa a resposta da ação [synchronizationSchema: ParseName](../api/synchronization_synchronizationschema_parseexpression.md) .'
 localization_priority: Normal
 ms.openlocfilehash: f8ea708468e1e580693b2bd0e6f0e7f3494996f0
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641054"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523431"
 ---
-# <a name="parseexpressionresponse-resource-type"></a>tipo de recurso de parseExpressionResponse
+# <a name="parseexpressionresponse-resource-type"></a>tipo de recurso parseExpressionResponse
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa a resposta do [synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md) ação.
+Representa a resposta da ação [synchronizationSchema: ParseName](../api/synchronization_synchronizationschema_parseexpression.md) .
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|erro|OData.Error|Detalhes do erro, se a avaliação da expressão resultou em um erro.|
-|evaluationResult|Coleção de cadeias de caracteres|Uma coleção de valores gerados pela avaliação da expressão.|
-|evaluationSucceeded|Booliano|`true`Se a avaliação foi bem-sucedida.|
-|parsedExpression|[attributeMappingSource](synchronization-attributemappingsource.md)|Um objeto de [attributeMappingSource](synchronization-attributemappingsource.md) representando a expressão analisada.|
-|parsingSucceeded|Booliano|`true`Se a expressão foi analisada com êxito.|
+|erro|OData. Error|Detalhes do erro, se a avaliação da expressão resultar em um erro.|
+|evaluationResult|Coleção de cadeias de caracteres|Uma coleção de valores produzidos pela avaliação da expressão.|
+|evaluationSucceeded|Booliano|`true`se a avaliação tiver sido bem-sucedida.|
+|parsedExpression|[attributeMappingSource](synchronization-attributemappingsource.md)|Um objeto [attributeMappingSource](synchronization-attributemappingsource.md) que representa a expressão analisada.|
+|parsingSucceeded|Booliano|`true`se a expressão tiver sido analisada com êxito.|
 
 ## <a name="json-representation"></a>Representação JSON
 

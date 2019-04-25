@@ -1,16 +1,18 @@
 ---
 title: Obter assinatura
 description: Recupere as propriedades e os relacionamentos da uma assinatura.
-localization_priority: Priority
+localization_priority: Normal
 author: piotrci
 ms.openlocfilehash: f2a1088ac6f84d236aec64fad6e0fd0d9d21e473
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30156466"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32520631"
 ---
 # <a name="get-subscription"></a>Obter assinatura
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Recupere as propriedades e os relacionamentos da uma assinatura.
 
@@ -26,7 +28,7 @@ Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitad
 |[evento](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 |[grupo](../resources/group.md) | Group.Read.All | Sem suporte | Group.Read.All |
 |[conversa em grupo](../resources/conversation.md) | Group.Read.All | Sem suporte | Sem suporte |
-|[Mensagem](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
+|[mensagem](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
 |[alerta de segurança](../resources/alert.md) | SecurityEvents.ReadWrite.All | Sem suporte | SecurityEvents.ReadWrite.All |
 |[Usuário](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
@@ -34,12 +36,11 @@ Dependendo do recurso e do tipo de permissão (delegado ou aplicativo) solicitad
 
 - No OneDrive pessoal, você pode se inscrever em qualquer pasta raiz ou qualquer subpasta da unidade. No OneDrive for Business, você pode assinar somente a pasta raiz. As notificações são enviadas pelos de alterações solicitadas na pasta inscrita, ou qualquer arquivo, pasta ou outros objetos driveItem na sua hierarquia. Você não pode inscrever as instâncias **unidade** ou **driveItem** que não sejam pastas, como arquivos individuais.
 
-- No Outlook, a permissão delegada dá suporte a inscrição de itens em pastas do apenas na caixa de correio do usuário conectado. Isso significa que, por exemplo, que não é possível usar a permissão delegada Calendars.Read para inscrever eventos na caixa de correio de terceiros.
+- No Outlook, a permissão delegada dá suporte a inscrição de itens em pastas apenas na caixa de correio do usuário conectado. Isso significa que, por exemplo, não é possível usar a permissão delegada Calendars.Read para inscrever eventos na caixa de correio de terceiros.
 - Se inscrever para alterar as notificações de contatos, eventos no Outlook ou mensagens em pastas_compartilhadas ou delegadas_:
 
   - Usar a permissão de aplicativos correspondentes para inscrever as alterações dos itens em uma pasta ou uma caixa de correio de _qualquer_ usuários no locatário.
   - Não use as permissões de compartilhamento do Outlook (Contacts.Read.Shared Calendars.Read.Shared, Mail.Read.Shared e seus equivalentes de somente leitura), pois eles **não**suportam inscrições que alteram as notificações em itens de pastas compartilhadas ou delegadas.
- 
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -56,7 +57,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
 | Nome       | Tipo | Descrição|
-|:-----------|:------|:----------|
+|:-----------|:-----|:-----------|
 | Autorização  | string  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -78,7 +79,7 @@ Este é um exemplo da solicitação.
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/subscriptions/{id}
+GET https://graph.microsoft.com/beta/subscriptions/{id}
 ```
 
 ##### <a name="response"></a>Resposta
@@ -109,10 +110,15 @@ Content-length: 252
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get subscription",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/subscription-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

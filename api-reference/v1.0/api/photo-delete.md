@@ -3,13 +3,15 @@ title: Excluir foto
 description: Exclua uma foto.
 localization_priority: Normal
 ms.openlocfilehash: e83e00f6579c300395b21608c89984a775bb5ab4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830552"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32521072"
 ---
 # <a name="delete-photo"></a>Excluir foto
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Exclua uma foto.
 ## <a name="permissions"></a>Permissões
@@ -47,10 +49,10 @@ Se bem-sucedido, este método retorna um código de resposta `204 No Content`. N
 Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
-"name": "delete_photo"
+  "name": "delete_photo"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/photo
+DELETE https://graph.microsoft.com/beta/users/{id|userPrincipalName}/photo
 ```
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta.
@@ -64,10 +66,15 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Delete photo",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/photo-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

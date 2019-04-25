@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: c3670850bb0a9b3907b02c3e48d893b35ce7fcbb
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31799206"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32527270"
 ---
 # <a name="update-rolescopetag"></a>Atualizar roleScopeTag
 
@@ -51,8 +51,8 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [roleSco
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade. É somente leitura e gerada automaticamente.|
-|displayName|Cadeia de caracteres|O nome de exibição ou amigável da marca de escopo da função.|
+|id|Cadeia de caracteres|Chave da entidade. É somente leitura e gerada automaticamente.|
+|displayName|String|O nome de exibição ou amigável da marca de escopo da função.|
 |description|String|Descrição da marca de escopo da função.|
 
 

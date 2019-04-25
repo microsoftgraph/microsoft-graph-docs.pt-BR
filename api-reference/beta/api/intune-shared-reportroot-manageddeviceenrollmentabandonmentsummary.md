@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: 0bd8e82aa7987e89d9f9a740a8fa9c181570ccd8
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30956657"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32526990"
 ---
 # <a name="manageddeviceenrollmentabandonmentsummary-function"></a>função managedDeviceEnrollmentAbandonmentSummary
 
@@ -49,9 +49,9 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta função.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|ignorar|Int32|Ainda não documentado|
+|skip|Int32|Ainda não documentado|
 |top|Int32|Ainda não documentado|
-|filter|String|Ainda não documentado|
+|filtro|String|Ainda não documentado|
 |skipToken|String|Ainda não documentado|
 
 

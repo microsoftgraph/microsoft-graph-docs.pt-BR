@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 0dae6cb2d8962c10091ecf78a076fe3a371f821b
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30258181"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523816"
 ---
 # <a name="importedwindowsautopilotdeviceidentityimportstatus-enum-type"></a>tipo de enumeração importedWindowsAutopilotDeviceIdentityImportStatus
 
@@ -20,11 +20,11 @@ Ainda não documentado
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|unknown|,0|Status desconhecido.|
-|função|1|Status pendente.|
-|parcial|duas|Status parcial.|
-|complete|3D|Status completo.|
-|erro|quatro|Status do erro.|
+|desconhecido|,0|Status desconhecido.|
+|função|1 |Status pendente.|
+|parcial|2 |Status parcial.|
+|complete|3 |Status completo.|
+|erro|4 |Status do erro.|
 
 
 

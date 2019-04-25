@@ -1,15 +1,15 @@
 ---
-title: tipo de recurso de referencedObject
+title: tipo de recurso referenciouobject
 description: Descreve uma referência a outro objeto definido na mesma definição de diretório.
 localization_priority: Normal
 ms.openlocfilehash: dcec232335fdf3d447097ea1ae87fbc9ea676cfe
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529317"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523234"
 ---
-# <a name="referencedobject-resource-type"></a>tipo de recurso de referencedObject
+# <a name="referencedobject-resource-type"></a>tipo de recurso referenciouobject
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -20,7 +20,7 @@ Descreve uma referência a outro objeto definido na mesma [definição de diret�
 | Propriedade                   | Tipo                      | Descrição    |
 |:---------------------------|:--------------------------|:---------------|
 |referencedObjectName        |String                     |Nome do objeto referenciado. Deve corresponder a um dos objetos na [definição de diretório](synchronization-directorydefinition.md).|
-|referencedProperty          |String                     |Sem suporte atualmente. Nome da propriedade no objeto referenciado, o valor para o qual é usado como referência.|
+|referenciouproperty          |String                     |**Não suportado no momento**. Nome da propriedade no objeto referenciado, o valor para o qual é usado como a referência.|
 
 ## <a name="json-representation"></a>Representação JSON
 

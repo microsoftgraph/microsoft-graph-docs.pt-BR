@@ -1,25 +1,25 @@
 ---
-title: tipo de recurso de oneNoteIdentity
+title: tipo de recurso oneNoteIdentity
 description: '**Suporte em breve**'
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 ms.openlocfilehash: f1b03ad907a0b8f6f3cf2674d74f1ee8722357ea
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642132"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32525016"
 ---
-# <a name="onenoteidentity-resource-type"></a>tipo de recurso de oneNoteIdentity
+# <a name="onenoteidentity-resource-type"></a>tipo de recurso oneNoteIdentity
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **Suporte em breve**
 
-O tipo de OneNoteIdentity representa uma identidade de um _usuário_.
+O tipo OneNoteIdentity representa uma identidade de um _usuário_.
 
-No futuro, esse tipo de será mesclado com [identidade](identity.md)
+No futuro, este tipo será mesclado com a [identidade](identity.md)
 
 
 ## <a name="json-representation"></a>Representação JSON
@@ -44,7 +44,7 @@ Veja a seguir uma representação JSON do recurso.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|displayName|string|Nome para exibição da identidade.|
+|displayName|string|Nome de exibição da identidade.|
 |id|string|Identificador exclusivo da identidade.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

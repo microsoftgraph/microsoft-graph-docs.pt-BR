@@ -5,11 +5,11 @@ localization_priority: Normal
 author: tfitzmac
 ms.prod: Intune
 ms.openlocfilehash: 7e5c36a23be0ab32a14a08eaff297b832ba5274c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30156046"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32526353"
 ---
 # <a name="officeconfiguration-resource-type"></a>tipo de recurso officeConfiguration
 

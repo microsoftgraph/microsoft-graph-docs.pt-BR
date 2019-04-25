@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 12c8c2dc628b7fcecef81296ca56f17845b39478
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30962859"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523956"
 ---
 # <a name="update-manageddevice"></a>Atualizar managedDevice
 
@@ -62,10 +62,10 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [managed
 |jailBroken|String|se o dispositivo está desbloqueado ou modificado.|
 |managementAgent|[managementAgentType](../resources/intune-devices-managementagenttype.md)|Canal de gerenciamento do dispositivo. Intune, EAS, etc. Os valores possíveis são: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`.|
 |osVersion|String|A versão do sistema operacional do dispositivo.|
-|easActivated|Boolean|Se o dispositivo está ativado para Exchange ActiveSync.|
+|easActivated|Booliano|Se o dispositivo está ativado para Exchange ActiveSync.|
 |easDeviceId|String|ID do Exchange ActiveSync do dispositivo.|
 |easActivationDateTime|DateTimeOffset|Hora de ativação do Exchange ActiveSync do dispositivo.|
-|azureADRegistered|Boolean|Se o dispositivo é registrado no Azure Active Directory.|
+|azureADRegistered|Booliano|Se o dispositivo é registrado no Azure Active Directory.|
 |deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|Tipo de registro do dispositivo. Os valores possíveis são: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`.|
 |activationLockBypassCode|String|Código que permite que o Bloqueio de Ativação em um dispositivo seja ignorado.|
 |emailAddress|String|Email(s) do usuário associado ao dispositivo|

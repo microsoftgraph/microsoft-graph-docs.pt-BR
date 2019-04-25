@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: beffb9747045d0d3792d994237710e886ff0b3d8
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640921"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523466"
 ---
 # <a name="worksheet-resource-type"></a>Tipo de recurso Worksheet
 
@@ -23,9 +23,9 @@ Uma planilha do Excel é uma grade de células. Ela pode conter dados, tabelas, 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Get Worksheet](../api/worksheet-get.md) | [Worksheet](worksheet.md) |Leia as propriedades e os relacionamentos do objeto de planilha.|
-|[Create Chart](../api/worksheet-post-charts.md) |[Chart](chart.md)| Crie um novo Gráfico ao postar na coleção de gráficos.|
-|[Nomes da lista](../api/worksheet-list-names.md) |Coleção [NamedItem](nameditem.md)| Faça com que a coleção de itens nomeados seja associada à planilha.|
-|[Listar gráficos](../api/worksheet-list-charts.md) |Coleção [Chart](chart.md)| Obtenha a coleção de objetos Chart.|
+|[Create Chart](../api/worksheet-post-charts.md) |[Chart](chart.md)| Crie um novo Chart postando na coleção de gráficos.|
+|[Listar nomes](../api/worksheet-list-names.md) |Coleção [NamedItem](nameditem.md)| Obter a coleção de itens nomeados associada à planilha.|
+|[List charts](../api/worksheet-list-charts.md) |Coleção [Chart](chart.md)| Obtenha a coleção de objetos Chart.|
 |[Create Table](../api/worksheet-post-tables.md) |[Table](table.md)| Crie uma nova Table postando na coleção de tabelas.|
 |[List tables](../api/worksheet-list-tables.md) |Coleção [Table](table.md)| Obtenha uma coleção de objetos Table.|
 |[Update](../api/worksheet-update.md) | [Worksheet](worksheet.md)   |Atualize o objeto Worksheet. |
@@ -40,8 +40,8 @@ Uma planilha do Excel é uma grade de células. Ela pode conter dados, tabelas, 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|string|Retorna um valor que identifica de forma exclusiva a planilha em uma determinada pasta de trabalho. O valor do identificador permanece o mesmo, ainda que a planilha seja renomeada ou movida. Somente leitura.|
-|name|string|O nome de exibição da planilha.|
+|id|cadeia de caracteres|Retorna um valor que identifica de forma exclusiva a planilha em uma determinada pasta de trabalho. O valor do identificador permanece o mesmo, ainda que a planilha seja renomeada ou movida. Somente leitura.|
+|nome|string|O nome de exibição da planilha.|
 |position|int|A posição baseada em zero da planilha na pasta de trabalho.|
 |visibilidade|string|A visibilidade da planilha. Os valores possíveis são: `Visible`, `Hidden` e `VeryHidden`.|
 
@@ -49,8 +49,8 @@ Uma planilha do Excel é uma grade de células. Ela pode conter dados, tabelas, 
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |charts|Coleção [Chart](chart.md)|Retorna uma coleção de gráficos que fazem parte da planilha. Somente leitura.|
-|names|Coleção [NamedItem](nameditem.md)|Retorna a coleção de nomes associados à planilha. Somente leitura.|
-|pivotTables|Coleção [workbookPivotTable](workbookpivottable.md)| Coleção de Tabelas Dinâmicas que fazem parte da planilha. |
+|names|Coleção [NamedItem](nameditem.md)|Retorna uma coleção de nomes que estão associados à planilha. Somente leitura.|
+|Tabelas dinâmicas|Coleção [workbookPivotTable](workbookpivottable.md)| Coleção de Tabelas Dinâmicas que fazem parte da planilha. |
 |protection|[WorksheetProtection](worksheetprotection.md)|Retorna o objeto de proteção da planilha para uma planilha. Somente leitura.|
 |tables|Coleção [Table](table.md)|Coleção de tabelas que fazem parte da planilha. Somente leitura.|
 

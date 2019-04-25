@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: df975d13ddc97c0c6b592d02d61a978c5a0db732
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27919810"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32520484"
 ---
 # <a name="update-table"></a>Atualizar tabela
 
@@ -30,7 +30,7 @@ PATCH /workbook/tables/{id|name}
 PATCH /workbook/worksheets/{id|name}/tables/{id|name}
 ```
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
-| Nome       | Descrição|
+| Name       | Descrição|
 |:-----------|:-----------|
 | Autorização  | {token} de portador. Obrigatório. |
 | Workbook-Session-Id  | ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.|
@@ -40,14 +40,14 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|name|string|Nome da tabela.|
+|nome|string|Nome da tabela.|
 |showHeaders|booliano|Indica se a linha do cabeçalho está visível ou não. Esse valor pode ser definido para mostrar ou remover a linha do cabeçalho.|
 |showTotals|booliano|Indica se a linha do total está visível ou não. Esse valor pode ser definido para mostrar ou remover a linha do total.|
-|style|string|Valor de constante que representa o estilo de tabela. Os valores possíveis são: TableStyleLight1 até o TableStyleLight21, TableStyleMedium1 até o TableStyleMedium28, TableStyleStyleDark1 até o TableStyleStyleDark11. Um estilo personalizado de definidas pelo usuário presente na pasta de trabalho também pode ser especificado.|
+|style|string|Valor da constante que representa o estilo de Tabela. Os valores possíveis são: TableStyleLight1 a TableStyleLight21, TableStyleMedium1, TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. Também é possível usar um estilo definido pelo usuário que esteja presente na planilha.|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e o objeto de [WorkbookTable](../resources/table.md) atualizado no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [workbooktable](../resources/table.md) atualizado no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

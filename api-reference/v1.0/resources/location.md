@@ -5,11 +5,11 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: a18dbcbe4228fee0363a13fe89f452703732077a
-ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936273"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32525450"
 ---
 # <a name="location-resource-type"></a>Tipo de recurso Location
 

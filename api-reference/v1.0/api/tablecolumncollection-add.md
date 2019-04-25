@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: f28b39b4ff0f7eee96be09b26bd12434a751a604
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27940481"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32520358"
 ---
 # <a name="tablecolumncollection-add"></a>TableColumnCollection: add
 
@@ -43,10 +43,10 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 |:---------------|:--------|:----------|
 |índice|Int32|Especifica a posição relativa da nova coluna. A coluna anterior nessa posição é deslocada para a direita. O valor do índice deve ser igual ou menor que o valor do índice da última coluna, portanto não pode ser usado para acrescentar uma coluna ao final da tabela. Indexado com zero.|
 |values|Json|Opcional. Uma matriz bidimensional de valores não formatados da coluna da tabela.|
-|name|string|name
+|nome|string|nome
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` código de resposta e o objeto [WorkbookTableColumn](../resources/tablecolumn.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `200 OK` o código de resposta e o objeto [WorkbookTableColumn](../resources/tablecolumn.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 Eis um exemplo de como chamar esta API.

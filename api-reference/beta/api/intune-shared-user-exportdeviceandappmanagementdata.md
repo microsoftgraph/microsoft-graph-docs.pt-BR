@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: e36936710bcd97c10c4a69c496cf56ceffa43e46
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30961739"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32527004"
 ---
 # <a name="exportdeviceandappmanagementdata-function"></a>função exportDeviceAndAppManagementData
 
@@ -53,7 +53,7 @@ A tabela a seguir mostra os parâmetros que podem ser usados com esta função.
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|ignorar|Int32|Ainda não documentado|
+|skip|Int32|Ainda não documentado|
 |top|Int32|Ainda não documentado|
 
 ## <a name="response"></a>Resposta

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 9ecdc3ab743502ff4aef78fa8923248399ce16f4
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31803098"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32520078"
 ---
 # <a name="windowsprotectionstate-resource-type"></a>tipo de recurso Windowsprotectionstate foi
 
@@ -38,13 +38,13 @@ Entidade de status de proteção de dispositivo.
 |signatureUpdateOverdue|Booliano|Assinatura desatualizada ou não?|
 |rebootRequired|Booliano|ReInicialização necessária ou não?|
 |fullScanRequired|Booliano|Verificação completa necessária ou não?|
-|engineVersion|Cadeia de caracteres|Versão atual do mecanismo do Endpoint Protection|
-|signatureVersion|Cadeia de caracteres|Versão atual de definições de malware|
-|antiMalwareVersion|Cadeia de caracteres|Versão Antimalware atual|
+|engineVersion|String|Versão atual do mecanismo do Endpoint Protection|
+|signatureVersion|String|Versão atual de definições de malware|
+|antiMalwareVersion|String|Versão Antimalware atual|
 |lastQuickScanDateTime|DateTimeOffset|Data e hora da última verificação rápida|
 |lastFullScanDateTime|DateTimeOffset|Data e hora da última verificação rápida|
-|lastQuickScanSignatureVersion|Cadeia de caracteres|Versão da última assinatura de verificação rápida|
-|lastFullScanSignatureVersion|Cadeia de caracteres|Versão da última assinatura de verificação completa|
+|lastQuickScanSignatureVersion|String|Versão da última assinatura de verificação rápida|
+|lastFullScanSignatureVersion|String|Versão da última assinatura de verificação completa|
 |lastReportedDateTime|DateTimeOffset|Hora do último status de integridade do dispositivo relatado|
 
 ## <a name="relationships"></a>Relações

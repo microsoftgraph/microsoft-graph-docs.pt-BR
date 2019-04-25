@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: Obter permissões
 localization_priority: Normal
 ms.openlocfilehash: 3c0d8c9a00a098e83ec0ff7bd4282546fe7d94c1
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481346"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32521254"
 ---
 # <a name="get-sharing-permission-for-a-file-or-folder"></a>Obter permissão de compartilhamento para um arquivo ou pasta
 

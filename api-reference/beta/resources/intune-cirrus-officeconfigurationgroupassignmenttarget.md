@@ -5,11 +5,11 @@ localization_priority: Normal
 author: tfitzmac
 ms.prod: Intune
 ms.openlocfilehash: 7a3451d4bddec96c1e21cd605b05cb34d96372ff
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30153547"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32526388"
 ---
 # <a name="officeconfigurationgroupassignmenttarget-resource-type"></a>tipo de recurso officeConfigurationGroupAssignmentTarget
 
@@ -24,7 +24,7 @@ Herda de [officeConfigurationAssignmentTarget](../resources/intune-cirrus-office
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|groupId|String|A ID do grupo do AAD no qual estamos direcionando a configuração do dispositivo.|
+|groupId|Cadeia de caracteres|A ID do grupo do AAD no qual estamos direcionando a configuração do dispositivo.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

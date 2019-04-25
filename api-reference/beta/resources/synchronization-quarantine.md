@@ -1,15 +1,15 @@
 ---
-title: tipo de recurso de synchronizationQuarantine
+title: tipo de recurso synchronizationQuarantine
 description: Fornece informações sobre o estado de quarentena de um synchronizationJob.
 localization_priority: Normal
 ms.openlocfilehash: 6d5d5c3cbe96eda6b39833287e8efb6e0771b19a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518811"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523212"
 ---
-# <a name="synchronizationquarantine-resource-type"></a>tipo de recurso de synchronizationQuarantine
+# <a name="synchronizationquarantine-resource-type"></a>tipo de recurso synchronizationQuarantine
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -18,11 +18,11 @@ Fornece informações sobre o estado de quarentena de um [synchronizationJob](sy
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|currentBegan|DateTimeOffset|Data e hora de quando a quarentena foi última avaliada e impostas. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
-|nextAttempt|DateTimeOffset|Data e hora de quando a próxima tentativa reavalie a quarentena será feita. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
-|Reason|String|Um código que significa o motivo pelo qual a quarentena foi imposta. Os valores possíveis são: `EncounteredBaseEscrowThreshold`, `EncounteredTotalEscrowThreshold`, `EncounteredEscrowProportionThreshold`, `EncounteredQuarantineException`, `Unknown`.|
-|seriesBegan|DateTimeOffset|Data e hora de quando a quarentena primeiro foi imposta nesta série (uma série inicia quando uma quarentena é imposta pela primeira vez e é redefinida assim que a quarentena está ativada). O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
-|seriesCount|Int64|Número de vezes nesta série de quarentena foi avaliado novamente e deixado em vigor (uma série inicia quando quarentena é imposta pela primeira vez e é redefinida tão logo quarentena é elevada).|
+|currentBegan|DateTimeOffset|Data e hora em que a quarentena foi avaliada pela última vez e imposta. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
+|nextAttempt|DateTimeOffset|Data e hora em que a próxima tentativa de reavaliar a quarentena será feita. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
+|motivos|String|Um código que significa por que a quarentena foi imposta. Os valores possíveis são: `EncounteredBaseEscrowThreshold`, `EncounteredTotalEscrowThreshold`, `EncounteredEscrowProportionThreshold`, `EncounteredQuarantineException`, `Unknown`.|
+|seriesBegan|DateTimeOffset|Data e hora em que a quarentena foi imposta pela primeira vez nesta série (uma série começa quando uma quarentena é imposta pela primeira vez e é redefinida assim que a quarentena é levantada). O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
+|seriesCount|Int64|Número de vezes nesta série, a quarentena foi reavaliada e deixada em vigor (uma série é iniciada quando a quarentena é imposta primeiro e é redefinida assim que a quarentena é levantada).|
 
 ## <a name="json-representation"></a>Representação JSON
 

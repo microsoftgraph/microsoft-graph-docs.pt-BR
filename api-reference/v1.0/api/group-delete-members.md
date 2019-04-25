@@ -5,11 +5,11 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 ms.openlocfilehash: 0f93449f5fdebfce3388f20418174b03b91615d6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27966738"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32524033"
 ---
 # <a name="remove-member"></a>Remover membro
 Use esta API para remover um membro de um grupo do Office 365, de um grupo de segurança ou de um grupo de segurança habilitado para email através da propriedade de navegação **membros**. É possível remover usuários ou outros grupos.
@@ -54,7 +54,7 @@ Na solicitação, especifique a `id` do objeto diretório que deseja remover ap�
 
 #### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
->**Observação:** no objeto response mostrado aqui pode ser reduzido para melhorar a legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

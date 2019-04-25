@@ -5,11 +5,11 @@ author: jackson-woods
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: dc1bdcacad4196b9903ebb41b40c6c86b81b317c
-ms.sourcegitcommit: 1089e82254068556b0d0c7be45e3270e46c961e6
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/12/2019
-ms.locfileid: "30545999"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32521737"
 ---
 # <a name="get-access-tokens-to-call-microsoft-graph"></a>Obter tokens de acesso para chamar o Microsoft Graph
 

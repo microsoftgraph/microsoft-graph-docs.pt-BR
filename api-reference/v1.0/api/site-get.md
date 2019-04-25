@@ -3,16 +3,18 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Obter um Site do SharePoint
-localization_priority: Priority
+localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: cac9de0dc81813bda482b20e72f8a62e6191f7a1
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481773"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32520794"
 ---
 # <a name="get-a-site-resource"></a>Obter um recurso de site
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Recupere as propriedades e as relações de um recurso [site][]. Um recurso **site** representa um site de equipe no SharePoint.
 
@@ -70,7 +72,7 @@ GET /groups/{group-id}/sites/root
 
 ### <a name="request"></a>Solicitação
 
-<!-- { "blockType": "request", "name": "get-site", "scopes": "sites.read.all" } -->
+<!-- { "blockType": "request", "name": "get-site" } -->
 
 ```http
 GET /sites/{site-id}
@@ -86,6 +88,12 @@ Content-type: application/json
 
 {
   "id": "contoso.sharepoint.com,2C712604-1370-44E7-A1F5-426573FDA80A,2D2244C3-251A-49EA-93A8-39E1C3A060FE",
+  "owner": {
+    "user": {
+      "displayName": "Daron Spektor",
+      "id": "5280E7FE-DC7A-4486-9490-E790D81DFEB3"
+    }
+  },
   "displayName": "OneDrive Team Site",
   "name": "1drvteam",
   "createdDateTime": "2017-05-09T20:56:00Z",
@@ -94,10 +102,15 @@ Content-type: application/json
 }
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Sites/Get by ID"
-} -->
+  "tocPath": "Sites/Get by ID",
+  "suppressions": [
+    "Error: /api-reference/beta/api/site-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

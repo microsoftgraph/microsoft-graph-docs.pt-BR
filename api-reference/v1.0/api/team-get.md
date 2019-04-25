@@ -1,23 +1,23 @@
 ---
-title: Obtenha a equipe
-description: Recupere as propriedades e relacionamentos da equipe especificado.
+title: Obter equipe
+description: Recupere as propriedades e relações da equipe especificada.
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.openlocfilehash: 0221983538f14ef3f0c0439f8241974091e8dc0b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27943134"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32524362"
 ---
-# <a name="get-team"></a>Obtenha a equipe
+# <a name="get-team"></a>Obter equipe
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+Recupere as propriedades e relações da [equipe](../resources/team.md) especificada.
 
-Recupere as propriedades e relacionamentos da [equipe](../resources/team.md)especificado.
-
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -26,17 +26,16 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Group.Read.All, Group.ReadWrite.All    |
 
-> **Observação**: Esta API oferece suporte a permissões de administrador. Administradores globais e administradores de serviço de Teams da Microsoft podem acessar as equipes que eles não serão um membro do.
+> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais e os administradores do serviço do Microsoft Teams podem acessar equipes das quais eles não são membros.
 
 ## <a name="http-request"></a>Solicitação HTTP
-
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /teams/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método oferece suporte a $select e $expand [OData parâmetros de consulta](/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte aos [Parâmetros de consulta OData](/graph/query-parameters) $select e $expand para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
@@ -48,7 +47,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto de [equipe](../resources/team.md) no corpo da resposta.
+Se tiver êxito, este método retornará um código de resposta `200 OK` e um objeto [team](../resources/team.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 #### <a name="request"></a>Solicitação
 Este é um exemplo de solicitação.
@@ -57,7 +56,7 @@ Este é um exemplo de solicitação.
   "name": "get_team"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/teams/{id}
+GET https://graph.microsoft.com/beta/teams/{id}
 ```
 #### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
@@ -104,10 +103,15 @@ Content-length: 401
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get team",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/team-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

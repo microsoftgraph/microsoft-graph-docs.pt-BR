@@ -5,11 +5,11 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 ms.openlocfilehash: 4967fd5b84f1329836b6a3e3e5dc7ba7b08ee19a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520617"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32502103"
 ---
 # <a name="list-groups"></a>Listar grupos
 
@@ -40,12 +40,14 @@ GET /groups
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Para listar apenas Grupos do Office 365 (também conhecidos como grupos unificados), aplique um filtro em **groupTypes**: <!-- { "blockType": "ignored" } -->
+Para listar apenas grupos do Office 365 (também conhecidos como grupos unificados), aplique um filtro em **groupTypes**:
+<!-- { "blockType": "ignored" } -->
 ```
 GET https://graph.microsoft.com/beta/groups?$filter=groupTypes/any(c:c+eq+'Unified')
 ```
 
-Use a opção de consulta `$orderby` do OData para classificar grupos em uma organização pelos valores **displayName**, conforme exibido no exemplo a seguir: <!-- { "blockType": "ignored" } -->
+Use a opção de consulta OData `$orderby` para classificar grupos em uma organização pelos valores **displayName**, conforme exibido no exemplo a seguir:
+<!-- { "blockType": "ignored" } -->
 ```
 GET https://graph.microsoft.com/beta/groups?$orderby=displayName
 ```

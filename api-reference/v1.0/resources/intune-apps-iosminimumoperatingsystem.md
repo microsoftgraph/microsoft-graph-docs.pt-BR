@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 7490ad7b27d55fa6f2b7c6de12083025e7b4ac93
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30254566"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523879"
 ---
 # <a name="iosminimumoperatingsystem-resource-type"></a>Tipo de recurso iosMinimumOperatingSystem
 
@@ -20,11 +20,11 @@ Contém as propriedades do sistema operacional mínimo obrigatório para um apli
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|v8_0|Boolean|Versão 8.0 ou posterior.|
-|v9_0|Boolean|Versão 9.0 ou posterior.|
-|v10_0|Boolean|Versão 10.0 ou posterior.|
+|v8_0|Booliano|Versão 8.0 ou posterior.|
+|v9_0|Booliano|Versão 9.0 ou posterior.|
+|v10_0|Booliano|Versão 10.0 ou posterior.|
 |v11_0|Booliano|Versão 11.0 ou posterior.|
-|v12_0|Boolean|Versão 12,0 ou posterior.|
+|v12_0|Booliano|Versão 12,0 ou posterior.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

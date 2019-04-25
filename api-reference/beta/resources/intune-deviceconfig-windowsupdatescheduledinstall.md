@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: cd3a1aafe751bd5db334387cc3872c68e6de6637
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31797918"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523633"
 ---
 # <a name="windowsupdatescheduledinstall-resource-type"></a>Tipo de recurso windowsUpdateScheduledInstall
 
@@ -29,7 +29,7 @@ Herda de [windowsUpdateInstallScheduleType](../resources/intune-deviceconfig-win
 |scheduledInstallTime|TimeOfDay|Horário de instalação agendado durante o dia|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

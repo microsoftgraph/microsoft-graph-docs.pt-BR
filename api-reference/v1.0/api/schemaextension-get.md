@@ -1,16 +1,16 @@
 ---
-title: Obter schemaExtension
+title: Get schemaExtension
 description: Obtenha as propriedades da definição schemaExtension especificada.
 localization_priority: Normal
 author: dkershaw10
 ms.openlocfilehash: 70a4fdc5e51a5965098a6b0331a31c200b553ec9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27980311"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32521030"
 ---
-# <a name="get-schemaextension"></a>Obter schemaExtension
+# <a name="get-schemaextension"></a>Get schemaExtension
 Obtenha as propriedades da definição [schemaExtension](../resources/schemaextension.md) especificada.
 
 ## <a name="permissions"></a>Permissões
@@ -42,7 +42,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [schemaExtension](../resources/schemaextension.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [schemaExtension](../resources/schemaextension.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

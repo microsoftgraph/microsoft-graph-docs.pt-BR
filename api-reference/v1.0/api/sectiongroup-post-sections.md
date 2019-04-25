@@ -1,20 +1,20 @@
 ---
 title: Criar seção
-description: Crie um novo onenoteSection do grupo da seção especificada.
+description: Criar um novo onenoteSection no grupo de seção especificado.
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 ms.openlocfilehash: 91ed02c363de0fc39af594e2e0932e4c4ad605bf
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27947075"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32520904"
 ---
 # <a name="create-section"></a>Criar seção
 
-Crie um novo [onenoteSection](../resources/section.md) do grupo da seção especificada.
-## <a name="permissions"></a>Permissions
+Criar um novo [onenoteSection](../resources/section.md) no grupo de seção especificado.
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
@@ -44,7 +44,7 @@ Dentro do mesmo nível de hierarquia, os nomes das seções devem ser exclusivos
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [onenoteSection](../resources/section.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [onenoteSection](../resources/section.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação

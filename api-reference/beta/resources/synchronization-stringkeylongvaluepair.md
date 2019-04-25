@@ -1,19 +1,19 @@
 ---
-title: tipo de recurso de stringKeyLongValuePair
-description: Representa um par de chave-valor em que a chave é uma cadeia de caracteres e o valor é Int64.
+title: tipo de recurso stringKeyLongValuePair
+description: Representa um par chave-valor onde a chave é uma cadeia de caracteres e o valor é Int64.
 localization_priority: Normal
 ms.openlocfilehash: 97ca9f4f7b4079311a1ce6996fde0472c527e7f9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518300"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32524537"
 ---
-# <a name="stringkeylongvaluepair-resource-type"></a>tipo de recurso de stringKeyLongValuePair
+# <a name="stringkeylongvaluepair-resource-type"></a>tipo de recurso stringKeyLongValuePair
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa um par de chave-valor em que a chave é uma cadeia de caracteres e o valor é Int64.
+Representa um par chave-valor onde a chave é uma cadeia de caracteres e o valor é Int64.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|

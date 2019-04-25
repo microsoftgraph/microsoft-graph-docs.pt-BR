@@ -5,11 +5,11 @@ author: jackson-woods
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 42bb4fc0e98294c9a319e20a6b4f632f040ef0da
-ms.sourcegitcommit: 255061099661a38278140675db4cbadbdca9be7c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "29760927"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32521641"
 ---
 # <a name="get-access-on-behalf-of-a-user"></a>Obter acesso em nome de um usuário
 Para usar o Microsoft Graph para ler e gravar recursos em nome de um usuário, seu aplicativo deve obter um token de acesso do Azure AD e anexar o token às solicitações que ele envia para o Microsoft Graph. O fluxo de autenticação exato que você usará para obter tokens de acesso, dependerá do tipo de aplicativo que você está desenvolvendo e se você deseja usar o OpenID Connect para conectar o usuário ao aplicativo. O fluxo de concessão de código de autorização do OAuth 2.0 é um fluxo comum usado por aplicativos nativos e móveis e também por alguns aplicativos Web. Neste tópico, podemos analisar um exemplo de uso esse fluxo. 

@@ -3,13 +3,15 @@ title: Atualizar foto
 description: Atualize as propriedades do objeto de foto.
 localization_priority: Normal
 ms.openlocfilehash: 80c866eab74307d3001887110e050aa438cdde9f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27883780"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32521065"
 ---
 # <a name="update-photo"></a>Atualizar foto
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Atualize as propriedades do objeto de foto.
 ## <a name="permissions"></a>Permissões
@@ -42,7 +44,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [photo](../resources/photo.md) atualizado no corpo da resposta.
+Se bem sucedido, este método retorna um código de resposta `200 OK` e um objeto [photo](../resources/photo.md) atualizado no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
@@ -51,7 +53,7 @@ Este é um exemplo da solicitação.
   "name": "update_photo"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/photo
+PATCH https://graph.microsoft.com/beta/users/{id|userPrincipalName}/photo
 Content-type: application/json
 Content-length: 53
 
@@ -82,10 +84,15 @@ Content-length: 53
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update photo",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/photo-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

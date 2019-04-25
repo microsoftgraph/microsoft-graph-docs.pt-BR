@@ -1,15 +1,15 @@
 ---
 title: Registrar dispositivos de propriedade corporativa por meio do Intune
-description: " Cenário de (BYOD)."
+description: " (BYOD)."
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: 03c4775a3d5042a4d8b39821c257278798d59882
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27966318"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523375"
 ---
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>Registrar dispositivos de propriedade corporativa por meio do Intune
 
@@ -19,8 +19,8 @@ ms.locfileid: "27966318"
 
 Os seguintes recursos do Graph estão disponíveis para gerenciar dispositivos corporativos no Intune:
 
-- [Identidade de dispositivo do windows importados piloto automático](intune-enrollment-importedwindowsautopilotdeviceidentity.md)
-- [Status de importação de identidade do windows importados piloto automático dispositivo](intune-enrollment-importedwindowsautopilotdeviceidentityimportstatus.md)
-- [Estado de identidade do dispositivo do windows importados piloto automático](intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)
-- [Carregamento de identidade do windows importados piloto automático dispositivo](intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)
-- [Status de carregamento de identidade do dispositivo de piloto automático importados do windows](intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus.md)
+- [Identidade importada do dispositivo do Windows autopilot](intune-enrollment-importedwindowsautopilotdeviceidentity.md)
+- [Status de importação da identidade de dispositivo importada do windows autopilot](intune-enrollment-importedwindowsautopilotdeviceidentityimportstatus.md)
+- [Estado de identidade de dispositivo importado do windows autopilot](intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)
+- [Carregar identidade de dispositivo importado do windows autopilot](intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)
+- [Status de carregamento da identidade de dispositivo importado do windows autopilot](intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus.md)

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 7e792e3a866a0fadae5f866654e50ffe16cdc4c0
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31788265"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523640"
 ---
 # <a name="windowsupdatenotificationdisplayoption-enum-type"></a>tipo de enumeração windowsUpdateNotificationDisplayOption
 
@@ -23,9 +23,9 @@ Opções de exibição de notificação do Windows Update
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Não configurado|
-|Notificações defaultNotifications|1|Use as notificações padrão do Windows Update.|
-|restartWarningsOnly|duas|DesAtive todas as notificações, excluindo avisos de reinicialização.|
-|disableAllNotifications|3D|DesAtive todas as notificações, incluindo avisos de reinicialização.|
+|Notificações defaultNotifications|1 |Use as notificações padrão do Windows Update.|
+|restartWarningsOnly|2 |DesAtive todas as notificações, excluindo avisos de reinicialização.|
+|disableAllNotifications|3 |DesAtive todas as notificações, incluindo avisos de reinicialização.|
 
 
 

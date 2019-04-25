@@ -1,25 +1,25 @@
 ---
-title: tipo de recurso de stringKeyObjectValuePair
-description: Representa um par de chave-valor em que a chave é uma cadeia de caracteres e o valor é um objeto JSON arbitrário. Este é um tipo de open do OData que espera tem uma propriedade denominada `value` ou seja um objeto JSON válido.
+title: tipo de recurso stringKeyObjectValuePair
+description: Representa um par chave-valor onde a chave é uma cadeia de caracteres e o valor é um objeto JSON arbitrário. Este é um tipo de OData aberto que espera ter uma propriedade chamada `value` que seja um objeto JSON válido.
 localization_priority: Normal
 ms.openlocfilehash: 8f939c177f2130813c6080d46ad78664f6118857
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642923"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523207"
 ---
-# <a name="stringkeyobjectvaluepair-resource-type"></a>tipo de recurso de stringKeyObjectValuePair
+# <a name="stringkeyobjectvaluepair-resource-type"></a>tipo de recurso stringKeyObjectValuePair
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa um par de chave-valor em que a chave é uma cadeia de caracteres e o valor é um objeto JSON arbitrário. Este é um tipo de open do OData que espera tem uma propriedade denominada `value` ou seja um objeto JSON válido.
+Representa um par chave-valor onde a chave é uma cadeia de caracteres e o valor é um objeto JSON arbitrário. Este é um tipo de OData aberto que espera ter uma propriedade chamada `value` que seja um objeto JSON válido.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |key|String|Chave.|
-|valor|Qualquer|Objeto JSON arbitrário.|
+|valor|Qualquer tamanho|Objeto JSON arbitrário.|
 
 ## <a name="json-representation"></a>Representação JSON
 

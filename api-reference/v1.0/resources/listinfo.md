@@ -6,13 +6,15 @@ title: ListInfo
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 9be9d0dc133c9b62a89504a79ce9da4836337cfe
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482403"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32519875"
 ---
 # <a name="listinfo-resource"></a>Recurso de ListInfo
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 O tipo complexo **listInfo** oferece informações adicionais sobre uma [lista][].
 
@@ -41,7 +43,7 @@ Veja a seguir uma representação JSON do recurso.
 
 | Nome da propriedade           | Tipo    | Descrição
 |:------------------------|:--------|:------------------------------------------------
-| **contentTypesEnabled** | Boolean | Se `true`, indica que os tipos de conteúdo estão habilitados nesta lista.
+| **contentTypesEnabled** | Booliano | Se `true`, indica que os tipos de conteúdo estão habilitados nesta lista.
 | **hidden**              | Booliano | Se `true`, indica que a lista não fica visível normalmente na experiência de usuário do SharePoint.
 | **template**            | String  | Um valor enumerado que representa o modelo de lista básica usado na criação da lista. Os valores possíveis incluem `documentLibrary`, `genericList`, `task`, `survey`, `announcements`, `contacts` e mais.
 
@@ -53,14 +55,15 @@ Para os desenvolvedores familiarizados com APIs de CSOM do SharePoint, o valor `
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
+  "tocPath": "",
   "suppressions": [
-    "Warning: /api-reference/v1.0/resources/listinfo.md:
-      Found potential enums in resource example that weren't defined in a table:(documentLibrary,genericList,tasks,survey,links,announcements,contacts,...) are in resource, but () are in table"
-  ],
-  "tocPath": ""
-}-->
+    "Error: /api-reference/beta/resources/listinfo.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

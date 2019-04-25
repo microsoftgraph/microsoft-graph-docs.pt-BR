@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: f6c2e2390d9ad6ba9ca650587d0eb5621d3c1011
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31788720"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32520288"
 ---
 # <a name="update-devicemanagementscriptuserstate"></a>Atualizar deviceManagementScriptUserState
 
@@ -50,7 +50,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao criar [deviceM
 
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade de estado do usuário de script de gerenciamento de dispositivos.|
+|id|Cadeia de caracteres|Chave da entidade de estado do usuário de script de gerenciamento de dispositivos.|
 |successDeviceCount|Int32|Contagem de dispositivos com êxito para um usuário específico.|
 |errorDeviceCount|Int32|Contagem de dispositivos de erro para usuário específico.|
 |userPrincipalName|String|Nome principal do usuário do usuário específico.|

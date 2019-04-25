@@ -1,68 +1,68 @@
 ---
 title: Visão geral da API de sincronização do Azure AD
-description: ') permite que você automatize a criação, manutenção e remoção de identidades em nuvem aplicativos (software como um serviço ou SaaS) como a pasta de recados, a equipe de vendas, ServiceNow e muito mais. Você pode usar a APIs de sincronização no Microsoft Graph gerenciar a sincronização de identidade programaticamente, incluindo:'
+description: ') permite automatizar a criação, a manutenção e a remoção de identidades em aplicativos de nuvem (software como serviço ou SaaS) como o Dropbox, Salesforce, ServiceNow e muito mais. Você pode usar as APIs de sincronização no Microsoft Graph para gerenciar a sincronização de identidade de forma programática, incluindo:'
 localization_priority: Normal
 ms.openlocfilehash: ed994b8204fdee38f558da499259538e85eacd30
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529555"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523459"
 ---
 # <a name="azure-ad-synchronization-api-overview"></a>Visão geral da API de sincronização do Azure AD
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Sincronização de identidades do Azure Active Directory (AD Azure) (também chamada de "provisionamento") permite automatizar a criação, manutenção e remoção de identidades em nuvem (software como um serviço ou SaaS) aplicativos, como a pasta de recados, a equipe de vendas, ServiceNow, e muito mais. Você pode usar a APIs de sincronização no Microsoft Graph gerenciar a sincronização de identidade programaticamente, incluindo:
+A sincronização de identidade do Azure Active Directory (Azure AD) (também chamada de "provisionamento") permite automatizar a criação, a manutenção e a remoção de identidades em aplicativos de nuvem (software como serviço ou SaaS) como o Dropbox, Salesforce, ServiceNow, e muito mais. Você pode usar as APIs de sincronização no Microsoft Graph para gerenciar a sincronização de identidade de forma programática, incluindo:
 
-- Criar, iniciar e interromper os trabalhos de sincronização
+- Criar, iniciar e interromper trabalhos de sincronização
 - Fazer alterações no esquema de sincronização para trabalhos
-- Verificar o status atual da sincronização 
+- Verificar o status de sincronização atual 
 
-Para obter mais informações sobre a sincronização do Azure AD, consulte:
+Para obter mais informações sobre sincronização no Azure AD, consulte:
 
-* [Automatizar o usuário provisionamento e desprovisionamento SaaS aplicativos com o Windows Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-saas-app-provisioning)
-* [Gerenciando a conta de usuário de provisionamento para aplicativos de empresa no portal do Azure](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-enterprise-apps-manage-provisioning)
+* [Automatizar o provisionamento de usuários e desprovisionamento para aplicativos SaaS com o Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-saas-app-provisioning)
+* [Gerenciando o provisionamento de contas de usuário para aplicativos corporativos no portal do Azure](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-enterprise-apps-manage-provisioning)
 
-Você também pode tentar a API do [Explorer do gráfico](https://developer.microsoft.com/graph/graph-explorer) em um locatário de amostra ou seu próprio locatário.
+Você também pode experimentar a API no [Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer) em um locatário de exemplo ou seu próprio locatário.
 
 ## <a name="synchronization-job"></a>Trabalho de sincronização
 
-Trabalhos de sincronização realizar a sincronização periodicamente em execução em segundo plano, sondagem para que as alterações em um diretório e envio-los para um diretório diferente. O trabalho de sincronização sempre é específico para uma determinada instância de um aplicativo no seu locatário. Como parte da configuração do trabalho de sincronização, você precisará fornecer a autorização para ler e gravar objetos em seu diretório de destino e personalize o esquema de sincronização de tarefa.
+Os trabalhos de sincronização realizam a sincronização periodicamente em segundo plano, pesquisando alterações em um diretório e empurrando-os para outro diretório. O trabalho de sincronização é sempre específico para uma instância específica de um aplicativo em seu locatário. Como parte da configuração do trabalho de sincronização, você precisa dar autorização para ler e gravar objetos no diretório de destino e personalizar o esquema de sincronização do trabalho.
 
-Para obter mais informações, consulte o [trabalho de sincronização](synchronization-synchronizationjob.md).
+Para obter mais informações, consulte [trabalho de sincronização](synchronization-synchronizationjob.md).
 
 ## <a name="synchronization-schema"></a>Esquema de sincronização
 
-O esquema de sincronização define quais objetos serão sincronizados e como eles serão sincronizados. O esquema de sincronização contém a maioria das informações de instalação para um trabalho de sincronização específica. Normalmente, você irá personalizar alguns dos [mapeamentos de atributo](synchronization-attributemapping.md)ou adicionar um [filtro de escopo](synchronization-filter.md) para sincronizar apenas os objetos que atender a uma determinada condição.
+O esquema de sincronização define quais objetos serão sincronizados e como eles serão sincronizados. O esquema de sincronização contém a maioria das informações de configuração de um determinado trabalho de sincronização. Normalmente, você personalizará alguns dos mapeamentos de [atributo](synchronization-attributemapping.md)ou adicionará um [filtro de escopo](synchronization-filter.md) para sincronizar somente objetos que atendam a uma determinada condição.
 
 O esquema de sincronização inclui os seguintes componentes:
 
-- Definições do diretório
+- Definições de diretório
 - Regras de sincronização
-- Mapeamentos de objeto
+- Mapeamentos de objetos
 
-Para obter mais informações, consulte [esquema de sincronização](synchronization-synchronizationschema.md).
+Para obter mais informações, consulte [Synchronization Schema](synchronization-synchronizationschema.md).
 
 ## <a name="synchronization-template"></a>Modelo de sincronização
 
-O modelo de sincronização fornece configurações de sincronização pré-configurado para um aplicativo específico. Essas configurações (o mais importante, o [esquema de sincronização](synchronization-synchronizationschema.md)) serão usadas por padrão para qualquer [trabalho de sincronização](synchronization-synchronizationjob.md) que baseia-se no modelo. Modelos são especificados pelo desenvolvedor de aplicativos.
+O modelo de sincronização fornece configurações de sincronização pré-configuradas para um aplicativo específico. Essas configurações (mais importante, [esquema de sincronização](synchronization-synchronizationschema.md)) serão usadas por padrão para qualquer [trabalho de sincronização](synchronization-synchronizationjob.md) baseado no modelo. Os modelos são especificados pelo desenvolvedor do aplicativo.
 
 Para obter mais informações, consulte [modelo de sincronização](synchronization-synchronizationtemplate.md).
 
-## <a name="working-with-the-synchronization-api"></a>Trabalhando com a API de sincronização
+## <a name="working-with-the-synchronization-api"></a>Trabalhar com a API de sincronização
 
-Trabalhando com a sincronização de API envolve principalmente a acessar os recursos [synchronizationJob](synchronization-synchronizationjob.md) e [synchronizationSchema](synchronization-synchronizationschema.md) . Para localizar seu recurso [synchronizationJob](synchronization-synchronizationjob.md) , você precisa saber a ID do objeto principal do serviço que pertence o trabalho de sincronização. Os exemplos a seguir mostram como trabalhar com os recursos **synchronizationJob** e **synchronizationSchema** .
+O trabalho com a API de sincronização envolve principalmente o acesso aos recursos do [synchronizationJob](synchronization-synchronizationjob.md) e do [synchronizationSchema](synchronization-synchronizationschema.md) . Para localizar o recurso [synchronizationJob](synchronization-synchronizationjob.md) , você precisa saber a ID do objeto de entidade de serviço ao qual o trabalho de sincronização pertence. Os exemplos a seguir mostram como trabalhar com os recursos **synchronizationJob** e **synchronizationSchema** .
 
 ### <a name="authorization"></a>Autorização
 
-A API de sincronização do Azure AD usa OAuth 2.0 para autorização. Antes de fazer quaisquer solicitações da API, você precisa obter um token de acesso. Para obter mais informações, consulte [tokens de acesso de Get para chamar o Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview). Para acessar os recursos de sincronização, seu aplicativo deve Directory.ReadWrite.All permissões. Para obter mais informações, consulte [permissões de diretório](/graph/permissions-reference#directory-permissions).
+A API de sincronização do Azure AD usa o OAuth 2,0 para autorização. Antes de fazer qualquer solicitação para a API, você precisa obter um token de acesso. Para obter mais informações, consulte [obter tokens de acesso para chamar o Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview). Para acessar os recursos de sincronização, seu aplicativo precisa de permissões de Directory. ReadWrite. All. Para obter mais informações, consulte [Directory Permissions](/graph/permissions-reference#directory-permissions).
 
-### <a name="find-the-service-principal-object-by-display-name"></a>Localizar o objeto de entidade de serviço por nome para exibição
+### <a name="find-the-service-principal-object-by-display-name"></a>Localizar o objeto de entidade de serviço por nome de exibição
 
-O exemplo a seguir mostra como localizar o objeto de entidade de serviço por nome para exibição.
+O exemplo a seguir mostra como localizar o objeto de entidade de serviço por nome de exibição.
 
-Solicitação 
+**Solicitação** 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -94,12 +94,14 @@ HTTP/1.1 200 OK
 
 O exemplo a seguir mostra como localizar o objeto de entidade de serviço por ID de aplicativo.
 
-Solicitação
+**Pedir** 
+<!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals?$select=id,appId,displayName&$filter=AppId eq '219561ee-1480-4c67-9aa6-63d861fae3ef'
 ```
 
-Resposta
+**Response**
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
 {
@@ -113,17 +115,19 @@ HTTP/1.1 200 OK
 }
 ```
 
-### <a name="list-existing-synchronization-jobs"></a>Listar os trabalhos de sincronização existente
+### <a name="list-existing-synchronization-jobs"></a>Listar trabalhos de sincronização existentes
 
-O exemplo a seguir mostra como listar os trabalhos de sincronização existente.
+O exemplo a seguir mostra como listar os trabalhos de sincronização existentes.
 
-Solicitação
+**Solicitação**
+<!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs
 GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a53b658cb5e1/synchronization/jobs
 ```
 
-Resposta
+**Response**
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
 {
@@ -145,14 +149,16 @@ HTTP/1.1 200 OK
 ### <a name="get-synchronization-job-status"></a>Obter o status do trabalho de sincronização
 O exemplo a seguir mostra como obter o status de um trabalho de sincronização.
 
-Solicitação
+**Solicitação**
+<!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}
 
 GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a53b658cb5e1/synchronization/jobs/SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa
 ```
 
-Resposta
+**Response**
+<!-- { "blockType": "ignored" } -->
 ```http
     HTTP/1.1 200 OK
     {
@@ -167,15 +173,17 @@ Resposta
     }
 ```
 
-### <a name="get-synchronization-schema"></a>Obter o esquema de sincronização
+### <a name="get-synchronization-schema"></a>Obter esquema de sincronização
 O exemplo a seguir mostra como obter o esquema de sincronização.
 
-Solicitação
+**Solicitação**
+<!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema
 ```
 
-Resposta
+**Response**
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
 {
@@ -185,8 +193,8 @@ HTTP/1.1 200 OK
 ```
 ## <a name="see-also"></a>Confira também
 
-* [Configurar a sincronização com os atributos de extensão de diretório](../resources/synchronization-configure-with-directory-extension-attributes.md)
-* [Configurar a sincronização com atributos personalizados de destino](../resources/synchronization-configure-with-custom-target-attributes.md)
+* [Configurar a sincronização com atributos de extensão de diretório](../resources/synchronization-configure-with-directory-extension-attributes.md)
+* [Configurar a sincronização com atributos de destino personalizados](../resources/synchronization-configure-with-custom-target-attributes.md)
 
 
 

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 64c0adffd21f6411b2ea86a29d7d5b72233924a0
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31783175"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523662"
 ---
 # <a name="windowsspotlightenablementsettings-enum-type"></a>tipo de enumeração windowsSpotlightEnablementSettings
 
@@ -23,8 +23,8 @@ Permite que ele seja definido como um mecanismo de pesquisa padrão predefinido 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|O Spotlight na tela de bloqueio não está configurado|
-|deficiência|1|Desabilitar o destaque do Windows na tela de bloqueio|
-|enabled|duas|Habilitar o destaque do Windows na tela de bloqueio|
+|deficiência|1 |Desabilitar o destaque do Windows na tela de bloqueio|
+|enabled|2 |Habilitar o destaque do Windows na tela de bloqueio|
 
 
 

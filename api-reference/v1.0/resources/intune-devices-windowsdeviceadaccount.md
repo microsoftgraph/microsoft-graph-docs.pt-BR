@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: f23b1922019a257e0f824b6ef6d00e0064d57f7b
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30252879"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523312"
 ---
 # <a name="windowsdeviceadaccount-resource-type"></a>Tipo de recurso windowsDeviceADAccount
 
@@ -24,7 +24,7 @@ Herda de [windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |password|String|Ainda não documentado. Herda de [windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md)|
-|domainName|String|Ainda não documentado|
+|domainName|Cadeia de caracteres|Ainda não documentado|
 |userName|String|Ainda não documentado|
 
 ## <a name="relationships"></a>Relações

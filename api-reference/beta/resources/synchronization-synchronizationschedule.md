@@ -1,26 +1,26 @@
 ---
-title: tipo de recurso de synchronizationSchedule
-description: Define a agenda usada para executar um synchronizationJob.
+title: tipo de recurso synchronizationSchedule
+description: Define o agendamento usado para executar um synchronizationJob.
 localization_priority: Normal
 ms.openlocfilehash: 0e9714e4833c5586e54c8d812a0d72e41a513e5b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515584"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32525961"
 ---
-# <a name="synchronizationschedule-resource-type"></a>tipo de recurso de synchronizationSchedule
+# <a name="synchronizationschedule-resource-type"></a>tipo de recurso synchronizationSchedule
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Define a agenda usada para executar um [synchronizationJob](synchronization-synchronizationjob.md).
+Define o agendamento usado para executar um [synchronizationJob](synchronization-synchronizationjob.md).
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|Expiração|DateTimeOffset|Data e hora em que esse trabalho expirará. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
-|interval|Duration|O intervalo entre iterações de sincronização.|
-|estado|String| Os valores possíveis são: `Active` e `Disabled`.|
+|validade|DateTimeOffset|Data e hora em que este trabalho vai expirar. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
+|interval|Duração|O intervalo entre as iterações de sincronização.|
+|state|String| Os valores possíveis são: `Active` e `Disabled`.|
 
 ## <a name="json-representation"></a>Representação JSON
 
