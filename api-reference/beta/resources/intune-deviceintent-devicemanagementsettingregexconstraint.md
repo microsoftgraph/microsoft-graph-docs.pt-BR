@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 76bb80edaec0ccd53cc9f0923a7df7b1c595dc60
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31792283"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550669"
 ---
 # <a name="devicemanagementsettingregexconstraint-resource-type"></a>tipo de recurso deviceManagementSettingRegexConstraint
 
@@ -25,10 +25,10 @@ Herda de [deviceManagementConstraint](../resources/intune-deviceintent-deviceman
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|Regex|Cadeia de caracteres|O padrão RegEx a ser correspondido em relação|
+|Regex|String|O padrão RegEx a ser correspondido em relação|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

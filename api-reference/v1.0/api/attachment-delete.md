@@ -3,11 +3,11 @@ title: Excluir anexo
 description: Exclua um anexo de um evento de calendário, email ou postagem de grupo.
 localization_priority: Normal
 ms.openlocfilehash: f6ac2e60c9fdc8a224e22a49e6928cdc41e9730b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816993"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32551460"
 ---
 # <a name="delete-attachment"></a>Excluir anexo
 
@@ -15,9 +15,9 @@ Exclua um anexo de um evento de calendário, email ou postagem de grupo.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-* Se acessando anexos em mensagens: Mail.ReadWrite.
-* Se acessando anexos em eventos: Calendars.ReadWrite.
-* Se acessando anexos em postagens de grupo: Group.ReadWrite.All.
+* Se estiver acessando anexos em mensagens: mail. ReadWrite.
+* Se estiver acessando anexos em eventos: caLendars. ReadWrite.
+* Se estiver acessando anexos em Postagens de Grupo: Group. ReadWrite. All.
 
 <!--
 * If accessing attachments in Group Events or Posts: Group.ReadWrite.All.
@@ -66,8 +66,7 @@ Anexos de uma [message](../resources/message.md) contidos em uma [mailFolder](..
 DELETE /me/mailFolders/{id}/messages/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments/{id}
 ```
-Anexos de uma [mensagem](../resources/message.md) contidos em uma pasta filho de um [mailFolder](../resources/mailfolder.md) na caixa de correio do usuário.  O exemplo a seguir mostra um nível de aninhamento, mas uma mensagem pode estar localizada no filho de um filho e assim por diante.
-<!-- { "blockType": "ignored" } -->
+Anexos de uma [message](../resources/message.md) contidos em uma pasta filha de uma [mailFolder](../resources/mailfolder.md) na caixa de correio de um usuário.  O exemplo a seguir mostra um nível de aninhamento, mas uma mensagem pode estar localizada em um filho de um filho, e assim por diante.<!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: daa6f7a4802341347f364040504368dc96d75e33
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30163368"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548317"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -23,12 +23,12 @@ Representa um objeto de usuário do Azure Active Directory.
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar](../api/intune-shared-user-list.md) objetos users.|Conjunto [user](../resources/intune-shared-user.md)|Listar propriedades e relações de objetos de [user](../resources/intune-shared-user.md).|
-|[Obtenha](../api/intune-shared-user-get.md) o objeto user.|[user](../resources/intune-shared-user.md)|Ler propriedades e relações de objetos de [user](../resources/intune-shared-user.md).|
-|[Criar objeto user](../api/intune-shared-user-create.md) .|[user](../resources/intune-shared-user.md)|Criar um novo objeto de [user](../resources/intune-shared-user.md).|
+|[Obtenha](../api/intune-shared-user-get.md) o objeto user.|[Usuário](../resources/intune-shared-user.md)|Ler propriedades e relações de objetos de [user](../resources/intune-shared-user.md).|
+|[Criar objeto user](../api/intune-shared-user-create.md) .|[Usuário](../resources/intune-shared-user.md)|Criar um novo objeto de [user](../resources/intune-shared-user.md).|
 |[Excluir usuário](../api/intune-shared-user-delete.md).|Nenhum|Excluir [user](../resources/intune-shared-user.md).|
 |[Atualize](../api/intune-shared-user-update.md) o objeto do usuário.|[user](../resources/intune-shared-user.md)|Atualizar as propriedades de um objeto de [user](../resources/intune-shared-user.md).|
 |**Gerenciamento de dispositivos**|
-|[função getLoggedOnManagedDevices](../api/intune-shared-user-getloggedonmanageddevices.md)|Coleção [managedDevice](../resources/intune-devices-manageddevice.md)|Ainda não documentado|
+|[função getLoggedOnManagedDevices](../api/intune-shared-user-getloggedonmanageddevices.md)|Conjunto [managedDevice](../resources/intune-devices-manageddevice.md)|Ainda não documentado|
 |[Ação removeAllDevicesFromManagement](../api/intune-shared-user-removealldevicesfrommanagement.md)|Nenhum|Desativa todos os dispositivos de gerenciamento deste usuário|
 |**Gerenciamento de aplicativo móvel (MAM)**|
 |[função getManagedAppDiagnosticStatuses](../api/intune-shared-user-getmanagedappdiagnosticstatuses.md)|Conjunto [managedAppDiagnosticStatus](../resources/intune-mam-managedappdiagnosticstatus.md)|Obtém diagnóstico do status de validação para um determinado usuário.|
@@ -38,14 +38,14 @@ Representa um objeto de usuário do Azure Active Directory.
 |**Integração**|
 |[função exportDeviceAndAppManagementData](../api/intune-shared-user-exportdeviceandappmanagementdata.md)|[deviceAndAppManagementData](../resources/intune-onboarding-deviceandappmanagementdata.md)|Ainda não documentado|
 |[função getEffectiveDeviceEnrollmentConfigurations](../api/intune-shared-user-geteffectivedeviceenrollmentconfigurations.md)|Coleção [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|Ainda não documentado|
-|**Solução de problemas**|
+|**Solução de Problemas**|
 |[função getManagedDevicesWithAppFailures](../api/intune-shared-user-getmanageddeviceswithappfailures.md)|Coleção de cadeias de caracteres|Recupera a lista de dispositivos com aplicativos com falha.|
 
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo do usuário.|
+|id|String|Identificador exclusivo do usuário.|
 |**Integração**|
 |deviceEnrollmentLimit|Int32|O limite do número máximo de dispositivos que o usuário tem permissão para inscrever. Os valores permitidos vão de 5 a 1000.|
 
@@ -58,7 +58,7 @@ Representa um objeto de usuário do Azure Active Directory.
 |managedAppRegistrations|Conjunto [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|Zero ou mais registros de aplicativos gerenciados que pertencem ao usuário.|
 |**Integração**|
 |deviceEnrollmentConfigurations|Coleção [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|Obter configurações de registro direcionadas para o usuário|
-|**Solução de problemas**|
+|**Solução de Problemas**|
 |deviceManagementTroubleshootingEvents|Conjunto [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|A lista de eventos de solução de problemas desse usuário.|
 |mobileAppIntentAndStates|coleção [mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md)|A lista de eventos de solução de problemas desse usuário.|
 |mobileAppTroubleshootingEvents|coleção [mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md)|A lista de eventos de solução de problemas de aplicativo móvel para este usuário.|

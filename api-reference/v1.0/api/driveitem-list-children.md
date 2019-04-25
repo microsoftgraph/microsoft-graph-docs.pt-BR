@@ -6,11 +6,11 @@ title: Listar o conteúdo de uma pasta
 localization_priority: Priority
 ms.prod: sharepoint
 ms.openlocfilehash: f6e76ca362d8c200ee73b327cdd11ad4b0137e73
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481045"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548030"
 ---
 # <a name="list-children-of-a-driveitem"></a>Listar os filhos de um driveItem
 

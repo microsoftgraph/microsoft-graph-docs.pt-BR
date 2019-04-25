@@ -5,11 +5,11 @@ author: ajacks-msft
 localization_priority: Priority
 ms.prod: data-connect
 ms.openlocfilehash: f7426147908a2ded298bee065c05afffc182cd4b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27914441"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32526116"
 ---
 # <a name="get-started-with-microsoft-graph-data-connect-preview"></a>Introdução ao Microsoft Graph Data Connect (versão prévia)
 

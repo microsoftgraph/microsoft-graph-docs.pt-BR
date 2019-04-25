@@ -1,29 +1,29 @@
 ---
-title: Lista privilegedRoleAssignmentRequests
+title: Listar privilegedRoleAssignmentRequests
 description: 'Recupere uma coleção de privilegedRoleAssignmentRequest. '
 localization_priority: Normal
 ms.openlocfilehash: 06a6c66bcb566df0b6db5193bd753832bd9235a3
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640725"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538600"
 ---
-# <a name="list-privilegedroleassignmentrequests"></a>Lista privilegedRoleAssignmentRequests
+# <a name="list-privilegedroleassignmentrequests"></a>Listar privilegedRoleAssignmentRequests
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Recupere uma coleção de [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md). 
 
-**Observação:** Deste solicitante deve ter pelo menos uma atribuição no recurso.
+**Observação:** Esse solicitante deve ter pelo menos uma atribuição de função no recurso.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureAD, Directory.Read.All, Directory.AccessAsUser.All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte. |
+|Delegado (conta corporativa ou de estudante) | PrivilegedAccess. ReadWrite. AzureAD, Directory. Read. All, Directory. AccessAsUser. All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -33,7 +33,7 @@ GET /privilegedRoleAssignmentRequests
 ```
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método oferece suporte para os [parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
+Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
@@ -44,7 +44,7 @@ Este método oferece suporte para os [parâmetros de consulta OData](/graph/quer
 Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação

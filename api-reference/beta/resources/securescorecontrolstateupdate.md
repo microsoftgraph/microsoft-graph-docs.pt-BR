@@ -1,24 +1,24 @@
 ---
-title: " tipo de recurso de secureScoreControlStateUpdate"
-description: Este recurso contém o histórico de estados de controle atualizado por usuário (incluem de estados de controle padrão, Ignored, ThirdParty, revisado).
+title: " tipo de recurso secureScoreControlStateUpdate"
+description: Este recurso contém o histórico de Estados de controle atualizados pelo usuário (os Estados de controle incluem Default, ignorado, terceiros).
 localization_priority: Normal
 ms.openlocfilehash: 8d8c3122a6263ebc7b10b5edfb823953e2d587fc
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641726"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549136"
 ---
- #  <a name="securescorecontrolstateupdate-resource-type"></a>tipo de recurso de secureScoreControlStateUpdate
-Contém o histórico dos Estados controle atualizados pelo usuário (incluem de estados de controle padrão, Ignored, ThirdParty, revisado).
+ #  <a name="securescorecontrolstateupdate-resource-type"></a>tipo de recurso secureScoreControlStateUpdate
+Contém o histórico dos Estados de controle atualizados pelo usuário (os Estados de controle incluem padrão, ignorado, terceiros, reVisado).
 
 |Propriedade |Tipo |Descrição |
 |:--|:--|:--|
-|assignedTo | string | Atribua o controle ao usuário que executará a ação |
-|comment | string | Fornece um comentário opcional sobre o controle |
-|state | string | Estado do controle pode ser modificado usando-se o comando de PATCH (ex.: ignorados, thirdParty etc.) |
-|updatedBy | string |ID do usuário que atualizou o estado de locatário |
-|updatedDateTime | DateTimeOffset? |Tempo no qual controle estado foi atualizado |
+|assignedTo | string | Atribuir o controle ao usuário que executará a ação |
+|comentário | string | Fornece comentários opcionais sobre o controle |
+|estado | string | O estado do controle pode ser modificado usando o comando PATCH (ex: ignorado, terceiros etc.) |
+|updatedBy | string |ID do usuário que atualizou o estado do locatário |
+|updatedDateTime | DateTimeOffset? |Hora em que o estado de controle foi atualizado |
  ## <a name="json-representation"></a>Representação JSON
  Veja a seguir uma representação JSON do recurso.
  <!-- {

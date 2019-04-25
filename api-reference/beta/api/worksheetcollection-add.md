@@ -1,15 +1,15 @@
 ---
 title: 'WorksheetCollection: add'
-description: .Activate() nele.
+description: . Activate () nele.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 0958f8f82502c92eff08ec80a7b116c1b0c4a5f0
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640837"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544044"
 ---
 # <a name="worksheetcollection-add"></a>WorksheetCollection: add
 
@@ -46,7 +46,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [Worksheet](../resources/worksheet.md) no corpo da resposta.
+Se bem sucedido, este método retorna um código de resposta `200 OK` e um objeto [Worksheet](../resources/worksheet.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 Eis um exemplo de como chamar esta API.

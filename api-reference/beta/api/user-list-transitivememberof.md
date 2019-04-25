@@ -1,21 +1,21 @@
 ---
-title: Membro transitivo do usuário de lista
-description: Obtenha os grupos, funções de diretório e unidades administrativas que o usuário é membro do. Essa solicitação API é transitiva e também retornará todos os grupos que o usuário é membro de aninhados.
+title: Listar usuário transitiva membro
+description: Obter grupos, funções de diretório e unidades administrativas das quais o usuário é membro. Essa solicitação de API é transitiva e também retorna todos os grupos dos quais o usuário é um membro aninhado.
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: b0681196b994e9a0c88a2b2d05e25e3166a5242f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528862"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547713"
 ---
-# <a name="list-user-transitive-memberof"></a>Membro transitivo do usuário de lista
+# <a name="list-user-transitive-memberof"></a>Listar usuário transitiva membro
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha os grupos, funções de diretório e unidades administrativas que o usuário é membro do. Essa solicitação API é transitiva e também retornará todos os grupos que o usuário é membro de aninhados.
+Obter grupos, funções de diretório e unidades administrativas das quais o usuário é membro. Essa solicitação de API é transitiva e também retorna todos os grupos dos quais o usuário é um membro aninhado.
 
 ## <a name="permissions"></a>Permissões
 

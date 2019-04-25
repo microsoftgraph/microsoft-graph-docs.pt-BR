@@ -5,11 +5,11 @@ localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: de2327489d6606c40fe55934d333f2fd2f9c0b44
-ms.sourcegitcommit: d264fa064215879fa88a4680402cd57a470d73db
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31989384"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536975"
 ---
 # <a name="update-or-create-trustframeworkpolicy"></a>Atualizar ou criar trustFrameworkPolicy
 

@@ -1,19 +1,19 @@
 ---
 title: Obter unfamiliarLocationRiskEvent
-description: Recupere as propriedades e relacionamentos de um objeto unfamiliarlocationriskevent.
+description: Recupere as propriedades e os relacionamentos de um objeto unfamiliarlocationriskevent.
 localization_priority: Normal
 ms.openlocfilehash: 99a7578cf9ebe183483c9d09a83696a4bc2ffbef
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515479"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548184"
 ---
 # <a name="get-unfamiliarlocationriskevent"></a>Obter unfamiliarLocationRiskEvent
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e relacionamentos de um objeto unfamiliarlocationriskevent.
+Recupere as propriedades e os relacionamentos de um objeto unfamiliarlocationriskevent.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -39,7 +39,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` objeto response de código e [unfamiliarLocationRiskEvent](../resources/unfamiliarlocationriskevent.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [unfamiliarLocationRiskEvent](../resources/unfamiliarlocationriskevent.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

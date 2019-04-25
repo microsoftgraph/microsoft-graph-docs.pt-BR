@@ -1,20 +1,20 @@
 ---
-title: Obtenha as atividades do usuário
-description: Obtenha atividades para um determinado usuário. Diferentemente do **recente** função OData, atividades sem históricos serão retornadas. A permissão UserActivity.ReadWrite.CreatedByApp serão aplicadas a filtragem extra à resposta, para que apenas as atividades criadas pelo seu aplicativo são retornadas. A filtragem do lado do servidor pode resultar em páginas vazias se o usuário é particularmente ativo e outros aplicativos criou atividades mais recentes. Para obter as atividades do seu aplicativo, use a propriedade **nextLink** para paginar.
+title: Obter atividades do usuário
+description: Obter atividades para um determinado usuário. Diferentemente da função OData **recente** , as atividades sem históricos serão retornadas. A permissão userActivity. ReadWrite. CreatedByApp aplicará filtragem adicional à resposta, de modo que somente as atividades criadas por seu aplicativo serão retornadas. Essa filtragem do lado do servidor pode resultar em páginas vazias se o usuário for particularmente ativo e outros aplicativos tiverem criado atividades mais recentes. Para obter as atividades do aplicativo, use a propriedade **nextLink** para paginar.
 localization_priority: Normal
 ms.prod: project-rome
 ms.openlocfilehash: 96830c2698a079018368ce907ca39d4cda0f63fe
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643458"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546329"
 ---
-# <a name="get-user-activities"></a>Obtenha as atividades do usuário
+# <a name="get-user-activities"></a>Obter atividades do usuário
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obtenha atividades para um determinado usuário. Diferentemente do **recente** função OData, atividades sem históricos serão retornadas. A permissão UserActivity.ReadWrite.CreatedByApp serão aplicadas a filtragem extra à resposta, para que apenas as atividades criadas pelo seu aplicativo são retornadas. A filtragem do lado do servidor pode resultar em páginas vazias se o usuário é particularmente ativo e outros aplicativos criou atividades mais recentes. Para obter as atividades do seu aplicativo, use a propriedade **nextLink** para paginar.
+Obter atividades para um determinado usuário. Diferentemente da função OData **recente** , as atividades sem históricos serão retornadas. A permissão userActivity. ReadWrite. CreatedByApp aplicará filtragem adicional à resposta, de modo que somente as atividades criadas por seu aplicativo serão retornadas. Essa filtragem do lado do servidor pode resultar em páginas vazias se o usuário for particularmente ativo e outros aplicativos tiverem criado atividades mais recentes. Para obter as atividades do aplicativo, use a propriedade **nextLink** para paginar.
 
 ## <a name="permissions"></a>Permissões
 
@@ -22,8 +22,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | UserActivity.ReadWrite.CreatedByApp    |
-|Delegada (conta pessoal da Microsoft) | UserActivity.ReadWrite.CreatedByApp    |
+|Delegado (conta corporativa ou de estudante) | UserActivity.ReadWrite.CreatedByApp    |
+|Delegado (conta pessoal da Microsoft) | UserActivity.ReadWrite.CreatedByApp    |
 |Aplicativo | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -36,13 +36,13 @@ GET /me/activities
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Este método oferece suporte a alguns [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta. Os parâmetros de consulta a seguir são suportados:
+Este método oferece suporte a alguns [parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta. Há suporte para os seguintes parâmetros de consulta:
 
-- $expand para a propriedade de navegação **historyItems** .
-- $top para limitar o número máximo de itens nas páginas.
+- $expand da propriedade de navegação **historyItems** .
+- $Top limitar o número máximo de itens nas páginas.
 - $filter na propriedade **lastModifiedDateTime** para **atividades** ou **historyItems**, se expandida.
 
-Eis alguns exemplos de consultas compatíveis com a codificação de URL:
+Veja a seguir alguns exemplos de consultas suportadas com codificação de URL:
 
 ```
 /me/activities?$expand=historyItems($filter=lastModifiedDateTime%20gt%202018-01-22T21:45:00.347Z%20and%20lastModifiedDateTime%20lt%202018-01-22T22:00:00.347Z)
@@ -60,11 +60,11 @@ Eis alguns exemplos de consultas compatíveis com a codificação de URL:
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-Nenhum corpo da solicitação.
+Nenhum corpo de solicitação.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará o `200 OK` código de resposta com atividades do usuário para o seu aplicativo.
+Se bem-sucedido, este método retorna o `200 OK` código de resposta com as atividades do usuário para seu aplicativo.
 
 ## <a name="example"></a>Exemplo
 

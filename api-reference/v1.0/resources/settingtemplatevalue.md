@@ -1,17 +1,17 @@
 ---
-title: Tipo de recurso settingTemplateValue
-description: Representa uma definição de configuração de modelo individual, incluindo o valor padrão da configuração, se a configuração não for instanciada.
+title: tipo de recurso settingTemplateValue
+description: Representa uma definição de configuração de modelo individual, incluindo o valor padrão para a configuração, se a configuração não for instanciada.
 localization_priority: Normal
 ms.openlocfilehash: 0cb3376177e3a4efcae54a591a083914db6b56d7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828319"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549689"
 ---
-# <a name="settingtemplatevalue-resource-type"></a>Tipo de recurso settingTemplateValue
+# <a name="settingtemplatevalue-resource-type"></a>tipo de recurso settingTemplateValue
 
-Representa uma definição de configuração de modelo individual, incluindo o valor padrão da configuração, se a configuração não for instanciada.
+Representa uma definição de configuração de modelo individual, incluindo o valor padrão para a configuração, se a configuração não for instanciada.
 
 ### <a name="properties"></a>Propriedades
 
@@ -19,7 +19,7 @@ Representa uma definição de configuração de modelo individual, incluindo o v
 |:---------------|:--------|:----------|
 |defaultValue|String| Valor padrão para a configuração. |
 |description|String| Descrição da configuração. |
-|nome|Cadeia de caracteres| Nome da configuração. |
+|name|Cadeia de caracteres| Nome da configuração. |
 |type|String| Tipo da configuração. |
 
 ### <a name="json-representation"></a>Representação JSON

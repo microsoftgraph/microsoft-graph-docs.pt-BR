@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 6a5a85b0b5467835a1ecb3d81997e0300ab08eee
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31796238"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32552307"
 ---
 # <a name="ioslobappprovisioningconfiguration-resource-type"></a>tipo de recurso iosLobAppProvisioningConfiguration
 
@@ -32,11 +32,11 @@ Este tópico fornece descrições dos métodos declarados, das propriedades e da
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |expirationDateTime|DateTimeOffset|Data e hora de expiração do perfil opcional.|
 |payloadFileName|Cadeia de caracteres|Nome do arquivo de carga (*. mobileprovision | *.xml).|
 |payload|Binária|Carga. (Matriz de bytes codificados em UTF8)|
-|roleScopeTagIds|Coleção String|Lista de marcas de escopo para esta entidade de configuração de provisionamento do aplicativo LOB iOS.|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de marcas de escopo para esta entidade de configuração de provisionamento do aplicativo LOB iOS.|
 |createdDateTime|DateTimeOffset|DateTime em que o objeto foi criado.|
 |description|String|Descrição fornecida pelo administrador da Configuração do dispositivo.|
 |lastModifiedDateTime|DateTimeOffset|DateTime da última modificação do objeto.|

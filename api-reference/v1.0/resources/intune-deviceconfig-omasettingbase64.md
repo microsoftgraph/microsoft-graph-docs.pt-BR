@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 678c6e78070a7aae185a041962083b7908ef1cc1
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30258587"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549378"
 ---
 # <a name="omasettingbase64-resource-type"></a>Tipo de recurso omaSettingBase64
 
@@ -24,10 +24,10 @@ Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |displayName|String|Nome de exibição. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|descrição|String|Descrição. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|omaUri|String|OMA. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|fileName|Cadeia de caracteres|Nome de arquivo associado com a propriedade do valor (*.cer | *. CRT | *. p7b | *. bin).|
-|valor|String|Valor. (Cadeia de caracteres codificada em Base64)|
+|description|String|Descrição. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|omaUri|Cadeia de caracteres|OMA. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|fileName|String|Nome de arquivo associado com a propriedade do valor (*.cer | *. CRT | *. p7b | *. bin).|
+|value|Cadeia de caracteres|Valor. (Cadeia de caracteres codificada em Base64)|
 
 ## <a name="relationships"></a>Relações
 Nenhum

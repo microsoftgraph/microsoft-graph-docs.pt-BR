@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 739da09fccc1d2c40b103397b8a10e91eab39fdf
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643203"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543901"
 ---
 # <a name="chartseriesformat-resource-type"></a>Tipo de recurso ChartSeriesFormat
 
@@ -22,7 +22,7 @@ Abrange as propriedades de formatação da série do gráfico.
 Nenhum
 
 ## <a name="properties"></a>Propriedades
-Nenhum
+Nenhuma
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|

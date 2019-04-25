@@ -2,22 +2,22 @@
 author: daspek
 ms.author: dspektor
 ms.date: 09/12/2018
-title: AccessAction
+title: Accessaction
 localization_priority: Normal
 ms.openlocfilehash: bef6444fd42080c6f5b7cdabb69dbe9a50bab8d6
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511517"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535815"
 ---
-# <a name="accessaction-resource-type"></a>tipo de recurso de accessAction
+# <a name="accessaction-resource-type"></a>tipo de recurso accessaction
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A presença do recurso **accessAction** em uma [**itemActivity**] [ activity] indica que a atividade acessados um item.
+A presença do recurso **accessaction** em uma myactivity [****] [ activity] indica que a atividade acessou um item.
 
->**Observação:** Atualmente, os registros de atividade do Access só estão disponíveis no SharePoint e o OneDrive for Business.
+>**Observação:** Os registros de atividade do Access atualmente só estão disponíveis no SharePoint e no OneDrive for Business.
 
 [activity]: itemactivity.md
 

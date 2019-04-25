@@ -1,27 +1,27 @@
 ---
 title: Criar privilegedRoleAssignmentRequest
-description: Crie um objeto privilegedroleassignmentrequest.
+description: Criar um objeto privilegedroleassignmentrequest.
 localization_priority: Normal
 ms.openlocfilehash: e3158e918d061f09dec9e74c9e3bfd66d95fa48d
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641684"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538641"
 ---
 # <a name="create-privilegedroleassignmentrequest"></a>Criar privilegedRoleAssignmentRequest
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Crie um objeto [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md) .
+Criar um objeto [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md) .
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | PrivilegedAccess.ReadWrite.AzureAD, Directory.AccessAsUser.All    |
-|Delegada (conta pessoal da Microsoft) | Sem suporte. |
+|Delegado (conta corporativa ou de estudante) | PrivilegedAccess. ReadWrite. AzureAD, Directory. AccessAsUser. All    |
+|Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | Sem suporte. |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -36,39 +36,39 @@ POST /privilegedRoleAssignmentRequests
 | Autorização  | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do objeto [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md) . 
+No corpo da solicitação, forneça uma representação JSON do objeto [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md) . 
 
 | Propriedade     | Tipo    |  Descrição|
 |:---------------|:--------|:----------|
-|roleId|String|A identificação da função. Obrigatório.|
-|type|String|Representa o o tipo da operação na atribuição de função. O valor pode ser `AdminAdd`: administradores adicionar usuários às funções; `UserAdd`: Os usuários adicionar atribuições de função. Obrigatório.|
-|assignmentState|String|O estado da atribuição. O valor pode ser `Eligible` para atribuição elegível `Active` - se ele é atribuído diretamente `Active` pelos administradores, ou ativado em uma atribuição elegível pelos usuários. Os valores possíveis são: ``NotStarted``, `Completed`, `RequestedApproval`, `Scheduled`, `Approved`, `ApprovalDenied`, `ApprovalAborted`, `Cancelling`, `Cancelled`, `Revoked`, `RequestExpired`. Obrigatório.|
-|motivo|String|O motivo pelo qual deve ser fornecido para a solicitação de atribuição de função de auditoria e revise finalidade.|
-|agenda|[governanceSchedule](../resources/governanceschedule.md)|O agendamento da solicitação de atribuição de função.|
+|roleId|String|A ID da função. Obrigatório.|
+|type|String|Representa o tipo da operação na atribuição de função. O valor pode ser `AdminAdd`: os administradores adicionam usuários a funções; `UserAdd`: Os usuários adicionam atribuições de função. Obrigatório.|
+|assignmentstate|String|O estado da atribuição. O valor pode ser `Eligible` para atribuição `Active` qualificada-se for diretamente atribuído `Active` por administradores ou ativado em uma atribuição qualificada pelos usuários. Os valores possíveis são: ``NotStarted``, `Completed`, `RequestedApproval`, `Scheduled`, `Approved`, `ApprovalDenied`, `ApprovalAborted`, `Cancelling`, `Cancelled`, `Revoked`, `RequestExpired`. Obrigatório.|
+|motivos|String|O motivo precisa ser fornecido para a solicitação de atribuição de função para fins de auditoria e análise.|
+|futebol|[governanceSchedule](../resources/governanceschedule.md)|O agendamento da solicitação de atribuição de função.|
 
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `201 Created` código de resposta e um objeto [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) no corpo da resposta.
 
 ### <a name="error-codes"></a>Códigos de erro
-Essa API retorna esse padrão códigos de erro HTTP. Além disso, ele pode retornar os códigos de erro listados na tabela a seguir.
+Essa API retorna os códigos de erro HTTP padrão. Além disso, ele pode retornar os códigos de erro listados na tabela a seguir.
 
 |Código de erro     | Mensagem de erro              | 
 |:--------------------| :---------------------|
-| 400 BadRequest | Propriedade RoleAssignmentRequest foi NULL |
-| 400 BadRequest | Não é possível desserializar roleAssignmentRequest objeto. |
-| 400 BadRequest | RoleId é necessário. |
-| 400 BadRequest | Data de início de agendamento deve ser especificada e deve ser maior do que agora. |
-| 400 BadRequest | Já existe um agendamento para esse tipo de usuário, a função e a agenda. |
-| 400 BadRequest | Uma aprovação pendente já existe para esse tipo de usuário, função e aprovação. |
-| 400 BadRequest | Motivo solicitante está faltando. |
-| 400 BadRequest | Motivo solicitante deve ser menor do que 500 caracteres. |
-| 400 BadRequest | Duração de elevação deve estar entre 0,5 e {de configuração}. |
-| 400 BadRequest | Não há uma sobreposição entre a ativação agendada e a solicitação. |
+| 400 BadRequest | Propriedade RoleAssignmentRequest era nula |
+| 400 BadRequest | Não é possível desserializar o objeto roleAssignmentRequest. |
+| 400 BadRequest | RoleID é necessário. |
+| 400 BadRequest | A data de início agendada deve ser especificada e deve ser maior do que agora. |
+| 400 BadRequest | Já existe um cronograma para este usuário, função e tipo de agendamento. |
+| 400 BadRequest | Já existe uma aprovação pendente para este usuário, função e tipo de aprovação. |
+| 400 BadRequest | Razão do solicitante ausente. |
+| 400 BadRequest | O motivo do solicitante deve ser menor que 500 caracteres. |
+| 400 BadRequest | A duração da elevação deve estar entre 0,5 e {from Setting}. |
+| 400 BadRequest | Há uma sobreposição entre ativação agendada e a solicitação. |
 | 400 BadRequest | A função já está ativada. |
-| 400 BadRequest | GenericElevateUserToRoleAssignments: Tickting informações é necessário e não são fornecidas no processo de ativação. |
-| 400 BadRequest | Não há uma sobreposição entre a ativação agendada e a solicitação. |
-| 403 não autorizado | Elevação exige a autenticação multifator. |
-| 403 não autorizado | Em nome de elevação não é permitida. |
+| 400 BadRequest | GenericElevateUserToRoleAssignments: as informações de Tickting são necessárias e não são fornecidas no processo de ativação. |
+| 400 BadRequest | Há uma sobreposição entre ativação agendada e a solicitação. |
+| 403 não autorizado | A elevação requer autenticação multiFator. |
+| 403 não autorizado | Em nome da elevação não é permitida. |
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação

@@ -1,19 +1,19 @@
 ---
-title: Reinicie o synchronizationJob
-description: Reinicie o trabalho de sincronização, forçando-o a reprocessar todos os objetos no diretório. Opcionalmente limpa o estado de sincronização existente e erros anteriores.
+title: Reiniciar synchronizationJob
+description: ReInicie o trabalho de sincronização, forçando-o a reprocessar todos os objetos no diretório. Opcionalmente limpa o estado de sincronização existente e os erros anteriores.
 localization_priority: Normal
 ms.openlocfilehash: 169f95c3662fd774207584b54fcf27fb2548c795
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526722"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537096"
 ---
-# <a name="restart-synchronizationjob"></a>Reinicie o synchronizationJob
+# <a name="restart-synchronizationjob"></a>Reiniciar synchronizationJob
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Reinicie o trabalho de sincronização, forçando-o a reprocessar todos os objetos no diretório. Opcionalmente limpa o estado de sincronização existente e erros anteriores.
+ReInicie o trabalho de sincronização, forçando-o a reprocessar todos os objetos no diretório. Opcionalmente limpa o estado de sincronização existente e os erros anteriores.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -38,20 +38,20 @@ POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/restart
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornecem um objeto JSON com o parâmetro a seguir.
+No corpo da solicitação, forneça um objeto JSON com o seguinte parâmetro.
 
 | Parâmetro     | Tipo      | Descrição    |
 |:--------------|:----------|:---------------|
-|critérios       |[synchronizationJobRestartCriteria](../resources/synchronization-synchronizationjobrestartcriteria.md) |Reinicie os critérios|
+|criteria       |[synchronizationJobRestartCriteria](../resources/synchronization-synchronizationjobrestartcriteria.md) |Critérios de reInício|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, retorna um `204 No Content` resposta. Ele não retornará nada no corpo da resposta.
+Se tiver êxito, retornará `204 No Content` uma resposta. Não retorna nada no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 ##### <a name="request"></a>Solicitação
-O exemplo a seguir é um exemplo de uma solicitação.
+Veja a seguir um exemplo de uma solicitação.
 <!-- {
   "blockType": "request",
   "name": "synchronizationjob_restart"
@@ -69,7 +69,7 @@ Content-type: application/json
 ```
 
 ##### <a name="response"></a>Resposta
-O exemplo a seguir é um exemplo de uma resposta.
+Veja a seguir um exemplo de uma resposta.
 
 <!-- {
   "blockType": "response",

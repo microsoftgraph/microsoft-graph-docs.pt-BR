@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 5857941f8c08c9090ba05098ae1d69a34dead791
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643056"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546243"
 ---
 # <a name="update-rangefont"></a>Atualizar rangefont
 
@@ -33,7 +33,7 @@ PATCH /workbook/worksheets/{id|name}/range(address='<address>')/format/font
 PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/font
 ```
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
-| Name       | Descrição|
+| Nome       | Descrição|
 |:-----------|:-----------|
 | Autorização  | {token} de portador. Obrigatório. |
 | Workbook-Session-Id  | ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.|
@@ -44,7 +44,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |bold|booliano|Representa o status da fonte em negrito.|
-|color|string|Representação de código de cor HTML para a cor do texto. Por exemplo, #FF0000 representa vermelho.|
+|color|cadeia de caracteres|Representação de código de cor HTML para a cor do texto. Por exemplo, #FF0000 representa vermelho.|
 |italic|booliano|Representa o status da fonte em itálico.|
 |name|string|Nome da fonte (por exemplo, "Calibri")|
 |size|Double|Font Size|

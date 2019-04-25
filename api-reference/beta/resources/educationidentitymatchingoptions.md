@@ -1,30 +1,30 @@
 ---
-title: tipo de recurso de educationIdentityMatchingOptions
-description: Fornece um mapeamento entre uma propriedade de fonte e uma propriedade de destino para contas de usuário correspondentes. A propriedade source deve existir nos dados de origem. A propriedade de destino deve ser uma propriedade válida, no Windows Azure Active Directory (AD Azure).
+title: tipo de recurso educationIdentityMatchingOptions
+description: Fornece um mapeamento entre uma propriedade de origem e uma propriedade de destino para as contas de usuário correspondentes. A propriedade Source deve existir nos dados de origem. A propriedade target deve ser uma propriedade válida no Azure Active Directory (Azure AD).
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 723a74cff1d5a660272d3456e9f54de8a54e21bc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513701"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543236"
 ---
-# <a name="educationidentitymatchingoptions-resource-type"></a>tipo de recurso de educationIdentityMatchingOptions
+# <a name="educationidentitymatchingoptions-resource-type"></a>tipo de recurso educationIdentityMatchingOptions
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Fornece um mapeamento entre uma propriedade de fonte e uma propriedade de destino para contas de usuário correspondentes. A propriedade source deve existir nos dados de origem. A propriedade de destino deve ser uma propriedade válida, no Windows Azure Active Directory (AD Azure).
+Fornece um mapeamento entre uma propriedade de origem e uma propriedade de destino para as contas de usuário correspondentes. A propriedade Source deve existir nos dados de origem. A propriedade target deve ser uma propriedade válida no Azure Active Directory (Azure AD).
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade | Tipo | Descrição |
 |:-|:-|:-|
-| appliesTo | string |  O tipo de função de usuário para atribuir da licença. Os valores possíveis são: `student` e `teacher`.      |
-| **sourcePropertyName** | string |  O nome da propriedade source, que deve ser um nome de campo nos dados de origem. Essa propriedade diferencia maiusculas de minúsculas.        |
-| **targetPropertyName** | string |  O nome da propriedade destino, que deve ser uma propriedade válida no Azure AD. Essa propriedade diferencia maiusculas de minúsculas.     |
-| **targetDomain** | string |  O domínio ao sufixo com a propriedade source a correspondência de destino. Caso seja fornecido como nulo, a propriedade source será usada para coincidir com a propriedade de destino.        |
+| **appliesTo** | string |  O tipo de função de usuário a ser atribuído à licença. Os valores possíveis são: `student` e `teacher`.      |
+| **sourcePropertyName** | string |  O nome da propriedade Source, que deve ser um nome de campo nos dados de origem. Essa propriedade diferencia maiúsculas de minúsculas.        |
+| **TargetName** | string |  O nome da propriedade de destino, que deve ser uma propriedade válida no Azure AD. Essa propriedade diferencia maiúsculas de minúsculas.     |
+| **targetDomain** | string |  O domínio a ser sufixo com a propriedade Source para corresponder ao destino. Se fornecido como nulo, a propriedade Source será usada para corresponder à Propriedade Target.        |
 
 ## <a name="json-representation"></a>Representação JSON
 <!-- {

@@ -1,34 +1,34 @@
 ---
 title: Atualizar profilephoto
-description: Atualizar a foto para qualquer usuário no locatário incluindo assinado do usuário, ou o grupo especificado ou o contato. Desde daí
+description: Atualize a foto de qualquer usuário no locatário, incluindo o usuário conectado ou o grupo ou contato especificado. Como não há
 localization_priority: Normal
 ms.openlocfilehash: f8191716471cba565b27ef316b5b13e3b32ecaff
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521128"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546476"
 ---
 # <a name="update-profilephoto"></a>Atualizar profilephoto
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atualizar a foto para qualquer usuário no locatário incluindo assinado do usuário, ou o grupo especificado ou o contato. Como no momento, há um limite de 4MB no tamanho total de cada solicitação REST, isso limita o tamanho da foto que você pode adicionar ao menos de 4MB.
+Atualize a foto de qualquer usuário no locatário, incluindo o usuário conectado ou o grupo ou contato especificado. Como atualmente há um limite de 4 MB para o tamanho total de cada solicitação REST, isso limita o tamanho da foto que você pode adicionar a 4 MB.
 
-Use apenas PUT para essa operação na versão beta.
+Use apenas o PUT para essa operação na versão beta.
 
-> **Observação** A operação de atualização de foto no beta suporta apenas o usuário comercial ou caixas de correio da escola e caixas de correio não pessoais.
+> **Observação** A operação atualizar foto no beta oferece suporte somente às caixas de correio corporativa ou de estudante do usuário e não às caixas de correio pessoais.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | Foto de perfil do entrou no **usuário**:<br/>User.ReadWrite, User.ReadWrite.All<br /><br />Para recurso de **grupo**:<br />Group.ReadWrite.All<br /><br />Para recurso de **contato**:<br />Contacts.ReadWrite |
+|Delegado (conta corporativa ou de estudante)     | Foto de perfil do **usuário**conectado:<br/>User. ReadWrite, User. ReadWrite. All<br /><br />Para recurso de **grupo**:<br />Group.ReadWrite.All<br /><br />Para recurso de **contato**:<br />Contacts.ReadWrite |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | Para recurso de **usuário**:<br/>User.ReadWrite.All<br /><br />Para recurso de **grupo**:<br />Group.ReadWrite.All<br /><br />Para recurso de **contato**:<br />Contacts.ReadWrite |
 
-> **Observação:** para atualizar a foto de qualquer usuário na organização, o aplicativo deve ter a Permissão de aplicativo User.ReadWrite.All e chamar esta API usando a própria identidade, não em nome de um usuário. Para saber mais, veja como [obter acesso sem um usuário conectado](/graph/auth-v2-service).
+> **Observação** Para atualizar a foto de qualquer usuário na organização, seu aplicativo deve ter a permissão User. ReadWrite. All e chamar essa API com sua própria identidade, e não em nome de um usuário. Para saber mais, confira [obter acesso sem um usuário conectado](/graph/auth-v2-service).
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

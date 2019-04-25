@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 01fd069173fff1a7a6868f1596326fcb44d77fb7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27932270"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550116"
 ---
 # <a name="list-photos"></a>Listar fotos
 Recuperar uma lista dos objetos [profilePhoto](../resources/profilephoto.md).
@@ -56,7 +56,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/photos
 
 #### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
->**Observação:** no objeto response mostrado aqui pode ser reduzido para melhorar a legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

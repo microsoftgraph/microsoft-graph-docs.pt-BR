@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: c9f4c7dd24486c4c2d5ea09281008617c97d605f
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31794068"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32552489"
 ---
 # <a name="androidforworkenrollmentprofile-resource-type"></a>Tipo de recurso androidForWorkEnrollmentProfile
 
@@ -23,30 +23,30 @@ Perfil de registro usado para registrar dispositivos COSU usando o Gerenciamento
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar androidForWorkEnrollmentProfiles](../api/intune-androidforwork-androidforworkenrollmentprofile-list.md)|Coleção [androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md)|Lista propriedades e relações dos objetos [androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md).|
-|[Obter androidForWorkEnrollmentProfile](../api/intune-androidforwork-androidforworkenrollmentprofile-get.md)|[androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md)|Ler propriedades e relações do objeto [androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md).|
+|[Obter androidForWorkEnrollmentProfile](../api/intune-androidforwork-androidforworkenrollmentprofile-get.md)|[androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md)|Propriedades de leitura e relações do objeto [androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md).|
 |[Criar androidForWorkEnrollmentProfile](../api/intune-androidforwork-androidforworkenrollmentprofile-create.md)|[androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md)|Cria um novo objeto [androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md).|
 |[Excluir androidForWorkEnrollmentProfile](../api/intune-androidforwork-androidforworkenrollmentprofile-delete.md)|Nenhum|Exclui um [androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md).|
-|[Atualizar androidForWorkEnrollmentProfile](../api/intune-androidforwork-androidforworkenrollmentprofile-update.md)|[androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md)|Atualizar as propriedades de um objeto [androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md).|
+|[Atualizar androidForWorkEnrollmentProfile](../api/intune-androidforwork-androidforworkenrollmentprofile-update.md)|[androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md)|Atualiza as propriedades de um objeto [androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md).|
 |[Ação revokeToken](../api/intune-androidforwork-androidforworkenrollmentprofile-revoketoken.md)|Nenhuma|Ainda não documentado|
 |[Ação createToken](../api/intune-androidforwork-androidforworkenrollmentprofile-createtoken.md)|Nenhuma|Ainda não documentado|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|accountId|Cadeia de caracteres|GUID de locatário ao qual o perfil de registro pertence.|
-|id|String|GUID exclusivo do perfil de registro.|
-|displayName|Cadeia de caracteres|Nome de exibição do perfil de registro.|
+|accountId|String|GUID de locatário ao qual o perfil de registro pertence.|
+|id|Cadeia de caracteres|GUID exclusivo do perfil de registro.|
+|displayName|String|Nome de exibição do perfil de registro.|
 |description|String|Descrição do perfil de registro.|
 |createdDateTime|DateTimeOffset|Data e hora de criação do perfil de registro.|
 |lastModifiedDateTime|DateTimeOffset|Data e hora da última modificação do perfil de registro.|
-|tokenValue|Cadeia de caracteres|Valor do token mais recentemente criado para este perfil de registro.|
+|tokenValue|String|Valor do token mais recentemente criado para este perfil de registro.|
 |tokenExpirationDateTime|DateTimeOffset|Data e hora em que o token mais recentemente criado expirará.|
 |enrolledDeviceCount|Int32|Número total de dispositivos Android que foram registrados usando esse perfil de registro.|
 |qrCodeContent|String|Cadeia de caracteres usada para gerar um código QR para o token.|
 |qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Cadeia de caracteres usada para gerar um código QR para o token.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

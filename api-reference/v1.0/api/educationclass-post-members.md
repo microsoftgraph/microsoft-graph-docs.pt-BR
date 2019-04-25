@@ -5,11 +5,11 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 1999833036d4e1452cb45bedbd58a0e2d160df39
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27928014"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550452"
 ---
 # <a name="add-a-student"></a>Adicionar um aluno
 
@@ -22,7 +22,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  Sem suporte.  |
 |Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
-|Aplicativo | EduRoster.ReadWrite.All plus Member.Read.Hidden | 
+|Aplicativo | EduRoster. ReadWrite. All mais member. Read. Hidden | 
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

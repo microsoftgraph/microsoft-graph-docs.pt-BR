@@ -1,23 +1,23 @@
 ---
-title: Lista privilegedRoleAssignments
-description: Recupere uma lista dos objetos de privilegedRoleAssignment, que correspondem a todas as atribuições de função para a organização.
+title: Listar privilegedRoleAssignments
+description: Recupere uma lista de objetos privilegedRoleAssignment, que correspondem a todas as atribuições de função da organização.
 localization_priority: Normal
 ms.openlocfilehash: c576e0d9c0a278e02159e02cea94ddd927561e08
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516585"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538612"
 ---
-# <a name="list-privilegedroleassignments"></a>Lista privilegedRoleAssignments
+# <a name="list-privilegedroleassignments"></a>Listar privilegedRoleAssignments
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista dos objetos de [privilegedRoleAssignment](../resources/privilegedroleassignment.md) , que correspondem a todas as atribuições de função para a organização.
+Recupere uma lista de objetos [privilegedRoleAssignment](../resources/privilegedroleassignment.md) , que correspondem a todas as atribuições de função da organização.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-O solicitante precisa ter uma das seguintes funções: _Leitor de segurança_, _Administrador Global_, _Administrador de segurança_ou _Administrador com privilégios de função_. 
+O solicitante precisa ter uma das seguintes funções: administrador de _função privilegiada_, _administrador global_, _administrador de segurança_ou _leitor de segurança_. 
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
@@ -43,11 +43,11 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e a coleção de objetos [privilegedRoleAssignment](../resources/privilegedroleassignment.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [privilegedRoleAssignment](../resources/privilegedroleassignment.md) no corpo da resposta.
 
-Observe que o inquilino deve ser registrado no PIM. Caso contrário, será retornado o código de status HTTP 403-Proibido.
+Observe que o locatário precisa ser registrado no PIM. Caso contrário, o código de status HTTP 403 proibido será retornado.
 ## <a name="examples"></a>Exemplos
-### <a name="get-all-role-assignments"></a>Obtenha todas as atribuições de função
+### <a name="get-all-role-assignments"></a>Obter todas as atribuições de função
 ##### <a name="request"></a>Solicitação
 O exemplo a seguir mostra uma solicitação para obter todas as atribuições de função:
 <!-- {
@@ -58,7 +58,7 @@ O exemplo a seguir mostra uma solicitação para obter todas as atribuições de
 GET https://graph.microsoft.com/beta/privilegedRoleAssignments
 ```
 ##### <a name="response"></a>Resposta
-O exemplo a seguir mostra a resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+O exemplo a seguir mostra a resposta. Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -83,9 +83,9 @@ Content-length: 237
   ]
 }
 ```
-### <a name="get-active-role-assignments"></a>Obtenha as atribuições de função ativo
+### <a name="get-active-role-assignments"></a>Obter atribuições de função ativas
 ##### <a name="request"></a>Solicitação 
-O exemplo a seguir mostra uma solicitação para atribuições de função ativo de consulta:
+O exemplo a seguir mostra uma solicitação para consultar as atribuições de função ativas:
 <!-- {
   "blockType": "request",
   "name": "get_privilegedroleassignments"
@@ -94,7 +94,7 @@ O exemplo a seguir mostra uma solicitação para atribuições de função ativo
 GET https://graph.microsoft.com/beta/privilegedRoleAssignments?$filter=isElevated%20eq%20true
 ```
 ##### <a name="response"></a>Resposta
-O exemplo a seguir mostra a resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+O exemplo a seguir mostra a resposta. Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -127,9 +127,9 @@ Content-length: 237
   ]
 }
 ```
-### <a name="get-permanent-role-assignments"></a>Obtenha as atribuições de função permanente
+### <a name="get-permanent-role-assignments"></a>Obter atribuições de função permanentes
 ##### <a name="request"></a>Solicitação 
-O exemplo a seguir mostra uma solicitação para atribuições de função permanente de consulta, onde ``expirationDateTime`` valor é ``null``:
+O exemplo a seguir mostra uma solicitação para consultar atribuições de função ``expirationDateTime`` permanentes ``null``, onde Value é:
 <!-- {
   "blockType": "request",
   "name": "get_privilegedroleassignments"
@@ -138,7 +138,7 @@ O exemplo a seguir mostra uma solicitação para atribuições de função perma
 GET https://graph.microsoft.com/beta/privilegedRoleAssignments?$filter=isElevated%20eq%20true%20and%20expirationDateTime%20eq%20null
 ```
 ##### <a name="response"></a>Resposta
-O exemplo a seguir mostra a resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+O exemplo a seguir mostra a resposta. Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -171,9 +171,9 @@ Content-length: 237
   ]
 }
 ```
-### <a name="get-eligible-role-assignments"></a>Obtenha as atribuições de função elegíveis
+### <a name="get-eligible-role-assignments"></a>Obter atribuições de função qualificadas
 ##### <a name="request"></a>Solicitação 
-O exemplo a seguir mostra uma solicitação para atribuições de função elegíveis de consulta, incluindo aqueles ativas e não estiver ativo:
+O exemplo a seguir mostra uma solicitação para consultar atribuições de função qualificadas, incluindo as que são ativas e não ativas:
 <!-- {
   "blockType": "request",
   "name": "get_privilegedroleassignments"
@@ -182,7 +182,7 @@ O exemplo a seguir mostra uma solicitação para atribuições de função eleg�
 GET https://graph.microsoft.com/beta/privilegedRoleAssignments?$filter=isElevated%20eq%20true%20and%20expirationDateTime%20ne%20null%20or%20isElevated%20eq%20false
 ```
 ##### <a name="response"></a>Resposta 
-O exemplo a seguir mostra a resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+O exemplo a seguir mostra a resposta. Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -6,11 +6,11 @@ title: SharePointIds
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 233c2aa4b8ce67b2382996181c9ba2ab57b9e69c
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480262"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549584"
 ---
 # <a name="sharepointids-resource-type"></a>Tipo de recurso SharePointIds
 

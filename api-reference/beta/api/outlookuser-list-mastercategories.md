@@ -5,15 +5,14 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 5a375079748be356b37cb2281f10da857cca2563
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523600"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547102"
 ---
 # <a name="list-outlook-categories"></a>Listar categorias do Outlook
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Obtém todas as categorias que foram definidas para o usuário.
 
@@ -22,7 +21,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) | MailboxSettings.Read    |
+|Delegado (conta corporativa ou de estudante) | MailboxSettings.Read    |
 |Delegada (conta pessoal da Microsoft) | MailboxSettings.Read    |
 |Aplicativo | MailboxSettings.Read |
 
@@ -54,7 +53,7 @@ Este é um exemplo da solicitação.
   "name": "get_mastercategories"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/outlook/masterCategories
+GET https://graph.microsoft.com/v1.0/me/outlook/masterCategories
 ```
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
@@ -70,7 +69,7 @@ Content-type: application/json
 Content-length: 727
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('8ae6f565-0d7f-4ead-853e-7db94c912a1f')/outlook/masterCategories",
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('8ae6f565-0d7f-4ead-853e-7db94c912a1f')/outlook/masterCategories",
   "value":[
     {
       "id":"5a9a6aa8-b65f-4357-b1f9-60c6bf6330d8",
@@ -113,7 +112,5 @@ Content-length: 727
   "description": "List categories",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/outlookuser-list-mastercategories.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  "tocPath": ""
 }-->

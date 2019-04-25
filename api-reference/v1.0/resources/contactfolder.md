@@ -5,17 +5,17 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 6cf4d6ed75427dce527ced6cb64d0cdcb9afed99
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27949042"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548163"
 ---
 # <a name="contactfolder-resource-type"></a>tipo de recurso contactFolder
 
 Uma pasta que contém contatos.
 
-Esse recurso suporta a utilização da [consulta delta](/graph/delta-query-overview) para controlar adições, exclusões e atualizações incrementais oferecendo uma função [delta](../api/contactfolder-delta.md).
+Esse recurso tem suporte para o uso da [consulta delta](/graph/delta-query-overview) para controlar adições, exclusões e atualizações incrementais oferecendo uma função [delta](../api/contactfolder-delta.md).
 
 
 ## <a name="methods"></a>Métodos
@@ -24,7 +24,7 @@ Esse recurso suporta a utilização da [consulta delta](/graph/delta-query-overv
 |:---------------|:--------|:----------|
 |[Obter contactFolder](../api/contactfolder-get.md) | [contactFolder](contactfolder.md) |Obtenha uma pasta de contatos usando a respectiva ID.|
 |[Update](../api/contactfolder-update.md) | [contactFolder](contactfolder.md) |Atualize o objeto contactFolder. |
-|[Delete](../api/contactfolder-delete.md) | Nenhuma |Exclua um objeto contactFolder. |
+|[Excluir](../api/contactfolder-delete.md) | Nenhum |Exclua um objeto contactFolder. |
 |[Listar childFolders](../api/contactfolder-list-childfolders.md) |Coleção [ContactFolder](contactfolder.md)| Obtenha uma coleção de pastas filho sob a pasta de contatos especificada.|
 |[Criar contactFolder filho](../api/contactfolder-post-childfolders.md) |[ContactFolder](contactfolder.md)| Crie uma nova contactFolder como um filho de uma pasta especificada.|
 |[delta](../api/contact-delta.md)|Coleção [Contact](contact.md)| Obtenha um conjunto de pastas de contatos que foram adicionadas, excluídas ou removidas da caixa de correio do usuário.|
@@ -39,7 +39,7 @@ Esse recurso suporta a utilização da [consulta delta](/graph/delta-query-overv
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |displayName|String|O nome de exibição da pasta.|
-|id|String|Identificador exclusivo da pasta de contatos. Somente leitura.|
+|id|Cadeia de caracteres|Identificador exclusivo da pasta de contatos. Somente leitura.|
 |parentFolderId|String|A ID da pasta pai da pasta.|
 
 ## <a name="relationships"></a>Relações

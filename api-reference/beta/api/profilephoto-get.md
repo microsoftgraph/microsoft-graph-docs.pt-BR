@@ -3,11 +3,11 @@ title: Obter foto
 description: Obtenha a profilePhoto específica ou seus metadados (propriedades **profilePhoto**).
 localization_priority: Priority
 ms.openlocfilehash: 55bdf01515f654eb1622703f9b846de840bc5611
-ms.sourcegitcommit: bf3d0c94faeb206f9f986423a436fb355acd54c1
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2019
-ms.locfileid: "31751554"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538551"
 ---
 # <a name="get-photo"></a>Obter foto
 
@@ -72,7 +72,7 @@ GET /groups/{id}/photos/{size}
 
 |**Parâmetro**|**Tipo**|**Descrição**|
 |:-----|:-----|:-----|
-|tamanho  |Cadeia de caracteres  | Um tamanho de foto. Os tamanhos de fotos em HD compatíveis com o Office 365 são os seguintes: 48x48, 64x64, 96x96, 120x120, 240x240, 360x360, 432x432, 504x504 e 648x648. As fotos podem ser de todos os tamanhos, desde que estejam armazenadas no Azure Active Directory. |
+|size  |Cadeia de caracteres  | Um tamanho de foto. Os tamanhos de fotos em HD compatíveis com o Office 365 são os seguintes: 48x48, 64x64, 96x96, 120x120, 240x240, 360x360, 432x432, 504x504 e 648x648. As fotos podem ser de todos os tamanhos, desde que estejam armazenadas no Azure Active Directory. |
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.

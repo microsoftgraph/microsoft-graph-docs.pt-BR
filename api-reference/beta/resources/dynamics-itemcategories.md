@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: e18319683f6dbceddccc9cf83e48cd3ef89f895d
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365742"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543053"
 ---
 # <a name="itemcategories-resource-type"></a>tipo de recurso doCategories
 Representa uma categoria de vários itens no Dynamics 365 Business central.
@@ -29,9 +29,9 @@ Representa uma categoria de vários itens no Dynamics 365 Business central.
 | Propriedade           | Tipo   |Descrição                                     |
 |:-------------------|:-------|:-----------------------------------------------|
 |id                  |GUID    |A ID exclusiva do mycategory. Não editável.|
-|código                |string  |O código de categoria.                          |
+|código                |cadeia de caracteres  |O código de categoria.                          |
 |displayName         |string  |O nome de exibição de doCategorias.                |
-|lastModifiedDateTime|DateTime|A última data e hora em que a categoria foi modificada. Somente Leitura.|  
+|lastModifiedDateTime|DateTime|A última data e hora em que a categoria foi modificada. Somente leitura.|  
 
 
 ## <a name="relationships"></a>Relações

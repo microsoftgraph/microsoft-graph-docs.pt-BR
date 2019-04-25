@@ -5,11 +5,11 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: eaa2eae082c2b50f39b4a3ac2547ca5b0135381f
-ms.sourcegitcommit: 081cacecb4960aabc9e1011d12f06fe9ecf7d188
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30657718"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537811"
 ---
 # <a name="schedule-share"></a>agendamento: share
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
-> **Observação**: esta API oferece suporte a permissões de administrador. Os administradores globais podem acessar grupos dos quais eles não são membros.
+> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais podem acessar grupos dos quais eles não são membros.
 
 ## <a name="http-request"></a>Solicitação HTTP
 

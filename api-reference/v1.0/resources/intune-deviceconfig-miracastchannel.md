@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 436036aa9b5945be94587622a2e6a5cfe4f5d027
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30253908"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549297"
 ---
 # <a name="miracastchannel-enum-type"></a>tipo de enumeração miracastChannel
 
@@ -21,17 +21,17 @@ Valores possíveis para o canal Miracast.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |userDefined|,0|Definido pelo usuário, valor padrão, sem intenção.|
-|one|1|Só.|
-|two|duas|Two.|
-|three|3D|Seguintes.|
-|four|quatro|Quarta.|
-|five|0,5|Máximo.|
-|seis|6|MRU.|
-|sete|178|Sétimo.|
-|oito|8|Altura.|
-|nove|241|Nove.|
-|dez|254|Primeiros.|
-|11|11|11.|
+|um|1 |Só.|
+|two|2 |Two.|
+|three|3 |Seguintes.|
+|four|4 |Quarta.|
+|five|5 |Máximo.|
+|MRU|6 |MRU.|
+|sétimo|7 |Sétimo.|
+|altura|8 |Altura.|
+|nove|9 |Nove.|
+|primeiros|10 |Primeiros.|
+|11|11 |11.|
 |thirtySix|36|36.|
 |40|40|40.|
 |fortyFour|44|44.|

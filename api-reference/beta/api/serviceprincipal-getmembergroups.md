@@ -1,19 +1,19 @@
 ---
-title: 'servicePrincipal: getMemberGroups'
-description: Obter a lista de grupos que essa entidade de serviço é um membro de.  A seleção é transitiva.
+title: 'servicePrincipalName: getMemberGroups'
+description: Obtenha a lista de grupos dos quais essa entidade de serviço é membro.  A verificação é transitiva.
 localization_priority: Normal
 ms.openlocfilehash: 80d81444b9e70bd27b5bc5346ffa0e42e9371837
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519637"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545465"
 ---
-# <a name="serviceprincipal-getmembergroups"></a>servicePrincipal: getMemberGroups
+# <a name="serviceprincipal-getmembergroups"></a>servicePrincipalName: getMemberGroups
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Obter a lista de grupos que essa entidade de serviço é um membro de.  A seleção é transitiva.
+Obtenha a lista de grupos dos quais essa entidade de serviço é membro.  A verificação é transitiva.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -41,7 +41,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|securityEnabledOnly|Booliano|Defina como **false**. Há suporte para retornar somente os grupos de segurança habilitados apenas para usuários.|
+|securityEnabledOnly|Boolean|Defina como **false**. Há suporte para retornar somente os grupos de segurança habilitados apenas para usuários.|
 
 ## <a name="response"></a>Resposta
 

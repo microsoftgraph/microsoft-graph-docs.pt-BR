@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 086da317eedc908ea44a7ec0d1b9140bbe0534b4
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31795188"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32552753"
 ---
 # <a name="androidforworkappconfigurationschemaitem-resource-type"></a>Tipo de recurso androidForWorkAppConfigurationSchemaItem
 
@@ -22,7 +22,7 @@ Item de configuração único dentro de um esquema de configurações personaliz
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|schemaItemKey|Cadeia de caracteres|Chave exclusiva que o aplicativo usa para identificar o item|
+|schemaItemKey|String|Chave exclusiva que o aplicativo usa para identificar o item|
 |displayName|String|Nome legível por humanos|
 |description|String|Descrição do que o item controla dentro do aplicativo|
 |defaultBoolValue|Booliano|Valor padrão para itens do tipo booliano, se especificado pelo desenvolvedor do aplicativo|
@@ -33,7 +33,7 @@ Item de configuração único dentro de um esquema de configurações personaliz
 |selections|Coleção [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Lista de pares nome/valor legíveis por humanos dos valores válidos que podem ser definidos para esse item (somente itens de Escolha e Múltipla escolha)|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

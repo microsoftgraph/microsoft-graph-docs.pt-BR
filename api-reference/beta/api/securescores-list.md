@@ -1,19 +1,19 @@
 ---
-title: Lista secureScores
-description: Recupere as propriedades e relacionamentos de um objeto secureScores.
+title: Listar secureScores
+description: Recupere as propriedades e os relacionamentos de um objeto secureScores.
 localization_priority: Normal
 ms.openlocfilehash: e574c3e52eb60f29dac89e2795b04666c7a1f02b
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642958"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545461"
 ---
-# <a name="list-securescores"></a>Lista secureScores
+# <a name="list-securescores"></a>Listar secureScores
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere as propriedades e relacionamentos de um objeto [secureScores](../resources/securescores.md) .
+Recupere as propriedades e os relacionamentos de um objeto [secureScores](../resources/securescores.md) .
 
 ## <a name="permissions"></a>Permissões
 
@@ -21,9 +21,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegada (conta corporativa ou de estudante) |  SecurityEvents.Read.All, SecurityEvents.ReadWrite.All.   |
-|Delegada (conta pessoal da Microsoft) |  Sem suporte.  |
-|Aplicativo | SecurityEvents.Read.All, SecurityEvents.ReadWrite.All. |
+|Delegado (conta corporativa ou de estudante) |  Escopo securityevents. Read. All, escopo securityevents. ReadWrite. All.   |
+|Delegado (conta pessoal da Microsoft) |  Sem suporte.  |
+|Aplicativo | Escopo securityevents. Read. All, escopo securityevents. ReadWrite. All. |
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -45,7 +45,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará um `200 OK` código de resposta e um objeto **secureScores** no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto **secureScores** no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 

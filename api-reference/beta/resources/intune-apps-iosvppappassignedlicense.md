@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 162eaeebd8c678bf29b3b40729114f67d1325c86
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31790372"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32552258"
 ---
 # <a name="iosvppappassignedlicense-resource-type"></a>tipo de recurso iosVppAppAssignedLicense
 
@@ -31,14 +31,14 @@ atribuição de licença do programa de compra de volume iOS. Essa classe não o
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
-|userEmailAddress|Cadeia de caracteres|O endereço de email do usuário.|
+|id|Cadeia de caracteres|Chave da entidade.|
+|userEmailAddress|String|O endereço de email do usuário.|
 |userId|String|A ID do usuário.|
 |userName|Cadeia de caracteres|O nome de usuário.|
 |userPrincipalName|String|O nome da entidade de segurança do usuário.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

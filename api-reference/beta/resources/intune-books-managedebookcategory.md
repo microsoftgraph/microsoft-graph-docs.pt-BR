@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: ef3d0d621394af0cfe949031d79ff374ba0491b8
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31795867"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548289"
 ---
 # <a name="managedebookcategory-resource-type"></a>tipo de recurso managedEBookCategory
 
@@ -36,7 +36,7 @@ Contém propriedades de uma única categoria de eBook do Intune.
 |lastModifiedDateTime|DateTimeOffset|A data e a hora em que o ManagedEBookCategory foi modificado pela última vez.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

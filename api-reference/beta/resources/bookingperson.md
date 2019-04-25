@@ -1,30 +1,30 @@
 ---
-title: tipo de recurso de bookingPerson
+title: tipo de recurso bookingPerson
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: be00e59e2378c454cd9c939f992376dd9c54c3b0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508402"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543761"
 ---
-# <a name="bookingperson-resource-type"></a>tipo de recurso de bookingPerson
+# <a name="bookingperson-resource-type"></a>tipo de recurso bookingPerson
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-Este é um tipo de base para uma pessoa de uma empresa Microsoft Bookings, que pode ser um [bookingCustomer](bookingcustomer.md) ou [bookingStaffMember](bookingstaffmember.md).
+Este é um tipo base para uma pessoa em um Microsoft bookings Business, que pode ser um [bookingCustomer](bookingcustomer.md) ou [bookingStaffMember](bookingstaffmember.md).
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|displayName|String|Um nome da entidade derivada, qual interfaces com os clientes.|
+|displayName|Cadeia de caracteres|Um nome para a entidade derivada, que faz interface com clientes.|
 |emailAddress|String|O endereço de email da pessoa.|
 |id|String| A ID da entidade derivada. Somente leitura.|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 Nenhum
 
 

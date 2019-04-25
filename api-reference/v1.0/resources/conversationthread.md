@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: a1a45f5ac6d26b58f1179616d3a6b9b76c6c1618
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27912313"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549885"
 ---
 # <a name="conversationthread-resource-type"></a>tipo de recurso conversationThread
 Um conversationThread é uma coleção de [postagens](post.md).
@@ -24,14 +24,14 @@ A coleção de destinatários da última postagem são os destinatários agregad
 |[Criar thread](../api/group-post-threads.md) | [conversationThread](conversationthread.md) |Inicie uma nova conversa criando primeiro um thread. Uma nova conversa, thread de conversas e posts são criados no grupo.|
 |[Obter conversationThread](../api/conversationthread-get.md) | [conversationThread](conversationthread.md) |Obtenha um thread específico pertencente a um grupo. |
 |[Update](../api/conversationthread-update.md) | [conversationThread](conversationthread.md)  |Atualize o objeto conversationThread. |
-|[Delete](../api/conversationthread-delete.md) | Nenhuma |Exclua um objeto conversationThread. |
+|[Excluir](../api/conversationthread-delete.md) | Nenhum |Exclua um objeto conversationThread. |
 |[Responder](../api/conversationthread-reply.md)|Nenhuma|Responda a este thread criando uma nova entidade Post.|
 |[Listar Postagens](../api/conversationthread-list-posts.md) |Coleção [post](post.md)| Obtenha as postagens do thread especificado. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|Cadeia de caracteres| Somente leitura.|
+|id|String| Somente leitura.|
 |toRecipients|Coleção [recipient](recipient.md)|Os destinatários Para: do thread.|
 |ccRecipients|Coleção [recipient](recipient.md)|Os destinatários Cc: do thread.|
 |topic|String|O tópico da conversa. Essa propriedade pode ser definida quando a conversa é criada, mas não pode ser atualizada.||

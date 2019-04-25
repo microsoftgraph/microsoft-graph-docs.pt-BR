@@ -1,19 +1,19 @@
 ---
-title: 'servicePrincipals: os proprietários de lista'
-description: Recupere uma lista de proprietários do servicePrincipal.
+title: 'servicePrincipalName: listar proprietários'
+description: Recupere uma lista de proprietários do servicePrincipalName.
 localization_priority: Normal
 ms.openlocfilehash: ee591818db1183cee03079754ebf5d6278dcb9a1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520281"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545226"
 ---
-# <a name="serviceprincipals-list-owners"></a>servicePrincipals: os proprietários de lista
+# <a name="serviceprincipals-list-owners"></a>servicePrincipalName: listar proprietários
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de proprietários do servicePrincipal.
+Recupere uma lista de proprietários do servicePrincipalName.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
