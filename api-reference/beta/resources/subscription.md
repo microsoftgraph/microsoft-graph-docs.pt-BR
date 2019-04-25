@@ -1,26 +1,26 @@
 ---
-title: tipo de recurso Subscription
-description: 'Uma assinatura permite que um aplicativo cliente receba notificações sobre alterações nos dados no Microsoft Graph. No momento, as assinaturas estão habilitadas para os seguintes recursos:'
+title: tipo de recurso de assinatura
+description: 'Uma assinatura permite que um aplicativo cliente receba notificações sobre dados no Microsoft Graph. Atualmente, as assinaturas estão habilitadas para as seguintes coleções de recursos:'
 localization_priority: Normal
 author: piotrci
-ms.openlocfilehash: 9de48cc6a3e5dde459673117d9ee00a34477faf6
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 78b81bb2e2689e17d3f65f35d4ddf9b534728de6
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30163935"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582098"
 ---
-# <a name="subscription-resource-type"></a>tipo de recurso Subscription
+# <a name="subscription-resource-type"></a>tipo de recurso de assinatura
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Uma assinatura permite que um aplicativo cliente receba notificações sobre alterações nos dados no Microsoft Graph. No momento, as assinaturas estão habilitadas para os seguintes recursos:
+Uma assinatura permite que um aplicativo cliente receba notificações sobre dados no Microsoft Graph. Atualmente, as assinaturas estão habilitadas para as seguintes coleções de recursos:
 
-- Uma [mensagem][], [evento][]ou [contato][] no Outlook
-- Uma [conversa][] de um grupo do Office 365
-- Conteúdo na hierarquia de uma pasta raiz [driveItem][] no onedrive for Business ou em uma pasta raiz ou subpasta [driveItem][] no onedrive pessoal de um usuário
+- Um [mensagem][], [evento][], ou [contato][] no Outlook
+- Um [conversa][] de um grupo do Office 365
+- Conteúdo da hierarquia de uma pasta raiz [driveItem][] no OneDrive for Business ou de uma pasta raiz ou uma subpasta [driveItem][] no OneDrive pessoal do usuário
 - Um [usuário][] ou [grupo][] no Azure Active Directory
-- Um [alerta][] da API de segurança do Microsoft Graph
+- Um [alerta][] da API de Segurança do Microsoft Graph
 
 
 ## <a name="json-representation"></a>Representação JSON
@@ -39,6 +39,7 @@ Veja a seguir uma representação JSON do recurso.
 {
   "changeType": "string",
   "notificationUrl": "string",
+  "lifecycleNotificationUrl": "string",
   "resource": "string",
   "applicationId" : "string",
   "expirationDateTime": "string (timestamp)",
@@ -52,27 +53,28 @@ Veja a seguir uma representação JSON do recurso.
 
 | Propriedade | Tipo | Descrição |
 |:---------|:-----|:------------|
-| changeType | string | Obrigatório. Indica o tipo de alteração no recurso inscrito que gerará uma notificação. Os valores com suporte são: `created`, `updated`, `deleted`. Vários valores podem ser combinados usando uma lista separada por vírgula. <br><br>Observação: as notificações de item raiz da unidade `updated` dão suporte somente a ChangeType. Suporte e `deleted` ChangeType para `updated` notificações de grupo e usuário. |
-| notificationUrl | cadeia de caracteres | Obrigatório. A URL do ponto de extremidade que receberá as notificações. Essa URL deve fazer uso do protocolo HTTPS. |
-| recurso | string | Obrigatório. Especifica o recurso que será monitorado para alterações. Não inclua a URL base (`https://graph.microsoft.com/beta/`). |
-| expirationDateTime | DateTimeOffset | Obrigatório. Especifica a data e a hora em que a assinatura de webhook expira. O horário está em UTC e pode ser uma quantidade de tempo desde a criação da assinatura que varia para o recurso assinado.  Confira na tabela abaixo o tempo máximo permitido para a assinatura. |
+| changeType | cadeia de caracteres | Obrigatório. Indica o tipo de alteração no recurso inscrito que gerará uma notificação. Os valores com suporte são: `created`, `updated`, `deleted`. Vários valores podem ser combinados usando uma lista separada por vírgula. <br><br>Observação: As notificações do item na raiz da unidade suportam somente `updated` changeType. Notificações de grupos e usuário suportam `updated` e `deleted` changeType. |
+| notificationUrl | cadeia de caracteres | Obrigatório. A URL do ponto de extremidade que recebe as notificações. Esta URL deve usar o protocolo HTTPS. |
+| lifecycleNotificationUrl | cadeia de caracteres | Opcional. A URL do ponto de extremidade que recebe notificações de ciclo `subscriptionRemoved` de `missed` vida, incluindo e notificações. Se não for fornecido, as notificações serão entregues ao **notificationUrl**. [Leia mais](/graph/webhooks-outlook-authz.md) sobre como os recursos do Outlook usam notificações de ciclo de vida.  Esta URL deve usar o protocolo HTTPS. |
+| recurso | string | Obrigatório. Especifica o recurso que será monitorado para detectar alterações. Não incluir a URL base (`https://graph.microsoft.com/beta/`). |
+| expirationDateTime | DateTimeOffset | Obrigatório. Especifica a data e a hora em que a assinatura do webhook expira. O horário está em UTC e pode ser uma quantidade de tempo desde a criação da assinatura que varia para o recurso assinado.  Confira na tabela abaixo o tempo máximo permitido para a assinatura. |
 | clientState | string | Opcional. Especifica o valor da propriedade `clientState` enviada pelo serviço em cada notificação. O tamanho máximo é de 255 caracteres. O cliente pode verificar se a notificação foi proveniente do serviço comparando o valor da propriedade `clientState` enviada com a assinatura com o valor da propriedade `clientState` recebida com cada notificação. |
 | id | string | Identificador exclusivo da assinatura. Somente leitura. |
 | ApplicationId | string | Identificador do aplicativo usado para criar a assinatura. Somente leitura. |
-| creatorId | string | Identificador da entidade de serviço ou usuário que criou a assinatura. Se o aplicativo usou permissões delegadas para criar a assinatura, este campo conterá a ID do usuário conectado o aplicativo chamado em nome de. Se o aplicativo usava permissões de aplicativo, este campo contém a ID da entidade de serviço correspondente ao aplicativo. Somente leitura. |
+| creatorId | cadeia de caracteres | Identificador de usuário ou entidade de serviço que criou a assinatura. Se o aplicativo usado delegada permissões para criar a assinatura, esse campo contém a id do usuário que entrou no aplicativo chamado em nome dele. Se o aplicativo usou permissões do aplicativo, esse campo contém a id da entidade de serviço correspondente ao aplicativo. Somente leitura. |
 
 ## <a name="maximum-length-of-subscription-per-resource-type"></a>Tamanho máximo da assinatura por tipo de recurso
 
 | Recurso            | Tempo de Expiração Máximo  |
 |:--------------------|:-------------------------|
-| Email                | 4230 minutos (abaixo de 3 dias)    |
-| Calendário            | 4230 minutos (abaixo de 3 dias)    |
-| Contatos            | 4230 minutos (abaixo de 3 dias)    |
-| Conversas em grupo | 4230 minutos (abaixo de 3 dias)    |
-| Itens raiz de unidade    | 4230 minutos (abaixo de 3 dias)    |
-| Alertas de segurança     | 43200 minutos (menos de 30 dias)  |
+| Email                | 4230 minutos (em 3 dias)    |
+| Calendário            | 4230 minutos (em 3 dias)    |
+| Contatos            | 4230 minutos (em 3 dias)    |
+| Conversas em grupo | 4230 minutos (em 3 dias)    |
+| Itens raiz de unidade    | 4230 minutos (em 3 dias)    |
+| Alertas de segurança     | 43200 minutos (em 30 dias )  |
 
-> **Observação:** Aplicativos existentes e novos aplicativos não devem exceder o valor com suporte. No futuro, todas as solicitações para criar ou renovar uma assinatura além do valor máximo falharão.
+> **Observação:** Os aplicativos existentes e os novos aplicativos não devem ultrapassar o valor suportado. No futuro, as solicitações para criar ou renovar uma assinatura além do valor máximo falharão.
 
 ## <a name="relationships"></a>Relações
 
@@ -84,7 +86,7 @@ Nenhum
 |:-------|:------------|:------------|
 | [Criar assinatura](../api/subscription-post-subscriptions.md) | [subscription](subscription.md) | Assina um aplicativo de escuta para receber notificações quando dados do Microsoft Graph são alterados. |
 | [Atualizar assinatura](../api/subscription-update.md) | [subscription](subscription.md) | ReNovar uma assinatura atualizando seu tempo de expiração. |
-| [Listar assinaturas](../api/subscription-list.md) | [subscription](subscription.md) | Lista assinaturas ativas. |
+| [Listar de assinaturas](../api/subscription-list.md) | [assinatura](subscription.md) | Lista assinaturas ativas. |
 | [Obter assinatura](../api/subscription-get.md) | [subscription](subscription.md) | Leia as propriedades e as relações do objeto Subscription. |
 | [Excluir assinatura](../api/subscription-delete.md) | Nenhuma | Excluir um objeto Subscription. |
 

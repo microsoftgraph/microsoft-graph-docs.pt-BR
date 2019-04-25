@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 9730986d9282abb95f08fb2a297f0b2bb0a3dc6e
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30984959"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32578740"
 ---
 # <a name="autopilotdevicestream-function"></a>função autopilotDeviceStream
 

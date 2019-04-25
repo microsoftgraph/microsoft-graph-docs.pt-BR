@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: c42cfc23db99125bac58fd42f412cdddddc42c7e
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30969236"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32577235"
 ---
 # <a name="delete-macosofficesuiteapp"></a>Excluir macOSOfficeSuiteApp
 

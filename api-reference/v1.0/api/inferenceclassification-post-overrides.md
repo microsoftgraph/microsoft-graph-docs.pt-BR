@@ -1,13 +1,13 @@
 ---
 title: Criar inferenceClassificationOverride
-description: 'Crie uma substituição para um remetente identificado por um endereço SMTP. As mensagens futuras desse endereço SMTP serão classificadas consistentemente '
+description: 'Crie uma substituição para um remetente identificado por um endereço SMTP. Mensagens futuras desse endereço SMTP serão consistentemente classificadas '
 localization_priority: Normal
 ms.openlocfilehash: 37648d699d4d54b2995af6bf847347c6537a414d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27848689"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32577620"
 ---
 # <a name="create-inferenceclassificationoverride"></a>Criar inferenceClassificationOverride
 

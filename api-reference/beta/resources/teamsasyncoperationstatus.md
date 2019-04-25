@@ -1,17 +1,17 @@
 ---
-title: tipo de enum teamsAsyncOperationStatus
+title: tipo de enumeração teamsAsyncOperationStatus
 description: Descreve o status atual de um teamsAsyncOperation.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: e9138adcc646677955a12091a3fb15badfd39f13
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511706"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32578856"
 ---
-# <a name="teamsasyncoperationstatus-enum-type"></a>tipo de enum teamsAsyncOperationStatus
+# <a name="teamsasyncoperationstatus-enum-type"></a>tipo de enumeração teamsAsyncOperationStatus
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -21,11 +21,11 @@ Descreve o status atual de um [teamsAsyncOperation](teamsasyncoperation.md).
 
 | Membro | Valor| Descrição |
 |:---------------|:--------|:----------|
-|Invalid|.0|Valor inválido|
-|notStarted|-1|A operação não foi iniciada.|
-|InProgress|-2|A operação está sendo executado.|
-|Succeeded|-3|A operação foi bem-sucedida.|
-|com falha.|4*|Falha na operação.|
+|Inválido|,0|Valor inválido.|
+|notStarted|1 |A operação não foi iniciada.|
+|inProgress|2 |A operação está sendo executada.|
+|adicionada|3 |A operação foi bem-sucedida.|
+|falhou|4 |Falha na operação.|
 <!--
 {
   "type": "#page.annotation",

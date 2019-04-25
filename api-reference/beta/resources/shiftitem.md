@@ -5,11 +5,11 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 7ff829ca0f43124404b4b99b048c9919368b6009
-ms.sourcegitcommit: 081cacecb4960aabc9e1011d12f06fe9ecf7d188
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30657704"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583783"
 ---
 # <a name="shiftitem-resource-type"></a>tipo de recurso shiftItem
 
@@ -22,8 +22,8 @@ Representa uma versão de um [turno](shift.md).
 |------------------------------|-------------------------|---------------------------------------------------------------------------------------------|
 | notes               | `string`                  | As notas para o `shiftItem`.      |
 | displayName               | `string`                  | O nome do `shiftItem`. |
-| startDateTime               | `DateTimeOffset`                  | A data e a hora de início `shiftItem`para o. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 teria a seguinte aparência: ' 2014-01-01T00:00:00Z '. Obrigatório. |
-| endDateTime               | `DateTimeOffset`                  | A data e a hora de término `shiftItem`para o. Obrigatório. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 teria a seguinte aparência: ' 2014-01-01T00:00:00Z '. |
+| startDateTime               | `DateTimeOffset`                  | A data e a hora de início `shiftItem`para o. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: '2014-01-01T00:00:00Z'. Obrigatório. |
+| endDateTime               | `DateTimeOffset`                  | A data e a hora de término `shiftItem`para o. Obrigatório. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: '2014-01-01T00:00:00Z'. |
 | tema | `enum`   |    |  |  | Cores suPortadas: branco; azuis natureza roxa Rosa amarelo acinzentada darkBlue; darkGreen; darkPurple; darkPink; darkYellow. |
 | activities    | `collection([shiftActivity](shiftactivity.md))`    | Uma parte incremental de um turno que pode abranger detalhes de quando e onde um funcionário está durante o turno. Por exemplo, uma atribuição ou uma quebra ou almoço agendado. Obrigatório. |
 

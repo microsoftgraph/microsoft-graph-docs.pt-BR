@@ -1,19 +1,19 @@
 ---
-title: Obtenha uma configuração de grupo
-description: Recupere as propriedades de um determinado objeto de configuração de grupo.
+title: Obter uma configuração de grupo
+description: Recupere as propriedades de um objeto de configuração de grupo específico.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: d47441a66ab0b2ed3602a69f4a92a06050708f67
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27936498"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32577830"
 ---
-# <a name="get-a-group-setting"></a>Obtenha uma configuração de grupo
+# <a name="get-a-group-setting"></a>Obter uma configuração de grupo
 
-Recupere as propriedades de um determinado objeto de configuração de grupo.
+Recupere as propriedades de um objeto de configuração de grupo específico.
 
 ## <a name="permissions"></a>Permissões
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 
-Obter uma configuração de todo o locatário ou específico.
+Obtenha uma configuração específica de todo o locatário ou grupo.
 
 ```http
 GET /groupSettings/{id}
@@ -51,7 +51,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [groupSetting](../resources/groupsetting.md) no corpo da resposta.
+Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [groupSetting](../resources/groupsetting.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/v1.0/groupSettings/{id}
 ```
 ##### <a name="response"></a>Resposta
 
-Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -6,41 +6,41 @@ title: SitePage
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 7b1634e79214f1cece85a78af29db6422ac03a81
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640655"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583400"
 ---
-# <a name="sitepage-resource"></a>recurso de sitePage
+# <a name="sitepage-resource"></a>recurso sitePage
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Esse recurso representa uma página na [lista][]SitePages.
-Ele contém uma coleção de [Web Part][]s, layout e o título.
+Ele contém o título, o layout e uma coleção de [WebPart][]s.
 
 ## <a name="tasks-on-a-page"></a>Tarefas em uma página
 
-As tarefas a seguir estão disponíveis para os recursos de **sitePage** .
-Todos os exemplos a seguir são em relação um [site][], eg: `https://graph.microsoft.com/{api-version}/sites/{site-id}`.
+As tarefas a seguir estão disponíveis para recursos do **sitePage** .
+Todos os exemplos abaixo são relativos a um [site][], por `https://graph.microsoft.com/{api-version}/sites/{site-id}`exemplo:.
 
 | Tarefa comum                     | Método HTTP
 |:--------------------------------|:------------------------------
-| [Listar páginas][]                  | OBTER /pages
-| [Get page][]                    | OBTER /pages/ {id page}
-| [Create][]                      | /Pages POST
-| [Delete][]                      | Excluir /pages/ {id page}
-| [Publish][]                     | POSTAR /pages/ {id page} / publicar
+| [Listar páginas][]                  | OBTER/Pages
+| [Obter página][]                    | OBTER/Pages/{Page-ID}
+| [Create][]                      | POSTAR/Pages
+| [Excluir][]                      | EXCLUIR/Pages/{Page-ID}
+| [Publish][]                     | POSTAR/Pages/{Page-ID}/Publish
 
 [Listar páginas]: ../api/sitepage-list.md
-[Get page]: ../api/sitepage-get.md
+[Obter página]: ../api/sitepage-get.md
 [Create]: ../api/sitepage-create.md
 [Delete]: ../api/sitepage-delete.md
 [Publish]: ../api/sitepage-publish.md
 
 ## <a name="json-representation"></a>Representação JSON
 
-Aqui está uma representação JSON de um recurso de **sitePage** .
+Veja a seguir uma representação JSON de um recurso **sitePage** .
 
 <!--{
   "blockType": "resource",
@@ -75,7 +75,7 @@ Aqui está uma representação JSON de um recurso de **sitePage** .
 
 ## <a name="properties"></a>Propriedades
 
-O recurso de **sitePage** possui as seguintes propriedades.
+O recurso **sitePage** tem as propriedades a seguir.
 
 | Nome da propriedade    | Tipo                         | Descrição
 |:-----------------|:-----------------------------|:---------------------------
@@ -83,21 +83,21 @@ O recurso de **sitePage** possui as seguintes propriedades.
 
 ## <a name="page-content"></a>Conteúdo da página
 
-O recurso de **sitePage** tem os seguintes campos de conteúdo.
+O recurso **sitePage** tem os seguintes campos de conteúdo.
 
 | Nome da propriedade      | Tipo                       | Descrição
 |:-------------------|:---------------------------|:---------------------------
-| title              | string                     | O título da página.
+| title              | cadeia de caracteres                     | O título da página.
 | pageLayout         | string                     | O nome do layout de página da página.
-| Web Parts           | [Web Part][]                | As web parts na página.
+| webParts           | [webPart][]                | As Web Parts na página.
 
 ## <a name="authoring-metadata"></a>Criação de metadados
 
-O recurso de **sitePage** tem os seguintes metadados relacionados a criação. A propriedade publishingState irão refletir a estado como check-out ou publicada de criação de páginas.
+O recurso **sitePage** tem os seguintes metadados relacionados a criação. A propriedade publishingstate refletirá o estado de criação da página, como check-out ou publicada.
 
 | Nome da propriedade          | Tipo                   | Descrição
 |:-----------------------|:-----------------------|:---------------------------
-| publishingState        | [publicationFacet][]   | O status de publicação e a versão de MM.mm da página.
+| publishingState        | [publicationFacet][]   | O status de publicação e a versão do MM.mm da página.
 
 As propriedades a seguir são herdadas do **[baseItem][]**.
 
@@ -114,7 +114,7 @@ As propriedades a seguir são herdadas do **[baseItem][]**.
 
 ## <a name="relationships"></a>Relações
 
-O recurso de **sitePage** não tem relações para outros recursos.
+O recurso **sitePage** não tem relações com outros recursos.
 
 [baseItem]: baseitem.md
 [contentTypeInfo]: contenttypeinfo.md
@@ -126,7 +126,7 @@ O recurso de **sitePage** não tem relações para outros recursos.
 [listItem]: listitem.md
 [publicationFacet]: publicationfacet.md
 [site]: site.md
-[Web Part]: webpart.md
+[webPart]: webpart.md
 
 <!--
 {

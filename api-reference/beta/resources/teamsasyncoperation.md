@@ -1,38 +1,38 @@
 ---
-title: tipo de recurso de teamsAsyncOperation
-description: 'Uma operação assíncrona de Teams da Microsoft é uma operação que transcende o tempo de vida de uma única solicitação de API. '
+title: tipo de recurso teamsAsyncOperation
+description: 'Uma operação assíncrona do Microsoft Teams é uma operação que transcende o tempo de vida de uma única solicitação de API. '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 61c26b0d594ccdbad8020557f60c6f6b23a83254
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513456"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581549"
 ---
-# <a name="teamsasyncoperation-resource-type"></a>tipo de recurso de teamsAsyncOperation
+# <a name="teamsasyncoperation-resource-type"></a>tipo de recurso teamsAsyncOperation
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Uma operação assíncrona de Teams da Microsoft é uma operação que transcende o tempo de vida de uma única solicitação de API. Essas operações são muito caro concluir dentro do período de tempo de sua solicitação de origem ou de longa execução.
+Uma operação assíncrona do Microsoft Teams é uma operação que transcende o tempo de vida de uma única solicitação de API. Essas operações são de longa duração ou muito caras para concluir dentro do prazo de sua solicitação de origem.
 
-Quando é iniciada uma operação assíncrona, o método retornará um código de resposta 202 aceitos. A resposta conterá também um cabeçalho de local, que contém a localização do teamsAsyncOperation. Verificar periodicamente o status da operação, tornando uma solicitação GET para este local; Aguarde >30 segundos entre as verificações.
-Quando a solicitação for concluída com êxito, o status será "sucedido" e o targetResourceLocation apontará para o recurso criado/modificado.
+Quando uma operação assíncrona é iniciada, o método retorna um código de resposta aceito 202. A resposta também conterá um cabeçalho de local, que contém o local do teamsAsyncOperation. Verifique periodicamente o status da operação fazendo uma solicitação GET para este local; Aguarde >30 segundos entre as verificações.
+Quando a solicitação for concluída com êxito, o status será "bem-sucedido" e o targetResourceLocation apontará para o recurso criado/modificado.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade | Tipo   | Descrição |
 |:---------------|:--------|:----------|
-|id|string |Id exclusiva de operação.|
-|operationType|[teamsAsyncOperationType](teamsasyncoperationtype.md) |Indica qual tipo de operação está sendo descrito.|
+|id|string |ID de operação exclusiva.|
+|OperationType|[teamsAsyncOperationType](teamsasyncoperationtype.md) |Indica o tipo de operação que está sendo descrito.|
 |createdDateTime|DateTimeOffset |Hora em que a operação foi criada.|
-|status|[teamsAsyncOperationStatus](teamsasyncoperationstatus.md)| Status de operação.|
-|lastActionDateTime|DateTimeOffset |Hora de quando a operação assíncrona foi atualizada pela última vez.|
-|attemptsCount|Int32|Número de vezes que a operação foi tentada antes de serem marcadas com êxito ou falha.|
-|targetResourceId|Guid |A identificação do objeto que tenha criado ou modificado como resultado dessa operação assíncrona, geralmente uma [equipe](../resources/team.md).|
-|targetResourceLocation|string|O local do objeto que tenha criado ou modificado como resultado dessa operação assíncrona. Essa URL deve ser tratado como um valor opaco e não analisado em caminhos de seus componentes.|
-|erro|[operationError](operationerror.md)|Qualquer erro que faz com que a operação assíncrona falhe.|
+|status|[teamsAsyncOperationStatus](teamsasyncoperationstatus.md)| Status da operação.|
+|lastActionDateTime|DateTimeOffset |Hora em que a operação assíncrona foi atualizada pela última vez.|
+|attemptsCount|Int32|Número de vezes em que a operação foi tentada antes de ser marcada com êxito ou falhou.|
+|targetResourceId|#c0 |A ID do objeto que é criado ou modificado como resultado dessa operação assíncrona, normalmente uma [equipe](../resources/team.md).|
+|targetResourceLocation|string|O local do objeto que é criado ou modificado como resultado dessa operação assíncrona. Essa URL deve ser tratada como um valor opaco e não analisada em seus caminhos de componente.|
+|erro|[operationError](operationerror.md)|Qualquer erro que causa falha na operação assíncrona.|
 
 ## <a name="json-representation"></a>Representação JSON
 

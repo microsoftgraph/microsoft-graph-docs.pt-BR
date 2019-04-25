@@ -2,20 +2,20 @@
 author: psampath
 ms.author: psampath
 ms.date: 06/20/2018
-title: StoragePlanInformation
+title: Adicionadostorageplaninformation
 localization_priority: Normal
 ms.openlocfilehash: 05140b3256e434449d663c4992e74298bbdedd30
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519231"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582082"
 ---
-# <a name="storageplaninformation-resource-type"></a>tipo de recurso de storagePlanInformation
+# <a name="storageplaninformation-resource-type"></a>tipo de recurso Adicionadostorageplaninformation
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O recurso de **storagePlanInformation** fornece informações sobre os planos de cota de armazenamento da unidade.
+O recurso **adicionadostorageplaninformation** fornece informações sobre os planos de cota de armazenamento da unidade.
 
 ### <a name="json-representation"></a>Representação JSON
 
@@ -35,7 +35,7 @@ O recurso de **storagePlanInformation** fornece informações sobre os planos de
 
 | Nome da propriedade     | Tipo      | Descrição                                                             |
 |:------------------|:----------|:----------------------------------------------------------------------- |
-| upgradeAvailable  | Booliano   | Indica se os planos de cota de armazenamento mais estarão disponíveis. Somente leitura. |
+| upgradeAvailable  | Booliano   | Indica se há planos de cota de armazenamento mais altos disponíveis. Somente leitura. |
 
 
 <!--
