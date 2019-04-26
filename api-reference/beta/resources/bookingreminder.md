@@ -4,30 +4,30 @@ description: " > **Importante:** as APIs na versão /beta no Microsoft Graph est
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 0e5188a5a440134d11404c102b4641fc98cad04f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 18265a9d9e86b79706b6a268df3b8512b7b65111
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535473"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328195"
 ---
-# <a name="bookingreminder-resource-type"></a><span data-ttu-id="6b67f-104">tipo de recurso bookingReminder</span><span class="sxs-lookup"><span data-stu-id="6b67f-104">bookingReminder resource type</span></span>
+# <a name="bookingreminder-resource-type"></a><span data-ttu-id="5cb14-104">tipo de recurso bookingReminder</span><span class="sxs-lookup"><span data-stu-id="5cb14-104">bookingReminder resource type</span></span>
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-<span data-ttu-id="6b67f-105">Representa quando e para quem enviar um lembrete de email.</span><span class="sxs-lookup"><span data-stu-id="6b67f-105">Represents when and to whom to send an email reminder.</span></span>
+<span data-ttu-id="5cb14-105">Representa quando e para quem enviar um lembrete de email.</span><span class="sxs-lookup"><span data-stu-id="5cb14-105">Represents when and to whom to send an email reminder.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="6b67f-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="6b67f-106">Properties</span></span>
-| <span data-ttu-id="6b67f-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="6b67f-107">Property</span></span>     | <span data-ttu-id="6b67f-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="6b67f-108">Type</span></span>   |<span data-ttu-id="6b67f-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="6b67f-109">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="5cb14-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="5cb14-106">Properties</span></span>
+| <span data-ttu-id="5cb14-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="5cb14-107">Property</span></span>     | <span data-ttu-id="5cb14-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="5cb14-108">Type</span></span>   |<span data-ttu-id="5cb14-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="5cb14-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="6b67f-110">mensagem</span><span class="sxs-lookup"><span data-stu-id="6b67f-110">message</span></span>|<span data-ttu-id="6b67f-111">String</span><span class="sxs-lookup"><span data-stu-id="6b67f-111">String</span></span>|<span data-ttu-id="6b67f-112">A mensagem no lembrete.</span><span class="sxs-lookup"><span data-stu-id="6b67f-112">The message in the reminder.</span></span>|
-|<span data-ttu-id="6b67f-113">partida</span><span class="sxs-lookup"><span data-stu-id="6b67f-113">offset</span></span>|<span data-ttu-id="6b67f-114">Duração</span><span class="sxs-lookup"><span data-stu-id="6b67f-114">Duration</span></span>|<span data-ttu-id="6b67f-115">O período de tempo antes do início de um compromisso para o qual o lembrete deve ser enviado.</span><span class="sxs-lookup"><span data-stu-id="6b67f-115">The amount of time before the start of an appointment that the reminder should be sent.</span></span> <span data-ttu-id="6b67f-116">Ele é indicado no formato [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) .</span><span class="sxs-lookup"><span data-stu-id="6b67f-116">It's denoted in [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format.</span></span>|
-|<span data-ttu-id="6b67f-117">destinatários</span><span class="sxs-lookup"><span data-stu-id="6b67f-117">recipients</span></span>|<span data-ttu-id="6b67f-118">String</span><span class="sxs-lookup"><span data-stu-id="6b67f-118">String</span></span>| <span data-ttu-id="6b67f-119">As pessoas que shouold receberão o lembrete.</span><span class="sxs-lookup"><span data-stu-id="6b67f-119">The persons who shouold receive the reminder.</span></span> <span data-ttu-id="6b67f-120">Os valores possíveis são: `allAttendees`, `staff`, `customer`.</span><span class="sxs-lookup"><span data-stu-id="6b67f-120">Possible values are: `allAttendees`, `staff`, `customer`.</span></span>|
+|<span data-ttu-id="5cb14-110">mensagem</span><span class="sxs-lookup"><span data-stu-id="5cb14-110">message</span></span>|<span data-ttu-id="5cb14-111">String</span><span class="sxs-lookup"><span data-stu-id="5cb14-111">String</span></span>|<span data-ttu-id="5cb14-112">A mensagem no lembrete.</span><span class="sxs-lookup"><span data-stu-id="5cb14-112">The message in the reminder.</span></span>|
+|<span data-ttu-id="5cb14-113">partida</span><span class="sxs-lookup"><span data-stu-id="5cb14-113">offset</span></span>|<span data-ttu-id="5cb14-114">Duração</span><span class="sxs-lookup"><span data-stu-id="5cb14-114">Duration</span></span>|<span data-ttu-id="5cb14-115">O período de tempo antes do início de um compromisso para o qual o lembrete deve ser enviado.</span><span class="sxs-lookup"><span data-stu-id="5cb14-115">The amount of time before the start of an appointment that the reminder should be sent.</span></span> <span data-ttu-id="5cb14-116">Ele é indicado no formato [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) .</span><span class="sxs-lookup"><span data-stu-id="5cb14-116">It's denoted in [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format.</span></span>|
+|<span data-ttu-id="5cb14-117">destinatários</span><span class="sxs-lookup"><span data-stu-id="5cb14-117">recipients</span></span>|<span data-ttu-id="5cb14-118">String</span><span class="sxs-lookup"><span data-stu-id="5cb14-118">String</span></span>| <span data-ttu-id="5cb14-119">As pessoas que shouold receberão o lembrete.</span><span class="sxs-lookup"><span data-stu-id="5cb14-119">The persons who shouold receive the reminder.</span></span> <span data-ttu-id="5cb14-120">Os valores possíveis são: `allAttendees`, `staff`, `customer`.</span><span class="sxs-lookup"><span data-stu-id="5cb14-120">Possible values are: `allAttendees`, `staff`, `customer`.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="6b67f-121">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="6b67f-121">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="5cb14-121">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="5cb14-121">JSON representation</span></span>
 
-<span data-ttu-id="6b67f-122">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="6b67f-122">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="5cb14-122">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="5cb14-122">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -55,8 +55,6 @@ ms.locfileid: "32535473"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/bookingreminder.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -2,50 +2,50 @@
 title: Substituições de lista
 description: Obtenha as substituições de caixa de entrada destaques que um usuário configurou para sempre classificar as mensagens de determinados remetentes de maneiras específicas.
 localization_priority: Normal
-ms.openlocfilehash: a49d47e39caff5c00981d02551b0eeb564239f73
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9b88862ea1744eb9447526296bb5e77cae2960c7
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32501277"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328522"
 ---
-# <a name="list-overrides"></a><span data-ttu-id="12821-103">Substituições de lista</span><span class="sxs-lookup"><span data-stu-id="12821-103">List overrides</span></span>
+# <a name="list-overrides"></a><span data-ttu-id="9c5f2-103">Substituições de lista</span><span class="sxs-lookup"><span data-stu-id="9c5f2-103">List overrides</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="12821-104">Obtenha as substituições de [caixa de entrada destaques](../resources/manage-focused-inbox.md) que um usuário configurou para sempre classificar as mensagens de determinados remetentes de maneiras específicas.</span><span class="sxs-lookup"><span data-stu-id="12821-104">Get the [Focused Inbox](../resources/manage-focused-inbox.md) overrides that a user has set up to always classify messages from certain senders in specific ways.</span></span>
+<span data-ttu-id="9c5f2-104">Obtenha as substituições de [caixa de entrada destaques](../resources/manage-focused-inbox.md) que um usuário configurou para sempre classificar as mensagens de determinados remetentes de maneiras específicas.</span><span class="sxs-lookup"><span data-stu-id="9c5f2-104">Get the [Focused Inbox](../resources/manage-focused-inbox.md) overrides that a user has set up to always classify messages from certain senders in specific ways.</span></span>
 
-<span data-ttu-id="12821-105">Cada substituição corresponde a um endereço SMTP de um remetente.</span><span class="sxs-lookup"><span data-stu-id="12821-105">Each override corresponds to an SMTP address of a sender.</span></span> <span data-ttu-id="12821-106">Inicialmente, um usuário não tem quaisquer substituições.</span><span class="sxs-lookup"><span data-stu-id="12821-106">Initially, a user does not have any overrides.</span></span>
-## <a name="permissions"></a><span data-ttu-id="12821-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="12821-107">Permissions</span></span>
-<span data-ttu-id="12821-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="12821-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="9c5f2-105">Cada substituição corresponde a um endereço SMTP de um remetente.</span><span class="sxs-lookup"><span data-stu-id="9c5f2-105">Each override corresponds to an SMTP address of a sender.</span></span> <span data-ttu-id="9c5f2-106">Inicialmente, um usuário não tem quaisquer substituições.</span><span class="sxs-lookup"><span data-stu-id="9c5f2-106">Initially, a user does not have any overrides.</span></span>
+## <a name="permissions"></a><span data-ttu-id="9c5f2-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="9c5f2-107">Permissions</span></span>
+<span data-ttu-id="9c5f2-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9c5f2-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="12821-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="12821-110">Permission type</span></span>      | <span data-ttu-id="12821-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="12821-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="9c5f2-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="9c5f2-110">Permission type</span></span>      | <span data-ttu-id="9c5f2-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="9c5f2-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="12821-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="12821-112">Delegated (work or school account)</span></span> | <span data-ttu-id="12821-113">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="12821-113">Mail.Read</span></span>    |
-|<span data-ttu-id="12821-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="12821-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="12821-115">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="12821-115">Mail.Read</span></span>    |
-|<span data-ttu-id="12821-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="12821-116">Application</span></span> | <span data-ttu-id="12821-117">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="12821-117">Mail.Read</span></span> |
+|<span data-ttu-id="9c5f2-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="9c5f2-112">Delegated (work or school account)</span></span> | <span data-ttu-id="9c5f2-113">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="9c5f2-113">Mail.Read</span></span>    |
+|<span data-ttu-id="9c5f2-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="9c5f2-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9c5f2-115">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="9c5f2-115">Mail.Read</span></span>    |
+|<span data-ttu-id="9c5f2-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="9c5f2-116">Application</span></span> | <span data-ttu-id="9c5f2-117">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="9c5f2-117">Mail.Read</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="12821-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="12821-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9c5f2-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="9c5f2-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/inferenceClassification/overrides
 GET /users/{id}/inferenceClassification/overrides
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="12821-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="12821-119">Request headers</span></span>
-| <span data-ttu-id="12821-120">Nome</span><span class="sxs-lookup"><span data-stu-id="12821-120">Name</span></span>       | <span data-ttu-id="12821-121">Tipo</span><span class="sxs-lookup"><span data-stu-id="12821-121">Type</span></span> | <span data-ttu-id="12821-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="12821-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="9c5f2-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="9c5f2-119">Request headers</span></span>
+| <span data-ttu-id="9c5f2-120">Nome</span><span class="sxs-lookup"><span data-stu-id="9c5f2-120">Name</span></span>       | <span data-ttu-id="9c5f2-121">Tipo</span><span class="sxs-lookup"><span data-stu-id="9c5f2-121">Type</span></span> | <span data-ttu-id="9c5f2-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="9c5f2-122">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="12821-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="12821-123">Authorization</span></span>  | <span data-ttu-id="12821-124">string</span><span class="sxs-lookup"><span data-stu-id="12821-124">string</span></span>  | <span data-ttu-id="12821-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="12821-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="9c5f2-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="9c5f2-123">Authorization</span></span>  | <span data-ttu-id="9c5f2-124">string</span><span class="sxs-lookup"><span data-stu-id="9c5f2-124">string</span></span>  | <span data-ttu-id="9c5f2-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="9c5f2-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="12821-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="12821-127">Request body</span></span>
-<span data-ttu-id="12821-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="12821-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="9c5f2-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="9c5f2-127">Request body</span></span>
+<span data-ttu-id="9c5f2-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="9c5f2-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="12821-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="12821-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="9c5f2-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="9c5f2-129">Response</span></span>
 
-<span data-ttu-id="12821-130">Se bem sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="12821-130">If successful, this method returns a `200 OK` response code and a collection of [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="12821-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="12821-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="12821-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="12821-132">Request</span></span>
-<span data-ttu-id="12821-133">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="12821-133">Here is an example of the request.</span></span>
+<span data-ttu-id="9c5f2-130">Se bem sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="9c5f2-130">If successful, this method returns a `200 OK` response code and a collection of [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="9c5f2-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="9c5f2-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="9c5f2-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="9c5f2-132">Request</span></span>
+<span data-ttu-id="9c5f2-133">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="9c5f2-133">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_overrides"
@@ -53,8 +53,8 @@ GET /users/{id}/inferenceClassification/overrides
 ```http
 GET https://graph.microsoft.com/beta/me/inferenceClassification/overrides
 ```
-##### <a name="response"></a><span data-ttu-id="12821-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="12821-134">Response</span></span>
-<span data-ttu-id="12821-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="12821-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="9c5f2-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="9c5f2-134">Response</span></span>
+<span data-ttu-id="9c5f2-p104">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="9c5f2-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -96,8 +96,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/inferenceclassification-list-overrides.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

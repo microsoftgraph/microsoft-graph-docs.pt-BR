@@ -4,41 +4,41 @@ description: " > **Importante:** as APIs na versão /beta no Microsoft Graph est
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 9d4feac66e72c756173113101a88bf8bbe35563a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6ab74cff24e1f575166f6672523ecc5d94bc1826
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535452"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328218"
 ---
-# <a name="bookingcurrency-resource-type"></a><span data-ttu-id="be678-104">tipo de recurso bookingCurrency</span><span class="sxs-lookup"><span data-stu-id="be678-104">bookingCurrency resource type</span></span>
+# <a name="bookingcurrency-resource-type"></a><span data-ttu-id="e30f7-104">tipo de recurso bookingCurrency</span><span class="sxs-lookup"><span data-stu-id="e30f7-104">bookingCurrency resource type</span></span>
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-<span data-ttu-id="be678-105">Representa uma moeda monetária suportada por um [bookingBusiness](bookingbusiness.md).</span><span class="sxs-lookup"><span data-stu-id="be678-105">Represents a monetary currency supported by a [bookingBusiness](bookingbusiness.md).</span></span>
+<span data-ttu-id="e30f7-105">Representa uma moeda monetária suportada por um [bookingBusiness](bookingbusiness.md).</span><span class="sxs-lookup"><span data-stu-id="e30f7-105">Represents a monetary currency supported by a [bookingBusiness](bookingbusiness.md).</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="be678-106">Métodos</span><span class="sxs-lookup"><span data-stu-id="be678-106">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="e30f7-106">Métodos</span><span class="sxs-lookup"><span data-stu-id="e30f7-106">Methods</span></span>
 
-| <span data-ttu-id="be678-107">Método</span><span class="sxs-lookup"><span data-stu-id="be678-107">Method</span></span>           | <span data-ttu-id="be678-108">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="be678-108">Return Type</span></span>    |<span data-ttu-id="be678-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="be678-109">Description</span></span>|
+| <span data-ttu-id="e30f7-107">Método</span><span class="sxs-lookup"><span data-stu-id="e30f7-107">Method</span></span>           | <span data-ttu-id="e30f7-108">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="e30f7-108">Return Type</span></span>    |<span data-ttu-id="e30f7-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="e30f7-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="be678-110">Listar bookingCurrencies</span><span class="sxs-lookup"><span data-stu-id="be678-110">List bookingCurrencies</span></span>](../api/bookingcurrency-list.md) | <span data-ttu-id="be678-111">coleção [bookingCurrency](bookingcurrency.md)</span><span class="sxs-lookup"><span data-stu-id="be678-111">[bookingCurrency](bookingcurrency.md) collection</span></span> |<span data-ttu-id="be678-112">Obtenha uma lista de objetos **bookingCurrency** disponíveis para uma empresa de livros da Microsoft.</span><span class="sxs-lookup"><span data-stu-id="be678-112">Get a list of **bookingCurrency** objects available to a Microsoft Bookings business.</span></span>|
-|[<span data-ttu-id="be678-113">Obter bookingCurrency</span><span class="sxs-lookup"><span data-stu-id="be678-113">Get bookingCurrency</span></span>](../api/bookingcurrency-get.md) | [<span data-ttu-id="be678-114">bookingCurrency</span><span class="sxs-lookup"><span data-stu-id="be678-114">bookingCurrency</span></span>](bookingcurrency.md) |<span data-ttu-id="be678-115">Obter as propriedades de um objeto **bookingCurrency** .</span><span class="sxs-lookup"><span data-stu-id="be678-115">Get the properties of a **bookingCurrency** object.</span></span>|
+|[<span data-ttu-id="e30f7-110">Listar bookingCurrencies</span><span class="sxs-lookup"><span data-stu-id="e30f7-110">List bookingCurrencies</span></span>](../api/bookingcurrency-list.md) | <span data-ttu-id="e30f7-111">coleção [bookingCurrency](bookingcurrency.md)</span><span class="sxs-lookup"><span data-stu-id="e30f7-111">[bookingCurrency](bookingcurrency.md) collection</span></span> |<span data-ttu-id="e30f7-112">Obtenha uma lista de objetos **bookingCurrency** disponíveis para uma empresa de livros da Microsoft.</span><span class="sxs-lookup"><span data-stu-id="e30f7-112">Get a list of **bookingCurrency** objects available to a Microsoft Bookings business.</span></span>|
+|[<span data-ttu-id="e30f7-113">Obter bookingCurrency</span><span class="sxs-lookup"><span data-stu-id="e30f7-113">Get bookingCurrency</span></span>](../api/bookingcurrency-get.md) | [<span data-ttu-id="e30f7-114">bookingCurrency</span><span class="sxs-lookup"><span data-stu-id="e30f7-114">bookingCurrency</span></span>](bookingcurrency.md) |<span data-ttu-id="e30f7-115">Obter as propriedades de um objeto **bookingCurrency** .</span><span class="sxs-lookup"><span data-stu-id="e30f7-115">Get the properties of a **bookingCurrency** object.</span></span>|
 
 
-## <a name="properties"></a><span data-ttu-id="be678-116">Propriedades</span><span class="sxs-lookup"><span data-stu-id="be678-116">Properties</span></span>
-| <span data-ttu-id="be678-117">Propriedade</span><span class="sxs-lookup"><span data-stu-id="be678-117">Property</span></span>     | <span data-ttu-id="be678-118">Tipo</span><span class="sxs-lookup"><span data-stu-id="be678-118">Type</span></span>   |<span data-ttu-id="be678-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="be678-119">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="e30f7-116">Propriedades</span><span class="sxs-lookup"><span data-stu-id="e30f7-116">Properties</span></span>
+| <span data-ttu-id="e30f7-117">Propriedade</span><span class="sxs-lookup"><span data-stu-id="e30f7-117">Property</span></span>     | <span data-ttu-id="e30f7-118">Tipo</span><span class="sxs-lookup"><span data-stu-id="e30f7-118">Type</span></span>   |<span data-ttu-id="e30f7-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="e30f7-119">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="be678-120">id</span><span class="sxs-lookup"><span data-stu-id="be678-120">id</span></span>|<span data-ttu-id="be678-121">String</span><span class="sxs-lookup"><span data-stu-id="be678-121">String</span></span>| <span data-ttu-id="be678-122">Um código de moeda de 3 caracteres, com base na [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html).</span><span class="sxs-lookup"><span data-stu-id="be678-122">A 3-character currency code, based on [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html).</span></span> <span data-ttu-id="be678-123">Por exemplo, o código de moeda dos Dólar dos EUA é USD, e para o dólar australiano é AUD.</span><span class="sxs-lookup"><span data-stu-id="be678-123">For example, the currency code for the US dollar is USD, and for the Australian dollar is AUD.</span></span> <span data-ttu-id="be678-124">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="be678-124">Read-only.</span></span>|
-|<span data-ttu-id="be678-125">formato</span><span class="sxs-lookup"><span data-stu-id="be678-125">symbol</span></span>|<span data-ttu-id="be678-126">String</span><span class="sxs-lookup"><span data-stu-id="be678-126">String</span></span>| <span data-ttu-id="be678-127">O símbolo da moeda.</span><span class="sxs-lookup"><span data-stu-id="be678-127">The currency symbol.</span></span> <span data-ttu-id="be678-128">Por exemplo, o símbolo de moeda dos dólar americano e para o dólar australiano é $.</span><span class="sxs-lookup"><span data-stu-id="be678-128">For example, the currency symbol for the US dollar and for the Australian dollar is $.</span></span>  |
+|<span data-ttu-id="e30f7-120">id</span><span class="sxs-lookup"><span data-stu-id="e30f7-120">id</span></span>|<span data-ttu-id="e30f7-121">String</span><span class="sxs-lookup"><span data-stu-id="e30f7-121">String</span></span>| <span data-ttu-id="e30f7-122">Um código de moeda de 3 caracteres, com base na [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html).</span><span class="sxs-lookup"><span data-stu-id="e30f7-122">A 3-character currency code, based on [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html).</span></span> <span data-ttu-id="e30f7-123">Por exemplo, o código de moeda dos Dólar dos EUA é USD, e para o dólar australiano é AUD.</span><span class="sxs-lookup"><span data-stu-id="e30f7-123">For example, the currency code for the US dollar is USD, and for the Australian dollar is AUD.</span></span> <span data-ttu-id="e30f7-124">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="e30f7-124">Read-only.</span></span>|
+|<span data-ttu-id="e30f7-125">formato</span><span class="sxs-lookup"><span data-stu-id="e30f7-125">symbol</span></span>|<span data-ttu-id="e30f7-126">String</span><span class="sxs-lookup"><span data-stu-id="e30f7-126">String</span></span>| <span data-ttu-id="e30f7-127">O símbolo da moeda.</span><span class="sxs-lookup"><span data-stu-id="e30f7-127">The currency symbol.</span></span> <span data-ttu-id="e30f7-128">Por exemplo, o símbolo de moeda dos dólar americano e para o dólar australiano é $.</span><span class="sxs-lookup"><span data-stu-id="e30f7-128">For example, the currency symbol for the US dollar and for the Australian dollar is $.</span></span>  |
 
-## <a name="relationships"></a><span data-ttu-id="be678-129">Relações</span><span class="sxs-lookup"><span data-stu-id="be678-129">Relationships</span></span>
-<span data-ttu-id="be678-130">Nenhum</span><span class="sxs-lookup"><span data-stu-id="be678-130">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="e30f7-129">Relações</span><span class="sxs-lookup"><span data-stu-id="e30f7-129">Relationships</span></span>
+<span data-ttu-id="e30f7-130">Nenhum</span><span class="sxs-lookup"><span data-stu-id="e30f7-130">None</span></span>
 
 
-## <a name="json-representation"></a><span data-ttu-id="be678-131">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="be678-131">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="e30f7-131">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="e30f7-131">JSON representation</span></span>
 
-<span data-ttu-id="be678-132">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="be678-132">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="e30f7-132">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="e30f7-132">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -65,8 +65,6 @@ ms.locfileid: "32535452"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/bookingcurrency.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -4,60 +4,60 @@ description: Exclui a linha da tabela.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: e88cb5ae178f5198e1002149aea01734479e7f0e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3fc9d3f85610bae6bd6a4e62f8380eda3d768a3c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32461077"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33330272"
 ---
-# <a name="tablerow-delete"></a><span data-ttu-id="7bd76-103">TableRow: delete</span><span class="sxs-lookup"><span data-stu-id="7bd76-103">TableRow: delete</span></span>
+# <a name="tablerow-delete"></a><span data-ttu-id="05b46-103">TableRow: delete</span><span class="sxs-lookup"><span data-stu-id="05b46-103">TableRow: delete</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="7bd76-104">Exclui a linha da tabela.</span><span class="sxs-lookup"><span data-stu-id="7bd76-104">Deletes the row from the table.</span></span>
-## <a name="permissions"></a><span data-ttu-id="7bd76-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="7bd76-105">Permissions</span></span>
-<span data-ttu-id="7bd76-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7bd76-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="05b46-104">Exclui a linha da tabela.</span><span class="sxs-lookup"><span data-stu-id="05b46-104">Deletes the row from the table.</span></span>
+## <a name="permissions"></a><span data-ttu-id="05b46-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="05b46-105">Permissions</span></span>
+<span data-ttu-id="05b46-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="05b46-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="7bd76-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="7bd76-108">Permission type</span></span>      | <span data-ttu-id="7bd76-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="7bd76-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="05b46-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="05b46-108">Permission type</span></span>      | <span data-ttu-id="05b46-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="05b46-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="7bd76-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="7bd76-110">Delegated (work or school account)</span></span> | <span data-ttu-id="7bd76-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="7bd76-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="7bd76-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="7bd76-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7bd76-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="7bd76-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="7bd76-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="7bd76-114">Application</span></span> | <span data-ttu-id="7bd76-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="7bd76-115">Not supported.</span></span> |
+|<span data-ttu-id="05b46-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="05b46-110">Delegated (work or school account)</span></span> | <span data-ttu-id="05b46-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="05b46-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="05b46-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="05b46-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="05b46-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="05b46-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="05b46-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="05b46-114">Application</span></span> | <span data-ttu-id="05b46-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="05b46-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="7bd76-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="7bd76-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="05b46-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="05b46-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/rows(<index>)/delete
-POST /workbook/worksheets/{id|name}/tables/{id|name}/rows(<index>)/delete
+POST /workbook/tables/{id|name}/rows/{index}/delete
+POST /workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}/delete
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="7bd76-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="7bd76-117">Request headers</span></span>
-| <span data-ttu-id="7bd76-118">Nome</span><span class="sxs-lookup"><span data-stu-id="7bd76-118">Name</span></span>       | <span data-ttu-id="7bd76-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="7bd76-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="05b46-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="05b46-117">Request headers</span></span>
+| <span data-ttu-id="05b46-118">Nome</span><span class="sxs-lookup"><span data-stu-id="05b46-118">Name</span></span>       | <span data-ttu-id="05b46-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="05b46-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="7bd76-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="7bd76-120">Authorization</span></span>  | <span data-ttu-id="7bd76-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="7bd76-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="7bd76-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="7bd76-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="7bd76-p103">ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.</span><span class="sxs-lookup"><span data-stu-id="7bd76-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="05b46-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="05b46-120">Authorization</span></span>  | <span data-ttu-id="05b46-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="05b46-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="05b46-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="05b46-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="05b46-p103">ID de sessão de pasta de trabalho que determina se as alterações são persistentes ou não. Opcional.</span><span class="sxs-lookup"><span data-stu-id="05b46-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="7bd76-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="7bd76-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="05b46-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="05b46-126">Request body</span></span>
 
-## <a name="response"></a><span data-ttu-id="7bd76-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="7bd76-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="05b46-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="05b46-127">Response</span></span>
 
-<span data-ttu-id="7bd76-p104">Se bem-sucedido, este método retorna um código de resposta `200 OK`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="7bd76-p104">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="05b46-p104">Se bem-sucedido, este método retorna um código de resposta `200 OK`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="05b46-p104">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="7bd76-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="7bd76-130">Example</span></span>
-<span data-ttu-id="7bd76-131">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="7bd76-131">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="7bd76-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="7bd76-132">Request</span></span>
-<span data-ttu-id="7bd76-133">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="7bd76-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="05b46-130">Exemplo</span><span class="sxs-lookup"><span data-stu-id="05b46-130">Example</span></span>
+<span data-ttu-id="05b46-131">Eis um exemplo de como chamar esta API.</span><span class="sxs-lookup"><span data-stu-id="05b46-131">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="05b46-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="05b46-132">Request</span></span>
+<span data-ttu-id="05b46-133">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="05b46-133">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "tablerow_delete"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/rows(<index>)/delete
+POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/rows/{index}/delete
 ```
 
-##### <a name="response"></a><span data-ttu-id="7bd76-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="7bd76-134">Response</span></span>
-<span data-ttu-id="7bd76-135">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="7bd76-135">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="05b46-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="05b46-134">Response</span></span>
+<span data-ttu-id="05b46-135">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="05b46-135">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -76,8 +76,6 @@ HTTP/1.1 200 OK
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/tablerow-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->
