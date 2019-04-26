@@ -1,33 +1,33 @@
 ---
-title: tipo de recurso de securityVendorInformation
-description: " subProvider = AppLocker)."
+title: tipo de recurso securityVendorInformation
+description: " subFornecedor = AppLocker)."
 localization_priority: Normal
 author: preetikr
 ms.prod: security
 ms.openlocfilehash: fb5dee36da08332fd5c36f7ee4e578cc9fb7deaa
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27945934"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549696"
 ---
-# <a name="securityvendorinformation-resource-type"></a>tipo de recurso de securityVendorInformation
+# <a name="securityvendorinformation-resource-type"></a>tipo de recurso securityVendorInformation
 
-Contém detalhes sobre o fornecedor de serviço do produto de segurança, o provedor e subprovider (por exemplo, o fornecedor = Microsoft; provider = ATP do Windows Defender; subProvider = AppLocker).
+Contém detalhes sobre o fornecedor de produtos/serviços de segurança, o provedor e o subfornecedor (por exemplo, fornecedor = Microsoft; Provider = Windows Defender ATP; subFornecedor = AppLocker).
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade   | Tipo|Descrição|
 |:---------------|:--------|:----------|
-|provedor |Cadeia de caracteres|Provedor específico (produto ou serviço - não a empresa de fornecedor); Por exemplo, WindowsDefenderATP.|
-|providerVersion|Cadeia de caracteres|Versão do provedor ou subprovider, se ela existir, que gerou o alerta. *Required*|
-|subProvider|Cadeia de caracteres|Subprovider específico (abaixo de agregação de provedor;) Por exemplo, WindowsDefenderATP.SmartScreen.|
-|fornecedor |Cadeia de caracteres|Nome do alerta fornecedor (por exemplo, Microsoft, Dell, FireEye). *Required*|
+|provedor |String|Provedor específico (produto/serviço – empresa de fornecedor); por exemplo, WindowsDefenderATP.|
+|providerVersion|String|Versão do provedor ou do subfornecedor, se existir, que gerou o alerta. *Required*|
+|subprovedor|String|Subfornecedor específico (em provedor de agregação); por exemplo, WindowsDefenderATP. SmartScreen.|
+|fornecedor |String|Nome do fornecedor do alerta (por exemplo, Microsoft, Dell, FireEye). *Required*|
 
 
 ## <a name="json-representation"></a>Representação JSON
 
-A seguinte é uma representação de JSON do recurso.
+O folllowing é uma representação JSON do recurso.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [

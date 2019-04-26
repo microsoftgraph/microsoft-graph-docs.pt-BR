@@ -1,21 +1,21 @@
 ---
-title: Lista agreementAcceptances
-description: Recupere uma lista de objetos de agreementAcceptance de um usuário.
+title: Listar agreementAcceptances
+description: Recupere uma lista de objetos agreementAcceptance de um usuário.
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 22babc13c3b1db4cf143a35ab2119e97c43c822b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517866"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544264"
 ---
-# <a name="list-agreementacceptances"></a>Lista agreementAcceptances
+# <a name="list-agreementacceptances"></a>Listar agreementAcceptances
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Recupere uma lista de objetos de [agreementAcceptance](../resources/agreementacceptance.md) de um usuário.
+Recupere uma lista de objetos [agreementAcceptance](../resources/agreementacceptance.md) de um usuário.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -43,7 +43,7 @@ This method supports the [OData Query Parameters](https://developer.microsoft.co
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
 ## <a name="response"></a>Resposta
-Se tiver êxito, este método retornará um `200 OK` código de resposta e uma coleção de objetos [agreementAcceptance](../resources/agreementacceptance.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [agreementAcceptance](../resources/agreementacceptance.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 <!-- {

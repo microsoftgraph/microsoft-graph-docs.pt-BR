@@ -1,19 +1,19 @@
 ---
-title: tipo de recurso de secureScores
-description: 'superior = n, onde n = o número de dias de dados que você deseja recuperar. '
+title: tipo de recurso secureScores
+description: 'Top = n, onde n = o número de dias de dados que você deseja recuperar. '
 localization_priority: Normal
 ms.openlocfilehash: 8b4be9822b782303efe38dbdf5bd43e1ee543421
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640179"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549188"
 ---
-# <a name="securescores-resource-type"></a>tipo de recurso de secureScores
+# <a name="securescores-resource-type"></a>tipo de recurso secureScores
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa a pontuação seguro de um locatário por dia da pontuação de dados, no nível de locatário e controle. Por padrão, 90 dias de dados é mantido. Esses dados são classificados pelo **createdDateTime**, do mais recente à mais antiga. Isso permitirá que você para respostas da página usando $top = n, onde n = o número de dias de dados que você deseja recuperar. 
+Representa a pontuação segura de um locatário por dia de dados de pontuação, no nível do locatário e do controle. Por padrão, são mantidos 90 dias de dados. Esses dados são classificados por **createdDateTime**, do mais recente para o mais antigo. Isso permitirá respostas de página usando $top = n, onde n = o número de dias de dados que você deseja recuperar. 
 
 
 ## <a name="methods"></a>Métodos
@@ -24,20 +24,20 @@ Representa a pontuação seguro de um locatário por dia da pontuação de dados
 
 
 ## <a name="properties"></a>Propriedades
-Propriedades que contêm de tipo de entidade de segurança locatário pontuação (dados diários de instantâneo).
+Tipo de entidade contendo propriedades da Pontuação de segurança do locatário (dados de instantâneos diários).
 
 |Propriedade |Tipo |Descrição |
 |:--|:--|:--|
-|   azureTenantId   |   String  |   ID de cadeia de caracteres do GUID para o inquilino.  |
+|   azureTenantId   |   String  |   Cadeia de caracteres GUID para ID do locatário.  |
 |   createdDateTime |   DateTimeOffset  |   A data em que a entidade é criada.  |
 |   id  |   String  |   Combinação de azureTenantId_createdDateTime.   |
-|   licensedUserCount   |   Int32   |   Licenciado contagem de usuários do determinado inquilino.    |
-|   activeUserCount |   Int32   |   Contagem de usuário ativo do determinado inquilino.  |
-|   currentScore    |   Duplo  |   Pontuação de locatário atual que já alcançou na data especificada.    |
-|   maxScore |  Duplo  |   Locatário pontuação possíveis máxima na data especificada.    |
-|   enabledServices |   Coleção de cadeias de caracteres   |   Serviços fornecida pela Microsoft para o locatário (por exemplo, Exchange online, Skype, Sharepoint).   |
-|   averageComparativeScores |  coleção [averageComparativeScore](averagecomparativescore.md)    |Pontuação média por escopos diferentes (por exemplo, média por setor, média por assentos) e a categoria de controle (identidade, dados, dispositivo, aplicativos, infra-estrutura) dentro do escopo. |
-|   controlScores | coleção [controlScore](controlscore.md)  |   Contém as pontuações de locatário de um conjunto de controles.   |
+|   licensedUserCount   |   Int32   |   Contagem de usuários licenciados de um determinado locatário.    |
+|   activeUserCount |   Int32   |   Contagem de usuários ativos de um determinado locatário.  |
+|   currentScore    |   Duplo  |   Pontuação Obtida de locatário atual em data especificada.    |
+|   maxScore |  Duplo  |   Pontuação máxima possível de locatário na data especificada.    |
+|   enabledservices |   Coleção de cadeias de caracteres   |   Serviços fornecidos pela Microsoft para o locatário (por exemplo, Exchange Online, Skype, SharePoint).   |
+|   averageComparativeScores |  coleção [averageComparativeScore](averagecomparativescore.md)    |Pontuação média por escopos diferentes (por exemplo, média por setor, média por meio de assentos) e categoria de controle (identidade, dados, dispositivo, aplicativos, infraestrutura) dentro do escopo. |
+|   controlScores | coleção [controlScore](controlscore.md)  |   Contém pontuações de locatários para um conjunto de controles.   |
 
 
 ## <a name="relationships"></a>Relações

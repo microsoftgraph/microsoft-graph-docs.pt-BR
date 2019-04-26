@@ -3,11 +3,11 @@ title: Respostas de erros e tipos de recurso do Microsoft Graph
 description: "  "
 localization_priority: Priority
 ms.openlocfilehash: 6e38985732c95cf928e78aad62d569134c19d8ca
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888988"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32526123"
 ---
 # <a name="microsoft-graph-error-responses-and-resource-types"></a>Respostas de erros e tipos de recurso do Microsoft Graph
 

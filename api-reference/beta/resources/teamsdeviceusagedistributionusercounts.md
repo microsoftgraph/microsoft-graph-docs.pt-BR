@@ -1,17 +1,17 @@
 ---
-title: tipo de recurso de teamsDeviceUsageDistributionUserCounts
+title: tipo de recurso teamsDeviceUsageDistributionUserCounts
 description: Veja a seguir uma representação JSON do recurso.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: d398782cef79cdf92bc56502f7c6cbf1bcdee99d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27979282"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32553607"
 ---
-# <a name="teamsdeviceusagedistributionusercounts-resource-type"></a>tipo de recurso de teamsDeviceUsageDistributionUserCounts
+# <a name="teamsdeviceusagedistributionusercounts-resource-type"></a>tipo de recurso teamsDeviceUsageDistributionUserCounts
 
 ## <a name="properties"></a>Propriedades
 
@@ -19,12 +19,12 @@ ms.locfileid: "27979282"
 | :---------------- | :----- |
 | reportRefreshDate | Data   |
 | web               | Int64  |
-| windowsPhone      | Int64  |
+| Windowsphonee      | Int64  |
 | androidPhone      | Int64  |
-| IOS               | Int64  |
+| emiti               | Int64  |
 | mac               | Int64  |
 | Windows           | Int64  |
-| reportPeriod      | Cadeia de caracteres |
+| reportPeriod      | String |
 
 ## <a name="json-representation"></a>Representação JSON
 

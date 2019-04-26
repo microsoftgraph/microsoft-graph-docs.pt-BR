@@ -1,28 +1,28 @@
 ---
-title: tipo de recurso de informationalUrl
-description: Informações básicas de perfil do aplicativo.
+title: tipo de recurso informationalUrl
+description: Informações de perfil básicas do aplicativo.
 localization_priority: Normal
 ms.openlocfilehash: 5085c144045631c530cbb66f5e1f27186a63b380
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513645"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548702"
 ---
-# <a name="informationalurl-resource-type"></a>tipo de recurso de informationalUrl
+# <a name="informationalurl-resource-type"></a>tipo de recurso informationalUrl
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Informações básicas de perfil do aplicativo.
+Informações de perfil básicas do aplicativo.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
 |Marketing|String| Link para a página de marketing do aplicativo. Por exemplo, https://www.contoso.com/app/marketing |
-|Privacidade.|String| Link para a declaração de privacidade do aplicativo. Por exemplo, https://www.contoso.com/app/privacy |
-|Suporte|String| Link para a página de suporte do aplicativo. Por exemplo, https://www.contoso.com/app/support |
-|termsOfService|String| Link para os termos do aplicativo de instrução de serviço. Por exemplo, https://www.contoso.com/app/termsofservice |
+|declaração|String| Link para a política de privacidade do aplicativo. Por exemplo, https://www.contoso.com/app/privacy |
+|à|String| Link para a página de suporte do aplicativo. Por exemplo, https://www.contoso.com/app/support |
+|termsOfService|String| Link para a instrução de termos de serviço do aplicativo. Por exemplo, https://www.contoso.com/app/termsofservice |
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

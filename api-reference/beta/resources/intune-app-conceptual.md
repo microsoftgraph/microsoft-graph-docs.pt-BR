@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: 360b8e9bdda139246a5418898f1db3962fefaea4
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31806563"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32552405"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Como proteger dados de aplicativos corporativos com o Microsoft Intune
 
@@ -82,8 +82,8 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar políticas de 
 - [Licença atribuída ao aplicativo do VPP do macOS](intune-apps-macosvppappassignedlicense.md)
 - [Configurações de atribuição do aplicativo VPP do macOS](intune-apps-macosvppappassignmentsettings.md)
 - [Resultado da ação de revogar licenças de aplicativo do VPP do macOS](intune-apps-macosvppapprevokelicensesactionresult.md)
-- [Aplicativo LOB para Android gerenciado](intune-apps-managedandroidlobapp.md)
-- [Aplicativo da loja do Android gerenciado](intune-apps-managedandroidstoreapp.md)
+- [Aplicativo LOB do android gerenciado](intune-apps-managedandroidlobapp.md)
+- [Aplicativo da loja do android gerenciado](intune-apps-managedandroidstoreapp.md)
 - [Aplicativo gerenciado](intune-apps-managedapp.md)
 - [Disponibilidade do aplicativo gerenciado](intune-apps-managedappavailability.md)
 - [Configuração do aplicativo de dispositivo móvel gerenciado](intune-apps-manageddevicemobileappconfiguration.md)

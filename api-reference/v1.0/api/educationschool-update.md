@@ -5,11 +5,11 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: aa26a34013ddd20925c7063595d5d57980e0c516
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27977637"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550053"
 ---
 # <a name="update-educationschool-properties"></a>Atualizar as propriedades educationschool
 
@@ -36,20 +36,20 @@ PATCH /education/schools/{id}
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações em outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
+No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|displayName| Cadeia de caracteres| Nome de exibição da escola| 
-|description| Cadeia de caracteres | Descrição da escola| 
-|principalEmail| Cadeia de caracteres| Endereço de email da entidade de segurança|
-|principalName| Cadeia de caracteres | Nome da entidade de segurança|
-|externalPrincipalId| Cadeia de caracteres | ID da entidade de segurança no sistema de sincronização. |
-|highestGrade|Cadeia de caracteres| Ensino de nível mais alto. |
-|lowestGrade|Cadeia de caracteres| Ensino de nível mais baixo. |
-|schoolNumber|Cadeia de caracteres| Número da escola.|
-|externalId|Cadeia de caracteres| ID da escola no sistema de sincronização. |
-|phone|Cadeia de caracteres| Número de telefone da escola. |
+|displayName| String| Nome de exibição da escola| 
+|description| String | Descrição da escola| 
+|principalEmail| String| Endereço de email da entidade de segurança|
+|principalName| String | Nome da entidade de segurança|
+|externalPrincipalId| String | ID da entidade de segurança no sistema de sincronização. |
+|highestGrade|String| Ensino de nível mais alto. |
+|lowestGrade|String| Ensino de nível mais baixo. |
+|schoolNumber|String| Número da escola.|
+|externalId|String| ID da escola no sistema de sincronização. |
+|phone|String| Número de telefone da escola. |
 |fax|Cadeia de caracteres| Número de fax da escola. |
 |address|[physicalAddress](../resources/physicaladdress.md)| Endereço da escola.|
 |createdBy|[identitySet](../resources/identityset.md)|Entidade que criou a escola.|

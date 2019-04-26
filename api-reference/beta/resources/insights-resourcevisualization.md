@@ -1,21 +1,21 @@
 ---
-title: tipo de recurso de resourceVisualization
-description: Tipo complexo que contém propriedades de ideias.
+title: tipo de recurso resourceVisualization
+description: Tipo complexo contendo propriedades de insights.
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
 ms.openlocfilehash: 48ec1619d07d0f31bf8325c25b161084f505b3ee
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641292"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550732"
 ---
-# <a name="resourcevisualization-resource-type"></a>tipo de recurso de resourceVisualization
+# <a name="resourcevisualization-resource-type"></a>tipo de recurso resourceVisualization
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Tipo complexo que contém propriedades de [ideias](insights.md).
+Tipo complexo contendo propriedades de [](insights.md)insights.
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -38,20 +38,20 @@ Veja a seguir uma representação JSON do recurso
 
 | Propriedade              | Tipo          | Descrição  |
 | -------------         |---------------| -------------|
-| title                 | String        | Texto do título do item.               |
-| type              | String        | Tipo de mídia do item. Pode ser usado para filtrar para um arquivo específico com base em um tipo específico. Veja abaixo tipos suportados. |
-| mediaType             | String        | Tipo de mídia do item. Pode ser usado para filtragem para um tipo específico de arquivo com base em tipos de Mime de mídia IANA suportados. Observe que nem todos os tipos de Mime de mídia são suportados. |
-| previewImageUrl       | String        | Uma URL, levando a imagem de visualização para o item. |
+| title                 | String        | O texto do título do item.               |
+| type              | String        | O tipo de mídia do item. Pode ser usado para filtrar um arquivo específico com base em um tipo específico. Veja abaixo os tipos suportados. |
+| Mídia             | String        | O tipo de mídia do item. Pode ser usado para filtragem para um tipo específico de arquivo baseado em tipos MIME de mídias da IANA compatíveis. Observe que nem todos os tipos de MIME de mídia têm suporte. |
+| previewImageUrl       | String        | Uma URL que leva à imagem de visualização do item. |
 | previewText           | String        | Um texto de visualização para o item. |
-| containerWebUrl       | String        | Um caminho que leva à pasta na qual o item está armazenado. |
-| containerDisplayName  | String        | Uma cadeia de caracteres que descreve onde o item é armazenado. Por exemplo, o nome de um site do SharePoint ou o nome de usuário que identifica o proprietário do OneDrive armazenar o item.  |
-| containerType         | String | Pode ser usado para filtrar por tipo de contêiner no qual o arquivo está armazenado. Como o Site ou OneDriveBusiness.       |
+| containerWebUrl       | String        | Um caminho que conduz à pasta na qual o item está armazenado. |
+| containerDisplayName  | String        | Uma cadeia de caracteres que descreve onde o item é armazenado. Por exemplo, o nome de um site do SharePoint ou o nome de usuário que identifica o proprietário do OneDrive que armazena o item.  |
+| containerType         | String | Pode ser usado para filtragem pelo tipo de contêiner no qual o arquivo está armazenado. Como site ou OneDriveBusiness.       |
 
-## <a name="type-property-values"></a>Valores de tipo de propriedade
+## <a name="type-property-values"></a>Valores de propriedade Type
 -   PowerPoint
 -   Word
 -   Excel
--   PDF
+-   Documento
 -   OneNote
 -   OneNotePage
 -   InfoPath
@@ -60,8 +60,8 @@ Veja a seguir uma representação JSON do recurso
 -   Project
 -   Access
 -   Email
--   CSV
--   Arquivo morto
+-   Limit
+-   Arquivo
 -   XPS
 -   Áudio
 -   Vídeo
@@ -69,20 +69,20 @@ Veja a seguir uma representação JSON do recurso
 -   Web
 -   Texto
 -   Xml
--   Story
+-   História
 -   ExternalContent
 -   Folder
--   Other
+-   Outros
 
 Consulta de exemplo:`https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
-## <a name="containertype-property-values"></a>valores de propriedade containerType
-Os tipos suportados podem variar, dependendo em contêineres do qual a [percepção](insights.md) retorna os arquivos. Por exemplo, apenas o insight [compartilhados](insights-shared.md) retorna arquivos do 'Recados', 'Caixa' e 'GDrive'.
+## <a name="containertype-property-values"></a>valores da Propriedade ContainerType
+Os tipos com suporte podem diferir com base nos contêineres dos quais a [percepção](insights.md) retorna arquivos. Por exemplo, somente a percepção [compartilhada](insights-shared.md) retorna arquivos de "Dropbox", "box" e "GDrive".
 
 -   OneDriveBusiness
 -   Site
 -   Email
--   Pasta de recados
+-   DropBox
 -   Caixa
 -   GDrive
 

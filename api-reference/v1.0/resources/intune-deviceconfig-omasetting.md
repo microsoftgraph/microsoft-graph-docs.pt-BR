@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 6d0a69c10f1f0075caee48276bdbc37f6d616f22
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30253376"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549549"
 ---
 # <a name="omasetting-resource-type"></a>Tipo de recurso omaSetting
 
@@ -21,7 +21,7 @@ Configurações de OMA.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |displayName|String|Nome de exibição.|
-|descrição|String|Descrição.|
+|description|String|Descrição.|
 |omaUri|Cadeia de caracteres|OMA.|
 
 ## <a name="relationships"></a>Relações

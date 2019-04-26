@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: bc068892b37eb3b3e3ce29cfbc2ce8c8e1aaf2da
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31785535"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548492"
 ---
 # <a name="updateclassification-enum-type"></a>tipo de enumeração updateClassification
 
@@ -23,9 +23,9 @@ Valores possíveis para classificação de atualização automática.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |userDefined|,0|Definido pelo usuário, valor padrão, sem intenção.|
-|recommendedAndImportant|1|Recomendado e importante.|
-|Important|duas|Important.|
-|nenhuma|3D|Nenhum.|
+|recommendedAndImportant|1 |Recomendado e importante.|
+|Important|2 |Important.|
+|Nenhuma|3 |Nenhum|
 
 
 

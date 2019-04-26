@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 36571d1cefbedfb0da37c018755356e3354ad777
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31778940"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549395"
 ---
 # <a name="certificatedestinationstore-enum-type"></a>tipo de enumeração certificateDestinationStore
 
@@ -23,8 +23,8 @@ Valores possíveis para o repositório de destino do certificado.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |computerCertStoreRoot|,0|Repositório de certificados do computador-raiz.|
-|computerCertStoreIntermediate|1|Repositório de certificados do computador-intermediário.|
-|userCertStoreIntermediate|duas|Repositório de certificados do usuário-intermediário.|
+|computerCertStoreIntermediate|1 |Repositório de certificados do computador-intermediário.|
+|userCertStoreIntermediate|2 |Repositório de certificados do usuário-intermediário.|
 
 
 

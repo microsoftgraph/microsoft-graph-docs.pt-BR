@@ -1,21 +1,21 @@
 ---
 title: insightIdentity
-description: Tipo complexo que contém as propriedades de itens compartilhados.
+description: Tipo complexo contendo propriedades de itens compartilhados.
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
 ms.openlocfilehash: 45ac8874a30ebb4f3196f03a675229bf1fab750c
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643885"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549563"
 ---
 # <a name="insightidentity"></a>insightIdentity
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Tipo complexo que contém as propriedades de itens [compartilhados](insights-shared.md) . 
+Tipo complexo contendo propriedades de itens [compartilhados](insights-shared.md) . 
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso
@@ -32,9 +32,9 @@ Veja a seguir uma representação JSON do recurso
 
 | Propriedade              | Tipo          | Descrição  |
 | -------------         |-----------    | -------------|
-| displayName       | String          | O nome de exibição do usuário que shared o item. |
-| id              | String        | A identificação do usuário que shared o item.     |
-| address             | Cadeia de caracteres      | O endereço de email do usuário que shared o item.  |
+| displayName       | String          | O nome de exibição do usuário que compartilhou o item. |
+| id              | String        | A ID do usuário que compartilhou o item.     |
+| address             | Cadeia de caracteres      | O endereço de email do usuário que compartilhou o item.  |
 <!--
 {
   "type": "#page.annotation",

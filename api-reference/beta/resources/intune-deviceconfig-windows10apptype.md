@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 92db52bc993446dc59e9bac95a9e6ea39785fe07
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31781516"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32572231"
 ---
 # <a name="windows10apptype-enum-type"></a>tipo de enumeração windows10AppType
 
@@ -23,7 +23,7 @@ Tipo de aplicativo do Windows 10.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |placa|,0|Placa.|
-|UTC|1|UTC.|
+|UTC|1 |UTC.|
 
 
 
