@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: de4360ce5a8873fde7d3286f55fc0c8993936a7c
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30260001"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32571874"
 ---
 # <a name="mimecontent-resource-type"></a>Tipo de recurso mimeContent
 
@@ -21,7 +21,7 @@ Contém as propriedades de um conteúdo genérico MIME.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |type|String|Indica o tipo de conteúdo MIME.|
-|valor|Binária|A matriz de byte que contém o conteúdo atual.|
+|value|Binária|A matriz de byte que contém o conteúdo atual.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

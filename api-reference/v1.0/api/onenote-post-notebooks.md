@@ -1,19 +1,21 @@
 ---
-title: Criar bloco de anotações
-description: Crie um novo bloco de anotações do OneNote.
+title: Criar blocos de anotações
+description: Criar um novo bloco de anotações do OneNote.
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 ms.openlocfilehash: 417d4ffc4e64d0b941da4316e574f6e819577c91
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27931605"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562108"
 ---
-# <a name="create-notebook"></a>Criar bloco de anotações
+# <a name="create-notebook"></a>Criar blocos de anotações
 
-Crie um novo [bloco de anotações](../resources/notebook.md) do OneNote.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Criar um novo [bloco de anotações](../resources/notebook.md)do OneNote.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -40,11 +42,11 @@ POST /sites/{id}/onenote/notebooks
 ## <a name="request-body"></a>Corpo da solicitação
 No corpo da solicitação, forneça um nome para o bloco de anotações. 
 
-Os nomes dos blocos de anotações devem ser exclusivos. O nome não pode conter mais de 128 caracteres ou conter os seguintes caracteres:  ?*\/:<>|'"
+Os nomes dos blocos de anotações devem ser exclusivos. O nome não pode conter mais de 128 caracteres ou conter os seguintes caracteres: ?\/*: <> | ' "
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [notebook](../resources/notebook.md) no corpo da resposta.
+Se tiver êxito, este método retornará `201 Created` um código de resposta e o novo objeto [Notebook](../resources/notebook.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -54,7 +56,7 @@ Este é um exemplo da solicitação.
   "name": "create_notebook_from_onenote"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/onenote/notebooks
+POST https://graph.microsoft.com/beta/me/onenote/notebooks
 Content-type: application/json
 Content-length: 30
 
@@ -79,6 +81,7 @@ Content-length: 284
   "isDefault": true,
   "userRole": {
   },
+  "id": "8fcb5dbc-d5aa-4681-8e31-b001d5168d79",
   "isShared": true,
   "sectionsUrl": "sectionsUrl-value",
   "sectionGroupsUrl": "sectionGroupsUrl-value",
@@ -95,10 +98,13 @@ Content-length: 284
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create Notebook",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

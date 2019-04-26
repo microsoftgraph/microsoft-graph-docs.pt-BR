@@ -1,21 +1,21 @@
 ---
 title: tipo de recurso post
-description: Representa um item de postagem individuais dentro de uma entidade converstaionThread.
+description: Representa um item de postagem individual em uma entidade converstaionThread.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 554892bdfed45d0fba9b90a084db67c0bb329486
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643598"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563585"
 ---
 # <a name="post-resource-type"></a>tipo de recurso post
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa um item de postagem individuais dentro de uma entidade [converstaionThread](conversationthread.md) .
+Representa um item de postagem individual em uma entidade [converstaionThread](conversationthread.md) .
 
 Embora você não possa criar explicitamente uma postagem, seguir um destes procedimentos criaria uma postagem:
 
@@ -39,6 +39,8 @@ Veja a seguir uma representação JSON do recurso
     "multiValueExtendedProperties",
     "singleValueExtendedProperties"
   ],
+  "keyProperty": "id",
+  "baseType":"microsoft.graph.entity",
   "@odata.type": "microsoft.graph.post"
 }-->
 
@@ -65,7 +67,7 @@ Veja a seguir uma representação JSON do recurso
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |corpo|[itemBody](itembody.md)|O conteúdo da postagem. Esta é uma propriedade padrão. Esta propriedade pode ser nula.|
-|categories|Coleção de cadeias de caracteres|As categorias associadas à postagem. Cada categoria corresponde à propriedade **displayName** de um [outlookCategory](outlookcategory.md) que tenha sido definido para um usuário.|
+|categories|Coleção de cadeias de caracteres|As categorias associadas à postagem. Cada categoria corresponde à propriedade **DisplayName** de um [outlookCategory](outlookcategory.md) que foi definido para um usuário.|
 |changeKey|String|Identifica a versão da postagem. Toda vez que a postagem muda, ChangeKey também muda. Isso permite que o Exchange aplique alterações na versão correta do objeto.|
 |conversationId|String|ID exclusiva da conversa. Somente leitura.|
 |conversationThreadId|String|ID exclusiva do thread de conversa. Somente leitura.|
@@ -73,7 +75,7 @@ Veja a seguir uma representação JSON do recurso
 |from|[recipient](recipient.md)|Usado em cenários de acesso de representante. Indica quem postou a mensagem em nome de outro usuário. Esta é uma propriedade padrão.|
 |hasAttachments|Booliano|Indica se a postagem tem pelo menos um anexo. Esta é uma propriedade padrão.|
 |id|String| Somente leitura.|
-|importance | String | A importância de uma postagem de grupo: `low`, `normal`, `high`. |
+|importance | Cadeia de caracteres | A importância de um grupo post: `low`, `normal`, `high`. |
 |lastModifiedDateTime|DateTimeOffset|Especifica quando a postagem foi modificada pela última vez. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |newParticipants|Coleção [recipient](recipient.md)|Participantes da conversa que foram adicionados ao thread como parte desta postagem.|
 |receivedDateTime|DateTimeOffset|Especifica quando a postagem foi recebida. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
@@ -82,9 +84,9 @@ Veja a seguir uma representação JSON do recurso
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|attachments|[Attachment](attachment.md) collection|A coleção de anexos [fileAttachment](fileattachment.md), [itemAttachment](itemattachment.md)e [referenceAttachment](referenceattachment.md) referente à postagem. Somente leitura. Anulável.|
+|attachments|Coleção [Attachment](attachment.md)|O conjunto de [](fileattachment.md)anexos de fileattachment, hiperattachment e [referenceAttachment](referenceattachment.md) para a postagem. [](itemattachment.md) Somente leitura. Anulável.|
 |extensions|Coleção [Extension](extension.md)|A coleção de extensões abertas definidas para a postagem. Somente leitura. Anulável.|
-|inReplyTo|[Post](post.md)|A postagem anterior que esta postagem é resposta no [conversationThread](conversationthread.md). Somente leitura.|
+|inResponderto|[Post](post.md)|A postagem anterior à qual esta postagem está respondendo no [conversationThread](conversationthread.md). Somente leitura.|
 |multiValueExtendedProperties|Coleção [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de vários valores definidas para a postagem. Somente leitura. Anulável.|
 |singleValueExtendedProperties|Coleção [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| A coleção de propriedades estendidas de valor único definidas para a postagem. Somente leitura. Anulável.|
 
@@ -92,9 +94,9 @@ Veja a seguir uma representação JSON do recurso
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Listar postagens](../api/conversationthread-list-posts.md) | [post](post.md) |Obtenha as postagens do thread especificado. |
-|[Obter postagem](../api/post-get.md) | [post](post.md) |Obtenha as propriedades e os relacionamentos de uma postagem em um thread especificado.|
-|[Responder](../api/post-reply.md)|Nenhuma|Responda a uma postagem e adicione uma nova postagem ao thread especificado em uma conversa de grupo.|
+|[Listar postagens](../api/conversationthread-list-posts.md) | [postagem](post.md) |Obtenha as postagens do thread especificado. |
+|[Obter postagem](../api/post-get.md) | [postagem](post.md) |Obtenha as propriedades e os relacionamentos de uma postagem em um thread especificado.|
+|[Responder](../api/post-reply.md)|Nenhum|Responda a uma postagem e adicione uma nova postagem ao thread especificado em uma conversa de grupo.|
 |[Encaminhar](../api/post-forward.md)|Nenhuma|Encaminhe uma postagem para um destinatário.|
 |**Anexos**| | |
 |[Listar anexos](../api/post-list-attachments.md) |Coleção [attachment](attachment.md)| Obtenha todos os anexos em uma postagem.|
@@ -105,9 +107,9 @@ Veja a seguir uma representação JSON do recurso
 |**Extensões de esquema**| | |
 |[Adicionar valores de extensões de esquema](/graph/extensibility-schema-groups) || Cria uma definição para a extensão de esquema e usa-a para adicionar dados digitados personalizados a um recurso.|
 |**Propriedades estendidas**| | |
-|[Criar uma propriedade estendida de valor único](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[post](post.md)  |Criar uma ou mais propriedades estendidas de valor único em uma postagem nova ou existente.   |
-|[Obter postagem com propriedade estendida de valor único](../api/singlevaluelegacyextendedproperty-get.md)  | [post](post.md) | Obtenha postagens que contenham uma propriedade estendida de valor único usando `$expand` ou `$filter`. |
-|[Criar propriedade estendida de vários valores](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [post](post.md) | Crie uma ou mais propriedades estendidas de vários valores em uma postagem nova ou existente.  |
+|[Criar uma propriedade estendida de valor único](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[postagem](post.md)  |Criar uma ou mais propriedades estendidas de valor único em uma postagem nova ou existente.   |
+|[Obter postagem com propriedade estendida de valor único](../api/singlevaluelegacyextendedproperty-get.md)  | [postagem](post.md) | Obtenha postagens que contenham uma propriedade estendida de valor único usando `$expand` ou `$filter`. |
+|[Criar propriedade estendida de vários valores](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [postagem](post.md) | Crie uma ou mais propriedades estendidas de vários valores em uma postagem nova ou existente.  |
 |[Obter postagem com propriedade estendida de vários valores](../api/multivaluelegacyextendedproperty-get.md)  | [post](post.md) | Obtenha uma postagem que contenha uma propriedade estendida de vários valores usando `$expand`. |
 
 ## <a name="see-also"></a>Confira também
@@ -126,8 +128,6 @@ Veja a seguir uma representação JSON do recurso
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/post.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

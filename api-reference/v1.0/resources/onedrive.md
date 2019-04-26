@@ -1,19 +1,19 @@
 ---
 title: Trabalhando com arquivos no Microsoft Graph
-description: Você pode usar o Microsoft Graph para criar um aplicativo que se conecta com arquivos entre OneDrive, o OneDrive for Business e SharePoint bibliotecas de documentos.
+description: Você pode usar o Microsoft Graph para criar um aplicativo que se conecta a arquivos entre bibliotecas de documentos do OneDrive, OneDrive for Business e SharePoint.
 localization_priority: Priority
 ms.prod: sharepoint
 ms.openlocfilehash: 89798778fff0297ffce607d1546a177dd90d357e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27918018"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462918"
 ---
 # <a name="working-with-files-in-microsoft-graph"></a>Trabalhando com arquivos no Microsoft Graph
 
-Você pode usar o Microsoft Graph para criar um aplicativo que se conecta com arquivos entre OneDrive, o OneDrive for Business e SharePoint bibliotecas de documentos.
-Com o Microsoft Graph, você pode construir uma variedade de experiências com arquivos armazenados no Office 365, de simplesmente armazenar documentos do usuário para cenários de compartilhamento de arquivos complexos.
+Você pode usar o Microsoft Graph para criar um aplicativo que se conecta a arquivos entre bibliotecas de documentos do OneDrive, OneDrive for Business e SharePoint.
+Com o Microsoft Graph, é possível criar uma variedade de experiências com arquivos armazenados no Office 365, desde simplesmente armazenar documentos de usuários até cenários de compartilhamento de arquivos complexos.
 
 O Microsoft Graph expõe dois tipos de recursos para trabalhar com arquivos:
 
@@ -70,8 +70,8 @@ A maioria das solicitações de API para interações de arquivo usa um destes r
 | `/users/{user-id}/drive`           | Acessar o OneDrive de outro usuário usando a ID exclusiva desse usuário.
 | `/groups/{group-id}/drive`         | Acessar a biblioteca de documentos padrão de um grupo com base na ID exclusiva desse grupo.
 | `/shares/{share-id}`               | Acessar **DriveItem** com base em sua **sharedId** ou URL de compartilhamento.
-| `/sites/{site-id}/drive`           | Acessar o padrão de **unidade** (biblioteca de documentos) para [SharePoint][] determinado [site][]
-| `/sites/{site-id}/drives`          | Enumerar as **unidades** (bibliotecas de documentos) em [SharePoint][] determinado [site][]
+| `/sites/{site-id}/drive`           | Acessar o padrão **Unidade** (biblioteca de documentos) para o [site][] do [SharePoint][]
+| `/sites/{site-id}/drives`          | Enumerar as **Unidades** (bibliotecas de documentos) do [site][] do [SharePoint][]
 
 Além de endereçar **DriveItem** dentro de **Drive** com base na ID exclusiva, seu aplicativo também pode endereçar **DriveItem** com base no caminho relativo de um recurso conhecido. Para endereçar usando um caminho, um caractere de dois pontos (`:`) é usado para escapar o caminho relativo. Essa tabela fornece um exemplo de diferentes maneiras de usar o caractere de dois-pontos para endereçar um item com base no caminho.
 
@@ -84,7 +84,7 @@ Além de endereçar **DriveItem** dentro de **Drive** com base na ID exclusiva, 
 
 ## <a name="drive-resource"></a>Recurso Drive
 
-O [recurso de unidade](drive.md) é o objeto de nível superior dentro de OneDrive um usuário ou uma biblioteca de documentos do [SharePoint][] .
+O [recurso de Unidade](drive.md) é o objeto de nível superior no OneDrive do usuário ou em uma biblioteca de documentos do [SharePoint][].
 Quase todas as operações de arquivos serão iniciadas com o endereçamento de um recurso Drive específico.
 
 Um recurso Drive pode ser endereçado pela ID exclusiva da unidade ou pela unidade padrão de um [Usuário](user.md), [Grupo](group.md) ou organização. 

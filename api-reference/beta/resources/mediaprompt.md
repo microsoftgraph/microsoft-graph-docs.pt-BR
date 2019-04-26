@@ -1,27 +1,27 @@
 ---
-title: tipo de recurso de mediaPrompt
-description: O tipo de mediaPrompt.
+title: tipo de recurso mediaPrompt
+description: O tipo mediaPrompt.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: b87af39d6d6ac4879aba44573b920a43d4f92145
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508528"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562559"
 ---
-# <a name="mediaprompt-resource-type"></a>tipo de recurso de mediaPrompt
+# <a name="mediaprompt-resource-type"></a>tipo de recurso mediaPrompt
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O tipo de mediaPrompt.
+O tipo mediaPrompt.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade    | Tipo                      | Descrição                                                                     |
 | :---------- | :------------------------ | :------------------------------------------------------------------------------ |
-| Loop        | Int32                     | A contagem de loop. o valor 0 indica para executar um loop indefinidamente. O valor padrão é `1`. |
+| ciclo        | Int32                     | A contagem de loop. o valor 0 indica o loop infinitamente. O valor padrão é `1`. |
 | mediaInfo   | [mediaInfo](mediainfo.md) | As informações de mídia                                                           |
 
 ## <a name="json-representation"></a>Representação JSON
@@ -68,8 +68,6 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/mediaprompt.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

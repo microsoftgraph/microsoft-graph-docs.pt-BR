@@ -4,11 +4,11 @@ description: 'As notificações são a maneira mais eficaz de voltar a envolver 
 localization_priority: Priority
 ms.prod: project-rome
 ms.openlocfilehash: e3ccdd3cc7274042ae5b2531874cb6b8e2612fd4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27947117"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32560757"
 ---
 # <a name="using-the-notifications-api-in-microsoft-graph-to-enable-human-centric-notification-experiences"></a>Usar a API de notificações do Microsoft Graph para habilitar experiências de notificação centradas em humanos 
 

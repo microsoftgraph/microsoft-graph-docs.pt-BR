@@ -5,11 +5,11 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 927e4eb519f8a849ac2cb259bed962bad44d9a6d
-ms.sourcegitcommit: 9fd437a77da99d8436d6c852edd99a9ba873f8cd
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31559979"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563100"
 ---
 # <a name="riskyusers-resource-type"></a>tipo de recurso riskyUsers
 
@@ -35,7 +35,7 @@ Para obter mais informações sobre eventos de risco, consulte [Azure Active Dir
 | Propriedade   | Tipo|Descrição|
 |:---------------|:--------|:----------|
 |`id`|`string`|ID exclusiva do usuário em risco|
-|`isDeleted`|`bool`|Indica se o usuário é excluído. Os valores possíveis são `true`:, `false`|
+|`isDeleted`|`bool`|Indica se o usuário é excluído. Os valores possíveis são `true`:,`false`|
 |`isGuest`|`bool`|Indica se o usuário é um usuário convidado. Os valores possíveis são: `true` e `false`. True se a identidade do usuário está fora do locatário em consideração. Este usuário pode ser um usuário B2B ou B2C com identidade no Azure AD, no MSA ou no provedor de identidade de terceiros. False se a identidade do usuário está dentro do locatário em consideração|
 |`isProcessing`|`bool`|Indica wehther que o estado arriscado de um usuário está sendo processado pelo backend|
 |`riskLastUpdatedDateTime`|`datetime`|A data e a hora em que o usuário arriscado foi atualizado pela última vez|

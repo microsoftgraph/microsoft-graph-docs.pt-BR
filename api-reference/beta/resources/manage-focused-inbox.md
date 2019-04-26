@@ -1,13 +1,13 @@
 ---
 title: Gerenciar a Caixa de Entrada Prioritária
-description: 'Caixa de entrada focada lhe permite exibir mensagens importantes no `Focused` guia da caixa de entrada e o restante das mensagens na caixa de entrada do `Other` guia. O sistema de classificação '
+description: 'A caixa de entrada destaques permite exibir mensagens importantes na `Focused` guia da caixa de entrada e o restante das mensagens da caixa de entrada `Other` na guia. O sistema de classificação '
 localization_priority: Normal
 ms.openlocfilehash: 5ee5d5f9dd48faa7d0590cbbc6dfda39d8f117e0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529247"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562565"
 ---
 # <a name="manage-focused-inbox"></a>Gerenciar a Caixa de Entrada Prioritária
 
@@ -30,14 +30,6 @@ Observe que o sistema de classificação aprende e aplica a classificação apen
 
 **Usar substituições para classificar consistentemente por remetente**
 
-[Criar uma substituição para um remetente](../api/inferenceclassification-post-overrides.md) | [Listar substituições de todos os usuários](../api/inferenceclassification-list-overrides.md) |
+[Criar uma substituição para uma lista de remetentes](../api/inferenceclassification-post-overrides.md) | [todas as substituições de usuários](../api/inferenceclassification-list-overrides.md) |
 
-[Carregar uma substituição para um remetente](../api/inferenceclassificationoverride-update.md) | [Excluir uma substituição de remetente](../api/inferenceclassificationoverride-delete.md) 
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/manage-focused-inbox.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+[Atualizar uma substituição para um remetente](../api/inferenceclassificationoverride-update.md) | [excluir uma substituição de remetente](../api/inferenceclassificationoverride-delete.md) 

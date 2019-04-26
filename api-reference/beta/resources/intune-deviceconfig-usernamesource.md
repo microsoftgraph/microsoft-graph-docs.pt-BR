@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 53eae35e947b958c21df63ece3156da4107e8d0b
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31796336"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561968"
 ---
 # <a name="usernamesource-enum-type"></a>tipo de enumeração usernamename
 
@@ -23,8 +23,8 @@ Fonte de nome de usuário.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |userPrincipalName|,0|Nome principal do usuário.|
-|primarySmtpAddress|1|Endereço SMTP principal.|
-|samAccountName|duas|O nome da conta Sam do usuário.|
+|primarySmtpAddress|1 |Endereço SMTP principal.|
+|samAccountName|2 |O nome da conta Sam do usuário.|
 
 
 

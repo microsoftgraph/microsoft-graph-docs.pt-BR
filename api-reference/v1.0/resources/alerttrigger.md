@@ -1,27 +1,27 @@
 ---
-title: tipo de recurso de alertTrigger
-description: Contém informações sobre as propriedades que disparou uma detecção (Propriedades existirem na entidade alerta).
+title: tipo de recurso alertTrigger
+description: Contém informações sobre as propriedades que acionaram uma detecção (as propriedades existem na entidade de alerta).
 author: preetikr
 localization_priority: Normal
 ms.prod: security
 ms.openlocfilehash: 3a2f6818bad0c5600e4b2a2a2682707643d1900c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27991255"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569463"
 ---
-# <a name="alerttrigger-resource-type"></a>tipo de recurso de alertTrigger
+# <a name="alerttrigger-resource-type"></a>tipo de recurso alertTrigger
 
-Contém informações sobre as propriedades que disparou uma detecção (Propriedades existirem na entidade alerta).
+Contém informações sobre as propriedades que acionaram uma detecção (as propriedades existem na entidade de alerta).
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade   | Tipo|Descrição|
 |:---------------|:--------|:----------|
-|name|Cadeia de caracteres|Nome da propriedade servindo como um gatilho de detecção.|
-|type|Cadeia de caracteres|Tipo da propriedade no par de chave: valor de interpretação. Por exemplo, String, Boolean, etc.|
-|valor|Cadeia de caracteres|Valor da propriedade servindo como um gatilho de detecção.|
+|name|String|Nome da propriedade servindo como um gatilho de detecção.|
+|type|String|Tipo da propriedade no par chave: valor para interpretação. Por exemplo, String, Boolean, etc.|
+|value|Cadeia de caracteres|O valor da propriedade servindo como um gatilho de detecção.|
 
 ## <a name="json-representation"></a>Representação JSON
 

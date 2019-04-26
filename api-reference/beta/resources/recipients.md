@@ -1,15 +1,15 @@
 ---
-title: tipo de recurso de destinatários
+title: tipo de recurso Recipients
 description: Veja a seguir uma representação JSON do recurso
 localization_priority: Normal
 ms.openlocfilehash: 1ba4e8c88de3ba96e5e846cb5be8261562567ac3
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507835"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563099"
 ---
-# <a name="recipients-resource-type"></a>tipo de recurso de destinatários
+# <a name="recipients-resource-type"></a>tipo de recurso Recipients
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -39,7 +39,7 @@ Veja a seguir uma representação JSON do recurso
 |:---------------|:--------|:----------|
 |alias|String||
 |email|String||
-|objectId|String||
+|objectId|Cadeia de caracteres||
 |permissionIdentityType|String||
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -51,8 +51,6 @@ Veja a seguir uma representação JSON do recurso
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/recipients.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

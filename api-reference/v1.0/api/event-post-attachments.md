@@ -1,15 +1,15 @@
 ---
 title: Adicionar anexo
-description: Use essa API para adicionar um anexo a um evento. Desde daí
+description: Use esta API para adicionar um anexo a um evento. Como não há
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: cd295ba9b80bbbfcbdf4c6f7bebe95e8b0e4bfcb
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27990289"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32584310"
 ---
 # <a name="add-attachment"></a>Adicionar anexo
 
@@ -24,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Aplicativo | Calendars.ReadWrite |
 
 ## <a name="http-request"></a>Solicitação HTTP
-Anexos em um [evento](../resources/event.md) do usuário padrão [calendário](../resources/calendar.md).
+Anexos de um [evento](../resources/event.md) no [calendário](../resources/calendar.md)padrão do usuário.
 
 <!--
 Attachments for an [event](../resources/event.md) in the user's or group's default [calendar](../resources/calendar.md).

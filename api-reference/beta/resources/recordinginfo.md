@@ -1,21 +1,21 @@
 ---
-title: tipo de recurso de recordingInfo
-description: Informações de gravação para um participante.
+title: tipo de recurso recordingInfo
+description: Informações de gravação de um participante.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 6025259bafdcff78c3c7dbfa19aa39f5f6648f84
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525672"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563076"
 ---
-# <a name="recordinginfo-resource-type"></a>tipo de recurso de recordingInfo
+# <a name="recordinginfo-resource-type"></a>tipo de recurso recordingInfo
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Informações de gravação para um participante.
+Informações de gravação de um participante.
 
 ## <a name="properties"></a>Propriedades
 
@@ -51,8 +51,6 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/recordinginfo.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

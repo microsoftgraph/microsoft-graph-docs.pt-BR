@@ -1,21 +1,21 @@
 ---
 title: Tipo de recurso person
-description: Uma agregação de informações sobre uma pessoa em email, contatos e redes sociais. Pessoas podem ser contatos locais, contatos de redes sociais, diretório da sua organização e pessoas de comunicações recentes (por exemplo, email e Skype).
+description: Uma agregação de informações sobre uma pessoa através de email, contatos e redes sociais. As pessoas podem ser contatos locais, contatos de redes sociais, diretório da sua organização e pessoas de comunicações recentes (como email e Skype).
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
 ms.openlocfilehash: 32a2c9905ab52e9b229bb8673fb4a84d90a706ac
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512399"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561471"
 ---
 # <a name="person-resource-type"></a>Tipo de recurso person
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Uma agregação de informações sobre uma pessoa em email, contatos e redes sociais. Pessoas podem ser contatos locais, contatos de redes sociais, diretório da sua organização e pessoas de comunicações recentes (por exemplo, email e Skype).
+Uma agregação de informações sobre uma pessoa através de email, contatos e redes sociais. As pessoas podem ser contatos locais, contatos de redes sociais, diretório da sua organização e pessoas de comunicações recentes (como email e Skype).
 
 ## <a name="methods"></a>Métodos
 
@@ -35,16 +35,16 @@ Uma agregação de informações sobre uma pessoa em email, contatos e redes soc
 |givenName|string|O nome fornecido da pessoa.|
 |id|string|O identificador exclusivo da pessoa. Somente leitura.|
 |isFavorite|booliano|`true` se o usuário tiver sinalizado essa pessoa como um favorito.|
-|MailboxType|string|O tipo de caixa de correio que é representado por um endereço de email da pessoa.|
+|mailboxType|string|O tipo de caixa de correio que é representado pelo endereço de email da pessoa.|
 |officeLocation|string|O local do escritório da pessoa.|
 |personNotes|string|As anotações de forma livre que o usuário fez sobre essa pessoa.|
-|personType|string|O tipo da pessoa, por exemplo lista de distribuição.|
+|personType|string|O tipo de pessoa, por exemplo, lista de distribuição.|
 |telefones|Coleção [phone](phone.md)|Os números de telefone da pessoa.|
 |postalAddresses|[location](location.md) collection|Os endereços da pessoa.|
 |profession|string|A profissão da pessoa.|
-|sources|coleção [personDataSource](persondatasource.md)|As fontes de dados do usuário provêm, por exemplo, diretório ou contatos do Outlook.|
+|fontes|coleção [personDataSource](persondatasource.md)|As fontes das quais os dados do usuário são provenientes, por exemplo, contatos do Outlook ou do Outlook.|
 |surname|string|O sobrenome da pessoa.|
-|title|string|Título da pessoa.|
+|title|string|O título da pessoa.|
 |userPrincipalName|string|O nome UPN da pessoa. O UPN é um nome de logon para a pessoa ao estilo da Internet com base na [RFC 822](https://www.ietf.org/rfc/rfc0822.txt) padrão da Internet. Por convenção, ele deve ser mapeado para o nome de email da pessoa. O formato geral é alias@domínio.|
 |websites|Coleção [website](website.md)|Os sites da pessoa.|
 |yomiCompany|string|O nome japonês fonético da empresa da pessoa.|
@@ -101,8 +101,6 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/person.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

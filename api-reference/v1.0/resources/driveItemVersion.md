@@ -1,14 +1,14 @@
 ---
 title: Tipo de recurso DriveItemVersion
-description: O recurso de **DriveItemVersion** representa uma versão específica de um DriveItem.
+description: O recurso **DriveItemVersion** representa uma versão específica de um DriveItem.
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: fd6052464d40fcce86b83d93601282dda252c69b
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643983"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562682"
 ---
 # <a name="driveitemversion-resource-type"></a>Tipo de recurso DriveItemVersion
 

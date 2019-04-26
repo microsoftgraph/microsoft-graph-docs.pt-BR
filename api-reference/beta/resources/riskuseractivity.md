@@ -5,11 +5,11 @@ author: ''
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 258cd61b55d0ac8d19f83682fe34d53cc4b233b0
-ms.sourcegitcommit: 9fd437a77da99d8436d6c852edd99a9ba873f8cd
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31688492"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563011"
 ---
 # <a name="riskuseractivity-resource-type"></a>tipo de recurso riskUserActivity
 
@@ -31,7 +31,7 @@ ms.locfileid: "31688492"
 }-->
 ```json
 {
-    "eventTypes": [{"@odata.type":"microsoft.graph.riskEventType"}],
+    "eventTypes": ["String"],
     "detail": "string"
 }
 ```

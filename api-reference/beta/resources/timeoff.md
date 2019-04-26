@@ -5,11 +5,11 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: c15d65c6d0a5a9749654698a51996cb21c254a9d
-ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30676986"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582840"
 ---
 # <a name="timeoff-resource-type"></a>tipo de recurso timeOff
 
@@ -23,20 +23,20 @@ Uma unidade de não trabalho no cronograma.
 |:---------------|:--------|:----------|
 |[Criar timeOff](../api/schedule-post-timesoff.md) | [timeOff](timeOff.md) | Criar um novo `timeOff` objeto.|
 |[Listar timeOffss](../api/schedule-list-timesoff.md) | coleção [timeOff](timeOff.md) | Obtenha a lista de `timeOff` objetos nesse cronograma.|
-|[Obter timeOff](../api/timeoff-get.md) | [timeOff](timeOff.md) | Obter a `timeOff` por ID.|
-|[Substituir timeOff](../api/timeoff-put.md) | [timeOff](timeOff.md) | Substitua um `timeOff`.|
+|[Obter timeOff](../api/timeoff-get.md) | [timeOff](timeOff.md) | Obter um `timeOff` por ID.|
+|[Substituir timeOff](../api/timeoff-put.md) | [timeOff](timeOff.md) | Substituir um `timeOff`.|
 |[Excluir timeOff](../api/timeoff-delete.md) | Nenhum | Excluir uma `timeOff` do agendamento.|
 
 ## <a name="properties"></a>Propriedades
-|Name          |Tipo           |Descrição                                                                                                                                      |
+|Nome          |Tipo           |Descrição                                                                                                                                      |
 |--------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| id            |`string`      |ID do `timeOff`.|
+| id            |`string`      |A ID da tarefa `timeOff`.|
 | userId            |`string`      |ID do usuário atribuído ao `timeOff`. Obrigatório.|
 | sharedTimeOff     |[timeOffItem](timeoffitem.md)  |A versão compartilhada desse `timeOff` é visível por funcionários e gerentes. Obrigatório.|
 | draftTimeOff      |[timeOffItem](timeoffitem.md)        |A versão de rascunho desse `timeOff` documento que é visível por gerentes. Obrigatório.|
-| createdDateTime       |`DateTimeOffset`        |O carimbo de data/hora `timeOff` em que foi criado pela primeira vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 teria a seguinte aparência: ' 2014-01-01T00:00:00Z '. |
-| lastModifiedDateTime      |`DateTimeOffset`        |O carimbo de data/hora `timeOff` em que foi atualizado pela última vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 teria a seguinte aparência: ' 2014-01-01T00:00:00Z '. |
-| lastModifiedBy        |`microsoft.graph.identitySet`        |A identidade que foi atualizada pela `timeOff`última vez. |
+| createdDateTime       |`DateTimeOffset`        |O carimbo de data/hora `timeOff` em que foi criado pela primeira vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: '2014-01-01T00:00:00Z'. |
+| lastModifiedDateTime      |`DateTimeOffset`        |O carimbo de data/hora `timeOff` em que foi atualizado pela última vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: '2014-01-01T00:00:00Z'. |
+| lastModifiedBy        |`microsoft.graph.identitySet`        |A identidade da última atualização `timeOff`. |
 
 ## <a name="json-representation"></a>Representação JSON
 

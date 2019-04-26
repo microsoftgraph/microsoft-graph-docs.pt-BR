@@ -1,15 +1,15 @@
 ---
 title: 'group: checkMemberGroups'
-description: Verifique se a associação na lista especificada dos grupos. Retorna da lista os grupos dos quais
+description: Verifique se há associação na lista de grupos especificada. Retorna da lista aqueles grupos dos quais
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
 ms.openlocfilehash: 8abac44bf6c97e0ebbd8235ec246f19f0c73e920
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27932116"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32524180"
 ---
 # <a name="group-checkmembergroups"></a>group: checkMemberGroups
 
@@ -25,9 +25,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 | :------------------------------------- | :------------------------------------------------------------------------------------------ |
 | Delegado (conta corporativa ou de estudante)     | ~~Group.Read.All~~, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Delegado (conta pessoal da Microsoft) | Sem suporte.                                                                              |
-| Aplicativo                            | _Group.Read.All_, Directory.Read.All. Directory.ReadWrite.All                               |
+| Application                            | _Group.Read.All_, Directory.Read.All. Directory.ReadWrite.All                               |
 
-> **Observação:** Essa API atualmente requer o `Directory.Read.All` permissão ou superior. Usando o `Group.Read.All` permissão retornará um erro. Este é um bug conhecido.
+> **Observação:** esta API atualmente exige o `Directory.Read.All` permissão ou posterior. Usando a permissão `Group.Read.All` retornarão um erro. Este é um bug conhecido.
 
 ## <a name="http-request"></a>Solicitação HTTP
 
@@ -49,7 +49,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro | Tipo              | Descrição           |
 | :-------- | :---------------- | :-------------------- |
-| groupIds  | String collection | Uma matriz de IDs de grupo |
+| groupIds  | Coleção de cadeias de caracteres | Uma matriz de IDs de grupo |
 
 ## <a name="response"></a>Resposta
 

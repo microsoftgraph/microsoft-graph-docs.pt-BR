@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: Cota
 localization_priority: Normal
 ms.openlocfilehash: 7cafff3162c7cdc4435df1cde522b42998398693
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480303"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563270"
 ---
 # <a name="quota-resource-type"></a>tipo de recurso quota
 
@@ -67,8 +67,6 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "quota,available,remaining,used",
   "section": "documentation",
   "tocPath": "Facets/Quota",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/quota.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

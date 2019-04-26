@@ -1,21 +1,21 @@
 ---
-title: tipo de recurso de mediaConfig
-description: A configuração de mídia usada para conectar a uma chamada.
+title: tipo de recurso mediaConfig
+description: A configuração de mídia usada para se conectar a uma chamada.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: e4f6e940cd319d10cd3f03e3c94d0473164beb29
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642615"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562549"
 ---
-# <a name="mediaconfig-resource-type"></a>tipo de recurso de mediaConfig
+# <a name="mediaconfig-resource-type"></a>tipo de recurso mediaConfig
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A configuração de mídia usada para conectar a uma chamada.
+A configuração de mídia usada para se conectar a uma chamada.
 
 ## <a name="properties"></a>Propriedades
 
@@ -31,7 +31,8 @@ Veja a seguir uma representação JSON do recurso.
   "blockType": "resource",
   "optionalProperties": [
     "removeFromDefaultAudioGroup"
-  ],
+   ],
+  "abstract": true,
   "@odata.type": "microsoft.graph.mediaConfig"
 }-->
 ```json
@@ -49,8 +50,6 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/mediaconfig.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

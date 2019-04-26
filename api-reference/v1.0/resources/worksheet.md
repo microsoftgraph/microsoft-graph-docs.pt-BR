@@ -5,11 +5,11 @@ localization_priority: Priority
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: 60e31738329943d96e1a4f3ea8293851e759eaff
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27983867"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32521856"
 ---
 # <a name="worksheet-resource-type"></a>Tipo de recurso Worksheet
 
@@ -22,16 +22,16 @@ Uma planilha do Excel é uma grade de células. Ela pode conter dados, tabelas, 
 |:---------------|:--------|:----------|
 |[Get Worksheet](../api/worksheet-get.md) | [WorkbookWorksheet](worksheet.md) |Leia as propriedades e os relacionamentos do objeto de planilha.|
 |[Create Chart](../api/worksheet-post-charts.md) |[WorkbookChart](chart.md)| Crie um novo Gráfico ao postar na coleção de gráficos.|
-|[Nomes da lista](../api/worksheet-list-names.md) |Coleção [WorkbookNamedItem](nameditem.md)| Faça com que a coleção de itens nomeados seja associada à planilha.|
-|[Listar gráficos](../api/worksheet-list-charts.md) |Coleção [WorkbookChart](chart.md)| Obtenha a coleção de objetos Chart.|
+|[Nomes da lista](../api/worksheet-list-names.md) |Coleção [WorkbookNamedItem](nameditem.md) | Faça com que a coleção de itens nomeados seja associada à planilha.|
+|[Listar gráficos](../api/worksheet-list-charts.md) |Conjunto [WorkbookChart](chart.md) | Obtenha a coleção de objetos Chart.|
 |[Create Table](../api/worksheet-post-tables.md) |[WorkbookTable](table.md)| Crie uma nova Table postando na coleção de tabelas.|
 |[List tables](../api/worksheet-list-tables.md) |Coleção [WorkbookTable](table.md)| Obtenha uma coleção de objetos Table.|
-|[Update](../api/worksheet-update.md) | [WorkbookWorksheet](worksheet.md)   |Atualize o objeto Worksheet. |
+|[Atualização](../api/worksheet-update.md) | [WorkbookWorksheet](worksheet.md)   |Atualize o objeto Worksheet. |
 |[Cell](../api/worksheet-cell.md)|[Range](range.md)|Obtém o objeto de intervalo que contém a célula única com base nos números de linha e de coluna. A célula pode estar fora dos limites do respectivo intervalo pai, desde que permaneça dentro da grade da planilha.|
 |[Range](../api/worksheet-range.md)|[Range](range.md)|Obtém o objeto de intervalo especificado pelo nome ou endereço.|
 |[Usedrange](../api/worksheet-usedrange.md)|[Range](range.md)|O intervalo usado é o menor intervalo que abrange todas as células que têm um valor ou uma formatação atribuído a elas. Se a planilha estiver em branco, esta função retorna a célula superior esquerda.|
 |[Delete](../api/worksheet-delete.md)|Nenhum|Exclui a planilha da pasta de trabalho.|
-|[List](../api/worksheet-list.md) | Coleção [WorkbookWorksheet](worksheet.md) |Obtenha a coleção de objetos da planilha. |
+|[List](../api/worksheet-list.md) | Coleção [WorkbookWorksheet](worksheet.md)  |Obtenha a coleção de objetos da planilha. |
 |[Add](../api/worksheetcollection-add.md)|[WorkbookWorksheet](worksheet.md)|Adiciona uma nova planilha à pasta de trabalho. A planilha será adicionada ao final das planilhas existentes. |
 |[List pivotTables](../api/workbookworksheet-list-pivottables.md) |Coleção [workbookPivotTable](workbookpivottable.md)| Obtenha uma coleção de objeto workbookPivotTable.|
 
@@ -46,10 +46,10 @@ Uma planilha do Excel é uma grade de células. Ela pode conter dados, tabelas, 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|charts|Coleção [WorkbookChart](chart.md)|Retorna uma coleção de gráficos que fazem parte da planilha. Somente leitura.|
-|names|Coleção [WorkbookNamedItem](nameditem.md)|Retorna a coleção de nomes associados à planilha. Somente leitura.|
+|charts|Conjunto [WorkbookChart](chart.md) |Retorna uma coleção de gráficos que fazem parte da planilha. Somente leitura.|
+|names|Coleção [WorkbookNamedItem](nameditem.md) |Retorna a coleção de nomes associados à planilha. Somente leitura.|
 |pivotTables|Coleção [workbookPivotTable](workbookpivottable.md)| Coleção de Tabelas Dinâmicas que fazem parte da planilha. |
-|protection|[WorkbookWorksheetProtection](worksheetprotection.md)|Retorna o objeto de proteção da planilha para uma planilha. Somente leitura.|
+|proteção|[WorkbookWorksheetProtection](worksheetprotection.md)|Retorna o objeto de proteção da planilha para uma planilha. Somente leitura.|
 |tables|Coleção [WorkbookTable](table.md)|Coleção de tabelas que fazem parte da planilha. Somente leitura.|
 
 ## <a name="json-representation"></a>Representação JSON

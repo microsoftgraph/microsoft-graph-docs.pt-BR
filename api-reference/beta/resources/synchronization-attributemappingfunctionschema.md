@@ -1,32 +1,32 @@
 ---
-title: tipo de recurso de attributeMappingFunctionSchema
+title: tipo de recurso attributeMappingFunctionSchema
 description: Descreve uma função que pode ser usada em um mapeamento de atributo para transformar valores durante a sincronização.
 localization_priority: Normal
 ms.openlocfilehash: e2c0139f7c797c3f519cc638561b09f611018b28
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511979"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582073"
 ---
-# <a name="attributemappingfunctionschema-resource-type"></a>tipo de recurso de attributeMappingFunctionSchema
+# <a name="attributemappingfunctionschema-resource-type"></a>tipo de recurso attributeMappingFunctionSchema
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Descreve uma função que pode ser usada em um [mapeamento de atributos](synchronization-attributemapping.md) para transformar valores durante a sincronização.
+Descreve uma função que pode ser usada em um [mapeamento de atributo](synchronization-attributemapping.md) para transformar valores durante a sincronização.
 
 ## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[List](../api/synchronization-synchronizationschema-functions.md) | coleção [attributeMappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md)|Funções de mapeamento de atributo de lista com suporte.|
+|[List](../api/synchronization-synchronizationschema-functions.md) | coleção [attributeMappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md)|Listar funções de mapeamento de atributos com suporte.|
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade                   | Tipo                      | Descrição    |
 |:---------------------------|:-------------------------|:---------------|
 |name                        |String                    |Nome do operador. |
-|parâmetros                  |coleção [attributeMappingParameterSchema](../resources/synchronization-attributemappingparameterschema.md)  |Coleção de parâmetros de função.|
+|parameters                  |coleção [attributeMappingParameterSchema](../resources/synchronization-attributemappingparameterschema.md)  |Conjunto de parâmetros de função.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -57,8 +57,6 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/synchronization-attributemappingfunctionschema.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->
