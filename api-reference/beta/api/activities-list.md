@@ -4,35 +4,34 @@ ms.author: dspektor
 ms.date: 09/10/2017
 title: Atividades de arquivo
 localization_priority: Normal
-ms.openlocfilehash: 75849fc67febe8c0f22d4dbd057da98aea5e8854
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9131146bc627f1f611e817d66dcb86a084fef26f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32459472"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33323012"
 ---
-# <a name="enumerate-activities-preview"></a><span data-ttu-id="0a919-102">Enumerar atividades (prévia)</span><span class="sxs-lookup"><span data-stu-id="0a919-102">Enumerate activities (preview)</span></span>
+# <a name="enumerate-activities-preview"></a><span data-ttu-id="2a3b6-102">Enumerar atividades (prévia)</span><span class="sxs-lookup"><span data-stu-id="2a3b6-102">Enumerate activities (preview)</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="0a919-103">Lista as [atividades][] recentes que foram realizadas em um item ou em uma hierarquia.</span><span class="sxs-lookup"><span data-stu-id="0a919-103">List the recent [activities][] that took place on an item or under a hierarchy.</span></span>
+<span data-ttu-id="2a3b6-103">Lista as [atividades](../resources/itemactivity.md) recentes que foram realizadas em um item ou em uma hierarquia.</span><span class="sxs-lookup"><span data-stu-id="2a3b6-103">List the recent [activities](../resources/itemactivity.md) that took place on an item or under a hierarchy.</span></span>
 
-<span data-ttu-id="0a919-104">**Observação:** as atividades são uma Visualização limitada e ainda não disponível para todos os locatários.</span><span class="sxs-lookup"><span data-stu-id="0a919-104">**Note:** Activities is in a limited Preview and not yet available to all tenants.</span></span>
+<span data-ttu-id="2a3b6-104">**Observação:** as atividades são uma Visualização limitada e ainda não disponível para todos os locatários.</span><span class="sxs-lookup"><span data-stu-id="2a3b6-104">**Note:** Activities is in a limited Preview and not yet available to all tenants.</span></span>
 
-[atividades]: ../resources/itemactivity.md
 [activities]: ../resources/itemactivity.md
 
-## <a name="permissions"></a><span data-ttu-id="0a919-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="0a919-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="2a3b6-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="2a3b6-105">Permissions</span></span>
 
-<span data-ttu-id="0a919-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0a919-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="2a3b6-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2a3b6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="0a919-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="0a919-109">Permission type</span></span>                        | <span data-ttu-id="0a919-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="0a919-110">Permissions (from least to most privileged)</span></span>
+|<span data-ttu-id="2a3b6-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="2a3b6-108">Permission type</span></span>                        | <span data-ttu-id="2a3b6-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="2a3b6-109">Permissions (from least to most privileged)</span></span>
 |:--------------------------------------|:-------------------------------------
-|<span data-ttu-id="0a919-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="0a919-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="0a919-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0a919-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>
-|<span data-ttu-id="0a919-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="0a919-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0a919-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="0a919-114">Not supported.</span></span>
-|<span data-ttu-id="0a919-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="0a919-115">Application</span></span>                            | <span data-ttu-id="0a919-116">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0a919-116">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>
+|<span data-ttu-id="2a3b6-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="2a3b6-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="2a3b6-111">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2a3b6-111">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>
+|<span data-ttu-id="2a3b6-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="2a3b6-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2a3b6-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="2a3b6-113">Not supported.</span></span>
+|<span data-ttu-id="2a3b6-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="2a3b6-114">Application</span></span>                            | <span data-ttu-id="2a3b6-115">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2a3b6-115">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="0a919-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="0a919-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2a3b6-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="2a3b6-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -43,9 +42,9 @@ GET /sites/{site-id}/lists/{list-id}/activities
 GET /sites/{site-id}/lists/{list-id}/items/{item-id}/activities
 ```
 
-## <a name="example"></a><span data-ttu-id="0a919-118">Exemplo</span><span class="sxs-lookup"><span data-stu-id="0a919-118">Example</span></span>
+## <a name="example"></a><span data-ttu-id="2a3b6-117">Exemplo</span><span class="sxs-lookup"><span data-stu-id="2a3b6-117">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="0a919-119">Solicitação</span><span class="sxs-lookup"><span data-stu-id="0a919-119">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="2a3b6-118">Solicitação</span><span class="sxs-lookup"><span data-stu-id="2a3b6-118">Request</span></span>
 
 <!-- { "blockType": "request", "name": "list-activities" } -->
 
@@ -53,7 +52,7 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/activities
 GET https://graph.microsoft.com/beta/me/drive/activities
 ```
 
-#### <a name="response"></a><span data-ttu-id="0a919-120">Resposta</span><span class="sxs-lookup"><span data-stu-id="0a919-120">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="2a3b6-119">Resposta</span><span class="sxs-lookup"><span data-stu-id="2a3b6-119">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "Collection(microsoft.graph.itemActivity)", "truncated": true } -->
 
@@ -157,8 +156,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "Site/List sites",
-  "suppressions": [
-    "Error: /api-reference/beta/api/activities-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->
