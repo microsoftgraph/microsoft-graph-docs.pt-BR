@@ -3,11 +3,11 @@ title: tipo de recurso de domínio
 description: 'Esse recurso fornece detalhes sobre o usuário ou aplicativo atividade de entrada no diretório. '
 localization_priority: Priority
 ms.openlocfilehash: a2ccb84daee642d207919217aa2857745846c769
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640963"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32557968"
 ---
 # <a name="signin-resource-type"></a>tipo de recurso de domínio
 Esse recurso fornece detalhes sobre o usuário ou aplicativo atividade de entrada no diretório. 

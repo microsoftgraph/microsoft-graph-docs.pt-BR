@@ -2,16 +2,18 @@
 title: Listar eventos
 description: Recupera uma lista de eventos em um calendário.  A lista contém reuniões de instância única e reuniões mestres da série.
 author: angelgolfer-ms
-localization_priority: Priority
+localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: f229960ee5fc8f0541fb3c1b91f02ddc9b0a28c6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27941111"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32570593"
 ---
 # <a name="list-events"></a>Listar eventos
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Recupera uma lista de eventos em um calendário.  A lista contém reuniões de instância única e reuniões mestres da série.
 
@@ -27,7 +29,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Aplicativo | Calendars.Read |
 
 ## <a name="http-request"></a>Solicitação HTTP
-<!-- { "blockType": "ignored" } -->Um usuário ou do grupo padrão [calendário](../resources/calendar.md).
+<!-- { "blockType": "ignored" } -->
+Um [calendar](../resources/calendar.md) padrão de um usuário ou grupo.
 ```http
 GET /me/calendar/events
 GET /users/{id | userPrincipalName}/calendar/events
@@ -68,7 +71,7 @@ Este é um exemplo da solicitação.
   "name": "get_events"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/calendar/events
+GET https://graph.microsoft.com/beta/me/calendar/events
 ```
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
@@ -90,9 +93,9 @@ Content-length: 354
       "originalEndTimeZone": "originalEndTimeZone-value",
       "responseStatus": {
         "response": "",
-        "time": "datetime-value"
+        "time": "2016-10-19T10:37:00Z"
       },
-      "iCalUId": "iCalUId-value",
+      "uid": "iCalUId-value",
       "reminderMinutesBeforeStart": 99,
       "isReminderOn": true
     }
@@ -102,10 +105,13 @@ Content-length: 354
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List events",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

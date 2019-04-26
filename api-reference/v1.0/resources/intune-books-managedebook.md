@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: ae6151c23bf05b076ade441f908a2810c80f45ed
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30253460"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32534357"
 ---
 # <a name="managedebook-resource-type"></a>Tipo de recurso managedEBook
 
@@ -22,12 +22,12 @@ Uma classe abstrata que contém as propriedades base do livro eletrônico gerenc
 |:---|:---|:---|
 |[Listar managedEBooks](../api/intune-books-managedebook-list.md)|Coleção [managedEBook](../resources/intune-books-managedebook.md)|Lista propriedades e relações dos objetos [managedEBook](../resources/intune-books-managedebook.md).|
 |[Obter managedEBook](../api/intune-books-managedebook-get.md)|[managedEBook](../resources/intune-books-managedebook.md)|Propriedades de leitura e relações do objeto [managedEBook](../resources/intune-books-managedebook.md).|
-|[ação assign](../api/intune-books-managedebook-assign.md)|Nenhum|Ainda não documentado|
+|[ação assign](../api/intune-books-managedebook-assign.md)|Nenhuma|Ainda não documentado|
 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |displayName|String|Nome do livro eletrônico.|
 |description|String|Descrição.|
 |publisher|Cadeia de caracteres|Publicador.|

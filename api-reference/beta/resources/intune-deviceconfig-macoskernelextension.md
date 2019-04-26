@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 04320f92045ae128ca1bf128484d2aa55f03d706
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31808850"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32570642"
 ---
 # <a name="macoskernelextension-resource-type"></a>tipo de recurso macOSKernelExtension
 
@@ -22,11 +22,11 @@ Representa uma extensão de kernel macOS específica. Uma extensão de kernel ma
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|teamIdentifier|Cadeia de caracteres|O identificador de equipe que foi usado para assinar a extensão do kernel.|
+|teamIdentifier|String|O identificador de equipe que foi usado para assinar a extensão do kernel.|
 |bundleId|String|ID do pacote da extensão do kernel.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

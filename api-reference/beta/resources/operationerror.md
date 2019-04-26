@@ -1,21 +1,21 @@
 ---
-title: tipo de recurso de operationError
-description: Descreve os erros em teamsAsyncOperation.
+title: tipo de recurso operationError
+description: Descreve erros no teamsAsyncOperation.
 localization_priority: Normal
 ms.openlocfilehash: 1f07fe064d7bbd255f2693071c86842a34fdffa0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526127"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568890"
 ---
-# <a name="operationerror-resource-type"></a>tipo de recurso de operationError
+# <a name="operationerror-resource-type"></a>tipo de recurso operationError
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Descreve os erros em [teamsAsyncOperation](teamsasyncoperation.md).
+Descreve erros no [teamsAsyncOperation](teamsasyncoperation.md).
 
-## <a name="operationerror-properties"></a>Propriedades de operationError
+## <a name="operationerror-properties"></a>Propriedades operationError
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |código|cadeia de caracteres (somente leitura)|Código de erro de operação.|
@@ -46,8 +46,6 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/operationerror.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 40c36022e08917ac8fbad0ff2647e28da18270bc
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30260414"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32571902"
 ---
 # <a name="installintent-enum-type"></a>tipo de enumeração installIntent
 
@@ -21,9 +21,9 @@ Valores possíveis para o propósito de instalação escolhido pelo administrado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |disponível|,0|Tentativa de instalação disponível.|
-|obrigatório|1|Tentativa de instalação necessária.|
-|INTAL|duas|Tentativa de instalação de desInstalação.|
-|availableWithoutEnrollment|3D|Disponível sem a intenção de instalação do registro.|
+|obrigatório|1 |Tentativa de instalação necessária.|
+|INTAL|2 |Tentativa de instalação de desInstalação.|
+|availableWithoutEnrollment|3 |Disponível sem a intenção de instalação do registro.|
 
 
 

@@ -4,11 +4,11 @@ description: O Microsoft Graph expõe as permissões granulares que controlam o 
 author: jackson-woods
 localization_priority: Priority
 ms.openlocfilehash: 4ec732fdc9e2a1c91ff6e5bb58c26e606272e641
-ms.sourcegitcommit: d264fa064215879fa88a4680402cd57a470d73db
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31980953"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32557996"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Referência de permissões do Microsoft Graph 
 O Microsoft Graph expõe as permissões granulares que controlam o acesso que os aplicativos têm aos recursos, como email, grupos e usuários. Como desenvolvedor, você decide quais permissões para o Microsoft Graph seu aplicativo deverá solicitar. Quando um usuário entra no aplicativo, ele, ou, em alguns casos, um administrador, tem a opção de consentir essas permissões. Se o usuário consentir, seu aplicativo receberá acesso aos recursos e APIs que solicitados. Para aplicativos que não aceitam usuários conectados, as permissões podem ser previamente consentidas pelo administrador quando o aplicativo é instalado ou durante a inscrição. 

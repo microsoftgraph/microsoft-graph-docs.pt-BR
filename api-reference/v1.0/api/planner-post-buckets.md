@@ -5,13 +5,15 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 5d642779f7ca179a6de485fae2caaafd065c050d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27948349"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562080"
 ---
 # <a name="create-plannerbucket"></a>Criar plannerBucket
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Use essa API para criar um novo **plannerBucket**.
 
@@ -52,7 +54,7 @@ Este é um exemplo da solicitação.
   "name": "create_plannerbucket_from_planner"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/planner/buckets
+POST https://graph.microsoft.com/beta/planner/buckets
 Content-type: application/json
 Content-length: 92
 
@@ -85,10 +87,13 @@ Content-length: 145
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create plannerBucket",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

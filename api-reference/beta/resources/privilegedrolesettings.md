@@ -1,19 +1,19 @@
 ---
-title: tipo de recurso de privilegedRoleSettings
-description: Representa as configurações para uma função privilegiada.
+title: tipo de recurso privilegedRoleSettings
+description: Representa as configurações de uma função privilegiada.
 localization_priority: Normal
 ms.openlocfilehash: 7d4c14065defc63190d1d25b435c734b9f219e36
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642776"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563237"
 ---
-# <a name="privilegedrolesettings-resource-type"></a>tipo de recurso de privilegedRoleSettings
+# <a name="privilegedrolesettings-resource-type"></a>tipo de recurso privilegedRoleSettings
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa as configurações para uma função privilegiada.
+Representa as configurações de uma função privilegiada.
 
 
 ## <a name="methods"></a>Métodos
@@ -25,17 +25,17 @@ Representa as configurações para uma função privilegiada.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|elevationDuration|duration|A duração quando a função for ativada.|
-|id|string| O identificador exclusivo para as configurações de função. Somente leitura.|
-|isMfaOnElevationConfigurable|boolean|**true** se mfaOnElevation é configurável. **false** se mfaOnElevation não é configurável.|
-|lastGlobalAdmin|boolean|Interno usado apenas.|
-|maxElavationDuration|duration|Duração máxima para a função ativada.|
-|mfaOnElevation|boolean|**true** se MFA é necessária para ativar a função. **false** se MFA não é necessário para ativar a função.|
+|elevationDuration|duration|A duração quando a função é ativada.|
+|id|string| O identificador exclusivo das configurações de função. Somente leitura.|
+|isMfaOnElevationConfigurable|booliano|**true** se mfaOnElevation é configurável. **false** se mfaOnElevation não é configurável.|
+|lastGlobalAdmin|booliano|Somente para uso interno.|
+|maxElavationDuration|duration|Duração máxima da função ativada.|
+|mfaOnElevation|booliano|**true** se a MFA é necessária para ativar a função. **false** se a MFA não é necessária para ativar a função.|
 |minElevationDuration|duration|Duração mínima para a função ativada.|
-|notificationToUserOnElevation|boolean|**True** se enviar notificação ao usuário final quando a função é ativada. **False** se não enviar notificação quando a função é ativada.|
-|ticketingInfoOnElevation|boolean|**true** se as informações de tickets são necessária quando ativar a função. **false** se as informações de tickets não são necessária quando ativar a função.|
-|approvalOnElevation|boolean|**true** se a aprovação é necessária quando ativar a função. **false** se a aprovação não é necessária quando ativar a função.|
-|approverIds|array|Lista de ids de aprovação, se a aprovação é necessária para a ativação.|
+|notificationToUserOnElevation|booliano|**true** se enviar notificação para o usuário final quando a função é ativada. **false** se não enviar notificações quando a função for ativada.|
+|ticketingInfoOnElevation|booliano|**true** se as informações de tíquete são necessárias ao ativar a função. **false** se as informações de tíquete não são necessárias ao ativar a função.|
+|approvalOnElevation|booliano|**true** se a aprovação é necessária ao ativar a função. **false** se a aprovação não é necessária ao ativar a função.|
+|approverIds|array|Lista de IDs de aprovação, se a aprovação for necessária para ativação.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
