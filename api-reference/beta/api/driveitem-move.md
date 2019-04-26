@@ -5,14 +5,16 @@ ms.date: 09/10/2017
 title: Mover um arquivo ou pasta
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 18bd8493babed354576c5b8066b3bab5de537e65
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 95246dc6de4a618de12804183ca34ebf828930ed
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454332"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325295"
 ---
 # <a name="move-a-driveitem-to-a-new-folder"></a>Mover um DriveItem para uma nova pasta
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Para mover um DriveItem para um novo item pai, o aplicativo solicita a atualização de **parentReference** do DriveItem a ser movido.
 
@@ -44,7 +46,7 @@ PATCH /users/{user-id}/drive/items/{item-id}
 
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
 
-| Name          | Tipo   | Descrição                                                                                                                                                         |
+| Nome          | Tipo   | Descrição                                                                                                                                                         |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | if-match      | String | Se este cabeçalho de solicitação estiver incluso e a eTag (ou cTag) fornecida corresponder à eTag atual da pasta, uma resposta `412 Precondition Failed` será exibida. |
 
@@ -63,7 +65,7 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK` e o recurs
 
 Este exemplo move um item especificado por {item-id} para uma pasta na unidade do usuário com a ID `new-parent-folder-id`.
 
-<!-- { "blockType": "request", "name": "move-item", "scopes": "files.readwrite", "tags": "service.graph" } -->
+<!-- { "blockType": "request", "name": "move-item", "scopes": "files.readwrite" } -->
 
 ```http
 PATCH /me/drive/items/{item-id}
@@ -71,7 +73,7 @@ Content-type: application/json
 
 {
   "parentReference": {
-    "id": "{new-parent-folder-id}"
+    "id": "new-parent-folder-id"
   },
   "name": "new-item-name.txt"
 }
@@ -105,10 +107,13 @@ Confira mais informações sobre como os erros são retornados em [Respostas de 
 
 [error-response]: /graph/errors
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Move an item to another location or rename the item.",
   "keywords": "move,rename,mv,change location",
   "section": "documentation",
-  "tocPath": "Items/Move"
-} -->
+  "tocPath": "Items/Move",
+  "suppressions": []
+}
+-->

@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: Upload de arquivos retomável
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: b0495a0c63400d6476c1ad9312e708b9ac880e42
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3801be631ab64c6ab2cb25ce48b4e846f9d77287
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454437"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325316"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>Carregar arquivos grandes com uma sessão de upload
 
@@ -81,7 +81,7 @@ O exemplo a seguir controla o comportamento se o nome do arquivo já tiver sido 
 
 ### <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
 
-| Name       | Valor | Descrição                                                                                                                                                            |
+| Nome       | Valor | Descrição                                                                                                                                                            |
 |:-----------|:------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | *if-match* | etag  | Se esse cabeçalho de solicitação for incluído e a eTag (ou cTag) fornecida não corresponder à eTag atual no item, retornará uma resposta de erro `412 Precondition Failed`. |
 
@@ -97,7 +97,7 @@ O exemplo a seguir controla o comportamento se o nome do arquivo já tiver sido 
 | Propriedade             | Tipo               | Descrição
 |:---------------------|:-------------------|:---------------------------------
 | description          | String             | Fornece uma descrição do item visível para o usuário. Leitura e gravação. Somente no OneDrive Personal.
-| nome                 | String             | O nome do item (nome do arquivo e extensão). Leitura e gravação.
+| name                 | String             | O nome do item (nome do arquivo e extensão). Leitura e gravação.
 
 ### <a name="request"></a>Solicitação
 
@@ -413,8 +413,6 @@ Confira o tópico [Respostas de erro][error-response] para saber detalhes sobre 
   "description": "Upload large files using an upload session.",
   "keywords": "upload,large file,fragment,BITS",
   "section": "documentation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/driveitem-createuploadsession.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -4,14 +4,16 @@ description: Recupere uma lista de escolas de um usuário.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 594a38d82de173d3a6a93607fdac61cca60e7cac
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4722f4777c4cd13923700c4d290282ce9d71393c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32457413"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33321923"
 ---
 # <a name="list-schools"></a>Listar escolas
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Recupere uma lista de escolas de um usuário.
 
@@ -52,7 +54,7 @@ Este é um exemplo de solicitação.
   "name": "get_schools"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/education/me/schools
+GET https://graph.microsoft.com/beta/education/me/schools
 ```
 ##### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
@@ -107,10 +109,13 @@ Content-length: 345
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List schools",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

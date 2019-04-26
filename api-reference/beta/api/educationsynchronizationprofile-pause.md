@@ -4,12 +4,12 @@ description: PaUsar a sincronização de um perfil de sincronização de dados e
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 5c9ba7d2ab3f67880105d45d9d98506b8e8caaac
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e903ff08c6bb2e3a3bd56a20ca526a0b1ff42909
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32464688"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324377"
 ---
 # <a name="pause-sync-on-an-educationsynchronizationprofile"></a>PaUsar a sincronização em um educationSynchronizationProfile
 
@@ -64,11 +64,3 @@ Não há corpo de resposta.
 ```
 HTTP/1.1 200 OK
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/educationsynchronizationprofile-pause.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

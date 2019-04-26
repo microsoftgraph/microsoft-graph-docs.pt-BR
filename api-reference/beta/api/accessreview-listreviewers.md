@@ -4,12 +4,12 @@ description: No recurso de revisões do Azure AD Access, recupere os revisores d
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 39aa08f802182949ac796445a736ddea24ff18a6
-ms.sourcegitcommit: 4bdcb5cd3227ff009e10868f2936b3153372b87a
+ms.openlocfilehash: 7be3d5ea922f8d2dca87dba005e62fd30fef3540
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/25/2019
-ms.locfileid: "33299623"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33323073"
 ---
 # <a name="list-accessreview-reviewers"></a>Listar revisores do accessReview
 
@@ -82,8 +82,8 @@ Content-type: application/json
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Obter accessReview](accessreview-get.md) |  [accessReview](../resources/accessreview.md) |  Recupere uma revisão do Access. |
-|[Adicionar revisor accessReview](accessreview-addreviewer.md) |     Nenhum.   |   Adicionar um revisor a um accessReview. |
-|[Remover revisor accessReview](accessreview-removereviewer.md) | Nenhum. |   Remover um revisor de um accessReview. |
+|[Adicionar revisor accessReview](accessreview-addreviewer.md) |     Nenhum   |   Adicionar um revisor a um accessReview. |
+|[Remover revisor accessReview](accessreview-removereviewer.md) | Nenhum |   Remover um revisor de um accessReview. |
 
 
 <!--

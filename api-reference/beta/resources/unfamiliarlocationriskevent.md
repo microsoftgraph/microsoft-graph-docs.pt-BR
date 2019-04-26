@@ -2,12 +2,12 @@
 title: tipo de recurso unfamiliarLocationRiskEvent
 description: Um evento de risco detectado pela proteção de identidade do Azure Active Directory na qual é feita uma tentativa de entrada de uma conta a partir de um novo local para esse usuário. As informações completas sobre eventos de risco podem ser encontradas na documentação de proteção de identidade do Azure AD.
 localization_priority: Normal
-ms.openlocfilehash: adad214c0ac58540f1115b836c2c5f26faa6c031
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 984f11f7e47a251d49acd315d29504216b7995f6
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32584261"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345469"
 ---
 # <a name="unfamiliarlocationriskevent-resource-type"></a>tipo de recurso unfamiliarLocationRiskEvent
 
@@ -41,7 +41,7 @@ Um evento de risco detectado pela [proteção de identidade do Azure Active Dire
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|impactedUser|[Usuário](user.md)| Somente leitura. Anulável.|
+|impactedUser|[user](user.md)| Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 

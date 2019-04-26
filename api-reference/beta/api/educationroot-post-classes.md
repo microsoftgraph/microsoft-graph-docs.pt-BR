@@ -4,14 +4,16 @@ description: Crie uma nova aula. Isso também criará um grupo universal. Quando
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 9d6146251bf5f5badd733ab58272adbc0e71dea3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 50b5cfcffdf6509d5da13a12dbf1829fde5e2420
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32457732"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324826"
 ---
 # <a name="create-educationclass"></a>Criar educationClass
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Crie uma nova aula. Isso também criará um grupo universal. Quando você usar essa API para criar uma aula, ela adicionará propriedades especiais ao grupo, que adicionará recursos como atribuições e tratamento especial no Microsoft Teams.
 
@@ -50,7 +52,7 @@ Este é um exemplo de solicitação.
   "name": "create_educationclass_from_educationroot"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/education/classes
+POST https://graph.microsoft.com/beta/education/classes
 Content-type: application/json
 Content-length: 224
 
@@ -100,10 +102,13 @@ Content-length: 224
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create educationClass",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

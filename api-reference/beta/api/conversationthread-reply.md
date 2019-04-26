@@ -4,14 +4,16 @@ description: 'Responde a um thread em uma conversa de grupo e adicione uma nova 
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 54609d291180fba6bc771ac2932ff3ef25d5d82f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ae8899990cf13b14644ff94db576e64e568c4832
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32455342"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33326105"
 ---
 # <a name="conversationthread-reply"></a>conversationThread: reply
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Responde a um thread em uma conversa de grupo e adicione uma nova postagem a ele. Você pode especificar a conversa pai na solicitação ou apenas o thread, sem a conversa pai.
 
@@ -22,7 +24,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Sem suporte. |
+|Aplicativo | Sem suporte.    |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -56,7 +58,7 @@ Este é um exemplo da solicitação.
   "name": "conversationthread_reply"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}/reply
+POST https://graph.microsoft.com/beta/groups/{id}/threads/{id}/reply
 Content-type: application/json
 Content-length: 1131
 
@@ -82,10 +84,13 @@ HTTP/1.1 202 Accepted
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "conversationThread: reply",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

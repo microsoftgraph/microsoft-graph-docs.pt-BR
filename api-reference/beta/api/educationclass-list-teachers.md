@@ -4,14 +4,16 @@ description: Recupere uma lista de professores de uma aula. Os tokens delegados 
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 16f402ba6892ae02d98902688e1cf3b04be316d7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e33dc583d563362a2e18658aedb915b9bf5531ad
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32457726"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324609"
 ---
 # <a name="list-teachers"></a>Listar professores
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Recupere uma lista de professores de uma aula. Os tokens delegados devem ser membros da aula para obterem a lista de professores.
 
@@ -49,7 +51,7 @@ Este é um exemplo de solicitação.
   "name": "get_teachers"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/teachers
+GET https://graph.microsoft.com/beta/education/classes/11023/teachers
 ```
 ##### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
@@ -106,10 +108,13 @@ Content-length: 593
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List teachers",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

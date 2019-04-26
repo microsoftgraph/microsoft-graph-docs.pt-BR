@@ -4,14 +4,16 @@ description: Recupera as propriedades e os relacionamentos do objeto directoryro
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: aca1a383f0b445d7bb5feafbba3aec052c9ebc89
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f41b0fe0e23b6b5595a789a8d03b95a5c8ce6e5b
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454901"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325873"
 ---
 # <a name="get-directoryroletemplate"></a>Obter directoryRoleTemplate
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Recupera as propriedades e os relacionamentos do objeto directoryroletemplate.
 ## <a name="permissions"></a>Permissões
@@ -50,7 +52,7 @@ Este é um exemplo da solicitação.
   "name": "get_directoryroletemplate"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/directoryRoleTemplates/{id}
+GET https://graph.microsoft.com/beta/directoryRoleTemplates/{id}
 ```
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
@@ -73,10 +75,13 @@ Content-length: 98
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get directoryRoleTemplate",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

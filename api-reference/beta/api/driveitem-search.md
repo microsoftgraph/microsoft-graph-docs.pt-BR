@@ -3,16 +3,18 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Pesquisar arquivos
-localization_priority: Priority
+localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 201102a5332bc6e4ae6fe7d43a71238bb849b21e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 13e33a66cb2e32702d2afd1205959fd19477ead1
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454318"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325360"
 ---
 # <a name="search-for-a-driveitems-within-a-drive"></a>Pesquisar um DriveItem em uma unidade
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Pesquise a hierarquia de itens para itens que correspondam a uma consulta.
 Você pode pesquisar em uma hierarquia de pastas, uma unidade inteira ou arquivos compartilhados com o usuário atual.
@@ -55,7 +57,7 @@ Este método oferece suporte aos [parâmetros de consulta OData](/graph/query-pa
 
 Aqui está um exemplo da solicitação de que pesquisa o OneDrive do usuário atual
 
-<!-- { "blockType": "request", "name": "item_search", "tags": "service.graph" }-->
+<!-- { "blockType": "request", "name": "item_search" }-->
 
 ```http
 GET /me/drive/root/search(q='{search-query}')
@@ -98,7 +100,7 @@ Além de procurar itens em uma unidade, seu aplicativo pode pesquisar amplamente
 
 ### <a name="example"></a>Exemplo
 
-<!-- { "blockType": "request", "name": "item_search_all", "tags": "service.graph" }-->
+<!-- { "blockType": "request", "name": "item_search_all" }-->
 
 ```http
 GET /me/drive/search(q='{search-query}')
@@ -121,7 +123,7 @@ Content-type: application/json
         "name": "Contoso Project",
         "folder": {},
         "searchResult": { "onClickTelemetryUrl": "https://bing.com/0123456789abc!123" },
-        "remoteItem": { "id": "!23141901", "parentReference": { "driveId": "s!1020101jlkjl12lx" } }
+        "remoteItem": { "id": "!23141901", "driveId": "s!1020101jlkjl12lx" }
       },
       {
         "id": "0123456789abc!456",
@@ -142,10 +144,13 @@ Confira [Respostas de erro][error-response] para saber mais sobre como os erros 
 [item-resource]: ../resources/driveitem.md
 [odata-query-parameters]: /graph/query-parameters
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Search for a file across a OneDrive.",
   "keywords": "search,query,bing,filename,content",
   "section": "documentation",
-  "tocPath": "Items/Search"
-} -->
+  "tocPath": "Items/Search",
+  "suppressions": []
+}
+-->

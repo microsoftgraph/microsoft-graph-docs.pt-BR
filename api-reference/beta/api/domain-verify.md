@@ -4,14 +4,16 @@ description: Valida a propriedade do domínio.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c4289e6c67844238460be9e706b8ff2f51c55035
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c8a4c689d4302cfcaeb4e2bf55168fbff99d3b2b
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454852"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33326194"
 ---
 # <a name="domain-verify"></a>domain: verify
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Valida a propriedade do domínio.
 
@@ -57,11 +59,11 @@ Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto 
   "name": "domain_verify"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/domains/{domain-name}/verify
+POST https://graph.microsoft.com/beta/domains/contoso.com/verify
 ```
 
 ##### <a name="response"></a>Resposta
-Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -79,16 +81,19 @@ Content-length: 192
   "isDefault": true,
   "isInitial": true,
   "isRoot": true,
-  "id": "contoso.com"
+  "name": "contoso.com"
 }
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "domain: verify",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

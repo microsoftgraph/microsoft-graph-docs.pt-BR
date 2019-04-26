@@ -4,12 +4,12 @@ description: Atualize uma propriedade de alerta editável em qualquer solução 
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 8b1fec6bfca2ce116bc35c4a7c8a115418b15012
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ac757bb6248902f097ebf49d803a323977976acd
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32459217"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33322674"
 ---
 # <a name="update-alert"></a>Atualizar alerta
 
@@ -40,7 +40,7 @@ PATCH /security/alerts/{alert_id}
 
 | Nome       | Descrição|
 |:-----------|:-----------|
-| Authorization  | Portador {código}. Obrigatório.|
+| Autorização  | Portador {código}. Obrigatório.|
 |Preferir | Return = representação |
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -51,10 +51,10 @@ No corpo da solicitação, forneça uma representação JSON dos valores de camp
 |:---------------|:--------|:----------|
 |assignedTo|String|Nome do analista ao qual o alerta é atribuído para a triagem, investigação ou correção.|
 |closedDateTime|DateTimeOffset|Tempo em que o alerta foi fechado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
-|comentários|Coleção de cadeias de caracteres|Comentários de analista sobre o alerta (para o gerenciamento de alerta do cliente).|
+|comentários|String collection|Comentários de analista sobre o alerta (para o gerenciamento de alerta do cliente).|
 |comentários|Enumeração alertFeedback|Comentários do analista no alerta. Os valores possíveis são: `unknown`, `truePositive`, `falsePositive`, `benignPositive`.|
 |status|Enumeração alertStatus|Status do ciclo de vida de alerta (estágio). Os valores possíveis são: `unknown`, `newAlert`, `inProgress`, `resolved`.|
-|tags|String collection|Rótulos definíveis pelo usuário que podem ser aplicados a um alerta e podem servir como condições de filtro (por exemplo, "HVA", "vimos).|
+|marcações|Coleção String|Rótulos definíveis pelo usuário que podem ser aplicados a um alerta e podem servir como condições de filtro (por exemplo, "HVA", "vimos).|
 |vendorInformation |[securityVendorInformation](../resources/securityvendorinformation.md)|Tipo complexo que contém detalhes sobre o fornecedor, provedor e subprovedor de produtos / serviços de segurança (por exemplo, fornecedor = Microsoft; provedor = Windows Defender ATP; subProvedor = AppLocker). **Os campos Provider e Vendor são necessários.**|
 
 ## <a name="response"></a>Resposta
@@ -174,8 +174,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/alert-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

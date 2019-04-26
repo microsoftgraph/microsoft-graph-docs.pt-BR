@@ -2,12 +2,12 @@
 title: Tipo de recurso itemAttachment
 description: Um contato, evento ou mensagem que está anexado a outro evento,
 localization_priority: Normal
-ms.openlocfilehash: cce33cb7597f04435daff723a0125305968eea99
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 91fedeac846d6f33aba6b4504eae71fe233a4324
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581089"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345411"
 ---
 # <a name="itemattachment-resource-type"></a>Tipo de recurso itemAttachment
 
@@ -22,19 +22,19 @@ Derivado de [attachment](attachment.md).
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
 |[Get](../api/attachment-get.md) | [itemAttachment](itemattachment.md) |Leia as propriedades e os relacionamentos do objeto itemAttachment.|
-|[Excluir](../api/attachment-delete.md) | Nenhum |Exclua o objeto itemAttachment. |
+|[Delete](../api/attachment-delete.md) | Nenhum |Exclua o objeto itemAttachment. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |contentType|String|O tipo de conteúdo do anexo.|
-|id|Cadeia de caracteres| A ID do anexo.|
+|id|String| A ID do anexo.|
 |isInline|Booliano|Defina como verdadeiro se o anexo estiver embutido, como uma imagem incorporada no corpo do item.|
 |lastModifiedDateTime|DateTimeOffset|Última data e hora em que o anexo foi alterado.|
-|name|String|O nome de exibição do anexo.|
+|name|Cadeia de caracteres|O nome de exibição do anexo.|
 |size|Int32|O tamanho do anexo em bytes.|
 
-## <a name="relationships"></a>Relações
+## <a name="relationships"></a>Relacionamentos
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |item|[OutlookItem](outlookitem.md)|O contato anexado, a mensagem ou o evento. Propriedade de navegação.|
@@ -45,6 +45,7 @@ Veja a seguir uma representação JSON do recurso
 
 <!-- {
   "blockType": "resource",
+  "keyProperty":"id",
   "optionalProperties": [
     "item"
   ],
@@ -71,8 +72,6 @@ Veja a seguir uma representação JSON do recurso
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/itemattachment.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

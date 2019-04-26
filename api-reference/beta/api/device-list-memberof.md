@@ -4,14 +4,16 @@ description: Obter grupos dos quais este dispositivo é membro direto. Essa oper
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8cd803fbb89f16488e29b0f6490fbe06eee8f6c9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f8760216d4954840ac72a0e7bc6adaaebdfe8fa5
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32455252"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33326082"
 ---
 # <a name="list-device-groups"></a>Listar grupos de dispositivos
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Obter grupos dos quais este dispositivo é membro direto. Essa operação não é transitiva.
 
@@ -55,7 +57,7 @@ Este é um exemplo da solicitação.
   "name": "get_user_memberof"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/devices/{id}/memberOf
+GET https://graph.microsoft.com/beta/devices/{id}/memberOf
 ```
 
 ### <a name="response"></a>Resposta
@@ -88,10 +90,13 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List memberOf",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

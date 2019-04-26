@@ -1,18 +1,18 @@
 ---
 title: Listar acceptedSenders
-description: Obter uma lista de usuários ou grupos que estão na lista acceptedSenders desse grupo.
+description: Obtenha uma lista de usuários ou grupos que estão na lista de remetentes aceitos para este grupo.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 210d7ddde215cfbbe52ad28e4c07168cfb17ff28
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 24430e4e7dd6a6d591fb24c5f029e268d46c65ca
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32502383"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33321282"
 ---
 # <a name="list-acceptedsenders"></a>Listar acceptedSenders
-Obter uma lista de usuários ou grupos que estão na lista acceptedSenders desse grupo.
+Obtenha uma lista de usuários ou grupos que estão na lista de remetentes aceitos para este grupo.
 
 Os usuários na lista de remetentes aceitos podem postar em conversas do grupo (identificado na URL da solicitação GET). Certifique-se de não especificar o mesmo usuário ou grupo nas listas de remetentes aceitos e rejeitados, caso contrário você receberá um erro.
 

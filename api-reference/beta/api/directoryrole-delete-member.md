@@ -4,14 +4,16 @@ description: Remove um membro de um directoryRole.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c45436660ed84476efd293095efb185757c01249
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 945b501b731826fab2b9072da8d662db8491289c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32455119"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325944"
 ---
 # <a name="remove-directory-role-member"></a>Remover membro da função de diretório
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Remove um membro de um directoryRole.
 
@@ -31,7 +33,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /directoryRoles/{id}/members/{id}/$ref
+DELETE /directoryroles/{id}/members/{id}/$ref
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -59,7 +61,7 @@ Este é um exemplo da solicitação.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/directoryRoles/{id}/members/{id}/$ref
+DELETE https://graph.microsoft.com/beta/directoryroles/{id}/members/{id}/$ref
 ```
 
 ##### <a name="response"></a>Resposta
@@ -76,10 +78,13 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Delete a member",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

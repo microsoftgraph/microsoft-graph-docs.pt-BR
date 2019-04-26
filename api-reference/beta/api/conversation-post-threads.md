@@ -1,19 +1,21 @@
 ---
 title: Criar thread
-description: 'Crie um novo thread na conversa especificada. '
+description: Crie um novo thread na conversa especificada.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 8a4284e51ee74b43ae3e678ed8a54300cf9b9fe9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f4b939758906da1814ee4ffc2a722427bf4e7f6e
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32455594"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33326678"
 ---
 # <a name="create-thread"></a>Criar thread
 
-Crie um novo thread na conversa especificada. 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Crie um novo thread na conversa especificada.
 
 Um thread e uma postagem são criados conforme especificado. Use [responder ao thread](conversationthread-reply.md) para incluir postagens adicionais no thread. Ou, se receber a ID de postagem, você também poderá [responder](post-reply.md) a essa postagem no thread.
 
@@ -53,7 +55,7 @@ Este é um exemplo da solicitação.
   "name": "create_conversationthread_from_conversation"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/{id}/conversations/{id}/threads
+POST https://graph.microsoft.com/beta/groups/{id}/conversations/{id}/threads
 Content-type: application/json
 
 {
@@ -69,7 +71,7 @@ Content-type: application/json
 No corpo da solicitação, forneça uma representação JSON do objeto [ConversationThread](../resources/conversationthread.md).
 ##### <a name="response"></a>Resposta
 
-Se for bem-sucedido, este método retornará um código de resposta `201 Created` e o `id` do novo thread no corpo da resposta. Veja a seguir um exemplo da resposta. 
+Se for bem-sucedido, este método retornará um código de resposta `201 Created` e o `id` do novo thread no corpo da resposta. Veja a seguir um exemplo da resposta.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -87,10 +89,13 @@ Content-length: 346
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create thread",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

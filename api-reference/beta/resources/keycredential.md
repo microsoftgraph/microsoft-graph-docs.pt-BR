@@ -2,12 +2,12 @@
 title: tipo de recurso keyCredential
 description: Contém uma credencial de chave associada a um aplicativo ou a uma entidade de serviço. A **** Propriedade keycredentials do aplicativo e das entidades do servicePrincipalName é uma coleção de keycredential. ****
 localization_priority: Normal
-ms.openlocfilehash: 87223ab77bc18ca57fb2bd9635cd0790f0651fb7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 312821a91bdbb1ad15e136d2b7fc8f9184df4eac
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562668"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345383"
 ---
 # <a name="keycredential-resource-type"></a>tipo de recurso keyCredential
 
@@ -43,11 +43,11 @@ Veja a seguir uma representação JSON do recurso
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|customKeyIdentifier|Binário| Identificador de chave personalizada |
+|customKeyIdentifier|Binária| Identificador de chave personalizada |
 |endDateTime|DateTimeOffset|A data e a hora em que a credencial expira. O tipo TIMESTAMP representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |keyId|Guid|O identificador exclusivo (GUID) da chave.|
 |startDateTime|DateTimeOffset|A data e a hora em que a credencial se torna válida. O tipo TIMESTAMP representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|type|String|O tipo de credencial de chave; por exemplo, "simétrico".|
+|tipo|String|O tipo de credencial de chave; por exemplo, "simétrico".|
 |ocorrência|String|Uma cadeia de caracteres que descreve a finalidade para a qual a chave pode ser usada; por exemplo, "Verify".|
 |chave|Binário|            |
 

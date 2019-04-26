@@ -4,12 +4,12 @@ description: Atualiza as propriedades do objeto Application.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 335281a0ac37ae3b966f731112223f019a67437d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3c85608ad31d0d83607a49e06e2a46032e927bc4
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32459378"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33322891"
 ---
 # <a name="update-application"></a>Atualizar aplicativo
 
@@ -41,10 +41,10 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|Allowpublicclient e|Booliano| Especifica se o aplicativo pode atuar como um cliente público. Por exemplo, um aplicativo instalado em execução em um dispositivo móvel. O valor padrão é *false*. |
-|api|[api](../resources/api.md)| Especifica configurações para um aplicativo de API. |
+|Allowpublicclient e|Boolean| Especifica se o aplicativo pode atuar como um cliente público. Por exemplo, um aplicativo instalado em execução em um dispositivo móvel. O valor padrão é *false*. |
+|api|[apiApplication](../resources/apiapplication.md)| Especifica configurações para um aplicativo de API. |
 |appRoles|Coleção [appRole](../resources/approle.md)|A coleção de funções de aplicativo que um aplicativo pode declarar. Essas funções podem ser atribuídas a usuários, grupos ou entidades de serviço. Não anulável.|
-|É applicationaliases|Coleção de cadeias de caracteres| Os URIs que identificam o aplicativo. Para saber mais, confira [Objetos do aplicativo e objetos da entidade de serviço](https://azure.microsoft.com/documentation/articles/active-directory-application-objects/). O operador *any* é obrigatório para expressões de filtro em propriedades de vários valores. Não anulável. |
+|É applicationaliases|Coleção String| Os URIs que identificam o aplicativo. Para saber mais, confira [Objetos do aplicativo e objetos da entidade de serviço](https://azure.microsoft.com/documentation/articles/active-directory-application-objects/). O operador *any* é obrigatório para expressões de filtro em propriedades de vários valores. Não anulável. |
 |createdDateTime|DateTimeOffset| A data e a hora que o aplicativo foi registrado. |
 |deletedDateTime|DateTimeOffset| A data e a hora que o aplicativo foi excluído. |
 |displayName|String|O nome de exibição do aplicativo. |
@@ -52,12 +52,12 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |informações |[informationalUrl](../resources/informationalurl.md)| Informações de perfil básicas do aplicativo. | Especifica configurações para clientes instalados, como dispositivos móveis ou da área de trabalho. |
 |keyCredentials|Coleção [keyCredential](../resources/keycredential.md)|A coleção de credenciais chaves associada ao aplicativo Não anulável. |
 |logo|Stream|O principal logotipo do aplicativo. Não anulável. |
-|orgRestrictions|Coleção de cadeias de caracteres| A organização tenantIds à qual o aplicativo é restrito.  Se a coleção estiver vazia, o aplicativo será multilocatário (não restrito). Se a coleção contiver tenantIds, o aplicativo será restrito ao tenantIds organizacional na coleção. A especificação de outros locatários, mas não o tenantid onde o aplicativo está registrado indica que a própria tenantid do aplicativo está indiretamente incluída. |
+|orgRestrictions|Coleção String| A organização tenantIds à qual o aplicativo é restrito.  Se a coleção estiver vazia, o aplicativo será multilocatário (não restrito). Se a coleção contiver tenantIds, o aplicativo será restrito ao tenantIds organizacional na coleção. A especificação de outros locatários, mas não o tenantid onde o aplicativo está registrado indica que a própria tenantid do aplicativo está indiretamente incluída. |
 |passwordCredentials|Coleção [passwordCredential](../resources/passwordcredential.md)|A coleção de credenciais de senha associada ao aplicativo. Não anulável.|
 |preAuthorizedApplications|coleção [preauthorizedapplication e](../resources/preauthorizedapplication.md)| Lista os aplicativos e as permissões solicitadas para o consentimento implícito. Requer um administrador para ter fornecido o consentimento para o aplicativo. o preAuthorizedApplications não exige que o usuário concorde com as permissões solicitadas. As permissões listadas no preAuthorizedApplications não exigem o consentimento do usuário. No enTanto, as permissões adicionais solicitadas não listadas no preAuthorizedApplications exigem o consentimento do usuário. |
 |requiredResourceAccess|[requiredResourceAccess](../resources/requiredresourceaccess.md) collection|Especifica os recursos para os quais esse aplicativo requer acesso e o conjunto de escopos de permissão e funções de aplicativo do OAuth necessários em cada um desses recursos. Essa pré-configuração de acesso necessário aos recursos impulsiona a experiência de consentimento. Não anulável.|
 |tags|Coleção String| Sequências personalizadas que podem ser usadas para categorizar e identificar o aplicativo. |
-|web|[web](../resources/web.md)| Especifica configurações para um aplicativo Web. |
+|web|[webApplication](../resources/webApplication.md)| Especifica configurações para um aplicativo Web. |
 
 ## <a name="response"></a>Resposta
 
@@ -99,8 +99,6 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/application-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

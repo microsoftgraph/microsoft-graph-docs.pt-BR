@@ -4,12 +4,12 @@ description: Listar todos os envios associados a esta atribuição. Um professor
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 47088cb7a4290827ce75e35d3ac705b31addefac
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8e01bb3960b3a8d29b48f3365fc8f2f61f4bb627
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458247"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324604"
 ---
 # <a name="list-submissions"></a>Envios de lista
 
@@ -131,8 +131,6 @@ Content-length: 873
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/educationassignment-list-submissions.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -3,16 +3,18 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Sincronizar o conteúdo de uma unidade
-localization_priority: Priority
+localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 907c24a85230124473c6db5c067113e5c7d60ab5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ad99a7dd701c52def0879a8611cc49f96e4654b3
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454430"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325255"
 ---
 # <a name="track-changes-for-a-drive"></a>Controlar alterações para uma unidade
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Esse método permite que o seu aplicativo controle alterações em uma unidade e seus filhos com o passar do tempo.
 
@@ -75,7 +77,7 @@ Veja a seguir um exemplo de como chamar essa API para estabelecer seu estado loc
 
 Veja a seguir um exemplo da solicitação inicial.
 
-<!-- { "blockType": "request", "name": "get_item_delta_first", "tags": "service.graph" } -->
+<!-- { "blockType": "request", "name": "get_item_delta_first" } -->
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/root/delta
@@ -123,7 +125,7 @@ Veja a seguir um exemplo de como chamar essa API para atualizar seu estado local
 
 Veja a seguir um exemplo da solicitação após a solicitação inicial.
 
-<!-- { "blockType": "request", "name": "get-item-delta-last", "tags": "service.graph" }-->
+<!-- { "blockType": "request", "name": "get_item_delta_last" }-->
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/drive/root/delta(token='1230919asd190410jlka')
@@ -179,7 +181,7 @@ Para recuperar o deltaLink mais recente, chame `delta` com um parâmetro de cade
 
 ### <a name="request"></a>Solicitação
 
-<!-- { "blockType": "request", "name": "get-delta-latest", "scopes": "files.read", "tags": "service.graph", "target": "action" } -->
+<!-- { "blockType": "request", "name": "get-delta-latest", "scope": "files.read", "target": "action" } -->
 
 ```http
 GET /me/drive/root/delta?token=latest
@@ -187,7 +189,7 @@ GET /me/drive/root/delta?token=latest
 
 ### <a name="response"></a>Resposta
 
-<!-- { "blockType": "response", "isEmpty": true, "@odata.type": "Collection(microsoft.graph.driveItem)" } -->
+<!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)" } -->
 
 ```http
 HTTP/1.1 200 OK
@@ -230,10 +232,13 @@ Além dos erros de ressincronização detalhados acima, confira os detalhes sobr
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Sync changes from the service to your client state.",
   "keywords": "sync,delta,changes,$delta",
   "section": "documentation",
-  "tocPath": "Items/Sync changes"
-} -->
+  "tocPath": "Items/Sync changes",
+  "suppressions": []
+}
+-->

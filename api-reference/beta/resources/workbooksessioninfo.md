@@ -4,14 +4,16 @@ description: Fornece informações sobre a sessão de pasta de trabalho.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: a2975fdf58d0f1d3a72f1f76853125d0a98bb485
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3035574b92dfa703b926a81163efbb7f6eff764b
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32453280"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345770"
 ---
 # <a name="workbooksessioninfo-resource-type"></a>Tipo de recurso workbookSessionInfo
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Fornece informações sobre a sessão de pasta de trabalho.
 
@@ -40,3 +42,15 @@ Veja a seguir uma representação JSON do recurso
 | id  | string | ID da sessão de pasta de trabalho. |
 | persistChanges | string |  `true` para sessão persistente. `false` para sessão não persistente (modo de exibição) |
 
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "workbookSessionInfo resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": []
+}
+-->

@@ -2,12 +2,12 @@
 title: tipo de recurso objectMapping
 description: Define como um determinado objeto deve ser sincronizado do diretório de origem para o diretório de destino. Em particular, define como o objeto no diretório de origem deve corresponder a um objeto no diretório de destino, quais filtros de escopo (se houver) devem ser usados para decidir se queremos provisionar um determinado objeto e como os atributos do objeto devem ser transformados origem para o diretório de destino.
 localization_priority: Normal
-ms.openlocfilehash: 274d401c28abc25d904c259b00a673f3c0a53888
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 10b57c385d57a1fb5492bbb292e5ddc1fa2ff999
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581749"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345548"
 ---
 # <a name="objectmapping-resource-type"></a>tipo de recurso objectMapping
 
@@ -23,7 +23,7 @@ Os mapeamentos de objetos são a parte principal da [regra de sincronização](s
 |:--------------|:----------|:---------------|
 |attributeMappings  |coleção [attributeMapping](synchronization-attributemapping.md)    | Os mapeamentos de atributo definem quais atributos devem ser mapeados do objeto de origem para o objeto de destino e como eles devem fluir. Várias funções estão disponíveis para dar suporte à transformação dos valores de origem originais.|
 |enabled        |Boolean    |Quando `true`, esse mapeamento de objeto será processado durante a sincronização. Quando `false`, esse mapeamento de objeto será ignorado.|
-|flowTypes      |objectFlowtype    |Quais tipos de fluxo estão habilitados para este mapeamento de objeto. `Add`cria novos objetos no diretório de destino, `Update` modifica objetos existentes e `Delete` desprovisiona usuários existentes. O padrão é `Add, Update, Delete`. |
+|flowTypes      |objectFlowTypes    |Quais tipos de fluxo estão habilitados para este mapeamento de objeto. `Add`cria novos objetos no diretório de destino, `Update` modifica objetos existentes e `Delete` desprovisiona usuários existentes. O padrão é `Add, Update, Delete`. |
 |los       |coleção metadataEntry    |Propriedades de extensão adicionais. A menos que seja mencionado explicitamente, os valores de metadados não devem ser alterados.|
 |name           |String     |Nome amigável do mapeamento do objeto.|
 |escopo          |[filter](synchronization-filter.md)     |Define um filtro a ser usado ao decidir se um determinado objeto deve ser provisionado. Por exemplo, você pode querer provisionar apenas usuários que estão localizados nos EUA.|
@@ -58,7 +58,7 @@ Veja a seguir uma representação JSON do recurso.
 ## <a name="json-example"></a>Exemplo de JSON
 
 <!-- {
-  "blockType": "resource",
+  "blockType": "example",
   "optionalProperties": [
 
   ],
@@ -355,8 +355,6 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/synchronization-objectmapping.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

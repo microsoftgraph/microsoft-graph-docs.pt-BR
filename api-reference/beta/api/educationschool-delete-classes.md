@@ -4,14 +4,16 @@ description: Exclua uma classe de uma escola.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 462ba0700a3070c5f01eb8ce9b507a6a3617c177
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0b7ac85788c99cf5ba9773a5caced43e4f098386
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32457667"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324845"
 ---
 # <a name="remove-educationclass"></a>Remover educationClass
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Exclua uma classe de uma escola.
 
@@ -49,7 +51,7 @@ Este é um exemplo de solicitação.
   "name": "create_educationclass_from_educationschool"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/education/schools/{school-id}/classes/{class-id}
+DELETE https://graph.microsoft.com/beta/education/schools/10001/classes/11001
 ```
 
 ##### <a name="response"></a>Resposta
@@ -66,10 +68,13 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create educationClass",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

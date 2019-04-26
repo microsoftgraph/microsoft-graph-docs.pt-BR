@@ -4,12 +4,12 @@ description: ReTome a sincronização de um perfil de sincronização de dados e
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 50ffcb4ceab401a3041ecb69baa1de0409be94a4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8fd56ec1d825104cb442f9184c1735e34b557fce
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32464844"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324952"
 ---
 # <a name="resume-sync-on-an-educationsynchronizationprofile"></a>Continuar a sincronização em um educationSynchronizationProfile
 
@@ -64,11 +64,3 @@ Não há corpo de resposta.
 ```
 HTTP/1.1 200 OK
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/educationsynchronizationprofile-resume.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

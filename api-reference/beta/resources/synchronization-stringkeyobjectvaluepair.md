@@ -2,12 +2,12 @@
 title: tipo de recurso stringKeyObjectValuePair
 description: Representa um par chave-valor onde a chave é uma cadeia de caracteres e o valor é um objeto JSON arbitrário. Este é um tipo de OData aberto que espera ter uma propriedade chamada `value` que seja um objeto JSON válido.
 localization_priority: Normal
-ms.openlocfilehash: 8f939c177f2130813c6080d46ad78664f6118857
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 66b4438b73f0000c172db1df385088528d221be4
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32523207"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324798"
 ---
 # <a name="stringkeyobjectvaluepair-resource-type"></a>tipo de recurso stringKeyObjectValuePair
 
@@ -19,7 +19,7 @@ Representa um par chave-valor onde a chave é uma cadeia de caracteres e o valor
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |key|String|Chave.|
-|valor|Qualquer tamanho|Objeto JSON arbitrário.|
+|valor|Json|Objeto JSON arbitrário.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -35,7 +35,10 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "key": "String"
+  "key": "String",
+  "value": {
+    "@odata.type": "microsoft.graph.Json"
+  }
 }
 
 ```
@@ -49,8 +52,6 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/synchronization-stringkeyobjectvaluepair.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

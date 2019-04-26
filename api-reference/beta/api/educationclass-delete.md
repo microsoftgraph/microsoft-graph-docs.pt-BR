@@ -4,14 +4,16 @@ description: Exclua uma aula. Como uma aula também é um grupo universal, exclu
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: a7d5f376bd6d70229d8058084946fd474a692212
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 722e7986a32670a764f1dd11b2875194a1c5a257
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32457939"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324962"
 ---
 # <a name="delete-educationclass"></a>Excluir educationClass
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Exclua uma aula. Como uma aula também é um grupo universal, excluir uma aula exclui o grupo.
 
@@ -50,7 +52,7 @@ Este é um exemplo de solicitação.
   "name": "delete_educationclass"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/education/classes/{class-id}
+DELETE https://graph.microsoft.com/beta/education/classes/11022
 ```
 ##### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
@@ -65,10 +67,13 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Delete educationClass",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

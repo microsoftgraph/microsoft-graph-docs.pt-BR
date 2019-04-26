@@ -4,12 +4,12 @@ description: Obter funções de diretório recém-criadas, atualizadas ou exclu�
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: bd84e593b4bf26a1cbdd41bf62624b0013f8d807
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3ec1076eb3882c416289072b1042205cfaa8eb58
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454943"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325878"
 ---
 # <a name="directoryrole-delta"></a>directoryRole: Delta
 
@@ -21,7 +21,6 @@ Obter funções de diretório recém-criadas, atualizadas ou excluídas sem ter 
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
@@ -30,11 +29,13 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-Para começar a controlar as alterações, faça uma solicitação incluindo a função Delta no recurso directoryRole. 
+Para começar a controlar as alterações, faça uma solicitação incluindo a função Delta no recurso directoryRole.
 
 <!-- { "blockType": "ignored" } -->
 ```http
+
 GET /directoryRoles/delta
+
 ```
 
 ### <a name="query-parameters"></a>Parâmetros de consulta
@@ -88,7 +89,7 @@ GET https://graph.microsoft.com/beta/directoryRoles/delta
 ```
 
 ##### <a name="response"></a>Resposta
-Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- { 
   "blockType": "response",
   "truncated": true,
@@ -122,8 +123,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/directoryrole-delta.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

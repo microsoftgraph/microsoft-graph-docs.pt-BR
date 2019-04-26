@@ -4,12 +4,12 @@ description: Obter aplicativos recém-criados, atualizados ou excluídos sem ter
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 13b6f7809cf47edcc9de8c9ddfb052645b15f25a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 91ec3fc5d2a52061503cc158e046508105cd1c41
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32459244"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33322632"
 ---
 # <a name="application-delta"></a>Application: Delta
 
@@ -59,7 +59,7 @@ Este método dá suporte a Parâmetros de Consulta OData para ajudar a personali
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|
 |:---------------|:----------|
-| Authorization  | &lt;Token&gt; de portador|
+| Autorização  | &lt;Token&gt; de portador|
 | Content-Type  | application/json |
 
 ## <a name="request-body"></a>Corpo da solicitação
@@ -88,7 +88,7 @@ GET https://graph.microsoft.com/beta/applications/delta
 ```
 
 ##### <a name="response"></a>Resposta
-Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- { 
   "blockType": "response",
   "truncated": true,
@@ -143,8 +143,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/application-delta.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -2,12 +2,12 @@
 title: tipo de recurso suspiciousIpRiskEvent
 description: Um evento de risco detectado pela proteção de identidade do Azure Active Directory em que uma entrada de conta é tentada a partir de um endereço IP suspeito. As informações completas sobre eventos de risco podem ser encontradas na documentação de proteção de identidade do Azure AD.
 localization_priority: Normal
-ms.openlocfilehash: e144e1f631941076b5cee7cee20d90062564012a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f5151c5526dc4d7d63ce6b230705497f67db88dd
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32582056"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345682"
 ---
 # <a name="suspiciousipriskevent-resource-type"></a>tipo de recurso suspiciousIpRiskEvent
 
@@ -41,7 +41,7 @@ Um evento de risco detectado pela [proteção de identidade do Azure Active Dire
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|impactedUser|[Usuário](user.md)| Somente leitura. Anulável.|
+|impactedUser|[user](user.md)| Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 

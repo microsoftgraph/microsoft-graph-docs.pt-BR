@@ -2,14 +2,16 @@
 title: tipo de recurso licenseDetails
 description: Contém informações sobre uma licença atribuída a um usuário.
 localization_priority: Normal
-ms.openlocfilehash: 7036904e20173f8fefb6f4f02bd2473289de96c3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6b977dcff67ac9dc03890a4f2182d8b1d974f314
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562675"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345265"
 ---
 # <a name="licensedetails-resource-type"></a>tipo de recurso licenseDetails
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Contém informações sobre uma licença atribuída a um usuário.
 
@@ -37,7 +39,6 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
@@ -56,10 +57,13 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "licenseDetails resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

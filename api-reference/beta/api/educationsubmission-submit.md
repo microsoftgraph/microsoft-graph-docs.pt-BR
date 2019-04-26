@@ -4,12 +4,12 @@ description: Uma ação que indica que um aluno foi feito com o trabalho e está
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 3f67e5b07ed1093ee63e9b6fdf7647fa6891dacc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fd340c126c1a2b05bf71e2d91727ad3d9eee375c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32464723"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324669"
 ---
 # <a name="educationsubmission-submit"></a>educationSubmission: enviar
 
@@ -76,8 +76,6 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/educationsubmission-submit.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -4,12 +4,12 @@ description: No recurso de revisões do Azure AD Access, recupere as decisões d
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 123eeb46ba38937722e68bee6aaa001c86320106
-ms.sourcegitcommit: 4bdcb5cd3227ff009e10868f2936b3153372b87a
+ms.openlocfilehash: fee4b4adc4bc4e33964575976c67cfeaa077a34c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/25/2019
-ms.locfileid: "33299637"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33323720"
 ---
 # <a name="list-accessreview-decisions"></a>Listar decisões accessReview
 
@@ -88,10 +88,10 @@ Content-type: application/json
 |:---------------|:--------|:----------|
 |[Obter accessReview](accessreview-get.md) |  [accessReview](../resources/accessreview.md) |  Recupere uma revisão do Access. |
 |[Listar minhas decisões do accessReview](accessreview-listmydecisions.md) |        coleção [accessReviewDecision](../resources/accessreviewdecision.md)|    Como revisor, obtenha as minhas decisões de um accessReview.|
-|[Enviar lembrete accessReview](accessreview-sendreminder.md) |       Nenhum.   |   Envie um lembrete para os revisores de um accessReview. |
-|[Parar accessReview](accessreview-stop.md) |        Nenhum.   |   Parar um accessReview. |
-|[Redefinir decisões do accessReview](accessreview-reset.md) |        Nenhum.   |   ReDefina as decisões em um accessReview em andamento.|
-|[Aplicar decisões accessReview](accessreview-apply.md) |        Nenhum.   |   Aplique as decisões de um accessReview concluído.|
+|[Enviar lembrete accessReview](accessreview-sendreminder.md) |       Nenhum   |   Envie um lembrete para os revisores de um accessReview. |
+|[Parar accessReview](accessreview-stop.md) |        Nenhum   |   Parar um accessReview. |
+|[Redefinir decisões do accessReview](accessreview-reset.md) |        Nenhum   |   ReDefina as decisões em um accessReview em andamento.|
+|[Aplicar decisões accessReview](accessreview-apply.md) |        Nenhum   |   Aplique as decisões de um accessReview concluído.|
 
 
 <!--

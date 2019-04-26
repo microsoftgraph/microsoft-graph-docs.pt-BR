@@ -4,14 +4,16 @@ description: Obtenha uma coleção de pastas filho sob a pasta de contatos espec
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 5e4230976e032ff77189bf0b691ddcd365e92522
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 143a4e9fb6da24f80d088d295d4a11673833c80c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32455658"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33327230"
 ---
 # <a name="list-childfolders"></a>Listar childFolders
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Obtenha uma coleção de pastas filho sob a pasta de contatos especificada.
 ## <a name="permissions"></a>Permissões
@@ -50,7 +52,7 @@ Este é um exemplo da solicitação.
   "name": "get_childfolders"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/contactFolders/{id}/childFolders
+GET https://graph.microsoft.com/beta/me/contactFolders/{id}/childFolders
 ```
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
@@ -78,10 +80,13 @@ Content-length: 145
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List childFolders",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

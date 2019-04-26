@@ -1,17 +1,17 @@
 ---
-title: tipo de recurso de tabela dinâmica
+title: tipo de recurso workbookPivotTable
 description: Representa uma Tabela Dinâmica do Excel.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: fc43bf160e93e354ff58b2f960e8ec38d252287f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 99ad62474ef0c8e56ec5a699edac742ee28ae446
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32453874"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345779"
 ---
-# <a name="pivottable-resource-type"></a>tipo de recurso de tabela dinâmica
+# <a name="workbookpivottable-resource-type"></a>tipo de recurso workbookPivotTable
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -29,18 +29,19 @@ Representa uma Tabela Dinâmica do Excel.
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |id|Cadeia de caracteres| Id da Tabela Dinâmica.   Somente leitura.|
-|nome|String|Nome da Tabela Dinâmica.    |
+|name|String|Nome da Tabela Dinâmica.    |
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|planilha|[worksheet](worksheet.md)| A planilha que contém a Tabela Dinâmica atual. Somente leitura.   |
+|planilha|[workbookWorksheet](workbookworksheet.md)| A planilha que contém a Tabela Dinâmica atual. Somente leitura.   |
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
@@ -54,11 +55,3 @@ Veja a seguir uma representação JSON do recurso.
 }
 
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/workbookpivottable.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

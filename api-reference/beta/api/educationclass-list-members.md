@@ -4,14 +4,16 @@ description: Recupere os professores e alunos de uma aula. Se o token delegado f
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 2efb76558335974e180819cf2477d3b9a52f86f8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 78eb451f0feed9781a961e4a0598167cfdcbbd95
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32457785"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324697"
 ---
 # <a name="list-members"></a>Listar membros
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Recupere os professores e alunos de uma aula. Se o token delegado for usado, os membros poderão ser vistos apenas por outros membros da aula.
 
@@ -21,7 +23,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  EduRoster.ReadBasic  |
-|Delegado (conta pessoal da conta Microsoft) |  Sem suporte  |
+|Delegado (conta pessoal da Microsoft) |  Sem suporte  |
 |Aplicativo | EduRoster. Read. All, EduRoster. ReadWrite. All mais member. Read. Hidden | 
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -49,7 +51,7 @@ Este é um exemplo de solicitação.
   "name": "get_members"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/members
+GET https://graph.microsoft.com/beta/education/classes/11016/members
 ```
 ##### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
@@ -92,6 +94,8 @@ Content-length: 593
         "street": "12345 Main St."
       },
       "primaryRole": "teacher",
+      "externalId": "13013",
+      "teacherNumber": "8802",
       "residenceAddress": {
         "city": "Los Angeles",
         "countryOrRegion": "United States",
@@ -99,10 +103,6 @@ Content-length: 593
         "state": "CA",
         "street": "12345 Main St."
       },
-      "teacher": {
-        "externalId": "13013",
-        "teacherNumber": "8802",
-      }
     },
     {
       "id": "13005",
@@ -126,15 +126,13 @@ Content-length: 593
         "state": "NY",
         "street": "12345 Main St."
       },
-      "student": {
-        "birthDate": "2001-01-01T00:00:00Z",
-        "externalId": "13005",
-        "gender": "female",
-        "grade": "9",
-        "graduationYear": "2019",
-        "studentNumber": "13005",
-      },
       "primaryRole": "student",
+      "externalId": "13005",
+      "birthDate": "2001-01-01T00:00:00Z",
+      "gender": "female",
+      "grade": "9",
+      "graduationYear": "2019",
+      "studentNumber": "13005",
       "residenceAddress": {
         "city": "Long Beach",
         "countryOrRegion": "United States",
@@ -149,10 +147,13 @@ Content-length: 593
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List members",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

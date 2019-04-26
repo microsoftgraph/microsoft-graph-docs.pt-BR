@@ -2,12 +2,12 @@
 title: Tipo de recurso itemBody
 description: Representa as propriedades do corpo de um item, como uma mensagem, um evento ou uma postagem de grupo.
 localization_priority: Normal
-ms.openlocfilehash: 1cf79f78caa7b2772bc44b99c6b9bdc526340a87
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e035c08d5f13d67bfb5871501e5a0f57745b7543
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32523472"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345588"
 ---
 # <a name="itembody-resource-type"></a>Tipo de recurso itemBody
 
@@ -50,8 +50,6 @@ Veja a seguir uma representação JSON do recurso
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/itembody.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

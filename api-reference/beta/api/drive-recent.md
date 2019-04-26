@@ -5,14 +5,16 @@ ms.date: 09/10/2017
 title: Listar arquivos recentes
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: a32e9c3cf0e1d8265092e206b1083337dab9aa58
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3463c2a9500bda13290e898e6e86561849278631
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454810"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325376"
 ---
 # <a name="list-recent-files"></a>Liste arquivos recentes
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Listar uma coleção de itens que foram usados recentemente pelo usuário conectado. Esta coleção inclui itens que estão na unidade do usuário, assim como itens aos quais ele tem acesso por meio de outras unidades.
 
@@ -31,7 +33,6 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "request",
        "name": "view-recent-files", 
        "scopes": "files.read",
-       "tags": "service.graph",
        "target": "action" } -->
 
 ```http
@@ -96,10 +97,13 @@ Alguns driveItems retornados da ação **recent** incluirão a faceta **remoteIt
 GET /drives/{remoteItem-driveId}/items/{remoteItem-id}
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Retrieve a list of recently used files for the owner of the drive.",
   "keywords": "drive,onedrive.drive,default drive",
   "section": "documentation",
-  "tocPath": "Drives/Recent files"
-} -->
+  "tocPath": "Drives/Recent files",
+  "suppressions": []
+}
+-->

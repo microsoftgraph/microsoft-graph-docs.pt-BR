@@ -4,12 +4,12 @@ description: 'Representa um locatário do Azure Active Directory. '
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d06ba07c3cee402b88ad5e85e1b0bacc59b9810c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5f2b7d83f8c78eb11ad4f22d456d9791982aab5c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568553"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345544"
 ---
 # <a name="organization-resource-type"></a>tipo de recurso organization
 
@@ -42,23 +42,22 @@ Esse recurso permite que você adicione seus próprios dados às propriedades pe
 |countryLetterCode|String| Abreviação de país/região da organização |
 |createdDateTime|DateTimeOffset| Carimbo de hora de criação da organização. Não é possível modificar o valor e ele é preenchido automaticamente quando a organização é criada. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura. |
 | deletedDateTime                    | DateTimeOffset                                                    | Representa a data e a hora que o locatário do Azure AD foi excluído usando o formato ISO 8601 e está sempre no horário do UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura.                                                                                     |
-|dirSyncEnabled|Booliano|**True** se esse objeto está sincronizado de um diretório local; **false** se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; **null** se esse objeto nunca foi sido sincronizado de um diretório local (padrão).|
+|dirSyncEnabled|Boolean|**True** se esse objeto está sincronizado de um diretório local; **false** se esse objeto foi originalmente sincronizado de um diretório local, mas não está mais sincronizado; **null** se esse objeto nunca foi sido sincronizado de um diretório local (padrão).|
 |displayName|String|O nome de exibição do locatário.|
 |id|Cadeia de caracteres|A ID do locatário, um identificador exclusivo que representa a organização (ou Locatário). Herdado de [directoryObject](directoryobject.md). Chave. Não anulável. Somente leitura.|
 |isMultipleDataLocationsForServicesEnabled|Boolean|**verdadeiro** se a organização estiver habilitada no Multi-Geo; **falso** se a organização não estiver habilitada no Multi-Geo, **nulo** (padrão). Somente leitura. Para saber mais, confira [OneDrive Online Multi-Geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
-|marketingNotificationEmails|Coleção de cadeias de caracteres| Não anulável.            |
+|marketingNotificationEmails|String collection| Não anulável.            |
 |objectType|String|Uma cadeia de caracteres que identifica o tipo de objeto. Para locatários, o valor é sempre "Empresa". |
 |postalCode|Cadeia de caracteres| CEP do endereço da organização |
 |preferredLanguage|String| O idioma preferencial da organização. Deve seguir o código ISO 639-1; por exemplo "en". |
 |privacyProfile|[privacyProfile](privacyprofile.md)| O perfil de privacidade de uma organização.            |
-|provisionedPlans|Coleção [ProvisionedPlan](provisionedplan.md)| Não anulável.            |
-|provisioningErrors|Coleção ProvisioningError| Não anulável.            |
+|provisionedPlans|coleção [provisionedPlan](provisionedplan.md)| Não anulável.            |
 |securityComplianceNotificationMails|Coleção de cadeias de caracteres||
 |securityComplianceNotificationPhones|Coleção de cadeias de caracteres||
 |state|String| Nome do estado do endereço da organização |
 |street|String| Nome da rua do endereço da organização |
 |technicalNotificationMails|Coleção de cadeias de caracteres| Não anulável. |
-|verifiedDomains|Coleção [VerifiedDomain](verifieddomain.md)|A coleção de domínios associados a este locatário. Não anulável.            |
+|verifiedDomains|coleção [verifiedDomain](verifieddomain.md)|A coleção de domínios associados a este locatário. Não anulável.            |
 
 ## <a name="relationships"></a>Relações
 
@@ -104,7 +103,9 @@ Veja a seguir uma representação JSON do recurso
   "state": "string",
   "street": "string",
   "technicalNotificationMails": ["string"],
-  "verifiedDomains": [{"@odata.type": "microsoft.graph.verifiedDomain"}]
+  "verifiedDomains": [{"@odata.type": "microsoft.graph.verifiedDomain"}],
+  "companyLastDirSyncTime": "2019-02-07T20:33:52.942Z",
+  "dirSyncEnabled": true
 }
 ```
 
@@ -123,8 +124,6 @@ Veja a seguir uma representação JSON do recurso
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/organization.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

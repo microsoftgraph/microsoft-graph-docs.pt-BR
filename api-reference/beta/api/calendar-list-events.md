@@ -2,16 +2,18 @@
 title: Listar eventos
 description: Recupera uma lista de eventos em um calendário.  A lista contém reuniões de instância única e reuniões mestres da série.
 author: angelgolfer-ms
-localization_priority: Priority
+localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: b92c9049867891f27fc7d75b3bfe4be8bd3fdb17
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 117d9e045df6a4b686af6a09656ab681c2c86318
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32461875"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33322410"
 ---
 # <a name="list-events"></a>Listar eventos
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Recupera uma lista de eventos em um calendário.  A lista contém reuniões de instância única e reuniões mestres da série.
 
@@ -69,7 +71,7 @@ Este é um exemplo da solicitação.
   "name": "get_events"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/calendar/events
+GET https://graph.microsoft.com/beta/me/calendar/events
 ```
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
@@ -91,9 +93,9 @@ Content-length: 354
       "originalEndTimeZone": "originalEndTimeZone-value",
       "responseStatus": {
         "response": "",
-        "time": "datetime-value"
+        "time": "2016-10-19T10:37:00Z"
       },
-      "iCalUId": "iCalUId-value",
+      "uid": "iCalUId-value",
       "reminderMinutesBeforeStart": 99,
       "isReminderOn": true
     }
@@ -103,10 +105,13 @@ Content-length: 354
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List events",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

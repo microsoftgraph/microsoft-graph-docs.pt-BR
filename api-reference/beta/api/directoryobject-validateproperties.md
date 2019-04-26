@@ -4,12 +4,12 @@ description: Validar se o nome de exibição ou o apelido de email de um grupo d
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 515acb022150d091e7dcbbdecc1fb1adef849a88
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 182e1d97a0fe6406a0d5d2930cb87a473c7f9cdb
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32455048"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325715"
 ---
 # <a name="directoryobject-validateproperties"></a>directoryobject: ValidateProperties
 
@@ -67,7 +67,7 @@ Este é um exemplo de uma solicitação de validação bem-sucedida.
   "name": "directoryobject_validateproperties"
 }-->
 ``` http
-POST https://graph.microsoft.com/directoryObjects/validateProperties
+POST https://graph.microsoft.com/beta/directoryObjects/validateProperties
 Content-type: application/json
 Content-length: 164
 
@@ -92,7 +92,7 @@ Este é um exemplo de uma solicitação com erros de validação.
 
 ### <a name="request"></a>Solicitação
 ```http
-POST https://graph.microsoft.com/directoryObjects/validateProperties
+POST https://graph.microsoft.com/beta/directoryObjects/validateProperties
 Content-type: application/json
 Content-length: 164
 

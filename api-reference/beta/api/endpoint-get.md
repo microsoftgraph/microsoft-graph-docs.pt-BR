@@ -2,12 +2,12 @@
 title: Obter o ponto de extremidade
 description: Recupere as propriedades e os relacionamentos de um objeto Endpoint específico.
 localization_priority: Normal
-ms.openlocfilehash: 7c5b7bd28b06e20dbc92b09ff961214828749999
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5d4be48e2001692784a5f4812a39c65447b4cc22
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32457460"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33321904"
 ---
 # <a name="get-endpoint"></a>Obter o ponto de extremidade
 
@@ -56,11 +56,11 @@ Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objet
 GET https://graph.microsoft.com/beta/groups/{id}/endpoints/{id}
 ```
 ##### <a name="response"></a>Resposta
-Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.Endpoint"
+  "@odata.type": "microsoft.graph.endpoint"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -86,8 +86,6 @@ Content-length: 208
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/endpoint-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

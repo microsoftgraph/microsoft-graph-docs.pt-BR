@@ -3,16 +3,18 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Obter Unidade
-localization_priority: Priority
+localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 0bea809fc719d90dadbde9282f64ac43df4b91e9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 78e642d189de09677c682607e9f83d7ea9bc482d
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454740"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325412"
 ---
 # <a name="get-drive"></a>Obter Unidade
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Recupere as propriedades e as relações de um recurso [Drive](../resources/drive.md).
 
@@ -36,7 +38,7 @@ Se o OneDrive do usuário não está provisionado, mas o usuário tem uma licen�
 
 ### <a name="http-request"></a>Solicitação HTTP
 
-<!-- { "blockType": "request", "name": "get-drive-default", "scopes": "files.read", "tags": "service.graph" } -->
+<!-- { "blockType": "request", "name": "get-drive-default", "scopes": "files.read" } -->
 
 ```http
 GET /me/drive
@@ -50,7 +52,7 @@ Se o OneDrive do usuário não está provisionado, mas o usuário tem uma licen�
 
 ### <a name="http-request"></a>Solicitação HTTP
 
-<!-- { "blockType": "request", "name": "get-drive-by-user", "scopes": "files.read.all", "tags": "service.graph" } -->
+<!-- { "blockType": "request", "name": "get-drive-by-user", "scopes": "files.read.all" } -->
 
 ```http
 GET /users/{idOrUserPrincipalName}/drive
@@ -68,7 +70,7 @@ Para acessar uma biblioteca de documentos padrão de um Grupo, o aplicativo soli
 
 ### <a name="http-request"></a>Solicitação HTTP
 
-<!-- { "blockType": "request", "name": "get-drive-by-group", "scopes": "group.read.all", "tags": "service.graph" } -->
+<!-- { "blockType": "request", "name": "get-drive-by-group", "scopes": "group.read.all" } -->
 
 ```http
 GET /groups/{groupId}/drive
@@ -105,7 +107,7 @@ Se tiver o identificador exclusivo de uma unidade, você poderá acessá-lo dire
 <!-- { "blockType": "request", "name": "get-drive-by-id", "scopes": "files.read" } -->
 
 ```http
-GET /drives/{drive-id}
+GET /drives/{driveId}
 ```
 
 ### <a name="path-parameters"></a>Parâmetros do caminho
@@ -153,18 +155,13 @@ Se a unidade não existir e não puder ser provisionada automaticamente (ao usar
 [drive-resource]: ../resources/drive.md
 [odata-query-parameters]: /graph/query-parameters
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get metadata for a OneDrive, OneDrive for Business, or Office 365 group drive",
   "keywords": "drive,onedrive,default drive,group drive",
   "section": "documentation",
-  "suppressions": [
-      "Warning: /api-reference/v1.0/api/drive-get.md:
-        Unable to map some markdown elements into schema.
-            Unmapped methods:
-        get-drive-default, get-drive-by-user, get-drive-by-group, get-drive-by-id
-            Unmapped tables:
-        Permissions - AuthScopes, Path parameters - PathParameters, Path parameters - PathParameters, Path parameters - PathParameters, Path parameters - PathParameters"
-  ],
-  "tocPath": "Drives/Get drive"
-} -->
+  "tocPath": "Drives/Get drive",
+  "suppressions": []
+}
+-->

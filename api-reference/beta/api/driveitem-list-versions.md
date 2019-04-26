@@ -3,14 +3,16 @@ title: Listando versões de um DriveItem
 description: O OneDrive e o SharePoint podem ser configurados para manter o histórico de arquivos.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: b51982c9aff9f8be8c801b6f0e0fc16e9ff47852
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3b9078da144bbee02a7f97046b6cce3fa8a84154
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454336"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325244"
 ---
 # <a name="listing-versions-of-a-driveitem"></a>Listando versões de um DriveItem
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 O OneDrive e o SharePoint podem ser configurados para manter o histórico de arquivos.
 Dependendo do serviço e da configuração, uma nova versão pode ser criada para cada edição, sempre que o arquivo for salvo, manualmente ou nunca.
@@ -51,7 +53,7 @@ Este exemplo recupera as versões de um arquivo na unidade do usuário atual.
 
 ### <a name="http-request"></a>Solicitação HTTP
 
-<!-- { "blockType": "request", "name": "get-previous-versions", "scopes": "files.read", "tags": "service.graph" } -->
+<!-- { "blockType": "request", "name": "get-previous-versions", "scopes": "files.read" } -->
 
 ```http
 GET /me/drive/items/{item-id}/versions
@@ -114,10 +116,13 @@ O OneDrive não preserva os metadados completos de versões anteriores de um arq
 Quando seu aplicativo recupera a lista de versões disponíveis de um arquivo, um recurso [DriveItemVersion](../resources/driveitemversion.md) é retornado e fornece as informações disponíveis sobre a versão específica.
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List, review, and download previous versions of a driveItem",
   "keywords": "version, version history, versions",
   "section": "documentation",
-  "tocPath": "Items/Version history"
-} -->
+  "tocPath": "Items/Version history",
+  "suppressions": []
+}
+-->

@@ -5,12 +5,12 @@ ms.date: 09/11/2017
 title: ListItem
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 435544db272b26e6fe3ac0e09803858eec9d05f6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9f813511ffa8a033d2ee85f8c7e5d2d5a271dd1e
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581616"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345231"
 ---
 # <a name="listitem-resource"></a>Recurso ListItem
 
@@ -39,7 +39,7 @@ Todos os exemplos a seguir referem-se a uma **[list][]**, por exemplo: `https://
 [Obter análises]: ../api/itemanalytics-get.md
 [Obter atividades por intervalo]: ../api/itemactivity-getbyinterval.md
 [Create]: ../api/listitem-create.md
-[Excluir]: ../api/listitem-delete.md
+[Delete]: ../api/listitem-delete.md
 [Update]: ../api/listitem-update.md
 
 ## <a name="json-representation"></a>Representação JSON
@@ -137,8 +137,6 @@ As propriedades a seguir são herdadas do **[baseItem][]**.
   "tocBookmarks": {
     "ListItem": "#"
   },
-  "suppressions": [
-    "Error: /api-reference/beta/resources/listitem.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

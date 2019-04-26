@@ -4,12 +4,12 @@ description: Atualize vários alertas em uma solicitação em vez de várias sol
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 5be6374d70baaf4205d5fc1e431111844ce34313
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ad43cf3488ff0661a4b22130ae8728a00c3ea17d
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32459294"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33322688"
 ---
 # <a name="alert-updatealerts"></a>alerta: updateAlerts
 
@@ -62,7 +62,8 @@ O exemplo a seguir mostra como chamar essa API.
 Este é um exemplo de solicitação.
 <!-- {
   "blockType": "request",
-  "name": "alert_updatealerts"
+  "name": "alert_updatealerts",
+   "isCollection": "true"
 }-->
 
 ```http
@@ -75,9 +76,9 @@ Content-type: application/json
       "assignedTo": "String",
       "closedDateTime": "String (timestamp)",
       "comments": ["String"],
-      "feedback": "@odata.type: microsoft.graph.alertFeedback",
+      "feedback": {"@odata.type": "microsoft.graph.alertFeedback"},
       "id": "String (identifier)",
-      "status": "@odata.type: microsoft.graph.alertStatus",
+      "status": {"@odata.type": "microsoft.graph.alertStatus"},
       "tags": ["String"],
       "vendorInformation":
         {
@@ -106,6 +107,7 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
   "value": [
     {

@@ -4,14 +4,17 @@ description: Remova o grupo da lista de grupos favoritos do usuário atual. Supo
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 4fad30c2cff494739e759567332e89a3d630954a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c6e1d81f9b6b95a3122850d09b918e33e07b6dd6
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32502068"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324150"
 ---
 # <a name="group-removefavorite"></a>group: removeFavorite
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Remova o grupo da lista de grupos favoritos do usuário atual. Suporte apenas para grupos do Office 365.
 
 ## <a name="permissions"></a>Permissões
@@ -28,6 +31,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ```http
 POST /groups/{id}/removeFavorite
 ```
+
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
 |:---------------|:--------|
@@ -48,13 +52,15 @@ Este é um exemplo de solicitação.
   "name": "group_removefavorite"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/{id}/removeFavorite
+POST https://graph.microsoft.com/beta/groups/{id}/removeFavorite
 ```
 
 #### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
 <!-- {
-  "blockType": "response"
+  "blockType": "response",
+  "truncated": false,
+  "@odata.type": "microsoft.graph.none"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -62,10 +68,13 @@ HTTP/1.1 200 OK
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "group: removeFavorite",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

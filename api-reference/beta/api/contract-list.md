@@ -4,14 +4,16 @@ description: Recupere uma lista de objetos Contract associados a um locatário d
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4161e6f4cfabaf5d2e4b23bef8007fd8a6c65c45
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e35e5d96c7f4210fcad2641a4491570b5a234170
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32455616"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33327153"
 ---
 # <a name="list-contracts"></a>Listar contratos
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Recupere uma lista de objetos [Contract](../resources/contract.md) associados a um locatário do parceiro.
 
@@ -61,16 +63,16 @@ Se tiver êxito, este método retornará `200 OK` um código de resposta e uma c
   "name": "get_contract"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/contracts
+GET https://graph.microsoft.com/beta/contracts
 ```
 
 ##### <a name="response"></a>Resposta
 
-Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.contract",
+  "@odata.type": "microsoft.graph.Contract",
   "isCollection": true
 } -->
 ```http
@@ -92,10 +94,13 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get Contract",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->
