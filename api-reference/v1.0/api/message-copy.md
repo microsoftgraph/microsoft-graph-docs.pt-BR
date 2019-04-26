@@ -5,13 +5,15 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 0ba81a39718b290e1408589e2f4a540f323a93dc
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27936820"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32565447"
 ---
 # <a name="message-copy"></a>message: copy
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Copie uma mensagem para uma pasta.
 
@@ -49,17 +51,18 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro | Tipo | Descrição |
 |:----------|:-----|:------------|
-|destinationId|Cadeia de caracteres|O ID da pasta de destino, ou um nome de pasta conhecido. Confira uma lista de nomes de pasta comuns com suporte em [Tipo de recurso mailFolder](../resources/mailfolder.md).|
+|destinationId|Cadeia de caracteres|A ID da pasta de destino ou um nome de pasta conhecido. Confira uma lista de nomes de pasta comuns com suporte em [Tipo de recurso mailFolder](../resources/mailfolder.md).|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `201 Created` código de resposta e um recurso de [mensagem](../resources/message.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `201 Created` um código de resposta e um recurso [Message](../resources/message.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 Eis um exemplo de como chamar esta API.
 
 ##### <a name="request"></a>Solicitação
+
 Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
@@ -67,7 +70,7 @@ Este é um exemplo da solicitação.
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/me/messages/{id}/copy
+POST https://graph.microsoft.com/beta/me/messages/{id}/copy
 Content-type: application/json
 Content-length: 44
 
@@ -80,7 +83,7 @@ Content-length: 44
 
 Veja a seguir um exemplo da resposta.
 
-> **Observação:** no objeto response mostrado aqui pode ser reduzido para melhorar a legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -93,8 +96,8 @@ Content-type: application/json
 Content-length: 248
 
 {
-  "receivedDateTime": "datetime-value",
-  "sentDateTime": "datetime-value",
+  "receivedDateTime": "2016-10-19T10:37:00Z",
+  "sentDateTime": "2016-10-19T10:37:00Z",
   "hasAttachments": true,
   "subject": "subject-value",
   "body": {
@@ -107,10 +110,13 @@ Content-length: 248
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "message: copy",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

@@ -1,17 +1,17 @@
 ---
-title: tipo de recurso de mailTipsError
+title: tipo de recurso mailTipsError
 description: Um erro que ocorre durante uma ação.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 8e8a029eb00e5419f8c0e945e71dd0ba1ed2e147
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523985"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562542"
 ---
-# <a name="mailtipserror-resource-type"></a>tipo de recurso de mailTipsError
+# <a name="mailtipserror-resource-type"></a>tipo de recurso mailTipsError
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -21,7 +21,7 @@ Um erro que ocorre durante uma ação.
 | Propriedade     | Tipo   |Descrição|
 |:-----|:-----|:-----|
 | mensagem | String | A mensagem de erro. |
-| código | String | O código do erro. |
+| código | String | O código de erro. |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -52,8 +52,6 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/mailtipserror.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

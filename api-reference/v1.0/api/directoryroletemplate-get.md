@@ -5,13 +5,15 @@ author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: d66cf5f4d8784eeee5d4f84dd4eaa3616bafa5a4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27922603"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562423"
 ---
 # <a name="get-directoryroletemplate"></a>Obter directoryRoleTemplate
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Recupera as propriedades e os relacionamentos do objeto directoryroletemplate.
 ## <a name="permissions"></a>Permissões
@@ -50,7 +52,7 @@ Este é um exemplo da solicitação.
   "name": "get_directoryroletemplate"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/directoryRoleTemplates/{id}
+GET https://graph.microsoft.com/beta/directoryRoleTemplates/{id}
 ```
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
@@ -73,10 +75,13 @@ Content-length: 98
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get directoryRoleTemplate",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

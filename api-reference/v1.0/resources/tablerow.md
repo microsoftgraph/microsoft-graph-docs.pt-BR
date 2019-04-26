@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: c266476715da36bcdc0b621538722ba6320eba85
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937506"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563753"
 ---
 # <a name="tablerow-resource-type"></a>Tipo de recurso TableRow
 
@@ -23,7 +23,7 @@ Representa uma linha em uma tabela.
 |[Get TableRow](../api/tablerow-get.md) | [WorkbookTableRow](tablerow.md) |Leia as propriedades e os relacionamentos do objeto tableRow.|
 |[Update](../api/tablerow-update.md) | [WorkbookTableRow](tablerow.md)  |Atualize o objeto TableRow. |
 |[Range](../api/tablerow-range.md)|[Range](range.md)|Retorna o objeto de intervalo associado a toda a linha.|
-|[Delete](../api/tablerow-delete.md)|Nenhum|Exclui a linha da tabela.|
+|[Excluir](../api/tablerow-delete.md)|None|Exclui a linha da tabela.|
 |[List](../api/tablerow-list.md) | Coleção [WorkbookTableRow](tablerow.md) |Obtenha uma coleção de objetos tableRow. |
 |[Itemat](../api/tablerowcollection-itemat.md)|[WorkbookTableRow](tablerow.md)|Obtém uma linha com base em sua posição na coleção.|
 |[Add](../api/tablerowcollection-add.md)|[WorkbookTableRow](tablerow.md)|Adiciona uma nova linha à tabela.|
@@ -31,7 +31,7 @@ Representa uma linha em uma tabela.
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|índice|int|Retorna o número de índice da linha na coleção de linhas da tabela. Indexados com zero. Somente leitura.|
+|index|int|Retorna o número de índice da linha na coleção de linhas da tabela. Indexados com zero. Somente leitura.|
 |values|Json|Representa os valores brutos do intervalo especificado. Os dados retornados podem ser dos tipos: cadeia de caracteres, número ou booliano. Células que contêm um erro retornarão a cadeia de caracteres de erro.|
 
 ## <a name="relationships"></a>Relações

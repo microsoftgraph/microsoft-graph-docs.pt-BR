@@ -5,11 +5,11 @@ author: preetikr
 localization_priority: Priority
 ms.prod: security
 ms.openlocfilehash: b4a858182f1fca4ce123af05d271d68fc13088f5
-ms.sourcegitcommit: 2937b0e8983baf1b3d244c72a6ae3a211b17a1bd
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30376418"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32564188"
 ---
 # <a name="microsoft-graph-security-api-overview"></a>Visão geral da API de Segurança do Microsoft Graph
 

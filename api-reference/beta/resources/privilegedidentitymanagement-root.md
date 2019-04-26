@@ -3,11 +3,11 @@ title: Azure AD Privileged Identity Management
 description: Aqui está a lista de métodos fornecidos pelo serviço Privileged Identity Management.
 localization_priority: Priority
 ms.openlocfilehash: 59a049a299faf0b90baefef8eb44f0365fafa35e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515052"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563657"
 ---
 # <a name="azure-ad-privileged-identity-management"></a>Azure AD Privileged Identity Management
 
@@ -51,8 +51,6 @@ O serviço é criado com base no OData. Para filtrar os resultados da consulta, 
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/privilegedidentitymanagement-root.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

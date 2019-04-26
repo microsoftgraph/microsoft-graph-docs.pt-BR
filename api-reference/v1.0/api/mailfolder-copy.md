@@ -5,13 +5,15 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 37160f5b6f62ce29d605e84a93a7748f426bd240
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27940733"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32565517"
 ---
 # <a name="mailfolder-copy"></a>mailFolder: copy
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Copie uma mailFolder e seu conteúdo para outra mailFolder.
 
@@ -35,6 +37,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/copy
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
+
 | Cabeçalho | Valor |
 |:-------|:------|
 | Autorização | `Bearer {token}`. Obrigatório. |
@@ -46,17 +49,18 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro | Tipo | Descrição |
 |:----------|:-----|:------------|
-|destinationId|Cadeia de caracteres|O ID da pasta ou um nome de pasta conhecido. Confira uma lista de nomes de pasta comuns com suporte em [Tipo de recurso mailFolder](../resources/mailfolder.md).|
+|destinationId|Cadeia de caracteres|A ID da pasta ou um nome de pasta conhecido. Confira uma lista de nomes de pasta comuns com suporte em [Tipo de recurso mailFolder](../resources/mailfolder.md).|
 
 ## <a name="response"></a>Resposta
 
-Se tiver êxito, este método retornará `200 OK` código de resposta e um recurso [mailFolder](../resources/mailfolder.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `200 OK` um código de resposta e um recurso [mailFolder](../resources/mailfolder.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
 Eis um exemplo de como chamar esta API.
 
 ##### <a name="request"></a>Solicitação
+
 Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
@@ -64,7 +68,7 @@ Este é um exemplo da solicitação.
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/me/mailFolders/{id}/copy
+POST https://graph.microsoft.com/beta/me/mailFolders/{id}/copy
 Content-type: application/json
 Content-length: 44
 
@@ -77,7 +81,8 @@ Content-length: 44
 
 Veja a seguir um exemplo da resposta.
 
-> **Observação:** no objeto response mostrado aqui pode ser reduzido para melhorar a legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+> **Observação:**  o objeto de resposta mostrado aqui pode ser encurtado por questões de legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -101,10 +106,13 @@ Content-length: 179
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "mailFolder: copy",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

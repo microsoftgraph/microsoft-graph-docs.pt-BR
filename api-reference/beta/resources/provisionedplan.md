@@ -3,11 +3,11 @@ title: Tipo de recurso provisionedPlan
 description: A propriedade **provisionedPlans** das entidades user e organization é uma coleção de **provisionedPlan**.
 localization_priority: Normal
 ms.openlocfilehash: 5f9d9c5b2dfffb86643c5e355799f46382bc38cd
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643367"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563295"
 ---
 # <a name="provisionedplan-resource-type"></a>Tipo de recurso provisionedPlan
 
@@ -19,7 +19,7 @@ A propriedade **provisionedPlans** das entidades [user](user.md) e [organization
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|capabilityStatus|Cadeia de caracteres|Por exemplo, “Enabled”.|
+|capabilityStatus|String|Por exemplo, “Enabled”.|
 |provisioningStatus|Cadeia de caracteres|Por exemplo, "Success".|
 |service|Cadeia de caracteres|O nome do serviço; por exemplo, "AccessControlS2S".|
 
@@ -32,7 +32,7 @@ Veja a seguir uma representação JSON do recurso
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.provisionedplan"
+  "@odata.type": "microsoft.graph.provisionedPlan"
 }-->
 
 ```json
@@ -53,8 +53,6 @@ Veja a seguir uma representação JSON do recurso
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/provisionedplan.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

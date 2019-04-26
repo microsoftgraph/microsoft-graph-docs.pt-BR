@@ -5,11 +5,11 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: 8eb1f5896a261610eb5400611a78f5ac75952256
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574471"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32565895"
 ---
 # <a name="skype-for-business-device-usage-reports"></a>Relatórios de uso de dispositivos Skype for Business
 
