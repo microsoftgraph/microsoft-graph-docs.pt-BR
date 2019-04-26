@@ -2,49 +2,50 @@
 title: Tipo de recurso itemAttachment
 description: Um contato, evento ou mensagem que está anexado a outro evento,
 localization_priority: Normal
-ms.openlocfilehash: cce33cb7597f04435daff723a0125305968eea99
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 91fedeac846d6f33aba6b4504eae71fe233a4324
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581089"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345411"
 ---
-# <a name="itemattachment-resource-type"></a><span data-ttu-id="20627-103">Tipo de recurso itemAttachment</span><span class="sxs-lookup"><span data-stu-id="20627-103">itemAttachment resource type</span></span>
+# <a name="itemattachment-resource-type"></a><span data-ttu-id="29100-103">Tipo de recurso itemAttachment</span><span class="sxs-lookup"><span data-stu-id="29100-103">itemAttachment resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="20627-104">Um contato, evento ou mensagem que está anexado a outro [evento](../resources/event.md), [mensagem](../resources/message.md), [tarefa do Outlook](../resources/outlooktask.md)ou [postagem](../resources/post.md).</span><span class="sxs-lookup"><span data-stu-id="20627-104">A contact, event, or message that's attached to another [event](../resources/event.md), [message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md).</span></span>  
+<span data-ttu-id="29100-104">Um contato, evento ou mensagem que está anexado a outro [evento](../resources/event.md), [mensagem](../resources/message.md), [tarefa do Outlook](../resources/outlooktask.md)ou [postagem](../resources/post.md).</span><span class="sxs-lookup"><span data-stu-id="29100-104">A contact, event, or message that's attached to another [event](../resources/event.md), [message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md).</span></span>  
 
-<span data-ttu-id="20627-105">Derivado de [attachment](attachment.md).</span><span class="sxs-lookup"><span data-stu-id="20627-105">Derived from [attachment](attachment.md).</span></span>
+<span data-ttu-id="29100-105">Derivado de [attachment](attachment.md).</span><span class="sxs-lookup"><span data-stu-id="29100-105">Derived from [attachment](attachment.md).</span></span>
 
-## <a name="methods"></a><span data-ttu-id="20627-106">Métodos</span><span class="sxs-lookup"><span data-stu-id="20627-106">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="29100-106">Métodos</span><span class="sxs-lookup"><span data-stu-id="29100-106">Methods</span></span>
 
-| <span data-ttu-id="20627-107">Método</span><span class="sxs-lookup"><span data-stu-id="20627-107">Method</span></span>       | <span data-ttu-id="20627-108">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="20627-108">Return Type</span></span>  |<span data-ttu-id="20627-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="20627-109">Description</span></span>|
+| <span data-ttu-id="29100-107">Método</span><span class="sxs-lookup"><span data-stu-id="29100-107">Method</span></span>       | <span data-ttu-id="29100-108">Tipo de retorno</span><span class="sxs-lookup"><span data-stu-id="29100-108">Return Type</span></span>  |<span data-ttu-id="29100-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="29100-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="20627-110">Get</span><span class="sxs-lookup"><span data-stu-id="20627-110">Get</span></span>](../api/attachment-get.md) | [<span data-ttu-id="20627-111">itemAttachment</span><span class="sxs-lookup"><span data-stu-id="20627-111">itemAttachment</span></span>](itemattachment.md) |<span data-ttu-id="20627-112">Leia as propriedades e os relacionamentos do objeto itemAttachment.</span><span class="sxs-lookup"><span data-stu-id="20627-112">Read properties and relationships of itemAttachment object.</span></span>|
-|[<span data-ttu-id="20627-113">Excluir</span><span class="sxs-lookup"><span data-stu-id="20627-113">Delete</span></span>](../api/attachment-delete.md) | <span data-ttu-id="20627-114">Nenhum</span><span class="sxs-lookup"><span data-stu-id="20627-114">None</span></span> |<span data-ttu-id="20627-115">Exclua o objeto itemAttachment.</span><span class="sxs-lookup"><span data-stu-id="20627-115">Delete itemAttachment object.</span></span> |
+|[<span data-ttu-id="29100-110">Get</span><span class="sxs-lookup"><span data-stu-id="29100-110">Get</span></span>](../api/attachment-get.md) | [<span data-ttu-id="29100-111">itemAttachment</span><span class="sxs-lookup"><span data-stu-id="29100-111">itemAttachment</span></span>](itemattachment.md) |<span data-ttu-id="29100-112">Leia as propriedades e os relacionamentos do objeto itemAttachment.</span><span class="sxs-lookup"><span data-stu-id="29100-112">Read properties and relationships of itemAttachment object.</span></span>|
+|[<span data-ttu-id="29100-113">Delete</span><span class="sxs-lookup"><span data-stu-id="29100-113">Delete</span></span>](../api/attachment-delete.md) | <span data-ttu-id="29100-114">Nenhum</span><span class="sxs-lookup"><span data-stu-id="29100-114">None</span></span> |<span data-ttu-id="29100-115">Exclua o objeto itemAttachment.</span><span class="sxs-lookup"><span data-stu-id="29100-115">Delete itemAttachment object.</span></span> |
 
-## <a name="properties"></a><span data-ttu-id="20627-116">Propriedades</span><span class="sxs-lookup"><span data-stu-id="20627-116">Properties</span></span>
-| <span data-ttu-id="20627-117">Propriedade</span><span class="sxs-lookup"><span data-stu-id="20627-117">Property</span></span>     | <span data-ttu-id="20627-118">Tipo</span><span class="sxs-lookup"><span data-stu-id="20627-118">Type</span></span>   |<span data-ttu-id="20627-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="20627-119">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="29100-116">Propriedades</span><span class="sxs-lookup"><span data-stu-id="29100-116">Properties</span></span>
+| <span data-ttu-id="29100-117">Propriedade</span><span class="sxs-lookup"><span data-stu-id="29100-117">Property</span></span>     | <span data-ttu-id="29100-118">Tipo</span><span class="sxs-lookup"><span data-stu-id="29100-118">Type</span></span>   |<span data-ttu-id="29100-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="29100-119">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="20627-120">contentType</span><span class="sxs-lookup"><span data-stu-id="20627-120">contentType</span></span>|<span data-ttu-id="20627-121">String</span><span class="sxs-lookup"><span data-stu-id="20627-121">String</span></span>|<span data-ttu-id="20627-122">O tipo de conteúdo do anexo.</span><span class="sxs-lookup"><span data-stu-id="20627-122">The content type of the attachment.</span></span>|
-|<span data-ttu-id="20627-123">id</span><span class="sxs-lookup"><span data-stu-id="20627-123">id</span></span>|<span data-ttu-id="20627-124">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="20627-124">String</span></span>| <span data-ttu-id="20627-125">A ID do anexo.</span><span class="sxs-lookup"><span data-stu-id="20627-125">The attachment ID.</span></span>|
-|<span data-ttu-id="20627-126">isInline</span><span class="sxs-lookup"><span data-stu-id="20627-126">isInline</span></span>|<span data-ttu-id="20627-127">Booliano</span><span class="sxs-lookup"><span data-stu-id="20627-127">Boolean</span></span>|<span data-ttu-id="20627-128">Defina como verdadeiro se o anexo estiver embutido, como uma imagem incorporada no corpo do item.</span><span class="sxs-lookup"><span data-stu-id="20627-128">Set to true if the attachment is inline, such as an embedded image within the body of the item.</span></span>|
-|<span data-ttu-id="20627-129">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="20627-129">lastModifiedDateTime</span></span>|<span data-ttu-id="20627-130">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="20627-130">DateTimeOffset</span></span>|<span data-ttu-id="20627-131">Última data e hora em que o anexo foi alterado.</span><span class="sxs-lookup"><span data-stu-id="20627-131">The last time and date that the attachment was modified.</span></span>|
-|<span data-ttu-id="20627-132">name</span><span class="sxs-lookup"><span data-stu-id="20627-132">name</span></span>|<span data-ttu-id="20627-133">String</span><span class="sxs-lookup"><span data-stu-id="20627-133">String</span></span>|<span data-ttu-id="20627-134">O nome de exibição do anexo.</span><span class="sxs-lookup"><span data-stu-id="20627-134">The display name of the attachment.</span></span>|
-|<span data-ttu-id="20627-135">size</span><span class="sxs-lookup"><span data-stu-id="20627-135">size</span></span>|<span data-ttu-id="20627-136">Int32</span><span class="sxs-lookup"><span data-stu-id="20627-136">Int32</span></span>|<span data-ttu-id="20627-137">O tamanho do anexo em bytes.</span><span class="sxs-lookup"><span data-stu-id="20627-137">The size in bytes of the attachment.</span></span>|
+|<span data-ttu-id="29100-120">contentType</span><span class="sxs-lookup"><span data-stu-id="29100-120">contentType</span></span>|<span data-ttu-id="29100-121">String</span><span class="sxs-lookup"><span data-stu-id="29100-121">String</span></span>|<span data-ttu-id="29100-122">O tipo de conteúdo do anexo.</span><span class="sxs-lookup"><span data-stu-id="29100-122">The content type of the attachment.</span></span>|
+|<span data-ttu-id="29100-123">id</span><span class="sxs-lookup"><span data-stu-id="29100-123">id</span></span>|<span data-ttu-id="29100-124">String</span><span class="sxs-lookup"><span data-stu-id="29100-124">String</span></span>| <span data-ttu-id="29100-125">A ID do anexo.</span><span class="sxs-lookup"><span data-stu-id="29100-125">The attachment ID.</span></span>|
+|<span data-ttu-id="29100-126">isInline</span><span class="sxs-lookup"><span data-stu-id="29100-126">isInline</span></span>|<span data-ttu-id="29100-127">Booliano</span><span class="sxs-lookup"><span data-stu-id="29100-127">Boolean</span></span>|<span data-ttu-id="29100-128">Defina como verdadeiro se o anexo estiver embutido, como uma imagem incorporada no corpo do item.</span><span class="sxs-lookup"><span data-stu-id="29100-128">Set to true if the attachment is inline, such as an embedded image within the body of the item.</span></span>|
+|<span data-ttu-id="29100-129">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="29100-129">lastModifiedDateTime</span></span>|<span data-ttu-id="29100-130">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="29100-130">DateTimeOffset</span></span>|<span data-ttu-id="29100-131">Última data e hora em que o anexo foi alterado.</span><span class="sxs-lookup"><span data-stu-id="29100-131">The last time and date that the attachment was modified.</span></span>|
+|<span data-ttu-id="29100-132">name</span><span class="sxs-lookup"><span data-stu-id="29100-132">name</span></span>|<span data-ttu-id="29100-133">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="29100-133">String</span></span>|<span data-ttu-id="29100-134">O nome de exibição do anexo.</span><span class="sxs-lookup"><span data-stu-id="29100-134">The display name of the attachment.</span></span>|
+|<span data-ttu-id="29100-135">size</span><span class="sxs-lookup"><span data-stu-id="29100-135">size</span></span>|<span data-ttu-id="29100-136">Int32</span><span class="sxs-lookup"><span data-stu-id="29100-136">Int32</span></span>|<span data-ttu-id="29100-137">O tamanho do anexo em bytes.</span><span class="sxs-lookup"><span data-stu-id="29100-137">The size in bytes of the attachment.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="20627-138">Relações</span><span class="sxs-lookup"><span data-stu-id="20627-138">Relationships</span></span>
-| <span data-ttu-id="20627-139">Relação</span><span class="sxs-lookup"><span data-stu-id="20627-139">Relationship</span></span> | <span data-ttu-id="20627-140">Tipo</span><span class="sxs-lookup"><span data-stu-id="20627-140">Type</span></span>   |<span data-ttu-id="20627-141">Descrição</span><span class="sxs-lookup"><span data-stu-id="20627-141">Description</span></span>|
+## <a name="relationships"></a><span data-ttu-id="29100-138">Relacionamentos</span><span class="sxs-lookup"><span data-stu-id="29100-138">Relationships</span></span>
+| <span data-ttu-id="29100-139">Relação</span><span class="sxs-lookup"><span data-stu-id="29100-139">Relationship</span></span> | <span data-ttu-id="29100-140">Tipo</span><span class="sxs-lookup"><span data-stu-id="29100-140">Type</span></span>   |<span data-ttu-id="29100-141">Descrição</span><span class="sxs-lookup"><span data-stu-id="29100-141">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="20627-142">item</span><span class="sxs-lookup"><span data-stu-id="20627-142">item</span></span>|[<span data-ttu-id="20627-143">OutlookItem</span><span class="sxs-lookup"><span data-stu-id="20627-143">OutlookItem</span></span>](outlookitem.md)|<span data-ttu-id="20627-144">O contato anexado, a mensagem ou o evento.</span><span class="sxs-lookup"><span data-stu-id="20627-144">The attached contact, message or event.</span></span> <span data-ttu-id="20627-145">Propriedade de navegação.</span><span class="sxs-lookup"><span data-stu-id="20627-145">Navigation property.</span></span>|
+|<span data-ttu-id="29100-142">item</span><span class="sxs-lookup"><span data-stu-id="29100-142">item</span></span>|[<span data-ttu-id="29100-143">OutlookItem</span><span class="sxs-lookup"><span data-stu-id="29100-143">OutlookItem</span></span>](outlookitem.md)|<span data-ttu-id="29100-144">O contato anexado, a mensagem ou o evento.</span><span class="sxs-lookup"><span data-stu-id="29100-144">The attached contact, message or event.</span></span> <span data-ttu-id="29100-145">Propriedade de navegação.</span><span class="sxs-lookup"><span data-stu-id="29100-145">Navigation property.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="20627-146">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="20627-146">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="29100-146">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="29100-146">JSON representation</span></span>
 
-<span data-ttu-id="20627-147">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="20627-147">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="29100-147">Veja a seguir uma representação JSON do recurso</span><span class="sxs-lookup"><span data-stu-id="29100-147">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
+  "keyProperty":"id",
   "optionalProperties": [
     "item"
   ],
@@ -71,8 +72,6 @@ ms.locfileid: "32581089"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/itemattachment.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

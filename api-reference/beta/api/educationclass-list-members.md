@@ -4,57 +4,59 @@ description: Recupere os professores e alunos de uma aula. Se o token delegado f
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 2efb76558335974e180819cf2477d3b9a52f86f8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 78eb451f0feed9781a961e4a0598167cfdcbbd95
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32457785"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324697"
 ---
-# <a name="list-members"></a><span data-ttu-id="99d03-104">Listar membros</span><span class="sxs-lookup"><span data-stu-id="99d03-104">List members</span></span>
+# <a name="list-members"></a><span data-ttu-id="f774f-104">Listar membros</span><span class="sxs-lookup"><span data-stu-id="f774f-104">List members</span></span>
 
-<span data-ttu-id="99d03-105">Recupere os professores e alunos de uma aula.</span><span class="sxs-lookup"><span data-stu-id="99d03-105">Retrieves the teachers and students for a class.</span></span> <span data-ttu-id="99d03-106">Se o token delegado for usado, os membros poderão ser vistos apenas por outros membros da aula.</span><span class="sxs-lookup"><span data-stu-id="99d03-106">Note that if the delegated token is used, members can only be seen by other members of the class.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-## <a name="permissions"></a><span data-ttu-id="99d03-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="99d03-107">Permissions</span></span>
-<span data-ttu-id="99d03-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="99d03-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="f774f-105">Recupere os professores e alunos de uma aula.</span><span class="sxs-lookup"><span data-stu-id="f774f-105">Retrieves the teachers and students for a class.</span></span> <span data-ttu-id="f774f-106">Se o token delegado for usado, os membros poderão ser vistos apenas por outros membros da aula.</span><span class="sxs-lookup"><span data-stu-id="f774f-106">Note that if the delegated token is used, members can only be seen by other members of the class.</span></span>
 
-|<span data-ttu-id="99d03-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="99d03-110">Permission type</span></span>      | <span data-ttu-id="99d03-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="99d03-111">Permissions (from least to most privileged)</span></span>              |
+## <a name="permissions"></a><span data-ttu-id="f774f-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="f774f-107">Permissions</span></span>
+<span data-ttu-id="f774f-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f774f-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="f774f-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="f774f-110">Permission type</span></span>      | <span data-ttu-id="f774f-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="f774f-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="99d03-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="99d03-112">Delegated (work or school account)</span></span> |  <span data-ttu-id="99d03-113">EduRoster.ReadBasic</span><span class="sxs-lookup"><span data-stu-id="99d03-113">EduRoster.ReadBasic</span></span>  |
-|<span data-ttu-id="99d03-114">Delegado (conta pessoal da conta Microsoft)</span><span class="sxs-lookup"><span data-stu-id="99d03-114">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="99d03-115">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="99d03-115">Not supported</span></span>  |
-|<span data-ttu-id="99d03-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="99d03-116">Application</span></span> | <span data-ttu-id="99d03-117">EduRoster. Read. All, EduRoster. ReadWrite. All mais member. Read. Hidden</span><span class="sxs-lookup"><span data-stu-id="99d03-117">EduRoster.Read.All, EduRoster.ReadWrite.All plus Member.Read.Hidden</span></span> | 
+|<span data-ttu-id="f774f-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="f774f-112">Delegated (work or school account)</span></span> |  <span data-ttu-id="f774f-113">EduRoster.ReadBasic</span><span class="sxs-lookup"><span data-stu-id="f774f-113">EduRoster.ReadBasic</span></span>  |
+|<span data-ttu-id="f774f-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="f774f-114">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="f774f-115">Sem suporte</span><span class="sxs-lookup"><span data-stu-id="f774f-115">Not supported</span></span>  |
+|<span data-ttu-id="f774f-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="f774f-116">Application</span></span> | <span data-ttu-id="f774f-117">EduRoster. Read. All, EduRoster. ReadWrite. All mais member. Read. Hidden</span><span class="sxs-lookup"><span data-stu-id="f774f-117">EduRoster.Read.All, EduRoster.ReadWrite.All plus Member.Read.Hidden</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="99d03-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="99d03-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f774f-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="f774f-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /education/classes/{id}/members
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="99d03-119">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="99d03-119">Optional query parameters</span></span>
-<span data-ttu-id="99d03-120">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="99d03-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="f774f-119">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="f774f-119">Optional query parameters</span></span>
+<span data-ttu-id="f774f-120">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="f774f-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="99d03-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="99d03-121">Request headers</span></span>
-| <span data-ttu-id="99d03-122">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="99d03-122">Header</span></span>       | <span data-ttu-id="99d03-123">Valor</span><span class="sxs-lookup"><span data-stu-id="99d03-123">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="f774f-121">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="f774f-121">Request headers</span></span>
+| <span data-ttu-id="f774f-122">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="f774f-122">Header</span></span>       | <span data-ttu-id="f774f-123">Valor</span><span class="sxs-lookup"><span data-stu-id="f774f-123">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="99d03-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="99d03-124">Authorization</span></span>  | <span data-ttu-id="99d03-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="99d03-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="f774f-124">Autorização</span><span class="sxs-lookup"><span data-stu-id="f774f-124">Authorization</span></span>  | <span data-ttu-id="f774f-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="f774f-p104">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="99d03-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="99d03-127">Request body</span></span>
-<span data-ttu-id="99d03-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="99d03-128">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="99d03-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="99d03-129">Response</span></span>
-<span data-ttu-id="99d03-130">Se bem-sucedido, esse método retornará um código de resposta `200 OK` e uma coleção de objetos [educationUser](../resources/educationuser.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="99d03-130">If successful, this method returns a `200 OK` response code and a collection of [educationUser](../resources/educationuser.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="99d03-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="99d03-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="99d03-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="99d03-132">Request</span></span>
-<span data-ttu-id="99d03-133">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="99d03-133">The following is an example of the request.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f774f-127">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="f774f-127">Request body</span></span>
+<span data-ttu-id="f774f-128">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="f774f-128">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="f774f-129">Resposta</span><span class="sxs-lookup"><span data-stu-id="f774f-129">Response</span></span>
+<span data-ttu-id="f774f-130">Se bem-sucedido, esse método retornará um código de resposta `200 OK` e uma coleção de objetos [educationUser](../resources/educationuser.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="f774f-130">If successful, this method returns a `200 OK` response code and a collection of [educationUser](../resources/educationuser.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="f774f-131">Exemplo</span><span class="sxs-lookup"><span data-stu-id="f774f-131">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="f774f-132">Solicitação</span><span class="sxs-lookup"><span data-stu-id="f774f-132">Request</span></span>
+<span data-ttu-id="f774f-133">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="f774f-133">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_members"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/members
+GET https://graph.microsoft.com/beta/education/classes/11016/members
 ```
-##### <a name="response"></a><span data-ttu-id="99d03-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="99d03-134">Response</span></span>
-<span data-ttu-id="99d03-135">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="99d03-135">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="f774f-134">Resposta</span><span class="sxs-lookup"><span data-stu-id="f774f-134">Response</span></span>
+<span data-ttu-id="f774f-135">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="f774f-135">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="99d03-p105">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="99d03-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="f774f-p105">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="f774f-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -92,6 +94,8 @@ Content-length: 593
         "street": "12345 Main St."
       },
       "primaryRole": "teacher",
+      "externalId": "13013",
+      "teacherNumber": "8802",
       "residenceAddress": {
         "city": "Los Angeles",
         "countryOrRegion": "United States",
@@ -99,10 +103,6 @@ Content-length: 593
         "state": "CA",
         "street": "12345 Main St."
       },
-      "teacher": {
-        "externalId": "13013",
-        "teacherNumber": "8802",
-      }
     },
     {
       "id": "13005",
@@ -126,15 +126,13 @@ Content-length: 593
         "state": "NY",
         "street": "12345 Main St."
       },
-      "student": {
-        "birthDate": "2001-01-01T00:00:00Z",
-        "externalId": "13005",
-        "gender": "female",
-        "grade": "9",
-        "graduationYear": "2019",
-        "studentNumber": "13005",
-      },
       "primaryRole": "student",
+      "externalId": "13005",
+      "birthDate": "2001-01-01T00:00:00Z",
+      "gender": "female",
+      "grade": "9",
+      "graduationYear": "2019",
+      "studentNumber": "13005",
       "residenceAddress": {
         "city": "Long Beach",
         "countryOrRegion": "United States",
@@ -149,10 +147,13 @@ Content-length: 593
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List members",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

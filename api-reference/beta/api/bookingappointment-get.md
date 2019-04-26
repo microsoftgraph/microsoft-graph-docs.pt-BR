@@ -4,49 +4,49 @@ description: Obtenha as propriedades e os relacionamentos de um objeto bookingAp
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: e9e9fffa3101656d4e426578185683065b4f5e5a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 68d5312b426b9f363fbdec7ada99fc4a9513a080
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32459357"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33322515"
 ---
-# <a name="get-bookingappointment"></a><span data-ttu-id="602dc-103">Obter bookingAppointment</span><span class="sxs-lookup"><span data-stu-id="602dc-103">Get bookingAppointment</span></span>
+# <a name="get-bookingappointment"></a><span data-ttu-id="e97df-103">Obter bookingAppointment</span><span class="sxs-lookup"><span data-stu-id="e97df-103">Get bookingAppointment</span></span>
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="602dc-104">Obtenha as propriedades e os relacionamentos de um objeto [bookingAppointment](../resources/bookingappointment.md) no [bookingbusiness](../resources/bookingbusiness.md)especificado.</span><span class="sxs-lookup"><span data-stu-id="602dc-104">Get the properties and relationships of a [bookingAppointment](../resources/bookingappointment.md) object in the specified [bookingbusiness](../resources/bookingbusiness.md).</span></span>
+<span data-ttu-id="e97df-104">Obtenha as propriedades e os relacionamentos de um objeto [bookingAppointment](../resources/bookingappointment.md) no [bookingbusiness](../resources/bookingbusiness.md)especificado.</span><span class="sxs-lookup"><span data-stu-id="e97df-104">Get the properties and relationships of a [bookingAppointment](../resources/bookingappointment.md) object in the specified [bookingbusiness](../resources/bookingbusiness.md).</span></span>
 
-<span data-ttu-id="602dc-105">As propriedades **Start** e **end** sempre são retornadas em UTC.</span><span class="sxs-lookup"><span data-stu-id="602dc-105">The **start** and **end** properties are always returned in UTC.</span></span>
-## <a name="permissions"></a><span data-ttu-id="602dc-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="602dc-106">Permissions</span></span>
-<span data-ttu-id="602dc-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="602dc-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="e97df-105">As propriedades **Start** e **end** sempre são retornadas em UTC.</span><span class="sxs-lookup"><span data-stu-id="e97df-105">The **start** and **end** properties are always returned in UTC.</span></span>
+## <a name="permissions"></a><span data-ttu-id="e97df-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="e97df-106">Permissions</span></span>
+<span data-ttu-id="e97df-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e97df-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="602dc-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="602dc-109">Permission type</span></span>      | <span data-ttu-id="602dc-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="602dc-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="e97df-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="e97df-109">Permission type</span></span>      | <span data-ttu-id="e97df-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="e97df-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="602dc-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="602dc-111">Delegated (work or school account)</span></span> |  <span data-ttu-id="602dc-112">Bookings. Read. All, BookingsAppointment. ReadWrite. All, bookings. ReadWrite. All, bookings. Manage. All</span><span class="sxs-lookup"><span data-stu-id="602dc-112">Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All</span></span>   |
-|<span data-ttu-id="602dc-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="602dc-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="602dc-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="602dc-114">Not supported.</span></span>   |
-|<span data-ttu-id="602dc-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="602dc-115">Application</span></span> | <span data-ttu-id="602dc-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="602dc-116">Not supported.</span></span>  |
+|<span data-ttu-id="e97df-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="e97df-111">Delegated (work or school account)</span></span> |  <span data-ttu-id="e97df-112">Bookings. Read. All, BookingsAppointment. ReadWrite. All, bookings. ReadWrite. All, bookings. Manage. All</span><span class="sxs-lookup"><span data-stu-id="e97df-112">Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All</span></span>   |
+|<span data-ttu-id="e97df-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="e97df-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e97df-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="e97df-114">Not supported.</span></span>   |
+|<span data-ttu-id="e97df-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="e97df-115">Application</span></span> | <span data-ttu-id="e97df-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="e97df-116">Not supported.</span></span>  |
 
-## <a name="http-request"></a><span data-ttu-id="602dc-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="602dc-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e97df-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="e97df-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /bookingBusinesses/{id}/appointments/{id}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="602dc-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="602dc-118">Optional query parameters</span></span>
-<span data-ttu-id="602dc-119">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="602dc-119">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="e97df-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="e97df-118">Optional query parameters</span></span>
+<span data-ttu-id="e97df-119">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="e97df-119">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="602dc-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="602dc-120">Request headers</span></span>
-| <span data-ttu-id="602dc-121">Nome</span><span class="sxs-lookup"><span data-stu-id="602dc-121">Name</span></span>      |<span data-ttu-id="602dc-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="602dc-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="e97df-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="e97df-120">Request headers</span></span>
+| <span data-ttu-id="e97df-121">Nome</span><span class="sxs-lookup"><span data-stu-id="e97df-121">Name</span></span>      |<span data-ttu-id="e97df-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="e97df-122">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="602dc-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="602dc-123">Authorization</span></span>  | <span data-ttu-id="602dc-124">Portador {código}</span><span class="sxs-lookup"><span data-stu-id="602dc-124">Bearer {code}</span></span>|
+| <span data-ttu-id="e97df-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="e97df-123">Authorization</span></span>  | <span data-ttu-id="e97df-124">Portador {código}</span><span class="sxs-lookup"><span data-stu-id="e97df-124">Bearer {code}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="602dc-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="602dc-125">Request body</span></span>
-<span data-ttu-id="602dc-126">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="602dc-126">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="602dc-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="602dc-127">Response</span></span>
-<span data-ttu-id="602dc-128">Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [bookingAppointment](../resources/bookingappointment.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="602dc-128">If successful, this method returns a `200 OK` response code and [bookingAppointment](../resources/bookingappointment.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="602dc-129">Exemplo</span><span class="sxs-lookup"><span data-stu-id="602dc-129">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="602dc-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="602dc-130">Request</span></span>
-<span data-ttu-id="602dc-131">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="602dc-131">The following is an example of the request.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e97df-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="e97df-125">Request body</span></span>
+<span data-ttu-id="e97df-126">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="e97df-126">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="e97df-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="e97df-127">Response</span></span>
+<span data-ttu-id="e97df-128">Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [bookingAppointment](../resources/bookingappointment.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="e97df-128">If successful, this method returns a `200 OK` response code and [bookingAppointment](../resources/bookingappointment.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="e97df-129">Exemplo</span><span class="sxs-lookup"><span data-stu-id="e97df-129">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="e97df-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e97df-130">Request</span></span>
+<span data-ttu-id="e97df-131">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="e97df-131">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_bookingappointment"
@@ -54,8 +54,8 @@ GET /bookingBusinesses/{id}/appointments/{id}
 ```http
 GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/appointments/AAMkADKnAAA=
 ```
-##### <a name="response"></a><span data-ttu-id="602dc-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="602dc-132">Response</span></span>
-<span data-ttu-id="602dc-133">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="602dc-133">The following is an example of the response.</span></span> <span data-ttu-id="602dc-134">Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão.</span><span class="sxs-lookup"><span data-stu-id="602dc-134">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="602dc-135">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="602dc-135">All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="e97df-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="e97df-132">Response</span></span>
+<span data-ttu-id="e97df-133">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="e97df-133">The following is an example of the response.</span></span> <span data-ttu-id="e97df-134">Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão.</span><span class="sxs-lookup"><span data-stu-id="e97df-134">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="e97df-135">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="e97df-135">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -177,8 +177,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/bookingappointment-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

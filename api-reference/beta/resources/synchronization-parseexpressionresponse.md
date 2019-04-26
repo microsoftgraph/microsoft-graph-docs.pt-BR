@@ -2,31 +2,31 @@
 title: tipo de recurso parseExpressionResponse
 description: 'Representa a resposta da ação [synchronizationSchema: ParseName](../api/synchronization_synchronizationschema_parseexpression.md) .'
 localization_priority: Normal
-ms.openlocfilehash: f8ea708468e1e580693b2bd0e6f0e7f3494996f0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 14fcce13d2e78b99a8712c51768e6a94928fa07f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32523431"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345534"
 ---
-# <a name="parseexpressionresponse-resource-type"></a><span data-ttu-id="33e2a-103">tipo de recurso parseExpressionResponse</span><span class="sxs-lookup"><span data-stu-id="33e2a-103">parseExpressionResponse resource type</span></span>
+# <a name="parseexpressionresponse-resource-type"></a><span data-ttu-id="03b32-103">tipo de recurso parseExpressionResponse</span><span class="sxs-lookup"><span data-stu-id="03b32-103">parseExpressionResponse resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="33e2a-104">Representa a resposta da ação [synchronizationSchema: ParseName](../api/synchronization_synchronizationschema_parseexpression.md) .</span><span class="sxs-lookup"><span data-stu-id="33e2a-104">Represents the response from the [synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md) action.</span></span>
+<span data-ttu-id="03b32-104">Representa a resposta da ação [parsery](../api/synchronization-synchronizationschema-parseexpression.md) .</span><span class="sxs-lookup"><span data-stu-id="03b32-104">Represents the response from the [parseExpression](../api/synchronization-synchronizationschema-parseexpression.md) action.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="33e2a-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="33e2a-105">Properties</span></span>
-| <span data-ttu-id="33e2a-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="33e2a-106">Property</span></span>     | <span data-ttu-id="33e2a-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="33e2a-107">Type</span></span>   |<span data-ttu-id="33e2a-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="33e2a-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="03b32-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="03b32-105">Properties</span></span>
+| <span data-ttu-id="03b32-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="03b32-106">Property</span></span>     | <span data-ttu-id="03b32-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="03b32-107">Type</span></span>   |<span data-ttu-id="03b32-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="03b32-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="33e2a-109">erro</span><span class="sxs-lookup"><span data-stu-id="33e2a-109">error</span></span>|<span data-ttu-id="33e2a-110">OData. Error</span><span class="sxs-lookup"><span data-stu-id="33e2a-110">odata.error</span></span>|<span data-ttu-id="33e2a-111">Detalhes do erro, se a avaliação da expressão resultar em um erro.</span><span class="sxs-lookup"><span data-stu-id="33e2a-111">Error details, if expression evaluation resulted in an error.</span></span>|
-|<span data-ttu-id="33e2a-112">evaluationResult</span><span class="sxs-lookup"><span data-stu-id="33e2a-112">evaluationResult</span></span>|<span data-ttu-id="33e2a-113">Coleção de cadeias de caracteres</span><span class="sxs-lookup"><span data-stu-id="33e2a-113">String collection</span></span>|<span data-ttu-id="33e2a-114">Uma coleção de valores produzidos pela avaliação da expressão.</span><span class="sxs-lookup"><span data-stu-id="33e2a-114">A collection of values produced by the evaluation of the expression.</span></span>|
-|<span data-ttu-id="33e2a-115">evaluationSucceeded</span><span class="sxs-lookup"><span data-stu-id="33e2a-115">evaluationSucceeded</span></span>|<span data-ttu-id="33e2a-116">Booliano</span><span class="sxs-lookup"><span data-stu-id="33e2a-116">Boolean</span></span>|<span data-ttu-id="33e2a-117">`true`se a avaliação tiver sido bem-sucedida.</span><span class="sxs-lookup"><span data-stu-id="33e2a-117">`true` if the evaluation was successful.</span></span>|
-|<span data-ttu-id="33e2a-118">parsedExpression</span><span class="sxs-lookup"><span data-stu-id="33e2a-118">parsedExpression</span></span>|[<span data-ttu-id="33e2a-119">attributeMappingSource</span><span class="sxs-lookup"><span data-stu-id="33e2a-119">attributeMappingSource</span></span>](synchronization-attributemappingsource.md)|<span data-ttu-id="33e2a-120">Um objeto [attributeMappingSource](synchronization-attributemappingsource.md) que representa a expressão analisada.</span><span class="sxs-lookup"><span data-stu-id="33e2a-120">An [attributeMappingSource](synchronization-attributemappingsource.md) object representing the parsed expression.</span></span>|
-|<span data-ttu-id="33e2a-121">parsingSucceeded</span><span class="sxs-lookup"><span data-stu-id="33e2a-121">parsingSucceeded</span></span>|<span data-ttu-id="33e2a-122">Booliano</span><span class="sxs-lookup"><span data-stu-id="33e2a-122">Boolean</span></span>|<span data-ttu-id="33e2a-123">`true`se a expressão tiver sido analisada com êxito.</span><span class="sxs-lookup"><span data-stu-id="33e2a-123">`true` if the expression was parsed successfully.</span></span>|
+|<span data-ttu-id="03b32-109">erro</span><span class="sxs-lookup"><span data-stu-id="03b32-109">error</span></span>|<span data-ttu-id="03b32-110">publicError</span><span class="sxs-lookup"><span data-stu-id="03b32-110">publicError</span></span>|<span data-ttu-id="03b32-111">Detalhes do erro, se a avaliação da expressão resultar em um erro.</span><span class="sxs-lookup"><span data-stu-id="03b32-111">Error details, if expression evaluation resulted in an error.</span></span>|
+|<span data-ttu-id="03b32-112">evaluationResult</span><span class="sxs-lookup"><span data-stu-id="03b32-112">evaluationResult</span></span>|<span data-ttu-id="03b32-113">Coleção String</span><span class="sxs-lookup"><span data-stu-id="03b32-113">String collection</span></span>|<span data-ttu-id="03b32-114">Uma coleção de valores produzidos pela avaliação da expressão.</span><span class="sxs-lookup"><span data-stu-id="03b32-114">A collection of values produced by the evaluation of the expression.</span></span>|
+|<span data-ttu-id="03b32-115">evaluationSucceeded</span><span class="sxs-lookup"><span data-stu-id="03b32-115">evaluationSucceeded</span></span>|<span data-ttu-id="03b32-116">Boolean</span><span class="sxs-lookup"><span data-stu-id="03b32-116">Boolean</span></span>|<span data-ttu-id="03b32-117">`true`se a avaliação tiver sido bem-sucedida.</span><span class="sxs-lookup"><span data-stu-id="03b32-117">`true` if the evaluation was successful.</span></span>|
+|<span data-ttu-id="03b32-118">parsedExpression</span><span class="sxs-lookup"><span data-stu-id="03b32-118">parsedExpression</span></span>|[<span data-ttu-id="03b32-119">attributeMappingSource</span><span class="sxs-lookup"><span data-stu-id="03b32-119">attributeMappingSource</span></span>](synchronization-attributemappingsource.md)|<span data-ttu-id="03b32-120">Um objeto [attributeMappingSource](synchronization-attributemappingsource.md) que representa a expressão analisada.</span><span class="sxs-lookup"><span data-stu-id="03b32-120">An [attributeMappingSource](synchronization-attributemappingsource.md) object representing the parsed expression.</span></span>|
+|<span data-ttu-id="03b32-121">parsingSucceeded</span><span class="sxs-lookup"><span data-stu-id="03b32-121">parsingSucceeded</span></span>|<span data-ttu-id="03b32-122">Boolean</span><span class="sxs-lookup"><span data-stu-id="03b32-122">Boolean</span></span>|<span data-ttu-id="03b32-123">`true`se a expressão tiver sido analisada com êxito.</span><span class="sxs-lookup"><span data-stu-id="03b32-123">`true` if the expression was parsed successfully.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="33e2a-124">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="33e2a-124">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="03b32-124">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="03b32-124">JSON representation</span></span>
 
-<span data-ttu-id="33e2a-125">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="33e2a-125">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="03b32-125">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="03b32-125">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -56,8 +56,6 @@ ms.locfileid: "32523431"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/synchronization-parseexpressionresponse.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -4,29 +4,31 @@ description: Obter as instâncias (ocorrências) de um evento para um intervalo 
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 974d0f9de05e23ced89875b14c0976cff128b53d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 95517f79df712b3a776f54c0735f92fe016e97f3
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32457491"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325071"
 ---
-# <a name="list-instances"></a><span data-ttu-id="1f98f-103">Listar instâncias</span><span class="sxs-lookup"><span data-stu-id="1f98f-103">List instances</span></span>
+# <a name="list-instances"></a><span data-ttu-id="e90b3-103">Listar instâncias</span><span class="sxs-lookup"><span data-stu-id="e90b3-103">List instances</span></span>
 
-<span data-ttu-id="1f98f-104">Obter as instâncias (ocorrências) de um evento para um intervalo de tempo especificado.</span><span class="sxs-lookup"><span data-stu-id="1f98f-104">Get the instances (occurrences) of an event for a specified time range.</span></span> 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1f98f-105">Se o evento for do tipo `seriesMaster`, isso retornará as exceções e ocorrências desse evento no intervalo de tempo especificado.</span><span class="sxs-lookup"><span data-stu-id="1f98f-105">If the event is a `seriesMaster` type, this returns the occurrences and exceptions of the event in the specified time range.</span></span>
+<span data-ttu-id="e90b3-104">Obter as instâncias (ocorrências) de um evento para um intervalo de tempo especificado.</span><span class="sxs-lookup"><span data-stu-id="e90b3-104">Get the instances (occurrences) of an event for a specified time range.</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="1f98f-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="1f98f-106">Permissions</span></span>
-<span data-ttu-id="1f98f-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1f98f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="e90b3-105">Se o evento for do tipo `seriesMaster`, isso retornará as exceções e ocorrências desse evento no intervalo de tempo especificado.</span><span class="sxs-lookup"><span data-stu-id="e90b3-105">If the event is a `seriesMaster` type, this returns the occurrences and exceptions of the event in the specified time range.</span></span>
 
-|<span data-ttu-id="1f98f-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="1f98f-109">Permission type</span></span>      | <span data-ttu-id="1f98f-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="1f98f-110">Permissions (from least to most privileged)</span></span>              |
+## <a name="permissions"></a><span data-ttu-id="e90b3-106">Permissões</span><span class="sxs-lookup"><span data-stu-id="e90b3-106">Permissions</span></span>
+<span data-ttu-id="e90b3-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e90b3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="e90b3-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="e90b3-109">Permission type</span></span>      | <span data-ttu-id="e90b3-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="e90b3-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1f98f-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="1f98f-111">Delegated (work or school account)</span></span> | <span data-ttu-id="1f98f-112">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="1f98f-112">Calendars.Read</span></span>    |
-|<span data-ttu-id="1f98f-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="1f98f-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1f98f-114">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="1f98f-114">Calendars.Read</span></span>    |
-|<span data-ttu-id="1f98f-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="1f98f-115">Application</span></span> | <span data-ttu-id="1f98f-116">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="1f98f-116">Calendars.Read</span></span> |
+|<span data-ttu-id="e90b3-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="e90b3-111">Delegated (work or school account)</span></span> | <span data-ttu-id="e90b3-112">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="e90b3-112">Calendars.Read</span></span>    |
+|<span data-ttu-id="e90b3-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="e90b3-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e90b3-114">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="e90b3-114">Calendars.Read</span></span>    |
+|<span data-ttu-id="e90b3-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="e90b3-115">Application</span></span> | <span data-ttu-id="e90b3-116">Calendars.Read</span><span class="sxs-lookup"><span data-stu-id="e90b3-116">Calendars.Read</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1f98f-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="1f98f-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e90b3-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="e90b3-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/events/{id}/instances?startDateTime={start_datetime}&endDateTime={end_datetime}
@@ -46,41 +48,41 @@ GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/ins
 GET /me/calendargroups/{id}/calendars/{id}/events/{id}/instances?startDateTime={start_datetime}&endDateTime={end_datetime}
 GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/instances?startDateTime={start_datetime}&endDateTime={end_datetime}
 ```
-## <a name="query-parameters"></a><span data-ttu-id="1f98f-118">Parâmetros de consulta</span><span class="sxs-lookup"><span data-stu-id="1f98f-118">Query parameters</span></span>
+## <a name="query-parameters"></a><span data-ttu-id="e90b3-118">Parâmetros de consulta</span><span class="sxs-lookup"><span data-stu-id="e90b3-118">Query parameters</span></span>
 
-<span data-ttu-id="1f98f-119">Forneça os seguintes parâmetros de consulta necessários com valores na URL solicitada.</span><span class="sxs-lookup"><span data-stu-id="1f98f-119">In the request URL, provide the following required query parameters with values.</span></span>
+<span data-ttu-id="e90b3-119">Forneça os seguintes parâmetros de consulta necessários com valores na URL solicitada.</span><span class="sxs-lookup"><span data-stu-id="e90b3-119">In the request URL, provide the following required query parameters with values.</span></span>
 
-| <span data-ttu-id="1f98f-120">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="1f98f-120">Parameter</span></span>    | <span data-ttu-id="1f98f-121">Tipo</span><span class="sxs-lookup"><span data-stu-id="1f98f-121">Type</span></span>   |<span data-ttu-id="1f98f-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="1f98f-122">Description</span></span>|
+| <span data-ttu-id="e90b3-120">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="e90b3-120">Parameter</span></span>    | <span data-ttu-id="e90b3-121">Tipo</span><span class="sxs-lookup"><span data-stu-id="e90b3-121">Type</span></span>   |<span data-ttu-id="e90b3-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="e90b3-122">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="1f98f-123">startDateTime</span><span class="sxs-lookup"><span data-stu-id="1f98f-123">startDateTime</span></span>|<span data-ttu-id="1f98f-124">String</span><span class="sxs-lookup"><span data-stu-id="1f98f-124">String</span></span>|<span data-ttu-id="1f98f-p102">A data e a hora de início do intervalo de tempo, representadas no formato ISO 8601. Por exemplo, "2015-11-08T19:00:00.0000000".</span><span class="sxs-lookup"><span data-stu-id="1f98f-p102">The start date and time of the time range, represented in ISO 8601 format. For example, "2015-11-08T19:00:00.0000000".</span></span>|
-|<span data-ttu-id="1f98f-127">endDateTime</span><span class="sxs-lookup"><span data-stu-id="1f98f-127">endDateTime</span></span>|<span data-ttu-id="1f98f-128">String</span><span class="sxs-lookup"><span data-stu-id="1f98f-128">String</span></span>|<span data-ttu-id="1f98f-p103">A data e a hora de término do intervalo de tempo, representadas no formato ISO 8601. Por exemplo, "2015-11-08T20:00:00.0000000".</span><span class="sxs-lookup"><span data-stu-id="1f98f-p103">The end date and time of the time range, represented in ISO 8601 format. For example, "2015-11-08T20:00:00.0000000".</span></span>|
+|<span data-ttu-id="e90b3-123">startDateTime</span><span class="sxs-lookup"><span data-stu-id="e90b3-123">startDateTime</span></span>|<span data-ttu-id="e90b3-124">String</span><span class="sxs-lookup"><span data-stu-id="e90b3-124">String</span></span>|<span data-ttu-id="e90b3-p102">A data e a hora de início do intervalo de tempo, representadas no formato ISO 8601. Por exemplo, "2015-11-08T19:00:00.0000000".</span><span class="sxs-lookup"><span data-stu-id="e90b3-p102">The start date and time of the time range, represented in ISO 8601 format. For example, "2015-11-08T19:00:00.0000000".</span></span>|
+|<span data-ttu-id="e90b3-127">endDateTime</span><span class="sxs-lookup"><span data-stu-id="e90b3-127">endDateTime</span></span>|<span data-ttu-id="e90b3-128">String</span><span class="sxs-lookup"><span data-stu-id="e90b3-128">String</span></span>|<span data-ttu-id="e90b3-p103">A data e a hora de término do intervalo de tempo, representadas no formato ISO 8601. Por exemplo, "2015-11-08T20:00:00.0000000".</span><span class="sxs-lookup"><span data-stu-id="e90b3-p103">The end date and time of the time range, represented in ISO 8601 format. For example, "2015-11-08T20:00:00.0000000".</span></span>|
 
-<span data-ttu-id="1f98f-131">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="1f98f-131">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="1f98f-132">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="1f98f-132">Request headers</span></span>
-| <span data-ttu-id="1f98f-133">Nome</span><span class="sxs-lookup"><span data-stu-id="1f98f-133">Name</span></span>       | <span data-ttu-id="1f98f-134">Tipo</span><span class="sxs-lookup"><span data-stu-id="1f98f-134">Type</span></span> | <span data-ttu-id="1f98f-135">Descrição</span><span class="sxs-lookup"><span data-stu-id="1f98f-135">Description</span></span> |
+<span data-ttu-id="e90b3-131">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="e90b3-131">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="e90b3-132">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="e90b3-132">Request headers</span></span>
+| <span data-ttu-id="e90b3-133">Nome</span><span class="sxs-lookup"><span data-stu-id="e90b3-133">Name</span></span>       | <span data-ttu-id="e90b3-134">Tipo</span><span class="sxs-lookup"><span data-stu-id="e90b3-134">Type</span></span> | <span data-ttu-id="e90b3-135">Descrição</span><span class="sxs-lookup"><span data-stu-id="e90b3-135">Description</span></span> |
 |:---------------|:--------|:--------|
-| <span data-ttu-id="1f98f-136">Autorização</span><span class="sxs-lookup"><span data-stu-id="1f98f-136">Authorization</span></span>  | <span data-ttu-id="1f98f-137">string</span><span class="sxs-lookup"><span data-stu-id="1f98f-137">string</span></span> | <span data-ttu-id="1f98f-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="1f98f-p104">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="1f98f-140">Prefira: outlook.timezone</span><span class="sxs-lookup"><span data-stu-id="1f98f-140">Prefer: outlook.timezone</span></span>  | <span data-ttu-id="1f98f-141">string</span><span class="sxs-lookup"><span data-stu-id="1f98f-141">string</span></span> | <span data-ttu-id="1f98f-142">Use isto para especificar o fuso horário para horas de início e término na resposta.</span><span class="sxs-lookup"><span data-stu-id="1f98f-142">Use this to specify the time zone for start and end times in the response.</span></span> <span data-ttu-id="1f98f-143">Se não especificado, esses valores de tempo serão retornados em UTC.</span><span class="sxs-lookup"><span data-stu-id="1f98f-143">If not specified, those time values are returned in UTC.</span></span> <span data-ttu-id="1f98f-144">Opcional.</span><span class="sxs-lookup"><span data-stu-id="1f98f-144">Optional.</span></span> |
+| <span data-ttu-id="e90b3-136">Autorização</span><span class="sxs-lookup"><span data-stu-id="e90b3-136">Authorization</span></span>  | <span data-ttu-id="e90b3-137">string</span><span class="sxs-lookup"><span data-stu-id="e90b3-137">string</span></span> | <span data-ttu-id="e90b3-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="e90b3-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="e90b3-140">Prefira: outlook.timezone</span><span class="sxs-lookup"><span data-stu-id="e90b3-140">Prefer: outlook.timezone</span></span>  | <span data-ttu-id="e90b3-141">string</span><span class="sxs-lookup"><span data-stu-id="e90b3-141">string</span></span> | <span data-ttu-id="e90b3-142">Use isto para especificar o fuso horário para horas de início e término na resposta.</span><span class="sxs-lookup"><span data-stu-id="e90b3-142">Use this to specify the time zone for start and end times in the response.</span></span> <span data-ttu-id="e90b3-143">Se não especificado, esses valores de tempo serão retornados em UTC.</span><span class="sxs-lookup"><span data-stu-id="e90b3-143">If not specified, those time values are returned in UTC.</span></span> <span data-ttu-id="e90b3-144">Opcional.</span><span class="sxs-lookup"><span data-stu-id="e90b3-144">Optional.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="1f98f-145">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="1f98f-145">Request body</span></span>
-<span data-ttu-id="1f98f-146">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="1f98f-146">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e90b3-145">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="e90b3-145">Request body</span></span>
+<span data-ttu-id="e90b3-146">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="e90b3-146">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="1f98f-147">Resposta</span><span class="sxs-lookup"><span data-stu-id="1f98f-147">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e90b3-147">Resposta</span><span class="sxs-lookup"><span data-stu-id="e90b3-147">Response</span></span>
 
-<span data-ttu-id="1f98f-148">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [Event](../resources/event.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="1f98f-148">If successful, this method returns a `200 OK` response code and collection of [Event](../resources/event.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="1f98f-149">Exemplo</span><span class="sxs-lookup"><span data-stu-id="1f98f-149">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="1f98f-150">Solicitação</span><span class="sxs-lookup"><span data-stu-id="1f98f-150">Request</span></span>
-<span data-ttu-id="1f98f-151">O exemplo a seguir obtém dentro do intervalo de tempo especificado as ocorrências e exceções de um evento que é o evento mestre de uma série recorrente.</span><span class="sxs-lookup"><span data-stu-id="1f98f-151">The following example gets within the specified time range the occurrences and exceptions of an event which is the master event of a recurring series.</span></span>
+<span data-ttu-id="e90b3-148">Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [Event](../resources/event.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="e90b3-148">If successful, this method returns a `200 OK` response code and collection of [Event](../resources/event.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="e90b3-149">Exemplo</span><span class="sxs-lookup"><span data-stu-id="e90b3-149">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="e90b3-150">Solicitação</span><span class="sxs-lookup"><span data-stu-id="e90b3-150">Request</span></span>
+<span data-ttu-id="e90b3-151">O exemplo a seguir obtém dentro do intervalo de tempo especificado as ocorrências e exceções de um evento que é o evento mestre de uma série recorrente.</span><span class="sxs-lookup"><span data-stu-id="e90b3-151">The following example gets within the specified time range the occurrences and exceptions of an event which is the master event of a recurring series.</span></span>
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkAGUzYRgWAAA="],
   "name": "get_instances"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/events/AAMkAGUzYRgWAAA=/instances?startDateTime=2019-04-08T09:00:00.0000000&endDateTime=2019-04-30T09:00:00.0000000&$select=subject,bodyPreview,seriesMasterId,type,recurrence,start,end
+GET https://graph.microsoft.com/beta/me/events/AAMkAGUzYRgWAAA=/instances?startDateTime=2019-04-08T09:00:00.0000000&endDateTime=2019-04-30T09:00:00.0000000&$select=subject,bodyPreview,seriesMasterId,type,recurrence,start,end
 ```
-##### <a name="response"></a><span data-ttu-id="1f98f-152">Resposta</span><span class="sxs-lookup"><span data-stu-id="1f98f-152">Response</span></span>
-<span data-ttu-id="1f98f-153">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="1f98f-153">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="e90b3-152">Resposta</span><span class="sxs-lookup"><span data-stu-id="e90b3-152">Response</span></span>
+<span data-ttu-id="e90b3-153">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="e90b3-153">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "name": "get_instances",
@@ -93,7 +95,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('bb8775a4-4d8c-42cf-a1d4-4d58c2bb668f')/events('AAMkAGUzYRgWAAA%3D')/instances(subject,bodyPreview,seriesMasterId,type,recurrence,start,end)",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('bb8775a4-4d8c-42cf-a1d4-4d58c2bb668f')/events('AAMkAGUzYRgWAAA%3D')/instances(subject,bodyPreview,seriesMasterId,type,recurrence,start,end)",
     "value": [
         {
             "@odata.etag": "W/\"x3IAvB5fbUWf4XNcBFLNUwAAKuA3yQ==\"",
@@ -169,10 +171,13 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List instances",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

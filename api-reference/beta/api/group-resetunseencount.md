@@ -4,48 +4,48 @@ description: Redefina a unseenCount de todas as postagens que o usuário atual n
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: aa37261a536437d0e82195ecfaae06de9e1c6a3a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c39566252a5c910b50170b3b4b77122292be3f52
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32502005"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324195"
 ---
-# <a name="group-resetunseencount"></a><span data-ttu-id="b1bd5-104">group: resetUnseenCount</span><span class="sxs-lookup"><span data-stu-id="b1bd5-104">group: resetUnseenCount</span></span>
+# <a name="group-resetunseencount"></a><span data-ttu-id="43d56-104">group: resetUnseenCount</span><span class="sxs-lookup"><span data-stu-id="43d56-104">group: resetUnseenCount</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b1bd5-105">Redefina a unseenCount de todas as postagens que o usuário atual não viu desde sua última visita.</span><span class="sxs-lookup"><span data-stu-id="b1bd5-105">Reset the unseenCount of all the posts that the current user has not seen since their last visit.</span></span> <span data-ttu-id="b1bd5-106">Suporte apenas para Grupos do Office 365.</span><span class="sxs-lookup"><span data-stu-id="b1bd5-106">Supported for Office 365 Groups only.</span></span>
+<span data-ttu-id="43d56-105">Redefina a unseenCount de todas as postagens que o usuário atual não viu desde sua última visita.</span><span class="sxs-lookup"><span data-stu-id="43d56-105">Reset the unseenCount of all the posts that the current user has not seen since their last visit.</span></span> <span data-ttu-id="43d56-106">Suporte apenas para Grupos do Office 365.</span><span class="sxs-lookup"><span data-stu-id="43d56-106">Supported for Office 365 Groups only.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="b1bd5-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="b1bd5-107">Permissions</span></span>
-<span data-ttu-id="b1bd5-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b1bd5-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="43d56-107">Permissões</span><span class="sxs-lookup"><span data-stu-id="43d56-107">Permissions</span></span>
+<span data-ttu-id="43d56-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="43d56-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="b1bd5-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="b1bd5-110">Permission type</span></span>      | <span data-ttu-id="b1bd5-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="b1bd5-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="43d56-110">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="43d56-110">Permission type</span></span>      | <span data-ttu-id="43d56-111">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="43d56-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="b1bd5-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="b1bd5-112">Delegated (work or school account)</span></span> | <span data-ttu-id="b1bd5-113">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b1bd5-113">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="b1bd5-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="b1bd5-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b1bd5-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="b1bd5-115">Not supported.</span></span>    |
-|<span data-ttu-id="b1bd5-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="b1bd5-116">Application</span></span> | <span data-ttu-id="b1bd5-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="b1bd5-117">Not supported.</span></span> |
+|<span data-ttu-id="43d56-112">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="43d56-112">Delegated (work or school account)</span></span> | <span data-ttu-id="43d56-113">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="43d56-113">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="43d56-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="43d56-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="43d56-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="43d56-115">Not supported.</span></span>    |
+|<span data-ttu-id="43d56-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="43d56-116">Application</span></span> | <span data-ttu-id="43d56-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="43d56-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="b1bd5-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="b1bd5-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="43d56-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="43d56-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groups/{id}/resetUnseenCount
 ```
-## <a name="request-headers"></a><span data-ttu-id="b1bd5-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="b1bd5-119">Request headers</span></span>
-| <span data-ttu-id="b1bd5-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="b1bd5-120">Header</span></span>       | <span data-ttu-id="b1bd5-121">Valor</span><span class="sxs-lookup"><span data-stu-id="b1bd5-121">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="43d56-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="43d56-119">Request headers</span></span>
+| <span data-ttu-id="43d56-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="43d56-120">Header</span></span>       | <span data-ttu-id="43d56-121">Valor</span><span class="sxs-lookup"><span data-stu-id="43d56-121">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="b1bd5-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="b1bd5-122">Authorization</span></span>  | <span data-ttu-id="b1bd5-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="b1bd5-p104">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="b1bd5-125">Preferir</span><span class="sxs-lookup"><span data-stu-id="b1bd5-125">Prefer</span></span> | <span data-ttu-id="b1bd5-126">retorno=mínimo.</span><span class="sxs-lookup"><span data-stu-id="b1bd5-126">return=minimal.</span></span> <span data-ttu-id="b1bd5-127">Se o cabeçalho de resposta mínimo estiver incluído no cabeçalho da solicitação, uma resposta bem-sucedida retornará o código `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="b1bd5-127">If minimal response header is included in the request header, then a successful response returns `204 No Content` code.</span></span> <span data-ttu-id="b1bd5-128">Opcional.</span><span class="sxs-lookup"><span data-stu-id="b1bd5-128">Optional.</span></span>  | 
+| <span data-ttu-id="43d56-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="43d56-122">Authorization</span></span>  | <span data-ttu-id="43d56-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="43d56-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="43d56-125">Preferir</span><span class="sxs-lookup"><span data-stu-id="43d56-125">Prefer</span></span> | <span data-ttu-id="43d56-126">retorno=mínimo.</span><span class="sxs-lookup"><span data-stu-id="43d56-126">return=minimal.</span></span> <span data-ttu-id="43d56-127">Se o cabeçalho de resposta mínimo estiver incluído no cabeçalho da solicitação, uma resposta bem-sucedida retornará o código `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="43d56-127">If minimal response header is included in the request header, then a successful response returns `204 No Content` code.</span></span> <span data-ttu-id="43d56-128">Opcional.</span><span class="sxs-lookup"><span data-stu-id="43d56-128">Optional.</span></span>  | 
 
-## <a name="request-body"></a><span data-ttu-id="b1bd5-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="b1bd5-129">Request body</span></span>
-<span data-ttu-id="b1bd5-130">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="b1bd5-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="43d56-129">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="43d56-129">Request body</span></span>
+<span data-ttu-id="43d56-130">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="43d56-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="b1bd5-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="b1bd5-131">Response</span></span>
-<span data-ttu-id="b1bd5-p106">Se bem-sucedido, este método retorna um código de resposta `200 OK`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="b1bd5-p106">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="43d56-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="43d56-131">Response</span></span>
+<span data-ttu-id="43d56-p106">Se bem-sucedido, este método retorna um código de resposta `200 OK`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="43d56-p106">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="b1bd5-134">Exemplo</span><span class="sxs-lookup"><span data-stu-id="b1bd5-134">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="b1bd5-135">Solicitação</span><span class="sxs-lookup"><span data-stu-id="b1bd5-135">Request</span></span>
-<span data-ttu-id="b1bd5-136">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="b1bd5-136">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="43d56-134">Exemplo</span><span class="sxs-lookup"><span data-stu-id="43d56-134">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="43d56-135">Solicitação</span><span class="sxs-lookup"><span data-stu-id="43d56-135">Request</span></span>
+<span data-ttu-id="43d56-136">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="43d56-136">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "group_resetunseencount"
@@ -54,8 +54,8 @@ POST /groups/{id}/resetUnseenCount
 POST https://graph.microsoft.com/beta/groups/{id}/resetUnseenCount
 ```
 
-#### <a name="response"></a><span data-ttu-id="b1bd5-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="b1bd5-137">Response</span></span>
-<span data-ttu-id="b1bd5-138">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="b1bd5-138">The following is an example of the response.</span></span> 
+#### <a name="response"></a><span data-ttu-id="43d56-137">Resposta</span><span class="sxs-lookup"><span data-stu-id="43d56-137">Response</span></span>
+<span data-ttu-id="43d56-138">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="43d56-138">The following is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -73,8 +73,6 @@ HTTP/1.1 200 OK
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/group-resetunseencount.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -2,18 +2,18 @@
 title: Tipo de recurso alternativeSecurityId
 description: Apenas para uso interno.
 localization_priority: Normal
-ms.openlocfilehash: 23ef74085a4a3cc383f0854e9139c9a0b63e3d40
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 60e45c6d914c64f92b9f15f78fda22372a23e91f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32569477"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345838"
 ---
-# <a name="alternativesecurityid-resource-type"></a><span data-ttu-id="60676-103">Tipo de recurso alternativeSecurityId</span><span class="sxs-lookup"><span data-stu-id="60676-103">alternativeSecurityId resource type</span></span>
+# <a name="alternativesecurityid-resource-type"></a><span data-ttu-id="015fc-103">Tipo de recurso alternativeSecurityId</span><span class="sxs-lookup"><span data-stu-id="015fc-103">alternativeSecurityId resource type</span></span>
 
-<span data-ttu-id="60676-104">Apenas para uso interno.</span><span class="sxs-lookup"><span data-stu-id="60676-104">For internal use only.</span></span>
+<span data-ttu-id="015fc-104">Apenas para uso interno.</span><span class="sxs-lookup"><span data-stu-id="015fc-104">For internal use only.</span></span> <span data-ttu-id="015fc-105">Esse tipo complexo será preterido no futuro.</span><span class="sxs-lookup"><span data-stu-id="015fc-105">This complex type will be deprecated in the future.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="60676-105">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="60676-105">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="015fc-106">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="015fc-106">JSON representation</span></span>
 
 <!--{
   "blockType": "resource",
@@ -28,9 +28,9 @@ ms.locfileid: "32569477"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="60676-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="60676-106">Properties</span></span>
-| <span data-ttu-id="60676-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="60676-107">Property</span></span>         | <span data-ttu-id="60676-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="60676-108">Type</span></span>       | <span data-ttu-id="60676-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="60676-109">Description</span></span>
+## <a name="properties"></a><span data-ttu-id="015fc-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="015fc-107">Properties</span></span>
+| <span data-ttu-id="015fc-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="015fc-108">Property</span></span>         | <span data-ttu-id="015fc-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="015fc-109">Type</span></span>       | <span data-ttu-id="015fc-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="015fc-110">Description</span></span>
 |:-----------------|:-----------|:---------------------
-| <span data-ttu-id="60676-110">type</span><span class="sxs-lookup"><span data-stu-id="60676-110">type</span></span>             | <span data-ttu-id="60676-111">Int32</span><span class="sxs-lookup"><span data-stu-id="60676-111">Int32</span></span>      | <span data-ttu-id="60676-112">Apenas para uso interno</span><span class="sxs-lookup"><span data-stu-id="60676-112">For internal use only</span></span>
-| <span data-ttu-id="60676-113">identityProvider</span><span class="sxs-lookup"><span data-stu-id="60676-113">identityProvider</span></span> | <span data-ttu-id="60676-114">string</span><span class="sxs-lookup"><span data-stu-id="60676-114">string</span></span>     | <span data-ttu-id="60676-115">Apenas para uso interno</span><span class="sxs-lookup"><span data-stu-id="60676-115">For internal use only</span></span>
-| <span data-ttu-id="60676-116">chave</span><span class="sxs-lookup"><span data-stu-id="60676-116">key</span></span>              | <span data-ttu-id="60676-117">EDM. Binary</span><span class="sxs-lookup"><span data-stu-id="60676-117">Edm.Binary</span></span> | <span data-ttu-id="60676-118">Apenas para uso interno</span><span class="sxs-lookup"><span data-stu-id="60676-118">For internal use only</span></span>
+| <span data-ttu-id="015fc-111">type</span><span class="sxs-lookup"><span data-stu-id="015fc-111">type</span></span>             | <span data-ttu-id="015fc-112">Int32</span><span class="sxs-lookup"><span data-stu-id="015fc-112">Int32</span></span>      | <span data-ttu-id="015fc-113">Apenas para uso interno</span><span class="sxs-lookup"><span data-stu-id="015fc-113">For internal use only</span></span>
+| <span data-ttu-id="015fc-114">identityProvider</span><span class="sxs-lookup"><span data-stu-id="015fc-114">identityProvider</span></span> | <span data-ttu-id="015fc-115">string</span><span class="sxs-lookup"><span data-stu-id="015fc-115">string</span></span>     | <span data-ttu-id="015fc-116">Apenas para uso interno</span><span class="sxs-lookup"><span data-stu-id="015fc-116">For internal use only</span></span>
+| <span data-ttu-id="015fc-117">chave</span><span class="sxs-lookup"><span data-stu-id="015fc-117">key</span></span>              | <span data-ttu-id="015fc-118">EDM. Binary</span><span class="sxs-lookup"><span data-stu-id="015fc-118">Edm.Binary</span></span> | <span data-ttu-id="015fc-119">Apenas para uso interno</span><span class="sxs-lookup"><span data-stu-id="015fc-119">For internal use only</span></span>
