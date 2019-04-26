@@ -5,11 +5,11 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: bb865ef12d0ad8eb0f18b5f9c7c9631346921e17
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27923838"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550319"
 ---
 # <a name="delete-educationschool"></a>Excluir educationSchool
 

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 48bac2fcc8dd8c7da65c3ee138aabaaf5649b356
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31795181"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32553068"
 ---
 # <a name="ioslobappassignmentsettings-resource-type"></a>Tipo de recurso iosLobAppAssignmentSettings
 
@@ -28,7 +28,7 @@ Herda de [mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignm
 |vpnConfigurationId|Cadeia de caracteres|A identificação de configuração da VPN a aplicar neste aplicativo.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

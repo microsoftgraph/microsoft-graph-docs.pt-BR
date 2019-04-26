@@ -4,12 +4,12 @@ description: Recupere uma única mensagem (sem suas respostas) no canal de uma e
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: ffd472f93d278b2df09633a8d78733154963a5e2
-ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
+ms.openlocfilehash: 11c03608886a8edd0a945b450c6278934a8525da
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "31889930"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463480"
 ---
 # <a name="get-channel-message"></a>Obter mensagens do canal
 
@@ -45,17 +45,18 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [chatmessage](../resources/chatmessage.md) no corpo da resposta.
+Se bem-sucedido, esse método retornará um `200 OK` código de resposta e um objeto [chatmessage](../resources/chatmessage.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["303d2c1c-f1c5-40ce-b68e-544343d7f42b", "19:fec4b0f2825d4c8c82abc09027a64184@thread.skype", "1555375673184"],
   "name": "get_channel_message"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages/{id}
+GET https://graph.microsoft.com/beta/teams/303d2c1c-f1c5-40ce-b68e-544343d7f42b/channels/19:fec4b0f2825d4c8c82abc09027a64184@thread.skype/messages/1555375673184
 ```
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. 
@@ -69,26 +70,36 @@ Veja a seguir um exemplo da resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 201
 
 {
-  "id": "id-value",
-  "replyToId": "id-value",
-  "from": {
-      "user": { 
-        "id": "id-value",
-        "displayName": "John Doe"
-      }  
-  },
-  "etag": "id-value",
-  "messageType": "message",
-  "createdDateTime": "2018-07-09T07:40:20.152Z",
-  "lastModifiedDateTime": "2018-07-09T07:40:20.152Z",
-  "body": {
-      "content": "Hello World",
-      "contentType": "text"
-  },
-  "attachments": [
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('303d2c1c-f1c5-40ce-b68e-544343d7f42b')/channels('19%3Afec4b0f2825d4c8c82abc09027a64184%40thread.skype')/messages/$entity",
+    "id": "1555375673184",
+    "replyToId": null,
+    "etag": "1555375673184",
+    "messageType": "message",
+    "createdDateTime": "2019-04-16T00:47:53.184Z",
+    "lastModifiedDateTime": null,
+    "deletedDateTime": null,
+    "subject": "",
+    "summary": null,
+    "importance": "normal",
+    "locale": "en-us",
+    "policyViolation": null,
+    "from": {
+        "application": null,
+        "device": null,
+        "conversation": null,
+        "user": {
+            "id": "bb8775a4-4d8c-42cf-a1d4-4d58c2bb668f",
+            "displayName": "Adele Vance",
+            "userIdentityType": "aadUser"
+        }
+    },
+    "body": {
+        "contentType": "html",
+        "content": "<div><div>Nice to join this team. <at id=\"0\">Megan Bowen</at>, have we got the March report ready please?</div>\n</div>"
+    },
+    "attachments": [
         {
             "id": "5e32f195-168a-474f-a273-123123123",
             "contentType": "reference",
@@ -97,31 +108,34 @@ Content-length: 201
             "name": "Test.txt",
             "thumbnailUrl": null
         }
-  ],
-  "mentions": [
-      {
-          "id": "id-value ",
-          "mentionText": "Test User",
-          "mentioned": {
-          "user": {
-            "id": "id-value",
-            "displayName: "string"
-          }
+    ],
+    "mentions": [
+        {
+            "id": 0,
+            "mentionText": "Megan Bowen",
+            "mentioned": {
+                "application": null,
+                "device": null,
+                "conversation": null,
+                "user": {
+                    "id": "5d8d505c-864f-4804-88c7-4583c966cde8",
+                    "displayName": "Megan Bowen",
+                    "userIdentityType": "aadUser"
+                }
+            }
         }
-      }
-  ],
-  "importance": "normal",
-  "reactions": [
+    ],
+    "reactions": [
       {
         "reactionType": "like",
         "user": {
-            "id": "id-value",
-            "displayName": "John Doe"
+            "id": "5d8d505c-864f-4804-88c7-4583c966cde8",
+            "displayName": "Megan Bowen",
+            "userIdentityType": "aadUser"
         },
-        "createdDateTime": "2018-07-09T07:40:20.152Z"
+        "createdDateTime": "2019-04-16T00:58:53.184Z"
       }
-  ],
-  "locale": "en-us"
+    ]
 }
 ```
 

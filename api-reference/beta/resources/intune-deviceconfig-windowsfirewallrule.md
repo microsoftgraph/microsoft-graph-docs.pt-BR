@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 77df7da501aee80b534accbe4c0d33dcf0e8df63
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31788314"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32570212"
 ---
 # <a name="windowsfirewallrule-resource-type"></a>tipo de recurso windowsFirewallRule
 
@@ -24,13 +24,13 @@ Uma regra que controla o tráfego por meio do firewall do Windows.
 |:---|:---|:---|
 |displayName|Cadeia de caracteres|O nome de exibição da regra. Não precisa ser exclusivo.|
 |description|String|A descrição da regra.|
-|packageFamilyName|Cadeia de caracteres|O nome da família de pacotes de um aplicativo da Microsoft Store que é afetado pela regra de firewall.|
-|filePath|Cadeia de caracteres|O caminho completo do arquivo de um aplicativo afetado pela regra de firewall.|
-|serviceName|Cadeia de caracteres|O nome usado em casos em que um serviço, não um aplicativo, está enviando ou recebendo tráfego.|
+|packageFamilyName|String|O nome da família de pacotes de um aplicativo da Microsoft Store que é afetado pela regra de firewall.|
+|filePath|String|O caminho completo do arquivo de um aplicativo afetado pela regra de firewall.|
+|serviceName|String|O nome usado em casos em que um serviço, não um aplicativo, está enviando ou recebendo tráfego.|
 |RDP|Int32|0-255 número que representa o protocolo IP (TCP = 6, UDP = 17). Se não for especificado, o padrão é ALL. Valores válidos de 0 a 255|
-|localPortRanges|Coleção String|Lista de intervalos de porta locais. Por exemplo, "100-120", "200", "300-320". Se não for especificado, o padrão é ALL.|
-|remotePortRanges|Coleção String|Lista de intervalos de portas remotas. Por exemplo, "100-120", "200", "300-320". Se não for especificado, o padrão é ALL.|
-|localAddressRanges|Coleção String|Lista de endereços locais cobertos pela regra. Os tokens válidos incluem:
+|localPortRanges|Coleção de cadeias de caracteres|Lista de intervalos de porta locais. Por exemplo, "100-120", "200", "300-320". Se não for especificado, o padrão é ALL.|
+|remotePortRanges|Coleção de cadeias de caracteres|Lista de intervalos de portas remotas. Por exemplo, "100-120", "200", "300-320". Se não for especificado, o padrão é ALL.|
+|localAddressRanges|Coleção de cadeias de caracteres|Lista de endereços locais cobertos pela regra. Os tokens válidos incluem:
 - "*" indica qualquer endereço local. Se presente, este deve ser o único token incluído.
 - Uma sub-rede pode ser especificada usando a máscara de sub-rede ou a notação de prefixo de rede. Se nenhuma máscara de sub-rede ou prefixo de rede for especificado, a máscara de sub-rede padrão será 255.255.255.255.
 - Um endereço IPv6 válido.
@@ -54,7 +54,7 @@ O padrão é qualquer endereço. | | remoteAddressRanges | Conjunto de cadeias d
 O padrão é qualquer endereço. | | profileTypes | [windowsFirewallRuleNetworkProfileTypes](../resources/intune-deviceconfig-windowsfirewallrulenetworkprofiletypes.md)| Especifica os perfis aos quais a regra pertence. Se não for especificado, o padrão é ALL. Os valores possíveis são `notConfigured`: `domain`, `private`, `public`,. | | ação | [stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)| A ação que a regra impõe. Se não for especificado, o padrão será permitido. Os valores possíveis são `notConfigured`: `blocked`, `allowed`,. | | trafficDirection | [windowsFirewallRuleTrafficDirectionType](../resources/intune-deviceconfig-windowsfirewallruletrafficdirectiontype.md)| A direção de tráfego para a qual a regra está habilitada. Se não for especificado, o padrão será out. Os valores possíveis são `notConfigured`: `out`, `in`,. | | Interfaces | [windowsFirewallRuleInterfaceTypes](../resources/intune-deviceconfig-windowsfirewallruleinterfacetypes.md)| Os tipos de interface da regra. Os valores possíveis são `notConfigured`: `remoteAccess`, `wireless`, `lan`,. | | localUserAuthorizations | Cadeia de caracteres | Especifica a lista de usuários locais autorizados para o contêiner de aplicativos. Esta é uma cadeia de caracteres no formato SDDL (Security Descriptor Definition Language). |
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

@@ -1,15 +1,15 @@
 ---
-title: tipo de recurso de onPremisesPublishing
+title: tipo de recurso onPremisesPublishing
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 ms.openlocfilehash: fd216d52ba212e739f1d7c087a99a4379682010e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508178"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568855"
 ---
-# <a name="onpremisespublishing-resource-type"></a>tipo de recurso de onPremisesPublishing
+# <a name="onpremisespublishing-resource-type"></a>tipo de recurso onPremisesPublishing
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -17,12 +17,12 @@ ms.locfileid: "29508178"
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |customDomainCertificate|String|Detalhes do certificado associado ao aplicativo quando um domínio personalizado está em uso. Nulo ao usar o domínio padrão.|
-|externalAuthenticationType|String|Detalha a configuração de pré-autenticação para os aplicativo os valores possíveis são: `passthru`, `aadPreAuthentication`.|
-|externalUrl|String|A url externa publicada para o aplicativo. Por exemplo:  |
-|internalUrl|String|A url interna do aplicativo. Por exemplo: |
-|isOnPremPublishingEnabled|Booliano|Indica se o aplicativo atualmente está sendo publicado ou não.|
-|applicationServerTimeout|String|A duração o conector aguardará uma resposta do aplicativo back-end antes de fechar a conexão. Os valores possíveis são: `default` e `long`. Uso `long` se seu servidor demorar mais de 75-60 segundos para responder às solicitações. Além disso, experimente `long` se não for possível acessar o aplicativo e o status de erro é "Backend Timeout".|
-|isTranslateHostHeaderEnabled|Booliano|Indica se o aplicativo deve traduzir urls em cabeçalhos de resposta. Isso inclui a definição de site correto para os cookies.|
+|externalAuthenticationType|String|Detalhes a configuração de pré-autenticação para o aplicativo os valores possíveis são: `passthru`, `aadPreAuthentication`.|
+|externalUrl|String|A URL externa publicada para o aplicativo. Por exemplohttps://intranet-contoso.msappproxy.net/  |
+|internalUrl|String|A URL interna do aplicativo. Por exemplohttps://intranet/ |
+|isOnPremPublishingEnabled|Booliano|Indica se o aplicativo está sendo publicado ou não no momento.|
+|applicationServerTimeout|String|A duração que o conector aguardará por uma resposta do aplicativo backend antes de fechar a conexão. Os valores possíveis `default`são `long`:. Use `long` se o servidor levar mais de 60-75 segundos para responder às solicitações. Além disso `long` , tente se você não consegue acessar o aplicativo e o status do erro é "tempo limite de backend".|
+|isTranslateHostHeaderEnabled|Booliano|Indica se o aplicativo deve traduzir URLs nos cabeçalhos de resposta. Isso inclui a configuração do site correto para cookies.|
 
 ## <a name="json-representation"></a>Representação JSON
 

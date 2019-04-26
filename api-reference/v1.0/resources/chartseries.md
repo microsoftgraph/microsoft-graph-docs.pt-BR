@@ -1,19 +1,19 @@
 ---
 title: Tipo de recurso ChartSeries
-description: Representa uma série em um gráfico.
+description: Representa uma série de um gráfico.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: b9a857f127848f1ed0da8de673902527e3858ffe
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27970384"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569036"
 ---
 # <a name="chartseries-resource-type"></a>Tipo de recurso ChartSeries
 
-Representa uma série em um gráfico.
+Representa uma série de um gráfico.
 
 
 ## <a name="methods"></a>Métodos
@@ -25,17 +25,17 @@ Representa uma série em um gráfico.
 |[List points](../api/chartseries-list-points.md) |Coleção [ChartPoints](chartpoint.md)| Obtenha uma coleção de objetos ChartPoints.|
 |[Update](../api/chartseries-update.md) | [WorkbookChartSeries](chartseries.md) |Atualize o objeto ChartSeries. |
 |[List](../api/chartseries-list.md) | Coleção [WorkbookChartSeries](chartseries.md) |Obtenha uma coleção de objetos chartSeries. |
-|[ItemAt](../api/chartseriescollection-itemat.md)|[WorkbookChartSeries](chartseries.md)|Recupera uma série com base na respectiva posição na coleção.|
+|[ItemAt](../api/chartseriescollection-itemat.md)|[WorkbookChartSeries](chartseries.md)|Recupera uma série com base na respectiva posição na coleção|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|name|string|Representa o nome de uma série em um gráfico.|
+|name|string|Representa o nome de uma série do gráfico.|
 
-## <a name="relationships"></a>Relacionamentos
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|formato|[WorkbookChartSeriesFormat](chartseriesformat.md)|Representa a formatação de uma série do gráfico, que inclui a formatação de linha e de preenchimento. Somente leitura.|
+|format|[WorkbookChartSeriesFormat](chartseriesformat.md)|Representa a formatação de uma série do gráfico, que inclui a formatação de linha e de preenchimento. Somente leitura.|
 |points|Coleção [WorkbookChartPoint](chartpoint.md)|Representa uma coleção de todos os pontos da série. Somente leitura.|
 
 ## <a name="json-representation"></a>Representação JSON

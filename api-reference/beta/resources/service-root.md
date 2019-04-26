@@ -1,13 +1,13 @@
 ---
 title: Raiz de serviço
-description: 25-10-2015 57:14:30 UTC – gt _
+description: 2015-10-25 14:57:30 UTC-->
 localization_priority: Normal
 ms.openlocfilehash: 5e9c464c50dcbef7a03ca3a2fc2b0aaac40fbb30
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524307"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32554878"
 ---
 # <a name="service-root"></a>Raiz de serviço
 
@@ -30,11 +30,11 @@ ms.locfileid: "29524307"
 |[List group](../api/group-list.md) | Coleção [group](group.md) |Obtenha a coleção de objetos de grupos. |
 |[List organization](../api/organization-list.md) | Coleção [organization](organization.md) |Obtenha a coleção de objetos de organizações. |
 |[List subscribedSku](../api/subscribedsku-list.md) | Coleção [subscribedSku](subscribedsku.md) |Obtenha a coleção de objetos de subscribedSku. |
-|[Create user](../api/user-post-users.md) |[user](user.md)| Crie um novo usuário postando na coleção de usuários.|
+|[Criar usuário](../api/user-post-users.md) |[user](user.md)| Crie um novo usuário postando na coleção de usuários.|
 |[List user](../api/user-list.md) | Coleção [user](user.md) |Obtenha a coleção de objetos de usuários. |
-|[Criar connectorGroup](../api/connectorgroup-post-connectorgroups.md) |[connectorGroup](connectorgroup.md)|Crie um novo connectorGroup pelo lançamento à coleção connectorGroups.|
-|[Lista connectorGroup](../api/connectorgroup-list.md) | coleção [connectorGroup](connectorgroup.md) |Obtenha a coleção de objetos connectorGroup. |
-|[Conector de lista](../api/connector-list.md) | coleção de [conector](connector.md) |Obtenha o conector de coleção de objetos. |
+|[Criar um conector](../api/connectorgroup-post-connectorgroups.md) |[connectorGroup](connectorgroup.md)|Criar um novo grupo de conectores postando na coleção connectorGroups.|
+|[Lista de conectores de lista](../api/connectorgroup-list.md) | [](connectorgroup.md) coleção de conectores |Obter coleção de objetos do grupo de conectores. |
+|[Conector de lista](../api/connector-list.md) | coleção [Connector](connector.md) |Obter coleção de objetos do conector. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -5,11 +5,11 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: 83d1f6e52e11afc60c84977676279ae02182e047
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27972583"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550431"
 ---
 # <a name="list-members"></a>Listar membros
 
@@ -22,7 +22,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |:--------------------|:---------------------------------------------------------|
 |Delegado (conta corporativa ou de estudante) |  EduRoster.ReadBasic  |
 |Delegado (conta pessoal da Microsoft) |  Sem suporte  |
-|Aplicativo | EduRoster.Read.All, EduRoster.ReadWrite.All mais Member.Read.Hidden | 
+|Aplicativo | EduRoster. Read. All, EduRoster. ReadWrite. All mais member. Read. Hidden | 
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->

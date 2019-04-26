@@ -5,11 +5,11 @@ localization_priority: Priority
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: 940a8e055a6a730bd12a7ab73e7d3a611a63e53f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27921693"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556127"
 ---
 # <a name="excel-workbooks-and-charts-api-overview"></a>Visão geral da API de gráficos e pastas de trabalho do Excel
 

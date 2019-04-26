@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: d39e625d24d6ab8486bc281be957ef8728d4403b
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31786095"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556155"
 ---
 # <a name="editionupgradelicensetype-enum-type"></a>tipo de enumeração editionUpgradeLicenseType
 
@@ -23,8 +23,8 @@ Tipo de licença de atualização de edição
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |productKey|,0|Tipo de chave do produto|
-|LicenseFile|1|Tipo de arquivo de licença|
-|notConfigured|duas|NotConfigured|
+|LicenseFile|1 |Tipo de arquivo de licença|
+|notConfigured|2 |NotConfigured|
 
 
 

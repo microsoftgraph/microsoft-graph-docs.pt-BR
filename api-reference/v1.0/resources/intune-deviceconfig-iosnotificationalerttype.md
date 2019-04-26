@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 6165149ea01f91720ba9b65d185ca2ecdf8820a0
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30253278"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32554671"
 ---
 # <a name="iosnotificationalerttype-enum-type"></a>tipo de enumeração iosNotificationAlertType
 
@@ -21,9 +21,9 @@ Tipo de alerta de configurações de notificação.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |deviceDefault|,0|Valor padrão do dispositivo, sem intenção.|
-|Bandeira|1|Bandeira.|
-|JanelaRestrita|duas|JanelaRestrita.|
-|Nenhuma|3D|Nenhum.|
+|Bandeira|1 |Bandeira.|
+|JanelaRestrita|2 |JanelaRestrita.|
+|Nenhuma|3 |Nenhum|
 
 
 

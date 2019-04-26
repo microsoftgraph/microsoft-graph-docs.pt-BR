@@ -1,30 +1,30 @@
 ---
-title: tipo de recurso de participantMixerLevel
-description: Configuração do mixer níveis para determinados participante de áudio
+title: tipo de recurso participantMixerLevel
+description: Configuração dos níveis de mixer para um determinado participante de áudio
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 14804e02766e375568fac03cb97d2eaf76142353
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643829"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568570"
 ---
-# <a name="participantmixerlevel-resource-type"></a>tipo de recurso de participantMixerLevel
+# <a name="participantmixerlevel-resource-type"></a>tipo de recurso participantMixerLevel
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Configuração do mixer níveis para determinados participante de áudio
+Configuração dos níveis de mixer para um determinado participante de áudio
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade               | Tipo                                                      | Descrição                                                                                         |
 | :--------------------- | :-------------------------------------------------------- | :---------------------------------------------------------------------------------------------------|
-| desviando                | [audioDuckingConfiguration](audioduckingconfiguration.md) | Configuração do desviando (Introdução gradual e sair) de outras fontes para este partipant mistura personalizada.       |
-| exclusiveMode          | boolean                                                   | Se fontes sem nível de origem explícitas devem ser removidas da combinação.                       |
-| participante            | String                                                    | O participante para quem o mixer está sendo configurado.                                             |
-| sourceLevels           | coleção [audioSourceLevel](audiosourcelevel.md)        | Configuração de nível de outras fontes.                                                              |
+| pato                | [audioDuckingConfiguration](audioduckingconfiguration.md) | Configuração do phasing (entrada e saída) de outras fontes para essa combinação personalizada partipant.       |
+| exclusivemode          | booliano                                                   | Se as fontes sem nível de fonte explícita devem ser removidas da mistura.                       |
+| participante            | String                                                    | O participante para o qual o mixer está sendo configurado.                                             |
+| sourceLevels           | coleção [audioSourceLevel](audiosourcelevel.md)        | Configuração de nível para outras fontes.                                                              |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -46,7 +46,7 @@ Veja a seguir uma representação JSON do recurso.
 }
 ```
 
-## <a name="example---mixer-level"></a>Exemplo - nível Mixer
+## <a name="example---mixer-level"></a>Exemplo-nível do mixer
 
 <!-- {
   "blockType": "example",

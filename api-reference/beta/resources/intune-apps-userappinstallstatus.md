@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 3efd555f4b4a728e9a4ae660eac9568cb7e3b2a9
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31791114"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32555105"
 ---
 # <a name="userappinstallstatus-resource-type"></a>tipo de recurso userAppInstallStatus
 
@@ -31,7 +31,7 @@ Contém propriedades para o status de instalação de um usuário.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade.|
+|id|Cadeia de caracteres|Chave da entidade.|
 |userName|Cadeia de caracteres|Nome de usuário.|
 |userPrincipalName|String|Nome principal do usuário.|
 |installedDeviceCount|Int32|Contagem de dispositivos instalados.|

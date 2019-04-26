@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: c4db2473213e879b7beee7f082767bb4a9f63aee
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31772108"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32551782"
 ---
 # <a name="officeupdatechannel-enum-type"></a>tipo de enumeração officeUpdateChannel
 
@@ -22,11 +22,11 @@ A enumeração para especificar o canal de atualizações do office365.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhuma|,0|Ainda não documentado|
-|hoje|1|Ainda não documentado|
-|adiado|duas|Ainda não documentado|
-|firstReleaseCurrent|3D|Ainda não documentado|
-|firstReleaseDeferred|quatro|Ainda não documentado|
+|Nenhuma|,0|Ainda não documentado|
+|hoje|1 |Ainda não documentado|
+|adiado|2 |Ainda não documentado|
+|firstReleaseCurrent|3 |Ainda não documentado|
+|firstReleaseDeferred|4 |Ainda não documentado|
 
 
 

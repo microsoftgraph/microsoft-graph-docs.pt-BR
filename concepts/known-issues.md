@@ -4,11 +4,11 @@ description: Este artigo descreve os problemas conhecidos com o Microsoft Graph.
 author: jthake-msft
 localization_priority: Priority
 ms.openlocfilehash: 12a24d57370dfd593c6056e30db0d956266b29a1
-ms.sourcegitcommit: bbe42a15dad4ffe037a6934ab6001b585b7574c2
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "31904053"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32555441"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Problemas conhecidos com o Microsoft Graph
 

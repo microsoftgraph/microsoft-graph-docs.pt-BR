@@ -6,11 +6,11 @@ title: Atualizar um arquivo ou uma pasta
 localization_priority: Priority
 ms.prod: sharepoint
 ms.openlocfilehash: 7a4769ddc48db3230c1609a979f69a09a620303e
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482151"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550501"
 ---
 # <a name="update-driveitem-properties"></a>Atualizar propriedades de DriveItem
 

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 741565678be1bfb533c4445c02c767f87fdfca05
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31781082"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556085"
 ---
 # <a name="folderprotectiontype-enum-type"></a>tipo de enumeração folderProtectionType
 
@@ -23,10 +23,10 @@ Possíveis valores de proteção de pasta
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |userDefined|,0|Valor padrão do dispositivo, sem intenção.|
-|possibilite|1|Funcionalidade de bloqueio.|
-|auditmode|duas|Permitir a funcionalidade, mas gerar logs.|
-|blockDiskModification|3D|Bloquear a gravação de aplicativos não confiáveis em setores de disco.|
-|auditDiskModification|quatro|Gerar logs quando aplicativos não confiáveis gravam em setores de disco.|
+|possibilite|1 |Funcionalidade de bloqueio.|
+|auditmode|2 |Permitir a funcionalidade, mas gerar logs.|
+|blockDiskModification|3 |Bloquear a gravação de aplicativos não confiáveis em setores de disco.|
+|auditDiskModification|4 |Gerar logs quando aplicativos não confiáveis gravam em setores de disco.|
 
 
 

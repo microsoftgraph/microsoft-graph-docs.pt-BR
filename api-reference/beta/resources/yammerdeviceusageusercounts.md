@@ -1,17 +1,17 @@
 ---
-title: tipo de recurso de yammerDeviceUsageUserCounts
+title: tipo de recurso yammerDeviceUsageUserCounts
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: 63bd3e150e822d3c356f4409c2920e4998e53ec2
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577323"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32551516"
 ---
-# <a name="yammerdeviceusageusercounts-resource-type"></a>tipo de recurso de yammerDeviceUsageUserCounts
+# <a name="yammerdeviceusageusercounts-resource-type"></a>tipo de recurso yammerDeviceUsageUserCounts
 
 ## <a name="properties"></a>Propriedades
 
@@ -19,11 +19,11 @@ ms.locfileid: "29577323"
 | :---------------- | :----- |
 | reportRefreshDate | Data   |
 | web               | Int32  |
-| windowsPhone      | Int32  |
+| Windowsphonee      | Int32  |
 | androidPhone      | Int32  |
 | iPhone            | Int32  |
 | iPad              | Int32  |
-| outros             | Int32  |
+| outro             | Int32  |
 | reportDate        | Data   |
 | reportPeriod      | String |
 

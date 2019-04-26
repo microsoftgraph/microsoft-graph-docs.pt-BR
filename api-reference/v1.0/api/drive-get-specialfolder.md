@@ -6,11 +6,11 @@ title: Obter pastas especiais
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 55b976a32583546d7ed5993083af82dc0a55121f
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482375"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32551411"
 ---
 # <a name="get-a-special-folder-by-name"></a>Obtenha uma pasta especial por nome
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |            Tipo de permissão             |                                           Permissões (da com menos para a com mais privilégios)                                            |
 | :------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------- |
 | Delegado (conta corporativa ou de estudante)     | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All                            |
-| Delegada (conta pessoal da Microsoft) | Files.ReadWrite.AppFolder, Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
+| Delegado (conta pessoal da Microsoft) | Files.ReadWrite.AppFolder, Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
 | Aplicativo                            | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All                                                         |
 
 ## <a name="http-request"></a>Solicitação HTTP

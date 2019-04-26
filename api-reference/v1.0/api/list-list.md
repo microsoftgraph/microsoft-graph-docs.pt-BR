@@ -6,11 +6,11 @@ title: Lista as listas do SharePoint em um site
 localization_priority: Priority
 ms.prod: sharepoint
 ms.openlocfilehash: 4cafc4ea32b1dadd686f257946470ba41e32c48b
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482095"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32557044"
 ---
 # <a name="enumerate-lists-in-a-site"></a>Enumerar listas em um site
 

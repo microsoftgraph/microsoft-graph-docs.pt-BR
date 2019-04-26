@@ -1,15 +1,15 @@
 ---
-title: tipo de recurso de operação
+title: tipo de recurso Operation
 description: O status de uma operação de execução longa.
 localization_priority: Normal
 ms.openlocfilehash: 3ad9848387dab2de928f7ace2fa4b905720be615
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520183"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568884"
 ---
-# <a name="operation-resource-type"></a>tipo de recurso de operação
+# <a name="operation-resource-type"></a>tipo de recurso Operation
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -17,18 +17,18 @@ O status de uma operação de execução longa.
 
 ## <a name="methods"></a>Métodos
 
-Nenhuma
+Nenhum
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade           | Tipo            | Descrição                                                                     |
 | :----------------- | :-------------- | :-------------------------------------------------------------------------------|
 | createdDateTime    | DateTimeOffset  | A hora de início da operação.                                                |
-| id                 | String          | A id da operação. Somente leitura. Servidor foi gerado.                                  |
+| id                 | Cadeia de caracteres          | A ID da operação. Somente leitura. Servidor gerado.                                  |
 | lastActionDateTime | DateTimeOffset  | A hora da última ação da operação.                                   |
 | status             | String          | Os valores possíveis são: `notStarted`, `running`, `completed`, `failed`. Somente leitura. |
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 
 Nenhum
 

@@ -6,11 +6,11 @@ title: Obter Unidade
 localization_priority: Priority
 ms.prod: sharepoint
 ms.openlocfilehash: 78d31fb584d345a401fddefac37399093c2d084b
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480443"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32551467"
 ---
 # <a name="get-drive"></a>Obter Unidade
 

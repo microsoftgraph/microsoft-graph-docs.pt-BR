@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: 0c25373b7a1c7657b2aee290c9a6ce5d0ae23cb9
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31781439"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556421"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Configuração de dispositivo no Microsoft Intune
 
@@ -90,7 +90,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Configuração de VPN do perfil de trabalho do Android](intune-deviceconfig-androidworkprofilevpnconfiguration.md)
 - [Tipo de conexão de VPN do perfil de trabalho do Android](intune-deviceconfig-androidworkprofilevpnconnectiontype.md)
 - [Configuração de Wi-Fi do perfil de trabalho do Android](intune-deviceconfig-androidworkprofilewificonfiguration.md)
-- [Item de lista do aplicativo](intune-deviceconfig-applistitem.md)
+- [Item da lista do aplicativo](intune-deviceconfig-applistitem.md)
 - [Tipo de lista do aplicativo](intune-deviceconfig-applisttype.md)
 - [Tipo de controle do aplicativo App Locker](intune-deviceconfig-applockerapplicationcontroltype.md)
 - [Base de configuração de recursos do dispositivo Apple](intune-deviceconfig-appledevicefeaturesconfigurationbase.md)
@@ -478,7 +478,7 @@ Os seguintes recursos do Graph estão disponíveis para gerenciar configuraçõe
 - [Tipo de visibilidade de lista de aplicativos do menu Iniciar do Windows](intune-deviceconfig-windowsstartmenuapplistvisibilitytype.md)
 - [Tipo de modo do menu Iniciar do Windows](intune-deviceconfig-windowsstartmenumodetype.md)
 - [Instalação de horas ativas do Windows Update](intune-deviceconfig-windowsupdateactivehoursinstall.md)
-- [Configuração do Windows Update para empresas](intune-deviceconfig-windowsupdateforbusinessconfiguration.md)
+- [Configuração do Windows Update para Empresas](intune-deviceconfig-windowsupdateforbusinessconfiguration.md)
 - [Semanas de atualização do Windows Update para empresas](intune-deviceconfig-windowsupdateforbusinessupdateweeks.md)
 - [Tipo de agendamento de instalação do Windows Update](intune-deviceconfig-windowsupdateinstallscheduletype.md)
 - [Opção de exibição para notificação de atualização do Windows](intune-deviceconfig-windowsupdatenotificationdisplayoption.md)

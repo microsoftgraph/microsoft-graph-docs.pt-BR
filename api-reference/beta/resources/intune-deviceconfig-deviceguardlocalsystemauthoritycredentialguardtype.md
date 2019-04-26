@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 0f22336a37c3d10d4e86b3db2af41e8103dcfe33
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31774866"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32567225"
 ---
 # <a name="deviceguardlocalsystemauthoritycredentialguardtype-enum-type"></a>tipo de enumeração deviceGuardLocalSystemAuthorityCredentialGuardType
 
@@ -23,8 +23,8 @@ Valores possíveis das configurações do Credential Guard.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Desativa o Credential Guard remotamente, se configurado anteriormente sem bloqueio de UEFI.|
-|enableWithUEFILock|1|Ativa o Credential Guard com bloqueio de UEFI.|
-|enableWithoutUEFILock|duas|Ativa o Credential Guard sem bloqueio de UEFI.|
+|enableWithUEFILock|1 |Ativa o Credential Guard com bloqueio de UEFI.|
+|enableWithoutUEFILock|2 |Ativa o Credential Guard sem bloqueio de UEFI.|
 
 
 

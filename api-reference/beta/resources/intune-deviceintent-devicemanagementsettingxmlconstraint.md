@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 510d16f8c28bc3efc3c1bb1952c62edbc5394810
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31781607"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550585"
 ---
 # <a name="devicemanagementsettingxmlconstraint-resource-type"></a>tipo de recurso deviceManagementSettingXmlConstraint
 
@@ -27,7 +27,7 @@ Herda de [deviceManagementConstraint](../resources/intune-deviceintent-deviceman
 |:---|:---|:---|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

@@ -1,30 +1,30 @@
 ---
-title: tipo de recurso de teamsApp
-description: Um aplicativo no catálogo de aplicativos Microsoft Teams.
+title: tipo de recurso teamsApp
+description: Um aplicativo no catálogo de aplicativos do Microsoft Teams.
 author: nkramer
-localization_priority: Priority
+localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 2493b7f6adee51e5c5622585055cbd3cf2778656
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937443"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462267"
 ---
-# <a name="teamsapp-resource-type"></a>tipo de recurso de teamsApp
+# <a name="teamsapp-resource-type"></a>tipo de recurso teamsApp
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+Um aplicativo no catálogo de aplicativos do [Microsoft Teams](teams-api-overview.md).
 
-Um aplicativo no catálogo de aplicativos [Equipes da Microsoft](teams-api-overview.md) .
-
-Os usuários podem ver esses aplicativos no Microsoft Teams Store e esses aplicativos podem ser instalados em [equipes](team.md) usando o método [Add app à equipe](../api/teamsappinstallation-add.md) .
+Os usuários podem ver esses aplicativos no Microsoft Teams Store e esses aplicativos podem ser instalados nas [equipes](team.md) usando o método [Adicionar aplicativo à equipe](../api/teamsappinstallation-add.md).
 
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[Listar os aplicativos publicados](../api/teamsapp-list.md) | coleção [teamsApp](teamsapp.md) | Liste aplicativos publicados do catálogo de aplicativos do Microsoft Teams.|
-|[Publicar um aplicativo](../api/teamsapp-publish.md) | [teamsApp](teamsapp.md) | Publica um aplicativo no catálogo de aplicativos da sua organização.|
+|[Lista de aplicativos publicados](../api/teamsapp-list.md) | Coleção [teamsApp](teamsapp.md) | Lista de aplicativos publicados do catálogo de aplicativos do Microsoft Teams.|
+|[Publicar um aplicativo](../api/teamsapp-publish.md) | [teamsApp](teamsapp.md) | Publica um aplicativo ao catálogo de aplicativos da sua organização.|
 |[Atualizar um aplicativo publicado](../api/teamsapp-update.md) | [teamsApp](teamsapp.md) | Atualize um aplicativo publicado no catálogo de aplicativos da sua organização.|
 |[Remover um aplicativo publicado](../api/teamsapp-delete.md) | Nenhum | Remova um aplicativo publicado do catálogo de aplicativos da sua organização.|
 
@@ -32,24 +32,24 @@ Os usuários podem ver esses aplicativos no Microsoft Teams Store e esses aplica
 
 | Propriedade            | Tipo     | Descrição |
 |:------------------- |:-------- |:----------- |
-| id                  | string   | O aplicativo de catálogo gerados ID de aplicativo (diferente da identificação de fornecido pelo desenvolvedor no [pacote de aplicativos zip equipes da Microsoft](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package). |
-| externalId          | string   | A identificação do catálogo fornecido pelo desenvolvedor app nas [equipes da Microsoft zip o pacote de aplicativos](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package). |
-| displayName                | string   | O nome do aplicativo catálogo fornecido pelo desenvolvedor app nas [equipes da Microsoft zip o pacote de aplicativos](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package). |
+| id                  | string   | A ID do aplicativo gerada no catálogo de aplicativos (diferente da ID fornecida pelo desenvolvedor em [pacote de aplicativos compactados do Microsoft Teams](https://docs.microsoft.com/pt-BR/microsoftteams/platform/concepts/apps/apps-package). |
+| externalId          | cadeia de caracteres   | A ID do catálogo fornecido pelo desenvolvedor do aplicativo do [pacote de aplicativos compactados do Microsoft Teams](https://docs.microsoft.com/pt-BR/microsoftteams/platform/concepts/apps/apps-package). |
+| displayName                | string   | O nome do catálogo de aplicativos fornecido pelo desenvolvedor do aplicativo no [pacote de aplicativos compactados do Microsoft Teams](https://docs.microsoft.com/pt-BR/microsoftteams/platform/concepts/apps/apps-package). |
 | distributionMethod  | teamsAppDistributionMethod     | O método de distribuição para o aplicativo. |
 
-### <a name="teamsappdistributionmethod-values"></a>valores de teamsAppDistributionMethod
+### <a name="teamsappdistributionmethod-values"></a>valores teamsAppDistributionMethod
 
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|repositório|0| O aplicativo está disponível para todos os locatários por meio da loja de app Teams da Microsoft.|
-|organization|1|O aplicativo está disponível somente neste locatário.|
-|sideloaded|2|O aplicativo está disponível somente para a equipe do usuário/seu instalados para.|
+|loja|0| O aplicativo está disponível para todos os locatários na loja de aplicativos do Microsoft Teams.|
+|organização|1|O aplicativo está disponível somente nesse locatário.|
+|sideloaded|2|O aplicativo está disponível apenas para usuário/equipe onde ele está instalado.|
 
 ## <a name="relationships"></a>Relações
 
 | Relação | Tipo   | Descrição |
 |:---------------|:--------|:----------|
-|appDefinitions|coleção [teamsAppDefinition](teamsappdefinition.md)| Os detalhes de cada versão do aplicativo. |
+|appDefinitions|Coleção [teamsAppDefinition](teamsappdefinition.md) | Os detalhes para cada versão do aplicativo. |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -76,11 +76,16 @@ Os usuários podem ver esses aplicativos no Microsoft Teams Store e esses aplica
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "teamsApp resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/teamsapp.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
 

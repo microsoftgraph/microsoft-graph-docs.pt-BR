@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 860d9bc88aff010bbb8a563017474698f93535b9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917213"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550109"
 ---
 # <a name="list-threads"></a>Listar threads
 Obter todos os threads de um grupo.

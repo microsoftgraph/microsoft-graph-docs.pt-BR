@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: d976aa25694a6a1684e4ad104a6d6510591196b6
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31807578"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556400"
 ---
 # <a name="advancedthreatprotectiononboardingdevicesettingstate-resource-type"></a>tipo de recurso advancedThreatProtectionOnboardingDeviceSettingState
 
@@ -31,22 +31,22 @@ Estado de integração ATP para um determinado dispositivo.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade|
+|id|Cadeia de caracteres|Chave da entidade|
 |platformType|[deviceType](../resources/intune-shared-devicetype.md)|Tipo de plataforma de dispositivo. Os valores possíveis são `desktop`: `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad` `iPod` `android`,,, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise` ,,,,,,,, , `blackberry`, `palm`, `unknown`.|
-|configuração|Cadeia de caracteres|O nome da classe de configuração e o nome da propriedade.|
-|settingName|Cadeia de caracteres|O nome da configuração sendo relatada|
-|deviceId|Cadeia de caracteres|A ID do dispositivo sendo relatada|
+|configuração|String|O nome da classe de configuração e o nome da propriedade.|
+|settingName|String|O nome da configuração sendo relatada|
+|deviceId|String|A ID do dispositivo sendo relatada|
 |deviceName|String|O nome do dispositivo sendo relatado|
-|userId|Cadeia de caracteres|A ID do usuário sendo relatada|
+|userId|String|A ID do usuário sendo relatada|
 |userEmail|Cadeia de caracteres|O endereço de email do usuário que está sendo relatado|
-|userName|Cadeia de caracteres|O nome de usuário que está sendo relatado|
+|userName|String|O nome de usuário que está sendo relatado|
 |userPrincipalName|String|O PrincipalName do usuário que está sendo relatado|
-|deviceModel|Cadeia de caracteres|O modelo do dispositivo que está sendo relatado|
+|deviceModel|String|O modelo do dispositivo que está sendo relatado|
 |state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|O estado de conformidade da configuração. Os valores possíveis são: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|DateTime em que o período de cortesia de conformidade do dispositivo termina|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

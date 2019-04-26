@@ -1,36 +1,39 @@
 ---
-title: Usar a API REST do OneNote
-description: O Microsoft Graph permite que o seu aplicativo obter acesso autorizado a um usuário OneNote blocos de anotações, seções e páginas em uma conta pessoal ou organização. Com o apropriado delegada ou permissões de aplicativo, seu aplicativo podem acessar os dados de OneNote do usuário conectado ou a qualquer usuário em um locatário.
-localization_priority: Priority
+title: Usar o API REST do OneNote
+description: 'O Microsoft Graph permite que o seu aplicativo obtenha acesso autorizado às sessões, páginas e blocos de notas do usuário do OneNote em uma conta pessoal ou da organização. Com as permissões delegadas ou permissões de aplicativo apropriadas, seu aplicativo pode acessar dados do OneNote do usuário conectado ou de todos os usuários em um locatário. '
+localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 ms.openlocfilehash: ceb5ac30786ecfd207a2076d471e9d004b60f8d3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27951534"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462953"
 ---
-# <a name="use-the-onenote-rest-api"></a>Usar a API REST do OneNote
+# <a name="use-the-onenote-rest-api"></a>Usar o API REST do OneNote
 
-O Microsoft Graph permite que o seu aplicativo obter acesso autorizado a um usuário OneNote blocos de anotações, seções e páginas em uma conta pessoal ou organização. Com as [permissões apropriadas de delegada ou de aplicativos](/graph/permissions-reference#notes-permissions), seu aplicativo pode acessar os dados de OneNote do usuário conectado ou a qualquer usuário em um locatário.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+O Microsoft Graph permite que o seu aplicativo obtenha acesso autorizado às sessões, páginas e blocos de notas do usuário do OneNote em uma conta pessoal ou da organização. Com as [permissões delegadas ou permissões de aplicativo apropriadas](/graph/permissions-reference#notes-permissions) seu aplicativo pode acessar dados do OneNote do usuário conectado ou de todos os usuários em um locatário. 
 
 ## <a name="root-url"></a>URL raiz
-A URL raiz do serviço do OneNote usa o formato a seguir para todas as chamadas para o OneNote.
+A URL raiz de serviço do OneNote usa o formato a seguir para todas as chamadas da API do OneNote.
 ```
 https://graph.microsoft.com/{version}/{location}/onenote/ 
 ```
-O `version` segmento na URL representa a versão do Microsoft Graph que você deseja usar:
+
+O segmento `version` na URL representa a versão do Microsoft Graph que você deseja usar:
 
 - `v1.0` serve para o código de produção estável.
-- `beta` serve para experimentar um recurso que está em desenvolvimento. Recursos e funcionalidades no ponto de extremidade beta podem ser alterado; não recomendamos que você usá-lo em seu código de produção.
+- `beta` serve para experimentar um recurso que está em desenvolvimento. Os recursos e funcionalidades na extremidade beta podem mudar; não recomendamos usá-lo no seu código de produção.
 
-O local pode ser blocos de anotações do usuário no Office 365 ou consumidor OneDrive, blocos de anotações do grupo ou blocos de anotações do SharePoint team site hospedado no Office 365. 
+A localização pode ser blocos de anotações do usuário no Office 365 ou de consumidor do OneDrive, blocos de anotações de grupo ou blocos de anotações hospedado no site da equipe do SharePoint no Office 365. 
 
-![Pilha do desenvolvimento de API do OneNote](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/onenote-dev-diagram.png)
+![Pilha de desenvolvimento da API do OneNote](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/onenote-dev-diagram.png)
 
 ### <a name="user-notebooks"></a>Blocos de anotações do usuário
-Para acessar os blocos de anotações pessoais consumidor OneDrive ou OneDrive for Business, use um dos seguintes URLs:
+Para acessar blocos de anotações pessoais no OneDrive do consumidor ou no OneDrive for Business, use uma das seguintes URLs:
 
 ```
 https://graph.microsoft.com/{version}/me/onenote/{notebooks | sections | sectionGroups | pages} 
@@ -39,20 +42,27 @@ https://graph.microsoft.com/{version}/users/{id}/onenote/{notebooks | sections |
 ```
 
 - `me` serve para o conteúdo do OneNote que o usuário atual pode acessar (exclusivo e compartilhado).
-- `users/{id}` serve para o conteúdo do OneNote que o usuário especificado (na URL) compartilhou com o usuário atual. Use os [usuários](users.md) API.
-> **Observação:** Você pode obter IDs de usuário fazendo uma solicitação GET na `https://graph.microsoft.com/v1.0/users`.
+- `users/{id}` serve para o conteúdo do OneNote que o usuário especificado (na URL) compartilhou com o usuário atual. Use a API de [usuários](users.md).
+> **Observação:** Para obter as IDs de usuário, faça uma solicitação GET em `https://graph.microsoft.com/v1.0/users`.
 
-### <a name="group-notebooks"></a>Blocos de anotações do grupo
-Para acessar os blocos de anotações pertencentes a um grupo, use a seguinte URL raiz de serviço:
+### <a name="group-notebooks"></a>Blocos de anotações de grupo
+
+Para acessar blocos de anotações que pertencem a um grupo, use a seguinte URL raiz de serviço:
 
 ```
 https://graph.microsoft.com/{version}/groups/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
 ```
-### <a name="sharepoint-site-notebooks"></a>Blocos de anotações do site do SharePoint
-
-Para acessar os blocos de anotações pertencentes a um site de equipe do SharePoint, use a seguinte URL raiz de serviço:
+### <a name="sharepoint-site-notebooks"></a>Blocos de anotações do SharePoint
+Para acessar blocos de anotações que pertencem a um site de equipe do SharePoint, use a seguinte URL raiz de serviço:
 
 ```
 https://graph.microsoft.com/{version}/sites/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
 ```
-
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/onenote-api-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 3781827d93f1e646becc2ee47de57cbba82dfc63
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31806661"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32554468"
 ---
 # <a name="ndesconnector-resource-type"></a>tipo de recurso ndesConnector
 
@@ -33,11 +33,11 @@ Entidade que representa um conector NDES local.
 |:---|:---|:---|
 |id|String|A chave do conector NDES.|
 |lastConnectionDateTime|DateTimeOffset|Hora da última conexão para o conector NDES|
-|state|[ndesConnectorState](../resources/intune-deviceconfig-ndesconnectorstate.md)|Status do conector NDES. Os valores possíveis são: `none`, `active`, `inactive`.|
+|estado|[ndesConnectorState](../resources/intune-deviceconfig-ndesconnectorstate.md)|Status do conector NDES. Os valores possíveis são: `none`, `active`, `inactive`.|
 |displayName|String|O nome amigável do conector NDES.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

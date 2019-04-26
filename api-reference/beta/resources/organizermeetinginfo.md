@@ -1,28 +1,28 @@
 ---
-title: tipo de recurso de organizerMeetingInfo
-description: Informações da reunião que contém o organizador da reunião.
+title: tipo de recurso organizerMeetingInfo
+description: Informações de reunião que contêm o organizador da reunião.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 3b7d21a313d8744f18c8b96549bc9470b587361c
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641992"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568560"
 ---
-# <a name="organizermeetinginfo-resource-type"></a>tipo de recurso de organizerMeetingInfo
+# <a name="organizermeetinginfo-resource-type"></a>tipo de recurso organizerMeetingInfo
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Informações da reunião que contém o organizador da reunião.
+Informações de reunião que contêm o organizador da reunião.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade                     | Tipo                          | Descrição                                     |
 | :--------------------------- | :---------------------------- | :-----------------------------------------------|
-| allowConversationWithoutHost | Booliano                       | Indica se uma conversa pode continuar depois que deixa o host da conversa. |
-| organizer                    | [identitySet](identityset.md) | O organizador da identidade do Windows Azure Active Directory.  |
+| allowConversationWithoutHost | Booliano                       | Indica se uma conversa pode continuar assim que o host da conversa sair. |
+| organizer                    | [identitySet](identityset.md) | A identidade do Azure Active Directory do organizador.  |
 
 ## <a name="json-representation"></a>Representação JSON
 
