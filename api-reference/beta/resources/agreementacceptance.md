@@ -2,18 +2,18 @@
 title: tipo de recurso agreementAcceptance
 description: Representa o status atual de um usuário dentro do escopo dos termos de uso personalizáveis de uma empresa, fornecido pelo Azure Active Directory (Azure AD).
 localization_priority: Normal
-ms.openlocfilehash: 884a6b7dcf4dcc8f00aa927dd9d486c074b64183
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 84b54998e8afaad501d2cf46d564400aa2307507
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32544041"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339138"
 ---
-# <a name="agreementacceptance-resource-type"></a><span data-ttu-id="0b8be-103">tipo de recurso agreementAcceptance</span><span class="sxs-lookup"><span data-stu-id="0b8be-103">agreementAcceptance resource type</span></span>
+# <a name="agreementacceptance-resource-type"></a><span data-ttu-id="b54cd-103">tipo de recurso agreementAcceptance</span><span class="sxs-lookup"><span data-stu-id="b54cd-103">agreementAcceptance resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="0b8be-104">Representa o status atual de um usuário dentro do escopo dos termos de uso personalizáveis de uma empresa, fornecido pelo Azure Active Directory (Azure AD).</span><span class="sxs-lookup"><span data-stu-id="0b8be-104">Represents the current status of a user within scope of a company's customizable terms of use powered by Azure Active Directory (Azure AD).</span></span>
+<span data-ttu-id="b54cd-104">Representa o status atual de um usuário dentro do escopo dos termos de uso personalizáveis de uma empresa, fornecido pelo Azure Active Directory (Azure AD).</span><span class="sxs-lookup"><span data-stu-id="b54cd-104">Represents the current status of a user within scope of a company's customizable terms of use powered by Azure Active Directory (Azure AD).</span></span>
 
 <!--
 ## Methods
@@ -25,26 +25,26 @@ ms.locfileid: "32544041"
 | [Delete](../api/agreementacceptance-delete.md) | None | Delete an **agreementAcceptance** object. |
 -->
 
-## <a name="properties"></a><span data-ttu-id="0b8be-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="0b8be-105">Properties</span></span>
-| <span data-ttu-id="0b8be-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="0b8be-106">Property</span></span>     | <span data-ttu-id="0b8be-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="0b8be-107">Type</span></span>        | <span data-ttu-id="0b8be-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="0b8be-108">Description</span></span> |
+## <a name="properties"></a><span data-ttu-id="b54cd-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="b54cd-105">Properties</span></span>
+| <span data-ttu-id="b54cd-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="b54cd-106">Property</span></span>     | <span data-ttu-id="b54cd-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="b54cd-107">Type</span></span>        | <span data-ttu-id="b54cd-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="b54cd-108">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="0b8be-109">agreementFileId</span><span class="sxs-lookup"><span data-stu-id="0b8be-109">agreementFileId</span></span>|<span data-ttu-id="0b8be-110">String</span><span class="sxs-lookup"><span data-stu-id="0b8be-110">String</span></span>|<span data-ttu-id="0b8be-111">ID do arquivo de contrato aceito pelo usuário.</span><span class="sxs-lookup"><span data-stu-id="0b8be-111">ID of the agreement file accepted by the user.</span></span>|
-|<span data-ttu-id="0b8be-112">agreementid</span><span class="sxs-lookup"><span data-stu-id="0b8be-112">agreementId</span></span>|<span data-ttu-id="0b8be-113">String</span><span class="sxs-lookup"><span data-stu-id="0b8be-113">String</span></span>|<span data-ttu-id="0b8be-114">ID do contrato.</span><span class="sxs-lookup"><span data-stu-id="0b8be-114">ID of the agreement.</span></span>|
-|<span data-ttu-id="0b8be-115">id</span><span class="sxs-lookup"><span data-stu-id="0b8be-115">id</span></span>|<span data-ttu-id="0b8be-116">String</span><span class="sxs-lookup"><span data-stu-id="0b8be-116">String</span></span>| <span data-ttu-id="0b8be-117">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="0b8be-117">Read-only.</span></span>|
-|<span data-ttu-id="0b8be-118">recordedDateTime</span><span class="sxs-lookup"><span data-stu-id="0b8be-118">recordedDateTime</span></span>|<span data-ttu-id="0b8be-119">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="0b8be-119">DateTimeOffset</span></span>|<span data-ttu-id="0b8be-p101">O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`</span><span class="sxs-lookup"><span data-stu-id="0b8be-p101">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`</span></span>|
-|<span data-ttu-id="0b8be-122">estado</span><span class="sxs-lookup"><span data-stu-id="0b8be-122">state</span></span>|<span data-ttu-id="0b8be-123">string</span><span class="sxs-lookup"><span data-stu-id="0b8be-123">string</span></span>| <span data-ttu-id="0b8be-124">Os valores possíveis são: `accepted` e `declined`.</span><span class="sxs-lookup"><span data-stu-id="0b8be-124">Possible values are: `accepted`, `declined`.</span></span>|
-|<span data-ttu-id="0b8be-125">userDisplayName</span><span class="sxs-lookup"><span data-stu-id="0b8be-125">userDisplayName</span></span>|<span data-ttu-id="0b8be-126">String</span><span class="sxs-lookup"><span data-stu-id="0b8be-126">String</span></span>|<span data-ttu-id="0b8be-127">Nome para exibição do usuário quando a aceitação foi registrada.</span><span class="sxs-lookup"><span data-stu-id="0b8be-127">Display name of the user when the acceptance was recorded.</span></span>|
-|<span data-ttu-id="0b8be-128">userEmail</span><span class="sxs-lookup"><span data-stu-id="0b8be-128">userEmail</span></span>|<span data-ttu-id="0b8be-129">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="0b8be-129">String</span></span>|<span data-ttu-id="0b8be-130">Email do usuário quando a aceitação foi registrada.</span><span class="sxs-lookup"><span data-stu-id="0b8be-130">Email of the user when the acceptance was recorded.</span></span>|
-|<span data-ttu-id="0b8be-131">userId</span><span class="sxs-lookup"><span data-stu-id="0b8be-131">userId</span></span>|<span data-ttu-id="0b8be-132">String</span><span class="sxs-lookup"><span data-stu-id="0b8be-132">String</span></span>|<span data-ttu-id="0b8be-133">ID do usuário que aceitou o contrato.</span><span class="sxs-lookup"><span data-stu-id="0b8be-133">ID of the user who accepted the agreement.</span></span>|
-|<span data-ttu-id="0b8be-134">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="0b8be-134">userPrincipalName</span></span>|<span data-ttu-id="0b8be-135">String</span><span class="sxs-lookup"><span data-stu-id="0b8be-135">String</span></span>|<span data-ttu-id="0b8be-136">UPN do usuário quando a aceitação foi registrada.</span><span class="sxs-lookup"><span data-stu-id="0b8be-136">UPN of the user when the acceptance was recorded.</span></span>|
+|<span data-ttu-id="b54cd-109">agreementFileId</span><span class="sxs-lookup"><span data-stu-id="b54cd-109">agreementFileId</span></span>|<span data-ttu-id="b54cd-110">String</span><span class="sxs-lookup"><span data-stu-id="b54cd-110">String</span></span>|<span data-ttu-id="b54cd-111">ID do arquivo de contrato aceito pelo usuário.</span><span class="sxs-lookup"><span data-stu-id="b54cd-111">ID of the agreement file accepted by the user.</span></span>|
+|<span data-ttu-id="b54cd-112">agreementid</span><span class="sxs-lookup"><span data-stu-id="b54cd-112">agreementId</span></span>|<span data-ttu-id="b54cd-113">String</span><span class="sxs-lookup"><span data-stu-id="b54cd-113">String</span></span>|<span data-ttu-id="b54cd-114">ID do contrato.</span><span class="sxs-lookup"><span data-stu-id="b54cd-114">ID of the agreement.</span></span>|
+|<span data-ttu-id="b54cd-115">id</span><span class="sxs-lookup"><span data-stu-id="b54cd-115">id</span></span>|<span data-ttu-id="b54cd-116">String</span><span class="sxs-lookup"><span data-stu-id="b54cd-116">String</span></span>| <span data-ttu-id="b54cd-117">Somente leitura.</span><span class="sxs-lookup"><span data-stu-id="b54cd-117">Read-only.</span></span>|
+|<span data-ttu-id="b54cd-118">recordedDateTime</span><span class="sxs-lookup"><span data-stu-id="b54cd-118">recordedDateTime</span></span>|<span data-ttu-id="b54cd-119">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="b54cd-119">DateTimeOffset</span></span>|<span data-ttu-id="b54cd-p101">O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`</span><span class="sxs-lookup"><span data-stu-id="b54cd-p101">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`</span></span>|
+|<span data-ttu-id="b54cd-122">estado</span><span class="sxs-lookup"><span data-stu-id="b54cd-122">state</span></span>|<span data-ttu-id="b54cd-123">string</span><span class="sxs-lookup"><span data-stu-id="b54cd-123">string</span></span>| <span data-ttu-id="b54cd-124">Os valores possíveis são: `accepted` e `declined`.</span><span class="sxs-lookup"><span data-stu-id="b54cd-124">Possible values are: `accepted`, `declined`.</span></span>|
+|<span data-ttu-id="b54cd-125">userDisplayName</span><span class="sxs-lookup"><span data-stu-id="b54cd-125">userDisplayName</span></span>|<span data-ttu-id="b54cd-126">String</span><span class="sxs-lookup"><span data-stu-id="b54cd-126">String</span></span>|<span data-ttu-id="b54cd-127">Nome para exibição do usuário quando a aceitação foi registrada.</span><span class="sxs-lookup"><span data-stu-id="b54cd-127">Display name of the user when the acceptance was recorded.</span></span>|
+|<span data-ttu-id="b54cd-128">userEmail</span><span class="sxs-lookup"><span data-stu-id="b54cd-128">userEmail</span></span>|<span data-ttu-id="b54cd-129">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="b54cd-129">String</span></span>|<span data-ttu-id="b54cd-130">Email do usuário quando a aceitação foi registrada.</span><span class="sxs-lookup"><span data-stu-id="b54cd-130">Email of the user when the acceptance was recorded.</span></span>|
+|<span data-ttu-id="b54cd-131">userId</span><span class="sxs-lookup"><span data-stu-id="b54cd-131">userId</span></span>|<span data-ttu-id="b54cd-132">String</span><span class="sxs-lookup"><span data-stu-id="b54cd-132">String</span></span>|<span data-ttu-id="b54cd-133">ID do usuário que aceitou o contrato.</span><span class="sxs-lookup"><span data-stu-id="b54cd-133">ID of the user who accepted the agreement.</span></span>|
+|<span data-ttu-id="b54cd-134">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="b54cd-134">userPrincipalName</span></span>|<span data-ttu-id="b54cd-135">String</span><span class="sxs-lookup"><span data-stu-id="b54cd-135">String</span></span>|<span data-ttu-id="b54cd-136">UPN do usuário quando a aceitação foi registrada.</span><span class="sxs-lookup"><span data-stu-id="b54cd-136">UPN of the user when the acceptance was recorded.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="0b8be-137">Relações</span><span class="sxs-lookup"><span data-stu-id="0b8be-137">Relationships</span></span>
-<span data-ttu-id="0b8be-138">Nenhum</span><span class="sxs-lookup"><span data-stu-id="0b8be-138">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="b54cd-137">Relações</span><span class="sxs-lookup"><span data-stu-id="b54cd-137">Relationships</span></span>
+<span data-ttu-id="b54cd-138">Nenhum</span><span class="sxs-lookup"><span data-stu-id="b54cd-138">None</span></span>
 
 
-## <a name="json-representation"></a><span data-ttu-id="0b8be-139">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="0b8be-139">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="b54cd-139">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="b54cd-139">JSON representation</span></span>
 
-<span data-ttu-id="0b8be-140">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="0b8be-140">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="b54cd-140">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="b54cd-140">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -78,8 +78,6 @@ ms.locfileid: "32544041"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/agreementacceptance.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

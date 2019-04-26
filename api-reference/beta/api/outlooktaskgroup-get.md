@@ -4,59 +4,59 @@ description: Obtenha as propriedades e os relacionamentos do grupo de tarefas es
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: b4f260d1ae19cca26720a59f68125caac3b5a846
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7a1d2c65736e64758afb8d929bda2b59708f64b0
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32539789"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33337849"
 ---
-# <a name="get-outlooktaskgroup"></a><span data-ttu-id="10614-103">Obter outlookTaskGroup</span><span class="sxs-lookup"><span data-stu-id="10614-103">Get outlookTaskGroup</span></span>
+# <a name="get-outlooktaskgroup"></a><span data-ttu-id="0f33c-103">Obter outlookTaskGroup</span><span class="sxs-lookup"><span data-stu-id="0f33c-103">Get outlookTaskGroup</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="10614-104">Obtenha as propriedades e os relacionamentos do grupo de tarefas especificado do Outlook.</span><span class="sxs-lookup"><span data-stu-id="10614-104">Get the properties and relationships of the specified Outlook task group.</span></span>
-## <a name="permissions"></a><span data-ttu-id="10614-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="10614-105">Permissions</span></span>
-<span data-ttu-id="10614-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="10614-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="0f33c-104">Obtenha as propriedades e os relacionamentos do grupo de tarefas especificado do Outlook.</span><span class="sxs-lookup"><span data-stu-id="0f33c-104">Get the properties and relationships of the specified Outlook task group.</span></span>
+## <a name="permissions"></a><span data-ttu-id="0f33c-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="0f33c-105">Permissions</span></span>
+<span data-ttu-id="0f33c-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0f33c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="10614-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="10614-108">Permission type</span></span>      | <span data-ttu-id="10614-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="10614-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="0f33c-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="0f33c-108">Permission type</span></span>      | <span data-ttu-id="0f33c-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="0f33c-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="10614-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="10614-110">Delegated (work or school account)</span></span> | <span data-ttu-id="10614-111">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="10614-111">Tasks.Read</span></span>    |
-|<span data-ttu-id="10614-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="10614-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="10614-113">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="10614-113">Tasks.Read</span></span>    |
-|<span data-ttu-id="10614-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="10614-114">Application</span></span> | <span data-ttu-id="10614-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="10614-115">Not supported.</span></span> |
+|<span data-ttu-id="0f33c-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="0f33c-110">Delegated (work or school account)</span></span> | <span data-ttu-id="0f33c-111">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="0f33c-111">Tasks.Read</span></span>    |
+|<span data-ttu-id="0f33c-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="0f33c-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0f33c-113">Tasks.Read</span><span class="sxs-lookup"><span data-stu-id="0f33c-113">Tasks.Read</span></span>    |
+|<span data-ttu-id="0f33c-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="0f33c-114">Application</span></span> | <span data-ttu-id="0f33c-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="0f33c-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="10614-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="10614-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0f33c-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="0f33c-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/outlook/taskGroups/{id}
 GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="10614-117">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="10614-117">Optional query parameters</span></span>
-<span data-ttu-id="10614-118">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="10614-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="0f33c-117">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="0f33c-117">Optional query parameters</span></span>
+<span data-ttu-id="0f33c-118">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="0f33c-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="10614-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="10614-119">Request headers</span></span>
-| <span data-ttu-id="10614-120">Nome</span><span class="sxs-lookup"><span data-stu-id="10614-120">Name</span></span>      |<span data-ttu-id="10614-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="10614-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="0f33c-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="0f33c-119">Request headers</span></span>
+| <span data-ttu-id="0f33c-120">Nome</span><span class="sxs-lookup"><span data-stu-id="0f33c-120">Name</span></span>      |<span data-ttu-id="0f33c-121">Descrição</span><span class="sxs-lookup"><span data-stu-id="0f33c-121">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="10614-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="10614-122">Authorization</span></span>  | <span data-ttu-id="10614-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="10614-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="0f33c-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="0f33c-122">Authorization</span></span>  | <span data-ttu-id="0f33c-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="0f33c-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="10614-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="10614-125">Request body</span></span>
-<span data-ttu-id="10614-126">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="10614-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="0f33c-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="0f33c-125">Request body</span></span>
+<span data-ttu-id="0f33c-126">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="0f33c-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="10614-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="10614-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="0f33c-127">Resposta</span><span class="sxs-lookup"><span data-stu-id="0f33c-127">Response</span></span>
 
-<span data-ttu-id="10614-128">Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [outlookTaskGroup](../resources/outlooktaskgroup.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="10614-128">If successful, this method returns a `200 OK` response code and [outlookTaskGroup](../resources/outlooktaskgroup.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="10614-129">Exemplo</span><span class="sxs-lookup"><span data-stu-id="10614-129">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="10614-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="10614-130">Request</span></span>
-<span data-ttu-id="10614-131">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="10614-131">Here is an example of the request.</span></span>
+<span data-ttu-id="0f33c-128">Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [outlookTaskGroup](../resources/outlooktaskgroup.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="0f33c-128">If successful, this method returns a `200 OK` response code and [outlookTaskGroup](../resources/outlooktaskgroup.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="0f33c-129">Exemplo</span><span class="sxs-lookup"><span data-stu-id="0f33c-129">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="0f33c-130">Solicitação</span><span class="sxs-lookup"><span data-stu-id="0f33c-130">Request</span></span>
+<span data-ttu-id="0f33c-131">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="0f33c-131">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_outlooktaskgroup"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/outlook/taskGroups('AAMkADIyAAAhrbe-AAA=')
+GET https://graph.microsoft.com/beta/me/outlook/taskGroups/AAMkADIyAAAhrbe-AAA=
 ```
-##### <a name="response"></a><span data-ttu-id="10614-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="10614-132">Response</span></span>
-<span data-ttu-id="10614-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="10614-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="0f33c-132">Resposta</span><span class="sxs-lookup"><span data-stu-id="0f33c-132">Response</span></span>
+<span data-ttu-id="0f33c-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="0f33c-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -86,8 +86,6 @@ Content-length: 138
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/outlooktaskgroup-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

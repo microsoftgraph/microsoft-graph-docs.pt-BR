@@ -4,28 +4,28 @@ description: 'Usado para configurar o perfil de sincronização de dados da esco
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: bebacbc1c618c7558d81bde2611840e8d225a8fd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4dbbf5d5791df1035fcd9fe1a953d8a9a347070a
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507172"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340564"
 ---
-# <a name="educationcsvdataprovider-resource-type"></a><span data-ttu-id="8ea7d-103">tipo de recurso educationCsvDataProvider</span><span class="sxs-lookup"><span data-stu-id="8ea7d-103">educationCsvDataProvider resource type</span></span>
+# <a name="educationcsvdataprovider-resource-type"></a><span data-ttu-id="8d2dd-103">tipo de recurso educationCsvDataProvider</span><span class="sxs-lookup"><span data-stu-id="8d2dd-103">educationCsvDataProvider resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="8ea7d-104">Usado para configurar o perfil de sincronização de dados da escola quando os arquivos CSV são a fonte de entrada.</span><span class="sxs-lookup"><span data-stu-id="8ea7d-104">Used to set up the school data synchronization profile when CSV files are the input source.</span></span>  
+<span data-ttu-id="8d2dd-104">Usado para configurar o perfil de sincronização de dados da escola quando os arquivos CSV são a fonte de entrada.</span><span class="sxs-lookup"><span data-stu-id="8d2dd-104">Used to set up the school data synchronization profile when CSV files are the input source.</span></span>  
 
-<span data-ttu-id="8ea7d-105">Derivado de [educationSynchronizationDataProvider](educationsynchronizationdataprovider.md).</span><span class="sxs-lookup"><span data-stu-id="8ea7d-105">Derived from [educationSynchronizationDataProvider](educationsynchronizationdataprovider.md).</span></span>
+<span data-ttu-id="8d2dd-105">Derivado de [educationSynchronizationDataProvider](educationsynchronizationdataprovider.md).</span><span class="sxs-lookup"><span data-stu-id="8d2dd-105">Derived from [educationSynchronizationDataProvider](educationsynchronizationdataprovider.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="8ea7d-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="8ea7d-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="8d2dd-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="8d2dd-106">Properties</span></span>
 
-| <span data-ttu-id="8ea7d-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="8ea7d-107">Property</span></span> | <span data-ttu-id="8ea7d-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="8ea7d-108">Type</span></span> | <span data-ttu-id="8ea7d-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="8ea7d-109">Description</span></span> |
+| <span data-ttu-id="8d2dd-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="8d2dd-107">Property</span></span> | <span data-ttu-id="8d2dd-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="8d2dd-108">Type</span></span> | <span data-ttu-id="8d2dd-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="8d2dd-109">Description</span></span> |
 |:-|:-|:-|
-| <span data-ttu-id="8ea7d-110">**personalizações**</span><span class="sxs-lookup"><span data-stu-id="8ea7d-110">**customizations**</span></span> | [<span data-ttu-id="8ea7d-111">educationSynchronizationCustomizations</span><span class="sxs-lookup"><span data-stu-id="8ea7d-111">educationSynchronizationCustomizations</span></span>](educationsynchronizationcustomizations.md) | <span data-ttu-id="8ea7d-112">Personalizações opcionais a serem aplicadas ao perfil de sincronização.</span><span class="sxs-lookup"><span data-stu-id="8ea7d-112">Optional customizations to be applied to the synchronization profile.</span></span>|
+| <span data-ttu-id="8d2dd-110">**personalizações**</span><span class="sxs-lookup"><span data-stu-id="8d2dd-110">**customizations**</span></span> | [<span data-ttu-id="8d2dd-111">educationSynchronizationCustomizations</span><span class="sxs-lookup"><span data-stu-id="8d2dd-111">educationSynchronizationCustomizations</span></span>](educationsynchronizationcustomizations.md) | <span data-ttu-id="8d2dd-112">Personalizações opcionais a serem aplicadas ao perfil de sincronização.</span><span class="sxs-lookup"><span data-stu-id="8d2dd-112">Optional customizations to be applied to the synchronization profile.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="8ea7d-113">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="8ea7d-113">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="8d2dd-113">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="8d2dd-113">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -41,11 +41,3 @@ ms.locfileid: "32507172"
     "customizations": { "@odata.type": "microsoft.graph.educationSynchronizationCustomizations" }
 }
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/educationcsvdataprovider.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

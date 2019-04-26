@@ -4,30 +4,30 @@ description: Tipo de base de notificação de comunicação publicado por servid
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 2372720976b5d06ffe49c00068625bdb92048674
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 20b99493821cfb29898ff0c9517cceecba1d389c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32460671"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341372"
 ---
-# <a name="commsnotification-resource-type"></a><span data-ttu-id="a8c56-103">tipo de recurso commsNotification</span><span class="sxs-lookup"><span data-stu-id="a8c56-103">commsNotification resource type</span></span>
+# <a name="commsnotification-resource-type"></a><span data-ttu-id="00572-103">tipo de recurso commsNotification</span><span class="sxs-lookup"><span data-stu-id="00572-103">commsNotification resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a8c56-104">Tipo de base de notificação de comunicação publicado por servidores de comunicação para notificar as alterações.</span><span class="sxs-lookup"><span data-stu-id="a8c56-104">Communications notification base type that is published by Communications servers to notify changes.</span></span>
+<span data-ttu-id="00572-104">Tipo de base de notificação de comunicação publicado por servidores de comunicação para notificar as alterações.</span><span class="sxs-lookup"><span data-stu-id="00572-104">Communications notification base type that is published by Communications servers to notify changes.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="a8c56-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="a8c56-105">Properties</span></span>
-| <span data-ttu-id="a8c56-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="a8c56-106">Property</span></span>       | <span data-ttu-id="a8c56-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="a8c56-107">Type</span></span>    | <span data-ttu-id="a8c56-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="a8c56-108">Description</span></span>                                                |
+## <a name="properties"></a><span data-ttu-id="00572-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="00572-105">Properties</span></span>
+| <span data-ttu-id="00572-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="00572-106">Property</span></span>       | <span data-ttu-id="00572-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="00572-107">Type</span></span>    | <span data-ttu-id="00572-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="00572-108">Description</span></span>                                                |
 |:---------------|:--------|:-----------------------------------------------------------|
-| <span data-ttu-id="a8c56-109">changeType</span><span class="sxs-lookup"><span data-stu-id="a8c56-109">changeType</span></span>     | <span data-ttu-id="a8c56-110">String</span><span class="sxs-lookup"><span data-stu-id="a8c56-110">String</span></span>  | <span data-ttu-id="a8c56-111">Os valores possíveis são: `created`, `updated`, `deleted`.</span><span class="sxs-lookup"><span data-stu-id="a8c56-111">Possible values are: `created`, `updated`, `deleted`.</span></span>      |
-| <span data-ttu-id="a8c56-112">recurso</span><span class="sxs-lookup"><span data-stu-id="a8c56-112">resource</span></span>       | <span data-ttu-id="a8c56-113">String</span><span class="sxs-lookup"><span data-stu-id="a8c56-113">String</span></span>  | <span data-ttu-id="a8c56-114">URI do recurso que foi alterado.</span><span class="sxs-lookup"><span data-stu-id="a8c56-114">URI of the resource that was changed.</span></span>                      |
+| <span data-ttu-id="00572-109">changeType</span><span class="sxs-lookup"><span data-stu-id="00572-109">changeType</span></span>     | <span data-ttu-id="00572-110">String</span><span class="sxs-lookup"><span data-stu-id="00572-110">String</span></span>  | <span data-ttu-id="00572-111">Os valores possíveis são: `created`, `updated`, `deleted`.</span><span class="sxs-lookup"><span data-stu-id="00572-111">Possible values are: `created`, `updated`, `deleted`.</span></span>      |
+| <span data-ttu-id="00572-112">recurso</span><span class="sxs-lookup"><span data-stu-id="00572-112">resource</span></span>       | <span data-ttu-id="00572-113">String</span><span class="sxs-lookup"><span data-stu-id="00572-113">String</span></span>  | <span data-ttu-id="00572-114">URI do recurso que foi alterado.</span><span class="sxs-lookup"><span data-stu-id="00572-114">URI of the resource that was changed.</span></span>                      |
 
-> <span data-ttu-id="a8c56-115">**Observação:** `resourceData` está disponível como dados adicionais.</span><span class="sxs-lookup"><span data-stu-id="a8c56-115">**Note:** `resourceData` is available as additional data.</span></span> <span data-ttu-id="a8c56-116">É uma entidade ou coleção (entidade), dependendo do número de alterações empacotadas na notificação.</span><span class="sxs-lookup"><span data-stu-id="a8c56-116">It is an entity or Collection(entity) depending on the number of changes packaged in the notification.</span></span>
+> <span data-ttu-id="00572-115">**Observação:** `resourceData` está disponível como dados adicionais.</span><span class="sxs-lookup"><span data-stu-id="00572-115">**Note:** `resourceData` is available as additional data.</span></span> <span data-ttu-id="00572-116">É uma entidade ou coleção (entidade), dependendo do número de alterações empacotadas na notificação.</span><span class="sxs-lookup"><span data-stu-id="00572-116">It is an entity or Collection(entity) depending on the number of changes packaged in the notification.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="a8c56-117">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="a8c56-117">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="00572-117">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="00572-117">JSON representation</span></span>
 
-<span data-ttu-id="a8c56-118">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="a8c56-118">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="00572-118">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="00572-118">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -100,8 +100,6 @@ ms.locfileid: "32460671"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/commsnotification.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

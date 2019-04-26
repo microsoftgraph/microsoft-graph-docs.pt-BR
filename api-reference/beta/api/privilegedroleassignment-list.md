@@ -2,54 +2,54 @@
 title: Listar privilegedRoleAssignments
 description: Recupere uma lista de objetos privilegedRoleAssignment, que correspondem a todas as atribuições de função da organização.
 localization_priority: Normal
-ms.openlocfilehash: c576e0d9c0a278e02159e02cea94ddd927561e08
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 907866b9e0b415b39220f0ecbda8fd9df3c510ba
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32538612"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33331963"
 ---
-# <a name="list-privilegedroleassignments"></a><span data-ttu-id="c8c2f-103">Listar privilegedRoleAssignments</span><span class="sxs-lookup"><span data-stu-id="c8c2f-103">List privilegedRoleAssignments</span></span>
+# <a name="list-privilegedroleassignments"></a><span data-ttu-id="ec024-103">Listar privilegedRoleAssignments</span><span class="sxs-lookup"><span data-stu-id="ec024-103">List privilegedRoleAssignments</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c8c2f-104">Recupere uma lista de objetos [privilegedRoleAssignment](../resources/privilegedroleassignment.md) , que correspondem a todas as atribuições de função da organização.</span><span class="sxs-lookup"><span data-stu-id="c8c2f-104">Retrieve a list of [privilegedRoleAssignment](../resources/privilegedroleassignment.md) objects, which correspond to all role assignments for the organization.</span></span>
-## <a name="permissions"></a><span data-ttu-id="c8c2f-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="c8c2f-105">Permissions</span></span>
-<span data-ttu-id="c8c2f-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c8c2f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ec024-104">Recupere uma lista de objetos [privilegedRoleAssignment](../resources/privilegedroleassignment.md) , que correspondem a todas as atribuições de função da organização.</span><span class="sxs-lookup"><span data-stu-id="ec024-104">Retrieve a list of [privilegedRoleAssignment](../resources/privilegedroleassignment.md) objects, which correspond to all role assignments for the organization.</span></span>
+## <a name="permissions"></a><span data-ttu-id="ec024-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="ec024-105">Permissions</span></span>
+<span data-ttu-id="ec024-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ec024-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-<span data-ttu-id="c8c2f-108">O solicitante precisa ter uma das seguintes funções: administrador de _função privilegiada_, _administrador global_, _administrador de segurança_ou _leitor de segurança_.</span><span class="sxs-lookup"><span data-stu-id="c8c2f-108">The requestor needs to have one of the following roles: _Privileged Role Administrator_, _Global Administrator_, _Security Administrator_, or _Security Reader_.</span></span> 
+<span data-ttu-id="ec024-108">O solicitante precisa ter uma das seguintes funções: administrador de _função privilegiada_, _administrador global_, _administrador de segurança_ou _leitor de segurança_.</span><span class="sxs-lookup"><span data-stu-id="ec024-108">The requestor needs to have one of the following roles: _Privileged Role Administrator_, _Global Administrator_, _Security Administrator_, or _Security Reader_.</span></span> 
 
-|<span data-ttu-id="c8c2f-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="c8c2f-109">Permission type</span></span>      | <span data-ttu-id="c8c2f-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="c8c2f-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="ec024-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="ec024-109">Permission type</span></span>      | <span data-ttu-id="ec024-110">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="ec024-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c8c2f-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="c8c2f-111">Delegated (work or school account)</span></span> | <span data-ttu-id="c8c2f-112">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="c8c2f-112">Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="c8c2f-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="c8c2f-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c8c2f-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c8c2f-114">Not supported.</span></span>    |
-|<span data-ttu-id="c8c2f-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="c8c2f-115">Application</span></span> | <span data-ttu-id="c8c2f-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="c8c2f-116">Not supported.</span></span> |
+|<span data-ttu-id="ec024-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="ec024-111">Delegated (work or school account)</span></span> | <span data-ttu-id="ec024-112">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="ec024-112">Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="ec024-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="ec024-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ec024-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ec024-114">Not supported.</span></span>    |
+|<span data-ttu-id="ec024-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="ec024-115">Application</span></span> | <span data-ttu-id="ec024-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="ec024-116">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c8c2f-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="c8c2f-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ec024-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="ec024-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /privilegedRoleAssignments
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="c8c2f-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="c8c2f-118">Optional query parameters</span></span>
-<span data-ttu-id="c8c2f-119">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="c8c2f-119">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="ec024-118">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="ec024-118">Optional query parameters</span></span>
+<span data-ttu-id="ec024-119">Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="ec024-119">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="c8c2f-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="c8c2f-120">Request headers</span></span>
-| <span data-ttu-id="c8c2f-121">Nome</span><span class="sxs-lookup"><span data-stu-id="c8c2f-121">Name</span></span>      |<span data-ttu-id="c8c2f-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="c8c2f-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="ec024-120">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="ec024-120">Request headers</span></span>
+| <span data-ttu-id="ec024-121">Nome</span><span class="sxs-lookup"><span data-stu-id="ec024-121">Name</span></span>      |<span data-ttu-id="ec024-122">Descrição</span><span class="sxs-lookup"><span data-stu-id="ec024-122">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="c8c2f-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="c8c2f-123">Authorization</span></span>  | <span data-ttu-id="c8c2f-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="c8c2f-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="ec024-123">Autorização</span><span class="sxs-lookup"><span data-stu-id="ec024-123">Authorization</span></span>  | <span data-ttu-id="ec024-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="ec024-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="c8c2f-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="c8c2f-126">Request body</span></span>
-<span data-ttu-id="c8c2f-127">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="c8c2f-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ec024-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="ec024-126">Request body</span></span>
+<span data-ttu-id="ec024-127">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="ec024-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="c8c2f-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="c8c2f-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ec024-128">Resposta</span><span class="sxs-lookup"><span data-stu-id="ec024-128">Response</span></span>
 
-<span data-ttu-id="c8c2f-129">Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [privilegedRoleAssignment](../resources/privilegedroleassignment.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="c8c2f-129">If successful, this method returns a `200 OK` response code and collection of [privilegedRoleAssignment](../resources/privilegedroleassignment.md) objects in the response body.</span></span>
+<span data-ttu-id="ec024-129">Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [privilegedRoleAssignment](../resources/privilegedroleassignment.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="ec024-129">If successful, this method returns a `200 OK` response code and collection of [privilegedRoleAssignment](../resources/privilegedroleassignment.md) objects in the response body.</span></span>
 
-<span data-ttu-id="c8c2f-130">Observe que o locatário precisa ser registrado no PIM.</span><span class="sxs-lookup"><span data-stu-id="c8c2f-130">Note that the tenant needs to be registered to PIM.</span></span> <span data-ttu-id="c8c2f-131">Caso contrário, o código de status HTTP 403 proibido será retornado.</span><span class="sxs-lookup"><span data-stu-id="c8c2f-131">Otherwise, the HTTP 403 Forbidden status code will be returned.</span></span>
-## <a name="examples"></a><span data-ttu-id="c8c2f-132">Exemplos</span><span class="sxs-lookup"><span data-stu-id="c8c2f-132">Examples</span></span>
-### <a name="get-all-role-assignments"></a><span data-ttu-id="c8c2f-133">Obter todas as atribuições de função</span><span class="sxs-lookup"><span data-stu-id="c8c2f-133">Get all role assignments</span></span>
-##### <a name="request"></a><span data-ttu-id="c8c2f-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c8c2f-134">Request</span></span>
-<span data-ttu-id="c8c2f-135">O exemplo a seguir mostra uma solicitação para obter todas as atribuições de função:</span><span class="sxs-lookup"><span data-stu-id="c8c2f-135">The following example shows a request to get all role assignments:</span></span>
+<span data-ttu-id="ec024-130">Observe que o locatário precisa ser registrado no PIM.</span><span class="sxs-lookup"><span data-stu-id="ec024-130">Note that the tenant needs to be registered to PIM.</span></span> <span data-ttu-id="ec024-131">Caso contrário, o código de status HTTP 403 proibido será retornado.</span><span class="sxs-lookup"><span data-stu-id="ec024-131">Otherwise, the HTTP 403 Forbidden status code will be returned.</span></span>
+## <a name="examples"></a><span data-ttu-id="ec024-132">Exemplos</span><span class="sxs-lookup"><span data-stu-id="ec024-132">Examples</span></span>
+### <a name="get-all-role-assignments"></a><span data-ttu-id="ec024-133">Obter todas as atribuições de função</span><span class="sxs-lookup"><span data-stu-id="ec024-133">Get all role assignments</span></span>
+##### <a name="request"></a><span data-ttu-id="ec024-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ec024-134">Request</span></span>
+<span data-ttu-id="ec024-135">O exemplo a seguir mostra uma solicitação para obter todas as atribuições de função:</span><span class="sxs-lookup"><span data-stu-id="ec024-135">The following example shows a request to get all role assignments:</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_privilegedroleassignments"
@@ -57,8 +57,8 @@ GET /privilegedRoleAssignments
 ```http
 GET https://graph.microsoft.com/beta/privilegedRoleAssignments
 ```
-##### <a name="response"></a><span data-ttu-id="c8c2f-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="c8c2f-136">Response</span></span>
-<span data-ttu-id="c8c2f-137">O exemplo a seguir mostra a resposta.</span><span class="sxs-lookup"><span data-stu-id="c8c2f-137">The following example shows the response.</span></span> <span data-ttu-id="c8c2f-138">Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão.</span><span class="sxs-lookup"><span data-stu-id="c8c2f-138">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="c8c2f-139">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="c8c2f-139">All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="ec024-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="ec024-136">Response</span></span>
+<span data-ttu-id="ec024-137">O exemplo a seguir mostra a resposta.</span><span class="sxs-lookup"><span data-stu-id="ec024-137">The following example shows the response.</span></span> <span data-ttu-id="ec024-138">Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão.</span><span class="sxs-lookup"><span data-stu-id="ec024-138">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="ec024-139">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="ec024-139">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -83,9 +83,9 @@ Content-length: 237
   ]
 }
 ```
-### <a name="get-active-role-assignments"></a><span data-ttu-id="c8c2f-140">Obter atribuições de função ativas</span><span class="sxs-lookup"><span data-stu-id="c8c2f-140">Get active role assignments</span></span>
-##### <a name="request"></a><span data-ttu-id="c8c2f-141">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c8c2f-141">Request</span></span> 
-<span data-ttu-id="c8c2f-142">O exemplo a seguir mostra uma solicitação para consultar as atribuições de função ativas:</span><span class="sxs-lookup"><span data-stu-id="c8c2f-142">The following example shows a request to query active role assignments:</span></span>
+### <a name="get-active-role-assignments"></a><span data-ttu-id="ec024-140">Obter atribuições de função ativas</span><span class="sxs-lookup"><span data-stu-id="ec024-140">Get active role assignments</span></span>
+##### <a name="request"></a><span data-ttu-id="ec024-141">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ec024-141">Request</span></span> 
+<span data-ttu-id="ec024-142">O exemplo a seguir mostra uma solicitação para consultar as atribuições de função ativas:</span><span class="sxs-lookup"><span data-stu-id="ec024-142">The following example shows a request to query active role assignments:</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_privilegedroleassignments"
@@ -93,8 +93,8 @@ Content-length: 237
 ```http
 GET https://graph.microsoft.com/beta/privilegedRoleAssignments?$filter=isElevated%20eq%20true
 ```
-##### <a name="response"></a><span data-ttu-id="c8c2f-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="c8c2f-143">Response</span></span>
-<span data-ttu-id="c8c2f-144">O exemplo a seguir mostra a resposta.</span><span class="sxs-lookup"><span data-stu-id="c8c2f-144">The following example shows the response.</span></span> <span data-ttu-id="c8c2f-145">Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão.</span><span class="sxs-lookup"><span data-stu-id="c8c2f-145">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="c8c2f-146">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="c8c2f-146">All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="ec024-143">Resposta</span><span class="sxs-lookup"><span data-stu-id="ec024-143">Response</span></span>
+<span data-ttu-id="ec024-144">O exemplo a seguir mostra a resposta.</span><span class="sxs-lookup"><span data-stu-id="ec024-144">The following example shows the response.</span></span> <span data-ttu-id="ec024-145">Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão.</span><span class="sxs-lookup"><span data-stu-id="ec024-145">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="ec024-146">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="ec024-146">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -127,9 +127,9 @@ Content-length: 237
   ]
 }
 ```
-### <a name="get-permanent-role-assignments"></a><span data-ttu-id="c8c2f-147">Obter atribuições de função permanentes</span><span class="sxs-lookup"><span data-stu-id="c8c2f-147">Get permanent role assignments</span></span>
-##### <a name="request"></a><span data-ttu-id="c8c2f-148">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c8c2f-148">Request</span></span> 
-<span data-ttu-id="c8c2f-149">O exemplo a seguir mostra uma solicitação para consultar atribuições de função ``expirationDateTime`` permanentes ``null``, onde Value é:</span><span class="sxs-lookup"><span data-stu-id="c8c2f-149">The following example shows a request to query permanent role assignments, where ``expirationDateTime`` value is ``null``:</span></span>
+### <a name="get-permanent-role-assignments"></a><span data-ttu-id="ec024-147">Obter atribuições de função permanentes</span><span class="sxs-lookup"><span data-stu-id="ec024-147">Get permanent role assignments</span></span>
+##### <a name="request"></a><span data-ttu-id="ec024-148">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ec024-148">Request</span></span> 
+<span data-ttu-id="ec024-149">O exemplo a seguir mostra uma solicitação para consultar atribuições de função ``expirationDateTime`` permanentes ``null``, onde Value é:</span><span class="sxs-lookup"><span data-stu-id="ec024-149">The following example shows a request to query permanent role assignments, where ``expirationDateTime`` value is ``null``:</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_privilegedroleassignments"
@@ -137,8 +137,8 @@ Content-length: 237
 ```http
 GET https://graph.microsoft.com/beta/privilegedRoleAssignments?$filter=isElevated%20eq%20true%20and%20expirationDateTime%20eq%20null
 ```
-##### <a name="response"></a><span data-ttu-id="c8c2f-150">Resposta</span><span class="sxs-lookup"><span data-stu-id="c8c2f-150">Response</span></span>
-<span data-ttu-id="c8c2f-151">O exemplo a seguir mostra a resposta.</span><span class="sxs-lookup"><span data-stu-id="c8c2f-151">The following example shows the response.</span></span> <span data-ttu-id="c8c2f-152">Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão.</span><span class="sxs-lookup"><span data-stu-id="c8c2f-152">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="c8c2f-153">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="c8c2f-153">All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="ec024-150">Resposta</span><span class="sxs-lookup"><span data-stu-id="ec024-150">Response</span></span>
+<span data-ttu-id="ec024-151">O exemplo a seguir mostra a resposta.</span><span class="sxs-lookup"><span data-stu-id="ec024-151">The following example shows the response.</span></span> <span data-ttu-id="ec024-152">Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão.</span><span class="sxs-lookup"><span data-stu-id="ec024-152">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="ec024-153">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="ec024-153">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -171,9 +171,9 @@ Content-length: 237
   ]
 }
 ```
-### <a name="get-eligible-role-assignments"></a><span data-ttu-id="c8c2f-154">Obter atribuições de função qualificadas</span><span class="sxs-lookup"><span data-stu-id="c8c2f-154">Get eligible role assignments</span></span>
-##### <a name="request"></a><span data-ttu-id="c8c2f-155">Solicitação</span><span class="sxs-lookup"><span data-stu-id="c8c2f-155">Request</span></span> 
-<span data-ttu-id="c8c2f-156">O exemplo a seguir mostra uma solicitação para consultar atribuições de função qualificadas, incluindo as que são ativas e não ativas:</span><span class="sxs-lookup"><span data-stu-id="c8c2f-156">The following example shows a request to query eligible role assignments, including the active and non-active ones:</span></span>
+### <a name="get-eligible-role-assignments"></a><span data-ttu-id="ec024-154">Obter atribuições de função qualificadas</span><span class="sxs-lookup"><span data-stu-id="ec024-154">Get eligible role assignments</span></span>
+##### <a name="request"></a><span data-ttu-id="ec024-155">Solicitação</span><span class="sxs-lookup"><span data-stu-id="ec024-155">Request</span></span> 
+<span data-ttu-id="ec024-156">O exemplo a seguir mostra uma solicitação para consultar atribuições de função qualificadas, incluindo as que são ativas e não ativas:</span><span class="sxs-lookup"><span data-stu-id="ec024-156">The following example shows a request to query eligible role assignments, including the active and non-active ones:</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_privilegedroleassignments"
@@ -181,8 +181,8 @@ Content-length: 237
 ```http
 GET https://graph.microsoft.com/beta/privilegedRoleAssignments?$filter=isElevated%20eq%20true%20and%20expirationDateTime%20ne%20null%20or%20isElevated%20eq%20false
 ```
-##### <a name="response"></a><span data-ttu-id="c8c2f-157">Resposta</span><span class="sxs-lookup"><span data-stu-id="c8c2f-157">Response</span></span> 
-<span data-ttu-id="c8c2f-158">O exemplo a seguir mostra a resposta.</span><span class="sxs-lookup"><span data-stu-id="c8c2f-158">The following example shows the response.</span></span> <span data-ttu-id="c8c2f-159">Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão.</span><span class="sxs-lookup"><span data-stu-id="c8c2f-159">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="c8c2f-160">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="c8c2f-160">All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="ec024-157">Resposta</span><span class="sxs-lookup"><span data-stu-id="ec024-157">Response</span></span> 
+<span data-ttu-id="ec024-158">O exemplo a seguir mostra a resposta.</span><span class="sxs-lookup"><span data-stu-id="ec024-158">The following example shows the response.</span></span> <span data-ttu-id="ec024-159">Observação: o objeto de resposta mostrado aqui pode estar truncado por motivos de concisão.</span><span class="sxs-lookup"><span data-stu-id="ec024-159">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="ec024-160">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="ec024-160">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -240,8 +240,6 @@ Content-length: 237
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/privilegedroleassignment-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

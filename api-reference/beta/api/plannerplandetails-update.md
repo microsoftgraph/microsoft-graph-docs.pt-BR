@@ -4,55 +4,55 @@ description: Atualize as propriedades do objeto **plannerplandetails** .
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: cf54e7c357d1682c904306333e3127cd2276b10f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: dc357d86c3dae51a95b230fad6d3688fb274cb8b
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32547107"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33337667"
 ---
-# <a name="update-plannerplandetails"></a><span data-ttu-id="fee0c-103">Atualizar plannerplandetails</span><span class="sxs-lookup"><span data-stu-id="fee0c-103">Update plannerplandetails</span></span>
+# <a name="update-plannerplandetails"></a><span data-ttu-id="2db3e-103">Atualizar plannerplandetails</span><span class="sxs-lookup"><span data-stu-id="2db3e-103">Update plannerplandetails</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="fee0c-104">Atualize as propriedades do objeto **plannerplandetails** .</span><span class="sxs-lookup"><span data-stu-id="fee0c-104">Update the properties of **plannerplandetails** object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="fee0c-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="fee0c-105">Permissions</span></span>
-<span data-ttu-id="fee0c-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="fee0c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="2db3e-104">Atualize as propriedades do objeto **plannerplandetails** .</span><span class="sxs-lookup"><span data-stu-id="2db3e-104">Update the properties of **plannerplandetails** object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="2db3e-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="2db3e-105">Permissions</span></span>
+<span data-ttu-id="2db3e-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2db3e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="fee0c-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="fee0c-108">Permission type</span></span>      | <span data-ttu-id="fee0c-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="fee0c-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="2db3e-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="2db3e-108">Permission type</span></span>      | <span data-ttu-id="2db3e-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="2db3e-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="fee0c-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="fee0c-110">Delegated (work or school account)</span></span> | <span data-ttu-id="fee0c-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fee0c-111">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="fee0c-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="fee0c-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fee0c-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="fee0c-113">Not supported.</span></span>    |
-|<span data-ttu-id="fee0c-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="fee0c-114">Application</span></span> | <span data-ttu-id="fee0c-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="fee0c-115">Not supported.</span></span> |
+|<span data-ttu-id="2db3e-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="2db3e-110">Delegated (work or school account)</span></span> | <span data-ttu-id="2db3e-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2db3e-111">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="2db3e-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="2db3e-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2db3e-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="2db3e-113">Not supported.</span></span>    |
+|<span data-ttu-id="2db3e-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="2db3e-114">Application</span></span> | <span data-ttu-id="2db3e-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="2db3e-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="fee0c-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="fee0c-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2db3e-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="2db3e-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /planner/plans/<id>/details
 ```
-## <a name="optional-request-headers"></a><span data-ttu-id="fee0c-117">Cabeçalhos de solicitação opcionais</span><span class="sxs-lookup"><span data-stu-id="fee0c-117">Optional request headers</span></span>
-| <span data-ttu-id="fee0c-118">Nome</span><span class="sxs-lookup"><span data-stu-id="fee0c-118">Name</span></span>       | <span data-ttu-id="fee0c-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="fee0c-119">Description</span></span>|
+## <a name="optional-request-headers"></a><span data-ttu-id="2db3e-117">Cabeçalhos de solicitação opcionais</span><span class="sxs-lookup"><span data-stu-id="2db3e-117">Optional request headers</span></span>
+| <span data-ttu-id="2db3e-118">Nome</span><span class="sxs-lookup"><span data-stu-id="2db3e-118">Name</span></span>       | <span data-ttu-id="2db3e-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="2db3e-119">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="fee0c-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="fee0c-120">Authorization</span></span>  | <span data-ttu-id="fee0c-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="fee0c-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="fee0c-123">If-Match</span><span class="sxs-lookup"><span data-stu-id="fee0c-123">If-Match</span></span>  | <span data-ttu-id="fee0c-124">Último valor de ETag conhecido para o plannerPlanDetails a ser atualizado.</span><span class="sxs-lookup"><span data-stu-id="fee0c-124">Last known ETag value for the plannerPlanDetails to be updated.</span></span> <span data-ttu-id="fee0c-125">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="fee0c-125">Required.</span></span>|
+| <span data-ttu-id="2db3e-120">Autorização</span><span class="sxs-lookup"><span data-stu-id="2db3e-120">Authorization</span></span>  | <span data-ttu-id="2db3e-p102">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="2db3e-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="2db3e-123">If-Match</span><span class="sxs-lookup"><span data-stu-id="2db3e-123">If-Match</span></span>  | <span data-ttu-id="2db3e-124">Último valor de ETag conhecido para o plannerPlanDetails a ser atualizado.</span><span class="sxs-lookup"><span data-stu-id="2db3e-124">Last known ETag value for the plannerPlanDetails to be updated.</span></span> <span data-ttu-id="2db3e-125">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="2db3e-125">Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="fee0c-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="fee0c-126">Request body</span></span>
-<span data-ttu-id="fee0c-p104">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="fee0c-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="2db3e-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="2db3e-126">Request body</span></span>
+<span data-ttu-id="2db3e-p104">No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para obter melhor desempenho, não inclua valores existentes que não foram alterados.</span><span class="sxs-lookup"><span data-stu-id="2db3e-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="fee0c-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="fee0c-130">Property</span></span>     | <span data-ttu-id="fee0c-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="fee0c-131">Type</span></span>   |<span data-ttu-id="fee0c-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="fee0c-132">Description</span></span>|
+| <span data-ttu-id="2db3e-130">Propriedade</span><span class="sxs-lookup"><span data-stu-id="2db3e-130">Property</span></span>     | <span data-ttu-id="2db3e-131">Tipo</span><span class="sxs-lookup"><span data-stu-id="2db3e-131">Type</span></span>   |<span data-ttu-id="2db3e-132">Descrição</span><span class="sxs-lookup"><span data-stu-id="2db3e-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="fee0c-133">categoryDescriptions</span><span class="sxs-lookup"><span data-stu-id="fee0c-133">categoryDescriptions</span></span>|[<span data-ttu-id="fee0c-134">plannerCategoryDescriptions</span><span class="sxs-lookup"><span data-stu-id="fee0c-134">plannerCategoryDescriptions</span></span>](../resources/plannercategorydescriptions.md)|<span data-ttu-id="fee0c-135">Um objeto que especifica as descrições das seis categorias que podem ser associadas a tarefas no plano</span><span class="sxs-lookup"><span data-stu-id="fee0c-135">An object that specifies the descriptions of the six categories that can be associated with tasks in the plan</span></span>|
-|<span data-ttu-id="fee0c-136">sharedWith</span><span class="sxs-lookup"><span data-stu-id="fee0c-136">sharedWith</span></span>|[<span data-ttu-id="fee0c-137">plannerUserIds</span><span class="sxs-lookup"><span data-stu-id="fee0c-137">plannerUserIds</span></span>](../resources/planneruserids.md)|<span data-ttu-id="fee0c-138">Conjunto de IDs de usuário com as quais esse plano é compartilhado.</span><span class="sxs-lookup"><span data-stu-id="fee0c-138">Set of user ids that this plan is shared with.</span></span> <span data-ttu-id="fee0c-139">Se estiver aproveitando os grupos do Office 365, use a API de grupos para gerenciar a associação de grupo para compartilhar o plano [do grupo](../resources/group.md) .</span><span class="sxs-lookup"><span data-stu-id="fee0c-139">If you are leveraging Office 365 Groups, use the Groups API to manage group membership to share the [group's](../resources/group.md) plan.</span></span> <span data-ttu-id="fee0c-140">Você também pode adicionar membros existentes do grupo a essa coleção, embora não seja necessário que eles acessem o plano de Propriedade do grupo.</span><span class="sxs-lookup"><span data-stu-id="fee0c-140">You can also add existing members of the group to this collection though it is not required for them to access the plan owned by the group.</span></span>|
+|<span data-ttu-id="2db3e-133">categoryDescriptions</span><span class="sxs-lookup"><span data-stu-id="2db3e-133">categoryDescriptions</span></span>|[<span data-ttu-id="2db3e-134">plannerCategoryDescriptions</span><span class="sxs-lookup"><span data-stu-id="2db3e-134">plannerCategoryDescriptions</span></span>](../resources/plannercategorydescriptions.md)|<span data-ttu-id="2db3e-135">Um objeto que especifica as descrições das seis categorias que podem ser associadas a tarefas no plano</span><span class="sxs-lookup"><span data-stu-id="2db3e-135">An object that specifies the descriptions of the six categories that can be associated with tasks in the plan</span></span>|
+|<span data-ttu-id="2db3e-136">sharedWith</span><span class="sxs-lookup"><span data-stu-id="2db3e-136">sharedWith</span></span>|[<span data-ttu-id="2db3e-137">plannerUserIds</span><span class="sxs-lookup"><span data-stu-id="2db3e-137">plannerUserIds</span></span>](../resources/planneruserids.md)|<span data-ttu-id="2db3e-138">Conjunto de IDs de usuário com as quais esse plano é compartilhado.</span><span class="sxs-lookup"><span data-stu-id="2db3e-138">Set of user ids that this plan is shared with.</span></span> <span data-ttu-id="2db3e-139">Se estiver aproveitando os grupos do Office 365, use a API de grupos para gerenciar a associação de grupo para compartilhar o plano [do grupo](../resources/group.md) .</span><span class="sxs-lookup"><span data-stu-id="2db3e-139">If you are leveraging Office 365 Groups, use the Groups API to manage group membership to share the [group's](../resources/group.md) plan.</span></span> <span data-ttu-id="2db3e-140">Você também pode adicionar membros existentes do grupo a essa coleção, embora não seja necessário que eles acessem o plano de Propriedade do grupo.</span><span class="sxs-lookup"><span data-stu-id="2db3e-140">You can also add existing members of the group to this collection though it is not required for them to access the plan owned by the group.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="fee0c-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="fee0c-141">Response</span></span>
+## <a name="response"></a><span data-ttu-id="2db3e-141">Resposta</span><span class="sxs-lookup"><span data-stu-id="2db3e-141">Response</span></span>
 
-<span data-ttu-id="fee0c-142">Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [plannerPlanDetails](../resources/plannerplandetails.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="fee0c-142">If successful, this method returns a `200 OK` response code and updated [plannerPlanDetails](../resources/plannerplandetails.md) object in the response body.</span></span>
+<span data-ttu-id="2db3e-142">Se bem-sucedido, este método retorna um `200 OK` código de resposta e um objeto [plannerPlanDetails](../resources/plannerplandetails.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="2db3e-142">If successful, this method returns a `200 OK` response code and updated [plannerPlanDetails](../resources/plannerplandetails.md) object in the response body.</span></span>
 
-<span data-ttu-id="fee0c-p106">Este método pode retornar qualquer um dos [códigos de status de HTTP](/graph/errors). Os erros mais comuns que os aplicativos devem tratar para esse método são as respostas 400, 403, 404, 409 e 412. Saiba mais sobre esses erros em [Condições de erro comuns do Planner](../resources/planner-overview.md#common-planner-error-conditions).</span><span class="sxs-lookup"><span data-stu-id="fee0c-p106">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 400, 403, 404, 409, and 412 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
+<span data-ttu-id="2db3e-p106">Este método pode retornar qualquer um dos [códigos de status de HTTP](/graph/errors). Os erros mais comuns que os aplicativos devem tratar para esse método são as respostas 400, 403, 404, 409 e 412. Saiba mais sobre esses erros em [Condições de erro comuns do Planner](../resources/planner-overview.md#common-planner-error-conditions).</span><span class="sxs-lookup"><span data-stu-id="2db3e-p106">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 400, 403, 404, 409, and 412 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
 
-## <a name="example"></a><span data-ttu-id="fee0c-146">Exemplo</span><span class="sxs-lookup"><span data-stu-id="fee0c-146">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="fee0c-147">Solicitação</span><span class="sxs-lookup"><span data-stu-id="fee0c-147">Request</span></span>
-<span data-ttu-id="fee0c-148">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="fee0c-148">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="2db3e-146">Exemplo</span><span class="sxs-lookup"><span data-stu-id="2db3e-146">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="2db3e-147">Solicitação</span><span class="sxs-lookup"><span data-stu-id="2db3e-147">Request</span></span>
+<span data-ttu-id="2db3e-148">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="2db3e-148">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_plannerplandetails"
@@ -74,8 +74,8 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
   }
 }
 ```
-##### <a name="response"></a><span data-ttu-id="fee0c-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="fee0c-149">Response</span></span>
-<span data-ttu-id="fee0c-p107">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="fee0c-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="2db3e-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="2db3e-149">Response</span></span>
+<span data-ttu-id="2db3e-p107">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="2db3e-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -112,8 +112,6 @@ Content-length: 373
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/plannerplandetails-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

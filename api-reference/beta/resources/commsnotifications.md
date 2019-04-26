@@ -4,28 +4,28 @@ description: Lista de notificações usadas pelos servidores de comunicação pa
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 2d002b74bffe0911e2ba1fef4eed324b52ebcc49
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4497e2e1ba28e7f2d0b203f8f982053c5eb8ae1f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535497"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341434"
 ---
-# <a name="commsnotifications-resource-type"></a><span data-ttu-id="afc8c-103">tipo de recurso commsNotifications</span><span class="sxs-lookup"><span data-stu-id="afc8c-103">commsNotifications resource type</span></span>
+# <a name="commsnotifications-resource-type"></a><span data-ttu-id="7d64e-103">tipo de recurso commsNotifications</span><span class="sxs-lookup"><span data-stu-id="7d64e-103">commsNotifications resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="afc8c-104">Lista de notificações usadas pelos servidores de comunicação para o envio de várias notificações em um único lote.</span><span class="sxs-lookup"><span data-stu-id="afc8c-104">List of notifications used by the Communications servers for sending multiple notifications in a single batch.</span></span>
+<span data-ttu-id="7d64e-104">Lista de notificações usadas pelos servidores de comunicação para o envio de várias notificações em um único lote.</span><span class="sxs-lookup"><span data-stu-id="7d64e-104">List of notifications used by the Communications servers for sending multiple notifications in a single batch.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="afc8c-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="afc8c-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="7d64e-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="7d64e-105">Properties</span></span>
 
-| <span data-ttu-id="afc8c-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="afc8c-106">Property</span></span>       | <span data-ttu-id="afc8c-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="afc8c-107">Type</span></span>                                                 | <span data-ttu-id="afc8c-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="afc8c-108">Description</span></span>                                   |
+| <span data-ttu-id="7d64e-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="7d64e-106">Property</span></span>       | <span data-ttu-id="7d64e-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="7d64e-107">Type</span></span>                                                 | <span data-ttu-id="7d64e-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="7d64e-108">Description</span></span>                                   |
 |:---------------|:-----------------------------------------------------|:----------------------------------------------|
-| <span data-ttu-id="afc8c-109">valor</span><span class="sxs-lookup"><span data-stu-id="afc8c-109">value</span></span>          | <span data-ttu-id="afc8c-110">coleção [commsNotification](commsnotification.md)</span><span class="sxs-lookup"><span data-stu-id="afc8c-110">[commsNotification](commsnotification.md) collection</span></span> | <span data-ttu-id="afc8c-111">A notificação de uma alteração no recurso.</span><span class="sxs-lookup"><span data-stu-id="afc8c-111">The notification of a change in the resource.</span></span> |
+| <span data-ttu-id="7d64e-109">valor</span><span class="sxs-lookup"><span data-stu-id="7d64e-109">value</span></span>          | <span data-ttu-id="7d64e-110">coleção [commsNotification](commsnotification.md)</span><span class="sxs-lookup"><span data-stu-id="7d64e-110">[commsNotification](commsnotification.md) collection</span></span> | <span data-ttu-id="7d64e-111">A notificação de uma alteração no recurso.</span><span class="sxs-lookup"><span data-stu-id="7d64e-111">The notification of a change in the resource.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="afc8c-112">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="afc8c-112">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="7d64e-112">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="7d64e-112">JSON representation</span></span>
 
-<span data-ttu-id="afc8c-113">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="afc8c-113">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="7d64e-113">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="7d64e-113">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -49,8 +49,6 @@ ms.locfileid: "32535497"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/commsnotifications.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->
