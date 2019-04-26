@@ -1,35 +1,35 @@
 ---
-title: tipo de recurso de teamsTabConfiguration (Open tipo)
+title: tipo de recurso teamsTabConfiguration (tipo aberto)
 description: As configurações que determinam o conteúdo de uma guia.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 10cc22e70288d1643a3a2cdebe23a012e22e3879
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519196"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550735"
 ---
-# <a name="teamstabconfiguration-resource-type-open-type"></a><span data-ttu-id="8c679-103">tipo de recurso de teamsTabConfiguration (Open tipo)</span><span class="sxs-lookup"><span data-stu-id="8c679-103">teamsTabConfiguration resource type (Open Type)</span></span>
+# <a name="teamstabconfiguration-resource-type-open-type"></a><span data-ttu-id="812cb-103">tipo de recurso teamsTabConfiguration (tipo aberto)</span><span class="sxs-lookup"><span data-stu-id="812cb-103">teamsTabConfiguration resource type (Open Type)</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="8c679-104">As configurações que determinam o conteúdo de uma [guia](teamstab.md). Quando uma guia interativamente estiver configurada, essas informações são definidas pelo aplicativo do provedor de guia.</span><span class="sxs-lookup"><span data-stu-id="8c679-104">The settings that determine the content of a [tab](teamstab.md). When a tab is interactively configured, this information is set by the tab provider application.</span></span>
-<span data-ttu-id="8c679-105">Além das propriedades abaixo, alguns aplicativos de provedor de guia especificam propriedades personalizadas adicionais.</span><span class="sxs-lookup"><span data-stu-id="8c679-105">In addition to the properties below, some tab provider applications specify additional custom properties.</span></span>
+<span data-ttu-id="812cb-104">As configurações que determinam o conteúdo de uma [guia](teamstab.md). Quando uma guia é configurada de forma interativa, essa informação é definida pelo aplicativo de provedor de guias.</span><span class="sxs-lookup"><span data-stu-id="812cb-104">The settings that determine the content of a [tab](teamstab.md). When a tab is interactively configured, this information is set by the tab provider application.</span></span>
+<span data-ttu-id="812cb-105">Além das propriedades abaixo, alguns aplicativos de provedor de guia especificam Propriedades personalizadas adicionais.</span><span class="sxs-lookup"><span data-stu-id="812cb-105">In addition to the properties below, some tab provider applications specify additional custom properties.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="8c679-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="8c679-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="812cb-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="812cb-106">Properties</span></span>
 
-|<span data-ttu-id="8c679-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="8c679-107">Property</span></span>|<span data-ttu-id="8c679-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="8c679-108">Type</span></span>|<span data-ttu-id="8c679-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="8c679-109">Description</span></span>|
+|<span data-ttu-id="812cb-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="812cb-107">Property</span></span>|<span data-ttu-id="812cb-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="812cb-108">Type</span></span>|<span data-ttu-id="812cb-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="812cb-109">Description</span></span>|
 |-|-|-|
-|  <span data-ttu-id="8c679-110">entityId</span><span class="sxs-lookup"><span data-stu-id="8c679-110">entityId</span></span>   |   <span data-ttu-id="8c679-111">string</span><span class="sxs-lookup"><span data-stu-id="8c679-111">string</span></span> |  <span data-ttu-id="8c679-112">Identificador da entidade hospedados pelo provedor de guia.</span><span class="sxs-lookup"><span data-stu-id="8c679-112">Identifier for the entity hosted by the tab provider.</span></span>     |
-|  <span data-ttu-id="8c679-113">contentUrl</span><span class="sxs-lookup"><span data-stu-id="8c679-113">contentUrl</span></span> |   <span data-ttu-id="8c679-114">string</span><span class="sxs-lookup"><span data-stu-id="8c679-114">string</span></span> |  <span data-ttu-id="8c679-115">URL usada para processar o conteúdo da guia em equipes.</span><span class="sxs-lookup"><span data-stu-id="8c679-115">Url used for rendering tab contents in Teams.</span></span> <span data-ttu-id="8c679-116">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="8c679-116">Required.</span></span>    |
-|  <span data-ttu-id="8c679-117">removeUrl</span><span class="sxs-lookup"><span data-stu-id="8c679-117">removeUrl</span></span>  |   <span data-ttu-id="8c679-118">string</span><span class="sxs-lookup"><span data-stu-id="8c679-118">string</span></span> |  <span data-ttu-id="8c679-119">Chamado pelo cliente de equipes, quando uma guia é removida usando o cliente de equipes de URL.</span><span class="sxs-lookup"><span data-stu-id="8c679-119">Url called by Teams client when a Tab is removed using the Teams Client.</span></span>     |
-|  <span data-ttu-id="8c679-120">websiteUrl</span><span class="sxs-lookup"><span data-stu-id="8c679-120">websiteUrl</span></span> |   <span data-ttu-id="8c679-121">string</span><span class="sxs-lookup"><span data-stu-id="8c679-121">string</span></span> |  <span data-ttu-id="8c679-122">URL para a exibição de conteúdo da guia fora equipes.</span><span class="sxs-lookup"><span data-stu-id="8c679-122">Url for showing tab contents outside of Teams.</span></span>     |
+|  <span data-ttu-id="812cb-110">entityId</span><span class="sxs-lookup"><span data-stu-id="812cb-110">entityId</span></span>   |   <span data-ttu-id="812cb-111">string</span><span class="sxs-lookup"><span data-stu-id="812cb-111">string</span></span> |  <span data-ttu-id="812cb-112">Identificador da entidade hospedada pelo provedor de guias.</span><span class="sxs-lookup"><span data-stu-id="812cb-112">Identifier for the entity hosted by the tab provider.</span></span>     |
+|  <span data-ttu-id="812cb-113">contentUrl</span><span class="sxs-lookup"><span data-stu-id="812cb-113">contentUrl</span></span> |   <span data-ttu-id="812cb-114">string</span><span class="sxs-lookup"><span data-stu-id="812cb-114">string</span></span> |  <span data-ttu-id="812cb-115">URL usada para renderizar o conteúdo da guia no Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="812cb-115">Url used for rendering tab contents in Teams.</span></span> <span data-ttu-id="812cb-116">Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="812cb-116">Required.</span></span>    |
+|  <span data-ttu-id="812cb-117">removeUrl</span><span class="sxs-lookup"><span data-stu-id="812cb-117">removeUrl</span></span>  |   <span data-ttu-id="812cb-118">string</span><span class="sxs-lookup"><span data-stu-id="812cb-118">string</span></span> |  <span data-ttu-id="812cb-119">URL chamada pelo cliente Teams quando uma guia é removida usando o cliente Teams.</span><span class="sxs-lookup"><span data-stu-id="812cb-119">Url called by Teams client when a Tab is removed using the Teams Client.</span></span>     |
+|  <span data-ttu-id="812cb-120">websiteUrl</span><span class="sxs-lookup"><span data-stu-id="812cb-120">websiteUrl</span></span> |   <span data-ttu-id="812cb-121">string</span><span class="sxs-lookup"><span data-stu-id="812cb-121">string</span></span> |  <span data-ttu-id="812cb-122">URL para mostrar o conteúdo de guia fora do teams.</span><span class="sxs-lookup"><span data-stu-id="812cb-122">Url for showing tab contents outside of Teams.</span></span>     |
 
-## <a name="json-representation"></a><span data-ttu-id="8c679-123">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="8c679-123">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="812cb-123">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="812cb-123">JSON representation</span></span>
 
-<span data-ttu-id="8c679-124">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="8c679-124">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="812cb-124">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="812cb-124">The following is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.teamsTabConfiguration"
