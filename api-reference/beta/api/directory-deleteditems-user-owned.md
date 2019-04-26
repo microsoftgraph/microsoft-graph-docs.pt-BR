@@ -4,12 +4,12 @@ description: 'Recupera uma lista de itens excluídos recentemente pertencentes a
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f02d6dccd005696c130c6bb4a1f42c603943e5c8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 81afb6e3da6cd9ffb795c4e867c23177a24a5ed2
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32455062"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325991"
 ---
 # <a name="list-deleted-items-owned-by-a-user"></a>**Listar itens excluídos pertencentes a um usuário**
 
@@ -17,7 +17,7 @@ Recupera uma lista de itens excluídos recentemente pertencentes ao usuário esp
 
 Atualmente, a funcionalidade Listar itens excluídos é suportada apenas para recursos de [grupo](../resources/group.md) pertencentes ao usuário.
 
-Esta é uma ação de serviço, o que significa que ele não oferece suporte à paginação.  A API retorna até 1.000 objetos excluídos pertencentes ao usuário, classificados por ID.  Se o usuário tiver 1.000 ou mais objetos excluídos, a API retornará Nothing.
+Esta é uma ação de serviço, o que significa que ele não oferece suporte à paginação.  A API retorna até 1.000 objetos excluídos pertencentes ao usuário, classificados por ID.
 
 ## <a name="permissions"></a>Permissões
 
@@ -37,25 +37,19 @@ POST /directory/deletedItems/getUserOwnedObjects
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
-| **Nome**      | **Descrição**           |
+| Nome          | Descrição               |
 | ------------- | ------------------------- |
 | Autorização | {token} de portador. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-```json
-{
-  "userId":"55ac777c-109e-4022-b58c-470c8fcb6892",
-  "type":"group"
-}
-```
-
 O corpo da solicitação requer os seguintes parâmetros:
 
 | Parâmetro    | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|userId|String|ID do proprietário.|
-|type|String|Tipo de objetos de propriedade a ser retornado; `Group` no momento, o único valor com suporte.|
+|userId|Cadeia de caracteres|ID do proprietário.|
+|tipo|String|Tipo de objetos de propriedade a ser retornado; `group` no momento, o único valor com suporte.|
+
 
 ## <a name="response"></a>Resposta
 
@@ -70,12 +64,10 @@ Este é um exemplo da solicitação.
 ``` http
 POST https://graph.microsoft.com/beta/directory/deletedItems/getUserOwnedObjects
 Content-type: application/json
-```
 
-``` json
 {
   "userId":"55ac777c-109e-4022-b58c-470c8fcb6892",
-  "type":"Group"
+  "type":"group"
 }
 ```
 
@@ -93,7 +85,7 @@ Content-length: 1249
           {
               "@odata.type": "#microsoft.graph.group",
               "id": "bfa7033a-7367-4644-85f5-95aaf385cbd7",
-              "deletedDateTime": "2018-04-01T12:34:56Z",
+              "deletedDateTime": "2018-04-01T12:39:16Z",
               "classification": null,
               "createdDateTime": "2017-03-22T12:39:16Z",
               "description": null,

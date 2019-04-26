@@ -4,14 +4,17 @@ description: Adicionar o grupo à lista de grupos de favoritos do usuário atual
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 09bebe58349e4d040fb185c59d5158e9e39ec832
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 74142310eed68bf5d450e441d8471805894cabaf
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32503132"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33321869"
 ---
 # <a name="group-addfavorite"></a>group: addFavorite
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Adicionar o grupo à lista de grupos de favoritos do usuário atual. Com suporte apenas para grupos do Office 365.
 
 ## <a name="permissions"></a>Permissões
@@ -33,7 +36,7 @@ POST /groups/{id}/addFavorite
 | Cabeçalho       | Valor |
 |:---------------|:--------|
 | Autorização  | {token} de portador. Obrigatório.  |
-| Preferir | retorno=mínimo. Se o cabeçalho de resposta mínimo estiver incluído no cabeçalho da solicitação, uma resposta bem-sucedida retornará o código `204 No Content`. Opcional.  |
+| Preferir | retorno=mínimo. Se o cabeçalho de resposta mínimo estiver incluído no cabeçalho da solicitação, uma resposta bem-sucedida retornará o código `204 No Content`. Opcional.  | 
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
@@ -49,14 +52,15 @@ Este é um exemplo de solicitação.
   "name": "group_addfavorite"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/{id}/addFavorite
+POST https://graph.microsoft.com/beta/groups/{id}/addFavorite
 ```
 
 #### <a name="response"></a>Resposta
 Este é um exemplo de resposta.
 <!-- {
   "blockType": "response",
-  "truncated": false
+  "truncated": false,
+  "@odata.type": "microsoft.graph.none"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -64,10 +68,13 @@ HTTP/1.1 200 OK
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "group: addFavorite",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

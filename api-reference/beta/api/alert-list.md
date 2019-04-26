@@ -1,17 +1,19 @@
 ---
 title: Listar alertas
 description: Recupere uma lista de objetos Alert.
+localization_priority: Normal
 author: preetikr
-localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: d50c3244ae2c0e9f158dc38923136ef3e8656f0d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ab9ec3c42b0a46279e43660e241fb3cde52e83a9
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32459210"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33322682"
 ---
 # <a name="list-alerts"></a>Listar alertas
+
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Recupere uma lista de objetos [Alert](../resources/alert.md) .
 
@@ -46,7 +48,7 @@ Este método oferece suporte aos seguintes [parâmetros de consulta OData](/grap
 - `$orderby`
 - `$select`
 - `$skip`
-- `$top`retornará os principais resultados agregados de cada provedor de API de segurança.  
+- `$top`retornará os principais resultados agregados de cada provedor de API de segurança.
 
 Para retornar um conjunto de propriedades alternativo, use o `$select` parâmetro de consulta OData para especificar o conjunto de propriedades de **alerta** que você deseja.  Por exemplo, para retornar as propriedades **assignedTo**, **Category**e **Severity** , adicione o seguinte à sua consulta: `$select=assignedTo,category,severity`.
 
@@ -56,7 +58,7 @@ Para retornar um conjunto de propriedades alternativo, use o `$select` parâmetr
 
 | Nome      |Descrição|
 |:----------|:----------|
-| Authorization  | Portador {código}. Obrigatório.|
+| Autorização  | Portador {código}. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -77,7 +79,7 @@ Este é um exemplo de solicitação.
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/security/alerts
+GET https://graph.microsoft.com/beta/security/alerts
 ```
 
 ### <a name="response"></a>Resposta
@@ -112,10 +114,13 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List alerts",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

@@ -4,14 +4,16 @@ description: Recupere as propriedades e os relacionamentos do objeto Domain.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 03dcc7f5eff084ec79cb39a60688aadfaf0d63fc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2f2fe68553dbdf423a36f80c75ba569d13263c16
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454775"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325829"
 ---
 # <a name="get-domain"></a>Obter domínio
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Recupere as propriedades e os relacionamentos do objeto Domain.
 
@@ -57,14 +59,13 @@ Se bem-sucedido, este método retorna o `200 OK` código de resposta e o objeto 
 
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["contoso.com"],
   "name": "get_domain"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/domains/contoso.com
+GET https://graph.microsoft.com/beta/domains/contoso.com
 ```
 ##### <a name="response"></a>Resposta
-Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -88,10 +89,13 @@ Content-length: 192
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get domain",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

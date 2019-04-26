@@ -4,12 +4,12 @@ description: Atualize o objeto assignment. Somente os professores da turma podem
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: eb5762f86e1572f9a9d5876199c945154a25293b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c8b6659d0af1ae57829add1f64c19cb954b8413f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32458163"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325015"
 ---
 # <a name="update-educationassignment"></a>Atualizar educationassignment
 
@@ -42,14 +42,14 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|allowLateSubmissions|Booliano| Se os envios podem ser enviados após a data de conclusão.|
-|allowStudentsToAddResourcesToSubmission|Booliano| Se um aluno pode adicionar recursos a um envio. Indica se os únicos itens no envio vieram da lista de recursos de atribuição. |
+|allowLateSubmissions|Boolean| Se os envios podem ser enviados após a data de conclusão.|
+|allowStudentsToAddResourcesToSubmission|Boolean| Se um aluno pode adicionar recursos a um envio. Indica se os únicos itens no envio vieram da lista de recursos de atribuição. |
 |assignDateTime|DateTimeOffset| Data em que a atribuição deve ser publicada para os alunos. |
 |atribuir|educationAssignmentRecipient| Estudantes que obtêm a atribuição.|
 |displayName|String| Nome da atribuição. |
 |dueDateTime|DateTimeOffset| A atribuição de data deve ser concluída. |
 |notas|educationAssignmentGradeType| Como a atribuição será classificada.|
-|contida|doBody| Instruções a serem dadas aos alunos junto com a atribuição. |
+|contida|itemBody| Instruções a serem dadas aos alunos junto com a atribuição. |
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [educationAssignment](../resources/educationassignment.md) atualizado no corpo da resposta.
@@ -111,8 +111,6 @@ Content-length: 279
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/educationassignment-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

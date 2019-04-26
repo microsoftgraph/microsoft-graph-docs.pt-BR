@@ -3,16 +3,18 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: obter um arquivo ou uma pasta
-localization_priority: Priority
+localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 578d7bcbba51876390f9e0134d3c589d64b51e81
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4610b911b21414948e3708b25817da4e15c9f4bd
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454416"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325276"
 ---
 # <a name="get-a-driveitem-resource"></a>Obter um recurso DriveItem
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Recupere os metadados de um [DriveItem](../resources/driveitem.md) em um [Drive](../resources/drive.md) por ID ou caminho do sistema de arquivos.
 
@@ -65,7 +67,7 @@ Se bem sucedido, este método retorna o código de resposta `200 OK` e o recurso
 
 Eis um exemplo de solicitação para a pasta raiz do OneDrive do usuário.
 
-<!-- { "blockType": "request", "name": "get-drive-root", "tags": "service.graph" }-->
+<!-- { "blockType": "request", "name": "get-item-metadata" }-->
 
 ```http
 GET /me/drive/root
@@ -116,10 +118,13 @@ Confira mais informações sobre como os erros são retornados em [Respostas de 
 [item-resource]: ../resources/driveitem.md
 [special-folder]: ../api/drive-get-specialfolder.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Retrieve metadata about an item and its children in OneDrive",
   "keywords": "retrieve,item,metadata",
   "section": "documentation",
-  "tocPath": "Items/Get item"
-} -->
+  "tocPath": "Items/Get item",
+  "suppressions": []
+}
+-->

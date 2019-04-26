@@ -4,12 +4,12 @@ description: Recuperar as propriedades e os relacionamentos de um objeto Alert
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 2aea4388ef29978606a7bc09813c7cd92f977ed5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 08691cc0122c44703d9a95625c9eabb5d70422fe
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32459182"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33322685"
 ---
 # <a name="get-alert"></a>Obter alerta
 
@@ -39,7 +39,7 @@ GET /security/alerts/{id}
 
 | Nome      |Descrição|
 |:----------|:----------|
-| Authorization  | Portador {código}. Obrigatório.|
+| Autorização  | Portador {código}. Obrigatório.|
 
 ## <a name="request-body"></a>Corpo da solicitação
 
@@ -159,7 +159,7 @@ Content-type: application/json
       "natDestinationPort": "String",
       "natSourceAddress": "String",
       "natSourcePort": "String",
-      "protocol": "@odata.type: microsoft.graph.securityNetworkProtocol",
+      "protocol": "String",
       "riskScore": "String",
       "sourceAddress": "String",
       "sourcePort": "String",
@@ -256,8 +256,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/alert-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -2,12 +2,12 @@
 title: Atualizar contrato
 description: Atualizar as propriedades de um objeto de contrato.
 localization_priority: Normal
-ms.openlocfilehash: fc6e4718a026f78a6e892dc13095492099b654cf
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9821ad60258190519298fa5e01ceedfa5b9ee13a
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32459307"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33322692"
 ---
 # <a name="update-agreement"></a>Atualizar contrato
 
@@ -39,7 +39,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |displayName|String|Nome para exibição do contrato.|
-|isViewingBeforeAcceptanceRequired|Booliano|Se o usuário tem que expandir e exibir o contrato antes de aceitar o.|
+|isViewingBeforeAcceptanceRequired|Boolean|Se o usuário tem que expandir e exibir o contrato antes de aceitar o.|
 
 ## <a name="response"></a>Resposta
 Se tiver êxito, este método retornará `200 OK` um código de resposta e um objeto [Agreement](../resources/agreement.md) atualizado no corpo da resposta.
@@ -60,7 +60,7 @@ Content-length: 85
 }
 ```
 ##### <a name="response"></a>Resposta
->**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
+>**Observação: **o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 
 <!-- {
   "blockType": "response",
@@ -88,8 +88,6 @@ Content-length: 105
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/agreement-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

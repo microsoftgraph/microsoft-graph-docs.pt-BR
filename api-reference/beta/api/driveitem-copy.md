@@ -5,14 +5,16 @@ ms.date: 09/10/2017
 title: Copiar um arquivo ou pasta
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: cdb22395cfde6820eb5450f39bd1e3408a4f82b2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d7d892cc911a9d68a65b2046d48e0a25892a77d7
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454558"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325362"
 ---
 # <a name="copy-a-driveitem"></a>Copiar um DriveItem
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Cria uma cópia de forma assíncrona de um [driveItem][item-resource] (incluindo os filhos), em um novo item pai ou com um novo nome.
 
@@ -43,10 +45,10 @@ POST /users/{userId}/drive/items/{itemId}/copy
 Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 
-| Name            | Valor                                          | Descrição                                                                                                 |
+| Nome            | Valor                                          | Descrição                                                                                                 |
 |:----------------|:-----------------------------------------------|:------------------------------------------------------------------------------------------------------------|
 | parentReference | [ItemReference](../resources/itemreference.md) | Opcional. Referência ao item pai em que a cópia será criada.                                         |
-| nome            | string                                         | Opcional. O novo nome para a cópia. Se isso não for fornecido, será usado o mesmo nome que o original.    |
+| name            | string                                         | Opcional. O novo nome para a cópia. Se isso não for fornecido, será usado o mesmo nome que o original.    |
 
 **Observação:** _parentReference_ deve incluir os parâmetros `driveId` e `id` para a pasta de destino.
 
@@ -55,7 +57,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 Este exemplo copia um arquivo identificado por `{item-id}` em uma pasta identificada por um valor `driveId` e `id`.
 A nova cópia do arquivo será nomeada `contoso plan (copy).txt`.
 
-<!-- { "blockType": "request", "name": "copy-item", "scopes": "files.readwrite", "tags": "service.graph", "target": "action" } -->
+<!-- { "blockType": "request", "name": "copy-item", "scopes": "files.readwrite", "target": "action" } -->
 
 ```http
 POST /me/drive/items/{item-id}/copy
@@ -89,10 +91,13 @@ Em muitos casos, a ação de copiar é executada de forma assíncrona. A respost
 
 [item-resource]: ../resources/driveitem.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create a copy of an existing item.",
   "keywords": "copy existing item",
   "section": "documentation",
-  "tocPath": "Items/Copy"
-} -->
+  "tocPath": "Items/Copy",
+  "suppressions": []
+}
+-->

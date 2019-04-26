@@ -3,12 +3,12 @@ title: 'driveItem: visualização'
 description: Esta ação permite que você obtenha URLs que podem ser inseridas de curta duração em um item para renderizar uma visualização temporária.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 5a49a05e1e01616bc9bbbb713fd05805d9af3070
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 74e6058d61fc5672bedd5e6479829f234707c45a
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454367"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325116"
 ---
 # <a name="driveitem-preview"></a>driveItem: visualização
 
@@ -50,7 +50,7 @@ POST /shares/{shareId}/driveItem/preview
 O corpo da solicitação define as propriedades da URL incorporável que seu aplicativo está solicitando.
 A solicitação deve ser um objeto JSON com as seguintes propriedades.
 
-|   Name      |  Tipo         | Descrição
+|   Nome      |  Tipo         | Descrição
 |:------------|:--------------|:-----------------------------------------------
 | visor      | string        | Opcional. Aplicativo de visualização a ser usado. `onedrive` ou `office`. Se for NULL, um visualizador adequado será escolhido automaticamente.
 | Não Chrome  | booliano       | Opcional. Se `true` (padrão), o modo de exibição incorporado não incluirá nenhum controle.
@@ -70,7 +70,7 @@ A solicitação deve ser um objeto JSON com as seguintes propriedades.
 
 A resposta será um objeto JSON que contém as seguintes propriedades:
 
-| Name           | Tipo   | Descrição
+| Nome           | Tipo   | Descrição
 |:---------------|:-------|:---------------------------------------------------
 | getUrl         | string | URL adequada para incorporação usando HTTP GET (IFrames, etc.)
 | postUrl        | string | URL adequada para incorporação usando HTTP POST (Form Post, JS, etc.)
@@ -109,11 +109,3 @@ Esse recurso pode não estar disponível para todos os aplicativos de visualiza�
 ### <a name="pagezoom"></a>Página/zoom
 
 As `page` opções `zoom` e podem não estar disponíveis para todos os aplicativos de visualização, mas serão aplicadas se o aplicativo de visualização oferecer suporte a ela.
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/driveitem-preview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

@@ -4,12 +4,12 @@ description: 'Chamar esse método desabilitará o usuário atual para receber no
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: f7790ad68a99e13454add6db9a9e80229ab21254
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5df9934706d32ff4c2103ee350b31fee37d432b1
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32501991"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324095"
 ---
 # <a name="group-unsubscribebymail"></a>group: unsubscribeByMail
 
@@ -74,8 +74,6 @@ HTTP/1.1 200 OK
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/group-unsubscribebymail.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

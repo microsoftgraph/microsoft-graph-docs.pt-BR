@@ -5,12 +5,12 @@ ms.date: 09/11/2017
 title: Listar
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: aafae9e9214f98ade129d46b63f0e7f930ac4a9c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5e078c79603235059cbe326c850e51dfa33d2f8e
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581528"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345329"
 ---
 # <a name="list-resource"></a>Recurso List
 
@@ -137,8 +137,6 @@ O recurso **list** tem as seguintes relações com outros recursos.
   "tocBookmarks": {
     "Lists": "#"
   },
-  "suppressions": [
-    "Error: /api-reference/beta/resources/list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

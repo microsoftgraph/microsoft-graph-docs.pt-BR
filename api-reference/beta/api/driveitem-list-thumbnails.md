@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: Recuperar miniaturas de um arquivo ou pasta
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 68c1adf275a6a8720aab4df638f69c7162e301a6
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 271bf311c121807bede6ba49ce2a585a7400c641
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454374"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325309"
 ---
 # <a name="list-thumbnails-for-a-driveitem"></a>Listar miniaturas para um DriveItem
 
@@ -110,7 +110,7 @@ GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}
 
 ### <a name="path-parameters"></a>Parâmetros do caminho
 
-| Name         | Tipo   | Descrição                                                                              |
+| Nome         | Tipo   | Descrição                                                                              |
 |:-------------|:-------|:-----------------------------------------------------------------------------------------|
 | **item-id**  | string | O identificador exclusivo do item referenciado.                                           |
 | **thumb-id** | number | O índice da miniatura, geralmente de 0 a 4. Se houver uma miniatura personalizada, seu índice será 0. |
@@ -286,8 +286,6 @@ Confira mais informações sobre como os erros são retornados em [Respostas de 
   "keywords": "thumbnail,content,download,sizes",
   "section": "documentation",
   "tocPath": "Items/Thumbnails",
-  "suppressions": [
-    "Error: /api-reference/beta/api/driveitem-list-thumbnails.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -2,12 +2,12 @@
 title: Listar aplicativos
 description: Recupere uma lista de objetos de aplicativo associados ao objeto Connector.
 localization_priority: Normal
-ms.openlocfilehash: 47be81d4f154d87865113fa02b04a58151545507
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a1670a88d50a5aa46a5eca0c59f58604a48ec369
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32455755"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33327544"
 ---
 # <a name="list-applications"></a>Listar aplicativos
 
@@ -34,7 +34,7 @@ Este método dá suporte a [Parâmetros de consulta OData](https://developer.mic
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome      |Descrição|
 |:----------|:----------|
-| Authorization  | Portador. Obrigatório|
+| Autorização  | Portador. Obrigatório|
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
@@ -91,8 +91,6 @@ Content-length: 420
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/connectorgroup-list-applications.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -4,14 +4,16 @@ description: "  administradores de grupo representam os professores da turma. Se
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 148725d58d5647a85061f3b781e26cec2cb1c816
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d9aa8491ddbb0e81ae858d4dd0785afe40cd08bb
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32457883"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324936"
 ---
 # <a name="get-educationclass"></a>Obter educationClass
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Recupere uma aula do sistema. Uma aula é um grupo universal com uma propriedade especial que indica ao sistema que o grupo é uma aula. Os membros do grupo representam os alunos; os administradores do grupo representam os professores da aula. Se estiver usando o token delegado, o usuário verá apenas as aulas das quais são membros.
 
@@ -49,7 +51,7 @@ Este é um exemplo da solicitação.
   "name": "get_educationclass"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/education/classes/{class-id}
+GET https://graph.microsoft.com/beta/education/classes/11023
 ```
 ##### <a name="response"></a>Resposta
 Este é um exemplo de resposta. 
@@ -86,10 +88,13 @@ Content-length: 224
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get educationClass",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

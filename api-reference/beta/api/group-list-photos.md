@@ -4,14 +4,17 @@ description: Recuperar uma lista dos objetos profilePhoto.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 959c25bc9904a8145240f76baaf3271e29e17eef
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9d20ac132e46dbba73c0432121f7cd2ac137d24a
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32502048"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33324433"
 ---
 # <a name="list-photos"></a>Listar fotos
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Recuperar uma lista dos objetos [profilePhoto](../resources/profilephoto.md).
 
 ## <a name="permissions"></a>Permissões
@@ -19,7 +22,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Group.ReadBasic.All, Group.Read.All, Group.ReadWrite.All |
+|Delegado (conta corporativa ou de estudante) | Group.ReadBasic.All, Group.Read.All, Group.ReadWrite.All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Group.ReadBasic.All, Group.Read.All, Group.ReadWrite.All |
 
@@ -29,6 +32,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 GET /groups/{id}/photos
 GET /users/{id | userPrincipalName}/joinedGroups/{id}/photos
 ```
+
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.
 
@@ -51,7 +55,7 @@ Este é um exemplo de solicitação.
   "name": "get_photos"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/groups/{id}/photos
+GET https://graph.microsoft.com/beta/groups/{id}/photos
 ```
 
 #### <a name="response"></a>Resposta
@@ -81,10 +85,13 @@ Content-length: 94
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List photos",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

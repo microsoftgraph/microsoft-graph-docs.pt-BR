@@ -3,16 +3,18 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Atualizar um arquivo ou uma pasta
-localization_priority: Priority
+localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 8da5c90383e7f73012bf86d668316c6443372425
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ec7a9c98fa23164ef58340cc5de8fae6a953c773
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32454262"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33325224"
 ---
 # <a name="update-driveitem-properties"></a>Atualizar propriedades de DriveItem
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Atualize os metadados de um [DriveItem](../resources/driveitem.md) por ID ou caminho.
 
@@ -61,7 +63,7 @@ Se bem-sucedido, este método retorna um código de resposta `200 OK` e o recurs
 
 Este exemplo renomeia o recurso DriveItem como "new-file-name.docx".
 
-<!-- { "blockType": "request", "name": "update-item", "tags": "service.graph" } -->
+<!-- { "blockType": "request", "name": "update-item" } -->
 
 ```http
 PATCH /me/drive/items/{item-id}
@@ -96,10 +98,13 @@ Confira mais detalhes sobre como os erros são retornados em [Respostas de erro]
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update or replace the contents or properties of an item.",
   "keywords": "update,replace,contents,item",
   "section": "documentation",
-  "tocPath": "Items/Update"
-} -->
+  "tocPath": "Items/Update",
+  "suppressions": []
+}
+-->

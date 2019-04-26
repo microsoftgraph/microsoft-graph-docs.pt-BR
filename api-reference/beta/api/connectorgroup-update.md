@@ -2,12 +2,12 @@
 title: Atualizar connectorGroups
 description: Atualize as propriedades do objeto de conexão.
 localization_priority: Normal
-ms.openlocfilehash: 9d6feec19552aeeebe51ba0fab07e805c6f4a2bb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: df45006b57886bd3296d92d34d75de65e5bbec89
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32455762"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33327541"
 ---
 # <a name="update-connectorgroups"></a>Atualizar connectorGroups
 
@@ -29,7 +29,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 PATCH /connectorGroups/{id}
 ```
 ## <a name="optional-request-headers"></a>Cabeçalhos de solicitação opcionais
-| Name       | Descrição|
+| Nome       | Descrição|
 |:-----------|:-----------|
 | Autorização  | Portador. Obrigatório|
 
@@ -39,7 +39,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |connectorGroupType|string| Os valores possíveis são `applicationProxy`:.|
-|nome|String|O nome do conector.|
+|name|String|O nome do conector.|
 
 ## <a name="response"></a>Resposta
 
@@ -90,8 +90,6 @@ Content-length: 119
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/connectorgroup-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

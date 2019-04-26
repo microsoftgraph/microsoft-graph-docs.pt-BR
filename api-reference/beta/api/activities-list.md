@@ -4,22 +4,22 @@ ms.author: dspektor
 ms.date: 09/10/2017
 title: Atividades de arquivo
 localization_priority: Normal
-ms.openlocfilehash: 75849fc67febe8c0f22d4dbd057da98aea5e8854
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9131146bc627f1f611e817d66dcb86a084fef26f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32459472"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33323012"
 ---
 # <a name="enumerate-activities-preview"></a>Enumerar atividades (prévia)
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Lista as [atividades][] recentes que foram realizadas em um item ou em uma hierarquia.
+Lista as [atividades](../resources/itemactivity.md) recentes que foram realizadas em um item ou em uma hierarquia.
 
 **Observação:** as atividades são uma Visualização limitada e ainda não disponível para todos os locatários.
 
-[atividades]: ../resources/itemactivity.md
+[activities]: ../resources/itemactivity.md
 
 ## <a name="permissions"></a>Permissões
 
@@ -156,8 +156,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "Site/List sites",
-  "suppressions": [
-    "Error: /api-reference/beta/api/activities-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->
