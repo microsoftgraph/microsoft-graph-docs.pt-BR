@@ -1,42 +1,42 @@
 ---
-title: tipo de recurso de tendências
-description: Relacionamento de rich conectando a um usuário a documentos que são tendências em torno do usuário (são relevante para o usuário). Arquivos de OneDrive, os arquivos armazenados em sites de equipe do SharePoint podem tendências em torno do usuário e.
+title: tipo de recurso de tendência
+description: Relação avançada conectando um usuário a documentos que estão em tendência ao usuário (são relevantes para o usuário). Os arquivos do OneDrive e os arquivos armazenados em sites de equipe do SharePoint podem ser tendências em torno do usuário.
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
 ms.openlocfilehash: 07fe0f50d6961f0fce6c426c7fb2431f17127bf7
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640368"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32551306"
 ---
-# <a name="trending-resource-type"></a>tipo de recurso de tendências
+# <a name="trending-resource-type"></a>tipo de recurso de tendência
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Relacionamento de rich conectando a um usuário a documentos que são tendências em torno do usuário (são relevante para o usuário). Arquivos de OneDrive, os arquivos armazenados em sites de equipe do SharePoint podem tendências em torno do usuário e.
+Relação avançada conectando um usuário a documentos que estão em tendência ao usuário (são relevantes para o usuário). Os arquivos do OneDrive e os arquivos armazenados em sites de equipe do SharePoint podem ser tendências em torno do usuário.
 
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-|[Lista de tendências](../api/insights-list-trending.md) |coleção [insights_trending](insights-trending.md)| Obtenha uma lista dos arquivos de tendências.|
+|[Listar tendências](../api/insights-list-trending.md) |coleção [insights_trending](insights-trending.md)| Obtenha uma lista de arquivos de tendência.|
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade      | Tipo                              | Descrição  |
 | ------------- |---------------                    | -------------|
-| id                    | String                    | Identificador exclusivo do relacionamento. Somente leitura.        |
-| weight                | Duplo                    | Valor que indica o quanto o documento está atualmente tendências. Quanto maior o número, mais o documento é atualmente tendências ao redor do usuário (o mais relevantes é). Documentos retornados são classificados por esse valor.  |
-| resourceVisualization | [resourceVisualization](insights-resourcevisualization.md)    | Propriedades que você pode usar para visualizar o documento na sua experiência. |
-| resourceReference     | [resourceReference](insights-resourcereference.md)        | Propriedades de referência do documento tendência, como a url e o tipo de documento. |
+| id                    | String                    | Identificador exclusivo da relação. Somente leitura.        |
+| weight                | Duplo                    | Valor que indica quanto o documento está em tendência no momento. Quanto maior o número, mais o documento está atualmente em tendência ao usuário (o que é mais relevante). Os documentos retornados são classificados por esse valor.  |
+| resourceVisualization | [resourceVisualization](insights-resourcevisualization.md)    | Propriedades que você pode usar para visualizar o documento em sua experiência. |
+| resourceReference     | [resourceReference](insights-resourcereference.md)        | Propriedades de referência do documento de tendência, como a URL e o tipo do documento. |
 
 ## <a name="relationships"></a>Relações
 
 | Propriedade      | Tipo          | Descrição  |
 | ------------- |---------------| -------------|
-| recurso      | Entity        | Usado para navegar até o documento tendência. |
+| recurso      | Entidade        | Usado para navegar para o documento de tendência. |
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -1,19 +1,19 @@
 ---
 title: Criar sectionGroup
-description: Crie um novo grupo de seção no bloco de anotações especificado.
+description: Cria um novo grupo de seção no bloco de anotações especificado.
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 ms.openlocfilehash: 31a0f13c30682e491016b6dce4675b8159b8d897
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27939137"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562136"
 ---
 # <a name="create-sectiongroup"></a>Criar sectionGroup
 
-Crie um novo [grupo de seção](../resources/sectiongroup.md) no bloco de anotações especificado.
+Cria um novo [grupo de seção](../resources/sectiongroup.md) no bloco de anotações especificado.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -44,7 +44,7 @@ Dentro do mesmo nível de hierarquia, os nomes dos grupos de seção devem ser e
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [sectionGroup](../resources/sectiongroup.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `201 Created` um código de resposta e um objeto de objeto de [seção](../resources/sectiongroup.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 841c95fa1b02f0923c9659ab9c1858b4c2b9560c
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31784947"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32554181"
 ---
 # <a name="windowssmodeconfiguration-enum-type"></a>tipo de enumeração windowsSModeConfiguration
 
@@ -23,8 +23,8 @@ As opções possíveis para configurar o desbloqueio de modo S
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |restrict|,0|Essa opção removerá todas as restrições para desbloquear o modo S-padrão|
-|Larga|1|Essa opção impedirá que o usuário desbloqueie o dispositivo no modo S|
-|bloqueio|duas|Essa opção destravará o dispositivo do modo S|
+|Larga|1 |Essa opção impedirá que o usuário desbloqueie o dispositivo no modo S|
+|bloqueio|2 |Essa opção destravará o dispositivo do modo S|
 
 
 

@@ -3,11 +3,11 @@ title: Tipo de recurso extensionSchemaProperty
 description: Use o recurso **extensionSchemaProperty** para definir o nome da propriedade e o tipo dela, como parte de uma definição schemaExtension.
 localization_priority: Normal
 ms.openlocfilehash: 384f60c323ca6c6fb23d2f4811a6d2cb918bf844
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880567"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575783"
 ---
 # <a name="extensionschemaproperty-resource-type"></a>Tipo de recurso extensionSchemaProperty
 
@@ -28,7 +28,7 @@ Há suporte para os seguintes tipos de dados quando se define uma propriedade em
 | Binária | No máximo 256 bytes. |
 | Booliano | Não é compatível com os contatos, mensagens, eventos e postagens. |
 | DateTime | Deve ser especificado no formato ISO 8601. Serão armazenados no UTC. |
-| Número inteiro | Valor de 32 bits. Não é compatível com os contatos, mensagens, eventos e postagens. |
+| Inteiro | Valor de 32 bits. Não é compatível com os contatos, mensagens, eventos e postagens. |
 | String | Máximo de 256 caracteres. |
 
 ## <a name="json-representation"></a>Representação JSON

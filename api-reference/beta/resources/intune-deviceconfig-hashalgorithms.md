@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 416d07266f9564bc8685447ee5a318014d462d69
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31770960"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32555987"
 ---
 # <a name="hashalgorithms-enum-type"></a>tipo de enumeração hashAlgorithm
 
@@ -22,8 +22,8 @@ Opções de algoritmo de hash.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|SHA1|1|Algoritmo de hash SHA-1.|
-|SHA2|duas|Algoritmo de hash SHA-2.|
+|SHA1|1 |Algoritmo de hash SHA-1.|
+|SHA2|2 |Algoritmo de hash SHA-2.|
 
 
 

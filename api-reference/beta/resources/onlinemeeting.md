@@ -1,21 +1,21 @@
 ---
-title: tipo de recurso de onlineMeeting
-description: Informações sobre a reunião, incluindo a URL de ingresso, a lista de participantes e a descrição de captura.
+title: tipo de recurso onlineMeeting
+description: Captura informações sobre a reunião, incluindo a URL de ingresso, a lista de participantes e a descrição.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: d7009ceaf815986d50c8eb3b64d2541c32f01a88
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519595"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568854"
 ---
-# <a name="onlinemeeting-resource-type"></a>tipo de recurso de onlineMeeting
+# <a name="onlinemeeting-resource-type"></a>tipo de recurso onlineMeeting
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Informações sobre a reunião, incluindo a URL de ingresso, a lista de participantes e a descrição de captura.
+Captura informações sobre a reunião, incluindo a URL de ingresso, a lista de participantes e a descrição.
 
 ## <a name="methods"></a>Métodos
 
@@ -27,23 +27,23 @@ Informações sobre a reunião, incluindo a URL de ingresso, a lista de particip
 
 | Propriedade                  | Tipo                                                   | Descrição                                                                                                                |
 | :------------------------ | :----------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
-| AccessLevel               | String                                                 | O nível de acesso que controla a admissão na reunião online. Os valores possíveis são: `everyone`, `invited`, `locked`, `sameEnterprise`, `unknown`. |
-| audioConferencing         | [audioConferencing](audioconferencing.md)              | Representa as informações de acesso telefônicas de um onlineMeeting. |
-| canceledDateTime          | DateTime                                               | A hora de quando a reunião foi cancelada. |
+| accessLevel               | String                                                 | O nível de acesso que controla a admissão para a reunião online. Os valores possíveis são: `everyone`, `invited`, `locked`, `sameEnterprise`, `unknown`. |
+| audioConferencing         | [audioConferencing](audioconferencing.md)              | Representa as informações de acesso de telefone de um onlineMeeting. |
+| canceledDateTime          | DateTime                                               | A hora em que a reunião foi cancelada. |
 | chatInfo                  | [chatInfo](chatinfo.md)                                | O chat associado a esta reunião. |
-| creationDateTime          | DateTime                                               | A hora em que a reunião foi criada. Somente leitura.
+| creationDatetime          | DateTime                                               | A hora em que a reunião foi criada. ReadOnly.
 | endDateTime               | DateTime                                               | Hora de término da reunião. |
-| entryExitAnnouncement     | Booliano                                                | O status de comunicados de participação da reunião online. Quando os anúncios de presença estão habilitados, a reunião online lançará os nomes dos participantswho ingressar na reunião através do áudio. |
-| expirationDateTime        | DateTime                                               | A data de tempo Universal Coordenado (UTC) e a hora após o qual a absoluto da reunião online pode ser excluída. O dia e hora devem estar entre um ano antes e dez anos após a data atual e a hora no servidor. |
-| id                        | String                                                 | A ID associada a reunião online. Usado em uma solicitação HTTP GET, como a ID. Somente leitura. Servidor foi gerado. |
+| entryExitAnnouncement     | Booliano                                                | O status dos comunicados de presença para a reunião online. Quando os comunicados de presença estiverem habilitados, a reunião online anunciará os nomes do participantswho ingressar na reunião por meio de áudio. |
+| expirationDateTime        | DateTime                                               | A data e a hora UTC (tempo Universal Coordenado) absoluta após a qual a reunião online pode ser excluída. O dia e a hora devem estar entre um ano antes e dez anos após, a data e a hora atuais no servidor. |
+| id                        | String                                                 | A ID associada à reunião online. Usado em uma solicitação HTTP GET como a ID. Somente leitura. Servidor gerado. |
 | isCancelled               | Booliano                                                | Se a reunião foi cancelada. |
-| joinUrl                   | String                                                 | A URL que é usada durante a reunião online está unida a partir da web. |
-| meetingType               | String                                                 | Os valores possíveis são: `meetNow`, `scheduled`, `recurring`. |
-| participantes              | [meetingParticipants](meetingparticipants.md)          | Os participantes associados a reunião online.  Isso inclui o organizador e os participantes. |
-| startDateTime             | DateTime                                               | Inicie o horário da reunião. |
-| subject                   | Cadeia de caracteres                                                 | O assunto da reunião online. |
+| joinUrl                   | String                                                 | A URL que é usada quando a reunião online é associada da Web. |
+| meetingtype               | String                                                 | Os valores possíveis são `meetNow`: `scheduled`, `recurring`,,`broadcast` |
+| participantes              | [meetingParticipants](meetingparticipants.md)          | Os participantes associados à reunião online.  Isso inclui o organizador e os participantes. |
+| startDateTime             | DateTime                                               | Hora de início da reunião. |
+| subject                   | String                                                 | O assunto da reunião online. |
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 Nenhum
 
 ## <a name="json-representation"></a>Representação JSON

@@ -5,17 +5,17 @@ ms.date: 09/14/2017
 title: ItemActionStat
 localization_priority: Normal
 ms.openlocfilehash: 39209671b63b991a8fb3ccf1c830c8557fce27c1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509634"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569974"
 ---
-# <a name="itemactionstat-resource-type"></a>tipo de recurso de itemActionStat
+# <a name="itemactionstat-resource-type"></a>tipo de recurso itemActionStat
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O recurso de **itemActionStat** fornece agregação detalhes sobre uma ação durante um período de tempo.
+O recurso **itemActionStat** fornece detalhes agregados sobre uma ação em um período de tempo.
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -36,8 +36,8 @@ O recurso de **itemActionStat** fornece agregação detalhes sobre uma ação du
 
 | Propriedade    | Tipo  | Descrição
 |:------------|:------|:-------------------------------------------------------
-| actionCount | Int32 | O número de vezes que a ação foi realizada. Somente leitura.
-| actorCount  | Int32 | O número de atores distintos que executou a ação. Somente leitura.
+| actionCount | Int32 | O número de vezes que a ação ocorreu. Somente leitura.
+| actorCount  | Int32 | O número de atores distintos que executaram a ação. Somente leitura.
 
 <!--
 {

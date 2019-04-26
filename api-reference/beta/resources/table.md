@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 2e3e9c93f7459d666fbe7f28a67241c2831b7079
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642643"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568170"
 ---
 # <a name="table-resource-type"></a>Tipo de recurso Table
 
@@ -33,7 +33,7 @@ Representa uma tabela do Excel.
 |[Totalrowrange](../api/table-totalrowrange.md)|[Range](range.md)|Obtém o objeto de intervalo associado à linha de totais da tabela.|
 |[Clearfilters](../api/table-clearfilters.md)|Nenhum|Limpa todos os filtros aplicados à tabela no momento.|
 |[Converttorange](../api/table-converttorange.md)|[Range](range.md)|Converte a tabela em um intervalo de células normal. Todos os dados são preservados.|
-|[Delete](../api/table-delete.md)|Nenhum|Exclui a tabela.|
+|[Excluir](../api/table-delete.md)|Nenhum|Exclui a tabela.|
 |[Reapplyfilters](../api/table-reapplyfilters.md)|Nenhum|Aplica novamente todos os filtros à tabela.|
 |[List](../api/table-list.md) | Coleção [Table](table.md) |Obtenha a coleção de objetos da tabela. |
 |[Add](../api/tablecollection-add.md)|[Table](table.md)|Cria uma nova tabela. O endereço de origem do intervalo determina a planilha à qual a tabela será adicionada. Se a tabela não puder ser adicionada (por exemplo, porque o endereço é inválido ou a tabela se sobreporia a outra), será gerado um erro.|

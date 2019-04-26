@@ -3,11 +3,11 @@ title: Tipo de recurso Filter
 description: Gerencia a filtragem da coluna de uma tabela.
 localization_priority: Normal
 ms.openlocfilehash: cc4b1b105c2049b36fa27cb88b41102366648fa8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27834661"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32564313"
 ---
 # <a name="filter-resource-type"></a>Tipo de recurso Filter
 
@@ -18,14 +18,14 @@ Gerencia a filtragem da coluna de uma tabela.
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Aplicar](../api/filter-apply.md)|Nenhum|Aplica os critérios de filtro determinados à coluna fornecida.|
+|[Apply](../api/filter-apply.md)|Nenhum|Aplica os critérios de filtro determinados à coluna fornecida.|
 |[Clear](../api/filter-clear.md)|Nenhum|Limpa o filtro na coluna determinada.|
 
 ## <a name="properties"></a>Propriedades
 
 | Nome | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|critérios|[WorkbookFilterCriteria](filtercriteria.md)|O filtro aplicado no momento à coluna fornecida. Somente leitura.|
+|criteria|[WorkbookFilterCriteria](filtercriteria.md)|O filtro aplicado no momento à coluna fornecida. Somente leitura.|
 
 ## <a name="json-representation"></a>Representação JSON
 

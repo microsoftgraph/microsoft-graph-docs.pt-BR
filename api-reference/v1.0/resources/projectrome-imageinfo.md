@@ -1,26 +1,26 @@
 ---
-title: tipo de recurso de imageInfo
-description: Um tipo complexo para representar a propriedade **atribuição** na parte visualInfo do objeto atividade.
+title: tipo de recurso imageInfo
+description: Um tipo complexo para representar a propriedade de **atribuição** na parte visualInfo do objeto Activity.
 localization_priority: Normal
 ms.prod: project-rome
 ms.openlocfilehash: a17fe40f53308a0b1b1f587425d2afb019f84bb5
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27982362"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579710"
 ---
-# <a name="imageinfo-resource-type"></a>tipo de recurso de imageInfo
+# <a name="imageinfo-resource-type"></a>tipo de recurso imageInfo
 
-Um tipo complexo para representar a propriedade **atribuição** na parte [visualInfo](../resources/projectrome-visualinfo.md) do objeto [atividade](../resources/projectrome-activity.md) .
+Um tipo complexo para representar a propriedade de **atribuição** na parte [visualInfo](../resources/projectrome-visualinfo.md) do objeto [Activity](../resources/projectrome-activity.md) .
 
 ## <a name="properties"></a>Propriedades
 
 |Nome | Tipo | Descrição|
 |:----|:-----|:-----------|
-|iconUrl | Cadeia de caracteres | Opcional; URI que aponta para um ícone que representa o aplicativo usado para gerar a atividade|
-|alternateText | Cadeia de caracteres | Opcional; conteúdo de texto ALT acessível para a imagem|
-|addImageQuery | Booliano | Opcional; parâmetro usado para indicar o servidor é capaz de processar imagem dinamicamente em resposta às parametrização. Por exemplo, – uma imagem de alto contraste|
+|iconUrl | String | Opcion URI que aponta para um ícone que representa o aplicativo usado para gerar a atividade|
+|alternateText | String | Opcion Alt-conteúdo de texto acessível para a imagem|
+|addImageQuery | Booliano | Opcion parâmetro usado para indicar que o servidor é capaz de renderizar a imagem dinamicamente em resposta à parametrização. Por exemplo, uma imagem de alto contraste|
 
 ## <a name="json-representation"></a>Representação JSON
 

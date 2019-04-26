@@ -5,11 +5,11 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: c5b145d12dd99293eef9c338ff840d5781c5ef3f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27933985"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562710"
 ---
 # <a name="educationclass-resource-type"></a>Tipo de recurso educationClass
 
@@ -36,12 +36,12 @@ Representa uma aula em uma escola. O recurso **educationClass** corresponde ao g
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |id| Cadeia de caracteres| O identificador exclusivo da aula.|
-|description|Cadeia de caracteres| Descrição da aula.|
-|displayName|Cadeia de caracteres| Nome da aula.|
-|mailNickname|Cadeia de caracteres| Nome de email para enviar email a todos os membros, se essa propriedade estiver habilitada. |
+|description|String| Descrição da aula.|
+|displayName|String| Nome da aula.|
+|mailNickname|String| Nome de email para enviar email a todos os membros, se essa propriedade estiver habilitada. |
 |createdBy|[identitySet](identityset.md)| Entidade que criou a aula |
-|classCode|Cadeia de caracteres| Código de aula usada pela escola para identificar a aula.|
-|externalId|Cadeia de caracteres| ID da aula no sistema de sincronização. |
+|classCode|String| Código de aula usada pela escola para identificar a aula.|
+|externalId|String| ID da aula no sistema de sincronização. |
 |externalName|Cadeia de caracteres|Nome da aula no sistema de sincronização.|
 |externalSource|educationExternalSource| Como essa aula foi criada. Os valores possíveis são: `sis`, `manual`, `unknownFutureValue`.|
 |term|[educationTerm](educationterm.md)|Termos dessa aula.|
@@ -52,7 +52,7 @@ Representa uma aula em uma escola. O recurso **educationClass** corresponde ao g
 |members|Coleção [educationUser](../resources/educationuser.md)| Todos os usuários da aula. Anulável.|
 |schools|Coleção [educationSchool](../resources/educationschool.md)| Todas as escolas às quais essa aula está associada. Anulável.|
 |teachers|Coleção [educationUser](../resources/educationuser.md)|  Todos os professores da aula. Anulável.|
-|group|[grupo](../resources/group.md)| O grupo de diretório correspondente a esta classe.|
+|grupo|[grupo](../resources/group.md)| O grupo de diretórios correspondente a esta classe.|
 
 ## <a name="json-representation"></a>Representação JSON
 

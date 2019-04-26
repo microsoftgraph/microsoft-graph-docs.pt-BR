@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 3bc6d1f12d9a7eec2a2f88d483670d34cabe1349
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31783273"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556918"
 ---
 # <a name="ratingjapanmoviestype-enum-type"></a>tipo de enumeração ratingJapanMoviesType
 
@@ -23,11 +23,11 @@ Rótulos de classificação de filmes no Japão
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Permitido|,0|Valor padrão, permitir todo o conteúdo de filmes|
-|Bloqueado|1|Não permitir conteúdo de filmes|
-|geral|duas|Adequado para todas as idades|
-|parentalGuidance|3D|A orientação responsável pelas solicitações de classificação do PG-12 para jovens, às pequenas pessoas, menos de 12|
-|agesAbove15|quatro|A classificação R15 + é adequada para visualizadores de 15 ou mais|
-|agesAbove18|0,5|A classificação R18 + é adequada para visualizadores de 18 ou mais|
+|Bloqueado|1 |Não permitir conteúdo de filmes|
+|geral|2 |Adequado para todas as idades|
+|parentalGuidance|3 |A orientação responsável pelas solicitações de classificação do PG-12 para jovens, às pequenas pessoas, menos de 12|
+|agesAbove15|4 |A classificação R15 + é adequada para visualizadores de 15 ou mais|
+|agesAbove18|5 |A classificação R18 + é adequada para visualizadores de 18 ou mais|
 
 
 

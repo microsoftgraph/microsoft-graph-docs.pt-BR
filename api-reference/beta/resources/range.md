@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: d23b3724dcbcbe7c7bfd26240c5db9eace507b62
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641019"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563251"
 ---
 # <a name="range-resource-type"></a>Tipo de recurso Range
 
@@ -26,7 +26,7 @@ Range representa um conjunto de uma ou mais células contíguas, como uma célul
 |[Update](../api/range-update.md) | [Range](range.md)   |Atualize o objeto Range. |
 |[Boundingrect](../api/range-boundingrect.md)|[Range](range.md)|Obtém o menor objeto de intervalo que abrange os intervalos determinados. Por exemplo, GetBoundingRect de "B2:C5" e "D10:E15" é "B2:E16".|
 |[Cell](../api/range-cell.md)|[Range](range.md)|Obtém o objeto de intervalo que contém a célula única com base nos números de linha e de coluna. A célula pode estar fora dos limites do respectivo intervalo pai, desde que permaneça dentro da grade da planilha. A localização da célula retornada está relacionada à célula superior esquerda do intervalo.|
-|[Coluna](../api/range-column.md)|[Range](range.md)|Obtém uma coluna incluída no intervalo.|
+|[Column](../api/range-column.md)|[Range](range.md)|Obtém uma coluna incluída no intervalo.|
 |[Columnsafter](../api/workbookrange-columnsafter.md)|[workbookRangeView](workbookrangeview.md)|Obtém um determinado número de colunas à direita do intervalo especificado.|
 |[Columnsbefore](../api/workbookrange-columnsbefore.md)|[workbookRangeView](workbookrangeview.md)|Obtém um determinado número de colunas à esquerda do intervalo especificado.|
 |[Entirecolumn](../api/range-entirecolumn.md)|[Range](range.md)|Obtém um objeto que representa toda a coluna do intervalo.|
@@ -36,12 +36,12 @@ Range representa um conjunto de uma ou mais células contíguas, como uma célul
 |[Lastcolumn](../api/range-lastcolumn.md)|[Range](range.md)|Obtém a última coluna do intervalo. Por exemplo, a última coluna de "B2:D5" é "D2:D5".|
 |[Lastrow](../api/range-lastrow.md)|[Range](range.md)|Obtém a última linha do intervalo. Por exemplo, a última linha de "B2:D5" é "B5:D5".|
 |[Offsetrange](../api/range-offsetrange.md)|[Range](range.md)|Obtém um objeto que representa um intervalo deslocado do intervalo especificado. A dimensão do intervalo retornado corresponde a esse intervalo. Se o intervalo resultante é imposto para fora dos limites da grade da planilha, o sistema gera uma exceção.|
-|[Linha](../api/range-row.md)|[Range](range.md)|Obtém uma linha contida no intervalo.|
+|[Row](../api/range-row.md)|[Range](range.md)|Obtém uma linha contida no intervalo.|
 |[Rowsabove](../api/workbookrange-rowsabove.md)|[workbookRangeView](workbookrangeview.md)|Obtém um determinado número de linhas acima de um determinado intervalo.|
 |[Rowsbelow](../api/workbookrange-rowsbelow.md)|[workbookRangeView](workbookrangeview.md)|Obtém um determinado número de linhas abaixo de um determinado intervalo.|
-|[Usedrange](../api/range-usedrange.md)|[Range](range.md)|Retorna o intervalo usado do objeto range determinado.|
+|[Usedrange](../api/range-usedrange.md)|[Range](range.md)|Retorna o intervalo usado do objeto de intervalo determinado.|
 |[Clear](../api/range-clear.md)|Nenhum|Limpe valores de intervalo, formatação, preenchimento, bordas, etc.|
-|[Delete](../api/range-delete.md)|Nenhum|Exclui as células associadas ao intervalo.|
+|[Excluir](../api/range-delete.md)|Nenhum|Exclui as células associadas ao intervalo.|
 |[Insert](../api/range-insert.md)|[Range](range.md)|Insere uma célula ou um intervalo de células na planilha, no lugar desse intervalo, e desloca as outras células para liberar espaço. Retorna um novo objeto Range no espaço em branco atual.|
 |[Merge](../api/range-merge.md)|Nenhum|Mescla as células do intervalo em uma região da planilha.|
 |[Resizedrange](../api/workbookrange-resizedrange.md)|[workbookRangeView](workbookrangeview.md)|Obtém um objeto range semelhante ao objeto range atual, mas com seu canto inferior direito expandido (ou recolhido) por um determinado número de linhas e colunas.|
@@ -51,7 +51,7 @@ Range representa um conjunto de uma ou mais células contíguas, como uma célul
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|address|string|Representa a referência do intervalo no estilo A1. O valor do endereço inclui a referência de planilha (por exemplo, Plan1!A1:B4). Somente leitura.|
+|address|cadeia de caracteres|Representa a referência do intervalo no estilo A1. O valor do endereço inclui a referência de planilha (por exemplo, Plan1!A1:B4). Somente leitura.|
 |addressLocal|string|Representa a referência de intervalo para o intervalo especificado no idioma do usuário. Somente leitura.|
 |cellCount|int|Número de células no intervalo. Somente leitura.|
 |columnCount|int|Representa o número total de colunas no intervalo. Somente leitura.|
@@ -66,7 +66,7 @@ Range representa um conjunto de uma ou mais células contíguas, como uma célul
 |rowHidden|booliano|Representa se todas as linhas do intervalo atual estão ocultas.|
 |rowIndex|int|Representa o número de linhas da primeira célula no intervalo. Indexados com zero. Somente leitura.|
 |text|json|Valores de texto do intervalo especificado. O valor de texto não depende da largura da célula. A substituição pelo sinal #, que ocorre na interface de usuário do Excel, não afeta o valor de texto retornado pela API. Somente leitura.|
-|valueTypes|string|Representa o tipo de dados de cada célula. Os valores possíveis são: `Unknown`, `Empty`, `String`, `Integer`, `Double`, `Boolean` e `Error`. Somente leitura.|
+|valueTypes|cadeia de caracteres|Representa o tipo de dados de cada célula. Os valores possíveis são: `Unknown`, `Empty`, `String`, `Integer`, `Double`, `Boolean` e `Error`. Somente leitura.|
 |values|json|Representa os valores brutos do intervalo especificado. Os dados retornados podem ser dos tipos: cadeia de caracteres, número ou booliano. Células que contêm um erro retornarão a cadeia de caracteres de erro.|
 
 ## <a name="relationships"></a>Relações

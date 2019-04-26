@@ -1,19 +1,19 @@
 ---
 title: Listar contratos
-description: Recupere uma lista de objetos contract associados a um locatário do parceiro.
+description: Recupere uma lista de objetos Contract associados a um locatário do parceiro.
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: b4003bf2aaa910d3ad33e299a9fdb01f47229d1a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27932977"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566182"
 ---
 # <a name="list-contracts"></a>Listar contratos
 
-Recupere uma lista de objetos [contract](../resources/contract.md) associados a um locatário do parceiro.
+Recupere uma lista de objetos [Contract](../resources/contract.md) associados a um locatário do parceiro.
 
 ## <a name="permissions"></a>Permissões
 
@@ -37,7 +37,7 @@ GET /contracts
 
 Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta. 
 
-> A filtragem é compatível com customerId, defaultDomainName e displayName.
+> Há suporte para filtragem para customerId, defaultDomainname e displayName.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 
@@ -51,7 +51,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [Contract](../resources/contract.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e uma coleção de objetos [Contract](../resources/contract.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/v1.0/contracts
 
 ##### <a name="response"></a>Resposta
 
-Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

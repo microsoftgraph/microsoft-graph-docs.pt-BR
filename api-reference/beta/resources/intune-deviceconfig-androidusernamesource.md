@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 194d34f734825cbac3e98c7aa959e4433f7262ff
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31787187"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562535"
 ---
 # <a name="androidusernamesource-enum-type"></a>tipo de enumeração androidUsernameSource
 
@@ -23,9 +23,9 @@ Fonte de nome de usuário Android.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |username|,0|O nome de usuário.|
-|userPrincipalName|1|O nome da entidade de segurança do usuário.|
-|samAccountName|duas|O nome da conta Sam do usuário.|
-|primarySmtpAddress|3D|Endereço SMTP principal.|
+|userPrincipalName|1 |O nome da entidade de segurança do usuário.|
+|samAccountName|2 |O nome da conta Sam do usuário.|
+|primarySmtpAddress|3 |Endereço SMTP principal.|
 
 
 

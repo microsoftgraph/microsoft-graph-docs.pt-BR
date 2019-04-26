@@ -3,11 +3,11 @@ title: Obter ícone
 description: Recupere as propriedades e os relacionamentos do objeto de ícone.
 localization_priority: Normal
 ms.openlocfilehash: 8d5f7f88892492230d2e77d587dc7f45b863f163
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27869101"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32577767"
 ---
 # <a name="get-icon"></a>Obter ícone
 
@@ -41,7 +41,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [Icon](../resources/icon.md) no corpo da resposta.
+Se bem sucedido, este método retorna o código de resposta `200 OK` e o objeto [Icon](../resources/icon.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

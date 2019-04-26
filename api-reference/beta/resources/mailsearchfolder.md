@@ -1,40 +1,40 @@
 ---
-title: tipo de recurso de mailSearchFolder
-description: Um mailSearchFolder é uma pasta virtual na caixa de correio do usuário que contém todos os itens de email que correspondam a critérios de pesquisa especificado. mailSearchFolder herda de mailFolder.
+title: tipo de recurso mailSearchFolder
+description: Um mailSearchFolder é uma pasta virtual na caixa de correio do usuário que contém todos os itens de email correspondentes aos critérios de pesquisa especificados. mailSearchFolder herda de mailFolder.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: ba76029b69d91be39c9d63ca755e8a4603aec0b9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520981"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562579"
 ---
-# <a name="mailsearchfolder-resource-type"></a>tipo de recurso de mailSearchFolder
+# <a name="mailsearchfolder-resource-type"></a>tipo de recurso mailSearchFolder
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Um mailSearchFolder é uma pasta virtual na caixa de correio do usuário que contém todos os itens de email que correspondam a critérios de pesquisa especificado. mailSearchFolder herda de [mailFolder](mailfolder.md).
+Um mailSearchFolder é uma pasta virtual na caixa de correio do usuário que contém todos os itens de email correspondentes aos critérios de pesquisa especificados. mailSearchFolder herda de [mailFolder](mailfolder.md).
 
 ## <a name="methods"></a>Métodos
 
 | Método | Tipo de retorno  | Descrição |
 |:---------------|:--------|:----------|
-| [Crie uma pasta de pesquisa](../api/mailsearchfolder-post.md) | [mailSearchFolder](mailsearchfolder.md) | Crie uma pasta de pesquisa na caixa de correio desse usuário. |
-| [Lista as pastas de pesquisa](../api/mailfolder-list-childfolders.md) | Coleção [mailFolder](mailfolder.md) | Liste todas as pastas na caixa de correio do usuário, incluindo as pastas de pesquisa. |
-| [Obtenha uma pasta de pesquisa](../api/mailfolder-get.md) | [mailSearchFolder](mailsearchfolder.md) | Obtenha a pasta de pesquisa especificado. |
-| [Atualizar uma pasta de pesquisa](../api/mailsearchfolder-update.md) | [mailSearchFolder](mailsearchfolder.md) | Atualize a pasta de pesquisa especificado. |
-| [Excluir uma pasta de pesquisa](../api/mailfolder-delete.md) | Nenhum | Exclua a pasta de pesquisa especificado. |
-| [Listar todas as mensagens em uma pasta de pesquisa](../api/mailfolder-list-messages.md) | Coleção [message](message.md) | Liste todas as mensagens na pasta de pesquisa especificado. |
+| [Criar uma pasta de pesquisa](../api/mailsearchfolder-post.md) | [mailSearchFolder](mailsearchfolder.md) | Crie uma pasta de pesquisa na caixa de correio do usuário. |
+| [Listar pastas de pesquisa](../api/mailfolder-list-childfolders.md) | Coleção [mailFolder](mailfolder.md) | Listar todas as pastas na caixa de correio do usuário, incluindo pastas de pesquisa. |
+| [Obter uma pasta de pesquisa](../api/mailfolder-get.md) | [mailSearchFolder](mailsearchfolder.md) | Obtém a pasta de pesquisa especificada. |
+| [Atualizar uma pasta de pesquisa](../api/mailsearchfolder-update.md) | [mailSearchFolder](mailsearchfolder.md) | Atualiza a pasta de pesquisa especificada. |
+| [Excluir uma pasta de pesquisa](../api/mailfolder-delete.md) | Nenhum | Excluir a pasta de pesquisa especificada. |
+| [Listar todas as mensagens em uma pasta de pesquisa](../api/mailfolder-list-messages.md) | Coleção [message](message.md) | Listar todas as mensagens na pasta de pesquisa especificada. |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
-| isSupported | Booliano | Indica se uma pasta de pesquisa é editável usando APIs REST. |
-| includeNestedFolders | Booliano | Indica como a hierarquia de pastas de caixa de correio deve ser percorrida. `true`significa que uma profundidade de pesquisa deve ser feito ao `false` significa rasos de pesquisa devem ser feito em vez disso. |
-| sourceFolderIDs | String collection | As pastas de caixa de correio que devem ser extraídas. |
+| isSupported | Booliano | Indica se uma pasta de pesquisa é editável usando as APIs REST. |
+| includeNestedFolders | Booliano | Indica como a hierarquia da pasta da caixa de correio deve ser percorrida. `true`significa que uma pesquisa profunda deve ser feita enquanto `false` uma pesquisa superficial deve ser realizada. |
+| sourceFolderIDs | Coleção de cadeias de caracteres | As pastas de caixa de correio que devem ser minadas. |
 | filterQuery | String | A consulta OData para filtrar as mensagens. |
 
 ## <a name="json-representation"></a>Representação JSON

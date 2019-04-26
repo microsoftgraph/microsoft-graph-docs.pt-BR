@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: ItemReference
 localization_priority: Normal
 ms.openlocfilehash: 63155bbeb586956f539b0c28ac1f7706189b5445
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482277"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581055"
 ---
 # <a name="itemreference-resource-type"></a>Tipo de recurso ItemReference
 
@@ -43,8 +43,8 @@ Veja a seguir uma representação JSON do recurso
 |:--------------|:------------------|:-----------------------------------------
 | driveId       | String            | O identificador exclusivo da instância da unidade que contém o item. Somente leitura.
 | driveType     | String            | Identifica o tipo de unidade. Consulte o recurso [unidade][] para obter os valores.
-| id            | String            | Identificador exclusivo do item na unidade. Somente leitura.
-| nome          | Cadeia de caracteres            | O nome do item ao qual se faz referência. Somente leitura.
+| id            | Cadeia de caracteres            | Identificador exclusivo do item na unidade. Somente leitura.
+| name          | String            | O nome do item ao qual se faz referência. Somente leitura.
 | caminho          | String            | Caminho que pode ser usado para navegar até o item. Somente leitura.
 | shareId       | String            | Um identificador exclusivo para um recurso compartilhado que pode ser acessado através da API [Shares][].
 | sharepointIds | [sharepointIds][] | Retorna os identificadores úteis para fins de compatibilidade do REST do SharePoint. Somente leitura.
@@ -71,5 +71,9 @@ Para recuperar o caminho legível para a navegação estrutural, ignore tudo at�
   "type": "#page.annotation",
   "description": "ItemReference returns a pointer to another item.",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/itemreference.md:
+      Found potential enums in resource example that weren't defined in a table:(personal,business,documentLibrary) are in resource, but () are in table"
+  ],
   "tocPath": "Resources/ItemReference"
 } -->

@@ -1,18 +1,16 @@
 ---
 title: tipo de recurso scheduleInformation
-description: 'Representa a disponibilidade de um usuário, lista de distribuição ou recurso por um período de tempo especificado. '
+description: Representa a disponibilidade de um usuário, lista de distribuição ou recurso por um período de tempo especificado.
 localization_priority: Normal
 ms.openlocfilehash: 6c809b9cf600d9b620164f253d2a37e57a0f5d4d
-ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30869488"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563053"
 ---
 # <a name="scheduleinformation-resource-type"></a>tipo de recurso scheduleInformation
 
- [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
- 
 Representa a disponibilidade de um usuário, lista de distribuição ou recurso (sala ou equipamento) por um período de tempo especificado.
 
 ## <a name="properties"></a>Propriedades
@@ -56,9 +54,6 @@ Veja a seguir uma representação JSON do recurso.
   "description": "scheduleInformation resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/scheduleinformation.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "tocPath": ""
 }
 -->
