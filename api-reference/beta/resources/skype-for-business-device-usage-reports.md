@@ -5,11 +5,11 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: b55017967bd28337f5015791864e81d274f99681
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577463"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32554867"
 ---
 # <a name="skype-for-business-device-usage-reports"></a>Relatórios de uso de dispositivos Skype for Business
 
@@ -21,7 +21,7 @@ Você pode obter detalhes sobre os tipos de clientes e dispositivos que são usa
 
 ## <a name="reports"></a>Relatórios
 
-| Função                                 | Tipo de retorno de CSV | Tipo de retorno JSON                         | Descrição                              |
+| Função                                 | Tipo de retorno CSV | Tipo de retorno JSON                         | Descrição                              |
 | :--------------------------------------- | :-------------- | :--------------------------------------- | ---------------------------------------- |
 | [Obter dados de usuário](../api/reportroot-getskypeforbusinessdeviceusageuserdetail.md) | Fluxo          | [skypeForBusinessDeviceUsageUserDetail](../resources/skypeforbusinessdeviceusageuserdetail.md) | Obtenha dados sobre o uso do dispositivo Skype for Business por usuário. |
 | [Obter contagens de usuários de distribuição](../api/reportroot-getskypeforbusinessdeviceusagedistributionusercounts.md) | Fluxo          | [skypeForBusinessDeviceUsageDistributionUserCounts](../resources/skypeforbusinessdeviceusagedistributionusercounts.md) | Obtenha o número de usuários que usam dispositivos exclusivos em sua organização. O relatório mostrará o número de usuários por dispositivo, incluindo Windows, Windows Phone, telefone Android, iPhone e iPad. |

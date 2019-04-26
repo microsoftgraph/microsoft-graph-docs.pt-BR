@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: b4f95201a725969fa125cdf949874686b9155fc3
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30252424"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568791"
 ---
 # <a name="omasettingstringxml-resource-type"></a>Tipo de recurso omaSettingStringXml
 
@@ -24,9 +24,9 @@ Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |displayName|String|Nome de exibição. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|descrição|String|Descrição. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|omaUri|String|OMA. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|fileName|Cadeia de caracteres|Nome do arquivo associado à propriedade de valor (*.xml).|
+|description|String|Descrição. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|omaUri|Cadeia de caracteres|OMA. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|fileName|String|Nome do arquivo associado à propriedade de valor (*.xml).|
 |valor|Binário|Valor. (Matriz de bytes codificados de UTF8)|
 
 ## <a name="relationships"></a>Relações

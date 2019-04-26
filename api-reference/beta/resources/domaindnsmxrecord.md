@@ -1,36 +1,34 @@
 ---
-title: Tipo de recurso domainDnsMxRecord
-description: Representa um registro MX adicionado ao arquivo de zona DNS de um domínio específico no locatário. Herdado da entidade DomainDnsRecord.
+title: tipo de recurso domainDnsMxRecord
+description: Representa um registro MX adicionado ao arquivo de zona DNS de um domínio específico no locatário. Herdado de entidade DomainDnsRecord.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 09af66a522d99645540ec24324c82f565eaedb1e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508416"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535120"
 ---
-# <a name="domaindnsmxrecord-resource-type"></a>Tipo de recurso domainDnsMxRecord
+# <a name="domaindnsmxrecord-resource-type"></a>tipo de recurso domainDnsMxRecord
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Representa um registro MX adicionado ao arquivo de zona DNS de um domínio específico no locatário. Herdado da entidade [DomainDnsRecord](domaindnsrecord.md).
+Representa um registro MX adicionado ao arquivo de zona DNS de um domínio específico no locatário. Herdado de entidade [DomainDnsRecord](domaindnsrecord.md) .
 
 ## <a name="methods"></a>Métodos
-Não há suporte a consultas diretas para este recurso. Confira o tópico do [domínio](domain.md) para obter informações sobre como consultar registros de serviços do domínio.
+Não há suporte para consultas diretas a esse recurso. Confira o tópico de [domínio](domain.md) para obter informações sobre como consultar os registros de serviço de domínio.
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|id|String| Identificador exclusivo atribuído a esta entidade. Não anulável, Somente Leitura.|
+|id|String| Identificador exclusivo atribuído a esta entidade. Não anulável, somente leitura.|
 |isOptional|Booliano| Se for falso, o registro MX deve ser configurado pelo cliente no host DNS do Microsoft Online Services para funcionar corretamente com o domínio. |
-|rótulo|String| O valor usado ao configurar a propriedade *alias/host/name* do registro MX no host DNS. |
-|mailExchange|String| O valor usado ao configurar a propriedade *answer/destination/value* do registro MX no host DNS.|
-|preference|Int32| O valor usado ao configurar a propriedade *Preference/Priority* do registro MX no host DNS. |
-|recordType|String| Tipo do registro DNS. Este valor sempre será *Mx*. Chave |
-|supportedService|String| O Microsoft Online Services ou o recurso que tiver uma dependência neste registro MX.</br></br>Pode ser um dos seguintes valores: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune* |
-|ttl|Int32| O valor a ser usado ao configurar a propriedade *time-to-live (ttl)* do registro MX no host DNS. Não anulável |
+|rótulo|String| O valor usado ao configurar a propriedade *alias/Host/Name* do registro MX no host DNS. |
+|mailExchange|String| O valor usado ao configurar a *resposta/destino/valor* do registro MX no host DNS.|
+|preferência|Int32| O valor usado ao configurar a propriedade *preference/Priority* do registro MX no host DNS. |
+|recordType|String| Tipo de registro DNS. O valor é sempre *MX*. Chave |
+|supportedService|String| O Microsoft Online Services ou o recurso que tem uma dependência neste registro MX.</br></br>Pode ser um dos seguintes valores: **NULL**, *email*, *SharePoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic *, *OrgIdAuthentication*, *Yammer*, *Intune* |
+|TTL|Int32| O valor a ser usado ao configurar a propriedade *TTL (time-to-Live)* do registro MX no host DNS. Não anulável |
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -40,6 +38,7 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.domainDnsRecord",
   "optionalProperties": [
 
   ],
@@ -48,7 +47,6 @@ Veja a seguir uma representação JSON do recurso.
 
 ```json
 {
-  "canonicalName": "String",
   "id": "String (identifier)",
   "isOptional": true,
   "label": "String",
@@ -63,15 +61,10 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "domainDnsMxRecord resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/domaindnsmxrecord.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

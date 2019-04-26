@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 0b32d5f6942dc5c0284e0ecaa11a27f4df0e99b3
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30259910"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569050"
 ---
 # <a name="omasettingstring-resource-type"></a>Tipo de recurso omaSettingString
 
@@ -24,9 +24,9 @@ Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |displayName|String|Nome de exibição. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|descrição|String|Descrição. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|omaUri|String|OMA. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|valor|Cadeia de caracteres|Valor.|
+|description|String|Descrição. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|omaUri|Cadeia de caracteres|OMA. Herda de [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|value|Cadeia de caracteres|Valor.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

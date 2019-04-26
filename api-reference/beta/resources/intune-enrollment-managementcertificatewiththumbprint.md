@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 58b45f092848be7198141a34a443471426be273b
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31773704"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547162"
 ---
 # <a name="managementcertificatewiththumbprint-resource-type"></a>tipo de recurso managementCertificateWithThumbprint
 
@@ -22,11 +22,11 @@ Ainda não documentado
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|identificação|Cadeia de caracteres|A impressão digital do certificado de gerenciamento|
+|identificação|String|A impressão digital do certificado de gerenciamento|
 |certificado|Cadeia de caracteres|O certificado de gerenciamento codificado base 64|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

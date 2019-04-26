@@ -5,11 +5,11 @@ localization_priority: Priority
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: fdc9976847085eeea99ff504862a97450aea9a1b
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577344"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32572784"
 ---
 # <a name="reportroot-getteamsuseractivityuserdetail"></a>reportRoot: getTeamsUserActivityUserDetail
 
@@ -36,7 +36,7 @@ GET /reports/getTeamsUserActivityUserDetail(date={date_value})
 
 ## <a name="function-parameters"></a>Parâmetros de função
 
-Na solicitação da URL, forneça um dos seguintes parâmetros com um valor válido.
+Na URL da solicitação, forneça um valor válido a um dos seguintes parâmetros.
 
 | Parâmetro | Tipo   | Descrição                              |
 | :-------- | :----- | :--------------------------------------- |

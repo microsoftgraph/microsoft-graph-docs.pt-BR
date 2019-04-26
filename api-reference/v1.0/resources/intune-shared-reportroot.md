@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: 98f29935304c5eac2262049f76a9bcf006aa694b
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30264089"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32571818"
 ---
 # <a name="reportroot-resource-type"></a>Tipo de recurso reportRoot
 
@@ -25,7 +25,7 @@ O recurso que representa uma instância dos Relatórios de históricos.
 |**Configuração do dispositivo**|
 |[função deviceConfigurationDeviceActivity](../api/intune-shared-reportroot-deviceconfigurationdeviceactivity.md)|[relatório](../resources/intune-shared-report.md)|Metadados para o relatório de atividade do dispositivo de configuração do dispositivo|
 |[Função deviceConfigurationUserActivity](../api/intune-shared-reportroot-deviceconfigurationuseractivity.md)|[relatório](../resources/intune-shared-report.md)|Metadados para o Relatório de atividades do usuário de configuração do dispositivo|
-|**Solução de problemas**|
+|**Solução de Problemas**|
 |[função managedDeviceEnrollmentFailureDetails](../api/intune-shared-reportroot-manageddeviceenrollmentfailuredetails.md)|[relatório](../resources/intune-shared-report.md)|Ainda não documentado.|
 |[função managedDeviceEnrollmentTopFailures](../api/intune-shared-reportroot-manageddeviceenrollmenttopfailures.md)|[relatório](../resources/intune-shared-report.md)|Ainda não documentado.|
 
@@ -33,7 +33,7 @@ O recurso que representa uma instância dos Relatórios de históricos.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|O identificador exclusivo dessa entidade.|
+|id|String|O identificador exclusivo dessa entidade.|
 
 ## <a name="relationships"></a>Relações
 Nenhum

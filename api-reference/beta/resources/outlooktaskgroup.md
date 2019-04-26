@@ -1,48 +1,48 @@
 ---
-title: tipo de recurso de outlookTaskGroup
-description: 'Um grupo de pastas (outlookTaskFolder) que contêm tarefas do Outlook (coleção de objetos outlookTask). '
+title: tipo de recurso outlookTaskGroup
+description: 'Um grupo de pastas (outlookTaskFolder) que contém tarefas do Outlook (coleção de objetos outlookTask). '
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 486261d80b8faad7a5969f8f1ce198479e39583c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524615"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568565"
 ---
-# <a name="outlooktaskgroup-resource-type"></a>tipo de recurso de outlookTaskGroup
+# <a name="outlooktaskgroup-resource-type"></a>tipo de recurso outlookTaskGroup
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Um grupo de pastas ([outlookTaskFolder](outlooktaskfolder.md)) que contêm tarefas do Outlook (coleção de objetos [outlookTask](outlooktask.md) ). 
+Um grupo de pastas ([outlookTaskFolder](outlooktaskfolder.md)) que contém tarefas do Outlook (coleção de objetos [outlookTask](outlooktask.md) ). 
 
-No Outlook, há um grupo de tarefas padrão `My Tasks` que não é possível renomear ou excluir. No entanto, você pode criar grupos de tarefas adicionais. 
+No Outlook, há um grupo `My Tasks` de tarefas padrão que você não pode renomear ou excluir. No entanto, você pode criar grupos de tarefas adicionais. 
 
 
 ## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Obter outlookTaskGroup](../api/outlooktaskgroup-get.md) | [outlookTaskGroup](outlooktaskgroup.md) |Obtenha as propriedades e relacionamentos do grupo de tarefas especificado do Outlook.|
-|[Criar outlookTaskFolder](../api/outlooktaskgroup-post-taskfolders.md) |[outlookTaskFolder](outlooktaskfolder.md)| Crie uma pasta de tarefas do Outlook.|
-|[Lista taskFolders](../api/outlooktaskgroup-list-taskfolders.md) |coleção [outlookTaskFolder](outlooktaskfolder.md)| Obtenha uma coleção de pastas de tarefas do Outlook.|
-|[Update](../api/outlooktaskgroup-update.md) | [outlookTaskGroup](outlooktaskgroup.md)  |Atualize as propriedades graváveis de um grupo de tarefa do Outlook. |
-|[Delete](../api/outlooktaskgroup-delete.md) | Nenhum |Exclua o grupo de tarefas do Outlook especificado. |
+|[Obter outlookTaskGroup](../api/outlooktaskgroup-get.md) | [outlookTaskGroup](outlooktaskgroup.md) |Obtenha as propriedades e os relacionamentos do grupo de tarefas especificado do Outlook.|
+|[Criar outlookTaskFolder](../api/outlooktaskgroup-post-taskfolders.md) |[outlookTaskFolder](outlooktaskfolder.md)| Criar uma pasta de tarefas do Outlook.|
+|[Listar taskFolders](../api/outlooktaskgroup-list-taskfolders.md) |coleção [outlookTaskFolder](outlooktaskfolder.md)| Obter uma coleção de pastas de tarefas do Outlook.|
+|[Update](../api/outlooktaskgroup-update.md) | [outlookTaskGroup](outlooktaskgroup.md)  |Atualizar as propriedades graváveis de um grupo de tarefas do Outlook. |
+|[Excluir](../api/outlooktaskgroup-delete.md) | Nenhum |Excluir o grupo de tarefas do Outlook especificado. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |changeKey|String|A versão do grupo de tarefas.|
-|groupKey|Edm.Guid|O identificador GUID exclusivo para o grupo de tarefa.|
-|id|String|O identificador de cadeia de caracteres exclusiva do grupo de tarefas. Somente leitura.|
-|isDefaultGroup|Booliano|True se o grupo de tarefa é o grupo de tarefas padrão.|
-|name|Cadeia de caracteres|O nome do grupo de tarefas.|
+|groupKey|Edm.Guid|O identificador exclusivo do GUID do grupo de tarefas.|
+|id|Cadeia de caracteres|O identificador exclusivo da cadeia de caracteres do grupo de tarefas. Somente leitura.|
+|isDefault|Booliano|True se o grupo de tarefas é o grupo de tarefas padrão.|
+|name|String|O nome do grupo de tarefas.|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|taskFolders|coleção [outlookTaskFolder](outlooktaskfolder.md)| A coleção de pastas de tarefa no grupo de tarefas. Somente leitura. Anulável.|
+|taskFolders|coleção [outlookTaskFolder](outlooktaskfolder.md)| O conjunto de pastas de tarefas no grupo de tarefas. Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

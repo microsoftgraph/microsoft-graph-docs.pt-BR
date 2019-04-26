@@ -5,11 +5,11 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: 5754149f573798bfbb10a6ac6c2b9ca60fce597a
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575213"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549605"
 ---
 # <a name="sharepoint-activity-reports"></a>Relatório de atividades do SharePoint
 

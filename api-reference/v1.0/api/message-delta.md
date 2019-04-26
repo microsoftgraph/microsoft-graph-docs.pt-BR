@@ -5,11 +5,11 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 180d2378c52e5f01fa9b99d05fa783a8be2f9417
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27936778"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32565076"
 ---
 # <a name="message-delta"></a>message: delta
 
@@ -39,7 +39,7 @@ O controle de alterações em mensagens corresponde a uma série de uma ou mais 
 
 | Parâmetro de consulta      | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-| $deltatoken | string | Um [token de estado](/graph/delta-query-overview) retornado na URL `deltaLink` da chamada de função **delta** anterior da mesma coleção de mensagens indicando a conclusão da série de controle de alterações. Salve e aplique toda a URL `deltaLink`, incluindo esse token na primeira solicitação da próxima série de controle de alterações da coleção.|
+| $deltatoken | cadeia de caracteres | Um [token de estado](/graph/delta-query-overview) retornado na URL `deltaLink` da chamada de função **delta** anterior da mesma coleção de mensagens indicando a conclusão da série de controle de alterações. Salve e aplique toda a URL `deltaLink`, incluindo esse token na primeira solicitação da próxima série de controle de alterações da coleção.|
 | $skiptoken | string | Um [token de estado](/graph/delta-query-overview) retornado na URL `nextLink` da chamada de função **delta** anterior indicando que não há mais alterações a serem controladas na mesma coleção de mensagens. |
 
 ### <a name="odata-query-parameters"></a>Parâmetros de consulta OData
@@ -56,7 +56,7 @@ O controle de alterações em mensagens corresponde a uma série de uma ou mais 
 |:---------------|:----------|:----------|
 | Autorização  | string  | {token} de portador. Obrigatório. |
 | Content-Type  | string  | application/json. Obrigatório. |
-| Preferir | string  | odata.maxpagesize={x}. Opcional. |
+| Preferir | cadeia de caracteres  | odata.maxpagesize={x}. Opcional. |
 
 ## <a name="response"></a>Resposta
 

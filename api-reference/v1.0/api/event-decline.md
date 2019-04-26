@@ -1,21 +1,21 @@
 ---
 title: 'event: decline'
-description: Recusar o convite para o evento específico em um calendário do usuário.
+description: Recusar o convite para o evento específico em um calendário de usuário.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 920a97db9a6716d2111a8179c86d5556042a6edd
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27962006"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550088"
 ---
 # <a name="event-decline"></a>event: decline
 
-Recusar o convite para o [evento](../resources/event.md) específico em um [calendário](../resources/calendar.md)do usuário.
+Recusar o convite para o [evento](../resources/event.md) especificado em um [calendário](../resources/calendar.md)do usuário.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -61,7 +61,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|comment|Cadeia de caracteres|Texto incluído na resposta. Opcional.|
+|comment|String|Texto incluído na resposta. Opcional.|
 |sendResponse|Booliano|`true` se uma resposta deve ser enviada ao organizador; caso contrário, `false`. Opcional. O padrão é `true`.|
 
 ## <a name="response"></a>Resposta

@@ -1,25 +1,25 @@
 ---
 title: Excluir página
-description: Exclua uma página do OneNote.
+description: Excluir uma página do OneNote.
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 ms.openlocfilehash: 691ec8d4d2f6c95c217a9ddb99fbd4e8608483f9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27962195"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556459"
 ---
 # <a name="delete-page"></a>Excluir página
 
-Exclua uma página do OneNote.
+Excluir uma página do OneNote.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Notes.ReadWrite, Notes.ReadWrite.All    |
+|Delegado (conta corporativa ou de estudante) | Notes. ReadWrite, Notes. ReadWrite. All    |
 |Delegado (conta pessoal da Microsoft) | Notes.ReadWrite    |
 |Aplicativo | Notes.ReadWrite.All |
 

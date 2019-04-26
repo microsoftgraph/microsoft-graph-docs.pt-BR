@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: d3a7cf0d140ad15c48e0f5b7908c5e2e4b318770
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31788923"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32554440"
 ---
 # <a name="webapp-resource-type"></a>Tipo de recurso webApp
 
@@ -26,7 +26,7 @@ Herda de [mobileApp](../resources/intune-apps-mobileapp.md)
 |Método|Tipo de retorno|Descrição|
 |:---|:---|:---|
 |[Listar webApps](../api/intune-apps-webapp-list.md)|Coleção [webApp](../resources/intune-apps-webapp.md)|Lista propriedades e relações dos objetos [webApp](../resources/intune-apps-webapp.md).|
-|[Acessar webApp](../api/intune-apps-webapp-get.md)|[webApp](../resources/intune-apps-webapp.md)|Leia as propriedades e as relações do objeto [webApp](../resources/intune-apps-webapp.md).|
+|[Obter webApp](../api/intune-apps-webapp-get.md)|[webApp](../resources/intune-apps-webapp.md)|Propriedades de leitura e relações do objeto [webApp](../resources/intune-apps-webapp.md).|
 |[Criar webApp](../api/intune-apps-webapp-create.md)|[webApp](../resources/intune-apps-webapp.md)|Cria um novo objeto [webApp](../resources/intune-apps-webapp.md).|
 |[Excluir webApp](../api/intune-apps-webapp-delete.md)|Nenhum|Exclui um [webApp](../resources/intune-apps-webapp.md).|
 |[Atualizar webApp](../api/intune-apps-webapp-update.md)|[webApp](../resources/intune-apps-webapp.md)|Atualiza as propriedades de um objeto [webApp](../resources/intune-apps-webapp.md).|
@@ -34,23 +34,23 @@ Herda de [mobileApp](../resources/intune-apps-mobileapp.md)
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Chave da entidade. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
-|displayName|Cadeia de caracteres|O título do aplicativo importado ou definido pelo administrador. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|id|Cadeia de caracteres|Chave da entidade. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|displayName|String|O título do aplicativo importado ou definido pelo administrador. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |description|String|A descrição do aplicativo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
-|publicador|Cadeia de caracteres|O publicador do aplicativo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|publicador|String|O publicador do aplicativo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|O ícone grande, a ser exibido nos detalhes do aplicativo e usado para o carregamento do ícone. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |createdDateTime|DateTimeOffset|A data e a hora da criação do aplicativo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |lastModifiedDateTime|DateTimeOffset|A data e a hora que o aplicativo foi modificado pela última vez. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |isFeatured|Booliano|O valor que indica se o aplicativo está marcado como em destaque pelo administrador. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
-|privacyInformationUrl|Cadeia de caracteres|A URL da declaração de privacidade. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
-|informationUrl|Cadeia de caracteres|A URL de informações adicionais. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
-|owner|Cadeia de caracteres|O proprietário do conteúdo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
-|developer|Cadeia de caracteres|O desenvolvedor do aplicativo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
-|notes|Cadeia de caracteres|Anotações do aplicativo. Herdada de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|privacyInformationUrl|String|A URL da declaração de privacidade. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|informationUrl|String|A URL de informações adicionais. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|owner|String|O proprietário do conteúdo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|developer|String|O desenvolvedor do aplicativo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|notes|String|Anotações do aplicativo. Herdada de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |uploadState|Int32|O estado de upload. Herdada de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|O estado de publicação do aplicativo. O aplicativo não pode ser assinado, a menos que ele seja publicado. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md). Os valores possíveis são: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|O valor que indica se o aplicativo é atribuído a pelo menos um grupo. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
-|roleScopeTagIds|Coleção String|Lista de IDs de marca de escopo para este aplicativo móvel. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
+|roleScopeTagIds|Coleção de cadeias de caracteres|Lista de IDs de marca de escopo para este aplicativo móvel. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |dependentAppCount|Int32|O número total de dependências do aplicativo filho. Herdado de [mobileApp](../resources/intune-apps-mobileapp.md)|
 |appUrl|String|A URL do aplicativo Web.|
 |useManagedBrowser|Boolean|Se o navegador gerenciado deve ou não ser usado. Essa propriedade só é aplicável ao Android e ao IOS.|

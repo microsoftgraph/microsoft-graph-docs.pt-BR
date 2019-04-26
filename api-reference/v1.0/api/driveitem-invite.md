@@ -6,11 +6,11 @@ title: Enviar um convite para acessar um item
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: f7d3a974143b738b966a8953848f4837c16cd6c8
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480737"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548093"
 ---
 # <a name="send-a-sharing-invitation"></a>Enviar um convite de compartilhamento
 
@@ -62,7 +62,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 |:-----------------|:-------------------------------|:-------------------------
 | destinatários       | Collection([DriveRecipient][]) | Uma coleção dos destinatários que receberão o acesso e o convite de compartilhamento.
 | mensagem          | String                         | Uma mensagem de texto sem formatação que está incluída no convite de compartilhamento. Comprimento máximo de 2000 caracteres.
-| requireSignIn    | Boolean                        | Especifica se o destinatário do convite deve entrar para exibir o item compartilhado.
+| requireSignIn    | Booliano                        | Especifica se o destinatário do convite deve entrar para exibir o item compartilhado.
 | sendInvitation   | Booliano                        | Se true, um [link de compartilhamento][] é enviado para o destinatário. Caso contrário, uma permissão é concedida diretamente sem enviar uma notificação.
 | funções            | Collection(String)             | Especifique as funções que devem ser concedidas aos destinatários do convite de compartilhamento.
 

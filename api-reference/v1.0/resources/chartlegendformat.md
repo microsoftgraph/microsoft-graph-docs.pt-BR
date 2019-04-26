@@ -1,32 +1,32 @@
 ---
 title: Tipo de recurso ChartLegendFormat
-description: Abrange as propriedades de formato de uma legenda de gráfico.
+description: Encapsula as propriedades de formato de uma legenda de gráfico.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: f35f7a3cf152024bd89f03daf8be98ec1d8066b0
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27972065"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569092"
 ---
 # <a name="chartlegendformat-resource-type"></a>Tipo de recurso ChartLegendFormat
 
-Abrange as propriedades de formato de uma legenda de gráfico.
+Encapsula as propriedades de formato de uma legenda de gráfico.
 
 
 ## <a name="methods"></a>Métodos
 Nenhum
 
 ## <a name="properties"></a>Propriedades
-Nenhum
+Nenhuma
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |fill|[WorkbookChartFill](chartfill.md)|Representa o formato de preenchimento de um objeto, que inclui informações sobre a formatação da tela de fundo. Somente leitura.|
-|font|[WorkbookChartFont](chartfont.md)|Representa os atributos de fonte, como nome, tamanho, cor, etc. de uma legenda de gráfico. Somente leitura.|
+|fonte|[WorkbookChartFont](chartfont.md)|Representa os atributos de fonte, como nome da fonte, tamanho da fonte, cor, etc. de uma legenda do gráfico. Somente leitura.|
 
 
 ## <a name="json-representation"></a>Representação JSON

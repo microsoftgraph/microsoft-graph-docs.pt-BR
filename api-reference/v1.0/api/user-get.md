@@ -1,15 +1,15 @@
 ---
 title: Obter um usuário
-description: Recupere as propriedades e os relacionamentos do objeto user.
+description: Recuperar as propriedades e os relacionamentos do objeto user.
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: bc408abf60ad42f564c4c36a37151db122ad573d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27984147"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32567876"
 ---
 # <a name="get-a-user"></a>Obter um usuário
 
@@ -27,12 +27,14 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Aplicativo | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
-Para um usuário específico:<!-- { "blockType": "ignored" } -->
+Para um usuário específico:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id | userPrincipalName}
 ```
 
-Para o usuário entrou no:<!-- { "blockType": "ignored" } -->
+Para o usuário conectado:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me
 ```

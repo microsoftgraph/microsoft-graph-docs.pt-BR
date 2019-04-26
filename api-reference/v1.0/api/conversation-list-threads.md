@@ -1,15 +1,15 @@
 ---
 title: Listar threads
-description: Obtém todos os threads em uma conversa de grupo.
+description: Obtenha todos os threads em uma conversa de grupo.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: e08c83f140b86d831d71470dd3d47c14681e3b32
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30164334"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566392"
 ---
 # <a name="list-threads"></a>Listar threads
 
@@ -22,7 +22,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All, Group.Read.All    |
+|Delegado (conta corporativa ou de estudante) | Group. ReadWrite. All, Group. Read. All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Sem suporte. |
 
@@ -43,7 +43,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [conversationThread](../resources/conversationthread.md) no corpo da resposta.
+Se bem sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [conversationThread](../resources/conversationthread.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 31a634c8c442cdbf53034b7d39062c1a3d0f5a01
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31789861"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566399"
 ---
 # <a name="userpfxcertificate-resource-type"></a>tipo de recurso userPFXCertificate
 
@@ -31,22 +31,22 @@ Entidade que encapsula todas as informações necessárias para os certificados 
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|Identificador exclusivo do certificado PFX.|
-|identificação|Cadeia de caracteres|Impressão digital SHA-1 do certificado PFX.|
+|id|Cadeia de caracteres|Identificador exclusivo do certificado PFX.|
+|identificação|String|Impressão digital SHA-1 do certificado PFX.|
 |Da intendedpurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|Finalidade do certificado do ponto de vista da implantação. Os valores possíveis são: `unassigned`, `smimeEncryption`, `smimeSigning`, `vpn`, `wifi`.|
 |userPrincipalName|String|Nome principal de usuário do certificado PFX.|
 |startDateTime|DateTimeOffset|Data/hora de início da validade do certificado.|
 |expirationDateTime|DateTimeOffset|Data/hora de validade do certificado.|
-|providerName|Cadeia de caracteres|Provedor de criptografia usado para criptografar este BLOB.|
-|keyName|Cadeia de caracteres|Nome da chave (dentro do provedor) usada para criptografar o blob.|
-|paddingScheme|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|Esquema de preenchimento usado pelo provedor durante a criptografia/descriptografia. Os valores possíveis são: `none`, `pkcs1`, `oaepSha1`, `oaepSha256`, `oaepSha384`, `oaepSha512`.|
-|encryptedPfxBlob|Binary|Blob PFX criptografado.|
-|encryptedPfxPassword|Cadeia de caracteres|Senha PFX criptografada.|
+|providerName|String|Provedor de criptografia usado para criptografar este BLOB.|
+|keyName|String|Nome da chave (dentro do provedor) usada para criptografar o blob.|
+|paddingScheme|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|Esquema de preenchimento usado pelo provedor durante a criptografia/descriptografia. Os possíveis valores são: `none`, `pkcs1`, `oaepSha1`, `oaepSha256`, `oaepSha384`, `oaepSha512`.|
+|encryptedPfxBlob|Binário|Blob PFX criptografado.|
+|encryptedPfxPassword|String|Senha PFX criptografada.|
 |createdDateTime|DateTimeOffset|Data/hora em que este certificado PFX foi importado.|
 |lastModifiedDateTime|DateTimeOffset|Data/hora em que este certificado PFX foi modificado pela última vez.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

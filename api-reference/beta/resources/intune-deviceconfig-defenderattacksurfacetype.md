@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 29610eca9dbb157a5ce4d51bcb67fa479814d17d
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31807949"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549290"
 ---
 # <a name="defenderattacksurfacetype-enum-type"></a>tipo de enumeração defenderAttackSurfaceType
 
@@ -23,8 +23,8 @@ Valores possíveis de regras de redução da superfície de ataque do defender
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |userDefined|,0|Valor padrão do dispositivo, sem intenção.|
-|Larga|1|Funcionalidade de bloqueio.|
-|auditmode|duas|Não altera a funcionalidade, mas gera logs.|
+|Larga|1 |Funcionalidade de bloqueio.|
+|auditmode|2 |Não altera a funcionalidade, mas gera logs.|
 
 
 

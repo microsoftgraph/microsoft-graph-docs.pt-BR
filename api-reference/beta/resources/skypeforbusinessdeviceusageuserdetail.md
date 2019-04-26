@@ -1,15 +1,15 @@
 ---
-title: tipo de recurso de skypeForBusinessDeviceUsageUserDetail
+title: tipo de recurso skypeForBusinessDeviceUsageUserDetail
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 ms.openlocfilehash: 95f2f6cf1f3f6c54c4b6b4b39a7118cd8a94b224
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858377"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32555931"
 ---
-# <a name="skypeforbusinessdeviceusageuserdetail-resource-type"></a>tipo de recurso de skypeForBusinessDeviceUsageUserDetail
+# <a name="skypeforbusinessdeviceusageuserdetail-resource-type"></a>tipo de recurso skypeForBusinessDeviceUsageUserDetail
 
 ## <a name="properties"></a>Propriedades
 
@@ -18,11 +18,11 @@ ms.locfileid: "27858377"
 | reportRefreshDate | Data    |
 | userPrincipalName | String  |
 | lastActivityDate  | Data    |
-| usedWindows       | Boolean |
-| usedWindowsPhone  | Boolean |
-| usedAndroidPhone  | Boolean |
-| usediPhone        | Boolean |
-| usediPad          | Boolean |
+| usedWindows       | Booliano |
+| usedWindowsPhone  | Booliano |
+| usedAndroidPhone  | Booliano |
+| usediPhone        | Booliano |
+| usediPad          | Booliano |
 | reportPeriod      | String  |
 
 ## <a name="json-representation"></a>Representação JSON

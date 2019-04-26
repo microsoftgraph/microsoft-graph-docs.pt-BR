@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: a5ec64384bd5620b74f9cdca2148e6b3064e9c98
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31771520"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32571132"
 ---
 # <a name="embeddedsimactivationcodepoolassignment-resource-type"></a>tipo de recurso embeddedSIMActivationCodePoolAssignment
 
@@ -35,7 +35,7 @@ A entidade de atribuição do pool de código de ativação do SIM incorporado a
 |destino|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|O tipo de grupos direcionados pelo pool de códigos de ativação do SIM incorporado.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

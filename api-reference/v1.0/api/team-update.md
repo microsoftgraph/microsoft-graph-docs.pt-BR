@@ -1,21 +1,21 @@
 ---
-title: Equipe de atualização
-description: Atualize as propriedades da equipe especificado.
+title: Atualizar equipe
+description: Atualize as propriedades da equipe especificada.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: a6dd8e38261cb2e64c3717ea3bee26ca96bd8958
-ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28016615"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548989"
 ---
-# <a name="update-team"></a>Equipe de atualização
+# <a name="update-team"></a>Atualizar equipe
 
 
 
-Atualize as propriedades da [equipe](../resources/team.md)especificado.
+Atualize as propriedades da [equipe](../resources/team.md)especificada.
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Group.Read.All, Group.ReadWrite.All    |
 
-> **Observação**: Esta API oferece suporte a permissões de administrador. Administradores globais e administradores de serviço de Teams da Microsoft podem acessar as equipes que eles não serão um membro do.
+> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais e os administradores do serviço do Microsoft Teams podem acessar equipes das quais eles não são membros.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -42,7 +42,7 @@ PATCH /teams/{id}
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornece uma representação JSON do objeto de [equipe](../resources/team.md) .
+No corpo da solicitação, forneça uma representação JSON do objeto [Team](../resources/team.md) .
 
 ## <a name="response"></a>Resposta
 

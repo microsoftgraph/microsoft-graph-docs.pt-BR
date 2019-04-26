@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 4905a8f20b29f8b9eb9a1acaba8204e406c98290
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31782895"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556855"
 ---
 # <a name="ratingunitedkingdommoviestype-enum-type"></a>tipo de enumeração ratingUnitedKingdomMoviesType
 
@@ -23,14 +23,14 @@ Rótulos de classificação de filmes no Reino Unido
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Permitido|,0|Valor padrão, permitir todo o conteúdo de filmes|
-|Bloqueado|1|Não permitir conteúdo de filmes|
-|geral|duas|A classificação U é adequada para todas as idades|
-|universalChildren|3D|A classificação UC é adequada para crianças de pré-produção, um rótulo de classificação antigo|
-|parentalGuidance|quatro|A classificação PG é adequada para o adulto|
-|agesAbove12Video|0,5|12, versão de vídeo adequada para 12 anos ou mais|
-|agesAbove12Cinema|6|12A, cinema versão adequada para 12 anos ou mais|
-|agesAbove15|178|15, adequado somente por 15 anos e mais|
-|adultos|8|Adequado somente para adultos|
+|Bloqueado|1 |Não permitir conteúdo de filmes|
+|geral|2 |A classificação U é adequada para todas as idades|
+|universalChildren|3 |A classificação UC é adequada para crianças de pré-produção, um rótulo de classificação antigo|
+|parentalGuidance|4 |A classificação PG é adequada para o adulto|
+|agesAbove12Video|5 |12, versão de vídeo adequada para 12 anos ou mais|
+|agesAbove12Cinema|6 |12A, cinema versão adequada para 12 anos ou mais|
+|agesAbove15|7 |15, adequado somente por 15 anos e mais|
+|adultos|8 |Adequado somente para adultos|
 
 
 

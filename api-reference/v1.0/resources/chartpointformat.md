@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 1c1b0a4a7d9076771da11061723f275079d429cb
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27976993"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569064"
 ---
 # <a name="chartpointformat-resource-type"></a>Tipo de recurso ChartPointFormat
 
@@ -20,7 +20,7 @@ Representa um objeto de formatação para os pontos do gráfico.
 Nenhum
 
 ## <a name="properties"></a>Propriedades
-Nenhum
+Nenhuma
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|

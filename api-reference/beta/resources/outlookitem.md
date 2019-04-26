@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 8a44f9a2e568991c6803ebf72baf5f712f39ba64
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643794"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568579"
 ---
 # <a name="outlookitem-resource-type"></a>Tipo de recurso outlookItem
 
@@ -41,7 +41,7 @@ Veja a seguir uma representação JSON do recurso
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |categories|Coleção de cadeias de caracteres||
-|changeKey|Cadeia de caracteres||
+|changeKey|String||
 |createdDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |id|String| Somente leitura.|
 |lastModifiedDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|

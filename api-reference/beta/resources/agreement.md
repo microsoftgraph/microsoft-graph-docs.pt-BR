@@ -1,27 +1,27 @@
 ---
 title: tipo de recurso de contrato
-description: Representa os termos personalizável de um locatário contrato de uso que é criado e gerenciado com o Azure Active Directory (AD Azure). Você pode usar os métodos a seguir para criar e gerenciar o recurso do Windows Azure Active Directory termos de uso de acordo com o seu cenário.
+description: Representa o contrato de termos de uso personalizável de um locatário que é criado e gerenciado com o Azure Active Directory (Azure AD). Você pode usar os métodos a seguir para criar e gerenciar o recurso termos de uso do Azure Active Directory de acordo com seu cenário.
 localization_priority: Normal
 ms.openlocfilehash: b253877f1bf82e4fbc61cebaef3c1bce208d9cca
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513848"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535743"
 ---
 # <a name="agreement-resource-type"></a>tipo de recurso de contrato
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa os termos personalizável de um locatário contrato de uso que é criado e gerenciado com o Azure Active Directory (AD Azure). Você pode usar os métodos a seguir para criar e gerenciar o [Azure Active Directory termos de uso de recurso](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-tou) de acordo com seu cenário.
+Representa o contrato de termos de uso personalizável de um locatário que é criado e gerenciado com o Azure Active Directory (Azure AD). Você pode usar os métodos a seguir para criar e gerenciar o [recurso termos de uso do Azure Active Directory de](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-tou) acordo com seu cenário.
 
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-| [Criar contratos](../api/agreement-post-agreements.md) | [contrato](agreement.md) | Crie um novo contrato pelo lançamento à coleção contrato. |
-| [Contratos de lista](../api/agreement-list.md) | coleção de [contrato](agreement.md) | Obtenha uma coleção de objetos do contrato. |
-| [Obter contrato](../api/agreement-get.md) | [contrato](agreement.md) | Leia as propriedades e os relacionamentos de um objeto de contrato. |
+| [Criar contratos](../api/agreement-post-agreements.md) | [contrato](agreement.md) | Crie um novo contrato postando na coleção de contratos. |
+| [Listar contratos](../api/agreement-list.md) | coleção de [contratos](agreement.md) | Obtenha uma coleção de objetos de contrato. |
+| [Obter contrato](../api/agreement-get.md) | [contrato](agreement.md) | Leia as propriedades e as relações de um objeto de contrato. |
 | [Atualizar contrato](../api/agreement-update.md) | [contrato](agreement.md) | Atualize um objeto de contrato. |
 | [Excluir contrato](../api/agreement-delete.md) | Nenhum | Exclua um objeto de contrato. |
 <!--
@@ -36,10 +36,10 @@ Representa os termos personalizável de um locatário contrato de uso que é cri
 |id|String| Somente leitura.|
 |isViewingBeforeAcceptanceRequired|Booliano|Indica se o usuário tem que expandir e exibir o contrato antes de aceitar.|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|arquivos|coleção [agreementFile](agreementfile.md)|Somente leitura. PDFs vinculada a este contrato.|
+|arquivos|[](agreementfile.md) coleção agreementfile|Somente leitura. PDFs vinculados a este contrato.|
 
 ## <a name="json-representation"></a>Representação JSON
 

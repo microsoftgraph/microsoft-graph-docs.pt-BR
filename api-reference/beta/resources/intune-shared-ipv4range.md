@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: c896eb6f9a35992d7370cf29124d8072c171eb30
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31776924"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550592"
 ---
 # <a name="ipv4range-resource-type"></a>Tipo de recurso iPv4Range
 
@@ -25,11 +25,11 @@ Herda de [ipRange](../resources/intune-shared-iprange.md)
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|lowerAddress|Cadeia de caracteres|Endereço inferior.|
+|lowerAddress|String|Endereço inferior.|
 |upperAddress|Cadeia de caracteres|Endereço superior.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: f36ba0eed3485cf65f9111cb118a766fb17456bf
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31801145"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556015"
 ---
 # <a name="internetexplorermessagesetting-enum-type"></a>tipo de enumeração internetExplorerMessageSetting
 
@@ -23,9 +23,9 @@ Qual mensagem será exibida por borda antes de mudar para o Internet Explorer.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Não configurado.|
-|deficiência|1|Deficiência.|
-|enabled|duas|Permiti.|
-|keepGoing|3D|KeepGoing.|
+|deficiência|1 |Deficiência.|
+|enabled|2 |Permiti.|
+|keepGoing|3 |KeepGoing.|
 
 
 

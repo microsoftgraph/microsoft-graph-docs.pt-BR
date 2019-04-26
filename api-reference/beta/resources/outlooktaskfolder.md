@@ -1,55 +1,55 @@
 ---
-title: tipo de recurso de outlookTaskFolder
+title: tipo de recurso outlookTaskFolder
 description: 'Uma pasta que contém tarefas do Outlook (coleção de objetos outlookTask). '
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: eb61936b9ede67d35127db07c92ba8b7517fe623
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643920"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568564"
 ---
-# <a name="outlooktaskfolder-resource-type"></a>tipo de recurso de outlookTaskFolder
+# <a name="outlooktaskfolder-resource-type"></a>tipo de recurso outlookTaskFolder
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Uma pasta que contém tarefas do Outlook (coleção de objetos [outlookTask](outlooktask.md) ). 
 
-No Outlook, o grupo de tarefas padrão, `My Tasks`, contém uma pasta de tarefas padrão, `Tasks`, para caixa de correio do usuário. Não é possível renomear ou excluir esses grupo de tarefa padrão e uma pasta, mas você pode criar grupos de tarefas adicionais e pastas de tarefa.
+No Outlook, o grupo de tarefas padrão `My Tasks`, contém uma pasta de tarefas padrão `Tasks`,, para a caixa de correio do usuário. Não é possível renomear ou excluir essas pastas e o grupo de tarefas padrão, mas você pode criar grupos de tarefas e pastas de tarefas adicionais.
 
 
 ## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Obter outlookTaskFolder](../api/outlooktaskfolder-get.md) | [outlookTaskFolder](outlooktaskfolder.md) |Obtenha as propriedades e relacionamentos da pasta de tarefas do Outlook especificado.|
-|[Criar outlookTask](../api/outlooktaskfolder-post-tasks.md) |[outlookTask](outlooktask.md)| Crie uma tarefa do Outlook na pasta tarefa especificada.|
-|[Listar tarefas](../api/outlooktaskfolder-list-tasks.md) |coleção [outlookTask](outlooktask.md)| Obtenha todas as tarefas do Outlook na pasta especificada.|
-|[Update](../api/outlooktaskfolder-update.md) | [outlookTaskFolder](outlooktaskfolder.md)   |Atualize as propriedades graváveis de uma pasta de tarefas do Outlook. |
-|[Delete](../api/outlooktaskfolder-delete.md) | Nenhum |Exclua a pasta de tarefas do Outlook especificada.|
+|[Obter outlookTaskFolder](../api/outlooktaskfolder-get.md) | [outlookTaskFolder](outlooktaskfolder.md) |Obtenha as propriedades e os relacionamentos da pasta de tarefas especificada do Outlook.|
+|[Criar outlookTask](../api/outlooktaskfolder-post-tasks.md) |[outlookTask](outlooktask.md)| Criar uma tarefa do Outlook na pasta de tarefas especificada.|
+|[Listar tarefas](../api/outlooktaskfolder-list-tasks.md) |coleção [outlookTask](outlooktask.md)| Obter todas as tarefas do Outlook na pasta especificada.|
+|[Update](../api/outlooktaskfolder-update.md) | [outlookTaskFolder](outlooktaskfolder.md)   |Atualizar as propriedades graváveis de uma pasta de tarefas do Outlook. |
+|[Excluir](../api/outlooktaskfolder-delete.md) | Nenhum |Excluir a pasta de tarefas do Outlook especificada.|
 |**Propriedades estendidas**| | |
-|[Criar uma propriedade estendida de valor único](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[outlookTaskFolder](outlooktaskfolder.md)  |Crie um ou mais propriedades estendidas de valor único em uma pasta de tarefas do Outlook nova ou existente.   |
-|[Obter a pasta de tarefas com a propriedade estendida de valor único](../api/singlevaluelegacyextendedproperty-get.md)  | [outlookTaskFolder](outlooktaskfolder.md) | Obtenha as pastas de tarefas do Outlook que contêm um valor único propriedade estendida usando `$expand` ou `$filter`. |
-|[Criar propriedade estendida de vários valores](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [outlookTaskFolder](outlooktaskfolder.md) | Crie um ou mais propriedades estendidas de valores múltiplos em uma pasta de tarefas do Outlook nova ou existente.  |
-|[Obter a pasta de tarefas com vários valores de propriedade estendida](../api/multivaluelegacyextendedproperty-get.md)  | [outlookTaskFolder](outlooktaskfolder.md) | Obtenha uma pasta de tarefas do Outlook que contenha uma propriedade de valor múltiplos estendida usando `$expand`. |
+|[Criar uma propriedade estendida de valor único](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[outlookTaskFolder](outlooktaskfolder.md)  |Crie uma ou mais propriedades estendidas de valor único em uma pasta de tarefas Nova ou existente do Outlook.   |
+|[Obter pasta de tarefas com propriedade estendida de valor único](../api/singlevaluelegacyextendedproperty-get.md)  | [outlookTaskFolder](outlooktaskfolder.md) | Obter pastas de tarefas do Outlook que contenham uma propriedade estendida `$expand` de `$filter`valor único usando ou. |
+|[Criar propriedade estendida de vários valores](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [outlookTaskFolder](outlooktaskfolder.md) | Criar uma ou mais propriedades estendidas de vários valores em uma pasta de tarefas Nova ou existente do Outlook.  |
+|[Obter pasta de tarefas com propriedade estendida de vários valores](../api/multivaluelegacyextendedproperty-get.md)  | [outlookTaskFolder](outlooktaskfolder.md) | Obtenha uma pasta de tarefas do Outlook que contenha uma propriedade estendida de `$expand`vários valores usando. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |changeKey|String|A versão da pasta de tarefas.|
-|id|String|O identificador da pasta de tarefas, exclusivo na caixa de correio do usuário. Somente leitura.|
-|isDefaultFolder|Booliano|True se a pasta está na pasta de tarefas padrão.|
+|id|Cadeia de caracteres|O identificador da pasta de tarefas, exclusivo na caixa de correio do usuário. Somente leitura.|
+|isDefaultFolder|Booliano|True se a pasta é a pasta de tarefas padrão.|
 |name|String|O nome da pasta de tarefas.|
-|parentGroupKey|Guid|O identificador GUID exclusivo para o grupo do pai da pasta tarefa.|
+|parentGroupKey|Guid|O identificador exclusivo do GUID para o grupo pai da pasta de tarefas.|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|multiValueExtendedProperties|Coleção [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)|A coleção de propriedades estendidas de múltiplos valores definidos para a pasta de tarefas. Somente leitura. Anulável.|
-|singleValueExtendedProperties|Coleção [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)|A coleção de propriedades estendidas de valor único definidos para a pasta de tarefas. Somente leitura. Anulável.|
-|tarefas|coleção [outlookTask](outlooktask.md)|As tarefas nesta pasta tarefa. Somente leitura. Anulável.|
+|multiValueExtendedProperties|Coleção [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)|A coleção de propriedades estendidas de vários valores definida para a pasta de tarefas. Somente leitura. Anulável.|
+|singleValueExtendedProperties|Coleção [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)|A coleção de propriedades estendidas de valor único definidas para a pasta de tarefas. Somente leitura. Anulável.|
+|tarefas|coleção [outlookTask](outlooktask.md)|As tarefas nesta pasta de tarefas. Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

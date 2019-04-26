@@ -1,19 +1,19 @@
 ---
 title: Tipo de recurso ChartPoint
-description: Representa um ponto de uma série do gráfico.
+description: Representa o ponto de uma série do gráfico.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 3318415094a36100851b1c604cba2507de31f558
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27962503"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569085"
 ---
 # <a name="chartpoint-resource-type"></a>Tipo de recurso ChartPoint
 
-Representa um ponto de uma série do gráfico.
+Representa o ponto de uma série do gráfico.
 
 
 ## <a name="methods"></a>Métodos
@@ -28,12 +28,12 @@ Representa um ponto de uma série do gráfico.
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |valor|Json|Retorna o valor de um ponto do gráfico. Somente leitura.|
-|id|string|Identificador exclusivo|
+|id|string|identificador exclusivo|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|formato|[WorkbookChartPointFormat](chartpointformat.md)|Encapsula as propriedades de formato de um ponto do gráfico. Somente leitura.|
+|format|[WorkbookChartPointFormat](chartpointformat.md)|Encapsula as propriedades de formato de um ponto do gráfico. Somente leitura.|
 
 ## <a name="json-representation"></a>Representação JSON
 

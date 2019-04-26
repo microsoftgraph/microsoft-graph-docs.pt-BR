@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 604009d8a636a367203f9c9ced69aa22f40bfbc7
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31781033"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32567183"
 ---
 # <a name="devicetypes-enum-type"></a>tipo de enumeração deviceTypes
 
@@ -23,24 +23,24 @@ Tipo de dispositivo.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |placa|,0|Placa.|
-|windowsRT|1|WindowsRT.|
-|winMO6|duas|WinMO6.|
-|Nokia|3D|Nokia.|
-|Windowsphonee|quatro|Windows Phone.|
-|mac|0,5|MacOS.|
-|winCE|6|WinCE.|
-|winEmbedded|178|WinEmbedded.|
-|iPhone|8|iPhone.|
-|iPad|241|iPad.|
-|iPod|254|iPodTouch.|
-|Android|11|Android.|
-|iSocConsumer|3,6|iSocConsumer.|
-|UNIX|Treze|UNIX.|
-|macMDM|14|Cliente Mac OS X usando o agente MDM interno.|
-|holoLens|15|Representando o Windows 10 Goggles sofisticado.|
-|surfaceHub|dezesseis|Dispositivo de HUB de superfície.|
-|androidForWork|17.07.06|Android para dispositivo de trabalho.|
-|androidEnterprise|anos|Dispositivo de empresa Android.|
+|windowsRT|1 |WindowsRT.|
+|winMO6|2 |WinMO6.|
+|Nokia|3 |Nokia.|
+|Windowsphonee|4 |Windows Phone.|
+|mac|5 |MacOS.|
+|winCE|6 |WinCE.|
+|winEmbedded|7 |WinEmbedded.|
+|iPhone|8 |iPhone.|
+|iPad|9 |iPad.|
+|iPod|10 |iPodTouch.|
+|Android|11 |Android.|
+|iSocConsumer|12 |iSocConsumer.|
+|UNIX|13 |UNIX.|
+|macMDM|14 |Cliente Mac OS X usando o agente MDM interno.|
+|holoLens|15 |Representando o Windows 10 Goggles sofisticado.|
+|surfaceHub|16 |Dispositivo de HUB de superfície.|
+|androidForWork|17 |Android para dispositivo de trabalho.|
+|androidEnterprise|18 |Dispositivo de empresa Android.|
 |rim|100|Rim.|
 |Palm|101|Palm.|
 |desconhecido|255|Representa que o tipo de dispositivo é desconhecido.|

@@ -5,11 +5,11 @@ author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
 ms.openlocfilehash: 835cd7ba930c7e8ea2d26f750a85e097db2399f0
-ms.sourcegitcommit: bf3d0c94faeb206f9f986423a436fb355acd54c1
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2019
-ms.locfileid: "31751568"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32555434"
 ---
 # <a name="get-onenote-content-and-structure-with-microsoft-graph"></a>Obter a estrutura e o conteúdo do OneNote com o Microsoft Graph
 
@@ -50,13 +50,13 @@ Sua URI de solicitação completa parecerá com um dos seguintes exemplos:
 
 Use os caminhos de recursos a seguir para obter páginas, seções, grupos de seções, blocos de anotações e recursos de arquivo ou imagem.
 
-- [Conjunto de páginas](#page-collection)
-- [Entidade da página](#page-entity)
+- [Coleção de páginas](#page-collection)
+- [Entidade Page](#page-entity)
 - [Visualização de página](#page-preview)
 - [Conteúdo HTML da página](#page-html-content)
-- [Conjunto da seção](#section-collection)
-- [Entidade de seção](#section-entity)
-- [Conjunto SectionGroup](#sectiongroup-collection)
+- [Coleção Section](#section-collection)
+- [Entidade Section](#section-entity)
+- [Coleção SectionGroup](#sectiongroup-collection)
 - [Entidade SectionGroup](#sectiongroup-entity)
 - [Coleção de blocos de anotações](#notebook-collection)
 - [Entidade Notebook](#notebook-entity)
@@ -323,10 +323,10 @@ Quando um recurso de arquivo é obtido, não é necessário incluir um tipo de c
 
 Para obter mais informações sobre solicitações GET, confira os seguintes recursos na referência do Microsoft Graph API REST:
 
-- [Páginas GET ](/graph/api/page-get?view=graph-rest-1.0)
-- [Seções GET ](/graph/api/section-get?view=graph-rest-1.0)
+- [GET Pages](/graph/api/page-get?view=graph-rest-1.0)
+- [GET Sections](/graph/api/section-get?view=graph-rest-1.0)
 - [GET SectionGroups](/graph/api/sectiongroup-get?view=graph-rest-1.0)
-- [Bloco de anotações GET](/graph/api/notebook-get?view=graph-rest-1.0) 
+- [GET Notebooks](/graph/api/notebook-get?view=graph-rest-1.0) 
 
 
 
@@ -339,14 +339,14 @@ Você pode consultar entidades do OneNote e o conteúdo de página de pesquisa p
 
 **Lembre-se:**
 
-- Todas as solicitações GET começam com a [URL de serviço raiz](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0#root-url). <br/><br/>**Exemplos**: `https://www.onenote.com/api/v1.0/me/notes` e  `https://www.onenote.com/api/v1.0/myOrganization/siteCollections/{id}/sites/{id}/notes/`
+- Todas as solicitações GET começam com a [URL raiz de serviço raiz](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0#root-url). <br/><br/>**Exemplos**: `https://www.onenote.com/api/v1.0/me/notes` e `https://www.onenote.com/api/v1.0/myOrganization/siteCollections/{id}/sites/{id}/notes/`
 
 - Os espaços na cadeia de caracteres de consulta da URL devem usar a codificação de %20.<br/><br/>**Exemplo**: `filter=title%20eq%20'biology'`
 
 - Os nomes de propriedade e as comparações de cadeias de caracteres de OData diferenciam maiúsculas de minúsculas. É recomendável usar a função **tolower** do OData para comparações de cadeia de caracteres.<br/><br/>**Exemplo**: `filter=tolower(name) eq 'spring'`
  
 
-### <a name="search--filter"></a>pequisar e filtrar  
+### <a name="search--filter"></a>search e filter  
 
 Obtenha todas as páginas que contêm o termo *recipe* que foram criadas por um aplicativo específico (`search` está disponível somente para blocos de anotações de consumidor).
 
@@ -543,7 +543,7 @@ Obtenha páginas de 51 a 100. A API retorna 20 entradas por padrão com um máxi
 [GET] ../pages?skip=50&top=50&select=title,self&orderby=title
 ```
 
-> **Observação:** solicitações GET para páginas que recuperam o número de entradas padrão (ou seja, não especificar uma expressão **top**) retornam um link **@odata.nextLink** em resposta que você pode usar para obter as próximas 20 entradas.
+> **Observação:** solicitações GET para páginas que recuperam o número de entradas padrão (ou seja, não especificar uma expressão **top**) retornam um link **@odata.nextLink** na resposta que você pode usar para obter as próximas 20 entradas.
  
 
 <a name="supported-odata-query-string-options"></a>
@@ -556,8 +556,8 @@ Quando enviar solicitações GET para Microsoft Graph, você pode usar as opçõ
  
 | Opção de consulta | Exemplo e descrição |  
 |------|------|  
-| count | <p>`count=true`</p><p>A contagem de entidades da coleção. O valor é retornado na propriedade**@odata.count** na resposta.</p> |  
-| expandir | <p>`expand=sections,sectionGroups`</p><p>Propriedades de navegação para retornar embutidas na resposta. As propriedades a seguir têm suporte para expressões **expand**:<br /> – Páginas: **parentNotebook**, **parentSection**<br /> – Seções: **parentNotebook**, **parentSectionGroup**<br /> – Grupos de seções: **sections**, **sectionGroups**, **parentNotebook**, **parentSectionGroup**<br /> – Blocos de anotações: **sections**, **sectionGroups**</p><p>Por padrão, as solicitações GET de páginas expandem **parentSection** e selecionam as propriedades **id**, **name** e **self**. Solicitações GET padrão de seções e grupos de seções expandem **parentNotebook** e **parentSectionGroup** e selecionam as propriedades pai **id**, **name** e **self**. </p><p>Pode ser usado para uma única entidade ou uma coleção.<br />Separar com vírgulas várias propriedades.<br />Os nomes de propriedades diferenciam maiúsculas de minúsculas.</p> |   
+| count | <p>`count=true`</p><p>A contagem de entidades da coleção. O valor é retornado na propriedade **@odata.count** na resposta.</p> |  
+| expand | <p>`expand=sections,sectionGroups`</p><p>Propriedades de navegação para retornar embutidas na resposta. As propriedades a seguir têm suporte para expressões **expand**:<br /> – Páginas: **parentNotebook**, **parentSection**<br /> – Seções: **parentNotebook**, **parentSectionGroup**<br /> – Grupos de seções: **sections**, **sectionGroups**, **parentNotebook**, **parentSectionGroup**<br /> – Blocos de anotações: **sections**, **sectionGroups**</p><p>Por padrão, as solicitações GET de páginas expandem **parentSection** e selecionam as propriedades **id**, **name** e **self**. Solicitações GET padrão de seções e grupos de seções expandem **parentNotebook** e **parentSectionGroup** e selecionam as propriedades pai **id**, **name** e **self**. </p><p>Pode ser usado para uma única entidade ou uma coleção.<br />Separar com vírgulas várias propriedades.<br />Os nomes de propriedades diferenciam maiúsculas de minúsculas.</p> |   
 | filter | <p>`filter=isDefault eq true`</p><p>Uma expressão booliana para se deseja incluir uma entrada no conjunto de resultados. Compatível com os seguintes operadores e funções OData:<br /> – Operadores de comparação: **eq**, **ne**, **gt**, **ge**, **lt**, **le**<br /> – Operadores lógicos: **and**, **or**, **not**<br /> – Funções de cadeia de caracteres: **contains**, **endswith**, **startswith**, **length**, **indexof**, **substring**, **tolower**, **toupper**, **trim**, **concat**</p><p>Os nomes de [propriedade](#onenote-entity-properties) e as comparações de cadeias de caracteres de OData diferenciam maiúsculas de minúsculas. É recomendável usar a função **tolower** do OData para comparações de cadeia de caracteres.<br /><br />**Exemplo**: `filter=tolower(name) eq 'spring'`</p> |  
 | orderby | <p>`orderby=title,createdTime desc`</p><p>As [propriedades](#onenote-entity-properties) para classificar por, com uma ordem de classificação opcional **asc** (padrão) ou **desc**. Você pode classificar por qualquer propriedade da entidade na coleção solicitada.</p><p>A ordem de classificação padrão para blocos de anotações, grupos de seções e seções é `name asc`, e para páginas é `lastModifiedTime desc` (última página modificada primeiro).</p><p>Separe as várias propriedades com vírgulas e liste-as na ordem de aplicação desejada. Os nomes de propriedades diferenciam maiúsculas de minúsculas.</p> |  
 | search | <p>`search=cell div`</p><p>Disponível somente para blocos de anotações de consumidor.</p><p>O termo ou frase para pesquisar no título da página, corpo da página, texto alt da imagem e texto da imagem OCR. Por padrão, consultas de pesquisa retornam resultados classificados por relevância.</p><p>O OneNote usa a pesquisa de texto completo do Bing para dar suporte a pesquisa de frase, lematização, tolerância de ortografia, relevância e classificação, quebra de palavras, vários idiomas e outros recursos de pesquisa de texto completo. As cadeias de caracteres de pesquisa diferenciam maiúsculas de minúsculas.</p><p>Aplica-se somente a páginas em blocos de anotações de propriedade do usuário. O conteúdo indexado é privado e só pode ser acessado pelo proprietário. As páginas protegidas por senha não são indexadas. Aplicável somente ao ponto de extremidade `pages`.</p> |  
@@ -628,14 +628,14 @@ Os nomes de propriedades diferenciam maiúsculas de minúsculas em expressões d
 
 Para obter a lista de propriedades e seus tipos, confira os seguintes recursos na referência do Microsoft Graph API REST:
 
-- [Páginas GET ](/graph/api/page-get?view=graph-rest-1.0)
-- [Seções GET ](/graph/api/section-get?view=graph-rest-1.0)
+- [GET Pages](/graph/api/page-get?view=graph-rest-1.0)
+- [GET Sections](/graph/api/section-get?view=graph-rest-1.0)
 - [GET SectionGroups](/graph/api/sectiongroup-get?view=graph-rest-1.0)
-- [Bloco de anotações GET](/graph/api/notebook-get?view=graph-rest-1.0) 
+- [GET Notebooks](/graph/api/notebook-get?view=graph-rest-1.0) 
 
 
 
-A opção de cadeia de caracteres de consulta **expandir** pode ser usada com as seguintes propriedades de navegação:
+A opção de cadeia de caracteres de consulta **expand** pode ser usada com as seguintes propriedades de navegação:
 
 - Páginas: **parentNotebook**, **parentSection**
 - Seções: **parentNotebook**, **parentSectionGroup**
@@ -651,15 +651,15 @@ A opção de cadeia de caracteres de consulta **expandir** pode ser usada com as
 |------|------|  
 | Protocolo | Todas as solicitações usam o protocolo HTTPS de SSL/TLS. |  
 | Cabeçalho de autorização | <p>`Bearer {token}`, onde `{token}` é um token de acesso do OAuth 2.0 válido para o aplicativo registrado.</p><p>Se ele estiver ausente ou for inválido, a solicitação falhará com um código de status 401. Confira [Autenticação e permissões](permissions-reference.md).</p> |  
-| Aceitar cabeçalho  | <p> `application/json` para entidades e conjuntos de entidades do OneNote</p><p> `text/html` para conteúdo de página</p> | 
+| Cabeçalho Accept | <p> `application/json` para entidades e conjuntos de entidades do OneNote</p><p> `text/html` para conteúdo de página</p> | 
 
 <br/>
 
-| Dado de resposta | Descrição |  
+| Dados de resposta | Descrição |  
 |------|------|  
 | Código de êxito | Um código de status de HTTP 200. |  
 | Corpo da resposta | Uma representação de OData da entidade ou conjunto de entidades no formato JSON, da página HTML ou dados binários do recurso de arquivo.  |  
-| Erros | Se a solicitação falhar, a API retornará [erros](onenote-error-codes.md) no **@api.diagnostics** objeto no corpo da resposta. |  
+| Erros | Se a solicitação falhar, a API retornará [erros](onenote-error-codes.md) no objeto **@api.diagnostics** no corpo da resposta. |  
 | Cabeçalho X-CorrelationId | Um GUID que identifica de forma exclusiva a solicitação. Você pode usar esse valor juntamente com o valor do cabeçalho Data ao trabalhar com o suporte da Microsoft para solucionar problemas. |  
 
 

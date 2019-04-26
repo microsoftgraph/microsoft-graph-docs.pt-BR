@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 4414aceaa9ce2a317389660959a2b73234e82185
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31785381"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556687"
 ---
 # <a name="advancedbitlockerstate-enum-type"></a>tipo de enumeração advancedBitLockerState
 
@@ -23,11 +23,11 @@ Estado do BitLocker avançado
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |sucesso|,0|Êxito no estado do BitLocker avançado|
-|noUserConsent|1|O usuário nunca deu o consentimento para a criptografia|
-|osVolumeEncryptionMethodMismatch|duas|O método de criptografia do volume de so é diferente daquele definido por política|
-|osVolumeTpmRequired|quatro|TPM não usado para proteção do volume de so, mas é exigido por política|
-|osVolumeTpmOnlyRequired|8|A proteção somente TPM não é usada para o volume de so, mas é necessária para a política|
-|osVolumeTpmPinRequired|dezesseis|TPM + proteção de PIN não usada para o volume de sistema operacional, mas é necessária para a política|
+|noUserConsent|1 |O usuário nunca deu o consentimento para a criptografia|
+|osVolumeEncryptionMethodMismatch|2 |O método de criptografia do volume de so é diferente daquele definido por política|
+|osVolumeTpmRequired|4 |TPM não usado para proteção do volume de so, mas é exigido por política|
+|osVolumeTpmOnlyRequired|8 |A proteção somente TPM não é usada para o volume de so, mas é necessária para a política|
+|osVolumeTpmPinRequired|16 |TPM + proteção de PIN não usada para o volume de sistema operacional, mas é necessária para a política|
 |osVolumeTpmStartupKeyRequired|32|TPM + proteção de chave de inicialização não usada para o volume de sistema operacional, mas é necessária para a política|
 |osVolumeTpmPinStartupKeyRequired|64|TPM + PIN + chave de inicialização não usado para o volume de so, mas é exigido pela política|
 |osVolumeUnprotected|128|O volume de so desprotegido foi detectado|

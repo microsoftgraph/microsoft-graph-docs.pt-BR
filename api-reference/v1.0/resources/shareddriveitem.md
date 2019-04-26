@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: SharedDriveItem
 localization_priority: Normal
 ms.openlocfilehash: 0d0c5a34d12fe467196c0616befc7376835b632c
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481724"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549633"
 ---
 # <a name="shareddriveitem-resource-type"></a>Tipo de recurso SharedDriveItem
 
@@ -47,7 +47,7 @@ O recurso **sharedDriveItem** é derivado de [**baseItem**](baseitem.md) e herda
 
 | Propriedade | Tipo                          | Descrição                                                      |
 | :------- | :---------------------------- | :--------------------------------------------------------------- |
-| id       | String                        | O identificador exclusivo do compartilhamento que está sendo acessado.              |
+| id       | Cadeia de caracteres                        | O identificador exclusivo do compartilhamento que está sendo acessado.              |
 | name     | String                        | O nome de exibição do item compartilhado.                             |
 | owner    | [IdentitySet](identityset.md) | Informações sobre o proprietário do item compartilhado que está sendo referenciado. |
 

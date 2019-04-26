@@ -1,31 +1,31 @@
 ---
-title: tipo de recurso de invitationParticipantInfo
-description: O **InvitationParticipant** é usado para representar um conjunto de identidades associado a um convite para conversa e fornece os parâmetros adicionais de convite.
+title: tipo de recurso invitationParticipantInfo
+description: O **InvitationParticipant** é usado para representar um conjunto de identidades associadas a um convite de conversa e fornece parâmetros de convite adicionais.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: cb20dde1a74472695755e65dc404a6709f79c8b0
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641915"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569960"
 ---
-# <a name="invitationparticipantinfo-resource-type"></a>tipo de recurso de invitationParticipantInfo
+# <a name="invitationparticipantinfo-resource-type"></a>tipo de recurso invitationParticipantInfo
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O **InvitationParticipant** é usado para representar um conjunto de identidades associado a um convite para conversa e fornece os parâmetros adicionais de convite.
+O **InvitationParticipant** é usado para representar um conjunto de identidades associadas a um convite de conversa e fornece parâmetros de convite adicionais.
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade                           | Tipo                          | Descrição                                                                          |
 | :--------------------------------- | :---------------------------- | :----------------------------------------------------------------------------------- |
-| endpointType                       | String                        | Os valores possíveis são: `default` e `voicemail`. |
-| identity                           | [identitySet](identityset.md) | O [identitySet](identityset.md) associado a este convite.                   |
+| EndpointType                       | String                        | Os valores possíveis são: `default` e `voicemail`. |
+| ladrões                           | [identitySet](identityset.md) | O [identityset](identityset.md) associado a este convite.                   |
 | languageId                         | String                        | A cadeia de caracteres de cultura do idioma.                                                                                     |
 | região                             | String                        | Região do participante.                                                           |
-| replacesCallId                     | String                        | Opcional. A chamada que o idenity de destino no momento é parte do. Essa chamada será descartada depois que o participante é adicionado. |
+| replacesCallId                     | Cadeia de caracteres                        | Opcional. A chamada na qual o idenity de destino faz parte no momento. Essa chamada será cancelada quando o participante for adicionado. |
 
 ## <a name="json-representation"></a>Representação JSON
 

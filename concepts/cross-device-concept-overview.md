@@ -4,11 +4,11 @@ description: 'No mundo atual, com tantos dispositivos, a forma como os clientes 
 localization_priority: Priority
 ms.prod: project-rome
 ms.openlocfilehash: 85d48d07f06d189f30c8eba9f7f0876353b3ff25
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27920678"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32570275"
 ---
 # <a name="cross-device-experiences-in-microsoft-graph"></a>Experiências entre dispositivos no Microsoft Graph
 

@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: Permissão
 localization_priority: Normal
 ms.openlocfilehash: 12390583dcb1a87a5c9492ae3dcbcb132a66f69c
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482074"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568253"
 ---
 # <a name="permission-resource-type"></a>tipo de recurso Permission
 
@@ -67,11 +67,11 @@ Veja a seguir uma representação JSON do recurso.
 | grantedToIdentities | Coleção ([identityset][]) | Para permissões de tipo de link, os detalhes dos usuários aos quais a permissão foi concedida. Somente leitura.
 | invitation          | [SharingInvitation][]       | Detalhes de um convite de compartilhamento associado para esta permissão. Somente leitura.
 | inheritedFrom       | [ItemReference][]           | Fornece uma referência para o ancestral da permissão atual, se ela for herdada de um ancestral. Somente leitura.
-| link                | [SharingLink][]             | Fornece os detalhes do link de permissão atual, caso se trate de permissões de tipo de link. Somente leitura.
+| vínculo                | [SharingLink][]             | Fornece os detalhes do link de permissão atual, caso se trate de permissões de tipo de link. Somente leitura.
 | funções               | Collection(String)          | O tipo de permissão, por exemplo, `read`. Veja abaixo a lista completa de funções. Somente leitura.
 | shareId             | String                      | Um token exclusivo que pode ser usado para acessar esse item compartilhado por meio da **[API][]** de compartilhamentos. Somente leitura.
 | expirationDateTime  | DateTimeOffset              | Um formato de yyyy-MM-ddTHH: mm: ssZ de DateTimeOffset indica o tempo de expiração da permissão. DateTime. MinValue indica que não há validade configurada para essa permissão. Opcional.
-| hasPassword         | Boolean                     | Isso indica se a senha está definida para essa permissão, ela só será mostrada em resposta. Opcional e somente leitura e somente para o OneDrive Personal.
+| hasPassword         | Booliano                     | Isso indica se a senha está definida para essa permissão, ela só será mostrada em resposta. Opcional e somente leitura e somente para o OneDrive Personal.
 
 ### <a name="roles-enumeration-values"></a>Valores de enumeração de funções
 
@@ -225,7 +225,7 @@ Depois que o convite de compartilhamento tiver sido resgatado por um usuário, a
 | [Obter permissão](../api/permission-get.md)               | `GET /drive/items/{item-id}/permissions/{id}`
 | [Criar link] [CreateLink]                                | `POST /drive/items/{item-id}/createLink`
 | [Convidar pessoas] [convidar]                                  | `POST /drive/items/{item-id}/invite`
-| [Atualizar](../api/permission-update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
+| [Update](../api/permission-update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
 | [Delete](../api/permission-delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`
 
 

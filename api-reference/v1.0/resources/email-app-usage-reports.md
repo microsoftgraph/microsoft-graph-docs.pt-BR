@@ -5,11 +5,11 @@ localization_priority: Normal
 author: pranoychaudhuri
 ms.prod: reports
 ms.openlocfilehash: 00adbec446cda1ea6855c7f52e847f88f42c65bd
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574436"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32555896"
 ---
 # <a name="email-app-usage-reports"></a>Relatórios de uso do aplicativo de email
 

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: cbbf575c7eaecb93e0256d6f672d0c4d6bdd0edf
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31802489"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32570037"
 ---
 # <a name="mobileapptroubleshootingapppolicycreationhistory-resource-type"></a>tipo de recurso mobileAppTroubleshootingAppPolicyCreationHistory
 
@@ -30,7 +30,7 @@ Herda de [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooti
 |errorCode|Cadeia de caracteres|Código de erro para a falha, vazio se não houver falha.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

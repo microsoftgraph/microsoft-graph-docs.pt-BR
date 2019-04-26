@@ -4,11 +4,11 @@ description: 'O modo de visualização de calendário em um conjunto de eventos 
 author: piotrci
 localization_priority: Priority
 ms.openlocfilehash: ba5f2726cf6fe27024bfa29bf75dd82075c6fa29
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830713"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32526220"
 ---
 # <a name="get-incremental-changes-to-events-in-a-calendar-view"></a>Obter as alterações incrementais para os eventos em um modo de exibição de calendário 
 

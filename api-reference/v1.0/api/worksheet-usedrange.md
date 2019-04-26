@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: 444a88dfaad3983948a139f2a3db304c200a1153
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27975299"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569743"
 ---
 # <a name="worksheet-usedrange"></a>Worksheet: UsedRange
 
@@ -51,7 +51,7 @@ Não forneça um corpo de solicitação para esse método.
 Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [Range](../resources/range.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
-Aqui está um exemplo de como chamar esta API.
+Veja a seguir um exemplo que mostra como chamar essa API.
 
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
@@ -82,7 +82,7 @@ Content-length: 169
 }
 ```
 
-Como alternativa, essa função pode ser chamada com o opcional `valuesOnly` parâmetro.
+Como alternativa, essa função pode ser chamada com o parâmetro `valuesOnly` opcional.
 
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

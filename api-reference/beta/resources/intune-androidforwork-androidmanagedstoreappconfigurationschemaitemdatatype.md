@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: a73ba699a9fba27a82c98c17e7a0151e716f8da9
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31805681"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32552447"
 ---
 # <a name="androidmanagedstoreappconfigurationschemaitemdatatype-enum-type"></a>tipo de enumeração androidManagedStoreAppConfigurationSchemaItemDataType
 
@@ -23,13 +23,13 @@ Tipo de dados para um item de configuração no esquema de configuração person
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |bool|,0|Ainda não documentado|
-|inteiro|1|Ainda não documentado|
-|string|duas|Ainda não documentado|
-|escolha|3D|Ainda não documentado|
-|MultiSelect|quatro|Ainda não documentado|
-|pacote|0,5|Ainda não documentado|
-|bundleArray|6|Ainda não documentado|
-|hidden|178|Ainda não documentado|
+|inteiro|1 |Ainda não documentado|
+|string|2 |Ainda não documentado|
+|escolha|3 |Ainda não documentado|
+|MultiSelect|4 |Ainda não documentado|
+|pacote|5 |Ainda não documentado|
+|bundleArray|6 |Ainda não documentado|
+|hidden|7 |Ainda não documentado|
 
 
 
