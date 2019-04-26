@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: c235d31e97b570f70145884349eaef6e2254194c
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31802461"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566623"
 ---
 # <a name="devicemanagementexchangeaccesslevel-enum-type"></a>tipo de enumeração deviceManagementExchangeAccessLevel
 
@@ -22,10 +22,10 @@ Nível de acesso no Exchange.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhuma|,0|Nenhuma regra de acesso do dispositivo foi configurada no Exchange.|
-|permitiu|1|Permitir que o dispositivo acesse o Exchange.|
-|Larga|duas|Bloquear o acesso do dispositivo ao Exchange.|
-|quarentena|3D|Colocar o dispositivo em quarentena no Exchange.|
+|Nenhuma|,0|Nenhuma regra de acesso do dispositivo foi configurada no Exchange.|
+|permitiu|1 |Permitir que o dispositivo acesse o Exchange.|
+|Larga|2 |Bloquear o acesso do dispositivo ao Exchange.|
+|quarentena|3 |Colocar o dispositivo em quarentena no Exchange.|
 
 
 

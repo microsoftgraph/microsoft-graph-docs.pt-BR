@@ -1,17 +1,17 @@
 ---
-title: tipo de recurso de playPromptOperation
+title: tipo de recurso playPromptOperation
 description: A operação playPrompt para obter o resultado da ação playPrompt.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: a6ecdb06c910923d35f9d36590ad09fd7835fccb
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515199"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563655"
 ---
-# <a name="playpromptoperation-resource-type"></a>tipo de recurso de playPromptOperation
+# <a name="playpromptoperation-resource-type"></a>tipo de recurso playPromptOperation
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -21,12 +21,12 @@ A operação playPrompt para obter o resultado da ação playPrompt.
 
 | Propriedade            | Tipo                        | Descrição|
 |:--------------------|:----------------------------|:-----------------------------------------------------------------------------------|
-| ClientContext       | String                      | O contexto de cliente.                                                                |
+| clientContext       | String                      | O contexto do cliente.                                                                |
 | completionReason    | String                      | Os valores possíveis são: `unknown`, `completedSuccessfully`, `mediaOperationCanceled`. |
 | createdDateTime     | DateTimeOffset              | A hora de início da operação.                                                   |
-| id                  | String                      | Somente leitura.                                                                         |
+| id                  | Cadeia de caracteres                      | Somente leitura.                                                                         |
 | lastActionDateTime  | DateTimeOffset              | A hora da última ação da operação.                                      |
-| resultInfo          | [resultInfo](resultInfo.md) | As informações de resultado. Somente leitura. Servidor foi gerado.                               |
+| resultInfo          | [resultInfo](resultInfo.md) | As informações de resultado. Somente leitura. Servidor gerado.                               |
 | status              | String                      | Os valores possíveis são: `notStarted`, `running`, `completed`, `failed`.               |
 
 ## <a name="relationships"></a>Relações
@@ -64,8 +64,6 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/playpromptoperation.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -4,11 +4,11 @@ description: O Microsoft Graph fornece parâmetros de consulta opcional que voc�
 author: piotrci
 localization_priority: Priority
 ms.openlocfilehash: aff7fa2cb36c1ab5a5464c09221178e2a5e88ab1
-ms.sourcegitcommit: 953895b28b6bae6e17eead938565fde289c49ef7
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "31479906"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32564166"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>Usar parâmetros de consulta para personalizar respostas
 
@@ -30,7 +30,7 @@ Uma operação de API do Microsoft Graph pode oferecer suporte a uma ou mais das
 | [$filter](#filter-parameter)       | Filtra os resultados (linhas).|[`/users?$filter=startswith(givenName,'J')`][filter-example]
 | [$format](#format-parameter)       | Retorna os resultados no formato de mídia especificado.|[`/users?$format=json`][format-example]
 | [$orderby](#orderby-parameter)     | Ordena os resultados.|[`/users?$orderby=displayName desc`][orderby-example]
-| [$search](#search-parameter)       | Retorna os resultados com base nos critérios de pesquisa. Com suporte no momento nos conjuntos **mensagens** e **pessoa**.|[`/me/messages?$search=pizza`][search-example]
+| [$search](#search-parameter)       | Retorna os resultados com base nos critérios de pesquisa. Atualmente, com suporte em conjuntos de **mensagens** e **pessoa**.|[`/me/messages?$search=pizza`][search-example]
 | [$select](#select-parameter)       | Filtra as propriedades (colunas).|[`/users?$select=givenName,surname`][select-example]
 | [$skip](#skip-parameter)           | Índices em um conjunto de resultados. Também usado por algumas APIs para implementar a paginação e pode ser usado com `$top` para paginar resultados manualmente. | [`/me/messages?$skip=11`][skip-example]
 | [$top](#top-parameter)             | Define o tamanho de página de resultados. |[`/users?$top=2`][top-example]
@@ -76,7 +76,7 @@ Por exemplo, a solicitação a seguir retornará o conjunto **contato** do usuá
 GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 ```
 
-[Experimente o Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/contacts?$count=true&method=GET&version=v1.0)
+[Experimentar no Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/contacts?$count=true&method=GET&version=v1.0)
 
 
 >**Observação:** `$count` não tem suporte para conjuntos de recursos derivados de [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-1.0), como conjuntos de [usuários](/graph/api/resources/user?view=graph-rest-1.0) ou [grupos](/graph/api/resources/group?view=graph-rest-1.0).
@@ -93,7 +93,7 @@ O seguinte exemplo obtém informações de unidade raiz juntamente com os itens 
 GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children
 ```
 
-[Experimente o Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/drive/root?$expand=children&method=GET&version=v1.0)
+[Experimentar no Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/drive/root?$expand=children&method=GET&version=v1.0)
 
 Com alguns conjuntos de recursos, você também pode especificar as propriedades a serem retornadas nos recursos expandidos adicionando um parâmetro `$select`. O exemplo a seguir executa a mesma consulta que o exemplo anterior, mas usa uma instrução [`$select`](#select-parameter) para limitar as propriedades retornadas para os itens filho expandidos para as propriedades **id** e **name**.
 
@@ -177,7 +177,7 @@ Você também pode classificar por entidades de tipo complexo. A solicitação a
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages?$orderby=from/emailAddress/address
 ```
-[Experimente o Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$orderby=from/emailAddress/address&method=GET&version=v1.0)
+[Experimentar no Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$orderby=from/emailAddress/address&method=GET&version=v1.0)
 
 Para classificar os resultados em ordem crescente ou decrescente, anexe `asc` ou `desc` ao nome do campo, separado por um espaço, por exemplo, `?$orderby=name%20desc`.
 
@@ -187,7 +187,7 @@ Com algumas APIs, você pode ordenar os resultados em várias propriedades. Por 
 GET https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages?$orderby=from/emailAddress/name desc,subject
 ```
 
-[Experimente o Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$orderby=from/emailAddress/name%20desc,subject&method=GET&version=v1.0)
+[Experimentar no Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$orderby=from/emailAddress/name%20desc,subject&method=GET&version=v1.0)
 
 Quando você especifica $filter, servidor deduz uma ordem de classificação para os resultados. Se você usar `$orderby` e `$filter`, como o servidor sempre deduz a ordem de classificação dos resultados de um `$filter`, as propriedades do `$filter` devem estar listadas primeiro no `$orderby` antes de outras propriedades e devem estar listadas na ordem que aparecem no parâmetro `$filter`. 
 
@@ -197,7 +197,7 @@ O exemplo a seguir mostra uma consulta filtrada pelas propriedades **subject** e
 GET https://graph.microsoft.com/v1.0/me/messages?$filter=Subject eq 'welcome' and importance eq 'normal'&$orderby=subject,importance,receivedDateTime desc
 ```
 
-[Experimente o Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=subject%20eq%20%27welcome%27%20and%20importance%20eq%20%27normal%27%20&$orderby=subject,importance,receivedDateTime%20desc&method=GET&version=v1.0)
+[Experimentar no Explorador do Graph](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=subject%20eq%20%27welcome%27%20and%20importance%20eq%20%27normal%27%20&$orderby=subject,importance,receivedDateTime%20desc&method=GET&version=v1.0)
 
  > **Observação:** Com os recursos do Azure AD derivados de [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-1.0), como [user](/graph/api/resources/user?view=graph-rest-1.0) e [group](/graph/api/resources/group?view=graph-rest-1.0), você não pode combinar `$orderby` a expressões `$filter`. 
 
@@ -226,30 +226,31 @@ Como alternativa, você pode pesquisar mensagens especificando os nomes de propr
 
 | Propriedades de emails pesquisáveis                | Descrição | Exemplo 
 |:-------------------------|:------------|:---------|
-| **anexo**           | Os nomes dos arquivos anexados a uma mensagem de email.|[`me/messages?$search="attachment:api-catalog.md"`][search-att-example]
-| **cco**           | O campo **cco** de uma mensagem de email, especificado como um endereço SMTP, nome de exibição ou alias.|[`me/messages?$search="bcc:samanthab@contoso.com"&$select=subject,bccRecipients`][search-bcc-example]
-| **corpo**           | O corpo de uma mensagem de email.|[`me/messages?$search="body:excitement"`][search-body-example]
-| **cc**           | O campo **cc** de uma mensagem de email, especificado como um endereço SMTP, nome de exibição ou alias.|[`me/messages?$search="cc:danas"&$select=subject,ccRecipients`][search-cc-example]
+| **attachment**           | Os nomes dos arquivos anexados a uma mensagem de email.|[`me/messages?$search="attachment:api-catalog.md"`][search-att-example]
+| **bcc**           | O campo **Cco** de uma mensagem de email, especificado como um endereço SMTP, nome de exibição ou alias.|[`me/messages?$search="bcc:samanthab@contoso.com"&$select=subject,bccRecipients`][search-bcc-example]
+| **body**           | O corpo de uma mensagem de email.|[`me/messages?$search="body:excitement"`][search-body-example]
+| **cc**           | O campo **Cc** de uma mensagem de email, especificado como um endereço SMTP, nome de exibição ou alias.|[`me/messages?$search="cc:danas"&$select=subject,ccRecipients`][search-cc-example]
 | **from**           | O remetente de uma mensagem de email, especificado como um endereço SMTP, nome de exibição ou alias.|[`me/messages?$search="from:randiw"&$select=subject,from`][search-from-example]
 | **hasAttachment** | Verdadeiro se uma mensagem de email contiver um anexo que não seja um anexo embutido, caso contrário, falso. |[`me/messages?$search="hasAttachments=true"`][search-from-example]
-| **importância**           | A prioridade de uma mensagem de email, que um remetente pode especificar ao enviar uma mensagem. Os valores possíveis são `low`, `medium` ou `high`.|[`me/messages?$search="importance:high"&$select=subject,importance`][search-imp-example]
-| **Tipo**           | O tipo de mensagem. Os valores possíveis são `contacts`, `docs`, `email`, `faxes`, `im`, `journals`, `meetings`, `notes`, `posts`, `rssfeeds`, `tasks` ou `voicemail`.|[`me/messages?$search="kind:voicemail"`][search-kind-example]
-| **participantes**           | Os campos **de**, **para**, **cc** e **cco** de uma mensagem de email, especificados como um endereço SMTP, nome de exibição ou alias.|[`me/messages?$search="participants:danas"`][search-part-example]
-| **recebido**           | A data em que uma mensagem de email foi recebida pelo destinatário.|[`me/messages?$search="received:07/23/2018"&$select=subject,receivedDateTime`][search-rcvd-example]
-| **destinatários**           | Os campos **para**, **cc** e **cco** de uma mensagem de email, especificados como um endereço SMTP, nome de exibição ou alias.|[`me/messages?$search="recipients:randiq"&$select=subject,toRecipients,ccRecipients,bccRecipients`][search-rcpts-example]
-| **enviado**           | A data em que uma mensagem de email foi enviada pelo remetente.|[`me/messages?$search="sent:07/23/2018"&$select=subject,sentDateTime`][search-sent-example]
-| **tamanho**           | O tamanho de um item em bytes.|[`me/messages?$search="size:1..500000"`][search-size-example]
-| **assunto**           | O texto na linha de assunto de uma mensagem de email. .|[`me/messages?$search="subject:has"&$select=subject`][search-sbj-example]
-| **para**           | O campo **para** de uma mensagem de email, especificado como um endereço SMTP, nome de exibição ou alias.|[`me/messages?$search="to:randiw"&$select=subject,toRecipients`][search-to-example]
+| **importance**           | A prioridade de uma mensagem de email, que um remetente pode especificar ao enviar uma mensagem. Os valores possíveis são `low`, `medium` ou `high`.|[`me/messages?$search="importance:high"&$select=subject,importance`][search-imp-example]
+| **kind**           | O tipo de mensagem. Os valores possíveis são `contacts`, `docs`, `email`, `faxes`, `im`, `journals`, `meetings`, `notes`, `posts`, `rssfeeds`, `tasks` ou `voicemail`.|[`me/messages?$search="kind:voicemail"`][search-kind-example]
+| **participants**           | Os campos **de**, **para**, **Cc** e **Cco** de uma mensagem de email, especificados como um endereço SMTP, nome de exibição ou alias.|[`me/messages?$search="participants:danas"`][search-part-example]
+| **received**           | A data em que uma mensagem de email foi recebida pelo destinatário.|[`me/messages?$search="received:07/23/2018"&$select=subject,receivedDateTime`][search-rcvd-example]
+| **recipients**           | Os campos **para**, **Cc** e **Cco** de uma mensagem de email, especificados como um endereço SMTP, nome de exibição ou alias.|[`me/messages?$search="recipients:randiq"&$select=subject,toRecipients,ccRecipients,bccRecipients`][search-rcpts-example]
+| **sent**           | A data em que uma mensagem de email foi enviada pelo remetente.|[`me/messages?$search="sent:07/23/2018"&$select=subject,sentDateTime`][search-sent-example]
+| **size**           | O tamanho de um item em bytes.|[`me/messages?$search="size:1..500000"`][search-size-example]
+| **subject**           | O texto na linha de assunto de uma mensagem de email. .|[`me/messages?$search="subject:has"&$select=subject`][search-sbj-example]
+| **to**           | O campo **para** de uma mensagem de email, especificado como um endereço SMTP, nome de exibição ou alias.|[`me/messages?$search="to:randiw"&$select=subject,toRecipients`][search-to-example]
 
 
 Para saber mais sobre as propriedades de email pesquisáveis, KQL como a sintaxe, operadores com suporte e dicas de pesquisa, confira os seguintes artigos:
 
 - [Propriedades pesquisáveis no Exchange](https://docs.microsoft.com/pt-BR/Exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators#searchable-properties-in-exchange).
 
-- [Referência de sintaxe da Linguagem de Consulta de Palavra-chave (KQL)](https://docs.microsoft.com/en-us/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+- [Referência de sintaxe da Linguagem de Consulta de Palavra-chave (KQL)](https://docs.microsoft.com/pt-BR/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
-- [Propriedades da mensagem e operadores de pesquisa para a Descoberta eletrônica In-loco no Exchange 2016](https://technet.microsoft.com/en-us/library/dn774955(v=exchg.160).aspx)
+- 
+  [Propriedades da mensagem e operadores de pesquisa para a Descoberta eletrônica In-loco no Exchange 2016](https://technet.microsoft.com/en-us/library/dn774955(v=exchg.160).aspx)
 
 ### <a name="using-search-on-person-collections"></a>Usando $search em conjuntos de pessoas
 
