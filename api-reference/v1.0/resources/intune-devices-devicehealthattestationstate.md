@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 53fa5cdafdc125fdc32ef599a625c58e3bcbe687
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30256144"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563809"
 ---
 # <a name="devicehealthattestationstate-resource-type"></a>Tipo de recurso deviceHealthAttestationState
 
@@ -49,8 +49,8 @@ Ainda não documentado
 |secureBootConfigurationPolicyFingerPrint|String|Impressão digital da política de configuração de Inicialização Segura personalizada|
 |codeIntegrityPolicy|String|A política de Integridade de código que está controlando a segurança do ambiente de inicialização|
 |bootRevisionListInfo|String|A Lista de revisão de inicialização carregada durante a inicialização inicial no dispositivo confirmado|
-|operatingSystemRevListInfo|Cadeia de caracteres|A Lista de revisão de sistema operacional carregada durante a inicialização inicial no dispositivo confirmado|
-|healthStatusMismatchInfo|String|Esse atributo será exibido se o serviço DHA detectar um problema de integridade|
+|operatingSystemRevListInfo|String|A Lista de revisão de sistema operacional carregada durante a inicialização inicial no dispositivo confirmado|
+|healthStatusMismatchInfo|Cadeia de caracteres|Esse atributo será exibido se o serviço DHA detectar um problema de integridade|
 |healthAttestationSupportedStatus|Cadeia de caracteres|Esse atributo indica se DHA é compatível com o dispositivo|
 
 ## <a name="relationships"></a>Relações

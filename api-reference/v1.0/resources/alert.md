@@ -5,11 +5,11 @@ localization_priority: Priority
 author: preetikr
 ms.prod: security
 ms.openlocfilehash: 5e1501609bc7aeacd5bc666ced4ce8825dadcdb3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27957001"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569484"
 ---
 # <a name="alert-resource-type"></a>tipo de alerta do recurso
 

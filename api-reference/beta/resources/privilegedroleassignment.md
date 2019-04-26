@@ -1,47 +1,47 @@
 ---
-title: tipo de recurso de privilegedRoleAssignment
-description: 'Representa uma atribuição de função privilegiado para um usuário específico. '
+title: tipo de recurso privilegedRoleAssignment
+description: 'Representa uma atribuição de função privilegiada para um usuário específico. '
 localization_priority: Normal
 ms.openlocfilehash: 479b6d46dc479134fd0abb46b1a9ffe478611a82
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515115"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563393"
 ---
-# <a name="privilegedroleassignment-resource-type"></a>tipo de recurso de privilegedRoleAssignment
+# <a name="privilegedroleassignment-resource-type"></a>tipo de recurso privilegedRoleAssignment
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma atribuição de função privilegiado para um usuário específico. 
+Representa uma atribuição de função privilegiada para um usuário específico. 
 
 
 ## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Coleção de privilegedRoleAssignment de lista](../api/privilegedroleassignment-list.md) | coleção [privilegedRoleAssignment](privilegedroleassignment.md)|Obtenha a coleção de objetos privilegedRoleAssignment.|
-|[Obter privilegedRoleAssignment](../api/privilegedroleassignment-get.md) | [privilegedRoleAssignment](privilegedroleassignment.md) |Leia as propriedades e os relacionamentos do objeto privilegedRoleAssignment.|
-|[Criar atribuição](../api/privilegedroleassignment-post-privilegedroleassignments.md) |[privilegedRoleAssignment](privilegedroleassignment.md)| Crie uma nova atribuição de lançamento para a coleção assignments.|
-|[Delete](../api/privilegedroleassignment-delete.md) | Nenhum |Exclua objeto privilegedRoleAssignment. |
-|[makePermanent](../api/privilegedroleassignment-makepermanent.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|Fazer a atribuição de função como permanente.|
-|[makeEligible](../api/privilegedroleassignment-makeeligible.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|Fazer a atribuição de função como qualificado.|
-|[Pessoal](../api/privilegedroleassignment-my.md)|coleção [privilegedRoleAssignment](privilegedroleassignment.md)|Obtenha as atribuições de função privilegiado do usuário atual.|
+|[Listar privilegedRoleAssignment coleção](../api/privilegedroleassignment-list.md) | [privilegedRoleAssignment](privilegedroleassignment.md) collection|Obtenha a coleção de objetos privilegedRoleAssignment.|
+|[Get privilegedRoleAssignment](../api/privilegedroleassignment-get.md) | [privilegedRoleAssignment](privilegedroleassignment.md) |Leia as propriedades e os relacionamentos do objeto privilegedRoleAssignment.|
+|[Criar tarefa](../api/privilegedroleassignment-post-privilegedroleassignments.md) |[privilegedRoleAssignment](privilegedroleassignment.md)| Crie uma nova atribuição postando na coleção assignments.|
+|[Excluir](../api/privilegedroleassignment-delete.md) | Nenhum |Exclua um objeto privilegedRoleAssignment. |
+|[makePermanent](../api/privilegedroleassignment-makepermanent.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|Torne a atribuição de função como permanente.|
+|[makeEligible](../api/privilegedroleassignment-makeeligible.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|Tornar a atribuição de função como qualificada.|
+|[my](../api/privilegedroleassignment-my.md)|[privilegedRoleAssignment](privilegedroleassignment.md) collection|Obtenha as atribuições de função privilegiada do usuário atual.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|expirationDateTime|dateTimeOffset|DateTime UTC quando a atribuição de função privilegiado temporário será expirada. Para atribuição de função permanente, o valor é nulo.|
-|id|string| O identificador exclusivo para a atribuição de função privilegiado. Somente leitura. É no formato de 'userId_roleId', onde userId é a cadeia de caracteres do GUID para id de usuário do Windows Azure AD e roleId é a cadeia de caracteres do GUID para id de função de administrador do Azure.|
-|isElevated|booliano|**true** se a atribuição de função é ativada. **false** se a atribuição de função é desativada.|
-|resultMessage|string|Mensagem de resultado definido pelo serviço.|
-|roleId|string|identificador de função No formato de cadeia de caracteres GUID.|
-|userId|string|Identificador de usuário. No formato de cadeia de caracteres GUID.|
+|expirationDateTime|dateTimeOffset|A data e hora UTC em que a atribuição de função privilegiada temporária será expirada. Para atribuição de função permanente, o valor é NULL.|
+|id|string| O identificador exclusivo da atribuição de função privilegiada. Somente leitura. Ele está no formato de ' userId_roleId ', onde userId é a cadeia de caracteres GUID da ID de usuário do Azure AD e RoleID é a cadeia de caracteres GUID da ID de função do administrador do Azure.|
+|isElevados|booliano|**true** se a atribuição de função é ativada. **false** se a atribuição de função é desativada.|
+|resultMessage|string|Mensagem de resultado definida pelo serviço.|
+|roleId|string|Identificador de função. Em formato de cadeia de caracteres GUID.|
+|userId|string|Identificador de usuário. Em formato de cadeia de caracteres GUID.|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|roleInfo|[privilegedRole](privilegedrole.md)| Somente leitura. Anulável. As informações de função associada.|
+|roleInfo|[privilegedRole](privilegedrole.md)| Somente leitura. Anulável. As informações da função associada.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -52,6 +52,8 @@ Veja a seguir uma representação JSON do recurso.
   "optionalProperties": [
 
   ],
+  "keyProperty": "id",
+  "baseType":"microsoft.graph.entity",
   "@odata.type": "microsoft.graph.privilegedRoleAssignment"
 }-->
 
@@ -76,8 +78,6 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/privilegedroleassignment.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

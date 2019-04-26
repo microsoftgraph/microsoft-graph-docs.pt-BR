@@ -1,19 +1,21 @@
 ---
 title: Atualizar calendargroup
-description: Atualizar as propriedades do objeto calendargroup.
+description: Atualiza as propriedades do objeto calendargroup.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: e093ddd962b1fa0397159c47bdc5388184a8ba3c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27958751"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583729"
 ---
 # <a name="update-calendargroup"></a>Atualizar calendargroup
 
-Atualizar as propriedades do objeto calendargroup.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Atualiza as propriedades do objeto calendargroup.
 
 ## <a name="permissions"></a>Permissões
 
@@ -49,11 +51,11 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 
 | Propriedade | Tipo   | Descrição     |
 | :------- | :----- | :-------------- |
-| name     | Cadeia de caracteres | O nome do grupo. |
+| name     | String | O nome do grupo. |
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [calendarGroup](../resources/calendargroup.md) no corpo da resposta.
+Se bem sucedido, este método retorna um código de resposta `200 OK` e um objeto [calendarGroup](../resources/calendargroup.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 
@@ -67,7 +69,7 @@ Este é um exemplo da solicitação.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/calendarGroups/{id}
+PATCH https://graph.microsoft.com/beta/me/calendarGroups/{id}
 Content-type: application/json
 Content-length: 30
 
@@ -102,10 +104,13 @@ Content-length: 110
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update calendargroup",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

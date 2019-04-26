@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: 96069c11d8e520b64854eb7a2a72dc9d5f6de25b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27967298"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569911"
 ---
 # <a name="worksheet-cell"></a>Worksheet: Cell
 
@@ -31,7 +31,7 @@ GET /workbook/worksheets/{id|name}/cell(row={row},column={column})
 ```
 
 ## <a name="function-parameters"></a>Parâmetros de função
-Forneça o caminho da solicitação, os seguintes parâmetros.
+No caminho da solicitação, forneça os seguintes parâmetros.
 
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|

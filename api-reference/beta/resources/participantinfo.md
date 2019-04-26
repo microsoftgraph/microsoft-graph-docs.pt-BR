@@ -1,29 +1,29 @@
 ---
-title: tipo de recurso de participantInfo
-description: Contém propriedades adicionais sobre a identidade dos participantes
+title: tipo de recurso participantInfo
+description: Contém propriedades adicionais sobre a identidade do participante
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 3d040fd5be86068c30e7a63dae50888c4f3ec756
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528344"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568563"
 ---
-# <a name="participantinfo-resource-type"></a>tipo de recurso de participantInfo
+# <a name="participantinfo-resource-type"></a>tipo de recurso participantInfo
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contém propriedades adicionais sobre a identidade dos participantes
+Contém propriedades adicionais sobre a identidade do participante
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade       | Tipo                          | Descrição  |
 |:---------------|:------------------------------|:-------------|
-| [-Identity]       | [identitySet](identityset.md) | O [identitySet](identityset.md) associado a esse participante. |
+| ladrões       | [identitySet](identityset.md) | O [identityset](identityset.md) associado a este participante. |
 | languageId     | String                        | A cadeia de caracteres de cultura do idioma. |
-| Região         | String                        | Região do participante. |
+| região         | String                        | Região do participante. |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -53,8 +53,6 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/participantinfo.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

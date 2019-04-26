@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: BaseItem
 localization_priority: Normal
 ms.openlocfilehash: ae22b0a36acb46c2a9d872f224c0a6d4c567782c
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481129"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569330"
 ---
 # <a name="baseitem-resource-type"></a>Tipo de recurso BaseItem
 
@@ -72,7 +72,7 @@ Veja a seguir uma representação JSON de um recurso **baseItem**.
 
 [identitySet]: identityset.md
 [itemReference]: itemreference.md
-[user]: user.md
+[Usuário]: user.md
 
 ## <a name="remarks"></a>Comentários
 

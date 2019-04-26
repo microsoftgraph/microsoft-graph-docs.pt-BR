@@ -1,19 +1,19 @@
 ---
 title: Tipo de recurso ChartGridlines
-description: Representa as linhas de grade principais ou secundárias em um eixo do gráfico.
+description: Representa linhas de grade principais ou secundárias em um eixo do gráfico.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 7347ac1b7ff251b12764534df217cd883ba730b3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27956945"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569022"
 ---
 # <a name="chartgridlines-resource-type"></a>Tipo de recurso ChartGridlines
 
-Representa as linhas de grade principais ou secundárias em um eixo do gráfico.
+Representa linhas de grade principais ou secundárias em um eixo do gráfico.
 
 
 ## <a name="methods"></a>Métodos
@@ -28,10 +28,10 @@ Representa as linhas de grade principais ou secundárias em um eixo do gráfico.
 |:---------------|:--------|:----------|
 |visible|booliano|Valor booliano que determina se as linhas de grade do eixo ficam visíveis ou não.|
 
-## <a name="relationships"></a>Relacionamentos
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|formato|[WorkbookChartGridlinesFormat](chartgridlinesformat.md)|Representa a formatação de linhas de grade do gráfico. Somente leitura.|
+|format|[WorkbookChartGridlinesFormat](chartgridlinesformat.md)|Representa a formatação de linhas de grade do gráfico. Somente leitura.|
 
 ## <a name="json-representation"></a>Representação JSON
 

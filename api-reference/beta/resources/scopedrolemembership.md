@@ -1,30 +1,30 @@
 ---
-title: tipo de recurso de scopedRoleMembership
-description: Uma associação de função com escopo descreve a associação de um usuário de uma função de diretório, que ainda mais destinada para uma unidade administrativa (AU).  Isso oferece um mecanismo para permitir que um adminsistrator locatário toda empresa delegar privilégios administrativos para um usuário gerencie usuários e grupos em um subconjunto da organização (o subconjunto está sendo definido por um AU).
+title: tipo de recurso scopedRoleMembership
+description: Uma associação de função com escopo descreve a associação de um usuário de uma função de diretório, que tem mais escopo para uma unidade administrativa (AU).  Isso fornece um mecanismo para permitir que uma empresa de todo o locatário adminsistrator delegar privilégios administrativos a um usuário para gerenciar usuários e grupos em um subconjunto da organização (o subconjunto que está definido por uma AU).
 localization_priority: Normal
 ms.openlocfilehash: 2d51ad696487e7daafb9b0f4fcef0934e4f6d6e2
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640788"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562973"
 ---
-# <a name="scopedrolemembership-resource-type"></a>tipo de recurso de scopedRoleMembership
+# <a name="scopedrolemembership-resource-type"></a>tipo de recurso scopedRoleMembership
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Uma associação de função com escopo descreve a associação de um usuário de uma função de diretório, que ainda mais destinada para uma unidade administrativa (AU).  Isso oferece um mecanismo para permitir que um adminsistrator locatário toda empresa delegar privilégios administrativos para um usuário gerencie usuários e grupos em um subconjunto da organização (o subconjunto está sendo definido por um AU).
+Uma associação de função com escopo descreve a associação de um usuário de uma função de diretório, que tem mais escopo para uma unidade administrativa (AU).  Isso fornece um mecanismo para permitir que uma empresa de todo o locatário adminsistrator delegar privilégios administrativos a um usuário para gerenciar usuários e grupos em um subconjunto da organização (o subconjunto que está definido por uma AU).
 
 ## <a name="methods"></a>Métodos
-Consultas diretas para este recurso não são suportadas.  Por favor, consulte o tópico de [unidades administrativas](administrativeunit.md) para ver informações sobre como consultar as associações de função com escopo, bem como adicionando e removendo associações de função com escopo. 
+Não há suporte para consultas diretas a esse recurso.  Confira o tópico [unidades administrativas](administrativeunit.md) para ver informações sobre como consultar as associações com escopo de função, bem como adicionar e remover associações com escopo de função. 
 
 ## <a name="properties"></a>Propriedades
 | Propriedade   | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|administrativeUnitId|string|Identificador exclusivo para a unidade administrativa que a função directory destinada a|
-|id|string| Identificador exclusivo para a associação da função com escopo. Somente leitura.|
-|roleId|string| Identificador exclusivo para a função de diretório que o membro é no.|
-|roleMemberInfo|[identity](identity.md)| Informações de identidade do membro de função. Representa o usuário que seja membro desta função com escopo.|
+|administrativeUnitId|string|Identificador exclusivo da unidade administrativa à qual a função de diretório tem escopo|
+|id|string| Identificador exclusivo da associação com escopo de função. Somente leitura.|
+|roleId|string| Identificador exclusivo da função de diretório em que o membro está.|
+|roleMemberInfo|[identity](identity.md)| Informações de identidade de membro da função. Representa o usuário que é um membro desse escopo-Role.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -39,7 +39,7 @@ Veja a seguir uma representação JSON do recurso.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.scopedrolemembership"
+  "@odata.type": "microsoft.graph.scopedRoleMembership"
 }-->
 
 ```json
@@ -61,8 +61,6 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/scopedrolemembership.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

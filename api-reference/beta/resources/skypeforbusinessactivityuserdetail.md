@@ -1,15 +1,15 @@
 ---
-title: tipo de recurso de skypeForBusinessActivityUserDetail
+title: tipo de recurso skypeForBusinessActivityUserDetail
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 ms.openlocfilehash: e847cbf469db3be55c8c12ebf31056a262962886
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828648"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32571762"
 ---
-# <a name="skypeforbusinessactivityuserdetail-resource-type"></a>tipo de recurso de skypeForBusinessActivityUserDetail
+# <a name="skypeforbusinessactivityuserdetail-resource-type"></a>tipo de recurso skypeForBusinessActivityUserDetail
 
 ## <a name="properties"></a>Propriedades
 
@@ -44,12 +44,12 @@ ms.locfileid: "27828648"
 | participatedConferenceWebCount          | Int64             |
 | participatedConferenceDialInOut3rdPartyCount | Int64             |
 | reportRefreshDate                        | Data              |
-| userPrincipalName                        | Cadeia de caracteres            |
+| userPrincipalName                        | String            |
 | isDeleted                                | Booliano           |
 | deletedDate                              | Data              |
 | lastActivityDate                         | Data              |
-| assignedProducts                         | String collection |
-| reportPeriod                             | Cadeia de caracteres            |
+| assignedProducts                         | Coleção de cadeias de caracteres |
+| reportPeriod                             | String            |
 
 ## <a name="json-representation"></a>Representação JSON
 

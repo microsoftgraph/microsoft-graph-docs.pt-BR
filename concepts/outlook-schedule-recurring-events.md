@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 ms.openlocfilehash: 9cdd7e7170dc48c2739514674786893efeae1b4e
-ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28016761"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32570345"
 ---
 # <a name="schedule-repeating-appointments-as-recurring-events-in-outlook"></a>Agendar compromissos repetidos como eventos recorrentes no Outlook
 

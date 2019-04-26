@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: c8a86e8cf427669777c8bd89edd81653449ac8ed
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31800298"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32571811"
 ---
 # <a name="adminconsentstate-enum-type"></a>tipo de enumeração adminConsentState
 
@@ -23,8 +23,8 @@ Estado de consentimento do administrador.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|O administrador não configurou o item|
-|granted|1|Item concedido pelo administrador|
-|Não concedido|duas|Deos de administração não conceder item|
+|granted|1 |Item concedido pelo administrador|
+|Não concedido|2 |Deos de administração não conceder item|
 
 
 

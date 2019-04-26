@@ -5,11 +5,11 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: de3662fcf3c5a8e50493e365f6a10a8641a451df
-ms.sourcegitcommit: 081cacecb4960aabc9e1011d12f06fe9ecf7d188
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30657508"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563093"
 ---
 # <a name="schedule-resource-type"></a>tipo de recurso Schedule
 
@@ -28,7 +28,7 @@ Uma coleção de objetos de grupo de [agendamento](schedulinggroup.md) , objetos
 ## <a name="properties"></a>Propriedades
 |Nome                   |Tipo           |Descrição                                                                                                                                      |
 |-----------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| id                    |`string`  |ID do `schedule`.|
+| id                    |`string`  |A ID da tarefa `schedule`.|
 | enabled               |`bool`    | Indica se o cronograma está habilitado para a equipe. Obrigatório.|
 | timeZone              |`string`  | Indica o fuso horário da equipe de agendamento usando o formato de banco de dados da TZ. Obrigatório.|
 | provisionStatus       |`enum`    | O status do provisionamento de agendamento. |

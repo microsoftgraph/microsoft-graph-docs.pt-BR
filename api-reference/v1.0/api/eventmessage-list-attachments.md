@@ -1,19 +1,21 @@
 ---
 title: Listar anexos
-description: Recuperar uma lista de objetos de anexo.
+description: Recupera uma lista de objetos de anexo.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 138759ad46af5ee5050e0c8e625d81e893c69725
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27976713"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32584240"
 ---
 # <a name="list-attachments"></a>Listar anexos
 
-Recuperar uma lista de objetos de anexo.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Recupera uma lista de objetos de anexo.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -42,7 +44,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [Attachment](../resources/attachment.md) no corpo da resposta.
+Se bem sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [Attachment](../resources/attachment.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
@@ -51,14 +53,14 @@ Este é um exemplo da solicitação.
   "name": "get_attachments"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/messages/{id}/attachments
+GET https://graph.microsoft.com/beta/me/messages/{id}/attachments
 ```
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "collection(microsoft.graph.attachment)",
+  "@odata.type": "microsoft.graph.attachment",
   "isCollection": true
 } -->
 ```http
@@ -69,14 +71,15 @@ Content-length: 215
 {
   "value": [
     {
-      "@odata.type": "microsoft.graph.fileAttachment",
+      "@odata.type": "#Microsoft.OutlookServices.FileAttachment",
       "contentType": "contentType-value",
       "contentLocation": "contentLocation-value",
-      "contentBytes": "base64-contentBytes-value",
+      "contentBytes": "contentBytes-value",
       "contentId": "null",
-      "lastModifiedDateTime": "datetime-value",
+      "lastModifiedDateTime": "2016-10-19T10:37:00Z",
       "id": "id-value",
       "isInline": false,
+      "isContactPhoto": false,
       "name": "name-value",
       "size": 99
     }
@@ -86,10 +89,13 @@ Content-length: 215
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List attachments",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

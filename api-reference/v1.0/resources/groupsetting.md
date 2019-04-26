@@ -1,27 +1,27 @@
 ---
 title: tipo de recurso groupSetting
-description: As configurações de grupo controlam comportamentos como listas de palavras bloqueadas para nomes de exibição de grupo ou se os usuários convidados podem ser proprietários de grupo.
+description: Os comportamentos de controle de configurações de grupo, como listas de palavras bloqueadas para nomes de exibição de grupo, ou se os usuários convidados podem ser proprietários de grupo.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 42e6c0dc0f0ffd48da84023c5e4ff0d97cb446f2
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27911690"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32570824"
 ---
 # <a name="groupsetting-resource-type"></a>tipo de recurso groupSetting
 
-As configurações de grupo controlam comportamentos como listas de palavras bloqueadas para nomes de exibição de grupo ou se os usuários convidados podem ser proprietários de grupo.
+Os comportamentos de controle de configurações de grupo, como listas de palavras bloqueadas para nomes de exibição de grupo, ou se os usuários convidados podem ser proprietários de grupo.
 
-As configurações de grupo podem ser criadas com base no [groupSettingTemplates](groupsettingtemplate.md) disponível e alteradas de seus padrões predefinidos. Essas configurações regem os comportamentos de grupo em um nível total de locatários ou para um grupo específico. Quando a mesma configuração é definida no nível do locatário e para um grupo específico, a configuração de nível de grupo anula a configuração de nível de locatários.  Por exemplo, a configuração de nível de locatário pode permitir que os convidados sejam convidados por membros existentes dos grupos, mas uma configuração de grupo individual pode substitui-la e não permitir que os convidados sejam convidados por membros do grupo. As configurações de grupo regem apenas o comportamento dos grupos do Office 365.
+As configurações de grupo podem ser criadas com base no [groupSettingTemplates](groupsettingtemplate.md)disponível e alteradas de seus padrões predefinidos. Essas configurações controlam os comportamentos de grupo em um nível de locatário ou em um grupo específico. Quando a mesma configuração é definida em todo o locatário e em um grupo específico, a configuração de nível de grupo substitui a configuração em todo o locatário.  Por exemplo, a configuração em todo o locatário pode permitir que convidados sejam convidados por membros existentes de grupos, mas uma configuração de grupo individual pode substituir e não permitir que convidados sejam convidados por membros do grupo. As configurações de grupo regem o comportamento de grupos do Office 365.
 
 ## <a name="methods"></a>Métodos
 
 | Método | Tipo de retorno | Descrição |
 |:---------------|:--------|:----------|
-|[Criar configuração](../api/groupsetting-post-groupsettings.md) | [groupSetting](groupsetting.md) |Crie um objeto de configuração com base em um groupSettingTemplate. A solicitação POST deve fornecer settingValues para todas as configurações definidas no modelo. |
+|[Criar configuração](../api/groupsetting-post-groupsettings.md) | [groupSetting](groupsetting.md) |Criar um objeto Setting com base em um groupSettingTemplate. A solicitação POST deve fornecer settingValues para todas as configurações definidas no modelo. |
 |[Obter configuração](../api/groupsetting-get.md) | [groupSetting](groupsetting.md) | Ler propriedades de um objeto de configuração específico. |
 |[Listar configurações](../api/groupsetting-list.md) | Conjunto [groupSetting](groupsetting.md) | Lista propriedades de todos os objetos de configuração. |
 |[Atualizar configuração](../api/groupsetting-update.md) | [groupSetting](groupsetting.md) | Atualize o objeto groupsetting. |
@@ -31,10 +31,10 @@ As configurações de grupo podem ser criadas com base no [groupSettingTemplates
 
 | Propriedade | Tipo | Descrição |
 |:---------------|:--------|:----------|
-|displayName|String| Nome de exibição deste grupo de configurações, originado do modelo associado. |
-|id|String| Identificador exclusivo destas configurações. Somente leitura. |
-|templateId|String| Identificador exclusivo para o modelo usado para criar este grupo de configurações. Somente leitura. |
-|values|conjunto [settingValue](settingvalue.md)| Conjunto de pares de nome/valor. Deve conter e ajustar todas as configurações definidas no modelo. |
+|displayName|String| Exibe o nome deste grupo de configurações, que vem do modelo associado. |
+|id|String| Identificador exclusivo dessas configurações. Somente leitura. |
+|templateId|String| Identificador exclusivo para o modelo usado para criar esse grupo de configurações. Somente leitura. |
+|values|[](settingvalue.md) coleção SettingValue| Coleção de pares de valor de nome. Deve conter e definir todas as configurações definidas no modelo. |
 
 ## <a name="relationships"></a>Relações
 

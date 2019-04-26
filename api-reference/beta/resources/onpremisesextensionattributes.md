@@ -1,19 +1,19 @@
 ---
-title: tipo de recurso de onPremisesExtensionAttributes
-description: A propriedade **onPremisesExtensionAttributes** da entidade do usuário contém quinze propriedades de atributo de extensão personalizada. Para um usuário onPremisesSyncEnabled, esse conjunto de propriedades é masterizado no Active Directory local e sincronizado com o Azure Active Directory e é somente leitura. Para um usuário somente na nuvem (onde onPremisesSyncEnabled é falso), essas propriedades podem ser definidas durante a criação ou atualização.
+title: tipo de recurso Onpremisesextensionattributes à
+description: A propriedade **onpremisesextensionattributes à** da entidade de usuário contém quinze Propriedades de atributos de extensões personalizadas. Para um usuário do **onPremisesSyncEnabled** , esse conjunto de propriedades é Mastered no Active Directory local e sincronizado com o Azure AD e é somente leitura. Para um usuário somente na nuvem (onde **onPremisesSyncEnabled** é false), essas propriedades podem ser definidas durante a criação ou atualização.
 localization_priority: Normal
 ms.openlocfilehash: f44f71fdcd86d2165289282568a2d7153ccc99b1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518237"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568875"
 ---
-# <a name="onpremisesextensionattributes-resource-type"></a>tipo de recurso de onPremisesExtensionAttributes
+# <a name="onpremisesextensionattributes-resource-type"></a>tipo de recurso Onpremisesextensionattributes à
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A propriedade **onPremisesExtensionAttributes** da entidade do [usuário](user.md) contém quinze propriedades de atributo de extensão personalizada. Para um usuário onPremisesSyncEnabled, esse conjunto de propriedades é masterizado no Active Directory local e sincronizado com o Azure Active Directory e é somente leitura. Para um usuário somente na nuvem (onde onPremisesSyncEnabled é falso), essas propriedades podem ser definidas durante a criação ou atualização.
+A propriedade **onpremisesextensionattributes à** da entidade de [usuário](user.md) contém quinze Propriedades de atributos de extensões personalizadas. Para um usuário do **onPremisesSyncEnabled** , esse conjunto de propriedades é Mastered no Active Directory local e sincronizado com o Azure AD e é somente leitura. Para um usuário somente na nuvem (onde **onPremisesSyncEnabled** é false), essas propriedades podem ser definidas durante a criação ou atualização.
 
 
 ## <a name="properties"></a>Propriedades
@@ -21,19 +21,19 @@ A propriedade **onPremisesExtensionAttributes** da entidade do [usuário](user.m
 |:---------------|:--------|:----------|
 |extensionAttribute1|String| Primeiro atributo de extensão personalizável. |
 |extensionAttribute2|String| Segundo atributo de extensão personalizável. |
-|extensionAttribute3|String| Atributo do terceiro extensão personalizável. |
+|extensionAttribute3|String| Terceiro atributo de extensão personalizável. |
 |extensionAttribute4|String| Quarto atributo de extensão personalizável. |
-|extensionAttribute5|String| Atributo do quinto extensão personalizável. |
+|extensionAttribute5|String| Quinto atributo de extensão personalizável. |
 |extensionAttribute6|String| Sexto atributo de extensão personalizável. |
 |extensionAttribute7|String| Sétimo atributo de extensão personalizável. |
 |extensionAttribute8|String| Oitavo atributo de extensão personalizável. |
 |extensionAttribute9|String| Nono atributo de extensão personalizável. |
 |extensionAttribute10|String| Décimo atributo de extensão personalizável. |
-|extensionAttribute11|String| Atributo de extensão Décima primeira personalizável. |
-|extensionAttribute12|String| Atributo de extensão Décima segunda personalizável. |
-|extensionAttribute13|String| Atributo de extensão Décima terceira personalizável. |
-|extensionAttribute14|String| Atributo de extensão décima quarta personalizável. |
-|extensionAttribute15|String| Atributo de extensão Décima quinta personalizável. |
+|extensionAttribute11|String| Décimo primeiro atributo de extensão personalizável. |
+|extensionAttribute12|String| Décimo segundo atributo de extensão personalizável. |
+|extensionAttribute13|String| Décimo terceiro atributo de extensão personalizável. |
+|extensionAttribute14|String| Atributo de extensão personalizável décimo quarto. |
+|extensionAttribute15|String| Atributo de extensão personalizável décimo quinto. |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -77,8 +77,6 @@ A propriedade **onPremisesExtensionAttributes** da entidade do [usuário](user.m
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/onpremisesextensionattributes.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

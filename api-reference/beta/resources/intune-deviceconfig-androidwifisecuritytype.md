@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: edc0f2d28891c48e4df73bdbdfda9edb931c90e2
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31787082"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562486"
 ---
 # <a name="androidwifisecuritytype-enum-type"></a>tipo de enumeração androidWiFiSecurityType
 
@@ -23,7 +23,7 @@ Tipos de segurança Wi-Fi para Android.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Abre|,0|Abrir (sem autenticação).|
-|wpaEnterprise|1|WPA-Enterprise/WPA2-Enterprise. Deve usar o tipo Androidenterprisewificonfiguration. para configurar opções da empresa.|
+|wpaEnterprise|1 |WPA-Enterprise/WPA2-Enterprise. Deve usar o tipo Androidenterprisewificonfiguration. para configurar opções da empresa.|
 
 
 

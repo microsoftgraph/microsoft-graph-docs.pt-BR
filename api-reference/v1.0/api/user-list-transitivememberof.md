@@ -1,19 +1,19 @@
 ---
-title: Membro transitivo do usuário de lista
-description: Obtenha os grupos, funções de diretório que o usuário é membro de. Essa solicitação API é transitiva e também retornará todos os grupos que o usuário é membro de aninhados.
+title: Listar usuário transitiva membro
+description: Obtenha grupos e funções de diretório dos quais o usuário é membro. Essa solicitação de API é transitiva e também retorna todos os grupos dos quais o usuário é um membro aninhado.
 author: anchanda
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 824e037d5f1e02051d315860ad3faa1254c25967
-ms.sourcegitcommit: d6209114cbbe8072e3ecf7eba23819ae5ace7db5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "29694479"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563795"
 ---
-# <a name="list-user-transitive-memberof"></a>Membro transitivo do usuário de lista
+# <a name="list-user-transitive-memberof"></a>Listar usuário transitiva membro
 
-Obtenha os grupos, funções de diretório que o usuário é membro de. Essa solicitação API é transitiva e também retornará todos os grupos que o usuário é membro de aninhados.
+Obtenha grupos e funções de diretório dos quais o usuário é membro. Essa solicitação de API é transitiva e também retorna todos os grupos dos quais o usuário é um membro aninhado.
 
 ## <a name="permissions"></a>Permissões
 

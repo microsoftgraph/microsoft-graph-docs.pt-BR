@@ -1,15 +1,15 @@
 ---
-title: tipo de recurso de hostSecurityState
+title: tipo de recurso hostSecurityState
 description: Contém informações de estado sobre o host (incluindo dispositivos, computadores e assim por diante).
 localization_priority: Normal
 ms.openlocfilehash: 0646547b7f3e31dcf283c1ce423a52b4ae16f013
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816335"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32570782"
 ---
-# <a name="hostsecuritystate-resource-type"></a>tipo de recurso de hostSecurityState
+# <a name="hostsecuritystate-resource-type"></a>tipo de recurso hostSecurityState
 
 Contém informações de estado sobre o host (incluindo dispositivos, computadores e assim por diante).
 
@@ -17,15 +17,15 @@ Contém informações de estado sobre o host (incluindo dispositivos, computador
 
 | Propriedade   | Tipo|Descrição|
 |:---------------|:--------|:----------|
-|FQDN|Cadeia de caracteres|FQDN (nome de domínio totalmente qualificado) do host (por exemplo, `machine.company.com`).|
-|isAzureAadJoined|Booliano|True se o host está integrado aos serviços de domínio do Azure Active Directory ao domínio.|
-|isAzureAadRegistered|Booliano|True se o host registrado com o Windows Azure Active Directory dispositivo registro (BYOD dispositivos - ou seja, não totalmente gerenciados pelo enterprise).|
-|isHybridAzureDomainJoined|Booliano|True se o host é associado a um domínio do Active Directory no local de domínio.|
-|Nome_netbios|Cadeia de caracteres|O nome de host local, sem o nome de domínio DNS.|
-|sistema operacional|Cadeia de caracteres|Sistema operacional do host. (Por exemplo, Windows10, MacOS, RHEL, etc.).|
-|privateIpAddress|Cadeia de caracteres|Endereço IPv4 ou IPv6 (não pode ser roteado) particular (consulte [RFC 1918](https://tools.ietf.org/html/rfc1918)) no momento do alerta.|
-|publicIpAddress|Cadeia de caracteres|Endereço IPv4 ou IPv6 roteável publicamente (consulte [RFC 1918](https://tools.ietf.org/html/rfc1918)) em tempo de alerta.|
-|riskScore|Cadeia de caracteres|Pontuação de risco de provedor-gerado/calculado do host.  Valor recomendado o intervalo de 0-1, que é igual a um percentual.|
+|FQDN|String|FQDN do host (nome de domínio totalmente qualificado) (por `machine.company.com`exemplo,).|
+|isAzureAadJoined|Booliano|True se o host estiver associado ao domínio nos serviços de domínio do Azure Active Directory.|
+|isAzureAadRegistered|Booliano|True se o host registrado no registro de dispositivo do Azure Active Directory (dispositivos BYOD-ou seja, não é totalmente gerenciado pela empresa).|
+|isHybridAzureDomainJoined|Booliano|True se o host é membro de um domínio do Active Directory local.|
+|netBiosname|String|O nome do host local, sem o nome de domínio DNS.|
+|Opera|String|Sistema operacional host. (Por exemplo, Windows10, MacOS, RHEL, etc.).|
+|privateIpAddress|String|Privado (não roteável) endereço IPv4 ou IPv6 (consulte [RFC 1918](https://tools.ietf.org/html/rfc1918)) no momento do alerta.|
+|publicIpAddress|String|Endereço IPv4 ou IPv6 roteável publicamente (consulte [RFC 1918](https://tools.ietf.org/html/rfc1918)) no momento do alerta.|
+|riskScore|String|Pontuação de risco calculado/gerado pelo provedor do host.  O intervalo de valor recomendado de 0-1, que é igual a uma porcentagem.|
 
 ## <a name="json-representation"></a>Representação JSON
 

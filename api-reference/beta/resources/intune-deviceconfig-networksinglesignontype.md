@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: bf818233dbb8910d5876496ff9d2d5b7b693b4c2
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31775412"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566791"
 ---
 # <a name="networksinglesignontype-enum-type"></a>tipo de enumeração networkSingleSignOnType
 
@@ -23,8 +23,8 @@ Configurações de tipo de logon único de rede Wi-Fi.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |deficiência|,0|Desabilitado|
-|pré-login|1|Pré-login|
-|pré-login|duas|Pós-logon|
+|pré-login|1 |Pré-login|
+|pré-login|2 |Pós-logon|
 
 
 

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: dbc62b855035ebf68fefae3d628582b566804449
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31781145"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566420"
 ---
 # <a name="vpptokenstate-enum-type"></a>tipo de enumeração vppTokenState
 
@@ -23,10 +23,10 @@ Estados possíveis associados a um token do Apple Volume Purchase Program.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |desconhecido|,0|Estado padrão.|
-|inválido|1|O token é válido.|
-|venceu|duas|O token expirou.|
-|Inválido|3D|O token é inválido.|
-|assignedToExternalMDM|quatro|O token é gerenciado por outro serviço MDM.|
+|inválido|1 |O token é válido.|
+|venceu|2 |O token expirou.|
+|Inválido|3 |O token é inválido.|
+|assignedToExternalMDM|4 |O token é gerenciado por outro serviço MDM.|
 
 
 

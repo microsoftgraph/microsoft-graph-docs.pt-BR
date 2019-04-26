@@ -1,19 +1,19 @@
 ---
-title: tipo de recurso de privilegedApproval
-description: Representa uma aprovação solicitada no gerenciamento de identidades privilegiado para entrar em uma função.
+title: tipo de recurso privilegedApproval
+description: Representa uma aprovação solicitada no gerenciamento de identidade privilegiado para obter uma função.
 localization_priority: Normal
 ms.openlocfilehash: 283236d945e9a71a4ae0461bbefe66260efa88a4
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643871"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563623"
 ---
-# <a name="privilegedapproval-resource-type"></a>tipo de recurso de privilegedApproval
+# <a name="privilegedapproval-resource-type"></a>tipo de recurso privilegedApproval
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma aprovação solicitada no gerenciamento de identidades privilegiado para entrar em uma função.
+Representa uma aprovação solicitada no gerenciamento de identidade privilegiado para obter uma função.
 
 
 ## <a name="methods"></a>Métodos
@@ -21,7 +21,7 @@ Representa uma aprovação solicitada no gerenciamento de identidades privilegia
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Get privilegedApproval](../api/privilegedapproval-get.md) | [privilegedApproval](privilegedapproval.md) |Leia as propriedades e os relacionamentos do objeto privilegedApproval.|
-|[Objetos de privilegedApproval List](../api/privilegedapproval-list.md) | [privilegedApproval](privilegedapproval.md) collection|Obtenha a coleção de privilegedApproval.|
+|[Listar objetos privilegedApproval](../api/privilegedapproval-list.md) | [privilegedApproval](privilegedapproval.md) collection|Obtenha a coleção de privilegedApproval.|
 |[Create privilegedApproval](../api/privilegedapproval-post-privilegedapproval.md) | [privilegedApproval](privilegedapproval.md)    |Crie um objeto privilegedApproval. |
 |[Update privilegedApproval](../api/privilegedapproval-update.md) | [privilegedApproval](privilegedapproval.md) |Atualize um objeto privilegedApproval. |
 |[Myrequests](../api/privilegedapproval-myrequests.md)|[privilegedApproval](privilegedapproval.md)|Receba solicitações de aprovação do solicitante.|
@@ -29,9 +29,9 @@ Representa uma aprovação solicitada no gerenciamento de identidades privilegia
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|approvalDuration|Duration||
-|approvalState|string| Os valores possíveis são: `pending`, `approved`, `denied`, `aborted`, `canceled`.|
-|approvalType|String||
+|approvalDuration|Duração||
+|approvalstate|string| Os valores possíveis são: `pending`, `approved`, `denied`, `aborted`, `canceled`.|
+|approvaltype|String||
 |approverReason|String||
 |endDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |id|String| Somente leitura.|
@@ -44,7 +44,7 @@ Representa uma aprovação solicitada no gerenciamento de identidades privilegia
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |roleInfo|[privilegedRole](privilegedrole.md)| Somente leitura. Anulável.|
-|solicitação|[privilegedRoleAssignmentRequest](privilegedroleassignmentrequest.md)| Somente leitura. A solicitação de atribuição de função para este objeto de aprovação|
+|pedir|[privilegedRoleAssignmentRequest](privilegedroleassignmentrequest.md)| Somente leitura. A solicitação de atribuição de função para este objeto de aprovação|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
@@ -54,6 +54,8 @@ Veja a seguir uma representação JSON do recurso.
   "optionalProperties": [
 
   ],
+  "keyProperty": "id",
+  "baseType":"microsoft.graph.entity",
   "@odata.type": "microsoft.graph.privilegedApproval"
 }-->
 
@@ -82,8 +84,6 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/privilegedapproval.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

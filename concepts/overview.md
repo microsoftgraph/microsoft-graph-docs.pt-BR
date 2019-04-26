@@ -4,11 +4,11 @@ description: O Microsoft Graph é o gateway para dados e inteligência no Micros
 author: jthake-msft
 localization_priority: Priority
 ms.openlocfilehash: b8256cebe9e8e706a655221c3e1acc5947f9eecd
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573708"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32558004"
 ---
 # <a name="overview-of-microsoft-graph"></a>Visão geral do Microsoft Graph
 

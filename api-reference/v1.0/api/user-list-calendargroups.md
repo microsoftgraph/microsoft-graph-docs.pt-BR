@@ -5,13 +5,15 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: ddd31fa4867d1653906ac6c331b284d18f3daa45
-ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30869320"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32567904"
 ---
 # <a name="list-calendargroups"></a>Listar calendarGroups
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Obter os grupos de calendários do usuário.
 ## <a name="permissions"></a>Permissões
@@ -51,7 +53,7 @@ Este é um exemplo da solicitação.
   "name": "get_calendargroups"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/calendarGroups
+GET https://graph.microsoft.com/beta/me/calendarGroups
 ```
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
@@ -80,10 +82,13 @@ Content-length: 155
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List calendarGroups",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

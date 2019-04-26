@@ -5,13 +5,15 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 1794fe41cb26fcd87f8a75635a422d3e93497299
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27916408"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550046"
 ---
 # <a name="add-educationclass-to-educationschool"></a>Adicionar educationClass a educationSchool
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Adicione uma aula a uma escola.
 
@@ -50,12 +52,12 @@ Este é um exemplo de solicitação.
   "name": "create_educationclass_from_educationschool"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/education/schools/{school-id}/classes/$ref
+POST https://graph.microsoft.com/beta/education/schools/10002/classes/$ref
 Content-type: application/json
 Content-length: 224
 
 {
- "@odata.id":"https://graph.microsoft.com/v1.0/education/classes/11006"
+ "@odata.id":"https://graph.microsoft.com/beta/education/classes/11006"
 }
 ```
 
@@ -75,10 +77,13 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create educationClass",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

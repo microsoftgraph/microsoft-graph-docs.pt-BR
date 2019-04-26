@@ -1,16 +1,16 @@
 ---
-title: tipo de recurso de siteActivitySummary
+title: tipo de recurso siteActivitySummary
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: a49b8e47ca2a6efcc5c5c87702fdea0122b208e1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27957134"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583596"
 ---
-# <a name="siteactivitysummary-resource-type"></a>tipo de recurso de siteActivitySummary
+# <a name="siteactivitysummary-resource-type"></a>tipo de recurso siteActivitySummary
 
 ## <a name="properties"></a>Propriedades
 
@@ -22,7 +22,7 @@ ms.locfileid: "27957134"
 | sharedInternally  | Int64  |
 | sharedExternally  | Int64  |
 | reportDate        | Data   |
-| reportPeriod      | Cadeia de caracteres |
+| reportPeriod      | String |
 
 ## <a name="json-representation"></a>Representação JSON
 

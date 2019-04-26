@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 6f303e55735c24edc46cb7107d9541c4b20c479a
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640550"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32570093"
 ---
 # <a name="invitation-manager"></a>gerenciador de convites
 
@@ -38,10 +38,10 @@ A criação de um convite retornará uma URL de resgate na resposta (*inviteRede
 |invitedUserDisplayName|String|O nome de exibição do usuário que está sendo convidado.|
 |invitedUserEmailAddress|String|O endereço de email do usuário que está sendo convidado. Obrigatório.|
 |invitedUserMessageInfo|[invitedUserMessageInfo](invitedusermessageinfo.md)|Configurações adicionais para a mensagem que está sendo enviada ao usuário convidado, incluindo a lista de destinatários cc, o idioma e o texto da mensagem de personalização.|
-|sendInvitationMessage|Booliano|Indica se um email deve ser enviado ao usuário que está sendo convidado ou não. O padrão é false.|
+|sendInvitationMessage|Boolean|Indica se um email deve ser enviado ao usuário que está sendo convidado ou não. O padrão é false.|
 |inviteRedirectUrl|String|A URL para a qual o usuário deve ser redirecionado após o resgate do convite. Obrigatório.|
 |inviteRedeemUrl|String|A URL que o usuário pode usar para resgatar o convite. Somente leitura|
-|invitedUserType|String|O userType do usuário que está sendo convidado. Por padrão, é Convidado. Você pode convidar como Membro se não for administrador da empresa. |
+|invitedUserType|String|O userType do usuário que está sendo convidado. Por padrão, é Convidado. Você pode convidar como um membro se você for administrador da empresa. |
 |status|String|O status do convite. Valores possíveis: PendingAcceptance, Completed, InProgress, e Error|
 
 ## <a name="relationships"></a>Relações

@@ -1,34 +1,34 @@
 ---
-title: tipo de recurso de objectMapping
-description: Define como um determinado objeto deve ser sincronizado do diretório de origem para o diretório de destino. Especificamente, ele define como o objeto no diretório de origem deve ser correspondido com um objeto no diretório de destino, o que (se houver) filtros de escopo deve ser usado para decidir se queremos provisionar um determinado objeto e como os atributos de objetos devem ser transformadas contínuas de fonte para o diretório de destino.
+title: tipo de recurso objectMapping
+description: Define como um determinado objeto deve ser sincronizado do diretório de origem para o diretório de destino. Em particular, define como o objeto no diretório de origem deve corresponder a um objeto no diretório de destino, quais filtros de escopo (se houver) devem ser usados para decidir se queremos provisionar um determinado objeto e como os atributos do objeto devem ser transformados origem para o diretório de destino.
 localization_priority: Normal
 ms.openlocfilehash: 274d401c28abc25d904c259b00a673f3c0a53888
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526911"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581749"
 ---
-# <a name="objectmapping-resource-type"></a>tipo de recurso de objectMapping
+# <a name="objectmapping-resource-type"></a>tipo de recurso objectMapping
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Define como um determinado objeto deve ser sincronizado do diretório de origem para o diretório de destino. Especificamente, ele define como o objeto no diretório de origem deve ser correspondido com um objeto no diretório de destino, o que (se houver) filtros de escopo deve ser usado para decidir se queremos provisionar um determinado objeto e como os atributos de objetos devem ser transformadas contínuas de fonte para o diretório de destino.
+Define como um determinado objeto deve ser sincronizado do diretório de origem para o diretório de destino. Em particular, define como o objeto no diretório de origem deve corresponder a um objeto no diretório de destino, quais filtros de escopo (se houver) devem ser usados para decidir se queremos provisionar um determinado objeto e como os atributos do objeto devem ser transformados origem para o diretório de destino.
 
-Mapeamentos de objeto são a parte principal da [regra de sincronização](synchronization-synchronizationrule.md) e serão atualizados como parte do [esquema de sincronização](synchronization-synchronizationschema.md).
+Os mapeamentos de objetos são a parte principal da [regra de sincronização](synchronization-synchronizationrule.md) e são atualizados como parte do esquema de [sincronização](synchronization-synchronizationschema.md).
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade      | Tipo      | Descrição    |
 |:--------------|:----------|:---------------|
-|attributeMappings  |coleção [attributeMapping](synchronization-attributemapping.md)    | Mapeamentos de atributos definem os atributos a serem mapeadas do objeto de origem para o objeto de destino e como eles deverão fluir. Um número de funções está disponível para dar suporte a transformação dos valores de fonte original.|
-|enabled        |Booliano    |Quando `true`, esse mapeamento do objeto será processado durante a sincronização. Quando `false`, esse mapeamento do objeto será ignorado.|
-|flowTypes      |objectFlowType    |Quais tipos de fluxo estão habilitados para esse mapeamento de objeto. `Add`cria novos objetos no diretório de destino, `Update` modifica objetos existentes, e `Delete` deprovisions usuários existentes. O padrão é `Add, Update, Delete`. |
-|Metadata       |coleção metadataEntry    |Propriedades adicionais de extensão. A menos que mencionado explicitamente, valores de metadados não devem ser alterados.|
-|name           |String     |Nome amigável a humanos do mapeamento de objeto.|
-|scope          |[filter](synchronization-filter.md)     |Define um filtro a ser usado ao decidir se um determinado objeto deve ser provisionado. Por exemplo, você talvez queira apenas os usuários de provisão que estão localizados nos EUA.|
-|sourceObjectName           |String     |Nome do objeto no diretório de origem. Deve corresponder ao nome de objeto a partir da fonte de [definição de diretório](synchronization-directorydefinition.md).|
-|targetObjectName           |String     |Nome do objeto no diretório de destino. Deve corresponder ao nome de objeto da [definição do diretório](synchronization-directorydefinition.md)de de destino.|
+|attributeMappings  |coleção [attributeMapping](synchronization-attributemapping.md)    | Os mapeamentos de atributo definem quais atributos devem ser mapeados do objeto de origem para o objeto de destino e como eles devem fluir. Várias funções estão disponíveis para dar suporte à transformação dos valores de origem originais.|
+|enabled        |Boolean    |Quando `true`, esse mapeamento de objeto será processado durante a sincronização. Quando `false`, esse mapeamento de objeto será ignorado.|
+|flowTypes      |objectFlowtype    |Quais tipos de fluxo estão habilitados para este mapeamento de objeto. `Add`cria novos objetos no diretório de destino, `Update` modifica objetos existentes e `Delete` desprovisiona usuários existentes. O padrão é `Add, Update, Delete`. |
+|los       |coleção metadataEntry    |Propriedades de extensão adicionais. A menos que seja mencionado explicitamente, os valores de metadados não devem ser alterados.|
+|name           |String     |Nome amigável do mapeamento do objeto.|
+|escopo          |[filter](synchronization-filter.md)     |Define um filtro a ser usado ao decidir se um determinado objeto deve ser provisionado. Por exemplo, você pode querer provisionar apenas usuários que estão localizados nos EUA.|
+|sourceObjectName           |String     |Nome do objeto no diretório de origem. Deve corresponder ao nome do objeto da [definição do diretório](synchronization-directorydefinition.md)de origem.|
+|targetObjectName           |String     |Nome do objeto no diretório de destino. Deve corresponder ao nome do objeto da [definição do diretório](synchronization-directorydefinition.md)de destino.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -55,7 +55,7 @@ Veja a seguir uma representação JSON do recurso.
 }
 ```
 
-## <a name="json-example"></a>Exemplo JSON
+## <a name="json-example"></a>Exemplo de JSON
 
 <!-- {
   "blockType": "resource",

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 9153844b813616162d82a5adc244baf50954ca75
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30989068"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32577191"
 ---
 # <a name="get-iosvppapp"></a>Acessar iosVppApp
 

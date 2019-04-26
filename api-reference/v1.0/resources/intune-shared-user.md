@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: a7a6c87b5c073e00b660db807ff38c454c302d94
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30253404"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32571844"
 ---
 # <a name="user-resource-type"></a>Tipo de recurso de usuário
 
@@ -22,7 +22,7 @@ Representa um objeto de usuário do Azure Active Directory.
 |:---|:---|:---|
 |[Listar](../api/intune-shared-user-list.md) objetos users.|Conjunto [user](../resources/intune-shared-user.md)|Listar propriedades e relações de objetos de [user](../resources/intune-shared-user.md).|
 |[Obtenha](../api/intune-shared-user-get.md) o objeto user.|Coleção [user](../resources/intune-shared-user.md)|Leia as propriedades e as relações do objeto [user](../resources/intune-shared-user.md).|
-|[Criar objeto user](../api/intune-shared-user-create.md) .|Coleção [user](../resources/intune-shared-user.md)|Criar um novo objeto de [user](../resources/intune-shared-user.md).|
+|[Criar objeto user](../api/intune-shared-user-create.md) .|Coleção [user](../resources/intune-shared-user.md)|Criar um novo objeto [user](../resources/intune-shared-user.md).|
 |[Excluir usuário](../api/intune-shared-user-delete.md).|Nenhum|Excluir [user](../resources/intune-shared-user.md).|
 |[Atualize](../api/intune-shared-user-update.md) o objeto do usuário.|[user](../resources/intune-shared-user.md)|Atualizar as propriedades de um objeto de [user](../resources/intune-shared-user.md).|
 |**Gerenciamento de dispositivos**|
@@ -35,7 +35,7 @@ Representa um objeto de usuário do Azure Active Directory.
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|Cadeia de caracteres|Identificador exclusivo do usuário.|
+|id|String|Identificador exclusivo do usuário.|
 |**Integração**|
 |deviceEnrollmentLimit|Int32|O limite do número máximo de dispositivos que o usuário tem permissão para inscrever. Os valores permitidos vão de 5 a 1000.|
 
@@ -47,7 +47,7 @@ Representa um objeto de usuário do Azure Active Directory.
 |managedDevices|Conjunto [managedDevice](../resources/intune-devices-manageddevice.md)|Os dispositivos gerenciados associados ao usuário.|
 |**Gerenciamento de aplicativo móvel (GAM)**|
 |managedAppRegistrations|Conjunto [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|Zero ou mais registros de aplicativos gerenciados que pertencem ao usuário.|
-|**Solução de problemas**|
+|**Solução de Problemas**|
 |deviceManagementTroubleshootingEvents|Conjunto [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|A lista de eventos de solução de problemas desse usuário.|
 
 ## <a name="json-representation"></a>Representação JSON

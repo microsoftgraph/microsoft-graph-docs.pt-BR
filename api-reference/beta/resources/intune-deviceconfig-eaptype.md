@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 1c0fea3bed512c98cd26488a7703554ac6c600f7
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31797421"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32567134"
 ---
 # <a name="eaptype-enum-type"></a>tipo de enumeração eapType
 
@@ -22,9 +22,9 @@ Tipos de configuração EAP (Extensible Authentication Protocol).
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|eapTls|Treze|EAP-Transport Layer Security (EAP-TLS).|
-|surpreendente|17.07.06|Protocolo de autenticação exTensível (LEAP) leves.|
-|eapSim|anos|EAP para módulo de identidade do assinante GSM (EAP-SIM).|
+|eapTls|13 |EAP-Transport Layer Security (EAP-TLS).|
+|surpreendente|17 |Protocolo de autenticação exTensível (LEAP) leves.|
+|eapSim|18 |EAP para módulo de identidade do assinante GSM (EAP-SIM).|
 |eapTtls|21|Protocolo EAP-TTLS (Transport Layer Security).|
 |autenticação|25|PEAP (protocolo de autenticação exTensível protegido).|
 |eapFast|43|Autenticação flexível EAP por meio de encapsulamento seguro (EAP-FAST).|

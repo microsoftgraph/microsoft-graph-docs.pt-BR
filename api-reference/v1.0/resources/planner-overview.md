@@ -1,40 +1,40 @@
 ---
-title: Use o Planejador de API REST
-description: Você pode usar a API do planejador no Microsoft Graph criar tarefas e atribuí-las aos usuários em um grupo no Office 365.
+title: Usar a API REST do Planner
+description: É possível usar a API do Planner no Microsoft Graph para criar e atribuir tarefas aos usuários em um grupo no Office 365.
 author: TarkanSevilmis
 localization_priority: Priority
 ms.prod: planner
 ms.openlocfilehash: 86d5c950b2e281a0af254d48a7d133d7e352341f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27944085"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462393"
 ---
-# <a name="use-the-planner-rest-api"></a>Use o Planejador de API REST
+# <a name="use-the-planner-rest-api"></a>Usar a API REST do Planner
 
-Você pode usar a API do planejador no Microsoft Graph criar tarefas e atribuí-las aos usuários em um grupo no Office 365.
+É possível usar a API do Planner no Microsoft Graph para criar e atribuir tarefas aos usuários em um grupo no Office 365.
 
-Antes de começar com a API do planejador, convém entender como os objetos principais se relacionam entre si, bem como para grupos do Office 365.
+Antes de começar com a API do Planner, você deve compreender como os objetos principais se relacionam entre si, bem como, com os grupos do Office 365.
 
 ## <a name="office-365-groups"></a>Grupos do Office 365
 
-Grupos de Office 365 são os proprietários dos planos de na API do planejador.
-Para [obter os planos pertencentes a um grupo](../api/plannergroup-list-plans.md), verifique a seguinte solicitação HTTP.
+Os grupos do Office 365 são os proprietários dos planos da API do Planner.
+Para [obter os planos pertencentes a um grupo](../api/plannergroup-list-plans.md), faça a solicitação HTTP a seguir.
 
 ``` http
 GET /groups/{id}/planner/plans
 ```
 
-Quando [criar um novo plano](../api/planner-post-plans.md), tornar seu proprietário de um grupo, definindo o `owner` propriedade em um objeto do plano. Planos devem pertencer por grupos.
+Ao [criar um novo plano](../api/planner-post-plans.md), torne o grupo o proprietário do plano definindo a propriedade `owner` em um objeto de plano. Os planos devem pertencer a grupos.
 
->**Observação:** O usuário que está criando o plano deve ser um membro do grupo que será o proprietário do plano. Quando você cria um novo grupo usando [Criar grupo](../api/group-post-groups.md), você não é adicionados ao grupo como um membro. Depois que o grupo é criado, adicione si mesmo como membro usando o [grupo postar membros](../api/group-post-members.md).
+>**Observação**: o usuário que está criando o plano deve ser um membro do grupo que será proprietário do plano. Ao criar um novo grupo usando [Criar grupo](../api/group-post-groups.md), você não é adicionado ao grupo como membro. Depois que o grupo for criado, adicione a si mesmo como membro usando [membros de postagem do grupo](../api/group-post-members.md).
 
 ## <a name="plans"></a>Planos
 
-[Planos](plannerplan.md) são os recipientes de [tarefas](plannertask.md). Para [criar uma tarefa em um plano](../api/planner-post-tasks.md), defina o `planId` propriedade no objeto de tarefa para a ID do plano durante a criação da tarefa.
-Tarefas atualmente não podem ser criadas sem planos.
-Para [recuperar as tarefas em um plano](../api/plannerplan-list-tasks.md), verifique a seguinte solicitação HTTP.
+Os [planos](plannerplan.md) são os contêineres das [tarefas](plannertask.md). Para [criar uma tarefa em um plano](../api/planner-post-tasks.md), defina a propriedade `planId` no objeto da tarefa como a ID do plano ao criar a tarefa.
+No momento, as tarefas não podem ser criadas sem planos.
+Para [recuperar as tarefas em um plano de](../api/plannerplan-list-tasks.md), faça a solicitação HTTP a seguir.
 
 ``` http
 GET /planner/plans/{id}/tasks
@@ -50,7 +50,7 @@ Os recursos do Planner são organizados em objetos básicos e objetos detalhados
 
 ## <a name="visualization"></a>Visualização
 
-Além dos dados de tarefa e plano, a API do planejador também fornece recursos para a criação de uma visualização comuns de dados entre clientes. Vários tipos de visualização de dados estão disponíveis para tarefas, conforme listado na tabela a seguir.
+Além do plano de dados e tarefas, a API do Planner também oferece recursos para criar uma visualização comum de dados nos clientes. Há vários tipos de visualização de dados disponíveis para as tarefas, conforme listado na tabela a seguir.
 
 | As tarefas são exibidas como                                                                        | As tarefas são ordenadas com informações de                                         |
 | :---------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------ |
@@ -62,13 +62,13 @@ Além dos dados de tarefa e plano, a API do planejador também fornece recursos 
 
 As colunas personalizadas no quadro de tarefas do bucket são representadas pelos objetos [bucket](plannerbucket.md) e, sua ordem, pela propriedade `orderHint` no objeto.
 
-Todos os a ordenação é controlada pelos princípios descritos em [dicas de ordem Planejador](planner-order-hint-format.md).
+Toda a ordem é controlada pelos princípios descritos em [Dicas de ordem do Planner](planner-order-hint-format.md).
 
 ## <a name="planner-resource-versioning"></a>Versão do recurso do Planner
 
-Versões do planejador todos os recursos usando **etags**. Esses **etags** são retornadas com `@odata.etag` propriedade em cada recurso. `PATCH`e `DELETE` solicitações exige a última **etag** conhecidos pelo cliente seja especificado com um `If-Match` cabeçalho.
-Planejador permite alterações versões mais antigas dos recursos, se a alteração pretendida não está em conflito com as alterações mais recentes aceitas pelo serviço Planejador no mesmo recurso. Os clientes podem identificar quais **etag** para o mesmo recurso é mais recente Calculando qual valor **etag** for maior em comparação ordinal da cadeia de caracteres. Cada recurso tem um exclusivo **etag**. Valores de ETag para recursos diferentes, incluindo aqueles com relações de confiança contenção, não podem ser comparados.
-Os aplicativos cliente esperados para lidar com controle de versão de [códigos de erro](/graph/errors) **409** e **412** relacionados ao lendo a versão mais recente do item e resolver as alterações conflitantes.
+O Planner cria versões de todos os recursos usando **etags**. Esses **etags** são retornados com a propriedade `@odata.etag` em cada recurso. As solicitações `PATCH` e `DELETE` requerem que a última **etag** conhecida pelo cliente seja especificada com um cabeçalho `If-Match`.
+O Planner permite alterações em versões mais antigas de recursos, se a alteração pretendida não estiver em conflito com as alterações mais recentes aceitas pelo serviço do Planner no mesmo recurso. Os clientes podem identificar qual **etag** para o mesmo recurso é mais recente ao calcular qual valor de **etag** é maior em comparação com a cadeia de caracteres ordinal. Cada recurso tem uma **etag** única. Não há comparações entre os valores de etags de recursos diferentes, incluindo aqueles com relações de confinamento.
+Espera-se que os aplicativos cliente tratem dos controles de versão relacionados aos [códigos de erro](/graph/errors) **409** e **412** lendo a versão mais recente do item e resolvendo as alterações conflitantes.
 
 ## <a name="common-planner-error-conditions"></a>Condições de erro comuns do Planner
 
@@ -76,16 +76,16 @@ Além dos [erros gerais](/graph/errors) que se aplicam ao Microsoft Graph, algum
 
 ### <a name="400-bad-request"></a>400 Solicitação Incorreta
 
-Em alguns cenários comuns, `POST` e `PATCH` solicitações podem retornar um código de 400 status. A seguir estão algumas das causas comuns:
+Em alguns cenários comuns, as solicitações `POST` e `PATCH` podem retornar um código de status 400. Estas são algumas das mais comuns:
 
-* As propriedades Open Type não têm os tipos corretos ou o tipo não foi especificado ou não contêm propriedades. Por exemplo, as propriedades [plannerAssignments](plannerassignments.md) com valores complexos precisam declarar a propriedade `@odata.type` com valor `microsoft.graph.plannerAssignment`.
-* Os valores da dica de ordem não têm o [formato correto](planner-order-hint-format.md). Por exemplo, um valor de dica de ordem está sendo definido diretamente como o valor retornado ao cliente.
-* Os dados são logicamente inconsistentes. Por exemplo, a data de início da tarefa é posterior à data de conclusão da tarefa.
+* As propriedades Open Type não têm os tipos corretos ou o tipo não foi especificado ou não contêm propriedades. Por exemplo, as propriedades plannerAssignments com valores complexos precisam declarar a propriedade  com valor .
+* Os valores da dica de ordem não têm o formato correto. Por exemplo, um valor de dica de ordem está sendo definido diretamente como o valor retornado ao cliente.
+* Os dados são ilogicamente inconsistentes. Por exemplo, a data de início da tarefa é posterior à data de conclusão da tarefa.
 
 ### <a name="403-forbidden"></a>403 Proibido
 
-Além dos erros gerais, a API do planejador também retorna o código de 403 status quando um limite definido pelo serviço foi excedido. Se este for o caso, o `code` propriedade no tipo de recurso de erro indicará o tipo do limite ultrapassado na solicitação.
-A seguir estão os valores possíveis para os tipos de limite.
+Além dos erros gerais, a API do Planner também retorna esse código de status 403 quando um limite definido pelo serviço é excedido. Se esse for o caso, a propriedade `code` no tipo de recurso do erro indicará o tipo do limite excedido pela solicitação.
+Os valores possíveis para os tipos de limite são:
 
 | Valor                         | Descrição                                                                                                                                                                                              |
 | :---------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -100,10 +100,10 @@ A seguir estão os valores possíveis para os tipos de limite.
 | MaximumReferencesOnTask       | A propriedade `references` no recurso [plannerTaskDetails](plannertaskdetails.md) contém muitos valores.                                                                                          |
 | MaximumChecklistItemsOnTask   | A propriedade `checklist` no recurso [plannerTaskDetails](plannertaskdetails.md) contém muitos valores.                                                                                           |
 | MaximumAssigneesInTasks       | A propriedade `assignments` no recurso [plannerTask](plannertask.md) contém muitos valores.                                                                                                       |
-| MaximumPlannerPlans       | O grupo já contém um plano. Atualmente, os grupos podem conter somente um plano. **Observação:** Alguns aplicativos Microsoft podem exceder esse limite. No futuro, podemos estenderá esse recurso para todos os aplicativos.                                                                                                      |
+| MaximumPlannerPlans       | O grupo já contém um plano. Atualmente, os grupos só podem conter um plano. **Observação:** alguns aplicativos da Microsoft podem ultrapassar esse limite. Futuramente, essa funcionalidade será estendida para todos os aplicativos.                                                                                                      |
 
 ### <a name="412-precondition-failed"></a>412 Falha na Pré-condição 
 
-API de todos os Planer `POST`, `PATCH`, e `DELETE` solicitações exigem o `If-Match` cabeçalho seja especificado com o último valor conhecido etag do recurso que está sujeito a solicitação.
-O código de 412 status também pode ser retornado se o valor de etag especificado na solicitação não corresponde a uma versão do recurso no serviço. Nesse caso, os clientes devem ler o recurso novamente e obter um novo etag.
+Todas as solicitações `POST`, `PATCH` e `DELETE` da API do Planner exigem que o cabeçalho `If-Match` seja especificado com o último valor de etag conhecido do recurso que está sujeito à solicitação.
+O código de status 412 também pode ser retornado se o valor da etag especificado na solicitação já não corresponder a uma versão do recurso no serviço. Nesse caso, os clientes devem ler o recurso novamente e obter uma nova etag.
 

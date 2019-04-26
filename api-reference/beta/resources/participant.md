@@ -1,17 +1,17 @@
 ---
-title: tipo de recurso de participantes
+title: tipo de recurso participante
 description: O tipo de participante.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: f49526824b2b6c4eb4a5065f05ab4c765d299faa
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508143"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568608"
 ---
-# <a name="participant-resource-type"></a>tipo de recurso de participantes
+# <a name="participant-resource-type"></a>tipo de recurso participante
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -21,25 +21,25 @@ O tipo de participante.
 
 | Método                                                          | Tipo de retorno                              | Descrição                                       |
 |:----------------------------------------------------------------|:-----------------------------------------|:--------------------------------------------------|
-| [Obtenha um participante](../api/participant-get.md)                    | [participante](participant.md)            | Leia as propriedades do objeto **participante** .    |
-| [ConfigureMixer](../api/participant-configuremixer.md)          | [commsOperation](commsoperation.md)      | Configure o participante mixer de áudio.            |
-| [Convidar](../api/participant-invite.md)                          | [commsOperation](commsoperation.md)      | Convide um participante à chamada.                 |
-| [Ativar Mudo participante](../api/participant-mute.md)                  | [commsOperation](commsoperation.md)      | Ativar Mudo de um participante em uma chamada.                     |
-| [Ativar Mudo de todos os participantes](../api/participant-muteall.md)          | [commsOperation](commsoperation.md)      | Ativar Mudo de todos os participantes da reunião.         |
+| [Obter participante](../api/participant-get.md)                    | [participante](participant.md)            | Leia as propriedades do objeto **participante** .    |
+| [ConfigureMixer](../api/participant-configuremixer.md)          | [commsOperation](commsoperation.md)      | Configure o mixer de áudio do participante.            |
+| [Convidar](../api/participant-invite.md)                          | [commsOperation](commsoperation.md)      | Convidar um participante para a chamada.                 |
+| [Ativar mudo para participante](../api/participant-mute.md)                  | [commsOperation](commsoperation.md)      | Tirar o áudio de um participante em uma chamada.                     |
+| [Ativar mudo em todos os participantes](../api/participant-muteall.md)          | [commsOperation](commsoperation.md)      | Ativar mudo de todos os participantes da reunião.         |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade             | Tipo                                     | Descrição                                                  |
 | :------------------- | :--------------------------------------- | :------------------------------------------------------------|
-| id                   | String                                   | A identificação dos participantes.                                          |
-| Info                 | [participantInfo](participantinfo.md)    | O participante do participante.                          |
-| isInLobby            | booliano                                  | True se o participante estiver no lobby                          |
-| isMuted              | booliano                                  | True se o participante está sem som (cliente ou servidor sem áudio)    |
+| id                   | String                                   | A ID do participante.                                          |
+| informações                  | [participantInfo](participantinfo.md)    | O participante do participante.                          |
+| isInLobby            | booliano                                  | true se o participante está no lobby                          |
+| IsMuted              | booliano                                  | true se o participante estiver mudo (cliente ou servidor sem som)    |
 | mediaStreams         | coleção [mediaStream](mediastream.md) | A lista de fluxos de mídia.                                   |
-| Metadata             | String                                   | Um blob de dados fornecidos pelo participante na lista     |
-| recordingInfo        | [recordingInfo](recordinginfo.md)        | Informações sobre se o participante tenha o recurso de gravação. |
+| los             | String                                   | Um blob de dados fornecido pelo participante na lista     |
+| recordingInfo        | [recordingInfo](recordinginfo.md)        | Informações sobre o fato de o participante ter capacidade de gravação. |
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
@@ -112,8 +112,6 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/participant.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

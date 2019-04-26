@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: e2a04b8cf7520425527e118fcc9db00461c4edda
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31797736"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563802"
 ---
 # <a name="configurationmanagerclienthealthstate-resource-type"></a>tipo de recurso configurationManagerClientHealthState
 
@@ -27,7 +27,7 @@ Estado de integridade do cliente de gerenciador de configurações
 |lastSyncDateTime|DateTimeOffset|DateTime fo última sincronização com o ponto de gerenciamento do Configuration Manager.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

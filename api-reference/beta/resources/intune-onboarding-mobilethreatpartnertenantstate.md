@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: b145805247a41f28e957cc024941d0e0448a73ff
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31772290"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566483"
 ---
 # <a name="mobilethreatpartnertenantstate-enum-type"></a>tipo de enumeração mobileThreatPartnerTenantState
 
@@ -23,9 +23,9 @@ Estado do parceiro desse locatário.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |indisponível|,0|O parceiro não está disponível.|
-|disponível|1|O parceiro está disponível.|
-|enabled|duas|O parceiro está habilitado.|
-|Não responde|3D|O parceiro não responde.|
+|disponível|1 |O parceiro está disponível.|
+|enabled|2 |O parceiro está habilitado.|
+|Não responde|3 |O parceiro não responde.|
 
 
 

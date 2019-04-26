@@ -33,12 +33,14 @@ Veja a seguir uma representação JSON do recurso.
   "optionalProperties": [
 
   ],
+  "baseType": "microsoft.graph.meetingInfo",
+   "openType": true,
   "@odata.type": "microsoft.graph.organizerMeetingInfo"
 }-->
 ```json
 {
   "allowConversationWithoutHost": true,
-  "organizer": { "@odata.type": "#microsoft.graph.identitySet" }
+  "organizer": { "@odata.type": "microsoft.graph.identitySet" }
 }
 ```
 
@@ -69,8 +71,6 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/organizermeetinginfo.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->
