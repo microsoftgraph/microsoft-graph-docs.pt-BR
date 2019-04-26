@@ -3,7 +3,7 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: Obter uma lista do SharePoint
-localization_priority: Priority
+localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 9e667055b47568d712349c6725bd4ebc70aa63fd
 ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
@@ -13,6 +13,8 @@ ms.lasthandoff: 04/24/2019
 ms.locfileid: "32568079"
 ---
 # <a name="get-metadata-for-a-list"></a><span data-ttu-id="5c45a-102">Obter metadados de uma lista</span><span class="sxs-lookup"><span data-stu-id="5c45a-102">Get metadata for a list</span></span>
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 <span data-ttu-id="5c45a-103">Retorna os metadados de uma [list][].</span><span class="sxs-lookup"><span data-stu-id="5c45a-103">Returns the metadata for a [list][].</span></span>
 
@@ -31,8 +33,8 @@ ms.locfileid: "32568079"
 ## <a name="http-request"></a><span data-ttu-id="5c45a-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="5c45a-116">HTTP request</span></span>
 
 ```http
-GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}
-GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}?expand=columns,items(expand=fields)
+GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}
+GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}?expand=columns,items(expand=fields)
 ```
 
 ## <a name="request-body"></a><span data-ttu-id="5c45a-117">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="5c45a-117">Request body</span></span>
@@ -43,7 +45,7 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}?expand=colu
 
 #### <a name="request"></a><span data-ttu-id="5c45a-120">Solicitação</span><span class="sxs-lookup"><span data-stu-id="5c45a-120">Request</span></span>
 
-<!-- { "blockType": "request", "name": "get-list", "scopes": "sites.read.all" } -->
+<!-- { "blockType": "request", "name": "get-list" } -->
 
 ```http
 GET /sites/{site-id}/lists/{list-id}
@@ -51,7 +53,7 @@ GET /sites/{site-id}/lists/{list-id}
 
 #### <a name="response"></a><span data-ttu-id="5c45a-121">Resposta</span><span class="sxs-lookup"><span data-stu-id="5c45a-121">Response</span></span>
 
-<!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
+<!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all service.sharepoint" } -->
 
 ```json
 HTTP/1.1 200 OK
@@ -73,22 +75,21 @@ Content-type: application/json
 
 #### <a name="request"></a><span data-ttu-id="5c45a-123">Solicitação</span><span class="sxs-lookup"><span data-stu-id="5c45a-123">Request</span></span>
 
-<!-- { "blockType": "request", "name": "get-list-multi-expand", "scopes": "sites.read.all" } -->
+<!-- { "blockType": "request", "name": "get-list-multi-expand" } -->
 
 ```http
-GET /sites/{site-id}/lists/{list-id}?select=id,name,lastModifiedDateTime&expand=columns(select=name,description),items(expand=fields(select=Name,Color,Quantity))
+GET /sites/{site-id}/lists/{list-id}?select=name,lastModifiedDateTime&expand=columns(select=name,description),items(expand=fields(select=Name,Color,Quantity))
 ```
 
 #### <a name="response"></a><span data-ttu-id="5c45a-124">Resposta</span><span class="sxs-lookup"><span data-stu-id="5c45a-124">Response</span></span>
 
-<!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
+<!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all service.sharepoint" } -->
 
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "id": "1234-112-112-4",
   "name": "Inventory",
   "lastModifiedDateTime": "2016-08-30T08:32:00Z",
   "columns": [
@@ -134,10 +135,13 @@ Content-type: application/json
 }
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Lists/Get metadata"
-} -->
+  "tocPath": "Lists/Get metadata",
+  "suppressions": []
+}
+-->
