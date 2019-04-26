@@ -4,30 +4,30 @@ description: Carregar vários indicadores de inteligência de ameaça (TI) em um
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: b6d3e530fc571029c3b71675ca195e7bb046c823
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b16f3da7d2c0183da5b7e06cef3bce450bbe0068
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32536989"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33335249"
 ---
-# <a name="tiindicator-submittiindicators"></a><span data-ttu-id="702eb-103">tiIndicator: submitTiIndicators</span><span class="sxs-lookup"><span data-stu-id="702eb-103">tiIndicator: submitTiIndicators</span></span>
+# <a name="tiindicator-submittiindicators"></a><span data-ttu-id="f9fa5-103">tiIndicator: submitTiIndicators</span><span class="sxs-lookup"><span data-stu-id="f9fa5-103">tiIndicator: submitTiIndicators</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="702eb-104">Carregar vários indicadores de inteligência de ameaça (TI) em uma solicitação em vez de várias solicitações.</span><span class="sxs-lookup"><span data-stu-id="702eb-104">Upload multiple threat intelligence (TI) indicators in one request instead of multiple requests.</span></span>
+<span data-ttu-id="f9fa5-104">Carregar vários indicadores de inteligência de ameaça (TI) em uma solicitação em vez de várias solicitações.</span><span class="sxs-lookup"><span data-stu-id="f9fa5-104">Upload multiple threat intelligence (TI) indicators in one request instead of multiple requests.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="702eb-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="702eb-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="f9fa5-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="f9fa5-105">Permissions</span></span>
 
-<span data-ttu-id="702eb-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="702eb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="f9fa5-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f9fa5-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="702eb-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="702eb-108">Permission type</span></span> | <span data-ttu-id="702eb-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="702eb-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="f9fa5-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="f9fa5-108">Permission type</span></span> | <span data-ttu-id="f9fa5-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="f9fa5-109">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="702eb-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="702eb-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="702eb-111">ThreatIndicators.ReadWrite.OwnedBy</span><span class="sxs-lookup"><span data-stu-id="702eb-111">ThreatIndicators.ReadWrite.OwnedBy</span></span> |
-| <span data-ttu-id="702eb-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="702eb-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="702eb-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="702eb-113">Not supported.</span></span> |
-| <span data-ttu-id="702eb-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="702eb-114">Application</span></span>                            | <span data-ttu-id="702eb-115">ThreatIndicators.ReadWrite.OwnedBy</span><span class="sxs-lookup"><span data-stu-id="702eb-115">ThreatIndicators.ReadWrite.OwnedBy</span></span> |
+| <span data-ttu-id="f9fa5-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="f9fa5-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="f9fa5-111">ThreatIndicators.ReadWrite.OwnedBy</span><span class="sxs-lookup"><span data-stu-id="f9fa5-111">ThreatIndicators.ReadWrite.OwnedBy</span></span> |
+| <span data-ttu-id="f9fa5-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="f9fa5-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f9fa5-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="f9fa5-113">Not supported.</span></span> |
+| <span data-ttu-id="f9fa5-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="f9fa5-114">Application</span></span>                            | <span data-ttu-id="f9fa5-115">ThreatIndicators.ReadWrite.OwnedBy</span><span class="sxs-lookup"><span data-stu-id="f9fa5-115">ThreatIndicators.ReadWrite.OwnedBy</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="702eb-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="702eb-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f9fa5-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="f9fa5-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -35,39 +35,40 @@ ms.locfileid: "32536989"
 POST /security/tiIndicators/submitTiIndicators
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="702eb-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="702eb-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="f9fa5-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="f9fa5-117">Request headers</span></span>
 
-| <span data-ttu-id="702eb-118">Nome</span><span class="sxs-lookup"><span data-stu-id="702eb-118">Name</span></span>          | <span data-ttu-id="702eb-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="702eb-119">Description</span></span>   |
+| <span data-ttu-id="f9fa5-118">Nome</span><span class="sxs-lookup"><span data-stu-id="f9fa5-118">Name</span></span>          | <span data-ttu-id="f9fa5-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="f9fa5-119">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="702eb-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="702eb-120">Authorization</span></span> | <span data-ttu-id="702eb-121">Portador {código}</span><span class="sxs-lookup"><span data-stu-id="702eb-121">Bearer {code}</span></span> |
+| <span data-ttu-id="f9fa5-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="f9fa5-120">Authorization</span></span> | <span data-ttu-id="f9fa5-121">Portador {código}</span><span class="sxs-lookup"><span data-stu-id="f9fa5-121">Bearer {code}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="702eb-122">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="702eb-122">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="f9fa5-122">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="f9fa5-122">Request body</span></span>
 
-<span data-ttu-id="702eb-123">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="702eb-123">In the request body, provide a JSON object with the following parameters.</span></span>
+<span data-ttu-id="f9fa5-123">Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="f9fa5-123">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="702eb-124">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="702eb-124">Parameter</span></span>    | <span data-ttu-id="702eb-125">Tipo</span><span class="sxs-lookup"><span data-stu-id="702eb-125">Type</span></span>        | <span data-ttu-id="702eb-126">Descrição</span><span class="sxs-lookup"><span data-stu-id="702eb-126">Description</span></span> |
+| <span data-ttu-id="f9fa5-124">Parâmetro</span><span class="sxs-lookup"><span data-stu-id="f9fa5-124">Parameter</span></span>    | <span data-ttu-id="f9fa5-125">Tipo</span><span class="sxs-lookup"><span data-stu-id="f9fa5-125">Type</span></span>        | <span data-ttu-id="f9fa5-126">Descrição</span><span class="sxs-lookup"><span data-stu-id="f9fa5-126">Description</span></span> |
 |:-------------|:------------|:------------|
-|<span data-ttu-id="702eb-127">valor</span><span class="sxs-lookup"><span data-stu-id="702eb-127">value</span></span>|<span data-ttu-id="702eb-128">coleção tiIndicator</span><span class="sxs-lookup"><span data-stu-id="702eb-128">tiIndicator collection</span></span>| <span data-ttu-id="702eb-129">Coleção JSON de **tiIndicators** a ser criada.</span><span class="sxs-lookup"><span data-stu-id="702eb-129">JSON collection of **tiIndicators** to be created.</span></span> |
+|<span data-ttu-id="f9fa5-127">valor</span><span class="sxs-lookup"><span data-stu-id="f9fa5-127">value</span></span>|<span data-ttu-id="f9fa5-128">coleção tiIndicator</span><span class="sxs-lookup"><span data-stu-id="f9fa5-128">tiIndicator collection</span></span>| <span data-ttu-id="f9fa5-129">Coleção JSON de **tiIndicators** a ser criada.</span><span class="sxs-lookup"><span data-stu-id="f9fa5-129">JSON collection of **tiIndicators** to be created.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="702eb-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="702eb-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="f9fa5-130">Resposta</span><span class="sxs-lookup"><span data-stu-id="f9fa5-130">Response</span></span>
 
-<span data-ttu-id="702eb-131">Se bem-sucedido, este método retorna `200, OK` o código de resposta e um objeto da coleção [tiIndicator](../resources/tiindicator.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="702eb-131">If successful, this method returns `200, OK` response code and a [tiIndicator](../resources/tiindicator.md) collection object in the response body.</span></span>
+<span data-ttu-id="f9fa5-131">Se bem-sucedido, este método retorna `200, OK` o código de resposta e um objeto da coleção [tiIndicator](../resources/tiindicator.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="f9fa5-131">If successful, this method returns `200, OK` response code and a [tiIndicator](../resources/tiindicator.md) collection object in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="702eb-132">Exemplos</span><span class="sxs-lookup"><span data-stu-id="702eb-132">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="f9fa5-132">Exemplos</span><span class="sxs-lookup"><span data-stu-id="f9fa5-132">Examples</span></span>
 
-<span data-ttu-id="702eb-133">O exemplo a seguir mostra como chamar essa API.</span><span class="sxs-lookup"><span data-stu-id="702eb-133">The following example shows how to call this API.</span></span>
+<span data-ttu-id="f9fa5-133">O exemplo a seguir mostra como chamar essa API.</span><span class="sxs-lookup"><span data-stu-id="f9fa5-133">The following example shows how to call this API.</span></span>
 
-### <a name="request"></a><span data-ttu-id="702eb-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="702eb-134">Request</span></span>
+### <a name="request"></a><span data-ttu-id="f9fa5-134">Solicitação</span><span class="sxs-lookup"><span data-stu-id="f9fa5-134">Request</span></span>
 
-<span data-ttu-id="702eb-135">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="702eb-135">The following is an example of the request.</span></span>
+<span data-ttu-id="f9fa5-135">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="f9fa5-135">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
-  "name": "tiindicator_submittiindicators"
+  "name": "tiindicator_submittiindicators",
+  "isCollection":"true"
 }-->
 
 ```http
 POST https://graph.microsoft.com/beta/security/tiIndicators/submitTiIndicators
-Content-type: application/json
+Content-Type: application/json
 
 {
   "value": [
@@ -107,12 +108,12 @@ Content-type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="702eb-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="702eb-136">Response</span></span>
+### <a name="response"></a><span data-ttu-id="f9fa5-136">Resposta</span><span class="sxs-lookup"><span data-stu-id="f9fa5-136">Response</span></span>
 
-<span data-ttu-id="702eb-137">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="702eb-137">The following is an example of the response.</span></span>
+<span data-ttu-id="f9fa5-137">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="f9fa5-137">The following is an example of the response.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="702eb-138">O objeto de resposta mostrado aqui pode ser reduzido para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="702eb-138">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="702eb-139">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="702eb-139">All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="f9fa5-138">O objeto de resposta mostrado aqui pode ser reduzido para legibilidade.</span><span class="sxs-lookup"><span data-stu-id="f9fa5-138">The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="f9fa5-139">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="f9fa5-139">All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -124,6 +125,7 @@ Content-type: application/json
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
   "value": [
     {

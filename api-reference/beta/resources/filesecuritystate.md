@@ -2,31 +2,31 @@
 title: tipo de recurso fileSecuritystate
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
 localization_priority: Normal
-ms.openlocfilehash: 485addfda2707c8848c44c839f9593378943f327
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8709df89c1a8b82f2381ab450fa235ba325a9f88
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32506405"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333750"
 ---
-# <a name="filesecuritystate-resource-type"></a><span data-ttu-id="2b4ad-104">tipo de recurso fileSecuritystate</span><span class="sxs-lookup"><span data-stu-id="2b4ad-104">fileSecurityState resource type</span></span>
+# <a name="filesecuritystate-resource-type"></a><span data-ttu-id="4952e-104">tipo de recurso fileSecuritystate</span><span class="sxs-lookup"><span data-stu-id="4952e-104">fileSecurityState resource type</span></span>
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="2b4ad-105">Contém informações sobre o arquivo (não processo) relacionado ao alerta.</span><span class="sxs-lookup"><span data-stu-id="2b4ad-105">Contains information about the file (not process) related to the alert.</span></span>
+<span data-ttu-id="4952e-105">Contém informações sobre o arquivo (não processo) relacionado ao alerta.</span><span class="sxs-lookup"><span data-stu-id="4952e-105">Contains information about the file (not process) related to the alert.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="2b4ad-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="2b4ad-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="4952e-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="4952e-106">Properties</span></span>
 
-| <span data-ttu-id="2b4ad-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="2b4ad-107">Property</span></span>   | <span data-ttu-id="2b4ad-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="2b4ad-108">Type</span></span>|<span data-ttu-id="2b4ad-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="2b4ad-109">Description</span></span>|
+| <span data-ttu-id="4952e-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="4952e-107">Property</span></span>   | <span data-ttu-id="4952e-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="4952e-108">Type</span></span>|<span data-ttu-id="4952e-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="4952e-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="2b4ad-110">fileHash</span><span class="sxs-lookup"><span data-stu-id="2b4ad-110">fileHash</span></span>|[<span data-ttu-id="2b4ad-111">fileHash</span><span class="sxs-lookup"><span data-stu-id="2b4ad-111">fileHash</span></span>](filehash.md)|<span data-ttu-id="2b4ad-112">Tipo complexo contendo hashes de arquivo (criptográfico e diferencia local).</span><span class="sxs-lookup"><span data-stu-id="2b4ad-112">Complex type containing file hashes (cryptographic and location-sensitive).</span></span>|
-|<span data-ttu-id="2b4ad-113">nome</span><span class="sxs-lookup"><span data-stu-id="2b4ad-113">name</span></span>|<span data-ttu-id="2b4ad-114">String</span><span class="sxs-lookup"><span data-stu-id="2b4ad-114">String</span></span>|<span data-ttu-id="2b4ad-115">Nome do arquivo (sem o caminho).</span><span class="sxs-lookup"><span data-stu-id="2b4ad-115">File name (without path).</span></span>|
-|<span data-ttu-id="2b4ad-116">caminho</span><span class="sxs-lookup"><span data-stu-id="2b4ad-116">path</span></span>|<span data-ttu-id="2b4ad-117">String</span><span class="sxs-lookup"><span data-stu-id="2b4ad-117">String</span></span>|<span data-ttu-id="2b4ad-118">Caminho completo do arquivo/ImageFile.</span><span class="sxs-lookup"><span data-stu-id="2b4ad-118">Full file path of the file/imageFile.</span></span>|
-|<span data-ttu-id="2b4ad-119">riskScore</span><span class="sxs-lookup"><span data-stu-id="2b4ad-119">riskScore</span></span>|<span data-ttu-id="2b4ad-120">String</span><span class="sxs-lookup"><span data-stu-id="2b4ad-120">String</span></span>|<span data-ttu-id="2b4ad-121">Geração de um provedor/Pontuação de risco calculado do arquivo de alerta.</span><span class="sxs-lookup"><span data-stu-id="2b4ad-121">Provider generated/calculated risk score of the alert file.</span></span> <span data-ttu-id="2b4ad-122">O intervalo de valor recomendado de 0-1, que é igual a uma porcentagem.</span><span class="sxs-lookup"><span data-stu-id="2b4ad-122">Recommended value range of 0-1, which equates to a percentage.</span></span>|
+|<span data-ttu-id="4952e-110">fileHash</span><span class="sxs-lookup"><span data-stu-id="4952e-110">fileHash</span></span>|[<span data-ttu-id="4952e-111">fileHash</span><span class="sxs-lookup"><span data-stu-id="4952e-111">fileHash</span></span>](filehash.md)|<span data-ttu-id="4952e-112">Tipo complexo contendo hashes de arquivo (criptográfico e diferencia local).</span><span class="sxs-lookup"><span data-stu-id="4952e-112">Complex type containing file hashes (cryptographic and location-sensitive).</span></span>|
+|<span data-ttu-id="4952e-113">name</span><span class="sxs-lookup"><span data-stu-id="4952e-113">name</span></span>|<span data-ttu-id="4952e-114">String</span><span class="sxs-lookup"><span data-stu-id="4952e-114">String</span></span>|<span data-ttu-id="4952e-115">Nome do arquivo (sem o caminho).</span><span class="sxs-lookup"><span data-stu-id="4952e-115">File name (without path).</span></span>|
+|<span data-ttu-id="4952e-116">caminho</span><span class="sxs-lookup"><span data-stu-id="4952e-116">path</span></span>|<span data-ttu-id="4952e-117">String</span><span class="sxs-lookup"><span data-stu-id="4952e-117">String</span></span>|<span data-ttu-id="4952e-118">Caminho completo do arquivo/ImageFile.</span><span class="sxs-lookup"><span data-stu-id="4952e-118">Full file path of the file/imageFile.</span></span>|
+|<span data-ttu-id="4952e-119">riskScore</span><span class="sxs-lookup"><span data-stu-id="4952e-119">riskScore</span></span>|<span data-ttu-id="4952e-120">String</span><span class="sxs-lookup"><span data-stu-id="4952e-120">String</span></span>|<span data-ttu-id="4952e-121">Geração de um provedor/Pontuação de risco calculado do arquivo de alerta.</span><span class="sxs-lookup"><span data-stu-id="4952e-121">Provider generated/calculated risk score of the alert file.</span></span> <span data-ttu-id="4952e-122">O intervalo de valor recomendado de 0-1, que é igual a uma porcentagem.</span><span class="sxs-lookup"><span data-stu-id="4952e-122">Recommended value range of 0-1, which equates to a percentage.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="2b4ad-123">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="2b4ad-123">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="4952e-123">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="4952e-123">JSON representation</span></span>
 
-<span data-ttu-id="2b4ad-124">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="2b4ad-124">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="4952e-124">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="4952e-124">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -55,8 +55,6 @@ ms.locfileid: "32506405"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/filesecuritystate.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->
