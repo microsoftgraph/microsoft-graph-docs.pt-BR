@@ -1,21 +1,21 @@
 ---
 title: 'evento: dismissReminder'
-description: Descarte um lembrete que tiver sido disparado para um evento em um calendário do usuário.
+description: Ignorar um lembrete que foi disparado para um evento em um calendário do usuário.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: cf2421db56babd394a3c011fb9bd4db9f83cb823
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27990317"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562843"
 ---
 # <a name="event-dismissreminder"></a>evento: dismissReminder
 
-Descarte um lembrete que tiver sido disparado para um [evento](../resources/event.md) em um [calendário](../resources/calendar.md)do usuário.
+Ignorar um lembrete que foi disparado para um [evento](../resources/event.md) em um [calendário](../resources/calendar.md)do usuário.
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |

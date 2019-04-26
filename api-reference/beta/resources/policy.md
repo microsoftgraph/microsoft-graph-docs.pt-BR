@@ -1,72 +1,72 @@
 ---
 title: tipo de recurso de política
-description: 'Representa uma política do Azure AD. Políticas são regras personalizadas que podem ser aplicadas em toda a organização atribuídos a eles, entidades de serviço, grupos ou aplicativos. Atualmente, somente um tipo de política está disponível:'
+description: 'Representa uma política do Azure AD. As políticas são regras personalizadas que podem ser aplicadas em aplicativos, entidades de serviço, grupos ou toda a organização à qual foram atribuídas. Atualmente, somente um tipo de política está disponível:'
 localization_priority: Normal
 ms.openlocfilehash: 118bac238d58734b5cbdeb1a4f346aedf680de6c
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642125"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563618"
 ---
 # <a name="policy-resource-type"></a>tipo de recurso de política
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa uma política do Azure AD. Políticas são regras personalizadas que podem ser aplicadas em toda a organização atribuídos a eles, entidades de serviço, grupos ou aplicativos. Atualmente, somente um tipo de política está disponível:
+Representa uma política do Azure AD. As políticas são regras personalizadas que podem ser aplicadas em aplicativos, entidades de serviço, grupos ou toda a organização à qual foram atribuídas. Atualmente, somente um tipo de política está disponível:
 
-- Política de tempo de vida de token - Especifica a duração de tempo de vida de tokens emitidos para aplicativos e entidades de serviço.
+- Política de tempo de vida do token – especifica o tempo de vida útil dos tokens emitidos para aplicativos e entidades de serviço.
 
-Esta diretiva é descrita em maiores detalhes a seguir.
+Essa política é descrita em mais detalhes abaixo.
 
 ## <a name="methods"></a>Métodos
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
-| [Obter diretiva](../api/policy-get.md) |Política|Ler propriedades e relações do objeto user.|
-|[Criar política](../api/policy-post.md)|Política|Crie um novo objeto de diretiva.|
-|[Política de atualização](../api/policy-update.md)|Nenhum|Objeto de diretiva de atualização.|
-|[Excluir a diretiva](../api/policy-delete.md)|Nenhum|Exclua o objeto de diretiva.|
-|[Atribuir política](../api/policy-assign.md)|Nenhum|Atribua uma política a um aplicativo, entidade de serviço.|
-|[Lista de políticas](../api/policy-list.md)|Coleção de políticas|Obtenha todos os objetos de política na organização.|
-|[List assigned policies](../api/policy-list-assigned.md)|Coleção de políticas|Obtenha todos os objetos de política atribuídos a um aplicativo ou entidade de serviço.|
+| [Obter política](../api/policy-get.md) |Política|Ler propriedades e relações do objeto user.|
+|[Criar uma política](../api/policy-post.md)|Política|Criar um novo objeto de política.|
+|[Atualizar política](../api/policy-update.md)|Nenhum|Atualize o objeto Policy.|
+|[Excluir política](../api/policy-delete.md)|Nenhum|Exclua o objeto Policy.|
+|[Atribuir política](../api/policy-assign.md)|Nenhum|Atribuir uma política a um aplicativo, entidade de serviço.|
+|[Listar políticas](../api/policy-list.md)|Coleção Policy|Obter todos os objetos de política na organização.|
+|[List assigned policies](../api/policy-list-assigned.md)|Coleção Policy|Obter todos os objetos de política atribuídos a uma entidade de serviço ou aplicativo.|
 
 ### <a name="common-properties"></a>Propriedades comuns
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|definição|String|A versão de cadeia de caracteres da diretiva específica. Veja a seguir. Obrigatório.|
+|definir|String|A versão de cadeia de caracteres da política específica. Veja a seguir. Obrigatório.|
 |displayName|String|Um nome personalizado para a política. Obrigatório.|
-|IsOrganizationDefault|Booliano|Se definido como verdadeiro, ativa essa diretiva. Pode haver várias políticas para o mesmo tipo de política, mas apenas um pode ser ativado como o padrão da organização. Opcional, valor padrão é false.|
-|type|String|Especifica o tipo de política. No momento deve ser "TokenLifetimePolicy". Obrigatório.|
+|IsOrganizationDefault|Booliano|Se definido como true, ativa esta política. Pode haver muitas políticas para o mesmo tipo de política, mas apenas uma pode ser ativada como a organização padrão. Opcional, o valor padrão é false.|
+|type|String|Especifica o tipo de política. No momento, deve ser "TokenLifetimePolicy". Obrigatório.|
 
 #### <a name="common-relationships"></a>Relações comuns
 |Relação|Tipo|Descrição|
 |:-------------|:-----------|:-----------|
-|appliesTo|Coleção [directoryObject](../resources/directoryobject.md)|Os aplicativos, entidades de serviço, grupos ou organização a política se aplica.|
+|appliesTo|Coleção [directoryObject](../resources/directoryobject.md)|Os aplicativos, entidades de serviço, grupos ou organizações aos quais a política se aplica.|
 
-## <a name="token-lifetime-policy"></a>Política de vida útil do token
-Especifica o tempo de vida de tokens emitidos para várias finalidades. Esse tipo de política pode ser [atribuído](../api/policy-assign.md) a aplicativos e entidades de serviço. Existem quatro tipos de tokens cujos tempos de vida podem ser configurados. Os pares de token de acesso/atualizar são obtidos durante a autenticação por meio de um cliente, enquanto os pares de token de ID/sessão são obtidos durante a autenticação por meio de um navegador.
+## <a name="token-lifetime-policy"></a>Política de tempo de vida do token
+Especifica os tempos de vida dos tokens emitidos para várias finalidades. Esse tipo de política pode ser [atribuído](../api/policy-assign.md) a aplicativos e entidades de serviço. Há quatro tipos de tokens cuja vida útil pode ser configurada. Os pares de tokens de acesso/atualização são obtidos durante a autenticação por meio de um cliente, enquanto os pares de identificador/sessão de ID são obtidos durante a autenticação por meio de um navegador.
 
-- **Token de acesso** contém informações sobre a identidade e os privilégios associados a uma conta de usuário que é usada pelos clientes para acessar recursos protegidos como aplicativos.
-- **Atualizar Token** é obtido junto com o token de acesso quando um usuário autenticado em Azure AD por meio de um cliente para acessar um recurso protegido. Enquanto não for revogado ou deixado não utilizado por mais do que o MaxInactiveTime (abaixo), ele pode ser usado para obter um novo par de token de acesso/atualizar quando expira o token de acesso atual.
-- **ID do Token** se comporta como um token de acesso, mas obtidos por meio do navegador.
-- **Token de sessão** se comporta como um token de atualização, mas obtido através do navegador.
+- O **token de acesso** contém informações sobre a identidade e os privilégios associados a uma conta de usuário usada por clientes para acessar recursos protegidos, como aplicativos.
+- O **token de atualização** é obtido junto com o token de acesso quando um usuário se autentica no Azure ad por meio de um cliente para acessar um recurso protegido. Apesar de não ser revogado ou não ser usado mais do que o MaxInactiveTime (abaixo), ele pode ser usado para obter um novo par de tokens de acesso/atualização quando o token de acesso atual expirar.
+- O **token de ID** se comporta como um token de acesso, mas obtido através do navegador.
+- O **token de sessão** se comporta como um token de atualização, mas obtido através do navegador.
 
 ## <a name="properties"></a>Propriedades
-As propriedades abaixo o objeto JSON que representa uma política de vida útil do token de formulário. Este objeto JSON deve ser **convertido em uma cadeia de caracteres com cotações de escape** a ser inserido na propriedade de política comum "definição". Um exemplo é mostrado abaixo.
+As propriedades abaixo formam o objeto JSON que representa uma política de tempo de vida do token. Esse objeto JSON deve ser **convertido em uma cadeia de caracteres com aspas de escape** a ser inserido na propriedade de política comum "definição". Um exemplo é mostrado abaixo.
 
->Observação: Todas as durações de tempo nessas propriedades são especificadas no formato "dd".
+>Observação: todas as durações de tempo nessas propriedades são especificadas no formato "dd. hh: mm: SS".
 
->Observação: Os valores máximos para as propriedades denotados em "dias" são 1 segundo compara o número indicado de dias. Por exemplo, o valor máximo de dias 1 é especificado como "23: 59:59".
+>Observação: os valores máximos para propriedades denotadas em "dias" são 1 segundo curto do número de dias indicado. Por exemplo, o valor máximo de 1 dia é especificado como "23:59:59".
 
-| Propriedade     | Tipo   |Descrição| Valor min | Valor max | Valor padrão|
+| Propriedade     | Tipo   |Descrição| Valor mínimo | Valor máximo | Valor padrão|
 |:---------------|:--------|:----------|:--------|:--------|:----|
-|AccessTokenLifetime|String|Controla quanto tempo **acesso e tokens de ID** são considerados válidos.|10 minutos|1 dia|1 hora|
-|MaxInactiveTime|String|Controla como antigo um token de atualização pode ser antes de um cliente não pode usá-lo para recuperar um novo par de token de acesso/atualizar para acessar um recurso.|10 minutos|90 dias|14 dias|
-|MaxAgeSingleFactor|String|Controles quanto tempo um usuário pode continuar usando tokens de atualização para obter acesso/atualizar novo pares de tokens após a última vez em que eles autenticados com êxito com apenas um fator único. Porque o fator único é considerado menos seguro que a autenticação multifator, recomenda-se essa diretiva estiver definida como um valor igual ou menor que o MultiFactorRefreshTokenMaxAge.|10 minutos|até revogado|365 dias ou até revogado|
-|MaxAgeMultiFactor|String|Controles quanto tempo um usuário pode continuar usando tokens de atualização para obter acesso/atualizar novo pares de tokens após a última vez em que eles autenticados com êxito com vários fatores.|10 minutos|até revogado|365 dias ou até revogado|
-|MaxAgeSessionSingleFactor|String|Controles quanto tempo um usuário pode continuar usando tokens de sessão para obter tokens do novos ID/sessão após a última vez em que eles autenticado com sucesso com apenas um fator único. Como o fator único é considerado menos seguro que a autenticação multifator, é recomendável que essa diretiva estiver definida como um valor igual ou menor que o MultiFactorSessionTokenMaxAge|10 minutos|até revogado|365 ou até revogado|
-|MaxAgeSessionMultiFactor|String|Controles quanto tempo um usuário pode continuar usando tokens de sessão para obter tokens do novos ID/sessão após a última vez em que eles autenticado com sucesso com vários fatores.|10 minutos|até revogado|365 ou até revogado|
-|Versão|Número inteiro|Defina o valor de 1. Obrigatório.|Nenhum|Nenhum|Nenhum|
+|AccessTokenLifetime|String|Controla por quanto tempo **os tokens de acesso e de ID** são considerados válidos.|10 minutos|1 dia|1 hour|
+|MaxInactiveTime|String|Controla como o antigo token de atualização pode ser antes que um cliente não possa mais usá-lo para recuperar um novo par de tokens de acesso/atualização para acessar um recurso.|10 minutos|90 dias|14 dias|
+|MaxAgeSingleFactor|String|Controla por quanto tempo um usuário pode continuar a usar tokens de atualização para obter novos pares de tokens de acesso/atualização após a última vez que autenticar com êxito apenas um único fator. Como o fator único é considerado menos seguro do que a autenticação multifator, é recomendável que essa política seja definida como um valor igual ou menor do que o MultiFactorRefreshTokenMaxAge.|10 minutos|até a revogação|365 dias ou até-revogados|
+|MaxAgeMultiFactor|String|Controla por quanto tempo um usuário pode continuar a usar os tokens de atualização para obter novos pares de tokens de acesso/atualização após a última vez em que foram autenticados com vários fatores.|10 minutos|até a revogação|365 dias ou até-revogados|
+|MaxAgeSessionSingleFactor|String|Controla por quanto tempo um usuário pode continuar a usar tokens de sessão para obter novos tokens de ID/sessão após a última vez que eles forem autenticados com êxito apenas com um único fator. Como o fator único é considerado menos seguro do que a autenticação multifator, é recomendável que essa política seja definida como um valor igual ou menor do que o MultiFactorSessionTokenMaxAge|10 minutos|até a revogação|365 ou até-revogado|
+|MaxAgeSessionMultiFactor|String|Controla por quanto tempo um usuário pode continuar a usar tokens de sessão para obter novos tokens de sessão/ID após a última vez em que foram autenticados com vários fatores.|10 minutos|até a revogação|365 ou até-revogado|
+|Versão|Inteiro|Defina o valor 1. Obrigatório.|Nenhum|Nenhum|Nenhum|
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

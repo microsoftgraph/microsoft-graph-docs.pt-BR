@@ -5,11 +5,11 @@ author: simonhult
 localization_priority: Priority
 ms.prod: insights
 ms.openlocfilehash: c92709143ee7def0ede98dfdb81a419df43c4493
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27940292"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462554"
 ---
 # <a name="person-resource-type"></a>Tipo de recurso person
 
@@ -32,11 +32,11 @@ Uma agregação de informações sobre uma pessoa provenientes de emails, contat
 |scoredEmailAddresses|Coleção [scoredEmailAddress](scoredemailaddress.md)|Os endereços de email da pessoa.|
 |givenName|String|O nome fornecido da pessoa.|
 |id|String|O identificador exclusivo da pessoa. Somente leitura.|
-|imAddress|Cadeia de caracteres|O endereço do protocolo SIP (Início de Sessão) de VoIP (Voice over IP) da mensagem instantânea para o usuário. Somente leitura.|
+|imAddress|String|O endereço do protocolo SIP (Início de Sessão) de VoIP (Voice over IP) da mensagem instantânea para o usuário. Somente leitura.|
 |isFavorite|Boolean|`true` se o usuário tiver sinalizado essa pessoa como um favorito.|
 |jobTitle|String|O cargo da pessoa.|
 |officeLocation|String|O local do escritório da pessoa.|
-|personNotes|Cadeia de caracteres|As anotações de forma livre que o usuário fez sobre essa pessoa.|
+|personNotes|String|As anotações de forma livre que o usuário fez sobre essa pessoa.|
 |personType|[personType](persontype.md) |O tipo de pessoa.|
 |telefones|Coleção [phone](phone.md)|Os números de telefone da pessoa.|
 |postalAddresses|[location](location.md) collection|Os endereços da pessoa.|
