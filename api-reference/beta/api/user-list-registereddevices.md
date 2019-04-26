@@ -4,14 +4,16 @@ description: Obtenha a lista de dispositivos registrado do usuário.
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: fa2a0e8d9209a652c751bd30f0b950182c6525f8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e0e69261e09f771a732af7acfa2f94bf53e54fc5
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32547785"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33329828"
 ---
 # <a name="list-registereddevices"></a>Listar registeredDevices
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Obtenha a lista de dispositivos registrado do usuário.
 ## <a name="permissions"></a>Permissões
@@ -50,7 +52,7 @@ Este é um exemplo da solicitação.
   "name": "get_registereddevices"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/registeredDevices
+GET https://graph.microsoft.com/beta/me/registeredDevices
 ```
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
@@ -76,10 +78,13 @@ Content-length: 55
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List registeredDevices",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

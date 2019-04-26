@@ -1,18 +1,18 @@
 ---
 title: Listar rejectedSenders
-description: 'Obter uma lista de usuários ou grupos que estão na lista rejectedSenders desse grupo. '
+description: 'Obtenha uma lista de usuários ou grupos que estão na lista de remetentes rejeitados para esse grupo. '
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 5dd03644b91ad847b61350f48792afdaa087d59b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3ddabeccd5e09c035eabf0c280fde54bc6db628f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32502061"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33329572"
 ---
 # <a name="list-rejectedsenders"></a>Listar rejectedSenders
-Obter uma lista de usuários ou grupos que estão na lista rejectedSenders desse grupo. 
+Obtenha uma lista de usuários ou grupos que estão na lista de remetentes rejeitados para esse grupo. 
 
 Os usuários na lista de remetentes rejeitados não podem postar em conversas do grupo (identificado na URL da solicitação GET). Certifique-se de não especificar o mesmo usuário ou grupo nas listas de remetentes aceitos e rejeitados, caso contrário você receberá um erro.
 

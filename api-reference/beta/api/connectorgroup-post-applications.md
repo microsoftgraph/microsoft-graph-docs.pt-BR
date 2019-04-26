@@ -2,12 +2,12 @@
 title: Criar aplicativo
 description: Use esta API para criar um novo aplicativo.
 localization_priority: Normal
-ms.openlocfilehash: 350e5f0fcb45f7404a670c1a0af4e4ddd02a97c9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ee0ecc6db99c0ea92131dbbf0e9c028234925f0a
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32455937"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33327479"
 ---
 # <a name="create-application"></a>Criar aplicativo
 
@@ -43,7 +43,7 @@ Se bem-sucedido, este método retorna um código de resposta `201 Created` e um 
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
-Este é um exemplo da solicitação.
+Eis um exemplo da solicitação.
 <!-- {
   "blockType": "request",
   "name": "create_application_from_connectorgroup"
@@ -92,8 +92,6 @@ Content-length: 355
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/connectorgroup-post-applications.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

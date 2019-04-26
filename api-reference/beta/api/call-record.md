@@ -4,12 +4,12 @@ description: Registre a chamada.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4dc409a502b18da9c0e897054a7c1d6386fa096f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bc1a98374c34986e2a4430f5b50c5a2801dcd0e8
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32461294"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328277"
 ---
 # <a name="call-record"></a>Call: Record
 
@@ -22,7 +22,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão | Permissões (da com menos para a com mais privilégios) |
 | :-------------- | :------------------------------------------ |
-| Delegado (conta corporativa ou de estudante)     | Não Suportado        |
+| Delegado (conta corporativa ou de estudante)     | Não suportado        |
 | Delegado (conta pessoal da Microsoft) | Não suportado        |
 | Aplicativo     | Calls.AccessMedia.All                       |
 
@@ -43,14 +43,14 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro      | Tipo    |Descrição|
 |:---------------|:--------|:----------|
-|prompts|coleção [mediaprompt](../resources/mediaprompt.md) | Coleção de prompts a serem executados (se houver) antes da gravação começar. Os clientes podem optar por especificar a ação "playPrompt" separadamente ou especificar como parte de "Record"-principalmente todos os registros são precedidos por um prompt |
-|bargeInAllowed|Booliano| Permite que os usuários insiram opções antes de concluir o prompt.                                                                 |
+|prompts|coleção [mediaPrompt](../resources/mediaprompt.md) | Coleção de prompts a serem executados (se houver) antes da gravação começar. Os clientes podem optar por especificar a ação "playPrompt" separadamente ou especificar como parte de "Record"-principalmente todos os registros são precedidos por um prompt |
+|bargeInAllowed|Boolean| Permite que os usuários insiram opções antes de concluir o prompt.                                                                 |
 |initialSilenceTimeoutInSeconds | Int32| O silêncio inicial máximo permitido a partir da hora em que começamos a operação de registro antes do tempo limite e falha na operação. Se estivermos reproduzindo um prompt, este cronômetro será iniciado após a conclusão do prompt. |
 |maxSilenceTimeoutInSeconds|Int32| O tempo limite de silêncio máximo em segundos.|
 |maxRecordDurationInSeconds|Int32| A duração máxima do registro em segundos.|
-|playBeep|Booliano| ReProduz um aviso sonoro após a execução do prompt.|
-|streamWhileRecording|Booliano|Se for definido como true, um local de recurso será fornecido assim que a gravação for iniciada. |
-|stopTones|Coleção de cadeias de caracteres|Pare os toques especificados para terminar a gravação.|
+|playBeep|Boolean| ReProduz um aviso sonoro após a execução do prompt.|
+|streamWhileRecording|Boolean|Se for definido como true, um local de recurso será fornecido assim que a gravação for iniciada. |
+|stopTones|Coleção String|Pare os toques especificados para terminar a gravação.|
 |clientContext|String|O contexto do cliente.|
 
 ## <a name="response"></a>Resposta
@@ -150,8 +150,6 @@ Content-Type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/call-record.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -4,12 +4,12 @@ description: " > **Importante:** as APIs na versão /beta no Microsoft Graph est
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 35e439888b39c81451242f01d2aaae89b65ad8ee
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c6cf62320a6cfd8e96455e95e1d17c0621d261f8
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535472"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328297"
 ---
 # <a name="bookingservice-resource-type"></a>tipo de recurso bookingService
 
@@ -24,8 +24,8 @@ Representa informações sobre um serviço específico fornecido por um [booking
 |[Listar serviços](../api/bookingbusiness-list-services.md) | coleção [bookingService](bookingservice.md) | Obtenha uma lista de objetos **bookingService** no [bookingbusiness](../resources/bookingbusiness.md)especificado.|
 |[Criar bookingService](../api/bookingbusiness-post-services.md) | [bookingService](bookingservice.md) | Crie um **bookingService** para o [bookingbusiness](../resources/bookingbusiness.md)especificado. |
 |[Obter bookingService](../api/bookingservice-get.md) | [bookingService](bookingservice.md) |Obtenha as propriedades e os relacionamentos de um objeto **bookingService** no [bookingbusiness](../resources/bookingbusiness.md)especificado.|
-|[Update](../api/bookingservice-update.md) | [bookingService](bookingservice.md)    |Atualize um objeto **bookingService** no [bookingbusiness](../resources/bookingbusiness.md)especificado. |
-|[Excluir](../api/bookingservice-delete.md) | None |Exclua um objeto **bookingService** no [bookingbusiness](../resources/bookingbusiness.md)especificado. |
+|[Atualizar](../api/bookingservice-update.md) | [bookingService](bookingservice.md)    |Atualize um objeto **bookingService** no [bookingbusiness](../resources/bookingbusiness.md)especificado. |
+|[Delete](../api/bookingservice-delete.md) | Nenhuma |Exclua um objeto **bookingService** no [bookingbusiness](../resources/bookingbusiness.md)especificado. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
@@ -39,12 +39,12 @@ Representa informações sobre um serviço específico fornecido por um [booking
 |displayName|String|Um nome de serviço.|
 |emailAddress|String|Um endereço de email|
 |id|Cadeia de caracteres|A ID do serviço, em um formato GUID. Somente leitura.|
-|isHiddenFromCustomers|Booliano|True significa que este serviço não está disponível para os clientes para reserva.|
+|isHiddenFromCustomers|Boolean|True significa que este serviço não está disponível para os clientes para reserva.|
 |notes|Cadeia de caracteres|Informações adicionais sobre este serviço.|
 |Buffer|Duração|O tempo para o buffer após o término de um compromisso desse serviço e antes do próximo compromisso do cliente pode ser registrado.|
 |antes do buffer|Duração|O tempo para o buffer antes que um compromisso para este serviço possa ser iniciado.|
 |schedulingPolicy|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|O conjunto de políticas que determinam como os compromissos desse tipo de serviço devem ser criados e gerenciados.|
-|staffMemberIds|Coleção de cadeias de caracteres|Representa os [membros da equipe](bookingstaffmember.md) que fornecem esse serviço. |
+|staffMemberIds|Coleção String|Representa os [membros da equipe](bookingstaffmember.md) que fornecem esse serviço. |
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -92,8 +92,6 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/bookingservice.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

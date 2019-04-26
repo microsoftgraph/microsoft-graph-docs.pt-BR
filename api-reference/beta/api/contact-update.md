@@ -4,12 +4,12 @@ description: Atualiza as propriedades do objeto de contato.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: c6ed3304b5f44a8bb1d35c1db491e8eaf7ae47b4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d0aedb4b4e07409af0ae8c47c4393f4532f91660
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32455696"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33327484"
 ---
 # <a name="update-contact"></a>Atualizar contato
 
@@ -58,7 +58,7 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |categories|String|As categorias associadas ao contato.|
 |children|String||
 |companyName|String|O nome da empresa do contato.|
-|department|String|O departamento do contato.|
+|departamento|String|O departamento do contato.|
 |displayName|String|O nome para exibição do contato. Observe que atualizações posteriores a outras propriedades podem fazer com que um valor gerado automaticamente substitua o valor displayName que você especificou. Para preservar um valor preexistente, sempre inclua-o como displayName em uma operação Update.|
 |emailAddresses|coleção [typedEmailAddress](../resources/typedemailaddress.md)|Os endereços de email do contato.|
 |fileAs|String|O nome com o qual o contato está arquivado.|
@@ -72,14 +72,14 @@ No corpo da solicitação, forneça os valores para os campos relevantes que dev
 |middleName|String|O nome do meio do contato.|
 |nickName|String|O apelido do contato.|
 |officeLocation|String|O local do escritório do contato.|
-|parentFolderId|String|A ID da pasta pai do contato.|
+|parentFolderId|Cadeia de caracteres|A ID da pasta pai do contato.|
 |personalNotes|String|As anotações do usuário sobre o contato.|
 |telefones |Coleção [phone](../resources/phone.md) |Números de telefone associados ao contato, por exemplo, telefone residencial, telefone celular e telefone comercial. |
 |postalAddresses |coleção [physicalAddress](../resources/physicaladdress.md) |Endereços associados ao contato, por exemplo, endereço residencial e endereço comercial. |
 |profession|String|A profissão do contato.|
 |spouseName|String|O nome do cônjuge/parceiro do contato.|
-|surname|String|O sobrenome do contato.|
-|title|Cadeia de caracteres|O título do contato.|
+|surname|Cadeia de caracteres|O sobrenome do contato.|
+|title|String|O título do contato.|
 |websites |Coleção [website](../resources/website.md)|Sites da Web associados ao contato. |
 |weddingAnniversary |Data |Aniversário de casamento do contato. |
 |yomiCompanyName|String|O nome de empresa japonês fonético do contato. Essa propriedade é opcional.|
@@ -219,8 +219,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/contact-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

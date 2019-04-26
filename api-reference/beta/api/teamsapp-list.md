@@ -4,12 +4,12 @@ description: 'Listar aplicativos do catálogo de aplicativos do Microsoft Teams.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1e4d9348cbb28ed0daf1ec48459378935d78e0a2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 229d91768f222a6bfc4bbf0de726a2f6d40c0da4
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32544648"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33330122"
 ---
 # <a name="list-the-published-apps-from-the-microsoft-teams-app-catalog"></a>Listar os aplicativos publicados do catálogo de aplicativos do Microsoft Teams
 
@@ -50,7 +50,7 @@ Este método dá suporte aos [Parâmetros de consulta OData](/graph/query-parame
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-Nenhum.
+Nenhum
 
 > **Observação:** Você pode filtrar em qualquer um dos campos do objeto [teamsCatalogApp](../resources/teamsapp.md) para diminuir a lista de resultados. Você pode usar qualquer uma das seguintes operações de filtro: igual, não igual, e, ou, e não.
 
@@ -120,11 +120,3 @@ Content-Type: application/json
 }
 ```
 
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/teamsapp-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
