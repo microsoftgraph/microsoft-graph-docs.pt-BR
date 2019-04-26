@@ -4,34 +4,34 @@ description: Use essa API para criar uma nova mensagem. Rascunhos podem ser cria
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4c15bfc0a29909b1e7a7ba27b5ac221c0d11f815
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c6178abcae6f7dadde2166f7f3a71bf4915ec245
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32544078"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334548"
 ---
-# <a name="create-message"></a><span data-ttu-id="76f69-105">Criar mensagem</span><span class="sxs-lookup"><span data-stu-id="76f69-105">Create Message</span></span>
+# <a name="create-message"></a><span data-ttu-id="eca2f-105">Criar mensagem</span><span class="sxs-lookup"><span data-stu-id="eca2f-105">Create Message</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="76f69-p102">Use essa API para criar uma nova mensagem. Rascunhos podem ser criados em qualquer pasta e, opcionalmente, atualizados antes do envio. Para salvar na pasta Rascunhos, use o atalho /messages.</span><span class="sxs-lookup"><span data-stu-id="76f69-p102">Use this API to create a draft of a new message. Drafts can be created in any folder and optionally updated before sending. To save to the Drafts folder, use the /messages shortcut.</span></span>
+<span data-ttu-id="eca2f-p102">Use essa API para criar uma nova mensagem. Rascunhos podem ser criados em qualquer pasta e, opcionalmente, atualizados antes do envio. Para salvar na pasta Rascunhos, use o atalho /messages.</span><span class="sxs-lookup"><span data-stu-id="eca2f-p102">Use this API to create a draft of a new message. Drafts can be created in any folder and optionally updated before sending. To save to the Drafts folder, use the /messages shortcut.</span></span>
 
-<span data-ttu-id="76f69-109">Ao criar o rascunho na mesma chamada **post** , você pode:</span><span class="sxs-lookup"><span data-stu-id="76f69-109">While creating the draft in the same **POST** call, you can:</span></span>
+<span data-ttu-id="eca2f-109">Ao criar o rascunho na mesma chamada **post** , você pode:</span><span class="sxs-lookup"><span data-stu-id="eca2f-109">While creating the draft in the same **POST** call, you can:</span></span>
 
-- <span data-ttu-id="76f69-110">Incluir um [anexo](../resources/attachment.md)</span><span class="sxs-lookup"><span data-stu-id="76f69-110">Include an [attachment](../resources/attachment.md)</span></span> 
-- <span data-ttu-id="76f69-111">Usar uma [menção](../resources/mention.md) para chamar outro usuário na nova mensagem</span><span class="sxs-lookup"><span data-stu-id="76f69-111">Use a [mention](../resources/mention.md) to call out another user in the new message</span></span>
+- <span data-ttu-id="eca2f-110">Incluir um [anexo](../resources/attachment.md)</span><span class="sxs-lookup"><span data-stu-id="eca2f-110">Include an [attachment](../resources/attachment.md)</span></span> 
+- <span data-ttu-id="eca2f-111">Usar uma [menção](../resources/mention.md) para chamar outro usuário na nova mensagem</span><span class="sxs-lookup"><span data-stu-id="eca2f-111">Use a [mention](../resources/mention.md) to call out another user in the new message</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="76f69-112">Permissões</span><span class="sxs-lookup"><span data-stu-id="76f69-112">Permissions</span></span>
-<span data-ttu-id="76f69-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="76f69-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="eca2f-112">Permissões</span><span class="sxs-lookup"><span data-stu-id="eca2f-112">Permissions</span></span>
+<span data-ttu-id="eca2f-p103">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="eca2f-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="76f69-115">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="76f69-115">Permission type</span></span>      | <span data-ttu-id="76f69-116">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="76f69-116">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="eca2f-115">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="eca2f-115">Permission type</span></span>      | <span data-ttu-id="eca2f-116">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="eca2f-116">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="76f69-117">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="76f69-117">Delegated (work or school account)</span></span> | <span data-ttu-id="76f69-118">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="76f69-118">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="76f69-119">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="76f69-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="76f69-120">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="76f69-120">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="76f69-121">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="76f69-121">Application</span></span> | <span data-ttu-id="76f69-122">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="76f69-122">Mail.ReadWrite</span></span> |
+|<span data-ttu-id="eca2f-117">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="eca2f-117">Delegated (work or school account)</span></span> | <span data-ttu-id="eca2f-118">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="eca2f-118">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="eca2f-119">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="eca2f-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="eca2f-120">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="eca2f-120">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="eca2f-121">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="eca2f-121">Application</span></span> | <span data-ttu-id="eca2f-122">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="eca2f-122">Mail.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="76f69-123">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="76f69-123">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="eca2f-123">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="eca2f-123">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/messages
@@ -39,29 +39,29 @@ POST /users/{id|userPrincipalName}/messages
 POST /me/mailFolders/{id}/messages
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ```
-## <a name="request-headers"></a><span data-ttu-id="76f69-124">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="76f69-124">Request headers</span></span>
-| <span data-ttu-id="76f69-125">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="76f69-125">Header</span></span>       | <span data-ttu-id="76f69-126">Valor</span><span class="sxs-lookup"><span data-stu-id="76f69-126">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="eca2f-124">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="eca2f-124">Request headers</span></span>
+| <span data-ttu-id="eca2f-125">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="eca2f-125">Header</span></span>       | <span data-ttu-id="eca2f-126">Valor</span><span class="sxs-lookup"><span data-stu-id="eca2f-126">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="76f69-127">Autorização</span><span class="sxs-lookup"><span data-stu-id="76f69-127">Authorization</span></span>  | <span data-ttu-id="76f69-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="76f69-p104">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="76f69-130">Content-Type</span><span class="sxs-lookup"><span data-stu-id="76f69-130">Content-Type</span></span>  | <span data-ttu-id="76f69-131">application/json</span><span class="sxs-lookup"><span data-stu-id="76f69-131">application/json</span></span>  |
+| <span data-ttu-id="eca2f-127">Autorização</span><span class="sxs-lookup"><span data-stu-id="eca2f-127">Authorization</span></span>  | <span data-ttu-id="eca2f-p104">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="eca2f-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="eca2f-130">Content-Type</span><span class="sxs-lookup"><span data-stu-id="eca2f-130">Content-Type</span></span>  | <span data-ttu-id="eca2f-131">application/json</span><span class="sxs-lookup"><span data-stu-id="eca2f-131">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="76f69-132">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="76f69-132">Request body</span></span>
-<span data-ttu-id="76f69-133">No corpo da solicitação, forneça uma representação JSON do objeto [Message](../resources/message.md) .</span><span class="sxs-lookup"><span data-stu-id="76f69-133">In the request body, supply a JSON representation of the [message](../resources/message.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="eca2f-132">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="eca2f-132">Request body</span></span>
+<span data-ttu-id="eca2f-133">No corpo da solicitação, forneça uma representação JSON do objeto [Message](../resources/message.md) .</span><span class="sxs-lookup"><span data-stu-id="eca2f-133">In the request body, supply a JSON representation of the [message](../resources/message.md) object.</span></span>
 
-<span data-ttu-id="76f69-134">Se você quiser usar **menção** para chamar outro usuário na nova mensagem:</span><span class="sxs-lookup"><span data-stu-id="76f69-134">If you want to use **mention** to call out another user in the new message:</span></span>
+<span data-ttu-id="eca2f-134">Se você quiser usar **menção** para chamar outro usuário na nova mensagem:</span><span class="sxs-lookup"><span data-stu-id="eca2f-134">If you want to use **mention** to call out another user in the new message:</span></span>
 
-- <span data-ttu-id="76f69-135">Inclua a propriedade \*\*\*\* Required ToRecipients, a \*\*\*\* Propriedade mencionas e qualquer propriedade gravável de mensagem no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="76f69-135">Include the required **toRecipients** property, the **mentions** property, and any writable message properties in the request body.</span></span>
-- <span data-ttu-id="76f69-136">Para cada menção na propriedade **menciona** , você deve especificar a propriedade **mencionado** .</span><span class="sxs-lookup"><span data-stu-id="76f69-136">For each mention in the **mentions** property, you must specify the **mentioned** property.</span></span>
+- <span data-ttu-id="eca2f-135">Inclua a propriedade \*\*\*\* Required ToRecipients, a \*\*\*\* Propriedade mencionas e qualquer propriedade gravável de mensagem no corpo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="eca2f-135">Include the required **toRecipients** property, the **mentions** property, and any writable message properties in the request body.</span></span>
+- <span data-ttu-id="eca2f-136">Para cada menção na propriedade **menciona** , você deve especificar a propriedade **mencionado** .</span><span class="sxs-lookup"><span data-stu-id="eca2f-136">For each mention in the **mentions** property, you must specify the **mentioned** property.</span></span>
 
-<span data-ttu-id="76f69-137">Como o recurso **message** dá suporte a [extensions](/graph/extensibility-overview), você pode usar a operação `POST` e adicionar propriedades personalizadas com seus próprios dados à mensagem ao criá-la.</span><span class="sxs-lookup"><span data-stu-id="76f69-137">Since the **message** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the message while creating it.</span></span>
+<span data-ttu-id="eca2f-137">Como o recurso **message** dá suporte a [extensions](/graph/extensibility-overview), você pode usar a operação `POST` e adicionar propriedades personalizadas com seus próprios dados à mensagem ao criá-la.</span><span class="sxs-lookup"><span data-stu-id="eca2f-137">Since the **message** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the message while creating it.</span></span>
 
-## <a name="response"></a><span data-ttu-id="76f69-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="76f69-138">Response</span></span>
+## <a name="response"></a><span data-ttu-id="eca2f-138">Resposta</span><span class="sxs-lookup"><span data-stu-id="eca2f-138">Response</span></span>
 
-<span data-ttu-id="76f69-139">Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [Message](../resources/message.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="76f69-139">If successful, this method returns a `201 Created` response code and a [message](../resources/message.md) object in the response body.</span></span>
+<span data-ttu-id="eca2f-139">Se tiver êxito, este método retornará `201 Created` um código de resposta e um objeto [Message](../resources/message.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="eca2f-139">If successful, this method returns a `201 Created` response code and a [message](../resources/message.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="76f69-140">Exemplo</span><span class="sxs-lookup"><span data-stu-id="76f69-140">Example</span></span>
-##### <a name="request-1"></a><span data-ttu-id="76f69-141">Solicitação 1</span><span class="sxs-lookup"><span data-stu-id="76f69-141">Request 1</span></span>
-<span data-ttu-id="76f69-142">Veja a seguir um exemplo de solicitação para criar um rascunho de uma nova mensagem.</span><span class="sxs-lookup"><span data-stu-id="76f69-142">Here is an example of the request to create a draft of a new message.</span></span>
+## <a name="example"></a><span data-ttu-id="eca2f-140">Exemplo</span><span class="sxs-lookup"><span data-stu-id="eca2f-140">Example</span></span>
+##### <a name="request-1"></a><span data-ttu-id="eca2f-141">Solicitação 1</span><span class="sxs-lookup"><span data-stu-id="eca2f-141">Request 1</span></span>
+<span data-ttu-id="eca2f-142">Veja a seguir um exemplo de solicitação para criar um rascunho de uma nova mensagem.</span><span class="sxs-lookup"><span data-stu-id="eca2f-142">Here is an example of the request to create a draft of a new message.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_message_from_user"
@@ -86,9 +86,9 @@ Content-type: application/json
     ]
 }
 ```
-<span data-ttu-id="76f69-143">No corpo da solicitação, forneça uma representação JSON do objeto [message](../resources/message.md).</span><span class="sxs-lookup"><span data-stu-id="76f69-143">In the request body, supply a JSON representation of [message](../resources/message.md) object.</span></span>
-##### <a name="response-1"></a><span data-ttu-id="76f69-144">Resposta 1</span><span class="sxs-lookup"><span data-stu-id="76f69-144">Response 1</span></span>
-<span data-ttu-id="76f69-p105">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="76f69-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="eca2f-143">No corpo da solicitação, forneça uma representação JSON do objeto [message](../resources/message.md).</span><span class="sxs-lookup"><span data-stu-id="eca2f-143">In the request body, supply a JSON representation of [message](../resources/message.md) object.</span></span>
+##### <a name="response-1"></a><span data-ttu-id="eca2f-144">Resposta 1</span><span class="sxs-lookup"><span data-stu-id="eca2f-144">Response 1</span></span>
+<span data-ttu-id="eca2f-p105">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="eca2f-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "create_message_from_user",
@@ -157,10 +157,10 @@ Content-type: application/json
 }
 ```
 
-##### <a name="request-2"></a><span data-ttu-id="76f69-148">Solicitação 2</span><span class="sxs-lookup"><span data-stu-id="76f69-148">Request 2</span></span>
-<span data-ttu-id="76f69-149">O exemplo a seguir mostra um rascunho de email do Randi Welch para o estande de Paula.</span><span class="sxs-lookup"><span data-stu-id="76f69-149">The next example shows a draft email by Randi Welch to Samantha Booth.</span></span> <span data-ttu-id="76f69-150">A mensagem também inclui uma menção de outro usuário, Dana Swope.</span><span class="sxs-lookup"><span data-stu-id="76f69-150">The message also includes a mention of another user, Dana Swope.</span></span>
+##### <a name="request-2"></a><span data-ttu-id="eca2f-148">Solicitação 2</span><span class="sxs-lookup"><span data-stu-id="eca2f-148">Request 2</span></span>
+<span data-ttu-id="eca2f-149">O exemplo a seguir mostra um rascunho de email do Randi Welch para o estande de Paula.</span><span class="sxs-lookup"><span data-stu-id="eca2f-149">The next example shows a draft email by Randi Welch to Samantha Booth.</span></span> <span data-ttu-id="eca2f-150">A mensagem também inclui uma menção de outro usuário, Dana Swope.</span><span class="sxs-lookup"><span data-stu-id="eca2f-150">The message also includes a mention of another user, Dana Swope.</span></span>
 
-<span data-ttu-id="76f69-151">No corpo da solicitação, forneça uma representação JSON do objeto [message](../resources/message.md).</span><span class="sxs-lookup"><span data-stu-id="76f69-151">In the request body, supply a JSON representation of [message](../resources/message.md) object.</span></span>
+<span data-ttu-id="eca2f-151">No corpo da solicitação, forneça uma representação JSON do objeto [message](../resources/message.md).</span><span class="sxs-lookup"><span data-stu-id="eca2f-151">In the request body, supply a JSON representation of [message](../resources/message.md) object.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_message_with_mentions_from_user"
@@ -191,8 +191,8 @@ Content-type: application/json
 ```
 
 
-##### <a name="response-2"></a><span data-ttu-id="76f69-152">Resposta 2</span><span class="sxs-lookup"><span data-stu-id="76f69-152">Response 2</span></span>
-<span data-ttu-id="76f69-p107">Veja a seguir um exemplo da resposta. Observação: O objeto response mostrado aqui está truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="76f69-p107">Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response-2"></a><span data-ttu-id="eca2f-152">Resposta 2</span><span class="sxs-lookup"><span data-stu-id="eca2f-152">Response 2</span></span>
+<span data-ttu-id="eca2f-p107">Veja a seguir um exemplo da resposta. Observação: O objeto response mostrado aqui está truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="eca2f-p107">Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -251,8 +251,8 @@ Content-type: application/json
 
 ```
 
-##### <a name="request-3"></a><span data-ttu-id="76f69-156">Solicitação 3</span><span class="sxs-lookup"><span data-stu-id="76f69-156">Request 3</span></span>
-<span data-ttu-id="76f69-157">O próximo exemplo adiciona alguns cabeçalhos de mensagem de Internet de cliente ao criar o rascunho da mensagem.</span><span class="sxs-lookup"><span data-stu-id="76f69-157">The next example adds a couple of customer Internet message headers when creating the message draft.</span></span>
+##### <a name="request-3"></a><span data-ttu-id="eca2f-156">Solicitação 3</span><span class="sxs-lookup"><span data-stu-id="eca2f-156">Request 3</span></span>
+<span data-ttu-id="eca2f-157">O próximo exemplo adiciona alguns cabeçalhos de mensagem de Internet de cliente ao criar o rascunho da mensagem.</span><span class="sxs-lookup"><span data-stu-id="eca2f-157">The next example adds a couple of customer Internet message headers when creating the message draft.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_message_with_headers_from_user"
@@ -286,9 +286,9 @@ Content-type: application/json
     ]
 }
 ```
-<span data-ttu-id="76f69-158">No corpo da solicitação, forneça uma representação JSON do objeto [message](../resources/message.md).</span><span class="sxs-lookup"><span data-stu-id="76f69-158">In the request body, supply a JSON representation of [message](../resources/message.md) object.</span></span>
-##### <a name="response-3"></a><span data-ttu-id="76f69-159">Resposta 3</span><span class="sxs-lookup"><span data-stu-id="76f69-159">Response 3</span></span>
-<span data-ttu-id="76f69-160">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="76f69-160">Here is an example of the response.</span></span> <span data-ttu-id="76f69-161">Observação: cabeçalhos de mensagem da Internet não são retornados por padrão em uma resposta POST.</span><span class="sxs-lookup"><span data-stu-id="76f69-161">Note: Internet message headers are not returned by default in a POST response.</span></span> <span data-ttu-id="76f69-162">O objeto Response mostrado aqui também pode ser truncado por brevidade.</span><span class="sxs-lookup"><span data-stu-id="76f69-162">The response object shown here may also be truncated for brevity.</span></span> <span data-ttu-id="76f69-163">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="76f69-163">All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="eca2f-158">No corpo da solicitação, forneça uma representação JSON do objeto [message](../resources/message.md).</span><span class="sxs-lookup"><span data-stu-id="eca2f-158">In the request body, supply a JSON representation of [message](../resources/message.md) object.</span></span>
+##### <a name="response-3"></a><span data-ttu-id="eca2f-159">Resposta 3</span><span class="sxs-lookup"><span data-stu-id="eca2f-159">Response 3</span></span>
+<span data-ttu-id="eca2f-160">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="eca2f-160">Here is an example of the response.</span></span> <span data-ttu-id="eca2f-161">Observação: cabeçalhos de mensagem da Internet não são retornados por padrão em uma resposta POST.</span><span class="sxs-lookup"><span data-stu-id="eca2f-161">Note: Internet message headers are not returned by default in a POST response.</span></span> <span data-ttu-id="eca2f-162">O objeto Response mostrado aqui também pode ser truncado por brevidade.</span><span class="sxs-lookup"><span data-stu-id="eca2f-162">The response object shown here may also be truncated for brevity.</span></span> <span data-ttu-id="eca2f-163">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="eca2f-163">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "name": "create_message_with_headers_from_user",
@@ -356,11 +356,11 @@ Content-type: application/json
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="76f69-164">Confira também</span><span class="sxs-lookup"><span data-stu-id="76f69-164">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="eca2f-164">Confira também</span><span class="sxs-lookup"><span data-stu-id="eca2f-164">See also</span></span>
 
-- [<span data-ttu-id="76f69-165">Adicionar dados personalizados a recursos usando extensões</span><span class="sxs-lookup"><span data-stu-id="76f69-165">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
-- [<span data-ttu-id="76f69-166">Adicionar dados personalizados aos usuários usando extensões abertas (visualização)</span><span class="sxs-lookup"><span data-stu-id="76f69-166">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
-- [<span data-ttu-id="76f69-167">Adicionar dados personalizados a grupos usando extensões do esquema (visualização)</span><span class="sxs-lookup"><span data-stu-id="76f69-167">Add custom data to groups using schema extensions (preview)</span></span>](/graph/extensibility-schema-groups)
+- [<span data-ttu-id="eca2f-165">Adicionar dados personalizados a recursos usando extensões</span><span class="sxs-lookup"><span data-stu-id="eca2f-165">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
+- [<span data-ttu-id="eca2f-166">Adicionar dados personalizados aos usuários usando extensões abertas (visualização)</span><span class="sxs-lookup"><span data-stu-id="eca2f-166">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
+- [<span data-ttu-id="eca2f-167">Adicionar dados personalizados a grupos usando extensões do esquema (visualização)</span><span class="sxs-lookup"><span data-stu-id="eca2f-167">Add custom data to groups using schema extensions (preview)</span></span>](/graph/extensibility-schema-groups)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -371,8 +371,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/user-post-messages.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

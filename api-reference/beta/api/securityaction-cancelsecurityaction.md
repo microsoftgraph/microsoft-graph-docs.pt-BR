@@ -5,29 +5,29 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 ms.openlocfilehash: be737b6c1f6a8421cc87a7dd8efc222b48d7c078
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32545666"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33331422"
 ---
-# <a name="securityaction-cancelsecurityaction"></a><span data-ttu-id="5c818-103">SecurityAction: cancelSecurityAction</span><span class="sxs-lookup"><span data-stu-id="5c818-103">securityAction: cancelSecurityAction</span></span>
+# <a name="securityaction-cancelsecurityaction"></a><span data-ttu-id="02ca4-103">SecurityAction: cancelSecurityAction</span><span class="sxs-lookup"><span data-stu-id="02ca4-103">securityAction: cancelSecurityAction</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="5c818-104">Cancela uma operação de segurança.</span><span class="sxs-lookup"><span data-stu-id="5c818-104">Cancel a security operation.</span></span>
+<span data-ttu-id="02ca4-104">Cancela uma operação de segurança.</span><span class="sxs-lookup"><span data-stu-id="02ca4-104">Cancel a security operation.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="5c818-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="5c818-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="02ca4-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="02ca4-105">Permissions</span></span>
 
-<span data-ttu-id="5c818-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5c818-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="02ca4-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="02ca4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="5c818-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="5c818-108">Permission type</span></span>                        | <span data-ttu-id="5c818-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="5c818-109">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="02ca4-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="02ca4-108">Permission type</span></span>                        | <span data-ttu-id="02ca4-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="02ca4-109">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="5c818-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="5c818-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="5c818-111">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="5c818-111">Not supported.</span></span> |
-| <span data-ttu-id="5c818-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="5c818-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5c818-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="5c818-113">Not supported.</span></span> |
-| <span data-ttu-id="5c818-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="5c818-114">Application</span></span>                            | <span data-ttu-id="5c818-115">SecurityActions.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5c818-115">SecurityActions.ReadWrite.All</span></span> |
+| <span data-ttu-id="02ca4-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="02ca4-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="02ca4-111">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="02ca4-111">Not supported.</span></span> |
+| <span data-ttu-id="02ca4-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="02ca4-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="02ca4-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="02ca4-113">Not supported.</span></span> |
+| <span data-ttu-id="02ca4-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="02ca4-114">Application</span></span>                            | <span data-ttu-id="02ca4-115">SecurityActions.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="02ca4-115">SecurityActions.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="5c818-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="5c818-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="02ca4-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="02ca4-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -35,27 +35,27 @@ ms.locfileid: "32545666"
 POST /security/securityActions/{id}/cancelSecurityAction
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="5c818-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="5c818-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="02ca4-117">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="02ca4-117">Request headers</span></span>
 
-| <span data-ttu-id="5c818-118">Nome</span><span class="sxs-lookup"><span data-stu-id="5c818-118">Name</span></span>          | <span data-ttu-id="5c818-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="5c818-119">Description</span></span>   |
+| <span data-ttu-id="02ca4-118">Nome</span><span class="sxs-lookup"><span data-stu-id="02ca4-118">Name</span></span>          | <span data-ttu-id="02ca4-119">Descrição</span><span class="sxs-lookup"><span data-stu-id="02ca4-119">Description</span></span>   |
 |:--------------|:--------------|
-| <span data-ttu-id="5c818-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="5c818-120">Authorization</span></span> | <span data-ttu-id="5c818-121">Portador {código}</span><span class="sxs-lookup"><span data-stu-id="5c818-121">Bearer {code}</span></span> |
+| <span data-ttu-id="02ca4-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="02ca4-120">Authorization</span></span> | <span data-ttu-id="02ca4-121">Portador {código}</span><span class="sxs-lookup"><span data-stu-id="02ca4-121">Bearer {code}</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="5c818-122">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="5c818-122">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="02ca4-122">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="02ca4-122">Request body</span></span>
 
-<span data-ttu-id="5c818-123">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="5c818-123">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="02ca4-123">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="02ca4-123">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="5c818-124">Resposta</span><span class="sxs-lookup"><span data-stu-id="5c818-124">Response</span></span>
+## <a name="response"></a><span data-ttu-id="02ca4-124">Resposta</span><span class="sxs-lookup"><span data-stu-id="02ca4-124">Response</span></span>
 
-<span data-ttu-id="5c818-p102">Se bem-sucedido, este método retorna um código de resposta `200, OK`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="5c818-p102">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="02ca4-p102">Se bem-sucedido, este método retorna um código de resposta `200, OK`. Não retorna nada no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="02ca4-p102">If successful, this method returns `200, OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="5c818-127">Exemplos</span><span class="sxs-lookup"><span data-stu-id="5c818-127">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="02ca4-127">Exemplos</span><span class="sxs-lookup"><span data-stu-id="02ca4-127">Examples</span></span>
 
-<span data-ttu-id="5c818-128">O exemplo a seguir mostra como chamar essa API.</span><span class="sxs-lookup"><span data-stu-id="5c818-128">The following example shows how to call this API.</span></span>
+<span data-ttu-id="02ca4-128">O exemplo a seguir mostra como chamar essa API.</span><span class="sxs-lookup"><span data-stu-id="02ca4-128">The following example shows how to call this API.</span></span>
 
-### <a name="request"></a><span data-ttu-id="5c818-129">Solicitação</span><span class="sxs-lookup"><span data-stu-id="5c818-129">Request</span></span>
+### <a name="request"></a><span data-ttu-id="02ca4-129">Solicitação</span><span class="sxs-lookup"><span data-stu-id="02ca4-129">Request</span></span>
 
-<span data-ttu-id="5c818-130">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="5c818-130">The following is an example of the request.</span></span>
+<span data-ttu-id="02ca4-130">Este é um exemplo de solicitação.</span><span class="sxs-lookup"><span data-stu-id="02ca4-130">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "securityaction_cancelsecurityaction"
@@ -65,9 +65,9 @@ POST /security/securityActions/{id}/cancelSecurityAction
 POST https://graph.microsoft.com/beta/security/securityActions/{id}/cancelSecurityAction
 ```
 
-### <a name="response"></a><span data-ttu-id="5c818-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="5c818-131">Response</span></span>
+### <a name="response"></a><span data-ttu-id="02ca4-131">Resposta</span><span class="sxs-lookup"><span data-stu-id="02ca4-131">Response</span></span>
 
-<span data-ttu-id="5c818-132">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="5c818-132">The following is an example of the response.</span></span>
+<span data-ttu-id="02ca4-132">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="02ca4-132">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

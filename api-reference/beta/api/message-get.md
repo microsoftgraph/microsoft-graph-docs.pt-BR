@@ -4,43 +4,43 @@ description: Recupere as propriedades e os relacionamentos do objeto Message.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: b1a94d396d5c249cdadda233632bb596d34a3625
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1cd104f3757b5c4a92773f0a2c7fb705002570fb
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32540489"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333134"
 ---
-# <a name="get-message"></a><span data-ttu-id="7c2d4-103">Obter mensagem</span><span class="sxs-lookup"><span data-stu-id="7c2d4-103">Get message</span></span>
+# <a name="get-message"></a><span data-ttu-id="02fa5-103">Obter mensagem</span><span class="sxs-lookup"><span data-stu-id="02fa5-103">Get message</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="7c2d4-104">Recupere as propriedades e os relacionamentos do objeto [Message](../resources/message.md) .</span><span class="sxs-lookup"><span data-stu-id="7c2d4-104">Retrieve the properties and relationships of the [message](../resources/message.md) object.</span></span>
+<span data-ttu-id="02fa5-104">Recupere as propriedades e os relacionamentos do objeto [Message](../resources/message.md) .</span><span class="sxs-lookup"><span data-stu-id="02fa5-104">Retrieve the properties and relationships of the [message](../resources/message.md) object.</span></span>
 
-<span data-ttu-id="7c2d4-105">Por exemplo, você pode obter uma mensagem e expandir todas as instâncias de [menção](../resources/mention.md) na mensagem.</span><span class="sxs-lookup"><span data-stu-id="7c2d4-105">For example, you can get a message and expand all the [mention](../resources/mention.md) instances in the message.</span></span>
+<span data-ttu-id="02fa5-105">Por exemplo, você pode obter uma mensagem e expandir todas as instâncias de [menção](../resources/mention.md) na mensagem.</span><span class="sxs-lookup"><span data-stu-id="02fa5-105">For example, you can get a message and expand all the [mention](../resources/mention.md) instances in the message.</span></span>
 
-<span data-ttu-id="7c2d4-106">Você pode usar o `$value` parâmetro para [obter o conteúdo MIME de uma mensagem](/graph/outlook-get-mime-message).</span><span class="sxs-lookup"><span data-stu-id="7c2d4-106">You can use the `$value` parameter to [get the MIME content of a message](/graph/outlook-get-mime-message).</span></span>
+<span data-ttu-id="02fa5-106">Você pode usar o `$value` parâmetro para [obter o conteúdo MIME de uma mensagem](/graph/outlook-get-mime-message).</span><span class="sxs-lookup"><span data-stu-id="02fa5-106">You can use the `$value` parameter to [get the MIME content of a message](/graph/outlook-get-mime-message).</span></span>
 
-<span data-ttu-id="7c2d4-107">Há dois cenários em que um aplicativo pode obter uma mensagem na pasta email de outro usuário:</span><span class="sxs-lookup"><span data-stu-id="7c2d4-107">There are two scenarios where an app can get a message in another user's mail folder:</span></span>
+<span data-ttu-id="02fa5-107">Há dois cenários em que um aplicativo pode obter uma mensagem na pasta email de outro usuário:</span><span class="sxs-lookup"><span data-stu-id="02fa5-107">There are two scenarios where an app can get a message in another user's mail folder:</span></span>
 
-* <span data-ttu-id="7c2d4-108">Se o aplicativo tiver permissões de aplicativo ou</span><span class="sxs-lookup"><span data-stu-id="7c2d4-108">If the app has application permissions, or,</span></span>
-* <span data-ttu-id="7c2d4-109">Se o aplicativo tiver as [permissões](#permissions) delegadas apropriadas de um usuário e outro usuário tiver compartilhado uma pasta de email com esse usuário, ou tiver concedido acesso delegado a esse usuário.</span><span class="sxs-lookup"><span data-stu-id="7c2d4-109">If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a mail folder with that user, or, has given delegated access to that user.</span></span> <span data-ttu-id="7c2d4-110">Confira [detalhes e um exemplo](/graph/outlook-share-messages-folders).</span><span class="sxs-lookup"><span data-stu-id="7c2d4-110">See [details and an example](/graph/outlook-share-messages-folders).</span></span>
+* <span data-ttu-id="02fa5-108">Se o aplicativo tiver permissões de aplicativo ou</span><span class="sxs-lookup"><span data-stu-id="02fa5-108">If the app has application permissions, or,</span></span>
+* <span data-ttu-id="02fa5-109">Se o aplicativo tiver as [permissões](#permissions) delegadas apropriadas de um usuário e outro usuário tiver compartilhado uma pasta de email com esse usuário, ou tiver concedido acesso delegado a esse usuário.</span><span class="sxs-lookup"><span data-stu-id="02fa5-109">If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a mail folder with that user, or, has given delegated access to that user.</span></span> <span data-ttu-id="02fa5-110">Confira [detalhes e um exemplo](/graph/outlook-share-messages-folders).</span><span class="sxs-lookup"><span data-stu-id="02fa5-110">See [details and an example](/graph/outlook-share-messages-folders).</span></span>
 
-<span data-ttu-id="7c2d4-111">Como o recurso **message** dá suporte a [extensions](/graph/extensibility-overview), você também pode usar a operação `GET` para obter propriedades personalizadas e dados de extensão em uma instância de **message**.</span><span class="sxs-lookup"><span data-stu-id="7c2d4-111">Since the **message** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in a **message** instance.</span></span>
+<span data-ttu-id="02fa5-111">Como o recurso **message** dá suporte a [extensions](/graph/extensibility-overview), você também pode usar a operação `GET` para obter propriedades personalizadas e dados de extensão em uma instância de **message**.</span><span class="sxs-lookup"><span data-stu-id="02fa5-111">Since the **message** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in a **message** instance.</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="7c2d4-112">Permissões</span><span class="sxs-lookup"><span data-stu-id="7c2d4-112">Permissions</span></span>
-<span data-ttu-id="7c2d4-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7c2d4-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="02fa5-112">Permissões</span><span class="sxs-lookup"><span data-stu-id="02fa5-112">Permissions</span></span>
+<span data-ttu-id="02fa5-p102">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="02fa5-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="7c2d4-115">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="7c2d4-115">Permission type</span></span>      | <span data-ttu-id="7c2d4-116">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="7c2d4-116">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="02fa5-115">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="02fa5-115">Permission type</span></span>      | <span data-ttu-id="02fa5-116">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="02fa5-116">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="7c2d4-117">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="7c2d4-117">Delegated (work or school account)</span></span> | <span data-ttu-id="7c2d4-118">Mail. ReadBasic, mail. Read</span><span class="sxs-lookup"><span data-stu-id="7c2d4-118">Mail.ReadBasic, Mail.Read</span></span>    |
-|<span data-ttu-id="7c2d4-119">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="7c2d4-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7c2d4-120">Mail. ReadBasic, mail. Read</span><span class="sxs-lookup"><span data-stu-id="7c2d4-120">Mail.ReadBasic, Mail.Read</span></span>    |
-|<span data-ttu-id="7c2d4-121">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="7c2d4-121">Application</span></span> | <span data-ttu-id="7c2d4-122">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="7c2d4-122">Mail.Read</span></span> |
+|<span data-ttu-id="02fa5-117">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="02fa5-117">Delegated (work or school account)</span></span> | <span data-ttu-id="02fa5-118">Mail. ReadBasic, mail. Read</span><span class="sxs-lookup"><span data-stu-id="02fa5-118">Mail.ReadBasic, Mail.Read</span></span>    |
+|<span data-ttu-id="02fa5-119">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="02fa5-119">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="02fa5-120">Mail. ReadBasic, mail. Read</span><span class="sxs-lookup"><span data-stu-id="02fa5-120">Mail.ReadBasic, Mail.Read</span></span>    |
+|<span data-ttu-id="02fa5-121">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="02fa5-121">Application</span></span> | <span data-ttu-id="02fa5-122">Mail.Read</span><span class="sxs-lookup"><span data-stu-id="02fa5-122">Mail.Read</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="7c2d4-123">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="7c2d4-123">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="02fa5-123">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="02fa5-123">HTTP request</span></span>
 
-<span data-ttu-id="7c2d4-124">Para obter a mensagem especificada:</span><span class="sxs-lookup"><span data-stu-id="7c2d4-124">To get the specified message:</span></span>
+<span data-ttu-id="02fa5-124">Para obter a mensagem especificada:</span><span class="sxs-lookup"><span data-stu-id="02fa5-124">To get the specified message:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages/{id}
@@ -49,7 +49,7 @@ GET /me/mailFolders/{id}/messages/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
 
-<span data-ttu-id="7c2d4-125">Para obter o conteúdo MIME da mensagem especificada:</span><span class="sxs-lookup"><span data-stu-id="7c2d4-125">To get the MIME content of the specified message:</span></span>
+<span data-ttu-id="02fa5-125">Para obter o conteúdo MIME da mensagem especificada:</span><span class="sxs-lookup"><span data-stu-id="02fa5-125">To get the MIME content of the specified message:</span></span>
 <!-- { "blockType": "ignored" } --> 
 ```http 
 GET /me/messages/{id}/$value 
@@ -58,7 +58,7 @@ GET /me/mailFolders/{id}/messages/{id}/$value
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/$value 
 ```
 
-<span data-ttu-id="7c2d4-126">Para obter uma mensagem e expandir todas as menção na mensagem:</span><span class="sxs-lookup"><span data-stu-id="7c2d4-126">To get a message and expand all mentions in the message:</span></span>
+<span data-ttu-id="02fa5-126">Para obter uma mensagem e expandir todas as menção na mensagem:</span><span class="sxs-lookup"><span data-stu-id="02fa5-126">To get a message and expand all mentions in the message:</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages/{id}?$expand=mentions
@@ -67,41 +67,41 @@ GET /me/mailFolders/{id}/messages/{id}?$expand=mentions
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}?$expand=mentions
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="7c2d4-127">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="7c2d4-127">Optional query parameters</span></span>
-<span data-ttu-id="7c2d4-128">Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="7c2d4-128">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="02fa5-127">Parâmetros de consulta opcionais</span><span class="sxs-lookup"><span data-stu-id="02fa5-127">Optional query parameters</span></span>
+<span data-ttu-id="02fa5-128">Este método dá suporte a [Parâmetros de consulta OData](/graph/query-parameters) para ajudar a personalizar a resposta.</span><span class="sxs-lookup"><span data-stu-id="02fa5-128">This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-<span data-ttu-id="7c2d4-129">Use o `$value` parâmetro para obter o conteúdo MIME de uma mensagem.</span><span class="sxs-lookup"><span data-stu-id="7c2d4-129">Use the `$value` parameter to get the MIME content of a message.</span></span>
+<span data-ttu-id="02fa5-129">Use o `$value` parâmetro para obter o conteúdo MIME de uma mensagem.</span><span class="sxs-lookup"><span data-stu-id="02fa5-129">Use the `$value` parameter to get the MIME content of a message.</span></span>
 
-<span data-ttu-id="7c2d4-130">Use o `$expand` parâmetro de consulta na propriedade de navegação **menciona** para obter uma mensagem com os detalhes de cada [menção](../resources/mention.md) na mensagem expandida.</span><span class="sxs-lookup"><span data-stu-id="7c2d4-130">Use the `$expand` query parameter on the **mentions** navigation property to get a message with the details of each [mention](../resources/mention.md) in the message expanded.</span></span>
+<span data-ttu-id="02fa5-130">Use o `$expand` parâmetro de consulta na propriedade de navegação **menciona** para obter uma mensagem com os detalhes de cada [menção](../resources/mention.md) na mensagem expandida.</span><span class="sxs-lookup"><span data-stu-id="02fa5-130">Use the `$expand` query parameter on the **mentions** navigation property to get a message with the details of each [mention](../resources/mention.md) in the message expanded.</span></span>
 
 
 
-## <a name="request-headers"></a><span data-ttu-id="7c2d4-131">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="7c2d4-131">Request headers</span></span>
-| <span data-ttu-id="7c2d4-132">Nome</span><span class="sxs-lookup"><span data-stu-id="7c2d4-132">Name</span></span>       | <span data-ttu-id="7c2d4-133">Tipo</span><span class="sxs-lookup"><span data-stu-id="7c2d4-133">Type</span></span> | <span data-ttu-id="7c2d4-134">Descrição</span><span class="sxs-lookup"><span data-stu-id="7c2d4-134">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="02fa5-131">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="02fa5-131">Request headers</span></span>
+| <span data-ttu-id="02fa5-132">Nome</span><span class="sxs-lookup"><span data-stu-id="02fa5-132">Name</span></span>       | <span data-ttu-id="02fa5-133">Tipo</span><span class="sxs-lookup"><span data-stu-id="02fa5-133">Type</span></span> | <span data-ttu-id="02fa5-134">Descrição</span><span class="sxs-lookup"><span data-stu-id="02fa5-134">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="7c2d4-135">Autorização</span><span class="sxs-lookup"><span data-stu-id="7c2d4-135">Authorization</span></span>  | <span data-ttu-id="7c2d4-136">string</span><span class="sxs-lookup"><span data-stu-id="7c2d4-136">string</span></span>  | <span data-ttu-id="7c2d4-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="7c2d4-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="7c2d4-139">Prefer: outlook.body-content-type</span><span class="sxs-lookup"><span data-stu-id="7c2d4-139">Prefer: outlook.body-content-type</span></span> | <span data-ttu-id="7c2d4-140">string</span><span class="sxs-lookup"><span data-stu-id="7c2d4-140">string</span></span> | <span data-ttu-id="7c2d4-141">O formato das propriedades **body** e **uniqueBody** a serem retornadas.</span><span class="sxs-lookup"><span data-stu-id="7c2d4-141">The format of the **body** and **uniqueBody** properties to be returned in.</span></span> <span data-ttu-id="7c2d4-142">Os valores podem ser "text" ou "html".</span><span class="sxs-lookup"><span data-stu-id="7c2d4-142">Values can be "text" or "html".</span></span> <span data-ttu-id="7c2d4-143">Um cabeçalho `Preference-Applied` é retornado como confirmação quando este cabeçalho `Prefer` é especificado.</span><span class="sxs-lookup"><span data-stu-id="7c2d4-143">A `Preference-Applied` header is returned as confirmation if this `Prefer` header is specified.</span></span> <span data-ttu-id="7c2d4-144">Se o cabeçalho não for especificado, as propriedades **body** e **uniqueBody** serão retornadas no formato HTML.</span><span class="sxs-lookup"><span data-stu-id="7c2d4-144">If the header is not specified, the **body** and **uniqueBody** properties are returned in HTML format.</span></span> <span data-ttu-id="7c2d4-145">Opcional.</span><span class="sxs-lookup"><span data-stu-id="7c2d4-145">Optional.</span></span> |
+| <span data-ttu-id="02fa5-135">Autorização</span><span class="sxs-lookup"><span data-stu-id="02fa5-135">Authorization</span></span>  | <span data-ttu-id="02fa5-136">string</span><span class="sxs-lookup"><span data-stu-id="02fa5-136">string</span></span>  | <span data-ttu-id="02fa5-p103">{token} de portador. Obrigatório.</span><span class="sxs-lookup"><span data-stu-id="02fa5-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="02fa5-139">Prefer: outlook.body-content-type</span><span class="sxs-lookup"><span data-stu-id="02fa5-139">Prefer: outlook.body-content-type</span></span> | <span data-ttu-id="02fa5-140">string</span><span class="sxs-lookup"><span data-stu-id="02fa5-140">string</span></span> | <span data-ttu-id="02fa5-141">O formato das propriedades **body** e **uniqueBody** a serem retornadas.</span><span class="sxs-lookup"><span data-stu-id="02fa5-141">The format of the **body** and **uniqueBody** properties to be returned in.</span></span> <span data-ttu-id="02fa5-142">Os valores podem ser "text" ou "html".</span><span class="sxs-lookup"><span data-stu-id="02fa5-142">Values can be "text" or "html".</span></span> <span data-ttu-id="02fa5-143">Um cabeçalho `Preference-Applied` é retornado como confirmação se este cabeçalho `Prefer` for especificado.</span><span class="sxs-lookup"><span data-stu-id="02fa5-143">A `Preference-Applied` header is returned as confirmation if this `Prefer` header is specified.</span></span> <span data-ttu-id="02fa5-144">Se o cabeçalho não for especificado, as propriedades **body** e **uniqueBody** serão retornadas no formato HTML.</span><span class="sxs-lookup"><span data-stu-id="02fa5-144">If the header is not specified, the **body** and **uniqueBody** properties are returned in HTML format.</span></span> <span data-ttu-id="02fa5-145">Opcional.</span><span class="sxs-lookup"><span data-stu-id="02fa5-145">Optional.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="7c2d4-146">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="7c2d4-146">Request body</span></span>
-<span data-ttu-id="7c2d4-147">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="7c2d4-147">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="02fa5-146">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="02fa5-146">Request body</span></span>
+<span data-ttu-id="02fa5-147">Não forneça um corpo de solicitação para esse método.</span><span class="sxs-lookup"><span data-stu-id="02fa5-147">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="7c2d4-148">Resposta</span><span class="sxs-lookup"><span data-stu-id="7c2d4-148">Response</span></span>
+## <a name="response"></a><span data-ttu-id="02fa5-148">Resposta</span><span class="sxs-lookup"><span data-stu-id="02fa5-148">Response</span></span>
 
-<span data-ttu-id="7c2d4-149">Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [message](../resources/message.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="7c2d4-149">If successful, this method returns a `200 OK` response code and [message](../resources/message.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="7c2d4-150">Exemplo</span><span class="sxs-lookup"><span data-stu-id="7c2d4-150">Example</span></span>
-##### <a name="request-1"></a><span data-ttu-id="7c2d4-151">Solicitação 1</span><span class="sxs-lookup"><span data-stu-id="7c2d4-151">Request 1</span></span>
-<span data-ttu-id="7c2d4-152">O primeiro exemplo obtém a mensagem especificada.</span><span class="sxs-lookup"><span data-stu-id="7c2d4-152">The first example gets the specified message.</span></span> <span data-ttu-id="7c2d4-153">Ele não especifica nenhum cabeçalho para indicar o formato desejado do corpo a ser retornado.</span><span class="sxs-lookup"><span data-stu-id="7c2d4-153">It does not specify any header to indicate the desired format of the body to be returned.</span></span>
+<span data-ttu-id="02fa5-149">Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [message](../resources/message.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="02fa5-149">If successful, this method returns a `200 OK` response code and [message](../resources/message.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="02fa5-150">Exemplo</span><span class="sxs-lookup"><span data-stu-id="02fa5-150">Example</span></span>
+##### <a name="request-1"></a><span data-ttu-id="02fa5-151">Solicitação 1</span><span class="sxs-lookup"><span data-stu-id="02fa5-151">Request 1</span></span>
+<span data-ttu-id="02fa5-152">O primeiro exemplo obtém a mensagem especificada.</span><span class="sxs-lookup"><span data-stu-id="02fa5-152">The first example gets the specified message.</span></span> <span data-ttu-id="02fa5-153">Ele não especifica nenhum cabeçalho para indicar o formato desejado do corpo a ser retornado.</span><span class="sxs-lookup"><span data-stu-id="02fa5-153">It does not specify any header to indicate the desired format of the body to be returned.</span></span>
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkAGI1AAAoZCfHAAA="],
   "name": "get_message"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/messages('AAMkAGI1AAAoZCfHAAA=')
+GET https://graph.microsoft.com/beta/me/messages/AAMkAGI1AAAoZCfHAAA=
 ```
-##### <a name="response-1"></a><span data-ttu-id="7c2d4-154">Resposta 1</span><span class="sxs-lookup"><span data-stu-id="7c2d4-154">Response 1</span></span>
-<span data-ttu-id="7c2d4-155">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="7c2d4-155">Here is an example of the response.</span></span> <span data-ttu-id="7c2d4-156">As propriedades **Body** e **uniqueBody** são retornadas no formato HTML padrão.</span><span class="sxs-lookup"><span data-stu-id="7c2d4-156">The **body** and **uniqueBody** properties are returned in the default HTML format.</span></span>
-<span data-ttu-id="7c2d4-157">Observação: o objeto Response mostrado aqui é truncado por brevidade.</span><span class="sxs-lookup"><span data-stu-id="7c2d4-157">Note: The response object shown here is truncated for brevity.</span></span> <span data-ttu-id="7c2d4-158">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="7c2d4-158">All of the properties will be returned from an actual call.</span></span>
+##### <a name="response-1"></a><span data-ttu-id="02fa5-154">Resposta 1</span><span class="sxs-lookup"><span data-stu-id="02fa5-154">Response 1</span></span>
+<span data-ttu-id="02fa5-155">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="02fa5-155">Here is an example of the response.</span></span> <span data-ttu-id="02fa5-156">As propriedades **Body** e **uniqueBody** são retornadas no formato HTML padrão.</span><span class="sxs-lookup"><span data-stu-id="02fa5-156">The **body** and **uniqueBody** properties are returned in the default HTML format.</span></span>
+<span data-ttu-id="02fa5-157">Observação: o objeto Response mostrado aqui é truncado por brevidade.</span><span class="sxs-lookup"><span data-stu-id="02fa5-157">Note: The response object shown here is truncated for brevity.</span></span> <span data-ttu-id="02fa5-158">Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="02fa5-158">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -129,18 +129,18 @@ Content-length: 523
 }
 ```
 
-##### <a name="request-2"></a><span data-ttu-id="7c2d4-159">Solicitação 2</span><span class="sxs-lookup"><span data-stu-id="7c2d4-159">Request 2</span></span>
-<span data-ttu-id="7c2d4-160">No próximo exemplo, o usuário conectado é Dana Swope.</span><span class="sxs-lookup"><span data-stu-id="7c2d4-160">In the next example, the signed-in user is Dana Swope.</span></span> <span data-ttu-id="7c2d4-161">O exemplo mostra a obtenção de detalhes de todas as menções na mensagem especificada na caixa de correio da Dana.</span><span class="sxs-lookup"><span data-stu-id="7c2d4-161">The example shows getting the details of all the mentions in the specified message in Dana's mailbox.</span></span>
+##### <a name="request-2"></a><span data-ttu-id="02fa5-159">Solicitação 2</span><span class="sxs-lookup"><span data-stu-id="02fa5-159">Request 2</span></span>
+<span data-ttu-id="02fa5-160">No próximo exemplo, o usuário conectado é Dana Swope.</span><span class="sxs-lookup"><span data-stu-id="02fa5-160">In the next example, the signed-in user is Dana Swope.</span></span> <span data-ttu-id="02fa5-161">O exemplo mostra a obtenção de detalhes de todas as menções na mensagem especificada na caixa de correio da Dana.</span><span class="sxs-lookup"><span data-stu-id="02fa5-161">The example shows getting the details of all the mentions in the specified message in Dana's mailbox.</span></span>
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AQMkADJmMTUAAAgVZAAAA"],
   "name": "get_mentions_in_message"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/messages/('AQMkADJmMTUAAAgVZAAAA')?$expand=mentions
+GET https://graph.microsoft.com/beta/me/messages/AQMkADJmMTUAAAgVZAAAA/?$expand=mentions
 ```
-##### <a name="response-2"></a><span data-ttu-id="7c2d4-162">Resposta 2</span><span class="sxs-lookup"><span data-stu-id="7c2d4-162">Response 2</span></span>
-<span data-ttu-id="7c2d4-p108">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="7c2d4-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response-2"></a><span data-ttu-id="02fa5-162">Resposta 2</span><span class="sxs-lookup"><span data-stu-id="02fa5-162">Response 2</span></span>
+<span data-ttu-id="02fa5-p108">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="02fa5-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -238,9 +238,9 @@ Content-length: 2248
 ```
 
 
-##### <a name="request-3"></a><span data-ttu-id="7c2d4-166">Solicitação 3</span><span class="sxs-lookup"><span data-stu-id="7c2d4-166">Request 3</span></span>
+##### <a name="request-3"></a><span data-ttu-id="02fa5-166">Solicitação 3</span><span class="sxs-lookup"><span data-stu-id="02fa5-166">Request 3</span></span>
 
-<span data-ttu-id="7c2d4-167">O terceiro exemplo mostra como usar um `Prefer: outlook.body-content-type="text"` cabeçalho para obter o **corpo** e **uniqueBody** da mensagem especificada no formato de texto.</span><span class="sxs-lookup"><span data-stu-id="7c2d4-167">The third example shows how to use a `Prefer: outlook.body-content-type="text"` header to get the **body** and **uniqueBody** of the specified message in text format.</span></span>
+<span data-ttu-id="02fa5-167">O terceiro exemplo mostra como usar um `Prefer: outlook.body-content-type="text"` cabeçalho para obter o **corpo** e **uniqueBody** da mensagem especificada no formato de texto.</span><span class="sxs-lookup"><span data-stu-id="02fa5-167">The third example shows how to use a `Prefer: outlook.body-content-type="text"` header to get the **body** and **uniqueBody** of the specified message in text format.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -249,13 +249,13 @@ Content-length: 2248
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/me/messages('AAMkAGI1AAAoZCfHAAA=')?$select=subject,body,bodyPreview,uniqueBody
+GET https://graph.microsoft.com/beta/me/messages/AAMkAGI1AAAoZCfHAAA=/?$select=subject,body,bodyPreview,uniqueBody
 Prefer: outlook.body-content-type="text"
 ```
 
-##### <a name="response-3"></a><span data-ttu-id="7c2d4-168">Resposta 3</span><span class="sxs-lookup"><span data-stu-id="7c2d4-168">Response 3</span></span>
+##### <a name="response-3"></a><span data-ttu-id="02fa5-168">Resposta 3</span><span class="sxs-lookup"><span data-stu-id="02fa5-168">Response 3</span></span>
 
-<span data-ttu-id="7c2d4-169">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="7c2d4-169">Here is an example of the response.</span></span> <span data-ttu-id="7c2d4-170">Observação: a resposta inclui um `Preference-Applied: outlook.body-content-type` cabeçalho para confirmar o `Prefer: outlook.body-content-type` cabeçalho da solicitação.</span><span class="sxs-lookup"><span data-stu-id="7c2d4-170">Note: The response includes a `Preference-Applied: outlook.body-content-type` header to acknowledge the `Prefer: outlook.body-content-type` request header.</span></span>
+<span data-ttu-id="02fa5-169">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="02fa5-169">Here is an example of the response.</span></span> <span data-ttu-id="02fa5-170">Observação: a resposta inclui um `Preference-Applied: outlook.body-content-type` cabeçalho para confirmar o `Prefer: outlook.body-content-type` cabeçalho da solicitação.</span><span class="sxs-lookup"><span data-stu-id="02fa5-170">Note: The response includes a `Preference-Applied: outlook.body-content-type` header to acknowledge the `Prefer: outlook.body-content-type` request header.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -284,9 +284,9 @@ Content-length: 1550
 }
 ```
 
-##### <a name="request-4"></a><span data-ttu-id="7c2d4-171">Solicitação 4</span><span class="sxs-lookup"><span data-stu-id="7c2d4-171">Request 4</span></span>
+##### <a name="request-4"></a><span data-ttu-id="02fa5-171">Solicitação 4</span><span class="sxs-lookup"><span data-stu-id="02fa5-171">Request 4</span></span>
 
-<span data-ttu-id="7c2d4-172">O quarto exemplo mostra como obter os cabeçalhos de mensagem da Internet de uma mensagem específica.</span><span class="sxs-lookup"><span data-stu-id="7c2d4-172">The fourth example shows how to get the Internet message headers of a specific message.</span></span>  
+<span data-ttu-id="02fa5-172">O quarto exemplo mostra como obter os cabeçalhos de mensagem da Internet de uma mensagem específica.</span><span class="sxs-lookup"><span data-stu-id="02fa5-172">The fourth example shows how to get the Internet message headers of a specific message.</span></span>  
 
 <!-- {
   "blockType": "request",
@@ -295,12 +295,12 @@ Content-length: 1550
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/me/messages('AAMkAGVmMDEz')?$select=internetMessageHeaders
+GET https://graph.microsoft.com/beta/me/messages/AAMkAGVmMDEz/?$select=internetMessageHeaders
 ```
 
-##### <a name="response-4"></a><span data-ttu-id="7c2d4-173">Resposta 4</span><span class="sxs-lookup"><span data-stu-id="7c2d4-173">Response 4</span></span>
+##### <a name="response-4"></a><span data-ttu-id="02fa5-173">Resposta 4</span><span class="sxs-lookup"><span data-stu-id="02fa5-173">Response 4</span></span>
 
-<span data-ttu-id="7c2d4-174">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="7c2d4-174">Here is an example of the response.</span></span> <span data-ttu-id="7c2d4-175">Observação: o número de cabeçalhos de mensagens da Internet no objeto Response foi reduzido por brevidade.</span><span class="sxs-lookup"><span data-stu-id="7c2d4-175">Note: The number of Internet message headers in the response object has been reduced for brevity.</span></span>
+<span data-ttu-id="02fa5-174">Veja a seguir um exemplo da resposta.</span><span class="sxs-lookup"><span data-stu-id="02fa5-174">Here is an example of the response.</span></span> <span data-ttu-id="02fa5-175">Observação: o número de cabeçalhos de mensagens da Internet no objeto Response foi reduzido por brevidade.</span><span class="sxs-lookup"><span data-stu-id="02fa5-175">Note: The number of Internet message headers in the response object has been reduced for brevity.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -341,11 +341,11 @@ Content-type: application/json
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="7c2d4-176">Confira também</span><span class="sxs-lookup"><span data-stu-id="7c2d4-176">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="02fa5-176">Confira também</span><span class="sxs-lookup"><span data-stu-id="02fa5-176">See also</span></span>
 
-- [<span data-ttu-id="7c2d4-177">Adicionar dados personalizados a recursos usando extensões</span><span class="sxs-lookup"><span data-stu-id="7c2d4-177">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
-- [<span data-ttu-id="7c2d4-178">Adicionar dados personalizados aos usuários usando extensões abertas (visualização)</span><span class="sxs-lookup"><span data-stu-id="7c2d4-178">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
-- [<span data-ttu-id="7c2d4-179">Adicionar dados personalizados a grupos usando extensões do esquema (visualização)</span><span class="sxs-lookup"><span data-stu-id="7c2d4-179">Add custom data to groups using schema extensions (preview)</span></span>](/graph/extensibility-schema-groups)
+- [<span data-ttu-id="02fa5-177">Adicionar dados personalizados a recursos usando extensões</span><span class="sxs-lookup"><span data-stu-id="02fa5-177">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
+- [<span data-ttu-id="02fa5-178">Adicionar dados personalizados aos usuários usando extensões abertas (visualização)</span><span class="sxs-lookup"><span data-stu-id="02fa5-178">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
+- [<span data-ttu-id="02fa5-179">Adicionar dados personalizados a grupos usando extensões do esquema (visualização)</span><span class="sxs-lookup"><span data-stu-id="02fa5-179">Add custom data to groups using schema extensions (preview)</span></span>](/graph/extensibility-schema-groups)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -357,7 +357,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/message-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: get_message_internet_headers/internetMessageHeaders/member/value:\r\n       Expected type String but actual was Binary. Property: value, actual value: 'binary'"
   ]
 }
 -->
