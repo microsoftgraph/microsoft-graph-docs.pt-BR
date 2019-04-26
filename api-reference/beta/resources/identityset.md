@@ -4,16 +4,19 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: IdentitySet
 localization_priority: Normal
-ms.openlocfilehash: 10b39bd5747e10ea4340bb5b4c54df0f94eb4229
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: b1570fc0ec0a6e28bab569dfae6992675d8b3537
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32547141"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333656"
 ---
 # <a name="identityset-resource-type"></a>tipo de recurso identityset
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 O **** recurso identityset é uma coleção com chave de recursos de [identidade](identity.md) .
+
 É usado para representar uma coleção de identidades associada a vários eventos de um item, como _created by_ ou _last modified by_.
 
 ## <a name="json-representation"></a>Representação JSON
@@ -55,7 +58,7 @@ Veja a seguir uma representação JSON do recurso.
 | Propriedade    | Tipo                    | Descrição                                             |
 |:------------|:------------------------|:--------------------------------------------------------|
 | application | [Identidade](identity.md) | Opcional. O aplicativo associado a essa ação.  |
-| conversa| [Identity](identity.md) | Opcional. A equipe ou canal associado a esta ação.       |
+| conversation| [Identity](identity.md) | Opcional. A equipe ou canal associado a esta ação.       |
 | conversationIdentityType| [Identity](identity.md) | Opcional. Indica se a propriedade de **conversa** identifica uma equipe ou um canal.|
 | device      | [Identidade](identity.md) | Opcional. O dispositivo associado a essa ação.       |
 | phone       | [identity](identity.md) | Opcional. O número de telefone associado a esta ação. |

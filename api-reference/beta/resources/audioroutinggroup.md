@@ -4,12 +4,12 @@ description: O grupo de roteamento de áudio armazena uma rota de áudio privada
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: e7fc7de5b5caaa2f4079c453f9cd855a42577cb8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c5139b9f1f0c56b93848868c0d76ebf3051a148c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543998"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328248"
 ---
 # <a name="audioroutinggroup-resource-type"></a>tipo de recurso audioRoutingGroup
 
@@ -24,17 +24,17 @@ O grupo de roteamento de áudio armazena uma rota de áudio privada entre os par
 | Método                                                  | Tipo de retorno                               | Descrição                                  |
 |:--------------------------------------------------------|:------------------------------------------|:---------------------------------------------|
 | [Obter audioRoutingGroup](../api/audioroutinggroup-get.md)| [audioRoutingGroup](audioroutinggroup.md) | Leia as propriedades e os relacionamentos do objeto audioRoutingGroup.|
-| [Update](../api/audioroutinggroup-update.md)            | [audioRoutingGroup](audioroutinggroup.md) | Atualizar lista de receptores.                       |
-| [Excluir](../api/audioroutinggroup-delete.md)            | None                                      | Exclua o grupo roteamento de áudio.              |
+| [Atualizar](../api/audioroutinggroup-update.md)            | [audioRoutingGroup](audioroutinggroup.md) | Atualizar lista de receptores.                       |
+| [Delete](../api/audioroutinggroup-delete.md)            | Nenhuma                                      | Exclua o grupo roteamento de áudio.              |
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade      | Tipo              | Descrição                                                          |
 | :----------   | :---------------- | :--------------------------------------------------------------------|
-| id            | String            | Somente leitura. Servidor gerado.                                         |
-| receptores     | String Collection | Lista de IDs de participantes de recebimento.                                   |
-| routingmode   | String            | Modo de grupo de roteamento.  Os valores possíveis são: `oneToOne` e `multicast`.   |
-| fontes       | String Collection | Lista de IDs de participantes de origem.                                      |
+| id            | string            | Somente leitura. Servidor gerado.                                         |
+| receptores     | collection(string) | Lista de IDs de participantes de recebimento.                                   |
+| routingmode   | string            | Modo de grupo de roteamento.  Os valores possíveis são: `oneToOne` e `multicast`.   |
+| fontes       | collection(string) | Lista de IDs de participantes de origem.                                      |
 
 > **Observação:** O modo de roteamento determina as restrições nas fontes e nos receptores. Só há suporte para os seguintes grupos de roteamento.
 > - `oneToOne`– fontes e receptores têm apenas um participante a cada.
@@ -58,10 +58,10 @@ Veja a seguir uma representação JSON do recurso.
 }-->
 ```json
 {
-  "id": "String (identifier)",
-  "receivers": [ "String" ],
+  "id": "string (identifier)",
+  "receivers": [ "string" ],
   "routingMode": "oneToOne | multicast",
-  "sources": [ "String" ]
+  "sources": [ "string" ]
 }
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -73,8 +73,6 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/audioroutinggroup.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

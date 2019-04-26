@@ -4,16 +4,16 @@ description: 'Remova o aplicativo do catálogo de aplicativos da sua organizaç�
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: e88b072e9beb9f29cf5a26c9dccac89ffa78fc39
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 35a131309445f0a84bdc54690e1f88b5a0ad31f0
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32544583"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33335218"
 ---
 # <a name="remove-an-app-from-your-organizations-app-catalog"></a>Remover um aplicativo do catálogo de aplicativos da sua organização
 
-
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Remova o [aplicativo](../resources/teamsapp.md) do catálogo de aplicativos da sua organização (o catálogo de aplicativos do locatário). Para remover o aplicativo do catálogo de aplicativos da sua organização, `organization` especifique como **DistributionMethod** no recurso [teamsCatalogApp](../resources/teamsapp.md) .
 
@@ -43,7 +43,7 @@ DELETE /appCatalogs/teamsApps/{id}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-Nenhum.
+Nenhum
 
 >**Observação:** Use o ID retornado da [lista de aplicativos publicados](./teamsapp-list.md) chamada para fazer referência ao aplicativo que você deseja atualizar. Não use a ID do manifesto do pacote de aplicativos zip.
 
@@ -58,7 +58,7 @@ HTTP/1.1 204 No Content
 ### <a name="request"></a>Solicitação
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8
+DELETE https://graph.microsoft.com/beta/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8
 ```
 
 ### <a name="response"></a>Resposta

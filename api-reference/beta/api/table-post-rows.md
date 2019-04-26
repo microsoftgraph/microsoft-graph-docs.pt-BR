@@ -4,12 +4,12 @@ description: 'Adiciona linhas ao final da tabela. Observe que a API pode aceitar
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 88fd78516528f62925b18c1c45d9452404be6881
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2d0244b554333e2151e202273e26440b165f47a2
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32536866"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33330503"
 ---
 # <a name="create-tablerow"></a>Criar TableRow
 
@@ -49,11 +49,11 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |index|number|Opcional. Especifica a posição relativa da nova linha. Se for nulo, a adição ocorre no final. Todas as linhas abaixo da linha inserida serão deslocadas para baixo. Indexado com zero.|
-|values|(booliano, cadeia de caracteres ou número)|Uma matriz de dois dimensionals de valores não formatados das linhas da tabela.|
+|values|coleção (booliano ou cadeia de caracteres ou número)|Uma matriz de dois dimensionals de valores não formatados das linhas da tabela.|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [TableRow](../resources/tablerow.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `200 OK` o código de resposta e o objeto [workbookTableRow](../resources/workbooktablerow.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 Neste exemplo, duas linhas de dados são inseridas no final da tabela. 
@@ -82,7 +82,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.tableRow"
+  "@odata.type": "microsoft.graph.workbookTableRow"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -104,8 +104,6 @@ Content-length: 45
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/table-post-rows.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -4,12 +4,12 @@ description: Obter grupos recém-criados, atualizados ou excluídos, incluindo a
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: c894df643289d3f92ce20ebd36a53456999ab587
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ff525bf807cf7f4d2932aad30f61dab157dc6619
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32502726"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33329664"
 ---
 # <a name="group-delta"></a>group: delta
 
@@ -63,7 +63,7 @@ Este método oferece suporte a parâmetros de consulta OData opcionais para ajud
 
 | Nome       | Descrição|
 |:---------------|:----------|
-| Authorization  | &lt;Token&gt; de portador|
+| Autorização  | &lt;Token&gt; de portador|
 | Content-Type  | application/json |
 | Preferir | retorno = mínimo <br><br>A especificação desse cabeçalho com uma solicitação que usa `deltaLink` um retornava apenas as propriedades do objeto que foram alteradas desde a última rodada. Opcional. |
 
@@ -257,8 +257,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/group-delta.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -2,12 +2,12 @@
 title: 'servicePrincipalName: getMemberGroups'
 description: Obtenha a lista de grupos dos quais essa entidade de serviço é membro.  A verificação é transitiva.
 localization_priority: Normal
-ms.openlocfilehash: 80d81444b9e70bd27b5bc5346ffa0e42e9371837
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6692f9be6ae3f99c82d9f0d9e2bfd30d043f47b2
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32545465"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33331438"
 ---
 # <a name="serviceprincipal-getmembergroups"></a>servicePrincipalName: getMemberGroups
 
@@ -94,8 +94,6 @@ Content-length: 39
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/serviceprincipal-getmembergroups.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

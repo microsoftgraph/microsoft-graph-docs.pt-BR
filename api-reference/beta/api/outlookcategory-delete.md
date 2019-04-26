@@ -4,15 +4,16 @@ description: Exclua o objeto outlookCategory especificado.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 87bfea6c1580d5d74813199d5d7c20e9123182a1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a6149ecab0e8299e99f6d956971fd722a66ee133
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32539894"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33332774"
 ---
 # <a name="delete-outlook-category"></a>Excluir categoria do Outlook
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Exclua o objeto [outlookCategory](../resources/outlookcategory.md) especificado.
 
@@ -49,11 +50,10 @@ Se bem-sucedido, este método retorna um código de resposta `204 No Content`. N
 Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["4b1c2495-54c9-4a5e-90a2-0ab0b31987d8"],
   "name": "delete_outlookcategory"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/me/outlook/masterCategories/4b1c2495-54c9-4a5e-90a2-0ab0b31987d8
+DELETE https://graph.microsoft.com/beta/me/outlook/masterCategories/4b1c2495-54c9-4a5e-90a2-0ab0b31987d8
 ```
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta.
@@ -68,10 +68,13 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Delete outlookCategory",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

@@ -4,12 +4,12 @@ description: Excluir vários indicadores de inteligência de ameaça (TI) em uma
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 49475f15520f02cc36bb1bf37af9a5849a8ee245
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d5ceaa7e7c0402719b8ee202053da54ad235cc28
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32544655"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33335292"
 ---
 # <a name="tiindicator-deletetiindicators"></a>tiIndicator: deleteTiIndicators
 
@@ -47,7 +47,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Parâmetro    | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|valor|Coleção de cadeias de caracteres| Coleção de tiIndicator `id`s a ser excluído. |
+|valor|Coleção String| Coleção de tiIndicator `id`s a ser excluído. |
 
 ## <a name="response"></a>Resposta
 
@@ -94,6 +94,7 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
   "value": [
     {

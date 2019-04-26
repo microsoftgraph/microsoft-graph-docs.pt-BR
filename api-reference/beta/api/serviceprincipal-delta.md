@@ -2,12 +2,12 @@
 title: 'servicePrincipalName: Delta'
 description: Obtenha entidades de serviço recém-criadas, atualizadas ou excluídas sem ter que realizar uma leitura completa de toda a coleção de recursos. Consulte usando a consulta Delta para obter detalhes.
 localization_priority: Normal
-ms.openlocfilehash: ed0cf279d1d076e324d24e1774734e9aa14a6b34
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f405dec49de75789d015988b0043c1ea57973cfb
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32545484"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33331367"
 ---
 # <a name="serviceprincipal-delta"></a>servicePrincipalName: Delta
 
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/delta
 ```
 
 ##### <a name="response"></a>Resposta
-Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- { 
   "blockType": "response",
   "truncated": true,
@@ -133,8 +133,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/serviceprincipal-delta.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

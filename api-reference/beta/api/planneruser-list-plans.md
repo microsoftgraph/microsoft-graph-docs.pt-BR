@@ -4,14 +4,16 @@ description: Recupere uma lista de objetos **plannerplan** compartilhados com um
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: ad41f0ae74203490b1a5c966f9ebb6b393ef3d05
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 01562cb1ee687422be60ad066af7a128ba7ba278
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32546786"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33332336"
 ---
 # <a name="list-plans"></a>Listar planos
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Recupere uma lista de objetos **plannerplan** compartilhados com um objeto [User](../resources/user.md) .
 
@@ -28,7 +30,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/planner/plans
-GET /users/{id}/planner/plans
+GET /users/<id>/planner/plans
 GET /drive/root/createdByUser/planner/plans
 ```
 
@@ -54,7 +56,7 @@ Este é um exemplo da solicitação.
   "name": "get_plans"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/planner/plans
+GET https://graph.microsoft.com/beta/me/planner/plans
 ```
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
@@ -91,10 +93,13 @@ Content-length: 438
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List plans",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

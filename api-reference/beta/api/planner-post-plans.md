@@ -4,14 +4,16 @@ description: Use essa API para criar um novo **plannerPlan**.
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: a5383bacedef2e7e6df718a4286f034e67f6a7d9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e3d55fddae020a58b2fdb240b486d65b3d78a320
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32539003"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33332536"
 ---
 # <a name="create-plannerplan"></a>Criar plannerPlan
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Use essa API para criar um novo **plannerPlan**.
 
@@ -44,7 +46,6 @@ No corpo da solicitação, forneça uma representação JSON do objeto [plannerP
 
 >**Observação**: o usuário que está criando o plano deve ser um membro do grupo que será proprietário do plano. Ao criar um novo grupo usando [Criar grupo](../api/group-post-groups.md), você não é adicionado ao grupo como membro. Depois que o grupo for criado, adicione a si mesmo como membro usando [membros de postagem do grupo](../api/group-post-members.md).
 
-
 ## <a name="response"></a>Resposta
 
 Se bem-sucedido, este método retorna o código de resposta `201 Created` e o objeto [plannerPlan](../resources/plannerplan.md) no corpo da resposta.
@@ -56,13 +57,12 @@ Este método pode retornar qualquer um dos [códigos de status de HTTP](/graph/e
 ### <a name="request"></a>Solicitação
 
 Este é um exemplo da solicitação.
-
 <!-- {
   "blockType": "request",
   "name": "create_plannerplan_from_planner"
 }-->
 ``` http
-POST https://graph.microsoft.com/v1.0/planner/plans
+POST https://graph.microsoft.com/beta/planner/plans
 Content-type: application/json
 Content-length: 381
 
@@ -77,7 +77,6 @@ No corpo da solicitação, forneça uma representação JSON do objeto [plannerP
 ### <a name="response"></a>Resposta
 
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
-
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -106,10 +105,13 @@ Content-length: 357
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create plannerPlan",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

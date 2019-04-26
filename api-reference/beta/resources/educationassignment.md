@@ -4,12 +4,12 @@ description: O recurso **educationAssignment** representa uma tarefa ou unidade 
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: 03612cd65dbefac4e31f1a4d06085ba635fe1eab
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9722a5eec59431b4c4c8bbf7dfc9ebfc39d4a459
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543039"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334513"
 ---
 # <a name="educationassignment-resource-type"></a>tipo de recurso educationAssignment
 
@@ -32,8 +32,8 @@ As APIs de atribuição são expostas no namespace da classe.
 |[Listar categorias](../api/educationassignment-list-categories.md) |coleção [educationCategory](educationcategory.md)| Obtenha uma coleção de objetos **educationCategory** .|
 |[Adicionar categorias](../api/educationassignment-add-categories.md) |[educationCategory](educationcategory.md) | Atribua um **educationCategory** pertencente à classe a essa atribuição.|
 |[Remover categoria](../api/educationassignment-remove-category.md) |Nenhum| Remover um **educationCategory** pertencente à classe dessa atribuição.|
-|[Update](../api/educationassignment-update.md) | [educationAssignment](educationassignment.md) |Atualize um objeto **educationAssignment** . |
-|[Excluir](../api/educationassignment-delete.md) | Nenhum |Excluir um objeto **educationAssignment** . |
+|[Atualizar](../api/educationassignment-update.md) | [educationAssignment](educationassignment.md) |Atualize um objeto **educationAssignment** . |
+|[Delete](../api/educationassignment-delete.md) | Nenhum |Excluir um objeto **educationAssignment** . |
 |[Publish](../api/educationassignment-publish.md)|[educationAssignment](educationassignment.md)|Alterar o estado de um objeto **educationAssignment** de rascunho para publicado.|
 |[Obter URL da pasta do recurso](../api/educationassignment-getresourcesfolderurl.md)| string| A pasta do OneDrive em que os recursos baseados em arquivo devem ser colocados para fazer parte de um recurso de atribuição. Os arquivos devem estar localizados nessa pasta para serem adicionados como um recurso.|
 
@@ -41,8 +41,8 @@ As APIs de atribuição são expostas no namespace da classe.
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |id|String| Somente leitura.|
-|allowLateSubmissions|Booliano| Identifica se os alunos podem enviar após a data de conclusão. Se essa propriedade não for especificada durante a criação, o padrão será true. |
-|allowStudentsToAddResourcesToSubmission|Booliano| Identifica se os alunos podem adicionar seus próprios recursos a um envio ou se eles só podem modificar recursos adicionados pelo professor. |
+|allowLateSubmissions|Boolean| Identifica se os alunos podem enviar após a data de conclusão. Se essa propriedade não for especificada durante a criação, o padrão será true. |
+|allowStudentsToAddResourcesToSubmission|Boolean| Identifica se os alunos podem adicionar seus próprios recursos a um envio ou se eles só podem modificar recursos adicionados pelo professor. |
 |assignDateTime|DateTimeOffset|A data em que a atribuição deve se tornar ativa.  Se no futuro, a atribuição não será mostrada ao aluno até esta data.  O tipo **timestamp** representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |atribuir|[educationAssignmentRecipient](educationassignmentrecipient.md)| Quais usuários ou classes inteira devem receber um objeto de envio depois que a atribuição for publicada. |
 |assignedDateTime|DateTimeOffset|O momento em que a atribuição foi publicada para estudantes e a atribuição aparece na linha do tempo dos alunos.  O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
@@ -70,6 +70,7 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- {
   "blockType": "resource",
+  "keyProperty":"id",
   "optionalProperties": [
 
   ],
@@ -106,8 +107,6 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/educationassignment.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

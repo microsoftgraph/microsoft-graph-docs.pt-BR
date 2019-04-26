@@ -4,12 +4,12 @@ description: Recupere as propriedades e os relacionamentos do objeto Message.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: b1a94d396d5c249cdadda233632bb596d34a3625
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1cd104f3757b5c4a92773f0a2c7fb705002570fb
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32540489"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333134"
 ---
 # <a name="get-message"></a>Obter mensagem
 
@@ -80,7 +80,7 @@ Use o `$expand` parâmetro de consulta na propriedade de navegação **menciona*
 | Nome       | Tipo | Descrição|
 |:-----------|:------|:----------|
 | Autorização  | string  | {token} de portador. Obrigatório. |
-| Prefer: outlook.body-content-type | string | O formato das propriedades **body** e **uniqueBody** a serem retornadas. Os valores podem ser "text" ou "html". Um cabeçalho `Preference-Applied` é retornado como confirmação quando este cabeçalho `Prefer` é especificado. Se o cabeçalho não for especificado, as propriedades **body** e **uniqueBody** serão retornadas no formato HTML. Opcional. |
+| Prefer: outlook.body-content-type | string | O formato das propriedades **body** e **uniqueBody** a serem retornadas. Os valores podem ser "text" ou "html". Um cabeçalho `Preference-Applied` é retornado como confirmação se este cabeçalho `Prefer` for especificado. Se o cabeçalho não for especificado, as propriedades **body** e **uniqueBody** serão retornadas no formato HTML. Opcional. |
 
 ## <a name="request-body"></a>Corpo da solicitação
 Não forneça um corpo de solicitação para esse método.
@@ -97,7 +97,7 @@ O primeiro exemplo obtém a mensagem especificada. Ele não especifica nenhum ca
   "name": "get_message"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/messages('AAMkAGI1AAAoZCfHAAA=')
+GET https://graph.microsoft.com/beta/me/messages/AAMkAGI1AAAoZCfHAAA=
 ```
 ##### <a name="response-1"></a>Resposta 1
 Veja a seguir um exemplo da resposta. As propriedades **Body** e **uniqueBody** são retornadas no formato HTML padrão.
@@ -137,7 +137,7 @@ No próximo exemplo, o usuário conectado é Dana Swope. O exemplo mostra a obte
   "name": "get_mentions_in_message"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/messages/('AQMkADJmMTUAAAgVZAAAA')?$expand=mentions
+GET https://graph.microsoft.com/beta/me/messages/AQMkADJmMTUAAAgVZAAAA/?$expand=mentions
 ```
 ##### <a name="response-2"></a>Resposta 2
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
@@ -249,7 +249,7 @@ O terceiro exemplo mostra como usar um `Prefer: outlook.body-content-type="text"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/me/messages('AAMkAGI1AAAoZCfHAAA=')?$select=subject,body,bodyPreview,uniqueBody
+GET https://graph.microsoft.com/beta/me/messages/AAMkAGI1AAAoZCfHAAA=/?$select=subject,body,bodyPreview,uniqueBody
 Prefer: outlook.body-content-type="text"
 ```
 
@@ -295,7 +295,7 @@ O quarto exemplo mostra como obter os cabeçalhos de mensagem da Internet de uma
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/me/messages('AAMkAGVmMDEz')?$select=internetMessageHeaders
+GET https://graph.microsoft.com/beta/me/messages/AAMkAGVmMDEz/?$select=internetMessageHeaders
 ```
 
 ##### <a name="response-4"></a>Resposta 4
@@ -357,7 +357,7 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/message-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: get_message_internet_headers/internetMessageHeaders/member/value:\r\n       Expected type String but actual was Binary. Property: value, actual value: 'binary'"
   ]
 }
 -->

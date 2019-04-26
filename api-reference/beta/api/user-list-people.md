@@ -4,12 +4,12 @@ description: Recupere uma lista de objetos Person ordenados por sua relevância 
 author: dkershaw10
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: deb9fd929a2b0b8ce4da9392cb465497c2236b0c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ed6c7a6c05cd678dc2107f00c42211a186fa61fc
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32544266"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33329890"
 ---
 # <a name="list-people"></a>Listar pessoas
 
@@ -280,8 +280,6 @@ GET https://graph.microsoft.com/beta/users('nestork@contoso.com')/people/
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/user-list-people.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

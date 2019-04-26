@@ -2,12 +2,12 @@
 title: Excluir programa
 description: No recurso de revisões do Azure AD Access, exclua um objeto Program.
 localization_priority: Normal
-ms.openlocfilehash: 930367e6c61d354655e73fb7ece9c8776e15f34e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e3839c552d7342bc00f5fdf8c26d45770c12ff17
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32546381"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33331962"
 ---
 # <a name="delete-program"></a>Excluir programa
 
@@ -23,9 +23,11 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | `ProgramControl.ReadWrite.All`.  O usuário conectado também deve estar em uma função de diretório que permite que eles criem um programa. |
+|Delegado (conta corporativa ou de estudante)     | ProgramControl. ReadWrite. All   |
 |Delegado (conta pessoal da Microsoft) | Sem suporte. |
 |Aplicativo                            | Sem suporte. |
+
+O usuário conectado também deve estar em uma função de diretório que permite que eles criem um programa.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -51,7 +53,7 @@ Se bem-sucedido, este método retorna um código de resposta `204, No Content`. 
   "name": "delete_program"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/programs('7e59d237-2fb0-4e5d-b7bb-d4f9f9129213')
+DELETE https://graph.microsoft.com/beta/programs/7e59d237-2fb0-4e5d-b7bb-d4f9f9129213
 ```
 ##### <a name="response"></a>Resposta
 >**Observação: **o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
@@ -72,8 +74,6 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/program-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

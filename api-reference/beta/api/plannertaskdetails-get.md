@@ -4,14 +4,16 @@ description: Recupere as propriedades e os relacionamentos do objeto **plannerta
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 77920e12c3c3563fc9af739be8c68fe83d558557
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c4cde71d449d6f32d037d5b33d30802d19186a49
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32546864"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33337613"
 ---
 # <a name="get-plannertaskdetails"></a>Obter plannerTaskDetails
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Recupere as propriedades e os relacionamentos do objeto **plannertaskdetails** .
 ## <a name="permissions"></a>Permissões
@@ -26,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /planner/tasks/{id}/details
+GET /planner/tasks/<id>/details
 ```
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
@@ -51,7 +53,7 @@ Este é um exemplo da solicitação.
   "name": "get_plannertaskdetails"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/planner/tasks/{task-id}/details
+GET https://graph.microsoft.com/beta/planner/tasks/gcrYAaAkgU2EQUvpkNNXLGQAGTtu/details
 ```
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
@@ -102,10 +104,13 @@ Content-length: 1036
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get plannerTaskDetails",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

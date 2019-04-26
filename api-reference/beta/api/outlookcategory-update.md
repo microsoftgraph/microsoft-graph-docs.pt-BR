@@ -4,15 +4,16 @@ description: 'Atualize a propriedade gravável, **color**, do objeto outlookCate
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 87c235b670036cb7f4d7e4c20a0e6c700d3843c7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 05290d9310f00f282684d2f2476b5a70f59f3e2f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32539780"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33332725"
 ---
 # <a name="update-outlook-category"></a>Atualizar a categoria do Outlook
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Atualize a propriedade gravável, **color**, do objeto [outlookCategory](../resources/outlookcategory.md) especificado. Não é possível modificar a propriedade **displayName** depois de criar a categoria.
 
@@ -52,11 +53,10 @@ Se tiver êxito, este método retornará um código de resposta `200 OK` e um ob
 Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["bac262b7-485d-4739-b436-e31467d64fac"],
   "name": "update_outlookcategory"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/me/outlook/masterCategories/bac262b7-485d-4739-b436-e31467d64fac
+PATCH https://graph.microsoft.com/beta/me/outlook/masterCategories/bac262b7-485d-4739-b436-e31467d64fac
 Content-type: application/json
 Content-length: 30
 
@@ -77,7 +77,7 @@ Content-type: application/json
 Content-length: 251
 
 {
-  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('8ae6f565-0d7f-4ead-853e-7db94c912a1f')/outlook/masterCategories/$entity",
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('8ae6f565-0d7f-4ead-853e-7db94c912a1f')/outlook/masterCategories/$entity",
   "id":"bac262b7-485d-4739-b436-e31467d64fac",
   "displayName":"Project expenses",
   "color":"preset15"
@@ -86,10 +86,13 @@ Content-length: 251
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update outlookCategory",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

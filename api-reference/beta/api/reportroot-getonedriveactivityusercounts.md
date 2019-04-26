@@ -4,12 +4,12 @@ description: Obtenha a tendência no número de usuários ativos do OneDrive.
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 85ec312af94f82a9932e325a303176b091fa85e0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6502d4977bbb37647098b5655eb1189005c1fa8f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32545941"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33336603"
 ---
 # <a name="reportroot-getonedriveactivityusercounts"></a>reportRoot: getOneDriveActivityUserCounts
 
@@ -25,8 +25,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 | Tipo de permissão                        | Permissões (da com menos para a com mais privilégios) |
 | :------------------------------------- | :--------------------------------------- |
-| Delegado (conta corporativa ou de estudante)     | Reports.Read.All                         |
-| Delegado (conta pessoal da Microsoft) | Sem suporte.                           |
+| Delegada (conta corporativa ou de estudante)     | Reports.Read.All                         |
+| Delegada (conta pessoal da Microsoft) | Sem suporte.                           |
 | Aplicativo                            | Reports.Read.All                         |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -170,11 +170,3 @@ Content-Length: 275
   ]
 }
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/reportroot-getonedriveactivityusercounts.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

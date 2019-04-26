@@ -4,12 +4,12 @@ description: Atualize vários indicadores de inteligência de ameaça (TI) em um
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 91020b533b621c1ba77b2f839d4e6ffd8d7ee8ac
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c5831c09a8ac01673b9cf5e37d3c0ac00e1350a2
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32537031"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33335275"
 ---
 # <a name="tiindicator-updatetiindicators"></a>tiIndicator: updateTiIndicators
 
@@ -62,7 +62,8 @@ O exemplo a seguir mostra como chamar essa API.
 Este é um exemplo de solicitação.
 <!-- {
   "blockType": "request",
-  "name": "tiindicator_updatetiindicators"
+  "name": "tiindicator_updatetiindicators",
+  "isCollection":true
 }-->
 ```http
 POST https://graph.microsoft.com/beta/security/tiIndicators/updateTiIndicators
@@ -100,6 +101,7 @@ Este é um exemplo de resposta.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
   "value": [
     {

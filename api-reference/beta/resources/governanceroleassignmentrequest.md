@@ -2,12 +2,12 @@
 title: tipo de recurso governanceRoleAssignmentRequest
 description: Representa a solicitação de operações de atribuição de função no gerenciamento de identidade do Privilegd.
 localization_priority: Normal
-ms.openlocfilehash: 242f1d311a2d304d0d8dab0a4e24f9294722ab6e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d5d5f34d417b5d5cbd5eca9bb32ad49c17ef70e5
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32547441"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333677"
 ---
 # <a name="governanceroleassignmentrequest-resource-type"></a>tipo de recurso governanceRoleAssignmentRequest
 
@@ -23,14 +23,14 @@ Representa a solicitação de operações de atribuição de função no gerenci
 |:------------|:--------|:--------|
 |[Get](../api/governanceroleassignmentrequest-get.md) | [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Obtenha uma solicitação de atribuição de função especificada por ID.  
 |[List](../api/governanceroleassignmentrequest-list.md) | coleção [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Obter solicitações de atribuição de função em um recurso.|
-|[Create](../api/governanceroleassignmentrequest-post.md)|  [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Criar uma solicitação para gerenciar o ciclo de vida da atribuição de função nova ou existente.|
+|[Criar](../api/governanceroleassignmentrequest-post.md)|  [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Criar uma solicitação para gerenciar o ciclo de vida da atribuição de função nova ou existente.|
 |[Cancel](../api/governanceroleassignmentrequest-cancel.md)|  |Cancelar uma solicitação de atribuição de função pendente.|
-|[Update](../api/governanceroleassignmentrequest-update.md)| [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Os administradores atualizam as decisões sobre solicitações se as solicitações estiverem no `PendingAdminDecision`status de.|
+|[Atualizar](../api/governanceroleassignmentrequest-update.md)| [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Os administradores atualizam as decisões sobre solicitações se as solicitações estiverem no `PendingAdminDecision`status de.|
 
 ## <a name="properties"></a>Propriedades
 | Propriedade                  | Tipo          |Descrição|
 |:--------------------------|:--------------|:----------|
-|id                         |Cadeia de caracteres         |A ID da solicitação de atribuição de função.|
+|id                         |String         |A ID da solicitação de atribuição de função.|
 |resourceId                 |String         |Obrigatório. A ID do recurso ao qual a solicitação de atribuição de função está associada.|
 |roleDefinitionId           |String         |Obrigatório. A ID da definição de função à qual a solicitação de atribuição de função está associada.|
 |SubjectID                  |String         |Obrigatório. A ID da entidade à qual a solicitação de atribuição de função está associada.|
@@ -57,6 +57,7 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "optionalProperties": [
 
   ],
@@ -89,8 +90,6 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/governanceroleassignmentrequest.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

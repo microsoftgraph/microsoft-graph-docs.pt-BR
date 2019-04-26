@@ -4,12 +4,12 @@ description: Atualizar as propriedades graváveis de um grupo de tarefas do Outl
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: b628f0cf610afef88a198db721ee5395a34d1e08
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 978d55fd6fb6ef40a859f622910d0bd2b41a58cc
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32539607"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33332680"
 ---
 # <a name="update-outlooktaskgroup"></a>Atualizar outlooktaskgroup
 
@@ -56,8 +56,7 @@ O exemplo a seguir altera o nome de um grupo de tarefas para "Tarefas Pessoais".
   "name": "update_outlooktaskgroup"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/me/outlook/taskgroups('AAMkADIyAAAhrbe-AAA=')
-
+PATCH https://graph.microsoft.com/beta/me/outlook/taskgroups/AAMkADIyAAAhrbe-AAA=
 Content-type: application/json
 Content-length: 28
 
@@ -95,8 +94,6 @@ Content-length: 138
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/outlooktaskgroup-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -4,14 +4,16 @@ ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: FieldValueSet
 localization_priority: Normal
-ms.openlocfilehash: ed10b586ee55ccd32e81b03bdc6359ee13605877
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4f8b193045bdc7c4e0286067c46c31693a66dfb4
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32506521"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340237"
 ---
 # <a name="fieldvalueset-resource"></a>Recurso de FieldValueSet
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa os valores de coluna em um recurso [listItem](listitem.md).
 
@@ -19,8 +21,7 @@ Representa os valores de coluna em um recurso [listItem](listitem.md).
 
 Aqui está uma representação JSON de um recurso **fieldValueSet**.
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.fieldValueSet",
-      "optionalProperties": ["Author", "AuthorLookupId", "Name", "Color", "Quantity" ],
-       "baseType": "microsoft.graph.entity", "openType": true } -->
+       "keyProperty": "id", "openType": true } -->
 
 ```json
 {
@@ -51,10 +52,13 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expan
 
 você pode solicitar até 12 campos de pesquisa em uma única consulta, além de qualquer número de campos normais.
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/FieldValueSet"
-} -->
+  "tocPath": "Resources/FieldValueSet",
+  "suppressions": []
+}
+-->

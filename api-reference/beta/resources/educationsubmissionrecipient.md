@@ -4,12 +4,12 @@ description: Classe abstrata que representa os diferentes conjuntos de usuários
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 27b9714c2ae20a46447adacb4e98112945d9c12a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f46e0a7208779e6f3d65b6e4949e6935c44250b5
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32542854"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334097"
 ---
 # <a name="educationsubmissionrecipient-resource-type"></a>tipo de recurso educationSubmissionRecipient
 
@@ -43,8 +43,6 @@ Nenhum
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/educationsubmissionrecipient.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

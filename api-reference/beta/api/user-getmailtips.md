@@ -4,14 +4,16 @@ description: Obter as Dicas de E-mail de um ou mais destinatários como disponí
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e3397bade518cde6e17759096601f364f84e918e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 03143b511fc2eade8bac0e9c4adc6a4224a344ee
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32547914"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334930"
 ---
 # <a name="user-getmailtips"></a>usuário: getDicas de dicas
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Obtenha as dicas de informações de um ou mais destinatários como disponíveis para o [usuário](../resources/user.md)conectado.
 
@@ -45,7 +47,7 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|EmailAddresses|Coleção de cadeias de caracteres|Uma coleção de endereços SMTP de destinatários para receber as Dicas de Email.|
+|EmailAddresses|Coleção String|Uma coleção de endereços SMTP de destinatários para receber as Dicas de Email.|
 |MailTipsOptions|String|Uma enumeração de sinalizadores que representa as dicas de as as solicitadas. Os valores possíveis são `automaticReplies`: `customMailTip`, `deliveryRestriction`, `externalMemberCount`, `mailboxFullStatus`, `maxMessageSize`, `moderationStatus`, `recipientScope`, `recipientSuggestions`, e `totalMemberCount`.|
 
 ## <a name="response"></a>Resposta
@@ -60,7 +62,7 @@ O exemplo a seguir obtém dicas de correio para os destinatários especificados,
   "name": "user_getmailtips"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/getMailTips
+POST https://graph.microsoft.com/beta/me/getMailTips
 Content-Type: application/json
 
 {
@@ -85,7 +87,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.mailTips)",
+    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.mailTips)",
     "value":[
         {
             "emailAddress":{
@@ -126,10 +128,13 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "user: getMailTips",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

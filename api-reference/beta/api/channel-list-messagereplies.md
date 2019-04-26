@@ -4,12 +4,12 @@ description: Listar todas as respostas de uma mensagem em um canal de uma equipe
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 3c3c681c820f4cc855105ec1605be920a98a1430
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 377d574a037010e4a441406506af4764784145e9
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32456455"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33328067"
 ---
 # <a name="list-channel-message-replies"></a>Listar respostas de mensagens de canal
 
@@ -36,7 +36,7 @@ GET /teams/{id}/channels/{id}/messages/{id}/replies
 
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 
-Você pode usar o [$Top](/graph/query-parameters#top-parameter) parâmetro de consulta para controlar o número de itens por resposta. Os outros [parâmetros de consulta OData](/graph/query-parameters) não têm suporte no momento.
+Você pode usar o parâmetro de consulta [$top](/graph/query-parameters#top-parameter) para controlar o número de itens por resposta. No momento, não há suporte para os outros [Parâmetros de consulta OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Cabeçalho       | Valor |
@@ -196,8 +196,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/channel-list-messagereplies.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

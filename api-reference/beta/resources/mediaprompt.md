@@ -4,12 +4,12 @@ description: O tipo mediaPrompt.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: b87af39d6d6ac4879aba44573b920a43d4f92145
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: aa08436d46777b4e82712e3288ec17047c33a1ff
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562559"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342622"
 ---
 # <a name="mediaprompt-resource-type"></a>tipo de recurso mediaPrompt
 

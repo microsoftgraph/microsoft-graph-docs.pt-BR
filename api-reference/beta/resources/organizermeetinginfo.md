@@ -4,12 +4,12 @@ description: Informações de reunião que contêm o organizador da reunião.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 3b7d21a313d8744f18c8b96549bc9470b587361c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 129e8a60edd89d45eb6e48715a59231475d52b99
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568560"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341754"
 ---
 # <a name="organizermeetinginfo-resource-type"></a>tipo de recurso organizerMeetingInfo
 
@@ -21,7 +21,7 @@ Informações de reunião que contêm o organizador da reunião.
 
 | Propriedade                     | Tipo                          | Descrição                                     |
 | :--------------------------- | :---------------------------- | :-----------------------------------------------|
-| allowConversationWithoutHost | Booliano                       | Indica se uma conversa pode continuar assim que o host da conversa sair. |
+| allowConversationWithoutHost | Boolean                       | Indica se uma conversa pode continuar assim que o host da conversa sair. |
 | organizer                    | [identitySet](identityset.md) | A identidade do Azure Active Directory do organizador.  |
 
 ## <a name="json-representation"></a>Representação JSON

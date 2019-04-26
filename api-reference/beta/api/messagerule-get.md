@@ -4,15 +4,16 @@ description: Obtenha as propriedades e as relações de um objeto messageRule.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 7bf99f574d8e1a14ffaa7295d51a0dafca0d4628
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 53b1b4db43ed6a9e94564c618e0c302f4ec16bad
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32540346"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333184"
 ---
 # <a name="get-rule"></a>Obter regra
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Obtenha as propriedades e as relações de um objeto [messageRule](../resources/messagerule.md).
 
@@ -29,8 +30,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/mailFolders/inbox/messageRules/{id}
-GET /users/{id | userPrincipalName}/mailFolders/inbox/messageRules/{id}
+GET /me/mailFolders/inbox/messagerules/{id}
+GET /users/{id | userPrincipalName}/mailFolders/inbox/messagerules/{id}
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
@@ -50,16 +51,15 @@ Se tiver êxito, este método retornará um código de resposta `200 OK` e um ob
 Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["inbox", "AQAAAJ5dZqA="],
   "name": "get_messagerule"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules/AQAAAJ5dZqA=
+GET https://graph.microsoft.com/beta/me/mailfolders/inbox/messagerules('AQAAAJ5dZqA=')
 ```
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Por padrão, as propriedades de data e hora na resposta estão em UTC. 
 
-Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -100,10 +100,13 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get rule",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

@@ -4,12 +4,12 @@ description: Representa uma função do diretório do Azure AD. As funções de 
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 30b22313da70c33bffc0b759f9b474f4deac2ac1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 110febf3213431a0a44941a4cdd2bd9bca255bff
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535263"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334560"
 ---
 # <a name="directoryrole-resource-type"></a>tipo de recurso directoryRole
 
@@ -46,7 +46,7 @@ Esse recurso permite:
 ## <a name="relationships"></a>Relações
 | Relação | Tipo |Descrição|
 |:---------------|:--------|:----------|
-|members|Coleção [directoryObject](directoryobject.md)|Usuários que são membros desta função de diretório. Métodos HTTP: GET, POST, DELETE. Somente leitura. Anulável.|
+|membros|Coleção [directoryObject](directoryobject.md)|Usuários que são membros desta função de diretório. Métodos HTTP: GET, POST, DELETE. Somente leitura. Anulável.|
 |scopedMembers|Coleção [scopedRoleMembership](scopedrolemembership.md)| Membros desta função de diretório com escopo para [unidades administrativas](administrativeunit.md). Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
@@ -84,8 +84,6 @@ Veja a seguir uma representação JSON do recurso
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/directoryrole.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->
