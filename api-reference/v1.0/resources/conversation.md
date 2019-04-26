@@ -5,26 +5,26 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 ms.openlocfilehash: 0066a636d2b36e74443380598c2ca6e8daf826c1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27928154"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563788"
 ---
 # <a name="conversation-resource-type"></a>tipo de recurso conversation
 
 Uma conversa é uma coleção de [threads](conversationthread.md) e um thread contém postagens para este thread. Todos os threads e postagens em uma conversa compartilham o mesmo assunto.
 
-Este recurso oferece suporte a assinatura de [notificações de alteração](/graph/webhooks).
+Esse recurso oferece suporte à assinatura de [alteração de notificações](/graph/webhooks).
 
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno  |Descrição|
 |:---------------|:--------|:----------|
 |[Listar conversas](../api/group-list-conversations.md) | Coleção [conversation](conversation.md) |Obtenha a lista de conversas desse grupo.|
-|[Create](../api/group-post-conversations.md) |[conversation](conversation.md)| Crie uma nova conversa incluindo um thread e uma postagem.|
+|[Create](../api/group-post-conversations.md) |[conversa](conversation.md)| Crie uma nova conversa incluindo um thread e uma postagem.|
 |[Obter conversa](../api/conversation-get.md) | [conversation](conversation.md) |Leia as propriedades e os relacionamentos do objeto conversation.|
-|[Delete](../api/conversation-delete.md) | Nenhum |Exclua um objeto conversation. |
+|[Excluir](../api/conversation-delete.md) | Nenhum |Exclua um objeto conversation. |
 |[Listar threads de conversas](../api/conversation-list-threads.md) |Coleção [conversationThread](conversationthread.md)| Obtenha todos os threads em uma conversa de grupo.|
 |[Criar thread de conversas](../api/conversation-post-threads.md) |Coleção [conversationThread](conversationthread.md)| Crie um thread na conversa especificada.|
 

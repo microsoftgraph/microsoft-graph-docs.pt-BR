@@ -6,11 +6,11 @@ author: simonhult
 localization_priority: Priority
 ms.prod: insights
 ms.openlocfilehash: 9c1ff26acb2032a775e71cbb0caecec3331d058e
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31797141"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32557913"
 ---
 # <a name="use-the-people-api-in-microsoft-graph-to-get-information-about-the-people-most-relevant-to-you"></a>Usar a API de Pessoas no Microsoft Graph para obter informações sobre as pessoas mais relevantes para você
 
@@ -937,7 +937,7 @@ Content-type: application/json
 
 ### <a name="perform-a-fuzzy-search"></a>Realizar uma pesquisa difusa
 
-As pesquisas implementam um algoritmo de correspondência difusa. Retornarão resultados com base em uma correspondência exata e também em Inferências sobre a intenção da pesquisa. Por exemplo, imagine um usuário com um nome de exibição de "Tyler Lee" e um endereço de email tylerle@example.com, o qual está na coleção de **pessoas** do usuário conectado. Todas as pesquisas a seguir retornarão esse usuário Tyler como um dos resultados.
+As pesquisas implementam um algoritmo de correspondência difusa. Retornarão resultados com base em uma correspondência exata e também em Inferências sobre a intenção da pesquisa. Por exemplo, imagine que um usuário com o nome de exibição "Carlos Lima" e o endereço de email carloslim@example.com que esteja no conjunto **pessoas** do usuário conectado. Todas as pesquisas a seguir retornarão esse usuário Tyler como um dos resultados.
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people?$search="tyler"                //matches both Tyler's name and email

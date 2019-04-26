@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: f2402ad007b794e7d6824e52cce8ff7144c6c33b
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30264516"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32560869"
 ---
 # <a name="androidminimumoperatingsystem-resource-type"></a>Tipo de recurso androidMinimumOperatingSystem
 
@@ -20,13 +20,13 @@ Contém propriedades para o sistema operacional mínimo obrigatório para um apl
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|v4_0|Boolean|Versão 4.0 ou posterior.|
-|v4_0_3|Boolean|Versão 4.0.3 ou posterior.|
-|v4_1|Boolean|Versão 4.1 ou posterior.|
-|v4_2|Boolean|Versão 4.2 ou posterior.|
-|v4_3|Boolean|Versão 4.3 ou posterior.|
-|v4_4|Boolean|Versão 4.4 ou posterior.|
-|v5_0|Boolean|Versão 5.0 ou posterior.|
+|v4_0|Booliano|Versão 4.0 ou posterior.|
+|v4_0_3|Booliano|Versão 4.0.3 ou posterior.|
+|v4_1|Booliano|Versão 4.1 ou posterior.|
+|v4_2|Booliano|Versão 4.2 ou posterior.|
+|v4_3|Booliano|Versão 4.3 ou posterior.|
+|v4_4|Booliano|Versão 4.4 ou posterior.|
+|v5_0|Booliano|Versão 5.0 ou posterior.|
 |v5_1|Booliano|Versão 5.1 ou posterior.|
 
 ## <a name="relationships"></a>Relações

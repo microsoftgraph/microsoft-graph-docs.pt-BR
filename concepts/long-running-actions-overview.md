@@ -2,16 +2,16 @@
 title: Como trabalhar com ações de execução longa (beta)
 description: Este artigo descreve o trabalho com ações de execução longa.
 localization_priority: Normal
-ms.openlocfilehash: d7ee9631e9e18ae1972e2b156366c66d3d3dd455
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: HT
+author: daspek
+ms.openlocfilehash: 4512672ea44e944fd77e95249aa439f0ee9e84ba
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868051"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32560775"
 ---
 # <a name="working-with-long-running-actions-beta"></a>Como trabalhar com ações de execução longa (beta)
 
-> **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção.
 
 Algumas respostas de API exigem tempo indeterminado para serem concluídas.
 Em vez de ter que esperar até que a ação seja concluída antes de retornar uma resposta, o Microsoft Graph pode usar um padrão de ações de execução longa.
@@ -60,8 +60,7 @@ No entanto, se o aplicativo precisar mostrar o status da ação de cópia ou gar
 
 ## <a name="retrieve-a-status-report-from-the-monitor-url"></a>Recuperar um relatório de status da URL de monitor
 
-Para verificar o status da ação de cópia, o aplicativo faz uma solicitação para a URL fornecida na resposta anterior.
-*Observação:* Essa solicitação não requer autenticação, pois a URL é de curta duração e exclusiva para o chamador original. 
+Para verificar o status da ação de cópia, o aplicativo faz uma solicitação para a URL fornecida na resposta anterior. *Observação:* Essa solicitação não requer autenticação, pois a URL é de curta duração e exclusiva para o chamador original. 
 
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "lro-check-status", "scopes": "files.readwrite" } -->
 
@@ -84,13 +83,11 @@ Content-type: application/json
 }
 ```
 
-As informações podem ser usadas para fornecer uma atualização ao usuário sobre o progresso da ação de cópia.
-O aplicativo pode continuar a sondar a URL de monitor para solicitar atualizações de status e acompanhar o andamento da ação.
+As informações podem ser usadas para fornecer uma atualização ao usuário sobre o progresso da ação de cópia. O aplicativo pode continuar a sondar a URL de monitor para solicitar atualizações de status e acompanhar o andamento da ação.
 
 ## <a name="retrieve-a-completed-status-report-from-the-monitor-url"></a>Recuperar um relatório de status concluído da URL de monitor
 
-Após alguns segundos, a operação de cópia foi concluída.
-Dessa vez, quando o aplicativo faz uma solicitação para a URL de monitor, a resposta é um redirecionamento para o resultado concluído da ação.
+Após alguns segundos, a operação de cópia foi concluída. Dessa vez, quando o aplicativo faz uma solicitação para a URL de monitor, a resposta é um redirecionamento para o resultado concluído da ação.
 
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "lro-check-status-complete", "scopes": "files.readwrite" } -->
 

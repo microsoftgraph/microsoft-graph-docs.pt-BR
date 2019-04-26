@@ -1,47 +1,47 @@
 ---
-title: tipo de recurso de privilegedRoleAssignmentRequest
-description: Representa a solicitação para operações de atribuição de função no gerenciamento de identidades Privilegd.
+title: tipo de recurso privilegedRoleAssignmentRequest
+description: Representa a solicitação de operações de atribuição de função no gerenciamento de identidade do Privilegd.
 localization_priority: Normal
 ms.openlocfilehash: c0e0bbfa76b7ffb4e122d381d45dd4092f0843c1
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642426"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563284"
 ---
-# <a name="privilegedroleassignmentrequest-resource-type"></a>tipo de recurso de privilegedRoleAssignmentRequest
+# <a name="privilegedroleassignmentrequest-resource-type"></a>tipo de recurso privilegedRoleAssignmentRequest
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa a solicitação para operações de atribuição de função no gerenciamento de identidades Privilegd.
+Representa a solicitação de operações de atribuição de função no gerenciamento de identidade do Privilegd.
 
-`privilegedRoleAssignmentRequest`uma entidade modelada de tíquete é usada para gerenciar o ciclo de vida de atribuições de função. Ele representa a intenção/decisão dos usuários e administradores e também oferece flexibilidade para permitir a implementação de schduling recorrente, entradas de aprovação e assim por diante, em relação ao diretamente expondo `POST` e `LIST` operações bem como `MY` e `Cancel` funciona em `governanceRoleAssignment`.
+`privilegedRoleAssignmentRequest`é uma entidade com modelo de tíquete usada para gerenciar o ciclo de vida das atribuições de função. Ele representa a intenção/decisão dos usuários e administradores, e também fornece a flexibilidade para permitir a implementação de Schduling recorrentes, Gates de aprovação e assim por diante, em comparação com as `POST` operações `LIST` e exposição diretas, bem como `MY` e `Cancel` funções em `governanceRoleAssignment`.
 
 ## <a name="methods"></a>Métodos
 
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
-|[List](../api/privilegedroleassignmentrequest-list.md) | coleção [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md)|Lista solicitações de atribuição de função.|
-|[Create](../api/privilegedroleassignmentrequest-post.md)|  [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md)|Crie uma solicitação para gerenciar o ciclo de vida de atribuição de função de novo ou existente.|
-|[Cancel](../api/privilegedroleassignmentrequest-cancel.md)|  |Cancele uma solicitação de atribuição de função pendente.|
-|[Pessoal](../api/privilegedroleassignmentrequest-my.md)|  |Obtenha a solicitação de atribuição de função para requstor atual.|
+|[List](../api/privilegedroleassignmentrequest-list.md) | coleção [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md)|Listar solicitações de atribuição de função.|
+|[Create](../api/privilegedroleassignmentrequest-post.md)|  [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md)|Criar uma solicitação para gerenciar o ciclo de vida da atribuição de função nova ou existente.|
+|[Cancel](../api/privilegedroleassignmentrequest-cancel.md)|  |Cancelar uma solicitação de atribuição de função pendente.|
+|[Pessoal](../api/privilegedroleassignmentrequest-my.md)|  |Obter solicitação de atribuição de função para o requstor atual.|
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
-|id|String| Somente leitura. A identificação da solicitação de atribuição de função.|
-|assignmentState|String| O estado da atribuição. O valor pode ser `Eligible` para atribuição elegível `Active` - se ele é atribuído diretamente `Active` pelos administradores, ou ativado em uma atribuição elegível pelos usuários.|
+|id|String| Somente leitura. A ID da solicitação de atribuição de função.|
+|assignmentstate|String| O estado da atribuição. O valor pode ser `Eligible` para atribuição `Active` qualificada-se for diretamente atribuído `Active` por administradores ou ativado em uma atribuição qualificada pelos usuários.|
 |duration|String| A duração de uma atribuição de função.|
-|motivo|String| O motivo para a atribuição de função.|
-|requestedDateTime|DateTimeOffset| Somente leitura. A solicitação criar horário. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
-|roleId|String| A identificação da função.|
-|agenda|[governanceSchedule](governanceschedule.md)| O objeto de agendamento da solicitação de atribuição de função.|
-|status|String| Leitura-only.The o status da solicitação de atribuição de função. O valor pode ser `NotStarted`,`Completed`,`RequestedApproval`,`Scheduled`,`Approved`,`ApprovalDenied`,`ApprovalAborted`,`Cancelling`,`Cancelled`,`Revoked`,`RequestExpired`.|
-|ticketNumber|String| TicketNumber para a atribuição de função. |
-|ticketSystem|String| TicketSystem para a atribuição de função.|
-|type|String| Representando o o tipo da operação na atribuição de função. O valor pode ser `AdminAdd`: administradores adicionar usuários às funções; `UserAdd`: Os usuários adicionar atribuições de função.|
-|userId|String| A identificação do usuário.|
+|motivos|String| O motivo da atribuição de função.|
+|requestedDateTime|DateTimeOffset| Somente leitura. O tempo de criação da solicitação. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`.|
+|roleId|String| A ID da função.|
+|futebol|[governanceSchedule](governanceschedule.md)| O objeto Schedule da solicitação de atribuição de função.|
+|status|String| Somente leitura. o status da solicitação de atribuição de função. O valor pode ser `NotStarted`,`Completed`,`RequestedApproval``Scheduled``Approved``ApprovalDenied``ApprovalAborted``Cancelling`,,,,,,,`RequestExpired``Cancelled``Revoked`|
+|ticketNumber|String| O ticketNumber da atribuição de função. |
+|ticketSystem|String| O ticketSystem da atribuição de função.|
+|type|String| Representando o tipo da operação na atribuição de função. O valor pode ser `AdminAdd`: os administradores adicionam usuários a funções; `UserAdd`: Os usuários adicionam atribuições de função.|
+|userId|String| A ID do usuário.|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo        | Descrição |

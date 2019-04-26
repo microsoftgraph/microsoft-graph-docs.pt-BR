@@ -5,15 +5,15 @@ localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 109c3f68e1eaa719f18a7fa8c539d09a2e3061aa
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27969846"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561408"
 ---
 # <a name="update-organization"></a>Atualize a organização
 
-Atualize as propriedades da organização autenticada no momento. Nesse caso, `organization` é definido como uma coleção de exatamente um registro, e, portanto, sua **ID** deve ser especificado na solicitação.  A **ID** é também conhecido como a **tenantId** da organização.
+Atualize as propriedades da organização autenticada no momento. Nesse caso, `organization` é definido como uma coleção de exatamente um registro e, portanto, sua **ID** deve ser especificada na solicitação.  O **ID** também é conhecido como **tenantid** da organização.
 
 
 ## <a name="permissions"></a>Permissões
@@ -43,15 +43,15 @@ PATCH /organization/{id}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações em outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
+No corpo da solicitação, forneça os valores para os campos relevantes que devem ser atualizados. Propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações a outros valores de propriedade. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|marketingNotificationEmails|Coleção de cadeia de caracteres|                                        **Anotações**: não anulável.            |
+|marketingNotificationEmails|Coleção de cadeias de caracteres|                                        **Anotações**: não anulável.            |
 |privacyProfile|[privacyProfile](../resources/privacyprofile.md)|O perfil de privacidade de uma organização (definir statementUrl e contactEmail).            |
 |securityComplianceNotificationMails|Coleção de cadeias de caracteres||
 |securityComplianceNotificationPhones|Coleção de cadeia de caracteres||
-|technicalNotificationMails|Coleção de cadeia de caracteres|                                        **Anotações**: não anulável.            |
+|technicalNotificationMails|Coleção de cadeias de caracteres|                                        **Anotações**: não anulável.            |
 
 ## <a name="response"></a>Resposta
 

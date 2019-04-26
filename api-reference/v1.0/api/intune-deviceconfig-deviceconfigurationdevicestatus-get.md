@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 003fc61ae8d26bc55c47a11761d94c1525c9558f
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30969488"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561275"
 ---
 # <a name="get-deviceconfigurationdevicestatus"></a>Acessar deviceConfigurationDeviceStatus
 

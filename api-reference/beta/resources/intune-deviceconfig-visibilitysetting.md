@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: b3dbca7dedfb1bebb114334f6cb5b62fd80f9a2a
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31786046"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561961"
 ---
 # <a name="visibilitysetting-enum-type"></a>tipo de enumeração visibilitySetting
 
@@ -23,8 +23,8 @@ Estado de visibilidade genérico.
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Não configurado.|
-|ocult|1|Ocultar.|
-|programa|duas|Mostrar.|
+|ocult|1 |Ocultar.|
+|programa|2 |Mostrar.|
 
 
 

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 5a35c830375195c9957884771b8e837a40ca984c
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31794516"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562290"
 ---
 # <a name="applicationguardblockfiletransfertype-enum-type"></a>tipo de enumeração applicationGuardBlockFileTransferType
 
@@ -23,10 +23,10 @@ Valores possíveis para applicationGuardBlockFileTransfer
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |notConfigured|,0|Não configurado|
-|blockImageAndTextFile|1|Bloquear a área de transferência para transferir o arquivo de texto e imagem|
-|blockImageFile|duas|Bloquear área de transferência para transferir o arquivo de imagem|
-|blockNone|3D|Nenhum dos arquivos de texto ou de imagem está bloqueado da transferência|
-|blockTextFile|quatro|Bloquear área de transferência para transferir arquivo de texto|
+|blockImageAndTextFile|1 |Bloquear a área de transferência para transferir o arquivo de texto e imagem|
+|blockImageFile|2 |Bloquear área de transferência para transferir o arquivo de imagem|
+|blockNone|3 |Nenhum dos arquivos de texto ou de imagem está bloqueado da transferência|
+|blockTextFile|4 |Bloquear área de transferência para transferir arquivo de texto|
 
 
 

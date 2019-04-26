@@ -1,15 +1,15 @@
 ---
-title: Criar uma propriedade estendida de vários valores
+title: Criar propriedade estendida de vários valores
 description: 'Crie uma ou mais propriedades estendidas de vários valores em uma instância nova ou existente de um recurso. '
 localization_priority: Normal
 ms.openlocfilehash: ded36690cdbe684f78bed6af6aee9dba0b09854d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889191"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32560988"
 ---
-# <a name="create-multi-value-extended-property"></a>Criar uma propriedade estendida de vários valores
+# <a name="create-multi-value-extended-property"></a>Criar propriedade estendida de vários valores
 
 Crie uma ou mais propriedades estendidas de vários valores em uma instância nova ou existente de um recurso. 
 
@@ -20,7 +20,7 @@ Há suporte para as seguintes fontes de dados:
 - [contactFolder](../resources/contactfolder.md) 
 - [evento](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
-- [message](../resources/message.md)
+- [mensagem](../resources/message.md)
 
 Também há suporte para os seguintes recursos de grupo:
 
@@ -31,9 +31,9 @@ Também há suporte para os seguintes recursos de grupo:
 Confira [Visão geral de propriedades estendidas](../resources/extended-properties-overview.md) para saber mais sobre quando usar extensões abertas ou propriedades estendidas e sobre como especificar propriedades estendidas.
 
 ## <a name="permissions"></a>Permissões
-Dependendo do recurso, você está criando a propriedade estendida no e a permissão digite (delegada ou aplicativos) você solicitação, a permissão especificada na tabela a seguir é o mínimo necessário para chamar essa API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
+Dependendo do recurso para o qual você está criando a propriedade estendida e o tipo de permissão (delegado ou aplicativo) solicitado, a permissão especificada na tabela a seguir é o mínimo necessário para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
-| Recurso com suporte | Delegado (conta corporativa ou de estudante) | Delegado (conta pessoal da Microsoft) | Aplicativo |
+| Recurso com suporte | Delegada (conta corporativa ou de estudante) | Delegada (conta pessoal da Microsoft) | Aplicativo |
 |:-----|:-----|:-----|:-----|
 | [calendar](../resources/calendar.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
 | [contato](../resources/contact.md) | Contacts.ReadWrite | Contacts.ReadWrite | Contacts.ReadWrite |
@@ -127,7 +127,7 @@ Forneça um corpo JSON de cada objeto [multiValueLegacyExtendedProperty](../reso
 |id|String|Para cada propriedade na coleção **multiValueExtendedProperties**, especifique isso para identificar a propriedade. Ele deve seguir um dos formatos com suporte. Para saber mais, confira [Visão geral das propriedades estendidas do Outlook](../resources/extended-properties-overview.md). Obrigatório.|
 |valor|string|Para cada propriedade na coleção **multiValueExtendedProperties**, especifique o valor da propriedade. Obrigatório.|
 
-Ao criar uma propriedade estendida em uma _nova_ instância de recurso, a nova coleção de **multiValueExtendedProperties** , além de fornecer uma representação de JSON dessa instância do recurso também (ou seja, uma [mensagem](../resources/message.md), [mailFolder ](../resources/mailfolder.md), [evento](../resources/event.md), etc.).
+Ao criar uma propriedade estendida em uma _nova_ instância de recurso, além da nova coleção **multiValueExtendedProperties** , forneça uma representação JSON dessa instância de recurso também (ou seja, uma [mensagem](../resources/message.md), [mailFolder ](../resources/mailfolder.md), [evento](../resources/event.md), etc.).
 
 
 ## <a name="response"></a>Resposta

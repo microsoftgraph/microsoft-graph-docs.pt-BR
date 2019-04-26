@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 98369411a69ab9177cf3545904ccafd0f2aa7ffc
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31776693"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561254"
 ---
 # <a name="deliveryoptimizationmaxcachesize-resource-type"></a>tipo de recurso deliveryOptimizationMaxCacheSize
 
@@ -24,7 +24,7 @@ Tipos de tamanho máximo de cache da otimização de entrega.
 |:---|:---|:---|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

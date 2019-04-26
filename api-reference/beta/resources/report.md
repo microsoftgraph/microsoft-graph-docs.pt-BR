@@ -5,11 +5,11 @@ localization_priority: Priority
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: 4799289374df8fbaac8edf7c43514557d193c80d
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572035"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563084"
 ---
 # <a name="working-with-office-365-usage-reports-in-microsoft-graph"></a>Trabalhar com relatórios de uso do Office 365 no Microsoft Graph
 

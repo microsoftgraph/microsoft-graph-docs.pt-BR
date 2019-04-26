@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 5d127580c0a4851c5a991ccc0646007ddf1298a5
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27924913"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562430"
 ---
 # <a name="activate-directoryrole"></a>Ativar directoryRole
 
@@ -43,7 +43,7 @@ A tabela a seguir mostra as propriedades que são necessárias ao ativar uma fun
 
 |Parâmetro | Tipo | Descrição|
 |:---------|:---------|:---------|
-|roleTemplateId | string | Obrigatório. A ID do [directoryRoleTemplate](../resources/directoryroletemplate.md) que a função se baseia. Esta é a única propriedade que pode ser especificada na solicitação.|
+|roleTemplateId | string | Obrigatório. A ID do [directoryRoleTemplate](../resources/directoryroletemplate.md) em que a função se baseia. Esta é a única propriedade que pode ser especificada na solicitação.|
 
 ## <a name="response"></a>Resposta
 
@@ -66,7 +66,7 @@ Content-type: application/json
 ```
 No corpo da solicitação, forneça uma representação JSON do objeto [directoryRole](../resources/directoryrole.md).
 ##### <a name="response"></a>Resposta
-Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Observação: O objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
 <!-- {
   "blockType": "response",
   "truncated": true,

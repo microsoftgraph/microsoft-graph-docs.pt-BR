@@ -5,11 +5,11 @@ ms.date: 09/12/2017
 title: SystemFacet
 localization_priority: Normal
 ms.openlocfilehash: 356fa44c77280223ee9ff90d9ae54ad541e8d0d6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27804792"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563704"
 ---
 # <a name="system-facet"></a>Faceta System
 
@@ -29,7 +29,7 @@ A maioria dos aplicativos deve ignorar itens que têm uma faceta do Sistema.
 
 ## <a name="properties"></a>Propriedades
 
-Nenhum. Esta faceta tem um valor nulo ou não nulo e não contém propriedades.
+Nenhum. Esta faceta é um valor nulo ou não nulo e não contém propriedades.
 
 <!-- {
   "type": "#page.annotation",

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: c00c49022782fd2a677702a72fd202e2bf627604
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30258272"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32560904"
 ---
 # <a name="ratinggermanymoviestype-enum-type"></a>tipo de enumeração ratingGermanyMoviesType
 
@@ -21,12 +21,12 @@ Rótulos de classificação de filmes na Alemanha
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Permitido|,0|Valor padrão, permitir todo o conteúdo de filmes|
-|Bloqueado|1|Não permitir conteúdo de filmes|
-|geral|duas|AB 0 Jahren, sem restrições de idade|
-|agesAbove6|3D|AB 6 Jahren, anos 6 ou mais|
-|agesAbove12|quatro|AB 12 Jahren, 12 anos ou mais|
-|agesAbove16|0,5|AB 16 Jahren, 16 anos ou mais|
-|adultos|6|AB 18 Jahren, somente adultos|
+|Bloqueado|1 |Não permitir conteúdo de filmes|
+|geral|2 |AB 0 Jahren, sem restrições de idade|
+|agesAbove6|3 |AB 6 Jahren, anos 6 ou mais|
+|agesAbove12|4 |AB 12 Jahren, 12 anos ou mais|
+|agesAbove16|5 |AB 16 Jahren, 16 anos ou mais|
+|adultos|6 |AB 18 Jahren, somente adultos|
 
 
 

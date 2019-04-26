@@ -1,15 +1,15 @@
 ---
 title: Listar postagens
-description: 'Obtenha as postagens do thread especificado. Você pode especificar tanto a conversa pai e o thread, ou, '
+description: 'Obtenha as postagens do thread especificado. Você pode especificar a conversa pai e o thread ou, '
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 ms.openlocfilehash: aa411939f9e8040b127a8821c23b557defffbaec
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27961516"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32564096"
 ---
 # <a name="list-posts"></a>Listar postagens
 
@@ -20,9 +20,9 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Group.ReadWrite.All, Group.Read.All    |
+|Delegado (conta corporativa ou de estudante) | Group. ReadWrite. All, Group. Read. All    |
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
-|Aplicativo | Group.ReadWrite.All, Group.Read.All |
+|Aplicativo | Group. ReadWrite. All, Group. Read. All |
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -43,7 +43,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [Post](../resources/post.md) no corpo da resposta.
+Se bem sucedido, este método retorna um código de resposta `200 OK` e uma coleção de objetos [Post](../resources/post.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.

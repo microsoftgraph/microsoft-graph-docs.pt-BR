@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 47047f401bbf0a690494490cbbd3b934340a26c9
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31791989"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32558269"
 ---
 # <a name="windowsinformationprotectionwipeaction-resource-type"></a>tipo de recurso windowsInformationProtectionWipeAction
 
@@ -33,14 +33,14 @@ Representa as solicitações de apagamento emitidas por um administrador de loca
 |:---|:---|:---|
 |id|String|Chave da entidade.|
 |status|[actionState](../resources/intune-shared-actionstate.md)|Status de ação de apagamento. Os valores possíveis são: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
-|targetedUserId|Cadeia de caracteres|O UserId que está sendo direcionado para esta ação de apagamento.|
-|targetedDeviceRegistrationId|Cadeia de caracteres|O DeviceRegistrationId que está sendo direcionado para esta ação de apagamento.|
-|targetedDeviceName|Cadeia de caracteres|Nome do dispositivo de destino.|
-|targetedDeviceMacAddress|Cadeia de caracteres|Endereço MAC do dispositivo de destino.|
+|targetedUserId|String|O UserId que está sendo direcionado para esta ação de apagamento.|
+|targetedDeviceRegistrationId|String|O DeviceRegistrationId que está sendo direcionado para esta ação de apagamento.|
+|targetedDeviceName|String|Nome do dispositivo de destino.|
+|targetedDeviceMacAddress|String|Endereço MAC do dispositivo de destino.|
 |lastCheckInDateTime|DateTimeOffset|Hora da última verificação do dispositivo direcionado por esta ação de apagamento.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

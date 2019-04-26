@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: e90251338ad7e740b216452a52cc0fffcfc44565
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31791443"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32558150"
 ---
 # <a name="mobileappintentandstate-resource-type"></a>tipo de recurso mobileAppIntentAndState
 
@@ -37,7 +37,7 @@ MobileApp tentativa e estado de instalação para um determinado dispositivo.
 |mobileAppList|coleção [mobileAppIntentAndStateDetail](../resources/intune-troubleshooting-mobileappintentandstatedetail.md)|A lista de efeitos e Estados de carga para o locatário.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

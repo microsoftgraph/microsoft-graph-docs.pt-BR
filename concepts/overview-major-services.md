@@ -4,11 +4,11 @@ description: 'O Microsoft Graph permite que você se integre com o melhor dos se
 author: jthake-msft
 localization_priority: Priority
 ms.openlocfilehash: 98981cddb22fae69bd6b50e05d7caebc4c5c0d8a
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30361888"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32557941"
 ---
 # <a name="major-services-and-features-in-microsoft-graph"></a>Principais serviços e recursos do Microsoft Graph
 

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 7117955c3c28c1cf58ac11d0eceeca090afd9fcb
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30259721"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32560862"
 ---
 # <a name="ratingappstype-enum-type"></a>tipo de enumeração ratingAppsType
 
@@ -21,11 +21,11 @@ Classificação de aplicativos como conteúdo de mídia
 |Membro|Valor|Descrição|
 |:---|:---|:---|
 |Permitido|,0|Valor padrão, permitir todo o conteúdo de aplicativos|
-|Bloqueado|1|Não permitir conteúdo de aplicativos|
-|agesAbove4|duas|4 +, idade 4 e superior|
-|agesAbove9|3D|9 +, idade 9 e superior|
-|agesAbove12|quatro|12 +, idade 12 e superior |
-|agesAbove17|0,5|17 +, idade 17 e superior|
+|Bloqueado|1 |Não permitir conteúdo de aplicativos|
+|agesAbove4|2 |4 +, idade 4 e superior|
+|agesAbove9|3 |9 +, idade 9 e superior|
+|agesAbove12|4 |12 +, idade 12 e superior |
+|agesAbove17|5 |17 +, idade 17 e superior|
 
 
 

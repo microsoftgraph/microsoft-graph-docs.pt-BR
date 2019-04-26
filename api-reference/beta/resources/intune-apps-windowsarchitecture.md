@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: ebed524aefbe9ea75773fac675408f889fb43247
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31803196"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32557989"
 ---
 # <a name="windowsarchitecture-enum-type"></a>tipo de enumeração windowsArchitecture
 
@@ -22,12 +22,12 @@ Contém propriedades da arquitetura do Windows.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhuma|,0|Nenhum sinalizador definido.|
-|x|1|Se o tipo de arquitetura do Windows x86 é ou não suportado.|
-|Professional|duas|Se o tipo de arquitetura do Windows x64 é ou não suportado.|
-|equipe|quatro|Se o tipo de arquitetura Windows de braço é ou não suportado.|
-|neutraliza|8|Se o tipo de arquitetura neutra do Windows é ou não suportado.|
-|arm64|dezesseis|Se o tipo de arquitetura do Windows Arm64 é ou não suportado.|
+|Nenhuma|,0|Nenhum sinalizador definido.|
+|x|1 |Se o tipo de arquitetura do Windows x86 é ou não suportado.|
+|Professional|2 |Se o tipo de arquitetura do Windows x64 é ou não suportado.|
+|equipe|4 |Se o tipo de arquitetura Windows de braço é ou não suportado.|
+|neutraliza|8 |Se o tipo de arquitetura neutra do Windows é ou não suportado.|
+|arm64|16 |Se o tipo de arquitetura do Windows Arm64 é ou não suportado.|
 
 
 

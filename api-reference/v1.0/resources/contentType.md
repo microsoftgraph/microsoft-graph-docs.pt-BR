@@ -5,11 +5,11 @@ ms.date: 09/12/2017
 title: ContentType
 localization_priority: Normal
 ms.openlocfilehash: c7d4b3222ec64432d6a2c9921e53ce409de3f139
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876731"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561352"
 ---
 # <a name="contenttype-resource-type"></a>Tipo de recurso ContentType
 

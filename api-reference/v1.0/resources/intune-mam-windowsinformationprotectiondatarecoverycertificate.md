@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: c321ea06e27e7d6fba0a35446e2b916aaf0689de
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30253649"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561184"
 ---
 # <a name="windowsinformationprotectiondatarecoverycertificate-resource-type"></a>Tipo de recurso windowsInformationProtectionDataRecoveryCertificate
 
@@ -21,7 +21,7 @@ DataRecoveryCertificate da proteção de informações do Windows
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |SubjectName|Cadeia de caracteres|Nome do assunto do certificado de recuperação de dados|
-|descrição|String|Descrição do certificado de recuperação de dados|
+|description|String|Descrição do certificado de recuperação de dados|
 |expirationDateTime|DateTimeOffset|Datetime de vencimento do certificado de recuperação de dados|
 |certificado|Binário|Certificado de recuperação de dados|
 

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: ab5dd14c0929c58b9c076d1115d487e560d80333
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522577"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562276"
 ---
 # <a name="securitybaselinesettingstate-resource-type"></a>tipo de recurso securityBaselineSettingState
 
@@ -33,11 +33,11 @@ O estado de conformidade da linha de base de segurança de uma configuração pa
 |:---|:---|:---|
 |id|String|Identificador exclusivo da entidade|
 |settingName|Cadeia de caracteres|O nome da configuração que está sendo relatado|
-|state|[securityBaselineComplianceState](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|O estado de conformidade da configuração da linha de base de segurança. Os valores possíveis são: `unknown`, `secure`, `notApplicable`, `notSecure`, `error`, `conflict`.|
-|settingCategoryId|Cadeia de Caracteres|A ID da categoria de configuração à qual essa configuração pertence|
+|estado|[securityBaselineComplianceState](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|O estado de conformidade da configuração da linha de base de segurança. Os possíveis valores são: `unknown`, `secure`, `notApplicable`, `notSecure`, `error`, `conflict`.|
+|settingCategoryId|String|A ID da categoria de configuração à qual essa configuração pertence|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.
