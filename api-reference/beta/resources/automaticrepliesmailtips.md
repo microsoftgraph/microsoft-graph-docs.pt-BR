@@ -1,31 +1,30 @@
 ---
-title: tipo de recurso de automaticRepliesMailTips
-description: Dicas de email sobre qualquer respostas automáticas que foram configuradas em uma caixa de correio.
+title: tipo de recurso automaticRepliesMailTips
+description: Dicas de correio sobre as respostas automáticas que foram configuradas em uma caixa de correio.
 localization_priority: Normal
 ms.openlocfilehash: 7eb9d57da427090c554e111ae6ba1eeb369437ca
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513673"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535526"
 ---
-# <a name="automaticrepliesmailtips-resource-type"></a><span data-ttu-id="fbbe3-103">tipo de recurso de automaticRepliesMailTips</span><span class="sxs-lookup"><span data-stu-id="fbbe3-103">automaticRepliesMailTips resource type</span></span>
+# <a name="automaticrepliesmailtips-resource-type"></a><span data-ttu-id="21b6f-103">tipo de recurso automaticRepliesMailTips</span><span class="sxs-lookup"><span data-stu-id="21b6f-103">automaticRepliesMailTips resource type</span></span>
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="fbbe3-104">[Dicas de email](../resources/mailtips.md) sobre qualquer respostas automáticas que foram configurados em uma caixa de correio.</span><span class="sxs-lookup"><span data-stu-id="fbbe3-104">[MailTips](../resources/mailtips.md) about any automatic replies that have been set up on a mailbox.</span></span>
+<span data-ttu-id="21b6f-104">[Dicas](../resources/mailtips.md) de correio sobre as respostas automáticas que foram configuradas em uma caixa de correio.</span><span class="sxs-lookup"><span data-stu-id="21b6f-104">[MailTips](../resources/mailtips.md) about any automatic replies that have been set up on a mailbox.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="fbbe3-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="fbbe3-105">Properties</span></span>
-| <span data-ttu-id="fbbe3-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="fbbe3-106">Property</span></span>     | <span data-ttu-id="fbbe3-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="fbbe3-107">Type</span></span>   |<span data-ttu-id="fbbe3-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="fbbe3-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="21b6f-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="21b6f-105">Properties</span></span>
+| <span data-ttu-id="21b6f-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="21b6f-106">Property</span></span>     | <span data-ttu-id="21b6f-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="21b6f-107">Type</span></span>   |<span data-ttu-id="21b6f-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="21b6f-108">Description</span></span>|
 |:-----|:-----|:-----|
-| <span data-ttu-id="fbbe3-109">mensagem</span><span class="sxs-lookup"><span data-stu-id="fbbe3-109">message</span></span> | <span data-ttu-id="fbbe3-110">String</span><span class="sxs-lookup"><span data-stu-id="fbbe3-110">String</span></span> | <span data-ttu-id="fbbe3-111">A mensagem de resposta automática.</span><span class="sxs-lookup"><span data-stu-id="fbbe3-111">The automatic reply message.</span></span> |
-| <span data-ttu-id="fbbe3-112">messageLanguage</span><span class="sxs-lookup"><span data-stu-id="fbbe3-112">messageLanguage</span></span> | [<span data-ttu-id="fbbe3-113">localeInfo</span><span class="sxs-lookup"><span data-stu-id="fbbe3-113">localeInfo</span></span>](../resources/localeinfo.md) | <span data-ttu-id="fbbe3-114">O idioma em que a mensagem de resposta automática está em.</span><span class="sxs-lookup"><span data-stu-id="fbbe3-114">The language that the automatic reply message is in.</span></span> |
-| <span data-ttu-id="fbbe3-115">scheduledEndTime</span><span class="sxs-lookup"><span data-stu-id="fbbe3-115">scheduledEndTime</span></span> | [<span data-ttu-id="fbbe3-116">dateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="fbbe3-116">dateTimeTimeZone</span></span>](../resources/datetimetimezone.md) | <span data-ttu-id="fbbe3-117">A data e hora em que as respostas automáticas estão definidas para encerrar.</span><span class="sxs-lookup"><span data-stu-id="fbbe3-117">The date and time that automatic replies are set to end.</span></span> |
-| <span data-ttu-id="fbbe3-118">scheduledStartTime</span><span class="sxs-lookup"><span data-stu-id="fbbe3-118">scheduledStartTime</span></span> | [<span data-ttu-id="fbbe3-119">dateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="fbbe3-119">dateTimeTimeZone</span></span>](../resources/datetimetimezone.md) | <span data-ttu-id="fbbe3-120">A data e hora em que as respostas automáticas estão definidas para começar.</span><span class="sxs-lookup"><span data-stu-id="fbbe3-120">The date and time that automatic replies are set to begin.</span></span> |
+| <span data-ttu-id="21b6f-109">mensagem</span><span class="sxs-lookup"><span data-stu-id="21b6f-109">message</span></span> | <span data-ttu-id="21b6f-110">String</span><span class="sxs-lookup"><span data-stu-id="21b6f-110">String</span></span> | <span data-ttu-id="21b6f-111">A mensagem de resposta automática.</span><span class="sxs-lookup"><span data-stu-id="21b6f-111">The automatic reply message.</span></span> |
+| <span data-ttu-id="21b6f-112">messageLanguage</span><span class="sxs-lookup"><span data-stu-id="21b6f-112">messageLanguage</span></span> | [<span data-ttu-id="21b6f-113">localeInfo</span><span class="sxs-lookup"><span data-stu-id="21b6f-113">localeInfo</span></span>](../resources/localeinfo.md) | <span data-ttu-id="21b6f-114">O idioma em que a mensagem de resposta automática está.</span><span class="sxs-lookup"><span data-stu-id="21b6f-114">The language that the automatic reply message is in.</span></span> |
+| <span data-ttu-id="21b6f-115">scheduledEndTime</span><span class="sxs-lookup"><span data-stu-id="21b6f-115">scheduledEndTime</span></span> | [<span data-ttu-id="21b6f-116">dateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="21b6f-116">dateTimeTimeZone</span></span>](../resources/datetimetimezone.md) | <span data-ttu-id="21b6f-117">A data e a hora em que as respostas automáticas estão definidas para terminar.</span><span class="sxs-lookup"><span data-stu-id="21b6f-117">The date and time that automatic replies are set to end.</span></span> |
+| <span data-ttu-id="21b6f-118">scheduledStartTime</span><span class="sxs-lookup"><span data-stu-id="21b6f-118">scheduledStartTime</span></span> | [<span data-ttu-id="21b6f-119">dateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="21b6f-119">dateTimeTimeZone</span></span>](../resources/datetimetimezone.md) | <span data-ttu-id="21b6f-120">A data e a hora em que as respostas automáticas estão definidas para começar.</span><span class="sxs-lookup"><span data-stu-id="21b6f-120">The date and time that automatic replies are set to begin.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="fbbe3-121">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="fbbe3-121">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="21b6f-121">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="21b6f-121">JSON representation</span></span>
 
-<span data-ttu-id="fbbe3-122">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="fbbe3-122">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="21b6f-122">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="21b6f-122">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -49,15 +48,10 @@ ms.locfileid: "29513673"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "automaticRepliesMailTips resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/automaticrepliesmailtips.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

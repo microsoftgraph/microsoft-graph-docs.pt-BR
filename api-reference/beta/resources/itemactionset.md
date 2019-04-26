@@ -5,21 +5,21 @@ ms.date: 09/14/2017
 title: ItemActionSet
 localization_priority: Normal
 ms.openlocfilehash: 3fab75c6a63630f57dae8d0578691ba10622231d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518797"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569946"
 ---
-# <a name="itemactionset-resource-type"></a><span data-ttu-id="57af7-102">Tipo de recurso ItemActionSet</span><span class="sxs-lookup"><span data-stu-id="57af7-102">ItemActionSet resource type</span></span>
+# <a name="itemactionset-resource-type"></a><span data-ttu-id="53c22-102">Tipo de recurso ItemActionSet</span><span class="sxs-lookup"><span data-stu-id="53c22-102">ItemActionSet resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="57af7-103">O recurso **ItemActionSet** fornece informações sobre as ações que deram origem a uma [activity][itemActivity] em um item.</span><span class="sxs-lookup"><span data-stu-id="57af7-103">The **ItemActionSet** resource provides information about the actions that made up an [activity][itemActivity] on an item.</span></span>
+<span data-ttu-id="53c22-103">O recurso **ItemActionSet** fornece informações sobre as ações que deram origem a uma [activity][itemActivity] em um item.</span><span class="sxs-lookup"><span data-stu-id="53c22-103">The **ItemActionSet** resource provides information about the actions that made up an [activity][itemActivity] on an item.</span></span>
 
 [itemActivity]: itemactivity.md
 
-## <a name="json-representation"></a><span data-ttu-id="57af7-104">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="57af7-104">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="53c22-104">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="53c22-104">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -45,23 +45,23 @@ ms.locfileid: "29518797"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="57af7-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="57af7-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="53c22-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="53c22-105">Properties</span></span>
 
-<span data-ttu-id="57af7-106">Abaixo estão as ações disponíveis atualmente.</span><span class="sxs-lookup"><span data-stu-id="57af7-106">Below are the actions that are available today.</span></span>
-<span data-ttu-id="57af7-107">Novas ações podem ser registradas no futuro, portanto, verifique se o seu aplicativo tem tolerância à manipulação de um **itemActionSet** sem quaisquer ações que seu aplicativo entenda.</span><span class="sxs-lookup"><span data-stu-id="57af7-107">New actions may get logged in the future, so make sure your app is tolerant of handling an **itemActionSet** without any actions that your app understands.</span></span>
+<span data-ttu-id="53c22-106">Abaixo estão as ações disponíveis atualmente.</span><span class="sxs-lookup"><span data-stu-id="53c22-106">Below are the actions that are available today.</span></span>
+<span data-ttu-id="53c22-107">Novas ações podem ser registradas no futuro, portanto, verifique se o seu aplicativo tem tolerância à manipulação de um **itemActionSet** sem quaisquer ações que seu aplicativo entenda.</span><span class="sxs-lookup"><span data-stu-id="53c22-107">New actions may get logged in the future, so make sure your app is tolerant of handling an **itemActionSet** without any actions that your app understands.</span></span>
 
-| <span data-ttu-id="57af7-108">Nome da propriedade</span><span class="sxs-lookup"><span data-stu-id="57af7-108">Property name</span></span> | <span data-ttu-id="57af7-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="57af7-109">Type</span></span>              | <span data-ttu-id="57af7-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="57af7-110">Description</span></span>
+| <span data-ttu-id="53c22-108">Nome da propriedade</span><span class="sxs-lookup"><span data-stu-id="53c22-108">Property name</span></span> | <span data-ttu-id="53c22-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="53c22-109">Type</span></span>              | <span data-ttu-id="53c22-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="53c22-110">Description</span></span>
 |:--------------|:------------------|:-----------------------------------------
-| <span data-ttu-id="57af7-111">comment</span><span class="sxs-lookup"><span data-stu-id="57af7-111">comment</span></span>       | <span data-ttu-id="57af7-112">[commentAction][]</span><span class="sxs-lookup"><span data-stu-id="57af7-112">[commentAction][]</span></span> | <span data-ttu-id="57af7-113">Um comentário foi adicionado ao item.</span><span class="sxs-lookup"><span data-stu-id="57af7-113">A comment was added to the item.</span></span>
-| <span data-ttu-id="57af7-114">create</span><span class="sxs-lookup"><span data-stu-id="57af7-114">create</span></span>        | <span data-ttu-id="57af7-115">[createAction][]</span><span class="sxs-lookup"><span data-stu-id="57af7-115">[createAction][]</span></span>  | <span data-ttu-id="57af7-116">Um item foi criado.</span><span class="sxs-lookup"><span data-stu-id="57af7-116">An item was created.</span></span>
-| <span data-ttu-id="57af7-117">delete</span><span class="sxs-lookup"><span data-stu-id="57af7-117">delete</span></span>        | <span data-ttu-id="57af7-118">[deleteAction][]</span><span class="sxs-lookup"><span data-stu-id="57af7-118">[deleteAction][]</span></span>  | <span data-ttu-id="57af7-119">Um item foi excluído.</span><span class="sxs-lookup"><span data-stu-id="57af7-119">An item was deleted.</span></span>
-| <span data-ttu-id="57af7-120">edit</span><span class="sxs-lookup"><span data-stu-id="57af7-120">edit</span></span>          | <span data-ttu-id="57af7-121">[editAction][]</span><span class="sxs-lookup"><span data-stu-id="57af7-121">[editAction][]</span></span>    | <span data-ttu-id="57af7-122">Um item foi editado.</span><span class="sxs-lookup"><span data-stu-id="57af7-122">An item was edited.</span></span>
-| <span data-ttu-id="57af7-123">mention</span><span class="sxs-lookup"><span data-stu-id="57af7-123">mention</span></span>       | <span data-ttu-id="57af7-124">[mentionAction][]</span><span class="sxs-lookup"><span data-stu-id="57af7-124">[mentionAction][]</span></span> | <span data-ttu-id="57af7-125">Um usuário foi mencionado no item.</span><span class="sxs-lookup"><span data-stu-id="57af7-125">A user was mentioned in the item.</span></span>
-| <span data-ttu-id="57af7-126">move</span><span class="sxs-lookup"><span data-stu-id="57af7-126">move</span></span>          | <span data-ttu-id="57af7-127">[moveAction][]</span><span class="sxs-lookup"><span data-stu-id="57af7-127">[moveAction][]</span></span>    | <span data-ttu-id="57af7-128">Um item foi movido.</span><span class="sxs-lookup"><span data-stu-id="57af7-128">An item was moved.</span></span>
-| <span data-ttu-id="57af7-129">rename</span><span class="sxs-lookup"><span data-stu-id="57af7-129">rename</span></span>        | <span data-ttu-id="57af7-130">[renameAction][]</span><span class="sxs-lookup"><span data-stu-id="57af7-130">[renameAction][]</span></span>  | <span data-ttu-id="57af7-131">Um item foi renomeado.</span><span class="sxs-lookup"><span data-stu-id="57af7-131">An item was renamed.</span></span>
-| <span data-ttu-id="57af7-132">restore</span><span class="sxs-lookup"><span data-stu-id="57af7-132">restore</span></span>       | <span data-ttu-id="57af7-133">[restoreAction][]</span><span class="sxs-lookup"><span data-stu-id="57af7-133">[restoreAction][]</span></span> | <span data-ttu-id="57af7-134">Um item foi restaurado.</span><span class="sxs-lookup"><span data-stu-id="57af7-134">An item was restored.</span></span>
-| <span data-ttu-id="57af7-135">share</span><span class="sxs-lookup"><span data-stu-id="57af7-135">share</span></span>         | <span data-ttu-id="57af7-136">[shareAction][]</span><span class="sxs-lookup"><span data-stu-id="57af7-136">[shareAction][]</span></span>   | <span data-ttu-id="57af7-137">Um item foi compartilhado.</span><span class="sxs-lookup"><span data-stu-id="57af7-137">An item was shared.</span></span>
-| <span data-ttu-id="57af7-138">version</span><span class="sxs-lookup"><span data-stu-id="57af7-138">version</span></span>       | <span data-ttu-id="57af7-139">[versionAction][]</span><span class="sxs-lookup"><span data-stu-id="57af7-139">[versionAction][]</span></span> | <span data-ttu-id="57af7-140">Foi feito o controle de versão de um item.</span><span class="sxs-lookup"><span data-stu-id="57af7-140">An item was versioned.</span></span>
+| <span data-ttu-id="53c22-111">comment</span><span class="sxs-lookup"><span data-stu-id="53c22-111">comment</span></span>       | <span data-ttu-id="53c22-112">[commentAction][]</span><span class="sxs-lookup"><span data-stu-id="53c22-112">[commentAction][]</span></span> | <span data-ttu-id="53c22-113">Um comentário foi adicionado ao item.</span><span class="sxs-lookup"><span data-stu-id="53c22-113">A comment was added to the item.</span></span>
+| <span data-ttu-id="53c22-114">create</span><span class="sxs-lookup"><span data-stu-id="53c22-114">create</span></span>        | <span data-ttu-id="53c22-115">[createAction][]</span><span class="sxs-lookup"><span data-stu-id="53c22-115">[createAction][]</span></span>  | <span data-ttu-id="53c22-116">Um item foi criado.</span><span class="sxs-lookup"><span data-stu-id="53c22-116">An item was created.</span></span>
+| <span data-ttu-id="53c22-117">delete</span><span class="sxs-lookup"><span data-stu-id="53c22-117">delete</span></span>        | <span data-ttu-id="53c22-118">[deleteAction][]</span><span class="sxs-lookup"><span data-stu-id="53c22-118">[deleteAction][]</span></span>  | <span data-ttu-id="53c22-119">Um item foi excluído.</span><span class="sxs-lookup"><span data-stu-id="53c22-119">An item was deleted.</span></span>
+| <span data-ttu-id="53c22-120">edit</span><span class="sxs-lookup"><span data-stu-id="53c22-120">edit</span></span>          | <span data-ttu-id="53c22-121">[editAction][]</span><span class="sxs-lookup"><span data-stu-id="53c22-121">[editAction][]</span></span>    | <span data-ttu-id="53c22-122">Um item foi editado.</span><span class="sxs-lookup"><span data-stu-id="53c22-122">An item was edited.</span></span>
+| <span data-ttu-id="53c22-123">mention</span><span class="sxs-lookup"><span data-stu-id="53c22-123">mention</span></span>       | <span data-ttu-id="53c22-124">[mentionAction][]</span><span class="sxs-lookup"><span data-stu-id="53c22-124">[mentionAction][]</span></span> | <span data-ttu-id="53c22-125">Um usuário foi mencionado no item.</span><span class="sxs-lookup"><span data-stu-id="53c22-125">A user was mentioned in the item.</span></span>
+| <span data-ttu-id="53c22-126">move</span><span class="sxs-lookup"><span data-stu-id="53c22-126">move</span></span>          | <span data-ttu-id="53c22-127">[moveAction][]</span><span class="sxs-lookup"><span data-stu-id="53c22-127">[moveAction][]</span></span>    | <span data-ttu-id="53c22-128">Um item foi movido.</span><span class="sxs-lookup"><span data-stu-id="53c22-128">An item was moved.</span></span>
+| <span data-ttu-id="53c22-129">rename</span><span class="sxs-lookup"><span data-stu-id="53c22-129">rename</span></span>        | <span data-ttu-id="53c22-130">[renameAction][]</span><span class="sxs-lookup"><span data-stu-id="53c22-130">[renameAction][]</span></span>  | <span data-ttu-id="53c22-131">Um item foi renomeado.</span><span class="sxs-lookup"><span data-stu-id="53c22-131">An item was renamed.</span></span>
+| <span data-ttu-id="53c22-132">restore</span><span class="sxs-lookup"><span data-stu-id="53c22-132">restore</span></span>       | <span data-ttu-id="53c22-133">[restoreAction][]</span><span class="sxs-lookup"><span data-stu-id="53c22-133">[restoreAction][]</span></span> | <span data-ttu-id="53c22-134">Um item foi restaurado.</span><span class="sxs-lookup"><span data-stu-id="53c22-134">An item was restored.</span></span>
+| <span data-ttu-id="53c22-135">share</span><span class="sxs-lookup"><span data-stu-id="53c22-135">share</span></span>         | <span data-ttu-id="53c22-136">[shareAction][]</span><span class="sxs-lookup"><span data-stu-id="53c22-136">[shareAction][]</span></span>   | <span data-ttu-id="53c22-137">Um item foi compartilhado.</span><span class="sxs-lookup"><span data-stu-id="53c22-137">An item was shared.</span></span>
+| <span data-ttu-id="53c22-138">version</span><span class="sxs-lookup"><span data-stu-id="53c22-138">version</span></span>       | <span data-ttu-id="53c22-139">[versionAction][]</span><span class="sxs-lookup"><span data-stu-id="53c22-139">[versionAction][]</span></span> | <span data-ttu-id="53c22-140">Foi feito o controle de versão de um item.</span><span class="sxs-lookup"><span data-stu-id="53c22-140">An item was versioned.</span></span>
 
 [commentAction]: commentaction.md
 [createAction]: createaction.md
@@ -74,9 +74,9 @@ ms.locfileid: "29518797"
 [shareAction]: shareaction.md
 [versionAction]: versionaction.md
 
-## <a name="remarks"></a><span data-ttu-id="57af7-151">Comentários</span><span class="sxs-lookup"><span data-stu-id="57af7-151">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="53c22-151">Comentários</span><span class="sxs-lookup"><span data-stu-id="53c22-151">Remarks</span></span>
 
-<span data-ttu-id="57af7-152">Registros de atividade de item atualmente só estão disponíveis no SharePoint e no OneDrive for Business.</span><span class="sxs-lookup"><span data-stu-id="57af7-152">Item activity records are currently only available on SharePoint and OneDrive for Business.</span></span>
+<span data-ttu-id="53c22-152">Registros de atividade de item atualmente só estão disponíveis no SharePoint e no OneDrive for Business.</span><span class="sxs-lookup"><span data-stu-id="53c22-152">Item activity records are currently only available on SharePoint and OneDrive for Business.</span></span>
 
 <!--
 {

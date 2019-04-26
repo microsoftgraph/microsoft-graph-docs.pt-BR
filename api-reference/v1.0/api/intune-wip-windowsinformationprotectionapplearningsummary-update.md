@@ -5,28 +5,28 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 663d2536e9e04faef0201a159649a0244666e700
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30986863"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32576322"
 ---
-# <a name="update-windowsinformationprotectionapplearningsummary"></a><span data-ttu-id="94071-103">Atualizar windowsInformationProtectionAppLearningSummary</span><span class="sxs-lookup"><span data-stu-id="94071-103">Update windowsInformationProtectionAppLearningSummary</span></span>
+# <a name="update-windowsinformationprotectionapplearningsummary"></a><span data-ttu-id="cd34e-103">Atualizar windowsInformationProtectionAppLearningSummary</span><span class="sxs-lookup"><span data-stu-id="cd34e-103">Update windowsInformationProtectionAppLearningSummary</span></span>
 
-> <span data-ttu-id="94071-104">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="94071-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="cd34e-104">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="cd34e-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="94071-105">Atualizar as propriedades de um objeto [windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md).</span><span class="sxs-lookup"><span data-stu-id="94071-105">Update the properties of a [windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md) object.</span></span>
+<span data-ttu-id="cd34e-105">Atualizar as propriedades de um objeto [windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md).</span><span class="sxs-lookup"><span data-stu-id="cd34e-105">Update the properties of a [windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="94071-106">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="94071-106">Prerequisites</span></span>
-<span data-ttu-id="94071-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="94071-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="cd34e-106">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="cd34e-106">Prerequisites</span></span>
+<span data-ttu-id="cd34e-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="cd34e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="94071-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="94071-109">Permission type</span></span>|<span data-ttu-id="94071-110">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="94071-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="cd34e-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="cd34e-109">Permission type</span></span>|<span data-ttu-id="cd34e-110">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="cd34e-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="94071-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="94071-111">Delegated (work or school account)</span></span>|<span data-ttu-id="94071-112">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="94071-112">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="94071-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="94071-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="94071-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="94071-114">Not supported.</span></span>|
-|<span data-ttu-id="94071-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="94071-115">Application</span></span>|<span data-ttu-id="94071-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="94071-116">Not supported.</span></span>|
+|<span data-ttu-id="cd34e-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="cd34e-111">Delegated (work or school account)</span></span>|<span data-ttu-id="cd34e-112">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cd34e-112">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="cd34e-113">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="cd34e-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="cd34e-114">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="cd34e-114">Not supported.</span></span>|
+|<span data-ttu-id="cd34e-115">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="cd34e-115">Application</span></span>|<span data-ttu-id="cd34e-116">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="cd34e-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="94071-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="94071-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="cd34e-117">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="cd34e-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -35,33 +35,33 @@ ms.locfileid: "30986863"
 PATCH /deviceManagement/windowsInformationProtectionAppLearningSummaries/{windowsInformationProtectionAppLearningSummaryId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="94071-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="94071-118">Request headers</span></span>
-|<span data-ttu-id="94071-119">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="94071-119">Header</span></span>|<span data-ttu-id="94071-120">Valor</span><span class="sxs-lookup"><span data-stu-id="94071-120">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="cd34e-118">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="cd34e-118">Request headers</span></span>
+|<span data-ttu-id="cd34e-119">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="cd34e-119">Header</span></span>|<span data-ttu-id="cd34e-120">Valor</span><span class="sxs-lookup"><span data-stu-id="cd34e-120">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="94071-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="94071-121">Authorization</span></span>|<span data-ttu-id="94071-122">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="94071-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="94071-123">Aceitar</span><span class="sxs-lookup"><span data-stu-id="94071-123">Accept</span></span>|<span data-ttu-id="94071-124">application/json</span><span class="sxs-lookup"><span data-stu-id="94071-124">application/json</span></span>|
+|<span data-ttu-id="cd34e-121">Autorização</span><span class="sxs-lookup"><span data-stu-id="cd34e-121">Authorization</span></span>|<span data-ttu-id="cd34e-122">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="cd34e-122">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="cd34e-123">Aceitar</span><span class="sxs-lookup"><span data-stu-id="cd34e-123">Accept</span></span>|<span data-ttu-id="cd34e-124">application/json</span><span class="sxs-lookup"><span data-stu-id="cd34e-124">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="94071-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="94071-125">Request body</span></span>
-<span data-ttu-id="94071-126">No corpo da solicitação, forneça uma representação JSON do objeto [windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md).</span><span class="sxs-lookup"><span data-stu-id="94071-126">In the request body, supply a JSON representation for the [windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="cd34e-125">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="cd34e-125">Request body</span></span>
+<span data-ttu-id="cd34e-126">No corpo da solicitação, forneça uma representação JSON do objeto [windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md).</span><span class="sxs-lookup"><span data-stu-id="cd34e-126">In the request body, supply a JSON representation for the [windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md) object.</span></span>
 
-<span data-ttu-id="94071-127">A tabela a seguir mostra as propriedades que são necessárias ao criar [windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md).</span><span class="sxs-lookup"><span data-stu-id="94071-127">The following table shows the properties that are required when you create the [windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md).</span></span>
+<span data-ttu-id="cd34e-127">A tabela a seguir mostra as propriedades que são necessárias ao criar [windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md).</span><span class="sxs-lookup"><span data-stu-id="cd34e-127">The following table shows the properties that are required when you create the [windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md).</span></span>
 
-|<span data-ttu-id="94071-128">Propriedade</span><span class="sxs-lookup"><span data-stu-id="94071-128">Property</span></span>|<span data-ttu-id="94071-129">Tipo</span><span class="sxs-lookup"><span data-stu-id="94071-129">Type</span></span>|<span data-ttu-id="94071-130">Descrição</span><span class="sxs-lookup"><span data-stu-id="94071-130">Description</span></span>|
+|<span data-ttu-id="cd34e-128">Propriedade</span><span class="sxs-lookup"><span data-stu-id="cd34e-128">Property</span></span>|<span data-ttu-id="cd34e-129">Tipo</span><span class="sxs-lookup"><span data-stu-id="cd34e-129">Type</span></span>|<span data-ttu-id="cd34e-130">Descrição</span><span class="sxs-lookup"><span data-stu-id="cd34e-130">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="94071-131">id</span><span class="sxs-lookup"><span data-stu-id="94071-131">id</span></span>|<span data-ttu-id="94071-132">String</span><span class="sxs-lookup"><span data-stu-id="94071-132">String</span></span>|<span data-ttu-id="94071-133">Identificador exclusivo do WindowsInformationProtectionAppLearningSummary.</span><span class="sxs-lookup"><span data-stu-id="94071-133">Unique Identifier for the WindowsInformationProtectionAppLearningSummary.</span></span>|
-|<span data-ttu-id="94071-134">applicationName</span><span class="sxs-lookup"><span data-stu-id="94071-134">applicationName</span></span>|<span data-ttu-id="94071-135">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="94071-135">String</span></span>|<span data-ttu-id="94071-136">Nome do Aplicativo</span><span class="sxs-lookup"><span data-stu-id="94071-136">Application Name</span></span>|
-|<span data-ttu-id="94071-137">applicationType</span><span class="sxs-lookup"><span data-stu-id="94071-137">applicationType</span></span>|[<span data-ttu-id="94071-138">Tipo</span><span class="sxs-lookup"><span data-stu-id="94071-138">applicationType</span></span>](../resources/intune-wip-applicationtype.md)|<span data-ttu-id="94071-139">Tipo de aplicativo.</span><span class="sxs-lookup"><span data-stu-id="94071-139">Application Type.</span></span> <span data-ttu-id="94071-140">Os valores possíveis são: `universal` e `desktop`.</span><span class="sxs-lookup"><span data-stu-id="94071-140">Possible values are: `universal`, `desktop`.</span></span>|
-|<span data-ttu-id="94071-141">deviceCount</span><span class="sxs-lookup"><span data-stu-id="94071-141">deviceCount</span></span>|<span data-ttu-id="94071-142">Int32</span><span class="sxs-lookup"><span data-stu-id="94071-142">Int32</span></span>|<span data-ttu-id="94071-143">Contagem de dispositivos</span><span class="sxs-lookup"><span data-stu-id="94071-143">Device Count</span></span>|
+|<span data-ttu-id="cd34e-131">id</span><span class="sxs-lookup"><span data-stu-id="cd34e-131">id</span></span>|<span data-ttu-id="cd34e-132">String</span><span class="sxs-lookup"><span data-stu-id="cd34e-132">String</span></span>|<span data-ttu-id="cd34e-133">Identificador exclusivo do WindowsInformationProtectionAppLearningSummary.</span><span class="sxs-lookup"><span data-stu-id="cd34e-133">Unique Identifier for the WindowsInformationProtectionAppLearningSummary.</span></span>|
+|<span data-ttu-id="cd34e-134">applicationName</span><span class="sxs-lookup"><span data-stu-id="cd34e-134">applicationName</span></span>|<span data-ttu-id="cd34e-135">Cadeia de caracteres</span><span class="sxs-lookup"><span data-stu-id="cd34e-135">String</span></span>|<span data-ttu-id="cd34e-136">Nome do Aplicativo</span><span class="sxs-lookup"><span data-stu-id="cd34e-136">Application Name</span></span>|
+|<span data-ttu-id="cd34e-137">applicationType</span><span class="sxs-lookup"><span data-stu-id="cd34e-137">applicationType</span></span>|[<span data-ttu-id="cd34e-138">Tipo</span><span class="sxs-lookup"><span data-stu-id="cd34e-138">applicationType</span></span>](../resources/intune-wip-applicationtype.md)|<span data-ttu-id="cd34e-139">Tipo de aplicativo.</span><span class="sxs-lookup"><span data-stu-id="cd34e-139">Application Type.</span></span> <span data-ttu-id="cd34e-140">Os valores possíveis são: `universal` e `desktop`.</span><span class="sxs-lookup"><span data-stu-id="cd34e-140">Possible values are: `universal`, `desktop`.</span></span>|
+|<span data-ttu-id="cd34e-141">deviceCount</span><span class="sxs-lookup"><span data-stu-id="cd34e-141">deviceCount</span></span>|<span data-ttu-id="cd34e-142">Int32</span><span class="sxs-lookup"><span data-stu-id="cd34e-142">Int32</span></span>|<span data-ttu-id="cd34e-143">Contagem de dispositivos</span><span class="sxs-lookup"><span data-stu-id="cd34e-143">Device Count</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="94071-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="94071-144">Response</span></span>
-<span data-ttu-id="94071-145">Se tiver êxito, este método retornará um código de resposta `200 OK` e um objeto [windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="94071-145">If successful, this method returns a `200 OK` response code and an updated [windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="cd34e-144">Resposta</span><span class="sxs-lookup"><span data-stu-id="cd34e-144">Response</span></span>
+<span data-ttu-id="cd34e-145">Se tiver êxito, este método retornará um código de resposta `200 OK` e um objeto [windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md) atualizado no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="cd34e-145">If successful, this method returns a `200 OK` response code and an updated [windowsInformationProtectionAppLearningSummary](../resources/intune-wip-windowsinformationprotectionapplearningsummary.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="94071-146">Exemplo</span><span class="sxs-lookup"><span data-stu-id="94071-146">Example</span></span>
+## <a name="example"></a><span data-ttu-id="cd34e-146">Exemplo</span><span class="sxs-lookup"><span data-stu-id="cd34e-146">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="94071-147">Solicitação</span><span class="sxs-lookup"><span data-stu-id="94071-147">Request</span></span>
-<span data-ttu-id="94071-148">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="94071-148">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="cd34e-147">Solicitação</span><span class="sxs-lookup"><span data-stu-id="cd34e-147">Request</span></span>
+<span data-ttu-id="cd34e-148">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="cd34e-148">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/windowsInformationProtectionAppLearningSummaries/{windowsInformationProtectionAppLearningSummaryId}
 Content-type: application/json
@@ -75,8 +75,8 @@ Content-length: 191
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="94071-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="94071-149">Response</span></span>
-<span data-ttu-id="94071-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="94071-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="cd34e-149">Resposta</span><span class="sxs-lookup"><span data-stu-id="cd34e-149">Response</span></span>
+<span data-ttu-id="cd34e-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="cd34e-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
