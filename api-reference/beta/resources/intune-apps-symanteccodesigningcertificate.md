@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 03f028dffe4db6a2e43a90d708bc16c61615a6a0
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31804449"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32554685"
 ---
 # <a name="symanteccodesigningcertificate-resource-type"></a>tipo de recurso symantecCodeSigningCertificate
 
@@ -28,19 +28,19 @@ Ainda não documentado
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|id|String|A chave da entidade.|
-|conteúdo|Binary|O certificado de assinatura de código Symantec do Windows no formato de dados brutos.|
+|id|Cadeia de caracteres|A chave da entidade.|
+|conteúdo|Binário|O certificado de assinatura de código Symantec do Windows no formato de dados brutos.|
 |status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|O status do certificado provisionado ou não foi provisionado. Os valores possíveis são: `notProvisioned` e `provisioned`.|
 |password|String|A senha necessária para o arquivo. pfx.|
-|SubjectName|Cadeia de caracteres|O nome da entidade do certificado.|
-|Assunto|String|O valor de entidade para o certificado.|
-|issuerName|Cadeia de caracteres|O nome do emissor do certificado.|
-|emissor|Cadeia de caracteres|O valor do emissor para o certificado.|
+|SubjectName|String|O nome da entidade do certificado.|
+|subject|String|O valor de entidade para o certificado.|
+|issuerName|String|O nome do emissor do certificado.|
+|emissor|String|O valor do emissor para o certificado.|
 |expirationDateTime|DateTimeOffset|A data de expiração do certificado.|
 |uploadDateTime|DateTimeOffset|O tipo do certificado de codeSignação como CERT da Symantec.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

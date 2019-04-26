@@ -5,11 +5,11 @@ localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 2583cbf5fd8feee12b18482c515490d2de8ce8be
-ms.sourcegitcommit: d264fa064215879fa88a4680402cd57a470d73db
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31989398"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548051"
 ---
 # <a name="delete-trustframeworkpolicy"></a>Excluir trustFrameworkPolicy
 
@@ -23,7 +23,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)|Policy. ReadWrite. TrustFramework|
+|Delegado (conta corporativa ou de estudante)|Policy.ReadWrite.TrustFramework|
 |Delegado (conta pessoal da Microsoft)| Sem suporte.|
 |Aplicativo|Sem suporte.|
 

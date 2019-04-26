@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 3218a40ee1a735cef585866e1ca0c9f80ad95671
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31779969"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556526"
 ---
 # <a name="airprintdestination-resource-type"></a>tipo de recurso airPrintDestination
 
@@ -23,12 +23,12 @@ Representa um destino de impressão.
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |ipAddress|Cadeia de caracteres|O endereço IP do destino de impressão.|
-|resourcePath|Cadeia de caracteres|O caminho do recurso associado à impressora. Isso corresponde ao parâmetro RP do registro Bonjour _ipps. TCP. Por exemplo: impressoras/Canon_MG5300_series, impressoras/Xerox_Phaser_7600, IPP/imprimir, Epson_IPP_Printer.|
+|resourcePath|String|O caminho do recurso associado à impressora. Isso corresponde ao parâmetro RP do registro Bonjour _ipps. TCP. Por exemplo: impressoras/Canon_MG5300_series, impressoras/Xerox_Phaser_7600, IPP/imprimir, Epson_IPP_Printer.|
 |propor|Int32|A porta de escuta do destino de impressão. Se essa chave não for especificada, a impressão de impressa usará a porta padrão. Disponível no iOS 11,0 e posterior.|
 |forceTls|Booliano|Se as conexões de impressão de verdade forem protegidas por TLS (Transport Layer Security). O padrão é false. Disponível no iOS 11,0 e posterior.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

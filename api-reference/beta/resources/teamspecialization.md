@@ -1,32 +1,32 @@
 ---
-title: tipo de enum teamSpecialization
-description: Descreve o caso de uso especial para uma equipe.
+title: tipo de enumeração Teamsspecialization
+description: Descreve o caso de uso especial de uma equipe.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: c89f3ef993e55e28f5558f99c3ef87ad5174bc65
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640319"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32553649"
 ---
-# <a name="teamspecialization-enum-type"></a>tipo de enum teamSpecialization
+# <a name="teamspecialization-enum-type"></a>tipo de enumeração Teamsspecialization
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Indica se a [equipe](../resources/team.md) destina-se de um caso de uso específico. Especialização cada [equipe](../resources/team.md) tem acesso aos comportamentos exclusivos e experiências destinadas ao seu caso de uso. O padrão é 'Nenhum'.
+Indica se a [equipe](../resources/team.md) destina-se a um caso de uso específico. Cada especialização de [equipe](../resources/team.md) tem acesso a comportamentos e experiências exclusivos direcionados ao seu caso de uso. O padrão é ' nenhum '.
 
 ## <a name="members"></a>Membros
 
 | Membro             | Valor | Descrição                                                                |
 | :----------------- | :---- | :------------------------------------------------------------------------- |
-| none               | 0     | Tipo de uma equipe que dá a experiência de equipe padrão padrão.          |
-| educationStandard  | 1     | Equipe criada por um usuário de educação. Todas as equipes criadas pelo usuário de educação são do tipo Edu. |
-| educationClass     | 2     | Experiência otimizada para uma classe de equipe. Isso permite que a segmentação de recursos entre O365. |
-| educationProfessionalLearningCommunity | 3 | Experiência otimizada para um PLC da equipe. Saiba mais sobre PLC [aqui](https://en.wikipedia.org/wiki/Professional_learning_community). |
-| educationStaff     | 4     |  Tipo de equipe para uma experiência otimizada para as equipes em uma organização, onde um líder de equipe, como uma entidade de segurança, é o administrador e professores são membros de uma equipe que vem com um bloco de anotações especializado. Para obter mais detalhes, consulte o [Bloco de anotações do OneNote da equipe educacional](https://www.onenote.com/staffnotebookedu). |
-| unknownFutureValue | 7     | Sentinel valor reservado como um espaço reservado para expansão futura do enum. |
+| Nenhuma               | ,0     | O tipo padrão para uma equipe que oferece a experiência de equipe padrão.          |
+| educationStandard  | 1      | Equipe criada por um usuário educacional. Todas as equipes criadas pelo usuário educacional são do tipo edu. |
+| educationClass     | 2      | Experiência de equipe otimizada para uma aula. Isso habilita a segmentação de recursos no O365. |
+| educationProfessionalLearningCommunity | 3  | Experiência de equipe otimizada para um PLC. Saiba mais sobre o PLC [aqui](https://en.wikipedia.org/wiki/Professional_learning_community). |
+| educationStaff     | 4      |  Tipo de equipe para uma experiência otimizada para a equipe em uma organização, onde o líder da equipe, como o principal, é o administrador e os professores são membros de uma equipe que vem com um bloco de anotações especializado. Para obter mais detalhes, consulte [bloco de anotações de equipe do OneNote para educação](https://www.onenote.com/staffnotebookedu). |
+| unknownFutureValue | 7      | O valor de sentinela reservado como um espaço reservado para expansão futura da enumeração. |
 <!-- {
   "type": "#page.annotation",
   "suppressions": [

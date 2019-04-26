@@ -1,27 +1,27 @@
 ---
 title: Tipo de recurso inferenceClassificationOverride
-description: Representa a substituição de um usuário para definir como classificar as mensagens recebidas de um remetente específico.
+description: Representa a substituição de um usuário sobre como as mensagens de entrada de um remetente específico devem sempre ser classificadas como
 localization_priority: Normal
 ms.openlocfilehash: 1cf1896b43dccfe59ed253c22a8a7341e9ee6e1d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511797"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548730"
 ---
 # <a name="inferenceclassificationoverride-resource-type"></a>Tipo de recurso inferenceClassificationOverride
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Representa a substituição de um usuário para como mensagens recebidas de um remetente específico sempre devem ser classificadas como uma [Caixa de entrada com foco](manage-focused-inbox.md).
+Representa a substituição de um usuário sobre como as mensagens de entrada de um remetente específico devem sempre ser classificadas como em uma [caixa de entrada destaques](manage-focused-inbox.md).
 
 
 ## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Update](../api/inferenceclassificationoverride-update.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md) |Altere o campo **classifyAs** de uma substituição conforme especificado. |
-|[Delete](../api/inferenceclassificationoverride-delete.md) | Nenhum |Exclua uma substituição especificada de acordo com sua ID. |
+|[Update](../api/inferenceclassificationoverride-update.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md) |Altere o campo **ClassifyAs** de uma substituição conforme especificado. |
+|[Excluir](../api/inferenceclassificationoverride-delete.md) | None |Exclua uma substituição especificada de acordo com sua ID. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
@@ -30,8 +30,8 @@ Representa a substituição de um usuário para como mensagens recebidas de um r
 |id|string| O identificador exclusivo da substituição. Somente leitura.|
 |senderEmailAddress|[emailAddress](emailaddress.md)|As informações de endereço de email do remetente para quem a substituição é criada.|
 
-## <a name="relationships"></a>Relacionamentos
-Nenhuma
+## <a name="relationships"></a>Relações
+Nenhum
 
 
 ## <a name="json-representation"></a>Representação JSON

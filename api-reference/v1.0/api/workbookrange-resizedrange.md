@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: 4eb5aad208ecd7c60e45b2419b61570915bb7338
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27931290"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32554643"
 ---
 # <a name="workbookrange-resizedrange"></a>workbookRange: resizedRange
 Obtém um objeto range semelhante ao objeto range atual, mas com seu canto inferior direito expandido (ou recolhido) por um determinado número de linhas e colunas.
@@ -35,7 +35,7 @@ POST /me/drive/root/workbook/worksheets/{id}/range/resizedRange(deltaRows={n}, d
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |deltaRows|Int32|O número de linhas pelo qual expandir o canto inferior direito, referente ao intervalo atual. Use um número positivo para expandir o intervalo ou um número negativo para diminuí-lo|
-|deltaColumns|Int32|O número de colunas pela qual expandir o canto inferior direito, em relação ao intervalo atual. Use um número positivo expandir o intervalo, ou um número negativo para diminuir a ele.|
+|deltaColumns|Int32|O número de colunas pelas quais expandir o canto inferior direito, em relação ao intervalo atual. Use um número positivo para expandir o intervalo ou um número negativo para diminuí-lo.|
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Descrição|

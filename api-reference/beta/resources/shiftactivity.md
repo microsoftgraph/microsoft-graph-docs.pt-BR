@@ -5,11 +5,11 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 0a5b877c2c24d1764e9badb44dab1f25143c2dce
-ms.sourcegitcommit: 081cacecb4960aabc9e1011d12f06fe9ecf7d188
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30657522"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583778"
 ---
 # <a name="shiftactivity-resource-type"></a>tipo de recurso shiftActivity
 
@@ -21,9 +21,9 @@ Representa uma atividade em um [turno](shift.md).
 | Propriedade                         | Tipo                    | Descrição                                                                                                                                                                        |
 |------------------------------|-------------------------|---------------------------------------------------------------------------------------------|
 | isPago               | `bool`                  | Indica se o `microsoft.graph.user` deve ser pago para a atividade durante seu `shift`. Obrigatório.    |
-| startDateTime               | `DateTimeOffset`                  | A data e a hora de início `shiftActivity`para o. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 teria a seguinte aparência: ' 2014-01-01T00:00:00Z '. Obrigatório. |
-| endDateTime               | `DateTimeOffset`                  | A data e a hora de término `shiftActivity`para o. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite UTC em 1º de janeiro de 2014 teria a seguinte aparência: ' 2014-01-01T00:00:00Z '. Obrigatório.    |
-| code               | `string`                  | Código definido pelo cliente para `shiftActivity`o. Obrigatório.    |
+| startDateTime               | `DateTimeOffset`                  | A data e a hora de início `shiftActivity`para o. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: '2014-01-01T00:00:00Z'. Obrigatório. |
+| endDateTime               | `DateTimeOffset`                  | A data e a hora de término `shiftActivity`para o. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: '2014-01-01T00:00:00Z'. Obrigatório.    |
+| código               | `string`                  | Código definido pelo cliente para `shiftActivity`o. Obrigatório.    |
 | displayName               | `string`                  | O nome do `shiftActivity`. Obrigatório.    |
 
 ## <a name="json-representation"></a>Representação JSON

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: e7f3dcbbc2544a4231cd5da102985d7142feb03a
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31809150"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32551796"
 ---
 # <a name="mobileapprelationshipstate-resource-type"></a>tipo de recurso mobileAppRelationshipState
 
@@ -22,9 +22,9 @@ Descreve os detalhes de status da instalação do aplicativo filho no contexto d
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|sourceIds|Coleção String|O conjunto de IDs do aplicativo móvel de origem.|
-|targetId|Cadeia de caracteres|A ID do aplicativo de destino relacionado.|
-|targetDisplayName|Cadeia de caracteres|O nome de exibição do aplicativo de destino relacionado.|
+|sourceIds|Coleção de cadeias de caracteres|O conjunto de IDs do aplicativo móvel de origem.|
+|targetId|String|A ID do aplicativo de destino relacionado.|
+|targetDisplayName|String|O nome de exibição do aplicativo de destino relacionado.|
 |deviceId|Cadeia de caracteres|A ID de dispositivo correspondente.|
 |installState|[resultantAppState](../resources/intune-shared-resultantappstate.md)|O estado de instalação do aplicativo do aplicativo de destino. Os valores possíveis são: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown`, `notApplicable`.|
 |installStateDetail|[resultantAppStateDetail](../resources/intune-apps-resultantappstatedetail.md)|Os detalhes do estado de instalação do aplicativo. Os valores possíveis são `noAdditionalDetails`: `dependencyFailedToInstall`, `dependencyWithRequirementsNotMet`, `dependencyPendingReboot`, `dependencyWithAutoInstallDisabled`, `seeInstallErrorCode`, `autoInstallDisabled`, `seeUninstallErrorCode`, `pendingReboot`, `installingDependencies` `powerShellScriptRequirementNotMet` `registryRequirementNotMet`,,, `fileSystemRequirementNotMet`, `platformNotApplicable`, `minimumCpuSpeedNotMet`, `minimumLogicalProcessorCountNotMet`, `minimumPhysicalMemoryNotMet`, `minimumOsVersionNotMet`, `minimumDiskSpaceNotMet` ,,,,,,,, , `processorArchitectureNotApplicable`.|
@@ -32,7 +32,7 @@ Descreve os detalhes de status da instalação do aplicativo filho no contexto d
 |targetLastSyncDateTime|DateTimeOffset|O horário da última sincronização do aplicativo de destino.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

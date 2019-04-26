@@ -1,21 +1,21 @@
 ---
 title: Atribuir política
-description: Atribui uma política a um aplicativo ou entidade de serviço.
+description: Atribui uma política a um aplicativo ou a uma entidade de serviço.
 localization_priority: Normal
 ms.openlocfilehash: 15ba6a42f5c5d39caf57b25ebafc5dd4bc7990fc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528211"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546784"
 ---
 # <a name="assign-policy"></a>Atribuir política
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Atribui uma [política](../resources/policy.md) a um aplicativo ou entidade de serviço.
+Atribui uma [política](../resources/policy.md) a um aplicativo ou a uma entidade de serviço.
 
->Observação: No momento, a atribuição da diretiva só se aplica a vida útil do Token política. Esse tipo de política é descrito na [política](../resources/policy.md).
+>Observação: no momento, a atribuição de política se aplica apenas à política de tempo de vida do token. Esse tipo de política é descrita na [política](../resources/policy.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
@@ -33,7 +33,7 @@ POST /applications/{id}/policies/$ref
 POST /serviceprincipals/{id}/policies/$ref
 ```
 
-> Observação: O "id" na solicitação é a propriedade "id" do aplicativo ou serviço principal, não a propriedade "appid".
+> Observação: "ID" na solicitação é a propriedade "ID" da entidade de serviço ou aplicativo, não a propriedade "AppID".
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
@@ -42,11 +42,11 @@ POST /serviceprincipals/{id}/policies/$ref
 | Content-Type | application/json  | Natureza dos dados no corpo de uma entidade. Obrigatório. |
 
 ## <a name="request-body"></a>Corpo da solicitação
-No corpo da solicitação, fornecem uma representação de JSON do objeto de diretiva a ser adicionado.
+No corpo da solicitação, forneça uma representação JSON do objeto Policy a ser adicionado.
 
 ## <a name="response"></a>Resposta
 
-Se bem sucedido, este método retorna um código de resposta `204 No Content`. Se não obtiver êxito, uma `4xx` será retornado o erro com detalhes específicos.
+Quando é bem-sucedido, este método retorna um código de resposta `204 No Content`. Caso não consiga, um `4xx` erro será retornado com detalhes específicos.
 
 ## <a name="example"></a>Exemplo
 O exemplo a seguir atribui uma política a um aplicativo.

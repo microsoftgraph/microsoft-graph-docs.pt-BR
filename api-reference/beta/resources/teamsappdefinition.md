@@ -1,17 +1,17 @@
 ---
-title: tipo de recurso de teamsAppDefinition
+title: tipo de recurso teamsAppDefinition
 description: Os detalhes de uma versão de um teamsApp.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 94e2c790f8bf4623e56ca76bde164b718ee6fa38
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509977"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32554020"
 ---
-# <a name="teamsappdefinition-resource-type"></a>tipo de recurso de teamsAppDefinition
+# <a name="teamsappdefinition-resource-type"></a>tipo de recurso teamsAppDefinition
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -21,10 +21,10 @@ Os detalhes de uma versão de um [teamsApp](teamsapp.md).
 
 | Propriedade            | Tipo     | Descrição |
 |:------------------- |:-------- |:----------- |
-| id                  | string   | Uma identificação exclusiva (não o appid equipes). |
-| teamsAppId          | string   | A identificação de manifesto do aplicativo de equipes. |
-| displayName         | string   | O nome do aplicativo fornecido pelo desenvolvedor do aplicativo. |
-| version             | string   | O número de versão do aplicativo. |
+| id                  | string   | Uma ID exclusiva (não a AppID do Teams). |
+| teamsAppId          | string   | A ID do manifesto do aplicativo Teams. |
+| displayName         | string   | O nome do aplicativo fornecido pelo desenvolvedor de aplicativos. |
+| versão             | string   | O número da versão do aplicativo. |
 
 ## <a name="json-representation"></a>Representação JSON
 

@@ -1,17 +1,17 @@
 ---
-title: tipo de recurso de yammerGroupsActivityDetail
+title: tipo de recurso yammerGroupsActivityDetail
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: c5b580f643686c27497fd24a6fe00c7750a6a938
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573260"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32551418"
 ---
-# <a name="yammergroupsactivitydetail-resource-type"></a>tipo de recurso de yammerGroupsActivityDetail
+# <a name="yammergroupsactivitydetail-resource-type"></a>tipo de recurso yammerGroupsActivityDetail
 
 ## <a name="properties"></a>Propriedades
 
@@ -19,11 +19,11 @@ ms.locfileid: "29573260"
 | :----------------- | :------ |
 | reportRefreshDate  | Data    |
 | groupDisplayName   | String  |
-| isDeleted          | Boolean |
+| isDeleted          | Booliano |
 | ownerPrincipalName | String  |
 | lastActivityDate   | Data    |
 | groupType          | String  |
-| office365Connected | Boolean |
+| office365Connected | Booliano |
 | memberCount        | Int64   |
 | postedCount        | Int64   |
 | readCount          | Int64   |

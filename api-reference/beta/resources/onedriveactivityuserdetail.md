@@ -1,23 +1,23 @@
 ---
-title: tipo de recurso de oneDriveActivityUserDetail
+title: tipo de recurso oneDriveActivityUserDetail
 description: Veja a seguir uma representação JSON do recurso.
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 29c9c8b723d4f87fa9858e26906878c973b37b09
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27948244"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582245"
 ---
-# <a name="onedriveactivityuserdetail-resource-type"></a>tipo de recurso de oneDriveActivityUserDetail
+# <a name="onedriveactivityuserdetail-resource-type"></a>tipo de recurso oneDriveActivityUserDetail
 
 ## <a name="properties"></a>Propriedades
 
 | Propriedade                  | Tipo              |
 | :------------------------ | :---------------- |
 | reportRefreshDate         | Data              |
-| userPrincipalName         | Cadeia de caracteres            |
+| userPrincipalName         | String            |
 | isDeleted                 | Booliano           |
 | deletedDate               | Data              |
 | lastActivityDate          | Data              |
@@ -25,8 +25,8 @@ ms.locfileid: "27948244"
 | syncedFileCount           | Int64             |
 | sharedInternallyFileCount | Int64             |
 | sharedExternallyFileCount | Int64             |
-| assignedProducts          | String collection |
-| reportPeriod              | Cadeia de caracteres            |
+| assignedProducts          | Coleção de cadeias de caracteres |
+| reportPeriod              | String            |
 
 ## <a name="json-representation"></a>Representação JSON
 

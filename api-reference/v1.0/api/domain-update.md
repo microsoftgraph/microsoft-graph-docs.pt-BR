@@ -1,21 +1,21 @@
 ---
 title: Atualizar domínio
-description: Atualize as propriedades do objeto de domínio.
+description: Atualize as propriedades do objeto Domain.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: da51badb52b5047c6d5eb1d52004104d0395fcf2
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27923779"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32551488"
 ---
 # <a name="update-domain"></a>Atualizar domínio
 
-Atualize as propriedades do objeto de domínio.
+Atualize as propriedades do objeto Domain.
 
-> **Importante:** Somente domínios verificados podem ser atualizados.
+> **Importante:** Somente os domínios verificados podem ser atualizados.
 
 ## <a name="permissions"></a>Permissões
 
@@ -45,11 +45,11 @@ PATCH /domains/{id}
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, forneça os valores para os campos relevantes que serão atualizados. As propriedades existentes que não estão incluídas no corpo da solicitação terão seus valores anteriores mantidos ou serão recalculadas com base nas alterações em outros valores de propriedade. Para obter melhor desempenho, somente inclua valores alterados.
+No corpo da solicitação, forneça os valores de campos relevantes a serem atualizados. As propriedades existentes não incluídas no corpo da solicitação manterão seus valores anteriores ou serão recalculadas com base nas alterações feitas em outros valores de propriedade. Para obter o melhor desempenho, inclua somente valores alterados.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o código de resposta `204 No Content` e nenhum corpo de resposta.
+Se tiver êxito, este método retornará `204 No Content` um código de resposta e nenhum corpo de resposta.
 
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação

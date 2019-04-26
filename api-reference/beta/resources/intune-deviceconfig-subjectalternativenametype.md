@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: ea055171fade56361562aeac065a67b23154e207
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31792507"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548667"
 ---
 # <a name="subjectalternativenametype-enum-type"></a>tipo de enumeração subjectAlternativeNameType
 
@@ -22,11 +22,11 @@ Opções de nome alternativo de entidade.
 ## <a name="members"></a>Membros
 |Membro|Valor|Descrição|
 |:---|:---|:---|
-|nenhuma|,0|Nenhum nome alternativo de entidade.|
-|emailAddress|1|Endereço de email.|
-|userPrincipalName|duas|Nome principal do usuário (UPN).|
-|customAzureADAttribute|quatro|Atributo personalizado do Azure AD.|
-|domainNameService|8|DNS (serviço de nomes de domínio).|
+|Nenhuma|,0|Nenhum nome alternativo de entidade.|
+|emailAddress|1 |Endereço de email.|
+|userPrincipalName|2 |Nome principal do usuário (UPN).|
+|customAzureADAttribute|4 |Atributo personalizado do Azure AD.|
+|domainNameService|8 |DNS (serviço de nomes de domínio).|
 
 
 

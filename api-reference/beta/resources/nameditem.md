@@ -3,11 +3,11 @@ title: Tipo de recurso NamedItem
 description: Representa um nome definido para um intervalo de células ou um valor. Os nomes podem ser objetos nomeados primitivos (conforme exibido no tipo abaixo), objetos de intervalo ou uma referência a um intervalo. Use esse objeto para obter um objeto de intervalo associado aos nomes.
 localization_priority: Normal
 ms.openlocfilehash: 5dd093976b2c09ae93c608144c8d6c2b7d7161c2
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29649360"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581496"
 ---
 # <a name="nameditem-resource-type"></a>Tipo de recurso NamedItem
 
@@ -29,7 +29,7 @@ Representa um nome definido para um intervalo de células ou um valor. Os nomes 
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |name|string|O nome do objeto. Somente leitura.|
-|comment|string|Representa o comentário associado a esse nome.|
+|comment|cadeia de caracteres|Representa o comentário associado a esse nome.|
 |scope|string|Indica se o nome tem escopo para a pasta de trabalho ou uma planilha específica. Somente leitura.|
 |type|string|Indica o tipo de referência associado ao nome. Os valores possíveis são: `String`, `Integer`, `Double`, `Boolean` e `Range`. Somente leitura.|
 |value|string|Representa a fórmula à qual o nome está definido para fazer referência. Por exemplo, =Plan14!$B$2:$H$12, =4,75, etc. Somente leitura.|

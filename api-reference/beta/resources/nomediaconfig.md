@@ -1,21 +1,21 @@
 ---
-title: tipo de recurso de noMediaConfig
-description: Configuração de mídia para não indicando nenhuma mídia.
+title: tipo de recurso noMediaConfig
+description: Configuração de mídia para indicar nenhuma mídia.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 8d564493889cc367ecdb697ce4031c40a4cbbbef
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641313"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581610"
 ---
-# <a name="nomediaconfig-resource-type"></a>tipo de recurso de noMediaConfig
+# <a name="nomediaconfig-resource-type"></a>tipo de recurso noMediaConfig
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Configuração de mídia para não indicando nenhuma mídia.
+Configuração de mídia para indicar nenhuma mídia.
 
 ## <a name="properties"></a>Propriedades
 

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 026a69dc7697a0b779d72dfcab1695cf8c219d83
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30264327"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550557"
 ---
 # <a name="windowsinformationprotectionproxieddomaincollection-resource-type"></a>Tipo de recurso windowsInformationProtectionProxiedDomainCollection
 
@@ -20,7 +20,7 @@ Coleção de domínios como proxy da Proteção de Informações do Windows
 ## <a name="properties"></a>Propriedades
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
-|displayName|Cadeia de caracteres|Nome de exibição|
+|displayName|String|Nome de exibição|
 |proxiedDomains|Coleção [proxiedDomain](../resources/intune-mam-proxieddomain.md)|Coleção de domínios com proxy|
 
 ## <a name="relationships"></a>Relações

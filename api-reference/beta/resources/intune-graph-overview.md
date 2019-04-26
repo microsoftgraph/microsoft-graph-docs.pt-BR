@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Priority
 ms.prod: intune
 ms.openlocfilehash: fc254772a5b4db131a5cda45fc83b336bf12f993
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30167442"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575958"
 ---
 # <a name="working-with-intune-in-microsoft-graph"></a>Trabalhando com o Intune no Microsoft Graph  
 

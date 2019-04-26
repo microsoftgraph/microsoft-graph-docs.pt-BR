@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 213915889ad575af61fcdda7ee7306c0b38370c5
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31781362"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32552265"
 ---
 # <a name="enterprisecodesigningcertificate-resource-type"></a>tipo de recurso enterpriseCodeSigningCertificate
 
@@ -32,17 +32,17 @@ Ainda não documentado
 |Propriedade|Tipo|Descrição|
 |:---|:---|:---|
 |id|String|A chave da entidade.|
-|conteúdo|Binary|O certificado de assinatura de código do Windows Enterprise no formato de dados brutos.|
+|conteúdo|Binário|O certificado de assinatura de código do Windows Enterprise no formato de dados brutos.|
 |status|[certificateStatus](../resources/intune-apps-certificatestatus.md)|O status do certificado provisionado ou não foi provisionado. Os valores possíveis são: `notProvisioned` e `provisioned`.|
-|SubjectName|Cadeia de caracteres|O nome da entidade do certificado.|
-|Assunto|String|O valor de entidade para o certificado.|
-|issuerName|Cadeia de caracteres|O nome do emissor do certificado.|
-|emissor|Cadeia de caracteres|O valor do emissor para o certificado.|
+|SubjectName|String|O nome da entidade do certificado.|
+|subject|String|O valor de entidade para o certificado.|
+|issuerName|String|O nome do emissor do certificado.|
+|emissor|String|O valor do emissor para o certificado.|
 |expirationDateTime|DateTimeOffset|A data de expiração do certificado.|
 |uploadDateTime|DateTimeOffset|A data/hora do certificado de codeSignação quando é carregado.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso.

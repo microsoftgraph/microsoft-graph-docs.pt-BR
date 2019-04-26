@@ -1,19 +1,19 @@
 ---
 title: Atualizar alerta
-description: Atualize uma propriedade editável **alerta** dentro de qualquer solução integrada para manter o status de alerta e atribuições em sincronia nas soluções. Esse método atualiza qualquer solução que tem um registro de alerta referenciado ID.
+description: Atualize uma propriedade de **alerta** editável em qualquer solução integrada para manter o status e as atribuições de alerta em sincronia entre soluções. Este método atualiza qualquer solução que tenha um registro da ID de alerta referenciada.
 localization_priority: Normal
 author: preetikr
 ms.prod: security
 ms.openlocfilehash: 42bc945dde726466439802350796d628ee438e22
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29967316"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32551503"
 ---
 # <a name="update-alert"></a>Atualizar alerta
 
-Atualize uma propriedade editável **alerta** dentro de qualquer solução integrada para manter o status de alerta e atribuições em sincronia nas soluções. Esse método atualiza qualquer solução que tem um registro de alerta referenciado ID.
+Atualize uma propriedade de **alerta** editável em qualquer solução integrada para manter o status e as atribuições de alerta em sincronia entre soluções. Este método atualiza qualquer solução que tenha um registro da ID de alerta referenciada.
 
 ## <a name="permissions"></a>Permissões
 
@@ -27,7 +27,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 
 ## <a name="http-request"></a>Solicitação HTTP
 
-> **Observação:** Você deve incluir o ID de **alerta** como um parâmetro e vendorInformation contendo o `provider` e `vendor` com este método.
+> **Observação:** Você deve incluir a ID do **alerta** como um parâmetro e vendorInformation contendo `provider` o `vendor` e com esse método.
 
 <!-- { "blockType": "ignored" } -->
 
@@ -40,31 +40,31 @@ PATCH /security/alerts/{alert_id}
 | Nome          | Descrição              |
 |:--------------|:-------------------------|
 | Autorização | Portador {código}. Obrigatório. |
-| Preferir        | retornar = representação    |
+| Preferir        | Return = representação    |
 
 ## <a name="request-body"></a>Corpo da solicitação
 
-No corpo da solicitação, fornece uma representação JSON dos valores para os campos relevantes que devem ser atualizados. O corpo **deve** conter o `vendorInformation` propriedade com válido `provider` e `vendor` campos. A tabela a seguir lista os campos que podem ser atualizados para um alerta. Os valores para propriedades existentes que não estão incluídos no corpo da solicitação não serão alterado. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
+No corpo da solicitação, forneça uma representação JSON dos valores de campos relevantes que devem ser atualizados. O corpo **deve** conter a `vendorInformation` Propriedade com os `provider` campos `vendor` válidos e. A tabela a seguir lista os campos que podem ser atualizados para um alerta. Os valores das propriedades existentes que não estão incluídas no corpo da solicitação não serão alterados. Para alcançar o melhor desempenho, não inclua valores existentes que não foram alterados.
 
 | Propriedade          | Tipo                                                                   | Descrição |
 |:------------------|:-----------------------------------------------------------------------|:--|
-| assignedTo        | String                                                                 | Nome do analista de alerta é atribuída a triagem, investigação ou correção. |
+| assignedTo        | String                                                                 | Nome do analista ao qual o alerta é atribuído para a triagem, investigação ou correção. |
 | closedDateTime    | DateTimeOffset                                                         | Tempo em que o alerta foi fechado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. |
-| comentários          | String collection                                                      | Comentários de analistas no alerta (para gerenciamento de alerta do cliente). |
+| comentários          | Coleção de cadeias de caracteres                                                      | Comentários de analista sobre o alerta (para o gerenciamento de alerta do cliente). |
 | comentários          | alertFeedback                                                          | Comentários do analista no alerta. Os valores possíveis são: `unknown`, `truePositive`, `falsePositive`, `benignPositive`. |
 | status            | alertStatus                                                            | Status do ciclo de vida de alerta (estágio). Os valores possíveis são: `unknown`, `newAlert`, `inProgress`, `resolved`. |
-| marcações              | String collection                                                      | Rótulos podem ser definidos pelo usuário que podem ser aplicados a um alerta e podem servir como condições de filtro (por exemplo, "HVA", "SERRA). |
-| vendorInformation | [securityVendorInformation](../resources/securityvendorinformation.md) | Tipo complexo que contém detalhes sobre o fornecedor, provedor e subprovedor de produtos / serviços de segurança (por exemplo, fornecedor = Microsoft; provedor = Windows Defender ATP; subProvedor = AppLocker). **Campos de provedor e fornecedor são necessários.** |
+| tags              | String collection                                                      | Rótulos definíveis pelo usuário que podem ser aplicados a um alerta e podem servir como condições de filtro (por exemplo, "HVA", "vimos). |
+| vendorInformation | [securityVendorInformation](../resources/securityvendorinformation.md) | Tipo complexo que contém detalhes sobre o fornecedor, provedor e subprovedor de produtos / serviços de segurança (por exemplo, fornecedor = Microsoft; provedor = Windows Defender ATP; subProvedor = AppLocker). **Os campos Provider e Vendor são necessários.** |
 
 ## <a name="response"></a>Resposta
 
 Se tiver êxito, este método retornará um código de resposta `204 No Content`.
 
-Se o cabeçalho de solicitação opcional for usado, o método retornará um `200 OK` código de resposta e o objeto atualizado [alerta](../resources/alert.md) no corpo da resposta.
+Se o cabeçalho de solicitação opcional for usado, o método retornará `200 OK` um código de resposta e o objeto [Alert](../resources/alert.md) atualizado no corpo da resposta.
 
 ## <a name="examples"></a>Exemplos
 
-### <a name="example-1-request-without-prefer-header"></a>Exemplo 1: Solicitação sem cabeçalho Prefer
+### <a name="example-1-request-without-prefer-header"></a>Exemplo 1: solicitação sem cabeçalho de preferência
 
 #### <a name="request"></a>Solicitação
 
@@ -112,11 +112,11 @@ Veja a seguir o exemplo de uma resposta bem-sucedida.
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-request-with-prefer-header"></a>Exemplo 2: Solicitação com Prefer cabeçalho
+### <a name="example-2-request-with-prefer-header"></a>Exemplo 2: solicitação com cabeçalho preferencial
 
 #### <a name="request"></a>Solicitação
 
-O exemplo a seguir mostra uma solicitação que inclui o `Prefer` cabeçalho de solicitação.
+O exemplo a seguir mostra uma solicitação que inclui `Prefer` o cabeçalho da solicitação.
 
 <!-- {
   "blockType": "request",
@@ -148,7 +148,7 @@ Prefer: return=representation
 
 #### <a name="response"></a>Resposta
 
-A seguir está um exemplo da resposta quando o opcional `Prefer: return=representation` cabeçalho de solicitação é usado.
+Veja a seguir um exemplo da resposta quando o cabeçalho de `Prefer: return=representation` solicitação opcional é usado.
 
 > **Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.
 

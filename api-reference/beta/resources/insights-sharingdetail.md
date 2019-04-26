@@ -1,21 +1,21 @@
 ---
-title: tipo de recurso de sharingDetail
-description: 'Tipo complexo que contém as propriedades de itens compartilhados. '
+title: tipo de recurso sharingDetail
+description: 'Tipo complexo contendo propriedades de itens compartilhados. '
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
 ms.openlocfilehash: 3fff669b2b337e9566cd41a7cd5eb5ab73a84944
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643346"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32551558"
 ---
-# <a name="sharingdetail-resource-type"></a>tipo de recurso de sharingDetail
+# <a name="sharingdetail-resource-type"></a>tipo de recurso sharingDetail
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Tipo complexo que contém as propriedades de itens [compartilhados](insights-shared.md) . 
+Tipo complexo contendo propriedades de itens [compartilhados](insights-shared.md) . 
 
 ## <a name="json-representation"></a>Representação JSON
 Veja a seguir uma representação JSON do recurso
@@ -34,10 +34,10 @@ Veja a seguir uma representação JSON do recurso
 
 | Propriedade              | Tipo          | Descrição  |
 | -------------         |-----------    | -------------|
-| sharedDateTime        | DateTimeOffset| A data e hora que o arquivo foi última compartilhado. O carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `2014-01-01T00:00:00Z`. Somente leitura.  |
-| sharingSubject        | String          | O assunto com a qual o documento foi compartilhado. |
-| sharingType             | String        | Determina a maneira como o documento foi compartilhada, pode ser um "Link", por "Anexo", "Grupo", "Site".     |
-| sharedBy                | [insightIdentity](insights-insightidentity.md)      | O usuário que compartilhado do documento.  |
+| sharedDateTime        | DateTimeOffset| A data e a hora em que o arquivo foi compartilhado pela última vez. O carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `2014-01-01T00:00:00Z`. Somente leitura.  |
+| sharingSubject        | String          | O assunto com o qual o documento foi compartilhado. |
+| sharingtype             | String        | Determina o modo como o documento foi compartilhado, pode ser um "link", "anexo", "grupo", "site".     |
+| sharedBy                | [insightIdentity](insights-insightidentity.md)      | O usuário que compartilhou o documento.  |
 | sharingReference        | [resourceReference](insights-resourcereference.md)      |  |
 <!--
 {

@@ -6,11 +6,11 @@ title: Upload de arquivos retomável
 localization_priority: Priority
 ms.prod: sharepoint
 ms.openlocfilehash: 6c430d0887736aed62053bf38541147229071a8b
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482235"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548247"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>Carregar arquivos grandes com uma sessão de upload
 

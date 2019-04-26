@@ -1,26 +1,26 @@
 ---
-title: tipo de recurso de signInLocation
-description: Fornece a cidade, estado e país/região de onde a entrar aconteceu.
+title: tipo de recurso signInLocation
+description: Fornece a cidade, o estado e o país/região de onde a entrada ocorreu.
 localization_priority: Normal
 ms.openlocfilehash: 49d6dfb07c635ac3754b3e873d75911a43593a73
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27839134"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32551761"
 ---
-# <a name="signinlocation-resource-type"></a>tipo de recurso de signInLocation
-Fornece a cidade, estado e país/região de onde a entrar aconteceu.
+# <a name="signinlocation-resource-type"></a>tipo de recurso signInLocation
+Fornece a cidade, o estado e o país/região de onde a entrada ocorreu.
 
 
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|city|Cadeia de caracteres|Fornece a cidade onde o sign-in se originou. Isso é calculado usando informações de latitude/longitude da atividade de entrada.|
-|countryOrRegion|Cadeia de caracteres|Fornece as informações de código de país (código de carta 2) onde o sign-in se originou.  Isso é calculado usando informações de latitude/longitude da atividade de entrada.|
-|geoCoordinates|[geoCoordinates](geocoordinates.md)|Fornece o latitude, longitude e altitude onde a entrar se originou.|
-|estado|Cadeia de caracteres|Fornece o estado em que a entrada se originou. Isso é calculado usando informações de latitude/longitude da atividade de entrada.|
+|city|String|Fornece a cidade onde a entrada se originou. Isso é calculado usando informações de latitude/longitude da atividade de entrada.|
+|countryOrRegion|String|Fornece as informações do código do país (código de 2 letras) em que a entrada se originou.  Isso é calculado usando informações de latitude/longitude da atividade de entrada.|
+|geoCoordinates|[geoCoordinates](geocoordinates.md)|Fornece a latitude, longitude e altitude onde a entrada se originou.|
+|state|String|Fornece o estado em que a entrada se originou. Isso é calculado usando informações de latitude/longitude da atividade de entrada.|
 
 ## <a name="json-representation"></a>Representação JSON
 

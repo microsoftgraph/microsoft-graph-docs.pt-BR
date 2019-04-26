@@ -5,11 +5,11 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: f6ff72ab99d20eba9880630248e4b61fca5c2521
-ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "30057012"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32554055"
 ---
 # <a name="teamsappinstallation-resource-type"></a>tipo de recurso teamsAppInstallation
 
@@ -32,7 +32,7 @@ Um [teamsApp](teamsapp.md) instalado em uma [equipe](team.md). Qualquer bots que
 |:------------------- |:-------- |:----------- |
 | id                  | string   | Uma ID exclusiva (não a AppID do Teams). |
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 
 | Relação   | Tipo    | Descrição |
 |:---------------|:--------|:----------|

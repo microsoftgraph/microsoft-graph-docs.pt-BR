@@ -1,23 +1,23 @@
 ---
-title: Get page
-description: Recupere as propriedades e os relacionamentos de um objeto page.
+title: Obter página
+description: Recupere as propriedades e os relacionamentos de um objeto Page.
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 ms.openlocfilehash: 963aeeec95b9c57dbb0a024aeca2afdfba16a9d2
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27979296"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556431"
 ---
-# <a name="get-page"></a>Get page
+# <a name="get-page"></a>Obter página
 
-Recupere as propriedades e os relacionamentos de um objeto [page](../resources/page.md).
+Recupere as propriedades e os relacionamentos de um objeto [Page](../resources/page.md) .
 
 **Obtendo informações da página**
 
-Acesse os metadados de uma página pelo identificador da página:
+Acessar os metadados de uma página por identificador de página:
 
 ```
 GET /me/onenote/pages/{id}
@@ -25,22 +25,22 @@ GET /me/onenote/pages/{id}
 
 **Obtendo o conteúdo da página**
 
-Você pode usar o ponto de extremidade `content` da página para obter o conteúdo HTML de uma página:
+Você pode usar o ponto de `content` extremidade da página para obter o conteúdo HTML de uma página:
 
 ```
 GET /me/onenote/pages/{id}/content[?includeIDs=true]
 GET /me/onenote/pages/{id}/$value[?includeIDs=true]
 ```
 
-A opção de consulta `includeIDs=true` é usada para [atualizar páginas](../api/page-update.md).
+A `includeIDs=true` opção de consulta é usada para [Atualizar páginas](../api/page-update.md).
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
 |Tipo de permissão      | Permissões (da com menos para a com mais privilégios)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante) | Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All    |
-|Delegado (conta pessoal da Microsoft) | Notes.Read, Notes.ReadWrite    |
+|Delegado (conta corporativa ou de estudante) | Notes. Read, Notes. ReadWrite, Notes. Read. All, Notes. ReadWrite. All    |
+|Delegado (conta pessoal da Microsoft) | Notes. Read, Notes. ReadWrite    |
 |Aplicativo | Notes.Read.All, Notes.ReadWrite.All |
 
 ## <a name="http-request"></a>Solicitação HTTP
@@ -52,9 +52,9 @@ GET /groups/{id}/onenote/pages/{id}
 GET /sites/{id}/onenote/pages/{id}
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
-Este método dá suporte a `select` e `expand` [Parâmetros de Consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
+Este método oferece suporte `select` aos `expand` [parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
 
-A resposta padrão expande `parentSection` e escolhe as propriedades `id`, `name` e `self` da seção. Os valores `expand` válidos das páginas são `parentNotebook` e `parentSection`.
+A resposta padrão expande `parentSection` e seleciona as propriedades `id`, `name`e e. `self` Os `expand` valores válidos para páginas `parentNotebook` são `parentSection`e.
 
 ## <a name="request-headers"></a>Cabeçalhos de solicitação
 | Nome       | Tipo | Descrição|
@@ -67,7 +67,7 @@ Não forneça um corpo de solicitação para esse método.
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna o código de resposta `200 OK` e o objeto [page](../resources/page.md) no corpo da resposta.
+Se tiver êxito, este método retornará `200 OK` um código de resposta e o objeto [Page](../resources/page.md) no corpo da resposta.
 ## <a name="example"></a>Exemplo
 ##### <a name="request"></a>Solicitação
 Este é um exemplo da solicitação.
@@ -76,7 +76,7 @@ Este é um exemplo da solicitação.
 GET https://graph.microsoft.com/v1.0/me/onenote/pages/{id}
 ```
 ##### <a name="response"></a>Resposta
-Veja a seguir um exemplo da resposta. Observação: No objeto response mostrado aqui é truncado para fins de concisão. Todas as propriedades serão retornadas de uma chamada real.
+Veja a seguir um exemplo da resposta. Observação: o objeto Response mostrado aqui é truncado por brevidade. Todas as propriedades serão retornadas de uma chamada real.
  <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK

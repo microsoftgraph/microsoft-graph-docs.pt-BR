@@ -1,19 +1,19 @@
 ---
-title: tipo de recurso de impossibleTravelRiskEvent
-description: Um evento de risco detectado pelo Windows Azure Active Directory identidade proteção onde duas entradas do conta ocorrem de locais atípicos para o usuário e seria impossível viajam entre os locais em que a duração entre as informações completas de sign-ins. sobre eventos de risco podem ser encontrados na documentação de proteção de identidade do Windows Azure AD.
+title: tipo de recurso impossibleTravelRiskEvent
+description: Um evento de risco detectado pela proteção de identidade do Azure Active Directory onde dois logons de conta ocorrem de locais atypical para o usuário e não seria possível viajar entre os locais na duração entre os logons. complete information about eventos de risco podem ser encontrados na documentação de proteção de identidade do Azure AD.
 localization_priority: Normal
 ms.openlocfilehash: 517a09963570ce2c4a9e58edf7b73babaaff0426
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529380"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548324"
 ---
-# <a name="impossibletravelriskevent-resource-type"></a>tipo de recurso de impossibleTravelRiskEvent
+# <a name="impossibletravelriskevent-resource-type"></a>tipo de recurso impossibleTravelRiskEvent
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Um evento de risco detectado pelo [Proteção de identidade do Windows Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/) na qual duas entradas do conta ocorrem de locais atípicos para o usuário e seria impossível viajam entre os locais na duração entre concluir sign-ins. informações sobre eventos de risco podem ser encontradas na [documentação de proteção de identidade do Windows Azure AD](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection-risk-events-types/).
+Um evento de risco detectado pela [proteção de identidade do Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/) onde dois logons de conta ocorrem a partir de locais atypical para o usuário e seria impossível viajar entre os locais na duração entre os logins. Complete as informações sobre eventos de risco podem ser encontradas na [documentação de proteção de identidade do Azure ad](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection-risk-events-types/).
 
 
 ## <a name="methods"></a>Métodos
@@ -25,29 +25,29 @@ Um evento de risco detectado pelo [Proteção de identidade do Windows Azure Act
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|closedDateTime|dateTimeOffset| A data e hora em que o evento de risco foi fechado|
-|createdDateTime|dateTimeOffset| A data e hora em que o evento de risco foi criado. Sempre é maior ou igual ao datetime do evento risco em si. Esta é a propriedade correta a ser usado como um filtro ao consultar eventos de risco.|
+|closedDateTime|dateTimeOffset| A data e a hora em que o evento de risco foi fechado|
+|createdDateTime|dateTimeOffset| A data e a hora em que o evento de risco foi criado. Isso é sempre maior que ou igual ao DateTime do evento de risco propriamente dito. Esta é a propriedade correta a ser usada como filtro ao consultar eventos de risco.|
 |deviceInformation|string| Informações sobre o dispositivo|
 |id|string| Somente leitura|
-|ipAddress|string| O endereço IP do segundo sign-in|
-|isAtypicalLocation|booliano| Se um dos locais for atípico para o usuário|
-|location|string| O local anexado ao endereço IP do segundo sign-in|
-|previousIPAddress|string| O endereço IP do primeiro sign-in|
-|previousLocation|string| O local anexado ao endereço IP do primeiro sign-in|
-|previousSigninDateTime|dateTimeOffset| A data e hora do primeiro sign-in|
-|riskEventDateTime|dateTimeOffset| A data e hora do segundo sign-in|
+|ipAddress|string| O endereço IP da segunda entrada|
+|isAtypicalLocation|booliano| Se um dos locais for atypical para o usuário|
+|location|cadeia de caracteres| O local anexado ao endereço IP da segunda entrada|
+|previousIPAddress|string| O endereço IP do primeiro logon|
+|previousLocation|string| O local anexado ao endereço IP do primeiro logon|
+|previousSigninDateTime|dateTimeOffset| A data e a hora da primeira entrada|
+|riskEventDateTime|dateTimeOffset| A data e a hora da segunda entrada|
 |riskEventStatus|string| Os valores possíveis são: `active`, `remediated`, `dismissedAsFixed`, `dismissedAsFalsePositive`, `dismissedAsIgnore`, `loginBlocked`, `closedMfaAuto`, `closedMultipleReasons`.|
-|riskLevel|string| Os valores possíveis são: `low`, `medium`, `high`.|
+|riskLevel|cadeia de caracteres| Os valores possíveis são: `low`, `medium`, `high`.|
 |riskEventType|string| O tipo de risco|
-|UserAgent|string| Cadeia de caracteres de agente de usuário do navegador|
+|userAgent|string| A cadeia de caracteres do agente do usuário do navegador|
 |userDisplayName|string| O nome do usuário em risco|
 |userId|string| A identificação do usuário em risco|
-|userPrincipalName|string| O nome de usuário principal do usuário em risco|
+|userPrincipalName|string| O nome principal de usuário do usuário em risco|
 
-## <a name="relationships"></a>Relacionamento
+## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|impactedUser|[user](user.md)| Somente leitura. Anulável.|
+|impactedUser|[Usuário](user.md)| Somente leitura. Anulável.|
 
 ## <a name="json-representation"></a>Representação JSON
 
