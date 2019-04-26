@@ -5,29 +5,29 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: d6c58ae88e2b5cf9a6787529868f8cf9e42879be
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30257348"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32576955"
 ---
-# <a name="geteffectivepermissions-function"></a><span data-ttu-id="3b51b-103">Função getEffectivePermissions</span><span class="sxs-lookup"><span data-stu-id="3b51b-103">getEffectivePermissions function</span></span>
+# <a name="geteffectivepermissions-function"></a><span data-ttu-id="6f098-103">Função getEffectivePermissions</span><span class="sxs-lookup"><span data-stu-id="6f098-103">getEffectivePermissions function</span></span>
 
-> <span data-ttu-id="3b51b-104">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="3b51b-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="6f098-104">**Observação:** A API do Microsoft Graph para Intune requer uma [licença do Active Intune](https://go.microsoft.com/fwlink/?linkid=839381) para o locatário.</span><span class="sxs-lookup"><span data-stu-id="6f098-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="3b51b-105">Recupera permissões efetivas de usuário autenticado no momento</span><span class="sxs-lookup"><span data-stu-id="3b51b-105">Retrieves the effective permissions of the currently authenticated user</span></span>
+<span data-ttu-id="6f098-105">Recupera permissões efetivas de usuário autenticado no momento</span><span class="sxs-lookup"><span data-stu-id="6f098-105">Retrieves the effective permissions of the currently authenticated user</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="3b51b-106">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="3b51b-106">Prerequisites</span></span>
-<span data-ttu-id="3b51b-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3b51b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="6f098-106">Pré-requisitos</span><span class="sxs-lookup"><span data-stu-id="6f098-106">Prerequisites</span></span>
+<span data-ttu-id="6f098-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6f098-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="3b51b-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="3b51b-109">Permission type</span></span>|<span data-ttu-id="3b51b-110">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="3b51b-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="6f098-109">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="6f098-109">Permission type</span></span>|<span data-ttu-id="6f098-110">Permissões (de privilégios máximos a mínimos)</span><span class="sxs-lookup"><span data-stu-id="6f098-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="3b51b-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="3b51b-111">Delegated (work or school account)</span></span>||
-| <span data-ttu-id="3b51b-112">&nbsp;&nbsp; Controle de acesso baseado em função</span><span class="sxs-lookup"><span data-stu-id="3b51b-112">&nbsp; &nbsp; Role-based access control</span></span> | <span data-ttu-id="3b51b-113">DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All</span><span class="sxs-lookup"><span data-stu-id="3b51b-113">DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All</span></span>|
-|<span data-ttu-id="3b51b-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="3b51b-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="3b51b-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="3b51b-115">Not supported.</span></span>|
-|<span data-ttu-id="3b51b-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="3b51b-116">Application</span></span>|<span data-ttu-id="3b51b-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="3b51b-117">Not supported.</span></span>|
+|<span data-ttu-id="6f098-111">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="6f098-111">Delegated (work or school account)</span></span>||
+| <span data-ttu-id="6f098-112">&nbsp;&nbsp; Controle de acesso baseado em função</span><span class="sxs-lookup"><span data-stu-id="6f098-112">&nbsp; &nbsp; Role-based access control</span></span> | <span data-ttu-id="6f098-113">DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All</span><span class="sxs-lookup"><span data-stu-id="6f098-113">DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All</span></span>|
+|<span data-ttu-id="6f098-114">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="6f098-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="6f098-115">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="6f098-115">Not supported.</span></span>|
+|<span data-ttu-id="6f098-116">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="6f098-116">Application</span></span>|<span data-ttu-id="6f098-117">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="6f098-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="3b51b-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="3b51b-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6f098-118">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="6f098-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -36,33 +36,33 @@ ms.locfileid: "30257348"
 GET /deviceManagement/getEffectivePermissions
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="3b51b-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="3b51b-119">Request headers</span></span>
-|<span data-ttu-id="3b51b-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="3b51b-120">Header</span></span>|<span data-ttu-id="3b51b-121">Valor</span><span class="sxs-lookup"><span data-stu-id="3b51b-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="6f098-119">Cabeçalhos de solicitação</span><span class="sxs-lookup"><span data-stu-id="6f098-119">Request headers</span></span>
+|<span data-ttu-id="6f098-120">Cabeçalho</span><span class="sxs-lookup"><span data-stu-id="6f098-120">Header</span></span>|<span data-ttu-id="6f098-121">Valor</span><span class="sxs-lookup"><span data-stu-id="6f098-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="3b51b-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="3b51b-122">Authorization</span></span>|<span data-ttu-id="3b51b-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="3b51b-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="3b51b-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="3b51b-124">Accept</span></span>|<span data-ttu-id="3b51b-125">application/json</span><span class="sxs-lookup"><span data-stu-id="3b51b-125">application/json</span></span>|
+|<span data-ttu-id="6f098-122">Autorização</span><span class="sxs-lookup"><span data-stu-id="6f098-122">Authorization</span></span>|<span data-ttu-id="6f098-123">&lt;Token&gt; de portador obrigatório.</span><span class="sxs-lookup"><span data-stu-id="6f098-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="6f098-124">Aceitar</span><span class="sxs-lookup"><span data-stu-id="6f098-124">Accept</span></span>|<span data-ttu-id="6f098-125">application/json</span><span class="sxs-lookup"><span data-stu-id="6f098-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="3b51b-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="3b51b-126">Request body</span></span>
-<span data-ttu-id="3b51b-127">Na URL da solicitação, forneça os seguintes parâmetros de consulta com valores.</span><span class="sxs-lookup"><span data-stu-id="3b51b-127">In the request URL, provide the following query parameters with values.</span></span>
-<span data-ttu-id="3b51b-128">A tabela a seguir mostra os parâmetros que podem ser usados com esta função.</span><span class="sxs-lookup"><span data-stu-id="3b51b-128">The following table shows the parameters that can be used with this function.</span></span>
+## <a name="request-body"></a><span data-ttu-id="6f098-126">Corpo da solicitação</span><span class="sxs-lookup"><span data-stu-id="6f098-126">Request body</span></span>
+<span data-ttu-id="6f098-127">Na URL da solicitação, forneça os seguintes parâmetros de consulta com valores.</span><span class="sxs-lookup"><span data-stu-id="6f098-127">In the request URL, provide the following query parameters with values.</span></span>
+<span data-ttu-id="6f098-128">A tabela a seguir mostra os parâmetros que podem ser usados com esta função.</span><span class="sxs-lookup"><span data-stu-id="6f098-128">The following table shows the parameters that can be used with this function.</span></span>
 
-|<span data-ttu-id="3b51b-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="3b51b-129">Property</span></span>|<span data-ttu-id="3b51b-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="3b51b-130">Type</span></span>|<span data-ttu-id="3b51b-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="3b51b-131">Description</span></span>|
+|<span data-ttu-id="6f098-129">Propriedade</span><span class="sxs-lookup"><span data-stu-id="6f098-129">Property</span></span>|<span data-ttu-id="6f098-130">Tipo</span><span class="sxs-lookup"><span data-stu-id="6f098-130">Type</span></span>|<span data-ttu-id="6f098-131">Descrição</span><span class="sxs-lookup"><span data-stu-id="6f098-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="3b51b-132">scope</span><span class="sxs-lookup"><span data-stu-id="3b51b-132">scope</span></span>|<span data-ttu-id="3b51b-133">String</span><span class="sxs-lookup"><span data-stu-id="3b51b-133">String</span></span>|<span data-ttu-id="3b51b-134">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="3b51b-134">Not yet documented</span></span>|
+|<span data-ttu-id="6f098-132">scope</span><span class="sxs-lookup"><span data-stu-id="6f098-132">scope</span></span>|<span data-ttu-id="6f098-133">String</span><span class="sxs-lookup"><span data-stu-id="6f098-133">String</span></span>|<span data-ttu-id="6f098-134">Ainda não documentado</span><span class="sxs-lookup"><span data-stu-id="6f098-134">Not yet documented</span></span>|
 
 
-## <a name="response"></a><span data-ttu-id="3b51b-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="3b51b-135">Response</span></span>
-<span data-ttu-id="3b51b-136">Se tiver êxito, essa função retornará um código de resposta `200 OK` e uma coleção [rolePermission](../resources/intune-rbac-rolepermission.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="3b51b-136">If successful, this function returns a `200 OK` response code and a [rolePermission](../resources/intune-rbac-rolepermission.md) collection in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="6f098-135">Resposta</span><span class="sxs-lookup"><span data-stu-id="6f098-135">Response</span></span>
+<span data-ttu-id="6f098-136">Se tiver êxito, essa função retornará um código de resposta `200 OK` e uma coleção [rolePermission](../resources/intune-rbac-rolepermission.md) no corpo da resposta.</span><span class="sxs-lookup"><span data-stu-id="6f098-136">If successful, this function returns a `200 OK` response code and a [rolePermission](../resources/intune-rbac-rolepermission.md) collection in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="3b51b-137">Exemplo</span><span class="sxs-lookup"><span data-stu-id="3b51b-137">Example</span></span>
-### <a name="request"></a><span data-ttu-id="3b51b-138">Solicitação</span><span class="sxs-lookup"><span data-stu-id="3b51b-138">Request</span></span>
-<span data-ttu-id="3b51b-139">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="3b51b-139">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="6f098-137">Exemplo</span><span class="sxs-lookup"><span data-stu-id="6f098-137">Example</span></span>
+### <a name="request"></a><span data-ttu-id="6f098-138">Solicitação</span><span class="sxs-lookup"><span data-stu-id="6f098-138">Request</span></span>
+<span data-ttu-id="6f098-139">Este é um exemplo da solicitação.</span><span class="sxs-lookup"><span data-stu-id="6f098-139">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/v1.0/deviceManagement/getEffectivePermissions(scope='parameterValue')
 ```
 
-### <a name="response"></a><span data-ttu-id="3b51b-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="3b51b-140">Response</span></span>
-<span data-ttu-id="3b51b-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="3b51b-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="6f098-140">Resposta</span><span class="sxs-lookup"><span data-stu-id="6f098-140">Response</span></span>
+<span data-ttu-id="6f098-p103">Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="6f098-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
