@@ -5,27 +5,28 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 4074f77cc3954e87b8a20ed2aae5c00accd42d8c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27961838"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550326"
 ---
-# <a name="list-educationschools"></a><span data-ttu-id="1959b-103">Listar educationSchools</span><span class="sxs-lookup"><span data-stu-id="1959b-103">List educationSchools</span></span>
+# <a name="list-educationschools"></a><span data-ttu-id="9b0a4-103">Listar educationSchools</span><span class="sxs-lookup"><span data-stu-id="9b0a4-103">List educationSchools</span></span>
 
-<span data-ttu-id="1959b-104">Recupere uma lista de todos os objetos de escola.</span><span class="sxs-lookup"><span data-stu-id="1959b-104">Retrieve a list of all school objects.</span></span>
+<span data-ttu-id="9b0a4-104">Recupere uma lista de todos os objetos de escola.</span><span class="sxs-lookup"><span data-stu-id="9b0a4-104">Retrieve a list of all school objects.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="1959b-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="1959b-105">Permissions</span></span>
-<span data-ttu-id="1959b-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1959b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="9b0a4-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="9b0a4-105">Permissions</span></span>
+<span data-ttu-id="9b0a4-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9b0a4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1959b-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="1959b-108">Permission type</span></span>      | <span data-ttu-id="1959b-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="1959b-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="9b0a4-108">Tipo de permissão</span><span class="sxs-lookup"><span data-stu-id="9b0a4-108">Permission type</span></span>      | <span data-ttu-id="9b0a4-109">Permissões (da com menos para a com mais privilégios)</span><span class="sxs-lookup"><span data-stu-id="9b0a4-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1959b-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="1959b-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="1959b-111">EduRoster.ReadBasic</span><span class="sxs-lookup"><span data-stu-id="1959b-111">EduRoster.ReadBasic</span></span>  |
-|<span data-ttu-id="1959b-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="1959b-112">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="1959b-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="1959b-113">Not supported.</span></span>  |
-|<span data-ttu-id="1959b-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="1959b-114">Application</span></span> | <span data-ttu-id="1959b-115">EduRoster.Read.All, EduRoster.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1959b-115">EduRoster.Read.All, EduRoster.ReadWrite.All</span></span> | 
+|<span data-ttu-id="9b0a4-110">Delegado (conta corporativa ou de estudante)</span><span class="sxs-lookup"><span data-stu-id="9b0a4-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="9b0a4-111">EduRoster.ReadBasic</span><span class="sxs-lookup"><span data-stu-id="9b0a4-111">EduRoster.ReadBasic</span></span>  |
+|<span data-ttu-id="9b0a4-112">Delegado (conta pessoal da Microsoft)</span><span class="sxs-lookup"><span data-stu-id="9b0a4-112">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="9b0a4-113">Sem suporte.</span><span class="sxs-lookup"><span data-stu-id="9b0a4-113">Not supported.</span></span>  |
+|<span data-ttu-id="9b0a4-114">Aplicativo</span><span class="sxs-lookup"><span data-stu-id="9b0a4-114">Application</span></span> | <span data-ttu-id="9b0a4-115">EduRoster.Read.All, EduRoster.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9b0a4-115">EduRoster.Read.All, EduRoster.ReadWrite.All</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="1959b-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="1959b-116">HTTP request</span></span>
-<span data-ttu-id="1959b-117"><!-- { "blockType": "ignored" } -->' ' GET/educação/escolas de http</span><span class="sxs-lookup"><span data-stu-id="1959b-117"><!-- { "blockType": "ignored" } --> \`\`\`http GET /education/schools</span></span>
+## <a name="http-request"></a><span data-ttu-id="9b0a4-116">Solicitação HTTP</span><span class="sxs-lookup"><span data-stu-id="9b0a4-116">HTTP request</span></span>
+<!-- { "blockType": "ignored" } -->
+<span data-ttu-id="9b0a4-117">\`\`\`http GET /education/schools</span><span class="sxs-lookup"><span data-stu-id="9b0a4-117">\`\`\`http GET /education/schools</span></span>
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
@@ -49,10 +50,10 @@ The following is an example of the request.
 ```http
 GET https://graph.microsoft.com/v1.0/education/schools
 ```
-##### <a name="response"></a><span data-ttu-id="1959b-118">Resposta</span><span class="sxs-lookup"><span data-stu-id="1959b-118">Response</span></span>
-<span data-ttu-id="1959b-119">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="1959b-119">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="9b0a4-118">Resposta</span><span class="sxs-lookup"><span data-stu-id="9b0a4-118">Response</span></span>
+<span data-ttu-id="9b0a4-119">Este é um exemplo de resposta.</span><span class="sxs-lookup"><span data-stu-id="9b0a4-119">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="1959b-p102">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="1959b-p102">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="9b0a4-p102">**Observação:** o objeto response mostrado aqui pode ser encurtado para legibilidade. Todas as propriedades serão retornadas de uma chamada real.</span><span class="sxs-lookup"><span data-stu-id="9b0a4-p102">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
