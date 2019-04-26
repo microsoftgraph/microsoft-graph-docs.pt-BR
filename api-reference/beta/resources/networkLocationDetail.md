@@ -2,23 +2,23 @@
 title: tipo de recurso networkLocationDetail
 description: Indica detalhes associados ao local de rede. .
 localization_priority: Normal
-ms.openlocfilehash: bfa84591f543253ed794016bbc2d25d325cd0bcc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c4a5323099258d9670b970b1bb85bd0d01f3cf8d
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581440"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342174"
 ---
 # <a name="networklocationdetail-resource-type"></a>tipo de recurso networkLocationDetail
-Indica detalhes associados ao local de rede. .
+Indica detalhes associados ao local de rede.
 
 
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|NetworkType|String|Fornece o tipo da rede. Os valores possíveis `intranet`são `extranet`: `namedNetwork`,, `trusted`e.|
-|NetworkName|String|Nome da rede.|
+|NetworkType|NetworkType|Fornece o tipo da rede. Os valores possíveis são `intranet`: `extranet` `namedNetwork`,, e `trusted`.|
+|networknames|Coleção String|Nomes da rede.|
 
 
 ## <a name="json-representation"></a>Representação JSON
@@ -30,13 +30,13 @@ Veja a seguir uma representação JSON do recurso.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.deviceDetail"
+  "@odata.type": "microsoft.graph.networkLocationDetail"
 }-->
 
 ```json
 {
-  "networkTypes": "namedNetork",
-  "networkName": "String"
+  "networkType": "string",
+  "networkNames": ["String"]
 }
 
 ```
@@ -45,7 +45,7 @@ Veja a seguir uma representação JSON do recurso.
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "deviceDetail resource",
+  "description": "networkLocationDetail resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

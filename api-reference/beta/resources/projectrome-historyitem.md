@@ -3,12 +3,12 @@ title: tipo de recurso historyItem
 description: Representa um item de histórico de uma atividade em um aplicativo. As atividades do usuário representam um único destino dentro de seu aplicativo, por exemplo, um programa de TV, um documento ou uma campanha atual em um jogo de vídeo. Quando um usuário participa dessa atividade, o contrato é capturado como um item de histórico que indica a hora de início e término da atividade. À medida que o usuário se reencaixa com essa atividade ao longo do tempo, vários itens de histórico são registrados para uma única atividade do usuário.
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 640b2e777337182b95572ba086f1caf3459ef57e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c43a4f0515f8d61625e11abe8bbdbe2464c729f9
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563255"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344050"
 ---
 # <a name="historyitem-resource-type"></a>tipo de recurso historyItem
 
@@ -29,7 +29,7 @@ Quando um aplicativo cria uma sessão, um objeto **historyItem** deve ser adicio
 
 |Nome | Tipo | Descrição|
 |:----|:-----|:-----------|
-|status | EnumType | Definido pelo servidor. Um código de status usado para identificar objetos válidos. Valores: ativo, atualizado, excluído, ignorado.|
+|status | cadeia de caracteres | Definido pelo servidor. Um código de status usado para identificar objetos válidos. Valores: ativo, atualizado, excluído, ignorado.|
 |userTimezone | String | Opcional. O fuso horário em que o dispositivo do usuário usado para gerar a atividade estava localizado no momento da criação da atividade. Valores fornecidos como IDs de Olson para oferecer suporte à representação de plataforma cruzada.|
 |createdDateTime | DateTimeOffset | Definido pelo servidor. DateTime em UTC quando o objeto foi criado no servidor.|
 |lastModifiedDateTime | DateTimeOffset | Definido pelo servidor. DateTime em UTC quando o objeto foi modificado no servidor.|
@@ -56,6 +56,7 @@ Veja a seguir uma representação JSON do recurso.
     "lastActiveDateTime",
     "activeDurationSeconds"
   ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.historyItem"
 }-->
 
@@ -82,8 +83,6 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/projectrome-historyitem.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -4,12 +4,12 @@ description: Os indicadores de inteligência da ameaça (TI) representam dados u
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: fd86dc4da572c17e35afe939977b65ff99bd30be
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f85883394f7218a08f923b29304d2ad22432bb86
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32582847"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342010"
 ---
 # <a name="tiindicator-resource-type"></a>tipo de recurso tiIndicator
 
@@ -26,8 +26,8 @@ Os indicadores de ameaça carregados por meio do **tiIndicators** serão usados 
 | [Obter tiIndicator](../api/tiindicator-get.md) | [tiIndicator](tiindicator.md) | Leia as propriedades e os relacionamentos do objeto tiIndicator. |
 | [Criar tiIndicator](../api/tiindicators-post.md) | [tiIndicator](tiindicator.md) | Crie um novo tiIndicator postando na coleção tiIndicators. |
 | [Lista tiIndicators](../api/tiindicators-list.md) | coleção [tiIndicator](tiindicator.md) | Obtenha uma coleção de objetos tiIndicator. |
-| [Update](../api/tiindicator-update.md) | [tiIndicator](tiindicator.md) | Atualize o objeto tiIndicator. |
-| [Excluir](../api/tiindicator-delete.md) | Nenhum | Exclua o objeto tiIndicator. |
+| [Atualizar](../api/tiindicator-update.md) | [tiIndicator](tiindicator.md) | Atualize o objeto tiIndicator. |
+| [Delete](../api/tiindicator-delete.md) | Nenhum | Exclua o objeto tiIndicator. |
 |[deleteTiIndicators](../api/tiindicator-deletetiindicators.md)|Nenhum| Excluir vários objetos tiIndicator.|
 |[deleteTiIndicatorsByExternalId](../api/tiindicator-deletetiindicatorsbyexternalid.md)|Nenhum| Excluir vários objetos tiIndicator pela `externalId` propriedade.|
 |[submitTiIndicators](../api/tiindicator-submittiindicators.md)|coleção [tiIndicator](tiindicator.md)|Criar novo tiIndicators postando uma coleção tiIndicators.|
@@ -38,7 +38,7 @@ Os indicadores de ameaça carregados por meio do **tiIndicators** serão usados 
 | Propriedade     | Tipo        | Descrição |
 |:-------------|:------------|:------------|
 |ação|string| A ação a ser aplicada se o indicador for correspondido de dentro da ferramenta de segurança do targetProduct. Os valores possíveis são: `unknown`, `allow`, `block`, `alert`. **Obrigatório.**|
-|activityGroupNames|Coleção de cadeias de caracteres|O nome do Cyber Threat Intelligence (s) para as partes responsáveis pela atividade mal-intencionada coberta pelo indicador de ameaças.|
+|activityGroupNames|Coleção String|O nome do Cyber Threat Intelligence (s) para as partes responsáveis pela atividade mal-intencionada coberta pelo indicador de ameaças.|
 |additionalInformation|String|Uma área catchall na qual os dados extras do indicador não cobertos pelas outras propriedades de tiIndicator podem ser colocados. Os dados colocados no additionalInformation normalmente não serão utilizados pela ferramenta de segurança do targetProduct.|
 |azureTenantId|String| Marcado pelo sistema quando o indicador está ingerido. A ID de locatário do Azure Active Directory do cliente remetente. **Obrigatório.**|
 |confidence|Int32|Um inteiro representando a confiança dos dados dentro do indicador identifica precisamente o comportamento mal-intencionado. Os valores aceitáveis são 0 – 100 com 100 sendo os mais altos.|
@@ -48,14 +48,14 @@ Os indicadores de ameaça carregados por meio do **tiIndicators** serão usados 
 |externalId|Cadeia de caracteres| Um número de identificação que liga o indicador de volta para o sistema do provedor de indicadores (por exemplo, uma chave externa). |
 |id|Cadeia de caracteres|Criado pelo sistema quando o indicador é ingerido. GUID gerado/identificador exclusivo. Somente leitura.|
 |ingestedDateTime|DateTimeOffset| Marcado pelo sistema quando o indicador está ingerido. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|isActive|Booliano| Usado para desativar indicadores no sistema. Por padrão, qualquer indicador enviado é definido como ativo. No enTanto, os provedores podem enviar indicadores existentes com este conjunto como ' false ' para desativar indicadores no sistema.|
+|isActive|Boolean| Usado para desativar indicadores no sistema. Por padrão, qualquer indicador enviado é definido como ativo. No enTanto, os provedores podem enviar indicadores existentes com este conjunto como ' false ' para desativar indicadores no sistema.|
 |killChain|coleção [killChain](#killchain-values)|Uma matriz JSON de cadeias de caracteres que descreve o ponto ou os pontos na cadeia de Kill que este indicador aponta. Consulte ' valores killChain ' abaixo para ver os valores exatos. |
 |knownFalsePositives|String|Cenários nos quais o indicador pode causar falsos positivos. Isso deve ser um texto legível por pessoas.|
 |lastReportedDateTime|DateTimeOffset|A última vez que o indicador foi visto. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|malwareFamilyNames|Coleção de cadeias de caracteres|O nome da família de malware associado a um indicador, se existir. A Microsoft prefere o nome da família de malware da Microsoft, se possível, que possa ser encontrado por meio da [enciclopédia de ameaças](https://www.microsoft.com/wdsi/threats)de inteligência de segurança do Windows Defender.|
-|passiveOnly|Booliano |Determina se o indicador deve acionar um evento que é visível para um usuário final. Quando definido como ' true ', as ferramentas de segurança não notificarão o usuário final de que um ' hit ' ocorreu. Isso geralmente é tratado como um modo de auditoria ou silencioso por produtos de segurança onde eles simplesmente farão o registro de que uma correspondência ocorreu, mas não executará a ação. O valor padrão é falso. |
+|malwareFamilyNames|Coleção String|O nome da família de malware associado a um indicador, se existir. A Microsoft prefere o nome da família de malware da Microsoft, se possível, que possa ser encontrado por meio da [enciclopédia de ameaças](https://www.microsoft.com/wdsi/threats)de inteligência de segurança do Windows Defender.|
+|passiveOnly|Boolean |Determina se o indicador deve acionar um evento que é visível para um usuário final. Quando definido como ' true ', as ferramentas de segurança não notificarão o usuário final de que um ' hit ' ocorreu. Isso geralmente é tratado como um modo de auditoria ou silencioso por produtos de segurança onde eles simplesmente farão o registro de que uma correspondência ocorreu, mas não executará a ação. O valor padrão é falso. |
 |severity|Int32| Um inteiro que representa a gravidade do comportamento mal-intencionado identificado pelos dados dentro do indicador. Os valores aceitáveis são 0 – 5, onde 5 é o mais grave e zero não é grave. O valor padrão é 3. |
-|tags|String collection|Uma matriz JSON de cadeias de caracteres que armazena marcas arbitrárias/palavras-chave. |
+|marcações|Coleção String|Uma matriz JSON de cadeias de caracteres que armazena marcas arbitrárias/palavras-chave. |
 |targetProduct|String|Um valor String que representa um único produto de segurança ao qual o indicador deve ser aplicado. Os valores aceitáveis `Azure Sentinel`são:. **Required**|
 |threattype|[threattype](#threattype-values)| Cada indicador deve ter um tipo de ameaça de indicador válido. Os valores possíveis são: `Botnet`, `C2`, `CryptoMining`, `Darknet`, `DDoS`, `MaliciousUrl`, `Malware`, `Phishing`, `Proxy`, `PUA`, `WatchList`. **Obrigatório.** |
 |tlpLevel|[tlpLevel](#tlplevel-values)| Valor do protocolo de luz de tráfego para o indicador. Os valores possíveis são: `unknown`, `white`, `green`, `amber`, `red`. **Obrigatório.**|
@@ -116,16 +116,18 @@ Os indicadores de ameaça carregados por meio do **tiIndicators** serão usados 
 
 Para obter informações sobre esse modelo, consulte [o modelo de losango](http://diamondmodel.org).
 
-| Valores | Descrição |
-|:-------|:------------|
-|adversário|O indicador descreve o adversário.|
-|função|O indicador é uma capacidade do adversário.|
-|ti|O indicador descreve a infraestrutura do adversário.|
-|vítima|O indicador descreve a vítima do adversário.|
+| Membro | Valor | Descrição |
+|:-------|:----- |:------------|
+| desconhecido |  ,0    | |
+| adversário |  1     |O indicador descreve o adversário.|
+| função |  2    |O indicador é uma capacidade do adversário.|
+| ti | 3  |O indicador descreve a infraestrutura do adversário.|
+| vítima | 4  |O indicador descreve a vítima do adversário.|
+| unknownFutureValue | 127 | |
 
 ### <a name="killchain-values"></a>valores de killChain
 
-| Valores | Descrição |
+| Member | Descrição |
 |:-------|:------------|
 |Actions|Indcates que o atacante está aproveitando o sistema comprometido para realizar ações como um ataque de negação de serviço distribuído.|
 |C2|Representa o canal de controle pelo qual um sistema comprometido é manipulado.|
@@ -137,7 +139,7 @@ Para obter informações sobre esse modelo, consulte [o modelo de losango](http:
 
 ### <a name="threattype-values"></a>valores de threattype
 
-| Valores | Descrição |
+| Member | Descrição |
 |:-------|:------------|
 |Botnet| O indicador é detalhando um nó/membro de botnet.|
 |C2|O indicador é detalhando o nó de controle & de um comando de um botnet.|
@@ -155,7 +157,7 @@ Para obter informações sobre esse modelo, consulte [o modelo de losango](http:
 
 Cada indicador também deve ter um valor de protocolo de luz de tráfego quando ele é enviado. Esse valor representa a sensibilidade e o escopo de compartilhamento de um determinado indicador.
 
-| Valores | Descrição |
+| Member | Descrição |
 |:-------|:------------|
 |Branco| Escopo de compartilhamento: ilimitado. Os indicadores podem ser compartilhados livremente, sem restrição.|
 |Verde| Escopo de compartilhamento: Comunidade. Os indicadores podem ser compartilhados com a comunidade de segurança.|

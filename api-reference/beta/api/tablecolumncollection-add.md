@@ -4,12 +4,12 @@ description: Adiciona uma nova coluna à tabela.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 1f3e2b5cacb3bb7ab462cc127b9cbc2e3b85019f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5537124576650c54701e0f9fd4cc3cd2142a7ce2
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32536772"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33335462"
 ---
 # <a name="tablecolumncollection-add"></a>TableColumnCollection: add
 
@@ -44,11 +44,11 @@ Forneça um objeto JSON com os seguintes parâmetros no corpo da solicitação.
 | Parâmetro    | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |index|number|Especifica a posição relativa da nova coluna. A coluna anterior nessa posição é deslocada para a direita. O valor do índice deve ser igual ou menor que o valor do índice da última coluna, portanto não pode ser usado para acrescentar uma coluna ao final da tabela. Indexado com zero.|
-|values|(booliano, cadeia de caracteres ou número)|Opcional. Uma matriz bidimensional de valores não formatados da coluna da tabela.|
+|values|coleção (booliano ou cadeia de caracteres ou número)|Opcional. Uma matriz bidimensional de valores não formatados da coluna da tabela.|
 
 ## <a name="response"></a>Resposta
 
-Se bem-sucedido, este método retorna um código de resposta `200 OK` e um objeto [TableColumn](../resources/tablecolumn.md) no corpo da resposta.
+Se bem-sucedido, este método retorna `200 OK` o código de resposta e o objeto [workbookTableColumn](../resources/workbooktablecolumn.md) no corpo da resposta.
 
 ## <a name="example"></a>Exemplo
 Eis um exemplo de como chamar esta API.
@@ -78,7 +78,7 @@ Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado a
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.tableColumn"
+  "@odata.type": "microsoft.graph.workbookTableColumn"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -102,8 +102,6 @@ Content-length: 81
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/tablecolumncollection-add.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

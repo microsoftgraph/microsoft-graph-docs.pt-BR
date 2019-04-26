@@ -4,14 +4,16 @@ description: Representa o status de operações assíncronas agendadas em um dom
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 39ded8e4ff3458ebaceea09b3003d0bd14be36cf
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6e945b271ec9f41a4337144d8313de0a4dc36a37
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543158"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334578"
 ---
 # <a name="domainstate-resource-type"></a>tipo de recurso domainstate
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Representa o status de operações assíncronas agendadas em um domínio.
 
@@ -45,10 +47,13 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "domainState resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

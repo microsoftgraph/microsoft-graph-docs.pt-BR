@@ -4,12 +4,12 @@ description: Um turno é uma unidade de trabalho agendado no cronograma.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: cd80cd36bd32ea9efba9e565aabd2da963c51ec8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f5c66d0f555ae6e5740883ed72964a8fa36df303
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32583792"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343042"
 ---
 # <a name="shift-resource-type"></a>tipo de recurso Shift
 
@@ -37,7 +37,7 @@ Uma unidade de trabalho agendado em um [cronograma](schedule.md).
 | draftShift        |[shiftItem](shiftitem.md)        |A versão de rascunho desse `shift` documento que é visível por gerentes. Obrigatório. |
 | createdDateTime       |`DateTimeOffset`        |O carimbo de data/ `shift` hora em que foi criado pela primeira vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: '2014-01-01T00:00:00Z'. |
 | lastModifiedDateTime      |`DateTimeOffset`        |O carimbo de data/ `shift` hora em que foi atualizado pela última vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: '2014-01-01T00:00:00Z'. |
-| lastModifiedBy        |`microsoft.graph.identitySet`        |A identidade da última atualização `shift`.|
+| lastModifiedBy        | [identitySet](identityset.md)        |A identidade da última atualização `shift`.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -56,47 +56,9 @@ Veja a seguir uma representação JSON do recurso.
   "lastModifiedDateTime": "2019-03-14T05:32:51.451Z",
   "userId": "c5d0c76b-80c4-481c-be50-923cd8d680a1",
   "schedulingGroupId": "TAG_228940ed-ff84-4e25-b129-1b395cf78be0",
-  "lastModifiedBy": {
-    "application": null,
-    "device": null,
-    "conversation": null,
-    "user": {
-      "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
-      "displayName": "John Doe"
-    }
-  },
-  "sharedShift": {
-    "displayName": "Day shift",
-    "notes": "Please do inventory as part of your shift.",
-    "startDateTime": "2019-03-11T15:00:00Z",
-    "endDateTime": "2019-03-12T00:00:00Z",
-    "theme": "blue",
-    "activities": [
-      {
-        "isPaid": true,
-        "startDateTime": "2019-03-11T15:00:00Z",
-        "endDateTime": "2019-03-11T15:15:00Z",
-        "code": "",
-        "displayName": "Lunch"
-      }
-    ]
-  },
-  "draftShift": {
-    "displayName": "Day shift",
-    "notes": "Please do inventory as part of your shift.",
-    "startDateTime": "2019-03-11T15:00:00Z",
-    "endDateTime": "2019-03-12T00:00:00Z",
-    "theme": "blue",
-    "activities": [
-      {
-        "isPaid": true,
-        "startDateTime": "2019-03-11T15:00:00Z",
-        "endDateTime": "2019-03-11T15:30:00Z",
-        "code": "",
-        "displayName": "Lunch"
-      }
-    ]
-  }
+  "lastModifiedBy": {"@odata.type":"microsoft.graph.identitySet"},
+  "sharedShift": {"@odata.type":"microsoft.graph.shiftItem"},
+  "draftShift": {"@odata.type":"microsoft.graph.shiftItem"}
 }
 ```
 
@@ -110,8 +72,6 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/shift.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

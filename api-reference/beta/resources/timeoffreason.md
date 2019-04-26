@@ -4,12 +4,12 @@ description: Uma razão válida para ser demorada no cronograma.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 72597fa1678110a40b9dd1a0ea6e6235625144ab
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8ba1e4bd596b82643ecbfa4b842e60232c182a4b
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32582852"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341964"
 ---
 # <a name="timeoffreason-resource-type"></a>tipo de recurso timeOffReason
 
@@ -32,11 +32,11 @@ Uma razão válida para uma instância do [timeOff](timeoff.md) em um [cronogram
 |--------------|---------------|--------------------------------------------------------------------------------------------|
 | id            |`string`      |A ID da tarefa `timeOffReason`.|
 | Nome para exibição               | `string`                  | O nome do `timeOffReason`. Obrigatório. |
-| icontype | `enum`   | Tipos de ícone suportados: nenhum; automóvel dos com plano firstAid; Doutor Não funciona; medição juryDuty; Globe copo telefone Weather abrangência piggyBank; cachorro torta trafficCone; pessoal ensolarado. Obrigatório. |
-| isActive          |`bool`      | Indica se o `timeOffReason` pode ser usada na criação de novas entidades ou atualizar as existentes. Obrigatório. |
+| icontype | `timeOffReasonIconType`   | Tipos de ícone suportados: nenhum; automóvel dos com plano firstAid; Doutor Não funciona; medição juryDuty; Globe copo telefone Weather abrangência piggyBank; cachorro torta trafficCone; pessoal ensolarado. Obrigatório. |
+| isActive          |`Boolean`      | Indica se o `timeOffReason` pode ser usada na criação de novas entidades ou atualizar as existentes. Obrigatório. |
 | createdDateTime       |`DateTimeOffset`        |O carimbo de data/hora `timeOffReason` em que foi criado pela primeira vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: '2014-01-01T00:00:00Z'. |
 | lastModifiedDateTime      |`DateTimeOffset`         |O carimbo de data/hora `timeOffReason` em que foi atualizado pela última vez. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: '2014-01-01T00:00:00Z'. |
-| lastModifiedBy        |`microsoft.graph.identitySet`        |A identidade da última atualização `timeOffReason`.|
+| lastModifiedBy        | [identitySet](identityset.md)        |A identidade da última atualização `timeOffReason`.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -45,26 +45,19 @@ Veja a seguir uma representação JSON do recurso.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.timeOffReason"
+  "@odata.type": "microsoft.graph.timeOffReason",
+  "baseType":"microsoft.graph.changeTrackedEntity"
 }-->
 
 ```json
 {
-  "id": "TOR_891045ca-b5d2-406b-aa06-a3c8921245d7",
-  "createdDateTime": "2019-03-12T22:10:38.242Z",
-  "lastModifiedDateTime": "2019-03-12T22:10:38.242Z",
-  "displayName": "Vacation",
-  "iconType": "plane",
+  "id": "String",
+  "createdDateTime": "String (timestamp)",
+  "lastModifiedDateTime": "String (timestamp)",
+  "displayName": "String",
+  "iconType": "String",
   "isActive": true,
-  "lastModifiedBy": {
-    "application": null,
-    "device": null,
-    "conversation": null,
-    "user": {
-      "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
-      "displayName": "John Doe"
-    }
-  }
+  "lastModifiedBy": { "@odata.type":"microsoft.graph.identitySet"}
 }
 ```
 
@@ -78,8 +71,6 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/timeoffreason.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

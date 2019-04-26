@@ -1,29 +1,29 @@
 ---
-title: tipo de recurso do OneNote
-description: O ponto de entrada para recursos do OneNote.
+title: tipo de recurso do onenote
+description: O ponto de entrada para os recursos do OneNote.
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 5ed063fb485acdbd029a977ffb6cd721bf7085c8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 44dfe7b33632bb6691802e46b66f54015b6aa6ae
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561646"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341488"
 ---
-# <a name="onenote-resource-type"></a>tipo de recurso do OneNote
+# <a name="onenote-resource-type"></a>tipo de recurso do onenote
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-O ponto de entrada para recursos do OneNote.
+O ponto de entrada para os recursos do OneNote.
 
-Todas as chamadas para o serviço do OneNote por meio da API do Microsoft Graph usam esta URL raiz do serviço:
+Todas as chamadas para o serviço do OneNote pela API do Microsoft Graph usam essa URL raiz de serviço:
 
 ```
 https://graph.microsoft.com/{version}/{location}/onenote/ 
 ```
 
-O local pode ser blocos de anotações do usuário no Office 365 ou no OneDrive do consumidor, nos blocos de anotações de grupo ou em blocos de anotações de equipe hospedados no site do SharePoint no Office 365. 
+A localização pode ser blocos de anotações do usuário no Office 365 ou de consumidor do OneDrive, blocos de anotações de grupo ou blocos de anotações hospedado no site da equipe do SharePoint no Office 365. 
 
 **Blocos de anotações do usuário** Para acessar blocos de anotações pessoais no OneDrive do consumidor ou no OneDrive for Business, use uma das seguintes URLs:
 
@@ -33,12 +33,12 @@ https://graph.microsoft.com/{version}/users/{userPrincipalName}/onenote/{noteboo
 https://graph.microsoft.com/{version}/users/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
 ```
 
-**Blocos de anotações de grupo** Para acessar blocos de anotações pertencentes a um grupo, use a seguinte URL raiz de serviço:
+**Blocos de anotações de grupo** para acessar blocos de anotações que pertencem a um grupo, use a seguinte URL raiz de serviço:
 
 ```
 https://graph.microsoft.com/{version}/groups/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
 ```
-**Blocos de anotações do site do SharePoint** Para acessar blocos de anotações pertencentes a um site de equipe do SharePoint, use a seguinte URL raiz de serviço:
+**Blocos de anotações do site do SharePoint** para acessar blocos de anotações que pertencem a um site de equipe do SharePoint, use a seguinte URL raiz de serviço:
 
 ```
 https://graph.microsoft.com/{version}/sites/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
@@ -46,28 +46,43 @@ https://graph.microsoft.com/{version}/sites/{id}/onenote/{notebooks | sections |
 
 ## <a name="authorization"></a>Autorização
 
-Para obter informações sobre as permissões necessárias para trabalhar com as APIs do OneNote, consulte [observações sobre permissões](/graph/permissions-reference#notes-permissions).
+Para obter informações sobre as permissões necessárias para trabalhar com o APIs do OneNote, confira [Permissões de anotações](/graph/permissions-reference#notes-permissions).
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|notebooks|Coleção [Notebook](notebook.md)|O conjunto de blocos de anotações do OneNote pertencentes ao usuário ou grupo. Somente leitura. Anulável.|
-|operations|Coleção [Operation](onenoteoperation.md) |O status das operações do OneNote. Não há suporte para a obtenção de uma coleção de operações, mas você pode obter o status de operações de `Operation-Location` longa duração se o cabeçalho for retornado na resposta. Somente leitura. Anulável.|
-|páginas|Coleção [Page](page.md)|As páginas de todos os blocos de anotações do OneNote pertencentes ao usuário ou grupo.  Somente leitura. Anulável.|
-|recursos|Coleção de [recursos](resource.md) |A imagem e outros recursos de arquivo nas páginas do OneNote. Não há suporte para a obtenção de uma coleção Resources, mas você pode [obter o conteúdo binário de um recurso específico](resource.md). Somente leitura. Anulável.|
-|sectionGroups|Coleção de [seções](sectiongroup.md)|Os grupos de seções de todos os blocos de anotações do OneNote pertencentes ao usuário ou grupo.  Somente leitura. Anulável.|
-|sections|Coleção [Section](section.md)|As seções de todos os blocos de anotações do OneNote pertencentes ao usuário ou grupo.  Somente leitura. Anulável.|
+|notebooks|Coleção [Notebook](notebook.md)|A coleção de blocos de anotações do OneNote que pertencem ao usuário ou ao grupo. Somente leitura. Anulável.|
+|operations|coleção [onenoteOperation](onenoteoperation.md) |O status das operações do OneNote. Não há suporte para a obtenção de uma coleção de operações, mas você pode obter o status das operações longas se o cabeçalho `Operation-Location` for retornado na resposta. Somente leitura. Anulável.|
+|páginas|coleção [onenotePage](onenotepage.md)|As páginas em todos os blocos de anotações do OneNote que pertencem ao usuário ou ao grupo.  Somente leitura. Anulável.|
+|recursos|coleção [onenoteResource](onenoteresource.md) |A imagem e outros recursos de arquivos nas páginas do OneNote. Não há suporte para a obtenção de uma coleção de recursos, mas você pode [obter o conteúdo de um recurso binário específico](onenoteresource.md). Somente leitura. Anulável.|
+|sectionGroups|coleção de [seções](sectiongroup.md)|Os grupos de seção em todos os blocos de anotações do OneNote que pertencem ao usuário ou ao grupo.  Somente leitura. Anulável.|
+|seções|coleção [onenoteSection](onenotesection.md)|As seções em todos os blocos de anotações do OneNote que pertencem ao usuário ou ao grupo.  Somente leitura. Anulável.|
 
 ## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Criar blocos de anotações](../api/onenote-post-notebooks.md) |[Bloco de anotações](notebook.md)| Crie um bloco de anotações postando na coleção de blocos de anotações.|
-|[Listar blocos de anotações](../api/onenote-list-notebooks.md) |Coleção [Notebook](notebook.md)| Obter uma coleção de blocos de anotações.|
-|[Criar página](../api/onenote-post-pages.md) |[Page](page.md)| Crie uma página postando na coleção Pages.|
-|[Listar páginas](../api/onenote-list-pages.md) |Coleção [Page](page.md)| Obter uma coleção de páginas.|
-|[Listar grupos de seções](../api/onenote-list-sectiongroups.md) |Coleção de [seções](sectiongroup.md)| Obter uma coleção de grupos de seções.|
-|[Listar seções](../api/onenote-list-sections.md) |Coleção [Section](section.md)| Obter uma coleção de seções.|
+|[Create notebook](../api/onenote-post-notebooks.md) |[anotações](notebook.md)| Crie um bloco de anotações postando na coleção notebooks.|
+|[List notebooks](../api/onenote-list-notebooks.md) |Coleção [Notebook](notebook.md)| Obter uma coleção de blocos de anotações.|
+|[Create page](../api/onenote-post-pages.md) |[onenotePage](onenotepage.md) | Crie uma página postando na coleção pages.|
+|[List pages](../api/onenote-list-pages.md) |coleção [onenotePage](onenotepage.md)| Obter uma coleção de páginas.|
+|[List section groups](../api/onenote-list-sectiongroups.md) |coleção de [seções](sectiongroup.md)| Obter uma coleção de grupos de seção.|
+|[Listar seções](../api/onenote-list-sections.md) |coleção [onenoteSection](onenotesection.md)| Obter uma coleção de seções.|
+<!--{
+  "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.onenote"
+}-->
+``` json
+{
+  "notebooks": [{ "@odata.type": "microsoft.graph.notebook" }],
+  "operations": [{ "@odata.type": "microsoft.graph.onenoteOperation" }],
+  "pages": [{ "@odata.type": "microsoft.graph.onenotePage" }],
+  "resources": [ { "@odata.type": "microsoft.graph.onenoteResource" } ],
+  "sectionGroups": [ { "@odata.type": "microsoft.graph.sectionGroup" } ],
+  "sections": [ { "@odata.type": "microsoft.graph.onenoteSection" } ]
+}
+```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -78,8 +93,6 @@ Para obter informações sobre as permissões necessárias para trabalhar com as
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/onenote.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

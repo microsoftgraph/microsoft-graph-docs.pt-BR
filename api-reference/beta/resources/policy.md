@@ -2,12 +2,12 @@
 title: tipo de recurso de política
 description: 'Representa uma política do Azure AD. As políticas são regras personalizadas que podem ser aplicadas em aplicativos, entidades de serviço, grupos ou toda a organização à qual foram atribuídas. Atualmente, somente um tipo de política está disponível:'
 localization_priority: Normal
-ms.openlocfilehash: 118bac238d58734b5cbdeb1a4f346aedf680de6c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 94d99bf107b8db5b264dd6dfe958da0ac53ae02a
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563618"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344201"
 ---
 # <a name="policy-resource-type"></a>tipo de recurso de política
 
@@ -28,22 +28,45 @@ Essa política é descrita em mais detalhes abaixo.
 |[Excluir política](../api/policy-delete.md)|Nenhum|Exclua o objeto Policy.|
 |[Atribuir política](../api/policy-assign.md)|Nenhum|Atribuir uma política a um aplicativo, entidade de serviço.|
 |[Listar políticas](../api/policy-list.md)|Coleção Policy|Obter todos os objetos de política na organização.|
-|[List assigned policies](../api/policy-list-assigned.md)|Coleção Policy|Obter todos os objetos de política atribuídos a uma entidade de serviço ou aplicativo.|
+|[Listar políticas atribuídas](../api/policy-list-assigned.md)|Coleção Policy|Obter todos os objetos de política atribuídos a uma entidade de serviço ou aplicativo.|
 
-### <a name="common-properties"></a>Propriedades comuns
+##  <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|definir|String|A versão de cadeia de caracteres da política específica. Veja a seguir. Obrigatório.|
+|definir|Coleção String|A versão de cadeia de caracteres da política específica. Veja a seguir. Obrigatório.|
 |displayName|String|Um nome personalizado para a política. Obrigatório.|
-|IsOrganizationDefault|Booliano|Se definido como true, ativa esta política. Pode haver muitas políticas para o mesmo tipo de política, mas apenas uma pode ser ativada como a organização padrão. Opcional, o valor padrão é false.|
+|IsOrganizationDefault|Boolean|Se definido como true, ativa esta política. Pode haver muitas políticas para o mesmo tipo de política, mas apenas uma pode ser ativada como a organização padrão. Opcional, o valor padrão é false.|
 |type|String|Especifica o tipo de política. No momento, deve ser "TokenLifetimePolicy". Obrigatório.|
+|alternativeIdentifer|String| |
+|keyCredentials| Coleção [keyCredential](keycredential.md)| |
 
-#### <a name="common-relationships"></a>Relações comuns
+## <a name="json-representation"></a>Representação JSON
+Veja a seguir uma representação JSON do recurso.
+
+<!--{
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.policy",
+  "keyProperty": "id",
+  "baseType":"microsoft.graph.directoryObject",  
+  "openType": true
+}-->
+```json
+{
+  "alternativeIdentifer": "String",
+  "definition": ["String"],
+  "displayName": "String",
+  "isOrganizationDefault": "Boolean",
+  "keyCredentials": [{"@odata.type": "microsoft.graph.keyCredential"}],
+  "type": "String"
+}
+```
+
+## <a name="relationships"></a>Relações
 |Relação|Tipo|Descrição|
 |:-------------|:-----------|:-----------|
 |appliesTo|Coleção [directoryObject](../resources/directoryobject.md)|Os aplicativos, entidades de serviço, grupos ou organizações aos quais a política se aplica.|
 
-## <a name="token-lifetime-policy"></a>Política de tempo de vida do token
+### <a name="token-lifetime-policy"></a>Política do tempo de vida do token
 Especifica os tempos de vida dos tokens emitidos para várias finalidades. Esse tipo de política pode ser [atribuído](../api/policy-assign.md) a aplicativos e entidades de serviço. Há quatro tipos de tokens cuja vida útil pode ser configurada. Os pares de tokens de acesso/atualização são obtidos durante a autenticação por meio de um cliente, enquanto os pares de identificador/sessão de ID são obtidos durante a autenticação por meio de um navegador.
 
 - O **token de acesso** contém informações sobre a identidade e os privilégios associados a uma conta de usuário usada por clientes para acessar recursos protegidos, como aplicativos.
@@ -51,8 +74,17 @@ Especifica os tempos de vida dos tokens emitidos para várias finalidades. Esse 
 - O **token de ID** se comporta como um token de acesso, mas obtido através do navegador.
 - O **token de sessão** se comporta como um token de atualização, mas obtido através do navegador.
 
-## <a name="properties"></a>Propriedades
-As propriedades abaixo formam o objeto JSON que representa uma política de tempo de vida do token. Esse objeto JSON deve ser **convertido em uma cadeia de caracteres com aspas de escape** a ser inserido na propriedade de política comum "definição". Um exemplo é mostrado abaixo.
+#### <a name="properties-of-a-token-lifetime-policy"></a>Propriedades de uma política de tempo de vida do token
+As propriedades abaixo formam o objeto JSON que representa uma política de tempo de vida do token. Esse objeto JSON deve ser **convertido em uma cadeia de caracteres com aspas de escape** a ser inserido na propriedade de política comum "definição". Um exemplo é mostrado abaixo no formato JSON:
+
+<!-- {
+  "blockType": "ignored"
+}-->
+``` json
+"definition": [
+    "{\"TokenLifetimePolicy\":{\"Version\":1,\"AccessTokenLifetime\":\"8:00:00\",\"MaxInactiveTime\":\"20:00:00\",}}"
+  ]
+```
 
 >Observação: todas as durações de tempo nessas propriedades são especificadas no formato "dd. hh: mm: SS".
 
@@ -68,22 +100,4 @@ As propriedades abaixo formam o objeto JSON que representa uma política de temp
 |MaxAgeSessionMultiFactor|String|Controla por quanto tempo um usuário pode continuar a usar tokens de sessão para obter novos tokens de sessão/ID após a última vez em que foram autenticados com vários fatores.|10 minutos|até a revogação|365 ou até-revogado|
 |Versão|Inteiro|Defina o valor 1. Obrigatório.|Nenhum|Nenhum|Nenhum|
 
-## <a name="json-representation"></a>Representação JSON
-Veja a seguir uma representação JSON do recurso.
 
-```json
-{
-  "definition":["{\"TokenLifetimePolicy\":{\"Version\":1,\"AccessTokenLifetime\":\"8:00:00\",\"MaxInactiveTime\":\"20:00:00\",}}"],
-  "displayName":"Test Policy",
-  "isOrganizationDefault":false,
-  "type":"TokenLifetimePolicy",
-}
-```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/policy.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

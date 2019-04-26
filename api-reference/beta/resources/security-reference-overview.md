@@ -4,12 +4,12 @@ description: A sofisticação de ameaças à segurança continua a ser escalonad
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 37e98203e8f031aa98b35d82110a69e434c22a3f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 853f09ca30378c4fa7e8132f495d789ec142f13c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32524460"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343385"
 ---
 # <a name="use-the-microsoft-graph-api-for-security-threat-detection-and-protection-preview"></a>Usar a API do Microsoft Graph para detecção e proteção contra ameaças de segurança (visualização)
 
@@ -27,11 +27,3 @@ A [API de eventos de risco de proteção de identidade](identityprotection-root.
 - [Usar a API de segurança para se integrar com o gráfico de segurança inteligente](security-api-overview.md)
 - [Por que usar o Azure AD para proteger identidades em sua organização?](/graph/security-concept-overview#why-use-azure-ad-to-protect-identities-in-your-organization)
 - [Usar a API de proteção de identidade do Azure AD](identityprotection-root.md)
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/security-reference-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

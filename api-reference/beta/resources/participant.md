@@ -4,12 +4,12 @@ description: O tipo de participante.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: f49526824b2b6c4eb4a5065f05ab4c765d299faa
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4a138267529127562fa9df42d8b20a985939b50e
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568608"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345006"
 ---
 # <a name="participant-resource-type"></a>tipo de recurso participante
 
@@ -25,7 +25,7 @@ O tipo de participante.
 | [ConfigureMixer](../api/participant-configuremixer.md)          | [commsOperation](commsoperation.md)      | Configure o mixer de áudio do participante.            |
 | [Convidar](../api/participant-invite.md)                          | [commsOperation](commsoperation.md)      | Convidar um participante para a chamada.                 |
 | [Ativar mudo para participante](../api/participant-mute.md)                  | [commsOperation](commsoperation.md)      | Tirar o áudio de um participante em uma chamada.                     |
-| [Ativar mudo em todos os participantes](../api/participant-muteall.md)          | [commsOperation](commsoperation.md)      | Ativar mudo de todos os participantes da reunião.         |
+| [Ativar mudo de todos os participantes](../api/participant-muteall.md)          | [commsOperation](commsoperation.md)      | Ativar mudo de todos os participantes da reunião.         |
 
 ## <a name="properties"></a>Propriedades
 

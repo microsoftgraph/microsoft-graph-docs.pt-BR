@@ -2,12 +2,12 @@
 title: Tipo de recurso FilterDatetime
 description: Indica como filtrar uma data ao filtrar valores.
 localization_priority: Normal
-ms.openlocfilehash: ad4341e13eadc911377ec7b9859d6a31305fadf8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 49587bf34c90e9a42145fade30177f03c49ed0b6
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32506432"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333761"
 ---
 # <a name="filterdatetime-resource-type"></a>Tipo de recurso FilterDatetime
 
@@ -22,7 +22,7 @@ Indica como filtrar uma data ao filtrar valores.
 |especificidade|string|Como a data específica deve ser usada para manter os dados. Por exemplo, se a data for 2005-04-02 e a especificidade estiver definida como "mês", a operação de filtragem manterá todas as linhas com uma data do mês de abril de 2009. Os valores possíveis são: `Year`, `Monday`, `Day`, `Hour`, `Minute` e `Second`.|
 
 ## <a name="relationships"></a>Relações
-Nenhuma
+Nenhum
 
 
 ## <a name="json-representation"></a>Representação JSON
@@ -54,8 +54,6 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/filterdatetime.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

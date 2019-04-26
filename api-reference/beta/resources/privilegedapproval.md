@@ -2,12 +2,12 @@
 title: tipo de recurso privilegedApproval
 description: Representa uma aprovação solicitada no gerenciamento de identidade privilegiado para obter uma função.
 localization_priority: Normal
-ms.openlocfilehash: 283236d945e9a71a4ae0461bbefe66260efa88a4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 754fcd9b61321db1675408172c945557e38dc0e0
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563623"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344212"
 ---
 # <a name="privilegedapproval-resource-type"></a>tipo de recurso privilegedApproval
 
@@ -38,7 +38,7 @@ Representa uma aprovação solicitada no gerenciamento de identidade privilegiad
 |requestorReason|String||
 |roleId|String||
 |startDateTime|DateTimeOffset|O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
-|userId|String||
+|userId|Cadeia de caracteres||
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|

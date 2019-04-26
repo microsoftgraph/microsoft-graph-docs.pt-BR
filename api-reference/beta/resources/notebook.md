@@ -4,12 +4,12 @@ description: Um bloco de anotações do OneNote.
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 24e9a7a4b87a59af27166121aff2847f5f15d894
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1d79ca41a357206f8c19568082bf2833a60089c4
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32459119"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342167"
 ---
 # <a name="notebook-resource-type"></a>tipo de recurso Notebook
 
@@ -23,6 +23,7 @@ Veja a seguir uma representação JSON do recurso
 
 <!-- {
   "blockType": "resource",
+  "keyProperty":"id",
   "optionalProperties": [
     "sectionGroups",
     "sections"
@@ -58,7 +59,7 @@ Veja a seguir uma representação JSON do recurso
 |isShared|Booliano|Indica se o bloco de anotações é compartilhado. Se for true, o conteúdo do bloco de anotações poderá ser visto por pessoas que não o proprietário. Somente leitura.|
 |lastModifiedBy|[identitySet](identityset.md)|Identidade do usuário, dispositivo e aplicativo que criou o item. Somente leitura.|
 |lastModifiedDateTime|DateTimeOffset|A data e hora da última modificação do bloco de anotações. O carimbo de data/hora representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`. Somente leitura.|
-|links|[NotebookLinks](notebooklinks.md)|Links para abrir o bloco de anotações. O `oneNoteClientURL` link abre o bloco de anotações no cliente nativo do OneNote se ele estiver instalado. O link `oneNoteWebURL` abre o bloco de anotações no OneNote Online.|
+|links|[notebookLinks](notebooklinks.md)|Links para abrir o bloco de anotações. O `oneNoteClientURL` link abre o bloco de anotações no cliente nativo do OneNote se ele estiver instalado. O link `oneNoteWebURL` abre o bloco de anotações no OneNote Online.|
 |displayName|String|O nome do bloco de anotações.|
 |sectionGroupsUrl|String|A URL da propriedade `sectionGroups` de navegação, que retorna todos os grupos de seção no bloco de anotações. Somente leitura.|
 |sectionsUrl|String|A URL da propriedade `sections` de navegação, que retorna todas as seções do bloco de anotações. Somente leitura.|
@@ -68,20 +69,20 @@ Veja a seguir uma representação JSON do recurso
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|sectionGroups|Coleção de [seções](sectiongroup.md)|Obtém os grupos de seção no bloco de anotações. Somente leitura. Anulável.|
-|sections|Coleção [Section](section.md)|As seções no bloco de anotações. Somente leitura. Anulável.|
+|sectionGroups|coleção de [seções](sectiongroup.md)|Obtém os grupos de seção no bloco de anotações. Somente leitura. Anulável.|
+|seções|coleção [onenoteSection](onenotesection.md)|As seções no bloco de anotações. Somente leitura. Anulável.|
 
 ## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Obter bloco de anotações](../api/notebook-get.md) | [Bloco de anotações](notebook.md) |Leia as propriedades e as relações do bloco de anotações.|
+|[Obter bloco de anotações](../api/notebook-get.md) | [anotações](notebook.md) |Leia as propriedades e as relações do bloco de anotações.|
 |[getRecentNotebooks](../api/notebook-getrecentnotebooks.md) | coleção [recentNotebook](recentnotebook.md) | Obtenha uma coleção de blocos de anotações acessados mais recentemente para o usuário. |
-|[getNotebookFromWebUrl](../api/notebook-getnotebookfromweburl.md) | [Bloco de anotações](notebook.md) | Recupere as propriedades e os relacionamentos de um objeto Notebook usando seu caminho de URL. |
-|[Criar grupo de seções](../api/notebook-post-sectiongroups.md) |[SectionGroup](sectiongroup.md)| Criar um grupo de seção postando na coleção sectionGroups no bloco de anotações especificado.|
-|[Listar grupos de seções](../api/notebook-list-sectiongroups.md) |Coleção de [seções](sectiongroup.md)| Obtém uma coleção de grupos de seções no bloco de anotações especificado.|
-|[Criar seção](../api/notebook-post-sections.md) |[Section](section.md)| Criar uma seção postando na coleção Sections no bloco de anotações especificado.|
-|[Listar seções](../api/notebook-list-sections.md) |Coleção [Section](section.md)| Obtém uma coleção de seções no bloco de anotações especificado.|
+|[getNotebookFromWebUrl](../api/notebook-getnotebookfromweburl.md) | [anotações](notebook.md) | Recupere as propriedades e os relacionamentos de um objeto Notebook usando seu caminho de URL. |
+|[Criar grupo de seções](../api/notebook-post-sectiongroups.md) |[sectionGroup](sectiongroup.md)| Criar um grupo de seção postando na coleção sectionGroups no bloco de anotações especificado.|
+|[List section groups](../api/notebook-list-sectiongroups.md) |coleção de [seções](sectiongroup.md)| Obtém uma coleção de grupos de seções no bloco de anotações especificado.|
+|[Criar seção](../api/notebook-post-sections.md) |[onenoteSection](onenotesection.md)| Criar uma seção postando na coleção Sections no bloco de anotações especificado.|
+|[Listar seções](../api/notebook-list-sections.md) |coleção [onenoteSection](onenotesection.md)| Obtém uma coleção de seções no bloco de anotações especificado.|
 |[copyNotebook](../api/notebook-copynotebook.md)| Nenhum | Copia um bloco de anotações.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -93,8 +94,6 @@ Veja a seguir uma representação JSON do recurso
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/notebook.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -4,23 +4,29 @@ description: Tipo complexo contendo propriedades de insights.
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 48ec1619d07d0f31bf8325c25b161084f505b3ee
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a8f6f048576ce5bc6ab532793d98fa1644e5158d
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32550732"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333560"
 ---
 # <a name="resourcevisualization-resource-type"></a>tipo de recurso resourceVisualization
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Tipo complexo contendo propriedades de [](insights.md)insights.
+Tipo complexo contendo propriedades de [](officegraphinsights.md)insights.
 
 ## <a name="json-representation"></a>Representação JSON
 
 Veja a seguir uma representação JSON do recurso
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+  ],  
+  "@odata.type": "microsoft.graph.resourceVisualization"
+}-->
 ```json
 {
   "title": "string",
@@ -39,7 +45,7 @@ Veja a seguir uma representação JSON do recurso
 | Propriedade              | Tipo          | Descrição  |
 | -------------         |---------------| -------------|
 | title                 | String        | O texto do título do item.               |
-| type              | String        | O tipo de mídia do item. Pode ser usado para filtrar um arquivo específico com base em um tipo específico. Veja abaixo os tipos suportados. |
+| tipo              | Cadeia de caracteres        | O tipo de mídia do item. Pode ser usado para filtrar um arquivo específico com base em um tipo específico. Veja abaixo os tipos suportados. |
 | Mídia             | String        | O tipo de mídia do item. Pode ser usado para filtragem para um tipo específico de arquivo baseado em tipos MIME de mídias da IANA compatíveis. Observe que nem todos os tipos de MIME de mídia têm suporte. |
 | previewImageUrl       | String        | Uma URL que leva à imagem de visualização do item. |
 | previewText           | String        | Um texto de visualização para o item. |
@@ -77,7 +83,7 @@ Veja a seguir uma representação JSON do recurso
 Consulta de exemplo:`https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
 ## <a name="containertype-property-values"></a>valores da Propriedade ContainerType
-Os tipos com suporte podem diferir com base nos contêineres dos quais a [percepção](insights.md) retorna arquivos. Por exemplo, somente a percepção [compartilhada](insights-shared.md) retorna arquivos de "Dropbox", "box" e "GDrive".
+Os tipos com suporte podem diferir com base nos contêineres dos quais o [officeGraphInsights](officegraphinsights.md) retorna arquivos. Por exemplo, somente a percepção [sharedInsight](insights-shared.md) retorna arquivos de "Dropbox", "box" e "GDrive".
 
 -   OneDriveBusiness
 -   Site
@@ -87,11 +93,3 @@ Os tipos com suporte podem diferir com base nos contêineres dos quais a [percep
 -   GDrive
 
 Consulta de exemplo:`https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/insights-resourcevisualization.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

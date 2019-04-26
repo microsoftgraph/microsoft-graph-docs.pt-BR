@@ -5,14 +5,16 @@ ms.date: 09/10/2017
 title: DriveRecipient
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 47a080b4f81645cfe5098ec8391d58cf07fca466
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c1a121969bf6b36c8afccd367a084a4b75599eaf
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32543144"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334571"
 ---
 # <a name="driverecipient-resource"></a>Recurso DriveRecipient
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 O recurso **DriveRecipient** representa uma pessoa, um grupo ou outro destinatário com quem compartilhar usando a ação [invite](../api/driveitem-invite.md).
 
@@ -43,10 +45,13 @@ O recurso de destinatários possui essas propriedades.
 
 Ao usar [invite](../api/driveitem-invite.md) para adicionar permissões, DriveRecipient pode especificar **email**, **alias** ou **objectId**. É necessário somente um desses valores.
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Recipients resource defines a single recipient for the sharing invitation and permissions collection.",
   "keywords": "sharing,share,permissions,action.invite,invite,email",
   "section": "documentation",
-  "tocPath": "Resources/Recipients"
-} -->
+  "tocPath": "Resources/Recipients",
+  "suppressions": []
+}
+-->

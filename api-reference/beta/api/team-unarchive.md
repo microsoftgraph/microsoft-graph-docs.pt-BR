@@ -4,16 +4,16 @@ description: Restaurar uma equipe arquivada. Isso restaura a capacidade dos usu�
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 0c39cac6a61f09c0531f1c337ff01e1b3c077b67
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3af0f2b0434e1883a95210eaf46129921fd176cd
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32536779"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33335217"
 ---
 # <a name="unarchive-team"></a>Desarquivar equipe
 
-
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Restaurar uma [equipe](../resources/team.md)arquivada. Isso restaura a capacidade dos usuários de enviar mensagens e editar a equipe, Abiding por definições de locatários e de equipe. As equipes são arquivadas usando a API de [arquivo morto](team-archive.md) .
 
@@ -28,7 +28,7 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 |Delegado (conta pessoal da Microsoft) | Sem suporte.    |
 |Aplicativo | Group.ReadWrite.All    |
 
-> **Observação**: esta API oferece suporte a permissões de administrador. Os administradores globais e os administradores do serviço do Microsoft Teams podem acessar equipes das quais eles não são membros.
+> **Observação**: esta API oferece transporte a permissões de administrador. Os administradores globais e os administradores do serviço do Microsoft Teams podem acessar equipes das quais eles não são membros.
 
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
@@ -56,7 +56,7 @@ Veja a seguir um exemplo de uma solicitação.
   "name": "unarchive_team"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/teams/{id}/unarchive
+POST https://graph.microsoft.com/beta/teams/{id}/unarchive
 ```
 
 #### <a name="response"></a>Resposta
@@ -70,10 +70,13 @@ Content-Length: 0
 
 <!-- uuid: 9a9bb83f-6f35-4426-bb04-73ca43ad6cc8
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Unarchive team",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

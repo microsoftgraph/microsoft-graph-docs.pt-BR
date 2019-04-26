@@ -1,15 +1,15 @@
 ---
-title: tipo de recurso secureScoreControlProfiles
+title: tipo de recurso secureScoreControlProfile
 description: Representa a pontuação segura de um locatário por dados de controle. Por padrão, ele retorna todos os controles de um locatário e pode explicitamente extrair controles individuais.
 localization_priority: Normal
-ms.openlocfilehash: 3e800271f1ef5f8ac7847d14d97ae6f24f1e01cf
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 41a74af0de47bbe77b8ea04cbea011a6f085d1bb
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549171"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343406"
 ---
-# <a name="securescorecontrolprofiles-resource-type"></a>tipo de recurso secureScoreControlProfiles
+# <a name="securescorecontrolprofile-resource-type"></a>tipo de recurso secureScoreControlProfile
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -20,7 +20,7 @@ Representa a pontuação segura de um locatário por dados de controle. Por padr
 
 | Método   | Tipo de retorno|Descrição|
 |:---------------|:--------|:----------|
-|[Lista secureScoreControlProfiles](../api/securescorecontrolprofiles-list.md) | [secureScoreControlProfiles](securescorecontrolprofiles.md) |Leia as propriedades e os metadados de um objeto secureScoreControlProfiles.|
+|[Lista secureScoreControlProfiles](../api/securescorecontrolprofiles-list.md) | coleção [secureScoreControlProfile](securescorecontrolprofiles.md) |Obtenha uma coleção de objetos secureScoreControlProfile.|
 
 
 ## <a name="properties"></a>Propriedades
@@ -40,11 +40,12 @@ Representa a pontuação segura de um locatário por dados de controle. Por padr
 |   implementationCost |    String  |   Custo do recurso do controle implemmentating (baixo, moderado, alto). |
 |   classificação |  Int32   |   Classificação de pilha da Microsoft de controle.   |
 |   las |   String Collection   |   Lista de ameaças o controle atenua (accountBreach, dataExclusão, dataExfiltration, dataDerramamento, elevationOfPrivilege, maliciousInsider, passwordCracking, phishingOrWhaling, falsificação). |
-|   preterido |    Booliano |   Sinalizador para indicar se um controle está depreciado.   |
+|   preterido |    Boolean |   Sinalizador para indicar se um controle está depreciado.   |
 |   correção |   String  |   Descrição do que o controle ajudará a corrigir. |
 |   remediationImpact | String  |   Descrição do impacto sobre os usuários da correção. |
 |   actionUrl | String  |   URL para onde o controle pode ser acionado. |
-|   controlStateUpdates |   coleção [secureScoreControlStateUpdate](securescorecontrolstateupdate.md) |    Sinalizador para indicar onde o locatário marcou um controle (ignore, terceiros, revisado) (suporta [atualização](../api/securescorecontrolprofiles-update.md)). |
+|   controlStateUpdates | coleção [secureScoreControlStateUpdate](securescorecontrolstateupdate.md) |    Sinalizador para indicar onde o locatário marcou um controle (ignore, terceiros, revisado) (suporta [atualização](../api/securescorecontrolprofiles-update.md)). |
+|   vendorInformation | [securityVendorInformation](securityvendorinformation.md) |
 
 ## <a name="relationships"></a>Relações
 
@@ -59,32 +60,30 @@ Veja a seguir uma representação JSON do recurso.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.secureScores"
+  "@odata.type": "microsoft.graph.secureScoreControlProfile"
 }-->
 
 ```json
 {
-"title": "String", 
-"azureTenantId": "Guid", 
-"referenceId": "String", 
-"controlName": "String", 
-"maxScore": "Int32",
-"actionCategory": "Collection(microsoft.graph.SecureScore.actionCategory)",
-"actionType": "Collection(microsoft.graph.SecureScore.actionType)",
-"service": "String",
-"tier": "Collection(microsoft.graph.SecureScore.tier)",
-"userImpact": "Collection(microsoft.graph.SecureScore.ranking)",
-"implementationCost ": "Collection(microsoft.graph.SecureScore.ranking)",
-"rank ": "Int32",
-"threats": "Collection(microsoft.graph.SecureScore.threat)",
-"deprecated ": "Boolean",
-"remediation": "String",
-"remediationImpact ": "String",
-"actionUrl": "String",
-"controlStateUpdates": "Collection(microsoft.graph.SecureScore.controlStateUpdates)",
-"tenantNotes": "String",
-"upn": "String",
-"comments": "String",
+  "title": "String",
+  "azureTenantId": "String (identifier)",
+  "maxScore": 1024.13,
+  "actionType": "String",
+  "service": "String",
+  "tier": "String",
+  "userImpact": "string",
+  "implementationCost ": "String",
+  "rank ": 100,
+  "threats": ["string"],
+  "deprecated ": false,
+  "remediation": "String",
+  "remediationImpact ": "String",
+  "actionUrl": "String",
+  "controlStateUpdates": [{"@odata.type": "microsoft.graph.secureScoreControlStateUpdate"}],
+  "vendorInformation": {"@odata.type": "microsoft.graph.securityVendorInformation"},
+  "complianceInformation": [{"@odata.type": "microsoft.graph.complianceInformation"}],
+  "controlCategory": "string",
+  "lastModifiedDateTime": "String (timestamp)"
 }
 
 
@@ -98,8 +97,6 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/securescorecontrolprofiles.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

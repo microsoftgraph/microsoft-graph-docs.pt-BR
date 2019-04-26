@@ -4,12 +4,12 @@ description: Uma coleção de schedulingGroups, Shifts, timeOffReasons e timesOf
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: de3662fcf3c5a8e50493e365f6a10a8641a451df
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 48b3b5c118a39442469bc6155068664fcebe0ec2
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563093"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343518"
 ---
 # <a name="schedule-resource-type"></a>tipo de recurso Schedule
 
@@ -31,7 +31,7 @@ Uma coleção de objetos de grupo de [agendamento](schedulinggroup.md) , objetos
 | id                    |`string`  |A ID da tarefa `schedule`.|
 | enabled               |`bool`    | Indica se o cronograma está habilitado para a equipe. Obrigatório.|
 | timeZone              |`string`  | Indica o fuso horário da equipe de agendamento usando o formato de banco de dados da TZ. Obrigatório.|
-| provisionStatus       |`enum`    | O status do provisionamento de agendamento. |
+| provisionStatus       |`operationStatus`    | O status do provisionamento de agendamento. Os valores possíveis são `notStarted`: `running` `completed`,, `failed`,. |
 | provisionStatusCode   |`string`  | Informações adicionais sobre por que o provisionamento de agendamento falhou. |
 
 
@@ -74,8 +74,6 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/schedule.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

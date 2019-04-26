@@ -4,12 +4,12 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SharingLink
 localization_priority: Normal
-ms.openlocfilehash: 7f0ecdbb498ee75133ec9499027f7cfdc6191327
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c5a08ca3a1a7b91d5cd2277a71f1301adf5edc93
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32583820"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343070"
 ---
 # <a name="sharinglink-resource-type"></a>tipo de recurso sharingLink
 
@@ -47,7 +47,7 @@ Veja a seguir uma representação JSON do recurso.
 | aplicativo    | [identity][]  | O aplicativo ao qual o link está associado.
 | type           | String        | O tipo do link criado.
 | scope          | Cadeia de caracteres        | O escopo do link representado por esta permissão. O valor `anonymous` indica que o link é utilizável por qualquer pessoa; `organization` indica que o link só é útil para usuários conectados ao mesmo locatário.
-| preventsDownload | Booliano       | Se true, o usuário só pode usar este link para exibir o item na Web e não pode usá-lo para baixar o conteúdo do item. Somente para o OneDrive for Business e o SharePoint.
+| preventsDownload | Boolean       | Se true, o usuário só pode usar este link para exibir o item na Web e não pode usá-lo para baixar o conteúdo do item. Somente para o OneDrive for Business e o SharePoint.
 | webHtml        | String        | Para links `embed`, essa propriedade contém o código HTML para um elemento `<iframe>` que inserirá o item em uma página da Web.
 | webUrl         | String        | Uma URL que abre o item no navegador no site do OneDrive.
 
@@ -83,8 +83,6 @@ A tabela a seguir define os valores possíveis para a propriedade **Scope** .
   "keywords": "sharing,sharing link, sharing url, webUrl",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/sharinglink.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

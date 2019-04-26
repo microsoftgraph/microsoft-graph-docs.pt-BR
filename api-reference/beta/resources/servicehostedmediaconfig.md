@@ -4,12 +4,12 @@ description: O tipo serviceHostedMediaConfig.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 2ab19f992dd7fac48844cd46a0600a0242517709
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fbd59694940d6d0b3abea1a8d56bd426a3dfbb3a
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32463275"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343291"
 ---
 # <a name="servicehostedmediaconfig-resource-type"></a>tipo de recurso serviceHostedMediaConfig
 
@@ -22,7 +22,7 @@ O tipo serviceHostedMediaConfig.
 | Propriedade                    | Tipo                                                        | Descrição                                       |
 | :-------------------------- | :---------------------------------------------------------- | :-------------------------------------------------|
 | preFetchMedia               | coleção [mediaInfo](mediainfo.md)                        | A lista de mídias a buscar previamente.                   |
-| removeFromDefaultAudioGroup | Booliano                                                     | Remover o próprio participante do grupo de áudio padrão. |
+| removeFromDefaultAudioGroup | Boolean                                                     | Remover o próprio participante do grupo de áudio padrão. |
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -33,11 +33,12 @@ Veja a seguir uma representação JSON do recurso.
   "optionalProperties": [
     "preFetchMedia"
   ],
+  "baseType": "microsoft.graph.mediaConfig",
   "@odata.type": "microsoft.graph.serviceHostedMediaConfig"
 }-->
 ```json
 {
-  "preFetchMedia": [ { "@odata.type": "#microsoft.graph.mediaInfo" } ],
+  "preFetchMedia": [ { "@odata.type": "microsoft.graph.mediaInfo" } ],
   "removeFromDefaultAudioGroup": true
 }
 ```
@@ -73,8 +74,6 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/servicehostedmediaconfig.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

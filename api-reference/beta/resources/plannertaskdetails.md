@@ -4,12 +4,12 @@ description: O recurso **plannerTaskDetails** representa as informações adicio
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 579ecdbf43275de90468883d158af725eb1d1734
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d11b0ca1f6090c65a1c5eaa45ce368d102994299
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563597"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344361"
 ---
 # <a name="plannertaskdetails-resource-type"></a>tipo de recurso plannerTaskDetails
 
@@ -23,14 +23,14 @@ O recurso **plannerTaskDetails** representa as informações adicionais sobre um
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Obter plannerTaskDetails](../api/plannertaskdetails-get.md) | [plannerTaskDetails](plannertaskdetails.md) |Leia as propriedades e os relacionamentos do objeto **plannerTaskDetails** .|
-|[Update](../api/plannertaskdetails-update.md) | [plannerTaskDetails](plannertaskdetails.md)    |Atualize o objeto **plannerTaskDetails** . |
+|[Atualizar](../api/plannertaskdetails-update.md) | [plannerTaskDetails](plannertaskdetails.md)    |Atualize o objeto **plannerTaskDetails** . |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
 |verificação|[plannerChecklistItems](plannerchecklistitems.md)|A coleção de itens de lista de verificação na tarefa.|
-|description|String|Descrição da tarefa|
-|id|String| Somente leitura. ID dos detalhes da tarefa. Tem 28 caracteres e diferencia maiúsculas de minúsculas. [Formatar validação](tasks-identifiers-disclaimer.md) é feito no serviço.|
+|description|Cadeia de caracteres|Descrição da tarefa|
+|id|Cadeia de caracteres| Somente leitura. ID dos detalhes da tarefa. Tem 28 caracteres e diferencia maiúsculas de minúsculas. [Formatar validação](tasks-identifiers-disclaimer.md) é feito no serviço.|
 |previewType|string|Isso define o tipo de visualização que aparece na tarefa. Os valores possíveis são: `automatic`, `noPreview`, `checklist`, `description`, `reference`. Quando definido para `automatic` a visualização exibida é escolhido pelo aplicativo que está exibindo a tarefa.|
 |Referencie|[plannerExternalReferences](plannerexternalreferences.md)|A coleção de referências na tarefa.|
 

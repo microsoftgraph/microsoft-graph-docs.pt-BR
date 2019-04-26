@@ -4,12 +4,12 @@ description: O recurso **plannerPlanDetails** representa as informações adicio
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 9d10f5b04bc3b98a5e32eac7b577cbf4c582bab4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 51bc28e93f7978fb080969de413db4e804918f6d
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32522129"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344395"
 ---
 # <a name="plannerplandetails-resource-type"></a>tipo de recurso plannerPlanDetails
 
@@ -23,7 +23,7 @@ O recurso **plannerPlanDetails** representa as informações adicionais sobre um
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Obter plannerPlanDetails](../api/plannerplandetails-get.md) | [plannerPlanDetails](plannerplandetails.md) |Leia as propriedades e os relacionamentos de um objeto **plannerPlanDetails** .|
-|[Update](../api/plannerplandetails-update.md) | [plannerPlanDetails](plannerplandetails.md)    |Atualizar um objeto **plannerPlanDetails** . |
+|[Atualizar](../api/plannerplandetails-update.md) | [plannerPlanDetails](plannerplandetails.md)    |Atualizar um objeto **plannerPlanDetails** . |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
@@ -67,8 +67,6 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/plannerplandetails.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

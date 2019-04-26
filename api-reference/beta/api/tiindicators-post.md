@@ -5,11 +5,11 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 ms.openlocfilehash: 440515a45b4c530f32dd20fe29497e338b54a6bf
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32537011"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33335219"
 ---
 # <a name="create-threat-intelligence-indicator"></a>Criar indicador de inteligência de ameaças
 

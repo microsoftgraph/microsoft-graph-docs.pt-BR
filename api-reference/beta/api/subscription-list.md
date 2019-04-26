@@ -3,12 +3,12 @@ title: Listar de assinaturas
 description: " Veja os cenários abaixo para obter detalhes."
 localization_priority: Normal
 author: piotrci
-ms.openlocfilehash: 20aad712bc49f91bec58a67c0c66ef76bf4653e2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3ffcf78c7df28faba22b92a7389f473f0ea91613
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32537087"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33335808"
 ---
 # <a name="list-subscriptions"></a>Listar de assinaturas
 
@@ -24,7 +24,7 @@ Essa API suporta os seguintes escopos de permissão; para saber mais, incluindo 
 |:---------------- |:-------------------------------------------- |
 | [Delegado](/graph/auth-v2-user) (conta corporativa ou de estudante) | Permissão necessária para [criar assinatura](subscription-post-subscriptions.md) ou assinatura. Read. All (veja abaixo). |
 | [Delegado](/graph/auth-v2-user) (conta pessoal da Microsoft) | Permissão necessária para [criar assinatura](subscription-post-subscriptions.md) ou assinatura. Read. All (veja abaixo). |
-| [Aplicativo](/graph/auth-v2-service) | Permissão necessária para [criar a assinatura](subscription-post-subscriptions.md). |
+| [Application](/graph/auth-v2-service) | Permissão necessária para [criar a assinatura](subscription-post-subscriptions.md). |
 
 Os resultados da resposta são baseados no contexto do aplicativo de chamada. Veja a seguir um resumo dos cenários comuns:
 
@@ -92,7 +92,7 @@ Veja a seguir um exemplo da resposta. Observação: a resposta mostrada aqui pod
 
 <!-- {
   "blockType": "response",
-  "truncated": false,
+  "truncated": true,
   "@odata.type": "microsoft.graph.subscription",
   "isCollection": true
 } -->
@@ -128,9 +128,7 @@ Content-length: 586
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/subscription-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->
 

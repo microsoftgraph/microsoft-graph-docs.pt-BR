@@ -4,12 +4,12 @@ description: Você pode obter uma visão de alto nível do valor que você está
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: f25d752a179eac68b34465010ce6f2cb7fab08e8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 856680732b7dce1b6e0b83105c64d86b72897967
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32584069"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343154"
 ---
 # <a name="sharepoint-site-usage-reports"></a>Relatórios de uso do site do SharePoint
 
@@ -28,11 +28,3 @@ Você pode obter uma visão de alto nível do valor que você está obtendo do S
 | [Obter contagens do site](../api/reportroot-getsharepointsiteusagesitecounts.md) | Fluxo          | [sharePointSiteUsageSiteCounts](../resources/sharepointsiteusagesitecounts.md) | Obtenha o número total de arquivos em todos os sites e o número de arquivos ativos. Um arquivo (usuário ou sistema) é considerado ativo se ele foi salvo, sincronizado, modificado ou compartilhado dentro do período de tempo especificado. |
 | [Obter armazenamento](../api/reportroot-getsharepointsiteusagestorage.md) | Fluxo          | [siteUsageStorage](../resources/siteusagestorage.md) | Obtenha a tendência de armazenamento alocado e consumido durante o período de relatório. |
 | [Obter páginas](../api/reportroot-getsharepointsiteusagepages.md) | Fluxo          | [sharePointSiteUsagePages](../resources/sharepointsiteusagepages.md) | Obtenha o número de páginas visualizadas em todos os sites. |
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/sharepoint-site-usage-reports.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

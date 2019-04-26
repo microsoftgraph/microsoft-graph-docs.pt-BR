@@ -2,12 +2,12 @@
 title: Visão geral da API de sincronização do Azure AD
 description: ') permite automatizar a criação, a manutenção e a remoção de identidades em aplicativos de nuvem (software como serviço ou SaaS) como o Dropbox, Salesforce, ServiceNow e muito mais. Você pode usar as APIs de sincronização no Microsoft Graph para gerenciar a sincronização de identidade de forma programática, incluindo:'
 localization_priority: Normal
-ms.openlocfilehash: ed994b8204fdee38f558da499259538e85eacd30
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e472acc60e74c6a22a744d84e7e4dcf672337a6e
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32523459"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342899"
 ---
 # <a name="azure-ad-synchronization-api-overview"></a>Visão geral da API de sincronização do Azure AD
 
@@ -69,7 +69,7 @@ O exemplo a seguir mostra como localizar o objeto de entidade de serviço por no
 GET https://graph.microsoft.com/beta/servicePrincipals?$select=id,appId,displayName&$filter=startswith(displayName, 'salesforce')
 ```
 
-**Response**
+**Resposta**
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -100,7 +100,7 @@ O exemplo a seguir mostra como localizar o objeto de entidade de serviço por ID
 GET https://graph.microsoft.com/beta/servicePrincipals?$select=id,appId,displayName&$filter=AppId eq '219561ee-1480-4c67-9aa6-63d861fae3ef'
 ```
 
-**Response**
+**Resposta**
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
@@ -126,7 +126,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs
 GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a53b658cb5e1/synchronization/jobs
 ```
 
-**Response**
+**Resposta**
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
@@ -157,7 +157,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs
 GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a53b658cb5e1/synchronization/jobs/SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa
 ```
 
-**Response**
+**Resposta**
 <!-- { "blockType": "ignored" } -->
 ```http
     HTTP/1.1 200 OK
@@ -182,7 +182,7 @@ O exemplo a seguir mostra como obter o esquema de sincronização.
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema
 ```
 
-**Response**
+**Resposta**
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
@@ -198,11 +198,3 @@ HTTP/1.1 200 OK
 
 
 
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/synchronization-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

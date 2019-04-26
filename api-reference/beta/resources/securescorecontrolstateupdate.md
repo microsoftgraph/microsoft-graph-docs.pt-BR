@@ -2,12 +2,12 @@
 title: " tipo de recurso secureScoreControlStateUpdate"
 description: Este recurso contém o histórico de Estados de controle atualizados pelo usuário (os Estados de controle incluem Default, ignorado, terceiros).
 localization_priority: Normal
-ms.openlocfilehash: 8d8c3122a6263ebc7b10b5edfb823953e2d587fc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 24febeb4bfb055e89e59cdb4f79c8b60c6c40347
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32549136"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343357"
 ---
  #  <a name="securescorecontrolstateupdate-resource-type"></a>tipo de recurso secureScoreControlStateUpdate
 Contém o histórico dos Estados de controle atualizados pelo usuário (os Estados de controle incluem padrão, ignorado, terceiros, reVisado).
@@ -18,7 +18,7 @@ Contém o histórico dos Estados de controle atualizados pelo usuário (os Estad
 |comentário | string | Fornece comentários opcionais sobre o controle |
 |estado | string | O estado do controle pode ser modificado usando o comando PATCH (ex: ignorado, terceiros etc.) |
 |updatedBy | string |ID do usuário que atualizou o estado do locatário |
-|updatedDateTime | DateTimeOffset? |Hora em que o estado de controle foi atualizado |
+|updatedDateTime | DateTimeOffset |Hora em que o estado de controle foi atualizado |
  ## <a name="json-representation"></a>Representação JSON
  Veja a seguir uma representação JSON do recurso.
  <!-- {
@@ -30,10 +30,10 @@ Contém o histórico dos Estados de controle atualizados pelo usuário (os Estad
  ```json
 {
   "assignedTo": "String",
-  "comment": "Double",
-  "state": "Double",
-  "updatedBy": "Double",
-  "updatedDateTime": "Double"
+  "comment": "string",
+  "state": "string",
+  "updatedBy": "string",
+  "updatedDateTime": "DateTimeOffset"
 }
  ```
  <!-- {

@@ -2,12 +2,12 @@
 title: tipo de recurso oAuth2PermissionGrant
 description: Representa os escopos (permissões delegadas) do OAuth 2,0 que foram concedidos a um aplicativo (representado por uma entidade de serviço) como parte do processo de consentimento de administrador ou usuário.
 localization_priority: Normal
-ms.openlocfilehash: ea6486aedca4c3fcf73e59a5652ccf517fb01ddc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f23d2e7a8b57b324a92a1268ab4cc0393d8906f0
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581524"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342062"
 ---
 # <a name="oauth2permissiongrant-resource-type"></a>tipo de recurso oAuth2PermissionGrant
 
@@ -24,7 +24,7 @@ Veja a seguir uma representação JSON do recurso
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.oAuth2Permissiongrant"
+  "@odata.type": "microsoft.graph.oAuth2PermissionGrant"
 }-->
 
 ```json
@@ -48,7 +48,7 @@ Veja a seguir uma representação JSON do recurso
 |expiryTime|DateTimeOffset| No momento, o valor de tempo de expiração é ignorado. |
 |id|String| Identificador exclusivo. Somente leitura.|
 |principalId|String| Se consenttype for *servicePrincipalName* , esse valor será nulo e o consentimento se aplicará a todos os usuários da organização. Se consenttype for *principal*, essa propriedade especificará a ID do usuário que receberá o consentimento e se aplicará somente para esse usuário. |
-|resourceId|String| Especifica a ID da entidade de serviço de recurso para a qual o acesso foi concedido. |
+|resourceId|Cadeia de caracteres| Especifica a ID da entidade de serviço de recurso para a qual o acesso foi concedido. |
 |escopo|String| Especifica o valor da declaração do [escopo](/graph/permissions-reference) que o aplicativo de recursos deve esperar no token de acesso do OAuth 2,0. Por exemplo, *User. Read* |
 |startTime|DateTimeOffset| No momento, o valor de hora de início é ignorado. |
 
@@ -74,8 +74,6 @@ Nenhuma
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/oauth2permissiongrant.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

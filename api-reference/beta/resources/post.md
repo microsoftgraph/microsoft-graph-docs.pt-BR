@@ -4,12 +4,12 @@ description: Representa um item de postagem individual em uma entidade conversta
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 554892bdfed45d0fba9b90a084db67c0bb329486
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: abfd2b19681b9821377830f1696fa6f754afd711
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563585"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344205"
 ---
 # <a name="post-resource-type"></a>tipo de recurso post
 
@@ -66,16 +66,16 @@ Veja a seguir uma representação JSON do recurso
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|corpo|[itemBody](itembody.md)|O conteúdo da postagem. Esta é uma propriedade padrão. Esta propriedade pode ser nula.|
+|body|[itemBody](itembody.md)|O conteúdo da postagem. Esta é uma propriedade padrão. Esta propriedade pode ser nula.|
 |categories|Coleção de cadeias de caracteres|As categorias associadas à postagem. Cada categoria corresponde à propriedade **DisplayName** de um [outlookCategory](outlookcategory.md) que foi definido para um usuário.|
-|changeKey|String|Identifica a versão da postagem. Toda vez que a postagem muda, ChangeKey também muda. Isso permite que o Exchange aplique alterações na versão correta do objeto.|
+|changeKey|Cadeia de caracteres|Identifica a versão da postagem. Toda vez que a postagem muda, ChangeKey também muda. Isso permite que o Exchange aplique alterações na versão correta do objeto.|
 |conversationId|String|ID exclusiva da conversa. Somente leitura.|
 |conversationThreadId|String|ID exclusiva do thread de conversa. Somente leitura.|
 |createdDateTime|DateTimeOffset|Especifica quando a postagem foi criada. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |from|[recipient](recipient.md)|Usado em cenários de acesso de representante. Indica quem postou a mensagem em nome de outro usuário. Esta é uma propriedade padrão.|
 |hasAttachments|Booliano|Indica se a postagem tem pelo menos um anexo. Esta é uma propriedade padrão.|
 |id|String| Somente leitura.|
-|importance | Cadeia de caracteres | A importância de um grupo post: `low`, `normal`, `high`. |
+|importance | String | A importância de um grupo post: `low`, `normal`, `high`. |
 |lastModifiedDateTime|DateTimeOffset|Especifica quando a postagem foi modificada pela última vez. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |newParticipants|Coleção [recipient](recipient.md)|Participantes da conversa que foram adicionados ao thread como parte desta postagem.|
 |receivedDateTime|DateTimeOffset|Especifica quando a postagem foi recebida. O tipo DateTimeOffset representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
@@ -99,8 +99,8 @@ Veja a seguir uma representação JSON do recurso
 |[Responder](../api/post-reply.md)|Nenhum|Responda a uma postagem e adicione uma nova postagem ao thread especificado em uma conversa de grupo.|
 |[Encaminhar](../api/post-forward.md)|Nenhuma|Encaminhe uma postagem para um destinatário.|
 |**Anexos**| | |
-|[Listar anexos](../api/post-list-attachments.md) |Coleção [attachment](attachment.md)| Obtenha todos os anexos em uma postagem.|
-|[Add attachment](../api/post-post-attachments.md) |[attachment](attachment.md)| Adicione um anexo a uma postagem. |
+|[List attachments](../api/post-list-attachments.md) |Coleção [attachment](attachment.md)| Obtenha todos os anexos em uma postagem.|
+|[Add attachment](../api/post-post-attachments.md) |[anexo](attachment.md)| Adicione um anexo a uma postagem. |
 |**Extensões abertas**| | |
 |[Criar extensão aberta](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Crie uma extensão aberta e adicione propriedades personalizadas a uma instância nova ou existente de um recurso.|
 |[Obter extensão aberta](../api/opentypeextension-get.md) |Coleção [openTypeExtension](opentypeextension.md)| Obtenha uma extensão aberta identificada pelo nome da extensão.|

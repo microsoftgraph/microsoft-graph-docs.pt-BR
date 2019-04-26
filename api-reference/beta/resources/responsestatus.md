@@ -2,12 +2,12 @@
 title: Tipo de recurso responseStatus
 description: O status de resposta de uma solicitação de reunião.
 localization_priority: Normal
-ms.openlocfilehash: 270c432235b929af2cb55ff63e10397fea5f92fb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8ec4b5f74fa8d83369c23f829b34dfa0ed53a1a1
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562983"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343574"
 ---
 # <a name="responsestatus-resource-type"></a>Tipo de recurso responseStatus
 

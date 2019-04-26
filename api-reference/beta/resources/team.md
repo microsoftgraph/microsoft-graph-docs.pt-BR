@@ -4,12 +4,12 @@ description: 'No Microsoft Teams, uma equipe é um conjunto de canais. '
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 01bfcc5a036e2df8f91aad7ad06aa71ba41f1e28
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 1fdf5a0ac96279054b5923e368d879409ab9ce85
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30967598"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583183"
 ---
 # <a name="team-resource-type"></a>tipo de recurso de equipe
 
@@ -67,7 +67,9 @@ Confira mais informações sobre como trabalhar com grupos e membros em equipes,
 |installedApps|Coleção [teamsAppInstallation](teamsappinstallation.md)|Os aplicativos instalados nessa equipe.|
 |owners|[user](user.md)| A lista de proprietários desta equipe. Atualmente, ao criar uma equipe usando permissões de aplicativo, exatamente um proprietário deve ser especificado. Ao usar permissões delegadas pelo usuário, nenhum proprietário pode ser especificado (o usuário atual é o proprietário). O proprietário deve ser especificado como um objeto ID (GUID), não um UPN. |
 |operations|Coleção [teamsAsyncOperation](teamsasyncoperation.md)| As operações assíncronas que foram executadas ou estão em execução nesta equipe. | 
+|Cronograma|[Cronograma](schedule.md)| Cronograma de turno para essa equipe.|
 |template|[teamsTemplate](teamstemplate.md)| O modelo usado para criar essa equipe. Confira os [modelos disponíveis](https://docs.microsoft.com/pt-BR/MicrosoftTeams/get-started-with-teams-templates). |
+
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -85,9 +87,14 @@ Veja a seguir uma representação JSON do recurso.
   "memberSettings": {"@odata.type": "microsoft.graph.teamMemberSettings"},
   "messagingSettings": {"@odata.type": "microsoft.graph.teamMessagingSettings"},
   "funSettings": {"@odata.type": "microsoft.graph.teamFunSettings"},
-  "internalId": "19:...big.number...@thread.skype",
+  "internalId": "string",
   "isArchived": false,
-  "webUrl": "https://...longUrl..."
+  "webUrl": "string (URL)",
+  "displayName": "string",
+  "description": "string",
+  "classification": "string",
+  "specialization": "string",
+  "visibility": "string"
 }
 
 ```
@@ -101,9 +108,7 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/team.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->
 

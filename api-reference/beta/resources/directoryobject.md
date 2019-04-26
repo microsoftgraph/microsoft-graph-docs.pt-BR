@@ -4,12 +4,12 @@ description: Representa um objeto do Active Directory do Azure. O tipo **directo
 localization_priority: Priority
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 87fb1c21e2fa1e9788890d97f6afbd0b494c555e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3364af6afc4a8bf1661186a26e0f741abb6bc232
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507802"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340838"
 ---
 # <a name="directoryobject-resource-type"></a>Tipo de recurso directoryObject
 
@@ -31,8 +31,8 @@ Esse recurso permite:
 |[getMemberGroups](../api/directoryobject-getmembergroups.md)|Coleção de cadeias de caracteres|Retorne todos os grupos dos quais o objeto de usuário, grupo ou diretório é membro. A verificação é transitiva.|
 |[getMemberObjects](../api/directoryobject-getmemberobjects.md)|Coleção de cadeias de caracteres| Retorne todos os grupos e funções de diretório dos quais o objeto de usuário, grupo ou diretório é membro. A verificação é transitiva. |
 |[getByIds](../api/directoryobject-getbyids.md) | Coleção [directoryObject](directoryobject.md) | Obtenha um conjunto de objetos de diretório com base em um conjunto de ids fornecidas. |
-|[validateProperties](../api/directoryobject-validateproperties.md)|JSON| Validar um nome de exibição ou um apelido de email do grupo do Office 365 em conformidade com as políticas de nomenclatura. |
-|[delta](../api/directoryobject-delta.md)|Coleção directoryObject| Obtenha alterações incrementais para objetos de diretório. Oferece suporte à filtragem por tipo derivado. |
+|[validateProperties](../api/directoryobject-validateproperties.md)|Json| Validar um nome de exibição ou um apelido de email do grupo do Office 365 em conformidade com as políticas de nomenclatura. |
+|[delta](../api/directoryobject-delta.md)|Coleção [directoryObject](directoryobject.md)| Obtenha alterações incrementais para objetos de diretório. Oferece suporte à filtragem por tipo derivado. |
 
 ## <a name="properties"></a>Propriedades
 
@@ -54,7 +54,8 @@ Veja a seguir uma representação JSON do recurso
 
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.directoryObject"
+  "@odata.type": "microsoft.graph.directoryObject",
+  "openType": true
 }-->
 
 ```json
@@ -73,8 +74,6 @@ Veja a seguir uma representação JSON do recurso
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/directoryobject.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

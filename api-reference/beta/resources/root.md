@@ -4,14 +4,16 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Jailbreak
 localization_priority: Normal
-ms.openlocfilehash: 8c320a34d22af5fc73a1c5d8c96dce14e176946f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 83211263f4ba7998ea9e1863756f5aba7b6ff070
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563096"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343504"
 ---
 # <a name="root-resource-type"></a>Tipo de recurso Root
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A faceta **Root** indica que um objeto é o mais alto em sua hierarquia.
 A presença (não nulo) do valor da faceta indica que o objeto é a raiz.
@@ -33,8 +35,11 @@ Um valor nulo (ou ausente) indica que o objeto não é a raiz.
 O recurso **Root** não tem propriedades.
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "section": "documentation",
-  "tocPath": "Facets/Root"
-} -->
+  "tocPath": "Facets/Root",
+  "suppressions": []
+}
+-->

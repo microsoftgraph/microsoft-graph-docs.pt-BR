@@ -2,12 +2,12 @@
 title: tipo de recurso privilegedRoleAssignment
 description: 'Representa uma atribuição de função privilegiada para um usuário específico. '
 localization_priority: Normal
-ms.openlocfilehash: 479b6d46dc479134fd0abb46b1a9ffe478611a82
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1e58f144eb3dda19225a836aa966f9479d3a9350
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563393"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344210"
 ---
 # <a name="privilegedroleassignment-resource-type"></a>tipo de recurso privilegedRoleAssignment
 
@@ -23,7 +23,7 @@ Representa uma atribuição de função privilegiada para um usuário específic
 |[Listar privilegedRoleAssignment coleção](../api/privilegedroleassignment-list.md) | [privilegedRoleAssignment](privilegedroleassignment.md) collection|Obtenha a coleção de objetos privilegedRoleAssignment.|
 |[Get privilegedRoleAssignment](../api/privilegedroleassignment-get.md) | [privilegedRoleAssignment](privilegedroleassignment.md) |Leia as propriedades e os relacionamentos do objeto privilegedRoleAssignment.|
 |[Criar tarefa](../api/privilegedroleassignment-post-privilegedroleassignments.md) |[privilegedRoleAssignment](privilegedroleassignment.md)| Crie uma nova atribuição postando na coleção assignments.|
-|[Excluir](../api/privilegedroleassignment-delete.md) | Nenhum |Exclua um objeto privilegedRoleAssignment. |
+|[Delete](../api/privilegedroleassignment-delete.md) | Nenhum |Exclua um objeto privilegedRoleAssignment. |
 |[makePermanent](../api/privilegedroleassignment-makepermanent.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|Torne a atribuição de função como permanente.|
 |[makeEligible](../api/privilegedroleassignment-makeeligible.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|Tornar a atribuição de função como qualificada.|
 |[my](../api/privilegedroleassignment-my.md)|[privilegedRoleAssignment](privilegedroleassignment.md) collection|Obtenha as atribuições de função privilegiada do usuário atual.|

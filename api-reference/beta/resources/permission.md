@@ -4,12 +4,12 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Permissão
 localization_priority: Normal
-ms.openlocfilehash: 12390583dcb1a87a5c9492ae3dcbcb132a66f69c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: e8a4adaa3c1d41270e172f9d0b0e1bf3829927c5
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568253"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344937"
 ---
 # <a name="permission-resource-type"></a>tipo de recurso Permission
 
@@ -71,7 +71,7 @@ Veja a seguir uma representação JSON do recurso.
 | funções               | Collection(String)          | O tipo de permissão, por exemplo, `read`. Veja abaixo a lista completa de funções. Somente leitura.
 | shareId             | String                      | Um token exclusivo que pode ser usado para acessar esse item compartilhado por meio da **[API][]** de compartilhamentos. Somente leitura.
 | expirationDateTime  | DateTimeOffset              | Um formato de yyyy-MM-ddTHH: mm: ssZ de DateTimeOffset indica o tempo de expiração da permissão. DateTime. MinValue indica que não há validade configurada para essa permissão. Opcional.
-| hasPassword         | Booliano                     | Isso indica se a senha está definida para essa permissão, ela só será mostrada em resposta. Opcional e somente leitura e somente para o OneDrive Personal.
+| hasPassword         | Boolean                     | Isso indica se a senha está definida para essa permissão, ela só será mostrada em resposta. Opcional e somente leitura e somente para o OneDrive Personal.
 
 ### <a name="roles-enumeration-values"></a>Valores de enumeração de funções
 
@@ -225,7 +225,7 @@ Depois que o convite de compartilhamento tiver sido resgatado por um usuário, a
 | [Obter permissão](../api/permission-get.md)               | `GET /drive/items/{item-id}/permissions/{id}`
 | [Criar link] [CreateLink]                                | `POST /drive/items/{item-id}/createLink`
 | [Convidar pessoas] [convidar]                                  | `POST /drive/items/{item-id}/invite`
-| [Update](../api/permission-update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
+| [Atualizar](../api/permission-update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
 | [Delete](../api/permission-delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`
 
 
@@ -247,8 +247,6 @@ Depois que o convite de compartilhamento tiver sido resgatado por um usuário, a
   "keywords": "sharing,permissions,read,write,acl",
   "section": "documentation",
   "tocPath": "Resources/Permission",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/permission.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -4,12 +4,12 @@ ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: NumberColumn
 localization_priority: Normal
-ms.openlocfilehash: edd495b62f0ccbd163ec31a2efca70923d0bc8ad
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f70a1d71729be68fc4d5dcb3de2599ff131bb8a9
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32463289"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342090"
 ---
 # <a name="numbercolumn-resource-type"></a>Tipo de recurso NumberColumn
 
@@ -62,8 +62,6 @@ Essas propriedades podem ser atualizadas.
   "keywords": "",
   "section": "documentation",
   "tocPath": "Resources/NumberColumn",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/numberColumn.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

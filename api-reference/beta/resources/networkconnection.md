@@ -2,12 +2,12 @@
 title: tipo de recurso networkConnection
 description: " > **Importante:** as APIs na versão /beta no Microsoft Graph estão em visualização e sujeitas a alterações. Não há suporte para o uso dessas APIs em aplicativos de produção."
 localization_priority: Normal
-ms.openlocfilehash: ce7de8d5a0f63c4d924e8092e4e9e05f984ec335
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 94bf27265f591d32c01e7043d3a10468a924d78a
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32570719"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342195"
 ---
 # <a name="networkconnection-resource-type"></a>tipo de recurso networkConnection
 
@@ -31,12 +31,40 @@ Contém informações de estado sobre a conexão de rede relacionada ao alerta.
 |natDestinationPort|String|Porta de destino de conversão de endereço de rede.|
 |natSourceAddress|String|Endereço IP de origem de conversão de endereço de rede.|
 |natSourcePort|String|Porta de origem de conversão de endereço de rede.|
-|RDP|[securityNetworkProtocol](securitynetworkprotocolenumtype.md)|Protocolo de rede. Os valores possíveis são `unknown`: `ip`, `icmp`, `igmp`, `ggp`, `ipv4`, `tcp`, `pup`, `udp`, `idp` `ipv6` `ipv6RoutingHeader`,,, `ipv6FragmentHeader`, `ipSecEncapsulatingSecurityPayload`, `ipSecAuthenticationHeader`, `icmpV6`, `ipv6NoNextHeader`, `ipv6DestinationOptions`, `nd` ,,,,,,,, , `raw`, `ipx`, `spx`, `spxII`.|
+|RDP|securityNetworkProtocol|Protocolo de rede. Os valores possíveis são `unknown`: `ip`, `icmp`, `igmp`, `ggp`, `ipv4`, `tcp`, `pup`, `udp`, `idp` `ipv6` `ipv6RoutingHeader`,,, `ipv6FragmentHeader`, `ipSecEncapsulatingSecurityPayload`, `ipSecAuthenticationHeader`, `icmpV6`, `ipv6NoNextHeader`, `ipv6DestinationOptions`, `nd` ,,,,,,,, , `raw`, `ipx`, `spx`, `spxII`.|
 |riskScore|String|Provedor gerado/Pontuação de risco calculado da conexão de rede. O intervalo de valor recomendado de 0-1, que é igual a uma porcentagem.|
 |sourceAddress|String|Endereço IP de origem (ou seja, origem) (da conexão de rede).|
 |sourcePort|String|Porta IP de origem (ou seja, origem) (da conexão de rede).|
 |status|connectionStatus|Status da conexão de rede. Os valores possíveis são: `unknown`, `attempted`, `succeeded`, `blocked`, `failed`.|
 |urlParameters|String|Parâmetros (sufixo) da URL de destino.|
+
+### <a name="securitynetworkprotocol-values"></a>valores de securityNetworkProtocol
+
+|Membro|Valor|Descrição|
+|:---|:---|:---|
+|desconhecido|-1|Protocolo desconhecido.|
+|IP|,0|Protocolo de Internet.|
+|ICMP|1 | Protocolo de mensagens de controle da Internet.|
+|IGMP|2 | Protocolo de gerenciamento de grupos da Internet.|
+|GGP|3 | Gateway para protocolo gateway.|
+|IPv4|4 | Protocolo IP versão 4.|
+|tcp|6 | Protocolo de controle de transmissão.|
+|confiável|12| Protocolo de pacote universal do PARC.|
+|via|17 | Protocolo de dataGrama de usuário.|
+|IDP|22| Protocolo de dataGrama da Internet.|
+|IPv6|41| Protocolo IP versão 6 (IPv6).|
+|ipv6RoutingHeader|43| cabeçalho de roteamento IPv6.|
+|ipv6FragmentHeader|44| cabeçalho de fragmento IPv6.|
+|ipSecEncapsulatingSecurityPayload|50| cabeçalho de carga de segurança de encapsulamento IPv6.|
+|ipSecAuthenticationHeader|51| cabeçalho de autenticação IPv6.|
+|icmpV6|58| Protocolo de mensagens de controle da Internet para IPv6.|
+|ipv6NoNextHeader|59| IPv6 sem cabeçalho seguinte.|
+|ipv6DestinationOptions|60| cabeçalho de opções de destino IPv6.|
+|término|77| Protocolo de disco de rede (não oficial).|
+|-|255| Protocolo de pacote IP bruto.|
+|roteador|1000| Protocolo Internet Packet Exchange.|
+|SPX|1256| Protocolo de troca de pacotes sequenciado.|
+|spxII|1257| Protocolo de troca de pacotes de versão 2.|
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -57,18 +85,18 @@ Veja a seguir uma representação JSON do recurso.
   "destinationDomain": "String",
   "destinationPort": "String",
   "destinationUrl": "String",
-  "direction": "@odata.type: microsoft.graph.connectionDirection",
+  "direction": "String",
   "domainRegisteredDateTime": "String (timestamp)",
   "localDnsName": "String",
   "natDestinationAddress": "String",
   "natDestinationPort": "String",
   "natSourceAddress": "String",
   "natSourcePort": "String",
-  "protocol": "@odata.type: microsoft.graph.securityNetworkProtocol",
+  "protocol": "string",
   "riskScore": "String",
   "sourceAddress": "String",
   "sourcePort": "String",
-  "status": "@odata.type: microsoft.graph.connectionStatus",
+  "status": "String",
   "urlParameters": "String"
 }
 
@@ -83,8 +111,6 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/networkconnection.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

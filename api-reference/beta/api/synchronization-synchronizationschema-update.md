@@ -2,12 +2,12 @@
 title: Atualizar synchronizationSchema
 description: Atualize o esquema de sincronização de um determinado trabalho ou modelo. Esse método substitui completamente o esquema atual pelo fornecido na solicitação. Para atualizar o esquema de um modelo, faça a chamada no objeto Application. Você deve ser o proprietário do aplicativo.
 localization_priority: Normal
-ms.openlocfilehash: 13ee7d996b0e02834b77cd222380747c02d7fcc2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3c61c39ac6e4b263dd9e5805fbccc1b7bb55d74d
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32536954"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33335582"
 ---
 # <a name="update-synchronizationschema"></a>Atualizar synchronizationSchema
 
@@ -57,6 +57,7 @@ Veja a seguir um exemplo de uma solicitação.
 }-->
 ```http
 PUT https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema
+Content-type: application/json
 
 {
     "directories": [
@@ -121,8 +122,6 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/synchronization-synchronizationschema-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

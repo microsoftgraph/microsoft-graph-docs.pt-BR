@@ -5,11 +5,11 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 ms.openlocfilehash: 8f789dab438316f16b9c2607947fa08b7fcefdc2
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32522017"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343389"
 ---
 # <a name="securityactionstate-resource-type"></a>tipo de recurso securityActionState
 

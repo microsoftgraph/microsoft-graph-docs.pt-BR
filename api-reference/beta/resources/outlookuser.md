@@ -4,12 +4,12 @@ description: Representa os serviços do Outlook disponíveis para um usuário.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: a649de502728bbc51ac53e072c08d95291d20853
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5fcc05e9cbb1e59927af0722cd8812c633e36581
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568569"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33345072"
 ---
 # <a name="outlookuser-resource-type"></a>Tipo de recurso outlookUser
 
@@ -45,6 +45,23 @@ Nenhuma
 |taskGroups|coleção [outlookTaskGroup](outlooktaskgroup.md)| Grupos de tarefas do Outlook do usuário. Somente leitura. Anulável.|
 |tarefas|coleção [outlookTask](outlooktask.md)| As tarefas do Outlook do usuário. Somente leitura. Anulável.|
 
+## <a name="json-representation"></a>Representação JSON
+
+Veja a seguir uma representação JSON do recurso
+
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "baseType":"microsoft.graph.entity",  
+  "@odata.type": "microsoft.graph.outlookUser"
+}-->
+```json
+{  
+    "id": "string"
+}
+
+```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
@@ -54,8 +71,6 @@ Nenhuma
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/outlookuser.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

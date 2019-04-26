@@ -2,12 +2,12 @@
 title: tipo de recurso privilegedRoleSettings
 description: Representa as configurações de uma função privilegiada.
 localization_priority: Normal
-ms.openlocfilehash: 7d4c14065defc63190d1d25b435c734b9f219e36
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6500d5a51fcedce97d71c1c4022c7d941de27b83
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563237"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344204"
 ---
 # <a name="privilegedrolesettings-resource-type"></a>tipo de recurso privilegedRoleSettings
 
@@ -35,7 +35,7 @@ Representa as configurações de uma função privilegiada.
 |notificationToUserOnElevation|booliano|**true** se enviar notificação para o usuário final quando a função é ativada. **false** se não enviar notificações quando a função for ativada.|
 |ticketingInfoOnElevation|booliano|**true** se as informações de tíquete são necessárias ao ativar a função. **false** se as informações de tíquete não são necessárias ao ativar a função.|
 |approvalOnElevation|booliano|**true** se a aprovação é necessária ao ativar a função. **false** se a aprovação não é necessária ao ativar a função.|
-|approverIds|array|Lista de IDs de aprovação, se a aprovação for necessária para ativação.|
+|approverIds| coleção de cadeias de caracteres |Lista de IDs de aprovação, se a aprovação for necessária para ativação.|
 
 ## <a name="relationships"></a>Relações
 Nenhum
@@ -65,7 +65,7 @@ Veja a seguir uma representação JSON do recurso.
   "notificationToUserOnElevation": true,
   "ticketingInfoOnElevation": true,
   "approvalOnElevation": false,
-  "approverIds": []
+  "approverIds": ["string"]
 }
 
 ```
@@ -79,8 +79,6 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/privilegedrolesettings.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

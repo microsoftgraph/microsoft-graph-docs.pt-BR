@@ -2,12 +2,12 @@
 title: Obter singleValueLegacyExtendedProperty
 description: Você pode obter uma única instância de recurso expandida com uma propriedade estendida específica ou uma coleção de instâncias de recurso
 localization_priority: Normal
-ms.openlocfilehash: ead4881737f4431138d444ffe8df131c22c131fc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a518e50f694d70fadc7fab4ee79a7e4860cc5cb1
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32537325"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33335879"
 ---
 # <a name="get-singlevaluelegacyextendedproperty"></a>Obter singleValueLegacyExtendedProperty
 
@@ -26,9 +26,9 @@ Há suporte para os seguintes recursos de usuário:
 - [calendar](../resources/calendar.md)
 - [contact](../resources/contact.md)
 - [contactFolder](../resources/contactfolder.md) 
-- [evento](../resources/event.md)
+- [event](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
-- [mensagem](../resources/message.md) 
+- [message](../resources/message.md) 
 - [Tarefa do Outlook](../resources/outlooktask.md)
 - [Pasta de tarefas do Outlook](../resources/outlooktaskfolder.md)
 
@@ -53,7 +53,7 @@ Dependendo do recurso para o qual você está obtendo a propriedade estendida e 
 | grupo [event](../resources/event.md) | Group.Read.All | Sem suporte | Sem suporte |
 | grupo [post](../resources/post.md) | Group.Read.All | Sem suporte | Group.Read.All |
 | [mailFolder](../resources/mailfolder.md) | Mail.Read | Mail.Read | Mail.Read |
-| [mensagem](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
+| [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
 | [Tarefa do Outlook](../resources/outlooktask.md) | Tasks.Read | Tasks.Read | Sem suporte |
 | [Pasta de tarefas do Outlook](../resources/outlooktaskfolder.md) | Tasks.Read | Tasks.Read | Sem suporte |
 
@@ -300,7 +300,7 @@ O primeiro exemplo obtém e expande a mensagem especificada, incluindo uma propr
   "name": "get_singlevaluelegacyextendedproperty_1"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/messages('AAMkAGE1M2_bs88AACHsLqWAAA=')?$expand=singleValueExtendedProperties($filter=id%20eq%20'String%20{66f5a359-4659-4830-9070-00047ec6ac6e}%20Name%20Color')
+GET https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2_bs88AACHsLqWAAA=/?$expand=singleValueExtendedProperties($filter=id%20eq%20'String%20{66f5a359-4659-4830-9070-00047ec6ac6e}%20Name%20Color')
 ```
 #### <a name="response-1"></a>Resposta 1
 O corpo da resposta inclui todas as propriedades da mensagem especificada e a propriedade estendida retornada do filtro.
@@ -356,7 +356,7 @@ O segundo exemplo obtém mensagens que possuem a propriedade estendida de valor 
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/beta/Me/messages?$filter=singleValueExtendedProperties%2FAny(ep%3A%20ep%2Fid%20eq%20'String%20{66f5a359-4659-4830-9070-00047ec6ac6e}%20Name%20Color'%20and%20ep%2Fvalue%20eq%20'Green')
+GET https://graph.microsoft.com/beta/me/messages?$filter=singleValueExtendedProperties%2FAny(ep%3A%20ep%2Fid%20eq%20'String%20{66f5a359-4659-4830-9070-00047ec6ac6e}%20Name%20Color'%20and%20ep%2Fvalue%20eq%20'Green')
 ```
 
 #### <a name="response-2"></a>Resposta 2
@@ -374,7 +374,7 @@ O terceiro exemplo obtém mensagens que possuem a propriedade estendida de valor
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/beta/Me/messages?$filter=singleValueExtendedProperties/any(ep:ep/Id eq 'String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color' and contains(ep/Value, 'green'))
+GET https://graph.microsoft.com/beta/me/messages?$filter=singleValueExtendedProperties/any(ep:ep/Id eq 'String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color' and contains(ep/Value, 'green'))
 ```
 
 #### <a name="response-3"></a>Resposta 3
@@ -427,8 +427,6 @@ Para cada um dos dois exemplos anteriores, uma resposta bem-sucedida é indicada
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/singlevaluelegacyextendedproperty-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -2,12 +2,12 @@
 title: tipo de recurso governanceRoleDefinition
 description: Representa as definições de função. Para os recursos do Azure, ele pode representar as funções do Azure RBAC, como proprietário, leitor, colaborador, etc.
 localization_priority: Normal
-ms.openlocfilehash: 867864892bac9107c44ba9125336429248b6697e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 27b4b144f834f3b5eb4270a2875da5add10efb9d
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32547437"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333740"
 ---
 # <a name="governanceroledefinition-resource-type"></a>tipo de recurso governanceRoleDefinition
 
@@ -31,10 +31,7 @@ Não `POST`, `PUT`, `PATCH`, `DELETE` tem suporte no `roleDefinitions` conjunto 
 |resourceId |String     |Obrigatório. A ID do recurso associada à definição de função. |
 |externalId   |Cadeia de caracteres     |A ID externa da definição de função.|
 |displayName|String     |O nome de exibição da definição de função.|
-|subjectCount|Int32     |Opcional. O número de entidades atribuídas à função. Ele representa o status do acesso do solicitante ao recurso. Para obter a propriedade, explictly use `$select=subjectCount` na consulta.|
-|eligibleAssignmentCount|Int32|Opcional. O número de atribuições de função qualificadas associadas à definição de função. Para obter a propriedade, explictly use `$select=eligibleAssignmentCount` na consulta.|
-|activeAssignmentCount|Int32    |Opcional. O número de atribuições de função ativas associadas à definição de função.  Para obter a propriedade, explictly use `$select=activeAssignmentCount` na consulta.|
-
+|templateId | String | |
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
@@ -48,6 +45,7 @@ Veja a seguir uma representação JSON do recurso.
 
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "optionalProperties": [
 
   ],
@@ -59,7 +57,8 @@ Veja a seguir uma representação JSON do recurso.
   "id": "String (identifier)",
   "resourceId": "String",
   "externalId": "String",
-  "displayName": "String",
+  "displayName": "String",  
+  "templateId":"String"
 }
 
 ```
@@ -73,8 +72,6 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/governanceroledefinition.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

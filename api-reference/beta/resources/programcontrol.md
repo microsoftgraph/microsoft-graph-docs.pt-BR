@@ -2,12 +2,12 @@
 title: tipo de recurso programControl
 description: No recurso de revisões do Azure AD Access, o objeto de controle do programa representa um controle, vinculando uma revisão do Access a um programa.
 localization_priority: Normal
-ms.openlocfilehash: 3d9829b8e2585d4deda95551021e2fd9b8d14c7a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7d194f3e80f44eb57be0deb7d2ffd71624c385d7
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563305"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344004"
 ---
 # <a name="programcontrol-resource-type"></a>tipo de recurso programControl
 
@@ -21,16 +21,8 @@ No recurso de revisões do Azure AD [Access](accessreviews-root.md) , o objeto d
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
 |[Criar programControl](../api/programcontrol-create.md) |     [programControl](programcontrol.md) |   Adicionar um programControl a um programa.|
-|[Excluir programControl](../api/programcontrol-delete.md) |     Nenhum.   |   Remover um programControl de um programa.|
+|[Excluir programControl](../api/programcontrol-delete.md) |     Nenhum   |   Remover um programControl de um programa.|
 |[Listar programControls](../api/programcontrol-list.md) | coleção [programControl](programcontrol.md)| Listar controles em todos os programas no locatário.|
-
-## <a name="permissions"></a>Permissões
-
-|Tipo de permissão                        | Permissões (da com menos para a com mais privilégios)              |
-|:--------------------------------------|:---------------------------------------------------------|
-|Delegado (conta corporativa ou de estudante)     | ProgramControl. Read. All, ProgramControl. ReadWrite. All |
-|Delegado (conta pessoal da Microsoft) | Sem suporte. |
-|Aplicativo                            | Sem suporte. |
 
 ## <a name="properties"></a>Propriedades
 | Propriedade     | Tipo   |Descrição|
@@ -78,8 +70,8 @@ Veja a seguir uma representação JSON do recurso.
  "displayName": "string",
  "status": "string",
  "createdDateTime": "string (timestamp)",
- "owner": "microsoft.graph.userIdentity",
- "resource":"microsoft.graph.programResource"
+ "owner": {"@odata.type":"microsoft.graph.userIdentity"},
+ "resource":{"@odata.type":"microsoft.graph.programResource"}
 }
 
 ```
@@ -94,7 +86,24 @@ Este tipo herda de `microsoft.graph.identity` e tem uma propriedade adicional:
 |:---------------|:--------|:----------|
 | `type`               |`String`  | Tipo do recurso, indicando se é um grupo ou um aplicativo. |     
 
+## <a name="json-representation"></a>Representação JSON
 
+Veja a seguir uma representação JSON do recurso.
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.programResource"
+}-->
+
+```json
+{
+ "type": "string"
+}
+
+```
 <!--
 {
   "type": "#page.annotation",
@@ -102,8 +111,6 @@ Este tipo herda de `microsoft.graph.identity` e tem uma propriedade adicional:
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/programcontrol.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

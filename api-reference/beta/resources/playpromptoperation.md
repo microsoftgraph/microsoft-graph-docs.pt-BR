@@ -4,12 +4,12 @@ description: A operação playPrompt para obter o resultado da ação playPrompt
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: a6ecdb06c910923d35f9d36590ad09fd7835fccb
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 89a47fc8400d2f0d426ef6f683eb566f9c2376d4
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563655"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344358"
 ---
 # <a name="playpromptoperation-resource-type"></a>tipo de recurso playPromptOperation
 

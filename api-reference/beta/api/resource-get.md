@@ -4,16 +4,18 @@ description: Recupere os dados binários de um objeto de recurso de arquivo ou i
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 60cacbe737a475183a5d08457c149c6cb631c63f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7b1a3e13e725df9b344b4612f79aa10fd22429d8
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32537751"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33336327"
 ---
 # <a name="get-resource"></a>Obter recurso
 
-Recupere os dados binários de um objeto de [recurso](../resources/resource.md) de arquivo ou imagem.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Recupere os dados binários de um objeto de [recurso](../resources/onenoteresource.md) de arquivo ou imagem.
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).
 
@@ -53,14 +55,14 @@ Este é um exemplo da solicitação.
   "name": "get_resource"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/onenote/resources/{id}/content
+GET https://graph.microsoft.com/beta/me/onenote/resources/{id}/content
 ```
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Edm.Stream"
+  "@odata.type": "stream"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -71,10 +73,13 @@ Content-Type: application/octet-stream
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

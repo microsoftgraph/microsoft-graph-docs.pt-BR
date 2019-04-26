@@ -4,12 +4,12 @@ description: Um grupo de seções em um bloco de anotações do OneNote. Os grup
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 65e420d014add658a538deb42c01518cd94d611c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f1cd9757b0a58afb4183bd917a7a090b14502a36
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562874"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343390"
 ---
 # <a name="sectiongroup-resource-type"></a>tipo de recurso de @ @ @ Section
 
@@ -29,7 +29,8 @@ Veja a seguir uma representação JSON do recurso.
     "sectionGroups",
     "sections"
   ],
-  "@odata.type": "microsoft.graph.sectiongroup"
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.sectionGroup"
 }-->
 
 ```json
@@ -62,20 +63,20 @@ Veja a seguir uma representação JSON do recurso.
 ## <a name="relationships"></a>Relações
 | Relação | Tipo   |Descrição|
 |:---------------|:--------|:----------|
-|parentNotebook|[Bloco de anotações](notebook.md)|O bloco de anotações que contém o grupo de seções. Somente leitura.|
-|parentSectionGroup|[SectionGroup](sectiongroup.md)|O grupo de seções que contém o grupo de seções. Somente leitura.|
-|sectionGroups|Coleção de [seções](sectiongroup.md)|Os grupos de seção na seção. Somente leitura. Anulável.|
-|sections|Coleção [Section](section.md)|As seções no grupo de seções. Somente leitura. Anulável.|
+|parentNotebook|[anotações](notebook.md)|O bloco de anotações que contém o grupo de seções. Somente leitura.|
+|parentSectionGroup|[sectionGroup](sectiongroup.md)|O grupo de seções que contém o grupo de seções. Somente leitura.|
+|sectionGroups|coleção de [seções](sectiongroup.md)|Os grupos de seção na seção. Somente leitura. Anulável.|
+|seções|coleção [onenoteSection](onenotesection.md)|As seções no grupo de seções. Somente leitura. Anulável.|
 
 ## <a name="methods"></a>Métodos
 
 | Método           | Tipo de retorno    |Descrição|
 |:---------------|:--------|:----------|
-|[Obter grupo de seções](../api/sectiongroup-get.md) | [SectionGroup](sectiongroup.md) |Leia as propriedades e as relações do grupo de seções.|
-|[Criar grupo de seções](../api/sectiongroup-post-sectiongroups.md) |[SectionGroup](sectiongroup.md)| Crie um grupo de seção postando na coleção sectionGroups no grupo de seção especificado.|
-|[Listar grupos de seções](../api/sectiongroup-list-sectiongroups.md) |Coleção de [seções](sectiongroup.md)| Obtém a coleção de grupos de seção no grupo de seção especificado.|
-|[Criar seção](../api/sectiongroup-post-sections.md) |[Section](section.md)| Crie uma seção postando na coleção Sections no grupo de seção especificado.|
-|[Listar seções](../api/sectiongroup-list-sections.md) |Coleção [Section](section.md)| Obter uma coleção de seções no grupo de seção especificado.|
+|[Obter grupo de seções](../api/sectiongroup-get.md) | [sectionGroup](sectiongroup.md) |Leia as propriedades e as relações do grupo de seções.|
+|[Criar grupo de seções](../api/sectiongroup-post-sectiongroups.md) |[sectionGroup](sectiongroup.md)| Crie um grupo de seção postando na coleção sectionGroups no grupo de seção especificado.|
+|[List section groups](../api/sectiongroup-list-sectiongroups.md) |coleção de [seções](sectiongroup.md)| Obtém a coleção de grupos de seção no grupo de seção especificado.|
+|[Criar seção](../api/sectiongroup-post-sections.md) |[onenoteSection](onenotesection.md)| Crie uma seção postando na coleção Sections no grupo de seção especificado.|
+|[Listar seções](../api/sectiongroup-list-sections.md) |coleção [onenoteSection](onenotesection.md)| Obter uma coleção de seções no grupo de seção especificado.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -86,8 +87,6 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/sectiongroup.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

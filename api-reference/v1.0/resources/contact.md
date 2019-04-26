@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 ms.openlocfilehash: 7b60333bec9bfca9d67fedc379e4a51ce768fba2
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27936834"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548100"
 ---
 # <a name="contact-resource-type"></a>tipo de recurso contact
 
@@ -17,8 +17,8 @@ Um contato é um item no Outlook no qual você pode organizar e salvar informaç
 
 Esse recurso permite:
 
-- Adicionar seus próprios dados às propriedades personalizadas como [extensões](/graph/extensibility-overview).
-- Assinatura de [notificações de alteração](/graph/webhooks).
+- Adicionar seus próprios dados às propriedades personalizadas como [extensions](/graph/extensibility-overview).
+- Assinar as [notificações de alteração](/graph/webhooks).
 - Usar a [consulta delta](/graph/delta-query-overview) para controlar adições, exclusões e atualizações incrementais oferecendo uma função [delta](../api/contact-delta.md).
 
 
@@ -56,7 +56,7 @@ Esse recurso permite:
 |nomeDaEmpresa|String|O nome da empresa do contato.|
 |createdDateTime|DateTimeOffset|A hora em que o contato foi criado. O tipo Timestamp representa informações de data e hora usando o formato ISO 8601 e está sempre no horário UTC. Por exemplo, meia-noite em UTC no dia 1º de janeiro de 2014 teria esta aparência: `'2014-01-01T00:00:00Z'`|
 |department|String|O departamento do contato.|
-|displayName|String|O nome para exibição do contato. Você pode especificar o nome para exibição em uma operação de [criar](../api/user-post-contacts.md) ou [Atualizar](../api/contact-update.md) . Observe que as atualizações posteriores a outras propriedades podem causar um valor gerado automaticamente substituir o valor displayName que você especificou. Para preservar a um valor pré-existente, sempre incluí-lo como displayName em uma operação de [atualização](../api/contact-update.md) .|
+|displayName|String|O nome para exibição do contato. Você pode especificar o nome de exibição em uma operação [criar](../api/user-post-contacts.md) ou [atualizar](../api/contact-update.md). Observe que atualizações posteriores em outras propriedades podem fazer com que um valor gerado automaticamente sobrescreva o valor de displayName que você especificou. Para preservar a um valor preexistente, inclua-o como o displayName na operação [atualizar](../api/contact-update.md).|
 |emailAddresses|Coleção [EmailAddress](emailaddress.md)|Os endereços de email do contato.|
 |fileAs|String|O nome com o qual o contato está arquivado.|
 |generation|String|A geração do contato.|

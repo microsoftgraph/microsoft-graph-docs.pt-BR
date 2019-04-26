@@ -4,14 +4,16 @@ description: Obtenha todos os objetos messageRule definidos para a Caixa de Entr
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 5f63a6821055c0b3e724ae5d81c278b4f7238a6e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8fcb560a8529fff6bbc1a3e9fe56caa8d85d3ffe
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32540687"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333348"
 ---
 # <a name="list-rules"></a>Listar regras
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Obtenha todos os objetos [messageRule](../resources/messagerule.md) definidos para a Caixa de Entrada do usuário.
 
@@ -27,8 +29,8 @@ Uma das seguintes permissões é obrigatória para chamar esta API. Para saber m
 ## <a name="http-request"></a>Solicitação HTTP
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/mailFolders/inbox/messageRules
-GET /users/{id | userPrincipalName}/mailFolders/inbox/messageRules
+GET /me/mailFolders/inbox/messagerules
+GET /users/{id | userPrincipalName}/mailFolders/inbox/messagerules
 ```
 ## <a name="optional-query-parameters"></a>Parâmetros de consulta opcionais
 Este método dá suporte a [Parâmetros de consulta OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) para ajudar a personalizar a resposta.
@@ -46,11 +48,10 @@ Se tiver êxito, este método retornará um código de resposta `200 OK` e uma c
 Este é um exemplo da solicitação.
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["inbox"],
   "name": "get_messagerules"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules
+GET https://graph.microsoft.com/beta/me/mailFolders/inbox/messagerules
 ```
 ##### <a name="response"></a>Resposta
 Veja a seguir um exemplo da resposta. Observação: o objeto response mostrado aqui pode estar truncado por motivos de concisão. Todas as propriedades serão retornadas de uma chamada real.
@@ -65,7 +66,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Me/mailFolders('inbox')/messageRules",
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#Me/mailFolders('inbox')/messageRules",
   "value":[
     {
       "id":"AQAAAJ5dZp8=",
@@ -115,10 +116,13 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List rules",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

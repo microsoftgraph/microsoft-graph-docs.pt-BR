@@ -4,12 +4,12 @@ description: Uma agregação de informações sobre uma pessoa através de email
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 32a2c9905ab52e9b229bb8673fb4a84d90a706ac
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0def5d62dd941122858ffa61bf224a9ef672ad0c
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32561471"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344911"
 ---
 # <a name="person-resource-type"></a>Tipo de recurso person
 

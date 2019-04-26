@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: Site
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: d2fbdcb870d86efb983de1e3ba75154b6e15f619
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 63d4232c2af37541f2a96359f9d2a209d065bc98
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32521990"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343043"
 ---
 # <a name="site-resource-type"></a>tipo de recurso do site
 
@@ -145,8 +145,6 @@ O recurso **site** é derivado de [**baseItem**](baseitem.md) e herda propriedad
   "tocBookmarks": {
     "Resources/Site": "#"
   },
-  "suppressions": [
-    "Error: /api-reference/beta/resources/site.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

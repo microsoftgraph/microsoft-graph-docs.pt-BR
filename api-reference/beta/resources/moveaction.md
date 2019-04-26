@@ -4,12 +4,12 @@ ms.author: dspektor
 ms.date: 09/14/2017
 title: MoveAction
 localization_priority: Normal
-ms.openlocfilehash: aa20816165ed4f41e8b89af106e3f781b1be8dd7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0715f8e9743c4384e8fbd851fe88563e9eaf9666
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32562577"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342209"
 ---
 # <a name="moveaction-resource-type"></a>Tipo de recurso MoveAction
 

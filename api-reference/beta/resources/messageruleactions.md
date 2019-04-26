@@ -4,12 +4,12 @@ description: Representa o conjunto de ações que estão disponíveis para uma r
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: a786a225bb9d439d60a29d2395b2d438975fc16c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5582bbe2d6dcf054b276bd583a8544752d6d5eb4
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32523406"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342221"
 ---
 # <a name="messageruleactions-resource-type"></a>Tipo de recurso messageRuleActions
 
@@ -22,13 +22,13 @@ Representa o conjunto de ações que estão disponíveis para uma regra.
 |:---------------|:--------|:----------|
 | assignCategories | Coleção de cadeia de caracteres | Uma lista de categorias a serem atribuídas a uma mensagem. |
 | copyToFolder | String | O ID de uma pasta para a qual uma mensagem deve ser copiada. |
-| delete | Booliano | Indica se uma mensagem deve ser movida para a pasta Itens Excluídos. |
+| delete | Boolean | Indica se uma mensagem deve ser movida para a pasta Itens Excluídos. |
 | forwardAsAttachmentTo | Coleção [recipient](recipient.md) | Os endereços de email dos destinatários para os quais uma mensagem deve ser encaminhada como um anexo. |
 | forwardTo | Coleção [recipient](recipient.md) | Os endereços de email dos destinatários para os quais uma mensagem deve ser encaminhada. |
-| markAsRead | Booliano | Indica se uma mensagem deve ser marcada como lida. |
+| markAsRead | Boolean | Indica se uma mensagem deve ser marcada como lida. |
 | markImportance | String | Define a importância da mensagem, que pode ser: `low`, `normal`, `high`. |
 | moveToFolder |  Cadeia de caracteres| O ID da pasta para a qual uma mensagem será movida. |
-| permanentDelete | Booliano | Indica se uma mensagem deve ser excluída permanentemente e não salva na pasta Itens Excluídos. |
+| permanentDelete | Boolean | Indica se uma mensagem deve ser excluída permanentemente e não salva na pasta Itens Excluídos. |
 | redirectTo | [recipient](recipient.md) | Os endereço de email para o qual uma mensagem deve ser redirecionada. |
 | stopProcessingRules | Boolean | Indica se regras subsequentes devem ser avaliadas. |
 
@@ -69,8 +69,6 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/messageruleactions.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

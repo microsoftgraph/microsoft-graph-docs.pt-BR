@@ -1,18 +1,18 @@
 ---
 title: Remover acceptedSender
-description: 'Remova um usuário ou grupo da lista acceptedSenders. '
+description: 'Remover um usuário ou grupo da lista de remetentes aceitos. '
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 86d9cc6cd0adf1c29f64044299daa1ed2c8403d3
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: cf15c26fbd73501496ad11f443b20569c7801e9b
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32548139"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33334475"
 ---
 # <a name="remove-acceptedsender"></a>Remover acceptedSender
-Remova um usuário ou grupo da lista acceptedSenders. 
+Remover um usuário ou grupo da lista de remetentes aceitos. 
 
 ## <a name="permissions"></a>Permissões
 Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).

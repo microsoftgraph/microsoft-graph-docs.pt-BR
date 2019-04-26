@@ -2,12 +2,12 @@
 title: Configurar a sincronização com atributos de destino personalizados
 description: Você pode personalizar o esquema de sincronização para incluir atributos personalizados que são definidos no diretório de destino. Este artigo descreve como personalizar uma assinatura do Salesforce adicionando um novo campo chamado `officeCode`. Você configura a sincronização do Azure Active Directory (Azure AD) para o Salesforce e para cada usuário, você preencherá o `officeCode` campo na Salesforce com o valor do `extensionAttribute10` campo no Azure AD.
 localization_priority: Normal
-ms.openlocfilehash: 1b0a19bab796f7bd8261ebf898450c07bf1415e0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8a6f33c0325c8e062c2e704c7f1d319148a051ba
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32582109"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342908"
 ---
 # <a name="configure-synchronization-with-custom-target-attributes"></a>Configurar a sincronização com atributos de destino personalizados
 
@@ -95,6 +95,7 @@ Authorization: Bearer {Token}
 } -->
 ```http
 HTTP/1.1 200 OK
+Content-Type: application/json
 
 {
   "directories": [
@@ -262,11 +263,3 @@ HTTP/1.1 201 No Content
 ```
 
 Se o esquema foi salvo com êxito, na próxima iteração do trabalho de sincronização, ele começará a reprocessar todas as contas em seu Azure AD e os novos mapeamentos serão aplicados a todas as contas provisionadas.
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/synchronization-configure-with-custom-target-attributes.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

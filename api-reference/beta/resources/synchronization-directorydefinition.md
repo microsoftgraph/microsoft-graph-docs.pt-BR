@@ -2,12 +2,12 @@
 title: tipo de recurso directoryDefinition
 description: Fornece as informações do mecanismo de sincronização sobre um diretório e seus objetos. Esse recurso instrui o mecanismo de sincronização, por exemplo, que o diretório tem objetos chamados **usuário** e **grupo**, quais atributos são compatíveis com esses objetos e os tipos desses atributos. Para que o objeto e o atributo participem das regras de sincronização e dos mapeamentos de objetos, eles devem ser definidos como parte da definição de diretório.
 localization_priority: Normal
-ms.openlocfilehash: 22ba4a7f3b5b5d3154ec6b3f5d42bd6f1b8f09d7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8e622edef39eec5476015ef5e22c5fe9697e0daa
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32582058"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342885"
 ---
 # <a name="directorydefinition-resource-type"></a>tipo de recurso directoryDefinition
 
@@ -23,7 +23,7 @@ As definições de diretório são atualizadas como parte do [esquema de sincron
 
 | Propriedade      | Tipo      | Descrição    |
 |:--------------|:----------|:---------------|
-|id           |Cadeia de caracteres     |Identificador de diretório. Não anulável.|
+|id           |String     |Identificador de diretório. Não anulável.|
 |los       |coleção metadataEntry    |Propriedades de extensão adicionais. A menos que seja mencionado explicitamente, os valores de metadados não devem ser alterados.|
 |name           |String     |Nome do diretório. Deve ser exclusivo no [esquema de sincronização](synchronization-synchronizationschema.md). Não anulável.|
 |objectos        |[](synchronization-objectdefinition.md) coleção ObjectDefinition    |Conjunto de objetos suportados pelo diretório.|

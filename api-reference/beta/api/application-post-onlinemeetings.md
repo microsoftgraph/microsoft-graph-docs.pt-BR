@@ -4,12 +4,12 @@ description: Cria uma reunião online em nome de um usuário específico no corp
 author: VinodRavichandran
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: dc6521a09bcfaf52b7240d5ad63129fa729d7899
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 3387654ea1964418994d2850c48ca1cbcd50712a
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32459042"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33322968"
 ---
 # <a name="create-online-meeting"></a>Criar reunião online
 
@@ -139,9 +139,6 @@ Content-Length: 1574
   "description": "Create onlineMeeting",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/application-post-onlinemeetings.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "tocPath": ""
 }
 -->

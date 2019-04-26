@@ -5,12 +5,12 @@ ms.date: 09/01/2018
 title: SitePageData
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 78661f5ce6336f4430297d8969ff8cd82b761c9a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 881c645c8d61f3ebc7e1011b05eb254a8984915e
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32583393"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343001"
 ---
 # <a name="sitepagedata-resource"></a>recurso sitePageData
 
@@ -25,7 +25,8 @@ O recurso **sitePageData** representa as propriedades de uma [WebPart][]. Como e
 <!-- {
   "blockType": "resource",
   "optionalProperties": [  ],
-  "@odata.type": "microsoft.graph.sitePageData"
+  "@odata.type": "microsoft.graph.sitePageData",
+   "openType": true
 }-->
 
 ```json
@@ -43,8 +44,6 @@ Este recurso não tem propriedades fixas, mas é um OpenType contendo todas as p
   "keywords": "",
   "section": "documentation",
   "tocPath": "Resources/SitePageData",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/sitepagedata.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

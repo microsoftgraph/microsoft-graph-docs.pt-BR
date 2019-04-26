@@ -1,20 +1,20 @@
 ---
 title: Tipo de recurso openTypeExtension (extensões abertas)
-description: As extensões abertas (anteriormente conhecidas como extensões de dados do Office 365) fornecem uma maneira fácil de adicionar diretamente Propriedades não tipadas a um recurso no Microsoft Graph.
+description: As extensões abertas (anteriormente conhecidas como extensões de dados do Office 365) oferecem uma maneira fácil de adicionar diretamente propriedades não tipadas a um recurso do Microsoft Graph.
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: ba5dbcd6c5ae1705ffe7e89ca6f529280d98adf5
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2d060a318e615bc9d1d21d38e0c289cff0b3f358
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568881"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33341820"
 ---
 # <a name="opentypeextension-resource-type-open-extensions"></a>Tipo de recurso openTypeExtension (extensões abertas)
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-As extensões abertas (anteriormente conhecidas como extensões de dados do Office 365) fornecem uma maneira fácil de adicionar diretamente Propriedades não tipadas a um recurso no Microsoft Graph.
+As extensões abertas (anteriormente conhecidas como extensões de dados do Office 365) oferecem uma maneira fácil de adicionar diretamente propriedades não tipadas a um recurso do Microsoft Graph.
 Extensões abertas são representadas pelo recurso **openTypeExtension**. Qualquer extensão aberta adicionada a um recurso é mostrada na propriedade de navegação **extensions**, que deriva do tipo abstrato [extension](extension.md).  Cada extensão tem uma propriedade **extensionName**, que é a única propriedade predefinida e gravável para todas as extensões, juntamente com seus dados personalizados. Um modo de garantir que os nomes de extensão sejam exclusivos é usar um formato reverso de DNS no sistema de nomes de domínio que dependa de _seu próprio domínio_, por exemplo, `Com.Contoso.ContactInfo`. Não use o domínio Microsoft (`Com.Microsoft` ou `Com.OnMicrosoft`) em um nome de extensão.
 
 Exemplo de extensão aberta: [Adicionar dados personalizados aos usuários usando extensões abertas](/graph/extensibility-open-users)
@@ -36,16 +36,16 @@ As extensões abertas têm suporte nos recursos a seguir nas versões correspond
 
 ## <a name="outlook-specific-considerations"></a>Considerações específicas do Outlook
 
-Cada extensão aberta presente em um recurso do Outlook (evento, mensagem ou contato pessoal) é armazenada em uma [propriedade nomeada MAPI](https://msdn.microsoft.com/library/cc765864(v=office.15).aspx). Ao criar extensões abertas para o Outlook, considere que as propriedades nomeadas de MAPI são um recurso finito na caixa de correio de um usuário. Quando a cota de propriedade nomeada de um usuário é esgotada, você não pode criar mais propriedades nomeadas para esse usuário. Isso pode resultar em um comportamento inesperado de clientes que dependem de propriedades nomeadas para funcionar.
+Cada extensão aberta presente em um recurso do Outlook (evento, mensagem ou contato pessoal) é armazenada em uma [propriedade MAPI](https://msdn.microsoft.com/library/cc765864(v=office.15).aspx). Quando você cria extensões abertas no Outlook, considere que as propriedades MAPI são um recurso finito em uma caixa de correio do usuário. Quando a propriedade de cota de um usuário acabar, não será mais possível criar quaisquer propriedades nomeadas desse usuário. Isso pode resultar em um comportamento inesperado de clientes que dependem de propriedades nomeadas para funcionar.
 
-Aplique as seguintes diretrizes ao criar extensões abertas em recursos do Outlook:
+Aplique as seguintes diretrizes quando você criar extensões abertas em recursos do Outlook:
 
-- Crie o número mínimo de extensões necessárias. A maioria dos aplicativos não deve exigir mais de uma extensão. As extensões não têm propriedades ou estruturas definidas para que você possa armazenar vários valores em uma única extensão.
-- Evite nomes de extensões de forma variável (por exemplo, com base na entrada do usuário, etc.). Sempre que uma extensão aberta é criada com um novo nome que não foi usado na caixa de correio de um usuário, uma nova propriedade nomeada MAPI é criada. Remover a extensão não remove a propriedade nomeada.
+- Crie um número mínimo de extensões necessárias. A maioria dos aplicativos exigem não mais que uma extensão. As extensões não têm um conjunto definido de propriedades nomeadas ou estrutura, para que seja possível armazenar vários valores em um única extensão.
+- Evite renomear extensões de uma maneira variável (por exemplo, com base na entrada do usuário, etc.). Sempre que uma extensão aberta é criada com um novo nome que não foi usado na caixa de correio do usuário, uma nova propriedade MAPI é criada. Remover a extensão não remove a propriedade nomeada.
 
-### <a name="use-open-extensions-for-outlook-resources-or-extended-properties"></a>Usar extensões abertas (para recursos do Outlook) ou propriedades estendidas
+### <a name="use-open-extensions-for-outlook-resources-or-extended-properties"></a>Use extensões abertas (para recursos do Outlook) ou propriedades estendidas
 
-As extensões abertas são a solução recomendada para a maioria dos cenários que envolvem o armazenamento e o acesso a dados personalizados. Se, no entanto, você precisar acessar dados personalizados para as propriedades do Outlook MAPI que já não estão expostos por meio dos [metadados da API do Microsoft Graph](https://developer.microsoft.com/graph/docs/overview/call_api), você pode usar [as propriedades estendidas e sua API REST](extended-properties-overview.md). você pode verificar quais propriedades os metadados expões em [ https://graph.microsoft.com/v1.0/$metadata](https://graph.microsoft.com/v1.0/$metadata).
+As extensões abertas são a solução recomendada para a maioria dos cenários que envolvem o armazenamento e o acesso a dados personalizados. Se, no entanto, você precisar acessar dados personalizados para as propriedades do Outlook MAPI que já não estão expostos por meio dos [metadados da API do Microsoft Graph](https://developer.microsoft.com/graph/docs/overview/call_api), você pode usar [as propriedades estendidas e sua API REST](extended-properties-overview.md). Você pode verificar quais propriedades os metadados expõem na [ https://graph.microsoft.com/v1.0/$metadata](https://graph.microsoft.com/v1.0/$metadata).
 
 ## <a name="json-representation"></a>Representação JSON
 
@@ -76,7 +76,7 @@ Veja a seguir uma representação JSON do recurso
 
 ## <a name="relationships"></a>Relações
 
-Nenhuma
+Nenhum
 
 ## <a name="methods"></a>Métodos
 
@@ -85,7 +85,7 @@ Nenhuma
 |[Post](../api/opentypeextension-post-opentypeextension.md) | [openTypeExtension](opentypeextension.md) (em uma instância de recurso existente) ou um novo [contato](../resources/contact.md), [evento](../resources/event.md)ou [mensagem](../resources/message.md) que contém um objeto openTypeExtension. | Crie um objeto openTypeExtension em uma instância de recurso nova ou existente.|
 |[Get](../api/opentypeextension-get.md) | [openTypeExtension](opentypeextension.md) |Leia propriedades e relações do objeto openTypeExtension.|
 |[Update](../api/opentypeextension-update.md) | [openTypeExtension](opentypeextension.md) |Atualize o objeto openTypeExtension. |
-|[Excluir](../api/opentypeextension-delete.md) | None |Exclua um objeto openTypeExtension. |
+|[Delete](../api/opentypeextension-delete.md) | Nenhuma |Exclua um objeto openTypeExtension. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

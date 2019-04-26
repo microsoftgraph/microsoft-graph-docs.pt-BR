@@ -2,12 +2,12 @@
 title: Tipo de recurso do identityProvider
 description: Representa um provedor de identidade do Azure Active Directory (Azure AD). O provedor de identidade pode ser Microsoft, Google, Facebook, Amazon ou LinkedIn.
 localization_priority: Normal
-ms.openlocfilehash: afd21635d932582f2a9ee6c2cde1cf45a9d4260f
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 616f4d30bf6b5aad0bb97a732cf3aaf27e0fd26d
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32547260"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333700"
 ---
 # <a name="identityprovider-resource-type"></a>Tipo de recurso do identityProvider
 
@@ -36,11 +36,11 @@ Configurar um provedor de identidade em seu locatário do Azure AD permite cená
 
 |Propriedade|Tipo|Obrigatório|Anulável|Descrição|
 |:---------------|:--------|:--------|:--------|:----------|
-|clientId|Cadeia de caracteres|Sim|Não|ID do cliente para o aplicativo. Esta é a ID do cliente obtida ao registrar o aplicativo com o provedor de identidade.|
-|clientSecret|Cadeia de caracteres|Sim|Não|O segredo do cliente para o aplicativo. Este é o segredo do cliente obtido ao registrar o aplicativo com o provedor de identidade. Isso é somente para gravar. Uma operação de leitura retornará "\*\*\*\*".|
+|clientId|String|Sim|Não|ID do cliente para o aplicativo. Esta é a ID do cliente obtida ao registrar o aplicativo com o provedor de identidade.|
+|clientSecret|String|Sim|Não|O segredo do cliente para o aplicativo. Este é o segredo do cliente obtido ao registrar o aplicativo com o provedor de identidade. Isso é somente para gravar. Uma operação de leitura retornará "\*\*\*\*".|
 |id|String|Não|Não|O ID do provedor de identidade.|
-|name|String|Não|Não|O nome de exibição exclusivo do provedor de identidade.|
-|type|String|Sim|Não|A identidade do provedor de identidade. Deve ser um dos seguintes valores: <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook</ul>|
+|nome|String|Não|Não|O nome de exibição exclusivo do provedor de identidade.|
+|tipo|String|Sim|Não|A identidade do provedor de identidade. Deve ser um dos seguintes valores: <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook</ul>|
 
 ### <a name="where-to-get-the-client-id-and-secret"></a>Como obter o ID e segredo do cliente
 
@@ -64,11 +64,3 @@ Veja a seguir uma representação JSON do recurso.
     "clientSecret": "String"
 }
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/identityprovider.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

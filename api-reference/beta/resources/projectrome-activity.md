@@ -3,12 +3,12 @@ title: tipo de recurso atividade
 description: Representa uma única atividade dentro de um aplicativo, por exemplo, um programa de TV, um documento ou uma campanha atual em um jogo de vídeo. Quando um usuário participa dessa atividade, o contrato é capturado como um item de histórico que indica a hora de início e término da atividade. À medida que o usuário se reencaixa com essa atividade ao longo do tempo, vários itens de histórico são registrados para uma única atividade do usuário.
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 5deaab5d7ea071bfda686380d49fb41214a7b29e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4ae3fb47961140a784a1fa15fc606fd8967be96b
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563326"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344003"
 ---
 # <a name="activity-resource-type"></a>tipo de recurso atividade
 
@@ -48,7 +48,7 @@ Suas atividades de usuário serão incluídas nas experiências do usuário da c
 |visualElements| [visualInfo](../resources/projectrome-visualinfo.md) | Obrigatório. O objeto que contém informações para renderizar a atividade no UX.|
 |contentInfo | Objeto JSON não digitado | Opcional. Uma parte personalizada da descrição extensível de dados-JSON-LD do conteúdo de acordo com a sintaxe [Schema.org](https://schema.org) .|
 |expirationDateTime | DateTimeOffset | Definido pelo servidor. DateTime em UTC quando o objeto expirou no servidor.|
-|status | EnumType | Definido pelo servidor. Um código de status usado para identificar objetos válidos. Valores: ativo, atualizado, excluído, ignorado.|
+|status | cadeia de caracteres | Definido pelo servidor. Um código de status usado para identificar objetos válidos. Valores: ativo, atualizado, excluído, ignorado.|
 
 ## <a name="relationships"></a>Relações
 
@@ -71,6 +71,7 @@ Veja a seguir uma representação JSON do recurso.
     "visualElements",
     "historyItems"
   ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.activity"
 }-->
 
@@ -87,7 +88,7 @@ Veja a seguir uma representação JSON do recurso.
     "lastModifiedDateTime": "DateTimeOffset",
     "expirationDateTime": "DateTimeOffset",
     "id": "String",
-    "status": "EnumType",
+    "status": "string",
     "contentInfo": { "@data.type": "microsoft.graph.Json" },
     "visualElements": { "@data.type": "microsoft.graph.visualInfo" },
     "historyItems": [{ "@odata.type": "microsoft.graph.historyItem" }]
@@ -103,8 +104,6 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/projectrome-activity.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

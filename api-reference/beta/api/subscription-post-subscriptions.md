@@ -3,12 +3,12 @@ title: Criar assinatura
 description: Assina um aplicativo de escuta para receber notificações quando os dados de um recurso do Microsoft Graph são alterados.
 localization_priority: Normal
 author: piotrci
-ms.openlocfilehash: a8b8189780ac0b820551fb885adcf843c9ebe8f4
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fae31505790f7ec06f40412fa772548844f236c8
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32545276"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33335700"
 ---
 # <a name="create-subscription"></a>Criar assinatura
 
@@ -141,8 +141,6 @@ O ponto de extremidade da notificação da assinatura (especificado na `notifica
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/subscription-post-subscriptions.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

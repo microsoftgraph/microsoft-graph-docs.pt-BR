@@ -2,12 +2,12 @@
 title: tipo de recurso privilegedRoleAssignmentRequest
 description: Representa a solicitação de operações de atribuição de função no gerenciamento de identidade do Privilegd.
 localization_priority: Normal
-ms.openlocfilehash: c0e0bbfa76b7ffb4e122d381d45dd4092f0843c1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: ead028d61fcbf6fe7cebf13291c0ba5231f0ba22
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563284"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344254"
 ---
 # <a name="privilegedroleassignmentrequest-resource-type"></a>tipo de recurso privilegedRoleAssignmentRequest
 
@@ -22,7 +22,7 @@ Representa a solicitação de operações de atribuição de função no gerenci
 | Método       | Tipo de retorno | Descrição |
 |:-------------|:------------|:------------|
 |[List](../api/privilegedroleassignmentrequest-list.md) | coleção [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md)|Listar solicitações de atribuição de função.|
-|[Create](../api/privilegedroleassignmentrequest-post.md)|  [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md)|Criar uma solicitação para gerenciar o ciclo de vida da atribuição de função nova ou existente.|
+|[Criar](../api/privilegedroleassignmentrequest-post.md)|  [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md)|Criar uma solicitação para gerenciar o ciclo de vida da atribuição de função nova ou existente.|
 |[Cancel](../api/privilegedroleassignmentrequest-cancel.md)|  |Cancelar uma solicitação de atribuição de função pendente.|
 |[Pessoal](../api/privilegedroleassignmentrequest-my.md)|  |Obter solicitação de atribuição de função para o requstor atual.|
 
@@ -41,7 +41,7 @@ Representa a solicitação de operações de atribuição de função no gerenci
 |ticketNumber|String| O ticketNumber da atribuição de função. |
 |ticketSystem|String| O ticketSystem da atribuição de função.|
 |type|String| Representando o tipo da operação na atribuição de função. O valor pode ser `AdminAdd`: os administradores adicionam usuários a funções; `UserAdd`: Os usuários adicionam atribuições de função.|
-|userId|String| A ID do usuário.|
+|userId|Cadeia de caracteres| A ID do usuário.|
 
 ## <a name="relationships"></a>Relações
 | Relação | Tipo        | Descrição |
@@ -57,6 +57,7 @@ Veja a seguir uma representação JSON do recurso.
   "optionalProperties": [
 
   ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.privilegedRoleAssignmentRequest"
 }-->
 
@@ -87,8 +88,6 @@ Veja a seguir uma representação JSON do recurso.
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/privilegedroleassignmentrequest.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

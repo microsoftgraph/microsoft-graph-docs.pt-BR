@@ -4,12 +4,12 @@ description: Informações de gravação de um participante.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 6025259bafdcff78c3c7dbfa19aa39f5f6648f84
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 17da055e1cf40922075ba06de3e229c669d2e40f
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563076"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343926"
 ---
 # <a name="recordinginfo-resource-type"></a>tipo de recurso recordingInfo
 

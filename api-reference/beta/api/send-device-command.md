@@ -2,12 +2,12 @@
 title: Enviar comando do dispositivo
 description: 'Essa API permite que os recursos do Project Roma para o comando um dispositivo associado a uma conta da Microsoft. Depois de obter uma chamada GET `me/devices`, passe a ID do dispositivo para emitir um comando para seu dispositivo. Há suporte para dois tipos de comandos: LaunchURI e AppServices. Se você estiver usando o LaunchURI, especifique os parâmetros *Type* e *Payload* . Para uma chamada serviço, especifique o '
 localization_priority: Normal
-ms.openlocfilehash: d0c25200933a4a87a66349e457c500c496272b08
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4ec87825eec72a68dce236d61b17b504a194e75a
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32537522"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33336031"
 ---
 # <a name="send-device-command"></a>Enviar comando do dispositivo
 
@@ -78,7 +78,7 @@ HTTP/1.1 201 OK
 ```
 ## <a name="command-properties"></a>Propriedades de comando 
 
-|**Nome**|**Tipo**|**Descrição**|
+|**Nome**|**Type**|**Descrição**|
 |:----|:------|:------|
 |payload | Microsoft. Graph. JSON| Carga a ser enviada a um serviço de aplicativo ou para iniciar um URI em um dispositivo. |
 |responsePayload | Microsoft. Graph. JSON| Carga retornada do dispositivo de destino. |
@@ -86,7 +86,7 @@ HTTP/1.1 201 OK
 |packageFamilyName | String | Nome do aplicativo da família de pacote do Windows. |
 |appServiceName | String | Nome do serviço de aplicativo definido pelo aplicativo de destino. Necessário se iniciar um serviço de aplicativo. |
 |type| String | LaunchURI ou serviço. |
-|id| Cadeia de caracteres | A ID de um comando que foi enviado ao dispositivo. |
+|id| String | A ID de um comando que foi enviado ao dispositivo. |
 |actionStatus | String | O [status](get-device-command-status.md) de um comando. |
 |erro| String| Quaisquer erros associados à solicitação do aplicativo de destino. |
 
@@ -120,7 +120,7 @@ Este é um exemplo de resposta.
 <!-- {
   "blockType": "ignored",
   "truncated": false,
-  "@odata.type": "microsoft.graph.commandobject",
+  "@odata.type": "microsoft.graph.command",
   "isCollection": true
 } -->
 
@@ -179,7 +179,7 @@ Este é um exemplo de resposta.
 <!-- {
   "blockType": "ignored",
   "truncated": false,
-  "@odata.type": "microsoft.graph.commandobject",
+  "@odata.type": "microsoft.graph.command",
   "isCollection": true
 } -->
 
@@ -202,11 +202,3 @@ HTTP/1.1 201 OK
   }
 }
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/send-device-command.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

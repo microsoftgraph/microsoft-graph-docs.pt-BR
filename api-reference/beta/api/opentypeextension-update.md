@@ -3,12 +3,12 @@ title: Atualizar extensão aberta
 description: 'Atualize uma extensão aberta (objeto openTypeExtension) com as propriedades no corpo da solicitação:'
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: c24714f51a75f17ebe56314ab6dc683701085420
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a90e960faf526f3d4bf51832f150757f261e3438
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32539930"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33332986"
 ---
 # <a name="update-open-extension"></a>Atualizar extensão aberta
 
@@ -77,7 +77,7 @@ Forneça um corpo JSON de um objeto [openTypeExtension](../resources/opentypeext
 
 | Nome       | Valor |
 |:---------------|:----------|
-| @odata.type | Microsoft. Graph. OpenTypeExtension |
+| @odata.type | microsoft.graph.openTypeExtension |
 | extensionName | %unique_string% |
 
 ## <a name="response"></a>Resposta
@@ -94,7 +94,7 @@ O primeiro exemplo mostra como atualizar uma extensão de uma mensagem. A extens
 ```http
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions/$entity",
-    "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
+    "@odata.type": "#microsoft.graph.openTypeExtension",
     "@odata.id": "https://graph.microsoft.com/beta/users('ddfc984d-b826-40d7-b48b-57002df85e00@1717f226-49d1-4d0c-9d74-709fad6677b4')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions
 ('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
     "extensionName": "Com.Contoso.Referral",
@@ -109,14 +109,14 @@ Você pode fazer referência à extensão por seu nome:
 
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH https://graph.microsoft.com/beta/me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions('Com.Contoso.Referral')
+PATCH https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/extensions/Com.Contoso.Referral
 ```
 
 Ou você pode fazer referência à extensão por seu nome totalmente qualificado:
 
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH https://graph.microsoft.com/beta/me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')
+PATCH https://graph.microsoft.com/beta/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===/extensions/Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral
 ```
 
 Você pode usar o exemplo de solicitação e o seguinte corpo de solicitação para atualizar a extensão acima da seguinte forma:
@@ -127,7 +127,7 @@ Você pode usar o exemplo de solicitação e o seguinte corpo de solicitação p
 <!-- { "blockType": "ignored" } -->
 ```http
 {
-    "@odata.type": "Microsoft.Graph.OpenTypeExtension",
+    "@odata.type": "microsoft.graph.openTypeExtension",
     "extensionName": "Com.Contoso.Referral",
     "companyName": "Wingtip Toys (USA)",
     "dealValue": "500100",
@@ -148,7 +148,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions/$entity",
-    "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
+    "@odata.type": "#microsoft.graph.openTypeExtension",
     "@odata.id": "https://graph.microsoft.com/beta/users('ddfc984d-b826-40d7-b48b-57002df85e00@1717f226-49d1-4d0c-9d74-709fad6677b4')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions
 ('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
     "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral",
@@ -192,11 +192,11 @@ A seguir estão a solicitação e o corpo da solicitação para alterar o `expir
   "name": "update_opentypeextension"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/groups('37df2ff0-0de0-4c33-8aee-75289364aef6')/threads('AAQkADJizZJpEWwqDHsEpV_KA==')/posts('AAMkADJiUg96QZUkA-ICwMubAADDEd7UAAA=')/extensions('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Estimate')
+PATCH https://graph.microsoft.com/beta/groups/37df2ff0-0de0-4c33-8aee-75289364aef6/threads/AAQkADJizZJpEWwqDHsEpV_KA==/posts/AAMkADJiUg96QZUkA-ICwMubAADDEd7UAAA=/extensions/Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Estimate
 Content-type: application/json
 
 {
-   "@odata.type": "Microsoft.OutlookServices.OpenTypeExtension",
+   "@odata.type": "#microsoft.outlookServices.openTypeExtension",
    "extensionName": "Com.Contoso.Estimate",
    "companyName": "Contoso",
    "expirationDate": "2016-07-30T11:00:00.000Z",
@@ -216,7 +216,7 @@ Aqui está a resposta do segundo exemplo, que mostra o `expirationDate` atualiza
 <!-- {  
   "blockType": "response",  
   "truncated": true,  
-  "@odata.type": "microsoft.graph.opentypeextension"  
+  "@odata.type": "microsoft.graph.openTypeExtension"  
 } --> 
 ```http
 HTTP/1.1 200 OK
@@ -249,8 +249,6 @@ Content-Type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/opentypeextension-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

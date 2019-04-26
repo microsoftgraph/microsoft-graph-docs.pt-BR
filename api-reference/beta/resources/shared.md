@@ -4,12 +4,12 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Compartilhados
 localization_priority: Normal
-ms.openlocfilehash: 04504b5257dfc49ad14cbee1f645120dc31a3387
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 143593615d34d069c8378f1cb068fc000d076192
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32584076"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343164"
 ---
 # <a name="shared-resource-type"></a>Tipo de recurso Shared
 
@@ -64,8 +64,6 @@ Para saber mais sobre as facetas de um **driveItem**, confira [**driveItem**](dr
   "keywords": "shared,share,item,facet,onedrive",
   "section": "documentation",
   "tocPath": "Facets/Shared",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/shared.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->
