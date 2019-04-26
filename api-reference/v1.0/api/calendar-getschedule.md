@@ -13,6 +13,8 @@ ms.locfileid: "32558409"
 ---
 # <a name="calendar-getschedule"></a><span data-ttu-id="cb398-103">calendar: getSchedule</span><span class="sxs-lookup"><span data-stu-id="cb398-103">calendar: getSchedule</span></span>
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 <span data-ttu-id="cb398-104">Adquira as informações de disponibilidade para um conjunto de usuários, listas de distribuição ou recursos (salas e equipamentos) para um período de tempo especificado.</span><span class="sxs-lookup"><span data-stu-id="cb398-104">Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period.</span></span>
 
 ## <a name="permissions"></a><span data-ttu-id="cb398-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="cb398-105">Permissions</span></span>
@@ -60,7 +62,7 @@ POST /users/{id|userPrincipalName}/calendar/getSchedule
   "name": "calendar_getSchedule"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/calendar/getschedule 
+POST https://graph.microsoft.com/beta/me/calendar/getschedule 
 Prefer: outlook.timezone="Pacific Standard Time"
 Content-Type: application/json
 
@@ -91,7 +93,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.scheduleInformation)",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.scheduleInformation)",
     "value": [
         {
             "scheduleId": "adelev@contoso.onmicrosoft.com",
@@ -232,6 +234,7 @@ Content-type: application/json
   "description": "calendar: getSchedule",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": []
 }
 -->
