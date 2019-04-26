@@ -4,27 +4,27 @@ description: O recurso **plannerPlanContextCollection** representa a coleção d
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 6ec515a164c5b0fca6334930b55a4b5d4e73b7d9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8d5394ff8a9503ab9ffba4810c9c2cad0d9a2fbf
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581713"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344447"
 ---
-# <a name="plannerplancontextcollection-resource-type"></a><span data-ttu-id="6ebe6-105">tipo de recurso plannerPlanContextCollection</span><span class="sxs-lookup"><span data-stu-id="6ebe6-105">plannerPlanContextCollection resource type</span></span>
+# <a name="plannerplancontextcollection-resource-type"></a><span data-ttu-id="37ac9-105">tipo de recurso plannerPlanContextCollection</span><span class="sxs-lookup"><span data-stu-id="37ac9-105">plannerPlanContextCollection resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
-<span data-ttu-id="6ebe6-106">O recurso **plannerPlanContextCollection** representa a coleção de contextos externos aos quais um plano está vinculado.</span><span class="sxs-lookup"><span data-stu-id="6ebe6-106">The **plannerPlanContextCollection** resource represents the collection of external contexts to which a plan is linked.</span></span> <span data-ttu-id="6ebe6-107">Esse recurso é um tipo aberto e faz parte do objeto [plannerPlan](plannerplan.md) .</span><span class="sxs-lookup"><span data-stu-id="6ebe6-107">This resource is an open type and is part of the [plannerPlan](plannerplan.md) object.</span></span> <span data-ttu-id="6ebe6-108">O valor no par propriedade-valor é o objeto [plannerPlanContext](plannerplancontext.md) .</span><span class="sxs-lookup"><span data-stu-id="6ebe6-108">The value in the property-value pair is the [plannerPlanContext](plannerplancontext.md) object.</span></span>
+<span data-ttu-id="37ac9-106">O recurso **plannerPlanContextCollection** representa a coleção de contextos externos aos quais um plano está vinculado.</span><span class="sxs-lookup"><span data-stu-id="37ac9-106">The **plannerPlanContextCollection** resource represents the collection of external contexts to which a plan is linked.</span></span> <span data-ttu-id="37ac9-107">Esse recurso é um tipo aberto e faz parte do objeto [plannerPlan](plannerplan.md) .</span><span class="sxs-lookup"><span data-stu-id="37ac9-107">This resource is an open type and is part of the [plannerPlan](plannerplan.md) object.</span></span> <span data-ttu-id="37ac9-108">O valor no par propriedade-valor é o objeto [plannerPlanContext](plannerplancontext.md) .</span><span class="sxs-lookup"><span data-stu-id="37ac9-108">The value in the property-value pair is the [plannerPlanContext](plannerplancontext.md) object.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="6ebe6-109">Propriedades</span><span class="sxs-lookup"><span data-stu-id="6ebe6-109">Properties</span></span>
-<span data-ttu-id="6ebe6-110">Você pode definir as propriedades desse tipo aberto.</span><span class="sxs-lookup"><span data-stu-id="6ebe6-110">You can define the properties of this open type.</span></span> <span data-ttu-id="6ebe6-111">Os valores de propriedade devem ser um identificador distintivo que representa o contexto externo como o nome da propriedade.</span><span class="sxs-lookup"><span data-stu-id="6ebe6-111">The property values should be distinctive identifier that represents the external context as the property name.</span></span> <span data-ttu-id="6ebe6-112">Os valores de propriedade devem ser objetos [plannerPlanContext](plannerplancontext.md) .</span><span class="sxs-lookup"><span data-stu-id="6ebe6-112">The property values must be [plannerPlanContext](plannerplancontext.md) objects.</span></span> <span data-ttu-id="6ebe6-113">Com base nos requisitos de OData, os nomes de propriedade em tipos abertos não podem `.`conter `:`os `%`seguintes `@`caracteres:,,,.</span><span class="sxs-lookup"><span data-stu-id="6ebe6-113">Based on OData requirements, property names in open types cannot contain the following characters: `.`, `:`, `%`, `@`.</span></span> <span data-ttu-id="6ebe6-114">Esses caracteres precisam ser codificados usando a codificação de URL.</span><span class="sxs-lookup"><span data-stu-id="6ebe6-114">These characters need to be encoded using URL encoding.</span></span> <span data-ttu-id="6ebe6-115">Para remover um item da lista favoritos, defina o valor da propriedade como `null`.</span><span class="sxs-lookup"><span data-stu-id="6ebe6-115">To remove an item in the favorites list, set the value of the property to `null`.</span></span>
+## <a name="properties"></a><span data-ttu-id="37ac9-109">Propriedades</span><span class="sxs-lookup"><span data-stu-id="37ac9-109">Properties</span></span>
+<span data-ttu-id="37ac9-110">Você pode definir as propriedades desse tipo aberto.</span><span class="sxs-lookup"><span data-stu-id="37ac9-110">You can define the properties of this open type.</span></span> <span data-ttu-id="37ac9-111">Os valores de propriedade devem ser um identificador distintivo que representa o contexto externo como o nome da propriedade.</span><span class="sxs-lookup"><span data-stu-id="37ac9-111">The property values should be distinctive identifier that represents the external context as the property name.</span></span> <span data-ttu-id="37ac9-112">Os valores de propriedade devem ser objetos [plannerPlanContext](plannerplancontext.md) .</span><span class="sxs-lookup"><span data-stu-id="37ac9-112">The property values must be [plannerPlanContext](plannerplancontext.md) objects.</span></span> <span data-ttu-id="37ac9-113">Com base nos requisitos de OData, os nomes de propriedade em tipos abertos não podem `.`conter `:`os `%`seguintes `@`caracteres:,,,.</span><span class="sxs-lookup"><span data-stu-id="37ac9-113">Based on OData requirements, property names in open types cannot contain the following characters: `.`, `:`, `%`, `@`.</span></span> <span data-ttu-id="37ac9-114">Esses caracteres precisam ser codificados usando a codificação de URL.</span><span class="sxs-lookup"><span data-stu-id="37ac9-114">These characters need to be encoded using URL encoding.</span></span> <span data-ttu-id="37ac9-115">Para remover um item da lista favoritos, defina o valor da propriedade como `null`.</span><span class="sxs-lookup"><span data-stu-id="37ac9-115">To remove an item in the favorites list, set the value of the property to `null`.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="6ebe6-116">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="6ebe6-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="37ac9-116">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="37ac9-116">JSON representation</span></span>
 
-<span data-ttu-id="6ebe6-117">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="6ebe6-117">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="37ac9-117">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="37ac9-117">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -58,8 +58,6 @@ ms.locfileid: "32581713"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/plannerplancontextcollection.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

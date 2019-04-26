@@ -2,41 +2,41 @@
 title: tipo de recurso networkLocationDetail
 description: Indica detalhes associados ao local de rede. .
 localization_priority: Normal
-ms.openlocfilehash: bfa84591f543253ed794016bbc2d25d325cd0bcc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c4a5323099258d9670b970b1bb85bd0d01f3cf8d
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581440"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342174"
 ---
-# <a name="networklocationdetail-resource-type"></a><span data-ttu-id="e2292-104">tipo de recurso networkLocationDetail</span><span class="sxs-lookup"><span data-stu-id="e2292-104">networkLocationDetail resource type</span></span>
-<span data-ttu-id="e2292-105">Indica detalhes associados ao local de rede.</span><span class="sxs-lookup"><span data-stu-id="e2292-105">Indicates details associated with the network location.</span></span> <span data-ttu-id="e2292-106">.</span><span class="sxs-lookup"><span data-stu-id="e2292-106"></span></span>
+# <a name="networklocationdetail-resource-type"></a><span data-ttu-id="a8117-104">tipo de recurso networkLocationDetail</span><span class="sxs-lookup"><span data-stu-id="a8117-104">networkLocationDetail resource type</span></span>
+<span data-ttu-id="a8117-105">Indica detalhes associados ao local de rede.</span><span class="sxs-lookup"><span data-stu-id="a8117-105">Indicates details associated with the network location.</span></span>
 
 
 
-## <a name="properties"></a><span data-ttu-id="e2292-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="e2292-107">Properties</span></span>
-| <span data-ttu-id="e2292-108">Propriedade</span><span class="sxs-lookup"><span data-stu-id="e2292-108">Property</span></span>     | <span data-ttu-id="e2292-109">Tipo</span><span class="sxs-lookup"><span data-stu-id="e2292-109">Type</span></span>   |<span data-ttu-id="e2292-110">Descrição</span><span class="sxs-lookup"><span data-stu-id="e2292-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="a8117-106">Propriedades</span><span class="sxs-lookup"><span data-stu-id="a8117-106">Properties</span></span>
+| <span data-ttu-id="a8117-107">Propriedade</span><span class="sxs-lookup"><span data-stu-id="a8117-107">Property</span></span>     | <span data-ttu-id="a8117-108">Tipo</span><span class="sxs-lookup"><span data-stu-id="a8117-108">Type</span></span>   |<span data-ttu-id="a8117-109">Descrição</span><span class="sxs-lookup"><span data-stu-id="a8117-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="e2292-111">NetworkType</span><span class="sxs-lookup"><span data-stu-id="e2292-111">networkType</span></span>|<span data-ttu-id="e2292-112">String</span><span class="sxs-lookup"><span data-stu-id="e2292-112">String</span></span>|<span data-ttu-id="e2292-113">Fornece o tipo da rede.</span><span class="sxs-lookup"><span data-stu-id="e2292-113">Provides the type of the network.</span></span> <span data-ttu-id="e2292-114">Os valores possíveis `intranet`são `extranet`: `namedNetwork`,, `trusted`e.</span><span class="sxs-lookup"><span data-stu-id="e2292-114">Possible values are `intranet`, `extranet`, `namedNetwork`, and `trusted`.</span></span>|
-|<span data-ttu-id="e2292-115">NetworkName</span><span class="sxs-lookup"><span data-stu-id="e2292-115">networkName</span></span>|<span data-ttu-id="e2292-116">String</span><span class="sxs-lookup"><span data-stu-id="e2292-116">String</span></span>|<span data-ttu-id="e2292-117">Nome da rede.</span><span class="sxs-lookup"><span data-stu-id="e2292-117">Name of the network.</span></span>|
+|<span data-ttu-id="a8117-110">NetworkType</span><span class="sxs-lookup"><span data-stu-id="a8117-110">networkType</span></span>|<span data-ttu-id="a8117-111">NetworkType</span><span class="sxs-lookup"><span data-stu-id="a8117-111">networkType</span></span>|<span data-ttu-id="a8117-112">Fornece o tipo da rede.</span><span class="sxs-lookup"><span data-stu-id="a8117-112">Provides the type of the network.</span></span> <span data-ttu-id="a8117-113">Os valores possíveis são `intranet`: `extranet` `namedNetwork`,, e `trusted`.</span><span class="sxs-lookup"><span data-stu-id="a8117-113">The possible values are `intranet`, `extranet`, `namedNetwork`, and `trusted`.</span></span>|
+|<span data-ttu-id="a8117-114">networknames</span><span class="sxs-lookup"><span data-stu-id="a8117-114">networkNames</span></span>|<span data-ttu-id="a8117-115">Coleção String</span><span class="sxs-lookup"><span data-stu-id="a8117-115">String collection</span></span>|<span data-ttu-id="a8117-116">Nomes da rede.</span><span class="sxs-lookup"><span data-stu-id="a8117-116">Names of the network.</span></span>|
 
 
-## <a name="json-representation"></a><span data-ttu-id="e2292-118">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="e2292-118">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="a8117-117">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="a8117-117">JSON representation</span></span>
 
-<span data-ttu-id="e2292-119">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="e2292-119">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="a8117-118">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="a8117-118">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.deviceDetail"
+  "@odata.type": "microsoft.graph.networkLocationDetail"
 }-->
 
 ```json
 {
-  "networkTypes": "namedNetork",
-  "networkName": "String"
+  "networkType": "string",
+  "networkNames": ["String"]
 }
 
 ```
@@ -45,7 +45,7 @@ ms.locfileid: "32581440"
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "deviceDetail resource",
+  "description": "networkLocationDetail resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

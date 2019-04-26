@@ -4,25 +4,25 @@ description: O **plannerOrderHintsByAssignee** é um recurso que contém dicas d
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 27ef2c796c636e39ed6408c373cf0ac66c5572dd
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 428944f9d622bba8db5d700b8d113a2c5b476301
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32575916"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344435"
 ---
-# <a name="plannerorderhintsbyassignee-resource-type"></a><span data-ttu-id="37068-103">tipo de recurso plannerOrderHintsByAssignee</span><span class="sxs-lookup"><span data-stu-id="37068-103">plannerOrderHintsByAssignee resource type</span></span>
+# <a name="plannerorderhintsbyassignee-resource-type"></a><span data-ttu-id="678d5-103">tipo de recurso plannerOrderHintsByAssignee</span><span class="sxs-lookup"><span data-stu-id="678d5-103">plannerOrderHintsByAssignee resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="37068-104">O **plannerOrderHintsByAssignee** é um recurso que contém [dicas](planner-order-hint-format.md) de ordenação para destinatários em um recurso [plannerTask](plannertask.md) , para indicar a ordem da tarefa em atribuída ao modo de exibição do quadro de tarefas.</span><span class="sxs-lookup"><span data-stu-id="37068-104">The **plannerOrderHintsByAssignee** is a resource that contains [ordering hints](planner-order-hint-format.md) for assignees in a [plannerTask](plannertask.md) resource, to indicate the order of the task in Assigned To view of the Task Board.</span></span>
-<span data-ttu-id="37068-105">Este tipo é um tipo aberto.</span><span class="sxs-lookup"><span data-stu-id="37068-105">This type is an open type.</span></span> <span data-ttu-id="37068-106">As propriedades são as IDs dos usuários atribuídos à tarefa e os valores são dicas de ordenação.</span><span class="sxs-lookup"><span data-stu-id="37068-106">The properties are the ids of users assigned to the task, and the values are order hints.</span></span>
+<span data-ttu-id="678d5-104">O **plannerOrderHintsByAssignee** é um recurso que contém [dicas](planner-order-hint-format.md) de ordenação para destinatários em um recurso [plannerTask](plannertask.md) , para indicar a ordem da tarefa em atribuída ao modo de exibição do quadro de tarefas.</span><span class="sxs-lookup"><span data-stu-id="678d5-104">The **plannerOrderHintsByAssignee** is a resource that contains [ordering hints](planner-order-hint-format.md) for assignees in a [plannerTask](plannertask.md) resource, to indicate the order of the task in Assigned To view of the Task Board.</span></span>
+<span data-ttu-id="678d5-105">Este tipo é um tipo aberto.</span><span class="sxs-lookup"><span data-stu-id="678d5-105">This type is an open type.</span></span> <span data-ttu-id="678d5-106">As propriedades são as IDs dos usuários atribuídos à tarefa e os valores são dicas de ordenação.</span><span class="sxs-lookup"><span data-stu-id="678d5-106">The properties are the ids of users assigned to the task, and the values are order hints.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="37068-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="37068-107">Properties</span></span>
-<span data-ttu-id="37068-108">As propriedades de um tipo aberto podem ser definidas pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="37068-108">Properties of an Open Type can be defined by the client.</span></span> <span data-ttu-id="37068-109">Nesse caso, o cliente deve fornecer IDs de usuários atribuídos à tarefa como nomes de propriedade e uma [dica de ordem](planner-order-hint-format.md) válida como o valor.</span><span class="sxs-lookup"><span data-stu-id="37068-109">In this case, the client must provide ids of users assigned to the task as property names, and a valid [order hint](planner-order-hint-format.md) as the value.</span></span>
-<span data-ttu-id="37068-110">As propriedades não podem ser removidas desse tipo.</span><span class="sxs-lookup"><span data-stu-id="37068-110">Properties cannot be removed from this type.</span></span> <span data-ttu-id="37068-111">O serviço removerá automaticamente os valores, já que as atribuições no [plannerTask](plannertask.md) que o contém são atualizadas.</span><span class="sxs-lookup"><span data-stu-id="37068-111">The service will automatically remove values as the assignments on the containing [plannerTask](plannertask.md) are updated.</span></span>
+## <a name="properties"></a><span data-ttu-id="678d5-107">Propriedades</span><span class="sxs-lookup"><span data-stu-id="678d5-107">Properties</span></span>
+<span data-ttu-id="678d5-108">As propriedades de um tipo aberto podem ser definidas pelo cliente.</span><span class="sxs-lookup"><span data-stu-id="678d5-108">Properties of an Open Type can be defined by the client.</span></span> <span data-ttu-id="678d5-109">Nesse caso, o cliente deve fornecer IDs de usuários atribuídos à tarefa como nomes de propriedade e uma [dica de ordem](planner-order-hint-format.md) válida como o valor.</span><span class="sxs-lookup"><span data-stu-id="678d5-109">In this case, the client must provide ids of users assigned to the task as property names, and a valid [order hint](planner-order-hint-format.md) as the value.</span></span>
+<span data-ttu-id="678d5-110">As propriedades não podem ser removidas desse tipo.</span><span class="sxs-lookup"><span data-stu-id="678d5-110">Properties cannot be removed from this type.</span></span> <span data-ttu-id="678d5-111">O serviço removerá automaticamente os valores, já que as atribuições no [plannerTask](plannertask.md) que o contém são atualizadas.</span><span class="sxs-lookup"><span data-stu-id="678d5-111">The service will automatically remove values as the assignments on the containing [plannerTask](plannertask.md) are updated.</span></span>
 
-<span data-ttu-id="37068-112">Exemplo:</span><span class="sxs-lookup"><span data-stu-id="37068-112">Example:</span></span>
+<span data-ttu-id="678d5-112">Exemplo:</span><span class="sxs-lookup"><span data-stu-id="678d5-112">Example:</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -49,8 +49,6 @@ ms.locfileid: "32575916"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/plannerorderhintsbyassignee.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->
