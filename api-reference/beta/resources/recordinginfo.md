@@ -1,32 +1,32 @@
 ---
-title: tipo de recurso de recordingInfo
-description: Informações de gravação para um participante.
+title: tipo de recurso recordingInfo
+description: Informações de gravação de um participante.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 6025259bafdcff78c3c7dbfa19aa39f5f6648f84
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525672"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563076"
 ---
-# <a name="recordinginfo-resource-type"></a><span data-ttu-id="9ac73-103">tipo de recurso de recordingInfo</span><span class="sxs-lookup"><span data-stu-id="9ac73-103">recordingInfo resource type</span></span>
+# <a name="recordinginfo-resource-type"></a><span data-ttu-id="2f57c-103">tipo de recurso recordingInfo</span><span class="sxs-lookup"><span data-stu-id="2f57c-103">recordingInfo resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="9ac73-104">Informações de gravação para um participante.</span><span class="sxs-lookup"><span data-stu-id="9ac73-104">Recording information for a participant.</span></span>
+<span data-ttu-id="2f57c-104">Informações de gravação de um participante.</span><span class="sxs-lookup"><span data-stu-id="2f57c-104">Recording information for a participant.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="9ac73-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="9ac73-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="2f57c-105">Propriedades</span><span class="sxs-lookup"><span data-stu-id="2f57c-105">Properties</span></span>
 
-| <span data-ttu-id="9ac73-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="9ac73-106">Property</span></span>       | <span data-ttu-id="9ac73-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="9ac73-107">Type</span></span>    | <span data-ttu-id="9ac73-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="9ac73-108">Description</span></span>|
+| <span data-ttu-id="2f57c-106">Propriedade</span><span class="sxs-lookup"><span data-stu-id="2f57c-106">Property</span></span>       | <span data-ttu-id="2f57c-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="2f57c-107">Type</span></span>    | <span data-ttu-id="2f57c-108">Descrição</span><span class="sxs-lookup"><span data-stu-id="2f57c-108">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="9ac73-109">initiatedBy</span><span class="sxs-lookup"><span data-stu-id="9ac73-109">initiatedBy</span></span> | [<span data-ttu-id="9ac73-110">participantInfo</span><span class="sxs-lookup"><span data-stu-id="9ac73-110">participantInfo</span></span>](participantinfo.md) | <span data-ttu-id="9ac73-111">O participante que iniciou a gravação.</span><span class="sxs-lookup"><span data-stu-id="9ac73-111">The participant who initiated the recording.</span></span> |
-| <span data-ttu-id="9ac73-112">status</span><span class="sxs-lookup"><span data-stu-id="9ac73-112">status</span></span> | <span data-ttu-id="9ac73-113">String</span><span class="sxs-lookup"><span data-stu-id="9ac73-113">String</span></span> | <span data-ttu-id="9ac73-114">Os valores possíveis são: `recordingCapable`, `notRecording`, `startedRecording`.</span><span class="sxs-lookup"><span data-stu-id="9ac73-114">Possible values are: `recordingCapable`, `notRecording`, `startedRecording`.</span></span> |
+| <span data-ttu-id="2f57c-109">initiatedBy</span><span class="sxs-lookup"><span data-stu-id="2f57c-109">initiatedBy</span></span> | [<span data-ttu-id="2f57c-110">participantInfo</span><span class="sxs-lookup"><span data-stu-id="2f57c-110">participantInfo</span></span>](participantinfo.md) | <span data-ttu-id="2f57c-111">O participante que iniciou a gravação.</span><span class="sxs-lookup"><span data-stu-id="2f57c-111">The participant who initiated the recording.</span></span> |
+| <span data-ttu-id="2f57c-112">status</span><span class="sxs-lookup"><span data-stu-id="2f57c-112">status</span></span> | <span data-ttu-id="2f57c-113">String</span><span class="sxs-lookup"><span data-stu-id="2f57c-113">String</span></span> | <span data-ttu-id="2f57c-114">Os valores possíveis são: `recordingCapable`, `notRecording`, `startedRecording`.</span><span class="sxs-lookup"><span data-stu-id="2f57c-114">Possible values are: `recordingCapable`, `notRecording`, `startedRecording`.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="9ac73-115">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="9ac73-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="2f57c-115">Representação JSON</span><span class="sxs-lookup"><span data-stu-id="2f57c-115">JSON representation</span></span>
 
-<span data-ttu-id="9ac73-116">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="9ac73-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="2f57c-116">Veja a seguir uma representação JSON do recurso.</span><span class="sxs-lookup"><span data-stu-id="2f57c-116">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -51,8 +51,6 @@ ms.locfileid: "29525672"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/recordinginfo.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

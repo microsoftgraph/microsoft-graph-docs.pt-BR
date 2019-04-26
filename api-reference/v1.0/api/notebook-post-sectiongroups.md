@@ -13,6 +13,8 @@ ms.locfileid: "32562136"
 ---
 # <a name="create-sectiongroup"></a><span data-ttu-id="e8eb5-103">Criar sectionGroup</span><span class="sxs-lookup"><span data-stu-id="e8eb5-103">Create sectionGroup</span></span>
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 <span data-ttu-id="e8eb5-104">Cria um novo [grupo de seção](../resources/sectiongroup.md) no bloco de anotações especificado.</span><span class="sxs-lookup"><span data-stu-id="e8eb5-104">Create a new [section group](../resources/sectiongroup.md) in the specified notebook.</span></span>
 ## <a name="permissions"></a><span data-ttu-id="e8eb5-105">Permissões</span><span class="sxs-lookup"><span data-stu-id="e8eb5-105">Permissions</span></span>
 <span data-ttu-id="e8eb5-p101">Uma das seguintes permissões é obrigatória para chamar esta API. Para saber mais, incluindo como escolher permissões, confira [Permissões](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e8eb5-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
@@ -54,7 +56,7 @@ POST /sites/{id}/onenote/notebooks/{id}/sectionGroups
   "name": "create_sectiongroup_from_notebook"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/onenote/notebooks/{id}/sectionGroups
+POST https://graph.microsoft.com/beta/me/onenote/notebooks/{id}/sectionGroups
 Content-type: application/json
 Content-length: 30
 
@@ -79,6 +81,7 @@ Content-length: 305
   "sectionsUrl": "sectionsUrl-value",
   "sectionGroupsUrl": "sectionGroupsUrl-value",
   "displayName": "name-value",
+  "id": "8fcb5dbc-d5aa-4681-8e31-b001d5168d79",
   "createdBy": {
     "user": {
       "id": "id-value",
@@ -96,10 +99,13 @@ Content-length: 305
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create SectionGroup",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->
